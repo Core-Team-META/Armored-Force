@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17925326465180611494
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -62,12 +71,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15516973677758396447
-  Name: "Text 01: S"
+  Id: 15585852823533740787
+  Name: "Arch"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_018"
+    AssetId: "sm_arch_001"
   }
 }
 Assets {
@@ -86,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_ao"
+  }
+}
+Assets {
+  Id: 14270198567810839435
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
   }
 }
 Assets {
@@ -125,15 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12827530473249900764
-  Name: "Opaque Emissive"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
-  }
-}
-Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6
@@ -158,6 +167,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
+  Id: 10040903362540305045
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
   }
 }
 Assets {
@@ -206,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7417565167179229552
+  Name: "Fantasy Human Gal 1"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_003_ref"
+  }
+}
+Assets {
   Id: 7364756761886700370
   Name: "Metal Iron Rusted 02"
   PlatformAssetType: 2
@@ -215,12 +242,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7234944468290544783
+  Name: "Bricks Rough Stone Floor 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_002"
+  }
+}
+Assets {
   Id: 6674876388081502680
   Name: "Rocky Ground 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "rocky_001"
+  }
+}
+Assets {
+  Id: 5621809922852842752
+  Name: "Rock Flat 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_005"
   }
 }
 Assets {
@@ -278,12 +323,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1890220075148311577
-  Name: "Bark Redwood 01"
-  PlatformAssetType: 2
+  Id: 1669399766334427563
+  Name: "Stone Arch (doorway) 001"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bark_redwood_001_uv"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone_doorway_001"
   }
 }
 Assets {
@@ -293,6 +338,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
+  }
+}
+Assets {
+  Id: 136256093384731196
+  Name: "Bricks Cobblestone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }
 Assets {
