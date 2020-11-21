@@ -38,7 +38,7 @@
     OwnerAccountId: "557d4f1ae17646579646dfd20dcb7b66"
     OwnerName: "AwkwardGameDev"
     Version: "1.0.0"
-    Description: "German Panther Tank (Prop)"
+    Description: "German Panther Tank (Prop)\r\n\r\nupdate: -adjusted pivot points for turret, gun, and hatch"
   }
   SerializationVersion: 68
 }
