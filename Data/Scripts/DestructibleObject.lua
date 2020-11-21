@@ -27,7 +27,8 @@ function handleOverlap(trigger, object)
         if destructionFX02 then
             World.SpawnAsset(destructionFX02, { position = FXLocation02:GetWorldPosition() })
         end
-
+        -- Destroy the trigger because the destruction has been done
+        trigger:Destroy()
     end
 end
 

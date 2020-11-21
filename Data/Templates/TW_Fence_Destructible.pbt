@@ -58,16 +58,16 @@
         Name: "DestructionTrigger"
         Transform {
           Location {
-            X: 110
-            Y: -22.8359375
+            X: 108.333984
+            Y: -10.8515625
             Z: 75.866333
           }
           Rotation {
           }
           Scale {
-            X: 4.20000029
-            Y: 0.524609268
-            Z: 2.21564913
+            X: 3.97834039
+            Y: 0.287109256
+            Z: 1.92779052
           }
         }
         ParentId: 14382887385855379576
@@ -364,6 +364,7 @@
         Transform {
           Location {
             X: -110
+            Y: -17.625
             Z: 115
           }
           Rotation {
@@ -372,7 +373,7 @@
           Scale {
             X: 0.4
             Y: 0.099999994
-            Z: 4.4
+            Z: 4.5179491
           }
         }
         ParentId: 8926210379358892475
@@ -427,7 +428,8 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -110
+            X: -112.787109
+            Y: -19.6523438
             Z: 55
           }
           Rotation {

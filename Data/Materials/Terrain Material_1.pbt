@@ -15,7 +15,7 @@
       Overrides {
         Name: "cmp:Material4"
         AssetReference {
-          Id: 12842759262543098562
+          Id: 16538824738551663546
         }
       }
       Overrides {
@@ -59,9 +59,9 @@
       Overrides {
         Name: "cmpc:Material3"
         Color {
-          R: 0.364000022
-          G: 0.239414945
-          B: 0.144144
+          R: 0.615
+          G: 0.404506
+          B: 0.243539989
           A: 1
         }
       }
@@ -70,6 +70,10 @@
         AssetReference {
           Id: 12842759262543098562
         }
+      }
+      Overrides {
+        Name: "material1_scale"
+        Float: 3
       }
     }
     Assets {
@@ -91,12 +95,12 @@
       }
     }
     Assets {
-      Id: 12842759262543098562
-      Name: "Rocks River Bed 01"
+      Id: 16538824738551663546
+      Name: "Bone Raw"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "puddle_river_bed_001"
+        AssetId: "mi_bone_raw_001_uv_ref"
       }
     }
     Assets {
