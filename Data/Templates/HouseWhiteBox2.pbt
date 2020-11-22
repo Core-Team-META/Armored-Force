@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 1732117235032642016
-  Name: "HouseRef2"
+  Name: "HouseWhiteBox2"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

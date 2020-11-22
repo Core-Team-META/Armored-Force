@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 6853631857773167911
-  Name: "Terrain Material_1"
+  Name: "TW_TerrainMain"
   PlatformAssetType: 13
   SerializationVersion: 68
   CustomMaterialAsset {

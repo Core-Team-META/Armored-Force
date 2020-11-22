@@ -1,13 +1,13 @@
 ﻿Assets {
   Id: 1877293447267286738
-  Name: "TW_Birch_Destructible"
+  Name: "TW_BirchTree_Destructible"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14766061465847274198
       Objects {
         Id: 14766061465847274198
-        Name: "TW_Birch_Destructible"
+        Name: "TW_BirchTree_Destructible"
         Transform {
           Scale {
             X: 1

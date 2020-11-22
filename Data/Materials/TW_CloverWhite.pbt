@@ -1,50 +1,46 @@
 ﻿Assets {
-  Id: 6028094046627322103
-  Name: "GrassRed"
+  Id: 7756414572646584735
+  Name: "TW_CloverWhite"
   PlatformAssetType: 13
   SerializationVersion: 68
   CustomMaterialAsset {
-    BaseMaterialId: 12223811200745286487
+    BaseMaterialId: 6722288021636580285
     ParameterOverrides {
       Overrides {
         Name: "color"
         Color {
-          R: 1
-          G: 1
-          B: 1
+          R: 0.410000026
+          G: 0.410000026
+          B: 0.410000026
           A: 1
         }
       }
       Overrides {
-        Name: "color_roots"
+        Name: "color_accent"
         Color {
-          R: 1
-          G: 1
-          B: 1
+          R: 0.587
+          G: 0.587
+          B: 0.587
           A: 1
         }
       }
       Overrides {
-        Name: "SSS"
+        Name: "sss"
         Color {
-          R: 1
-          G: 1
-          B: 1
+          R: 0.691000044
+          G: 0.691000044
+          B: 0.691000044
           A: 1
         }
-      }
-      Overrides {
-        Name: "wind_weight"
-        Float: 0
       }
     }
     Assets {
-      Id: 12223811200745286487
-      Name: "Grass (default)"
+      Id: 6722288021636580285
+      Name: "Clovers"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_dynamic_001_uv"
+        AssetId: "mi_clover_patch_001_uv"
       }
     }
   }

@@ -124,6 +124,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 10639644213682625907
   ChildIds: 6634966277239768657
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
@@ -164,7 +165,7 @@ Objects {
         }
         ScaleZ {
           Min: 0.2
-          Max: 0.5
+          Max: 1.1
         }
       }
       RotationAlignment: AlignToWorldUp
@@ -203,7 +204,7 @@ Objects {
       }
       Scaling {
         ScaleX {
-          Min: 0.2
+          Min: 1
           Max: 1
         }
         ScaleY {
@@ -287,8 +288,102 @@ Objects {
       Asset {
         Id: 16990779988580040001
       }
-      DistanceBetweenInstances: 280
+      DistanceBetweenInstances: 2310
       SpawnDistance: 30720
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Leaves"
+        value {
+          Id: 12979132567140686096
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 12478635504539825254
+      }
+      DistanceBetweenInstances: 5160
+      SpawnDistance: 30720
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Leaves"
+        value {
+          Id: 7756414572646584735
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 10435621986531285937
+      }
+      DistanceBetweenInstances: 1000
+      SpawnDistance: 20000
       CullDistance {
         Min: 10000
         Max: 20000
@@ -315,9 +410,9 @@ Objects {
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
-        key: "Nature_Leaves"
+        key: "Nature_Flower"
         value {
-          Id: 841534158063459245
+          Id: 5162124783989194308
         }
       }
       LocalPositionOffset {
@@ -335,7 +430,7 @@ Objects {
 }
 Objects {
   Id: 6634966277239768657
-  Name: "Level Indicators"
+  Name: "LevelDesignIndicators"
   Transform {
     Location {
       X: -11050
@@ -376,12 +471,12 @@ Objects {
   Name: "SpawnArea_RedTeam"
   Transform {
     Location {
-      X: -8330
+      X: 20650.7109
       Y: -51580
       Z: -265
     }
     Rotation {
-      Roll: -89.9999924
+      Roll: -90
     }
     Scale {
       X: 189.632019
@@ -457,12 +552,12 @@ Objects {
   Name: "SpawnArea_BlueTeam"
   Transform {
     Location {
-      X: 21725
+      X: -9829.67383
       Y: 41880
       Z: -260
     }
     Rotation {
-      Roll: -89.9999924
+      Roll: -90
     }
     Scale {
       X: 189.632019
@@ -1551,6 +1646,256 @@ Objects {
   }
 }
 Objects {
+  Id: 10639644213682625907
+  Name: "EdgeIndicators"
+  Transform {
+    Location {
+      X: -30705
+      Y: -15350
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17707050887276379352
+  ChildIds: 12863100340974984301
+  ChildIds: 1245555288092411986
+  ChildIds: 16182384547534576989
+  ChildIds: 4302040622650987333
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4302040622650987333
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      X: -61410
+      Z: 1240
+    }
+    Rotation {
+      Pitch: -90
+    }
+    Scale {
+      X: 5.6
+      Y: 307.18454
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 92105
+            Y: 15350
+            Z: 1240
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5.6
+            Y: 307.18454
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
+  }
+}
+Objects {
+  Id: 16182384547534576989
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      Y: -61400
+      Z: 1240
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: -14.0362635
+      Roll: 104.03627
+    }
+    Scale {
+      X: 5.6
+      Y: 307.18454
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 30705
+            Y: 76725
+            Z: 1240
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+            Yaw: -14.0362635
+            Roll: 104.03627
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5.6
+            Y: 307.18454
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
+  }
+}
+Objects {
+  Id: 1245555288092411986
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      X: -61410
+      Z: 1240
+    }
+    Rotation {
+      Pitch: -90
+    }
+    Scale {
+      X: 5.6
+      Y: 307.18454
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 30705
+            Y: -46050
+            Z: 1240
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+            Yaw: -14.0362635
+            Roll: 104.03627
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5.6
+            Y: 307.18454
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
+  }
+}
+Objects {
+  Id: 12863100340974984301
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -30705
+            Y: 15350
+            Z: 1240
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5.6
+            Y: 307.18454
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
+  }
+}
+Objects {
   Id: 11231522143225906364
   Name: "Terrain_BG"
   Transform {
@@ -1587,8 +1932,8 @@ Objects {
       MaterialChannel: 2
       SpawnDistance: 22937.1523
       CullDistance {
-        Min: 10000
-        Max: 20000
+        Min: 20000
+        Max: 50000
       }
       ReceivesDecals: true
       GroundSlopeAngle {
@@ -1596,8 +1941,8 @@ Objects {
       }
       Scaling {
         ScaleX {
-          Min: 1
-          Max: 1
+          Min: 0.900000036
+          Max: 3.10000014
         }
         ScaleY {
           Min: 1

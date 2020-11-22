@@ -1,30 +1,44 @@
 ﻿Assets {
-  Id: 10424125786002358859
-  Name: "HouseRef"
+  Id: 9960003411460384525
+  Name: "TW_Bush01"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1556464711598002813
+      RootId: 16934796068878505761
       Objects {
-        Id: 1556464711598002813
-        Name: "HouseRef"
+        Id: 16934796068878505761
+        Name: "TW_Bush01"
         Transform {
           Scale {
-            X: 6.1
-            Y: 11.2
-            Z: 5.20000029
+            X: 1.95309353
+            Y: 1.95309353
+            Z: 1.95309353
           }
         }
         ParentId: 4781671109827199097
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 5200444972158461565
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5200444972158461565
+            }
+          }
+        }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 15630366334838468242
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -39,12 +53,12 @@
       }
     }
     Assets {
-      Id: 16374150260036817633
-      Name: "Cube - Bottom-Aligned"
+      Id: 15630366334838468242
+      Name: "Bush 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_001"
+        AssetId: "sm_bush_generic_002"
       }
     }
     PrimaryAssetId {
