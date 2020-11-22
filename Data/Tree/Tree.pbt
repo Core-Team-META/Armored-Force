@@ -19,6 +19,7 @@ Objects {
   ChildIds: 17707050887276379352
   ChildIds: 7331958413616733673
   ChildIds: 4689494391382931675
+  ChildIds: 14661672776697705088
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,6 +29,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 14661672776697705088
+  Name: "Marcela"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Marcela"
   }
 }
 Objects {

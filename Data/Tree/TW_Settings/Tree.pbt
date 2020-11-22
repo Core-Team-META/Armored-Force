@@ -1,7 +1,7 @@
 ﻿Name: "TW_Settings"
 RootId: 7331958413616733673
 Objects {
-  Id: 14713340454944924967
+  Id: 13743021385399157433
   Name: "Third Person Camera Settings"
   Transform {
     Location {
@@ -15,8 +15,8 @@ Objects {
     }
   }
   ParentId: 7331958413616733673
-  ChildIds: 4226120016796708080
-  ChildIds: 724324913679364851
+  ChildIds: 4110397474043556432
+  ChildIds: 8550359202300316692
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,9 +28,15 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 13743021385399157433
+    SubobjectId: 6529435899752255669
+    InstanceId: 15364824031536886393
+    TemplateId: 15733200490397260229
+  }
 }
 Objects {
-  Id: 724324913679364851
+  Id: 8550359202300316692
   Name: "Client Context"
   Transform {
     Location {
@@ -43,8 +49,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14713340454944924967
-  ChildIds: 3567959178173361743
+  ParentId: 13743021385399157433
+  ChildIds: 15157515957598953857
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -55,9 +61,15 @@ Objects {
   }
   NetworkContext {
   }
+  InstanceHistory {
+    SelfId: 8550359202300316692
+    SubobjectId: 10560035254735773208
+    InstanceId: 15364824031536886393
+    TemplateId: 15733200490397260229
+  }
 }
 Objects {
-  Id: 3567959178173361743
+  Id: 15157515957598953857
   Name: "Third Person Camera"
   Transform {
     Location {
@@ -71,7 +83,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 724324913679364851
+  ParentId: 8550359202300316692
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -83,11 +95,12 @@ Objects {
   Camera {
     UseAsDefault: true
     AttachToLocalPlayer: true
-    InitialDistance: 400
+    InitialDistance: 2000
+    IsDistanceAdjustable: true
     MinDistance: 300
-    MaxDistance: 600
+    MaxDistance: 6000
     PositionOffset {
-      Y: 60
+      Z: 400
     }
     RotationOffset {
     }
@@ -98,11 +111,16 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
-    DoesPositionOffsetSpring: true
+  }
+  InstanceHistory {
+    SelfId: 15157515957598953857
+    SubobjectId: 3926683734417011597
+    InstanceId: 15364824031536886393
+    TemplateId: 15733200490397260229
   }
 }
 Objects {
-  Id: 4226120016796708080
+  Id: 4110397474043556432
   Name: "Third Person Player Settings"
   Transform {
     Location {
@@ -115,7 +133,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14713340454944924967
+  ParentId: 13743021385399157433
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -128,11 +146,11 @@ Objects {
     IsDefault: true
     PlayerMovementSettings {
       WalkSpeed: 1000
-      MaxAcceleration: 5000
-      WalkableFloorAngle: 44
+      MaxAcceleration: 500
+      WalkableFloorAngle: 50
       JumpMaxCount: 1
       JumpVelocity: 900
-      GroundFriction: 8
+      GroundFriction: 10
       GravityScale: 1.9
       MaxSwimSpeed: 420
       Buoyancy: 1
@@ -140,15 +158,15 @@ Objects {
       BrakingDecelerationFlying: 600
       MaxFlightSpeed: 600
       MovementControlMode {
-        Value: "mc:emovementcontrolmode:lookrelative"
+        Value: "mc:emovementcontrolmode:facingrelative"
       }
       LookControlMode {
         Value: "mc:elookcontrolmode:relative"
       }
       FacingMode {
-        Value: "mc:efacingmode:faceaimwhenactive"
+        Value: "mc:efacingmode:facemovement"
       }
-      DefaultRotationRate: 540
+      DefaultRotationRate: 40
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
@@ -160,21 +178,21 @@ Objects {
       HeadVisibleToSelf: true
       IsSlideEnabled: true
       IsCrouchEnabled: true
-      IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
-      CanMoveLeft: true
-      CanMoveRight: true
       AbilityAimMode {
         Value: "mc:eabilityaimmode:viewrelative"
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
       FlipOnMultiJump: true
-      CanMoveUp: true
-      CanMoveDown: true
-      IsMountEnabled: true
     }
+  }
+  InstanceHistory {
+    SelfId: 4110397474043556432
+    SubobjectId: 15937995815847305308
+    InstanceId: 15364824031536886393
+    TemplateId: 15733200490397260229
   }
 }
 Objects {
