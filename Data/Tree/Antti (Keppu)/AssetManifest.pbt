@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16343879771799464160
+  Name: "Tree Redwood Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_005"
+  }
+}
+Assets {
   Id: 15630366334838468242
   Name: "Bush 02"
   PlatformAssetType: 1
@@ -107,15 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14231809728886464860
-  Name: "Wood Raw White"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_raw_white_001_uv"
-  }
-}
-Assets {
   Id: 14002253654344460699
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -134,12 +134,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13095342725802891051
+  Name: "Lily Pads 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_water_lily_001"
+  }
+}
+Assets {
   Id: 13046325103703303942
   Name: "Tree Redwood Big"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_001"
+  }
+}
+Assets {
+  Id: 12289464758127468098
+  Name: "Urban Damaged Interior Trim Board 01 Mid 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tx_urb_dmg_int_trim_board_001_mid_01_ref"
+  }
+}
+Assets {
+  Id: 11860550904548812697
+  Name: "Urban Damaged Interior Trim Board 01 Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tx_urb_dmg_int_trim_board_001_base_01_ref"
   }
 }
 Assets {
@@ -161,12 +188,39 @@ Assets {
   }
 }
 Assets {
+  Id: 11162371387099592980
+  Name: "Fantasy Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_001_ref"
+  }
+}
+Assets {
+  Id: 11057307086666071473
+  Name: "Wood Siding White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_siding_white_001_uv"
+  }
+}
+Assets {
   Id: 10905138335060518079
   Name: "Rock Block 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
+  Id: 10835155324150586940
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
@@ -203,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_emissive_001"
+  }
+}
+Assets {
+  Id: 8215981026940294866
+  Name: "Urban Damaged Interior Trim Board 01 Top 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tx_urb_dmg_int_trim_board_001_top_01_ref"
   }
 }
 Assets {
@@ -260,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6611104806021480982
+  Name: "Lily Pads 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_water_lily_002"
+  }
+}
+Assets {
   Id: 5621809922852842752
   Name: "Rock Flat 02"
   PlatformAssetType: 1
@@ -275,15 +347,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_001"
-  }
-}
-Assets {
-  Id: 4389345689548242591
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
@@ -347,14 +410,5 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_cobblestone_floor_001"
-  }
-}
-Assets {
-  Id: 70142492980176904
-  Name: "Pyramid - 5-Sided Truncated Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_fivesided_truncated_hq_001"
   }
 }

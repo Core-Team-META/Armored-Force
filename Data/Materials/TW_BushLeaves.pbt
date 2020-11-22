@@ -1,19 +1,27 @@
 ﻿Assets {
-  Id: 14741260093614307436
+  Id: 5200444972158461565
   Name: "TW_BushLeaves"
   PlatformAssetType: 13
   SerializationVersion: 68
   CustomMaterialAsset {
-    BaseMaterialId: 2195108052402325511
+    BaseMaterialId: 5213547757587382338
     ParameterOverrides {
+      Overrides {
+        Name: "wind_weight"
+        Float: 2
+      }
+      Overrides {
+        Name: "wind_speed"
+        Float: 0.5
+      }
     }
     Assets {
-      Id: 2195108052402325511
-      Name: "Birch Leaves 01"
+      Id: 5213547757587382338
+      Name: "Birch Branch (default)"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_leaves_birch_001"
+        AssetId: "mi_foliage_leaves_001_uv"
       }
     }
   }

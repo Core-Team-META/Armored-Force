@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 8898165655985592169
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -218,8 +218,8 @@
           }
         }
         ParentId: 8898165655985592169
+        ChildIds: 707930679274992300
         ChildIds: 6163219437057891063
-        ChildIds: 11302872750275540711
         ChildIds: 12595562876164077809
         ChildIds: 10005396749994184041
         Collidable_v2 {
@@ -233,31 +233,47 @@
         }
       }
       Objects {
-        Id: 6163219437057891063
-        Name: "Cube - Bottom-Aligned"
+        Id: 707930679274992300
+        Name: "Urban Damaged Interior Trim Board 01 Base 01"
         Transform {
           Location {
-            X: -330
-            Z: -30
+            X: -397.503906
+            Y: -25.2675781
+            Z: 170
           }
           Rotation {
-            Pitch: 93.9306564
+            Yaw: 0.751768887
           }
           Scale {
-            X: 0.300868332
-            Y: 0.497964948
-            Z: 0.560217679
+            X: 1.58778942
+            Y: 1.19999707
+            Z: 1
           }
         }
         ParentId: 14598918507990495797
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 0.47300002
+              G: 0.194086656
+              B: 0.0756800175
+              A: 1
+            }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.546128631
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 11057307086666071473
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 4.23592854
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:vtile"
+            Float: 0.835400283
           }
         }
         Collidable_v2 {
@@ -268,7 +284,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5561431699712539657
+            Id: 11860550904548812697
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -282,23 +298,55 @@
         }
       }
       Objects {
-        Id: 11302872750275540711
-        Name: "Large Wood Beam 8m"
+        Id: 6163219437057891063
+        Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -400
-            Y: -25
-            Z: 158.022217
+            X: -369.358398
+            Y: -12.1552734
+            Z: -1.77709961
           }
           Rotation {
+            Pitch: 94.2530823
+            Yaw: -22.4537354
+            Roll: -22.3980713
           }
           Scale {
-            X: 0.934121132
-            Y: 0.2
-            Z: 0.4
+            X: 0.476968288
+            Y: 1.30786455
+            Z: 0.888116598
           }
         }
         ParentId: 14598918507990495797
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.546128631
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 11057307086666071473
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 0.47300002
+              G: 0.194086656
+              B: 0.0756800175
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:vtile"
+            Float: 1.01121163
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -307,7 +355,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5561431699712539657
+            Id: 8215981026940294866
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -326,20 +374,42 @@
         Transform {
           Location {
             X: 320
-            Y: -25
+            Y: -20.8203125
             Z: -14.4318848
           }
           Rotation {
-            Pitch: 90
-            Roll: 90
+            Pitch: 86.5903778
+            Yaw: 30.5362072
+            Roll: 120.491524
           }
           Scale {
-            X: 0.790212631
-            Y: 0.7
-            Z: 1
+            X: 0.450794429
+            Y: 1.53755891
+            Z: 0.425117522
           }
         }
         ParentId: 14598918507990495797
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 11057307086666071473
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 0.47300002
+              G: 0.194086656
+              B: 0.0756800175
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:vtile"
+            Float: 1.55408251
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -348,7 +418,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6850673296695379879
+            Id: 12289464758127468098
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -366,15 +436,17 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -380
-            Y: -28.7773438
-            Z: 55.5681152
+            X: 336.509766
+            Y: -25.7988281
+            Z: 74.9068604
           }
           Rotation {
+            Pitch: -179.716858
+            Yaw: -0.0663452148
           }
           Scale {
-            X: 2.4
-            Y: 0.2
+            X: 1.52012241
+            Y: 0.650661528
             Z: 1
           }
         }
@@ -392,6 +464,29 @@
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 2.45094848
           }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 11057307086666071473
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 0.47300002
+              G: 0.194086656
+              B: 0.0756800175
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.518233895
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:vtile"
+            Float: 0.796448469
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -401,7 +496,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6850673296695379879
+            Id: 11860550904548812697
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -416,21 +511,39 @@
       }
     }
     Assets {
-      Id: 5561431699712539657
-      Name: "Large Wood Beam 8m"
+      Id: 11860550904548812697
+      Name: "Urban Damaged Interior Trim Board 01 Base 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_large_beam_6m"
+        AssetId: "sm_tx_urb_dmg_int_trim_board_001_base_01_ref"
       }
     }
     Assets {
-      Id: 6850673296695379879
-      Name: "Wood 2x4 4m"
+      Id: 11057307086666071473
+      Name: "Wood Siding White"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_siding_white_001_uv"
+      }
+    }
+    Assets {
+      Id: 8215981026940294866
+      Name: "Urban Damaged Interior Trim Board 01 Top 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_two-by-four_3m"
+        AssetId: "sm_tx_urb_dmg_int_trim_board_001_top_01_ref"
+      }
+    }
+    Assets {
+      Id: 12289464758127468098
+      Name: "Urban Damaged Interior Trim Board 01 Mid 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_tx_urb_dmg_int_trim_board_001_mid_01_ref"
       }
     }
     PrimaryAssetId {

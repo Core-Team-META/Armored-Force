@@ -9,29 +9,33 @@
       Overrides {
         Name: "color"
         Color {
-          R: 0.51000005
-          G: 0.390926838
-          B: 0.18309
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
       Overrides {
         Name: "color_roots"
         Color {
-          R: 0.51000005
-          G: 0.390926838
-          B: 0.18309
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
       Overrides {
         Name: "SSS"
         Color {
-          R: 0.51000005
-          G: 0.418048054
-          B: 0.257550031
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
+      }
+      Overrides {
+        Name: "wind_weight"
+        Float: 0
       }
     }
     Assets {
