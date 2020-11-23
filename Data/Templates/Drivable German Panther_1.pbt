@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 12556864729632777770
+  Id: 5710211537313551175
   Name: "Drivable German Panther"
   PlatformAssetType: 5
   TemplateAsset {
@@ -22,7 +22,7 @@
           Overrides {
             Name: "cs:BurnedTank"
             AssetReference {
-              Id: 10968113269043778853
+              Id: 6193411753543861484
             }
           }
         }
