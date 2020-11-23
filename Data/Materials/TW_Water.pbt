@@ -8,27 +8,27 @@
     ParameterOverrides {
       Overrides {
         Name: "material_scale"
-        Float: 1
+        Float: 0.5
       }
       Overrides {
         Name: "speed"
-        Float: 0.134594679
+        Float: 0.274951935
       }
       Overrides {
         Name: "opacity"
-        Float: 0.819941401
+        Float: 0.230438098
       }
       Overrides {
         Name: "reflection brightness"
-        Float: 0.0479722247
+        Float: 1
       }
       Overrides {
         Name: "object displacement amount"
-        Float: 0.721690774
+        Float: 0
       }
       Overrides {
         Name: "wind speed"
-        Float: 1
+        Float: 0.300616682
       }
       Overrides {
         Name: "edge foam brightness"
@@ -36,15 +36,63 @@
       }
       Overrides {
         Name: "foam shape"
-        Float: 2.00711846
+        Float: 2.93348169
       }
       Overrides {
         Name: "foam shape max"
-        Float: 0.54624325
+        Float: 0.195348158
       }
       Overrides {
         Name: "foam shape min"
-        Float: 0.356759906
+        Float: 0.66554755
+      }
+      Overrides {
+        Name: "deep color"
+        Color {
+          R: 0.00831264164
+          G: 0.0420000032
+          B: 0.0263363644
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "emissive"
+        Float: 0
+      }
+      Overrides {
+        Name: "shallow color"
+        Color {
+          G: 0.404238194
+          B: 0.559999943
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "opacity distance"
+        Float: 100
+      }
+      Overrides {
+        Name: "foam shift"
+        Float: 0.527596354
+      }
+      Overrides {
+        Name: "foam tightness"
+        Float: 16.6795444
+      }
+      Overrides {
+        Name: "normal foam brightness"
+        Float: 0
+      }
+      Overrides {
+        Name: "flow direction"
+        Vector {
+          X: -0.315483183
+          Y: 0.30551827
+        }
+      }
+      Overrides {
+        Name: "edge normal flattening"
+        Float: 1
       }
     }
     Assets {
