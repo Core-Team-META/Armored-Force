@@ -251,15 +251,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8833265341937372675
-  Name: "Emissive Glow Transparent"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_emissive_001"
-  }
-}
-Assets {
   Id: 8215981026940294866
   Name: "Urban Damaged Interior Trim Board 01 Top 01"
   PlatformAssetType: 1

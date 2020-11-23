@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16374150260036817633
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
   Id: 15876256765931074932
   Name: "Flower Bellflower Patch 01"
   PlatformAssetType: 1
