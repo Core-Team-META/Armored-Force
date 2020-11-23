@@ -460,7 +460,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Folder {
     IsGroup: true
@@ -471,7 +471,7 @@ Objects {
   Name: "SpawnArea_RedTeam"
   Transform {
     Location {
-      X: 20650.7109
+      X: 6456.59668
       Y: -51580
       Z: -265
     }
@@ -552,7 +552,7 @@ Objects {
   Name: "SpawnArea_BlueTeam"
   Transform {
     Location {
-      X: -9829.67383
+      X: 5963.48145
       Y: 41880
       Z: -260
     }
