@@ -626,7 +626,7 @@ Objects {
       }
     }
     Text {
-      Label: "4 - UK Manticore"
+      Label: "4 - UK 1955 Chimera"
       Color {
         R: 1
         G: 1
