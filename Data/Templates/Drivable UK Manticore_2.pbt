@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 4825421426658938573
+  Id: 3388242124274667096
   Name: "Drivable UK Manticore"
   PlatformAssetType: 5
   TemplateAsset {

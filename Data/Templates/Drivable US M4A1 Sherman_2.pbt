@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 11342125379787423751
+  Id: 11351345298841788045
   Name: "Drivable US M4A1 Sherman"
   PlatformAssetType: 5
   TemplateAsset {
