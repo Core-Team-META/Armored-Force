@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 3388242124274667096
-  Name: "Drivable UK Manticore"
+  Name: "Drivable UK 1955 Chimera"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
