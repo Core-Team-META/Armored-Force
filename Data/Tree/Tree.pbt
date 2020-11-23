@@ -168,7 +168,6 @@ Objects {
           Max: 1.1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -498,7 +497,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Folder {
     IsGroup: true

@@ -1,22 +1,4 @@
 ﻿Assets {
-  Id: 18302154991031027573
-  Name: "Rock 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_001"
-  }
-}
-Assets {
-  Id: 18098293923493844510
-  Name: "Decal Rubble Concrete 02"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_mil_rubble_concrete_002_ref"
-  }
-}
-Assets {
   Id: 17925326465180611494
   Name: "Cube"
   PlatformAssetType: 1
@@ -62,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15630366334838468242
-  Name: "Bush 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bush_generic_002"
-  }
-}
-Assets {
   Id: 15595881897288770989
   Name: "Tree Redwood Medium"
   PlatformAssetType: 1
@@ -89,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14964967653464214432
-  Name: "Decal Dirt Patch"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_dirt_patch_001"
-  }
-}
-Assets {
   Id: 14697405062555329113
   Name: "Post Process AO"
   PlatformAssetType: 6
@@ -113,42 +77,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_rough_001"
-  }
-}
-Assets {
-  Id: 14002253654344460699
-  Name: "Grass Tall"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 13650699884663610996
-  Name: "Decal Stains Round 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_stain_round_001"
-  }
-}
-Assets {
-  Id: 13095342725802891051
-  Name: "Lily Pads 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_flower_water_lily_001"
-  }
-}
-Assets {
-  Id: 13046325103703303942
-  Name: "Tree Redwood Big"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_001"
   }
 }
 Assets {
@@ -176,24 +104,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
-  Id: 11296696299295417863
-  Name: "Tree Birch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_001"
-  }
-}
-Assets {
-  Id: 11162371387099592980
-  Name: "Fantasy Human Gal 2"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_001_ref"
   }
 }
 Assets {
@@ -269,33 +179,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7862028396932065250
-  Name: "Rock 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_003"
-  }
-}
-Assets {
-  Id: 7417565167179229552
-  Name: "Fantasy Human Gal 1"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_003_ref"
-  }
-}
-Assets {
-  Id: 7364756761886700370
-  Name: "Metal Iron Rusted 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
-  }
-}
-Assets {
   Id: 7234944468290544783
   Name: "Bricks Rough Stone Floor 02"
   PlatformAssetType: 2
@@ -314,15 +197,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6611104806021480982
-  Name: "Lily Pads 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_flower_water_lily_002"
-  }
-}
-Assets {
   Id: 5621809922852842752
   Name: "Rock Flat 02"
   PlatformAssetType: 1
@@ -332,21 +206,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5445362466723085375
-  Name: "Bush 01"
+  Id: 4304445462652881304
+  Name: "Rock 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bush_generic_001"
-  }
-}
-Assets {
-  Id: 3675214111415672954
-  Name: "Decal Tread Tracks 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_mil_decal_tracks_001_ref"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
   }
 }
 Assets {
@@ -356,15 +221,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
-  Id: 2244407999276554563
-  Name: "Tree Oak Stump 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_stump_001"
   }
 }
 Assets {
@@ -383,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_stone_doorway_001"
+  }
+}
+Assets {
+  Id: 1137112816547272582
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
   }
 }
 Assets {

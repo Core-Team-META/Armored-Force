@@ -75,6 +75,12 @@
         Name: "material1_scale"
         Float: 3
       }
+      Overrides {
+        Name: "cmp:Material2_Sides"
+        AssetReference {
+          Id: 12842759262543098562
+        }
+      }
     }
     Assets {
       Id: 10360961755205494209
@@ -119,6 +125,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "forest-floor_001"
+      }
+    }
+    Assets {
+      Id: 12842759262543098562
+      Name: "Rocks River Bed 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "puddle_river_bed_001"
       }
     }
     Assets {
