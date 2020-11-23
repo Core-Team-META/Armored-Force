@@ -27,6 +27,8 @@ local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local EQUIPMENT_TEMPLATE = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate")
 local EQUIPMENT_TEMPLATE2 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate2")
 local EQUIPMENT_TEMPLATE3 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate3")
+local EQUIPMENT_TEMPLATE4 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate4")
+local EQUIPMENT_TEMPLATE5 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate5")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -111,6 +113,24 @@ function OnBindingPressed(player,bindingPressed)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
 	end
+		--uk manticore
+		if bindingPressed == "ability_extra_4" then
+			RemovePlayerEquipment(player)
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE4)
+			assert(equipment[player]:IsA("Equipment"))
+			equipment[player]:Equip(player)
+			player.movementControlMode = MovementControlMode.FACING_RELATIVE
+			equipment[player].visibility = Visibility.FORCE_ON
+		end
+		--german panzer 4H
+		if bindingPressed == "ability_extra_5" then
+			RemovePlayerEquipment(player)
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE5)
+			assert(equipment[player]:IsA("Equipment"))
+			equipment[player]:Equip(player)
+			player.movementControlMode = MovementControlMode.FACING_RELATIVE
+			equipment[player].visibility = Visibility.FORCE_ON
+		end
 end
 
 -- nil OnPlayerRespawned(Player)
