@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 7137141122598181238
+  Id: 7082131536016582421
   Name: "Drivable USSR T-34"
   PlatformAssetType: 5
   TemplateAsset {
