@@ -1,6 +1,107 @@
 ﻿Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
+  Id: 17769715682558541926
+  Name: "Tank German Panther (Prop)"
+  Transform {
+    Location {
+      X: -5908.04395
+      Y: -2479.24341
+      Z: 117.332031
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6103433461258534592
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tank German Panther (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11596.4385
+            Y: 3655.05981
+            Z: 117.332031
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4282122314672159298
+    }
+  }
+}
+Objects {
+  Id: 9422869109029484715
+  Name: "Tank German Panther (Prop)"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6103433461258534592
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tank German Panther (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5908.04395
+            Y: -2479.24341
+            Z: 117.332031
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4282122314672159298
+    }
+  }
+}
+Objects {
   Id: 11504895350568425877
   Name: "Fantasy Human Gal 1"
   Transform {
@@ -50,8 +151,8 @@ Objects {
   Transform {
     Location {
       X: 11110
-      Y: -13639.1689
-      Z: 1684.99304
+      Y: -17482.293
+      Z: 1571.41479
     }
     Rotation {
     }
@@ -644,9 +745,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 10105
-            Y: -13507.2432
-            Z: 1740
+            X: 10847.7637
+            Y: -18284.1094
+            Z: 1385.76733
           }
         }
         Overrides {
@@ -697,9 +798,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9786.78
-            Y: -13214.6729
-            Z: 1761.09778
+            X: 9832.27246
+            Y: -16593.8516
+            Z: 1323.47815
           }
         }
         Overrides {
@@ -719,53 +820,6 @@ Objects {
     }
     TemplateAsset {
       Id: 4022529887699950550
-    }
-  }
-}
-Objects {
-  Id: 12473741995226591610
-  Name: "TW_BirchTree_Destructible"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14766061465847274198
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_BirchTree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 9786.78
-            Y: -14390.2686
-            Z: 1711.11609
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1877293447267286738
     }
   }
 }
@@ -1017,41 +1071,6 @@ Objects {
     TemplateAsset {
       Id: 14369695202381680389
     }
-  }
-}
-Objects {
-  Id: 791004983189083283
-  Name: "TW_CypressTree"
-  Transform {
-    Location {
-      X: 9786.89
-      Y: -13201.5977
-      Z: 1769.05969
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 791004983189083283
-    SubobjectId: 8484754271313755153
-    InstanceId: 7110876508843266521
-    TemplateId: 11801915035548119430
-    WasRoot: true
   }
 }
 Objects {
@@ -3840,446 +3859,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6127811671743940304
-  Name: "TW_CypressTree"
-  Transform {
-    Location {
-      X: -21152.0234
-      Y: -24400.5957
-      Z: 1581.35107
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -26167.9629
-            Y: -28062.7344
-            Z: 1581.35107
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
-  Id: 10394556404146283730
-  Name: "TW_CypressTree"
-  Transform {
-    Location {
-      X: -16278.2
-      Y: -26098.7344
-      Z: 1581.35107
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -21152.0234
-            Y: -24400.5957
-            Z: 1581.35107
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
-  Id: 14133535812556692764
-  Name: "TW_CypressTree02"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8670339760720955861
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree02"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -13516.9971
-            Y: -24230.9766
-            Z: 1674.87134
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.753102064
-            Y: 0.753102064
-            Z: 0.753102064
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7467575095499837485
-    }
-  }
-}
-Objects {
-  Id: 12891650184126304879
-  Name: "TW_CypressTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -16278.2
-            Y: -26098.7344
-            Z: 1581.35107
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
-  Id: 6025395788561539555
-  Name: "TW_CypressTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -14343.9
-            Y: -23817.9922
-            Z: 1700.36816
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -111.745621
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
-  Id: 13151710251355065981
-  Name: "TW_CypressTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -9323.32422
-            Y: -21352.9473
-            Z: 1726.98474
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
-  Id: 14815429461968397112
-  Name: "TW_CypressTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -5883.17773
-            Y: -16591.1133
-            Z: 1826.15808
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -156.348419
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
-  Id: 7978568172855343790
-  Name: "TW_CypressTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 933.697388
-            Y: -14832.8301
-            Z: 1829.4502
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
-  Id: 15410392937621000812
-  Name: "TW_CypressTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8484754271313755153
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_CypressTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 6906.86328
-            Y: -13755.0215
-            Z: 1743.25659
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -73.2241058
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11801915035548119430
-    }
-  }
-}
-Objects {
   Id: 4455909985024391269
   Name: "Fantasy Human Gal 2"
   Transform {
@@ -4543,13 +4122,14 @@ Objects {
           Name: "Position"
           Vector {
             X: 10340.2842
-            Y: -13583.0547
-            Z: 1684.33899
+            Y: -17114.4453
+            Z: 1600.23108
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: 61.3696365
           }
         }
         Overrides {
@@ -4756,8 +4336,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -11051.1797
-            Y: 14091.6797
+            X: -10155.3594
+            Y: 15282.542
             Z: 986.900879
           }
         }
