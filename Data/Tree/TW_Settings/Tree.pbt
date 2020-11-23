@@ -28,12 +28,6 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 13743021385399157433
-    SubobjectId: 6529435899752255669
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
   Id: 8550359202300316692
@@ -60,12 +54,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 8550359202300316692
-    SubobjectId: 10560035254735773208
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
   }
 }
 Objects {
@@ -111,12 +99,6 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
-  }
-  InstanceHistory {
-    SelfId: 15157515957598953857
-    SubobjectId: 3926683734417011597
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
   }
 }
 Objects {
@@ -187,12 +169,6 @@ Objects {
       MountChannelingTime: 2
       FlipOnMultiJump: true
     }
-  }
-  InstanceHistory {
-    SelfId: 4110397474043556432
-    SubobjectId: 15937995815847305308
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
   }
 }
 Objects {

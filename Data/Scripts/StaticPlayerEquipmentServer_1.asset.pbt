@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 3403025055362370891
+  Id: 292145458246292339
   Name: "StaticPlayerEquipmentServer"
   PlatformAssetType: 3
   TextAsset {
