@@ -1,7 +1,7 @@
 ﻿Name: "Marcela"
 RootId: 14661672776697705088
 Objects {
-  Id: 10870830366199611022
+  Id: 13112285422843472738
   Name: "Tank Loadout"
   Transform {
     Location {
@@ -15,21 +15,14 @@ Objects {
     }
   }
   ParentId: 14661672776697705088
-  ChildIds: 17749969918811862606
-  ChildIds: 13673189329144757863
+  ChildIds: 5061212422014877386
+  ChildIds: 4372142312274274526
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 10870830366199611022
-    SubobjectId: 8284583612446256258
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-    WasRoot: true
-  }
 }
 Objects {
-  Id: 13673189329144757863
+  Id: 4372142312274274526
   Name: "Static Player Equipment"
   Transform {
     Location {
@@ -42,13 +35,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10870830366199611022
-  ChildIds: 14659852158492750033
+  ParentId: 13112285422843472738
+  ChildIds: 12452188089047650380
   UnregisteredParameters {
     Overrides {
       Name: "cs:EquipmentTemplate"
       AssetReference {
-        Id: 12556864729632777770
+        Id: 9785351708899991482
       }
     }
     Overrides {
@@ -62,13 +55,25 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate2"
       AssetReference {
-        Id: 14700270908531323335
+        Id: 7082131536016582421
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate3"
       AssetReference {
-        Id: 8383799975727588188
+        Id: 11351345298841788045
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate4"
+      AssetReference {
+        Id: 3388242124274667096
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate5"
+      AssetReference {
+        Id: 14003111638084311026
       }
     }
     Overrides {
@@ -93,15 +98,9 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 13673189329144757863
-    SubobjectId: 6477547602579516523
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 14659852158492750033
+  Id: 12452188089047650380
   Name: "StaticPlayerEquipmentServer"
   Transform {
     Location {
@@ -114,12 +113,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13673189329144757863
+  ParentId: 4372142312274274526
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 13673189329144757863
+        SelfId: 4372142312274274526
       }
     }
   }
@@ -134,15 +133,9 @@ Objects {
       Id: 3403025055362370891
     }
   }
-  InstanceHistory {
-    SelfId: 14659852158492750033
-    SubobjectId: 3411040916990780125
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 17749969918811862606
+  Id: 5061212422014877386
   Name: "UI ClientContext"
   Transform {
     Location {
@@ -155,8 +148,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10870830366199611022
-  ChildIds: 14866825673911335158
+  ParentId: 13112285422843472738
+  ChildIds: 7972597929039265295
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -165,15 +158,9 @@ Objects {
   }
   NetworkContext {
   }
-  InstanceHistory {
-    SelfId: 17749969918811862606
-    SubobjectId: 1328770663562650690
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 14866825673911335158
+  Id: 7972597929039265295
   Name: "UI Container"
   Transform {
     Location {
@@ -186,9 +173,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17749969918811862606
-  ChildIds: 5929062971439519689
-  ChildIds: 8706096585856370715
+  ParentId: 5061212422014877386
+  ChildIds: 4961583662149506122
+  ChildIds: 3136788870501889765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -216,15 +203,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14866825673911335158
-    SubobjectId: 3059528918682741498
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 8706096585856370715
+  Id: 3136788870501889765
   Name: "Options"
   Transform {
     Location {
@@ -237,8 +218,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14866825673911335158
-  ChildIds: 18144800615948571287
+  ParentId: 7972597929039265295
+  ChildIds: 18377815195013789690
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -270,15 +251,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8706096585856370715
-    SubobjectId: 11310358141743340055
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 18144800615948571287
+  Id: 18377815195013789690
   Name: "Boom"
   Transform {
     Location {
@@ -291,8 +266,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8706096585856370715
-  ChildIds: 2371638096325490650
+  ParentId: 3136788870501889765
+  ChildIds: 636352865804420198
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -333,15 +308,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 18144800615948571287
-    SubobjectId: 2300066723616620699
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 2371638096325490650
+  Id: 636352865804420198
   Name: "UI Text Box"
   Transform {
     Location {
@@ -354,7 +323,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18144800615948571287
+  ParentId: 18377815195013789690
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -397,15 +366,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2371638096325490650
-    SubobjectId: 14181257096854070742
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 5929062971439519689
+  Id: 4961583662149506122
   Name: "Tank Loadout"
   Transform {
     Location {
@@ -418,10 +381,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14866825673911335158
-  ChildIds: 4739483724392265992
-  ChildIds: 13362731719660909363
-  ChildIds: 8902988172569081958
+  ParentId: 7972597929039265295
+  ChildIds: 9515397812161231695
+  ChildIds: 5840912208608490347
+  ChildIds: 1299937702347676441
+  ChildIds: 18126996393879789968
+  ChildIds: 590377770625164003
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -453,15 +418,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5929062971439519689
-    SubobjectId: 13145005804080448965
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 8902988172569081958
+  Id: 590377770625164003
   Name: "UI Image"
   Transform {
     Location {
@@ -474,8 +433,242 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5929062971439519689
-  ChildIds: 17212676452259379328
+  ParentId: 4961583662149506122
+  ChildIds: 6274687373932978577
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 169.004227
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6274687373932978577
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 590377770625164003
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "5 - German Panzer 4H"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 18126996393879789968
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 2013089321238814250
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 126.030548
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2013089321238814250
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18126996393879789968
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "4 - UK Manticore"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1299937702347676441
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 10819020680591873246
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -517,15 +710,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8902988172569081958
-    SubobjectId: 11504998214357035626
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 17212676452259379328
+  Id: 10819020680591873246
   Name: "UI Text Box"
   Transform {
     Location {
@@ -538,7 +725,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8902988172569081958
+  ParentId: 1299937702347676441
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -582,15 +769,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17212676452259379328
-    SubobjectId: 791371779185339020
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 13362731719660909363
+  Id: 5840912208608490347
   Name: "UI Image"
   Transform {
     Location {
@@ -603,8 +784,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5929062971439519689
-  ChildIds: 8796215233364885564
+  ParentId: 4961583662149506122
+  ChildIds: 17894104994249446885
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -646,15 +827,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13362731719660909363
-    SubobjectId: 6725501291461697855
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 8796215233364885564
+  Id: 17894104994249446885
   Name: "UI Text Box"
   Transform {
     Location {
@@ -667,7 +842,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13362731719660909363
+  ParentId: 5840912208608490347
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -711,15 +886,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8796215233364885564
-    SubobjectId: 11400402170774999600
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 4739483724392265992
+  Id: 9515397812161231695
   Name: "UI Image"
   Transform {
     Location {
@@ -732,8 +901,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5929062971439519689
-  ChildIds: 1502899291204740803
+  ParentId: 4961583662149506122
+  ChildIds: 9687699116308497007
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -774,15 +943,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4739483724392265992
-    SubobjectId: 11953174841103723268
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
-  }
 }
 Objects {
-  Id: 1502899291204740803
+  Id: 9687699116308497007
   Name: "UI Text Box"
   Transform {
     Location {
@@ -795,7 +958,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4739483724392265992
+  ParentId: 9515397812161231695
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -838,11 +1001,5 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1502899291204740803
-    SubobjectId: 17365718021754795215
-    InstanceId: 15364824031536886393
-    TemplateId: 15733200490397260229
   }
 }
