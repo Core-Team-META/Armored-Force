@@ -16,7 +16,7 @@
       }
       Overrides {
         Name: "opacity"
-        Float: 0.230438098
+        Float: 0.258509278
       }
       Overrides {
         Name: "reflection brightness"
@@ -69,7 +69,7 @@
       }
       Overrides {
         Name: "opacity distance"
-        Float: 100
+        Float: 279.563
       }
       Overrides {
         Name: "foam shift"

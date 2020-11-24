@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12145181589079789543
+  Name: "Decal Stains Top 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_top_001"
+  }
+}
+Assets {
   Id: 11860550904548812697
   Name: "Urban Damaged Interior Trim Board 01 Base 01"
   PlatformAssetType: 1

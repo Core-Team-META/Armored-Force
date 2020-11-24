@@ -681,6 +681,12 @@
     }
   }
   ObjectStates {
+    key: 1849966826808623227
+    value {
+      IsHidden: true
+    }
+  }
+  ObjectStates {
     key: 1904934892258430570
     value {
     }
@@ -2277,6 +2283,11 @@
   }
   ObjectStates {
     key: 5711265539563198027
+    value {
+    }
+  }
+  ObjectStates {
+    key: 5723360078819138692
     value {
     }
   }
@@ -4046,6 +4057,12 @@
   ObjectStates {
     key: 10142749301139844358
     value {
+    }
+  }
+  ObjectStates {
+    key: 10152574567979624068
+    value {
+      IsHidden: true
     }
   }
   ObjectStates {
