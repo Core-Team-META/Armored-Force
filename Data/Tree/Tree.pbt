@@ -2107,9 +2107,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 5.6
+            X: 32.8720818
             Y: 307.18454
-            Z: 1
+            Z: 1.00000346
           }
         }
       }
@@ -2159,16 +2159,16 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -90
-            Yaw: -14.0362635
+            Yaw: -14.0362549
             Roll: 104.03627
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 5.6
+            X: 32.8720818
             Y: 307.18454
-            Z: 1
+            Z: 1.00000346
           }
         }
       }
@@ -2216,16 +2216,16 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -90
-            Yaw: -14.0362635
+            Yaw: -14.0362549
             Roll: 104.03627
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 5.6
+            X: 32.8720818
             Y: 307.18454
-            Z: 1
+            Z: 1.00000346
           }
         }
       }
@@ -2271,9 +2271,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 5.6
+            X: 32.8720818
             Y: 307.18454
-            Z: 1
+            Z: 1.00000346
           }
         }
       }
