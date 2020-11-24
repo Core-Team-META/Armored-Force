@@ -4062,7 +4062,6 @@
   ObjectStates {
     key: 10152574567979624068
     value {
-      IsHidden: true
     }
   }
   ObjectStates {

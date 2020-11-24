@@ -81,6 +81,21 @@
           Id: 12842759262543098562
         }
       }
+      Overrides {
+        Name: "cmp:Material3_Sides"
+        AssetReference {
+          Id: 2246810950725948328
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material3_Sides"
+        Color {
+          R: 0.615
+          G: 0.404506
+          B: 0.243539989
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 10360961755205494209
@@ -143,6 +158,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "puddle_river_bed_001"
+      }
+    }
+    Assets {
+      Id: 2246810950725948328
+      Name: "Gravel Raked 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_gravel_001_uv"
       }
     }
   }
