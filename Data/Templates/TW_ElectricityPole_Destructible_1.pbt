@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 1621928837618375597
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -265,6 +265,14 @@
         ChildIds: 4163086876166555248
         ChildIds: 3418626891964792409
         ChildIds: 18367662536521946904
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -332,9 +340,9 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 1.37602568
-            Y: -4.20232868
-            Z: 835
+            X: 15.2985172
+            Y: -4.89909363
+            Z: 835.116577
           }
           Rotation {
           }
@@ -347,12 +355,6 @@
         ParentId: 1919766329187277230
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14231809728886464860
-            }
-          }
-          Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
@@ -361,12 +363,9 @@
             Float: 0.125
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
             }
           }
         }
@@ -396,9 +395,9 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 1.37602568
-            Y: -4.20232868
-            Z: 755
+            X: 15.2981415
+            Y: -4.89919281
+            Z: 755.116455
           }
           Rotation {
             Pitch: 2.90782309
@@ -412,12 +411,6 @@
         ParentId: 1919766329187277230
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14231809728886464860
-            }
-          }
-          Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
@@ -426,12 +419,9 @@
             Float: 0.125
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
             }
           }
         }
@@ -461,9 +451,9 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -1.34338188
-            Y: -34.8788033
-            Z: 750
+            X: 6.73536301
+            Y: -34.9483948
+            Z: 752.068176
           }
           Rotation {
             Yaw: 89.9999847
@@ -531,9 +521,9 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 0.701169968
-            Y: -19.8780518
-            Z: 705
+            X: 8.77989197
+            Y: -19.9479218
+            Z: 707.068726
           }
           Rotation {
             Pitch: -44.9999695
@@ -615,22 +605,13 @@
         ParentId: 1919766329187277230
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14231809728886464860
-            }
-          }
-          Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
             }
           }
         }
@@ -660,14 +641,14 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 9.92617416
-            Y: 3.67398882
-            Z: 755
+            X: 18.0043
+            Y: 3.60414886
+            Z: 757.068115
           }
           Rotation {
-            Pitch: 90
-            Yaw: -160.528778
-            Roll: -160.528778
+            Pitch: 87.979187
+            Yaw: -0.0124511719
+            Roll: -0.0117492676
           }
           Scale {
             X: 2.04092789
@@ -694,9 +675,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
+              R: 0.222000018
+              G: 0.222000018
+              B: 0.222000018
               A: 1
             }
           }
@@ -745,22 +726,13 @@
         ParentId: 1919766329187277230
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14231809728886464860
-            }
-          }
-          Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
             }
           }
         }
@@ -924,14 +896,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.376831
-            Y: -23.5671158
-            Z: -76.4701691
+            X: 738.4729
+            Y: -24.2020473
+            Z: -89.1270294
           }
           Rotation {
             Pitch: -90
-            Yaw: -6.83018561e-06
-            Roll: 6.83018379e-06
+            Yaw: -10.0249939
+            Roll: 10.0250053
           }
           Scale {
             X: 0.688739896
@@ -1046,14 +1018,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.376831
-            Y: -23.5671158
-            Z: 45.4501038
+            X: 738.474243
+            Y: -24.2018127
+            Z: 32.7936325
           }
           Rotation {
             Pitch: -90
-            Yaw: -6.83018561e-06
-            Roll: 6.83018379e-06
+            Yaw: -10.0249939
+            Roll: 10.0250053
           }
           Scale {
             X: 0.688739896
@@ -1168,14 +1140,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 663.792908
-            Y: -23.4392738
-            Z: 45.3205452
+            X: 663.890869
+            Y: -24.0741367
+            Z: 32.6635742
           }
           Rotation {
-            Pitch: -85.2227783
-            Yaw: -1.69297614e-11
-            Roll: 1.46777243e-11
+            Pitch: -85.2133179
+            Yaw: 3.63146901e-05
+            Roll: 1.97864256e-06
           }
           Scale {
             X: 0.688739896
@@ -1290,14 +1262,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 668.866638
-            Y: -23.529829
-            Z: -41.2757454
+            X: 668.96344
+            Y: -24.16465
+            Z: -53.9321594
           }
           Rotation {
-            Pitch: -85.2227783
-            Yaw: -1.69297614e-11
-            Roll: 1.46777243e-11
+            Pitch: -85.2133179
+            Yaw: 3.63146901e-05
+            Roll: 1.97864256e-06
           }
           Scale {
             X: 0.688739896
@@ -1412,14 +1384,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 669.801086
-            Y: -23.5671158
-            Z: -76.328125
+            X: 669.896606
+            Y: -24.2024078
+            Z: -88.984375
           }
           Rotation {
-            Pitch: -85.2227783
-            Yaw: -1.69297614e-11
-            Roll: 1.46777243e-11
+            Pitch: -85.2133179
+            Yaw: 3.63146901e-05
+            Roll: 1.97864256e-06
           }
           Scale {
             X: 0.688739896
@@ -1534,14 +1506,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 662.324158
-            Y: -23.4019871
-            Z: 80.3275909
+            X: 662.42218
+            Y: -24.036726
+            Z: 67.6714478
           }
           Rotation {
-            Pitch: -85.2227783
-            Yaw: -1.69297614e-11
-            Roll: 1.46777243e-11
+            Pitch: -85.2133179
+            Yaw: 3.63146901e-05
+            Roll: 1.97864256e-06
           }
           Scale {
             X: 0.688739896
@@ -1656,14 +1628,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.191467
-            Y: -24.0926838
-            Z: 78.8974228
+            X: 738.287964
+            Y: -24.7274075
+            Z: 66.2411728
           }
           Rotation {
             Pitch: -90
-            Yaw: 75.9637375
-            Roll: -75.9637451
+            Yaw: 0.422016084
+            Roll: -0.421966553
           }
           Scale {
             X: 0.688739896
@@ -1778,13 +1750,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.376831
-            Y: -23.5671158
-            Z: -41.4053612
+            X: 738.472717
+            Y: -24.2023525
+            Z: -54.0624428
           }
           Rotation {
             Pitch: -90
-            Yaw: 1.62844391e-12
+            Yaw: 7.55234814
+            Roll: -7.55233765
           }
           Scale {
             X: 0.688739896

@@ -253,27 +253,18 @@
         ParentId: 14598918507990495797
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Building_LowerTrimInner:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
-            }
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 3.03242803
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:vtile"
+            Float: 1.22402334
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:id"
             AssetReference {
-              Id: 11057307086666071473
+              Id: 14458375427107961947
             }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:utile"
-            Float: 4.23592854
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 0.835400283
           }
         }
         Collidable_v2 {
@@ -328,23 +319,14 @@
             Float: 0.546128631
           }
           Overrides {
-            Name: "ma:Building_LowerTrimInner:id"
-            AssetReference {
-              Id: 11057307086666071473
-            }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
-            }
-          }
-          Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
             Float: 1.01121163
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 14458375427107961947
+            }
           }
         }
         Collidable_v2 {
@@ -391,23 +373,14 @@
         ParentId: 14598918507990495797
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Building_LowerTrimInner:id"
-            AssetReference {
-              Id: 11057307086666071473
-            }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
-            }
-          }
-          Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
             Float: 1.55408251
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 14458375427107961947
+            }
           }
         }
         Collidable_v2 {
@@ -465,27 +438,18 @@
             Float: 2.45094848
           }
           Overrides {
-            Name: "ma:Building_LowerTrimInner:id"
-            AssetReference {
-              Id: 11057307086666071473
-            }
-          }
-          Overrides {
-            Name: "ma:Building_LowerTrimInner:color"
-            Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
-              A: 1
-            }
-          }
-          Overrides {
             Name: "ma:Building_LowerTrimInner:utile"
             Float: 0.518233895
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
             Float: 0.796448469
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:id"
+            AssetReference {
+              Id: 14458375427107961947
+            }
           }
         }
         Collidable_v2 {
@@ -517,15 +481,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_tx_urb_dmg_int_trim_board_001_base_01_ref"
-      }
-    }
-    Assets {
-      Id: 11057307086666071473
-      Name: "Wood Siding White"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_siding_white_001_uv"
       }
     }
     Assets {
