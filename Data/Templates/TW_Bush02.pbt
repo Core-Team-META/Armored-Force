@@ -10,9 +10,9 @@
         Name: "TW_Bush02"
         Transform {
           Scale {
-            X: 1.70878398
-            Y: 1.70878398
-            Z: 1.70878398
+            X: 2.34867096
+            Y: 2.34867096
+            Z: 2.34867096
           }
         }
         ParentId: 4781671109827199097
@@ -31,7 +31,7 @@
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"

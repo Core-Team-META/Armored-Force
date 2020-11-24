@@ -35,24 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16343879771799464160
-  Name: "Tree Redwood Small"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_005"
-  }
-}
-Assets {
-  Id: 15595881897288770989
-  Name: "Tree Redwood Medium"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_002"
-  }
-}
-Assets {
   Id: 15585852823533740787
   Name: "Arch"
   PlatformAssetType: 1
@@ -230,6 +212,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_env_fog_default"
+  }
+}
+Assets {
+  Id: 1908253659651347838
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
   }
 }
 Assets {
