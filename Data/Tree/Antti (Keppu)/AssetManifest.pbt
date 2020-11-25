@@ -53,21 +53,21 @@ Assets {
   }
 }
 Assets {
+  Id: 14384953621685186280
+  Name: "Whitebox Roof 01 Peak"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_roof_001_peak"
+  }
+}
+Assets {
   Id: 14270198567810839435
   Name: "Bricks Rough Stone Floor 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_rough_001"
-  }
-}
-Assets {
-  Id: 12289464758127468098
-  Name: "Urban Damaged Interior Trim Board 01 Mid 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tx_urb_dmg_int_trim_board_001_mid_01_ref"
   }
 }
 Assets {
@@ -80,30 +80,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11860550904548812697
-  Name: "Urban Damaged Interior Trim Board 01 Base 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tx_urb_dmg_int_trim_board_001_base_01_ref"
-  }
-}
-Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
-  Id: 11057307086666071473
-  Name: "Wood Siding White"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_siding_white_001_uv"
   }
 }
 Assets {
@@ -149,15 +131,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_smoke_volume_vfx"
-  }
-}
-Assets {
-  Id: 8215981026940294866
-  Name: "Urban Damaged Interior Trim Board 01 Top 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tx_urb_dmg_int_trim_board_001_top_01_ref"
   }
 }
 Assets {
