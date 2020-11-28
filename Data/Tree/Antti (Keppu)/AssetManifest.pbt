@@ -161,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6097322293129727319
+  Name: "Tree Oak 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_001"
+  }
+}
+Assets {
   Id: 5621809922852842752
   Name: "Rock Flat 02"
   PlatformAssetType: 1
