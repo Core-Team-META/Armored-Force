@@ -8,15 +8,6 @@
   }
 }
 Assets {
-  Id: 18056811206566631752
-  Name: "Bush Leafy Low 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_leafy_bush_002"
-  }
-}
-Assets {
   Id: 16990779988580040001
   Name: "Clover Patch 02"
   PlatformAssetType: 1

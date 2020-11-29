@@ -43,6 +43,7 @@
           }
         }
         ParentId: 16552807409293342440
+        ChildIds: 1931861044756111411
         ChildIds: 6126017066899706790
         ChildIds: 6751051348620328607
         ChildIds: 16555186748733780488
@@ -53,6 +54,40 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 1931861044756111411
+        Name: "Small Wooden Structure Break Destroy Impact 01 SFX"
+        Transform {
+          Location {
+            Z: 48.333252
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12706679138312205064
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 14531915349529574277
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: -1
+          Radius: -1
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -176,6 +211,15 @@
             AutoPlay: true
           }
         }
+      }
+    }
+    Assets {
+      Id: 14531915349529574277
+      Name: "Small Wooden Structure Break Destroy Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_small_wooden_structure_break_impact_01a_Cue_ref"
       }
     }
     Assets {
