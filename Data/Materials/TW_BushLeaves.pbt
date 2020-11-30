@@ -17,9 +17,15 @@
       Overrides {
         Name: "SSS"
         Color {
-          R: 0.260821402
-          G: 0.396000028
-          B: 0.0371247418
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "color_accent"
+        Color {
+          R: 0.123495
+          G: 0.1875
+          B: 0.017578
           A: 1
         }
       }
