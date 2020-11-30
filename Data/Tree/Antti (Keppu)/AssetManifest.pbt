@@ -125,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10512577683718946604
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
+  }
+}
+Assets {
   Id: 10040903362540305045
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -257,15 +266,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
-  Id: 380106840186150370
-  Name: "Rock Block 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_007"
   }
 }
 Assets {

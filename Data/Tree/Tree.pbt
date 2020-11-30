@@ -823,7 +823,7 @@ Objects {
       Y: -11019.5879
     }
     Rotation {
-      Yaw: -65.854393
+      Yaw: -65.8544
     }
     Scale {
       X: 1763.02283
@@ -2319,10 +2319,9 @@ Objects {
       MaterialChannel: 2
       SpawnDistance: 22937.1523
       CullDistance {
-        Min: 20000
+        Min: 10000
         Max: 50000
       }
-      ReceivesDecals: true
       GroundSlopeAngle {
         Max: 90
       }
@@ -2346,7 +2345,7 @@ Objects {
       Materials {
         key: "Nature_Grass"
         value {
-          Id: 841534158063459245
+          Id: 5393471088706896564
         }
       }
       LocalPositionOffset {
