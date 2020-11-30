@@ -4,25 +4,34 @@
   PlatformAssetType: 13
   SerializationVersion: 68
   CustomMaterialAsset {
-    BaseMaterialId: 14231809728886464860
+    BaseMaterialId: 1890220075148311577
     ParameterOverrides {
+      Overrides {
+        Name: "color_accent"
+        Color {
+          R: 1
+          G: 0.494399965
+          B: 0.0519999266
+          A: 1
+        }
+      }
       Overrides {
         Name: "color"
         Color {
-          R: 0.47300002
-          G: 0.24256447
-          B: 0.144738
+          R: 1
+          G: 0.494399965
+          B: 0.0519999266
           A: 1
         }
       }
     }
     Assets {
-      Id: 14231809728886464860
-      Name: "Wood Raw White"
+      Id: 1890220075148311577
+      Name: "Bark Redwood 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_white_001_uv"
+        AssetId: "mi_bark_redwood_001_uv"
       }
     }
   }

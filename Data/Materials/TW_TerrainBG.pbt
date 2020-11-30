@@ -9,7 +9,7 @@
       Overrides {
         Name: "cmp:Material1"
         AssetReference {
-          Id: 7859310291564458244
+          Id: 15829831601743145490
         }
       }
       Overrides {
@@ -34,12 +34,15 @@
         }
       }
       Overrides {
-        Name: "cmpc:Material1"
-        Color {
-          R: 0.206000015
-          G: 0.206000015
-          B: 0.206000015
-          A: 1
+        Name: "cmp:Material2"
+        AssetReference {
+          Id: 12842759262543098562
+        }
+      }
+      Overrides {
+        Name: "cmp:Material2_Sides"
+        AssetReference {
+          Id: 12842759262543098562
         }
       }
     }
@@ -53,12 +56,12 @@
       }
     }
     Assets {
-      Id: 7859310291564458244
-      Name: "Dirt 01"
+      Id: 15829831601743145490
+      Name: "Forest Floor 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "dirt_001"
+        AssetId: "forest-floor_001"
       }
     }
     Assets {
@@ -77,6 +80,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "dirt_001"
+      }
+    }
+    Assets {
+      Id: 12842759262543098562
+      Name: "Rocks River Bed 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "puddle_river_bed_001"
+      }
+    }
+    Assets {
+      Id: 12842759262543098562
+      Name: "Rocks River Bed 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "puddle_river_bed_001"
       }
     }
   }

@@ -254,11 +254,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_LowerTrimInner:utile"
-            Float: 3.03242803
+            Float: 2.05508971
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 1.22402334
+            Float: 2.37644482
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:id"
@@ -328,6 +328,19 @@
               Id: 14458375427107961947
             }
           }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.224181652
+          }
+          Overrides {
+            Name: "ma:Shared_DamagedEdge:color"
+            Color {
+              R: 0.901
+              G: 0.669533134
+              B: 0.239666089
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -380,6 +393,19 @@
             Name: "ma:Building_LowerTrimInner:id"
             AssetReference {
               Id: 14458375427107961947
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.498464316
+          }
+          Overrides {
+            Name: "ma:Shared_DamagedEdge:color"
+            Color {
+              R: 0.901
+              G: 0.669533134
+              B: 0.239666089
+              A: 1
             }
           }
         }
