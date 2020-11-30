@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 1558590449251963500
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -605,19 +605,19 @@
         Name: "Bush 02"
         Transform {
           Location {
-            X: 477.121582
-            Y: 9.50866699
-            Z: 28.8599014
+            X: 559.225891
+            Y: 14.3329239
+            Z: 22.0901108
           }
           Rotation {
-            Pitch: -37.1728363
-            Yaw: -89.9999771
+            Pitch: -37.1728516
+            Yaw: -89.9999695
             Roll: -89.999939
           }
           Scale {
-            X: 0.588598192
-            Y: 0.588598609
-            Z: 0.600364149
+            X: 0.6
+            Y: 0.6
+            Z: 1.19999993
           }
         }
         ParentId: 1557898639187458628

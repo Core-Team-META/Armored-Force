@@ -33,6 +33,14 @@
           A: 1
         }
       }
+      Overrides {
+        Name: "dist_rotation"
+        Float: 0.5
+      }
+      Overrides {
+        Name: "wind_weight"
+        Float: 1
+      }
     }
     Assets {
       Id: 12223811200745286487

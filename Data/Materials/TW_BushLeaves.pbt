@@ -14,6 +14,15 @@
         Name: "wind_speed"
         Float: 0.5
       }
+      Overrides {
+        Name: "SSS"
+        Color {
+          R: 0.260821402
+          G: 0.396000028
+          B: 0.0371247418
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 5213547757587382338
