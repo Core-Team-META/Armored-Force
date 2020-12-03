@@ -8,15 +8,6 @@
   }
 }
 Assets {
-  Id: 18052318672521571529
-  Name: "Large Wood Board 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_board_6m"
-  }
-}
-Assets {
   Id: 17925326465180611494
   Name: "Cube"
   PlatformAssetType: 1
@@ -50,15 +41,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 15812398897488532618
-  Name: "Large Wood Beam 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_beam_6m"
   }
 }
 Assets {
@@ -188,15 +170,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9603048555208367114
-  Name: "Hill 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_004"
-  }
-}
-Assets {
   Id: 8857078069961347605
   Name: "Smoke Volume VFX"
   PlatformAssetType: 8
@@ -221,24 +194,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_rough_002"
-  }
-}
-Assets {
-  Id: 6850673296695379879
-  Name: "Wood 2x4 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_two-by-four_3m"
-  }
-}
-Assets {
-  Id: 6674876388081502680
-  Name: "Rocky Ground 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "rocky_001"
   }
 }
 Assets {
@@ -329,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 737325672047651557
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
   }
 }
 Assets {

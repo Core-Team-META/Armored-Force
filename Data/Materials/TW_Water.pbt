@@ -16,7 +16,7 @@
       }
       Overrides {
         Name: "opacity"
-        Float: 0.258509278
+        Float: 0.400570363
       }
       Overrides {
         Name: "reflection brightness"
