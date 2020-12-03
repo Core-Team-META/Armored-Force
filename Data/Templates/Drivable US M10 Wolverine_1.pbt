@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 11223807285706338630
+  Id: 3407725527001688670
   Name: "Drivable US M10 Wolverine"
   PlatformAssetType: 5
   TemplateAsset {
@@ -23910,9 +23910,10 @@
         ChildIds: 3606250318832796850
         ChildIds: 11015963852224580597
         ChildIds: 4071074409003489803
-        ChildIds: 10892909058568217963
         ChildIds: 10712982371316901881
         ChildIds: 13714138766648740991
+        ChildIds: 524194934998717777
+        ChildIds: 3403102686843219774
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -24789,9 +24790,9 @@
         Name: "50 cal setup"
         Transform {
           Location {
-            X: -270.536072
+            X: -270.536133
             Y: 8.9519043
-            Z: 104.30838
+            Z: 107.976196
           }
           Rotation {
             Yaw: 180
@@ -26977,73 +26978,6 @@
         }
       }
       Objects {
-        Id: 10892909058568217963
-        Name: "Pipe (thin)"
-        Transform {
-          Location {
-            X: -104.631317
-            Z: 132.601532
-          }
-          Rotation {
-          }
-          Scale {
-            X: 2.14712071
-            Y: 1.72065759
-            Z: 0.492830515
-          }
-        }
-        ParentId: 6752689786489897985
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.124771833
-              G: 0.147027284
-              B: 0.0865004584
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5836430349218932838
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 10712982371316901881
         Name: "Prism - 3-Sided Polished"
         Transform {
@@ -27173,6 +27107,158 @@
         CoreMesh {
           MeshAsset {
             Id: 13637078664533668977
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 524194934998717777
+        Name: "Prism - 6-Sided Half"
+        Transform {
+          Location {
+            X: 15.4179688
+            Z: 160.041779
+          }
+          Rotation {
+            Pitch: 62.6767616
+            Yaw: -179.999969
+            Roll: 1.36603539e-05
+          }
+          Scale {
+            X: 0.885308087
+            Y: 1.15320146
+            Z: 0.00784459803
+          }
+        }
+        ParentId: 6752689786489897985
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.124771833
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15617342134329326825
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3403102686843219774
+        Name: "Military Tank Historic Hatch 01"
+        Transform {
+          Location {
+            X: -110.499512
+            Z: 135.613586
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.08683968
+            Y: 1.64521372
+            Z: 2.08683968
+          }
+        }
+        ParentId: 6752689786489897985
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.124771826
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.124771826
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1315438047815824613
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -27916,21 +28002,21 @@
       }
     }
     Assets {
-      Id: 5836430349218932838
-      Name: "Pipe (thin)"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_pipe_003"
-      }
-    }
-    Assets {
       Id: 13637078664533668977
       Name: "Prism - 3-Sided Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prism_hq_001"
+      }
+    }
+    Assets {
+      Id: 1315438047815824613
+      Name: "Military Tank Historic Hatch 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_mil_tank_hst_hatch_001_ref"
       }
     }
     PrimaryAssetId {
