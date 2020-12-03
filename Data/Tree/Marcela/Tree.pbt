@@ -79,13 +79,19 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 3652521183023497319
+        Id: 9563927621739478420
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate7"
       AssetReference {
-        Id: 11223807285706338630
+        Id: 3407725527001688670
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate8"
+      AssetReference {
+        Id: 5926986810139767040
       }
     }
     Overrides {
@@ -401,6 +407,7 @@ Objects {
   ChildIds: 590377770625164003
   ChildIds: 7256190913074361541
   ChildIds: 12174308365697703640
+  ChildIds: 1687238511433769149
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -418,6 +425,123 @@ Objects {
       }
     }
     Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1687238511433769149
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 18200838665396945197
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 294.448425
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 18200838665396945197
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1687238511433769149
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "8 - US M6A1 Heavy"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
