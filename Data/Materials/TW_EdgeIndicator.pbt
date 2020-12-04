@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 13231971539212330216
-  Name: "Custom Additive Edgeline Top Fade"
+  Name: "TW_EdgeIndicator"
   PlatformAssetType: 13
   SerializationVersion: 68
   CustomMaterialAsset {
