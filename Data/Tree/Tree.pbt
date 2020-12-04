@@ -2111,6 +2111,12 @@ Objects {
             Z: 1.00000346
           }
         }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
+          }
+        }
       }
     }
     TemplateAsset {
@@ -2170,6 +2176,12 @@ Objects {
             Z: 1.00000346
           }
         }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
+          }
+        }
       }
     }
     TemplateAsset {
@@ -2227,6 +2239,12 @@ Objects {
             Z: 1.00000346
           }
         }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
+          }
+        }
       }
     }
     TemplateAsset {
@@ -2273,6 +2291,12 @@ Objects {
             X: 32.8720818
             Y: 307.18454
             Z: 1.00000346
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
           }
         }
       }
