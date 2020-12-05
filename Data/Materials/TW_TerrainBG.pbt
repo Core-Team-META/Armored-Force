@@ -13,18 +13,6 @@
         }
       }
       Overrides {
-        Name: "cmp:Material4"
-        AssetReference {
-          Id: 7859310291564458244
-        }
-      }
-      Overrides {
-        Name: "cmp:Material4_Sides"
-        AssetReference {
-          Id: 7859310291564458244
-        }
-      }
-      Overrides {
         Name: "cmpc:Material4"
         Color {
           R: 0.206000015
@@ -62,24 +50,6 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "forest-floor_001"
-      }
-    }
-    Assets {
-      Id: 7859310291564458244
-      Name: "Dirt 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "dirt_001"
-      }
-    }
-    Assets {
-      Id: 7859310291564458244
-      Name: "Dirt 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "dirt_001"
       }
     }
     Assets {

@@ -8,15 +8,6 @@
   }
 }
 Assets {
-  Id: 17925326465180611494
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -188,15 +179,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7234944468290544783
-  Name: "Bricks Rough Stone Floor 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_floor_rough_002"
-  }
-}
-Assets {
   Id: 6097322293129727319
   Name: "Tree Oak 01"
   PlatformAssetType: 1
@@ -260,30 +242,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1669399766334427563
-  Name: "Stone Arch (doorway) 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_stone_doorway_001"
-  }
-}
-Assets {
   Id: 1258576880535144840
   Name: "Underwater Post Process"
   PlatformAssetType: 20
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_water"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
   }
 }
 Assets {
