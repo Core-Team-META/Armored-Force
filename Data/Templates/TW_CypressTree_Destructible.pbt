@@ -493,8 +493,8 @@
         Name: "Bush 02"
         Transform {
           Location {
-            X: 532.419189
-            Y: 5.07385254
+            X: 532.403381
+            Y: 24.3017578
             Z: 28.8598633
           }
           Rotation {

@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11296696299295417863
+  Name: "Tree Birch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_001"
+  }
+}
+Assets {
   Id: 10905138335060518079
   Name: "Rock Block 01"
   PlatformAssetType: 1
@@ -134,12 +143,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8857078069961347605
-  Name: "Smoke Volume VFX"
-  PlatformAssetType: 8
+  Id: 8007464172583611596
+  Name: "Tree Birch 02"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_smoke_volume_vfx"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_003"
   }
 }
 Assets {
