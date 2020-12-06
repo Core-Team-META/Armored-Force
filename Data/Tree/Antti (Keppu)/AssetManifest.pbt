@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16587759780299340145
-  Name: "Cube - Rounded Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_rounded_001"
-  }
-}
-Assets {
   Id: 16374150260036817633
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -41,15 +32,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_002"
-  }
-}
-Assets {
-  Id: 15585852823533740787
-  Name: "Arch"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arch_001"
   }
 }
 Assets {
@@ -77,15 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_roof_001_peak"
-  }
-}
-Assets {
-  Id: 14270198567810839435
-  Name: "Bricks Rough Stone Floor 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_floor_rough_001"
   }
 }
 Assets {
@@ -257,14 +230,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
-  }
-}
-Assets {
-  Id: 136256093384731196
-  Name: "Bricks Cobblestone Floor 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }
