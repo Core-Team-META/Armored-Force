@@ -179,6 +179,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5319512311515341951
+  Name: "Motion Blur Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_advanced_motion_blur"
+  }
+}
+Assets {
   Id: 5013937755846833709
   Name: "Tree Redwood Medium"
   PlatformAssetType: 1
