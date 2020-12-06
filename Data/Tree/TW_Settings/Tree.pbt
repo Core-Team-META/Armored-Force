@@ -214,7 +214,7 @@ Objects {
           Value: "mc:ecorehorizontalalign:left"
         }
         ChatVerticalAlignment {
-          Value: "mc:ecorehorizontalalign:center"
+          Value: "mc:ecoreverticalalign:bottom"
         }
       }
     }
