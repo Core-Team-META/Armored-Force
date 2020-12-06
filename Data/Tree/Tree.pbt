@@ -2352,7 +2352,7 @@ Objects {
       Scaling {
         ScaleX {
           Min: 0.900000036
-          Max: 3.10000014
+          Max: 3
         }
         ScaleY {
           Min: 1
