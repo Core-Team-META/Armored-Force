@@ -1,1 +1,3 @@
-﻿MaxPlayers: 16
+﻿LeaderboardConfigs {
+}
+MaxPlayers: 16
