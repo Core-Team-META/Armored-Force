@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11182969111770509228
+  Name: "Cliff 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "cliff_002"
+  }
+}
+Assets {
   Id: 10905138335060518079
   Name: "Rock Block 01"
   PlatformAssetType: 1

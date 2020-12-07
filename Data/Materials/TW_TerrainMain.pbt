@@ -105,6 +105,12 @@
           A: 1
         }
       }
+      Overrides {
+        Name: "cmp:Material1_Sides"
+        AssetReference {
+          Id: 11182969111770509228
+        }
+      }
     }
     Assets {
       Id: 10360961755205494209
@@ -176,6 +182,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_gravel_001_uv"
+      }
+    }
+    Assets {
+      Id: 11182969111770509228
+      Name: "Cliff 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "cliff_002"
       }
     }
   }
