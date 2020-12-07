@@ -1,6 +1,51 @@
 ﻿Name: "TW_Settings"
 RootId: 7331958413616733673
 Objects {
+  Id: 6144226087705005535
+  Name: "Ambience Nature Calm Forest Set 01 SFX"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7331958413616733673
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5341159740561491560
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Ambience Nature Calm Forest Set 01 SFX_adjusted"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16326290395662680836
+    }
+  }
+}
+Objects {
   Id: 13743021385399157433
   Name: "Third Person Camera Settings"
   Transform {
