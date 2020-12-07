@@ -13,15 +13,6 @@
         }
       }
       Overrides {
-        Name: "cmpc:Material4"
-        Color {
-          R: 0.206000015
-          G: 0.206000015
-          B: 0.206000015
-          A: 1
-        }
-      }
-      Overrides {
         Name: "cmp:Material2"
         AssetReference {
           Id: 12842759262543098562
@@ -31,6 +22,43 @@
         Name: "cmp:Material2_Sides"
         AssetReference {
           Id: 12842759262543098562
+        }
+      }
+      Overrides {
+        Name: "material3_scale"
+        Float: 10
+      }
+      Overrides {
+        Name: "material3side_scale"
+        Float: 10
+      }
+      Overrides {
+        Name: "cmp:Material3"
+        AssetReference {
+          Id: 10216119876043919710
+        }
+      }
+      Overrides {
+        Name: "material4_scale"
+        Float: 2
+      }
+      Overrides {
+        Name: "material4side_scale"
+        Float: 2
+      }
+      Overrides {
+        Name: "cmp:Material4"
+        AssetReference {
+          Id: 10216119876043919710
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material4"
+        Color {
+          R: 0.54
+          G: 0.54
+          B: 0.54
+          A: 1
         }
       }
     }
@@ -68,6 +96,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "puddle_river_bed_001"
+      }
+    }
+    Assets {
+      Id: 10216119876043919710
+      Name: "Dirt 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "dirt_001"
+      }
+    }
+    Assets {
+      Id: 10216119876043919710
+      Name: "Dirt 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "dirt_001"
       }
     }
   }

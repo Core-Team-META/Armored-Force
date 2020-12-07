@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14358596664128095200
+  Name: "Bench Full"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bench_001"
+  }
+}
+Assets {
   Id: 13230547612715629822
   Name: "Tree Redwood Small"
   PlatformAssetType: 1
@@ -140,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 6947005568715944180
+  Name: "Wood Planks"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_001_uv"
   }
 }
 Assets {
