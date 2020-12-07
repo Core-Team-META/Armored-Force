@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 3388242124274667096
+  Id: 4825421426658938573
   Name: "Drivable UK 1955 Chimera"
   PlatformAssetType: 5
   TemplateAsset {
@@ -7,7 +7,7 @@
       RootId: 8005372685235357507
       Objects {
         Id: 8005372685235357507
-        Name: "Drivable UK Manticore"
+        Name: "Drivable UK 1955 Chimera"
         Transform {
           Scale {
             X: 1
@@ -7701,6 +7701,7 @@
           }
         }
         ParentId: 8084076046189312666
+        ChildIds: 7543449875438812418
         ChildIds: 4477838389603539850
         ChildIds: 5395385566287619692
         ChildIds: 16341842696881812766
@@ -7722,6 +7723,68 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 7543449875438812418
+        Name: "Manticore Logo"
+        Transform {
+          Location {
+            X: -201.449341
+            Y: 7.27905273
+            Z: 176.166504
+          }
+          Rotation {
+            Yaw: 89.9999619
+            Roll: 4.44911432
+          }
+          Scale {
+            X: 0.517539382
+            Y: 0.517540753
+            Z: 0.810415387
+          }
+        }
+        ParentId: 17647069823782395135
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.335
+              G: 0.25614208
+              B: 0.165847629
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5737602790217389143
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -17493,7 +17556,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4116624350679773699
+              Id: 7177433471695729940
             }
           }
           Overrides {
@@ -17748,7 +17811,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4116624350679773699
+              Id: 7177433471695729940
             }
           }
           Overrides {
@@ -19694,6 +19757,15 @@
       }
     }
     Assets {
+      Id: 5737602790217389143
+      Name: "Manticore Logo"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_logo_manticore_01"
+      }
+    }
+    Assets {
       Id: 9364547700951045218
       Name: "Military Tank Modern Mantlet 01"
       PlatformAssetType: 1
@@ -20054,7 +20126,7 @@
       }
     }
     Assets {
-      Id: 4116624350679773699
+      Id: 7177433471695729940
       Name: "Bark Dead 01"
       PlatformAssetType: 2
       PrimaryAsset {
