@@ -1,4 +1,9 @@
 ﻿
+-- Script by Antti Koponen 
+-- Updated Dec 7. 2020
+-- Activates Debris Physics for objects inside Geo folder
+-- Feel free to modify
+
 -- Locations to spawn FX (Sound effects & Particles)
 local FXLocation01 = script:GetCustomProperty("FXLocation01"):WaitForObject()
 local FXLocation02 = script:GetCustomProperty("FXLocation02"):WaitForObject()
@@ -13,7 +18,7 @@ local trigger = script.parent
 function handleOverlap(trigger, object)
     if object ~= nil and object:IsA("Player") then
      
-        -- Wait little to have the tank inside the trigger/mesh to trigger the destruction
+        -- Wait little to have more realistic(deeper) impact to trigger/mesh before triggering the destruction
         Task.Wait(0.1)
 
         for _, child in ipairs(geo:GetChildren()) do

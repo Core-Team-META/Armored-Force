@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 16282966150302545814
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -58,13 +58,15 @@
         Name: "DestructionTrigger"
         Transform {
           Location {
+            X: 1.06459045
+            Y: 141.151917
             Z: 164.772339
           }
           Rotation {
           }
           Scale {
             X: 0.3
-            Y: 0.5
+            Y: 3.20000029
             Z: 3.2
           }
         }
@@ -126,12 +128,6 @@
             Name: "cs:FXLocation02"
             ObjectReference {
               SubObjectId: 1887982196146665946
-            }
-          }
-          Overrides {
-            Name: "cs:PhysicsDebris"
-            AssetReference {
-              Id: 11122514000848590776
             }
           }
           Overrides {

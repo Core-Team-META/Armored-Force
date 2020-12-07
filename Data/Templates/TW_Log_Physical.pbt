@@ -1,23 +1,74 @@
 ﻿Assets {
-  Id: 17813327433056842065
-  Name: "TW_Log"
+  Id: 3473065710800896669
+  Name: "TW_Log_Physical"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 4973663807661373421
+      RootId: 8452044238002519398
       Objects {
-        Id: 4973663807661373421
-        Name: "TW_Log"
+        Id: 8452044238002519398
+        Name: "TW_Log_Physical"
         Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4689494391382931675
+        ChildIds: 1329869537229426100
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 1329869537229426100
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8452044238002519398
+        ChildIds: 18404344473783849248
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 18404344473783849248
+        Name: "Cylinder"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
           Scale {
             X: 0.6
             Y: 0.6
             Z: 8.8
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 18063063650613879590
-        ChildIds: 6938571074167365096
+        ParentId: 1329869537229426100
+        ChildIds: 15472788114187288782
+        ChildIds: 1219468158884839189
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -55,12 +106,14 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
+              IsEnabled: true
+              Mass: 500
             }
           }
         }
       }
       Objects {
-        Id: 18063063650613879590
+        Id: 15472788114187288782
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
@@ -77,7 +130,7 @@
             Z: 0.00713298842
           }
         }
-        ParentId: 4973663807661373421
+        ParentId: 18404344473783849248
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -95,7 +148,7 @@
         }
       }
       Objects {
-        Id: 6938571074167365096
+        Id: 1219468158884839189
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
@@ -114,7 +167,7 @@
             Z: 0.0151851755
           }
         }
-        ParentId: 4973663807661373421
+        ParentId: 18404344473783849248
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

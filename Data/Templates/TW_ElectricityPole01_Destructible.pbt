@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 1621928837618375597
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -126,12 +126,6 @@
             Name: "cs:FXLocation02"
             ObjectReference {
               SubObjectId: 8741209050681103300
-            }
-          }
-          Overrides {
-            Name: "cs:PhysicsDebris"
-            AssetReference {
-              Id: 11122514000848590776
             }
           }
           Overrides {
