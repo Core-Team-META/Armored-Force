@@ -31,11 +31,11 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.400856048
+            Float: 0.217272505
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5.89229822
+            Float: 1.52125645
           }
         }
         Collidable_v2 {
