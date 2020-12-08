@@ -1,6 +1,52 @@
 ﻿Name: "Marcela"
 RootId: 14661672776697705088
 Objects {
+  Id: 5770985737712584303
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14661672776697705088
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12115.999
+            Y: -5531.29395
+            Z: 200.208252
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -34.6265869
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
   Id: 13112285422843472738
   Name: "Tank Loadout"
   Transform {
