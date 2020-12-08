@@ -2073,6 +2073,7 @@ Objects {
     }
   }
   ParentId: 17707050887276379352
+  ChildIds: 2140050464641941112
   ChildIds: 12863100340974984301
   ChildIds: 1245555288092411986
   ChildIds: 16182384547534576989
@@ -2121,9 +2122,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -6973.83203
-            Y: -13672.6211
-            Z: 1240.00793
+            X: -6405
+            Y: -14780
+            Z: 661.162
           }
         }
         Overrides {
@@ -2137,9 +2138,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 32.8720818
-            Y: 211.153214
-            Z: 1.00002038
+            X: 32.9
+            Y: 198.244919
+            Z: 1
           }
         }
         Overrides {
@@ -2204,9 +2205,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 57242.2109
-            Y: 44512.3906
-            Z: 1240.00122
+            X: 57390.1875
+            Y: 44407.9805
+            Z: 1240.00134
           }
         }
         Overrides {
@@ -2221,8 +2222,8 @@ Objects {
           Name: "Scale"
           Vector {
             X: 32.8720818
-            Y: 211.153214
-            Z: 1.00002038
+            Y: 205.203781
+            Z: 1.00005233
           }
         }
         Overrides {
@@ -2285,8 +2286,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 82842.4609
-            Y: -17168.2969
+            X: 82622.5156
+            Y: -16970.332
             Z: 1240.0011
           }
         }
@@ -2366,9 +2367,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1612.0918
-            Y: 76725
-            Z: 1240.00342
+            X: 722.166
+            Y: 76620.2813
+            Z: 1240.00366
           }
         }
         Overrides {
@@ -2383,7 +2384,7 @@ Objects {
           Name: "Scale"
           Vector {
             X: 32.8720818
-            Y: 160.874405
+            Y: 157.234528
             Z: 1.00000346
           }
         }
@@ -2447,7 +2448,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 25643.457
+            X: 50335
             Y: -46050
             Z: 1240.00061
           }
@@ -2463,9 +2464,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 32.8720818
-            Y: 284.75943
-            Z: 1.00000346
+            X: 32.9
+            Y: 161.6
+            Z: 1
           }
         }
         Overrides {
@@ -2521,9 +2522,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -30705
-            Y: 15350
-            Z: 1240
+            X: -30680.75
+            Y: 46545.9805
+            Z: 661.162
           }
         }
         Overrides {
@@ -2532,10 +2533,65 @@ Objects {
             Pitch: -90
           }
         }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 32.9
+            Y: 150.974579
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
       Id: 2859045759570793761
+    }
+  }
+}
+Objects {
+  Id: 2140050464641941112
+  Name: "Cube - Bottom-Aligned"
+  Transform {
+    Location {
+      X: -30660
+      Y: 46365
+      Z: 95
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.1
+      Y: 604.4
+      Z: 37.7000504
+    }
+  }
+  ParentId: 10639644213682625907
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13231971539212330216
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16374150260036817633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }

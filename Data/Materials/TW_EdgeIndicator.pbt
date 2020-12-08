@@ -16,7 +16,7 @@
       }
       Overrides {
         Name: "vertical fade"
-        Float: 7.13520622
+        Float: 9.45989227
       }
       Overrides {
         Name: "fresnel brightness"
@@ -34,6 +34,7 @@
         Name: "color"
         Color {
           R: 0.940000057
+          G: 0.109666683
           A: 1
         }
       }
@@ -41,6 +42,7 @@
         Name: "noise color"
         Color {
           R: 0.940000057
+          G: 0.109666683
           A: 1
         }
       }
