@@ -511,7 +511,7 @@ Objects {
       Y: 13322.7988
     }
     Rotation {
-      Yaw: -65.8544312
+      Yaw: -65.8544693
     }
     Scale {
       X: 1763.02283
@@ -550,7 +550,7 @@ Objects {
       Y: 8222.76758
     }
     Rotation {
-      Yaw: -65.8544312
+      Yaw: -65.8544693
     }
     Scale {
       X: 1763.02283
@@ -628,7 +628,7 @@ Objects {
       Y: 1361.57568
     }
     Rotation {
-      Yaw: -65.8544312
+      Yaw: -65.8544693
     }
     Scale {
       X: 1763.02283
@@ -667,7 +667,7 @@ Objects {
       Y: -3738.45508
     }
     Rotation {
-      Yaw: -65.8544312
+      Yaw: -65.8544693
     }
     Scale {
       X: 1763.02283
@@ -702,11 +702,11 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 10475.7725
+      X: 10475.7734
       Y: 2796.82178
     }
     Rotation {
-      Yaw: -65.8544312
+      Yaw: -65.8544693
     }
     Scale {
       X: 1763.02283
@@ -753,7 +753,7 @@ Objects {
       Y: -9584.3418
     }
     Rotation {
-      Yaw: -65.8544312
+      Yaw: -65.8544693
     }
     Scale {
       X: 1763.02283
@@ -792,7 +792,7 @@ Objects {
       Y: -16119.6191
     }
     Rotation {
-      Yaw: -65.8544312
+      Yaw: -65.8544693
     }
     Scale {
       X: 1763.02283
@@ -831,7 +831,7 @@ Objects {
       Y: -11019.5879
     }
     Rotation {
-      Yaw: -65.8544
+      Yaw: -65.8544388
     }
     Scale {
       X: 1763.02283
@@ -866,8 +866,8 @@ Objects {
   Name: "SpawnArea_RedTeam"
   Transform {
     Location {
-      X: 6456.59668
-      Y: -51580
+      X: 38315.5508
+      Y: -51105.3711
       Z: -265
     }
     Rotation {
@@ -947,9 +947,9 @@ Objects {
   Name: "SpawnArea_BlueTeam"
   Transform {
     Location {
-      X: 5963.48145
-      Y: 41880
-      Z: -260
+      X: -37734.4375
+      Y: 44264.6797
+      Z: -259.992188
     }
     Rotation {
       Roll: -90
@@ -1061,9 +1061,9 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: 27610
-      Y: 3030
-      Z: -970
+      X: 11036.8633
+      Y: 17549.916
+      Z: -969.992188
     }
     Rotation {
     }
@@ -1180,6 +1180,14 @@ Objects {
         Id: 13027185955742849693
       }
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.960000038
+        B: 0.101721957
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1207,8 +1215,8 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: -33990
-      Y: 3030
+      X: -28386.0977
+      Y: -6907.27148
       Z: -970
     }
     Rotation {
@@ -1255,6 +1263,14 @@ Objects {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 13027185955742849693
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.960000038
+        B: 0.101721957
+        A: 1
       }
     }
   }
@@ -2061,14 +2077,183 @@ Objects {
   ChildIds: 1245555288092411986
   ChildIds: 16182384547534576989
   ChildIds: 4302040622650987333
+  ChildIds: 2840459275325916047
+  ChildIds: 2660256615551253733
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 2660256615551253733
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      X: 26537.2109
+      Y: 29162.3906
+      Z: 1240.00122
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 36.8698845
+      Roll: 1.13361359
+    }
+    Scale {
+      X: 32.8720818
+      Y: 211.153214
+      Z: 1.00002038
+    }
+  }
+  ParentId: 10639644213682625907
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6973.83203
+            Y: -13672.6211
+            Z: 1240.00793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+            Yaw: -26.565033
+            Roll: 64.5685425
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 32.8720818
+            Y: 211.153214
+            Z: 1.00002038
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
+          }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableDistanceFieldLighting"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
+  }
+}
+Objects {
+  Id: 2840459275325916047
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      Y: 61375
+      Z: 1240
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 90
+      Roll: 7.62939453e-06
+    }
+    Scale {
+      X: 32.8720818
+      Y: 307.18454
+      Z: 1.00000346
+    }
+  }
+  ParentId: 10639644213682625907
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 57242.2109
+            Y: 44512.3906
+            Z: 1240.00122
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+            Yaw: -66.0327759
+            Roll: 104.03627
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 32.8720818
+            Y: 211.153214
+            Z: 1.00002038
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
+          }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableDistanceFieldLighting"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
   }
 }
 Objects {
@@ -2100,9 +2285,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 92105
-            Y: 15350
-            Z: 1240
+            X: 82842.4609
+            Y: -17168.2969
+            Z: 1240.0011
           }
         }
         Overrides {
@@ -2115,7 +2300,7 @@ Objects {
           Name: "Scale"
           Vector {
             X: 32.8720818
-            Y: 307.18454
+            Y: 145.463943
             Z: 1.00000346
           }
         }
@@ -2124,6 +2309,24 @@ Objects {
           AssetReference {
             Id: 13231971539212330216
           }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableDistanceFieldLighting"
+          Bool: true
         }
       }
     }
@@ -2163,9 +2366,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 30705
+            X: 1612.0918
             Y: 76725
-            Z: 1240
+            Z: 1240.00342
           }
         }
         Overrides {
@@ -2180,7 +2383,7 @@ Objects {
           Name: "Scale"
           Vector {
             X: 32.8720818
-            Y: 307.18454
+            Y: 160.874405
             Z: 1.00000346
           }
         }
@@ -2189,6 +2392,24 @@ Objects {
           AssetReference {
             Id: 13231971539212330216
           }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableDistanceFieldLighting"
+          Bool: true
         }
       }
     }
@@ -2226,9 +2447,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 30705
+            X: 25643.457
             Y: -46050
-            Z: 1240
+            Z: 1240.00061
           }
         }
         Overrides {
@@ -2243,7 +2464,7 @@ Objects {
           Name: "Scale"
           Vector {
             X: 32.8720818
-            Y: 307.18454
+            Y: 284.75943
             Z: 1.00000346
           }
         }
@@ -2252,6 +2473,24 @@ Objects {
           AssetReference {
             Id: 13231971539212330216
           }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableDistanceFieldLighting"
+          Bool: true
         }
       }
     }
@@ -2291,20 +2530,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 32.8720818
-            Y: 307.18454
-            Z: 1.00000346
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 13231971539212330216
           }
         }
       }
@@ -2378,6 +2603,54 @@ Objects {
         key: "Nature_Grass"
         value {
           Id: 5393471088706896564
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 18095757882595708726
+      }
+      DistanceBetweenInstances: 110
+      SpawnDistance: 22937.1523
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        Scaling: LockXY
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 0.2
+          Max: 1.1
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 5135587217786331599
         }
       }
       LocalPositionOffset {

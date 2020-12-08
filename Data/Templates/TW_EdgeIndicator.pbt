@@ -10,9 +10,9 @@
         Name: "TW_EdgeIndicator"
         Transform {
           Scale {
-            X: 5.6
+            X: 32.8720818
             Y: 307.18454
-            Z: 1
+            Z: 1.00000346
           }
         }
         ParentId: 4781671109827199097
@@ -32,7 +32,7 @@
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -45,6 +45,9 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
