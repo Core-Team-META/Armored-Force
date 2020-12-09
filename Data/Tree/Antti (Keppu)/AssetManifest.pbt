@@ -188,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7784421621857743235
-  Name: "Measurement Tool"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "measure_BP"
-  }
-}
-Assets {
   Id: 6947005568715944180
   Name: "Wood Planks"
   PlatformAssetType: 2

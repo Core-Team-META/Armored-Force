@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7784421621857743235
+  Name: "Measurement Tool"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "measure_BP"
+  }
+}
+Assets {
   Id: 1311293888012083597
   Name: "Text 01: H"
   PlatformAssetType: 1

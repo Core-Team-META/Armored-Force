@@ -2073,8 +2073,9 @@ Objects {
     }
   }
   ParentId: 17707050887276379352
+  ChildIds: 436611278961231241
+  ChildIds: 12109123453381123963
   ChildIds: 2140050464641941112
-  ChildIds: 12863100340974984301
   ChildIds: 1245555288092411986
   ChildIds: 16182384547534576989
   ChildIds: 4302040622650987333
@@ -2501,60 +2502,12 @@ Objects {
   }
 }
 Objects {
-  Id: 12863100340974984301
-  Name: "TW_EdgeIndicator"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10639644213682625907
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6059571513361614452
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_EdgeIndicator"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -30680.75
-            Y: 46545.9805
-            Z: 661.162
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 32.9
-            Y: 150.974579
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2859045759570793761
-    }
-  }
-}
-Objects {
   Id: 2140050464641941112
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: -30660
-      Y: 46365
+      X: -30695
+      Y: 46691.1563
       Z: 95
     }
     Rotation {
@@ -2592,6 +2545,70 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 12109123453381123963
+  Name: "Measurement Tool"
+  Transform {
+    Location {
+      X: -30735
+      Y: 16470
+      Z: 1160
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7784421621857743235
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 436611278961231241
+  Name: "Measurement Tool"
+  Transform {
+    Location {
+      X: 16755
+      Y: -46595
+      Z: 1205
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7784421621857743235
+    }
+    TeamSettings {
     }
   }
 }
