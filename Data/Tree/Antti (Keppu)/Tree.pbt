@@ -1,13 +1,13 @@
 ﻿Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
-  Id: 436611278961231241
-  Name: "Measurement Tool"
+  Id: 11587273643086417511
+  Name: "TW_Bridge_Stone01"
   Transform {
     Location {
-      X: -61440
-      Y: 1120
-      Z: 1205
+      X: 26231.9551
+      Y: -2807.68311
+      Z: -218.320374
     }
     Rotation {
     }
@@ -18,49 +18,40 @@ Objects {
     }
   }
   ParentId: 4689494391382931675
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7784421621857743235
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8225300638632887695
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bridge_Stone01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11328.377
+            Y: 26992.8945
+            Z: -247.008667
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -8.67736816
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
     }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 12109123453381123963
-  Name: "Measurement Tool"
-  Transform {
-    Location {
-      X: -61440
-      Y: 1120
-      Z: 1160
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7784421621857743235
-    }
-    TeamSettings {
+    TemplateAsset {
+      Id: 7330663500357609984
     }
   }
 }
@@ -69,9 +60,9 @@ Objects {
   Name: "Tree Birch 01"
   Transform {
     Location {
-      X: -59010.7539
+      X: -62965
       Y: 6611.11279
-      Z: 300
+      Z: 465
     }
     Rotation {
     }
@@ -108,9 +99,9 @@ Objects {
   Name: "Tree Birch 02"
   Transform {
     Location {
-      X: -60051.5586
+      X: -64005.8047
       Y: 7134.3584
-      Z: 261.603027
+      Z: 426.603027
     }
     Rotation {
     }
@@ -186,9 +177,9 @@ Objects {
   Name: "Bush 01"
   Transform {
     Location {
-      X: -59572.4
+      X: -63695
       Y: 6711.59961
-      Z: 235.880249
+      Z: 335
     }
     Rotation {
     }
@@ -225,9 +216,9 @@ Objects {
   Name: "Bush 02"
   Transform {
     Location {
-      X: -59376.1836
+      X: -63330.4297
       Y: 6689.771
-      Z: 294.317505
+      Z: 459.317505
     }
     Rotation {
     }
@@ -4897,16 +4888,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 15440
+            X: 15290.8359
             Y: -910
-            Z: -200
+            Z: -130.352783
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -22.5000019
-            Yaw: 44.9999924
+            Pitch: -34.9637756
+            Yaw: 52.8595428
+            Roll: -16.171051
           }
         }
         Overrides {
@@ -32820,8 +32812,8 @@ Objects {
   Transform {
     Location {
       X: -158513.422
-      Y: 34017.0977
-      Z: 688.118164
+      Y: 22154.6758
+      Z: 1515
     }
     Rotation {
       Yaw: -176.667252
@@ -32940,16 +32932,16 @@ Objects {
   Transform {
     Location {
       X: -158513.422
-      Y: -31484.8613
+      Y: -43510.3242
       Z: 1110.40186
     }
     Rotation {
       Yaw: -176.667252
     }
     Scale {
-      X: 44.5580521
-      Y: 174.486038
-      Z: 12.2680635
+      X: 44.6000023
+      Y: 65.2000122
+      Z: 12.3000011
     }
   }
   ParentId: 11004556288478706162
@@ -143666,13 +143658,13 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15208.0732
-      Y: 28414.1758
-      Z: -53.5527344
+      X: -16180
+      Y: 28520
+      Z: -75
     }
     Rotation {
       Pitch: -18.4289856
-      Yaw: 52.6233177
+      Yaw: 30.123312
     }
     Scale {
       X: 4.66577721
@@ -145129,54 +145121,6 @@ Objects {
   }
 }
 Objects {
-  Id: 12934910341690086920
-  Name: "Tank German Panther (Prop)"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6103433461258534592
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Tank German Panther (Prop)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 15419.8252
-            Y: 7087.55371
-            Z: 69.7766571
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -144.631454
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4282122314672159298
-    }
-  }
-}
-Objects {
   Id: 4419909588468315924
   Name: "Tank German Panther (Prop)"
   Transform {
@@ -145998,14 +145942,14 @@ Objects {
           Name: "Position"
           Vector {
             X: -11711.1035
-            Y: 26881.8457
+            Y: 29592.6953
             Z: -420
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -16.716444
+            Yaw: -16.7164307
           }
         }
       }
