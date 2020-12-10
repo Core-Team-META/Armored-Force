@@ -480,6 +480,7 @@
         ChildIds: 3937323483106082330
         ChildIds: 8189968521608122864
         ChildIds: 17915823855177812599
+        ChildIds: 3498962169467132150
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -981,7 +982,7 @@
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -1042,7 +1043,7 @@
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -7714,7 +7715,7 @@
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -7988,7 +7989,7 @@
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -8118,6 +8119,39 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 3498962169467132150
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 41.6064453
+            Z: -18.4807739
+          }
+          Rotation {
+          }
+          Scale {
+            X: 8.75
+            Y: 5.5
+            Z: 2.25
+          }
+        }
+        ParentId: 5055066216623772168
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -10277,6 +10311,7 @@
         ChildIds: 15441194416154527560
         ChildIds: 17510819659905480277
         ChildIds: 17416748871580251254
+        ChildIds: 4057064619309974270
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -11487,6 +11522,7 @@
         ChildIds: 17850252417542983686
         ChildIds: 11833980498669428012
         ChildIds: 5369939748151339214
+        ChildIds: 705065554933586563
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -11711,6 +11747,39 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 705065554933586563
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 303.954102
+            Z: 5.04916382
+          }
+          Rotation {
+          }
+          Scale {
+            X: 6.25000048
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 13273995524567318296
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -13544,6 +13613,40 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 4057064619309974270
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 21.0957031
+            Y: -3.39453125
+            Z: 61.5192261
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.5
+            Y: 3.75
+            Z: 1.25
+          }
+        }
+        ParentId: 12805863731040991629
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
