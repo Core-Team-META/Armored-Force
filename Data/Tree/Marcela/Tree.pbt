@@ -155,13 +155,13 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate11"
       AssetReference {
-        Id: 13441179687447695317
+        Id: 13554848360675686269
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate12"
       AssetReference {
-        Id: 10812481202246904187
+        Id: 17474956913387778455
       }
     }
     Overrides {
