@@ -58,16 +58,17 @@
         Name: "DestructionTrigger"
         Transform {
           Location {
-            X: -5
-            Y: -25
-            Z: 75.866333
+            X: -4.9995842
+            Y: -25.0002518
+            Z: 75.866272
           }
           Rotation {
+            Pitch: -4.92858887
           }
           Scale {
-            X: 1.2
-            Y: 1.30000007
-            Z: 4
+            X: 0.750002563
+            Y: 0.750009358
+            Z: 11.6999226
           }
         }
         ParentId: 3464302058630838082

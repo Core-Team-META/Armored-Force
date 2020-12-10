@@ -16,20 +16,18 @@ local geo = script:GetCustomProperty("Geo"):WaitForObject()
 local trigger = script.parent
 
 function handleOverlap(trigger, object)
-    if object ~= nil and object:IsA("Player") then
+    if object ~= nil and object:IsA("Trigger") and object.name == "ClientCollisionTrigger" then
      
-        -- Wait little to have more realistic(deeper) impact to trigger/mesh before triggering the destruction
-        Task.Wait(0.1)
-
+       
         for _, child in ipairs(geo:GetChildren()) do
             -- Enable client physics
             child.isSimulatingDebrisPhysics = true
         end
         -- Apply effects
-        if destructionFX01 then
+        if Object.IsValid(FXLocation01) then
             World.SpawnAsset(destructionFX01, { position = FXLocation01:GetWorldPosition() })
         end
-        if destructionFX02 then
+        if Object.IsValid(FXLocation02) then
             World.SpawnAsset(destructionFX02, { position = FXLocation02:GetWorldPosition() })
         end
         -- Destroy the trigger because the destruction has been done
