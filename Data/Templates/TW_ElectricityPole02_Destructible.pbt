@@ -281,7 +281,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 1000
+              Mass: 500
             }
           }
         }
@@ -307,15 +307,7 @@
           }
         }
         ParentId: 6889829497476730591
-        ChildIds: 16290871152801434165
-        ChildIds: 6540042075243861464
-        ChildIds: 2389416381295618742
-        ChildIds: 14455100250548236083
-        ChildIds: 356980864662981566
-        ChildIds: 4268077511658396580
-        ChildIds: 6475312145508480965
-        ChildIds: 3948656982149118140
-        ChildIds: 9597912536034863998
+        ChildIds: 17136364746148388933
         UnregisteredParameters {
           Overrides {
             Name: "ma:Building_LowerTrimInner:id"
@@ -348,17 +340,56 @@
         }
       }
       Objects {
+        Id: 17136364746148388933
+        Name: "MergedModel"
+        Transform {
+          Location {
+            X: 620
+            Y: -25
+            Z: -90
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16844884879012655326
+        ChildIds: 16290871152801434165
+        ChildIds: 6540042075243861464
+        ChildIds: 2389416381295618742
+        ChildIds: 14455100250548236083
+        ChildIds: 356980864662981566
+        ChildIds: 4268077511658396580
+        ChildIds: 6475312145508480965
+        ChildIds: 3948656982149118140
+        ChildIds: 9597912536034863998
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        Folder {
+          Model {
+          }
+        }
+      }
+      Objects {
         Id: 16290871152801434165
         Name: "Group"
         Transform {
           Location {
-            X: -34.1896706
-            Y: -20.1882095
-            Z: 4.94318151
+            X: -654.189575
+            Y: 4.81178951
+            Z: 94.9431763
           }
           Rotation {
             Pitch: -90
-            Yaw: 1.62844391e-12
+            Yaw: -5.42814654e-13
+            Roll: 2.17125818e-12
           }
           Scale {
             X: 0.909090877
@@ -366,7 +397,7 @@
             Z: 0.909090877
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 4913086152457694114
         ChildIds: 2553875486183421452
         ChildIds: 1371185954619050566
@@ -947,14 +978,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.4729
-            Y: -24.2020473
-            Z: -89.1270294
+            X: 118.472771
+            Y: 0.798117876
+            Z: 0.872705579
           }
           Rotation {
             Pitch: -90
-            Yaw: -10.0249939
-            Roll: 10.0250053
+            Yaw: 6.72136688
+            Roll: -6.72134399
           }
           Scale {
             X: 0.688739896
@@ -962,7 +993,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 4593931134564043595
         ChildIds: 16636887276961572816
         Collidable_v2 {
@@ -1069,14 +1100,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.474243
-            Y: -24.2018127
-            Z: 32.7936325
+            X: 118.474106
+            Y: 0.798117876
+            Z: 122.793411
           }
           Rotation {
             Pitch: -90
-            Yaw: -10.0249939
-            Roll: 10.0250053
+            Yaw: 6.72136688
+            Roll: -6.72134399
           }
           Scale {
             X: 0.688739896
@@ -1084,7 +1115,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 3084654424712501920
         ChildIds: 15916114917465076942
         Collidable_v2 {
@@ -1191,14 +1222,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 663.890869
-            Y: -24.0741367
-            Z: 32.6635742
+            X: 43.8908234
+            Y: 0.925958753
+            Z: 122.663338
           }
           Rotation {
-            Pitch: -85.2133179
-            Yaw: 3.63146901e-05
-            Roll: 1.97864256e-06
+            Pitch: -85.2131577
+            Yaw: 3.63145809e-05
+            Roll: 1.97866802e-06
           }
           Scale {
             X: 0.688739896
@@ -1206,7 +1237,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 5598626335458841740
         ChildIds: 6122140760167357069
         Collidable_v2 {
@@ -1313,14 +1344,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 668.96344
-            Y: -24.16465
-            Z: -53.9321594
+            X: 48.9632835
+            Y: 0.835404813
+            Z: 36.0680046
           }
           Rotation {
-            Pitch: -85.2133179
-            Yaw: 3.63146901e-05
-            Roll: 1.97864256e-06
+            Pitch: -85.2131577
+            Yaw: 3.63145809e-05
+            Roll: 1.97866802e-06
           }
           Scale {
             X: 0.688739896
@@ -1328,7 +1359,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 2376038314683248274
         ChildIds: 9360257360563045869
         Collidable_v2 {
@@ -1435,14 +1466,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 669.896606
-            Y: -24.2024078
-            Z: -88.984375
+            X: 49.8965645
+            Y: 0.797674
+            Z: 1.01562846
           }
           Rotation {
-            Pitch: -85.2133179
-            Yaw: 3.63146901e-05
-            Roll: 1.97864256e-06
+            Pitch: -85.2131577
+            Yaw: 3.63145809e-05
+            Roll: 1.97866802e-06
           }
           Scale {
             X: 0.688739896
@@ -1450,7 +1481,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 18139239833833187077
         ChildIds: 9108243653207263312
         Collidable_v2 {
@@ -1557,14 +1588,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 662.42218
-            Y: -24.036726
-            Z: 67.6714478
+            X: 42.4220734
+            Y: 0.96324569
+            Z: 157.67131
           }
           Rotation {
-            Pitch: -85.2133179
-            Yaw: 3.63146901e-05
-            Roll: 1.97864256e-06
+            Pitch: -85.2131577
+            Yaw: 3.63145809e-05
+            Roll: 1.97866802e-06
           }
           Scale {
             X: 0.688739896
@@ -1572,7 +1603,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 13718288447331213943
         ChildIds: 1591068366081566218
         Collidable_v2 {
@@ -1679,14 +1710,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.287964
-            Y: -24.7274075
-            Z: 66.2411728
+            X: 118.28788
+            Y: 0.272549719
+            Z: 156.241119
           }
           Rotation {
             Pitch: -90
-            Yaw: 0.422016084
-            Roll: -0.421966553
+            Yaw: -0.0703478754
+            Roll: 0.0703974515
           }
           Scale {
             X: 0.688739896
@@ -1694,7 +1725,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 2368464219683117531
         ChildIds: 14899118023288910151
         Collidable_v2 {
@@ -1801,14 +1832,14 @@
         Name: "Group"
         Transform {
           Location {
-            X: 738.472717
-            Y: -24.2023525
-            Z: -54.0624428
+            X: 118.472549
+            Y: 0.797674
+            Z: 35.9375
           }
           Rotation {
             Pitch: -90
-            Yaw: 7.55234814
-            Roll: -7.55233765
+            Yaw: -5.05116034
+            Roll: 5.05117226
           }
           Scale {
             X: 0.688739896
@@ -1816,7 +1847,7 @@
             Z: 0.688739896
           }
         }
-        ParentId: 16844884879012655326
+        ParentId: 17136364746148388933
         ChildIds: 6454865124451302711
         ChildIds: 5104670146968400189
         Collidable_v2 {
