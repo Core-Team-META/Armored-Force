@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 7137141122598181238
+  Id: 18296816463446753090
   Name: "Drivable USSR T-34"
   PlatformAssetType: 5
   TemplateAsset {
@@ -479,6 +479,7 @@
         }
         ParentId: 3129128840306444405
         ChildIds: 6293151199999752885
+        ChildIds: 7671073148534207494
         ChildIds: 3896137219781865449
         ChildIds: 12219157580401098315
         Collidable_v2 {
@@ -8179,6 +8180,40 @@
         }
       }
       Objects {
+        Id: 7671073148534207494
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 71.8461304
+            Y: 2.46972656
+            Z: -30.3021851
+          }
+          Rotation {
+          }
+          Scale {
+            X: 8.23552513
+            Y: 5.31905317
+            Z: 2.04870486
+          }
+        }
+        ParentId: 2222769930689000552
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 3896137219781865449
         Name: "Armor Skirt L"
         Transform {
@@ -10532,6 +10567,7 @@
         ChildIds: 3371693901685588775
         ChildIds: 440360675828879372
         ChildIds: 12135524166789831515
+        ChildIds: 2688910321580700842
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -10562,6 +10598,7 @@
         ParentId: 3918646950381680564
         ChildIds: 2649805385158434013
         ChildIds: 14827143672106217299
+        ChildIds: 4233273768037109222
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -10722,6 +10759,40 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 4233273768037109222
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 119.495483
+            Y: 0.24609375
+            Z: 0.532074
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.27234221
+            Y: 0.25
+            Z: 0.209534913
+          }
+        }
+        ParentId: 7972763414135971355
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -12396,6 +12467,40 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 2688910321580700842
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 29.8248901
+            Y: -1.43798828
+            Z: 12.6109314
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.5
+            Y: 3.0754981
+            Z: 1.09134829
+          }
+        }
+        ParentId: 3918646950381680564
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }

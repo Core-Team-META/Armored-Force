@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 11351345298841788045
+  Id: 11342125379787423751
   Name: "Drivable US M4A1 Sherman"
   PlatformAssetType: 5
   TemplateAsset {
@@ -1174,7 +1174,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1239,7 +1239,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1370,7 +1370,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1533,7 +1533,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1598,7 +1598,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1729,7 +1729,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5507,7 +5507,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5572,7 +5572,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5637,7 +5637,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -6098,6 +6098,7 @@
         ChildIds: 7313017995570262198
         ChildIds: 767957189539403923
         ChildIds: 14202989256212356007
+        ChildIds: 10133421519033687958
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -10682,6 +10683,7 @@
         ParentId: 2794742539170192761
         ChildIds: 17085320576472762055
         ChildIds: 18046643587113684284
+        ChildIds: 15060144474045607045
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -10858,6 +10860,74 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 15060144474045607045
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 173.26532
+            Y: -1.1484375
+            Z: 0.298400879
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.972785
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 14202989256212356007
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 10133421519033687958
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: -6.3717041
+            Y: 2.05566406
+            Z: 198.531097
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.81379867
+            Y: 2.4793849
+            Z: 1.12285638
+          }
+        }
+        ParentId: 2794742539170192761
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -17993,6 +18063,7 @@
         ChildIds: 11962554920299653515
         ChildIds: 3744765073189706339
         ChildIds: 8083306657281133630
+        ChildIds: 8516468305194401646
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20077,7 +20148,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -20144,7 +20215,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -21605,7 +21676,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -21672,7 +21743,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24819,7 +24890,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24887,7 +24958,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24952,7 +25023,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25017,7 +25088,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25082,7 +25153,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -26972,7 +27043,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -27425,7 +27496,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17925326465180611494
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -28976,6 +29047,40 @@
         }
       }
       Objects {
+        Id: 8516468305194401646
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 49.0636
+            Y: 3.37158203
+            Z: -6.09924316
+          }
+          Rotation {
+          }
+          Scale {
+            X: 8.47374821
+            Y: 5.07582951
+            Z: 2.07014871
+          }
+        }
+        ParentId: 15834529863685207223
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 5196592761471707584
         Name: "AlignBodyClient"
         Transform {
@@ -29183,7 +29288,7 @@
       }
     }
     Assets {
-      Id: 17925326465180611494
+      Id: 12095835209017042614
       Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {

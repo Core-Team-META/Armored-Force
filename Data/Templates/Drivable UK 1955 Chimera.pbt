@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 4825421426658938573
+  Id: 7241776074897273643
   Name: "Drivable UK 1955 Chimera"
   PlatformAssetType: 5
   TemplateAsset {
@@ -7715,6 +7715,7 @@
         ChildIds: 1027980904931827085
         ChildIds: 14644251702837431137
         ChildIds: 15366832606610646655
+        ChildIds: 5404229418097735936
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -8141,6 +8142,7 @@
         ChildIds: 5511048876342086711
         ChildIds: 11913766871300528158
         ChildIds: 16750239701107159617
+        ChildIds: 6214770289339069862
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -8751,6 +8753,40 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 6214770289339069862
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 493.942749
+            Y: 0.459813595
+            Z: 0.455078125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 10.4487829
+            Y: 0.521586299
+            Z: 0.5171
+          }
+        }
+        ParentId: 6268647778413734118
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -13159,6 +13195,40 @@
         }
       }
       Objects {
+        Id: 5404229418097735936
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: -71.4126
+            Y: 9.16601563
+            Z: 87.0877075
+          }
+          Rotation {
+          }
+          Scale {
+            X: 5.02302504
+            Y: 3.75
+            Z: 1.91911602
+          }
+        }
+        ParentId: 17647069823782395135
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 4147151980082616102
         Name: "Hull"
         Transform {
@@ -13196,6 +13266,7 @@
         ChildIds: 17781708591042024986
         ChildIds: 5311186306297169024
         ChildIds: 9171502800985219452
+        ChildIds: 4874361555063733087
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -19510,6 +19581,40 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 4874361555063733087
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 92.6318359
+            Y: 0.927734375
+            Z: 111.838531
+          }
+          Rotation {
+          }
+          Scale {
+            X: 9.08342
+            Y: 6.37512112
+            Z: 1.28624177
+          }
+        }
+        ParentId: 4147151980082616102
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
