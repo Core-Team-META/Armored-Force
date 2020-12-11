@@ -1,6 +1,68 @@
 ﻿Name: "Marcela"
 RootId: 14661672776697705088
 Objects {
+  Id: 6946166710147336329
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: -9250.56348
+      Y: -7184.15771
+      Z: 58.9195862
+    }
+    Rotation {
+      Yaw: -34.6266
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14661672776697705088
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9909.73828
+            Y: -7755.97656
+            Z: 82.7029724
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -91.8406372
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
   Id: 5770985737712584303
   Name: "hay bale_merged"
   Transform {
@@ -28,15 +90,34 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -12115.999
-            Y: -5531.29395
-            Z: 200.208252
+            X: -9250.56348
+            Y: -7184.15771
+            Z: 26.3800659
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -34.6265869
+            Yaw: 85.2489
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17555854410122694132
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3.09106445
+            Y: -1.4309082
+            Z: 123.896942
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: -89.9999695
           }
         }
       }
@@ -119,49 +200,55 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate5"
       AssetReference {
-        Id: 14003111638084311026
+        Id: 18411034924300576006
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 9563927621739478420
+        Id: 3652521183023497319
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate7"
       AssetReference {
-        Id: 3407725527001688670
+        Id: 11223807285706338630
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate8"
       AssetReference {
-        Id: 5926986810139767040
+        Id: 18031142724996749659
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate9"
       AssetReference {
-        Id: 2151465309194437172
+        Id: 4641514618953469017
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate10"
       AssetReference {
-        Id: 15457079634572160969
+        Id: 16619680940024733243
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate11"
       AssetReference {
-        Id: 13554848360675686269
+        Id: 13441179687447695317
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate12"
       AssetReference {
-        Id: 17474956913387778455
+        Id: 10812481202246904187
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate13"
+      AssetReference {
+        Id: 15525583297469812838
       }
     }
     Overrides {
@@ -482,6 +569,7 @@ Objects {
   ChildIds: 10137458745058327407
   ChildIds: 961486316031019775
   ChildIds: 7665692136421774483
+  ChildIds: 5839279352738307034
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -499,6 +587,123 @@ Objects {
       }
     }
     Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5839279352738307034
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 13010106039209921778
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 498.988342
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13010106039209921778
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5839279352738307034
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "I - USSR IS-7"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
