@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 5926986810139767040
+  Id: 18031142724996749659
   Name: "Drivable US M6A1 Heavy"
   PlatformAssetType: 5
   TemplateAsset {
@@ -524,6 +524,7 @@
         ChildIds: 13179828980886168101
         ChildIds: 12597310102686256979
         ChildIds: 2907506636021491071
+        ChildIds: 2530510446234506404
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -11051,6 +11052,39 @@
         }
       }
       Objects {
+        Id: 2530510446234506404
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 13.6091
+            Z: 0.757492065
+          }
+          Rotation {
+          }
+          Scale {
+            X: 8.91554737
+            Y: 5.26770449
+            Z: 2.24707651
+          }
+        }
+        ParentId: 9239184748164580541
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 5970172743632494768
         Name: "Armor Skirt L"
         Transform {
@@ -21390,6 +21424,7 @@
         ChildIds: 15917478717620769631
         ChildIds: 6914425939767619892
         ChildIds: 11477485224262411493
+        ChildIds: 3026475311202044805
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -23308,6 +23343,7 @@
         ChildIds: 13626189770721926561
         ChildIds: 12446560565596782453
         ChildIds: 16410830894095435738
+        ChildIds: 9795876025494175756
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -24006,6 +24042,41 @@
         }
       }
       Objects {
+        Id: 9795876025494175756
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 256.497711
+            Y: -6.99342459e-11
+            Z: -6.11538126e-05
+          }
+          Rotation {
+            Roll: 2.04905591e-05
+          }
+          Scale {
+            X: 3.95974803
+            Y: 0.293014854
+            Z: 0.293015569
+          }
+        }
+        ParentId: 7870277941811625164
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 3926208533296507310
         Name: "O-Bracket"
         Transform {
@@ -24371,6 +24442,38 @@
           TeamSettings {
           }
           DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 3026475311202044805
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            Z: 196.466248
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.90110683
+            Y: 2.98855519
+            Z: 1.33664346
+          }
+        }
+        ParentId: 4731814469238150626
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }

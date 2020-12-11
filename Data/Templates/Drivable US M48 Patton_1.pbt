@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 2151465309194437172
+  Id: 4641514618953469017
   Name: "Drivable US M48 Patton"
   PlatformAssetType: 5
   TemplateAsset {
@@ -493,6 +493,7 @@
         ChildIds: 2851794898358137206
         ChildIds: 6373515414948516041
         ChildIds: 6844080822099905916
+        ChildIds: 16433153287259433074
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -10137,6 +10138,39 @@
         }
       }
       Objects {
+        Id: 16433153287259433074
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 52.813324
+            Z: -38.6098328
+          }
+          Rotation {
+          }
+          Scale {
+            X: 7.59573555
+            Y: 5.26770449
+            Z: 2.01697421
+          }
+        }
+        ParentId: 8855680718371858137
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 16223519626354717494
         Name: "Treads"
         Transform {
@@ -13251,6 +13285,7 @@
         ChildIds: 9844547785806947722
         ChildIds: 7291281535791915573
         ChildIds: 12278430895978526613
+        ChildIds: 3652179675493300214
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20316,6 +20351,7 @@
         ChildIds: 2763578856039642425
         ChildIds: 11895875974884136221
         ChildIds: 8067953147954316976
+        ChildIds: 13292963803882728628
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -22176,6 +22212,38 @@
         }
       }
       Objects {
+        Id: 13292963803882728628
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: 309.64209
+          }
+          Rotation {
+          }
+          Scale {
+            X: 4.23759508
+            Y: 0.245321229
+            Z: 0.245321229
+          }
+        }
+        ParentId: 7640836533301376473
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 9844547785806947722
         Name: "Street Light Pole Top 01"
         Transform {
@@ -22392,6 +22460,38 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 3652179675493300214
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            Z: 227.154205
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.80297279
+            Y: 2.80284119
+            Z: 1.39488304
+          }
+        }
+        ParentId: 11532681711384653777
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
