@@ -10,12 +10,12 @@
         Name: "TW_BirchTree_Destructible"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.727234066
+            Y: 0.727234066
+            Z: 0.727234066
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 3464302058630838082
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44,6 +44,7 @@
         ParentId: 14766061465847274198
         ChildIds: 5740111222183065741
         ChildIds: 7430713644516181526
+        ChildIds: 17421692208922218527
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -141,6 +142,12 @@
             Name: "cs:Geo"
             ObjectReference {
               SubObjectId: 7430713644516181526
+            }
+          }
+          Overrides {
+            Name: "cs:RemoveGroup"
+            ObjectReference {
+              SubObjectId: 17421692208922218527
             }
           }
         }
@@ -271,6 +278,31 @@
               Mass: 1500
             }
           }
+        }
+      }
+      Objects {
+        Id: 17421692208922218527
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3464302058630838082
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
         }
       }
     }

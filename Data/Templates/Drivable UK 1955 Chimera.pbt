@@ -3489,7 +3489,7 @@
         Name: "wheel"
         Transform {
           Location {
-            X: -272.497558
+            X: -272.497559
             Y: 332.474609
             Z: 83.0259552
           }
@@ -3588,7 +3588,7 @@
         Transform {
           Location {
             X: -6.39282227
-            Y: -2.46289062
+            Y: -2.46289063
             Z: -2.16081238
           }
           Rotation {
@@ -4071,7 +4071,7 @@
         Name: "Tread (R)"
         Transform {
           Location {
-            Y: -19.2563476
+            Y: -19.2563477
           }
           Rotation {
           }
@@ -7106,7 +7106,7 @@
         Name: "wheel"
         Transform {
           Location {
-            X: -272.497558
+            X: -272.497559
             Y: 332.474609
             Z: 83.0259552
           }
@@ -7205,7 +7205,7 @@
         Transform {
           Location {
             X: -6.39282227
-            Y: -2.46289062
+            Y: -2.46289063
             Z: -2.16081238
           }
           Rotation {
@@ -8297,7 +8297,7 @@
         Transform {
           Location {
             X: -89.0691528
-            Y: -0.547851562
+            Y: -0.547851563
           }
           Rotation {
           }
@@ -10368,7 +10368,7 @@
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -45.8007812
+            X: -45.8007813
             Y: 2.44607091
             Z: 6.30859613
           }
@@ -13200,7 +13200,7 @@
         Transform {
           Location {
             X: -71.4126
-            Y: 9.16601562
+            Y: 9.16601563
             Z: 87.0877075
           }
           Rotation {
@@ -14615,7 +14615,7 @@
         Transform {
           Location {
             X: 392.276428
-            Y: 14.0532226
+            Y: 14.0532227
             Z: 188.376953
           }
           Rotation {

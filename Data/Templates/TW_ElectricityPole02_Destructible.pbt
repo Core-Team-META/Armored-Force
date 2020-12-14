@@ -790,7 +790,7 @@
         Name: "Pole"
         Transform {
           Location {
-            X: -2.31445312
+            X: -2.31445313
             Y: 26.3515625
             Z: 2.60864258
           }
@@ -911,7 +911,7 @@
         Name: "Pipe (thick)"
         Transform {
           Location {
-            X: -0.665039062
+            X: -0.665039063
             Y: 35.3369141
             Z: 67.1795654
           }
@@ -1011,7 +1011,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1133,7 +1133,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1255,7 +1255,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1377,7 +1377,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1499,7 +1499,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1621,7 +1621,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1743,7 +1743,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1865,7 +1865,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }

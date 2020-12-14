@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 8898165655985592169
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44,6 +44,7 @@
         ParentId: 596023719612321980
         ChildIds: 16225334107658396708
         ChildIds: 14598918507990495797
+        ChildIds: 11277576050931480378
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -139,6 +140,7 @@
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
+              SubObjectId: 11277576050931480378
             }
           }
         }
@@ -502,6 +504,31 @@
             Physics {
             }
           }
+        }
+      }
+      Objects {
+        Id: 11277576050931480378
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8898165655985592169
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
         }
       }
     }
