@@ -79,15 +79,15 @@
         Name: "Tank Tread Trail VFX"
         Transform {
           Location {
-            X: -347.826721
-            Y: -201.543457
-            Z: -13.8382416
+            X: -533.66748
+            Y: -234.101563
+            Z: 41.0851
           }
           Rotation {
           }
           Scale {
             X: 1
-            Y: 1
+            Y: 1.3210938
             Z: 1
           }
         }
@@ -120,15 +120,15 @@
         Name: "Tank Tread Trail VFX"
         Transform {
           Location {
-            X: -345.163635
-            Y: 191.375732
-            Z: -13.8382416
+            X: -531.004395
+            Y: 239.492188
+            Z: 41.0851
           }
           Rotation {
           }
           Scale {
             X: 1
-            Y: 1
+            Y: 1.28140628
             Z: 1
           }
         }
@@ -244,15 +244,15 @@
         Name: "Snow Trail Volume VFX"
         Transform {
           Location {
-            X: -353.163879
-            Y: -214.724121
-            Z: -14.7543945
+            X: -539.004639
+            Y: -247.28125
+            Z: 40.1689453
           }
           Rotation {
           }
           Scale {
             X: 5.42530107
-            Y: 1
+            Y: 1.3210938
             Z: 1
           }
         }
@@ -313,15 +313,15 @@
         Name: "Snow Trail Volume VFX"
         Transform {
           Location {
-            X: -353.163879
-            Y: 190.54834
-            Z: -14.7543945
+            X: -539.004639
+            Y: 238.664063
+            Z: 40.1689453
           }
           Rotation {
           }
           Scale {
             X: 5.42530107
-            Y: 1
+            Y: 1.28140628
             Z: 1
           }
         }
