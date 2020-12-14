@@ -134,6 +134,11 @@
               SubObjectId: 6907652557097306049
             }
           }
+          Overrides {
+            Name: "cs:RemoveGroup"
+            ObjectReference {
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -973,7 +978,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }
@@ -1094,7 +1099,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }
@@ -1215,7 +1220,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }
@@ -1336,7 +1341,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }
@@ -1457,7 +1462,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }
@@ -1578,7 +1583,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }
@@ -1700,7 +1705,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }
@@ -1821,7 +1826,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750977
+            Z: 11.4750976
           }
           Rotation {
           }

@@ -39,7 +39,7 @@
         Name: "feet"
         Transform {
           Location {
-            X: 108.310059
+            X: 108.310058
             Z: 5.33655548
           }
           Rotation {
@@ -129,7 +129,7 @@
         Name: "Arch"
         Transform {
           Location {
-            X: -6.15820313
+            X: -6.15820312
             Z: 37.7772
           }
           Rotation {
@@ -198,7 +198,7 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -6.07226563
+            X: -6.07226562
             Z: 5.69117737
           }
           Rotation {
@@ -492,7 +492,7 @@
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            Y: 40.3032227
+            Y: 40.3032226
             Z: 159.90332
           }
           Rotation {

@@ -1881,7 +1881,7 @@
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -2459,7 +2459,7 @@
         Transform {
           Location {
             X: -18.5421753
-            Y: -55.5976563
+            Y: -55.5976562
             Z: 38.8822784
           }
           Rotation {
@@ -2520,7 +2520,7 @@
         Transform {
           Location {
             X: -13.7158813
-            Y: -55.5976563
+            Y: -55.5976562
             Z: 38.8822784
           }
           Rotation {
@@ -8030,7 +8030,7 @@
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -9364,7 +9364,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 202.69397
           }
           Rotation {
@@ -12462,7 +12462,7 @@
         Transform {
           Location {
             X: 8.50973511
-            Y: 3.33789063
+            Y: 3.33789062
             Z: 2.16455078
           }
           Rotation {

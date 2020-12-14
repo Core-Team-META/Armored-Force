@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 8898165655985592169
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -134,6 +134,11 @@
             Name: "cs:Geo"
             ObjectReference {
               SubObjectId: 14598918507990495797
+            }
+          }
+          Overrides {
+            Name: "cs:RemoveGroup"
+            ObjectReference {
             }
           }
         }

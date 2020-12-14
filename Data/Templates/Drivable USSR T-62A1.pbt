@@ -3439,7 +3439,7 @@
           }
           Rotation {
             Yaw: 172.215424
-            Roll: -6.10351563e-05
+            Roll: -6.10351562e-05
           }
           Scale {
             X: 0.785206497
@@ -10791,7 +10791,7 @@
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -11645,7 +11645,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 170.515747
           }
           Rotation {

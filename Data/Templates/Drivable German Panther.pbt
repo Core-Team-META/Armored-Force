@@ -121,7 +121,7 @@
         Transform {
           Location {
             X: -367.222961
-            Y: -215.816895
+            Y: -215.816894
             Z: -13.5170135
           }
           Rotation {
@@ -1383,7 +1383,7 @@
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -4503,7 +4503,7 @@
         Transform {
           Location {
             X: -354.995972
-            Y: 164.153809
+            Y: 164.153808
             Z: 95.3276215
           }
           Rotation {
@@ -4760,7 +4760,7 @@
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 0.364257813
+            X: 0.364257812
             Y: 13.8175049
             Z: 2.86999512
           }
@@ -4819,7 +4819,7 @@
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 0.364257813
+            X: 0.364257812
             Y: 13.8175049
             Z: 2.12796021
           }
@@ -4884,7 +4884,7 @@
         Name: "Pipe - 4-Sided Thin"
         Transform {
           Location {
-            X: 0.364257813
+            X: 0.364257812
             Y: 13.8175049
             Z: 0.233764648
           }
@@ -5076,7 +5076,7 @@
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 0.364257813
+            X: 0.364257812
             Y: -328.666016
             Z: 2.86999512
           }
@@ -5135,7 +5135,7 @@
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 0.364257813
+            X: 0.364257812
             Y: -328.666016
             Z: 2.12796021
           }
@@ -5200,7 +5200,7 @@
         Name: "Pipe - 4-Sided Thin"
         Transform {
           Location {
-            X: 0.364257813
+            X: 0.364257812
             Y: -328.666016
             Z: 0.233764648
           }
@@ -5579,7 +5579,7 @@
           Location {
             X: 18.5459595
             Y: 83.2609863
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: 26.5994396
@@ -9242,7 +9242,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 196.384155
           }
           Rotation {
@@ -11376,7 +11376,7 @@
           Location {
             X: -0.868408203
             Y: -20.9482422
-            Z: 0.786132813
+            Z: 0.786132812
           }
           Rotation {
             Pitch: -90

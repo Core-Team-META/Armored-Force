@@ -7,7 +7,7 @@
       RootId: 11022758748277669979
       Objects {
         Id: 11022758748277669979
-        Name: "TW_DestructibleObjectBase"
+        Name: "TW_DestructibleObjectTemplate"
         Transform {
           Scale {
             X: 1
@@ -44,6 +44,7 @@
         ParentId: 11022758748277669979
         ChildIds: 14338603141362633028
         ChildIds: 5636404454439273529
+        ChildIds: 6856163730559559514
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -142,6 +143,11 @@
               SubObjectId: 5636404454439273529
             }
           }
+          Overrides {
+            Name: "cs:RemoveGroup"
+            ObjectReference {
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -226,6 +232,31 @@
         ParentId: 15427254901639156373
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 6856163730559559514
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15427254901639156373
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"

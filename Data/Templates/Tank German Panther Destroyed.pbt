@@ -2382,7 +2382,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 196.384155
           }
           Rotation {

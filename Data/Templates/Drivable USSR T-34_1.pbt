@@ -2690,7 +2690,7 @@
         Name: "Urban Pipe Straight"
         Transform {
           Location {
-            X: -3.98632813
+            X: -3.98632812
             Y: -9.66317749
             Z: 14.3296661
           }
@@ -2755,7 +2755,7 @@
         Name: "Urban Pipe Straight"
         Transform {
           Location {
-            X: -3.98632813
+            X: -3.98632812
             Y: 20.8616333
             Z: 14.3296661
           }
@@ -3109,7 +3109,7 @@
           Location {
             X: -4.67700195
             Y: -25.1853027
-            Z: 32.1601563
+            Z: 32.1601562
           }
           Rotation {
           }
@@ -9169,7 +9169,7 @@
         Transform {
           Location {
             X: -315.01
-            Y: -17.2539063
+            Y: -17.2539062
             Z: 8.41433716
           }
           Rotation {
@@ -9322,7 +9322,7 @@
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -10061,7 +10061,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 193.972076
           }
           Rotation {
@@ -11119,7 +11119,7 @@
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: -29.4803467
           }
           Rotation {
@@ -11189,7 +11189,7 @@
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 29.4802856
           }
           Rotation {
@@ -11389,7 +11389,7 @@
         Transform {
           Location {
             X: 6.33300781
-            Y: 59.2250977
+            Y: 59.2250976
             Z: 37.690033
           }
           Rotation {
@@ -12631,7 +12631,7 @@
         Name: "Scifi Cockpit Control Terminal 01"
         Transform {
           Location {
-            X: -103.660645
+            X: -103.660644
             Y: -4.29016113
             Z: 9.07739258
           }

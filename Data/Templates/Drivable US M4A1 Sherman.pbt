@@ -426,7 +426,7 @@
         Transform {
           Location {
             X: 108.017639
-            Y: 3.27539063
+            Y: 3.27539062
             Z: 123.50592
           }
           Rotation {
@@ -6861,7 +6861,7 @@
         Transform {
           Location {
             X: -0.416778564
-            Y: 28.4750977
+            Y: 28.4750976
             Z: 6.30053711
           }
           Rotation {
@@ -7754,7 +7754,7 @@
         Name: "sm handle"
         Transform {
           Location {
-            X: -211.063477
+            X: -211.063476
             Y: -100.995667
             Z: -47.0072632
           }
@@ -10966,7 +10966,7 @@
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -14506,7 +14506,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 195.095215
             Z: 7.62939453e-06
           }
@@ -21825,7 +21825,7 @@
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: 51.1138916
             Z: 1.0788269
           }
@@ -21915,7 +21915,7 @@
         Name: "Cylinder"
         Transform {
           Location {
-            X: 6.10351563e-05
+            X: 6.10351562e-05
             Y: 29.2991943
           }
           Rotation {
@@ -22418,7 +22418,7 @@
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: 51.1138916
             Z: 1.0788269
           }
@@ -22508,7 +22508,7 @@
         Name: "Cylinder"
         Transform {
           Location {
-            X: 6.10351563e-05
+            X: 6.10351562e-05
             Y: 29.2991943
           }
           Rotation {

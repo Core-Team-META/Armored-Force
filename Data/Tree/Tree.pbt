@@ -1215,7 +1215,7 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: -28386.0977
+      X: -28386.0976
       Y: -6907.27148
       Z: -970
     }
@@ -1302,7 +1302,7 @@ Objects {
     Location {
       X: -3390
       Y: 2840
-      Z: -0.00805664063
+      Z: -0.00805664062
     }
     Rotation {
       Roll: -89.9999619
@@ -2369,7 +2369,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 722.166
-            Y: 76620.2813
+            Y: 76620.2812
             Z: 1240.00366
           }
         }
@@ -2507,7 +2507,7 @@ Objects {
   Transform {
     Location {
       X: -30695
-      Y: 46691.1563
+      Y: 46691.1562
       Z: 95
     }
     Rotation {
