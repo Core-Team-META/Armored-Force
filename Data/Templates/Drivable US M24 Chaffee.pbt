@@ -741,7 +741,7 @@
         Transform {
           Location {
             X: -3.04449463
-            Y: 0.387695313
+            Y: 0.387695312
             Z: 21.3377686
           }
           Rotation {
@@ -879,7 +879,7 @@
         Transform {
           Location {
             X: -42.6807251
-            Y: -22.2407227
+            Y: -22.2407226
             Z: 52.2210083
           }
           Rotation {
@@ -1017,7 +1017,7 @@
         Transform {
           Location {
             X: -18.497345
-            Y: 50.6914063
+            Y: 50.6914062
             Z: 37.5372925
           }
           Rotation {
@@ -1086,7 +1086,7 @@
         Transform {
           Location {
             X: 43.3251343
-            Y: -22.2407227
+            Y: -22.2407226
           }
           Rotation {
             Pitch: -31.2652855
@@ -1291,7 +1291,7 @@
         Transform {
           Location {
             X: 19.3751526
-            Y: 50.6914063
+            Y: 50.6914062
             Z: 14.5419312
           }
           Rotation {
@@ -7016,7 +7016,7 @@
         Transform {
           Location {
             X: 101.542633
-            Y: 153.500977
+            Y: 153.500976
             Z: 61.3532562
           }
           Rotation {
@@ -11689,7 +11689,7 @@
         Transform {
           Location {
             X: -189.587463
-            Y: 116.028809
+            Y: 116.028808
             Z: 85.4380493
           }
           Rotation {
@@ -12544,7 +12544,7 @@
         Name: "Prism - 3-Sided Polished"
         Transform {
           Location {
-            X: 222.310059
+            X: 222.310058
             Y: 5.68109751
             Z: 26.5024414
           }
@@ -14079,7 +14079,7 @@
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -15508,7 +15508,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 184.660156
             Z: 7.62939453e-06
           }
@@ -17688,7 +17688,7 @@
         Transform {
           Location {
             X: -0.416778564
-            Y: 28.4750977
+            Y: 28.4750976
             Z: 6.30053711
           }
           Rotation {
@@ -18511,7 +18511,7 @@
         Transform {
           Location {
             X: -124.73175
-            Y: -117.997559
+            Y: -117.997558
             Z: 89.5230713
           }
           Rotation {
@@ -18696,7 +18696,7 @@
         Transform {
           Location {
             X: 8.50973511
-            Y: 3.33789063
+            Y: 3.33789062
             Z: -3.5552063
           }
           Rotation {
@@ -21687,7 +21687,7 @@
         Transform {
           Location {
             X: -119.191345
-            Y: 120.438477
+            Y: 120.438476
             Z: 65.8496704
           }
           Rotation {
@@ -22205,7 +22205,7 @@
         Transform {
           Location {
             X: 338.946655
-            Y: -0.551757813
+            Y: -0.551757812
             Z: 0.0854187
           }
           Rotation {

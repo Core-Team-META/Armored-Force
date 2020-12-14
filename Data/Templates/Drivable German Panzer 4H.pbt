@@ -121,7 +121,7 @@
         Transform {
           Location {
             X: -399.789124
-            Y: -215.816895
+            Y: -215.816894
             Z: -13.5170135
           }
           Rotation {
@@ -11180,7 +11180,7 @@
         Transform {
           Location {
             X: 129.528961
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -11318,7 +11318,7 @@
         Transform {
           Location {
             X: -319.55542
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -11456,7 +11456,7 @@
         Transform {
           Location {
             X: -26.6473694
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -11594,7 +11594,7 @@
         Transform {
           Location {
             X: -198.355347
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -12401,7 +12401,7 @@
         Transform {
           Location {
             X: 129.528961
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -12539,7 +12539,7 @@
         Transform {
           Location {
             X: -319.55542
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -12677,7 +12677,7 @@
         Transform {
           Location {
             X: -26.6473694
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -12815,7 +12815,7 @@
         Transform {
           Location {
             X: -198.355347
-            Y: 57.1938477
+            Y: 57.1938476
             Z: 36.5487823
           }
           Rotation {
@@ -15706,7 +15706,7 @@
         Transform {
           Location {
             X: 191.759827
-            Y: -8.56445313
+            Y: -8.56445312
             Z: 13.248291
           }
           Rotation {
@@ -18163,7 +18163,7 @@
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -226.945313
+            X: -226.945312
             Y: 4.7800293
             Z: -21.3451309
           }
@@ -18302,7 +18302,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 205.573853
           }
           Rotation {
@@ -19146,7 +19146,7 @@
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -226.945313
+            X: -226.945312
             Y: 4.7800293
             Z: -21.3451309
           }

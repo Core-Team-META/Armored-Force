@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 11668310442206713913
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -70,6 +70,8 @@
         }
         ParentId: 11668310442206713913
         ChildIds: 618121357552668940
+        ChildIds: 845453303975886677
+        ChildIds: 2683252192294828625
         ChildIds: 18221731298447889504
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -108,6 +110,82 @@
             X: 4.70000029
             Y: 1.6
             Z: 2.2
+          }
+        }
+        ParentId: 2439203002483815857
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16374150260036817633
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 5000
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 845453303975886677
+        Name: "Collider"
+        Transform {
+          Location {
+            X: -160
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2
+            Y: 3.25
+            Z: 2
+          }
+        }
+        ParentId: 2439203002483815857
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16374150260036817633
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 5000
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 2683252192294828625
+        Name: "Collider"
+        Transform {
+          Location {
+            X: 165
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 2.5
+            Z: 1.14043689
           }
         }
         ParentId: 2439203002483815857

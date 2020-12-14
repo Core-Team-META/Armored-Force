@@ -318,7 +318,7 @@
         Name: "Hill 04"
         Transform {
           Location {
-            X: 55.1782227
+            X: 55.1782226
             Y: 0.001953125
           }
           Rotation {

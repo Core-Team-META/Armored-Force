@@ -80,7 +80,7 @@
         Transform {
           Location {
             X: -533.66748
-            Y: -234.101563
+            Y: -234.101562
             Z: 41.0851
           }
           Rotation {
@@ -120,7 +120,7 @@
         Name: "Tank Tread Trail VFX"
         Transform {
           Location {
-            X: -531.004395
+            X: -531.004394
             Y: 239.492188
             Z: 41.0851
           }
@@ -314,7 +314,7 @@
         Transform {
           Location {
             X: -539.004639
-            Y: 238.664063
+            Y: 238.664062
             Z: 40.1689453
           }
           Rotation {
@@ -10477,7 +10477,7 @@
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -13372,7 +13372,7 @@
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -14260,7 +14260,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -0.00122070313
+            X: -0.00122070312
             Y: 196.074951
             Z: 9.53674316e-07
           }
@@ -16453,7 +16453,7 @@
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: -29.4803467
           }
           Rotation {
@@ -16523,7 +16523,7 @@
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 29.4802856
           }
           Rotation {
@@ -17127,7 +17127,7 @@
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: -29.4803467
           }
           Rotation {
@@ -17197,7 +17197,7 @@
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 29.4802856
           }
           Rotation {

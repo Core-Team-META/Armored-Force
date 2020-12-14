@@ -2722,7 +2722,7 @@
         Transform {
           Location {
             X: -354.995972
-            Y: 164.153809
+            Y: 164.153808
             Z: 95.3276215
           }
           Rotation {
@@ -2916,7 +2916,7 @@
         Transform {
           Location {
             X: -26.0059204
-            Y: 0.000122070313
+            Y: 0.000122070312
           }
           Rotation {
             Pitch: -90
@@ -2985,7 +2985,7 @@
         Transform {
           Location {
             X: -10.0063782
-            Y: 0.000122070313
+            Y: 0.000122070312
             Z: 4.15477
           }
           Rotation {
@@ -3055,7 +3055,7 @@
         Transform {
           Location {
             X: 36.0123901
-            Y: 0.000122070313
+            Y: 0.000122070312
             Z: 4.15477
           }
           Rotation {
@@ -5682,7 +5682,7 @@
         Transform {
           Location {
             X: 70
-            Y: 6.10351563e-05
+            Y: 6.10351562e-05
             Z: -20
           }
           Rotation {
@@ -6742,7 +6742,7 @@
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 196.384155
           }
           Rotation {
@@ -8268,7 +8268,7 @@
           Location {
             X: -0.868408203
             Y: -20.9482422
-            Z: 0.786132813
+            Z: 0.786132812
           }
           Rotation {
             Pitch: -90
@@ -9796,7 +9796,7 @@
         Transform {
           Location {
             X: -35.4648438
-            Y: 41.7851563
+            Y: 41.7851562
             Z: 89.5459
           }
           Rotation {
@@ -9844,7 +9844,7 @@
         Transform {
           Location {
             X: -82.7890625
-            Y: 41.7851563
+            Y: 41.7851562
             Z: 10.8167725
           }
           Rotation {
