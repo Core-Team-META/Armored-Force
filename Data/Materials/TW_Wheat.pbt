@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 4555802358449462110
-  Name: "GrassYellow - Copy"
+  Name: "TW_Wheat"
   PlatformAssetType: 13
   SerializationVersion: 68
   CustomMaterialAsset {
@@ -9,29 +9,30 @@
       Overrides {
         Name: "color"
         Color {
-          R: 0.51000005
-          G: 0.390926838
-          B: 0.18309
+          R: 0.218543
+          G: 0.299999952
           A: 1
         }
       }
       Overrides {
         Name: "color_roots"
         Color {
-          R: 0.51000005
-          G: 0.390926838
-          B: 0.18309
+          R: 0.218543
+          G: 0.299999952
           A: 1
         }
       }
       Overrides {
         Name: "SSS"
         Color {
-          R: 0.51000005
-          G: 0.418048054
-          B: 0.257550031
+          R: 0.218543
+          G: 0.299999952
           A: 1
         }
+      }
+      Overrides {
+        Name: "wind_weight"
+        Float: 0.178256527
       }
     }
     Assets {

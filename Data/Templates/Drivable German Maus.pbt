@@ -121,7 +121,7 @@
         Transform {
           Location {
             X: -399.789124
-            Y: -215.816894
+            Y: -215.816895
             Z: -13.5170135
           }
           Rotation {
@@ -3866,7 +3866,7 @@
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: -411.375976
+            X: -411.375977
             Y: 141.070084
             Z: 11.2507811
           }
@@ -7836,7 +7836,7 @@
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -252.747558
+            X: -252.747559
             Y: 16.5170212
             Z: -18.1512089
           }
@@ -9761,7 +9761,7 @@
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: -252.747558
+            X: -252.747559
             Y: 16.5170212
             Z: -18.1512089
           }

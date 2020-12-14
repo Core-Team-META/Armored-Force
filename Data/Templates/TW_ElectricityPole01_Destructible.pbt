@@ -978,7 +978,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1099,7 +1099,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1220,7 +1220,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1341,7 +1341,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1462,7 +1462,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1583,7 +1583,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1705,7 +1705,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }
@@ -1826,7 +1826,7 @@
         Name: "Pyramid - 5-Sided Truncated Polished"
         Transform {
           Location {
-            Z: 11.4750976
+            Z: 11.4750977
           }
           Rotation {
           }

@@ -722,7 +722,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -16.5688476
+            X: -16.5688477
             Y: 101.923828
           }
           Rotation {
@@ -796,7 +796,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -16.5688476
+            X: -16.5688477
             Y: 101.923828
           }
           Rotation {
@@ -2232,7 +2232,7 @@
           Location {
             X: -230
             Y: -331.91748
-            Z: 364.504394
+            Z: 364.504395
           }
           Rotation {
             Pitch: 90
@@ -3199,7 +3199,7 @@
         Transform {
           Location {
             X: 28.4272461
-            Y: 119.601562
+            Y: 119.601563
             Z: 325
           }
           Rotation {
@@ -3270,7 +3270,7 @@
         Transform {
           Location {
             X: -20.1040039
-            Y: 119.601562
+            Y: 119.601563
             Z: 270
           }
           Rotation {
@@ -3345,7 +3345,7 @@
         Transform {
           Location {
             X: 27.2773438
-            Y: 119.601562
+            Y: 119.601563
             Z: 160
           }
           Rotation {
@@ -3419,7 +3419,7 @@
         Transform {
           Location {
             X: 29.3935547
-            Y: 119.601562
+            Y: 119.601563
             Z: 160
           }
           Rotation {
@@ -3491,7 +3491,7 @@
         Transform {
           Location {
             X: -20.1040039
-            Y: 119.601562
+            Y: 119.601563
             Z: 105
           }
           Rotation {
@@ -3641,7 +3641,7 @@
         Transform {
           Location {
             X: -240.459961
-            Y: -355.028808
+            Y: -355.028809
             Z: 661.614
           }
           Rotation {
@@ -5076,7 +5076,7 @@
         Name: "StoneFoundation"
         Transform {
           Location {
-            X: 71.2719726
+            X: 71.2719727
             Y: 217.754883
             Z: 5
           }
@@ -5365,7 +5365,7 @@
         Transform {
           Location {
             X: -19.9082031
-            Y: 60.1313476
+            Y: 60.1313477
             Z: 341.003235
           }
           Rotation {
@@ -5643,7 +5643,7 @@
         Transform {
           Location {
             X: 27.7197266
-            Y: -61.8789062
+            Y: -61.8789063
             Z: 16.0032349
           }
           Rotation {
@@ -5831,7 +5831,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -16.5688476
+            X: -16.5688477
             Y: 101.923828
           }
           Rotation {
@@ -5905,7 +5905,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -16.5688476
+            X: -16.5688477
             Y: 101.923828
           }
           Rotation {
@@ -6420,7 +6420,7 @@
         Transform {
           Location {
             X: 22.3222656
-            Y: 119.601562
+            Y: 119.601563
             Z: 325
           }
           Rotation {
@@ -6491,7 +6491,7 @@
         Transform {
           Location {
             X: -20.1035156
-            Y: 119.601562
+            Y: 119.601563
             Z: 270
           }
           Rotation {
@@ -6566,7 +6566,7 @@
         Transform {
           Location {
             X: 27.2773438
-            Y: 119.601562
+            Y: 119.601563
             Z: 160
           }
           Rotation {
@@ -6640,7 +6640,7 @@
         Transform {
           Location {
             X: 29.3935547
-            Y: 119.601562
+            Y: 119.601563
             Z: 160
           }
           Rotation {
@@ -6712,7 +6712,7 @@
         Transform {
           Location {
             X: -20.1040039
-            Y: 119.601562
+            Y: 119.601563
             Z: 105
           }
           Rotation {

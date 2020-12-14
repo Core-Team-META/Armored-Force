@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16587759780299340145
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
   Id: 16374150260036817633
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -98,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13100330238861707551
+  Name: "Decal Tread Tracks 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_mil_decal_tracks_001_ref"
+  }
+}
+Assets {
   Id: 12578587233899497834
   Name: "Tree Birch 02"
   PlatformAssetType: 1
@@ -152,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10818938926498206079
+  Name: "Crescent - 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crescent_002"
+  }
+}
+Assets {
   Id: 10755294693114967386
   Name: "Decal Stains Round 01"
   PlatformAssetType: 14
@@ -203,6 +230,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dest_concrete_pillar_middle_001_ref"
+  }
+}
+Assets {
+  Id: 7061668038691074618
+  Name: "Fantasy Human Guy 1"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_001_ref"
   }
 }
 Assets {

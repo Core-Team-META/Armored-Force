@@ -424,6 +424,56 @@ Objects {
         Max: 102400
       }
     }
+    Foliage {
+      Asset {
+        Id: 18095757882595708726
+      }
+      DistanceBetweenInstances: 400
+      MaterialChannel: 2
+      SpawnDistance: 30720
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 2
+          Max: 2
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 4555802358449462110
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+        Z: -80
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
   }
 }
 Objects {
@@ -1215,7 +1265,7 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: -28386.0976
+      X: -28386.0977
       Y: -6907.27148
       Z: -970
     }
@@ -1302,7 +1352,7 @@ Objects {
     Location {
       X: -3390
       Y: 2840
-      Z: -0.00805664062
+      Z: -0.00805664063
     }
     Rotation {
       Roll: -89.9999619
@@ -2369,7 +2419,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 722.166
-            Y: 76620.2812
+            Y: 76620.2813
             Z: 1240.00366
           }
         }
@@ -2507,7 +2557,7 @@ Objects {
   Transform {
     Location {
       X: -30695
-      Y: 46691.1562
+      Y: 46691.1563
       Z: 95
     }
     Rotation {

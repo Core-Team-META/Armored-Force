@@ -140,7 +140,7 @@
         Transform {
           Location {
             X: 171.362305
-            Y: -217.632812
+            Y: -217.632813
             Z: 126.422195
           }
           Rotation {
@@ -336,7 +336,7 @@
         Transform {
           Location {
             X: 186.178223
-            Y: 169.445312
+            Y: 169.445313
             Z: 126.422195
           }
           Rotation {
@@ -404,7 +404,7 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: 70.8164062
+            X: 70.8164063
             Y: 183.808594
             Z: 187.633118
           }
@@ -1095,7 +1095,7 @@
         Transform {
           Location {
             X: 188.45459
-            Y: 169.445312
+            Y: 169.445313
             Z: 11.4913025
           }
           Rotation {
@@ -2137,7 +2137,7 @@
         Transform {
           Location {
             X: -208.821777
-            Y: -217.851562
+            Y: -217.851563
             Z: 126.422195
           }
           Rotation {
@@ -2527,7 +2527,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 187.910644
+            X: 187.910645
             Y: -223.808594
             Z: 116.422134
           }

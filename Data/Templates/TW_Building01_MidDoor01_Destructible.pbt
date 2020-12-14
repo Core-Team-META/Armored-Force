@@ -59,7 +59,7 @@
         Name: "DestructionTrigger"
         Transform {
           Location {
-            X: -52.2382812
+            X: -52.2382813
             Y: 60
             Z: 157.563293
           }
@@ -347,7 +347,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: 41.0844726
+            X: 41.0844727
             Y: 147.781494
             Z: 390
           }
@@ -936,7 +936,7 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -52.1445312
+            X: -52.1445313
             Y: 139.999146
             Z: 654.999268
           }

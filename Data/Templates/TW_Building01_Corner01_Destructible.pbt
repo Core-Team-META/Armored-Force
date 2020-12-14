@@ -645,7 +645,7 @@
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: -4.51757812
+            X: -4.51757813
             Y: 306.863281
             Z: 180
           }
@@ -861,7 +861,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -26.5688476
+            X: -26.5688477
             Y: 386.923828
             Z: 80
           }
@@ -936,7 +936,7 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -26.5688476
+            X: -26.5688477
             Y: 386.923828
             Z: 80
           }
@@ -4324,7 +4324,7 @@
           Location {
             X: -204.137695
             Y: -51.1064453
-            Z: 297.164062
+            Z: 297.164063
           }
           Rotation {
             Pitch: 44.9999466
