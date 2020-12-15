@@ -95,7 +95,7 @@
           }
           AudioBP {
             AutoPlay: true
-            Volume: 0.33684212
+            Volume: 1.07368422
             Falloff: 3600
             Radius: 400
             IsSpatializationEnabled: true

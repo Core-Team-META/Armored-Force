@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 18355360044060206792
-  Name: "Rock 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
-  }
-}
-Assets {
   Id: 18241477672421277445
   Name: "Tree Redwood Big"
   PlatformAssetType: 1
@@ -401,15 +392,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
-  Id: 2663621746953993141
-  Name: "Damaged Concrete Pillar Top 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dest_concrete_pillar_top_01_ref"
   }
 }
 Assets {
