@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 9734563338717701534
-  Name: "TW_FX_Destroy_WoodBig"
+  Id: 8823241362130014848
+  Name: "TW_FX_Destroy_WoodWindowBig"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 18069542106520143989
+      RootId: 5929654358707065095
       Objects {
-        Id: 18069542106520143989
-        Name: "TW_FX_Destroy_WoodStoneBig"
+        Id: 5929654358707065095
+        Name: "TW_FX_Destroy_WoodWindowBig"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 16244906926373107681
+        ChildIds: 8014294166842128221
         Lifespan: 3
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29,7 +29,7 @@
         }
       }
       Objects {
-        Id: 16244906926373107681
+        Id: 8014294166842128221
         Name: "ClientContext"
         Transform {
           Location {
@@ -42,13 +42,13 @@
             Z: 1
           }
         }
-        ParentId: 18069542106520143989
-        ChildIds: 17923069531757899060
-        ChildIds: 14485971597824949533
-        ChildIds: 18289506624895581993
-        ChildIds: 15004902084475968802
-        ChildIds: 7904962334959976889
-        ChildIds: 3615849140189632088
+        ParentId: 5929654358707065095
+        ChildIds: 17021880462907184502
+        ChildIds: 9425495732234112873
+        ChildIds: 6027073927500211647
+        ChildIds: 3418827686234286162
+        ChildIds: 5269258510317025658
+        ChildIds: 17987794522993143883
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -59,8 +59,8 @@
         }
       }
       Objects {
-        Id: 17923069531757899060
-        Name: "Heavy Ground Rocky Debris Impact 01 SFX"
+        Id: 17021880462907184502
+        Name: "Glass Shatter Break Impact Set 01 SFX"
         Transform {
           Location {
           }
@@ -72,64 +72,42 @@
             Z: 1
           }
         }
-        ParentId: 16244906926373107681
+        ParentId: 8014294166842128221
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:esfx_glass_shatter_impact:56"
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        AudioInstance {
-          AudioAsset {
-            Id: 15281639388640833588
+        Blueprint {
+          BlueprintAsset {
+            Id: 632411199744695294
           }
-          AutoPlay: true
-          Volume: 1
-          Falloff: 10000
-          Radius: -1
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Volume: 0.33684212
+            Falloff: 3600
+            Radius: 400
+            IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
+          }
         }
       }
       Objects {
-        Id: 14485971597824949533
-        Name: "Big Rock Boulder Ground Impact 01 SFX"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16244906926373107681
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 1563293283306807358
-          }
-          AutoPlay: true
-          Volume: 1
-          Falloff: -1
-          Radius: -1
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 18289506624895581993
+        Id: 9425495732234112873
         Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
         Transform {
           Location {
-            Z: 48.333252
           }
           Rotation {
           }
@@ -139,7 +117,7 @@
             Z: 1
           }
         }
-        ParentId: 16244906926373107681
+        ParentId: 8014294166842128221
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -152,14 +130,14 @@
           }
           AutoPlay: true
           Volume: 1
-          Falloff: 1500
+          Falloff: 15000
           Radius: -1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 15004902084475968802
+        Id: 6027073927500211647
         Name: "Smoke Puff Radial VFX"
         Transform {
           Location {
@@ -172,7 +150,7 @@
             Z: 1
           }
         }
-        ParentId: 16244906926373107681
+        ParentId: 8014294166842128221
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -197,7 +175,7 @@
         }
       }
       Objects {
-        Id: 7904962334959976889
+        Id: 3418827686234286162
         Name: "Dust Puff VFX"
         Transform {
           Location {
@@ -210,7 +188,7 @@
             Z: 1
           }
         }
-        ParentId: 16244906926373107681
+        ParentId: 8014294166842128221
         UnregisteredParameters {
           Overrides {
             Name: "bp:density"
@@ -243,7 +221,7 @@
         }
       }
       Objects {
-        Id: 3615849140189632088
+        Id: 5269258510317025658
         Name: "Wood Impact VFX"
         Transform {
           Location {
@@ -256,7 +234,7 @@
             Z: 4.4
           }
         }
-        ParentId: 16244906926373107681
+        ParentId: 8014294166842128221
         UnregisteredParameters {
           Overrides {
             Name: "bp:Gravity"
@@ -288,23 +266,46 @@
           }
         }
       }
-    }
-    Assets {
-      Id: 15281639388640833588
-      Name: "Heavy Ground Rocky Debris Impact 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_heavy_ground_rocky_debris_impact_01a_Cue_ref"
+      Objects {
+        Id: 17987794522993143883
+        Name: "Glass Explosion Volume VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: -0.0645409897
+            Y: 1.18265915
+            Z: 2.12856317
+          }
+        }
+        ParentId: 8014294166842128221
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 10243197762880649427
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
       }
     }
     Assets {
-      Id: 1563293283306807358
-      Name: "Big Rock Boulder Ground Impact 01 SFX"
-      PlatformAssetType: 7
+      Id: 632411199744695294
+      Name: "Glass Shatter Break Impact Set 01 SFX"
+      PlatformAssetType: 10
       PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_big_rock_boulder_ground_impact_01a_Cue_ref"
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_glass_shatter_impact_hits_set_ref"
       }
     }
     Assets {
@@ -341,6 +342,15 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_gun_impact_wood_sm"
+      }
+    }
+    Assets {
+      Id: 10243197762880649427
+      Name: "Glass Explosion Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxps_glass_explosion"
       }
     }
     PrimaryAssetId {
