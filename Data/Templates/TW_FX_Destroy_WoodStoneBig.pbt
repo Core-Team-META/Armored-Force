@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 9734563338717701534
-  Name: "TW_FX_Destroy_WoodBig"
+  Id: 15253247271758234121
+  Name: "TW_FX_Destroy_WoodStoneBig"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 18069542106520143989
       Objects {
         Id: 18069542106520143989
-        Name: "TW_FX_Destroy_WoodBig"
+        Name: "TW_FX_Destroy_WoodStoneBig"
         Transform {
           Scale {
             X: 1
@@ -43,6 +43,8 @@
           }
         }
         ParentId: 18069542106520143989
+        ChildIds: 17923069531757899060
+        ChildIds: 14485971597824949533
         ChildIds: 18289506624895581993
         ChildIds: 15004902084475968802
         ChildIds: 7904962334959976889
@@ -54,6 +56,72 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 17923069531757899060
+        Name: "Heavy Ground Rocky Debris Impact 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16244906926373107681
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 15281639388640833588
+          }
+          AutoPlay: true
+          Volume: 1.2
+          Falloff: 10000
+          Radius: -1
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 14485971597824949533
+        Name: "Big Rock Boulder Ground Impact 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16244906926373107681
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 1563293283306807358
+          }
+          AutoPlay: true
+          Volume: 1.66315794
+          Falloff: -1
+          Radius: -1
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -219,6 +287,24 @@
             AutoPlay: true
           }
         }
+      }
+    }
+    Assets {
+      Id: 15281639388640833588
+      Name: "Heavy Ground Rocky Debris Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_heavy_ground_rocky_debris_impact_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 1563293283306807358
+      Name: "Big Rock Boulder Ground Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_big_rock_boulder_ground_impact_01a_Cue_ref"
       }
     }
     Assets {
