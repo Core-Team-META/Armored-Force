@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 7203033785247146309
         ChildIds: 14023087714175753881
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -60,15 +60,15 @@
         Transform {
           Location {
             X: -120.092773
-            Y: 135
-            Z: 142.563293
+            Y: 165.110962
+            Z: 219.279846
           }
           Rotation {
           }
           Scale {
             X: 3
-            Y: 3.5
-            Z: 2.25
+            Y: 4.1885004
+            Z: 3.26650643
           }
         }
         ParentId: 14023087714175753881
@@ -112,7 +112,7 @@
           Overrides {
             Name: "cs:DestructionFX01"
             AssetReference {
-              Id: 9734563338717701534
+              Id: 8823241362130014848
             }
           }
           Overrides {
@@ -197,8 +197,9 @@
         Name: "FXLocation01"
         Transform {
           Location {
-            X: 8.33333397
-            Y: 1.42857134
+            X: 45.3564453
+            Y: 9.14633179
+            Z: 45.2799072
           }
           Rotation {
           }
@@ -263,6 +264,7 @@
         ChildIds: 7201897814259305460
         ChildIds: 886304286361784902
         ChildIds: 7042897617806220571
+        ChildIds: 9724794608702109268
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -1158,7 +1160,7 @@
         Transform {
           Location {
             X: -240
-            Y: -50
+            Y: -51.4443359
             Z: 30
           }
           Rotation {
@@ -1232,9 +1234,9 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -19.4975586
+            X: -22.5048828
             Y: 10
-            Z: 455
+            Z: 455.000061
           }
           Rotation {
             Yaw: -179.999954
@@ -1307,16 +1309,15 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -104.350098
+            X: -95.0927734
             Y: -32.4262695
-            Z: 600
+            Z: 552.563293
           }
           Rotation {
-            Yaw: -179.999954
-            Roll: -89.9999466
+            Yaw: 180
           }
           Scale {
-            X: 0.191539824
+            X: 0.205675572
             Y: 1
             Z: 2.19999957
           }
@@ -1384,14 +1385,14 @@
           Location {
             X: -210
             Y: -33.0151367
-            Z: 710
+            Z: 710.000061
           }
           Rotation {
             Yaw: -179.999954
-            Roll: -89.9999466
+            Roll: -89.999939
           }
           Scale {
-            X: 0.135576129
+            X: 0.166420847
             Y: 1.5
             Z: 2.24999976
           }
@@ -1457,18 +1458,18 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -240
+            X: -255.467041
             Y: -46.9174805
-            Z: 450
+            Z: 450.000061
           }
           Rotation {
             Pitch: 90
             Roll: 90.0000076
           }
           Scale {
-            X: 0.335127234
-            Y: 1.00000012
-            Z: 0.778095782
+            X: 0.335127175
+            Y: 0.709672928
+            Z: 0.778095722
           }
         }
         ParentId: 1633322965935289681
@@ -1608,8 +1609,8 @@
         Transform {
           Location {
             X: -19.4975586
-            Y: 12.1572266
-            Z: 290
+            Y: 5
+            Z: 290.000061
           }
           Rotation {
             Yaw: -179.999969
@@ -1683,17 +1684,16 @@
         Transform {
           Location {
             X: -19.4975586
-            Y: -37.340332
-            Z: 195
+            Y: -45
+            Z: 142.563293
           }
           Rotation {
-            Yaw: -179.999954
-            Roll: -89.9999771
+            Yaw: 180
           }
           Scale {
             X: 0.281688869
             Y: 1.00000012
-            Z: 2.2
+            Z: 2.60348153
           }
         }
         ParentId: 1633322965935289681
@@ -1724,7 +1724,7 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.558133185
+            Float: 0.438795567
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
@@ -1759,7 +1759,7 @@
           Location {
             X: -19.4975586
             Y: -1.98486328
-            Z: 45
+            Z: 32.0886841
           }
           Rotation {
             Yaw: -179.999954
@@ -1767,7 +1767,7 @@
           }
           Scale {
             X: 0.281688869
-            Y: 1.00000012
+            Y: 1.06534922
             Z: 2.2
           }
         }
@@ -2277,17 +2277,17 @@
           Location {
             X: -250.459961
             Y: -70.0288086
-            Z: 741.614
+            Z: 741.614075
           }
           Rotation {
-            Pitch: -2.04905664e-05
+            Pitch: -3.05175781e-05
             Yaw: 89.9999619
             Roll: 134.999985
           }
           Scale {
             X: 0.657698154
-            Y: 0.99999994
-            Z: 0.778095841
+            Y: 1
+            Z: 1.06434929
           }
         }
         ParentId: 1633322965935289681
@@ -2476,12 +2476,12 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -25
+            X: -22.8967285
             Y: 215
-            Z: 525
+            Z: 526.720032
           }
           Rotation {
-            Yaw: -90.0000076
+            Yaw: -90
             Roll: -135
           }
           Scale {
@@ -2526,8 +2526,8 @@
         Transform {
           Location {
             X: 36.5014648
-            Y: 4.72924805
-            Z: 468.455566
+            Y: -41.7959
+            Z: 468.455627
           }
           Rotation {
             Yaw: 90
@@ -2574,14 +2574,14 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -132.714844
-            Y: -5
-            Z: 637.285156
+            X: -133.403809
+            Y: -35.7631836
+            Z: 637.974182
           }
           Rotation {
-            Pitch: 3.53329086
+            Pitch: -176.466705
             Yaw: 93.539978
-            Roll: 135.109253
+            Roll: 44.8906555
           }
           Scale {
             X: 1
@@ -2624,12 +2624,12 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -82.7148438
-            Y: -10
-            Z: 587.285156
+            X: -47.4580078
+            Y: -48.7124023
+            Z: 552.028503
           }
           Rotation {
-            Pitch: -2.73207552e-05
+            Pitch: -3.05175781e-05
             Yaw: 89.9999466
             Roll: 134.999985
           }
@@ -2756,6 +2756,56 @@
         CoreMesh {
           MeshAsset {
             Id: 17112985054030154012
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9724794608702109268
+        Name: "Urban Plank Debris 04"
+        Transform {
+          Location {
+            X: -258.152832
+            Y: -48.7121582
+            Z: 762.723328
+          }
+          Rotation {
+            Pitch: -3.05175781e-05
+            Yaw: 89.9999466
+            Roll: 134.999985
+          }
+          Scale {
+            X: 1
+            Y: 2.5
+            Z: 1
+          }
+        }
+        ParentId: 1633322965935289681
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7360602162123997816
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 526843540183677030
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3178,16 +3228,16 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -153.847656
+            X: -158.271
             Y: 10
-            Z: 600
+            Z: 600.000061
           }
           Rotation {
             Yaw: -179.999954
             Roll: 89.9999313
           }
           Scale {
-            X: 0.122879572
+            X: 0.122855142
             Y: 1
             Z: 2.19999957
           }
@@ -3253,9 +3303,9 @@
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -61.9238281
+            X: -64.1889648
             Y: 17.0712891
-            Z: 550
+            Z: 550.000061
           }
           Rotation {
             Yaw: -179.999954
@@ -3329,12 +3379,12 @@
         Transform {
           Location {
             X: -19.4975586
-            Y: -44.4111328
-            Z: 453.357788
+            Y: -49.6123047
+            Z: 453.357727
           }
           Rotation {
             Yaw: -179.999954
-            Roll: -89.9999542
+            Roll: -89.999939
           }
           Scale {
             X: 0.287153304
@@ -3404,30 +3454,20 @@
         Transform {
           Location {
             X: -19.4975586
-            Y: -44.4111328
-            Z: 342.946533
+            Y: -48.4262695
+            Z: 292.563293
           }
           Rotation {
-            Yaw: -179.999954
-            Roll: -89.9999542
+            Yaw: 180
           }
           Scale {
             X: 0.281688869
             Y: 1.00000012
-            Z: 2.2
+            Z: 2.44879174
           }
         }
         ParentId: 14341304711018561693
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -3445,11 +3485,20 @@
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.558133185
+            Float: 0.830450058
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 0.204804823
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -3480,7 +3529,7 @@
           Location {
             X: -19.4975586
             Y: -1.98486328
-            Z: 195
+            Z: 193.445068
           }
           Rotation {
             Yaw: -179.999954
@@ -3488,8 +3537,8 @@
           }
           Scale {
             X: 0.281688869
-            Y: 1.00000012
-            Z: 2.2
+            Y: 1.07959974
+            Z: 2.19999981
           }
         }
         ParentId: 14341304711018561693
@@ -3555,7 +3604,7 @@
           Location {
             X: -19.4975586
             Y: 5.08642578
-            Z: 140
+            Z: 138.822754
           }
           Rotation {
             Yaw: -179.999954
@@ -3563,8 +3612,8 @@
           }
           Scale {
             X: 0.281688869
-            Y: 1.00000012
-            Z: 2.2
+            Y: 0.999999821
+            Z: 2.54650736
           }
         }
         ParentId: 14341304711018561693
@@ -3718,7 +3767,7 @@
         Transform {
           Location {
             X: -3.25683594
-            Y: -184.981445
+            Y: -201.669678
             Z: 133.045654
           }
           Rotation {
@@ -3727,8 +3776,8 @@
           }
           Scale {
             X: 4.98735142
-            Y: 4.87800694
-            Z: 0.100000486
+            Y: 5.26407242
+            Z: 0.100000329
           }
         }
         ParentId: 3672624562712167166

@@ -726,6 +726,8 @@ Objects {
     }
   }
   ParentId: 6153130870821346058
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
