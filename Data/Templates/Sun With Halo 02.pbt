@@ -258,7 +258,7 @@
     }
     Assets {
       Id: 5117326109845707677
-      Name: "Plane"
+      Name: "Plane 4m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -279,5 +279,5 @@
       AssetId: "Sun_With_Halo_02"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

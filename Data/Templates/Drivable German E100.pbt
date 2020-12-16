@@ -14407,7 +14407,7 @@
     }
     Assets {
       Id: 11242933075375658963
-      Name: "Military Tank Historic Hull 01 Front"
+      Name: "Military Tank Historic Hull 01 - Front"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14434,7 +14434,7 @@
     }
     Assets {
       Id: 13924487467599180715
-      Name: "Military Tank Historic Hull 01 Rear"
+      Name: "Military Tank Historic Hull 01 - Rear"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14443,7 +14443,7 @@
     }
     Assets {
       Id: 2513330173715104405
-      Name: "Military Tank Historic Hull 01 Mid"
+      Name: "Military Tank Historic Hull 01 - Mid"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14587,7 +14587,7 @@
     }
     Assets {
       Id: 16701740470968256231
-      Name: "Military Tank Historic Container 01"
+      Name: "Military Tank Historic Container 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14605,7 +14605,7 @@
     }
     Assets {
       Id: 6789604014209716330
-      Name: "Scifi Ship Engine 01"
+      Name: "Sci-fi Ship Engine 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14659,7 +14659,7 @@
     }
     Assets {
       Id: 7444698281278331687
-      Name: "Military Tank Antenna 01"
+      Name: "Military Tank Historic Antenna 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14749,7 +14749,7 @@
     }
     Assets {
       Id: 16077824162186241922
-      Name: "Scifi Panel 2x3m Triangle"
+      Name: "Sci-fi Panel 2x3m Triangle"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14767,7 +14767,7 @@
     }
     Assets {
       Id: 286982728900310227
-      Name: "Military Tank Historic Tread 01 Mid"
+      Name: "Military Tank Historic Track 01 - Mid 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14776,7 +14776,7 @@
     }
     Assets {
       Id: 5201493243558163533
-      Name: "Military Tank Historic Tread 01 Front"
+      Name: "Military Tank Historic Track 01 - End"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14821,7 +14821,7 @@
     }
     Assets {
       Id: 18348342505020437805
-      Name: "Military Tank Historic Turret 01 Ring"
+      Name: "Military Tank Historic Turret Seal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14839,7 +14839,7 @@
     }
     Assets {
       Id: 14148694443006706995
-      Name: "Scifi Cockpit Control Terminal 01"
+      Name: "Sci-fi Cockpit Control Terminal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14875,7 +14875,7 @@
     }
     Assets {
       Id: 6000681835192046231
-      Name: "Pipe (thick)"
+      Name: "Pipe - Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14893,7 +14893,7 @@
     }
     Assets {
       Id: 9180483725168295866
-      Name: "Decal Logo 02"
+      Name: "Decal Military Symbols 02"
       PlatformAssetType: 14
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
@@ -14911,7 +14911,7 @@
     }
     Assets {
       Id: 13295705863038029439
-      Name: "Military Tank Historic Hatch 01 Lid"
+      Name: "Military Tank Historic Hatch Lid 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14929,7 +14929,7 @@
     }
     Assets {
       Id: 7102179285187063772
-      Name: "Scifi Panel 1x4m"
+      Name: "Sci-fi Panel 1x4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14938,7 +14938,7 @@
     }
     Assets {
       Id: 16965777294932964901
-      Name: "Cube - Polished"
+      Name: "Cube - Chamfered Large Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14968,5 +14968,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

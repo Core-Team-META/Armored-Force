@@ -2,7 +2,7 @@
   Id: 6028094046627322103
   Name: "GrassRed"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 12223811200745286487
     ParameterOverrides {

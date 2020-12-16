@@ -63,7 +63,7 @@ Assets {
 }
 Assets {
   Id: 12827530473249900764
-  Name: "Opaque Emissive"
+  Name: "Emissive Glow Opaque"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"

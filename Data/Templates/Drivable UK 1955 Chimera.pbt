@@ -19890,7 +19890,7 @@
     }
     Assets {
       Id: 13295705863038029439
-      Name: "Military Tank Historic Hatch 01 Lid"
+      Name: "Military Tank Historic Hatch Lid 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -19926,7 +19926,7 @@
     }
     Assets {
       Id: 4199776750539678640
-      Name: "Military Tank Historic MainGun 01"
+      Name: "Military Tank Historic Maingun 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -19944,7 +19944,7 @@
     }
     Assets {
       Id: 9643743770374877205
-      Name: "Military Tank Fuel Container 01"
+      Name: "Military Tank Historic Container 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -19971,7 +19971,7 @@
     }
     Assets {
       Id: 13373724591692948914
-      Name: "Sci-Fi Base Railing 02 - 4m"
+      Name: "Sci-fi Base Railing 02 - 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -19980,7 +19980,7 @@
     }
     Assets {
       Id: 7444698281278331687
-      Name: "Military Tank Antenna 01"
+      Name: "Military Tank Historic Antenna 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -20052,7 +20052,7 @@
     }
     Assets {
       Id: 10746051325900785529
-      Name: "Military Tank Modern Hull 01 Front"
+      Name: "Military Tank Modern Hull 01 - Front"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -20061,7 +20061,7 @@
     }
     Assets {
       Id: 14823448561875281729
-      Name: "Military Tank Modern Hull 01 Mid"
+      Name: "Military Tank Modern Hull 01 - Mid"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -20070,7 +20070,7 @@
     }
     Assets {
       Id: 2105469337981746227
-      Name: "Military Tank Historic Armorplate 01 Rear"
+      Name: "Military Tank Historic Armor Plate 01 - Rear"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -20088,7 +20088,7 @@
     }
     Assets {
       Id: 1222394474421416084
-      Name: "Floor Grate Fire Escape 1m x 4m"
+      Name: "Urban Floor Grate Fire Escape - 1m x 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -20196,7 +20196,7 @@
     }
     Assets {
       Id: 20234540346733389
-      Name: "Floor Grate Fire Escape 1m x 2m"
+      Name: "Urban Floor Grate Fire Escape - 1m x 2m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -20280,5 +20280,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

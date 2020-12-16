@@ -90,7 +90,7 @@ Assets {
 }
 Assets {
   Id: 14697405062555329113
-  Name: "Post Process AO"
+  Name: "Ambient Occlusion Post Process"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
@@ -117,7 +117,7 @@ Assets {
 }
 Assets {
   Id: 14345153403763633307
-  Name: "Damaged Concrete Chunk 02"
+  Name: "Urban Damaged Concrete Chunk 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -149,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_003"
+  }
+}
+Assets {
+  Id: 12250067734840047801
+  Name: "Wedge - Corner-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_002"
   }
 }
 Assets {
@@ -206,21 +215,21 @@ Assets {
   }
 }
 Assets {
+  Id: 10850769815684373087
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
-  Id: 10818938926498206079
-  Name: "Crescent - 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crescent_002"
   }
 }
 Assets {
@@ -270,20 +279,11 @@ Assets {
 }
 Assets {
   Id: 7119371275391860163
-  Name: "Damaged Concrete Pillar 01"
+  Name: "Urban Damaged Concrete Pillar 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dest_concrete_pillar_middle_001_ref"
-  }
-}
-Assets {
-  Id: 7061668038691074618
-  Name: "Fantasy Human Guy 1"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_fantasy_001_ref"
   }
 }
 Assets {
@@ -333,7 +333,7 @@ Assets {
 }
 Assets {
   Id: 5531833663473274763
-  Name: "Damaged Concrete Pillar Bottom 01"
+  Name: "Urban Damaged Concrete Pillar - Bottom 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -342,7 +342,7 @@ Assets {
 }
 Assets {
   Id: 5483772166785938526
-  Name: "Damaged Concrete Chunk 03"
+  Name: "Urban Damaged Concrete Chunk 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -386,6 +386,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3998592366905403415
+  Name: "Glass 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_refrac_001"
+  }
+}
+Assets {
   Id: 3377721323622766709
   Name: "Rock Pile 002"
   PlatformAssetType: 1
@@ -423,7 +432,7 @@ Assets {
 }
 Assets {
   Id: 1012648459633409157
-  Name: "Damaged Concrete Chunk 01"
+  Name: "Urban Damaged Concrete Chunk 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

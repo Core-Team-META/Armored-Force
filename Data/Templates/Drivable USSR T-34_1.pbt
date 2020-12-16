@@ -12849,7 +12849,7 @@
     }
     Assets {
       Id: 11242933075375658963
-      Name: "Military Tank Historic Hull 01 Front"
+      Name: "Military Tank Historic Hull 01 - Front"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -12867,7 +12867,7 @@
     }
     Assets {
       Id: 2513330173715104405
-      Name: "Military Tank Historic Hull 01 Mid"
+      Name: "Military Tank Historic Hull 01 - Mid"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -12921,7 +12921,7 @@
     }
     Assets {
       Id: 13295705863038029439
-      Name: "Military Tank Historic Hatch 01 Lid"
+      Name: "Military Tank Historic Hatch Lid 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13038,7 +13038,7 @@
     }
     Assets {
       Id: 5544820850613172301
-      Name: "Grenade Handle 01"
+      Name: "Modern Weapon - Grenade Handle 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13119,7 +13119,7 @@
     }
     Assets {
       Id: 5628718117847872172
-      Name: "Part - Awning Bracket Mainstreet"
+      Name: "Main Street Awning Bracket"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13164,7 +13164,7 @@
     }
     Assets {
       Id: 99428546513861114
-      Name: "Floor Grate Fire Escape 2m x 2m"
+      Name: "Urban Floor Grate Fire Escape - 2m x 2m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13182,7 +13182,7 @@
     }
     Assets {
       Id: 1222394474421416084
-      Name: "Floor Grate Fire Escape 1m x 4m"
+      Name: "Urban Floor Grate Fire Escape - 1m x 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13191,7 +13191,7 @@
     }
     Assets {
       Id: 7444698281278331687
-      Name: "Military Tank Antenna 01"
+      Name: "Military Tank Historic Antenna 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13218,7 +13218,7 @@
     }
     Assets {
       Id: 2105469337981746227
-      Name: "Military Tank Historic Armorplate 01 Rear"
+      Name: "Military Tank Historic Armor Plate 01 - Rear"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13236,7 +13236,7 @@
     }
     Assets {
       Id: 286982728900310227
-      Name: "Military Tank Historic Tread 01 Mid"
+      Name: "Military Tank Historic Track 01 - Mid 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13245,7 +13245,7 @@
     }
     Assets {
       Id: 5201493243558163533
-      Name: "Military Tank Historic Tread 01 Front"
+      Name: "Military Tank Historic Track 01 - End"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13281,7 +13281,7 @@
     }
     Assets {
       Id: 4199776750539678640
-      Name: "Military Tank Historic MainGun 01"
+      Name: "Military Tank Historic Maingun 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13344,7 +13344,7 @@
     }
     Assets {
       Id: 18348342505020437805
-      Name: "Military Tank Historic Turret 01 Ring"
+      Name: "Military Tank Historic Turret Seal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13362,7 +13362,7 @@
     }
     Assets {
       Id: 14148694443006706995
-      Name: "Scifi Cockpit Control Terminal 01"
+      Name: "Sci-fi Cockpit Control Terminal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -13374,5 +13374,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

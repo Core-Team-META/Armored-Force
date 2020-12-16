@@ -491,7 +491,7 @@
     }
     Assets {
       Id: 37912767570433942
-      Name: "Urban Damaged Interior Trim Board 01 Top 02"
+      Name: "Urban Damaged Interior Trim Board 01 - Top 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -509,7 +509,7 @@
     }
     Assets {
       Id: 8215981026940294866
-      Name: "Urban Damaged Interior Trim Board 01 Top 01"
+      Name: "Urban Damaged Interior Trim Board 01 - Top 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -518,7 +518,7 @@
     }
     Assets {
       Id: 12289464758127468098
-      Name: "Urban Damaged Interior Trim Board 01 Mid 01"
+      Name: "Urban Damaged Interior Trim Board 01 - Mid 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -530,5 +530,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

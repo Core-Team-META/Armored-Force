@@ -235,18 +235,12 @@
         ChildIds: 8235644012862853084
         ChildIds: 183988004977349328
         ChildIds: 16007126514815450517
-        ChildIds: 12661702805586194002
         ChildIds: 13991825133543951641
-        ChildIds: 17593014254365750092
         ChildIds: 5502898210362191323
-        ChildIds: 8618142577530883406
         ChildIds: 10992342884844072465
         ChildIds: 11783519629876337514
-        ChildIds: 2286739581226341235
         ChildIds: 6665131284080740888
-        ChildIds: 17611791682873018165
         ChildIds: 10331801284765471517
-        ChildIds: 10568948960725399119
         ChildIds: 11241982334833805498
         ChildIds: 5143573389153257937
         ChildIds: 2723163284407877684
@@ -487,55 +481,6 @@
         }
       }
       Objects {
-        Id: 12661702805586194002
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -177.145508
-            Y: 149.999878
-            Z: 779.999939
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 617383588253889556
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 13991825133543951641
         Name: "Urban Plank Debris 04"
         Transform {
@@ -572,55 +517,6 @@
         CoreMesh {
           MeshAsset {
             Id: 17112985054030154012
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 17593014254365750092
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: 0.498046875
-            Y: -34.9998779
-            Z: 602.337463
-          }
-          Rotation {
-            Yaw: 90.0000076
-            Roll: 135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 617383588253889556
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -671,55 +567,6 @@
         CoreMesh {
           MeshAsset {
             Id: 526843540183677030
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8618142577530883406
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -112.145508
-            Y: -14.9997559
-            Z: 715.000061
-          }
-          Rotation {
-            Yaw: 90.0000076
-            Roll: 135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 617383588253889556
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17112985054030154012
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -831,55 +678,6 @@
         }
       }
       Objects {
-        Id: 2286739581226341235
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: 57.8554688
-            Y: 129.999023
-            Z: 544.999695
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 617383588253889556
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17112985054030154012
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 6665131284080740888
         Name: "Urban Plank Debris 04"
         Transform {
@@ -930,55 +728,6 @@
         }
       }
       Objects {
-        Id: 17611791682873018165
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -52.1445313
-            Y: 149.999146
-            Z: 654.999207
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 617383588253889556
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 10331801284765471517
         Name: "Urban Plank Debris 04"
         Transform {
@@ -1015,55 +764,6 @@
         CoreMesh {
           MeshAsset {
             Id: 17112985054030154012
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 10568948960725399119
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: 114.521484
-            Y: -35.0006104
-            Z: 488.313049
-          }
-          Rotation {
-            Yaw: 90.0000076
-            Roll: 135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 617383588253889556
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1688,8 +1388,6 @@
         }
         ParentId: 15563060428636870276
         ChildIds: 3026828447160004440
-        ChildIds: 14991036669449348380
-        ChildIds: 6785938622486874400
         ChildIds: 15011600986690718791
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1706,17 +1404,18 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -52.1455078
-            Z: 150
+            X: -49.0834961
+            Y: -15
+            Z: 152.079834
           }
           Rotation {
-            Pitch: -44.9998512
+            Pitch: -44.9998474
             Yaw: -179.999954
             Roll: -179.999954
           }
           Scale {
             X: 1
-            Y: 2.75
+            Y: 9.00000095
             Z: 1
           }
         }
@@ -1727,6 +1426,14 @@
             AssetReference {
               Id: 7360602162123997816
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 7.12096596
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.501867175
           }
         }
         Collidable_v2 {
@@ -1751,111 +1458,11 @@
         }
       }
       Objects {
-        Id: 14991036669449348380
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -62.1455078
-            Y: -80
-            Z: 140
-          }
-          Rotation {
-            Pitch: 44.9999084
-            Yaw: 2.30296446e-12
-            Roll: -179.999954
-          }
-          Scale {
-            X: 1
-            Y: 2.64606452
-            Z: 1.00000012
-          }
-        }
-        ParentId: 8028989852728898342
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 6785938622486874400
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -52.1455078
-            Y: 100
-            Z: 150
-          }
-          Rotation {
-            Pitch: 44.9999084
-            Yaw: 2.30296446e-12
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.770549417
-            Y: 2.5
-            Z: 1.00000012
-          }
-        }
-        ParentId: 8028989852728898342
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 15011600986690718791
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 162.854492
+            X: 162.94873
           }
           Rotation {
             Pitch: 44.9998665
@@ -2015,15 +1622,6 @@
       }
     }
     Assets {
-      Id: 4096954105294154559
-      Name: "Urban Plank Debris 03"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urban_destruction_debris_plank_03_ref"
-      }
-    }
-    Assets {
       Id: 17112985054030154012
       Name: "Urban Plank Debris 02"
       PlatformAssetType: 1
@@ -2039,6 +1637,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_urban_destruction_debris_plank_04_ref"
+      }
+    }
+    Assets {
+      Id: 4096954105294154559
+      Name: "Urban Plank Debris 03"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urban_destruction_debris_plank_03_ref"
       }
     }
     Assets {
@@ -2082,5 +1689,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

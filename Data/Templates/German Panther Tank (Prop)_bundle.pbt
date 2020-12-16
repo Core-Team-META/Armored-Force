@@ -40,5 +40,5 @@
     Version: "1.3.0"
     Description: "German Panther Tank (Prop)\r\n\r\nupdate: -reworked to be more hisortically accurate\r\n-adjusted pivot points for turret, gun, and hatch"
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

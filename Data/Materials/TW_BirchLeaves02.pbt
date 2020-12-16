@@ -2,7 +2,7 @@
   Id: 17506027588255005658
   Name: "TW_BirchLeaves02"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 8833003813986507643
     ParameterOverrides {

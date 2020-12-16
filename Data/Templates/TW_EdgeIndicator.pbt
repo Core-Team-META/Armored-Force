@@ -58,7 +58,7 @@
     }
     Assets {
       Id: 8757068560497122517
-      Name: "Plane 4m"
+      Name: "Plane 4m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -70,5 +70,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }
