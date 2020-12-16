@@ -2,7 +2,7 @@
   Id: 14482790960153430654
   Name: "Custom Base Material from Bush 02"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 2823170711329209408
     ParameterOverrides {

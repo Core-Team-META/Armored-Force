@@ -3621,7 +3621,7 @@
     }
     Assets {
       Id: 11242933075375658963
-      Name: "Military Tank Historic Hull 01 Front"
+      Name: "Military Tank Historic Hull 01 - Front"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3648,7 +3648,7 @@
     }
     Assets {
       Id: 13924487467599180715
-      Name: "Military Tank Historic Hull 01 Rear"
+      Name: "Military Tank Historic Hull 01 - Rear"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3657,7 +3657,7 @@
     }
     Assets {
       Id: 2513330173715104405
-      Name: "Military Tank Historic Hull 01 Mid"
+      Name: "Military Tank Historic Hull 01 - Mid"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3666,7 +3666,7 @@
     }
     Assets {
       Id: 2105469337981746227
-      Name: "Military Tank Historic Armorplate 01 Rear"
+      Name: "Military Tank Historic Armor Plate 01 - Rear"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3711,7 +3711,7 @@
     }
     Assets {
       Id: 11578428508587114889
-      Name: "Military Tank Historic Skirt 01 Front"
+      Name: "Military Tank Historic Armor Skirt 01 - Front"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3729,7 +3729,7 @@
     }
     Assets {
       Id: 286982728900310227
-      Name: "Military Tank Historic Tread 01 Mid"
+      Name: "Military Tank Historic Track 01 - Mid 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3738,7 +3738,7 @@
     }
     Assets {
       Id: 5201493243558163533
-      Name: "Military Tank Historic Tread 01 Front"
+      Name: "Military Tank Historic Track 01 - End"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3792,7 +3792,7 @@
     }
     Assets {
       Id: 18348342505020437805
-      Name: "Military Tank Historic Turret 01 Ring"
+      Name: "Military Tank Historic Turret Seal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3819,7 +3819,7 @@
     }
     Assets {
       Id: 4199776750539678640
-      Name: "Military Tank Historic MainGun 01"
+      Name: "Military Tank Historic Maingun 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3828,7 +3828,7 @@
     }
     Assets {
       Id: 14148694443006706995
-      Name: "Scifi Cockpit Control Terminal 01"
+      Name: "Sci-fi Cockpit Control Terminal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3840,5 +3840,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

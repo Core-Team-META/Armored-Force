@@ -2,7 +2,7 @@
   Id: 12609839071899914369
   Name: "TW_Bellflower"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 16386889725371670922
     ParameterOverrides {

@@ -4025,7 +4025,7 @@
     }
     Assets {
       Id: 5483772166785938526
-      Name: "Damaged Concrete Chunk 03"
+      Name: "Urban Damaged Concrete Chunk 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -4097,7 +4097,7 @@
     }
     Assets {
       Id: 5531833663473274763
-      Name: "Damaged Concrete Pillar Bottom 01"
+      Name: "Urban Damaged Concrete Pillar - Bottom 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -4163,5 +4163,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

@@ -6963,7 +6963,7 @@
     }
     Assets {
       Id: 7119371275391860163
-      Name: "Damaged Concrete Pillar 01"
+      Name: "Urban Damaged Concrete Pillar 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -7002,5 +7002,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

@@ -539,7 +539,7 @@
     }
     Assets {
       Id: 12209528205531445270
-      Name: "Damaged Concrete Pillar Top 01"
+      Name: "Urban Damaged Concrete Pillar - Top 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -548,7 +548,7 @@
     }
     Assets {
       Id: 15864537660089476386
-      Name: "Rebar Twisted Ends 01"
+      Name: "Urban Damaged Rebar - Twisted Ends 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -557,7 +557,7 @@
     }
     Assets {
       Id: 16607591849780623518
-      Name: "Decal Debris 01"
+      Name: "Decal Street Litter 01"
       PlatformAssetType: 14
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
@@ -569,5 +569,5 @@
       AssetId: "Rubble_Pile_Concrete_-_Small_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

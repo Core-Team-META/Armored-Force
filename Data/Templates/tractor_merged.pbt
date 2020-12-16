@@ -4984,7 +4984,7 @@
     }
     Assets {
       Id: 9605197959426201295
-      Name: "Military Worn Tire 02"
+      Name: "Tire Worn - Small"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5020,7 +5020,7 @@
     }
     Assets {
       Id: 5183250353812937636
-      Name: "Scifi Cockpit Sideguard 01"
+      Name: "Sci-fi Cockpit Sideguard 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5038,7 +5038,7 @@
     }
     Assets {
       Id: 2806010938932900251
-      Name: "Scifi Cockpit Control Throttle 01"
+      Name: "Sci-fi Cockpit Control Throttle 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5047,7 +5047,7 @@
     }
     Assets {
       Id: 17189330346149627205
-      Name: "Scifi Ship Blaster 03"
+      Name: "Sci-fi Ship Blaster 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5056,7 +5056,7 @@
     }
     Assets {
       Id: 11024977997119225113
-      Name: "Scifi Cockpit Siderail 01"
+      Name: "Sci-fi Cockpit Siderail 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5074,7 +5074,7 @@
     }
     Assets {
       Id: 14148694443006706995
-      Name: "Scifi Cockpit Control Terminal 01"
+      Name: "Sci-fi Cockpit Control Terminal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5173,7 +5173,7 @@
     }
     Assets {
       Id: 13295705863038029439
-      Name: "Military Tank Historic Hatch 01 Lid"
+      Name: "Military Tank Historic Hatch Lid 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5254,7 +5254,7 @@
     }
     Assets {
       Id: 99428546513861114
-      Name: "Floor Grate Fire Escape 2m x 2m"
+      Name: "Urban Floor Grate Fire Escape - 2m x 2m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5290,7 +5290,7 @@
     }
     Assets {
       Id: 10873936651371038590
-      Name: "Scifi Ship Engine 02"
+      Name: "Sci-fi Ship Engine 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5299,7 +5299,7 @@
     }
     Assets {
       Id: 16965777294932964901
-      Name: "Cube - Polished"
+      Name: "Cube - Chamfered Large Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5335,7 +5335,7 @@
     }
     Assets {
       Id: 8606699818147202890
-      Name: "Military Worn Tire Large 01"
+      Name: "Tire Worn - Large"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5356,5 +5356,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

@@ -920,7 +920,7 @@
     }
     Assets {
       Id: 4728953692936333655
-      Name: "Decal Debris 02"
+      Name: "Decal Street Litter 02"
       PlatformAssetType: 14
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
@@ -1067,5 +1067,5 @@
       AssetId: "Rubble_Pile_Brick_-_Small_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

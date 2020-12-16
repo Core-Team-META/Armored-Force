@@ -14789,7 +14789,7 @@
     }
     Assets {
       Id: 7444698281278331687
-      Name: "Military Tank Antenna 01"
+      Name: "Military Tank Historic Antenna 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14816,7 +14816,7 @@
     }
     Assets {
       Id: 13295705863038029439
-      Name: "Military Tank Historic Hatch 01 Lid"
+      Name: "Military Tank Historic Hatch Lid 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14825,7 +14825,7 @@
     }
     Assets {
       Id: 99428546513861114
-      Name: "Floor Grate Fire Escape 2m x 2m"
+      Name: "Urban Floor Grate Fire Escape - 2m x 2m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14852,7 +14852,7 @@
     }
     Assets {
       Id: 1222394474421416084
-      Name: "Floor Grate Fire Escape 1m x 4m"
+      Name: "Urban Floor Grate Fire Escape - 1m x 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14969,7 +14969,7 @@
     }
     Assets {
       Id: 286982728900310227
-      Name: "Military Tank Historic Tread 01 Mid"
+      Name: "Military Tank Historic Track 01 - Mid 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -14978,7 +14978,7 @@
     }
     Assets {
       Id: 5201493243558163533
-      Name: "Military Tank Historic Tread 01 Front"
+      Name: "Military Tank Historic Track 01 - End"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -15077,7 +15077,7 @@
     }
     Assets {
       Id: 9180483725168295866
-      Name: "Decal Logo 02"
+      Name: "Decal Military Symbols 02"
       PlatformAssetType: 14
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
@@ -15161,5 +15161,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }
