@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 7139453573003068263
         ChildIds: 14023087714175753881
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -264,8 +264,6 @@
         ChildIds: 6155037696899439124
         ChildIds: 9516117455208693642
         ChildIds: 8800591093435907672
-        ChildIds: 4995263951296525392
-        ChildIds: 11111810161201018765
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -1233,13 +1231,13 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -240
-            Y: -51.4443359
+            X: -242.071274
+            Y: -52.1641617
             Z: 30
           }
           Rotation {
             Pitch: 90
-            Roll: 90.0000076
+            Roll: 90.0000229
           }
           Scale {
             X: 0.893732786
@@ -2599,19 +2597,19 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -325
-            Y: 230.711182
-            Z: 749.99939
+            X: -315.486267
+            Y: 154.574936
+            Z: 752.563293
           }
           Rotation {
-            Pitch: -44.9999428
-            Yaw: -179.999969
-            Roll: -179.999969
+            Pitch: -44.9837341
+            Yaw: -178.076675
+            Roll: 178.640289
           }
           Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
+            X: 0.913861811
+            Y: 15.2500095
+            Z: 1.00000238
           }
         }
         ParentId: 1633322965935289681
@@ -2622,104 +2620,13 @@
               Id: 7360602162123997816
             }
           }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 526843540183677030
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 4995263951296525392
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -328.261719
-            Y: 397.730713
-            Z: 746.737793
-          }
-          Rotation {
-            Pitch: 44.999958
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.863557518
-            Y: 2.12000537
-            Z: 1
-          }
-        }
-        ParentId: 1633322965935289681
-        UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.16179645
           }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11111810161201018765
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -325
-            Y: 75.5632324
-            Z: 749.99939
-          }
-          Rotation {
-            Pitch: -44.9999199
-            Yaw: -179.999954
-            Roll: -179.999954
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 1633322965935289681
-        UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 10.6541538
           }
         }
         Collidable_v2 {

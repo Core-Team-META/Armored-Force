@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6674876388081502680
+  Name: "Rocky Ground 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "rocky_001"
+  }
+}
+Assets {
   Id: 1311293888012083597
   Name: "Text 01: H"
   PlatformAssetType: 1
