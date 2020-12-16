@@ -35,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16587759780299340145
-  Name: "Cube - Rounded Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_rounded_001"
-  }
-}
-Assets {
   Id: 16374150260036817633
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -71,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15585852823533740787
-  Name: "Arch"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arch_001"
-  }
-}
-Assets {
   Id: 14964967653464214432
   Name: "Decal Dirt Patch"
   PlatformAssetType: 14
@@ -98,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14384953621685186280
-  Name: "Whitebox Roof 01 Peak"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_roof_001_peak"
-  }
-}
-Assets {
   Id: 14358596664128095200
   Name: "Bench Full"
   PlatformAssetType: 1
@@ -116,12 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14345153403763633307
-  Name: "Urban Damaged Concrete Chunk 02"
-  PlatformAssetType: 1
+  Id: 14270198567810839435
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dest_concrete_chunk_002_ref"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
   }
 }
 Assets {
@@ -131,15 +104,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_005"
-  }
-}
-Assets {
-  Id: 13100330238861707551
-  Name: "Decal Tread Tracks 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_mil_decal_tracks_001_ref"
   }
 }
 Assets {
@@ -206,24 +170,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10905138335060518079
-  Name: "Rock Block 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_006"
-  }
-}
-Assets {
-  Id: 10850769815684373087
-  Name: "Plane 1m - Two Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_002"
-  }
-}
-Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -278,15 +224,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7119371275391860163
-  Name: "Urban Damaged Concrete Pillar 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dest_concrete_pillar_middle_001_ref"
-  }
-}
-Assets {
   Id: 6947005568715944180
   Name: "Wood Planks"
   PlatformAssetType: 2
@@ -332,30 +269,21 @@ Assets {
   }
 }
 Assets {
-  Id: 5531833663473274763
-  Name: "Urban Damaged Concrete Pillar - Bottom 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dest_concrete_pillar_bottom_002_ref"
-  }
-}
-Assets {
-  Id: 5483772166785938526
-  Name: "Urban Damaged Concrete Chunk 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dest_concrete_chunk_003_ref"
-  }
-}
-Assets {
   Id: 5445362466723085375
   Name: "Bush 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
+  Id: 5328551844932781627
+  Name: "Bricks Rough Stone Floor 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_002"
   }
 }
 Assets {
@@ -383,15 +311,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urban_destruction_debris_plank_03_ref"
-  }
-}
-Assets {
-  Id: 3998592366905403415
-  Name: "Glass 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_glass_refrac_001"
   }
 }
 Assets {
@@ -431,15 +350,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1012648459633409157
-  Name: "Urban Damaged Concrete Chunk 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dest_concrete_chunk_001_ref"
-  }
-}
-Assets {
   Id: 737325672047651557
   Name: "Rock 01"
   PlatformAssetType: 1
@@ -464,5 +374,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
+  }
+}
+Assets {
+  Id: 136256093384731196
+  Name: "Bricks Cobblestone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }
