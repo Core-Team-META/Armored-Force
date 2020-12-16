@@ -8,24 +8,6 @@
   }
 }
 Assets {
-  Id: 18052318672521571529
-  Name: "Large Wood Board 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_board_6m"
-  }
-}
-Assets {
-  Id: 17112985054030154012
-  Name: "Urban Plank Debris 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urban_destruction_debris_plank_02_ref"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -41,15 +23,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 15812398897488532618
-  Name: "Large Wood Beam 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_beam_6m"
   }
 }
 Assets {
@@ -89,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14270198567810839435
-  Name: "Bricks Rough Stone Floor 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_floor_rough_001"
-  }
-}
-Assets {
   Id: 13230547612715629822
   Name: "Tree Redwood Small"
   PlatformAssetType: 1
@@ -116,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12250067734840047801
-  Name: "Wedge - Corner-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_wedge_002"
-  }
-}
-Assets {
   Id: 12145181589079789543
   Name: "Decal Stains Top 01"
   PlatformAssetType: 14
@@ -134,12 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
+  Id: 11643471919634197847
+  Name: "Depth of Field Post Process"
+  PlatformAssetType: 20
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_DOF"
   }
 }
 Assets {
@@ -233,24 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6850673296695379879
-  Name: "Wood 2x4 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_two-by-four_3m"
-  }
-}
-Assets {
-  Id: 6674876388081502680
-  Name: "Rocky Ground 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "rocky_001"
-  }
-}
-Assets {
   Id: 6097322293129727319
   Name: "Tree Oak 01"
   PlatformAssetType: 1
@@ -278,15 +215,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5328551844932781627
-  Name: "Bricks Rough Stone Floor 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_floor_rough_002"
-  }
-}
-Assets {
   Id: 5319512311515341951
   Name: "Motion Blur Post Process"
   PlatformAssetType: 20
@@ -302,15 +230,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_002"
-  }
-}
-Assets {
-  Id: 4096954105294154559
-  Name: "Urban Plank Debris 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urban_destruction_debris_plank_03_ref"
   }
 }
 Assets {
@@ -356,32 +275,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
-  }
-}
-Assets {
-  Id: 526843540183677030
-  Name: "Urban Plank Debris 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urban_destruction_debris_plank_04_ref"
-  }
-}
-Assets {
-  Id: 380106840186150370
-  Name: "Rock Block 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_007"
-  }
-}
-Assets {
-  Id: 136256093384731196
-  Name: "Bricks Cobblestone Floor 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }
