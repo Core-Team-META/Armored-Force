@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 6798404182982961803
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44,6 +44,7 @@
         ParentId: 9207146627308462243
         ChildIds: 1475242666077670921
         ChildIds: 6152720106281832704
+        ChildIds: 13218924075978672668
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -138,6 +139,12 @@
             Name: "cs:Geo"
             ObjectReference {
               SubObjectId: 6152720106281832704
+            }
+          }
+          Overrides {
+            Name: "cs:RemoveGroup"
+            ObjectReference {
+              SubObjectId: 13218924075978672668
             }
           }
         }
@@ -482,6 +489,31 @@
             Physics {
             }
           }
+        }
+      }
+      Objects {
+        Id: 13218924075978672668
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6798404182982961803
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
         }
       }
     }

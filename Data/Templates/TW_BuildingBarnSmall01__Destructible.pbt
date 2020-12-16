@@ -112,7 +112,7 @@
           Overrides {
             Name: "cs:DestructionFX01"
             AssetReference {
-              Id: 8823241362130014848
+              Id: 9734563338717701534
             }
           }
           Overrides {
@@ -946,9 +946,9 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -230.721924
-            Y: 154.895142
-            Z: 735.721802
+            X: -253.565918
+            Y: 162.485901
+            Z: 758.565857
           }
           Rotation {
             Yaw: -90
@@ -1243,9 +1243,9 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: 52.4086914
-            Y: 175.213745
-            Z: 452.591553
+            X: 55.9414063
+            Y: 182.208252
+            Z: 449.059143
           }
           Rotation {
             Yaw: -90
@@ -1418,8 +1418,8 @@
         Transform {
           Location {
             X: -192.615723
-            Y: 389.999756
-            Z: 697.107788
+            Y: 404.790649
+            Z: 697.107727
           }
           Rotation {
             Yaw: -90
@@ -1467,11 +1467,11 @@
         Transform {
           Location {
             X: -82.6157227
-            Y: 434.999756
-            Z: 587.107788
+            Y: 455.752533
+            Z: 587.107727
           }
           Rotation {
-            Pitch: -2.73207552e-05
+            Pitch: -3.05175781e-05
             Yaw: 89.9999466
             Roll: 134.999985
           }
@@ -1517,11 +1517,11 @@
         Transform {
           Location {
             X: 47.0542
-            Y: 409.999756
-            Z: 457.437744
+            Y: 428.854889
+            Z: 457.437805
           }
           Rotation {
-            Yaw: -90.0000076
+            Yaw: -90
             Roll: -135
           }
           Scale {
@@ -1910,7 +1910,7 @@
         Transform {
           Location {
             X: -3.25683594
-            Y: -201.669678
+            Y: -191.015869
             Z: 133.045654
           }
           Rotation {
@@ -1919,8 +1919,8 @@
           }
           Scale {
             X: 4.98735142
-            Y: 5.26407242
-            Z: 0.100000329
+            Y: 5.57654667
+            Z: 0.100000173
           }
         }
         ParentId: 17172347309291348408
