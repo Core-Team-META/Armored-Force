@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 16469021483182990014
-  Name: "TW_FX_Default"
+  Name: "TW_FX_Empty"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

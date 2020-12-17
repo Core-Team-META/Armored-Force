@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 16053895811275915311
-  Name: "TW_FX_Destroy_WoodSmall"
+  Id: 5699939936526631723
+  Name: "TW_FX_Destroy_WoodMedium"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 16552807409293342440
+      RootId: 1194296193948601795
       Objects {
-        Id: 16552807409293342440
-        Name: "TW_FX_Destroy_WoodSmall"
+        Id: 1194296193948601795
+        Name: "TW_FX_Destroy_Woodmedium"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 12706679138312205064
+        ChildIds: 14097745765060173628
         Lifespan: 3
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29,7 +29,7 @@
         }
       }
       Objects {
-        Id: 12706679138312205064
+        Id: 14097745765060173628
         Name: "ClientContext"
         Transform {
           Location {
@@ -42,11 +42,12 @@
             Z: 1
           }
         }
-        ParentId: 16552807409293342440
-        ChildIds: 1931861044756111411
-        ChildIds: 6126017066899706790
-        ChildIds: 6751051348620328607
-        ChildIds: 16555186748733780488
+        ParentId: 1194296193948601795
+        ChildIds: 18377613550006955967
+        ChildIds: 14852387658485934941
+        ChildIds: 8969665755119641067
+        ChildIds: 2385558230870919004
+        ChildIds: 2969811902827985169
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -57,11 +58,10 @@
         }
       }
       Objects {
-        Id: 1931861044756111411
-        Name: "Small Wooden Structure Break Destroy Impact 01 SFX"
+        Id: 18377613550006955967
+        Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
         Transform {
           Location {
-            Z: 48.333252
           }
           Rotation {
           }
@@ -71,7 +71,7 @@
             Z: 1
           }
         }
-        ParentId: 12706679138312205064
+        ParentId: 14097745765060173628
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -80,18 +80,18 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 14531915349529574277
+            Id: 9746315760228600376
           }
           AutoPlay: true
           Volume: 1
-          Falloff: -1
+          Falloff: 15000
           Radius: -1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 6126017066899706790
+        Id: 14852387658485934941
         Name: "Smoke Puff Radial VFX"
         Transform {
           Location {
@@ -104,11 +104,11 @@
             Z: 1
           }
         }
-        ParentId: 12706679138312205064
+        ParentId: 14097745765060173628
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 1.61714685
+            Float: 2.70526314
           }
         }
         Collidable_v2 {
@@ -129,7 +129,7 @@
         }
       }
       Objects {
-        Id: 6751051348620328607
+        Id: 8969665755119641067
         Name: "Dust Puff VFX"
         Transform {
           Location {
@@ -142,11 +142,19 @@
             Z: 1
           }
         }
-        ParentId: 12706679138312205064
+        ParentId: 14097745765060173628
         UnregisteredParameters {
           Overrides {
             Name: "bp:density"
             Float: 2.25032854
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 2.80947351
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.1
           }
         }
         Collidable_v2 {
@@ -167,7 +175,7 @@
         }
       }
       Objects {
-        Id: 16555186748733780488
+        Id: 2385558230870919004
         Name: "Wood Impact VFX"
         Transform {
           Location {
@@ -180,7 +188,7 @@
             Z: 4.4
           }
         }
-        ParentId: 12706679138312205064
+        ParentId: 14097745765060173628
         UnregisteredParameters {
           Overrides {
             Name: "bp:Gravity"
@@ -193,6 +201,75 @@
           Overrides {
             Name: "bp:Dust Gravity"
             Float: 2.24476433
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.275
+              G: 0.131326243
+              B: 0.0745249912
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Enable Impact Lines"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 6319034289725371666
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 2969811902827985169
+        Name: "Wood Impact VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -90
+          }
+          Scale {
+            X: 4.4
+            Y: 4.4
+            Z: 4.4
+          }
+        }
+        ParentId: 14097745765060173628
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Gravity"
+            Float: -10
+          }
+          Overrides {
+            Name: "bp:Impact Line Emissive Boost"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Dust Gravity"
+            Float: 2.24476433
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.275
+              G: 0.131326243
+              B: 0.0745249912
+              A: 1
+            }
           }
           Overrides {
             Name: "bp:Enable Impact Lines"
@@ -218,12 +295,12 @@
       }
     }
     Assets {
-      Id: 14531915349529574277
-      Name: "Small Wooden Structure Break Destroy Impact 01 SFX"
+      Id: 9746315760228600376
+      Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_small_wooden_structure_break_impact_01a_Cue_ref"
+        AssetId: "sfx_large_wooden_structure_break_impact_01a_Cue_ref"
       }
     }
     Assets {
