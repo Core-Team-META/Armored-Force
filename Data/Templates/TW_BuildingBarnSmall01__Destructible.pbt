@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 13905165510389176996
+        ParentId: 4781671109827199097
         ChildIds: 16716946413670372285
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -260,6 +260,7 @@
         ChildIds: 14782927327915376995
         ChildIds: 7353748080171579301
         ChildIds: 14296828408665505225
+        ChildIds: 10177130804159917235
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -423,16 +424,16 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -242.071274
-            Y: -52.1641617
-            Z: 30
+            X: -242.072266
+            Y: -52.1640625
+            Z: 112.3862
           }
           Rotation {
             Pitch: 90
             Roll: 90.0000229
           }
           Scale {
-            X: 0.893732786
+            X: 0.755605459
             Y: 1
             Z: 1.2163285
           }
@@ -573,17 +574,17 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -21.7529297
-            Y: 0.0498046875
-            Z: 30
+            X: -21.7539063
+            Y: 0.048828125
+            Z: 112.3862
           }
           Rotation {
             Pitch: 90
             Roll: -90
           }
           Scale {
-            X: 0.538797677
-            Y: 0.908413649
+            X: 0.439062536
+            Y: 0.908413708
             Z: 1
           }
         }
@@ -719,16 +720,16 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -32.0073242
+            X: -32.0080566
             Y: 436.011719
-            Z: 30
+            Z: 112.3862
           }
           Rotation {
             Pitch: 90
             Roll: -90
           }
           Scale {
-            X: 0.556655228
+            X: 0.453614444
             Y: 1
             Z: 1
           }
@@ -1773,16 +1774,16 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -240
+            X: -240.000122
             Y: 380
-            Z: 27.5632935
+            Z: 109.949493
           }
           Rotation {
             Pitch: 90
             Roll: 90.0000229
           }
           Scale {
-            X: 0.893732786
+            X: 0.755605459
             Y: 1
             Z: 1.2163285
           }
@@ -1844,135 +1845,13 @@
         }
       }
       Objects {
-        Id: 1651068693443728010
-        Name: "RemoveGroup"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16716946413670372285
-        ChildIds: 17172347309291348408
-        ChildIds: 6664869359200395669
-        ChildIds: 7392431621429570537
-        ChildIds: 5993278921881717408
-        ChildIds: 10177130804159917235
-        ChildIds: 12443769914534908448
-        ChildIds: 3156437992190021901
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 17172347309291348408
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -106.743164
-            Y: 376.669678
-            Z: 466.954346
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1651068693443728010
-        ChildIds: 9547067007736350766
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 9547067007736350766
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -3.25683594
-            Y: -191.015869
-            Z: 133.045654
-          }
-          Rotation {
-            Pitch: 44.9998932
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 4.98735142
-            Y: 5.57654667
-            Z: 0.100000173
-          }
-        }
-        ParentId: 17172347309291348408
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1.37416279
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.803030252
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 6664869359200395669
+        Id: 10177130804159917235
         Name: "Large Wood Board 8m"
         Transform {
           Location {
-            X: -24.9528809
-            Y: 386.923828
-            Z: 51.057312
+            X: -25
+            Y: 385
+            Z: 297.563293
           }
           Rotation {
             Yaw: -89.9999695
@@ -1984,7 +1863,7 @@
             Z: 2.19999981
           }
         }
-        ParentId: 1651068693443728010
+        ParentId: 5042505248491168814
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2028,6 +1907,97 @@
         CoreMesh {
           MeshAsset {
             Id: 18052318672521571529
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1651068693443728010
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16716946413670372285
+        ChildIds: 9547067007736350766
+        ChildIds: 7392431621429570537
+        ChildIds: 5993278921881717408
+        ChildIds: 12443769914534908448
+        ChildIds: 3156437992190021901
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9547067007736350766
+        Name: "Roof"
+        Transform {
+          Location {
+            X: -110
+            Y: 185.652344
+            Z: 600
+          }
+          Rotation {
+            Pitch: 44.9998779
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 4.98735142
+            Y: 5.57654667
+            Z: 0.100000173
+          }
+        }
+        ParentId: 1651068693443728010
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7360602162123997816
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.37416279
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.803030252
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2184,81 +2154,6 @@
         CoreMesh {
           MeshAsset {
             Id: 12250067734840047801
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 10177130804159917235
-        Name: "Large Wood Board 8m"
-        Transform {
-          Location {
-            X: -25
-            Y: 385
-            Z: 297.563293
-          }
-          Rotation {
-            Yaw: -89.9999695
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.482993156
-            Y: 1.00000012
-            Z: 2.19999981
-          }
-        }
-        ParentId: 1651068693443728010
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.702110052
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.256422341
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18052318672521571529
           }
           Teams {
             IsTeamCollisionEnabled: true

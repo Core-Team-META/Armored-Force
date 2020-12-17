@@ -7,7 +7,7 @@
       RootId: 16018297385410626572
       Objects {
         Id: 16018297385410626572
-        Name: "TW_Building01_Corner01_Destructible"
+        Name: "TW_Building01_Corner_Destructible"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 7139453573003068263
+        ParentId: 4781671109827199097
         ChildIds: 14023087714175753881
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1250,9 +1250,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -2169,9 +2169,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -2666,12 +2666,12 @@
         }
         ParentId: 14023087714175753881
         ChildIds: 7064086997916242399
-        ChildIds: 3672624562712167166
         ChildIds: 18012063385669827439
         ChildIds: 11853335479145854372
         ChildIds: 2353649520986144735
         ChildIds: 14530787432343089142
         ChildIds: 13115445735234526973
+        ChildIds: 14007030008375876126
         ChildIds: 11398963335468789542
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2719,96 +2719,6 @@
         CoreMesh {
           MeshAsset {
             Id: 10850769815684373087
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3672624562712167166
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -106.743164
-            Y: 376.669678
-            Z: 466.954346
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14341304711018561693
-        ChildIds: 14007030008375876126
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14007030008375876126
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -3.25683594
-            Y: -201.669678
-            Z: 133.045654
-          }
-          Rotation {
-            Pitch: 44.9998932
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 4.98735142
-            Y: 5.26407242
-            Z: 0.100000329
-          }
-        }
-        ParentId: 3672624562712167166
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1.37416279
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.803030252
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3196,6 +3106,67 @@
         CoreMesh {
           MeshAsset {
             Id: 12250067734840047801
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14007030008375876126
+        Name: "Roof"
+        Transform {
+          Location {
+            X: -110
+            Y: 175
+            Z: 600
+          }
+          Rotation {
+            Pitch: 44.9998779
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 4.98735142
+            Y: 5.26407242
+            Z: 0.100000329
+          }
+        }
+        ParentId: 14341304711018561693
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7360602162123997816
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.37416279
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.803030252
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true

@@ -7,7 +7,7 @@
       RootId: 5458568079657108484
       Objects {
         Id: 5458568079657108484
-        Name: "TW_Building01_MidDoor01_Destructible"
+        Name: "TW_Building01_MidShortDoor_Destructible"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 7203033785247146309
+        ParentId: 4781671109827199097
         ChildIds: 9609291241138574463
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -857,8 +857,8 @@
         Transform {
           Location {
             X: 92.2480469
-            Y: -19.6983643
-            Z: 200
+            Y: -19.6992188
+            Z: 200.000015
           }
           Rotation {
             Yaw: 89.9999542
@@ -1123,7 +1123,7 @@
         Transform {
           Location {
             X: 57.8544922
-            Y: -77.3623047
+            Y: -77.3632813
             Z: 445.000061
           }
           Rotation {
@@ -1131,9 +1131,9 @@
             Yaw: -179.999985
           }
           Scale {
-            X: 0.46688953
+            X: 0.497922957
             Y: 0.724687338
-            Z: 1.15570736
+            Z: 1.15570819
           }
         }
         ParentId: 617383588253889556
@@ -1357,38 +1357,9 @@
           }
         }
         ParentId: 9609291241138574463
-        ChildIds: 8028989852728898342
-        ChildIds: 15422333780448227962
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 8028989852728898342
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -200
-            Y: 60
-            Z: 625
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15563060428636870276
         ChildIds: 3026828447160004440
         ChildIds: 15011600986690718791
+        ChildIds: 15422333780448227962
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1404,12 +1375,12 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -49.0834961
-            Y: -15
-            Z: 152.079834
+            X: -249.083496
+            Y: 45
+            Z: 777.079834
           }
           Rotation {
-            Pitch: -44.9998474
+            Pitch: -44.9998245
             Yaw: -179.999954
             Roll: -179.999954
           }
@@ -1419,7 +1390,7 @@
             Z: 1
           }
         }
-        ParentId: 8028989852728898342
+        ParentId: 15563060428636870276
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1459,13 +1430,15 @@
       }
       Objects {
         Id: 15011600986690718791
-        Name: "Cube - Bottom-Aligned"
+        Name: "Roof"
         Transform {
           Location {
-            X: 162.94873
+            X: -37.0512695
+            Y: 60
+            Z: 625
           }
           Rotation {
-            Pitch: 44.9998665
+            Pitch: 44.9998512
             Yaw: -179.999954
           }
           Scale {
@@ -1474,7 +1447,7 @@
             Z: 0.100001588
           }
         }
-        ParentId: 8028989852728898342
+        ParentId: 15563060428636870276
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 10409031286937574205
+        ParentId: 4781671109827199097
         ChildIds: 3652636881351672878
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1159,35 +1159,6 @@
           }
         }
         ParentId: 3652636881351672878
-        ChildIds: 2151870617669316668
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 2151870617669316668
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -200
-            Y: 60
-            Z: 625
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9667146562876172906
         ChildIds: 8699991135100416082
         ChildIds: 16389065722221159854
         Collidable_v2 {
@@ -1205,12 +1176,12 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -49.0834961
-            Y: -15
-            Z: 152.079834
+            X: -249.083496
+            Y: 45
+            Z: 777.079834
           }
           Rotation {
-            Pitch: -44.9998474
+            Pitch: -44.9998245
             Yaw: -179.999954
             Roll: -179.999954
           }
@@ -1220,7 +1191,7 @@
             Z: 1
           }
         }
-        ParentId: 2151870617669316668
+        ParentId: 9667146562876172906
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1260,13 +1231,15 @@
       }
       Objects {
         Id: 16389065722221159854
-        Name: "Cube - Bottom-Aligned"
+        Name: "Roof"
         Transform {
           Location {
-            X: 162.94873
+            X: -37.0512695
+            Y: 60
+            Z: 625
           }
           Rotation {
-            Pitch: 44.9998665
+            Pitch: 44.9998512
             Yaw: -179.999954
           }
           Scale {
@@ -1275,7 +1248,7 @@
             Z: 0.100001588
           }
         }
-        ParentId: 2151870617669316668
+        ParentId: 9667146562876172906
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
