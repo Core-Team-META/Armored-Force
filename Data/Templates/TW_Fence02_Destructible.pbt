@@ -273,6 +273,15 @@
               Id: 14458375427107961947
             }
           }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -348,6 +357,15 @@
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -412,6 +430,15 @@
               R: 0.901
               G: 0.669533134
               B: 0.239666089
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -482,6 +509,15 @@
             Name: "ma:Building_LowerTrimInner:id"
             AssetReference {
               Id: 14458375427107961947
+            }
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
             }
           }
         }

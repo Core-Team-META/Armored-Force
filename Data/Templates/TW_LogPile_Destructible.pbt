@@ -15,8 +15,9 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 14685137530266172510
+        ChildIds: 7314357451449572549
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -134,6 +135,12 @@
             Name: "cs:Geo"
             ObjectReference {
               SubObjectId: 2763672934151491479
+            }
+          }
+          Overrides {
+            Name: "cs:RemoveGroup"
+            ObjectReference {
+              SubObjectId: 7314357451449572549
             }
           }
         }
@@ -1060,6 +1067,31 @@
           }
           DecalBP {
           }
+        }
+      }
+      Objects {
+        Id: 7314357451449572549
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14095616626805498714
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
         }
       }
     }

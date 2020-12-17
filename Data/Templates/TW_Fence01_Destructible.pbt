@@ -1,13 +1,13 @@
 ﻿Assets {
   Id: 17409694280159360344
-  Name: "TW_Fence_Destructible"
+  Name: "TW_Fence01_Destructible"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 16811979318531334773
       Objects {
         Id: 16811979318531334773
-        Name: "TW_Fence_Destructible"
+        Name: "TW_Fence01_Destructible"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 14382887385855379576
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44,6 +44,7 @@
         ParentId: 16811979318531334773
         ChildIds: 9848946185550671888
         ChildIds: 8926210379358892475
+        ChildIds: 12575126681411516560
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -134,6 +135,12 @@
             Name: "cs:Geo"
             ObjectReference {
               SubObjectId: 8926210379358892475
+            }
+          }
+          Overrides {
+            Name: "cs:RemoveGroup"
+            ObjectReference {
+              SubObjectId: 12575126681411516560
             }
           }
         }
@@ -237,9 +244,9 @@
         Name: "Urban Damaged Interior Trim Board 01 Top 02"
         Transform {
           Location {
-            X: 269.106445
-            Y: -2.78125
-            Z: -16.1124268
+            X: 269.135
+            Y: 1.62109375
+            Z: -16.1128845
           }
           Rotation {
             Pitch: 86.694458
@@ -247,9 +254,9 @@
             Roll: 0.103234239
           }
           Scale {
-            X: 0.699999392
-            Y: 1.70000017
-            Z: 0.832541704
+            X: 0.699999273
+            Y: 1.20241189
+            Z: 0.83254
           }
         }
         ParentId: 8926210379358892475
@@ -257,21 +264,25 @@
           Overrides {
             Name: "ma:Building_LowerTrimInner:id"
             AssetReference {
-              Id: 11057307086666071473
+              Id: 14458375427107961947
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:color"
             Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 0.543579102
+            Float: 3.63836217
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.383650392
           }
         }
         Collidable_v2 {
@@ -300,9 +311,9 @@
         Name: "Urban Damaged Interior Trim Board 01 Top 02"
         Transform {
           Location {
-            X: -55.4511719
-            Y: -30.6904297
-            Z: -11.3139648
+            X: -55.3857422
+            Y: -20.5546875
+            Z: -11.3150482
           }
           Rotation {
             Pitch: 86.7828217
@@ -310,9 +321,9 @@
             Roll: -0.111236572
           }
           Scale {
-            X: 0.359397024
-            Y: 1.70000041
-            Z: 0.899863124
+            X: 0.359396964
+            Y: 1.20241213
+            Z: 0.899861455
           }
         }
         ParentId: 8926210379358892475
@@ -320,21 +331,25 @@
           Overrides {
             Name: "ma:Building_LowerTrimInner:id"
             AssetReference {
-              Id: 11057307086666071473
+              Id: 14458375427107961947
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:color"
             Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 0.543579102
+            Float: 3.63836217
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.383650392
           }
         }
         Collidable_v2 {
@@ -363,9 +378,9 @@
         Name: "Urban Damaged Interior Trim Board 01 Mid 01"
         Transform {
           Location {
-            X: -104.029297
-            Y: -6.96289063
-            Z: 57.484375
+            X: -104.268799
+            Y: -0.21875
+            Z: 57.4835052
           }
           Rotation {
             Pitch: 0.0358106792
@@ -383,25 +398,25 @@
           Overrides {
             Name: "ma:Building_LowerTrimInner:id"
             AssetReference {
-              Id: 11057307086666071473
+              Id: 14458375427107961947
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:color"
             Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:utile"
-            Float: 1.16695154
+            Float: 0.982249379
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 1.97314227
+            Float: 4.02393484
           }
         }
         Collidable_v2 {
@@ -430,14 +445,14 @@
         Name: "Urban Damaged Interior Trim Board 01 Top 02"
         Transform {
           Location {
-            X: 327.333984
-            Y: 5.25390625
-            Z: 103.923462
+            X: 326.216064
+            Y: 11.2109375
+            Z: 102.192352
           }
           Rotation {
-            Pitch: 0.94003886
-            Yaw: -179.937759
-            Roll: 174.414017
+            Pitch: 0.926159918
+            Yaw: -179.827545
+            Roll: -178.825165
           }
           Scale {
             X: 1.63186586
@@ -450,21 +465,25 @@
           Overrides {
             Name: "ma:Building_LowerTrimInner:id"
             AssetReference {
-              Id: 11057307086666071473
+              Id: 14458375427107961947
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:color"
             Color {
-              R: 0.47300002
-              G: 0.194086656
-              B: 0.0756800175
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "ma:Building_LowerTrimInner:vtile"
-            Float: 0.570163667
+            Float: 4.02393484
+          }
+          Overrides {
+            Name: "ma:Building_LowerTrimInner:utile"
+            Float: 0.982249379
           }
         }
         Collidable_v2 {
@@ -488,6 +507,31 @@
           }
         }
       }
+      Objects {
+        Id: 12575126681411516560
+        Name: "RemoveGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14382887385855379576
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
     }
     Assets {
       Id: 37912767570433942
@@ -496,15 +540,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_tx_urb_dmg_int_trim_board_001_top_02_ref"
-      }
-    }
-    Assets {
-      Id: 11057307086666071473
-      Name: "Wood Siding White"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_siding_white_001_uv"
       }
     }
     Assets {
