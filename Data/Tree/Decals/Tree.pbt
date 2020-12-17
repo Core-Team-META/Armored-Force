@@ -1,6 +1,332 @@
 ﻿Name: "Decals"
 RootId: 3323884308924931292
 Objects {
+  Id: 9115454587013286562
+  Name: "Decal Stains Round 01 Yellow2 patch"
+  Transform {
+    Location {
+      X: 38070.4258
+      Y: -15770.8037
+      Z: 120.414246
+    }
+    Rotation {
+      Pitch: 9.36210537
+    }
+    Scale {
+      X: 8.93676281
+      Y: 8.93668079
+      Z: 2.12852526
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 0.651500046
+        B: 0.385
+        A: 0.634
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 10482892747344569317
+  Name: "Decal Stains Round 01 Yellow2 patch"
+  Transform {
+    Location {
+      X: 38932.5898
+      Y: -9992.85
+      Z: 120.414246
+    }
+    Rotation {
+      Pitch: 9.36210537
+    }
+    Scale {
+      X: 8.93676281
+      Y: 8.93668079
+      Z: 2.12852526
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 0.651500046
+        B: 0.385
+        A: 0.634
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 1080652850425783049
+  Name: "Decal Stains Round 01 Orange patch"
+  Transform {
+    Location {
+      X: 39704.1094
+      Y: -17194.1797
+      Z: 318.447388
+    }
+    Rotation {
+      Pitch: -4.31665039
+      Yaw: -163.659088
+      Roll: -0.310302734
+    }
+    Scale {
+      X: 8.93676281
+      Y: 8.93668079
+      Z: 2.12852526
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 0.51315
+        B: 0.251
+        A: 0.462
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 7505117129145593890
+  Name: "Decal Stains Round 01 Orange patch"
+  Transform {
+    Location {
+      X: 38846.9141
+      Y: -14122.3496
+      Z: 318.447388
+    }
+    Rotation {
+      Pitch: -4.31665039
+      Yaw: -163.659134
+      Roll: -0.310302734
+    }
+    Scale {
+      X: 8.93676281
+      Y: 8.93668079
+      Z: 2.12852526
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 0.51315
+        B: 0.251
+        A: 0.462
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 5415114733115332040
+  Name: "Decal Stains Round 01 Orange patch"
+  Transform {
+    Location {
+      X: 38846.9141
+      Y: -10654.0254
+      Z: 318.447388
+    }
+    Rotation {
+      Pitch: -4.31665039
+      Yaw: -163.659195
+      Roll: -0.310302734
+    }
+    Scale {
+      X: 8.93676281
+      Y: 8.93668079
+      Z: 2.12852526
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 0.51315
+        B: 0.251
+        A: 0.462
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 12169967838024967402
+  Name: "Decal Stains Round 01 Brown2 patch"
+  Transform {
+    Location {
+      X: 2173.40649
+      Y: -35009.1914
+      Z: -21.7006226
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.52277
+      Y: 5.0911746
+      Z: 1.21260881
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.133
+        G: 0.0452023596
+        B: 0.014630002
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 3517848232852171568
+  Name: "Decal Stains Round 01 Brown2 patch"
+  Transform {
+    Location {
+      X: -11411.0107
+      Y: -51451.4258
+      Z: 33.7052612
+    }
+    Rotation {
+    }
+    Scale {
+      X: 5.09122181
+      Y: 5.0911746
+      Z: 1.21260881
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.133
+        G: 0.0452023596
+        B: 0.014630002
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 11695602676265431714
   Name: "Decal Stains Round 01 Brown patch"
   Transform {
@@ -838,9 +1164,9 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
-        A: 0.640000045
+        G: 0.51315
+        B: 0.251
+        A: 0.462
       }
     }
   }
@@ -934,9 +1260,9 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
-        A: 0.640000045
+        G: 0.51315
+        B: 0.251
+        A: 0.462
       }
     }
   }
@@ -982,8 +1308,8 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
+        G: 0.51315
+        B: 0.251
         A: 0.462
       }
     }
@@ -1030,8 +1356,8 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
+        G: 0.51315
+        B: 0.251
         A: 0.462
       }
     }
@@ -1078,8 +1404,8 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
+        G: 0.51315
+        B: 0.251
         A: 0.462
       }
     }
@@ -1107,12 +1433,12 @@ Objects {
     Location {
       X: 10386.5352
       Y: -21557.1699
-      Z: 585.515869
+      Z: 428.838501
     }
     Rotation {
-      Pitch: 10.5570126
-      Yaw: 141.750412
-      Roll: 7.31848907
+      Pitch: 6.51766682
+      Yaw: 141.635101
+      Roll: 1.61475194
     }
     Scale {
       X: 8.93676281
@@ -1126,8 +1452,8 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
+        G: 0.51315
+        B: 0.251
         A: 0.462
       }
     }
@@ -1270,8 +1596,8 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
+        G: 0.51315
+        B: 0.251
         A: 0.462
       }
     }
@@ -1462,8 +1788,8 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
+        G: 0.51315
+        B: 0.251
         A: 0.462
       }
     }
@@ -1510,8 +1836,8 @@ Objects {
       Name: "bp:Color"
       Color {
         R: 1
-        G: 0.339867353
-        B: 0.110000014
+        G: 0.51315
+        B: 0.251
         A: 0.462
       }
     }

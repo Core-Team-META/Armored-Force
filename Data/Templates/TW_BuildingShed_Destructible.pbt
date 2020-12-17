@@ -34,7 +34,7 @@
           Location {
             X: 297.194092
             Y: -160.5
-            Z: -7.56329346
+            Z: -29.9999847
           }
           Rotation {
           }
@@ -63,8 +63,8 @@
         Transform {
           Location {
             X: -120.092773
-            Y: 165.110962
-            Z: 219.279846
+            Y: 165.109375
+            Z: 139.279861
           }
           Rotation {
           }
@@ -226,7 +226,7 @@
         Name: "Geo"
         Transform {
           Location {
-            Z: 112.563293
+            Z: 32.5633087
           }
           Rotation {
           }
@@ -272,7 +272,7 @@
         Transform {
           Location {
             X: -242.072266
-            Y: -52.1640625
+            Y: -46.1015625
             Z: -0.177093506
           }
           Rotation {
@@ -290,9 +290,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -347,7 +347,7 @@
         Transform {
           Location {
             X: -21.7539063
-            Y: 0.046875
+            Y: 6.109375
             Z: -0.177093506
           }
           Rotation {
@@ -365,9 +365,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -492,8 +492,8 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -32.0080566
-            Y: 436.011719
+            X: -32.0083
+            Y: 432.429688
             Z: -0.177093506
           }
           Rotation {
@@ -511,9 +511,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -616,14 +616,14 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -50.8710938
-            Y: -17.78125
-            Z: 433.380676
+            X: -52.3085938
+            Y: -17.8320313
+            Z: 432.12677
           }
           Rotation {
-            Pitch: -2.73207552e-05
-            Yaw: 89.9999466
-            Roll: 134.999985
+            Pitch: -1.37316895
+            Yaw: 91.373436
+            Roll: 134.983414
           }
           Scale {
             X: 1
@@ -666,13 +666,13 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: 68.4672852
-            Y: 202.21875
-            Z: 312.311096
+            X: 61.3354492
+            Y: 217.203125
+            Z: 319.442749
           }
           Rotation {
-            Yaw: -90.0000076
-            Roll: -135
+            Yaw: 90
+            Roll: 135
           }
           Scale {
             X: 1
@@ -734,9 +734,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -790,13 +790,14 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -87.2370605
+            X: -87.2783203
             Y: 422.21875
-            Z: 468.397644
+            Z: 468.356079
           }
           Rotation {
-            Yaw: -90.0000076
-            Roll: -135
+            Pitch: -0.418304443
+            Yaw: -90.418335
+            Roll: -134.998428
           }
           Scale {
             X: 1
@@ -839,13 +840,14 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: 53.5615234
+            X: 53.4970703
             Y: 402.21875
-            Z: 327.813049
+            Z: 327.748779
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 135
+            Pitch: 0.480572075
+            Yaw: 89.5194
+            Roll: 134.997955
           }
           Scale {
             X: 1
@@ -907,9 +909,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -1039,8 +1041,8 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -240.000122
-            Y: 380
+            X: -240
+            Y: 376.417969
             Z: -2.6138
           }
           Rotation {
@@ -1058,9 +1060,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -1114,12 +1116,13 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -329.609863
-            Y: 395.320313
-            Z: 324.287842
+            X: -329.273438
+            Y: 395.316406
+            Z: 323.951416
           }
           Rotation {
-            Yaw: 90.0000076
+            Pitch: -0.226837158
+            Yaw: 89.7730713
             Roll: -135
           }
           Scale {
@@ -1168,8 +1171,9 @@
             Z: 464.287415
           }
           Rotation {
-            Yaw: -90.0000076
-            Roll: 135
+            Pitch: -0.708679199
+            Yaw: -89.2912598
+            Roll: 134.995575
           }
           Scale {
             X: 1
@@ -1212,13 +1216,13 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -165.158081
+            X: -165.160156
             Y: 202.21875
-            Z: 488.72345
+            Z: 488.725647
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: -135
+            Yaw: 90
+            Roll: -133.959305
           }
           Scale {
             X: 1
@@ -1310,13 +1314,14 @@
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -185.423828
-            Y: -17.78125
-            Z: 468.937683
+            X: -185.029297
+            Y: -17.7890625
+            Z: 468.543335
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: -135
+            Pitch: -0.5418396
+            Yaw: 89.4581375
+            Roll: -134.997391
           }
           Scale {
             X: 1
@@ -1430,7 +1435,7 @@
         Name: "RemoveGroup"
         Transform {
           Location {
-            Z: 107.563293
+            Z: 27.5633087
           }
           Rotation {
           }
@@ -1441,17 +1446,13 @@
           }
         }
         ParentId: 15439579464204698013
-        ChildIds: 15180491474278233972
         ChildIds: 10625902052440657416
         ChildIds: 15451700310345136525
         ChildIds: 12582593793748569053
-        ChildIds: 12873022247785461438
         ChildIds: 15442125688443305317
-        ChildIds: 13974127539207696377
         ChildIds: 1602517157577809139
         ChildIds: 337322750485859696
         ChildIds: 14186038739402098867
-        ChildIds: 18155026037995972913
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1460,84 +1461,6 @@
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 15180491474278233972
-        Name: "Wall"
-        Transform {
-          Location {
-            X: -136.248779
-            Y: 402.21875
-            Z: 343.002869
-          }
-          Rotation {
-            Yaw: -89.9999619
-          }
-          Scale {
-            X: 0.25
-            Y: -1.75005364
-            Z: 1.72756028
-          }
-        }
-        ParentId: 2889054807187226105
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.447000027
-              G: 0.447000027
-              B: 0.447000027
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3038176905818941505
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.485296458
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.536725342
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12250067734840047801
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
         }
       }
       Objects {
@@ -1663,93 +1586,21 @@
       }
       Objects {
         Id: 12582593793748569053
-        Name: "Roof"
+        Name: "Wall"
         Transform {
           Location {
-            X: -11.2487793
-            Y: 197.21875
+            X: -274.159668
+            Y: 195.5
             Z: 147.855637
           }
           Rotation {
-            Pitch: -6.83018879e-06
             Yaw: 89.9999619
-            Roll: -89.9999619
+            Roll: -89.9999695
           }
           Scale {
-            X: 4.48567295
-            Y: 2.97471642
-            Z: 0.100000642
-          }
-        }
-        ParentId: 2889054807187226105
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3038176905818941505
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.501867175
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.678927898
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.447000027
-              G: 0.447000027
-              B: 0.447000027
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12873022247785461438
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -271.248779
-            Y: 197.21875
-            Z: 147.855637
-          }
-          Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: 89.9999542
-            Roll: -89.9999542
-          }
-          Scale {
-            X: 4.48567295
-            Y: 2.97471642
-            Z: 0.100000642
+            X: 4.5
+            Y: 3
+            Z: 2.75
           }
         }
         ParentId: 2889054807187226105
@@ -1874,76 +1725,6 @@
         }
       }
       Objects {
-        Id: 13974127539207696377
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -130.433105
-            Y: -32.78125
-            Z: 147.855545
-          }
-          Rotation {
-            Yaw: -179.999954
-            Roll: -89.9999542
-          }
-          Scale {
-            X: 2.96026754
-            Y: 2.97471642
-            Z: 0.100000098
-          }
-        }
-        ParentId: 2889054807187226105
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3038176905818941505
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.501867175
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.678927898
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.447000027
-              G: 0.447000027
-              B: 0.447000027
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 1602517157577809139
         Name: "Craftsman Interior Door 01"
         Transform {
@@ -2011,17 +1792,17 @@
         Name: "Wall"
         Transform {
           Location {
-            X: -136.248779
-            Y: -13.328125
+            X: -136.248535
+            Y: 415.5
             Z: 344.999939
           }
           Rotation {
             Yaw: 89.9999847
           }
           Scale {
-            X: 0.25
+            X: 4.50000095
             Y: 1.75
-            Z: 1.70771658
+            Z: 1.75
           }
         }
         ParentId: 2889054807187226105
@@ -2089,95 +1870,17 @@
         Name: "Wall"
         Transform {
           Location {
-            X: -136.248779
-            Y: -12.78125
+            X: -136.248535
+            Y: 416.046875
             Z: 344.999939
           }
           Rotation {
             Yaw: 89.9999619
           }
           Scale {
-            X: 0.25
+            X: 4.50000095
             Y: -1.75005364
-            Z: 1.70771658
-          }
-        }
-        ParentId: 2889054807187226105
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.447000027
-              G: 0.447000027
-              B: 0.447000027
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3038176905818941505
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.485296458
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.536725342
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12250067734840047801
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 18155026037995972913
-        Name: "Wall"
-        Transform {
-          Location {
-            X: -136.249023
-            Y: 402.765625
-            Z: 344.999939
-          }
-          Rotation {
-            Yaw: -89.9999847
-          }
-          Scale {
-            X: 0.25
-            Y: 1.75
-            Z: 1.72756028
+            Z: 1.75
           }
         }
         ParentId: 2889054807187226105
@@ -2296,15 +1999,6 @@
       }
     }
     Assets {
-      Id: 12250067734840047801
-      Name: "Wedge - Corner-Aligned"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_wedge_002"
-      }
-    }
-    Assets {
       Id: 16374150260036817633
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
@@ -2329,6 +2023,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_wood_planks_001_uv"
+      }
+    }
+    Assets {
+      Id: 12250067734840047801
+      Name: "Wedge - Corner-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_wedge_002"
       }
     }
     PrimaryAssetId {

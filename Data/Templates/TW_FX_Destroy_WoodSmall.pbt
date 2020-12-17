@@ -194,6 +194,10 @@
             Name: "bp:Dust Gravity"
             Float: 2.24476433
           }
+          Overrides {
+            Name: "bp:Enable Impact Lines"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

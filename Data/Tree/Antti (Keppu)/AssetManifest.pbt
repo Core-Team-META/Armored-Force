@@ -116,15 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12250067734840047801
-  Name: "Wedge - Corner-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_wedge_002"
-  }
-}
-Assets {
   Id: 12145181589079789543
   Name: "Decal Stains Top 01"
   PlatformAssetType: 14

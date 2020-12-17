@@ -188,8 +188,8 @@
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -36.9047585
-            Y: -16.6641865
+            X: -41.5937805
+            Y: -8.36822701
           }
           Rotation {
           }

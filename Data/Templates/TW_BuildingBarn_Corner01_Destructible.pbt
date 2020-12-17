@@ -112,7 +112,7 @@
           Overrides {
             Name: "cs:DestructionFX01"
             AssetReference {
-              Id: 8823241362130014848
+              Id: 9734563338717701534
             }
           }
           Overrides {
@@ -170,8 +170,8 @@
         Transform {
           Location {
             X: -3.33333349
-            Y: 4.28550482
-            Z: 200
+            Y: 4.285357
+            Z: 114.699158
           }
           Rotation {
           }
@@ -198,8 +198,8 @@
         Transform {
           Location {
             X: 45.3564453
-            Y: 9.14633179
-            Z: 45.2799072
+            Y: 4.18323565
+            Z: 12.3255463
           }
           Rotation {
           }

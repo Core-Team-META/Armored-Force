@@ -26,11 +26,11 @@
       }
       Overrides {
         Name: "material3_scale"
-        Float: 10
+        Float: 2
       }
       Overrides {
         Name: "material3side_scale"
-        Float: 10
+        Float: 2
       }
       Overrides {
         Name: "cmp:Material3"
@@ -49,11 +49,24 @@
       Overrides {
         Name: "cmp:Material4"
         AssetReference {
-          Id: 10216119876043919710
+          Id: 16538824738551663546
         }
       }
       Overrides {
         Name: "cmpc:Material4"
+        Color {
+          R: 1
+          G: 0.874172211
+          B: 0.75
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "material1_scale"
+        Float: 3
+      }
+      Overrides {
+        Name: "cmpc:Material3"
         Color {
           R: 0.54
           G: 0.54
@@ -62,8 +75,19 @@
         }
       }
       Overrides {
-        Name: "material1_scale"
-        Float: 3
+        Name: "cmp:Material4_Sides"
+        AssetReference {
+          Id: 16538824738551663546
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material4_Sides"
+        Color {
+          R: 1
+          G: 0.874172211
+          B: 0.75
+          A: 1
+        }
       }
     }
     Assets {
@@ -112,12 +136,21 @@
       }
     }
     Assets {
-      Id: 10216119876043919710
-      Name: "Dirt 01"
+      Id: 16538824738551663546
+      Name: "Bone Raw"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "dirt_001"
+        AssetId: "mi_bone_raw_001_uv_ref"
+      }
+    }
+    Assets {
+      Id: 16538824738551663546
+      Name: "Bone Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_bone_raw_001_uv_ref"
       }
     }
   }
