@@ -132,7 +132,7 @@
             }
           }
           Overrides {
-            Name: "cs:Geo"
+            Name: "cs:DebrisGroup"
             ObjectReference {
               SubObjectId: 2763672934151491479
             }
@@ -161,8 +161,8 @@
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 39.1303902
-            Y: -20.0000038
+            X: -5.24894238
+            Y: 39.1024818
           }
           Rotation {
           }
@@ -189,7 +189,7 @@
         Transform {
           Location {
             X: -36.9047585
-            Y: -16.6641865
+            Y: -38.6622238
           }
           Rotation {
           }
@@ -212,7 +212,7 @@
       }
       Objects {
         Id: 2763672934151491479
-        Name: "Geo"
+        Name: "DebrisGroup"
         Transform {
           Location {
           }

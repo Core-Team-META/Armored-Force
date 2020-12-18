@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 11668310442206713913
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -57,21 +57,20 @@
         Name: "PhysicsParent"
         Transform {
           Location {
-            Y: 11.7661133
-            Z: -8.79632568
+            X: -235
+            Y: -15
+            Z: 101.979736
           }
           Rotation {
+            Pitch: -93.1985474
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.800738513
+            Y: 0.800738513
+            Z: 0.800738513
           }
         }
         ParentId: 11668310442206713913
-        ChildIds: 618121357552668940
-        ChildIds: 845453303975886677
-        ChildIds: 2683252192294828625
         ChildIds: 18221731298447889504
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -81,7 +80,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 14452616722762075696
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -99,132 +98,23 @@
         }
       }
       Objects {
-        Id: 618121357552668940
-        Name: "Collider"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 4.70000029
-            Y: 1.6
-            Z: 2.2
-          }
-        }
-        ParentId: 2439203002483815857
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 5000
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 845453303975886677
-        Name: "Collider"
-        Transform {
-          Location {
-            X: -160
-          }
-          Rotation {
-          }
-          Scale {
-            X: 2
-            Y: 3.25
-            Z: 2
-          }
-        }
-        ParentId: 2439203002483815857
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 5000
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 2683252192294828625
-        Name: "Collider"
-        Transform {
-          Location {
-            X: 165
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1.14043689
-          }
-        }
-        ParentId: 2439203002483815857
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 5000
-            }
-          }
-        }
-      }
-      Objects {
         Id: 18221731298447889504
         Name: "tractor_merged"
         Transform {
           Location {
-            Y: -11.7661133
-            Z: 8.79632568
+            X: 110.783691
+            Y: 18.7327061
+            Z: 300.127899
           }
           Rotation {
+            Pitch: 86.8014374
+            Yaw: 180
+            Roll: 180
           }
           Scale {
-            X: 0.75
-            Y: 0.75
-            Z: 0.75
+            X: 0.936635375
+            Y: 0.936635375
+            Z: 0.936635375
           }
         }
         ParentId: 2439203002483815857
@@ -298,7 +188,7 @@
         ChildIds: 13055144097412266767
         ChildIds: 1668587684268426124
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
@@ -5195,12 +5085,12 @@
       }
     }
     Assets {
-      Id: 16374150260036817633
-      Name: "Cube - Bottom-Aligned"
+      Id: 14452616722762075696
+      Name: "Fantasy Castle Pillar 01 Base"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_001"
+        AssetId: "sm_ts_fan_cas_pillar_001_base"
       }
     }
     Assets {
