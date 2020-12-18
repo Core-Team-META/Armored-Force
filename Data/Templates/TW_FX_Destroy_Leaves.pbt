@@ -169,6 +169,23 @@
             Name: "bp:Gravity"
             Float: -1.38881779
           }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.186088368
+              G: 0.217000008
+              B: 0.128681
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.174591139
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.33444044
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

@@ -18,8 +18,6 @@ Objects {
   ChildIds: 17707050887276379352
   ChildIds: 7331958413616733673
   ChildIds: 4689494391382931675
-  ChildIds: 5770985737712584303
-  ChildIds: 6946166710147336329
   ChildIds: 14661672776697705088
   UnregisteredParameters {
   }
@@ -56,141 +54,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Marcela"
-  }
-}
-Objects {
-  Id: 6946166710147336329
-  Name: "hay bale_merged"
-  Transform {
-    Location {
-      X: -9250.56348
-      Y: -7184.15771
-      Z: 58.9195862
-    }
-    Rotation {
-      Yaw: -34.6266
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3966118942719926167
-      value {
-        Overrides {
-          Name: "Name"
-          String: "hay bale_merged"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -9909.73828
-            Y: -7755.97656
-            Z: 82.7029724
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -91.8406219
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1235156210547298513
-    }
-  }
-}
-Objects {
-  Id: 5770985737712584303
-  Name: "hay bale_merged"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3966118942719926167
-      value {
-        Overrides {
-          Name: "Name"
-          String: "hay bale_merged"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -7560
-            Y: -2330
-            Z: 175
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 85.2489
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17555854410122694132
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -3.09106445
-            Y: -1.4309082
-            Z: 123.896942
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Roll: -89.9999695
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1235156210547298513
-    }
   }
 }
 Objects {
@@ -2645,7 +2508,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 50335
-            Y: -46050
+            Y: -46065
             Z: 1240.00061
           }
         }
