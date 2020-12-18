@@ -1,133 +1,6 @@
 ﻿Name: "Marcela"
 RootId: 14661672776697705088
 Objects {
-  Id: 6946166710147336329
-  Name: "hay bale_merged"
-  Transform {
-    Location {
-      X: -9250.56348
-      Y: -7184.15771
-      Z: 58.9195862
-    }
-    Rotation {
-      Yaw: -34.6266
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14661672776697705088
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3966118942719926167
-      value {
-        Overrides {
-          Name: "Name"
-          String: "hay bale_merged"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -9909.73828
-            Y: -7755.97656
-            Z: 82.7029724
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -91.8406372
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1235156210547298513
-    }
-  }
-}
-Objects {
-  Id: 5770985737712584303
-  Name: "hay bale_merged"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14661672776697705088
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3966118942719926167
-      value {
-        Overrides {
-          Name: "Name"
-          String: "hay bale_merged"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -7560
-            Y: -2330
-            Z: 175
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 85.2489
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17555854410122694132
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -3.09106445
-            Y: -1.4309082
-            Z: 123.896942
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Roll: -89.9999695
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1235156210547298513
-    }
-  }
-}
-Objects {
   Id: 13112285422843472738
   Name: "Tank Loadout"
   Transform {
@@ -261,6 +134,18 @@ Objects {
       Name: "cs:EquipmentTemplate15"
       AssetReference {
         Id: 872417280653870507
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate16"
+      AssetReference {
+        Id: 2907819778070790647
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate17"
+      AssetReference {
+        Id: 13968389830919356423
       }
     }
     Overrides {
@@ -584,6 +469,8 @@ Objects {
   ChildIds: 5839279352738307034
   ChildIds: 7140955520606315688
   ChildIds: 17846303132289316781
+  ChildIds: 16613878130217644386
+  ChildIds: 13951801789196197892
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -601,6 +488,240 @@ Objects {
       }
     }
     Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13951801789196197892
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 441082758037761746
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 661.136841
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 441082758037761746
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13951801789196197892
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "R - German Jagdtiger"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16613878130217644386
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 2582170565036422651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 620.047058
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2582170565036422651
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16613878130217644386
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "T - German E50"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
