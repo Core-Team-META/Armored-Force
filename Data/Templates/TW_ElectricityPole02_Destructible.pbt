@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 16282966150302545814
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -132,7 +132,7 @@
             }
           }
           Overrides {
-            Name: "cs:Geo"
+            Name: "cs:DebrisGroup"
             ObjectReference {
               SubObjectId: 6889829497476730591
             }
@@ -214,7 +214,7 @@
       }
       Objects {
         Id: 6889829497476730591
-        Name: "Geo"
+        Name: "DebrisGroup"
         Transform {
           Location {
           }

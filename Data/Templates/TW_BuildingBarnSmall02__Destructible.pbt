@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 3615275519397557993
+        ParentId: 4781671109827199097
         ChildIds: 2516186016794540801
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -134,13 +134,7 @@
             }
           }
           Overrides {
-            Name: "cs:PhysicsDebris"
-            AssetReference {
-              Id: 11122514000848590776
-            }
-          }
-          Overrides {
-            Name: "cs:Geo"
+            Name: "cs:DebrisGroup"
             ObjectReference {
               SubObjectId: 4739843848998540757
             }
@@ -169,9 +163,9 @@
         Name: "FXLocation02"
         Transform {
           Location {
-            X: -3.33333349
-            Y: 4.28550482
-            Z: 200
+            X: -14.0411453
+            Y: 4.18847656
+            Z: 87.7783813
           }
           Rotation {
           }
@@ -197,9 +191,9 @@
         Name: "FXLocation01"
         Transform {
           Location {
-            X: 45.3564453
-            Y: 9.14633179
-            Z: 45.2799072
+            X: -0.480682373
+            Y: 9.08105469
+            Z: 4.9894104
           }
           Rotation {
           }
@@ -222,7 +216,7 @@
       }
       Objects {
         Id: 4739843848998540757
-        Name: "Geo"
+        Name: "DebrisGroup"
         Transform {
           Location {
           }
@@ -2242,7 +2236,7 @@
           }
         }
         ParentId: 2516186016794540801
-        ChildIds: 12384353854842854836
+        ChildIds: 14089719645948740020
         ChildIds: 16170967604375125379
         ChildIds: 7997781887746103003
         ChildIds: 17117659643592863622
@@ -2260,46 +2254,18 @@
         }
       }
       Objects {
-        Id: 12384353854842854836
-        Name: "Roof"
-        Transform {
-          Location {
-            X: -106.743164
-            Y: 376.669678
-            Z: 466.954346
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13572067991732455286
-        ChildIds: 14089719645948740020
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
         Id: 14089719645948740020
         Name: "Roof"
         Transform {
           Location {
-            X: -3.25683594
-            Y: -185.721985
-            Z: 133.045654
+            X: -110
+            Y: 190.945313
+            Z: 600.000061
           }
           Rotation {
-            Pitch: 44.9998932
+            Pitch: 44.9998779
             Yaw: -179.999954
+            Roll: 9.2118509e-12
           }
           Scale {
             X: 4.98735142
@@ -2307,7 +2273,7 @@
             Z: 0.100000232
           }
         }
-        ParentId: 12384353854842854836
+        ParentId: 13572067991732455286
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

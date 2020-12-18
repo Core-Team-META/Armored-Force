@@ -134,13 +134,7 @@
             }
           }
           Overrides {
-            Name: "cs:PhysicsDebris"
-            AssetReference {
-              Id: 11122514000848590776
-            }
-          }
-          Overrides {
-            Name: "cs:Geo"
+            Name: "cs:DebrisGroup"
             ObjectReference {
               SubObjectId: 1569776212128593476
             }
@@ -169,9 +163,9 @@
         Name: "FXLocation02"
         Transform {
           Location {
-            X: -3.33333349
-            Y: 4.28550482
-            Z: 200
+            X: -11.0157471
+            Y: 44.2959
+            Z: 134.969055
           }
           Rotation {
           }
@@ -197,9 +191,9 @@
         Name: "FXLocation01"
         Transform {
           Location {
-            X: 45.3564453
-            Y: 9.14633179
-            Z: 45.2799072
+            X: -9.93444824
+            Y: 35.6709
+            Z: 4.1050415
           }
           Rotation {
           }
@@ -222,7 +216,7 @@
       }
       Objects {
         Id: 1569776212128593476
-        Name: "Geo"
+        Name: "DebrisGroup"
         Transform {
           Location {
           }

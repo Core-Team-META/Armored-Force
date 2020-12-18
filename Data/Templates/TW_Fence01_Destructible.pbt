@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 14382887385855379576
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -132,7 +132,7 @@
             }
           }
           Overrides {
-            Name: "cs:Geo"
+            Name: "cs:DebrisGroup"
             ObjectReference {
               SubObjectId: 8926210379358892475
             }
@@ -212,7 +212,7 @@
       }
       Objects {
         Id: 8926210379358892475
-        Name: "Geo"
+        Name: "DebrisGroup"
         Transform {
           Location {
           }
@@ -311,19 +311,19 @@
         Name: "Urban Damaged Interior Trim Board 01 Top 02"
         Transform {
           Location {
-            X: -55.3857422
-            Y: -20.5546875
-            Z: -11.3150482
+            X: -55.3852806
+            Y: -20.5530548
+            Z: -20
           }
           Rotation {
-            Pitch: 86.7828217
+            Pitch: 86.7808151
             Yaw: 179.520782
             Roll: -0.111236572
           }
           Scale {
-            X: 0.359396964
-            Y: 1.20241213
-            Z: 0.899861455
+            X: 0.380488515
+            Y: 1.2024051
+            Z: 0.899861574
           }
         }
         ParentId: 8926210379358892475

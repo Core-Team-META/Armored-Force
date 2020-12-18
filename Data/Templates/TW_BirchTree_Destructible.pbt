@@ -10,12 +10,12 @@
         Name: "TW_BirchTree_Destructible"
         Transform {
           Scale {
-            X: 0.727234066
-            Y: 0.727234066
-            Z: 0.727234066
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 3464302058630838082
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -133,13 +133,7 @@
             }
           }
           Overrides {
-            Name: "cs:PhysicsDebris"
-            AssetReference {
-              Id: 11122514000848590776
-            }
-          }
-          Overrides {
-            Name: "cs:Geo"
+            Name: "cs:DebrisGroup"
             ObjectReference {
               SubObjectId: 7430713644516181526
             }
@@ -168,9 +162,9 @@
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 39.130043
-            Y: 53.8461456
-            Z: 107.283417
+            X: -4.53638697
+            Y: 205.850174
+            Z: 48.7994881
           }
           Rotation {
           }
@@ -196,7 +190,8 @@
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -36.9051094
+            X: -0.616829038
+            Z: 1.81390262
           }
           Rotation {
           }
@@ -219,7 +214,7 @@
       }
       Objects {
         Id: 7430713644516181526
-        Name: "Geo"
+        Name: "DebrisGroup"
         Transform {
           Location {
           }
@@ -258,6 +253,16 @@
           }
         }
         ParentId: 7430713644516181526
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Leaves:color"
+            Color {
+              R: 0.0975
+              G: 0.234000012
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -272,7 +277,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 1500

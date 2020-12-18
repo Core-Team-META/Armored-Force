@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 6798404182982961803
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -130,13 +130,7 @@
             }
           }
           Overrides {
-            Name: "cs:PhysicsDebris"
-            AssetReference {
-              Id: 11122514000848590776
-            }
-          }
-          Overrides {
-            Name: "cs:Geo"
+            Name: "cs:DebrisGroup"
             ObjectReference {
               SubObjectId: 6152720106281832704
             }
@@ -165,9 +159,9 @@
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 39.130043
-            Y: 53.8461456
-            Z: 107.283417
+            X: 39.1300049
+            Y: 53.84375
+            Z: 25.0913601
           }
           Rotation {
           }
@@ -193,7 +187,8 @@
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -36.9051094
+            X: -36.9051514
+            Z: -17.16329
           }
           Rotation {
           }
@@ -216,7 +211,7 @@
       }
       Objects {
         Id: 6152720106281832704
-        Name: "Geo"
+        Name: "DebrisGroup"
         Transform {
           Location {
           }
