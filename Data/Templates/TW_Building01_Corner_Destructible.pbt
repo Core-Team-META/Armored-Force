@@ -270,39 +270,39 @@
       }
       Objects {
         Id: 9165834330298108223
-        Name: "Window_PhysicsParent"
+        Name: "PhysicsParent_Window"
         Transform {
           Location {
-            X: 15
-            Y: 190
-            Z: 265
+            X: 5.49511719
+            Y: 293.222656
+            Z: 375
           }
           Rotation {
+            Pitch: -90
           }
           Scale {
-            X: 0.25
-            Y: 0.25
-            Z: 0.25
+            X: 0.50776428
+            Y: 0.50776428
+            Z: 0.50776428
           }
         }
         ParentId: 1633322965935289681
-        ChildIds: 11058531991706034441
+        ChildIds: 17197053289185202941
         ChildIds: 4617216374993415002
         ChildIds: 1014525335099925486
         ChildIds: 13999538322384222824
         ChildIds: 187721231738952294
         ChildIds: 10953660891131762101
         ChildIds: 1809166159600354641
-        ChildIds: 17197053289185202941
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 17246754151924769898
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -316,31 +316,65 @@
         }
       }
       Objects {
-        Id: 11058531991706034441
-        Name: "Collider"
+        Id: 17197053289185202941
+        Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: -25.8847656
-            Z: 20
+            X: 403.730621
+            Y: 3.50033236
+            Z: 54.9667587
           }
           Rotation {
+            Pitch: 4.09811328e-05
+            Yaw: -90.0000076
+            Roll: -179.999954
           }
           Scale {
-            X: 1.59949219
-            Y: 8
-            Z: 11
+            X: 1.36814904
+            Y: 1.96941781
+            Z: 3.44648123
           }
         }
         ParentId: 9165834330298108223
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.125
+          }
+        }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 6850673296695379879
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -358,19 +392,19 @@
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: 60
-            Y: 420
-            Z: 580
+            X: -68.9296112
+            Y: 3.50033236
+            Z: 54.9667511
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -89.9999619
-            Roll: -89.9999619
+            Pitch: 4.09811328e-05
+            Yaw: -90.0000076
+            Roll: -179.999954
           }
           Scale {
-            X: 2.77878857
-            Y: 4
-            Z: 6
+            X: 1.36814892
+            Y: 1.96941781
+            Z: 2.95412683
           }
         }
         ParentId: 9165834330298108223
@@ -430,17 +464,15 @@
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: -80
-            Y: -280
-            Z: 440
+            Y: -341.147797
+            Z: -13.962863
           }
           Rotation {
-            Pitch: -90
           }
           Scale {
-            X: 2.8
-            Y: 2.4
-            Z: 4
+            X: 1.37859249
+            Y: 1.18165076
+            Z: 1.96941781
           }
         }
         ParentId: 9165834330298108223
@@ -500,17 +532,15 @@
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: -80
-            Y: 380
-            Z: 440
+            Y: -16.1938457
+            Z: -13.962863
           }
           Rotation {
-            Pitch: -90
           }
           Scale {
-            X: 2.8
-            Y: 2.4
-            Z: 4
+            X: 1.37859249
+            Y: 1.18165076
+            Z: 1.96941781
           }
         }
         ParentId: 9165834330298108223
@@ -570,17 +600,16 @@
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: -90.0435562
-            Y: 39.9991798
-            Z: 442.714844
+            X: -1.3366673
+            Y: -183.59436
+            Z: -18.9075603
           }
           Rotation {
-            Pitch: -90
           }
           Scale {
-            X: 3
-            Y: 2
-            Z: 3.75
+            X: 1.47706342
+            Y: 0.984708905
+            Z: 1.84632921
           }
         }
         ParentId: 9165834330298108223
@@ -640,19 +669,19 @@
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: 5.92339325
-            Y: 306.863617
-            Z: 180
+            X: 128.012146
+            Y: -52.2049599
+            Z: 28.3411541
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -89.999939
-            Roll: -89.999939
+            Pitch: 8.19622655e-05
+            Yaw: -89.9999924
+            Roll: -179.999924
           }
           Scale {
-            X: 1.99999738
-            Y: 1.6000011
-            Z: 2.9393487
+            X: 0.984707594
+            Y: 0.787767649
+            Z: 1.44720137
           }
         }
         ParentId: 9165834330298108223
@@ -712,91 +741,19 @@
         Name: "Wood 2x4 4m"
         Transform {
           Location {
-            X: 2.15583038
-            Y: 306.863617
-            Z: -120
+            X: 275.718475
+            Y: -52.2049599
+            Z: 26.4871311
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -89.999939
-            Roll: -89.999939
+            Pitch: 8.19622655e-05
+            Yaw: -89.9999924
+            Roll: -179.999924
           }
           Scale {
-            X: 1.99999738
-            Y: 1.6000011
-            Z: 2.9393487
-          }
-        }
-        ParentId: 9165834330298108223
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6850673296695379879
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 17197053289185202941
-        Name: "Wood 2x4 4m"
-        Transform {
-          Location {
-            X: 60
-            Y: 420
-            Z: -380
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -89.9999619
-            Roll: -89.9999619
-          }
-          Scale {
-            X: 2.77878881
-            Y: 4
-            Z: 7
+            X: 0.984707594
+            Y: 0.787767649
+            Z: 1.44720137
           }
         }
         ParentId: 9165834330298108223
@@ -3253,12 +3210,12 @@
       }
     }
     Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
+      Id: 17246754151924769898
+      Name: "Fantasy Castle Floor 03 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
+        AssetId: "sm_ts_fan_cas_floor_003_4m_ref"
       }
     }
     Assets {
