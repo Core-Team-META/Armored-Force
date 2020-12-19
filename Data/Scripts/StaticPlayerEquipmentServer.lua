@@ -174,7 +174,11 @@ function OnBindingPressed(player,bindingPressed)
 		--us m48 patton
 		if bindingPressed == "ability_extra_9" then
 			RemovePlayerEquipment(player)
+			if player:IsBindingPressed("ability_extra_12") or player:IsBindingPressed("ability_extra_13") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE18)
+			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE9)
+			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
