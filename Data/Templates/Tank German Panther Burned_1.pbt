@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 6193411753543861484
+  Id: 18190965035016522280
   Name: "Tank German Panther Burned"
   PlatformAssetType: 5
   TemplateAsset {
