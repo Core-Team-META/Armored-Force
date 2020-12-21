@@ -123,9 +123,9 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: 51942.0742
-      Y: 36469.2578
-      Z: 5658.93359
+      X: -80435.4688
+      Y: 80921.0391
+      Z: 4092.65723
     }
     Rotation {
       Yaw: 44.9999924
@@ -182,9 +182,9 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: 51484.9023
-      Y: 35777.6406
-      Z: 5658.93359
+      X: -80892.6328
+      Y: 80229.4219
+      Z: 4092.65723
     }
     Rotation {
       Yaw: 45

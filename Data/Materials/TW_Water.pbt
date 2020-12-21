@@ -16,11 +16,11 @@
       }
       Overrides {
         Name: "opacity"
-        Float: 0.567146719
+        Float: 0.4295398
       }
       Overrides {
         Name: "reflection brightness"
-        Float: 0.233993128
+        Float: 1
       }
       Overrides {
         Name: "object displacement amount"
@@ -32,11 +32,11 @@
       }
       Overrides {
         Name: "edge foam brightness"
-        Float: 1
+        Float: 0.219508186
       }
       Overrides {
         Name: "foam shape"
-        Float: 3.02735138
+        Float: 2.63625813
       }
       Overrides {
         Name: "foam shape max"
@@ -44,7 +44,7 @@
       }
       Overrides {
         Name: "foam shape min"
-        Float: 0.0239615049
+        Float: 0.422297329
       }
       Overrides {
         Name: "deep color"
@@ -69,19 +69,19 @@
       }
       Overrides {
         Name: "opacity distance"
-        Float: 279.563
+        Float: 0
       }
       Overrides {
         Name: "foam shift"
-        Float: -0.126435459
+        Float: 0.771630764
       }
       Overrides {
         Name: "foam tightness"
-        Float: 6.56290483
+        Float: 17.2817593
       }
       Overrides {
         Name: "normal foam brightness"
-        Float: 0
+        Float: 1
       }
       Overrides {
         Name: "flow direction"
@@ -96,11 +96,11 @@
       }
       Overrides {
         Name: "normal amount"
-        Float: 0.444024742
+        Float: 1
       }
       Overrides {
         Name: "normal distance"
-        Float: 7.33723545
+        Float: 10
       }
       Overrides {
         Name: "foam color"
