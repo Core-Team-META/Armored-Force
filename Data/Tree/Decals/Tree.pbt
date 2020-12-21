@@ -1,115 +1,23 @@
 ﻿Name: "Decals"
 RootId: 3323884308924931292
 Objects {
-  Id: 9115454587013286562
-  Name: "Decal Stains Round 01 Yellow2 patch"
-  Transform {
-    Location {
-      X: 38070.4258
-      Y: -15770.8037
-      Z: 120.414246
-    }
-    Rotation {
-      Pitch: 9.36210537
-    }
-    Scale {
-      X: 8.93676281
-      Y: 8.93668079
-      Z: 2.12852526
-    }
-  }
-  ParentId: 3323884308924931292
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 0.651500046
-        B: 0.385
-        A: 0.634
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10755294693114967386
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 10482892747344569317
-  Name: "Decal Stains Round 01 Yellow2 patch"
-  Transform {
-    Location {
-      X: 38932.5898
-      Y: -9992.85
-      Z: 120.414246
-    }
-    Rotation {
-      Pitch: 9.36210537
-    }
-    Scale {
-      X: 8.93676281
-      Y: 8.93668079
-      Z: 2.12852526
-    }
-  }
-  ParentId: 3323884308924931292
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 0.651500046
-        B: 0.385
-        A: 0.634
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10755294693114967386
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 1080652850425783049
+  Id: 17955796751612556331
   Name: "Decal Stains Round 01 Orange patch"
   Transform {
     Location {
-      X: 39704.1094
-      Y: -17194.1797
-      Z: 318.447388
+      X: 44102.0234
+      Y: -1985.66785
+      Z: -195.039978
     }
     Rotation {
-      Pitch: -4.31665039
-      Yaw: -163.659088
-      Roll: -0.310302734
+      Pitch: 2.60138679
+      Yaw: 47.0928955
+      Roll: 0.621951
     }
     Scale {
-      X: 8.93676281
-      Y: 8.93668079
-      Z: 2.12852526
+      X: 15.8369875
+      Y: 41.8644409
+      Z: 9.71596718
     }
   }
   ParentId: 3323884308924931292
@@ -141,23 +49,21 @@ Objects {
   }
 }
 Objects {
-  Id: 7505117129145593890
+  Id: 5948866073773826935
   Name: "Decal Stains Round 01 Orange patch"
   Transform {
     Location {
-      X: 38846.9141
-      Y: -14122.3496
-      Z: 318.447388
+      X: 45387.8555
+      Y: -14930.1396
+      Z: -456.760132
     }
     Rotation {
-      Pitch: -4.31665039
-      Yaw: -163.659134
-      Roll: -0.310302734
+      Pitch: 2.60138679
     }
     Scale {
-      X: 8.93676281
-      Y: 8.93668079
-      Z: 2.12852526
+      X: 15.8369875
+      Y: 41.8644409
+      Z: 9.71596718
     }
   }
   ParentId: 3323884308924931292
@@ -193,19 +99,17 @@ Objects {
   Name: "Decal Stains Round 01 Orange patch"
   Transform {
     Location {
-      X: 38846.9141
-      Y: -10654.0254
-      Z: 318.447388
+      X: 36732.9531
+      Y: -14930.1396
+      Z: -1058.09827
     }
     Rotation {
-      Pitch: -4.31665039
-      Yaw: -163.659195
-      Roll: -0.310302734
+      Pitch: 2.60139346
     }
     Scale {
-      X: 8.93676281
-      Y: 8.93668079
-      Z: 2.12852526
+      X: 15.8369875
+      Y: 41.8644409
+      Z: 9.71596718
     }
   }
   ParentId: 3323884308924931292
