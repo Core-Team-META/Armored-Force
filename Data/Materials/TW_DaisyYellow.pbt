@@ -9,8 +9,8 @@
       Overrides {
         Name: "color"
         Color {
-          R: 0.799999952
-          G: 0.445033103
+          R: 1
+          G: 0.900000036
           A: 1
         }
       }

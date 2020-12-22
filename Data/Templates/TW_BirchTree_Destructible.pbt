@@ -10,12 +10,12 @@
         Name: "TW_BirchTree_Destructible"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.18545437
+            Y: 1.18545437
+            Z: 1.18545437
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 3464302058630838082
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -255,11 +255,9 @@
         ParentId: 7430713644516181526
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0975
-              G: 0.234000012
-              A: 1
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 5200444972158461565
             }
           }
         }
