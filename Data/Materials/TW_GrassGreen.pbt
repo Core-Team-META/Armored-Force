@@ -1,35 +1,35 @@
 ﻿Assets {
   Id: 5688061251102705055
-  Name: "GrassGreen"
+  Name: "TW_GrassGreen"
   PlatformAssetType: 13
   SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 12223811200745286487
     ParameterOverrides {
       Overrides {
-        Name: "color"
-        Color {
-          R: 0.171725
-          G: 0.244792
-          B: 0.030159
-          A: 1
-        }
-      }
-      Overrides {
         Name: "color_roots"
         Color {
-          R: 0.171725
-          G: 0.244792
-          B: 0.030159
+          R: 0.18116425
+          G: 0.171441093
+          B: 0.0356013142
           A: 1
         }
       }
       Overrides {
         Name: "SSS"
         Color {
-          R: 0.171725
-          G: 0.244792
-          B: 0.030159
+          R: 0.225658745
+          G: 0.249000013
+          B: 0.0489319898
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          R: 0.225658745
+          G: 0.249000013
+          B: 0.0489319898
           A: 1
         }
       }
