@@ -2390,7 +2390,7 @@ Objects {
     Rotation {
       Pitch: 0.193267018
       Yaw: 113.365379
-      Roll: -1.21395886
+      Roll: -1.21395874
     }
     Scale {
       X: 1.00002885
