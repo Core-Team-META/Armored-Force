@@ -71,15 +71,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12578587233899497834
-  Name: "Tree Birch 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_003"
-  }
-}
-Assets {
   Id: 12145181589079789543
   Name: "Decal Stains Top 01"
   PlatformAssetType: 14
@@ -104,15 +95,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
-  Id: 11296696299295417863
-  Name: "Tree Birch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_001"
   }
 }
 Assets {
