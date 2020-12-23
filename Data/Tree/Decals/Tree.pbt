@@ -920,12 +920,12 @@ Objects {
     Location {
       X: 5073.47559
       Y: -22156.1133
-      Z: 1002.30365
+      Z: 844.753113
     }
     Rotation {
-      Pitch: 0.193267018
-      Yaw: 116.487724
-      Roll: -1.21395874
+      Pitch: 0.193232864
+      Yaw: 116.487206
+      Roll: -2.47964478
     }
     Scale {
       X: 1.00002885
@@ -957,56 +957,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2746469917675842562
-  Name: "Decal Tread Tracks 01"
-  Transform {
-    Location {
-      X: 4403.23486
-      Y: -22519.793
-      Z: 1002.30365
-    }
-    Rotation {
-      Pitch: 0.193267018
-      Yaw: 101.414764
-      Roll: -1.21395874
-    }
-    Scale {
-      X: 1.00002885
-      Y: 3.24999118
-      Z: 0.617821336
-    }
-  }
-  ParentId: 3323884308924931292
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Bend"
-      Float: -2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13100330238861707551
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
   Id: 2515100479042617902
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
       X: 5588.17627
       Y: -22110.0508
-      Z: 1002.30365
+      Z: 838.952759
     }
     Rotation {
       Pitch: 0.193267018
@@ -1769,10 +1726,10 @@ Objects {
     Location {
       X: -14286.8896
       Y: -30510.3105
-      Z: 1018.57715
+      Z: 928.246826
     }
     Rotation {
-      Pitch: -0.0520938486
+      Pitch: -0.0520935059
       Yaw: 130.009979
       Roll: 0.399206489
     }
@@ -1851,7 +1808,7 @@ Objects {
     Location {
       X: -11625.3535
       Y: -28919.8535
-      Z: 1040.35425
+      Z: 908.641602
     }
     Rotation {
       Yaw: 122.575142
@@ -1889,12 +1846,12 @@ Objects {
     Location {
       X: -12973
       Y: -29770.0762
-      Z: 1003.98395
+      Z: 904.630615
     }
     Rotation {
-      Pitch: 0.142634839
-      Yaw: 123.167931
-      Roll: -1.89974976
+      Pitch: -1.20733643
+      Yaw: 123.148956
+      Roll: 0.166339576
     }
     Scale {
       X: 1.17981553
@@ -1930,14 +1887,14 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: -10355.2227
-      Y: -28256.7559
-      Z: 1025.21021
+      X: -10373.5029
+      Y: -28231.4824
+      Z: 930.237915
     }
     Rotation {
       Pitch: 0.19949615
-      Yaw: 115.059395
-      Roll: -1.90313733
+      Yaw: 115.059204
+      Roll: -0.228942871
     }
     Scale {
       X: 1.17981553
@@ -1975,7 +1932,7 @@ Objects {
     Location {
       X: -8901.1084
       Y: -27605.1504
-      Z: 1061.46021
+      Z: 928.338623
     }
     Rotation {
       Pitch: 0.0566086061
@@ -2014,7 +1971,7 @@ Objects {
     Location {
       X: -6084.77539
       Y: -26505.8574
-      Z: 1101.92786
+      Z: 940.606079
     }
     Rotation {
       Pitch: 0.0819144547
@@ -2053,12 +2010,12 @@ Objects {
     Location {
       X: -7571.19287
       Y: -27086.4707
-      Z: 1065.755
+      Z: 927.869263
     }
     Rotation {
-      Pitch: 0.124316268
-      Yaw: 112.801483
-      Roll: -1.9095155
+      Pitch: 0.124309435
+      Yaw: 112.801193
+      Roll: 0.728157401
     }
     Scale {
       X: 1.17981553
@@ -2096,12 +2053,12 @@ Objects {
     Location {
       X: -3501.28223
       Y: -25628.3047
-      Z: 1062.09644
+      Z: 925.796753
     }
     Rotation {
-      Pitch: -0.00683701877
-      Yaw: 106.65316
-      Roll: -1.22387695
+      Pitch: -0.0068359375
+      Yaw: 106.65329
+      Roll: 1.20324326
     }
     Scale {
       X: 1.17981553
@@ -2135,12 +2092,12 @@ Objects {
     Location {
       X: -5022.30615
       Y: -26098.5664
-      Z: 1115.34448
+      Z: 952.223511
     }
     Rotation {
       Pitch: 0.0357013978
-      Yaw: 108.6446
-      Roll: -1.9153136
+      Yaw: 108.64463
+      Roll: 0.151077062
     }
     Scale {
       X: 1.17981553
@@ -2178,12 +2135,12 @@ Objects {
     Location {
       X: -2728.05396
       Y: -25321.9238
-      Z: 1128.44202
+      Z: 928.136902
     }
     Rotation {
       Pitch: 0.0357013978
       Yaw: 108.6446
-      Roll: -1.9153136
+      Roll: 0.0921361446
     }
     Scale {
       X: 1.17981553
@@ -2221,12 +2178,12 @@ Objects {
     Location {
       X: -1220.26978
       Y: -24855.041
-      Z: 1075.48572
+      Z: 943.047241
     }
     Rotation {
       Pitch: 0.0356945656
-      Yaw: 108.644432
-      Roll: -1.22338867
+      Yaw: 108.644463
+      Roll: 1.03752482
     }
     Scale {
       X: 1.17981553
@@ -2260,12 +2217,12 @@ Objects {
     Location {
       X: -630.601807
       Y: -24627.2363
-      Z: 1160.52734
+      Z: 957.424683
     }
     Rotation {
       Pitch: 0.193273857
-      Yaw: 113.365517
-      Roll: -1.90588391
+      Yaw: 113.365044
+      Roll: 1.68725884
     }
     Scale {
       X: 1.00002885
@@ -2301,9 +2258,9 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: 962.868103
-      Y: -23974.4277
-      Z: 1104.69836
+      X: 993.441956
+      Y: -24039.0605
+      Z: 1035.14648
     }
     Rotation {
       Pitch: 0.193267018
@@ -2311,9 +2268,9 @@ Objects {
       Roll: -1.21395874
     }
     Scale {
-      X: 1.00002885
-      Y: 3.24999118
-      Z: 0.617821336
+      X: 1.00001824
+      Y: 3.24999452
+      Z: 0.163549244
     }
   }
   ParentId: 3323884308924931292
@@ -2342,12 +2299,12 @@ Objects {
     Location {
       X: 2282.59375
       Y: -23402.0527
-      Z: 1055.26404
+      Z: 913.185913
     }
     Rotation {
       Pitch: 0.193273857
       Yaw: 113.365585
-      Roll: -1.90588415
+      Roll: -1.90588379
     }
     Scale {
       X: 1.00002885
@@ -2385,7 +2342,7 @@ Objects {
     Location {
       X: 3743.55396
       Y: -22770.6855
-      Z: 1002.30365
+      Z: 875.846252
     }
     Rotation {
       Pitch: 0.193267018
