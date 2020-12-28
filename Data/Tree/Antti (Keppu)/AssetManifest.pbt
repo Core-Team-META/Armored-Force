@@ -8,12 +8,48 @@
   }
 }
 Assets {
+  Id: 18052318672521571529
+  Name: "Large Wood Board 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
+  Id: 17246754151924769898
+  Name: "Fantasy Castle Floor 03 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_003_4m_ref"
+  }
+}
+Assets {
+  Id: 17112985054030154012
+  Name: "Urban Plank Debris 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urban_destruction_debris_plank_02_ref"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_SunLight"
+  }
+}
+Assets {
+  Id: 16587759780299340145
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
   }
 }
 Assets {
@@ -26,12 +62,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15812398897488532618
+  Name: "Large Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
   Id: 15630366334838468242
   Name: "Bush 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
+  Id: 15585852823533740787
+  Name: "Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_001"
   }
 }
 Assets {
@@ -71,12 +125,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12250067734840047801
+  Name: "Wedge - Corner-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_002"
+  }
+}
+Assets {
   Id: 12145181589079789543
   Name: "Decal Stains Top 01"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_top_001"
+  }
+}
+Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
   }
 }
 Assets {
@@ -104,6 +176,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "cliff_002"
+  }
+}
+Assets {
+  Id: 10905138335060518079
+  Name: "Rock Block 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
+  Id: 10850769815684373087
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
   }
 }
 Assets {
@@ -170,6 +260,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6850673296695379879
+  Name: "Wood 2x4 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_two-by-four_3m"
+  }
+}
+Assets {
   Id: 6097322293129727319
   Name: "Tree Oak 01"
   PlatformAssetType: 1
@@ -185,6 +284,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_005"
+  }
+}
+Assets {
+  Id: 5531833663473274763
+  Name: "Urban Damaged Concrete Pillar - Bottom 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_concrete_pillar_bottom_002_ref"
+  }
+}
+Assets {
+  Id: 5483772166785938526
+  Name: "Urban Damaged Concrete Chunk 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_concrete_chunk_003_ref"
   }
 }
 Assets {
@@ -215,6 +332,24 @@ Assets {
   }
 }
 Assets {
+  Id: 4096954105294154559
+  Name: "Urban Plank Debris 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urban_destruction_debris_plank_03_ref"
+  }
+}
+Assets {
+  Id: 3998592366905403415
+  Name: "Glass 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_refrac_001"
+  }
+}
+Assets {
   Id: 3377721323622766709
   Name: "Rock Pile 002"
   PlatformAssetType: 1
@@ -242,6 +377,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1758388402481224558
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_test_001"
+  }
+}
+Assets {
   Id: 1258576880535144840
   Name: "Underwater Post Process"
   PlatformAssetType: 20
@@ -257,5 +401,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 526843540183677030
+  Name: "Urban Plank Debris 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urban_destruction_debris_plank_04_ref"
   }
 }
