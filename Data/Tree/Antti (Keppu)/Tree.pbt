@@ -1,6 +1,9646 @@
 ﻿Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
+  Id: 15766877841901587305
+  Name: "TW_ElectricityPole01_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8497060271531294536
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_ElectricityPole01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1744.93982
+            Y: 4987.40332
+            Z: 692.154175
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.0078125
+            Yaw: 59.3967705
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14369695202381680389
+    }
+  }
+}
+Objects {
+  Id: 7886657691810872462
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -12392.1602
+      Y: 15117.2178
+      Z: 619.465
+    }
+    Rotation {
+      Pitch: 2.5233109
+      Yaw: -17.8006973
+      Roll: -0.161560014
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12809.9443
+            Y: 15129.3193
+            Z: 669.539551
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.06001115
+            Yaw: 0.590749264
+            Roll: 0.642743528
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17133184160089122010
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -11211.8428
+      Y: 14734.4141
+      Z: 674.137878
+    }
+    Rotation {
+      Pitch: 2.14143491
+      Yaw: -46.2771072
+      Roll: -1.34490979
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12394.4355
+            Y: 15117.791
+            Z: 672.597229
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.414735883
+            Yaw: -17.7924252
+            Roll: -0.161407426
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9032563564898869201
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10939.1104
+      Y: 14429.9385
+      Z: 681.675415
+    }
+    Rotation {
+      Pitch: 2.6477704
+      Yaw: -46.2889175
+      Roll: -1.34536767
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11976.3867
+            Y: 14995.9268
+            Z: 677.468872
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.751805723
+            Yaw: -17.7956333
+            Roll: -0.161315888
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 10604536193286504850
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10657.7822
+      Y: 14130.7
+      Z: 691.148499
+    }
+    Rotation {
+      Pitch: -0.622407794
+      Yaw: -46.2119827
+      Roll: -1.34414685
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11599.1416
+            Y: 14858.6816
+            Z: 682.72583
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.929779947
+            Yaw: -17.790659
+            Roll: -0.161529541
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9921660949154196353
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -11737.8887
+      Y: 12666.5967
+      Z: 654.066406
+    }
+    Rotation {
+      Pitch: 1.75986648
+      Yaw: 3.55464697
+      Roll: 3.3366272e-09
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11224.7813
+            Y: 14683.0264
+            Z: 674.138062
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.14143491
+            Yaw: -46.2771072
+            Roll: -1.34490979
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 939561195699920853
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -11328.3125
+      Y: 12678.4951
+      Z: 647.04657
+    }
+    Rotation {
+      Pitch: 3.27224779
+      Yaw: 3.55461979
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10939.1104
+            Y: 14429.9385
+            Z: 681.675415
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.6477704
+            Yaw: -46.2889175
+            Roll: -1.34536767
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17247493487902948787
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10919.4033
+      Y: 12700.2295
+      Z: 659.944824
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10657.7822
+            Y: 14130.7
+            Z: 691.148499
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.622407794
+            Yaw: -46.2119827
+            Roll: -1.34414685
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15338118526550558995
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10180.3047
+      Y: 13243.1104
+      Z: 673.770691
+    }
+    Rotation {
+      Pitch: -1.01674879
+      Yaw: 100.341911
+      Roll: -0.354766965
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10288.5723
+            Y: 13637.4609
+            Z: 667.585693
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.24326634
+            Yaw: 118.935249
+            Roll: 0.380774945
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 828498262722127346
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10212.7305
+      Y: 12852.0059
+      Z: 676.85022
+    }
+    Rotation {
+      Pitch: -1.07717538
+      Yaw: 81.0613403
+      Roll: 5.33702824e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10180.3047
+            Y: 13243.1104
+            Z: 673.770691
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.01674879
+            Yaw: 100.341911
+            Roll: -0.354766965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15698295382425817192
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10521.5234
+      Y: 12720.3711
+      Z: 674.43866
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10212.7305
+            Y: 12852.0059
+            Z: 676.85022
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.07717538
+            Yaw: 81.0613403
+            Roll: 5.33702824e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 209955560563503071
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10767.0664
+      Y: 11522.6377
+      Z: 687.060242
+    }
+    Rotation {
+      Pitch: 2.25870252
+      Yaw: 3.55461979
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11737.8887
+            Y: 12666.5967
+            Z: 654.066406
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.75986648
+            Yaw: 3.55464697
+            Roll: 3.3366272e-09
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17563592230639447869
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9578.75098
+      Y: 11545.5469
+      Z: 688.502686
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10521.5234
+            Y: 12720.3711
+            Z: 674.43866
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.55461287
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 4090416135927146581
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9948.44238
+      Y: 11556.2793
+      Z: 712.059143
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10919.4033
+            Y: 12700.2295
+            Z: 659.944824
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.55461287
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6201476065161051200
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10373.3242
+      Y: 11533.5527
+      Z: 691.082458
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11328.3125
+            Y: 12678.4951
+            Z: 647.04657
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.27224779
+            Yaw: 3.55461979
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2391713059100848305
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4571.36035
+      Y: 8128.85352
+      Z: 720.008484
+    }
+    Rotation {
+      Pitch: -0.140408188
+      Yaw: 130.571564
+      Roll: -1.70114112
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5051.00928
+            Y: 8749.45117
+            Z: 716.921631
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.258884639
+            Yaw: 126.56707
+            Roll: -1.68719482
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2644920613818269632
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4274.89258
+      Y: 8225.20801
+      Z: 711.75238
+    }
+    Rotation {
+      Pitch: 1.65294671
+      Yaw: -149.163803
+      Roll: -0.425872773
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4571.36035
+            Y: 8128.85352
+            Z: 720.008484
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.140408188
+            Yaw: 130.571564
+            Roll: -1.70114112
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3835967680166094015
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -3918.11914
+      Y: 8438.03906
+      Z: 682.086487
+    }
+    Rotation {
+      Pitch: 5.17152548
+      Yaw: -149.19014
+      Roll: -0.42742911
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4235.09424
+            Y: 8209.29102
+            Z: 711.255
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.65294671
+            Yaw: -149.163803
+            Roll: -0.425872773
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 226707541593782725
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4810.77832
+      Y: 9309.39551
+      Z: 702.051453
+    }
+    Rotation {
+      Pitch: -5.189147
+      Yaw: 35.541378
+      Roll: 1.07160893e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5148.2793
+            Y: 9068.60156
+            Z: 712.203369
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.68243265
+            Yaw: 35.5502548
+            Roll: 0.288630426
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8225286895047283293
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4083.37061
+      Y: 8291.16406
+      Z: 702.051453
+    }
+    Rotation {
+      Pitch: -5.189147
+      Yaw: 35.541378
+      Roll: 1.07160893e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4810.77832
+            Y: 9309.39551
+            Z: 702.051453
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.189147
+            Yaw: 35.541378
+            Roll: 1.07160893e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16477001909256159575
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6048.12646
+      Y: 7333.54346
+      Z: 752.673523
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3878.3208
+            Y: 8422.12207
+            Z: 681.589111
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 5.17152548
+            Yaw: -149.19014
+            Roll: -0.42742911
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12248199711991078615
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 7270
+      Y: -2990
+      Z: 750
+    }
+    Rotation {
+      Pitch: -1.05221796
+      Yaw: 141.062271
+      Roll: 0.981670082
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6649.13818
+            Y: -2513.92676
+            Z: 801.825317
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.752488732
+            Yaw: 141.093384
+            Roll: 0.981577218
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2248971109296504896
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 7520
+      Y: -2830
+      Z: 755
+    }
+    Rotation {
+      Pitch: -0.981505
+      Yaw: -128.919678
+      Roll: -1.05236804
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7270
+            Y: -2990
+            Z: 750
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.07208228
+            Yaw: 141.13324
+            Roll: 0.982915163
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8039898803077774910
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 7520
+      Y: -2830
+      Z: 755
+    }
+    Rotation {
+      Pitch: -0.981505
+      Yaw: -128.919678
+      Roll: -1.05236804
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6432.56445
+            Y: -2238.81738
+            Z: 810.64032
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -3.29552507
+            Yaw: 51.0019226
+            Roll: 1.05395091
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15154287211356393731
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2547.95679
+      Y: -1977.797
+      Z: 770.253479
+    }
+    Rotation {
+      Pitch: 1.05222476
+      Yaw: -38.9378128
+      Roll: -0.981658936
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7520
+            Y: -2830
+            Z: 755
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.981505
+            Yaw: -128.919678
+            Roll: -1.05236804
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 7313813909734893145
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9286.78809
+      Y: 3776.0188
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: -3.39367747
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11390.8408
+            Y: 3900.78955
+            Z: 390.915344
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.10992718
+            Yaw: -3.39367747
+            Roll: -2.69499445e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2436727053643262183
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10154.4805
+      Y: 3817.25146
+      Z: 688.268616
+    }
+    Rotation {
+      Yaw: -3.39367747
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12252.7832
+            Y: 3941.68115
+            Z: 258.028534
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 9.9784
+            Yaw: -3.39367747
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9849971199660034529
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9720.92871
+      Y: 3799.89258
+      Z: 688.268616
+    }
+    Rotation {
+      Yaw: -3.39367747
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11821.3223
+            Y: 3924.44629
+            Z: 323.881897
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.80569839
+            Yaw: -3.39367723
+            Roll: -2.69986522e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11492727626889489185
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10571.0488
+      Y: 3842.25122
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: -3.39367747
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12670.0557
+            Y: 3966.7229
+            Z: 194.1017
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.42473602
+            Yaw: -3.39367747
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15902706589454143581
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -12194.5459
+      Y: 5694.96094
+      Z: 424.548737
+    }
+    Rotation {
+      Pitch: 3.41367364
+      Yaw: 35.5413742
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12790.7363
+            Y: 6027.96436
+            Z: 163.977722
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 13.4894791
+            Yaw: 9.66540718
+            Roll: -1.51406884
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 7207019733862086091
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -11847.0244
+      Y: 5953.47217
+      Z: 450.380219
+    }
+    Rotation {
+      Pitch: 3.41367364
+      Yaw: 35.5413742
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12400.6279
+            Y: 6103.49609
+            Z: 234.985413
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 9.99689
+            Yaw: 9.75931835
+            Roll: -1.494995
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2396900622179795227
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10449.8311
+      Y: 6953.89746
+      Z: 592.154175
+    }
+    Rotation {
+      Pitch: 3.41367364
+      Yaw: 35.5413742
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11552.2979
+            Y: 6275.3877
+            Z: 401.045135
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 12.0420942
+            Yaw: 16.258543
+            Roll: -1.14019763
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12610685173747997419
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -11148.9648
+      Y: 6441.90674
+      Z: 530.902283
+    }
+    Rotation {
+      Pitch: 3.41367364
+      Yaw: 35.5413742
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11959.8896
+            Y: 6170.98535
+            Z: 307.743652
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 15.8700666
+            Yaw: 9.60004425
+            Roll: -1.53063941
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6726546814114446960
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9407.58301
+      Y: 7698.46191
+      Z: 681.472168
+    }
+    Rotation {
+      Pitch: 3.41367364
+      Yaw: 35.5413742
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10449.8311
+            Y: 6953.89746
+            Z: 592.154175
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 5.49972963
+            Yaw: 35.541378
+            Roll: -1.07215243e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6968504406118457491
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10106.7168
+      Y: 7186.47119
+      Z: 620.220276
+    }
+    Rotation {
+      Pitch: 3.41367364
+      Yaw: 35.5413742
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11144.8223
+            Y: 6444.86621
+            Z: 492.913635
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.63396549
+            Yaw: 35.5413857
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15224648423930886783
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9759.19531
+      Y: 7444.98242
+      Z: 646.051758
+    }
+    Rotation {
+      Pitch: 3.41367364
+      Yaw: 35.5413742
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10801.4434
+            Y: 6700.41797
+            Z: 556.733765
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.07784557
+            Yaw: 35.5413742
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 14104677015450223635
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -6889.78
+      Y: 1659.38916
+      Z: 647.834656
+    }
+    Rotation {
+      Pitch: -67.742424
+    }
+    Scale {
+      X: 3.41040158
+      Y: 3.41040158
+      Z: 3.41040158
+    }
+  }
+  ParentId: 4689494391382931675
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1297323988849400448
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2072.10498
+      Y: -4610.95605
+      Z: 468.615479
+    }
+    Rotation {
+      Pitch: 0.0583434738
+      Yaw: 144.221741
+      Roll: 0.825380623
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2751.33228
+            Y: -4928.33936
+            Z: 456.366943
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.00644769799
+            Yaw: 148.342361
+            Roll: 0.616942644
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3583819799363661037
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2424.75537
+      Y: -4863.37109
+      Z: 501.175232
+    }
+    Rotation {
+      Pitch: -1.39785278
+      Yaw: 144.200821
+      Roll: 0.825628936
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3122.99146
+            Y: -5155.52734
+            Z: 474.159363
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.44976902
+            Yaw: 148.327103
+            Roll: 0.617142737
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15710919629533289191
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 3659.55859
+      Y: -4110.34424
+      Z: 638.94812
+    }
+    Rotation {
+      Pitch: 2.54561138
+      Yaw: -117.135139
+      Roll: -2.96344
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3371.82
+            Y: -4886.05
+            Z: 550.667053
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -13.8949261
+            Yaw: -115.124733
+            Roll: -2.99621654
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 1927774655852747783
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1714.88098
+      Y: -4363.53174
+      Z: 454.124207
+    }
+    Rotation {
+      Pitch: -2.8678596
+      Yaw: 144.17952
+      Roll: 0.826426327
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3561.35693
+            Y: -4504.51514
+            Z: 631.320129
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -8.54864407
+            Yaw: -115.408005
+            Roll: -2.94073582
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16983448963973299047
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2072.10498
+      Y: -4610.95605
+      Z: 468.615479
+    }
+    Rotation {
+      Pitch: 0.0583434738
+      Yaw: 144.221741
+      Roll: 0.825380623
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3730.82202
+            Y: -4130.91895
+            Z: 671.020325
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.25317335
+            Yaw: -115.578079
+            Roll: -2.9207468
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9968197330372037022
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2424.75537
+      Y: -4863.37109
+      Z: 501.175232
+    }
+    Rotation {
+      Pitch: -1.39785278
+      Yaw: 144.200821
+      Roll: 0.825628936
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3915.35669
+            Y: -3739.62036
+            Z: 723.050232
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -6.16482592
+            Yaw: -115.531197
+            Roll: -2.92449951
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15776395080535706280
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 3228.2019
+      Y: -2516.12427
+      Z: 868.33374
+    }
+    Rotation {
+      Pitch: 2.81895542
+      Yaw: -38.9683609
+      Roll: -0.982726932
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4090.01025
+            Y: -3344.95215
+            Z: 753.27478
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -3.20546913
+            Yaw: -114.278748
+            Roll: 0.231186122
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 14469878124515679476
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2885.80762
+      Y: -2249.72363
+      Z: 839.441162
+    }
+    Rotation {
+      Pitch: 5.74496746
+      Yaw: -39.0187111
+      Roll: -0.986480772
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3867.70898
+            Y: -3026.82617
+            Z: 764.469238
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.50820923
+            Yaw: -38.9626503
+            Roll: -0.982421696
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 7345952045721357388
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2546.48975
+      Y: -1977.90161
+      Z: 828.80835
+    }
+    Rotation {
+      Pitch: 4.28898287
+      Yaw: -38.9936
+      Roll: -0.984253049
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3522.07349
+            Y: -2764.1709
+            Z: 761.124329
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.05222476
+            Yaw: -38.9378128
+            Roll: -0.981658936
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 4278545189962789945
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1645.97705
+      Y: -3250.42114
+      Z: 665.842041
+    }
+    Rotation {
+      Pitch: -0.222015291
+      Yaw: 74.5248489
+      Roll: 2.97620583
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1629.32251
+            Y: -4301.69482
+            Z: 444.103577
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.91989207
+            Yaw: 148.310715
+            Roll: 0.617754877
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12864937726162519090
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1538.38684
+      Y: -3671.65112
+      Z: 660.583862
+    }
+    Rotation {
+      Pitch: 2.70036983
+      Yaw: 74.676918
+      Roll: 2.97948551
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2000.94324
+            Y: -4521.06641
+            Z: 446.006287
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.00644769799
+            Yaw: 148.342361
+            Roll: 0.616942644
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17199368412779929451
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1423.6554
+      Y: -4090.95435
+      Z: 673.146
+    }
+    Rotation {
+      Pitch: 1.24607229
+      Yaw: 74.6013
+      Roll: 2.9768846
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2376.12256
+            Y: -4743.39746
+            Z: 456.147614
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.44976902
+            Yaw: 148.327103
+            Roll: 0.617142737
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16931013414762018183
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2252.97876
+      Y: -2162.75317
+      Z: 814.255127
+    }
+    Rotation {
+      Pitch: 0.957947612
+      Yaw: 51.5561447
+      Roll: 2.82666755
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1612.73059
+            Y: -3241.34766
+            Z: 633.273621
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 5.58072186
+            Yaw: 74.826767
+            Roll: 2.9901979
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3633895659375819929
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1989.65283
+      Y: -2508.43335
+      Z: 800.024597
+    }
+    Rotation {
+      Pitch: 3.88081765
+      Yaw: 51.7007942
+      Roll: 2.83276868
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1510.29541
+            Y: -3658.66821
+            Z: 552.500305
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 10.8918219
+            Yaw: 75.1080322
+            Roll: 3.03075099
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11893770498559621207
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1720.31079
+      Y: -2849.86963
+      Z: 803.62854
+    }
+    Rotation {
+      Pitch: 2.4263289
+      Yaw: 51.6287041
+      Roll: 2.82880783
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1379.27039
+            Y: -4033.31836
+            Z: 488.931885
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.95315456
+            Yaw: 75.0055
+            Roll: 3.01291752
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 1784067514055455473
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 3228.2019
+      Y: -2516.12427
+      Z: 868.33374
+    }
+    Rotation {
+      Pitch: 2.81895542
+      Yaw: -38.9683609
+      Roll: -0.982726932
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2257.96094
+            Y: -2162.04053
+            Z: 744.231
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.957947612
+            Yaw: 51.5561447
+            Roll: 2.82666755
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11964741760654663143
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2885.80762
+      Y: -2249.72363
+      Z: 839.441162
+    }
+    Rotation {
+      Pitch: 5.74496746
+      Yaw: -39.0187111
+      Roll: -0.986480772
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1995.94324
+            Y: -2508.1897
+            Z: 703.364441
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.88081765
+            Yaw: 51.7007942
+            Roll: 2.83276868
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6280202550654324645
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 2546.48975
+      Y: -1977.90161
+      Z: 828.80835
+    }
+    Rotation {
+      Pitch: 4.28898287
+      Yaw: -38.9936
+      Roll: -0.984253049
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1729.35742
+            Y: -2849.0625
+            Z: 670.375305
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 5.14318
+            Yaw: 51.7635651
+            Roll: 2.8377068
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12853849120381712979
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 750.552124
+      Y: -181.841858
+      Z: 709.017456
+    }
+    Rotation {
+      Pitch: 4.05001497
+      Yaw: -49.9958878
+      Roll: -1.50412011
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2547.95679
+            Y: -1977.797
+            Z: 770.253479
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.05222476
+            Yaw: -38.9378128
+            Roll: -0.981658936
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6561100557004351253
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1693.64673
+      Y: -105.141754
+      Z: 673.735107
+    }
+    Rotation {
+      Pitch: 1.11230302
+      Yaw: 86.193306
+      Roll: 1.0117842
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1967.97742
+            Y: -2235.2854
+            Z: 370.391541
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.40276337
+            Yaw: 83.5066528
+            Roll: 0.964249134
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12632392926583322750
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1740.9364
+      Y: -972.178467
+      Z: 647.507141
+    }
+    Rotation {
+      Pitch: 1.11230302
+      Yaw: 86.193306
+      Roll: 1.0117842
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2055.7251
+            Y: -3097.20288
+            Z: 253.583099
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 6.82440376
+            Yaw: 83.497
+            Roll: 0.963045716
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 18099653890773783092
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1720.46082
+      Y: -538.841614
+      Z: 655.782837
+    }
+    Rotation {
+      Pitch: 1.11230302
+      Yaw: 86.193306
+      Roll: 1.0117842
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2015.03967
+            Y: -2667.4978
+            Z: 299.255066
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.56835556
+            Yaw: 83.5265656
+            Roll: 0.967010677
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 34250147921300937
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1769.11646
+      Y: -1388.65198
+      Z: 648.944153
+    }
+    Rotation {
+      Pitch: 1.11230302
+      Yaw: 86.193306
+      Roll: 1.0117842
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2094.51953
+            Y: -3520.85815
+            Z: 214.352905
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 6.06138945
+            Yaw: 86.2810745
+            Roll: 1.01728165
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6752283220522639383
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 119.939209
+      Y: 68.4162598
+      Z: 711.19635
+    }
+    Rotation {
+      Pitch: 0.977994263
+      Yaw: -5.53381729
+      Roll: -1.14218128
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1725.22498
+            Y: -98.9025879
+            Z: 673.251343
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.16023731
+            Yaw: 83.4019928
+            Roll: 0.956420958
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17350178343899188799
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -745.294556
+      Y: 142.180908
+      Z: 686.621338
+    }
+    Rotation {
+      Pitch: 0.977994263
+      Yaw: -5.53381729
+      Roll: -1.14218128
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1813.48718
+            Y: -962.754578
+            Z: 573.721863
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.56095219
+            Yaw: 83.526268
+            Roll: 0.966997
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9938970352635522360
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -312.760376
+      Y: 108.651367
+      Z: 694.193176
+    }
+    Rotation {
+      Pitch: 0.977994263
+      Yaw: -5.53381729
+      Roll: -1.14218128
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1772.85327
+            Y: -529.8703
+            Z: 644.383057
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 4.99238968
+            Yaw: 83.4660568
+            Roll: 0.959861934
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12457210247999305007
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1160.76111
+      Y: 182.543762
+      Z: 689.04834
+    }
+    Rotation {
+      Pitch: 0.977994263
+      Yaw: -5.53381729
+      Roll: -1.14218128
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1860.67749
+            Y: -1374.85754
+            Z: 519.009644
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.01588106
+            Yaw: 83.5002747
+            Roll: 0.963439941
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12499606371671804287
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1593.29602
+      Y: 216.076843
+      Z: 681.477844
+    }
+    Rotation {
+      Pitch: 0.977994263
+      Yaw: -5.53381729
+      Roll: -1.14218128
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1900.67981
+            Y: -1803.36255
+            Z: 440.764771
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 10.0480547
+            Yaw: 83.5518951
+            Roll: 0.971108437
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 5471585298008489810
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 31.2527771
+      Y: -3666.3396
+      Z: 462.878754
+    }
+    Rotation {
+      Pitch: -1.29519498
+      Yaw: -105.557068
+      Roll: -0.764526248
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 366.18454
+            Y: -2454.06909
+            Z: 676.26178
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -8.85739613
+            Yaw: -105.455589
+            Roll: -0.77355957
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12543396847717514581
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 139.551926
+      Y: -3246.27979
+      Z: 472.573395
+    }
+    Rotation {
+      Pitch: -1.29519498
+      Yaw: -105.557068
+      Roll: -0.764526248
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 473.997589
+            Y: -2034.47681
+            Z: 711.64624
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.29519498
+            Yaw: -105.557068
+            Roll: -0.764526248
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 10861750432401162542
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 939.789429
+      Y: -1621.32434
+      Z: 731.009338
+    }
+    Rotation {
+      Pitch: -1.50041485
+      Yaw: -139.84549
+      Roll: 0.0981888697
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 56.1836319
+            Y: -3619.29126
+            Z: 437.775574
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -13.597806
+            Yaw: -105.389679
+            Roll: -0.786376238
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 4701932048897376430
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1265.87805
+      Y: -1335.30261
+      Z: 742.382507
+    }
+    Rotation {
+      Pitch: -1.50041485
+      Yaw: -139.84549
+      Roll: 0.0981888697
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 136.730759
+            Y: -3254.3833
+            Z: 513.189697
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -11.9036255
+            Yaw: -105.413391
+            Roll: -0.781128168
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 330382257720950428
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1597.05261
+      Y: -1053.42212
+      Z: 744.225403
+    }
+    Rotation {
+      Pitch: -1.50041485
+      Yaw: -139.84549
+      Roll: 0.0981888697
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 249.455719
+            Y: -2838.55737
+            Z: 602.420776
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -13.6153803
+            Yaw: -105.389664
+            Roll: -0.786438107
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15641154040444173677
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1496.86108
+      Y: -753.250305
+      Z: 722.28479
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 760.744263
+            Y: -1707.81018
+            Z: 726.048889
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.50041485
+            Yaw: -139.84549
+            Roll: 0.0981888697
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 905569485102975379
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1210.98047
+      Y: -426.841125
+      Z: 722.818
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1086.83289
+            Y: -1421.78845
+            Z: 737.422058
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.50041485
+            Yaw: -139.84549
+            Roll: 0.0981888697
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 10012675108434984035
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 929.59729
+      Y: -95.3560181
+      Z: 713.977905
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1418.00745
+            Y: -1139.90796
+            Z: 739.264954
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.50041485
+            Yaw: -139.84549
+            Roll: 0.0981888697
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 18327170020696740257
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1496.86108
+      Y: -753.250305
+      Z: 722.28479
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 373.432129
+            Y: -51.6063232
+            Z: 713.807129
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.977994263
+            Yaw: -5.53381729
+            Roll: -1.14218128
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 13561331383729253734
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 1210.98047
+      Y: -426.841125
+      Z: 722.818
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 119.939209
+            Y: 68.4162598
+            Z: 711.19635
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.977994263
+            Yaw: -5.53381729
+            Roll: -1.14218128
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 7750673307893366456
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 374.885
+      Y: 550.220398
+      Z: 724.786072
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1160.76111
+            Y: 182.543762
+            Z: 689.04834
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.977994263
+            Yaw: -5.53381729
+            Roll: -1.14218128
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17133463671608464661
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: 89.0032959
+      Y: 876.625183
+      Z: 725.319702
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1593.29602
+            Y: 216.076843
+            Z: 681.477844
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.977994263
+            Yaw: -5.53381729
+            Roll: -1.14218128
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11734432897833232080
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -2599.94287
+      Y: 3476.29272
+      Z: 759.874268
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1317.29224
+            Y: -840.240173
+            Z: 745.016418
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.58026767
+            Yaw: -49.9572182
+            Roll: -1.50189233
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 7606231799499366715
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -2885.82349
+      Y: 3802.7019
+      Z: 760.407471
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1031.9353
+            Y: -513.326965
+            Z: 717.857544
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 5.50569916
+            Yaw: -50.0343132
+            Roll: -1.50732422
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 10948065843220224957
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -3167.20654
+      Y: 4134.18652
+      Z: 751.567383
+    }
+    Rotation {
+      Pitch: -0.0993041173
+      Yaw: -49.8869781
+      Roll: -1.50036633
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 750.552124
+            Y: -181.841858
+            Z: 709.017456
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 4.05001497
+            Yaw: -49.9958878
+            Roll: -1.50412011
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12320200433990319995
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5765.83252
+      Y: 1458.40918
+      Z: 663.266663
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6667.08057
+            Y: 2182.36646
+            Z: 664.805054
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.203327894
+            Yaw: 126.129105
+            Roll: 1.4898349
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9105065890786031844
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4907.11963
+      Y: 1589.58838
+      Z: 672.344727
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6143.84717
+            Y: 1482.43909
+            Z: 672.575378
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.203327894
+            Yaw: 126.129105
+            Roll: 1.4898349
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6617517463309948276
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5335.45361
+      Y: 1520.95337
+      Z: 662.99408
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6406.36035
+            Y: 1827.91528
+            Z: 673.898438
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.203327894
+            Yaw: 126.129105
+            Roll: 1.4898349
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12628334700448413163
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -3657.0752
+      Y: 1746.88647
+      Z: 708.401855
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2599.94287
+            Y: 3476.29272
+            Z: 759.874268
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17202402371446629258
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -3228.73926
+      Y: 1815.52112
+      Z: 717.752502
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2885.82349
+            Y: 3802.7019
+            Z: 760.407471
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16804333732549362804
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -2370.03149
+      Y: 1946.70361
+      Z: 726.830383
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3453.08984
+            Y: 4460.58789
+            Z: 752.10022
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15974694672935620377
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -2798.3623
+      Y: 1878.0647
+      Z: 717.48
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3167.20654
+            Y: 4134.18652
+            Z: 751.567383
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6490244269512102650
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1957.00732
+      Y: 2004.32043
+      Z: 745.242065
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3721.91895
+            Y: 4779.7627
+            Z: 762.375549
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12112970913098164850
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -1528.67236
+      Y: 2072.95654
+      Z: 754.593079
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4007.80078
+            Y: 5106.16797
+            Z: 762.90918
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8784224431574666488
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4907.11963
+      Y: 1589.58838
+      Z: 672.344727
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1801.64136
+            Y: 2500.98682
+            Z: 747.672119
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11354909069936573381
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5335.45361
+      Y: 1520.95337
+      Z: 662.99408
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1648.86975
+            Y: 2196.08765
+            Z: 685.247253
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.50036025
+            Yaw: -139.889511
+            Roll: 0.0993381143
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 14452645838232470308
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4494.09619
+      Y: 1647.20752
+      Z: 690.756348
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2070.47314
+            Y: 2820.16016
+            Z: 757.947327
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3455735950879049242
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4065.76245
+      Y: 1715.84656
+      Z: 700.107056
+    }
+    Rotation {
+      Pitch: -1.218171
+      Yaw: -171.997498
+      Roll: 0.881547749
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2356.35669
+            Y: 3146.56372
+            Z: 758.48053
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0993041173
+            Yaw: -49.8869781
+            Roll: -1.50036633
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6441160466762786346
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5870
+      Y: 3465
+      Z: 697.816467
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3657.77246
+            Y: 1746.21558
+            Z: 745.260742
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.218171
+            Yaw: -171.997498
+            Roll: 0.881547749
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9451227587863868191
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6176.70801
+      Y: 3158.29175
+      Z: 686.432861
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3228.2688
+            Y: 1815.33508
+            Z: 733.99
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.55162084
+            Yaw: -171.954819
+            Roll: 0.881671369
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11675041803238488426
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6795.12
+      Y: 2549.03394
+      Z: 654.095703
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2369.46606
+            Y: 1947.24756
+            Z: 696.944702
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.75881457
+            Yaw: -171.951614
+            Roll: 0.881764352
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 5589179820299292931
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6488.41748
+      Y: 2855.74487
+      Z: 665.479431
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2798.3623
+            Y: 1878.0647
+            Z: 717.48
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.35780168
+            Yaw: -171.942413
+            Roll: 0.882096112
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9939987495822480603
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7096.10889
+      Y: 2259.80908
+      Z: 652.689758
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1956.07727
+            Y: 2005.3385
+            Z: 688.141968
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.535425305
+            Yaw: -171.986969
+            Roll: 0.881386876
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11144612064195573229
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4331.05957
+      Y: 4934.91455
+      Z: 753.678467
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5766.53
+            Y: 1457.73828
+            Z: 700.125549
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.218171
+            Yaw: -171.997498
+            Roll: 0.881547749
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 13862551550204187133
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4949.47461
+      Y: 4325.65967
+      Z: 721.341309
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4908.29053
+            Y: 1588.46167
+            Z: 734.251282
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.218171
+            Yaw: -171.997498
+            Roll: 0.881547749
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 5737705360696236522
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -4642.76953
+      Y: 4632.36816
+      Z: 732.724854
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5336.62793
+            Y: 1519.82349
+            Z: 725.070374
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.218171
+            Yaw: -171.997498
+            Roll: 0.881547749
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3681932650222091005
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5250.46191
+      Y: 4036.43408
+      Z: 719.935303
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4495.17627
+            Y: 1646.16833
+            Z: 747.851807
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.218171
+            Yaw: -171.997498
+            Roll: 0.881547749
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 13374538393234861246
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5557.16846
+      Y: 3729.72388
+      Z: 708.551758
+    }
+    Rotation {
+      Pitch: 1.50361824
+      Yaw: 43.8988228
+      Roll: 5.33792281e-08
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4066.66895
+            Y: 1714.97437
+            Z: 748.026611
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.218171
+            Yaw: -171.997498
+            Roll: 0.881547749
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 710387624196623192
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8725
+      Y: 3330
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5870
+            Y: 3465
+            Z: 697.816467
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.50361824
+            Yaw: 43.8988228
+            Roll: 5.33792281e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3893662953894498166
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9073.15234
+      Y: 3071.04199
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6176.70801
+            Y: 3158.29175
+            Z: 686.432861
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.50361824
+            Yaw: 43.8988228
+            Roll: 5.33792281e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17700379831818232378
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9774.00195
+      Y: 2557.82397
+      Z: 688.268616
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6795.12
+            Y: 2549.03394
+            Z: 654.095703
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.50361824
+            Yaw: 43.8988228
+            Roll: 5.33792281e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 10565483308213408112
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9425.85352
+      Y: 2816.78418
+      Z: 688.268616
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6488.41748
+            Y: 2855.74487
+            Z: 665.479431
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.50361824
+            Yaw: 43.8988228
+            Roll: 5.33792281e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 5285451885822993297
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6988.15186
+      Y: 4561.04199
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4331.05957
+            Y: 4934.91455
+            Z: 753.678467
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.50361824
+            Yaw: 43.8988228
+            Roll: 5.33792281e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16547951887212800502
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8028.74609
+      Y: 3805.48242
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5250.46191
+            Y: 4036.43408
+            Z: 719.935303
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.50361824
+            Yaw: 43.8988228
+            Roll: 5.33792281e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11292907800560739379
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8376.89844
+      Y: 3546.52393
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5557.16846
+            Y: 3729.72388
+            Z: 708.551758
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.50361824
+            Yaw: 43.8988228
+            Roll: 5.33792281e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 12687388796367900022
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6640
+      Y: 4820
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8853.23828
+            Y: 3758.65723
+            Z: 642.414124
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -3.39367747
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 18237682648349651288
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6988.15186
+      Y: 4561.04199
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9286.78809
+            Y: 3776.0188
+            Z: 629.030701
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -3.39367747
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3036245378106524784
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7689.00195
+      Y: 4047.82397
+      Z: 688.268616
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10147.0879
+            Y: 3816.81323
+            Z: 569.842773
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.80268717
+            Yaw: -3.39367747
+            Roll: 1.33696467e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 13112639069281965423
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7340.85303
+      Y: 4306.78418
+      Z: 688.268616
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9721.7207
+            Y: 3799.93945
+            Z: 594.85907
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 4.27597809
+            Yaw: -3.39367747
+            Roll: -1.33774485e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 1976108671296984273
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8028.74609
+      Y: 3805.48242
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10571.0488
+            Y: 3842.25122
+            Z: 526.284
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.69374323
+            Yaw: -3.39367771
+            Roll: 2.69227858e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2177029496461844584
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8376.89844
+      Y: 3546.52393
+      Z: 697.816467
+    }
+    Rotation {
+      Yaw: 35.5413094
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10989.5166
+            Y: 3858.71606
+            Z: 453.072815
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.77849293
+            Yaw: -3.39367771
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2366602299524378201
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6041.84814
+      Y: 7324.75488
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6640
+            Y: 4820
+            Z: 697.816467
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.16935
+            Yaw: 35.5413094
+            Roll: 5.33991198e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 144376364907262574
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6300.80664
+      Y: 7672.90625
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6988.15186
+            Y: 4561.04199
+            Z: 677.754
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.988123417
+            Yaw: 35.541317
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8890957516850680269
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6814.02393
+      Y: 8373.75586
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7689.00195
+            Y: 4047.82397
+            Z: 658.966187
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 35.5413094
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6790534430415217061
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6555.06543
+      Y: 8025.60742
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7340.85303
+            Y: 4306.78418
+            Z: 665.016968
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 35.5413094
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 6821063716598579617
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7056.36572
+      Y: 8713.49902
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8028.74609
+            Y: 3805.48242
+            Z: 644.796143
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 35.5413094
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15870389246302899803
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7315.32422
+      Y: 9061.65
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8436.1377
+            Y: 3707.71289
+            Z: 642.95636
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.27139306
+            Yaw: -3.39367747
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8284529197212363434
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5946.00537
+      Y: 6545.44
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -101.929459
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6259.12354
+            Y: 5295.38623
+            Z: 697.816345
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -112.304504
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9174148873373104908
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -5857.95605
+      Y: 6971.22266
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -101.929459
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6119.84033
+            Y: 5679.49121
+            Z: 717.346436
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -112.304504
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 7709375799741153017
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6041.84814
+      Y: 7324.75488
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6028.58203
+            Y: 6114.26758
+            Z: 733.489929
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -101.929459
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 4137425998583440943
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6300.80664
+      Y: 7672.90625
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5946.29785
+            Y: 6544.05469
+            Z: 753.498779
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.45657194
+            Yaw: -101.92952
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17308364470741505391
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6555.06543
+      Y: 8025.60742
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5857.95605
+            Y: 6971.22266
+            Z: 749.685913
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.25692546
+            Yaw: -101.929558
+            Roll: -5.3373693e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9628188441757231857
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7661.10596
+      Y: 8956.35938
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: 35.5413475
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9060.06738
+            Y: 7956.96533
+            Z: 714.622559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.0994407162
+            Yaw: 35.5413933
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16415423970762140902
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8009.25732
+      Y: 8697.40137
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: 35.5413475
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9405.05469
+            Y: 7700.26807
+            Z: 706.761963
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.41367364
+            Yaw: 35.5413742
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 18368175822390979126
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8710.1084
+      Y: 8184.18359
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: 35.5413475
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10107.7275
+            Y: 7185.75
+            Z: 641.025146
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.41367364
+            Yaw: 35.5413742
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8444818792789688541
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8361.96
+      Y: 8443.14258
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: 35.5413475
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9760.14453
+            Y: 7444.30469
+            Z: 676.990723
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.41367364
+            Yaw: 35.5413742
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16955107502382896577
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10855.0381
+      Y: 11576.9473
+      Z: 688.268555
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11951.6074
+            Y: 11525.1299
+            Z: 636.637207
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 4.84441376
+            Yaw: 3.55462766
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8782669430033669600
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -11271.5713
+      Y: 11551.3701
+      Z: 697.816406
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12362.6572
+            Y: 11499.8936
+            Z: 581.31842
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 5.90284061
+            Yaw: 3.5546267
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11735413397052800659
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -11704.04
+      Y: 11516.1533
+      Z: 697.816406
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12794.8633
+            Y: 11464.6924
+            Z: 525.845703
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 8.73400784
+            Yaw: 3.55462766
+            Roll: -2.69934421e-08
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 14659152303682691330
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9568.15527
+      Y: 11576.9473
+      Z: 688.268555
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10767.0664
+            Y: 11522.6377
+            Z: 687.060242
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.25870252
+            Yaw: 3.55461979
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 4068817993726094914
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9984.68848
+      Y: 11551.3701
+      Z: 697.816406
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11174.0361
+            Y: 11527.8086
+            Z: 679.592773
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.59108782
+            Yaw: 3.5546217
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 10550840448973385678
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -10417.1572
+      Y: 11516.1533
+      Z: 697.816406
+    }
+    Rotation {
+      Yaw: 3.55461287
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11581.3262
+            Y: 11526.335
+            Z: 656.619751
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 5.94383526
+            Yaw: 3.5546236
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 8909797316871555630
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8670
+      Y: 10835
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9578.75098
+            Y: 11545.5469
+            Z: 688.502686
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.55461287
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16156063245294857548
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -8912.3418
+      Y: 11174.7432
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9948.44238
+            Y: 11556.2793
+            Z: 712.059143
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.55461287
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 11939565835364399791
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -9171.30078
+      Y: 11522.8945
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10373.3242
+            Y: 11533.5527
+            Z: 691.082458
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 3.55461287
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 5165679138288467815
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6814.02393
+      Y: 8373.75586
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8670
+            Y: 10835
+            Z: 688.268494
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.4586449
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17526134206335688100
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7056.36572
+      Y: 8713.49902
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8912.3418
+            Y: 11174.7432
+            Z: 697.816345
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.4586449
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 10157164025486949665
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7315.32422
+      Y: 9061.65
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9171.30078
+            Y: 11522.8945
+            Z: 697.816345
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.4586449
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 7674031595970561391
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6041.84814
+      Y: 7324.75488
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7680.14746
+            Y: 8942.75684
+            Z: 707.292419
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 35.5413475
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 1206261430735835551
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6300.80664
+      Y: 7672.90625
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8018.03809
+            Y: 8691.12891
+            Z: 715.007813
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 35.5413475
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 16898068348000550814
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6814.02393
+      Y: 8373.75586
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8710.1084
+            Y: 8184.18359
+            Z: 733.691711
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 35.5413475
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15029571078916409567
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -6555.06543
+      Y: 8025.60742
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8361.96
+            Y: 8443.14258
+            Z: 720.416809
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 35.5413475
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 9843358417150078758
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7056.36572
+      Y: 8713.49902
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6048.12646
+            Y: 7333.54346
+            Z: 752.673523
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.4586449
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 18180743322390135165
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7315.32422
+      Y: 9061.65
+      Z: 697.816345
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6301.64453
+            Y: 7674.0791
+            Z: 758.683411
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 1.04290831
+            Yaw: -54.4586143
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 2261853901090398733
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7828.5415
+      Y: 9762.50293
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6814.0332
+            Y: 8373.7666
+            Z: 708.032104
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.71294427
+            Yaw: -54.4586143
+            Roll: -1.06841455e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 15153110649272733254
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7569.58301
+      Y: 9414.35156
+      Z: 688.268494
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6555.3584
+            Y: 8026.01416
+            Z: 728.566345
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.71294427
+            Yaw: -54.4586143
+            Roll: -1.06841455e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 3005223552252235950
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7569.58301
+      Y: 9414.35156
+      Z: 672.175842
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7056.36572
+            Y: 8713.49902
+            Z: 697.816345
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.71294427
+            Yaw: -54.4586143
+            Roll: -1.06841455e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 13610619969152285934
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7828.5415
+      Y: 9762.50293
+      Z: 672.175842
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7315.32422
+            Y: 9061.65
+            Z: 697.816345
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.4586449
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 17041288702942855348
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Location {
+      X: -7600.77051
+      Y: 9396.94922
+      Z: 672.175964
+    }
+    Rotation {
+      Yaw: -54.4586449
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7828.5415
+            Y: 9762.50293
+            Z: 688.268494
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.4586449
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 4942366411399707589
+  Name: "TW_Fence01_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16811979318531334773
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7569.58301
+            Y: 9414.35156
+            Z: 688.268494
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -54.4586449
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17409694280159360344
+    }
+  }
+}
+Objects {
+  Id: 5792236468924857499
+  Name: "TW_ElectricityPole01_Destructible"
+  Transform {
+    Location {
+      X: -1744.93982
+      Y: 4987.40332
+      Z: 692.154175
+    }
+    Rotation {
+      Yaw: 46.6836319
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8497060271531294536
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_ElectricityPole01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5567.8877
+            Y: 6225.60254
+            Z: 692.154175
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.79893613
+            Yaw: 46.6835632
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14369695202381680389
+    }
+  }
+}
+Objects {
+  Id: 6954523665358984781
+  Name: "TW_ElectricityPole02_Destructible"
+  Transform {
+    Location {
+      X: 10275.9854
+      Y: -5031.68408
+      Z: 631.773
+    }
+    Rotation {
+      Yaw: 74.8482895
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16635342497249327187
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_ElectricityPole02_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1377.3595
+            Y: 1758.39294
+            Z: 568.553711
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 38.004982
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17407238115313380345
+    }
+  }
+}
+Objects {
+  Id: 9484081720519802661
+  Name: "TW_Fence02_Destructible"
+  Transform {
+    Location {
+      X: -13068.2207
+      Y: 15423.8213
+      Z: 670.9953
+    }
+    Rotation {
+      Pitch: 0.658710241
+      Yaw: -68.1562881
+      Roll: -6.44595909
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 596023719612321980
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Fence02_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12966.7354
+            Y: 14719.0205
+            Z: 659.965454
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.08477783
+            Yaw: -92.66
+            Roll: -6.13616943
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5583506916874601366
+    }
+  }
+}
+Objects {
+  Id: 5474282679610334868
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -6443.53
+      Y: 1591.06055
+      Z: 561.215698
+    }
+    Rotation {
+      Yaw: 108.471664
+    }
+    Scale {
+      X: 1.95309353
+      Y: 1.95309353
+      Z: 1.46345115
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7416.77539
+            Y: 1409.31323
+            Z: 561.215698
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 11.2106533
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.95309353
+            Y: 1.95309353
+            Z: 1.46345115
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 4111609371764678927
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -6985.72168
+      Y: 2055.99023
+      Z: 561.215698
+    }
+    Rotation {
+      Yaw: -168.853973
+    }
+    Scale {
+      X: 1.95309353
+      Y: 1.95309353
+      Z: 1.46345115
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6443.53
+            Y: 1591.06055
+            Z: 561.215698
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 108.471664
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.95309353
+            Y: 1.95309353
+            Z: 1.46345115
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 3504021553123507752
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -6344.78369
+      Y: 11822.7119
+      Z: 498.674438
+    }
+    Rotation {
+      Yaw: -168.854019
+    }
+    Scale {
+      X: 1.95309353
+      Y: 1.95309353
+      Z: 1.46345115
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6985.72168
+            Y: 2055.99023
+            Z: 561.215698
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -168.854
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.95309353
+            Y: 1.95309353
+            Z: 1.46345115
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 8346737510707982370
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -5808.83887
+      Y: 11414.3994
+      Z: 459.294678
+    }
+    Rotation {
+      Yaw: 25.994051
+    }
+    Scale {
+      X: 1.95309353
+      Y: 1.95309353
+      Z: 1.58255517
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4758.74805
+            Y: 2630.65527
+            Z: 564.477173
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 25.99403
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.95309353
+            Y: 1.95309353
+            Z: 1.58255517
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 5125142060422445867
+  Name: "TW_BuildingShed_Destructible"
+  Transform {
+    Location {
+      X: -2225
+      Y: 2665
+      Z: 713.637878
+    }
+    Rotation {
+      Yaw: -133.324188
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16843480527071261880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_BuildingShed_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -413.868652
+            Y: -2045.23071
+            Z: 559.199707
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 167.290314
+            Roll: 11.374114
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4471216179204758257
+    }
+  }
+}
+Objects {
+  Id: 5291112426386820479
+  Name: "TW_BuildingOuthouse_Destructible"
+  Transform {
+    Location {
+      X: -420
+      Y: -34090
+      Z: 65
+    }
+    Rotation {
+      Yaw: 38.8304825
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17500923110723132702
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_BuildingOuthouse_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2374.85376
+            Y: -4539.74609
+            Z: 466.617615
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 149.789169
+            Roll: 6.02387667
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14643909469192043589
+    }
+  }
+}
+Objects {
+  Id: 12558023571639295367
+  Name: "TW_BuildingShed_Destructible"
+  Transform {
+    Location {
+      X: 6880
+      Y: -33180
+      Z: 134.999985
+    }
+    Rotation {
+      Yaw: 1.67579877
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16843480527071261880
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_BuildingShed_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2225
+            Y: 2665
+            Z: 713.637878
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -133.324188
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4471216179204758257
+    }
+  }
+}
+Objects {
   Id: 6944539661410156377
   Name: "TW_BirchTree_Destructible"
   Transform {
@@ -50501,8 +60141,8 @@ Objects {
   Transform {
     Location {
       X: -17996.0449
-      Y: 10830.4307
-      Z: 135.000977
+      Y: 10971.5264
+      Z: 24.5918884
     }
     Rotation {
       Yaw: -90
@@ -52546,12 +62186,12 @@ Objects {
   Name: "TW_BuildingWooden01"
   Transform {
     Location {
-      X: -3825
-      Y: 8715
-      Z: 640
+      X: -3942.71729
+      Y: 9161.76074
+      Z: 693.324951
     }
     Rotation {
-      Yaw: -132.761597
+      Yaw: -140.180664
     }
     Scale {
       X: 1
@@ -53135,7 +62775,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 47.1200027
+            Pitch: -2.71643066
+            Yaw: 47.1198349
           }
         }
         Overrides {
@@ -53723,12 +63364,12 @@ Objects {
   Name: "TW_BuildingWooden01"
   Transform {
     Location {
-      X: -6755.61328
-      Y: 5710.08301
+      X: -7930
+      Y: 7880
       Z: 739.821167
     }
     Rotation {
-      Yaw: -20.2615662
+      Yaw: -42.7616272
     }
     Scale {
       X: 1
@@ -54137,11 +63778,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+            X: -0.182237312
+            Y: -0.878817558
+            Z: -0.0143432617
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Pitch: 0.804022491
+            Yaw: -0.00366210938
+            Roll: -0.574401855
           }
         }
       }
@@ -57400,9 +67047,9 @@ Objects {
   Name: "TW_BuildingWooden01"
   Transform {
     Location {
-      X: -11097.8857
-      Y: 13365.6
-      Z: 711.616577
+      X: -11358.0781
+      Y: 13491.3018
+      Z: 669.233032
     }
     Rotation {
       Yaw: -79.2190247
@@ -57833,12 +67480,12 @@ Objects {
   Name: "TW_BuildingWooden02"
   Transform {
     Location {
-      X: -9321.5293
-      Y: 10331.6338
-      Z: 690
+      X: -9000
+      Y: 9765
+      Z: 690.000183
     }
     Rotation {
-      Yaw: 125.840324
+      Yaw: 35.840313
     }
     Scale {
       X: 1
@@ -57887,61 +67534,6 @@ Objects {
   }
   ParentId: 8196392602095697482
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 187721231738952294
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -83.1994629
-            Y: 40
-            Z: 442.714844
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 1809166159600354641
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -8.28527832
-            Y: 306.863281
-            Z: -120
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 2
-            Y: 1.60000134
-            Z: 2.82905245
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10953660891131762101
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -4.5177
-            Y: 306.863281
-            Z: 180
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 2
-            Y: 1.60000134
-            Z: 2.82905245
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 16018297385410626572
       value {
@@ -58477,12 +68069,13 @@ Objects {
   Name: "TW_BuildingWooden01"
   Transform {
     Location {
-      X: -1305.98535
-      Y: -195.140137
-      Z: 717.399292
+      X: -439.188507
+      Y: -865.865723
+      Z: 715.965454
     }
     Rotation {
-      Yaw: 89.9999619
+      Yaw: 90
+      Roll: 2.08797812
     }
     Scale {
       X: 1
@@ -59343,12 +68936,14 @@ Objects {
   Name: "TW_BuildingWooden01"
   Transform {
     Location {
-      X: 7312.18896
-      Y: -2135.63574
-      Z: 811.552551
+      X: 7311.82129
+      Y: -2135.71582
+      Z: 801.759583
     }
     Rotation {
+      Pitch: 1.61122787
       Yaw: -124.760101
+      Roll: 1.49983835
     }
     Scale {
       X: 1
@@ -60644,9 +70239,9 @@ Objects {
   Name: "TW_BuildingWooden01"
   Transform {
     Location {
-      X: 2817.14063
-      Y: -2760.8064
-      Z: 795
+      X: 2646.75342
+      Y: -3172.09058
+      Z: 701.4375
     }
     Rotation {
       Yaw: 50.4793701
@@ -61077,9 +70672,9 @@ Objects {
   Name: "TW_BuildingWooden02"
   Transform {
     Location {
-      X: -4106.44482
-      Y: 3813.62842
-      Z: 774.999756
+      X: -4002.64771
+      Y: 3351.24
+      Z: 754.286499
     }
     Rotation {
       Yaw: 125.840324
@@ -61131,61 +70726,6 @@ Objects {
   }
   ParentId: 2201028591857805471
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 187721231738952294
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -83.1994629
-            Y: 40
-            Z: 442.714844
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 1809166159600354641
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -8.28527832
-            Y: 306.863281
-            Z: -120
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 2
-            Y: 1.60000134
-            Z: 2.82905245
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10953660891131762101
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -4.5177
-            Y: 306.863281
-            Z: 180
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 2
-            Y: 1.60000134
-            Z: 2.82905245
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 16018297385410626572
       value {
@@ -62945,15 +72485,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -11328.377
-            Y: 26992.8945
-            Z: -247.008667
+            X: -11316.2715
+            Y: 27001.543
+            Z: -102.967468
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -8.67736816
+            Pitch: 0.708147168
+            Yaw: -8.68164063
+            Roll: -0.689147949
           }
         }
       }
@@ -63222,9 +72764,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -4308.99512
-            Y: 2680.77759
-            Z: 750.387634
+            X: -6578.30566
+            Y: 2476.60889
+            Z: 670.764954
           }
         }
         Overrides {
@@ -63395,9 +72937,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3945.96777
-            Y: -3453.01904
-            Z: 523.653931
+            X: 4432.96631
+            Y: -4078.70239
+            Z: 667.341125
           }
         }
         Overrides {
@@ -63455,9 +72997,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4283.98242
-            Y: -3420.46289
-            Z: 554.763367
+            X: 4282.20557
+            Y: -3422.72046
+            Z: 555.389282
           }
         }
         Overrides {
@@ -65958,7 +75500,7 @@ Objects {
           Vector {
             X: -12953.0605
             Y: 4975.05273
-            Z: 123.770508
+            Z: 135.490631
           }
         }
         Overrides {
@@ -66016,7 +75558,7 @@ Objects {
           Vector {
             X: -12959.2715
             Y: 5669.73535
-            Z: 106.812958
+            Z: 129.939423
           }
         }
         Overrides {
@@ -68168,66 +77710,6 @@ Objects {
   }
 }
 Objects {
-  Id: 4925006995098641287
-  Name: "TW_Fence02_Destructible"
-  Transform {
-    Location {
-      X: -28160
-      Y: 8697.58203
-      Z: 40
-    }
-    Rotation {
-      Pitch: -0.00952128321
-      Yaw: 161.774612
-      Roll: -0.19512938
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 596023719612321980
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Fence02_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -28792.4512
-            Y: 8968.12402
-            Z: 40
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.00952148438
-            Yaw: 148.572754
-            Roll: -0.195129395
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5583506916874601366
-    }
-  }
-}
-Objects {
   Id: 17481994342950262229
   Name: "TW_Fence02_Destructible"
   Transform {
@@ -69820,17 +79302,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -13087.2168
-            Y: 11113.6729
-            Z: 454.367859
+            X: -12994.7295
+            Y: 11125.5498
+            Z: 460.463562
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 1.68214571
-            Yaw: 100.419022
-            Roll: 3.83487916
+            Pitch: 2.3235755
+            Yaw: 90.4089
+            Roll: 3.48413801
           }
         }
         Overrides {
@@ -70541,132 +80023,6 @@ Objects {
   }
 }
 Objects {
-  Id: 18071272605195035666
-  Name: "TW_Fence02_Destructible"
-  Transform {
-    Location {
-      X: -15852.459
-      Y: 11549.8574
-      Z: 138.515686
-    }
-    Rotation {
-      Pitch: 4.75808048
-      Yaw: -1.80792212
-      Roll: -5.51108074
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 596023719612321980
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Fence02_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -17217.6523
-            Y: 11541.6045
-            Z: 88.3820801
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.705352783
-            Yaw: -1.80187988
-            Roll: -5.33892822
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5583506916874601366
-    }
-  }
-}
-Objects {
-  Id: 14174667233278495246
-  Name: "TW_Fence02_Destructible"
-  Transform {
-    Location {
-      X: -16592.2773
-      Y: 11521.3516
-      Z: 35.5740051
-    }
-    Rotation {
-      Pitch: -8.34936619
-      Yaw: 175.749451
-      Roll: 6.24149227
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 596023719612321980
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Fence02_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -18924.5625
-            Y: 11513.0986
-            Z: 56.3820801
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.037902832
-            Yaw: 175.794479
-            Roll: 5.62603569
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5583506916874601366
-    }
-  }
-}
-Objects {
   Id: 13863997249465079740
   Name: "TW_Fence02_Destructible"
   Transform {
@@ -70704,9 +80060,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -15516.8896
-            Y: 11537.3848
-            Z: 225.898163
+            X: -15379.0879
+            Y: 11535.6904
+            Z: 209.769745
           }
         }
         Overrides {
@@ -70770,9 +80126,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -14163.3086
-            Y: 11470.2568
-            Z: 384.064
+            X: -14025.5068
+            Y: 11468.5625
+            Z: 367.935577
           }
         }
         Overrides {
@@ -70830,9 +80186,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -14872.1875
-            Y: 11441.751
-            Z: 284.637085
+            X: -14734.3857
+            Y: 11440.0566
+            Z: 268.508667
           }
         }
         Overrides {
@@ -71681,66 +81037,6 @@ Objects {
             Pitch: 0.00928905699
             Yaw: -8.42462158
             Roll: -6.34985352
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5583506916874601366
-    }
-  }
-}
-Objects {
-  Id: 4581600423663455906
-  Name: "TW_Fence02_Destructible"
-  Transform {
-    Location {
-      X: -13469.4795
-      Y: 16063.5469
-      Z: 650.755615
-    }
-    Rotation {
-      Pitch: -1.24520493
-      Yaw: 129.336639
-      Roll: 6.78152895
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 596023719612321980
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Fence02_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -12894.9453
-            Y: 14794.583
-            Z: 696.983826
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -1.24520874
-            Yaw: 109.427109
-            Roll: 6.78172
           }
         }
         Overrides {
@@ -113311,7 +122607,7 @@ Objects {
           Vector {
             X: -12910
             Y: 6309.53125
-            Z: 129.161957
+            Z: 154.987061
           }
         }
         Overrides {
@@ -113375,9 +122671,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -12955.6016
+            X: -12958.2109
             Y: 7033.72
-            Z: 169.254242
+            Z: 181.54541
           }
         }
         Overrides {
@@ -113443,7 +122739,7 @@ Objects {
           Vector {
             X: -12966.4971
             Y: 7662.20898
-            Z: 172.604523
+            Z: 207.292145
           }
         }
         Overrides {
@@ -113507,17 +122803,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -13012.0527
+            X: -13017.7217
             Y: 8390.73242
-            Z: 206.79039
+            Z: 250.330215
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 0.731342494
-            Yaw: 92.0771713
-            Roll: 3.4737277
+            Pitch: 3.93861461
+            Yaw: 92.0816422
+            Roll: 3.59032416
           }
         }
         Overrides {
@@ -113567,17 +122863,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -13526.8623
-            Y: 11441.751
-            Z: 463.800049
+            X: -13389.0605
+            Y: 11440.0566
+            Z: 412.875732
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -8.34936523
-            Yaw: 175.749451
-            Roll: 6.24146795
+            Pitch: -4.77835083
+            Yaw: 175.779846
+            Roll: 5.97533274
           }
         }
         Overrides {
@@ -113634,66 +122930,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -11.333374
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5583506916874601366
-    }
-  }
-}
-Objects {
-  Id: 7790611580580167116
-  Name: "TW_Fence02_Destructible"
-  Transform {
-    Location {
-      X: -3612.25098
-      Y: -18352.084
-      Z: 110.173538
-    }
-    Rotation {
-      Pitch: -0.00952128321
-      Yaw: 22.1526413
-      Roll: -0.195129365
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 596023719612321980
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Fence02_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -28160
-            Y: 8697.58203
-            Z: 40
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.00952148438
-            Yaw: 161.774612
-            Roll: -0.195129395
           }
         }
         Overrides {
@@ -121769,9 +131005,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1815.06921
-            Y: -3792.87866
-            Z: 208.96051
+            X: -1794.46533
+            Y: -3712.04248
+            Z: 212.223389
           }
         }
         Overrides {
@@ -121829,17 +131065,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1068.52258
-            Y: -3708.76416
-            Z: 256.87915
+            X: -1041.13147
+            Y: -3684.4646
+            Z: 259.787
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 4.81693602
-            Yaw: 5.38045645
-            Roll: -1.1027832
+            Pitch: 4.55355692
+            Yaw: -4.60748291
+            Roll: -1.92068481
           }
         }
         Overrides {
@@ -126176,7 +135412,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 74.8483124
+            Pitch: 3.46365023
+            Yaw: 74.8480606
           }
         }
       }
@@ -129623,9 +138860,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 10900.8477
-            Y: -1264.20264
-            Z: 282.755035
+            X: 10234.4473
+            Y: -2115.01831
+            Z: 348.471466
           }
         }
         Overrides {
@@ -129636,9 +138873,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.31613028
+            Y: 1.31613028
+            Z: 1.31613028
           }
         }
       }
@@ -130980,11 +140217,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -11584.4961
-      Y: 27992.0156
-      Z: -67.3907471
+      X: -11574.9561
+      Y: 27998.8281
+      Z: 83.0452881
     }
     Rotation {
+      Pitch: 0.804022491
+      Yaw: -0.00366210938
+      Roll: -0.574401855
     }
     Scale {
       X: 4.66577721
@@ -132235,6 +141475,7 @@ Objects {
   ChildIds: 12625205229476331466
   ChildIds: 15462720468028370554
   ChildIds: 10254044833162227464
+  ChildIds: 1712050631251057312
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -132243,6 +141484,1322 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 1712050631251057312
+  Name: "RocksNBushes"
+  Transform {
+    Location {
+      X: -32700.916
+      Y: 40534.0547
+      Z: 341.467834
+    }
+    Rotation {
+      Pitch: -1.75048828
+      Roll: -6.14712524
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2230298249427087904
+  ChildIds: 9145563962480833746
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9145563962480833746
+  Name: "MergedModel"
+  Transform {
+    Location {
+      X: 11097.8438
+      Y: -26204.0059
+      Z: -26.4204102
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1712050631251057312
+  ChildIds: 4742822189875977781
+  ChildIds: 8504617552314461241
+  ChildIds: 9423481799077899073
+  ChildIds: 5010294809769445627
+  ChildIds: 5064479149071131086
+  ChildIds: 2952522932368733918
+  ChildIds: 17579056890356157828
+  ChildIds: 10982336305908163865
+  ChildIds: 15447919572793751463
+  ChildIds: 1276958712475997216
+  ChildIds: 8593414338522073892
+  ChildIds: 7237779734590656335
+  ChildIds: 12656042086900581165
+  ChildIds: 4371626187792989811
+  ChildIds: 6943787040731147546
+  ChildIds: 13695797762860229245
+  ChildIds: 912581056839182535
+  ChildIds: 1308871713621071423
+  ChildIds: 16209894608553736557
+  ChildIds: 6657437408123927444
+  ChildIds: 11080849794984178436
+  ChildIds: 16818048426199256842
+  ChildIds: 4803706476151098213
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    Model {
+    }
+  }
+}
+Objects {
+  Id: 4803706476151098213
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11017.4834
+      Y: 22825.3789
+      Z: 143.954208
+    }
+    Rotation {
+      Yaw: -16.6045837
+    }
+    Scale {
+      X: 3.31539965
+      Y: 4.18561602
+      Z: 4.18562508
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16818048426199256842
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -16248.8652
+      Y: -14576.457
+      Z: 180.996948
+    }
+    Rotation {
+      Yaw: -179.999878
+    }
+    Scale {
+      X: 1.51547325
+      Y: 1.51547325
+      Z: 0.926122665
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11028.4307
+            Y: 19530.8555
+            Z: 26.1186218
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.51547325
+            Y: 1.51547325
+            Z: 0.926122665
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 11080849794984178436
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 15895.7344
+      Y: -47247.9141
+      Z: 234.999939
+    }
+    Rotation {
+      Yaw: -179.999969
+      Roll: -23.7886448
+    }
+    Scale {
+      X: 1.30000007
+      Y: 1.30000007
+      Z: 0.900000036
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11187.8125
+            Y: 23060.1582
+            Z: 109.252502
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.30000007
+            Y: 1.30000007
+            Z: 0.900000036
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9998779
+            Roll: -23.7885361
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 6657437408123927444
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11016.0605
+      Y: 23360.0352
+      Z: 103.83551
+    }
+    Rotation {
+      Yaw: 175.404266
+    }
+    Scale {
+      X: 3.31539965
+      Y: 4.18561602
+      Z: 4.18562508
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16209894608553736557
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 16390.7344
+      Y: -47394.3398
+      Z: 280
+    }
+    Rotation {
+      Yaw: -179.999969
+    }
+    Scale {
+      X: 1.51547325
+      Y: 1.51547325
+      Z: 0.926122665
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11041.3848
+            Y: 23555.1426
+            Z: 154.252563
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.51547325
+            Y: 1.51547325
+            Z: 0.926122665
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9998856
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 1308871713621071423
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20195
+      Y: -45970
+      Z: 234.999939
+    }
+    Rotation {
+      Yaw: -90
+      Roll: -23.7887363
+    }
+    Scale {
+      X: 1.30000007
+      Y: 1.30000007
+      Z: 0.900000036
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11187.8125
+            Y: 25035.8496
+            Z: 109.252502
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.30000007
+            Y: 1.30000007
+            Z: 0.900000036
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999237
+            Roll: -23.7885494
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 912581056839182535
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20305.7832
+      Y: -43892.7
+      Z: 255
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1.80000007
+      Y: 1.80000007
+      Z: 1.1
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11077.0254
+            Y: 23850.8457
+            Z: 129.252563
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.80000007
+            Y: 1.80000007
+            Z: 1.1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999313
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 13695797762860229245
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20517.3789
+      Y: -43527.6758
+      Z: 274.335083
+    }
+    Rotation {
+      Pitch: 26.2961445
+      Yaw: 173.66571
+      Roll: -2.81524682
+    }
+    Scale {
+      X: 1.80003774
+      Y: 1.80000436
+      Z: 1.34698069
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11080.7197
+            Y: 24215.8789
+            Z: 148.587646
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.80003774
+            Y: 1.80000436
+            Z: 1.34698069
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 26.2960968
+            Yaw: 173.66571
+            Roll: -2.81524587
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 6943787040731147546
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20517.3789
+      Y: -42842.75
+      Z: 274.335083
+    }
+    Rotation {
+      Pitch: 27.9603405
+      Yaw: 173.570389
+      Roll: -3.02432251
+    }
+    Scale {
+      X: 1.80003774
+      Y: 1.80000436
+      Z: 1.34699392
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10775.7305
+            Y: 24900.7988
+            Z: 148.587646
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.80003774
+            Y: 1.80000436
+            Z: 1.34699392
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 27.9603062
+            Yaw: 173.570389
+            Roll: -3.02431798
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 4371626187792989811
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20341.4238
+      Y: -42452.7734
+      Z: 280
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1.51547325
+      Y: 1.51547325
+      Z: 0.926122665
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11041.3848
+            Y: 25530.8457
+            Z: 154.252563
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.51547325
+            Y: 1.51547325
+            Z: 0.926122665
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999313
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 12656042086900581165
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20020
+      Y: -43215
+      Z: 214.662659
+    }
+    Rotation {
+      Yaw: -90
+      Roll: -23.7887974
+    }
+    Scale {
+      X: 1.90252578
+      Y: 1.90254819
+      Z: 1.31077695
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11187.8125
+            Y: 24320.8535
+            Z: 109.252502
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.30000007
+            Y: 1.30000007
+            Z: 0.900000036
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999
+            Roll: -23.7885876
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 7237779734590656335
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -10906.167
+      Y: 25985.168
+      Z: 4.25231934
+    }
+    Rotation {
+      Pitch: 68.5751648
+      Yaw: -154.677948
+      Roll: -33.8538208
+    }
+    Scale {
+      X: 3.32828379
+      Y: 3.32828379
+      Z: 3.32828379
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8593414338522073892
+  Name: "Rock Pile 001"
+  Transform {
+    Location {
+      X: -11097.8164
+      Y: 23990.8535
+      Z: 183.241302
+    }
+    Rotation {
+    }
+    Scale {
+      X: 4.9300971
+      Y: 4.9300971
+      Z: 4.9300971
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10835155324150586940
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1276958712475997216
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11059.3086
+      Y: 27183.2598
+      Z: 137.407
+    }
+    Rotation {
+      Pitch: 12.295392
+      Yaw: -149.112137
+      Roll: 1.39987266
+    }
+    Scale {
+      X: 3.82419658
+      Y: 3.82419658
+      Z: 3.82419658
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15447919572793751463
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11097.8145
+      Y: 26410.8457
+      Z: 94.2525635
+    }
+    Rotation {
+      Yaw: 175.404282
+    }
+    Scale {
+      X: 3.21626568
+      Y: 3.82419419
+      Z: 3.82419658
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10982336305908163865
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20305.7832
+      Y: -40187.832
+      Z: 278.8927
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1.5064404
+      Y: 1.5064404
+      Z: 0.884398222
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11077.0273
+            Y: 26200.8535
+            Z: 129.252563
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.80000007
+            Y: 1.80000007
+            Z: 1.1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999313
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 17579056890356157828
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20517.3789
+      Y: -39822.8086
+      Z: 260.056702
+    }
+    Rotation {
+      Pitch: 15.2509098
+      Yaw: 174.115753
+      Roll: -1.55285668
+    }
+    Scale {
+      X: 1.50647211
+      Y: 1.50644398
+      Z: 1.08297026
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11080.7246
+            Y: 26590.8496
+            Z: 148.587646
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.80003774
+            Y: 1.80000436
+            Z: 1.34698069
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 26.2960968
+            Yaw: 173.66571
+            Roll: -2.81524587
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 2952522932368733918
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 20305.7832
+      Y: -39502.9063
+      Z: 323.107971
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1.5064404
+      Y: 1.5064404
+      Z: 0.884406686
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11077.0254
+            Y: 27083.0723
+            Z: 45.1707764
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.5064404
+            Y: 1.5064404
+            Z: 0.884406686
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999313
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 5064479149071131086
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 19920.5547
+      Y: -39509.8555
+      Z: 259.973877
+    }
+    Rotation {
+      Yaw: -90
+      Roll: -18.1239681
+    }
+    Scale {
+      X: 1.5922457
+      Y: 1.59226418
+      Z: 1.05386245
+    }
+  }
+  ParentId: 9145563962480833746
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11202.6104
+            Y: 26871.334
+            Z: 88.9152222
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.90252578
+            Y: 1.90254819
+            Z: 1.31077695
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.999939
+            Roll: -23.7886658
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 5010294809769445627
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11024.6211
+      Y: 24657.4
+      Z: 120.720886
+    }
+    Rotation {
+      Pitch: 12.2954464
+      Yaw: 58.9449654
+      Roll: 1.3998816
+    }
+    Scale {
+      X: 3.82419658
+      Y: 3.82419658
+      Z: 3.82419658
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9423481799077899073
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -10979.9512
+      Y: 25335.3516
+      Z: 76.8015137
+    }
+    Rotation {
+      Yaw: 175.404282
+    }
+    Scale {
+      X: 3.31539965
+      Y: 4.18561602
+      Z: 4.18562508
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8504617552314461241
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11173.2559
+      Y: 26836.0488
+      Z: 51.9382935
+    }
+    Rotation {
+      Yaw: -151.041092
+    }
+    Scale {
+      X: 2.32147932
+      Y: 2.6693
+      Z: 3.12726831
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4742822189875977781
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11001.2822
+      Y: 27253.6934
+      Z: 8.82751465
+    }
+    Rotation {
+      Yaw: 175.404282
+    }
+    Scale {
+      X: 3.21626568
+      Y: 3.82419419
+      Z: 3.82419658
+    }
+  }
+  ParentId: 9145563962480833746
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -144013,9 +154570,9 @@ Objects {
   Name: "RocksNBushes"
   Transform {
     Location {
-      X: -25428.2285
-      Y: 41187.5547
-      Z: 95.447937
+      X: -25426.7773
+      Y: 41390.6563
+      Z: 142.900574
     }
     Rotation {
       Yaw: -90
@@ -146059,9 +156616,9 @@ Objects {
   Name: "RocksNBushes"
   Transform {
     Location {
-      X: -17480.916
-      Y: 41187.5547
-      Z: 510.503967
+      X: -17482.5957
+      Y: 41297.7344
+      Z: 533.796448
     }
     Rotation {
       Yaw: -90
@@ -146103,16 +156660,12 @@ Objects {
     }
   }
   ParentId: 13809412632604823346
-  ChildIds: 10315304811059906249
   ChildIds: 47326729449347857
   ChildIds: 10474883432495021725
   ChildIds: 17998380982637219889
-  ChildIds: 6332765160016975001
-  ChildIds: 18391111241073572777
   ChildIds: 14952223964731780807
   ChildIds: 16890552282783614055
   ChildIds: 10990228645690901621
-  ChildIds: 8313547112287423358
   ChildIds: 11152809865636649903
   ChildIds: 3534525468360444796
   ChildIds: 5843362896638733839
@@ -146132,7 +156685,6 @@ Objects {
   ChildIds: 6342515488638428026
   ChildIds: 6264999097998282779
   ChildIds: 4963821772706119138
-  ChildIds: 11312093959037822697
   ChildIds: 2169813626852258135
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -146190,62 +156742,6 @@ Objects {
     StaticMesh {
       Physics {
       }
-    }
-  }
-}
-Objects {
-  Id: 11312093959037822697
-  Name: "TW_Bush01"
-  Transform {
-    Location {
-      X: -16248.8652
-      Y: -14576.457
-      Z: 180.996948
-    }
-    Rotation {
-      Yaw: -179.999878
-    }
-    Scale {
-      X: 1.51547325
-      Y: 1.51547325
-      Z: 0.926122665
-    }
-  }
-  ParentId: 12536260210798943479
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16934796068878505761
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Bush01"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -11029.1758
-            Y: 19336.6973
-            Z: 105.334595
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.51547325
-            Y: 1.51547325
-            Z: 0.926122665
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -89.9998779
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9960003411460384525
     }
   }
 }
@@ -147302,66 +157798,16 @@ Objects {
   }
 }
 Objects {
-  Id: 8313547112287423358
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: -10925.1133
-      Y: 27070.457
-      Z: 120.720886
-    }
-    Rotation {
-      Pitch: 12.295392
-      Yaw: -149.112137
-      Roll: 1.39987266
-    }
-    Scale {
-      X: 3.82419658
-      Y: 3.82419658
-      Z: 3.82419658
-    }
-  }
-  ParentId: 12536260210798943479
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 11182969111770509228
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3377721323622766709
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 10990228645690901621
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -11097.8145
-      Y: 26410.8457
-      Z: 94.2525635
+      X: -11122.2852
+      Y: 26455.5273
+      Z: 68.0106812
     }
     Rotation {
-      Yaw: 175.404282
+      Yaw: 17.050024
     }
     Scale {
       X: 3.21626568
@@ -147487,9 +157933,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -11080.7246
-            Y: 26590.8496
-            Z: 148.587646
+            X: -11138.0986
+            Y: 26577.3809
+            Z: 35.3886719
           }
         }
         Overrides {
@@ -147505,121 +157951,7 @@ Objects {
           Rotator {
             Pitch: 26.2960968
             Yaw: 173.66571
-            Roll: -2.81524587
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9960003411460384525
-    }
-  }
-}
-Objects {
-  Id: 18391111241073572777
-  Name: "TW_Bush01"
-  Transform {
-    Location {
-      X: 20305.7832
-      Y: -39502.9063
-      Z: 323.107971
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1.5064404
-      Y: 1.5064404
-      Z: 0.884406686
-    }
-  }
-  ParentId: 12536260210798943479
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16934796068878505761
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Bush01"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -11077.0254
-            Y: 27083.0723
-            Z: 45.1707764
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.5064404
-            Y: 1.5064404
-            Z: 0.884406686
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -89.9999313
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9960003411460384525
-    }
-  }
-}
-Objects {
-  Id: 6332765160016975001
-  Name: "TW_Bush01"
-  Transform {
-    Location {
-      X: 19920.5547
-      Y: -39509.8555
-      Z: 259.973877
-    }
-    Rotation {
-      Yaw: -90
-      Roll: -18.1239681
-    }
-    Scale {
-      X: 1.5922457
-      Y: 1.59226418
-      Z: 1.05386245
-    }
-  }
-  ParentId: 12536260210798943479
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16934796068878505761
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Bush01"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -11202.6104
-            Y: 26871.334
-            Z: 88.9152222
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.90252578
-            Y: 1.90254819
-            Z: 1.31077695
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -89.999939
-            Roll: -23.7886658
+            Roll: -2.81524658
           }
         }
       }
@@ -147732,65 +158064,17 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -11173.2559
-      Y: 26836.0488
-      Z: 51.9382935
+      X: -11016.082
+      Y: 26631.7441
+      Z: -8.34191895
     }
     Rotation {
       Yaw: -151.041092
     }
     Scale {
-      X: 2.32147932
-      Y: 2.6693
-      Z: 3.12726831
-    }
-  }
-  ParentId: 12536260210798943479
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 11182969111770509228
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3377721323622766709
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10315304811059906249
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: -11001.2822
-      Y: 27253.6934
-      Z: 8.82751465
-    }
-    Rotation {
-      Yaw: 175.404282
-    }
-    Scale {
-      X: 3.21626568
-      Y: 3.82419419
-      Z: 3.82419658
+      X: 3.06264067
+      Y: 3.52150679
+      Z: 4.12568521
     }
   }
   ParentId: 12536260210798943479
@@ -155460,6 +165744,7 @@ Objects {
     Location {
       X: -6103.13574
       Y: 16535.2656
+      Z: 63.8858643
     }
     Rotation {
     }
