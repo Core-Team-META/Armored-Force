@@ -440,20 +440,20 @@ Objects {
         Max: 90
       }
       Scaling {
+        Scaling: LockXY
         ScaleX {
-          Min: 2
-          Max: 2
+          Min: 3
+          Max: 3
         }
         ScaleY {
           Min: 1
           Max: 1
         }
         ScaleZ {
-          Min: 1
-          Max: 1
+          Min: 2
+          Max: 2
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -622,9 +622,9 @@ Objects {
       Asset {
         Id: 10835155324150586940
       }
-      DistanceBetweenInstances: 1000
+      DistanceBetweenInstances: 100000
       MaterialChannel: 3
-      SpawnDistance: 20000
+      SpawnDistance: 122880
       CullDistance {
         Min: 10000
         Max: 20000
@@ -671,9 +671,9 @@ Objects {
       Asset {
         Id: 3377721323622766709
       }
-      DistanceBetweenInstances: 1000
+      DistanceBetweenInstances: 100000
       MaterialChannel: 3
-      SpawnDistance: 20000
+      SpawnDistance: 122880
       CullDistance {
         Min: 10000
         Max: 20000
@@ -720,9 +720,9 @@ Objects {
       Asset {
         Id: 1908253659651347838
       }
-      DistanceBetweenInstances: 1000
+      DistanceBetweenInstances: 100000
       MaterialChannel: 3
-      SpawnDistance: 20000
+      SpawnDistance: 122880
       CullDistance {
         Min: 10000
         Max: 20000
