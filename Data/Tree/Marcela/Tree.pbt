@@ -91,19 +91,19 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate8"
       AssetReference {
-        Id: 18031142724996749659
+        Id: 5926986810139767040
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate9"
       AssetReference {
-        Id: 4641514618953469017
+        Id: 2151465309194437172
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate10"
       AssetReference {
-        Id: 16619680940024733243
+        Id: 15457079634572160969
       }
     }
     Overrides {
