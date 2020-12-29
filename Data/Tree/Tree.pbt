@@ -3831,10 +3831,10 @@ Objects {
   ChildIds: 436611278961231241
   ChildIds: 12109123453381123963
   ChildIds: 2140050464641941112
+  ChildIds: 2840459275325916047
   ChildIds: 1245555288092411986
   ChildIds: 16182384547534576989
   ChildIds: 4302040622650987333
-  ChildIds: 2840459275325916047
   ChildIds: 2660256615551253733
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
@@ -3897,89 +3897,6 @@ Objects {
             X: 32.9
             Y: 198.244919
             Z: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 13231971539212330216
-          }
-        }
-        Overrides {
-          Name: "Collidable"
-          Enum {
-            Value: "mc:ecollisionsetting:inheritfromparent"
-          }
-        }
-        Overrides {
-          Name: "DisableCastShadows"
-          Bool: true
-        }
-        Overrides {
-          Name: "DisableReceiveDecals"
-          Bool: true
-        }
-        Overrides {
-          Name: "DisableDistanceFieldLighting"
-          Bool: true
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2859045759570793761
-    }
-  }
-}
-Objects {
-  Id: 2840459275325916047
-  Name: "TW_EdgeIndicator"
-  Transform {
-    Location {
-      Y: 61375
-      Z: 1240
-    }
-    Rotation {
-      Pitch: -90
-      Yaw: 90
-      Roll: 7.62939453e-06
-    }
-    Scale {
-      X: 32.8720818
-      Y: 307.18454
-      Z: 1.00000346
-    }
-  }
-  ParentId: 10639644213682625907
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6059571513361614452
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_EdgeIndicator"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 57390.1875
-            Y: 44407.9805
-            Z: 1240.00134
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -90
-            Yaw: -66.0327759
-            Roll: 104.03627
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 32.8720818
-            Y: 205.203781
-            Z: 1.00005233
           }
         }
         Overrides {
@@ -4223,6 +4140,89 @@ Objects {
             X: 32.9
             Y: 161.6
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
+          }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableDistanceFieldLighting"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
+  }
+}
+Objects {
+  Id: 2840459275325916047
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      Y: 61375
+      Z: 1240
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 90
+      Roll: 7.62939453e-06
+    }
+    Scale {
+      X: 32.8720818
+      Y: 307.18454
+      Z: 1.00000346
+    }
+  }
+  ParentId: 10639644213682625907
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 57390.1875
+            Y: 44407.9805
+            Z: 1240.00146
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+            Yaw: -7.12502289
+            Roll: 45.1285477
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 32.8720818
+            Y: 205.203781
+            Z: 1.00005233
           }
         }
         Overrides {
