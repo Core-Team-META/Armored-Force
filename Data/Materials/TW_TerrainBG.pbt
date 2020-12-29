@@ -63,7 +63,7 @@
       }
       Overrides {
         Name: "material1_scale"
-        Float: 3
+        Float: 1
       }
       Overrides {
         Name: "cmpc:Material3"
