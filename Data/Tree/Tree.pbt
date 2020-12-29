@@ -3830,11 +3830,9 @@ Objects {
   ParentId: 17707050887276379352
   ChildIds: 436611278961231241
   ChildIds: 12109123453381123963
-  ChildIds: 2140050464641941112
+  ChildIds: 5273496700728274949
   ChildIds: 2840459275325916047
-  ChildIds: 1245555288092411986
-  ChildIds: 16182384547534576989
-  ChildIds: 4302040622650987333
+  ChildIds: 3600559420139020614
   ChildIds: 2660256615551253733
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
@@ -3931,6 +3929,35 @@ Objects {
   }
 }
 Objects {
+  Id: 3600559420139020614
+  Name: "Group"
+  Transform {
+    Location {
+      X: -68505.9375
+      Z: 1240
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  ChildIds: 1245555288092411986
+  ChildIds: 4302040622650987333
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 4302040622650987333
   Name: "TW_EdgeIndicator"
   Transform {
@@ -3947,7 +3974,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10639644213682625907
+  ParentId: 3600559420139020614
   TemplateInstance {
     ParameterOverrideMap {
       key: 6059571513361614452
@@ -3959,9 +3986,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 82622.5156
+            X: 144032.516
             Y: -16970.332
-            Z: 1240.0011
+            Z: 0.00109863281
           }
         }
         Overrides {
@@ -3975,89 +4002,6 @@ Objects {
           Vector {
             X: 32.8720818
             Y: 145.463943
-            Z: 1.00000346
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 13231971539212330216
-          }
-        }
-        Overrides {
-          Name: "Collidable"
-          Enum {
-            Value: "mc:ecollisionsetting:inheritfromparent"
-          }
-        }
-        Overrides {
-          Name: "DisableCastShadows"
-          Bool: true
-        }
-        Overrides {
-          Name: "DisableReceiveDecals"
-          Bool: true
-        }
-        Overrides {
-          Name: "DisableDistanceFieldLighting"
-          Bool: true
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2859045759570793761
-    }
-  }
-}
-Objects {
-  Id: 16182384547534576989
-  Name: "TW_EdgeIndicator"
-  Transform {
-    Location {
-      Y: -61400
-      Z: 1240
-    }
-    Rotation {
-      Pitch: -90
-      Yaw: -14.0362635
-      Roll: 104.03627
-    }
-    Scale {
-      X: 5.6
-      Y: 307.18454
-      Z: 1
-    }
-  }
-  ParentId: 10639644213682625907
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6059571513361614452
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_EdgeIndicator"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 722.166
-            Y: 76760.7813
-            Z: 1240.00366
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -90
-            Yaw: -14.0362549
-            Roll: 104.03627
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 32.8720818
-            Y: 157.234528
             Z: 1.00000346
           }
         }
@@ -4109,7 +4053,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10639644213682625907
+  ParentId: 3600559420139020614
   TemplateInstance {
     ParameterOverrideMap {
       key: 6059571513361614452
@@ -4121,17 +4065,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 50335
+            X: 111745
             Y: -46065
-            Z: 1240.00061
+            Z: 0.000610351563
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -90
-            Yaw: -14.0362549
-            Roll: 104.03627
+            Yaw: 90
+            Roll: 7.62939453e-06
           }
         }
         Overrides {
@@ -4204,16 +4148,16 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 57390.1875
-            Y: 44407.9805
-            Z: 1240.00146
+            X: 53564.5625
+            Y: 41418.7031
+            Z: 1240.00195
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -90
-            Yaw: -7.12502289
+            Yaw: -7.12503052
             Roll: 45.1285477
           }
         }
@@ -4257,13 +4201,125 @@ Objects {
   }
 }
 Objects {
-  Id: 2140050464641941112
-  Name: "Cube - Bottom-Aligned"
+  Id: 5273496700728274949
+  Name: "Group"
   Transform {
     Location {
-      X: -30695
-      Y: 46691.1563
+      X: -15347.5
+      Y: -14449
       Z: 95
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10639644213682625907
+  ChildIds: 2140050464641941112
+  ChildIds: 16182384547534576989
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16182384547534576989
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      Y: -61400
+      Z: 1240
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: -14.0362635
+      Roll: 104.03627
+    }
+    Scale {
+      X: 5.6
+      Y: 307.18454
+      Z: 1
+    }
+  }
+  ParentId: 5273496700728274949
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6059571513361614452
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_EdgeIndicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 16069.666
+            Y: 84115.2
+            Z: 1145.00366
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -90
+            Yaw: 90
+            Roll: 7.62939453e-06
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 32.8720818
+            Y: 157.234528
+            Z: 1.00000346
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 13231971539212330216
+          }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:inheritfromparent"
+          }
+        }
+        Overrides {
+          Name: "DisableCastShadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+        Overrides {
+          Name: "DisableDistanceFieldLighting"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2859045759570793761
+    }
+  }
+}
+Objects {
+  Id: 2140050464641941112
+  Name: "TW_EdgeIndicator"
+  Transform {
+    Location {
+      X: -15347.5
+      Y: 54045.5781
     }
     Rotation {
     }
@@ -4273,7 +4329,7 @@ Objects {
       Z: 37.7000504
     }
   }
-  ParentId: 10639644213682625907
+  ParentId: 5273496700728274949
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
