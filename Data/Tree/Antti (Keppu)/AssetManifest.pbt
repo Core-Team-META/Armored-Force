@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14964967653464214432
-  Name: "Decal Dirt Patch"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_dirt_patch_001"
-  }
-}
-Assets {
   Id: 14775225527493723590
   Name: "Military Tank Modern Gear 02"
   PlatformAssetType: 1
@@ -185,15 +176,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_round_001"
-  }
-}
-Assets {
-  Id: 10512577683718946604
-  Name: "Scorch Mark Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_scorchmark"
   }
 }
 Assets {
