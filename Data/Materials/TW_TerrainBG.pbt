@@ -26,11 +26,11 @@
       }
       Overrides {
         Name: "material3_scale"
-        Float: 2
+        Float: 1
       }
       Overrides {
         Name: "material3side_scale"
-        Float: 2
+        Float: 1
       }
       Overrides {
         Name: "cmp:Material3"
