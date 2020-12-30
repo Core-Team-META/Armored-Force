@@ -111309,8 +111309,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 8828.13379
-      Y: -17803.291
+      X: 8900
+      Y: -17775
       Z: 665.800537
     }
     Rotation {
@@ -111357,8 +111357,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 9135
-      Y: -17635
+      X: 9000
+      Y: -17650
       Z: 665.800598
     }
     Rotation {
