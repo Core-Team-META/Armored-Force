@@ -1,6 +1,53 @@
 ﻿Name: "Decals_PlayArea"
 RootId: 3323884308924931292
 Objects {
+  Id: 1321516129332113610
+  Name: "Decal Tread Tracks 01"
+  Transform {
+    Location {
+      X: -31143.3477
+      Y: 32945.7266
+      Z: -66.2809753
+    }
+    Rotation {
+      Pitch: 1.66067159
+      Yaw: -68.4290161
+      Roll: -0.49710083
+    }
+    Scale {
+      X: 1.3367269
+      Y: 3.25402117
+      Z: 0.999999583
+    }
+  }
+  ParentId: 3323884308924931292
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Bend"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13100330238861707551
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 14889030489836529994
   Name: "Decal Stains Round 01 Orange patch"
   Transform {
