@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 7360602162123997816
-  Name: "Custom Roof Square Shingles 01"
+  Name: "TW_Roof"
   PlatformAssetType: 13
   SerializationVersion: 70
   CustomMaterialAsset {
@@ -9,6 +9,10 @@
       Overrides {
         Name: "rotate_material"
         Float: -90
+      }
+      Overrides {
+        Name: "roughness_multiplier"
+        Float: 1
       }
     }
     Assets {
