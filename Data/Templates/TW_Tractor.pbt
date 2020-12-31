@@ -119,10 +119,6 @@
         }
         ParentId: 2439203002483815857
         ChildIds: 3336175525758981971
-        ChildIds: 764981809008318736
-        ChildIds: 3885580284112209260
-        ChildIds: 15649005390135446857
-        ChildIds: 3239660920411093480
         ChildIds: 3955146480433552545
         ChildIds: 10300512493542358893
         ChildIds: 2516658152476674252
@@ -186,7 +182,6 @@
         ChildIds: 12447227586420953087
         ChildIds: 16422999892354026832
         ChildIds: 13055144097412266767
-        ChildIds: 1668587684268426124
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -226,280 +221,6 @@
         CoreMesh {
           MeshAsset {
             Id: 9605197959426201295
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 764981809008318736
-        Name: "Urban Pipe Flange 02"
-        Transform {
-          Location {
-            X: -278.101135
-            Y: -84.2087097
-            Z: 368.843781
-          }
-          Rotation {
-            Roll: -89.999939
-          }
-          Scale {
-            X: 0.530917
-            Y: 0.53091681
-            Z: 1.10068536
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1527224994251334627
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3885580284112209260
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: -277.363159
-            Y: 108.577957
-            Z: 364.912201
-          }
-          Rotation {
-            Yaw: 90
-            Roll: -85.487793
-          }
-          Scale {
-            X: 0.0904552341
-            Y: 1.88594973
-            Z: 0.186014622
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15649005390135446857
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: -277.363159
-            Y: -90.0805588
-            Z: 364.912201
-          }
-          Rotation {
-            Yaw: 90
-            Roll: -85.487793
-          }
-          Scale {
-            X: 0.0904552341
-            Y: 1.88594973
-            Z: 0.186014622
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3239660920411093480
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: -284.749176
-            Y: 10.8693104
-            Z: 463.304626
-          }
-          Rotation {
-            Pitch: 4.45889091
-          }
-          Scale {
-            X: 0.252577126
-            Y: 2.20403433
-            Z: 0.186015666
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1758388402481224558
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5018,71 +4739,6 @@
           }
         }
       }
-      Objects {
-        Id: 1668587684268426124
-        Name: "Urban Pipe Flange 02"
-        Transform {
-          Location {
-            X: -278.101135
-            Y: 113.929306
-            Z: 368.843781
-          }
-          Rotation {
-            Roll: -89.999939
-          }
-          Scale {
-            X: 0.530917
-            Y: 0.53091681
-            Z: 1.10068536
-          }
-        }
-        ParentId: 18221731298447889504
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.646
-              G: 0.240162209
-              B: 0.0510339625
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1527224994251334627
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
     }
     Assets {
       Id: 14452616722762075696
@@ -5103,12 +4759,12 @@
       }
     }
     Assets {
-      Id: 1527224994251334627
-      Name: "Urban Pipe Flange 02"
+      Id: 1758388402481224558
+      Name: "Cube - Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_pipes_acc_flange_002_ref"
+        AssetId: "sm_cube_hq_test_001"
       }
     }
     Assets {
@@ -5118,15 +4774,6 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_metal_painted_old_001_uv"
-      }
-    }
-    Assets {
-      Id: 1758388402481224558
-      Name: "Cube - Polished"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_hq_test_001"
       }
     }
     Assets {
