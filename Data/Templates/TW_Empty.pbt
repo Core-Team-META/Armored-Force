@@ -7,7 +7,7 @@
       RootId: 16518352910363721514
       Objects {
         Id: 16518352910363721514
-        Name: "Empty"
+        Name: "TW_Empty"
         Transform {
           Scale {
             X: 1
@@ -17,7 +17,6 @@
         }
         ParentId: 4781671109827199097
         Lifespan: 10
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }

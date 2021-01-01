@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 13424779709025296981
         ChildIds: 14685137530266172510
         ChildIds: 7314357451449572549
         Collidable_v2 {
@@ -225,12 +225,12 @@
           }
         }
         ParentId: 14685137530266172510
+        ChildIds: 16682576114886351335
         ChildIds: 14400927269539473066
         ChildIds: 2391237619579318379
         ChildIds: 6124411276764743745
         ChildIds: 7601195540963286944
         ChildIds: 1797953995678708179
-        ChildIds: 16682576114886351335
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -242,22 +242,161 @@
         }
       }
       Objects {
+        Id: 16682576114886351335
+        Name: "Log"
+        Transform {
+          Location {
+            X: -5.20371962
+            Y: 20.3119793
+            Z: 134.194214
+          }
+          Rotation {
+            Pitch: 67.4998093
+            Yaw: -179.999954
+            Roll: -89.9999466
+          }
+          Scale {
+            X: 0.503228366
+            Y: 0.503228366
+            Z: 7.38068247
+          }
+        }
+        ParentId: 2763672934151491479
+        ChildIds: 16651124829081897707
+        ChildIds: 1125011005603160384
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12302653924554145284
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.217272505
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.52125645
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1137112816547272582
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              OverrideMass: true
+              Mass: 500
+              LinearDamping: 1
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16651124829081897707
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: 0.104980469
+            Y: 0.000152587891
+            Z: 49.9692535
+          }
+          Rotation {
+            Roll: 1.70754702e-05
+          }
+          Scale {
+            X: 1.20914185
+            Y: 1.20914185
+            Z: 0.00713298842
+          }
+        }
+        ParentId: 16682576114886351335
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9561757784240598956
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 1125011005603160384
+        Name: "Decal Wood Ends Variations"
+        Transform {
+          Location {
+            X: 0.104980469
+            Y: -0.000101725258
+            Z: -50.2081299
+          }
+          Rotation {
+            Pitch: -2.04905664e-05
+            Yaw: -180
+            Roll: 179.999969
+          }
+          Scale {
+            X: 1.20914161
+            Y: 1.20914137
+            Z: 0.0151851755
+          }
+        }
+        ParentId: 16682576114886351335
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9561757784240598956
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
         Id: 14400927269539473066
         Name: "Log"
         Transform {
           Location {
-            X: 55
-            Y: -15
-            Z: 55
+            X: 46.1292267
+            Y: -12.5807228
+            Z: 46.1292725
           }
           Rotation {
-            Pitch: 67.4999924
-            Roll: 90
+            Pitch: 67.4999619
+            Roll: 89.9999771
           }
           Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 8.8
+            X: 0.503228366
+            Y: 0.503228366
+            Z: 7.38068247
           }
         }
         ParentId: 2763672934151491479
@@ -267,7 +406,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11737521126992024413
+              Id: 12302653924554145284
             }
           }
           Overrides {
@@ -384,18 +523,19 @@
         Name: "Log"
         Transform {
           Location {
-            X: -10
-            Y: -5
-            Z: 55
+            X: -8.38689709
+            Y: -4.19326
+            Z: 46.1292725
           }
           Rotation {
-            Pitch: 112.500015
-            Roll: 90
+            Pitch: 67.4999542
+            Yaw: 179.999969
+            Roll: -89.9999771
           }
           Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 8.8
+            X: 0.503228366
+            Y: 0.503228366
+            Z: 7.38068247
           }
         }
         ParentId: 2763672934151491479
@@ -405,7 +545,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11737521126992024413
+              Id: 12302653924554145284
             }
           }
           Overrides {
@@ -522,19 +662,19 @@
         Name: "Log"
         Transform {
           Location {
-            X: -81.5640335
-            Y: 12.1370811
-            Z: 55
+            X: -68.4090805
+            Y: 10.179347
+            Z: 46.1292725
           }
           Rotation {
-            Pitch: 67.4998703
-            Yaw: -179.999985
-            Roll: -89.9999695
+            Pitch: 67.4998093
+            Yaw: -179.999954
+            Roll: -89.9999466
           }
           Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 8.8
+            X: 0.503228366
+            Y: 0.503228366
+            Z: 7.38068247
           }
         }
         ParentId: 2763672934151491479
@@ -544,7 +684,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11737521126992024413
+              Id: 12302653924554145284
             }
           }
           Overrides {
@@ -661,17 +801,19 @@
         Name: "Log"
         Transform {
           Location {
-            X: -41.9028664
-            Y: -9.70306778
-            Z: 110
+            X: -35.1446381
+            Y: -8.13821697
+            Z: 92.2585449
           }
           Rotation {
+            Pitch: -6.83018879e-06
+            Yaw: 3.25688781e-12
             Roll: 89.9999542
           }
           Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 8.8
+            X: 0.503228366
+            Y: 0.503228366
+            Z: 7.38068247
           }
         }
         ParentId: 2763672934151491479
@@ -681,7 +823,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11737521126992024413
+              Id: 12302653924554145284
             }
           }
           Overrides {
@@ -798,17 +940,19 @@
         Name: "Log"
         Transform {
           Location {
-            X: 28.7938118
-            Y: 9.21857357
-            Z: 110
+            X: 24.149828
+            Y: 7.73188829
+            Z: 92.2585449
           }
           Rotation {
+            Pitch: -6.83018879e-06
+            Yaw: 3.25688781e-12
             Roll: 89.9999542
           }
           Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 8.8
+            X: 0.503228366
+            Y: 0.503228366
+            Z: 7.38068247
           }
         }
         ParentId: 2763672934151491479
@@ -818,7 +962,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11737521126992024413
+              Id: 12302653924554145284
             }
           }
           Overrides {
@@ -931,145 +1075,6 @@
         }
       }
       Objects {
-        Id: 16682576114886351335
-        Name: "Log"
-        Transform {
-          Location {
-            X: -6.20452404
-            Y: 24.217844
-            Z: 160
-          }
-          Rotation {
-            Pitch: 67.4998703
-            Yaw: -179.999985
-            Roll: -89.9999695
-          }
-          Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 8.8
-          }
-        }
-        ParentId: 2763672934151491479
-        ChildIds: 16651124829081897707
-        ChildIds: 1125011005603160384
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11737521126992024413
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.217272505
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1.52125645
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1137112816547272582
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              OverrideMass: true
-              Mass: 500
-              LinearDamping: 1
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16651124829081897707
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 0.104980469
-            Y: 0.000152587891
-            Z: 49.9692535
-          }
-          Rotation {
-            Roll: 1.70754702e-05
-          }
-          Scale {
-            X: 1.20914185
-            Y: 1.20914185
-            Z: 0.00713298842
-          }
-        }
-        ParentId: 16682576114886351335
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 1125011005603160384
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 0.104980469
-            Y: -0.000101725258
-            Z: -50.2081299
-          }
-          Rotation {
-            Pitch: -2.04905664e-05
-            Yaw: -180
-            Roll: 179.999969
-          }
-          Scale {
-            X: 1.20914161
-            Y: 1.20914137
-            Z: 0.0151851755
-          }
-        }
-        ParentId: 16682576114886351335
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
         Id: 7314357451449572549
         Name: "RemoveGroup"
         Transform {
@@ -1102,15 +1107,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cylinder_002"
-      }
-    }
-    Assets {
-      Id: 11737521126992024413
-      Name: "Bark Pine 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_bark_pine_001_uv"
       }
     }
     Assets {
