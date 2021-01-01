@@ -19,6 +19,9 @@ Objects {
   ChildIds: 7331958413616733673
   ChildIds: 4689494391382931675
   ChildIds: 14661672776697705088
+  ChildIds: 5993738902969970563
+  ChildIds: 11811894486440134395
+  ChildIds: 17890390058669277496
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,6 +31,120 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17890390058669277496
+  Name: "TW_Tractor"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14677615086597668861
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Tractor"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9037.75684
+            Y: -17860.8789
+            Z: 108.110703
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10387737619564005660
+    }
+  }
+}
+Objects {
+  Id: 11811894486440134395
+  Name: "TW_Tractor"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14677615086597668861
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Tractor"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17915
+            Y: 11565
+            Z: 80
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -177.934097
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10387737619564005660
+    }
+  }
+}
+Objects {
+  Id: 5993738902969970563
+  Name: "TW_Tractor"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14677615086597668861
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Tractor"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28405
+            Y: 24025
+            Z: 385
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10387737619564005660
+    }
   }
 }
 Objects {
