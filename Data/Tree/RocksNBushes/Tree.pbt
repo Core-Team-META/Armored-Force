@@ -45252,9 +45252,9 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: -11582.4199
-      Y: 25442.5078
-      Z: 126.42041
+      X: -11593.79
+      Y: 25437.1953
+      Z: 64.1606445
     }
     Rotation {
       Pitch: 78.6181946
@@ -48901,6 +48901,8 @@ Objects {
   ChildIds: 11982199855206763305
   ChildIds: 706527897514227394
   ChildIds: 16089583660891724518
+  ChildIds: 12705788890565691575
+  ChildIds: 12803647952372050561
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -48909,6 +48911,102 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 12803647952372050561
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -10881.3867
+      Y: 28305.877
+      Z: 93.6133423
+    }
+    Rotation {
+      Yaw: -159.489456
+    }
+    Scale {
+      X: 3.31539965
+      Y: 4.18561602
+      Z: 4.18562508
+    }
+  }
+  ParentId: 3413460995778910319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12705788890565691575
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -10741.6543
+      Y: 24542.4355
+      Z: 93.6133423
+    }
+    Rotation {
+      Yaw: -159.489456
+    }
+    Scale {
+      X: 3.31539965
+      Y: 4.18561602
+      Z: 4.18562508
+    }
+  }
+  ParentId: 3413460995778910319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -49427,13 +49525,13 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: -10942.8115
-      Y: 25985.8496
-      Z: 4.25231934
+      X: -10727.585
+      Y: 25994.252
+      Z: -51.5957947
     }
     Rotation {
       Pitch: 79.1155624
-      Yaw: -55.790451
+      Yaw: -55.7904663
       Roll: 67.0722122
     }
     Scale {
@@ -50018,9 +50116,9 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -11016.1172
-      Y: 25335.8574
-      Z: 129.548401
+      X: -11098.8926
+      Y: 25342.5098
+      Z: 115.040222
     }
     Rotation {
       Yaw: 175.404282
@@ -50318,9 +50416,9 @@ Objects {
   Name: "RocksNBushes"
   Transform {
     Location {
-      X: 30891.2852
-      Y: 2883.92578
-      Z: 37.3554688
+      X: 30891.207
+      Y: 2883.64063
+      Z: 91.4047852
     }
     Rotation {
       Yaw: 161.360321
@@ -57413,6 +57511,7 @@ Objects {
   ChildIds: 10616405469294793260
   ChildIds: 16832936368698491412
   ChildIds: 17368875227091099857
+  ChildIds: 14722341846429919811
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -57421,6 +57520,56 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 14722341846429919811
+  Name: "Rock Pile 001"
+  Transform {
+    Location {
+      X: -11471.9238
+      Y: 29337.793
+      Z: 142.634338
+    }
+    Rotation {
+      Pitch: -7.57086182
+      Yaw: -137.546844
+      Roll: 13.8751116
+    }
+    Scale {
+      X: 7.60681057
+      Y: 7.60681057
+      Z: 5.43343401
+    }
+  }
+  ParentId: 13114287834154480079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10835155324150586940
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -59236,6 +59385,7 @@ Objects {
   ChildIds: 4783966148638127507
   ChildIds: 6764362307845268279
   ChildIds: 2527455314462385386
+  ChildIds: 1722198682019616177
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -59244,6 +59394,56 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 1722198682019616177
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -9354.86328
+      Y: 15412.748
+      Z: 197.397095
+    }
+    Rotation {
+      Pitch: 12.2954741
+      Yaw: 58.9449539
+      Roll: 1.3998847
+    }
+    Scale {
+      X: 3.82419658
+      Y: 3.82419658
+      Z: 3.82419658
+    }
+  }
+  ParentId: 11929382583440605902
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }

@@ -35,7 +35,7 @@
       }
       Overrides {
         Name: "dist_radius"
-        Float: 1
+        Float: 5
       }
       Overrides {
         Name: "dist_rotation"

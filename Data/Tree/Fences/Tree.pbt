@@ -13638,7 +13638,7 @@ Objects {
           Vector {
             X: -32514.7441
             Y: -12715.9932
-            Z: 509.234131
+            Z: 601.625366
           }
         }
         Overrides {
@@ -13696,15 +13696,15 @@ Objects {
           Vector {
             X: -32341.6816
             Y: -12799.8564
-            Z: 503.627075
+            Z: 584.127502
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -1.69274616
-            Yaw: -31.7122345
-            Roll: -0.136291534
+            Pitch: -1.69274902
+            Yaw: -31.7122192
+            Roll: -0.136291504
           }
         }
         Overrides {
@@ -13754,7 +13754,7 @@ Objects {
           Vector {
             X: -31796.3945
             Y: -13121.5078
-            Z: 484.952362
+            Z: 570.276855
           }
         }
         Overrides {
@@ -13812,7 +13812,7 @@ Objects {
           Vector {
             X: -33565.2656
             Y: -12090.7744
-            Z: 518.3526
+            Z: 586.619629
           }
         }
         Overrides {
@@ -13868,13 +13868,13 @@ Objects {
           Vector {
             X: -33392.1367
             Y: -12174.6885
-            Z: 518.3526
+            Z: 585.996826
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -31.7140694
+            Yaw: -31.7140808
           }
         }
         Overrides {
@@ -13924,7 +13924,7 @@ Objects {
           Vector {
             X: -32846.625
             Y: -12496.502
-            Z: 518.3526
+            Z: 603.40863
           }
         }
         Overrides {
@@ -14204,15 +14204,14 @@ Objects {
           Vector {
             X: -33615.8555
             Y: -11678.5049
-            Z: 580.167786
+            Z: 600.557678
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -5.46691704
+            Pitch: -5.46691895
             Yaw: -135
-            Roll: -2.14418705e-07
           }
         }
         Overrides {
@@ -14322,15 +14321,15 @@ Objects {
           Vector {
             X: -32670.4473
             Y: -10574.2832
-            Z: 672.57
+            Z: 703.65741
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 3.49437237
-            Yaw: 44.9999962
-            Roll: -1.06920481e-07
+            Pitch: 1.60478699
+            Yaw: 45.0840492
+            Roll: 1.88840222
           }
         }
         Overrides {
@@ -14387,15 +14386,15 @@ Objects {
           Vector {
             X: -32814.7813
             Y: -10726.9551
-            Z: 652.282654
+            Z: 704.878845
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -4.50646973
-            Yaw: -135
-            Roll: -1.07052657e-07
+            Pitch: -1.41055298
+            Yaw: -134.840256
+            Roll: -3.09030151
           }
         }
         Overrides {
@@ -14447,15 +14446,15 @@ Objects {
           Vector {
             X: -33107.1758
             Y: -11030.1211
-            Z: 625.851
+            Z: 675.945801
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.299005181
+            Pitch: -0.29901123
             Yaw: -130.402176
-            Roll: -0.203186
+            Roll: -0.203186035
           }
         }
         Overrides {
@@ -14505,7 +14504,7 @@ Objects {
           Vector {
             X: -33508.9805
             Y: -11522.2578
-            Z: 617.085571
+            Z: 651.389893
           }
         }
         Overrides {
@@ -14563,7 +14562,7 @@ Objects {
           Vector {
             X: -30301.0059
             Y: -11590.751
-            Z: 695.218567
+            Z: 700
           }
         }
         Overrides {
@@ -14571,7 +14570,6 @@ Objects {
           Rotator {
             Pitch: 1.82843471
             Yaw: 44.9999924
-            Roll: -1.06776064e-07
           }
         }
         Overrides {
@@ -14623,7 +14621,7 @@ Objects {
           Vector {
             X: -30416.6816
             Y: -11757.0088
-            Z: 676.490845
+            Z: 700
           }
         }
         Overrides {
@@ -14683,7 +14681,7 @@ Objects {
           Vector {
             X: -30809.5176
             Y: -12238.8008
-            Z: 606.514038
+            Z: 650
           }
         }
         Overrides {
@@ -14747,14 +14745,15 @@ Objects {
           Vector {
             X: -31098.7559
             Y: -12531.7871
-            Z: 553.004822
+            Z: 654.727417
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 6.66415358
-            Yaw: 44.9999962
+            Pitch: 2.69844365
+            Yaw: 44.6766472
+            Roll: -3.95425415
           }
         }
         Overrides {
@@ -14805,13 +14804,13 @@ Objects {
           Vector {
             X: -31228.1465
             Y: -12644.8467
-            Z: 530.102844
+            Z: 659.894653
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -1.82830489
+            Pitch: -1.82830811
             Yaw: -135
           }
         }
@@ -14864,13 +14863,13 @@ Objects {
           Vector {
             X: -31490.0723
             Y: -12940.1572
-            Z: 501.353516
+            Z: 632.653259
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -3.84218621
+            Pitch: -3.8421936
             Yaw: -130.405182
             Roll: 0.0866475776
           }

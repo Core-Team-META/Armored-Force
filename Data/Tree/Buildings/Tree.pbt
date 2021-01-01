@@ -5821,14 +5821,14 @@ Objects {
   Name: "TW_BuildingWooden01"
   Transform {
     Location {
-      X: 6552.6748
-      Y: -775.334
-      Z: 106.263786
+      X: 6472.90625
+      Y: -796.642212
+      Z: 134.615311
     }
     Rotation {
       Pitch: 2.85348892
       Yaw: -152.258255
-      Roll: -0.309509367
+      Roll: -0.309509277
     }
     Scale {
       X: 0.192307711
