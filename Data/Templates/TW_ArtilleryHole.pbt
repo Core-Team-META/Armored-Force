@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4781671109827199097
         ChildIds: 18407240036863401875
         ChildIds: 11066623372692613668
         ChildIds: 11768013810706959007
@@ -25,7 +25,6 @@
         ChildIds: 9405152994645939323
         ChildIds: 10349453008967352568
         ChildIds: 13151017582140663754
-        ChildIds: 12524559765308804089
         ChildIds: 4249229499519041713
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -505,82 +504,6 @@
         }
       }
       Objects {
-        Id: 12524559765308804089
-        Name: "Scorch Mark Decal"
-        Transform {
-          Location {
-            X: -81.0009766
-            Y: -2740.49023
-            Z: 205.733093
-          }
-          Rotation {
-            Pitch: 11.0720711
-            Yaw: -45.5500183
-          }
-          Scale {
-            X: 18.2000027
-            Y: 18.2000027
-            Z: 8.30000114
-          }
-        }
-        ParentId: 11408979251054913947
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Emissive Color A"
-            Color {
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Color B"
-            Color {
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Color C"
-            Color {
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Enable Hot Spot"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Hot Spot Fade"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Hot Spot Fade Time"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Hot Spot Size"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Sort Order"
-            Int: 3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 10512577683718946604
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
         Id: 4249229499519041713
         Name: "Decal Stains Round 01"
         Transform {
@@ -649,15 +572,6 @@
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "bp_decal_stain_round_001"
-      }
-    }
-    Assets {
-      Id: 10512577683718946604
-      Name: "Scorch Mark Decal"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_decal_scorchmark"
       }
     }
     PrimaryAssetId {
