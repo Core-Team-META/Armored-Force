@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 13133278224975990749
-  Name: "Empty"
+  Name: "TW_Empty"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

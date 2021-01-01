@@ -23672,7 +23672,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -155.289871
+            Yaw: -155.289902
           }
         }
         Overrides {
@@ -23728,7 +23728,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -147.118637
+            Yaw: -147.118607
           }
         }
       }
@@ -23809,8 +23809,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 33172.4727
-            Y: -32639.6172
-            Z: 682.762085
+            Y: -32884.1797
+            Z: 614.117554
           }
         }
         Overrides {
@@ -41067,6 +41067,7 @@ Objects {
   ChildIds: 1197675181774170383
   ChildIds: 13173874856096727539
   ChildIds: 13432574280867685291
+  ChildIds: 8290230343489312322
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41075,6 +41076,56 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 8290230343489312322
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -1229.55566
+      Y: 2823.68164
+      Z: 393.638184
+    }
+    Rotation {
+      Pitch: -7.36859131
+      Yaw: -167.75827
+      Roll: 18.7408
+    }
+    Scale {
+      X: -0.68908751
+      Y: 1.21582389
+      Z: 1.67995512
+    }
+  }
+  ParentId: 3952798557630469633
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5621809922852842752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -50756,17 +50807,6 @@ Objects {
   ParentId: 4689494391382931675
   TemplateInstance {
     ParameterOverrideMap {
-      key: 845453303975886677
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -158.246094
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 14677615086597668861
       value {
         Overrides {
@@ -50776,23 +50816,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -11750
-            Y: -51255.5352
+            X: -12006.5977
+            Y: -50586.4414
             Z: 145
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -22.4999695
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            Yaw: 22.4999542
           }
         }
       }
@@ -54230,8 +54262,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 16034.4385
-            Y: -6052.73242
-            Z: 410.322449
+            Y: -5836.4292
+            Z: 207.568329
           }
         }
         Overrides {
@@ -61154,14 +61186,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7825
-            Y: -40425
+            X: 29580
+            Y: -43950
             Z: 218.020325
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -157.499969
           }
         }
       }
@@ -120476,9 +120509,9 @@ Objects {
   Name: "Rock Flat 02"
   Transform {
     Location {
-      X: 151.012115
-      Y: -532.238525
-      Z: -289.884674
+      X: 172.482285
+      Y: -535.434387
+      Z: -289.883972
     }
     Rotation {
       Pitch: -19.38797

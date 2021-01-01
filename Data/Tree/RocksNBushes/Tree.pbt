@@ -2226,14 +2226,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -10941.2461
-      Y: 18166.4395
-      Z: 197.756134
+      X: -10941.0625
+      Y: 18163.8848
+      Z: 162.928284
     }
     Rotation {
-      Pitch: 0.989216268
-      Yaw: -135.958649
-      Roll: -18.7373962
+      Pitch: -2.42776489
+      Yaw: -117.992096
+      Roll: -15.1263428
     }
     Scale {
       X: 3.82419658
@@ -9167,23 +9167,23 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -11077.0273
-            Y: 26200.8535
-            Z: 129.252563
+            X: -11142.6934
+            Y: 26350.7
+            Z: -23.6691284
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.80000007
+            X: 1.80002773
             Y: 1.80000007
-            Z: 1.1
+            Z: 1.75388098
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -89.9999313
+            Yaw: -89.999939
           }
         }
       }
@@ -16470,8 +16470,8 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -8894.58594
-      Y: 17866.2773
+      X: -8688.83594
+      Y: 17965.1953
       Z: 164.024231
     }
     Rotation {
