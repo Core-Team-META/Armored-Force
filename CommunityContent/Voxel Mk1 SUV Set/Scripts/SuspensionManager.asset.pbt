@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 3777448286328486834
-  Name: "NPCManager"
+  Id: 14732696779456250511
+  Name: "SuspensionManager"
   PlatformAssetType: 3
   TextAsset {
   }

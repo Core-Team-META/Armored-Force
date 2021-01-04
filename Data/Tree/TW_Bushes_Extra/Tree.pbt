@@ -1,6 +1,238 @@
 ﻿Name: "TW_Bushes_Extra"
 RootId: 10627146378688685322
 Objects {
+  Id: 18306515996491800329
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -47685.2578
+      Y: 44781.418
+      Z: 255.740967
+    }
+    Rotation {
+      Yaw: -150.275513
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 1.41005838
+    }
+  }
+  ParentId: 10627146378688685322
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -46002.7148
+            Y: 43331.2852
+            Z: 255.741089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -150.275513
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2
+            Y: 2
+            Z: 1.41005838
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 11989768959984201918
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -3458.85156
+      Y: 29391.8789
+      Z: 362.437714
+    }
+    Rotation {
+      Pitch: 2.71543717
+      Yaw: 65.8859253
+      Roll: 6.31356716
+    }
+    Scale {
+      X: 2.01295185
+      Y: 2.01295877
+      Z: 1.56899834
+    }
+  }
+  ParentId: 10627146378688685322
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1596.0083
+            Y: 32805.6
+            Z: 427.674408
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.71543717
+            Yaw: 65.8859558
+            Roll: 6.31357241
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2.01295185
+            Y: 2.01295877
+            Z: 1.56899834
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 1391117049052482878
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 39809.7461
+      Y: -1512.10657
+      Z: 683.116577
+    }
+    Rotation {
+      Pitch: 2.67503667
+      Yaw: -76.1597748
+      Roll: -3.65820432
+    }
+    Scale {
+      X: 1.53028536
+      Y: 1.53025985
+      Z: 1.25514317
+    }
+  }
+  ParentId: 10627146378688685322
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 41768.3359
+            Y: -5006.92627
+            Z: 683.116577
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.53028536
+            Y: 1.53025985
+            Z: 1.25514317
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.67503667
+            Yaw: -76.159729
+            Roll: -3.65820313
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 15921161418006680806
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: 11984.9648
+      Y: -23018.248
+      Z: 540.112427
+    }
+    Rotation {
+      Yaw: 84.4366684
+    }
+    Scale {
+      X: 1.92868185
+      Y: 1.92868185
+      Z: 1.92868185
+    }
+  }
+  ParentId: 10627146378688685322
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 11680
+            Y: -20685
+            Z: 605
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.92868185
+            Y: 1.92868185
+            Z: 1.92868185
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 84.4366684
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
   Id: 2522131575888558216
   Name: "TW_Bush01"
   Transform {
