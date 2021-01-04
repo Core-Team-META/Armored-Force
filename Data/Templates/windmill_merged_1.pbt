@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 7249855274108265855
-  Name: "windmill"
+  Id: 1645818606374011234
+  Name: "windmill_merged"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3403847512332499410
+      RootId: 12339031325220020147
       Objects {
-        Id: 3403847512332499410
-        Name: "windmill"
+        Id: 12339031325220020147
+        Name: "windmill_merged"
         Transform {
           Scale {
             X: 0.176569209
@@ -15,20 +15,52 @@
             Z: 0.176569209
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 17766973585537334042
-        ChildIds: 8717652052399895331
-        ChildIds: 4502494407099617598
-        ChildIds: 14871985463283268900
-        ChildIds: 14882656138891225992
-        ChildIds: 1948308012019611840
-        ChildIds: 3893735176574132301
-        ChildIds: 5287143221964033198
-        ChildIds: 18172131203425648921
-        ChildIds: 5241244723028906902
-        ChildIds: 12285271074313042052
-        ChildIds: 6028343967660779916
-        ChildIds: 12827708947960564856
+        ParentId: 9924138213209110500
+        ChildIds: 16055156055418925429
+        ChildIds: 4383296188849170096
+        ChildIds: 7214086191895034842
+        ChildIds: 4350250931468518386
+        ChildIds: 2090580724627168399
+        ChildIds: 7749845428454798206
+        ChildIds: 16774048356596039790
+        ChildIds: 16344486935698249985
+        ChildIds: 13703207617459318611
+        ChildIds: 12953887097256722033
+        ChildIds: 349114306384658920
+        ChildIds: 8898329319908140773
+        ChildIds: 17143038487879391884
+        ChildIds: 1918769582552054221
+        ChildIds: 890294063174460303
+        ChildIds: 8184756386394949203
+        ChildIds: 3955444486894755121
+        ChildIds: 14890823448166922916
+        ChildIds: 4976223698433933746
+        ChildIds: 11759028482997402868
+        ChildIds: 6197154762884984003
+        ChildIds: 6436820887978132475
+        ChildIds: 51715076912375712
+        ChildIds: 8967540142134357388
+        ChildIds: 8221323815119496917
+        ChildIds: 12596587495079172676
+        ChildIds: 579513432295818911
+        ChildIds: 16751445598279765189
+        ChildIds: 7499665918520104535
+        ChildIds: 12705912307745584746
+        ChildIds: 14726343557162724802
+        ChildIds: 11309896886654799928
+        ChildIds: 6132439933558545484
+        ChildIds: 15773393901564499816
+        ChildIds: 14361703639185188757
+        ChildIds: 390274312397442232
+        ChildIds: 6189109017879974961
+        ChildIds: 1362668629487594550
+        ChildIds: 7969412264261273166
+        ChildIds: 8518567750253051272
+        ChildIds: 3948253183812242672
+        ChildIds: 6411762292496350213
+        ChildIds: 5475442396324293213
+        ChildIds: 5325293360885882616
+        ChildIds: 8604038418507220729
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -36,2326 +68,17 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 17766973585537334042
-        Name: "Side"
-        Transform {
-          Location {
-            X: -475.135437
-            Y: 537.580505
-            Z: 278.64566
-          }
-          Rotation {
-            Yaw: -51.7116623
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3403847512332499410
-        ChildIds: 14501987466685146906
-        ChildIds: 15763840201048267408
-        ChildIds: 402792779402318880
-        ChildIds: 13835989432105104527
-        ChildIds: 14238532613735446516
-        ChildIds: 1801678650469839716
-        ChildIds: 5968441133826071636
-        ChildIds: 896982070305633639
-        ChildIds: 7708245551841262572
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14501987466685146906
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -280.648438
-            Y: -68.6650391
-          }
-          Rotation {
-            Yaw: -36.947525
-            Roll: 3.36312604
-          }
-          Scale {
-            X: 1.62389684
-            Y: 0.979728401
-            Z: 1.65814829
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
+          Model {
           }
         }
       }
       Objects {
-        Id: 15763840201048267408
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -225.486023
-            Y: -39.3914795
-            Z: 962.394775
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312675
-          }
-          Scale {
-            X: 1.4879967
-            Y: 0.979724884
-            Z: 1.59999979
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 402792779402318880
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -159.906555
-            Y: -20.4347229
-            Z: 1891.02319
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312723
-          }
-          Scale {
-            X: 1.41707218
-            Y: 0.952619
-            Z: 1.46999955
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 13835989432105104527
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -81.9765625
-            Y: -16.171875
-            Z: 2746.12817
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312795
-          }
-          Scale {
-            X: 1.28
-            Y: 0.952604592
-            Z: 1.46
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14238532613735446516
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -6.73828125
-            Y: -9.28027344
-            Z: 3609.46021
-          }
-          Rotation {
-            Yaw: -36.9474945
-            Roll: 3.36312866
-          }
-          Scale {
-            X: 1.12
-            Y: 0.952607095
-            Z: 1.43281949
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 1801678650469839716
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 54.1523438
-            Y: 6.64355469
-            Z: 4448.84766
-          }
-          Rotation {
-            Yaw: -36.9474945
-            Roll: 3.36312914
-          }
-          Scale {
-            X: 1
-            Y: 0.952607095
-            Z: 1.2
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5968441133826071636
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 113
-            Y: 14.8466797
-            Z: 5162.38379
-          }
-          Rotation {
-            Yaw: -36.9474945
-            Roll: 3.36312938
-          }
-          Scale {
-            X: 0.9
-            Y: 0.952607095
-            Z: 1.1
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 896982070305633639
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 148.8125
-            Y: 35.5498047
-            Z: 5810.2207
-          }
-          Rotation {
-            Yaw: -36.9474945
-            Roll: 3.36312985
-          }
-          Scale {
-            X: 0.85
-            Y: 0.952607095
-            Z: 1.1
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 7708245551841262572
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 200.636719
-            Y: 44.5087891
-            Z: 6462.11719
-          }
-          Rotation {
-            Yaw: -36.9474945
-            Roll: 3.36313033
-          }
-          Scale {
-            X: 0.75
-            Y: 0.952607095
-            Z: 1
-          }
-        }
-        ParentId: 17766973585537334042
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8717652052399895331
-        Name: "Side"
-        Transform {
-          Location {
-            X: 419.674316
-            Y: 519.05249
-            Z: 278.64566
-          }
-          Rotation {
-            Yaw: -143.832581
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3403847512332499410
-        ChildIds: 2902311366269983331
-        ChildIds: 2289195284336553538
-        ChildIds: 4599514196592363422
-        ChildIds: 358311855511224370
-        ChildIds: 3515666510298331237
-        ChildIds: 5407709759018649085
-        ChildIds: 9477586583399431792
-        ChildIds: 418415462742917646
-        ChildIds: 4946880001958839122
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 2902311366269983331
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -280.648438
-            Y: -68.6650391
-          }
-          Rotation {
-            Yaw: -36.947525
-            Roll: 3.36312604
-          }
-          Scale {
-            X: 1.62389684
-            Y: 0.979728401
-            Z: 1.65814829
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 2289195284336553538
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -206.101654
-            Y: -53.9701538
-            Z: 962.394775
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312675
-          }
-          Scale {
-            X: 1.46526551
-            Y: 0.97974062
-            Z: 1.60000062
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 4599514196592363422
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -119.51178
-            Y: -50.8168602
-            Z: 1891.02319
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312723
-          }
-          Scale {
-            X: 1.29248011
-            Y: 0.952621162
-            Z: 1.46999955
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 358311855511224370
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -58.6213
-            Y: -33.7392731
-            Z: 2746.12817
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312795
-          }
-          Scale {
-            X: 1.21806765
-            Y: 0.952598214
-            Z: 1.45999932
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3515666510298331237
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 38.520668
-            Y: -43.3207855
-            Z: 3609.46021
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312866
-          }
-          Scale {
-            X: 1.0350461
-            Y: 0.952602804
-            Z: 1.43281913
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5407709759018649085
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 80.047
-            Y: -12.8334274
-            Z: 4448.84766
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312914
-          }
-          Scale {
-            X: 1
-            Y: 0.952607095
-            Z: 1.2
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9477586583399431792
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 129.725021
-            Y: 2.26696777
-            Z: 5162.38379
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312938
-          }
-          Scale {
-            X: 0.9
-            Y: 0.952607095
-            Z: 1.1
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 418415462742917646
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 193.59848
-            Y: 1.86500549
-            Z: 5810.2207
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312985
-          }
-          Scale {
-            X: 0.786056161
-            Y: 0.952604651
-            Z: 1.09999967
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 4946880001958839122
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 229.87674
-            Y: 22.5168839
-            Z: 6462.11719
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36313033
-          }
-          Scale {
-            X: 0.71137315
-            Y: 0.952613771
-            Z: 1.00000036
-          }
-        }
-        ParentId: 8717652052399895331
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 4502494407099617598
-        Name: "Side"
-        Transform {
-          Location {
-            X: 348.941406
-            Y: -376.704437
-            Z: 278.64566
-          }
-          Rotation {
-            Yaw: 124.792519
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3403847512332499410
-        ChildIds: 16459598747005522321
-        ChildIds: 17907290081397231263
-        ChildIds: 1592085648431916423
-        ChildIds: 2170468121863495277
-        ChildIds: 4124268001159747970
-        ChildIds: 17697414077668217380
-        ChildIds: 12226022588939391776
-        ChildIds: 14037870794198282146
-        ChildIds: 1177069016682339548
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 16459598747005522321
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -280.648438
-            Y: -68.6650391
-          }
-          Rotation {
-            Yaw: -36.947525
-            Roll: 3.36312604
-          }
-          Scale {
-            X: 1.62389684
-            Y: 0.979728401
-            Z: 1.65814829
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 17907290081397231263
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -206.101761
-            Y: -53.9696045
-            Z: 962.394775
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312675
-          }
-          Scale {
-            X: 1.5
-            Y: 0.979731
-            Z: 1.6
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 1592085648431916423
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -148.145752
-            Y: -29.2803574
-            Z: 1891.02295
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312723
-          }
-          Scale {
-            X: 1.4
-            Y: 0.952627
-            Z: 1.47
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 2170468121863495277
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -69.4261932
-            Y: -25.6130104
-            Z: 2746.12817
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312795
-          }
-          Scale {
-            X: 1.24675179
-            Y: 0.952607572
-            Z: 1.4599998
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 4124268001159747970
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -6.73828125
-            Y: -9.28027344
-            Z: 3609.46021
-          }
-          Rotation {
-            Yaw: -36.9474945
-            Roll: 3.36312866
-          }
-          Scale {
-            X: 1.12
-            Y: 0.952607095
-            Z: 1.43281949
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 17697414077668217380
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 61.6358337
-            Y: 1.01501846
-            Z: 4448.84766
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312914
-          }
-          Scale {
-            X: 1
-            Y: 0.952607095
-            Z: 1.2
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12226022588939391776
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 123.870979
-            Y: 6.6689682
-            Z: 5162.38379
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312938
-          }
-          Scale {
-            X: 0.9
-            Y: 0.952607095
-            Z: 1.1
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14037870794198282146
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 176.250534
-            Y: 14.9155817
-            Z: 5810.2207
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312985
-          }
-          Scale {
-            X: 0.85
-            Y: 0.952607095
-            Z: 1.1
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 1177069016682339548
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 233.48587
-            Y: 19.8031616
-            Z: 6462.11719
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36313033
-          }
-          Scale {
-            X: 0.75
-            Y: 0.952607095
-            Z: 1
-          }
-        }
-        ParentId: 4502494407099617598
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14871985463283268900
-        Name: "Side"
-        Transform {
-          Location {
-            X: -505.762054
-            Y: -363.831604
-            Z: 278.64566
-          }
-          Rotation {
-            Yaw: 38.2883186
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3403847512332499410
-        ChildIds: 14255903129584787588
-        ChildIds: 5973757013076041072
-        ChildIds: 11467418900742667937
-        ChildIds: 18150649756598452957
-        ChildIds: 14585447793373353167
-        ChildIds: 12416207118425182393
-        ChildIds: 242169591501471669
-        ChildIds: 6295282122864284606
-        ChildIds: 5497081295885097580
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14255903129584787588
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -267.769653
-            Y: -105.278038
-            Z: 1.26457882
-          }
-          Rotation {
-            Pitch: -0.0112915039
-            Yaw: -36.9474792
-            Roll: 3.84486651
-          }
-          Scale {
-            X: 1.50495541
-            Y: 0.979722142
-            Z: 1.65814817
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5973757013076041072
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -206.101639
-            Y: -53.9693184
-            Z: 962.394775
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312675
-          }
-          Scale {
-            X: 1.39961731
-            Y: 0.979726255
-            Z: 1.59999979
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11467418900742667937
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -131.983246
-            Y: -41.436779
-            Z: 1891.02319
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312723
-          }
-          Scale {
-            X: 1.3373791
-            Y: 0.952608287
-            Z: 1.46999884
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 18150649756598452957
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: -63.9495888
-            Y: -29.7307873
-            Z: 2746.12817
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312795
-          }
-          Scale {
-            X: 1.21514213
-            Y: 0.952604473
-            Z: 1.4599998
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14585447793373353167
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 3.3455503
-            Y: -16.8650494
-            Z: 3609.46021
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312866
-          }
-          Scale {
-            X: 1.12
-            Y: 0.952607095
-            Z: 1.43281949
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12416207118425182393
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 76.0509415
-            Y: -9.82532787
-            Z: 4448.84766
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312914
-          }
-          Scale {
-            X: 1
-            Y: 0.952607095
-            Z: 1.2
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 242169591501471669
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 121.402023
-            Y: 8.52797794
-            Z: 5162.38379
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312938
-          }
-          Scale {
-            X: 0.9
-            Y: 0.952607095
-            Z: 1.1
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 6295282122864284606
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 191.929871
-            Y: 3.12101269
-            Z: 5810.2207
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36312985
-          }
-          Scale {
-            X: 0.727231741
-            Y: 0.952624202
-            Z: 1.10000098
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5497081295885097580
-        Name: "Large Girder 8m x 6m"
-        Transform {
-          Location {
-            X: 231.148056
-            Y: 21.5611172
-            Z: 6462.11719
-          }
-          Rotation {
-            Yaw: -36.9475098
-            Roll: 3.36313033
-          }
-          Scale {
-            X: 0.66583854
-            Y: 0.95261246
-            Z: 1.00000036
-          }
-        }
-        ParentId: 14871985463283268900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.7
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6130311250470721560
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14882656138891225992
+        Id: 16055156055418925429
         Name: "top"
         Transform {
           Location {
-            X: -23.5652
-            Y: 129.623123
+            X: 10.3466759
+            Y: 65.4496689
             Z: 8544.19629
           }
           Rotation {
@@ -2366,22 +89,22 @@
             Z: 0.712983131
           }
         }
-        ParentId: 3403847512332499410
-        ChildIds: 11747811963141327839
-        ChildIds: 17395459879448477022
-        ChildIds: 7952549462704320201
-        ChildIds: 6241715196019336113
-        ChildIds: 12337671586547716589
-        ChildIds: 8661934378690411285
-        ChildIds: 6090589618945823889
-        ChildIds: 11481033426912112115
-        ChildIds: 7534738334675969978
-        ChildIds: 15336901698772973080
-        ChildIds: 12120012254987252163
-        ChildIds: 15846148018448118134
-        ChildIds: 9662512744990046224
-        ChildIds: 8402623788043297159
-        ChildIds: 1346202846278553631
+        ParentId: 12339031325220020147
+        ChildIds: 5473015616648438480
+        ChildIds: 9478776569345783140
+        ChildIds: 3700902761554482723
+        ChildIds: 12763211757426040652
+        ChildIds: 2408664372896068278
+        ChildIds: 9785087055548309433
+        ChildIds: 11755902205064742440
+        ChildIds: 17430554195478490887
+        ChildIds: 15165648555706539456
+        ChildIds: 7541682302330834087
+        ChildIds: 2258224425618332736
+        ChildIds: 12339444285132701117
+        ChildIds: 16651074254438330334
+        ChildIds: 6889305001711540238
+        ChildIds: 1583755126884083183
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2393,7 +116,7 @@
         }
       }
       Objects {
-        Id: 11747811963141327839
+        Id: 5473015616648438480
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
@@ -2412,7 +135,7 @@
             Z: 6.57929945
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2431,9 +154,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.300543845
-              G: 0.0262412224
-              B: 0.0262412224
+              R: 0.364000022
+              G: 0.0360359922
+              B: 0.0360359922
               A: 1
             }
           }
@@ -2463,7 +186,7 @@
         }
       }
       Objects {
-        Id: 17395459879448477022
+        Id: 9478776569345783140
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
@@ -2482,7 +205,7 @@
             Z: 6.4664011
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2501,9 +224,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.300543845
-              G: 0.0262412224
-              B: 0.0262412224
+              R: 0.364000022
+              G: 0.0360359922
+              B: 0.0360359922
               A: 1
             }
           }
@@ -2533,7 +256,7 @@
         }
       }
       Objects {
-        Id: 7952549462704320201
+        Id: 3700902761554482723
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
@@ -2552,7 +275,7 @@
             Z: 6.57937527
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2571,9 +294,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.300543845
-              G: 0.0262412224
-              B: 0.0262412224
+              R: 0.364000022
+              G: 0.0360359922
+              B: 0.0360359922
               A: 1
             }
           }
@@ -2603,7 +326,7 @@
         }
       }
       Objects {
-        Id: 6241715196019336113
+        Id: 12763211757426040652
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
@@ -2622,7 +345,7 @@
             Z: 6.57931042
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2641,9 +364,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.300543845
-              G: 0.0262412224
-              B: 0.0262412224
+              R: 0.364000022
+              G: 0.0360359922
+              B: 0.0360359922
               A: 1
             }
           }
@@ -2673,7 +396,7 @@
         }
       }
       Objects {
-        Id: 12337671586547716589
+        Id: 2408664372896068278
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
@@ -2689,7 +412,7 @@
             Z: 1.94274843
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2718,7 +441,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 7900187111309595218
+            Id: 18153381962735685629
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2731,7 +454,7 @@
         }
       }
       Objects {
-        Id: 8661934378690411285
+        Id: 9785087055548309433
         Name: "Pipe (thin)"
         Transform {
           Location {
@@ -2747,7 +470,7 @@
             Z: 0.337023526
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2785,7 +508,7 @@
         }
       }
       Objects {
-        Id: 6090589618945823889
+        Id: 11755902205064742440
         Name: "Pipe (thin)"
         Transform {
           Location {
@@ -2801,7 +524,7 @@
             Z: 0.337023526
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2820,9 +543,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.300543845
-              G: 0.0262412224
-              B: 0.0262412224
+              R: 0.301000029
+              G: 0.0267889798
+              B: 0.0267889798
               A: 1
             }
           }
@@ -2848,7 +571,7 @@
         }
       }
       Objects {
-        Id: 11481033426912112115
+        Id: 17430554195478490887
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -2863,7 +586,7 @@
             Z: 7.94338799
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2901,7 +624,7 @@
         }
       }
       Objects {
-        Id: 7534738334675969978
+        Id: 15165648555706539456
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -2916,7 +639,7 @@
             Z: 7.94338799
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2954,7 +677,7 @@
         }
       }
       Objects {
-        Id: 15336901698772973080
+        Id: 7541682302330834087
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -2971,7 +694,7 @@
             Z: 7.94338799
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3009,7 +732,7 @@
         }
       }
       Objects {
-        Id: 12120012254987252163
+        Id: 2258224425618332736
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -3026,7 +749,7 @@
             Z: 7.94338799
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3064,7 +787,7 @@
         }
       }
       Objects {
-        Id: 15846148018448118134
+        Id: 12339444285132701117
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -3081,7 +804,7 @@
             Z: 7.94338799
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3119,7 +842,7 @@
         }
       }
       Objects {
-        Id: 9662512744990046224
+        Id: 16651074254438330334
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -3136,7 +859,7 @@
             Z: 7.94338799
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3174,7 +897,7 @@
         }
       }
       Objects {
-        Id: 8402623788043297159
+        Id: 6889305001711540238
         Name: "Pyramid - 4-Sided Truncated Polished"
         Transform {
           Location {
@@ -3190,7 +913,7 @@
             Z: 6.25687742
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3224,7 +947,7 @@
         }
       }
       Objects {
-        Id: 1346202846278553631
+        Id: 1583755126884083183
         Name: "Fantasy Pommel 03"
         Transform {
           Location {
@@ -3240,7 +963,7 @@
             Z: 58.6246719
           }
         }
-        ParentId: 14882656138891225992
+        ParentId: 16055156055418925429
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3278,12 +1001,12 @@
         }
       }
       Objects {
-        Id: 1948308012019611840
+        Id: 4383296188849170096
         Name: "top rotation"
         Transform {
           Location {
-            X: -39.8325577
-            Y: 123.587677
+            X: -5.92068243
+            Y: 59.4142265
             Z: 10436.3125
           }
           Rotation {
@@ -3294,9 +1017,9 @@
             Z: 1
           }
         }
-        ParentId: 3403847512332499410
-        ChildIds: 6209114762016934945
-        ChildIds: 13232481597146198395
+        ParentId: 12339031325220020147
+        ChildIds: 485074496342589420
+        ChildIds: 4024685408508563609
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3309,7 +1032,7 @@
         }
       }
       Objects {
-        Id: 6209114762016934945
+        Id: 485074496342589420
         Name: "ClientContext"
         Transform {
           Location {
@@ -3325,8 +1048,8 @@
             Z: 1
           }
         }
-        ParentId: 1948308012019611840
-        ChildIds: 394116607765889688
+        ParentId: 4383296188849170096
+        ChildIds: 2943351211759308156
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -3338,7 +1061,7 @@
         }
       }
       Objects {
-        Id: 394116607765889688
+        Id: 2943351211759308156
         Name: "tail"
         Transform {
           Location {
@@ -3353,12 +1076,12 @@
             Z: 1
           }
         }
-        ParentId: 6209114762016934945
-        ChildIds: 17622039059929867477
-        ChildIds: 14092169058423792115
-        ChildIds: 3711541205217370358
-        ChildIds: 15009262542912376152
-        ChildIds: 8627230503396018085
+        ParentId: 485074496342589420
+        ChildIds: 2169986080961285078
+        ChildIds: 9527617395369920893
+        ChildIds: 3934391618020636244
+        ChildIds: 10424184140606401897
+        ChildIds: 11110491119436163854
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3370,7 +1093,7 @@
         }
       }
       Objects {
-        Id: 17622039059929867477
+        Id: 2169986080961285078
         Name: "Cylinder - Polished"
         Transform {
           Location {
@@ -3387,7 +1110,7 @@
             Z: 5.05514669
           }
         }
-        ParentId: 394116607765889688
+        ParentId: 2943351211759308156
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3436,7 +1159,7 @@
         }
       }
       Objects {
-        Id: 14092169058423792115
+        Id: 9527617395369920893
         Name: "Part - Awning Bracket Mainstreet"
         Transform {
           Location {
@@ -3451,7 +1174,7 @@
             Z: 5.66350174
           }
         }
-        ParentId: 394116607765889688
+        ParentId: 2943351211759308156
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3489,7 +1212,7 @@
         }
       }
       Objects {
-        Id: 3711541205217370358
+        Id: 3934391618020636244
         Name: "Prism - 6-Sided"
         Transform {
           Location {
@@ -3508,7 +1231,7 @@
             Z: 0.332241118
           }
         }
-        ParentId: 394116607765889688
+        ParentId: 2943351211759308156
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3542,7 +1265,7 @@
         }
       }
       Objects {
-        Id: 15009262542912376152
+        Id: 10424184140606401897
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -3561,7 +1284,7 @@
             Z: 0.120029733
           }
         }
-        ParentId: 394116607765889688
+        ParentId: 2943351211759308156
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3595,7 +1318,7 @@
         }
       }
       Objects {
-        Id: 8627230503396018085
+        Id: 11110491119436163854
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -3611,7 +1334,7 @@
             Z: 13.2754364
           }
         }
-        ParentId: 394116607765889688
+        ParentId: 2943351211759308156
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3653,7 +1376,7 @@
         }
       }
       Objects {
-        Id: 13232481597146198395
+        Id: 4024685408508563609
         Name: "ClientContext"
         Transform {
           Location {
@@ -3668,8 +1391,8 @@
             Z: 1
           }
         }
-        ParentId: 1948308012019611840
-        ChildIds: 6322411184434607747
+        ParentId: 4383296188849170096
+        ChildIds: 11576456100361707105
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -3681,7 +1404,7 @@
         }
       }
       Objects {
-        Id: 6322411184434607747
+        Id: 11576456100361707105
         Name: "fan"
         Transform {
           Location {
@@ -3694,14 +1417,14 @@
             Z: 1
           }
         }
-        ParentId: 13232481597146198395
-        ChildIds: 16339178952014056487
-        ChildIds: 5798191438082257815
-        ChildIds: 5583219717903494292
-        ChildIds: 11097190116780862869
-        ChildIds: 6932824055868042148
-        ChildIds: 12106547066335064074
-        ChildIds: 7852843508034191766
+        ParentId: 4024685408508563609
+        ChildIds: 6569020912096941249
+        ChildIds: 18106858152308625361
+        ChildIds: 17013336159953546871
+        ChildIds: 7598302598789822151
+        ChildIds: 1720327960790743210
+        ChildIds: 4160872205106200615
+        ChildIds: 18423926135320112322
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3713,7 +1436,7 @@
         }
       }
       Objects {
-        Id: 16339178952014056487
+        Id: 6569020912096941249
         Name: "blades"
         Transform {
           Location {
@@ -3727,21 +1450,21 @@
             Z: 1.09681749
           }
         }
-        ParentId: 6322411184434607747
-        ChildIds: 16103197666165883994
-        ChildIds: 11589361401483743841
-        ChildIds: 3009139159645655747
-        ChildIds: 5530747390106901553
-        ChildIds: 10923510503255689764
-        ChildIds: 12182625489373077185
-        ChildIds: 6863206099376542883
-        ChildIds: 14226958281543047185
-        ChildIds: 11637736189417688039
-        ChildIds: 8853178252670906639
-        ChildIds: 2226909327176047710
-        ChildIds: 2908209921757519760
-        ChildIds: 7847110519158877920
-        ChildIds: 8795724145195542333
+        ParentId: 11576456100361707105
+        ChildIds: 5612879910797521525
+        ChildIds: 6629728882470341082
+        ChildIds: 14018254061519811338
+        ChildIds: 11824722434548530842
+        ChildIds: 11926251232669358176
+        ChildIds: 11579983892531457722
+        ChildIds: 2190362940671969599
+        ChildIds: 2662112848856874644
+        ChildIds: 15969887982605010633
+        ChildIds: 17900600519706717503
+        ChildIds: 10301527668447820070
+        ChildIds: 16170018050135625616
+        ChildIds: 13673912940995991556
+        ChildIds: 2539921480607997329
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3753,7 +1476,7 @@
         }
       }
       Objects {
-        Id: 16103197666165883994
+        Id: 5612879910797521525
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -3772,7 +1495,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3810,7 +1533,7 @@
         }
       }
       Objects {
-        Id: 11589361401483743841
+        Id: 6629728882470341082
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -3829,7 +1552,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3867,7 +1590,7 @@
         }
       }
       Objects {
-        Id: 3009139159645655747
+        Id: 14018254061519811338
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -3886,7 +1609,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3924,7 +1647,7 @@
         }
       }
       Objects {
-        Id: 5530747390106901553
+        Id: 11824722434548530842
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -3943,7 +1666,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3981,7 +1704,7 @@
         }
       }
       Objects {
-        Id: 10923510503255689764
+        Id: 11926251232669358176
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4000,7 +1723,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4038,7 +1761,7 @@
         }
       }
       Objects {
-        Id: 12182625489373077185
+        Id: 11579983892531457722
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4057,7 +1780,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4095,7 +1818,7 @@
         }
       }
       Objects {
-        Id: 6863206099376542883
+        Id: 2190362940671969599
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4114,7 +1837,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4152,7 +1875,7 @@
         }
       }
       Objects {
-        Id: 14226958281543047185
+        Id: 2662112848856874644
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4171,7 +1894,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4209,7 +1932,7 @@
         }
       }
       Objects {
-        Id: 11637736189417688039
+        Id: 15969887982605010633
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4228,7 +1951,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4266,7 +1989,7 @@
         }
       }
       Objects {
-        Id: 8853178252670906639
+        Id: 17900600519706717503
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4285,7 +2008,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4323,7 +2046,7 @@
         }
       }
       Objects {
-        Id: 2226909327176047710
+        Id: 10301527668447820070
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4342,7 +2065,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4380,7 +2103,7 @@
         }
       }
       Objects {
-        Id: 2908209921757519760
+        Id: 16170018050135625616
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4399,7 +2122,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4437,7 +2160,7 @@
         }
       }
       Objects {
-        Id: 7847110519158877920
+        Id: 13673912940995991556
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4456,7 +2179,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4494,7 +2217,7 @@
         }
       }
       Objects {
-        Id: 8795724145195542333
+        Id: 2539921480607997329
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
@@ -4513,7 +2236,7 @@
             Z: 0.208852008
           }
         }
-        ParentId: 16339178952014056487
+        ParentId: 6569020912096941249
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4551,7 +2274,7 @@
         }
       }
       Objects {
-        Id: 5798191438082257815
+        Id: 18106858152308625361
         Name: "Cylinder - Polished"
         Transform {
           Location {
@@ -4565,7 +2288,7 @@
             Z: 0.170797393
           }
         }
-        ParentId: 6322411184434607747
+        ParentId: 11576456100361707105
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4614,7 +2337,7 @@
         }
       }
       Objects {
-        Id: 5583219717903494292
+        Id: 17013336159953546871
         Name: "Pipe (thin)"
         Transform {
           Location {
@@ -4629,7 +2352,7 @@
             Z: 0.925878346
           }
         }
-        ParentId: 6322411184434607747
+        ParentId: 11576456100361707105
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -4674,7 +2397,7 @@
         }
       }
       Objects {
-        Id: 11097190116780862869
+        Id: 7598302598789822151
         Name: "Pipe (thin)"
         Transform {
           Location {
@@ -4689,7 +2412,7 @@
             Z: 0.293144524
           }
         }
-        ParentId: 6322411184434607747
+        ParentId: 11576456100361707105
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -4727,7 +2450,7 @@
         }
       }
       Objects {
-        Id: 6932824055868042148
+        Id: 1720327960790743210
         Name: "Cube - Polished"
         Transform {
           Location {
@@ -4744,7 +2467,7 @@
             Z: 5.44317102
           }
         }
-        ParentId: 6322411184434607747
+        ParentId: 11576456100361707105
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4793,7 +2516,7 @@
         }
       }
       Objects {
-        Id: 12106547066335064074
+        Id: 4160872205106200615
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
@@ -4808,7 +2531,7 @@
             Z: 4.45597839
           }
         }
-        ParentId: 6322411184434607747
+        ParentId: 11576456100361707105
         UnregisteredParameters {
           Overrides {
             Name: "bp:Sides"
@@ -4851,7 +2574,7 @@
         }
       }
       Objects {
-        Id: 7852843508034191766
+        Id: 18423926135320112322
         Name: "Cylinder - Polished"
         Transform {
           Location {
@@ -4866,7 +2589,7 @@
             Z: 0.33796528
           }
         }
-        ParentId: 6322411184434607747
+        ParentId: 11576456100361707105
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -4915,10 +2638,12 @@
         }
       }
       Objects {
-        Id: 3893735176574132301
+        Id: 7214086191895034842
         Name: "Object Rotator Continuous"
         Transform {
           Location {
+            X: 33.9118767
+            Y: -64.1734467
             Z: -333.863159
           }
           Rotation {
@@ -4929,12 +2654,12 @@
             Z: 5.66350174
           }
         }
-        ParentId: 3403847512332499410
+        ParentId: 12339031325220020147
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 13232481597146198395
+              SubObjectId: 4024685408508563609
             }
           }
           Overrides {
@@ -4991,10 +2716,12 @@
         }
       }
       Objects {
-        Id: 5287143221964033198
+        Id: 4350250931468518386
         Name: "Object Rotator"
         Transform {
           Location {
+            X: 33.9118767
+            Y: -64.1734467
             Z: -333.863159
           }
           Rotation {
@@ -5005,12 +2732,12 @@
             Z: 5.66350174
           }
         }
-        ParentId: 3403847512332499410
+        ParentId: 12339031325220020147
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 1948308012019611840
+              SubObjectId: 4383296188849170096
             }
           }
           Overrides {
@@ -5165,10 +2892,12 @@
         }
       }
       Objects {
-        Id: 18172131203425648921
+        Id: 2090580724627168399
         Name: "Metal Door Hatch Slide 01 SFX"
         Transform {
           Location {
+            X: 33.9118767
+            Y: -64.1734467
             Z: 10347.3301
           }
           Rotation {
@@ -5179,7 +2908,7 @@
             Z: 5.66350174
           }
         }
-        ParentId: 3403847512332499410
+        ParentId: 12339031325220020147
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5200,18 +2929,18 @@
         }
       }
       Objects {
-        Id: 5241244723028906902
+        Id: 7749845428454798206
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -722.270691
-            Y: 767.87738
+            X: -688.358826
+            Y: 703.703918
             Z: -58.3604
           }
           Rotation {
             Pitch: -3.3023963
             Yaw: 1.26942808e-07
-            Roll: -3.13781905
+            Roll: -3.13782191
           }
           Scale {
             X: 0.729538381
@@ -5219,7 +2948,7 @@
             Z: 92.5507507
           }
         }
-        ParentId: 3403847512332499410
+        ParentId: 12339031325220020147
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5261,18 +2990,18 @@
         }
       }
       Objects {
-        Id: 12285271074313042052
+        Id: 16774048356596039790
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -719.011719
-            Y: -635.827637
+            X: -685.099792
+            Y: -700.001099
             Z: -72.3716812
           }
           Rotation {
             Pitch: -3.27868176
             Yaw: -0.394348115
-            Roll: 3.72534847
+            Roll: 3.72535276
           }
           Scale {
             X: 0.729538381
@@ -5280,7 +3009,7 @@
             Z: 92.7040176
           }
         }
-        ParentId: 3403847512332499410
+        ParentId: 12339031325220020147
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5322,18 +3051,18 @@
         }
       }
       Objects {
-        Id: 6028343967660779916
+        Id: 16344486935698249985
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 637.243469
-            Y: -635.851135
+            X: 671.155396
+            Y: -700.024597
             Z: -46.6606331
           }
           Rotation {
             Pitch: 3.44158864
-            Yaw: -0.39440909
-            Roll: 3.67913842
+            Yaw: -0.394408971
+            Roll: 3.67914224
           }
           Scale {
             X: 0.729538381
@@ -5341,7 +3070,7 @@
             Z: 92.5039597
           }
         }
-        ParentId: 3403847512332499410
+        ParentId: 12339031325220020147
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5383,18 +3112,18 @@
         }
       }
       Objects {
-        Id: 12827708947960564856
+        Id: 13703207617459318611
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 638.877136
-            Y: 768.744324
-            Z: -74.1763535
+            X: 672.789
+            Y: 704.570862
+            Z: -74.1763306
           }
           Rotation {
             Pitch: 3.41805863
-            Yaw: 3.60827613e-07
-            Roll: -3.13781857
+            Yaw: 3.80873587e-07
+            Roll: -3.13782072
           }
           Scale {
             X: 0.729538381
@@ -5402,7 +3131,7 @@
             Z: 92.7820892
           }
         }
-        ParentId: 3403847512332499410
+        ParentId: 12339031325220020147
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5443,23 +3172,2174 @@
           }
         }
       }
-    }
-    Assets {
-      Id: 6130311250470721560
-      Name: "Large Girder 8m x 6m"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_wall_girder_large_8m_001"
+      Objects {
+        Id: 12953887097256722033
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -616.789368
+            Y: -676.553406
+            Z: 279.910278
+          }
+          Rotation {
+            Pitch: -0.0112903025
+            Yaw: 1.34081745
+            Roll: 3.84486961
+          }
+          Scale {
+            X: 1.50495541
+            Y: 0.979722142
+            Z: 1.65814817
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
       }
-    }
-    Assets {
-      Id: 5692788368185141194
-      Name: "Metal Iron 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_iron_001"
+      Objects {
+        Id: 349114306384658920
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -600.177734
+            Y: -598.070496
+            Z: 1241.04053
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.36312866
+          }
+          Scale {
+            X: 1.39961731
+            Y: 0.979726255
+            Z: 1.59999979
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8898329319908140773
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -549.767578
+            Y: -542.307922
+            Z: 2169.66895
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.36312914
+          }
+          Scale {
+            X: 1.3373791
+            Y: 0.952608347
+            Z: 1.46999884
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17143038487879391884
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -503.621643
+            Y: -490.965881
+            Z: 3024.77393
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.36312962
+          }
+          Scale {
+            X: 1.21514213
+            Y: 0.952604473
+            Z: 1.4599998
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1918769582552054221
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -458.772675
+            Y: -439.168884
+            Z: 3888.1062
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.36313033
+          }
+          Scale {
+            X: 1.12
+            Y: 0.952607095
+            Z: 1.43281949
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 890294063174460303
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -406.068665
+            Y: -388.594208
+            Z: 4727.49316
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.36313105
+          }
+          Scale {
+            X: 1
+            Y: 0.952607095
+            Z: 1.2
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8184756386394949203
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -381.843903
+            Y: -346.088898
+            Z: 5441.03
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.36313128
+          }
+          Scale {
+            X: 0.900000095
+            Y: 0.952607095
+            Z: 1.1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3955444486894755121
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -323.13623
+            Y: -306.632446
+            Z: 6088.8667
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.36313152
+          }
+          Scale {
+            X: 0.727231741
+            Y: 0.952624202
+            Z: 1.10000098
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14890823448166922916
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -303.779938
+            Y: -267.857635
+            Z: 6740.76221
+          }
+          Rotation {
+            Yaw: 1.34079015
+            Roll: 3.363132
+          }
+          Scale {
+            X: 0.66583854
+            Y: 0.95261246
+            Z: 1.00000036
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4976223698433933746
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -669.013611
+            Y: 651.142334
+            Z: 278.64566
+          }
+          Rotation {
+            Yaw: -88.6592102
+            Roll: 3.36312819
+          }
+          Scale {
+            X: 1.62389684
+            Y: 0.97972846
+            Z: 1.65814829
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11759028482997402868
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -611.8573
+            Y: 625.984253
+            Z: 1241.04053
+          }
+          Rotation {
+            Yaw: -88.6591873
+            Roll: 3.3631289
+          }
+          Scale {
+            X: 1.48799682
+            Y: 0.979725
+            Z: 1.59999979
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6197154762884984003
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -556.343628
+            Y: 586.256775
+            Z: 2169.66895
+          }
+          Rotation {
+            Yaw: -88.6591873
+            Roll: 3.36312962
+          }
+          Scale {
+            X: 1.41707218
+            Y: 0.952619076
+            Z: 1.46999955
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6436820887978132475
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -504.711212
+            Y: 527.730225
+            Z: 3024.77393
+          }
+          Rotation {
+            Yaw: -88.6591873
+            Roll: 3.36313033
+          }
+          Scale {
+            X: 1.28
+            Y: 0.952604711
+            Z: 1.46
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 51715076912375712
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -452.683319
+            Y: 472.945251
+            Z: 3888.1062
+          }
+          Rotation {
+            Yaw: -88.6591721
+            Roll: 3.36313057
+          }
+          Scale {
+            X: 1.12
+            Y: 0.952607095
+            Z: 1.43281949
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8967540142134357388
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -402.455688
+            Y: 435.01944
+            Z: 4727.49316
+          }
+          Rotation {
+            Yaw: -88.6591721
+            Roll: 3.36313128
+          }
+          Scale {
+            X: 1
+            Y: 0.952607095
+            Z: 1.2
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8221323815119496917
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -359.553558
+            Y: 393.912018
+            Z: 5441.03
+          }
+          Rotation {
+            Yaw: -88.6591721
+            Roll: 3.36313128
+          }
+          Scale {
+            X: 0.900000095
+            Y: 0.952607095
+            Z: 1.1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12596587495079172676
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -321.113373
+            Y: 378.630524
+            Z: 6088.8667
+          }
+          Rotation {
+            Yaw: -88.6591721
+            Roll: 3.36313128
+          }
+          Scale {
+            X: 0.85
+            Y: 0.952607095
+            Z: 1.1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 579513432295818911
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: -281.970764
+            Y: 343.504669
+            Z: 6740.76221
+          }
+          Rotation {
+            Yaw: -88.6591721
+            Roll: 3.363132
+          }
+          Scale {
+            X: 0.75
+            Y: 0.952607095
+            Z: 1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16751445598279765189
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 639.63
+            Y: 675.935364
+            Z: 278.64566
+          }
+          Rotation {
+            Yaw: 179.219894
+            Roll: 3.36312699
+          }
+          Scale {
+            X: 1.62389684
+            Y: 0.97972846
+            Z: 1.65814829
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7499665918520104535
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 588.120667
+            Y: 620.078796
+            Z: 1241.04053
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36312652
+          }
+          Scale {
+            X: 1.46526563
+            Y: 0.97974062
+            Z: 1.60000062
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12705912307745584746
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 520.07843
+            Y: 566.433105
+            Z: 2169.66895
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36312723
+          }
+          Scale {
+            X: 1.29248011
+            Y: 0.952621162
+            Z: 1.46999955
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14726343557162724802
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 480.99942
+            Y: 516.711548
+            Z: 3024.77393
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36312795
+          }
+          Scale {
+            X: 1.21806765
+            Y: 0.952598214
+            Z: 1.45999932
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11309896886654799928
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 396.923523
+            Y: 467.118591
+            Z: 3888.1062
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36312842
+          }
+          Scale {
+            X: 1.0350461
+            Y: 0.952602863
+            Z: 1.43281913
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6132439933558545484
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 381.390381
+            Y: 417.999878
+            Z: 4727.49316
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36312866
+          }
+          Scale {
+            X: 1
+            Y: 0.952607095
+            Z: 1.2
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15773393901564499816
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 350.196869
+            Y: 376.491516
+            Z: 5441.03
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36312914
+          }
+          Scale {
+            X: 0.900000095
+            Y: 0.952607095
+            Z: 1.1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14361703639185188757
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 298.395752
+            Y: 339.121521
+            Z: 6088.8667
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36312962
+          }
+          Scale {
+            X: 0.786056221
+            Y: 0.952604711
+            Z: 1.09999967
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 390274312397442232
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 281.296021
+            Y: 301.040833
+            Z: 6740.76221
+          }
+          Rotation {
+            Yaw: 179.21991
+            Roll: 3.36313
+          }
+          Scale {
+            X: 0.71137315
+            Y: 0.952613831
+            Z: 1.00000036
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6189109017879974961
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 599.382629
+            Y: -632.171814
+            Z: 278.64566
+          }
+          Rotation {
+            Yaw: 87.8449936
+            Roll: 3.36312771
+          }
+          Scale {
+            X: 1.62389684
+            Y: 0.97972846
+            Z: 1.65814829
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1362668629487594550
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 544.777405
+            Y: -579.337769
+            Z: 1241.04053
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36312914
+          }
+          Scale {
+            X: 1.5
+            Y: 0.979731083
+            Z: 1.6
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7969412264261273166
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 491.431824
+            Y: -545.831055
+            Z: 2169.66895
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36312985
+          }
+          Scale {
+            X: 1.4
+            Y: 0.952627
+            Z: 1.47
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8518567750253051272
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 443.502228
+            Y: -483.276733
+            Z: 3024.77393
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36313081
+          }
+          Scale {
+            X: 1.24675179
+            Y: 0.952607572
+            Z: 1.4599998
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3948253183812242672
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 394.319916
+            Y: -441.115723
+            Z: 3888.1062
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36313081
+          }
+          Scale {
+            X: 1.12
+            Y: 0.952607095
+            Z: 1.43281949
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6411762292496350213
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 346.849396
+            Y: -390.839691
+            Z: 4727.49316
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36313152
+          }
+          Scale {
+            X: 1
+            Y: 0.952607095
+            Z: 1.2
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5475442396324293213
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 306.694672
+            Y: -342.957123
+            Z: 5441.03
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36313152
+          }
+          Scale {
+            X: 0.900000095
+            Y: 0.952607095
+            Z: 1.1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5325293360885882616
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 270.034
+            Y: -304.648285
+            Z: 6088.8667
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36313248
+          }
+          Scale {
+            X: 0.85
+            Y: 0.952607095
+            Z: 1.1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8604038418507220729
+        Name: "Large Girder 8m x 6m"
+        Transform {
+          Location {
+            X: 233.362259
+            Y: -260.43396
+            Z: 6740.76221
+          }
+          Rotation {
+            Yaw: 87.8450089
+            Roll: 3.36313295
+          }
+          Scale {
+            X: 0.75
+            Y: 0.952607095
+            Z: 1
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.7
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6130311250470721560
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
       }
     }
     Assets {
@@ -5481,7 +5361,7 @@
       }
     }
     Assets {
-      Id: 7900187111309595218
+      Id: 18153381962735685629
       Name: "Plane Circle - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -5505,6 +5385,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_003"
+      }
+    }
+    Assets {
+      Id: 5692788368185141194
+      Name: "Metal Iron 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_001"
       }
     }
     Assets {
@@ -5595,6 +5484,15 @@
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_metal_door_hatch_slide_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6130311250470721560
+      Name: "Large Girder 8m x 6m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_wall_girder_large_8m_001"
       }
     }
     PrimaryAssetId {
