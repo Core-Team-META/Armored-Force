@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 17184591166555015249
+  Name: "Cliff 03"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "cliff_003"
+  }
+}
+Assets {
   Id: 11182969111770509228
   Name: "Cliff 02"
   PlatformAssetType: 2
