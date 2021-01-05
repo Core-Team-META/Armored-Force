@@ -61,6 +61,12 @@
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 2897474060105501612
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -90,19 +96,19 @@
         Name: "Branches Cluster Big"
         Transform {
           Location {
-            X: 51.1621094
-            Y: -45.2374573
+            X: 32.6380234
+            Y: -4.56530476
             Z: 4.16918945
           }
           Rotation {
-            Pitch: -10.9621277
-            Yaw: 15.1967278
-            Roll: 81.2561951
+            Pitch: -14.7424927
+            Yaw: 14.2735023
+            Roll: 85.40625
           }
           Scale {
-            X: 0.427562356
-            Y: 0.569780827
-            Z: 0.569781482
+            X: 0.427559286
+            Y: 0.660132885
+            Z: 0.569775105
           }
         }
         ParentId: 18435660001994587871
@@ -134,8 +140,8 @@
         Name: "Branches Cluster Big"
         Transform {
           Location {
-            X: -27.2193298
-            Y: 68.9287415
+            X: -33.022934
+            Y: 58.1531143
             Z: 13.2274323
           }
           Rotation {
@@ -144,9 +150,9 @@
             Roll: 67.4917831
           }
           Scale {
-            X: 0.569780648
-            Y: 0.569780648
-            Z: 0.569780648
+            X: 0.401462078
+            Y: 0.611770868
+            Z: 0.569779158
           }
         }
         ParentId: 18435660001994587871
