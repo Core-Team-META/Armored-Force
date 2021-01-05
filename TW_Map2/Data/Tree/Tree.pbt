@@ -20,6 +20,7 @@ Objects {
   ChildIds: 18217549399293975483
   ChildIds: 16933976679426407654
   ChildIds: 9479035303955472683
+  ChildIds: 15697001324719266771
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -29,6 +30,48 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 15697001324719266771
+  Name: "Voxel Mk1 SUV Set"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3380072057614197540
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Voxel Mk1 SUV Set"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18371.2891
+            Y: 5112.30322
+            Z: 231.730469
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.36941075
+            Y: 1.36941075
+            Z: 1.36941075
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12077265963743881182
+    }
   }
 }
 Objects {
