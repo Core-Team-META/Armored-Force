@@ -1,18 +1,18 @@
 ﻿Assets {
-  Id: 4900798215571511034
-  Name: "TW2_Bush"
+  Id: 14719356031079241106
+  Name: "TW2_BushBig"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 18435660001994587871
       Objects {
         Id: 18435660001994587871
-        Name: "TW2_Bush"
+        Name: "TW2_BushBig"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.76644254
+            Y: 1.76644254
+            Z: 1.76644254
           }
         }
         ParentId: 4781671109827199097
@@ -49,7 +49,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7692059865741963186
+              Id: 2897474060105501612
             }
           }
           Overrides {
@@ -65,6 +65,15 @@
             Name: "ma:Nature_Leaves:id"
             AssetReference {
               Id: 2897474060105501612
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.0513739102
+              G: 0.078
+              B: 0.00731244916
+              A: 1
             }
           }
         }
@@ -96,9 +105,9 @@
         Name: "Branches Cluster Big"
         Transform {
           Location {
-            X: 32.6380234
-            Y: -4.56530476
-            Z: 4.16918945
+            X: 32.6276665
+            Y: -4.95787907
+            Z: 24.8435383
           }
           Rotation {
             Pitch: -14.7424927
@@ -106,9 +115,9 @@
             Roll: 85.40625
           }
           Scale {
-            X: 0.427559286
-            Y: 0.660132885
-            Z: 0.569775105
+            X: 0.289948285
+            Y: 0.379754812
+            Z: 0.386389762
           }
         }
         ParentId: 18435660001994587871
@@ -140,9 +149,9 @@
         Name: "Branches Cluster Big"
         Transform {
           Location {
-            X: -33.022934
-            Y: 58.1531143
-            Z: 13.2274323
+            X: -24.4907341
+            Y: 60.9857941
+            Z: 37.2724075
           }
           Rotation {
             Pitch: -9.46740723
@@ -150,9 +159,9 @@
             Roll: 67.4917831
           }
           Scale {
-            X: 0.401462078
-            Y: 0.611770868
-            Z: 0.569779158
+            X: 0.289443791
+            Y: 0.441070974
+            Z: 0.410796046
           }
         }
         ParentId: 18435660001994587871

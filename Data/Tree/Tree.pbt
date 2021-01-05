@@ -17,6 +17,7 @@ Objects {
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
   ChildIds: 7331958413616733673
+  ChildIds: 14246791555251678451
   ChildIds: 4689494391382931675
   ChildIds: 14661672776697705088
   UnregisteredParameters {
@@ -80,6 +81,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
+  }
+}
+Objects {
+  Id: 14246791555251678451
+  Name: "TW_SpawnPoints"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW_SpawnPoints"
   }
 }
 Objects {

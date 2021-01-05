@@ -10,9 +10,9 @@
         Name: "TW2_Tree"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.20800436
+            Y: 1.20800436
+            Z: 1.20800436
           }
         }
         ParentId: 4781671109827199097
@@ -117,10 +117,15 @@
           Overrides {
             Name: "ma:Nature_Leaves:color"
             Color {
-              R: 0.0375424623
-              G: 0.0570000038
-              B: 0.00534371287
+              R: 0.0468
+              G: 0.052
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 2897474060105501612
             }
           }
         }
@@ -178,10 +183,15 @@
           Overrides {
             Name: "ma:Nature_Leaves:color"
             Color {
-              R: 0.0375424623
-              G: 0.0570000038
-              B: 0.00534371287
+              R: 0.0468
+              G: 0.052
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 2897474060105501612
             }
           }
         }
@@ -239,10 +249,15 @@
           Overrides {
             Name: "ma:Nature_Leaves:color"
             Color {
-              R: 0.0375424623
-              G: 0.0570000038
-              B: 0.00534371287
+              R: 0.0468
+              G: 0.052
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 2897474060105501612
             }
           }
         }
@@ -300,10 +315,15 @@
           Overrides {
             Name: "ma:Nature_Leaves:color"
             Color {
-              R: 0.0375424623
-              G: 0.0570000038
-              B: 0.00534371287
+              R: 0.0468
+              G: 0.052
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 2897474060105501612
             }
           }
         }

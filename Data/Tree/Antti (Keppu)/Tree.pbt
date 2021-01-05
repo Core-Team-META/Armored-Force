@@ -838,32 +838,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14246791555251678451
-  Name: "TW_SpawnPoints"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW_SpawnPoints"
-  }
-}
-Objects {
   Id: 10639644213682625907
   Name: "TW_EdgeIndicators"
   Transform {
