@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9148677116672992934
+  Name: "Rock 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
