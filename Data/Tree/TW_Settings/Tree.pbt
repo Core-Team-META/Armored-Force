@@ -211,7 +211,7 @@ Objects {
           Y: 400
         }
         ChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:left"
+          Value: "mc:ecorehorizontalalign:right"
         }
         ChatVerticalAlignment {
           Value: "mc:ecoreverticalalign:bottom"
