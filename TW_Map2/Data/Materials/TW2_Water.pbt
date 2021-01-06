@@ -64,7 +64,7 @@
       }
       Overrides {
         Name: "material_scale"
-        Float: 0.5
+        Float: 0.2
       }
       Overrides {
         Name: "edge normal flattening"
