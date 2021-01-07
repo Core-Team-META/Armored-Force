@@ -2,7 +2,7 @@
   Id: 6771354921148884007
   Name: "Terrain Material_1"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 1104511411894916854
     ParameterOverrides {
@@ -94,6 +94,36 @@
           Id: 1910430801874839834
         }
       }
+      Overrides {
+        Name: "cmp:Material4"
+        AssetReference {
+          Id: 18063120635764219231
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material4"
+        Color {
+          R: 1
+          G: 0.73827821
+          B: 0.24000001
+          A: 0.332000017
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material4_Sides"
+        Color {
+          R: 1
+          G: 0.73827821
+          B: 0.24000001
+          A: 0.332000017
+        }
+      }
+      Overrides {
+        Name: "cmp:Material4_Sides"
+        AssetReference {
+          Id: 18063120635764219231
+        }
+      }
     }
     Assets {
       Id: 1104511411894916854
@@ -156,6 +186,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_bone_raw_001_uv_ref"
+      }
+    }
+    Assets {
+      Id: 18063120635764219231
+      Name: "Grass Clumps"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_002_uv"
+      }
+    }
+    Assets {
+      Id: 18063120635764219231
+      Name: "Grass Clumps"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_002_uv"
       }
     }
   }

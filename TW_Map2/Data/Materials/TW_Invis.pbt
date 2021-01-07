@@ -2,7 +2,7 @@
   Id: 7692059865741963186
   Name: "TW_Invis"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 8599960482445459970
     ParameterOverrides {
