@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 10668118937981995228
-  Name: "VehicleControllerClient"
+  Id: 8011086400588434535
+  Name: "DestructibleObject"
   PlatformAssetType: 3
   TextAsset {
   }

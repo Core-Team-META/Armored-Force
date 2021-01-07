@@ -2,7 +2,7 @@
   Id: 743945919748057292
   Name: "TW2_Terrain"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 1104511411894916854
     ParameterOverrides {
@@ -79,9 +79,9 @@
         Name: "cmpc:Material3"
         Color {
           R: 1
-          G: 0.73827821
+          G: 0.738278449
           B: 0.24000001
-          A: 0.332000017
+          A: 1
         }
       }
       Overrides {
