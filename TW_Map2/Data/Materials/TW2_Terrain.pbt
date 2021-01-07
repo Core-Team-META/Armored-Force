@@ -140,6 +140,15 @@
         Name: "material1side_scale"
         Float: 0.1
       }
+      Overrides {
+        Name: "cmpc:Material3_Sides"
+        Color {
+          R: 1
+          G: 0.738278449
+          B: 0.24000001
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 1104511411894916854

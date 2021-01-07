@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 9479035303955472683
         ChildIds: 6862021172189687237
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -258,6 +258,7 @@
         ChildIds: 15637054833868280746
         ChildIds: 1801850722443066921
         ChildIds: 16569358857545351998
+        ChildIds: 1243868219246420992
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -446,6 +447,12 @@
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 7692059865741963186
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -588,6 +595,73 @@
         CoreMesh {
           MeshAsset {
             Id: 11216701439107531141
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1243868219246420992
+        Name: "Tree Birch Bare 01"
+        Transform {
+          Location {
+            X: 8.20167351
+            Y: 2.13682032
+            Z: 5.27816868
+          }
+          Rotation {
+            Pitch: 0.252710164
+            Yaw: -85.6716614
+            Roll: -3.33679199
+          }
+          Scale {
+            X: 0.490383446
+            Y: 0.490382791
+            Z: 0.485167533
+          }
+        }
+        ParentId: 17646975980077246468
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Trunk:id"
+            AssetReference {
+              Id: 10451866999938289708
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Trunk:color"
+            Color {
+              R: 0.253000021
+              G: 0.181316689
+              B: 0.12650001
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 7692059865741963186
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 851452401123342251
           }
           Teams {
             IsTeamCollisionEnabled: true
