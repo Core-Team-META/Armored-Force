@@ -80,7 +80,21 @@
       }
       Overrides {
         Name: "reflection brightness"
-        Float: 0.318841577
+        Float: 0.35454461
+      }
+      Overrides {
+        Name: "wind direction"
+        Vector {
+          X: 1
+          Z: 0.2
+        }
+      }
+      Overrides {
+        Name: "flow direction"
+        Vector {
+          Y: -0.5
+          Z: 0.2
+        }
       }
     }
     Assets {

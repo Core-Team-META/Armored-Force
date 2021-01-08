@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 14490812313093711740
-  Name: "TW2_Tree_Destructible"
+  Id: 8022659663373324817
+  Name: "TW2_TreeDead_Destructible"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 12561400358109127262
+      RootId: 1314689506230725920
       Objects {
-        Id: 12561400358109127262
-        Name: "TW2_Tree_Destructible"
+        Id: 1314689506230725920
+        Name: "TW2_TreeDead_Destructible"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 9479035303955472683
-        ChildIds: 6862021172189687237
+        ParentId: 4781671109827199097
+        ChildIds: 8859269034934234987
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28,7 +28,7 @@
         }
       }
       Objects {
-        Id: 6862021172189687237
+        Id: 8859269034934234987
         Name: "ClientContext"
         Transform {
           Location {
@@ -41,10 +41,10 @@
             Z: 1
           }
         }
-        ParentId: 12561400358109127262
-        ChildIds: 17624579909058680973
-        ChildIds: 1105185900021691814
-        ChildIds: 4890009571224272415
+        ParentId: 1314689506230725920
+        ChildIds: 11940833392623373484
+        ChildIds: 7438640292502793727
+        ChildIds: 6055888213713831671
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -55,7 +55,7 @@
         }
       }
       Objects {
-        Id: 17624579909058680973
+        Id: 11940833392623373484
         Name: "DestructionTrigger"
         Transform {
           Location {
@@ -71,10 +71,10 @@
             Z: 4.33055
           }
         }
-        ParentId: 6862021172189687237
-        ChildIds: 3523564823516874608
-        ChildIds: 8919264953239203105
-        ChildIds: 8561602287468500681
+        ParentId: 8859269034934234987
+        ChildIds: 18289342319635391049
+        ChildIds: 1944067401035331202
+        ChildIds: 6583398034736267817
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -92,7 +92,7 @@
         }
       }
       Objects {
-        Id: 3523564823516874608
+        Id: 18289342319635391049
         Name: "DestructibleObject"
         Transform {
           Location {
@@ -105,7 +105,7 @@
             Z: 1
           }
         }
-        ParentId: 17624579909058680973
+        ParentId: 11940833392623373484
         UnregisteredParameters {
           Overrides {
             Name: "cs:DestructionFX01"
@@ -116,31 +116,31 @@
           Overrides {
             Name: "cs:DestructionFX02"
             AssetReference {
-              Id: 10741374102143104409
+              Id: 13133278224975990749
             }
           }
           Overrides {
             Name: "cs:FXLocation01"
             ObjectReference {
-              SubObjectId: 8919264953239203105
+              SubObjectId: 1944067401035331202
             }
           }
           Overrides {
             Name: "cs:FXLocation02"
             ObjectReference {
-              SubObjectId: 8561602287468500681
+              SubObjectId: 6583398034736267817
             }
           }
           Overrides {
             Name: "cs:DebrisGroup"
             ObjectReference {
-              SubObjectId: 1105185900021691814
+              SubObjectId: 7438640292502793727
             }
           }
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
-              SubObjectId: 4890009571224272415
+              SubObjectId: 6055888213713831671
             }
           }
         }
@@ -157,12 +157,12 @@
         }
       }
       Objects {
-        Id: 8919264953239203105
+        Id: 1944067401035331202
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -16.519783
-            Z: -48.2359772
+            X: -36.9040756
+            Z: -50.0591621
           }
           Rotation {
           }
@@ -172,7 +172,7 @@
             Z: 0.999999881
           }
         }
-        ParentId: 17624579909058680973
+        ParentId: 11940833392623373484
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -184,13 +184,13 @@
         }
       }
       Objects {
-        Id: 8561602287468500681
+        Id: 6583398034736267817
         Name: "FXLocation02"
         Transform {
           Location {
-            X: -35.2228241
-            Y: 38.2893677
-            Z: 72.1118851
+            X: 39.1293221
+            Y: 53.8468513
+            Z: 79.4144821
           }
           Rotation {
           }
@@ -200,7 +200,7 @@
             Z: 0.999999881
           }
         }
-        ParentId: 17624579909058680973
+        ParentId: 11940833392623373484
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -212,7 +212,7 @@
         }
       }
       Objects {
-        Id: 1105185900021691814
+        Id: 7438640292502793727
         Name: "DebrisGroup"
         Transform {
           Location {
@@ -225,8 +225,8 @@
             Z: 1
           }
         }
-        ParentId: 6862021172189687237
-        ChildIds: 17646975980077246468
+        ParentId: 8859269034934234987
+        ChildIds: 13827306456546468593
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -238,7 +238,7 @@
         }
       }
       Objects {
-        Id: 17646975980077246468
+        Id: 13827306456546468593
         Name: "CollisionMesh"
         Transform {
           Location {
@@ -253,13 +253,9 @@
             Z: 1.03931296
           }
         }
-        ParentId: 1105185900021691814
-        ChildIds: 698385854901578795
-        ChildIds: 15135339832297366521
-        ChildIds: 15637054833868280746
-        ChildIds: 1801850722443066921
-        ChildIds: 16569358857545351998
-        ChildIds: 1243868219246420992
+        ParentId: 7438640292502793727
+        ChildIds: 13375647549616668289
+        ChildIds: 7384477194066717825
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -282,139 +278,7 @@
         }
       }
       Objects {
-        Id: 698385854901578795
-        Name: "Bush 02"
-        Transform {
-          Location {
-            X: -6.62010813
-            Y: -56.4670029
-            Z: 422.06778
-          }
-          Rotation {
-            Pitch: -20.8476563
-            Yaw: 2.95153737
-            Roll: -32.1221313
-          }
-          Scale {
-            X: 0.964972854
-            Y: 0.964972854
-            Z: 0.964972854
-          }
-        }
-        ParentId: 17646975980077246468
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:id"
-            AssetReference {
-              Id: 2897474060105501612
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11216701439107531141
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15135339832297366521
-        Name: "Bush 02"
-        Transform {
-          Location {
-            X: -6.62010813
-            Y: -11.0291786
-            Z: 422.06778
-          }
-          Rotation {
-            Pitch: 28.8264637
-            Yaw: -56.0354614
-            Roll: -32.7818909
-          }
-          Scale {
-            X: 0.964972854
-            Y: 0.964972854
-            Z: 0.964972854
-          }
-        }
-        ParentId: 17646975980077246468
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:id"
-            AssetReference {
-              Id: 2897474060105501612
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11216701439107531141
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15637054833868280746
+        Id: 13375647549616668289
         Name: "Tree Birch Bare 01"
         Transform {
           Location {
@@ -431,7 +295,7 @@
             Z: 0.692219079
           }
         }
-        ParentId: 17646975980077246468
+        ParentId: 13827306456546468593
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Trunk:id"
@@ -479,139 +343,7 @@
         }
       }
       Objects {
-        Id: 1801850722443066921
-        Name: "Bush 02"
-        Transform {
-          Location {
-            X: -50.148777
-            Y: 20.7704868
-            Z: 583.237244
-          }
-          Rotation {
-            Pitch: 0.520105243
-            Yaw: -110.925964
-            Roll: 2.27086735
-          }
-          Scale {
-            X: 0.964972615
-            Y: 0.763191462
-            Z: 0.964972258
-          }
-        }
-        ParentId: 17646975980077246468
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:id"
-            AssetReference {
-              Id: 2897474060105501612
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11216701439107531141
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16569358857545351998
-        Name: "Bush 02"
-        Transform {
-          Location {
-            X: -25.5936165
-            Y: 46.6506424
-            Z: 455.011536
-          }
-          Rotation {
-            Pitch: 45.9843864
-            Yaw: -43.0076904
-            Roll: 31.2849941
-          }
-          Scale {
-            X: 0.964972854
-            Y: 0.964972854
-            Z: 0.964972854
-          }
-        }
-        ParentId: 17646975980077246468
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:id"
-            AssetReference {
-              Id: 2897474060105501612
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11216701439107531141
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 1243868219246420992
+        Id: 7384477194066717825
         Name: "Tree Birch Bare 01"
         Transform {
           Location {
@@ -630,7 +362,7 @@
             Z: 0.485167533
           }
         }
-        ParentId: 17646975980077246468
+        ParentId: 13827306456546468593
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Trunk:id"
@@ -678,7 +410,7 @@
         }
       }
       Objects {
-        Id: 4890009571224272415
+        Id: 6055888213713831671
         Name: "RemoveGroup"
         Transform {
           Location {
@@ -691,7 +423,7 @@
             Z: 1
           }
         }
-        ParentId: 6862021172189687237
+        ParentId: 8859269034934234987
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -710,15 +442,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_wall_end_fancy_6m_001"
-      }
-    }
-    Assets {
-      Id: 11216701439107531141
-      Name: "Bush 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bush_generic_002"
       }
     }
     Assets {
