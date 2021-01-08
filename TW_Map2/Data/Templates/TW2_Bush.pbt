@@ -20,7 +20,7 @@
         ChildIds: 16216237043534549602
         ChildIds: 476504908591041899
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"

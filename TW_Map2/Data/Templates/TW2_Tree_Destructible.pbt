@@ -161,7 +161,8 @@
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -36.9051094
+            X: -16.519783
+            Z: -48.2359772
           }
           Rotation {
           }
@@ -187,9 +188,9 @@
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 39.1301041
-            Y: 53.8469849
-            Z: 264.86377
+            X: -35.2228241
+            Y: 38.2893677
+            Z: 72.1118851
           }
           Rotation {
           }

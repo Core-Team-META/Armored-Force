@@ -134,11 +134,11 @@
       }
       Overrides {
         Name: "material1_scale"
-        Float: 0.1
+        Float: 0.3
       }
       Overrides {
         Name: "material1side_scale"
-        Float: 0.1
+        Float: 0.3
       }
       Overrides {
         Name: "cmpc:Material3_Sides"
