@@ -44,6 +44,7 @@ local EQUIPMENT_TEMPLATE17 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE18 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate18")
 local EQUIPMENT_TEMPLATE19 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate19")
 local EQUIPMENT_TEMPLATE20 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate20")
+local EQUIPMENT_TEMPLATE21 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate21")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -59,6 +60,7 @@ end
 -- Variables
 local playerTeams = {}			-- We use this to detect team changes
 local equipment = {}
+local tankBurning = false
 
 -- bool AppliesToPlayersTeam(Player)
 -- Returns whether this player should get equipment given the team setting
@@ -96,12 +98,13 @@ end
 --On binding press, switch tank
 function OnBindingPressed(player,bindingPressed)
 	--burned tank
-	if bindingPressed == "ability_extra_40" then
+	if bindingPressed == "ability_extra_40" and tankBurning == false then
 		local BurnedTank = equipment[player]:GetCustomProperty("BurnedTank")
 		local TankBurnedSpawn = World.SpawnAsset(BurnedTank)
 		equipment[player].visibility = Visibility.FORCE_OFF
 		TankBurnedSpawn:SetWorldTransform(equipment[player]:GetWorldTransform())
-        player.movementControlMode = MovementControlMode.NONE
+		player.movementControlMode = MovementControlMode.NONE
+		tankBurning = true
 	end
 	--german panther
 	if bindingPressed == "ability_extra_1" then
@@ -109,6 +112,7 @@ function OnBindingPressed(player,bindingPressed)
 		GivePlayerEquipment(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
+		tankBurning = false
 	end
 	--ussr t-34
 	if bindingPressed == "ability_extra_2" then
@@ -118,6 +122,7 @@ function OnBindingPressed(player,bindingPressed)
 		equipment[player]:Equip(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
+		tankBurning = false
 	end
 	--us m4a1 sherman
 	if bindingPressed == "ability_extra_3" then
@@ -127,6 +132,7 @@ function OnBindingPressed(player,bindingPressed)
 		equipment[player]:Equip(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
+		tankBurning = false
 	end
 		--uk manticore
 		if bindingPressed == "ability_extra_4" then
@@ -136,6 +142,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--german panzer 4H
 		if bindingPressed == "ability_extra_5" then
@@ -145,6 +152,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--us m24 chaffee
 		if bindingPressed == "ability_extra_6" then
@@ -154,6 +162,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--us m10 wolverine
 		if bindingPressed == "ability_extra_7" then
@@ -163,6 +172,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--us m6a1 heavy
 		if bindingPressed == "ability_extra_8" then
@@ -172,6 +182,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--us m48 patton
 		if bindingPressed == "ability_extra_9" then
@@ -185,6 +196,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--us t110
 		if bindingPressed == "ability_extra_0" then
@@ -194,6 +206,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--german maus
 		if bindingPressed == "ability_extra_29" then
@@ -203,6 +216,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--german E100
 		if bindingPressed == "ability_extra_28" then
@@ -212,6 +226,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--ussr is-7
 		if bindingPressed == "ability_extra_27" then
@@ -221,6 +236,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--ussr t-62A1
 		if bindingPressed == "ability_extra_26" then
@@ -230,6 +246,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--german lowe
 		if bindingPressed == "ability_extra_25" then
@@ -239,6 +256,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--german e-50
 		if bindingPressed == "ability_extra_24" then
@@ -248,6 +266,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--german jagdtiger
 		if bindingPressed == "ability_extra_23" then
@@ -257,6 +276,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--us m3 stuart
 		if bindingPressed == "ability_extra_34" then
@@ -266,6 +286,7 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 		--german panzer 3
 		if bindingPressed == "ability_extra_35" then
@@ -275,6 +296,17 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
+		end
+		--us t34 heavy
+		if bindingPressed == "ability_extra_36" then
+			RemovePlayerEquipment(player)
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE21)
+			assert(equipment[player]:IsA("Equipment"))
+			equipment[player]:Equip(player)
+			player.movementControlMode = MovementControlMode.FACING_RELATIVE
+			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
 		end
 end
 

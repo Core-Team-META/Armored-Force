@@ -2,7 +2,7 @@
   Id: 11424527216311073864
   Name: "TW_BridgeStone"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 14270198567810839435
     ParameterOverrides {

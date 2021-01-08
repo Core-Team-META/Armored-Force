@@ -2,7 +2,7 @@
   Id: 15106445487939148600
   Name: "TW_BridgeFloor"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 136256093384731196
     ParameterOverrides {
