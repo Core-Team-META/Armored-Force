@@ -173,6 +173,37 @@ Objects {
   }
 }
 Objects {
+  Id: 12170552747347833328
+  Name: "Respawn Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7331958413616733673
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    RespawnSettings {
+      RespawnDelay: 2
+      RespawnMode_v2 {
+        Value: "mc:erespawnmode:atclosestspawnpoint"
+      }
+    }
+  }
+}
+Objects {
   Id: 7367735074338159388
   Name: "Game Settings"
   Transform {
