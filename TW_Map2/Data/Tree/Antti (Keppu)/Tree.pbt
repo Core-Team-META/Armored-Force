@@ -1,6 +1,220 @@
 ﻿Name: "Antti (Keppu)"
 RootId: 9479035303955472683
 Objects {
+  Id: 11451803929146486250
+  Name: "TW2_BushDead"
+  Transform {
+    Location {
+      X: 9047.31445
+      Y: -6623.61816
+      Z: 188.571777
+    }
+    Rotation {
+      Yaw: 168.95929
+    }
+    Scale {
+      X: 0.683699369
+      Y: 0.683699369
+      Z: 0.683699369
+    }
+  }
+  ParentId: 9479035303955472683
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3500853865337189939
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BushDead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8515.08594
+            Y: -8115.47
+            Z: 230.528564
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 168.95929
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683699369
+            Y: 0.683699369
+            Z: 0.683699369
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12158110288120917116
+    }
+  }
+}
+Objects {
+  Id: 5565974065175678889
+  Name: "TW2_BushDead"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9479035303955472683
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3500853865337189939
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BushDead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9047.31445
+            Y: -6623.61816
+            Z: 188.571777
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 168.95929
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683699369
+            Y: 0.683699369
+            Z: 0.683699369
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12158110288120917116
+    }
+  }
+}
+Objects {
+  Id: 6136769071500043529
+  Name: "TW2_BushBig"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9479035303955472683
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 18435660001994587871
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BushBig"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6566.02246
+            Y: 12136.626
+            Z: 515.900879
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -55.4281731
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.91231871
+            Y: 1.91231871
+            Z: 1.91231871
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14719356031079241106
+    }
+  }
+}
+Objects {
+  Id: 13750653013683225240
+  Name: "TW2_TreeDead_Destructible"
+  Transform {
+    Location {
+      X: 17720.6934
+      Y: -6564.97314
+      Z: 167.892014
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9479035303955472683
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1314689506230725920
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_TreeDead_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9173.08
+            Y: -6542.31689
+            Z: 167.891891
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 36.4133415
+            Roll: -7.70114136
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8022659663373324817
+    }
+  }
+}
+Objects {
   Id: 18058891261925217308
   Name: "TW2_BushBig"
   Transform {
@@ -1120,9 +1334,9 @@ Objects {
       Roll: 0.0518879406
     }
     Scale {
-      X: 7.268363
-      Y: 7.26838589
-      Z: 11.4519272
+      X: 7.26835966
+      Y: 7.26838684
+      Z: 13.0530567
     }
   }
   ParentId: 9479035303955472683
@@ -1564,8 +1778,8 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 8809.52539
-      Y: -3419.27979
+      X: 8650.68652
+      Y: -3410.70703
       Z: 1676.64355
     }
     Rotation {
@@ -1574,8 +1788,8 @@ Objects {
       Roll: 3.84903169
     }
     Scale {
-      X: 5.90520954
-      Y: 13.6403742
+      X: 5.72900391
+      Y: 13.6403856
       Z: 19.711092
     }
   }
@@ -1714,8 +1928,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 5045.61182
-            Y: 8203.47754
+            X: 5727.06396
+            Y: 8813.82617
             Z: 475.685608
           }
         }
