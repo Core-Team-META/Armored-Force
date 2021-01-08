@@ -12591,14 +12591,6 @@ Objects {
             Roll: -3.36270237
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -13438,9 +13430,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 0.995616138
-            Yaw: 12.4446697
-            Roll: 5.69534826
+            Pitch: 2.49149585
+            Yaw: 12.236702
+            Roll: -1.13705444
           }
         }
         Overrides {
@@ -15391,14 +15383,6 @@ Objects {
             Roll: -3.36270213
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -15987,14 +15971,6 @@ Objects {
             Pitch: 3.79280376
             Yaw: -78.0227127
             Roll: 1.00977767
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
