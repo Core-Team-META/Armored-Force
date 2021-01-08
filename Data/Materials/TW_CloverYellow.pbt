@@ -2,7 +2,7 @@
   Id: 12979132567140686096
   Name: "TW_CloverYellow"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 6722288021636580285
     ParameterOverrides {

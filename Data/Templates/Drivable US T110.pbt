@@ -22,7 +22,7 @@
           Overrides {
             Name: "cs:BurnedTank"
             AssetReference {
-              Id: 13133278224975990749
+              Id: 7025811027595081887
             }
           }
         }
@@ -5260,15 +5260,12 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14359217783623684227
+              Id: 15743147641625697283
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0209390968
-              G: 0.026
-              B: 0.020046
               A: 1
             }
           }
@@ -16435,15 +16432,6 @@
       }
     }
     Assets {
-      Id: 14359217783623684227
-      Name: "Rubber Basic 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_scf_rubber_panels_004_uv"
-      }
-    }
-    Assets {
       Id: 553193821835850161
       Name: "Military Crate Hinge 02"
       PlatformAssetType: 1
@@ -16835,5 +16823,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

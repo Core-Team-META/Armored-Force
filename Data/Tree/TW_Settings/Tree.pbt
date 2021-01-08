@@ -168,6 +168,7 @@ Objects {
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
       FlipOnMultiJump: true
+      MaxHitpoints: 100
     }
   }
 }

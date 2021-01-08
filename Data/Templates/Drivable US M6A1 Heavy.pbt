@@ -22,7 +22,7 @@
           Overrides {
             Name: "cs:BurnedTank"
             AssetReference {
-              Id: 13133278224975990749
+              Id: 7025811027595081887
             }
           }
         }
@@ -35901,5 +35901,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }
