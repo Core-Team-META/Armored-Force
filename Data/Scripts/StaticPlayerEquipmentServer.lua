@@ -87,7 +87,7 @@ function RemovePlayerEquipment(player)
 		equipment[player]:Unequip()
 
 		-- Have to check IsValid() again, because unequip may have destroyed this equipment
-		if equipment[player]:IsValid() then
+		if equipment[player]:IsValid() then			
 			equipment[player]:Destroy()
 		end
 
