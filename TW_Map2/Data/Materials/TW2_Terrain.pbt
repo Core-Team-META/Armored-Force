@@ -104,11 +104,11 @@
       }
       Overrides {
         Name: "material4_scale"
-        Float: 0.5
+        Float: 1
       }
       Overrides {
         Name: "material4side_scale"
-        Float: 0.5
+        Float: 1
       }
       Overrides {
         Name: "material4_genmask"
