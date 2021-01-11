@@ -1,6 +1,570 @@
 ﻿Name: "Decals_Roads"
 RootId: 7102837139605751326
 Objects {
+  Id: 11110515460864856868
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 3496.03394
+      Y: -6341.63916
+      Z: -7.6185112
+    }
+    Rotation {
+      Pitch: 2.80215335
+      Yaw: 28.2948685
+      Roll: 7.37534714
+    }
+    Scale {
+      X: 1.20000494
+      Y: 3.03739905
+      Z: 0.999999344
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 1093953121860778747
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 4180.62939
+      Y: -11356.1221
+      Z: 1137.82117
+    }
+    Rotation {
+      Pitch: 0.216312081
+      Yaw: -11.0068054
+      Roll: 0.542345405
+    }
+    Scale {
+      X: 1.20000231
+      Y: 4.17184496
+      Z: 0.99999851
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 10154372178170950268
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 3778.11572
+      Y: -14020.3145
+      Z: 1077.42883
+    }
+    Rotation {
+      Pitch: 0.216312081
+      Yaw: -11.0067749
+      Roll: 0.542345405
+    }
+    Scale {
+      X: 1.2
+      Y: 6.39999628
+      Z: 1
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 9445961067316299164
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 2739.34595
+      Y: -17491.4316
+      Z: 1210.50757
+    }
+    Rotation {
+      Pitch: 0.32562241
+      Yaw: -16.9821777
+      Roll: 1.03289497
+    }
+    Scale {
+      X: 1.2
+      Y: 6.39999628
+      Z: 1
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 17901631856436509123
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 2070.56836
+      Y: -4510.84033
+      Z: -289.598724
+    }
+    Rotation {
+      Pitch: 1.40064633
+      Yaw: 66.1106644
+      Roll: 5.5552783
+    }
+    Scale {
+      X: 1.20000112
+      Y: 2.26446915
+      Z: 0.999998569
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 13342875695606589915
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 834.417542
+      Y: -4123.92383
+      Z: -68.8036041
+    }
+    Rotation {
+      Pitch: -1.56195068
+      Yaw: 72.8209381
+      Roll: -5.03903198
+    }
+    Scale {
+      X: 1.20000112
+      Y: 2.26446915
+      Z: 0.999998569
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 5343889533716910181
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -188.698212
+      Y: 1580.06274
+      Z: 44.0283203
+    }
+    Rotation {
+      Yaw: 18.2514076
+    }
+    Scale {
+      X: 1.1999985
+      Y: 3.96341729
+      Z: 0.999998033
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 14953388405664283850
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 305.637848
+      Y: -1196.16113
+      Z: 44.0280762
+    }
+    Rotation {
+      Yaw: 4.31186104
+    }
+    Scale {
+      X: 1.2
+      Y: 6.13731909
+      Z: 0.999998033
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 13975232134999203998
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -71.6376801
+      Y: -3843.13452
+      Z: 44.0280762
+    }
+    Rotation {
+      Yaw: -27.1179199
+    }
+    Scale {
+      X: 1.19999981
+      Y: 3.74737167
+      Z: 0.999998033
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 5573079956206837099
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -1634.10669
+      Y: -6088.36182
+      Z: 44.0280762
+    }
+    Rotation {
+      Yaw: -39.5384521
+    }
+    Scale {
+      X: 1.20000029
+      Y: 6.25381184
+      Z: 0.999998033
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 8743447687741384224
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -4380.854
+      Y: -9334.03125
+      Z: 153.478027
+    }
+    Rotation {
+      Yaw: -43.0253906
+    }
+    Scale {
+      X: 1.20000279
+      Y: 8.45492172
+      Z: 0.999998033
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 6755513946218764418
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -7916.19531
+      Y: -13121.8525
+      Z: 153.478027
+    }
+    Rotation {
+      Yaw: -43.0253601
+    }
+    Scale {
+      X: 1.20000279
+      Y: 8.45492172
+      Z: 0.999998033
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.215
+        G: 0.144465655
+        B: 0.10062
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 5029233876238935977
   Name: "Decal Stains Round 01"
   Transform {
@@ -2725,43 +3289,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7559716368680104256
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 5203.78516
-      Y: -6416.21045
-      Z: 224.136047
-    }
-    Rotation {
-      Pitch: 6.74288511
-      Yaw: -70.0090485
-      Roll: -3.20858788
-    }
-    Scale {
-      X: 5.61900187
-      Y: 3.25310755
-      Z: 0.492895
-    }
-  }
-  ParentId: 7102837139605751326
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
   Id: 13163560066346479352
   Name: "Decal Tread Tracks 01"
   Transform {
@@ -2861,141 +3388,6 @@ Objects {
     }
     Rotation {
       Yaw: -66.6248856
-    }
-    Scale {
-      X: 1.2232728
-      Y: 6.5842309
-      Z: 1.00000083
-    }
-  }
-  ParentId: 7102837139605751326
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.402
-        G: 0.323583215
-        B: 0.188136
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 18101823377046129802
-  Name: "Decal Tread Tracks 01"
-  Transform {
-    Location {
-      X: -860.739319
-      Y: 2754.45752
-      Z: -56.8077393
-    }
-    Rotation {
-      Pitch: -3.68563819
-      Yaw: 109.085754
-      Roll: 0.151099458
-    }
-    Scale {
-      X: 1.64184105
-      Y: 3.35232711
-      Z: 0.579144478
-    }
-  }
-  ParentId: 7102837139605751326
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10119078917586003560
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 17350409189805056741
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: -894.164856
-      Y: 2375.57104
-      Z: 38.1468506
-    }
-    Rotation {
-      Yaw: -66.6248856
-    }
-    Scale {
-      X: 1.2232728
-      Y: 6.5842309
-      Z: 1.00000083
-    }
-  }
-  ParentId: 7102837139605751326
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.402
-        G: 0.323583215
-        B: 0.188136
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 6882593697450150941
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: -1152.94971
-      Y: 2780.604
-      Z: 37.8216553
-    }
-    Rotation {
-      Yaw: -66.624855
     }
     Scale {
       X: 1.2232728
@@ -5398,14 +5790,14 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: 2295
-      Y: -4620
-      Z: -165
+      X: 2219.66309
+      Y: -4726.16504
+      Z: -160.403992
     }
     Rotation {
-      Pitch: -2.49850345
-      Yaw: 64.0314484
-      Roll: 2.71456289
+      Pitch: -2.02200317
+      Yaw: 54.6397514
+      Roll: 3.08579254
     }
     Scale {
       X: 1.64184105
@@ -5441,14 +5833,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 1999.48364
-      Y: -4864.62744
-      Z: -84.2773
+      X: 1888.6731
+      Y: -4663.30762
+      Z: -317.987762
     }
     Rotation {
-      Pitch: -0.988615215
-      Yaw: -111.518
-      Roll: -2.64282298
+      Pitch: -1.44268799
+      Yaw: -121.753723
+      Roll: -2.42507935
     }
     Scale {
       X: 1.2232728
@@ -5489,14 +5881,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 2102.11
-      Y: -4395.08447
-      Z: -79.9587936
+      X: 1832.17603
+      Y: -4634.44092
+      Z: -93.0499802
     }
     Rotation {
-      Pitch: -0.988615215
-      Yaw: -111.517937
-      Roll: -2.64282298
+      Pitch: -1.42648315
+      Yaw: -121.37088
+      Roll: -2.43466187
     }
     Scale {
       X: 1.2232728
@@ -5628,9 +6020,9 @@ Objects {
       Z: 295.991028
     }
     Rotation {
-      Pitch: -1.30611646
-      Yaw: -170.343399
-      Roll: -18.3108597
+      Pitch: 1.40629494
+      Yaw: -162.159698
+      Roll: -18.3037109
     }
     Scale {
       X: 1.64184105
@@ -5943,6 +6335,141 @@ Objects {
     }
     Rotation {
       Yaw: -66.6248169
+    }
+    Scale {
+      X: 1.2232728
+      Y: 6.5842309
+      Z: 1.00000083
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.402
+        G: 0.323583215
+        B: 0.188136
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 18101823377046129802
+  Name: "Decal Tread Tracks 01"
+  Transform {
+    Location {
+      X: -860.739319
+      Y: 2754.45752
+      Z: -56.8077393
+    }
+    Rotation {
+      Pitch: -3.68563819
+      Yaw: 109.085754
+      Roll: 0.151099235
+    }
+    Scale {
+      X: 1.64184105
+      Y: 3.35232711
+      Z: 0.579144478
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10119078917586003560
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 17350409189805056741
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -894.164856
+      Y: 2375.57104
+      Z: 38.1468506
+    }
+    Rotation {
+      Yaw: -66.6249161
+    }
+    Scale {
+      X: 1.2232728
+      Y: 6.5842309
+      Z: 1.00000083
+    }
+  }
+  ParentId: 7102837139605751326
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.402
+        G: 0.323583215
+        B: 0.188136
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 6882593697450150941
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -1152.94971
+      Y: 2780.604
+      Z: 37.8216553
+    }
+    Rotation {
+      Yaw: -66.6248932
     }
     Scale {
       X: 1.2232728
