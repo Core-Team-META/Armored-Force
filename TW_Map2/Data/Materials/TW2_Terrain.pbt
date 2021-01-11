@@ -21,13 +21,7 @@
       Overrides {
         Name: "cmp:Material2"
         AssetReference {
-          Id: 10267886749428962882
-        }
-      }
-      Overrides {
-        Name: "cmp:Material2_Sides"
-        AssetReference {
-          Id: 10267886749428962882
+          Id: 1910430801874839834
         }
       }
       Overrides {
@@ -56,18 +50,18 @@
       }
       Overrides {
         Name: "material2_scale"
-        Float: 0.1
+        Float: 1
       }
       Overrides {
         Name: "material2side_scale"
-        Float: 0.1
+        Float: 1
       }
       Overrides {
         Name: "cmpc:Material2"
         Color {
-          R: 0.728000045
-          G: 0.616567552
-          B: 0.564928055
+          R: 0.462
+          G: 0.462
+          B: 0.462
           A: 1
         }
       }
@@ -149,6 +143,21 @@
           A: 1
         }
       }
+      Overrides {
+        Name: "cmpc:Material2_Sides"
+        Color {
+          R: 1
+          G: 1
+          B: 1
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmp:Material2_Sides"
+        AssetReference {
+          Id: 1910430801874839834
+        }
+      }
     }
     Assets {
       Id: 1104511411894916854
@@ -178,21 +187,12 @@
       }
     }
     Assets {
-      Id: 10267886749428962882
-      Name: "Stone Basic"
+      Id: 1910430801874839834
+      Name: "Bone Raw"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "stone_001"
-      }
-    }
-    Assets {
-      Id: 10267886749428962882
-      Name: "Stone Basic"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "stone_001"
+        AssetId: "mi_bone_raw_001_uv_ref"
       }
     }
     Assets {
@@ -211,6 +211,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_grass_002_uv"
+      }
+    }
+    Assets {
+      Id: 1910430801874839834
+      Name: "Bone Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_bone_raw_001_uv_ref"
       }
     }
     Assets {
