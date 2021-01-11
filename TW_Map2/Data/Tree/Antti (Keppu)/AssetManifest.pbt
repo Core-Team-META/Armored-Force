@@ -17,30 +17,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14954943872139591724
-  Name: "Rock Flat 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_004"
-  }
-}
-Assets {
   Id: 14697405062555329113
   Name: "Ambient Occlusion Post Process"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_ao"
-  }
-}
-Assets {
-  Id: 13650699884663610996
-  Name: "Decal Stains Round 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_stain_round_001"
   }
 }
 Assets {
@@ -62,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11216701439107531141
-  Name: "Bush 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bush_generic_002"
-  }
-}
-Assets {
   Id: 10451866999938289708
   Name: "Wood Raw White"
   PlatformAssetType: 2
@@ -86,33 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_stump_001"
-  }
-}
-Assets {
-  Id: 10119078917586003560
-  Name: "Decal Tread Tracks 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_mil_decal_tracks_001_ref"
-  }
-}
-Assets {
-  Id: 9310199863615559233
-  Name: "Rock 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_003"
-  }
-}
-Assets {
-  Id: 9148677116672992934
-  Name: "Rock 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
   }
 }
 Assets {
