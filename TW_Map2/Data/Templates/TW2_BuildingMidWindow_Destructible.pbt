@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 9479035303955472683
         ChildIds: 6820322636309427763
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -303,9 +303,9 @@
         Name: "Window"
         Transform {
           Location {
-            X: -135
+            X: -110
             Y: -19.40625
-            Z: 110.000031
+            Z: 111.343201
           }
           Rotation {
             Yaw: 179.999954
@@ -370,9 +370,9 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -210
+            X: -185
             Y: -25
-            Z: 273.65683
+            Z: 275
           }
           Rotation {
           }
@@ -482,7 +482,7 @@
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: -132.34668
+            X: -105
             Y: -25
             Z: 51.0543213
           }
@@ -534,9 +534,9 @@
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: -333.49707
+            X: -310
             Y: -25
-            Z: 337.788635
+            Z: 330
           }
           Rotation {
             Pitch: -20.3637695
@@ -781,6 +781,7 @@
           }
         }
         ParentId: 6820322636309427763
+        ChildIds: 1417970701244807635
         ChildIds: 3038189125164338834
         ChildIds: 8077678134563517096
         ChildIds: 1596560761530698687
@@ -796,6 +797,9 @@
         ChildIds: 12224280437951452570
         ChildIds: 16083731016760707986
         ChildIds: 1831868295195024228
+        ChildIds: 12204061702197343574
+        ChildIds: 5515289647044750906
+        ChildIds: 619793126964460501
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -807,13 +811,64 @@
         }
       }
       Objects {
+        Id: 1417970701244807635
+        Name: "Urban Damaged Concrete Pillar 01"
+        Transform {
+          Location {
+            X: -160
+            Y: 350
+            Z: 145
+          }
+          Rotation {
+            Yaw: -179.999985
+            Roll: -179.999985
+          }
+          Scale {
+            X: 0.6
+            Y: 0.6
+            Z: 1
+          }
+        }
+        ParentId: 17470141041164406739
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7119371275391860163
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
         Id: 3038189125164338834
         Name: "Window"
         Transform {
           Location {
-            X: -290
+            X: -265
             Y: -20
-            Z: 110.000031
+            Z: 111.343201
           }
           Rotation {
             Yaw: 178.912628
@@ -927,16 +982,16 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -175
+            X: -170
             Y: -25
-            Z: 275
+            Z: 290
           }
           Rotation {
           }
           Scale {
-            X: 4.5
+            X: 3.9
             Y: 0.5
-            Z: 1.1
+            Z: 1
           }
         }
         ParentId: 17470141041164406739
@@ -956,7 +1011,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17478005048219626704
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1032,7 +1087,7 @@
           Rotation {
           }
           Scale {
-            X: 1.2
+            X: 0.7
             Y: 0.5
             Z: 3.9
           }
@@ -1054,7 +1109,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17478005048219626704
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1074,14 +1129,14 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -320
+            X: -330
             Y: -25
             Z: 315
           }
           Rotation {
           }
           Scale {
-            X: 0.7
+            X: 1.1
             Y: 0.5
             Z: 1.2
           }
@@ -1123,9 +1178,9 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -210
+            X: -185
             Y: -25
-            Z: 91.4827881
+            Z: 92.8259583
           }
           Rotation {
           }
@@ -1184,14 +1239,14 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -165
+            X: -155
             Y: -25
             Z: -5
           }
           Rotation {
           }
           Scale {
-            X: 4.4
+            X: 3.70000076
             Y: 0.5
             Z: 1.1
           }
@@ -1213,7 +1268,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17478005048219626704
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1233,8 +1288,8 @@
         Name: "Urban Damaged Concrete Panel 01 - 8x2m"
         Transform {
           Location {
-            X: 20
-            Y: -10
+            X: -105
+            Y: 175
             Z: 357.401611
           }
           Rotation {
@@ -1242,7 +1297,7 @@
           }
           Scale {
             X: 0.900000036
-            Y: 0.900000036
+            Y: 0.6
             Z: 0.6
           }
         }
@@ -1267,7 +1322,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 15820050117173824736
+            Id: 14345153403763633307
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1693,6 +1748,154 @@
           }
         }
       }
+      Objects {
+        Id: 12204061702197343574
+        Name: "Urban Damaged Concrete Chunk 03"
+        Transform {
+          Location {
+            X: 4.50488281
+            Y: -25
+            Z: 304.99823
+          }
+          Rotation {
+            Pitch: 5.90322971
+            Yaw: -179.999985
+            Roll: 90.0017548
+          }
+          Scale {
+            X: 0.500000477
+            Y: -0.714481711
+            Z: 1.01605296
+          }
+        }
+        ParentId: 17470141041164406739
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5483772166785938526
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5515289647044750906
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            Y: -25
+            Z: 315
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.7
+            Y: 0.5
+            Z: 1.2
+          }
+        }
+        ParentId: 17470141041164406739
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17478005048219626704
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 619793126964460501
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: -300
+            Y: -25
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.7
+            Y: 0.5
+            Z: 3.9
+          }
+        }
+        ParentId: 17470141041164406739
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 198353679974341757
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 5483772166785938526
@@ -1758,6 +1961,15 @@
       }
     }
     Assets {
+      Id: 7119371275391860163
+      Name: "Urban Damaged Concrete Pillar 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_concrete_pillar_middle_001_ref"
+      }
+    }
+    Assets {
       Id: 17478005048219626704
       Name: "Cube - Rounded Bottom-Aligned"
       PlatformAssetType: 1
@@ -1773,15 +1985,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_urb_dmg_concrete_panel_001_2x4m_ref"
-      }
-    }
-    Assets {
-      Id: 15820050117173824736
-      Name: "Urban Damaged Concrete Panel 02 - 4x4m"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_urb_dmg_concrete_panel_002_4x4m_ref"
       }
     }
     Assets {
