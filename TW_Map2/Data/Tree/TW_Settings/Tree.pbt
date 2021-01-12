@@ -1,7 +1,7 @@
 ﻿Name: "TW_Settings"
-RootId: 17734630002646221213
+RootId: 10090713447264881202
 Objects {
-  Id: 7926288489550837553
+  Id: 1722819333983075486
   Name: "Third Person Camera Settings"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17734630002646221213
-  ChildIds: 15954293127513707923
-  ChildIds: 12982492435028310325
+  ParentId: 10090713447264881202
+  ChildIds: 12069211033368305212
+  ChildIds: 14860874337489220250
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12982492435028310325
+  Id: 14860874337489220250
   Name: "Client Context"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7926288489550837553
-  ChildIds: 8692147141118328177
+  ParentId: 1722819333983075486
+  ChildIds: 195853434526987998
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -57,7 +57,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8692147141118328177
+  Id: 195853434526987998
   Name: "Third Person Camera"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12982492435028310325
+  ParentId: 14860874337489220250
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -102,7 +102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15954293127513707923
+  Id: 12069211033368305212
   Name: "Third Person Player Settings"
   Transform {
     Location {
@@ -115,7 +115,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7926288489550837553
+  ParentId: 1722819333983075486
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -173,7 +173,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2013315180184953686
+  Id: 7054819623935338745
   Name: "Respawn Settings"
   Transform {
     Location {
@@ -186,7 +186,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17734630002646221213
+  ParentId: 10090713447264881202
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -204,7 +204,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13161282670906055405
+  Id: 14749639211171811650
   Name: "Game Settings"
   Transform {
     Location {
@@ -217,7 +217,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17734630002646221213
+  ParentId: 10090713447264881202
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
