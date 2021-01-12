@@ -20,6 +20,7 @@ Objects {
   ChildIds: 18217549399293975483
   ChildIds: 14056410520090297922
   ChildIds: 9479035303955472683
+  ChildIds: 6589618948939414272
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -29,6 +30,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 6589618948939414272
+  Name: "Marcela"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Marcela"
   }
 }
 Objects {
@@ -6878,7 +6905,6 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 10090713447264881202
-  ChildIds: 5889369839369335781
   ChildIds: 2908182587629757492
   Folder {
     IsGroup: true
@@ -6908,32 +6934,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
-  }
-}
-Objects {
-  Id: 5889369839369335781
-  Name: "Marcela"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2572116581845083312
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Marcela"
   }
 }
 Objects {
