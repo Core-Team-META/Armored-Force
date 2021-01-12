@@ -1,6 +1,69 @@
 ﻿Name: "Sandstones"
 RootId: 5278132779621699120
 Objects {
+  Id: 9373174578696407842
+  Name: "Sandstone"
+  Transform {
+    Location {
+      X: -1559.93274
+      Y: -8020.39209
+      Z: -195.000031
+    }
+    Rotation {
+      Yaw: 30.9686813
+    }
+    Scale {
+      X: 1.55106246
+      Y: 1.60000181
+      Z: 2.2
+    }
+  }
+  ParentId: 5278132779621699120
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1910430801874839834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3783629665905000063
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 2455454796263168249
   Name: "Sandstone"
   Transform {

@@ -43,6 +43,9 @@
         }
         ParentId: 18335148674332623083
         ChildIds: 3074734433151040839
+        ChildIds: 13166236508000340886
+        ChildIds: 16330537972454450873
+        ChildIds: 6386841689681214517
         ChildIds: 10091564087689710198
         ChildIds: 8561922875455895287
         Collidable_v2 {
@@ -210,6 +213,160 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13166236508000340886
+        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+        Transform {
+          Location {
+            X: -13.9042969
+            Y: -26.5839844
+            Z: 12.5230255
+          }
+          Rotation {
+            Yaw: 179.003342
+            Roll: 90.0012817
+          }
+          Scale {
+            X: 0.4
+            Y: 0.1
+            Z: 0.900000036
+          }
+        }
+        ParentId: 10636020785356020114
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14345153403763633307
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16330537972454450873
+        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+        Transform {
+          Location {
+            X: -332.458984
+            Y: -26.5839844
+            Z: 12.5230255
+          }
+          Rotation {
+            Yaw: 0.996612787
+            Roll: -89.9986572
+          }
+          Scale {
+            X: 0.350168407
+            Y: 0.1
+            Z: 0.899992585
+          }
+        }
+        ParentId: 10636020785356020114
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14345153403763633307
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6386841689681214517
+        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+        Transform {
+          Location {
+            X: -183.904297
+            Y: 348.416016
+            Z: -8.35591125
+          }
+          Rotation {
+            Pitch: -0.996613324
+            Yaw: 89.9999466
+            Roll: 0.00128523051
+          }
+          Scale {
+            X: 0.6
+            Y: 0.6
+            Z: 0.2
+          }
+        }
+        ParentId: 10636020785356020114
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12879841196243822080
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
         }
       }
       Objects {
@@ -1881,21 +2038,30 @@
       }
     }
     Assets {
-      Id: 5483772166785938526
-      Name: "Urban Damaged Concrete Chunk 03"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_urb_dest_concrete_chunk_003_ref"
-      }
-    }
-    Assets {
       Id: 14345153403763633307
       Name: "Urban Damaged Concrete Chunk 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_urb_dest_concrete_chunk_002_ref"
+      }
+    }
+    Assets {
+      Id: 12879841196243822080
+      Name: "Urban Damaged Concrete Pillar - Bottom 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_concrete_pillar_bottom_01_ref"
+      }
+    }
+    Assets {
+      Id: 5483772166785938526
+      Name: "Urban Damaged Concrete Chunk 03"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_concrete_chunk_003_ref"
       }
     }
     Assets {

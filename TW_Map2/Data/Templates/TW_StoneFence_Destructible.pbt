@@ -309,9 +309,8 @@
         Name: "Urban Damaged Concrete Chunk 01"
         Transform {
           Location {
-            X: -11.6015625
-            Y: 190.203125
-            Z: 10.2333832
+            Y: 190
+            Z: 10.0001526
           }
           Rotation {
             Pitch: 90.7915497
@@ -321,7 +320,7 @@
           Scale {
             X: 0.231073201
             Y: 0.456576437
-            Z: 1.00000012
+            Z: 0.97312516
           }
         }
         ParentId: 11927078453881886681

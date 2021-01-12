@@ -259,11 +259,11 @@
         Transform {
           Location {
             X: 25.59375
-            Y: 295
+            Y: 286.724609
             Z: 110.000031
           }
           Rotation {
-            Yaw: -80.4150085
+            Yaw: 1.63509381
           }
           Scale {
             X: -0.9
@@ -1378,12 +1378,12 @@
         Name: "Window"
         Transform {
           Location {
-            X: 25
-            Y: 140
-            Z: 110.000031
+            X: 17.6679688
+            Y: 146.466797
+            Z: 110.000046
           }
           Rotation {
-            Yaw: -89.9999542
+            Yaw: 174.365112
           }
           Scale {
             X: 0.900000036

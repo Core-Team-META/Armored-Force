@@ -1,6 +1,79 @@
 ﻿Name: "Rocks"
 RootId: 9408846036456260919
 Objects {
+  Id: 11627524980903816901
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: -12681.0762
+      Y: -17171.6348
+      Z: 164.558319
+    }
+    Rotation {
+      Pitch: -0.456787109
+      Yaw: -31.8295898
+      Roll: 0.385091901
+    }
+    Scale {
+      X: 2.84256458
+      Y: 4.29975271
+      Z: 5.88304901
+    }
+  }
+  ParentId: 9408846036456260919
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11054325002036881179
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 3.84057426
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2.40604186
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.686000049
+        G: 0.410319477
+        B: 0.310072
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14954943872139591724
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 17798963904212110402
   Name: "Rock Flat 01"
   Transform {
@@ -1963,11 +2036,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.70147657
+      Float: 3.84057426
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.46666098
+      Float: 2.40604186
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2182,11 +2255,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.70147657
+      Float: 3.84057426
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.46666098
+      Float: 2.40604186
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2255,11 +2328,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.70147657
+      Float: 3.84057426
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.46666098
+      Float: 2.40604186
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2328,11 +2401,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.70147657
+      Float: 3.84057426
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.46666098
+      Float: 2.40604186
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
