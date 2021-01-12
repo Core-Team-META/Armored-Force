@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 18115771886163564065
+  ChildIds: 2572116581845083312
   ChildIds: 4965067273124672211
   ChildIds: 16933976679426407654
   ChildIds: 18217549399293975483
@@ -6863,8 +6863,8 @@ Objects {
   }
 }
 Objects {
-  Id: 18115771886163564065
-  Name: "TW2_Settings"
+  Id: 2572116581845083312
+  Name: "ImportFromTW1 (Imported 12 Jan)"
   Transform {
     Location {
     }
@@ -6877,6 +6877,28 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 10090713447264881202
+  ChildIds: 5889369839369335781
+  ChildIds: 2908182587629757492
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2908182587629757492
+  Name: "Patrick"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2572116581845083312
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6885,6 +6907,58 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "TW2_Settings"
+    FilePartitionName: "Patrick"
+  }
+}
+Objects {
+  Id: 5889369839369335781
+  Name: "Marcela"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2572116581845083312
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Marcela"
+  }
+}
+Objects {
+  Id: 10090713447264881202
+  Name: "TW_Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2572116581845083312
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW_Settings"
   }
 }

@@ -16,7 +16,7 @@ Objects {
   }
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
-  ChildIds: 7331958413616733673
+  ChildIds: 17734630002646221213
   ChildIds: 14246791555251678451
   ChildIds: 4689494391382931675
   ChildIds: 14661672776697705088
@@ -137,13 +137,9 @@ Objects {
   }
 }
 Objects {
-  Id: 7331958413616733673
+  Id: 17734630002646221213
   Name: "TW_Settings"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
