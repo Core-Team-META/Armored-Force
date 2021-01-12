@@ -59,9 +59,6 @@
         Name: "DestructionTrigger"
         Transform {
           Location {
-            X: 110
-            Y: -22.8359375
-            Z: 75.866333
           }
           Rotation {
           }
@@ -140,6 +137,7 @@
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
+              SubObjectId: 6856163730559559514
             }
           }
         }

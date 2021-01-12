@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 8509863486529792859
-  Name: "TW2_BuildingMidWindow_Destructible"
+  Id: 13418200335718242636
+  Name: "TW2_BuildingMidDoor_Destructible"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1168373865970130169
+      RootId: 18335148674332623083
       Objects {
-        Id: 1168373865970130169
-        Name: "TW2_BuildingMidWindow_Destructible"
+        Id: 18335148674332623083
+        Name: "TW2_BuildingMidDoor_Destructible"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 9479035303955472683
-        ChildIds: 6820322636309427763
+        ParentId: 4781671109827199097
+        ChildIds: 10636020785356020114
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28,7 +28,7 @@
         }
       }
       Objects {
-        Id: 6820322636309427763
+        Id: 10636020785356020114
         Name: "ClientContext"
         Transform {
           Location {
@@ -41,10 +41,10 @@
             Z: 1
           }
         }
-        ParentId: 1168373865970130169
-        ChildIds: 7510632819598737233
-        ChildIds: 7441449565595978500
-        ChildIds: 17470141041164406739
+        ParentId: 18335148674332623083
+        ChildIds: 3074734433151040839
+        ChildIds: 10091564087689710198
+        ChildIds: 8561922875455895287
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -55,7 +55,7 @@
         }
       }
       Objects {
-        Id: 7510632819598737233
+        Id: 3074734433151040839
         Name: "DestructionTrigger"
         Transform {
           Location {
@@ -71,10 +71,10 @@
             Z: 4
           }
         }
-        ParentId: 6820322636309427763
-        ChildIds: 4798724894963681281
-        ChildIds: 4095965422666100669
-        ChildIds: 1350220658498521541
+        ParentId: 10636020785356020114
+        ChildIds: 4101771755573344181
+        ChildIds: 7296507919106639024
+        ChildIds: 2616004937593836813
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -92,7 +92,7 @@
         }
       }
       Objects {
-        Id: 4798724894963681281
+        Id: 4101771755573344181
         Name: "DestructibleObject"
         Transform {
           Location {
@@ -105,7 +105,7 @@
             Z: 0.999999881
           }
         }
-        ParentId: 7510632819598737233
+        ParentId: 3074734433151040839
         UnregisteredParameters {
           Overrides {
             Name: "cs:DestructionFX01"
@@ -122,25 +122,25 @@
           Overrides {
             Name: "cs:FXLocation01"
             ObjectReference {
-              SubObjectId: 1350220658498521541
+              SubObjectId: 2616004937593836813
             }
           }
           Overrides {
             Name: "cs:FXLocation02"
             ObjectReference {
-              SubObjectId: 4095965422666100669
+              SubObjectId: 7296507919106639024
             }
           }
           Overrides {
             Name: "cs:DebrisGroup"
             ObjectReference {
-              SubObjectId: 7441449565595978500
+              SubObjectId: 10091564087689710198
             }
           }
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
-              SubObjectId: 17470141041164406739
+              SubObjectId: 8561922875455895287
             }
           }
         }
@@ -157,7 +157,7 @@
         }
       }
       Objects {
-        Id: 4095965422666100669
+        Id: 7296507919106639024
         Name: "FXLocation02"
         Transform {
           Location {
@@ -173,7 +173,7 @@
             Z: 0.999999881
           }
         }
-        ParentId: 7510632819598737233
+        ParentId: 3074734433151040839
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -185,7 +185,7 @@
         }
       }
       Objects {
-        Id: 1350220658498521541
+        Id: 2616004937593836813
         Name: "FXLocation01"
         Transform {
           Location {
@@ -201,7 +201,7 @@
             Z: 0.999999881
           }
         }
-        ParentId: 7510632819598737233
+        ParentId: 3074734433151040839
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -213,7 +213,7 @@
         }
       }
       Objects {
-        Id: 7441449565595978500
+        Id: 10091564087689710198
         Name: "DebrisGroup"
         Transform {
           Location {
@@ -226,16 +226,15 @@
             Z: 1
           }
         }
-        ParentId: 6820322636309427763
-        ChildIds: 513703452917995705
-        ChildIds: 10603760781724436747
-        ChildIds: 14733823877848979224
-        ChildIds: 12400408520680989445
-        ChildIds: 1583377878872922186
-        ChildIds: 2551751697362050389
-        ChildIds: 14991175587132061556
-        ChildIds: 3850442276526157507
-        ChildIds: 5406445158672231396
+        ParentId: 10636020785356020114
+        ChildIds: 7612724116104423746
+        ChildIds: 11644449499287040593
+        ChildIds: 13090196050240099258
+        ChildIds: 16956027422747857400
+        ChildIds: 6504683699589772052
+        ChildIds: 16163364253942437635
+        ChildIds: 5375281134774090792
+        ChildIds: 3941651173829076143
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -247,7 +246,7 @@
         }
       }
       Objects {
-        Id: 513703452917995705
+        Id: 7612724116104423746
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
@@ -266,7 +265,7 @@
             Z: 0.999999881
           }
         }
-        ParentId: 7441449565595978500
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -292,142 +291,14 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 10603760781724436747
-        Name: "Window"
-        Transform {
-          Location {
-            X: -110
-            Y: -19.40625
-            Z: 111.343201
-          }
-          Rotation {
-            Yaw: 179.999954
-          }
-          Scale {
-            X: -0.900000036
-            Y: 2
-            Z: 1.22295177
-          }
-        }
-        ParentId: 7441449565595978500
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Prop_Handle:id"
-            AssetReference {
-              Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 17393961314713938594
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.212000012
-              G: 0.157304
-              B: 0.102608
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 630716509692050905
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14733823877848979224
-        Name: "Cube - Rounded Bottom-Aligned"
-        Transform {
-          Location {
-            X: -185
-            Y: -25
-            Z: 275
-          }
-          Rotation {
-          }
-          Scale {
-            X: 2
-            Y: 0.6
-            Z: 0.2
-          }
-        }
-        ParentId: 7441449565595978500
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 16222007757601024097
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.684684
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 198353679974341757
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12400408520680989445
+        Id: 11644449499287040593
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
@@ -445,7 +316,7 @@
             Z: 0.966376603
           }
         }
-        ParentId: 7441449565595978500
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -471,25 +342,25 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 1583377878872922186
+        Id: 13090196050240099258
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: -105
+            X: -38.6044922
             Y: -25
-            Z: 51.0543213
+            Z: 66.4985046
           }
           Rotation {
-            Pitch: 73.4032364
+            Pitch: 28.4032307
             Yaw: 180
-            Roll: 90.0019608
+            Roll: 90.0019379
           }
           Scale {
             X: 0.500000536
@@ -497,7 +368,7 @@
             Z: 0.999998391
           }
         }
-        ParentId: 7441449565595978500
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -523,14 +394,14 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 2551751697362050389
+        Id: 16956027422747857400
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
@@ -549,7 +420,7 @@
             Z: 1.00000191
           }
         }
-        ParentId: 7441449565595978500
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -575,14 +446,14 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 14991175587132061556
+        Id: 6504683699589772052
         Name: "Urban Damaged Concrete Panel 01 - 8x2m"
         Transform {
           Location {
@@ -599,7 +470,7 @@
             Z: 0.66564703
           }
         }
-        ParentId: 7441449565595978500
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -629,14 +500,14 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 3850442276526157507
+        Id: 16163364253942437635
         Name: "Urban Damaged Concrete Panel 01 - 8x2m"
         Transform {
           Location {
@@ -653,7 +524,7 @@
             Z: 0.66564703
           }
         }
-        ParentId: 7441449565595978500
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -683,14 +554,14 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 5406445158672231396
+        Id: 5375281134774090792
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
@@ -708,7 +579,7 @@
             Z: 3.9
           }
         }
-        ParentId: 7441449565595978500
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -760,126 +631,31 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 17470141041164406739
-        Name: "RemoveGroup"
+        Id: 3941651173829076143
+        Name: "Door"
         Transform {
           Location {
+            X: -110
+            Y: -25
+            Z: 24.9999695
           }
           Rotation {
+            Yaw: 179.999954
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6820322636309427763
-        ChildIds: 1417970701244807635
-        ChildIds: 3038189125164338834
-        ChildIds: 8077678134563517096
-        ChildIds: 1596560761530698687
-        ChildIds: 1472724728316008872
-        ChildIds: 16313149900373270383
-        ChildIds: 3690993743046133893
-        ChildIds: 2857658011209546793
-        ChildIds: 812268270371318105
-        ChildIds: 8536225955894220910
-        ChildIds: 10291936138244099410
-        ChildIds: 10490557786517419738
-        ChildIds: 7380460709705223843
-        ChildIds: 12224280437951452570
-        ChildIds: 16083731016760707986
-        ChildIds: 1831868295195024228
-        ChildIds: 12204061702197343574
-        ChildIds: 5515289647044750906
-        ChildIds: 619793126964460501
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 1417970701244807635
-        Name: "Urban Damaged Concrete Pillar 01"
-        Transform {
-          Location {
-            X: -160
-            Y: 350
-            Z: 145
-          }
-          Rotation {
-            Yaw: -179.999985
-            Roll: -179.999985
-          }
-          Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 1
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7119371275391860163
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3038189125164338834
-        Name: "Window"
-        Transform {
-          Location {
-            X: -265
-            Y: -20
-            Z: 111.343201
-          }
-          Rotation {
-            Yaw: 178.912628
-          }
-          Scale {
-            X: 0.9
+            X: -1.7
             Y: 2
-            Z: 1.22295177
+            Z: 1.85375583
           }
         }
-        ParentId: 17470141041164406739
+        ParentId: 10091564087689710198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Prop_Handle:id"
@@ -924,273 +700,102 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
+              Mass: 500
             }
           }
         }
       }
       Objects {
-        Id: 8077678134563517096
-        Name: "Cube - Rounded Bottom-Aligned"
+        Id: 8561922875455895287
+        Name: "RemoveGroup"
         Transform {
           Location {
-            X: -25
-            Y: -25
-            Z: 315
           }
           Rotation {
           }
           Scale {
-            X: 1.39999986
-            Y: 0.5
-            Z: 1.2
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17478005048219626704
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 1596560761530698687
-        Name: "Cube - Rounded Bottom-Aligned"
-        Transform {
-          Location {
-            X: -170
-            Y: -25
-            Z: 290
-          }
-          Rotation {
-          }
-          Scale {
-            X: 3.9
-            Y: 0.5
+            X: 1
+            Y: 1
             Z: 1
           }
         }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
+        ParentId: 10636020785356020114
+        ChildIds: 4686428063324988071
+        ChildIds: 903748595446755992
+        ChildIds: 18422249947343514167
+        ChildIds: 4802065801062264543
+        ChildIds: 14986882079471981335
+        ChildIds: 3874430741451659942
+        ChildIds: 8229093651897651494
+        ChildIds: 4870771776144122135
+        ChildIds: 16081193329443172632
+        ChildIds: 16472936496546971031
+        ChildIds: 13465446480414397261
+        ChildIds: 1480768172300170744
+        ChildIds: 2886322956588820597
+        ChildIds: 14312497555525628154
+        ChildIds: 12905774558842449396
+        ChildIds: 17493774703780167173
+        ChildIds: 10358118289249373243
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 198353679974341757
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
-        Id: 1472724728316008872
-        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
-        Transform {
-          Location {
-            X: -290
-            Y: -25
-          }
-          Rotation {
-            Yaw: 179.004868
-            Roll: 90
-          }
-          Scale {
-            X: 0.5
-            Y: 1.08510745
-            Z: 1
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15295329821401516033
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16313149900373270383
-        Name: "Cube - Rounded Bottom-Aligned"
-        Transform {
-          Location {
-            X: -75
-            Y: -25
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.7
-            Y: 0.5
-            Z: 3.9
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 198353679974341757
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3690993743046133893
-        Name: "Cube - Rounded Bottom-Aligned"
-        Transform {
-          Location {
-            X: -330
-            Y: -25
-            Z: 315
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.1
-            Y: 0.5
-            Z: 1.2
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17478005048219626704
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 2857658011209546793
-        Name: "Cube - Rounded Bottom-Aligned"
+        Id: 4686428063324988071
+        Name: "Group"
         Transform {
           Location {
             X: -185
-            Y: -25
-            Z: 92.8259583
+            Y: -30
+            Z: -35.000061
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8561922875455895287
+        ChildIds: 11482565587261787107
+        ChildIds: 6170772506143912320
+        ChildIds: 13259485211216753986
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 11482565587261787107
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: -5
+            Y: 5
+            Z: 40
           }
           Rotation {
           }
           Scale {
             X: 1.9
-            Y: 0.6
+            Y: 0.4
             Z: 0.2
           }
         }
-        ParentId: 17470141041164406739
+        ParentId: 4686428063324988071
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1235,29 +840,111 @@
         }
       }
       Objects {
-        Id: 812268270371318105
-        Name: "Cube - Rounded Bottom-Aligned"
+        Id: 6170772506143912320
+        Name: "Pipe"
         Transform {
           Location {
-            X: -155
-            Y: -25
-            Z: -5
+            X: -45
+            Z: 160
           }
           Rotation {
+            Pitch: 90
           }
           Scale {
-            X: 3.70000076
-            Y: 0.5
-            Z: 1.1
+            X: 0.4
+            Y: 0.3
+            Z: 0.1
           }
         }
-        ParentId: 17470141041164406739
+        ParentId: 4686428063324988071
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11471689524597693722
+              Id: 16222007757601024097
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.125
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.125
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.134
+              G: 0.099428
+              B: 0.064856
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14077966582098404661
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13259485211216753986
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: -5
+            Y: 5
+            Z: 308.65683
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2
+            Y: 0.6
+            Z: 0.2
+          }
+        }
+        ParentId: 4686428063324988071
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16222007757601024097
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.684684
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.125
           }
         }
         Collidable_v2 {
@@ -1284,363 +971,25 @@
         }
       }
       Objects {
-        Id: 8536225955894220910
-        Name: "Urban Damaged Concrete Panel 01 - 8x2m"
+        Id: 903748595446755992
+        Name: "Urban Damaged Concrete Pillar 01"
         Transform {
           Location {
-            X: -105
-            Y: 175
-            Z: 357.401611
+            X: -185
+            Y: 350
+            Z: 150
           }
           Rotation {
             Yaw: -179.999985
+            Roll: -179.999985
           }
           Scale {
-            X: 0.900000036
+            X: 0.6
             Y: 0.6
-            Z: 0.6
+            Z: 1
           }
         }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14345153403763633307
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 10291936138244099410
-        Name: "Urban Damaged Concrete Panel 01 - 8x2m"
-        Transform {
-          Location {
-            X: -197.65332
-            Y: 185.244141
-            Z: 357.440796
-          }
-          Rotation {
-            Yaw: 94.5809479
-          }
-          Scale {
-            X: 1.02053833
-            Y: 0.491756201
-            Z: 0.66564703
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14345153403763633307
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 10490557786517419738
-        Name: "Large Wood Beam 8m"
-        Transform {
-          Location {
-            X: -50
-            Y: 25
-            Z: 340
-          }
-          Rotation {
-            Yaw: 89.9999619
-            Roll: -179.999969
-          }
-          Scale {
-            X: 1.2
-            Y: 1.80000043
-            Z: 3.9
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10451866999938289708
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.505
-              G: 0.341885
-              B: 0.178769991
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.684684
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.320231348
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.358
-              G: 0.358
-              B: 0.358
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3584007417411989222
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 7380460709705223843
-        Name: "Large Wood Beam 8m"
-        Transform {
-          Location {
-            X: -49.7373047
-            Y: 245.082031
-            Z: 340
-          }
-          Rotation {
-            Yaw: -90
-            Roll: 180
-          }
-          Scale {
-            X: 1.69898462
-            Y: -1.79999983
-            Z: 3.9
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10451866999938289708
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.505
-              G: 0.341885
-              B: 0.178769991
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.684684
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.320231348
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.358
-              G: 0.358
-              B: 0.358
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3584007417411989222
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12224280437951452570
-        Name: "Large Wood Beam 8m"
-        Transform {
-          Location {
-            X: -295
-            Y: 242.929688
-            Z: 340
-          }
-          Rotation {
-            Yaw: 89.9999619
-            Roll: -179.999969
-          }
-          Scale {
-            X: 1.94476426
-            Y: -1.50000226
-            Z: 3.9
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10451866999938289708
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.505
-              G: 0.341885
-              B: 0.178769991
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.684684
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.320231348
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.358
-              G: 0.358
-              B: 0.358
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17112985054030154012
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16083731016760707986
-        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
-        Transform {
-          Location {
-            X: -50
-            Y: -25.3027344
-          }
-          Rotation {
-            Yaw: 0.681879103
-            Roll: 90
-          }
-          Scale {
-            X: 0.5
-            Y: 0.536021829
-            Z: 1.00000024
-          }
-        }
-        ParentId: 17470141041164406739
+        ParentId: 8561922875455895287
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1657,7 +1006,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16076924560798306934
+            Id: 7119371275391860163
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1666,157 +1015,30 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 1831868295195024228
-        Name: "Large Wood Beam 8m"
-        Transform {
-          Location {
-            X: -165
-            Y: 285
-            Z: 340
-          }
-          Rotation {
-            Roll: 180
-          }
-          Scale {
-            X: 2.3
-            Y: -1.5
-            Z: 3.9
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10451866999938289708
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.505
-              G: 0.341885
-              B: 0.178769991
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.684684
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.320231348
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.358
-              G: 0.358
-              B: 0.358
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17112985054030154012
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12204061702197343574
-        Name: "Urban Damaged Concrete Chunk 03"
-        Transform {
-          Location {
-            X: 4.50488281
-            Y: -25
-            Z: 304.99823
-          }
-          Rotation {
-            Pitch: 5.90322971
-            Yaw: -179.999985
-            Roll: 90.0017548
-          }
-          Scale {
-            X: 0.500000477
-            Y: -0.714481711
-            Z: 1.01605296
-          }
-        }
-        ParentId: 17470141041164406739
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5483772166785938526
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5515289647044750906
+        Id: 18422249947343514167
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
+            X: -25
             Y: -25
             Z: 315
           }
           Rotation {
           }
           Scale {
-            X: 0.7
+            X: 1.39999986
             Y: 0.5
             Z: 1.2
           }
         }
-        ParentId: 17470141041164406739
+        ParentId: 8561922875455895287
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1842,29 +1064,30 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 619793126964460501
+        Id: 4802065801062264543
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -300
+            X: -170
             Y: -25
+            Z: 290
           }
           Rotation {
           }
           Scale {
-            X: 0.7
+            X: 3.9
             Y: 0.5
-            Z: 3.9
+            Z: 1
           }
         }
-        ParentId: 17470141041164406739
+        ParentId: 8561922875455895287
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1890,7 +1113,767 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 100
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14986882079471981335
+        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+        Transform {
+          Location {
+            X: -290
+            Y: -25
+          }
+          Rotation {
+            Yaw: 179.004868
+            Roll: 90
+          }
+          Scale {
+            X: 0.5
+            Y: 1.08510745
+            Z: 1
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15295329821401516033
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3874430741451659942
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: -75
+            Y: -25
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.7
+            Y: 0.5
+            Z: 3.9
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 198353679974341757
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8229093651897651494
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: -330
+            Y: -25
+            Z: 315
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.1
+            Y: 0.5
+            Z: 1.2
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17478005048219626704
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4870771776144122135
+        Name: "Urban Damaged Concrete Panel 01 - 8x2m"
+        Transform {
+          Location {
+            X: -105
+            Y: 175
+            Z: 357.401611
+          }
+          Rotation {
+            Yaw: -179.999985
+          }
+          Scale {
+            X: 0.900000036
+            Y: 0.6
+            Z: 0.6
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14345153403763633307
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16081193329443172632
+        Name: "Urban Damaged Concrete Panel 01 - 8x2m"
+        Transform {
+          Location {
+            X: -197.65332
+            Y: 185.244141
+            Z: 357.440796
+          }
+          Rotation {
+            Yaw: 94.5809479
+          }
+          Scale {
+            X: 1.02053833
+            Y: 0.491756201
+            Z: 0.66564703
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14345153403763633307
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16472936496546971031
+        Name: "Large Wood Beam 8m"
+        Transform {
+          Location {
+            X: -50
+            Y: 25
+            Z: 340
+          }
+          Rotation {
+            Yaw: 89.9999619
+            Roll: -179.999969
+          }
+          Scale {
+            X: 1.2
+            Y: 1.80000043
+            Z: 3.9
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10451866999938289708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.505
+              G: 0.341885
+              B: 0.178769991
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.684684
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.320231348
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.358
+              G: 0.358
+              B: 0.358
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3584007417411989222
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13465446480414397261
+        Name: "Large Wood Beam 8m"
+        Transform {
+          Location {
+            X: -49.7373047
+            Y: 245.082031
+            Z: 340
+          }
+          Rotation {
+            Yaw: -90
+            Roll: 180
+          }
+          Scale {
+            X: 1.69898462
+            Y: -1.79999983
+            Z: 3.9
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10451866999938289708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.505
+              G: 0.341885
+              B: 0.178769991
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.684684
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.320231348
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.358
+              G: 0.358
+              B: 0.358
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3584007417411989222
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1480768172300170744
+        Name: "Large Wood Beam 8m"
+        Transform {
+          Location {
+            X: -295
+            Y: 242.929688
+            Z: 340
+          }
+          Rotation {
+            Yaw: 89.9999619
+            Roll: -179.999969
+          }
+          Scale {
+            X: 1.94476426
+            Y: -1.50000226
+            Z: 3.9
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10451866999938289708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.505
+              G: 0.341885
+              B: 0.178769991
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.684684
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.320231348
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.358
+              G: 0.358
+              B: 0.358
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17112985054030154012
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 2886322956588820597
+        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+        Transform {
+          Location {
+            X: -50
+            Y: -25.3027344
+          }
+          Rotation {
+            Yaw: 0.681879103
+            Roll: 90
+          }
+          Scale {
+            X: 0.5
+            Y: 0.536021829
+            Z: 1.00000024
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16076924560798306934
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14312497555525628154
+        Name: "Large Wood Beam 8m"
+        Transform {
+          Location {
+            X: -165
+            Y: 285
+            Z: 340
+          }
+          Rotation {
+            Roll: 180
+          }
+          Scale {
+            X: 2.3
+            Y: -1.5
+            Z: 3.9
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10451866999938289708
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.505
+              G: 0.341885
+              B: 0.178769991
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.684684
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.320231348
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.358
+              G: 0.358
+              B: 0.358
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17112985054030154012
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12905774558842449396
+        Name: "Urban Damaged Concrete Chunk 03"
+        Transform {
+          Location {
+            X: 4.50488281
+            Y: -25
+            Z: 304.99823
+          }
+          Rotation {
+            Pitch: 5.90322971
+            Yaw: -179.999985
+            Roll: 90.0017548
+          }
+          Scale {
+            X: 0.500000477
+            Y: -0.714481711
+            Z: 1.01605296
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5483772166785938526
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17493774703780167173
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            Y: -25
+            Z: 315
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.7
+            Y: 0.5
+            Z: 1.2
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17478005048219626704
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10358118289249373243
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: -300
+            Y: -25
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.7
+            Y: 0.5
+            Z: 3.9
+          }
+        }
+        ParentId: 8561922875455895287
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 198353679974341757
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
               LinearDamping: 0.01
             }
           }
@@ -1904,6 +1887,33 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_urb_dest_concrete_chunk_003_ref"
+      }
+    }
+    Assets {
+      Id: 14345153403763633307
+      Name: "Urban Damaged Concrete Chunk 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_concrete_chunk_002_ref"
+      }
+    }
+    Assets {
+      Id: 17112985054030154012
+      Name: "Urban Plank Debris 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urban_destruction_debris_plank_02_ref"
+      }
+    }
+    Assets {
+      Id: 10451866999938289708
+      Name: "Wood Raw White"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_white_001_uv"
       }
     }
     Assets {
@@ -1934,30 +1944,12 @@
       }
     }
     Assets {
-      Id: 14345153403763633307
-      Name: "Urban Damaged Concrete Chunk 02"
+      Id: 14077966582098404661
+      Name: "Pipe - 4-Sided Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_urb_dest_concrete_chunk_002_ref"
-      }
-    }
-    Assets {
-      Id: 17112985054030154012
-      Name: "Urban Plank Debris 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urban_destruction_debris_plank_02_ref"
-      }
-    }
-    Assets {
-      Id: 10451866999938289708
-      Name: "Wood Raw White"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_white_001_uv"
+        AssetId: "sm_pipe_4_sided_thick_001"
       }
     }
     Assets {
