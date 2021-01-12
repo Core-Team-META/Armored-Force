@@ -7,7 +7,7 @@
       RootId: 15377094346368301365
       Objects {
         Id: 15377094346368301365
-        Name: "TW2_BuildingCornerWindows_Destructible"
+        Name: "TW2_BuildingCornerWindow_Destructible"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 156679064320070681
+        ParentId: 4781671109827199097
         ChildIds: 1247727060899221878
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43,6 +43,8 @@
         }
         ParentId: 15377094346368301365
         ChildIds: 13142571390758031731
+        ChildIds: 3855996387093809643
+        ChildIds: 10182195929329718316
         ChildIds: 12608501637938201600
         ChildIds: 4043604123443874835
         Collidable_v2 {
@@ -210,6 +212,108 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 3855996387093809643
+        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+        Transform {
+          Location {
+            X: -392.47168
+            Y: -25
+          }
+          Rotation {
+            Pitch: 89.0045547
+            Yaw: 90.0011826
+            Roll: 0.00157320616
+          }
+          Scale {
+            X: 0.2
+            Y: 1.1
+            Z: 0.900000095
+          }
+        }
+        ParentId: 1247727060899221878
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15295329821401516033
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10182195929329718316
+        Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+        Transform {
+          Location {
+            X: 22.5283203
+            Y: -25
+          }
+          Rotation {
+            Pitch: 89.0029831
+            Yaw: 180
+            Roll: 0.00202934723
+          }
+          Scale {
+            X: 0.2
+            Y: 1.1
+            Z: 0.900000095
+          }
+        }
+        ParentId: 1247727060899221878
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15295329821401516033
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 500
+              LinearDamping: 0.01
+            }
+          }
         }
       }
       Objects {
@@ -2359,6 +2463,15 @@
       }
     }
     Assets {
+      Id: 15295329821401516033
+      Name: "Urban Damaged Concrete Panel 01 - 2x4m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dmg_concrete_panel_001_2x4m_ref"
+      }
+    }
+    Assets {
       Id: 630716509692050905
       Name: "Cabinet Door - Upper Full"
       PlatformAssetType: 1
@@ -2437,15 +2550,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_rounded_001"
-      }
-    }
-    Assets {
-      Id: 15295329821401516033
-      Name: "Urban Damaged Concrete Panel 01 - 2x4m"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_urb_dmg_concrete_panel_001_2x4m_ref"
       }
     }
     Assets {
