@@ -5,6 +5,7 @@ Objects {
   Name: "TANK_US_M24Chaffee"
   Transform {
     Location {
+      Z: 285.249512
     }
     Rotation {
     }
