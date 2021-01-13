@@ -1281,9 +1281,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -5.18802
-            Yaw: -45.3679199
-            Roll: 6.35324335
+            Pitch: -5.37115479
+            Yaw: -99.428894
+            Roll: 7.98281384
           }
         }
         Overrides {
@@ -1339,17 +1339,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9226.33594
-            Y: -21062.8574
-            Z: 1375.73645
+            X: 8484.76074
+            Y: -20850.8125
+            Z: 1296.6626
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -5.1880188
-            Yaw: -45.3679504
-            Roll: 6.35325336
+            Pitch: 4.06787586
+            Yaw: -43.3724976
+            Roll: 12.1713934
           }
         }
         Overrides {

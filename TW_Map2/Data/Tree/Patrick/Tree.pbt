@@ -22,6 +22,7 @@ Objects {
   ChildIds: 14289865206044482541
   ChildIds: 12292453859044888389
   ChildIds: 2171850401415455715
+  ChildIds: 9262016606356518002
   UnregisteredParameters {
     Overrides {
       Name: "cs:TopSpeed"
@@ -75,6 +76,43 @@ Objects {
     SocketName: "root"
     PickupTrigger {
       SelfId: 14005818317646968612
+    }
+  }
+}
+Objects {
+  Id: 9262016606356518002
+  Name: "PickupTrigger"
+  Transform {
+    Location {
+      X: 3035.68799
+      Y: -3744.1687
+      Z: 38.6479187
+    }
+    Rotation {
+    }
+    Scale {
+      X: 9.79999924
+      Y: 6.1
+      Z: 1.9
+    }
+  }
+  ParentId: 12681746208174724441
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Drive Tank"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
     }
   }
 }

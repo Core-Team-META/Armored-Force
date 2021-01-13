@@ -28,7 +28,7 @@
       }
       Overrides {
         Name: "opacity"
-        Float: 0.84724617
+        Float: 0.7687
       }
       Overrides {
         Name: "opacity distance"
@@ -48,7 +48,7 @@
       }
       Overrides {
         Name: "normal foam brightness"
-        Float: 0.233154356
+        Float: 0.740137577
       }
       Overrides {
         Name: "foam shape max"
@@ -60,7 +60,7 @@
       }
       Overrides {
         Name: "foam shift"
-        Float: 0.837304354
+        Float: 0.237494707
       }
       Overrides {
         Name: "material_scale"
@@ -95,6 +95,10 @@
           Y: -0.5
           Z: 0.2
         }
+      }
+      Overrides {
+        Name: "foam tightness"
+        Float: 13.2318192
       }
     }
     Assets {
