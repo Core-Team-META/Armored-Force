@@ -2,7 +2,7 @@
 RootId: 9479035303955472683
 Objects {
   Id: 15380372042191438318
-  Name: "Building&Fences"
+  Name: "Buildings&Fences"
   Transform {
     Location {
     }
@@ -23,33 +23,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Building_Fences"
-  }
-}
-Objects {
-  Id: 15982705569383717904
-  Name: "BushesBG"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9479035303955472683
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "BushesBG"
+    FilePartitionName: "Buildings_Fences"
   }
 }
 Objects {
@@ -342,7 +316,7 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 15555
+      X: 12281.7939
       Y: 25535
       Z: -1392.29468
     }
@@ -350,8 +324,8 @@ Objects {
       Yaw: -90
     }
     Scale {
-      X: 0.1
-      Y: 288.900208
+      X: 0.0999522805
+      Y: 155.358398
       Z: 38.6000023
     }
   }
@@ -610,6 +584,8 @@ Objects {
   ChildIds: 6640434022635323439
   ChildIds: 1348042603267230529
   ChildIds: 16998651119191233028
+  ChildIds: 231258811282915152
+  ChildIds: 18128386632431353967
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -617,6 +593,146 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 18128386632431353967
+  Name: "Curling Dust VFX"
+  Transform {
+    Location {
+      X: 11239.7383
+      Y: -5342.25635
+      Z: 302.120728
+    }
+    Rotation {
+      Yaw: 141.68483
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 2722352427540994723
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Debris Density"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Debris Scale Multiplier"
+      Float: 0.20749855
+    }
+    Overrides {
+      Name: "bp:Dust Scale Multiplier"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Dust Density"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Enable Debris"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Burst"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Sort Priority Adjustment"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14850503091791563201
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 231258811282915152
+  Name: "Curling Dust VFX"
+  Transform {
+    Location {
+      X: 12469.9521
+      Y: 4998.67432
+      Z: -228.704773
+    }
+    Rotation {
+      Yaw: 141.684814
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 2722352427540994723
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Debris Density"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Debris Scale Multiplier"
+      Float: 0.20749855
+    }
+    Overrides {
+      Name: "bp:Dust Scale Multiplier"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Dust Density"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Enable Debris"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Burst"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Sort Priority Adjustment"
+      Int: -10
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14850503091791563201
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
   }
 }
 Objects {
@@ -694,16 +810,16 @@ Objects {
   Name: "Curling Dust VFX"
   Transform {
     Location {
-      X: 11147.7402
-      Y: -8668.16602
-      Z: 162.11496
+      X: 9749.53
+      Y: -9899.17
+      Z: 436.401581
     }
     Rotation {
       Yaw: 118.313515
     }
     Scale {
-      X: 20
-      Y: 20
+      X: 20.0000038
+      Y: 15.4798326
       Z: 20
     }
   }
@@ -1177,6 +1293,13 @@ Objects {
   ChildIds: 589769731802057463
   ChildIds: 12431841449914873907
   ChildIds: 2104053079149241550
+  ChildIds: 7954057201467139205
+  ChildIds: 14201811299383802746
+  ChildIds: 14017260423254634164
+  ChildIds: 6004585903457865415
+  ChildIds: 8261682761670252038
+  ChildIds: 13033183977877271703
+  ChildIds: 14198052177298403550
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -1184,6 +1307,265 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 14198052177298403550
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  Transform {
+    Location {
+      X: -2971.07715
+      Y: -22559.2539
+      Z: 802.256226
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12870871938003353252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8950601138483032443
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 13033183977877271703
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  Transform {
+    Location {
+      X: 13850.6699
+      Y: -15418.166
+      Z: 654.013306
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12870871938003353252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8950601138483032443
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 8261682761670252038
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  Transform {
+    Location {
+      X: 13341.9551
+      Y: 692.981445
+      Z: 259.310913
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12870871938003353252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8950601138483032443
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 6004585903457865415
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  Transform {
+    Location {
+      X: 11199.8301
+      Y: 11854.8516
+      Z: -174.632446
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12870871938003353252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8950601138483032443
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 14017260423254634164
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  Transform {
+    Location {
+      X: -3373.4209
+      Y: 20788.8359
+      Z: 1364.51416
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12870871938003353252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8950601138483032443
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 14201811299383802746
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  Transform {
+    Location {
+      X: -15166.6572
+      Y: 11288.5957
+      Z: 559.462402
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12870871938003353252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8950601138483032443
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 7954057201467139205
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  Transform {
+    Location {
+      X: -15317.3301
+      Y: -5442.09326
+      Z: 559.462891
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12870871938003353252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8950601138483032443
+    }
+    AutoPlay: true
+    Repeat: true
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsAttenuationEnabled: true
   }
 }
 Objects {
@@ -1220,7 +1602,6 @@ Objects {
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
-    IsSpatializationEnabled: true
     IsAttenuationEnabled: true
   }
 }
@@ -1399,6 +1780,7 @@ Objects {
     }
   }
   ParentId: 9479035303955472683
+  ChildIds: 3930881330401197348
   ChildIds: 11868828478564595559
   ChildIds: 950092805543837029
   ChildIds: 12939099977380515231
@@ -1981,6 +2363,49 @@ Objects {
   Blueprint {
     BlueprintAsset {
       Id: 2224571462023946700
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 3930881330401197348
+  Name: "Depth of Field Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17316350581310880277
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Focal Distance"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Depth Blur Distance For 50%"
+      Float: 200
+    }
+    Overrides {
+      Name: "bp:Depth Blur Radius"
+      Float: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16863704231770047354
     }
     TeamSettings {
     }

@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 16863704231770047354
+  Name: "Depth of Field Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_DOF"
+  }
+}
+Assets {
   Id: 14965187716436898829
   Name: "Underwater Post Process"
   PlatformAssetType: 20

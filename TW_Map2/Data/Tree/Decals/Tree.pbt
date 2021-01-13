@@ -153,6 +153,7 @@ Objects {
   ChildIds: 9484226605887089707
   ChildIds: 13479518751584773668
   ChildIds: 16709968900146131088
+  ChildIds: 11872364448746686968
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -161,6 +162,54 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 11872364448746686968
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 18269.8496
+      Y: -9944.69922
+      Z: -169.859802
+    }
+    Rotation {
+      Pitch: 6.42911339
+      Yaw: -77.9883423
+      Roll: 2.18849
+    }
+    Scale {
+      X: 2.95634699
+      Y: 19.7666168
+      Z: 1.78432727
+    }
+  }
+  ParentId: 9639508352816994492
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.684
+        G: 0.550574422
+        B: 0.320112
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
   }
 }
 Objects {
@@ -744,14 +793,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 12489.4531
-      Y: 16677.3164
-      Z: -757.40332
+      X: 12512.6123
+      Y: 16646.2715
+      Z: -814.689453
     }
     Rotation {
-      Pitch: 3.32560515
-      Yaw: 128.63031
-      Roll: -1.3449707
+      Pitch: 0.031432528
+      Yaw: 128.707199
+      Roll: -1.3427124
     }
     Scale {
       X: 2.95634699
@@ -792,9 +841,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 16986.3633
-      Y: 16332.249
-      Z: -597.937561
+      X: 17102.2461
+      Y: 16187.5049
+      Z: -622.705
     }
     Rotation {
       Pitch: 3.51061463
@@ -888,12 +937,13 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 18894.3359
-      Y: 4325.18457
-      Z: -397.174744
+      X: 18911.0469
+      Y: 4237.13086
+      Z: -440.483887
     }
     Rotation {
-      Yaw: -79.2546692
+      Pitch: -5.94732666
+      Yaw: -79.2542419
     }
     Scale {
       X: 2.95634627
@@ -1125,9 +1175,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 24089.9766
-      Y: -20787.7754
-      Z: -163.935364
+      X: 24089.1895
+      Y: -20788.625
+      Z: -201.00592
     }
     Rotation {
       Pitch: -1.75219727
@@ -1221,19 +1271,19 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 22696.7891
-      Y: -14056.5391
-      Z: -56.5514221
+      X: 23696.8047
+      Y: -13108.708
+      Z: -83.1568604
     }
     Rotation {
-      Pitch: 5.18554783
-      Yaw: -52.4739075
-      Roll: 1.93027222
+      Pitch: -12.0238647
+      Yaw: -53.0583191
+      Roll: 1.96554565
     }
     Scale {
-      X: 2.95634699
-      Y: 19.7666168
-      Z: 1.78432727
+      X: 1.82156634
+      Y: 12.1792889
+      Z: 1.09942114
     }
   }
   ParentId: 9639508352816994492
@@ -1365,9 +1415,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 23859.9258
-      Y: -11219.8633
-      Z: -159.30835
+      X: 23860.8809
+      Y: -11222.9727
+      Z: -192.895966
     }
     Rotation {
       Pitch: 5.53226852
@@ -1459,14 +1509,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 16463.3984
-      Y: -11987.3
-      Z: 35.6324463
+      X: 16736.084
+      Y: -12358.0566
+      Z: -76.1140137
     }
     Rotation {
       Pitch: 5.96556187
-      Yaw: -52.3053589
-      Roll: 3.93361211
+      Yaw: -52.3054199
+      Roll: 1.72999597
     }
     Scale {
       X: 2.95634699
@@ -1555,14 +1605,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 23679.7148
-      Y: -7157.89893
-      Z: -9.60012817
+      X: 23688.5234
+      Y: -7178.5708
+      Z: -193.843414
     }
     Rotation {
       Pitch: 6.9293766
-      Yaw: -71.7154236
-      Roll: 1.73310316
+      Yaw: -71.7151489
+      Roll: 1.65192199
     }
     Scale {
       X: 2.95634699
@@ -1603,9 +1653,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 13215.9414
-      Y: -8174.95898
-      Z: 182.062378
+      X: 12919.6172
+      Y: -8334.60352
+      Z: 82.2126465
     }
     Rotation {
       Pitch: 1.97683418
@@ -1613,8 +1663,8 @@ Objects {
       Roll: 0.995741189
     }
     Scale {
-      X: 2.95634699
-      Y: 19.7666168
+      X: 2.95634842
+      Y: 15.2991991
       Z: 1.78432727
     }
   }
@@ -3517,7 +3567,7 @@ Objects {
     Location {
       X: 5102.93604
       Y: 14512.54
-      Z: -660.211914
+      Z: -642.158569
     }
     Rotation {
       Yaw: -82.5146484
@@ -3563,7 +3613,7 @@ Objects {
     Location {
       X: 7524.30859
       Y: 14830.6895
-      Z: -681.55
+      Z: -745.532
     }
     Rotation {
       Yaw: -82.5146484
@@ -3607,14 +3657,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 8206.6748
-      Y: 16304.2686
-      Z: -606.083374
+      X: 8205.18066
+      Y: 16309
+      Z: -642.662231
     }
     Rotation {
       Pitch: 7.72437
-      Yaw: 106.756111
-      Roll: 0.620456934
+      Yaw: 106.756142
+      Roll: -0.103546143
     }
     Scale {
       X: 1.57145238
@@ -3703,9 +3753,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 13497.2451
-      Y: 15418.8301
-      Z: -782.62
+      X: 13613.1279
+      Y: 15274.0859
+      Z: -834.819397
     }
     Rotation {
       Pitch: -3.23492432
@@ -3799,19 +3849,19 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 17880.4219
-      Y: 15215.7217
-      Z: -727.108948
+      X: 10638.1064
+      Y: 10932.0342
+      Z: -332.276672
     }
     Rotation {
-      Pitch: 3.51062131
-      Yaw: 128.689743
-      Roll: -0.125915527
+      Pitch: 11.3597517
+      Yaw: 128.670868
+      Roll: -2.49984741
     }
     Scale {
-      X: 2.95634699
-      Y: 19.7666168
-      Z: 1.78432727
+      X: 1.23019671
+      Y: 13.8114557
+      Z: 1.24675655
     }
   }
   ParentId: 9639508352816994492

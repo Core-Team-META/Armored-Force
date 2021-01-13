@@ -1,6 +1,79 @@
 ﻿Name: "Rocks"
 RootId: 9408846036456260919
 Objects {
+  Id: 9415332665710681694
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: 3910.06641
+      Y: -39218.9375
+      Z: 950.905518
+    }
+    Rotation {
+      Pitch: 0.896434963
+      Yaw: -174.170166
+      Roll: 11.7988987
+    }
+    Scale {
+      X: 15.1004505
+      Y: 27.7158165
+      Z: 51.9543266
+    }
+  }
+  ParentId: 9408846036456260919
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11054325002036881179
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.70147657
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.46666098
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.686000049
+        G: 0.410319477
+        B: 0.310072
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14954943872139591724
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 9257962006137603916
   Name: "Rock Flat 01"
   Transform {
@@ -4640,9 +4713,9 @@ Objects {
       Z: 793.124
     }
     Rotation {
-      Pitch: -2.85717773
-      Yaw: -75.9268799
-      Roll: 5.03470469
+      Pitch: 3.56526971
+      Yaw: -75.3607178
+      Roll: 5.03826284
     }
     Scale {
       X: 11.9517689
@@ -10243,9 +10316,9 @@ Objects {
       Z: 647.237366
     }
     Rotation {
-      Pitch: -9.15227509
+      Pitch: -9.15228271
       Yaw: 19.8656578
-      Roll: -72.8317642
+      Roll: -72.8317566
     }
     Scale {
       X: 3.34250402

@@ -339,6 +339,7 @@ Objects {
   ChildIds: 16825431772165469153
   ChildIds: 3949982446268699360
   ChildIds: 15277915017078118781
+  ChildIds: 12837808575886035987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -347,6 +348,63 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 12837808575886035987
+  Name: "Plane 1m"
+  Transform {
+    Location {
+      X: 1956.79297
+      Y: -5846.57617
+      Z: -552.273315
+    }
+    Rotation {
+      Pitch: -9.83563232
+      Yaw: 50.7746086
+      Roll: 6.47120953
+    }
+    Scale {
+      X: 11.5000029
+      Y: 17.5
+      Z: 1
+    }
+  }
+  ParentId: 16498872326454998765
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16060214784296519809
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
