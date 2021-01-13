@@ -21,6 +21,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -57,6 +68,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -94,6 +116,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -131,6 +164,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -167,6 +211,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -204,6 +259,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -241,6 +307,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -278,6 +355,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -315,6 +403,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -352,6 +451,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -389,6 +499,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -426,6 +547,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -463,6 +595,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -500,6 +643,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -537,6 +691,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -572,6 +737,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -607,6 +783,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -642,6 +829,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -677,6 +875,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -713,6 +922,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -748,6 +968,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -783,6 +1014,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -820,6 +1062,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -857,6 +1110,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -892,6 +1156,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -931,10 +1206,10 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 0.0310000014
-        G: 0.028063463
-        B: 0.013392
-        A: 1
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
       }
     }
   }
@@ -973,6 +1248,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1009,6 +1295,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1044,6 +1341,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1070,9 +1378,9 @@ Objects {
       Z: -185.215576
     }
     Rotation {
-      Pitch: -5.51642227
+      Pitch: -5.51641846
       Yaw: 21.8219223
-      Roll: -2.20437646
+      Roll: -2.20437622
     }
     Scale {
       X: 1.86292672
@@ -1081,6 +1389,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1107,7 +1426,7 @@ Objects {
       Z: -185.215576
     }
     Rotation {
-      Pitch: -5.9393
+      Pitch: -5.93930054
     }
     Scale {
       X: 1.86292624
@@ -1116,43 +1435,17 @@ Objects {
     }
   }
   ParentId: 9598386644266971480
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.00500000035
+        G: 0.00500000035
+        B: 0.00500000035
+        A: 0.515000045
+      }
     }
   }
-}
-Objects {
-  Id: 17084750167111545714
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 5470.92773
-      Y: -3064.57056
-      Z: 82.0138245
-    }
-    Rotation {
-      Pitch: 1.04540825
-      Yaw: -70.1854935
-      Roll: -0.907409489
-    }
-    Scale {
-      X: 5.61900473
-      Y: 3.25310779
-      Z: 0.801447749
-    }
-  }
-  ParentId: 9598386644266971480
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 17246754151924769898
-  Name: "Fantasy Castle Floor 03 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_floor_003_4m_ref"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -17,12 +8,21 @@ Assets {
   }
 }
 Assets {
-  Id: 16249977990736241835
-  Name: "Rock Block 02"
-  PlatformAssetType: 1
+  Id: 14965187716436898829
+  Name: "Underwater Post Process"
+  PlatformAssetType: 20
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_007"
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_water"
+  }
+}
+Assets {
+  Id: 14850503091791563201
+  Name: "Curling Dust VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_base_curl"
   }
 }
 Assets {
@@ -44,12 +44,30 @@ Assets {
   }
 }
 Assets {
+  Id: 8950601138483032443
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_desert_sandwind_01_Cue_ref"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 3991273143568110843
+  Name: "Nature Beach Large Waves Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_nature_beach_large_waves_loop_01_Cue_ref"
   }
 }
 Assets {
