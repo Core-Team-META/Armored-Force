@@ -7,7 +7,7 @@
       RootId: 15377094346368301365
       Objects {
         Id: 15377094346368301365
-        Name: "TW2_BuildingCornerWindow_Destructible"
+        Name: "TW2_BuildingCornerWindows_Destructible"
         Transform {
           Scale {
             X: 1
@@ -43,8 +43,8 @@
         }
         ParentId: 15377094346368301365
         ChildIds: 13142571390758031731
-        ChildIds: 3855996387093809643
-        ChildIds: 10182195929329718316
+        ChildIds: 13205135578063653875
+        ChildIds: 915716412042286952
         ChildIds: 12608501637938201600
         ChildIds: 4043604123443874835
         Collidable_v2 {
@@ -215,22 +215,22 @@
         }
       }
       Objects {
-        Id: 3855996387093809643
+        Id: 13205135578063653875
         Name: "Urban Damaged Concrete Panel 01 - 2x4m"
         Transform {
           Location {
-            X: -392.47168
+            X: 25.9189453
             Y: -25
           }
           Rotation {
-            Pitch: 89.0045547
-            Yaw: 90.0011826
-            Roll: 0.00157320616
+            Pitch: 89.0033722
+            Yaw: -179.998581
+            Roll: 0.0020560727
           }
           Scale {
-            X: 0.2
+            X: 0.3
             Y: 1.1
-            Z: 0.900000095
+            Z: 0.900000036
           }
         }
         ParentId: 1247727060899221878
@@ -259,29 +259,29 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
         }
       }
       Objects {
-        Id: 10182195929329718316
+        Id: 915716412042286952
         Name: "Urban Damaged Concrete Panel 01 - 2x4m"
         Transform {
           Location {
-            X: 22.5283203
+            X: -389.577148
             Y: -25
           }
           Rotation {
-            Pitch: 89.0029831
-            Yaw: 180
-            Roll: 0.00202934723
+            Pitch: 89.0049438
+            Yaw: 90.0023575
+            Roll: 0.00226149149
           }
           Scale {
-            X: 0.2
-            Y: 1.1
-            Z: 0.900000095
+            X: 0.3
+            Y: 1.09051323
+            Z: 0.900000036
           }
         }
         ParentId: 1247727060899221878
@@ -310,7 +310,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -345,7 +345,6 @@
         ChildIds: 9925734982004064802
         ChildIds: 16013184862712300535
         ChildIds: 9467001014664407925
-        ChildIds: 6212963495077461814
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -391,9 +390,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.327000022
-              G: 0.242634013
-              B: 0.158268
+              R: 0.212000012
+              G: 0.157304
+              B: 0.102608
               A: 1
             }
           }
@@ -459,15 +458,6 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 0.125
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.327000022
-              G: 0.242634013
-              B: 0.158268
-              A: 1
-            }
           }
         }
         Collidable_v2 {
@@ -551,7 +541,7 @@
         Transform {
           Location {
             X: 25
-            Y: 274.999969
+            Y: 296.376953
             Z: 346.134888
           }
           Rotation {
@@ -861,13 +851,13 @@
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: 23.5703125
-            Y: 338.023407
+            X: 23.5712891
+            Y: 338.023438
             Z: 222.375336
           }
           Rotation {
-            Pitch: 16.6511459
-            Yaw: 91.8619156
+            Pitch: 16.6511936
+            Yaw: 90
             Roll: 90
           }
           Scale {
@@ -1172,58 +1162,6 @@
         }
       }
       Objects {
-        Id: 6212963495077461814
-        Name: "Urban Damaged Concrete Chunk 03"
-        Transform {
-          Location {
-            X: -339.098633
-            Y: -25.3984375
-            Z: 194.296051
-          }
-          Rotation {
-            Pitch: 1.01149631
-            Yaw: 180
-            Roll: 90
-          }
-          Scale {
-            X: 0.37897408
-            Y: -0.540052831
-            Z: 1.00000179
-          }
-        }
-        ParentId: 12608501637938201600
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11471689524597693722
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5483772166785938526
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
         Id: 4043604123443874835
         Name: "RemoveGroup"
         Transform {
@@ -1252,6 +1190,7 @@
         ChildIds: 13725172266961639950
         ChildIds: 7782559807890586472
         ChildIds: 16241664315240246225
+        ChildIds: 2357758658126641692
         ChildIds: 13955732391063955864
         ChildIds: 10983100272454156461
         ChildIds: 8445398121107968679
@@ -1313,7 +1252,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1354,9 +1293,9 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.327000022
-              G: 0.242634013
-              B: 0.158268
+              R: 0.212000012
+              G: 0.157304
+              B: 0.102608
               A: 1
             }
           }
@@ -1382,7 +1321,6 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
             }
           }
         }
@@ -1427,7 +1365,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1476,7 +1414,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1524,7 +1462,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1542,7 +1480,7 @@
           Rotation {
           }
           Scale {
-            X: 3.86048913
+            X: 4.3
             Y: 0.5
             Z: 1.1
           }
@@ -1564,7 +1502,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 17478005048219626704
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1573,7 +1511,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1593,7 +1531,7 @@
           }
           Scale {
             X: 0.5
-            Y: 1.08510745
+            Y: 1.07897222
             Z: 1
           }
         }
@@ -1623,7 +1561,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1671,7 +1609,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1682,14 +1620,14 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -320
+            X: -329.577148
             Y: -25
             Z: 315
           }
           Rotation {
           }
           Scale {
-            X: 0.7
+            X: 1
             Y: 0.5
             Z: 1.2
           }
@@ -1720,7 +1658,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1763,15 +1701,6 @@
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 0.125
           }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.327000022
-              G: 0.242634013
-              B: 0.158268
-              A: 1
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1790,7 +1719,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1801,14 +1730,14 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -165
+            X: -154.577148
             Y: -25
             Z: -5
           }
           Rotation {
           }
           Scale {
-            X: 4.3
+            X: 4.1
             Y: 0.5
             Z: 1.1
           }
@@ -1839,7 +1768,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1889,7 +1818,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1939,7 +1868,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -1950,17 +1879,17 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: 25
-            Y: 175
-            Z: 75
+            X: 25.4228516
+            Y: 166.021484
+            Z: 10.4332428
           }
           Rotation {
             Yaw: 89.9999619
           }
           Scale {
-            X: -2.8
+            X: -2.60000014
             Y: 0.5
-            Z: 3.20000029
+            Z: 3.60000014
           }
         }
         ParentId: 4043604123443874835
@@ -1989,7 +1918,57 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 2357758658126641692
+        Name: "Cube - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: 25
+            Y: 165
+            Z: 275
+          }
+          Rotation {
+            Yaw: 89.9999466
+          }
+          Scale {
+            X: -4.3
+            Y: 0.5
+            Z: 1.1
+          }
+        }
+        ParentId: 4043604123443874835
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17478005048219626704
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -2000,17 +1979,17 @@
         Name: "Urban Damaged Concrete Panel 01 - 2x4m"
         Transform {
           Location {
-            X: 25.7832031
+            X: 25.4228516
             Y: 295
           }
           Rotation {
-            Yaw: -88.3411255
+            Yaw: -90
             Roll: 90
           }
           Scale {
-            X: -0.404256791
-            Y: 0.542055905
-            Z: 1.00000191
+            X: -0.5
+            Y: 0.5
+            Z: 1
           }
         }
         ParentId: 4043604123443874835
@@ -2039,7 +2018,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -2093,7 +2072,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -2147,7 +2126,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -2224,7 +2203,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -2301,7 +2280,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -2378,7 +2357,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }
@@ -2455,7 +2434,7 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
-              Mass: 500
+              Mass: 100
               LinearDamping: 0.01
             }
           }

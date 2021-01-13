@@ -143,6 +143,10 @@
             Name: "bp:Particle Scale Multiplier"
             Float: 7.18631554
           }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.1
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

@@ -1158,7 +1158,7 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 27725.3418
+      X: 27404.8965
       Y: -19885.2852
       Z: -652.064636
     }
@@ -1196,9 +1196,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.686000049
-        G: 0.410319477
-        B: 0.310072
+        R: 0.535
+        G: 0.320001334
+        B: 0.24182
         A: 1
       }
     }
@@ -6172,14 +6172,14 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 14973.958
+      X: 15409.6992
       Y: -25976.8633
       Z: -96.1500244
     }
     Rotation {
       Pitch: 1.46830618
-      Yaw: 138.731522
-      Roll: 92.0698547
+      Yaw: 145.447693
+      Roll: 92.0697937
     }
     Scale {
       X: 7.06494331
@@ -12367,7 +12367,7 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 25315.1719
+      X: 25035.5566
       Y: -17756.3633
       Z: 478.517944
     }
@@ -12805,13 +12805,13 @@ Objects {
   Transform {
     Location {
       X: -3817.84912
-      Y: -26186.4375
+      Y: -26185
       Z: 468.411
     }
     Rotation {
       Pitch: 0.615509272
-      Yaw: -172.15097
-      Roll: 89.1021805
+      Yaw: 178.351379
+      Roll: 89.1021652
     }
     Scale {
       X: 4.99147
