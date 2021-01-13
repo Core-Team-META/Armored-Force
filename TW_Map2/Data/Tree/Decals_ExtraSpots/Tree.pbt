@@ -1,26 +1,26 @@
-﻿Name: "Decals_River"
-RootId: 9598386644266971480
+﻿Name: "Decals_ExtraSpots"
+RootId: 14587926452770275409
 Objects {
-  Id: 16387251069017836110
+  Id: 12801015570069532850
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 882.315063
-      Y: 10887.4307
-      Z: -435.249207
+      X: -24126.873
+      Y: 18795.6738
+      Z: -323.995361
     }
     Rotation {
-      Pitch: 14.9171114
-      Yaw: -4.8631897
-      Roll: 1.44090986
+      Pitch: 4.55876875
+      Yaw: -141.622681
+      Roll: -6.97921753
     }
     Scale {
-      X: 1.86292756
-      Y: 5.13601542
-      Z: 1.00000036
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -49,25 +49,26 @@ Objects {
   }
 }
 Objects {
-  Id: 8353789081754140234
+  Id: 5622348063884177245
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -3952.16602
-      Y: -11162.1104
-      Z: -221.744232
+      X: -19459.9688
+      Y: 22248.8457
+      Z: -739.818359
     }
     Rotation {
-      Pitch: -10.1105957
-      Yaw: -40.2226563
+      Pitch: 2.75829673
+      Yaw: -155.406
+      Roll: -10.9907227
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -96,26 +97,26 @@ Objects {
   }
 }
 Objects {
-  Id: 7364373099281811695
+  Id: 13130011874134141010
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 3188.18311
-      Y: 16972.0371
-      Z: -539.070801
+      X: -13866.6455
+      Y: 22110.0254
+      Z: -403.627686
     }
     Rotation {
-      Pitch: -17.6367798
-      Yaw: -45.7321167
-      Roll: 3.29858685
+      Pitch: -3.32550049
+      Yaw: -178.985535
+      Roll: -6.83526611
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -144,26 +145,26 @@ Objects {
   }
 }
 Objects {
-  Id: 4503003490586742425
+  Id: 14607047323921209991
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 4103.4082
-      Y: 15694.3643
-      Z: -610.175537
+      X: 13116.8037
+      Y: 21887.7656
+      Z: -562.612549
     }
     Rotation {
-      Pitch: 10.2026014
-      Yaw: -46.5422363
-      Roll: 1.0930959
+      Pitch: 2.52625465
+      Yaw: -157.252121
+      Roll: -5.47329712
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -192,25 +193,26 @@ Objects {
   }
 }
 Objects {
-  Id: 15378444241433061158
+  Id: 5658038780020675032
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 2334.41333
-      Y: 14228.9014
-      Z: -492.896851
+      X: 9406.18262
+      Y: 19388.6445
+      Z: -603.818604
     }
     Rotation {
-      Pitch: 10.3786221
-      Yaw: -35.8609619
+      Pitch: 0.729573429
+      Yaw: -144.275665
+      Roll: -1.1763916
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -239,26 +241,26 @@ Objects {
   }
 }
 Objects {
-  Id: 10253286567520910907
+  Id: 534922123779726529
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 978.328735
-      Y: 14389.9824
-      Z: -425.246338
+      X: 6708.25488
+      Y: 17620.8945
+      Z: -603.818359
     }
     Rotation {
-      Pitch: -12.356842
-      Yaw: -36.4013672
-      Roll: 1.31086421
+      Pitch: 0.729573429
+      Yaw: -153.144241
+      Roll: -1.1763916
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -287,26 +289,26 @@ Objects {
   }
 }
 Objects {
-  Id: 8848011241282950545
+  Id: 4865211636118126742
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 229.036743
-      Y: 10431.6699
-      Z: -402.710754
+      X: -5591.9624
+      Y: -23975.2461
+      Z: 198.379669
     }
     Rotation {
-      Pitch: -3.0038147
-      Yaw: -0.171722412
-      Roll: -0.237976074
+      Pitch: -2.29403687
+      Yaw: -156.165497
+      Roll: -2.51147461
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -335,26 +337,26 @@ Objects {
   }
 }
 Objects {
-  Id: 10538987565434820680
+  Id: 16839486638996447946
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 1282.60242
-      Y: 9085.13477
-      Z: -364.423889
+      X: -19622.0156
+      Y: -33554.7266
+      Z: 167.093262
     }
     Rotation {
-      Pitch: 6.65456438
-      Yaw: -0.291015625
-      Roll: 1.96184349
+      Pitch: 1.22722101
+      Yaw: -163.519852
+      Roll: -7.10299683
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25313973
+      Z: 3.62848592
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -383,26 +385,26 @@ Objects {
   }
 }
 Objects {
-  Id: 14969795515705127689
+  Id: 533857189418194440
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 1489.12585
-      Y: 7036.87695
-      Z: -369.584534
+      X: -13896.0518
+      Y: -31835.3848
+      Z: 234.425262
     }
     Rotation {
-      Pitch: 6.65457106
-      Yaw: 16.4673672
-      Roll: 1.96184623
+      Pitch: 1.22722781
+      Yaw: -163.519897
+      Roll: -7.10299683
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25313973
+      Z: 3.62848592
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -431,26 +433,26 @@ Objects {
   }
 }
 Objects {
-  Id: 764881344201352536
+  Id: 12989822584988530163
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 619.022
-      Y: 5898.51367
-      Z: -339.524963
+      X: -10183.2529
+      Y: -29424.2754
+      Z: 258.490082
     }
     Rotation {
-      Pitch: -10.668335
-      Yaw: 9.56451893
-      Roll: 1.45019054
+      Pitch: 0.134185895
+      Yaw: -140.651215
+      Roll: -7.63638306
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -479,26 +481,26 @@ Objects {
   }
 }
 Objects {
-  Id: 18026914876093176631
+  Id: 2873562003267041381
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -2262.04688
-      Y: -8950.51563
-      Z: -181.174805
+      X: -7365.26807
+      Y: -26465.6
+      Z: 205.294373
     }
     Rotation {
-      Pitch: -7.91946411
-      Yaw: 7.52091885
-      Roll: -10.9619141
+      Pitch: 0.134185895
+      Yaw: -140.651016
+      Roll: 0.185584813
     }
     Scale {
-      X: 1.17272234
-      Y: 2.79840803
-      Z: 1.00000167
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -527,26 +529,26 @@ Objects {
   }
 }
 Objects {
-  Id: 726937485840926370
+  Id: 434930134897901317
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -24364.2246
-      Y: -31872.2695
-      Z: 201.53833
+      X: -15422.6338
+      Y: -26349.5293
+      Z: 200.923309
     }
     Rotation {
-      Pitch: -0.899292
-      Yaw: -62.3300781
-      Roll: 3.01848912
+      Pitch: 2.04909754
+      Yaw: 179.183029
+      Roll: 0.229804829
     }
     Scale {
-      X: 2.38584065
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -575,26 +577,26 @@ Objects {
   }
 }
 Objects {
-  Id: 4558795645874217225
+  Id: 2985254957891418527
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -20691.6602
-      Y: -30679.3535
-      Z: 85.8889465
+      X: -19853.1621
+      Y: -24393.959
+      Z: 273.021454
     }
     Rotation {
-      Pitch: -0.899292
-      Yaw: -73.4245
-      Roll: 3.01847935
+      Pitch: -1.02352905
+      Yaw: 124.319626
+      Roll: 0.750116765
     }
     Scale {
-      X: 2.38584065
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -623,26 +625,26 @@ Objects {
   }
 }
 Objects {
-  Id: 5156092250405387819
+  Id: 16705692668931574821
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -17986.2617
-      Y: -30130.0547
-      Z: 125.103943
+      X: -9160.16406
+      Y: 16757.0879
+      Z: -75.6703186
     }
     Rotation {
-      Pitch: -0.899292
-      Yaw: -73.42453
-      Roll: 3.01847863
+      Pitch: -1.02352905
+      Yaw: 124.319626
+      Roll: 0.750117064
     }
     Scale {
-      X: 2.38584065
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -671,26 +673,26 @@ Objects {
   }
 }
 Objects {
-  Id: 3909584780096878955
+  Id: 17204110160892728007
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -14221.9766
-      Y: -29006.6934
-      Z: -53.9009094
+      X: -11528.457
+      Y: 17840.5195
+      Z: -133.128082
     }
     Rotation {
-      Pitch: -0.899292
-      Yaw: -73.4245605
-      Roll: 3.01847792
+      Pitch: 0.475989
+      Yaw: -87.4143677
+      Roll: -1.17633057
     }
     Scale {
-      X: 2.38584065
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -719,24 +721,26 @@ Objects {
   }
 }
 Objects {
-  Id: 8826962541802049455
+  Id: 9026455173340002336
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -11098.374
-      Y: -26750.3652
-      Z: -220.744232
+      X: -1844.38696
+      Y: 5161.86182
+      Z: -18.5570908
     }
     Rotation {
-      Yaw: -34.5080566
+      Pitch: 1.00840223
+      Yaw: -72.4653931
+      Roll: 1.07099497
     }
     Scale {
-      X: 2.38584065
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -765,24 +769,26 @@ Objects {
   }
 }
 Objects {
-  Id: 9685629025082702968
+  Id: 2182978480628033671
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -9263.79297
-      Y: -23838.082
-      Z: -220.744232
+      X: -2766.53711
+      Y: 8521.75
+      Z: -51.8110657
     }
     Rotation {
-      Yaw: -26.8300781
+      Pitch: 0.476002693
+      Yaw: -87.4144
+      Roll: -1.17633057
     }
     Scale {
-      X: 2.38584065
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -811,24 +817,26 @@ Objects {
   }
 }
 Objects {
-  Id: 15206281727698586210
+  Id: 8931257479122370368
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -7776.06396
-      Y: -19332.0703
-      Z: -220.744232
+      X: 7069.50537
+      Y: -7204.29688
+      Z: 154.361877
     }
     Rotation {
-      Yaw: -18.2714233
+      Pitch: 0.626813233
+      Yaw: -15.1973267
+      Roll: 4.12964344
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -857,24 +865,26 @@ Objects {
   }
 }
 Objects {
-  Id: 15247019213944149092
+  Id: 15235386015720260388
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -6188.62744
-      Y: -15121.7246
-      Z: -220.744232
+      X: 6129.47607
+      Y: -70.3979
+      Z: 407.187134
     }
     Rotation {
-      Yaw: -29.550415
+      Pitch: 12.0422993
+      Yaw: 23.9257698
+      Roll: 0.974036694
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 2.33311582
+      Y: 1.35075116
+      Z: 0.33277607
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -903,25 +913,24 @@ Objects {
   }
 }
 Objects {
-  Id: 14634604376823745389
+  Id: 6465989197155333086
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -3639.77295
-      Y: -12291.7119
-      Z: -221.744232
+      X: 8542.46582
+      Y: 2630.43286
+      Z: 464.805237
     }
     Rotation {
-      Pitch: 14.3949299
-      Yaw: -40.2228088
+      Roll: 0.993734717
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.42592859
+      Y: 3.1413269
+      Z: 0.773909032
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -950,24 +959,24 @@ Objects {
   }
 }
 Objects {
-  Id: 5511034249867586783
+  Id: 12131668303116650292
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -1371.64844
-      Y: -9119.24414
-      Z: -290.186798
+      X: 9833.74805
+      Y: 701.786743
+      Z: 565.339722
     }
     Rotation {
-      Yaw: -40.2230225
+      Roll: 5.64745426
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.42592859
+      Y: 3.1413269
+      Z: 0.773909032
     }
   }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -996,445 +1005,26 @@ Objects {
   }
 }
 Objects {
-  Id: 4504320910956402270
+  Id: 17084750167111545714
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 1142.26392
-      Y: -6453.83203
-      Z: -290.186798
+      X: 5581.88379
+      Y: -2769.83472
+      Z: 80.8766174
     }
     Rotation {
-      Yaw: -40.2230225
+      Pitch: 0.729573429
+      Yaw: -87.419754
+      Roll: -1.17639112
     }
     Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
+      X: 5.61900473
+      Y: 3.25310779
+      Z: 0.801447749
     }
   }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 17052039330727468498
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 1756.65564
-      Y: -1940.68042
-      Z: -290.186676
-    }
-    Rotation {
-      Pitch: -10.6394653
-      Yaw: 1.56315339
-      Roll: 0.298005521
-    }
-    Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 17167640076069894057
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 2094.44336
-      Y: 1071.82715
-      Z: -290.186432
-    }
-    Rotation {
-      Pitch: -10.668335
-      Yaw: 9.56449413
-      Roll: 1.4501909
-    }
-    Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 16230297456362409572
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 2861.2832
-      Y: -1753.64111
-      Z: -252.511108
-    }
-    Rotation {
-      Pitch: 1.69599056
-    }
-    Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 17460781952571273955
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: -525.241211
-      Y: 8239.7666
-      Z: -244.078629
-    }
-    Rotation {
-      Yaw: 2.57044
-    }
-    Scale {
-      X: 1.2232728
-      Y: 6.5842309
-      Z: 1.00000083
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 15017783475559448619
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 3455
-      Y: -2875
-      Z: -330.561951
-    }
-    Rotation {
-      Pitch: 14.4772339
-    }
-    Scale {
-      X: 2.9
-      Y: 6.59999943
-      Z: 1
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 6731373670238639569
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 2351.12695
-      Y: 4131.20801
-      Z: -236.766449
-    }
-    Rotation {
-      Pitch: 13.8908968
-      Yaw: 23.9999542
-    }
-    Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 7590038118873557511
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 3202.54
-      Y: 1071.82715
-      Z: -163.911407
-    }
-    Rotation {
-      Pitch: 3.66236091
-    }
-    Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 15203322909443146295
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 460.019653
-      Y: 3601.11426
-      Z: -185.215576
-    }
-    Rotation {
-      Pitch: -5.51641846
-      Yaw: 21.8219223
-      Roll: -2.20437622
-    }
-    Scale {
-      X: 1.86292672
-      Y: 6.58423948
-      Z: 1.00000024
-    }
-  }
-  ParentId: 9598386644266971480
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.00500000035
-        G: 0.00500000035
-        B: 0.00500000035
-        A: 0.515000045
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13650699884663610996
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 8746560954813784561
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: -552.179321
-      Y: 7593.06787
-      Z: -185.215576
-    }
-    Rotation {
-      Pitch: -5.93930054
-    }
-    Scale {
-      X: 1.86292624
-      Y: 8.63718891
-      Z: 1.00000024
-    }
-  }
-  ParentId: 9598386644266971480
+  ParentId: 14587926452770275409
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"

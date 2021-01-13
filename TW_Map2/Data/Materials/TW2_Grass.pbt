@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 8399971333368982502
-  Name: "Custom Grass from Grass Short"
+  Name: "TW2_Grass"
   PlatformAssetType: 13
   SerializationVersion: 72
   CustomMaterialAsset {

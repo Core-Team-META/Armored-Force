@@ -7,7 +7,7 @@
       RootId: 15377094346368301365
       Objects {
         Id: 15377094346368301365
-        Name: "TW2_BuildingCornerWindows_Destructible"
+        Name: "TW2_BuildingCornerWindow_Destructible"
         Transform {
           Scale {
             X: 1
@@ -1176,6 +1176,7 @@
           }
         }
         ParentId: 1247727060899221878
+        ChildIds: 10241413374616200531
         ChildIds: 5483580555180694131
         ChildIds: 11449527222058965193
         ChildIds: 13601973879521376736
@@ -1206,6 +1207,62 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 10241413374616200531
+        Name: "Urban Damaged Concrete Chunk 03"
+        Transform {
+          Location {
+            X: -333.49707
+            Y: -25
+            Z: 179.810028
+          }
+          Rotation {
+            Pitch: -9.27383423
+            Yaw: 180
+            Roll: 90
+          }
+          Scale {
+            X: 0.377382278
+            Y: -1.28771222
+            Z: 0.998420358
+          }
+        }
+        ParentId: 4043604123443874835
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11471689524597693722
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5483772166785938526
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
         }
       }
       Objects {
@@ -1473,7 +1530,7 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -170
+            X: -176.880859
             Y: -25
             Z: 275
           }
@@ -1983,7 +2040,7 @@
             Y: 295
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.6708679
             Roll: 90
           }
           Scale {

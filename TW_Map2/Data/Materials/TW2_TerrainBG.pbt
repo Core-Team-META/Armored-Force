@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 11305059944224433445
-  Name: "Terrain Material"
+  Id: 6771354921148884007
+  Name: "TW2_TerrainBG"
   PlatformAssetType: 13
   SerializationVersion: 72
   CustomMaterialAsset {
@@ -15,27 +15,15 @@
       Overrides {
         Name: "cmp:Material1_Sides"
         AssetReference {
-          Id: 1369322367487127365
+          Id: 3901960125647295602
         }
-      }
-      Overrides {
-        Name: "material1_scale"
-        Float: 0.05
-      }
-      Overrides {
-        Name: "material1side_scale"
-        Float: 0.05
-      }
-      Overrides {
-        Name: "material1_genmask"
-        Float: 0
       }
       Overrides {
         Name: "cmpc:Material1"
         Color {
           R: 0.535
-          G: 0.234080344
-          B: 0.124654993
+          G: 0.325886309
+          B: 0.249844983
           A: 1
         }
       }
@@ -43,8 +31,8 @@
         Name: "cmpc:Material1_Sides"
         Color {
           R: 0.535
-          G: 0.234080344
-          B: 0.124654993
+          G: 0.325886309
+          B: 0.249844983
           A: 1
         }
       }
@@ -59,14 +47,6 @@
         AssetReference {
           Id: 3930201948568785795
         }
-      }
-      Overrides {
-        Name: "material2_scale"
-        Float: 0.01
-      }
-      Overrides {
-        Name: "material2side_scale"
-        Float: 0.05
       }
       Overrides {
         Name: "cmpc:Material2"
@@ -87,6 +67,22 @@
         }
       }
       Overrides {
+        Name: "material1_scale"
+        Float: 0.07
+      }
+      Overrides {
+        Name: "material1side_scale"
+        Float: 0.07
+      }
+      Overrides {
+        Name: "material2_scale"
+        Float: 0.01
+      }
+      Overrides {
+        Name: "material2side_scale"
+        Float: 0.05
+      }
+      Overrides {
         Name: "cmp:Material3"
         AssetReference {
           Id: 1910430801874839834
@@ -96,6 +92,36 @@
         Name: "cmp:Material3_Sides"
         AssetReference {
           Id: 1910430801874839834
+        }
+      }
+      Overrides {
+        Name: "cmp:Material4"
+        AssetReference {
+          Id: 18063120635764219231
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material4"
+        Color {
+          R: 1
+          G: 0.73827821
+          B: 0.24000001
+          A: 0.332000017
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material4_Sides"
+        Color {
+          R: 1
+          G: 0.73827821
+          B: 0.24000001
+          A: 0.332000017
+        }
+      }
+      Overrides {
+        Name: "cmp:Material4_Sides"
+        AssetReference {
+          Id: 18063120635764219231
         }
       }
     }
@@ -118,12 +144,12 @@
       }
     }
     Assets {
-      Id: 1369322367487127365
-      Name: "Cliff 02"
+      Id: 3901960125647295602
+      Name: "Cliff 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "cliff_002"
+        AssetId: "mi_cliff_001_uv"
       }
     }
     Assets {
@@ -160,6 +186,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_bone_raw_001_uv_ref"
+      }
+    }
+    Assets {
+      Id: 18063120635764219231
+      Name: "Grass Clumps"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_002_uv"
+      }
+    }
+    Assets {
+      Id: 18063120635764219231
+      Name: "Grass Clumps"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_002_uv"
       }
     }
   }

@@ -1232,14 +1232,14 @@
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -170
+            X: -165
             Y: -25
             Z: 290
           }
           Rotation {
           }
           Scale {
-            X: 3.9
+            X: 4.1
             Y: 0.5
             Z: 1
           }
