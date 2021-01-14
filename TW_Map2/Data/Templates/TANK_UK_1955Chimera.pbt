@@ -26,7 +26,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 1000
+            Int: 1500
           }
           Overrides {
             Name: "cs:Acceleration"
@@ -38,11 +38,11 @@
           }
           Overrides {
             Name: "cs:HullTraverseSpeed"
-            Int: 20
+            Int: 30
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
-            Int: 45
+            Int: 30
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
@@ -58,7 +58,7 @@
           }
           Overrides {
             Name: "cs:TankHeightTweaker"
-            Float: 0
+            Float: -20
           }
           Overrides {
             Name: "cs:TankAngleTweaker"
@@ -461,7 +461,7 @@
         Name: "TankServerRoot"
         Transform {
           Location {
-            Z: 170
+            Z: 105
           }
           Rotation {
           }
@@ -489,7 +489,6 @@
         Name: "ServerAdjustmentPoint"
         Transform {
           Location {
-            Z: -69.996521
           }
           Rotation {
           }
@@ -735,7 +734,7 @@
         Transform {
           Location {
             Y: 225
-            Z: -45
+            Z: 50
           }
           Rotation {
           }
@@ -1287,7 +1286,7 @@
         Transform {
           Location {
             Y: -225
-            Z: -45
+            Z: 50
           }
           Rotation {
           }

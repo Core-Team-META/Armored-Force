@@ -42,7 +42,7 @@
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
-            Int: 45
+            Int: 30
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
@@ -461,7 +461,7 @@
         Name: "TankServerRoot"
         Transform {
           Location {
-            Z: 170
+            Z: 105
           }
           Rotation {
           }
@@ -489,7 +489,6 @@
         Name: "ServerAdjustmentPoint"
         Transform {
           Location {
-            Z: -69.996521
           }
           Rotation {
           }
@@ -654,7 +653,7 @@
         Name: "MuzzleMarker"
         Transform {
           Location {
-            X: 358.492432
+            X: 370
             Y: -1.38085938
             Z: -9.73205566
           }
@@ -734,7 +733,7 @@
         Name: "LeftSuspensionSet"
         Transform {
           Location {
-            Y: 225
+            Y: 210
             Z: -45
           }
           Rotation {
@@ -764,8 +763,8 @@
         Name: "SuspensionUnit"
         Transform {
           Location {
-            X: -255
-            Z: -150
+            X: -175
+            Z: -80.003479
           }
           Rotation {
           }
@@ -825,7 +824,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -876,7 +875,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -927,7 +926,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1025,8 +1024,8 @@
         Name: "SuspensionUnit"
         Transform {
           Location {
-            X: 255
-            Z: -150
+            X: 330
+            Z: -80.003479
           }
           Rotation {
           }
@@ -1086,7 +1085,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1137,7 +1136,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1188,7 +1187,7 @@
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -1286,7 +1285,7 @@
         Name: "RightSuspensionSet"
         Transform {
           Location {
-            Y: -225
+            Y: -210
             Z: -45
           }
           Rotation {
@@ -1316,8 +1315,8 @@
         Name: "SuspensionUnit"
         Transform {
           Location {
-            X: -255
-            Z: -150
+            X: -175
+            Z: -80.003479
           }
           Rotation {
           }
@@ -1577,8 +1576,8 @@
         Name: "SuspensionUnit"
         Transform {
           Location {
-            X: 255
-            Z: -150
+            X: 330
+            Z: -80.003479
           }
           Rotation {
           }
