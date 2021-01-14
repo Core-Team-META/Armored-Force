@@ -41,7 +41,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate"
       AssetReference {
-        Id: 6512039414806790145
+        Id: 14129180086830417282
       }
     }
     Overrides {
@@ -55,31 +55,31 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate2"
       AssetReference {
-        Id: 13456459845324522627
+        Id: 13499437047315910078
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate3"
       AssetReference {
-        Id: 1758550969674788983
+        Id: 1976090991745567963
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate4"
       AssetReference {
-        Id: 17008631700815008939
+        Id: 17467364654639020699
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate5"
       AssetReference {
-        Id: 16126269139161472245
+        Id: 7516114789730753284
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 11895577686412151181
+        Id: 1977131737522196893
       }
     }
     Overrides {
@@ -139,13 +139,13 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate16"
       AssetReference {
-        Id: 5802538127017330277
+        Id: 1017367019735459438
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate17"
       AssetReference {
-        Id: 11154777837511158744
+        Id: 16744483769497778380
       }
     }
     Overrides {
@@ -509,7 +509,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 94
@@ -1530,9 +1530,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -1586,9 +1585,8 @@ Objects {
     Text {
       Label: "R - German Jagdtiger"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -1647,9 +1645,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -1703,9 +1700,8 @@ Objects {
     Text {
       Label: "T - German E50"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2817,9 +2813,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2873,9 +2868,8 @@ Objects {
     Text {
       Label: "6 - US M24 Chaffee"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2934,9 +2928,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2990,9 +2983,8 @@ Objects {
     Text {
       Label: "5 - German Panzer 4H"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3051,9 +3043,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3107,9 +3098,8 @@ Objects {
     Text {
       Label: "4 - UK 1955 Chimera"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3168,9 +3158,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3224,9 +3213,8 @@ Objects {
     Text {
       Label: "3 = US M4A1 Sherman"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3285,9 +3273,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3341,9 +3328,8 @@ Objects {
     Text {
       Label: "2 = USSR T-34"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3401,9 +3387,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3457,9 +3442,8 @@ Objects {
     Text {
       Label: "1 = German Panther"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109932404
+        G: 0.830000043
         A: 1
       }
       Size: 15
