@@ -98,6 +98,7 @@ function FiringAnimation(player)
 	
 	spinPoint1.rotationAngle = 0
 	spinPoint2.rotationAngle = 0
+
 	
 	local xRotation = 0
 	local yRotation = 0

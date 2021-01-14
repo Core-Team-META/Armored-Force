@@ -120,7 +120,7 @@ function OnPlayerJoined(player)
 	-- Setup static properties
 	nameplateRoot:AttachToPlayer(player, "nameplate")
 	nameplateRoot:SetScale(Vector3.New(SCALE, SCALE, SCALE))
-	nameplateRoot:SetPosition(Vector3.New(0, 0, 300))
+	nameplateRoot:SetPosition(Vector3.New(0, 0, 400))
 
 	-- Static properties on pieces
 	nameplates[player].borderPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH + 2.0 * BORDER_WIDTH, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH))

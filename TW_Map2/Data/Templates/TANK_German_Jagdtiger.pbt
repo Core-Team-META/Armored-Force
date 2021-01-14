@@ -26,11 +26,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 1000
+            Int: 600
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 1000
+            Int: 600
           }
           Overrides {
             Name: "cs:ReloadSpeed"
@@ -38,11 +38,11 @@
           }
           Overrides {
             Name: "cs:HullTraverseSpeed"
-            Int: 20
+            Int: 30
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
-            Int: 20000
+            Int: 0
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
