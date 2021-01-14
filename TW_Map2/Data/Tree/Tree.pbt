@@ -97,7 +97,6 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 16327103417488370587
   ChildIds: 6458840450957362020
-  ChildIds: 12861087940671571883
   ChildIds: 3988098023132056747
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -182,10 +181,10 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 420
-    Height: 420
-    UIX: 1760.45459
-    UIY: 42.8010406
+    Width: 507
+    Height: 507
+    UIX: 1805.51587
+    UIY: 11.0830841
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -208,11 +207,44 @@ Objects {
   }
 }
 Objects {
+  Id: 6458840450957362020
+  Name: "3D"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9099465017730298827
+  ChildIds: 14111370798903794675
+  ChildIds: 18125383805929161185
+  ChildIds: 7880625933930592015
+  ChildIds: 960085075357696900
+  ChildIds: 6322644127532244770
+  ChildIds: 11656473831295031010
+  ChildIds: 18368352172999983707
+  ChildIds: 12861087940671571883
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 12861087940671571883
   Name: "MiniMap_Base"
   Transform {
     Location {
-      Z: -799.548828
+      Z: -240.655273
     }
     Rotation {
     }
@@ -222,14 +254,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9099465017730298827
+  ParentId: 6458840450957362020
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.558340371
-        G: 0.401977777
-        B: 0.242281124
+        R: 0.516000032
+        G: 0.309086353
+        B: 0.160955578
         A: 1
       }
     }
@@ -269,41 +301,11 @@ Objects {
   }
 }
 Objects {
-  Id: 6458840450957362020
-  Name: "3D"
-  Transform {
-    Location {
-      Z: 3988.68311
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9099465017730298827
-  ChildIds: 18125383805929161185
-  ChildIds: 7880625933930592015
-  ChildIds: 6322644127532244770
-  ChildIds: 18368352172999983707
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
   Id: 18368352172999983707
   Name: "Elevated"
   Transform {
     Location {
-      Z: -3847.33105
+      Z: 141.352051
     }
     Rotation {
     }
@@ -326,10 +328,37 @@ Objects {
   }
 }
 Objects {
+  Id: 11656473831295031010
+  Name: "Buildings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6458840450957362020
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Buildings"
+  }
+}
+Objects {
   Id: 6322644127532244770
   Name: "River"
   Transform {
     Location {
+      Z: 1045.63818
     }
     Rotation {
     }
@@ -352,11 +381,38 @@ Objects {
   }
 }
 Objects {
+  Id: 960085075357696900
+  Name: "Sea"
+  Transform {
+    Location {
+      Z: 3988.68311
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6458840450957362020
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Sea"
+  }
+}
+Objects {
   Id: 7880625933930592015
   Name: "RockLow"
   Transform {
     Location {
-      Z: -3199.28125
+      Z: 789.401855
     }
     Rotation {
     }
@@ -383,7 +439,7 @@ Objects {
   Name: "RockHigh"
   Transform {
     Location {
-      Z: -1478.51807
+      Z: 2510.16504
     }
     Rotation {
     }
@@ -403,6 +459,34 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "RockHigh"
+  }
+}
+Objects {
+  Id: 14111370798903794675
+  Name: "Roads"
+  Transform {
+    Location {
+      X: 625
+      Z: -150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6458840450957362020
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Roads"
   }
 }
 Objects {

@@ -80,7 +80,7 @@ Objects {
 }
 Objects {
   Id: 9408846036456260919
-  Name: "Rocks"
+  Name: "Cliffs"
   Transform {
     Location {
     }
@@ -101,7 +101,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Rocks"
+    FilePartitionName: "Cliffs"
   }
 }
 Objects {

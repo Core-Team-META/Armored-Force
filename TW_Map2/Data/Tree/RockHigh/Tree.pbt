@@ -10724,7 +10724,7 @@ Objects {
   Name: "MiniMap_RockHigh"
   Transform {
     Location {
-      X: 21066.3789
+      X: 21642.7383
       Y: 22794.4805
       Z: -215.560547
     }
@@ -10852,7 +10852,7 @@ Objects {
   Name: "MiniMap_RockHigh"
   Transform {
     Location {
-      X: 21267.7363
+      X: 22000.2246
       Y: 22468.7109
       Z: -215.560547
     }
@@ -10916,9 +10916,9 @@ Objects {
   Name: "MiniMap_RockHigh"
   Transform {
     Location {
-      X: 21244.627
-      Y: 18411.416
-      Z: -215.560547
+      X: 21852.8164
+      Y: 19018.4648
+      Z: -215.561523
     }
     Rotation {
       Yaw: 179.337509
@@ -10980,9 +10980,9 @@ Objects {
   Name: "MiniMap_RockHigh"
   Transform {
     Location {
-      X: 21327.8965
-      Y: 15917.1201
-      Z: -215.560547
+      X: 21935.7129
+      Y: 16992.7305
+      Z: -215.561523
     }
     Rotation {
       Yaw: -167.180786
@@ -11045,7 +11045,7 @@ Objects {
   Transform {
     Location {
       X: 22951.4355
-      Y: 13661.3242
+      Y: 14829.4971
       Z: -215.560547
     }
     Rotation {
@@ -11109,7 +11109,7 @@ Objects {
   Transform {
     Location {
       X: 23734.5156
-      Y: 11585.4551
+      Y: 12439.8672
       Z: -215.560547
     }
     Rotation {
