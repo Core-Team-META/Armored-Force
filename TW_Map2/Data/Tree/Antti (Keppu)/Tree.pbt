@@ -198,10 +198,10 @@ Objects {
   ChildIds: 2899913624455087983
   ChildIds: 17650934186590379631
   ChildIds: 13592153099983203886
-  ChildIds: 408769394711300695
-  ChildIds: 13506445999902449944
   ChildIds: 127884821137658666
   ChildIds: 13026057646793800990
+  ChildIds: 408769394711300695
+  ChildIds: 13506445999902449944
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -210,6 +210,124 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13506445999902449944
+  Name: "EdgeIndicator"
+  Transform {
+    Location {
+      X: 12281.7939
+      Y: 25535
+      Z: -5167.29395
+    }
+    Rotation {
+      Yaw: -89.9999771
+    }
+    Scale {
+      X: 0.0999522805
+      Y: 155.358398
+      Z: 38.6000023
+    }
+  }
+  ParentId: 2689812187804284048
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13231971539212330216
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.516000032
+        G: 0.309086353
+        B: 0.160955578
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 408769394711300695
+  Name: "EdgeIndicator"
+  Transform {
+    Location {
+      X: 25560
+      Y: -1055
+      Z: -5167.29395
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 0.1
+      Y: 288.900208
+      Z: 38.6000023
+    }
+  }
+  ParentId: 2689812187804284048
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13231971539212330216
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.516000032
+        G: 0.309086353
+        B: 0.160955578
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -277,106 +395,6 @@ Objects {
       X: 0.1
       Y: 288.9
       Z: 45.3999825
-    }
-  }
-  ParentId: 2689812187804284048
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13231971539212330216
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 198353679974341757
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 13506445999902449944
-  Name: "EdgeIndicator"
-  Transform {
-    Location {
-      X: 12281.7939
-      Y: 25535
-      Z: -1392.29468
-    }
-    Rotation {
-      Yaw: -90
-    }
-    Scale {
-      X: 0.0999522805
-      Y: 155.358398
-      Z: 38.6000023
-    }
-  }
-  ParentId: 2689812187804284048
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13231971539212330216
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 198353679974341757
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 408769394711300695
-  Name: "EdgeIndicator"
-  Transform {
-    Location {
-      X: 25560
-      Y: -1055
-      Z: -1392.29443
-    }
-    Rotation {
-      Yaw: -179.999969
-    }
-    Scale {
-      X: 0.1
-      Y: 288.900208
-      Z: 38.6000023
     }
   }
   ParentId: 2689812187804284048
