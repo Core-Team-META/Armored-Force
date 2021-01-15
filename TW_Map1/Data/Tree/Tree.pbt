@@ -18,6 +18,7 @@ Objects {
   ChildIds: 17707050887276379352
   ChildIds: 17734630002646221213
   ChildIds: 14246791555251678451
+  ChildIds: 15228262498109224048
   ChildIds: 4689494391382931675
   ChildIds: 14661672776697705088
   ChildIds: 14640456784048730058
@@ -108,6 +109,492 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
+  }
+}
+Objects {
+  Id: 15228262498109224048
+  Name: "TW_Minimap"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 11079241291127733352
+  ChildIds: 378484177755757853
+  ChildIds: 5749783357608819890
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 5749783357608819890
+  Name: "UI Container"
+  Transform {
+    Location {
+      X: -3310
+      Y: 12580
+      Z: 2810
+    }
+    Rotation {
+      Yaw: 135
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15228262498109224048
+  ChildIds: 11914092028586352506
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11914092028586352506
+  Name: "UI Panel"
+  Transform {
+    Location {
+      X: -3310
+      Y: 12580
+      Z: 2810
+    }
+    Rotation {
+      Yaw: 135
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5749783357608819890
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 507
+    Height: 507
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 378484177755757853
+  Name: "3D"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15228262498109224048
+  ChildIds: 3628832423470434959
+  ChildIds: 7269858199136329599
+  ChildIds: 15114668132556042193
+  ChildIds: 11718657071077560308
+  ChildIds: 3391623619042272009
+  ChildIds: 12171506744640636429
+  ChildIds: 6785364017270525321
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6785364017270525321
+  Name: "MiniMap_Base"
+  Transform {
+    Location {
+      X: -8248.54395
+      Y: -3229.79785
+      Z: -240.655273
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1073.49622
+      Y: 1170.31702
+      Z: 1.0734961
+    }
+  }
+  ParentId: 378484177755757853
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.111932427
+        G: 0.0761853829
+        B: 0.0212190095
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.111932427
+        G: 0.0761853829
+        B: 0.0212190095
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16060214784296519809
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12171506744640636429
+  Name: "Elevated"
+  Transform {
+    Location {
+      Z: 141.352051
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Elevated"
+  }
+}
+Objects {
+  Id: 3391623619042272009
+  Name: "Buildings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Buildings"
+  }
+}
+Objects {
+  Id: 11718657071077560308
+  Name: "River"
+  Transform {
+    Location {
+      Z: 1045.63818
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "River"
+  }
+}
+Objects {
+  Id: 15114668132556042193
+  Name: "RockLow"
+  Transform {
+    Location {
+      Z: 789.401855
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "RockLow"
+  }
+}
+Objects {
+  Id: 7269858199136329599
+  Name: "RockHigh"
+  Transform {
+    Location {
+      Z: 2510.16504
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "RockHigh"
+  }
+}
+Objects {
+  Id: 3628832423470434959
+  Name: "Roads"
+  Transform {
+    Location {
+      X: 625
+      Z: 250.479401
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Roads"
+  }
+}
+Objects {
+  Id: 11079241291127733352
+  Name: "Minimap"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15228262498109224048
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:UIPanel"
+      ObjectReference {
+        SelfId: 11914092028586352506
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapPiece"
+      AssetReference {
+        Id: 15939698058101708730
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapLabel"
+      AssetReference {
+        Id: 1082805809408810190
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapPlayer"
+      AssetReference {
+        Id: 10133690637885599774
+      }
+    }
+    Overrides {
+      Name: "cs:GradientHeight"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ColorLow"
+      Color {
+        R: 0.251000017
+        G: 0.251000017
+        B: 0.251000017
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:ColorHigh"
+      Color {
+        R: 0.898000062
+        G: 0.898000062
+        B: 0.898000062
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:BorderColor"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:BorderSize"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:GradientHeight:tooltip"
+      String: "If true, the minimap pieces will be colored based on their Z position relative to the rest of the map."
+    }
+    Overrides {
+      Name: "cs:MinimapPlayer:tooltip"
+      String: "The UI template that represents players."
+    }
+    Overrides {
+      Name: "cs:MinimapLabel:tooltip"
+      String: "The UI template that represents World Text objects."
+    }
+    Overrides {
+      Name: "cs:MinimapPiece:tooltip"
+      String: "The UI template that represents 3D geometry."
+    }
+    Overrides {
+      Name: "cs:ColorLow:tooltip"
+      String: "If GradientHeight is true, this is the color at the lowest Z, that multiplies against the geometry color."
+    }
+    Overrides {
+      Name: "cs:ColorHigh:tooltip"
+      String: "If GradientHeight is true, this is the color at the highest Z that multiplies against the geometry color."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14469831207717610008
+    }
   }
 }
 Objects {
