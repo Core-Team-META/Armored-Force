@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16060214784296519809
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 15876256765931074932
   Name: "Flower Bellflower Patch 01"
   PlatformAssetType: 1

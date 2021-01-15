@@ -5892,7 +5892,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 6.21919632
           }
         }
         Overrides {
@@ -6843,7 +6842,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 163.929367
           }
         }
         Overrides {
@@ -6905,7 +6903,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 164.562149
           }
         }
         Overrides {
@@ -6967,7 +6964,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 163.918762
           }
         }
         Overrides {
@@ -7031,9 +7027,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -4.47516
-            Yaw: -138.28009
-            Roll: -4.05032492
+            Pitch: -4.47515869
+            Roll: -4.05032349
           }
         }
         Overrides {
@@ -7097,9 +7092,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -4.47516
-            Yaw: 64.0092697
-            Roll: -4.05032396
+            Pitch: -4.47515869
+            Roll: -4.05032349
           }
         }
         Overrides {
@@ -7161,7 +7155,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 6.20855856
           }
         }
         Overrides {
@@ -7223,7 +7216,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 6.851933
           }
         }
         Overrides {
@@ -7285,7 +7277,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 6.21918774
           }
         }
         Overrides {
@@ -10443,7 +10434,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -81.3100128
           }
         }
         Overrides {
@@ -10502,8 +10492,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: 43.4985466
-            Roll: -3.36270285
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -10791,7 +10780,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.85582733
-            Yaw: 167.374329
             Roll: -2.69042969
           }
         }
@@ -10856,8 +10844,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -1.62731981
-            Yaw: -13.8821287
+            Pitch: -1.62731934
             Roll: -1.79547119
           }
         }
@@ -12144,8 +12131,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70543337
-            Yaw: -92.5735779
-            Roll: -3.36270237
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -12209,9 +12195,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -4.47516
-            Yaw: 127.771904
-            Roll: -4.05032492
+            Pitch: -4.47515869
+            Roll: -4.05032349
           }
         }
         Overrides {
@@ -12406,7 +12391,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -63.3624039
           }
         }
         Overrides {
@@ -12465,7 +12449,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: -102.586258
             Roll: -3.36270142
           }
         }
@@ -12528,7 +12511,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -63.3623772
           }
         }
         Overrides {
@@ -12587,8 +12569,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: -75.1495209
-            Roll: -3.36270237
+            Roll: -3.36270142
           }
         }
       }
@@ -12642,7 +12623,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 161.096497
           }
         }
         Overrides {
@@ -12933,7 +12913,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 70.1339645
           }
         }
         Overrides {
@@ -12997,7 +12976,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 69.970726
           }
         }
         Overrides {
@@ -13061,7 +13039,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 70.6142197
           }
         }
         Overrides {
@@ -13125,7 +13102,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 70.5670776
           }
         }
         Overrides {
@@ -13189,7 +13165,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 69.9814072
           }
         }
         Overrides {
@@ -13253,7 +13228,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 55.8159523
           }
         }
         Overrides {
@@ -13431,7 +13405,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 2.49149585
-            Yaw: 12.236702
             Roll: -1.13705444
           }
         }
@@ -13556,8 +13529,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: 99.2154083
-            Roll: -3.36270189
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -13622,7 +13594,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70543337
-            Yaw: -107.255325
             Roll: -3.36270142
           }
         }
@@ -13736,8 +13707,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -6.49249077
-            Yaw: -9.5518322
+            Pitch: -6.49249268
             Roll: 1.0900327
           }
         }
@@ -13794,9 +13764,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.673306346
-            Yaw: -9.46626091
-            Roll: -4.03155661
+            Pitch: -0.673309326
+            Roll: -4.03155518
           }
         }
         Overrides {
@@ -13861,8 +13830,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: -112.774857
-            Roll: -3.36270261
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -14537,8 +14505,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: 57.5414314
-            Roll: -3.36270261
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -14603,8 +14570,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: 74.5332
-            Roll: -3.36270261
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -14669,8 +14635,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.20676088
-            Yaw: 60.1655197
-            Roll: -2.94650316
+            Roll: -2.94650269
           }
         }
         Overrides {
@@ -14725,7 +14690,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 14.6820936
           }
         }
         Overrides {
@@ -14790,8 +14754,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 1.88769341
-            Yaw: -92.5662766
-            Roll: -3.2360239
+            Roll: -3.23602295
           }
         }
         Overrides {
@@ -14856,8 +14819,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: -88.6026077
-            Roll: -3.36270261
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -15104,9 +15066,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -2.76897907
-            Yaw: 159.117493
-            Roll: -4.96985054
+            Pitch: -2.76898193
+            Roll: -4.96984863
           }
         }
         Overrides {
@@ -15161,8 +15122,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70544
-            Yaw: -0.276184112
-            Roll: -3.36270213
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -15329,7 +15289,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: 47.6250114
             Roll: -3.36270142
           }
         }
@@ -15379,8 +15338,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70544
-            Yaw: -0.276184112
-            Roll: -3.36270213
+            Roll: -3.36270142
           }
         }
       }
@@ -15545,9 +15503,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -1.68239844
-            Yaw: 64.6971
-            Roll: -0.338531643
+            Pitch: -1.68240356
+            Roll: -0.338531494
           }
         }
         Overrides {
@@ -15602,7 +15559,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70543337
-            Yaw: -107.255325
             Roll: -3.36270142
           }
         }
@@ -15666,8 +15622,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.20676804
-            Yaw: 50.2492676
-            Roll: -2.9465034
+            Roll: -2.94650269
           }
         }
         Overrides {
@@ -15728,7 +15683,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -124.029915
           }
         }
         Overrides {
@@ -15850,8 +15804,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: -103.284515
-            Roll: -3.36270285
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -15913,8 +15866,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 4.70542622
-            Yaw: -102.907913
-            Roll: -3.36270189
+            Roll: -3.36270142
           }
         }
         Overrides {
@@ -15969,7 +15921,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 3.79280376
-            Yaw: -78.0227127
             Roll: 1.00977767
           }
         }
