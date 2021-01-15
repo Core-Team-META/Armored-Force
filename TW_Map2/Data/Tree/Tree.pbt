@@ -15,6 +15,7 @@ Objects {
     }
   }
   ChildIds: 2572116581845083312
+  ChildIds: 4316049936135708946
   ChildIds: 4965067273124672211
   ChildIds: 16933976679426407654
   ChildIds: 18217549399293975483
@@ -783,6 +784,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW2_SpawnPoints"
+  }
+}
+Objects {
+  Id: 4316049936135708946
+  Name: "Lock Cursor to Screen"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6253506126193878080
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Lock Cursor to Screen"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 626964292754089367
+    }
   }
 }
 Objects {
