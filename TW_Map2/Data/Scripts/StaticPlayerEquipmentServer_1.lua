@@ -49,6 +49,7 @@ local EQUIPMENT_TEMPLATE22 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE23 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate23")
 local EQUIPMENT_TEMPLATE24 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate24")
 local EQUIPMENT_TEMPLATE25 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate25")
+local EQUIPMENT_TEMPLATE26 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate26")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -346,6 +347,16 @@ function OnBindingPressed(player,bindingPressed)
 		if bindingPressed == "ability_extra_44" then
 			RemovePlayerEquipment(player)
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE25)
+			assert(equipment[player]:IsA("Equipment"))
+			equipment[player]:Equip(player)
+			player.movementControlMode = MovementControlMode.FACING_RELATIVE
+			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
+		end
+		--ussr is-3
+		if bindingPressed == "ability_extra_42" then
+			RemovePlayerEquipment(player)
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE26)
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
