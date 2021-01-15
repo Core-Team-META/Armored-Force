@@ -2404,7 +2404,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Focal Distance"
-      Float: 0.1
+      Float: 0.333188504
     }
     Overrides {
       Name: "bp:Depth Blur Distance For 50%"
