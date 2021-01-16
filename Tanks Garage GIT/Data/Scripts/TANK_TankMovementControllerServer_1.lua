@@ -185,8 +185,12 @@ function AdjustTurretRotation()
 
 	cameraRotation = tankOwner:GetViewWorldRotation()
 	currentRotation = turretTraverseMarker:GetWorldRotation()
+	
+	if turretTraverseSpeed > 0 then
 			
-	turretTraverseMarker:RotateTo(Rotation.New(0, 0, turretTraverseMarker:GetRotation().z + (cameraRotation.z - currentRotation.z)), 0.01 * turretTraverseSpeed, true)
+		turretTraverseMarker:RotateTo(Rotation.New(0, 0, turretTraverseMarker:GetRotation().z + (cameraRotation.z - currentRotation.z)), 0.01 * turretTraverseSpeed, true)
+		
+	end
 	
 	--print("current y: " .. tostring(currentRotation.y) .. " camera y: " .. cameraRotation.y)
 	
