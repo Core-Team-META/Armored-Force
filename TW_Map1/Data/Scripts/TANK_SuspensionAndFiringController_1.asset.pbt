@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 8894173386011063620
-  Name: "TANK_TankMovementControllerServer"
+  Id: 13027229581378674211
+  Name: "TANK_SuspensionAndFiringController"
   PlatformAssetType: 3
   TextAsset {
   }

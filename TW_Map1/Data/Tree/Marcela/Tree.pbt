@@ -41,7 +41,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate"
       AssetReference {
-        Id: 6512039414806790145
+        Id: 14129180086830417282
       }
     }
     Overrides {
@@ -55,31 +55,31 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate2"
       AssetReference {
-        Id: 7137141122598181238
+        Id: 13499437047315910078
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate3"
       AssetReference {
-        Id: 2834100597623405160
+        Id: 1976090991745567963
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate4"
       AssetReference {
-        Id: 4825421426658938573
+        Id: 17467364654639020699
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate5"
       AssetReference {
-        Id: 13396890827056982211
+        Id: 7516114789730753284
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 11895577686412151181
+        Id: 1977131737522196893
       }
     }
     Overrides {
@@ -139,13 +139,13 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate16"
       AssetReference {
-        Id: 1919530258564514297
+        Id: 1017367019735459438
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate17"
       AssetReference {
-        Id: 13002165706748223109
+        Id: 16744483769497778380
       }
     }
     Overrides {
@@ -188,6 +188,24 @@ Objects {
       Name: "cs:EquipmentTemplate24"
       AssetReference {
         Id: 2940958797510570528
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate25"
+      AssetReference {
+        Id: 14708080725622686308
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate26"
+      AssetReference {
+        Id: 7696442270070804983
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate27"
+      AssetReference {
+        Id: 15498618579037627396
       }
     }
     Overrides {
@@ -503,7 +521,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 94
@@ -636,6 +654,9 @@ Objects {
   ChildIds: 3156490355792987065
   ChildIds: 3819074092412252754
   ChildIds: 11657290834954958336
+  ChildIds: 16796694185151083324
+  ChildIds: 17968777896863633660
+  ChildIds: 11966849499989736214
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -653,6 +674,357 @@ Objects {
       }
     }
     Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11966849499989736214
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 12296013401408378113
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 988.507629
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12296013401408378113
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11966849499989736214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "C - German Stug 3G"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17968777896863633660
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 7423669050496853043
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 952.964294
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 7423669050496853043
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17968777896863633660
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "V - USSR IS-3"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16796694185151083324
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4961583662149506122
+  ChildIds: 13403843484787130068
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 914.686951
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13403843484787130068
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16796694185151083324
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 10.9070129
+    UIY: 6.8
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "N - UK Comet"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -1406,9 +1778,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -1462,9 +1833,8 @@ Objects {
     Text {
       Label: "R - German Jagdtiger"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -1523,9 +1893,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -1579,9 +1948,8 @@ Objects {
     Text {
       Label: "T - German E50"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2693,9 +3061,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2749,9 +3116,8 @@ Objects {
     Text {
       Label: "6 - US M24 Chaffee"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2810,9 +3176,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2866,9 +3231,8 @@ Objects {
     Text {
       Label: "5 - German Panzer 4H"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2927,9 +3291,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2983,9 +3346,8 @@ Objects {
     Text {
       Label: "4 - UK 1955 Chimera"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3044,9 +3406,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3100,9 +3461,8 @@ Objects {
     Text {
       Label: "3 = US M4A1 Sherman"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3161,9 +3521,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3217,9 +3576,8 @@ Objects {
     Text {
       Label: "2 = USSR T-34"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3277,9 +3635,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3333,9 +3690,8 @@ Objects {
     Text {
       Label: "1 = German Panther"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439734571
+        G: 0.830000043
         A: 1
       }
       Size: 15
