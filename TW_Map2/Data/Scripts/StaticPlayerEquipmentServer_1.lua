@@ -51,6 +51,7 @@ local EQUIPMENT_TEMPLATE24 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE25 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate25")
 local EQUIPMENT_TEMPLATE26 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate26")
 local EQUIPMENT_TEMPLATE27 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate27")
+local EQUIPMENT_TEMPLATE28 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate28")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -112,10 +113,16 @@ function OnBindingPressed(player,bindingPressed)
 		player.movementControlMode = MovementControlMode.NONE
 		tankBurning = true
 	end
-	--german panther
+	--german panther or us T57
 	if bindingPressed == "ability_extra_1" then
 		RemovePlayerEquipment(player)
-		GivePlayerEquipment(player)
+		if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE28)
+		else
+		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE)
+		end
+		assert(equipment[player]:IsA("Equipment"))
+		equipment[player]:Equip(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
 		tankBurning = false
