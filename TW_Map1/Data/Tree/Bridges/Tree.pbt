@@ -131,8 +131,8 @@ Objects {
   Name: "MiniMap_Bridge"
   Transform {
     Location {
-      X: -11718.9512
-      Y: 26843.5137
+      X: -11785.2969
+      Y: 26932.1309
       Z: 782.361328
     }
     Rotation {
