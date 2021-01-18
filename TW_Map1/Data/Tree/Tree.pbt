@@ -210,6 +210,7 @@ Objects {
   Control {
     Width: 507
     Height: 507
+    UIX: 89.0507813
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -248,9 +249,12 @@ Objects {
   ParentId: 15228262498109224048
   ChildIds: 8794502718689441022
   ChildIds: 3628832423470434959
+  ChildIds: 4204073858418191548
   ChildIds: 11718657071077560308
   ChildIds: 3391623619042272009
+  ChildIds: 17389490451330179131
   ChildIds: 12171506744640636429
+  ChildIds: 4569165240744292014
   ChildIds: 6517589804281672817
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -289,11 +293,11 @@ Objects {
   }
 }
 Objects {
-  Id: 12171506744640636429
-  Name: "Elevation"
+  Id: 4569165240744292014
+  Name: "Elevation_FirstStep"
   Transform {
     Location {
-      Z: 141.352051
+      Z: 1021.40479
     }
     Rotation {
     }
@@ -312,7 +316,61 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Elevation"
+    FilePartitionName: "Elevation_FirstStep"
+  }
+}
+Objects {
+  Id: 12171506744640636429
+  Name: "Elevation_SecondStep"
+  Transform {
+    Location {
+      Z: 1377.87646
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Elevation_SecondStep"
+  }
+}
+Objects {
+  Id: 17389490451330179131
+  Name: "Hedges"
+  Transform {
+    Location {
+      Z: 488.315918
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Hedges"
   }
 }
 Objects {
@@ -320,6 +378,7 @@ Objects {
   Name: "Buildings"
   Transform {
     Location {
+      Z: 64.4926758
     }
     Rotation {
     }
@@ -366,6 +425,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "River"
+  }
+}
+Objects {
+  Id: 4204073858418191548
+  Name: "Bridges"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Bridges"
   }
 }
 Objects {
