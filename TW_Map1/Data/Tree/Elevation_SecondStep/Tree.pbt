@@ -1,31 +1,30 @@
-﻿Name: "Buildings"
-RootId: 3391623619042272009
+﻿Name: "Elevation_SecondStep"
+RootId: 12171506744640636429
 Objects {
-  Id: 2641467017523337265
-  Name: "MiniMap_Building"
+  Id: 1619500175921853482
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -16712.791
-      Y: 3753.47974
-      Z: 529.622803
+      X: -6688.86719
+      Y: 4189.68506
     }
     Rotation {
-      Yaw: -90.8363953
+      Yaw: -83.4824219
     }
     Scale {
-      X: 6.35508108
-      Y: 5.59242344
-      Z: 0.199169487
+      X: 36.4801674
+      Y: 59.8472481
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -36,8 +35,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -64,31 +64,31 @@ Objects {
   }
 }
 Objects {
-  Id: 2897481764679348620
-  Name: "MiniMap_Building"
+  Id: 6797309806907569999
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -3961.63574
-      Y: 9214.56055
-      Z: 1382.17297
+      X: 5439.34131
+      Y: -3646.26563
+      Z: -0.001953125
     }
     Rotation {
-      Yaw: -52.8547363
+      Yaw: -98.7516479
     }
     Scale {
-      X: 12.7078581
-      Y: 6.18524408
-      Z: 0.108930863
+      X: 20.5148067
+      Y: 71.3401566
+      Z: 0.56235528
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -99,8 +99,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -127,31 +128,31 @@ Objects {
   }
 }
 Objects {
-  Id: 7556546449676912133
-  Name: "MiniMap_Building"
+  Id: 294083344667649149
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 20861.0469
-      Y: 11845.7148
-      Z: 1382.17175
+      X: 199.72467
+      Y: -814.838867
+      Z: -0.001953125
     }
     Rotation {
-      Yaw: 89.1581726
+      Yaw: -137.715103
     }
     Scale {
-      X: 12.7078581
-      Y: 6.18524408
-      Z: 0.108930863
+      X: 20.5148067
+      Y: 71.3401566
+      Z: 0.56235528
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -162,8 +163,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -190,31 +192,31 @@ Objects {
   }
 }
 Objects {
-  Id: 13587455652351191016
-  Name: "MiniMap_Building"
+  Id: 2807856857464322113
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 19291.9336
-      Y: 13818.9756
-      Z: 1161.30591
+      X: -18547.3535
+      Y: 23338.1914
+      Z: -0.0029296875
     }
     Rotation {
-      Yaw: -82.5171509
+      Yaw: -117.008423
     }
     Scale {
-      X: 3.13099504
-      Y: 4.01376581
-      Z: 0.0550046526
+      X: 36.4801559
+      Y: 45.4850616
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -225,8 +227,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -253,31 +256,31 @@ Objects {
   }
 }
 Objects {
-  Id: 13629335015829492984
-  Name: "MiniMap_Building"
+  Id: 13983038725873990879
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 7395.57666
-      Y: 20650.1
-      Z: 1161.30688
+      X: -16365.0293
+      Y: 22386.8848
+      Z: -0.001953125
     }
     Rotation {
-      Yaw: 171.048965
+      Yaw: -101.93103
     }
     Scale {
-      X: 2.37033725
-      Y: 3.14779568
-      Z: 0.0550046526
+      X: 36.4801559
+      Y: 45.4850616
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -288,8 +291,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -316,31 +320,31 @@ Objects {
   }
 }
 Objects {
-  Id: 6851176476054770170
-  Name: "MiniMap_Building"
+  Id: 8420349432774027183
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 6495.88525
-      Y: 22012.0703
-      Z: 1382.17297
+      X: -17620.8613
+      Y: 21454.6875
+      Z: -0.0009765625
     }
     Rotation {
-      Yaw: 80.2421417
+      Yaw: -97.901062
     }
     Scale {
-      X: 12.7078581
-      Y: 6.18524408
-      Z: 0.108930863
+      X: 36.4801445
+      Y: 70.5680161
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -351,8 +355,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -379,31 +384,30 @@ Objects {
   }
 }
 Objects {
-  Id: 4912033848501796328
-  Name: "MiniMap_Building"
+  Id: 7724486167083186240
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -32811.9063
-      Y: 33953.3398
-      Z: 681.951904
+      X: -1280.68066
+      Y: -25600.7539
     }
     Rotation {
-      Yaw: 0.832196534
+      Yaw: -93.3141785
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 20.7350788
+      Y: 47.1454506
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -414,8 +418,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -442,31 +447,30 @@ Objects {
   }
 }
 Objects {
-  Id: 15925777002449828088
-  Name: "MiniMap_Building"
+  Id: 11672471829765630007
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -33044.9844
-      Y: 36349.1758
-      Z: 681.951904
+      X: 2063.49609
+      Y: -24316.6934
     }
     Rotation {
-      Yaw: -87.627655
+      Yaw: -46.8668823
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 20.7350788
+      Y: 47.1454506
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -477,8 +481,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -505,31 +510,30 @@ Objects {
   }
 }
 Objects {
-  Id: 7743486392370861765
-  Name: "MiniMap_Building"
+  Id: 3419902311072733344
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -20595.2129
-      Y: 27939.6699
-      Z: 651.071045
+      X: -6501.0127
+      Y: -27682.1
     }
     Rotation {
-      Yaw: -179.12088
+      Yaw: -56.1624451
     }
     Scale {
-      X: 6.15969896
-      Y: 5.59242296
-      Z: 0.199169487
+      X: 20.7351189
+      Y: 66.7671
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -540,8 +544,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -568,31 +573,30 @@ Objects {
   }
 }
 Objects {
-  Id: 5055436365685403945
-  Name: "MiniMap_Building"
+  Id: 17815931682633039148
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -32182.252
-      Y: -10505.1387
-      Z: 1161.30688
+      X: -8929.66406
+      Y: -29329.0566
     }
     Rotation {
-      Yaw: -26.3624268
+      Yaw: -40.3282471
     }
     Scale {
-      X: 3.37045789
-      Y: 4.64016962
-      Z: 0.0851368681
+      X: 20.7351189
+      Y: 66.7671
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -603,8 +607,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -631,31 +636,30 @@ Objects {
   }
 }
 Objects {
-  Id: 1406683060771556861
-  Name: "MiniMap_Building"
+  Id: 12427221317184871808
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -31692.5918
-      Y: -12036.0771
-      Z: 1382.17297
+      X: -13267.5879
+      Y: -31724.5762
     }
     Rotation {
-      Yaw: -35.8483887
+      Yaw: -85.5789795
     }
     Scale {
-      X: 12.7078581
-      Y: 6.18524408
-      Z: 0.108930863
+      X: 20.7351036
+      Y: 59.3380585
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -666,8 +670,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -694,31 +699,30 @@ Objects {
   }
 }
 Objects {
-  Id: 11529098179537283864
-  Name: "MiniMap_Building"
+  Id: 15720494156456264052
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -25314.1563
-      Y: -301.809113
-      Z: 529.622803
+      X: -17818.2559
+      Y: -32882.6
     }
     Rotation {
-      Yaw: -92.3918152
+      Yaw: 162.74173
     }
     Scale {
-      X: 6.15969896
-      Y: 5.59242296
-      Z: 0.199169487
+      X: 20.7351379
+      Y: 48.9863853
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -729,8 +733,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -757,31 +762,30 @@ Objects {
   }
 }
 Objects {
-  Id: 8544647730078178023
-  Name: "MiniMap_Building"
+  Id: 8796460143825648063
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -30120.7168
-      Y: 3759.39355
-      Z: 529.622803
+      X: -16873.5508
+      Y: -33289.8828
     }
     Rotation {
-      Yaw: -179.12088
+      Yaw: -38.7094421
     }
     Scale {
-      X: 6.15969896
-      Y: 5.59242296
-      Z: 0.199169487
+      X: 20.7351036
+      Y: 59.3380585
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -792,8 +796,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -820,31 +825,30 @@ Objects {
   }
 }
 Objects {
-  Id: 9423581199167005258
-  Name: "MiniMap_Building"
+  Id: 8276409494535467442
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -17992.8359
-      Y: 10951.8379
-      Z: 695.382202
+      X: -26429.043
+      Y: -11198.3877
     }
     Rotation {
-      Yaw: -0.0270385742
+      Yaw: 118.808319
     }
     Scale {
-      X: 12.7745152
-      Y: 6.35679722
-      Z: 0.211982682
+      X: 28.9706078
+      Y: 16.7530193
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -855,8 +859,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -883,31 +888,30 @@ Objects {
   }
 }
 Objects {
-  Id: 11207981639463449771
-  Name: "MiniMap_Building"
+  Id: 5832956254907516445
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -11355.9063
-      Y: 13460.29
-      Z: 1382.17346
+      X: -21384.291
+      Y: -7779.44336
     }
     Rotation {
-      Yaw: -82.8808594
+      Yaw: -55.6018066
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 33.2945328
+      Y: 109.673302
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -918,8 +922,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -946,31 +951,30 @@ Objects {
   }
 }
 Objects {
-  Id: 3166348632997821147
-  Name: "MiniMap_Building"
+  Id: 10308824234087076092
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -9275
-      Y: 9575
-      Z: 1382.17346
+      X: -14881.2842
+      Y: -3327.04028
     }
     Rotation {
-      Yaw: 125.859627
+      Yaw: -55.6018372
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 33.2945137
+      Y: 59.8472824
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -981,8 +985,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1009,31 +1014,30 @@ Objects {
   }
 }
 Objects {
-  Id: 11032048153852886030
-  Name: "MiniMap_Building"
+  Id: 5940482650642360718
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -9984.42871
-      Y: 9440.22852
-      Z: 1382.17358
+      X: -10071.9482
+      Y: -387.837158
     }
     Rotation {
-      Yaw: 35.9679565
+      Yaw: -62.4303894
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 33.2945137
+      Y: 59.8472824
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1044,8 +1048,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1072,31 +1077,30 @@ Objects {
   }
 }
 Objects {
-  Id: 14559642247031891428
-  Name: "MiniMap_Building"
+  Id: 17199716780120299072
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -8889.04492
-      Y: 7703.80859
-      Z: 1161.30688
+      X: -4689.6665
+      Y: 1441.56165
     }
     Rotation {
-      Yaw: -56.9433899
+      Yaw: -83.4824219
     }
     Scale {
-      X: 3.37045789
-      Y: 4.64016962
-      Z: 0.0851368681
+      X: 36.4801674
+      Y: 59.8472481
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1107,8 +1111,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1135,31 +1140,30 @@ Objects {
   }
 }
 Objects {
-  Id: 10778689418918579436
-  Name: "MiniMap_Building"
+  Id: 12896044052343406995
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -8051.19531
-      Y: 6192.93555
-      Z: 1382.17297
+      X: -8742.74219
+      Y: 5321.32227
     }
     Rotation {
-      Yaw: -132.625229
+      Yaw: 172.24855
     }
     Scale {
-      X: 12.7078581
-      Y: 6.18524408
-      Z: 0.108930863
+      X: 36.4801559
+      Y: 108.053558
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1170,8 +1174,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1198,31 +1203,30 @@ Objects {
   }
 }
 Objects {
-  Id: 2645984723324438146
-  Name: "MiniMap_Building"
+  Id: 3508490023740011009
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -3970.47168
-      Y: 3352.09839
-      Z: 1382.17297
+      X: -34916.2
+      Y: 13140.8057
     }
     Rotation {
-      Yaw: -144.140381
+      Yaw: -83.3894348
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 39.9733047
+      Y: 42.3308716
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1233,8 +1237,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1261,31 +1266,30 @@ Objects {
   }
 }
 Objects {
-  Id: 4581421982766085483
-  Name: "MiniMap_Building"
+  Id: 16499247292946427341
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -3835.69971
-      Y: 2642.67041
-      Z: 1382.1731
+      X: -36700.1523
+      Y: 11601.335
     }
     Rotation {
-      Yaw: 125.967987
+      Yaw: -29.1653748
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 39.9733238
+      Y: 50.1354942
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1296,8 +1300,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1324,31 +1329,30 @@ Objects {
   }
 }
 Objects {
-  Id: 10144733335266214398
-  Name: "MiniMap_Building"
+  Id: 688565219988043585
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -2307.45605
-      Y: 2515.80273
-      Z: 1161.30688
+      X: -39039.4805
+      Y: 9193.6748
     }
     Rotation {
-      Yaw: -131.885971
+      Yaw: -54.0506592
     }
     Scale {
-      X: 3.37045789
-      Y: 4.64016962
-      Z: 0.0851368681
+      X: 39.9733315
+      Y: 72.3749847
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1359,8 +1363,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1387,31 +1392,30 @@ Objects {
   }
 }
 Objects {
-  Id: 12325796739972446148
-  Name: "MiniMap_Building"
+  Id: 13268991180187021008
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -599.873108
-      Y: -2126.40283
-      Z: 973.422729
+      X: -38822.6523
+      Y: 4187.96777
     }
     Rotation {
-      Yaw: 167.275284
+      Yaw: 19.7419014
     }
     Scale {
-      X: 4.31242847
-      Y: 4.93963909
-      Z: 0.108930863
+      X: 28.9706345
+      Y: 72.3749466
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1422,8 +1426,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1450,31 +1455,30 @@ Objects {
   }
 }
 Objects {
-  Id: 7305121483114606487
-  Name: "MiniMap_Building"
+  Id: 565334513828532972
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -491.777039
-      Y: -848.686523
-      Z: 1382.1731
+      X: -35302.5547
+      Y: -6807.08838
     }
     Rotation {
-      Yaw: 177.903961
+      Yaw: 19.7419033
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 28.9706345
+      Y: 72.3749466
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1485,8 +1489,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1513,31 +1518,30 @@ Objects {
   }
 }
 Objects {
-  Id: 11151276485449740495
-  Name: "MiniMap_Building"
+  Id: 9555523417520874367
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 2695.9812
-      Y: -3135.15063
-      Z: 1382.17261
+      X: -32375.9395
+      Y: -10678.4785
     }
     Rotation {
-      Yaw: 144.298782
+      Yaw: 58.3606834
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 28.9705982
+      Y: 49.6381836
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1548,8 +1552,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1576,31 +1581,30 @@ Objects {
   }
 }
 Objects {
-  Id: 1175134772326490601
-  Name: "MiniMap_Building"
+  Id: 1712384862544774564
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -7228.92822
-      Y: -2382.58105
-      Z: 695.382324
+      X: -28756.0742
+      Y: -11129.3496
     }
     Rotation {
-      Yaw: -6.64285278
+      Yaw: 82.8277664
     }
     Scale {
-      X: 12.7745152
-      Y: 6.35679722
-      Z: 0.211982682
+      X: 28.9705982
+      Y: 49.6381836
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1611,8 +1615,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1639,31 +1644,30 @@ Objects {
   }
 }
 Objects {
-  Id: 4755963378533407575
-  Name: "MiniMap_Building"
+  Id: 13050233670371869054
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -9007.9375
-      Y: -9706.51172
-      Z: 529.622925
+      X: -31941.3477
+      Y: -9526.77539
     }
     Rotation {
-      Yaw: 90.4978943
+      Yaw: 48.0091057
     }
     Scale {
-      X: 6.15969896
-      Y: 5.59242296
-      Z: 0.199169487
+      X: 28.9705772
+      Y: 67.6278534
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1674,8 +1678,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1702,31 +1707,30 @@ Objects {
   }
 }
 Objects {
-  Id: 16275193221926129129
-  Name: "MiniMap_Building"
+  Id: 4919524484433933021
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 7306.0332
-      Y: -2142.56079
-      Z: 1480.44873
+      X: -34733.6211
+      Y: -6193.87793
     }
     Rotation {
-      Yaw: 144.298782
+      Yaw: 28.5359325
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 28.9705772
+      Y: 67.6278534
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1737,8 +1741,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1765,31 +1770,30 @@ Objects {
   }
 }
 Objects {
-  Id: 10562883762820940010
-  Name: "MiniMap_Building"
+  Id: 2017581672806888172
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 28539.8574
-      Y: -44973.4727
-      Z: 789.399902
+      X: -36927.9336
+      Y: -1810.05225
     }
     Rotation {
-      Yaw: -91.3678589
+      Yaw: 14.814002
     }
     Scale {
-      X: 4.71731186
-      Y: 4.32166815
-      Z: 0.0419856049
+      X: 28.9705772
+      Y: 67.6278534
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1800,8 +1804,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1828,31 +1833,30 @@ Objects {
   }
 }
 Objects {
-  Id: 13806118040716185209
-  Name: "MiniMap_Building"
+  Id: 6556526278614606941
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -11200.6777
-      Y: -35740.6563
-      Z: 789.397949
+      X: -37020.4961
+      Y: 5258.21582
     }
     Rotation {
-      Yaw: -3.84893799
+      Yaw: -12.6166382
     }
     Scale {
-      X: 13.1522875
-      Y: 6.81845713
-      Z: 0.0961037427
+      X: 36.4801521
+      Y: 67.627861
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1863,8 +1867,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1891,31 +1896,30 @@ Objects {
   }
 }
 Objects {
-  Id: 7714001663004911950
-  Name: "MiniMap_Building"
+  Id: 13603163495921414557
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 29414.5
-      Y: -42203.8438
-      Z: 789.399902
+      X: -34198.7188
+      Y: 11709.8105
     }
     Rotation {
-      Yaw: -85.8147888
+      Yaw: -32.3844
     }
     Scale {
-      X: 12.8577671
-      Y: 5.63780499
-      Z: 0.109401815
+      X: 36.4801521
+      Y: 67.627861
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1926,8 +1930,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -1954,31 +1959,30 @@ Objects {
   }
 }
 Objects {
-  Id: 8655383419173874755
-  Name: "MiniMap_Building"
+  Id: 10442351735840367001
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 19103.7285
-      Y: -39384.5781
-      Z: 789.397949
+      X: -30008.7461
+      Y: 16721.0684
     }
     Rotation {
-      Yaw: -165.398178
+      Yaw: -37.0917358
     }
     Scale {
-      X: 6.32644463
-      Y: 5.74077368
-      Z: 0.0599212125
+      X: 36.4801521
+      Y: 67.627861
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -1989,8 +1993,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2017,31 +2022,30 @@ Objects {
   }
 }
 Objects {
-  Id: 2330415988190118288
-  Name: "MiniMap_Building"
+  Id: 16955285260759587102
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 22960.6738
-      Y: -30693.3398
-      Z: 789.397949
+      X: -25540.748
+      Y: 20626.0293
     }
     Rotation {
-      Yaw: 178.382019
+      Yaw: -58.3360291
     }
     Scale {
-      X: 5.21930695
-      Y: 6.16987133
-      Z: 0.0494349413
+      X: 36.4801521
+      Y: 67.627861
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2052,8 +2056,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2080,31 +2085,30 @@ Objects {
   }
 }
 Objects {
-  Id: 10735149089835279067
-  Name: "MiniMap_Building"
+  Id: 1429594627604280873
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 18593.7852
-      Y: -18741.6211
-      Z: 789.397949
+      X: -21749.7441
+      Y: 21383.3828
     }
     Rotation {
-      Yaw: -168.783325
+      Yaw: -75.9855042
     }
     Scale {
-      X: 3.99086118
-      Y: 3.06764746
-      Z: 0.0377997085
+      X: 36.4801521
+      Y: 67.627861
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2115,8 +2119,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2143,31 +2148,30 @@ Objects {
   }
 }
 Objects {
-  Id: 106288285488476725
-  Name: "MiniMap_Building"
+  Id: 8367705014275396395
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 16686.0098
-      Y: -18295.6074
-      Z: 789.397949
+      X: -21698.7148
+      Y: 22721.8398
     }
     Rotation {
-      Yaw: 94.0875397
+      Yaw: -61.0677185
     }
     Scale {
-      X: 12.7078447
-      Y: 6.54201317
-      Z: 0.108930863
+      X: 36.4801521
+      Y: 67.627861
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2178,8 +2182,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2206,31 +2211,30 @@ Objects {
   }
 }
 Objects {
-  Id: 5534033145730825782
-  Name: "MiniMap_Building"
+  Id: 9762976425607533013
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 11004.3311
-      Y: -32467.2656
-      Z: 789.397949
+      X: -11640.8867
+      Y: 16391.5273
     }
     Rotation {
-      Yaw: 89.5506439
+      Yaw: -148.606964
     }
     Scale {
-      X: 5.85237312
-      Y: 4.92292881
-      Z: 0.0652805194
+      X: 36.4801521
+      Y: 67.627861
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2241,8 +2245,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2269,31 +2274,30 @@ Objects {
   }
 }
 Objects {
-  Id: 6594220693412044447
-  Name: "MiniMap_Building"
+  Id: 2534128254768453643
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 8952.29395
-      Y: -35715.0117
-      Z: 789.399902
+      X: 3061.12939
+      Y: 31106.7813
     }
     Rotation {
-      Yaw: 4.08757544
+      Yaw: -103.987915
     }
     Scale {
-      X: 10.8641205
-      Y: 5.61353254
-      Z: 0.108930863
+      X: 27.9902344
+      Y: 52.8305359
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2304,8 +2308,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2332,31 +2337,30 @@ Objects {
   }
 }
 Objects {
-  Id: 12291872727134466169
-  Name: "MiniMap_Building"
+  Id: 3296467308915523446
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 7092.25
-      Y: -33178.2539
-      Z: 789.399902
+      X: 7663.28027
+      Y: 29384.7324
     }
     Rotation {
-      Yaw: -84.3815918
+      Yaw: -115.7267
     }
     Scale {
-      X: 4.1801753
-      Y: 3.51630282
-      Z: 0.0466279127
+      X: 27.9902344
+      Y: 52.8305359
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2367,8 +2371,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2395,31 +2400,30 @@ Objects {
   }
 }
 Objects {
-  Id: 9487360837348756912
-  Name: "MiniMap_Building"
+  Id: 3963948675573829943
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 3218.14624
-      Y: -39087.7305
-      Z: 789.399902
+      X: 12199.8506
+      Y: 27065.0898
     }
     Rotation {
-      Yaw: -8.79681396
+      Yaw: -117.773529
     }
     Scale {
-      X: 5.85237312
-      Y: 4.92292881
-      Z: 0.0652805194
+      X: 27.9902344
+      Y: 52.8305359
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2430,8 +2434,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2458,31 +2463,30 @@ Objects {
   }
 }
 Objects {
-  Id: 16681728392475864928
-  Name: "MiniMap_Building"
+  Id: 15023961948419678260
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -7272.61377
-      Y: -41995.7266
-      Z: 789.397949
+      X: 16495.9375
+      Y: 24517.4414
     }
     Rotation {
-      Yaw: 1.68298948
+      Yaw: -124.030289
     }
     Scale {
-      X: 6.1053009
-      Y: 5.28199434
-      Z: 0.0744484365
+      X: 27.9902344
+      Y: 52.8305359
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2493,8 +2497,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2521,31 +2526,30 @@ Objects {
   }
 }
 Objects {
-  Id: 9586061254930358294
-  Name: "MiniMap_Building"
+  Id: 14635670937240258691
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -10026.9092
-      Y: -51320.3711
-      Z: 789.397949
+      X: 20816.1191
+      Y: 21379.2148
     }
     Rotation {
-      Yaw: 13.3704586
+      Yaw: -128.460754
     }
     Scale {
-      X: 4.05586
-      Y: 3.38912988
-      Z: 0.0558909
+      X: 27.9902344
+      Y: 52.8305359
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2556,8 +2560,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2584,31 +2589,30 @@ Objects {
   }
 }
 Objects {
-  Id: 7992637182477563729
-  Name: "MiniMap_Building"
+  Id: 6555503984505387083
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -12983.3613
-      Y: -50751.7734
-      Z: 789.398438
+      X: 23990.1523
+      Y: 18080.9609
     }
     Rotation {
-      Yaw: 72.4643402
+      Yaw: -139.757507
     }
     Scale {
-      X: 12.9344835
-      Y: 6.22202158
-      Z: 0.120738834
+      X: 27.9902344
+      Y: 52.8305359
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2619,8 +2623,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2647,31 +2652,30 @@ Objects {
   }
 }
 Objects {
-  Id: 14567031316681473850
-  Name: "MiniMap_Building"
+  Id: 7355644710372492827
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: 959.859619
-      Y: -34623.0078
-      Z: 789.399902
+      X: 27171.3242
+      Y: 14332.0898
     }
     Rotation {
-      Yaw: 11.9852982
+      Yaw: -139.757507
     }
     Scale {
-      X: 12.0911007
-      Y: 6.01124716
-      Z: 0.116648585
+      X: 27.4053841
+      Y: 52.8305511
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2682,8 +2686,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2710,31 +2715,30 @@ Objects {
   }
 }
 Objects {
-  Id: 5995796713717205750
-  Name: "MiniMap_Building"
+  Id: 10373605690294401635
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -3564.39795
-      Y: -13653.7
-      Z: 601.663696
+      X: 29078.1973
+      Y: 11269.2139
     }
     Rotation {
-      Yaw: -1.78518677
+      Yaw: -164.738739
     }
     Scale {
-      X: 6.12560129
-      Y: 5.02083778
-      Z: 0.0885938182
+      X: 25.983675
+      Y: 32.1137886
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2745,8 +2749,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2773,31 +2778,30 @@ Objects {
   }
 }
 Objects {
-  Id: 15581882750654371651
-  Name: "MiniMap_Building"
+  Id: 9493802235027798088
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -3215.54321
-      Y: -21844.3301
-      Z: 789.399902
+      X: 33848.1953
+      Y: -32108.9453
     }
     Rotation {
-      Yaw: -23.4703979
+      Yaw: -132.797852
     }
     Scale {
-      X: 6.62858582
-      Y: 4.94035959
-      Z: 0.0958684
+      X: 32.2547607
+      Y: 52.8000031
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2808,8 +2812,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2836,31 +2841,30 @@ Objects {
   }
 }
 Objects {
-  Id: 5082110709762548986
-  Name: "MiniMap_Building"
+  Id: 1390583689091915508
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -15008.0283
-      Y: -22223.0527
-      Z: 695.382324
+      X: 30850.6777
+      Y: -29330.4941
     }
     Rotation {
-      Yaw: -6.93444824
+      Yaw: -136.232574
     }
     Scale {
-      X: 12.7745152
-      Y: 6.35679722
-      Z: 0.211982682
+      X: 32.2547607
+      Y: 52.8000031
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2871,8 +2875,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }
@@ -2899,31 +2904,30 @@ Objects {
   }
 }
 Objects {
-  Id: 172172790456352466
-  Name: "MiniMap_Building"
+  Id: 10719632707957385394
+  Name: "MiniMap_Elevation_SecondStep"
   Transform {
     Location {
-      X: -15141.0557
-      Y: -15892.0557
-      Z: 529.622803
+      X: 27575
+      Y: -25975
     }
     Rotation {
-      Yaw: 77.5778351
+      Yaw: -136.751907
     }
     Scale {
-      X: 6.15969896
-      Y: 5.59242296
-      Z: 0.199169487
+      X: 23.6000099
+      Y: 52.8
+      Z: 1
     }
   }
-  ParentId: 3391623619042272009
+  ParentId: 12171506744640636429
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tint"
       Color {
-        R: 0.395
-        G: 0.395
-        B: 0.395
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
         A: 1
       }
     }
@@ -2934,8 +2938,1143 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.454768
-        B: 0.63
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2610665982923580823
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 25250
+      Y: -22575
+    }
+    Rotation {
+      Yaw: -154.387695
+    }
+    Scale {
+      X: 23.6000099
+      Y: 52.8
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11658513477865438282
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: -15428.7021
+      Y: -30044.0273
+    }
+    Rotation {
+      Yaw: 118.104454
+    }
+    Scale {
+      X: 20.7351379
+      Y: 48.9863853
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9198197895130318989
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: -13571.9678
+      Y: -30267.334
+    }
+    Rotation {
+      Yaw: -51.43573
+    }
+    Scale {
+      X: 20.7351036
+      Y: 59.3380585
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18010096464568654328
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: -8985.87793
+      Y: -27635.6504
+    }
+    Rotation {
+      Yaw: -66.7677612
+    }
+    Scale {
+      X: 20.7351036
+      Y: 59.3380585
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11460680690679652767
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: -2298.59668
+      Y: -25057.0117
+    }
+    Rotation {
+      Yaw: -69.4760132
+    }
+    Scale {
+      X: 20.735096
+      Y: 109.00676
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5390688935792990098
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 4287.9043
+      Y: -22405.3613
+    }
+    Rotation {
+      Yaw: -65.6322
+    }
+    Scale {
+      X: 20.7350788
+      Y: 47.1454506
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9684746958539981436
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 7752.62793
+      Y: -20075.9688
+    }
+    Rotation {
+      Yaw: -49.039978
+    }
+    Scale {
+      X: 20.7350788
+      Y: 47.1454506
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1746734862289705666
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 10463.1064
+      Y: -17350.3594
+    }
+    Rotation {
+      Yaw: -41.6047974
+    }
+    Scale {
+      X: 20.7350788
+      Y: 47.1454506
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15108605427601841633
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 12330.1738
+      Y: -11790.6494
+    }
+    Rotation {
+      Yaw: -179.585632
+    }
+    Scale {
+      X: 18.2875118
+      Y: 52.8305702
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8031891867413544461
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 12739.2871
+      Y: -13771.9072
+    }
+    Rotation {
+      Yaw: -25.7471313
+    }
+    Scale {
+      X: 20.7350788
+      Y: 47.1454506
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10220042869701183322
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 13143.8623
+      Y: -8815.84
+    }
+    Rotation {
+      Yaw: -164.786713
+    }
+    Scale {
+      X: 36.4801445
+      Y: 52.8305511
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3641804797880998190
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 15161.623
+      Y: -11436.501
+    }
+    Rotation {
+      Yaw: -56.7910461
+    }
+    Scale {
+      X: 36.4801292
+      Y: 68.8693237
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3628302709654810471
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 17388.0938
+      Y: -8267.39063
+    }
+    Rotation {
+      Yaw: -112.070099
+    }
+    Scale {
+      X: 36.4801445
+      Y: 52.8305511
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12484365320212046243
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 13652.7891
+      Y: -6935.68604
+    }
+    Rotation {
+      Yaw: -108.033569
+    }
+    Scale {
+      X: 36.4801407
+      Y: 47.1464386
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17627839681473286355
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 8598.26
+      Y: -3939.1377
+    }
+    Rotation {
+      Yaw: -124.077026
+    }
+    Scale {
+      X: 36.4801407
+      Y: 106.522644
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16651484848721138817
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: 676.395691
+      Y: 1521.90906
+    }
+    Rotation {
+      Yaw: -125.462509
+    }
+    Scale {
+      X: 36.4801407
+      Y: 126.859566
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 475027378652859742
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: -12184.8691
+      Y: 17288.3379
+    }
+    Rotation {
+      Yaw: -149.251434
+    }
+    Scale {
+      X: 36.4801407
+      Y: 126.859566
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16650875659876637514
+  Name: "MiniMap_Elevation_SecondStep"
+  Transform {
+    Location {
+      X: -6661.84912
+      Y: 8717.09375
+    }
+    Rotation {
+      Yaw: -141.946518
+    }
+    Scale {
+      X: 36.4801369
+      Y: 107.270271
+      Z: 1
+    }
+  }
+  ParentId: 12171506744640636429
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.2
+        G: 0.136127442
+        B: 0.0379139669
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.719951153
+        B: 0.433930874
         A: 1
       }
     }

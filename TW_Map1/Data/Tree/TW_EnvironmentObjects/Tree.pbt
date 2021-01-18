@@ -1,54 +1,6 @@
 ﻿Name: "TW_EnvironmentObjects"
 RootId: 2145329945819153105
 Objects {
-  Id: 3047276596890849414
-  Name: "TW_Water"
-  Transform {
-    Location {
-      X: 43250
-      Y: -48450
-      Z: -709.984375
-    }
-    Rotation {
-      Yaw: -90
-    }
-    Scale {
-      X: 9722.79883
-      Y: 7000.56152
-      Z: 4.91428566
-    }
-  }
-  ParentId: 2145329945819153105
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10272622353237857265
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16374150260036817633
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 4748802075384629324
   Name: "TW_Tractors"
   Transform {
@@ -10016,7 +9968,7 @@ Objects {
     Location {
       X: -1900
       Y: 13575
-      Z: -709.984375
+      Z: -511.289398
     }
     Rotation {
       Yaw: -90
