@@ -1,6 +1,259 @@
 ﻿Name: "River"
 RootId: 11718657071077560308
 Objects {
+  Id: 8296921212516558424
+  Name: "MiniMap_River"
+  Transform {
+    Location {
+      X: -26437.7363
+      Y: -41039.875
+      Z: 0.0009765625
+    }
+    Rotation {
+      Yaw: -138.166168
+    }
+    Scale {
+      X: 17.3181362
+      Y: 36.8374405
+      Z: 0.327864021
+    }
+  }
+  ParentId: 11718657071077560308
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.209567979
+        G: 0.272951424
+        B: 0.296
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.239000008
+        G: 0.143162087
+        B: 0.0745511279
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16060214784296519809
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3066073193952383103
+  Name: "MiniMap_River"
+  Transform {
+    Location {
+      X: -23325.3125
+      Y: -46129.7188
+    }
+    Rotation {
+      Yaw: -167.991257
+    }
+    Scale {
+      X: 8.59596252
+      Y: 28.5138531
+      Z: 0.327864021
+    }
+  }
+  ParentId: 11718657071077560308
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.209567979
+        G: 0.272951424
+        B: 0.296
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.239000008
+        G: 0.143162087
+        B: 0.0745511279
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16060214784296519809
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7069442638681158880
+  Name: "MiniMap_River"
+  Transform {
+    Location {
+      X: -22740.2539
+      Y: -46807.5078
+    }
+    Rotation {
+      Yaw: -167.991287
+    }
+    Scale {
+      X: 8.59596252
+      Y: 28.5138531
+      Z: 0.327864021
+    }
+  }
+  ParentId: 11718657071077560308
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.209567979
+        G: 0.272951424
+        B: 0.296
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.239000008
+        G: 0.143162087
+        B: 0.0745511279
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16060214784296519809
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4731989392894365033
+  Name: "MiniMap_River"
+  Transform {
+    Location {
+      X: -24939.6621
+      Y: -41954.3
+    }
+    Rotation {
+      Yaw: -157.522522
+    }
+    Scale {
+      X: 17.4126701
+      Y: 86.9684296
+      Z: 1
+    }
+  }
+  ParentId: 11718657071077560308
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.209567979
+        G: 0.272951424
+        B: 0.296
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.239000008
+        G: 0.143162087
+        B: 0.0745511279
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16060214784296519809
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 13195196782389707623
   Name: "MiniMap_River"
   Transform {
@@ -761,16 +1014,16 @@ Objects {
   Name: "MiniMap_River"
   Transform {
     Location {
-      X: 43502.0664
-      Y: -59546.4766
+      X: 43476.5
+      Y: -59420.082
       Z: 0.00048828125
     }
     Rotation {
       Yaw: 11.4363308
     }
     Scale {
-      X: 16.4000072
-      Y: 41.6903191
+      X: 16.3999691
+      Y: 38.3619
       Z: 1
     }
   }
@@ -883,207 +1136,20 @@ Objects {
   }
 }
 Objects {
-  Id: 12351781810111032397
-  Name: "MiniMap_River"
-  Transform {
-    Location {
-      X: -23551.3887
-      Y: -52078.8164
-    }
-    Rotation {
-      Yaw: 2.83276272
-    }
-    Scale {
-      X: 36.2629967
-      Y: 92.7339935
-      Z: 1
-    }
-  }
-  ParentId: 11718657071077560308
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.209567979
-        G: 0.272951424
-        B: 0.296
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.239000008
-        G: 0.143162087
-        B: 0.0745511279
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16060214784296519809
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4520493200985477337
-  Name: "MiniMap_River"
-  Transform {
-    Location {
-      X: -23424.3828
-      Y: -59050
-    }
-    Rotation {
-    }
-    Scale {
-      X: 36.2630081
-      Y: 53.7179375
-      Z: 1
-    }
-  }
-  ParentId: 11718657071077560308
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.209567979
-        G: 0.272951424
-        B: 0.296
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.239000008
-        G: 0.143162087
-        B: 0.0745511279
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16060214784296519809
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5379725565846466996
-  Name: "MiniMap_River"
-  Transform {
-    Location {
-      X: -24429.7734
-      Y: -45349.3398
-    }
-    Rotation {
-      Yaw: -168.781082
-    }
-    Scale {
-      X: 36.2630081
-      Y: 53.7179375
-      Z: 1
-    }
-  }
-  ParentId: 11718657071077560308
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.209567979
-        G: 0.272951424
-        B: 0.296
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.239000008
-        G: 0.143162087
-        B: 0.0745511279
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16060214784296519809
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 17896018208839316068
   Name: "MiniMap_River"
   Transform {
     Location {
-      X: -26112.1387
-      Y: -41146.4375
+      X: -23758.4727
+      Y: -46520.7539
+      Z: -0.0009765625
     }
     Rotation {
-      Yaw: -148.70163
+      Yaw: -142.140976
     }
     Scale {
-      X: 36.2630081
-      Y: 53.7179375
+      X: 7.72775841
+      Y: 53.7179604
       Z: 1
     }
   }
@@ -1264,15 +1330,15 @@ Objects {
   Name: "MiniMap_River"
   Transform {
     Location {
-      X: -26217.5547
-      Y: -42749.8555
+      X: -26751.7168
+      Y: -42181.4
     }
     Rotation {
-      Yaw: -148.70166
+      Yaw: -141.629181
     }
     Scale {
-      X: 36.2630501
-      Y: 92.4106827
+      X: 14.5821304
+      Y: 92.4106522
       Z: 1
     }
   }
@@ -1327,15 +1393,15 @@ Objects {
   Name: "MiniMap_River"
   Transform {
     Location {
-      X: -28615.1777
-      Y: -36852.7461
+      X: -28558.2344
+      Y: -36691.0664
     }
     Rotation {
-      Yaw: -174.866959
+      Yaw: -172.936874
     }
     Scale {
-      X: 36.2630081
-      Y: 53.7179375
+      X: 36.2630234
+      Y: 47.8420944
       Z: 1
     }
   }
@@ -5802,7 +5868,7 @@ Objects {
   Transform {
     Location {
       X: 43975
-      Y: -59606.1563
+      Y: -59343.3516
     }
     Rotation {
     }
