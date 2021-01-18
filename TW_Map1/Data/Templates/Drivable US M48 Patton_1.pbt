@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 6542989020869574033
+  Id: 13668335500868742047
   Name: "Drivable US M48 Patton"
   PlatformAssetType: 5
   TemplateAsset {
@@ -3570,12 +3570,10 @@
         ParentId: 5000310357584992135
         ChildIds: 13133364930998093884
         ChildIds: 17642897186868259457
-        ChildIds: 9316688228374672998
-        ChildIds: 8024673076201360815
         ChildIds: 12852974457417906324
         ChildIds: 8724751871107970947
         ChildIds: 18130732376820172866
-        ChildIds: 7136837287366729339
+        ChildIds: 11391372813331182299
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3668,114 +3666,6 @@
             X: 0.53892374
             Y: 0.740766883
             Z: 0.99999994
-          }
-        }
-        ParentId: 7217655911465683927
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15463439290356156719
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9316688228374672998
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: 8.67547607
-            Y: -98.3826904
-            Z: 9.14097595
-          }
-          Rotation {
-            Pitch: -0.378540039
-          }
-          Scale {
-            X: 1.06588566
-            Y: 0.740766883
-            Z: 1.00000012
-          }
-        }
-        ParentId: 7217655911465683927
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15463439290356156719
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8024673076201360815
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            X: 84.2041779
-            Y: -98.3826904
-            Z: 10.3560944
-          }
-          Rotation {
-            Pitch: -0.0572814941
-          }
-          Scale {
-            X: 1.06588566
-            Y: 0.740766883
-            Z: 1.00000012
           }
         }
         ParentId: 7217655911465683927
@@ -3949,17 +3839,17 @@
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 84.2041626
-            Y: 54.5695801
-            Z: 10.3560944
+            X: 42.9313698
+            Y: 51.215519
+            Z: 10.3560905
           }
           Rotation {
             Pitch: -0.0572814941
           }
           Scale {
-            X: 1.06588566
-            Y: 0.740766883
-            Z: 1.00000012
+            X: 1.78175473
+            Y: 0.68582058
+            Z: 1.00000048
           }
         }
         ParentId: 7217655911465683927
@@ -3999,21 +3889,21 @@
         }
       }
       Objects {
-        Id: 7136837287366729339
+        Id: 11391372813331182299
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 8.67547607
-            Y: 54.5695801
-            Z: 9.14097595
+            X: 42.9313698
+            Y: -100.43634
+            Z: 10.3560905
           }
           Rotation {
-            Pitch: -0.378540039
+            Pitch: -0.0572814941
           }
           Scale {
-            X: 1.06588566
-            Y: 0.740766883
-            Z: 1.00000012
+            X: 1.78175461
+            Y: 0.68582058
+            Z: 1.00000048
           }
         }
         ParentId: 7217655911465683927

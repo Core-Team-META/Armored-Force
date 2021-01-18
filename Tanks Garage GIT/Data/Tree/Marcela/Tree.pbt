@@ -44,7 +44,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate"
       AssetReference {
-        Id: 12925823340593076145
+        Id: 14129180086830417282
       }
     }
     Overrides {
@@ -58,31 +58,31 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate2"
       AssetReference {
-        Id: 16071062136940729750
+        Id: 13499437047315910078
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate3"
       AssetReference {
-        Id: 3514728183215809148
+        Id: 1976090991745567963
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate4"
       AssetReference {
-        Id: 6806501384282816603
+        Id: 17467364654639020699
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate5"
       AssetReference {
-        Id: 5538648410928119847
+        Id: 7516114789730753284
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 11895577686412151181
+        Id: 1977131737522196893
       }
     }
     Overrides {
@@ -142,13 +142,13 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate16"
       AssetReference {
-        Id: 11744440929555001189
+        Id: 1017367019735459438
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate17"
       AssetReference {
-        Id: 13466022340780387165
+        Id: 16744483769497778380
       }
     }
     Overrides {
@@ -506,7 +506,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 94
@@ -1409,9 +1409,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -1465,9 +1464,8 @@ Objects {
     Text {
       Label: "R - German Jagdtiger"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -1526,9 +1524,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -1582,9 +1579,8 @@ Objects {
     Text {
       Label: "T - German E50"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2696,9 +2692,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2752,9 +2747,8 @@ Objects {
     Text {
       Label: "6 - US M24 Chaffee"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2813,9 +2807,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2869,9 +2862,8 @@ Objects {
     Text {
       Label: "5 - German Panzer 4H"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -2930,9 +2922,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -2986,9 +2977,8 @@ Objects {
     Text {
       Label: "4 - UK 1955 Chimera"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3047,9 +3037,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3103,9 +3092,8 @@ Objects {
     Text {
       Label: "3 = US M4A1 Sherman"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3164,9 +3152,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3220,9 +3207,8 @@ Objects {
     Text {
       Label: "2 = USSR T-34"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -3280,9 +3266,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3336,9 +3321,8 @@ Objects {
     Text {
       Label: "1 = German Panther"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0439733565
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -85325,9 +85309,11 @@ Objects {
   ChildIds: 12715870897345426481
   ChildIds: 2457274491728318856
   ChildIds: 745404958083197228
-  ChildIds: 2832938490217261189
-  ChildIds: 11482577187567270354
-  ChildIds: 3093367392741723822
+  ChildIds: 2574502009406429383
+  ChildIds: 14573764353970168892
+  ChildIds: 2447716127107399258
+  ChildIds: 5234222121411288889
+  ChildIds: 3449019204278537011
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -85339,13 +85325,61 @@ Objects {
   }
 }
 Objects {
-  Id: 3093367392741723822
+  Id: 3449019204278537011
   Name: "Point Light"
   Transform {
     Location {
-      X: 744.150085
+      X: -660.807373
+      Y: -8.7902832
+      Z: 1355.58337
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5267448600362008550
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 8
+    Color {
+      R: 0.634
+      G: 0.579723775
+      B: 0.369621962
+      A: 1
+    }
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 3504.21777
+        PointLight {
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 5234222121411288889
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 874.327
       Y: -526.824097
-      Z: 923.233521
+      Z: 1574.86316
     }
     Rotation {
     }
@@ -85369,7 +85403,6 @@ Objects {
       B: 1
       A: 1
     }
-    CastShadows: true
     TeamSettings {
     }
     Light {
@@ -85387,18 +85420,66 @@ Objects {
   }
 }
 Objects {
-  Id: 11482577187567270354
+  Id: 2447716127107399258
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 744.150085
+      Y: -526.824097
+      Z: 923.233521
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5267448600362008550
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 25
+    Color {
+      G: 0.264900208
+      B: 1
+      A: 1
+    }
+    CastShadows: true
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1500
+        PointLight {
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 14573764353970168892
   Name: "Area Light"
   Transform {
     Location {
-      X: 1004.44464
+      X: 1004.4447
       Y: -492.874573
       Z: 1111.27612
     }
     Rotation {
-      Pitch: -18.7716675
-      Yaw: 180
-      Roll: 180
+      Pitch: -18.7716408
+      Yaw: -179.999969
+      Roll: -179.999969
     }
     Scale {
       X: 2.60207605
@@ -85439,13 +85520,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2832938490217261189
+  Id: 2574502009406429383
   Name: "Point Light"
   Transform {
     Location {
-      X: -238.557617
-      Y: -8.7902832
-      Z: 1355.58337
+      X: 19.8121033
+      Y: -221.894806
+      Z: 928.186584
     }
     Rotation {
     }
@@ -85463,7 +85544,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Light {
-    Intensity: 8
+    Intensity: 50
     Color {
       R: 0.634
       G: 0.579723775
@@ -85476,7 +85557,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 3504.21777
+        AttenuationRadius: 900
         PointLight {
           FallOffExponent: 8
           UseFallOffExponent: true

@@ -905,10 +905,10 @@ Objects {
           Y: 400
         }
         ChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:left"
+          Value: "mc:ecorehorizontalalign:right"
         }
         ChatVerticalAlignment {
-          Value: "mc:ecorehorizontalalign:center"
+          Value: "mc:ecoreverticalalign:bottom"
         }
       }
       PhysicsSettings {
