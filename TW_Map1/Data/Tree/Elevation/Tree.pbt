@@ -1,4 +1,4 @@
-﻿Name: "Elevated"
+﻿Name: "Elevation"
 RootId: 12171506744640636429
 Objects {
   Id: 18089891158850588481
@@ -1456,69 +1456,6 @@ Objects {
     Location {
       X: -8752.59082
       Y: 9358.18164
-    }
-    Rotation {
-      Yaw: -138.855164
-    }
-    Scale {
-      X: 73.6003342
-      Y: 126.859467
-      Z: 1
-    }
-  }
-  ParentId: 12171506744640636429
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.516000032
-        G: 0.309086353
-        B: 0.160955578
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.558340371
-        G: 0.401977777
-        B: 0.242281124
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 7890822884416196033
-  Name: "MiniMap_Elevation"
-  Transform {
-    Location {
-      X: -8278.62109
-      Y: 6171.42725
     }
     Rotation {
       Yaw: -138.855164
