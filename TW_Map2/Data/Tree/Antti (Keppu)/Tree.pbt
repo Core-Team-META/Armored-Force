@@ -1855,11 +1855,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Light Shaft Bloom Threshold"
-      Float: 0.3
+      Float: 1.91785252
     }
     Overrides {
       Name: "bp:Light Shaft Bloom Scale"
-      Float: 0.2
+      Float: 3.08627844
     }
     Overrides {
       Name: "bp:Light Shaft Bloom Tint"
@@ -1872,7 +1872,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Size"
-      Float: 5.19529104
+      Float: 10
     }
     Overrides {
       Name: "bp:Temperature"
@@ -1922,6 +1922,20 @@ Objects {
       Name: "bp:Soft Distance Shadows"
       Bool: true
     }
+    Overrides {
+      Name: "bp:Light Shaft Mask Darkness"
+      Float: 0.523726463
+    }
+    Overrides {
+      Name: "bp:Shape"
+      Enum {
+        Value: "mc:esundiscshapes:1"
+      }
+    }
+    Overrides {
+      Name: "bp:Light Shaft Occlusion"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1940,6 +1954,7 @@ Objects {
   Name: "Skylight"
   Transform {
     Location {
+      Z: 281.092712
     }
     Rotation {
     }
@@ -1980,19 +1995,19 @@ Objects {
     }
     Overrides {
       Name: "bp:Blend Amount"
-      Float: 1
+      Float: 0.948921442
     }
     Overrides {
       Name: "bp:Indirect Intensity"
-      Float: 1.08702445
+      Float: 0.987425447
     }
     Overrides {
       Name: "bp:Occlusion Contrast"
-      Float: 2
+      Float: 0.947407067
     }
     Overrides {
       Name: "bp:Occlusion Exponent"
-      Float: 4
+      Float: 2.49614501
     }
     Overrides {
       Name: "bp:Occlusion Tint"
@@ -2280,11 +2295,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Radius"
-      Float: 301.465698
+      Float: 319.435547
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 2
+      Float: 1
     }
     Overrides {
       Name: "bp:Unbounded"
@@ -2304,7 +2319,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Bias"
-      Float: 2.61310291
+      Float: 3.15592
     }
     Overrides {
       Name: "bp:Quality"
@@ -2317,6 +2332,10 @@ Objects {
     Overrides {
       Name: "bp:Mip Scale"
       Float: 1.46072412
+    }
+    Overrides {
+      Name: "bp:Blend Weight"
+      Float: 1
     }
   }
   Collidable_v2 {

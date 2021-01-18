@@ -6834,9 +6834,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 27221.9512
+            X: 27145.5488
             Y: 13507.5977
-            Z: 1099.79858
+            Z: 1070.9707
           }
         }
         Overrides {
@@ -7210,7 +7210,7 @@ Objects {
           Vector {
             X: 13131.6611
             Y: 25798.0371
-            Z: 1035.61633
+            Z: 1138.13782
           }
         }
         Overrides {
@@ -12189,7 +12189,7 @@ Objects {
           Vector {
             X: -27045.2715
             Y: 19833.1621
-            Z: 845.20166
+            Z: 836.188843
           }
         }
         Overrides {
@@ -12562,7 +12562,7 @@ Objects {
           Vector {
             X: 31321.082
             Y: -32398.1328
-            Z: 693.061951
+            Z: 689.553711
           }
         }
         Overrides {
@@ -13522,7 +13522,7 @@ Objects {
           Vector {
             X: -10415
             Y: -31720
-            Z: 660
+            Z: 782.108459
           }
         }
         Overrides {
@@ -13824,13 +13824,6 @@ Objects {
             X: -8268.64648
             Y: -968.528442
             Z: 493.223083
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.70542622
-            Roll: -3.36270142
           }
         }
         Overrides {
@@ -14684,7 +14677,7 @@ Objects {
           Vector {
             X: -18990
             Y: -4007.79102
-            Z: 506.015686
+            Z: 488.212463
           }
         }
         Overrides {
@@ -14812,7 +14805,7 @@ Objects {
           Vector {
             X: -17797.1758
             Y: -2864.89502
-            Z: 467.608215
+            Z: 460.006653
           }
         }
         Overrides {
@@ -15060,7 +15053,7 @@ Objects {
           Vector {
             X: -3646.85669
             Y: -24860.0313
-            Z: 852.483154
+            Z: 952.581665
           }
         }
         Overrides {
@@ -15552,7 +15545,7 @@ Objects {
           Vector {
             X: -10892.7021
             Y: -27071.5762
-            Z: 934.145
+            Z: 888.088257
           }
         }
         Overrides {
@@ -15785,6 +15778,27 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 1557898639187458628
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 44.4642067
+            Y: -10.8780403
+            Z: 80.7146072
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 90
+            Yaw: 179.973618
+            Roll: 179.973618
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 11423874285829793534
       value {
