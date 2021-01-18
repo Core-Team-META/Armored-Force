@@ -504,6 +504,7 @@ Objects {
   ChildIds: 8873405959178177918
   ChildIds: 3408493544939164859
   ChildIds: 16494631146533115046
+  ChildIds: 18072668614606905448
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -512,6 +513,68 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 18072668614606905448
+  Name: "MiniMap_Edge"
+  Transform {
+    Location {
+      X: 46709.5586
+      Y: -46025
+      Z: 1025
+    }
+    Rotation {
+    }
+    Scale {
+      X: 573.287231
+      Y: 7.3
+      Z: 0.6
+    }
+  }
+  ParentId: 8794502718689441022
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.396000028
+        G: 0.237205803
+        B: 0.123524055
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.694437385
+        B: 0.98
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -833,14 +896,14 @@ Objects {
   Name: "MiniMap_Edge"
   Transform {
     Location {
-      X: 46538.7109
+      X: 47166.8047
       Y: -46025
       Z: 1025
     }
     Rotation {
     }
     Scale {
-      X: 581.008
+      X: 573.287231
       Y: 7.3
       Z: 0.6
     }
