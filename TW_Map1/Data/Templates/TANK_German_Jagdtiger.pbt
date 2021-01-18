@@ -13246,6 +13246,20 @@
               Id: 9431420845744582604
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13559,9 +13573,29 @@
             }
           }
           Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              A: 1
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 9431420845744582604
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 9431420845744582604
             }
           }
         }
@@ -24940,9 +24974,9 @@
         Name: "Wedge - Convex Polished"
         Transform {
           Location {
-            X: 312.268127
-            Y: -32.7647705
-            Z: -23.7766914
+            X: 312.274445
+            Y: -34.6644402
+            Z: -23.5512619
           }
           Rotation {
             Pitch: 1.63394511
