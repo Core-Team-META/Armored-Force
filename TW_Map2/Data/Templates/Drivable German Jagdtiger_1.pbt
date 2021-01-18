@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 11154777837511158744
+  Id: 13968389830919356423
   Name: "Drivable German Jagdtiger"
   PlatformAssetType: 5
   TemplateAsset {
@@ -887,7 +887,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 9431420845744582604
+              Id: 818783603953564962
             }
           }
           Overrides {
@@ -909,6 +909,29 @@
             Name: "ma:Shared_Detail3:id"
             AssetReference {
               Id: 9431420845744582604
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
             }
           }
         }
@@ -1224,9 +1247,29 @@
             }
           }
           Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              A: 1
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 9431420845744582604
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 9431420845744582604
             }
           }
         }
@@ -9330,7 +9373,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9475,7 +9518,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9758,7 +9801,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9902,7 +9945,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10165,7 +10208,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -10210,7 +10253,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -10255,7 +10298,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -10300,7 +10343,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -12605,9 +12648,9 @@
         Name: "Wedge - Convex Polished"
         Transform {
           Location {
-            X: 312.268127
-            Y: -32.7647705
-            Z: -23.7766914
+            X: 312.274475
+            Y: -34.7435951
+            Z: -23.5418739
           }
           Rotation {
             Pitch: 1.63394511
@@ -31184,7 +31227,7 @@
       }
     }
     Assets {
-      Id: 16374150260036817633
+      Id: 198353679974341757
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -31229,7 +31272,7 @@
       }
     }
     Assets {
-      Id: 10755294693114967386
+      Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {
