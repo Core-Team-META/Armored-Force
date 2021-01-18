@@ -15707,6 +15707,7 @@
         ChildIds: 2717696198612109885
         ChildIds: 1512884544690065155
         ChildIds: 10464997733065486710
+        ChildIds: 16915695487855881765
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -22031,6 +22032,272 @@
         }
       }
       Objects {
+        Id: 16915695487855881765
+        Name: "decals"
+        Transform {
+          Location {
+            X: -133.393967
+            Y: -126.705452
+            Z: 46.0104179
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.785442173
+            Y: 0.785442173
+            Z: 0.785442173
+          }
+        }
+        ParentId: 12859970475953539562
+        ChildIds: 8854949977380245378
+        ChildIds: 12711128207830105852
+        ChildIds: 7486499652921415497
+        ChildIds: 10240312672163447231
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8854949977380245378
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -1.23531963e-05
+          }
+          Rotation {
+            Yaw: -179.999954
+            Roll: 89.9999924
+          }
+          Scale {
+            X: 0.228730932
+            Y: 0.228730932
+            Z: 0.228730932
+          }
+        }
+        ParentId: 16915695487855881765
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sides"
+            Int: 32
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 0.844000041
+              G: 4.02450581e-07
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.257864892
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2159678873184162260
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 12711128207830105852
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -1.23531963e-05
+          }
+          Rotation {
+            Yaw: -179.999954
+            Roll: 89.9999771
+          }
+          Scale {
+            X: 0.0932122618
+            Y: 0.0932122618
+            Z: 0.0932122618
+          }
+        }
+        ParentId: 16915695487855881765
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sides"
+            Int: 32
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 0.844000041
+              G: 4.02450581e-07
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.0500238873
+              G: 0.0323189907
+              B: 0.567000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2159678873184162260
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 7486499652921415497
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -1.57276954e-05
+            Y: 320.69751
+          }
+          Rotation {
+            Roll: 90
+          }
+          Scale {
+            X: 0.228730857
+            Y: 0.228730857
+            Z: 0.228730857
+          }
+        }
+        ParentId: 16915695487855881765
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sides"
+            Int: 32
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 0.844000041
+              G: 4.02450581e-07
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.257864892
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2159678873184162260
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 10240312672163447231
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+            X: -1.57276954e-05
+            Y: 320.69751
+          }
+          Rotation {
+            Roll: 90
+          }
+          Scale {
+            X: 0.0932122543
+            Y: 0.0932122543
+            Z: 0.0932122543
+          }
+        }
+        ParentId: 16915695487855881765
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sides"
+            Int: 32
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 0.844000041
+              G: 4.02450581e-07
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.0500238873
+              G: 0.0323189907
+              B: 0.567000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2159678873184162260
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
         Id: 6564956989468075309
         Name: "Barrel"
         Transform {
@@ -25196,6 +25463,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_mil_crate_hinge_001_ref"
+      }
+    }
+    Assets {
+      Id: 2159678873184162260
+      Name: "2D Basic Shapes Decal"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "dcl_basicShapes"
       }
     }
     Assets {
