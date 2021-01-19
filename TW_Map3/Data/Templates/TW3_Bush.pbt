@@ -15,7 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 7310433976514289622
+        ChildIds: 15347384243659794242
         ChildIds: 18308727985401365393
         ChildIds: 10393100145341848271
         Collidable_v2 {
@@ -26,6 +27,52 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 15347384243659794242
+        Name: "Decal Stains Round 01"
+        Transform {
+          Location {
+            X: 12.3769531
+            Y: 131.62207
+            Z: 93.8092651
+          }
+          Rotation {
+            Roll: 18.04772
+          }
+          Scale {
+            X: 0.878169239
+            Y: 0.597341657
+            Z: 0.86389792
+          }
+        }
+        ParentId: 17729936477100295780
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 10755294693114967386
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
         }
       }
       Objects {
@@ -151,6 +198,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 10755294693114967386
+      Name: "Decal Stains Round 01"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_stain_round_001"
       }
     }
     Assets {

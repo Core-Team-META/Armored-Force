@@ -9,11 +9,26 @@
       Overrides {
         Name: "cmp:Material1"
         AssetReference {
-          Id: 2748487926988283193
+          Id: 663082363223318009
         }
       }
       Overrides {
         Name: "cmp:Material1_Sides"
+        AssetReference {
+          Id: 9202661178378044854
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material1"
+        Color {
+          R: 1
+          G: 1
+          B: 1
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmp:Material2"
         AssetReference {
           Id: 9202661178378044854
         }
@@ -29,12 +44,21 @@
       }
     }
     Assets {
-      Id: 2748487926988283193
-      Name: "Snow 01"
+      Id: 663082363223318009
+      Name: "Stucco Tintable"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_snow_001_uv"
+        AssetId: "mi_stucco_tint_001_uv"
+      }
+    }
+    Assets {
+      Id: 9202661178378044854
+      Name: "Cliff 03"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "cliff_003"
       }
     }
     Assets {
