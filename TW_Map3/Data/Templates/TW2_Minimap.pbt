@@ -7,7 +7,7 @@
       RootId: 15907935734282575560
       Objects {
         Id: 15907935734282575560
-        Name: "TW2_Minimap"
+        Name: "TW3_Minimap"
         Transform {
           Scale {
             X: 1
@@ -23,7 +23,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         NetworkContext {
         }
