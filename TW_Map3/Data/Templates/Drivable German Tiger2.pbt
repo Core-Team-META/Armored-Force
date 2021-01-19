@@ -8514,7 +8514,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -8559,7 +8559,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -8604,7 +8604,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -8649,7 +8649,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -9021,7 +9021,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3629910274723977117
+            Id: 17814718521639562316
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -27032,21 +27032,12 @@
       }
     }
     Assets {
-      Id: 10755294693114967386
+      Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "bp_decal_stain_round_001"
-      }
-    }
-    Assets {
-      Id: 3629910274723977117
-      Name: "Fantasy Shield Strap 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_shield_strap_001"
       }
     }
     Assets {
