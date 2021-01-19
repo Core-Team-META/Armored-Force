@@ -191,7 +191,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_Minimap"
+          String: "TW3_Minimap"
         }
         Overrides {
           Name: "Position"
@@ -199,9 +199,8 @@ Objects {
           }
         }
         Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
+          Name: "Rotation"
+          Rotator {
           }
         }
       }
