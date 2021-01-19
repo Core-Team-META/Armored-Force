@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 82310197696356579
-  Name: "TW3_PineTreeBranches"
+  Id: 10921027446473189676
+  Name: "TW3_PineTreeBranchesDistant"
   PlatformAssetType: 13
   SerializationVersion: 72
   CustomMaterialAsset {
@@ -25,18 +25,16 @@
       Overrides {
         Name: "color_accent"
         Color {
-          R: 0.0728804618
+          R: 0.051944
           G: 0.083333
-          B: 0.0555831119
           A: 1
         }
       }
       Overrides {
         Name: "color"
         Color {
-          R: 0.0728804618
+          R: 0.051944
           G: 0.083333
-          B: 0.0555831119
           A: 1
         }
       }
@@ -51,7 +49,15 @@
       }
       Overrides {
         Name: "snow_amount"
-        Float: 0.239563614
+        Float: 0
+      }
+      Overrides {
+        Name: "color_branches"
+        Color {
+          R: 0.051944
+          G: 0.083333
+          A: 1
+        }
       }
     }
     Assets {

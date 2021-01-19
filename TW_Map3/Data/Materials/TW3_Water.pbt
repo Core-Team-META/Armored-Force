@@ -32,11 +32,11 @@
       }
       Overrides {
         Name: "wind speed"
-        Float: 0.240295395
+        Float: 0.275998414
       }
       Overrides {
         Name: "object displacement amount"
-        Float: 0
+        Float: 0.140326962
       }
       Overrides {
         Name: "material_scale"
@@ -48,7 +48,7 @@
       }
       Overrides {
         Name: "normal amount"
-        Float: 0.0903427452
+        Float: 0.211732984
       }
       Overrides {
         Name: "normal distance"
@@ -56,11 +56,12 @@
       }
       Overrides {
         Name: "reflection brightness"
-        Float: 1
+        Float: 0.418810457
       }
       Overrides {
         Name: "wind direction"
         Vector {
+          Y: 1
         }
       }
       Overrides {
