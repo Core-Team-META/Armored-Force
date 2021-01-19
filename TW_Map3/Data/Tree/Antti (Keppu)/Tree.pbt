@@ -5,13 +5,13 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: 503.603516
-      Y: -3741.85791
-      Z: 681.532104
+      X: -21895
+      Y: 7220
+      Z: 100
     }
     Rotation {
       Pitch: 4.30088806
-      Yaw: -44.1907
+      Yaw: -44.1907043
       Roll: 1.67795205
     }
     Scale {
@@ -42,13 +42,13 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: 2129.28125
-      Y: -2058.45605
-      Z: 681.532104
+      X: -20269.3223
+      Y: 8903.40234
+      Z: 100
     }
     Rotation {
       Pitch: 4.30088806
-      Yaw: -44.1907
+      Yaw: -44.1907043
       Roll: 1.67795205
     }
     Scale {
@@ -79,13 +79,13 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: 3020.27344
-      Y: -1085.58789
-      Z: 681.532104
+      X: -19378.3301
+      Y: 9876.27
+      Z: 100
     }
     Rotation {
       Pitch: 4.30088806
-      Yaw: -44.1907
+      Yaw: -44.1907043
       Roll: 1.67795205
     }
     Scale {
@@ -116,9 +116,9 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: 3982.63281
-      Y: 20.5791016
-      Z: 681.532104
+      X: -18415.9707
+      Y: 10982.4375
+      Z: 100
     }
     Rotation {
       Pitch: 4.30087423
@@ -153,9 +153,9 @@ Objects {
   Name: "Grass Short"
   Transform {
     Location {
-      X: 3776.87891
-      Y: -56.6523438
-      Z: 721.643311
+      X: -18621.7246
+      Y: 10905.2051
+      Z: 140.111206
     }
     Rotation {
     }
@@ -202,12 +202,12 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 3145.05664
-      Y: -3199.07813
-      Z: 1623.50098
+      X: -19253.5469
+      Y: 7762.78
+      Z: 1041.96887
     }
     Rotation {
-      Pitch: -55.9888229
+      Pitch: -55.9888306
       Yaw: 65.0215836
       Roll: 126.448898
     }
@@ -254,12 +254,12 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 2870.04102
-      Y: -2297.08496
-      Z: 882.034424
+      X: -19528.5625
+      Y: 8664.77344
+      Z: 300.502319
     }
     Rotation {
-      Pitch: -74.0295563
+      Pitch: -74.029541
       Yaw: 135.055573
       Roll: 50.7443542
     }
@@ -306,14 +306,14 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: -821.142578
-      Y: 2023.00977
-      Z: 876.457214
+      X: -23219.7461
+      Y: 12984.8672
+      Z: 294.925049
     }
     Rotation {
-      Pitch: -61.4880905
+      Pitch: -61.4881
       Yaw: -137.28952
-      Roll: -23.8393574
+      Roll: -23.8393555
     }
     Scale {
       X: 3.120116
@@ -358,12 +358,12 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: -1576.40039
-      Y: 2455.42285
-      Z: 1138.84229
+      X: -23975.0039
+      Y: 13417.2813
+      Z: 557.310181
     }
     Rotation {
-      Pitch: -13.0419788
+      Pitch: -13.0419922
       Yaw: 163.512894
       Roll: 137.36647
     }
@@ -410,12 +410,12 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 690.914063
-      Y: 2825.54492
-      Z: 1138.84229
+      X: -21707.6895
+      Y: 13787.4023
+      Z: 557.310181
     }
     Rotation {
-      Pitch: -13.0419788
+      Pitch: -13.0419922
       Yaw: -150.265335
       Roll: 137.368073
     }
@@ -462,14 +462,13 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 16.3125
-      Y: 2443.10547
-      Z: 1002.22363
+      X: -22382.291
+      Y: 13404.9629
+      Z: 420.691528
     }
     Rotation {
-      Pitch: -78.7324753
-      Yaw: -2.10506535
-      Roll: -5.46199601e-07
+      Pitch: -78.7324829
+      Yaw: -2.10507202
     }
     Scale {
       X: 3.12011647
@@ -514,9 +513,9 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: -870.701172
-      Y: 2247.76074
-      Z: 1180.78296
+      X: -23269.3047
+      Y: 13209.6191
+      Z: 599.250854
     }
     Rotation {
       Pitch: -78.7348633
@@ -566,9 +565,9 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 2011.95313
-      Y: -479.729492
-      Z: 744.075806
+      X: -20386.6504
+      Y: 10482.1289
+      Z: 162.543701
     }
     Rotation {
       Pitch: -78.7348633
@@ -618,9 +617,9 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: 3996.38867
-      Y: -1331.50781
-      Z: 843.241333
+      X: -18402.2148
+      Y: 9630.35
+      Z: 261.709229
     }
     Rotation {
       Yaw: 28.4056053
@@ -668,9 +667,9 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: 5926.72461
-      Y: -371.952148
-      Z: 757.676819
+      X: -16471.8789
+      Y: 10589.9063
+      Z: 176.144775
     }
     Rotation {
     }
@@ -717,9 +716,9 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 5329.9082
-      Y: -927.774414
-      Z: 744.075928
+      X: -17068.6953
+      Y: 10034.084
+      Z: 162.543823
     }
     Rotation {
     }
@@ -766,9 +765,9 @@ Objects {
   Name: "Tree Redwood Bare Medium"
   Transform {
     Location {
-      X: 4530.07813
-      Y: -722.530273
-      Z: 576.107178
+      X: -17868.5254
+      Y: 10239.3281
+      Z: -5.42492676
     }
     Rotation {
       Pitch: 6.44398928
@@ -818,9 +817,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 1613.92383
-      Y: -5639.41064
-      Z: 435.788239
+      X: -20784.6797
+      Y: 5322.44727
+      Z: -145.743896
     }
     Rotation {
     }
@@ -867,9 +866,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 1201.63477
-      Y: 3161.48145
-      Z: 919.351196
+      X: -21196.9688
+      Y: 14123.3398
+      Z: 337.819092
     }
     Rotation {
       Yaw: 74.4039612
@@ -917,12 +916,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 1354.91992
-      Y: 3489.89258
-      Z: 933.89856
+      X: -21043.6836
+      Y: 14451.75
+      Z: 352.366455
     }
     Rotation {
-      Yaw: -6.25213
+      Yaw: -6.25213623
     }
     Scale {
       X: 0.683667839
@@ -967,9 +966,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -528.287109
-      Y: 4258.8623
-      Z: 1937.01306
+      X: -22926.8906
+      Y: 15220.7207
+      Z: 1355.48096
     }
     Rotation {
       Yaw: 74.404007
@@ -1017,12 +1016,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -11.6875
-      Y: 4587.27344
-      Z: 1937.01306
+      X: -22410.291
+      Y: 15549.1309
+      Z: 1355.48096
     }
     Rotation {
-      Yaw: -6.25213
+      Yaw: -6.25213623
     }
     Scale {
       X: 0.683667839
@@ -1067,9 +1066,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -1452.59375
-      Y: 3874.79199
-      Z: 1714.39514
+      X: -23851.1973
+      Y: 14836.6504
+      Z: 1132.86304
     }
     Rotation {
       Yaw: 74.4040298
@@ -1117,12 +1116,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -935.994141
-      Y: 4203.20313
-      Z: 1714.39514
+      X: -23334.5977
+      Y: 15165.0605
+      Z: 1132.86304
     }
     Rotation {
-      Yaw: -6.25213
+      Yaw: -6.25213623
     }
     Scale {
       X: 0.683667839
@@ -1167,9 +1166,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -719.306641
-      Y: 3807.64941
-      Z: 1714.39514
+      X: -23117.9102
+      Y: 14769.5078
+      Z: 1132.86304
     }
     Rotation {
       Yaw: 74.4040756
@@ -1217,12 +1216,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -202.707031
-      Y: 4136.06055
-      Z: 1958.49023
+      X: -22601.3105
+      Y: 15097.918
+      Z: 1376.95801
     }
     Rotation {
-      Yaw: -6.25213
+      Yaw: -6.25213623
     }
     Scale {
       X: 0.683667839
@@ -1267,9 +1266,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -177.283203
-      Y: 3717.7002
-      Z: 1643.75562
+      X: -22575.8867
+      Y: 14679.5586
+      Z: 1062.22363
     }
     Rotation {
       Yaw: 74.4041
@@ -1317,12 +1316,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 339.316406
-      Y: 4046.11133
-      Z: 1947.4646
+      X: -22059.2871
+      Y: 15007.9688
+      Z: 1365.93262
     }
     Rotation {
-      Yaw: -6.25213
+      Yaw: -6.25213623
     }
     Scale {
       X: 0.683667839
@@ -1367,9 +1366,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -435.646484
-      Y: 1704.92969
-      Z: 837.564697
+      X: -22834.25
+      Y: 12666.7871
+      Z: 256.032593
     }
     Rotation {
       Yaw: -90.7803345
@@ -1417,9 +1416,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 19.4414063
-      Y: 1959.6875
-      Z: 837.564697
+      X: -22379.1621
+      Y: 12921.5449
+      Z: 256.032593
     }
     Rotation {
     }
@@ -1466,9 +1465,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 1613.92383
-      Y: -3663.64258
-      Z: 435.788239
+      X: -20784.6797
+      Y: 7298.21533
+      Z: -145.743896
     }
     Rotation {
     }
@@ -1515,9 +1514,9 @@ Objects {
   Name: "Tree Redwood Medium"
   Transform {
     Location {
-      X: 1735.91211
-      Y: -3965.40479
-      Z: 339.04422
+      X: -20662.6914
+      Y: 6996.45313
+      Z: -242.487915
     }
     Rotation {
     }
@@ -1564,9 +1563,9 @@ Objects {
   Name: "Tree Redwood Bare Medium"
   Transform {
     Location {
-      X: 2304.94922
-      Y: -992.859375
-      Z: 453.837463
+      X: -20093.6543
+      Y: 9968.99805
+      Z: -127.694641
     }
     Rotation {
       Yaw: 73.3174896
@@ -1614,9 +1613,9 @@ Objects {
   Name: "Tree Redwood Bare Big"
   Transform {
     Location {
-      X: -1302.9082
-      Y: 1378.26563
-      Z: 421.896118
+      X: -23701.5117
+      Y: 12340.123
+      Z: -159.635986
     }
     Rotation {
     }
@@ -1655,9 +1654,9 @@ Objects {
   Name: "Tree Redwood Bare Medium"
   Transform {
     Location {
-      X: -1166.33008
-      Y: 1455.33398
-      Z: 565.861694
+      X: -23564.9336
+      Y: 12417.1914
+      Z: -15.6704102
     }
     Rotation {
       Yaw: 110.709236
@@ -1705,9 +1704,9 @@ Objects {
   Name: "Tree Redwood Bare Medium"
   Transform {
     Location {
-      X: -1166.33008
-      Y: 1653.18066
-      Z: 602.549194
+      X: -23564.9336
+      Y: 12615.0391
+      Z: 21.0170898
     }
     Rotation {
     }
@@ -1754,12 +1753,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -154.697266
-      Y: 2329.36426
-      Z: 1368.30798
+      X: -22553.3
+      Y: 13291.2227
+      Z: 786.775879
     }
     Rotation {
-      Yaw: -78.9747086
+      Yaw: -78.9747
     }
     Scale {
       X: 0.26999414
@@ -1804,9 +1803,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -370.947266
-      Y: 1959.6875
-      Z: 1289.11255
+      X: -22769.5508
+      Y: 12921.5449
+      Z: 707.580444
     }
     Rotation {
     }
@@ -1853,12 +1852,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 339.316406
-      Y: 3568.625
-      Z: 1740.34546
+      X: -22059.2871
+      Y: 14530.4824
+      Z: 1158.81348
     }
     Rotation {
-      Yaw: -6.25213
+      Yaw: -6.25213623
     }
     Scale {
       X: 0.683667839
@@ -1903,9 +1902,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -177.283203
-      Y: 3240.21387
-      Z: 1618.66516
+      X: -22575.8867
+      Y: 14202.0723
+      Z: 1037.13306
     }
     Rotation {
       Yaw: 74.4041443
@@ -1953,9 +1952,9 @@ Objects {
   Name: "Tree Redwood Bare Big"
   Transform {
     Location {
-      X: -1604.44922
-      Y: 1935.65234
-      Z: 600.336
+      X: -24003.0527
+      Y: 12897.5098
+      Z: 18.803894
     }
     Rotation {
     }
@@ -1994,9 +1993,9 @@ Objects {
   Name: "Tree Redwood Bare Medium"
   Transform {
     Location {
-      X: -22.1308594
-      Y: 2084.96
-      Z: 753.283813
+      X: -22420.7344
+      Y: 13046.8184
+      Z: 171.751709
     }
     Rotation {
     }
@@ -2043,9 +2042,9 @@ Objects {
   Name: "Tree Redwood Bare Medium"
   Transform {
     Location {
-      X: -271.330078
-      Y: 2109.55859
-      Z: 666.881958
+      X: -22669.9336
+      Y: 13071.416
+      Z: 85.3498535
     }
     Rotation {
     }
@@ -2092,9 +2091,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -958.320313
-      Y: 3337.09863
-      Z: 1608.84241
+      X: -23356.9238
+      Y: 14298.957
+      Z: 1027.3103
     }
     Rotation {
       Yaw: 94.0973358
@@ -2142,12 +2141,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -1244.67188
-      Y: 3033.10156
-      Z: 1933.74438
+      X: -23643.2754
+      Y: 13994.959
+      Z: 1352.2124
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 0.6
@@ -2192,9 +2191,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -684.671875
-      Y: 3098.10156
-      Z: 1637.98059
+      X: -23083.2754
+      Y: 14059.959
+      Z: 1056.44849
     }
     Rotation {
     }
@@ -2237,62 +2236,13 @@ Objects {
   }
 }
 Objects {
-  Id: 18163365537949626811
-  Name: "TW3_Water"
-  Transform {
-    Location {
-      X: -29579.6563
-      Y: -8696.89844
-      Z: -1.25561523
-    }
-    Rotation {
-    }
-    Scale {
-      X: 562.9
-      Y: 1671.40051
-      Z: 5.6
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168970011809872138
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16374150260036817633
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 4993739343007402508
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -958.320313
-      Y: 2877.23242
-      Z: 1561.28101
+      X: -23356.9238
+      Y: 13839.0898
+      Z: 979.748901
     }
     Rotation {
       Yaw: 94.0973358
@@ -2340,12 +2290,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -1244.67188
-      Y: 2573.23535
-      Z: 1755
+      X: -23643.2754
+      Y: 13535.0938
+      Z: 1173.46777
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 0.6
@@ -2390,9 +2340,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -684.671875
-      Y: 2638.23535
-      Z: 1397.45422
+      X: -23083.2754
+      Y: 13600.0938
+      Z: 815.922119
     }
     Rotation {
     }
@@ -2439,9 +2389,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: -1098.64844
-      Y: 2553.99707
-      Z: 1419.1156
+      X: -23497.252
+      Y: 13515.8555
+      Z: 837.583496
     }
     Rotation {
       Yaw: 94.0973358
@@ -2489,13 +2439,13 @@ Objects {
   Name: "TW3_Bush"
   Transform {
     Location {
-      X: 2677.42383
-      Y: -632.071289
-      Z: 662.918518
+      X: -19721.1797
+      Y: 10329.7871
+      Z: 81.3864746
     }
     Rotation {
       Pitch: 1.82746482
-      Yaw: -76.4676437
+      Yaw: -76.4676514
       Roll: 6.21193361
     }
     Scale {
@@ -2693,9 +2643,9 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 4674.85156
-      Y: -1587.21191
-      Z: 1292.45654
+      X: -17723.752
+      Y: 9374.64648
+      Z: 710.924438
     }
     Rotation {
       Yaw: 41.4290504
@@ -2743,12 +2693,12 @@ Objects {
   Name: "Tree Redwood Small"
   Transform {
     Location {
-      X: 4466.92
-      Y: -1536.1416
-      Z: 1292.45654
+      X: -17931.6836
+      Y: 9425.7168
+      Z: 710.924438
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 0.6
@@ -2793,9 +2743,9 @@ Objects {
   Name: "TW3_Bush"
   Transform {
     Location {
-      X: 4392.73633
-      Y: -1019.41992
-      Z: 687.695801
+      X: -18005.8672
+      Y: 9942.4375
+      Z: 106.163696
     }
     Rotation {
       Pitch: 3.1839335
@@ -2993,13 +2943,882 @@ Objects {
   }
 }
 Objects {
+  Id: 15092766138704553393
+  Name: "Tree Redwood Medium"
+  Transform {
+    Location {
+      X: -20607.9648
+      Y: 14857.3652
+      Z: 288.941895
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.30000007
+      Y: 1.30000007
+      Z: 1.30000007
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16709850262252143743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8533694122076350262
+  Name: "Tree Redwood Small"
+  Transform {
+    Location {
+      X: -22170.2598
+      Y: 13870.7031
+      Z: 868.308838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.6
+      Y: 0.6
+      Z: 0.6
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1114263496638408835
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8458812797909346128
+  Name: "Tree Redwood Bare Big"
+  Transform {
+    Location {
+      X: -16128.6035
+      Y: 15566.8574
+      Z: -106.532104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12993753533106775349
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16548525473511038952
+  Name: "Tree Redwood Bare Medium"
+  Transform {
+    Location {
+      X: -16273.6035
+      Y: 14541.8574
+      Z: -176.532104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.6
+      Y: 0.6
+      Z: 0.6
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2280134469986834104
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 3021002123342198555
+  Name: "Tree Redwood Bare Small"
+  Transform {
+    Location {
+      X: -22541.0664
+      Y: 13511.2148
+      Z: 1039.25232
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.489876419
+      Y: 0.489876419
+      Z: 0.489876419
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13232469368395521665
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1432683972677156686
+  Name: "Tree Redwood Small"
+  Transform {
+    Location {
+      X: -23783.6035
+      Y: 13583.1016
+      Z: 1198.57471
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: 0.6
+      Y: 0.6
+      Z: 0.4
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1114263496638408835
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14762613981975564486
+  Name: "TW3_Bush"
+  Transform {
+    Location {
+      X: -18991.9922
+      Y: 9443.91211
+      Z: -15.6741943
+    }
+    Rotation {
+      Pitch: 3.1839335
+      Yaw: 59.4572792
+      Roll: 14.8527441
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  ChildIds: 12166119573188271796
+  ChildIds: 13584090872470034729
+  ChildIds: 13789323371241430709
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13789323371241430709
+  Name: "Bush 02"
+  Transform {
+    Location {
+      Y: 11.1367188
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.55172849
+      Y: 1.55172849
+      Z: 0.922225356
+    }
+  }
+  ParentId: 14762613981975564486
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 179407668354224432
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 179407668354224432
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.618000031
+        G: 0.549857855
+        B: 0.462264031
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.618000031
+        G: 0.549857855
+        B: 0.462264031
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11216701439107531141
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13584090872470034729
+  Name: "Bush 02"
+  Transform {
+    Location {
+      Y: -11.1367188
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.55172849
+      Y: 1.55172849
+      Z: 1.55172849
+    }
+  }
+  ParentId: 14762613981975564486
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 8399971333368982502
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8399971333368982502
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11216701439107531141
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 12166119573188271796
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 12.3769531
+      Y: 131.62207
+      Z: 93.8092651
+    }
+    Rotation {
+      Roll: 18.04772
+    }
+    Scale {
+      X: 0.878169239
+      Y: 0.597341657
+      Z: 0.86389792
+    }
+  }
+  ParentId: 14762613981975564486
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10755294693114967386
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 9967690346448061512
+  Name: "Tree Redwood Medium"
+  Transform {
+    Location {
+      X: -39551.3125
+      Y: 4245.18506
+      Z: 10.0518799
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.684110045
+      Y: 0.684110045
+      Z: 0.684110045
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16709850262252143743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9910689805499811075
+  Name: "Tree Redwood Bare Medium"
+  Transform {
+    Location {
+      X: -39788.6484
+      Y: 3472.41064
+      Z: -382.886108
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.6
+      Y: 0.6
+      Z: 0.6
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2280134469986834104
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 488912230461220281
+  Name: "Tree Redwood Bare Big"
+  Transform {
+    Location {
+      X: -39838.0078
+      Y: 4582.80371
+      Z: -312.886108
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.668980896
+      Y: 0.668980896
+      Z: 0.668980896
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12993753533106775349
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8516936474999790306
+  Name: "Tree Redwood Bare Big"
+  Transform {
+    Location {
+      X: -38624.5
+      Y: 6068.56152
+      Z: -472.377197
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.526027083
+      Y: 0.526027083
+      Z: 0.526027083
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12993753533106775349
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4104917060105767797
+  Name: "Tree Redwood Medium"
+  Transform {
+    Location {
+      X: -39768.2188
+      Y: 4399.25342
+      Z: 10.0518188
+    }
+    Rotation {
+      Yaw: -142.845825
+    }
+    Scale {
+      X: 0.528860152
+      Y: 0.528860152
+      Z: 0.430517793
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16709850262252143743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 816351106643688191
+  Name: "Tree Redwood Medium"
+  Transform {
+    Location {
+      X: -39741.2266
+      Y: 3858.69678
+      Z: 10.0517578
+    }
+    Rotation {
+      Yaw: -36.3204346
+    }
+    Scale {
+      X: 0.528860152
+      Y: 0.528860152
+      Z: 0.263485283
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Branch:id"
+      AssetReference {
+        Id: 82310197696356579
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16709850262252143743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 18163365537949626811
+  Name: "TW3_Water"
+  Transform {
+    Location {
+      X: -12275
+      Y: 2264.95898
+      Z: -615
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1766.3999
+      Y: 1671.4
+      Z: 5.6
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168970011809872138
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16374150260036817633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1444000811114487272
+  Name: "EdgeIndicators"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "EdgeIndicators"
+  }
+}
+Objects {
+  Id: 11667467784761547334
+  Name: "Bushes_BG"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Bushes_BG"
+  }
+}
+Objects {
   Id: 15788869062684048797
   Name: "Sky"
   Transform {
     Location {
-      X: 22790
-      Y: -10760
-      Z: 475
     }
     Rotation {
     }
@@ -3142,6 +3961,7 @@ Objects {
   Name: "Skylight"
   Transform {
     Location {
+      Z: 890
     }
     Rotation {
     }
@@ -3379,835 +4199,6 @@ Objects {
       Id: 2224571462023946700
     }
     TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 1444000811114487272
-  Name: "EdgeIndicators"
-  Transform {
-    Location {
-      X: 22790
-      Y: -10760
-      Z: 475
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7310433976514289622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "EdgeIndicators"
-  }
-}
-Objects {
-  Id: 11667467784761547334
-  Name: "Bushes_BG"
-  Transform {
-    Location {
-      X: 22790
-      Y: -10760
-      Z: 475
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7310433976514289622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Bushes_BG"
-  }
-}
-Objects {
-  Id: 15092766138704553393
-  Name: "Tree Redwood Medium"
-  Transform {
-    Location {
-      X: 1790.63867
-      Y: 3895.50781
-      Z: 870.473938
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.30000007
-      Y: 1.30000007
-      Z: 1.30000007
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16709850262252143743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 8533694122076350262
-  Name: "Tree Redwood Small"
-  Transform {
-    Location {
-      X: 228.34375
-      Y: 2908.8457
-      Z: 1449.84094
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.6
-      Y: 0.6
-      Z: 0.6
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1114263496638408835
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 8458812797909346128
-  Name: "Tree Redwood Bare Big"
-  Transform {
-    Location {
-      X: 6270
-      Y: 4605
-      Z: 475
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7310433976514289622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12993753533106775349
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 16548525473511038952
-  Name: "Tree Redwood Bare Medium"
-  Transform {
-    Location {
-      X: 6125
-      Y: 3580
-      Z: 405
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.6
-      Y: 0.6
-      Z: 0.6
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2280134469986834104
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 3021002123342198555
-  Name: "Tree Redwood Bare Small"
-  Transform {
-    Location {
-      X: -142.462891
-      Y: 2549.35645
-      Z: 1620.78442
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.489876419
-      Y: 0.489876419
-      Z: 0.489876419
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13232469368395521665
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 1432683972677156686
-  Name: "Tree Redwood Small"
-  Transform {
-    Location {
-      X: -1385
-      Y: 2621.24414
-      Z: 1780.10693
-    }
-    Rotation {
-      Yaw: -89.9999542
-    }
-    Scale {
-      X: 0.6
-      Y: 0.6
-      Z: 0.4
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1114263496638408835
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 14762613981975564486
-  Name: "TW3_Bush"
-  Transform {
-    Location {
-      X: 3406.61133
-      Y: -1517.94531
-      Z: 565.85791
-    }
-    Rotation {
-      Pitch: 3.1839335
-      Yaw: 59.4572792
-      Roll: 14.8527441
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7310433976514289622
-  ChildIds: 12166119573188271796
-  ChildIds: 13584090872470034729
-  ChildIds: 13789323371241430709
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 13789323371241430709
-  Name: "Bush 02"
-  Transform {
-    Location {
-      Y: 11.1367188
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.55172849
-      Y: 1.55172849
-      Z: 0.922225356
-    }
-  }
-  ParentId: 14762613981975564486
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 179407668354224432
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 179407668354224432
-      }
-    }
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        R: 0.618000031
-        G: 0.549857855
-        B: 0.462264031
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.618000031
-        G: 0.549857855
-        B: 0.462264031
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11216701439107531141
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 13584090872470034729
-  Name: "Bush 02"
-  Transform {
-    Location {
-      Y: -11.1367188
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.55172849
-      Y: 1.55172849
-      Z: 1.55172849
-    }
-  }
-  ParentId: 14762613981975564486
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 8399971333368982502
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8399971333368982502
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11216701439107531141
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 12166119573188271796
-  Name: "Decal Stains Round 01"
-  Transform {
-    Location {
-      X: 12.3769531
-      Y: 131.62207
-      Z: 93.8092651
-    }
-    Rotation {
-      Roll: 18.04772
-    }
-    Scale {
-      X: 0.878169239
-      Y: 0.597341657
-      Z: 0.86389792
-    }
-  }
-  ParentId: 14762613981975564486
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 10755294693114967386
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 9967690346448061512
-  Name: "Tree Redwood Medium"
-  Transform {
-    Location {
-      X: -17152.7109
-      Y: -6716.67285
-      Z: 591.584
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.684110045
-      Y: 0.684110045
-      Z: 0.684110045
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16709850262252143743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 9910689805499811075
-  Name: "Tree Redwood Bare Medium"
-  Transform {
-    Location {
-      X: -17390.043
-      Y: -7489.44727
-      Z: 198.646
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.6
-      Y: 0.6
-      Z: 0.6
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2280134469986834104
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 488912230461220281
-  Name: "Tree Redwood Bare Big"
-  Transform {
-    Location {
-      X: -17439.4063
-      Y: -6379.0542
-      Z: 268.646
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.668980896
-      Y: 0.668980896
-      Z: 0.668980896
-    }
-  }
-  ParentId: 7310433976514289622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12993753533106775349
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 8516936474999790306
-  Name: "Tree Redwood Bare Big"
-  Transform {
-    Location {
-      X: -16225.8945
-      Y: -4893.29639
-      Z: 109.154907
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.526027083
-      Y: 0.526027083
-      Z: 0.526027083
-    }
-  }
-  ParentId: 7310433976514289622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12993753533106775349
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 4104917060105767797
-  Name: "Tree Redwood Medium"
-  Transform {
-    Location {
-      X: -17369.6133
-      Y: -6562.60449
-      Z: 591.583923
-    }
-    Rotation {
-      Yaw: -142.845825
-    }
-    Scale {
-      X: 0.528860152
-      Y: 0.528860152
-      Z: 0.430517793
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16709850262252143743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 816351106643688191
-  Name: "Tree Redwood Medium"
-  Transform {
-    Location {
-      X: -17342.6211
-      Y: -7103.16113
-      Z: 591.583862
-    }
-    Rotation {
-      Yaw: -36.320446
-    }
-    Scale {
-      X: 0.528860152
-      Y: 0.528860152
-      Z: 0.263485283
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16709850262252143743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
     }
   }
 }
