@@ -17,8 +17,11 @@ Objects {
   ChildIds: 8880801392433534165
   ChildIds: 15182677334456928949
   ChildIds: 7719561171605510777
+  ChildIds: 3867707569791740175
   ChildIds: 7310433976514289622
   ChildIds: 2959002750480800334
+  ChildIds: 11289413430179769410
+  ChildIds: 8809528236417373584
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,6 +31,95 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8809528236417373584
+  Name: "TANK_German_E50"
+  Transform {
+    Location {
+      X: 22685
+      Y: 3665
+      Z: -0.0009765625
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3538122277889912986
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_German_E50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22645
+            Y: -450
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1017367019735459438
+    }
+  }
+}
+Objects {
+  Id: 11289413430179769410
+  Name: "TANK_German_E50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3538122277889912986
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_German_E50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 22685
+            Y: 3665
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1017367019735459438
+    }
   }
 }
 Objects {
@@ -80,6 +172,43 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
+  }
+}
+Objects {
+  Id: 3867707569791740175
+  Name: "TW2_Minimap"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15907935734282575560
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_Minimap"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10755944677217175272
+    }
   }
 }
 Objects {
@@ -164,7 +293,6 @@ Objects {
   Name: "Terrain_BG"
   Transform {
     Location {
-      Z: 98.6957397
     }
     Rotation {
     }
