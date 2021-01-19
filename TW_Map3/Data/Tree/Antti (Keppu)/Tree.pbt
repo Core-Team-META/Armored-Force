@@ -1,6 +1,166 @@
 ﻿Name: "Antti (Keppu)"
 RootId: 7310433976514289622
 Objects {
+  Id: 5690419861719432394
+  Name: "TANK_German_E50"
+  Transform {
+    Location {
+      X: -15200
+      Y: -450
+      Z: 900
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3538122277889912986
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_German_E50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -100
+            Y: 16900
+            Z: 900
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1017367019735459438
+    }
+  }
+}
+Objects {
+  Id: 8809528236417373584
+  Name: "TANK_German_E50"
+  Transform {
+    Location {
+      X: 22685
+      Y: 3665
+      Z: -0.0009765625
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3538122277889912986
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_German_E50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15200
+            Y: -450
+            Z: 900
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1017367019735459438
+    }
+  }
+}
+Objects {
+  Id: 11289413430179769410
+  Name: "TANK_German_E50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3538122277889912986
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_German_E50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2500
+            Y: -15100
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1017367019735459438
+    }
+  }
+}
+Objects {
   Id: 5474814814606283694
   Name: "Decal Tread Tracks 01"
   Transform {
@@ -3795,6 +3955,7 @@ Objects {
     Location {
     }
     Rotation {
+      Yaw: 90
     }
     Scale {
       X: 1
@@ -3852,8 +4013,8 @@ Objects {
     Location {
     }
     Rotation {
-      Pitch: -4.64135695
-      Yaw: 6.17714643
+      Pitch: -3.10650682
+      Yaw: 80.6353226
     }
     Scale {
       X: 1

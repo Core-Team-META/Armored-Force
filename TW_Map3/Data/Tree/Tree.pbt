@@ -20,8 +20,6 @@ Objects {
   ChildIds: 3867707569791740175
   ChildIds: 7310433976514289622
   ChildIds: 2959002750480800334
-  ChildIds: 11289413430179769410
-  ChildIds: 8809528236417373584
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -31,95 +29,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 8809528236417373584
-  Name: "TANK_German_E50"
-  Transform {
-    Location {
-      X: 22685
-      Y: 3665
-      Z: -0.0009765625
-    }
-    Rotation {
-      Yaw: -179.999985
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3538122277889912986
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_German_E50"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -22645
-            Y: -450
-            Z: -0.0009765625
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1017367019735459438
-    }
-  }
-}
-Objects {
-  Id: 11289413430179769410
-  Name: "TANK_German_E50"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3538122277889912986
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_German_E50"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 22685
-            Y: 3665
-            Z: -0.0009765625
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 180
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1017367019735459438
-    }
   }
 }
 Objects {
@@ -225,6 +134,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 8640387106551061264
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -288,12 +198,39 @@ Objects {
   }
 }
 Objects {
+  Id: 8640387106551061264
+  Name: "Measurements"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7719561171605510777
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Measurements"
+  }
+}
+Objects {
   Id: 15182677334456928949
   Name: "Terrain_BG"
   Transform {
     Location {
     }
     Rotation {
+      Yaw: 90
     }
     Scale {
       X: 1
