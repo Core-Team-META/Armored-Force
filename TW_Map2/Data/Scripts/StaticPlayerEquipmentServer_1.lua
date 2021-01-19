@@ -53,6 +53,7 @@ local EQUIPMENT_TEMPLATE26 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE27 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate27")
 local EQUIPMENT_TEMPLATE28 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate28")
 local EQUIPMENT_TEMPLATE29 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate29")
+local EQUIPMENT_TEMPLATE30 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate30")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -142,10 +143,14 @@ function OnBindingPressed(player,bindingPressed)
 		equipment[player].visibility = Visibility.FORCE_ON
 		tankBurning = false
 	end
-	--us m4a1 sherman
+	--us m4a1 sherman or french bat-chat 25t
 	if bindingPressed == "ability_extra_3" then
 		RemovePlayerEquipment(player)
+		if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE30)
+		else
 		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE3)
+		end
 		assert(equipment[player]:IsA("Equipment"))
 		equipment[player]:Equip(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
