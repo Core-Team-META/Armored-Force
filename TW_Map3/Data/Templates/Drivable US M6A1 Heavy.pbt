@@ -5661,7 +5661,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3629910274723977117
+            Id: 17814718521639562316
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -6207,7 +6207,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3629910274723977117
+            Id: 17814718521639562316
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9202,7 +9202,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3629910274723977117
+            Id: 17814718521639562316
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9526,7 +9526,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3629910274723977117
+            Id: 17814718521639562316
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10140,7 +10140,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3629910274723977117
+            Id: 17814718521639562316
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10463,7 +10463,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3629910274723977117
+            Id: 17814718521639562316
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -11802,7 +11802,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 5109129970559468393
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -13006,7 +13006,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12095835209017042614
+            Id: 5109129970559468393
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -35375,15 +35375,6 @@
       }
     }
     Assets {
-      Id: 3629910274723977117
-      Name: "Fantasy Shield Strap 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_shield_strap_001"
-      }
-    }
-    Assets {
       Id: 13295705863038029439
       Name: "Military Tank Historic Hatch Lid 01"
       PlatformAssetType: 1
@@ -35537,7 +35528,7 @@
       }
     }
     Assets {
-      Id: 12095835209017042614
+      Id: 5109129970559468393
       Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {
