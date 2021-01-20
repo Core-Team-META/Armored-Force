@@ -1,6 +1,54 @@
 ﻿Name: "Antti (Keppu)"
 RootId: 7310433976514289622
 Objects {
+  Id: 2892525151792689859
+  Name: "Drivable French AMX50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8700
+            Y: -300
+            Z: 100
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
   Id: 1622175466514518701
   Name: "Drivable French AMX50"
   Transform {
@@ -126,7 +174,7 @@ Objects {
           Vector {
             X: 7600
             Y: 27000
-            Z: 200
+            Z: 400
           }
         }
         Overrides {
@@ -269,6 +317,7 @@ Objects {
           Vector {
             X: -34400
             Y: 32000
+            Z: 200
           }
         }
         Overrides {
@@ -657,15 +706,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 800
-            Y: -16300
-            Z: 200
+            X: -900
+            Y: -12600
+            Z: 100
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -179.999985
+            Yaw: 45
           }
         }
         Overrides {
@@ -4713,15 +4762,15 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Ambient Brightness"
-      Float: 3
+      Float: 2
     }
     Overrides {
       Name: "bp:Cloud Rim Brightness"
-      Float: 150
+      Float: 4
     }
     Overrides {
       Name: "bp:Cloud Opacity"
-      Float: 0.3
+      Float: 0
     }
     Overrides {
       Name: "bp:Cloud Ambient Color"
@@ -4749,11 +4798,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Lighting Brightness"
-      Float: 1
+      Float: 10
     }
     Overrides {
       Name: "bp:Cloud Wisp Opacity"
-      Float: 0.5
+      Float: 0.359502614
     }
     Overrides {
       Name: "bp:Cloud Speed"
@@ -4777,7 +4826,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Sky Influence On Clouds"
-      Float: 0.5
+      Float: 1
     }
     Overrides {
       Name: "bp:High Cloud Opacity"
@@ -4785,7 +4834,19 @@ Objects {
     }
     Overrides {
       Name: "bp:Clouds"
-      Bool: false
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Haze Falloff"
+      Float: 15
+    }
+    Overrides {
+      Name: "bp:Cloud Sun Behind Transmission"
+      Float: 1.98230588
+    }
+    Overrides {
+      Name: "bp:High Cloud Brightness"
+      Float: 0.138155058
     }
   }
   Collidable_v2 {
