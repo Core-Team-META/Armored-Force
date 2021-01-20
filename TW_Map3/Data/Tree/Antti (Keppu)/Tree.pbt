@@ -1,6 +1,344 @@
 ﻿Name: "Antti (Keppu)"
 RootId: 7310433976514289622
 Objects {
+  Id: 17173907717260922003
+  Name: "TW3_Tree3_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1186772537315395211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 26425
+            Y: -7000
+            Z: 100
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7576232896759636794
+    }
+  }
+}
+Objects {
+  Id: 17109931398906586733
+  Name: "TW3_Tree2_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7691061584645470247
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 26125
+            Y: -6950
+            Z: 100
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2230310488114005167
+    }
+  }
+}
+Objects {
+  Id: 11735292948825372293
+  Name: "TW3_Tree_Destructible"
+  Transform {
+    Location {
+      X: 26400
+      Y: -6400
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12561400358109127262
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 25875
+            Y: -6200
+            Z: -0.000183105469
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18401786913820925810
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -6.25213623
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14490812313093711740
+    }
+  }
+}
+Objects {
+  Id: 12505012813193254648
+  Name: "TW3_Tree_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1314689506230725920
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_TreeDead_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 25625
+            Y: -7325
+            Z: 50
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13375647549616668289
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8.20168591
+            Y: 7.02180338
+            Z: 5.27816916
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8022659663373324817
+    }
+  }
+}
+Objects {
+  Id: 1693736143232232992
+  Name: "TW3_Tree_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12561400358109127262
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 26000
+            Y: -6575
+            Z: 75
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14490812313093711740
+    }
+  }
+}
+Objects {
+  Id: 13767904270738644898
+  Name: "Drivable French AMX50"
+  Transform {
+    Location {
+      X: 22800
+      Y: -11600
+      Z: 700
+    }
+    Rotation {
+      Yaw: 135
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 27700
+            Y: -6100
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 135
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
   Id: 5475455362364952669
   Name: "Drivable French AMX50"
   Transform {
@@ -1189,56 +1527,6 @@ Objects {
       X: 0.467792273
       Y: 0.467792273
       Z: 0.467792273
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Branch:id"
-      AssetReference {
-        Id: 82310197696356579
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1114263496638408835
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 10950688945213211518
-  Name: "Tree Redwood Small"
-  Transform {
-    Location {
-      X: 29809.8633
-      Y: -24111.0293
-      Z: 352.366455
-    }
-    Rotation {
-      Yaw: -6.25213623
-    }
-    Scale {
-      X: 0.683667839
-      Y: 0.683667839
-      Z: 0.683667839
     }
   }
   ParentId: 7310433976514289622
@@ -2768,16 +3056,16 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 31132.3672
-            Y: -28232.9922
-            Z: 81.3864746
+            X: 24300
+            Y: -9700
+            Z: 600
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: 1.82746482
-            Yaw: -76.4676361
+            Yaw: -76.4676514
             Roll: 6.21193886
           }
         }
