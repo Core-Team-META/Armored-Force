@@ -30,9 +30,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -100
-            Y: 16900
-            Z: 900
+            X: 5200
+            Y: 20700
+            Z: 600
           }
         }
         Overrides {
@@ -134,9 +134,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2500
-            Y: -15100
-            Z: -0.00048828125
+            X: 800
+            Y: -16300
+            Z: 200
           }
         }
         Overrides {
@@ -3923,36 +3923,11 @@ Objects {
   }
 }
 Objects {
-  Id: 1444000811114487272
-  Name: "EdgeIndicators"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7310433976514289622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "EdgeIndicators"
-  }
-}
-Objects {
   Id: 11667467784761547334
   Name: "Bushes_BG"
   Transform {
     Location {
+      Y: -7500
     }
     Rotation {
       Yaw: 90
@@ -4361,5 +4336,31 @@ Objects {
     }
     TeamSettings {
     }
+  }
+}
+Objects {
+  Id: 1444000811114487272
+  Name: "EdgeIndicators"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.49999988
+      Y: 1.49999988
+      Z: 1.49999988
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "EdgeIndicators"
   }
 }
