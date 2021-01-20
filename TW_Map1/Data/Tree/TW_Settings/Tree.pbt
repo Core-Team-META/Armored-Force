@@ -130,7 +130,6 @@ Objects {
       WalkSpeed: 1000
       MaxAcceleration: 500
       WalkableFloorAngle: 50
-      JumpMaxCount: 1
       JumpVelocity: 900
       GroundFriction: 10
       GravityScale: 1.9
@@ -196,9 +195,9 @@ Objects {
   Settings {
     IsDefault: true
     RespawnSettings {
-      RespawnDelay: 2
+      RespawnDelay: 1e+06
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:atclosestspawnpoint"
+        Value: "mc:erespawnmode:roundrobin"
       }
     }
   }

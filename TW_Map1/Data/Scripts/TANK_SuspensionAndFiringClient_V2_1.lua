@@ -30,6 +30,12 @@ local accumulatedReloadingTime = 0
 local initialized = false
 
 function StartTank(equipment, player)
+
+	while not tankMovementControllerServer:GetCustomProperty("TankReady") do
+	
+		Task.Wait()
+		
+	end
 		
 	tankOwner = player
 	
@@ -48,7 +54,7 @@ function CheckAimAndTurret()
 	local ownerView = tankOwner:GetViewWorldRotation()
 	local currentRotation = cannon:GetWorldRotation()
 	
-	if ownerView.y + 5 > currentRotation.y and ownerView.y - 5 < currentRotation.y then
+	if ownerView.y + 5 > currentRotation.y - 5 and ownerView.y - 5 < currentRotation.y - 5 then
 		
 		if ownerView.z + 5 > currentRotation.z and ownerView.z - 5 < currentRotation.z then
 			
@@ -98,7 +104,6 @@ function FiringAnimation(player)
 	
 	spinPoint1.rotationAngle = 0
 	spinPoint2.rotationAngle = 0
-
 	
 	local xRotation = 0
 	local yRotation = 0
@@ -155,17 +160,13 @@ end
 
 function Tick(dt)
 
-	if tankEquipment.owner then
-	
-		StartTank(tankEquipment, tankEquipment.owner)
-		
-	else
-	
-		return
-		
-	end
-
 	if not initialized then
+	
+		if tankEquipment.owner then
+		
+			StartTank(tankEquipment, tankEquipment.owner)
+			
+		end
 	
 		return
 		
@@ -212,5 +213,5 @@ function Tick(dt)
 		
 end
 
---tankEquipment.equippedEvent:Connect(StartTank)
+tankEquipment.equippedEvent:Connect(StartTank)
 Events.Connect("ANIMATEFIRING", FiringAnimation)
