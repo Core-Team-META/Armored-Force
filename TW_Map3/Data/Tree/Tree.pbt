@@ -16,10 +16,24 @@ Objects {
   }
   ChildIds: 8880801392433534165
   ChildIds: 15182677334456928949
-  ChildIds: 7719561171605510777
+  ChildIds: 12209608198557882361
   ChildIds: 3867707569791740175
   ChildIds: 7310433976514289622
   ChildIds: 2959002750480800334
+  ChildIds: 18005183816202514612
+  ChildIds: 8724443242040900211
+  ChildIds: 12383139267455762562
+  ChildIds: 15828370392246999662
+  ChildIds: 11171198856103720958
+  ChildIds: 10591673525585180223
+  ChildIds: 10079005926679057704
+  ChildIds: 10916401427081999111
+  ChildIds: 9017417457540849509
+  ChildIds: 9543327653432923131
+  ChildIds: 16518631627247255669
+  ChildIds: 8598017532214153343
+  ChildIds: 5654060245830612151
+  ChildIds: 1622175466514518701
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -29,6 +43,451 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1622175466514518701
+  Name: "Drivable French AMX50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11000
+            Y: -7000
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
+  Id: 5654060245830612151
+  Name: "Drivable French AMX50"
+  Transform {
+    Location {
+      X: 31000
+      Y: 21200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 31500
+            Y: -17100
+            Z: 100
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
+  Id: 8598017532214153343
+  Name: "Drivable French AMX50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7600
+            Y: 27000
+            Z: 200
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
+  Id: 16518631627247255669
+  Name: "Drivable French AMX50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 31000
+            Y: 21200
+            Z: 400
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
+  Id: 9543327653432923131
+  Name: "Drivable French AMX50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29700
+            Y: -17700
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
+  Id: 9017417457540849509
+  Name: "Drivable French AMX50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34400
+            Y: 32000
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
+  Id: 10916401427081999111
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -33900
+      Y: 32400
+      Z: 400.000977
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 10079005926679057704
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -34900
+      Y: 33200
+      Z: 400.000977
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 10591673525585180223
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -32500
+      Y: 33800
+      Z: 400.000488
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 11171198856103720958
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -33100
+      Y: 33100
+      Z: 400.000977
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 15828370392246999662
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -31500
+      Y: 34500
+      Z: 400.000977
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 12383139267455762562
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -32500
+      Y: 35300
+      Z: 400.000977
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 8724443242040900211
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -34100
+      Y: 33900
+      Z: 400.000977
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 18005183816202514612
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -33500
+      Y: 34600
+      Z: 400.000488
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -120,7 +579,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7719561171605510777
+  Id: 12209608198557882361
   Name: "Terrain"
   Transform {
     Location {
@@ -134,7 +593,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 8640387106551061264
+  ChildIds: 4501555540050391797
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -145,60 +604,13 @@ Objects {
     Material {
       Id: 4104894016074845561
     }
-    VoxelSize: 100
+    VoxelSize: 75
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
-    Foliage {
-      Asset {
-        Id: 7490518804697783111
-      }
-      DistanceBetweenInstances: 200
-      SpawnDistance: 22400
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 1
-          Max: 1
-        }
-      }
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Grass"
-        value {
-          Id: 9805381863667148043
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 102400
-      }
-    }
   }
 }
 Objects {
-  Id: 8640387106551061264
+  Id: 4501555540050391797
   Name: "Measurements"
   Transform {
     Location {
@@ -211,12 +623,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7719561171605510777
+  ParentId: 12209608198557882361
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -228,6 +640,7 @@ Objects {
   Name: "Terrain_BG"
   Transform {
     Location {
+      Y: -7500
     }
     Rotation {
       Yaw: 90
