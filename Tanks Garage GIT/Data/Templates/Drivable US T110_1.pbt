@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6831206380550517369
   Name: "Drivable US T110"
   PlatformAssetType: 5
@@ -16805,5 +16805,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

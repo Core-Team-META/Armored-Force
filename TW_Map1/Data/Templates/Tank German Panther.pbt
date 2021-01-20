@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17181569335658494133
   Name: "Tank German Panther"
   PlatformAssetType: 5
@@ -19696,6 +19696,6 @@
   Marketplace {
     Description: "German Panther Tank (Prop)\r\n\r\nupdate: -reworked (again) to be MORE hisortically accurate\r\n-reworked to be more hisortically accurate\r\n-adjusted pivot points for turret, gun, and hatch"
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
   DirectlyPublished: true
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8435682349053833462
   Name: "Military Common Crate Template"
   PlatformAssetType: 5
@@ -248,5 +248,5 @@
       AssetId: "Military_Common_Crate"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

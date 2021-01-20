@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 13231971539212330216
   Name: "TW_EdgeIndicator"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 73
   CustomMaterialAsset {
     BaseMaterialId: 10472778939299609072
     ParameterOverrides {

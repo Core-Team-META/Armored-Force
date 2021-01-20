@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10506016181184346374
   Name: "Military Frame 006"
   PlatformAssetType: 9

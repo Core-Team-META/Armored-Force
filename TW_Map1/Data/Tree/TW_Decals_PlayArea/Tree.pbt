@@ -1,4 +1,4 @@
-﻿Name: "TW_Decals_PlayArea"
+Name: "TW_Decals_PlayArea"
 RootId: 3323884308924931292
 Objects {
   Id: 4409108559582698025

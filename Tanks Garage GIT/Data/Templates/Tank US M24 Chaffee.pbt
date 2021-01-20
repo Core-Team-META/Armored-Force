@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8815875038641857701
   Name: "Tank US M24 Chaffee"
   PlatformAssetType: 5
@@ -25425,5 +25425,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

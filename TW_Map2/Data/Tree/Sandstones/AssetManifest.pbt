@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3783629665905000063
   Name: "Rock Flat 02"
   PlatformAssetType: 1

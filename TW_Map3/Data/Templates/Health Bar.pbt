@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16235777146944558613
   Name: "Health Bar"
   PlatformAssetType: 5
@@ -351,5 +351,5 @@
       AssetId: "Health_Bar"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

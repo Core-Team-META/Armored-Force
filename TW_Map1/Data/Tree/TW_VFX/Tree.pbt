@@ -1,4 +1,4 @@
-﻿Name: "TW_VFX"
+Name: "TW_VFX"
 RootId: 2621775899735407543
 Objects {
   Id: 10390176924355026101

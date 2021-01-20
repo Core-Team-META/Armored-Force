@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6216043949485425148
   Name: "Sci-fi Chair 01(Prop)"
   PlatformAssetType: 5
@@ -269,5 +269,5 @@
       AssetId: "Sci-fi_Chair_01_Prop_"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

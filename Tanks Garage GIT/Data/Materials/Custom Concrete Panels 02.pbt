@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 1309234685084379169
   Name: "Custom Concrete Panels 02_military walls"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 73
   CustomMaterialAsset {
     BaseMaterialId: 16471822595236385951
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1017367019735459438
   Name: "TANK_German_E50"
   PlatformAssetType: 5
@@ -26373,5 +26373,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

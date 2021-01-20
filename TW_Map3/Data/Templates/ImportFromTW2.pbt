@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14180135882511540146
   Name: "ImportFromTW2"
   PlatformAssetType: 5
@@ -41045,5 +41045,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

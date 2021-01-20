@@ -1,4 +1,4 @@
-﻿Name: "TW_EnvironmentObjects"
+Name: "TW_EnvironmentObjects"
 RootId: 2145329945819153105
 Objects {
   Id: 4748802075384629324

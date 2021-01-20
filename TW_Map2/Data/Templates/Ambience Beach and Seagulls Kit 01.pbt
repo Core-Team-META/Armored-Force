@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12848151145072017888
   Name: "Ambience Beach and Seagulls Kit 01"
   PlatformAssetType: 5
@@ -129,5 +129,5 @@
       AssetId: "Ambience_Beach_and_Seagulls_Kit_01"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

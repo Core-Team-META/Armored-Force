@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12241065612088824569
   Name: "Military Fence Gate - Single End Template"
   PlatformAssetType: 5
@@ -646,5 +646,5 @@
       AssetId: "Military_Fence_Gate_-_Single_End_Template"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

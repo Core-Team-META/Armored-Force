@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18424421057815180724
   Name: "Gear - generic small hollow"
   PlatformAssetType: 1

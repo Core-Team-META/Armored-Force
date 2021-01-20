@@ -1,4 +1,4 @@
-﻿Name: "Elevation_FirstStep"
+Name: "Elevation_FirstStep"
 RootId: 4569165240744292014
 Objects {
   Id: 16551282938656370975

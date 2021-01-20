@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16152699970047197196
   Name: "Nameplates"
   PlatformAssetType: 5
@@ -328,5 +328,5 @@
       AssetId: "Nameplates"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

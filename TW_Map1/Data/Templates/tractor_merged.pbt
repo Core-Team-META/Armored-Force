@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 370325873437146009
   Name: "tractor_merged"
   PlatformAssetType: 5
@@ -5356,5 +5356,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

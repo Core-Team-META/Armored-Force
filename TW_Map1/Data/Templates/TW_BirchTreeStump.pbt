@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7841751709536356466
   Name: "TW_BirchTreeStump"
   PlatformAssetType: 5
@@ -70,5 +70,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

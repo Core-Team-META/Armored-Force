@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15234553642973347520
   Name: "Ambience Nature Cicadas Set 01 SFX"
   PlatformAssetType: 10

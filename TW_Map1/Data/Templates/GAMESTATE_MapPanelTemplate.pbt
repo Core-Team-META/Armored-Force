@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11756793034819136657
   Name: "GAMESTATE_MapPanelTemplate"
   PlatformAssetType: 5
@@ -232,5 +232,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

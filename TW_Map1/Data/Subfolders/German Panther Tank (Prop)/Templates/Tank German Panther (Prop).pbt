@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4282122314672159298
   Name: "Tank German Panther (Prop)"
   PlatformAssetType: 5
@@ -10035,6 +10035,6 @@
   Marketplace {
     Description: "German Panther Tank (Prop)"
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
   DirectlyPublished: true
 }

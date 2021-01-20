@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1662033444554790039
   Name: "TW_DestructibleObjectTemplate"
   PlatformAssetType: 5
@@ -261,5 +261,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

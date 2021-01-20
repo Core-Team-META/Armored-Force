@@ -1,4 +1,4 @@
-﻿Name: "Decal Stains"
+Name: "Decal Stains"
 RootId: 10098419211695959225
 Objects {
   Id: 5247018496046472356

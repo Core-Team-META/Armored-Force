@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1053357429199442490
   Name: "TW_LogPile_Destructible"
   PlatformAssetType: 5
@@ -1123,5 +1123,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 872417280653870507
   Name: "Drivable German Lowe"
   PlatformAssetType: 5
@@ -20529,5 +20529,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

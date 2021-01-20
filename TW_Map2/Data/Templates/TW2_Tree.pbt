@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11423917909484857595
   Name: "TW2_Tree"
   PlatformAssetType: 5
@@ -383,5 +383,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

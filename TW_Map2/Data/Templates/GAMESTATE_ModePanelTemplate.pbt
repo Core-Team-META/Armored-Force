@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4506362706447568950
   Name: "GAMESTATE_ModePanelTemplate"
   PlatformAssetType: 5
@@ -198,5 +198,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

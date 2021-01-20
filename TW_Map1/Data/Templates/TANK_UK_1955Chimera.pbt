@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17467364654639020699
   Name: "TANK_UK_1955Chimera"
   PlatformAssetType: 5
@@ -26558,5 +26558,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

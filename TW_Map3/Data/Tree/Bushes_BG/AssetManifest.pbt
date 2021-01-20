@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15420880124102881155
   Name: "Clover Patch 01"
   PlatformAssetType: 1

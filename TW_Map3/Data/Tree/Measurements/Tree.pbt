@@ -1,4 +1,4 @@
-﻿Name: "Measurements"
+Name: "Measurements"
 RootId: 4501555540050391797
 Objects {
   Id: 11403301775916935664

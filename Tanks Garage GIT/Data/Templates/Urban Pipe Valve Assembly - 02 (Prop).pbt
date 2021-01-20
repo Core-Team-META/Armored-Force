@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16923679989805265440
   Name: "Urban Pipe Valve Assembly - 02 (Prop)"
   PlatformAssetType: 5
@@ -171,5 +171,5 @@
       AssetId: "Urban_Pipe_Valve_Assembly_-_02__Prop_"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

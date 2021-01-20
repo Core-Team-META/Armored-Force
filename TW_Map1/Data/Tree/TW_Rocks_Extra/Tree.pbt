@@ -1,4 +1,4 @@
-﻿Name: "TW_Rocks_Extra"
+Name: "TW_Rocks_Extra"
 RootId: 4917099346142490461
 Objects {
   Id: 10270481721974450876

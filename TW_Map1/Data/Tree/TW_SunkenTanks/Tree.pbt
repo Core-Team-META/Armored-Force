@@ -1,4 +1,4 @@
-﻿Name: "TW_SunkenTanks"
+Name: "TW_SunkenTanks"
 RootId: 9267357899748793917
 Objects {
   Id: 6227055651878585916

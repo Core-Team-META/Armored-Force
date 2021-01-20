@@ -1,4 +1,4 @@
-﻿Name: "Marcela"
+Name: "Marcela"
 RootId: 2959002750480800334
 Objects {
   Id: 6898577547011757842

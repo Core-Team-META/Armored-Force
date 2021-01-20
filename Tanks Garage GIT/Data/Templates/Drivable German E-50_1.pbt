@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11744440929555001189
   Name: "Drivable German E-50"
   PlatformAssetType: 5
@@ -20777,5 +20777,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

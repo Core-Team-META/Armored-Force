@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13707440352806611583
   Name: "TW2_BuildingCorner2Windows_Destructible"
   PlatformAssetType: 5
@@ -2749,5 +2749,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

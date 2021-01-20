@@ -1,4 +1,4 @@
-﻿Name: "ImportantHeightLevels"
+Name: "ImportantHeightLevels"
 RootId: 11403301775916935664
 Objects {
   Id: 1782166058895872965

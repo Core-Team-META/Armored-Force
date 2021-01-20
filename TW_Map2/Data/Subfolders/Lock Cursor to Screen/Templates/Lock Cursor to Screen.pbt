@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10218951251946089870
   Name: "Lock Cursor to Screen"
   PlatformAssetType: 5
@@ -40,5 +40,5 @@
     Version: "1.0.0"
     Description: "This CC will ensure that your cursor does not leave the screen/game while you are playing as to make sure it does not go to a secondary monitor."
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10628444775381270542
   Name: "Drivable USSR T-62A1"
   PlatformAssetType: 5
@@ -22396,5 +22396,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

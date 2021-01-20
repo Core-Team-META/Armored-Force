@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17940145731485835684
   Name: "Drivable German Maus"
   PlatformAssetType: 5
@@ -17146,5 +17146,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

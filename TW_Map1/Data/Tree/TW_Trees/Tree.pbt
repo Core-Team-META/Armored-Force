@@ -1,4 +1,4 @@
-﻿Name: "TW_Trees"
+Name: "TW_Trees"
 RootId: 15604239347440454439
 Objects {
   Id: 9561302923219442701

@@ -1,4 +1,4 @@
-﻿Name: "TW_Bridges"
+Name: "TW_Bridges"
 RootId: 4600967587515089719
 Objects {
   Id: 4259330713775795265

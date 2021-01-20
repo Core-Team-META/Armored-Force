@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7670659490827297570
   Name: "TW_Jordans Liquid Decal trick"
   PlatformAssetType: 5
@@ -68,5 +68,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15286957583304600630
   Name: "TW_StoneFence_Destructible"
   PlatformAssetType: 5
@@ -895,5 +895,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

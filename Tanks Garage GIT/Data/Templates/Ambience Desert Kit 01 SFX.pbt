@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12431114446032264316
   Name: "Ambience Desert Kit 01 SFX"
   PlatformAssetType: 5
@@ -181,5 +181,5 @@
       AssetId: "Ambience_Desert_Kit_01_SFX"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

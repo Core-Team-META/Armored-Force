@@ -1,4 +1,4 @@
-﻿Name: "Decals_River"
+Name: "Decals_River"
 RootId: 9598386644266971480
 Objects {
   Id: 16387251069017836110

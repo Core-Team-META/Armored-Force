@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5583506916874601366
   Name: "TW_Fence02_Destructible"
   PlatformAssetType: 5
@@ -596,5 +596,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

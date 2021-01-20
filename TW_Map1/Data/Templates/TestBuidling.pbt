@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10003661145653333138
   Name: "TestBuidling"
   PlatformAssetType: 5
@@ -3224,5 +3224,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

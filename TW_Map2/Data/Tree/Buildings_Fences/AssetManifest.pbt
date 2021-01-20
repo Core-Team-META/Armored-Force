@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17246754151924769898
   Name: "Fantasy Castle Floor 03 4m"
   PlatformAssetType: 1

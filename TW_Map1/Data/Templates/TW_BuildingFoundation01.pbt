@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 601663978075853367
   Name: "TW_BuildingFoundation01"
   PlatformAssetType: 5
@@ -278,5 +278,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

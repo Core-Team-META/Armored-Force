@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5699939936526631723
   Name: "TW_FX_Destroy_WoodMedium"
   PlatformAssetType: 5
@@ -335,5 +335,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

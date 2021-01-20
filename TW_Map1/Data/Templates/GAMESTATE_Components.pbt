@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6713916084083849879
   Name: "GAMESTATE_Components"
   PlatformAssetType: 5
@@ -7914,5 +7914,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

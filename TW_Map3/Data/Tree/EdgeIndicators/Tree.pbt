@@ -1,4 +1,4 @@
-﻿Name: "EdgeIndicators"
+Name: "EdgeIndicators"
 RootId: 1444000811114487272
 Objects {
   Id: 1027504345460882190

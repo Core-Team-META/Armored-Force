@@ -1,4 +1,4 @@
-﻿Name: "MapPortions"
+Name: "MapPortions"
 RootId: 8640387106551061264
 Objects {
   Id: 7749186992665373158

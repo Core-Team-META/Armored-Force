@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14490812313093711740
   Name: "TW3_Tree_Destructible"
   PlatformAssetType: 5
@@ -319,5 +319,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

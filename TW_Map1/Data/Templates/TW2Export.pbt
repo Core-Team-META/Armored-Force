@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7676475271376981347
   Name: "TW2Export"
   PlatformAssetType: 5
@@ -34762,5 +34762,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

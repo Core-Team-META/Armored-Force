@@ -1,4 +1,4 @@
-﻿Name: "TW_FX"
+Name: "TW_FX"
 RootId: 10413922790037554413
 Objects {
   Id: 13316499554039665116

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10387737619564005660
   Name: "TW_Tractor"
   PlatformAssetType: 5
@@ -5114,5 +5114,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

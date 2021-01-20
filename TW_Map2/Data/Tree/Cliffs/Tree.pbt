@@ -1,4 +1,4 @@
-﻿Name: "Cliffs"
+Name: "Cliffs"
 RootId: 9408846036456260919
 Objects {
   Id: 13576988069010273692

@@ -1,4 +1,4 @@
-﻿Name: "TW_Tractors"
+Name: "TW_Tractors"
 RootId: 4748802075384629324
 Objects {
   Id: 3879841511220096303

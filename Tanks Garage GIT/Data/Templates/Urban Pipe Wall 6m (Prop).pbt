@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7122340101360276953
   Name: "Urban Pipe Wall 6m (Prop)"
   PlatformAssetType: 5
@@ -2603,5 +2603,5 @@
       AssetId: "Urban_Pipe_Wall_6m__Prop_"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

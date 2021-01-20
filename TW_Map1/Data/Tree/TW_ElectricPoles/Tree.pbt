@@ -1,4 +1,4 @@
-﻿Name: "TW_ElectricPoles"
+Name: "TW_ElectricPoles"
 RootId: 12309504173267345157
 Objects {
   Id: 13727228570804073270

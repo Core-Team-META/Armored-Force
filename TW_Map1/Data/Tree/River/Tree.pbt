@@ -1,4 +1,4 @@
-﻿Name: "River"
+Name: "River"
 RootId: 11718657071077560308
 Objects {
   Id: 8296921212516558424

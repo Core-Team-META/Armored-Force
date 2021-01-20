@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16071062136940729750
   Name: "Drivable USSR T-34"
   PlatformAssetType: 5
@@ -20904,5 +20904,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

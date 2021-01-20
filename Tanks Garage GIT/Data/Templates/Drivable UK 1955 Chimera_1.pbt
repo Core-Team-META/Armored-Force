@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6806501384282816603
   Name: "Drivable UK 1955 Chimera"
   PlatformAssetType: 5
@@ -20747,5 +20747,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8623881014255240717
   Name: "Sci-fi Terminal 01(Prop)"
   PlatformAssetType: 5
@@ -185,5 +185,5 @@
       AssetId: "Sci-fi_Terminal_01_Prop_"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

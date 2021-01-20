@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9072168321675368518
   Name: "Rock 01"
   PlatformAssetType: 1

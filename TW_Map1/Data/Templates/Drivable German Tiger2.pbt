@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2940958797510570528
   Name: "Drivable German Tiger2"
   PlatformAssetType: 5
@@ -27396,5 +27396,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

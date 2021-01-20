@@ -1,4 +1,4 @@
-﻿Name: "Decals_Roads"
+Name: "Decals_Roads"
 RootId: 7102837139605751326
 Objects {
   Id: 10098419211695959225

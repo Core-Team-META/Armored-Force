@@ -1,4 +1,4 @@
-﻿Name: "Local"
+Name: "Local"
 RootId: 2560697817911047078
 Objects {
   Id: 8540035274024635911

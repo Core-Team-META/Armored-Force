@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1602439522106180875
   Name: "TW_Building01_MidShortDoor_Destructible"
   PlatformAssetType: 5
@@ -1595,5 +1595,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7516114789730753284
   Name: "TANK_German_Panzer4H"
   PlatformAssetType: 5
@@ -27997,5 +27997,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }
