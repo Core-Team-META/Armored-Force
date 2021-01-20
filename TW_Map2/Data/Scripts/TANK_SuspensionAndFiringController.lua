@@ -88,7 +88,7 @@ end
 
 function FiringAnimation(player)
 
-	if player ~= tankOwner then
+	if player ~= tankOwner or not Object.IsValid(tankEquipment) then
 	
 		return
 		

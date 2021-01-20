@@ -1,13 +1,9 @@
 ﻿Name: "Patrick"
 RootId: 2908182587629757492
 Objects {
-  Id: 12552716402049589036
-  Name: "TANK_TankDock"
+  Id: 17971703158485483784
+  Name: "GAMESTATE_Components"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -15,14 +11,27 @@ Objects {
     }
   }
   ParentId: 2908182587629757492
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13959016045667498746
+      value {
+        Overrides {
+          Name: "Name"
+          String: "GAMESTATE_Components"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6713916084083849879
+    }
   }
 }
 Objects {
@@ -103,5 +112,30 @@ Objects {
     TemplateAsset {
       Id: 16235777146944558613
     }
+  }
+}
+Objects {
+  Id: 12552716402049589036
+  Name: "TANK_TankDock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2908182587629757492
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }

@@ -79,7 +79,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 1977131737522196893
+        Id: 2583649652352539654
       }
     }
     Overrides {
@@ -133,7 +133,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate15"
       AssetReference {
-        Id: 2910168373921245155
+        Id: 872417280653870507
       }
     }
     Overrides {
@@ -224,6 +224,12 @@ Objects {
       Name: "cs:EquipmentTemplate30"
       AssetReference {
         Id: 6842326968486342247
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentTemplate31"
+      AssetReference {
+        Id: 6009866458434889136
       }
     }
     Overrides {
@@ -678,6 +684,7 @@ Objects {
   ChildIds: 1906188999796026938
   ChildIds: 6843501182091039804
   ChildIds: 2444792808837517683
+  ChildIds: 8258023323242805455
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -705,6 +712,124 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8258023323242805455
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3392106930832000744
+  ChildIds: 2089508560632746718
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIX: 1401.05298
+    UIY: 480.924347
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10264882054510714565
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2089508560632746718
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8258023323242805455
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 238
+    Height: 40
+    UIX: -17.7974548
+    UIY: 5.43295
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Crtl + 4 = German VK7201"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
         }
       }
     }

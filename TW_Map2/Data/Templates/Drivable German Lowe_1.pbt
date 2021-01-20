@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 2910168373921245155
+  Id: 872417280653870507
   Name: "Drivable German Lowe"
   PlatformAssetType: 5
   TemplateAsset {
@@ -517,8 +517,6 @@
         ParentId: 17679090518523034657
         ChildIds: 8276804678313029543
         ChildIds: 10870107919512961001
-        ChildIds: 12607402210798866796
-        ChildIds: 14474080103618064760
         ChildIds: 4360788830302464856
         ChildIds: 1762521693773870569
         ChildIds: 12454777873620331859
@@ -609,7 +607,7 @@
           }
           Scale {
             X: 1.27678847
-            Y: 1.03048265
+            Y: 1.26678145
             Z: 1.94346273
           }
         }
@@ -667,151 +665,6 @@
         }
       }
       Objects {
-        Id: 12607402210798866796
-        Name: "Plane Trapezoid - One Sided"
-        Transform {
-          Location {
-            X: 184.266785
-            Y: 67.1164551
-            Z: 90.5111847
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -7.12503052
-            Roll: 127.284698
-          }
-          Scale {
-            X: 0.129353195
-            Y: -0.665754437
-            Z: 0.530744851
-          }
-        }
-        ParentId: 10301915531580252623
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.15200001
-              G: 0.104750656
-              B: 0.0487863645
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3101403685172409190
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14474080103618064760
-        Name: "Plane Trapezoid - One Sided"
-        Transform {
-          Location {
-            X: 184.433411
-            Y: -68.4360504
-            Z: 90.5111694
-          }
-          Rotation {
-            Pitch: 90
-            Roll: -136.083649
-          }
-          Scale {
-            X: 0.129353195
-            Y: 0.665754437
-            Z: 0.530744851
-          }
-        }
-        ParentId: 10301915531580252623
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.15200001
-              G: 0.104750656
-              B: 0.0487863645
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3101403685172409190
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
         Id: 4360788830302464856
         Name: "Gun"
         Transform {
@@ -829,6 +682,8 @@
         }
         ParentId: 10301915531580252623
         ChildIds: 7473149352297030830
+        ChildIds: 17832558755455434956
+        ChildIds: 5504688927819140623
         ChildIds: 15644124239562133787
         ChildIds: 15764997944000014299
         ChildIds: 9266076101937307644
@@ -1284,6 +1139,502 @@
           EnableCameraCollision: true
           StaticMesh {
             Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17832558755455434956
+        Name: "indent"
+        Transform {
+          Location {
+            X: 61.7190247
+            Y: 41.640625
+            Z: -6.63119507
+          }
+          Rotation {
+            Yaw: 4.30290842
+          }
+          Scale {
+            X: 0.832091
+            Y: -0.832091
+            Z: 0.832091
+          }
+        }
+        ParentId: 4360788830302464856
+        ChildIds: 4132172688986718045
+        ChildIds: 3191543546317228064
+        ChildIds: 9730393475061195618
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 4132172688986718045
+        Name: "Container - Trapezoid 01"
+        Transform {
+          Location {
+            X: 1.96270061
+            Y: 7.34050512
+            Z: 0.191169009
+          }
+          Rotation {
+            Yaw: 31.5644608
+            Roll: -90
+          }
+          Scale {
+            X: 0.134105459
+            Y: 0.061781738
+            Z: 0.103885047
+          }
+        }
+        ParentId: 17832558755455434956
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1146272157419396524
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3191543546317228064
+        Name: "Plane Triangle - One Sided Isosceles"
+        Transform {
+          Location {
+            X: 4.02713346
+            Y: -0.975936472
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -7.12502289
+            Roll: -124.601685
+          }
+          Scale {
+            X: 0.156714559
+            Y: 0.463124812
+            Z: 0.575229585
+          }
+        }
+        ParentId: 17832558755455434956
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.15200001
+              G: 0.104750656
+              B: 0.0487863645
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18019640114680262056
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9730393475061195618
+        Name: "Plane Triangle - One Sided Isosceles"
+        Transform {
+          Location {
+            X: -5.98985815
+            Y: -6.36495352
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: 7.12502289
+            Roll: -110.351593
+          }
+          Scale {
+            X: 0.156714559
+            Y: 0.463124812
+            Z: 0.575229585
+          }
+        }
+        ParentId: 17832558755455434956
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.063
+              G: 0.0434163883
+              B: 0.0202206634
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18019640114680262056
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5504688927819140623
+        Name: "indent"
+        Transform {
+          Location {
+            X: 61.7190819
+            Y: -41.4433327
+            Z: -6.63118696
+          }
+          Rotation {
+            Yaw: -4.30291462
+          }
+          Scale {
+            X: 0.832091
+            Y: 0.832091
+            Z: 0.832091
+          }
+        }
+        ParentId: 4360788830302464856
+        ChildIds: 9800683887152824601
+        ChildIds: 1772559217719598889
+        ChildIds: 11909741525504815092
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9800683887152824601
+        Name: "Container - Trapezoid 01"
+        Transform {
+          Location {
+            X: 1.96270061
+            Y: 7.34050512
+            Z: 0.191169009
+          }
+          Rotation {
+            Yaw: 31.5644608
+            Roll: -90
+          }
+          Scale {
+            X: 0.134105459
+            Y: 0.061781738
+            Z: 0.103885047
+          }
+        }
+        ParentId: 5504688927819140623
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.318546832
+              G: 0.219526231
+              B: 0.102241717
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1146272157419396524
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1772559217719598889
+        Name: "Plane Triangle - One Sided Isosceles"
+        Transform {
+          Location {
+            X: 4.02713346
+            Y: -0.975936472
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -7.12502289
+            Roll: -124.601685
+          }
+          Scale {
+            X: 0.156714559
+            Y: 0.463124812
+            Z: 0.575229585
+          }
+        }
+        ParentId: 5504688927819140623
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.15200001
+              G: 0.104750656
+              B: 0.0487863645
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18019640114680262056
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11909741525504815092
+        Name: "Plane Triangle - One Sided Isosceles"
+        Transform {
+          Location {
+            X: -5.98985815
+            Y: -6.36495352
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: 7.12502289
+            Roll: -110.351593
+          }
+          Scale {
+            X: 0.156714559
+            Y: 0.463124812
+            Z: 0.575229585
+          }
+        }
+        ParentId: 5504688927819140623
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.063
+              G: 0.0434163883
+              B: 0.0202206634
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18019640114680262056
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
             }
           }
         }
@@ -3474,16 +3825,16 @@
           Location {
             X: 63.6228752
             Y: -83.3665314
-            Z: 149.911041
+            Z: 148.702087
           }
           Rotation {
             Pitch: 90
             Roll: 90.0000076
           }
           Scale {
-            X: 0.216595918
-            Y: 0.166442335
-            Z: 0.197112218
+            X: 0.238333583
+            Y: 0.197350532
+            Z: 0.197112247
           }
         }
         ParentId: 1762521693773870569
@@ -3545,17 +3896,17 @@
         Transform {
           Location {
             X: 63.6228752
-            Y: 82.1567154
-            Z: 149.911041
+            Y: 82.1565247
+            Z: 148.702087
           }
           Rotation {
             Pitch: 90
             Roll: 90.0000076
           }
           Scale {
-            X: 0.216595918
-            Y: 0.166442335
-            Z: 0.197112218
+            X: 0.238333583
+            Y: 0.197350532
+            Z: 0.197112247
           }
         }
         ParentId: 1762521693773870569
@@ -3717,15 +4068,15 @@
         Name: "Military Tank Historic Hull 01 - Front"
         Transform {
           Location {
-            X: 417.470825
-            Y: 24.8853168
-            Z: -22.1213264
+            X: 417.470795
+            Y: 24.8853321
+            Z: -22.1213341
           }
           Rotation {
           }
           Scale {
             X: 1.34737825
-            Y: 1.17073345
+            Y: 1.10635591
             Z: 0.838389099
           }
         }
@@ -3816,15 +4167,15 @@
         Name: "Military Tank Historic Hull 01 - Mid"
         Transform {
           Location {
-            X: 135.525055
-            Y: 24.8853168
-            Z: -22.1213264
+            X: 135.525009
+            Y: 24.8853321
+            Z: -22.1213341
           }
           Rotation {
           }
           Scale {
             X: 1.15672731
-            Y: 1.1815207
+            Y: 1.11655
             Z: 0.838389099
           }
         }
@@ -3961,17 +4312,17 @@
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
-            X: 234.252594
-            Y: -157.729477
-            Z: -48.105648
+            X: 234.252563
+            Y: -157.729675
+            Z: -48.1056519
           }
           Rotation {
             Roll: 89.9999847
           }
           Scale {
             X: 3.34309125
-            Y: 2.232198
-            Z: 3.6882019
+            Y: 2.23219824
+            Z: 3.44932485
           }
         }
         ParentId: 9674315953206911027
@@ -4302,7 +4653,7 @@
         Transform {
           Location {
             X: 1.86055028
-            Y: -166.513611
+            Y: -160.750351
             Z: 64.3300629
           }
           Rotation {
@@ -4374,7 +4725,7 @@
         Transform {
           Location {
             X: 1.86055028
-            Y: 215.434799
+            Y: 211.668106
             Z: 64.3300629
           }
           Rotation {
@@ -7282,9 +7633,9 @@
         Name: "axe"
         Transform {
           Location {
-            X: 381.534363
-            Y: 229.863647
-            Z: 24.6764755
+            X: 381.534332
+            Y: 219.236328
+            Z: 24.6764717
           }
           Rotation {
             Roll: 0.18792063
@@ -7627,7 +7978,7 @@
         Transform {
           Location {
             X: 360.863861
-            Y: -177.488693
+            Y: -167.077698
             Z: 28.1531219
           }
           Rotation {
@@ -7732,19 +8083,19 @@
         Name: "Gem - Heart Polished"
         Transform {
           Location {
-            X: -68.1181
-            Y: -2.55059814
-            Z: 5.34066772
+            X: -68.1179199
+            Y: -2.55078125
+            Z: 5.34033203
           }
           Rotation {
-            Pitch: 0.625563323
-            Yaw: 1.2644639
-            Roll: -7.39205933
+            Pitch: 0.687765837
+            Yaw: 1.25329876
+            Roll: -3.90209961
           }
           Scale {
-            X: 0.395480514
-            Y: 0.395480514
-            Z: -0.0380414575
+            X: 0.395480931
+            Y: 0.395480156
+            Z: -0.192084238
           }
         }
         ParentId: 4773320702355446334
@@ -8049,8 +8400,8 @@
         Name: "side  bundle"
         Transform {
           Location {
-            X: 117.735519
-            Y: -185.067245
+            X: 117.735535
+            Y: -172.402039
             Z: 17.3879013
           }
           Rotation {
@@ -8951,12 +9302,12 @@
         Name: "side  bundle"
         Transform {
           Location {
-            X: 117.736023
-            Y: 234.041016
+            X: 117.735962
+            Y: 223.865234
             Z: 17.3879242
           }
           Rotation {
-            Yaw: -89.9999619
+            Yaw: -89.9999695
           }
           Scale {
             X: 0.841885746
@@ -11984,7 +12335,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -12032,7 +12383,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -12080,7 +12431,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -12125,7 +12476,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -16564,15 +16915,16 @@
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: 30.1534767
-            Z: 2.57699251
+            X: 39.7301636
+            Y: -5.33810091
+            Z: 2.5769918
           }
           Rotation {
           }
           Scale {
             X: 1.79968035
             Y: 1
-            Z: 1
+            Z: 1.09060812
           }
         }
         ParentId: 4175625726948306004
@@ -16603,7 +16955,8 @@
         Transform {
           Location {
             X: 396.655945
-            Z: 8.28603077
+            Y: -5.33810091
+            Z: 8.28603268
           }
           Rotation {
           }
@@ -16640,14 +16993,14 @@
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -304.650635
-            Y: -0.0009765625
-            Z: 3.06923294
+            X: -304.650574
+            Y: -5.33691406
+            Z: 3.06922722
           }
           Rotation {
           }
           Scale {
-            X: -1
+            X: -0.9145751
             Y: 1
             Z: 1
           }
@@ -17163,9 +17516,9 @@
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 370.850525
-            Y: 13.7531891
-            Z: 1.90723479
+            X: 370.850494
+            Y: 10.8645906
+            Z: 1.90723753
           }
           Rotation {
           }
@@ -17227,9 +17580,9 @@
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 201.317337
-            Y: 13.7531891
-            Z: 1.90723479
+            X: 201.317398
+            Y: 10.8645906
+            Z: 1.90723753
           }
           Rotation {
           }
@@ -17291,9 +17644,9 @@
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: -162.298828
-            Y: 13.7531891
-            Z: 1.90723479
+            X: -162.298843
+            Y: 10.8645906
+            Z: 1.90723753
           }
           Rotation {
           }
@@ -17355,9 +17708,9 @@
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 15.7117729
-            Y: 13.7531891
-            Z: 1.90723479
+            X: 15.7117205
+            Y: 10.8645906
+            Z: 1.90723753
           }
           Rotation {
           }
@@ -18071,15 +18424,16 @@
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: 30.1534767
-            Z: 2.57699251
+            X: 43.9467773
+            Y: -11.3911133
+            Z: 2.57685852
           }
           Rotation {
           }
           Scale {
             X: 1.79968035
             Y: 1
-            Z: 1
+            Z: 1.07853985
           }
         }
         ParentId: 8601632815576207267
@@ -18109,14 +18463,14 @@
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 396.655823
-            Y: -0.000732421875
-            Z: 8.28598595
+            X: 396.655762
+            Y: -11.3774414
+            Z: 8.28591
           }
           Rotation {
           }
           Scale {
-            X: 1
+            X: 0.983176291
             Y: 1
             Z: 1
           }
@@ -18148,14 +18502,14 @@
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -304.650635
-            Y: -0.0009765625
-            Z: 3.06923294
+            X: -304.650513
+            Y: -11.3774414
+            Z: 3.06915092
           }
           Rotation {
           }
           Scale {
-            X: -1
+            X: -0.90284425
             Y: 1
             Z: 1
           }
@@ -18671,9 +19025,9 @@
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 370.850525
-            Y: 13.7531891
-            Z: 1.90723479
+            X: 370.850464
+            Y: 10.387207
+            Z: 1.9070816
           }
           Rotation {
           }
@@ -18735,9 +19089,9 @@
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 201.317337
-            Y: 13.7531891
-            Z: 1.90723479
+            X: 201.317261
+            Y: 10.387207
+            Z: 1.9070816
           }
           Rotation {
           }
@@ -18800,8 +19154,8 @@
         Transform {
           Location {
             X: -162.298828
-            Y: 13.7531891
-            Z: 1.90723479
+            Y: 10.387207
+            Z: 1.9070816
           }
           Rotation {
           }
@@ -18863,9 +19217,9 @@
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 15.7117729
-            Y: 13.7531891
-            Z: 1.90723479
+            X: 15.7116699
+            Y: 10.387207
+            Z: 1.9070816
           }
           Rotation {
           }
@@ -19577,15 +19931,6 @@
       }
     }
     Assets {
-      Id: 3101403685172409190
-      Name: "Plane Trapezoid - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_trapezoid_001"
-      }
-    }
-    Assets {
       Id: 3274446916344085931
       Name: "Cone - Truncated Wide"
       PlatformAssetType: 1
@@ -19646,6 +19991,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_basic_pbr_material_001"
+      }
+    }
+    Assets {
+      Id: 1146272157419396524
+      Name: "Container - Trapezoid 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_container_trapezoid_ref"
+      }
+    }
+    Assets {
+      Id: 18019640114680262056
+      Name: "Plane Triangle - One Sided Isosceles"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_triangle_001"
       }
     }
     Assets {
@@ -20072,7 +20435,7 @@
       }
     }
     Assets {
-      Id: 10755294693114967386
+      Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {

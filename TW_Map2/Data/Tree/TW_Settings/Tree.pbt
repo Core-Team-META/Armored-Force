@@ -196,9 +196,9 @@ Objects {
   Settings {
     IsDefault: true
     RespawnSettings {
-      RespawnDelay: 2
+      RespawnDelay: 100000
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:atclosestspawnpoint"
+        Value: "mc:erespawnmode:roundrobin"
       }
     }
   }
