@@ -86,6 +86,7 @@ end
 function GivePlayerEquipment(player)
 	equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE)
 	assert(equipment[player]:IsA("Equipment"))
+	Task.Wait(0.1)
 	equipment[player]:Equip(player)
 end
 
@@ -94,6 +95,8 @@ end
 function RemovePlayerEquipment(player)
 	if equipment[player] and equipment[player]:IsValid() then
 		equipment[player]:Unequip()
+		
+		Task.Wait(0.1)
 
 		-- Have to check IsValid() again, because unequip may have destroyed this equipment
 		if equipment[player]:IsValid() then			
