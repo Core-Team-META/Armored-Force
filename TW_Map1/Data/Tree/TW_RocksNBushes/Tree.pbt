@@ -1,4 +1,4 @@
-﻿Name: "TW_RocksNBushes"
+Name: "TW_RocksNBushes"
 RootId: 2969933359206949021
 Objects {
   Id: 8682932352852573206

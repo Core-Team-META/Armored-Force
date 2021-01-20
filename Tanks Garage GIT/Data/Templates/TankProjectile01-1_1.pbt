@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9818541818650792680
   Name: "TankProjectile01-1"
   PlatformAssetType: 5
@@ -160,5 +160,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

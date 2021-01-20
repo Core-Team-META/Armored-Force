@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16262228655760128189
   Name: "TW_Building01_Joint_Destructible_Unoptimized"
   PlatformAssetType: 5
@@ -3237,5 +3237,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

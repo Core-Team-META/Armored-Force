@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9998865165816331997
   Name: "TW_BuildingBarnSmall02__Destructible"
   PlatformAssetType: 5
@@ -2856,5 +2856,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

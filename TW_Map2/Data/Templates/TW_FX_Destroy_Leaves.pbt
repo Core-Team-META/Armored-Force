@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10741374102143104409
   Name: "TW_FX_Destroy_Leaves"
   PlatformAssetType: 5
@@ -228,5 +228,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

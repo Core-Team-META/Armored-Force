@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12654053778519036148
   Name: "Tank German Panther Destroyed"
   PlatformAssetType: 5
@@ -3840,5 +3840,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

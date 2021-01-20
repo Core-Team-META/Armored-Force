@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3473065710800896669
   Name: "TW_Log_Physical"
   PlatformAssetType: 5
@@ -217,5 +217,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

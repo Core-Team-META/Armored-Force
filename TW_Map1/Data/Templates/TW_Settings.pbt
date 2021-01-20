@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7532529998980851651
   Name: "TW_Settings"
   PlatformAssetType: 5
@@ -292,5 +292,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

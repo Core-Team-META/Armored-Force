@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 12439574855237548056
   Name: "Custom Metal Greebles 03"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 73
   CustomMaterialAsset {
     BaseMaterialId: 3072145561304418548
     ParameterOverrides {

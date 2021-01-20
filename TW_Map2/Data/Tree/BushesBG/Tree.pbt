@@ -1,4 +1,4 @@
-﻿Name: "BushesBG"
+Name: "BushesBG"
 RootId: 15982705569383717904
 Objects {
   Id: 15526812763871647264

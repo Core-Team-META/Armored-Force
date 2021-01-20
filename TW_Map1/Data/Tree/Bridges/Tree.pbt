@@ -1,4 +1,4 @@
-﻿Name: "Bridges"
+Name: "Bridges"
 RootId: 4204073858418191548
 Objects {
   Id: 3628801987992525841

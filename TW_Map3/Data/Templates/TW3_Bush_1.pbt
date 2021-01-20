@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9235099455598857286
   Name: "TW3_Bush"
   PlatformAssetType: 5
@@ -223,5 +223,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

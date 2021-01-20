@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13301292553974685859
   Name: "Drivable French AMX50"
   PlatformAssetType: 5
@@ -25515,5 +25515,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

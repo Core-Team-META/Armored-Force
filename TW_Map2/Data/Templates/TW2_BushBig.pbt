@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14719356031079241106
   Name: "TW2_BushBig"
   PlatformAssetType: 5
@@ -212,5 +212,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

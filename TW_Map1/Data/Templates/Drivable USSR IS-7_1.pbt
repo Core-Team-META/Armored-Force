@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7673997164589420679
   Name: "Drivable USSR IS-7"
   PlatformAssetType: 5
@@ -26282,5 +26282,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

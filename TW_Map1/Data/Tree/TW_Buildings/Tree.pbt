@@ -1,4 +1,4 @@
-﻿Name: "TW_Buildings"
+Name: "TW_Buildings"
 RootId: 1047753454771894243
 Objects {
   Id: 7023074180805967050

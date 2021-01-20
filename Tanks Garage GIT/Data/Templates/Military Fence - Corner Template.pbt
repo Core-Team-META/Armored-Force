@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 363046584916557897
   Name: "Military Fence - Corner Template"
   PlatformAssetType: 5
@@ -569,5 +569,5 @@
       AssetId: "Military_Fence_-_Corner_Template"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

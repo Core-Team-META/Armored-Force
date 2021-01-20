@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14773812306848060375
   Name: "GAMESTATE_MatchGameLink"
   PlatformAssetType: 3
@@ -18,5 +18,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

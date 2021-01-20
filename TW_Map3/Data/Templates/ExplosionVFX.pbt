@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4755909063025648967
   Name: "ExplosionVFX"
   PlatformAssetType: 5
@@ -135,5 +135,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

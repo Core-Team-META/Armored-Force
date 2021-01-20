@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17214602222160971866
   Name: "TW_Building01_Corner_Destructible"
   PlatformAssetType: 5
@@ -3167,5 +3167,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

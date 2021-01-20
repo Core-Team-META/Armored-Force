@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9219308869430247346
   Name: "TW_BuildingBarn_MidDoor_Destructible"
   PlatformAssetType: 5
@@ -1354,5 +1354,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

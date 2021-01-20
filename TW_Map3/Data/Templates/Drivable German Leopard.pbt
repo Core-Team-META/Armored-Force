@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3429021562017972626
   Name: "Drivable German Leopard"
   PlatformAssetType: 5
@@ -21875,5 +21875,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

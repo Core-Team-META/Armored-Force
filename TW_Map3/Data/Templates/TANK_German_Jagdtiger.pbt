@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16744483769497778380
   Name: "TANK_German_Jagdtiger"
   PlatformAssetType: 5
@@ -37202,5 +37202,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

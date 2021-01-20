@@ -1,4 +1,4 @@
-﻿Name: "Decal Tread"
+Name: "Decal Tread"
 RootId: 16621955740648678237
 Objects {
   Id: 1708009425783378915

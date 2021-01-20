@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5510153205208780123
   Name: "Drivable US M3 Stuart"
   PlatformAssetType: 5
@@ -28328,5 +28328,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6009866458434889136
   Name: "Drivable German VK7201"
   PlatformAssetType: 5
@@ -22191,5 +22191,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

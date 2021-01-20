@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4468230014049769806
   Name: "save"
   PlatformAssetType: 5
@@ -25045,5 +25045,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

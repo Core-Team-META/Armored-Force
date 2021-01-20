@@ -1,4 +1,4 @@
-﻿Name: "TW_Settings"
+Name: "TW_Settings"
 RootId: 10090713447264881202
 Objects {
   Id: 1722819333983075486

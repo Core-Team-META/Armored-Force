@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16196500400169196906
   Name: "Drivable German Panther"
   PlatformAssetType: 5
@@ -21817,5 +21817,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

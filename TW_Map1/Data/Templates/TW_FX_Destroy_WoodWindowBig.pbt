@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8823241362130014848
   Name: "TW_FX_Destroy_WoodWindowBig"
   PlatformAssetType: 5
@@ -358,5 +358,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

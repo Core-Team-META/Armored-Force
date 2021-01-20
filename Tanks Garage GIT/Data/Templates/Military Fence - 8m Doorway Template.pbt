@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1246583209366791085
   Name: "Military Fence - 8m Doorway Template"
   PlatformAssetType: 5
@@ -851,5 +851,5 @@
       AssetId: "Military_Fence_-_8m_Doorway_Template"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1235156210547298513
   Name: "hay bale_merged"
   PlatformAssetType: 5
@@ -1868,5 +1868,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

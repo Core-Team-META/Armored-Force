@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10955374793369641760
   Name: "farm rake_merged"
   PlatformAssetType: 5
@@ -6272,5 +6272,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

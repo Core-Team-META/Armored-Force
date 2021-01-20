@@ -1,4 +1,4 @@
-﻿Name: "TW_Fences"
+Name: "TW_Fences"
 RootId: 1761654165733765804
 Objects {
   Id: 4306243735487288817

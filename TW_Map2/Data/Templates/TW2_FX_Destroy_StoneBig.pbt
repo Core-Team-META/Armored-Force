@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15253247271758234121
   Name: "TW2_FX_Destroy_StoneBig"
   PlatformAssetType: 5
@@ -308,5 +308,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

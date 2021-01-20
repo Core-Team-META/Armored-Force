@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2450311630477153028
   Name: "Drivable Japan Chi-Nu"
   PlatformAssetType: 5
@@ -28747,5 +28747,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

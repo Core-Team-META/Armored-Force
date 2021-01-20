@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6847753047424864381
   Name: "TW_Bridge_Stone02"
   PlatformAssetType: 5
@@ -707,5 +707,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

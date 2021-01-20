@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13499437047315910078
   Name: "TANK_USSR_T34"
   PlatformAssetType: 5
@@ -26402,5 +26402,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

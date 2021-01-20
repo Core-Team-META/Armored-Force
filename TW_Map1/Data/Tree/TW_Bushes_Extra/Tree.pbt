@@ -1,4 +1,4 @@
-﻿Name: "TW_Bushes_Extra"
+Name: "TW_Bushes_Extra"
 RootId: 10627146378688685322
 Objects {
   Id: 18306515996491800329

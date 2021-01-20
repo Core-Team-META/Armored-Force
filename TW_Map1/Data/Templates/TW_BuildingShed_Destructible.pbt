@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4471216179204758257
   Name: "TW_BuildingShed_Destructible"
   PlatformAssetType: 5
@@ -2034,5 +2034,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

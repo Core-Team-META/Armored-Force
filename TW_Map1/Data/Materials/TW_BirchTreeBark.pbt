@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 12302653924554145284
   Name: "TW_BirchTreeBark"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 73
   CustomMaterialAsset {
     BaseMaterialId: 1702921525393974664
     ParameterOverrides {

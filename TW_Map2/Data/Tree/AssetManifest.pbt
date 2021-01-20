@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17657915315029757659
   Name: "Grass Short"
   PlatformAssetType: 1

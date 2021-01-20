@@ -1,4 +1,4 @@
-﻿Name: "Decals_ExtraSpots"
+Name: "Decals_ExtraSpots"
 RootId: 14587926452770275409
 Objects {
   Id: 10195319666103418182

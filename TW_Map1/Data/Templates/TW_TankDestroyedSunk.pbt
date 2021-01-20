@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15209325617664785276
   Name: "TW_TankDestroyedSunk"
   PlatformAssetType: 5
@@ -883,5 +883,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

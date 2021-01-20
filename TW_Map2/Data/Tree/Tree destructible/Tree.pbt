@@ -1,4 +1,4 @@
-﻿Name: "Tree destructible"
+Name: "Tree destructible"
 RootId: 15016328222128833720
 Objects {
   Id: 13750653013683225240

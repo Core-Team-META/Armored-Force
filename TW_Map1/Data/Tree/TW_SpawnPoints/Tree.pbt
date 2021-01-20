@@ -1,4 +1,4 @@
-﻿Name: "TW_SpawnPoints"
+Name: "TW_SpawnPoints"
 RootId: 14246791555251678451
 Objects {
   Id: 11488164079922228028

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14672144019020984591
   Name: "TW_CypressTreeSmall_Destructible"
   PlatformAssetType: 5
@@ -548,5 +548,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

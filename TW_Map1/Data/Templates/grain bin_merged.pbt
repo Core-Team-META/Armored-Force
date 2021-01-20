@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1421109474334882152
   Name: "grain bin_merged"
   PlatformAssetType: 5
@@ -2787,5 +2787,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

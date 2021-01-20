@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1645818606374011234
   Name: "windmill_merged"
   PlatformAssetType: 5
@@ -5500,5 +5500,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

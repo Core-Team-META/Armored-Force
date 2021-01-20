@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17949211485635097187
   Name: "Branches Cluster Big"
   PlatformAssetType: 1

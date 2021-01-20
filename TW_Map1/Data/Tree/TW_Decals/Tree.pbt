@@ -1,4 +1,4 @@
-﻿Name: "TW_Decals"
+Name: "TW_Decals"
 RootId: 13383598495480064863
 Objects {
   Id: 3323884308924931292

@@ -1,4 +1,4 @@
-﻿Name: "Hedges"
+Name: "Hedges"
 RootId: 17389490451330179131
 Objects {
   Id: 16994678456393453937

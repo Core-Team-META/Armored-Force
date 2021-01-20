@@ -1,4 +1,4 @@
-﻿Name: "TW_SFX"
+Name: "TW_SFX"
 RootId: 13316499554039665116
 Objects {
   Id: 13471128232389386262

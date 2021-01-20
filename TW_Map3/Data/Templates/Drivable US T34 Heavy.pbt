@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8634818322580078051
   Name: "Drivable US T34 Heavy"
   PlatformAssetType: 5
@@ -29382,5 +29382,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

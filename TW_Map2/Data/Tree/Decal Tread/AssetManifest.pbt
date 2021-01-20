@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10119078917586003560
   Name: "Decal Tread Tracks 01"
   PlatformAssetType: 14

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12915612693623928532
   Name: "TW2_TreeDead_Cosmetic"
   PlatformAssetType: 5
@@ -204,5 +204,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

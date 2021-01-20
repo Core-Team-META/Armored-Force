@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10755944677217175272
   Name: "TW2_Minimap"
   PlatformAssetType: 5
@@ -36018,5 +36018,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

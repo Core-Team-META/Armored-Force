@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1976090991745567963
   Name: "TANK_US_M4A1Sherman"
   PlatformAssetType: 5
@@ -41813,5 +41813,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

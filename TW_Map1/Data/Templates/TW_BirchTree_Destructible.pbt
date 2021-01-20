@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1877293447267286738
   Name: "TW_BirchTree_Destructible"
   PlatformAssetType: 5
@@ -322,5 +322,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

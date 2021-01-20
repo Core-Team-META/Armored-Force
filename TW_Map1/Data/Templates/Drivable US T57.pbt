@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17017903987544206552
   Name: "Drivable US T57"
   PlatformAssetType: 5
@@ -22805,5 +22805,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

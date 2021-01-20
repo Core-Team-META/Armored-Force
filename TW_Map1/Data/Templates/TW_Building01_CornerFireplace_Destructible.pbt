@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18054344350354477485
   Name: "TW_Building01_CornerFireplace_Destructible"
   PlatformAssetType: 5
@@ -3392,5 +3392,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

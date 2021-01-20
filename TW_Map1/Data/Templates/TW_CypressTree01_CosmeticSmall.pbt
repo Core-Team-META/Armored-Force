@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7467575095499837485
   Name: "TW_CypressTree01_CosmeticSmall"
   PlatformAssetType: 5
@@ -259,5 +259,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

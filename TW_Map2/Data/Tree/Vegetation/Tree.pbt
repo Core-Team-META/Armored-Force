@@ -1,4 +1,4 @@
-﻿Name: "Vegetation"
+Name: "Vegetation"
 RootId: 4742637420062156135
 Objects {
   Id: 17497585379290690289

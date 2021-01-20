@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7282387019851744848
   Name: "Drivable US M48 Patton Toy"
   PlatformAssetType: 5
@@ -23250,5 +23250,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

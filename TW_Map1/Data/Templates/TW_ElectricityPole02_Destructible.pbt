@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17407238115313380345
   Name: "TW_ElectricityPole02_Destructible"
   PlatformAssetType: 5
@@ -1800,5 +1800,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

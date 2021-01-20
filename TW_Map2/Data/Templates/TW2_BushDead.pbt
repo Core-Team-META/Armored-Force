@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12158110288120917116
   Name: "TW2_BushDead"
   PlatformAssetType: 5
@@ -131,5 +131,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

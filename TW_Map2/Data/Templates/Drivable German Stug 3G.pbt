@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15498618579037627396
   Name: "Drivable German Stug 3G"
   PlatformAssetType: 5
@@ -22158,5 +22158,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

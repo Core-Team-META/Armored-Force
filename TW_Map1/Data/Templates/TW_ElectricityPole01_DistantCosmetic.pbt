@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13195577439740188028
   Name: "TW_ElectricityPole01_DistantCosmetic"
   PlatformAssetType: 5
@@ -250,5 +250,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

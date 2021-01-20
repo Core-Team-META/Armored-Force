@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14708080725622686308
   Name: "Drivable UK Comet"
   PlatformAssetType: 5
@@ -30047,5 +30047,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

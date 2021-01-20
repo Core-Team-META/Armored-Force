@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 15106445487939148600
   Name: "TW_BridgeFloor"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 73
   CustomMaterialAsset {
     BaseMaterialId: 136256093384731196
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Name: "Decals"
+Name: "Decals"
 RootId: 5155544345315597350
 Objects {
   Id: 14587926452770275409

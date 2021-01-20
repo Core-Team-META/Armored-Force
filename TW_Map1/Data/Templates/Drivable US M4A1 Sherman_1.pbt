@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2834100597623405160
   Name: "Drivable US M4A1 Sherman"
   PlatformAssetType: 5
@@ -36212,5 +36212,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

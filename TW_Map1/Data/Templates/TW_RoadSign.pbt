@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6756860935661242999
   Name: "TW_RoadSign"
   PlatformAssetType: 5
@@ -210,5 +210,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

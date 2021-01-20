@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13466022340780387165
   Name: "Drivable German Jagdtiger"
   PlatformAssetType: 5
@@ -31449,5 +31449,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

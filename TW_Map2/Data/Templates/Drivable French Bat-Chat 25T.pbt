@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6842326968486342247
   Name: "Drivable French Bat-Chat 25T"
   PlatformAssetType: 5
@@ -26192,5 +26192,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

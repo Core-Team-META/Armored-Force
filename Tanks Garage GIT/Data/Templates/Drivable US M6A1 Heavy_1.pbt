@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9663849611283350878
   Name: "Drivable US M6A1 Heavy"
   PlatformAssetType: 5
@@ -35874,5 +35874,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

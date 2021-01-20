@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7384292537040996429
   Name: "Drivable German Panzer 3"
   PlatformAssetType: 5
@@ -24733,5 +24733,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

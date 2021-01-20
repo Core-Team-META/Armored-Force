@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16534946959001200733
   Name: "TW_ArtilleryHole"
   PlatformAssetType: 5
@@ -579,5 +579,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

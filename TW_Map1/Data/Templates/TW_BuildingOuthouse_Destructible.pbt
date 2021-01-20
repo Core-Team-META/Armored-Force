@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14643909469192043589
   Name: "TW_BuildingOuthouse_Destructible"
   PlatformAssetType: 5
@@ -1238,5 +1238,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

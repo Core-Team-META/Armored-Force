@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8509863486529792859
   Name: "TW2_BuildingMidWindow_Destructible"
   PlatformAssetType: 5
@@ -2010,5 +2010,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

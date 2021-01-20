@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8162965319628787604
   Name: "Urban Pipe Straight - 03 (Prop)"
   PlatformAssetType: 5
@@ -312,5 +312,5 @@
       AssetId: "Urban_Pipe_Straight_-_03__Prop_"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

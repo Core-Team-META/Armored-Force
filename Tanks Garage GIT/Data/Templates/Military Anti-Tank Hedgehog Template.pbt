@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8417261693506921101
   Name: "Military Anti-Tank Hedgehog Template"
   PlatformAssetType: 5
@@ -2251,5 +2251,5 @@
       AssetId: "Anit-Tank_Hedgehog_Template"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

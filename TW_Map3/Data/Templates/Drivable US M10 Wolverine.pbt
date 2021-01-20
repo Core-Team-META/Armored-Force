@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17943086051479796919
   Name: "Drivable US M10 Wolverine"
   PlatformAssetType: 5
@@ -33799,5 +33799,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

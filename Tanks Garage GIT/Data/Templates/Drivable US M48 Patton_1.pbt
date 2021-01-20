@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7747743672446270910
   Name: "Drivable US M48 Patton"
   PlatformAssetType: 5
@@ -23525,5 +23525,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

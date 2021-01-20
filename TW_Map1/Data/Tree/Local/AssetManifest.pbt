@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4409471342408545730
   Name: "Ambience Nature Waterflow Set 01 SFX"
   PlatformAssetType: 10

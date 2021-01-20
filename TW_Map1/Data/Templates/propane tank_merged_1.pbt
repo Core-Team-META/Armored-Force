@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2007334545469689917
   Name: "propane tank_merged"
   PlatformAssetType: 5
@@ -1247,5 +1247,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

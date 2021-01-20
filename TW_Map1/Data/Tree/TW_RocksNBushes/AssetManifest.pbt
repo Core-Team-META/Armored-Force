@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11182969111770509228
   Name: "Cliff 02"
   PlatformAssetType: 2

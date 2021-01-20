@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16126269139161472245
   Name: "Drivable German Panzer 4H"
   PlatformAssetType: 5
@@ -22516,5 +22516,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

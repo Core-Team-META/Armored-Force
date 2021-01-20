@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18190965035016522280
   Name: "Tank German Panther Burned"
   PlatformAssetType: 5
@@ -10815,5 +10815,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

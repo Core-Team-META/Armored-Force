@@ -1,4 +1,4 @@
-﻿Name: "Base"
+Name: "Base"
 RootId: 6517589804281672817
 Objects {
   Id: 15987236043257458333

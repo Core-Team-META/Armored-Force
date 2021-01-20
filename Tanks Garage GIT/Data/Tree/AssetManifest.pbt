@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8986079238497616517
   Name: "Terrain - Desert"
   PlatformAssetType: 2

@@ -1,4 +1,4 @@
-﻿Name: "Sandstones"
+Name: "Sandstones"
 RootId: 5278132779621699120
 Objects {
   Id: 12444180405175176320

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2935640042099208591
   Name: "TW_Building01_MidLong_Destructible"
   PlatformAssetType: 5
@@ -2669,5 +2669,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

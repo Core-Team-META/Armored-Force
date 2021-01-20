@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 16074754259765457852
   Name: "Custom Concrete Basic 01_military floor"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 73
   CustomMaterialAsset {
     BaseMaterialId: 8329339828071933523
     ParameterOverrides {

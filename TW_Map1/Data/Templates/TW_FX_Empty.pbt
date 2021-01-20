@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16469021483182990014
   Name: "TW_FX_Empty"
   PlatformAssetType: 5
@@ -59,5 +59,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

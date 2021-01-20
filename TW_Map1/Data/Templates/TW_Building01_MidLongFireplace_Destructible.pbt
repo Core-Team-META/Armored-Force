@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14752650251125148447
   Name: "TW_Building01_MidLongFireplace_Destructible"
   PlatformAssetType: 5
@@ -2909,5 +2909,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 73
 }

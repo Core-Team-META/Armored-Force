@@ -1,4 +1,4 @@
-﻿Name: "Global"
+Name: "Global"
 RootId: 7462351800352651416
 Objects {
   Id: 14515292240891727279
