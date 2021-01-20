@@ -65,6 +65,7 @@ function StartTank(equipment, player)
 	
 	player.maxWalkSpeed = topSpeed
 	player.maxAcceleration = acceleration
+	player.maxJumpCount = 0
 	
 	player.bindingPressedEvent:Connect(BindingPressed)
 	player.bindingReleasedEvent:Connect(BindingReleased)
