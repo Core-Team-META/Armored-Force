@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 Minimap UI
 v1.0
 by: standardcombo
@@ -27,6 +27,24 @@ local BORDER_SIZE = script:GetCustomProperty("BorderSize")
 
 local worldShapes = ROOT:FindDescendantsByType("StaticMesh")
 local worldTexts = ROOT:FindDescendantsByType("WorldText")
+
+local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
+
+function CheckSpotting(player)
+	
+	for i=1, 16 do
+	
+		if spottingServer:GetCustomProperty("P" .. tostring(i)) == player.id then
+			
+			return true
+			
+		end
+		
+	end
+	
+	return false
+	
+end
 
 if #worldShapes <= 0 then
 	error("Minimap needs at least one 3D shape placed in-world.")
@@ -154,7 +172,7 @@ function Tick()
 	
 	for _,player in ipairs(allPlayers) do
 		local indicator = GetIndicatorForPlayer(player)
-		if player.isDead or player.team == localPlayer.team then
+		if player.isDead or player.team == localPlayer.team or CheckSpotting(player) then
 			indicator.visibility = Visibility.INHERIT
 		
 			local pos = player:GetWorldPosition()
