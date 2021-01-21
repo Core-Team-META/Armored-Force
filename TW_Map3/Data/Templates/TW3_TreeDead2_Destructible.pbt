@@ -1,13 +1,13 @@
 Assets {
-  Id: 14490812313093711740
-  Name: "TW3_Tree_Destructible"
+  Id: 8959166441360606935
+  Name: "TW3_TreeDead2_Destructible"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 12561400358109127262
+      RootId: 9383981116591929478
       Objects {
-        Id: 12561400358109127262
-        Name: "TW3_Tree_Destructible"
+        Id: 9383981116591929478
+        Name: "TW3_TreeDead2_Destructible"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 6862021172189687237
+        ParentId: 7310433976514289622
+        ChildIds: 7760320054376739035
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28,7 +28,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6862021172189687237
+        Id: 7760320054376739035
         Name: "ClientContext"
         Transform {
           Location {
@@ -41,10 +41,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12561400358109127262
-        ChildIds: 17624579909058680973
-        ChildIds: 1105185900021691814
-        ChildIds: 4890009571224272415
+        ParentId: 9383981116591929478
+        ChildIds: 6997672933799220303
+        ChildIds: 3201684183585590
+        ChildIds: 14677805335861309825
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -55,24 +55,24 @@ Assets {
         }
       }
       Objects {
-        Id: 17624579909058680973
+        Id: 6997672933799220303
         Name: "DestructionTrigger"
         Transform {
           Location {
-            Z: 206.132233
+            Z: 206.132248
           }
           Rotation {
           }
           Scale {
             X: 0.689146161
-            Y: 0.940266073
+            Y: 0.728723109
             Z: 4.33055
           }
         }
-        ParentId: 6862021172189687237
-        ChildIds: 3523564823516874608
-        ChildIds: 8919264953239203105
-        ChildIds: 8561602287468500681
+        ParentId: 7760320054376739035
+        ChildIds: 12250581300477870530
+        ChildIds: 9679986874468847271
+        ChildIds: 14927647677664917867
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -90,7 +90,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3523564823516874608
+        Id: 12250581300477870530
         Name: "DestructibleObject"
         Transform {
           Location {
@@ -103,7 +103,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17624579909058680973
+        ParentId: 6997672933799220303
         UnregisteredParameters {
           Overrides {
             Name: "cs:DestructionFX01"
@@ -120,25 +120,25 @@ Assets {
           Overrides {
             Name: "cs:FXLocation01"
             ObjectReference {
-              SubObjectId: 8919264953239203105
+              SubObjectId: 9679986874468847271
             }
           }
           Overrides {
             Name: "cs:FXLocation02"
             ObjectReference {
-              SubObjectId: 8561602287468500681
+              SubObjectId: 14927647677664917867
             }
           }
           Overrides {
             Name: "cs:DebrisGroup"
             ObjectReference {
-              SubObjectId: 1105185900021691814
+              SubObjectId: 3201684183585590
             }
           }
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
-              SubObjectId: 4890009571224272415
+              SubObjectId: 14677805335861309825
             }
           }
         }
@@ -155,7 +155,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8919264953239203105
+        Id: 9679986874468847271
         Name: "FXLocation01"
         Transform {
           Location {
@@ -169,7 +169,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 17624579909058680973
+        ParentId: 6997672933799220303
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -181,7 +181,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8561602287468500681
+        Id: 14927647677664917867
         Name: "FXLocation02"
         Transform {
           Location {
@@ -195,7 +195,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 17624579909058680973
+        ParentId: 6997672933799220303
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -207,7 +207,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1105185900021691814
+        Id: 3201684183585590
         Name: "DebrisGroup"
         Transform {
           Location {
@@ -220,8 +220,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6862021172189687237
-        ChildIds: 18401786913820925810
+        ParentId: 7760320054376739035
+        ChildIds: 15520106215511386537
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -233,21 +233,22 @@ Assets {
         }
       }
       Objects {
-        Id: 18401786913820925810
-        Name: "Tree Redwood Small"
+        Id: 15520106215511386537
+        Name: "Tree Redwood Bare Medium"
         Transform {
           Location {
+            Y: -21.84375
+            Z: -10.5771179
           }
           Rotation {
-            Yaw: -6.25213623
           }
           Scale {
-            X: 0.683667839
-            Y: 0.683667839
-            Z: 0.683667839
+            X: 0.38137272
+            Y: 0.38137272
+            Z: 0.38137272
           }
         }
-        ParentId: 1105185900021691814
+        ParentId: 3201684183585590
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Branch:id"
@@ -270,7 +271,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 1114263496638408835
+            Id: 2280134469986834104
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -286,7 +287,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4890009571224272415
+        Id: 14677805335861309825
         Name: "RemoveGroup"
         Transform {
           Location {
@@ -299,7 +300,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6862021172189687237
+        ParentId: 7760320054376739035
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -312,12 +313,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1114263496638408835
-      Name: "Tree Redwood Small"
+      Id: 2280134469986834104
+      Name: "Tree Redwood Bare Medium"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_tree_redwood_005"
+        AssetId: "sm_tree_redwood_004"
       }
     }
     PrimaryAssetId {

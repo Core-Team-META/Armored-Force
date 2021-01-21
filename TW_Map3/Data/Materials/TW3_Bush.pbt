@@ -1,6 +1,6 @@
 Assets {
   Id: 179407668354224432
-  Name: "TW3_Pines - Copy"
+  Name: "TW3_Bush"
   PlatformAssetType: 13
   SerializationVersion: 73
   CustomMaterialAsset {
@@ -9,27 +9,27 @@ Assets {
       Overrides {
         Name: "SSS"
         Color {
-          R: 0.289
-          G: 0.148546
-          B: 0.0783189908
+          R: 0.0429127477
+          G: 0.0610000044
+          B: 0.0313385352
           A: 1
         }
       }
       Overrides {
         Name: "color"
         Color {
-          R: 0.21100001
-          G: 0.130053371
-          B: 0.026
+          R: 0.0612034276
+          G: 0.0870000049
+          B: 0.0446959436
           A: 1
         }
       }
       Overrides {
         Name: "color_roots"
         Color {
-          R: 0.289
-          G: 0.119453341
-          B: 0.0346799865
+          R: 0.676000059
+          G: 0.676000059
+          B: 0.676000059
           A: 1
         }
       }
