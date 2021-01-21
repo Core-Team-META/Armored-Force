@@ -20,11 +20,11 @@ Assets {
       }
       Overrides {
         Name: "density"
-        Float: 0.275997967
+        Float: 0
       }
       Overrides {
         Name: "splotchiness"
-        Float: 0.404528826
+        Float: 0.75441879
       }
       Overrides {
         Name: "edge_wear_top"
