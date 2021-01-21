@@ -41,8 +41,8 @@ Assets {
       Overrides {
         Name: "cmpc:Material4"
         Color {
-          R: 0.661999941
-          G: 0.752133131
+          R: 0.45
+          G: 0.45364213
           B: 1
           A: 1
         }
@@ -65,10 +65,26 @@ Assets {
         Name: "cmpc:Material1"
         Color {
           R: 1
-          G: 1
-          B: 1
+          G: 0.96475
+          B: 0.858999968
           A: 1
         }
+      }
+      Overrides {
+        Name: "cmp:Material3"
+        AssetReference {
+          Id: 14699052267568398286
+        }
+      }
+      Overrides {
+        Name: "cmp:Material3_Sides"
+        AssetReference {
+          Id: 14699052267568398286
+        }
+      }
+      Overrides {
+        Name: "mask_scale"
+        Float: 1
       }
     }
     Assets {
@@ -123,6 +139,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "cliff_003"
+      }
+    }
+    Assets {
+      Id: 14699052267568398286
+      Name: "Stucco Wall"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stucco_001_uv"
+      }
+    }
+    Assets {
+      Id: 14699052267568398286
+      Name: "Stucco Wall"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stucco_001_uv"
       }
     }
   }
