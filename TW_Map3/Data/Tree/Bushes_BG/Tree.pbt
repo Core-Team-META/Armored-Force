@@ -3707,9 +3707,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -86085.3516
-      Y: -39311.2695
-      Z: 6603.45166
+      X: -86083.3594
+      Y: -39046.0703
+      Z: 6149.81494
     }
     Rotation {
       Pitch: -15.665863
@@ -6461,9 +6461,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -64184.4844
-      Y: -1482.09766
-      Z: 1749.02832
+      X: -64182.9609
+      Y: -1217.75
+      Z: 1295.3927
     }
     Rotation {
       Pitch: 9.63315487
@@ -6515,9 +6515,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -63681.0078
-      Y: 1166.22949
-      Z: 1680
+      X: -63679.5
+      Y: 1430.35938
+      Z: 1226.36438
     }
     Rotation {
       Pitch: -0.997467041
@@ -6569,9 +6569,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -59700.3047
-      Y: 1657.4502
-      Z: 1040.78467
+      X: -59698.8047
+      Y: 1921.62109
+      Z: 587.149048
     }
     Rotation {
       Pitch: 9.63315487
@@ -6623,9 +6623,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -67849.0781
-      Y: -935.523438
-      Z: 2111.75635
+      X: -67847.4219
+      Y: -671.171875
+      Z: 1658.12073
     }
     Rotation {
       Pitch: -0.997467041
@@ -6677,9 +6677,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -68560.4531
-      Y: -3323.40234
-      Z: 2180.78467
+      X: -68558.7891
+      Y: -3059.0625
+      Z: 1727.14893
     }
     Rotation {
       Pitch: 9.63315487
@@ -11912,9 +11912,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -86790.2656
-      Y: -35517.9531
-      Z: 5681.39453
+      X: -86788.1641
+      Y: -35252.8281
+      Z: 5227.75928
     }
     Rotation {
       Pitch: 10.0253716
@@ -11966,9 +11966,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -87262.6797
-      Y: -38169.7695
-      Z: 6632.85693
+      X: -87260.5781
+      Y: -37904.5859
+      Z: 6179.22
     }
     Rotation {
       Pitch: 17.7833805
@@ -12074,9 +12074,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -82631.6328
-      Y: -35517.9531
-      Z: 5178.21338
+      X: -82629.7656
+      Y: -35252.7969
+      Z: 4724.57764
     }
     Rotation {
       Pitch: 3.57561755
@@ -12236,9 +12236,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79534.1719
-      Y: -33675.0469
-      Z: 3946.15
+      X: -79532.4219
+      Y: -33410
+      Z: 3492.51611
     }
     Rotation {
       Pitch: 3.57561755
@@ -12344,9 +12344,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -78244.6875
-      Y: -32638.8516
-      Z: 3369.38916
+      X: -78242.9141
+      Y: -32373.6094
+      Z: 2915.75439
     }
     Rotation {
       Pitch: -10.882843
@@ -12452,9 +12452,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -73044.6328
-      Y: -26943.7539
-      Z: 2889.02832
+      X: -73043
+      Y: -26678.9141
+      Z: 2435.39355
     }
     Rotation {
       Pitch: 9.63315487
@@ -12506,9 +12506,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -78184.4063
-      Y: -29950.3438
-      Z: 3680.41016
+      X: -78182.6719
+      Y: -29685.3359
+      Z: 3226.77539
     }
     Rotation {
       Pitch: -0.997467041
@@ -12560,9 +12560,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -69742.5156
-      Y: -25100.8496
-      Z: 2432.73389
+      X: -69740.8906
+      Y: -24836.0156
+      Z: 1979.09875
     }
     Rotation {
       Pitch: 9.63315487
@@ -13532,9 +13532,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -90473.2188
-      Y: -2208.98975
-      Z: 5166.05469
+      X: -90470.8125
+      Y: -1944.64844
+      Z: 4712.41943
     }
     Rotation {
       Pitch: 17.5732555
@@ -13694,9 +13694,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -92097.3125
-      Y: -4700.40869
-      Z: 6083.80664
+      X: -92094.8
+      Y: -4436.11719
+      Z: 5630.16943
     }
     Rotation {
       Pitch: -7.60614
@@ -13748,9 +13748,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -93340.6172
-      Y: -5736.604
-      Z: 5129.28369
+      X: -93338.3047
+      Y: -5472.14844
+      Z: 4675.64795
     }
     Rotation {
       Pitch: -0.997467041
@@ -13802,9 +13802,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -97172.2188
-      Y: -5246.98291
-      Z: 5654.60693
+      X: -97169.8438
+      Y: -4982.60156
+      Z: 5200.97119
     }
     Rotation {
       Pitch: 9.63315487
@@ -13856,9 +13856,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -93844.0938
-      Y: -8384.93359
-      Z: 5198.3125
+      X: -93841.7578
+      Y: -8120.46094
+      Z: 4744.67725
     }
     Rotation {
       Pitch: 9.63315487
@@ -13964,9 +13964,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -91950.6563
-      Y: -4700.40869
-      Z: 4877.33496
+      X: -91948.1719
+      Y: -4436.07031
+      Z: 4423.69971
     }
     Rotation {
       Pitch: -0.997467041
@@ -14018,9 +14018,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -86790.2656
-      Y: -18654.0801
-      Z: 5969.91113
+      X: -86788.1
+      Y: -18389.7266
+      Z: 5516.27393
     }
     Rotation {
       Pitch: -3.45455933
@@ -14072,9 +14072,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -87262.6797
-      Y: -21255.873
-      Z: 6498.48633
+      X: -87260.4297
+      Y: -20991.3281
+      Z: 6044.84912
     }
     Rotation {
       Pitch: 25.2916489
@@ -14126,9 +14126,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -88128.3359
-      Y: -24194.377
-      Z: 7215.38232
+      X: -88126.125
+      Y: -23929.6328
+      Z: 6761.74561
     }
     Rotation {
       Pitch: -5.58547974
@@ -14180,9 +14180,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -86790.2656
-      Y: -24752.5273
-      Z: 6761.79102
+      X: -86788.0625
+      Y: -24487.7109
+      Z: 6308.15381
     }
     Rotation {
       Pitch: 10.0253716
@@ -14234,9 +14234,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -87262.6797
-      Y: -27404.3398
-      Z: 6632.85693
+      X: -87260.4453
+      Y: -27139.3594
+      Z: 6179.22
     }
     Rotation {
       Pitch: 17.7833939
@@ -14288,9 +14288,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -88128.3359
-      Y: -30428.8848
-      Z: 6603.45166
+      X: -88126.0859
+      Y: -30163.9063
+      Z: 6149.81494
     }
     Rotation {
       Pitch: -15.6658936
@@ -14342,9 +14342,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -97756.6406
-      Y: -12473.1211
-      Z: 5508.53
+      X: -97754.2734
+      Y: -12208.5938
+      Z: 5054.89404
     }
     Rotation {
       Pitch: 3.57561755
@@ -14396,9 +14396,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -98229.0547
-      Y: -15121.4443
-      Z: 5695.85693
+      X: -98226.6094
+      Y: -14856.8828
+      Z: 5242.22119
     }
     Rotation {
       Pitch: 21.5045147
@@ -14450,9 +14450,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -99094.7109
-      Y: -18128.0293
-      Z: 6026.33643
+      X: -99092.3
+      Y: -17863.3828
+      Z: 5572.69971
     }
     Rotation {
       Pitch: -10.8828735
@@ -14504,9 +14504,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -89525.6
-      Y: -12473.1211
-      Z: 4987.94678
+      X: -89523.3125
+      Y: -12208.6797
+      Z: 4534.31104
     }
     Rotation {
       Pitch: 3.57561755
@@ -14558,9 +14558,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -89998.0156
-      Y: -15121.4443
-      Z: 5175.27393
+      X: -89995.6172
+      Y: -14857.0469
+      Z: 4721.63818
     }
     Rotation {
       Pitch: 21.504528
@@ -14612,9 +14612,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -90863.6719
-      Y: -18128.0293
-      Z: 5505.75342
+      X: -90861.2813
+      Y: -17863.5859
+      Z: 5052.11768
     }
     Rotation {
       Pitch: -10.8828735
@@ -14666,9 +14666,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -83703.8438
-      Y: -18066.9727
-      Z: 5147.30957
+      X: -83701.8359
+      Y: -17802.5781
+      Z: 4693.67432
     }
     Rotation {
       Pitch: 3.57561755
@@ -14720,9 +14720,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -80606.3828
-      Y: -16224.0664
-      Z: 3915.24609
+      X: -80604.5625
+      Y: -15959.4141
+      Z: 3461.6123
     }
     Rotation {
       Pitch: 3.57561755
@@ -14774,9 +14774,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79316.9
-      Y: -15187.8711
-      Z: 3338.48535
+      X: -79315.1563
+      Y: -14923.375
+      Z: 2884.85059
     }
     Rotation {
       Pitch: -10.882843
@@ -14828,9 +14828,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79991.1875
-      Y: -17575.75
-      Z: 3575.4834
+      X: -79989.3828
+      Y: -17311.3125
+      Z: 3121.84863
     }
     Rotation {
       Pitch: 1.88055587
@@ -14882,9 +14882,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79256.6172
-      Y: -12499.3633
-      Z: 3649.50635
+      X: -79254.8438
+      Y: -12234.9297
+      Z: 3195.87158
     }
     Rotation {
       Pitch: -0.997467041
@@ -14936,9 +14936,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -74772.9
-      Y: -22420
-      Z: 2141.57471
+      X: -74771.2656
+      Y: -22155.2109
+      Z: 1687.93909
     }
     Rotation {
       Pitch: 21.504549
@@ -14990,9 +14990,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -82631.6328
-      Y: -24752.5273
-      Z: 5178.21338
+      X: -82629.6875
+      Y: -24487.6094
+      Z: 4724.57764
     }
     Rotation {
       Pitch: 3.57561755
@@ -15044,9 +15044,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79981.3203
-      Y: -30538.8047
-      Z: 4127.26416
+      X: -79979.4531
+      Y: -30273.7422
+      Z: 3673.63037
     }
     Rotation {
       Pitch: 21.5045624
@@ -15098,9 +15098,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -83104.0469
-      Y: -27400.8535
-      Z: 5365.54053
+      X: -83102.0703
+      Y: -27135.5703
+      Z: 4911.90479
     }
     Rotation {
       Pitch: 21.504549
@@ -15152,9 +15152,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79508.9531
-      Y: -27890.4766
-      Z: 3939.93066
+      X: -79507.1328
+      Y: -27625.5703
+      Z: 3486.29688
     }
     Rotation {
       Pitch: 3.57561755
@@ -15206,9 +15206,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -83969.7
-      Y: -30407.4453
-      Z: 5696.02
+      X: -83967.6875
+      Y: -30142.1875
+      Z: 5242.38428
     }
     Rotation {
       Pitch: -10.8828735
@@ -15260,9 +15260,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -78219.4219
-      Y: -26854.2793
-      Z: 3363.1748
+      X: -78217.6719
+      Y: -26589.4297
+      Z: 2909.54
     }
     Rotation {
       Pitch: -10.882843
@@ -15314,9 +15314,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79534.1719
-      Y: -22909.6211
-      Z: 3946.15
+      X: -79532.3594
+      Y: -22644.9297
+      Z: 3492.51611
     }
     Rotation {
       Pitch: 3.57561755
@@ -15368,9 +15368,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -80006.5938
-      Y: -25557.9492
-      Z: 4133.47803
+      X: -80004.7578
+      Y: -25293.1328
+      Z: 3679.84424
     }
     Rotation {
       Pitch: 21.5045624
@@ -15422,9 +15422,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -78244.6875
-      Y: -21873.4258
-      Z: 3369.38916
+      X: -78242.9531
+      Y: -21608.7813
+      Z: 2915.75439
     }
     Rotation {
       Pitch: -10.882843
@@ -15476,9 +15476,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -78918.9766
-      Y: -24261.3047
-      Z: 3606.38721
+      X: -78917.1719
+      Y: -23996.5547
+      Z: 3152.75244
     }
     Rotation {
       Pitch: 1.88055587
@@ -15530,9 +15530,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -63655
-      Y: -13530
-      Z: 1680
+      X: -63653.5234
+      Y: -13265.3984
+      Z: 1226.36438
     }
     Rotation {
       Pitch: -0.997467041
@@ -15584,9 +15584,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -60352.8828
-      Y: -11687.0947
-      Z: 1223.70508
+      X: -60351.4453
+      Y: -11422.5313
+      Z: 770.069458
     }
     Rotation {
       Pitch: -0.997467041
@@ -15638,9 +15638,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -64184.4844
-      Y: -11197.4736
-      Z: 1749.02832
+      X: -64182.9453
+      Y: -10932.9883
+      Z: 1295.3927
     }
     Rotation {
       Pitch: 9.63315487
@@ -15692,9 +15692,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -60856.3594
-      Y: -14335.4238
-      Z: 1292.73389
+      X: -60854.8359
+      Y: -14070.8867
+      Z: 839.098267
     }
     Rotation {
       Pitch: 9.63315487
@@ -15746,9 +15746,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -63681.0078
-      Y: -8549.14648
-      Z: 1680
+      X: -63679.4023
+      Y: -8284.71875
+      Z: 1226.36438
     }
     Rotation {
       Pitch: -0.997467041
@@ -15800,9 +15800,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -58962.9219
-      Y: -10650.8994
-      Z: 971.756348
+      X: -58961.4648
+      Y: -10386.4609
+      Z: 518.120728
     }
     Rotation {
       Pitch: -0.997467041
@@ -15854,9 +15854,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -59700.3047
-      Y: -8057.92578
-      Z: 1040.78467
+      X: -59698.8047
+      Y: -7793.52734
+      Z: 587.149048
     }
     Rotation {
       Pitch: 9.63315487
@@ -15908,9 +15908,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -59674.2969
-      Y: -13038.7793
-      Z: 1040.78467
+      X: -59672.8516
+      Y: -12774.2461
+      Z: 587.149048
     }
     Rotation {
       Pitch: 9.63315487
@@ -15962,9 +15962,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -74835.2109
-      Y: -8384.93359
-      Z: 3389.78125
+      X: -74833.5625
+      Y: -8120.50781
+      Z: 2936.14648
     }
     Rotation {
       Pitch: 9.63315487
@@ -16016,9 +16016,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -72541.1563
-      Y: -13530
-      Z: 2820
+      X: -72539.5469
+      Y: -13265.5234
+      Z: 2366.36523
     }
     Rotation {
       Pitch: -0.997467041
@@ -16070,9 +16070,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -69716.5078
-      Y: -19316.2773
-      Z: 2432.73389
+      X: -69714.875
+      Y: -19051.7813
+      Z: 1979.09875
     }
     Rotation {
       Pitch: 9.63315487
@@ -16124,9 +16124,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -73044.6328
-      Y: -16178.3271
-      Z: 2889.02832
+      X: -73043.0078
+      Y: -15913.8047
+      Z: 2435.39355
     }
     Rotation {
       Pitch: 9.63315487
@@ -16178,9 +16178,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -69213.0313
-      Y: -16667.9492
-      Z: 2363.70508
+      X: -69211.3906
+      Y: -16403.4141
+      Z: 1910.06982
     }
     Rotation {
       Pitch: -0.997467041
@@ -16232,9 +16232,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -78184.4063
-      Y: -19184.918
-      Z: 3680.41016
+      X: -78182.6172
+      Y: -18920.4063
+      Z: 3226.77539
     }
     Rotation {
       Pitch: -0.997467041
@@ -16286,9 +16286,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -67823.0703
-      Y: -15631.7529
-      Z: 2111.75635
+      X: -67821.4453
+      Y: -15367.2266
+      Z: 1658.12073
     }
     Rotation {
       Pitch: -0.997467041
@@ -16340,9 +16340,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -69239.0391
-      Y: -11687.0947
-      Z: 2363.70508
+      X: -69237.4297
+      Y: -11422.6563
+      Z: 1910.06982
     }
     Rotation {
       Pitch: -0.997467041
@@ -16394,9 +16394,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -73070.6406
-      Y: -11197.4736
-      Z: 2889.02832
+      X: -73069.0156
+      Y: -10933.0391
+      Z: 2435.39355
     }
     Rotation {
       Pitch: 9.63315487
@@ -16448,9 +16448,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -69742.5156
-      Y: -14335.4238
-      Z: 2432.73389
+      X: -69740.9063
+      Y: -14070.9453
+      Z: 1979.09875
     }
     Rotation {
       Pitch: 9.63315487
@@ -16502,9 +16502,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -72567.1641
-      Y: -8549.14648
-      Z: 2820
+      X: -72565.5391
+      Y: -8284.71094
+      Z: 2366.36523
     }
     Rotation {
       Pitch: -0.997467041
@@ -16556,9 +16556,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -67849.0781
-      Y: -10650.8994
-      Z: 2111.75635
+      X: -67847.4688
+      Y: -10386.4453
+      Z: 1658.12073
     }
     Rotation {
       Pitch: -0.997467041
@@ -16610,9 +16610,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -68586.4609
-      Y: -8057.92578
-      Z: 2180.78467
+      X: -68584.8359
+      Y: -7793.53906
+      Z: 1727.14893
     }
     Rotation {
       Pitch: 9.63315487
@@ -16664,9 +16664,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -68560.4531
-      Y: -13038.7793
-      Z: 2180.78467
+      X: -68558.8281
+      Y: -12774.3359
+      Z: 1727.14893
     }
     Rotation {
       Pitch: 9.63315487
@@ -17301,9 +17301,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -50620
-      Y: 8730
-      Z: 895
+      X: -50619.1563
+      Y: 8994.20313
+      Z: 441.36438
     }
     Rotation {
       Yaw: -179.999954
@@ -17407,9 +17407,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -52009.9609
-      Y: 9766.19531
-      Z: 1146.94678
+      X: -52009.1094
+      Y: 10030.3477
+      Z: 693.311157
     }
     Rotation {
       Yaw: -179.999954
@@ -17460,9 +17460,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -49200
-      Y: 11867.9492
-      Z: 820
+      X: -49199.1953
+      Y: 12131.9922
+      Z: 366.36438
     }
     Rotation {
       Yaw: -179.999954
@@ -17513,9 +17513,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -47865
-      Y: 9219.62109
-      Z: 635
+      X: -47864.1719
+      Y: 9483.86328
+      Z: 181.36438
     }
     Rotation {
       Yaw: -179.999954
@@ -17937,9 +17937,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -53962.5781
-      Y: -10685.8311
-      Z: 1077.92139
+      X: -53961.5547
+      Y: -10421.3867
+      Z: 624.285767
     }
     Rotation {
       Yaw: -179.999954
@@ -17990,9 +17990,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -54699.9609
-      Y: -13278.8047
-      Z: 1146.94678
+      X: -54698.7383
+      Y: -13014.1719
+      Z: 693.311157
     }
     Rotation {
       Yaw: -179.999954
@@ -18043,9 +18043,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -51890
-      Y: -11177.0508
-      Z: 820
+      X: -51888.9727
+      Y: -10912.5313
+      Z: 366.36438
     }
     Rotation {
       Yaw: -179.999954
@@ -18202,9 +18202,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -51875
-      Y: -8165
-      Z: 895
+      X: -51874.0273
+      Y: -7900.59766
+      Z: 441.36438
     }
     Rotation {
       Yaw: -179.999954
@@ -18255,9 +18255,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -52527.5781
-      Y: -4535.83105
-      Z: 1077.92139
+      X: -52526.5781
+      Y: -4271.4375
+      Z: 624.285767
     }
     Rotation {
       Yaw: -179.999954
@@ -18308,9 +18308,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -53264.9609
-      Y: -7128.80469
-      Z: 1146.94678
+      X: -53263.9531
+      Y: -6864.42969
+      Z: 693.311157
     }
     Rotation {
       Yaw: -179.999954
@@ -18361,9 +18361,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -50455
-      Y: -5027.05078
-      Z: 820
+      X: -50454.0781
+      Y: -4762.65234
+      Z: 366.36438
     }
     Rotation {
       Yaw: -179.999954
@@ -18414,9 +18414,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -51371.5234
-      Y: -10813.3301
-      Z: 825.973145
+      X: -51370.5586
+      Y: -10548.8203
+      Z: 372.337524
     }
     Rotation {
       Yaw: -179.999954
@@ -18467,9 +18467,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -49120
-      Y: -7675.37891
-      Z: 635
+      X: -49119.0586
+      Y: -7410.94922
+      Z: 181.36438
     }
     Rotation {
       Yaw: -179.999954
@@ -18520,9 +18520,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -52250
-      Y: -2820
-      Z: 895
+      X: -52248.9844
+      Y: -2555.59375
+      Z: 441.36438
     }
     Rotation {
       Yaw: -179.999985
@@ -18573,9 +18573,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -52902.5781
-      Y: 809.168945
-      Z: 1077.92139
+      X: -52901.7734
+      Y: 1073.33594
+      Z: 624.285767
     }
     Rotation {
       Yaw: -179.999985
@@ -18626,9 +18626,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -53639.9609
-      Y: -1783.80469
-      Z: 1146.94678
+      X: -53638.9141
+      Y: -1519.4375
+      Z: 693.311157
     }
     Rotation {
       Yaw: -179.999985
@@ -18679,9 +18679,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -50830
-      Y: 317.949219
-      Z: 820
+      X: -50829.2109
+      Y: 582.117188
+      Z: 366.36438
     }
     Rotation {
       Yaw: -179.999985
@@ -18732,9 +18732,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -51746.5234
-      Y: -5468.32959
-      Z: 825.973145
+      X: -51745.5469
+      Y: -5203.90625
+      Z: 372.337524
     }
     Rotation {
       Yaw: -179.999985
@@ -18785,9 +18785,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -49495
-      Y: -2330.37939
-      Z: 635
+      X: -49494.1
+      Y: -2065.99219
+      Z: 181.36438
     }
     Rotation {
       Yaw: -179.999985
@@ -18838,12 +18838,13 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -52045
-      Y: 3992.50391
-      Z: 895
+      X: -52044.0391
+      Y: 4256.71484
+      Z: 441.36438
     }
     Rotation {
-      Pitch: 180
+      Yaw: 180
+      Roll: 180
     }
     Scale {
       X: 9.8
@@ -18890,12 +18891,13 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -49290
-      Y: 4482.12451
-      Z: 635
+      X: -49289.1563
+      Y: 4746.31641
+      Z: 181.36438
     }
     Rotation {
-      Pitch: 180
+      Yaw: 180
+      Roll: 180
     }
     Scale {
       X: 9.8
@@ -18942,12 +18944,13 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -51541.5234
-      Y: 1344.17432
-      Z: 825.973145
+      X: -51540.6875
+      Y: 1608.34375
+      Z: 372.337524
     }
     Rotation {
-      Pitch: 180
+      Yaw: 180
+      Roll: 180
     }
     Scale {
       X: 9.8
@@ -18994,12 +18997,13 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -50625
-      Y: 7130.45313
-      Z: 820
+      X: -50624.1406
+      Y: 7394.64453
+      Z: 366.36438
     }
     Rotation {
-      Pitch: 180
+      Yaw: 180
+      Roll: 180
     }
     Scale {
       X: 9.8
@@ -19046,12 +19050,13 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -53434.9609
-      Y: 5028.69922
-      Z: 1146.94678
+      X: -53434
+      Y: 5292.88672
+      Z: 693.311157
     }
     Rotation {
-      Pitch: 180
+      Yaw: 180
+      Roll: 180
     }
     Scale {
       X: 9.8
@@ -19098,12 +19103,13 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -52697.5781
-      Y: 7621.67285
-      Z: 1077.92139
+      X: -52696.75
+      Y: 7885.82813
+      Z: 624.285767
     }
     Rotation {
-      Pitch: 180
+      Yaw: 180
+      Roll: 180
     }
     Scale {
       X: 9.8
@@ -19258,9 +19264,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -69716.5078
-      Y: 1344.17432
-      Z: 1994.2478
+      X: -69714.9609
+      Y: 1608.28906
+      Z: 1540.61218
     }
     Rotation {
       Pitch: 9.63315487
@@ -19474,9 +19480,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -79574.3672
-      Y: 439.339844
-      Z: 3493.87256
+      X: -79572.6797
+      Y: 703.507813
+      Z: 3040.23779
     }
     Rotation {
       Pitch: -0.997467041
@@ -19528,9 +19534,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -78184.4063
-      Y: 1475.53516
-      Z: 3241.92383
+      X: -78182.7109
+      Y: 1739.64063
+      Z: 2788.28906
     }
     Rotation {
       Pitch: -0.997467041
@@ -19636,9 +19642,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -80077.8438
-      Y: -2208.98975
-      Z: 3562.90137
+      X: -80076.0469
+      Y: -1944.75
+      Z: 3109.2666
     }
     Rotation {
       Pitch: 9.63315487
@@ -19690,9 +19696,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -83405.9688
-      Y: 928.960938
-      Z: 4019.1958
+      X: -83404.0781
+      Y: 1193.02344
+      Z: 3565.56201
     }
     Rotation {
       Pitch: 9.63315487
@@ -19744,9 +19750,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -83217.8906
-      Y: -5736.604
-      Z: 4460.75244
+      X: -83215.875
+      Y: -5472.33594
+      Z: 4007.11816
     }
     Rotation {
       Pitch: -0.997467041
@@ -19798,9 +19804,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -87049.4922
-      Y: -5246.98291
-      Z: 4986.07568
+      X: -87047.3672
+      Y: -4982.57813
+      Z: 4532.44
     }
     Rotation {
       Pitch: 9.63315487
@@ -19852,9 +19858,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -83721.3672
-      Y: -8384.93359
-      Z: 4529.78125
+      X: -83719.3906
+      Y: -8120.35156
+      Z: 4076.14697
     }
     Rotation {
       Pitch: 9.63315487
@@ -19906,9 +19912,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -86546.0156
-      Y: -2598.6543
-      Z: 4917.04736
+      X: -86543.9141
+      Y: -2334.32031
+      Z: 4463.41162
     }
     Rotation {
       Pitch: -0.997467041
@@ -19960,9 +19966,9 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: -81827.9297
-      Y: -4700.40869
-      Z: 4208.80371
+      X: -81826.0469
+      Y: -4436.1875
+      Z: 3755.17041
     }
     Rotation {
       Pitch: -0.997467041
