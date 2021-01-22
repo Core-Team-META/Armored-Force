@@ -123944,9 +123944,9 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 974.082031
+      X: 974.082153
       Y: 872.93396
-      Z: 2434.06226
+      Z: 2434.16211
     }
     Rotation {
       Pitch: -90

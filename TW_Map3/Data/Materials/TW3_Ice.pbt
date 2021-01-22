@@ -2,7 +2,7 @@ Assets {
   Id: 18328571160423102069
   Name: "TW3_Ice"
   PlatformAssetType: 13
-  SerializationVersion: 73
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 663082363223318009
     ParameterOverrides {

@@ -1,6 +1,47 @@
 Name: "Patrick"
 RootId: 14640456784048730058
 Objects {
+  Id: 5990878943538105342
+  Name: "Sphere"
+  Transform {
+    Location {
+      X: 31240
+      Y: -61405
+      Z: 1525
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14640456784048730058
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7672894170880533820
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 9924777615865923174
   Name: "GAMESTATE_Components"
   Transform {

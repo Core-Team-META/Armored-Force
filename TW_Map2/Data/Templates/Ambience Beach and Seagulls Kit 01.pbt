@@ -129,5 +129,5 @@ Assets {
       AssetId: "Ambience_Beach_and_Seagulls_Kit_01"
     }
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }
