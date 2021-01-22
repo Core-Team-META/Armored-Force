@@ -2,7 +2,7 @@ Assets {
   Id: 5028462544160077647
   Name: "TW_WoodVertical"
   PlatformAssetType: 13
-  SerializationVersion: 73
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 1890220075148311577
     ParameterOverrides {

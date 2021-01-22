@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 8880801392433534165
+  ChildIds: 2548759880759357540
   ChildIds: 15182677334456928949
   ChildIds: 12209608198557882361
   ChildIds: 3867707569791740175
@@ -306,7 +306,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8880801392433534165
+  Id: 2548759880759357540
   Name: "TW_Settings"
   Transform {
     Scale {
@@ -316,18 +316,14 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9193139104749142452
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_Settings"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7532529998980851651
-    }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW_Settings"
   }
 }
