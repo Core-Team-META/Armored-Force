@@ -1,4 +1,4 @@
-﻿local reliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local reliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local tankEquipment = script:GetCustomProperty("TankEquipment"):WaitForObject()
 local tankSettings = script:GetCustomProperty("TankSettings"):WaitForObject()
@@ -47,6 +47,7 @@ local elevationTarget = nil
 
 local abilityListener = nil
 local reloading = false
+local turretLock = false
 
 -- ability_extra_21 = W	 		= forward 	= controlTracker[1]
 -- ability_extra_30 = A 		= left		= controlTracker[2]
@@ -104,6 +105,10 @@ function BindingPressed(player, action)
 	
 		controlTracker[4] = true
 		
+	elseif action == "ability_secondary" then
+	
+		turretLock = true
+		
 	end	
 	
 end
@@ -125,6 +130,11 @@ function BindingReleased(player, action)
 	elseif action == "ability_extra_32" then -- right
 	
 		controlTracker[4] = false
+		
+	elseif action == "ability_secondary" then
+	
+		turretLock = false
+		
 	end	
 	
 end
@@ -182,6 +192,12 @@ function AdjustSpeed(tracker)
 end
 
 function AdjustTurretRotation()
+
+	if turretLock then
+	
+		return
+		
+	end
 
 	cameraRotation = tankOwner:GetViewWorldRotation()
 	currentRotation = turretTraverseMarker:GetWorldRotation()
