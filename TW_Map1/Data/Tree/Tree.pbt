@@ -1026,6 +1026,12 @@ Objects {
       Int: 2
     }
     Overrides {
+      Name: "cs:GAMEHELPER_SpottingServer"
+      ObjectReference {
+        SelfId: 14120135511771490182
+      }
+    }
+    Overrides {
       Name: "cs:GradientHeight:tooltip"
       String: "If true, the minimap pieces will be colored based on their Z position relative to the rest of the map."
     }
