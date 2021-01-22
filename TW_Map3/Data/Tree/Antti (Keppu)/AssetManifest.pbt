@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12151645230321117423
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6

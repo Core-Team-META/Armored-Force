@@ -8,11 +8,11 @@ Assets {
     ParameterOverrides {
       Overrides {
         Name: "wind_speed"
-        Float: 0
+        Float: 1
       }
       Overrides {
         Name: "wind_weight"
-        Float: 0
+        Float: 0.0855655149
       }
       Overrides {
         Name: "SSS"
