@@ -6,6 +6,10 @@ Assets {
   CustomMaterialAsset {
     BaseMaterialId: 663082363223318009
     ParameterOverrides {
+      Overrides {
+        Name: "material_scale"
+        Float: 3
+      }
     }
     Assets {
       Id: 663082363223318009
