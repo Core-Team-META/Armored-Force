@@ -540,6 +540,7 @@ Assets {
         ParentId: 13702951243699863771
         ChildIds: 10196347340748689688
         ChildIds: 5852630690422914141
+        ChildIds: 17155777376004851880
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -724,6 +725,57 @@ Assets {
           }
           StaticMesh {
             Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17155777376004851880
+        Name: "ViewPoint"
+        Transform {
+          Location {
+            Z: 190
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3283741304156421496
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.320000052
+              A: 1
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
             }
           }
         }

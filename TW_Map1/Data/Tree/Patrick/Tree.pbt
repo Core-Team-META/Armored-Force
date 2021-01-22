@@ -7895,7 +7895,504 @@ Objects {
   }
 }
 Objects {
-  Id: 13406787731822463964
+  Id: 5332163308487385364
+  Name: "GAMEHELPER_SpottingComponent"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14640456784048730058
+  ChildIds: 14120135511771490182
+  ChildIds: 13659289416644164626
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13659289416644164626
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5332163308487385364
+  ChildIds: 16372794552175841443
+  ChildIds: 6464879827136365782
+  ChildIds: 9129046802126978309
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9129046802126978309
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13659289416644164626
+  ChildIds: 12210773527332272143
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12210773527332272143
+  Name: "WarningUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9129046802126978309
+  ChildIds: 3704714799549601377
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3704714799549601377
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12210773527332272143
+  ChildIds: 11002131710629105121
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 80
+    Height: 80
+    UIY: -100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 15538142921929734385
+      }
+      Color {
+        R: 0.279999971
+        G: 1.33514391e-07
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11002131710629105121
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3704714799549601377
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "!"
+      Color {
+        R: 0.37
+        G: 1.76429751e-07
+        A: 1
+      }
+      Size: 40
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6464879827136365782
+  Name: "WarningSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13659289416644164626
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 15791153848741605690
+    }
+    Pitch: 1000
+    Volume: 2
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 16372794552175841443
+  Name: "GAMEHELPER_SpottingClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13659289416644164626
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GAMEHELPER_SpottingServer"
+      ObjectReference {
+        SelfId: 14120135511771490182
+      }
+    }
+    Overrides {
+      Name: "cs:WarningUI"
+      ObjectReference {
+        SelfId: 12210773527332272143
+      }
+    }
+    Overrides {
+      Name: "cs:WarningSFX"
+      ObjectReference {
+        SelfId: 6464879827136365782
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4827239879969363094
+    }
+  }
+}
+Objects {
+  Id: 14120135511771490182
+  Name: "GAMEHELPER_SpottingServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5332163308487385364
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ViewRange"
+      Int: 15000
+    }
+    Overrides {
+      Name: "cs:P1"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P2"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P3"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P4"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P5"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P6"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P7"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P8"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P9"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P10"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P11"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P12"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P13"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P14"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P15"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P16"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:P1:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P2:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P3:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P4:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P5:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P6:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P7:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P8:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P9:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P10:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P11:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P12:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P13:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P14:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P15:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:P16:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1558966419367451433
+    }
+  }
+}
+Objects {
+  Id: 17948791732664126732
   Name: "Health Bar"
   Transform {
     Scale {
@@ -7905,31 +8402,337 @@ Objects {
     }
   }
   ParentId: 14640456784048730058
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1675656989204002660
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Health Bar"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
+  ChildIds: 8765425725212726573
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ShowNumber"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowMaximum"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowNumber:tooltip"
+      String: "Show an exact number of hitpoints"
+    }
+    Overrides {
+      Name: "cs:ShowMaximum:tooltip"
+      String: "If showing the health value, this toggles showing the maximum as well"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8765425725212726573
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17948791732664126732
+  ChildIds: 13334596701263200998
+  ChildIds: 1140982007631637809
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 1140982007631637809
+  Name: "Canvas Control"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8765425725212726573
+  ChildIds: 1432684336868751790
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
       }
     }
-    TemplateAsset {
-      Id: 16592870178092871494
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
     }
   }
 }
 Objects {
-  Id: 14860482402048390706
+  Id: 1432684336868751790
+  Name: "Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1140982007631637809
+  ChildIds: 4577044855461767472
+  ChildIds: 13823049737667754611
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 400
+    Height: 84
+    UIY: -25
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13823049737667754611
+  Name: "ProgressBar"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 5.03726405e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1432684336868751790
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 400
+    Height: 40
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    StatBar {
+      Color {
+        G: 0.0762913
+        B: 0.72
+        A: 1
+      }
+      BackgroundColor {
+        R: 0.5
+        G: 0.5
+        B: 0.5
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4577044855461767472
+  Name: "TextBox"
+  Transform {
+    Location {
+      X: -214.259048
+      Y: -409.173462
+      Z: -1242.27026
+    }
+    Rotation {
+      Yaw: 13.4324207
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1432684336868751790
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 44
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "HealthValue"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13334596701263200998
+  Name: "HealthBarControllerClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 7.68395876e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8765425725212726573
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 14633632985083390763
+      }
+    }
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 17948791732664126732
+      }
+    }
+    Overrides {
+      Name: "cs:TextBox"
+      ObjectReference {
+        SelfId: 4577044855461767472
+      }
+    }
+    Overrides {
+      Name: "cs:ProgressBar"
+      ObjectReference {
+        SelfId: 13823049737667754611
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16221632073795130751
+    }
+  }
+}
+Objects {
+  Id: 8128304147621680741
   Name: "Nameplates"
   Transform {
     Scale {
@@ -7939,38 +8742,315 @@ Objects {
     }
   }
   ParentId: 14640456784048730058
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 15979967455835987047
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Nameplates"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ShowOnSelf"
-          Bool: false
-        }
-        Overrides {
-          Name: "cs:MaxDistanceOnEnemies"
-          Float: 0
-        }
-        Overrides {
-          Name: "cs:Scale"
-          Float: 3
-        }
+  ChildIds: 2120510200957734528
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ShowNames"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowHealthbars"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowOnSelf"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ShowOnTeammates"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnTeammates"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:ShowOnEnemies"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnEnemies"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:ShowOnDeadPlayers"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Scale"
+      Float: 3
+    }
+    Overrides {
+      Name: "cs:ShowNumbers"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:AnimateChanges"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ChangeAnimationTime"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "cs:ShowSegments"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:SegmentSize"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:FriendlyNameColor"
+      Color {
+        G: 0.0762913
+        B: 0.72
+        A: 1
       }
     }
-    TemplateAsset {
-      Id: 8647654286766170798
+    Overrides {
+      Name: "cs:EnemyNameColor"
+      Color {
+        R: 0.450000048
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:BorderColor"
+      Color {
+        R: 0.0110000009
+        G: 0.0110000009
+        B: 0.0110000009
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundColor"
+      Color {
+        R: 0.334000021
+        G: 0.334000021
+        B: 0.334000021
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:FriendlyHealthColor"
+      Color {
+        G: 0.0762913
+        B: 0.72
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyHealthColor"
+      Color {
+        R: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:DamageChangeColor"
+      Color {
+        R: 0.590000033
+        G: 0.152384102
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:HealChangeColor"
+      Color {
+        R: 0.0670196861
+        G: 0.919999957
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:HealthNumberColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:ShowNames:tooltip"
+      String: "Show names as part of the nameplate. Default names are hidden either way."
+    }
+    Overrides {
+      Name: "cs:ShowOnSelf:tooltip"
+      String: "Show a nameplate on the local player"
+    }
+    Overrides {
+      Name: "cs:ShowOnTeammates:tooltip"
+      String: "Show nameplates on teammates"
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnTeammates:tooltip"
+      String: "Only show nameplates on teammates up to this distance away. 0 means always show them."
+    }
+    Overrides {
+      Name: "cs:ShowOnEnemies:tooltip"
+      String: "Show nameplates on enemies"
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnEnemies:tooltip"
+      String: "Only show nameplates on enemies up to this distance away. 0 means always show them."
+    }
+    Overrides {
+      Name: "cs:ShowOnDeadPlayers:tooltip"
+      String: "Show nameplates even on dead players"
+    }
+    Overrides {
+      Name: "cs:Scale:tooltip"
+      String: "Overall scale factor for nameplates"
+    }
+    Overrides {
+      Name: "cs:ShowNumbers:tooltip"
+      String: "Show numerical value for hitpoints and maximum"
+    }
+    Overrides {
+      Name: "cs:AnimateChanges:tooltip"
+      String: "Show animated region when a player\'s health changes"
+    }
+    Overrides {
+      Name: "cs:ChangeAnimationTime:tooltip"
+      String: "Duration of animated health change"
+    }
+    Overrides {
+      Name: "cs:FriendlyNameColor:tooltip"
+      String: "Name color for teammates and self"
+    }
+    Overrides {
+      Name: "cs:EnemyNameColor:tooltip"
+      String: "Name color for enemies"
+    }
+    Overrides {
+      Name: "cs:BorderColor:tooltip"
+      String: "Color of border"
+    }
+    Overrides {
+      Name: "cs:BackgroundColor:tooltip"
+      String: "Color of space where health is missing"
+    }
+    Overrides {
+      Name: "cs:FriendlyHealthColor:tooltip"
+      String: "Color of friendly health bars"
+    }
+    Overrides {
+      Name: "cs:EnemyHealthColor:tooltip"
+      String: "Color of enemy health bars"
+    }
+    Overrides {
+      Name: "cs:DamageChangeColor:tooltip"
+      String: "Color for damage when animating changes"
+    }
+    Overrides {
+      Name: "cs:HealChangeColor:tooltip"
+      String: "Color for heals when animating changes"
+    }
+    Overrides {
+      Name: "cs:HealthNumberColor:tooltip"
+      String: "Color of health number text"
+    }
+    Overrides {
+      Name: "cs:ShowHealthbars:tooltip"
+      String: "Whether to show healthbars at all"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2120510200957734528
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8128304147621680741
+  ChildIds: 11091465443593274976
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 11091465443593274976
+  Name: "NameplateControllerClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2120510200957734528
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 14633632985083390763
+      }
+    }
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 8128304147621680741
+      }
+    }
+    Overrides {
+      Name: "cs:NameplateTemplate"
+      AssetReference {
+        Id: 5049470299132475441
+      }
+    }
+    Overrides {
+      Name: "cs:SegmentSeparatorTemplate"
+      AssetReference {
+        Id: 621782261612844046
+      }
+    }
+    Overrides {
+      Name: "cs:GAMEHELPER_SpottingServer"
+      ObjectReference {
+        SelfId: 14120135511771490182
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14278482860986951316
     }
   }
 }
