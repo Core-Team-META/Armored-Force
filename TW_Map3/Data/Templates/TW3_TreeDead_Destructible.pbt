@@ -1,6 +1,6 @@
 Assets {
   Id: 8022659663373324817
-  Name: "TW3_TreDead_Destructible"
+  Name: "TW3_TreeDead_Destructible"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -300,7 +300,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Trunk:id"
             AssetReference {
-              Id: 10451866999938289708
+              Id: 8786238017646296429
             }
           }
           Overrides {
@@ -367,7 +367,7 @@ Assets {
           Overrides {
             Name: "ma:Nature_Trunk:id"
             AssetReference {
-              Id: 10451866999938289708
+              Id: 8786238017646296429
             }
           }
           Overrides {
@@ -451,15 +451,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_tree_birch_002"
-      }
-    }
-    Assets {
-      Id: 10451866999938289708
-      Name: "Wood Raw White"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_white_001_uv"
       }
     }
     PrimaryAssetId {

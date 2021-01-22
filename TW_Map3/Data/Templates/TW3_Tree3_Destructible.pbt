@@ -237,15 +237,15 @@ Assets {
         Name: "Tree Redwood Small"
         Transform {
           Location {
-            Y: 20.3115234
-            Z: -10.5771179
+            Y: 20.3125
+            Z: -10.5771484
           }
           Rotation {
           }
           Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 0.6
+            X: 0.494670689
+            Y: 0.494670689
+            Z: 0.494670689
           }
         }
         ParentId: 5206538735070309613
@@ -254,6 +254,12 @@ Assets {
             Name: "ma:Nature_Branch:id"
             AssetReference {
               Id: 82310197696356579
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Trunk:id"
+            AssetReference {
+              Id: 8786238017646296429
             }
           }
         }
@@ -265,7 +271,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 1114263496638408835
+            Id: 16709850262252143743
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -307,12 +313,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1114263496638408835
-      Name: "Tree Redwood Small"
+      Id: 16709850262252143743
+      Name: "Tree Redwood Medium"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_tree_redwood_005"
+        AssetId: "sm_tree_redwood_002"
       }
     }
     PrimaryAssetId {

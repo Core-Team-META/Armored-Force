@@ -1,49 +1,49 @@
 Assets {
-  Id: 179407668354224432
-  Name: "TW3_Pines - Copy"
+  Id: 4693709835421441385
+  Name: "TW3_Grass2"
   PlatformAssetType: 13
   SerializationVersion: 73
   CustomMaterialAsset {
-    BaseMaterialId: 555922902272108078
+    BaseMaterialId: 908558108835757030
     ParameterOverrides {
-      Overrides {
-        Name: "SSS"
-        Color {
-          R: 0.289
-          G: 0.148546
-          B: 0.0783189908
-          A: 1
-        }
-      }
       Overrides {
         Name: "color"
         Color {
-          R: 0.21100001
-          G: 0.130053371
-          B: 0.026
+          R: 0.174647406
+          G: 0.0595112368
+          B: 0.0221738853
           A: 1
         }
       }
       Overrides {
         Name: "color_roots"
         Color {
-          R: 0.289
-          G: 0.119453341
-          B: 0.0346799865
+          R: 0.174647406
+          G: 0.0595112368
+          B: 0.0221738853
           A: 1
         }
+      }
+      Overrides {
+        Name: "SSS"
+        Color {
+          R: 0.174647406
+          G: 0.0595112368
+          B: 0.0221738853
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "dist_rotation"
+        Float: 1
       }
       Overrides {
         Name: "wind_weight"
         Float: 0
       }
-      Overrides {
-        Name: "dist_rotation"
-        Float: 2
-      }
     }
     Assets {
-      Id: 555922902272108078
+      Id: 908558108835757030
       Name: "Grass (default)"
       PlatformAssetType: 2
       PrimaryAsset {
