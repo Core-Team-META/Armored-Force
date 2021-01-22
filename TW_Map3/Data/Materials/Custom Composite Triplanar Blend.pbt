@@ -20,19 +20,19 @@ Assets {
       }
       Overrides {
         Name: "density"
-        Float: 0.275997967
+        Float: 0
       }
       Overrides {
         Name: "splotchiness"
-        Float: 0.404528826
+        Float: 0.32598263
       }
       Overrides {
         Name: "edge_wear_top"
-        Float: 0.6116063
+        Float: 0
       }
       Overrides {
         Name: "edge_roughness_top"
-        Float: 0.74013716
+        Float: 1
       }
       Overrides {
         Name: "direction"
@@ -49,6 +49,24 @@ Assets {
       Overrides {
         Name: "roughness_multiplier"
         Float: 1
+      }
+      Overrides {
+        Name: "cmpc:Sides"
+        Color {
+          R: 0.713000059
+          G: 0.713000059
+          B: 0.713000059
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmpc:Top"
+        Color {
+          R: 1
+          G: 1
+          B: 1
+          A: 1
+        }
       }
     }
     Assets {

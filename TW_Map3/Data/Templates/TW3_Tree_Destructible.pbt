@@ -255,6 +255,12 @@ Assets {
               Id: 82310197696356579
             }
           }
+          Overrides {
+            Name: "ma:Nature_Trunk:id"
+            AssetReference {
+              Id: 8786238017646296429
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

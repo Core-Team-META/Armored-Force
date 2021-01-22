@@ -148,13 +148,13 @@ Assets {
           Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
-              Id: 179407668354224432
+              Id: 8399971333368982502
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 179407668354224432
+              Id: 8399971333368982502
             }
           }
           Overrides {
