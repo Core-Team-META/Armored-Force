@@ -39,7 +39,7 @@ Assets {
       }
       Overrides {
         Name: "wind_weight"
-        Float: 0
+        Float: 1
       }
     }
     Assets {

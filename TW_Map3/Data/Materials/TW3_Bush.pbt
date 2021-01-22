@@ -35,7 +35,7 @@ Assets {
       }
       Overrides {
         Name: "wind_weight"
-        Float: 0
+        Float: 0.212972507
       }
       Overrides {
         Name: "dist_rotation"
