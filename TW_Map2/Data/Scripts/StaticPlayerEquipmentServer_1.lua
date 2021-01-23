@@ -56,6 +56,7 @@ local EQUIPMENT_TEMPLATE29 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE30 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate30")
 local EQUIPMENT_TEMPLATE31 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate31")
 local EQUIPMENT_TEMPLATE32 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate32")
+local EQUIPMENT_TEMPLATE33 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate33")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -190,10 +191,14 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--us m24 chaffee
+		--us m24 chaffee or italian of-40
 		if bindingPressed == "ability_extra_6" then
 			RemovePlayerEquipment(player)
+			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE33)
+			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE6)
+			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
