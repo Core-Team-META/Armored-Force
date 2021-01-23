@@ -27937,7 +27937,6 @@ Assets {
         }
         ParentId: 15863578725035214615
         ChildIds: 11504205353641306955
-        ChildIds: 15143054549562894978
         ChildIds: 14462095834779557940
         ChildIds: 9466753096292214193
         ChildIds: 1925248855381577084
@@ -28248,63 +28247,6 @@ Assets {
             Physics {
               Mass: 100
               LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15143054549562894978
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 6.42413139
-            Y: 28.4748096
-            Z: 25.8199844
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.975265145
-            Y: 0.975265145
-            Z: 0.975265145
-          }
-        }
-        ParentId: 1217812591494578243
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15743147641625697283
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
             }
           }
         }
@@ -37057,15 +36999,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_mil_tank_hst_hatch_001_lid_ref"
-      }
-    }
-    Assets {
-      Id: 7900187111309595218
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
       }
     }
     Assets {
