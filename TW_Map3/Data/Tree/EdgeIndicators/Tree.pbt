@@ -1,56 +1,6 @@
 Name: "EdgeIndicators"
 RootId: 1444000811114487272
 Objects {
-  Id: 13526063036397460177
-  Name: "EdgeIndicator"
-  Transform {
-    Location {
-      X: -23383.8301
-      Y: -15285.5713
-      Z: -79.9996872
-    }
-    Rotation {
-      Yaw: -25.4569397
-    }
-    Scale {
-      X: 512.021118
-      Y: 1
-      Z: 14.4759398
-    }
-  }
-  ParentId: 1444000811114487272
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13231971539212330216
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16374150260036817633
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 1027504345460882190
   Name: "EdgeIndicator"
   Transform {

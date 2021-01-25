@@ -31,7 +31,7 @@ Objects {
   Name: "MapPortions"
   Transform {
     Location {
-      Z: -500
+      Z: -1307.5
     }
     Rotation {
     }
@@ -46,7 +46,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Folder {
     IsFilePartition: true
