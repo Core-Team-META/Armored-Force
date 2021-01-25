@@ -919,61 +919,6 @@ Objects {
   }
 }
 Objects {
-  Id: 5690419861719432394
-  Name: "TANK_German_E50"
-  Transform {
-    Location {
-      X: -15200
-      Y: -450
-      Z: 900
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7310433976514289622
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3538122277889912986
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_German_E50"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 5200
-            Y: 20700
-            Z: 600
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1017367019735459438
-    }
-  }
-}
-Objects {
   Id: 8809528236417373584
   Name: "TANK_German_E50"
   Transform {
