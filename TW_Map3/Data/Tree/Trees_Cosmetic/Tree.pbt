@@ -1,6 +1,124 @@
 Name: "Trees_Cosmetic"
 RootId: 9839414730760950784
 Objects {
+  Id: 6796877432226126472
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -20361.1133
+      Y: 1062.96667
+      Z: 376.004944
+    }
+    Rotation {
+      Pitch: -0.793879688
+      Yaw: 136.972641
+      Roll: -9.99561882
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13072.9453
+            Y: 474.034546
+            Z: 376.004944
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.793884277
+            Yaw: 136.972641
+            Roll: -9.99563599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15006284486592844378
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -21512.7031
+      Y: -11068.3613
+      Z: 1203.79272
+    }
+    Rotation {
+      Yaw: -29.7826252
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20361.1133
+            Y: 1062.96667
+            Z: 376.004944
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.793884277
+            Yaw: 136.972656
+            Roll: -9.99560547
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
   Id: 5940060385192831940
   Name: "TW3_Tree_Cosmetic"
   Transform {
