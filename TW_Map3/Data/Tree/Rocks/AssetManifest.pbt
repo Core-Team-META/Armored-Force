@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5195393181888633317
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
   Id: 3698777166228503512
   Name: "Rock Flat 02"
   PlatformAssetType: 1
