@@ -1,6 +1,3382 @@
 Name: "Marcela"
 RootId: 14661672776697705088
 Objects {
+  Id: 3008154843558529630
+  Name: "props"
+  Transform {
+    Location {
+      X: 1625.02832
+      Y: -4234.11035
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14661672776697705088
+  ChildIds: 15675031751638322843
+  ChildIds: 1867845932664675522
+  ChildIds: 15580699878811397109
+  ChildIds: 10467833139781241508
+  ChildIds: 8645535735349200116
+  ChildIds: 12358091843849357024
+  ChildIds: 207346394154054039
+  ChildIds: 14565455642912987815
+  ChildIds: 14628890471588234832
+  ChildIds: 12805880019625527559
+  ChildIds: 2007193718790885456
+  ChildIds: 4389285952338147183
+  ChildIds: 13686229071904664905
+  ChildIds: 5694111180794267928
+  ChildIds: 17206066871055444643
+  ChildIds: 11394562721638663937
+  ChildIds: 2966788610211814456
+  ChildIds: 13974577442381002468
+  ChildIds: 10499271034236645489
+  ChildIds: 3128541275594738063
+  ChildIds: 512956868846108857
+  ChildIds: 15116528677673601242
+  ChildIds: 5924471037467781604
+  ChildIds: 1777330254177829173
+  ChildIds: 713519434374578171
+  ChildIds: 4884958105851611315
+  ChildIds: 9149788984668350363
+  ChildIds: 4117071174806734724
+  ChildIds: 284760953450827775
+  ChildIds: 1022651281153378940
+  ChildIds: 7361669531724518006
+  ChildIds: 3135389632591725609
+  ChildIds: 4380364149543148833
+  ChildIds: 2237878142583649394
+  ChildIds: 3607318132397084873
+  ChildIds: 15605456994756777985
+  ChildIds: 14645675984245727721
+  ChildIds: 13328616324594701285
+  ChildIds: 8629011482108890472
+  ChildIds: 5258396504156069689
+  ChildIds: 1687371402383923092
+  ChildIds: 17949733154094777229
+  ChildIds: 17438152174907269830
+  ChildIds: 11445919284819538262
+  ChildIds: 1256795862678006451
+  ChildIds: 17600188539327575394
+  ChildIds: 15508651218516178889
+  ChildIds: 14257950120525667718
+  ChildIds: 3153700231988391240
+  ChildIds: 5111064136180867967
+  ChildIds: 2302956926240093962
+  ChildIds: 17128915443598922104
+  ChildIds: 1570489478016461564
+  ChildIds: 7459271383945580726
+  ChildIds: 8707145364647424683
+  ChildIds: 3616140900073625458
+  ChildIds: 14580728506635847110
+  ChildIds: 15911482566774962483
+  ChildIds: 9094639578252346140
+  ChildIds: 10850186268376079243
+  ChildIds: 17371086165439363270
+  ChildIds: 9731354321370368096
+  ChildIds: 7629492936199153831
+  ChildIds: 8012801926497055184
+  ChildIds: 18129055472262825581
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18129055472262825581
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 23776.0586
+            Y: 17136.5742
+            Z: 989.582642
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -23.7686577
+            Roll: -14.4836941
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 8012801926497055184
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 16614.2383
+      Y: 12627.6758
+      Z: 453.358643
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: 2.20259047
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 15024.9717
+            Y: 15934.1104
+            Z: 400
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+            Roll: 2.20259047
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 7629492936199153831
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 16614.2383
+      Y: 12627.6758
+      Z: 453.358643
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: 2.20259047
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 14749.3125
+            Y: 16345.1602
+            Z: 433.488525
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: -2.20257592
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 9731354321370368096
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 17665.1602
+      Y: 19037.1855
+      Z: 902.69043
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: 2.20259047
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 14989.21
+            Y: 16861.7852
+            Z: 453.358643
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+            Roll: 2.20259047
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 17371086165439363270
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 17802.2969
+      Y: 18558.6426
+      Z: 891.951599
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 16040.1318
+            Y: 23271.2969
+            Z: 902.69043
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+            Roll: 2.20259047
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 10850186268376079243
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 16177.2686
+            Y: 22792.7539
+            Z: 891.951599
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 9094639578252346140
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 19222.7734
+            Y: 16986.6797
+            Z: 623.312195
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.42865014
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 15911482566774962483
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10507.1904
+            Y: 18221.1016
+            Z: 336.729584
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 140.961456
+            Roll: 1.75874937
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 14580728506635847110
+  Name: "tractor_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17256819273084579881
+      value {
+        Overrides {
+          Name: "Name"
+          String: "tractor_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9026.08789
+            Y: 25275.7461
+            Z: 736.898071
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 126.396416
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 370325873437146009
+    }
+  }
+}
+Objects {
+  Id: 3616140900073625458
+  Name: "grain bin_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16706928862688854330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "grain bin_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9281.07324
+            Y: 24940.3
+            Z: 731.209351
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 128.770325
+            Roll: 1.25975239
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1421109474334882152
+    }
+  }
+}
+Objects {
+  Id: 8707145364647424683
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5074.94434
+            Y: 27134.1133
+            Z: 648.489197
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.14553881
+            Yaw: 168.799255
+            Roll: 6.67144e-09
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 7459271383945580726
+  Name: "windmill_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12339031325220020147
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9133.32813
+            Y: 28915.4844
+            Z: 847.492126
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.176569209
+            Y: 0.176569209
+            Z: 0.176569209
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1645818606374011234
+    }
+  }
+}
+Objects {
+  Id: 1570489478016461564
+  Name: "grain bin_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16706928862688854330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "grain bin_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37019.2305
+            Y: 29422.0664
+            Z: 95.7226791
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -3.5951519
+            Yaw: 17.3053608
+            Roll: -1.11923218
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1421109474334882152
+    }
+  }
+}
+Objects {
+  Id: 17128915443598922104
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35507.8242
+            Y: 36722.8398
+            Z: 57.7678604
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -23.9199619
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 2302956926240093962
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34640.8242
+            Y: 39672.4063
+            Z: 42.0340881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 5111064136180867967
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: -28290.8984
+      Y: 5822.08691
+      Z: 37.8528137
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29260.9492
+            Y: 4872.53711
+            Z: 37.8528137
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 3153700231988391240
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: -28172.1445
+      Y: 6261.08691
+      Z: 37.8528137
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29915.9258
+            Y: 10056.1973
+            Z: 37.8528137
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 14257950120525667718
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29797.1719
+            Y: 10495.1973
+            Z: 37.8528137
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 15508651218516178889
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29194.9023
+            Y: 15425.6904
+            Z: 60.7654953
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 13.0099049
+            Roll: -1.85250854
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 17600188539327575394
+  Name: "tractor_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17256819273084579881
+      value {
+        Overrides {
+          Name: "Name"
+          String: "tractor_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20314.1328
+            Y: 13880.6895
+            Z: 53.7945938
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.8282
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 370325873437146009
+    }
+  }
+}
+Objects {
+  Id: 1256795862678006451
+  Name: "grain bin_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16706928862688854330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "grain bin_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20315.7734
+            Y: 13466.708
+            Z: 63.0481567
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 90.2516556
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1421109474334882152
+    }
+  }
+}
+Objects {
+  Id: 11445919284819538262
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4929.01172
+            Y: 8131.45752
+            Z: 747.930908
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 128.022705
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 17438152174907269830
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10409.4736
+            Y: 9720.50195
+            Z: 669.398
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -47.4036102
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 17949733154094777229
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10230.6055
+            Y: 13013.4268
+            Z: 703.554382
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 37.8311768
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 1687371402383923092
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17411.5156
+            Y: 7365.375
+            Z: 68.861824
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.38763595
+            Yaw: -15.3926878
+            Roll: 4.28837299
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 5258396504156069689
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: -9715.05859
+      Y: -6875.03076
+      Z: 37.9536667
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11645.5645
+            Y: -2285.24512
+            Z: 37.9536667
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 8629011482108890472
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: -9861.28906
+      Y: -7327.41211
+      Z: 65.0717926
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11340.0869
+            Y: -2640.92041
+            Z: 37.9536667
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 13328616324594701285
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11486.3174
+            Y: -3093.30176
+            Z: 65.0717926
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 14645675984245727721
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8086.93066
+            Y: -10196.7939
+            Z: 93.2315063
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.99999535
+            Yaw: 52.4177055
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 15605456994756777985
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: -1743.65955
+      Y: -6821.03613
+      Z: 93.2315063
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1883.67395
+            Y: -9050.88281
+            Z: 150.100571
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 3607318132397084873
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: -1845.97266
+      Y: -6381.83594
+      Z: 93.2315063
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3368.68799
+            Y: -2586.92578
+            Z: 93.2315063
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 2237878142583649394
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3471.00098
+            Y: -2147.72559
+            Z: 93.2315063
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 4380364149543148833
+  Name: "grain bin_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16706928862688854330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "grain bin_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3091.93457
+            Y: -880.106934
+            Z: 131.014786
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.29601574
+            Yaw: -78.5900345
+            Roll: -1.06807448e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1421109474334882152
+    }
+  }
+}
+Objects {
+  Id: 3135389632591725609
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1152.10681
+            Y: 3359.89429
+            Z: 737.198425
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.81622231
+            Yaw: 88.6086502
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 7361669531724518006
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6370.96484
+            Y: 1536.24023
+            Z: 766.716125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.10369706
+            Yaw: 50.3865395
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 1022651281153378940
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7682.71
+            Y: -5925.19727
+            Z: 344.715729
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.73831153
+            Yaw: -105.335182
+            Roll: -5.73907757
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 284760953450827775
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 3272.41797
+      Y: -14338.2012
+      Z: 48.2073822
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: 3.50903583
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2824.97168
+            Y: -4765.88965
+            Z: 12.5145912
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+            Roll: 2.77703094
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 4117071174806734724
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 3272.41797
+      Y: -14855.0254
+      Z: 48.2073822
+    }
+    Rotation {
+      Roll: 3.50903416
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1647.38965
+            Y: -10104.0908
+            Z: 48.2073822
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+            Roll: 3.50903583
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 9149788984668350363
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1647.38965
+            Y: -10620.915
+            Z: 48.2073822
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: 3.50903416
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 4884958105851611315
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14527.3486
+            Y: -16978.7031
+            Z: 93.2315063
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 119.762344
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 713519434374578171
+  Name: "grain bin_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16706928862688854330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "grain bin_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16561.8398
+            Y: -14522.3682
+            Z: 40.1584167
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.02336836
+            Yaw: 69.3290939
+            Roll: -0.0473938212
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1421109474334882152
+    }
+  }
+}
+Objects {
+  Id: 1777330254177829173
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13226.9434
+            Y: -32438.9883
+            Z: 151.978668
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.61092854
+            Yaw: 12.5926962
+            Roll: -5.96640348
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 5924471037467781604
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11148.835
+            Y: -44248.2188
+            Z: 93.2315063
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 15116528677673601242
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14786.4238
+            Y: -47595.0977
+            Z: 172.079163
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.3987017
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 512956868846108857
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6801.62109
+            Y: -41291.7656
+            Z: 118.169922
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -55.7259407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 3128541275594738063
+  Name: "tractor_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17256819273084579881
+      value {
+        Overrides {
+          Name: "Name"
+          String: "tractor_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5879.5083
+            Y: -27071.582
+            Z: 70.0909
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -17.8398514
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 370325873437146009
+    }
+  }
+}
+Objects {
+  Id: 10499271034236645489
+  Name: "grain bin_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16706928862688854330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "grain bin_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5488.00635
+            Y: -26945.3164
+            Z: 78.0207672
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.158815548
+            Yaw: -17.8397923
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1421109474334882152
+    }
+  }
+}
+Objects {
+  Id: 13974577442381002468
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5445.30957
+            Y: -31972.6953
+            Z: 142.060532
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 33.1234741
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 2966788610211814456
+  Name: "propane tank_merged"
+  Transform {
+    Location {
+      X: 7789.34082
+      Y: -36462.625
+      Z: 100.641777
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 316.624023
+            Y: -30198.207
+            Z: 92.6599197
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 99.2693939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 11394562721638663937
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6405.2251
+            Y: -31623.125
+            Z: 108.811462
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.62914467
+            Yaw: -86.6970139
+            Roll: -0.151672214
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 17206066871055444643
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 12250
+      Y: -44250
+      Z: 133.814651
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 11071.6074
+            Y: -40665.8906
+            Z: 133.814651
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 5694111180794267928
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 14073.1836
+      Y: -41165.082
+      Z: 133.814651
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10624.9717
+            Y: -40015.8906
+            Z: 133.814651
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 13686229071904664905
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 13585.3926
+      Y: -40904.5469
+      Z: 133.814651
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 12448.1553
+            Y: -36930.9727
+            Z: 133.814651
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 4389285952338147183
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 13796.5889
+      Y: -40387.1641
+      Z: 133.814651
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 11960.3643
+            Y: -36670.4375
+            Z: 133.814651
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 2007193718790885456
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 12171.5605
+            Y: -36153.0547
+            Z: 133.814651
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 12805880019625527559
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 24175.541
+      Y: -44958.9531
+      Z: 65.1591187
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24454.1328
+            Y: -34743.0664
+            Z: 140.265533
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 14628890471588234832
+  Name: "grain bin_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16706928862688854330
+      value {
+        Overrides {
+          Name: "Name"
+          String: "grain bin_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24045.3438
+            Y: -29632.8984
+            Z: 201.449463
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -46.3181839
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1421109474334882152
+    }
+  }
+}
+Objects {
+  Id: 14565455642912987815
+  Name: "propane tank_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17134619756591819398
+      value {
+        Overrides {
+          Name: "Name"
+          String: "propane tank_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 27783.582
+            Y: -37033.2969
+            Z: 121.835266
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 176.911285
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2007334545469689917
+    }
+  }
+}
+Objects {
+  Id: 207346394154054039
+  Name: "farm rake_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 66757549530588973
+      value {
+        Overrides {
+          Name: "Name"
+          String: "farm rake_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 25423.6172
+            Y: -35455.9961
+            Z: 155.759064
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -37.0071869
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10955374793369641760
+    }
+  }
+}
+Objects {
+  Id: 12358091843849357024
+  Name: "hay bale_merged"
+  Transform {
+    Location {
+      X: 24345.0254
+      Y: -45424.6953
+      Z: 82.1081161
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 22550.5117
+            Y: -40724.8438
+            Z: 65.1591187
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 8645535735349200116
+  Name: "hay bale_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3966118942719926167
+      value {
+        Overrides {
+          Name: "Name"
+          String: "hay bale_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 22719.9961
+            Y: -41190.5859
+            Z: 82.1081161
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235156210547298513
+    }
+  }
+}
+Objects {
+  Id: 10467833139781241508
+  Name: "windmill_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12339031325220020147
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32309.4063
+            Y: 12970.7578
+            Z: 55.2968597
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.176569209
+            Y: 0.176569209
+            Z: 0.176569209
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1645818606374011234
+    }
+  }
+}
+Objects {
+  Id: 15580699878811397109
+  Name: "windmill_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12339031325220020147
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3300.65381
+            Y: -2393.24902
+            Z: 310.314545
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.176569209
+            Y: 0.176569209
+            Z: 0.176569209
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1645818606374011234
+    }
+  }
+}
+Objects {
+  Id: 1867845932664675522
+  Name: "windmill_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12339031325220020147
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2692.08594
+            Y: -33280.6445
+            Z: 168.018112
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.176569209
+            Y: 0.176569209
+            Z: 0.176569209
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1645818606374011234
+    }
+  }
+}
+Objects {
+  Id: 15675031751638322843
+  Name: "windmill_merged"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12339031325220020147
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 29644.8867
+            Y: -44390.0664
+            Z: 136.133499
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.176569209
+            Y: 0.176569209
+            Z: 0.176569209
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1645818606374011234
+    }
+  }
+}
+Objects {
   Id: 13112285422843472738
   Name: "Tank Loadout"
   Transform {
