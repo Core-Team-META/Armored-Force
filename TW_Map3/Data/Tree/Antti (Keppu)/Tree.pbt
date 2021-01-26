@@ -1,6 +1,54 @@
 Name: "Antti (Keppu)"
 RootId: 7310433976514289622
 Objects {
+  Id: 6225363222675137601
+  Name: "Drivable French AMX50"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21486.1797
+            Y: 25084.9434
+            Z: 731.60376
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
+  }
+}
+Objects {
   Id: 1624780602669895163
   Name: "Drivable French AMX50"
   Transform {
