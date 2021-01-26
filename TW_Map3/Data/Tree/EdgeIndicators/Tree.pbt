@@ -1,8 +1,58 @@
 Name: "EdgeIndicators"
 RootId: 1444000811114487272
 Objects {
-  Id: 1027504345460882190
+  Id: 6742110926740049370
   Name: "EdgeIndicator"
+  Transform {
+    Location {
+      X: -25583.3438
+      Y: 21883.3379
+      Z: -129.90918
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 74.122
+      Y: 0.0157597661
+      Z: 5.82216263
+    }
+  }
+  ParentId: 1444000811114487272
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13231971539212330216
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16374150260036817633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1027504345460882190
+  Name: "EdgeIndicator_Long"
   Transform {
     Location {
       X: -25548.8125
@@ -28,10 +78,10 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -105,8 +155,8 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: -21835.5469
-      Y: 25554.0137
+      X: -21883.3379
+      Y: 25583.3418
       Z: -129.909882
     }
     Rotation {
