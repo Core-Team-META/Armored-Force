@@ -63,6 +63,12 @@ Assets {
           A: 1
         }
       }
+      Overrides {
+        Name: "cmp:Material3"
+        AssetReference {
+          Id: 6465301958348527044
+        }
+      }
     }
     Assets {
       Id: 1104511411894916854
@@ -116,6 +122,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "dirt_001"
+      }
+    }
+    Assets {
+      Id: 6465301958348527044
+      Name: "Brick Wall Sandstone 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_brick_sandstone_wall_face_001"
       }
     }
   }

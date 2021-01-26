@@ -1,6 +1,18038 @@
 Name: "Trees_Cosmetic"
 RootId: 9839414730760950784
 Objects {
+  Id: 5536307209409289283
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -27189.1465
+      Y: 57903.3359
+      Z: 1549.14014
+    }
+    Rotation {
+      Yaw: 87.7552719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -30967.6309
+            Y: 61054.418
+            Z: 1939.52759
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 51.1163406
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 18184040368830572309
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -24754.3496
+      Y: 59168.8555
+      Z: 1870.08984
+    }
+    Rotation {
+      Yaw: 87.7552719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26943.9629
+            Y: 60616.8828
+            Z: 2260.47729
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 51.1163406
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1640403016979344283
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -26257.9688
+      Y: 58985.5352
+      Z: 1590.25989
+    }
+    Rotation {
+      Yaw: 21.7952328
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29574.6055
+            Y: 61367.0938
+            Z: 1980.64734
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -14.8435669
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 18387869911322684352
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -20984.2637
+      Y: 55330.2148
+      Z: 990.144531
+    }
+    Rotation {
+      Yaw: 89.8702545
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18251.2402
+            Y: 55330.2148
+            Z: 899.297363
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.8702469
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1683014924406504920
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -21288.9746
+      Y: 56099.2461
+      Z: 1125.17456
+    }
+    Rotation {
+      Yaw: -58.7129936
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18555.9512
+            Y: 56099.2461
+            Z: 1034.32739
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -58.7129822
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 627556367965762088
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -22756.4492
+      Y: 55567.8594
+      Z: 950.664307
+    }
+    Rotation {
+      Yaw: -22.8582897
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20023.4258
+            Y: 55567.8594
+            Z: 859.817139
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.8582764
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13667297601036489955
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -21902.0957
+      Y: 55484.4531
+      Z: 883.055298
+    }
+    Rotation {
+      Yaw: -174.160873
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19169.0723
+            Y: 55484.4531
+            Z: 792.20813
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -174.160873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 649416280789236403
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -22143.2031
+      Y: 55091.7617
+      Z: 928.40686
+    }
+    Rotation {
+      Yaw: -174.160873
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19410.1797
+            Y: 55091.7617
+            Z: 837.559692
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -174.160873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6576295737701219051
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -21650.4043
+      Y: 55299.0078
+      Z: 949.661499
+    }
+    Rotation {
+      Yaw: -61.4342155
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18917.3809
+            Y: 55299.0078
+            Z: 858.814331
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -61.4342346
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2356888199841438158
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -22414.043
+      Y: 55846.1
+      Z: 619.891602
+    }
+    Rotation {
+      Yaw: -58.7129936
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19681.0195
+            Y: 55846.1
+            Z: 529.044434
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -58.7129822
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17332367508156654937
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -21027.3203
+      Y: 56842.8398
+      Z: 1582.94714
+    }
+    Rotation {
+      Yaw: -172.005585
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18294.2969
+            Y: 56842.8398
+            Z: 1492.1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.005554
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15878324593880318126
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -20228.6836
+      Y: 57057.668
+      Z: 1457.77942
+    }
+    Rotation {
+      Yaw: 149.41806
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17495.6602
+            Y: 57057.668
+            Z: 1366.93225
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 149.41806
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15158056611590797
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -20806.6426
+      Y: 57800.7227
+      Z: 1468.71326
+    }
+    Rotation {
+      Yaw: 87.7552719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18073.6191
+            Y: 57800.7227
+            Z: 1377.86609
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.7552719
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7300281464685666462
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25165.9922
+      Y: 57907.9414
+      Z: 1413.24438
+    }
+    Rotation {
+      Yaw: 40.5893898
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28544.4883
+            Y: 59418.7656
+            Z: 1588.47522
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 40.589386
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1618036030543307993
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -24734.3223
+      Y: 56838.5938
+      Z: 907.961426
+    }
+    Rotation {
+      Yaw: 40.5893898
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29427.5215
+            Y: 58349.418
+            Z: 1083.19226
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 40.589386
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 456035893447880897
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25565.709
+      Y: 57590.9492
+      Z: 1195.72961
+    }
+    Rotation {
+      Yaw: 36.6893
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -30258.9082
+            Y: 59101.7734
+            Z: 1370.96045
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 36.6892929
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13603741712574711753
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25356.9141
+      Y: 56673.9531
+      Z: 1133.67249
+    }
+    Rotation {
+      Yaw: -120.940254
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -30050.1133
+            Y: 58184.7773
+            Z: 1308.90332
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -120.940247
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6089116312663520596
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -24754.3496
+      Y: 59168.8555
+      Z: 1870.08984
+    }
+    Rotation {
+      Yaw: 87.7552719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28132.8457
+            Y: 60679.6797
+            Z: 2045.32056
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.7552719
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1900423370774303286
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -23856.373
+      Y: 58425.8
+      Z: 1481.43445
+    }
+    Rotation {
+      Yaw: 149.41806
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -27234.8691
+            Y: 59936.625
+            Z: 1656.66528
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 149.41806
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 9314361587113590855
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -24655.0137
+      Y: 58210.9688
+      Z: 1606.60217
+    }
+    Rotation {
+      Yaw: -172.005585
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28033.5098
+            Y: 59721.793
+            Z: 1781.83301
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.005554
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 16298990021308328542
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25146.2383
+      Y: 57523.9453
+      Z: 1388.67664
+    }
+    Rotation {
+      Yaw: 21.7951031
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -29839.4375
+            Y: 59034.7695
+            Z: 1563.90747
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.7950897
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14892284977602956297
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -23919.8398
+      Y: 58953.3438
+      Z: 1747.17383
+    }
+    Rotation {
+      Yaw: -159.516525
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -27298.3359
+            Y: 60464.168
+            Z: 1922.40466
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -159.516525
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12173558828171774782
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -35749.0625
+      Y: 51708.332
+      Z: 1955.62769
+    }
+    Rotation {
+      Yaw: -150.592361
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20675.1797
+            Y: 59046.8242
+            Z: 1603.87976
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -159.516525
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 7392432448240193009
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35685.6328
+      Y: 50456.918
+      Z: 1820.46118
+    }
+    Rotation {
+      Yaw: 96.6794662
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20806.6426
+            Y: 57800.7227
+            Z: 1468.71326
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.7552795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13923262744455883421
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -34683.2461
+      Y: 49862.1641
+      Z: 1431.80603
+    }
+    Rotation {
+      Yaw: 158.342117
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20228.6836
+            Y: 57057.668
+            Z: 1457.77942
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 149.41806
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 8544505157032401210
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -35438.8906
+      Y: 49526.0469
+      Z: 1556.97375
+    }
+    Rotation {
+      Yaw: -163.081772
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21027.3203
+            Y: 56842.8398
+            Z: 1582.94714
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.0056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 324861780539020036
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36738.8633
+      Y: 50105.9648
+      Z: 1597.13074
+    }
+    Rotation {
+      Yaw: 30.7193546
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21901.5684
+            Y: 57617.4
+            Z: 1245.38281
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.7951145
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7807568310741786161
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -38349.0977
+      Y: 51205.4375
+      Z: 2107.93262
+    }
+    Rotation {
+      Yaw: -150.592361
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23919.8398
+            Y: 58953.3438
+            Z: 1747.17383
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -159.516525
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 8753494208574049122
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -38285.668
+      Y: 49954.0391
+      Z: 1972.76587
+    }
+    Rotation {
+      Yaw: 96.6794662
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23453.2109
+            Y: 57707.2617
+            Z: 1621.01794
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.7552795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15552576871836469099
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -37283.2773
+      Y: 49359.2773
+      Z: 1584.11072
+    }
+    Rotation {
+      Yaw: 158.342117
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22555.2207
+            Y: 56964.1953
+            Z: 1232.36279
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 149.41806
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 164356708304746337
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -38038.9414
+      Y: 49023.1641
+      Z: 1709.27844
+    }
+    Rotation {
+      Yaw: -163.081772
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23353.875
+            Y: 56749.3789
+            Z: 1357.53052
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.0056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1271931993409098160
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -39338.9141
+      Y: 49603.0898
+      Z: 1749.43542
+    }
+    Rotation {
+      Yaw: 30.7193546
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25146.2383
+            Y: 57523.9453
+            Z: 1388.67664
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.7951145
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14557610456406379020
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -40260.1797
+      Y: 50937.9258
+      Z: 2007.51794
+    }
+    Rotation {
+      Yaw: 30.7194881
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26257.9688
+            Y: 58985.5352
+            Z: 1590.25989
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.7952461
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 11166112620976926026
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -38960.207
+      Y: 50357.9922
+      Z: 1967.36096
+    }
+    Rotation {
+      Yaw: -163.081772
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24655.0137
+            Y: 58210.9688
+            Z: 1606.60217
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.0056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15724167924506693950
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -38204.5625
+      Y: 50694.125
+      Z: 1842.19324
+    }
+    Rotation {
+      Yaw: 158.342117
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23856.373
+            Y: 58425.8
+            Z: 1481.43445
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 149.41806
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 8514352070444526618
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -39206.9336
+      Y: 51288.8906
+      Z: 2230.84863
+    }
+    Rotation {
+      Yaw: 96.6794662
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24754.3496
+            Y: 59168.8555
+            Z: 1870.08984
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.7552795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14197446503347239547
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -39131.9609
+      Y: 48392.4219
+      Z: 1163.65857
+    }
+    Rotation {
+      Yaw: -147.870926
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25129.6
+            Y: 56295.8242
+            Z: 802.89978
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -156.795105
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12044496356287396883
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -40797.7383
+      Y: 49234.6719
+      Z: 1987.65283
+    }
+    Rotation {
+      Yaw: -150.592361
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -27053.2344
+            Y: 57386.2891
+            Z: 1570.39478
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -159.516525
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4605018435528511777
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -41012.2148
+      Y: 49724.3828
+      Z: 1966.39819
+    }
+    Rotation {
+      Yaw: 96.6794662
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -27189.1465
+            Y: 57903.3359
+            Z: 1549.14014
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.7552795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6233544054630673669
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -40616.0313
+      Y: 49489.082
+      Z: 1921.04663
+    }
+    Rotation {
+      Yaw: 96.6794662
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26834.2656
+            Y: 57609.4258
+            Z: 1503.78857
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 87.7552795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 16326058061929352055
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -39415.1836
+      Y: 48730.707
+      Z: 1494.43127
+    }
+    Rotation {
+      Yaw: -112.01622
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25356.9141
+            Y: 56673.9531
+            Z: 1133.67249
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -120.940247
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13954004646659764832
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -39749.8516
+      Y: 47500.832
+      Z: 1018.71991
+    }
+    Rotation {
+      Yaw: 158.342117
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25600.2539
+            Y: 55510.8711
+            Z: 1044.69336
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 149.41806
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1831636377697032165
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -39763.6953
+      Y: 49604.2148
+      Z: 1556.4884
+    }
+    Rotation {
+      Yaw: 45.6135292
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25565.709
+            Y: 57590.9492
+            Z: 1195.72961
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 36.6893158
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 11471308050826124756
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -38303.8945
+      Y: 46984.8398
+      Z: 987.891541
+    }
+    Rotation {
+      Yaw: -50.3536835
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24251.8457
+            Y: 54776.8281
+            Z: 1013.86499
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -59.2776489
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 9009489984590825375
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -40505.5
+      Y: 47164.7
+      Z: 1143.88757
+    }
+    Rotation {
+      Yaw: -163.081772
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26676.9629
+            Y: 55296.0391
+            Z: 783.128784
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.0056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 14569366999415685716
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -42425.332
+      Y: 48978.0938
+      Z: 1764.32263
+    }
+    Rotation {
+      Yaw: 143.447189
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28700.9258
+            Y: 57385.2969
+            Z: 1347.06458
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 134.52301
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1793106198363684935
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -42065.4688
+      Y: 49373.4336
+      Z: 1743.06775
+    }
+    Rotation {
+      Yaw: 30.7194881
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28284.0918
+            Y: 57720.0234
+            Z: 1325.80969
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.7952461
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17417103886413765232
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36654.207
+      Y: 48326.2578
+      Z: 593.918213
+    }
+    Rotation {
+      Yaw: -49.7891
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22414.043
+            Y: 55846.1
+            Z: 619.891602
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -58.7130127
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8444752227025972753
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -35814.9453
+      Y: 47904.2422
+      Z: 923.68811
+    }
+    Rotation {
+      Yaw: -52.5101509
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21650.4043
+            Y: 55299.0078
+            Z: 949.661499
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -61.4342041
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 9490322065382225659
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36269.6289
+      Y: 47623.0625
+      Z: 902.433472
+    }
+    Rotation {
+      Yaw: -165.237076
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22143.2031
+            Y: 55091.7617
+            Z: 928.40686
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -174.160873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17074952780218595920
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -36092.3594
+      Y: 48048.4063
+      Z: 857.081909
+    }
+    Rotation {
+      Yaw: -165.237076
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21902.0957
+            Y: 55484.4531
+            Z: 883.055298
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -174.160873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 13466303675819901226
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36949.3086
+      Y: 47998.2734
+      Z: 924.690918
+    }
+    Rotation {
+      Yaw: -13.9343157
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22756.4492
+            Y: 55567.8594
+            Z: 950.664307
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.8583069
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14491916449545899311
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35582.0273
+      Y: 48750.8594
+      Z: 1099.20117
+    }
+    Rotation {
+      Yaw: -49.7891
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21288.9746
+            Y: 56099.2461
+            Z: 1125.17456
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -58.7130127
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15610601623831478960
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35161.707
+      Y: 48038.4141
+      Z: 964.171143
+    }
+    Rotation {
+      Yaw: 98.7943649
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20984.2637
+            Y: 55330.2148
+            Z: 990.144531
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.8702621
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12902192597308141048
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -38825.6719
+      Y: 48989.9336
+      Z: 1268.72021
+    }
+    Rotation {
+      Yaw: 49.5135956
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24734.3223
+            Y: 56838.5938
+            Z: 907.961426
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 40.5893936
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1165433832783492801
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -38454.2852
+      Y: 48751.7305
+      Z: 1599.49292
+    }
+    Rotation {
+      Yaw: 85.3686447
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23806.3
+            Y: 56545.6719
+            Z: 1247.745
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 76.4442291
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 18300338066288594437
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -39417.9922
+      Y: 49979.3711
+      Z: 1774.00317
+    }
+    Rotation {
+      Yaw: 49.5135956
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25165.9922
+            Y: 57907.9414
+            Z: 1413.24438
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 40.5893936
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 3129014517997510031
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51861.9531
+      Y: 33674.6836
+      Z: 1445.61072
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -39417.9922
+            Y: 49979.3711
+            Z: 1774.00317
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 49.5135956
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6019017491099107775
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -50497.7578
+      Y: 34432.832
+      Z: 1271.10046
+    }
+    Rotation {
+      Yaw: 166.299789
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38454.2852
+            Y: 48751.7305
+            Z: 1599.49292
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 85.3686447
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15179832985800349474
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -50791.5156
+      Y: 34103.6445
+      Z: 940.327759
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38825.6719
+            Y: 48989.9336
+            Z: 1268.72021
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 49.5135956
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8576169023005851857
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -49274.3594
+      Y: 37571.8047
+      Z: 635.778687
+    }
+    Rotation {
+      Yaw: 179.725388
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35161.707
+            Y: 48038.4141
+            Z: 964.171143
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 98.7943649
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8944780808782231927
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -50044.1523
+      Y: 37269.0469
+      Z: 770.808716
+    }
+    Rotation {
+      Yaw: 31.1418095
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36544.3398
+            Y: 48750.8594
+            Z: 1210.18457
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -49.789093
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15836412062387876237
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -49516.5078
+      Y: 35800.2305
+      Z: 596.298462
+    }
+    Rotation {
+      Yaw: 66.9968338
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37911.6211
+            Y: 47998.2734
+            Z: 1261.74902
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -13.9342957
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7825125431343058253
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -49430.9141
+      Y: 36654.375
+      Z: 528.689453
+    }
+    Rotation {
+      Yaw: -84.3063354
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37054.6719
+            Y: 48048.4063
+            Z: 968.065308
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -165.237106
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 7526999769873224271
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -49038.832
+      Y: 36412.2617
+      Z: 574.041
+    }
+    Rotation {
+      Yaw: -84.3063354
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37231.9414
+            Y: 47623.0625
+            Z: 1239.49158
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -165.237106
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17565626331430577813
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -49244.8281
+      Y: 36905.5898
+      Z: 595.295654
+    }
+    Rotation {
+      Yaw: 28.4210987
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36777.2578
+            Y: 47904.2422
+            Z: 1034.67151
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -52.5101318
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 13891907742503759625
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -49793.8711
+      Y: 36143.3398
+      Z: 265.525757
+    }
+    Rotation {
+      Yaw: 31.1418095
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37616.5195
+            Y: 48326.2578
+            Z: 930.976318
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -49.789093
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2491706882135593487
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51680.9
+      Y: 30964.7988
+      Z: 1414.67529
+    }
+    Rotation {
+      Yaw: 111.650528
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42065.4688
+            Y: 49373.4336
+            Z: 1743.06775
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 30.7194748
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8415201487314434031
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -51347.2227
+      Y: 30547.1055
+      Z: 1435.93018
+    }
+    Rotation {
+      Yaw: -135.621979
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42425.332
+            Y: 48978.0938
+            Z: 1764.32263
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 143.447189
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15405928052513402245
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -49253.8828
+      Y: 32157.1074
+      Z: 815.495056
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -40505.5
+            Y: 47164.7
+            Z: 1143.88757
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -163.081772
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12692268406710993871
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -48729.2422
+      Y: 34302.8398
+      Z: 659.499084
+    }
+    Rotation {
+      Yaw: 30.5773315
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38303.8945
+            Y: 46984.8398
+            Z: 987.891541
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -50.3536682
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 8402441942383450970
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51545.9688
+      Y: 33274.1719
+      Z: 1228.09595
+    }
+    Rotation {
+      Yaw: 126.544701
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -39763.6953
+            Y: 49604.2148
+            Z: 1970.46313
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 45.6135101
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14569984448214714642
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -49466.7
+      Y: 32956.2891
+      Z: 690.327454
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -39749.8516
+            Y: 47500.832
+            Z: 1432.69458
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 158.342117
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15283285209619772436
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -50628.4609
+      Y: 33480.6289
+      Z: 1166.03882
+    }
+    Rotation {
+      Yaw: -31.08531
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -39415.1836
+            Y: 48730.707
+            Z: 1494.43127
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -112.016235
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 136995149392838841
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -51566.625
+      Y: 32414.3398
+      Z: 1592.65417
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -40616.0313
+            Y: 49489.082
+            Z: 1921.04663
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 96.6794662
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 5848755523666742090
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51861.457
+      Y: 32060.1934
+      Z: 1638.00574
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -41012.2148
+            Y: 49724.3828
+            Z: 1966.39819
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 96.6794662
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7525171180523624072
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -51344.0625
+      Y: 32194.8
+      Z: 1659.26038
+    }
+    Rotation {
+      Yaw: -69.6615601
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -40797.7383
+            Y: 49234.6719
+            Z: 1987.65283
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -150.592361
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 13087902579873890457
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -50249.7695
+      Y: 33706.9922
+      Z: 835.266113
+    }
+    Rotation {
+      Yaw: -66.9403839
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -39131.9609
+            Y: 48392.4219
+            Z: 1163.65857
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -147.870941
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17398944115967978567
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -53121.8242
+      Y: 34089.5
+      Z: 1902.45593
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -39206.9336
+            Y: 51288.8906
+            Z: 2230.84863
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 96.6794662
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14519887546463374138
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -52376.5039
+      Y: 34985.6
+      Z: 1513.80078
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38204.5625
+            Y: 50694.125
+            Z: 1842.19324
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 158.342117
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2802344826856845420
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -52163.6875
+      Y: 34186.4141
+      Z: 1638.96851
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38960.207
+            Y: 50357.9922
+            Z: 1967.36096
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -163.081772
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12778376806874469719
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -52941.2656
+      Y: 32994.1094
+      Z: 1679.12549
+    }
+    Rotation {
+      Yaw: 111.650497
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -40260.1797
+            Y: 50937.9258
+            Z: 2007.51794
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 30.7194748
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 10857795152757721506
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51477.8906
+      Y: 33693.4688
+      Z: 1421.04297
+    }
+    Rotation {
+      Yaw: 111.650452
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -39338.9141
+            Y: 49603.0898
+            Z: 1749.43542
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 30.7193508
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14737577161798651924
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -50700.3125
+      Y: 34885.7734
+      Z: 1380.88599
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38038.9414
+            Y: 49023.1641
+            Z: 1709.27844
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -163.081772
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 7375931347009107505
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -50913.1289
+      Y: 35684.9609
+      Z: 1255.71826
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37283.2773
+            Y: 49359.2773
+            Z: 1810.18542
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 158.342117
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17046905460301161683
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51658.4492
+      Y: 34788.8594
+      Z: 1644.37341
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38285.668
+            Y: 49954.0391
+            Z: 1972.76587
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 96.6794662
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17214388860092074242
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -52904.2031
+      Y: 34923.4688
+      Z: 1779.53992
+    }
+    Rotation {
+      Yaw: -69.6615601
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38349.0977
+            Y: 51205.4375
+            Z: 2107.93262
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -150.592361
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 9790690165276140023
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51564.6641
+      Y: 36340.2734
+      Z: 1268.73828
+    }
+    Rotation {
+      Yaw: 111.650452
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36396.5391
+            Y: 50105.9648
+            Z: 1742.98157
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 30.7193508
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 5307432250306819008
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -50787.0859
+      Y: 37532.5781
+      Z: 1228.5813
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35438.8906
+            Y: 49526.0469
+            Z: 1556.97375
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -163.081772
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17382320198941784486
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -50999.9023
+      Y: 38331.7656
+      Z: 1103.41357
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34683.2461
+            Y: 49862.1641
+            Z: 1431.80603
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 158.342117
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 14117796569373779386
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51745.2227
+      Y: 37435.6641
+      Z: 1492.06873
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35685.6328
+            Y: 50456.918
+            Z: 1820.46118
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 96.6794662
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 11422496287017836237
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -52990.9766
+      Y: 37570.2734
+      Z: 1627.23523
+    }
+    Rotation {
+      Yaw: -69.6615601
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35749.0625
+            Y: 51708.332
+            Z: 1955.62769
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -150.592361
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 10336155693940649440
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -54367.5781
+      Y: 34224.1094
+      Z: 2037.62244
+    }
+    Rotation {
+      Yaw: -69.6615601
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -52990.9766
+            Y: 37570.2734
+            Z: 1627.23523
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -69.6615601
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 13990458385083347477
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -53121.8242
+      Y: 34089.5
+      Z: 1902.45593
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51745.2227
+            Y: 37435.6641
+            Z: 1492.06873
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.610504
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 11117020425214032110
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -52376.5039
+      Y: 34985.6
+      Z: 1513.80078
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50999.9023
+            Y: 38331.7656
+            Z: 1103.41357
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -120.72702
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 10989945964617802843
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -52163.6875
+      Y: 34186.4141
+      Z: 1638.96851
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50787.0859
+            Y: 37532.5781
+            Z: 1228.5813
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -82.1508789
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 10231128074036404233
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -52941.2656
+      Y: 32994.1094
+      Z: 1679.12549
+    }
+    Rotation {
+      Yaw: 111.650497
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51564.6641
+            Y: 36340.2734
+            Z: 1268.73828
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 111.650475
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2591886884874459335
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -52904.2031
+      Y: 37044.6328
+      Z: 1803.30945
+    }
+    Rotation {
+      Yaw: -69.6615601
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -52904.2031
+            Y: 34923.4688
+            Z: 1779.53992
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -69.6615601
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 5002368714030392080
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51658.4492
+      Y: 36910.0234
+      Z: 1668.14294
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51658.4492
+            Y: 34788.8594
+            Z: 1644.37341
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.610504
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13503758604942995958
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -50913.1289
+      Y: 37806.125
+      Z: 1279.48779
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50913.1289
+            Y: 35684.9609
+            Z: 1255.71826
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -120.72702
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15557838931907242433
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -50700.3125
+      Y: 37006.9375
+      Z: 1404.65552
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50700.3125
+            Y: 34885.7734
+            Z: 1380.88599
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -82.1508789
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 7327561645576138529
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -51477.8906
+      Y: 35814.6328
+      Z: 1444.8125
+    }
+    Rotation {
+      Yaw: 111.650497
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51477.8906
+            Y: 33693.4688
+            Z: 1421.04297
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 111.650475
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2863410396615650214
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -50031.4609
+      Y: 30964.7988
+      Z: 855.6521
+    }
+    Rotation {
+      Yaw: 111.650528
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -52941.2656
+            Y: 32994.1094
+            Z: 1679.12549
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 111.650513
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12536512038609594845
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -49253.8828
+      Y: 32157.1074
+      Z: 815.495056
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -52163.6875
+            Y: 34186.4141
+            Z: 1638.96851
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -82.1508789
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 16657508029595684859
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -49466.7
+      Y: 32956.2891
+      Z: 690.327454
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -52376.5039
+            Y: 34985.6
+            Z: 1513.80078
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -120.72702
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 11415161005426811057
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -50212.0195
+      Y: 32060.1934
+      Z: 1078.98254
+    }
+    Rotation {
+      Yaw: 177.610504
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -53121.8242
+            Y: 34089.5
+            Z: 1902.45593
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.610504
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12926466472704775947
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -49694.625
+      Y: 32194.8
+      Z: 1100.23718
+    }
+    Rotation {
+      Yaw: -69.6615601
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -54367.5781
+            Y: 34224.1094
+            Z: 2037.62244
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -69.6615601
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12251070020249890618
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -32967.125
+      Y: 20490.957
+      Z: 672.665161
+    }
+    Rotation {
+      Yaw: -66.9403458
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50249.7695
+            Y: 33706.9922
+            Z: 835.266113
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -66.9403687
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14890294620672225466
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -32411.9805
+      Y: 18978.7656
+      Z: 937.63623
+    }
+    Rotation {
+      Yaw: -69.6615601
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51344.0625
+            Y: 32194.8
+            Z: 1659.26038
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -69.6615601
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 3976524554896523807
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -32929.375
+      Y: 18844.1582
+      Z: 916.381592
+    }
+    Rotation {
+      Yaw: 177.610535
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51861.457
+            Y: 32060.1934
+            Z: 1638.00574
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.610519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2795648710193379968
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -32634.543
+      Y: 19198.3047
+      Z: 871.03
+    }
+    Rotation {
+      Yaw: 177.610535
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51566.625
+            Y: 32414.3398
+            Z: 1592.65417
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.610519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 14077493714430974504
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33345.8164
+      Y: 20264.5957
+      Z: 1003.43787
+    }
+    Rotation {
+      Yaw: -31.0852814
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50628.4609
+            Y: 33480.6289
+            Z: 1166.03882
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.0852966
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 10394112340912609476
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -31637.2
+      Y: 19740.252
+      Z: 299.835876
+    }
+    Rotation {
+      Yaw: -120.727028
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49466.7
+            Y: 32956.2891
+            Z: 690.327454
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -120.72702
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 5158658171114594112
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -32067.0313
+      Y: 20058.1367
+      Z: 278.581238
+    }
+    Rotation {
+      Yaw: 126.544701
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51545.9688
+            Y: 33274.1719
+            Z: 1228.09595
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 126.544701
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16759201633955776541
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -31446.5977
+      Y: 21086.8066
+      Z: 496.898132
+    }
+    Rotation {
+      Yaw: 30.5773144
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -48729.2422
+            Y: 34302.8398
+            Z: 659.499084
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 30.5773239
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 2580378653658046375
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -31424.3828
+      Y: 18941.0723
+      Z: 425.003479
+    }
+    Rotation {
+      Yaw: -82.1508713
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49253.8828
+            Y: 32157.1074
+            Z: 815.495056
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -82.1508789
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 6691359650059662225
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -31868.2852
+      Y: 17331.0703
+      Z: 486.415344
+    }
+    Rotation {
+      Yaw: -135.621979
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51347.2227
+            Y: 30547.1055
+            Z: 1435.93018
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -135.621979
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 5412202478901035255
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -32201.9629
+      Y: 17748.7637
+      Z: 465.160461
+    }
+    Rotation {
+      Yaw: 111.650551
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51680.9
+            Y: 30964.7988
+            Z: 1414.67529
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 111.650543
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2024280888573698686
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -32511.2266
+      Y: 22927.3066
+      Z: 102.924805
+    }
+    Rotation {
+      Yaw: 31.1417847
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49793.8711
+            Y: 36143.3398
+            Z: 265.525757
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 31.1417942
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13833369156023732115
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -31962.1855
+      Y: 23689.5547
+      Z: 432.694702
+    }
+    Rotation {
+      Yaw: 28.4211121
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49244.8281
+            Y: 36905.5898
+            Z: 595.295654
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 28.4211063
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 14695696709630908001
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -31756.1875
+      Y: 23196.2246
+      Z: 411.440063
+    }
+    Rotation {
+      Yaw: -84.3063354
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49038.832
+            Y: 36412.2617
+            Z: 574.041
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -84.3063354
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12724497572078563644
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -32148.2695
+      Y: 23438.3398
+      Z: 366.088501
+    }
+    Rotation {
+      Yaw: -84.3063354
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49430.9141
+            Y: 36654.375
+            Z: 528.689453
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -84.3063354
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 6857583436717615972
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -32233.8633
+      Y: 22584.1953
+      Z: 433.69751
+    }
+    Rotation {
+      Yaw: 66.9968
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49516.5078
+            Y: 35800.2305
+            Z: 596.298462
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 66.9968109
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7004102199561547769
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -32761.5078
+      Y: 24053.0078
+      Z: 608.207764
+    }
+    Rotation {
+      Yaw: 31.1417847
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50044.1523
+            Y: 37269.0469
+            Z: 770.808716
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 31.1417942
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 10944861788866943801
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -31991.7129
+      Y: 24355.7637
+      Z: 473.177734
+    }
+    Rotation {
+      Yaw: 179.725388
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -49274.3594
+            Y: 37571.8047
+            Z: 635.778687
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 179.725388
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 5149868040850624867
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33508.8711
+      Y: 20887.6094
+      Z: 777.726807
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50791.5156
+            Y: 34103.6445
+            Z: 940.327759
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7163489694082613757
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33215.1133
+      Y: 21216.7969
+      Z: 1108.49951
+    }
+    Rotation {
+      Yaw: 166.29982
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -50497.7578
+            Y: 34432.832
+            Z: 1271.10046
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 166.299805
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17761571527517190144
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34579.3086
+      Y: 20458.6484
+      Z: 1283.00977
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -51861.9531
+            Y: 33674.6836
+            Z: 1445.61072
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16876515493004314856
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -35015.3789
+      Y: 26027.3
+      Z: 748.727783
+    }
+    Rotation {
+      Yaw: -132.178467
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35015.3789
+            Y: 28119.9883
+            Z: 292.488403
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -154.764145
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 5905877747180708036
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34766.2422
+      Y: 25408.7266
+      Z: 1131.67676
+    }
+    Rotation {
+      Yaw: 19.1257858
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35022.918
+            Y: 27453.1699
+            Z: 675.437378
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -3.46051025
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 10757226757479722185
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36225.5352
+      Y: 25976.2793
+      Z: 902.00293
+    }
+    Rotation {
+      Yaw: -132.178467
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36152.3125
+            Y: 28537.6563
+            Z: 445.76355
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -154.764145
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2926425675352214383
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36583.6953
+      Y: 26373.166
+      Z: 880.748291
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36330.5664
+            Y: 29041.6699
+            Z: 424.508911
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 92.5064163
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1967445794478721949
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -36133.4805
+      Y: 26275.0605
+      Z: 835.396729
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35952.5664
+            Y: 28778.1719
+            Z: 379.157349
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 92.5064163
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 2707127085507954782
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -37086.6133
+      Y: 27637.2441
+      Z: 748.727783
+    }
+    Rotation {
+      Yaw: -132.178467
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35015.3789
+            Y: 26027.3
+            Z: 748.727783
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -132.178467
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4133055864904537739
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36837.4766
+      Y: 27018.6699
+      Z: 1131.67676
+    }
+    Rotation {
+      Yaw: 19.1257782
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34766.2422
+            Y: 25408.7266
+            Z: 1131.67676
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 19.125782
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16797336137028456833
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36225.5352
+      Y: 25976.2793
+      Z: 902.00293
+    }
+    Rotation {
+      Yaw: -132.178467
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34154.3
+            Y: 24366.3359
+            Z: 902.00293
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -132.178467
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17962159400409607117
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36583.6953
+      Y: 26373.166
+      Z: 880.748291
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34512.4609
+            Y: 24763.2227
+            Z: 880.748291
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 115.092995
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17303604745102697595
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -36133.4805
+      Y: 26275.0605
+      Z: 835.396729
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34062.2461
+            Y: 24665.1172
+            Z: 835.396729
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 115.092995
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 17953566098053646184
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35976.4
+      Y: 25357.7051
+      Z: 1284.9519
+    }
+    Rotation {
+      Yaw: 19.1257744
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33905.1641
+            Y: 23747.7617
+            Z: 1284.9519
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 19.1257763
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 18184843439328412450
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36511.0078
+      Y: 25218.6934
+      Z: 1490.10925
+    }
+    Rotation {
+      Yaw: -93.6023941
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34439.7734
+            Y: 23608.75
+            Z: 1490.10925
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -93.6023865
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 3056436473902764209
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33508.8711
+      Y: 20887.6094
+      Z: 777.726807
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32967.125
+            Y: 20490.957
+            Z: 672.665161
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -66.9403381
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6259879407566829984
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -34490.5
+      Y: 22164.8594
+      Z: 1042.69788
+    }
+    Rotation {
+      Yaw: 127.724068
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32411.9805
+            Y: 18978.7656
+            Z: 937.63623
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -69.6615601
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1869418091086600907
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34036.957
+      Y: 22447.8906
+      Z: 1021.44324
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32929.375
+            Y: 18844.1582
+            Z: 916.381592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.61055
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 4430291854827419460
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -34212.4961
+      Y: 22021.8359
+      Z: 976.091675
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32634.543
+            Y: 19198.3047
+            Z: 871.03
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.61055
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 3846085215818020302
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33215.1133
+      Y: 21216.7969
+      Z: 1108.49951
+    }
+    Rotation {
+      Yaw: 166.29982
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33345.8164
+            Y: 20264.5957
+            Z: 1003.43787
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.0852661
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 853219733979131979
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -34490.5
+      Y: 22164.8594
+      Z: 1042.69788
+    }
+    Rotation {
+      Yaw: 127.724068
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31637.2
+            Y: 19740.252
+            Z: 299.835876
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -120.72702
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 16831612706777929950
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34036.957
+      Y: 22447.8906
+      Z: 1021.44324
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32067.0313
+            Y: 20058.1367
+            Z: 278.581238
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 126.544708
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14499434060529577973
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -35959.0117
+      Y: 22539.8516
+      Z: 1565.43665
+    }
+    Rotation {
+      Yaw: -80.9717331
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31446.5977
+            Y: 21086.8066
+            Z: 496.898132
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 30.5773067
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 14870601500789285835
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -35186.2969
+      Y: 22578.7227
+      Z: 1630.8042
+    }
+    Rotation {
+      Yaw: 166.299866
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31424.3828
+            Y: 18941.0723
+            Z: 425.003479
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -82.1508789
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 6689617553329468385
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36231.7383
+      Y: 23276.1016
+      Z: 1373.47815
+    }
+    Rotation {
+      Yaw: 112.829094
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31868.2852
+            Y: 17331.0703
+            Z: 486.415344
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -135.621979
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 18020870819680778131
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35720.6875
+      Y: 23433.043
+      Z: 1352.22327
+    }
+    Rotation {
+      Yaw: 0.101946563
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32201.9629
+            Y: 17748.7637
+            Z: 465.160461
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 111.650566
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 4977503626428489238
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36837.4766
+      Y: 27018.6699
+      Z: 1131.67676
+    }
+    Rotation {
+      Yaw: 19.1257782
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33424.7891
+            Y: 25896.6543
+            Z: 501.137085
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -139.428833
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8330216927766345333
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36225.5352
+      Y: 25976.2793
+      Z: 902.00293
+    }
+    Rotation {
+      Yaw: -132.178467
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34375.4727
+            Y: 26643.1426
+            Z: 271.463257
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 69.2666779
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4802105491376103005
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36583.6953
+      Y: 26373.166
+      Z: 880.748291
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33896.9961
+            Y: 26404.6875
+            Z: 250.208618
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -43.4620056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 5219869350470110709
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -36133.4805
+      Y: 26275.0605
+      Z: 835.396729
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34351.9141
+            Y: 26331.3965
+            Z: 204.857056
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -43.4620056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 9186549025173920805
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33508.8711
+      Y: 20887.6094
+      Z: 777.726807
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33071.1797
+            Y: 14823.4785
+            Z: 125.428955
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 828701589554006452
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -34490.5
+      Y: 22164.8594
+      Z: 1042.69788
+    }
+    Rotation {
+      Yaw: 127.724068
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34490.5
+            Y: 15523.5264
+            Z: 1373.31116
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 127.724037
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1807566039923131778
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34036.957
+      Y: 22447.8906
+      Z: 1021.44324
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34319.957
+            Y: 15975.6787
+            Z: 1352.05652
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 14.996007
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 5289691845248959807
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -34212.4961
+      Y: 22021.8359
+      Z: 976.091675
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34212.4961
+            Y: 16353.874
+            Z: 1326.29907
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 14.996007
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 12257531350287471941
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33215.1133
+      Y: 21216.7969
+      Z: 1108.49951
+    }
+    Rotation {
+      Yaw: 166.29982
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32777.4219
+            Y: 15238.1406
+            Z: 384.813171
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 166.299805
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 807227547449962373
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34579.3086
+      Y: 20458.6484
+      Z: 1283.00977
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36554.0156
+            Y: 13980.7354
+            Z: 2233.77393
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 4511216713974379849
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -35333.6953
+      Y: 21244.9609
+      Z: 1394.4325
+    }
+    Rotation {
+      Yaw: 97.169342
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36690.4453
+            Y: 14767.0479
+            Z: 2345.19678
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.169342
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 555036033730364416
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35143.1758
+      Y: 22028.0234
+      Z: 1425.64685
+    }
+    Rotation {
+      Yaw: -80.9717331
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35143.1758
+            Y: 15386.6904
+            Z: 1756.26013
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -80.9717407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12155249397609139285
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36225.5352
+      Y: 25976.2793
+      Z: 902.00293
+    }
+    Rotation {
+      Yaw: -132.178467
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37086.6133
+            Y: 27637.2441
+            Z: 748.727783
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -132.178467
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4229202555280139549
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36583.6953
+      Y: 26373.166
+      Z: 880.748291
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37444.7734
+            Y: 28034.1309
+            Z: 727.473145
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 115.092995
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2158717135218637921
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -36133.4805
+      Y: 26275.0605
+      Z: 835.396729
+    }
+    Rotation {
+      Yaw: 115.093025
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36994.5586
+            Y: 27936.0254
+            Z: 682.121582
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 115.092995
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 17980059199801139265
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35976.4
+      Y: 25357.7051
+      Z: 1284.9519
+    }
+    Rotation {
+      Yaw: 19.1257744
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36837.4766
+            Y: 27018.6699
+            Z: 1131.67676
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 19.1257763
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16608488646914759514
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36511.0078
+      Y: 25218.6934
+      Z: 1490.10925
+    }
+    Rotation {
+      Yaw: -93.6023941
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37372.0859
+            Y: 26879.6582
+            Z: 1336.83411
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -93.6023865
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 18250956342890219187
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -37258.3945
+      Y: 24542.8047
+      Z: 1211.52832
+    }
+    Rotation {
+      Yaw: 100.199219
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38119.4727
+            Y: 27853.6406
+            Z: 953.758911
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 100.199234
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15889863139861693835
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33508.8711
+      Y: 20887.6094
+      Z: 777.726807
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32511.2266
+            Y: 22927.3066
+            Z: 102.924805
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 31.1417713
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8454054947697361881
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -34490.5
+      Y: 22164.8594
+      Z: 1042.69788
+    }
+    Rotation {
+      Yaw: 127.724068
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31962.1855
+            Y: 23689.5547
+            Z: 432.694702
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 28.4211197
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4407622169095177200
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34036.957
+      Y: 22447.8906
+      Z: 1021.44324
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31756.1875
+            Y: 23196.2246
+            Z: 411.440063
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -84.3063354
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8773198222301723208
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -34212.4961
+      Y: 22021.8359
+      Z: 976.091675
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32148.2695
+            Y: 23438.3398
+            Z: 366.088501
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -84.3063354
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 8896771178326781591
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -33215.1133
+      Y: 21216.7969
+      Z: 1108.49951
+    }
+    Rotation {
+      Yaw: 166.29982
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32233.8633
+            Y: 22584.1953
+            Z: 433.69751
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 66.9967957
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13099092584370180137
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34579.3086
+      Y: 20458.6484
+      Z: 1283.00977
+    }
+    Rotation {
+      Yaw: 130.444672
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32761.5078
+            Y: 24053.0078
+            Z: 608.207764
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 31.1417713
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7092994271867725271
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35143.1758
+      Y: 22028.0234
+      Z: 1425.64685
+    }
+    Rotation {
+      Yaw: -80.9717331
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31991.7129
+            Y: 24355.7637
+            Z: 473.177734
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 179.725372
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7062602833452557117
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -34490.5
+      Y: 22164.8594
+      Z: 1042.69788
+    }
+    Rotation {
+      Yaw: 127.724068
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36225.5352
+            Y: 25976.2793
+            Z: 902.00293
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -132.178467
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4042180058619269295
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -34036.957
+      Y: 22447.8906
+      Z: 1021.44324
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36583.6953
+            Y: 26373.166
+            Z: 880.748291
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 115.093056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 5270414378424738025
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -34212.4961
+      Y: 22021.8359
+      Z: 976.091675
+    }
+    Rotation {
+      Yaw: 14.9959888
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36133.4805
+            Y: 26275.0605
+            Z: 835.396729
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 115.093056
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 7600800023385429148
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -36132.4727
+      Y: 21782.9961
+      Z: 1425.64587
+    }
+    Rotation {
+      Yaw: 97.169342
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35561.7109
+            Y: 24426.6875
+            Z: 1284.95093
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -162.732758
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 730301926620854848
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36359.3242
+      Y: 21233.707
+      Z: 1461.0387
+    }
+    Rotation {
+      Yaw: -15.5589771
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34981.1563
+            Y: 24299.6543
+            Z: 1320.34375
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 84.5379791
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 11740718489672994552
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36401.5742
+      Y: 23307.4219
+      Z: 1532.3092
+    }
+    Rotation {
+      Yaw: -80.9717331
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37015.3477
+            Y: 23894.4883
+            Z: 1391.61426
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 19.1257725
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 14215815631272586462
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35143.1758
+      Y: 22028.0234
+      Z: 1425.64685
+    }
+    Rotation {
+      Yaw: -80.9717331
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35976.4
+            Y: 25357.7051
+            Z: 1284.9519
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 19.1257725
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 4275198637176894499
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -35959.0117
+      Y: 22539.8516
+      Z: 1565.43665
+    }
+    Rotation {
+      Yaw: -80.9717331
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36337.2461
+            Y: 24464.7715
+            Z: 1424.7417
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 19.1257725
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 17263387808062830047
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -35186.2969
+      Y: 22578.7227
+      Z: 1630.8042
+    }
+    Rotation {
+      Yaw: 166.299866
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36511.0078
+            Y: 25218.6934
+            Z: 1490.10925
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -93.6023865
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 765851756125440959
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -36231.7383
+      Y: 23276.1016
+      Z: 1373.47815
+    }
+    Rotation {
+      Yaw: 112.829094
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37014.2773
+            Y: 24067.1953
+            Z: 1232.7832
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -147.072952
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 3191156180599938484
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -35720.6875
+      Y: 23433.043
+      Z: 1352.22327
+    }
+    Rotation {
+      Yaw: 0.101946563
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37258.3945
+            Y: 24542.8047
+            Z: 1211.52832
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 100.199211
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13882172179767931400
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25862.707
+      Y: 37995.0352
+      Z: 1156.80225
+    }
+    Rotation {
+      Yaw: -79.8198
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38038.5039
+            Y: 7988.71777
+            Z: 1000.10059
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 11.4661169
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1676373026296669678
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -26704.3223
+      Y: 37818.0117
+      Z: 891.207397
+    }
+    Rotation {
+      Yaw: -13.559741
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37842.6328
+            Y: 7323.71191
+            Z: 891.208374
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 77.7257843
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 3111431600088589574
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -24527.7949
+      Y: 38061.1523
+      Z: 960.57489
+    }
+    Rotation {
+      Yaw: -90.5458298
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -38134.5547
+            Y: 9494.23535
+            Z: 960.575867
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 0.740653753
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12517767791760902445
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -27454.5469
+      Y: 36574.0547
+      Z: 590.160156
+    }
+    Rotation {
+      Yaw: 64.2882462
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36582.1602
+            Y: 6601.59473
+            Z: 590.161133
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 155.573959
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 9002640635452953826
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -26556.9258
+      Y: 35365.1406
+      Z: 590.430237
+    }
+    Rotation {
+      Yaw: -106.844749
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35601.293
+            Y: 7526.10645
+            Z: 573.639465
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 14026741909248429842
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25467.4473
+      Y: 35797.0859
+      Z: 677.621033
+    }
+    Rotation {
+      Yaw: 39.1591682
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35849.9727
+            Y: 8605.62598
+            Z: 677.622
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 3598640342319274525
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -25416.041
+      Y: 37337.2031
+      Z: 1178.05688
+    }
+    Rotation {
+      Yaw: 5.88375759
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37390.8594
+            Y: 8622.45801
+            Z: 1178.05786
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.1693573
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2238050034321952567
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25414.8652
+      Y: 36802.5938
+      Z: 1156.80225
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36856.4063
+            Y: 8635.63
+            Z: 967.854492
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8192599539451760510
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -25684.207
+      Y: 37176.4922
+      Z: 1111.45068
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37224.1758
+            Y: 8357.96191
+            Z: 1111.45166
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 8345762015193142095
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -24652.6426
+      Y: 37559.2734
+      Z: 1178.05688
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37629.9922
+            Y: 9380.67676
+            Z: 1178.05786
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17339829079973428304
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -26245.0234
+      Y: 37027.3047
+      Z: 891.207397
+    }
+    Rotation {
+      Yaw: -40.5844955
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37062.4375
+            Y: 7800.6377
+            Z: 891.208374
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 50.7011795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 8006988202261824813
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25115.0781
+      Y: 34870.7461
+      Z: 570.309692
+    }
+    Rotation {
+      Yaw: 28.4329414
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34931.7695
+            Y: 8978.69238
+            Z: 570.310669
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 119.718582
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13265810990060862663
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -23890.6172
+      Y: 35929.1523
+      Z: 1049.21277
+    }
+    Rotation {
+      Yaw: -4.84253216
+    }
+    Scale {
+      X: 0.30870086
+      Y: 0.30870086
+      Z: 0.30870086
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36017.3906
+            Y: 10179.0869
+            Z: 1049.21375
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 86.4430161
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.30870086
+            Y: 0.30870086
+            Z: 0.30870086
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12933318603145091980
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -24195.666
+      Y: 36254.9375
+      Z: 960.57489
+    }
+    Rotation {
+      Yaw: -117.570747
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36336.25
+            Y: 9866.80566
+            Z: 960.575867
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -26.28479
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7937807759045325953
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -23890.4707
+      Y: 34497.6797
+      Z: 607.863342
+    }
+    Rotation {
+      Yaw: 177.016144
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34586.2773
+            Y: 10211.3604
+            Z: 607.864319
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -91.698
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15516276463450955820
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -21496.9492
+      Y: 34818.082
+      Z: 672.159363
+    }
+    Rotation {
+      Yaw: 64.288208
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34488.8867
+            Y: 12129.2129
+            Z: 456.168884
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 155.573959
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15690545848904380340
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -19306.2676
+      Y: 34502.1367
+      Z: 632.756
+    }
+    Rotation {
+      Yaw: -4.84253216
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34126.7188
+            Y: 17187.4414
+            Z: 1445.64502
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 86.4430161
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14895050955805402403
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -19574.4766
+      Y: 34095.1602
+      Z: 587.405396
+    }
+    Rotation {
+      Yaw: 177.016144
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33713.832
+            Y: 16928.4336
+            Z: 1326.96436
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -91.698
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 16226372469698512851
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -22790.8691
+      Y: 35460.9805
+      Z: 859.914185
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35574.0156
+            Y: 10896.752
+            Z: 859.915161
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 11994979994164660564
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -21874.9258
+      Y: 35671.5508
+      Z: 793.358154
+    }
+    Rotation {
+      Yaw: 39.1592102
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35236.7734
+            Y: 11732.1973
+            Z: 793.359131
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6523885388810337280
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -21823.5215
+      Y: 37433.0469
+      Z: 1507.66443
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37567.2891
+            Y: 12211.915
+            Z: 1507.66541
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.169342
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 18242860035773885025
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -20516.0449
+      Y: 37416
+      Z: 1486.40979
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37012.707
+            Y: 15912.5879
+            Z: 2153.83228
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.169342
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7525058521474990388
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -21071.873
+      Y: 36629.4844
+      Z: 1441.05823
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36780.8047
+            Y: 12981.4189
+            Z: 1441.0592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.169342
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 3757167445413417996
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -21822.3457
+      Y: 36898.4375
+      Z: 1486.40979
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37032.8359
+            Y: 12225.0908
+            Z: 1486.41077
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6734637264978027553
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -22091.6855
+      Y: 37272.3359
+      Z: 1441.05823
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37400.5938
+            Y: 11947.4385
+            Z: 1441.0592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 14293027793084596743
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -21060.123
+      Y: 37655.1172
+      Z: 1507.66443
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37806.4297
+            Y: 12970.1455
+            Z: 1507.66541
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4678244835414175498
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -22652.502
+      Y: 37123.1484
+      Z: 1220.81482
+    }
+    Rotation {
+      Yaw: -40.5844955
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37238.8672
+            Y: 11390.1025
+            Z: 1220.8158
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 50.7011795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12123094749978171943
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -18985.9727
+      Y: 37650.8125
+      Z: 1407.93201
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37281.7891
+            Y: 17437.0117
+            Z: 2044.31885
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -80.9717407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 8290367788570861560
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -20293.2949
+      Y: 36421.4453
+      Z: 1486.41077
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36023.4023
+            Y: 16157.6045
+            Z: 2153.83325
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -80.9717407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 11603364168615851556
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -19763.2832
+      Y: 37225.5938
+      Z: 1441.0592
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36839.2383
+            Y: 16669.4297
+            Z: 2108.48145
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -80.9717407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 1102211222393515033
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -19741.7598
+      Y: 36452.1953
+      Z: 1506.42712
+    }
+    Rotation {
+      Yaw: 75.0144424
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36066.5117
+            Y: 16708.3086
+            Z: 2173.84961
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 166.299896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 14426546007419186212
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -19021.1016
+      Y: 37481.7227
+      Z: 1249.10071
+    }
+    Rotation {
+      Yaw: 21.5435982
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37111.9531
+            Y: 17405.6797
+            Z: 1885.4873
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 112.829124
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 16978459926871879458
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -17757.5918
+      Y: 37818.25
+      Z: 1227.84607
+    }
+    Rotation {
+      Yaw: 21.5435982
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37476.7461
+            Y: 18661.3203
+            Z: 1864.23291
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 112.829124
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17845042190900479209
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -18875.666
+      Y: 36967.2813
+      Z: 1227.84607
+    }
+    Rotation {
+      Yaw: -91.1838074
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36600.9023
+            Y: 17562.625
+            Z: 1864.23291
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 0.101946563
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 10282956375955992785
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -18346.0039
+      Y: 37901.6367
+      Z: 1249.10071
+    }
+    Rotation {
+      Yaw: -91.1838074
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37546.9102
+            Y: 18071.1836
+            Z: 1885.4873
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 0.101946563
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2372013416282106342
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -15620.8926
+      Y: 33801.418
+      Z: 366.888916
+    }
+    Rotation {
+      Yaw: 39.1591682
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33508.8711
+            Y: 20887.6094
+            Z: 777.726807
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7010145147421125084
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -14321.9414
+      Y: 34754.1406
+      Z: 954.267151
+    }
+    Rotation {
+      Yaw: 36.4384613
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34490.5
+            Y: 22164.8594
+            Z: 1042.69788
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 127.724091
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 7623081441735865275
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -14049.1553
+      Y: 34294.3633
+      Z: 933.012512
+    }
+    Rotation {
+      Yaw: -76.2898636
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34036.957
+            Y: 22447.8906
+            Z: 1021.44324
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 14.9959698
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2713979233049034012
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -14471.168
+      Y: 34479.4219
+      Z: 887.660889
+    }
+    Rotation {
+      Yaw: -76.2898636
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34212.4961
+            Y: 22021.8359
+            Z: 976.091675
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 14.9959698
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 15315352759838098744
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -17115.207
+      Y: 34449.2656
+      Z: 784.98114
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34123.0234
+            Y: 19379.1367
+            Z: 1262.56677
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 6354142497283654168
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -15298.376
+      Y: 33500.3438
+      Z: 697.661621
+    }
+    Rotation {
+      Yaw: 75.014389
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33215.1133
+            Y: 21216.7969
+            Z: 1108.49951
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 166.29985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 5970591774636567261
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -16025.7285
+      Y: 34881.2109
+      Z: 872.171936
+    }
+    Rotation {
+      Yaw: 39.1592102
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34579.3086
+            Y: 20458.6484
+            Z: 1283.00977
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 130.444672
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 3961783345750434478
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -18322.9199
+      Y: 35694.6328
+      Z: 1032.83154
+    }
+    Rotation {
+      Yaw: -160.315033
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35340.9805
+            Y: 18143.7813
+            Z: 2037.06213
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -69.0292358
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2111235415379713660
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -18451.5957
+      Y: 36213.5234
+      Z: 1011.5769
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35856.8555
+            Y: 18003.4961
+            Z: 2015.8075
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 178.242035
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7169920403255125423
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -18100.8379
+      Y: 35914.6797
+      Z: 966.225464
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35565.9609
+            Y: 18360.8828
+            Z: 1970.45618
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 178.242035
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 10489219404486709758
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -19011.291
+      Y: 35296.8594
+      Z: 803.802368
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -34927.8672
+            Y: 17464.5156
+            Z: 1616.69128
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 178.242035
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 14943593802188737964
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -17591.7949
+      Y: 36193.3438
+      Z: 745.981628
+    }
+    Rotation {
+      Yaw: 153.217133
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35855.9805
+            Y: 18863.5508
+            Z: 1750.21228
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -115.49707
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 8119512732257921745
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -15974.3232
+      Y: 36421.3281
+      Z: 1372.60791
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36120.1914
+            Y: 20475.4844
+            Z: 1461.0387
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.169342
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 6772612339611184795
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -14666.8467
+      Y: 36404.2813
+      Z: 1337.21509
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36132.4727
+            Y: 21782.9961
+            Z: 1425.64587
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.169342
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 14652289938840742428
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -15222.6748
+      Y: 35617.7656
+      Z: 1306.00171
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35333.6953
+            Y: 21244.9609
+            Z: 1394.4325
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 97.169342
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 1223051604752506479
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -15973.1475
+      Y: 35886.7188
+      Z: 1351.35327
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35585.7422
+            Y: 20488.6523
+            Z: 1439.78406
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15696917632917134502
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -16242.4883
+      Y: 36260.6172
+      Z: 1306.00171
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35953.5039
+            Y: 20210.9961
+            Z: 1394.4325
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 11547945765348077068
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -15210.9248
+      Y: 36643.4
+      Z: 1372.60791
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36359.3242
+            Y: 21233.707
+            Z: 1461.0387
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -15.55896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 11942821014200318718
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -16803.3047
+      Y: 36111.4297
+      Z: 1085.7583
+    }
+    Rotation {
+      Yaw: -40.5844955
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35791.7695
+            Y: 19653.6563
+            Z: 1542.03284
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 50.7011795
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12987907165154868907
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -13136.7754
+      Y: 36639.0938
+      Z: 1443.87854
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36401.5742
+            Y: 23307.4219
+            Z: 1532.3092
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -80.9717407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12160908325237362437
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -14444.0977
+      Y: 35409.7266
+      Z: 1337.21606
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35143.1758
+            Y: 22028.0234
+            Z: 1425.64685
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -80.9717407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15071564047215229471
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -13914.0859
+      Y: 36213.875
+      Z: 1477.00574
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35959.0117
+            Y: 22539.8516
+            Z: 1565.43665
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -80.9717407
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 18419437503004017255
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -13892.5625
+      Y: 35440.4766
+      Z: 1542.37366
+    }
+    Rotation {
+      Yaw: 75.0144424
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35186.2969
+            Y: 22578.7227
+            Z: 1630.8042
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 166.299896
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 4848976928740859771
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -13171.9033
+      Y: 36470.0078
+      Z: 1285.04724
+    }
+    Rotation {
+      Yaw: 21.5435982
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -36231.7383
+            Y: 23276.1016
+            Z: 1373.47815
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 112.829124
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1469121080935460264
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -13026.4678
+      Y: 35955.5625
+      Z: 1263.7926
+    }
+    Rotation {
+      Yaw: -91.1838074
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35720.6875
+            Y: 23433.043
+            Z: 1352.22327
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 0.101946563
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 11386834617377770390
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -5891.7583
+      Y: 31536.6445
+      Z: 869.444458
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8400.04297
+            Y: 32272.25
+            Z: 984.067749
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844727
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.411801934
+            Y: 0.411801934
+            Z: 0.411801934
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2197757379071195446
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -25414.8652
+      Y: 36802.5938
+      Z: 1156.80225
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25862.707
+            Y: 37995.0352
+            Z: 1156.80225
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -79.8198242
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15046566344366093744
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -26245.0234
+      Y: 37027.3047
+      Z: 891.207397
+    }
+    Rotation {
+      Yaw: -40.5844955
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26704.3223
+            Y: 37818.0117
+            Z: 891.207397
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -13.5597229
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15553016755134697838
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -24195.666
+      Y: 36254.9375
+      Z: 960.57489
+    }
+    Rotation {
+      Yaw: -117.570747
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24527.7949
+            Y: 38061.1523
+            Z: 960.57489
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90.5458374
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1209402528451101282
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -21496.9492
+      Y: 34818.082
+      Z: 672.159363
+    }
+    Rotation {
+      Yaw: 64.288208
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -27454.5469
+            Y: 36574.0547
+            Z: 590.160156
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 64.2882233
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 11153190897213574626
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -22790.8691
+      Y: 35460.9805
+      Z: 859.914185
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -28115.9766
+            Y: 37569.6445
+            Z: 728.812683
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844742
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15327131682645527026
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -21874.9258
+      Y: 35671.5508
+      Z: 793.358154
+    }
+    Rotation {
+      Yaw: 39.1592102
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -27832.5234
+            Y: 37427.5234
+            Z: 711.358948
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 39.1591873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15488205820375183631
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -17115.207
+      Y: 34449.2656
+      Z: 784.98114
+    }
+    Rotation {
+      Yaw: -106.844734
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26556.9258
+            Y: 35365.1406
+            Z: 590.430237
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844742
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 5999417804691733363
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -16025.7285
+      Y: 34881.2109
+      Z: 872.171936
+    }
+    Rotation {
+      Yaw: 39.1592102
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25467.4473
+            Y: 35797.0859
+            Z: 677.621033
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 39.1591873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15502866136972618850
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -15974.3232
+      Y: 36421.3281
+      Z: 1372.60791
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25416.041
+            Y: 37337.2031
+            Z: 1178.05688
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.8837533
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 5901882129466915872
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -15973.1475
+      Y: 35886.7188
+      Z: 1351.35327
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25414.8652
+            Y: 36802.5938
+            Z: 1156.80225
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844727
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 1666320523989834146
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -16242.4883
+      Y: 36260.6172
+      Z: 1306.00171
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25684.207
+            Y: 37176.4922
+            Z: 1111.45068
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844727
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 7127557261429715507
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -15210.9248
+      Y: 36643.4
+      Z: 1372.60791
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24652.6426
+            Y: 37559.2734
+            Z: 1178.05688
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844727
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 6816656764567637110
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -16803.3047
+      Y: 36111.4297
+      Z: 1085.7583
+    }
+    Rotation {
+      Yaw: -40.5844955
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26245.0234
+            Y: 37027.3047
+            Z: 891.207397
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -40.5845032
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17969658309466479212
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -5403.47559
+      Y: 30531.1367
+      Z: 538.736511
+    }
+    Rotation {
+      Yaw: 39.1592102
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25115.0781
+            Y: 34870.7461
+            Z: 570.309692
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 28.4329491
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16659488592293303738
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -4395.85498
+      Y: 31790.7949
+      Z: 1200.72437
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.30870086
+      Y: 0.30870086
+      Z: 0.30870086
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23890.6172
+            Y: 35929.1523
+            Z: 1049.21277
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -4.8425293
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.30870086
+            Y: 0.30870086
+            Z: 0.30870086
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17551744908053817633
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -5891.7583
+      Y: 31536.6445
+      Z: 869.444458
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24195.666
+            Y: 36254.9375
+            Z: 960.57489
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -117.570755
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7715557578735916885
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -4173.10498
+      Y: 30615.6855
+      Z: 557.684204
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -23890.4707
+            Y: 34497.6797
+            Z: 607.863342
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.016159
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 9102662231819787609
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -2154.40869
+      Y: 31324.1777
+      Z: 869.509521
+    }
+    Rotation {
+      Yaw: 75.0144424
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21496.9492
+            Y: 34818.082
+            Z: 672.159363
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 64.2881927
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 7882267148125459371
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: 374.792053
+      Y: 31237.707
+      Z: 725.06
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19306.2676
+            Y: 34502.1367
+            Z: 632.756
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -4.8425293
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8202747070886505940
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: 187.013245
+      Y: 30787.9277
+      Z: 679.709412
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19574.4766
+            Y: 34095.1602
+            Z: 587.405396
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 177.016159
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 13357931602428335883
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -5129.53564
+      Y: 33198.8047
+      Z: 1483.4541
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22790.8691
+            Y: 35460.9805
+            Z: 859.914185
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844727
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 7843635147520859535
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -4040.05713
+      Y: 33630.7539
+      Z: 1029.88159
+    }
+    Rotation {
+      Yaw: 39.1592484
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21874.9258
+            Y: 35671.5508
+            Z: 793.358154
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 39.1592293
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13890023321132731011
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -3988.65283
+      Y: 35170.8711
+      Z: 1530.3175
+    }
+    Rotation {
+      Yaw: 5.88374138
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21823.5215
+            Y: 37433.0469
+            Z: 1507.66443
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.88374519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 16994577240358889311
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -2681.17627
+      Y: 35153.8242
+      Z: 1509.06287
+    }
+    Rotation {
+      Yaw: 5.88374138
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20516.0449
+            Y: 37416
+            Z: 1486.40979
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.88374519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6220845788143277424
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -3237.00439
+      Y: 34367.3086
+      Z: 1463.7113
+    }
+    Rotation {
+      Yaw: 5.88374138
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21071.873
+            Y: 36629.4844
+            Z: 1441.05823
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.88374519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 6674798338819317170
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -3987.47705
+      Y: 34636.2617
+      Z: 1509.06287
+    }
+    Rotation {
+      Yaw: -106.844696
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21822.3457
+            Y: 36898.4375
+            Z: 1486.40979
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844711
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15528237768356057836
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -4256.81689
+      Y: 35010.1602
+      Z: 1463.7113
+    }
+    Rotation {
+      Yaw: -106.844696
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22091.6855
+            Y: 37272.3359
+            Z: 1441.05823
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844711
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 15280963015708468586
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -3225.25439
+      Y: 35392.9414
+      Z: 1530.3175
+    }
+    Rotation {
+      Yaw: -106.844696
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21060.123
+            Y: 37655.1172
+            Z: 1507.66443
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844711
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2079779418040558866
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -4817.6333
+      Y: 34860.9727
+      Z: 1243.4679
+    }
+    Rotation {
+      Yaw: -40.5844955
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -22652.502
+            Y: 37123.1484
+            Z: 1220.81482
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -40.5845032
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17293367159619269677
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -1151.10449
+      Y: 35388.6367
+      Z: 1430.58508
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18985.9727
+            Y: 37650.8125
+            Z: 1407.93201
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2444640279586411294
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -2458.42676
+      Y: 34159.2695
+      Z: 1509.06384
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -20293.2949
+            Y: 36421.4453
+            Z: 1486.41077
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 10104692545185023181
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -1928.41504
+      Y: 34963.418
+      Z: 1463.71228
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19763.2832
+            Y: 37225.5938
+            Z: 1441.0592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 9076012312401245387
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -1906.8916
+      Y: 34190.0195
+      Z: 1529.0802
+    }
+    Rotation {
+      Yaw: 75.0144958
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19741.7598
+            Y: 36452.1953
+            Z: 1506.42712
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 75.0144653
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 3806275995754146242
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -1186.23242
+      Y: 35219.5469
+      Z: 1271.75378
+    }
+    Rotation {
+      Yaw: 21.5436249
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19021.1016
+            Y: 37481.7227
+            Z: 1249.10071
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.5436115
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1899976343436679428
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: 77.2763672
+      Y: 35556.0742
+      Z: 1250.49915
+    }
+    Rotation {
+      Yaw: 21.5436249
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17757.5918
+            Y: 37818.25
+            Z: 1227.84607
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.5436115
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 4347438230609566615
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -1040.79688
+      Y: 34705.1055
+      Z: 1250.49915
+    }
+    Rotation {
+      Yaw: -91.1838074
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18875.666
+            Y: 36967.2813
+            Z: 1227.84607
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -91.1838074
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16969644977628718390
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -511.135742
+      Y: 35639.4609
+      Z: 1271.75378
+    }
+    Rotation {
+      Yaw: -91.1838074
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18346.0039
+            Y: 37901.6367
+            Z: 1249.10071
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -91.1838074
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 6169831046732170752
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -5403.47559
+      Y: 30531.1367
+      Z: 538.736511
+    }
+    Rotation {
+      Yaw: 39.1592102
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15620.8926
+            Y: 33801.418
+            Z: 366.888916
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 39.1591873
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17646228908373256018
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -5892.93408
+      Y: 32071.2539
+      Z: 890.699097
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14321.9414
+            Y: 34754.1406
+            Z: 954.267151
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 36.4384689
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 12166518510231506216
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -4395.85498
+      Y: 31790.7949
+      Z: 1200.72437
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.30870086
+      Y: 0.30870086
+      Z: 0.30870086
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12824.8633
+            Y: 34473.6875
+            Z: 1250.22412
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.8837533
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.30870086
+            Y: 0.30870086
+            Z: 0.30870086
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16762656061880392814
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -5891.7583
+      Y: 31536.6445
+      Z: 869.444458
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14049.1553
+            Y: 34294.3633
+            Z: 933.012512
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -76.2898865
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 12212396019813145967
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -6161.09814
+      Y: 31910.543
+      Z: 824.092834
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14471.168
+            Y: 34479.4219
+            Z: 887.660889
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -76.2898865
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 399161295095746363
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -5129.53564
+      Y: 33198.8047
+      Z: 1483.4541
+    }
+    Rotation {
+      Yaw: -106.844719
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17115.207
+            Y: 34449.2656
+            Z: 784.98114
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844727
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17017145869484136686
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -4173.10498
+      Y: 30615.6855
+      Z: 557.684204
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12602.1133
+            Y: 33794.0742
+            Z: 587.506104
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 118203982629228380
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -2154.40869
+      Y: 31324.1777
+      Z: 869.509521
+    }
+    Rotation {
+      Yaw: 75.0144424
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15298.376
+            Y: 33500.3438
+            Z: 697.661621
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 75.0144196
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 17010117568983236150
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -4040.05713
+      Y: 33630.7539
+      Z: 1029.88159
+    }
+    Rotation {
+      Yaw: 39.1592484
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16025.7285
+            Y: 34881.2109
+            Z: 872.171936
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 39.1592293
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2463155835607171026
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -6337.24951
+      Y: 34444.1758
+      Z: 1204.67932
+    }
+    Rotation {
+      Yaw: -160.315033
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18322.9199
+            Y: 35694.6328
+            Z: 1032.83154
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -160.315033
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 9737608263548956537
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -6465.92529
+      Y: 34963.0664
+      Z: 1183.42468
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18451.5957
+            Y: 36213.5234
+            Z: 1011.5769
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 86.9564133
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 18041375885557613988
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -6115.17041
+      Y: 34664.2227
+      Z: 1138.07312
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18100.8379
+            Y: 35914.6797
+            Z: 966.225464
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 86.9564133
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 987694839488487140
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -7025.62354
+      Y: 34046.4023
+      Z: 1204.67932
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -19011.291
+            Y: 35296.8594
+            Z: 803.802368
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 86.9564133
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2684091298306115381
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -5606.12354
+      Y: 34942.8867
+      Z: 917.829468
+    }
+    Rotation {
+      Yaw: 153.217133
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17591.7949
+            Y: 36193.3438
+            Z: 745.981628
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 153.217133
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 1215703419640510750
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -3988.65283
+      Y: 35170.8711
+      Z: 1530.3175
+    }
+    Rotation {
+      Yaw: 5.88374138
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15974.3232
+            Y: 36421.3281
+            Z: 1372.60791
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.88374519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 2798940319563935052
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -2681.17627
+      Y: 35153.8242
+      Z: 1509.06287
+    }
+    Rotation {
+      Yaw: 5.88374138
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14666.8467
+            Y: 36404.2813
+            Z: 1337.21509
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.88374519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 4806213171534583045
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -3237.00439
+      Y: 34367.3086
+      Z: 1463.7113
+    }
+    Rotation {
+      Yaw: 5.88374138
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15222.6748
+            Y: 35617.7656
+            Z: 1306.00171
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.88374519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 7338305323617491344
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -3987.47705
+      Y: 34636.2617
+      Z: 1509.06287
+    }
+    Rotation {
+      Yaw: -106.844696
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15973.1475
+            Y: 35886.7188
+            Z: 1351.35327
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844711
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 15432871020655705684
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -4256.81689
+      Y: 35010.1602
+      Z: 1463.7113
+    }
+    Rotation {
+      Yaw: -106.844696
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16242.4883
+            Y: 36260.6172
+            Z: 1306.00171
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844711
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 2181738742151977667
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -3225.25439
+      Y: 35392.9414
+      Z: 1530.3175
+    }
+    Rotation {
+      Yaw: -106.844696
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15210.9248
+            Y: 36643.4
+            Z: 1372.60791
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -106.844711
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 9684184472502484589
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -4817.6333
+      Y: 34860.9727
+      Z: 1243.4679
+    }
+    Rotation {
+      Yaw: -40.5844955
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16803.3047
+            Y: 36111.4297
+            Z: 1085.7583
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -40.5845032
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 9982767869112925698
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -1151.10449
+      Y: 35388.6367
+      Z: 1430.58508
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13136.7754
+            Y: 36639.0938
+            Z: 1443.87854
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 10955514228134026950
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -2458.42676
+      Y: 34159.2695
+      Z: 1509.06384
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14444.0977
+            Y: 35409.7266
+            Z: 1337.21606
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 16249029112640086322
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -1928.41504
+      Y: 34963.418
+      Z: 1463.71228
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13914.0859
+            Y: 36213.875
+            Z: 1477.00574
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 16782361066861095937
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -1906.8916
+      Y: 34190.0195
+      Z: 1529.0802
+    }
+    Rotation {
+      Yaw: 75.0144958
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13892.5625
+            Y: 35440.4766
+            Z: 1542.37366
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 75.0144653
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 16741312285866902368
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: 374.792053
+      Y: 31237.707
+      Z: 725.06
+    }
+    Rotation {
+      Yaw: 5.88374901
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11610.8789
+            Y: 32792.6211
+            Z: 614.061646
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 5.8837533
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 10440773642836025431
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: 187.013245
+      Y: 30787.9277
+      Z: 679.709412
+    }
+    Rotation {
+      Yaw: -172.257599
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10660.4063
+            Y: 32038.4023
+            Z: 481.225037
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -172.257599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 12479752382320663943
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: 1804.65918
+      Y: 34516.8906
+      Z: 1271.75281
+    }
+    Rotation {
+      Yaw: -160.315033
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9431.74219
+            Y: 35767.3516
+            Z: 1017.74158
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -160.315033
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 9513213121251933490
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: 530.871094
+      Y: 34221.5273
+      Z: 1250.49817
+    }
+    Rotation {
+      Yaw: -160.315033
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11166.1924
+            Y: 35471.9844
+            Z: 662.888794
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -160.315033
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 2502270819938900371
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: 883.019531
+      Y: 35117.9453
+      Z: 1205.14661
+    }
+    Rotation {
+      Yaw: -160.315033
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11935.6543
+            Y: 36368.4063
+            Z: 1026.54199
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -160.315033
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 11705497671289570631
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: 1675.9834
+      Y: 35035.7773
+      Z: 1250.49817
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9735.21777
+            Y: 37501.0859
+            Z: 700.240356
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 86.9564133
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 13795120730280399396
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: 1116.28516
+      Y: 34119.1172
+      Z: 1271.75281
+    }
+    Rotation {
+      Yaw: 86.9564133
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10869.3857
+            Y: 35025.7734
+            Z: 322.729
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 86.9564133
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 15536706970109554908
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -1186.23242
+      Y: 35219.5469
+      Z: 1271.75378
+    }
+    Rotation {
+      Yaw: 21.5436249
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13171.9033
+            Y: 36470.0078
+            Z: 1285.04724
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.5436115
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
+  Id: 17495501244799451443
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: 77.2763672
+      Y: 35556.0742
+      Z: 1250.49915
+    }
+    Rotation {
+      Yaw: 21.5436249
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11908.3945
+            Y: 36806.5313
+            Z: 1078.65137
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.5436115
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 8567746140328983718
+  Name: "TW3_Tree2_Cosmetic"
+  Transform {
+    Location {
+      X: -245.589844
+      Y: 34648.7148
+      Z: 1205.14758
+    }
+    Rotation {
+      Yaw: 21.5436249
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17079731665707052752
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12231.2607
+            Y: 35899.1719
+            Z: 1354.76611
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.5436115
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614197404908129263
+    }
+  }
+}
+Objects {
+  Id: 1780936531285439800
+  Name: "TW3_Tree3_Cosmetic"
+  Transform {
+    Location {
+      X: -1040.79688
+      Y: 34705.1055
+      Z: 1250.49915
+    }
+    Rotation {
+      Yaw: -91.1838074
+    }
+    Scale {
+      X: 0.542005956
+      Y: 0.542005956
+      Z: 0.542005956
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9995830374434275925
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13026.4678
+            Y: 35955.5625
+            Z: 1263.7926
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -91.1838074
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.542005956
+            Y: 0.542005956
+            Z: 0.542005956
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2004089001711231680
+    }
+  }
+}
+Objects {
+  Id: 6279007446987263045
+  Name: "TW3_Tree_Cosmetic"
+  Transform {
+    Location {
+      X: -511.135742
+      Y: 35639.4609
+      Z: 1271.75378
+    }
+    Rotation {
+      Yaw: -91.1838074
+    }
+    Scale {
+      X: 0.683667839
+      Y: 0.683667839
+      Z: 0.683667839
+    }
+  }
+  ParentId: 9839414730760950784
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2604994596096896542
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Cosmetic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12496.8066
+            Y: 36889.9219
+            Z: 1285.04724
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -91.1838074
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.683667839
+            Y: 0.683667839
+            Z: 0.683667839
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 192993385032307310
+    }
+  }
+}
+Objects {
   Id: 14935368160041561082
   Name: "TW3_Tree_Cosmetic"
   Transform {
@@ -8835,64 +26867,6 @@ Objects {
             Pitch: -0.793884277
             Yaw: 136.972641
             Roll: -9.99563599
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.683667839
-            Y: 0.683667839
-            Z: 0.683667839
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 192993385032307310
-    }
-  }
-}
-Objects {
-  Id: 15006284486592844378
-  Name: "TW3_Tree_Cosmetic"
-  Transform {
-    Location {
-      X: -21512.7031
-      Y: -11068.3613
-      Z: 1203.79272
-    }
-    Rotation {
-      Yaw: -29.7826252
-    }
-    Scale {
-      X: 0.683667839
-      Y: 0.683667839
-      Z: 0.683667839
-    }
-  }
-  ParentId: 9839414730760950784
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2604994596096896542
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Cosmetic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -20361.1133
-            Y: 1062.96667
-            Z: 376.004944
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.793884277
-            Yaw: 136.972656
-            Roll: -9.99560547
           }
         }
         Overrides {
