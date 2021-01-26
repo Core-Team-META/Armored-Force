@@ -15,7 +15,7 @@ Assets {
       Overrides {
         Name: "cmp:Material1_Sides"
         AssetReference {
-          Id: 9202661178378044854
+          Id: 663082363223318009
         }
       }
       Overrides {
@@ -69,6 +69,12 @@ Assets {
           Id: 6465301958348527044
         }
       }
+      Overrides {
+        Name: "cmp:Material2_Sides"
+        AssetReference {
+          Id: 9202661178378044854
+        }
+      }
     }
     Assets {
       Id: 1104511411894916854
@@ -89,12 +95,12 @@ Assets {
       }
     }
     Assets {
-      Id: 9202661178378044854
-      Name: "Cliff 03"
+      Id: 663082363223318009
+      Name: "Stucco Tintable"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "cliff_003"
+        AssetId: "mi_stucco_tint_001_uv"
       }
     }
     Assets {
@@ -131,6 +137,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_brick_sandstone_wall_face_001"
+      }
+    }
+    Assets {
+      Id: 9202661178378044854
+      Name: "Cliff 03"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "cliff_003"
       }
     }
   }
