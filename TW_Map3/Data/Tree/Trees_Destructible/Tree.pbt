@@ -1,6 +1,118 @@
 Name: "Trees_Destructible"
 RootId: 9644438302980116240
 Objects {
+  Id: 3654150832112475038
+  Name: "TW3_Tree2_Destructible"
+  Transform {
+    Location {
+      X: 13718.4873
+      Y: -25025.2715
+      Z: 3.79351807
+    }
+    Rotation {
+      Yaw: 71.8440323
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7691061584645470247
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26482.8965
+            Y: 9105.71582
+            Z: 261.47052
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -177.645798
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2230310488114005167
+    }
+  }
+}
+Objects {
+  Id: 12141003528577990535
+  Name: "TW3_Tree_Destructible"
+  Transform {
+    Location {
+      X: 13582.3281
+      Y: -25354.4668
+      Z: 28.3782959
+    }
+    Rotation {
+      Yaw: -78.9722595
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12561400358109127262
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -26126.8633
+            Y: 9093.52832
+            Z: 271.077
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 31.537775
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14490812313093711740
+    }
+  }
+}
+Objects {
   Id: 10344411046330999333
   Name: "TW3_Tree_Destructible"
   Transform {
