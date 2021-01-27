@@ -1,130 +1,9 @@
 Name: "Antti (Keppu)"
 RootId: 7310433976514289622
 Objects {
-  Id: 10243872679491965303
-  Name: "Grass Tall"
+  Id: 10497288132511319859
+  Name: "Drivable French AMX50"
   Transform {
-    Location {
-      X: -9704.94238
-      Y: -10973.5449
-      Z: 363.821228
-    }
-    Rotation {
-      Yaw: 76.3173447
-    }
-    Scale {
-      X: 2.53774548
-      Y: 2.53774548
-      Z: 2.53774548
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Grass:id"
-      AssetReference {
-        Id: 4693709835421441385
-      }
-    }
-    Overrides {
-      Name: "ma:Nature_Grass:color"
-      Color {
-        R: 0.33100003
-        G: 0.257266104
-        B: 0.233355016
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12151645230321117423
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 5261658946421298583
-  Name: "Grass Tall"
-  Transform {
-    Location {
-      X: -10219.1982
-      Y: -11173.6455
-      Z: 502.930847
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.00579357
-      Y: 2.00579357
-      Z: 2.00579357
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Grass:id"
-      AssetReference {
-        Id: 4693709835421441385
-      }
-    }
-    Overrides {
-      Name: "ma:Nature_Grass:color"
-      Color {
-        R: 0.33100003
-        G: 0.157037929
-        B: 0.100623995
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12151645230321117423
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 14057557456320347689
-  Name: "Ice"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -132,15 +11,75 @@ Objects {
     }
   }
   ParentId: 7310433976514289622
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5647169848695272940
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Drivable French AMX50"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 35254.4727
+            Y: -28034.3867
+            Z: 451.281433
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13301292553974685859
+    }
   }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+}
+Objects {
+  Id: 7640226300313465829
+  Name: "TW3_GrassTall"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Ice"
+  ParentId: 7310433976514289622
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13369416937407838892
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_GrassTall"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10531.8438
+            Y: -11173.6455
+            Z: 519.625671
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15552962776759324288
+    }
   }
 }
 Objects {
@@ -227,55 +166,6 @@ Objects {
           Name: "Position"
           Vector {
             Z: -779.969482
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1017367019735459438
-    }
-  }
-}
-Objects {
-  Id: 11289413430179769410
-  Name: "TANK_German_E50"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7310433976514289622
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3538122277889912986
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_German_E50"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 452.746826
-            Y: -16981.5293
-            Z: 452.051453
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 166.761078
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -434,57 +324,8 @@ Objects {
   }
 }
 Objects {
-  Id: 18163365537949626811
-  Name: "TW3_Water"
-  Transform {
-    Location {
-      X: -12275
-      Y: 2264.95898
-      Z: -615
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1766.3999
-      Y: 1671.4
-      Z: 5.6
-    }
-  }
-  ParentId: 7310433976514289622
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168970011809872138
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16374150260036817633
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 5837658692554861011
-  Name: "Spawnpoints"
+  Id: 8500039128324169559
+  Name: "Ice_BGLake"
   Transform {
     Location {
     }
@@ -505,7 +346,33 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Spawnpoints"
+    FilePartitionName: "Ice_BGLake"
+  }
+}
+Objects {
+  Id: 14057557456320347689
+  Name: "Ice_MiddleLake"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ice_MiddleLake"
   }
 }
 Objects {
@@ -638,5 +505,78 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "EdgeIndicators"
+  }
+}
+Objects {
+  Id: 18163365537949626811
+  Name: "TW3_Water"
+  Transform {
+    Location {
+      Z: -615
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2000
+      Y: 2000
+      Z: 5.6
+    }
+  }
+  ParentId: 7310433976514289622
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168970011809872138
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16374150260036817633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5837658692554861011
+  Name: "Spawnpoints"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7310433976514289622
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Spawnpoints"
   }
 }

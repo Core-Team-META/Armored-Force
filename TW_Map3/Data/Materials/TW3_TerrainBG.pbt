@@ -22,8 +22,8 @@ Assets {
         Name: "cmpc:Material1"
         Color {
           R: 1
-          G: 1
-          B: 1
+          G: 0.96475
+          B: 0.858999968
           A: 1
         }
       }
@@ -73,6 +73,15 @@ Assets {
         Name: "cmp:Material2_Sides"
         AssetReference {
           Id: 9202661178378044854
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material1_Sides"
+        Color {
+          R: 1
+          G: 0.96475
+          B: 0.858999968
+          A: 1
         }
       }
     }
