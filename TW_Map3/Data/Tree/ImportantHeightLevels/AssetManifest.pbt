@@ -17,11 +17,11 @@ Assets {
   }
 }
 Assets {
-  Id: 14955837698988191675
-  Name: "Office Carpet Basic 01"
+  Id: 11098565986665295518
+  Name: "Ice Ground Transparent"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_urb_office_carpet_004_uv_ref"
+    AssetId: "fxmi_ice_transparent_ground"
   }
 }

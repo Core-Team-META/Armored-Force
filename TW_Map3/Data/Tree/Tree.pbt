@@ -18,8 +18,8 @@ Objects {
   ChildIds: 15182677334456928949
   ChildIds: 12209608198557882361
   ChildIds: 3867707569791740175
-  ChildIds: 15788869062684048797
   ChildIds: 7310433976514289622
+  ChildIds: 15788869062684048797
   ChildIds: 2959002750480800334
   UnregisteredParameters {
   }
@@ -56,32 +56,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Marcela"
-  }
-}
-Objects {
-  Id: 7310433976514289622
-  Name: "Antti (Keppu)"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Antti (Keppu)"
   }
 }
 Objects {
@@ -493,6 +467,32 @@ Objects {
   }
 }
 Objects {
+  Id: 7310433976514289622
+  Name: "Antti (Keppu)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Antti (Keppu)"
+  }
+}
+Objects {
   Id: 3867707569791740175
   Name: "TW2_Minimap"
   Transform {
@@ -572,6 +572,7 @@ Objects {
         Max: 90
       }
       Scaling {
+        Scaling: LockXY
         ScaleX {
           Min: 1
           Max: 1
@@ -581,8 +582,8 @@ Objects {
           Max: 1
         }
         ScaleZ {
-          Min: 1
-          Max: 1
+          Min: 0.9
+          Max: 1.2
         }
       }
       RandomYaw: true
@@ -609,8 +610,8 @@ Objects {
       Asset {
         Id: 7490518804697783111
       }
-      DistanceBetweenInstances: 1000
-      SpawnDistance: 21600
+      DistanceBetweenInstances: 1500
+      SpawnDistance: 24000
       CullDistance {
         Min: 10000
         Max: 20000
@@ -630,7 +631,7 @@ Objects {
           Max: 1
         }
         ScaleZ {
-          Min: 1
+          Min: 1.5
           Max: 2
         }
       }
@@ -687,7 +688,8 @@ Objects {
   Name: "Terrain_BG"
   Transform {
     Location {
-      Y: -7500
+      Y: -7571.99219
+      Z: -31.971283
     }
     Rotation {
       Yaw: 90

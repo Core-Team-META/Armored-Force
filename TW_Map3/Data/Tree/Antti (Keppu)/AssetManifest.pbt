@@ -16,12 +16,3 @@ Assets {
     AssetId: "bp_mil_decal_tracks_001_ref"
   }
 }
-Assets {
-  Id: 12151645230321117423
-  Name: "Grass Tall"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_grass_generic_001"
-  }
-}
