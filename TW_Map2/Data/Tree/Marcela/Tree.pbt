@@ -157,13 +157,13 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate19"
       AssetReference {
-        Id: 10640151410764708422
+        Id: 4745702148933932626
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate20"
       AssetReference {
-        Id: 7384292537040996429
+        Id: 9797173364024959814
       }
     }
     Overrides {
@@ -175,13 +175,13 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate22"
       AssetReference {
-        Id: 3429021562017972626
+        Id: 14879455446253789831
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate23"
       AssetReference {
-        Id: 5377253182344378487
+        Id: 1560737052874717053
       }
     }
     Overrides {
@@ -193,7 +193,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate25"
       AssetReference {
-        Id: 14708080725622686308
+        Id: 146797220103281776
       }
     }
     Overrides {
