@@ -1,6 +1,1856 @@
 Name: "Ice_BGLake"
 RootId: 8500039128324169559
 Objects {
+  Id: 17195988606592839195
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 30367.8516
+      Y: -35376.4492
+      Z: -51.8358765
+    }
+    Rotation {
+      Yaw: -66.5053711
+    }
+    Scale {
+      X: 6.35666656
+      Y: 7.54213047
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8524317863984996973
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 30255.6309
+      Y: -35934.125
+      Z: -51.8363647
+    }
+    Rotation {
+      Yaw: -66.5053711
+    }
+    Scale {
+      X: 6.35666418
+      Y: 6.35666418
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9966961051697319343
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13028341014030742745
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 29933.0078
+      Y: -35987.1094
+      Z: -51.8362427
+    }
+    Rotation {
+      Yaw: -39.6305237
+    }
+    Scale {
+      X: 6.35666418
+      Y: 6.35666418
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9367864800408047400
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 29727.7285
+      Y: -36269.2656
+      Z: -51.8363647
+    }
+    Rotation {
+      Yaw: 171.401489
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14926676746349749504
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 40632.1563
+      Y: -37820.5117
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: -166.20871
+    }
+    Scale {
+      X: 6.35666656
+      Y: 7.54213047
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17192057315527326905
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 40237.6094
+      Y: -37216.3398
+      Z: -51.8357544
+    }
+    Rotation {
+      Yaw: 133.074554
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15890533776259393780
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 40338.5977
+      Y: -37269.0586
+      Z: -51.8369751
+    }
+    Rotation {
+      Yaw: 33.6911392
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5757510063982485940
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 39459.3633
+      Y: -36453.4453
+      Z: -51.8364868
+    }
+    Rotation {
+      Yaw: -147.455444
+    }
+    Scale {
+      X: 6.35666418
+      Y: 6.35666418
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9966961051697319343
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 12088874926699755064
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 39995.9102
+      Y: -36801.5
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: -147.455444
+    }
+    Scale {
+      X: 6.35666656
+      Y: 7.54213047
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2445633285708941967
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 40032.0156
+      Y: -37024.1484
+      Z: -51.8363647
+    }
+    Rotation {
+      Yaw: 117.355652
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10304105272895812900
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 38173.1055
+      Y: -35981.5
+      Z: -51.8355103
+    }
+    Rotation {
+      Yaw: 160.076614
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9136584783836701162
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 38286.9844
+      Y: -35982.6289
+      Z: -51.836731
+    }
+    Rotation {
+      Yaw: 60.6936531
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5659742062722757793
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 39411.2891
+      Y: -36176.1914
+      Z: -51.8364868
+    }
+    Rotation {
+      Yaw: -111.681702
+    }
+    Scale {
+      X: 6.35667229
+      Y: 10.927146
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5309864512509869925
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 38705.7539
+      Y: -36260.5508
+      Z: -51.8366089
+    }
+    Rotation {
+      Yaw: 99.3532791
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14947187285352472118
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 37902.6445
+      Y: -35903.6172
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: 144.358627
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2207551941487834775
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 37769.4102
+      Y: -35721.5977
+      Z: -51.8358765
+    }
+    Rotation {
+      Yaw: -120.452972
+    }
+    Scale {
+      X: 6.35666656
+      Y: 7.54213047
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8917161211374218700
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 37061.3203
+      Y: -35582.7
+      Z: -51.8355103
+    }
+    Rotation {
+      Yaw: 178.830505
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 18100677478924082194
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 37169.5352
+      Y: -35547.1328
+      Z: -51.836731
+    }
+    Rotation {
+      Yaw: 79.4471436
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16725006826196925828
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 35240.6602
+      Y: -35724.9805
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: 136.208359
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14155176177059009956
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 35677.625
+      Y: -35465.2891
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: -74.8240356
+    }
+    Scale {
+      X: 6.35666418
+      Y: 6.35666418
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15845584614556055167
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 35971.8086
+      Y: -35607.9219
+      Z: -51.8362427
+    }
+    Rotation {
+      Yaw: -101.699707
+    }
+    Scale {
+      X: 6.35666418
+      Y: 6.35666418
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9966961051697319343
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15469348552423147899
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 36595.5
+      Y: -35466.4
+      Z: -51.8358765
+    }
+    Rotation {
+      Yaw: -101.699707
+    }
+    Scale {
+      X: 6.35666656
+      Y: 7.54213047
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15878298475579375414
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 36780.1914
+      Y: -35595.8945
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: 163.111526
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 860819238550228683
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 34858.9492
+      Y: -35391.3125
+      Z: -51.8366089
+    }
+    Rotation {
+      Yaw: 140.900223
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6625918614107486335
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 34685.7539
+      Y: -35609.7734
+      Z: -51.8363647
+    }
+    Rotation {
+      Yaw: -165.321564
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 299620860300913120
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 34433.2266
+      Y: -35143.7266
+      Z: -51.8364868
+    }
+    Rotation {
+      Yaw: -80.9025269
+    }
+    Scale {
+      X: 6.35667229
+      Y: 10.927146
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2942839480856181562
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 32322.2207
+      Y: -35287.3945
+      Z: -51.8355103
+    }
+    Rotation {
+      Yaw: 173.045593
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1939202162264279784
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 34314.0859
+      Y: -35648.4023
+      Z: -51.8366089
+    }
+    Rotation {
+      Yaw: 123.090286
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2765442442767587870
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 33723.3164
+      Y: -35441.5039
+      Z: -51.8363647
+    }
+    Rotation {
+      Yaw: 176.866257
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11620799136209782222
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 32433.4473
+      Y: -35262.9375
+      Z: -51.836731
+    }
+    Rotation {
+      Yaw: 73.6624374
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9823523725241911947
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 33572.5156
+      Y: -35199.2461
+      Z: -51.8364868
+    }
+    Rotation {
+      Yaw: -98.7127686
+    }
+    Scale {
+      X: 6.35667229
+      Y: 10.927146
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17812766422104825581
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 32903.9102
+      Y: -35439.7813
+      Z: -51.8366089
+    }
+    Rotation {
+      Yaw: 112.32206
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13339856001589660417
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 30496.4688
+      Y: -35245.457
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: 130.422821
+    }
+    Scale {
+      X: 4.74522352
+      Y: 4.74522352
+      Z: 0.227825701
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11079373675958941796
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 30957.4023
+      Y: -35031.1055
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: -80.6098633
+    }
+    Scale {
+      X: 6.35666418
+      Y: 6.35666418
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2899777541479361534
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 31235.7188
+      Y: -35202.668
+      Z: -51.8362427
+    }
+    Rotation {
+      Yaw: -107.484329
+    }
+    Scale {
+      X: 6.35666418
+      Y: 6.35666418
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9966961051697319343
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14132319797171586471
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 31870.4941
+      Y: -35124.7188
+      Z: -51.8358765
+    }
+    Rotation {
+      Yaw: -107.484329
+    }
+    Scale {
+      X: 6.35666656
+      Y: 7.54213047
+      Z: 0.305193454
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3016895017576645251
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2750444095731199030
+  Name: "Ice"
+  Transform {
+    Location {
+      X: 32041.1797
+      Y: -35272.2
+      Z: -51.8361206
+    }
+    Rotation {
+      Yaw: 157.327423
+    }
+    Scale {
+      X: 6.8577137
+      Y: 6.8577137
+      Z: 0.32924971
+    }
+  }
+  ParentId: 8500039128324169559
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18328571160423102069
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14945798289853192352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 13757614031007508276
   Name: "Ice"
   Transform {
