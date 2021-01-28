@@ -17,6 +17,24 @@ Assets {
   }
 }
 Assets {
+  Id: 13397073196740613430
+  Name: "Motion Blur Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_advanced_motion_blur"
+  }
+}
+Assets {
+  Id: 12542426657781386609
+  Name: "Depth of Field Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_DOF"
+  }
+}
+Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6

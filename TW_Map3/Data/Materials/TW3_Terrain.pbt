@@ -83,6 +83,35 @@ Assets {
           A: 1
         }
       }
+      Overrides {
+        Name: "cmp:Material3"
+        AssetReference {
+          Id: 663082363223318009
+        }
+      }
+      Overrides {
+        Name: "cmp:Material3_Sides"
+        AssetReference {
+          Id: 663082363223318009
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material3"
+        Color {
+          R: 1
+          G: 0.96475
+          B: 0.858999968
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "material3_scale"
+        Float: 5
+      }
+      Overrides {
+        Name: "material3side_scale"
+        Float: 5
+      }
     }
     Assets {
       Id: 1104511411894916854
@@ -136,6 +165,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "cliff_003"
+      }
+    }
+    Assets {
+      Id: 663082363223318009
+      Name: "Stucco Tintable"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stucco_tint_001_uv"
+      }
+    }
+    Assets {
+      Id: 663082363223318009
+      Name: "Stucco Tintable"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stucco_tint_001_uv"
       }
     }
   }

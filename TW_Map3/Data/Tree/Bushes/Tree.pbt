@@ -175,8 +175,6 @@ Objects {
   ChildIds: 11383030706838026980
   ChildIds: 14831719549933948017
   ChildIds: 11381784601893970708
-  ChildIds: 15114527832984381328
-  ChildIds: 10767071225914302633
   ChildIds: 1994432349011729021
   ChildIds: 10793393979976224695
   ChildIds: 9267124749196039476
@@ -185,7 +183,6 @@ Objects {
   ChildIds: 12552833790714690663
   ChildIds: 14775949293127822085
   ChildIds: 6207009594220755480
-  ChildIds: 17056785090067494154
   ChildIds: 5512447190637859780
   ChildIds: 12200892192644482618
   ChildIds: 17376278756009300895
@@ -1142,15 +1139,15 @@ Objects {
           Name: "Position"
           Vector {
             X: 30152.4102
-            Y: 20466.084
-            Z: 566.824829
+            Y: 20302.2715
+            Z: 351.857239
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: 1.82746482
-            Yaw: -108.500969
+            Yaw: -108.500977
             Roll: 6.2131381
           }
         }
@@ -5560,16 +5557,16 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -27455.291
-            Y: 50.7351074
-            Z: 733.264038
+            X: -27219.9023
+            Y: -24.8122559
+            Z: 733.26355
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: 1.82746482
-            Yaw: -44.6902924
+            Yaw: -44.6903076
             Roll: 6.21701431
           }
         }
@@ -18982,66 +18979,6 @@ Objects {
   }
 }
 Objects {
-  Id: 17056785090067494154
-  Name: "TW3_Bush"
-  Transform {
-    Location {
-      X: -10505.9219
-      Y: -11425.6484
-      Z: 582.149
-    }
-    Rotation {
-      Pitch: -0.00958275516
-      Yaw: -43.0054703
-      Roll: 6.47563362
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13536002222411795148
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11715930913135351860
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Bush"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -28136.5117
-            Y: -689.599365
-            Z: 778.496338
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.00958275516
-            Yaw: 124.071182
-            Roll: 6.476017
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9235099455598857286
-    }
-  }
-}
-Objects {
   Id: 6207009594220755480
   Name: "TW3_Bush"
   Transform {
@@ -19517,139 +19454,6 @@ Objects {
             X: 1
             Y: 1
             Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9235099455598857286
-    }
-  }
-}
-Objects {
-  Id: 10767071225914302633
-  Name: "TW3_Bush"
-  Transform {
-    Location {
-      X: -11522.3701
-      Y: -13602.0586
-      Z: 694.655518
-    }
-    Rotation {
-      Pitch: 1.82746482
-      Yaw: 10.2063236
-      Roll: 6.21375895
-    }
-    Scale {
-      X: 0.993051
-      Y: 0.993051
-      Z: 0.993051
-    }
-  }
-  ParentId: 13536002222411795148
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11715930913135351860
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Bush"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -27795.084
-            Y: -47.2370605
-            Z: 687.761963
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 1.82746482
-            Yaw: -159.935898
-            Roll: 6.21390629
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.993051
-            Y: 0.993051
-            Z: 0.993051
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9235099455598857286
-    }
-  }
-}
-Objects {
-  Id: 15114527832984381328
-  Name: "TW3_Bush"
-  Transform {
-    Location {
-      X: -11757.1494
-      Y: -13317.8057
-      Z: 694.655518
-    }
-    Rotation {
-      Pitch: 1.82746482
-      Yaw: -151.933762
-      Roll: 6.21365786
-    }
-    Scale {
-      X: 1.24271595
-      Y: 1.24271595
-      Z: 1.24271595
-    }
-  }
-  ParentId: 13536002222411795148
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11715930913135351860
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Bush"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -28244.6465
-            Y: -287.099854
-            Z: 693.269043
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 1.82746482
-            Yaw: 37.9239922
-            Roll: 6.21380234
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.24271595
-            Y: 1.24271595
-            Z: 1.24271595
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15191450751620668963
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 15.4885349
-            Y: -104.318443
-            Z: -10.6423502
           }
         }
       }
