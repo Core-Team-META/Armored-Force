@@ -1,16 +1,258 @@
 Name: "Ice_MiddleLake"
 RootId: 14057557456320347689
 Objects {
+  Id: 10362187502428539853
+  Name: "MergedModel"
+  Transform {
+    Location {
+      X: 566.095886
+      Y: 2248.45532
+      Z: -51.8353882
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14057557456320347689
+  ChildIds: 16406835575770193354
+  ChildIds: 2680442615641621082
+  ChildIds: 5718521912359281407
+  ChildIds: 2918310046986872055
+  ChildIds: 1865070994730028988
+  ChildIds: 5824581908580217489
+  ChildIds: 8805216789667816212
+  ChildIds: 1289741200104589453
+  ChildIds: 4096171634303802950
+  ChildIds: 12336791896649703347
+  ChildIds: 8894412583355785352
+  ChildIds: 9875152610352091070
+  ChildIds: 2955958876016099237
+  ChildIds: 10567152621070894245
+  ChildIds: 17680183147368348471
+  ChildIds: 3010301139366372632
+  ChildIds: 7104874417573073646
+  ChildIds: 11453690141619321314
+  ChildIds: 8651291983343525558
+  ChildIds: 11288992377285558144
+  ChildIds: 4189080002288351467
+  ChildIds: 17968686058916136035
+  ChildIds: 1374078162620362350
+  ChildIds: 3565682641620931564
+  ChildIds: 10348211770126950595
+  ChildIds: 3429993148563976082
+  ChildIds: 14898387829905620576
+  ChildIds: 7979773365009154615
+  ChildIds: 16937786229260535225
+  ChildIds: 7083199808721989292
+  ChildIds: 7141450019744084740
+  ChildIds: 11164448094105213585
+  ChildIds: 11394506061778127053
+  ChildIds: 16250939325097189593
+  ChildIds: 2603846803404566653
+  ChildIds: 14663158115342552349
+  ChildIds: 17296222732878038921
+  ChildIds: 340910164559135809
+  ChildIds: 4865905475132343372
+  ChildIds: 9606745190754811513
+  ChildIds: 1605384293703194617
+  ChildIds: 3807038064487742478
+  ChildIds: 10837551684716392786
+  ChildIds: 11812618440713758832
+  ChildIds: 17779169663230039677
+  ChildIds: 16676116304812365441
+  ChildIds: 14182718355673168899
+  ChildIds: 2590005160358241379
+  ChildIds: 7292658064858939140
+  ChildIds: 16196855619972814643
+  ChildIds: 17064015966287255512
+  ChildIds: 7674287973171829012
+  ChildIds: 2564457783615284017
+  ChildIds: 8635554728455328400
+  ChildIds: 18096585250641183249
+  ChildIds: 17944176120501434864
+  ChildIds: 17803635867506572567
+  ChildIds: 12757392676289249458
+  ChildIds: 612914180430468208
+  ChildIds: 8880605951682814403
+  ChildIds: 9783398124394291916
+  ChildIds: 1137900656690302906
+  ChildIds: 2764184214740380089
+  ChildIds: 10538006134594618246
+  ChildIds: 5596223016647738592
+  ChildIds: 263538538737600980
+  ChildIds: 12443006620702982328
+  ChildIds: 9600232101767290721
+  ChildIds: 15428614652502905913
+  ChildIds: 9263307357761329971
+  ChildIds: 12910949554602145311
+  ChildIds: 10079401165218758008
+  ChildIds: 17670297128785289606
+  ChildIds: 13814209316784828104
+  ChildIds: 8834590044440950719
+  ChildIds: 12637205768907626544
+  ChildIds: 149015280012464201
+  ChildIds: 12607979857270771455
+  ChildIds: 8623331027491222591
+  ChildIds: 10075699574399526783
+  ChildIds: 12091705219060098333
+  ChildIds: 11601370235498719352
+  ChildIds: 2051505404327021991
+  ChildIds: 7974081835206925199
+  ChildIds: 9439932695196960374
+  ChildIds: 2387357989859225162
+  ChildIds: 10303826073143483565
+  ChildIds: 18187190293670430260
+  ChildIds: 16906871137254559796
+  ChildIds: 14177052835087363704
+  ChildIds: 17499028523651810397
+  ChildIds: 9012585421868155040
+  ChildIds: 17156185708152182698
+  ChildIds: 7470932826842378188
+  ChildIds: 3765642677560274162
+  ChildIds: 5114819425627821550
+  ChildIds: 5158194020745779404
+  ChildIds: 16602807355863707065
+  ChildIds: 3486904684888443
+  ChildIds: 761946707250036077
+  ChildIds: 11919031989058622418
+  ChildIds: 4213531943230017901
+  ChildIds: 18249053939677356943
+  ChildIds: 15386401805428600603
+  ChildIds: 5101181917414478594
+  ChildIds: 10444914332487271284
+  ChildIds: 11869735145121728110
+  ChildIds: 16673305572873691239
+  ChildIds: 186002555092030928
+  ChildIds: 11081427599975040256
+  ChildIds: 231841798443628983
+  ChildIds: 13859902824874506556
+  ChildIds: 10641320282115857728
+  ChildIds: 13929687067508591733
+  ChildIds: 6707986355211455822
+  ChildIds: 3131400993177418009
+  ChildIds: 11266484247440952161
+  ChildIds: 6361180076627440971
+  ChildIds: 2129040326134000163
+  ChildIds: 7248277778575323228
+  ChildIds: 9027489943746022838
+  ChildIds: 5702217425761892564
+  ChildIds: 6282197627765552329
+  ChildIds: 10631529547376017943
+  ChildIds: 8192284801167100223
+  ChildIds: 10574835023414063770
+  ChildIds: 3727658677912234998
+  ChildIds: 11398319938547247221
+  ChildIds: 17147480802301376990
+  ChildIds: 8153511498210757826
+  ChildIds: 15154136477542831360
+  ChildIds: 16123068735830554333
+  ChildIds: 11676343296168265821
+  ChildIds: 7052823159293242891
+  ChildIds: 14218086133658207762
+  ChildIds: 575224573881569094
+  ChildIds: 8020021002720755396
+  ChildIds: 4526779532375789348
+  ChildIds: 1026703755311819061
+  ChildIds: 1950801619858056061
+  ChildIds: 6536783907752935808
+  ChildIds: 10452558639144820433
+  ChildIds: 5933310503042151876
+  ChildIds: 1906769990860980342
+  ChildIds: 17357388893172001833
+  ChildIds: 3388123670509537007
+  ChildIds: 15715019611012381625
+  ChildIds: 4587734446196751303
+  ChildIds: 6779263264169433306
+  ChildIds: 11705898132492990391
+  ChildIds: 5069042681337060067
+  ChildIds: 13670862118677478991
+  ChildIds: 10364419658658455318
+  ChildIds: 15293985629562056499
+  ChildIds: 7653612488861992844
+  ChildIds: 11825627390995221098
+  ChildIds: 496275858028617216
+  ChildIds: 2549190375116028415
+  ChildIds: 14857360954225622687
+  ChildIds: 13384629226276881879
+  ChildIds: 3351475982117459066
+  ChildIds: 522592929512884877
+  ChildIds: 5953856556561771702
+  ChildIds: 6206275588822159051
+  ChildIds: 14028930659980869449
+  ChildIds: 12460689990626195687
+  ChildIds: 1730106964793533387
+  ChildIds: 4776655049020837255
+  ChildIds: 7161209494137683491
+  ChildIds: 7452183475280218550
+  ChildIds: 17340541714362248643
+  ChildIds: 9269341007115665493
+  ChildIds: 7704892988299009608
+  ChildIds: 15737896454391531909
+  ChildIds: 2878809810169205604
+  ChildIds: 4528534954049434902
+  ChildIds: 13034571806113741848
+  ChildIds: 3115205217118221355
+  ChildIds: 11745922962998235777
+  ChildIds: 12117072150619316555
+  ChildIds: 1314068815337194970
+  ChildIds: 8876366886515801838
+  ChildIds: 10256640515757804060
+  ChildIds: 4455287331448075450
+  ChildIds: 11234894833694757191
+  ChildIds: 17186319309809534907
+  ChildIds: 8274848306047066131
+  ChildIds: 4760683451652562320
+  ChildIds: 2150994307285382331
+  ChildIds: 13424906800349702211
+  ChildIds: 2500462004438960934
+  ChildIds: 1071782334898107641
+  ChildIds: 7421058181410119421
+  ChildIds: 2290784487756274683
+  ChildIds: 1735019947155931405
+  ChildIds: 4647160354798486218
+  ChildIds: 10715753351171179926
+  ChildIds: 17499402353239938243
+  ChildIds: 13998196721466677426
+  ChildIds: 5856272126468203344
+  ChildIds: 12069148383407792971
+  ChildIds: 3557025946576482743
+  ChildIds: 8863415248713542221
+  ChildIds: 2351977666445028319
+  ChildIds: 5931317411027956001
+  ChildIds: 9278343706275794327
+  ChildIds: 10234714207708339381
+  ChildIds: 17580114468423663499
+  ChildIds: 3432210796160412558
+  ChildIds: 11543183015309947622
+  ChildIds: 14769654477826226812
+  ChildIds: 16752529519877897665
+  ChildIds: 2860816448604205534
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    Model {
+    }
+  }
+}
+Objects {
   Id: 2860816448604205534
   Name: "Ice"
   Transform {
     Location {
-      X: 3086.04834
-      Y: -3690.56494
-      Z: -51.8346558
+      X: 2519.95239
+      Y: -5939.02051
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -27.8905029
+      Yaw: -27.8904648
     }
     Scale {
       X: 4.74522352
@@ -18,7 +260,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -41,6 +283,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -55,12 +298,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3322.70313
-      Y: -3413.69751
-      Z: -51.8346558
+      X: 2756.60718
+      Y: -5662.15283
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 64.5473328
+      Yaw: 64.5473862
     }
     Scale {
       X: 6.8577137
@@ -68,7 +311,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -91,6 +334,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -105,9 +349,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3428.33057
-      Y: -3360.71875
-      Z: -51.8345337
+      X: 2862.23462
+      Y: -5609.17383
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 159.733124
@@ -118,7 +362,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -141,6 +385,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -155,12 +400,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3462.396
-      Y: -3112.96753
-      Z: -51.8346558
+      X: 2896.3
+      Y: -5361.42285
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -13.2365723
+      Yaw: -13.2366314
     }
     Scale {
       X: 4.74522352
@@ -168,7 +413,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -191,6 +436,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -205,12 +451,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3676.75464
-      Y: -2822.72266
-      Z: -51.8346558
+      X: 3110.65869
+      Y: -5071.17773
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -51.8970032
+      Yaw: -51.8970642
     }
     Scale {
       X: 4.74522352
@@ -218,7 +464,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -241,6 +487,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -255,9 +502,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4005.57983
-      Y: -2666.08569
-      Z: -51.8346558
+      X: 3439.48389
+      Y: -4914.54102
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 40.5407906
@@ -268,7 +515,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -291,6 +538,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -305,12 +553,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4123.62354
-      Y: -2660.6626
-      Z: -51.8345337
+      X: 3557.52759
+      Y: -4909.11816
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 135.727509
+      Yaw: 135.727539
     }
     Scale {
       X: 6.35666656
@@ -318,7 +566,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -341,6 +589,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -355,12 +604,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4312.27197
-      Y: -2034.83313
-      Z: -51.8346558
+      X: 3746.17603
+      Y: -4283.28857
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 135.727509
+      Yaw: 135.727539
     }
     Scale {
       X: 6.35666418
@@ -368,7 +617,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -391,6 +640,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -405,9 +655,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4626.36719
-      Y: -1972.74792
-      Z: -51.8346558
+      X: 4060.27124
+      Y: -4221.20313
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 138.975113
@@ -418,7 +668,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -441,6 +691,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -455,12 +706,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 974.616211
-      Y: -6691.84277
-      Z: -51.8341675
+      X: 408.520325
+      Y: -8940.29785
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -8.44958496
+      Yaw: -8.44961452
     }
     Scale {
       X: 4.74522352
@@ -468,7 +719,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -491,6 +742,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -505,12 +757,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2164.10693
-      Y: -5007.13477
-      Z: -51.8341675
+      X: 1598.01099
+      Y: -7255.59
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 2.31777167
+      Yaw: 2.31777239
     }
     Scale {
       X: 4.74522352
@@ -518,7 +770,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -541,6 +793,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -555,12 +808,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2466.68408
-      Y: -4793.53613
-      Z: -51.8341675
+      X: 1900.58813
+      Y: -7041.99121
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -36.3431091
+      Yaw: -36.3430939
     }
     Scale {
       X: 4.74522352
@@ -568,7 +821,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -591,6 +844,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -605,12 +859,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2887.03613
-      Y: -4759.61572
-      Z: -51.8341675
+      X: 2320.94019
+      Y: -7008.07129
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 56.0947685
+      Yaw: 56.0947075
     }
     Scale {
       X: 6.8577137
@@ -618,7 +872,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -641,6 +895,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -655,12 +910,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2048.3291
-      Y: -5502.10938
-      Z: -51.8341675
+      X: 1482.23315
+      Y: -7750.56445
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 151.281021
+      Yaw: 151.281036
     }
     Scale {
       X: 6.35666418
@@ -668,7 +923,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -691,6 +946,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -705,9 +961,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 827.593262
-      Y: -7483.97
-      Z: -51.8341675
+      X: 261.497375
+      Y: -9732.42578
+      Z: 0.00122070313
     }
     Rotation {
       Yaw: 140.512802
@@ -718,7 +974,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -741,6 +997,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -755,9 +1012,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 1874.56543
-      Y: -5623.0957
-      Z: -51.8341675
+      X: 1308.46948
+      Y: -7871.55078
+      Z: 0.00122070313
     }
     Rotation {
       Yaw: 140.512802
@@ -768,7 +1025,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -791,6 +1048,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -805,9 +1063,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 1700.45764
-      Y: -6165.42676
-      Z: -51.8340454
+      X: 1134.36182
+      Y: -8413.88184
+      Z: 0.00134277344
     }
     Rotation {
       Yaw: 140.512802
@@ -818,7 +1076,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -841,6 +1099,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -855,12 +1114,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 1478.62524
-      Y: -6201.2041
-      Z: -51.8341675
+      X: 912.529358
+      Y: -8449.65918
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 45.3267517
+      Yaw: 45.3268051
     }
     Scale {
       X: 6.8577137
@@ -868,7 +1127,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -891,6 +1150,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -905,12 +1165,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 1281.49182
-      Y: -6477.09814
-      Z: -51.8341675
+      X: 715.395935
+      Y: -8725.55371
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -47.1116638
+      Yaw: -47.1116142
     }
     Scale {
       X: 4.74522352
@@ -918,7 +1178,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -941,6 +1201,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -955,12 +1216,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -926.650146
-      Y: -9164.3457
-      Z: -51.8341675
+      X: -1492.74609
+      Y: -11412.8008
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -8.44958496
+      Yaw: -8.44961452
     }
     Scale {
       X: 4.74522352
@@ -968,7 +1229,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -991,6 +1252,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1005,12 +1267,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -619.775391
-      Y: -8949.60547
-      Z: -51.8341675
+      X: -1185.87134
+      Y: -11198.0605
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -47.1116638
+      Yaw: -47.1116142
     }
     Scale {
       X: 4.74522352
@@ -1018,7 +1280,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1041,6 +1303,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1055,12 +1318,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -422.641
-      Y: -8673.71289
-      Z: -51.8341675
+      X: -988.736877
+      Y: -10922.168
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 45.3267784
+      Yaw: 45.3268356
     }
     Scale {
       X: 6.8577137
@@ -1068,7 +1331,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1091,6 +1354,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1105,12 +1369,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -200.808472
-      Y: -8637.93359
-      Z: -51.8340454
+      X: -766.904358
+      Y: -10886.3887
+      Z: 0.00134277344
     }
     Rotation {
-      Yaw: 140.512894
+      Yaw: 140.512909
     }
     Scale {
       X: 6.35666656
@@ -1118,7 +1382,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1141,6 +1405,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1155,12 +1420,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -26.699707
-      Y: -8095.60254
-      Z: -51.8341675
+      X: -592.795593
+      Y: -10344.0576
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 140.512894
+      Yaw: 140.512909
     }
     Scale {
       X: 6.35666418
@@ -1168,7 +1433,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1191,6 +1456,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1205,12 +1471,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 147.064819
-      Y: -7974.61328
-      Z: -51.8341675
+      X: -419.031067
+      Y: -10223.0684
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 151.281021
+      Yaw: 151.281036
     }
     Scale {
       X: 6.35666418
@@ -1218,7 +1484,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1241,6 +1507,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1255,12 +1522,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 985.77
-      Y: -7232.12256
-      Z: -51.8341675
+      X: 419.674133
+      Y: -9480.57813
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 56.0947685
+      Yaw: 56.0947075
     }
     Scale {
       X: 6.8577137
@@ -1268,7 +1535,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1291,6 +1558,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1305,12 +1573,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 565.418335
-      Y: -7266.04
-      Z: -51.8341675
+      X: -0.67755127
+      Y: -9514.49512
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -36.3431091
+      Yaw: -36.3430939
     }
     Scale {
       X: 4.74522352
@@ -1318,7 +1586,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1341,6 +1609,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1355,12 +1624,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 262.840332
-      Y: -7479.64063
-      Z: -51.8341675
+      X: -303.255554
+      Y: -9728.0957
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 2.31777167
+      Yaw: 2.31777239
     }
     Scale {
       X: 4.74522352
@@ -1368,7 +1637,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1391,6 +1660,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1405,12 +1675,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2682.49072
-      Y: -4304.01953
-      Z: -51.8344116
+      X: 2116.39478
+      Y: -6552.47461
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: 23.2811432
+      Yaw: 23.2810822
     }
     Scale {
       X: 4.74522352
@@ -1418,7 +1688,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1441,6 +1711,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1455,12 +1726,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2888.62329
-      Y: -3996.30273
-      Z: -51.8344116
+      X: 2322.52734
+      Y: -6244.75781
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -15.3795471
+      Yaw: -15.3796024
     }
     Scale {
       X: 4.74522352
@@ -1468,7 +1739,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1491,6 +1762,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1505,12 +1777,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2751.46069
-      Y: -4807.65479
-      Z: -51.8344116
+      X: 2185.36475
+      Y: -7056.11035
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: 172.244049
+      Yaw: 172.244034
     }
     Scale {
       X: 6.35666418
@@ -1518,7 +1790,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1541,6 +1813,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1555,12 +1828,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2821.8457
-      Y: -12098.041
-      Z: -51.8353882
+      X: -3387.94165
+      Y: -14346.4961
     }
     Rotation {
-      Yaw: 140.491287
+      Yaw: 140.491302
     }
     Scale {
       X: 6.35666418
@@ -1568,7 +1840,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1591,6 +1863,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1605,12 +1878,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2648.03809
-      Y: -11977.1211
-      Z: -51.8353882
+      X: -3214.13403
+      Y: -14225.5762
     }
     Rotation {
-      Yaw: 151.259857
+      Yaw: 151.259842
     }
     Scale {
       X: 6.35666418
@@ -1618,7 +1890,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1641,6 +1913,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1655,12 +1928,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2494.99121
-      Y: -11114.3486
-      Z: -51.8353882
+      X: -3061.08716
+      Y: -13362.8037
     }
     Rotation {
-      Yaw: -47.3667
+      Yaw: -47.366642
     }
     Scale {
       X: 4.74522352
@@ -1668,7 +1940,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1691,6 +1963,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1705,12 +1978,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2532.07373
-      Y: -11482.1895
-      Z: -51.8353882
+      X: -3098.16968
+      Y: -13730.6445
     }
     Rotation {
-      Yaw: 2.29744077
+      Yaw: 2.29744172
     }
     Scale {
       X: 4.74522352
@@ -1718,7 +1990,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1741,6 +2013,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1755,12 +2028,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1845.10315
-      Y: -10566.8125
-      Z: -51.8353882
+      X: -2411.19897
+      Y: -12815.2676
     }
     Rotation {
-      Yaw: 130.374435
+      Yaw: 130.37439
     }
     Scale {
       X: 6.35667229
@@ -1768,7 +2040,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1791,6 +2063,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1805,12 +2078,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -978.463
-      Y: -9418.66113
-      Z: -51.8353882
+      X: -1544.55884
+      Y: -11667.1162
     }
     Rotation {
-      Yaw: 35.1905365
+      Yaw: 35.1905594
     }
     Scale {
       X: 6.8577137
@@ -1818,7 +2090,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1841,6 +2113,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1855,12 +2128,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1083.58936
-      Y: -9720.20898
-      Z: -51.8353882
+      X: -1649.6853
+      Y: -11968.6641
     }
     Rotation {
-      Yaw: -57.2479553
+      Yaw: -57.2478943
     }
     Scale {
       X: 4.74522352
@@ -1868,7 +2140,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1891,6 +2163,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1905,9 +2178,8 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2221.10767
-      Y: -11189.3564
-      Z: -51.8353882
+      X: -2787.20361
+      Y: -13437.8115
     }
     Rotation {
       Yaw: 158.484756
@@ -1918,7 +2190,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1941,6 +2213,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -1955,12 +2228,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1482.13782
-      Y: -10347.5469
-      Z: -51.8353882
+      X: -2048.23364
+      Y: -12596.002
     }
     Rotation {
-      Yaw: 63.2999573
+      Yaw: 63.3000107
     }
     Scale {
       X: 6.8577137
@@ -1968,7 +2240,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1991,6 +2263,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2005,12 +2278,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1894.91516
-      Y: -10433.9102
-      Z: -51.8353882
+      X: -2461.01099
+      Y: -12682.3652
     }
     Rotation {
-      Yaw: -29.1366882
+      Yaw: -29.1366844
     }
     Scale {
       X: 4.74522352
@@ -2018,7 +2290,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2041,6 +2313,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2055,12 +2328,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2168.31934
-      Y: -10683.7734
-      Z: -51.8353882
+      X: -2734.41528
+      Y: -12932.2285
     }
     Rotation {
-      Yaw: 9.52288055
+      Yaw: 9.52291775
     }
     Scale {
       X: 4.74522352
@@ -2068,7 +2340,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2091,6 +2363,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2105,12 +2378,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1560.96069
-      Y: -10002.4434
-      Z: -51.8353882
+      X: -2127.05664
+      Y: -12250.8984
     }
     Rotation {
-      Yaw: -18.5872803
+      Yaw: -18.5872974
     }
     Scale {
       X: 4.74522352
@@ -2118,7 +2390,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2141,6 +2413,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2155,9 +2428,8 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4501.08594
-      Y: -10265.335
-      Z: -51.8353882
+      X: -5067.18164
+      Y: -12513.79
     }
     Rotation {
       Yaw: -133.425308
@@ -2168,7 +2440,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2191,6 +2463,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2205,12 +2478,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4738.59473
-      Y: -9230.51758
-      Z: -51.8353882
+      X: -5304.69043
+      Y: -11478.9727
     }
     Rotation {
-      Yaw: -122.657196
+      Yaw: -122.657211
     }
     Scale {
       X: 4.74522352
@@ -2218,7 +2490,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2241,6 +2513,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2255,12 +2528,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4737.01904
-      Y: -9600.89746
-      Z: -51.8353882
+      X: -5303.11475
+      Y: -11849.3525
     }
     Rotation {
-      Yaw: -161.318405
+      Yaw: -161.318359
     }
     Scale {
       X: 4.74522352
@@ -2268,7 +2540,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2291,6 +2563,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2305,12 +2578,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4950.18506
-      Y: -9964.77148
-      Z: -51.8353882
+      X: -5516.28076
+      Y: -12213.2266
     }
     Rotation {
-      Yaw: -68.8799744
+      Yaw: -68.879982
     }
     Scale {
       X: 6.8577137
@@ -2318,7 +2590,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2341,6 +2613,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2355,12 +2628,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5077.80615
-      Y: -8851.92285
-      Z: -51.8353882
+      X: -5643.90186
+      Y: -11100.3779
     }
     Rotation {
-      Yaw: 26.3055439
+      Yaw: 26.3054848
     }
     Scale {
       X: 6.35666418
@@ -2368,7 +2640,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2391,6 +2663,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2405,9 +2678,8 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4501.03467
-      Y: -10639.8867
-      Z: -51.8353882
+      X: -5067.13037
+      Y: -12888.3418
     }
     Rotation {
       Yaw: -172.087311
@@ -2418,7 +2690,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2441,6 +2713,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2455,12 +2728,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4387.97217
-      Y: -10959.5635
-      Z: -51.8353882
+      X: -4954.06787
+      Y: -13208.0186
     }
     Rotation {
-      Yaw: -79.6479492
+      Yaw: -79.6478806
     }
     Scale {
       X: 6.8577137
@@ -2468,7 +2740,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2491,6 +2763,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2505,12 +2778,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4485.81445
-      Y: -11161.8477
-      Z: -51.8352661
+      X: -5051.91
+      Y: -13410.3027
+      Z: 0.000122070313
     }
     Rotation {
-      Yaw: 15.5365267
+      Yaw: 15.5365772
     }
     Scale {
       X: 6.35666656
@@ -2518,7 +2791,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2541,6 +2814,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2555,12 +2829,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4141.23438
-      Y: -11615.3828
-      Z: -51.8353882
+      X: -4707.33
+      Y: -13863.8379
     }
     Rotation {
-      Yaw: 15.5365267
+      Yaw: 15.5365772
     }
     Scale {
       X: 6.35666418
@@ -2568,7 +2841,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2591,6 +2864,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2605,12 +2879,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5065.87549
-      Y: -9690.79883
-      Z: -51.8353882
+      X: -5631.97119
+      Y: -11939.2539
     }
     Rotation {
-      Yaw: 15.5365267
+      Yaw: 15.5365772
     }
     Scale {
       X: 6.35667229
@@ -2618,7 +2891,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2641,6 +2914,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2655,12 +2929,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4141.70752
-      Y: -11827.1191
-      Z: -51.8353882
+      X: -4707.80322
+      Y: -14075.5742
     }
     Rotation {
-      Yaw: 26.3055439
+      Yaw: 26.3054848
     }
     Scale {
       X: 6.35666418
@@ -2668,7 +2941,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2691,6 +2964,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2705,12 +2979,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3081.46875
-      Y: -12455.8135
-      Z: -51.8353882
+      X: -3647.5647
+      Y: -14704.2686
     }
     Rotation {
-      Yaw: 17.6028423
+      Yaw: 17.6028709
     }
     Scale {
       X: 6.8577137
@@ -2718,7 +2991,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2741,6 +3014,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2755,12 +3029,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3461.27563
-      Y: -12400.7881
-      Z: -51.8353882
+      X: -4027.37158
+      Y: -14649.2432
     }
     Rotation {
-      Yaw: -74.8355103
+      Yaw: -74.8354416
     }
     Scale {
       X: 4.74522352
@@ -2768,7 +3041,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2791,6 +3064,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2805,12 +3079,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3802.49341
-      Y: -12205.7217
-      Z: -51.8353882
+      X: -4368.58936
+      Y: -14454.1768
     }
     Rotation {
-      Yaw: -36.1743469
+      Yaw: -36.174324
     }
     Scale {
       X: 4.74522352
@@ -2818,7 +3091,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2841,6 +3114,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2855,9 +3129,8 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4780.49609
-      Y: -6285.5127
-      Z: -51.8353882
+      X: -5346.5918
+      Y: -8533.96777
     }
     Rotation {
       Yaw: -151.654755
@@ -2868,7 +3141,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2891,6 +3164,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2905,12 +3179,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4723.95557
-      Y: -8347.05
-      Z: -51.8353882
+      X: -5290.05127
+      Y: -10595.5049
     }
     Rotation {
-      Yaw: -140.886765
+      Yaw: -140.886795
     }
     Scale {
       X: 4.74522352
@@ -2918,7 +3191,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2941,6 +3214,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2955,9 +3229,8 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4838.31543
-      Y: -8699.3252
-      Z: -51.8353882
+      X: -5404.41113
+      Y: -10947.7803
     }
     Rotation {
       Yaw: -179.547592
@@ -2968,7 +3241,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2991,6 +3264,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3005,12 +3279,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5154.61035
-      Y: -8978.2627
-      Z: -51.8353882
+      X: -5720.70605
+      Y: -11226.7178
     }
     Rotation {
-      Yaw: -87.1091919
+      Yaw: -87.1091843
     }
     Scale {
       X: 6.8577137
@@ -3018,7 +3291,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3041,6 +3314,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3055,12 +3329,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4927.70947
-      Y: -7881.33496
-      Z: -51.8353882
+      X: -5493.80518
+      Y: -10129.79
     }
     Rotation {
-      Yaw: 8.07621288
+      Yaw: 8.07623863
     }
     Scale {
       X: 6.35666418
@@ -3068,7 +3341,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3091,6 +3364,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3105,12 +3379,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5137.2124
-      Y: -5563.13135
-      Z: -51.8353882
+      X: -5703.30811
+      Y: -7811.58691
     }
     Rotation {
-      Yaw: -2.6920166
+      Yaw: -2.69201803
     }
     Scale {
       X: 6.35667229
@@ -3118,7 +3391,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3141,6 +3414,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3155,12 +3429,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4861.02734
-      Y: -7680.37646
-      Z: -51.8353882
+      X: -5427.12305
+      Y: -9928.83203
     }
     Rotation {
-      Yaw: -2.6920166
+      Yaw: -2.69201803
     }
     Scale {
       X: 6.35666418
@@ -3168,7 +3441,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3191,6 +3464,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3205,12 +3479,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5046.43701
-      Y: -7141.80518
-      Z: -51.8352661
+      X: -5612.53271
+      Y: -9390.26074
+      Z: 0.000122070313
     }
     Rotation {
-      Yaw: -2.6920166
+      Yaw: -2.69201803
     }
     Scale {
       X: 6.35666656
@@ -3218,7 +3492,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3241,6 +3515,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3255,9 +3530,8 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4890.22754
-      Y: -6980.28516
-      Z: -51.8353882
+      X: -5456.32324
+      Y: -9228.74
     }
     Rotation {
       Yaw: -97.8778687
@@ -3268,7 +3542,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3291,6 +3565,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3305,12 +3580,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4897.61572
-      Y: -6641.28223
-      Z: -51.8353882
+      X: -5463.71143
+      Y: -8889.7373
     }
     Rotation {
-      Yaw: 169.682922
+      Yaw: 169.682861
     }
     Scale {
       X: 4.74522352
@@ -3318,7 +3592,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3341,6 +3615,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3355,12 +3630,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4886.12939
-      Y: -4762.62305
-      Z: -51.8353882
+      X: -5452.2251
+      Y: -7011.07813
     }
     Rotation {
-      Yaw: 8.07621288
+      Yaw: 8.07623863
     }
     Scale {
       X: 6.35666418
@@ -3368,7 +3642,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3391,6 +3665,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3405,12 +3680,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5113.03369
-      Y: -5859.5459
-      Z: -51.8353882
+      X: -5679.12939
+      Y: -8108.00098
     }
     Rotation {
-      Yaw: -87.1091919
+      Yaw: -87.1091843
     }
     Scale {
       X: 6.8577137
@@ -3418,7 +3692,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3441,6 +3715,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3455,9 +3730,8 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4796.7373
-      Y: -5580.61377
-      Z: -51.8353882
+      X: -5362.83301
+      Y: -7829.06934
     }
     Rotation {
       Yaw: -179.547592
@@ -3468,7 +3742,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3491,6 +3765,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3505,12 +3780,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4682.37549
-      Y: -5228.33252
-      Z: -51.8353882
+      X: -5248.47119
+      Y: -7476.78809
     }
     Rotation {
-      Yaw: -140.886765
+      Yaw: -140.886795
     }
     Scale {
       X: 4.74522352
@@ -3518,7 +3792,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3541,6 +3815,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3555,12 +3830,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2546.59497
-      Y: 1164.64795
-      Z: -51.8341675
+      X: -3112.69092
+      Y: -1083.80737
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -75.8984375
+      Yaw: -75.8983536
     }
     Scale {
       X: 6.8577137
@@ -3568,7 +3843,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3591,6 +3866,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3605,12 +3881,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2290.56836
-      Y: 1499.75305
-      Z: -51.8341675
+      X: -2856.66431
+      Y: -748.702271
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -168.336243
+      Yaw: -168.336182
     }
     Scale {
       X: 4.74522352
@@ -3618,7 +3894,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3641,6 +3917,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3655,9 +3932,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3220.87866
-      Y: -1513.05249
-      Z: -51.835144
+      X: -3786.97461
+      Y: -3761.50781
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: -161.850128
@@ -3668,7 +3945,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3691,6 +3968,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3705,9 +3983,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3453.70483
-      Y: -1801.10059
-      Z: -51.835144
+      X: -4019.80078
+      Y: -4049.55591
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: 159.488892
@@ -3718,7 +3996,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3741,6 +4019,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3755,12 +4034,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3848.85645
-      Y: -1948.41162
-      Z: -51.835144
+      X: -4414.95215
+      Y: -4196.86719
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -108.072906
+      Yaw: -108.072914
     }
     Scale {
       X: 6.8577137
@@ -3768,7 +4047,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3791,6 +4070,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3805,12 +4085,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3244.53223
-      Y: -1005.27222
-      Z: -51.835144
+      X: -3810.62817
+      Y: -3253.72754
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -12.8868408
+      Yaw: -12.8869019
     }
     Scale {
       X: 6.35666418
@@ -3818,7 +4098,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3841,6 +4121,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3855,12 +4136,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2610.78955
-      Y: 1234.448
-      Z: -51.835144
+      X: -3176.8855
+      Y: -1014.00732
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -23.6551819
+      Yaw: -23.6551228
     }
     Scale {
       X: 6.35667229
@@ -3868,7 +4149,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3891,6 +4172,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3905,12 +4187,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3110.36719
-      Y: -841.467529
-      Z: -51.835144
+      X: -3676.46313
+      Y: -3089.92285
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -23.6551819
+      Yaw: -23.6551228
     }
     Scale {
       X: 6.35666418
@@ -3918,7 +4200,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3941,6 +4223,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3955,12 +4238,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3090.82178
-      Y: -272.209473
-      Z: -51.835022
+      X: -3656.91772
+      Y: -2520.66479
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -23.6551819
+      Yaw: -23.6551228
     }
     Scale {
       X: 6.35666656
@@ -3968,7 +4251,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3991,6 +4274,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4005,9 +4289,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2887.16479
-      Y: -177.266968
-      Z: -51.835144
+      X: -3453.26074
+      Y: -2425.72217
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: -118.84108
@@ -4018,7 +4302,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4041,6 +4325,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4055,12 +4340,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2772.77734
-      Y: 141.940186
-      Z: -51.835144
+      X: -3338.87329
+      Y: -2106.51514
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 148.720154
+      Yaw: 148.720139
     }
     Scale {
       X: 4.74522352
@@ -4068,7 +4353,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4091,6 +4376,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4105,12 +4391,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2536.12939
-      Y: 432.259705
-      Z: -51.835144
+      X: -3102.22534
+      Y: -1816.19556
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -172.61763
+      Yaw: -172.617584
     }
     Scale {
       X: 4.74522352
@@ -4118,7 +4404,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4141,6 +4427,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4155,12 +4442,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3927.37695
-      Y: -2755.47266
-      Z: -51.835144
+      X: -4493.47266
+      Y: -5003.92773
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 148.720154
+      Yaw: 148.720139
     }
     Scale {
       X: 4.74522352
@@ -4168,7 +4455,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4191,6 +4478,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4205,12 +4493,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4041.76294
-      Y: -3074.68164
-      Z: -51.835144
+      X: -4607.85889
+      Y: -5323.13672
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -118.841187
+      Yaw: -118.841133
     }
     Scale {
       X: 6.8577137
@@ -4218,7 +4506,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4241,6 +4529,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4255,12 +4544,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4245.41943
-      Y: -3169.62305
-      Z: -51.835022
+      X: -4811.51514
+      Y: -5418.07813
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -23.6552429
+      Yaw: -23.6551781
     }
     Scale {
       X: 6.35666656
@@ -4268,7 +4557,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4291,6 +4580,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4305,12 +4595,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4264.96484
-      Y: -3738.88037
-      Z: -51.835144
+      X: -4831.06055
+      Y: -5987.33594
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -23.6552429
+      Yaw: -23.6551781
     }
     Scale {
       X: 6.35666418
@@ -4318,7 +4608,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4341,6 +4631,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4355,12 +4646,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3765.38818
-      Y: -1662.96411
-      Z: -51.835144
+      X: -4331.48389
+      Y: -3911.41943
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -23.6552429
+      Yaw: -23.6551781
     }
     Scale {
       X: 6.35667229
@@ -4368,7 +4659,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4391,6 +4682,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4405,12 +4697,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4399.13
-      Y: -3902.68213
-      Z: -51.835144
+      X: -4965.22559
+      Y: -6151.1377
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -12.8868408
+      Yaw: -12.8869019
     }
     Scale {
       X: 6.35666418
@@ -4418,7 +4710,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4441,6 +4733,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4455,12 +4748,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5003.45605
-      Y: -4845.82617
-      Z: -51.835144
+      X: -5569.55176
+      Y: -7094.28125
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -108.072906
+      Yaw: -108.072914
     }
     Scale {
       X: 6.8577137
@@ -4468,7 +4761,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4491,6 +4784,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4505,9 +4799,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4608.30273
-      Y: -4698.5127
-      Z: -51.835144
+      X: -5174.39844
+      Y: -6946.96777
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: 159.488892
@@ -4518,7 +4812,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4541,6 +4835,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4555,9 +4850,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -4375.47803
-      Y: -4410.46582
-      Z: -51.835144
+      X: -4941.57373
+      Y: -6658.9209
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: -161.850128
@@ -4568,7 +4863,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4591,6 +4886,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4605,12 +4901,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3690.72803
-      Y: -2465.15308
-      Z: -51.835144
+      X: -4256.82373
+      Y: -4713.6084
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -172.61763
+      Yaw: -172.617584
     }
     Scale {
       X: 4.74522352
@@ -4618,7 +4914,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4641,6 +4937,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4655,9 +4952,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2068.80273
-      Y: 4045.70117
-      Z: -51.835144
+      X: -2634.89868
+      Y: 1797.24585
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: -158.585953
@@ -4668,7 +4965,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4691,6 +4988,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4705,12 +5003,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2261.45117
-      Y: 1992.40967
-      Z: -51.835144
+      X: -2827.54712
+      Y: -256.045654
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -147.818405
+      Yaw: -147.818359
     }
     Scale {
       X: 4.74522352
@@ -4718,7 +5016,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4741,6 +5039,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4755,12 +5054,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2417.48779
-      Y: 1656.50537
-      Z: -51.835144
+      X: -2983.58374
+      Y: -591.949951
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 173.521
+      Yaw: 173.520981
     }
     Scale {
       X: 4.74522352
@@ -4768,7 +5067,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4791,6 +5090,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4805,9 +5105,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2765.13086
-      Y: 1417.77881
-      Z: -51.835144
+      X: -3331.22681
+      Y: -830.676514
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: -94.0408
@@ -4818,7 +5118,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4841,6 +5141,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4855,9 +5156,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2407.5166
-      Y: 2479.30273
-      Z: -51.835144
+      X: -2973.61255
+      Y: 230.847412
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: 1.14559722
@@ -4868,7 +5169,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4891,6 +5192,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4905,12 +5207,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2335.73779
-      Y: 4805.84912
-      Z: -51.835144
+      X: -2901.83374
+      Y: 2557.3938
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -9.6234436
+      Yaw: -9.62348175
     }
     Scale {
       X: 6.35667229
@@ -4918,7 +5220,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4941,6 +5243,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4955,12 +5258,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2317.07178
-      Y: 2670.74951
-      Z: -51.835144
+      X: -2883.16772
+      Y: 422.294189
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -9.6234436
+      Yaw: -9.62348175
     }
     Scale {
       X: 6.35666418
@@ -4968,7 +5271,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4991,6 +5294,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5005,12 +5309,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2436.13477
-      Y: 3227.76025
-      Z: -51.835022
+      X: -3002.23071
+      Y: 979.304932
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -9.6234436
+      Yaw: -9.62348175
     }
     Scale {
       X: 6.35666656
@@ -5018,7 +5322,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5041,6 +5345,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5055,12 +5360,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2261.5752
-      Y: 3369.24902
-      Z: -51.835144
+      X: -2827.67114
+      Y: 1120.7937
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -104.809296
+      Yaw: -104.809357
     }
     Scale {
       X: 6.8577137
@@ -5068,7 +5373,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5091,6 +5396,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5105,9 +5411,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2227.99805
-      Y: 3706.66553
-      Z: -51.835144
+      X: -2794.09399
+      Y: 1458.21021
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: 162.752518
@@ -5118,7 +5424,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5141,6 +5447,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5155,12 +5462,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1651.17761
-      Y: 7136.604
-      Z: -51.835144
+      X: -2217.27344
+      Y: 4888.14844
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -158.585922
+      Yaw: -158.585953
     }
     Scale {
       X: 4.74522352
@@ -5168,7 +5475,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5191,6 +5498,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5205,12 +5513,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1810.37256
-      Y: 6797.56836
-      Z: -51.835144
+      X: -2376.46851
+      Y: 4549.11328
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 162.752548
+      Yaw: 162.752518
     }
     Scale {
       X: 4.74522352
@@ -5218,7 +5526,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5241,6 +5549,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5255,12 +5564,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1843.94958
-      Y: 6460.15186
-      Z: -51.835144
+      X: -2410.04541
+      Y: 4211.69629
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -104.809265
+      Yaw: -104.809319
     }
     Scale {
       X: 6.8577137
@@ -5268,7 +5577,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5291,6 +5600,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5305,12 +5615,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2018.50928
-      Y: 6318.66309
-      Z: -51.835022
+      X: -2584.60522
+      Y: 4070.20776
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -9.62341309
+      Yaw: -9.62345123
     }
     Scale {
       X: 6.35666656
@@ -5318,7 +5628,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5341,6 +5651,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5355,12 +5666,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1899.44629
-      Y: 5761.65234
-      Z: -51.835144
+      X: -2465.54224
+      Y: 3513.19702
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -9.62341309
+      Yaw: -9.62345123
     }
     Scale {
       X: 6.35666418
@@ -5368,7 +5679,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5391,6 +5702,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5405,12 +5717,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1918.11243
-      Y: 7896.75195
-      Z: -51.835144
+      X: -2484.20825
+      Y: 5648.29688
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -9.62341309
+      Yaw: -9.62345123
     }
     Scale {
       X: 6.35667229
@@ -5418,7 +5730,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5441,6 +5753,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5455,9 +5768,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1989.89124
-      Y: 5570.20557
-      Z: -51.835144
+      X: -2555.98706
+      Y: 3321.75024
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: 1.14559722
@@ -5468,7 +5781,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5491,6 +5804,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5505,12 +5819,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2347.50537
-      Y: 4508.68164
-      Z: -51.835144
+      X: -2913.60132
+      Y: 2260.22632
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -94.0408325
+      Yaw: -94.0408
     }
     Scale {
       X: 6.8577137
@@ -5518,7 +5832,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5541,6 +5855,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5555,12 +5870,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1999.86243
-      Y: 4747.4082
-      Z: -51.835144
+      X: -2565.95825
+      Y: 2498.95288
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 173.521027
+      Yaw: 173.520981
     }
     Scale {
       X: 4.74522352
@@ -5568,7 +5883,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5591,6 +5906,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5605,12 +5921,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1843.82544
-      Y: 5083.3125
-      Z: -51.835144
+      X: -2409.92139
+      Y: 2834.85718
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -147.818451
+      Yaw: -147.81839
     }
     Scale {
       X: 4.74522352
@@ -5618,7 +5934,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5641,6 +5957,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5655,9 +5972,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3435.49512
-      Y: 12838.8525
-      Z: -51.8341675
+      X: -4001.59106
+      Y: 10590.3975
+      Z: 0.00122070313
     }
     Rotation {
       Yaw: -175.702103
@@ -5668,7 +5985,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5691,6 +6008,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5705,12 +6023,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3488.28467
-      Y: 12478.4707
-      Z: -51.8341675
+      X: -4054.38062
+      Y: 10230.0156
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -83.2641602
+      Yaw: -83.2641525
     }
     Scale {
       X: 6.8577137
@@ -5718,7 +6036,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5741,6 +6059,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5755,12 +6074,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3549.45679
-      Y: 12377.3643
-      Z: -51.8340454
+      X: -4115.55273
+      Y: 10128.9092
+      Z: 0.00134277344
     }
     Rotation {
-      Yaw: 11.9216442
+      Yaw: 11.9217005
     }
     Scale {
       X: 6.35666656
@@ -5768,7 +6087,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5791,6 +6110,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5805,12 +6125,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3134.38672
-      Y: 11872.4277
-      Z: -51.8341675
+      X: -3700.48267
+      Y: 9623.97266
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 11.9216442
+      Yaw: 11.9217005
     }
     Scale {
       X: 6.35666418
@@ -5818,7 +6138,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5841,6 +6161,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5855,12 +6176,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1718.56409
-      Y: 8599.19141
-      Z: -51.8341675
+      X: -2284.66
+      Y: 6350.73633
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -115.644348
+      Yaw: -115.644279
     }
     Scale {
       X: 4.74522352
@@ -5868,7 +6189,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5891,6 +6212,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5905,12 +6227,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1671.77332
-      Y: 8231.7832
-      Z: -51.8341675
+      X: -2237.86914
+      Y: 5983.32813
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -154.304642
+      Yaw: -154.304688
     }
     Scale {
       X: 4.74522352
@@ -5918,7 +6240,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5941,6 +6263,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -5955,12 +6278,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1838.90906
-      Y: 7844.6
-      Z: -51.8341675
+      X: -2405.00488
+      Y: 5596.14453
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -61.8668823
+      Yaw: -61.8668938
     }
     Scale {
       X: 6.8577137
@@ -5968,7 +6291,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5991,6 +6314,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6005,12 +6329,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2101.46606
-      Y: 8933.53418
-      Z: -51.8341675
+      X: -2667.56201
+      Y: 6685.0791
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 33.3198586
+      Yaw: 33.3199043
     }
     Scale {
       X: 6.35666418
@@ -6018,7 +6342,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6041,6 +6365,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6055,12 +6380,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3279.58252
-      Y: 10941.0254
-      Z: -51.8341675
+      X: -3845.67847
+      Y: 8692.57
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 22.5508347
+      Yaw: 22.550787
     }
     Scale {
       X: 6.35667229
@@ -6068,7 +6393,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6091,6 +6416,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6105,12 +6431,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2126.85645
-      Y: 9143.74316
-      Z: -51.8341675
+      X: -2692.95239
+      Y: 6895.28809
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 22.5508347
+      Yaw: 22.550787
     }
     Scale {
       X: 6.35666418
@@ -6118,7 +6444,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6141,6 +6467,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6155,12 +6482,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2524.24097
-      Y: 9551.81738
-      Z: -51.8340454
+      X: -3090.33691
+      Y: 7303.3623
+      Z: 0.00134277344
     }
     Rotation {
-      Yaw: 22.5508347
+      Yaw: 22.550787
     }
     Scale {
       X: 6.35666656
@@ -6168,7 +6495,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6191,6 +6518,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6205,12 +6533,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2451.82813
-      Y: 9764.5293
-      Z: -51.8341675
+      X: -3017.92407
+      Y: 7516.07422
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -72.6361084
+      Yaw: -72.636055
     }
     Scale {
       X: 6.8577137
@@ -6218,7 +6546,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6241,6 +6569,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6255,12 +6584,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2603.08
-      Y: 10068.0098
-      Z: -51.8341675
+      X: -3169.17603
+      Y: 7819.55469
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -165.073532
+      Yaw: -165.073456
     }
     Scale {
       X: 4.74522352
@@ -6268,7 +6597,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6291,6 +6620,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6305,12 +6635,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2648.86621
-      Y: 10439.751
-      Z: -51.8341675
+      X: -3214.96216
+      Y: 8191.2959
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: -126.412323
+      Yaw: -126.412262
     }
     Scale {
       X: 4.74522352
@@ -6318,7 +6648,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6341,6 +6671,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6355,12 +6686,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2832.12378
-      Y: 11214.2607
-      Z: -51.8341675
+      X: -3398.21973
+      Y: 8965.80566
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 19.3029213
+      Yaw: 19.3029232
     }
     Scale {
       X: 6.35666418
@@ -6368,7 +6699,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6391,6 +6722,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6405,12 +6737,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3308.61377
-      Y: 11661.71
-      Z: -51.8340454
+      X: -3874.70972
+      Y: 9413.25488
+      Z: 0.00134277344
     }
     Rotation {
-      Yaw: 19.3029213
+      Yaw: 19.3029232
     }
     Scale {
       X: 6.35666656
@@ -6418,7 +6750,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6441,6 +6773,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6455,12 +6788,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -504.607086
-      Y: 14963.8223
-      Z: -51.8344116
+      X: -1070.703
+      Y: 12715.3672
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -6.42480469
+      Yaw: -6.42481899
     }
     Scale {
       X: 7.33154058
@@ -6468,7 +6801,7 @@ Objects {
       Z: 0.351998538
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6491,6 +6824,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6505,12 +6839,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -483.036652
-      Y: 13787.5098
-      Z: -51.8344116
+      X: -1049.13257
+      Y: 11539.0547
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -101.611328
+      Yaw: -101.611374
     }
     Scale {
       X: 7.90943193
@@ -6518,7 +6852,7 @@ Objects {
       Z: 0.379744142
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6541,6 +6875,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6555,12 +6890,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -328.317
-      Y: 14473.6641
-      Z: -51.8344116
+      X: -894.412842
+      Y: 12225.209
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -155.389694
+      Yaw: -155.389755
     }
     Scale {
       X: 5.47296524
@@ -6568,7 +6903,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6591,6 +6926,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6605,12 +6941,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -527.2453
-      Y: 14161.2461
-      Z: -51.8344116
+      X: -1093.34119
+      Y: 11912.791
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: 165.950119
+      Yaw: 165.950027
     }
     Scale {
       X: 5.47296524
@@ -6618,7 +6954,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6641,6 +6977,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6655,12 +6992,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -575.136108
-      Y: 13641.1455
-      Z: -51.8346558
+      X: -1141.23193
+      Y: 11392.6904
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 127.323242
+      Yaw: 127.323189
     }
     Scale {
       X: 5.47296524
@@ -6668,7 +7005,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6691,6 +7028,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6705,9 +7043,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -944.823303
-      Y: 13701.2988
-      Z: -51.8346558
+      X: -1510.91919
+      Y: 11452.8438
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 88.6634827
@@ -6718,7 +7056,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6741,6 +7079,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6755,12 +7094,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1278.51978
-      Y: 13641.083
-      Z: -51.8346558
+      X: -1844.61572
+      Y: 11392.6279
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -178.898651
+      Yaw: -178.898621
     }
     Scale {
       X: 7.90943193
@@ -6768,7 +7107,7 @@ Objects {
       Z: 0.379744142
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6791,6 +7130,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6805,12 +7145,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1462.43945
-      Y: 13770.1729
-      Z: -51.8345337
+      X: -2028.5354
+      Y: 11521.7178
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -83.7113647
+      Yaw: -83.7113419
     }
     Scale {
       X: 7.33154345
@@ -6818,7 +7158,7 @@ Objects {
       Z: 0.351998538
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6841,6 +7181,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6855,12 +7196,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -1965.47156
-      Y: 13502.9688
-      Z: -51.8346558
+      X: -2531.56738
+      Y: 11254.5137
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -83.7113647
+      Yaw: -83.7113419
     }
     Scale {
       X: 7.33154058
@@ -6868,7 +7209,7 @@ Objects {
       Z: 0.351998538
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6891,6 +7232,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6905,12 +7247,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2223.24683
-      Y: 13620.5137
-      Z: -51.8346558
+      X: -2789.34277
+      Y: 11372.0586
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -72.9429321
+      Yaw: -72.9428787
     }
     Scale {
       X: 7.33154058
@@ -6918,7 +7260,7 @@ Objects {
       Z: 0.351998538
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6941,6 +7283,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -6955,12 +7298,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -3293.5498
-      Y: 13132.0195
-      Z: -51.8346558
+      X: -3859.64575
+      Y: 10883.5645
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -168.129776
+      Yaw: -168.12973
     }
     Scale {
       X: 7.90943193
@@ -6968,7 +7311,7 @@ Objects {
       Z: 0.379744142
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6991,6 +7334,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7005,12 +7349,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2602.57202
-      Y: 13263.5146
-      Z: -51.8346558
+      X: -3168.66797
+      Y: 11015.0596
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 138.092102
+      Yaw: 138.092026
     }
     Scale {
       X: 5.47296524
@@ -7018,7 +7362,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7041,6 +7385,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7055,12 +7400,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -2968.38086
-      Y: 13321.4824
-      Z: -51.8346558
+      X: -3534.47681
+      Y: 11073.0273
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 99.431694
+      Yaw: 99.4317398
     }
     Scale {
       X: 5.47296524
@@ -7068,7 +7413,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7091,6 +7436,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7105,9 +7451,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 428.102783
-      Y: 15109.9639
-      Z: -51.8346558
+      X: -137.993103
+      Y: 12861.5088
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 159.07785
@@ -7118,7 +7464,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7141,6 +7487,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7155,9 +7502,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 65.796875
-      Y: 15033.0801
-      Z: -51.8346558
+      X: -500.299
+      Y: 12784.625
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 120.417633
@@ -7168,7 +7515,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7191,6 +7538,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7205,12 +7553,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -169.950928
-      Y: 14739.7285
-      Z: -51.8346558
+      X: -736.046814
+      Y: 12491.2734
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -147.144104
+      Yaw: -147.144043
     }
     Scale {
       X: 7.90943193
@@ -7218,7 +7566,7 @@ Objects {
       Z: 0.379744142
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7241,6 +7589,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7255,12 +7604,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 654.413452
-      Y: 15579.1318
-      Z: -51.8346558
+      X: 88.3175659
+      Y: 13330.6768
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -51.9573059
+      Yaw: -51.9573631
     }
     Scale {
       X: 7.33154058
@@ -7268,7 +7617,7 @@ Objects {
       Z: 0.351998538
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7291,6 +7640,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7305,12 +7655,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2708.00195
-      Y: 16804.0547
-      Z: -51.8346558
+      X: 2141.90601
+      Y: 14555.6
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -62.7258606
+      Yaw: -62.7259
     }
     Scale {
       X: 6.35667229
@@ -7318,7 +7668,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7341,6 +7691,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7355,12 +7706,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 937.187
-      Y: 15561.7031
-      Z: -51.8346558
+      X: 371.091125
+      Y: 13313.248
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -62.7258606
+      Yaw: -62.7259
     }
     Scale {
       X: 7.33154058
@@ -7368,7 +7719,7 @@ Objects {
       Z: 0.351998538
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7391,6 +7742,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7405,12 +7757,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 1311.15747
-      Y: 15991.3389
-      Z: -51.8345337
+      X: 745.061584
+      Y: 13742.8838
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -62.7258606
+      Yaw: -62.7259
     }
     Scale {
       X: 7.33154345
@@ -7418,7 +7770,7 @@ Objects {
       Z: 0.351998538
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7441,6 +7793,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7455,12 +7808,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 1529.10962
-      Y: 15936.6787
-      Z: -51.8346558
+      X: 963.013733
+      Y: 13688.2236
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -157.914047
+      Yaw: -157.914063
     }
     Scale {
       X: 7.90943193
@@ -7468,7 +7821,7 @@ Objects {
       Z: 0.379744142
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7491,6 +7844,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7505,9 +7859,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 1819.1062
-      Y: 16112.4092
-      Z: -51.8346558
+      X: 1253.01025
+      Y: 13863.9541
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 109.649109
@@ -7518,7 +7872,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7541,6 +7895,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7555,12 +7910,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 2185.81543
-      Y: 16188.6436
-      Z: -51.8346558
+      X: 1619.71948
+      Y: 13940.1885
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 148.30925
+      Yaw: 148.309219
     }
     Scale {
       X: 5.47296524
@@ -7568,7 +7923,7 @@ Objects {
       Z: 0.262765557
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7591,6 +7946,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7605,12 +7961,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3017.15039
-      Y: 16380.6123
-      Z: -51.8346558
+      X: 2451.05444
+      Y: 14132.1572
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -65.9744568
+      Yaw: -65.9745
     }
     Scale {
       X: 6.35666418
@@ -7618,7 +7974,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7641,6 +7997,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7655,12 +8012,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6146.85645
-      Y: 13145.9131
-      Z: -51.8345337
+      X: 5580.76074
+      Y: 10897.458
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -148.064285
+      Yaw: -148.064209
     }
     Scale {
       X: 6.35666656
@@ -7668,7 +8025,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7691,6 +8048,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7705,12 +8063,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5584.0415
-      Y: 13478.3164
-      Z: -51.8346558
+      X: 5017.9458
+      Y: 11229.8613
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -148.064285
+      Yaw: -148.064209
     }
     Scale {
       X: 6.35666418
@@ -7718,7 +8076,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7741,6 +8099,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7755,12 +8114,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5235.82959
-      Y: 14193.998
-      Z: -51.8346558
+      X: 4669.73389
+      Y: 11945.543
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 66.2204437
+      Yaw: 66.2204895
     }
     Scale {
       X: 4.74522352
@@ -7768,7 +8127,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7791,6 +8150,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7805,12 +8165,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5109.84814
-      Y: 14546.7266
-      Z: -51.8346558
+      X: 4543.75244
+      Y: 12298.2715
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 27.559351
+      Yaw: 27.5593128
     }
     Scale {
       X: 4.74522352
@@ -7818,7 +8178,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7841,6 +8201,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7855,9 +8216,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4895.88184
-      Y: 14809.7793
-      Z: -51.8346558
+      X: 4329.78613
+      Y: 12561.3242
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 119.996292
@@ -7868,7 +8229,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7891,6 +8252,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7905,12 +8267,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4920.02441
-      Y: 15033.1777
-      Z: -51.8345337
+      X: 4353.92871
+      Y: 12784.7227
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -144.815598
+      Yaw: -144.815582
     }
     Scale {
       X: 6.35666656
@@ -7918,7 +8280,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7941,6 +8303,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -7955,12 +8318,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4443.00928
-      Y: 15344.4639
-      Z: -51.8346558
+      X: 3876.91333
+      Y: 13096.0088
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -144.815598
+      Yaw: -144.815582
     }
     Scale {
       X: 6.35666418
@@ -7968,7 +8331,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7991,6 +8354,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8005,12 +8369,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5960.91064
-      Y: 13842.8
-      Z: -51.8346558
+      X: 5394.81494
+      Y: 11594.3447
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -144.815598
+      Yaw: -144.815582
     }
     Scale {
       X: 6.35667229
@@ -8018,7 +8382,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8041,6 +8405,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8055,12 +8420,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4372.26025
-      Y: 15544.0313
-      Z: -51.8346558
+      X: 3806.16431
+      Y: 13295.5762
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -134.047134
+      Yaw: -134.047073
     }
     Scale {
       X: 6.35666418
@@ -8068,7 +8433,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8091,6 +8456,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8105,9 +8471,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3476.48779
-      Y: 16327.9443
-      Z: -51.8346558
+      X: 2910.39185
+      Y: 14079.4893
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 130.765961
@@ -8118,7 +8484,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8141,6 +8507,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8155,12 +8522,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3799.49341
-      Y: 16134.8154
-      Z: -51.8346558
+      X: 3233.39746
+      Y: 13886.3604
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 38.3284836
+      Yaw: 38.3284187
     }
     Scale {
       X: 4.74522352
@@ -8168,7 +8535,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8191,6 +8558,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8205,12 +8573,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 3925.50562
-      Y: 15786.5352
-      Z: -51.8346558
+      X: 3359.40967
+      Y: 13538.0801
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 76.9882126
+      Yaw: 76.9881439
     }
     Scale {
       X: 4.74522352
@@ -8218,7 +8586,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8241,6 +8609,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8255,12 +8624,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7426.01514
-      Y: 8042.12744
-      Z: -51.8346558
+      X: 6859.91943
+      Y: 5793.67188
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 27.4341259
+      Yaw: 27.4340858
     }
     Scale {
       X: 4.74522352
@@ -8268,7 +8637,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8291,6 +8660,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8305,12 +8675,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7816.25
-      Y: 8273.12305
-      Z: -51.8346558
+      X: 7250.1543
+      Y: 6024.66797
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 2.91375208
+      Yaw: 2.91375399
     }
     Scale {
       X: 4.74522352
@@ -8318,7 +8688,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8341,6 +8711,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8355,9 +8726,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 8062.28174
-      Y: 8535.2
-      Z: -51.8346558
+      X: 7496.18604
+      Y: 6286.74512
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 95.3513947
@@ -8368,7 +8739,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8391,6 +8762,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8405,12 +8777,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 8125.87744
-      Y: 8634.80078
-      Z: -51.8345337
+      X: 7559.78174
+      Y: 6386.3457
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -169.462128
+      Yaw: -169.462112
     }
     Scale {
       X: 6.35666656
@@ -8418,7 +8790,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8441,6 +8813,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8455,12 +8828,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7723.13037
-      Y: 9149.62402
-      Z: -51.8346558
+      X: 7157.03467
+      Y: 6901.16895
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -169.462128
+      Yaw: -169.462112
     }
     Scale {
       X: 6.35666418
@@ -8468,7 +8841,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8491,6 +8864,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8505,9 +8879,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7460.84766
-      Y: 7506.31445
-      Z: -51.8346558
+      X: 6894.75195
+      Y: 5257.85938
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 176.397446
@@ -8518,7 +8892,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8541,6 +8915,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8555,12 +8930,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7660.03027
-      Y: 9943.01855
-      Z: -51.8346558
+      X: 7093.93457
+      Y: 7694.56348
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 44.82201
+      Yaw: 44.8219604
     }
     Scale {
       X: 4.74522352
@@ -8568,7 +8943,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8591,6 +8966,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8605,12 +8981,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7527.1416
-      Y: 10278.4756
-      Z: -51.8346558
+      X: 6961.0459
+      Y: 8030.02051
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 6.16203213
+      Yaw: 6.16204643
     }
     Scale {
       X: 4.74522352
@@ -8618,7 +8994,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8641,6 +9017,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8655,9 +9032,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7568.18555
-      Y: 10640.3887
-      Z: -51.8346558
+      X: 7002.09
+      Y: 8391.93359
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 98.598793
@@ -8668,7 +9045,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8691,6 +9068,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8705,12 +9083,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7690.38574
-      Y: 10865.0361
-      Z: -51.835022
+      X: 7124.29
+      Y: 8616.58105
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -166.21347
+      Yaw: -166.213409
     }
     Scale {
       X: 6.35666656
@@ -8718,7 +9096,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8741,6 +9119,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8755,12 +9134,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7234.19092
-      Y: 11357.3125
-      Z: -51.8346558
+      X: 6668.09521
+      Y: 9108.85742
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -166.21347
+      Yaw: -166.213409
     }
     Scale {
       X: 6.35666418
@@ -8768,7 +9147,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8791,6 +9170,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8805,12 +9185,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7954.42041
-      Y: 9382.66602
-      Z: -51.8346558
+      X: 7388.32471
+      Y: 7134.21094
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -166.21347
+      Yaw: -166.213409
     }
     Scale {
       X: 6.35666752
@@ -8818,7 +9198,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8841,6 +9221,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8855,12 +9236,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7344.04346
-      Y: 11570.5908
-      Z: -51.8346558
+      X: 6777.94775
+      Y: 9322.13574
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -155.445496
+      Yaw: -155.445557
     }
     Scale {
       X: 6.35666418
@@ -8868,7 +9249,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8891,6 +9272,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8905,12 +9287,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6022.93066
-      Y: 12902.1914
-      Z: -51.8346558
+      X: 5456.83496
+      Y: 10653.7363
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -155.445496
+      Yaw: -155.445557
     }
     Scale {
       X: 6.35666418
@@ -8918,7 +9300,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8941,6 +9323,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -8955,12 +9338,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6538.38965
-      Y: 12500.2549
-      Z: -51.8345337
+      X: 5972.29395
+      Y: 10251.8
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -155.445496
+      Yaw: -155.445557
     }
     Scale {
       X: 6.35666656
@@ -8968,7 +9351,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8991,6 +9374,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9005,9 +9389,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6500.80908
-      Y: 12388.2188
-      Z: -51.8346558
+      X: 5934.71338
+      Y: 10139.7637
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 109.368629
@@ -9018,7 +9402,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9041,6 +9425,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9055,12 +9440,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6528.11475
-      Y: 12025.0166
-      Z: -51.8346558
+      X: 5962.01904
+      Y: 9776.56152
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 16.9313202
+      Yaw: 16.9313583
     }
     Scale {
       X: 4.74522352
@@ -9068,7 +9453,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9091,6 +9476,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9105,12 +9491,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6721.34668
-      Y: 11720.3037
-      Z: -51.8346558
+      X: 6155.25098
+      Y: 9471.84863
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 55.5911713
+      Yaw: 55.5911217
     }
     Scale {
       X: 4.74522352
@@ -9118,7 +9504,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9141,6 +9527,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9155,12 +9542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6998.15527
-      Y: 5478.94727
-      Z: -51.8346558
+      X: 6432.05957
+      Y: 3230.49194
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 165.628281
+      Yaw: 165.628204
     }
     Scale {
       X: 6.35666418
@@ -9168,7 +9555,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9191,6 +9578,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9205,12 +9593,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7263.35156
-      Y: 7370.12
-      Z: -51.8346558
+      X: 6697.25586
+      Y: 5121.66504
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 165.628281
+      Yaw: 165.628204
     }
     Scale {
       X: 6.35666418
@@ -9218,7 +9606,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9241,6 +9629,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9255,12 +9644,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7411.79102
-      Y: 6733.55566
-      Z: -51.8345337
+      X: 6845.69531
+      Y: 4485.10059
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 165.628281
+      Yaw: 165.628204
     }
     Scale {
       X: 6.35666656
@@ -9268,7 +9657,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9291,6 +9680,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9305,9 +9695,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7312.1665
-      Y: 6670.00781
-      Z: -51.8346558
+      X: 6746.0708
+      Y: 4421.55273
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 70.4408722
@@ -9318,7 +9708,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9341,6 +9731,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9355,12 +9746,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7105.19775
-      Y: 6370.29834
-      Z: -51.8346558
+      X: 6539.10205
+      Y: 4121.84277
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -21.9961243
+      Yaw: -21.9960804
     }
     Scale {
       X: 4.74522352
@@ -9368,7 +9759,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9391,6 +9782,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9405,12 +9797,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7064.05762
-      Y: 6011.83
-      Z: -51.8346558
+      X: 6497.96191
+      Y: 3763.37476
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 16.6640835
+      Yaw: 16.6641331
     }
     Scale {
       X: 4.74522352
@@ -9418,7 +9810,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9441,6 +9833,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9455,12 +9848,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6989.74219
-      Y: 4776.02734
-      Z: -51.8346558
+      X: 6423.64648
+      Y: 2527.57202
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 24.7872105
+      Yaw: 24.7871437
     }
     Scale {
       X: 4.74522352
@@ -9468,7 +9861,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9491,6 +9884,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9505,12 +9899,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6979.81689
-      Y: 5136.70947
-      Z: -51.8346558
+      X: 6413.72119
+      Y: 2888.25415
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -13.87323
+      Yaw: -13.8732901
     }
     Scale {
       X: 4.74522352
@@ -9518,7 +9912,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9541,6 +9935,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9555,12 +9950,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7142.36182
-      Y: 5462.65576
-      Z: -51.8346558
+      X: 6576.26611
+      Y: 3214.20044
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 78.5643921
+      Yaw: 78.5643387
     }
     Scale {
       X: 6.8577137
@@ -9568,7 +9963,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9591,6 +9986,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9605,12 +10001,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 7232.01221
-      Y: 5539.6416
-      Z: -51.8345337
+      X: 6665.9165
+      Y: 3291.18628
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 173.750168
+      Yaw: 173.750122
     }
     Scale {
       X: 6.35666656
@@ -9618,7 +10014,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9641,6 +10037,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9655,12 +10052,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6995.11523
-      Y: 6148.84619
-      Z: -51.8346558
+      X: 6429.01953
+      Y: 3900.39087
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 173.750168
+      Yaw: 173.750122
     }
     Scale {
       X: 6.35666418
@@ -9668,7 +10065,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9691,6 +10088,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9705,12 +10103,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6999.79492
-      Y: 4239.17871
-      Z: -51.8346558
+      X: 6433.69922
+      Y: 1990.72339
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 173.750168
+      Yaw: 173.750122
     }
     Scale {
       X: 6.35666418
@@ -9718,7 +10116,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9741,6 +10139,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9755,12 +10154,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6443.97559
-      Y: 2235.33716
-      Z: -51.8346558
+      X: 5877.88
+      Y: -13.1181641
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 162.981644
+      Yaw: 162.981583
     }
     Scale {
       X: 6.35666418
@@ -9768,7 +10167,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9791,6 +10190,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9805,12 +10205,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6796.2207
-      Y: 4112.24854
-      Z: -51.8346558
+      X: 6230.125
+      Y: 1863.79321
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 162.981644
+      Yaw: 162.981583
     }
     Scale {
       X: 6.35666418
@@ -9818,7 +10218,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9841,6 +10241,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9855,12 +10256,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6915.10693
-      Y: 3469.50732
-      Z: -51.8345337
+      X: 6349.01123
+      Y: 1221.052
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 162.981644
+      Yaw: 162.981583
     }
     Scale {
       X: 6.35666656
@@ -9868,7 +10269,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9891,6 +10292,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9905,12 +10307,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6812.65381
-      Y: 3410.63037
-      Z: -51.8346558
+      X: 6246.55811
+      Y: 1162.17505
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 67.7945251
+      Yaw: 67.7945633
     }
     Scale {
       X: 6.8577137
@@ -9918,7 +10320,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9941,6 +10343,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -9955,12 +10358,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6592.06543
-      Y: 3120.79639
-      Z: -51.8346558
+      X: 6025.96973
+      Y: 872.341064
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -24.6424561
+      Yaw: -24.6423893
     }
     Scale {
       X: 4.74522352
@@ -9968,7 +10371,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9991,6 +10394,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10005,12 +10409,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6534.41553
-      Y: 2764.60938
-      Z: -51.8346558
+      X: 5968.32
+      Y: 516.154053
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 14.0177
+      Yaw: 14.0177584
     }
     Scale {
       X: 4.74522352
@@ -10018,7 +10422,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10041,6 +10445,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10055,9 +10460,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5724.29346
-      Y: 196.901062
-      Z: -51.8346558
+      X: 5158.19775
+      Y: -2051.5542
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 159.733124
@@ -10068,7 +10473,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10091,6 +10496,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10105,9 +10511,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6182.30859
-      Y: 2050.83618
-      Z: -51.8346558
+      X: 5616.21289
+      Y: -197.619141
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: 159.733124
@@ -10118,7 +10524,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10141,6 +10547,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10155,9 +10562,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6264.59082
-      Y: 1402.39209
-      Z: -51.8345337
+      X: 5698.49512
+      Y: -846.063232
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 159.733124
@@ -10168,7 +10575,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10191,6 +10598,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10205,12 +10613,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 6158.96338
-      Y: 1349.41333
-      Z: -51.8346558
+      X: 5592.86768
+      Y: -899.042
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 64.5473
+      Yaw: 64.5473557
     }
     Scale {
       X: 6.8577137
@@ -10218,7 +10626,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10241,6 +10649,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10255,12 +10664,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5922.30859
-      Y: 1072.5459
-      Z: -51.8346558
+      X: 5356.21289
+      Y: -1175.90942
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -27.8905334
+      Yaw: -27.8904972
     }
     Scale {
       X: 4.74522352
@@ -10268,7 +10677,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10291,6 +10700,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10305,12 +10715,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5844.57471
-      Y: 720.19812
-      Z: -51.8346558
+      X: 5278.479
+      Y: -1528.2572
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 10.7699528
+      Yaw: 10.7699995
     }
     Scale {
       X: 4.74522352
@@ -10318,7 +10728,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10341,6 +10751,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10355,12 +10766,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4699.66357
-      Y: -1612.64185
-      Z: -51.8346558
+      X: 4133.56787
+      Y: -3861.09717
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 148.964554
+      Yaw: 148.964539
     }
     Scale {
       X: 6.35666418
@@ -10368,7 +10779,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10391,6 +10802,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10405,12 +10817,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5496.0376
-      Y: 123.058716
-      Z: -51.8346558
+      X: 4929.94189
+      Y: -2125.39648
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 148.964554
+      Yaw: 148.964539
     }
     Scale {
       X: 6.35666418
@@ -10418,7 +10830,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10441,6 +10853,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10455,12 +10868,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5455.70166
-      Y: -529.33844
-      Z: -51.8345337
+      X: 4889.60596
+      Y: -2777.7937
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 148.964584
+      Yaw: 148.964539
     }
     Scale {
       X: 6.35666656
@@ -10468,7 +10881,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10491,6 +10904,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10505,12 +10919,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5342.03809
-      Y: -561.647217
-      Z: -51.8346558
+      X: 4775.94238
+      Y: -2810.10254
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 53.7771339
+      Yaw: 53.7771492
     }
     Scale {
       X: 6.8577137
@@ -10518,7 +10932,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10541,6 +10955,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10555,12 +10970,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 5057.81494
-      Y: -789.420105
-      Z: -51.8346558
+      X: 4491.71924
+      Y: -3037.87549
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -38.6601563
+      Yaw: -38.6600914
     }
     Scale {
       X: 4.74522352
@@ -10568,7 +10983,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10591,6 +11006,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -10605,9 +11021,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 4915.6084
-      Y: -1121.03687
-      Z: -51.8346558
+      X: 4349.5127
+      Y: -3369.49219
+      Z: 0.000732421875
     }
     Rotation {
     }
@@ -10617,7 +11033,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 14057557456320347689
+  ParentId: 10362187502428539853
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10640,6 +11056,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableCastShadows: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {

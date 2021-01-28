@@ -1,16 +1,254 @@
 Name: "Ice_BGLake"
 RootId: 8500039128324169559
 Objects {
+  Id: 16847505016753347319
+  Name: "MergedModel"
+  Transform {
+    Location {
+      X: -14597.3076
+      Y: -22173.791
+      Z: -51.8369751
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8500039128324169559
+  ChildIds: 12234839971333645017
+  ChildIds: 6429280664175872226
+  ChildIds: 8554803120925083435
+  ChildIds: 160338356618617314
+  ChildIds: 16568676334606025621
+  ChildIds: 71451194343504971
+  ChildIds: 8321703424095328847
+  ChildIds: 11670235434188334975
+  ChildIds: 16478217008762451547
+  ChildIds: 17408600945610103457
+  ChildIds: 17685969688926236505
+  ChildIds: 4188590529688362997
+  ChildIds: 2598925355686077257
+  ChildIds: 18349930034594128193
+  ChildIds: 15110356042566866576
+  ChildIds: 13119476003610968852
+  ChildIds: 4664222309075515556
+  ChildIds: 17971368787754136768
+  ChildIds: 10279965684912573666
+  ChildIds: 7493002383311369804
+  ChildIds: 5376428618372307326
+  ChildIds: 661799419745519068
+  ChildIds: 10419038635157581018
+  ChildIds: 15022877169201530618
+  ChildIds: 3741972161276175371
+  ChildIds: 11064698909232263984
+  ChildIds: 4293377163396998178
+  ChildIds: 16878801656026751736
+  ChildIds: 10598885784545400034
+  ChildIds: 16114957936905322543
+  ChildIds: 15626253386538296805
+  ChildIds: 13843590694137824558
+  ChildIds: 8985087193397686380
+  ChildIds: 17010593389111171117
+  ChildIds: 5337261350005418610
+  ChildIds: 5328386587473068088
+  ChildIds: 13512715973278025843
+  ChildIds: 1154003227947764278
+  ChildIds: 9526985209495355703
+  ChildIds: 5989593807676123012
+  ChildIds: 18063687584794400872
+  ChildIds: 10893483689879645989
+  ChildIds: 14509207165421747528
+  ChildIds: 696392567935806188
+  ChildIds: 16177589208158714013
+  ChildIds: 7977251254624029975
+  ChildIds: 17650626176341732296
+  ChildIds: 7903705353158658937
+  ChildIds: 10567116927221450066
+  ChildIds: 10527761184002716054
+  ChildIds: 1770188224636587994
+  ChildIds: 8114341868243476689
+  ChildIds: 17461522447661899560
+  ChildIds: 10156692358642284157
+  ChildIds: 11064974057896766668
+  ChildIds: 15113939511098744440
+  ChildIds: 6399407768328223681
+  ChildIds: 11323980296514585006
+  ChildIds: 11130134836279255279
+  ChildIds: 10987979730566991897
+  ChildIds: 17249103802956254499
+  ChildIds: 11884099865628630242
+  ChildIds: 10643957938622545264
+  ChildIds: 6730348074700390170
+  ChildIds: 17610269919443491152
+  ChildIds: 12623883105401400559
+  ChildIds: 7691161993768804778
+  ChildIds: 7834305416815684505
+  ChildIds: 6457464835200463567
+  ChildIds: 7032187845635142482
+  ChildIds: 967420425656937471
+  ChildIds: 12132896007479591899
+  ChildIds: 1318460887252917574
+  ChildIds: 16016262577976721964
+  ChildIds: 17091808708795585486
+  ChildIds: 8091907365244317628
+  ChildIds: 10181864457918599190
+  ChildIds: 7237146530514405124
+  ChildIds: 3836083933032559311
+  ChildIds: 15070977623630842273
+  ChildIds: 13157603599072999634
+  ChildIds: 10422953140533600734
+  ChildIds: 16902714629388299256
+  ChildIds: 4249728438792233724
+  ChildIds: 4730404950644415699
+  ChildIds: 8831996290947782828
+  ChildIds: 10505114811955229312
+  ChildIds: 3480355245517725313
+  ChildIds: 4522536612446881126
+  ChildIds: 577061244479592970
+  ChildIds: 11489466669031421027
+  ChildIds: 12113693234485351828
+  ChildIds: 10125539989879420608
+  ChildIds: 8576736163889409997
+  ChildIds: 11643893765250716327
+  ChildIds: 15019962475574262206
+  ChildIds: 789315687227526254
+  ChildIds: 1604005930867243826
+  ChildIds: 11667109267191987113
+  ChildIds: 1236634630274304224
+  ChildIds: 17896408644871502446
+  ChildIds: 16712502954693945284
+  ChildIds: 8869511177990757643
+  ChildIds: 7054526466222892870
+  ChildIds: 8115452932630923577
+  ChildIds: 11950341663230554717
+  ChildIds: 15403541334572657890
+  ChildIds: 4408244088608851413
+  ChildIds: 3675169536536523690
+  ChildIds: 1127977361389809095
+  ChildIds: 1802984552588896002
+  ChildIds: 14973022840235084100
+  ChildIds: 61965134088775080
+  ChildIds: 297265847127461500
+  ChildIds: 8235536953230319846
+  ChildIds: 7866412782887123357
+  ChildIds: 7229568841797085160
+  ChildIds: 1311925308567535169
+  ChildIds: 997685566151689351
+  ChildIds: 17406008479772925755
+  ChildIds: 10360431682781436008
+  ChildIds: 15737196530589554322
+  ChildIds: 4181300291408924343
+  ChildIds: 7591650737681536772
+  ChildIds: 14514619455689643385
+  ChildIds: 8776168378386070378
+  ChildIds: 2316420205160824805
+  ChildIds: 10441639692392951751
+  ChildIds: 6650726121942122793
+  ChildIds: 10654256386406001331
+  ChildIds: 1723035783452758398
+  ChildIds: 15445652561320836839
+  ChildIds: 3625928455664873265
+  ChildIds: 7238386264883614681
+  ChildIds: 13420107691838963867
+  ChildIds: 11595977957428261362
+  ChildIds: 6369864553717469281
+  ChildIds: 12662245006335705094
+  ChildIds: 4858753435743386999
+  ChildIds: 7702866488126596306
+  ChildIds: 748429252665959311
+  ChildIds: 3010898594605184116
+  ChildIds: 7082340501026717724
+  ChildIds: 4769097866359904454
+  ChildIds: 12372334152118801614
+  ChildIds: 18118921917287700401
+  ChildIds: 2117392955059403864
+  ChildIds: 3428029094341977980
+  ChildIds: 6099718033104425077
+  ChildIds: 13301792310664561151
+  ChildIds: 2073804860692770012
+  ChildIds: 18421920434852307049
+  ChildIds: 601468489826310763
+  ChildIds: 14018738880143421023
+  ChildIds: 4719005016725749186
+  ChildIds: 3706646527111138187
+  ChildIds: 13312563516697682187
+  ChildIds: 15162967354999754660
+  ChildIds: 1418264114643855314
+  ChildIds: 9111622389719630783
+  ChildIds: 8510145748753967261
+  ChildIds: 16443362481553924574
+  ChildIds: 3945752886604896405
+  ChildIds: 3363214308199568311
+  ChildIds: 14038682143443524708
+  ChildIds: 4532030286422638655
+  ChildIds: 15791557561763483719
+  ChildIds: 17713372026979624377
+  ChildIds: 3103078057021421159
+  ChildIds: 7240957556016550437
+  ChildIds: 5317544768873439580
+  ChildIds: 13757614031007508276
+  ChildIds: 2750444095731199030
+  ChildIds: 14132319797171586471
+  ChildIds: 2899777541479361534
+  ChildIds: 11079373675958941796
+  ChildIds: 13339856001589660417
+  ChildIds: 17812766422104825581
+  ChildIds: 9823523725241911947
+  ChildIds: 11620799136209782222
+  ChildIds: 2765442442767587870
+  ChildIds: 1939202162264279784
+  ChildIds: 2942839480856181562
+  ChildIds: 299620860300913120
+  ChildIds: 6625918614107486335
+  ChildIds: 860819238550228683
+  ChildIds: 15878298475579375414
+  ChildIds: 15469348552423147899
+  ChildIds: 15845584614556055167
+  ChildIds: 14155176177059009956
+  ChildIds: 16725006826196925828
+  ChildIds: 18100677478924082194
+  ChildIds: 8917161211374218700
+  ChildIds: 2207551941487834775
+  ChildIds: 14947187285352472118
+  ChildIds: 5309864512509869925
+  ChildIds: 5659742062722757793
+  ChildIds: 9136584783836701162
+  ChildIds: 10304105272895812900
+  ChildIds: 2445633285708941967
+  ChildIds: 12088874926699755064
+  ChildIds: 5757510063982485940
+  ChildIds: 15890533776259393780
+  ChildIds: 17192057315527326905
+  ChildIds: 14926676746349749504
+  ChildIds: 9367864800408047400
+  ChildIds: 13028341014030742745
+  ChildIds: 8524317863984996973
+  ChildIds: 17195988606592839195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    Model {
+    }
+  }
+}
+Objects {
   Id: 17195988606592839195
   Name: "Ice"
   Transform {
     Location {
-      X: 30367.8516
-      Y: -35376.4492
-      Z: -51.8358765
+      X: 44965.1602
+      Y: -13202.6582
+      Z: 0.00109863281
     }
     Rotation {
-      Yaw: -66.5053711
+      Yaw: -66.5053864
     }
     Scale {
       X: 6.35666656
@@ -18,7 +256,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -55,12 +293,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 30255.6309
-      Y: -35934.125
-      Z: -51.8363647
+      X: 44852.9375
+      Y: -13760.334
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: -66.5053711
+      Yaw: -66.5053864
     }
     Scale {
       X: 6.35666418
@@ -68,7 +306,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -105,12 +343,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 29933.0078
-      Y: -35987.1094
-      Z: -51.8362427
+      X: 44530.3164
+      Y: -13813.3184
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -39.6305237
+      Yaw: -39.6305084
     }
     Scale {
       X: 6.35666418
@@ -118,7 +356,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -155,9 +393,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 29727.7285
-      Y: -36269.2656
-      Z: -51.8363647
+      X: 44325.0352
+      Y: -14095.4746
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: 171.401489
@@ -168,7 +406,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -205,12 +443,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 40632.1563
-      Y: -37820.5117
-      Z: -51.8361206
+      X: 55229.4648
+      Y: -15646.7207
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -166.20871
+      Yaw: -166.208679
     }
     Scale {
       X: 6.35666656
@@ -218,7 +456,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -255,12 +493,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 40237.6094
-      Y: -37216.3398
-      Z: -51.8357544
+      X: 54834.918
+      Y: -15042.5488
+      Z: 0.00122070313
     }
     Rotation {
-      Yaw: 133.074554
+      Yaw: 133.07457
     }
     Scale {
       X: 6.8577137
@@ -268,7 +506,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -305,12 +543,11 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 40338.5977
-      Y: -37269.0586
-      Z: -51.8369751
+      X: 54935.9063
+      Y: -15095.2676
     }
     Rotation {
-      Yaw: 33.6911392
+      Yaw: 33.6911545
     }
     Scale {
       X: 4.74522352
@@ -318,7 +555,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -355,12 +592,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 39459.3633
-      Y: -36453.4453
-      Z: -51.8364868
+      X: 54056.6719
+      Y: -14279.6543
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -147.455444
+      Yaw: -147.455414
     }
     Scale {
       X: 6.35666418
@@ -368,7 +605,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -405,12 +642,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 39995.9102
-      Y: -36801.5
-      Z: -51.8361206
+      X: 54593.2188
+      Y: -14627.709
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -147.455444
+      Yaw: -147.455414
     }
     Scale {
       X: 6.35666656
@@ -418,7 +655,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -455,12 +692,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 40032.0156
-      Y: -37024.1484
-      Z: -51.8363647
+      X: 54629.3242
+      Y: -14850.3574
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 117.355652
+      Yaw: 117.355637
     }
     Scale {
       X: 6.8577137
@@ -468,7 +705,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -505,9 +742,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 38173.1055
-      Y: -35981.5
-      Z: -51.8355103
+      X: 52770.4141
+      Y: -13807.709
+      Z: 0.00146484375
     }
     Rotation {
       Yaw: 160.076614
@@ -518,7 +755,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -555,12 +792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 38286.9844
-      Y: -35982.6289
-      Z: -51.836731
+      X: 52884.293
+      Y: -13808.8379
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 60.6936531
+      Yaw: 60.6936569
     }
     Scale {
       X: 4.74522352
@@ -568,7 +805,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -605,12 +842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 39411.2891
-      Y: -36176.1914
-      Z: -51.8364868
+      X: 54008.5977
+      Y: -14002.4
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -111.681702
+      Yaw: -111.681694
     }
     Scale {
       X: 6.35667229
@@ -618,7 +855,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -655,12 +892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 38705.7539
-      Y: -36260.5508
-      Z: -51.8366089
+      X: 53303.0625
+      Y: -14086.7598
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 99.3532791
+      Yaw: 99.3532944
     }
     Scale {
       X: 4.74522352
@@ -668,7 +905,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -705,9 +942,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 37902.6445
-      Y: -35903.6172
-      Z: -51.8361206
+      X: 52499.9531
+      Y: -13729.8262
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 144.358627
@@ -718,7 +955,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -755,9 +992,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 37769.4102
-      Y: -35721.5977
-      Z: -51.8358765
+      X: 52366.7188
+      Y: -13547.8066
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: -120.452972
@@ -768,7 +1005,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -805,12 +1042,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 37061.3203
-      Y: -35582.7
-      Z: -51.8355103
+      X: 51658.6289
+      Y: -13408.9082
+      Z: 0.00146484375
     }
     Rotation {
-      Yaw: 178.830505
+      Yaw: 178.83049
     }
     Scale {
       X: 6.8577137
@@ -818,7 +1055,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -855,12 +1092,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 37169.5352
-      Y: -35547.1328
-      Z: -51.836731
+      X: 51766.8438
+      Y: -13373.3418
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 79.4471436
+      Yaw: 79.4471207
     }
     Scale {
       X: 4.74522352
@@ -868,7 +1105,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -905,9 +1142,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 35240.6602
-      Y: -35724.9805
-      Z: -51.8361206
+      X: 49837.9688
+      Y: -13551.1895
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 136.208359
@@ -918,7 +1155,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -955,12 +1192,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 35677.625
-      Y: -35465.2891
-      Z: -51.8361206
+      X: 50274.9336
+      Y: -13291.498
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -74.8240356
+      Yaw: -74.824
     }
     Scale {
       X: 6.35666418
@@ -968,7 +1205,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1005,12 +1242,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 35971.8086
-      Y: -35607.9219
-      Z: -51.8362427
+      X: 50569.1172
+      Y: -13434.1309
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -101.699707
+      Yaw: -101.699715
     }
     Scale {
       X: 6.35666418
@@ -1018,7 +1255,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1055,12 +1292,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 36595.5
-      Y: -35466.4
-      Z: -51.8358765
+      X: 51192.8086
+      Y: -13292.6074
+      Z: 0.00109863281
     }
     Rotation {
-      Yaw: -101.699707
+      Yaw: -101.699715
     }
     Scale {
       X: 6.35666656
@@ -1068,7 +1305,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1105,9 +1342,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 36780.1914
-      Y: -35595.8945
-      Z: -51.8361206
+      X: 51377.5
+      Y: -13422.1035
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 163.111526
@@ -1118,7 +1355,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1155,12 +1392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 34858.9492
-      Y: -35391.3125
-      Z: -51.8366089
+      X: 49456.2578
+      Y: -13217.5215
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 140.900223
+      Yaw: 140.900238
     }
     Scale {
       X: 4.74522352
@@ -1168,7 +1405,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1205,12 +1442,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 34685.7539
-      Y: -35609.7734
-      Z: -51.8363647
+      X: 49283.0625
+      Y: -13435.9824
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: -165.321564
+      Yaw: -165.321533
     }
     Scale {
       X: 6.8577137
@@ -1218,7 +1455,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1255,12 +1492,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 34433.2266
-      Y: -35143.7266
-      Z: -51.8364868
+      X: 49030.5352
+      Y: -12969.9355
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -80.9025269
+      Yaw: -80.9025192
     }
     Scale {
       X: 6.35667229
@@ -1268,7 +1505,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1305,12 +1542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 32322.2207
-      Y: -35287.3945
-      Z: -51.8355103
+      X: 46919.5273
+      Y: -13113.6035
+      Z: 0.00146484375
     }
     Rotation {
-      Yaw: 173.045593
+      Yaw: 173.045578
     }
     Scale {
       X: 6.8577137
@@ -1318,7 +1555,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1355,9 +1592,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 34314.0859
-      Y: -35648.4023
-      Z: -51.8366089
+      X: 48911.3945
+      Y: -13474.6113
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 123.090286
@@ -1368,7 +1605,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1405,9 +1642,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 33723.3164
-      Y: -35441.5039
-      Z: -51.8363647
+      X: 48320.625
+      Y: -13267.7129
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: 176.866257
@@ -1418,7 +1655,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1455,12 +1692,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 32433.4473
-      Y: -35262.9375
-      Z: -51.836731
+      X: 47030.7539
+      Y: -13089.1465
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 73.6624374
+      Yaw: 73.6624146
     }
     Scale {
       X: 4.74522352
@@ -1468,7 +1705,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1505,12 +1742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 33572.5156
-      Y: -35199.2461
-      Z: -51.8364868
+      X: 48169.8242
+      Y: -13025.4551
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -98.7127686
+      Yaw: -98.7127762
     }
     Scale {
       X: 6.35667229
@@ -1518,7 +1755,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1555,12 +1792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 32903.9102
-      Y: -35439.7813
-      Z: -51.8366089
+      X: 47501.2188
+      Y: -13265.9902
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 112.32206
+      Yaw: 112.322037
     }
     Scale {
       X: 4.74522352
@@ -1568,7 +1805,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1605,12 +1842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 30496.4688
-      Y: -35245.457
-      Z: -51.8361206
+      X: 45093.7773
+      Y: -13071.666
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 130.422821
+      Yaw: 130.422806
     }
     Scale {
       X: 4.74522352
@@ -1618,7 +1855,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1655,12 +1892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 30957.4023
-      Y: -35031.1055
-      Z: -51.8361206
+      X: 45554.7109
+      Y: -12857.3145
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -80.6098633
+      Yaw: -80.609848
     }
     Scale {
       X: 6.35666418
@@ -1668,7 +1905,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1705,9 +1942,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 31235.7188
-      Y: -35202.668
-      Z: -51.8362427
+      X: 45833.0273
+      Y: -13028.877
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: -107.484329
@@ -1718,7 +1955,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1755,9 +1992,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 31870.4941
-      Y: -35124.7188
-      Z: -51.8358765
+      X: 46467.8
+      Y: -12950.9277
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: -107.484329
@@ -1768,7 +2005,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1805,9 +2042,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: 32041.1797
-      Y: -35272.2
-      Z: -51.8361206
+      X: 46638.4883
+      Y: -13098.4082
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 157.327423
@@ -1818,7 +2055,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1855,12 +2092,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5656.00732
-      Y: -34487.3047
-      Z: -51.8355713
+      X: 8941.30078
+      Y: -12313.5137
+      Z: 0.00140380859
     }
     Rotation {
-      Yaw: 127.477554
+      Yaw: 127.477539
     }
     Scale {
       X: 6.8577137
@@ -1868,7 +2105,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1905,12 +2142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5362.03369
-      Y: -34407.418
-      Z: -51.836731
+      X: 9235.27344
+      Y: -12233.627
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 28.0947323
+      Yaw: 28.0947227
     }
     Scale {
       X: 4.74522352
@@ -1918,7 +2155,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1955,9 +2192,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -6356.12598
-      Y: -33652.1523
-      Z: -51.8363037
+      X: 8241.18164
+      Y: -11478.3613
+      Z: 0.000671386719
     }
     Rotation {
       Yaw: -153.052277
@@ -1968,7 +2205,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2005,9 +2242,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5856.08789
-      Y: -34050.8555
-      Z: -51.8359375
+      X: 8741.22
+      Y: -11877.0645
+      Z: 0.00103759766
     }
     Rotation {
       Yaw: -153.052277
@@ -2018,7 +2255,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2055,12 +2292,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5841.88916
-      Y: -34275.9766
-      Z: -51.8361816
+      X: 8755.41797
+      Y: -12102.1855
+      Z: 0.000793457031
     }
     Rotation {
-      Yaw: 111.758263
+      Yaw: 111.75824
     }
     Scale {
       X: 6.8577137
@@ -2068,7 +2305,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2105,12 +2342,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -6870.57764
-      Y: -32801.0156
-      Z: -51.8355103
+      X: 7726.73
+      Y: -10627.2246
+      Z: 0.00146484375
     }
     Rotation {
-      Yaw: 165.532867
+      Yaw: 165.532852
     }
     Scale {
       X: 6.8577137
@@ -2118,7 +2355,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2155,12 +2392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5673.37695
-      Y: -33761.4063
-      Z: -51.8366699
+      X: 8923.93066
+      Y: -11587.6152
+      Z: 0.000305175781
     }
     Rotation {
-      Yaw: 115.576767
+      Yaw: 115.576752
     }
     Scale {
       X: 9.26940918
@@ -2168,7 +2405,7 @@ Objects {
       Z: 0.445039153
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2205,12 +2442,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5769.88867
-      Y: -33413.8828
-      Z: -51.8363647
+      X: 8827.41895
+      Y: -11240.0918
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 169.353592
+      Yaw: 169.353561
     }
     Scale {
       X: 6.8577137
@@ -2218,7 +2455,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2255,12 +2492,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -6757.09473
-      Y: -32791.3047
-      Z: -51.836731
+      X: 7840.21289
+      Y: -10617.5137
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 66.1497955
+      Yaw: 66.1498108
     }
     Scale {
       X: 4.74522352
@@ -2268,7 +2505,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2305,12 +2542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -5856.12598
-      Y: -33204.2383
-      Z: -51.8365479
+      X: 8741.18164
+      Y: -11030.4473
+      Z: 0.000427246094
     }
     Rotation {
-      Yaw: -106.225677
+      Yaw: -106.225693
     }
     Scale {
       X: 6.35667229
@@ -2318,7 +2555,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2355,12 +2592,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -6313.8042
-      Y: -33028.1523
-      Z: -51.8366089
+      X: 8283.50391
+      Y: -10854.3613
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 104.809731
+      Yaw: 104.809753
     }
     Scale {
       X: 4.74522352
@@ -2368,7 +2605,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2405,12 +2642,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -8675.1543
-      Y: -32520.7109
-      Z: -51.8361206
+      X: 5922.15332
+      Y: -10346.9199
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 122.910408
+      Yaw: 122.910423
     }
     Scale {
       X: 4.74522352
@@ -2418,7 +2655,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2455,9 +2692,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -8190.16699
-      Y: -32368.4727
-      Z: -51.8361206
+      X: 6407.14063
+      Y: -10194.6816
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: -88.1233521
@@ -2468,7 +2705,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2505,12 +2742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -7936.67
-      Y: -32574.957
-      Z: -51.8362427
+      X: 6660.6377
+      Y: -10401.166
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -114.997559
+      Yaw: -114.997528
     }
     Scale {
       X: 6.35666418
@@ -2518,7 +2755,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2555,12 +2792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -7297.15771
-      Y: -32580.6797
-      Z: -51.8358765
+      X: 7300.15
+      Y: -10406.8887
+      Z: 0.00109863281
     }
     Rotation {
-      Yaw: -114.997559
+      Yaw: -114.997528
     }
     Scale {
       X: 6.35666656
@@ -2568,7 +2805,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2605,12 +2842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -7147.21
-      Y: -32749.1953
-      Z: -51.8361206
+      X: 7450.09766
+      Y: -10575.4043
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 149.813644
+      Yaw: 149.813629
     }
     Scale {
       X: 6.8577137
@@ -2618,7 +2855,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2655,12 +2892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -8969.87305
-      Y: -32108.1797
-      Z: -51.8366089
+      X: 5627.43457
+      Y: -9934.38867
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 127.602325
+      Yaw: 127.602295
     }
     Scale {
       X: 4.74522352
@@ -2668,7 +2905,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2705,9 +2942,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -9188.67
-      Y: -32280.9453
-      Z: -51.8363647
+      X: 5408.6377
+      Y: -10107.1543
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: -178.620651
@@ -2718,7 +2955,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2755,9 +2992,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -9327.24
-      Y: -31769.3184
-      Z: -51.8364868
+      X: 5270.06738
+      Y: -9595.52734
+      Z: 0.00048828125
     }
     Rotation {
       Yaw: -94.2012
@@ -2768,7 +3005,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2805,9 +3042,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -11414.6855
-      Y: -31423.5586
-      Z: -51.8355103
+      X: 3182.62207
+      Y: -9249.76758
+      Z: 0.00146484375
     }
     Rotation {
       Yaw: 159.748123
@@ -2818,7 +3055,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2855,9 +3092,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -9997.49121
-      Y: -32237.4512
-      Z: -51.8366089
+      X: 4599.81641
+      Y: -10063.6602
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 109.792145
@@ -2868,7 +3105,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2905,12 +3142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -10082.957
-      Y: -31989.4141
-      Z: -51.8363647
+      X: 4514.35059
+      Y: -9815.62305
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 163.568985
+      Yaw: 163.56897
     }
     Scale {
       X: 6.8577137
@@ -2918,7 +3155,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2955,9 +3192,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -11300.8018
-      Y: -31425.334
-      Z: -51.836731
+      X: 3296.50586
+      Y: -9251.54297
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: 60.3646088
@@ -2968,7 +3205,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3005,12 +3242,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -10177.6426
-      Y: -31625.3457
-      Z: -51.8364868
+      X: 4419.66504
+      Y: -9451.55469
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -112.010681
+      Yaw: -112.010666
     }
     Scale {
       X: 6.35667229
@@ -3018,7 +3255,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3055,9 +3292,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -10883.6426
-      Y: -31705.6602
-      Z: -51.8366089
+      X: 3713.66504
+      Y: -9531.86914
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 99.0250778
@@ -3068,7 +3305,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3105,12 +3342,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -13181.8262
-      Y: -30962.7871
-      Z: -51.8361206
+      X: 1415.48145
+      Y: -8788.99609
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 117.125389
+      Yaw: 117.125374
     }
     Scale {
       X: 4.74522352
@@ -3118,7 +3355,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3155,9 +3392,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -12683.9561
-      Y: -30860.2031
-      Z: -51.8361206
+      X: 1913.35156
+      Y: -8686.41211
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: -93.9084473
@@ -3168,7 +3405,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3205,9 +3442,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -12452.5635
-      Y: -31091.1895
-      Z: -51.8362427
+      X: 2144.74414
+      Y: -8917.39844
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: -120.782791
@@ -3218,7 +3455,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3255,9 +3492,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -11816.8838
-      Y: -31161.3457
-      Z: -51.8358765
+      X: 2780.42383
+      Y: -8987.55469
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: -120.782791
@@ -3268,7 +3505,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3305,9 +3542,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -11684.6875
-      Y: -31344.1191
-      Z: -51.8361206
+      X: 2912.62
+      Y: -9170.32813
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 144.029
@@ -3318,7 +3555,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3355,9 +3592,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -14989.125
-      Y: -30021.8594
-      Z: -51.8355103
+      X: -391.817383
+      Y: -7848.06836
+      Z: 0.00146484375
     }
     Rotation {
       Yaw: 171.77327
@@ -3368,7 +3605,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3405,9 +3642,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -13433.4648
-      Y: -30522.6504
-      Z: -51.8366089
+      X: 1163.84277
+      Y: -8348.85938
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 121.817345
@@ -3418,7 +3655,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3455,9 +3692,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -13828.3457
-      Y: -30511.4668
-      Z: -51.8363647
+      X: 768.961914
+      Y: -8337.67578
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: 175.594437
@@ -3468,7 +3705,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3505,12 +3742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -14877.3711
-      Y: -29999.8672
-      Z: -51.836731
+      X: -280.063477
+      Y: -7826.07617
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 72.389267
+      Yaw: 72.3892593
     }
     Scale {
       X: 4.74522352
@@ -3518,7 +3755,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3555,12 +3792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -13754.8574
-      Y: -30149.4961
-      Z: -51.8364868
+      X: 842.450195
+      Y: -7975.70508
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -99.9861755
+      Yaw: -99.9861832
     }
     Scale {
       X: 6.35667229
@@ -3568,7 +3805,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3605,9 +3842,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -14410.9639
-      Y: -30187.1387
-      Z: -51.8366089
+      X: 186.34375
+      Y: -8013.34766
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 111.049461
@@ -3618,7 +3855,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3655,12 +3892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -16813.4844
-      Y: -29939.3555
-      Z: -51.8361206
+      X: -2216.17676
+      Y: -7765.56445
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 129.150452
+      Yaw: 129.150421
     }
     Scale {
       X: 4.74522352
@@ -3668,7 +3905,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3705,9 +3942,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -17219.8516
-      Y: -29758.666
-      Z: -51.8358765
+      X: -2622.54395
+      Y: -7584.875
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: -177.072403
@@ -3718,7 +3955,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3755,12 +3992,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -16347.9141
-      Y: -29735.293
-      Z: -51.8361206
+      X: -1750.60645
+      Y: -7561.50195
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -81.8838501
+      Yaw: -81.8838348
     }
     Scale {
       X: 6.35666418
@@ -3768,7 +4005,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3805,12 +4042,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -16073.4736
-      Y: -29913.0098
-      Z: -51.8362427
+      X: -1476.16602
+      Y: -7739.21875
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -108.75827
+      Yaw: -108.758263
     }
     Scale {
       X: 6.35666418
@@ -3818,7 +4055,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3855,12 +4092,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -15437.125
-      Y: -29849.1953
-      Z: -51.8358765
+      X: -839.817383
+      Y: -7675.4043
+      Z: 0.00109863281
     }
     Rotation {
-      Yaw: -108.75827
+      Yaw: -108.758263
     }
     Scale {
       X: 6.35666656
@@ -3868,7 +4105,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3905,12 +4142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -15269.751
-      Y: -30000.4141
-      Z: -51.8361206
+      X: -672.443359
+      Y: -7826.62305
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 156.054031
+      Yaw: 156.054047
     }
     Scale {
       X: 6.8577137
@@ -3918,7 +4155,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3955,9 +4192,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -18448.5566
-      Y: -30700.4551
-      Z: -51.836853
+      X: -3851.24902
+      Y: -8526.66406
+      Z: 0.000122070313
     }
     Rotation {
       Yaw: 121.817345
@@ -3968,7 +4205,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4005,9 +4242,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -18843.4375
-      Y: -30689.2715
-      Z: -51.8366089
+      X: -4246.13
+      Y: -8515.48
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 175.594437
@@ -4018,7 +4255,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4055,12 +4292,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -18769.9492
-      Y: -30327.3
-      Z: -51.836731
+      X: -4172.6416
+      Y: -8153.51
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -99.9861755
+      Yaw: -99.9861832
     }
     Scale {
       X: 6.35667229
@@ -4068,7 +4305,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4105,9 +4342,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -19499.6289
-      Y: -30688.8184
-      Z: -51.836853
+      X: -4902.32129
+      Y: -8515.02734
+      Z: 0.000122070313
     }
     Rotation {
       Yaw: 111.049461
@@ -4118,7 +4355,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4155,9 +4392,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -18294.3047
-      Y: -29509.9492
-      Z: -51.8366089
+      X: -3696.99707
+      Y: -7336.1582
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 121.817345
@@ -4168,7 +4405,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4205,9 +4442,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -18689.1855
-      Y: -29498.7656
-      Z: -51.8363647
+      X: -4091.87793
+      Y: -7324.97461
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: 175.594437
@@ -4218,7 +4455,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4255,12 +4492,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -17821.4043
-      Y: -29586.8789
-      Z: -51.8366089
+      X: -3224.09668
+      Y: -7413.08789
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -89.2171936
+      Yaw: -89.217186
     }
     Scale {
       X: 6.35666418
@@ -4268,7 +4505,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4305,12 +4542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -17571.8906
-      Y: -29798.1641
-      Z: -51.836731
+      X: -2974.58301
+      Y: -7624.37305
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -116.09201
+      Yaw: -116.091995
     }
     Scale {
       X: 6.35666418
@@ -4318,7 +4555,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4355,12 +4592,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -18615.6973
-      Y: -29136.7949
-      Z: -51.8364868
+      X: -4018.38965
+      Y: -6963.00391
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -99.9861755
+      Yaw: -99.9861832
     }
     Scale {
       X: 6.35667229
@@ -4368,7 +4605,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4405,9 +4642,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -19345.377
-      Y: -29498.3125
-      Z: -51.8366089
+      X: -4748.06934
+      Y: -7324.52148
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 111.049461
@@ -4418,7 +4655,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4455,12 +4692,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -22003.8613
-      Y: -28317.7754
-      Z: -51.8355103
+      X: -7406.55371
+      Y: -6143.98438
+      Z: 0.00146484375
     }
     Rotation {
-      Yaw: 139.146927
+      Yaw: 139.146896
     }
     Scale {
       X: 6.8577137
@@ -4468,7 +4705,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4505,12 +4742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -20345.209
-      Y: -28645.0039
-      Z: -51.8366089
+      X: -5747.90137
+      Y: -6471.21289
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 121.817322
+      Yaw: 121.817345
     }
     Scale {
       X: 4.74522352
@@ -4518,7 +4755,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4555,12 +4792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -20740.0898
-      Y: -28633.8203
-      Z: -51.8363647
+      X: -6142.78223
+      Y: -6460.0293
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 175.594452
+      Yaw: 175.594437
     }
     Scale {
       X: 6.8577137
@@ -4568,7 +4805,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4605,12 +4842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -19872.3086
-      Y: -28721.9336
-      Z: -51.8366089
+      X: -5275.00098
+      Y: -6548.14258
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -89.2171936
+      Yaw: -89.217186
     }
     Scale {
       X: 6.35666418
@@ -4618,7 +4855,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4655,12 +4892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -19622.7949
-      Y: -28933.2188
-      Z: -51.836731
+      X: -5025.4873
+      Y: -6759.42773
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: -116.092041
+      Yaw: -116.092026
     }
     Scale {
       X: 6.35666418
@@ -4668,7 +4905,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4705,12 +4942,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -18920.9023
-      Y: -28870.4375
-      Z: -51.8361206
+      X: -4323.59473
+      Y: -6696.64648
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -116.092041
+      Yaw: -116.092026
     }
     Scale {
       X: 6.35666656
@@ -4718,7 +4955,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4755,12 +4992,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -21586.1289
-      Y: -28286.5527
-      Z: -51.836731
+      X: -6988.82129
+      Y: -6112.76172
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 72.3893
+      Yaw: 72.3892746
     }
     Scale {
       X: 4.74522352
@@ -4768,7 +5005,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4805,12 +5042,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -20666.6016
-      Y: -28271.8496
-      Z: -51.8364868
+      X: -6069.29395
+      Y: -6098.05859
+      Z: 0.00048828125
     }
     Rotation {
-      Yaw: -99.9861755
+      Yaw: -99.9861832
     }
     Scale {
       X: 6.35667229
@@ -4818,7 +5055,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4855,9 +5092,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -21396.2813
-      Y: -28633.3672
-      Z: -51.8366089
+      X: -6798.97363
+      Y: -6459.57617
+      Z: 0.000366210938
     }
     Rotation {
       Yaw: 111.049461
@@ -4868,7 +5105,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4905,12 +5142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -25425.3672
-      Y: -27728.8691
-      Z: -51.835022
+      X: -10828.0596
+      Y: -5555.07813
+      Z: 0.001953125
     }
     Rotation {
-      Yaw: 146.480118
+      Yaw: 146.480087
     }
     Scale {
       X: 6.8577137
@@ -4918,7 +5155,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4955,12 +5192,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -25862.2813
-      Y: -27725.3145
-      Z: -51.835083
+      X: -11264.9736
+      Y: -5551.52344
+      Z: 0.00189208984
     }
     Rotation {
-      Yaw: 34.9563293
+      Yaw: 34.9563332
     }
     Scale {
       X: 4.74522352
@@ -4968,7 +5205,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5005,12 +5242,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -23725.2324
-      Y: -28061.709
-      Z: -51.8361206
+      X: -9127.9248
+      Y: -5887.91797
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 129.150513
+      Yaw: 129.150482
     }
     Scale {
       X: 4.74522352
@@ -5018,7 +5255,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5055,9 +5292,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -24131.6016
-      Y: -27881.0195
-      Z: -51.8358765
+      X: -9534.29395
+      Y: -5707.22852
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: -177.072403
@@ -5068,7 +5305,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5105,12 +5342,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -23259.6621
-      Y: -27857.6465
-      Z: -51.8361206
+      X: -8662.35449
+      Y: -5683.85547
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -81.8838806
+      Yaw: -81.8838654
     }
     Scale {
       X: 6.35666418
@@ -5118,7 +5355,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5155,12 +5392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -22985.2227
-      Y: -28035.3633
-      Z: -51.8362427
+      X: -8387.91504
+      Y: -5861.57227
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -108.75827
+      Yaw: -108.758263
     }
     Scale {
       X: 6.35666418
@@ -5168,7 +5405,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5205,12 +5442,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -22348.8711
-      Y: -27971.5488
-      Z: -51.8358765
+      X: -7751.56348
+      Y: -5797.75781
+      Z: 0.00109863281
     }
     Rotation {
-      Yaw: -108.75827
+      Yaw: -108.758263
     }
     Scale {
       X: 6.35666656
@@ -5218,7 +5455,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5255,12 +5492,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -22284.4883
-      Y: -28296.3301
-      Z: -51.8361206
+      X: -7687.18066
+      Y: -6122.53906
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 156.054
+      Yaw: 156.054016
     }
     Scale {
       X: 6.8577137
@@ -5268,7 +5505,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5305,12 +5542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -25042.1094
-      Y: -27737.5176
-      Z: -51.8362427
+      X: -10444.8018
+      Y: -5563.72656
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 79.7224045
+      Yaw: 79.7223892
     }
     Scale {
       X: 4.74522352
@@ -5318,7 +5555,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5355,9 +5592,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -24104.9199
-      Y: -27512.6387
-      Z: -51.836
+      X: -9507.6123
+      Y: -5338.84766
+      Z: 0.0009765625
     }
     Rotation {
       Yaw: -92.6523743
@@ -5368,7 +5605,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5405,9 +5642,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -24782.5
-      Y: -27964.3242
-      Z: -51.8361206
+      X: -10185.1924
+      Y: -5790.5332
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 118.382774
@@ -5418,7 +5655,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5455,12 +5692,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -28378.0586
-      Y: -25007.1133
-      Z: -51.835022
+      X: -13780.751
+      Y: -2833.32227
+      Z: 0.001953125
     }
     Rotation {
-      Yaw: 111.018692
+      Yaw: 111.018684
     }
     Scale {
       X: 6.8577137
@@ -5468,7 +5705,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5505,12 +5742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -28731.8672
-      Y: -24750.7344
-      Z: -51.835083
+      X: -14134.5596
+      Y: -2576.94336
+      Z: 0.00189208984
     }
     Rotation {
-      Yaw: -0.506256104
+      Yaw: -0.506256
     }
     Scale {
       X: 4.74522352
@@ -5518,7 +5755,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5555,12 +5792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -27186.4121
-      Y: -26264.5742
-      Z: -51.8361206
+      X: -12589.1045
+      Y: -4090.7832
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 93.6880722
+      Yaw: 93.6880646
     }
     Scale {
       X: 4.74522352
@@ -5568,7 +5805,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5605,12 +5842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -27412.5684
-      Y: -25881.6387
-      Z: -51.8358765
+      X: -12815.2607
+      Y: -3707.84766
+      Z: 0.00109863281
     }
     Rotation {
-      Yaw: 147.465332
+      Yaw: 147.465302
     }
     Scale {
       X: 6.8577137
@@ -5618,7 +5855,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5655,12 +5892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -26688.8184
-      Y: -26368.4805
-      Z: -51.8361206
+      X: -12091.5107
+      Y: -4194.68945
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -117.346619
+      Yaw: -117.346588
     }
     Scale {
       X: 6.35666418
@@ -5668,7 +5905,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5705,9 +5942,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -26568.3887
-      Y: -26672.4473
-      Z: -51.8362427
+      X: -11971.0811
+      Y: -4498.65625
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: -144.221329
@@ -5718,7 +5955,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5755,9 +5992,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -26013.0605
-      Y: -26989.666
-      Z: -51.8358765
+      X: -11415.7529
+      Y: -4815.875
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: -144.221329
@@ -5768,7 +6005,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5805,9 +6042,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -26026.0645
-      Y: -27279.0078
-      Z: -51.8361206
+      X: -11428.7568
+      Y: -5105.2168
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 120.59137
@@ -5818,7 +6055,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5855,12 +6092,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -28070.918
-      Y: -25236.5098
-      Z: -51.8362427
+      X: -13473.6104
+      Y: -3062.71875
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 44.2602539
+      Yaw: 44.260231
     }
     Scale {
       X: 4.74522352
@@ -5868,7 +6105,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5905,12 +6142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -27177.1094
-      Y: -25597.0859
-      Z: -51.836
+      X: -12579.8018
+      Y: -3423.29492
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -128.114883
+      Yaw: -128.114868
     }
     Scale {
       X: 6.35667229
@@ -5918,7 +6155,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5955,9 +6192,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -27991.0449
-      Y: -25571.8633
-      Z: -51.8361206
+      X: -13393.7373
+      Y: -3398.07227
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 82.9201279
@@ -5968,7 +6205,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6005,9 +6242,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31677.2383
-      Y: -20613.9531
-      Z: -51.8361206
+      X: -17079.9297
+      Y: 1559.83789
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 108.356598
@@ -6018,7 +6255,7 @@ Objects {
       Z: 0.289328277
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6055,12 +6292,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -30763.668
-      Y: -21208.6621
-      Z: -51.8355103
+      X: -16166.3604
+      Y: 965.128906
+      Z: 0.00146484375
     }
     Rotation {
-      Yaw: 94.1452332
+      Yaw: 94.1452255
     }
     Scale {
       X: 6.8577137
@@ -6068,7 +6305,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6105,12 +6342,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31083.875
-      Y: -20681.0703
-      Z: -51.8356323
+      X: -16486.5664
+      Y: 1492.7207
+      Z: 0.00134277344
     }
     Rotation {
-      Yaw: -9.05990601
+      Yaw: -9.0599184
     }
     Scale {
       X: 4.74522352
@@ -6118,7 +6355,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6155,12 +6392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31027.8281
-      Y: -20860.627
-      Z: -51.8355713
+      X: -16430.5195
+      Y: 1313.16406
+      Z: 0.00140380859
     }
     Rotation {
-      Yaw: -17.3789368
+      Yaw: -17.3789482
     }
     Scale {
       X: 4.74522352
@@ -6168,7 +6405,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6205,12 +6442,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -29988.2852
-      Y: -22757.8594
-      Z: -51.8366089
+      X: -15390.9775
+      Y: -584.068359
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 76.8156128
+      Yaw: 76.8156
     }
     Scale {
       X: 4.74522352
@@ -6218,7 +6455,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6255,12 +6492,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -30093.5586
-      Y: -22325.7734
-      Z: -51.8363647
+      X: -15496.251
+      Y: -151.982422
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 130.592865
+      Yaw: 130.59285
     }
     Scale {
       X: 6.8577137
@@ -6268,7 +6505,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6305,12 +6542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -29542.2656
-      Y: -23001.7227
-      Z: -51.8366089
+      X: -14944.958
+      Y: -827.931641
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: -134.219101
+      Yaw: -134.219086
     }
     Scale {
       X: 6.35666418
@@ -6318,7 +6555,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6355,9 +6592,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -29515.25
-      Y: -23327.5547
-      Z: -51.836731
+      X: -14917.9424
+      Y: -1153.76367
+      Z: 0.000244140625
     }
     Rotation {
       Yaw: -161.094162
@@ -6368,7 +6605,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6405,9 +6642,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -28974.5586
-      Y: -23779.4883
-      Z: -51.8361206
+      X: -14377.251
+      Y: -1605.69727
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: -161.094162
@@ -6418,7 +6655,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6455,12 +6692,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -29214.5938
-      Y: -24099.5801
-      Z: -51.8363647
+      X: -14617.2861
+      Y: -1925.78906
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 103.719101
+      Yaw: 103.719116
     }
     Scale {
       X: 6.8577137
@@ -6468,7 +6705,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6505,12 +6742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -29082.9414
-      Y: -24412.0527
-      Z: -51.8363647
+      X: -14485.6338
+      Y: -2238.26172
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 11.2811432
+      Yaw: 11.2811604
     }
     Scale {
       X: 4.74522352
@@ -6518,7 +6755,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6555,12 +6792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -30536.3281
-      Y: -21517.3262
-      Z: -51.836731
+      X: -15939.0205
+      Y: 656.464844
+      Z: 0.000244140625
     }
     Rotation {
-      Yaw: 27.3877506
+      Yaw: 27.3877373
     }
     Scale {
       X: 4.74522352
@@ -6568,7 +6805,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6605,9 +6842,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -29785.6406
-      Y: -22121.8047
-      Z: -51.8364868
+      X: -15188.333
+      Y: 51.9863281
+      Z: 0.00048828125
     }
     Rotation {
       Yaw: -144.987808
@@ -6618,7 +6855,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6655,12 +6892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -30557.2227
-      Y: -21861.4434
-      Z: -51.8366089
+      X: -15959.915
+      Y: 312.347656
+      Z: 0.000366210938
     }
     Rotation {
-      Yaw: 66.0478134
+      Yaw: 66.0478287
     }
     Scale {
       X: 4.74522352
@@ -6668,7 +6905,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6705,12 +6942,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31972.2246
-      Y: -16065.5313
-      Z: -51.835022
+      X: -17374.918
+      Y: 6108.26
+      Z: 0.001953125
     }
     Rotation {
-      Yaw: 62.3480263
+      Yaw: 62.3480339
     }
     Scale {
       X: 6.8577137
@@ -6718,7 +6955,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6755,12 +6992,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32058.957
-      Y: -17790.7773
-      Z: -51.8361206
+      X: -17461.6484
+      Y: 4383.01367
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 63.7843742
+      Yaw: 63.7843857
     }
     Scale {
       X: 4.74522352
@@ -6768,7 +7005,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6805,9 +7042,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31991.3125
-      Y: -17368.0703
-      Z: -51.8358765
+      X: -17394.0039
+      Y: 4805.7207
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: 98.7956085
@@ -6818,7 +7055,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6855,12 +7092,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31679.416
-      Y: -18128.9336
-      Z: -51.8361206
+      X: -17082.1094
+      Y: 4044.85742
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -147.25061
+      Yaw: -147.250595
     }
     Scale {
       X: 6.35666418
@@ -6868,7 +7105,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6905,9 +7142,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31726.5586
-      Y: -18452.4688
-      Z: -51.8362427
+      X: -17129.25
+      Y: 3721.32227
+      Z: 0.000732421875
     }
     Rotation {
       Yaw: -174.12619
@@ -6918,7 +7155,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6955,9 +7192,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31403.3184
-      Y: -19004.3164
-      Z: -51.8358765
+      X: -16806.0117
+      Y: 3169.47461
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: -174.12619
@@ -6968,7 +7205,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7005,9 +7242,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31709.3555
-      Y: -19262.0469
-      Z: -51.8361206
+      X: -17112.0469
+      Y: 2911.74414
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 90.6867371
@@ -7018,7 +7255,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7055,12 +7292,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31651.5469
-      Y: -19596.1523
-      Z: -51.8361206
+      X: -17054.2383
+      Y: 2577.63867
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -1.75115967
+      Yaw: -1.75115955
     }
     Scale {
       X: 4.74522352
@@ -7068,7 +7305,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7105,12 +7342,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31714.3945
-      Y: -19965.3711
-      Z: -51.8361206
+      X: -17117.0859
+      Y: 2208.42
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 36.9091949
+      Yaw: 36.9091797
     }
     Scale {
       X: 4.74522352
@@ -7118,7 +7355,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7155,12 +7392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31941.6504
-      Y: -16447.6641
-      Z: -51.8362427
+      X: -17344.3438
+      Y: 5726.12695
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -4.40942383
+      Yaw: -4.40942574
     }
     Scale {
       X: 4.74522352
@@ -7168,7 +7405,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7205,9 +7442,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31622.1426
-      Y: -17356.9648
-      Z: -51.836
+      X: -17024.8359
+      Y: 4816.82617
+      Z: 0.0009765625
     }
     Rotation {
       Yaw: -176.784775
@@ -7218,7 +7455,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7255,12 +7492,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32140.7227
-      Y: -16729.1172
-      Z: -51.8361206
+      X: -17543.4141
+      Y: 5444.67383
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 34.2506485
+      Yaw: 34.2506638
     }
     Scale {
       X: 4.74522352
@@ -7268,7 +7505,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7305,9 +7542,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -33614.9766
-      Y: -11013.8291
-      Z: -51.8356323
+      X: -19017.668
+      Y: 11159.9619
+      Z: 0.00134277344
     }
     Rotation {
       Yaw: 96.5436859
@@ -7318,7 +7555,7 @@ Objects {
       Z: 0.289328277
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7355,12 +7592,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34343.4766
-      Y: -8974.95117
-      Z: -51.8356323
+      X: -19746.168
+      Y: 13198.8398
+      Z: 0.00134277344
     }
     Rotation {
-      Yaw: -172.907455
+      Yaw: -172.90744
     }
     Scale {
       X: 9.40502548
@@ -7368,7 +7605,7 @@ Objects {
       Z: 0.451550066
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7405,12 +7642,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -33987.8164
-      Y: -9725.05078
-      Z: -51.836
+      X: -19390.5078
+      Y: 12448.7402
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -172.907455
+      Yaw: -172.90744
     }
     Scale {
       X: 9.40503
@@ -7418,7 +7655,7 @@ Objects {
       Z: 0.451550066
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7455,9 +7692,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34114.2969
-      Y: -9910.77148
-      Z: -51.8361206
+      X: -19516.9883
+      Y: 12263.0195
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 91.9058151
@@ -7468,7 +7705,7 @@ Objects {
       Z: 0.487142742
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7505,12 +7742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34049.4023
-      Y: -10243.5781
-      Z: -51.8361206
+      X: -19452.0938
+      Y: 11930.2129
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -0.532318115
+      Yaw: -0.532318056
     }
     Scale {
       X: 7.02081585
@@ -7518,7 +7755,7 @@ Objects {
       Z: 0.33708027
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7555,12 +7792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34104.3828
-      Y: -10614.0625
-      Z: -51.8361206
+      X: -19507.0742
+      Y: 11559.7285
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 38.12817
+      Yaw: 38.1281471
     }
     Scale {
       X: 7.02081585
@@ -7568,7 +7805,7 @@ Objects {
       Z: 0.33708027
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7605,12 +7842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32842.5
-      Y: -11782.9688
-      Z: -51.835022
+      X: -18245.1914
+      Y: 10390.8223
+      Z: 0.001953125
     }
     Rotation {
-      Yaw: 82.3321304
+      Yaw: 82.3321228
     }
     Scale {
       X: 6.8577137
@@ -7618,7 +7855,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7655,12 +7892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -33047.918
-      Y: -11200.9971
-      Z: -51.835144
+      X: -18450.6094
+      Y: 10972.7939
+      Z: 0.00183105469
     }
     Rotation {
-      Yaw: -20.8729248
+      Yaw: -20.8729172
     }
     Scale {
       X: 4.74522352
@@ -7668,7 +7905,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7705,12 +7942,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -33029.8242
-      Y: -11388.2285
-      Z: -51.835083
+      X: -18432.5156
+      Y: 10785.5625
+      Z: 0.00189208984
     }
     Rotation {
-      Yaw: -29.191864
+      Yaw: -29.1918621
     }
     Scale {
       X: 4.74522352
@@ -7718,7 +7955,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7755,12 +7992,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32400.7
-      Y: -13458.0918
-      Z: -51.8361206
+      X: -17803.3906
+      Y: 8715.69922
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 65.0027847
+      Yaw: 65.0028076
     }
     Scale {
       X: 4.74522352
@@ -7768,7 +8005,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7805,9 +8042,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32415.2793
-      Y: -13013.6025
-      Z: -51.8358765
+      X: -17817.9727
+      Y: 9160.18848
+      Z: 0.00109863281
     }
     Rotation {
       Yaw: 118.779739
@@ -7818,7 +8055,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7855,12 +8092,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32014.0508
-      Y: -13788.0957
-      Z: -51.8361206
+      X: -17416.7422
+      Y: 8385.69531
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -146.032578
+      Yaw: -146.032547
     }
     Scale {
       X: 6.35666418
@@ -7868,7 +8105,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7905,12 +8142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32054.3066
-      Y: -14112.5625
-      Z: -51.8362427
+      X: -17457
+      Y: 8061.22852
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: -172.907455
+      Yaw: -172.90744
     }
     Scale {
       X: 6.35666418
@@ -7918,7 +8155,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7955,12 +8192,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31719.4082
-      Y: -14657.4072
-      Z: -51.8358765
+      X: -17122.1016
+      Y: 7516.38379
+      Z: 0.00109863281
     }
     Rotation {
-      Yaw: -172.907455
+      Yaw: -172.90744
     }
     Scale {
       X: 6.35666656
@@ -7968,7 +8205,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8005,9 +8242,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32019.8867
-      Y: -14921.5801
-      Z: -51.8361206
+      X: -17422.5781
+      Y: 7252.21094
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 91.9058151
@@ -8018,7 +8255,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8055,12 +8292,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -31954.9922
-      Y: -15254.3887
-      Z: -51.8361206
+      X: -17357.6836
+      Y: 6919.40234
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -0.532318115
+      Yaw: -0.532318056
     }
     Scale {
       X: 4.74522352
@@ -8068,7 +8305,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8105,12 +8342,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32009.9727
-      Y: -15624.8721
-      Z: -51.8361206
+      X: -17412.6641
+      Y: 6548.91895
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 38.12817
+      Yaw: 38.1281471
     }
     Scale {
       X: 4.74522352
@@ -8118,7 +8355,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8155,12 +8392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32683.1699
-      Y: -12131.6426
-      Z: -51.8362427
+      X: -18085.8633
+      Y: 10042.1484
+      Z: 0.000732421875
     }
     Rotation {
-      Yaw: 15.5745258
+      Yaw: 15.574543
     }
     Scale {
       X: 4.74522352
@@ -8168,7 +8405,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8205,9 +8442,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32072.1367
-      Y: -12876.9941
-      Z: -51.836
+      X: -17474.8281
+      Y: 9296.79688
+      Z: 0.0009765625
     }
     Rotation {
       Yaw: -156.800903
@@ -8218,7 +8455,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8255,9 +8492,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -32774.0664
-      Y: -12464.1797
-      Z: -51.8361206
+      X: -18176.7578
+      Y: 9709.61133
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 54.2347336
@@ -8268,7 +8505,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8305,12 +8542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35015.6797
-      Y: -4782.47754
-      Z: -51.835144
+      X: -20418.3711
+      Y: 17391.3125
+      Z: 0.00183105469
     }
     Rotation {
-      Yaw: 82.3321609
+      Yaw: 82.3321457
     }
     Scale {
       X: 6.8577137
@@ -8318,7 +8555,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8355,12 +8592,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35099.1953
-      Y: -3974.53564
-      Z: -51.835144
+      X: -20501.8867
+      Y: 18199.2559
+      Z: 0.00183105469
     }
     Rotation {
-      Yaw: -20.8729553
+      Yaw: -20.8729458
     }
     Scale {
       X: 4.74522352
@@ -8368,7 +8605,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8405,12 +8642,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35044.3477
-      Y: -3639.91211
-      Z: -51.835144
+      X: -20447.0391
+      Y: 18533.8789
+      Z: 0.00183105469
     }
     Rotation {
-      Yaw: 71.5648499
+      Yaw: 71.5648422
     }
     Scale {
       X: 6.8577137
@@ -8418,7 +8655,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8455,12 +8692,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34861.2031
-      Y: -3509.74561
-      Z: -51.835022
+      X: -20263.8945
+      Y: 18664.0449
+      Z: 0.001953125
     }
     Rotation {
-      Yaw: 166.751465
+      Yaw: 166.751434
     }
     Scale {
       X: 6.35666656
@@ -8468,7 +8705,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8505,12 +8742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34944.7773
-      Y: -2946.32617
-      Z: -51.835144
+      X: -20347.4688
+      Y: 19227.4648
+      Z: 0.00183105469
     }
     Rotation {
-      Yaw: 166.751465
+      Yaw: 166.751434
     }
     Scale {
       X: 6.35666418
@@ -8518,7 +8755,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8555,12 +8792,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34842.4063
-      Y: -2760.98682
-      Z: -51.835144
+      X: -20245.0977
+      Y: 19412.8047
+      Z: 0.00183105469
     }
     Rotation {
-      Yaw: 177.52002
+      Yaw: 177.52
     }
     Scale {
       X: 6.35666418
@@ -8568,7 +8805,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8605,12 +8842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34585.8438
-      Y: -6345.74
-      Z: -51.8361206
+      X: -19988.5352
+      Y: 15828.0508
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 65.0027466
+      Yaw: 65.0027695
     }
     Scale {
       X: 4.74522352
@@ -8618,7 +8855,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8655,9 +8892,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34703.6836
-      Y: -5922.88379
-      Z: -51.8361206
+      X: -20106.375
+      Y: 16250.9072
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 118.779739
@@ -8668,7 +8905,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8705,12 +8942,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34199.1953
-      Y: -6675.74414
-      Z: -51.8361206
+      X: -19601.8867
+      Y: 15498.0469
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -146.032608
+      Yaw: -146.032593
     }
     Scale {
       X: 6.35666418
@@ -8718,7 +8955,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8755,12 +8992,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34218.9336
-      Y: -7010.1582
-      Z: -51.8361206
+      X: -19621.625
+      Y: 15163.6328
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -172.907486
+      Yaw: -172.907471
     }
     Scale {
       X: 6.35666418
@@ -8768,7 +9005,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8805,12 +9042,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -33944.6836
-      Y: -7509.39746
-      Z: -51.836
+      X: -19347.375
+      Y: 14664.3936
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -172.907486
+      Yaw: -172.907471
     }
     Scale {
       X: 6.35666656
@@ -8818,7 +9055,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8855,9 +9092,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34071.1641
-      Y: -7695.11816
-      Z: -51.8361206
+      X: -19473.8555
+      Y: 14478.6729
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 91.9058151
@@ -8868,7 +9105,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8905,12 +9142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34006.2695
-      Y: -8027.92578
-      Z: -51.8361206
+      X: -19408.9609
+      Y: 14145.8652
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -0.532318115
+      Yaw: -0.532318056
     }
     Scale {
       X: 4.74522352
@@ -8918,7 +9155,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8955,12 +9192,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34061.25
-      Y: -8398.4082
-      Z: -51.8361206
+      X: -19463.9414
+      Y: 13775.3828
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 38.1282158
+      Yaw: 38.1281929
     }
     Scale {
       X: 4.74522352
@@ -8968,7 +9205,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9005,12 +9242,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34843.9648
-      Y: -5155.54346
-      Z: -51.8361206
+      X: -20246.6563
+      Y: 17018.248
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 15.5744886
+      Yaw: 15.5745077
     }
     Scale {
       X: 4.74522352
@@ -9018,7 +9255,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9055,9 +9292,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35126.1445
-      Y: -4398.00391
-      Z: -51.8361206
+      X: -20528.8359
+      Y: 17775.7871
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 108.01265
@@ -9068,7 +9305,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9105,9 +9342,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34831.5703
-      Y: -5511.80859
-      Z: -51.8361206
+      X: -20234.2617
+      Y: 16661.9824
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 54.2347336
@@ -9118,7 +9355,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9155,12 +9392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -37657.4688
-      Y: 4805.17285
-      Z: -51.8363647
+      X: -23060.1602
+      Y: 26978.9648
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 75.1969681
+      Yaw: 75.1969452
     }
     Scale {
       X: 4.74522352
@@ -9168,7 +9405,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9205,12 +9442,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36886.4492
-      Y: 4571.42773
-      Z: -51.8363647
+      X: -22289.1406
+      Y: 26745.2188
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: -135.838196
+      Yaw: -135.838226
     }
     Scale {
       X: 6.35667229
@@ -9218,7 +9455,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9255,9 +9492,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36474.1172
-      Y: 3840.78076
-      Z: -51.8363647
+      X: -21876.8086
+      Y: 26014.5723
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: -125.070602
@@ -9268,7 +9505,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9305,9 +9542,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -37119.2617
-      Y: 4756.49707
-      Z: -51.8363647
+      X: -22521.9531
+      Y: 26930.2891
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: 139.743393
@@ -9318,7 +9555,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9355,12 +9592,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -37132.0742
-      Y: 4334.97168
-      Z: -51.8363647
+      X: -22534.7656
+      Y: 26508.7617
+      Z: 0.000610351563
     }
     Rotation {
-      Yaw: 47.3051
+      Yaw: 47.3050804
     }
     Scale {
       X: 4.74522352
@@ -9368,7 +9605,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9405,9 +9642,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36953.25
-      Y: 4010.60352
-      Z: -51.8363647
+      X: -22355.9414
+      Y: 26184.3945
+      Z: 0.000610351563
     }
     Rotation {
       Yaw: 85.9647
@@ -9418,7 +9655,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9455,12 +9692,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35242
-      Y: 403.539063
-      Z: -51.8361206
+      X: -20644.6914
+      Y: 22577.3301
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 65.0027161
+      Yaw: 65.0027313
     }
     Scale {
       X: 4.74522352
@@ -9468,7 +9705,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9505,12 +9742,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35292.9453
-      Y: 770.408203
-      Z: -51.8361206
+      X: -20695.6367
+      Y: 22944.2
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 26.3417072
+      Yaw: 26.3416882
     }
     Scale {
       X: 4.74522352
@@ -9518,7 +9755,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9555,9 +9792,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35130.1914
-      Y: 1159.44824
-      Z: -51.8361206
+      X: -20532.8828
+      Y: 23333.2383
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 118.779739
@@ -9568,7 +9805,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9605,12 +9842,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34855.3516
-      Y: 73.5351563
-      Z: -51.8361206
+      X: -20258.043
+      Y: 22247.3262
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -146.032639
+      Yaw: -146.032623
     }
     Scale {
       X: 6.35666418
@@ -9618,7 +9855,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9655,12 +9892,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34377.0313
-      Y: -2414.51465
-      Z: -51.8361206
+      X: -19779.7227
+      Y: 19759.2773
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -172.907516
+      Yaw: -172.907501
     }
     Scale {
       X: 6.35667229
@@ -9668,7 +9905,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9705,12 +9942,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35008.957
-      Y: -374.988281
-      Z: -51.8361206
+      X: -20411.6484
+      Y: 21798.8027
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -172.907516
+      Yaw: -172.907501
     }
     Scale {
       X: 6.35666418
@@ -9718,7 +9955,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9755,12 +9992,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34734.707
-      Y: -874.228149
-      Z: -51.836
+      X: -20137.3984
+      Y: 21299.5625
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -172.907516
+      Yaw: -172.907501
     }
     Scale {
       X: 6.35666656
@@ -9768,7 +10005,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9805,9 +10042,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34861.1875
-      Y: -1059.9491
-      Z: -51.8361206
+      X: -20263.8789
+      Y: 21113.8418
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 91.9058151
@@ -9818,7 +10055,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9855,12 +10092,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34796.293
-      Y: -1392.75562
-      Z: -51.8361206
+      X: -20198.9844
+      Y: 20781.0352
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -0.532318115
+      Yaw: -0.532318056
     }
     Scale {
       X: 4.74522352
@@ -9868,7 +10105,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9905,12 +10142,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34851.2734
-      Y: -1763.23901
-      Z: -51.8361206
+      X: -20253.9648
+      Y: 20410.5527
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 38.1282654
+      Yaw: 38.1282425
     }
     Scale {
       X: 4.74522352
@@ -9918,7 +10155,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9955,12 +10192,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35665.3477
-      Y: 1768.65234
-      Z: -51.8361206
+      X: -21068.0391
+      Y: 23942.4434
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 15.5744543
+      Yaw: 15.5744715
     }
     Scale {
       X: 4.74522352
@@ -9968,7 +10205,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10005,9 +10242,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35820.0273
-      Y: 2070.40771
-      Z: -51.8361206
+      X: -21222.7188
+      Y: 24244.2
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 108.01265
@@ -10018,7 +10255,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10055,12 +10292,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35750.0352
-      Y: 2283.9165
-      Z: -51.836
+      X: -21152.7266
+      Y: 24457.707
+      Z: 0.0009765625
     }
     Rotation {
-      Yaw: -156.800842
+      Yaw: -156.800858
     }
     Scale {
       X: 6.35666656
@@ -10068,7 +10305,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10105,12 +10342,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36151.9766
-      Y: 2687.48438
-      Z: -51.8361206
+      X: -21554.668
+      Y: 24861.2754
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -156.800842
+      Yaw: -156.800858
     }
     Scale {
       X: 6.35666418
@@ -10118,7 +10355,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10155,12 +10392,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -34979.0195
-      Y: 903.335938
-      Z: -51.8361206
+      X: -20381.7109
+      Y: 23077.127
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -156.800842
+      Yaw: -156.800858
     }
     Scale {
       X: 6.35667229
@@ -10168,7 +10405,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10205,12 +10442,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36179.7422
-      Y: 2897.38672
-      Z: -51.8361206
+      X: -21582.4336
+      Y: 25071.1777
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: -146.032639
+      Yaw: -146.032623
     }
     Scale {
       X: 6.35666418
@@ -10218,7 +10455,7 @@ Objects {
       Z: 0.305193454
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10255,9 +10492,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36454.5898
-      Y: 3983.29297
-      Z: -51.8361206
+      X: -21857.2813
+      Y: 26157.084
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 118.779739
@@ -10268,7 +10505,7 @@ Objects {
       Z: 0.32924971
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10305,12 +10542,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36617.3477
-      Y: 3594.24268
-      Z: -51.8361206
+      X: -22020.0391
+      Y: 25768.0332
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 26.3417072
+      Yaw: 26.3416882
     }
     Scale {
       X: 4.74522352
@@ -10318,7 +10555,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10355,12 +10592,12 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -36271.7578
-      Y: 3254.20825
-      Z: -51.8361206
+      X: -21674.4492
+      Y: 25428
+      Z: 0.000854492188
     }
     Rotation {
-      Yaw: 65.0027161
+      Yaw: 65.0027313
     }
     Scale {
       X: 4.74522352
@@ -10368,7 +10605,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10405,9 +10642,9 @@ Objects {
   Name: "Ice"
   Transform {
     Location {
-      X: -35615.3672
-      Y: 1397.45093
-      Z: -51.8361206
+      X: -21018.0586
+      Y: 23571.2422
+      Z: 0.000854492188
     }
     Rotation {
       Yaw: 54.2347336
@@ -10418,7 +10655,7 @@ Objects {
       Z: 0.227825701
     }
   }
-  ParentId: 8500039128324169559
+  ParentId: 16847505016753347319
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

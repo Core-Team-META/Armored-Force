@@ -1,9 +1,13 @@
 Name: "Antti (Keppu)"
 RootId: 7310433976514289622
 Objects {
-  Id: 10497288132511319859
-  Name: "Drivable French AMX50"
+  Id: 15252821927036121744
+  Name: "GrassLong"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -11,75 +15,15 @@ Objects {
     }
   }
   ParentId: 7310433976514289622
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5647169848695272940
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Drivable French AMX50"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 35254.4727
-            Y: -28034.3867
-            Z: 451.281433
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13301292553974685859
-    }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-}
-Objects {
-  Id: 7640226300313465829
-  Name: "TW3_GrassTall"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  ParentId: 7310433976514289622
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13369416937407838892
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_GrassTall"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -10531.8438
-            Y: -11173.6455
-            Z: 519.625671
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15552962776759324288
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "GrassLong"
   }
 }
 Objects {
@@ -240,7 +184,7 @@ Objects {
 }
 Objects {
   Id: 11667467784761547334
-  Name: "Bushes_BG"
+  Name: "BGTrees"
   Transform {
     Location {
       Y: -7500
@@ -263,7 +207,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Bushes_BG"
+    FilePartitionName: "BGTrees"
   }
 }
 Objects {
