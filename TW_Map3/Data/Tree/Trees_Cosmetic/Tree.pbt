@@ -14057,64 +14057,6 @@ Objects {
   }
 }
 Objects {
-  Id: 17049501800524703192
-  Name: "TW3_Tree_Cosmetic"
-  Transform {
-    Location {
-      X: 15557.292
-      Y: -20460.2
-      Z: 468.286255
-    }
-    Rotation {
-      Yaw: 36.0382462
-    }
-    Scale {
-      X: 0.511357665
-      Y: 0.511357665
-      Z: 0.511357665
-    }
-  }
-  ParentId: 9839414730760950784
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2604994596096896542
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Cosmetic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 13447.002
-            Y: -29435.0547
-            Z: 827.638306
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -14.3684387
-            Yaw: -103.534302
-            Roll: 3.57500887
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.511357665
-            Y: 0.511357665
-            Z: 0.511357665
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 192993385032307310
-    }
-  }
-}
-Objects {
   Id: 10219249955174127372
   Name: "TW3_Tree3_Cosmetic"
   Transform {
@@ -56697,7 +56639,7 @@ Objects {
           Vector {
             X: -25414.8652
             Y: 36802.5938
-            Z: 1156.80225
+            Z: 961.460205
           }
         }
         Overrides {
@@ -58342,62 +58284,6 @@ Objects {
     }
     TemplateAsset {
       Id: 192993385032307310
-    }
-  }
-}
-Objects {
-  Id: 12166518510231506216
-  Name: "TW3_Tree3_Cosmetic"
-  Transform {
-    Location {
-      X: -4395.85498
-      Y: 31790.7949
-      Z: 1200.72437
-    }
-    Rotation {
-      Yaw: 5.88374901
-    }
-    Scale {
-      X: 0.30870086
-      Y: 0.30870086
-      Z: 0.30870086
-    }
-  }
-  ParentId: 9839414730760950784
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9995830374434275925
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree3_Cosmetic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -12824.8633
-            Y: 34473.6875
-            Z: 1250.22412
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 5.8837533
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.30870086
-            Y: 0.30870086
-            Z: 0.30870086
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2004089001711231680
     }
   }
 }
@@ -74451,8 +74337,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 21051.9141
-            Y: 21855.2617
+            X: 20796.3535
+            Y: 21834.3066
             Z: 1006.41992
           }
         }
@@ -87387,8 +87273,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 11907.3105
-            Y: 12596.8486
+            X: 11597.9219
+            Y: 12741.0293
             Z: 1194.06238
           }
         }
@@ -98862,8 +98748,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -2154.40869
-            Y: 31324.1777
-            Z: 869.509521
+            Y: 30916.3789
+            Z: 794.959717
           }
         }
         Overrides {
@@ -112286,8 +112172,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 30861.1582
-            Y: 64.2579346
+            X: 30293.7
+            Y: 288.321899
             Z: 517.404541
           }
         }

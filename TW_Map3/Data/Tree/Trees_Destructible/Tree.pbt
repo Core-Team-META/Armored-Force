@@ -1,6 +1,174 @@
 Name: "Trees_Destructible"
 RootId: 9644438302980116240
 Objects {
+  Id: 7824732194102702411
+  Name: "TW3_Tree3_Destructible"
+  Transform {
+    Location {
+      X: 10209.4893
+      Y: -29061.0273
+      Z: 400.162781
+    }
+    Rotation {
+      Yaw: -20.9183598
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1186772537315395211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 15509.29
+            Y: -28512.9668
+            Z: 602.84
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -20.9183655
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7576232896759636794
+    }
+  }
+}
+Objects {
+  Id: 14807518425121152641
+  Name: "TW3_Tree3_Destructible"
+  Transform {
+    Location {
+      X: 10853.8701
+      Y: -29026.1621
+      Z: 412.433044
+    }
+    Rotation {
+      Yaw: -163.62468
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1186772537315395211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 16153.6709
+            Y: -28478.1016
+            Z: 615.110291
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -163.624664
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7576232896759636794
+    }
+  }
+}
+Objects {
+  Id: 2604220017070253166
+  Name: "TW3_Tree2_Destructible"
+  Transform {
+    Location {
+      X: 10876.0576
+      Y: -28648.4473
+      Z: 385.548218
+    }
+    Rotation {
+      Yaw: -163.62468
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7691061584645470247
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 16175.8584
+            Y: -28100.3867
+            Z: 503.771851
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -163.624664
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2230310488114005167
+    }
+  }
+}
+Objects {
   Id: 10599144284825478015
   Name: "TW3_Tree3_Destructible"
   Transform {
@@ -5657,62 +5825,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3031012799881519188
-  Name: "TW3_Tree_Destructible"
-  Transform {
-    Location {
-      X: 16199.5645
-      Y: -3664.91235
-      Z: 26.6802979
-    }
-    Rotation {
-      Yaw: 81.241188
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 16848.2617
-            Y: 19078.1348
-            Z: 484.586853
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 39.8364296
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
   Id: 4888957642628866727
   Name: "TW3_Tree3_Destructible"
   Transform {
@@ -11211,62 +11323,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11672514198538151605
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 27560.4688
-      Y: -1868.84351
-      Z: 79.2880859
-    }
-    Rotation {
-      Yaw: 16.2578907
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 29961.5195
-            Y: 13727.4072
-            Z: 303.084351
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 59.0189
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
-    }
-  }
-}
-Objects {
   Id: 12943277464640230911
   Name: "TW3_Tree_Destructible"
   Transform {
@@ -12051,106 +12107,6 @@ Objects {
   }
 }
 Objects {
-  Id: 12846587498430649701
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 15706.2148
-      Y: -21240.5645
-      Z: 12.7224426
-    }
-    Rotation {
-      Yaw: 32.7304115
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 12822.6367
-            Y: -28052.6699
-            Z: 363.822693
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
-    }
-  }
-}
-Objects {
-  Id: 14680014332004777994
-  Name: "TW3_Tree_Destructible"
-  Transform {
-    Location {
-      X: 15392.9023
-      Y: -21410.0859
-      Z: 37.307251
-    }
-    Rotation {
-      Yaw: -118.086754
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 12948.7734
-            Y: -26597.666
-            Z: 206.897827
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
   Id: 486248373236334952
   Name: "TW3_Tree3_Destructible"
   Transform {
@@ -12183,106 +12139,6 @@ Objects {
             X: 12160.6777
             Y: -25567.2266
             Z: 84.5069275
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 365236665240679909
-  Name: "TW3_Tree_Destructible"
-  Transform {
-    Location {
-      X: 17579.5059
-      Y: -21926.0566
-      Z: 37.307251
-    }
-    Rotation {
-      Yaw: -118.086754
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 10957.4512
-            Y: -26991.1758
-            Z: 233.780884
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 5093125531832908092
-  Name: "TW3_Tree3_Destructible"
-  Transform {
-    Location {
-      X: 16886.8594
-      Y: -21897.5215
-      Z: 74.9494629
-    }
-    Rotation {
-      Yaw: -179.859421
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1186772537315395211
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree3_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 11344.665
-            Y: -25670.6895
-            Z: 59.4286804
           }
         }
         Overrides {
@@ -12338,9 +12194,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.61233145
+            Y: 0.61233145
+            Z: 0.61233145
           }
         }
       }
@@ -13725,7 +13581,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -6150
+            X: -5888.32129
             Y: -16300
             Z: 675
           }
@@ -13733,8 +13589,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -1.75899899
-            Yaw: -53.4606705
+            Pitch: -1.75900269
+            Yaw: -53.4606628
             Roll: 0.59098351
           }
         }
@@ -14237,7 +14093,7 @@ Objects {
           Vector {
             X: -8694.68359
             Y: -19658.7852
-            Z: 191.117371
+            Z: 508.919067
           }
         }
         Overrides {
@@ -14258,62 +14114,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 8407113308101499623
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 18114.0762
-      Y: -26447.6367
-      Z: 128.891449
-    }
-    Rotation {
-      Yaw: 172.528076
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -8226.2041
-            Y: -19711.3516
-            Z: 128.890472
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 102.670036
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
     }
   }
 }
@@ -14426,62 +14226,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 8397814928990627207
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 20444.3301
-      Y: -27620.6895
-      Z: 274.319489
-    }
-    Rotation {
-      Yaw: -147.409973
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -8525.09
-            Y: -22303.0313
-            Z: 274.318512
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 101.563995
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
     }
   }
 }
@@ -17892,118 +17636,6 @@ Objects {
   }
 }
 Objects {
-  Id: 8747201089334197939
-  Name: "TW3_Tree3_Destructible"
-  Transform {
-    Location {
-      X: 19040.5938
-      Y: -27047.1563
-      Z: 216.00238
-    }
-    Rotation {
-      Yaw: 32.7303734
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1186772537315395211
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree3_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 13872.5605
-            Y: -29241.1719
-            Z: 417.168823
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -130.894455
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 2148265374841094878
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 19151.9063
-      Y: -27505.248
-      Z: 153.775482
-    }
-    Rotation {
-      Yaw: 32.7303734
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 13636.6104
-            Y: -28833.041
-            Z: 354.941956
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -130.894455
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
-    }
-  }
-}
-Objects {
   Id: 8994086065371411993
   Name: "TW3_Tree_Destructible"
   Transform {
@@ -18089,9 +17721,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 13105.4023
-            Y: -27724.6035
-            Z: 311.35144
+            X: 13012.1094
+            Y: -28241.2715
+            Z: 372.02063
           }
         }
         Overrides {
@@ -18172,230 +17804,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1088992989799135579
-  Name: "TW3_Tree_Destructible"
-  Transform {
-    Location {
-      X: 18301.043
-      Y: -27445.6055
-      Z: 178.360291
-    }
-    Rotation {
-      Yaw: -118.086777
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 14647.4424
-            Y: -29249.5254
-            Z: 479.806396
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 78.2880783
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 58284594148790820
-  Name: "TW3_Tree3_Destructible"
-  Transform {
-    Location {
-      X: 17608.3965
-      Y: -27417.0703
-      Z: 216.002502
-    }
-    Rotation {
-      Yaw: -179.859421
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1186772537315395211
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree3_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 15320.0381
-            Y: -29081.627
-            Z: 517.448608
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 16.5167408
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 3496605035490149842
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 17761.3438
-      Y: -26971.1582
-      Z: 153.775604
-    }
-    Rotation {
-      Yaw: -179.859421
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 15121.3438
-            Y: -28953.4316
-            Z: 354.942078
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 16.5167408
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
-    }
-  }
-}
-Objects {
-  Id: 14181214622430720704
-  Name: "TW3_Tree_Destructible"
-  Transform {
-    Location {
-      X: 18765.2559
-      Y: -27185.6465
-      Z: 178.360413
-    }
-    Rotation {
-      Yaw: 29.323431
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 15810.9424
-            Y: -28918.6328
-            Z: 565.427795
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -134.301392
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
   Id: 7517741380554147178
   Name: "TW3_Tree3_Destructible"
   Transform {
@@ -18448,62 +17856,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 6815244830639024467
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 20413.0723
-      Y: -27739.7383
-      Z: 153.775482
-    }
-    Rotation {
-      Yaw: -147.409988
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 12245.5537
-            Y: -28256.2754
-            Z: 286.601379
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 21.1162052
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
     }
   }
 }
@@ -18593,9 +17945,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 12891.5713
-            Y: -27562.2441
-            Z: 311.35144
+            X: 12399.415
+            Y: -28241.8477
+            Z: 311.351318
           }
         }
         Overrides {
@@ -18616,62 +17968,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 4463554670201516832
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 19809.5391
-      Y: -27076.5391
-      Z: 153.775482
-    }
-    Rotation {
-      Yaw: -147.409988
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 13126.5234
-            Y: -29429.7715
-            Z: 354.941956
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 48.9649696
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
     }
   }
 }
@@ -18783,61 +18079,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 10707638904342152163
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 21802.332
-      Y: -28277.2305
-      Z: 153.775604
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 10876.0576
-            Y: -28648.4473
-            Z: 385.548218
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -163.624695
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
     }
   }
 }
@@ -19062,62 +18303,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 7270794709146338136
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 21239.5
-      Y: -24176.7422
-      Z: 12.7226868
-    }
-    Rotation {
-      Yaw: 32.7303734
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 19788.3203
-            Y: -28047.9141
-            Z: 274.319489
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 32.7303925
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
     }
   }
 }
@@ -20415,7 +19600,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 24694.3887
+            X: 24998.2852
             Y: -23709.123
             Z: 104.29068
           }
