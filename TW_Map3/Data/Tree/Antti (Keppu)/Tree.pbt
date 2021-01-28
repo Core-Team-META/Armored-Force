@@ -324,6 +324,8 @@ Objects {
     }
   }
   ParentId: 7310433976514289622
+  ChildIds: 1185117508444358340
+  ChildIds: 6465209778994360794
   ChildIds: 1343870542639954335
   ChildIds: 10761282758840408982
   ChildIds: 6264826401508648285
@@ -446,6 +448,10 @@ Objects {
     Overrides {
       Name: "bp:Cast Shadows"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 4
     }
   }
   Collidable_v2 {
@@ -757,6 +763,84 @@ Objects {
   Blueprint {
     BlueprintAsset {
       Id: 2224571462023946700
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 6465209778994360794
+  Name: "Depth of Field Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15788869062684048797
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Depth Blur Distance For 50%"
+      Float: 200
+    }
+    Overrides {
+      Name: "bp:Depth Blur Radius"
+      Float: 4
+    }
+    Overrides {
+      Name: "bp:Focal Distance"
+      Float: 0.2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12542426657781386609
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 1185117508444358340
+  Name: "Motion Blur Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15788869062684048797
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13397073196740613430
     }
     TeamSettings {
     }
