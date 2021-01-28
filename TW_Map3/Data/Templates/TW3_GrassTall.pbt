@@ -15,21 +15,12 @@ Assets {
             Z: 3.31998372
           }
         }
-        ParentId: 7310433976514289622
+        ParentId: 15252821927036121744
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
             AssetReference {
               Id: 4693709835421441385
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Grass:color"
-            Color {
-              R: 0.33100003
-              G: 0.157037929
-              B: 0.100623995
-              A: 1
             }
           }
         }
