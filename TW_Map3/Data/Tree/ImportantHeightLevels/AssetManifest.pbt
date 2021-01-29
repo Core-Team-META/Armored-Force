@@ -17,11 +17,11 @@ Assets {
   }
 }
 Assets {
-  Id: 11098565986665295518
-  Name: "Ice Ground Transparent"
+  Id: 439267758327618700
+  Name: "Fog Cloud"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_ice_transparent_ground"
+    AssetId: "fxmi_fog_material"
   }
 }

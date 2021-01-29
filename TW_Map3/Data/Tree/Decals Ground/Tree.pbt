@@ -1,6 +1,54 @@
 Name: "Decals Ground"
 RootId: 805581185509381703
 Objects {
+  Id: 13640066969727051145
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: 13843.1074
+      Y: -6110.19678
+      Z: -411.171631
+    }
+    Rotation {
+      Pitch: -0.412872314
+      Yaw: -56.2615662
+      Roll: 0.618343055
+    }
+    Scale {
+      X: 6.24998522
+      Y: 6.24999857
+      Z: 4.09324551
+    }
+  }
+  ParentId: 805581185509381703
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 11127656938671874479
   Name: "Decal Stains Round 01"
   Transform {
@@ -663,7 +711,7 @@ Objects {
     Location {
       X: 20195.0977
       Y: -9364.11133
-      Z: 1.92053223
+      Z: -73.7518311
     }
     Rotation {
       Pitch: 5.11451387

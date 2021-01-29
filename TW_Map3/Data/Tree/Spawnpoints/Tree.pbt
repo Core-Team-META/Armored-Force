@@ -1,12 +1,244 @@
 Name: "Spawnpoints"
 RootId: 5837658692554861011
 Objects {
+  Id: 8444163372566947689
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 32415.625
+      Y: -31566.9863
+      Z: 600.698364
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 11340314498952740164
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 31415.625
+      Y: -30766.9863
+      Z: 600.698364
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 16825926370197996117
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 35564.3945
+      Y: -28385.127
+      Z: 600.697876
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 12938854994278624797
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 34120.8242
+      Y: -30033.9941
+      Z: 600.698364
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 14760146211279303564
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 37143.5195
+      Y: -27014.1426
+      Z: 600.698364
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 4352038117121953377
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 36143.5195
+      Y: -26214.1426
+      Z: 600.698364
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 14598936140908154979
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 33120.8242
+      Y: -29233.9941
+      Z: 600.698364
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 12895399385259733660
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 34564.3945
+      Y: -27585.127
+      Z: 600.697876
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5837658692554861011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
   Id: 10916401427081999111
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -34351.2305
-      Y: 32400
+      X: -35616.4375
+      Y: 31354.1602
       Z: 600.697388
     }
     Rotation {
@@ -34,8 +266,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -35351.2305
-      Y: 33200
+      X: -36616.4375
+      Y: 32154.1602
       Z: 600.697388
     }
     Rotation {
@@ -63,8 +295,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -32951.2305
-      Y: 33800
+      X: -32467.668
+      Y: 34536.0195
       Z: 600.696899
     }
     Rotation {
@@ -92,8 +324,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -33551.2305
-      Y: 33100
+      X: -33911.2383
+      Y: 32887.1523
       Z: 600.697388
     }
     Rotation {
@@ -121,8 +353,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -31951.2305
-      Y: 34500
+      X: -30888.541
+      Y: 35907.0039
       Z: 600.697388
     }
     Rotation {
@@ -150,8 +382,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -32951.2305
-      Y: 35300
+      X: -31888.543
+      Y: 36707.0039
       Z: 600.697388
     }
     Rotation {
@@ -179,8 +411,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -34551.2305
-      Y: 33900
+      X: -34911.2383
+      Y: 33687.1523
       Z: 600.697388
     }
     Rotation {
@@ -208,8 +440,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -33951.2305
-      Y: 34600
+      X: -33467.668
+      Y: 35336.0195
       Z: 600.696899
     }
     Rotation {
