@@ -1,5 +1,5 @@
 Assets {
-  Id: 17943086051479796919
+  Id: 11223807285706338630
   Name: "Drivable US M10 Wolverine"
   PlatformAssetType: 5
   TemplateAsset {
@@ -59,8 +59,8 @@ Assets {
         ChildIds: 16676803452827298395
         ChildIds: 9539221717705889861
         ChildIds: 11279172552958617382
-        ChildIds: 15789166851960425218
-        ChildIds: 12996027681042050493
+        ChildIds: 3767920222630778391
+        ChildIds: 6903869066497241099
         ChildIds: 13443438001955399643
         UnregisteredParameters {
         }
@@ -112,7 +112,6 @@ Assets {
           AudioBP {
             AutoPlay: true
             Repeat: true
-            Pitch: 150
             Volume: 0.5
             Falloff: 3384.07715
             Radius: 1625.76941
@@ -163,7 +162,7 @@ Assets {
         Name: "Tank Tread Trail VFX"
         Transform {
           Location {
-            X: -315.142822
+            X: -218.535034
             Y: -199.374268
             Z: -13.6221237
           }
@@ -214,7 +213,7 @@ Assets {
         Name: "Tank Tread Trail VFX"
         Transform {
           Location {
-            X: -312.479736
+            X: -215.871948
             Y: 193.545166
             Z: -13.6221237
           }
@@ -261,18 +260,18 @@ Assets {
         }
       }
       Objects {
-        Id: 15789166851960425218
-        Name: "Snow Trail Volume VFX"
+        Id: 3767920222630778391
+        Name: "Tank Tread Dirt Kick Up VFX"
         Transform {
           Location {
-            X: -352.892822
-            Y: -214.724121
-            Z: -14.7543945
+            X: -408.617493
+            Y: 193.545166
+            Z: -13.6221237
           }
           Rotation {
           }
           Scale {
-            X: 5.42530107
+            X: 1
             Y: 1
             Z: 1
           }
@@ -280,45 +279,25 @@ Assets {
         ParentId: 11835659932675651931
         UnregisteredParameters {
           Overrides {
-            Name: "bp:color"
+            Name: "bp:Color"
             Color {
-              R: 0.421875
-              G: 0.315707803
-              B: 0.2109375
+              R: 0.354
+              G: 0.264913917
+              B: 0.177
               A: 1
             }
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 2
           }
           Overrides {
             Name: "bp:Life"
-            Float: 10
+            Float: 2
           }
           Overrides {
             Name: "bp:Gravity"
-            Float: -1.67131329
+            Float: -8
           }
           Overrides {
-            Name: "bp:Density"
-            Float: 0.611655
-          }
-          Overrides {
-            Name: "bp:Wind Speed"
-            Vector {
-              X: 50
-              Y: 40
-            }
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.421875
-              G: 0.315707803
-              B: 0.2109375
-              A: 1
-            }
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.75
           }
         }
         Collidable_v2 {
@@ -329,7 +308,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 18198749857916584671
+            Id: 7015145371313303150
           }
           TeamSettings {
           }
@@ -339,18 +318,18 @@ Assets {
         }
       }
       Objects {
-        Id: 12996027681042050493
-        Name: "Snow Trail Volume VFX"
+        Id: 6903869066497241099
+        Name: "Tank Tread Dirt Kick Up VFX"
         Transform {
           Location {
-            X: -352.892822
-            Y: 190.54834
-            Z: -14.7543945
+            X: -408.617493
+            Y: -207.168213
+            Z: -13.6221237
           }
           Rotation {
           }
           Scale {
-            X: 5.42530107
+            X: 1
             Y: 1
             Z: 1
           }
@@ -358,45 +337,25 @@ Assets {
         ParentId: 11835659932675651931
         UnregisteredParameters {
           Overrides {
-            Name: "bp:color"
+            Name: "bp:Color"
             Color {
-              R: 0.421875
-              G: 0.315707803
-              B: 0.2109375
+              R: 0.354
+              G: 0.264913917
+              B: 0.177
               A: 1
             }
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 2
           }
           Overrides {
             Name: "bp:Life"
-            Float: 10
+            Float: 2
           }
           Overrides {
             Name: "bp:Gravity"
-            Float: -1.67131329
+            Float: -8
           }
           Overrides {
-            Name: "bp:Density"
-            Float: 0.611655
-          }
-          Overrides {
-            Name: "bp:Wind Speed"
-            Vector {
-              X: 50
-              Y: 40
-            }
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.421875
-              G: 0.315707803
-              B: 0.2109375
-              A: 1
-            }
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.75
           }
         }
         Collidable_v2 {
@@ -407,7 +366,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 18198749857916584671
+            Id: 7015145371313303150
           }
           TeamSettings {
           }
@@ -1370,7 +1329,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -11364,7 +11323,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -11639,7 +11598,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -15971,7 +15930,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -16349,7 +16308,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -17475,7 +17434,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -33048,12 +33007,12 @@ Assets {
       }
     }
     Assets {
-      Id: 18198749857916584671
-      Name: "Snow Trail Volume VFX"
+      Id: 7015145371313303150
+      Name: "Tank Tread Dirt Kick Up VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_snow_trail_volume"
+        AssetId: "fxbp_tank_dustKickup"
       }
     }
     Assets {
@@ -33111,7 +33070,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16374150260036817633
+      Id: 198353679974341757
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -33318,7 +33277,7 @@ Assets {
       }
     }
     Assets {
-      Id: 17814718521639562316
+      Id: 3629910274723977117
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -33378,6 +33337,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_pommel_004"
+      }
+    }
+    Assets {
+      Id: 17814718521639562316
+      Name: "Fantasy Shield Strap 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_shield_strap_001"
       }
     }
     Assets {
