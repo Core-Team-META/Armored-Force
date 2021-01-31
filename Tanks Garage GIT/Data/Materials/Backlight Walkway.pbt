@@ -2,7 +2,7 @@ Assets {
   Id: 7677746141430446581
   Name: "Backlight Walkway"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 75
   CustomMaterialAsset {
     BaseMaterialId: 3702191406046426907
     ParameterOverrides {
