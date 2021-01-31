@@ -2,7 +2,7 @@ Assets {
   Id: 11054325002036881179
   Name: "TW2_Rock"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 75
   CustomMaterialAsset {
     BaseMaterialId: 3901960125647295602
     ParameterOverrides {

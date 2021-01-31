@@ -41374,25 +41374,25 @@ Assets {
           Overrides {
             Name: "cs:EquipmentTemplate9"
             AssetReference {
-              Id: 2151465309194437172
+              Id: 841534158063459245
             }
           }
           Overrides {
             Name: "cs:EquipmentTemplate10"
             AssetReference {
-              Id: 7611601488945581195
+              Id: 841534158063459245
             }
           }
           Overrides {
             Name: "cs:EquipmentTemplate11"
             AssetReference {
-              Id: 10925708798933842915
+              Id: 841534158063459245
             }
           }
           Overrides {
             Name: "cs:EquipmentTemplate12"
             AssetReference {
-              Id: 15990134471533241425
+              Id: 841534158063459245
             }
           }
           Overrides {
@@ -41404,7 +41404,7 @@ Assets {
           Overrides {
             Name: "cs:EquipmentTemplate14"
             AssetReference {
-              Id: 10628444775381270542
+              Id: 841534158063459245
             }
           }
           Overrides {

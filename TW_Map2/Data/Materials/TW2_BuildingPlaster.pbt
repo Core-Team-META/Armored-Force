@@ -2,7 +2,7 @@ Assets {
   Id: 11471689524597693722
   Name: "TW2_BuildingPlaster"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 75
   CustomMaterialAsset {
     BaseMaterialId: 14056450416114429961
     ParameterOverrides {

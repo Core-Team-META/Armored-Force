@@ -97,25 +97,25 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate9"
       AssetReference {
-        Id: 2151465309194437172
+        Id: 11960336886933777307
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate10"
       AssetReference {
-        Id: 7611601488945581195
+        Id: 15457079634572160969
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate11"
       AssetReference {
-        Id: 10925708798933842915
+        Id: 13441179687447695317
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate12"
       AssetReference {
-        Id: 15990134471533241425
+        Id: 10812481202246904187
       }
     }
     Overrides {
@@ -127,7 +127,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate14"
       AssetReference {
-        Id: 10628444775381270542
+        Id: 7798293786672009203
       }
     }
     Overrides {
@@ -229,25 +229,25 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate31"
       AssetReference {
-        Id: 6009866458434889136
+        Id: 1837177280952081591
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate32"
       AssetReference {
-        Id: 15334874101038714639
+        Id: 84481773716472355
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate33"
       AssetReference {
-        Id: 8105511490149619332
+        Id: 7038725764964230587
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate34"
       AssetReference {
-        Id: 7994993039447354574
+        Id: 5120158846530676954
       }
     }
     Overrides {

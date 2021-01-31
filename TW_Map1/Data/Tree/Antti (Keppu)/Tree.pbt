@@ -942,6 +942,7 @@ Objects {
     DisableCastShadows: true
     DisableReceiveDecals: true
     EnableCameraCollision: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -994,6 +995,7 @@ Objects {
     DisableCastShadows: true
     DisableReceiveDecals: true
     EnableCameraCollision: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -1046,6 +1048,7 @@ Objects {
     DisableCastShadows: true
     DisableReceiveDecals: true
     EnableCameraCollision: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -1098,6 +1101,7 @@ Objects {
     DisableCastShadows: true
     DisableReceiveDecals: true
     EnableCameraCollision: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -1150,6 +1154,7 @@ Objects {
     DisableCastShadows: true
     DisableReceiveDecals: true
     EnableCameraCollision: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -1201,6 +1206,7 @@ Objects {
     DisableCastShadows: true
     DisableReceiveDecals: true
     EnableCameraCollision: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
