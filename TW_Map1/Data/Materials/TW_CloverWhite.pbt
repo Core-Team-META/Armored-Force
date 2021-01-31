@@ -2,7 +2,7 @@ Assets {
   Id: 7756414572646584735
   Name: "TW_CloverWhite"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 75
   CustomMaterialAsset {
     BaseMaterialId: 6722288021636580285
     ParameterOverrides {
