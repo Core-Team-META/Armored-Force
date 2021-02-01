@@ -1,4 +1,4 @@
-Name: "Spawnpoints"
+Name: "TW3_SpawnLocations"
 RootId: 5837658692554861011
 Objects {
   Id: 8444163372566947689
