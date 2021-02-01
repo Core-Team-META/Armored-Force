@@ -2961,8 +2961,8 @@ Assets {
           AutoPlay: true
           Repeat: true
           Volume: 0.5
-          Falloff: 1500
-          Radius: 400
+          Falloff: 3000
+          Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
