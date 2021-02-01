@@ -1171,7 +1171,7 @@ Objects {
       Z: 100
     }
     Rotation {
-      Roll: -89.9999924
+      Roll: -90
     }
     Scale {
       X: 0.1
