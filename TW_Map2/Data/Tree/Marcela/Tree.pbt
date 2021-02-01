@@ -429,7 +429,7 @@ Objects {
 }
 Objects {
   Id: 3300441071427874300
-  Name: "Toy"
+  Name: "Baby"
   Transform {
     Location {
     }
@@ -507,7 +507,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 113
+    Width: 125
     Height: 40
     UIY: 2.71179676
     RenderTransformPivot {
@@ -516,7 +516,7 @@ Objects {
       }
     }
     Text {
-      Label: "Shift + 9 = Toy"
+      Label: "Shift + 9 = Baby"
       Color {
         R: 1
         G: 1
@@ -563,11 +563,12 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 94
     Height: 40
+    UIY: 694.680359
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
