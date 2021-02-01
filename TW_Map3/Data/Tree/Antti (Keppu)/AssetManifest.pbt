@@ -89,15 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4918487351767457501
-  Name: "Underwater Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_water"
-  }
-}
-Assets {
   Id: 3698777166228503512
   Name: "Rock Flat 02"
   PlatformAssetType: 1
