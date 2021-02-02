@@ -1,28 +1,27 @@
 Assets {
-  Id: 13461854517723987305
-  Name: "Custom Glass 01"
+  Id: 5022726319400642360
+  Name: "TW3_GlassWindow"
   PlatformAssetType: 13
   SerializationVersion: 75
   CustomMaterialAsset {
-    BaseMaterialId: 3998592366905403415
+    BaseMaterialId: 4064249699380950692
     ParameterOverrides {
       Overrides {
         Name: "color"
         Color {
-          R: 1
-          G: 1
+          G: 0.642383337
           B: 1
-          A: 0.078
+          A: 1
         }
       }
     }
     Assets {
-      Id: 3998592366905403415
-      Name: "Glass 01"
+      Id: 4064249699380950692
+      Name: "Frosted Glass No Distortion"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_glass_refrac_001"
+        AssetId: "fxma_frosted_glass_nodistortion"
       }
     }
   }

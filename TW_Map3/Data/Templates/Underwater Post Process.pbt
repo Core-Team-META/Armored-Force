@@ -51,15 +51,27 @@ Assets {
           }
           Overrides {
             Name: "bp:Layered Fog Density"
-            Float: 1
+            Float: 10
           }
           Overrides {
             Name: "bp:Layered Fog Falloff"
-            Float: 4.48650265
+            Float: 30
           }
           Overrides {
             Name: "bp:Layered Fog Offset Height"
             Float: -48.2502251
+          }
+          Overrides {
+            Name: "bp:Distortion Amount"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Distortion Speed"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Distortion Scale"
+            Float: 0
           }
         }
         Collidable_v2 {

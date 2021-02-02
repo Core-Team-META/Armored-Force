@@ -16,3 +16,12 @@ Assets {
     AssetId: "mi_gen_marble_tiles_001_uv"
   }
 }
+Assets {
+  Id: 663082363223318009
+  Name: "Stucco Tintable"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stucco_tint_001_uv"
+  }
+}

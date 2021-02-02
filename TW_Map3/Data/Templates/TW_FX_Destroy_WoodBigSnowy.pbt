@@ -1,13 +1,13 @@
 Assets {
   Id: 9734563338717701534
-  Name: "TW_FX_Destroy_WoodBig"
+  Name: "TW_FX_Destroy_WoodBigSnowy"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 18069542106520143989
       Objects {
         Id: 18069542106520143989
-        Name: "TW_FX_Destroy_WoodBig"
+        Name: "TW_FX_Destroy_WoodBigSnowy"
         Transform {
           Scale {
             X: 1
@@ -99,16 +99,20 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 8.31034279
+            Y: 8.31034279
+            Z: 8.31034279
           }
         }
         ParentId: 16244906926373107681
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 7.18631554
+            Float: 1.58574283
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.1
           }
         }
         Collidable_v2 {
@@ -137,9 +141,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 4.60976315
+            Y: 4.60976315
+            Z: 4.60976315
           }
         }
         ParentId: 16244906926373107681
@@ -150,11 +154,24 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 2.80947351
+            Float: 2.01340485
           }
           Overrides {
             Name: "bp:Density"
             Float: 0.1
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.488000035
+              G: 0.488000035
+              B: 0.488000035
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: -3.29579592
           }
         }
         Collidable_v2 {
