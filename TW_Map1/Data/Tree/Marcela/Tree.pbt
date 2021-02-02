@@ -3525,13 +3525,13 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate19"
       AssetReference {
-        Id: 4745702148933932626
+        Id: 5510153205208780123
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate20"
       AssetReference {
-        Id: 9797173364024959814
+        Id: 1160339261633181915
       }
     }
     Overrides {
@@ -3761,8 +3761,9 @@ Objects {
     }
   }
   ParentId: 7972597929039265295
-  ChildIds: 18377815195013789690
   ChildIds: 17721075094565131718
+  ChildIds: 18377815195013789690
+  ChildIds: 10590101061455738689
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3796,8 +3797,8 @@ Objects {
   }
 }
 Objects {
-  Id: 17721075094565131718
-  Name: "Baby"
+  Id: 10590101061455738689
+  Name: "Boom"
   Transform {
     Location {
     }
@@ -3810,7 +3811,7 @@ Objects {
     }
   }
   ParentId: 3136788870501889765
-  ChildIds: 16407885073111498460
+  ChildIds: 16547681822493727831
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3818,9 +3819,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 123
+    Width: 94
     Height: 40
-    UIY: 330.791473
+    UIY: 733.045349
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3854,7 +3855,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16407885073111498460
+  Id: 16547681822493727831
   Name: "UI Text Box"
   Transform {
     Location {
@@ -3867,7 +3868,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17721075094565131718
+  ParentId: 10590101061455738689
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3875,7 +3876,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 125
+    Width: 84
     Height: 40
     UIY: 2.71179676
     RenderTransformPivot {
@@ -3884,7 +3885,7 @@ Objects {
       }
     }
     Text {
-      Label: "Shift + 9 = Baby"
+      Label: "X = Boom"
       Color {
         R: 1
         G: 1
@@ -4001,6 +4002,122 @@ Objects {
     }
     Text {
       Label: "X = Boom"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17721075094565131718
+  Name: "Baby"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3136788870501889765
+  ChildIds: 16407885073111498460
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 123
+    Height: 40
+    UIY: 330.791473
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16407885073111498460
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17721075094565131718
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 125
+    Height: 40
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Shift + 9 = Baby"
       Color {
         R: 1
         G: 1
