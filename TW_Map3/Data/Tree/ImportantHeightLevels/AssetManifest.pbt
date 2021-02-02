@@ -16,12 +16,3 @@ Assets {
     AssetId: "mi_gen_marble_tiles_001_uv"
   }
 }
-Assets {
-  Id: 439267758327618700
-  Name: "Fog Cloud"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_fog_material"
-  }
-}

@@ -15,7 +15,6 @@ Objects {
     }
   }
   ChildIds: 2548759880759357540
-  ChildIds: 13482041822163293853
   ChildIds: 15182677334456928949
   ChildIds: 12209608198557882361
   ChildIds: 3189391084242011458
@@ -733,42 +732,6 @@ Objects {
     VoxelSize: 200
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
-  }
-}
-Objects {
-  Id: 13482041822163293853
-  Name: "Motion Blur Post Process"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Intensity"
-      Float: 0
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13397073196740613430
-    }
-    TeamSettings {
-    }
   }
 }
 Objects {
