@@ -1,6 +1,6 @@
 Assets {
   Id: 3038176905818941505
-  Name: "Custom Wood Planks_1"
+  Name: "TW3_Woodplanks"
   PlatformAssetType: 13
   SerializationVersion: 75
   CustomMaterialAsset {
