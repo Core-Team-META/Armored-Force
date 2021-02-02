@@ -1,4 +1,13 @@
 Assets {
+  Id: 17949211485635097187
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -23,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_004"
+  }
+}
+Assets {
+  Id: 14607547610839051429
+  Name: "Branches Cluster Medium"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_medium_001"
   }
 }
 Assets {
@@ -62,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10905138335060518079
+  Name: "Rock Block 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
   Id: 9072168321675368518
   Name: "Rock 01"
   PlatformAssetType: 1
@@ -77,6 +104,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 6674876388081502680
+  Name: "Rocky Ground 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "rocky_001"
   }
 }
 Assets {
@@ -116,11 +152,29 @@ Assets {
   }
 }
 Assets {
-  Id: 556772736684140026
-  Name: "Fantasy Human Gal 2"
-  PlatformAssetType: 17
+  Id: 1249737750761687462
+  Name: "Branches Cluster Small"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_001_ref"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_small_001"
+  }
+}
+Assets {
+  Id: 663082363223318009
+  Name: "Stucco Tintable"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 380106840186150370
+  Name: "Rock Block 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_007"
   }
 }

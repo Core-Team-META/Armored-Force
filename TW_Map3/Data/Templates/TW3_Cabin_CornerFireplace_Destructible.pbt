@@ -782,7 +782,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 663082363223318009
+              Id: 13697749310188591321
             }
           }
         }
@@ -832,7 +832,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 663082363223318009
+              Id: 13697749310188591321
             }
           }
         }
@@ -1242,6 +1242,11 @@ Assets {
           }
         }
         ParentId: 11990155720105547811
+        ChildIds: 9095195633067323893
+        ChildIds: 7293375859701643537
+        ChildIds: 8044726932116353697
+        ChildIds: 5635031490035945464
+        ChildIds: 14214359346111047112
         ChildIds: 11861090695837036206
         ChildIds: 6234630154161182472
         ChildIds: 4796861370918462127
@@ -1257,14 +1262,9 @@ Assets {
         ChildIds: 13608262633727811364
         ChildIds: 6393293979457189439
         ChildIds: 12453090836293053943
-        ChildIds: 5635031490035945464
         ChildIds: 11938358750437394228
-        ChildIds: 14214359346111047112
         ChildIds: 6849756937227025899
-        ChildIds: 7293375859701643537
         ChildIds: 4773209083671390639
-        ChildIds: 8044726932116353697
-        ChildIds: 9095195633067323893
         ChildIds: 16980098081018281602
         ChildIds: 6495853568618836633
         ChildIds: 3226023254723730091
@@ -1275,6 +1275,7 @@ Assets {
         ChildIds: 8275385418773022099
         ChildIds: 15255022521347166883
         ChildIds: 11747203080489146483
+        ChildIds: 10079789165666053841
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1283,6 +1284,406 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9095195633067323893
+        Name: "RoundLog"
+        Transform {
+          Location {
+            X: 25
+            Y: 220.111328
+            Z: 438.766174
+          }
+          Rotation {
+            Yaw: -179.999939
+            Roll: 139.100845
+          }
+          Scale {
+            X: 0.249828473
+            Y: 1.57000136
+            Z: 1.57000065
+          }
+        }
+        ParentId: 11734487397528035151
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.195555031
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2.73899698
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3533852615526077458
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7293375859701643537
+        Name: "RoundLog"
+        Transform {
+          Location {
+            X: 130
+            Y: 220.111328
+            Z: 279.265564
+          }
+          Rotation {
+            Yaw: -179.999939
+            Roll: 139.100845
+          }
+          Scale {
+            X: 0.381914139
+            Y: 1.57000065
+            Z: 1.57
+          }
+        }
+        ParentId: 11734487397528035151
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.476233155
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2.73899698
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3533852615526077458
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8044726932116353697
+        Name: "RoundLog"
+        Transform {
+          Location {
+            X: 129.484375
+            Y: 220.111328
+            Z: 88.7619
+          }
+          Rotation {
+            Yaw: -179.999924
+            Roll: 139.10083
+          }
+          Scale {
+            X: 0.389687598
+            Y: 1.57000065
+            Z: 1.57
+          }
+        }
+        ParentId: 11734487397528035151
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.476233155
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2.73899698
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3533852615526077458
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5635031490035945464
+        Name: "RoundLog"
+        Transform {
+          Location {
+            X: 60
+            Y: 106.994141
+            Z: 415.034607
+          }
+          Rotation {
+            Yaw: 90.0000229
+            Roll: 139.100815
+          }
+          Scale {
+            X: 0.202773541
+            Y: 1.57000077
+            Z: 1.57
+          }
+        }
+        ParentId: 11734487397528035151
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.235095859
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2.73899698
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3533852615526077458
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14214359346111047112
+        Name: "RoundLog"
+        Transform {
+          Location {
+            X: 60
+            Y: 106.994141
+            Z: 225.000122
+          }
+          Rotation {
+            Yaw: 90.0000229
+            Roll: 139.100754
+          }
+          Scale {
+            X: 0.202773541
+            Y: 1.57000077
+            Z: 1.57
+          }
+        }
+        ParentId: 11734487397528035151
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.20793502
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.709742725
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3533852615526077458
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -2241,86 +2642,6 @@ Assets {
         }
       }
       Objects {
-        Id: 5635031490035945464
-        Name: "RoundLog"
-        Transform {
-          Location {
-            X: 60
-            Y: 106.994141
-            Z: 415.034607
-          }
-          Rotation {
-            Yaw: 90.0000229
-            Roll: 139.100815
-          }
-          Scale {
-            X: 0.202773541
-            Y: 1.57000077
-            Z: 1.57
-          }
-        }
-        ParentId: 11734487397528035151
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.235095859
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2.73899698
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3533852615526077458
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 11938358750437394228
         Name: "RoundLog"
         Transform {
@@ -2401,86 +2722,6 @@ Assets {
         }
       }
       Objects {
-        Id: 14214359346111047112
-        Name: "RoundLog"
-        Transform {
-          Location {
-            X: 60
-            Y: 106.994141
-            Z: 225.000122
-          }
-          Rotation {
-            Yaw: 90.0000229
-            Roll: 139.100754
-          }
-          Scale {
-            X: 0.202773541
-            Y: 1.57000077
-            Z: 1.57
-          }
-        }
-        ParentId: 11734487397528035151
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.20793502
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.709742725
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3533852615526077458
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 6849756937227025899
         Name: "RoundLog"
         Transform {
@@ -2497,86 +2738,6 @@ Assets {
             X: 0.235742241
             Y: 1.57000077
             Z: 1.57000017
-          }
-        }
-        ParentId: 11734487397528035151
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.476233155
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2.73899698
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3533852615526077458
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 7293375859701643537
-        Name: "RoundLog"
-        Transform {
-          Location {
-            X: 130
-            Y: 220.111328
-            Z: 279.265564
-          }
-          Rotation {
-            Yaw: -179.999939
-            Roll: 139.100845
-          }
-          Scale {
-            X: 0.381914139
-            Y: 1.57000065
-            Z: 1.57
           }
         }
         ParentId: 11734487397528035151
@@ -2721,166 +2882,6 @@ Assets {
         }
       }
       Objects {
-        Id: 8044726932116353697
-        Name: "RoundLog"
-        Transform {
-          Location {
-            X: 129.484375
-            Y: 220.111328
-            Z: 88.7619
-          }
-          Rotation {
-            Yaw: -179.999924
-            Roll: 139.10083
-          }
-          Scale {
-            X: 0.389687598
-            Y: 1.57000065
-            Z: 1.57
-          }
-        }
-        ParentId: 11734487397528035151
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.476233155
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2.73899698
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3533852615526077458
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9095195633067323893
-        Name: "RoundLog"
-        Transform {
-          Location {
-            X: 25
-            Y: 220.111328
-            Z: 438.766174
-          }
-          Rotation {
-            Yaw: -179.999939
-            Roll: 139.100845
-          }
-          Scale {
-            X: 0.249828473
-            Y: 1.57000136
-            Z: 1.57000065
-          }
-        }
-        ParentId: 11734487397528035151
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.195555031
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2.73899698
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3533852615526077458
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 16980098081018281602
         Name: "Decal Stains Round 01"
         Transform {
@@ -2937,9 +2938,8 @@ Assets {
             Z: 260.000031
           }
           Rotation {
-            Pitch: -6.83018879e-06
             Yaw: 88.4024811
-            Roll: -89.9999847
+            Roll: -90
           }
           Scale {
             X: 0.266334832
@@ -3389,7 +3389,7 @@ Assets {
           Location {
             X: -33.4921875
             Y: 35.359375
-            Z: 507.990906
+            Z: 508.030334
           }
           Rotation {
             Pitch: 30
@@ -3406,7 +3406,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 663082363223318009
+              Id: 13184027453908798651
             }
           }
           Overrides {
@@ -3451,7 +3451,7 @@ Assets {
           Location {
             X: -33.4921875
             Y: -150
-            Z: 507.990906
+            Z: 508.030334
           }
           Rotation {
             Pitch: 30
@@ -3468,7 +3468,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 663082363223318009
+              Id: 13184027453908798651
             }
           }
           Overrides {
@@ -3503,6 +3503,54 @@ Assets {
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 10079789165666053841
+        Name: "Decal Stains Round 01"
+        Transform {
+          Location {
+            X: 83.8398438
+            Y: -17.8691406
+            Z: 128.578735
+          }
+          Rotation {
+            Pitch: -3.05175781e-05
+            Yaw: 88.4024582
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 0.549686611
+            Y: -0.750001848
+            Z: 0.500003517
+          }
+        }
+        ParentId: 11734487397528035151
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.545
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13650699884663610996
+          }
+          TeamSettings {
+          }
+          DecalBP {
           }
         }
       }
@@ -3544,21 +3592,21 @@ Assets {
       }
     }
     Assets {
-      Id: 663082363223318009
-      Name: "Stucco Tintable"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_stucco_tint_001_uv"
-      }
-    }
-    Assets {
       Id: 16374150260036817633
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_001"
+      }
+    }
+    Assets {
+      Id: 3533852615526077458
+      Name: "Large Round Wood Beam 8m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_large_beam_round_6m"
       }
     }
     Assets {
@@ -3607,15 +3655,6 @@ Assets {
       }
     }
     Assets {
-      Id: 3533852615526077458
-      Name: "Large Round Wood Beam 8m"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_large_beam_round_6m"
-      }
-    }
-    Assets {
       Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
@@ -3640,6 +3679,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_hill_005"
+      }
+    }
+    Assets {
+      Id: 663082363223318009
+      Name: "Stucco Tintable"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stucco_tint_001_uv"
       }
     }
     Assets {
