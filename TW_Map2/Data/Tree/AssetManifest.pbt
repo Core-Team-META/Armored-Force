@@ -16,3 +16,12 @@ Assets {
     AssetId: "sm_plane_1m_001"
   }
 }
+Assets {
+  Id: 5107422031480932844
+  Name: "Motion Blur Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_advanced_motion_blur"
+  }
+}
