@@ -1,5 +1,95 @@
-Name: "EdgeIndicators"
+Name: "Edges"
 RootId: 1444000811114487272
+Objects {
+  Id: 10097500507264738475
+  Name: "InvisbleSafetyBorder"
+  Transform {
+    Location {
+      X: -25696.6699
+      Y: -14380.0371
+      Z: -547.321533
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 586.020142
+      Y: 0.0725829452
+      Z: 3
+    }
+  }
+  ParentId: 1444000811114487272
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16374150260036817633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6105898743358503858
+  Name: "InvisbleSafetyBorder"
+  Transform {
+    Location {
+      X: 2355.3623
+      Y: -25573.4434
+      Z: -547.321533
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 586.020142
+      Y: 0.0725829452
+      Z: 3
+    }
+  }
+  ParentId: 1444000811114487272
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16374150260036817633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
 Objects {
   Id: 6444987927409813405
   Name: "EdgeIndicator"

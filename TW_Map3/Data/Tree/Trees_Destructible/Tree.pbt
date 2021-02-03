@@ -1,6 +1,118 @@
 Name: "Trees_Destructible"
 RootId: 9644438302980116240
 Objects {
+  Id: 12173806841127693489
+  Name: "TW3_Tree3_Destructible"
+  Transform {
+    Location {
+      X: -36796.668
+      Y: 5275.60498
+      Z: 130.187866
+    }
+    Rotation {
+      Yaw: 146.190948
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1186772537315395211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree3_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31627.3066
+            Y: 4057.21777
+            Z: 398.319519
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -129.8181
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.725777328
+            Y: 0.725777328
+            Z: 0.725777328
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7576232896759636794
+    }
+  }
+}
+Objects {
+  Id: 81583328016818130
+  Name: "TW3_Tree_Destructible"
+  Transform {
+    Location {
+      X: -36089.1836
+      Y: 5863.51758
+      Z: -21.0336304
+    }
+    Rotation {
+      Yaw: -152.036621
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12561400358109127262
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31412.9551
+            Y: 5142.69189
+            Z: 306.264954
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -152.036621
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14490812313093711740
+    }
+  }
+}
+Objects {
   Id: 221497509590875077
   Name: "TW3_Tree3_Destructible"
   Transform {
@@ -32,7 +144,7 @@ Objects {
           Vector {
             X: 20043.7422
             Y: -6794.08545
-            Z: 86.4906616
+            Z: 106.653641
           }
         }
         Overrides {
@@ -86,9 +198,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 15509.29
-            Y: -28512.9668
-            Z: 602.84
+            X: 15542.1201
+            Y: -28644.0742
+            Z: 694.342163
           }
         }
         Overrides {
@@ -368,7 +480,7 @@ Objects {
           Vector {
             X: 29449.5684
             Y: -6871.45361
-            Z: 103.487396
+            Z: 110.278885
           }
         }
         Overrides {
@@ -1040,7 +1152,7 @@ Objects {
           Vector {
             X: 7667.83398
             Y: 15483.3906
-            Z: 47.0878601
+            Z: 25.8373718
           }
         }
         Overrides {
@@ -1152,7 +1264,7 @@ Objects {
           Vector {
             X: 18217.0664
             Y: 33975.3555
-            Z: 364.799683
+            Z: 400.069946
           }
         }
         Overrides {
@@ -1600,7 +1712,7 @@ Objects {
           Vector {
             X: -20834.1289
             Y: 1746.51782
-            Z: 735.874573
+            Z: 866.14209
           }
         }
         Overrides {
@@ -1712,7 +1824,7 @@ Objects {
           Vector {
             X: -21117.4297
             Y: 2268.70898
-            Z: 832.915894
+            Z: 875.429443
           }
         }
         Overrides {
@@ -1768,7 +1880,7 @@ Objects {
           Vector {
             X: -36089.1836
             Y: 5863.51758
-            Z: -21.0336304
+            Z: 181.546539
           }
         }
         Overrides {
@@ -1824,7 +1936,7 @@ Objects {
           Vector {
             X: -36412.2891
             Y: 5337.19727
-            Z: 95.7869873
+            Z: 137.900146
           }
         }
         Overrides {
@@ -1880,7 +1992,7 @@ Objects {
           Vector {
             X: -36796.668
             Y: 5275.60498
-            Z: 130.187866
+            Z: 172.301025
           }
         }
         Overrides {
@@ -1936,7 +2048,7 @@ Objects {
           Vector {
             X: -36215.2227
             Y: 5508.9209
-            Z: 76.0075073
+            Z: 118.120667
           }
         }
         Overrides {
@@ -1992,7 +2104,7 @@ Objects {
           Vector {
             X: -35061.0469
             Y: 6281.77539
-            Z: 23.4476929
+            Z: 226.027863
           }
         }
         Overrides {
@@ -2048,7 +2160,7 @@ Objects {
           Vector {
             X: -32600.043
             Y: 12919.623
-            Z: -207.242554
+            Z: -30.2288666
           }
         }
         Overrides {
@@ -2104,7 +2216,7 @@ Objects {
           Vector {
             X: -32717.2168
             Y: 13525.9902
-            Z: -90.421936
+            Z: -23.4888306
           }
         }
         Overrides {
@@ -2160,7 +2272,7 @@ Objects {
           Vector {
             X: -32475.3516
             Y: 13831.0078
-            Z: -56.0210571
+            Z: -32.2869263
           }
         }
         Overrides {
@@ -2216,7 +2328,7 @@ Objects {
           Vector {
             X: -32746.5879
             Y: 13266.252
-            Z: -110.201416
+            Z: -43.2683105
           }
         }
         Overrides {
@@ -2272,7 +2384,7 @@ Objects {
           Vector {
             X: -33262.1211
             Y: 12120.2529
-            Z: -155.05957
+            Z: 19.4425659
           }
         }
         Overrides {
@@ -2328,7 +2440,7 @@ Objects {
           Vector {
             X: -30678.9316
             Y: 37741.6328
-            Z: 202.759613
+            Z: 235.646942
           }
         }
         Overrides {
@@ -2384,7 +2496,7 @@ Objects {
           Vector {
             X: -29056.7539
             Y: 36620.5742
-            Z: 251.803619
+            Z: 266.859344
           }
         }
         Overrides {
@@ -2440,7 +2552,7 @@ Objects {
           Vector {
             X: -28781.6953
             Y: 36062.3516
-            Z: 250.157684
+            Z: 265.213409
           }
         }
         Overrides {
@@ -2496,7 +2608,7 @@ Objects {
           Vector {
             X: -29555.3438
             Y: 36836.2266
-            Z: 237.617096
+            Z: 234.661682
           }
         }
         Overrides {
@@ -2550,9 +2662,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -13550.2734
-            Y: 32395.7109
-            Z: 209.708252
+            X: -13570.1367
+            Y: 32398.7695
+            Z: 213.791931
           }
         }
         Overrides {
@@ -2606,9 +2718,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -14266.8271
-            Y: 32115.4609
-            Z: 211.185745
+            X: -14313.3213
+            Y: 32277.4121
+            Z: 246.388016
           }
         }
         Overrides {
@@ -2664,7 +2776,7 @@ Objects {
           Vector {
             X: -12393.1211
             Y: 32072.7754
-            Z: 198.766144
+            Z: 238.006805
           }
         }
         Overrides {
@@ -2720,7 +2832,7 @@ Objects {
           Vector {
             X: -12608.3164
             Y: 32667.6055
-            Z: 212.105499
+            Z: 274.353119
           }
         }
         Overrides {
@@ -2776,7 +2888,7 @@ Objects {
           Vector {
             X: -13023.8066
             Y: 32348.4883
-            Z: 177.738312
+            Z: 239.985931
           }
         }
         Overrides {
@@ -2832,7 +2944,7 @@ Objects {
           Vector {
             X: -15108.8223
             Y: 32178.3418
-            Z: 190.28537
+            Z: 183.600189
           }
         }
         Overrides {
@@ -2888,7 +3000,7 @@ Objects {
           Vector {
             X: -14743.4941
             Y: 32139.4668
-            Z: 167.607391
+            Z: 184.234467
           }
         }
         Overrides {
@@ -2944,7 +3056,7 @@ Objects {
           Vector {
             X: -13864.251
             Y: 32042.3945
-            Z: 194.206757
+            Z: 210.833832
           }
         }
         Overrides {
@@ -3000,7 +3112,7 @@ Objects {
           Vector {
             X: -19529.4863
             Y: -24618.4238
-            Z: 222.320923
+            Z: 232.038727
           }
         }
         Overrides {
@@ -3056,7 +3168,7 @@ Objects {
           Vector {
             X: -18616.0176
             Y: -24685.8984
-            Z: 248.900116
+            Z: 305.137726
           }
         }
         Overrides {
@@ -3112,7 +3224,7 @@ Objects {
           Vector {
             X: -20595.5898
             Y: -24451.2988
-            Z: 143.523926
+            Z: 189.176117
           }
         }
         Overrides {
@@ -3168,7 +3280,7 @@ Objects {
           Vector {
             X: -26218.668
             Y: -16465.1328
-            Z: 39.6275024
+            Z: 54.563324
           }
         }
         Overrides {
@@ -3224,7 +3336,7 @@ Objects {
           Vector {
             X: -24970.1563
             Y: -17235.5898
-            Z: 70.4347534
+            Z: 85.370575
           }
         }
         Overrides {
@@ -3280,7 +3392,7 @@ Objects {
           Vector {
             X: -24763.4961
             Y: -17671.3281
-            Z: 24.2050781
+            Z: 39.1409
           }
         }
         Overrides {
@@ -3390,9 +3502,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -23925.8477
-            Y: -18628.7988
-            Z: -1.38708496
+            X: -23885.373
+            Y: -18651.459
+            Z: 27.396637
           }
         }
         Overrides {
@@ -3448,7 +3560,7 @@ Objects {
           Vector {
             X: -24313.9902
             Y: -18067.7832
-            Z: 20.2255859
+            Z: 35.1614075
           }
         }
         Overrides {
@@ -3502,9 +3614,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -25384.2969
-            Y: -16923.752
-            Z: 117.595642
+            X: -25384.2285
+            Y: -16857.3594
+            Z: 104.207123
           }
         }
         Overrides {
@@ -3728,7 +3840,7 @@ Objects {
           Vector {
             X: 11224.3057
             Y: 33471.3594
-            Z: 375.741821
+            Z: 421.746521
           }
         }
         Overrides {
@@ -3784,7 +3896,7 @@ Objects {
           Vector {
             X: 9818.05469
             Y: 32246.873
-            Z: 365.141815
+            Z: 394.87207
           }
         }
         Overrides {
@@ -3840,7 +3952,7 @@ Objects {
           Vector {
             X: 11552.665
             Y: 33560.3047
-            Z: 364.799683
+            Z: 461.852356
           }
         }
         Overrides {
@@ -3896,7 +4008,7 @@ Objects {
           Vector {
             X: 8883.19336
             Y: 31295.793
-            Z: 408.97876
+            Z: 438.709
           }
         }
         Overrides {
@@ -3952,7 +4064,7 @@ Objects {
           Vector {
             X: 9410.88086
             Y: 32061.6719
-            Z: 411.718872
+            Z: 441.449127
           }
         }
         Overrides {
@@ -4064,7 +4176,7 @@ Objects {
           Vector {
             X: -18265.7539
             Y: 9624.53711
-            Z: 721.519409
+            Z: 809.801331
           }
         }
         Overrides {
@@ -4120,7 +4232,7 @@ Objects {
           Vector {
             X: -18096.9844
             Y: 10295.9111
-            Z: 782.212524
+            Z: 782.294678
           }
         }
         Overrides {
@@ -4176,7 +4288,7 @@ Objects {
           Vector {
             X: -17555.75
             Y: 10680.1602
-            Z: 813.555
+            Z: 813.637146
           }
         }
         Overrides {
@@ -4232,7 +4344,7 @@ Objects {
           Vector {
             X: -17908.4297
             Y: 10099.1533
-            Z: 818.56073
+            Z: 818.642883
           }
         }
         Overrides {
@@ -4680,7 +4792,7 @@ Objects {
           Vector {
             X: -22507.5352
             Y: 18011.0645
-            Z: 588.48877
+            Z: 613.037537
           }
         }
         Overrides {
@@ -4736,7 +4848,7 @@ Objects {
           Vector {
             X: -20532.4336
             Y: 15373.9199
-            Z: 183.972626
+            Z: 196.562164
           }
         }
         Overrides {
@@ -4792,7 +4904,7 @@ Objects {
           Vector {
             X: -19283.9219
             Y: 15109.5332
-            Z: 236.516357
+            Z: 249.105896
           }
         }
         Overrides {
@@ -4848,7 +4960,7 @@ Objects {
           Vector {
             X: -19163.7109
             Y: 14719.1963
-            Z: 167.791199
+            Z: 262.338623
           }
         }
         Overrides {
@@ -4904,7 +5016,7 @@ Objects {
           Vector {
             X: -19296.168
             Y: 14035.4453
-            Z: 284.611877
+            Z: 297.201416
           }
         }
         Overrides {
@@ -4960,7 +5072,7 @@ Objects {
           Vector {
             X: -19204.1699
             Y: 13657.2031
-            Z: 319.012756
+            Z: 331.602295
           }
         }
         Overrides {
@@ -4981,62 +5093,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7576232896759636794
-    }
-  }
-}
-Objects {
-  Id: 10609864351486747290
-  Name: "TW3_Tree2_Destructible"
-  Transform {
-    Location {
-      X: 22508.0273
-      Y: 8736.68
-      Z: 540.098877
-    }
-    Rotation {
-      Yaw: 75.902626
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7691061584645470247
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree2_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -19483.0234
-            Y: 14218.2158
-            Z: 264.832397
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -119.242203
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2230310488114005167
     }
   }
 }
@@ -5072,7 +5128,7 @@ Objects {
           Vector {
             X: -20070.3145
             Y: 15329.1543
-            Z: 219.974243
+            Z: 232.563782
           }
         }
         Overrides {
@@ -5128,7 +5184,7 @@ Objects {
           Vector {
             X: -17390.3516
             Y: 17144.7188
-            Z: 589.654846
+            Z: 612.67
           }
         }
         Overrides {
@@ -5184,7 +5240,7 @@ Objects {
           Vector {
             X: -17893.5449
             Y: 17143.209
-            Z: 602.812378
+            Z: 625.827515
           }
         }
         Overrides {
@@ -5238,9 +5294,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -18166.0039
-            Y: 16783.2246
-            Z: 640.454224
+            X: -19143.4531
+            Y: 16908.7188
+            Z: 644.49939
           }
         }
         Overrides {
@@ -5296,7 +5352,7 @@ Objects {
           Vector {
             X: -19469.1367
             Y: 28871.3125
-            Z: 660.788757
+            Z: 683.834473
           }
         }
         Overrides {
@@ -5408,7 +5464,7 @@ Objects {
           Vector {
             X: -19211.4609
             Y: 28649.2012
-            Z: 649.846619
+            Z: 700.481628
           }
         }
         Overrides {
@@ -5800,7 +5856,7 @@ Objects {
           Vector {
             X: 16663.7969
             Y: 19803.7578
-            Z: 513.110657
+            Z: 521.183899
           }
         }
         Overrides {
@@ -5856,7 +5912,7 @@ Objects {
           Vector {
             X: 16801.8906
             Y: 19415.1504
-            Z: 495.529
+            Z: 516.576965
           }
         }
         Overrides {
@@ -5968,7 +6024,7 @@ Objects {
           Vector {
             X: 17254.4883
             Y: 19071.6445
-            Z: 463.559021
+            Z: 484.607
           }
         }
         Overrides {
@@ -6078,8 +6134,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 23873.957
-            Y: 7706.78516
+            X: 25129.1953
+            Y: 7742.66797
             Z: 587.90979
           }
         }
@@ -6416,7 +6472,7 @@ Objects {
           Vector {
             X: 14101.2881
             Y: 8757.10742
-            Z: 464.905884
+            Z: 481.52655
           }
         }
         Overrides {
@@ -6472,7 +6528,7 @@ Objects {
           Vector {
             X: 14611.6094
             Y: 9187.80859
-            Z: 451.883118
+            Z: 468.503784
           }
         }
         Overrides {
@@ -6528,7 +6584,7 @@ Objects {
           Vector {
             X: 13300.0537
             Y: 9187.80859
-            Z: 451.883118
+            Z: 468.503784
           }
         }
         Overrides {
@@ -6584,7 +6640,7 @@ Objects {
           Vector {
             X: 14127.0693
             Y: 9223.16309
-            Z: 458.790344
+            Z: 475.411
           }
         }
         Overrides {
@@ -6696,7 +6752,7 @@ Objects {
           Vector {
             X: 14935.5342
             Y: 9375.53711
-            Z: 441.81134
+            Z: 458.432
           }
         }
         Overrides {
@@ -6806,9 +6862,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 23341.1563
-            Y: 26197.3047
-            Z: 467.838
+            X: 23360.8613
+            Y: 26196.2168
+            Z: 521.939331
           }
         }
         Overrides {
@@ -7142,7 +7198,7 @@ Objects {
           Vector {
             X: 1250.34937
             Y: -17228.1172
-            Z: 430.088135
+            Z: 444.531555
           }
         }
         Overrides {
@@ -7198,7 +7254,7 @@ Objects {
           Vector {
             X: 1001.80829
             Y: -16856.6602
-            Z: 392.446045
+            Z: 436.194458
           }
         }
         Overrides {
@@ -7254,7 +7310,7 @@ Objects {
           Vector {
             X: 1585.97961
             Y: -16842.1406
-            Z: 392.446045
+            Z: 428.212311
           }
         }
         Overrides {
@@ -7310,7 +7366,7 @@ Objects {
           Vector {
             X: -23552.9453
             Y: -24625.1563
-            Z: 281.078552
+            Z: 309.791626
           }
         }
         Overrides {
@@ -7366,7 +7422,7 @@ Objects {
           Vector {
             X: -23735.2695
             Y: -24014.5566
-            Z: 250.497314
+            Z: 279.210388
           }
         }
         Overrides {
@@ -7420,9 +7476,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -24468.3594
-            Y: -24349.6367
-            Z: 303.741272
+            X: -24526.0566
+            Y: -24338.0742
+            Z: 345.354279
           }
         }
         Overrides {
@@ -7478,7 +7534,7 @@ Objects {
           Vector {
             X: -24023.1563
             Y: -24186.8379
-            Z: 301.904144
+            Z: 330.617218
           }
         }
         Overrides {
@@ -7700,9 +7756,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -15912.04
-            Y: -26568.2695
-            Z: 49.0372314
+            X: -15863.7324
+            Y: -26327.2051
+            Z: 127.285995
           }
         }
         Overrides {
@@ -7756,9 +7812,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -15466.8359
-            Y: -26526.0625
-            Z: 74.0372314
+            X: -15447.9463
+            Y: -26431.7969
+            Z: 119.226486
           }
         }
         Overrides {
@@ -8150,7 +8206,7 @@ Objects {
           Vector {
             X: -15266.6611
             Y: -15911.6094
-            Z: 865.862427
+            Z: 916.27832
           }
         }
         Overrides {
@@ -8834,7 +8890,7 @@ Objects {
           Vector {
             X: -5280.4585
             Y: 12416.2666
-            Z: 31.0503082
+            Z: 102.341309
           }
         }
         Overrides {
@@ -9562,7 +9618,7 @@ Objects {
           Vector {
             X: 8105.21191
             Y: 5253.41211
-            Z: -43.8751831
+            Z: 36.3183899
           }
         }
         Overrides {
@@ -9672,9 +9728,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 12266.6895
-            Y: -6532.38
-            Z: 109.038742
+            X: 12269.5264
+            Y: -6538.35498
+            Z: 127.479538
           }
         }
         Overrides {
@@ -9728,9 +9784,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 12900.915
-            Y: -6967.98877
-            Z: 47.4156342
+            X: 12903.752
+            Y: -6973.96387
+            Z: 68.572525
           }
         }
         Overrides {
@@ -9784,9 +9840,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 11129.1338
-            Y: -5515.22705
-            Z: -18.2621155
+            X: 11131.9707
+            Y: -5521.20215
+            Z: 185.689148
           }
         }
         Overrides {
@@ -9840,9 +9896,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 11453.1836
-            Y: -6070.21289
-            Z: 161.511047
+            X: 11456.0205
+            Y: -6076.18799
+            Z: 153.323608
           }
         }
         Overrides {
@@ -9896,9 +9952,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 13186.1982
-            Y: -7604.28369
-            Z: -36.362
+            X: 13189.0352
+            Y: -7610.25879
+            Z: -44.5494385
           }
         }
         Overrides {
@@ -10122,7 +10178,7 @@ Objects {
           Vector {
             X: 17163.5742
             Y: -2989.71655
-            Z: 26.6801758
+            Z: 49.7072601
           }
         }
         Overrides {
@@ -10234,7 +10290,7 @@ Objects {
           Vector {
             X: 17432.3672
             Y: -2814.82715
-            Z: 5.65234375
+            Z: 57.8731689
           }
         }
         Overrides {
@@ -11242,7 +11298,7 @@ Objects {
           Vector {
             X: 32648.0781
             Y: 20929.7734
-            Z: 327.669312
+            Z: 357.96048
           }
         }
         Overrides {
@@ -11856,9 +11912,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4941.54443
-            Y: -21344.3945
-            Z: 242.05188
+            X: 4948.70361
+            Y: -21299.4902
+            Z: 322.402679
           }
         }
         Overrides {
@@ -11912,9 +11968,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6251.44287
-            Y: -20604.5879
-            Z: 179.825104
+            X: 6377.47314
+            Y: -20624.6797
+            Z: 296.234924
           }
         }
         Overrides {
@@ -11968,9 +12024,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 5606.91357
-            Y: -21364.7676
-            Z: 204.410034
+            X: 5518.94824
+            Y: -21122.8633
+            Z: 320.715088
           }
         }
         Overrides {
@@ -12026,7 +12082,7 @@ Objects {
           Vector {
             X: 5891.05566
             Y: -21013.9238
-            Z: 242.05188
+            Z: 314.067383
           }
         }
         Overrides {
@@ -12188,7 +12244,7 @@ Objects {
           Vector {
             X: 9993.28906
             Y: -28199.7559
-            Z: 332.464081
+            Z: 370.295532
           }
         }
         Overrides {
@@ -12236,9 +12292,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -8185.72266
-            Y: 24000.5098
-            Z: 261.47052
+            X: -8191.72754
+            Y: 24146.582
+            Z: 326.415741
           }
         }
         Overrides {
@@ -12292,9 +12348,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -7829.68945
-            Y: 23988.3223
-            Z: 271.077
+            X: -7835.69434
+            Y: 24134.3945
+            Z: 336.022217
           }
         }
         Overrides {
@@ -12362,9 +12418,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.717339456
+            Y: 0.717339456
+            Z: 0.717339456
           }
         }
       }
@@ -12683,9 +12739,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -9769.96
-            Y: -25371.6
-            Z: 447.80368
+            X: -9782.39063
+            Y: -25310.8457
+            Z: 469.145844
           }
         }
         Overrides {
@@ -12797,13 +12853,13 @@ Objects {
           Vector {
             X: -11075
             Y: -25325
-            Z: 450.000244
+            Z: 538.410889
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -66.9074631
+            Yaw: -66.9074707
           }
         }
         Overrides {
@@ -12853,7 +12909,7 @@ Objects {
           Vector {
             X: -11174.999
             Y: -24850
-            Z: 550
+            Z: 588.342957
           }
         }
         Overrides {
@@ -13523,9 +13579,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -7569.15723
-            Y: -14505.2451
-            Z: 630.345398
+            X: -7567.97314
+            Y: -14506.0713
+            Z: 674.903076
           }
         }
         Overrides {
@@ -13639,17 +13695,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -7423.94434
-            Y: -15073.1221
-            Z: 613.407776
+            X: -7421.76172
+            Y: -15074.6436
+            Z: 695.532532
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -1.3522886
+            Pitch: -1.35229492
             Yaw: 8.33615398
-            Roll: -1.27069116
+            Roll: -1.27069092
           }
         }
         Overrides {
@@ -13697,25 +13753,25 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -7194.13916
-            Y: -15222.8428
-            Z: 627.514893
+            X: -7172.72607
+            Y: -15244.1309
+            Z: 700.038
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -1.3522886
-            Yaw: 8.33615398
-            Roll: -1.27069116
+            Pitch: 1.82331896
+            Yaw: 134.322021
+            Roll: -0.347259521
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.632518768
+            Y: 0.632518768
+            Z: 0.632518768
           }
         }
       }
@@ -13813,7 +13869,7 @@ Objects {
           Vector {
             X: -8445.89746
             Y: -21184.6621
-            Z: 380.523895
+            Z: 425.158112
           }
         }
         Overrides {
@@ -13834,62 +13890,6 @@ Objects {
     }
     TemplateAsset {
       Id: 2230310488114005167
-    }
-  }
-}
-Objects {
-  Id: 4498415703552510494
-  Name: "TW3_Tree_Destructible"
-  Transform {
-    Location {
-      X: 19088.6211
-      Y: -27287.752
-      Z: 153.476135
-    }
-    Rotation {
-      Yaw: -125.699158
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9644438302980116240
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW3_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -8679.35547
-            Y: -20915.5918
-            Z: 405.108704
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 164.442963
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
     }
   }
 }
@@ -13925,7 +13925,7 @@ Objects {
           Vector {
             X: -8572.26563
             Y: -20341.127
-            Z: 405.108704
+            Z: 460.070618
           }
         }
         Overrides {
@@ -13981,7 +13981,7 @@ Objects {
           Vector {
             X: -8491.84375
             Y: -19658.7852
-            Z: 522.661377
+            Z: 550.785522
           }
         }
         Overrides {
@@ -14037,7 +14037,7 @@ Objects {
           Vector {
             X: -8217.78809
             Y: -20737.8867
-            Z: 405.108826
+            Z: 431.628693
           }
         }
         Overrides {
@@ -14149,7 +14149,7 @@ Objects {
           Vector {
             X: -8363.51465
             Y: -21769.3281
-            Z: 418.475647
+            Z: 454.31546
           }
         }
         Overrides {
@@ -14205,7 +14205,7 @@ Objects {
           Vector {
             X: -8232.81055
             Y: -21519.6895
-            Z: 405.408051
+            Z: 430.620483
           }
         }
         Overrides {
@@ -14316,7 +14316,7 @@ Objects {
           Vector {
             X: -9258.54297
             Y: -23641.0078
-            Z: 483.641113
+            Z: 503.473938
           }
         }
         Overrides {
@@ -14371,7 +14371,7 @@ Objects {
           Vector {
             X: -9509.3584
             Y: -23379.5742
-            Z: 552.108704
+            Z: 476.384277
           }
         }
         Overrides {
@@ -15371,9 +15371,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 28814.4883
-            Y: -17119.0664
-            Z: 234.483276
+            X: 28858.9551
+            Y: -17133.2402
+            Z: 266.296722
           }
         }
         Overrides {
@@ -15427,9 +15427,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 28532.3984
-            Y: -17768.2344
-            Z: 258.393707
+            X: 28633.1133
+            Y: -17800.3379
+            Z: 334.871155
           }
         }
         Overrides {
@@ -15483,9 +15483,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 29685.5859
-            Y: -18022.584
-            Z: 220.470642
+            X: 29703.9199
+            Y: -18112.666
+            Z: 260.059296
           }
         }
         Overrides {
@@ -15539,9 +15539,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 29532.8926
-            Y: -18666.3203
-            Z: 262.889771
+            X: 29504.9453
+            Y: -18753.998
+            Z: 312.288727
           }
         }
         Overrides {
@@ -15595,9 +15595,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 28036.123
-            Y: -16612.3047
-            Z: 289.275757
+            X: 28043.7461
+            Y: -16649.7617
+            Z: 368.64386
           }
         }
         Overrides {
@@ -15651,9 +15651,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 28532.2852
-            Y: -16995.1387
-            Z: 261.266968
+            X: 28506.1621
+            Y: -16985.0645
+            Z: 278.248901
           }
         }
         Overrides {
@@ -15765,7 +15765,7 @@ Objects {
           Vector {
             X: 30514.1797
             Y: -20913.2832
-            Z: 223.463531
+            Z: 247.637665
           }
         }
         Overrides {
@@ -15818,9 +15818,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 30122.2969
+            X: 29767.0859
             Y: -20070.7578
-            Z: 200.671326
+            Z: 246.817719
           }
         }
         Overrides {
@@ -15931,7 +15931,7 @@ Objects {
           Vector {
             X: 28328.9102
             Y: -10993.9541
-            Z: 166.662292
+            Z: 187.639465
           }
         }
         Overrides {
@@ -15987,7 +15987,7 @@ Objects {
           Vector {
             X: 26606.8066
             Y: -10443.0703
-            Z: 617.839233
+            Z: 695.763428
           }
         }
         Overrides {
@@ -16043,13 +16043,13 @@ Objects {
           Vector {
             X: 26876.0508
             Y: -10676.3281
-            Z: 631.75415
+            Z: 696.166626
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -7.40674543
+            Yaw: -7.40673828
           }
         }
         Overrides {
@@ -16099,13 +16099,13 @@ Objects {
           Vector {
             X: 27208.4551
             Y: -11058.0371
-            Z: 680.312317
+            Z: 702.48175
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -7.40674543
+            Yaw: -7.40673828
           }
         }
         Overrides {
@@ -16155,7 +16155,7 @@ Objects {
           Vector {
             X: 26474.5508
             Y: -10883.1709
-            Z: 596.214233
+            Z: 678.416626
           }
         }
         Overrides {
@@ -16211,7 +16211,7 @@ Objects {
           Vector {
             X: 25751.3828
             Y: -9634.65527
-            Z: 649.740051
+            Z: 703.955627
           }
         }
         Overrides {
@@ -16265,9 +16265,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9860.38672
-            Y: -6647.0708
-            Z: 727.481812
+            X: 10218.1689
+            Y: -6675.51953
+            Z: 844.307922
           }
         }
         Overrides {
@@ -16321,9 +16321,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 10126.583
-            Y: -6919.13184
-            Z: 716.148
+            X: 10418.2803
+            Y: -6959.88379
+            Z: 852.381409
           }
         }
         Overrides {
@@ -16601,9 +16601,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 5192.42334
-            Y: -10447.207
-            Z: 885.639709
+            X: 5288.19043
+            Y: -10305.5391
+            Z: 879.230591
           }
         }
         Overrides {
@@ -16715,7 +16715,7 @@ Objects {
           Vector {
             X: 10873.2656
             Y: -7462.20459
-            Z: 721.127441
+            Z: 789.972168
           }
         }
         Overrides {
@@ -16995,7 +16995,7 @@ Objects {
           Vector {
             X: 11471.8545
             Y: -11063.5469
-            Z: 634.82843
+            Z: 679.147034
           }
         }
         Overrides {
@@ -17331,7 +17331,7 @@ Objects {
           Vector {
             X: 11180.5986
             Y: -11395.3301
-            Z: 623.494629
+            Z: 667.813232
           }
         }
         Overrides {
@@ -17443,7 +17443,7 @@ Objects {
           Vector {
             X: 13889.4287
             Y: -28582.0664
-            Z: 379.526733
+            Z: 416.72406
           }
         }
         Overrides {
@@ -17499,7 +17499,7 @@ Objects {
           Vector {
             X: 13012.1094
             Y: -28241.2715
-            Z: 372.02063
+            Z: 408.44696
           }
         }
         Overrides {
@@ -17555,7 +17555,7 @@ Objects {
           Vector {
             X: 12708.3447
             Y: -28499.873
-            Z: 354.941956
+            Z: 404.039856
           }
         }
         Overrides {
@@ -17611,7 +17611,7 @@ Objects {
           Vector {
             X: 10209.4893
             Y: -29061.0273
-            Z: 400.162781
+            Z: 418.265228
           }
         }
         Overrides {
@@ -17667,7 +17667,7 @@ Objects {
           Vector {
             X: 11904.5156
             Y: -28612.9824
-            Z: 356.317383
+            Z: 412.47937
           }
         }
         Overrides {
@@ -17723,7 +17723,7 @@ Objects {
           Vector {
             X: 12399.415
             Y: -28241.8477
-            Z: 311.351318
+            Z: 414.246643
           }
         }
         Overrides {
@@ -17779,7 +17779,7 @@ Objects {
           Vector {
             X: 9450.22
             Y: -28701.5723
-            Z: 362.520691
+            Z: 400.352142
           }
         }
         Overrides {
@@ -17834,7 +17834,7 @@ Objects {
           Vector {
             X: 10853.8701
             Y: -29026.1621
-            Z: 412.433044
+            Z: 430.535492
           }
         }
         Overrides {
@@ -17890,7 +17890,7 @@ Objects {
           Vector {
             X: 9406.60938
             Y: -29321.7715
-            Z: 401.675415
+            Z: 409.952026
           }
         }
         Overrides {
@@ -17946,7 +17946,7 @@ Objects {
           Vector {
             X: 16260.3008
             Y: -25072.1465
-            Z: -38.0714722
+            Z: 63.0678864
           }
         }
         Overrides {
@@ -18002,7 +18002,7 @@ Objects {
           Vector {
             X: 18890.9766
             Y: -26506.8789
-            Z: 236.956055
+            Z: 225.822418
           }
         }
         Overrides {
@@ -18058,7 +18058,7 @@ Objects {
           Vector {
             X: 19677
             Y: -26859.875
-            Z: 268.991516
+            Z: 283.387146
           }
         }
         Overrides {
@@ -18226,7 +18226,7 @@ Objects {
           Vector {
             X: 15969.0449
             Y: -25172.9414
-            Z: -75.7134399
+            Z: 154.686539
           }
         }
         Overrides {
@@ -18282,7 +18282,7 @@ Objects {
           Vector {
             X: 23395.8887
             Y: -28070.2461
-            Z: 138.020447
+            Z: 157.426758
           }
         }
         Overrides {
@@ -18449,7 +18449,7 @@ Objects {
           Vector {
             X: 21956.3711
             Y: -27781.2324
-            Z: 198.764282
+            Z: 224.92511
           }
         }
         Overrides {
@@ -18728,7 +18728,7 @@ Objects {
           Vector {
             X: 21716.7656
             Y: -23890.1836
-            Z: 12.7228088
+            Z: 34.4213638
           }
         }
         Overrides {
@@ -18837,8 +18837,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 16886.8594
-            Y: -22354.0762
+            X: 17160.1211
+            Y: -22426.9258
             Z: 39.0406189
           }
         }
@@ -18894,7 +18894,7 @@ Objects {
           Vector {
             X: 19243.7813
             Y: -22980.9375
-            Z: 12.7228088
+            Z: 68.4314423
           }
         }
         Overrides {
@@ -19062,7 +19062,7 @@ Objects {
           Vector {
             X: 21895.5098
             Y: -23749.5176
-            Z: 12.7226868
+            Z: 34.4212418
           }
         }
         Overrides {
@@ -19118,7 +19118,7 @@ Objects {
           Vector {
             X: 24152.3379
             Y: -23846.8711
-            Z: 37.3077393
+            Z: 62.8459167
           }
         }
         Overrides {
@@ -19173,7 +19173,7 @@ Objects {
           Vector {
             X: 21171.4
             Y: -23894.2578
-            Z: 42.8324127
+            Z: 64.5309677
           }
         }
         Overrides {
@@ -19228,7 +19228,7 @@ Objects {
           Vector {
             X: 19758.6387
             Y: -23284.082
-            Z: 12.7226868
+            Z: 41.3888702
           }
         }
         Overrides {
@@ -19283,7 +19283,7 @@ Objects {
           Vector {
             X: 23501.4746
             Y: -23827.748
-            Z: 29.5782166
+            Z: 55.116394
           }
         }
         Overrides {
@@ -19376,9 +19376,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 24998.2852
+            X: 25044.6855
             Y: -23709.123
-            Z: 104.29068
+            Z: 137.19368
           }
         }
         Overrides {
@@ -19423,9 +19423,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 23339.8789
-            Y: -24106.3906
-            Z: 37.3078613
+            X: 23273.3867
+            Y: -24143.5254
+            Z: 28.9568939
           }
         }
         Overrides {
