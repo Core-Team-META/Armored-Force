@@ -16,6 +16,7 @@ Objects {
   }
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
+  ChildIds: 7372993557655188566
   ChildIds: 17734630002646221213
   ChildIds: 14246791555251678451
   ChildIds: 15228262498109224048
@@ -1121,6 +1122,41 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW_Settings"
+  }
+}
+Objects {
+  Id: 7372993557655188566
+  Name: "Motion Blur Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5319512311515341951
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
