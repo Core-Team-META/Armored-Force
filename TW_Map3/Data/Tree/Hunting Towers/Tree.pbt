@@ -28,23 +28,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 12148.3203
-            Y: -8916.96
+            X: 12025
+            Y: -8950
             Z: 974.846497
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 103.079628
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.802642763
-            Y: 0.802642763
-            Z: 0.802642763
+            Yaw: -166.92038
           }
         }
       }

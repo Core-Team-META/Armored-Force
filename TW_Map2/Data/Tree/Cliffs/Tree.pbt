@@ -1,6 +1,71 @@
 Name: "Cliffs"
 RootId: 9408846036456260919
 Objects {
+  Id: 5771789528317645940
+  Name: "Cliff"
+  Transform {
+    Location {
+      X: -31230.3691
+      Y: -13108.668
+      Z: 1142.31665
+    }
+    Rotation {
+      Pitch: 1.59273851
+      Yaw: 78.9397812
+      Roll: -5.25631714
+    }
+    Scale {
+      X: -11.952
+      Y: 21.9366493
+      Z: 24.7356281
+    }
+  }
+  ParentId: 9408846036456260919
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 803013199804260715
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 3.84057426
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2.40604186
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14954943872139591724
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 13576988069010273692
   Name: "Cliff"
   Transform {
@@ -2299,7 +2364,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 803013199804260715
+        Id: 2162767478451637642
       }
     }
     Overrides {
@@ -2364,7 +2429,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 803013199804260715
+        Id: 2162767478451637642
       }
     }
     Overrides {
@@ -2613,71 +2678,6 @@ Objects {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 2162767478451637642
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 2.62653422
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.84953785
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14954943872139591724
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 1561247257437035707
-  Name: "Cliff"
-  Transform {
-    Location {
-      X: -20889.5547
-      Y: 21250.9219
-      Z: -1314.33691
-    }
-    Rotation {
-      Pitch: -10.1608582
-      Yaw: -96.1644897
-      Roll: 10.1926355
-    }
-    Scale {
-      X: 5.72900391
-      Y: 13.6403856
-      Z: 19.711092
-    }
-  }
-  ParentId: 9408846036456260919
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 803013199804260715
       }
     }
     Overrides {
@@ -7221,9 +7221,9 @@ Objects {
       Z: 301.14856
     }
     Rotation {
-      Pitch: 9.96370888
-      Yaw: -94.6662598
-      Roll: -106.041771
+      Pitch: 9.93412
+      Yaw: -94.7293396
+      Roll: -106.40744
     }
     Scale {
       X: 4.62973118
@@ -8621,9 +8621,9 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -2771.26855
+      X: -2747.27222
       Y: -14296.2383
-      Z: 304.964478
+      Z: 175.649689
     }
     Rotation {
       Pitch: 10.1499949
@@ -9080,7 +9080,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 803013199804260715
+        Id: 2162767478451637642
       }
     }
     Overrides {
@@ -9383,7 +9383,7 @@ Objects {
     Location {
       X: 6330.25928
       Y: 3914.64185
-      Z: 411.325073
+      Z: 399.213623
     }
     Rotation {
       Pitch: -0.350402832
@@ -9832,7 +9832,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 803013199804260715
+        Id: 2162767478451637642
       }
     }
     Overrides {
@@ -9896,7 +9896,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 803013199804260715
+        Id: 2162767478451637642
       }
     }
     Overrides {
@@ -10318,9 +10318,9 @@ Objects {
       Z: 80.5644226
     }
     Rotation {
-      Pitch: -0.118776985
-      Yaw: -68.130928
-      Roll: -9.31156731
+      Pitch: -0.118774414
+      Yaw: -68.1309204
+      Roll: -9.31155396
     }
     Scale {
       X: 7.268363
@@ -11003,7 +11003,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 803013199804260715
+        Id: 2162767478451637642
       }
     }
     Overrides {

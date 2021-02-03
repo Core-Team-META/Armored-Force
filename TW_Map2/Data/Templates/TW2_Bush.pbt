@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4742637420062156135
         ChildIds: 2015649741350995836
         ChildIds: 16216237043534549602
         ChildIds: 476504908591041899
@@ -50,15 +50,6 @@ Assets {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0513739102
-              G: 0.078
-              B: 0.00731244916
-              A: 1
             }
           }
           Overrides {

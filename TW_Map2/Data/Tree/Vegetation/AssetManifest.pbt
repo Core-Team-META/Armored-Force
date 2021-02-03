@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11216701439107531141
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
   Id: 1288642116985110208
   Name: "Branches Cluster Small"
   PlatformAssetType: 1

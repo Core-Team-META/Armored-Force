@@ -1,4 +1,13 @@
 Assets {
+  Id: 17246754151924769898
+  Name: "Fantasy Castle Floor 03 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_003_4m_ref"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -14,6 +23,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_DOF"
+  }
+}
+Assets {
+  Id: 16249977990736241835
+  Name: "Rock Block 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_007"
   }
 }
 Assets {
@@ -68,6 +86,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 5107422031480932844
+  Name: "Motion Blur Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_advanced_motion_blur"
   }
 }
 Assets {

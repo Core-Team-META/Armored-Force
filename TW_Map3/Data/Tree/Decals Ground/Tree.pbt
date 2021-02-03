@@ -2412,7 +2412,7 @@ Objects {
     Location {
       X: 10426.21
       Y: -7860.75879
-      Z: 313.595703
+      Z: 277.858887
     }
     Rotation {
     }
@@ -2455,9 +2455,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 11028.3555
-      Y: -9868.43164
-      Z: 234.036133
+      X: 11024.6367
+      Y: -9869.5127
+      Z: 159.562988
     }
     Rotation {
       Pitch: 2.84086
@@ -2503,9 +2503,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 6264.11084
-      Y: -10938.3115
-      Z: 456.820557
+      X: 6259.69482
+      Y: -10939.5957
+      Z: 368.369446
     }
     Rotation {
       Pitch: 2.84086

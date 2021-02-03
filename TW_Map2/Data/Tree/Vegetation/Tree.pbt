@@ -2154,9 +2154,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1599.60425
+            X: -1565.25134
             Y: -7762.38184
-            Z: 18.5994949
+            Z: -51.8997116
           }
         }
         Overrides {
@@ -2514,8 +2514,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2182.31885
-            Y: -7800.11621
+            X: 2063.99463
+            Y: -8061.8335
             Z: 1.19329071
           }
         }
@@ -2523,8 +2523,8 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: -13.8482971
-            Yaw: -64.5720825
-            Roll: 12.5409822
+            Yaw: 170.300613
+            Roll: 12.5426111
           }
         }
         Overrides {
@@ -2574,8 +2574,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2349.15234
-            Y: -7488.63086
+            X: 1809.96973
+            Y: -8331.58691
             Z: 6.48545837
           }
         }
@@ -2590,9 +2590,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 1.93692029
+            Y: 1.93692029
+            Z: 1.93692029
           }
         }
       }
@@ -2634,8 +2634,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2640.02051
-            Y: -7716.82422
+            X: 2197.35327
+            Y: -7951.50928
             Z: 47.793869
           }
         }
@@ -2710,9 +2710,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 2.22375798
+            Y: 2.22375798
+            Z: 2.22375798
           }
         }
       }
@@ -3430,9 +3430,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 1.79353929
+            Y: 1.79353929
+            Z: 1.79353929
           }
         }
       }
@@ -3595,24 +3595,24 @@ Objects {
           Name: "Position"
           Vector {
             X: 1219.69653
-            Y: -2561.53076
-            Z: -128.753052
+            Y: -2499.33887
+            Z: -72.2661133
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -3.40701294
-            Yaw: 45.7643814
+            Yaw: -115.891754
             Roll: -2.8053894
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 1.7976892
+            Y: 1.7976892
+            Z: 1.7976892
           }
         }
       }
@@ -3654,9 +3654,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1178.51331
-            Y: -1246.26782
-            Z: -81.9147797
+            X: 1310.09509
+            Y: -2336.53662
+            Z: -81.9148407
           }
         }
         Overrides {
@@ -3715,7 +3715,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 1043.33875
-            Y: 466.851776
+            Y: 987.452881
             Z: -49.0978088
           }
         }
@@ -3894,9 +3894,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 813.777222
-            Y: -538.894653
-            Z: 8.00747681
+            X: 1082.30591
+            Y: -434.849823
+            Z: -82.0963135
           }
         }
         Overrides {
@@ -3910,9 +3910,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 1.94509661
+            Y: 1.94509661
+            Z: 1.94509661
           }
         }
       }
@@ -3965,66 +3965,6 @@ Objects {
             Pitch: 34.5465698
             Yaw: -71.2321777
             Roll: 6.70492363
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14719356031079241106
-    }
-  }
-}
-Objects {
-  Id: 6001342941214969885
-  Name: "TW2_BushBig"
-  Transform {
-    Location {
-      X: 1043.33875
-      Y: -166.89505
-      Z: 8.00747681
-    }
-    Rotation {
-      Pitch: 26.5808754
-      Yaw: -159.333481
-      Roll: -4.08508348
-    }
-    Scale {
-      X: 1.4493717
-      Y: 1.4493717
-      Z: 1.4493717
-    }
-  }
-  ParentId: 4742637420062156135
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18435660001994587871
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_BushBig"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 813.777222
-            Y: -166.89505
-            Z: 8.00747681
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 3.49832034
-            Yaw: 18.8702202
-            Roll: 5.6360383
           }
         }
         Overrides {
@@ -4825,23 +4765,19 @@ Objects {
   Id: 12576685616652669816
   Name: "TW2_BushBig"
   Transform {
-    Location {
-      X: -8772.93359
-      Y: -17544.1836
-      Z: 66.6259766
-    }
-    Rotation {
-      Pitch: -17.641449
-      Yaw: -98.1050568
-      Roll: -5.02020597
-    }
     Scale {
-      X: 1.4493717
-      Y: 1.4493717
-      Z: 1.4493717
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 4742637420062156135
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 18435660001994587871
@@ -4864,14 +4800,6 @@ Objects {
             Pitch: -14.2269897
             Yaw: -18.889801
             Roll: 0.588985
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
           }
         }
       }
@@ -4903,6 +4831,19 @@ Objects {
   }
   ParentId: 4742637420062156135
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 2015649741350995836
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1184.54822
+            Y: -384.817535
+            Z: 25.4310036
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 18435660001994587871
       value {
@@ -4945,23 +4886,19 @@ Objects {
   Id: 17832532203824407340
   Name: "TW2_BushBig"
   Transform {
-    Location {
-      X: -8744.31641
-      Y: -17340.082
-      Z: 18.1101913
-    }
-    Rotation {
-      Pitch: -5.88519096
-      Yaw: -179.433151
-      Roll: 5.7032032
-    }
     Scale {
-      X: 1.4493717
-      Y: 1.4493717
-      Z: 1.4493717
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 4742637420062156135
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 18435660001994587871
@@ -4983,14 +4920,6 @@ Objects {
           Rotator {
             Yaw: -98.5492249
             Roll: 3.22635818
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
           }
         }
       }
@@ -8216,8 +8145,8 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 13.2838087
-            Yaw: -121.073036
-            Roll: 12.7582979
+            Yaw: 13.3009777
+            Roll: 12.7586155
           }
         }
         Overrides {
@@ -11137,7 +11066,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 997.083069
-            Y: 1726.57739
+            Y: 1619.41675
             Z: 47.4502106
           }
         }
@@ -11999,9 +11928,17 @@ Objects {
   }
 }
 Objects {
-  Id: 2242430002036858748
+  Id: 5101804752964749547
   Name: "TW2_Bush"
   Transform {
+    Location {
+      X: -12510
+      Y: -14880
+      Z: 175
+    }
+    Rotation {
+      Yaw: 89.9999924
+    }
     Scale {
       X: 1
       Y: 1
@@ -12009,41 +11946,186 @@ Objects {
     }
   }
   ParentId: 4742637420062156135
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18435660001994587871
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Bush"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -12510
-            Y: -14880
-            Z: 175
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999924
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
+  ChildIds: 11739997741798601032
+  ChildIds: 6349647560062723158
+  ChildIds: 13801630481807194975
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 5101804752964749547
+    SubobjectId: 18435660001994587871
+    InstanceId: 2242430002036858748
+    TemplateId: 4900798215571511034
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 13801630481807194975
+  Name: "Branches Cluster Big"
+  Transform {
+    Location {
+      X: -33.022934
+      Y: 58.1531143
+      Z: 13.2274323
+    }
+    Rotation {
+      Pitch: -9.46740723
+      Yaw: -88.3670654
+      Roll: 67.4917831
+    }
+    Scale {
+      X: 0.401462078
+      Y: 0.611770868
+      Z: 0.569779158
+    }
+  }
+  ParentId: 5101804752964749547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17949211485635097187
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
       }
     }
-    TemplateAsset {
-      Id: 4900798215571511034
+  }
+  InstanceHistory {
+    SelfId: 13801630481807194975
+    SubobjectId: 476504908591041899
+    InstanceId: 2242430002036858748
+    TemplateId: 4900798215571511034
+  }
+}
+Objects {
+  Id: 6349647560062723158
+  Name: "Branches Cluster Big"
+  Transform {
+    Location {
+      X: 32.6380234
+      Y: -4.56530476
+      Z: 4.16918945
     }
+    Rotation {
+      Pitch: -14.7424927
+      Yaw: 14.2735023
+      Roll: 85.40625
+    }
+    Scale {
+      X: 0.427559286
+      Y: 0.660132885
+      Z: 0.569775105
+    }
+  }
+  ParentId: 5101804752964749547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17949211485635097187
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6349647560062723158
+    SubobjectId: 16216237043534549602
+    InstanceId: 2242430002036858748
+    TemplateId: 4900798215571511034
+  }
+}
+Objects {
+  Id: 11739997741798601032
+  Name: "Bush 02"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -110.931046
+    }
+    Scale {
+      X: 0.830219567
+      Y: 0.830219567
+      Z: 0.830219567
+    }
+  }
+  ParentId: 5101804752964749547
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7692059865741963186
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 2897474060105501612
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11216701439107531141
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11739997741798601032
+    SubobjectId: 2015649741350995836
+    InstanceId: 2242430002036858748
+    TemplateId: 4900798215571511034
   }
 }
 Objects {
@@ -12057,6 +12139,12 @@ Objects {
     }
   }
   ParentId: 4742637420062156135
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 18435660001994587871
@@ -12077,14 +12165,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -89.9999924
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -14132,6 +14212,19 @@ Objects {
   ParentId: 4742637420062156135
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2015649741350995836
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8.33165169
+            Y: -12.1965094
+            Z: -38.4297256
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 18435660001994587871
       value {
         Overrides {
@@ -16002,7 +16095,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 989.333618
-            Y: 1403.90125
+            Y: 1279.26868
             Z: 8.00747681
           }
         }
@@ -16017,9 +16110,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 1.87956154
+            Y: 1.87956154
+            Z: 1.87956154
           }
         }
       }
@@ -17391,8 +17484,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1139.74036
-            Y: -7536.73145
+            X: -1070.29858
+            Y: -7428.51904
             Z: 72.4534225
           }
         }
@@ -17400,8 +17493,8 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 0.65582788
-            Yaw: -27.780077
-            Roll: -8.57413673
+            Yaw: -27.7800903
+            Roll: -8.5741272
           }
         }
         Overrides {
@@ -17451,9 +17544,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -823.216125
+            X: -991.613953
             Y: -7280.47119
-            Z: 56.3863754
+            Z: -4.75492096
           }
         }
         Overrides {
@@ -17467,9 +17560,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 2.12948155
+            Y: 2.12948155
+            Z: 2.12948155
           }
         }
       }
@@ -17508,17 +17601,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -742.936462
-            Y: -7013.39
+            X: -821.215576
+            Y: -7143.14355
             Z: 114.382484
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -10.9533691
-            Yaw: -9.9703207
-            Roll: -4.55667353
+            Pitch: -17.5975952
+            Yaw: -70.6200562
+            Roll: 12.6857748
           }
         }
         Overrides {
@@ -17527,66 +17620,6 @@ Objects {
             X: 1.4493717
             Y: 1.4493717
             Z: 1.4493717
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14719356031079241106
-    }
-  }
-}
-Objects {
-  Id: 5705079447702619942
-  Name: "TW2_BushBig"
-  Transform {
-    Location {
-      X: -973.211853
-      Y: 10085.751
-      Z: 36.3892593
-    }
-    Rotation {
-      Pitch: 5.793612
-      Yaw: 129.719482
-      Roll: 8.05873871
-    }
-    Scale {
-      X: 1.76644254
-      Y: 1.76644254
-      Z: 1.76644254
-    }
-  }
-  ParentId: 4742637420062156135
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18435660001994587871
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_BushBig"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1194.52258
-            Y: 10293.6201
-            Z: 36.3892593
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 5.793612
-            Yaw: -103.22966
-            Roll: 8.05912209
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.76644254
-            Y: 1.76644254
-            Z: 1.76644254
           }
         }
       }
@@ -17628,9 +17661,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -973.211853
-            Y: 10085.751
-            Z: 36.3892593
+            X: -2419.7439
+            Y: 11691.7451
+            Z: -76.3298264
           }
         }
         Overrides {
@@ -17800,9 +17833,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2167.19189
+            X: 2165.11475
             Y: 6713.26221
-            Z: 25.5766373
+            Z: -68.6053085
           }
         }
         Overrides {
@@ -17856,9 +17889,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2167.19189
+            X: 2086.60693
             Y: 6226.17383
-            Z: 16.2935181
+            Z: 24.011734
           }
         }
         Overrides {
@@ -18300,7 +18333,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -13.8482962
+            Pitch: -13.8482971
             Yaw: 149.942551
             Roll: 12.5384035
           }
@@ -18308,9 +18341,9 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.76644254
-            Y: 1.76644254
-            Z: 1.76644254
+            X: 2.51552272
+            Y: 2.51552272
+            Z: 2.51552272
           }
         }
       }
