@@ -59,15 +59,15 @@ Assets {
         Name: "DestructionTrigger"
         Transform {
           Location {
-            X: -120.092773
-            Y: 165.110962
+            X: -132.242188
+            Y: 182.27002
             Z: 219.279846
           }
           Rotation {
           }
           Scale {
             X: 3
-            Y: 4.1885004
+            Y: 4.74066401
             Z: 3.26650643
           }
         }
@@ -239,7 +239,6 @@ Assets {
         ChildIds: 17728666830589490953
         ChildIds: 15888845632283311709
         ChildIds: 11299912702902849286
-        ChildIds: 8538473757257385545
         ChildIds: 13993708970501556082
         ChildIds: 15157629690305725116
         ChildIds: 2664727156907646650
@@ -1408,85 +1407,6 @@ Assets {
         }
       }
       Objects {
-        Id: 8538473757257385545
-        Name: "Cube"
-        Transform {
-          Location {
-            X: -260.804688
-            Y: -16.4021568
-            Z: 31.1563721
-          }
-          Rotation {
-            Yaw: 89.9999847
-          }
-          Scale {
-            X: 0.795039058
-            Y: 0.499999911
-            Z: 5.25
-          }
-        }
-        ParentId: 10179604424358980073
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.688290298
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.201650053
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 13993708970501556082
         Name: "Cube"
         Transform {
@@ -1892,7 +1812,7 @@ Assets {
         Name: "RoundLog"
         Transform {
           Location {
-            X: -240
+            X: -283.193359
             Y: -15
             Z: 159.965546
           }
@@ -1901,9 +1821,9 @@ Assets {
             Roll: 139.10083
           }
           Scale {
-            X: 0.368761688
-            Y: 1.57000113
-            Z: 1.57000041
+            X: 0.431762457
+            Y: 1.57000124
+            Z: 1.57000053
           }
         }
         ParentId: 10179604424358980073
@@ -1972,18 +1892,18 @@ Assets {
         Name: "RoundLog"
         Transform {
           Location {
-            X: -240
+            X: -283.193359
             Y: -15
-            Z: 338.079041
+            Z: 338.079071
           }
           Rotation {
             Yaw: 2.04905609e-05
             Roll: 139.100845
           }
           Scale {
-            X: 0.370687
-            Y: 1.57000089
-            Z: 1.57000041
+            X: 0.434016764
+            Y: 1.57000101
+            Z: 1.57000053
           }
         }
         ParentId: 10179604424358980073
@@ -2142,6 +2062,7 @@ Assets {
           }
         }
         ParentId: 17887238652848773659
+        ChildIds: 8538473757257385545
         ChildIds: 9170918956171997131
         ChildIds: 15198766491778817671
         ChildIds: 9119069103662390716
@@ -2172,6 +2093,85 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8538473757257385545
+        Name: "Cube"
+        Transform {
+          Location {
+            X: -288.177246
+            Y: -17.3144531
+            Z: 31.1549683
+          }
+          Rotation {
+            Yaw: 89.9999771
+          }
+          Scale {
+            X: 0.795039058
+            Y: 0.499999911
+            Z: 5.25
+          }
+        }
+        ParentId: 15445894218693470789
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.688290298
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.201650053
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16374150260036817633
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -2389,14 +2389,14 @@ Assets {
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -331.199219
-            Y: 154.574219
-            Z: 575.224426
+            X: -323.867676
+            Y: 154.492188
+            Z: 565.963
           }
           Rotation {
-            Pitch: -30
-            Yaw: -178.076675
-            Roll: 178.640289
+            Pitch: -38.3375244
+            Yaw: -177.876373
+            Roll: 178.284515
           }
           Scale {
             X: 0.913861811
@@ -2448,19 +2448,19 @@ Assets {
         Name: "Wall"
         Transform {
           Location {
-            X: -246.589844
+            X: -284.071777
             Y: -18.7851563
-            Z: 226.409058
+            Z: 226.409027
           }
           Rotation {
             Pitch: 90
-            Yaw: -2.53012085
-            Roll: 177.47
+            Yaw: 35.2643509
+            Roll: -144.735504
           }
           Scale {
             X: 3.59475374
-            Y: 0.439882845
-            Z: 2.4523046
+            Y: 0.439882815
+            Z: 2.64747071
           }
         }
         ParentId: 15445894218693470789
@@ -2610,9 +2610,9 @@ Assets {
         Name: "Wall"
         Transform {
           Location {
-            X: -258.609375
-            Y: -30
-            Z: 406.919128
+            X: -283.177246
+            Y: -32.3144531
+            Z: 406.919159
           }
           Rotation {
             Yaw: -90
@@ -3205,9 +3205,9 @@ Assets {
         Name: "Wall"
         Transform {
           Location {
-            X: -258.609375
-            Y: -13.3259869
-            Z: 406.919128
+            X: -283.177246
+            Y: -15.640625
+            Z: 406.919159
           }
           Rotation {
             Yaw: 90
@@ -3425,7 +3425,7 @@ Assets {
         Name: "RoundLog"
         Transform {
           Location {
-            X: -240
+            X: -283.193359
             Y: -15
             Z: 70
           }
@@ -3434,9 +3434,9 @@ Assets {
             Roll: 139.100815
           }
           Scale {
-            X: 0.367031276
-            Y: 1.57000089
-            Z: 1.57000041
+            X: 0.429736406
+            Y: 1.57000101
+            Z: 1.57000053
           }
         }
         ParentId: 15445894218693470789
@@ -3505,7 +3505,7 @@ Assets {
         Name: "RoundLog"
         Transform {
           Location {
-            X: -240
+            X: -283.193359
             Y: -15
             Z: 254.965485
           }
@@ -3514,9 +3514,9 @@ Assets {
             Roll: 139.100815
           }
           Scale {
-            X: 0.380779028
-            Y: 1.57000101
-            Z: 1.57000065
+            X: 0.445832849
+            Y: 1.57000113
+            Z: 1.57000077
           }
         }
         ParentId: 15445894218693470789
@@ -3585,18 +3585,18 @@ Assets {
         Name: "RoundLog"
         Transform {
           Location {
-            X: -240
+            X: -283.193359
             Y: -15
-            Z: 393.3927
+            Z: 393.39267
           }
           Rotation {
             Yaw: 8.00436713e-12
             Roll: 139.10083
           }
           Scale {
-            X: 0.277327627
-            Y: 1.57000089
-            Z: 1.57000065
+            X: 0.324707359
+            Y: 1.57000101
+            Z: 1.57000077
           }
         }
         ParentId: 15445894218693470789

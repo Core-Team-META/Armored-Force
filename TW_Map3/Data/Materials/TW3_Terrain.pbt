@@ -112,6 +112,12 @@ Assets {
         Name: "material3side_scale"
         Float: 5
       }
+      Overrides {
+        Name: "cmp:Material4_Sides"
+        AssetReference {
+          Id: 11808832800638341704
+        }
+      }
     }
     Assets {
       Id: 1104511411894916854
@@ -183,6 +189,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_stucco_tint_001_uv"
+      }
+    }
+    Assets {
+      Id: 11808832800638341704
+      Name: "Dirt 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "dirt_001"
       }
     }
   }

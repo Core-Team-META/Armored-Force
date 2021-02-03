@@ -330,7 +330,7 @@ Objects {
 }
 Objects {
   Id: 13107315947377720785
-  Name: "Water"
+  Name: "Minimap_Water"
   Transform {
     Location {
       Z: 202
@@ -352,12 +352,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Water"
+    FilePartitionName: "Minimap_Water"
   }
 }
 Objects {
   Id: 14733879364378110593
-  Name: "Elevation1"
+  Name: "Minimap_Elevation1"
   Transform {
     Location {
       Z: 3109.37402
@@ -379,12 +379,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Elevation1"
+    FilePartitionName: "Minimap_Elevation1"
   }
 }
 Objects {
   Id: 4973943165602427089
-  Name: "Elevation2"
+  Name: "Minimap_Elevation2"
   Transform {
     Location {
       Z: 3954.7793
@@ -406,12 +406,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Elevation2"
+    FilePartitionName: "Minimap_Elevation2"
   }
 }
 Objects {
   Id: 14793029108670987197
-  Name: "Roads"
+  Name: "Minimap_Roads"
   Transform {
     Location {
       X: 625
@@ -434,7 +434,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Roads"
+    FilePartitionName: "Minimap_Roads"
   }
 }
 Objects {
@@ -561,6 +561,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 1444000811114487272
   ChildIds: 4501555540050391797
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
@@ -699,6 +700,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Measurements"
+  }
+}
+Objects {
+  Id: 1444000811114487272
+  Name: "Edges"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.49999988
+      Y: 1.49999988
+      Z: 1.49999988
+    }
+  }
+  ParentId: 12209608198557882361
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Edges"
   }
 }
 Objects {

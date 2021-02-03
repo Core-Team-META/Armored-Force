@@ -1,4 +1,4 @@
-Name: "Roads"
+Name: "Minimap_Roads"
 RootId: 14793029108670987197
 Objects {
   Id: 11408295385064806079

@@ -1,4 +1,4 @@
-Name: "Water"
+Name: "Minimap_Water"
 RootId: 13107315947377720785
 Objects {
   Id: 10481801517881430667

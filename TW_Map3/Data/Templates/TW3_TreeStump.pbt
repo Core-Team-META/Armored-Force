@@ -57,6 +57,15 @@ Assets {
             Name: "ma:Nature_Trunk:smart"
             Bool: false
           }
+          Overrides {
+            Name: "ma:Nature_Trunk:color"
+            Color {
+              R: 0.427000016
+              G: 0.341792136
+              B: 0.295910984
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
