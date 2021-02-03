@@ -2279,6 +2279,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -2407,6 +2410,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -2656,5 +2662,5 @@ Assets {
       AssetId: "Urban_Pipe_Wall_6m__Prop_"
     }
   }
-  SerializationVersion: 75
+  SerializationVersion: 76
 }

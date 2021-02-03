@@ -252,5 +252,5 @@ Assets {
       AssetId: "Military_Rare_Crate"
     }
   }
-  SerializationVersion: 75
+  SerializationVersion: 76
 }
