@@ -15,12 +15,13 @@ Assets {
             Z: 0.176569209
           }
         }
-        ParentId: 9924138213209110500
+        ParentId: 3008154843558529630
         ChildIds: 16055156055418925429
         ChildIds: 4383296188849170096
         ChildIds: 7214086191895034842
         ChildIds: 4350250931468518386
         ChildIds: 2090580724627168399
+        ChildIds: 17926967280197469526
         ChildIds: 7749845428454798206
         ChildIds: 16774048356596039790
         ChildIds: 16344486935698249985
@@ -2960,11 +2961,65 @@ Assets {
           }
           AutoPlay: true
           Repeat: true
-          Volume: 0.5
+          Volume: 0.3
           Falloff: 3000
           Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 17926967280197469526
+        Name: "Square Column Base 02"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 89.9999847
+          }
+          Scale {
+            X: 15.3920527
+            Y: 14.1241026
+            Z: 7.43433142
+          }
+        }
+        ParentId: 12339031325220020147
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9598014803426844430
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
         }
       }
       Objects {
@@ -3332,7 +3387,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3883,7 +3937,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4434,7 +4487,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4985,7 +5037,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -5566,6 +5617,15 @@ Assets {
       }
     }
     Assets {
+      Id: 9598014803426844430
+      Name: "Square Column Base 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_column_square_bottom_002"
+      }
+    }
+    Assets {
       Id: 6130311250470721560
       Name: "Large Girder 8m x 6m"
       PlatformAssetType: 1
@@ -5579,5 +5639,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 75
+  SerializationVersion: 76
 }

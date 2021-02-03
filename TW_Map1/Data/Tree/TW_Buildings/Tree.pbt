@@ -3359,9 +3359,9 @@ Objects {
   Name: "TW_BuildingBarnSmall"
   Transform {
     Location {
-      X: 4791.3125
-      Y: -3341.52563
-      Z: -0.613685071
+      X: 4791.32129
+      Y: -3341.53149
+      Z: -14.9485397
     }
     Rotation {
       Yaw: 152.170578

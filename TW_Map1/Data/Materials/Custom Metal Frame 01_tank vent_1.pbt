@@ -2,7 +2,7 @@ Assets {
   Id: 7842655669892217409
   Name: "Custom Metal Frame 01_tank vent"
   PlatformAssetType: 13
-  SerializationVersion: 75
+  SerializationVersion: 76
   CustomMaterialAsset {
     BaseMaterialId: 2112804179467698174
     ParameterOverrides {

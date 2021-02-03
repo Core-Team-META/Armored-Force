@@ -15707,6 +15707,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -15754,6 +15757,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -18377,6 +18383,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -18424,6 +18433,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -22196,6 +22208,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -22244,6 +22259,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -24899,6 +24917,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -24947,6 +24968,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -46621,6 +46645,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -46668,6 +46695,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -49291,6 +49321,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -49338,6 +49371,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -53110,6 +53146,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -53158,6 +53197,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -55813,6 +55855,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -55861,6 +55906,9 @@ Assets {
           }
           Vfx {
             AutoPlay: true
+            Relevance {
+              Value: "mc:evfxrelevance:critical"
+            }
           }
         }
       }
@@ -56618,6 +56666,6 @@ Assets {
   Marketplace {
     Description: "The 2020 Voxel Mk1 is a Jeep inspired off-road vehicle that uses special vehicle controls and suspension system to achieve a satisfying off-roading experience.\r\n\r\nThis set includes two vehicles: the Voxel Mk1 and the Voxel Mk1 Plus (only different externally).\r\n\r\nFeatures include:\r\n- WASD movement control scheme (tuned specifically for cars, where you can turn only when moving forward/backward)\r\n- L for headlights (and taillights when stopped)\r\n- Q and E for turn signal lights and X for hazard lights\r\n- H for horn \r\n- Suspension system that allows the vehicle to smoothly traverse most terrain.\r\n- Suspension details such as moving springs/shocks, rotating driveshafts, and tilting axles, and live-axle steering.\r\n\r\nNOTE: This is mostly experimental, and this vehicle may not work on all terrain.\r\n\r\nDemo video:\r\nhttps://youtu.be/tE3S6tFRW54\r\n"
   }
-  SerializationVersion: 75
+  SerializationVersion: 76
   DirectlyPublished: true
 }
