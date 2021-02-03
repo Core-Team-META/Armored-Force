@@ -274,5 +274,5 @@ Assets {
       AssetId: "Sci-fi_Chair_01_Prop_"
     }
   }
-  SerializationVersion: 75
+  SerializationVersion: 76
 }
