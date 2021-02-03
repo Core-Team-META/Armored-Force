@@ -80,6 +80,11 @@ Assets {
               MinContactOffset: 2
               MaxContactOffset: 8
             }
+            VfxSettings {
+              LowDistance: 4500
+              MediumDistance: 7000
+              HighDistance: 9000
+            }
           }
         }
       }
@@ -292,5 +297,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 75
+  SerializationVersion: 76
 }
