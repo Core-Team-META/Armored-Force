@@ -1894,6 +1894,12 @@ Objects {
     }
   }
   ParentId: 15016328222128833720
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 12561400358109127262
@@ -1906,21 +1912,13 @@ Objects {
           Name: "Position"
           Vector {
             X: -12630
-            Y: -21600
-            Z: 280
+            Y: -21627.4082
+            Z: 305.926086
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -1961,7 +1959,7 @@ Objects {
           Vector {
             X: -15078.2734
             Y: -24385.2207
-            Z: 296.119934
+            Z: 326.394318
           }
         }
         Overrides {
@@ -2017,7 +2015,7 @@ Objects {
           Vector {
             X: -14839.0322
             Y: -24146.7012
-            Z: 296.119934
+            Z: 320.437683
           }
         }
         Overrides {

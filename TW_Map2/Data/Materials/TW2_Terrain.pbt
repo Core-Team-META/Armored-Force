@@ -27,13 +27,13 @@ Assets {
       Overrides {
         Name: "cmp:Material3"
         AssetReference {
-          Id: 18063120635764219231
+          Id: 17094377707699735239
         }
       }
       Overrides {
         Name: "cmp:Material3_Sides"
         AssetReference {
-          Id: 18063120635764219231
+          Id: 17094377707699735239
         }
       }
       Overrides {
@@ -68,15 +68,6 @@ Assets {
       Overrides {
         Name: "material2_genmask"
         Float: 0.6
-      }
-      Overrides {
-        Name: "cmpc:Material3"
-        Color {
-          R: 1
-          G: 0.738278449
-          B: 0.24000001
-          A: 1
-        }
       }
       Overrides {
         Name: "cmpc:Material4"
@@ -138,8 +129,8 @@ Assets {
         Name: "cmpc:Material3_Sides"
         Color {
           R: 1
-          G: 0.738278449
-          B: 0.24000001
+          G: 0.780463576
+          B: 0.61
           A: 1
         }
       }
@@ -156,6 +147,15 @@ Assets {
         Name: "cmp:Material2_Sides"
         AssetReference {
           Id: 1910430801874839834
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material3"
+        Color {
+          R: 1
+          G: 0.780463576
+          B: 0.61
+          A: 1
         }
       }
     }
@@ -196,21 +196,21 @@ Assets {
       }
     }
     Assets {
-      Id: 18063120635764219231
-      Name: "Grass Clumps"
+      Id: 17094377707699735239
+      Name: "Rocky Ground 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_002_uv"
+        AssetId: "rocky_001"
       }
     }
     Assets {
-      Id: 18063120635764219231
-      Name: "Grass Clumps"
+      Id: 17094377707699735239
+      Name: "Rocky Ground 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_002_uv"
+        AssetId: "rocky_001"
       }
     }
     Assets {

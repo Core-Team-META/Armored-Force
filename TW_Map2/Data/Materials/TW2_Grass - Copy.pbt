@@ -1,41 +1,41 @@
 Assets {
-  Id: 2897474060105501612
-  Name: "TW2_Leaves"
+  Id: 15555598332489813405
+  Name: "TW2_Grass - Copy"
   PlatformAssetType: 13
   SerializationVersion: 75
   CustomMaterialAsset {
-    BaseMaterialId: 409059462685027538
+    BaseMaterialId: 555922902272108078
     ParameterOverrides {
       Overrides {
         Name: "SSS"
         Color {
-          R: 0.239669114
-          G: 0.258000016
-          B: 0.100878
-          A: 1
-        }
-      }
-      Overrides {
-        Name: "color_roots"
-        Color {
-          R: 0.239669114
-          G: 0.258000016
-          B: 0.100878
+          R: 0.0529813059
+          G: 0.101
+          B: 0.00723853149
           A: 1
         }
       }
       Overrides {
         Name: "color"
         Color {
-          R: 0.258000016
-          G: 0.205264807
-          B: 0.126162
+          R: 0.179
+          G: 0.17623049
+          B: 0.0128286844
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "color_roots"
+        Color {
+          R: 0.179
+          G: 0.17623049
+          B: 0.0128286844
           A: 1
         }
       }
     }
     Assets {
-      Id: 409059462685027538
+      Id: 555922902272108078
       Name: "Grass (default)"
       PlatformAssetType: 2
       PrimaryAsset {

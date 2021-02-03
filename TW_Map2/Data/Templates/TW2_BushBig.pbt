@@ -10,12 +10,12 @@ Assets {
         Name: "TW2_BushBig"
         Transform {
           Scale {
-            X: 1.76644254
-            Y: 1.76644254
-            Z: 1.76644254
+            X: 1.4493717
+            Y: 1.4493717
+            Z: 1.4493717
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4742637420062156135
         ChildIds: 2015649741350995836
         ChildIds: 16216237043534549602
         ChildIds: 476504908591041899
@@ -53,27 +53,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0513739102
-              G: 0.078
-              B: 0.00731244916
-              A: 1
-            }
-          }
-          Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
               Id: 2897474060105501612
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.0513739102
-              G: 0.078
-              B: 0.00731244916
-              A: 1
             }
           }
         }

@@ -15,7 +15,7 @@ Assets {
             Z: 0.802642763
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 14060228158289351582
         ChildIds: 2509142719907429235
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2168,6 +2168,9 @@ Assets {
         ChildIds: 1859945025011552311
         ChildIds: 10638053726507601372
         ChildIds: 8187907271319026565
+        ChildIds: 13599963006121529548
+        ChildIds: 10738046310115343874
+        ChildIds: 12718932439093879157
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2183,17 +2186,17 @@ Assets {
         Name: "SnowRoof"
         Transform {
           Location {
-            X: -23.4880829
-            Y: 44.6255302
-            Z: 39.4552345
+            X: -23.0286369
+            Y: 44.4933167
+            Z: 48.174408
           }
           Rotation {
             Roll: 7.81019211
           }
           Scale {
-            X: 3.9880228
-            Y: 3.98807502
-            Z: 0.132804558
+            X: 4.02149916
+            Y: 4.02155209
+            Z: 0.133919358
           }
         }
         ParentId: 18005829002570608839
@@ -2215,7 +2218,7 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
@@ -2230,7 +2233,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2786,6 +2789,210 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 16374150260036817633
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13599963006121529548
+        Name: "SnowRoof"
+        Transform {
+          Location {
+            X: -148.952469
+            Y: 44.5809174
+            Z: 48.7984238
+          }
+          Rotation {
+            Yaw: 2.65508897e-05
+            Roll: 7.81020546
+          }
+          Scale {
+            X: 0.632316113
+            Y: 4.62258196
+            Z: 0.132806644
+          }
+        }
+        ParentId: 18005829002570608839
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 663082363223318009
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.96475
+              B: 0.858999968
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.434341818
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16060214784296519809
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10738046310115343874
+        Name: "SnowRoof"
+        Transform {
+          Location {
+            X: -23.2598877
+            Y: 44.5813408
+            Z: 48.798378
+          }
+          Rotation {
+            Yaw: 5.39390421e-05
+            Roll: 7.81021929
+          }
+          Scale {
+            X: 0.632294416
+            Y: 4.30531073
+            Z: 0.132805407
+          }
+        }
+        ParentId: 18005829002570608839
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 663082363223318009
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.96475
+              B: 0.858999968
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.434341818
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16060214784296519809
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12718932439093879157
+        Name: "SnowRoof"
+        Transform {
+          Location {
+            X: 100.636276
+            Y: 44.5255814
+            Z: 48.3743515
+          }
+          Rotation {
+            Yaw: 8.21499052e-05
+            Roll: 7.81023312
+          }
+          Scale {
+            X: 0.632297
+            Y: 4.43545389
+            Z: 0.132804886
+          }
+        }
+        ParentId: 18005829002570608839
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 663082363223318009
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.96475
+              B: 0.858999968
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.434341818
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3606,6 +3813,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_wood_planks_white_001_uv"
+      }
+    }
+    Assets {
+      Id: 16060214784296519809
+      Name: "Plane 1m - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_1m_001"
       }
     }
     Assets {

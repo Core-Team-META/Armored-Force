@@ -38487,7 +38487,6 @@ ObjectSettings {
   ObjectStates {
     key: 6216142305277734274
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -69554,7 +69553,6 @@ ObjectSettings {
   ObjectStates {
     key: 11188426795278308307
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -87407,7 +87405,6 @@ ObjectSettings {
   ObjectStates {
     key: 14060228158289351582
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -94513,7 +94510,6 @@ ObjectSettings {
   ObjectStates {
     key: 15182677334456928949
     value {
-      IsHidden: true
     }
   }
   ObjectStates {
