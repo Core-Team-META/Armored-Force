@@ -2,7 +2,7 @@ Assets {
   Id: 13184027453908798651
   Name: "TW3_SnowRoof"
   PlatformAssetType: 13
-  SerializationVersion: 75
+  SerializationVersion: 76
   CustomMaterialAsset {
     BaseMaterialId: 663082363223318009
     ParameterOverrides {

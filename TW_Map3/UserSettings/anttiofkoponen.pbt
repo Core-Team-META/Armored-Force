@@ -18440,7 +18440,6 @@ ObjectSettings {
   ObjectStates {
     key: 3020717205652326310
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -26311,7 +26310,6 @@ ObjectSettings {
   ObjectStates {
     key: 4268498956558112682
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -29998,7 +29996,6 @@ ObjectSettings {
   ObjectStates {
     key: 4876028711054298361
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -31089,7 +31086,6 @@ ObjectSettings {
   ObjectStates {
     key: 5078255750231653744
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -32445,7 +32441,6 @@ ObjectSettings {
   ObjectStates {
     key: 5278700387402217562
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -33341,7 +33336,6 @@ ObjectSettings {
   ObjectStates {
     key: 5418574581673319667
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -49717,7 +49711,6 @@ ObjectSettings {
   ObjectStates {
     key: 7989302934650398383
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -50333,7 +50326,6 @@ ObjectSettings {
   ObjectStates {
     key: 8094528941055596876
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -63175,7 +63167,6 @@ ObjectSettings {
   ObjectStates {
     key: 10179970712843138106
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -66421,7 +66412,6 @@ ObjectSettings {
   ObjectStates {
     key: 10677443314390756594
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -72643,7 +72633,6 @@ ObjectSettings {
   ObjectStates {
     key: 11667467784761547334
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -87214,7 +87203,6 @@ ObjectSettings {
   ObjectStates {
     key: 14029331153833925787
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -98406,7 +98394,6 @@ ObjectSettings {
   ObjectStates {
     key: 15821183777578064729
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
@@ -112203,7 +112190,6 @@ ObjectSettings {
   ObjectStates {
     key: 18163365537949626811
     value {
-      IsLocked: true
     }
   }
   ObjectStates {
