@@ -2,7 +2,7 @@ Assets {
   Id: 5162124783989194308
   Name: "TW_DaisyYellow"
   PlatformAssetType: 13
-  SerializationVersion: 75
+  SerializationVersion: 76
   CustomMaterialAsset {
     BaseMaterialId: 8926541361271630621
     ParameterOverrides {
