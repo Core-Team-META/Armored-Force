@@ -1,6 +1,6 @@
 Assets {
   Id: 11423917909484857595
-  Name: "TW2_Tree"
+  Name: "TW2_Tree_Cosmetic"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -116,14 +116,6 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
-            }
-          }
-          Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
               Id: 2897474060105501612
@@ -180,14 +172,6 @@ Assets {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
             }
           }
           Overrides {
@@ -250,14 +234,6 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
-            }
-          }
-          Overrides {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
               Id: 2897474060105501612
@@ -314,14 +290,6 @@ Assets {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 7692059865741963186
-            }
-          }
-          Overrides {
-            Name: "ma:Nature_Leaves:color"
-            Color {
-              R: 0.0468
-              G: 0.052
-              A: 1
             }
           }
           Overrides {

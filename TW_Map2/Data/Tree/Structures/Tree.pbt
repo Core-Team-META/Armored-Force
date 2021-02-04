@@ -1,295 +1,906 @@
-Name: "Tree destructible"
-RootId: 15016328222128833720
+Name: "Structures"
+RootId: 5274114996052781512
 Objects {
-  Id: 13580425596539397059
-  Name: "TW2_TreeDead_Destructible"
+  Id: 8285468708022015433
+  Name: "TW2_BuildingCornerWindowsRuin01_Destructible"
   Transform {
     Location {
-      X: -15081.5537
-      Y: -24417.1836
-      Z: 311.489
+      X: -17720.5313
+      Y: -16980.8145
+      Z: 158.671417
     }
     Rotation {
-      Yaw: 54.208847
+      Yaw: -44.9999924
     }
     Scale {
-      X: 1.01147
-      Y: 1.01147
-      Z: 1.01147
+      X: -1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 15090081888468464931
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_BuildingCornerWindowsRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -12588.3271
-            Y: -21680.0039
-            Z: 293.865509
+            X: -17525
+            Y: -14700
+            Z: 158.671417
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -5.40997314
-            Yaw: 126.495125
-            Roll: 1.72491193
+            Yaw: 22.4999313
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.01147
-            Y: 1.01147
-            Z: 1.01147
+            X: -1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 12315307225553789054
     }
   }
 }
 Objects {
-  Id: 13505103235246520466
-  Name: "TW2_TreeDead_Destructible"
+  Id: 3318445883372074458
+  Name: "TW2_FenceRuin01End_Destructible"
   Transform {
     Location {
-      X: -15081.5537
-      Y: -24417.1836
-      Z: 311.489
+      X: -18350
+      Y: -12825
+      Z: 175
     }
     Rotation {
-      Yaw: 54.208847
+      Yaw: 112.499916
     }
     Scale {
-      X: 1.01147
-      Y: 1.01147
-      Z: 1.01147
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 703050169760194983
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_FenceRuin01End_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -14906.7871
-            Y: -24174.7852
-            Z: 311.489
+            X: -20875
+            Y: -15650
+            Z: 302.55481
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -41.894104
+            Yaw: 22.4999199
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 0.553546667
-            Y: 0.553546667
-            Z: 0.553546667
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 8598357279066119851
     }
   }
 }
 Objects {
-  Id: 1991203320099179757
-  Name: "TW2_TreeDead_Destructible"
+  Id: 9484117271550321252
+  Name: "TW2_PillarRuin02_Destructible"
   Transform {
-    Location {
-      X: -18836.9102
-      Y: -19397.4746
-      Z: 180.363525
-    }
-    Rotation {
-      Yaw: -179.913467
-    }
     Scale {
-      X: 0.877297342
-      Y: 0.877297342
-      Z: 0.877297342
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 638096257175346616
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_PillarRuin02_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -15081.5537
-            Y: -24417.1836
-            Z: 311.489
+            X: -17875
+            Y: -13925
+            Z: 175
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 54.208847
+            Yaw: 117.209595
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.01147
-            Y: 1.01147
-            Z: 1.01147
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 17289261273356691168
     }
   }
 }
 Objects {
-  Id: 17996424236787159483
-  Name: "TW2_TreeDead_Destructible"
+  Id: 15020160260139258263
+  Name: "TW2_PillarRuin_Destructible"
   Transform {
-    Location {
-      X: -15830.2773
-      Y: -15620.3477
-      Z: 180.363525
-    }
-    Rotation {
-      Yaw: -179.913467
-    }
     Scale {
-      X: 1.02792561
-      Y: 1.02792561
-      Z: 1.02792561
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 2853065804470574627
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_PillarRuin_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -18836.9102
-            Y: -19397.4746
-            Z: 180.363525
+            X: -16784.9727
+            Y: -13394.749
+            Z: 194.550873
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -179.913467
+            Yaw: 27.2097759
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 0.877297342
-            Y: 0.877297342
-            Z: 0.877297342
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 957172404882412353
     }
   }
 }
 Objects {
-  Id: 5033787121240738662
-  Name: "TW2_TreeDead_Destructible"
+  Id: 4702771960121053132
+  Name: "TW2_FenceRuin01End_Destructible"
   Transform {
     Location {
-      X: -19306.7227
-      Y: -15825.8633
-      Z: 140.141907
+      X: -11975
+      Y: -23250
+      Z: 286.788055
     }
     Rotation {
-      Yaw: -179.913467
+      Yaw: 44.9999962
     }
     Scale {
-      X: 0.64956367
-      Y: 0.64956367
-      Z: 0.64956367
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 703050169760194983
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_FenceRuin01End_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -15830.2773
-            Y: -15620.3477
-            Z: 180.363525
+            X: -12107.0771
+            Y: -20951.8066
+            Z: 247.679291
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -179.913467
+            Pitch: -2.0899694
+            Yaw: -45.0381622
+            Roll: 2.09136748
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.02792561
-            Y: 1.02792561
-            Z: 1.02792561
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 8598357279066119851
     }
   }
 }
 Objects {
-  Id: 9347287217801523140
-  Name: "TW2_TreeDead_Destructible"
+  Id: 14548392216926192193
+  Name: "TW2_FenceRuin01_Destructible"
   Transform {
     Location {
-      X: -19932.1465
-      Y: -7272.85254
-      Z: 299.047791
+      X: -11414.4688
+      Y: -21775.291
+      Z: 199.999969
+    }
+    Rotation {
+      Pitch: -2.69198227
+      Yaw: -50.8521271
+      Roll: 1.06839593e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12079.1025
+            Y: -21044.9609
+            Z: 211.805405
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.69198227
+            Yaw: 129.147812
+            Roll: -1.06839593e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 7118290067692951509
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -18175
+      Y: -22850
+      Z: 249.467133
+    }
+    Rotation {
+      Pitch: -7.91293764
+      Yaw: 90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11413.9189
+            Y: -21775.9648
+            Z: 218.499481
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.69198227
+            Yaw: -50.85215
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 291285136791272815
+  Name: "TW2_FenceRuin01End_Destructible"
+  Transform {
+    Location {
+      X: -18175
+      Y: -23653.4805
+      Z: 314.897552
+    }
+    Rotation {
+      Yaw: 89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 703050169760194983
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01End_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11975
+            Y: -23250
+            Z: 286.788055
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 44.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8598357279066119851
+    }
+  }
+}
+Objects {
+  Id: 3103416931323108811
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -17700
+      Y: -22737.832
+      Z: 246.897369
+    }
+    Rotation {
+      Roll: 9.07186794
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11797.2236
+            Y: -22775
+            Z: 286.278229
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+            Roll: 0.98705852
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 6672649480574880352
+  Name: "TW2_FenceRuin01End_Destructible"
+  Transform {
+    Location {
+      X: -18175
+      Y: -23653.4805
+      Z: 314.897552
+    }
+    Rotation {
+      Yaw: 89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 703050169760194983
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01End_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12275
+            Y: -14625
+            Z: 175
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -67.5000534
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8598357279066119851
+    }
+  }
+}
+Objects {
+  Id: 4200807076840427505
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -17325
+      Y: -22825
+      Z: 216.091248
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: -4.54800463
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12675
+            Y: -14925
+            Z: 149.999939
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -157.499985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 3626462061023525815
+  Name: "TW2_FenceRuin01End_Destructible"
+  Transform {
+    Location {
+      X: -18175
+      Y: -23653.4805
+      Z: 314.897552
+    }
+    Rotation {
+      Yaw: 89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 703050169760194983
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01End_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16868.8027
+            Y: -22896.9395
+            Z: 252.436127
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -6.30486536
+            Yaw: 89.9999847
+            Roll: -2.14742244e-07
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8598357279066119851
+    }
+  }
+}
+Objects {
+  Id: 7359388558013231434
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -17700
+      Y: -22737.832
+      Z: 246.897369
+    }
+    Rotation {
+      Roll: 9.07186794
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17325
+            Y: -22825
+            Z: 216.091248
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999969
+            Roll: -4.54800558
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 8302177304719060209
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17950
+            Y: -20600
+            Z: 125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90.0899048
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 14852457942585625079
+  Name: "TW2_FenceRuin01End_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 703050169760194983
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01End_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18175
+            Y: -23653.4805
+            Z: 314.897552
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999771
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8598357279066119851
+    }
+  }
+}
+Objects {
+  Id: 9207705198206119692
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -17700
+      Y: -22750
+      Z: 200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18175
+            Y: -22850
+            Z: 249.467133
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -7.91293764
+            Yaw: 90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 9619087462862505942
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -15600
+      Y: -16100
+      Z: 150
     }
     Rotation {
       Yaw: -44.9999962
@@ -300,52 +911,164 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 6731688779408929448
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_FenceRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -20238.0352
-            Y: -15827.2705
-            Z: 209.207581
+            X: -15225
+            Y: -16475
+            Z: 150
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -179.913467
+            Yaw: -44.9999924
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 0.64956367
-            Y: 0.64956367
-            Z: 0.64956367
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 5276831244998865112
     }
   }
 }
 Objects {
-  Id: 13750653013683225240
-  Name: "TW2_TreeDead_Destructible"
+  Id: 12885130710613275579
+  Name: "TW2_FenceRuin01_Destructible"
   Transform {
     Location {
-      X: 17720.6934
-      Y: -6564.97314
-      Z: 167.892014
+      X: -13850
+      Y: -15350
+      Z: 150
+    }
+    Rotation {
+      Yaw: 22.4999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15600
+            Y: -16100
+            Z: 150
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -44.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 7800765835344416446
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -13350
+      Y: -15125
+      Z: 200
+    }
+    Rotation {
+      Yaw: 22.4999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13850
+            Y: -15350
+            Z: 150
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 22.4999371
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 2336473393753231465
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -17542.5742
+      Y: -22750
+      Z: 200
     }
     Rotation {
     }
@@ -355,34 +1078,27 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 6731688779408929448
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_FenceRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 9173.08
-            Y: -6542.31689
-            Z: 167.891891
+            X: -13350
+            Y: -15125
+            Z: 150
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 36.4133224
-            Roll: -7.70117807
+            Yaw: 22.4999371
           }
         }
         Overrides {
@@ -396,73 +1112,21 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 5276831244998865112
     }
   }
 }
 Objects {
-  Id: 14268688311589226179
-  Name: "TW2_TreeDead_Destructible"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1314689506230725920
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -35492.0898
-            Y: 1893.50891
-            Z: 590.16394
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -8.16933632
-            Yaw: -96.4001541
-            Roll: 0.91318357
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8022659663373324817
-    }
-  }
-}
-Objects {
-  Id: 10570207364579165260
-  Name: "TW2_TreeDead_Destructible"
+  Id: 17613167532470604758
+  Name: "TW2_FenceRuin01_Destructible"
   Transform {
     Location {
-      X: 20468.2891
-      Y: -1954.57373
-      Z: -44.1251373
+      X: -17450
+      Y: -22814.6797
+      Z: 200
     }
     Rotation {
-      Pitch: 13.0918121
-      Yaw: -91.5715485
-      Roll: -0.356078058
+      Yaw: -179.999985
     }
     Scale {
       X: 1
@@ -470,247 +1134,21 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 6731688779408929448
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_FenceRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 12128.8652
-            Y: 7336.83252
-            Z: -71.2541962
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 13.1802425
-            Yaw: -145.715225
-            Roll: 5.14486504
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8022659663373324817
-    }
-  }
-}
-Objects {
-  Id: 9974719681969474089
-  Name: "TW2_TreeDead_Destructible"
-  Transform {
-    Location {
-      X: 17720.6934
-      Y: -6564.97314
-      Z: 167.892014
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1314689506230725920
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 20468.2891
-            Y: -1954.57373
-            Z: -44.1251373
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 13.0918121
-            Yaw: -91.5715332
-            Roll: -0.356077164
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8022659663373324817
-    }
-  }
-}
-Objects {
-  Id: 4382768656030120983
-  Name: "TW2_TreeDead_Destructible"
-  Transform {
-    Location {
-      X: 17720.6934
-      Y: -6564.97314
-      Z: 167.892014
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1314689506230725920
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 12385.3711
-            Y: -13102.1611
-            Z: 590.221558
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8022659663373324817
-    }
-  }
-}
-Objects {
-  Id: 11890711492996049218
-  Name: "TW2_TreeDead_Destructible"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1314689506230725920
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 18400
-            Y: -5450
-            Z: 45
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8022659663373324817
-    }
-  }
-}
-Objects {
-  Id: 2375265978363821507
-  Name: "TW2_TreeDead_Destructible"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1314689506230725920
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -14600
-            Y: -6620
-            Z: 305
+            X: -15800
+            Y: -23531.6855
+            Z: 300
           }
         }
         Overrides {
@@ -730,34 +1168,160 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 5276831244998865112
     }
   }
 }
 Objects {
-  Id: 18348185346228256404
-  Name: "TW2_TreeDead_Destructible"
+  Id: 16873453954618171526
+  Name: "TW2_BuildingCornerRuin01_Destructible"
   Transform {
+    Location {
+      X: -13550
+      Y: -20025
+      Z: 250
+    }
+    Rotation {
+      Yaw: 67.5000305
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 14311414014155361742
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_BuildingCornerRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -14640
-            Y: 9890
+            X: -15900
+            Y: -23500
+            Z: 314.709
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4428681220567596845
+    }
+  }
+}
+Objects {
+  Id: 3419041702701614034
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -18150
+      Y: -19250
+      Z: 125
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18675
+            Y: -19250
+            Z: 125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.58051467
+            Yaw: -44.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 1175517943373781880
+  Name: "TW2_FenceRuin01_Destructible"
+  Transform {
+    Location {
+      X: -17542.5742
+      Y: -22750
+      Z: 200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6731688779408929448
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_FenceRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18150
+            Y: -19250
+            Z: 125
           }
         }
         Overrides {
@@ -776,40 +1340,48 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 5276831244998865112
     }
   }
 }
 Objects {
-  Id: 7577339901037844207
-  Name: "TW2_TreeDead_Destructible"
+  Id: 8506513769039164466
+  Name: "TW2_FenceRuin01_Destructible"
   Transform {
+    Location {
+      X: -17846.1426
+      Y: -22814.6797
+      Z: 238.192749
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 6731688779408929448
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_FenceRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -23485
-            Y: 6665
-            Z: 75
+            X: -15875
+            Y: -24525
+            Z: 275
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: 89.9999847
           }
         }
         Overrides {
@@ -823,13 +1395,13 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 5276831244998865112
     }
   }
 }
 Objects {
-  Id: 12754874299323052267
-  Name: "TW2_TreeDead_Destructible"
+  Id: 16291498953012429857
+  Name: "TW2_FenceRuin01_Destructible"
   Transform {
     Scale {
       X: 1
@@ -837,21 +1409,340 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 6731688779408929448
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_FenceRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -17835
-            Y: 20555
-            Z: -410
+            X: -17700
+            Y: -22737.832
+            Z: 246.897369
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: 9.07187939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5276831244998865112
+    }
+  }
+}
+Objects {
+  Id: 3935398080212226271
+  Name: "TW2_BuildingCornerRuin01_Destructible"
+  Transform {
+    Location {
+      X: -13500
+      Y: -20025
+      Z: 250
+    }
+    Rotation {
+      Yaw: 67.5000305
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14311414014155361742
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14000
+            Y: -21075
+            Z: 265.387726
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.838706195
+            Yaw: -22.4850731
+            Roll: -2.0254519
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4428681220567596845
+    }
+  }
+}
+Objects {
+  Id: 10305269021007985002
+  Name: "TW2_BuildingCornerRuin01_Destructible"
+  Transform {
+    Location {
+      X: -16225
+      Y: -16850
+      Z: 146.993774
+    }
+    Rotation {
+      Yaw: 44.9999962
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14311414014155361742
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13550
+            Y: -20025
+            Z: 271.095703
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.32439852
+            Yaw: 67.3972702
+            Roll: 2.21237898
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4428681220567596845
+    }
+  }
+}
+Objects {
+  Id: 8645112801150899761
+  Name: "TW2_BuildingCornerWindowsRuin02_Destructible"
+  Transform {
+    Location {
+      X: -17051.8379
+      Y: -17649.5078
+      Z: 141.373367
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8252996713209940175
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerWindowsRuin02_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14300
+            Y: -19675
+            Z: 200
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -112.499916
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6773390034913294070
+    }
+  }
+}
+Objects {
+  Id: 3724401811038055372
+  Name: "TW2_BuildingCornerWindowsRuin01_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13841370571130246745
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24.703125
+            Y: 313.941406
+            Z: 345.808594
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15090081888468464931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerWindowsRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -14831.6299
+            Y: -20718.1719
+            Z: 200
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.499958
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12315307225553789054
+    }
+  }
+}
+Objects {
+  Id: 11770162894780226559
+  Name: "TW2_BuildingCornerRuin01_Destructible"
+  Transform {
+    Location {
+      X: -16225
+      Y: -16850
+      Z: 146.993774
+    }
+    Rotation {
+      Yaw: 44.9999962
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14311414014155361742
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -18825
+            Y: -20925
+            Z: 146.994019
           }
         }
         Overrides {
@@ -871,41 +1762,117 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 4428681220567596845
     }
   }
 }
 Objects {
-  Id: 12660122424508122962
-  Name: "TW2_TreeDead_Destructible"
+  Id: 15554712934965084070
+  Name: "TW2_BuildingCornerWindowsRuin01_Destructible"
   Transform {
+    Location {
+      X: -17720.5313
+      Y: -16980.8145
+      Z: 158.671417
+    }
+    Rotation {
+      Yaw: -44.9999924
+    }
+    Scale {
+      X: -1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15090081888468464931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerWindowsRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13251.459
+            Y: -15106.7529
+            Z: 158.671356
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 22.4999599
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12315307225553789054
+    }
+  }
+}
+Objects {
+  Id: 7088286158509233906
+  Name: "TW2_BuildingCornerRuin01_Destructible"
+  Transform {
+    Location {
+      X: -16225
+      Y: -16850
+      Z: 146.993774
+    }
+    Rotation {
+      Yaw: 44.9999962
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 14311414014155361742
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_BuildingCornerRuin01_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -14605
-            Y: -10840
-            Z: 335
+            X: -12756.1631
+            Y: -13630.2803
+            Z: 146.993713
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -157.500031
+            Yaw: 112.499954
           }
         }
         Overrides {
@@ -919,13 +1886,13 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
+      Id: 4428681220567596845
     }
   }
 }
 Objects {
-  Id: 9565219741987472967
-  Name: "TW2_TreeDead_Destructible"
+  Id: 6448491802456420928
+  Name: "TW2_BuildingCornerWindowsRuin02_Destructible"
   Transform {
     Scale {
       X: 1
@@ -933,27 +1900,141 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15016328222128833720
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1314689506230725920
+      key: 8252996713209940175
       value {
         Overrides {
           Name: "Name"
-          String: "TW2_TreeDead_Destructible"
+          String: "TW2_BuildingCornerWindowsRuin02_Destructible"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -24509.2422
-            Y: -9599.31836
-            Z: 256.795135
+            X: -17051.8379
+            Y: -17649.5078
+            Z: 141.373367
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -45
+            Yaw: 44.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6773390034913294070
+    }
+  }
+}
+Objects {
+  Id: 6951353807412727021
+  Name: "TW2_BuildingCornerWindowsRuin01_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15090081888468464931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerWindowsRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17720.5313
+            Y: -16980.8145
+            Z: 158.671417
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -44.9999847
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12315307225553789054
+    }
+  }
+}
+Objects {
+  Id: 17936203158600636207
+  Name: "TW2_BuildingCornerRuin01_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5274114996052781512
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14311414014155361742
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW2_BuildingCornerRuin01_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16225
+            Y: -16850
+            Z: 146.993774
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 44.9999924
           }
         }
         Overrides {
@@ -967,1265 +2048,7 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 8022659663373324817
-    }
-  }
-}
-Objects {
-  Id: 17007750775388139614
-  Name: "TW2_TreeDead_Destructible"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1314689506230725920
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_TreeDead_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 15175
-            Y: -22290
-            Z: 295
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8022659663373324817
-    }
-  }
-}
-Objects {
-  Id: 218048737018267819
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1007.93604
-            Y: 1005.3512
-            Z: 33.9221802
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 13298441283363046953
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 1007.93604
-      Y: 1005.3512
-      Z: 33.9221802
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2081.07251
-            Y: 5827.46582
-            Z: 15.8527069
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 11.4498549
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 17530749995735929444
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 2081.07251
-      Y: 5827.46582
-      Z: 15.8527069
-    }
-    Rotation {
-      Pitch: 11.4498549
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1870.26978
-            Y: 6899.87207
-            Z: -13.8751755
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.20223951
-            Yaw: -179.486893
-            Roll: -2.64627051
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.837538362
-            Y: 0.837538362
-            Z: 0.837538362
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 9787117137591060632
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 1007.93604
-      Y: 1005.3512
-      Z: 33.9221802
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -5659.61914
-            Y: -9110.56641
-            Z: 266.150299
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 18021876017820440119
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: -4661.51563
-      Y: -8276.73145
-      Z: 241.520874
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2284.11182
-            Y: -11610.0586
-            Z: 117.069305
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.18802
-            Yaw: 128.171219
-            Roll: 6.35299397
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 8876044523645106394
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: -2284.11182
-      Y: -11610.0586
-      Z: 117.069305
-    }
-    Rotation {
-      Pitch: -5.18802
-      Yaw: 128.17128
-      Roll: 6.35298252
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1528.52319
-            Y: -13320.2236
-            Z: 1251.15283
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.1880188
-            Yaw: 128.171188
-            Roll: 6.35300589
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 9261427115354722936
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 1488.39856
-      Y: -13281.5195
-      Z: 1251.15283
-    }
-    Rotation {
-      Pitch: -5.18802
-      Yaw: 128.171219
-      Roll: 6.35299444
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2181.8772
-            Y: -14738.374
-            Z: 1211.25208
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.07067871
-            Yaw: -18.1552734
-            Roll: -6.44693
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 18271406920130619999
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: -2284.11182
-      Y: -11610.0586
-      Z: 117.069305
-    }
-    Rotation {
-      Pitch: -5.18802
-      Yaw: 128.17128
-      Roll: 6.35298252
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2843.88086
-            Y: -10728.5918
-            Z: 1145.99463
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.1880188
-            Yaw: -45.3678894
-            Roll: 6.35323381
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 6568234189376137873
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 2843.88086
-      Y: -10728.5918
-      Z: 1145.99463
-    }
-    Rotation {
-      Pitch: -5.18802
-      Yaw: -45.3678474
-      Roll: 6.35322332
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 7460.39355
-            Y: -17473.373
-            Z: 1315.46838
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.37115479
-            Yaw: -99.428894
-            Roll: 7.98281384
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 11198163185820623968
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 7460.39355
-      Y: -17473.373
-      Z: 1315.46838
-    }
-    Rotation {
-      Pitch: -5.18802
-      Yaw: -45.3678818
-      Roll: 6.35323286
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 8484.76074
-            Y: -20850.8125
-            Z: 1296.6626
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.06787586
-            Yaw: -43.3724976
-            Roll: 12.1713934
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 11380528772728014825
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 8547.51465
-      Y: -21208.918
-      Z: 1375.73645
-    }
-    Rotation {
-      Pitch: -5.18802
-      Yaw: -45.3679085
-      Roll: 6.35324287
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2081.67285
-            Y: -24348.4102
-            Z: 769.174561
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.18802
-            Yaw: 71.7462463
-            Roll: 6.35348606
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.814804614
-            Y: 0.814804614
-            Z: 0.814804614
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 6974614301119658176
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: -4745.21973
-      Y: -8213.38086
-      Z: 266.150299
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.814804614
-      Y: 0.814804614
-      Z: 0.814804614
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -5440.13623
-            Y: -9001.4043
-            Z: 266.150299
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 1.25780654
-            Yaw: -97.3419189
-            Roll: 9.66872501
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.550075591
-            Y: 0.550075591
-            Z: 0.550075591
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 15667186690357903314
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 1870.26978
-      Y: 6899.87207
-      Z: -13.8751755
-    }
-    Rotation {
-      Pitch: 4.20223951
-      Yaw: -179.486908
-      Roll: -2.64627075
-    }
-    Scale {
-      X: 0.837538362
-      Y: 0.837538362
-      Z: 0.837538362
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -7671.19336
-            Y: 23294.5703
-            Z: 900.361755
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 3.89147949
-            Yaw: -178.332108
-            Roll: 13.6057663
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.837538362
-            Y: 0.837538362
-            Z: 0.837538362
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 2754574085827540655
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: -7671.19336
-      Y: 23294.5703
-      Z: 900.361755
-    }
-    Rotation {
-      Pitch: 3.89147949
-      Yaw: -178.332108
-      Roll: 13.6057243
-    }
-    Scale {
-      X: 0.837538362
-      Y: 0.837538362
-      Z: 0.837538362
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -5661.91406
-            Y: 18829.6621
-            Z: 902.422058
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.19765663
-            Yaw: -179.449081
-            Roll: -2.13235474
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.837538362
-            Y: 0.837538362
-            Z: 0.837538362
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 16191846368373844516
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: -5661.91406
-      Y: 18829.6621
-      Z: 902.422058
-    }
-    Rotation {
-      Pitch: 4.19765663
-      Yaw: -179.449081
-      Roll: -2.13235474
-    }
-    Scale {
-      X: 0.837538362
-      Y: 0.837538362
-      Z: 0.837538362
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1294.55762
-            Y: 16796.3
-            Z: 931.442505
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.19765663
-            Yaw: -179.449081
-            Roll: -2.13235474
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.837538362
-            Y: 0.837538362
-            Z: 0.837538362
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 15758141421930391155
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: -1294.55762
-      Y: 16796.3
-      Z: 931.442505
-    }
-    Rotation {
-      Pitch: 4.19765663
-      Yaw: -179.449081
-      Roll: -2.13235474
-    }
-    Scale {
-      X: 0.837538362
-      Y: 0.837538362
-      Z: 0.837538362
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1241.09241
-            Y: 17087.9316
-            Z: 913.178711
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -1.18902659
-            Yaw: 48.4351196
-            Roll: -8.21837902
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.621738911
-            Y: 0.621738911
-            Z: 0.621738911
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 509031994780952231
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 1007.93604
-      Y: 1005.3512
-      Z: 33.9221802
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -7068.23145
-            Y: 3297.48096
-            Z: 741.644
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 7.41531038
-            Yaw: -21.6703415
-            Roll: -8.0215683
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 15407743963631647255
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 1007.93604
-      Y: 1005.3512
-      Z: 33.9221802
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -5500.729
-            Y: -7000.83447
-            Z: 917.38385
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
-    }
-  }
-}
-Objects {
-  Id: 7846330430892560634
-  Name: "TW2_Tree_Destructible"
-  Transform {
-    Location {
-      X: 2081.07251
-      Y: 5827.46582
-      Z: 15.8527069
-    }
-    Rotation {
-      Pitch: 11.4498549
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15016328222128833720
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12561400358109127262
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW2_Tree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 9426.23242
-            Y: 9402.49
-            Z: 553.294128
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 2.89663529
-            Yaw: -176.148453
-            Roll: 6.67864e-09
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14490812313093711740
+      Id: 4428681220567596845
     }
   }
 }
