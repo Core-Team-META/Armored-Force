@@ -10,15 +10,13 @@ Assets {
         Name: "TW2_BushBig"
         Transform {
           Scale {
-            X: 1.4493717
-            Y: 1.4493717
-            Z: 1.4493717
+            X: 1.49999988
+            Y: 1.49999988
+            Z: 1.49999988
           }
         }
         ParentId: 4742637420062156135
-        ChildIds: 2015649741350995836
-        ChildIds: 16216237043534549602
-        ChildIds: 476504908591041899
+        ChildIds: 11701202283393670602
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -30,21 +28,54 @@ Assets {
         }
       }
       Objects {
+        Id: 11701202283393670602
+        Name: "MergedModel"
+        Transform {
+          Location {
+            X: 2.71231079
+            Y: 18.675972
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18435660001994587871
+        ChildIds: 2015649741350995836
+        ChildIds: 16216237043534549602
+        ChildIds: 476504908591041899
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          Model {
+          }
+        }
+      }
+      Objects {
         Id: 2015649741350995836
         Name: "Bush 02"
         Transform {
           Location {
+            X: -2.71196342
+            Y: -18.6755581
           }
           Rotation {
-            Yaw: -110.931046
+            Yaw: -110.93103
           }
           Scale {
-            X: 0.830219567
-            Y: 0.830219567
-            Z: 0.830219567
+            X: 0.830219626
+            Y: 0.830219626
+            Z: 0.830219626
           }
         }
-        ParentId: 18435660001994587871
+        ParentId: 11701202283393670602
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -88,22 +119,22 @@ Assets {
         Name: "Branches Cluster Big"
         Transform {
           Location {
-            X: 32.6276665
-            Y: -4.95787907
-            Z: 24.8435383
+            X: 29.9150524
+            Y: -23.6335678
+            Z: 24.8435497
           }
           Rotation {
-            Pitch: -14.7424927
-            Yaw: 14.2735023
-            Roll: 85.40625
+            Pitch: -14.7424774
+            Yaw: 14.2735243
+            Roll: 85.4062424
           }
           Scale {
             X: 0.289948285
-            Y: 0.379754812
-            Z: 0.386389762
+            Y: 0.379754841
+            Z: 0.386389792
           }
         }
-        ParentId: 18435660001994587871
+        ParentId: 11701202283393670602
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -133,22 +164,22 @@ Assets {
         Name: "Branches Cluster Big"
         Transform {
           Location {
-            X: -24.4907341
-            Y: 60.9857941
-            Z: 37.2724075
+            X: -27.2023849
+            Y: 42.310833
+            Z: 37.2724228
           }
           Rotation {
-            Pitch: -9.46740723
+            Pitch: -9.4674
             Yaw: -88.3670654
-            Roll: 67.4917831
+            Roll: 67.4917908
           }
           Scale {
             X: 0.289443791
-            Y: 0.441070974
+            Y: 0.441071
             Z: 0.410796046
           }
         }
-        ParentId: 18435660001994587871
+        ParentId: 11701202283393670602
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

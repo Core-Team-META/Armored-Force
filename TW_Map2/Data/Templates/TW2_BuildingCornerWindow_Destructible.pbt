@@ -4,44 +4,18 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 15377094346368301365
-      Objects {
-        Id: 15377094346368301365
-        Name: "TW2_BuildingCornerWindow_Destructible"
-        Transform {
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4781671109827199097
-        ChildIds: 1247727060899221878
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
+      RootId: 1247727060899221878
       Objects {
         Id: 1247727060899221878
         Name: "ClientContext"
         Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
             Z: 1
           }
         }
-        ParentId: 15377094346368301365
+        ParentId: 15986059373855613568
         ChildIds: 13142571390758031731
         ChildIds: 13205135578063653875
         ChildIds: 915716412042286952
@@ -2072,7 +2046,7 @@ Assets {
             Y: 295
           }
           Rotation {
-            Yaw: -89.6708679
+            Yaw: -90
             Roll: 90
           }
           Scale {
