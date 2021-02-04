@@ -1,5 +1,5 @@
 Assets {
-  Id: 6334016768952289156
+  Id: 5926986810139767040
   Name: "Drivable US M6A1 Heavy"
   PlatformAssetType: 5
   TemplateAsset {
@@ -22,7 +22,7 @@ Assets {
           Overrides {
             Name: "cs:BurnedTank"
             AssetReference {
-              Id: 7025811027595081887
+              Id: 1426231770220476750
             }
           }
         }
@@ -191,6 +191,10 @@ Assets {
             Name: "bp:Enable Side Build Up"
             Bool: true
           }
+          Overrides {
+            Name: "bp:Life"
+            Float: 2
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -244,6 +248,10 @@ Assets {
           Overrides {
             Name: "bp:Enable Side Build Up"
             Bool: true
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -1093,11 +1101,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 1
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 1
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -1119,6 +1127,10 @@ Assets {
             AssetReference {
               Id: 9431420845744582604
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -3798,7 +3810,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15743147641625697283
+              Id: 1493619771870277314
             }
           }
           Overrides {
@@ -3808,12 +3820,6 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
             Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
           }
         }
         Collidable_v2 {
@@ -3830,6 +3836,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -3865,7 +3872,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15743147641625697283
+              Id: 1493619771870277314
             }
           }
           Overrides {
@@ -3875,12 +3882,6 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
             Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
-            }
           }
         }
         Collidable_v2 {
@@ -3897,6 +3898,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -5674,13 +5676,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
+              Id: 1493619771870277314
             }
           }
         }
@@ -5698,6 +5694,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -6226,13 +6223,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
+              Id: 1493619771870277314
             }
           }
         }
@@ -6250,6 +6241,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -7850,13 +7842,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
+              Id: 1493619771870277314
             }
           }
         }
@@ -7874,6 +7860,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -12192,7 +12179,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -12235,7 +12222,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -12339,7 +12326,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5109129970559468393
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -13560,7 +13547,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5109129970559468393
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -32273,6 +32260,7 @@ Assets {
         ChildIds: 358242030744132026
         ChildIds: 17535273780610441853
         ChildIds: 9795876025494175756
+        ChildIds: 8431181447732798393
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -32748,13 +32736,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15743147641625697283
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
+              Id: 1493619771870277314
             }
           }
         }
@@ -32772,6 +32754,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -33023,6 +33006,92 @@ Assets {
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 8431181447732798393
+        Name: "Cylinder - Polished"
+        Transform {
+          Location {
+            X: 73.4108
+            Y: 8.11319256
+            Z: -2.18238438e-05
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 2.53050971
+            Roll: -2.53048706
+          }
+          Scale {
+            X: 0.359488279
+            Y: 0.359486818
+            Z: 0.732435048
+          }
+        }
+        ParentId: 12868536497580498499
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.124771833
+              G: 0.147027284
+              B: 0.0865004584
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18153381962735685629
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
           }
         }
       }
@@ -33615,13 +33684,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15743147641625697283
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
+              Id: 1493619771870277314
             }
           }
         }
@@ -33639,6 +33702,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -36172,15 +36236,6 @@ Assets {
       }
     }
     Assets {
-      Id: 15743147641625697283
-      Name: "Basic Material"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_pbr_material_001"
-      }
-    }
-    Assets {
       Id: 2596546045931801018
       Name: "Military Tank Modern Tread Frame 01 - End"
       PlatformAssetType: 1
@@ -36241,15 +36296,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cone_truncated_hollow_006"
-      }
-    }
-    Assets {
-      Id: 10184847056121543272
-      Name: "Basic Material"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_pbr_material_001"
       }
     }
     Assets {
@@ -36406,7 +36452,7 @@ Assets {
       }
     }
     Assets {
-      Id: 10755294693114967386
+      Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {
@@ -36415,7 +36461,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5109129970559468393
+      Id: 12095835209017042614
       Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -36457,6 +36503,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_scf_screen_004_ref"
+      }
+    }
+    Assets {
+      Id: 15743147641625697283
+      Name: "Basic Material"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_pbr_material_001"
       }
     }
     Assets {

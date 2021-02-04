@@ -1,5 +1,5 @@
 Assets {
-  Id: 11223807285706338630
+  Id: 7729288281458541196
   Name: "Drivable US M10 Wolverine"
   PlatformAssetType: 5
   TemplateAsset {
@@ -22,7 +22,7 @@ Assets {
           Overrides {
             Name: "cs:BurnedTank"
             AssetReference {
-              Id: 7025811027595081887
+              Id: 1618747983464716432
             }
           }
         }
@@ -190,6 +190,10 @@ Assets {
             Name: "bp:Enable Side Build Up"
             Bool: true
           }
+          Overrides {
+            Name: "bp:Life"
+            Float: 2
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -243,6 +247,10 @@ Assets {
           Overrides {
             Name: "bp:Enable Side Build Up"
             Bool: true
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -992,11 +1000,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 1
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
+            Float: 1
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -1018,6 +1026,10 @@ Assets {
             AssetReference {
               Id: 9431420845744582604
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -14718,13 +14730,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
+              Id: 1493619771870277314
             }
           }
         }
@@ -14742,6 +14748,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -16628,6 +16635,7 @@ Assets {
         ChildIds: 9463774778865697346
         ChildIds: 1569133297355202068
         ChildIds: 12512647271221517310
+        ChildIds: 13281631427109883839
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -17202,6 +17210,69 @@ Assets {
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 13281631427109883839
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: 127.110458
+            Z: 3.25715828
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 0.283688515
+            Y: 0.283688515
+            Z: 0.283688515
+          }
+        }
+        ParentId: 6016939757661390723
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18153381962735685629
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
           }
         }
       }
@@ -19317,13 +19388,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              A: 1
+              Id: 1493619771870277314
             }
           }
         }
@@ -19341,6 +19406,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
@@ -33790,15 +33856,6 @@ Assets {
       }
     }
     Assets {
-      Id: 10184847056121543272
-      Name: "Basic Material"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_pbr_material_001"
-      }
-    }
-    Assets {
       Id: 99428546513861114
       Name: "Urban Floor Grate Fire Escape - 2m x 2m"
       PlatformAssetType: 1
@@ -33886,6 +33943,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_torus_001"
+      }
+    }
+    Assets {
+      Id: 18153381962735685629
+      Name: "Plane Circle - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_circle_001"
       }
     }
     Assets {
@@ -34021,15 +34087,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_mil_tank_hst_turret_001_ref"
-      }
-    }
-    Assets {
-      Id: 18153381962735685629
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
       }
     }
     Assets {
