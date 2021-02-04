@@ -241,6 +241,7 @@ Objects {
   Name: "3D"
   Transform {
     Location {
+      Z: -2365.18213
     }
     Rotation {
     }
@@ -251,6 +252,7 @@ Objects {
     }
   }
   ParentId: 3189391084242011458
+  ChildIds: 13540110980892133100
   ChildIds: 14793029108670987197
   ChildIds: 4973943165602427089
   ChildIds: 14733879364378110593
@@ -435,6 +437,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Minimap_Roads"
+  }
+}
+Objects {
+  Id: 13540110980892133100
+  Name: "MiniMap_Buildings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18039154145046572079
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "MiniMap_Buildings"
   }
 }
 Objects {
