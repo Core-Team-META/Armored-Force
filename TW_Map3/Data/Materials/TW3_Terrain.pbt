@@ -106,11 +106,11 @@ Assets {
       }
       Overrides {
         Name: "material3_scale"
-        Float: 5
+        Float: 0.5
       }
       Overrides {
         Name: "material3side_scale"
-        Float: 5
+        Float: 0.5
       }
       Overrides {
         Name: "cmp:Material4_Sides"

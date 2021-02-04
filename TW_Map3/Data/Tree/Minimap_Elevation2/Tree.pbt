@@ -1,6 +1,266 @@
 Name: "Minimap_Elevation2"
 RootId: 4973943165602427089
 Objects {
+  Id: 16841906530981390582
+  Name: "MiniMap_Elevation2"
+  Transform {
+    Location {
+      X: 27089.4824
+      Y: 25048.2168
+      Z: -807.501465
+    }
+    Rotation {
+      Yaw: -151.753204
+    }
+    Scale {
+      X: 7.32152
+      Y: 8.1957674
+      Z: 0.198668674
+    }
+  }
+  ParentId: 4973943165602427089
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.821
+        G: 0.821
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2244223303115716958
+  Name: "MiniMap_Elevation2"
+  Transform {
+    Location {
+      X: 26766.1816
+      Y: 25245.168
+      Z: -807.501465
+    }
+    Rotation {
+      Yaw: -151.753204
+    }
+    Scale {
+      X: 13.3583927
+      Y: 4.43250656
+      Z: 0.198668674
+    }
+  }
+  ParentId: 4973943165602427089
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.821
+        G: 0.821
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 45058470758263492
+  Name: "MiniMap_Elevation2"
+  Transform {
+    Location {
+      X: 27349.5859
+      Y: 25186.7129
+      Z: -807.501465
+    }
+    Rotation {
+      Yaw: -90.0636597
+    }
+    Scale {
+      X: 10.7965546
+      Y: 5.88737869
+      Z: 0.198668674
+    }
+  }
+  ParentId: 4973943165602427089
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.821
+        G: 0.821
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8569925636134756995
+  Name: "MiniMap_Elevation2"
+  Transform {
+    Location {
+      X: 26734.1621
+      Y: 24756.9355
+      Z: -807.501221
+    }
+    Rotation {
+      Yaw: 164.529068
+    }
+    Scale {
+      X: 14.9110947
+      Y: 3.99039197
+      Z: 0.198668674
+    }
+  }
+  ParentId: 4973943165602427089
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tint"
+      Color {
+        R: 0.821
+        G: 0.821
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 9498981801020230683
   Name: "MiniMap_Elevation2"
   Transform {
