@@ -132,7 +132,7 @@ function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	local point = World.Raycast(worldPosition, destination, {ignoreTeams = tankOwner.team})
 
-	CoreDebug.DrawLine(worldPosition, destination)
+	--CoreDebug.DrawLine(worldPosition, destination)
 	
 	if point then
 	
