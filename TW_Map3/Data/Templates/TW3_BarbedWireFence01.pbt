@@ -10,9 +10,9 @@ Assets {
         Name: "TW3_BarbedWireFence01"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.32000685
+            Y: 1.32000685
+            Z: 1.32000685
           }
         }
         ParentId: 4781671109827199097
@@ -59,13 +59,15 @@ Assets {
         Name: "DestructionTrigger"
         Transform {
           Location {
+            X: 256.77832
+            Z: 70.5897217
           }
           Rotation {
           }
           Scale {
-            X: 4.20000029
-            Y: 0.524609268
-            Z: 2.21564913
+            X: 5.66146469
+            Y: 0.763007522
+            Z: 1.29057598
           }
         }
         ParentId: 10385257456673340344
@@ -158,8 +160,9 @@ Assets {
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 28.2556725
-            Z: 11.7108126
+            X: 46.2495499
+            Y: -2.49576426
+            Z: -17.0151825
           }
           Rotation {
           }
@@ -185,8 +188,9 @@ Assets {
         Name: "FXLocation01"
         Transform {
           Location {
-            X: 101.025848
-            Z: 17.2250252
+            X: -49.8596
+            Y: 8.49374294
+            Z: -16.967783
           }
           Rotation {
           }
@@ -338,6 +342,30 @@ Assets {
               Id: 5028462544160077647
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -387,6 +415,30 @@ Assets {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
             }
           }
         }
@@ -440,6 +492,30 @@ Assets {
               Id: 5028462544160077647
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -489,6 +565,30 @@ Assets {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
             }
           }
         }
@@ -552,6 +652,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
             Float: 0.125
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.399999976
+              G: 0.409999847
+              B: 1
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -834,12 +943,12 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 439.394531
-            Y: -7.66015625
-            Z: 45.9090881
+            X: 439.394623
+            Y: -10.621542
+            Z: 48.7275581
           }
           Rotation {
-            Roll: -49.5493546
+            Roll: -49.5493469
           }
           Scale {
             X: 0.399377108
@@ -880,12 +989,12 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 96.5761719
-            Y: -7.66015625
-            Z: 45.9090881
+            X: 96.5756073
+            Y: -11.518939
+            Z: 49.2740479
           }
           Rotation {
-            Roll: -49.5493546
+            Roll: -49.5493469
           }
           Scale {
             X: 0.399377108
@@ -926,12 +1035,12 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 258.6875
-            Y: -7.66015625
-            Z: 45.9090881
+            X: 258.687103
+            Y: -12.0456877
+            Z: 49.5302353
           }
           Rotation {
-            Roll: -49.5493546
+            Roll: -49.5493469
           }
           Scale {
             X: 0.399377108
@@ -972,9 +1081,9 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 439.394531
-            Y: 11.8208008
-            Z: 48.7826233
+            X: 462.602661
+            Y: 17.0124435
+            Z: 51.861557
           }
           Rotation {
             Roll: 52.5055618
@@ -1018,9 +1127,9 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 96.5761719
-            Y: 11.8208008
-            Z: 48.7826233
+            X: 96.5756073
+            Y: 16.9506702
+            Z: 51.6663857
           }
           Rotation {
             Roll: 52.5055618
@@ -1064,9 +1173,9 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 258.6875
-            Y: 11.8208008
-            Z: 48.7826233
+            X: 258.687103
+            Y: 17.4748287
+            Z: 50.1589165
           }
           Rotation {
             Roll: 52.5055618
@@ -1131,7 +1240,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.373000026
+              A: 1
             }
           }
         }
@@ -1177,7 +1286,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.890000045
+              A: 1
             }
           }
         }
@@ -1270,7 +1379,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.467
+              A: 1
             }
           }
         }
@@ -1317,7 +1426,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.373000026
+              A: 1
             }
           }
         }
@@ -1364,7 +1473,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.373000026
+              A: 1
             }
           }
         }
@@ -1411,7 +1520,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.373000026
+              A: 1
             }
           }
         }
@@ -1457,7 +1566,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.817000031
+              A: 1
             }
           }
         }
@@ -1550,7 +1659,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 0.373000026
+              A: 1
             }
           }
         }
