@@ -1,13 +1,13 @@
 Assets {
-  Id: 10914266719212561586
-  Name: "TW3_BarbedWireFence01"
+  Id: 13607775962879631257
+  Name: "TW3_BarbedWireFence01Broken"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 17140474072019537031
+      RootId: 5779055686609999718
       Objects {
-        Id: 17140474072019537031
-        Name: "TW3_BarbedWireFence01"
+        Id: 5779055686609999718
+        Name: "TW3_BarbedWireFence01Broken"
         Transform {
           Scale {
             X: 1.32000685
@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 10385257456673340344
+        ChildIds: 13548856001953969048
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28,7 +28,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10385257456673340344
+        Id: 13548856001953969048
         Name: "ClientContext"
         Transform {
           Location {
@@ -41,10 +41,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17140474072019537031
-        ChildIds: 16392800122028338401
-        ChildIds: 6589889757845199123
-        ChildIds: 2295119951519285630
+        ParentId: 5779055686609999718
+        ChildIds: 3964837108522777897
+        ChildIds: 14413465859745790064
+        ChildIds: 9176602067036507795
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -55,7 +55,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16392800122028338401
+        Id: 3964837108522777897
         Name: "DestructionTrigger"
         Transform {
           Location {
@@ -70,10 +70,10 @@ Assets {
             Z: 1.29057598
           }
         }
-        ParentId: 10385257456673340344
-        ChildIds: 14268244197629639885
-        ChildIds: 18393719181128547252
-        ChildIds: 18279072167880126144
+        ParentId: 13548856001953969048
+        ChildIds: 7455549780653293114
+        ChildIds: 1885737103645236439
+        ChildIds: 15212492871479881945
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -91,7 +91,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14268244197629639885
+        Id: 7455549780653293114
         Name: "DestructibleObject"
         Transform {
           Location {
@@ -104,7 +104,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 16392800122028338401
+        ParentId: 3964837108522777897
         UnregisteredParameters {
           Overrides {
             Name: "cs:DestructionFX01"
@@ -121,25 +121,25 @@ Assets {
           Overrides {
             Name: "cs:FXLocation01"
             ObjectReference {
-              SubObjectId: 18279072167880126144
+              SubObjectId: 15212492871479881945
             }
           }
           Overrides {
             Name: "cs:FXLocation02"
             ObjectReference {
-              SubObjectId: 18393719181128547252
+              SubObjectId: 1885737103645236439
             }
           }
           Overrides {
             Name: "cs:DebrisGroup"
             ObjectReference {
-              SubObjectId: 6589889757845199123
+              SubObjectId: 14413465859745790064
             }
           }
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
-              SubObjectId: 2295119951519285630
+              SubObjectId: 9176602067036507795
             }
           }
         }
@@ -156,13 +156,13 @@ Assets {
         }
       }
       Objects {
-        Id: 18393719181128547252
+        Id: 1885737103645236439
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 46.2495499
-            Y: -2.49576426
-            Z: -17.0151825
+            X: 11.8984814
+            Y: -2.49614406
+            Z: -17.0151558
           }
           Rotation {
           }
@@ -172,7 +172,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 16392800122028338401
+        ParentId: 3964837108522777897
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -184,7 +184,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18279072167880126144
+        Id: 15212492871479881945
         Name: "FXLocation01"
         Transform {
           Location {
@@ -200,7 +200,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 16392800122028338401
+        ParentId: 3964837108522777897
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -212,7 +212,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6589889757845199123
+        Id: 14413465859745790064
         Name: "DebrisGroup"
         Transform {
           Location {
@@ -225,15 +225,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10385257456673340344
-        ChildIds: 4210647879589336641
-        ChildIds: 8413310880303828055
-        ChildIds: 12856738454785775713
-        ChildIds: 16905481924016385576
-        ChildIds: 17182896899691542492
-        ChildIds: 5418253136771818710
-        ChildIds: 9478451988903960824
-        ChildIds: 12490711149365348968
+        ParentId: 13548856001953969048
+        ChildIds: 284451728270177492
+        ChildIds: 8996110878150353653
+        ChildIds: 6211015754033895966
+        ChildIds: 1041374180897184442
+        ChildIds: 882096250148499442
+        ChildIds: 11156664793804528844
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -245,7 +243,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4210647879589336641
+        Id: 284451728270177492
         Name: "BarbedWire"
         Transform {
           Location {
@@ -264,7 +262,7 @@ Assets {
             Z: 0.468477458
           }
         }
-        ParentId: 6589889757845199123
+        ParentId: 14413465859745790064
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -315,7 +313,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8413310880303828055
+        Id: 8996110878150353653
         Name: "I-Beam 4m"
         Transform {
           Location {
@@ -334,7 +332,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 6589889757845199123
+        ParentId: 14413465859745790064
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -390,7 +388,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12856738454785775713
+        Id: 6211015754033895966
         Name: "I-Beam 4m"
         Transform {
           Location {
@@ -409,7 +407,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 6589889757845199123
+        ParentId: 14413465859745790064
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -427,18 +425,18 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
               R: 0.399999976
               G: 0.409999847
               B: 1
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5028462544160077647
             }
           }
         }
@@ -465,157 +463,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16905481924016385576
-        Name: "I-Beam 4m"
-        Transform {
-          Location {
-            X: 534.863281
-            Y: 89.6884766
-            Z: -0.476257324
-          }
-          Rotation {
-            Pitch: 45.538475
-            Yaw: -91.8566589
-            Roll: 176.780457
-          }
-          Scale {
-            X: 0.25
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 6589889757845199123
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.399999976
-              G: 0.409999847
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.399999976
-              G: 0.409999847
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10923264696099767707
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 17182896899691542492
-        Name: "I-Beam 4m"
-        Transform {
-          Location {
-            X: 534.044922
-            Y: -98.1635742
-            Z: -0.476257324
-          }
-          Rotation {
-            Pitch: 44.9999771
-            Yaw: 90
-            Roll: -169.245377
-          }
-          Scale {
-            X: 0.25
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 6589889757845199123
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.399999976
-              G: 0.409999847
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.399999976
-              G: 0.409999847
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10923264696099767707
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5418253136771818710
+        Id: 1041374180897184442
         Name: "Prism - 3-Sided Polished"
         Transform {
           Location {
@@ -633,7 +481,7 @@ Assets {
             Z: 6.36442709
           }
         }
-        ParentId: 6589889757845199123
+        ParentId: 14413465859745790064
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -686,7 +534,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9478451988903960824
+        Id: 882096250148499442
         Name: "BarbedWire"
         Transform {
           Location {
@@ -705,7 +553,7 @@ Assets {
             Z: 0.468477458
           }
         }
-        ParentId: 6589889757845199123
+        ParentId: 14413465859745790064
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -756,7 +604,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12490711149365348968
+        Id: 11156664793804528844
         Name: "BarbedWire"
         Transform {
           Location {
@@ -775,7 +623,7 @@ Assets {
             Z: 0.468477458
           }
         }
-        ParentId: 6589889757845199123
+        ParentId: 14413465859745790064
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -826,7 +674,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2295119951519285630
+        Id: 9176602067036507795
         Name: "RemoveGroup"
         Transform {
           Location {
@@ -839,25 +687,20 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10385257456673340344
-        ChildIds: 15386028014349940419
-        ChildIds: 13285402600257875519
-        ChildIds: 18427349317545489883
-        ChildIds: 11480074082620622755
-        ChildIds: 4347075375533096408
-        ChildIds: 13350453419591290290
-        ChildIds: 4017402326806567620
-        ChildIds: 13993721379289975097
-        ChildIds: 3843658545122696137
-        ChildIds: 18225388802881794485
-        ChildIds: 10030950612239389616
-        ChildIds: 3848126909805890683
-        ChildIds: 2444120727006115948
-        ChildIds: 3689018960148386881
-        ChildIds: 2077677092465750455
-        ChildIds: 10944714853299745640
-        ChildIds: 8019389156144306456
-        ChildIds: 12388287303534948593
+        ParentId: 13548856001953969048
+        ChildIds: 4413633117847913452
+        ChildIds: 1698754644499602112
+        ChildIds: 14952569080360669628
+        ChildIds: 14052410674654944886
+        ChildIds: 3514653440598985968
+        ChildIds: 15120182378667543928
+        ChildIds: 964057266526197294
+        ChildIds: 10984085661794478777
+        ChildIds: 16883733435295822830
+        ChildIds: 7229545560161787495
+        ChildIds: 4976533196836850639
+        ChildIds: 14106002289565027040
+        ChildIds: 11925207033871165237
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -869,7 +712,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15386028014349940419
+        Id: 4413633117847913452
         Name: "BarbedWire"
         Transform {
           Location {
@@ -888,7 +731,7 @@ Assets {
             Z: 5.43330956
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -939,16 +782,16 @@ Assets {
         }
       }
       Objects {
-        Id: 13285402600257875519
+        Id: 1698754644499602112
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 439.394623
-            Y: -10.621542
-            Z: 48.7275581
+            X: 439.394531
+            Y: -7.66015625
+            Z: 45.9090881
           }
           Rotation {
-            Roll: -49.5493469
+            Roll: -49.5493546
           }
           Scale {
             X: 0.399377108
@@ -956,7 +799,7 @@ Assets {
             Z: 0.0617348924
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -985,16 +828,16 @@ Assets {
         }
       }
       Objects {
-        Id: 18427349317545489883
+        Id: 14952569080360669628
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 96.5756073
-            Y: -11.518939
-            Z: 49.2740479
+            X: 96.5761719
+            Y: -7.66015625
+            Z: 45.9090881
           }
           Rotation {
-            Roll: -49.5493469
+            Roll: -49.5493546
           }
           Scale {
             X: 0.399377108
@@ -1002,7 +845,7 @@ Assets {
             Z: 0.0617348924
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1031,16 +874,16 @@ Assets {
         }
       }
       Objects {
-        Id: 11480074082620622755
+        Id: 14052410674654944886
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 258.687103
-            Y: -12.0456877
-            Z: 49.5302353
+            X: 258.6875
+            Y: -7.66015625
+            Z: 45.9090881
           }
           Rotation {
-            Roll: -49.5493469
+            Roll: -49.5493546
           }
           Scale {
             X: 0.399377108
@@ -1048,7 +891,7 @@ Assets {
             Z: 0.0617348924
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1077,13 +920,13 @@ Assets {
         }
       }
       Objects {
-        Id: 4347075375533096408
+        Id: 3514653440598985968
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 462.602661
-            Y: 17.0124435
-            Z: 51.861557
+            X: 439.394531
+            Y: 11.8208008
+            Z: 48.7826233
           }
           Rotation {
             Roll: 52.5055618
@@ -1094,7 +937,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1123,13 +966,13 @@ Assets {
         }
       }
       Objects {
-        Id: 13350453419591290290
+        Id: 15120182378667543928
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 96.5756073
-            Y: 16.9506702
-            Z: 51.6663857
+            X: 96.5761719
+            Y: 11.8208008
+            Z: 48.7826233
           }
           Rotation {
             Roll: 52.5055618
@@ -1140,7 +983,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1169,13 +1012,13 @@ Assets {
         }
       }
       Objects {
-        Id: 4017402326806567620
+        Id: 964057266526197294
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: 258.687103
-            Y: 17.4748287
-            Z: 50.1589165
+            X: 258.6875
+            Y: 11.8208008
+            Z: 48.7826233
           }
           Rotation {
             Roll: 52.5055618
@@ -1186,7 +1029,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1215,239 +1058,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13993721379289975097
-        Name: "Decal Stains Round 01"
-        Transform {
-          Location {
-            X: 546.126953
-            Y: 2.36474609
-            Z: 91.2499695
-          }
-          Rotation {
-            Roll: 44.0467453
-          }
-          Scale {
-            X: 0.0407052338
-            Y: 0.205537826
-            Z: 0.0194431134
-          }
-        }
-        ParentId: 2295119951519285630
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13650699884663610996
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 3843658545122696137
-        Name: "Decal Stains Round 01"
-        Transform {
-          Location {
-            X: 549.335938
-            Y: 57.5717773
-            Z: 31.4320374
-          }
-          Rotation {
-            Roll: 44.046711
-          }
-          Scale {
-            X: 0.0678146109
-            Y: 0.205537826
-            Z: 0.0194431134
-          }
-        }
-        ParentId: 2295119951519285630
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13650699884663610996
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 18225388802881794485
-        Name: "Decal Stains Round 01"
-        Transform {
-          Location {
-            X: 553.734375
-            Y: -14.3793945
-            Z: 106.748108
-          }
-          Rotation {
-            Roll: 44.0466805
-          }
-          Scale {
-            X: 0.0407052338
-            Y: 0.205537826
-            Z: 0.0194431134
-          }
-        }
-        ParentId: 2295119951519285630
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 0.373000026
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13650699884663610996
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 10030950612239389616
-        Name: "Decal Stains Round 01"
-        Transform {
-          Location {
-            X: 522.828125
-            Y: -61.6723633
-            Z: 31.4320374
-          }
-          Rotation {
-            Yaw: 178.204285
-            Roll: 44.0452881
-          }
-          Scale {
-            X: 0.0407052338
-            Y: 0.205537826
-            Z: 0.0194431134
-          }
-        }
-        ParentId: 2295119951519285630
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13650699884663610996
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 3848126909805890683
-        Name: "Decal Stains Round 01"
-        Transform {
-          Location {
-            X: 522.828125
-            Y: 0.555175781
-            Z: 93.6286
-          }
-          Rotation {
-            Yaw: 178.204285
-            Roll: 44.0452652
-          }
-          Scale {
-            X: 0.0407052338
-            Y: 0.205537826
-            Z: 0.0194431134
-          }
-        }
-        ParentId: 2295119951519285630
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13650699884663610996
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 2444120727006115948
+        Id: 10984085661794478777
         Name: "Decal Stains Round 01"
         Transform {
           Location {
@@ -1465,7 +1076,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1473,7 +1084,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 1
+              A: 0.373000026
             }
           }
         }
@@ -1494,7 +1105,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3689018960148386881
+        Id: 16883733435295822830
         Name: "Decal Stains Round 01"
         Transform {
           Location {
@@ -1512,7 +1123,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1520,7 +1131,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 1
+              A: 0.373000026
             }
           }
         }
@@ -1541,7 +1152,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2077677092465750455
+        Id: 7229545560161787495
         Name: "Decal Stains Round 01"
         Transform {
           Location {
@@ -1558,7 +1169,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1566,7 +1177,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 1
+              A: 0.817000031
             }
           }
         }
@@ -1587,7 +1198,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10944714853299745640
+        Id: 4976533196836850639
         Name: "Decal Stains Round 01"
         Transform {
           Location {
@@ -1605,7 +1216,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1634,7 +1245,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8019389156144306456
+        Id: 14106002289565027040
         Name: "Decal Stains Round 01"
         Transform {
           Location {
@@ -1651,7 +1262,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -1659,7 +1270,7 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 1
+              A: 0.373000026
             }
           }
         }
@@ -1680,7 +1291,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12388287303534948593
+        Id: 11925207033871165237
         Name: "Decal Stains Round 01"
         Transform {
           Location {
@@ -1698,7 +1309,7 @@ Assets {
             Z: 0.0194431134
           }
         }
-        ParentId: 2295119951519285630
+        ParentId: 9176602067036507795
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"

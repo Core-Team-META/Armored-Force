@@ -297,3 +297,53 @@ Objects {
     }
   }
 }
+Objects {
+  Id: 13652545369197662592
+  Name: "TW_LogPile_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3020717205652326310
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14095616626805498714
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_LogPile_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3605.22241
+            Y: 5823.23633
+            Z: 143.679657
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.43246245
+            Yaw: -96.5073
+            Roll: -1.08093226
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1053357429199442490
+    }
+  }
+}

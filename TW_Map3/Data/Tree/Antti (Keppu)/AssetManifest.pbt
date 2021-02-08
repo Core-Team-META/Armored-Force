@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16248570530060406366
-  Name: "Fantasy Human Gal 2"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_001_ref"
-  }
-}
-Assets {
   Id: 15228480960985870921
   Name: "Rock Flat 01"
   PlatformAssetType: 1
