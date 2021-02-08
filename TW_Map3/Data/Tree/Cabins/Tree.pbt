@@ -1,6 +1,540 @@
 Name: "Cabins"
 RootId: 6216142305277734274
 Objects {
+  Id: 14513048817092888511
+  Name: "TW3_Cabin"
+  Transform {
+    Location {
+      X: -3200
+      Y: 6991.54736
+      Z: 54.0708923
+    }
+    Rotation {
+      Pitch: -1.92086792
+      Yaw: 3.56845593
+      Roll: -0.544830322
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6216142305277734274
+  ChildIds: 14234906587995439807
+  ChildIds: 9348727146102125174
+  ChildIds: 11957911908589158408
+  ChildIds: 15129452556586827052
+  ChildIds: 11597619374810716531
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11597619374810716531
+  Name: "TW3_Cabin_Corner_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14513048817092888511
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7665122139184987162
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Cabin_Corner_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -314.15625
+            Y: -430.255859
+            Z: 5.78146362
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999954
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: -1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7955539480803279145
+    }
+  }
+}
+Objects {
+  Id: 15129452556586827052
+  Name: "TW3_Cabin_CornerDoor_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14513048817092888511
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7665122139184987162
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Cabin_CornerDoor_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -314.15625
+            Y: 429.744141
+            Z: 5.78146362
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999954
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18402180030079710592
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -93.618988
+            Y: 175.361328
+            Z: 483.10675
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9003306571106236871
+    }
+  }
+}
+Objects {
+  Id: 11957911908589158408
+  Name: "TW3_Cabin_CornerFireplace_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14513048817092888511
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5848654690901513670
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Cabin_CornerFireplace_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 195.84375
+            Y: -225.255859
+            Z: -19.2185974
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: -1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13826635350768970670
+    }
+  }
+}
+Objects {
+  Id: 9348727146102125174
+  Name: "TW3_Cabin_Corner_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14513048817092888511
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7665122139184987162
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Cabin_Corner_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 255.84375
+            Y: 429.744141
+            Z: 5.78146362
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: -1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7955539480803279145
+    }
+  }
+}
+Objects {
+  Id: 14234906587995439807
+  Name: "BuildingBase"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14513048817092888511
+  ChildIds: 15574004139536848798
+  ChildIds: 8487925564492018243
+  ChildIds: 4924018853080537329
+  ChildIds: 5414312173877016884
+  ChildIds: 5130866758283923142
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5130866758283923142
+  Name: "Rock Block 01"
+  Transform {
+    Location {
+      X: -39.6210938
+      Y: -452.53125
+      Z: 1.88409424
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 0.566366494
+      Y: 3.58054638
+      Z: 0.588113368
+    }
+  }
+  ParentId: 14234906587995439807
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6674876388081502680
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10905138335060518079
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5414312173877016884
+  Name: "Rock Block 01"
+  Transform {
+    Location {
+      X: 119.517578
+      Y: 444.744141
+      Z: 1.88409424
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 0.566366076
+      Y: 2.45480394
+      Z: 0.588113368
+    }
+  }
+  ParentId: 14234906587995439807
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6674876388081502680
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10905138335060518079
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4924018853080537329
+  Name: "Rock Block 01"
+  Transform {
+    Location {
+      X: 265.443359
+      Y: -13.0097656
+      Z: 7.53521729
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.566367269
+      Y: 5.79839754
+      Z: 0.588113368
+    }
+  }
+  ParentId: 14234906587995439807
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6674876388081502680
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10905138335060518079
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8487925564492018243
+  Name: "Rock Block 02"
+  Transform {
+    Location {
+      X: -23.0273438
+      Y: 4.74414063
+      Z: 19.7816467
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 3.11434507
+      Y: -3.907
+      Z: 0.25
+    }
+  }
+  ParentId: 14234906587995439807
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 380106840186150370
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15574004139536848798
+  Name: "Rock Block 01"
+  Transform {
+    Location {
+      X: -322.316406
+      Y: 16.0546875
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.566367269
+      Y: 6.0605855
+      Z: 0.588113368
+    }
+  }
+  ParentId: 14234906587995439807
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6674876388081502680
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10905138335060518079
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 14848327719177682447
   Name: "TW3_Cabin"
   Transform {
