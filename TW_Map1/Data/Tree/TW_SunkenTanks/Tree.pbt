@@ -1,2 +1,0 @@
-Name: "TW_SunkenTanks"
-RootId: 9267357899748793917

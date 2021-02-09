@@ -1,32 +1,6 @@
 Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
-  Id: 2145329945819153105
-  Name: "TW_EnvironmentObjects"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW_EnvironmentObjects"
-  }
-}
-Objects {
   Id: 7260946776493855142
   Name: "MergedModel"
   Transform {
