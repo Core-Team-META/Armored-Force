@@ -1,6 +1,6 @@
 Assets {
   Id: 10387737619564005660
-  Name: "TW_Tractor"
+  Name: "TW_Tractor_Physics"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
