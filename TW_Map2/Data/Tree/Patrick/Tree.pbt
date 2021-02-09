@@ -3465,7 +3465,7 @@ Objects {
     Overrides {
       Name: "cs:DefaultPlayerSettings"
       ObjectReference {
-        SelfId: 12069211033368305212
+        SelfId: 841534158063459245
       }
     }
     Overrides {

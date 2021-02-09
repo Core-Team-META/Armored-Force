@@ -19,8 +19,6 @@ Assets {
         ChildIds: 15194655431994936686
         ChildIds: 12759368276914250318
         ChildIds: 5274153485548965720
-        ChildIds: 17741060309469459092
-        ChildIds: 7446908162421842229
         ChildIds: 7793264170047891682
         ChildIds: 10572064040681203634
         UnregisteredParameters {
@@ -175,7 +173,7 @@ Assets {
         Equipment {
           SocketName: "root"
           PickupTrigger {
-            SubObjectId: 17741060309469459092
+            SelfId: 841534158063459245
           }
         }
       }
@@ -199,12 +197,6 @@ Assets {
             Name: "cs:TankEquipment"
             ObjectReference {
               SubObjectId: 452241511852978616
-            }
-          }
-          Overrides {
-            Name: "cs:TankSettings"
-            ObjectReference {
-              SubObjectId: 7446908162421842229
             }
           }
           Overrides {
@@ -262,6 +254,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:AdjustmentPoint"
+            ObjectReference {
+              SubObjectId: 8935346240001288070
+            }
+          }
+          Overrides {
             Name: "cs:TankProjectile01"
             AssetReference {
               Id: 9826601139297109174
@@ -276,7 +274,7 @@ Assets {
           Overrides {
             Name: "cs:DeadTank"
             AssetReference {
-              Id: 18190965035016522280
+              Id: 1965917692704759228
             }
           }
           Overrides {
@@ -432,112 +430,6 @@ Assets {
           }
           KeyBinding_v2 {
             Value: "mc:egameaction:primaryaction"
-          }
-        }
-      }
-      Objects {
-        Id: 17741060309469459092
-        Name: "PickupTrigger"
-        Transform {
-          Location {
-            Z: 75
-          }
-          Rotation {
-          }
-          Scale {
-            X: 9.8
-            Y: 7.39999866
-            Z: 1.9
-          }
-        }
-        ParentId: 452241511852978616
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          Interactable: true
-          InteractionLabel: "Drive Tank"
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
-        Id: 7446908162421842229
-        Name: "TankSettings"
-        Transform {
-          Location {
-            Z: -930
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 452241511852978616
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Settings {
-          PlayerMovementSettings {
-            WalkSpeed: 640
-            MaxAcceleration: 1800
-            WalkableFloorAngle: 44
-            JumpVelocity: 900
-            GroundFriction: 8
-            GravityScale: 1.9
-            MaxSwimSpeed: 420
-            Buoyancy: 1
-            TouchForceFactor: 1
-            BrakingDecelerationFlying: 600
-            MaxFlightSpeed: 600
-            MovementControlMode {
-              Value: "mc:emovementcontrolmode:facingrelative"
-            }
-            LookControlMode {
-              Value: "mc:elookcontrolmode:relative"
-            }
-            FacingMode {
-              Value: "mc:efacingmode:facemovement"
-            }
-            SlideRotationRate: 20
-            LookAtCursorProjectionPlane {
-              Value: "mc:eprojectionplane:xy"
-            }
-            LookAtCursorProjectionPlaneAnchor {
-              Value: "mc:eprojectionplaneanchor:playerposition"
-            }
-            MountedMaxAcceleration: 1800
-            MountedWalkSpeed: 960
-            MountedJumpMaxCount: 1
-            MountedJumpVelocity: 900
-            HeadVisibleToSelf: true
-            IsSlideEnabled: true
-            IsCrouchEnabled: true
-            CanMoveForward: true
-            CanMoveBackward: true
-            AbilityAimMode {
-              Value: "mc:eabilityaimmode:viewrelative"
-            }
-            AppearanceChannelingTime: 2
-            MountChannelingTime: 2
-            IsMountEnabled: true
-            MaxHitpoints: 100
           }
         }
       }
@@ -1145,7 +1037,6 @@ Assets {
           }
         }
         ParentId: 815847557783228825
-        ChildIds: 12479140503705757464
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1155,57 +1046,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 12479140503705757464
-        Name: "SuspensionGuide"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        ParentId: 13149374963848905261
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              G: 0.0213245116
-              B: 0.460000038
-              A: 1
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
         }
       }
       Objects {
@@ -1409,7 +1249,6 @@ Assets {
           }
         }
         ParentId: 14550824465768159034
-        ChildIds: 1964189772192196451
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1419,57 +1258,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 1964189772192196451
-        Name: "SuspensionGuide"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        ParentId: 11378597753069831305
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              G: 0.0213245116
-              B: 0.460000038
-              A: 1
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
         }
       }
       Objects {
@@ -1703,7 +1491,6 @@ Assets {
           }
         }
         ParentId: 6520117776405276762
-        ChildIds: 10133220691277682297
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1713,57 +1500,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 10133220691277682297
-        Name: "SuspensionGuide"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        ParentId: 6421592597967708319
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              G: 0.0213245116
-              B: 0.460000038
-              A: 1
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
         }
       }
       Objects {
@@ -1967,7 +1703,6 @@ Assets {
           }
         }
         ParentId: 834651570626483271
-        ChildIds: 9188064310683168059
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1977,57 +1712,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 9188064310683168059
-        Name: "SuspensionGuide"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        ParentId: 5360865388167449866
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              G: 0.0213245116
-              B: 0.460000038
-              A: 1
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
         }
       }
       Objects {

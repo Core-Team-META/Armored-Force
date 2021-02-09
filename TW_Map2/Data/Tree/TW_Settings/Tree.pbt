@@ -15,7 +15,7 @@ Objects {
     }
   }
   ParentId: 10090713447264881202
-  ChildIds: 12069211033368305212
+  ChildIds: 3668863210679690480
   ChildIds: 14860874337489220250
   UnregisteredParameters {
   }
@@ -102,10 +102,11 @@ Objects {
   }
 }
 Objects {
-  Id: 12069211033368305212
-  Name: "Third Person Player Settings"
+  Id: 3668863210679690480
+  Name: "TankSettings"
   Transform {
     Location {
+      Z: -930
     }
     Rotation {
     }
@@ -116,8 +117,6 @@ Objects {
     }
   }
   ParentId: 1722819333983075486
-  UnregisteredParameters {
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -127,12 +126,11 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 1000
-      MaxAcceleration: 500
-      WalkableFloorAngle: 50
-      JumpMaxCount: 1
+      WalkSpeed: 640
+      MaxAcceleration: 1800
+      WalkableFloorAngle: 44
       JumpVelocity: 900
-      GroundFriction: 10
+      GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
       Buoyancy: 1
@@ -148,10 +146,12 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:facemovement"
       }
-      DefaultRotationRate: 40
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
+      }
+      LookAtCursorProjectionPlaneAnchor {
+        Value: "mc:eprojectionplaneanchor:playerposition"
       }
       MountedMaxAcceleration: 1800
       MountedWalkSpeed: 960
@@ -167,7 +167,7 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
-      FlipOnMultiJump: true
+      IsMountEnabled: true
       MaxHitpoints: 100
     }
   }
