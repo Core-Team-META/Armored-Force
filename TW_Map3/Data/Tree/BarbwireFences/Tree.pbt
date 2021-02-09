@@ -1,6 +1,66 @@
 Name: "BarbwireFences"
 RootId: 11988123531261742074
 Objects {
+  Id: 9736037769469915394
+  Name: "TW3_BarbedWireFence01Broken"
+  Transform {
+    Location {
+      X: -22326.4609
+      Y: 4022.33887
+      Z: 601.034424
+    }
+    Rotation {
+      Pitch: -10.3584871
+      Yaw: 89.5576553
+      Roll: 18.039793
+    }
+    Scale {
+      X: 1.32000685
+      Y: 1.32000685
+      Z: 1.32000685
+    }
+  }
+  ParentId: 11988123531261742074
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5779055686609999718
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_BarbedWireFence01Broken"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -21847.1074
+            Y: 7818.39258
+            Z: 632.271606
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.22866821
+            Yaw: 62.8668594
+            Roll: 11.2468119
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.32000685
+            Y: 1.32000685
+            Z: 1.32000685
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13607775962879631257
+    }
+  }
+}
+Objects {
   Id: 6497772054265900617
   Name: "TW3_BarbedWireFence01Broken"
   Transform {

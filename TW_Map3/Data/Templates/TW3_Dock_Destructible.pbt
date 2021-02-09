@@ -111,13 +111,13 @@ Assets {
           Overrides {
             Name: "cs:DestructionFX01"
             AssetReference {
-              Id: 13660808079602277831
+              Id: 7581275845135938685
             }
           }
           Overrides {
             Name: "cs:DestructionFX02"
             AssetReference {
-              Id: 13660808079602277831
+              Id: 7581275845135938685
             }
           }
           Overrides {
@@ -162,9 +162,9 @@ Assets {
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 35.1471062
-            Y: 0.742840528
-            Z: 42.2222214
+            X: 49.1325302
+            Y: 0.946660578
+            Z: 37.6459541
           }
           Rotation {
           }
@@ -190,9 +190,9 @@ Assets {
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -45.9796906
-            Y: 2.70506978
-            Z: 48.8888435
+            X: -13.8220758
+            Y: 3.17370963
+            Z: 43.4722366
           }
           Rotation {
           }
@@ -1505,10 +1505,10 @@ Assets {
           Location {
             X: -104.02404
             Y: -45.7108154
-            Z: 754.349731
+            Z: 757.990112
           }
           Rotation {
-            Roll: 1.47112596
+            Roll: 3.31899977
           }
           Scale {
             X: 0.565566123
