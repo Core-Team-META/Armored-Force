@@ -1,7 +1,6 @@
 local reliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local tankEquipment = script:GetCustomProperty("TankEquipment"):WaitForObject()
-local tankSettings = script:GetCustomProperty("TankSettings"):WaitForObject()
 
 local tankProjectile = script:GetCustomProperty("TankProjectile01")
 local explosionVFX = script:GetCustomProperty("ExplosionVFX")
@@ -17,9 +16,12 @@ local turretHelperMarker = script:GetCustomProperty("TurretHelperMarker"):WaitFo
 local tankAnchor = script:GetCustomProperty("TankAnchor"):WaitForObject()
 local tankDock = World.FindObjectByName("TANK_TankDock")
 
+local adjustmentPoint = script:GetCustomProperty("AdjustmentPoint"):WaitForObject()
+
 local deadTank = script:GetCustomProperty("DeadTank")
 
 local hitbox = tankEquipment:FindDescendantsByName("ServerCollisionTrigger")
+
 
 -- FIREPOWER
 local defaultReloadSpeed = tankEquipment:GetCustomProperty("ReloadSpeed")
@@ -148,8 +150,6 @@ function StartTank(equipment, player)
 
 	SetTankModifications(player)
 
-	tankSettings:ApplyToPlayer(player)
-
 	player:SetVisibility(false, false)
 	player:ResetVelocity()
 
@@ -247,7 +247,22 @@ function OnDeath(player, damage)
 
 	tankAnchor:Destroy()
 	
-	local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition(), rotation = turretTraverseMarker:GetWorldRotation()})
+	local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition(), rotation = adjustmentPoint:GetWorldRotation()})
+	local destroyedTurret = destroyedTank:FindDescendantByName("Turret")
+	local destroyedCannon = destroyedTank:FindDescendantByName("Cannon")
+	
+	if destroyedTurret then
+	
+		destroyedTurret:SetRotation(turretTraverseMarker:GetRotation())
+		
+	end
+	
+	if destroyedCannon then
+	
+		destroyedCannon:SetRotation(turretElevationMarker:GetRotation())
+		
+	end
+	
 	destroyedTank.lifeSpan = 5
 	
 
@@ -449,7 +464,7 @@ function AdjustTurretRotation()
 	
 	turretElevationMarker:RotateTo(Rotation.New(0, elevationTarget, traverseTarget), math.abs(totalMovementDistance/turretElevationSpeed), true)
 	
-	turretHelper:SetRotation(Rotation.New(0, 0, tankOwner:GetViewWorldRotation().z - tankOwner:GetWorldRotation().z))
+	turretHelper:SetWorldRotation(Rotation.New(adjustmentPoint:GetWorldRotation().x, adjustmentPoint:GetWorldRotation().y, tankOwner:GetViewWorldRotation().z))
 	
 	turretHelperMarker:LookAt(RaycastResultFromPointRotationDistance(tankOwner:GetViewWorldPosition(),tankOwner:GetViewWorldRotation(), 10000))
 
