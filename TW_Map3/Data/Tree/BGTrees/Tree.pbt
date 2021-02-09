@@ -1490,14 +1490,14 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: 8148.59961
+      X: 8148.59375
       Y: 25095.9844
-      Z: 1433.5376
+      Z: 794.318115
     }
     Rotation {
-      Pitch: -0.997467101
-      Yaw: 109.379173
-      Roll: 178.223648
+      Pitch: -2.02883911
+      Yaw: 53.8672066
+      Roll: 179.815842
     }
     Scale {
       X: 15.2649956
@@ -9731,13 +9731,13 @@ Objects {
   Name: "BGTrees"
   Transform {
     Location {
-      X: 8059.23438
-      Y: -14581.6318
-      Z: 5996.42188
+      X: 4648.86816
+      Y: -14581.5527
+      Z: 4426.4209
     }
     Rotation {
-      Pitch: -0.132505655
-      Yaw: -113.848854
+      Pitch: -0.132507324
+      Yaw: -113.848846
       Roll: 167.306442
     }
     Scale {
@@ -19485,7 +19485,6 @@ Objects {
   ChildIds: 1259173256973953723
   ChildIds: 2698085726001226783
   ChildIds: 12300602643094759390
-  ChildIds: 15964786185016805208
   ChildIds: 4268940608073269942
   ChildIds: 5990037133812566448
   ChildIds: 10840203714881795257
@@ -29912,61 +29911,6 @@ Objects {
   }
 }
 Objects {
-  Id: 15964786185016805208
-  Name: "BGTrees"
-  Transform {
-    Location {
-      X: -28770.8789
-      Y: -12913.3223
-      Z: 1238.72327
-    }
-    Rotation {
-      Pitch: 9.63315487
-      Yaw: 104.670898
-      Roll: 177.97261
-    }
-    Scale {
-      X: 15.2649956
-      Y: 15.6807175
-      Z: 99.797554
-    }
-  }
-  ParentId: 7726248544638395045
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 10921027446473189676
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15420880124102881155
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    DisableCastShadows: true
-    EnableCameraCollision: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 12300602643094759390
   Name: "BGTrees"
   Transform {
@@ -32370,6 +32314,7 @@ Objects {
   ChildIds: 1367836988236550406
   ChildIds: 8839732921915468126
   ChildIds: 18014363872151624656
+  ChildIds: 14230521145671604030
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -32378,6 +32323,61 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 14230521145671604030
+  Name: "BGTrees"
+  Transform {
+    Location {
+      X: 9360.1875
+      Y: 36539.3516
+      Z: 324.978027
+    }
+    Rotation {
+      Pitch: 2.05910373
+      Yaw: 4.00755072
+      Roll: 169.530975
+    }
+    Scale {
+      X: 15.2649956
+      Y: 15.6807175
+      Z: 99.797554
+    }
+  }
+  ParentId: 11778338143258210189
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 10921027446473189676
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15420880124102881155
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    EnableCameraCollision: true
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
     }
   }
 }
@@ -36823,21 +36823,16 @@ Objects {
   ChildIds: 7712495894331239520
   ChildIds: 6800300186535363398
   ChildIds: 4280420264668067823
-  ChildIds: 10712208877655522684
   ChildIds: 8276412827664559551
-  ChildIds: 9654042482096741404
   ChildIds: 16468057162505558165
-  ChildIds: 3372129362381357061
   ChildIds: 6591094831247414335
   ChildIds: 4172656147466866832
   ChildIds: 2235404975775255111
   ChildIds: 3730870263015170354
-  ChildIds: 3404612700103557343
   ChildIds: 8453059387559803113
   ChildIds: 9118925606871772168
   ChildIds: 9351078123158350045
   ChildIds: 3101702302844673437
-  ChildIds: 15900368408061628982
   ChildIds: 2327035895426449338
   ChildIds: 13398004091594438579
   ChildIds: 8701622585380936548
@@ -36975,61 +36970,6 @@ Objects {
       Pitch: 9.63314819
       Yaw: -74.4586792
       Roll: 177.97261
-    }
-    Scale {
-      X: 15.2649956
-      Y: 15.6807175
-      Z: 99.797554
-    }
-  }
-  ParentId: 8578692405546904341
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 10921027446473189676
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15420880124102881155
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    DisableCastShadows: true
-    EnableCameraCollision: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 15900368408061628982
-  Name: "BGTrees"
-  Transform {
-    Location {
-      X: 25736.3281
-      Y: -1470.55273
-      Z: 1171.28577
-    }
-    Rotation {
-      Pitch: -0.997467101
-      Yaw: -175.0392
-      Roll: 178.223648
     }
     Scale {
       X: 15.2649956
@@ -37293,61 +37233,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3404612700103557343
-  Name: "BGTrees"
-  Transform {
-    Location {
-      X: 29543.7363
-      Y: 1806.59375
-      Z: 1254.56091
-    }
-    Rotation {
-      Pitch: -0.997467101
-      Yaw: -149.272949
-      Roll: 178.223648
-    }
-    Scale {
-      X: 15.2649956
-      Y: 15.6807175
-      Z: 99.797554
-    }
-  }
-  ParentId: 8578692405546904341
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 10921027446473189676
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15420880124102881155
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    DisableCastShadows: true
-    EnableCameraCollision: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 3730870263015170354
   Name: "BGTrees"
   Transform {
@@ -37568,61 +37453,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3372129362381357061
-  Name: "BGTrees"
-  Transform {
-    Location {
-      X: 26679.3516
-      Y: 5376.7207
-      Z: 917.582397
-    }
-    Rotation {
-      Pitch: -0.997467101
-      Yaw: 4.08850718
-      Roll: 178.223648
-    }
-    Scale {
-      X: 15.2649956
-      Y: 15.6807175
-      Z: 99.797554
-    }
-  }
-  ParentId: 8578692405546904341
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 10921027446473189676
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15420880124102881155
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    DisableCastShadows: true
-    EnableCameraCollision: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 16468057162505558165
   Name: "BGTrees"
   Transform {
@@ -37634,61 +37464,6 @@ Objects {
     Rotation {
       Pitch: -0.997467101
       Yaw: -149.27298
-      Roll: 178.223648
-    }
-    Scale {
-      X: 15.2649956
-      Y: 15.6807175
-      Z: 99.797554
-    }
-  }
-  ParentId: 8578692405546904341
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 10921027446473189676
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15420880124102881155
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    DisableCastShadows: true
-    EnableCameraCollision: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 9654042482096741404
-  Name: "BGTrees"
-  Transform {
-    Location {
-      X: 21593.3848
-      Y: 2924.05469
-      Z: 868.934082
-    }
-    Rotation {
-      Pitch: -0.997467101
-      Yaw: 4.08850718
       Roll: 178.223648
     }
     Scale {
@@ -37745,61 +37520,6 @@ Objects {
       Pitch: 9.63315487
       Yaw: -48.6918411
       Roll: 177.97261
-    }
-    Scale {
-      X: 15.2649956
-      Y: 15.6807175
-      Z: 99.797554
-    }
-  }
-  ParentId: 8578692405546904341
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 10921027446473189676
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15420880124102881155
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    DisableCastShadows: true
-    EnableCameraCollision: true
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 10712208877655522684
-  Name: "BGTrees"
-  Transform {
-    Location {
-      X: 27004.1406
-      Y: 8753.67383
-      Z: 1171.28577
-    }
-    Rotation {
-      Pitch: -0.997467101
-      Yaw: -149.27298
-      Roll: 178.223648
     }
     Scale {
       X: 15.2649956
