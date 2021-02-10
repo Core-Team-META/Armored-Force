@@ -19637,8 +19637,8 @@ Objects {
     }
     Rotation {
       Pitch: 1.23790348
-      Yaw: 41.4541321
-      Roll: 31.1475182
+      Yaw: 48.0427475
+      Roll: 31.1476784
     }
     Scale {
       X: 2.04536748
@@ -21625,14 +21625,13 @@ Objects {
   Name: "Cube - Rounded"
   Transform {
     Location {
-      X: -746.608643
-      Y: 1165.17188
+      X: -748.025635
+      Y: 1169.92773
       Z: 1201.97705
     }
     Rotation {
-      Pitch: -0.66345036
+      Pitch: -0.663452148
       Yaw: 52.9398766
-      Roll: -2.66822155e-08
     }
     Scale {
       X: 11.5832148
