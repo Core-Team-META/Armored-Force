@@ -1,6 +1,6 @@
 Assets {
   Id: 4338756373939568011
-  Name: "TechTree_M3Stuart"
+  Name: "TechTree_TankInfo"
   PlatformAssetType: 3
   TextAsset {
   }
