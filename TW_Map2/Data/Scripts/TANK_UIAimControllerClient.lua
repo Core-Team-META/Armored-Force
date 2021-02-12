@@ -1,3 +1,5 @@
+local EaseUI = require(script:GetCustomProperty("EaseUI"))
+
 local mainPointer = script:GetCustomProperty("Main"):WaitForObject()
 
 local reticleUI = script:GetCustomProperty("ReticleUI"):WaitForObject()
@@ -141,10 +143,10 @@ function UpdatePointer()
 	if uiPostion then
 	
 		truePointer.visibility = Visibility.FORCE_ON
-	
-		truePointer.x = uiPostion.x
-		truePointer.y = uiPostion.y
 		
+		EaseUI.EaseX(truePointer, uiPostion.x, 0.01, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+		EaseUI.EaseY(truePointer, uiPostion.y, 0.01, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+			
 	else 
 	
 		truePointer.visibility = Visibility.FORCE_OFF

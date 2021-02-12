@@ -648,6 +648,12 @@ Objects {
         SelfId: 7524468452108063377
       }
     }
+    Overrides {
+      Name: "cs:EaseUI"
+      AssetReference {
+        Id: 7263250394224245872
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
