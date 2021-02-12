@@ -18,7 +18,6 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 15194655431994936686
         ChildIds: 12759368276914250318
-        ChildIds: 5274153485548965720
         ChildIds: 7793264170047891682
         ChildIds: 10572064040681203634
         UnregisteredParameters {
@@ -236,12 +235,6 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:ShootAbility"
-            ObjectReference {
-              SubObjectId: 5274153485548965720
-            }
-          }
-          Overrides {
             Name: "cs:TurretHelper"
             ObjectReference {
               SubObjectId: 12674638962201190655
@@ -251,6 +244,18 @@ Assets {
             Name: "cs:TurretHelperMarker"
             ObjectReference {
               SubObjectId: 9920850624204816973
+            }
+          }
+          Overrides {
+            Name: "cs:TurretHelperServer"
+            ObjectReference {
+              SubObjectId: 7722837692841798379
+            }
+          }
+          Overrides {
+            Name: "cs:TurretHelperMarkerServer"
+            ObjectReference {
+              SubObjectId: 17994691306114319458
             }
           }
           Overrides {
@@ -274,7 +279,7 @@ Assets {
           Overrides {
             Name: "cs:DeadTank"
             AssetReference {
-              Id: 841534158063459245
+              Id: 4168862517978651661
             }
           }
           Overrides {
@@ -366,70 +371,6 @@ Assets {
         Script {
           ScriptAsset {
             Id: 12870702039473648340
-          }
-        }
-      }
-      Objects {
-        Id: 5274153485548965720
-        Name: "ShootAbility"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 452241511852978616
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Ability {
-          IsEnabled: true
-          CastPhaseSettings {
-            Duration: 0.1
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          ExecutePhaseSettings {
-            Duration: 0.1
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          RecoveryPhaseSettings {
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          CooldownPhaseSettings {
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
           }
         }
       }
@@ -876,10 +817,9 @@ Assets {
       }
       Objects {
         Id: 4532000658165937756
-        Name: "ServerContext"
+        Name: "ServerContext2"
         Transform {
           Location {
-            Z: -195
           }
           Rotation {
           }
@@ -892,6 +832,8 @@ Assets {
         ParentId: 8935346240001288070
         ChildIds: 6128059335931437899
         ChildIds: 4144986964842188615
+        ChildIds: 7722837692841798379
+        ChildIds: 17994691306114319458
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -909,6 +851,7 @@ Assets {
         Transform {
           Location {
             Y: 225
+            Z: -195
           }
           Rotation {
           }
@@ -1351,6 +1294,7 @@ Assets {
         Transform {
           Location {
             Y: -225
+            Z: -195
           }
           Rotation {
           }
@@ -1785,6 +1729,84 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 7722837692841798379
+        Name: "TurretHelper2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4532000658165937756
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17994691306114319458
+        Name: "TurretHelperMarker2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4532000658165937756
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
         }
       }
       Objects {
