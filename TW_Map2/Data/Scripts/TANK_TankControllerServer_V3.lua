@@ -8,10 +8,12 @@ local explosionVFX = script:GetCustomProperty("ExplosionVFX")
 local turretTraverseMarker = script:GetCustomProperty("TurretTraverseMarker"):WaitForObject()
 local turretElevationMarker = script:GetCustomProperty("TurretElevationMarker"):WaitForObject()
 local muzzleMarker = script:GetCustomProperty("MuzzleMarker"):WaitForObject()
-local shootAbility = script:GetCustomProperty("ShootAbility"):WaitForObject()
 
 local turretHelper = script:GetCustomProperty("TurretHelper"):WaitForObject()
 local turretHelperMarker = script:GetCustomProperty("TurretHelperMarker"):WaitForObject()
+
+local turretHelperServer = script:GetCustomProperty("TurretHelperServer"):WaitForObject()
+local turretHelperMarkerServer = script:GetCustomProperty("TurretHelperMarkerServer"):WaitForObject()
 
 local tankAnchor = script:GetCustomProperty("TankAnchor"):WaitForObject()
 local tankDock = World.FindObjectByName("TANK_TankDock")
@@ -94,10 +96,11 @@ local traverseDistance = 0
 
 local totalMovementDistance = 0
 
-local abilityListener = nil
 local reloading = false
 local turretLock = false
 local holdFire = false
+
+local lookAtTarget = Vector3.ZERO
 
 -- ability_extra_21 = W	 		= forward 	= controlTracker[1]
 -- ability_extra_30 = A 		= left		= controlTracker[2]
@@ -128,7 +131,7 @@ function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	altitude = altitude * math.pi/180
 	
-	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude) + 0.05)
+	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude) + 0.045)
 	
 	local destination = (direction * distance) + worldPosition
 	
@@ -141,6 +144,8 @@ function RaycastResultFromPointRotationDistance(point, rotation, distance)
 		destination = point:GetImpactPosition()
 		
 	end
+	
+	lookAtTarget = destination
 	
 	return destination
 
@@ -179,9 +184,9 @@ function StartTank(equipment, player)
 	
 		turretTraverseMarker:LookAtContinuous(turretHelperMarker, true, turretTraverseSpeed / 57)
 		
+		turretHelperServer:LookAtContinuous(turretHelperMarkerServer, true, 1000)
+		
 	end
-	
-	abilityListener = shootAbility.executeEvent:Connect(ShootProjectile)
 			
 end
 
@@ -289,6 +294,8 @@ function BindingPressed(player, action)
 	elseif action == "ability_primary" then
 	
 		holdFire = true
+	
+		ShootProjectile()
 				
 	elseif action == "ability_secondary" then
 	
@@ -464,7 +471,9 @@ function AdjustTurretRotation()
 	
 	turretElevationMarker:RotateTo(Rotation.New(0, elevationTarget, traverseTarget), math.abs(totalMovementDistance/turretElevationSpeed), true)
 	
-	turretHelper:SetWorldRotation(Rotation.New(adjustmentPoint:GetWorldRotation().x, adjustmentPoint:GetWorldRotation().y, tankOwner:GetViewWorldRotation().z))
+	turretHelper:SetWorldRotation(turretHelperServer:GetWorldRotation())
+	
+	turretHelperMarkerServer:SetWorldPosition(lookAtTarget)
 	
 	turretHelperMarker:LookAt(RaycastResultFromPointRotationDistance(tankOwner:GetViewWorldPosition(),tankOwner:GetViewWorldRotation(), 10000))
 
@@ -494,7 +503,7 @@ function CheckAimAndTurret()
 	
 end
 
-function ShootProjectile(ability)
+function ShootProjectile()
 
 	if reloading or not CheckAimAndTurret() then
 	
@@ -506,15 +515,6 @@ function ShootProjectile(ability)
 	
 	local targetRotation = muzzleMarker:GetRotation() * Vector3.FORWARD
 	
-	--local targetData = ability:GetTargetData()
-		
-	--[[
-	if targetData then
-		
-		targetRotation = targetData:GetHitPosition() - muzzleMarker:GetWorldPosition() + Vector3.New(0, 0, 10)
-	
-	end
-	]]
 	local spawnedProjectile = Projectile.Spawn(tankProjectile, muzzleMarker:GetWorldPosition(), turretElevationMarker:GetWorldRotation() * Vector3.FORWARD)
 	spawnedProjectile.gravityScale = 0
 	spawnedProjectile.capsuleRadius = 1
@@ -554,8 +554,14 @@ end
 
 function Tick(dt)
 
-	totalDt = totalDt + dt
+	if not Object.IsValid(tankAnchor) then
+	
+		return
+		
+	end
 
+	totalDt = totalDt + dt
+	
 	if not Object.IsValid(tankOwner) then
 	
 		if tankEquipment.owner then
@@ -572,9 +578,9 @@ function Tick(dt)
 	
 	AdjustTurretRotation()
 	
-	if allowHoldDownFiring and holdFire and not reloading and shootAbility:GetCurrentPhase() == AbilityPhase.READY then
+	if allowHoldDownFiring and holdFire and not reloading then
 	
-		shootAbility:Activate()
+		ShootProjectile()
 	
 	end
 		
