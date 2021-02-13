@@ -204,7 +204,7 @@ function Tick(dt)
 	averageHeight1 = FindAverageHeight(leftSuspensionUnit)
 	averageHeight2 = FindAverageHeight(rightSuspensionUnit)
 	
-	adjustmentPoint:MoveTo(Vector3.New(0, 0, ((averageHeight1 + averageHeight2) / 2) * 1.2 + tankHeightTweaker), 0.05, true)
+	adjustmentPoint:MoveTo(Vector3.New(0, 0, ((averageHeight1 + averageHeight2) / 2) * 1.2 + tankHeightTweaker), 0.1, true)
 		
 	averageYRotation1 = FindAverageYAngle(leftSuspensionUnit)
 	averageYRotation2 = FindAverageYAngle(rightSuspensionUnit)
