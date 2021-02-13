@@ -7400,7 +7400,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2048746942450624058
+              Id: 7842655669892217409
             }
           }
           Overrides {
@@ -7580,7 +7580,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2048746942450624058
+              Id: 7842655669892217409
             }
           }
           Overrides {
