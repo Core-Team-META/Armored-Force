@@ -1,6 +1,33 @@
 Name: "Patrick"
 RootId: 2908182587629757492
 Objects {
+  Id: 3953836264751700326
+  Name: "TANK_TEMPLATE_READ_ME"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2908182587629757492
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9775702453277003375
+    }
+  }
+}
+Objects {
   Id: 8271080033454281204
   Name: "TANK_AimUI"
   Transform {

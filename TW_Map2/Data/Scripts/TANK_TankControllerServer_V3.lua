@@ -24,7 +24,6 @@ local deadTank = script:GetCustomProperty("DeadTank")
 
 local hitbox = tankEquipment:FindDescendantsByName("ServerCollisionTrigger")
 
-
 -- FIREPOWER
 local defaultReloadSpeed = tankEquipment:GetCustomProperty("ReloadSpeed")
 local upgradedReload = tankEquipment:GetCustomProperty("UpgradedReload")
@@ -62,7 +61,6 @@ local defaultHullTraverseSpeed = tankEquipment:GetCustomProperty("HullTraverseSp
 local upgradedHullTraverse = tankEquipment:GetCustomProperty("UpgradedHullTraverse")
 
 local isWheeledVehicle = tankEquipment:GetCustomProperty("IsWheeledVehicle")
-
 
 local topSpeed = 0
 local acceleration = 0
@@ -580,7 +578,7 @@ function Tick(dt)
 	
 	if allowHoldDownFiring and holdFire and not reloading then
 	
-		ShootProjectile()
+		Task.Spawn(ShootProjectile, 0)
 	
 	end
 		

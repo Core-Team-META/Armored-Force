@@ -3,6 +3,7 @@ local tankMovementControllerServer = script:GetCustomProperty("TankMovementContr
 
 local isWheeledVehicle = tankEquipment:GetCustomProperty("IsWheeledVehicle")
 local leftAndRightWheelAngles = tankEquipment:GetCustomProperty("LeftAndRightWheelAngles")
+local wheelSpeedMultiplier = tankEquipment:GetCustomProperty("WheelSpeedMultiplier")
 
 local engineSounds = script.parent:FindDescendantByName("TankEngineLoopSFX")
 local leftTreads = script.parent:FindDescendantByName("TreadsLeft")
@@ -34,13 +35,13 @@ function Tick(dt)
 		
 		for x, c in pairs(leftTreads:FindDescendantsByName("Wheel")) do
 		
-			c:RotateContinuous(Rotation.New(0, -(10 * (tankOwner:GetVelocity().size + 1) * tankMovementControllerServer:GetCustomProperty("LeftTrackSpeed")), 0), 1, true)
+			c:RotateContinuous(Rotation.New(0, -(wheelSpeedMultiplier * (tankOwner:GetVelocity().size + 1) * tankMovementControllerServer:GetCustomProperty("LeftTrackSpeed")), 0), 1, true)
 			
 		end
 		
 		for x, c in pairs(rightTreads:FindDescendantsByName("Wheel")) do
 		
-			c:RotateContinuous(Rotation.New(0, -(10 * (tankOwner:GetVelocity().size + 1)  * tankMovementControllerServer:GetCustomProperty("RightTrackSpeed")), 0), 1, true)
+			c:RotateContinuous(Rotation.New(0, -(wheelSpeedMultiplier * (tankOwner:GetVelocity().size + 1)  * tankMovementControllerServer:GetCustomProperty("RightTrackSpeed")), 0), 1, true)
 			
 		end
 		
@@ -102,13 +103,13 @@ function Tick(dt)
 	
 		for x, c in pairs(leftTreads:FindDescendantsByName("Wheel")) do
 		
-			c:RotateContinuous(Rotation.New(0, -(15 * tankOwner:GetVelocity().size), 0), 1, true)
+			c:RotateContinuous(Rotation.New(0, -(wheelSpeedMultiplier * tankOwner:GetVelocity().size), 0), 1, true)
 			
 		end
 		
 		for x, c in pairs(rightTreads:FindDescendantsByName("Wheel")) do
 		
-			c:RotateContinuous(Rotation.New(0, -(15 * tankOwner:GetVelocity().size), 0), 1, true)
+			c:RotateContinuous(Rotation.New(0, -(wheelSpeedMultiplier * tankOwner:GetVelocity().size), 0), 1, true)
 			
 		end		
 		
