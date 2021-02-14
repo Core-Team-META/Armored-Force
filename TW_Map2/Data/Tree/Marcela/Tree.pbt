@@ -241,7 +241,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate33"
       AssetReference {
-        Id: 7038725764964230587
+        Id: 8105511490149619332
       }
     }
     Overrides {
@@ -417,6 +417,7 @@ Objects {
   ChildIds: 4972203503782324635
   ChildIds: 1404432386272218393
   ChildIds: 14964428639824968681
+  ChildIds: 2111208023520803178
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -434,6 +435,123 @@ Objects {
       }
     }
     Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2111208023520803178
+  Name: "Boom"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4166206054906016552
+  ChildIds: 4075683281204465827
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 94
+    Height: 40
+    UIX: 1004.51843
+    UIY: 550.812
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4075683281204465827
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2111208023520803178
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 84
+    Height: 40
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "X = Boom"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -3356,9 +3474,8 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109931417
+        G: 0.830000043
         A: 1
       }
       TeamSettings {
@@ -3412,9 +3529,8 @@ Objects {
     Text {
       Label: "Crtl + 7 = Italian FIAT Type 6616"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.0109931417
+        G: 0.830000043
         A: 1
       }
       Size: 15
@@ -6572,7 +6688,7 @@ Objects {
     Text {
       Label: "6 - US M24 Chaffee"
       Color {
-        R: 0.0109932404
+        R: 0.0109931417
         G: 0.830000043
         A: 1
       }

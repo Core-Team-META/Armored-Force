@@ -48,6 +48,16 @@ local EQUIPMENT_TEMPLATE21 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE22 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate22")
 local EQUIPMENT_TEMPLATE23 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate23")
 local EQUIPMENT_TEMPLATE24 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate24")
+local EQUIPMENT_TEMPLATE25 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate25")
+local EQUIPMENT_TEMPLATE26 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate26")
+local EQUIPMENT_TEMPLATE27 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate27")
+local EQUIPMENT_TEMPLATE28 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate28")
+local EQUIPMENT_TEMPLATE29 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate29")
+local EQUIPMENT_TEMPLATE30 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate30")
+local EQUIPMENT_TEMPLATE31 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate31")
+local EQUIPMENT_TEMPLATE32 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate32")
+local EQUIPMENT_TEMPLATE33 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate33")
+local EQUIPMENT_TEMPLATE34 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate34")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -80,6 +90,7 @@ end
 function GivePlayerEquipment(player)
 	equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE)
 	assert(equipment[player]:IsA("Equipment"))
+	Task.Wait(0.1)
 	equipment[player]:Equip(player)
 end
 
@@ -88,9 +99,11 @@ end
 function RemovePlayerEquipment(player)
 	if equipment[player] and equipment[player]:IsValid() then
 		equipment[player]:Unequip()
+		
+		Task.Wait(0.1)
 
 		-- Have to check IsValid() again, because unequip may have destroyed this equipment
-		if equipment[player]:IsValid() then
+		if equipment[player]:IsValid() then			
 			equipment[player]:Destroy()
 		end
 
@@ -109,68 +122,98 @@ function OnBindingPressed(player,bindingPressed)
 		player.movementControlMode = MovementControlMode.NONE
 		tankBurning = true
 	end
-	--german panther
+	--german panther or us T57
 	if bindingPressed == "ability_extra_1" then
 		RemovePlayerEquipment(player)
-		GivePlayerEquipment(player)
+		if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE28)
+		else
+		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE)
+		end
+		assert(equipment[player]:IsA("Equipment"))
+		equipment[player]:Equip(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
 		tankBurning = false
 	end
-	--ussr t-34
+	--ussr t-34 or french amx50
 	if bindingPressed == "ability_extra_2" then
 		RemovePlayerEquipment(player)
+		if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE29)
+		else
 		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE2)
+		end
 		assert(equipment[player]:IsA("Equipment"))
 		equipment[player]:Equip(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
 		tankBurning = false
 	end
-	--us m4a1 sherman
+	--us m4a1 sherman or french bat-chat 25t
 	if bindingPressed == "ability_extra_3" then
 		RemovePlayerEquipment(player)
+		if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE30)
+		else
 		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE3)
+		end
 		assert(equipment[player]:IsA("Equipment"))
 		equipment[player]:Equip(player)
 		player.movementControlMode = MovementControlMode.FACING_RELATIVE
 		equipment[player].visibility = Visibility.FORCE_ON
 		tankBurning = false
 	end
-		--uk manticore
+		--uk 1955 chimera or german vk7201
 		if bindingPressed == "ability_extra_4" then
 			RemovePlayerEquipment(player)
+			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE31)
+			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE4)
+			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--german panzer 4H
+		--german panzer 4H or japan type 74
 		if bindingPressed == "ability_extra_5" then
 			RemovePlayerEquipment(player)
+			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE32)
+			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE5)
+			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--us m24 chaffee
+		--us m24 chaffee or italian of-40
 		if bindingPressed == "ability_extra_6" then
 			RemovePlayerEquipment(player)
+			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE33)
+			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE6)
+			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--us m10 wolverine
+		--us m10 wolverine or italian fiat type 6616
 		if bindingPressed == "ability_extra_7" then
 			RemovePlayerEquipment(player)
+			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE34)
+			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE7)
+			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
@@ -335,6 +378,36 @@ function OnBindingPressed(player,bindingPressed)
 		if bindingPressed == "ability_extra_45" then
 			RemovePlayerEquipment(player)
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE24)
+			assert(equipment[player]:IsA("Equipment"))
+			equipment[player]:Equip(player)
+			player.movementControlMode = MovementControlMode.FACING_RELATIVE
+			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
+		end
+		--uk comet
+		if bindingPressed == "ability_extra_44" then
+			RemovePlayerEquipment(player)
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE25)
+			assert(equipment[player]:IsA("Equipment"))
+			equipment[player]:Equip(player)
+			player.movementControlMode = MovementControlMode.FACING_RELATIVE
+			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
+		end
+		--ussr is-3
+		if bindingPressed == "ability_extra_42" then
+			RemovePlayerEquipment(player)
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE26)
+			assert(equipment[player]:IsA("Equipment"))
+			equipment[player]:Equip(player)
+			player.movementControlMode = MovementControlMode.FACING_RELATIVE
+			equipment[player].visibility = Visibility.FORCE_ON
+			tankBurning = false
+		end
+		--german stug 3g
+		if bindingPressed == "ability_extra_41" then
+			RemovePlayerEquipment(player)
+			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE27)
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
