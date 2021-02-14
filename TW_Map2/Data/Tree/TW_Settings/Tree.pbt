@@ -159,7 +159,6 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
-      IsCrouchEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
       AbilityAimMode {
@@ -167,7 +166,6 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
-      IsMountEnabled: true
       MaxHitpoints: 100
     }
   }

@@ -1,4 +1,4 @@
-﻿local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local victoryComponent = script:GetCustomProperty("GAMESTATE_VictoryComponent"):WaitForObject()
 
 local victoryMaxDuration = mainGameStateManager:GetCustomProperty("VictoryMaxDuration")
@@ -87,12 +87,21 @@ function SaveStatistics()
 	
 		print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP")
 		print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
-	
-		p.kills = 0
 		
 	end
 	
 end
 
+function ResetStatistics()
+
+	for x, p in pairs(Game.GetPlayers()) do
+	
+		p.kills = 0
+		
+	end
+
+end
+
 Events.Connect("WINNER", SetWinner)
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
+Game.roundStartEvent:Connect(ResetStatistics)
