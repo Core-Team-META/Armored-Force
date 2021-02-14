@@ -1,6 +1,59 @@
 Name: "Datonare (Ryan)"
 RootId: 17398334354223688829
 Objects {
+  Id: 11745031008062359882
+  Name: "ServerContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17398334354223688829
+  ChildIds: 16178467245324230344
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 16178467245324230344
+  Name: "TechTreeUIManagerServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11745031008062359882
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4016789952196054393
+    }
+  }
+}
+Objects {
   Id: 7540281279584508332
   Name: "TechTree"
   Transform {
@@ -82,8 +135,6 @@ Objects {
   }
   ParentId: 17563950383364723476
   ChildIds: 17673340388354254850
-  ChildIds: 18193091839909127344
-  ChildIds: 7176230287379192849
   ChildIds: 12690902996165256707
   ChildIds: 2461544402236431987
   ChildIds: 10794810745051780671
@@ -564,180 +615,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7176230287379192849
-  Name: "AxisSelectorButton"
-  Transform {
-    Location {
-      X: -21.7420273
-      Y: 135.839172
-      Z: 910
-    }
-    Rotation {
-      Yaw: 5.00001287
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14966627174895260745
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 155
-    Height: 65
-    UIX: 250
-    UIY: 10
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "AXIS"
-      FontColor {
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      HoveredColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      PressedColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      DisabledColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 18193091839909127344
-  Name: "AlliesSelectorButton"
-  Transform {
-    Location {
-      X: -21.7420273
-      Y: 135.839172
-      Z: 910
-    }
-    Rotation {
-      Yaw: 4.99997807
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14966627174895260745
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 155
-    Height: 65
-    UIX: 50
-    UIY: 10
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "ALLIES"
-      FontColor {
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      HoveredColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      PressedColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      DisabledColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 17673340388354254850
   Name: "Background"
   Transform {
@@ -859,18 +736,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:AlliesSelectorButton"
-      ObjectReference {
-        SelfId: 18193091839909127344
-      }
-    }
-    Overrides {
-      Name: "cs:AxisSelectorButton"
-      ObjectReference {
-        SelfId: 7176230287379192849
-      }
-    }
-    Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
         SelfId: 7647187385909291407
@@ -883,6 +748,48 @@ Objects {
     Overrides {
       Name: "cs:AxisTeam"
       String: "Axis"
+    }
+    Overrides {
+      Name: "cs:TechTree_TankContentsPanel"
+      AssetReference {
+        Id: 18101381341274872432
+      }
+    }
+    Overrides {
+      Name: "cs:TeamSelectorButton"
+      AssetReference {
+        Id: 16829511034506297535
+      }
+    }
+    Overrides {
+      Name: "cs:Tier1ScrollPanel"
+      ObjectReference {
+        SelfId: 12559258386656163073
+      }
+    }
+    Overrides {
+      Name: "cs:Tier2ScrollPanel"
+      ObjectReference {
+        SelfId: 17145240313341044083
+      }
+    }
+    Overrides {
+      Name: "cs:Tier3ScrollPanel"
+      ObjectReference {
+        SelfId: 1097061551082014019
+      }
+    }
+    Overrides {
+      Name: "cs:Tier4ScrollPanel"
+      ObjectReference {
+        SelfId: 4581790267252788651
+      }
+    }
+    Overrides {
+      Name: "cs:TechTree_TeamDefinitions"
+      ObjectReference {
+        SelfId: 7712902404816319527
+      }
     }
   }
   Collidable_v2 {

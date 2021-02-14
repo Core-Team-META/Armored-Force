@@ -15,6 +15,12 @@ Objects {
     }
   }
   ParentId: 7712902404816319527
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Id"
+      Int: 2
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -42,6 +48,12 @@ Objects {
     }
   }
   ParentId: 7712902404816319527
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Id"
+      Int: 1
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
