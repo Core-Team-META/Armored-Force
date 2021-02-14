@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 
 	States: (recieved from CHANGESTATE broadcast)
 	LOBBYSTATE
@@ -83,9 +83,9 @@ end
 
 function Test(player, binding)
 
-	if binding == "ability_extra_41" then -- C
+	if binding == "ability_extra_39" then -- Z
 	
-		script:SetNetworkedCustomProperty("GameState", "VOTINGSTATE")
+		player:Die()
 		
 	end
 	
