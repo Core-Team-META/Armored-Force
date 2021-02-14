@@ -98,6 +98,10 @@ local reloading = false
 local turretLock = false
 local holdFire = false
 
+local pressedListener = nil
+local releasedListener = nil
+local deathListener = nil
+
 local lookAtTarget = Vector3.ZERO
 
 -- ability_extra_21 = W	 		= forward 	= controlTracker[1]
@@ -163,13 +167,13 @@ function StartTank(equipment, player)
 	player.maxAcceleration = acceleration
 	player.maxJumpCount = 0
 	
-	player.bindingPressedEvent:Connect(BindingPressed)
-	player.bindingReleasedEvent:Connect(BindingReleased)
+	pressedListener = player.bindingPressedEvent:Connect(BindingPressed)
+	releasedListener=  player.bindingReleasedEvent:Connect(BindingReleased)
 	
 	player.maxHitPoints = hitpoints
 	player.hitPoints = hitpoints
 	
-	player.diedEvent:Connect(OnDeath)
+	deathListener = player.diedEvent:Connect(OnDeath)
 	
 	tankAnchor:Detach()
 	tankAnchor.parent = tankDock
@@ -248,9 +252,19 @@ end
 	
 function OnDeath(player, damage)
 
+	deathListener:Disconnect()
+	pressedListener:Disconnect()
+	releasedListener:Disconnect()
+
 	tankAnchor:Destroy()
 	
-	local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition(), rotation = adjustmentPoint:GetWorldRotation()})
+	if not damage then
+	
+		return
+		
+	end
+	
+	local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition() + Vector3.New(0, 0, -105), rotation = adjustmentPoint:GetWorldRotation()})
 	local destroyedTurret = destroyedTank:FindDescendantByName("Turret")
 	local destroyedCannon = destroyedTank:FindDescendantByName("Cannon")
 	
@@ -268,6 +282,7 @@ function OnDeath(player, damage)
 	
 	destroyedTank.lifeSpan = 5
 	
+	script:Destroy()
 
 end
 
@@ -542,6 +557,8 @@ function OnProjectileImpact(projectile, other, hitresult)
 	
 			local damage = Damage.New(damagePerShot)
 			
+			damage.reason = DamageReason.COMBAT
+			
 			damage.sourcePlayer = tankOwner
 		
 			possibleTank.owner:ApplyDamage(damage)
@@ -620,9 +637,8 @@ function Tick(dt)
 end
 
 function RemoveTank(equipment, player)
-
-	tankAnchor.isEnabled = false
-	tankAnchor:Destroy()
+		
+	OnDeath(tankOwner, nil)
 	
 end
 

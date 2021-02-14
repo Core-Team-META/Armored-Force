@@ -169,7 +169,7 @@ function Tick(dt)
 	
 	reticleUI.visibility = Visibility.INHERIT
 	
-	if reloading then
+	if reloading and reloadSpeed then
 	
 		accumulatedReloadingTime = accumulatedReloadingTime + dt
 		

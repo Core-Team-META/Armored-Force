@@ -1,4 +1,4 @@
-﻿local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local victoryComponent = script:GetCustomProperty("GAMESTATE_VictoryComponent"):WaitForObject()
 
 local victoryAndEarningsUI = script:GetCustomProperty("VictoryAndEarningsUI"):WaitForObject()
@@ -28,6 +28,8 @@ local killXPValue = victoryComponent:GetCustomProperty("KillXPValue")
 local killCurrencyValue = victoryComponent:GetCustomProperty("KillCurrencyValue")
 
 local localPlayer = Game.GetLocalPlayer()
+
+local localTeam = 0
 
 local winner = -1
 
@@ -139,12 +141,18 @@ function RollUpNumberText(textXP, targetXP, textCurrency, targetCurrency)
 	
 end
 
+function SaveTeam()
+
+	localTeam = localPlayer.team
+	
+end
+
 function ShowStatisticsAnimation()
 
 	local baseXP = 0
 	local baseCurrency = 0
 	
-	if winner == localPlayer.team then
+	if winner == localTeam then
 	
 		baseXP = victoryXPValue
 		baseCurrency= victoryCurrencyValue
@@ -167,6 +175,8 @@ function ShowStatisticsAnimation()
 	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
 
 end
+
+Game.roundStartEvent:Connect(SaveTeam)
 
 Events.Connect("WINNERclient", SetWinner)
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
