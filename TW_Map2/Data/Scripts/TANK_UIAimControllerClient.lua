@@ -63,6 +63,12 @@ end
 
 function ReloadAnimation(player, reloadTime)
 
+	if player ~= localPlayer then
+	
+		return
+		
+	end
+
 	spinPoint1.rotationAngle = 0
 	spinPoint2.rotationAngle = 0	
 

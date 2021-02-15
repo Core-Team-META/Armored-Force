@@ -1,4 +1,4 @@
-﻿local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 
@@ -26,7 +26,7 @@ function StateSTART(manager, propertyName)
 			ReliableEvents.BroadcastToAllPlayers("WINNERclient", leadTeam)
 			ReliableEvents.Broadcast("WINNER", leadTeam)
 			
-			print("reset")
+			_G["GameWinner"] = leadTeam
 			
 			for x, p in pairs(Game.GetPlayers()) do
 				
