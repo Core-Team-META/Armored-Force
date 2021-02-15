@@ -93,3 +93,5 @@ function OnGameStateChanged(gsm, property)
     end
     
 end
+
+gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)

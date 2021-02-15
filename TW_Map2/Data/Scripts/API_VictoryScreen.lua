@@ -257,8 +257,8 @@ function API.OnPlayerRestored(victoryScreen, player, data)
 
 	end
 
-	player.movementControlMode = data.originalMovementControlMode
-	player.lookControlMode = data.originalLookControlMode 
+	--player.movementControlMode = data.originalMovementControlMode
+	--player.lookControlMode = data.originalLookControlMode 
 	
 	if(respawnOnDeactivate) then
 		player:Respawn()

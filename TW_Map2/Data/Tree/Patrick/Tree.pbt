@@ -1084,7 +1084,13 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ViewRange"
-      Int: 15000
+      Int: 20000
+    }
+    Overrides {
+      Name: "cs:GameStateManager"
+      ObjectReference {
+        SelfId: 11780312844661875871
+      }
     }
     Overrides {
       Name: "cs:P1"
@@ -10702,6 +10708,12 @@ Objects {
       Name: "cs:ComponentRoot"
       ObjectReference {
         SelfId: 12380728060821448012
+      }
+    }
+    Overrides {
+      Name: "cs:GameStateManager"
+      ObjectReference {
+        SelfId: 11780312844661875871
       }
     }
   }

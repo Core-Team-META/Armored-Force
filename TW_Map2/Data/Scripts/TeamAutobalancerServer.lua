@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 Copyright 2019 Manticore Games, Inc. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -17,6 +17,8 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
+
+local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
 
 -- User exposed properties
 local TEAM_COUNT = COMPONENT_ROOT:GetCustomProperty("TeamCount")
@@ -38,6 +40,7 @@ end
 
 -- nil Tick(float)
 -- Watch team sizes and enforce autobalance. We only switch one player per frame.
+
 function Tick(deltaTime)
 	local teamSizes = {}
 
@@ -71,8 +74,10 @@ function Tick(deltaTime)
 		end
 	end
 
-	if #tooBigTeams == 0 then
+	if #tooBigTeams == 0 or gameStateManager:GetCustomProperty("GameState") == "MATCHSTATE" then
+	
 		return
+		
 	end
 
 	-- Find players who can be swapped
@@ -97,13 +102,10 @@ function Tick(deltaTime)
 	end
 end
 
+
 -- nil OnRoundEnd()
 -- Scrambles the teams if the creator wants
-function OnRoundEnd()
-	if not SCRAMBLE_AT_ROUND_END then
-		return
-	end
-
+function ScrambleTeams()
 	local unassignedPlayers = Game.GetPlayers()
 	local unassignedPlayerCount = #unassignedPlayers
 	local minTeamSize = unassignedPlayerCount // TEAM_COUNT
@@ -133,5 +135,22 @@ function OnRoundEnd()
 	end
 end
 
+function OnGameStateChanged(gsm, property)
+
+	if property ~= "GameState" then
+	
+		return
+		
+	end
+	
+	local newState = gameStateManager:GetCustomProperty(property)
+	
+    if newState == "LOBBYSTATE" then
+        
+        ScrambleTeams()       
+    end
+    
+end
+
 -- Initialize
-Game.roundEndEvent:Connect(OnRoundEnd)
+gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)

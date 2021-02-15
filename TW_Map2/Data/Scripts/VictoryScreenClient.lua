@@ -8,20 +8,12 @@
 
 --]]
 
-local GT_API
-repeat
-
-    GT_API = _G.META_GAME_MODES
-    Task.Wait()
-    
-until GT_API
-
-local ABGS = require(script:GetCustomProperty("APIBasicGameState"))
-
 ------------------------------------------------------------------------------------------------------------------------
 --	OBJECTS AND REFERENCES
 ------------------------------------------------------------------------------------------------------------------------
 local RootGroup = script:GetCustomProperty("Root"):WaitForObject()
+
+local gameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitForObject()
 
 local Container = script:GetCustomProperty("Container"):WaitForObject()
 
@@ -179,14 +171,22 @@ local function GetProperty(value, options)
 	return options[1]
 end
 
-function OnGameStateChanged(oldState, newState, hasDuration, time)
 
-    if newState == ABGS.GAME_STATE_ROUND_VOTING and oldState ~= ABGS.GAME_STATE_ROUND_VOTING then
+function OnGameStateChanged(gsm, property)
+
+	if property ~= "GameState" then
+	
+		return
+		
+	end
+	
+	local newState = gameStateManager:GetCustomProperty(property)
+	
+    if newState == "VOTINGSTATE" then
         
-        RestoreFromPodium()
-                
+        RestoreFromPodium()       
     end
-   
+    
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -199,4 +199,4 @@ WINNER_SORT_TYPE = GetProperty(WINNER_SORT_TYPE, WINNER_SORT_TYPES)
 --	Connect events appropriately
 --Events.Connect("SendToVictoryScreen", SendToVictoryScreen)
 Game.roundEndEvent:Connect(SendToVictoryScreen)
-Events.Connect("GameStateChanged", OnGameStateChanged)
+gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)

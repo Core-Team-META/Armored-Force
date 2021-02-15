@@ -1,9 +1,13 @@
 local viewRange = script:GetCustomProperty("ViewRange")
+local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
+
 
 local spottingList = {}
 local viewPointList = {}
 
 local damageOverride ={}
+
+local spottingTask = nil
 
 -- other modified scripts to support spotting: NameplateControllerClient, Minimap
 
@@ -125,9 +129,15 @@ function SetViewPoint(player)
 	
 end
 
-function Tick()
+function CheckForSpotting()
 
 	local playerList = Game.GetPlayers()
+	
+	if gameStateManager:GetCustomProperty("GameState") ~= "MATCHSTATE" then
+	
+		return
+		
+	end
 	
 	for x, p in pairs(playerList) do
 	
@@ -200,9 +210,7 @@ function OnDamaged(player, damage)
 	
 	damageOverride[player.id] = nil
 	
-end
-
-	
+end	
 
 function OnJoin(player)
 
@@ -210,4 +218,34 @@ function OnJoin(player)
 	
 end
 
+function OnGameStateChanged(gsm, property)
+
+	if property ~= "GameState" then
+	
+		return
+		
+	end
+	
+	local newState = gameStateManager:GetCustomProperty(property)
+	
+    if newState == "MATCHSTATE" then
+        
+        if not spottingTask then
+        
+        	spottingTask = Task.Spawn(CheckForSpotting)
+        	spottingTask.repeatCount = -1
+        	spottingTask.repeatInterval = 1
+        	
+        end
+        
+    elseif spottingTask then
+    
+    	spottingTask:Cancel()
+    	spottingTask = nil
+    	
+    end
+    
+end
+
 Game.playerJoinedEvent:Connect(OnJoin)
+gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
