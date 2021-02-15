@@ -1,7 +1,5 @@
 local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
 
-local PlayerKilledEvent = script:GetCustomProperty("PlayerKilledEvent")
-
 local YourNemesisText = script:GetCustomProperty("YourNemesisText"):WaitForObject()
 local YourNemesisKillsText = script:GetCustomProperty("YourNemesisKillsText"):WaitForObject()
 
@@ -12,113 +10,33 @@ local rollTextTickSFX = script:GetCustomProperty("RollTextTickSFX")
 
 local localPlayer = Game.GetLocalPlayer()
 
-local nemesisIndex = {}
-
-local resetting = false
-
 local youAreNemesisOf = ""
-local yourKillCountAsNemesis = 0
-	
+local yourDamageCountAsNemesis = 0
+local countOfBeingNemesis = 0
+		
 local yourNemesisIs = ""
-local yourNemesisKillCount = 0
+local yourNemesisDamgeCount = 0
+local countOfYourNemesis = 0
 
 local letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}
 
-function GetPlayer(playerId)
-	
-	local playerList = Game.GetPlayers()
-	
-	for _, player in pairs(playerList) do
-	
-		if player.id == playerId then
-		
-			return player 
-			
-		end
-		
-	end
-	
-	return nil
+function SaveAsNemeis(nemesisOf, damageCountAsNemesis, beingNemesis)
 
-end
-
-function TrackKill(killer, victim)
-
-	if resetting then
+	youAreNemesisOf = nemesisOf
+	yourDamageCountAsNemesis = damageCountAsNemesis
+	countOfBeingNemesis = beingNemesis
 	
-		return
-		
-	end
-
-	if not nemesisIndex[victim.id] then
-	
-		nemesisIndex[victim.id] = {}
-		
-	end
-	
-	if not nemesisIndex[victim.id][killer.id] then
-	
-		nemesisIndex[victim.id][killer.id] = 1
-		
-	else 
-	
-		nemesisIndex[victim.id][killer.id] = nemesisIndex[victim.id][killer.id] + 1
-		
-	end
-	
-	--print(killer.name .. " killed " .. victim.name .. " " .. tostring(nemesisIndex[victim.id][killer.id]) .. " times.")
-
-end
-
-function RemoveFromTable(player)
-
-	for victim, killerList in pairs(nemesisIndex) do
-	
-		for killer, killCount in pairs(killerList) do
-		
-			if player.id == killer then
-			
-				killerList[killer] = nil
-				
-			end
-		
-		end
-		
-		if player.id == victim then
-		
-			for killer, killCount in pairs(killerList) do
-			
-				killerList[killer] = nil
-			
-			end	
-			
-			nemesisIndex[victim] = nil
-			
-		end
-		
-	end
+	--print("NEMESIS OF " .. youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more with " .. tostring(yourDamageCountAsNemesis) .. " damage")
 	
 end
 
-function CleanNemesisTable()
+function SaveYourNemesis(nemesisIs, nemesisDamageCount, yourNemesis)
 
-	resetting = true
-
-	for victim, killerList in pairs(nemesisIndex) do
+	yourNemesisIs = nemesisIs
+	yourNemesisDamgeCount = nemesisDamageCount
+	countOfYourNemesis = yourNemesis
 	
-		for killer, killCount in pairs(killerList) do
-		
-			killerList[killer] = nil
-		
-		end
-		
-		nemesisIndex[victim] = nil
-		
-	end
-	
-	nemesisIndex = {}
-	
-	resetting = false
+	--print("NEMESIS IS " .. yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more with " .. tostring(yourNemesisDamgeCount) .. " damage")
 	
 end
 
@@ -139,7 +57,7 @@ function AnimateYourNemesis()
 			YourNemesisText.text = displayText .. letters[math.random(1, #letters)]
 			
 			
-			if displayKillCount < yourNemesisKillCount then
+			if displayKillCount < yourNemesisDamgeCount then
 			
 				displayKillCount = displayKillCount + 1
 				
@@ -166,7 +84,7 @@ function AnimateYourNemesis()
 	
 	YourNemesisText.text = yourNemesisIs
 	
-	YourNemesisKillsText.text = tostring(yourNemesisKillCount)
+	YourNemesisKillsText.text = tostring(yourNemesisDamgeCount)
 		
 		
 end
@@ -187,7 +105,7 @@ function AnimateYouAsNemesis()
 			NemesisOfText.text = displayText .. letters[math.random(1, #letters)]
 			
 			
-			if displayKillCount < yourKillCountAsNemesis then
+			if displayKillCount < yourDamageCountAsNemesis then
 			
 				displayKillCount = displayKillCount + 1
 				
@@ -214,98 +132,22 @@ function AnimateYouAsNemesis()
 	
 	NemesisOfText.text = youAreNemesisOf
 	
-	NemesisOfKillsText.text = tostring(yourKillCountAsNemesis)
+	NemesisOfKillsText.text = tostring(yourDamageCountAsNemesis)
 		
 		
 end
 
 function ShowNemesis()
-
-	local nemesisList = {}
-
-	local selectedNemesis = nil
-	local nemesisKills = 0
-	local otherNemesisCount = 0
-	
-	youAreNemesisOf = ""
-	yourKillCountAsNemesis = 0
-	local countOfBeingNemesis = 0
-	
-	yourNemesisIs = ""
-	yourNemesisKillCount = 0
-
-	-- Calculate who is the nemeis of who
-	for victim, killerList in pairs(nemesisIndex) do
-	
-		selectedNemesis = nil
-		
-		nemesisKills = 0
-		otherNemesisCount = 0
-	
-		for killer, killCount in pairs(killerList) do
-		
-			if killCount > nemesisKills then
-			
-				nemesisKills = killCount
-				
-				selectedNemesis = killer 
-				
-			end
-		
-		end
-		
-		if selectedNemesis then
-		
-			for killer, killCount in pairs(killerList) do
-			
-				if killCount == nemesisKills then
-				
-					otherNemesisCount = otherNemesisCount + 1					
-				end
-			
-			end
-			
-			otherNemesisCount = otherNemesisCount - 1 -- removing the same nemesis from count
-			
-			table.insert(nemesisList, {selectedNemesis, victim, otherNemesisCount, nemesisKills})
-					
-		end
-							
-	end
 	
 	-- create string to show your nemesis and who you are the nemesis of
-	
-	for _, entry in pairs(nemesisList) do
-		
-		if entry[1] == localPlayer.id and GetPlayer(entry[2]) then
-		
-			youAreNemesisOf = GetPlayer(entry[2]).name
+					
+	if countOfYourNemesis and countOfYourNemesis > 0 then
 			
-			yourKillCountAsNemesis = entry[4]
-			
-		elseif entry[1] == localPlayer.id and youAreNemesisOf then
-		
-			countOfBeingNemesis = countOfBeingNemesis + 1
-			
-		end
-		
-		if entry[2] == localPlayer.id then
-		
-			yourNemesisIs = GetPlayer(entry[1]).name
-			
-			yourNemesisKillCount = entry[4]
-			
-			if entry[3] > 0 then
-			
-				yourNemesisIs = GetPlayer(entry[1]).name .. " + " .. tostring(entry[3]) .. " more"
-				
-			end
-			
-		end
+		yourNemesisIs = yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more"
 	
 	end
-	
-	if countOfBeingNemesis > 0 then
+				
+	if countOfBeingNemesis and countOfBeingNemesis > 0 then
 	
 		youAreNemesisOf = youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more"
 		
@@ -315,7 +157,7 @@ function ShowNemesis()
 	
 	Task.Wait(1)
 	
-	if yourNemesisIs and localPlayer.deaths > 0 then
+	if yourNemesisIs then
 	
 		Task.Spawn(AnimateYourNemesis)
 		
@@ -326,7 +168,7 @@ function ShowNemesis()
 		
 	end
 	
-	if youAreNemesisOf and localPlayer.kills > 0 then
+	if youAreNemesisOf then
 	
 		Task.Spawn(AnimateYouAsNemesis)
 		
@@ -361,8 +203,6 @@ function OnGameStateChanged(gsm, property)
         YourNemesisText.text = ""
         YourNemesisKillsText.text = "0"
         
-        CleanNemesisTable()
-        
     end
 end
 
@@ -372,8 +212,7 @@ NemesisOfKillsText.text = "0"
 YourNemesisText.text = ""
 YourNemesisKillsText.text = "0"
 
-Events.Connect(PlayerKilledEvent, TrackKill)
-
-Game.playerLeftEvent:Connect(RemoveFromTable)
+Events.Connect("NEMESISOF", SaveAsNemeis)
+Events.Connect("YOURNEMESIS", SaveYourNemesis)
 
 gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)

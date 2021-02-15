@@ -234,8 +234,6 @@ function API.OnPlayerTeleported(victoryScreen, player,  topThreePlayerStats, dur
 
 	Task.Wait()
 
-	--SendBroadcast(player, "SendToVictoryScreen", victoryScreen:GetReference().id) -- topThreePlayerStats
-
 	if(duration > 0) then
 		tasks[player] = Task.Spawn(function()
 			API.OnPlayerRestored(victoryScreen, player, data)
@@ -268,7 +266,7 @@ function API.OnPlayerRestored(victoryScreen, player, data)
 		tasks[player] = nil
 	end
 	Task.Wait()
-	player.lookControlMode = data.originalLookControlMode 
+	--player.lookControlMode = data.originalLookControlMode 
 end
 
 --	nil API.TeleportPlayers(CoreObject, table)

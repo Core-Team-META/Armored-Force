@@ -6,16 +6,22 @@
 	VOTINGSTATE
 	VICTORYSTATE
 	
-	]]
+	]]--
 
 local matchMaxDuration = script:GetCustomProperty("MatchMaxDuration")
 local victoryMaxDuration = script:GetCustomProperty("VictoryMaxDuration")
 local statsMaxDuration = script:GetCustomProperty("StatsMaxDuration")
 
+local tankSettings = script:GetCustomProperty("TankSettings"):WaitForObject()
+
+_G["DefaultPlayerSetting"] = tankSettings
+
 local timer = 0
 local timerTask = nil
 
 local currentState = nil
+
+_G["GameWinner"] = 0
 	
 function OnChangeState(previousState)
 
