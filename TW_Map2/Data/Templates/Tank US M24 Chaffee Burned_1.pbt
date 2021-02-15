@@ -1,6 +1,6 @@
 Assets {
-  Id: 4168862517978651661
-  Name: "Tank US M24 Chaffee Burned"
+  Id: 415270528703766185
+  Name: "Tank US M24 Chaffee Burned_1"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

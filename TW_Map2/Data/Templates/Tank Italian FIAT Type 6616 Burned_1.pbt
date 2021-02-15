@@ -1,6 +1,6 @@
 Assets {
-  Id: 5188450975083681844
-  Name: "Tank Italian FIAT Type 6616 Burned"
+  Id: 6261709663710860535
+  Name: "Tank Italian FIAT Type 6616 Burned_1"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
