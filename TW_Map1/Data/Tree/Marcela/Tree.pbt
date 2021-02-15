@@ -17,10 +17,10 @@ Objects {
     }
   }
   ParentId: 14661672776697705088
-  ChildIds: 15675031751638322843
-  ChildIds: 1867845932664675522
-  ChildIds: 15580699878811397109
-  ChildIds: 10467833139781241508
+  ChildIds: 9281685767578070870
+  ChildIds: 6996214906362392880
+  ChildIds: 9905011231677558992
+  ChildIds: 1360136318189309686
   ChildIds: 8645535735349200116
   ChildIds: 207346394154054039
   ChildIds: 14565455642912987815
@@ -55,7 +55,7 @@ Objects {
   ChildIds: 2302956926240093962
   ChildIds: 17128915443598922104
   ChildIds: 1570489478016461564
-  ChildIds: 7459271383945580726
+  ChildIds: 4508582064090277198
   ChildIds: 8707145364647424683
   ChildIds: 3616140900073625458
   ChildIds: 14580728506635847110
@@ -367,9 +367,16 @@ Objects {
   }
 }
 Objects {
-  Id: 7459271383945580726
-  Name: "windmill_merged"
+  Id: 4508582064090277198
+  Name: "windmill2_merged"
   Transform {
+    Location {
+      X: -30684.3789
+      Y: 8736.64746
+      Z: 35.3288269
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -377,13 +384,19 @@ Objects {
     }
   }
   ParentId: 3008154843558529630
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 12339031325220020147
+      key: 5024972979897396711
       value {
         Overrides {
           Name: "Name"
-          String: "windmill_merged"
+          String: "windmill2_merged"
         }
         Overrides {
           Name: "Position"
@@ -396,13 +409,20 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -90
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1645818606374011234
+      Id: 10059635664342194509
     }
   }
 }
@@ -2064,137 +2084,16 @@ Objects {
   }
 }
 Objects {
-  Id: 10467833139781241508
-  Name: "windmill_merged"
+  Id: 1360136318189309686
+  Name: "windmill2_merged"
   Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
+    Location {
+      X: 5072.65527
+      Y: -6193.53125
+      Z: 369.941132
     }
-  }
-  ParentId: 3008154843558529630
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12339031325220020147
-      value {
-        Overrides {
-          Name: "Name"
-          String: "windmill_merged"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -32309.4063
-            Y: 12970.7578
-            Z: 35.3288116
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-      }
+    Rotation {
     }
-    TemplateAsset {
-      Id: 1645818606374011234
-    }
-  }
-}
-Objects {
-  Id: 15580699878811397109
-  Name: "windmill_merged"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3008154843558529630
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12339031325220020147
-      value {
-        Overrides {
-          Name: "Name"
-          String: "windmill_merged"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3447.62695
-            Y: -1959.42188
-            Z: 429.154572
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.176569209
-            Y: 0.176569209
-            Z: 0.176569209
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1645818606374011234
-    }
-  }
-}
-Objects {
-  Id: 1867845932664675522
-  Name: "windmill_merged"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3008154843558529630
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12339031325220020147
-      value {
-        Overrides {
-          Name: "Name"
-          String: "windmill_merged"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2692.08594
-            Y: -33280.6445
-            Z: 137.749863
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1645818606374011234
-    }
-  }
-}
-Objects {
-  Id: 15675031751638322843
-  Name: "windmill_merged"
-  Transform {
     Scale {
       X: 1
       Y: 1
@@ -2210,11 +2109,191 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 12339031325220020147
+      key: 5024972979897396711
       value {
         Overrides {
           Name: "Name"
-          String: "windmill_merged"
+          String: "windmill2_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -32309.4063
+            Y: 12970.7578
+            Z: 35.3288116
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10059635664342194509
+    }
+  }
+}
+Objects {
+  Id: 9905011231677558992
+  Name: "windmill2_merged"
+  Transform {
+    Location {
+      X: 4317.11328
+      Y: -37514.7539
+      Z: 137.749863
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5024972979897396711
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill2_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4218.41797
+            Y: -768.488281
+            Z: 633.813843
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10059635664342194509
+    }
+  }
+}
+Objects {
+  Id: 6996214906362392880
+  Name: "windmill2_merged"
+  Transform {
+    Location {
+      X: 31269.9141
+      Y: -48624.1758
+      Z: 136.133499
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5024972979897396711
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill2_merged"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2404.85986
+            Y: -33348.7305
+            Z: 210.550095
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10059635664342194509
+    }
+  }
+}
+Objects {
+  Id: 9281685767578070870
+  Name: "windmill2_merged"
+  Transform {
+    Location {
+      X: -1198.68469
+      Y: 4517.19922
+      Z: 0.000244140625
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3008154843558529630
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5024972979897396711
+      value {
+        Overrides {
+          Name: "Name"
+          String: "windmill2_merged"
         }
         Overrides {
           Name: "Position"
@@ -2227,13 +2306,20 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -89.9999924
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1645818606374011234
+      Id: 10059635664342194509
     }
   }
 }

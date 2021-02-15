@@ -79,7 +79,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 17946750202376556990
+        Id: 10319545819119413275
       }
     }
     Overrides {
@@ -247,7 +247,7 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate34"
       AssetReference {
-        Id: 2032040731084366664
+        Id: 10771373388982281392
       }
     }
     Overrides {
@@ -418,6 +418,8 @@ Objects {
   ChildIds: 1404432386272218393
   ChildIds: 14964428639824968681
   ChildIds: 2111208023520803178
+  ChildIds: 16323918614972207937
+  ChildIds: 17269604726405602932
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -435,6 +437,236 @@ Objects {
       }
     }
     Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17269604726405602932
+  Name: "Self Death"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4166206054906016552
+  ChildIds: 4654116124048344974
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 113
+    Height: 40
+    UIX: 1045.03418
+    UIY: 586.334778
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 0.010993043
+        G: 0.830000043
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4654116124048344974
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17269604726405602932
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 113
+    Height: 40
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Z = Self Death"
+      Color {
+        R: 0.010993043
+        G: 0.830000043
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16323918614972207937
+  Name: "Self Death"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4166206054906016552
+  ChildIds: 8087875549330798869
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 113
+    Height: 40
+    UIX: -1.39611816
+    UIY: 208.829086
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 0.010993043
+        G: 0.830000043
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8087875549330798869
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16323918614972207937
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 113
+    Height: 40
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Z = Self Death"
+      Color {
+        R: 0.010993043
+        G: 0.830000043
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -3529,7 +3761,7 @@ Objects {
     Text {
       Label: "Crtl + 7 = Italian FIAT Type 6616"
       Color {
-        R: 0.0109931417
+        R: 0.010993043
         G: 0.830000043
         A: 1
       }
