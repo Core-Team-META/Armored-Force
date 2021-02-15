@@ -28,8 +28,12 @@ function OnDamagedRecord(player, damage)
 end
 
 function OnStartResetStatistics()
-
-	player:SetResource("TankDamage", 0)
+	
+	for _, p in pairs(Game.GetPlayers()) do
+	
+		p:SetResource("TankDamage", 0)
+		
+	end
 	
 end
 
