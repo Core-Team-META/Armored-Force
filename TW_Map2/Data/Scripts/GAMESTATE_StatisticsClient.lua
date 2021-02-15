@@ -1,5 +1,5 @@
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
-local victoryComponent = script:GetCustomProperty("GAMESTATE_VictoryComponent"):WaitForObject()
+local statisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
 
 local victoryAndEarningsUI = script:GetCustomProperty("VictoryAndEarningsUI"):WaitForObject()
 
@@ -16,22 +16,96 @@ local killCurrencyAmountText = script:GetCustomProperty("KillCurrencyAmountText"
 local totalText = script:GetCustomProperty("TotalText"):WaitForObject()
 local totalXPAmountText = script:GetCustomProperty("TotalXPAmountText"):WaitForObject()
 local totalCurrencyAmountText = script:GetCustomProperty("TotalCurrencyAmountText"):WaitForObject()
+local totalDamageAmountText = script:GetCustomProperty("TotalDamageAmountText"):WaitForObject()
 
+local rollTextTickSFX = script:GetCustomProperty("RollTextTickSFX")
 
-local victoryMaxDuration = mainGameStateManager:GetCustomProperty("VictoryMaxDuration")
-
-local victoryXPValue = victoryComponent:GetCustomProperty("VictoryXPValue")
-local victoryCurrencyValue = victoryComponent:GetCustomProperty("VictoryCurrencyValue")
-local lossXPValue = victoryComponent:GetCustomProperty("LossXPValue")
-local lossCurrencyValue = victoryComponent:GetCustomProperty("LossCurrencyValue")
-local killXPValue = victoryComponent:GetCustomProperty("KillXPValue")
-local killCurrencyValue = victoryComponent:GetCustomProperty("KillCurrencyValue")
+local victoryXPValue = statisticsComponent:GetCustomProperty("VictoryXPValue")
+local victoryCurrencyValue = statisticsComponent:GetCustomProperty("VictoryCurrencyValue")
+local lossXPValue = statisticsComponent:GetCustomProperty("LossXPValue")
+local lossCurrencyValue = statisticsComponent:GetCustomProperty("LossCurrencyValue")
+local killXPValue = statisticsComponent:GetCustomProperty("KillXPValue")
+local killCurrencyValue = statisticsComponent:GetCustomProperty("KillCurrencyValue")
 
 local localPlayer = Game.GetLocalPlayer()
 
 local localTeam = 0
 
 local winner = -1
+
+function SetChildrenText(uiObj,_text) -- <-- generic children text function by AJ
+    if Object.IsValid(uiObj) and uiObj:IsA("UIText") then
+        uiObj.text = _text
+    end
+
+    for i,v in ipairs(uiObj:GetChildren()) do
+        if v:IsA("UIText") then
+            SetChildrenText(v,_text)
+        end
+    end
+
+end
+
+function CountThisTextUp(givenText, targetNumber, extra, allowTickSFX)
+
+	if targetNumber == 0 then
+	
+		SetChildrenText(givenText, extra .. "0")
+		
+		return nil
+		
+	end
+	
+	passComplete = false
+	passToTask = {givenText, targetNumber, extra, allowTickSFX}
+
+	local task = Task.Spawn(function()
+	
+		local givenText = passToTask[1]
+		local targetNumber = passToTask[2]
+		local extra = passToTask[3]
+		local allowTickSFX = passToTask[4]
+		
+		passComplete = true
+
+		for i = 1, targetNumber, math.ceil(targetNumber/5) do
+		
+			givenText.text = extra .. tostring(i)
+			
+			SetChildrenText(givenText, givenText.text)
+			
+			if allowTickSFX then
+			
+				local tickSFX = World.SpawnAsset(rollTextTickSFX)
+				
+				tickSFX.lifeSpan = 1
+				
+			end			
+			Task.Wait(0.05)
+			
+		end
+		
+		SetChildrenText(givenText, extra .. tostring(targetNumber))
+	
+	end, 0)
+	
+	while not passComplete do
+	
+		Task.Wait()
+		
+	end
+	
+	for i, x in pairs(passToTask) do
+	
+		passToTask[i] = nil
+		
+	end
+	
+	passToTask = {}
+	
+	return task
+
+end
 
 function CalculateTotalXP(player)
 
@@ -83,7 +157,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "VICTORYSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "STATSSTATE" then
 	
 		winner = -1
 	
@@ -173,6 +247,8 @@ function ShowStatisticsAnimation()
 	RollUpNumberText(killXPAmountText, localPlayer.kills * killXPValue, killCurrencyAmountText, localPlayer.kills * killCurrencyValue)
 
 	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
+	
+	CountThisTextUp(totalDamageAmountText, localPlayer:GetResource("TankDamage"), "", true)
 
 end
 

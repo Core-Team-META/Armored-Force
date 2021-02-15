@@ -10,6 +10,7 @@
 
 local matchMaxDuration = script:GetCustomProperty("MatchMaxDuration")
 local victoryMaxDuration = script:GetCustomProperty("VictoryMaxDuration")
+local statsMaxDuration = script:GetCustomProperty("StatsMaxDuration")
 
 local timer = 0
 local timerTask = nil
@@ -48,6 +49,14 @@ function OnChangeState(previousState)
 		SetTimer(victoryMaxDuration)
 		
 	elseif previousState == "VICTORYSTATE" then
+	
+		script:SetNetworkedCustomProperty("GameState", "STATSSTATE")
+		
+		currentState = "STATSSTATE"	
+		
+		SetTimer(statsMaxDuration)		
+		
+	elseif previousState == "STATSSTATE" then
 	
 		script:SetNetworkedCustomProperty("GameState", "VOTINGSTATE")
 		

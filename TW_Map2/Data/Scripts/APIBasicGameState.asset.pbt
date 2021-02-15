@@ -1,6 +1,6 @@
 Assets {
-  Id: 9104653897864604584
-  Name: "GAMESTATE_VictoryClient"
+  Id: 11974742996071064388
+  Name: "APIBasicGameState"
   PlatformAssetType: 3
   TextAsset {
   }

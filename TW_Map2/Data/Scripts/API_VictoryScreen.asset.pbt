@@ -1,6 +1,6 @@
 Assets {
-  Id: 16735746884101318736
-  Name: "GAMESTATE_VictoryServer"
+  Id: 6959767735879787487
+  Name: "API_VictoryScreen"
   PlatformAssetType: 3
   TextAsset {
   }
