@@ -445,7 +445,7 @@ Assets {
         Name: "ServerCollisionTrigger"
         Transform {
           Location {
-            X: -17.9140625
+            X: -45
             Y: 5.32128906
             Z: -45.6200409
           }
@@ -499,8 +499,6 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: -22.2630615
-            Y: 3.95410156
             Z: 117.830444
           }
           Rotation {
@@ -637,7 +635,6 @@ Assets {
         Transform {
           Location {
             X: 165.871826
-            Y: -3.46264648
             Z: 12.5334778
           }
           Rotation {
@@ -763,6 +760,7 @@ Assets {
         Name: "TurretHelper"
         Transform {
           Location {
+            Z: 117.830444
           }
           Rotation {
           }
@@ -790,8 +788,8 @@ Assets {
         Name: "TurretHelperMarker"
         Transform {
           Location {
-            X: 155
-            Z: 125
+            X: 165.871826
+            Z: 12.5334778
           }
           Rotation {
           }
@@ -1748,6 +1746,8 @@ Assets {
         Name: "TurretHelper2"
         Transform {
           Location {
+            X: -22.2630615
+            Z: 117.830444
           }
           Rotation {
           }
@@ -1787,6 +1787,8 @@ Assets {
         Name: "TurretHelperMarker2"
         Transform {
           Location {
+            X: -22.2630615
+            Z: 117.830444
           }
           Rotation {
           }
@@ -2092,8 +2094,7 @@ Assets {
         Name: "Hull"
         Transform {
           Location {
-            X: -80.599
-            Y: 0.044921875
+            X: -102.599
             Z: -2.04852295
           }
           Rotation {
@@ -20673,8 +20674,6 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: -22.2630615
-            Y: 3.95410156
             Z: 117.830444
           }
           Rotation {
@@ -20705,7 +20704,6 @@ Assets {
         Transform {
           Location {
             X: 165.871826
-            Y: -3.46264648
             Z: 12.5334778
           }
           Rotation {
