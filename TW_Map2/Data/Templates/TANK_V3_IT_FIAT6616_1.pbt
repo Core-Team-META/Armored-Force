@@ -7,7 +7,7 @@ Assets {
       RootId: 14708714259620756992
       Objects {
         Id: 14708714259620756992
-        Name: "TANK_V3_IT_FIAT6616"
+        Name: "TANK_V3_IT_FIAT6616_1"
         Transform {
           Scale {
             X: 1
@@ -498,7 +498,6 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: 0.414550781
             Z: 99.7637787
           }
           Rotation {
@@ -761,6 +760,7 @@ Assets {
         Name: "TurretHelper"
         Transform {
           Location {
+            Z: 99.7637787
           }
           Rotation {
           }
@@ -1746,6 +1746,8 @@ Assets {
         Name: "TurretHelper2"
         Transform {
           Location {
+            X: 0.414550781
+            Z: 99.7637787
           }
           Rotation {
           }
@@ -1785,6 +1787,8 @@ Assets {
         Name: "TurretHelperMarker2"
         Transform {
           Location {
+            X: 0.414550781
+            Z: 99.7637787
           }
           Rotation {
           }
@@ -2202,7 +2206,7 @@ Assets {
       }
       Objects {
         Id: 3357925070406801951
-        Name: "wheel"
+        Name: "Wheel"
         Transform {
           Location {
             X: -341.736694
@@ -2356,6 +2360,32 @@ Assets {
           }
         }
         ParentId: 11587968681626716686
+        ChildIds: 14897052506980145645
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14897052506980145645
+        Name: "Wheel"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12139944639405010117
         ChildIds: 5431048901966607627
         ChildIds: 3674014562970204109
         Collidable_v2 {
@@ -2373,8 +2403,9 @@ Assets {
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 0.000366210938
-            Y: -21.7128906
+            X: 0.000335693359
+            Y: -21.7129059
+            Z: 3.81469727e-06
           }
           Rotation {
           }
@@ -2384,7 +2415,7 @@ Assets {
             Z: 0.918786764
           }
         }
-        ParentId: 12139944639405010117
+        ParentId: 14897052506980145645
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2439,11 +2470,12 @@ Assets {
         Name: "Tire Worn"
         Transform {
           Location {
-            X: 0.000366210938
+            X: 0.000335693359
             Y: 21.7124023
+            Z: 3.81469727e-06
           }
           Rotation {
-            Roll: -89.9999847
+            Roll: -89.9999771
           }
           Scale {
             X: 1.14384127
@@ -2451,7 +2483,7 @@ Assets {
             Z: 1.14384127
           }
         }
-        ParentId: 12139944639405010117
+        ParentId: 14897052506980145645
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2552,6 +2584,32 @@ Assets {
           }
         }
         ParentId: 477185037445511711
+        ChildIds: 16523592162891399031
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 16523592162891399031
+        Name: "Wheel"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1590536610249373000
         ChildIds: 14819794767176631162
         ChildIds: 1117686202970014370
         Collidable_v2 {
@@ -2569,18 +2627,18 @@ Assets {
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 0.000139629061
-            Y: -21.7123184
+            X: 0.00013962909
+            Y: -21.7123241
           }
           Rotation {
           }
           Scale {
-            X: 0.918786764
-            Y: 0.899450839
-            Z: 0.918786764
+            X: 0.918786824
+            Y: 0.899450898
+            Z: 0.918786824
           }
         }
-        ParentId: 1590536610249373000
+        ParentId: 16523592162891399031
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2635,19 +2693,19 @@ Assets {
         Name: "Tire Worn"
         Transform {
           Location {
-            X: 0.000139629061
-            Y: 21.7128773
+            X: 0.00013962909
+            Y: 21.7128811
           }
           Rotation {
-            Roll: -89.9999924
+            Roll: -89.9999847
           }
           Scale {
-            X: 1.14384115
-            Y: 1.14384115
-            Z: 1.14384115
+            X: 1.14384127
+            Y: 1.14384127
+            Z: 1.14384127
           }
         }
-        ParentId: 1590536610249373000
+        ParentId: 16523592162891399031
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -16179,7 +16237,6 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: 0.414550781
             Z: 99.7637787
           }
           Rotation {

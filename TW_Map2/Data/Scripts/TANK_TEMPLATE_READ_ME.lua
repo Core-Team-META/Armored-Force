@@ -14,13 +14,13 @@
 		
 		-	AdjustmentPoint
 		
-			-	Turret --> same root group from V1/V2 Template
+			-	Turret --> same root group from V1/V2 Template (Recommended to keep position in z; x and y should be zero)
 			
 				-	ClientCollisionTrigger --> same root position/rotation/scale as old trigger from V1/V2
 				
 				-	TurretGeo (put turret visuals here)
 				
-				-	Cannon --> same root group from V1/V2 Template
+				-	Cannon --> same root group from V1/V2 Template (NOTE: only x and z movement allowed for cannon relative to turret; y should be zero)
 				
 					-	MantletGeo (put mantlet visuals here)
 					
@@ -36,7 +36,7 @@
 						
 						-	FlashVFX
 						
-			-	Hull  --> same root group from V1/V2 Template
+			-	Hull  --> same root group from V1/V2 Template (Recommended to keep position in x and Z; y should be zero)
 			
 				-	ClientCollisionTrigger --> same root position/rotation/scale as old trigger from V1/V2
 				
@@ -108,7 +108,9 @@
 						
 						-	MuzzleMarker --> move to tip of the barrel
 				
-				-	TurretHelper
+				-	TurretHelper --> Set same position as Turret
+				
+					-	TurretHelperMarker --> Set same position as Cannon
 				
 				-	ServerContext2
 				
@@ -123,6 +125,10 @@
 						-	SuspensionUnit --> (mirror)
 						
 						-	SuspensionUnit
+						
+					-	TurretHelper2 --> same pivot position as Turret
+					
+					-	TurretHelperMarker2 --> same pivot position as Turret
 						
 	Custom properties for tweaking behavior is in the equipment group itself (root group).
 	

@@ -102,6 +102,10 @@ function Test(player, binding)
 	
 		player:Die()
 		
+	elseif binding == "ability_extra_10" and currentState == "LOBBYSTATE" then
+		
+		player:Respawn()
+		
 	end
 	
 end

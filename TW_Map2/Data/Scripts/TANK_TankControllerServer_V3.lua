@@ -257,7 +257,9 @@ function OnDeath(player, damage)
 	releasedListener:Disconnect()
 
 	if Object.IsValid(tankAnchor) then
-	tankAnchor:Destroy()
+	
+		tankAnchor:Destroy()
+	
 	end
 	
 	if not damage then
