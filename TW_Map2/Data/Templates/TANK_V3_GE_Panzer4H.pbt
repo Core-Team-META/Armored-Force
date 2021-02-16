@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6287158418646489580
+        ParentId: 4781671109827199097
         ChildIds: 17511246918635329035
         ChildIds: 12521857954563173254
         ChildIds: 9462303786273229782
@@ -27,19 +27,19 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 4
+            Float: 8
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 2.5
+            Float: 6
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
-            Int: 18
+            Int: 10
           }
           Overrides {
             Name: "cs:UpgradedTraverse"
-            Int: 22
+            Int: 20
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 20
+            Int: 60
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 40
+            Int: 75
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 200
+            Int: 550
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 300
+            Int: 750
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -103,11 +103,15 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 450
           }
           Overrides {
             Name: "cs:UpgradedTopSpeed"
-            Int: 1250
+            Int: 750
+          }
+          Overrides {
+            Name: "cs:ReverseSpeed"
+            Int: 190
           }
           Overrides {
             Name: "cs:Acceleration"
@@ -115,7 +119,7 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedAcceleration"
-            Int: 1000
+            Int: 700
           }
           Overrides {
             Name: "cs:HullTraverseSpeed"
@@ -159,11 +163,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TankID"
-            String: "CHAF"
+            String: "PZ4H"
           }
           Overrides {
             Name: "cs:TankType"
-            String: "LIGHT"
+            String: "MEDIUM"
           }
           Overrides {
             Name: "cs:VehicleTierValue"

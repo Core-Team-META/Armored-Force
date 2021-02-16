@@ -54,6 +54,8 @@ local upgradedHitpoints = tankEquipment:GetCustomProperty("UpgradedHitpoints")
 local defaultTopSpeed = tankEquipment:GetCustomProperty("TopSpeed")
 local upgradedTopSpeed = tankEquipment:GetCustomProperty("UpgradedTopSpeed")
 
+local reverseSpeed = tankEquipment:GetCustomProperty("ReverseSpeed")
+
 local defaultAcceleration = tankEquipment:GetCustomProperty("Acceleration")
 local upgradedAcceleration = tankEquipment:GetCustomProperty("UpgradedAcceleration")
 
@@ -295,6 +297,7 @@ function BindingPressed(player, action)
 	if action == "ability_extra_21" then -- forward
 	
 		controlTracker[1] = true
+		player.maxWalkSpeed = topSpeed
 		
 	elseif action == "ability_extra_30" then -- left
 	
@@ -303,6 +306,7 @@ function BindingPressed(player, action)
 	elseif action == "ability_extra_31" then -- back
 	
 		controlTracker[3] = true
+		player.maxWalkSpeed = reverseSpeed
 		
 	elseif action == "ability_extra_32" then -- right
 	
