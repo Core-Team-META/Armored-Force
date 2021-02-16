@@ -27,11 +27,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 4
+            Float: 3
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 2.5
+            Float: 2
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 200
+            Int: 250
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 300
+            Int: 350
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -103,15 +103,15 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 900
           }
           Overrides {
             Name: "cs:UpgradedTopSpeed"
-            Int: 1250
+            Int: 1200
           }
           Overrides {
             Name: "cs:ReverseSpeed"
-            Int: 200
+            Int: 450
           }
           Overrides {
             Name: "cs:Acceleration"
@@ -163,7 +163,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TankID"
-            String: "CHAF"
+            String: "LEOP"
           }
           Overrides {
             Name: "cs:TankType"
@@ -171,7 +171,7 @@ Assets {
           }
           Overrides {
             Name: "cs:VehicleTierValue"
-            Int: 1
+            Int: 2
           }
         }
         WantsNetworking: true
@@ -870,7 +870,7 @@ Assets {
         Transform {
           Location {
             Y: 194.669403
-            Z: -170.335327
+            Z: -175
           }
           Rotation {
           }
@@ -1313,7 +1313,7 @@ Assets {
         Transform {
           Location {
             Y: -194.669
-            Z: -170.335327
+            Z: -175
           }
           Rotation {
           }
