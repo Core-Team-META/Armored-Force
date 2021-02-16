@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6287158418646489580
+        ParentId: 4781671109827199097
         ChildIds: 4733999321410215535
         ChildIds: 11920127332711823268
         ChildIds: 11190674412672611179
@@ -108,6 +108,10 @@ Assets {
           Overrides {
             Name: "cs:UpgradedTopSpeed"
             Int: 1250
+          }
+          Overrides {
+            Name: "cs:ReverseSpeed"
+            Int: 200
           }
           Overrides {
             Name: "cs:Acceleration"

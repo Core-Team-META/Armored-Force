@@ -110,6 +110,10 @@ Assets {
             Int: 1250
           }
           Overrides {
+            Name: "cs:ReverseSpeed"
+            Int: 300
+          }
+          Overrides {
             Name: "cs:Acceleration"
             Int: 500
           }

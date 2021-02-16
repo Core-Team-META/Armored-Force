@@ -22,21 +22,35 @@ local letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'
 
 function SaveAsNemeis(nemesisOf, damageCountAsNemesis, beingNemesis)
 
+	if not nemesisOf or not damageCountAsNemesis then
+	
+		youAreNemesisOf = ""
+	
+		return
+		
+	end
+
 	youAreNemesisOf = nemesisOf
 	yourDamageCountAsNemesis = damageCountAsNemesis
 	countOfBeingNemesis = beingNemesis
 	
-	--print("NEMESIS OF " .. youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more with " .. tostring(yourDamageCountAsNemesis) .. " damage")
+	print("NEMESIS OF " .. youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more with " .. tostring(yourDamageCountAsNemesis) .. " damage")
 	
 end
 
 function SaveYourNemesis(nemesisIs, nemesisDamageCount, yourNemesis)
 
+	if not nemesisIs or not nemesisDamageCount then
+	
+		yourNemesisIs = ""
+		
+	end
+	
 	yourNemesisIs = nemesisIs
 	yourNemesisDamgeCount = nemesisDamageCount
 	countOfYourNemesis = yourNemesis
 	
-	--print("NEMESIS IS " .. yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more with " .. tostring(yourNemesisDamgeCount) .. " damage")
+	print("NEMESIS IS " .. yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more with " .. tostring(yourNemesisDamgeCount) .. " damage")
 	
 end
 
@@ -164,7 +178,7 @@ function ShowNemesis()
 	else 
 	
 		YourNemesisText.text = ""
-		YourNemesisKillsText.text = "0"
+		YourNemesisKillsText.text = ""
 		
 	end
 	
@@ -175,7 +189,7 @@ function ShowNemesis()
 	else 
 	
 		NemesisOfText.text = ""
-		NemesisOfKillsText.text = "0"
+		NemesisOfKillsText.text = ""
 		
 	end
 		
