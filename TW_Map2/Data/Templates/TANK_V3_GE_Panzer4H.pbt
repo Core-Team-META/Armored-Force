@@ -103,15 +103,15 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 450
-          }
-          Overrides {
-            Name: "cs:UpgradedTopSpeed"
             Int: 750
           }
           Overrides {
+            Name: "cs:UpgradedTopSpeed"
+            Int: 900
+          }
+          Overrides {
             Name: "cs:ReverseSpeed"
-            Int: 190
+            Int: 300
           }
           Overrides {
             Name: "cs:Acceleration"
@@ -155,7 +155,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TankHeightTweaker"
-            Float: 30
+            Float: 40
           }
           Overrides {
             Name: "cs:TankAngleTweaker"
@@ -869,7 +869,7 @@ Assets {
         Transform {
           Location {
             Y: 201.274231
-            Z: -168.735382
+            Z: -175
           }
           Rotation {
           }
@@ -1312,7 +1312,7 @@ Assets {
         Transform {
           Location {
             Y: -201.274
-            Z: -168.735382
+            Z: -175
           }
           Rotation {
           }
