@@ -15,10 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3008154843558529630
         ChildIds: 9669389152347951419
-        ChildIds: 15975379014221206389
+        ChildIds: 4092048403921180824
         ChildIds: 6173357355698334674
+        ChildIds: 15975379014221206389
         ChildIds: 12428661930301032294
         ChildIds: 8909343198819769012
         ChildIds: 7741329448545015106
@@ -104,9 +105,9 @@ Assets {
         Name: "Wood Wheel Turning Movement Loop 02 SFX"
         Transform {
           Location {
-            X: 278.286133
-            Y: 347.548828
-            Z: 1182.91
+            X: -75.0117188
+            Y: 375.285156
+            Z: 1107.31555
           }
           Rotation {
           }
@@ -138,61 +139,26 @@ Assets {
         }
       }
       Objects {
-        Id: 15975379014221206389
-        Name: "fan"
-        Transform {
-          Location {
-            X: -85
-            Y: 270
-            Z: 1100
-          }
-          Rotation {
-            Yaw: 90
-          }
-          Scale {
-            X: 1.2008301
-            Y: 1.2008301
-            Z: 1.2008301
-          }
-        }
-        ParentId: 5024972979897396711
-        ChildIds: 4092048403921180824
-        ChildIds: 6977407786119649891
-        ChildIds: 9553231945504095832
-        ChildIds: 17493898684466299282
-        ChildIds: 13312783224869580252
-        ChildIds: 4286161561792695928
-        ChildIds: 11407551041037028894
-        ChildIds: 14093293797008629772
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
         Id: 4092048403921180824
         Name: "Cylinder - Chamfered Polished"
         Transform {
           Location {
-            X: -33.0858345
+            X: -85
+            Y: 230.269531
+            Z: 1100
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -89.999939
-            Roll: 89.9999619
+            Pitch: 2.04905664e-05
+            Yaw: 6.03708977e-05
+            Roll: 89.9999466
           }
           Scale {
-            X: 1.25
-            Y: 1.25
-            Z: 0.5
+            X: 1.5010376
+            Y: 1.5010376
+            Z: 0.600415051
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 5024972979897396711
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -241,18 +207,97 @@ Assets {
         }
       }
       Objects {
+        Id: 6173357355698334674
+        Name: "windmill2_anim"
+        Transform {
+          Location {
+            X: -9.05749512
+            Y: -15.6794434
+            Z: 146.078537
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5024972979897396711
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:fan"
+            ObjectReference {
+              SubObjectId: 15975379014221206389
+            }
+          }
+          Overrides {
+            Name: "cs:Ease3D"
+            AssetReference {
+              Id: 1869291580377666123
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5044481199150460928
+          }
+        }
+      }
+      Objects {
+        Id: 15975379014221206389
+        Name: "fan"
+        Transform {
+          Location {
+            X: -85
+            Y: 270
+            Z: 1100
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.2008301
+            Y: 1.2008301
+            Z: 1.2008301
+          }
+        }
+        ParentId: 5024972979897396711
+        ChildIds: 6977407786119649891
+        ChildIds: 9553231945504095832
+        ChildIds: 17493898684466299282
+        ChildIds: 13312783224869580252
+        ChildIds: 4286161561792695928
+        ChildIds: 11407551041037028894
+        ChildIds: 14093293797008629772
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
         Id: 6977407786119649891
         Name: "Cylinder - Chamfered Polished"
         Transform {
           Location {
           }
           Rotation {
-            Yaw: -89.999939
-            Roll: 89.9999695
+            Yaw: 6.27857371e-05
+            Roll: 89.9999542
           }
           Scale {
-            X: 0.5
-            Y: 0.5
+            X: 0.49999997
+            Y: 0.49999997
             Z: 3.75000024
           }
         }
@@ -311,9 +356,9 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: -63.491291
-            Yaw: 123.701645
-            Roll: 149.16951
+            Pitch: -63.4912643
+            Yaw: -146.298279
+            Roll: 149.169449
           }
           Scale {
             X: 0.999999881
@@ -834,7 +879,7 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: -104.338669
+            Yaw: -14.3386955
           }
           Scale {
             X: 0.999999881
@@ -1355,7 +1400,7 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: 104.338852
+            Yaw: -165.661087
             Roll: -179.999954
           }
           Scale {
@@ -1877,8 +1922,8 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: 54.928772
-            Yaw: 115.532066
+            Pitch: 54.9287224
+            Yaw: -154.467941
             Roll: -158.647675
           }
           Scale {
@@ -2400,9 +2445,9 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: -54.9286499
-            Yaw: -115.531548
-            Roll: 21.3519173
+            Pitch: -54.928627
+            Yaw: -25.5314941
+            Roll: 21.3518906
           }
           Scale {
             X: 0.999999881
@@ -2923,9 +2968,9 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: 63.4912148
-            Yaw: -123.701469
-            Roll: -30.8303757
+            Pitch: 63.491169
+            Yaw: -33.7014732
+            Roll: -30.8303661
           }
           Scale {
             X: 0.999999881
@@ -3436,50 +3481,6 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-          }
-        }
-      }
-      Objects {
-        Id: 6173357355698334674
-        Name: "windmill2_anim"
-        Transform {
-          Location {
-            X: -9.05749512
-            Y: -15.6794434
-            Z: 146.078537
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5024972979897396711
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:fan"
-            ObjectReference {
-              SubObjectId: 15975379014221206389
-            }
-          }
-          Overrides {
-            Name: "cs:Ease3D"
-            AssetReference {
-              Id: 1869291580377666123
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 5044481199150460928
           }
         }
       }
