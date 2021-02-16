@@ -104135,7 +104135,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Shadow Bias"
-      Float: 0.377089411
+      Float: 0.119919978
     }
     Overrides {
       Name: "bp:Distance Fadeout Percentage"
