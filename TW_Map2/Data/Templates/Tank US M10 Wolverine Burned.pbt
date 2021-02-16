@@ -1,5 +1,5 @@
 Assets {
-  Id: 18045037759376212374
+  Id: 1618747983464716432
   Name: "Tank US M10 Wolverine Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -24330,7 +24330,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24616,7 +24616,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -32875,7 +32875,7 @@ Assets {
       }
     }
     Assets {
-      Id: 17814718521639562316
+      Id: 3629910274723977117
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -32890,6 +32890,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_scf_crate_hinge_001_ref"
+      }
+    }
+    Assets {
+      Id: 17814718521639562316
+      Name: "Fantasy Shield Strap 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_shield_strap_001"
       }
     }
     Assets {
