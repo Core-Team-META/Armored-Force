@@ -26,7 +26,7 @@ end
 
 function TrackDamage(player, damage)
 
-	if resetting or not damage.sourcePlayer then
+	if resetting or not damage or not damage.sourcePlayer then
 	
 		return
 		
