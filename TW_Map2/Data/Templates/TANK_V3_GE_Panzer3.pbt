@@ -31,15 +31,15 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 2.5
+            Float: 3.5
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
-            Int: 18
+            Int: 14
           }
           Overrides {
             Name: "cs:UpgradedTraverse"
-            Int: 22
+            Int: 18
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 40
+            Int: 60
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 200
+            Int: 250
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 300
+            Int: 350
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -107,11 +107,11 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedTopSpeed"
-            Int: 1250
+            Int: 1000
           }
           Overrides {
             Name: "cs:ReverseSpeed"
-            Int: 200
+            Int: 350
           }
           Overrides {
             Name: "cs:Acceleration"
@@ -123,11 +123,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HullTraverseSpeed"
-            Int: 30
+            Int: 25
           }
           Overrides {
             Name: "cs:UpgradedHullTraverse"
-            Int: 40
+            Int: 35
           }
           Overrides {
             Name: "cs:IsWheeledVehicle"
@@ -163,7 +163,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TankID"
-            String: "CHAF"
+            String: "PZR3"
           }
           Overrides {
             Name: "cs:TankType"
@@ -865,7 +865,7 @@ Assets {
         Transform {
           Location {
             Y: 195.227234
-            Z: -170.78244
+            Z: -175
           }
           Rotation {
           }
@@ -1308,7 +1308,7 @@ Assets {
         Transform {
           Location {
             Y: -195.227
-            Z: -170.78244
+            Z: -175
           }
           Rotation {
           }
