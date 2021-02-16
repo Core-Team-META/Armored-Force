@@ -143,7 +143,7 @@ function CheckForSpotting()
 	
 		SetViewPoint(p)
 	
-		local otherPlayerList = Game.GetPlayers({ignorePlayers = p})
+		local otherPlayerList = Game.GetPlayers({ignoreDead = true, ignorePlayers = p})
 		
 		local spotted = false
 		
