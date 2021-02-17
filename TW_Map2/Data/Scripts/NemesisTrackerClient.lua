@@ -34,7 +34,7 @@ function SaveAsNemeis(nemesisOf, damageCountAsNemesis, beingNemesis)
 	yourDamageCountAsNemesis = damageCountAsNemesis
 	countOfBeingNemesis = beingNemesis
 	
-	print("NEMESIS OF " .. youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more with " .. tostring(yourDamageCountAsNemesis) .. " damage")
+	--print("NEMESIS OF " .. youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more with " .. tostring(yourDamageCountAsNemesis) .. " damage")
 	
 end
 
@@ -50,7 +50,7 @@ function SaveYourNemesis(nemesisIs, nemesisDamageCount, yourNemesis)
 	yourNemesisDamgeCount = nemesisDamageCount
 	countOfYourNemesis = yourNemesis
 	
-	print("NEMESIS IS " .. yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more with " .. tostring(yourNemesisDamgeCount) .. " damage")
+	--print("NEMESIS IS " .. yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more with " .. tostring(yourNemesisDamgeCount) .. " damage")
 	
 end
 
@@ -171,7 +171,7 @@ function ShowNemesis()
 	
 	Task.Wait(1)
 	
-	if yourNemesisIs then
+	if yourNemesisIs and yourNemesisDamgeCount then
 	
 		Task.Spawn(AnimateYourNemesis)
 		
@@ -182,7 +182,7 @@ function ShowNemesis()
 		
 	end
 	
-	if youAreNemesisOf then
+	if youAreNemesisO and yourDamageCountAsNemesis then
 	
 		Task.Spawn(AnimateYouAsNemesis)
 		
