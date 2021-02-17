@@ -1,5 +1,5 @@
 Assets {
-  Id: 3185874187777744382
+  Id: 716652702964836540
   Name: "Tank UK Comet Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -4561,7 +4561,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5193,7 +5193,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9757,7 +9757,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10141,7 +10141,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10234,7 +10234,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10327,7 +10327,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10419,7 +10419,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10511,7 +10511,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10604,7 +10604,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10696,7 +10696,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10789,7 +10789,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10882,7 +10882,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17814718521639562316
+            Id: 3629910274723977117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -29455,7 +29455,7 @@ Assets {
       }
     }
     Assets {
-      Id: 17814718521639562316
+      Id: 3629910274723977117
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -29650,6 +29650,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_pommel_004"
+      }
+    }
+    Assets {
+      Id: 17814718521639562316
+      Name: "Fantasy Shield Strap 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_shield_strap_001"
       }
     }
     Assets {

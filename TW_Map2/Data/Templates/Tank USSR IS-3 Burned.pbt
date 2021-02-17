@@ -1,5 +1,5 @@
 Assets {
-  Id: 17593799750764969533
+  Id: 1616956077389727325
   Name: "Tank USSR IS-3 Burned"
   PlatformAssetType: 5
   TemplateAsset {
