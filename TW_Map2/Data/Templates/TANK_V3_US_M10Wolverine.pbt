@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 70
+            Int: 120
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 100
+            Int: 150
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,7 +91,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 350
+            Int: 450
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"

@@ -27,19 +27,19 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 4
+            Float: 8
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 2.5
+            Float: 8
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
-            Int: 18
+            Int: 20
           }
           Overrides {
             Name: "cs:UpgradedTraverse"
-            Int: 22
+            Int: 30
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
@@ -51,11 +51,11 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxElevationAngle"
-            Int: 20
+            Int: 12
           }
           Overrides {
             Name: "cs:MaxDepressionAngle"
-            Int: -10
+            Int: -8
           }
           Overrides {
             Name: "cs:ProjectileSpeed"
@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 40
+            Int: 70
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 200
+            Int: 1000
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 300
+            Int: 1200
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -103,11 +103,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 600
           }
           Overrides {
             Name: "cs:UpgradedTopSpeed"
-            Int: 1250
+            Int: 700
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -123,11 +123,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HullTraverseSpeed"
-            Int: 30
+            Int: 20
           }
           Overrides {
             Name: "cs:UpgradedHullTraverse"
-            Int: 40
+            Int: 30
           }
           Overrides {
             Name: "cs:IsWheeledVehicle"
@@ -163,15 +163,15 @@ Assets {
           }
           Overrides {
             Name: "cs:TankID"
-            String: "CHAF"
+            String: "T57H"
           }
           Overrides {
             Name: "cs:TankType"
-            String: "LIGHT"
+            String: "HEAVY"
           }
           Overrides {
             Name: "cs:VehicleTierValue"
-            Int: 1
+            Int: 4
           }
         }
         WantsNetworking: true
