@@ -9208,6 +9208,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:GAMESTATE_VotingMachineServer"
+      ObjectReference {
+        SelfId: 17836460304252197412
+      }
+    }
+    Overrides {
       Name: "cs:LastTeamStandingUI"
       ObjectReference {
         SelfId: 7959326404714330478
@@ -9370,6 +9376,16 @@ Objects {
       ObjectReference {
         SelfId: 11780312844661875871
       }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_VotingMachineServer"
+      ObjectReference {
+        SelfId: 17836460304252197412
+      }
+    }
+    Overrides {
+      Name: "cs:GameModeID"
+      String: "LTS"
     }
     Overrides {
       Name: "cs:ReliableEvents"
