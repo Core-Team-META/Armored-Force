@@ -48,6 +48,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
         SelfId: 10186311471389405217
@@ -220,6 +226,33 @@ Objects {
   Script {
     ScriptAsset {
       Id: 888912606947674844
+    }
+  }
+}
+Objects {
+  Id: 15596122869982233875
+  Name: "ResourcePersisterServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8790839518416858328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10603404000379723593
     }
   }
 }

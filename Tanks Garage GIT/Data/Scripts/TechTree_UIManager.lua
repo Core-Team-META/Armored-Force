@@ -138,6 +138,7 @@ end
 function PopulateTank(tank)
  return 
  	{
+		id = tank:GetCustomProperty("ID"),
 		name = tank:GetCustomProperty("Name"),
 		type = tank:GetCustomProperty("Type"),
 		country = tank:GetCustomProperty("Country"),
@@ -170,8 +171,10 @@ function GetTankListBySelectedTeam(teamId)
 	error("Unable to determine team with Id of: [" .. tostring(teamId) .. "]")
 end
 
+-- Need to clean this up for sure, just doing some very basic editing of the UI panel to showcase player's progress for the tank and running out of time for the day :)
 function PopulateTankContentsPanel(panel, tank)
-	for k,v in ipairs(panel:GetChildren()) do
+	local playerTankData = GetPlayerTankData(tank.id)
+	for k,v in ipairs(panel:GetChildren()) do		
 		if(v.name == "Name") then
 			v.text = tank.name
 		elseif(v.name == "Type") then
@@ -179,23 +182,47 @@ function PopulateTankContentsPanel(panel, tank)
 		elseif(v.name == "Country") then
 			-- TODO: Maybe show the country's flag here instead of text. Should be able to create it from UI elements
 			v.text = tank.country
-		elseif(v.name == "ResearchCost") then
-			-- TODO: Need to modify this field based on player's research progress of this tank
-			v.text = tostring(tank.researchCost)
+		elseif(v.name == "ResearchCost") then			
+			if(playerTankData.researched) then
+				v.text = "RESEARCHED"
+			else
+				v.text = tostring(tank.researchCost)
+			end			
 		elseif(v.name == "PurchaseCost") then
-			-- TODO: Need to modify this field based on player's purchase progress of this tank
-			v.text = tostring(tank.purchaseCost)
+			if(playerTankData.purchased) then
+				v.text = "PURCHASED"
+			else
+				v.text = tostring(tank.purchaseCost)
+			end				
 		elseif(v.name == "ResearchWeapon") then
-			-- TODO: Need to modify this button/section based on the player's ownership of this upgrade
-			v.text = tostring(tank.weaponResearchCost) .. "/" .. tostring(tank.weaponPurchaseCost)
+			local researchText = ""
+			if(playerTankData.hasWeapon) then researchText = "R" else researchText = tostring(tank.weaponResearchCost) end
+			local purchaseText = ""
+			if(playerTankData.hasWeapon) then purchaseText = "P" else purchaseText = tostring(tank.weaponPurchaseCost) end
+			v.text = researchText .. "/" .. purchaseText
 		elseif(v.name == "ResearchArmor") then
-			-- TODO: Need to modify this button/section based on the player's ownership of this upgrade
-			v.text = tostring(tank.armorResearchCost) .. "/" .. tostring(tank.armorPurchaseCost)
+			local researchText = ""
+			if(playerTankData.hasArmor) then researchText = "R" else researchText = tostring(tank.armorResearchCost) end
+			local purchaseText = ""
+			if(playerTankData.hasArmor) then purchaseText = "P" else purchaseText = tostring(tank.armorPurchaseCost) end
+			v.text = researchText .. "/" .. purchaseText
 		elseif(v.name == "ResearchMobility") then
-			-- TODO: Need to modify this button/section based on the player's ownership of this upgrade
-			v.text = tostring(tank.mobilityResearchCost) .. "/" .. tostring(tank.mobilityPurchaseCost)
+			local researchText = ""
+			if(playerTankData.hasEngine) then researchText = "R" else researchText = tostring(tank.mobilityResearchCost) end
+			local purchaseText = ""
+			if(playerTankData.hasEngine) then purchaseText = "P" else purchaseText = tostring(tank.mobilityResearchCost) end
+			v.text = researchText .. "/" .. purchaseText
 		end
 	end
+end
+
+function GetPlayerTankData(id)
+	for _, tankEntry in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tankEntry.id == id) then
+			return tankEntry
+		end
+	end
+	return {}
 end
 
 function PopulateUI(selectedTeam)
