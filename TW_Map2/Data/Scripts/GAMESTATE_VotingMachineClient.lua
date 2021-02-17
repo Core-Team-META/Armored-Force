@@ -1,12 +1,17 @@
-﻿local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local votingMachineServer = script:GetCustomProperty("VotingMachineServer"):WaitForObject()
-local matchMapSelection = script:GetCustomProperty("MatchMapSelection"):WaitForObject()
+
+local thisMapSelection = script:GetCustomProperty("ThisMapSelection"):WaitForObject()
+local otherMapsSelection = script:GetCustomProperty("OtherMapsSelection"):WaitForObject()
+
 local votingPanel = script:GetCustomProperty("VotingPanel"):WaitForObject()
+local thisMapPanel = script:GetCustomProperty("ThisMapPanel"):WaitForObject()
+local otherMapsPanel = script:GetCustomProperty("OtherMapsPanel"):WaitForObject()
+
 local timerText = script:GetCustomProperty("TimerText"):WaitForObject()
 
-local mapPanelTemplate = script:GetCustomProperty("MapPanelTemplate")
-local modePanelTemplate = script:GetCustomProperty("ModePanelTemplate")
+local voteButtonEntry = script:GetCustomProperty("GAMESTATE_VoteButtonEntry")
 
 local timerTask = nil
 local newTime = 0
@@ -18,49 +23,52 @@ local matchSelection = {}
 function Initialize()
 
 	local mapTemplate = nil
-	local mapText = nil
+	local mapButton = nil
 	
 	local modeTemplate = nil
-	local modeText = nil
 	local modeButton = nil
 
-	for i, m in pairs(matchMapSelection:GetChildren()) do
-	
-		mapTemplate = World.SpawnAsset(mapPanelTemplate, {parent = votingPanel})
+	for c, v in pairs(otherMapsSelection:GetChildren()) do
 		
-		mapTemplate.x = (i - 1) * 400
-		
-		mapText = mapTemplate:FindDescendantByName("MapText")
-		
-		mapText.text = m.name
-		
-		
-		for c, v in pairs(m:GetChildren()) do
-		
-			modeTemplate = World.SpawnAsset(modePanelTemplate, {parent = mapTemplate})
+		mapTemplate = World.SpawnAsset(voteButtonEntry, {parent = otherMapsPanel})
 			
-			modeTemplate.y = c * 50 + 25
+		mapTemplate.y = c * 110 - 50
+						
+		mapButton = mapTemplate:FindDescendantByName("Button")
 			
-			modeText = modeTemplate:FindDescendantByName("ModeText")
-			
-			modeButton = modeTemplate:FindDescendantByName("ModeButton")
-			
-			modeText.text = v:GetCustomProperty("GamemodeName")
+		mapButton.text = v:GetCustomProperty("MapName")
 		
-			matchSelection[modeButton] = {}
-			matchSelection[modeButton]["ID"] = v:GetCustomProperty("ID")
-			matchSelection[modeButton]["Link"] = v:GetCustomProperty("Link")	
-			matchSelection[modeButton]["Votes"] = 0
+		matchSelection[mapButton] = {}
+		matchSelection[mapButton]["ID"] = v:GetCustomProperty("ID")
+		matchSelection[mapButton]["Votes"] = mapTemplate:FindDescendantByName("VoteCount")
 			
-			modeButton.clickedEvent:Connect(OnButtonClicked)
+		mapButton.clickedEvent:Connect(OnButtonClicked)
 			
-		end
-	
+	end		
+		
+	for c, v in pairs(thisMapSelection:GetChildren()) do
+		
+		modeTemplate = World.SpawnAsset(voteButtonEntry, {parent = thisMapPanel})
+			
+		modeTemplate.y = c * 110 - 50
+			
+		modeButton = modeTemplate:FindDescendantByName("Button")
+			
+		modeButton.text = v:GetCustomProperty("GamemodeName")
+		
+		matchSelection[modeButton] = {}
+		matchSelection[modeButton]["ID"] = v:GetCustomProperty("ID")
+		matchSelection[modeButton]["Votes"] = modeTemplate:FindDescendantByName("VoteCount")
+			
+		modeButton.clickedEvent:Connect(OnButtonClicked)
+			
 	end
 	
 	ToggleUI(votingMachineServer, "ToggleUI")
 	
 	votingMachineServer.networkedPropertyChangedEvent:Connect(ToggleUI)
+	
+	votingPanel.visibility = Visibility.INHERIT
 	
 	votingPanel.isEnabled = false
 
@@ -78,6 +86,12 @@ function UpdateTimerTask()
 	
 		timerText.text = tostring(newTime)
 	
+	end
+	
+	for x, e in pairs(matchSelection) do
+	
+		e["Votes"].text = tostring(votingMachineServer:GetCustomProperty(e["ID"]))
+		
 	end
 	
 end
@@ -107,8 +121,7 @@ function ToggleUI(serverSide, propertyName)
 		
 		for b, p in pairs(matchSelection) do
 		
-			b:SetButtonColor(Color.GRAY)
-			b:SetHoveredColor(Color.GRAY)
+			b.isInteractable = true
 			
 		end
 		
@@ -144,9 +157,7 @@ function OnButtonClicked(button)
 		
 		ReliableEvents.BroadcastToServer("VOTE", vote)
 		
-		button:SetButtonColor(Color.YELLOW)
-		button:SetHoveredColor(Color.YELLOW)
-		
+		button.isInteractable = false		
 	end
 
 end

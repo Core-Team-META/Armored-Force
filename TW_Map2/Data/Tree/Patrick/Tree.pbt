@@ -9815,7 +9815,7 @@ Objects {
 }
 Objects {
   Id: 17880855061900215340
-  Name: "Votng Container"
+  Name: "VotngContainer"
   Transform {
     Location {
     }
@@ -9859,7 +9859,7 @@ Objects {
 }
 Objects {
   Id: 13042494150790343051
-  Name: "Voting Panel"
+  Name: "VotingPanel"
   Transform {
     Location {
     }
@@ -9873,6 +9873,268 @@ Objects {
   }
   ParentId: 17880855061900215340
   ChildIds: 448686044019980080
+  ChildIds: 1226377261356072616
+  ChildIds: 2125009853335819059
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 1050
+    Height: 500
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2125009853335819059
+  Name: "OtherMapsPanel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13042494150790343051
+  ChildIds: 7724591537906154778
+  ChildIds: 13774384839588257539
+  ChildIds: 17871506238701787062
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 500
+    Height: 500
+    UIX: 550
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17871506238701787062
+  Name: "OtherMapButtonPanel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2125009853335819059
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Height: -100
+    UIY: 75
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13774384839588257539
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2125009853335819059
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 300
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Go To Another Map"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 7724591537906154778
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2125009853335819059
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+      }
+      Color {
+        R: 0.07
+        G: 0.07
+        B: 0.07
+        A: 0.9
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1226377261356072616
+  Name: "ThisMapPanel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13042494150790343051
+  ChildIds: 9213318624500099094
+  ChildIds: 4168044845852901980
+  ChildIds: 15318730304496508917
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9892,12 +10154,175 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15318730304496508917
+  Name: "ThisMapButtonPanel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1226377261356072616
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Height: -100
+    UIY: 75
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4168044845852901980
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1226377261356072616
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "DESERT"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9213318624500099094
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1226377261356072616
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+      }
+      Color {
+        R: 0.07
+        G: 0.07
+        B: 0.07
+        A: 0.9
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -9927,7 +10352,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIY: -50
+    UIY: -80
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9984,12 +10409,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:MatchMapSelection"
-      ObjectReference {
-        SelfId: 4406646053662415159
-      }
-    }
-    Overrides {
       Name: "cs:VotingPanel"
       ObjectReference {
         SelfId: 13042494150790343051
@@ -10002,15 +10421,33 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:ModePanelTemplate"
-      AssetReference {
-        Id: 4506362706447568950
+      Name: "cs:ThisMapSelection"
+      ObjectReference {
+        SelfId: 12708554775430560124
       }
     }
     Overrides {
-      Name: "cs:MapPanelTemplate"
+      Name: "cs:OtherMapsSelection"
+      ObjectReference {
+        SelfId: 2423237130596292919
+      }
+    }
+    Overrides {
+      Name: "cs:ThisMapPanel"
+      ObjectReference {
+        SelfId: 1226377261356072616
+      }
+    }
+    Overrides {
+      Name: "cs:OtherMapsPanel"
+      ObjectReference {
+        SelfId: 2125009853335819059
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_VoteButtonEntry"
       AssetReference {
-        Id: 11756793034819136657
+        Id: 1881987999541816789
       }
     }
     Overrides {
@@ -10047,7 +10484,7 @@ Objects {
     }
   }
   ParentId: 17761758692366360147
-  ChildIds: 4017333144620182551
+  ChildIds: 12708554775430560124
   ChildIds: 2423237130596292919
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10061,7 +10498,7 @@ Objects {
 }
 Objects {
   Id: 2423237130596292919
-  Name: "Map2"
+  Name: "OtherMaps"
   Transform {
     Location {
     }
@@ -10074,7 +10511,8 @@ Objects {
     }
   }
   ParentId: 4406646053662415159
-  ChildIds: 8067706937601521631
+  ChildIds: 16250000829067283594
+  ChildIds: 9434423769658235596
   UnregisteredParameters {
     Overrides {
       Name: "cs:MapID"
@@ -10092,8 +10530,8 @@ Objects {
   }
 }
 Objects {
-  Id: 8067706937601521631
-  Name: "Map2 Last Team Standing"
+  Id: 9434423769658235596
+  Name: "Map3"
   Transform {
     Location {
     }
@@ -10108,16 +10546,121 @@ Objects {
   ParentId: 2423237130596292919
   UnregisteredParameters {
     Overrides {
-      Name: "cs:ID"
-      String: "M2:LTS"
+      Name: "cs:MapName"
+      String: "Tundra"
     }
     Overrides {
-      Name: "cs:Link"
-      String: "86190f/tanks-map-2-test"
+      Name: "cs:ID"
+      String: "MAP3"
+    }
+    Overrides {
+      Name: "cs:MapLink"
+      String: "map3link"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1867132674124156237
+    }
+  }
+}
+Objects {
+  Id: 16250000829067283594
+  Name: "Map1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2423237130596292919
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MapName"
+      String: "Fields"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "MAP1"
+    }
+    Overrides {
+      Name: "cs:MapLink"
+      String: "map1link"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1867132674124156237
+    }
+  }
+}
+Objects {
+  Id: 12708554775430560124
+  Name: "ThisMap"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4406646053662415159
+  ChildIds: 12094250578017412579
+  ChildIds: 8543924859907887909
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8543924859907887909
+  Name: "Frontline"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12708554775430560124
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ID"
+      String: "FRT"
     }
     Overrides {
       Name: "cs:GamemodeName"
-      String: "Last Team Standing"
+      String: "Frontline"
     }
   }
   Collidable_v2 {
@@ -10133,40 +10676,8 @@ Objects {
   }
 }
 Objects {
-  Id: 4017333144620182551
-  Name: "Map1"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4406646053662415159
-  ChildIds: 12094250578017412579
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MapID"
-      String: "M1"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
   Id: 12094250578017412579
-  Name: "Map1 Last Team Standing"
+  Name: "Last Team Standing"
   Transform {
     Location {
     }
@@ -10178,15 +10689,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4017333144620182551
+  ParentId: 12708554775430560124
   UnregisteredParameters {
     Overrides {
       Name: "cs:ID"
-      String: "M1:LTS"
-    }
-    Overrides {
-      Name: "cs:Link"
-      String: "5f2d1c/tanks-map-1-test"
+      String: "LTS"
     }
     Overrides {
       Name: "cs:GamemodeName"
@@ -10235,11 +10742,7 @@ Objects {
     }
     Overrides {
       Name: "cs:VoteCountdown"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:ThisGameLink"
-      String: "86190f/tanks-map-2-test"
+      Int: 100
     }
     Overrides {
       Name: "cs:ToggleUI"
@@ -10254,10 +10757,42 @@ Objects {
       Int: 0
     }
     Overrides {
+      Name: "cs:ThisMapSelection"
+      ObjectReference {
+        SelfId: 12708554775430560124
+      }
+    }
+    Overrides {
+      Name: "cs:OtherMapsSelection"
+      ObjectReference {
+        SelfId: 2423237130596292919
+      }
+    }
+    Overrides {
       Name: "cs:ReliableEvents"
       AssetReference {
         Id: 1680988108412715813
       }
+    }
+    Overrides {
+      Name: "cs:VOTECOUNTS"
+      String: "---------------------------------------------------------------"
+    }
+    Overrides {
+      Name: "cs:LTS"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:FRT"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:MAP1"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:MAP3"
+      Int: 0
     }
     Overrides {
       Name: "cs:SelectedMatchID:isrep"
@@ -10269,6 +10804,22 @@ Objects {
     }
     Overrides {
       Name: "cs:ToggleUI:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:LTS:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:FRT:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MAP1:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MAP3:isrep"
       Bool: true
     }
   }

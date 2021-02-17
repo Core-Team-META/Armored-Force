@@ -1,10 +1,11 @@
-﻿local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local mainGameStateManager = script:GetCustomProperty("MainGameStateManager"):WaitForObject()
 
-local matchMapSelection = script:GetCustomProperty("MatchMapSelection"):WaitForObject()
+local thisMapSelection = script:GetCustomProperty("ThisMapSelection"):WaitForObject()
+local otherMapsSelection = script:GetCustomProperty("OtherMapsSelection"):WaitForObject()
+
 local voteCountdown = script:GetCustomProperty("VoteCountdown")
-local thisGameLink = script:GetCustomProperty("ThisGameLink")
 
 local matchSelection = {}
 
@@ -21,18 +22,22 @@ local timer = 0
 local voteListener = nil
 
 function Initialize()
-
-	for x, m in pairs(matchMapSelection:GetChildren()) do
 		
-		for c, v in pairs(m:GetChildren()) do
+	for c, v in pairs(thisMapSelection:GetChildren()) do
 		
-			matchSelection[v:GetCustomProperty("ID")] = {}
-			matchSelection[v:GetCustomProperty("ID")]["ID"] = v:GetCustomProperty("ID")
-			matchSelection[v:GetCustomProperty("ID")]["Link"] = v:GetCustomProperty("Link")	
-			matchSelection[v:GetCustomProperty("ID")]["Votes"] = 0
+		matchSelection[v:GetCustomProperty("ID")] = {}
+		matchSelection[v:GetCustomProperty("ID")]["ID"] = v:GetCustomProperty("ID")
+		matchSelection[v:GetCustomProperty("ID")]["Votes"] = 0
 			
-		end
+	end
 	
+	for c, v in pairs(otherMapsSelection:GetChildren()) do
+		
+		matchSelection[v:GetCustomProperty("ID")] = {}
+		matchSelection[v:GetCustomProperty("ID")]["ID"] = v:GetCustomProperty("ID")
+		matchSelection[v:GetCustomProperty("ID")]["Votes"] = 0
+		matchSelection[v:GetCustomProperty("ID")]["Link"] = v:GetCustomProperty("MapLink")
+			
 	end
 
 end
@@ -42,6 +47,8 @@ function SetVote(player, vote)
 	if not voteTracker[player] then
 	
 		voteTracker[player] = vote
+		
+		matchSelection[vote]["Votes"] = matchSelection[vote]["Votes"] + 1
 		
 		print("Vote Recieved")
 	end
@@ -78,7 +85,7 @@ function StateSTART(manager, propertyName)
 	
 	checkerTask = Task.Spawn(VoteCheckTask)
 	checkerTask.repeatCount = -1
-	checkerTask.repeatInterval = 1
+	checkerTask.repeatInterval = 0.5
 	
 end
 
@@ -93,6 +100,7 @@ function StateEND()
 	for c, m in pairs(matchSelection) do
 	
 		m["Votes"] = 0
+		script:SetNetworkedCustomProperty(c, 0)
 		
 	end
 		
@@ -123,50 +131,35 @@ function TallyVotes()
 	
 	for c, m in pairs(matchSelection) do
 	
-		if not selectedMatch then
+		if not selectedMatch and not m["Link"] then
 		
 			selectedMatch = m
 			
-		end
-		
-		if selectedMatch["Votes"] < m["Votes"] then
+		elseif selectedMatch and selectedMatch["Votes"] < m["Votes"] and not m["Link"] then
 		
 			selectedMatch = m
 			
 		end
 		
 	end
-	
-	if selectedMatch["Votes"] == 0 then
-	
-		for c, m in pairs(matchSelection) do	
-		
-			if m["Link"] == thisGameLink then
-			
-				selectedMatch = m 
-				
-			end
-			
-		end
-		
-	end
-		
 	
 	script:SetNetworkedCustomProperty("SelectedMatchID", selectedMatch["ID"])
 	
-	Task.Wait(5)
+	print(selectedMatch["ID"] .. " selected.")
 	
-	if  selectedMatch["Link"] ~= thisGameLink then
+	for i, p in pairs(playerList) do
 	
-		for i, p in pairs(playerList) do
+		print(voteTracker[p])
 		
-			--p:TransferToGame(selectedMatch["Link"])
+		if voteTracker[p] and matchSelection[voteTracker[p]] and matchSelection[voteTracker[p]]["Link"] then
 			
-			print("Sending " .. p.name .. "to " .. selectedMatch["ID"] .. " : " .. selectedMatch["Link"])
-		
+			print("Sending " .. p.name .. "to " .. matchSelection[voteTracker[p]]["Link"])
+			
 		end
 		
 	end
+	
+	Task.Wait(5)
 	
 	script:SetNetworkedCustomProperty("SelectedMatchID", "")
 	
@@ -176,7 +169,13 @@ end
 
 function VoteCheckTask()
 
-	script:SetNetworkedCustomProperty("Timer", timer)
+	for c, m in pairs(matchSelection) do
+	
+		script:SetNetworkedCustomProperty(m["ID"], m["Votes"])
+		
+	end
+
+	script:SetNetworkedCustomProperty("Timer", math.ceil(timer/5))
 	
 	local count = 0
 	
@@ -193,7 +192,7 @@ function VoteCheckTask()
 		checkerTask:Cancel()
 		
 	end
-	
+		
 	timer = timer - 1
 
 end
