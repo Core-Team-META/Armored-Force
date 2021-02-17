@@ -1,6 +1,6 @@
 Assets {
-  Id: 14773812306848060375
-  Name: "GAMESTATE_MatchGameLink"
+  Id: 1867132674124156237
+  Name: "GAMESTATE_OtherMapEntry"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -9,11 +9,11 @@ Assets {
         String: ""
       }
       Overrides {
-        Name: "cs:GamemodeName"
+        Name: "cs:MapName"
         String: ""
       }
       Overrides {
-        Name: "cs:Link"
+        Name: "cs:MapLink"
         String: ""
       }
     }
