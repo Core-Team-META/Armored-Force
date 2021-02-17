@@ -640,8 +640,8 @@ Assets {
         Name: "Cannon"
         Transform {
           Location {
-            X: -11.9046631
-            Z: 77.7603455
+            X: -37.3905029
+            Z: 123.652924
           }
           Rotation {
           }
@@ -652,8 +652,8 @@ Assets {
           }
         }
         ParentId: 10211886250566312998
-        ChildIds: 8989174227226243612
         ChildIds: 11120805164625302512
+        ChildIds: 8989174227226243612
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -666,13 +666,57 @@ Assets {
         }
       }
       Objects {
+        Id: 11120805164625302512
+        Name: "MuzzleMarker"
+        Transform {
+          Location {
+            X: 961.044189
+            Y: -1.76870728
+            Z: -56.3978577
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+        ParentId: 11021243129181344931
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 8989174227226243612
         Name: "ServerCollisionTrigger"
         Transform {
           Location {
-            X: 515.03186
+            X: 540.5177
             Y: -1.60632312
-            Z: -10.1051941
+            Z: -55.9977722
           }
           Rotation {
           }
@@ -720,50 +764,6 @@ Assets {
         }
       }
       Objects {
-        Id: 11120805164625302512
-        Name: "MuzzleMarker"
-        Transform {
-          Location {
-            X: 935.55835
-            Y: -1.76870728
-            Z: -10.5052795
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 0.3
-          }
-        }
-        ParentId: 11021243129181344931
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 15981703425198466741
         Name: "TurretHelper"
         Transform {
@@ -772,6 +772,7 @@ Assets {
             Z: 111.347076
           }
           Rotation {
+            Yaw: 180
           }
           Scale {
             X: 1
@@ -797,10 +798,12 @@ Assets {
         Name: "TurretHelperMarker"
         Transform {
           Location {
-            X: -11.9046631
-            Z: 77.7603455
+            X: 37.3904877
+            Y: -8.91459e-06
+            Z: 123.652924
           }
           Rotation {
+            Yaw: 179.999985
           }
           Scale {
             X: 1
@@ -18775,7 +18778,6 @@ Assets {
         ParentId: 9291908972825796611
         ChildIds: 5518524363780922004
         ChildIds: 17511642177304334374
-        ChildIds: 18195838235939428623
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -19416,8 +19418,8 @@ Assets {
         Name: "Cannon"
         Transform {
           Location {
-            X: -11.9046631
-            Z: 77.7603455
+            X: -37.3905029
+            Z: 123.652924
           }
           Rotation {
           }
@@ -19428,6 +19430,7 @@ Assets {
           }
         }
         ParentId: 1493373892168903431
+        ChildIds: 18195838235939428623
         ChildIds: 13484943397253078102
         ChildIds: 6651502216992194657
         Collidable_v2 {
@@ -19441,12 +19444,47 @@ Assets {
         }
       }
       Objects {
+        Id: 18195838235939428623
+        Name: "ClientCollisionTrigger"
+        Transform {
+          Location {
+            X: -81.5789795
+            Y: -1.55017078
+            Z: -51.3269348
+          }
+          Rotation {
+          }
+          Scale {
+            X: 5.71849346
+            Y: 3.89462757
+            Z: 1.39488304
+          }
+        }
+        ParentId: 17511642177304334374
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 13484943397253078102
         Name: "MantletGeo"
         Transform {
           Location {
+            X: 25.4858398
             Y: -1.55017078
-            Z: -10.4465637
+            Z: -56.3391418
           }
           Rotation {
           }
@@ -23679,9 +23717,9 @@ Assets {
         Name: "BarrelGeo"
         Transform {
           Location {
-            X: 789.574463
+            X: 815.060303
             Y: -1.55017078
-            Z: -16.0014343
+            Z: -61.8940125
           }
           Rotation {
           }
@@ -24640,9 +24678,9 @@ Assets {
         Name: "FiringFX"
         Transform {
           Location {
-            X: 935.55835
+            X: 961.044189
             Y: -1.76870728
-            Z: -10.5052795
+            Z: -56.3978577
           }
           Rotation {
           }
@@ -24773,9 +24811,9 @@ Assets {
         Name: "ClientCollisionTrigger"
         Transform {
           Location {
-            X: 515.03186
+            X: 540.5177
             Y: -1.60632312
-            Z: -10.1051941
+            Z: -55.9977722
           }
           Rotation {
           }
@@ -24786,40 +24824,6 @@ Assets {
           }
         }
         ParentId: 6651502216992194657
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
-        Id: 18195838235939428623
-        Name: "ClientCollisionTrigger"
-        Transform {
-          Location {
-            X: -118.969482
-            Y: -1.55017078
-            Z: 72.3259888
-          }
-          Rotation {
-          }
-          Scale {
-            X: 5.71849346
-            Y: 3.89462757
-            Z: 1.39488304
-          }
-        }
-        ParentId: 1493373892168903431
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }

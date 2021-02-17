@@ -23,6 +23,7 @@ Objects {
   ChildIds: 9479035303955472683
   ChildIds: 6589618948939414272
   ChildIds: 2908182587629757492
+  ChildIds: 16845821704358254168
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,6 +33,49 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 16845821704358254168
+  Name: "TANK_V3_US_T57"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17162125698513342292
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_V3_US_T57"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5735118847553925817
+    }
   }
 }
 Objects {
