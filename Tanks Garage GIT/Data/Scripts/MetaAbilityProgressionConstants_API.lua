@@ -45,6 +45,16 @@ API.REWARDS = {
     SILVER = 2
 }
 
+-- TECH TREE PROGRESS POSITION PLACEMENTS
+API.TECH_TREE_POSITION = {
+    TANKID = 1,
+    RESEARCHED = 2,
+    PURCHASED = 3,
+    HASWEAPON = 4,
+    HASARMOR = 5,
+    HASENGINE = 6
+}
+
 ------------------------------------------------------------------------------------------------------------------------
 -- RESOURCE NAMES
 ------------------------------------------------------------------------------------------------------------------------
