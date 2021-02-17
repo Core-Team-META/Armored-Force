@@ -27,19 +27,19 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 4
+            Float: 12
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 2.5
+            Float: 10
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
-            Int: 18
+            Int: 17
           }
           Overrides {
             Name: "cs:UpgradedTraverse"
-            Int: 22
+            Int: 23
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
@@ -51,7 +51,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxElevationAngle"
-            Int: 20
+            Int: 40
           }
           Overrides {
             Name: "cs:MaxDepressionAngle"
@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 20
+            Int: 100
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 40
+            Int: 120
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 200
+            Int: 900
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 300
+            Int: 1100
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -103,11 +103,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 800
+            Int: 600
           }
           Overrides {
             Name: "cs:UpgradedTopSpeed"
-            Int: 1250
+            Int: 700
           }
           Overrides {
             Name: "cs:ReverseSpeed"
@@ -163,15 +163,15 @@ Assets {
           }
           Overrides {
             Name: "cs:TankID"
-            String: "CHAF"
+            String: "LOWE"
           }
           Overrides {
             Name: "cs:TankType"
-            String: "LIGHT"
+            String: "HEAVY"
           }
           Overrides {
             Name: "cs:VehicleTierValue"
-            Int: 1
+            Int: 4
           }
         }
         WantsNetworking: true
