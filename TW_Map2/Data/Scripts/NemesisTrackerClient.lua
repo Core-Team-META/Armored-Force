@@ -34,7 +34,7 @@ function SaveAsNemeis(nemesisOf, damageCountAsNemesis, beingNemesis)
 	yourDamageCountAsNemesis = damageCountAsNemesis
 	countOfBeingNemesis = beingNemesis
 	
-	--print("NEMESIS OF " .. youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more with " .. tostring(yourDamageCountAsNemesis) .. " damage")
+	print("NEMESIS OF " .. youAreNemesisOf .. " + " .. tostring(countOfBeingNemesis) .. " more with " .. tostring(yourDamageCountAsNemesis) .. " damage")
 	
 end
 
@@ -50,7 +50,7 @@ function SaveYourNemesis(nemesisIs, nemesisDamageCount, yourNemesis)
 	yourNemesisDamgeCount = nemesisDamageCount
 	countOfYourNemesis = yourNemesis
 	
-	--print("NEMESIS IS " .. yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more with " .. tostring(yourNemesisDamgeCount) .. " damage")
+	print("NEMESIS IS " .. yourNemesisIs .. " + " .. tostring(countOfYourNemesis) .. " more with " .. tostring(yourNemesisDamgeCount) .. " damage")
 	
 end
 
@@ -73,7 +73,7 @@ function AnimateYourNemesis()
 			
 			if displayKillCount < yourNemesisDamgeCount then
 			
-				displayKillCount = displayKillCount + 1
+				displayKillCount = displayKillCount + 10
 				
 				YourNemesisKillsText.text = tostring(displayKillCount)
 				
@@ -121,7 +121,7 @@ function AnimateYouAsNemesis()
 			
 			if displayKillCount < yourDamageCountAsNemesis then
 			
-				displayKillCount = displayKillCount + 1
+				displayKillCount = displayKillCount + 10
 				
 				NemesisOfKillsText.text = tostring(displayKillCount)
 				
@@ -171,7 +171,7 @@ function ShowNemesis()
 	
 	Task.Wait(1)
 	
-	if yourNemesisIs and yourNemesisDamgeCount then
+	if yourNemesisIs ~= "" and yourNemesisDamgeCount > 0 then
 	
 		Task.Spawn(AnimateYourNemesis)
 		
@@ -182,7 +182,7 @@ function ShowNemesis()
 		
 	end
 	
-	if youAreNemesisO and yourDamageCountAsNemesis then
+	if youAreNemesisOf ~= "" and yourDamageCountAsNemesis > 0 then
 	
 		Task.Spawn(AnimateYouAsNemesis)
 		
