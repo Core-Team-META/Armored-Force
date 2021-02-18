@@ -1,24 +1,30 @@
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
-local lastTeamStandingUI = script:GetCustomProperty("LastTeamStandingUI"):WaitForObject()
+
+local teamBasesUI = script:GetCustomProperty("TeamBasesUI"):WaitForObject()
+
 local allyScore = script:GetCustomProperty("AllyScore"):WaitForObject()
+local allyProgress = script:GetCustomProperty("AllyProgress"):WaitForObject()
+
 local enemyScore = script:GetCustomProperty("EnemyScore"):WaitForObject()
+local enemyProgress = script:GetCustomProperty("EnemyProgress"):WaitForObject()
+
 local timer = script:GetCustomProperty("Timer"):WaitForObject()
+
+local aPointVisual = script:GetCustomProperty("APointVisual"):WaitForObject()
+local bPointVisual = script:GetCustomProperty("BPointVisual"):WaitForObject()
 
 local updateTask = nil
 
 local localPlayer = Game.GetLocalPlayer()local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local votingMachineServer = script:GetCustomProperty("GAMESTATE_VotingMachineServer"):WaitForObject()
-
-local lastTeamStandingUI = script:GetCustomProperty("LastTeamStandingUI"):WaitForObject()
-local allyScore = script:GetCustomProperty("AllyScore"):WaitForObject()
-local enemyScore = script:GetCustomProperty("EnemyScore"):WaitForObject()
-local timer = script:GetCustomProperty("Timer"):WaitForObject()
+local teamBasesServer = script:GetCustomProperty("GAMESTATE_TeamBasesServer"):WaitForObject()
 
 local updateTask = nil
-local gameModeEnabled = true
+local gameModeEnabled = teamBasesServer:GetCustomProperty("DefaultGameMode")
 
 local localPlayer = Game.GetLocalPlayer()
 
+local capLimit = teamBasesServer:GetCustomProperty("CapLimit")
 
 function StateSTART(manager, propertyName)
 
@@ -30,7 +36,10 @@ function StateSTART(manager, propertyName)
 	
 	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCHSTATE" or not gameModeEnabled then
 	
-		lastTeamStandingUI.visibility = Visibility.FORCE_OFF
+		teamBasesUI.visibility = Visibility.FORCE_OFF
+		
+		aPointVisual.visibility = Visibility.FORCE_OFF
+		bPointVisual.visibility = Visibility.FORCE_OFF
 	
 		if updateTask then
 		
@@ -43,7 +52,10 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	lastTeamStandingUI.visibility = Visibility.INHERIT
+	teamBasesUI.visibility = Visibility.INHERIT
+	
+	aPointVisual.visibility = Visibility.INHERIT
+	bPointVisual.visibility = Visibility.INHERIT	
 		
 	updateTask = Task.Spawn(UpdateUITask)
 	updateTask.repeatCount = -1
@@ -53,18 +65,18 @@ end
 
 function CheckGameMode(manager, propertyName)
 
-	if propertyName ~= "SelectedMatchID" or not votingMachineServer:GetCustomProperty("SelectedMatchID") then
+	if propertyName ~= "SelectedMatchID" or votingMachineServer:GetCustomProperty("SelectedMatchID") == "" then
 	
 		return
 		
 	end
 	
-	if votingMachineServer:GetCustomProperty("SelectedMatchID") == mainGameStateManager:GetCustomProperty("GameModeID") then
-	
+	if votingMachineServer:GetCustomProperty("SelectedMatchID") == teamBasesServer:GetCustomProperty("GameModeID") then
+		
 		gameModeEnabled = true
 		
 	else 
-	
+
 		gameModeEnabled = false
 		
 	end
@@ -86,10 +98,16 @@ function UpdateUITask()
 		allyScore.text = tostring(#count1)
 		enemyScore.text = tostring(#count2)
 		
+		allyProgress.progress = teamBasesServer:GetCustomProperty("Team1BaseProgress")/capLimit
+		enemyProgress.progress = teamBasesServer:GetCustomProperty("Team2BaseProgress")/capLimit
+		
 	else 
 	
 		allyScore.text = tostring(#count2)
 		enemyScore.text = tostring(#count1)
+		
+		allyProgress.progress = teamBasesServer:GetCustomProperty("Team2BaseProgress")/capLimit
+		enemyProgress.progress = teamBasesServer:GetCustomProperty("Team1BaseProgress")/capLimit
 		
 	end
 

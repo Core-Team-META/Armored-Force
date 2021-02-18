@@ -114,7 +114,7 @@ function RemovePlayerEquipment(player)
 	if equipment[player] and equipment[player]:IsValid() then
 		equipment[player]:Unequip()
 		
-		Task.Wait(0.1)
+		Task.Wait(0.5)
 
 		-- Have to check IsValid() again, because unequip may have destroyed this equipment
 		if equipment[player]:IsValid() then			
@@ -482,10 +482,9 @@ function OnPlayerRespawned(player)
 		return
 		
 	end
+	
+	GivePlayerEquipment(player)
 
-	if AppliesToPlayersTeam(player) then
-		GivePlayerEquipment(player)
-	end
 end
 
 -- nil OnPlayerJoined(Player)

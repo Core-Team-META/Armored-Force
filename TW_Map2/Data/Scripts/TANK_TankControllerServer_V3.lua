@@ -264,31 +264,29 @@ function OnDeath(player, damage)
 	
 	end
 	
-	if not damage then
-	
-		return
+	if damage then
+		
+		local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition() + Vector3.New(0, 0, -105), rotation = adjustmentPoint:GetWorldRotation()})
+		local destroyedTurret = destroyedTank:FindDescendantByName("Turret")
+		local destroyedCannon = destroyedTank:FindDescendantByName("Cannon")
+		
+		if destroyedTurret then
+		
+			destroyedTurret:SetRotation(turretTraverseMarker:GetRotation())
+			
+		end
+		
+		if destroyedCannon then
+		
+			destroyedCannon:SetRotation(turretElevationMarker:GetRotation())
+			
+		end
+		
+		destroyedTank.lifeSpan = 5
 		
 	end
 	
-	local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition() + Vector3.New(0, 0, -105), rotation = adjustmentPoint:GetWorldRotation()})
-	local destroyedTurret = destroyedTank:FindDescendantByName("Turret")
-	local destroyedCannon = destroyedTank:FindDescendantByName("Cannon")
-	
-	if destroyedTurret then
-	
-		destroyedTurret:SetRotation(turretTraverseMarker:GetRotation())
-		
-	end
-	
-	if destroyedCannon then
-	
-		destroyedCannon:SetRotation(turretElevationMarker:GetRotation())
-		
-	end
-	
-	destroyedTank.lifeSpan = 5
-	
-	script:Destroy()
+	tankEquipment:Destroy()
 
 end
 
