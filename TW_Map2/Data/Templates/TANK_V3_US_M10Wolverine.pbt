@@ -279,7 +279,7 @@ Assets {
           Overrides {
             Name: "cs:TankProjectile01"
             AssetReference {
-              Id: 2662720155207003948
+              Id: 3756726376053742884
             }
           }
           Overrides {

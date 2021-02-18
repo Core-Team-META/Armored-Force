@@ -1,6 +1,6 @@
 Assets {
   Id: 10319545819119413275
-  Name: "TANK_V3_US_M24Chaffee_1"
+  Name: "TANK_V3_US_M24Chaffee"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -279,7 +279,7 @@ Assets {
           Overrides {
             Name: "cs:TankProjectile01"
             AssetReference {
-              Id: 2662720155207003948
+              Id: 3756726376053742884
             }
           }
           Overrides {
@@ -22017,8 +22017,7 @@ Assets {
         Name: "TurretGeo"
         Transform {
           Location {
-            X: -8.35829449
-            Y: -3.49726558
+            X: -8.35742188
             Z: -44.8956299
           }
           Rotation {

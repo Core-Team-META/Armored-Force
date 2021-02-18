@@ -1,3 +1,4 @@
 --[[
-The actual UI needs to be completed. What is here are just placeholders to depict functionality of the UI creation.
+- The actual UI needs to be completed. What is here are just placeholders to depict functionality of the UI creation.
+- Maybe some of the "Helper" functions in TechTree_UIManager could go in a separate Helper API, or moved to the UTIL API.
 --]]

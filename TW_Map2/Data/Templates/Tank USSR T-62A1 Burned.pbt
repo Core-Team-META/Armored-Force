@@ -1,5 +1,5 @@
 Assets {
-  Id: 9358751648156585323
+  Id: 2118376248870002276
   Name: "Tank USSR T-62A1 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -9801,7 +9801,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2048746942450624058
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -10018,7 +10018,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2048746942450624058
+              Id: 14190265191030884417
             }
           }
           Overrides {

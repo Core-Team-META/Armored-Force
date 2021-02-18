@@ -1,5 +1,5 @@
 Assets {
-  Id: 3888276471265043101
+  Id: 6028044853128548708
   Name: "Tank US M48 Patton Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -7516,7 +7516,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2048746942450624058
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -7686,7 +7686,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2048746942450624058
+              Id: 14190265191030884417
             }
           }
           Overrides {

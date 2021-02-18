@@ -1,6 +1,6 @@
 Assets {
   Id: 14823438633197258587
-  Name: "Tank German Jagdtiger Burned_1"
+  Name: "Tank German Jagdtiger Burned"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
