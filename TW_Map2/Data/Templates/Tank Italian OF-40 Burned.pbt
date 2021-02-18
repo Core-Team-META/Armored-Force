@@ -1,5 +1,5 @@
 Assets {
-  Id: 4819393994102459920
+  Id: 7999295844299688900
   Name: "Tank Italian OF-40 Burned"
   PlatformAssetType: 5
   TemplateAsset {

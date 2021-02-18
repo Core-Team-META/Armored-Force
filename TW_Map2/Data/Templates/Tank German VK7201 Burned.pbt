@@ -1,5 +1,5 @@
 Assets {
-  Id: 12009216660487348564
+  Id: 17254530331204344547
   Name: "Tank German VK7201 Burned"
   PlatformAssetType: 5
   TemplateAsset {

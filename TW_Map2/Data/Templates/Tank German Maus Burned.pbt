@@ -1,5 +1,5 @@
 Assets {
-  Id: 15150243857943656454
+  Id: 4170242859529654530
   Name: "Tank German Maus Burned"
   PlatformAssetType: 5
   TemplateAsset {

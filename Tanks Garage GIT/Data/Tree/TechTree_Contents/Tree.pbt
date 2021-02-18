@@ -22,7 +22,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "JAGTIGER"
+      String: "29"
     }
     Overrides {
       Name: "cs:Team"
@@ -121,7 +121,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "E100"
+      String: "28"
     }
     Overrides {
       Name: "cs:Team"
@@ -220,7 +220,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "MAUS"
+      String: "27"
     }
     Overrides {
       Name: "cs:Team"
@@ -319,7 +319,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "STB1"
+      String: "26"
     }
     Overrides {
       Name: "cs:Team"
@@ -418,7 +418,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "E50"
+      String: "25"
     }
     Overrides {
       Name: "cs:Team"
@@ -517,7 +517,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "PROGETO65"
+      String: "24"
     }
     Overrides {
       Name: "cs:Team"
@@ -616,7 +616,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "LOWE"
+      String: "23"
     }
     Overrides {
       Name: "cs:Team"
@@ -709,7 +709,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "TIGER2"
+      String: "22"
     }
     Overrides {
       Name: "cs:Team"
@@ -814,7 +814,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "PANTHER"
+      String: "21"
     }
     Overrides {
       Name: "cs:Team"
@@ -919,7 +919,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "STUG3G"
+      String: "20"
     }
     Overrides {
       Name: "cs:Team"
@@ -1018,7 +1018,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "PANZER4"
+      String: "19"
     }
     Overrides {
       Name: "cs:Team"
@@ -1117,7 +1117,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "CHINU"
+      String: "18"
     }
     Overrides {
       Name: "cs:Team"
@@ -1216,7 +1216,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "LEOPARDVK1602"
+      String: "17"
     }
     Overrides {
       Name: "cs:Team"
@@ -1315,7 +1315,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "PANZER3"
+      String: "16"
     }
     Overrides {
       Name: "cs:Team"
@@ -1408,7 +1408,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "T110E3"
+      String: "15"
     }
     Overrides {
       Name: "cs:Team"
@@ -1507,7 +1507,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "AMX50"
+      String: "14"
     }
     Overrides {
       Name: "cs:Team"
@@ -1606,7 +1606,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "IS7"
+      String: "13"
     }
     Overrides {
       Name: "cs:Team"
@@ -1705,7 +1705,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "T62A1"
+      String: "12"
     }
     Overrides {
       Name: "cs:Team"
@@ -1804,7 +1804,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "M48PATTON"
+      String: "11"
     }
     Overrides {
       Name: "cs:Team"
@@ -1903,7 +1903,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "BATCHAT25T"
+      String: "10"
     }
     Overrides {
       Name: "cs:Team"
@@ -2002,7 +2002,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "1955CHIMERA"
+      String: "09"
     }
     Overrides {
       Name: "cs:Team"
@@ -2101,7 +2101,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "T34H"
+      String: "08"
     }
     Overrides {
       Name: "cs:Team"
@@ -2194,7 +2194,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "Heavy"
+      String: "07"
     }
     Overrides {
       Name: "cs:Team"
@@ -2299,7 +2299,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "COMET"
+      String: "06"
     }
     Overrides {
       Name: "cs:Team"
@@ -2404,7 +2404,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "M10"
+      String: "05"
     }
     Overrides {
       Name: "cs:Team"
@@ -2503,7 +2503,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "T34"
+      String: "04"
     }
     Overrides {
       Name: "cs:Team"
@@ -2602,7 +2602,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "M4A1SHERMAN"
+      String: "03"
     }
     Overrides {
       Name: "cs:Team"
@@ -2701,7 +2701,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "M24CHAFFEE"
+      String: "02"
     }
     Overrides {
       Name: "cs:Team"
@@ -2800,7 +2800,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "M3STUART"
+      String: "01"
     }
     Overrides {
       Name: "cs:Team"
