@@ -1,5 +1,5 @@
 Assets {
-  Id: 1018204401243115869
+  Id: 6077460079880055934
   Name: "Tank Japan Type 74 Burned"
   PlatformAssetType: 5
   TemplateAsset {

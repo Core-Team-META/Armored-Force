@@ -279,7 +279,7 @@ Assets {
           Overrides {
             Name: "cs:TankProjectile01"
             AssetReference {
-              Id: 17272471476671554299
+              Id: 3756726376053742884
             }
           }
           Overrides {
@@ -13620,7 +13620,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14765701233433657155
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -13841,7 +13841,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14765701233433657155
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -14062,7 +14062,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14765701233433657155
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -14284,7 +14284,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14765701233433657155
+              Id: 14190265191030884417
             }
           }
           Overrides {
