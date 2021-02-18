@@ -5,10 +5,26 @@ local votingMachineServer = script:GetCustomProperty("GAMESTATE_VotingMachineSer
 
 local gameModeID = script:GetCustomProperty("GameModeID")
 
+local aCenterPoint = script:GetCustomProperty("ACenterPoint"):WaitForObject()
+local aEdgePoint = script:GetCustomProperty("AEdgePoint"):WaitForObject()
+local bCenterPoint = script:GetCustomProperty("BCenterPoint"):WaitForObject()
+local bEdgePoint = script:GetCustomProperty("BEdgePoint"):WaitForObject()
+
+local defaultGameMode = script:GetCustomProperty("DefaultGameMode")
+
+local aRadius = (aCenterPoint:GetWorldPosition()-aEdgePoint:GetWorldPosition()).size
+local bRadius = (bCenterPoint:GetWorldPosition()-bEdgePoint:GetWorldPosition()).size
+
 local playerCountTask = nil
-local gameModeEnabled = true
+local gameModeEnabled = defaultGameMode
 
 local leadTeam = 0
+local aCapProgress = 0
+local bCapProgress = 0
+
+local damageListeners = {}
+
+local capLimit = script:GetCustomProperty("CapLimit")
 
 function StateSTART(manager, propertyName)
 
@@ -20,12 +36,15 @@ function StateSTART(manager, propertyName)
 	
 	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCHSTATE" or not gameModeEnabled then
 	
+		aCapProgress = 0
+		bCapProgress = 0
+	
 		if playerCountTask then
 		
 			playerCountTask:Cancel()
 			playerCountTask = nil
 			
-			Task.Wait(1)
+			Task.Wait(0.1)
 			
 			ReliableEvents.BroadcastToAllPlayers("WINNERclient", leadTeam)
 			ReliableEvents.Broadcast("WINNER", leadTeam)
@@ -34,6 +53,7 @@ function StateSTART(manager, propertyName)
 			
 			for x, p in pairs(Game.GetPlayers()) do
 				
+				damageListeners[p.id]:Disconnect()
 				p:Respawn()
 					
 			end
@@ -47,7 +67,8 @@ function StateSTART(manager, propertyName)
 	end
 	
 	for x, p in pairs(Game.GetPlayers()) do
-	
+		
+		damageListeners[p.id] = p.damagedEvent:Connect(ReduceCapOnDamaged)
 		p:Respawn()
 		
 	end
@@ -62,7 +83,7 @@ end
 
 function CheckGameMode(manager, propertyName)
 
-	if propertyName ~= "SelectedMatchID" or not votingMachineServer:GetCustomProperty("SelectedMatchID") then
+	if propertyName ~= "SelectedMatchID" or votingMachineServer:GetCustomProperty("SelectedMatchID") == "" then
 	
 		return
 		
@@ -70,12 +91,76 @@ function CheckGameMode(manager, propertyName)
 	
 	if votingMachineServer:GetCustomProperty("SelectedMatchID") == gameModeID then
 	
+		print("frontline enabled")
+	
 		gameModeEnabled = true
 		
 	else 
-	
+		print("frontline disabled")
 		gameModeEnabled = false
 		
+	end
+	
+end
+
+function ReduceCapOnDamaged(player, damage)
+
+	if (player:GetWorldPosition() - aCenterPoint:GetWorldPosition()).size <= aRadius and player.team ~= 1 then
+	
+		aCapProgress = aCapProgress - 10
+		
+		if aCapProgress < 0 then 
+		
+			aCapProgress = 0
+			
+		end 
+		
+	elseif (player:GetWorldPosition() - bCenterPoint:GetWorldPosition()).size <= aRadius and player.team ~= 2 then
+	
+		bCapProgress = bCapProgress - 10
+		
+		if bCapProgress < 0 then 
+		
+			bCapProgress = 0
+			
+		end 
+		
+	end	
+		
+
+end
+
+function CheckCapPoints()
+	
+	local aPointPlayerList = Game.FindPlayersInCylinder(aCenterPoint:GetWorldPosition(), aRadius, {ignoreDead = true, includeTeams = 2})
+	local aPointContestList = Game.FindPlayersInCylinder(aCenterPoint:GetWorldPosition(), aRadius, {ignoreDead = true, includeTeams = 1})
+	
+	local bPointPlayerList = Game.FindPlayersInCylinder(bCenterPoint:GetWorldPosition(), bRadius, {ignoreDead = true, includeTeams = 1})
+	local bPointContestList = Game.FindPlayersInCylinder(bCenterPoint:GetWorldPosition(), bRadius, {ignoreDead = true, includeTeams = 2})
+	
+	if #aPointPlayerList > 0 and #aPointContestList == 0 then
+	
+		aCapProgress = aCapProgress + 1
+		
+	end	
+	
+	if #bPointPlayerList > 0 and #bPointContestList == 0 then
+	
+		bCapProgress = bCapProgress + 1
+		
+	end
+	
+	script:SetNetworkedCustomProperty("Team2BaseProgress", aCapProgress)
+	script:SetNetworkedCustomProperty("Team1BaseProgress", bCapProgress)
+	
+	if aCapProgress > bCapProgress then
+	
+		leadTeam = 2
+		
+	elseif bCapProgress > aCapProgress then
+		
+		leadTeam = 1 
+				
 	end
 	
 end
@@ -102,8 +187,10 @@ function CheckPlayerCountTask()
 		leadTeam = 0
 		
 	end
+	
+	CheckCapPoints()
 			
-	if #count < 2 or #count1 < 1 or #count2 < 1 then
+	if #count < 2 or #count1 < 1 or #count2 < 1 or aCapProgress >= capLimit or bCapProgress >= capLimit then
 	
 		Task.Wait(1)
 		

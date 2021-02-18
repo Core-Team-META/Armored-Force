@@ -8762,6 +8762,8 @@ Objects {
   }
   ParentId: 3743443649255795255
   ChildIds: 13215174509152877316
+  ChildIds: 15360643800643204164
+  ChildIds: 6271151947658730148
   ChildIds: 12380728060821448012
   ChildIds: 119603841905541529
   Collidable_v2 {
@@ -8790,6 +8792,7 @@ Objects {
   }
   ParentId: 1653947581879884270
   ChildIds: 14693555799614591455
+  ChildIds: 5408294225255714683
   ChildIds: 11081990118870371856
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -8816,6 +8819,7 @@ Objects {
   }
   ParentId: 119603841905541529
   ChildIds: 7959326404714330478
+  ChildIds: 5979972685929035795
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8839,6 +8843,465 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5979972685929035795
+  Name: "TeamBasesUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11081990118870371856
+  ChildIds: 4324694424188412279
+  ChildIds: 15081999102377831679
+  ChildIds: 9623837665644297677
+  ChildIds: 8647811903861483725
+  ChildIds: 843109489822555539
+  ChildIds: 580197481378671820
+  ChildIds: 1942797178137118524
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1942797178137118524
+  Name: "Timer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5979972685929035795
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 150
+    Height: 60
+    UIY: 140
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "00:00"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 580197481378671820
+  Name: "EnemyProgress"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5979972685929035795
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 400
+    Height: 30
+    UIX: 75
+    UIY: 115
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    StatBar {
+      Color {
+        R: 0.429999948
+        A: 1
+      }
+      BackgroundColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 843109489822555539
+  Name: "EnemyScore"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5979972685929035795
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 150
+    Height: 60
+    UIX: 90
+    UIY: 90
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "00"
+      Color {
+        R: 0.429999948
+        A: 1
+      }
+      Size: 35
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8647811903861483725
+  Name: "Divide"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5979972685929035795
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 150
+    Height: 60
+    UIY: 90
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "|"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 40
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9623837665644297677
+  Name: "AllyProgress"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5979972685929035795
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 400
+    Height: 30
+    UIX: -75
+    UIY: 115
+    RotationAngle: 180
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    StatBar {
+      Color {
+        G: 0.024105968
+        B: 0.52
+        A: 1
+      }
+      BackgroundColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15081999102377831679
+  Name: "AllyScore"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5979972685929035795
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 150
+    Height: 60
+    UIX: -90
+    UIY: 90
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "00"
+      Color {
+        G: 0.024105968
+        B: 0.52
+        A: 1
+      }
+      Size: 35
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4324694424188412279
+  Name: "GamemodeTitle"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5979972685929035795
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 700
+    Height: 60
+    UIY: 20
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "FRONTLINE"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 40
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -9186,6 +9649,101 @@ Objects {
   }
 }
 Objects {
+  Id: 5408294225255714683
+  Name: "GAMESTATE_TeamBasesClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 119603841905541529
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GAMESTATE_MainGameStateManagerServer"
+      ObjectReference {
+        SelfId: 11780312844661875871
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_VotingMachineServer"
+      ObjectReference {
+        SelfId: 17836460304252197412
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_TeamBasesServer"
+      ObjectReference {
+        SelfId: 15360643800643204164
+      }
+    }
+    Overrides {
+      Name: "cs:TeamBasesUI"
+      ObjectReference {
+        SelfId: 5979972685929035795
+      }
+    }
+    Overrides {
+      Name: "cs:AllyScore"
+      ObjectReference {
+        SelfId: 15081999102377831679
+      }
+    }
+    Overrides {
+      Name: "cs:AllyProgress"
+      ObjectReference {
+        SelfId: 9623837665644297677
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyScore"
+      ObjectReference {
+        SelfId: 843109489822555539
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyProgress"
+      ObjectReference {
+        SelfId: 580197481378671820
+      }
+    }
+    Overrides {
+      Name: "cs:Timer"
+      ObjectReference {
+        SelfId: 1942797178137118524
+      }
+    }
+    Overrides {
+      Name: "cs:APointVisual"
+      ObjectReference {
+        SelfId: 16080916963124198363
+      }
+    }
+    Overrides {
+      Name: "cs:BPointVisual"
+      ObjectReference {
+        SelfId: 9350439172709292200
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17336700953072190535
+    }
+  }
+}
+Objects {
   Id: 14693555799614591455
   Name: "GAMESTATE_LastTeamStandingClient"
   Transform {
@@ -9211,6 +9769,12 @@ Objects {
       Name: "cs:GAMESTATE_VotingMachineServer"
       ObjectReference {
         SelfId: 17836460304252197412
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_LastTeamStandingServer"
+      ObjectReference {
+        SelfId: 13215174509152877316
       }
     }
     Overrides {
@@ -9356,6 +9920,547 @@ Objects {
   }
 }
 Objects {
+  Id: 6271151947658730148
+  Name: "GAMESTATE_TeamBasesServerObjects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1653947581879884270
+  ChildIds: 6237870095815820903
+  ChildIds: 4370228109502285810
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4370228109502285810
+  Name: "TeamBasesBPoint"
+  Transform {
+    Location {
+      X: 20510
+      Y: -21340
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6271151947658730148
+  ChildIds: 15610276338601073276
+  ChildIds: 11086170577556796065
+  ChildIds: 861666018719515092
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 861666018719515092
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4370228109502285810
+  ChildIds: 9350439172709292200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9350439172709292200
+  Name: "BPointVisual"
+  Transform {
+    Location {
+      Z: 2380
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 861666018719515092
+  ChildIds: 2019018758234076279
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2019018758234076279
+  Name: "BPointBorder"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 75.1999817
+      Y: 75.1999817
+      Z: 75.1999817
+    }
+  }
+  ParentId: 9350439172709292200
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10603477074800125567
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      UseTeamColor: true
+      TeamInt: 2
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11086170577556796065
+  Name: "BEdgePoint"
+  Transform {
+    Location {
+      X: 3745
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4370228109502285810
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15610276338601073276
+  Name: "BCenterPoint"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4370228109502285810
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6237870095815820903
+  Name: "TeamBasesAPoint"
+  Transform {
+    Location {
+      X: -20540
+      Y: 15705
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6271151947658730148
+  ChildIds: 10216725483319973318
+  ChildIds: 17173865302933613880
+  ChildIds: 17589735961536604217
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17589735961536604217
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6237870095815820903
+  ChildIds: 16080916963124198363
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 16080916963124198363
+  Name: "APointVisual"
+  Transform {
+    Location {
+      Z: 2380
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17589735961536604217
+  ChildIds: 13881126201220231499
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13881126201220231499
+  Name: "APointBorder"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 75.1999817
+      Y: 75.1999817
+      Z: 75.1999817
+    }
+  }
+  ParentId: 16080916963124198363
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10603477074800125567
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      UseTeamColor: true
+      TeamInt: 1
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17173865302933613880
+  Name: "AEdgePoint"
+  Transform {
+    Location {
+      X: 3745
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6237870095815820903
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10216725483319973318
+  Name: "ACenterPoint"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6237870095815820903
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15360643800643204164
+  Name: "GAMESTATE_TeamBasesServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1653947581879884270
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GAMESTATE_MainGameStateManagerServer"
+      ObjectReference {
+        SelfId: 11780312844661875871
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_VotingMachineServer"
+      ObjectReference {
+        SelfId: 17836460304252197412
+      }
+    }
+    Overrides {
+      Name: "cs:GameModeID"
+      String: "FRT"
+    }
+    Overrides {
+      Name: "cs:ACenterPoint"
+      ObjectReference {
+        SelfId: 10216725483319973318
+      }
+    }
+    Overrides {
+      Name: "cs:AEdgePoint"
+      ObjectReference {
+        SelfId: 17173865302933613880
+      }
+    }
+    Overrides {
+      Name: "cs:BCenterPoint"
+      ObjectReference {
+        SelfId: 15610276338601073276
+      }
+    }
+    Overrides {
+      Name: "cs:BEdgePoint"
+      ObjectReference {
+        SelfId: 11086170577556796065
+      }
+    }
+    Overrides {
+      Name: "cs:DefaultGameMode"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:CapLimit"
+      Int: 45
+    }
+    Overrides {
+      Name: "cs:Team1BaseProgress"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:Team2BaseProgress"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:Team1BaseProgress:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Team2BaseProgress:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9281809816689828151
+    }
+  }
+}
+Objects {
   Id: 13215174509152877316
   Name: "GAMESTATE_LastTeamStandingServer"
   Transform {
@@ -9386,6 +10491,10 @@ Objects {
     Overrides {
       Name: "cs:GameModeID"
       String: "LTS"
+    }
+    Overrides {
+      Name: "cs:DefaultGameMode"
+      Bool: true
     }
     Overrides {
       Name: "cs:ReliableEvents"
@@ -10527,13 +11636,10 @@ Objects {
     }
   }
   ParentId: 4406646053662415159
+  ChildIds: 5008576367338374456
   ChildIds: 16250000829067283594
   ChildIds: 9434423769658235596
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:MapID"
-      String: "M2"
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10613,6 +11719,47 @@ Objects {
     Overrides {
       Name: "cs:MapLink"
       String: "map1link"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1867132674124156237
+    }
+  }
+}
+Objects {
+  Id: 5008576367338374456
+  Name: "Garage"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2423237130596292919
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MapName"
+      String: "Return to Garage"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "GARAGE"
+    }
+    Overrides {
+      Name: "cs:MapLink"
+      String: "garagelink"
     }
   }
   Collidable_v2 {
@@ -10803,6 +11950,10 @@ Objects {
       Int: 0
     }
     Overrides {
+      Name: "cs:GARAGE"
+      Int: 0
+    }
+    Overrides {
       Name: "cs:MAP1"
       Int: 0
     }
@@ -10836,6 +11987,10 @@ Objects {
     }
     Overrides {
       Name: "cs:MAP3:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:GARAGE:isrep"
       Bool: true
     }
   }

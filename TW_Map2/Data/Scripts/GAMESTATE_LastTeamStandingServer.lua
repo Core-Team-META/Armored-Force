@@ -5,8 +5,11 @@ local votingMachineServer = script:GetCustomProperty("GAMESTATE_VotingMachineSer
 
 local gameModeID = script:GetCustomProperty("GameModeID")
 
+local defaultGameMode = script:GetCustomProperty("DefaultGameMode")
+
 local playerCountTask = nil
-local gameModeEnabled = true
+local gameModeEnabled = defaultGameMode
+
 
 local leadTeam = 0
 
@@ -62,7 +65,7 @@ end
 
 function CheckGameMode(manager, propertyName)
 
-	if propertyName ~= "SelectedMatchID" or not votingMachineServer:GetCustomProperty("SelectedMatchID") then
+	if propertyName ~= "SelectedMatchID" or votingMachineServer:GetCustomProperty("SelectedMatchID") == "" then
 	
 		return
 		

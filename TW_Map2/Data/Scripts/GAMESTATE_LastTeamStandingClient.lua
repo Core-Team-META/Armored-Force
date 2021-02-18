@@ -8,14 +8,10 @@ local updateTask = nil
 
 local localPlayer = Game.GetLocalPlayer()local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local votingMachineServer = script:GetCustomProperty("GAMESTATE_VotingMachineServer"):WaitForObject()
-
-local lastTeamStandingUI = script:GetCustomProperty("LastTeamStandingUI"):WaitForObject()
-local allyScore = script:GetCustomProperty("AllyScore"):WaitForObject()
-local enemyScore = script:GetCustomProperty("EnemyScore"):WaitForObject()
-local timer = script:GetCustomProperty("Timer"):WaitForObject()
+local lastTeamStandingServer = script:GetCustomProperty("GAMESTATE_LastTeamStandingServer"):WaitForObject()
 
 local updateTask = nil
-local gameModeEnabled = true
+local gameModeEnabled = lastTeamStandingServer:GetCustomProperty("DefaultGameMode")
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -53,13 +49,13 @@ end
 
 function CheckGameMode(manager, propertyName)
 
-	if propertyName ~= "SelectedMatchID" or not votingMachineServer:GetCustomProperty("SelectedMatchID") then
+	if propertyName ~= "SelectedMatchID" or votingMachineServer:GetCustomProperty("SelectedMatchID") == "" then
 	
 		return
 		
 	end
 	
-	if votingMachineServer:GetCustomProperty("SelectedMatchID") == mainGameStateManager:GetCustomProperty("GameModeID") then
+	if votingMachineServer:GetCustomProperty("SelectedMatchID") == lastTeamStandingServer:GetCustomProperty("GameModeID") then
 	
 		gameModeEnabled = true
 		
