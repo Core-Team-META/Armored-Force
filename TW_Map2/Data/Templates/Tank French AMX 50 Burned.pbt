@@ -1,5 +1,5 @@
 Assets {
-  Id: 4938237194934443527
+  Id: 8037028623213273329
   Name: "Tank French AMX 50 Burned"
   PlatformAssetType: 5
   TemplateAsset {
