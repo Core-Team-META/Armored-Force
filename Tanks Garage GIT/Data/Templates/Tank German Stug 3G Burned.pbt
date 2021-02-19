@@ -1,5 +1,5 @@
 Assets {
-  Id: 7579246293257149028
+  Id: 8764920601547859586
   Name: "Tank German Stug 3G Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -126,7 +126,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -24723,7 +24723,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

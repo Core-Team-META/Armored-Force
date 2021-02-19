@@ -1,5 +1,5 @@
 Assets {
-  Id: 4819393994102459920
+  Id: 7999295844299688900
   Name: "Tank Italian OF-40 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -179,7 +179,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -29556,7 +29556,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -39364,7 +39364,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

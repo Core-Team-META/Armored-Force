@@ -1,5 +1,5 @@
 Assets {
-  Id: 3185874187777744382
+  Id: 716652702964836540
   Name: "Tank UK Comet Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -128,7 +128,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -224,7 +224,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -29221,7 +29221,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

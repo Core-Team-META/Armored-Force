@@ -1,5 +1,5 @@
 Assets {
-  Id: 4168862517978651661
+  Id: 415270528703766185
   Name: "Tank US M24 Chaffee Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -128,7 +128,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -224,7 +224,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -320,7 +320,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -24671,7 +24671,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

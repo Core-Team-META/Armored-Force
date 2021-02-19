@@ -1,5 +1,5 @@
 Assets {
-  Id: 15527414047265811169
+  Id: 1762352527973895796
   Name: "Tank Japan Chi-Nu Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -126,7 +126,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -29896,7 +29896,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

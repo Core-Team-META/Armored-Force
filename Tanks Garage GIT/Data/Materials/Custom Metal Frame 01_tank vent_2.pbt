@@ -1,5 +1,5 @@
 Assets {
-  Id: 12238882582629391379
+  Id: 14190265191030884417
   Name: "Custom Metal Frame 01_tank vent_2"
   PlatformAssetType: 13
   SerializationVersion: 76

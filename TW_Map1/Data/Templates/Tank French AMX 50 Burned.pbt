@@ -1,5 +1,5 @@
 Assets {
-  Id: 4938237194934443527
+  Id: 8037028623213273329
   Name: "Tank French AMX 50 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -4103,7 +4103,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11580750779458949993
+              Id: 10082876259061602081
             }
           }
           Overrides {
@@ -4492,7 +4492,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11580750779458949993
+              Id: 10082876259061602081
             }
           }
           Overrides {
@@ -28158,7 +28158,7 @@ Assets {
       }
     }
     Assets {
-      Id: 11580750779458949993
+      Id: 10082876259061602081
       Name: "Metal Frame 01"
       PlatformAssetType: 2
       PrimaryAsset {

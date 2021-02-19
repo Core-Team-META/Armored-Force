@@ -1,5 +1,5 @@
 Assets {
-  Id: 1018204401243115869
+  Id: 6077460079880055934
   Name: "Tank Japan Type 74 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -3501,7 +3501,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17083166192660092680
+            Id: 2456333107983604775
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -6151,7 +6151,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17083166192660092680
+            Id: 2456333107983604775
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -22151,7 +22151,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -22231,7 +22231,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -38786,7 +38786,7 @@ Assets {
       }
     }
     Assets {
-      Id: 17083166192660092680
+      Id: 2456333107983604775
       Name: "Sci-fi Ship Cockpit Back 02"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -39191,7 +39191,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5544820850613172301
+      Id: 9011007331643236308
       Name: "Modern Weapon - Grenade Handle 01"
       PlatformAssetType: 1
       PrimaryAsset {

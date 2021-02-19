@@ -1,5 +1,5 @@
 Assets {
-  Id: 1018204401243115869
+  Id: 6077460079880055934
   Name: "Tank Japan Type 74 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -177,7 +177,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -29597,7 +29597,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 13776604554841829405
+            Id: 11528903682927826117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -38619,7 +38619,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -38633,7 +38633,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {
@@ -39317,7 +39317,7 @@ Assets {
       }
     }
     Assets {
-      Id: 13776604554841829405
+      Id: 11528903682927826117
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {

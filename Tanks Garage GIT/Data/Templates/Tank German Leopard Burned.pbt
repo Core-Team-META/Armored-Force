@@ -1,5 +1,5 @@
 Assets {
-  Id: 15812242960486668759
+  Id: 3238018855036756663
   Name: "Tank German Leopard Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -21670,7 +21670,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -22377,7 +22377,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

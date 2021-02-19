@@ -1,5 +1,5 @@
 Assets {
-  Id: 18045037759376212374
+  Id: 1618747983464716432
   Name: "Tank US M10 Wolverine Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -27894,7 +27894,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4426387598414765394
+            Id: 15585852823533740787
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -32447,7 +32447,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -32965,7 +32965,7 @@ Assets {
       }
     }
     Assets {
-      Id: 4426387598414765394
+      Id: 15585852823533740787
       Name: "Arch"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -33217,7 +33217,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

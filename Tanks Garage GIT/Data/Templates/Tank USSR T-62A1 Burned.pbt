@@ -1,5 +1,5 @@
 Assets {
-  Id: 9358751648156585323
+  Id: 2118376248870002276
   Name: "Tank USSR T-62A1 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -177,7 +177,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -9801,7 +9801,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -10018,7 +10018,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -22931,7 +22931,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -22945,7 +22945,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

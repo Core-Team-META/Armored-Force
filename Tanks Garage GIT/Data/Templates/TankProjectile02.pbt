@@ -1,5 +1,5 @@
 Assets {
-  Id: 9826601139297109174
+  Id: 3756726376053742884
   Name: "TankProjectile02"
   PlatformAssetType: 5
   TemplateAsset {
@@ -66,7 +66,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10069588324162714145
+            Id: 16172780909428955706
           }
           TeamSettings {
           }
@@ -114,7 +114,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3593597783924766211
+            Id: 13561094293599693560
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -165,7 +165,7 @@ Assets {
       }
     }
     Assets {
-      Id: 10069588324162714145
+      Id: 16172780909428955706
       Name: "Rocket Trail VFX"
       PlatformAssetType: 8
       PrimaryAsset {
@@ -174,7 +174,7 @@ Assets {
       }
     }
     Assets {
-      Id: 3593597783924766211
+      Id: 13561094293599693560
       Name: "Cone - Bullet"
       PlatformAssetType: 1
       PrimaryAsset {

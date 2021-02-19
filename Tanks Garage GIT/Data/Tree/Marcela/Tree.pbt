@@ -1,7 +1,7 @@
 Name: "Marcela"
 RootId: 12007147478172450768
 Objects {
-  Id: 13535394506838864434
+  Id: 3385898527119880700
   Name: "Tank Loadout"
   Transform {
     Location {
@@ -18,14 +18,14 @@ Objects {
     }
   }
   ParentId: 12007147478172450768
-  ChildIds: 7970169944063896027
-  ChildIds: 4906367356065195319
+  ChildIds: 14615432305872519001
+  ChildIds: 1415505719571771332
   Folder {
     IsGroup: true
   }
 }
 Objects {
-  Id: 4906367356065195319
+  Id: 1415505719571771332
   Name: "Static Player Equipment"
   Transform {
     Location {
@@ -38,13 +38,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13535394506838864434
-  ChildIds: 1105458058701373211
+  ParentId: 3385898527119880700
+  ChildIds: 13964465703387714178
   UnregisteredParameters {
     Overrides {
       Name: "cs:EquipmentTemplate"
       AssetReference {
-        Id: 8076029892992336964
+        Id: 17440292779087974758
       }
     }
     Overrides {
@@ -58,199 +58,217 @@ Objects {
     Overrides {
       Name: "cs:EquipmentTemplate2"
       AssetReference {
-        Id: 15851384618908444850
+        Id: 12252413799360899329
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate3"
       AssetReference {
-        Id: 10035279152615815274
+        Id: 7921278467532067383
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate4"
       AssetReference {
-        Id: 5626802213106314058
+        Id: 6528444628219157363
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate5"
       AssetReference {
-        Id: 7956065603851992707
+        Id: 1754707938539128667
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate6"
       AssetReference {
-        Id: 17946750202376556990
+        Id: 10319545819119413275
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate7"
       AssetReference {
-        Id: 7729288281458541196
+        Id: 16829010065069915335
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate8"
       AssetReference {
-        Id: 5926986810139767040
+        Id: 11780488715754736681
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate9"
       AssetReference {
-        Id: 2151465309194437172
+        Id: 4067118786598362068
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate10"
       AssetReference {
-        Id: 785111173902865612
+        Id: 3828595136826787564
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate11"
       AssetReference {
-        Id: 9697136595085406568
+        Id: 6374335131457647099
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate12"
       AssetReference {
-        Id: 5099291201506871270
+        Id: 1333994510896066242
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate13"
       AssetReference {
-        Id: 3527010889460964860
+        Id: 9110723386968596208
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate14"
       AssetReference {
-        Id: 9617351977666494608
+        Id: 14808570549143450150
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate15"
       AssetReference {
-        Id: 872417280653870507
+        Id: 15533666168932195625
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate16"
       AssetReference {
-        Id: 10444600936366266983
+        Id: 9406303130147647083
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate17"
       AssetReference {
-        Id: 2956317905302234710
+        Id: 2481912414105321819
       }
     }
     Overrides {
-      Name: "cs:EquipmentTemplate18"
+      Name: "cs:EquipmentBaby"
       AssetReference {
-        Id: 4431291339126787135
+        Id: 4314373372074474287
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate19"
       AssetReference {
-        Id: 11957007074666091394
+        Id: 7929850590517586233
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate20"
       AssetReference {
-        Id: 4397285659013437979
+        Id: 3639322347550797633
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate21"
       AssetReference {
-        Id: 2584993625456383104
+        Id: 9258137731501529718
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate22"
       AssetReference {
-        Id: 18441600786155118591
+        Id: 2237425778162084178
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate23"
       AssetReference {
-        Id: 17791499071630479955
+        Id: 3592033210827629920
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate24"
       AssetReference {
-        Id: 13658044370462892285
+        Id: 4183600244377480196
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate25"
       AssetReference {
-        Id: 14708080725622686308
+        Id: 5959705245284827219
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate26"
       AssetReference {
-        Id: 7696442270070804983
+        Id: 4359800497125853466
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate27"
       AssetReference {
-        Id: 15498618579037627396
+        Id: 8606108851970516076
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate28"
       AssetReference {
-        Id: 17017903987544206552
+        Id: 5735118847553925817
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate29"
       AssetReference {
-        Id: 13301292553974685859
+        Id: 5155505224721128984
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate30"
       AssetReference {
-        Id: 6842326968486342247
+        Id: 1944694279631241517
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate31"
       AssetReference {
-        Id: 6009866458434889136
+        Id: 7356574410059089283
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate32"
       AssetReference {
-        Id: 15334874101038714639
+        Id: 258012095300072982
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate33"
       AssetReference {
-        Id: 8105511490149619332
+        Id: 15718674370583625890
       }
     }
     Overrides {
       Name: "cs:EquipmentTemplate34"
       AssetReference {
-        Id: 2032040731084366664
+        Id: 10771373388982281392
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentToy"
+      AssetReference {
+        Id: 9453055388413530151
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentStylizedToy"
+      AssetReference {
+        Id: 4271918270906671636
+      }
+    }
+    Overrides {
+      Name: "cs:EquipmentCartoonToy"
+      AssetReference {
+        Id: 12325879504532413960
       }
     }
     Overrides {
@@ -277,7 +295,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1105458058701373211
+  Id: 13964465703387714178
   Name: "StaticPlayerEquipmentServer"
   Transform {
     Location {
@@ -290,12 +308,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4906367356065195319
+  ParentId: 1415505719571771332
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 4906367356065195319
+        SelfId: 1415505719571771332
       }
     }
   }
@@ -307,12 +325,12 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 17326704853580056951
+      Id: 6259926490851895543
     }
   }
 }
 Objects {
-  Id: 7970169944063896027
+  Id: 14615432305872519001
   Name: "UI ClientContext"
   Transform {
     Location {
@@ -325,19 +343,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13535394506838864434
-  ChildIds: 8740966820146385787
+  ParentId: 3385898527119880700
+  ChildIds: 5140162190524563687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   NetworkContext {
   }
 }
 Objects {
-  Id: 8740966820146385787
+  Id: 5140162190524563687
   Name: "UI Container"
   Transform {
     Location {
@@ -350,9 +368,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7970169944063896027
-  ChildIds: 12126136177295923256
-  ChildIds: 11106593398781240015
+  ParentId: 14615432305872519001
+  ChildIds: 15997859393589652207
+  ChildIds: 15262316266102456929
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -382,7 +400,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11106593398781240015
+  Id: 15262316266102456929
   Name: "Options"
   Transform {
     Location {
@@ -395,32 +413,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8740966820146385787
-  ChildIds: 5225231586010074660
-  ChildIds: 6056195712007005883
-  ChildIds: 4001670794252272071
-  ChildIds: 12346385495120117106
-  ChildIds: 17194567918476497831
-  ChildIds: 2362280872142508506
-  ChildIds: 5934051460416395833
-  ChildIds: 10645422338786375532
-  ChildIds: 2493648880534358772
-  ChildIds: 2565391176650780824
-  ChildIds: 8695619828461856778
-  ChildIds: 18176374214108454871
-  ChildIds: 17886419038294144633
-  ChildIds: 9587352180946060980
-  ChildIds: 17973762990668834447
-  ChildIds: 6710051145464841023
-  ChildIds: 12183990465837617789
-  ChildIds: 14734271313465329651
-  ChildIds: 9807799883831674440
-  ChildIds: 8200884550382217230
-  ChildIds: 832115962081489455
-  ChildIds: 18054511355276561362
-  ChildIds: 2341357656212388852
-  ChildIds: 3159448648336085323
-  ChildIds: 1506592548241162612
+  ParentId: 5140162190524563687
+  ChildIds: 14003691562090023486
+  ChildIds: 5577926616027841720
+  ChildIds: 5145388143219261513
+  ChildIds: 10382020830466077804
+  ChildIds: 21993743319867114
+  ChildIds: 10613372790166566648
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -454,2798 +453,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1506592548241162612
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 17220931292736140492
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIX: 1004.51843
-    UIY: 550.812
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17220931292736140492
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1506592548241162612
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 3159448648336085323
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 11726238540072155138
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIX: 1004.51843
-    UIY: 516.557495
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 11726238540072155138
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3159448648336085323
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2341357656212388852
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 4975028528187006860
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIX: 1004.51843
-    UIY: 482.302948
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 4975028528187006860
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2341357656212388852
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 18054511355276561362
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 7908135569752978728
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIX: 1004.51843
-    UIY: 406.943054
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 7908135569752978728
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18054511355276561362
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 832115962081489455
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 2733436169432522209
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIX: 963.426147
-    UIY: 443.937836
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2733436169432522209
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 832115962081489455
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8200884550382217230
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 10813384900996010237
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 459.009888
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 10813384900996010237
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8200884550382217230
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 9807799883831674440
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 12532438185252704383
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 537.11
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12532438185252704383
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9807799883831674440
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 14734271313465329651
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 16138762359806372713
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 369.948242
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 16138762359806372713
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14734271313465329651
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12183990465837617789
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 10512671587076215203
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 411.05365
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 10512671587076215203
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12183990465837617789
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 6710051145464841023
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 15648984201262051337
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIX: 1008.64722
-    UIY: 369.948151
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15648984201262051337
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6710051145464841023
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17973762990668834447
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 6247129209635640541
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIX: 120.593872
-    UIY: 332.953369
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 6247129209635640541
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17973762990668834447
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 9587352180946060980
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 3066609280549787933
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 504.225708
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 3066609280549787933
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9587352180946060980
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17886419038294144633
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 5963582228653051782
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 579.585449
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 5963582228653051782
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17886419038294144633
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 18176374214108454871
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 15152207225086588426
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 771.410461
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15152207225086588426
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18176374214108454871
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8695619828461856778
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 5746812797927123807
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 875.544
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 5746812797927123807
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8695619828461856778
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2565391176650780824
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 1097587489913558473
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 982.417908
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 1097587489913558473
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2565391176650780824
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2493648880534358772
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 15443385316947765415
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 946.793152
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15443385316947765415
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2493648880534358772
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 10645422338786375532
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 11698811330910555975
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 912.538574
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 11698811330910555975
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10645422338786375532
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 5934051460416395833
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 14161545805821512113
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 289.107452
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 14161545805821512113
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5934051460416395833
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2362280872142508506
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 6284317550334184682
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 252.11261
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 6284317550334184682
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2362280872142508506
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17194567918476497831
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 12921451094123616376
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 838.549133
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12921451094123616376
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17194567918476497831
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12346385495120117106
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 9606559976928926206
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 802.924438
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 9606559976928926206
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12346385495120117106
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 4001670794252272071
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 11395761816795836207
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 731.675232
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 11395761816795836207
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4001670794252272071
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 6056195712007005883
-  Name: "Boom"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11106593398781240015
-  ChildIds: 7421867052351205451
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 94
-    Height: 40
-    UIY: 694.680359
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10506016181184346374
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 7421867052351205451
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6056195712007005883
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 84
-    Height: 40
-    UIY: 2.71179676
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "X = Boom"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 15
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 5225231586010074660
+  Id: 10613372790166566648
   Name: "Baby"
   Transform {
     Location {
@@ -3258,8 +466,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11106593398781240015
-  ChildIds: 7639434519526524166
+  ParentId: 15262316266102456929
+  ChildIds: 15844679736218341135
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3269,7 +477,8 @@ Objects {
   Control {
     Width: 123
     Height: 40
-    UIY: 330.791473
+    UIX: 1192.82776
+    UIY: 842.428162
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3291,19 +500,19 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:topright"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:topright"
         }
       }
     }
   }
 }
 Objects {
-  Id: 7639434519526524166
+  Id: 15844679736218341135
   Name: "UI Text Box"
   Transform {
     Location {
@@ -3316,7 +525,243 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5225231586010074660
+  ParentId: 10613372790166566648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 193
+    Height: 40
+    UIX: -72.5462646
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Shift + 9 = Cartoon Toy"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 21993743319867114
+  Name: "Baby"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15262316266102456929
+  ChildIds: 13421312128826141869
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 123
+    Height: 40
+    UIX: 1192.82776
+    UIY: 806.181519
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13421312128826141869
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 21993743319867114
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 193
+    Height: 40
+    UIX: -72.5462646
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Shift + 8 = Stylized Toy"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10382020830466077804
+  Name: "Baby"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15262316266102456929
+  ChildIds: 6007058350185864284
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 123
+    Height: 40
+    UIX: 1192.82776
+    UIY: 776.905396
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6007058350185864284
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10382020830466077804
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3333,7 +778,7 @@ Objects {
       }
     }
     Text {
-      Label: "Shift + 9 = Baby"
+      Label: "Shift + 7 = Toy"
       Color {
         R: 1
         G: 1
@@ -3361,7 +806,359 @@ Objects {
   }
 }
 Objects {
-  Id: 12126136177295923256
+  Id: 5145388143219261513
+  Name: "Baby"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15262316266102456929
+  ChildIds: 13317729188247193870
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 123
+    Height: 40
+    UIX: 1192.82776
+    UIY: 744.840942
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13317729188247193870
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5145388143219261513
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 125
+    Height: 40
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Shift + 6 = Baby"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5577926616027841720
+  Name: "Respawn"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15262316266102456929
+  ChildIds: 4040806289211760156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 256
+    Height: 40
+    UIX: 1196.84753
+    UIY: 712.897217
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4040806289211760156
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5577926616027841720
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 304
+    Height: 40
+    UIX: -34.6887207
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "left CTRL = Respawn (during lobby)"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14003691562090023486
+  Name: "Self Death"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15262316266102456929
+  ChildIds: 13621839989295341120
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 113
+    Height: 40
+    UIX: 1189.31836
+    UIY: 676.95166
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 10506016181184346374
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13621839989295341120
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14003691562090023486
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 113
+    Height: 40
+    UIY: 2.71179676
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Z = Self Death"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15997859393589652207
   Name: "Tank Loadout"
   Transform {
     Location {
@@ -3374,45 +1171,45 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8740966820146385787
-  ChildIds: 1602388838596599940
-  ChildIds: 6201876717695021800
-  ChildIds: 15695775354397497678
-  ChildIds: 11672830133334719045
-  ChildIds: 7198985403774259405
-  ChildIds: 13998526550293607567
-  ChildIds: 14154415143031316590
-  ChildIds: 17431836741597135573
-  ChildIds: 7922605174424106600
-  ChildIds: 11652927435181786512
-  ChildIds: 11608743059826539013
-  ChildIds: 10996372105742321921
-  ChildIds: 8922554144243200559
-  ChildIds: 6606150115795846705
-  ChildIds: 17921167408042566652
-  ChildIds: 4665889895686408111
-  ChildIds: 1016530353836614776
-  ChildIds: 9676232279273259727
-  ChildIds: 16181243443031436764
-  ChildIds: 5565674809353529366
-  ChildIds: 7831638639773054398
-  ChildIds: 1598431389828010856
-  ChildIds: 13054935362000878674
-  ChildIds: 1511310383546225287
-  ChildIds: 14976175195862063586
-  ChildIds: 1229850274130272447
-  ChildIds: 10929431394944121076
-  ChildIds: 1158561608579744631
-  ChildIds: 3525601322861669052
-  ChildIds: 5403839426050151042
-  ChildIds: 17492768407706638037
-  ChildIds: 2925684760594047218
-  ChildIds: 2372559246502385621
+  ParentId: 5140162190524563687
+  ChildIds: 14093048757622239477
+  ChildIds: 17882220494318299261
+  ChildIds: 79700966673320763
+  ChildIds: 3526091800250758164
+  ChildIds: 14202311922212535002
+  ChildIds: 3240577493505241857
+  ChildIds: 15945604081405029521
+  ChildIds: 11955587328108698982
+  ChildIds: 14379023224236493383
+  ChildIds: 1354692404017993271
+  ChildIds: 15042523389151989053
+  ChildIds: 610673339279710164
+  ChildIds: 4306278617832736787
+  ChildIds: 5998175145006317298
+  ChildIds: 6077339696305125552
+  ChildIds: 11239485407032375701
+  ChildIds: 12857032210758753533
+  ChildIds: 8735646327563122178
+  ChildIds: 11608593830395398248
+  ChildIds: 13912466292758482856
+  ChildIds: 8052926031864601431
+  ChildIds: 6324709677999112029
+  ChildIds: 370423984537371429
+  ChildIds: 15043261114574731153
+  ChildIds: 10120163947736087597
+  ChildIds: 11524524794854851471
+  ChildIds: 2965507799810945665
+  ChildIds: 1285689890141162694
+  ChildIds: 9266338252610024617
+  ChildIds: 9468686127126954789
+  ChildIds: 2927620610936527384
+  ChildIds: 17996653342410520033
+  ChildIds: 7436232144798192091
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 197
@@ -3441,7 +1238,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2372559246502385621
+  Id: 7436232144798192091
   Name: "UI Image"
   Transform {
     Location {
@@ -3454,8 +1251,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 11604340277270962821
+  ParentId: 15997859393589652207
+  ChildIds: 2492322051243431493
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3477,8 +1274,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109931417
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -3499,7 +1297,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11604340277270962821
+  Id: 2492322051243431493
   Name: "UI Text Box"
   Transform {
     Location {
@@ -3512,7 +1310,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2372559246502385621
+  ParentId: 7436232144798192091
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3532,8 +1330,9 @@ Objects {
     Text {
       Label: "Crtl + 7 = Italian FIAT Type 6616"
       Color {
-        R: 0.0109931417
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -3557,7 +1356,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2925684760594047218
+  Id: 17996653342410520033
   Name: "UI Image"
   Transform {
     Location {
@@ -3570,8 +1369,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 7706997808178753576
+  ParentId: 15997859393589652207
+  ChildIds: 4193510603474804551
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3616,7 +1415,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7706997808178753576
+  Id: 4193510603474804551
   Name: "UI Text Box"
   Transform {
     Location {
@@ -3629,7 +1428,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2925684760594047218
+  ParentId: 17996653342410520033
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3675,7 +1474,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17492768407706638037
+  Id: 2927620610936527384
   Name: "UI Image"
   Transform {
     Location {
@@ -3688,8 +1487,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 17045809520122236008
+  ParentId: 15997859393589652207
+  ChildIds: 16020479471293472662
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3734,7 +1533,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17045809520122236008
+  Id: 16020479471293472662
   Name: "UI Text Box"
   Transform {
     Location {
@@ -3747,7 +1546,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17492768407706638037
+  ParentId: 2927620610936527384
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3793,7 +1592,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5403839426050151042
+  Id: 9468686127126954789
   Name: "UI Image"
   Transform {
     Location {
@@ -3806,8 +1605,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 5750004224315734607
+  ParentId: 15997859393589652207
+  ChildIds: 11913376095088713340
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3852,7 +1651,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5750004224315734607
+  Id: 11913376095088713340
   Name: "UI Text Box"
   Transform {
     Location {
@@ -3865,7 +1664,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5403839426050151042
+  ParentId: 9468686127126954789
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3911,7 +1710,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3525601322861669052
+  Id: 9266338252610024617
   Name: "UI Image"
   Transform {
     Location {
@@ -3924,8 +1723,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 1790950682821979633
+  ParentId: 15997859393589652207
+  ChildIds: 11071949747876475499
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3970,7 +1769,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1790950682821979633
+  Id: 11071949747876475499
   Name: "UI Text Box"
   Transform {
     Location {
@@ -3983,7 +1782,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3525601322861669052
+  ParentId: 9266338252610024617
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4029,7 +1828,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1158561608579744631
+  Id: 1285689890141162694
   Name: "UI Image"
   Transform {
     Location {
@@ -4042,8 +1841,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 1028690864402519507
+  ParentId: 15997859393589652207
+  ChildIds: 11157678698779996679
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4088,7 +1887,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1028690864402519507
+  Id: 11157678698779996679
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4101,7 +1900,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1158561608579744631
+  ParentId: 1285689890141162694
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4147,7 +1946,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10929431394944121076
+  Id: 2965507799810945665
   Name: "UI Image"
   Transform {
     Location {
@@ -4160,8 +1959,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 14578271285553597945
+  ParentId: 15997859393589652207
+  ChildIds: 499553733586541003
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4206,7 +2005,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14578271285553597945
+  Id: 499553733586541003
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4219,7 +2018,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10929431394944121076
+  ParentId: 2965507799810945665
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4265,7 +2064,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1229850274130272447
+  Id: 11524524794854851471
   Name: "UI Image"
   Transform {
     Location {
@@ -4278,8 +2077,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 5672865371717821769
+  ParentId: 15997859393589652207
+  ChildIds: 5815843339164341622
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4323,7 +2122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5672865371717821769
+  Id: 5815843339164341622
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4336,7 +2135,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1229850274130272447
+  ParentId: 11524524794854851471
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4382,7 +2181,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14976175195862063586
+  Id: 10120163947736087597
   Name: "UI Image"
   Transform {
     Location {
@@ -4395,8 +2194,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 9413898647995861961
+  ParentId: 15997859393589652207
+  ChildIds: 14138762408696438190
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4440,7 +2239,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9413898647995861961
+  Id: 14138762408696438190
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4453,7 +2252,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14976175195862063586
+  ParentId: 10120163947736087597
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4499,7 +2298,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1511310383546225287
+  Id: 15043261114574731153
   Name: "UI Image"
   Transform {
     Location {
@@ -4512,8 +2311,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 7849044707184459904
+  ParentId: 15997859393589652207
+  ChildIds: 13136220018113201526
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4557,7 +2356,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7849044707184459904
+  Id: 13136220018113201526
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4570,7 +2369,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1511310383546225287
+  ParentId: 15043261114574731153
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4616,7 +2415,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13054935362000878674
+  Id: 370423984537371429
   Name: "UI Image"
   Transform {
     Location {
@@ -4629,8 +2428,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 12831992274912896570
+  ParentId: 15997859393589652207
+  ChildIds: 8183046186753019407
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4674,7 +2473,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12831992274912896570
+  Id: 8183046186753019407
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4687,7 +2486,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13054935362000878674
+  ParentId: 370423984537371429
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4733,7 +2532,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1598431389828010856
+  Id: 6324709677999112029
   Name: "UI Image"
   Transform {
     Location {
@@ -4746,8 +2545,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 17388186277803891828
+  ParentId: 15997859393589652207
+  ChildIds: 6183659490123094860
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4791,7 +2590,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17388186277803891828
+  Id: 6183659490123094860
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4804,7 +2603,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1598431389828010856
+  ParentId: 6324709677999112029
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4850,7 +2649,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7831638639773054398
+  Id: 8052926031864601431
   Name: "UI Image"
   Transform {
     Location {
@@ -4863,8 +2662,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 13867997365367680891
+  ParentId: 15997859393589652207
+  ChildIds: 14871121638932232436
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4908,7 +2707,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13867997365367680891
+  Id: 14871121638932232436
   Name: "UI Text Box"
   Transform {
     Location {
@@ -4921,7 +2720,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7831638639773054398
+  ParentId: 8052926031864601431
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4967,7 +2766,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5565674809353529366
+  Id: 13912466292758482856
   Name: "UI Image"
   Transform {
     Location {
@@ -4980,8 +2779,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 9035274144650211328
+  ParentId: 15997859393589652207
+  ChildIds: 14967602323455890703
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5025,7 +2824,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9035274144650211328
+  Id: 14967602323455890703
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5038,7 +2837,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5565674809353529366
+  ParentId: 13912466292758482856
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5084,7 +2883,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16181243443031436764
+  Id: 11608593830395398248
   Name: "UI Image"
   Transform {
     Location {
@@ -5097,8 +2896,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 2257112662894724302
+  ParentId: 15997859393589652207
+  ChildIds: 7667175328452204052
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5142,7 +2941,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2257112662894724302
+  Id: 7667175328452204052
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5155,7 +2954,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16181243443031436764
+  ParentId: 11608593830395398248
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5201,7 +3000,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9676232279273259727
+  Id: 8735646327563122178
   Name: "UI Image"
   Transform {
     Location {
@@ -5214,8 +3013,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 16502664901904457658
+  ParentId: 15997859393589652207
+  ChildIds: 2839572157707678463
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5259,7 +3058,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16502664901904457658
+  Id: 2839572157707678463
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5272,7 +3071,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9676232279273259727
+  ParentId: 8735646327563122178
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5318,7 +3117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1016530353836614776
+  Id: 12857032210758753533
   Name: "UI Image"
   Transform {
     Location {
@@ -5331,8 +3130,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 8416710086061875764
+  ParentId: 15997859393589652207
+  ChildIds: 16909060837606750993
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5353,8 +3152,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -5375,7 +3175,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8416710086061875764
+  Id: 16909060837606750993
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5388,7 +3188,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1016530353836614776
+  ParentId: 12857032210758753533
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5408,8 +3208,9 @@ Objects {
     Text {
       Label: "R - German Jagdtiger"
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -5433,7 +3234,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4665889895686408111
+  Id: 11239485407032375701
   Name: "UI Image"
   Transform {
     Location {
@@ -5446,8 +3247,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 9294842986477602022
+  ParentId: 15997859393589652207
+  ChildIds: 12275133826177717816
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5468,8 +3269,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -5490,7 +3292,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9294842986477602022
+  Id: 12275133826177717816
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5503,7 +3305,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4665889895686408111
+  ParentId: 11239485407032375701
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5523,8 +3325,9 @@ Objects {
     Text {
       Label: "T - German E50"
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -5548,7 +3351,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17921167408042566652
+  Id: 6077339696305125552
   Name: "UI Image"
   Transform {
     Location {
@@ -5561,8 +3364,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 2514066327129682781
+  ParentId: 15997859393589652207
+  ChildIds: 5574335311494531351
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5606,7 +3409,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2514066327129682781
+  Id: 5574335311494531351
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5619,7 +3422,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17921167408042566652
+  ParentId: 6077339696305125552
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5665,7 +3468,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6606150115795846705
+  Id: 5998175145006317298
   Name: "UI Image"
   Transform {
     Location {
@@ -5678,8 +3481,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 766304945665664228
+  ParentId: 15997859393589652207
+  ChildIds: 7256958112520313308
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5723,7 +3526,7 @@ Objects {
   }
 }
 Objects {
-  Id: 766304945665664228
+  Id: 7256958112520313308
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5736,7 +3539,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6606150115795846705
+  ParentId: 5998175145006317298
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5782,7 +3585,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8922554144243200559
+  Id: 4306278617832736787
   Name: "UI Image"
   Transform {
     Location {
@@ -5795,8 +3598,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 4764480090681093821
+  ParentId: 15997859393589652207
+  ChildIds: 7628526531041572086
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5840,7 +3643,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4764480090681093821
+  Id: 7628526531041572086
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5853,7 +3656,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8922554144243200559
+  ParentId: 4306278617832736787
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5899,7 +3702,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10996372105742321921
+  Id: 610673339279710164
   Name: "UI Image"
   Transform {
     Location {
@@ -5912,8 +3715,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 16620329931803618860
+  ParentId: 15997859393589652207
+  ChildIds: 9727923401314472127
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5957,7 +3760,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16620329931803618860
+  Id: 9727923401314472127
   Name: "UI Text Box"
   Transform {
     Location {
@@ -5970,7 +3773,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10996372105742321921
+  ParentId: 610673339279710164
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6016,7 +3819,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11608743059826539013
+  Id: 15042523389151989053
   Name: "UI Image"
   Transform {
     Location {
@@ -6029,8 +3832,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 4951489845916575147
+  ParentId: 15997859393589652207
+  ChildIds: 1795498927714262064
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6074,7 +3877,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4951489845916575147
+  Id: 1795498927714262064
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6087,7 +3890,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11608743059826539013
+  ParentId: 15042523389151989053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6133,7 +3936,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11652927435181786512
+  Id: 1354692404017993271
   Name: "UI Image"
   Transform {
     Location {
@@ -6146,8 +3949,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 11626756289743170259
+  ParentId: 15997859393589652207
+  ChildIds: 2604106668930684741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6191,7 +3994,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11626756289743170259
+  Id: 2604106668930684741
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6204,7 +4007,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11652927435181786512
+  ParentId: 1354692404017993271
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6250,7 +4053,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7922605174424106600
+  Id: 14379023224236493383
   Name: "UI Image"
   Transform {
     Location {
@@ -6263,8 +4066,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 9202116017614063459
+  ParentId: 15997859393589652207
+  ChildIds: 13353800034988238200
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6308,7 +4111,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9202116017614063459
+  Id: 13353800034988238200
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6321,7 +4124,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7922605174424106600
+  ParentId: 14379023224236493383
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6367,7 +4170,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17431836741597135573
+  Id: 11955587328108698982
   Name: "UI Image"
   Transform {
     Location {
@@ -6380,8 +4183,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 15791004586308373644
+  ParentId: 15997859393589652207
+  ChildIds: 4335470246240812319
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6425,7 +4228,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15791004586308373644
+  Id: 4335470246240812319
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6438,7 +4241,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17431836741597135573
+  ParentId: 11955587328108698982
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6484,7 +4287,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14154415143031316590
+  Id: 15945604081405029521
   Name: "UI Image"
   Transform {
     Location {
@@ -6497,8 +4300,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 15153694416210726632
+  ParentId: 15997859393589652207
+  ChildIds: 6688506899913263404
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6542,7 +4345,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15153694416210726632
+  Id: 6688506899913263404
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6555,7 +4358,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14154415143031316590
+  ParentId: 15945604081405029521
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6601,7 +4404,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13998526550293607567
+  Id: 3240577493505241857
   Name: "UI Image"
   Transform {
     Location {
@@ -6614,8 +4417,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 3310014840667246797
+  ParentId: 15997859393589652207
+  ChildIds: 3298568045840739380
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6636,8 +4439,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -6658,7 +4462,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3310014840667246797
+  Id: 3298568045840739380
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6671,7 +4475,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13998526550293607567
+  ParentId: 3240577493505241857
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6691,8 +4495,9 @@ Objects {
     Text {
       Label: "6 - US M24 Chaffee"
       Color {
-        R: 0.0109931417
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -6716,7 +4521,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7198985403774259405
+  Id: 14202311922212535002
   Name: "UI Image"
   Transform {
     Location {
@@ -6729,8 +4534,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 10471695356379236420
+  ParentId: 15997859393589652207
+  ChildIds: 10431109290450307579
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6751,8 +4556,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -6773,7 +4579,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10471695356379236420
+  Id: 10431109290450307579
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6786,7 +4592,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7198985403774259405
+  ParentId: 14202311922212535002
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6806,8 +4612,9 @@ Objects {
     Text {
       Label: "5 - German Panzer 4H"
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -6831,7 +4638,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11672830133334719045
+  Id: 3526091800250758164
   Name: "UI Image"
   Transform {
     Location {
@@ -6844,8 +4651,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 17039965476612895978
+  ParentId: 15997859393589652207
+  ChildIds: 9399972211096921386
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6866,8 +4673,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -6888,7 +4696,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17039965476612895978
+  Id: 9399972211096921386
   Name: "UI Text Box"
   Transform {
     Location {
@@ -6901,7 +4709,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11672830133334719045
+  ParentId: 3526091800250758164
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6921,8 +4729,9 @@ Objects {
     Text {
       Label: "4 - UK 1955 Chimera"
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -6946,7 +4755,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15695775354397497678
+  Id: 79700966673320763
   Name: "UI Image"
   Transform {
     Location {
@@ -6959,8 +4768,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 12711828220779973751
+  ParentId: 15997859393589652207
+  ChildIds: 14293320622070769985
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6981,8 +4790,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -7003,7 +4813,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12711828220779973751
+  Id: 14293320622070769985
   Name: "UI Text Box"
   Transform {
     Location {
@@ -7016,7 +4826,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15695775354397497678
+  ParentId: 79700966673320763
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7036,8 +4846,9 @@ Objects {
     Text {
       Label: "3 = US M4A1 Sherman"
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -7061,7 +4872,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6201876717695021800
+  Id: 17882220494318299261
   Name: "UI Image"
   Transform {
     Location {
@@ -7074,8 +4885,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 15906027481875279841
+  ParentId: 15997859393589652207
+  ChildIds: 16526906237559212217
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7096,8 +4907,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -7118,7 +4930,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15906027481875279841
+  Id: 16526906237559212217
   Name: "UI Text Box"
   Transform {
     Location {
@@ -7131,7 +4943,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6201876717695021800
+  ParentId: 17882220494318299261
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7151,8 +4963,9 @@ Objects {
     Text {
       Label: "2 = USSR T-34"
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -7176,7 +4989,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1602388838596599940
+  Id: 14093048757622239477
   Name: "UI Image"
   Transform {
     Location {
@@ -7189,8 +5002,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12126136177295923256
-  ChildIds: 7863685059007809327
+  ParentId: 15997859393589652207
+  ChildIds: 10453394099818030934
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7210,8 +5023,9 @@ Objects {
         Id: 10264882054510714565
       }
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -7232,7 +5046,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7863685059007809327
+  Id: 10453394099818030934
   Name: "UI Text Box"
   Transform {
     Location {
@@ -7245,7 +5059,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1602388838596599940
+  ParentId: 14093048757622239477
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7265,8 +5079,9 @@ Objects {
     Text {
       Label: "1 = German Panther"
       Color {
-        R: 0.0109932404
-        G: 0.830000043
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 15
@@ -63097,13 +60912,6 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 1559054141913395152
-    SubobjectId: 13587394840146759021
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-    WasRoot: true
-  }
 }
 Objects {
   Id: 4625309284603646186
@@ -63137,12 +60945,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4625309284603646186
-    SubobjectId: 16790165621586850391
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -63212,12 +61014,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1710661383816204054
-    SubobjectId: 13731402225767607723
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -63332,12 +61128,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10392370001247283936
-    SubobjectId: 4110622700105369693
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1300294187836174746
@@ -63388,12 +61178,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1300294187836174746
-    SubobjectId: 13490904635989283623
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -63460,12 +61244,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11684279299110262215
-    SubobjectId: 798305883638462330
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15480713827106325333
@@ -63506,12 +61284,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15480713827106325333
-    SubobjectId: 9215574102714327528
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -63556,12 +61328,6 @@ Objects {
     DecalBP {
     }
   }
-  InstanceHistory {
-    SelfId: 70216145798155899
-    SubobjectId: 12235072730600238278
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6116223142555244627
@@ -63604,12 +61370,6 @@ Objects {
     }
     DecalBP {
     }
-  }
-  InstanceHistory {
-    SelfId: 6116223142555244627
-    SubobjectId: 18290226868742421230
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -63678,12 +61438,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2406618216318238846
-    SubobjectId: 9823694808090616515
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -63799,12 +61553,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14786067776361237148
-    SubobjectId: 7205876673939089441
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1621589571795682284
@@ -63869,12 +61617,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1621589571795682284
-    SubobjectId: 13813608760199422289
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -63945,12 +61687,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14413282762355660961
-    SubobjectId: 7004369194046028316
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4125715103065010589
@@ -63981,12 +61717,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4125715103065010589
-    SubobjectId: 10408870849427952416
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -64056,12 +61786,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5442216291624521008
-    SubobjectId: 16335789532641931149
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4116922589612524969
@@ -64128,12 +61852,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4116922589612524969
-    SubobjectId: 10381078259685648148
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -64202,12 +61920,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10464454597117188439
-    SubobjectId: 4038592959559154666
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5883734984213601400
@@ -64242,12 +61954,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 5883734984213601400
-    SubobjectId: 17912497069321502405
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -64321,12 +62027,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7547508573641272819
-    SubobjectId: 13946772741306666830
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4340887527878936423
@@ -64399,12 +62099,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4340887527878936423
-    SubobjectId: 10740855108441007578
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3516276473489663496
@@ -64474,12 +62168,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 3516276473489663496
-    SubobjectId: 11096467301000479925
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -64551,12 +62239,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6949549336122422525
-    SubobjectId: 14502438147370374720
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6461596120894581229
@@ -64589,12 +62271,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 6461596120894581229
-    SubobjectId: 17338563392478350160
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -64686,12 +62362,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7118318106875098393
-    SubobjectId: 14698509483860055972
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11169380422159640453
@@ -64725,12 +62395,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11169380422159640453
-    SubobjectId: 3617336860444067128
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -64802,12 +62466,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14266924990991426059
-    SubobjectId: 7839795352115527862
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -64881,12 +62539,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11560835784046921134
-    SubobjectId: 667260628679321363
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 8022328148579361361
@@ -64957,12 +62609,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 8022328148579361361
-    SubobjectId: 14296615543221092588
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -65036,12 +62682,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8777337498880844004
-    SubobjectId: 15059365446832030297
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16215111354683247270
@@ -65113,12 +62753,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 16215111354683247270
-    SubobjectId: 5203176239161501723
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -65192,12 +62826,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17918023561212626690
-    SubobjectId: 5880394462636385727
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15908594406381642596
@@ -65238,12 +62866,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15908594406381642596
-    SubobjectId: 8499540125449044441
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -65356,12 +62978,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9820375740997585248
-    SubobjectId: 2412305773191457757
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9816648557337102851
@@ -65423,12 +63039,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 9816648557337102851
-    SubobjectId: 2380571588909656254
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -65497,12 +63107,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11162776208783377299
-    SubobjectId: 3735987905760469294
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 8753889113959352885
@@ -65569,12 +63173,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 8753889113959352885
-    SubobjectId: 15010162351112579208
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -65648,12 +63246,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4234226847864804885
-    SubobjectId: 10660088518624310440
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11363940533647708850
@@ -65718,12 +63310,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11363940533647708850
-    SubobjectId: 3784733777797394447
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 8223656197497819024
@@ -65781,12 +63367,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8223656197497819024
-    SubobjectId: 15785832857340554541
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 14852407090875566845
@@ -65837,12 +63417,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14852407090875566845
-    SubobjectId: 7434485772550711360
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -65910,12 +63484,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10235510512779036286
-    SubobjectId: 2826314918948349123
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1456427530339060444
@@ -65980,12 +63548,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1456427530339060444
-    SubobjectId: 13620158482891188321
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6175825941642661574
@@ -66044,12 +63606,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6175825941642661574
-    SubobjectId: 18196284243300445307
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13171527085744061218
@@ -66084,12 +63640,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13171527085744061218
-    SubobjectId: 2303708840643844511
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -66174,12 +63724,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12259044128921830253
-    SubobjectId: 221273736287642064
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5546795926702362745
@@ -66260,12 +63804,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5546795926702362745
-    SubobjectId: 16557745046919099076
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3116011686291930460
@@ -66330,12 +63868,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 3116011686291930460
-    SubobjectId: 9371019938121146337
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -66418,12 +63950,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 169742833182883576
-    SubobjectId: 12351628648724143173
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11577297116039606190
@@ -66492,12 +64018,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11577297116039606190
-    SubobjectId: 691322910123805971
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -66568,12 +64088,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9941019698786259445
-    SubobjectId: 2361953674842207048
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15454666848368424499
@@ -66643,12 +64157,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15454666848368424499
-    SubobjectId: 9171793365177750670
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15467456693008706596
@@ -66681,12 +64189,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15467456693008706596
-    SubobjectId: 9193448883373510297
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -66757,12 +64259,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13971791507124091865
-    SubobjectId: 7554514308592720228
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -66853,12 +64349,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5837863450592636616
-    SubobjectId: 17885624831517019253
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3491228543234001306
@@ -66927,12 +64417,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 3491228543234001306
-    SubobjectId: 11043271836331666215
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -67006,12 +64490,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8767392036027670783
-    SubobjectId: 15032673056238699074
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 449515073572426617
@@ -67084,12 +64562,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 449515073572426617
-    SubobjectId: 12614089384610951620
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6993495940259299613
@@ -67158,12 +64630,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6993495940259299613
-    SubobjectId: 14429290644713235360
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1777943796164544324
@@ -67194,12 +64660,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 1777943796164544324
-    SubobjectId: 12798744788732634617
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -67270,12 +64730,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2073740124095773445
-    SubobjectId: 13111569795063929272
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6234353004789921067
@@ -67343,12 +64797,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 6234353004789921067
-    SubobjectId: 18425949988225898390
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -67438,12 +64886,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13909462129320299680
-    SubobjectId: 7510481325277031965
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11619713424352791746
@@ -67477,12 +64919,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11619713424352791746
-    SubobjectId: 608904242791968383
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -67556,12 +64992,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2862948453056739611
-    SubobjectId: 10271018148467989414
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16601780283971564533
@@ -67634,12 +65064,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16601780283971564533
-    SubobjectId: 5717213968720744776
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4684869297399099045
@@ -67709,12 +65133,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4684869297399099045
-    SubobjectId: 16731223534326402072
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -67786,12 +65204,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16334886840470485972
-    SubobjectId: 5441454374738401641
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2876976568851091476
@@ -67826,12 +65238,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 2876976568851091476
-    SubobjectId: 10295178270001918633
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -67905,12 +65311,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6602764962487158206
-    SubobjectId: 17479449979541284611
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15754766481256293870
@@ -67983,12 +65383,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15754766481256293870
-    SubobjectId: 8329104325275420499
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6763872423876290955
@@ -68058,12 +65452,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 6763872423876290955
-    SubobjectId: 17648721589677706038
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -68135,12 +65523,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7633531235779823455
-    SubobjectId: 13897264933876557282
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17078943592251279169
@@ -68171,12 +65553,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 17078943592251279169
-    SubobjectId: 4915213147912496636
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -68247,12 +65623,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2265003280147932176
-    SubobjectId: 13140422475990615725
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 801790166780679977
@@ -68311,12 +65681,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 801790166780679977
-    SubobjectId: 11678474908994123156
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3825182059412508264
@@ -68349,12 +65713,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 3825182059412508264
-    SubobjectId: 11251969021191384277
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -68412,12 +65770,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 16299953828698022162
-    SubobjectId: 5406519950915748783
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -68520,12 +65872,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3675132665436445799
-    SubobjectId: 11111067842415640282
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 8485300197887410592
@@ -68561,12 +65907,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 8485300197887410592
-    SubobjectId: 15921094910843069213
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -68639,12 +65979,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14969384854212439468
-    SubobjectId: 7390179200004837137
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 8572814838850175881
@@ -68715,12 +66049,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 8572814838850175881
-    SubobjectId: 16125702831841337652
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -68793,12 +66121,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15501360407320282911
-    SubobjectId: 9091964782077306274
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15371023726390849222
@@ -68868,12 +66190,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 15371023726390849222
-    SubobjectId: 8962752900469460091
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -68945,12 +66261,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7016416869815106404
-    SubobjectId: 14442359089207319001
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15012542620060839016
@@ -69019,12 +66329,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15012542620060839016
-    SubobjectId: 8747542009458609877
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5497923811671439413
@@ -69089,12 +66393,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5497923811671439413
-    SubobjectId: 16536738954584742536
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3716521407879083919
@@ -69134,12 +66432,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 3716521407879083919
-    SubobjectId: 11142323717255812402
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -69213,12 +66505,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 95974525471739417
-    SubobjectId: 12134448608477965476
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13716794743206763526
@@ -69288,12 +66574,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13716794743206763526
-    SubobjectId: 1686906754824011451
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13247402482465610690
@@ -69362,12 +66642,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13247402482465610690
-    SubobjectId: 2227868650315495807
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -69441,12 +66715,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6965180320332249361
-    SubobjectId: 14527357289440271276
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11565749553590583943
@@ -69518,12 +66786,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11565749553590583943
-    SubobjectId: 698914554298720314
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -69615,12 +66877,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8926287819554053996
-    SubobjectId: 15191287639763287505
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5157784219018776753
@@ -69710,12 +66966,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5157784219018776753
-    SubobjectId: 17196680231005450764
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -69810,12 +67060,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3736572559844535390
-    SubobjectId: 11162233349025844963
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 434745524504412286
@@ -69887,12 +67131,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 434745524504412286
-    SubobjectId: 12626481630625915587
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9314685984138528466
@@ -69963,12 +67201,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 9314685984138528466
-    SubobjectId: 2915704074812138607
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -70058,12 +67290,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5010429652567856187
-    SubobjectId: 17058051943874770566
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7679471852122064682
@@ -70093,12 +67319,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7679471852122064682
-    SubobjectId: 14096326289706050967
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -70191,12 +67411,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8735618277878951820
-    SubobjectId: 14990766199998467377
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6974294628511819920
@@ -70287,12 +67501,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6974294628511819920
-    SubobjectId: 14554346356092799533
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4094506656244199047
@@ -70322,12 +67530,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4094506656244199047
-    SubobjectId: 10511503756281859130
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -70359,12 +67561,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 8587606399626059068
-    SubobjectId: 16005668144054026113
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -70409,12 +67605,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 2139686865941676153
-    SubobjectId: 13007364648481120964
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -70504,12 +67694,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 9920170394180814624
-    SubobjectId: 2348986262386091421
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -70602,12 +67786,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9556058918940008551
-    SubobjectId: 3291902704546890458
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9678487315464346074
@@ -70699,12 +67877,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9678487315464346074
-    SubobjectId: 3414331093654272871
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 12689365054061740622
@@ -70794,12 +67966,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12689365054061740622
-    SubobjectId: 1813664961959698675
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4872739151231267370
@@ -70864,12 +68030,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4872739151231267370
-    SubobjectId: 16910368531549393047
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -70936,12 +68096,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3211078452438607998
-    SubobjectId: 9629481275948960451
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10971715916646568485
@@ -71006,12 +68160,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10971715916646568485
-    SubobjectId: 3562802072283967640
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71082,12 +68230,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1865724793117497633
-    SubobjectId: 12742550544642309020
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 739994978690517786
@@ -71154,12 +68296,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 739994978690517786
-    SubobjectId: 11778669385338513831
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71230,12 +68366,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4437401562937626135
-    SubobjectId: 10711268363345865898
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11058205515674327491
@@ -71300,12 +68430,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11058205515674327491
-    SubobjectId: 3478014448537287550
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71376,12 +68500,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 885085750558784537
-    SubobjectId: 11924041054059617956
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10827346286578397188
@@ -71450,12 +68568,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10827346286578397188
-    SubobjectId: 4571354770535830201
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71526,12 +68638,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14153633322813290007
-    SubobjectId: 7879344837011428522
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3651822797341632329
@@ -71600,12 +68706,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 3651822797341632329
-    SubobjectId: 11213718538282698228
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71676,12 +68776,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16081523163314105996
-    SubobjectId: 8511747187942132785
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 14841813090401994491
@@ -71712,12 +68806,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 14841813090401994491
-    SubobjectId: 7262747897766241350
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71759,12 +68847,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17743441331654078210
-    SubobjectId: 6849866201134042559
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16449603048640597847
@@ -71805,12 +68887,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16449603048640597847
-    SubobjectId: 5582909055154974186
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4531835903401489133
@@ -71850,12 +68926,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4531835903401489133
-    SubobjectId: 10941091066286067792
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71911,12 +68981,6 @@ Objects {
     TeamSettings {
     }
   }
-  InstanceHistory {
-    SelfId: 9356612798891334303
-    SubobjectId: 2948623146330077218
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6030850996297114242
@@ -71946,12 +69010,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 6030850996297114242
-    SubobjectId: 18051311186345754687
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -71996,12 +69054,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 18427318280643931772
-    SubobjectId: 6235300468543900865
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -72091,12 +69143,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 9769656737484099601
-    SubobjectId: 3361387293415371436
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -72189,12 +69235,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17225183020118644310
-    SubobjectId: 5061734084111643883
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2955128828223516203
@@ -72286,12 +69326,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2955128828223516203
-    SubobjectId: 9237017965213404310
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11081316328915140537
@@ -72381,12 +69415,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11081316328915140537
-    SubobjectId: 3529272449483791620
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7006960313484087004
@@ -72451,12 +69479,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7006960313484087004
-    SubobjectId: 14415874672011750497
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -72523,12 +69545,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 673644742993728318
-    SubobjectId: 11559478787762975107
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17681554867801748427
@@ -72593,12 +69609,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17681554867801748427
-    SubobjectId: 6652732120904225142
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -72669,12 +69679,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7572148433607346678
-    SubobjectId: 13846154347232586571
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1136652688588140865
@@ -72741,12 +69745,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1136652688588140865
-    SubobjectId: 12030508220527989756
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -72817,12 +69815,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16804427334040524879
-    SubobjectId: 4613816068885756658
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17486235363617305647
@@ -72887,12 +69879,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17486235363617305647
-    SubobjectId: 6600401903836550802
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -72963,12 +69949,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16452830618883257515
-    SubobjectId: 5577411972644853270
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4933154055986978433
@@ -73037,12 +70017,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4933154055986978433
-    SubobjectId: 17097024966275415100
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73113,12 +70087,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10261996614528413778
-    SubobjectId: 2835912520534790895
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9204227672057590659
@@ -73187,12 +70155,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 9204227672057590659
-    SubobjectId: 15458953889644351806
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73263,12 +70225,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10761671395054859848
-    SubobjectId: 4353824122767086837
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4666724259498233478
@@ -73299,12 +70255,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4666724259498233478
-    SubobjectId: 16857334150148009019
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73346,12 +70296,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16798770398214113151
-    SubobjectId: 4617307035524097474
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2773373481403079395
@@ -73392,12 +70336,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2773373481403079395
-    SubobjectId: 10326684236818544734
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11457329845888914072
@@ -73437,12 +70375,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11457329845888914072
-    SubobjectId: 3905285188061868069
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73498,12 +70430,6 @@ Objects {
     TeamSettings {
     }
   }
-  InstanceHistory {
-    SelfId: 8986591931559845111
-    SubobjectId: 15385432512405782090
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10958786909896297109
@@ -73534,12 +70460,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 10958786909896297109
-    SubobjectId: 3541991241348868136
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73585,12 +70505,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13750485944040855569
-    SubobjectId: 1720738968225168044
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73645,12 +70559,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13165121655834248514
-    SubobjectId: 2270140223960164351
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73723,12 +70631,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3226622525060098646
-    SubobjectId: 9652767552225282283
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5153428507366033450
@@ -73799,12 +70701,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5153428507366033450
-    SubobjectId: 17201049115330980503
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -73877,12 +70773,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11259389649106830749
-    SubobjectId: 3851602281435506464
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 18160173581249710273
@@ -73954,12 +70844,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 18160173581249710273
-    SubobjectId: 6140417585132841596
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4916237172925652335
@@ -74030,12 +70914,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4916237172925652335
-    SubobjectId: 17080811210350854098
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -74111,12 +70989,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5327511078062551668
-    SubobjectId: 16203353308030914761
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16699079860807460196
@@ -74171,12 +71043,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16699079860807460196
-    SubobjectId: 5660404937842739161
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11760641377240980455
@@ -74229,12 +71095,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11760641377240980455
-    SubobjectId: 721967788058523994
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -74289,12 +71149,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7062907943777142353
-    SubobjectId: 14643099870532609260
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 403303555142601836
@@ -74348,12 +71202,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 403303555142601836
-    SubobjectId: 12441777361309429457
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7428152881326655168
@@ -74406,12 +71254,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7428152881326655168
-    SubobjectId: 14854236434020181117
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -74467,12 +71309,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9742810324765959599
-    SubobjectId: 3316807372967233298
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6459077880153423518
@@ -74525,12 +71361,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 6459077880153423518
-    SubobjectId: 17334779348524571683
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -74585,12 +71415,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12340433515653133508
-    SubobjectId: 175858101744916089
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6255284203064725153
@@ -74643,12 +71467,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 6255284203064725153
-    SubobjectId: 18446175842347002908
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -74703,12 +71521,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11879480394629889204
-    SubobjectId: 1003920773541568009
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11244192215354767516
@@ -74753,12 +71565,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11244192215354767516
-    SubobjectId: 3835278920683084321
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -74813,12 +71619,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 15551153465683272603
-    SubobjectId: 9142882612784120102
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -74891,12 +71691,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12767186926116198892
-    SubobjectId: 1737518886823131985
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 14429874572456023429
@@ -74967,12 +71761,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14429874572456023429
-    SubobjectId: 7022227401981294392
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -75045,12 +71833,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15827213394597513251
-    SubobjectId: 8257154601115921054
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1248456598194927198
@@ -75122,12 +71904,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1248456598194927198
-    SubobjectId: 13286085421085988067
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1455817032920009189
@@ -75198,12 +71974,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1455817032920009189
-    SubobjectId: 13620812741724613464
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -75279,12 +72049,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9043041332454458993
-    SubobjectId: 15298049309642761420
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3708423199305981833
@@ -75339,12 +72103,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3708423199305981833
-    SubobjectId: 11116070962079366452
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10759570068682871510
@@ -75397,12 +72155,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10759570068682871510
-    SubobjectId: 4351439441168019563
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -75457,12 +72209,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6852662227868703434
-    SubobjectId: 17738354124559022199
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6568327499828144651
@@ -75516,12 +72262,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6568327499828144651
-    SubobjectId: 17444028961068320950
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5585103247323610850
@@ -75574,12 +72314,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5585103247323610850
-    SubobjectId: 16478817454620908639
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -75635,12 +72369,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10810874599607081385
-    SubobjectId: 4554601359313910548
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2535662754162664668
@@ -75693,12 +72421,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2535662754162664668
-    SubobjectId: 9944716751880636001
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -75753,12 +72475,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13443620030129487774
-    SubobjectId: 1415139453349174563
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 85812257533495353
@@ -75811,12 +72527,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 85812257533495353
-    SubobjectId: 12106270832940919428
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -75871,12 +72581,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16660136371675944163
-    SubobjectId: 5622305599971292766
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7661006248132603474
@@ -75913,12 +72617,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7661006248132603474
-    SubobjectId: 14079268876320296175
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -75978,12 +72676,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 16927586437362989530
-    SubobjectId: 4888691243477408615
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -76101,12 +72793,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4950831585511094699
-    SubobjectId: 17115407006666660630
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 18154738611661014470
@@ -76177,12 +72863,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 18154738611661014470
-    SubobjectId: 5962860951004424059
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16997461470977382594
@@ -76252,12 +72932,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 16997461470977382594
-    SubobjectId: 4814873309098015359
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -76351,12 +73025,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7173902983130229562
-    SubobjectId: 14608571239210584455
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1679047799526539147
@@ -76449,12 +73117,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1679047799526539147
-    SubobjectId: 13726951832416886070
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9637558245025423634
@@ -76521,12 +73183,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 9637558245025423634
-    SubobjectId: 3210429694270079919
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -76595,12 +73251,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5019693865671349904
-    SubobjectId: 17049300103182513197
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6815532283410187461
@@ -76667,12 +73317,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 6815532283410187461
-    SubobjectId: 17845340234618381944
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -76745,12 +73389,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7491455225314407051
-    SubobjectId: 14899101857827704886
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7803303461867863419
@@ -76821,12 +73459,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7803303461867863419
-    SubobjectId: 14229166740218093510
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -76899,12 +73531,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11236442615378838817
-    SubobjectId: 3665118536487053212
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2791456944204586235
@@ -76976,12 +73602,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2791456944204586235
-    SubobjectId: 10344767967768198726
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4918729471762383558
@@ -77051,12 +73671,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4918729471762383558
-    SubobjectId: 17109199730657812603
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -77128,12 +73742,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16935163634269094541
-    SubobjectId: 4771292759309688880
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7447929376091279187
@@ -77202,12 +73810,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7447929376091279187
-    SubobjectId: 14874998881424977390
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -77346,12 +73948,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13567911287291828877
-    SubobjectId: 1547029951578896432
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13134803221393505916
@@ -77489,12 +74085,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13134803221393505916
-    SubobjectId: 2268390435408174273
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 12187975921294160667
@@ -77584,12 +74174,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12187975921294160667
-    SubobjectId: 6372099253178790
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5238134343341172870
@@ -77624,12 +74208,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 5238134343341172870
-    SubobjectId: 16249928138671966779
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -77702,12 +74280,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7270392155018532275
-    SubobjectId: 14832429178122385166
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15653283919561865575
@@ -77778,12 +74350,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 15653283919561865575
-    SubobjectId: 8073091761685437402
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -77856,12 +74422,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 12460228005058209030
-    SubobjectId: 421473314388264891
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1593828273784697965
@@ -77931,12 +74491,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1593828273784697965
-    SubobjectId: 13775573083381044944
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78008,12 +74562,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3965784569799856876
-    SubobjectId: 11401861812179726417
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7415294027783051779
@@ -78048,12 +74596,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7415294027783051779
-    SubobjectId: 14977470720624343230
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78126,12 +74668,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1657173561874686323
-    SubobjectId: 13820903451019740110
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10321826887301972838
@@ -78202,12 +74738,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10321826887301972838
-    SubobjectId: 2741775423925969371
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78280,12 +74810,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8105147508671798752
-    SubobjectId: 15657191068144992093
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7014905662320693296
@@ -78355,12 +74879,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7014905662320693296
-    SubobjectId: 14441693177233896077
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78432,12 +74950,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11006377091928509390
-    SubobjectId: 3570300364707096947
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6600766343278721418
@@ -78470,12 +74982,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 6600766343278721418
-    SubobjectId: 17485334272843602743
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78531,12 +75037,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2675116262656262974
-    SubobjectId: 10100778966413107587
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78604,12 +75104,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16844870132747545155
-    SubobjectId: 4681422295010642174
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2429464596159804852
@@ -78675,12 +75169,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2429464596159804852
-    SubobjectId: 9837534805708445449
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78748,12 +75236,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8171173692949664654
-    SubobjectId: 15588954796784955699
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 18358207794739737423
@@ -78789,12 +75271,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 18358207794739737423
-    SubobjectId: 6338733308883620338
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78865,12 +75341,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 3359613211920382063
-    SubobjectId: 9776609522503916242
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -78943,12 +75413,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17361962788192967050
-    SubobjectId: 6467404147766328119
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10978848582161441303
@@ -79020,12 +75484,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10978848582161441303
-    SubobjectId: 3561912416612483242
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17422144891708817531
@@ -79095,12 +75553,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17422144891708817531
-    SubobjectId: 6410069903910757062
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -79172,12 +75624,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4502424528107838234
-    SubobjectId: 10901265974806886823
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16719268520012887844
@@ -79212,12 +75658,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 16719268520012887844
-    SubobjectId: 4698387765170541977
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -79288,12 +75728,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 12244738937979051754
-    SubobjectId: 62150810160053335
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -79366,12 +75800,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7402839611932305165
-    SubobjectId: 14956150359777559984
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1443304736031505913
@@ -79443,12 +75871,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1443304736031505913
-    SubobjectId: 13633916592520617796
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16221976393459405960
@@ -79518,12 +75940,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 16221976393459405960
-    SubobjectId: 5193434804952938037
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -79595,12 +76011,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8140389832903986564
-    SubobjectId: 15693559849801789241
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 444092396918198774
@@ -79635,12 +76045,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 444092396918198774
-    SubobjectId: 12617814347129287499
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -79753,12 +76157,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11897216892358490644
-    SubobjectId: 876415632511916201
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 12265604796830468492
@@ -79846,12 +76244,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 12265604796830468492
-    SubobjectId: 219249725841173297
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -79942,12 +76334,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3149599541591711321
-    SubobjectId: 9405592990471929060
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11026342307952433962
@@ -80035,12 +76421,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11026342307952433962
-    SubobjectId: 3474438111581747607
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -80154,12 +76534,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7680458112506088078
-    SubobjectId: 14097594015264565299
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11359266601718242606
@@ -80226,12 +76600,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11359266601718242606
-    SubobjectId: 3789489018298367891
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -80300,12 +76668,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14984399214339760020
-    SubobjectId: 7404348060323036457
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5399746948782329692
@@ -80339,12 +76701,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 5399746948782329692
-    SubobjectId: 16419281847053102561
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -80460,12 +76816,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7389065169063110223
-    SubobjectId: 14968271339012670706
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4784770176875073352
@@ -80557,12 +76907,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4784770176875073352
-    SubobjectId: 16957226623863664117
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11309813341922477824
@@ -80595,12 +76939,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11309813341922477824
-    SubobjectId: 3874863373975184829
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -80674,12 +77012,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11595247243496701866
-    SubobjectId: 709412643530054935
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7593180491419413358
@@ -80751,12 +77083,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7593180491419413358
-    SubobjectId: 13858321008480471507
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -80830,12 +77156,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1999185076742188880
-    SubobjectId: 12865738333892890093
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10189880863196544085
@@ -80908,12 +77228,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10189880863196544085
-    SubobjectId: 2619822080682909416
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7392974137257868003
@@ -80947,12 +77261,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7392974137257868003
-    SubobjectId: 14964298465471010910
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -81068,12 +77376,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15432377206628844740
-    SubobjectId: 9158089269725079161
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16989712751638772893
@@ -81165,12 +77467,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16989712751638772893
-    SubobjectId: 4824856438464536096
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 12186855467753627252
@@ -81203,12 +77499,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 12186855467753627252
-    SubobjectId: 5251953719147721
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -81282,12 +77572,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10684257332697212935
-    SubobjectId: 4428405722919897786
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 901988298247551655
@@ -81359,12 +77643,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 901988298247551655
-    SubobjectId: 11940803417270622234
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -81438,12 +77716,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 18189292188513210767
-    SubobjectId: 6151802993901253426
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5919298313310155849
@@ -81516,12 +77788,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5919298313310155849
-    SubobjectId: 18093020811444000500
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15160288171526386258
@@ -81557,12 +77823,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15160288171526386258
-    SubobjectId: 8887547245220057327
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -81655,12 +77915,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9242236785813475497
-    SubobjectId: 2986385210658058772
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13912240442770979538
@@ -81752,12 +78006,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13912240442770979538
-    SubobjectId: 7503265387184314479
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 3910523988760666807
@@ -81825,12 +78073,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 3910523988760666807
-    SubobjectId: 11490433330639011850
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -81904,12 +78146,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3692383349700013707
-    SubobjectId: 11101157519255047222
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4697888531432734546
@@ -81982,12 +78218,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4697888531432734546
-    SubobjectId: 16717502966501268975
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11657139422552550258
@@ -82021,12 +78251,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11657139422552550258
-    SubobjectId: 645345634769390031
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82088,12 +78312,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10691381759854633036
-    SubobjectId: 4426383081247392497
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82167,12 +78385,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9327969661649850328
-    SubobjectId: 2900698698993872229
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7438065672460109686
@@ -82208,12 +78420,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7438065672460109686
-    SubobjectId: 14847120813344564683
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82271,12 +78477,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5170224273010680426
-    SubobjectId: 17217986435682025687
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82345,12 +78545,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17336846586813556717
-    SubobjectId: 6461006271423317328
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82424,12 +78618,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17566878162677490942
-    SubobjectId: 6555225072636806723
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 8175774737325027354
@@ -82465,12 +78653,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 8175774737325027354
-    SubobjectId: 15583843579014664871
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82543,12 +78725,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13713516039963763902
-    SubobjectId: 1685176165223646723
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17610245746761736413
@@ -82620,12 +78796,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17610245746761736413
-    SubobjectId: 6725820179271647840
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 12935954335886973645
@@ -82695,12 +78865,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 12935954335886973645
-    SubobjectId: 1925144852501280880
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82772,12 +78936,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1321375307178256280
-    SubobjectId: 13503119008825607461
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4874598852762172100
@@ -82848,12 +79006,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4874598852762172100
-    SubobjectId: 16903360912283359353
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9185142412995660957
@@ -82887,12 +79039,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 9185142412995660957
-    SubobjectId: 15441416752848580128
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -82963,12 +79109,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1228363079509832898
-    SubobjectId: 13276265712325121663
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83042,12 +79182,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10461415918859683409
-    SubobjectId: 4043294292126115052
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7695548263386048352
@@ -83119,12 +79253,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7695548263386048352
-    SubobjectId: 14122959376831137245
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15111015847601745372
@@ -83158,12 +79286,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15111015847601745372
-    SubobjectId: 8685152571161874273
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83225,12 +79347,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4094475782954095522
-    SubobjectId: 10511472872237445407
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83304,12 +79420,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7167075168540334865
-    SubobjectId: 14574862263412046252
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5068568613857272790
@@ -83345,12 +79455,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 5068568613857272790
-    SubobjectId: 17250454161176985963
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83408,12 +79512,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4120822493307120882
-    SubobjectId: 10377097133864488527
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83482,12 +79580,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 8970540153302691958
-    SubobjectId: 15370506633428406987
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83561,12 +79653,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16821745675787061725
-    SubobjectId: 4629727305528601440
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 18022904111800757145
@@ -83602,12 +79688,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 18022904111800757145
-    SubobjectId: 5993436962600159524
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83680,12 +79760,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14310895676688855350
-    SubobjectId: 8045754602450277259
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10559321689284995595
@@ -83757,12 +79831,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10559321689284995595
-    SubobjectId: 4303470661656758454
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2383351564543322859
@@ -83832,12 +79900,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2383351564543322859
-    SubobjectId: 9809294618163726422
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -83909,12 +79971,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2392082752164040331
-    SubobjectId: 9800011406977182774
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11954486039538940810
@@ -83985,12 +80041,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11954486039538940810
-    SubobjectId: 924396062827911479
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16351232995924264351
@@ -84024,12 +80074,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 16351232995924264351
-    SubobjectId: 5465680151096551202
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -84100,12 +80144,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7347740036389297687
-    SubobjectId: 14756794353054874794
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -84179,12 +80217,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14588458818069709948
-    SubobjectId: 7153509399670089409
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15953190548987956267
@@ -84256,12 +80288,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15953190548987956267
-    SubobjectId: 8383414021780336278
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4185645046399543736
@@ -84296,12 +80322,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4185645046399543736
-    SubobjectId: 10602780958877911813
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -84369,12 +80389,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11069723235323142441
-    SubobjectId: 3507545741388661652
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -84446,12 +80460,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16624057009189822929
-    SubobjectId: 5730341384774157164
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1993406806373084695
@@ -84521,12 +80529,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1993406806373084695
-    SubobjectId: 12869247078571936938
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -84598,12 +80600,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6983913192710422066
-    SubobjectId: 14544683884435348623
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10612001343859242320
@@ -84669,12 +80665,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10612001343859242320
-    SubobjectId: 4213018607950993389
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -84746,12 +80736,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9932143948510514834
-    SubobjectId: 2370248728351534127
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17906920276206981057
@@ -84822,12 +80806,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17906920276206981057
-    SubobjectId: 5886461967207214460
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2476577361842096501
@@ -84861,12 +80839,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 2476577361842096501
-    SubobjectId: 10046494033769556936
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -84940,12 +80912,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2409032577308360858
-    SubobjectId: 9825828237118939687
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15039323490300096717
@@ -85018,12 +80984,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15039323490300096717
-    SubobjectId: 8756310411729654384
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10833835587867083462
@@ -85093,12 +81053,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10833835587867083462
-    SubobjectId: 4569822062842519675
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -85170,12 +81124,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3679408830867280576
-    SubobjectId: 11114077058747248765
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15426303435222786524
@@ -85209,12 +81157,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15426303435222786524
-    SubobjectId: 9162571085733069665
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -85288,12 +81230,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11987928810922440754
-    SubobjectId: 1112227859587848847
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 430813043659165296
@@ -85366,12 +81302,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 430813043659165296
-    SubobjectId: 12450287804999396557
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 187720300434123893
@@ -85441,12 +81371,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 187720300434123893
-    SubobjectId: 12369183084597497544
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -85518,12 +81442,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8513827119662797918
-    SubobjectId: 16075018659900405475
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13148811064579469378
@@ -85562,12 +81480,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13148811064579469378
-    SubobjectId: 2254954424705815295
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -85635,12 +81547,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10919176884815961129
-    SubobjectId: 4520054244831248020
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5338663025694853362
@@ -85707,12 +81613,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5338663025694853362
-    SubobjectId: 16367344770897996367
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -85784,12 +81684,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11400493006288208048
-    SubobjectId: 3964415728640549389
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10794100315300270423
@@ -85859,12 +81753,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10794100315300270423
-    SubobjectId: 4395119514460795882
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -85936,12 +81824,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13979957784883370438
-    SubobjectId: 7723683720961145723
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 10474563427863778327
@@ -86008,12 +81890,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10474563427863778327
-    SubobjectId: 4066714272119092906
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -86085,12 +81961,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5095581868910734468
-    SubobjectId: 17259452193106120249
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -86164,12 +82034,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 18343486060505022384
-    SubobjectId: 6315145670534503693
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2146747905077259946
@@ -86233,12 +82097,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2146747905077259946
-    SubobjectId: 13040180683648306199
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -86308,12 +82166,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14776010834518023565
-    SubobjectId: 7222700079058009904
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4862003749279608200
@@ -86381,12 +82233,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4862003749279608200
-    SubobjectId: 16882744046741131061
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 12029385844312696351
@@ -86425,12 +82271,6 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 12029385844312696351
-    SubobjectId: 1135529797098390690
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13778957440629755378
@@ -86463,12 +82303,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13778957440629755378
-    SubobjectId: 1588205155705384783
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -86536,12 +82370,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10249446619412086291
-    SubobjectId: 2814637067464055982
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -86611,12 +82439,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8970919915660790003
-    SubobjectId: 15370183851863534158
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4318480969011848408
@@ -86685,12 +82507,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4318480969011848408
-    SubobjectId: 10582495311925167717
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13360862534097399863
@@ -86756,12 +82572,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13360862534097399863
-    SubobjectId: 1178132528742421130
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -86835,12 +82645,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3909365857091025642
-    SubobjectId: 11489275757147347031
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9236391641967847889
@@ -86913,12 +82717,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9236391641967847889
-    SubobjectId: 2962385206584298348
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 2479542380308594499
@@ -86985,12 +82783,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2479542380308594499
-    SubobjectId: 10041859819211906558
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -87062,12 +82854,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3017533264900598566
-    SubobjectId: 9282673514671114651
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 18171762303465010418
@@ -87137,12 +82923,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 18171762303465010418
-    SubobjectId: 6133288529862104655
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -87214,12 +82994,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1303092448917830118
-    SubobjectId: 13485821589736430427
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 18113177705038450311
@@ -87285,12 +83059,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 18113177705038450311
-    SubobjectId: 5939174522117860410
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -87362,12 +83130,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14315847151272051645
-    SubobjectId: 8043107635528917248
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -87441,12 +83203,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10882717800402882399
-    SubobjectId: 4482751560910155234
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5234141906710376304
@@ -87510,12 +83266,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5234141906710376304
-    SubobjectId: 16253958005949730253
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -87585,12 +83335,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14958789837532155245
-    SubobjectId: 7397880365968715728
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 8431285277441957032
@@ -87658,12 +83402,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8431285277441957032
-    SubobjectId: 15867080529483251221
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9526797227859488051
@@ -87706,12 +83444,6 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 9526797227859488051
-    SubobjectId: 3244627477117046670
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 1789448748653103838
@@ -87746,12 +83478,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 1789448748653103838
-    SubobjectId: 12819398218643761251
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -87824,12 +83550,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9869213118884594143
-    SubobjectId: 2433278536036442978
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 7772281814272691204
@@ -87901,12 +83621,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7772281814272691204
-    SubobjectId: 14046289374816431801
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 4972438090576484861
@@ -87976,12 +83690,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4972438090576484861
-    SubobjectId: 17020060650486627136
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -88053,12 +83761,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4636872215690136600
-    SubobjectId: 16819742102926913189
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17866014351460503382
@@ -88129,12 +83831,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17866014351460503382
-    SubobjectId: 6828043631348198891
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 15075542659019038194
@@ -88169,12 +83865,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15075542659019038194
-    SubobjectId: 8648554821779390287
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -88247,12 +83937,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 18286961146637296148
-    SubobjectId: 6123372271548137641
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 9025602995163261709
@@ -88324,12 +84008,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9025602995163261709
-    SubobjectId: 15308758778050857392
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16306755950531263428
@@ -88399,12 +84077,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 16306755950531263428
-    SubobjectId: 5440344805203908985
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -88476,12 +84148,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11849732426137184124
-    SubobjectId: 954890932935755201
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13183256107190000014
@@ -88551,12 +84217,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13183256107190000014
-    SubobjectId: 2289681775472556851
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -88628,12 +84288,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2444452387788363919
-    SubobjectId: 9862514416905239090
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11967199378208728514
@@ -88703,12 +84357,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11967199378208728514
-    SubobjectId: 1091780448706430847
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -88780,12 +84428,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14335943639087532596
-    SubobjectId: 8052788173691971721
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13521847019569601554
@@ -88855,12 +84497,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13521847019569601554
-    SubobjectId: 1339118153492070063
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -88932,12 +84568,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10106476342866968558
-    SubobjectId: 2698687839025782099
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 59656801555225927
@@ -89007,12 +84637,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 59656801555225927
-    SubobjectId: 12241119614688804858
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -89084,12 +84708,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17473309305638798443
-    SubobjectId: 6579595061029627606
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17647507444558721634
@@ -89159,12 +84777,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17647507444558721634
-    SubobjectId: 6762799568176206047
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -89236,12 +84848,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16122743387627202026
-    SubobjectId: 8542692241095329623
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16732021455036348618
@@ -89312,12 +84918,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 16732021455036348618
-    SubobjectId: 4685665801155566199
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13823338517073255605
@@ -89387,12 +84987,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 13823338517073255605
-    SubobjectId: 1649616816040148488
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 5700860717511995633
@@ -89435,12 +85029,6 @@ Objects {
     }
     DecalBP {
     }
-  }
-  InstanceHistory {
-    SelfId: 5700860717511995633
-    SubobjectId: 16586553448115393100
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -89515,12 +85103,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14894830433944488508
-    SubobjectId: 7460161897632196737
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 13542817601922525183
@@ -89590,12 +85172,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 13542817601922525183
-    SubobjectId: 1351924580700833090
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -89667,12 +85243,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 12615954459970323125
-    SubobjectId: 443076077615341576
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -89748,12 +85318,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11288092857447173169
-    SubobjectId: 3861164058266201740
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 6670198298249114335
@@ -89828,12 +85392,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 6670198298249114335
-    SubobjectId: 17700148081057108066
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 17280946061339084097
@@ -89904,12 +85462,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 17280946061339084097
-    SubobjectId: 5107222745116600316
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -89983,12 +85535,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4384514457133810168
-    SubobjectId: 10802495370890027845
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 16184811955390282667
@@ -90060,12 +85606,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 16184811955390282667
-    SubobjectId: 5309392518834379030
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {
@@ -90139,12 +85679,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 14343386223836618194
-    SubobjectId: 7944122297381977967
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
-  }
 }
 Objects {
   Id: 11019857103651196125
@@ -90216,12 +85750,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11019857103651196125
-    SubobjectId: 3592928310000414304
-    InstanceId: 8049378106977468645
-    TemplateId: 8815875038641857701
   }
 }
 Objects {

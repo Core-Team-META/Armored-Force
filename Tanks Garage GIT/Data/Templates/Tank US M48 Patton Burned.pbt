@@ -1,5 +1,5 @@
 Assets {
-  Id: 3888276471265043101
+  Id: 6028044853128548708
   Name: "Tank US M48 Patton Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -177,7 +177,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -1132,7 +1132,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 41259329107093705
+            Id: 15015432034836380672
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7516,7 +7516,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -7686,7 +7686,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -23385,7 +23385,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {
@@ -23475,7 +23475,7 @@ Assets {
       }
     }
     Assets {
-      Id: 41259329107093705
+      Id: 15015432034836380672
       Name: "Cylinder - Rounded Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {

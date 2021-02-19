@@ -1,5 +1,5 @@
 Assets {
-  Id: 10568221089724526740
+  Id: 18304278403620108250
   Name: "Tank German Lowe Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -125,7 +125,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -23212,7 +23212,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -23226,7 +23226,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

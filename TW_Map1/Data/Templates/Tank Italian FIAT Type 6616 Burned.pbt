@@ -1,5 +1,5 @@
 Assets {
-  Id: 5188450975083681844
+  Id: 6261709663710860535
   Name: "Tank Italian FIAT Type 6616 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -1073,7 +1073,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9425550941315232466
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1169,7 +1169,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9425550941315232466
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1626,7 +1626,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9425550941315232466
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9201,7 +9201,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5717544946372160630
+            Id: 14842636251300108317
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -22305,7 +22305,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9425550941315232466
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -23116,7 +23116,7 @@ Assets {
       }
     }
     Assets {
-      Id: 14565993562237882178
+      Id: 9425550941315232466
       Name: "Tire Worn"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -23422,7 +23422,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5717544946372160630
+      Id: 14842636251300108317
       Name: "Sci-fi Cockpit Back 01"
       PlatformAssetType: 1
       PrimaryAsset {

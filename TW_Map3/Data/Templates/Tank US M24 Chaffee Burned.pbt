@@ -1,5 +1,5 @@
 Assets {
-  Id: 4168862517978651661
+  Id: 415270528703766185
   Name: "Tank US M24 Chaffee Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -12388,7 +12388,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25073,15 +25073,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ts_urb_dtn_floor_grate_firesc_1x2_001_ref"
-      }
-    }
-    Assets {
-      Id: 18153381962735685629
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
       }
     }
     Assets {

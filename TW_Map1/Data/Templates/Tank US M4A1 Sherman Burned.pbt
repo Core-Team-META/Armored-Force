@@ -1,5 +1,5 @@
 Assets {
-  Id: 10508594468788258500
+  Id: 10433149572241240872
   Name: "Tank US M4A1 Sherman Burned"
   PlatformAssetType: 5
   TemplateAsset {
