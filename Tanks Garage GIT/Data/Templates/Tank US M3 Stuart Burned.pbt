@@ -1,5 +1,5 @@
 Assets {
-  Id: 1234477126139689400
+  Id: 17656652147537912598
   Name: "Tank US M3 Stuart Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -177,7 +177,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -28427,7 +28427,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

@@ -1,5 +1,5 @@
 Assets {
-  Id: 15150243857943656454
+  Id: 4170242859529654530
   Name: "Tank German Maus Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -1748,7 +1748,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12557487857239876466
+            Id: 2643451678118003098
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1819,7 +1819,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12557487857239876466
+            Id: 2643451678118003098
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1890,7 +1890,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12557487857239876466
+            Id: 2643451678118003098
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2319,7 +2319,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12557487857239876466
+            Id: 2643451678118003098
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -6241,7 +6241,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 9477708190283873988
+            Id: 9279796402303284485
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -6787,7 +6787,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 9477708190283873988
+            Id: 9279796402303284485
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25781,7 +25781,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12557487857239876466
+      Id: 2643451678118003098
       Name: "Wedge"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -25943,7 +25943,7 @@ Assets {
       }
     }
     Assets {
-      Id: 9477708190283873988
+      Id: 9279796402303284485
       Name: "Text 06: 0"
       PlatformAssetType: 1
       PrimaryAsset {

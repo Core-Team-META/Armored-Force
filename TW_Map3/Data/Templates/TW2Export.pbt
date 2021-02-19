@@ -3225,7 +3225,7 @@ Assets {
           Overrides {
             Name: "cs:EquipmentTemplate23"
             AssetReference {
-              Id: 2450311630477153028
+              Id: 841534158063459245
             }
           }
           Overrides {

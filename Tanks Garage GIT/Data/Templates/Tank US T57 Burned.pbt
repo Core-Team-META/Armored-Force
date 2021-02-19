@@ -1,5 +1,5 @@
 Assets {
-  Id: 2595222259709941425
+  Id: 13656410226284132837
   Name: "Tank US T57 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -177,7 +177,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -22721,7 +22721,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

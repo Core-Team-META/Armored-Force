@@ -1,5 +1,5 @@
 Assets {
-  Id: 3888276471265043101
+  Id: 6028044853128548708
   Name: "Tank US M48 Patton Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -3310,7 +3310,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3389,7 +3389,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7516,7 +7516,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7842655669892217409
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -7686,7 +7686,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7842655669892217409
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -20209,7 +20209,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 15380740538046429488
+              Id: 655741318095731570
             }
           }
           Overrides {
@@ -20266,7 +20266,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15380740538046429488
+              Id: 655741318095731570
             }
           }
           Overrides {
@@ -23574,7 +23574,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5544820850613172301
+      Id: 9011007331643236308
       Name: "Modern Weapon - Grenade Handle 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -24060,7 +24060,7 @@ Assets {
       }
     }
     Assets {
-      Id: 15380740538046429488
+      Id: 655741318095731570
       Name: "Rope"
       PlatformAssetType: 2
       PrimaryAsset {

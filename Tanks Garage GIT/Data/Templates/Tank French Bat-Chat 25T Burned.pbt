@@ -1,5 +1,5 @@
 Assets {
-  Id: 12162852430913929860
+  Id: 13924359390479276914
   Name: "Tank French Bat-Chat 25T Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -180,7 +180,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -276,7 +276,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -28743,7 +28743,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

@@ -3195,7 +3195,7 @@ Assets {
           Overrides {
             Name: "cs:EquipmentTemplate18"
             AssetReference {
-              Id: 13708786670437012572
+              Id: 841534158063459245
             }
           }
           Overrides {
@@ -3490,7 +3490,7 @@ Assets {
           Overrides {
             Name: "cs:TankProjectile01"
             AssetReference {
-              Id: 1392021299545988480
+              Id: 841534158063459245
             }
           }
           Overrides {

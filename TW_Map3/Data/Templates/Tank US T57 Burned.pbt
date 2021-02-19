@@ -1,5 +1,5 @@
 Assets {
-  Id: 2595222259709941425
+  Id: 13656410226284132837
   Name: "Tank US T57 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -3925,7 +3925,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -4004,7 +4004,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -8419,7 +8419,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -8662,7 +8662,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -8753,7 +8753,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5717544946372160630
+            Id: 14842636251300108317
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -8845,7 +8845,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5717544946372160630
+            Id: 14842636251300108317
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -20632,7 +20632,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -22054,7 +22054,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -22955,7 +22955,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5544820850613172301
+      Id: 9011007331643236308
       Name: "Modern Weapon - Grenade Handle 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -23171,7 +23171,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5717544946372160630
+      Id: 14842636251300108317
       Name: "Sci-fi Cockpit Back 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -23384,15 +23384,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_ellipsoid_truncated_001"
-      }
-    }
-    Assets {
-      Id: 18153381962735685629
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
       }
     }
     Assets {

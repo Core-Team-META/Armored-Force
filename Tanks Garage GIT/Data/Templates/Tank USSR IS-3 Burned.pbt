@@ -1,5 +1,5 @@
 Assets {
-  Id: 17593799750764969533
+  Id: 1616956077389727325
   Name: "Tank USSR IS-3 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -127,7 +127,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -25993,7 +25993,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 13776604554841829405
+            Id: 11528903682927826117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -26328,7 +26328,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {
@@ -26967,7 +26967,7 @@ Assets {
       }
     }
     Assets {
-      Id: 13776604554841829405
+      Id: 11528903682927826117
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {

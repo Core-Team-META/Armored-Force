@@ -1,5 +1,5 @@
 Assets {
-  Id: 808325174775388252
+  Id: 14823438633197258587
   Name: "Tank German Jagdtiger Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -9326,7 +9326,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9474,7 +9474,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9687,7 +9687,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9762,7 +9762,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9910,7 +9910,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10120,7 +10120,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10218,7 +10218,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 15380740538046429488
+              Id: 655741318095731570
             }
           }
           Overrides {
@@ -26013,7 +26013,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -26175,7 +26175,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 6855348992067761797
+            Id: 15174611850382293842
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -31357,7 +31357,7 @@ Assets {
       }
     }
     Assets {
-      Id: 198353679974341757
+      Id: 16374150260036817633
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -31384,16 +31384,7 @@ Assets {
       }
     }
     Assets {
-      Id: 18153381962735685629
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
-      }
-    }
-    Assets {
-      Id: 15380740538046429488
+      Id: 655741318095731570
       Name: "Rope"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -31564,7 +31555,7 @@ Assets {
       }
     }
     Assets {
-      Id: 6855348992067761797
+      Id: 15174611850382293842
       Name: "Modern Weapon - Grenade Canister 04"
       PlatformAssetType: 1
       PrimaryAsset {

@@ -1,5 +1,5 @@
 Assets {
-  Id: 15150243857943656454
+  Id: 4170242859529654530
   Name: "Tank German Maus Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -178,7 +178,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -274,7 +274,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -7386,7 +7386,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4426387598414765394
+            Id: 15585852823533740787
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7457,7 +7457,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4426387598414765394
+            Id: 15585852823533740787
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25682,7 +25682,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {
@@ -25988,7 +25988,7 @@ Assets {
       }
     }
     Assets {
-      Id: 4426387598414765394
+      Id: 15585852823533740787
       Name: "Arch"
       PlatformAssetType: 1
       PrimaryAsset {

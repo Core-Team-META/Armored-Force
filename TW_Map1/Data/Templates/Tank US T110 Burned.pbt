@@ -1,5 +1,5 @@
 Assets {
-  Id: 9537002495665943841
+  Id: 6160157923482332176
   Name: "Tank US T110 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -2292,7 +2292,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2371,7 +2371,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5544820850613172301
+            Id: 9011007331643236308
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2746,7 +2746,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7842655669892217409
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -3023,7 +3023,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7842655669892217409
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -20552,7 +20552,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5544820850613172301
+      Id: 9011007331643236308
       Name: "Modern Weapon - Grenade Handle 01"
       PlatformAssetType: 1
       PrimaryAsset {

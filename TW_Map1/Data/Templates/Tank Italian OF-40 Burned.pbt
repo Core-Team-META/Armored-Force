@@ -1,5 +1,5 @@
 Assets {
-  Id: 4819393994102459920
+  Id: 7999295844299688900
   Name: "Tank Italian OF-40 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -39097,7 +39097,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5717544946372160630
+            Id: 14842636251300108317
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -40174,7 +40174,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5717544946372160630
+      Id: 14842636251300108317
       Name: "Sci-fi Cockpit Back 01"
       PlatformAssetType: 1
       PrimaryAsset {

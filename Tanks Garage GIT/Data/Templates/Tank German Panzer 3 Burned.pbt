@@ -1,5 +1,5 @@
 Assets {
-  Id: 12043834785755873727
+  Id: 16378492590068368173
   Name: "Tank German Panzer 3 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -126,7 +126,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -10039,7 +10039,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 15434117106106413882
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -10084,7 +10084,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 15434117106106413882
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -20353,7 +20353,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {
@@ -20803,7 +20803,7 @@ Assets {
       }
     }
     Assets {
-      Id: 15434117106106413882
+      Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {

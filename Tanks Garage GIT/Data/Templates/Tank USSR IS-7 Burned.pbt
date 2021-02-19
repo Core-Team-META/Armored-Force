@@ -1,5 +1,5 @@
 Assets {
-  Id: 16555861988951459037
+  Id: 5230482351496717709
   Name: "Tank USSR IS-7 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -7,7 +7,7 @@ Assets {
       RootId: 86597620513325297
       Objects {
         Id: 86597620513325297
-        Name: "Tank USSR IS-7 Burned"
+        Name: "Tank USSR IS-7 Burned_1"
         Transform {
           Scale {
             X: 1
@@ -9084,7 +9084,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4426387598414765394
+            Id: 15585852823533740787
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9155,7 +9155,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4426387598414765394
+            Id: 15585852823533740787
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9260,7 +9260,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4426387598414765394
+            Id: 15585852823533740787
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9331,7 +9331,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4426387598414765394
+            Id: 15585852823533740787
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -9701,7 +9701,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -9926,7 +9926,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -10151,7 +10151,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -10377,7 +10377,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 12238882582629391379
+              Id: 14190265191030884417
             }
           }
           Overrides {
@@ -25115,7 +25115,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 13776604554841829405
+            Id: 11528903682927826117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25180,7 +25180,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 13776604554841829405
+            Id: 11528903682927826117
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25281,7 +25281,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 12875557425744158715
+            Id: 8857078069961347605
           }
           TeamSettings {
           }
@@ -25628,7 +25628,7 @@ Assets {
       }
     }
     Assets {
-      Id: 4426387598414765394
+      Id: 15585852823533740787
       Name: "Arch"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -26069,7 +26069,7 @@ Assets {
       }
     }
     Assets {
-      Id: 13776604554841829405
+      Id: 11528903682927826117
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -26078,7 +26078,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12875557425744158715
+      Id: 8857078069961347605
       Name: "Smoke Volume VFX"
       PlatformAssetType: 8
       PrimaryAsset {

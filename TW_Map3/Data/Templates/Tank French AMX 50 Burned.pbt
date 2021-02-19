@@ -1,5 +1,5 @@
 Assets {
-  Id: 4938237194934443527
+  Id: 8037028623213273329
   Name: "Tank French AMX 50 Burned"
   PlatformAssetType: 5
   TemplateAsset {
@@ -4103,7 +4103,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2112804179467698174
+              Id: 10082876259061602081
             }
           }
           Overrides {
@@ -4492,7 +4492,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2112804179467698174
+              Id: 10082876259061602081
             }
           }
           Overrides {
@@ -5030,7 +5030,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -20285,7 +20285,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -20496,7 +20496,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -23603,7 +23603,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -23688,7 +23688,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24467,7 +24467,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14077966582098404661
+            Id: 15784603520087045491
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24738,7 +24738,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24800,7 +24800,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24863,7 +24863,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18153381962735685629
+            Id: 7900187111309595218
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -28158,7 +28158,7 @@ Assets {
       }
     }
     Assets {
-      Id: 2112804179467698174
+      Id: 10082876259061602081
       Name: "Metal Frame 01"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -28194,7 +28194,7 @@ Assets {
       }
     }
     Assets {
-      Id: 18153381962735685629
+      Id: 7900187111309595218
       Name: "Plane Circle - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -28455,15 +28455,6 @@ Assets {
       }
     }
     Assets {
-      Id: 7900187111309595218
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
-      }
-    }
-    Assets {
       Id: 7444698281278331687
       Name: "Military Tank Historic Antenna 01"
       PlatformAssetType: 1
@@ -28590,7 +28581,7 @@ Assets {
       }
     }
     Assets {
-      Id: 14077966582098404661
+      Id: 15784603520087045491
       Name: "Pipe - 4-Sided Thick"
       PlatformAssetType: 1
       PrimaryAsset {
