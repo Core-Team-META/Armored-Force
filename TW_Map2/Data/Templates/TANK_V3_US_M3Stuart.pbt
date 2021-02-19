@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 40
+            Int: 60
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 200
+            Int: 500
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 300
+            Int: 600
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -103,7 +103,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TopSpeed"
-            Int: 900
+            Int: 1000
           }
           Overrides {
             Name: "cs:UpgradedTopSpeed"
@@ -115,7 +115,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 800
           }
           Overrides {
             Name: "cs:UpgradedAcceleration"

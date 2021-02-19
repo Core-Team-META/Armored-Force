@@ -43,11 +43,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
-            Int: 8
+            Int: 5
           }
           Overrides {
             Name: "cs:UpgradedElevation"
-            Int: 12
+            Int: 10
           }
           Overrides {
             Name: "cs:MaxElevationAngle"
@@ -59,7 +59,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileSpeed"
-            Int: 7000
+            Int: 7500
           }
           Overrides {
             Name: "cs:ArmorPenetrationValues"
@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 50
+            Int: 215
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 70
+            Int: 225
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 1000
+            Int: 1700
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 1200
+            Int: 1800
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -119,7 +119,7 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedAcceleration"
-            Int: 1000
+            Int: 700
           }
           Overrides {
             Name: "cs:HullTraverseSpeed"

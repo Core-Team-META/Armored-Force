@@ -63,22 +63,26 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "STATSSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") == "LOBBYSTATE" then
 	
 		winner = -1
-	
+		
 		return
 		
 	end
 	
-	while winner < 0 do
+	if mainGameStateManager:GetCustomProperty("GameState") == "STATSSTATE" then
 	
-		Task.Wait()
+		while winner < 0 do
+		
+			Task.Wait()
+			
+		end
+		
+		SaveStatistics()
 		
 	end
-	
-	SaveStatistics()
-		
+			
 end
 
 function SaveStatistics()

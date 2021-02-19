@@ -91,12 +91,10 @@ function CheckGameMode(manager, propertyName)
 	
 	if votingMachineServer:GetCustomProperty("SelectedMatchID") == gameModeID then
 	
-		print("frontline enabled")
-	
 		gameModeEnabled = true
 		
 	else 
-		print("frontline disabled")
+
 		gameModeEnabled = false
 		
 	end
