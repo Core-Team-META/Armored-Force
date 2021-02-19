@@ -7,7 +7,7 @@ Assets {
       RootId: 452241511852978616
       Objects {
         Id: 452241511852978616
-        Name: "TANK_V3_US_M24Chaffee_1"
+        Name: "TANK_V3_US_M24Chaffee"
         Transform {
           Scale {
             X: 1
@@ -27,11 +27,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 9
+            Float: 7.5
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 7
+            Float: 6.5
           }
           Overrides {
             Name: "cs:TurretTraverseSpeed"
@@ -43,11 +43,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
-            Int: 8
+            Int: 15
           }
           Overrides {
             Name: "cs:UpgradedElevation"
-            Int: 12
+            Int: 20
           }
           Overrides {
             Name: "cs:MaxElevationAngle"
@@ -59,7 +59,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ProjectileSpeed"
-            Int: 8000
+            Int: 7000
           }
           Overrides {
             Name: "cs:ArmorPenetrationValues"
@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 40
+            Int: 120
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 60
+            Int: 130
           }
           Overrides {
             Name: "cs:AllowHoldDownFiring"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 250
+            Int: 550
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 350
+            Int: 650
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -115,7 +115,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 800
           }
           Overrides {
             Name: "cs:UpgradedAcceleration"

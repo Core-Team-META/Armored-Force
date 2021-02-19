@@ -7,7 +7,7 @@ Assets {
       RootId: 14708714259620756992
       Objects {
         Id: 14708714259620756992
-        Name: "TANK_V3_IT_FIAT6616_1"
+        Name: "TANK_V3_IT_FIAT6616"
         Transform {
           Scale {
             X: 1
@@ -27,7 +27,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 1.4
+            Float: 0.7
           }
           Overrides {
             Name: "cs:UpgradedReload"
@@ -43,7 +43,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
-            Int: 22
+            Int: 25
           }
           Overrides {
             Name: "cs:UpgradedElevation"
@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Hitpoints"
-            Int: 200
+            Int: 600
           }
           Overrides {
             Name: "cs:UpgradedHitpoints"
-            Int: 400
+            Int: 700
           }
           Overrides {
             Name: "cs:MOBILITY"
@@ -115,11 +115,11 @@ Assets {
           }
           Overrides {
             Name: "cs:Acceleration"
-            Int: 500
+            Int: 1000
           }
           Overrides {
             Name: "cs:UpgradedAcceleration"
-            Int: 1000
+            Int: 1200
           }
           Overrides {
             Name: "cs:HullTraverseSpeed"
