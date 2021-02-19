@@ -43,7 +43,6 @@ local EQUIPMENT_TEMPLATE14 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE15 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate15")
 local EQUIPMENT_TEMPLATE16 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate16")
 local EQUIPMENT_TEMPLATE17 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate17")
-local EQUIPMENT_TEMPLATE18 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate18")
 local EQUIPMENT_TEMPLATE19 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate19")
 local EQUIPMENT_TEMPLATE20 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate20")
 local EQUIPMENT_TEMPLATE21 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate21")
@@ -60,6 +59,10 @@ local EQUIPMENT_TEMPLATE31 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate
 local EQUIPMENT_TEMPLATE32 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate32")
 local EQUIPMENT_TEMPLATE33 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate33")
 local EQUIPMENT_TEMPLATE34 = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate34")
+local EQUIPMENT_BABY = COMPONENT_ROOT:GetCustomProperty("EquipmentBaby")
+local EQUIPMENT_TOY = COMPONENT_ROOT:GetCustomProperty("EquipmentToy")
+local EQUIPMENT_STYLIZEDTOY = COMPONENT_ROOT:GetCustomProperty("EquipmentStylizedToy")
+local EQUIPMENT_CARTOONTOY = COMPONENT_ROOT:GetCustomProperty("EquipmentCartoonToy")
 local TEAM = COMPONENT_ROOT:GetCustomProperty("Team")
 local REPLACE_ON_EACH_RESPAWN = COMPONENT_ROOT:GetCustomProperty("ReplaceOnEachRespawn")
 
@@ -222,15 +225,15 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--us m24 chaffee or italian of-40
+		--us m24 chaffee or italian of-40 or prototype sherman baby
 		if bindingPressed == "ability_extra_6" then
 			RemovePlayerEquipment(player)
 			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
 				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE33)
-				selectedEquipment[player] = EQUIPMENT_TEMPLATE33
+			elseif player:IsBindingPressed("ability_extra_12") or player:IsBindingPressed("ability_extra_13") then
+					equipment[player] = World.SpawnAsset(EQUIPMENT_BABY)
 			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE6)
-			selectedEquipment[player] = EQUIPMENT_TEMPLATE6
 			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
@@ -238,15 +241,15 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--us m10 wolverine or italian fiat type 6616
+		--us m10 wolverine or italian fiat type 6616 or prototype sherman toy
 		if bindingPressed == "ability_extra_7" then
 			RemovePlayerEquipment(player)
 			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
 				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE34)
-				selectedEquipment[player] = EQUIPMENT_TEMPLATE34
+			elseif player:IsBindingPressed("ability_extra_12") or player:IsBindingPressed("ability_extra_13") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_TOY)
 			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE7)
-			selectedEquipment[player] = EQUIPMENT_TEMPLATE7
 			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
@@ -254,26 +257,27 @@ function OnBindingPressed(player,bindingPressed)
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--us m6a1 heavy
+		--us m6a1 heavy or prototype sherman stylized toy
 		if bindingPressed == "ability_extra_8" then
 			RemovePlayerEquipment(player)
+			if player:IsBindingPressed("ability_extra_12") or player:IsBindingPressed("ability_extra_13") then
+				equipment[player] = World.SpawnAsset(EQUIPMENT_STYLIZEDTOY)
+			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE8)
-			selectedEquipment[player] = EQUIPMENT_TEMPLATE8
+			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
 			player.movementControlMode = MovementControlMode.FACING_RELATIVE
 			equipment[player].visibility = Visibility.FORCE_ON
 			tankBurning = false
 		end
-		--us m48 patton
+		--us m48 patton or prototype sherman cartoon toy
 		if bindingPressed == "ability_extra_9" then
 			RemovePlayerEquipment(player)
 			if player:IsBindingPressed("ability_extra_12") or player:IsBindingPressed("ability_extra_13") then
-				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE18)
-				selectedEquipment[player] = EQUIPMENT_TEMPLATE18
+				equipment[player] = World.SpawnAsset(EQUIPMENT_CARTOONTOY)
 			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE9)
-			selectedEquipment[player] = EQUIPMENT_TEMPLATE9
 			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
