@@ -23,8 +23,6 @@ Objects {
   ChildIds: 9479035303955472683
   ChildIds: 6589618948939414272
   ChildIds: 2908182587629757492
-  ChildIds: 10527926259163163275
-  ChildIds: 6787120126423223440
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,93 +32,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 6787120126423223440
-  Name: "TANK_V3_US_M4A1Sherman_Baby"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5925785973181348585
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_V3_US_M4A1Sherman_Baby"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4314373372074474287
-    }
-  }
-}
-Objects {
-  Id: 10527926259163163275
-  Name: "TANK_V3_US_M4A1Sherman_StylizedToy"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7779965541741629602
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_V3_US_M4A1Sherman_StylizedToy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 145
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4271918270906671636
-    }
   }
 }
 Objects {

@@ -16255,7 +16255,7 @@ Objects {
     }
     Overrides {
       Name: "cs:VoteCountdown"
-      Int: 100
+      Int: 20
     }
     Overrides {
       Name: "cs:ToggleUI"
@@ -16413,11 +16413,11 @@ Objects {
     }
     Overrides {
       Name: "cs:VictoryMaxDuration"
-      Int: 15
+      Int: 10
     }
     Overrides {
       Name: "cs:StatsMaxDuration"
-      Int: 15
+      Int: 10
     }
     Overrides {
       Name: "cs:TankSettings"

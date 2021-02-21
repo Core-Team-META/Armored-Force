@@ -11,8 +11,6 @@ local matchSelection = {}
 
 local voteTracker = {}
 
-local playerList = {}
-
 local checkerTask = nil
 
 local voteInProgress = false
@@ -68,16 +66,14 @@ function StateSTART(manager, propertyName)
 		return
 		
 	end
-
-	playerList = Game.GetPlayers()
 	
-	for x, p in pairs(playerList) do
+	for x, p in pairs(Game.GetPlayers()) do
 	
 		p.lookControlMode =  LookControlMode.NONE
 		
 	end
 	
-	timer = voteCountdown
+	timer = voteCountdown * 10
 	
 	voteListener = Events.ConnectForPlayer("VOTE", SetVote)
 	
@@ -85,7 +81,7 @@ function StateSTART(manager, propertyName)
 	
 	checkerTask = Task.Spawn(VoteCheckTask)
 	checkerTask.repeatCount = -1
-	checkerTask.repeatInterval = 0.5
+	checkerTask.repeatInterval = 0.1
 	
 end
 
@@ -106,7 +102,7 @@ function StateEND()
 		
 	voteTracker = {}
 	
-	for x, p in pairs(playerList) do
+	for x, p in pairs(Game.GetPlayers()) do
 	
 		p.lookControlMode =  LookControlMode.RELATIVE
 		
@@ -147,7 +143,7 @@ function TallyVotes()
 	
 	print(selectedMatch["ID"] .. " selected.")
 	
-	for i, p in pairs(playerList) do
+	for i, p in pairs(Game.GetPlayers()) do
 	
 		print(voteTracker[p])
 		
@@ -175,7 +171,7 @@ function VoteCheckTask()
 		
 	end
 
-	script:SetNetworkedCustomProperty("Timer", math.ceil(timer/5))
+	script:SetNetworkedCustomProperty("Timer", math.ceil(timer/10))
 	
 	local count = 0
 	
@@ -185,7 +181,7 @@ function VoteCheckTask()
 		
 	end
 	
-	if count >=  #playerList or timer <= 0 then
+	if count >=  #Game.GetPlayers() or timer <= 0 then
 	
 		TallyVotes()
 		
@@ -200,6 +196,8 @@ end
 function OnPlayerLeft(player)
 
 	if voteTracker[player] then
+	
+		matchSelection[voteTracker[player]]["Votes"] = matchSelection[voteTracker[player]]["Votes"] - 1
 	
 		voteTracker[player] = nil
 		
