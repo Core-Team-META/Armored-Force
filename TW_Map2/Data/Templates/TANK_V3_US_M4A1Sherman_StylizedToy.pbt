@@ -7,7 +7,7 @@ Assets {
       RootId: 7779965541741629602
       Objects {
         Id: 7779965541741629602
-        Name: "TANK_V3_US_M4A1Sherman_StylizedBaby"
+        Name: "TANK_V3_US_M4A1Sherman_StylizedToy"
         Transform {
           Scale {
             X: 1
@@ -151,7 +151,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TankHeightTweaker"
-            Float: 30
+            Float: -280
           }
           Overrides {
             Name: "cs:TankAngleTweaker"
@@ -159,15 +159,19 @@ Assets {
           }
           Overrides {
             Name: "cs:TankID"
-            String: "CHAF"
+            String: "BSST"
           }
           Overrides {
             Name: "cs:TankType"
-            String: "LIGHT"
+            String: "BABY"
           }
           Overrides {
             Name: "cs:VehicleTierValue"
             Int: 1
+          }
+          Overrides {
+            Name: "cs:ReverseSpeed"
+            Int: 500
           }
         }
         WantsNetworking: true
@@ -445,9 +449,9 @@ Assets {
         Name: "ServerCollisionTrigger"
         Transform {
           Location {
-            X: -48.4130898
-            Y: 5.32087088
-            Z: 101.739555
+            X: -48.4135475
+            Y: 5.32091093
+            Z: 166.428589
           }
           Rotation {
             Pitch: 2.7841351
@@ -500,8 +504,8 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: -62.9743385
-            Z: 23.267128
+            X: -62.9748154
+            Z: 45.0987091
           }
           Rotation {
           }
@@ -765,8 +769,8 @@ Assets {
         Name: "TurretHelper"
         Transform {
           Location {
-            X: -62.9743385
-            Z: 23.267128
+            X: -62.9748154
+            Z: 45.0987091
           }
           Rotation {
           }
@@ -836,6 +840,7 @@ Assets {
         Name: "ServerContext2"
         Transform {
           Location {
+            Z: 21.8314934
           }
           Rotation {
           }
@@ -866,8 +871,8 @@ Assets {
         Name: "LeftSuspensionSet"
         Transform {
           Location {
-            Y: 176.046341
-            Z: -253.236786
+            Y: -228.571518
+            Z: -212.546295
           }
           Rotation {
           }
@@ -878,215 +883,8 @@ Assets {
           }
         }
         ParentId: 13081460897018639243
-        ChildIds: 2593826267344460822
         ChildIds: 6817320795367401698
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 2593826267344460822
-        Name: "SuspensionUnit"
-        Transform {
-          Location {
-            X: -225.172943
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12648451249856897658
-        ChildIds: 10372220923561835358
-        ChildIds: 18413188673548169071
-        ChildIds: 3346604866263619539
-        ChildIds: 5638681701746173479
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 10372220923561835358
-        Name: "LowestPositionLimiter"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        ParentId: 2593826267344460822
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.340000033
-              G: 1.6212465e-07
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 18413188673548169071
-        Name: "HighestPositionLimiter"
-        Transform {
-          Location {
-            Z: 75
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        ParentId: 2593826267344460822
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.340000033
-              G: 1.6212465e-07
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3346604866263619539
-        Name: "HighestRaycastMarker"
-        Transform {
-          Location {
-            Z: 165
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        ParentId: 2593826267344460822
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.340000033
-              G: 1.6212465e-07
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5638681701746173479
-        Name: "WheelPositionMarker"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2593826267344460822
+        ChildIds: 2593826267344460822
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1102,7 +900,7 @@ Assets {
         Name: "SuspensionUnit"
         Transform {
           Location {
-            X: 195.244522
+            X: 242.857239
           }
           Rotation {
           }
@@ -1182,7 +980,7 @@ Assets {
         Name: "HighestPositionLimiter"
         Transform {
           Location {
-            Z: 75
+            Z: 100.000427
           }
           Rotation {
           }
@@ -1233,7 +1031,7 @@ Assets {
         Name: "HighestRaycastMarker"
         Transform {
           Location {
-            Z: 165
+            Z: 371.428955
           }
           Rotation {
           }
@@ -1305,40 +1103,11 @@ Assets {
         }
       }
       Objects {
-        Id: 888148453009322553
-        Name: "RightSuspensionSet"
-        Transform {
-          Location {
-            Y: -176.046
-            Z: -253.236496
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13081460897018639243
-        ChildIds: 11699647494514489081
-        ChildIds: 13876014959094324224
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 11699647494514489081
+        Id: 2593826267344460822
         Name: "SuspensionUnit"
         Transform {
           Location {
-            X: -225.172943
+            X: -285.714417
           }
           Rotation {
           }
@@ -1348,11 +1117,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 888148453009322553
-        ChildIds: 11726073778875266512
-        ChildIds: 17429412288214805355
-        ChildIds: 720604885767823412
-        ChildIds: 11993809260314588623
+        ParentId: 12648451249856897658
+        ChildIds: 10372220923561835358
+        ChildIds: 18413188673548169071
+        ChildIds: 3346604866263619539
+        ChildIds: 5638681701746173479
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1364,7 +1133,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11726073778875266512
+        Id: 10372220923561835358
         Name: "LowestPositionLimiter"
         Transform {
           Location {
@@ -1377,7 +1146,7 @@ Assets {
             Z: 0.1
           }
         }
-        ParentId: 11699647494514489081
+        ParentId: 2593826267344460822
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -1414,11 +1183,11 @@ Assets {
         }
       }
       Objects {
-        Id: 17429412288214805355
+        Id: 18413188673548169071
         Name: "HighestPositionLimiter"
         Transform {
           Location {
-            Z: 75
+            Z: 100.000427
           }
           Rotation {
           }
@@ -1428,7 +1197,7 @@ Assets {
             Z: 0.1
           }
         }
-        ParentId: 11699647494514489081
+        ParentId: 2593826267344460822
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -1465,11 +1234,12 @@ Assets {
         }
       }
       Objects {
-        Id: 720604885767823412
+        Id: 3346604866263619539
         Name: "HighestRaycastMarker"
         Transform {
           Location {
-            Z: 165
+            X: 2.17982724e-05
+            Z: 371.428955
           }
           Rotation {
           }
@@ -1479,7 +1249,7 @@ Assets {
             Z: 0.1
           }
         }
-        ParentId: 11699647494514489081
+        ParentId: 2593826267344460822
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -1516,7 +1286,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11993809260314588623
+        Id: 5638681701746173479
         Name: "WheelPositionMarker"
         Transform {
           Location {
@@ -1529,7 +1299,36 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11699647494514489081
+        ParentId: 2593826267344460822
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 888148453009322553
+        Name: "RightSuspensionSet"
+        Transform {
+          Location {
+            Y: 228.571518
+            Z: -212.54599
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13081460897018639243
+        ChildIds: 13876014959094324224
+        ChildIds: 11699647494514489081
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1545,7 +1344,7 @@ Assets {
         Name: "SuspensionUnit"
         Transform {
           Location {
-            X: 195.244522
+            X: 242.857239
           }
           Rotation {
           }
@@ -1625,7 +1424,7 @@ Assets {
         Name: "HighestPositionLimiter"
         Transform {
           Location {
-            Z: 75
+            Z: 100.000427
           }
           Rotation {
           }
@@ -1676,7 +1475,7 @@ Assets {
         Name: "HighestRaycastMarker"
         Transform {
           Location {
-            Z: 165
+            Z: 371.428955
           }
           Rotation {
           }
@@ -1737,6 +1536,214 @@ Assets {
           }
         }
         ParentId: 13876014959094324224
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 11699647494514489081
+        Name: "SuspensionUnit"
+        Transform {
+          Location {
+            X: -285.714386
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 888148453009322553
+        ChildIds: 11726073778875266512
+        ChildIds: 17429412288214805355
+        ChildIds: 720604885767823412
+        ChildIds: 11993809260314588623
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 11726073778875266512
+        Name: "LowestPositionLimiter"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.1
+            Y: 0.1
+            Z: 0.1
+          }
+        }
+        ParentId: 11699647494514489081
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.340000033
+              G: 1.6212465e-07
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17429412288214805355
+        Name: "HighestPositionLimiter"
+        Transform {
+          Location {
+            X: -2.17982724e-05
+            Z: 100.000427
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.1
+            Y: 0.1
+            Z: 0.1
+          }
+        }
+        ParentId: 11699647494514489081
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.340000033
+              G: 1.6212465e-07
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 720604885767823412
+        Name: "HighestRaycastMarker"
+        Transform {
+          Location {
+            Z: 371.428955
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.1
+            Y: 0.1
+            Z: 0.1
+          }
+        }
+        ParentId: 11699647494514489081
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.340000033
+              G: 1.6212465e-07
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11993809260314588623
+        Name: "WheelPositionMarker"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11699647494514489081
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2100,6 +2107,7 @@ Assets {
         Name: "ExtraFX"
         Transform {
           Location {
+            Z: 21.8314934
           }
           Rotation {
           }
@@ -2749,8 +2757,8 @@ Assets {
         Name: "Hull"
         Transform {
           Location {
-            X: -102.641983
-            Z: -10.8487244
+            X: -102.642944
+            Z: 10.9827547
           }
           Rotation {
           }
@@ -18427,8 +18435,8 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: -62.9743385
-            Z: 23.267128
+            X: -62.9748154
+            Z: 45.0987091
           }
           Rotation {
           }

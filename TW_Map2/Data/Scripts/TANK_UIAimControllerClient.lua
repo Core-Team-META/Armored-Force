@@ -43,7 +43,7 @@ function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	altitude = altitude * math.pi/180
 	
-	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude) + 0.045)
+	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude) + 0.05)
 	
 	local destination = (direction * distance) + worldPosition
 	
@@ -144,14 +144,14 @@ end
 
 function UpdatePointer()
 		
-	local uiPostion = UI.GetScreenPosition(RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation() - Rotation.New(0, 3, 0), 10000))
+	local uiPostion = UI.GetScreenPosition(RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation() - Rotation.New(0, 3, 0), 100000))
 		
 	if uiPostion then
 	
 		truePointer.visibility = Visibility.FORCE_ON
 		
-		EaseUI.EaseX(truePointer, uiPostion.x, 0.01, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
-		EaseUI.EaseY(truePointer, uiPostion.y, 0.01, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+		EaseUI.EaseX(truePointer, uiPostion.x, 0.05, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+		EaseUI.EaseY(truePointer, uiPostion.y, 0.05, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
 			
 	else 
 	

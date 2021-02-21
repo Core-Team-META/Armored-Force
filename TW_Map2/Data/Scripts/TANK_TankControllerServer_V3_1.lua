@@ -135,7 +135,7 @@ function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	altitude = altitude * math.pi/180
 	
-	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude) + 0.045)
+	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude) + 0.04)
 	
 	local destination = (direction * distance) + worldPosition
 	
