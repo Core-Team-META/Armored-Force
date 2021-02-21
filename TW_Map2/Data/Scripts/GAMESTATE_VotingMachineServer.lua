@@ -147,9 +147,11 @@ function TallyVotes()
 	
 		print(voteTracker[p])
 		
-		if voteTracker[p] and matchSelection[voteTracker[p]] and matchSelection[voteTracker[p]]["Link"] then
+		if voteTracker[p] and matchSelection[voteTracker[p]] and matchSelection[voteTracker[p]]["Link"] and matchSelection[voteTracker[p]]["Link"] ~= "" then
 			
 			print("Sending " .. p.name .. "to " .. matchSelection[voteTracker[p]]["Link"])
+			
+			p:TransferToGame(matchSelection[voteTracker[p]]["Link"])
 			
 		end
 		

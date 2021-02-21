@@ -14,7 +14,6 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 2572116581845083312
   ChildIds: 4316049936135708946
   ChildIds: 4965067273124672211
   ChildIds: 16933976679426407654
@@ -22,7 +21,7 @@ Objects {
   ChildIds: 7683013365748233698
   ChildIds: 9479035303955472683
   ChildIds: 6589618948939414272
-  ChildIds: 2908182587629757492
+  ChildIds: 11544850952862364982
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,13 +34,9 @@ Objects {
   }
 }
 Objects {
-  Id: 2908182587629757492
+  Id: 11544850952862364982
   Name: "Patrick"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -593,7 +588,10 @@ Objects {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 7295679184830776392
+        SelfId: 13363095960670895192
+        SubObjectId: 12501103047397100902
+        InstanceId: 6023196431837271557
+        TemplateId: 15368868755098391936
       }
     }
     Overrides {
@@ -844,51 +842,5 @@ Objects {
     TemplateAsset {
       Id: 626964292754089367
     }
-  }
-}
-Objects {
-  Id: 2572116581845083312
-  Name: "ImportFromTW1 (Imported 12 Jan)"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 10090713447264881202
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10090713447264881202
-  Name: "TW_Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2572116581845083312
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW_Settings"
   }
 }

@@ -1,36 +1,6 @@
 Name: "TW_SpawnPoints"
 RootId: 14246791555251678451
 Objects {
-  Id: 11488164079922228028
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 36431.8438
-      Y: -60206.9531
-      Z: 1362.55457
-    }
-    Rotation {
-      Yaw: -71.3603516
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14246791555251678451
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
   Id: 14724507057739475381
   Name: "Spawn Point"
   Transform {
@@ -56,7 +26,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -86,7 +56,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -116,7 +86,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -146,7 +116,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -176,7 +146,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -206,7 +176,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -236,7 +206,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -266,7 +236,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -461,6 +431,36 @@ Objects {
     }
     Rotation {
       Yaw: 117.995
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14246791555251678451
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 11488164079922228028
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 36431.8438
+      Y: -60206.9531
+      Z: 1362.55457
+    }
+    Rotation {
+      Yaw: 133.639481
     }
     Scale {
       X: 1

@@ -1,7 +1,7 @@
 Name: "TW_Settings"
-RootId: 17734630002646221213
+RootId: 2560550896210788098
 Objects {
-  Id: 7926288489550837553
+  Id: 17060733514957175941
   Name: "Third Person Camera Settings"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17734630002646221213
-  ChildIds: 15954293127513707923
-  ChildIds: 12982492435028310325
+  ParentId: 2560550896210788098
+  ChildIds: 2606269986540776102
+  ChildIds: 10128901153058737873
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12982492435028310325
+  Id: 10128901153058737873
   Name: "Client Context"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7926288489550837553
-  ChildIds: 8692147141118328177
+  ParentId: 17060733514957175941
+  ChildIds: 8618996822618117462
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -57,7 +57,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8692147141118328177
+  Id: 8618996822618117462
   Name: "Third Person Camera"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12982492435028310325
+  ParentId: 10128901153058737873
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -102,10 +102,11 @@ Objects {
   }
 }
 Objects {
-  Id: 15954293127513707923
-  Name: "Third Person Player Settings"
+  Id: 2606269986540776102
+  Name: "TankSettings"
   Transform {
     Location {
+      Z: -930
     }
     Rotation {
     }
@@ -115,9 +116,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7926288489550837553
-  UnregisteredParameters {
-  }
+  ParentId: 17060733514957175941
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -127,11 +126,11 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 1000
-      MaxAcceleration: 500
-      WalkableFloorAngle: 50
+      WalkSpeed: 640
+      MaxAcceleration: 1800
+      WalkableFloorAngle: 44
       JumpVelocity: 900
-      GroundFriction: 10
+      GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
       Buoyancy: 1
@@ -147,10 +146,12 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:facemovement"
       }
-      DefaultRotationRate: 40
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
+      }
+      LookAtCursorProjectionPlaneAnchor {
+        Value: "mc:eprojectionplaneanchor:playerposition"
       }
       MountedMaxAcceleration: 1800
       MountedWalkSpeed: 960
@@ -158,7 +159,6 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
-      IsCrouchEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
       AbilityAimMode {
@@ -166,13 +166,12 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
-      FlipOnMultiJump: true
       MaxHitpoints: 100
     }
   }
 }
 Objects {
-  Id: 2013315180184953686
+  Id: 17871769089547635199
   Name: "Respawn Settings"
   Transform {
     Location {
@@ -185,7 +184,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17734630002646221213
+  ParentId: 2560550896210788098
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -195,7 +194,7 @@ Objects {
   Settings {
     IsDefault: true
     RespawnSettings {
-      RespawnDelay: 1e+06
+      RespawnDelay: 100000
       RespawnMode_v2 {
         Value: "mc:erespawnmode:roundrobin"
       }
@@ -203,7 +202,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13161282670906055405
+  Id: 14794684470330939806
   Name: "Game Settings"
   Transform {
     Location {
@@ -216,7 +215,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17734630002646221213
+  ParentId: 2560550896210788098
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -227,6 +226,7 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }

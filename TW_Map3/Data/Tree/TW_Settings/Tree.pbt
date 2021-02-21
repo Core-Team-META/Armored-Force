@@ -1,7 +1,7 @@
 Name: "TW_Settings"
-RootId: 2548759880759357540
+RootId: 2981157501327641870
 Objects {
-  Id: 13312296348048606920
+  Id: 16578932443420823177
   Name: "Third Person Camera Settings"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2548759880759357540
-  ChildIds: 587748940492973162
-  ChildIds: 7019431250273618124
+  ParentId: 2981157501327641870
+  ChildIds: 3385723080672663722
+  ChildIds: 9675632386839149789
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7019431250273618124
+  Id: 9675632386839149789
   Name: "Client Context"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13312296348048606920
-  ChildIds: 12529478537038777480
+  ParentId: 16578932443420823177
+  ChildIds: 9028317004545402714
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -57,7 +57,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12529478537038777480
+  Id: 9028317004545402714
   Name: "Third Person Camera"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7019431250273618124
+  ParentId: 9675632386839149789
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -102,10 +102,11 @@ Objects {
   }
 }
 Objects {
-  Id: 587748940492973162
-  Name: "Third Person Player Settings"
+  Id: 3385723080672663722
+  Name: "TankSettings"
   Transform {
     Location {
+      Z: -930
     }
     Rotation {
     }
@@ -115,9 +116,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13312296348048606920
-  UnregisteredParameters {
-  }
+  ParentId: 16578932443420823177
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -127,12 +126,11 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 1000
-      MaxAcceleration: 500
-      WalkableFloorAngle: 50
-      JumpMaxCount: 1
+      WalkSpeed: 640
+      MaxAcceleration: 1800
+      WalkableFloorAngle: 44
       JumpVelocity: 900
-      GroundFriction: 10
+      GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
       Buoyancy: 1
@@ -148,10 +146,12 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:facemovement"
       }
-      DefaultRotationRate: 40
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
+      }
+      LookAtCursorProjectionPlaneAnchor {
+        Value: "mc:eprojectionplaneanchor:playerposition"
       }
       MountedMaxAcceleration: 1800
       MountedWalkSpeed: 960
@@ -159,7 +159,6 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
-      IsCrouchEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
       AbilityAimMode {
@@ -167,13 +166,12 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
-      FlipOnMultiJump: true
       MaxHitpoints: 100
     }
   }
 }
 Objects {
-  Id: 14893871125720748719
+  Id: 17497208884636990451
   Name: "Respawn Settings"
   Transform {
     Location {
@@ -186,7 +184,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2548759880759357540
+  ParentId: 2981157501327641870
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -196,15 +194,15 @@ Objects {
   Settings {
     IsDefault: true
     RespawnSettings {
-      RespawnDelay: 2
+      RespawnDelay: 100000
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:atclosestspawnpoint"
+        Value: "mc:erespawnmode:roundrobin"
       }
     }
   }
 }
 Objects {
-  Id: 7198818489262877460
+  Id: 14377340117016898450
   Name: "Game Settings"
   Transform {
     Location {
@@ -217,7 +215,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2548759880759357540
+  ParentId: 2981157501327641870
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -228,6 +226,7 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
