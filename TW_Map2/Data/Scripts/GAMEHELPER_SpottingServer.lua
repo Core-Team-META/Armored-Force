@@ -119,7 +119,7 @@ function SetViewPoint(player)
 		
 			viewPointList[player.id] = e:FindDescendantByName("ViewPoint")
 			
-			--print(player.name .. " point set")
+			print(player.name .. " point set")
 			
 			return
 			
