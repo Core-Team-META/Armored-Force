@@ -10,6 +10,7 @@ Objects {
       Z: 600.698364
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -25,7 +26,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -39,6 +40,7 @@ Objects {
       Z: 600.698364
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -54,7 +56,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -68,6 +70,7 @@ Objects {
       Z: 600.697876
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -83,7 +86,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -97,6 +100,7 @@ Objects {
       Z: 600.698364
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -112,7 +116,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -126,6 +130,7 @@ Objects {
       Z: 600.698364
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -141,7 +146,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -155,6 +160,7 @@ Objects {
       Z: 600.698364
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -170,7 +176,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -184,6 +190,7 @@ Objects {
       Z: 600.698364
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -199,7 +206,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }
@@ -213,6 +220,7 @@ Objects {
       Z: 600.697876
     }
     Rotation {
+      Yaw: 145
     }
     Scale {
       X: 1
@@ -228,7 +236,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   PlayerSpawnPoint {
-    TeamInt: 1
+    TeamInt: 2
     PlayerScaleMultiplier: 1
   }
 }

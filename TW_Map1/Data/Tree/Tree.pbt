@@ -16,7 +16,6 @@ Objects {
   }
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
-  ChildIds: 17734630002646221213
   ChildIds: 14246791555251678451
   ChildIds: 15228262498109224048
   ChildIds: 4689494391382931675
@@ -1035,7 +1034,7 @@ Objects {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 14120135511771490182
+        SelfId: 9445786434967820845
       }
     }
     Overrides {
@@ -1099,28 +1098,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW_SpawnPoints"
-  }
-}
-Objects {
-  Id: 17734630002646221213
-  Name: "TW_Settings"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW_Settings"
   }
 }
 Objects {

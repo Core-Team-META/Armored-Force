@@ -14,13 +14,13 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 2548759880759357540
   ChildIds: 15182677334456928949
   ChildIds: 12209608198557882361
   ChildIds: 3189391084242011458
   ChildIds: 5837658692554861011
   ChildIds: 7310433976514289622
   ChildIds: 2959002750480800334
+  ChildIds: 10413787997792657743
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,6 +30,28 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10413787997792657743
+  Name: "Patrick"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Patrick"
   }
 }
 Objects {
@@ -538,6 +560,12 @@ Objects {
       Int: 2
     }
     Overrides {
+      Name: "cs:GAMEHELPER_SpottingServer"
+      ObjectReference {
+        SelfId: 9926489097908938785
+      }
+    }
+    Overrides {
       Name: "cs:GradientHeight:tooltip"
       String: "If true, the minimap pieces will be colored based on their Z position relative to the rest of the map."
     }
@@ -787,27 +815,5 @@ Objects {
     VoxelSize: 200
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
-  }
-}
-Objects {
-  Id: 2548759880759357540
-  Name: "TW_Settings"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW_Settings"
   }
 }

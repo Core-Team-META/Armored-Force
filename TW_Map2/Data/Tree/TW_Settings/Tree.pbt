@@ -1,7 +1,7 @@
 Name: "TW_Settings"
-RootId: 10090713447264881202
+RootId: 1868302491028330871
 Objects {
-  Id: 1722819333983075486
+  Id: 15467202749717060336
   Name: "Third Person Camera Settings"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10090713447264881202
-  ChildIds: 3668863210679690480
-  ChildIds: 14860874337489220250
+  ParentId: 1868302491028330871
+  ChildIds: 2183745473902103763
+  ChildIds: 13183295738300819620
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14860874337489220250
+  Id: 13183295738300819620
   Name: "Client Context"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1722819333983075486
-  ChildIds: 195853434526987998
+  ParentId: 15467202749717060336
+  ChildIds: 5618732837702513443
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -57,7 +57,7 @@ Objects {
   }
 }
 Objects {
-  Id: 195853434526987998
+  Id: 5618732837702513443
   Name: "Third Person Camera"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14860874337489220250
+  ParentId: 13183295738300819620
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -102,7 +102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3668863210679690480
+  Id: 2183745473902103763
   Name: "TankSettings"
   Transform {
     Location {
@@ -116,7 +116,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1722819333983075486
+  ParentId: 15467202749717060336
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -171,7 +171,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7054819623935338745
+  Id: 14006242131279097738
   Name: "Respawn Settings"
   Transform {
     Location {
@@ -184,7 +184,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10090713447264881202
+  ParentId: 1868302491028330871
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -202,7 +202,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14749639211171811650
+  Id: 17812910173868228587
   Name: "Game Settings"
   Transform {
     Location {
@@ -215,7 +215,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10090713447264881202
+  ParentId: 1868302491028330871
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -226,6 +226,7 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
