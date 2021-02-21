@@ -15692,7 +15692,7 @@ Objects {
       }
     }
     Text {
-      Label: "DESERT"
+      Label: "TUNDRA"
       Color {
         R: 1
         G: 1
