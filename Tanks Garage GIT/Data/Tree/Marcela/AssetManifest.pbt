@@ -215,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16198346205888411814
+  Name: "Urban Fence Door"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mil_fence_door_01"
+  }
+}
+Assets {
   Id: 16163665952175281032
   Name: "Urban Pipe Coupling 02"
   PlatformAssetType: 1
@@ -359,6 +368,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14523494161843827332
+  Name: "Urban Fence Pole - End"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mil_fence_pole_02_end_001"
+  }
+}
+Assets {
   Id: 14305382107853123087
   Name: "Decal Numbers and Symbols 01"
   PlatformAssetType: 14
@@ -482,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_hatch_001_lid_ref"
+  }
+}
+Assets {
+  Id: 13254226986252267120
+  Name: "Container - Rectangle Thin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_rectangle_thin_ref"
   }
 }
 Assets {
@@ -908,6 +935,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9279130763178750287
+  Name: "Urban Fence Doorway"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mil_fence_wall_01_door_001"
+  }
+}
+Assets {
   Id: 9152619968203525726
   Name: "Military Tank Historic Armor Plate 02"
   PlatformAssetType: 1
@@ -959,15 +995,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_scf_ship_nacelle_003_ref"
-  }
-}
-Assets {
-  Id: 8767971518425454111
-  Name: "Metal Frame 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_frames_001_uv"
   }
 }
 Assets {
@@ -1373,6 +1400,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scf_leg_001_ref"
+  }
+}
+Assets {
+  Id: 5289173720635423697
+  Name: "Metal Grates 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_scf_grates_002_uv"
   }
 }
 Assets {

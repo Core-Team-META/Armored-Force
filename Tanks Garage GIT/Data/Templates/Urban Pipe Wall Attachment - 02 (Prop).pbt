@@ -62,7 +62,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -103,7 +102,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -144,7 +142,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -156,8 +153,8 @@ Assets {
         Name: "Urban Pipe Straight"
         Transform {
           Location {
-            X: -143.137268
-            Y: -40
+            X: -266.299194
+            Y: -40.0001221
           }
           Rotation {
             Pitch: -90
@@ -165,8 +162,8 @@ Assets {
           }
           Scale {
             X: 1
-            Y: 1
-            Z: 2
+            Y: 1.00000274
+            Z: 4.42464781
           }
         }
         ParentId: 9164127112897289888
@@ -184,7 +181,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -225,7 +221,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
