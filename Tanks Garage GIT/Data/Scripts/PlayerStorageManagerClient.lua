@@ -21,7 +21,7 @@ function RetrieveData()
            
             -- Split the individual tank data strings into separate tables we can iterate through and build local tank objects
             for k,v in pairs(tankProgressionTable) do
-                local tankEntryTable = split(k, DELIMITER)
+                local tankEntryTable = UTIL_API.SplitStringIntoObjects(k, DELIMITER)
                 local position = 1
                 local tankEntry = {}
                 for k,v in pairs(tankEntryTable) do                    
@@ -49,15 +49,6 @@ function RetrieveData()
             UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
         end
     end
-end
-
--- Splits a string into individual entries in a table. Example being a tank string like: "12|1|1|0|0|0"
-function split(string, delimiter)
-    result = {};
-    for match in (string .. delimiter):gmatch("(.-)" .. delimiter) do
-        table.insert(result, match);
-    end
-    return result;
 end
 
 Events.Connect("RetrieveData", RetrieveData)

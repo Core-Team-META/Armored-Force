@@ -58,6 +58,14 @@ function API.StringSplit(delimiter, text)
     return tbl
 end
 
+function API.SplitStringIntoObjects(string, delimiter)
+    result = {};
+    for match in (string .. delimiter):gmatch("(.-)" .. delimiter) do
+        table.insert(result, match);
+    end
+    return result;
+end
+
 function API.GetStringifiedValue(v)
     if v == nil then
         return "^nil^"

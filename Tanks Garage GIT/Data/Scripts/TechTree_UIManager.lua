@@ -2,8 +2,12 @@
 	This script handles the dynamic creation of the Tech Tree UI and managers player activity on the UI.
 --]]
 
+-- API
+local Constants_API = require(script:GetCustomProperty("Constants_API"))
+
 -- Definitions
 local TEAM_DEFINITIONS = script:GetCustomProperty("TechTree_TeamDefinitions"):WaitForObject()
+local CURRENCY_DEFINITIONS = script:GetCustomProperty("TechTree_CurrencyDefinitions"):WaitForObject()
 
 -- UI properties
 local background = script:GetCustomProperty("Background"):WaitForObject()
@@ -12,6 +16,8 @@ local openSFX = script:GetCustomProperty("OpenSFX"):WaitForObject()
 local techTreeUIContainer = script:GetCustomProperty("TechTreeUIContainer"):WaitForObject()
 local teamSelectorButton = script:GetCustomProperty("TeamSelectorButton")
 local techTreeContents = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
+local currencyPanel = script:GetCustomProperty("CurrencyPanel"):WaitForObject()
+local currencyContentsPanel = script:GetCustomProperty("CurrencyContentsPanel")
 
 local ALLIES_TEAM = script:GetCustomProperty("AlliesTeam")
 local AXIS_TEAM = script:GetCustomProperty("AxisTeam")
@@ -31,6 +37,10 @@ local BASE_TEAM_POSITION_X = 50
 local BASE_TEAM_POSITION_Y = 10
 local TEAM_X_OFFSET = 200
 
+local BASE_CURRENCY_POSITION_X = -10
+local BASE_CURRENCY_POSITION_Y = 10
+local CURRENCY_X_OFFSET = -200
+
 local TANK_LIST = techTreeContents:GetChildren()
 local ALLIES_TANKS = {}
 local AXIS_TANKS = {}
@@ -41,13 +51,21 @@ local tier2Count = 0
 local tier3Count = 0
 local tier4Count = 0
 
+local PURCHASED_TEXT = "PURCHASED"
+local RESEARCHED_TEXT = "RESEARCHED"
+
+-- Placeholders until UI is finalized
+local HAS_RESEARCH_TEXT = "R"
+local HAS_PURCHASE_TEXT = "P"
+
 -- Functions
 function OpenUI()
 	openSFX:Play()
 	techTreeUIContainer.visibility = Visibility.FORCE_ON
 	ToggleUIInteraction(true)
 	-- Populate the UI containers depending on the team selected
-	PopulateUI(selectedTeam)		
+	PopulateUI(selectedTeam)
+	--UpdatePlayerCurrency()		
 end
 
 function CloseUI()
@@ -99,8 +117,9 @@ function ButtonClickTeamSwitch(button)
 	warn("Team name [" .. button.text .. "] not found.")
 end
 
-function ButtonHover()
+function ButtonHover(button)
 	-- TODO: Play hover sound
+	-- TODO: Show a tooltip covering the before and after effects of the upgrade
 end
 
 -- Initialization
@@ -184,34 +203,22 @@ function PopulateTankContentsPanel(panel, tank)
 			v.text = tank.country
 		elseif(v.name == "ResearchCost") then			
 			if(playerTankData.researched) then
-				v.text = "RESEARCHED"
+				v.text = RESEARCHED_TEXT
 			else
 				v.text = tostring(tank.researchCost)
 			end			
 		elseif(v.name == "PurchaseCost") then
 			if(playerTankData.purchased) then
-				v.text = "PURCHASED"
+				v.text = PURCHASED_TEXT
 			else
 				v.text = tostring(tank.purchaseCost)
 			end				
 		elseif(v.name == "ResearchWeapon") then
-			local researchText = ""
-			if(playerTankData.hasWeapon) then researchText = "R" else researchText = tostring(tank.weaponResearchCost) end
-			local purchaseText = ""
-			if(playerTankData.hasWeapon) then purchaseText = "P" else purchaseText = tostring(tank.weaponPurchaseCost) end
-			v.text = researchText .. "/" .. purchaseText
-		elseif(v.name == "ResearchArmor") then
-			local researchText = ""
-			if(playerTankData.hasArmor) then researchText = "R" else researchText = tostring(tank.armorResearchCost) end
-			local purchaseText = ""
-			if(playerTankData.hasArmor) then purchaseText = "P" else purchaseText = tostring(tank.armorPurchaseCost) end
-			v.text = researchText .. "/" .. purchaseText
+			v.text = GetUpgradeText(playerTankData.hasWeapon, tank.weaponResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasWeapon, tank.weaponPurchaseCost, Constants_API.UPGRADE_TYPE.PURCHASE)
+		elseif(v.name == "ResearchArmor") then			
+			v.text = GetUpgradeText(playerTankData.hasArmor, tank.armorResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasArmor, tank.armorPurchaseCost, Constants_API.UPGRADE_TYPE.PURCHASE)
 		elseif(v.name == "ResearchMobility") then
-			local researchText = ""
-			if(playerTankData.hasEngine) then researchText = "R" else researchText = tostring(tank.mobilityResearchCost) end
-			local purchaseText = ""
-			if(playerTankData.hasEngine) then purchaseText = "P" else purchaseText = tostring(tank.mobilityResearchCost) end
-			v.text = researchText .. "/" .. purchaseText
+			v.text = GetUpgradeText(playerTankData.hasEngine, tank.mobilityResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasEngine, tank.mobilityResearchCost, Constants_API.UPGRADE_TYPE.PURCHASE)
 		end
 	end
 end
@@ -233,6 +240,20 @@ function PopulateUI(selectedTeam)
 		tankContentsPanel.y = BASE_Y + (GetTierCount(v.tier) * Y_OFFSET)
 		IncrementCount(v.tier)
 	end	
+	local currencyCount = 0
+	for k,v in ipairs(CURRENCY_DEFINITIONS:GetChildren()) do
+		local panel = World.SpawnAsset(currencyContentsPanel, {parent = currencyPanel})
+		panel.x = BASE_CURRENCY_POSITION_X + (currencyCount * CURRENCY_X_OFFSET)
+		panel.y = BASE_CURRENCY_POSITION_Y
+		for _, child in ipairs(panel:GetChildren()) do
+			if(child.name == "Icon") then
+				--child:SetImage(v:GetCustomProperty("Icon"))
+			elseif(child.name == "Amount") then
+				child.text = tostring(LOCAL_PLAYER:GetResource(v.name))
+			end
+		end
+		currencyCount = currencyCount + 1
+	end
 end
 
 function EmptyUI()
@@ -256,6 +277,20 @@ function EmptyUI()
 			panel:Destroy()
 		end
 	end
+	for k,panel in ipairs(currencyPanel:GetChildren()) do
+		if(Object.IsValid(panel)) then
+			panel:Destroy()
+		end
+	end
+end
+
+function GetUpgradeText(hasUpgrade, cost, upgradeType)
+	if(hasUpgrade and upgradeType == Constants_API.UPGRADE_TYPE.RESEARCH) then
+		return HAS_RESEARCH_TEXT 
+	elseif(hasUpgrade and upgradeType == Constants_API.UPGRADE_TYPE.PURCHASE) then
+		return HAS_PURCHASE_TEXT 
+	end
+	return tostring(cost)
 end
 
 function ResetUI()
