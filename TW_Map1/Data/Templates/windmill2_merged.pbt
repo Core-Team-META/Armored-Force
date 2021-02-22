@@ -15,11 +15,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3008154843558529630
+        ParentId: 11473089596160032213
         ChildIds: 9669389152347951419
         ChildIds: 4092048403921180824
-        ChildIds: 6173357355698334674
-        ChildIds: 15975379014221206389
+        ChildIds: 13907808345637679121
         ChildIds: 12428661930301032294
         ChildIds: 8909343198819769012
         ChildIds: 7741329448545015106
@@ -207,13 +206,13 @@ Assets {
         }
       }
       Objects {
-        Id: 6173357355698334674
-        Name: "windmill2_anim"
+        Id: 13907808345637679121
+        Name: "fanContinuous"
         Transform {
           Location {
-            X: -9.05749512
-            Y: -15.6794434
-            Z: 146.078537
+            X: -85
+            Y: 270
+            Z: 1100
           }
           Rotation {
           }
@@ -224,30 +223,17 @@ Assets {
           }
         }
         ParentId: 5024972979897396711
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:fan"
-            ObjectReference {
-              SubObjectId: 15975379014221206389
-            }
-          }
-          Overrides {
-            Name: "cs:Ease3D"
-            AssetReference {
-              Id: 1869291580377666123
-            }
-          }
-        }
+        ChildIds: 15975379014221206389
+        ChildIds: 6173357355698334674
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Script {
-          ScriptAsset {
-            Id: 5044481199150460928
-          }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
@@ -255,9 +241,6 @@ Assets {
         Name: "fan"
         Transform {
           Location {
-            X: -85
-            Y: 270
-            Z: 1100
           }
           Rotation {
           }
@@ -267,7 +250,7 @@ Assets {
             Z: 1.2008301
           }
         }
-        ParentId: 5024972979897396711
+        ParentId: 13907808345637679121
         ChildIds: 6977407786119649891
         ChildIds: 9553231945504095832
         ChildIds: 17493898684466299282
@@ -3481,6 +3464,57 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+          }
+        }
+      }
+      Objects {
+        Id: 6173357355698334674
+        Name: "windmill2_anim"
+        Transform {
+          Location {
+            X: 75.9433594
+            Y: -285.679688
+            Z: -953.921509
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13907808345637679121
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:fan"
+            ObjectReference {
+              SubObjectId: 15975379014221206389
+            }
+          }
+          Overrides {
+            Name: "cs:Ease3D"
+            AssetReference {
+              Id: 1869291580377666123
+            }
+          }
+          Overrides {
+            Name: "cs:fanContinuous"
+            ObjectReference {
+              SubObjectId: 13907808345637679121
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5044481199150460928
           }
         }
       }
@@ -9136,10 +9170,11 @@ Assets {
         Transform {
           Location {
             X: -104.868164
-            Y: -33.3354492
+            Y: -33.3359375
             Z: -480
           }
           Rotation {
+            Yaw: -18.4246216
           }
           Scale {
             X: 1
@@ -9429,9 +9464,9 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: -412.177734
-            Y: -239.757324
-            Z: 450.662048
+            X: -416.862396
+            Y: -356.782959
+            Z: 491.017426
           }
           Rotation {
           }
