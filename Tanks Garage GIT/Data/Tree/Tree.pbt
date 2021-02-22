@@ -19,6 +19,7 @@ Objects {
   ChildIds: 1280018966653012080
   ChildIds: 11193472375340858099
   ChildIds: 765611719618973778
+  ChildIds: 13531313327230624130
   ChildIds: 12007147478172450768
   ChildIds: 1515039180194458749
   ChildIds: 17398334354223688829
@@ -627,8 +628,40 @@ Objects {
   }
 }
 Objects {
-  Id: 765611719618973778
+  Id: 13531313327230624130
   Name: "Terrain"
+  Transform {
+    Location {
+      X: -1128.90332
+      Z: -8652.92578
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Terrain {
+    Material {
+      Id: 697075577197099176
+    }
+    VoxelSize: 100
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+  }
+}
+Objects {
+  Id: 765611719618973778
+  Name: "Terrain_main"
   Transform {
     Location {
       X: -7582.71875
@@ -651,7 +684,7 @@ Objects {
   }
   Terrain {
     Material {
-      Id: 8986079238497616517
+      Id: 15309804626158127515
     }
     VoxelSize: 100
     OctreeDepth: 5
@@ -871,7 +904,7 @@ Objects {
       Z: 141.412079
     }
     Rotation {
-      Yaw: -157.716522
+      Yaw: 179.465958
     }
     Scale {
       X: 1
