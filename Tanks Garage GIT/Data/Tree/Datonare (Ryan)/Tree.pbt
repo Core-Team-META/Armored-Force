@@ -165,6 +165,7 @@ Objects {
   ChildIds: 17145240313341044083
   ChildIds: 1097061551082014019
   ChildIds: 4581790267252788651
+  ChildIds: 11741062274946987772
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -188,6 +189,55 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11741062274946987772
+  Name: "CurrencyPanel"
+  Transform {
+    Location {
+      X: -4408.69824
+      Y: -3781.89111
+      Z: 155
+    }
+    Rotation {
+      Yaw: -35.0000305
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14966627174895260745
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 500
+    Height: 50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
         }
       }
     }
@@ -442,6 +492,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -502,6 +554,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -562,6 +616,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -621,6 +677,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -736,6 +794,12 @@ Objects {
   ParentId: 17563950383364723476
   UnregisteredParameters {
     Overrides {
+      Name: "cs:Constants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
       Name: "cs:Background"
       ObjectReference {
         SelfId: 17673340388354254850
@@ -778,15 +842,21 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Tier1ScrollPanel"
+      ObjectReference {
+        SelfId: 12559258386656163073
+      }
+    }
+    Overrides {
       Name: "cs:TeamSelectorButton"
       AssetReference {
         Id: 16829511034506297535
       }
     }
     Overrides {
-      Name: "cs:Tier1ScrollPanel"
-      ObjectReference {
-        SelfId: 12559258386656163073
+      Name: "cs:CurrencyContentsPanel"
+      AssetReference {
+        Id: 941064249904549663
       }
     }
     Overrides {
@@ -808,9 +878,21 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:CurrencyPanel"
+      ObjectReference {
+        SelfId: 11741062274946987772
+      }
+    }
+    Overrides {
       Name: "cs:TechTree_TeamDefinitions"
       ObjectReference {
         SelfId: 7712902404816319527
+      }
+    }
+    Overrides {
+      Name: "cs:TechTree_CurrencyDefinitions"
+      ObjectReference {
+        SelfId: 2727903136666322489
       }
     }
   }
@@ -1127,6 +1209,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
