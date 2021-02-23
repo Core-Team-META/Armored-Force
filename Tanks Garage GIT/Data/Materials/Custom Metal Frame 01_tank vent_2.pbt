@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 76
   CustomMaterialAsset {
-    BaseMaterialId: 8767971518425454111
+    BaseMaterialId: 2112804179467698174
     ParameterOverrides {
       Overrides {
         Name: "rotate_material"
@@ -24,7 +24,7 @@ Assets {
       }
     }
     Assets {
-      Id: 8767971518425454111
+      Id: 2112804179467698174
       Name: "Metal Frame 01"
       PlatformAssetType: 2
       PrimaryAsset {

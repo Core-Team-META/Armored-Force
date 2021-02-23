@@ -16,13 +16,13 @@ Objects {
   }
   ParentId: 14661672776697705088
   ChildIds: 380753407224749931
-  ChildIds: 7916886369475153108
+  ChildIds: 4102313225131540240
   Folder {
     IsGroup: true
   }
 }
 Objects {
-  Id: 7916886369475153108
+  Id: 4102313225131540240
   Name: "Static Player Equipment"
   Transform {
     Location {
@@ -36,7 +36,7 @@ Objects {
     }
   }
   ParentId: 11261693959401854601
-  ChildIds: 16476189322024470041
+  ChildIds: 2049375312325383648
   UnregisteredParameters {
     Overrides {
       Name: "cs:EquipmentTemplate"
@@ -292,7 +292,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16476189322024470041
+  Id: 2049375312325383648
   Name: "StaticPlayerEquipmentServer"
   Transform {
     Location {
@@ -305,12 +305,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7916886369475153108
+  ParentId: 4102313225131540240
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 7916886369475153108
+        SelfId: 4102313225131540240
       }
     }
   }

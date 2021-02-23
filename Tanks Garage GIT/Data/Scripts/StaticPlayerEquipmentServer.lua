@@ -131,7 +131,7 @@ end
 --On binding press, switch tank
 function OnBindingPressed(player,bindingPressed)
 
---[[ 	if gsm:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
+--[[  	if gsm:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
 	
 		return
 		
@@ -230,10 +230,12 @@ function OnBindingPressed(player,bindingPressed)
 			RemovePlayerEquipment(player)
 			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
 				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE33)
+				selectedEquipment[player] = EQUIPMENT_TEMPLATE33
 			elseif player:IsBindingPressed("ability_extra_12") or player:IsBindingPressed("ability_extra_13") then
 					equipment[player] = World.SpawnAsset(EQUIPMENT_BABY)
 			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE6)
+			selectedEquipment[player] = EQUIPMENT_TEMPLATE6
 			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
@@ -246,10 +248,12 @@ function OnBindingPressed(player,bindingPressed)
 			RemovePlayerEquipment(player)
 			if player:IsBindingPressed("ability_extra_10") or player:IsBindingPressed("ability_extra_11") then
 				equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE34)
+				selectedEquipment[player] = EQUIPMENT_TEMPLATE34
 			elseif player:IsBindingPressed("ability_extra_12") or player:IsBindingPressed("ability_extra_13") then
 				equipment[player] = World.SpawnAsset(EQUIPMENT_TOY)
 			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE7)
+			selectedEquipment[player] = EQUIPMENT_TEMPLATE7
 			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
@@ -264,6 +268,7 @@ function OnBindingPressed(player,bindingPressed)
 				equipment[player] = World.SpawnAsset(EQUIPMENT_STYLIZEDTOY)
 			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE8)
+			selectedEquipment[player] = EQUIPMENT_TEMPLATE8
 			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)
@@ -278,6 +283,7 @@ function OnBindingPressed(player,bindingPressed)
 				equipment[player] = World.SpawnAsset(EQUIPMENT_CARTOONTOY)
 			else
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE9)
+			selectedEquipment[player] = EQUIPMENT_TEMPLATE9
 			end
 			assert(equipment[player]:IsA("Equipment"))
 			equipment[player]:Equip(player)

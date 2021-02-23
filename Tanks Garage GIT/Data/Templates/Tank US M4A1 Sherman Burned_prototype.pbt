@@ -1,6 +1,6 @@
 Assets {
   Id: 10508594468788258500
-  Name: "Tank US M4A1 Sherman Burned_1"
+  Name: "Tank US M4A1 Sherman Burned_prototype"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
