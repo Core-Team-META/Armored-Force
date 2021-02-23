@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17952688118125628785
+  Name: "Teardrop - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_truncated_teardrop_001"
+  }
+}
+Assets {
   Id: 17858736014608014985
   Name: "Prism - 6-Sided Half"
   PlatformAssetType: 1
@@ -68,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_shield_strap_001"
+  }
+}
+Assets {
+  Id: 17621666395580493836
+  Name: "Trash Can - Urban 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trash_public_001"
   }
 }
 Assets {
@@ -107,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17033514845278647167
+  Name: "Concrete Sidewalk"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_sidewalk_001"
+  }
+}
+Assets {
   Id: 16965777294932964901
   Name: "Cube - Chamfered Large Polished"
   PlatformAssetType: 1
@@ -122,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_SunLight"
+  }
+}
+Assets {
+  Id: 16815000814721488088
+  Name: "Ellipsoid - Truncated Wedge"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_wedge_001"
   }
 }
 Assets {
@@ -242,12 +278,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16027207279791976190
+  Name: "Plane Ring - One Sided Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_ring_003"
+  }
+}
+Assets {
   Id: 15986320784133630650
   Name: "Modern Weapon - Sight 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_sight_002"
+  }
+}
+Assets {
+  Id: 15978505116973808262
+  Name: "Cone - Truncated Hollow Wide Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_005"
   }
 }
 Assets {
@@ -278,6 +332,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15676089155117276620
+  Name: "Container - Square Thin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_square_thin_ref"
+  }
+}
+Assets {
   Id: 15380740538046429488
   Name: "Rope"
   PlatformAssetType: 2
@@ -296,12 +359,21 @@ Assets {
   }
 }
 Assets {
-  Id: 15059124895606248140
-  Name: "Wedge - Convex"
+  Id: 15134376386077723113
+  Name: "Rock Pile 002"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_wedge_curved_convex_001"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 15094280472468912408
+  Name: "Cylinder - 2-Toned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_003"
   }
 }
 Assets {
@@ -320,6 +392,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_st_post_lights_pole_001_top"
+  }
+}
+Assets {
+  Id: 15015432034836380672
+  Name: "Cylinder - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_001"
+  }
+}
+Assets {
+  Id: 14924219277195828153
+  Name: "Military Hesco Barrier"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_hesco_001"
   }
 }
 Assets {
@@ -386,6 +476,24 @@ Assets {
   }
 }
 Assets {
+  Id: 14286213570080929128
+  Name: "Ring - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_001"
+  }
+}
+Assets {
+  Id: 14237220486008111868
+  Name: "Knife - Blade"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_knife_001"
+  }
+}
+Assets {
   Id: 14211527857426905558
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
@@ -428,6 +536,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_gear_001_ref"
+  }
+}
+Assets {
+  Id: 13983215915027340393
+  Name: "Container - Rectangle Thick 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_rectangle_thick_ref"
+  }
+}
+Assets {
+  Id: 13924487467599180715
+  Name: "Military Tank Historic Hull 01 - Rear"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_hst_hull_001_rear_ref"
   }
 }
 Assets {
@@ -482,6 +608,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_acc_rail_001"
+  }
+}
+Assets {
+  Id: 13382674751763746283
+  Name: "Modern Weapon - Barrel Tip 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_barreltip_003"
   }
 }
 Assets {
@@ -617,6 +752,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_pipes_acc_coupling_005_ref"
+  }
+}
+Assets {
+  Id: 12557487857239876466
+  Name: "Wedge"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_001"
   }
 }
 Assets {
@@ -782,6 +926,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11152543566684517200
+  Name: "Metal 9 Slice Frame 005"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_frames_9slice_005"
+  }
+}
+Assets {
   Id: 11011401457215415234
   Name: "Plane Octagon - One Sided"
   PlatformAssetType: 1
@@ -809,12 +962,39 @@ Assets {
   }
 }
 Assets {
+  Id: 10746051325900785529
+  Name: "Military Tank Modern Hull 01 - Front"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_mod_hull_001_front_ref"
+  }
+}
+Assets {
+  Id: 10512577683718946604
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
+  }
+}
+Assets {
   Id: 10506016181184346374
   Name: "Military Frame 006"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Frame_006"
+  }
+}
+Assets {
+  Id: 10283743880838515553
+  Name: "Gem - Baguette Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_baguette_polished_001"
   }
 }
 Assets {
@@ -863,15 +1043,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9675776263369201294
-  Name: "Fantasy Pommel 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_pommel_003"
-  }
-}
-Assets {
   Id: 9643743770374877205
   Name: "Military Tank Historic Container 01"
   PlatformAssetType: 1
@@ -887,15 +1058,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scf_hinge_001_ref"
-  }
-}
-Assets {
-  Id: 9593447687836068178
-  Name: "Fantasy Mace Guard 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_guard_mace_001"
   }
 }
 Assets {
@@ -926,15 +1088,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9323790203658806171
-  Name: "Cube - Rounded"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_rounded_002"
-  }
-}
-Assets {
   Id: 9279130763178750287
   Name: "Urban Fence Doorway"
   PlatformAssetType: 1
@@ -950,6 +1103,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_armorplate_002_ref"
+  }
+}
+Assets {
+  Id: 9132872448254962453
+  Name: "Container - Rectangle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_rectangle_ref"
   }
 }
 Assets {
@@ -989,15 +1151,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8936483106303992826
-  Name: "Sci-fi Ship Nacelle 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_scf_ship_nacelle_003_ref"
-  }
-}
-Assets {
   Id: 8748212014664122890
   Name: "Metal Painted Old 01"
   PlatformAssetType: 2
@@ -1016,12 +1169,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8307003537298922985
-  Name: "Modern Weapon - Barrel Tip 01"
-  PlatformAssetType: 1
+  Id: 8329339828071933523
+  Name: "Concrete Basic 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_barreltip_001"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_001"
   }
 }
 Assets {
@@ -1031,15 +1184,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_curve90_002"
-  }
-}
-Assets {
-  Id: 8153476362469942911
-  Name: "Wood 2x4 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_two-by-four_3m"
   }
 }
 Assets {
@@ -1169,15 +1313,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6855348992067761797
-  Name: "Modern Weapon - Grenade Canister 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weapons_grenade_sphere_001"
-  }
-}
-Assets {
   Id: 6827615561326724763
   Name: "Urban Pipe Straight"
   PlatformAssetType: 1
@@ -1205,12 +1340,39 @@ Assets {
   }
 }
 Assets {
+  Id: 6648688902516484551
+  Name: "Military Rare Crate Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_crate_lid_002_ref"
+  }
+}
+Assets {
+  Id: 6551093352602210295
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
   Id: 6537439656322918389
   Name: "Prism - 4-Sided Trapezoid Right"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_trapezoid_001"
+  }
+}
+Assets {
+  Id: 6408089931162176961
+  Name: "Gem - Radiant Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_radiant_polished_001"
   }
 }
 Assets {
@@ -1241,21 +1403,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6368045904011672785
+  Name: "Pipe - X-Intersection Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_X_intersection_003"
+  }
+}
+Assets {
+  Id: 6290353088277122325
+  Name: "Military Hesco Barrier - Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_hesco_002"
+  }
+}
+Assets {
   Id: 6265092783161754024
   Name: "Pyramid - 4-Sided Truncated Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_truncated_hq_001"
-  }
-}
-Assets {
-  Id: 6260705033843071835
-  Name: "Military Tank Tread Link 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_tread_link_01_ref"
   }
 }
 Assets {
@@ -1268,21 +1439,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6118862309081978775
-  Name: "Prism - 6-Sided"
+  Id: 6045540826292531006
+  Name: "Modern Weapon - Sight Forward 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_hexagon_001"
-  }
-}
-Assets {
-  Id: 6040461109962236062
-  Name: "Military Tank Modern Mudflap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_mod_mudflap_001_ref"
+    AssetId: "sm_weap_modern_sight_forw_002"
   }
 }
 Assets {
@@ -1304,6 +1466,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5836430349218932838
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
+  }
+}
+Assets {
   Id: 5742254973450315022
   Name: "Military Tank Historic Mantlet 01"
   PlatformAssetType: 1
@@ -1322,39 +1493,30 @@ Assets {
   }
 }
 Assets {
-  Id: 5628718117847872172
-  Name: "Main Street Awning Bracket"
+  Id: 5576895635256971627
+  Name: "Prism - 5-Sided"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_part_awning_mount_01_ref"
+    AssetId: "sm_prism_pentagon_001"
   }
 }
 Assets {
-  Id: 5626465369024768397
-  Name: "Military Tank Historic Gear 02"
+  Id: 5571206572552270378
+  Name: "Pipe - Quarter Thin"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_hst_gear_002_ref"
+    AssetId: "sm_quarter-pipe_002"
   }
 }
 Assets {
-  Id: 5606762221663409711
-  Name: "Pipe - Quarter Wedge Thin"
+  Id: 5560116840905672437
+  Name: "Military Tank Modern Armorplate 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_pipe_wedge_002"
-  }
-}
-Assets {
-  Id: 5605120965849612947
-  Name: "Fantasy Sword Blade 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_blade_sword_001"
+    AssetId: "sm_mil_tank_mod_armorplate_003_ref"
   }
 }
 Assets {
@@ -1364,15 +1526,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weapons_grenade_handle_001"
-  }
-}
-Assets {
-  Id: 5489775416547967874
-  Name: "Sphere - Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hemisphere_001"
   }
 }
 Assets {
@@ -1394,12 +1547,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5306228048617959977
-  Name: "Sci-fi Console Leg 01"
-  PlatformAssetType: 1
+  Id: 5351428073291024820
+  Name: "Emissive Glow Opaque"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_scf_leg_001_ref"
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
@@ -1418,15 +1571,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_tread_001_front_ref"
-  }
-}
-Assets {
-  Id: 5183250353812937636
-  Name: "Sci-fi Cockpit Sideguard 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_scf_ship_cockpit_sideguard_001_ref"
   }
 }
 Assets {
@@ -1454,6 +1598,24 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_sand_patch_001"
+  }
+}
+Assets {
+  Id: 4953720481035878156
+  Name: "Decal Soil Cracks Big 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_001"
+  }
+}
+Assets {
+  Id: 4907744992022946492
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
   }
 }
 Assets {
@@ -1493,15 +1655,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4830864787362637433
-  Name: "Street Light Pole Base 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_st_post_lights_pole_001_base"
-  }
-}
-Assets {
   Id: 4798953546912878943
   Name: "Urban Pipe Clamp 03"
   PlatformAssetType: 1
@@ -1517,15 +1670,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_mod_gear_001_ref"
-  }
-}
-Assets {
-  Id: 4660122875365219363
-  Name: "Cone - Truncated Hollow Wide Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_006"
   }
 }
 Assets {
@@ -1574,6 +1718,33 @@ Assets {
   }
 }
 Assets {
+  Id: 4018151674637390121
+  Name: "Military Tank Tread Link 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_tread_link_04_ref"
+  }
+}
+Assets {
+  Id: 3998592366905403415
+  Name: "Glass 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_refrac_001"
+  }
+}
+Assets {
+  Id: 3738570735596272416
+  Name: "Cliff 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_cliff_001_uv"
+  }
+}
+Assets {
   Id: 3702191406046426907
   Name: "Emissive Glow Transparent"
   PlatformAssetType: 2
@@ -1589,6 +1760,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_barrel_01_ref"
+  }
+}
+Assets {
+  Id: 3658165904025862718
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
   }
 }
 Assets {
@@ -1616,6 +1796,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_scf_ship_cockpit_console_001_ref"
+  }
+}
+Assets {
+  Id: 3326207385199407844
+  Name: "Rock 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
   }
 }
 Assets {
@@ -1652,15 +1841,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_octagon_001"
-  }
-}
-Assets {
-  Id: 2817890560817570586
-  Name: "Modern Weapon Barrel 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_barrel_001"
   }
 }
 Assets {
@@ -1709,12 +1889,30 @@ Assets {
   }
 }
 Assets {
-  Id: 2330090075218241288
-  Name: "Pyramid - 4-Sided Truncated"
+  Id: 2513330173715104405
+  Name: "Military Tank Historic Hull 01 - Mid"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_truncated_001"
+    AssetId: "sm_mil_tank_hst_hull_001_mid_ref"
+  }
+}
+Assets {
+  Id: 2498881100741412066
+  Name: "Wedge - Corner-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_002"
+  }
+}
+Assets {
+  Id: 2288213157925483137
+  Name: "Asphalt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_asphault_001"
   }
 }
 Assets {
@@ -1727,21 +1925,21 @@ Assets {
   }
 }
 Assets {
-  Id: 2159678873184162260
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
-  }
-}
-Assets {
   Id: 2105469337981746227
   Name: "Military Tank Historic Armor Plate 01 - Rear"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_armorplate_001_rear_ref"
+  }
+}
+Assets {
+  Id: 2022252228262665415
+  Name: "Ellipsoid - Truncated Hollow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_hollow_001"
   }
 }
 Assets {
@@ -1790,12 +1988,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1222394474421416084
-  Name: "Urban Floor Grate Fire Escape - 1m x 4m"
+  Id: 1315438047815824613
+  Name: "Military Tank Historic Hatch 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_floor_grate_firesc_1x4_001_ref"
+    AssetId: "sm_mil_tank_hst_hatch_001_ref"
   }
 }
 Assets {
@@ -1823,6 +2021,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 625906690733978220
+  Name: "Modern Weapon - Body 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_body_004"
+  }
+}
+Assets {
+  Id: 577122772755024665
+  Name: "Prism - 3-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_001"
   }
 }
 Assets {
@@ -1895,5 +2111,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_floor_grate_firesc_1x2_001_ref"
+  }
+}
+Assets {
+  Id: 8865343709422119
+  Name: "Pipe - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_001"
   }
 }
