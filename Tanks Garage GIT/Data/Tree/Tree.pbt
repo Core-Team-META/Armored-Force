@@ -691,6 +691,153 @@ Objects {
     VoxelSize: 100
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
+    Foliage {
+      Asset {
+        Id: 6551093352602210295
+      }
+      DistanceBetweenInstances: 50
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 50
+      }
+      Scaling {
+        Scaling: Free
+        ScaleX {
+          Min: 0.05
+          Max: 0.3
+        }
+        ScaleY {
+          Min: 0.05
+          Max: 0.3
+        }
+        ScaleZ {
+          Min: 0.05
+          Max: 0.3
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Shared_BaseMaterial"
+        value {
+          Id: 18345558741204381886
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 1200
+      }
+      HeightFalloff: 2000
+    }
+    Foliage {
+      Asset {
+        Id: 17287164381252296468
+      }
+      DistanceBetweenInstances: 500
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 50
+      }
+      Scaling {
+        Scaling: Free
+        ScaleX {
+          Min: 0.4
+          Max: 3
+        }
+        ScaleY {
+          Min: 0.4
+          Max: 3
+        }
+        ScaleZ {
+          Min: 0.4
+          Max: 4
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 9465917167388663084
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 13849856485583202930
+      }
+      DistanceBetweenInstances: 1000
+      SpawnDistance: 20000
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 50
+      }
+      Scaling {
+        Scaling: LockXY
+        ScaleX {
+          Min: 0.5
+          Max: 1.5
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 2
+          Max: 3.5
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 12
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 6792720768622420792
+        }
+      }
+      LocalPositionOffset {
+        Z: -10
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 1300
+      }
+      HeightFalloff: 2000
+    }
   }
 }
 Objects {
