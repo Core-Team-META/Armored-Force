@@ -83,7 +83,7 @@ function SetHeights(unitSet)
 		raycastResult = nil
 		targetPoint = 0
 		
-		raycastResult = World.Raycast(unit.highestRaycastPostion:GetWorldPosition(), unit.lowestPosition:GetWorldPosition())
+		raycastResult = World.Raycast(unit.highestRaycastPostion:GetWorldPosition(), unit.lowestPosition:GetWorldPosition(), {ignorePlayers = true})
 		
 		if raycastResult then
 		

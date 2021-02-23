@@ -1,28 +1,7 @@
 Name: "Marcela"
 RootId: 2959002750480800334
 Objects {
-  Id: 13749464766903795167
-  Name: "Tank Loadout"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2959002750480800334
-  ChildIds: 1432558910961200405
-  ChildIds: 14060985236602792070
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 14060985236602792070
+  Id: 16790486986739733899
   Name: "Static Player Equipment"
   Transform {
     Location {
@@ -35,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13749464766903795167
-  ChildIds: 11300440074604908349
+  ParentId: 2959002750480800334
+  ChildIds: 10960266921467511749
   UnregisteredParameters {
     Overrides {
       Name: "cs:EquipmentTemplate"
@@ -292,7 +271,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11300440074604908349
+  Id: 10960266921467511749
   Name: "StaticPlayerEquipmentServer"
   Transform {
     Location {
@@ -305,12 +284,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14060985236602792070
+  ParentId: 16790486986739733899
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 14060985236602792070
+        SelfId: 16790486986739733899
       }
     }
   }
@@ -324,6 +303,26 @@ Objects {
     ScriptAsset {
       Id: 6259926490851895543
     }
+  }
+}
+Objects {
+  Id: 13749464766903795167
+  Name: "Tank Loadout"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2959002750480800334
+  ChildIds: 1432558910961200405
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
@@ -552,6 +551,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -670,6 +671,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -787,6 +790,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -904,6 +909,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1022,6 +1029,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1139,6 +1148,8 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1337,6 +1348,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1455,6 +1468,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1573,6 +1588,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1691,6 +1708,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1809,6 +1828,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1927,6 +1948,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2045,6 +2068,8 @@ Objects {
         Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2162,6 +2187,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2279,6 +2306,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2396,6 +2425,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2513,6 +2544,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2630,6 +2663,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2747,6 +2782,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2864,6 +2901,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -2981,6 +3020,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3098,6 +3139,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3215,6 +3258,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3332,6 +3377,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3449,6 +3496,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3566,6 +3615,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3683,6 +3734,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3800,6 +3853,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3917,6 +3972,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4034,6 +4091,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4151,6 +4210,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4268,6 +4329,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4385,6 +4448,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4502,6 +4567,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4619,6 +4686,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4736,6 +4805,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4853,6 +4924,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4970,6 +5043,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -5086,6 +5161,8 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      Font {
+      }
     }
     AnchorLayout {
       SelfAnchor {

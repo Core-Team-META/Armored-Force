@@ -1,6 +1,6 @@
 Assets {
   Id: 12605467673027803098
-  Name: "TankProjectile02_1"
+  Name: "TankProjectile02_prototype"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
