@@ -45,9 +45,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material2"
         Color {
-          R: 1.2
-          G: 1.2
-          B: 1.2
+          R: 1.1
+          G: 1.1
+          B: 1.1
           A: 1
         }
       }
@@ -60,11 +60,53 @@ Assets {
       Overrides {
         Name: "cmpc:Material2_Sides"
         Color {
-          R: 1.3
-          G: 1.3
-          B: 1.3
+          R: 1.1
+          G: 1.1
+          B: 1.1
           A: 1
         }
+      }
+      Overrides {
+        Name: "cmp:Material3"
+        AssetReference {
+          Id: 4086874274748873511
+        }
+      }
+      Overrides {
+        Name: "cmp:Material3_Sides"
+        AssetReference {
+          Id: 4086874274748873511
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material3"
+        Color {
+          R: 3
+          G: 1.64474988
+          B: 0.914999843
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material3_Sides"
+        Color {
+          R: 3
+          G: 1.64474988
+          B: 0.914999843
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "material3_genmask"
+        Float: 5
+      }
+      Overrides {
+        Name: "material3_scale"
+        Float: 3
+      }
+      Overrides {
+        Name: "material3side_scale"
+        Float: 3
       }
     }
     Assets {
@@ -110,6 +152,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_sand_001_uv"
+      }
+    }
+    Assets {
+      Id: 4086874274748873511
+      Name: "Rocks River Bed 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "puddle_river_bed_001"
+      }
+    }
+    Assets {
+      Id: 4086874274748873511
+      Name: "Rocks River Bed 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "puddle_river_bed_001"
       }
     }
   }
