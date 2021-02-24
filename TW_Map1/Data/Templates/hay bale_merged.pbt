@@ -111,7 +111,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -297,7 +296,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -348,7 +346,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -399,7 +396,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -450,7 +446,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -501,7 +496,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -553,7 +547,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -605,7 +598,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -667,7 +659,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -729,7 +720,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -791,7 +781,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -853,7 +842,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -915,7 +903,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -977,7 +964,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1030,7 +1016,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1082,7 +1067,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1134,7 +1118,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1186,7 +1169,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1238,7 +1220,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1289,7 +1270,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1341,7 +1321,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1393,7 +1372,6 @@ Assets {
           }
           DisableCastShadows: true
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1457,7 +1435,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1521,7 +1498,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1585,7 +1561,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1649,7 +1624,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1713,7 +1687,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1777,7 +1750,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1830,7 +1802,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
