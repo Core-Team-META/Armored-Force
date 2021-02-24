@@ -2060,6 +2060,15 @@ Assets {
   }
 }
 Assets {
+  Id: 292915755253779602
+  Name: "Wood Planks Beveled Painted 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_bevel_planks_white_001_uv"
+  }
+}
+Assets {
   Id: 286982728900310227
   Name: "Military Tank Historic Track 01 - Mid 4m"
   PlatformAssetType: 1

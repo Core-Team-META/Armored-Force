@@ -64,6 +64,13 @@ Objects {
   Id: 1515039180194458749
   Name: "CinematicShot"
   Transform {
+    Location {
+      X: 1042.44922
+      Y: 9849.61621
+    }
+    Rotation {
+      Yaw: 36.7096519
+    }
     Scale {
       X: 1
       Y: 1
@@ -635,7 +642,7 @@ Objects {
   Transform {
     Location {
       X: -1128.90332
-      Z: -8652.92578
+      Z: -6648.19
     }
     Rotation {
     }
@@ -752,7 +759,7 @@ Objects {
       }
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 50
+        Max: 45
       }
       Scaling {
         Scaling: Free
@@ -778,6 +785,7 @@ Objects {
         }
       }
       LocalPositionOffset {
+        Z: -10
       }
       LocalRotationOffset {
       }
@@ -1048,12 +1056,12 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 1788.44958
-      Y: 4248.64502
-      Z: 141.412079
+      X: 119.800751
+      Y: 14503.2451
+      Z: 141.412094
     }
     Rotation {
-      Yaw: 179.465958
+      Yaw: -140.649185
     }
     Scale {
       X: 1
