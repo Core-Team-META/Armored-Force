@@ -215,10 +215,22 @@ function PopulateTankContentsPanel(panel, tank)
 			end				
 		elseif(v.name == "ResearchWeapon") then
 			v.text = GetUpgradeText(playerTankData.hasWeapon, tank.weaponResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasWeapon, tank.weaponPurchaseCost, Constants_API.UPGRADE_TYPE.PURCHASE)
+			v.clickedEvent:Connect(UpgradeWeapon)
+			v.hoveredEvent:Connect(ShowWeaponTooltip)
+			v.name = tostring(tank.id)
+			print(v:GetCustomProperty("Id"))
 		elseif(v.name == "ResearchArmor") then			
 			v.text = GetUpgradeText(playerTankData.hasArmor, tank.armorResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasArmor, tank.armorPurchaseCost, Constants_API.UPGRADE_TYPE.PURCHASE)
+			v.clickedEvent:Connect(UpgradeArmor)
+			v.hoveredEvent:Connect(ShowArmorTooltip)
+			v.name = tostring(tank.id)
+			print(v:GetCustomProperty("Id"))
 		elseif(v.name == "ResearchMobility") then
 			v.text = GetUpgradeText(playerTankData.hasEngine, tank.mobilityResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasEngine, tank.mobilityResearchCost, Constants_API.UPGRADE_TYPE.PURCHASE)
+			v.clickedEvent:Connect(UpgradeEngine)
+			v.hoveredEvent:Connect(ShowEngineTooltip)
+			v.name = tostring(tank.id)
+			print(v:GetCustomProperty("Id"))
 		end
 	end
 end
@@ -340,6 +352,53 @@ function GetTierCount(tier)
 	else
 		warn("Invalid tier supplied.Tiers must be between 1 and 4.")
 	end
+end
+
+-- Listener functions
+function UpgradeWeapon(button)
+	-- DEBUG
+	print("Upgrade weapon for Id: " .. button.name)
+	local tank = GetPlayerTankData(tonumber(button.name))
+	-- TODO: Upgrade weapon and persist data
+end
+
+function UpgradeArmor(button)
+	-- DEBUG
+	print("Upgrade armor for Id:" .. button.name)
+	local tank = GetPlayerTankData(tonumber(button.name))
+	-- TODO: Upgrade armor and persist data
+end
+
+function UpgradeEngine(button)
+	-- DEBUG
+	print("Upgrade engine for Id: " .. button.name)
+	local tank = GetPlayerTankData(tonumber(button.name))
+	-- TODO: Upgrade engine and persist data
+end
+
+function ShowWeaponTooltip(button)
+	-- DEBUG
+	print("Hovering for weapon upgrade. Tank Id: " .. button.name)
+	local tank = GetPlayerTankData(tonumber(button.name))
+	-- Create/show tooltip and display weapon tank data as needed...
+end
+
+function ShowArmorTooltip(button)
+	-- DEBUG
+	print("Hovering for armor upgrade. Tank Id: " .. button.name)
+	local tank = GetPlayerTankData(tonumber(button.name))
+	-- Create/show tooltip and display armor tank data as needed...
+end
+
+function ShowEngineTooltip(button)
+	-- DEBUG
+	print("Hovering for engine upgrade. Tank Id: " .. button.name)
+	local tank = GetPlayerTankData(tonumber(button.name))
+	-- Create/show tooltip and display engine tank data as needed...
+end
+
+function RemoveTooltip()
+	-- TODO Hide/Remove the tooltip panel
 end
 
 Init()

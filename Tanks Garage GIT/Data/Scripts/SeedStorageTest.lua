@@ -32,6 +32,18 @@ function PopulateSomeStorage(player, data)
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(14), 3000)
     player:SetResource(MetaAbilityProgressionConstants_API.SILVER, 72000)
     player:SetResource(MetaAbilityProgressionConstants_API.FREERP, 8000)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_DAMAGE_RES, 9875)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.ACCURACY, 7055) -- Divide by 100 to be able to store/show values to decimal places? Ex: this would be 70.55%
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.AVERAGE_DAMAGE, 1070) -- Average damage per battle
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.CURRENT_KILL_STREAK, 0) -- Most likely just used during battles
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.LARGEST_KILL_STREAK, 4)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.GAMES_PLAYED_RES, 37)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_DAMAGE_RES, 20)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_LOSSES, 17)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_DEATHS, 17)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_KILLS, 29)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_ASSISTS, 35)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_DAMAGE_RES, 6) -- Most tanks destroyed in a single match
 
     local dataTransferObject = World.SpawnAsset(DATA_TRANSFER_OBJECT, {parent = DATA_TRANSFER})
     dataTransferObject:SetNetworkedCustomProperty("OwnerId", player.id)
