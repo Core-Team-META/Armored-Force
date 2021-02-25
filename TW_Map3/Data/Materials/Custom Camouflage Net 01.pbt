@@ -2,7 +2,7 @@ Assets {
   Id: 11296587254231587165
   Name: "Custom Camouflage Net 01"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 77
   CustomMaterialAsset {
     BaseMaterialId: 4963086278565046204
     ParameterOverrides {

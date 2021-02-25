@@ -2,7 +2,7 @@ Assets {
   Id: 10921027446473189676
   Name: "TW3_PineTreeBranchesDistant"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 77
   CustomMaterialAsset {
     BaseMaterialId: 188110678039708387
     ParameterOverrides {

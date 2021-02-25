@@ -47,6 +47,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 17128738134253733554
@@ -94,6 +97,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -143,6 +149,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9400399695713120256
@@ -190,6 +199,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -239,6 +251,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9764435365204606024
@@ -286,6 +301,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -335,6 +353,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12547411697426516531
@@ -382,6 +403,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -431,6 +455,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 5622348063884177245
@@ -478,6 +505,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -527,6 +557,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 14607047323921209991
@@ -574,6 +607,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -623,6 +659,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 534922123779726529
@@ -670,6 +709,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -719,6 +761,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16839486638996447946
@@ -766,6 +811,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -815,6 +863,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12989822584988530163
@@ -862,6 +913,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -911,6 +965,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 434930134897901317
@@ -958,6 +1015,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1007,6 +1067,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 16705692668931574821
@@ -1054,6 +1117,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1103,6 +1169,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 9026455173340002336
@@ -1150,6 +1219,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1199,6 +1271,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 8931257479122370368
@@ -1246,6 +1321,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1295,6 +1373,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 6465989197155333086
@@ -1341,6 +1422,9 @@ Objects {
     DecalBP {
     }
   }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
 }
 Objects {
   Id: 12131668303116650292
@@ -1386,6 +1470,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1434,5 +1521,8 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }

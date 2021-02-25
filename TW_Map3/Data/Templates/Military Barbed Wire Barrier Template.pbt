@@ -65,6 +65,9 @@ Assets {
           DecalBP {
           }
         }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 11519635777590308492
@@ -1228,6 +1231,9 @@ Assets {
           DecalBP {
           }
         }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 9421250782866368167
@@ -1899,5 +1905,5 @@ Assets {
       AssetId: "Barbed_Wire_Barrier_Template"
     }
   }
-  SerializationVersion: 76
+  SerializationVersion: 77
 }
