@@ -1214,6 +1214,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7877079561641214106
+  Name: "Rock Flat 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_005"
+  }
+}
+Assets {
   Id: 7866890216073738249
   Name: "Glass 01 (no distortion)"
   PlatformAssetType: 2
@@ -1346,6 +1355,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_crate_lid_002_ref"
+  }
+}
+Assets {
+  Id: 6551093352602210295
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
@@ -1634,6 +1652,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_001"
+  }
+}
+Assets {
+  Id: 4841957848731423236
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
   }
 }
 Assets {
