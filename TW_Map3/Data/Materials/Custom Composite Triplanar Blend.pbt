@@ -2,7 +2,7 @@ Assets {
   Id: 10440483791935929735
   Name: "TW3_SnowyRock"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 77
   CustomMaterialAsset {
     BaseMaterialId: 2774051071689750425
     ParameterOverrides {

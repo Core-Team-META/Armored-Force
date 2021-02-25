@@ -2,7 +2,7 @@ Assets {
   Id: 5022726319400642360
   Name: "TW3_GlassWindow"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 77
   CustomMaterialAsset {
     BaseMaterialId: 4064249699380950692
     ParameterOverrides {

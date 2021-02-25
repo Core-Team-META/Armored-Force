@@ -2,7 +2,7 @@ Assets {
   Id: 2897474060105501612
   Name: "TW2_Leaves"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 77
   CustomMaterialAsset {
     BaseMaterialId: 409059462685027538
     ParameterOverrides {

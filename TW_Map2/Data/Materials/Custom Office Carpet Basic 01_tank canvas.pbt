@@ -2,7 +2,7 @@ Assets {
   Id: 6119832870806008916
   Name: "Custom Office Carpet Basic 01_tank canvas"
   PlatformAssetType: 13
-  SerializationVersion: 76
+  SerializationVersion: 77
   CustomMaterialAsset {
     BaseMaterialId: 14411642205544487195
     ParameterOverrides {
