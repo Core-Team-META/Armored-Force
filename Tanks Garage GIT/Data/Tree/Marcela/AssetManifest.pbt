@@ -1349,15 +1349,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6551093352602210295
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
   Id: 6537439656322918389
   Name: "Prism - 4-Sided Trapezoid Right"
   PlatformAssetType: 1
