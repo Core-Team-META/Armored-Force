@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15134376386077723113
-  Name: "Rock Pile 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
   Id: 13849856485583202930
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -44,57 +35,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7877079561641214106
-  Name: "Rock Flat 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_005"
-  }
-}
-Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
-  Id: 4907744992022946492
-  Name: "Rock 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_003"
-  }
-}
-Assets {
-  Id: 4841957848731423236
-  Name: "Rock Flat 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_004"
-  }
-}
-Assets {
-  Id: 3738570735596272416
-  Name: "Cliff 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_cliff_001_uv"
-  }
-}
-Assets {
-  Id: 3658165904025862718
-  Name: "Rock 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_001"
   }
 }
 Assets {
