@@ -45,9 +45,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material2"
         Color {
-          R: 1.1
-          G: 1.1
-          B: 1.1
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
@@ -60,9 +60,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material2_Sides"
         Color {
-          R: 1.1
-          G: 1.1
-          B: 1.1
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
@@ -81,18 +81,18 @@ Assets {
       Overrides {
         Name: "cmpc:Material3"
         Color {
-          R: 3
-          G: 1.64474988
-          B: 0.914999843
+          R: 2.8
+          G: 1.70800006
+          B: 1.11999989
           A: 1
         }
       }
       Overrides {
         Name: "cmpc:Material3_Sides"
         Color {
-          R: 3
-          G: 1.64474988
-          B: 0.914999843
+          R: 2.8
+          G: 1.70800006
+          B: 1.11999989
           A: 1
         }
       }

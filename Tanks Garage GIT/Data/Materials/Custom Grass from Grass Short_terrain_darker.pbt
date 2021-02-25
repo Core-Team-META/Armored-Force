@@ -1,6 +1,6 @@
 Assets {
-  Id: 9465917167388663084
-  Name: "Custom Grass from Grass Short_terrain"
+  Id: 12770782285917496110
+  Name: "Custom Grass from Grass Short_terrain_darker"
   PlatformAssetType: 13
   SerializationVersion: 76
   CustomMaterialAsset {
@@ -9,9 +9,9 @@ Assets {
       Overrides {
         Name: "color"
         Color {
-          R: 0.375125349
-          G: 0.391000032
-          B: 0.152881
+          R: 0.397901326
+          G: 0.417000026
+          B: 0.130521
           A: 1
         }
       }
