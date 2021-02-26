@@ -357,8 +357,8 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      X: -282.513336
-      Y: -3.39557862
+      X: 216.516159
+      Y: -4.17115641
       Z: 4.45018268e-05
     }
     Rotation {
@@ -702,6 +702,7 @@ Objects {
     }
   }
   ParentId: 12342638008067059637
+  ChildIds: 8178561317495349905
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -710,5 +711,120 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 8178561317495349905
+  Name: "GAMESTATE_MainManager"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8288906328805017304
+  ChildIds: 16752799134896046516
+  ChildIds: 3399829589752301931
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3399829589752301931
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8178561317495349905
+  ChildIds: 15930511167154525018
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 15930511167154525018
+  Name: "GAMESTATE_MainManagerClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3399829589752301931
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GAMESTATE_MainManagerServer"
+      ObjectReference {
+        SelfId: 16752799134896046516
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14796956038353267529
+    }
+  }
+}
+Objects {
+  Id: 16752799134896046516
+  Name: "GAMESTATE_MainManagerServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8178561317495349905
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12679298123912056917
+    }
   }
 }
