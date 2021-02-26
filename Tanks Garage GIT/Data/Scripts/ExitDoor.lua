@@ -1,12 +1,15 @@
-﻿local trigger = script.parent
+local trigger = script.parent
 local Door = script:GetCustomProperty("Door"):WaitForObject()
 
 local doorOpen = false
 
 function OnBeginOverlap(trigger, player)
     if doorOpen == false then
-    Door:MoveTo(Door:GetWorldPosition() + Vector3.UP * 1100, 5)
-    doorOpen = true
+	    Door:MoveTo(Door:GetWorldPosition() + Vector3.UP * 1100, 5)
+	    doorOpen = true
+	else
+	    Door:MoveTo(Door:GetWorldPosition() - Vector3.UP * 1100, 5)
+	    doorOpen = false		
     end
 end
 
