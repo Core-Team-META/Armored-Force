@@ -26,6 +26,19 @@ Assets {
   }
 }
 Assets {
+  Id: 9208223880286796769
+  Name: "PlayerSharedStorage"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8cd7b4910d07447a8fac4ca5a361a105"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 8777653088300600563
   Name: "Bush 01"
   PlatformAssetType: 1

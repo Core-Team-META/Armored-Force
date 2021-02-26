@@ -16,3 +16,16 @@ Assets {
     AssetId: "sm_plane_1m_001"
   }
 }
+Assets {
+  Id: 1812606721532644730
+  Name: "PlayerSharedStorage"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8cd7b4910d07447a8fac4ca5a361a105"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}

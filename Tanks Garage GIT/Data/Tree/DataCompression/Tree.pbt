@@ -230,13 +230,9 @@ Objects {
   }
 }
 Objects {
-  Id: 15596122869982233875
+  Id: 17624313006872301189
   Name: "ResourcePersisterServer"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -244,6 +240,29 @@ Objects {
     }
   }
   ParentId: 8790839518416858328
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PlayerSharedStorage"
+      NetReference {
+        Key: "8cd7b4910d07447a8fac4ca5a361a105"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
