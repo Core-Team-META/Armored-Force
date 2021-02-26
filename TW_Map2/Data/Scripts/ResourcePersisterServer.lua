@@ -16,6 +16,8 @@ end
 function OnPlayerJoined(player)
 	local playerData = Storage.GetPlayerData(player)
 
+
+--[[
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
 	end
@@ -23,11 +25,13 @@ function OnPlayerJoined(player)
 	for resource, value in pairs(playerData.resources) do
 		player:SetResource(resource, value)
 	end
-
+	--]]
+	player.resourceChangedEvent:Connect(OnResourceChanged)
+	
 	CheckAndSetSharedStorageDefault(player)
 	LoadAndSetDataFromSharedStorage(player)
-
-	player.resourceChangedEvent:Connect(OnResourceChanged)
+	
+	Storage.SetPlayerData(player, playerData)	
 
 	-- DEBUG: Print out storage
 	print("-----PRINTING SHARED STORAGE-----")
@@ -93,6 +97,7 @@ function LoadAndSetDataFromSharedStorage(player)
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS])
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS])
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED])
+	
 end
 
 function SavePlayerDataIntoSharedStorage(player)

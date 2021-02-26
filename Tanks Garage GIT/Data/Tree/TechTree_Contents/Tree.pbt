@@ -2,7 +2,7 @@ Name: "TechTree_Contents"
 RootId: 7647187385909291407
 Objects {
   Id: 16665361159921740361
-  Name: "TechTree_Jagtiger"
+  Name: "TechTree_Jagdtiger"
   Transform {
     Location {
     }

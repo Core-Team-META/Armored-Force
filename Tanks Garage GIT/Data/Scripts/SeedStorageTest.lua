@@ -9,7 +9,7 @@ local DATA_TRANSFER_OBJECT = script:GetCustomProperty("DataTransferObject")
 function OnPlayerJoined(player)
     local data = Storage.GetPlayerData(player)
     --PopulateFullStorage(player, data)
-    PopulateSomeStorage(player, data)
+    --PopulateSomeStorage(player, data)
     --PopulateNewPlayerStorage(player, data)    
 end
 
@@ -23,6 +23,7 @@ function PopulateSomeStorage(player, data)
     table.insert(data[tostring(MetaAbilityProgressionConstants_API.STORAGE.PROGRESSION)],dataString)
     Storage.SetPlayerData(player, data)
 
+    player:SetResource(MetaAbilityProgressionConstants_API.GetEquippedTankResource(), "01")
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(1), 1500)
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(3), 6000)
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(6), 3500)
@@ -38,12 +39,12 @@ function PopulateSomeStorage(player, data)
     player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.CURRENT_KILL_STREAK, 0) -- Most likely just used during battles
     player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.LARGEST_KILL_STREAK, 4)
     player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.GAMES_PLAYED_RES, 37)
-    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_DAMAGE_RES, 20)
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_WINS, 20)
     player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_LOSSES, 17)
     player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_DEATHS, 17)
     player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_KILLS, 29)
     player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_ASSISTS, 35)
-    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.TOTAL_DAMAGE_RES, 6) -- Most tanks destroyed in a single match
+    player:SetResource(MetaAbilityProgressionConstants_API.COMBAT_STATS.MOST_TANKS_DESTROYED, 6) -- Most tanks destroyed in a single match
 
     local dataTransferObject = World.SpawnAsset(DATA_TRANSFER_OBJECT, {parent = DATA_TRANSFER})
     dataTransferObject:SetNetworkedCustomProperty("OwnerId", player.id)
