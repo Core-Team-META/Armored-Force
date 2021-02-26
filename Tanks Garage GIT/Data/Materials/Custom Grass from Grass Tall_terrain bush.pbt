@@ -1,6 +1,6 @@
 Assets {
   Id: 3295441974003903721
-  Name: "Custom Grass from Grass Tall_terrain shrubs"
+  Name: "Custom Grass from Grass Tall_terrain bush"
   PlatformAssetType: 13
   SerializationVersion: 77
   CustomMaterialAsset {
