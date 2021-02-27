@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17952688118125628785
+  Name: "Teardrop - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_truncated_teardrop_001"
+  }
+}
+Assets {
   Id: 17858736014608014985
   Name: "Prism - 6-Sided Half"
   PlatformAssetType: 1
@@ -149,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_SunLight"
+  }
+}
+Assets {
+  Id: 16815000814721488088
+  Name: "Ellipsoid - Truncated Wedge"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_wedge_001"
   }
 }
 Assets {
@@ -341,6 +359,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15676089155117276620
+  Name: "Container - Square Thin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_square_thin_ref"
+  }
+}
+Assets {
   Id: 15640713170331171039
   Name: "Pipe - 8-Sided Thin"
   PlatformAssetType: 1
@@ -386,6 +413,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15094280472468912408
+  Name: "Cylinder - 2-Toned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_003"
+  }
+}
+Assets {
   Id: 15059124895606248140
   Name: "Wedge - Convex"
   PlatformAssetType: 1
@@ -410,6 +446,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_st_post_lights_pole_001_top"
+  }
+}
+Assets {
+  Id: 15015432034836380672
+  Name: "Cylinder - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_001"
   }
 }
 Assets {
@@ -473,6 +518,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_numbers_002"
+  }
+}
+Assets {
+  Id: 14286213570080929128
+  Name: "Ring - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_001"
   }
 }
 Assets {
@@ -818,6 +872,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12356581102050708884
+  Name: "Cylinder - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_002"
+  }
+}
+Assets {
   Id: 12338587050614977044
   Name: "Metal Grates 03"
   PlatformAssetType: 2
@@ -950,6 +1013,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_hull_001_front_ref"
+  }
+}
+Assets {
+  Id: 11152543566684517200
+  Name: "Metal 9 Slice Frame 005"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_frames_9slice_005"
+  }
+}
+Assets {
+  Id: 11036095586913707253
+  Name: "Donut"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_001"
   }
 }
 Assets {
@@ -1121,6 +1202,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 9323790203658806171
+  Name: "Cube - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_002"
   }
 }
 Assets {
@@ -1463,6 +1553,24 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_bloom_advanced"
+  }
+}
+Assets {
+  Id: 6368045904011672785
+  Name: "Pipe - X-Intersection Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_X_intersection_003"
+  }
+}
+Assets {
+  Id: 6329208406307581317
+  Name: "Wedge - Concave Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_concave_hq_001"
   }
 }
 Assets {
@@ -2069,6 +2177,24 @@ Assets {
   }
 }
 Assets {
+  Id: 2029515409028393758
+  Name: "Hill 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_005"
+  }
+}
+Assets {
+  Id: 2022252228262665415
+  Name: "Ellipsoid - Truncated Hollow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_hollow_001"
+  }
+}
+Assets {
   Id: 1905297035267569611
   Name: "Modern Weapon - Stock 02"
   PlatformAssetType: 1
@@ -2273,6 +2399,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 99428546513861114
+  Name: "Urban Floor Grate Fire Escape - 2m x 2m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_floor_grate_firesc_2x2_001_ref"
   }
 }
 Assets {
