@@ -12,9 +12,9 @@ function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
 	
-		localPlayer:SetOverrideCamera(overrideCamera, 1)
+		localPlayer:SetOverrideCamera(overrideCamera, 2)
 		
-		Task.Wait(1)
+		Task.Wait(2)
 	
 		techTreeViewUI.isEnabled = true
 		
