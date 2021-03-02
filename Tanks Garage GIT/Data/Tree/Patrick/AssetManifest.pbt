@@ -1,4 +1,13 @@
 Assets {
+  Id: 10820194954338241369
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
   Id: 9431420845744582604
   Name: "Invisible"
   PlatformAssetType: 2

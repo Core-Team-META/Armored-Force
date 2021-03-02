@@ -59,6 +59,12 @@ Objects {
         SelfId: 10186311471389405217
       }
     }
+    Overrides {
+      Name: "cs:TankContents"
+      ObjectReference {
+        SelfId: 7647187385909291407
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
