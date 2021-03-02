@@ -9,7 +9,7 @@ local DATA_TRANSFER_OBJECT = script:GetCustomProperty("DataTransferObject")
 function OnPlayerJoined(player)
     local data = Storage.GetPlayerData(player)
     --PopulateFullStorage(player, data)
-    --PopulateSomeStorage(player, data)
+    PopulateSomeStorage(player, data)
     --PopulateNewPlayerStorage(player, data)    
 end
 
@@ -23,7 +23,7 @@ function PopulateSomeStorage(player, data)
     table.insert(data[tostring(MetaAbilityProgressionConstants_API.STORAGE.PROGRESSION)],dataString)
     Storage.SetPlayerData(player, data)
 
-    player:SetResource(MetaAbilityProgressionConstants_API.GetEquippedTankResource(), "01")
+    player:SetResource(MetaAbilityProgressionConstants_API.GetEquippedTankResource(), "06")
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(1), 1500)
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(3), 6000)
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(6), 3500)
