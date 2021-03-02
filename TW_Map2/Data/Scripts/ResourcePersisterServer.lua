@@ -16,8 +16,6 @@ end
 function OnPlayerJoined(player)
 	local playerData = Storage.GetPlayerData(player)
 
-
---[[
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
 	end
@@ -25,14 +23,14 @@ function OnPlayerJoined(player)
 	for resource, value in pairs(playerData.resources) do
 		player:SetResource(resource, value)
 	end
-	--]]
+	
+	Storage.SetPlayerData(player, playerData)	
+
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	CheckAndSetSharedStorageDefault(player)
 	LoadAndSetDataFromSharedStorage(player)
 	
-	Storage.SetPlayerData(player, playerData)	
-
 	-- DEBUG: Print out storage
 	print("-----PRINTING SHARED STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
