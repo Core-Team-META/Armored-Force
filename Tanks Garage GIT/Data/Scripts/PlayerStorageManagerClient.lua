@@ -41,7 +41,7 @@ function RetrieveData()
                         warn("Unable to parse data at position: " .. position)
                     end
                     position = position + 1
-                end
+                end                
                 table.insert(LOCAL_PLAYER.clientUserData.techTreeProgress, tankEntry)
             end 
 
