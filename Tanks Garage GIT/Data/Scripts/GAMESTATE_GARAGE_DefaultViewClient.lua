@@ -1,10 +1,18 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
 local defaultViewUI = script:GetCustomProperty("DefaultViewUI"):WaitForObject()
 
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 local toBattleButtons = script:GetCustomProperty("ToBattleButtons"):WaitForObject()
+
+-- Equip tank panel
+local loadEquippableTanks = script:GetCustomProperty("LoadEquippableTanks"):WaitForObject()
+local equipTankButton = script:GetCustomProperty("EquipTankButton")
+local equipTankScrollPanel = script:GetCustomProperty("EquipTankScrollPanel"):WaitForObject()
+local Y_OFFSET = 60
+-------------------
 
 local thisComponent = "DEFAULT_MENU"
 
@@ -87,10 +95,37 @@ function InitializeComponent()
 		end
 		
 	end
+	
+end
 
+function LoadEquippableTanks()
+	EmptyEquippableTankPanel()
+	Task.Wait()
+	local count = 0
+	for i, tank in ipairs(localPlayer.clientUserData.techTreeProgress) do
+		local button = World.SpawnAsset(equipTankButton, {parent = equipTankScrollPanel})
+		button.name = tank.id
+		button.y = count * Y_OFFSET
+		button.clickedEvent:Connect(EquipTank)
+		button.text = tank.name
+		count = count + 1
+	end
+end
+
+function EmptyEquippableTankPanel()
+	for i, child in ipairs(equipTankScrollPanel:GetChildren()) do
+		if(Object.IsValid(child)) then
+			child:Destroy()
+		end
+	end
+end
+
+function EquipTank(button)
+	ReliableEvents.BroadcastToServer("CHANGE_EQUIPPED_TANK", button.name)	
 end
 
 InitializeComponent()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
+loadEquippableTanks.clickedEvent:Connect(LoadEquippableTanks)

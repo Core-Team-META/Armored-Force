@@ -187,5 +187,16 @@ function GetEquippedTank(player)
 	return stringTankId
 end
 
+------------------------
+-- Listener functions --
+------------------------
+function ChangeEquippedTank(player, tankId)
+	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(tankId))
+	-- DEBUG
+	print("Set player's equipped tank to: " .. tankId)
+end
+
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+
+Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)

@@ -1080,6 +1080,14 @@ Objects {
     }
   }
   ParentId: 7540281279584508332
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TechTree_Contents"
+      ObjectReference {
+        SelfId: 7647187385909291407
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

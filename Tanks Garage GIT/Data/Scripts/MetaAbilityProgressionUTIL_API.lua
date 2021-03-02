@@ -587,5 +587,15 @@ function API.RetrieveTankDataById(id, playerTanks)
 	return CONST.GetDefaultTankData()
 end
 
+function API.RetrieveTankNameById(id, tankCollection)
+	for i, tank in ipairs(tankCollection) do
+		if(tank:GetCustomProperty("ID") == id) then
+			return tank:GetCustomProperty("Name")
+		end
+	end
+	warn("Tank not found with Id: " .. id)
+	return "M3 Stuart"
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 return API
