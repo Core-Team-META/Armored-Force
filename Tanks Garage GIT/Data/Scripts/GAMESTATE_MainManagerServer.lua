@@ -15,7 +15,7 @@ function OnPlayerStateChanged(player, newState)
 	
 		playerSlot[player.id][2] = newState
 		
-		script:SetNetworkedCustomProperty(layerSlot[player.id][1], player.id .. ":" .. newState)
+		script:SetNetworkedCustomProperty(playerSlot[player.id][1], player.id .. ":" .. newState)
 		
 	end
 

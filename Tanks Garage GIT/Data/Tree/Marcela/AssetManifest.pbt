@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18348342505020437805
-  Name: "Military Tank Historic Turret Seal 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_hst_turret_001_ring_ref"
-  }
-}
-Assets {
   Id: 18246488040959570937
   Name: "Clear Coat Reflector Hex 01"
   PlatformAssetType: 2
@@ -683,15 +674,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13373724591692948914
-  Name: "Sci-fi Base Railing 02 - 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_scf_base_railing_002_4m_ref"
-  }
-}
-Assets {
   Id: 13295705863038029439
   Name: "Military Tank Historic Hatch Lid 01"
   PlatformAssetType: 1
@@ -1304,15 +1286,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8606099839815191000
-  Name: "Sci-fi Cockpit Control Terminal 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_scf_ship_cockpit_ctrl_terminal_001_ref"
-  }
-}
-Assets {
   Id: 8329339828071933523
   Name: "Concrete Basic 01"
   PlatformAssetType: 2
@@ -1529,15 +1502,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6403377383044280027
-  Name: "Sphere - Half Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hemisphere_003"
-  }
-}
-Assets {
   Id: 6400415333480265935
   Name: "Military Common Crate Base"
   PlatformAssetType: 1
@@ -1643,15 +1607,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half-pipe_003"
-  }
-}
-Assets {
-  Id: 5742254973450315022
-  Name: "Military Tank Historic Mantlet 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_hst_mantlet_001_ref"
   }
 }
 Assets {
@@ -2021,15 +1976,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_mod_skirt_001_front_ref"
-  }
-}
-Assets {
-  Id: 3350581364753243189
-  Name: "Sci-fi Cockpit Console 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_scf_ship_cockpit_console_001_ref"
   }
 }
 Assets {
