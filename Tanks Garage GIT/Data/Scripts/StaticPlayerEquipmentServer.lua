@@ -98,7 +98,7 @@ function GivePlayerEquipment(player)
 
 	if not selectedEquipment[player] then
 	
-		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE)
+		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE6)
 		
 	else 
 	
@@ -484,15 +484,7 @@ end
 -- Replace the equipment if ReplaceOnEachRespawn
 function OnPlayerRespawned(player)
 	RemovePlayerEquipment(player)
-	
-	if gsm:GetCustomProperty("GameState") == "VICTORYSTATE" then
-	
-		player:SetVisibility(true)
-	
-		return
 		
-	end
-	
 	GivePlayerEquipment(player)
 
 end

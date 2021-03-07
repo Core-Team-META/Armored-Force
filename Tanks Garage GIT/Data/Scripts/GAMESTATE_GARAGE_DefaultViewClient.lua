@@ -12,6 +12,7 @@ local loadEquippableTanks = script:GetCustomProperty("LoadEquippableTanks"):Wait
 local equipTankButton = script:GetCustomProperty("EquipTankButton")
 local equipTankScrollPanel = script:GetCustomProperty("EquipTankScrollPanel"):WaitForObject()
 local Y_OFFSET = 60
+local firstTime = true
 -------------------
 
 local thisComponent = "DEFAULT_MENU"
@@ -33,9 +34,19 @@ function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
 	
-		localPlayer:SetOverrideCamera(overrideCamera, 2)
+		if not firstTime then
+	
+			localPlayer:SetOverrideCamera(overrideCamera, 2)
+			
+			Task.Wait(2)
+			
+		else 
 		
-		Task.Wait(2)
+			localPlayer:SetOverrideCamera(overrideCamera, 0)
+			
+			firstTime = false
+			
+		end
 	
 		defaultViewUI.isEnabled = true
 		
