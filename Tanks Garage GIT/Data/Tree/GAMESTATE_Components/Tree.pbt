@@ -27067,6 +27067,7 @@ Objects {
     }
   }
   ParentId: 15534379475757777486
+  ChildIds: 13143599502602750650
   ChildIds: 18350194074447310681
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28515,6 +28516,33 @@ Objects {
   Script {
     ScriptAsset {
       Id: 10298793817229090277
+    }
+  }
+}
+Objects {
+  Id: 13143599502602750650
+  Name: "GAMESTATE_GARAGE_DefaultViewServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7478596360271859373
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3795581278524010067
     }
   }
 }

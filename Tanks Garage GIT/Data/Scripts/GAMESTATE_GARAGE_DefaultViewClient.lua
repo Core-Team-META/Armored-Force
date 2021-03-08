@@ -79,8 +79,6 @@ function OnOtherComponentButtonPressed(button)
 	
 	Events.Broadcast("ENABLE_GARAGE_COMPONENT", button:GetCustomProperty("SendToComponent"))
 	
-	DisableThisComponent()
-
 end
 
 function OnBattleButtonPressed(button)
@@ -88,7 +86,17 @@ function OnBattleButtonPressed(button)
 	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToMap"))
 	
 	ReliableEvents.BroadcastToServer("SEND_TO_MAP", button:GetCustomProperty("SendToMap"))
-
+	
+	for _, child in ipairs(toBattleButtons:GetChildren()) do
+	
+		if child:IsA("UIButton") then
+		
+			child.isInterractable = false
+			
+		end
+		
+	end
+	
 end
 
 function InitializeComponent()
@@ -102,6 +110,16 @@ function InitializeComponent()
 		if child:IsA("UIButton") then
 		
 			child.clickedEvent:Connect(OnOtherComponentButtonPressed)
+			
+		end
+		
+	end
+	
+	for _, child in ipairs(toBattleButtons:GetChildren()) do
+	
+		if child:IsA("UIButton") then
+		
+			child.clickedEvent:Connect(OnBattleButtonPressed)
 			
 		end
 		
