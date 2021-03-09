@@ -23,7 +23,7 @@ function PopulateSomeStorage(player, data)
     table.insert(data[tostring(MetaAbilityProgressionConstants_API.STORAGE.PROGRESSION)],dataString)
     Storage.SetPlayerData(player, data)
 
-    player:SetResource(MetaAbilityProgressionConstants_API.GetEquippedTankResource(), "06")
+    --player:SetResource(MetaAbilityProgressionConstants_API.GetEquippedTankResource(), "06")
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(1), 1500)
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(3), 6000)
     player:SetResource(MetaAbilityProgressionUTIL_API.GetTankRPString(6), 3500)

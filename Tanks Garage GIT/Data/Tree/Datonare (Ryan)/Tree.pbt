@@ -125,7 +125,6 @@ Objects {
   }
   ParentId: 7540281279584508332
   ChildIds: 10625787742401414414
-  ChildIds: 10638041619276803635
   ChildIds: 14057574193528684638
   ChildIds: 14966627174895260745
   Collidable_v2 {
@@ -776,139 +775,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10638041619276803635
-  Name: "TechTree_UIManager"
-  Transform {
-    Location {
-      X: -0.00048828125
-    }
-    Rotation {
-      Yaw: -2.73207552e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17563950383364723476
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Constants_API"
-      AssetReference {
-        Id: 15718075383189814537
-      }
-    }
-    Overrides {
-      Name: "cs:Background"
-      ObjectReference {
-        SelfId: 17673340388354254850
-      }
-    }
-    Overrides {
-      Name: "cs:KeyBindingToOpen"
-      String: "ability_extra_51"
-    }
-    Overrides {
-      Name: "cs:OpenSFX"
-      ObjectReference {
-        SelfId: 9005815637734376879
-      }
-    }
-    Overrides {
-      Name: "cs:TechTreeUIContainer"
-      ObjectReference {
-        SelfId: 14966627174895260745
-      }
-    }
-    Overrides {
-      Name: "cs:TechTree_Contents"
-      ObjectReference {
-        SelfId: 7647187385909291407
-      }
-    }
-    Overrides {
-      Name: "cs:AlliesTeam"
-      String: "Allies"
-    }
-    Overrides {
-      Name: "cs:AxisTeam"
-      String: "Axis"
-    }
-    Overrides {
-      Name: "cs:TechTree_TankContentsPanel"
-      AssetReference {
-        Id: 18101381341274872432
-      }
-    }
-    Overrides {
-      Name: "cs:Tier1ScrollPanel"
-      ObjectReference {
-        SelfId: 12559258386656163073
-      }
-    }
-    Overrides {
-      Name: "cs:TeamSelectorButton"
-      AssetReference {
-        Id: 16829511034506297535
-      }
-    }
-    Overrides {
-      Name: "cs:CurrencyContentsPanel"
-      AssetReference {
-        Id: 941064249904549663
-      }
-    }
-    Overrides {
-      Name: "cs:Tier2ScrollPanel"
-      ObjectReference {
-        SelfId: 17145240313341044083
-      }
-    }
-    Overrides {
-      Name: "cs:Tier3ScrollPanel"
-      ObjectReference {
-        SelfId: 1097061551082014019
-      }
-    }
-    Overrides {
-      Name: "cs:Tier4ScrollPanel"
-      ObjectReference {
-        SelfId: 4581790267252788651
-      }
-    }
-    Overrides {
-      Name: "cs:CurrencyPanel"
-      ObjectReference {
-        SelfId: 11741062274946987772
-      }
-    }
-    Overrides {
-      Name: "cs:TechTree_TeamDefinitions"
-      ObjectReference {
-        SelfId: 7712902404816319527
-      }
-    }
-    Overrides {
-      Name: "cs:TechTree_CurrencyDefinitions"
-      ObjectReference {
-        SelfId: 2727903136666322489
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2221658500394519019
-    }
-  }
-}
-Objects {
   Id: 10625787742401414414
   Name: "TODO"
   Transform {
@@ -1149,7 +1015,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     RenderTransformPivot {

@@ -18,6 +18,8 @@ function ToggleThisComponent(requestedPlayerState)
 	
 		techTreeViewUI.isEnabled = true
 		
+		
+		
 	
 	else
 	
