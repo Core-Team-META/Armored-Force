@@ -150,7 +150,7 @@ function EmptyEquippableTankPanel()
 end
 
 function EquipTank(button)
-	ReliableEvents.BroadcastToServer("CHANGE_EQUIPPED_TANK", button.name)	
+	ReliableEvents.BroadcastToServer("CHANGE_EQUIPPED_TANK", button.name)
 end
 
 InitializeComponent()

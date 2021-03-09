@@ -97,11 +97,11 @@ end
 function GivePlayerEquipment(player)
 
 	if not selectedEquipment[player] then
-	
-		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE6)
+			
+		equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player))
 		
 	else 
-	
+		
 		equipment[player] = World.SpawnAsset(selectedEquipment[player])
 	
 	end
@@ -480,6 +480,58 @@ function OnBindingPressed(player,bindingPressed)
 		end
 end
 
+function GetEquippedTankTemplate(player, id)
+	-- TODO: This is incomplete
+	local equippedTankId = id or player:GetResource("EquippedTank")
+	if(equippedTankId == 1) then
+		return EQUIPMENT_TEMPLATE19
+	elseif(equippedTankId == 2) then
+		return EQUIPMENT_TEMPLATE20
+	elseif(equippedTankId == 3) then
+		return EQUIPMENT_TEMPLATE3
+	elseif(equippedTankId == 4) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 5) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 6) then
+		return EQUIPMENT_TEMPLATE26
+	elseif(equippedTankId == 7) then
+		return EQUIPMENT_TEMPLATE7
+	elseif(equippedTankId == 8) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 9) then
+		return EQUIPMENT_TEMPLATE21
+	elseif(equippedTankId == 10) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 11) then
+		return EQUIPMENT_TEMPLATE30
+	elseif(equippedTankId == 12) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 13) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 14) then
+		return EQUIPMENT_TEMPLATE28
+	elseif(equippedTankId == 15) then
+		return EQUIPMENT_TEMPLATE6
+	else
+		print("Returning default")
+		return EQUIPMENT_TEMPLATE6
+	end
+end
+
+function ChangeEquippedTank(player, id)
+	RemovePlayerEquipment(player)
+	equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player, tonumber(id)))
+	selectedEquipment[player] = GetEquippedTankTemplate(player, tonumber(id))
+	assert(equipment[player]:IsA("Equipment"))
+	equipment[player]:Equip(player)
+	player.movementControlMode = MovementControlMode.FACING_RELATIVE
+	equipment[player].visibility = Visibility.FORCE_ON
+	tankBurning = false
+	
+	Events.BroadcastToPlayer(player, "CHANGE_EQUIPPED_TANK", tonumber(id))
+end
+
 -- nil OnPlayerRespawned(Player)
 -- Replace the equipment if ReplaceOnEachRespawn
 function OnPlayerRespawned(player)
@@ -552,3 +604,4 @@ end
 -- Initialize
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, id)

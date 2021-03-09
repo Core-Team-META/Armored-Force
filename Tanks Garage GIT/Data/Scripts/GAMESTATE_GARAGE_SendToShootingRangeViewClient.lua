@@ -1,3 +1,14 @@
+-- Garage Model Tanks
+local TankUSM24ChaffeeGARAGEMODEL = script:GetCustomProperty("TankUSM24ChaffeeGARAGEMODEL")
+local TankUST34HeavyGARAGEMODEL = script:GetCustomProperty("TankUST34HeavyGARAGEMODEL")
+local T57GARAGEMODEL = script:GetCustomProperty("T57GARAGEMODEL")
+local BatChatGARAGEMODEL = script:GetCustomProperty("BatChatGARAGEMODEL")
+local M3StuartGARAGEMODEL = script:GetCustomProperty("M3StuartGARAGEMODEL")
+local IS3GARAGEMODEL = script:GetCustomProperty("IS3GARAGEMODEL")
+local M10WolverineGARAGEMODEL = script:GetCustomProperty("M10WolverineGARAGEMODEL")
+local M4A1ShermanGARAGEMODEL = script:GetCustomProperty("M4A1ShermanGARAGEMODEL")
+---------------------
+
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
 local mainManagerServer = script:GetCustomProperty("GAMESTATE_MainManagerServer"):WaitForObject()
@@ -13,13 +24,13 @@ local equippedTankInGarage = script:GetCustomProperty("EquippedTankInGarage"):Wa
 
 local returnToGarageTrigger = script:GetCustomProperty("ReturnToGarageTrigger"):WaitForObject()
 
-
 local spawnLocation = script:GetCustomProperty("SpawnOutsideGarageLocation"):WaitForObject()
-
 
 local thisComponent = "SHOOTING_RANGE"
 
 local localPlayer = Game.GetLocalPlayer()
+
+local garageModel = {}
 
 local rememberSlot = nil
 
@@ -195,6 +206,46 @@ function ToggleThisComponent(requestedPlayerState)
 	
 end
 
+function ChangeGarageModel(id)
+	for i, child in ipairs(equippedTankInGarage:GetChildren()) do
+		if(string.match(child.name, "GARAGE MODEL") and Object.IsValid(child)) then
+			child:Destroy()
+		end
+	end
+	SetGarageModelFromEquippedTank(localPlayer, id)
+	World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
+end
+
+function SetGarageModelFromEquippedTank(player, id)
+	
+	local tankId = 0
+	-- Just making sure the player resource has been set before we try and grab it
+	while tankId == 0 do		
+		tankId = id or player:GetResource("EquippedTank")
+		Task.Wait()
+	end
+	
+	local equippedTankId = player:GetResource("EquippedTank")
+	if(equippedTankId == 1) then
+		garageModel = M3StuartGARAGEMODEL
+	elseif(equippedTankId == 3) then
+		garageModel = M4A1ShermanGARAGEMODEL
+	elseif(equippedTankId == 6) then
+		garageModel = IS3GARAGEMODEL
+	elseif(equippedTankId == 7) then
+		garageModel = M10WolverineGARAGEMODEL
+	elseif(equippedTankId == 9) then
+		garageModel = TankUST34HeavyGARAGEMODEL
+	elseif(equippedTankId == 11) then
+		garageModel = BatChatGARAGEMODEL
+	elseif(equippedTankId == 14) then
+		garageModel = T57GARAGEMODEL
+	else
+		garageModel = TankUSM24ChaffeeGARAGEMODEL
+	end
+end
+
+SetGarageModelFromEquippedTank(localPlayer)
 
 function InitializeComponent()
 
@@ -202,9 +253,11 @@ function InitializeComponent()
 	
 	sendToShootingRangeViewUI.isEnabled = false
 	
+	World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
 end
 
 InitializeComponent()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
+Events.Connect("CHANGE_EQUIPPED_TANK", ChangeGarageModel, id)
 returnToGarageTrigger.beginOverlapEvent:Connect(SendBackToGarage)

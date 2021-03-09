@@ -18,6 +18,9 @@ local teamSelectorButton = script:GetCustomProperty("TeamSelectorButton")
 local techTreeContents = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
 local currencyPanel = script:GetCustomProperty("CurrencyPanel"):WaitForObject()
 local currencyContentsPanel = script:GetCustomProperty("CurrencyContentsPanel")
+local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
+local techTreeViewUI = script:GetCustomProperty("TechTreeViewUI"):WaitForObject()
+local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 
 local ALLIES_TEAM = script:GetCustomProperty("AlliesTeam")
 local AXIS_TEAM = script:GetCustomProperty("AxisTeam")
@@ -29,12 +32,16 @@ local TIER3_SCROLL_PANEL = script:GetCustomProperty("Tier3ScrollPanel"):WaitForO
 local TIER4_SCROLL_PANEL = script:GetCustomProperty("Tier4ScrollPanel"):WaitForObject()
 
 -- Local properties
+local thisComponent = "TECH_TREE_MENU"
+
+
+
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local BASE_Y = 10
 local Y_OFFSET = 315
 
-local BASE_TEAM_POSITION_X = 50
-local BASE_TEAM_POSITION_Y = 10
+local BASE_TEAM_POSITION_X = 250
+local BASE_TEAM_POSITION_Y = 32
 local TEAM_X_OFFSET = 200
 
 local BASE_CURRENCY_POSITION_X = -10
@@ -59,6 +66,72 @@ local HAS_RESEARCH_TEXT = "R"
 local HAS_PURCHASE_TEXT = "P"
 
 -- Functions
+function ToggleThisComponent(requestedPlayerState)
+
+	if requestedPlayerState == thisComponent then
+	
+		LOCAL_PLAYER:SetOverrideCamera(overrideCamera, 2)
+		
+		Task.Wait(2)
+	
+		techTreeViewUI.isEnabled = true
+				
+		OpenUI()
+	
+	else
+	
+		Task.Wait(0.1)
+	
+		DisableThisComponent()
+		
+	end
+	
+end
+
+function DisableThisComponent()
+
+	if LOCAL_PLAYER:GetOverrideCamera() == overrideCamera then
+	
+		LOCAL_PLAYER:ClearOverrideCamera()		
+		
+	end
+	
+	techTreeViewUI.isEnabled = false
+	
+	CloseUI()
+	
+end
+
+function OnOtherComponentButtonPressed(button)
+
+	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToComponent"))
+	
+	Events.Broadcast("ENABLE_GARAGE_COMPONENT", button:GetCustomProperty("SendToComponent"))
+	
+	DisableThisComponent()
+
+end
+
+function InitializeComponent()
+
+	techTreeViewUI.visibility = Visibility.INHERIT
+	
+	techTreeViewUI.isEnabled = false
+	
+	for _, child in ipairs(otherGarageButtons:GetChildren()) do
+	
+		if child:IsA("UIButton") then
+		
+			child.clickedEvent:Connect(OnOtherComponentButtonPressed)
+			
+		end
+		
+	end
+
+end
+
+InitializeComponent()
+
 function OpenUI()
 	openSFX:Play()
 	techTreeUIContainer.visibility = Visibility.FORCE_ON
@@ -403,6 +476,5 @@ end
 
 Init()
 
-LOCAL_PLAYER.bindingPressedEvent:Connect(KeybindingPressed)
-
-
+Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
+Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)

@@ -466,9 +466,9 @@ Assets {
               A: 1
             }
             HoveredColor {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.5
+              G: 0.5
+              B: 0.5
               A: 1
             }
             PressedColor {
@@ -551,9 +551,9 @@ Assets {
               A: 1
             }
             HoveredColor {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.5
+              G: 0.5
+              B: 0.5
               A: 1
             }
             PressedColor {
@@ -637,9 +637,9 @@ Assets {
               A: 1
             }
             HoveredColor {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.5
+              G: 0.5
+              B: 0.5
               A: 1
             }
             PressedColor {

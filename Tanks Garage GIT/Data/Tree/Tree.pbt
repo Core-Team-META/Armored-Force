@@ -20,9 +20,9 @@ Objects {
   ChildIds: 11193472375340858099
   ChildIds: 765611719618973778
   ChildIds: 13531313327230624130
+  ChildIds: 17398334354223688829
   ChildIds: 12007147478172450768
   ChildIds: 1515039180194458749
-  ChildIds: 17398334354223688829
   ChildIds: 12342638008067059637
   UnregisteredParameters {
   }
@@ -59,32 +59,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
-  }
-}
-Objects {
-  Id: 17398334354223688829
-  Name: "Datonare (Ryan)"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Datonare (Ryan)"
   }
 }
 Objects {
@@ -556,6 +530,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Marcela"
+  }
+}
+Objects {
+  Id: 17398334354223688829
+  Name: "Datonare (Ryan)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Datonare (Ryan)"
   }
 }
 Objects {
@@ -1336,7 +1336,7 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      Z: -5775
+      Z: -5700
     }
     Rotation {
       Yaw: -140.649185
