@@ -21,6 +21,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   AudioInstance {
     AudioAsset {
       Id: 16481514129079315330
