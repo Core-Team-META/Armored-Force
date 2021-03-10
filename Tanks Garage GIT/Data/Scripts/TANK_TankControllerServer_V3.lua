@@ -24,6 +24,8 @@ local deadTank = script:GetCustomProperty("DeadTank")
 
 local hitbox = tankEquipment:FindDescendantsByName("ServerCollisionTrigger")
 
+local tankId = tankEquipment:GetCustomProperty("TankID")
+
 -- FIREPOWER
 local defaultReloadSpeed = tankEquipment:GetCustomProperty("ReloadSpeed")
 local upgradedReload = tankEquipment:GetCustomProperty("UpgradedReload")
@@ -196,16 +198,34 @@ end
 
 function SetTankModifications(player)
 	
-	local modifications = "FSM"
+	local modifications = nil
 	
-	if string.find(modifications, "F") then
+	for x, entry in ipairs(player.serverUserData.techTreeProgress) do
+	
+		if entry.id == tankId then
+		
+			modifications = {entry.hasWeapon, entry.hasArmor, entry.hasEngine}
+			
+		end
+		
+	end
+	
+	if not modifications then
+	
+		warn("COULD NOT FIND TANK ID " .. tankId)
+		
+		modifications = {false, false, false}
+		
+	end
+	
+	if modifications[1] then
 	
 		reloadSpeed = upgradedReload
 		turretTraverseSpeed = upgradedTraverse
 		turretElevationSpeed = upgradedElevation
 		damagePerShot = upgradedDamage
 		
-		--print("Upgraded firepower")
+		print("Upgraded firepower")
 		
 	else 
 	
@@ -214,31 +234,31 @@ function SetTankModifications(player)
 		turretElevationSpeed = defaultTurretElevationSpeed
 		damagePerShot = defaultDamagePerShot
 		
-		--print("Default firepower")
+		print("Default firepower")
 		
 	end
 	
-	if string.find(modifications, "S") then
+	if modifications[2] then
 	
 		hitpoints = upgradedHitpoints
 		
-		--print("Upgraded surivability")
+		print("Upgraded surivability")
 		
 	else 
 	
 		hitpoints = defaultHitpoints
 		
-		--print("Default surivability")
+		print("Default surivability")
 		
 	end
 
-	if string.find(modifications, "M") then
+	if modifications[3] then
 	
 		topSpeed = upgradedTopSpeed
 		acceleration = upgradedAcceleration
 		hullTraverseSpeed = upgradedHullTraverse
 		
-		--print("Upgraded mobility")
+		print("Upgraded mobility")
 		
 	else 
 	
@@ -246,7 +266,7 @@ function SetTankModifications(player)
 		acceleration = defaultAcceleration
 		hullTraverseSpeed = defaultHullTraverseSpeed	
 		
-		--print("Default mobility")
+		print("Default mobility")
 		
 	end
 	

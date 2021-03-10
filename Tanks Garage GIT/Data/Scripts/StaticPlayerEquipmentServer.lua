@@ -24,6 +24,8 @@ replaces each equipment on respawn to reset the state.
 
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
+local MAIN_MANAGER_SERVER = script:GetCustomProperty("MainManagerServer"):WaitForObject()
+
 
 -- User exposed properties
 local EQUIPMENT_TEMPLATE = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate")
@@ -81,6 +83,25 @@ local equipment = {}
 local tankBurning = false
 
 local selectedEquipment = {}
+
+
+function GetPlayer(playerId)
+	
+	local playerList = Game.GetPlayers()
+	
+	for _, player in pairs(playerList) do
+	
+		if player.id == playerId then
+		
+			return player 
+			
+		end
+		
+	end
+	
+	return nil
+
+end
 
 -- bool AppliesToPlayersTeam(Player)
 -- Returns whether this player should get equipment given the team setting
@@ -520,31 +541,67 @@ function GetEquippedTankTemplate(player, id)
 end
 
 function ChangeEquippedTank(player, id)
+
+	--[[
 	RemovePlayerEquipment(player)
 	equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player, tonumber(id)))
+	]]
+	
 	selectedEquipment[player] = GetEquippedTankTemplate(player, tonumber(id))
+	
+	--[[
 	assert(equipment[player]:IsA("Equipment"))
 	equipment[player]:Equip(player)
 	player.movementControlMode = MovementControlMode.FACING_RELATIVE
 	equipment[player].visibility = Visibility.FORCE_ON
 	tankBurning = false
-	
+	]]
+
 	Events.BroadcastToPlayer(player, "CHANGE_EQUIPPED_TANK", tonumber(id))
 end
 
 -- nil OnPlayerRespawned(Player)
 -- Replace the equipment if ReplaceOnEachRespawn
 function OnPlayerRespawned(player)
+
 	RemovePlayerEquipment(player)
 		
-	GivePlayerEquipment(player)
+	local property = nil
+	
+	local state = nil
+	
+	for i = 1, 16 do
+	
+		property = MAIN_MANAGER_SERVER:GetCustomProperty("P" .. tostring(i))
+	
+		for x in string.gmatch(property, "([^:]+)") do 
+		
+			state = x
+			
+			if player ~= GetPlayer(x) then
+			
+				break 
+							
+			end
+		
+		end
+		
+	end
+	
+	print(player.name .. " current state is " .. state)
+	
+	if state ~= "GARAGE_STATE" then
+	
+		GivePlayerEquipment(player)
+		
+	end
 
 end
 
 -- nil OnPlayerJoined(Player)
 -- Gives original equipment
 function OnPlayerJoined(player)
-	player.bindingPressedEvent:Connect(OnBindingPressed)
+	--player.bindingPressedEvent:Connect(OnBindingPressed)
 
 	if TEAM ~= 0 then
 		playerTeams[player] = player.team
@@ -553,10 +610,12 @@ function OnPlayerJoined(player)
 	if REPLACE_ON_EACH_RESPAWN then
 		player.respawnedEvent:Connect(OnPlayerRespawned)
 	end
-
+	
+	--[[
 	if AppliesToPlayersTeam(player) then
 		GivePlayerEquipment(player)
 	end
+	]]
 end
 
 -- nil OnPlayerLeft(Player)
