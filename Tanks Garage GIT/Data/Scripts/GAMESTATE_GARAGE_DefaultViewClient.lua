@@ -1,7 +1,6 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
-local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
 local defaultViewUI = script:GetCustomProperty("DefaultViewUI"):WaitForObject()
 
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
@@ -35,14 +34,10 @@ function ToggleThisComponent(requestedPlayerState)
 	if requestedPlayerState == thisComponent then
 	
 		if not firstTime then
-	
-			localPlayer:SetOverrideCamera(overrideCamera, 2)
 			
 			Task.Wait(2)
 			
 		else 
-		
-			localPlayer:SetOverrideCamera(overrideCamera, 0)
 			
 			firstTime = false
 			

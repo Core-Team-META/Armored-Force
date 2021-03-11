@@ -143,10 +143,10 @@ end
 function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
-	
-		localPlayer:SetOverrideCamera(overrideCamera, 2)
 		
-		Task.Wait(2)
+		Task.Wait(2.5)
+		
+		localPlayer:SetOverrideCamera(overrideCamera)
 		
 		Ease3D.EasePosition(equippedTankInGarage, Vector3.FORWARD * 2000, 4, Ease3D.EasingEquation.QUADRATIC, Ease3D.EasingDirection.IN)
 		

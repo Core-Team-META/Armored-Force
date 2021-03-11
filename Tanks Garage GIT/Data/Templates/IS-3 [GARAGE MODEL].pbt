@@ -193,7 +193,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -254,7 +253,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -318,7 +316,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -382,7 +379,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -430,7 +426,6 @@ Assets {
           TeamSettings {
           }
           AudioBP {
-            AutoPlay: true
             Repeat: true
             Volume: 0.5
             Falloff: 3384.07715
@@ -471,7 +466,6 @@ Assets {
           AudioAsset {
             Id: 1042724151674186161
           }
-          AutoPlay: true
           Repeat: true
           Volume: 1.5
           Falloff: 5000
