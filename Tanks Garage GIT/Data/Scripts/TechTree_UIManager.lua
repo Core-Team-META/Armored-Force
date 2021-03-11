@@ -21,15 +21,21 @@ local currencyContentsPanel = script:GetCustomProperty("CurrencyContentsPanel")
 local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
 local techTreeViewUI = script:GetCustomProperty("TechTreeViewUI"):WaitForObject()
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
+-- Tech Tree Modal Properties ------------------------------------------------------------------------
+local closeTechTreeModalButton = script:GetCustomProperty("CloseTechTreeModalButton"):WaitForObject()
+local techTreeModalPopup = script:GetCustomProperty("TechTreeModalPopup"):WaitForObject()
+local tankFullName = script:GetCustomProperty("TankFullName"):WaitForObject()
+local reloadSubStat = script:GetCustomProperty("ReloadSubStat"):WaitForObject()
+local damageSubStat = script:GetCustomProperty("DamageSubStat"):WaitForObject()
+local reloadSubStatChange = script:GetCustomProperty("ReloadSubStatChange"):WaitForObject()
+local damageSubStatChange = script:GetCustomProperty("DamageSubStatChange"):WaitForObject()
+------------------------------------------------------------------------------------------------------
 
 local ALLIES_TEAM = script:GetCustomProperty("AlliesTeam")
 local AXIS_TEAM = script:GetCustomProperty("AxisTeam")
 
 local TANK_CONTENTS_PANEL = script:GetCustomProperty("TechTree_TankContentsPanel")
-local TIER1_SCROLL_PANEL = script:GetCustomProperty("Tier1ScrollPanel"):WaitForObject()
-local TIER2_SCROLL_PANEL = script:GetCustomProperty("Tier2ScrollPanel"):WaitForObject()
-local TIER3_SCROLL_PANEL = script:GetCustomProperty("Tier3ScrollPanel"):WaitForObject()
-local TIER4_SCROLL_PANEL = script:GetCustomProperty("Tier4ScrollPanel"):WaitForObject()
+local TankContentPanel = script:GetCustomProperty("TankContentPanel"):WaitForObject()
 
 -- Local properties
 local thisComponent = "TECH_TREE_MENU"
@@ -37,8 +43,10 @@ local thisComponent = "TECH_TREE_MENU"
 
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
-local BASE_Y = 10
-local Y_OFFSET = 315
+local BASE_Y = 50
+local Y_OFFSET = 90
+local X_OFFSET = 170
+local X_SPACING = 480
 
 local BASE_TEAM_POSITION_X = 250
 local BASE_TEAM_POSITION_Y = 32
@@ -57,6 +65,7 @@ local tier1Count = 0
 local tier2Count = 0
 local tier3Count = 0
 local tier4Count = 0
+
 
 local PURCHASED_TEXT = "PURCHASED"
 local RESEARCHED_TEXT = "RESEARCHED"
@@ -269,6 +278,7 @@ function PopulateTankContentsPanel(panel, tank)
 	for k,v in ipairs(panel:GetChildren()) do		
 		if(v.name == "Name") then
 			v.text = tank.name
+			--[[
 		elseif(v.name == "Type") then
 			v.text = tank.type
 		elseif(v.name == "Country") then
@@ -298,12 +308,11 @@ function PopulateTankContentsPanel(panel, tank)
 			v.hoveredEvent:Connect(ShowArmorTooltip)
 			v.name = tostring(tank.id)
 			print(v:GetCustomProperty("Id"))
-		elseif(v.name == "ResearchMobility") then
-			v.text = GetUpgradeText(playerTankData.hasEngine, tank.mobilityResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasEngine, tank.mobilityResearchCost, Constants_API.UPGRADE_TYPE.PURCHASE)
-			v.clickedEvent:Connect(UpgradeEngine)
-			v.hoveredEvent:Connect(ShowEngineTooltip)
-			v.name = tostring(tank.id)
-			print(v:GetCustomProperty("Id"))
+			--]]
+		elseif(v.name == "Details") then			
+			v.clickedEvent:Connect(OpenDetails)
+			v.hoveredEvent:Connect(ButtonHover)
+			v.name = tostring(tank.id)			
 		end
 	end
 end
@@ -320,9 +329,10 @@ end
 function PopulateUI(selectedTeam)
 	for k,v in ipairs(GetTankListBySelectedTeam(selectedTeam)) do
 		-- Create tank contents UI panel
-		local tankContentsPanel = World.SpawnAsset(TANK_CONTENTS_PANEL, {parent = GetScrollPanelByTier(v.tier)})
+		local tankContentsPanel = World.SpawnAsset(TANK_CONTENTS_PANEL, {parent = TankContentPanel})
 		PopulateTankContentsPanel(tankContentsPanel, v)
 		tankContentsPanel.y = BASE_Y + (GetTierCount(v.tier) * Y_OFFSET)
+		tankContentsPanel.x = X_OFFSET + ((v.tier -1) * X_SPACING)
 		IncrementCount(v.tier)
 	end	
 	local currencyCount = 0
@@ -342,27 +352,7 @@ function PopulateUI(selectedTeam)
 end
 
 function EmptyUI()
-	for k,panel in ipairs(TIER1_SCROLL_PANEL:GetChildren()) do
-		if(Object.IsValid(panel)) then
-			panel:Destroy()
-		end
-	end
-	for k,panel in ipairs(TIER2_SCROLL_PANEL:GetChildren()) do
-		if(Object.IsValid(panel)) then
-			panel:Destroy()
-		end
-	end
-	for k,panel in ipairs(TIER3_SCROLL_PANEL:GetChildren()) do
-		if(Object.IsValid(panel)) then
-			panel:Destroy()
-		end
-	end
-	for k,panel in ipairs(TIER4_SCROLL_PANEL:GetChildren()) do
-		if(Object.IsValid(panel)) then
-			panel:Destroy()
-		end
-	end
-	for k,panel in ipairs(currencyPanel:GetChildren()) do
+	for k,panel in ipairs(TankContentPanel:GetChildren()) do
 		if(Object.IsValid(panel)) then
 			panel:Destroy()
 		end
@@ -463,18 +453,19 @@ function ShowArmorTooltip(button)
 	-- Create/show tooltip and display armor tank data as needed...
 end
 
-function ShowEngineTooltip(button)
-	-- DEBUG
-	print("Hovering for engine upgrade. Tank Id: " .. button.name)
-	local tank = GetPlayerTankData(tonumber(button.name))
-	-- Create/show tooltip and display engine tank data as needed...
+function CloseTechTreeModal()
+	techTreeModalPopup.visibility = Visibility.FORCE_OFF
 end
 
-function RemoveTooltip()
-	-- TODO Hide/Remove the tooltip panel
+function OpenDetails(button)
+	-- TODO: Populate data on modal for tank
+	techTreeModalPopup.visibility = Visibility.FORCE_ON
 end
 
 Init()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
+
+closeTechTreeModalButton.hoveredEvent:Connect(ButtonHover)
+closeTechTreeModalButton.clickedEvent:Connect(CloseTechTreeModal)

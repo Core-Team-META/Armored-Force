@@ -2713,12 +2713,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Tier1ScrollPanel"
-      ObjectReference {
-        SelfId: 12559258386656163073
-      }
-    }
-    Overrides {
       Name: "cs:TeamSelectorButton"
       AssetReference {
         Id: 16829511034506297535
@@ -2728,24 +2722,6 @@ Objects {
       Name: "cs:CurrencyContentsPanel"
       AssetReference {
         Id: 941064249904549663
-      }
-    }
-    Overrides {
-      Name: "cs:Tier2ScrollPanel"
-      ObjectReference {
-        SelfId: 17145240313341044083
-      }
-    }
-    Overrides {
-      Name: "cs:Tier3ScrollPanel"
-      ObjectReference {
-        SelfId: 1097061551082014019
-      }
-    }
-    Overrides {
-      Name: "cs:Tier4ScrollPanel"
-      ObjectReference {
-        SelfId: 4581790267252788651
       }
     }
     Overrides {
@@ -2782,6 +2758,54 @@ Objects {
       Name: "cs:OtherGarageButtons"
       ObjectReference {
         SelfId: 6496697485475280040
+      }
+    }
+    Overrides {
+      Name: "cs:CloseTechTreeModalButton"
+      ObjectReference {
+        SelfId: 16244310878080369737
+      }
+    }
+    Overrides {
+      Name: "cs:TechTreeModalPopup"
+      ObjectReference {
+        SelfId: 1392047029076375020
+      }
+    }
+    Overrides {
+      Name: "cs:TankFullName"
+      ObjectReference {
+        SelfId: 8400759405247778496
+      }
+    }
+    Overrides {
+      Name: "cs:ReloadSubStat"
+      ObjectReference {
+        SelfId: 15409430923312397069
+      }
+    }
+    Overrides {
+      Name: "cs:DamageSubStat"
+      ObjectReference {
+        SelfId: 3629041008149732381
+      }
+    }
+    Overrides {
+      Name: "cs:ReloadSubStatChange"
+      ObjectReference {
+        SelfId: 4678259048214319867
+      }
+    }
+    Overrides {
+      Name: "cs:DamageSubStatChange"
+      ObjectReference {
+        SelfId: 4899682080488655839
+      }
+    }
+    Overrides {
+      Name: "cs:TankContentPanel"
+      ObjectReference {
+        SelfId: 7989164801245509352
       }
     }
   }
