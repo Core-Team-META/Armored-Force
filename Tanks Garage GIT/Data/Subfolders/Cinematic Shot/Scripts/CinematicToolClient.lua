@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 	Cinematic Tool - Client
 	v1.0
 	by: standardcombo
@@ -145,7 +145,7 @@ function Stop()
 	isPlaying = false
 	
 	local player = Game.GetLocalPlayer()
-	player:ClearOverrideCamera()
+	player:SetOverrideCamera(END)
 end
 
 
@@ -179,19 +179,31 @@ function SetActiveTake(whichTake)
 end
 
 
-function OnBindingPressed(player, action)
-	if (action == KEY_BINDING) then
-		if isPlaying and elapsedTime > 0 then
-			Next()
-			
-		elseif (isHeadTake and (GetActiveTake() == nil or GetActiveTake().KEY_BINDING ~= KEY_BINDING)) then
-			Play()
-		end
+
+function OnEvent(newStart, newEnd)
+
+	if newStart then
+	
+		START_POS = newStart:GetWorldPosition()
+		START_ROT = Quaternion.New(newStart:GetWorldRotation())
+		START_FOV = newStart.fieldOfView
+		
+		CAMERA:SetWorldPosition(START_POS)
+		CAMERA:SetWorldRotation(newStart:GetWorldRotation())
+		CAMERA.fieldOfView = START_FOV
+		
+	end 
+	
+	if newEnd then
+	
+		END = newEnd
+		END_POS = newEnd:GetWorldPosition()
+		END_ROT = Quaternion.New(newEnd:GetWorldRotation())
+		END_FOV = newEnd.fieldOfView
+		
 	end
-end
-
-
-function OnEvent()
+	
+		
 	if isHeadTake then
 		Play()
 	end
@@ -210,9 +222,6 @@ function Setup()
 	
 	if IsStringValid(LISTEN_TO_EVENT) then
 		EnqueWithID(LISTEN_TO_EVENT)
-		
-	elseif IsStringValid(KEY_BINDING) then
-		EnqueWithID(KEY_BINDING)
 	end
 end
 
@@ -241,12 +250,6 @@ function EnqueWithID(id)
 	end
 end
 Setup()
-
-
-while not Game.GetLocalPlayer() do
-	Task.Wait(1)
-end
-Game.GetLocalPlayer().bindingPressedEvent:Connect(OnBindingPressed)
 
 
 if IsStringValid(LISTEN_TO_EVENT) then

@@ -1,4 +1,3 @@
-local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
 local shopViewUI = script:GetCustomProperty("ShopViewUI"):WaitForObject()
 
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
@@ -12,7 +11,6 @@ function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
 	
-		localPlayer:SetOverrideCamera(overrideCamera, 2)
 		
 		Task.Wait(2)
 	
@@ -30,12 +28,6 @@ function ToggleThisComponent(requestedPlayerState)
 end
 
 function DisableThisComponent()
-
-	if localPlayer:GetOverrideCamera() == overrideCamera then
-	
-		localPlayer:ClearOverrideCamera()		
-		
-	end
 	
 	shopViewUI.isEnabled = false
 	

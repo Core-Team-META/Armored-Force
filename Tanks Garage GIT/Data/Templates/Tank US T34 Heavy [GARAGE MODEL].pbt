@@ -182,7 +182,6 @@ Assets {
           TeamSettings {
           }
           AudioBP {
-            AutoPlay: true
             Repeat: true
             Pitch: -200
             Volume: 0.5
@@ -224,7 +223,6 @@ Assets {
           AudioAsset {
             Id: 1042724151674186161
           }
-          AutoPlay: true
           Repeat: true
           Pitch: -200
           Volume: 1.5
@@ -289,7 +287,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -350,7 +347,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -414,7 +410,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -478,7 +473,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -587,7 +581,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -696,7 +689,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {

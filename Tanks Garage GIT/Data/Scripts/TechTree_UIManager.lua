@@ -30,6 +30,7 @@ local damageSubStat = script:GetCustomProperty("DamageSubStat"):WaitForObject()
 local reloadSubStatChange = script:GetCustomProperty("ReloadSubStatChange"):WaitForObject()
 local damageSubStatChange = script:GetCustomProperty("DamageSubStatChange"):WaitForObject()
 ------------------------------------------------------------------------------------------------------
+local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
 
 local ALLIES_TEAM = script:GetCustomProperty("AlliesTeam")
 local AXIS_TEAM = script:GetCustomProperty("AxisTeam")
@@ -78,12 +79,14 @@ local HAS_PURCHASE_TEXT = "P"
 function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
-	
-		LOCAL_PLAYER:SetOverrideCamera(overrideCamera, 2)
 		
-		Task.Wait(2)
+		Task.Wait(2.5)
+		
+		LOCAL_PLAYER:SetOverrideCamera(overrideCamera)
 	
 		techTreeViewUI.isEnabled = true
+		
+		displayTanks.visibility = Visibility.FORCE_ON
 				
 		OpenUI()
 	
@@ -98,14 +101,10 @@ function ToggleThisComponent(requestedPlayerState)
 end
 
 function DisableThisComponent()
-
-	if LOCAL_PLAYER:GetOverrideCamera() == overrideCamera then
-	
-		LOCAL_PLAYER:ClearOverrideCamera()		
-		
-	end
 	
 	techTreeViewUI.isEnabled = false
+	
+	displayTanks.visibility = Visibility.FORCE_OFF
 	
 	CloseUI()
 	
@@ -136,6 +135,8 @@ function InitializeComponent()
 		end
 		
 	end
+	
+	displayTanks.visibility = Visibility.FORCE_OFF
 
 end
 

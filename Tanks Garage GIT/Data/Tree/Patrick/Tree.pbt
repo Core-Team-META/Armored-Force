@@ -1,6 +1,35 @@
 Name: "Patrick"
 RootId: 12342638008067059637
 Objects {
+  Id: 17009671831015826261
+  Name: "GAMEHELPER_Components"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12342638008067059637
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "GAMEHELPER_Components"
+  }
+}
+Objects {
   Id: 15534379475757777486
   Name: "GAMESTATE_Components"
   Transform {

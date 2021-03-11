@@ -1,4 +1,3 @@
-local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
 local achievementsViewUI = script:GetCustomProperty("AchievementsViewUI"):WaitForObject()
 
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
@@ -11,8 +10,6 @@ local localPlayer = Game.GetLocalPlayer()
 function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
-	
-		localPlayer:SetOverrideCamera(overrideCamera, 2)
 		
 		Task.Wait(2)
 	
@@ -30,12 +27,6 @@ function ToggleThisComponent(requestedPlayerState)
 end
 
 function DisableThisComponent()
-
-	if localPlayer:GetOverrideCamera() == overrideCamera then
-	
-		localPlayer:ClearOverrideCamera()		
-		
-	end
 	
 	achievementsViewUI.isEnabled = false
 	

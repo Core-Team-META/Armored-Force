@@ -182,7 +182,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2152,7 +2152,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.95
+        A: 0.443000019
       }
       TeamSettings {
       }

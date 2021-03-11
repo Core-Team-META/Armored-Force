@@ -417,14 +417,13 @@ Objects {
   Name: "OverrideCamera"
   Transform {
     Location {
-      X: -933.590088
-      Y: -30.0518799
-      Z: 831.317
+      X: -1312.61377
+      Y: 2.65490723
+      Z: 644.050903
     }
     Rotation {
-      Pitch: -12.1797495
-      Yaw: -0.113945782
-      Roll: 1.45430204e-06
+      Pitch: -3.57421875
+      Yaw: -1.65408325
     }
     Scale {
       X: 1
@@ -443,7 +442,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Camera {
-    InitialDistance: 400
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
@@ -457,7 +455,6 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
-    DoesPositionOffsetSpring: true
   }
 }
 Objects {
@@ -1361,7 +1358,6 @@ Objects {
   }
   ParentId: 5636373347746678799
   ChildIds: 7571315481988523865
-  ChildIds: 57192136426736814
   ChildIds: 7583994993298154244
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -1680,53 +1676,6 @@ Objects {
   }
 }
 Objects {
-  Id: 57192136426736814
-  Name: "OverrideCamera"
-  Transform {
-    Location {
-      X: 2111.4314
-      Y: 11048.8076
-      Z: 784.417419
-    }
-    Rotation {
-      Pitch: 13.7176142
-      Yaw: 37.3135643
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14902805887420335098
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Camera {
-    InitialDistance: 400
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 1200
-    RotationMode {
-      Value: "mc:erotationmode:default"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-    DoesPositionOffsetSpring: true
-  }
-}
-Objects {
   Id: 7571315481988523865
   Name: "GAMESTATE_GARAGE_AchievementsViewClient"
   Transform {
@@ -1742,12 +1691,6 @@ Objects {
   }
   ParentId: 14902805887420335098
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:OverrideCamera"
-      ObjectReference {
-        SelfId: 57192136426736814
-      }
-    }
     Overrides {
       Name: "cs:AchievementsViewUI"
       ObjectReference {
@@ -1821,7 +1764,6 @@ Objects {
   }
   ParentId: 4865984648461214762
   ChildIds: 10378382016004222299
-  ChildIds: 2001611918321763745
   ChildIds: 14824784533466871774
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -2140,53 +2082,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2001611918321763745
-  Name: "OverrideCamera"
-  Transform {
-    Location {
-      X: -592.805908
-      Y: 11677.9922
-      Z: 936.815674
-    }
-    Rotation {
-      Pitch: 7.82027245
-      Yaw: -46.6913147
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16383999741975935984
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Camera {
-    InitialDistance: 400
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 1200
-    RotationMode {
-      Value: "mc:erotationmode:default"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-    DoesPositionOffsetSpring: true
-  }
-}
-Objects {
   Id: 10378382016004222299
   Name: "GAMESTATE_GARAGE_PremiumShopClient"
   Transform {
@@ -2202,12 +2097,6 @@ Objects {
   }
   ParentId: 16383999741975935984
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:OverrideCamera"
-      ObjectReference {
-        SelfId: 2001611918321763745
-      }
-    }
     Overrides {
       Name: "cs:ShopViewUI"
       ObjectReference {
@@ -2281,7 +2170,7 @@ Objects {
   }
   ParentId: 17273027800815053455
   ChildIds: 6882488211758513002
-  ChildIds: 4408893661492794121
+  ChildIds: 1916192981161755610
   ChildIds: 10716745581545347572
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -2600,17 +2489,16 @@ Objects {
   }
 }
 Objects {
-  Id: 4408893661492794121
-  Name: "OverrideCamera"
+  Id: 1916192981161755610
+  Name: "TechTreeProps"
   Transform {
     Location {
-      X: -1680.44971
-      Y: 12610.6494
+      X: -1510
+      Y: 12370
       Z: 460.338623
     }
     Rotation {
-      Pitch: -2.94885254
-      Yaw: 126.104408
+      Yaw: 125
     }
     Scale {
       X: 1
@@ -2619,6 +2507,187 @@ Objects {
     }
   }
   ParentId: 430938123953625846
+  ChildIds: 4408893661492794121
+  ChildIds: 17812715862257263058
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17812715862257263058
+  Name: "DisplayTanks"
+  Transform {
+    Location {
+      X: 1317.73242
+      Y: -1.00549316
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1916192981161755610
+  ChildIds: 3256357343758554030
+  ChildIds: 14214284827256063865
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14214284827256063865
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 197.027557
+      Y: 2.43309021
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 14.9000006
+      Z: 8.2
+    }
+  }
+  ParentId: 17812715862257263058
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1309234685084379169
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.444
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 4.444
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 3256357343758554030
+  Name: "Tank US M24 Chaffee [GARAGE MODEL]"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17812715862257263058
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9707674720421586260
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tank US M24 Chaffee [GARAGE MODEL]"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.1
+            Y: 0.1
+            Z: 0.1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -22.8841095
+            Yaw: -134.302673
+            Roll: -14.3525267
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17661669092028267410
+    }
+  }
+}
+Objects {
+  Id: 4408893661492794121
+  Name: "OverrideCamera"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1916192981161755610
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2629,7 +2698,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Camera {
-    InitialDistance: 400
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
@@ -2638,12 +2706,12 @@ Objects {
     }
     FieldOfView: 90
     ViewWidth: 1200
+    IsOrthographic: true
     RotationMode {
       Value: "mc:erotationmode:default"
     }
     MinPitch: -89
     MaxPitch: 89
-    DoesPositionOffsetSpring: true
   }
 }
 Objects {
@@ -2808,6 +2876,12 @@ Objects {
         SelfId: 7989164801245509352
       }
     }
+    Overrides {
+      Name: "cs:DisplayTanks"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2870,7 +2944,6 @@ Objects {
   }
   ParentId: 7478596360271859373
   ChildIds: 16485664759174731461
-  ChildIds: 9249541416210129601
   ChildIds: 842166714640240227
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -4228,53 +4301,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9249541416210129601
-  Name: "OverrideCamera"
-  Transform {
-    Location {
-      X: 359.644806
-      Y: 10171.5605
-      Z: 334.414337
-    }
-    Rotation {
-      Pitch: -5.92611694
-      Yaw: 0.22744748
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18350194074447310681
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Camera {
-    InitialDistance: 400
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 1200
-    RotationMode {
-      Value: "mc:erotationmode:default"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-    DoesPositionOffsetSpring: true
-  }
-}
-Objects {
   Id: 16485664759174731461
   Name: "GAMESTATE_GARAGE_DefaultViewClient"
   Transform {
@@ -4300,12 +4326,6 @@ Objects {
       Name: "cs:MetaAbilityProgressionUTIL_API"
       AssetReference {
         Id: 2269572116006940077
-      }
-    }
-    Overrides {
-      Name: "cs:OverrideCamera"
-      ObjectReference {
-        SelfId: 9249541416210129601
       }
     }
     Overrides {

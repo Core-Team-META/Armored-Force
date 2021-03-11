@@ -125,11 +125,11 @@ Objects {
     }
     Overrides {
       Name: "cs:PlayOnKey"
-      String: "ability_extra_50"
+      String: ""
     }
     Overrides {
       Name: "cs:PlayOnEvent"
-      String: ""
+      String: "CAMERA_TRANSITION"
     }
     Overrides {
       Name: "cs:SequenceNumber"
@@ -137,7 +137,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Duration"
-      Float: 4
+      Float: 2
     }
     Overrides {
       Name: "cs:PathOptions"
@@ -145,7 +145,7 @@ Objects {
     }
     Overrides {
       Name: "cs:LinearPath"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:OrbitShortPath"
@@ -363,8 +363,6 @@ Objects {
       Z: 454.617767
     }
     Rotation {
-      Pitch: -11.9903564
-      Yaw: -66.2081909
     }
     Scale {
       X: 1
@@ -388,7 +386,6 @@ Objects {
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
-      Z: -50
     }
     RotationOffset {
     }
@@ -456,6 +453,8 @@ Objects {
   Name: "Target"
   Transform {
     Location {
+      X: 970.726685
+      Y: 1983.49951
       Z: 181.402176
     }
     Rotation {
