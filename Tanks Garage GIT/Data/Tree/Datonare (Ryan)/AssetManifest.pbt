@@ -1,4 +1,13 @@
 Assets {
+  Id: 8088145951334388726
+  Name: "Play"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "PlayRegular_ref"
+  }
+}
+Assets {
   Id: 5164711776771633793
   Name: "Frame Outlined 001"
   PlatformAssetType: 9

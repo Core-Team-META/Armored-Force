@@ -2882,6 +2882,66 @@ Objects {
         SelfId: 17812715862257263058
       }
     }
+    Overrides {
+      Name: "cs:HitpointsSubStat"
+      ObjectReference {
+        SelfId: 14969049176660100057
+      }
+    }
+    Overrides {
+      Name: "cs:HitpointsSubStatChange"
+      ObjectReference {
+        SelfId: 3010127405305443314
+      }
+    }
+    Overrides {
+      Name: "cs:TopSpeedSubStat"
+      ObjectReference {
+        SelfId: 14863832307458299869
+      }
+    }
+    Overrides {
+      Name: "cs:HullTraverseSubStat"
+      ObjectReference {
+        SelfId: 6005885096541658525
+      }
+    }
+    Overrides {
+      Name: "cs:TurretTraverseSubStat"
+      ObjectReference {
+        SelfId: 728031295510820053
+      }
+    }
+    Overrides {
+      Name: "cs:ElevationSubStat"
+      ObjectReference {
+        SelfId: 4259034509754864216
+      }
+    }
+    Overrides {
+      Name: "cs:TopSpeedSubStatChange"
+      ObjectReference {
+        SelfId: 16145922597118411686
+      }
+    }
+    Overrides {
+      Name: "cs:HullTraverseSubStatChange"
+      ObjectReference {
+        SelfId: 16405875447406317944
+      }
+    }
+    Overrides {
+      Name: "cs:TurretSubStatChange"
+      ObjectReference {
+        SelfId: 1824059216503619610
+      }
+    }
+    Overrides {
+      Name: "cs:ElevationSubStatChange"
+      ObjectReference {
+        SelfId: 5942154244488329189
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -182,7 +182,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -420,6 +420,11 @@ Objects {
   ChildIds: 6005885096541658525
   ChildIds: 728031295510820053
   ChildIds: 4259034509754864216
+  ChildIds: 16145922597118411686
+  ChildIds: 16405875447406317944
+  ChildIds: 1824059216503619610
+  ChildIds: 5942154244488329189
+  ChildIds: 10607641793433307559
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -437,6 +442,347 @@ Objects {
     }
     UseParentWidth: true
     Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10607641793433307559
+  Name: "Upgrade"
+  Transform {
+    Location {
+      X: -2351.44263
+      Y: 917.261169
+      Z: -865
+    }
+    Rotation {
+      Yaw: 169.999908
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15020239270301223231
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 140
+    Height: 40
+    UIX: -10
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      Label: "RESEARCH"
+      FontColor {
+        A: 1
+      }
+      FontSize: 18
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      HoveredColor {
+        R: 0.5
+        G: 0.5
+        B: 0.5
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+        Id: 8088145951334388726
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5942154244488329189
+  Name: "Sub Stat Change"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.73207534e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15020239270301223231
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 350
+    Height: 40
+    UIX: 370
+    UIY: 170
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "+2/0"
+      Color {
+        G: 0.5
+        B: 0.0231788158
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 8088145951334388726
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1824059216503619610
+  Name: "Sub Stat Change"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.73207534e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15020239270301223231
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 300
+    Height: 40
+    UIX: 370
+    UIY: 130
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "+5 deg/sec"
+      Color {
+        G: 0.5
+        B: 0.0231788158
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 8088145951334388726
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16405875447406317944
+  Name: "Sub Stat Change"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.73207534e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15020239270301223231
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 300
+    Height: 40
+    UIX: 370
+    UIY: 90
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "+3 deg/sec"
+      Color {
+        G: 0.5
+        B: 0.0231788158
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 8088145951334388726
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16145922597118411686
+  Name: "Sub Stat Change"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.73207534e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15020239270301223231
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 300
+    Height: 40
+    UIX: 370
+    UIY: 50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "+5 kph"
+      Color {
+        G: 0.5
+        B: 0.0231788158
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 8088145951334388726
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -491,12 +837,12 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -552,12 +898,12 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -613,12 +959,12 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -674,12 +1020,12 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -741,6 +1087,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -832,6 +1179,7 @@ Objects {
   ChildIds: 16824640393688458854
   ChildIds: 14969049176660100057
   ChildIds: 3010127405305443314
+  ChildIds: 2667473009802627967
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -859,6 +1207,99 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2667473009802627967
+  Name: "Upgrade"
+  Transform {
+    Location {
+      X: -2351.44263
+      Y: 917.261169
+      Z: -865
+    }
+    Rotation {
+      Yaw: 169.999908
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 128749176158486216
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 140
+    Height: 40
+    UIX: -10
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      Label: "RESEARCH"
+      FontColor {
+        A: 1
+      }
+      FontSize: 18
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      HoveredColor {
+        R: 0.5
+        G: 0.5
+        B: 0.5
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+        Id: 8088145951334388726
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
         }
       }
     }
@@ -902,12 +1343,13 @@ Objects {
         B: 0.0231788158
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -963,12 +1405,12 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -1030,6 +1472,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -1123,6 +1566,7 @@ Objects {
   ChildIds: 3629041008149732381
   ChildIds: 4678259048214319867
   ChildIds: 4899682080488655839
+  ChildIds: 15272875763507954167
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1150,6 +1594,99 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15272875763507954167
+  Name: "Upgrade"
+  Transform {
+    Location {
+      X: -2351.44263
+      Y: 917.261169
+      Z: -865
+    }
+    Rotation {
+      Yaw: 169.999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 117987714575262604
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 140
+    Height: 40
+    UIX: -10
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      Label: "RESEARCH"
+      FontColor {
+        A: 1
+      }
+      FontSize: 18
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      HoveredColor {
+        R: 0.5
+        G: 0.5
+        B: 0.5
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+        Id: 8088145951334388726
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
         }
       }
     }
@@ -1187,18 +1724,19 @@ Objects {
       }
     }
     Text {
-      Label: "-10 pt"
+      Label: "+10 pt"
       Color {
-        R: 0.5
-        G: 2.38418579e-07
+        G: 0.5
+        B: 0.0231788158
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -1253,12 +1791,13 @@ Objects {
         B: 0.0231788158
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -1314,12 +1853,12 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -1375,12 +1914,12 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
@@ -1442,6 +1981,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
+        Id: 8088145951334388726
       }
     }
     AnchorLayout {
