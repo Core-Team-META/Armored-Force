@@ -23,6 +23,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -48,6 +51,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -78,6 +84,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 14452616722762075696
@@ -86,7 +95,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -189,6 +197,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           Model {
           }
@@ -219,6 +230,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 9605197959426201295
@@ -227,7 +241,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -288,6 +301,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -296,7 +312,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -390,6 +405,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5183250353812937636
@@ -398,7 +416,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -504,6 +521,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 2806010938932900251
@@ -512,7 +532,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -598,6 +617,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 17189330346149627205
@@ -606,7 +628,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -700,6 +721,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5183250353812937636
@@ -708,7 +732,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -780,6 +803,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 11024977997119225113
@@ -788,7 +814,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -854,6 +879,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5722845298204989079
@@ -862,7 +890,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -949,6 +976,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 14148694443006706995
@@ -957,7 +987,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1044,6 +1073,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 14148694443006706995
@@ -1052,7 +1084,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1118,6 +1149,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5722845298204989079
@@ -1126,7 +1160,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1188,6 +1221,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 17059500210268236317
@@ -1196,7 +1232,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1249,6 +1284,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5659154695321692082
@@ -1257,7 +1295,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1310,6 +1347,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5659154695321692082
@@ -1318,7 +1358,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1371,6 +1410,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5659154695321692082
@@ -1379,7 +1421,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1432,6 +1473,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5659154695321692082
@@ -1440,7 +1484,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1492,6 +1535,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15463439290356156719
@@ -1500,7 +1546,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1561,6 +1606,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 11392846088507661759
@@ -1569,7 +1617,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1623,6 +1670,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -1631,7 +1681,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1686,6 +1735,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -1694,7 +1746,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1749,6 +1800,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -1757,7 +1811,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1819,6 +1872,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 4895696571039676751
@@ -1827,7 +1883,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1874,6 +1929,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16163665952175281032
@@ -1882,7 +1940,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -1936,6 +1993,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18230358678822370135
@@ -1944,7 +2004,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2045,6 +2104,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 13295705863038029439
@@ -2053,7 +2115,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2114,6 +2175,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -2122,7 +2186,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2227,6 +2290,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 4798953546912878943
@@ -2235,7 +2301,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2289,6 +2354,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18230358678822370135
@@ -2297,7 +2365,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2398,6 +2465,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 13295705863038029439
@@ -2406,7 +2476,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2467,6 +2536,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -2475,7 +2547,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2580,6 +2651,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 4798953546912878943
@@ -2588,7 +2662,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2688,6 +2761,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 13295705863038029439
@@ -2696,7 +2772,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2745,6 +2820,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -2753,7 +2831,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2802,6 +2879,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 4389345689548242591
@@ -2810,7 +2890,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2860,6 +2939,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -2868,7 +2950,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2917,6 +2998,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -2925,7 +3009,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -2974,6 +3057,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -2982,7 +3068,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3032,6 +3117,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 12664734909126558832
@@ -3040,7 +3128,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3089,6 +3176,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 4389345689548242591
@@ -3097,7 +3187,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3146,6 +3235,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 4389345689548242591
@@ -3154,7 +3246,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3203,6 +3294,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 4389345689548242591
@@ -3211,7 +3305,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3284,6 +3377,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 13499870741455156244
@@ -3292,7 +3388,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3350,6 +3445,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 99428546513861114
@@ -3358,7 +3456,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3405,6 +3502,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15463439290356156719
@@ -3413,7 +3513,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3486,6 +3585,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 625906690733978220
@@ -3494,7 +3596,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3590,6 +3691,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 9927852243059123577
@@ -3598,7 +3702,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3679,6 +3782,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 10873936651371038590
@@ -3687,7 +3793,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3768,6 +3873,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 10873936651371038590
@@ -3776,7 +3884,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3837,6 +3944,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16965777294932964901
@@ -3845,7 +3955,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3925,6 +4034,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 10873936651371038590
@@ -3933,7 +4045,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3986,6 +4097,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16890205056291965690
@@ -3994,7 +4108,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4055,6 +4168,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16965777294932964901
@@ -4063,7 +4179,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4125,6 +4240,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -4133,7 +4251,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4194,6 +4311,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -4202,7 +4322,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4263,6 +4382,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -4271,7 +4393,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4328,6 +4449,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1630607435793532884
@@ -4336,7 +4460,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4399,6 +4522,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16804522484737595633
@@ -4407,7 +4533,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4440,6 +4565,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 8606699818147202890
@@ -4448,7 +4576,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4505,6 +4632,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 12765447074461671329
@@ -4513,7 +4643,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4546,6 +4675,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 9605197959426201295
@@ -4554,7 +4686,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4617,6 +4748,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16804522484737595633
@@ -4625,7 +4759,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4682,6 +4815,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1630607435793532884
@@ -4690,7 +4826,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4723,6 +4858,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 8606699818147202890
@@ -4731,7 +4869,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4788,6 +4925,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 12765447074461671329
@@ -4796,7 +4936,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -5179,5 +5318,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
 }

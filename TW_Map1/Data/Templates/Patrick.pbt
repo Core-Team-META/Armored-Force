@@ -29,6 +29,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsFilePartition: true
           FilePartitionName: "Patrick"
@@ -58,6 +61,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsFilePartition: true
           FilePartitionName: "TW_Settings"
@@ -83,6 +89,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Settings {
           IsDefault: true
@@ -159,6 +168,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Settings {
           IsDefault: true
           RespawnSettings {
@@ -194,6 +206,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -219,6 +234,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Settings {
           IsDefault: true
@@ -291,6 +309,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         NetworkContext {
         }
       }
@@ -317,6 +338,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Camera {
           UseAsDefault: true
@@ -360,6 +384,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -400,6 +427,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -428,6 +458,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -480,6 +513,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 16221632073795130751
@@ -509,6 +545,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -556,6 +595,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 400
@@ -608,6 +650,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -670,6 +715,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 400
@@ -939,6 +987,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -966,6 +1017,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -1023,6 +1077,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 14278482860986951316
@@ -1054,6 +1111,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -1080,6 +1140,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -1104,6 +1167,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -1133,6 +1199,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -1173,6 +1242,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 2009186146230365962
@@ -1200,6 +1272,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -1263,6 +1338,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 13015194634821144853
@@ -1291,6 +1369,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -1458,6 +1539,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 1558966419367451433
@@ -1487,6 +1571,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -1532,6 +1619,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 4827239879969363094
@@ -1558,6 +1648,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         AudioInstance {
           AudioAsset {
@@ -1590,6 +1683,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -1634,6 +1730,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 100
@@ -1682,6 +1781,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 80
@@ -1738,6 +1840,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -1800,6 +1905,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -1826,6 +1934,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -1901,6 +2012,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 1044847643474543657
@@ -1925,6 +2039,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -1970,6 +2087,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 300
@@ -2017,6 +2137,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -150
@@ -2067,6 +2190,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 40
           Height: 294
@@ -2113,6 +2239,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 80
@@ -2169,6 +2298,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -150
           RenderTransformPivot {
@@ -2218,6 +2350,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 40
           Height: 294
@@ -2265,6 +2400,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 80
@@ -2321,6 +2459,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 100
           Height: 100
@@ -2369,6 +2510,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 100
           Height: 100
@@ -2413,6 +2557,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 30
@@ -2472,6 +2619,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -2646,6 +2796,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -2670,6 +2823,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -2742,6 +2898,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 12583604319203242452
@@ -2775,6 +2934,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -2799,6 +2961,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Settings {
           PlayerMovementSettings {
@@ -2855,6 +3020,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Settings {
           PlayerMovementSettings {
@@ -2930,6 +3098,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Settings {
           PlayerMovementSettings {
             WalkSpeed: 640
@@ -3003,6 +3174,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Settings {
           PlayerMovementSettings {
@@ -3078,6 +3252,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Settings {
           PlayerMovementSettings {
             WalkSpeed: 640
@@ -3151,6 +3328,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Settings {
           PlayerMovementSettings {
@@ -3227,6 +3407,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         NetworkContext {
         }
       }
@@ -3295,6 +3478,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 17390028024533969479
@@ -3325,6 +3511,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -3349,6 +3538,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Camera {
           FreeControl: true
@@ -3392,6 +3584,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Camera {
           AttachToLocalPlayer: true
           FreeControl: true
@@ -3430,6 +3625,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -3481,6 +3679,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 450
           Height: 50
@@ -3530,6 +3731,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           RenderTransformPivot {
@@ -3576,6 +3780,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -3632,6 +3839,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -3692,6 +3902,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIY: -2
           RenderTransformPivot {
@@ -3750,6 +3963,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -60
@@ -3816,6 +4032,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -50
@@ -3863,6 +4082,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -3919,6 +4141,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -3979,6 +4204,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIY: -2
           RenderTransformPivot {
@@ -4037,6 +4265,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -60
@@ -4107,6 +4338,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -100
@@ -4154,6 +4388,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -4210,6 +4447,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -4270,6 +4510,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIY: -2
           RenderTransformPivot {
@@ -4328,6 +4571,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -60
@@ -4394,6 +4640,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 50
           UIX: -65
@@ -4450,6 +4699,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -4510,6 +4762,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIY: -2
           RenderTransformPivot {
@@ -4568,6 +4823,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -60
@@ -4635,6 +4893,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 50
           UIX: -130
@@ -4691,6 +4952,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -4751,6 +5015,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -29
           Height: -20
@@ -4809,6 +5076,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 10
@@ -4869,6 +5139,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -185
@@ -4939,6 +5212,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -150
@@ -4986,6 +5262,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -5042,6 +5321,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -5102,6 +5384,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIY: -2
           RenderTransformPivot {
@@ -5160,6 +5445,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -60
@@ -5226,6 +5514,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 50
           UIX: -65
@@ -5282,6 +5573,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -5342,6 +5636,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIY: -2
           RenderTransformPivot {
@@ -5400,6 +5697,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -60
@@ -5467,6 +5767,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 50
           UIX: -130
@@ -5523,6 +5826,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -5583,6 +5889,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -29
           Height: -20
@@ -5641,6 +5950,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 10
@@ -5701,6 +6013,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -185
@@ -5770,6 +6085,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -100
@@ -5817,6 +6135,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -5873,6 +6194,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -5932,6 +6256,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: -2
@@ -5994,6 +6321,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 50
           UIX: -50
@@ -6050,6 +6380,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -6109,6 +6442,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: -2
@@ -6171,6 +6507,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 50
           UIX: -100
@@ -6227,6 +6566,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -6286,6 +6628,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: -2
@@ -6348,6 +6693,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 50
           UIX: -150
@@ -6404,6 +6752,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -6464,6 +6815,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIY: -2
           RenderTransformPivot {
@@ -6522,6 +6876,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -185
@@ -6588,6 +6945,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -150
@@ -6639,6 +6999,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -6695,6 +7058,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIX: -25
@@ -6754,6 +7120,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIX: -50
           RenderTransformPivot {
@@ -6811,6 +7180,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -6872,6 +7244,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -10
           Height: -10
@@ -6932,6 +7307,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -10
           Height: -10
@@ -6990,6 +7368,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -7051,6 +7432,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -185
@@ -7117,6 +7501,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -200
@@ -7170,6 +7557,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 50
@@ -7226,6 +7616,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIX: -25
@@ -7285,6 +7678,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           UIX: -50
           RenderTransformPivot {
@@ -7342,6 +7738,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIX: -75
@@ -7401,6 +7800,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -10
           Height: -10
@@ -7459,6 +7861,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -7520,6 +7925,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -10
           Height: -10
@@ -7579,6 +7987,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -10
@@ -7640,6 +8051,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 75
           UIY: -2
@@ -7700,6 +8114,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -185
@@ -7764,6 +8181,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -7833,6 +8253,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 9624858652945741495
@@ -7862,6 +8285,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -7993,6 +8419,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 15740550923482379934
@@ -8022,6 +8451,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -8048,6 +8480,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -8083,6 +8518,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -8121,6 +8559,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 14773812306848060375
@@ -8152,6 +8593,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -8191,6 +8635,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -8233,6 +8680,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 1867132674124156237
@@ -8274,6 +8724,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 1867132674124156237
@@ -8302,6 +8755,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -8383,6 +8839,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 7692222498556183725
@@ -8410,6 +8869,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -8457,6 +8919,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 1050
           Height: 500
@@ -8501,6 +8966,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -8565,6 +9033,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 500
           Height: 500
@@ -8609,6 +9080,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -8666,6 +9140,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -8726,6 +9203,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -100
           UIY: 75
@@ -8778,6 +9258,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 500
           Height: 500
@@ -8823,6 +9306,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -8880,6 +9366,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 300
@@ -8940,6 +9429,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -100
           UIY: 75
@@ -8990,6 +9482,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -9043,6 +9538,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 3455539569473216911
@@ -9071,6 +9569,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -9122,6 +9623,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 15979882387317034691
@@ -9149,6 +9653,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -9197,6 +9704,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 100
           Height: 100
@@ -9243,6 +9753,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 300
@@ -9303,6 +9816,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 500
@@ -9367,6 +9883,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 197
           Height: 115
@@ -9414,6 +9933,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 123
@@ -9471,6 +9993,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 125
@@ -9533,6 +10058,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 113
           Height: 40
@@ -9590,6 +10118,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 113
@@ -9652,6 +10183,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 221
           Height: 40
@@ -9709,6 +10243,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 257
@@ -9804,6 +10341,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 197
           Height: 115
@@ -9851,6 +10391,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -9907,6 +10450,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -9970,6 +10516,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10026,6 +10575,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10089,6 +10641,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10145,6 +10700,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10208,6 +10766,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10264,6 +10825,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10327,6 +10891,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10383,6 +10950,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10446,6 +11016,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10502,6 +11075,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10565,6 +11141,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10621,6 +11200,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10684,6 +11266,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10740,6 +11325,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10803,6 +11391,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10859,6 +11450,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -10922,6 +11516,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -10978,6 +11575,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11041,6 +11641,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11097,6 +11700,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11160,6 +11766,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11216,6 +11825,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11279,6 +11891,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11335,6 +11950,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11398,6 +12016,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11454,6 +12075,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11517,6 +12141,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11573,6 +12200,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11636,6 +12266,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11692,6 +12325,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11755,6 +12391,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11811,6 +12450,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11874,6 +12516,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -11930,6 +12575,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -11993,6 +12641,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12049,6 +12700,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12112,6 +12766,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12168,6 +12825,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12231,6 +12891,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12287,6 +12950,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12350,6 +13016,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12406,6 +13075,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12469,6 +13141,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12525,6 +13200,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12588,6 +13266,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12644,6 +13325,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12707,6 +13391,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12763,6 +13450,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12826,6 +13516,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -12882,6 +13575,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -12945,6 +13641,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -13002,6 +13701,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -13065,6 +13767,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -13122,6 +13827,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -13185,6 +13893,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -13242,6 +13953,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 238
@@ -13305,6 +14019,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -13362,6 +14079,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 238
@@ -13425,6 +14145,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -13482,6 +14205,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 238
@@ -13545,6 +14271,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -13602,6 +14331,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 238
@@ -13665,6 +14397,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 40
@@ -13722,6 +14457,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 238
@@ -13789,6 +14527,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -13841,6 +14582,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -13942,6 +14686,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 9281809816689828151
@@ -13970,6 +14717,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -14001,6 +14751,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -14026,6 +14779,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1137112816547272582
@@ -14034,7 +14790,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -14065,6 +14820,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1137112816547272582
@@ -14073,7 +14831,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -14104,6 +14861,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         NetworkContext {
         }
       }
@@ -14129,6 +14889,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -14163,6 +14926,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1137112816547272582
@@ -14173,7 +14939,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -14208,6 +14973,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -14233,6 +15001,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1137112816547272582
@@ -14241,7 +15012,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -14272,6 +15042,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1137112816547272582
@@ -14280,7 +15053,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -14311,6 +15083,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         NetworkContext {
         }
       }
@@ -14336,6 +15111,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -14370,6 +15148,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1137112816547272582
@@ -14380,7 +15161,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -14449,6 +15229,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -14488,6 +15271,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 7407597744590636425
@@ -14517,6 +15303,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -14585,6 +15374,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -14681,6 +15473,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 17336700953072190535
@@ -14709,6 +15504,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -14758,6 +15556,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 100
           Height: 100
@@ -14804,6 +15605,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 700
@@ -14865,6 +15669,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 150
           Height: 60
@@ -14924,6 +15731,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 150
@@ -14985,6 +15795,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 150
           Height: 60
@@ -15043,6 +15856,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 150
@@ -15111,6 +15927,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 100
           Height: 100
@@ -15157,6 +15976,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 700
@@ -15218,6 +16040,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 150
           Height: 60
@@ -15278,6 +16103,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 400
           Height: 30
@@ -15336,6 +16164,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 150
@@ -15397,6 +16228,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 150
           Height: 60
@@ -15456,6 +16290,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 400
           Height: 30
@@ -15512,6 +16349,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 150
@@ -15661,6 +16501,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -15686,6 +16529,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -15728,6 +16574,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 3056032008084332204
@@ -15761,6 +16610,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -15788,6 +16640,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Camera {
           MinDistance: 300
@@ -15837,6 +16692,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -15863,6 +16721,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Trigger {
           TeamSettings {
@@ -15897,6 +16758,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Trigger {
           TeamSettings {
             IsTeamCollisionEnabled: true
@@ -15929,6 +16793,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Trigger {
           TeamSettings {
@@ -15963,6 +16830,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Trigger {
           TeamSettings {
             IsTeamCollisionEnabled: true
@@ -15995,6 +16865,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Trigger {
           TeamSettings {
@@ -16029,6 +16902,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Trigger {
           TeamSettings {
             IsTeamCollisionEnabled: true
@@ -16061,6 +16937,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Trigger {
           TeamSettings {
@@ -16095,6 +16974,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Trigger {
           TeamSettings {
             IsTeamCollisionEnabled: true
@@ -16127,6 +17009,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -16196,6 +17081,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 941252841830348353
@@ -16234,6 +17122,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -16315,6 +17206,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 270
           Height: 270
@@ -16361,6 +17255,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -16418,6 +17315,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -16481,6 +17381,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -16543,6 +17446,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -10
@@ -16592,6 +17498,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -150
@@ -16657,6 +17566,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 100
@@ -16725,6 +17637,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -50
@@ -16774,6 +17689,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -150
@@ -16839,6 +17757,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 100
@@ -16907,6 +17828,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           UIY: -90
@@ -16956,6 +17880,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -150
@@ -17021,6 +17948,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 100
@@ -17120,6 +18050,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 210
           Height: 210
@@ -17167,6 +18100,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -17224,6 +18160,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: 6
@@ -17288,6 +18227,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -17350,6 +18292,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -10
@@ -17399,6 +18344,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -17464,6 +18412,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -17532,6 +18483,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -42
@@ -17581,6 +18535,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -17646,6 +18603,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -17714,6 +18674,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -74
@@ -17763,6 +18726,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -17828,6 +18794,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -17927,6 +18896,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 210
           Height: 210
@@ -17974,6 +18946,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -18031,6 +19006,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: 6
@@ -18095,6 +19073,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -18157,6 +19138,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -10
@@ -18206,6 +19190,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -18271,6 +19258,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -18339,6 +19329,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -42
@@ -18388,6 +19381,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -18453,6 +19449,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -18521,6 +19520,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -74
@@ -18570,6 +19572,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -18635,6 +19640,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -18735,6 +19743,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 180
           Height: 180
@@ -18782,6 +19793,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -18839,6 +19853,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: 6
@@ -18903,6 +19920,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -18965,6 +19985,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -10
@@ -19014,6 +20037,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -19079,6 +20105,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -19147,6 +20176,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -42
@@ -19196,6 +20228,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -19261,6 +20296,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -19329,6 +20367,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -74
@@ -19378,6 +20419,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -19443,6 +20487,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -19543,6 +20590,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 180
           Height: 180
@@ -19590,6 +20640,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -19647,6 +20700,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: 6
@@ -19711,6 +20767,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -19773,6 +20832,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -10
@@ -19822,6 +20884,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -19887,6 +20952,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -19955,6 +21023,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -42
@@ -20004,6 +21075,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -20069,6 +21143,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -20137,6 +21214,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -74
@@ -20186,6 +21266,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -20251,6 +21334,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -20351,6 +21437,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 160
           Height: 160
@@ -20398,6 +21487,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -20455,6 +21547,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: 6
@@ -20519,6 +21614,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -20581,6 +21679,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -10
@@ -20630,6 +21731,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -20695,6 +21799,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -20763,6 +21870,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -42
@@ -20812,6 +21922,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -20877,6 +21990,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -20945,6 +22061,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -74
@@ -20994,6 +22113,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -21059,6 +22181,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -21159,6 +22284,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 160
           Height: 160
@@ -21206,6 +22334,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -21263,6 +22394,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: 6
@@ -21327,6 +22461,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -21389,6 +22526,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -10
@@ -21438,6 +22578,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -21503,6 +22646,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -21571,6 +22717,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -42
@@ -21620,6 +22769,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -21685,6 +22837,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -21753,6 +22908,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -74
@@ -21802,6 +22960,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -21867,6 +23028,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -21967,6 +23131,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 150
           Height: 150
@@ -22014,6 +23181,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Height: 50
@@ -22071,6 +23241,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           UIY: 6
@@ -22135,6 +23308,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: -50
           UIY: -50
@@ -22197,6 +23373,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -10
@@ -22246,6 +23425,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -22311,6 +23493,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -22379,6 +23564,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -42
@@ -22428,6 +23616,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -22493,6 +23684,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -22561,6 +23755,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 36
           UIY: -74
@@ -22610,6 +23807,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: -115
@@ -22675,6 +23875,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 75
@@ -22765,6 +23968,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -22804,6 +24010,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 16735746884101318736
@@ -22832,6 +24041,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -22949,6 +24161,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 9104653897864604584
@@ -22976,6 +24191,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           RenderTransformPivot {
@@ -23020,6 +24238,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 100
@@ -23089,6 +24310,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 850
           Height: 600
@@ -23143,6 +24367,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 700
@@ -23200,6 +24427,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 700
@@ -23260,6 +24490,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 250
@@ -23322,6 +24555,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 60
@@ -23382,6 +24618,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -23444,6 +24683,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 250
           Height: 60
@@ -23504,6 +24746,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -23566,6 +24811,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 60
@@ -23626,6 +24874,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 250
@@ -23688,6 +24939,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 60
@@ -23748,6 +25002,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -23810,6 +25067,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 700
           Height: 7
@@ -23866,6 +25126,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -23928,6 +25191,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 250
           Height: 60
@@ -23988,6 +25254,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 120
@@ -24050,6 +25319,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 200
           Height: 60
@@ -24110,6 +25382,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 250
@@ -24172,6 +25447,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 120
           Height: 60
@@ -24233,6 +25511,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 700
           Height: 7
@@ -24289,6 +25570,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 250
@@ -24351,6 +25635,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 250
           Height: 60
@@ -24411,6 +25698,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -24487,5 +25777,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
 }

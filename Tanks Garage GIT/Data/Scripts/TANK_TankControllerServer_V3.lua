@@ -200,14 +200,18 @@ function SetTankModifications(player)
 	
 	local modifications = nil
 	
-	for x, entry in ipairs(player.serverUserData.techTreeProgress) do
+	if player.serverUserData.techTreeProgress then
 	
-		if entry.id == tankId then
+		for x, entry in ipairs(player.serverUserData.techTreeProgress) do
 		
-			modifications = {entry.hasWeapon, entry.hasArmor, entry.hasEngine}
+			if entry.id == tankId then
+			
+				modifications = {entry.hasWeapon, entry.hasArmor, entry.hasEngine}
+				
+			end
 			
 		end
-		
+	
 	end
 	
 	if not modifications then

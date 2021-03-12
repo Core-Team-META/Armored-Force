@@ -27,6 +27,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         NetworkContext {
         }
       }
@@ -59,6 +62,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 6491078578190431103
@@ -87,5 +93,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
 }

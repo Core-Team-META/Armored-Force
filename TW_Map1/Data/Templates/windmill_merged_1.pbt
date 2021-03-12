@@ -68,6 +68,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           Model {
           }
@@ -111,6 +114,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -171,6 +177,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -243,6 +252,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16374150260036817633
@@ -313,6 +325,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -385,6 +400,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16374150260036817633
@@ -444,6 +462,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18153381962735685629
@@ -498,6 +519,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -563,6 +587,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5836430349218932838
@@ -617,6 +644,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -670,6 +700,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -727,6 +760,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -782,6 +818,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -839,6 +878,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -895,6 +937,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -945,6 +990,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1001,6 +1049,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 9675776263369201294
@@ -1043,6 +1094,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -1072,6 +1126,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         NetworkContext {
         }
@@ -1103,6 +1160,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -1160,6 +1220,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -1213,6 +1276,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1268,6 +1334,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6118862309081978775
@@ -1321,6 +1390,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1381,6 +1453,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -1421,6 +1496,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         NetworkContext {
         }
       }
@@ -1451,6 +1529,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -1491,6 +1572,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -1538,6 +1622,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1597,6 +1684,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15617342134329326825
@@ -1654,6 +1744,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1713,6 +1806,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15617342134329326825
@@ -1770,6 +1866,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1829,6 +1928,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15617342134329326825
@@ -1886,6 +1988,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1945,6 +2050,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15617342134329326825
@@ -2002,6 +2110,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -2061,6 +2172,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15617342134329326825
@@ -2118,6 +2232,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -2177,6 +2294,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15617342134329326825
@@ -2235,6 +2355,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 15617342134329326825
@@ -2292,6 +2415,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -2357,6 +2483,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18088187323891878271
@@ -2418,6 +2547,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 5836430349218932838
@@ -2471,6 +2603,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -2539,6 +2674,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 1758388402481224558
@@ -2602,6 +2740,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 2159678873184162260
@@ -2664,6 +2805,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -2751,6 +2895,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -2928,6 +3075,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 6126478455621128065
@@ -2957,6 +3107,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         AudioInstance {
           AudioAsset {
@@ -3007,6 +3160,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 9598014803426844430
@@ -3015,7 +3171,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3071,6 +3226,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -3134,6 +3292,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16374150260036817633
@@ -3195,6 +3356,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -3258,6 +3422,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 16374150260036817633
@@ -3320,6 +3487,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -3328,7 +3498,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3381,6 +3550,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -3443,6 +3615,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -3503,6 +3678,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -3565,6 +3743,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -3625,6 +3806,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -3687,6 +3871,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -3747,6 +3934,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -3809,6 +3999,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -3870,6 +4063,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -3878,7 +4074,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -3931,6 +4126,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -3993,6 +4191,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4053,6 +4254,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -4115,6 +4319,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4175,6 +4382,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -4237,6 +4447,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4297,6 +4510,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -4359,6 +4575,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4420,6 +4639,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4428,7 +4650,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -4481,6 +4702,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -4543,6 +4767,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4603,6 +4830,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -4665,6 +4895,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4725,6 +4958,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -4787,6 +5023,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4847,6 +5086,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -4909,6 +5151,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4970,6 +5215,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -4978,7 +5226,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           InteractWithTriggers: true
           StaticMesh {
             Physics {
@@ -5031,6 +5278,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -5093,6 +5343,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -5153,6 +5406,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -5215,6 +5471,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -5275,6 +5534,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -5337,6 +5599,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -5398,6 +5663,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 6130311250470721560
@@ -5458,6 +5726,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -5642,5 +5913,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
 }

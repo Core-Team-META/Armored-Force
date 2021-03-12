@@ -32,6 +32,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -77,6 +80,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Blueprint {
           BlueprintAsset {
@@ -133,6 +139,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 14964967653464214432
@@ -187,6 +196,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Blueprint {
           BlueprintAsset {
@@ -243,6 +255,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 14964967653464214432
@@ -297,6 +312,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Blueprint {
           BlueprintAsset {
@@ -353,6 +371,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 10755294693114967386
@@ -407,6 +428,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Blueprint {
           BlueprintAsset {
@@ -463,6 +487,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 10755294693114967386
@@ -516,6 +543,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Blueprint {
           BlueprintAsset {
@@ -572,6 +602,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 10755294693114967386
@@ -609,5 +642,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
 }
