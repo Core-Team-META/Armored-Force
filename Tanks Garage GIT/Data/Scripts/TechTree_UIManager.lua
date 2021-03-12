@@ -29,6 +29,16 @@ local reloadSubStat = script:GetCustomProperty("ReloadSubStat"):WaitForObject()
 local damageSubStat = script:GetCustomProperty("DamageSubStat"):WaitForObject()
 local reloadSubStatChange = script:GetCustomProperty("ReloadSubStatChange"):WaitForObject()
 local damageSubStatChange = script:GetCustomProperty("DamageSubStatChange"):WaitForObject()
+local hitpointsSubStat = script:GetCustomProperty("HitpointsSubStat"):WaitForObject()
+local hitpointsSubStatChange = script:GetCustomProperty("HitpointsSubStatChange"):WaitForObject()
+local topSpeedSubStat = script:GetCustomProperty("TopSpeedSubStat"):WaitForObject()
+local hullTraverseSubStat = script:GetCustomProperty("HullTraverseSubStat"):WaitForObject()
+local turretTraverseSubStat = script:GetCustomProperty("TurretTraverseSubStat"):WaitForObject()
+local elevationSubStat = script:GetCustomProperty("ElevationSubStat"):WaitForObject()
+local topSpeedSubStatChange = script:GetCustomProperty("TopSpeedSubStatChange"):WaitForObject()
+local hullTraverseSubStatChange = script:GetCustomProperty("HullTraverseSubStatChange"):WaitForObject()
+local turretSubStatChange = script:GetCustomProperty("TurretSubStatChange"):WaitForObject()
+local elevationSubStatChange = script:GetCustomProperty("ElevationSubStatChange"):WaitForObject()
 ------------------------------------------------------------------------------------------------------
 local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
 
@@ -461,6 +471,46 @@ end
 function OpenDetails(button)
 	-- TODO: Populate data on modal for tank
 	techTreeModalPopup.visibility = Visibility.FORCE_ON
+	local id = button.name
+	for i, tank in ipairs(TANK_LIST) do	
+		if(tank:GetCustomProperty("ID") == id) then			
+			PopulateDetailsModal(tank)
+		end
+	end
+end
+
+function PopulateDetailsModal(tank)
+	tankFullName.text = tank:GetCustomProperty("Name")
+	local reload = tank:GetCustomProperty("Reload")
+	local reloadUpgrade = tank:GetCustomProperty("ReloadUpgraded")
+	local damage = tank:GetCustomProperty("Damage")
+	local damageUpgrade = tank:GetCustomProperty("DamageUpgraded")
+	local hitPoints = tank:GetCustomProperty("HitPoints")
+	local hitPointsUpgraded = tank:GetCustomProperty("HitPointsUpgraded")
+	local topSpeed = tank:GetCustomProperty("TopSpeed")
+	local topSpeedUpgraded = tank:GetCustomProperty("TopSpeedUpgraded")
+	local hullTraverse = tank:GetCustomProperty("Traverse")
+	local hullTraverseUpgraded = tank:GetCustomProperty("TraverseUpgraded")
+	local turretTraverse = tank:GetCustomProperty("Turret")
+	local turretTraverseUpgrade = tank:GetCustomProperty("TurretUpgraded")
+	local elevation = tank:GetCustomProperty("Elevation")
+	local elevationUpgraded = tank:GetCustomProperty("ElevationUpgraded")
+	local maxDepth = tank:GetCustomProperty("MaxDepth")
+	
+	reloadSubStat.text = "Reload: " .. string.format("%.1f", reload) .. " s"
+	damageSubStat.text = "Damage: " .. string.format(math.floor(damage)) .. "pt"
+	reloadSubStatChange.text = "-" .. string.format("%.1f", reload - reloadUpgrade) .. " s"
+	damageSubStatChange.text = "+" .. tostring(damageUpgrade - damage) .. "pt"
+	hitpointsSubStat.text = "Hitpoints: " .. tostring(hitPoints) .. " pt"
+	hitpointsSubStatChange.text = "+" .. tostring(hitPointsUpgraded - hitPoints) .. " pt"
+	topSpeedSubStat.text = "Top Speed: " .. tostring(topSpeed) .. " kph"
+	topSpeedSubStatChange.text = "+" .. tostring(topSpeedUpgraded - topSpeed) .. " kph"
+	hullTraverseSubStat.text = "Hull Traverse: " .. tostring(hullTraverse) .. " deg/sec"
+	hullTraverseSubStatChange.text = "+" .. tostring(hullTraverseUpgraded - hullTraverse) .. " deg/sec"
+	turretTraverseSubStat.text = "Turret Traverse: " .. tostring(turretTraverse) .. " deg/sec"
+	turretSubStatChange.text = "+" .. tostring(turretTraverseUpgrade - turretTraverse) .. " deg/sec"
+	elevationSubStat.text = "Elevation/Depression: +" .. tostring(elevation) .. "/" .. tostring(maxDepth)
+	elevationSubStatChange.text = "+" .. tostring(elevationUpgraded - elevation) .. "/0" -- Is there always no change in max depth?
 end
 
 Init()
