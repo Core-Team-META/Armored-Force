@@ -16,8 +16,8 @@ Objects {
   }
   ChildIds: 15182677334456928949
   ChildIds: 12209608198557882361
-  ChildIds: 3189391084242011458
   ChildIds: 5837658692554861011
+  ChildIds: 6265610613569901870
   ChildIds: 7310433976514289622
   ChildIds: 2959002750480800334
   ChildIds: 10413787997792657743
@@ -119,36 +119,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5837658692554861011
-  Name: "TW3_SpawnLocations"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW3_SpawnLocations"
-  }
-}
-Objects {
-  Id: 3189391084242011458
+  Id: 6265610613569901870
   Name: "TW3_Minimap"
   Transform {
     Location {
@@ -162,11 +133,11 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 7410120154681101658
+  ChildIds: 14736258701498450348
   ChildIds: 18039154145046572079
-  ChildIds: 12744065186663566720
+  ChildIds: 7724578382684045355
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -178,7 +149,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12744065186663566720
+  Id: 7724578382684045355
   Name: "UI Container"
   Transform {
     Location {
@@ -195,8 +166,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3189391084242011458
-  ChildIds: 6503213082096643656
+  ParentId: 6265610613569901870
+  ChildIds: 4020400121574120187
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -229,7 +200,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6503213082096643656
+  Id: 4020400121574120187
   Name: "UI Panel"
   Transform {
     Location {
@@ -246,7 +217,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12744065186663566720
+  ParentId: 7724578382684045355
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -297,7 +268,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3189391084242011458
+  ParentId: 6265610613569901870
   ChildIds: 13540110980892133100
   ChildIds: 14793029108670987197
   ChildIds: 4973943165602427089
@@ -532,7 +503,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7410120154681101658
+  Id: 14736258701498450348
   Name: "Minimap"
   Transform {
     Location {
@@ -545,12 +516,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3189391084242011458
+  ParentId: 6265610613569901870
   UnregisteredParameters {
     Overrides {
       Name: "cs:UIPanel"
       ObjectReference {
-        SelfId: 6503213082096643656
+        SelfId: 4020400121574120187
       }
     }
     Overrides {
@@ -572,8 +543,32 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:MinimapLightTank"
+      AssetReference {
+        Id: 4898046870851823771
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapMediumTank"
+      AssetReference {
+        Id: 4351123893152259348
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapHeavyTank"
+      AssetReference {
+        Id: 8997108390670293102
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapDestroyerTank"
+      AssetReference {
+        Id: 18197261912546029751
+      }
+    }
+    Overrides {
       Name: "cs:GradientHeight"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:ColorLow"
@@ -647,6 +642,35 @@ Objects {
     ScriptAsset {
       Id: 6558469326922634318
     }
+  }
+}
+Objects {
+  Id: 5837658692554861011
+  Name: "TW3_SpawnLocations"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW3_SpawnLocations"
   }
 }
 Objects {
