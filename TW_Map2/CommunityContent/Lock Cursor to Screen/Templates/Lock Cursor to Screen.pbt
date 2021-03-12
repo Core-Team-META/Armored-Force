@@ -23,6 +23,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         NetworkContext {
         }
       }
@@ -47,6 +50,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 963903306325518875
@@ -62,6 +68,6 @@ Assets {
   Marketplace {
     Description: "This CC will ensure that your cursor does not leave the screen/game while you are playing as to make sure it does not go to a secondary monitor."
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
   DirectlyPublished: true
 }
