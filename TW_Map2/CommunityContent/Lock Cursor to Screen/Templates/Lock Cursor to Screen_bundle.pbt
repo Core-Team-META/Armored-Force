@@ -19,6 +19,9 @@ Assets {
             Z: 1
           }
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           BundleDummy {
             ReferencedAssets {
@@ -40,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "This CC will ensure that your cursor does not leave the screen/game while you are playing as to make sure it does not go to a secondary monitor."
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
 }

@@ -23,6 +23,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 300
           Height: 100
@@ -69,6 +72,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 250
           Height: 45
@@ -112,6 +118,8 @@ Assets {
             ClickMode {
               Value: "mc:ebuttonclickmode:default"
             }
+            Font {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -147,6 +155,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 200
@@ -200,5 +211,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 77
+  SerializationVersion: 78
 }

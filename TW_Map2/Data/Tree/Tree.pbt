@@ -31,6 +31,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   Folder {
   }
 }
@@ -55,6 +58,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "Ryan"
@@ -76,6 +82,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -103,6 +112,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "Marcela"
@@ -129,6 +141,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
@@ -153,6 +168,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
   }
@@ -182,6 +200,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
     RenderTransformPivot {
@@ -229,6 +250,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
     Width: 507
@@ -285,6 +309,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsGroup: true
   }
@@ -335,6 +362,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 16060214784296519809
@@ -343,7 +373,6 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -373,6 +402,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "Elevated"
@@ -398,6 +430,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -426,6 +461,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "River"
@@ -452,6 +490,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -480,6 +521,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "RockLow"
@@ -506,6 +550,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -534,6 +581,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -652,6 +702,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 6558469326922634318
@@ -678,6 +731,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
   }
   Terrain {
     Material {
@@ -760,6 +816,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   Terrain {
     Material {
       Id: 6771354921148884007
@@ -840,6 +899,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW2_SpawnPoints"
@@ -856,6 +918,9 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 6253506126193878080
