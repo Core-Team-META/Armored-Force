@@ -1,13 +1,13 @@
 Assets {
-  Id: 10133690637885599774
-  Name: "MinimapPlayer"
+  Id: 4898046870851823771
+  Name: "MinimapLightTank"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 13851484905233708050
+      RootId: 15228291421143959329
       Objects {
-        Id: 13851484905233708050
-        Name: "MinimapPlayer"
+        Id: 15228291421143959329
+        Name: "MinimapLightTank"
         Transform {
           Scale {
             X: 1
@@ -15,12 +15,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 5272210985794039454
-        ChildIds: 5759336645188000755
-        ChildIds: 14185852490345710174
-        ChildIds: 8263424786566123171
-        ChildIds: 13442765102198107866
+        ParentId: 17726579883415076128
+        ChildIds: 15411820404810878453
+        ChildIds: 18125417522773158154
+        ChildIds: 1190219989800834672
+        ChildIds: 6940088660373488440
+        ChildIds: 800016184465468878
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -33,8 +33,8 @@ Assets {
         Control {
           Width: 17
           Height: 17
-          UIX: 100
-          UIY: 840
+          UIX: 1065
+          UIY: 640
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -57,7 +57,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5272210985794039454
+        Id: 15411820404810878453
         Name: "MinimapPlayer (client)"
         Transform {
           Location {
@@ -70,42 +70,42 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13851484905233708050
+        ParentId: 15228291421143959329
         UnregisteredParameters {
           Overrides {
             Name: "cs:CircleLocalPlayerBG"
             ObjectReference {
-              SubObjectId: 5759336645188000755
+              SubObjectId: 18125417522773158154
             }
           }
           Overrides {
             Name: "cs:Circle"
             ObjectReference {
-              SubObjectId: 14185852490345710174
+              SubObjectId: 1190219989800834672
             }
           }
           Overrides {
             Name: "cs:Name"
             ObjectReference {
-              SubObjectId: 10271051954244103068
+              SubObjectId: 7909694541562055517
             }
           }
           Overrides {
             Name: "cs:Dead"
             ObjectReference {
-              SubObjectId: 8263424786566123171
+              SubObjectId: 6940088660373488440
             }
           }
           Overrides {
             Name: "cs:DirectionRoot"
             ObjectReference {
-              SubObjectId: 13442765102198107866
+              SubObjectId: 800016184465468878
             }
           }
           Overrides {
             Name: "cs:Arrow"
             ObjectReference {
-              SubObjectId: 4774958590898561506
+              SubObjectId: 10334628400905292372
             }
           }
         }
@@ -125,7 +125,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5759336645188000755
+        Id: 18125417522773158154
         Name: "Circle - Local Player BG"
         Transform {
           Location {
@@ -142,7 +142,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13851484905233708050
+        ParentId: 15228291421143959329
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -164,13 +164,11 @@ Assets {
           }
           Image {
             Brush {
-              Id: 17476121550048471155
+              Id: 14038508103508472964
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
+              R: 0.200000048
+              G: 0.0834437311
             }
             TeamSettings {
               UseTeamColor: true
@@ -191,8 +189,8 @@ Assets {
         }
       }
       Objects {
-        Id: 14185852490345710174
-        Name: "Circle"
+        Id: 1190219989800834672
+        Name: "Symbol"
         Transform {
           Location {
             X: 4220
@@ -208,8 +206,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13851484905233708050
-        ChildIds: 10271051954244103068
+        ParentId: 15228291421143959329
+        ChildIds: 7909694541562055517
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -231,11 +229,11 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 17476121550048471155
+              Id: 14038508103508472964
             }
             Color {
-              G: 0.475363851
-              B: 0.74
+              G: 0.0927152
+              B: 0.139999986
               A: 1
             }
             TeamSettings {
@@ -257,7 +255,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10271051954244103068
+        Id: 7909694541562055517
         Name: "Name"
         Transform {
           Location {
@@ -274,7 +272,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14185852490345710174
+        ParentId: 1190219989800834672
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -294,7 +292,6 @@ Assets {
             }
           }
           Text {
-            Label: "A"
             Color {
               R: 1
               G: 1
@@ -324,7 +321,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8263424786566123171
+        Id: 6940088660373488440
         Name: "Dead"
         Transform {
           Location {
@@ -341,7 +338,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13851484905233708050
+        ParentId: 15228291421143959329
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -391,7 +388,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13442765102198107866
+        Id: 800016184465468878
         Name: "DirectionRoot"
         Transform {
           Location {
@@ -408,8 +405,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13851484905233708050
-        ChildIds: 14434929360613130593
+        ParentId: 15228291421143959329
+        ChildIds: 3189230783323918754
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -427,6 +424,8 @@ Assets {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
+          UseParentHeight: true
           Panel {
           }
           AnchorLayout {
@@ -444,7 +443,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14434929360613130593
+        Id: 3189230783323918754
         Name: "Rotation Offset"
         Transform {
           Location {
@@ -457,8 +456,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13442765102198107866
-        ChildIds: 4774958590898561506
+        ParentId: 800016184465468878
+        ChildIds: 10334628400905292372
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -496,7 +495,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4774958590898561506
+        Id: 10334628400905292372
         Name: "Arrow"
         Transform {
           Location {
@@ -513,12 +512,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14434929360613130593
+        ParentId: 3189230783323918754
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -537,9 +536,8 @@ Assets {
               Id: 18056787318024051379
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.200000048
+              G: 0.0834437311
               A: 1
             }
             TeamSettings {
@@ -561,12 +559,12 @@ Assets {
       }
     }
     Assets {
-      Id: 17476121550048471155
-      Name: "Center Circle 001"
+      Id: 14038508103508472964
+      Name: "Center Tri 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "CenterCircle_001"
+        AssetId: "CenterTri_001"
       }
     }
     Assets {

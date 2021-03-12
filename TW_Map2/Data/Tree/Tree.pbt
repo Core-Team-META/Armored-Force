@@ -631,6 +631,30 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:MinimapLightTank"
+      AssetReference {
+        Id: 4898046870851823771
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapMediumTank"
+      AssetReference {
+        Id: 4351123893152259348
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapHeavyTank"
+      AssetReference {
+        Id: 8997108390670293102
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapDestroyerTank"
+      AssetReference {
+        Id: 18197261912546029751
+      }
+    }
+    Overrides {
       Name: "cs:GradientHeight"
       Bool: true
     }

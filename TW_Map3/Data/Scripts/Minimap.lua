@@ -18,7 +18,13 @@ local ROOT = script.parent
 local MAP_PANEL = script:GetCustomProperty("UIPanel"):WaitForObject()
 local MAP_PIECE_TEMPLATE = script:GetCustomProperty("MinimapPiece")
 local LABEL_TEMPLATE = script:GetCustomProperty("MinimapLabel")
+
 local PLAYER_TEMPLATE = script:GetCustomProperty("MinimapPlayer")
+local LIGHT_TANK_TEMPLATE = script:GetCustomProperty("MinimapLightTank")
+local MEDIUM_TANK_TEMPLATE = script:GetCustomProperty("MinimapMediumTank")
+local HEAVY_TANK_TEMPLATE = script:GetCustomProperty("MinimapHeavyTank")
+local DESTROYER_TANK_TEMPLATE = script:GetCustomProperty("MinimapDestroyerTank")
+
 local GRADIENT_HEIGHT = script:GetCustomProperty("GradientHeight")
 local COLOR_LOW = script:GetCustomProperty("ColorLow")
 local COLOR_HIGH = script:GetCustomProperty("ColorHigh")
@@ -184,9 +190,98 @@ function Tick()
 	end
 end
 
+function GetIndicatorType(player)
+
+	local tank = nil
+	
+	for _, e in ipairs(player:GetEquipment()) do
+		
+		if string.find(e.name, "TANK_V") then
+			
+			tank = e
+				
+			break
+				
+		end
+			
+	end
+	
+	player.clientUserData.minimapType = nil
+	
+	if tank then
+	
+		local type = tank:GetCustomProperty("TankType")
+		
+		player.clientUserData.minimapType = type
+		
+		if type == "LIGHT" then
+		
+			return LIGHT_TANK_TEMPLATE
+			
+		elseif type == "MEDIUM" then
+		
+			return MEDIUM_TANK_TEMPLATE
+		
+		elseif type == "HEAVY" then
+		
+			return HEAVY_TANK_TEMPLATE
+			
+		elseif type == "DESTROYER" then
+		
+			return DESTROYER_TANK_TEMPLATE
+		
+		end 
+		
+		
+	end
+	
+	warn("COULD NOT FIND TANK TYPE FOR " .. player.name .. " : " .. tostring(player.clientUserData.minimapType))
+	
+	return PLAYER_TEMPLATE
+
+
+end
+
+function CheckIndicatorType(player)
+
+	local tank = nil
+
+	for _, e in ipairs(player:GetEquipment()) do
+		
+		if string.find(e.name, "TANK_V") then
+			
+			tank = e
+				
+			break
+				
+		end
+			
+	end
+	
+	if tank then
+	
+		local type = tank:GetCustomProperty("TankType")
+
+		if player.clientUserData.minimapType == type then
+		
+			return true
+			
+		else 
+		
+			return false
+						
+		end
+		
+	end
+	
+	return true
+	
+end
+
 function GetIndicatorForPlayer(player)
 	-- Return already created indicator
-	if player.clientUserData.minimap then
+	
+	if player.clientUserData.minimap and CheckIndicatorType(player) then
 		-- Give the UI script a reference to player (probably happens on second update tick)
 		if (not player.clientUserData.minimapScript) then
 			local minimapScript = player.clientUserData.minimap:FindDescendantByType("Script")
@@ -197,8 +292,16 @@ function GetIndicatorForPlayer(player)
 		end
 		return player.clientUserData.minimap
 	end
+	
+	if Object.IsValid(player.clientUserData.minimap) then
+	
+		player.clientUserData.minimap:Destroy()
+		player.clientUserData.minimapScript = nil
+		
+	end
+	
 	-- Spawn new indicator for this player
-	local minimapPlayer = World.SpawnAsset(PLAYER_TEMPLATE, {parent = MAP_PANEL})
+	local minimapPlayer = World.SpawnAsset(GetIndicatorType(player), {parent = MAP_PANEL})
 	player.clientUserData.minimap = minimapPlayer
 	return minimapPlayer
 end
