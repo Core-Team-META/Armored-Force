@@ -18,6 +18,7 @@ local ROOT = script.parent
 local MAP_PANEL = script:GetCustomProperty("UIPanel"):WaitForObject()
 local MAP_PIECE_TEMPLATE = script:GetCustomProperty("MinimapPiece")
 local LABEL_TEMPLATE = script:GetCustomProperty("MinimapLabel")
+local OBJECTIVE_PIECE_TEMPLATE = script:GetCustomProperty("ObjectivePiece")
 
 local PLAYER_TEMPLATE = script:GetCustomProperty("MinimapPlayer")
 local LIGHT_TANK_TEMPLATE = script:GetCustomProperty("MinimapLightTank")
@@ -64,6 +65,10 @@ local boundsTop
 local boundsBottom
 local boundsHigh
 local boundsLow
+
+local TeamBasesObjectives = {}
+local BaseObjectiveObjects = World.FindObjectByName("GAMESTATE_TeamBasesServerObjects")
+
 for _,shape in ipairs(worldShapes) do
 	shape.isEnabled = false
 	
@@ -153,6 +158,46 @@ for _,shape in ipairs(worldShapes) do
 	end
 end
 
+-- Team Bases Game Mode Objectives
+for _, objective in ipairs(BaseObjectiveObjects:GetChildren()) do
+
+	local objectiveSet = {}
+	
+	objectiveSet[1] = World.SpawnAsset(OBJECTIVE_PIECE_TEMPLATE, {parent = MAP_PANEL})
+
+	local center = objective:GetChildren()[1]	
+	local edge = objective:GetChildren()[2]
+	local pos = center:GetWorldPosition()
+	
+	local name = objectiveSet[1]:GetCustomProperty("ObjectiveName"):WaitForObject()
+	name.text = string.sub(center.name, 1, 1)
+	
+	local radius = (center:GetWorldPosition() - edge:GetWorldPosition()).size
+	
+	objectiveSet[1].width = CoreMath.Round(radius * 2 * scaleX)
+	objectiveSet[1].height = objectiveSet[1].width
+	
+	objectiveSet[1].x = (pos.x - boundsLeft) * scaleX
+	objectiveSet[1].y = (pos.y - boundsTop) * scaleY
+	
+	if name.text == "A" then
+	
+		objectiveSet[1].team = 1
+		
+	elseif  name.text == "B" then
+	
+		objectiveSet[1].team = 2
+		
+	end
+	
+	objectiveSet[2] = objective:FindDescendantByName(string.sub(center.name, 1, 1) .. "PointVisual")
+	
+	objectiveSet[1].visibility = objectiveSet[2].visibility
+	
+	table.insert(TeamBasesObjectives, objectiveSet)	
+
+end
+
 -- Labels
 for _,text in ipairs(worldTexts) do
 	text.isEnabled = false
@@ -187,6 +232,12 @@ function Tick()
 		else
 			indicator.visibility = Visibility.FORCE_OFF
 		end
+	end
+	
+	for _, objective in ipairs(TeamBasesObjectives) do
+	
+		objective[1].visibility = objective[2].visibility
+		
 	end
 end
 

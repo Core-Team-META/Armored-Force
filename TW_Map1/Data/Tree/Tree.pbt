@@ -1093,6 +1093,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ObjectivePiece"
+      AssetReference {
+        Id: 9349624817772474064
+      }
+    }
+    Overrides {
       Name: "cs:GradientHeight"
       Bool: true
     }
