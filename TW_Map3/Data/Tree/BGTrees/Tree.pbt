@@ -160,6 +160,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -200,6 +203,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -210,7 +216,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -255,6 +260,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -265,7 +273,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -310,6 +317,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -320,7 +330,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -365,6 +374,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -375,7 +387,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -420,6 +431,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -430,7 +444,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -475,6 +488,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -485,7 +501,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -530,6 +545,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -540,7 +558,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -585,6 +602,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -595,7 +615,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -640,6 +659,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -650,7 +672,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -695,6 +716,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -705,7 +729,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -750,6 +773,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -760,7 +786,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -805,6 +830,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -815,7 +843,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -860,6 +887,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -870,7 +900,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -915,6 +944,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -925,7 +957,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -970,6 +1001,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -980,7 +1014,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1025,6 +1058,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1035,7 +1071,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1080,6 +1115,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1090,7 +1128,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1135,6 +1172,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1145,7 +1185,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1190,6 +1229,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1200,7 +1242,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1245,6 +1286,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1255,7 +1299,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1300,6 +1343,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1310,7 +1356,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1355,6 +1400,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1365,7 +1413,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1410,6 +1457,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1420,7 +1470,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1465,6 +1514,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1475,7 +1527,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1520,6 +1571,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1530,7 +1584,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1575,6 +1628,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1585,7 +1641,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1630,6 +1685,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1640,7 +1698,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1685,6 +1742,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1695,7 +1755,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1740,6 +1799,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1750,7 +1812,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1795,6 +1856,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1805,7 +1869,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1850,6 +1913,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1860,7 +1926,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1905,6 +1970,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1915,7 +1983,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -1960,6 +2027,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -1970,7 +2040,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2015,6 +2084,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2025,7 +2097,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2070,6 +2141,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2080,7 +2154,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2125,6 +2198,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2135,7 +2211,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2180,6 +2255,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2190,7 +2268,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2235,6 +2312,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2245,7 +2325,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2290,6 +2369,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2300,7 +2382,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2345,6 +2426,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2355,7 +2439,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2400,6 +2483,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2410,7 +2496,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2455,6 +2540,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2465,7 +2553,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2510,6 +2597,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2520,7 +2610,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2565,6 +2654,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2575,7 +2667,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2620,6 +2711,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2630,7 +2724,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2675,6 +2768,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2685,7 +2781,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2730,6 +2825,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2740,7 +2838,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2785,6 +2882,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2795,7 +2895,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2840,6 +2939,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2850,7 +2952,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2895,6 +2996,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2905,7 +3009,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -2950,6 +3053,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -2960,7 +3066,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3005,6 +3110,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3015,7 +3123,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3060,6 +3167,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3070,7 +3180,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3115,6 +3224,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3125,7 +3237,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3170,6 +3281,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3180,7 +3294,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3225,6 +3338,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3235,7 +3351,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3280,6 +3395,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3290,7 +3408,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3335,6 +3452,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3345,7 +3465,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3390,6 +3509,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3400,7 +3522,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3445,6 +3566,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3455,7 +3579,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3500,6 +3623,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3510,7 +3636,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3555,6 +3680,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3565,7 +3693,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3610,6 +3737,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3620,7 +3750,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3665,6 +3794,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3675,7 +3807,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3720,6 +3851,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3730,7 +3864,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3775,6 +3908,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3785,7 +3921,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3830,6 +3965,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3840,7 +3978,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3885,6 +4022,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3895,7 +4035,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3940,6 +4079,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -3950,7 +4092,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -3995,6 +4136,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4005,7 +4149,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4050,6 +4193,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4060,7 +4206,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4105,6 +4250,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4115,7 +4263,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4160,6 +4307,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4170,7 +4320,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4215,6 +4364,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4225,7 +4377,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4270,6 +4421,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4280,7 +4434,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4325,6 +4478,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4335,7 +4491,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4380,6 +4535,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4390,7 +4548,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4435,6 +4592,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4445,7 +4605,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4490,6 +4649,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4500,7 +4662,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4545,6 +4706,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4555,7 +4719,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4600,6 +4763,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4610,7 +4776,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4655,6 +4820,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4665,7 +4833,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4710,6 +4877,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4720,7 +4890,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4765,6 +4934,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4775,7 +4947,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4820,6 +4991,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4830,7 +5004,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4875,6 +5048,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4885,7 +5061,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4930,6 +5105,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4940,7 +5118,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -4985,6 +5162,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -4995,7 +5175,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5040,6 +5219,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5050,7 +5232,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5095,6 +5276,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5105,7 +5289,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5150,6 +5333,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5160,7 +5346,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5205,6 +5390,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5215,7 +5403,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5260,6 +5447,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5270,7 +5460,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5315,6 +5504,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5325,7 +5517,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5370,6 +5561,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5380,7 +5574,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5425,6 +5618,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5435,7 +5631,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5480,6 +5675,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5490,7 +5688,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5535,6 +5732,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5545,7 +5745,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5590,6 +5789,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5600,7 +5802,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5645,6 +5846,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5655,7 +5859,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5700,6 +5903,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5710,7 +5916,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5755,6 +5960,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5765,7 +5973,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5810,6 +6017,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5820,7 +6030,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5865,6 +6074,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5875,7 +6087,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5920,6 +6131,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5930,7 +6144,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -5975,6 +6188,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -5985,7 +6201,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6030,6 +6245,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6040,7 +6258,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6085,6 +6302,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6095,7 +6315,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6140,6 +6359,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6150,7 +6372,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6195,6 +6416,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6205,7 +6429,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6250,6 +6473,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6260,7 +6486,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6305,6 +6530,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6315,7 +6543,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6360,6 +6587,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6370,7 +6600,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6412,6 +6641,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6422,7 +6654,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6467,6 +6698,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6477,7 +6711,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6522,6 +6755,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6532,7 +6768,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6577,6 +6812,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6587,7 +6825,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6632,6 +6869,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6642,7 +6882,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6687,6 +6926,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6697,7 +6939,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6742,6 +6983,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6752,7 +6996,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6797,6 +7040,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6807,7 +7053,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6851,6 +7096,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6861,7 +7109,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6905,6 +7152,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6915,7 +7165,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -6959,6 +7208,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -6969,7 +7221,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7012,6 +7263,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7022,7 +7276,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7067,6 +7320,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7077,7 +7333,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7122,6 +7377,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7132,7 +7390,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7177,6 +7434,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7187,7 +7447,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7232,6 +7491,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7242,7 +7504,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7287,6 +7548,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7297,7 +7561,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7342,6 +7605,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7352,7 +7618,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7397,6 +7662,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7407,7 +7675,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7452,6 +7719,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7462,7 +7732,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7507,6 +7776,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7517,7 +7789,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7562,6 +7833,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7572,7 +7846,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7617,6 +7890,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7627,7 +7903,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7742,6 +8017,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -7782,6 +8060,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7792,7 +8073,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7837,6 +8117,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7847,7 +8130,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7892,6 +8174,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7902,7 +8187,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -7947,6 +8231,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -7957,7 +8244,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8002,6 +8288,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8012,7 +8301,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8057,6 +8345,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8067,7 +8358,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8111,6 +8401,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8121,7 +8414,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8166,6 +8458,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8176,7 +8471,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8221,6 +8515,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8231,7 +8528,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8276,6 +8572,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8286,7 +8585,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8331,6 +8629,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8341,7 +8642,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8386,6 +8686,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8396,7 +8699,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8441,6 +8743,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8451,7 +8756,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8496,6 +8800,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8506,7 +8813,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8551,6 +8857,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8561,7 +8870,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8606,6 +8914,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8616,7 +8927,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8661,6 +8971,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8671,7 +8984,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8716,6 +9028,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8726,7 +9041,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8771,6 +9085,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8781,7 +9098,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8826,6 +9142,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8836,7 +9155,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8881,6 +9199,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8891,7 +9212,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8936,6 +9256,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -8946,7 +9269,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -8991,6 +9313,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9001,7 +9326,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9046,6 +9370,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9056,7 +9383,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9101,6 +9427,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9111,7 +9440,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9156,6 +9484,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9166,7 +9497,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9211,6 +9541,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9221,7 +9554,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9266,6 +9598,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9276,7 +9611,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9321,6 +9655,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9331,7 +9668,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9376,6 +9712,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9386,7 +9725,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9431,6 +9769,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9441,7 +9782,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9486,6 +9826,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9496,7 +9839,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9541,6 +9883,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9551,7 +9896,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9596,6 +9940,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9606,7 +9953,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9651,6 +9997,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9661,7 +10010,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9706,6 +10054,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9716,7 +10067,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9761,6 +10111,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9771,7 +10124,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9816,6 +10168,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9826,7 +10181,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9871,6 +10225,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9881,7 +10238,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9926,6 +10282,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9936,7 +10295,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -9981,6 +10339,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -9991,7 +10352,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10036,6 +10396,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10046,7 +10409,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10091,6 +10453,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10101,7 +10466,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10146,6 +10510,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10156,7 +10523,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10201,6 +10567,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10211,7 +10580,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10256,6 +10624,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10266,7 +10637,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10311,6 +10681,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10321,7 +10694,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10366,6 +10738,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10376,7 +10751,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10421,6 +10795,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10431,7 +10808,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10476,6 +10852,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10486,7 +10865,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10531,6 +10909,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10541,7 +10922,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10586,6 +10966,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10596,7 +10979,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10641,6 +11023,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10651,7 +11036,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10696,6 +11080,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10706,7 +11093,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10751,6 +11137,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10761,7 +11150,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10806,6 +11194,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10816,7 +11207,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10861,6 +11251,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10871,7 +11264,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10916,6 +11308,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10926,7 +11321,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -10971,6 +11365,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -10981,7 +11378,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11026,6 +11422,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11036,7 +11435,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11081,6 +11479,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11091,7 +11492,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11136,6 +11536,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11146,7 +11549,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11191,6 +11593,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11201,7 +11606,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11246,6 +11650,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11256,7 +11663,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11301,6 +11707,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11311,7 +11720,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11356,6 +11764,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11366,7 +11777,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11411,6 +11821,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11421,7 +11834,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11466,6 +11878,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11476,7 +11891,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11521,6 +11935,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11531,7 +11948,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11576,6 +11992,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11586,7 +12005,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11631,6 +12049,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11641,7 +12062,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11686,6 +12106,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11696,7 +12119,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11741,6 +12163,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11751,7 +12176,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11796,6 +12220,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11806,7 +12233,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11851,6 +12277,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11861,7 +12290,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11906,6 +12334,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11916,7 +12347,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -11961,6 +12391,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -11971,7 +12404,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12016,6 +12448,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12026,7 +12461,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12071,6 +12505,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12081,7 +12518,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12126,6 +12562,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12136,7 +12575,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12181,6 +12619,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12191,7 +12632,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12287,6 +12727,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -12327,6 +12770,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12337,7 +12783,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12382,6 +12827,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12392,7 +12840,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12437,6 +12884,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12447,7 +12897,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12492,6 +12941,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12502,7 +12954,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12547,6 +12998,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12557,7 +13011,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12602,6 +13055,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12612,7 +13068,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12657,6 +13112,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12667,7 +13125,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12712,6 +13169,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12722,7 +13182,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12767,6 +13226,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12777,7 +13239,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12822,6 +13283,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12832,7 +13296,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12877,6 +13340,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12887,7 +13353,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12932,6 +13397,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12942,7 +13410,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -12987,6 +13454,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -12997,7 +13467,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13042,6 +13511,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13052,7 +13524,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13097,6 +13568,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13107,7 +13581,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13152,6 +13625,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13162,7 +13638,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13207,6 +13682,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13217,7 +13695,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13262,6 +13739,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13272,7 +13752,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13317,6 +13796,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13327,7 +13809,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13372,6 +13853,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13382,7 +13866,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13427,6 +13910,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13437,7 +13923,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13482,6 +13967,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13492,7 +13980,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13537,6 +14024,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13547,7 +14037,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13592,6 +14081,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13602,7 +14094,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13647,6 +14138,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13657,7 +14151,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13702,6 +14195,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13712,7 +14208,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13757,6 +14252,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13767,7 +14265,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13812,6 +14309,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13822,7 +14322,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13867,6 +14366,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13877,7 +14379,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13922,6 +14423,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13932,7 +14436,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -13977,6 +14480,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -13987,7 +14493,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14032,6 +14537,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14042,7 +14550,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14087,6 +14594,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14097,7 +14607,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14142,6 +14651,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14152,7 +14664,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14197,6 +14708,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14207,7 +14721,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14252,6 +14765,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14262,7 +14778,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14307,6 +14822,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14317,7 +14835,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14361,6 +14878,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14371,7 +14891,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14416,6 +14935,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14426,7 +14948,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14471,6 +14992,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14481,7 +15005,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14526,6 +15049,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14536,7 +15062,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14581,6 +15106,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14591,7 +15119,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14636,6 +15163,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14646,7 +15176,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14691,6 +15220,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14701,7 +15233,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14746,6 +15277,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14756,7 +15290,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14801,6 +15334,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14811,7 +15347,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14856,6 +15391,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14866,7 +15404,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14911,6 +15448,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14921,7 +15461,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -14966,6 +15505,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -14976,7 +15518,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15021,6 +15562,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15031,7 +15575,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15076,6 +15619,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15086,7 +15632,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15131,6 +15676,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15141,7 +15689,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15186,6 +15733,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15196,7 +15746,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15241,6 +15790,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15251,7 +15803,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15296,6 +15847,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15306,7 +15860,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15351,6 +15904,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15361,7 +15917,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15406,6 +15961,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15416,7 +15974,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15461,6 +16018,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15471,7 +16031,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15516,6 +16075,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15526,7 +16088,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15571,6 +16132,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15581,7 +16145,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15626,6 +16189,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15636,7 +16202,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15681,6 +16246,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15691,7 +16259,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15791,6 +16358,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -15831,6 +16401,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15841,7 +16414,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15886,6 +16458,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15896,7 +16471,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15941,6 +16515,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -15951,7 +16528,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -15996,6 +16572,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16006,7 +16585,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16051,6 +16629,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16061,7 +16642,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16106,6 +16686,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16116,7 +16699,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16161,6 +16743,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16171,7 +16756,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16216,6 +16800,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16226,7 +16813,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16271,6 +16857,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16281,7 +16870,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16326,6 +16914,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16336,7 +16927,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16381,6 +16971,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16391,7 +16984,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16436,6 +17028,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16446,7 +17041,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16491,6 +17085,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16501,7 +17098,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16546,6 +17142,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16556,7 +17155,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16601,6 +17199,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16611,7 +17212,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16656,6 +17256,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16666,7 +17269,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16711,6 +17313,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16721,7 +17326,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16766,6 +17370,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16776,7 +17383,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16821,6 +17427,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16831,7 +17440,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16876,6 +17484,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16886,7 +17497,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16931,6 +17541,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16941,7 +17554,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -16986,6 +17598,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -16996,7 +17611,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17041,6 +17655,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17051,7 +17668,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17096,6 +17712,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17106,7 +17725,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17151,6 +17769,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17161,7 +17782,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17206,6 +17826,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17216,7 +17839,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17261,6 +17883,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17271,7 +17896,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17316,6 +17940,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17326,7 +17953,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17371,6 +17997,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17381,7 +18010,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17426,6 +18054,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17436,7 +18067,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17481,6 +18111,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17491,7 +18124,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17536,6 +18168,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17546,7 +18181,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17591,6 +18225,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17601,7 +18238,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17646,6 +18282,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17656,7 +18295,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17701,6 +18339,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17711,7 +18352,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17756,6 +18396,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17766,7 +18409,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17811,6 +18453,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17821,7 +18466,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17865,6 +18509,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17875,7 +18522,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17920,6 +18566,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17930,7 +18579,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -17975,6 +18623,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -17985,7 +18636,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18030,6 +18680,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18040,7 +18693,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18085,6 +18737,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18095,7 +18750,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18140,6 +18794,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18150,7 +18807,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18195,6 +18851,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18205,7 +18864,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18250,6 +18908,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18260,7 +18921,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18305,6 +18965,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18315,7 +18978,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18360,6 +19022,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18370,7 +19035,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18415,6 +19079,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18425,7 +19092,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18470,6 +19136,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18480,7 +19149,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18525,6 +19193,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18535,7 +19206,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18580,6 +19250,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18590,7 +19263,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18635,6 +19307,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18645,7 +19320,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18690,6 +19364,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18700,7 +19377,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18745,6 +19421,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18755,7 +19434,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18800,6 +19478,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18810,7 +19491,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18855,6 +19535,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18865,7 +19548,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18910,6 +19592,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18920,7 +19605,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -18965,6 +19649,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -18975,7 +19662,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19020,6 +19706,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19030,7 +19719,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19075,6 +19763,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19085,7 +19776,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19130,6 +19820,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19140,7 +19833,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19185,6 +19877,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19195,7 +19890,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19240,6 +19934,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19250,7 +19947,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19295,6 +19991,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19305,7 +20004,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19350,6 +20048,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19360,7 +20061,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19405,6 +20105,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19415,7 +20118,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19677,6 +20379,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -19717,6 +20422,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19727,7 +20435,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19772,6 +20479,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19782,7 +20492,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19827,6 +20536,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19837,7 +20549,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19882,6 +20593,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19892,7 +20606,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19937,6 +20650,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -19947,7 +20663,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -19992,6 +20707,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20002,7 +20720,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20047,6 +20764,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20057,7 +20777,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20102,6 +20821,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20112,7 +20834,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20157,6 +20878,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20167,7 +20891,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20212,6 +20935,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20222,7 +20948,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20267,6 +20992,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20277,7 +21005,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20322,6 +21049,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20332,7 +21062,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20377,6 +21106,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20387,7 +21119,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20432,6 +21163,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20442,7 +21176,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20487,6 +21220,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20497,7 +21233,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20542,6 +21277,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20552,7 +21290,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20597,6 +21334,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20607,7 +21347,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20652,6 +21391,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20662,7 +21404,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20707,6 +21448,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20717,7 +21461,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20762,6 +21505,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20772,7 +21518,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20817,6 +21562,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20827,7 +21575,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20872,6 +21619,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20882,7 +21632,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20927,6 +21676,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20937,7 +21689,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -20982,6 +21733,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -20992,7 +21746,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21037,6 +21790,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21047,7 +21803,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21092,6 +21847,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21102,7 +21860,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21147,6 +21904,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21157,7 +21917,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21202,6 +21961,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21212,7 +21974,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21257,6 +22018,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21267,7 +22031,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21312,6 +22075,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21322,7 +22088,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21367,6 +22132,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21377,7 +22145,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21422,6 +22189,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21432,7 +22202,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21477,6 +22246,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21487,7 +22259,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21532,6 +22303,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21542,7 +22316,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21587,6 +22360,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21597,7 +22373,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21642,6 +22417,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21652,7 +22430,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21697,6 +22474,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21707,7 +22487,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21752,6 +22531,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21762,7 +22544,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21807,6 +22588,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21817,7 +22601,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21862,6 +22645,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21872,7 +22658,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21917,6 +22702,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21927,7 +22715,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -21972,6 +22759,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -21982,7 +22772,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22027,6 +22816,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22037,7 +22829,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22082,6 +22873,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22092,7 +22886,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22137,6 +22930,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22147,7 +22943,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22192,6 +22987,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22202,7 +23000,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22247,6 +23044,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22257,7 +23057,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22302,6 +23101,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22312,7 +23114,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22357,6 +23158,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22367,7 +23171,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22412,6 +23215,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22422,7 +23228,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22467,6 +23272,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22477,7 +23285,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22522,6 +23329,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22532,7 +23342,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22577,6 +23386,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22587,7 +23399,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22632,6 +23443,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22642,7 +23456,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22687,6 +23500,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22697,7 +23513,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22742,6 +23557,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22752,7 +23570,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22797,6 +23614,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22807,7 +23627,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22852,6 +23671,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22862,7 +23684,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22907,6 +23728,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22917,7 +23741,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -22962,6 +23785,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -22972,7 +23798,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23017,6 +23842,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23027,7 +23855,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23072,6 +23899,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23082,7 +23912,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23127,6 +23956,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23137,7 +23969,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23182,6 +24013,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23192,7 +24026,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23237,6 +24070,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23247,7 +24083,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23292,6 +24127,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23302,7 +24140,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23347,6 +24184,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23357,7 +24197,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23402,6 +24241,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23412,7 +24254,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23457,6 +24298,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23467,7 +24311,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23512,6 +24355,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23522,7 +24368,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23567,6 +24412,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23577,7 +24425,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23622,6 +24469,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23632,7 +24482,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23677,6 +24526,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23687,7 +24539,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23732,6 +24583,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23742,7 +24596,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23787,6 +24640,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23797,7 +24653,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23842,6 +24697,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23852,7 +24710,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23897,6 +24754,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23907,7 +24767,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -23952,6 +24811,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -23962,7 +24824,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24007,6 +24868,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24017,7 +24881,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24062,6 +24925,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24072,7 +24938,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24117,6 +24982,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24127,7 +24995,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24172,6 +25039,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24182,7 +25052,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24227,6 +25096,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24237,7 +25109,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24282,6 +25153,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24292,7 +25166,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24337,6 +25210,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24347,7 +25223,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24392,6 +25267,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24402,7 +25280,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24447,6 +25324,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24457,7 +25337,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24502,6 +25381,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24512,7 +25394,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24557,6 +25438,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24567,7 +25451,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24612,6 +25495,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24622,7 +25508,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24667,6 +25552,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24677,7 +25565,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24722,6 +25609,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24732,7 +25622,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24777,6 +25666,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24787,7 +25679,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24832,6 +25723,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24842,7 +25736,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24887,6 +25780,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24897,7 +25793,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24942,6 +25837,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -24952,7 +25850,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -24997,6 +25894,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25007,7 +25907,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25052,6 +25951,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25062,7 +25964,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25107,6 +26008,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25117,7 +26021,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25162,6 +26065,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25172,7 +26078,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25217,6 +26122,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25227,7 +26135,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25272,6 +26179,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25282,7 +26192,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25327,6 +26236,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25337,7 +26249,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25382,6 +26293,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25392,7 +26306,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25437,6 +26350,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25447,7 +26363,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25492,6 +26407,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25502,7 +26420,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25547,6 +26464,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25557,7 +26477,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25602,6 +26521,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25612,7 +26534,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25657,6 +26578,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25667,7 +26591,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25712,6 +26635,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25722,7 +26648,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25767,6 +26692,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25777,7 +26705,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25822,6 +26749,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25832,7 +26762,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25877,6 +26806,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25887,7 +26819,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25932,6 +26863,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25942,7 +26876,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -25987,6 +26920,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -25997,7 +26933,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26042,6 +26977,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26052,7 +26990,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26097,6 +27034,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26107,7 +27047,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26152,6 +27091,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26162,7 +27104,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26207,6 +27148,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26217,7 +27161,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26262,6 +27205,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26272,7 +27218,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26317,6 +27262,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26327,7 +27275,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26372,6 +27319,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26382,7 +27332,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26427,6 +27376,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26437,7 +27389,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26482,6 +27433,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26492,7 +27446,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26537,6 +27490,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26547,7 +27503,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26592,6 +27547,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26602,7 +27560,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26647,6 +27604,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26657,7 +27617,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26702,6 +27661,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26712,7 +27674,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26757,6 +27718,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26767,7 +27731,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26812,6 +27775,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26822,7 +27788,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26867,6 +27832,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26877,7 +27845,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26922,6 +27889,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26932,7 +27902,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -26977,6 +27946,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -26987,7 +27959,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27032,6 +28003,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27042,7 +28016,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27087,6 +28060,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27097,7 +28073,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27142,6 +28117,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27152,7 +28130,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27197,6 +28174,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27207,7 +28187,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27252,6 +28231,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27262,7 +28244,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27307,6 +28288,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27317,7 +28301,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27362,6 +28345,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27372,7 +28358,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27417,6 +28402,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27427,7 +28415,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27472,6 +28459,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27482,7 +28472,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27527,6 +28516,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27537,7 +28529,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27582,6 +28573,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27592,7 +28586,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27637,6 +28630,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27647,7 +28643,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27692,6 +28687,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27702,7 +28700,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27747,6 +28744,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27757,7 +28757,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27802,6 +28801,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27812,7 +28814,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27856,6 +28857,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27866,7 +28870,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27911,6 +28914,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27921,7 +28927,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -27966,6 +28971,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -27976,7 +28984,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28021,6 +29028,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28031,7 +29041,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28076,6 +29085,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28086,7 +29098,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28131,6 +29142,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28141,7 +29155,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28186,6 +29199,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28196,7 +29212,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28241,6 +29256,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28251,7 +29269,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28296,6 +29313,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28306,7 +29326,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28351,6 +29370,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28361,7 +29383,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28406,6 +29427,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28416,7 +29440,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28461,6 +29484,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28471,7 +29497,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28516,6 +29541,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28526,7 +29554,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28571,6 +29598,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28581,7 +29611,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28626,6 +29655,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28636,7 +29668,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28681,6 +29712,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28691,7 +29725,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28736,6 +29769,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28746,7 +29782,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28791,6 +29826,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28801,7 +29839,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28846,6 +29883,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28856,7 +29896,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28901,6 +29940,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28911,7 +29953,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -28956,6 +29997,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -28966,7 +30010,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29011,6 +30054,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29021,7 +30067,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29066,6 +30111,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29076,7 +30124,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29121,6 +30168,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29131,7 +30181,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29176,6 +30225,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29186,7 +30238,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29231,6 +30282,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29241,7 +30295,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29286,6 +30339,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29296,7 +30352,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29341,6 +30396,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29351,7 +30409,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29396,6 +30453,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29406,7 +30466,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29451,6 +30510,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29461,7 +30523,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29506,6 +30567,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29516,7 +30580,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29561,6 +30624,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29571,7 +30637,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29616,6 +30681,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29626,7 +30694,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29671,6 +30738,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29681,7 +30751,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29726,6 +30795,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29736,7 +30808,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29780,6 +30851,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29790,7 +30864,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29835,6 +30908,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29845,7 +30921,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29890,6 +30965,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29900,7 +30978,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -29945,6 +31022,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -29955,7 +31035,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30000,6 +31079,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30010,7 +31092,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30055,6 +31136,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30065,7 +31149,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30110,6 +31193,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30120,7 +31206,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30165,6 +31250,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30175,7 +31263,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30220,6 +31307,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30230,7 +31320,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30275,6 +31364,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30285,7 +31377,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30330,6 +31421,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30340,7 +31434,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30385,6 +31478,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30395,7 +31491,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30440,6 +31535,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30450,7 +31548,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30495,6 +31592,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30505,7 +31605,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30550,6 +31649,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30560,7 +31662,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30605,6 +31706,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30615,7 +31719,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30660,6 +31763,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30670,7 +31776,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30715,6 +31820,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30725,7 +31833,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30770,6 +31877,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30780,7 +31890,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30825,6 +31934,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30835,7 +31947,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30880,6 +31991,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30890,7 +32004,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30935,6 +32048,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -30945,7 +32061,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -30990,6 +32105,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31000,7 +32118,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31045,6 +32162,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31055,7 +32175,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31100,6 +32219,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31110,7 +32232,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31155,6 +32276,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31165,7 +32289,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31210,6 +32333,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31220,7 +32346,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31265,6 +32390,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31275,7 +32403,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31320,6 +32447,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31330,7 +32460,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31375,6 +32504,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31385,7 +32517,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31430,6 +32561,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31440,7 +32574,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31485,6 +32618,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31495,7 +32631,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31540,6 +32675,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31550,7 +32688,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31595,6 +32732,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31605,7 +32745,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31650,6 +32789,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31660,7 +32802,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31705,6 +32846,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31715,7 +32859,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31760,6 +32903,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31770,7 +32916,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31815,6 +32960,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31825,7 +32973,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31870,6 +33017,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31880,7 +33030,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31925,6 +33074,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31935,7 +33087,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -31980,6 +33131,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -31990,7 +33144,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32035,6 +33188,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32045,7 +33201,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32090,6 +33245,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32100,7 +33258,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32145,6 +33302,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32155,7 +33315,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32200,6 +33359,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32210,7 +33372,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32321,6 +33482,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -32361,6 +33525,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32371,7 +33538,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32416,6 +33582,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32426,7 +33595,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32471,6 +33639,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32481,7 +33652,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32526,6 +33696,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32536,7 +33709,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32581,6 +33753,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32591,7 +33766,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32636,6 +33810,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32646,7 +33823,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32691,6 +33867,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32701,7 +33880,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32746,6 +33924,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32756,7 +33937,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32801,6 +33981,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32811,7 +33994,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32856,6 +34038,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32866,7 +34051,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32911,6 +34095,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32921,7 +34108,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -32966,6 +34152,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -32976,7 +34165,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33021,6 +34209,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33031,7 +34222,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33076,6 +34266,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33086,7 +34279,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33131,6 +34323,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33141,7 +34336,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33186,6 +34380,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33196,7 +34393,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33241,6 +34437,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33251,7 +34450,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33296,6 +34494,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33306,7 +34507,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33351,6 +34551,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33361,7 +34564,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33406,6 +34608,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33416,7 +34621,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33461,6 +34665,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33471,7 +34678,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33516,6 +34722,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33526,7 +34735,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33571,6 +34779,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33581,7 +34792,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33626,6 +34836,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33636,7 +34849,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33681,6 +34893,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33691,7 +34906,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33736,6 +34950,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33746,7 +34963,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33791,6 +35007,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33801,7 +35020,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33846,6 +35064,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33856,7 +35077,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33901,6 +35121,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33911,7 +35134,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -33956,6 +35178,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -33966,7 +35191,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34011,6 +35235,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34021,7 +35248,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34066,6 +35292,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34076,7 +35305,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34121,6 +35349,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34131,7 +35362,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34176,6 +35406,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34186,7 +35419,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34231,6 +35463,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34241,7 +35476,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34286,6 +35520,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34296,7 +35533,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34341,6 +35577,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34351,7 +35590,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34396,6 +35634,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34406,7 +35647,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34451,6 +35691,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34461,7 +35704,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34506,6 +35748,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34516,7 +35761,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34561,6 +35805,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34571,7 +35818,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34616,6 +35862,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34626,7 +35875,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34671,6 +35919,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34681,7 +35932,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34726,6 +35976,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34736,7 +35989,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34781,6 +36033,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34791,7 +36046,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34836,6 +36090,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34846,7 +36103,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34891,6 +36147,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34901,7 +36160,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -34946,6 +36204,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -34956,7 +36217,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35001,6 +36261,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35011,7 +36274,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35056,6 +36318,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35066,7 +36331,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35111,6 +36375,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35121,7 +36388,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35166,6 +36432,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35176,7 +36445,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35221,6 +36489,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35231,7 +36502,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35276,6 +36546,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35286,7 +36559,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35331,6 +36603,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35341,7 +36616,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35386,6 +36660,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35396,7 +36673,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35441,6 +36717,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35451,7 +36730,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35496,6 +36774,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35506,7 +36787,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35551,6 +36831,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35561,7 +36844,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35606,6 +36888,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35616,7 +36901,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35661,6 +36945,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35671,7 +36958,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35716,6 +37002,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35726,7 +37015,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35771,6 +37059,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35781,7 +37072,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35826,6 +37116,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35836,7 +37129,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35881,6 +37173,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35891,7 +37186,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35936,6 +37230,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -35946,7 +37243,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -35991,6 +37287,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36001,7 +37300,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36046,6 +37344,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36056,7 +37357,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36101,6 +37401,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36111,7 +37414,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36156,6 +37458,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36166,7 +37471,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36211,6 +37515,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36221,7 +37528,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36266,6 +37572,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36276,7 +37585,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36321,6 +37629,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36331,7 +37642,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36376,6 +37686,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36386,7 +37699,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36430,6 +37742,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36440,7 +37755,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36485,6 +37799,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36495,7 +37812,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36540,6 +37856,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36550,7 +37869,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36842,6 +38160,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -36882,6 +38203,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36892,7 +38216,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36937,6 +38260,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -36947,7 +38273,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -36992,6 +38317,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37002,7 +38330,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37047,6 +38374,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37057,7 +38387,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37102,6 +38431,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37112,7 +38444,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37157,6 +38488,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37167,7 +38501,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37212,6 +38545,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37222,7 +38558,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37267,6 +38602,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37277,7 +38615,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37322,6 +38659,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37332,7 +38672,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37377,6 +38716,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37387,7 +38729,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37432,6 +38773,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37442,7 +38786,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37487,6 +38830,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37497,7 +38843,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37542,6 +38887,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37552,7 +38900,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37597,6 +38944,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37607,7 +38957,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37652,6 +39001,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37662,7 +39014,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37707,6 +39058,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37717,7 +39071,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37762,6 +39115,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37772,7 +39128,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37817,6 +39172,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37827,7 +39185,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37872,6 +39229,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37882,7 +39242,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37927,6 +39286,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37937,7 +39299,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -37982,6 +39343,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -37992,7 +39356,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38037,6 +39400,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38047,7 +39413,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38092,6 +39457,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38102,7 +39470,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38147,6 +39514,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38157,7 +39527,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38202,6 +39571,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38212,7 +39584,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38257,6 +39628,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38267,7 +39641,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38311,6 +39684,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38321,7 +39697,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38365,6 +39740,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38375,7 +39753,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38419,6 +39796,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38429,7 +39809,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38473,6 +39852,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38483,7 +39865,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38527,6 +39908,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38537,7 +39921,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38581,6 +39964,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38591,7 +39977,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38635,6 +40020,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38645,7 +40033,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38689,6 +40076,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38699,7 +40089,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38743,6 +40132,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38753,7 +40145,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38797,6 +40188,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38807,7 +40201,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38851,6 +40244,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38861,7 +40257,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38905,6 +40300,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38915,7 +40313,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -38959,6 +40356,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -38969,7 +40369,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39013,6 +40412,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39023,7 +40425,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39067,6 +40468,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39077,7 +40481,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39121,6 +40524,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39131,7 +40537,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39175,6 +40580,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39185,7 +40593,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39229,6 +40636,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39239,7 +40649,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39283,6 +40692,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39293,7 +40705,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39338,6 +40749,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39348,7 +40762,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39393,6 +40806,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39403,7 +40819,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39448,6 +40863,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39458,7 +40876,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39503,6 +40920,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39513,7 +40933,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39558,6 +40977,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39568,7 +40990,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39613,6 +41034,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39623,7 +41047,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39668,6 +41091,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39678,7 +41104,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39723,6 +41148,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39733,7 +41161,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39778,6 +41205,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39788,7 +41218,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39833,6 +41262,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39843,7 +41275,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39888,6 +41319,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39898,7 +41332,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39943,6 +41376,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -39953,7 +41389,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -39998,6 +41433,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40008,7 +41446,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40053,6 +41490,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40063,7 +41503,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40108,6 +41547,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40118,7 +41560,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40163,6 +41604,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40173,7 +41617,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40218,6 +41661,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40228,7 +41674,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40273,6 +41718,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40283,7 +41731,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40328,6 +41775,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40338,7 +41788,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40383,6 +41832,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40393,7 +41845,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40438,6 +41889,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40448,7 +41902,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40493,6 +41946,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40503,7 +41959,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40548,6 +42003,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40558,7 +42016,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40603,6 +42060,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40613,7 +42073,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40658,6 +42117,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40668,7 +42130,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40713,6 +42174,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40723,7 +42187,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40768,6 +42231,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40778,7 +42244,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40823,6 +42288,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40833,7 +42301,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40878,6 +42345,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40888,7 +42358,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40933,6 +42402,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40943,7 +42415,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -40988,6 +42459,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -40998,7 +42472,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41043,6 +42516,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41053,7 +42529,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41098,6 +42573,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41108,7 +42586,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41153,6 +42630,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41163,7 +42643,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41208,6 +42687,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41218,7 +42700,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41263,6 +42744,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41273,7 +42757,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41318,6 +42801,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41328,7 +42814,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41373,6 +42858,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41383,7 +42871,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41428,6 +42915,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41438,7 +42928,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41483,6 +42972,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41493,7 +42985,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41538,6 +43029,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41548,7 +43042,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41593,6 +43086,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41603,7 +43099,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41648,6 +43143,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41658,7 +43156,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41703,6 +43200,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41713,7 +43213,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41758,6 +43257,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41768,7 +43270,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41813,6 +43314,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41823,7 +43327,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41868,6 +43371,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41878,7 +43384,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41923,6 +43428,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41933,7 +43441,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -41978,6 +43485,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -41988,7 +43498,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42033,6 +43542,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42043,7 +43555,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42088,6 +43599,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42098,7 +43612,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42143,6 +43656,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42153,7 +43669,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42198,6 +43713,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42208,7 +43726,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42253,6 +43770,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42263,7 +43783,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42308,6 +43827,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42318,7 +43840,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42363,6 +43884,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42373,7 +43897,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42418,6 +43941,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42428,7 +43954,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42473,6 +43998,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42483,7 +44011,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42528,6 +44055,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42538,7 +44068,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42583,6 +44112,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42593,7 +44125,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42638,6 +44169,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42648,7 +44182,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42693,6 +44226,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42703,7 +44239,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42748,6 +44283,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42758,7 +44296,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42803,6 +44340,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42813,7 +44353,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42858,6 +44397,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42868,7 +44410,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42913,6 +44454,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42923,7 +44467,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -42968,6 +44511,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -42978,7 +44524,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43023,6 +44568,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43033,7 +44581,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43078,6 +44625,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43088,7 +44638,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43133,6 +44682,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43143,7 +44695,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43188,6 +44739,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43198,7 +44752,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43243,6 +44796,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43253,7 +44809,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43298,6 +44853,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43308,7 +44866,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43353,6 +44910,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43363,7 +44923,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43408,6 +44967,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43418,7 +44980,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43463,6 +45024,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43473,7 +45037,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43518,6 +45081,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43528,7 +45094,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43573,6 +45138,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43583,7 +45151,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43628,6 +45195,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43638,7 +45208,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43683,6 +45252,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43693,7 +45265,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43738,6 +45309,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43748,7 +45322,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43793,6 +45366,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43803,7 +45379,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43848,6 +45423,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43858,7 +45436,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43903,6 +45480,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43913,7 +45493,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -43958,6 +45537,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -43968,7 +45550,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44013,6 +45594,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44023,7 +45607,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44068,6 +45651,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44078,7 +45664,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44123,6 +45708,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44133,7 +45721,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44178,6 +45765,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44188,7 +45778,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44233,6 +45822,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44243,7 +45835,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44288,6 +45879,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44298,7 +45892,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44343,6 +45936,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44353,7 +45949,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44398,6 +45993,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44408,7 +46006,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44453,6 +46050,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44463,7 +46063,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44508,6 +46107,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44518,7 +46120,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44563,6 +46164,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44573,7 +46177,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44618,6 +46221,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44628,7 +46234,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44673,6 +46278,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44683,7 +46291,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44728,6 +46335,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44738,7 +46348,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44783,6 +46392,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44793,7 +46405,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44838,6 +46449,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44848,7 +46462,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44893,6 +46506,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44903,7 +46519,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -44948,6 +46563,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -44958,7 +46576,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45003,6 +46620,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45013,7 +46633,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45058,6 +46677,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45068,7 +46690,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45113,6 +46734,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45123,7 +46747,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45168,6 +46791,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45178,7 +46804,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45223,6 +46848,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45233,7 +46861,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45278,6 +46905,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45288,7 +46918,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45333,6 +46962,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45343,7 +46975,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45388,6 +47019,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45398,7 +47032,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45443,6 +47076,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45453,7 +47089,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45498,6 +47133,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45508,7 +47146,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45553,6 +47190,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45563,7 +47203,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45608,6 +47247,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45618,7 +47260,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45663,6 +47304,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45673,7 +47317,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45718,6 +47361,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45728,7 +47374,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45773,6 +47418,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45783,7 +47431,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45828,6 +47475,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45838,7 +47488,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45883,6 +47532,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45893,7 +47545,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45938,6 +47589,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -45948,7 +47602,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -45993,6 +47646,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46003,7 +47659,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46048,6 +47703,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46058,7 +47716,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46103,6 +47760,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46113,7 +47773,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46158,6 +47817,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46168,7 +47830,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46213,6 +47874,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46223,7 +47887,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46268,6 +47931,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46278,7 +47944,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46323,6 +47988,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46333,7 +48001,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46378,6 +48045,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46388,7 +48058,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46433,6 +48102,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46443,7 +48115,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46488,6 +48159,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46498,7 +48172,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46543,6 +48216,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46553,7 +48229,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46598,6 +48273,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46608,7 +48286,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46653,6 +48330,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46663,7 +48343,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46708,6 +48387,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46718,7 +48400,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46763,6 +48444,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46773,7 +48457,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46818,6 +48501,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46828,7 +48514,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46873,6 +48558,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46883,7 +48571,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46928,6 +48615,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46938,7 +48628,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -46983,6 +48672,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -46993,7 +48685,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47038,6 +48729,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47048,7 +48742,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47093,6 +48786,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47103,7 +48799,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47148,6 +48843,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47158,7 +48856,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47203,6 +48900,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47213,7 +48913,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47258,6 +48957,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47268,7 +48970,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47313,6 +49014,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47323,7 +49027,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47368,6 +49071,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47378,7 +49084,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47423,6 +49128,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47433,7 +49141,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47478,6 +49185,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47488,7 +49198,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47533,6 +49242,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47543,7 +49255,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47588,6 +49299,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47598,7 +49312,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47643,6 +49356,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47653,7 +49369,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47698,6 +49413,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47708,7 +49426,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47753,6 +49470,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47763,7 +49483,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47808,6 +49527,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47818,7 +49540,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47863,6 +49584,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47873,7 +49597,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47918,6 +49641,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47928,7 +49654,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -47973,6 +49698,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -47983,7 +49711,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48028,6 +49755,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48038,7 +49768,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48083,6 +49812,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48093,7 +49825,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48138,6 +49869,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48148,7 +49882,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48193,6 +49926,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48203,7 +49939,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48248,6 +49983,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48258,7 +49996,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48303,6 +50040,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48313,7 +50053,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48358,6 +50097,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48368,7 +50110,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48412,6 +50153,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48422,7 +50166,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48467,6 +50210,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48477,7 +50223,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48522,6 +50267,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48532,7 +50280,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48577,6 +50324,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48587,7 +50337,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48632,6 +50381,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48642,7 +50394,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48687,6 +50438,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48697,7 +50451,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48742,6 +50495,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48752,7 +50508,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48797,6 +50552,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48807,7 +50565,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48852,6 +50609,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48862,7 +50622,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48907,6 +50666,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48917,7 +50679,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -48962,6 +50723,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -48972,7 +50736,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49017,6 +50780,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49027,7 +50793,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49072,6 +50837,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49082,7 +50850,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49127,6 +50894,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49137,7 +50907,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49182,6 +50951,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49192,7 +50964,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49237,6 +51008,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49247,7 +51021,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49292,6 +51065,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49302,7 +51078,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49347,6 +51122,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49357,7 +51135,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49402,6 +51179,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49412,7 +51192,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49457,6 +51236,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49467,7 +51249,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49512,6 +51293,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49522,7 +51306,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49567,6 +51350,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49577,7 +51363,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49622,6 +51407,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49632,7 +51420,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49677,6 +51464,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49687,7 +51477,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49732,6 +51521,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49742,7 +51534,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49787,6 +51578,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49797,7 +51591,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49842,6 +51635,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49852,7 +51648,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49897,6 +51692,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49907,7 +51705,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -49952,6 +51749,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -49962,7 +51762,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50007,6 +51806,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50017,7 +51819,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50062,6 +51863,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50072,7 +51876,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50117,6 +51920,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50127,7 +51933,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50172,6 +51977,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50182,7 +51990,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50227,6 +52034,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50237,7 +52047,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50282,6 +52091,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50292,7 +52104,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50337,6 +52148,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50347,7 +52161,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50392,6 +52205,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50402,7 +52218,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50447,6 +52262,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50457,7 +52275,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50502,6 +52319,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50512,7 +52332,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50557,6 +52376,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50567,7 +52389,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50612,6 +52433,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50622,7 +52446,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50667,6 +52490,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50677,7 +52503,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50722,6 +52547,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50732,7 +52560,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50777,6 +52604,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50787,7 +52617,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50832,6 +52661,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50842,7 +52674,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50887,6 +52718,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50897,7 +52731,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50942,6 +52775,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -50952,7 +52788,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -50997,6 +52832,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51007,7 +52845,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51266,6 +53103,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Folder {
     Model {
     }
@@ -51305,6 +53145,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51315,7 +53158,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51359,6 +53201,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51369,7 +53214,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51413,6 +53257,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51423,7 +53270,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51467,6 +53313,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51477,7 +53326,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51521,6 +53369,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51531,7 +53382,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51575,6 +53425,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51585,7 +53438,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51629,6 +53481,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51639,7 +53494,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51683,6 +53537,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51693,7 +53550,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51738,6 +53594,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51748,7 +53607,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51793,6 +53651,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51803,7 +53664,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51848,6 +53708,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51858,7 +53721,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51903,6 +53765,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51913,7 +53778,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -51958,6 +53822,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -51968,7 +53835,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52013,6 +53879,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52023,7 +53892,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52068,6 +53936,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52078,7 +53949,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52123,6 +53993,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52133,7 +54006,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52178,6 +54050,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52188,7 +54063,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52233,6 +54107,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52243,7 +54120,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52288,6 +54164,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52298,7 +54177,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52343,6 +54221,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52353,7 +54234,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52398,6 +54278,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52408,7 +54291,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52453,6 +54335,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52463,7 +54348,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52508,6 +54392,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52518,7 +54405,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52563,6 +54449,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52573,7 +54462,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52618,6 +54506,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52628,7 +54519,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52673,6 +54563,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52683,7 +54576,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52728,6 +54620,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52738,7 +54633,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52783,6 +54677,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52793,7 +54690,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52838,6 +54734,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52848,7 +54747,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52893,6 +54791,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52903,7 +54804,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -52948,6 +54848,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -52958,7 +54861,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53003,6 +54905,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53013,7 +54918,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53058,6 +54962,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53068,7 +54975,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53113,6 +55019,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53123,7 +55032,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53168,6 +55076,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53178,7 +55089,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53223,6 +55133,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53233,7 +55146,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53278,6 +55190,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53288,7 +55203,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53333,6 +55247,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53343,7 +55260,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53388,6 +55304,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53398,7 +55317,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53443,6 +55361,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53453,7 +55374,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53498,6 +55418,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53508,7 +55431,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53553,6 +55475,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53563,7 +55488,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53608,6 +55532,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53618,7 +55545,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53663,6 +55589,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53673,7 +55602,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53718,6 +55646,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53728,7 +55659,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53773,6 +55703,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53783,7 +55716,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53828,6 +55760,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53838,7 +55773,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53883,6 +55817,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53893,7 +55830,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53938,6 +55874,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -53948,7 +55887,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -53993,6 +55931,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54003,7 +55944,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54048,6 +55988,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54058,7 +56001,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54103,6 +56045,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54113,7 +56058,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54158,6 +56102,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54168,7 +56115,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54213,6 +56159,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54223,7 +56172,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54268,6 +56216,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54278,7 +56229,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54323,6 +56273,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54333,7 +56286,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54378,6 +56330,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54388,7 +56343,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54433,6 +56387,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54443,7 +56400,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54488,6 +56444,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54498,7 +56457,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54543,6 +56501,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54553,7 +56514,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54598,6 +56558,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54608,7 +56571,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54653,6 +56615,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54663,7 +56628,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54708,6 +56672,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54718,7 +56685,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54763,6 +56729,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54773,7 +56742,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54818,6 +56786,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54828,7 +56799,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54873,6 +56843,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54883,7 +56856,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54928,6 +56900,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54938,7 +56913,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -54983,6 +56957,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -54993,7 +56970,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55038,6 +57014,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55048,7 +57027,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55093,6 +57071,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55103,7 +57084,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55148,6 +57128,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55158,7 +57141,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55203,6 +57185,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55213,7 +57198,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55258,6 +57242,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55268,7 +57255,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55313,6 +57299,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55323,7 +57312,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55368,6 +57356,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55378,7 +57369,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55423,6 +57413,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55433,7 +57426,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55478,6 +57470,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55488,7 +57483,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55533,6 +57527,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55543,7 +57540,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55588,6 +57584,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55598,7 +57597,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55643,6 +57641,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55653,7 +57654,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55698,6 +57698,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55708,7 +57711,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55753,6 +57755,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55763,7 +57768,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55808,6 +57812,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55818,7 +57825,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55863,6 +57869,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55873,7 +57882,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55918,6 +57926,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55928,7 +57939,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -55973,6 +57983,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -55983,7 +57996,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56028,6 +58040,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56038,7 +58053,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56083,6 +58097,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56093,7 +58110,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56138,6 +58154,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56148,7 +58167,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56193,6 +58211,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56203,7 +58224,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56248,6 +58268,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56258,7 +58281,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56303,6 +58325,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56313,7 +58338,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56358,6 +58382,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56368,7 +58395,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56413,6 +58439,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56423,7 +58452,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56468,6 +58496,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56478,7 +58509,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56523,6 +58553,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56533,7 +58566,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56578,6 +58610,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56588,7 +58623,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56633,6 +58667,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56643,7 +58680,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56688,6 +58724,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56698,7 +58737,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56743,6 +58781,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56753,7 +58794,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56798,6 +58838,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56808,7 +58851,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56853,6 +58895,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56863,7 +58908,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56908,6 +58952,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56918,7 +58965,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -56963,6 +59009,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -56973,7 +59022,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57018,6 +59066,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57028,7 +59079,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57073,6 +59123,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57083,7 +59136,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57128,6 +59180,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57138,7 +59193,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57183,6 +59237,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57193,7 +59250,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57238,6 +59294,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57248,7 +59307,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57293,6 +59351,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57303,7 +59364,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57348,6 +59408,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57358,7 +59421,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57403,6 +59465,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57413,7 +59478,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57458,6 +59522,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57468,7 +59535,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57513,6 +59579,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57523,7 +59592,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57568,6 +59636,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57578,7 +59649,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57623,6 +59693,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57633,7 +59706,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57678,6 +59750,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57688,7 +59763,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57733,6 +59807,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57743,7 +59820,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57788,6 +59864,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57798,7 +59877,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57843,6 +59921,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57853,7 +59934,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57898,6 +59978,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57908,7 +59991,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -57953,6 +60035,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -57963,7 +60048,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58008,6 +60092,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58018,7 +60105,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58063,6 +60149,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58073,7 +60162,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58118,6 +60206,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58128,7 +60219,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58173,6 +60263,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58183,7 +60276,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58228,6 +60320,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58238,7 +60333,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58283,6 +60377,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58293,7 +60390,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58338,6 +60434,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58348,7 +60447,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58393,6 +60491,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58403,7 +60504,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58448,6 +60548,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58458,7 +60561,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58503,6 +60605,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58513,7 +60618,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58558,6 +60662,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58568,7 +60675,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58613,6 +60719,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58623,7 +60732,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58668,6 +60776,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58678,7 +60789,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58723,6 +60833,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58733,7 +60846,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58778,6 +60890,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58788,7 +60903,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58833,6 +60947,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58843,7 +60960,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58888,6 +61004,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58898,7 +61017,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58943,6 +61061,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -58953,7 +61074,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -58998,6 +61118,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59008,7 +61131,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59053,6 +61175,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59063,7 +61188,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59108,6 +61232,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59118,7 +61245,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59163,6 +61289,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59173,7 +61302,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59218,6 +61346,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59228,7 +61359,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59273,6 +61403,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59283,7 +61416,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59328,6 +61460,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59338,7 +61473,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59383,6 +61517,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59393,7 +61530,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59438,6 +61574,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59448,7 +61587,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59493,6 +61631,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59503,7 +61644,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59548,6 +61688,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59558,7 +61701,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59603,6 +61745,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59613,7 +61758,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59658,6 +61802,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59668,7 +61815,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59713,6 +61859,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59723,7 +61872,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59768,6 +61916,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59778,7 +61929,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59823,6 +61973,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59833,7 +61986,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59878,6 +62030,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59888,7 +62043,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59933,6 +62087,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59943,7 +62100,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -59988,6 +62144,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -59998,7 +62157,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60043,6 +62201,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60053,7 +62214,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60098,6 +62258,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60108,7 +62271,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60153,6 +62315,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60163,7 +62328,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60208,6 +62372,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60218,7 +62385,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60263,6 +62429,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60273,7 +62442,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60318,6 +62486,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60328,7 +62499,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60373,6 +62543,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60383,7 +62556,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60428,6 +62600,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60438,7 +62613,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60483,6 +62657,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60493,7 +62670,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60538,6 +62714,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60548,7 +62727,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60593,6 +62771,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60603,7 +62784,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60648,6 +62828,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60658,7 +62841,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60703,6 +62885,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60713,7 +62898,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60758,6 +62942,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60768,7 +62955,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60813,6 +62999,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60823,7 +63012,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60868,6 +63056,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60878,7 +63069,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60923,6 +63113,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60933,7 +63126,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -60978,6 +63170,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -60988,7 +63183,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61033,6 +63227,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61043,7 +63240,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61088,6 +63284,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61098,7 +63297,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61143,6 +63341,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61153,7 +63354,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61198,6 +63398,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61208,7 +63411,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61252,6 +63454,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61262,7 +63467,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61306,6 +63510,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61316,7 +63523,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61360,6 +63566,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61370,7 +63579,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61414,6 +63622,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61424,7 +63635,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61467,6 +63677,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61477,7 +63690,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61521,6 +63733,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61531,7 +63746,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61575,6 +63789,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61585,7 +63802,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61629,6 +63845,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61639,7 +63858,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61683,6 +63901,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61693,7 +63914,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61737,6 +63957,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61747,7 +63970,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61791,6 +64013,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61801,7 +64026,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61845,6 +64069,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61855,7 +64082,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61898,6 +64124,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61908,7 +64137,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -61952,6 +64180,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -61962,7 +64193,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62006,6 +64236,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62016,7 +64249,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62060,6 +64292,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62070,7 +64305,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62115,6 +64349,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62125,7 +64362,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62170,6 +64406,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62180,7 +64419,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62225,6 +64463,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62235,7 +64476,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62280,6 +64520,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62290,7 +64533,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62335,6 +64577,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62345,7 +64590,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62390,6 +64634,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62400,7 +64647,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62445,6 +64691,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62455,7 +64704,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62500,6 +64748,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62510,7 +64761,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62555,6 +64805,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62565,7 +64818,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62610,6 +64862,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62620,7 +64875,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62665,6 +64919,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62675,7 +64932,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62720,6 +64976,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62730,7 +64989,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62775,6 +65033,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62785,7 +65046,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62830,6 +65090,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62840,7 +65103,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62885,6 +65147,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62895,7 +65160,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62940,6 +65204,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -62950,7 +65217,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -62995,6 +65261,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63005,7 +65274,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63050,6 +65318,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63060,7 +65331,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63105,6 +65375,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63115,7 +65388,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63160,6 +65432,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63170,7 +65445,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63215,6 +65489,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63225,7 +65502,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63270,6 +65546,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63280,7 +65559,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63325,6 +65603,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63335,7 +65616,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63380,6 +65660,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63390,7 +65673,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63435,6 +65717,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63445,7 +65730,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63490,6 +65774,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63500,7 +65787,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63545,6 +65831,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63555,7 +65844,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
@@ -63600,6 +65888,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15420880124102881155
@@ -63610,7 +65901,6 @@ Objects {
     }
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
-    EnableCameraCollision: true
     InteractWithTriggers: true
     StaticMesh {
       Physics {
