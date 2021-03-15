@@ -17,8 +17,12 @@ local DATA_CUSTOM_PROPERTY = "Data"
 function RetrieveData()
     for k,child in ipairs(DATA_TRANSFER:GetChildren()) do
         if(child:GetCustomProperty(OWNER_ID_CUSTOM_PROPERTY) == LOCAL_PLAYER.id) then
+        
+        	--print("RETRIEVING DATA FROM OBJECT TRANSFER")
             -- Build tank list based off string data
             local tankProgressionTable = UTIL_API.TechTreeConvertToTable(child:GetCustomProperty(DATA_CUSTOM_PROPERTY))
+            
+            local tankEntryCollection = {}
            
             -- Split the individual tank data strings into separate tables we can iterate through and build local tank objects
             for k,v in pairs(tankProgressionTable) do
@@ -44,11 +48,15 @@ function RetrieveData()
                     position = position + 1
                 end                
                 tankEntry.name = UTIL_API.RetrieveTankNameById(tankEntry.id, TANK_CONTENTS:GetChildren())
-                table.insert(LOCAL_PLAYER.clientUserData.techTreeProgress, tankEntry)
+                table.insert(tankEntryCollection, tankEntry)
             end 
+            
+            LOCAL_PLAYER.clientUserData.techTreeProgress = tankEntryCollection
 
             -- DEBUG print tank entries           
-            UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
+            -- UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
+            
+            Events.Broadcast("TankClientDataSet")
             
             return
         end

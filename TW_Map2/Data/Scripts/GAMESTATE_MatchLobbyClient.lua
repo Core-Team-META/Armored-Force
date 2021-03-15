@@ -21,20 +21,12 @@ local bindingListener = nil
 
 local tankEquipToggle = false
 
+local switchInProgress = false
+
 function Initialize()
 
 	equipTankPanel.isEnabled = false
 	
-	while not localPlayer.clientUserData.techTreeProgress do
-	
-		Task.Wait()
-		
-	end
-	
-	Task.Wait(1)
-	
-	LoadEquippableTanks()
-
 end
 
 function StateSTART(manager, propertyName)
@@ -107,27 +99,63 @@ end
 
 function ToggleEquipTankUI(player, binding)
 
+	if switchInProgress then
+	
+		return 
+		
+	end
+
+	Task.Wait()
+
 	if binding == "ability_extra_38" and not tankEquipToggle then
+	
+		print("lookMode toggle on")
+	
+		switchInProgress = true
+	
+		while player.lookControlMode ~= LookControlMode.NONE do
+		
+			Task.Wait()
+			
+		end
 	
 		equipTankPanel.isEnabled = true
 		
 		UI.SetCursorVisible(true)
 		
+		UI.SetCanCursorInteractWithUI(true)
+		
 		tankEquipToggle = true
 		
-	elseif binding == "ability_extra_38" then
+	elseif binding == "ability_extra_38" and tankEquipToggle then
+	
+		print("lookMode toggle off")
+	
+		switchInProgress = true
+	
+		while player.lookControlMode ~= LookControlMode.RELATIVE do
+		
+			Task.Wait()
+			
+		end
 	
 		equipTankPanel.isEnabled = false
 		
 		UI.SetCursorVisible(false)
 		
+		UI.SetCanCursorInteractWithUI(false)
+		
 		tankEquipToggle = false 
 		
 	end
+	
+	switchInProgress = false
 
 end
 
 function LoadEquippableTanks()
+
+	Task.Wait()
 	
 	local count = 0
 	
@@ -158,3 +186,5 @@ Initialize()
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 
 StateSTART(mainGameStateManager, "GameState")
+
+Events.Connect("TankClientDataSet", LoadEquippableTanks)

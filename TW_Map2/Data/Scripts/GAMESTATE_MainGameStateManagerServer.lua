@@ -21,6 +21,8 @@ local timerTask = nil
 
 local currentState = nil
 
+local tankEquipToggle = {}
+
 _G["GameWinner"] = 0
 	
 function OnChangeState(previousState)
@@ -102,9 +104,21 @@ function Test(player, binding)
 	
 		player:Die()
 		
-	elseif binding == "ability_extra_10" and currentState == "LOBBYSTATE" then
+	elseif binding == "ability_extra_38" and not tankEquipToggle[player.id] and currentState == "LOBBYSTATE" then
+	
+		player.lookControlMode = LookControlMode.NONE
 		
-		player:Respawn()
+		tankEquipToggle[player.id] = true
+		
+		print("lookMode toggle on")
+		
+	elseif binding == "ability_extra_38" and tankEquipToggle[player.id] and currentState == "LOBBYSTATE" then
+	
+		player.lookControlMode = LookControlMode.RELATIVE
+		
+		tankEquipToggle[player.id] = false 
+		
+		print("lookMode toggle off")
 		
 	end
 	

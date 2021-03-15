@@ -1,7 +1,36 @@
 Name: "DataCompression"
 RootId: 8790839518416858328
 Objects {
-  Id: 11856865614472612250
+  Id: 2837048781101851449
+  Name: "DataTransfer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8790839518416858328
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15429824063584818100
   Name: "Player Storage Manager"
   Transform {
     Location {
@@ -15,7 +44,7 @@ Objects {
     }
   }
   ParentId: 8790839518416858328
-  ChildIds: 14695918881590407585
+  ChildIds: 16958951538999972893
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -29,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14695918881590407585
+  Id: 16958951538999972893
   Name: "PlayerStorageManagerClient"
   Transform {
     Location {
@@ -42,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11856865614472612250
+  ParentId: 15429824063584818100
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
@@ -59,7 +88,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 10186311471389405217
+        SelfId: 2837048781101851449
       }
     }
     Overrides {
@@ -81,6 +110,71 @@ Objects {
   Script {
     ScriptAsset {
       Id: 13316703047855681247
+    }
+  }
+}
+Objects {
+  Id: 10142699416289877744
+  Name: "ResourcePersisterServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8790839518416858328
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PlayerSharedStorage"
+      NetReference {
+        Key: "22e16ec4053b4478aed0d586ae67a57d"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransfer"
+      ObjectReference {
+        SelfId: 2837048781101851449
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransferObject"
+      AssetReference {
+        Id: 226768975638950587
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10603404000379723593
     }
   }
 }
@@ -145,7 +239,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 10186311471389405217
+        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -168,35 +262,6 @@ Objects {
     ScriptAsset {
       Id: 10419913492106103170
     }
-  }
-}
-Objects {
-  Id: 10186311471389405217
-  Name: "DataTransfer"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8790839518416858328
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
   }
 }
 Objects {
@@ -240,67 +305,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 888912606947674844
-    }
-  }
-}
-Objects {
-  Id: 17624313006872301189
-  Name: "ResourcePersisterServer"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8790839518416858328
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:PlayerSharedStorage"
-      NetReference {
-        Key: "22e16ec4053b4478aed0d586ae67a57d"
-        Type {
-          Value: "mc:enetreferencetype:sharedpersistence"
-        }
-      }
-    }
-    Overrides {
-      Name: "cs:MetaAbilityProgressionConstants_API"
-      AssetReference {
-        Id: 15718075383189814537
-      }
-    }
-    Overrides {
-      Name: "cs:MetaAbilityProgressionUTIL_API"
-      AssetReference {
-        Id: 2269572116006940077
-      }
-    }
-    Overrides {
-      Name: "cs:DataTransfer"
-      ObjectReference {
-        SelfId: 10186311471389405217
-      }
-    }
-    Overrides {
-      Name: "cs:DataTransferObject"
-      AssetReference {
-        Id: 226768975638950587
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 10603404000379723593
     }
   }
 }
