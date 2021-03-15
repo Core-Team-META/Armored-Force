@@ -5,8 +5,13 @@ local PLAYER_SHARED_STORAGE = script:GetCustomProperty("PlayerSharedStorage")
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
+-- DATA TRANSFER FROM SERVER TO CLIENT
+local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
+local DATA_TRANSFER_OBJECT = script:GetCustomProperty("DataTransferObject")
+
 -- LOCAL PROPERTIES
 local DELIMITER = "|"
+local CAN_RETRIEVE = {}
 
 ----------------------------------------------------------------------------------------------
 
@@ -22,6 +27,7 @@ function OnResourceChanged(player, resource, value)
 end
 
 function OnPlayerJoined(player)
+	
 	local playerData = Storage.GetPlayerData(player)
 
 	if type(playerData.resources) ~= "table" then
@@ -34,11 +40,6 @@ function OnPlayerJoined(player)
 	
 	player.serverUserData.techTreeProgress = {}
 	
-	for k,dataString in ipairs(playerData[tostring(CONSTANTS_API.STORAGE.PROGRESSION)]) do
-		-- There will only be one entry on this table
-		SetTankProgressionDataForServer(dataString, player)		
-	end
-
 	CheckAndSetSharedStorageDefault(player)
 	
 	LoadAndSetDataFromSharedStorage(player)
@@ -64,6 +65,25 @@ function CheckAndSetSharedStorageDefault(player)
 
 	-- DEBUG: Clear shared storage
 	--playerSharedStorage = {}
+			
+	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
+	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
+	
+	if(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] == nil) then SetNewPlayerProgression(playerSharedStorage) end
+	
+	SetTankProgressionDataForServer(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA], player)	
+	
+	print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
+	
+	if playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]  then
+	
+		player.serverUserData.selectedTank = playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] 
+		
+	else 
+	
+		player.serverUserData.selectedTank = "01"
+		
+	end
 	
 	if(player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
 		playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()
@@ -71,6 +91,20 @@ function CheckAndSetSharedStorageDefault(player)
 		UTIL_API.RetrieveTankDataById(player:GetResource(CONSTANTS_API.GetEquippedTankResource()), player.serverUserData.techTreeProgress)	
 	end
 	
+	local dataTransferObject = World.SpawnAsset(DATA_TRANSFER_OBJECT, {parent = DATA_TRANSFER})
+    dataTransferObject:SetNetworkedCustomProperty("OwnerId", player.id)
+    dataTransferObject:SetNetworkedCustomProperty("Data", playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
+    
+    Task.Wait()
+    
+ 	while not CAN_RETRIEVE[player.id] do
+	
+		Task.Wait()
+		
+	end   
+    
+    Events.BroadcastToPlayer(player, "RetrieveData")
+		
 	if(playerSharedStorage[CONSTANTS_API.SILVER] == nil) then playerSharedStorage[CONSTANTS_API.SILVER] = 0 end
 
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
@@ -97,7 +131,7 @@ function LoadAndSetDataFromSharedStorage(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	player:SetResource(CONSTANTS_API.SILVER, playerSharedStorage[CONSTANTS_API.SILVER]) 
-
+	
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		player:SetResource(UTIL_API.GetTankRPString(i), playerSharedStorage[UTIL_API.GetTankRPString(i)])
 	end
@@ -122,6 +156,10 @@ function SavePlayerDataIntoSharedStorage(player)
 	playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = UTIL_API.RetrieveTankDataById(player:GetResource(CONSTANTS_API.GetEquippedTankResource()), player.serverUserData.techTreeProgress)
 
 	playerSharedStorage[CONSTANTS_API.SILVER] = player:GetResource(CONSTANTS_API.SILVER)
+	
+	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = ConvertTechTreeProgressToDataString(player)
+	
+	playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = player.serverUserData.selectedTank
 
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		playerSharedStorage[UTIL_API.GetTankRPString(i)] = player:GetResource(UTIL_API.GetTankRPString(i))
@@ -143,19 +181,76 @@ function SavePlayerDataIntoSharedStorage(player)
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
 
+function SetNewPlayerProgression(playerSharedStorage)
+
+	print("Setting new progress data")
+
+	local tankString = ""
+	local tankEntry = ""
+	
+	for i = 1, CONSTANTS_API.GetNumberOfTanks(), 1 do
+	
+		tankEntry = ""
+	
+		if i < 10 then
+		
+			tankEntry = "0" .. tostring(i)
+			
+		else 
+		
+			tankEntry = tostring(i)
+			
+		end
+		
+		
+		-- players get tanks 1 and 18 (M3 and Panzer 3) as starter tanks.
+		-- Currently set 
+		if i ~= 1 and i ~= 18 and i ~= CONSTANTS_API.GetNumberOfTanks() then
+		
+			tankEntry = tankEntry .. "|0|0|0|0|0~"
+			
+		elseif i == 1 or i == 18 then
+		
+			tankEntry = tankEntry .. "|1|1|1|1|1~"
+			
+		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
+		-- (requires forced use of SetNewPlayerProgression(playerSharedStorage) function)
+		--[[
+		elseif i == 2 then
+		
+			tankEntry = tankEntry .. "|1|1|0|0|0~"
+		]]--
+			
+		else 
+		
+			tankEntry = tankEntry .. "|0|0|0|0|0"
+			
+		end
+		
+		
+		tankString = tankString .. tankEntry
+	
+	end
+
+	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = tankString
+	
+end
+
 function SetTankProgressionDataForServer(dataString, player)
 	print("Saving tank data on server. Data string: " .. dataString)
    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
     print("Finished converting string into table.")
+    
+    local progressionTable = {}
            
     -- Split the individual tank data strings into separate tables we can iterate through and build local tank objects
     for k,v in pairs(tankProgressionTable) do
-    	print(v)
+    	--print(v)
         local tankEntryTable = UTIL_API.SplitStringIntoObjects(k, DELIMITER)
         local position = 1
         local tankEntry = {}
         for k,v in pairs(tankEntryTable) do 
-        	print(v)
+        	--print(v)
             if(position == CONSTANTS_API.TECH_TREE_POSITION.TANKID) then
                 tankEntry.id = v
             elseif(position == CONSTANTS_API.TECH_TREE_POSITION.RESEARCHED) then
@@ -173,8 +268,54 @@ function SetTankProgressionDataForServer(dataString, player)
             end
             position = position + 1
         end                
-        table.insert(player.serverUserData.techTreeProgress, tankEntry)
-    end 
+        table.insert(progressionTable, tankEntry)
+    end     
+    
+    player.serverUserData.techTreeProgress = progressionTable
+   
+end
+
+function ConvertBoolToString(boolean)
+
+	if boolean then 
+	
+		return "1"
+		
+	else 
+	
+		return "0"
+		
+	end
+	
+end
+
+function ConvertTechTreeProgressToDataString(player)
+	
+	local dataString = ""
+	
+	table.sort(player.serverUserData.techTreeProgress, function(a, b) return tonumber(a.id) < tonumber(b.id) end)
+	
+	for k,v in ipairs(player.serverUserData.techTreeProgress) do
+	
+		dataString = dataString .. v.id .. 
+					"|" .. ConvertBoolToString(v.researched) ..
+					"|" .. ConvertBoolToString(v.purchased) ..
+					"|" .. ConvertBoolToString(v.hasWeapon) ..
+					"|" .. ConvertBoolToString(v.hasArmor) ..
+					"|" .. ConvertBoolToString(v.hasEngine) 
+					
+		if k <  CONSTANTS_API.GetNumberOfTanks() then
+		
+			dataString = dataString .. "~"
+			
+		end
+	
+	end
+	
+	print("PROGRESS CONVERTED TO STRING: " .. dataString)
+	
+	return dataString
+
 end
 
 function GetEquippedTank(player)
@@ -196,7 +337,12 @@ function ChangeEquippedTank(player, tankId)
 	print("Set player's equipped tank to: " .. tankId)
 end
 
+function AllowRetrieval(player)
+	CAN_RETRIEVE[player.id] = true
+end
+
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)
+Events.ConnectForPlayer("ReadyToRetrive", AllowRetrieval)

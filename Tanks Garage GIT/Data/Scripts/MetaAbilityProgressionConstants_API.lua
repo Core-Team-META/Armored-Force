@@ -15,9 +15,9 @@ local DEFAULT_TANK_DATA =
     id = "01",
     researched = true,
     purchased = true,
-    hasWeapon = false,
-    hasArmor = false,
-    hasEngine = false
+    hasWeapon = true,
+    hasArmor = true,
+    hasEngine = true
 }
 ------------------------------------------------------------------------------------------------------------------------
 -- STORAGE KEYS -- DO NOT EDIT
@@ -32,6 +32,10 @@ API.STORAGE = {
     PERKS = 7
 }
 
+API.PROGRESS = {
+	DATA = 1,
+	CURRENT = 2
+}
 ------------------------------------------------------------------------------------------------------------------------
 -- PROGRESS KEYS
 ------------------------------------------------------------------------------------------------------------------------

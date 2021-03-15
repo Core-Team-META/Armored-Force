@@ -319,6 +319,12 @@ Objects {
         SelfId: 3715184557627577561
       }
     }
+    Overrides {
+      Name: "cs:MainManagerServer"
+      ObjectReference {
+        SelfId: 7520210139489262472
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -436,7 +442,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -534,6 +534,9 @@ function GetEquippedTankTemplate(player, id)
 		return EQUIPMENT_TEMPLATE28
 	elseif(equippedTankId == 15) then
 		return EQUIPMENT_TEMPLATE6
+		
+	elseif(equippedTankId == 18) then
+		return EQUIPMENT_TEMPLATE20
 	else
 		print("Returning default")
 		return EQUIPMENT_TEMPLATE6
@@ -541,21 +544,10 @@ function GetEquippedTankTemplate(player, id)
 end
 
 function ChangeEquippedTank(player, id)
-
-	--[[
-	RemovePlayerEquipment(player)
-	equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player, tonumber(id)))
-	]]
 	
 	selectedEquipment[player] = GetEquippedTankTemplate(player, tonumber(id))
 	
-	--[[
-	assert(equipment[player]:IsA("Equipment"))
-	equipment[player]:Equip(player)
-	player.movementControlMode = MovementControlMode.FACING_RELATIVE
-	equipment[player].visibility = Visibility.FORCE_ON
-	tankBurning = false
-	]]
+	player.serverUserData.selectedTank = id
 
 	Events.BroadcastToPlayer(player, "CHANGE_EQUIPPED_TANK", tonumber(id))
 end

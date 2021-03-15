@@ -26,12 +26,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9208223880286796769
-  Name: "PlayerSharedStorage"
+  Id: 10573954452887993462
+  Name: "TankStorage"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "8cd7b4910d07447a8fac4ca5a361a105"
+      Key: "22e16ec4053b4478aed0d586ae67a57d"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }

@@ -200,7 +200,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4896376656766078880
+  Id: 11243738322817847865
   Name: "SeedStorageTest"
   Transform {
     Location {
@@ -226,16 +226,6 @@ Objects {
       AssetReference {
         Id: 2269572116006940077
       }
-    }
-    Overrides {
-      Name: "cs:DataTransfer"
-      ObjectReference {
-        SelfId: 10186311471389405217
-      }
-    }
-    Overrides {
-      Name: "cs:DataTransferObject"
-      String: "0325A52E8F09F2BB:DataTransferObject"
     }
   }
   Collidable_v2 {
@@ -268,7 +258,7 @@ Objects {
     Overrides {
       Name: "cs:PlayerSharedStorage"
       NetReference {
-        Key: "8cd7b4910d07447a8fac4ca5a361a105"
+        Key: "22e16ec4053b4478aed0d586ae67a57d"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -284,6 +274,18 @@ Objects {
       Name: "cs:MetaAbilityProgressionUTIL_API"
       AssetReference {
         Id: 2269572116006940077
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransfer"
+      ObjectReference {
+        SelfId: 10186311471389405217
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransferObject"
+      AssetReference {
+        Id: 226768975638950587
       }
     }
   }

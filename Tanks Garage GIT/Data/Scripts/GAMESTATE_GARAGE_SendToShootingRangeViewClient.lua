@@ -7,6 +7,9 @@ local M3StuartGARAGEMODEL = script:GetCustomProperty("M3StuartGARAGEMODEL")
 local IS3GARAGEMODEL = script:GetCustomProperty("IS3GARAGEMODEL")
 local M10WolverineGARAGEMODEL = script:GetCustomProperty("M10WolverineGARAGEMODEL")
 local M4A1ShermanGARAGEMODEL = script:GetCustomProperty("M4A1ShermanGARAGEMODEL")
+
+local Panzer3GARAGEMODEL = script:GetCustomProperty("Panzer3GARAGEMODEL")
+
 ---------------------
 
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
@@ -240,6 +243,9 @@ function SetGarageModelFromEquippedTank(player, id)
 		garageModel = BatChatGARAGEMODEL
 	elseif(equippedTankId == 14) then
 		garageModel = T57GARAGEMODEL
+		
+	elseif(equippedTankId == 18) then
+		garageModel = Panzer3GARAGEMODEL
 	else
 		garageModel = TankUSM24ChaffeeGARAGEMODEL
 	end
