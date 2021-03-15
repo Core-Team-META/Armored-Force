@@ -79,9 +79,13 @@ function CheckAndSetSharedStorageDefault(player)
 	
 		player.serverUserData.selectedTank = playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] 
 		
+		player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(player.serverUserData.selectedTank))
+		
 	else 
 	
 		player.serverUserData.selectedTank = "01"
+		
+		player:SetResource(CONSTANTS_API.GetEquippedTankResource(), 1)
 		
 	end
 	
