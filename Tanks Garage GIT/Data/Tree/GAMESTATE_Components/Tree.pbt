@@ -642,6 +642,12 @@ Objects {
         Id: 5168191616823378001
       }
     }
+    Overrides {
+      Name: "cs:Panzer3GARAGEMODEL"
+      AssetReference {
+        Id: 616489956946034427
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

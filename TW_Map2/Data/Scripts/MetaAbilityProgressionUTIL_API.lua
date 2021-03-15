@@ -564,4 +564,38 @@ function API.DailyShopConvertToString(tbl)
 end
 
 ------------------------------------------------------------------------------------------------------------------------
+-- RETRIEVE TANK DATA
+------------------------------------------------------------------------------------------------------------------------
+--@param int id => Id of the tank
+--@return table tankData => table consisting of player's progression for the tank
+function API.RetrieveTankDataById(id, playerTanks)
+	id = NumConverter(id)
+	local tankData = {}
+	for k, tank in ipairs(playerTanks) do
+		if(tank.id == id) then
+			print("Tank found with Id: " .. tostring(id))
+			tankData.id = tank.id
+			tankData.hasWeapon = tank.hasWeapon
+			tankData.hasArmor = tank.hasArmor
+			tankData.hasEngine = tank.hasEngine
+			return tankData
+		end
+	end
+	
+	-- If there are no matches, then something went wrong. Issue a warning and assign default tank
+	warn("No player owned tank was found with the Id of: " .. tostring(id))
+	return CONST.GetDefaultTankData()
+end
+
+function API.RetrieveTankNameById(id, tankCollection)
+	for i, tank in ipairs(tankCollection) do
+		if(tank:GetCustomProperty("ID") == id) then
+			return tank:GetCustomProperty("Name")
+		end
+	end
+	warn("Tank not found with Id: " .. id)
+	return "M3 Stuart"
+end
+
+------------------------------------------------------------------------------------------------------------------------
 return API

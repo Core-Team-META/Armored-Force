@@ -96,6 +96,8 @@ end
 
 function InitializeComponent()
 
+	loadEquippableTanks.clickedEvent:Connect(LoadEquippableTanks)
+
 	defaultViewUI.visibility = Visibility.INHERIT
 	
 	defaultViewUI.isEnabled = false
@@ -127,12 +129,17 @@ function LoadEquippableTanks()
 	Task.Wait()
 	local count = 0
 	for i, tank in ipairs(localPlayer.clientUserData.techTreeProgress) do
-		local button = World.SpawnAsset(equipTankButton, {parent = equipTankScrollPanel})
-		button.name = tank.id
-		button.y = count * Y_OFFSET
-		button.clickedEvent:Connect(EquipTank)
-		button.text = tank.name
-		count = count + 1
+	
+		print(tank.name .. " : " .. tostring(tank.purchased))
+	
+		if tank.purchased then
+			local button = World.SpawnAsset(equipTankButton, {parent = equipTankScrollPanel})
+			button.name = tank.id
+			button.y = count * Y_OFFSET
+			button.clickedEvent:Connect(EquipTank)
+			button.text = tank.name
+			count = count + 1
+		end
 	end
 end
 
@@ -152,4 +159,3 @@ InitializeComponent()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
-loadEquippableTanks.clickedEvent:Connect(LoadEquippableTanks)

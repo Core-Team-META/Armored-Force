@@ -20,10 +20,12 @@ Gives a specific equipment to every player on spawn, and handles destroying them
 replaces each equipment on respawn to reset the state.
 --]]
 
-local gsm = World.FindObjectByName("GAMESTATE_MainGameStateManagerServer")
+--local gsm = World.FindObjectByName("GAMESTATE_MainGameStateManagerServer")
 
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
+local MAIN_MANAGER_SERVER = script:GetCustomProperty("MainManagerServer"):WaitForObject()
+
 
 -- User exposed properties
 local EQUIPMENT_TEMPLATE = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate")
@@ -82,6 +84,25 @@ local tankBurning = false
 
 local selectedEquipment = {}
 
+
+function GetPlayer(playerId)
+	
+	local playerList = Game.GetPlayers()
+	
+	for _, player in pairs(playerList) do
+	
+		if player.id == playerId then
+		
+			return player 
+			
+		end
+		
+	end
+	
+	return nil
+
+end
+
 -- bool AppliesToPlayersTeam(Player)
 -- Returns whether this player should get equipment given the team setting
 function AppliesToPlayersTeam(player)
@@ -98,10 +119,12 @@ function GivePlayerEquipment(player)
 
 	if not selectedEquipment[player] then
 	
-		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE)
+		selectedEquipment[player] = GetEquippedTankTemplate(player, tonumber(player.serverUserData.selectedTank))
+			
+		equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player))
 		
 	else 
-	
+		
 		equipment[player] = World.SpawnAsset(selectedEquipment[player])
 	
 	end
@@ -117,7 +140,7 @@ function RemovePlayerEquipment(player)
 	if equipment[player] and equipment[player]:IsValid() then
 		equipment[player]:Unequip()
 		
-		Task.Wait(0.5)
+		Task.Wait(0.1)
 
 		-- Have to check IsValid() again, because unequip may have destroyed this equipment
 		if equipment[player]:IsValid() then			
@@ -131,11 +154,11 @@ end
 --On binding press, switch tank
 function OnBindingPressed(player,bindingPressed)
 
- 	if gsm:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
+--[[  	if gsm:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
 	
 		return
 		
-	end
+	end ]]
 	--burned tank
 	if bindingPressed == "ability_extra_40" and tankBurning == false then
 		local BurnedTank = equipment[player]:GetCustomProperty("BurnedTank")
@@ -480,39 +503,93 @@ function OnBindingPressed(player,bindingPressed)
 		end
 end
 
+function GetEquippedTankTemplate(player, id)
+	-- TODO: This is incomplete
+	local equippedTankId = id or player:GetResource("EquippedTank")
+	if(equippedTankId == 1) then
+		return EQUIPMENT_TEMPLATE19
+	elseif(equippedTankId == 2) then
+		return EQUIPMENT_TEMPLATE20
+	elseif(equippedTankId == 3) then
+		return EQUIPMENT_TEMPLATE3
+	elseif(equippedTankId == 4) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 5) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 6) then
+		return EQUIPMENT_TEMPLATE26
+	elseif(equippedTankId == 7) then
+		return EQUIPMENT_TEMPLATE7
+	elseif(equippedTankId == 8) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 9) then
+		return EQUIPMENT_TEMPLATE21
+	elseif(equippedTankId == 10) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 11) then
+		return EQUIPMENT_TEMPLATE30
+	elseif(equippedTankId == 12) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 13) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 14) then
+		return EQUIPMENT_TEMPLATE28
+	elseif(equippedTankId == 15) then
+		return EQUIPMENT_TEMPLATE6
+	
+	elseif(equippedTankId == 18) then
+		return EQUIPMENT_TEMPLATE20
+	else
+		print("Returning default")
+		return EQUIPMENT_TEMPLATE6
+	end
+end
+
+function ChangeEquippedTank(player, id)
+	
+	selectedEquipment[player] = GetEquippedTankTemplate(player, tonumber(id))
+	
+	player.serverUserData.selectedTank = id
+
+	RemovePlayerEquipment(player)
+	GivePlayerEquipment(player)
+end
+
 -- nil OnPlayerRespawned(Player)
 -- Replace the equipment if ReplaceOnEachRespawn
 function OnPlayerRespawned(player)
+	
 	RemovePlayerEquipment(player)
 	
-	if gsm:GetCustomProperty("GameState") == "VICTORYSTATE" then
+	if MAIN_MANAGER_SERVER:GetCustomProperty("GameState") ~= "VICTORYSTATE" then
+	
+		GivePlayerEquipment(player)
+		
+	else 
 	
 		player:SetVisibility(true)
-	
-		return
+		player.animationStance = "unarmed_stance"
 		
 	end
-	
-	GivePlayerEquipment(player)
-
+		
 end
 
 -- nil OnPlayerJoined(Player)
 -- Gives original equipment
 function OnPlayerJoined(player)
-	player.bindingPressedEvent:Connect(OnBindingPressed)
-
-	if TEAM ~= 0 then
-		playerTeams[player] = player.team
-	end
+	--player.bindingPressedEvent:Connect(OnBindingPressed)
 
 	if REPLACE_ON_EACH_RESPAWN then
 		player.respawnedEvent:Connect(OnPlayerRespawned)
 	end
-
-	if AppliesToPlayersTeam(player) then
-		GivePlayerEquipment(player)
+	
+	while not player.serverUserData.selectedTank do
+	
+		Task.Wait()
+		
 	end
+	
+	GivePlayerEquipment(player)
 end
 
 -- nil OnPlayerLeft(Player)
@@ -560,3 +637,5 @@ end
 -- Initialize
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, id)
+Events.Connect("SET_EQUIPPED_TANK", ChangeEquippedTank, player, id)
