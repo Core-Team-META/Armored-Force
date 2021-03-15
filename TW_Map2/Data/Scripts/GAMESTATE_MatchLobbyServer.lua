@@ -1,11 +1,11 @@
-﻿local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local lobbyCountdown = script:GetCustomProperty("LobbyCountdown")
 
 local timerTask = nil
 
-local timer = 0
+local timer = lobbyCountdown
 
 function StateSTART(manager, propertyName)
 
@@ -33,15 +33,13 @@ function CountdownTask()
 
 	script:SetNetworkedCustomProperty("Timer", timer)
 	
-	local count = Game.GetPlayers()
-	
 	if timer <= 0 then
 	
 		StateEND()
 		
 	end
 		
-	if #count < 2 then
+	if #Game.GetPlayers() < 2 then
 	
 		timer = lobbyCountdown
 		
@@ -59,7 +57,7 @@ function StateEND()
 	timerTask = nil
 	
 	ReliableEvents.Broadcast("CHANGESTATE", "LOBBYSTATE")
-
+	
 end
 
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)

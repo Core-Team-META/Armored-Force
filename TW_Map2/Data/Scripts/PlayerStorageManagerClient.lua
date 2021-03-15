@@ -54,7 +54,9 @@ function RetrieveData()
             LOCAL_PLAYER.clientUserData.techTreeProgress = tankEntryCollection
 
             -- DEBUG print tank entries           
-            UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
+            -- UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
+            
+            Events.Broadcast("TankClientDataSet")
             
             return
         end

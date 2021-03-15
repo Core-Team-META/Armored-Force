@@ -334,7 +334,7 @@ function BindingPressed(player, action)
 	
 		controlTracker[4] = true
 		
-	elseif action == "ability_primary" then
+	elseif action == "ability_primary" and player.lookControlMode == LookControlMode.RELATIVE then
 	
 		holdFire = true
 	

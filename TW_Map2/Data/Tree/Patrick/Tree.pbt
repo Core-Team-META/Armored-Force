@@ -1,36 +1,6 @@
 Name: "Patrick"
 RootId: 11544850952862364982
 Objects {
-  Id: 11709714603911612450
-  Name: "TANK_TEMPLATE_READ_ME"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11544850952862364982
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9775702453277003375
-    }
-  }
-}
-Objects {
   Id: 3881357346618484820
   Name: "GAMESTATE_Components"
   Transform {
@@ -13555,7 +13525,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:GameState"
-      String: ""
+      String: "LOBBYSTATE"
     }
     Overrides {
       Name: "cs:Timer"
@@ -21403,5 +21373,35 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW_Settings"
+  }
+}
+Objects {
+  Id: 11709714603911612450
+  Name: "TANK_TEMPLATE_READ_ME"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11544850952862364982
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9775702453277003375
+    }
   }
 }

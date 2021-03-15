@@ -47,12 +47,14 @@ function OnPlayerJoined(player)
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
+	--[[
 	print("-----PRINTING SHARED STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
 	print("-----FINISHED PRINTING SHARED STORAGE-----")
 	print("-----PRINTING LOCAL STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetPlayerData(player))
 	print("-----FINISHED PRINTING LOCAL STORAGE-----")
+	]]
 end
 
 function OnPlayerLeft(player)
@@ -73,21 +75,18 @@ function CheckAndSetSharedStorageDefault(player)
 	
 	SetTankProgressionDataForServer(playerSharedStorage[CONSTANTS_API.PROGRESS.DATA], player)	
 	
-	print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
-	
 	if playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]  then
-	
-		player.serverUserData.selectedTank = playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] 
 		
-		player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(player.serverUserData.selectedTank))
+		Events.Broadcast("SET_EQUIPPED_TANK", player, playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT])
 		
 	else 
-	
-		player.serverUserData.selectedTank = "01"
 		
-		player:SetResource(CONSTANTS_API.GetEquippedTankResource(), 1)
+		playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = "01"
+		Events.Broadcast("SET_EQUIPPED_TANK", player, "01")
 		
 	end
+	
+	--print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 	
 	if(player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
 		playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()
@@ -138,6 +137,8 @@ function LoadAndSetDataFromSharedStorage(player)
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		player:SetResource(UTIL_API.GetTankRPString(i), playerSharedStorage[UTIL_API.GetTankRPString(i)])
 	end
+	
+	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES])
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY])
@@ -162,7 +163,7 @@ function SavePlayerDataIntoSharedStorage(player)
 	
 	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = ConvertTechTreeProgressToDataString(player)
 	
-	playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = player.serverUserData.selectedTank
+	playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT] = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
 
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		playerSharedStorage[UTIL_API.GetTankRPString(i)] = player:GetResource(UTIL_API.GetTankRPString(i))
@@ -240,9 +241,9 @@ function SetNewPlayerProgression(playerSharedStorage)
 end
 
 function SetTankProgressionDataForServer(dataString, player)
-	print("Saving tank data on server. Data string: " .. dataString)
+	--print("Saving tank data on server. Data string: " .. dataString)
    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
-    print("Finished converting string into table.")
+   -- print("Finished converting string into table.")
     
     local progressionTable = {}
            
@@ -315,7 +316,8 @@ function ConvertTechTreeProgressToDataString(player)
 	
 	end
 	
-	print("PROGRESS CONVERTED TO STRING: " .. dataString)
+	-- DEBUG
+	--print("PROGRESS CONVERTED TO STRING: " .. dataString)
 	
 	return dataString
 
@@ -337,7 +339,7 @@ end
 function ChangeEquippedTank(player, tankId)
 	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(tankId))
 	-- DEBUG
-	print("Set player's equipped tank to: " .. tankId)
+	--print("Set player's equipped tank to: " .. tankId)
 end
 
 function AllowRetrieval(player)
