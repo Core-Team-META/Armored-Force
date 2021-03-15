@@ -11,7 +11,6 @@ local DATA_TRANSFER_OBJECT = script:GetCustomProperty("DataTransferObject")
 
 -- LOCAL PROPERTIES
 local DELIMITER = "|"
-local CAN_RETRIEVE = {}
 
 ----------------------------------------------------------------------------------------------
 
@@ -47,14 +46,14 @@ function OnPlayerJoined(player)
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
-	--[[
+
 	print("-----PRINTING SHARED STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
 	print("-----FINISHED PRINTING SHARED STORAGE-----")
 	print("-----PRINTING LOCAL STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetPlayerData(player))
 	print("-----FINISHED PRINTING LOCAL STORAGE-----")
-	]]
+
 end
 
 function OnPlayerLeft(player)
@@ -97,17 +96,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local dataTransferObject = World.SpawnAsset(DATA_TRANSFER_OBJECT, {parent = DATA_TRANSFER})
     dataTransferObject:SetNetworkedCustomProperty("OwnerId", player.id)
     dataTransferObject:SetNetworkedCustomProperty("Data", playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
-    
-    Task.Wait()
-    
- 	while not CAN_RETRIEVE[player.id] do
-	
-		Task.Wait()
-		
-	end   
-    
-    Events.BroadcastToPlayer(player, "RetrieveData")
-		
+    		
 	if(playerSharedStorage[CONSTANTS_API.SILVER] == nil) then playerSharedStorage[CONSTANTS_API.SILVER] = 0 end
 
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
@@ -342,12 +331,7 @@ function ChangeEquippedTank(player, tankId)
 	--print("Set player's equipped tank to: " .. tankId)
 end
 
-function AllowRetrieval(player)
-	CAN_RETRIEVE[player.id] = true
-end
-
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)
-Events.ConnectForPlayer("ReadyToRetrive", AllowRetrieval)
