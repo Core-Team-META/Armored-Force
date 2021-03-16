@@ -22,8 +22,9 @@ local debrisGroup = script:GetCustomProperty("DebrisGroup"):WaitForObject()
 local destructionTrigger = script.parent
 
 function handleOverlap(trigger, object)
-    if object ~= nil and object:IsA("Trigger") and object.name == "ClientCollisionTrigger" then
     
+    if object ~= nil and object:IsA("Trigger") and object.name == "ClientCollisionTrigger" then
+        
          -- Apply SFX & VFX
         if Object.IsValid(FXLocation01) then
             World.SpawnAsset(destructionFX01, { position = FXLocation01:GetWorldPosition() })

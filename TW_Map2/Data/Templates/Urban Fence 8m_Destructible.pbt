@@ -15,10 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8074590401984988960
-        ChildIds: 3135771333122081923
-        ChildIds: 14730174967051635256
-        ChildIds: 11004554866094300076
+        ParentId: 4781671109827199097
+        ChildIds: 2167919809312087273
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -33,16 +31,46 @@ Assets {
         }
       }
       Objects {
+        Id: 2167919809312087273
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13329140530865599377
+        ChildIds: 3135771333122081923
+        ChildIds: 14730174967051635256
+        ChildIds: 11004554866094300076
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
         Id: 3135771333122081923
         Name: "DestructionTrigger"
         Transform {
           Location {
-            X: 394.908936
-            Y: 0.00131225586
+            X: 394.908783
+            Y: 0.00148010254
             Z: 206.123322
           }
           Rotation {
-            Yaw: 180
+            Yaw: -179.999985
           }
           Scale {
             X: 8.18239307
@@ -50,7 +78,7 @@ Assets {
             Z: 4.56683397
           }
         }
-        ParentId: 13329140530865599377
+        ParentId: 2167919809312087273
         ChildIds: 12947871024335803755
         ChildIds: 18182572195206746646
         ChildIds: 1176556052708503635
@@ -146,9 +174,9 @@ Assets {
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 44.2894287
-            Y: 18.6129055
-            Z: 11.2379332
+            X: 44.2896118
+            Y: 18.61129
+            Z: -25.1818199
           }
           Rotation {
           }
@@ -177,9 +205,9 @@ Assets {
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -45.9087257
-            Y: -8.36523151
-            Z: 3.88608408
+            X: -45.9085312
+            Y: -8.36698151
+            Z: -32.5336876
           }
           Rotation {
           }
@@ -208,11 +236,11 @@ Assets {
         Name: "DebrisGroup"
         Transform {
           Location {
-            X: 405.15451
-            Y: 0.000122070313
+            X: 405.154968
+            Y: 3.81469727e-06
           }
           Rotation {
-            Yaw: 180
+            Yaw: -179.999985
           }
           Scale {
             X: 1
@@ -220,7 +248,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13329140530865599377
+        ParentId: 2167919809312087273
         ChildIds: 13449556780515261628
         ChildIds: 11496917380634662132
         ChildIds: 8854811441536523083
@@ -275,15 +303,6 @@ Assets {
               R: 0.125
               G: 0.125
               B: 0.125
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 0.636424
-              B: 0.100000024
               A: 1
             }
           }
@@ -349,15 +368,6 @@ Assets {
               R: 0.125
               G: 0.125
               B: 0.125
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 0.636424
-              B: 0.100000024
               A: 1
             }
           }
@@ -541,11 +551,11 @@ Assets {
         Name: "RemoveGroup"
         Transform {
           Location {
-            X: 405.15451
-            Y: 0.000122070313
+            X: 405.154968
+            Y: 3.81469727e-06
           }
           Rotation {
-            Yaw: 180
+            Yaw: -179.999985
           }
           Scale {
             X: 1
@@ -553,7 +563,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13329140530865599377
+        ParentId: 2167919809312087273
         ChildIds: 17529070388169962532
         ChildIds: 6538536476205712988
         Collidable_v2 {
@@ -624,15 +634,6 @@ Assets {
               A: 1
             }
           }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 0.636424
-              B: 0.100000024
-              A: 1
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -700,15 +701,6 @@ Assets {
               R: 0.125
               G: 0.125
               B: 0.125
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 0.636424
-              B: 0.100000024
               A: 1
             }
           }

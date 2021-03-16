@@ -185,6 +185,7 @@ Objects {
   ChildIds: 16212583912936784312
   ChildIds: 5997813529489902375
   ChildIds: 5061190506204519907
+  ChildIds: 10072760851990586983
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -196,6 +197,58 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10072760851990586983
+  Name: "Decal Stains Round 01"
+  Transform {
+    Location {
+      X: -22551.209
+      Y: -4065.16724
+      Z: -220.8927
+    }
+    Rotation {
+      Yaw: -71.1394653
+    }
+    Scale {
+      X: 2.95634699
+      Y: 19.7666168
+      Z: 1.78432727
+    }
+  }
+  ParentId: 9639508352816994492
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.684
+        G: 0.550574422
+        B: 0.320112
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13650699884663610996
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -2701,14 +2754,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 21144.5078
-      Y: -20351.3047
-      Z: -79.8855
+      X: 24091.3965
+      Y: -23172.9043
+      Z: -60.3475342
     }
     Rotation {
       Pitch: -1.75219727
-      Yaw: 35.4863434
-      Roll: 0.364143759
+      Yaw: 35.4863319
+      Roll: 1.94383454
     }
     Scale {
       X: 2.95634699
@@ -2809,14 +2862,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 17950.2324
-      Y: -13482.1084
-      Z: -40.676239
+      X: 20419.1543
+      Y: -11274.9785
+      Z: -211.218567
     }
     Rotation {
-      Pitch: -8.80871582
-      Yaw: -52.9471436
-      Roll: 1.94537437
+      Pitch: -8.32550049
+      Yaw: -63.2305
+      Roll: 1.24443591
     }
     Scale {
       X: 2.95634699
@@ -2863,19 +2916,19 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 18883.5801
-      Y: -14708.5469
-      Z: -104.635803
+      X: 18881.2168
+      Y: -14705.0859
+      Z: -353.618835
     }
     Rotation {
-      Pitch: 5.18554783
-      Yaw: -52.473877
-      Roll: 1.93027258
+      Pitch: -5.58303833
+      Yaw: -52.8368225
+      Roll: -0.275482178
     }
     Scale {
-      X: 2.95634699
-      Y: 19.7666168
-      Z: 1.78432727
+      X: 3
+      Y: 19.75
+      Z: 2.5
     }
   }
   ParentId: 9639508352816994492
@@ -3023,9 +3076,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 16736.084
-      Y: -12358.0566
-      Z: -76.1140137
+      X: 16739.3848
+      Y: -12366.4424
+      Z: -158.930695
     }
     Rotation {
       Pitch: 5.96556187
@@ -4207,9 +4260,9 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -23344.7383
-      Y: -5225.91602
-      Z: 126.989151
+      X: -28093.5801
+      Y: -7116.49219
+      Z: -143.066956
     }
     Rotation {
       Pitch: 4.38302755
@@ -4261,14 +4314,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -17154.6699
-      Y: -3398.7146
-      Z: -57.8436432
+      X: -16406.6953
+      Y: -3048.83228
+      Z: -367.154175
     }
     Rotation {
-      Pitch: 4.38302755
-      Yaw: 111.940292
-      Roll: -1.22219849
+      Pitch: -11.1229248
+      Yaw: 112.272842
+      Roll: -1.24197388
     }
     Scale {
       X: 2.95634699
@@ -4369,14 +4422,12 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -17180.6582
-      Y: -1282.3064
-      Z: -84.5286865
+      X: -21426.332
+      Y: -2908.33081
+      Z: -294.09552
     }
     Rotation {
-      Pitch: -8.8352356
-      Yaw: 112.223763
-      Roll: 1.2343148
+      Yaw: -71.1394958
     }
     Scale {
       X: 2.95634699
@@ -4423,14 +4474,14 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -21229.4414
-      Y: -2943.15137
-      Z: -123.778625
+      X: -21233.5156
+      Y: -2946.94434
+      Z: -335.362762
     }
     Rotation {
-      Pitch: -8.8352356
-      Yaw: 112.224014
-      Roll: -1.42437744
+      Pitch: -5.2069397
+      Yaw: 112.132927
+      Roll: -1.41333008
     }
     Scale {
       X: 2.95634699
