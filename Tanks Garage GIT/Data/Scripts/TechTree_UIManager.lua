@@ -39,6 +39,11 @@ local topSpeedSubStatChange = script:GetCustomProperty("TopSpeedSubStatChange"):
 local hullTraverseSubStatChange = script:GetCustomProperty("HullTraverseSubStatChange"):WaitForObject()
 local turretSubStatChange = script:GetCustomProperty("TurretSubStatChange"):WaitForObject()
 local elevationSubStatChange = script:GetCustomProperty("ElevationSubStatChange"):WaitForObject()
+local upgradeWeapon = script:GetCustomProperty("UpgradeWeapon"):WaitForObject()
+local upgradeArmor = script:GetCustomProperty("UpgradeArmor"):WaitForObject()
+local upgradeEngine = script:GetCustomProperty("UpgradeEngine"):WaitForObject()
+local upgradeTank = script:GetCustomProperty("UpgradeTank"):WaitForObject()
+local upgradeTankCost = script:GetCustomProperty("UpgradeTankCost"):WaitForObject()
 ------------------------------------------------------------------------------------------------------
 local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
 
@@ -497,6 +502,36 @@ function PopulateDetailsModal(tank)
 	local elevationUpgraded = tank:GetCustomProperty("ElevationUpgraded")
 	local maxDepth = tank:GetCustomProperty("MaxDepth")
 	
+	-- Setting default states
+	local researchedTank = false
+	local purchasedTank = false
+	local weaponProgress = false
+	local armorProgress = false
+	local engineProgress = false
+	-- Get the player's tank data
+	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
+		if(t.id == tank:GetCustomProperty("ID")) then			
+			researchedTank = t.researched
+			purchasedTank = t.purchased
+			weaponProgress = t.weaponProgress
+			armorProgress = t.armorProgress
+			engineProgress = t.engineProgress			
+		end
+	end
+	
+	if(purchasedTank) then
+		upgradeTank.text = "Equip"
+		upgradeTankCost.visibility = Visibility.FORCE_OFF
+	elseif(purchasedTank) then
+		upgradeTank.text = "Purchase"
+		upgradeTankCost.text = "Cost " .. tostring(tank:GetCustomProperty("PurchaseCost"))
+		upgradeTankCost.visibility = Visibility.FORCE_ON
+	else
+		upgradeTank.text = "Research"
+		upgradeTankCost.text = "Cost " .. tostring(tank:GetCustomProperty("ResearchCost"))
+		upgradeTankCost.visibility = Visibility.FORCE_ON
+	end
+	
 	reloadSubStat.text = "Reload: " .. string.format("%.1f", reload) .. " s"
 	damageSubStat.text = "Damage: " .. string.format(math.floor(damage)) .. "pt"
 	reloadSubStatChange.text = "-" .. string.format("%.1f", reload - reloadUpgrade) .. " s"
@@ -511,6 +546,46 @@ function PopulateDetailsModal(tank)
 	turretSubStatChange.text = "+" .. tostring(turretTraverseUpgrade - turretTraverse) .. " deg/sec"
 	elevationSubStat.text = "Elevation/Depression: +" .. tostring(elevation) .. "/" .. tostring(maxDepth)
 	elevationSubStatChange.text = "+" .. tostring(elevationUpgraded - elevation) .. "/0" -- Is there always no change in max depth?
+	
+	if(purchasedTank) then
+		-- Hide upgrade buttons if they aren't needed
+		if(tostring(weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
+			print("weapon purchased")
+			upgradeWeapon.visibility = Visibility.FORCE_OFF
+		elseif(tostring(weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
+			print("weapon researched")
+			upgradeWeapon.visibility = Visibility.FORCE_ON
+			upgradeWeapon.text = "P " .. tostring(tank:GetCustomProperty("WeaponPurchaseCost"))
+		elseif(tostring(weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+			print("no weapon progress")
+			upgradeWeapon.visibility = Visibility.FORCE_ON
+			upgradeWeapon.text = "R " .. tostring(tank:GetCustomProperty("WeaponResearchCost"))
+		else
+			warn("Weapon progress not found with value: " .. tostring(weaponProgress))
+		end
+		if(tostring(armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
+			upgradeArmor.visibility = Visibility.FORCE_OFF
+		elseif(tostring(armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
+			upgradeArmor.visibility = Visibility.FORCE_ON
+			upgradeArmor.text = "P " .. tostring(tank:GetCustomProperty("ArmorPurchaseCost"))
+		elseif(tostring(armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+			upgradeArmor.visibility = Visibility.FORCE_ON
+			upgradeArmor.text = "R " .. tostring(tank:GetCustomProperty("ArmorResearchCost"))
+		else
+			warn("Armor progress not found with value: " .. tostring(armorProgress))
+		end
+		if(tostring(engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
+			upgradeEngine.visibility = Visibility.FORCE_OFF
+		elseif(tostring(engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
+			upgradeEngine.visibility = Visibility.FORCE_ON
+			upgradeEngine.text = "P  " .. tostring(tank:GetCustomProperty("MobilityPurchaseCost"))
+		elseif(tostring(engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+			upgradeEngine.visibility = Visibility.FORCE_ON
+			upgradeEngine.text = "R  " .. tostring(tank:GetCustomProperty("MobilityResearchCost"))
+		else
+			warn("Engine progress not found with value: " .. tostring(engineProgress))
+		end
+	end
 end
 
 Init()
