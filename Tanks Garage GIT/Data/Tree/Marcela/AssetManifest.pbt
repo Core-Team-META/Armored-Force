@@ -260,6 +260,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16203128798160426288
+  Name: "Ambience Room Tone Hall Interior Empty Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_room_tone_hall_interior_empty_loop_01_Cue_ref"
+  }
+}
+Assets {
   Id: 16198346205888411814
   Name: "Urban Fence Door"
   PlatformAssetType: 1
@@ -1052,6 +1061,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10850769815684373087
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
   Id: 10813994503165371451
   Name: "Tank Muzzle Flash VFX"
   PlatformAssetType: 8
@@ -1067,6 +1085,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_scf_ship_engine_003_ref"
+  }
+}
+Assets {
+  Id: 10568679937543177299
+  Name: "Ambience Cave Drips 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_cave_drips_01_Cue_ref"
   }
 }
 Assets {
@@ -1346,6 +1373,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
+  Id: 7790074985852139766
+  Name: "Electric Hum Room Tone Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_electric_hum_room_tone_loop_01_Cue_ref"
   }
 }
 Assets {
