@@ -60,6 +60,12 @@ function StateEND()
 	
 end
 
+function SendPlayerToGarage(player)
+
+	player:TransferToGame("27f652/armored-force-garage")
+end
+
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 
 StateSTART(mainGameStateManager, "GameState")
+Events.ConnectForPlayer("SEND_TO_GARAGE", SendPlayerToGarage)

@@ -42,6 +42,14 @@ function OnChangeState(previousState)
 		
 	elseif previousState == "LOBBYSTATE" then
 	
+		for _, player in ipairs(Game.GetPlayers()) do
+		
+			player.lookControlMode = LookControlMode.RELATIVE
+			
+			tankEquipToggle[player.id] = false 
+			
+		end
+	
 		script:SetNetworkedCustomProperty("GameState", "MATCHSTATE")
 		
 		currentState = "MATCHSTATE"
@@ -110,7 +118,7 @@ function Test(player, binding)
 		
 		tankEquipToggle[player.id] = true
 		
-		print("lookMode toggle on")
+		--print("lookMode toggle on")
 		
 	elseif binding == "ability_extra_38" and tankEquipToggle[player.id] and currentState == "LOBBYSTATE" then
 	
@@ -118,7 +126,7 @@ function Test(player, binding)
 		
 		tankEquipToggle[player.id] = false 
 		
-		print("lookMode toggle off")
+		--print("lookMode toggle off")
 		
 	end
 	

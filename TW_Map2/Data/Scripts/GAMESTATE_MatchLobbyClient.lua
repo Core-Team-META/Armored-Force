@@ -9,6 +9,9 @@ local timerText = script:GetCustomProperty("TimerText"):WaitForObject()
 local equipTankButton = script:GetCustomProperty("EquipTankButton")
 local equipTankPanel = script:GetCustomProperty("EquipTankPanel"):WaitForObject()
 local equipTankScrollPanel = script:GetCustomProperty("EquipTankScrollPanel"):WaitForObject()
+
+local returnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject()
+
 local Y_OFFSET = 60
 
 local timerTask = nil
@@ -49,6 +52,8 @@ function StateSTART(manager, propertyName)
 			equipTankPanel.isEnabled = false
 		
 			UI.SetCursorVisible(false)
+			
+			UI.SetCanCursorInteractWithUI(false)
 			
 			tankEquipToggle = false 
 			
@@ -181,6 +186,14 @@ function EquipTank(button)
 	
 end
 
+function ReturnToTheGarage()
+
+	returnToGarage.isInteractable = false
+
+	ReliableEvents.BroadcastToServer("SEND_TO_GARAGE")
+
+end
+
 Initialize()
 
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
@@ -188,3 +201,4 @@ mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 StateSTART(mainGameStateManager, "GameState")
 
 Events.Connect("TankClientDataSet", LoadEquippableTanks)
+returnToGarage.clickedEvent:Connect(ReturnToTheGarage)

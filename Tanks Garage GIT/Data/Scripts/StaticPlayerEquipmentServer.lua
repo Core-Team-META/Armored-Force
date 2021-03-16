@@ -546,8 +546,8 @@ end
 function ChangeEquippedTank(player, id)
 	
 	selectedEquipment[player] = GetEquippedTankTemplate(player, tonumber(id))
-	
-	player.serverUserData.selectedTank = id
+
+
 
 	Events.BroadcastToPlayer(player, "CHANGE_EQUIPPED_TANK", tonumber(id))
 end
@@ -595,19 +595,10 @@ end
 function OnPlayerJoined(player)
 	--player.bindingPressedEvent:Connect(OnBindingPressed)
 
-	if TEAM ~= 0 then
-		playerTeams[player] = player.team
-	end
-
 	if REPLACE_ON_EACH_RESPAWN then
 		player.respawnedEvent:Connect(OnPlayerRespawned)
 	end
 	
-	--[[
-	if AppliesToPlayersTeam(player) then
-		GivePlayerEquipment(player)
-	end
-	]]
 end
 
 -- nil OnPlayerLeft(Player)
@@ -616,42 +607,6 @@ function OnPlayerLeft(player)
 	RemovePlayerEquipment(player)
 end
 
--- nil OnPlayerTeamChanged(Player)
--- Handles reassinging equipment if the player changes teams
---[[
-function OnPlayerTeamChanged(player)
-	RemovePlayerEquipment(player)
-	
-	if gsm:GetCustomProperty("GameState") == "VICTORYSTATE" then
-	
-		player:SetVisibility(true)
-	
-		return
-		
-	end
-
-	if AppliesToPlayersTeam(player) then
-		GivePlayerEquipment(player)
-	end
-end
-]]
--- nil Tick(float)
--- Handles players changing teams
---[[
-function Tick(deltaTime)
-	if TEAM ~= 0 then
-		for _, player in pairs(Game.GetPlayers()) do
-			local team = player.team
-
-			if team ~= playerTeams[player] then
-				OnPlayerTeamChanged(player)
-
-				playerTeams[player] = team
-			end
-		end
-	end
-end
-]]
 -- Initialize
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
