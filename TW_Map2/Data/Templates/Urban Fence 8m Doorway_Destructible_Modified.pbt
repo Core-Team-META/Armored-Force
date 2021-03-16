@@ -1,13 +1,13 @@
 Assets {
-  Id: 643519117551821547
-  Name: "Urban Fence 8m_Destructible"
+  Id: 7357660320337461679
+  Name: "Urban Fence 8m Doorway_Destructible_Modified"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 13329140530865599377
+      RootId: 7141950789900492679
       Objects {
-        Id: 13329140530865599377
-        Name: "Urban Fence 8m_Destructible"
+        Id: 7141950789900492679
+        Name: "Urban Fence 8m Doorway_Destructible_Modified"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 2167919809312087273
+        ChildIds: 14637062907432005837
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -31,7 +31,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2167919809312087273
+        Id: 14637062907432005837
         Name: "ClientContext"
         Transform {
           Location {
@@ -44,10 +44,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13329140530865599377
-        ChildIds: 3135771333122081923
-        ChildIds: 14730174967051635256
-        ChildIds: 11004554866094300076
+        ParentId: 7141950789900492679
+        ChildIds: 10532308301032726876
+        ChildIds: 18121043023761281612
+        ChildIds: 15543725538624382179
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -61,7 +61,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3135771333122081923
+        Id: 10532308301032726876
         Name: "DestructionTrigger"
         Transform {
           Location {
@@ -78,10 +78,10 @@ Assets {
             Z: 4.56683397
           }
         }
-        ParentId: 2167919809312087273
-        ChildIds: 12947871024335803755
-        ChildIds: 18182572195206746646
-        ChildIds: 1176556052708503635
+        ParentId: 14637062907432005837
+        ChildIds: 9005995858628403676
+        ChildIds: 4013526438732658664
+        ChildIds: 14290634126636389897
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -102,7 +102,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12947871024335803755
+        Id: 9005995858628403676
         Name: "DestructibleObject"
         Transform {
           Location {
@@ -115,7 +115,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 3135771333122081923
+        ParentId: 10532308301032726876
         UnregisteredParameters {
           Overrides {
             Name: "cs:DestructionFX01"
@@ -132,25 +132,25 @@ Assets {
           Overrides {
             Name: "cs:FXLocation01"
             ObjectReference {
-              SubObjectId: 1176556052708503635
+              SubObjectId: 14290634126636389897
             }
           }
           Overrides {
             Name: "cs:FXLocation02"
             ObjectReference {
-              SubObjectId: 18182572195206746646
+              SubObjectId: 4013526438732658664
             }
           }
           Overrides {
             Name: "cs:DebrisGroup"
             ObjectReference {
-              SubObjectId: 14730174967051635256
+              SubObjectId: 18121043023761281612
             }
           }
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
-              SubObjectId: 11004554866094300076
+              SubObjectId: 15543725538624382179
             }
           }
         }
@@ -170,13 +170,13 @@ Assets {
         }
       }
       Objects {
-        Id: 18182572195206746646
+        Id: 4013526438732658664
         Name: "FXLocation02"
         Transform {
           Location {
-            X: 44.2896118
-            Y: 18.61129
-            Z: -25.1818199
+            X: 44.2891502
+            Y: 18.5912209
+            Z: -19.1713257
           }
           Rotation {
           }
@@ -186,7 +186,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 3135771333122081923
+        ParentId: 10532308301032726876
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -201,13 +201,13 @@ Assets {
         }
       }
       Objects {
-        Id: 1176556052708503635
+        Id: 14290634126636389897
         Name: "FXLocation01"
         Transform {
           Location {
-            X: -45.9085312
-            Y: -8.36698151
-            Z: -32.5336876
+            X: -45.9083824
+            Y: -8.34684277
+            Z: -26.5231323
           }
           Rotation {
           }
@@ -217,7 +217,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 3135771333122081923
+        ParentId: 10532308301032726876
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -232,7 +232,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14730174967051635256
+        Id: 18121043023761281612
         Name: "DebrisGroup"
         Transform {
           Location {
@@ -248,11 +248,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2167919809312087273
-        ChildIds: 13449556780515261628
-        ChildIds: 11496917380634662132
-        ChildIds: 8854811441536523083
-        ChildIds: 465582513862040509
+        ParentId: 14637062907432005837
+        ChildIds: 11380106955479904734
+        ChildIds: 14172887236287154172
+        ChildIds: 9930013448814658309
+        ChildIds: 1266905515455190884
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -267,15 +267,15 @@ Assets {
         }
       }
       Objects {
-        Id: 13449556780515261628
-        Name: "Military Fence Pole - Connecting"
+        Id: 11380106955479904734
+        Name: "Military Fence Door"
         Transform {
           Location {
-            X: 405.154449
-            Y: -3.05175781e-05
+            X: -94.8448486
+            Y: 0.000578732346
           }
           Rotation {
-            Yaw: 179.999985
+            Yaw: 179.999954
           }
           Scale {
             X: 1
@@ -283,8 +283,159 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14730174967051635256
+        ParentId: 18121043023761281612
         UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 12224679477727788171
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 2753101109375824093
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.266
+              G: 0.203368351
+              B: 0.139118
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.292000026
+              G: 0.292000026
+              B: 0.292000026
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16198346205888411814
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14172887236287154172
+        Name: "Military Fence Pole - Connecting"
+        Transform {
+          Location {
+            X: 405.154541
+            Y: 0.000101895886
+          }
+          Rotation {
+            Yaw: 179.999954
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18121043023761281612
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 12224679477727788171
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2245166893642970858
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4667985850943700128
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9930013448814658309
+        Name: "Military Fence Doorway"
+        Transform {
+          Location {
+            X: 5.15466309
+            Y: 0.000239224755
+          }
+          Rotation {
+            Yaw: 179.999954
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18121043023761281612
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 2753101109375824093
+            }
+          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -298,11 +449,11 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
+            Name: "ma:Shared_Detail2:color"
             Color {
-              R: 0.125
-              G: 0.125
-              B: 0.125
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -314,7 +465,63 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9279130763178750287
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1266905515455190884
+        Name: "Military Fence Pole - Connecting"
+        Transform {
+          Location {
+            X: -394.844971
+            Y: 0.000376553391
+          }
+          Rotation {
+            Yaw: 179.999893
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18121043023761281612
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 12224679477727788171
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2245166893642970858
+            }
+          }
+        }
+        Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
         }
         CoreMesh {
           MeshAsset {
@@ -332,222 +539,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11496917380634662132
-        Name: "Military Fence Pole - Connecting"
-        Transform {
-          Location {
-            X: 5.15454
-            Y: 0.000151634216
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14730174967051635256
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2245166893642970858
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 12224679477727788171
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.125
-              G: 0.125
-              B: 0.125
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7720350652240094542
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8854811441536523083
-        Name: "Military Fence Panel"
-        Transform {
-          Location {
-            X: 205.154495
-            Y: 7.62939453e-05
-            Z: 210
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14730174967051635256
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 2753101109375824093
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2245166893642970858
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.125
-              G: 0.125
-              B: 0.125
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 472496642976630875
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 465582513862040509
-        Name: "Military Fence Panel"
-        Transform {
-          Location {
-            X: -194.845428
-            Y: 0.000213623047
-            Z: 210
-          }
-          Rotation {
-            Yaw: 179.999985
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14730174967051635256
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 2753101109375824093
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2245166893642970858
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.125
-              G: 0.125
-              B: 0.125
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 472496642976630875
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11004554866094300076
+        Id: 15543725538624382179
         Name: "RemoveGroup"
         Transform {
           Location {
@@ -563,9 +555,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2167919809312087273
-        ChildIds: 17529070388169962532
-        ChildIds: 6538536476205712988
+        ParentId: 14637062907432005837
+        ChildIds: 7975080267032717239
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -580,57 +571,83 @@ Assets {
         }
       }
       Objects {
-        Id: 17529070388169962532
-        Name: "Military Fence Crossbar - Panel"
+        Id: 7975080267032717239
+        Name: "Lock"
         Transform {
           Location {
-            X: 205.154388
-            Y: -14.9999084
-            Z: 210
+            X: 88.2101898
+            Y: 8.55995178
+            Z: 129.262421
           }
           Rotation {
-            Pitch: 44.9999123
-            Yaw: -3.61718921e-05
-            Roll: 179.999954
+            Pitch: -0.00112915039
+            Yaw: 179.99881
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.75
+            Z: 0.75
           }
         }
-        ParentId: 11004554866094300076
+        ParentId: 15543725538624382179
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 12224679477727788171
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail3:id"
-            AssetReference {
-              Id: 2245166893642970858
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 12224679477727788171
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2245166893642970858
+              Id: 818783603953564962
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.125
-              G: 0.125
-              B: 0.125
+              R: 0.266
+              G: 0.203368351
+              B: 0.139118
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Insides:color"
+            Color {
+              R: 0.266
+              G: 0.203368351
+              B: 0.139118
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Faces:color"
+            Color {
+              R: 0.266
+              G: 0.203368351
+              B: 0.139118
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Faces:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Insides:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Sides:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Sides:color"
+            Color {
+              R: 0.266
+              G: 0.203368351
+              B: 0.139118
               A: 1
             }
           }
@@ -646,90 +663,55 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5457962044230310640
+            Id: 276803573526988648
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
-              OverrideMass: true
-              Mass: 300
+              Mass: 100
+              LinearDamping: 0.01
             }
           }
         }
       }
-      Objects {
-        Id: 6538536476205712988
-        Name: "Military Fence Crossbar - Panel"
-        Transform {
-          Location {
-            X: -194.845428
-            Y: -14.9997864
-            Z: 210
-          }
-          Rotation {
-            Pitch: 44.9999123
-            Yaw: -179.999985
-            Roll: 5.54469489e-06
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11004554866094300076
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 12224679477727788171
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2245166893642970858
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.125
-              G: 0.125
-              B: 0.125
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5457962044230310640
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              OverrideMass: true
-              Mass: 300
-            }
-          }
-        }
+    }
+    Assets {
+      Id: 16198346205888411814
+      Name: "Urban Fence Door"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_mil_fence_door_01"
+      }
+    }
+    Assets {
+      Id: 818783603953564962
+      Name: "Metal Painted Old 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_painted_old_001_uv"
+      }
+    }
+    Assets {
+      Id: 4667985850943700128
+      Name: "Urban Fence Pole - Connecting Corner"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_mil_fence_pole_02_connect_002"
+      }
+    }
+    Assets {
+      Id: 9279130763178750287
+      Name: "Urban Fence Doorway"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_mil_fence_wall_01_door_001"
       }
     }
     Assets {
@@ -742,30 +724,12 @@ Assets {
       }
     }
     Assets {
-      Id: 7720350652240094542
-      Name: "Urban Fence Pole - Connecting"
+      Id: 276803573526988648
+      Name: "Frame End"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_mil_fence_pole_02_connect_001"
-      }
-    }
-    Assets {
-      Id: 472496642976630875
-      Name: "Urban Fence Panel"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_mil_fence_wall_01"
-      }
-    }
-    Assets {
-      Id: 5457962044230310640
-      Name: "Urban Fence Crossbar - Panel"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_mil_fence_crossbar_01"
+        AssetId: "sm_1B_tray_Ender"
       }
     }
     PrimaryAssetId {

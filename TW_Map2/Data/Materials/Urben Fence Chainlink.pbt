@@ -9,15 +9,40 @@ Assets {
       Overrides {
         Name: "color"
         Color {
-          R: 0.158333316
-          G: 0.76
-          B: 0.222086146
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
       Overrides {
         Name: "roughness_multiplier"
         Float: 1.5
+      }
+      Overrides {
+        Name: "gradient_color"
+        Color {
+          R: 3
+          G: 2.5257616
+          B: 1.977
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "gradient_falloff"
+        Float: 0.932928085
+      }
+      Overrides {
+        Name: "gradient_shift"
+        Float: 0.125686601
+      }
+      Overrides {
+        Name: "u_tiles"
+        Float: 3
+      }
+      Overrides {
+        Name: "v_tiles"
+        Float: 3
       }
     }
     Assets {
