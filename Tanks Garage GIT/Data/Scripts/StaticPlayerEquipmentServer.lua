@@ -20,11 +20,10 @@ Gives a specific equipment to every player on spawn, and handles destroying them
 replaces each equipment on respawn to reset the state.
 --]]
 
---local gsm = World.FindObjectByName("GAMESTATE_MainGameStateManagerServer")
-
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local MAIN_MANAGER_SERVER = script:GetCustomProperty("MainManagerServer"):WaitForObject()
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 
 
 -- User exposed properties
@@ -152,11 +151,6 @@ end
 --On binding press, switch tank
 function OnBindingPressed(player,bindingPressed)
 
---[[  	if gsm:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
-	
-		return
-		
-	end ]]
 	--burned tank
 	if bindingPressed == "ability_extra_40" and tankBurning == false then
 		local BurnedTank = equipment[player]:GetCustomProperty("BurnedTank")
@@ -547,7 +541,7 @@ function ChangeEquippedTank(player, id)
 	
 	selectedEquipment[player] = GetEquippedTankTemplate(player, tonumber(id))
 
-
+	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), id)
 
 	Events.BroadcastToPlayer(player, "CHANGE_EQUIPPED_TANK", tonumber(id))
 end
@@ -566,28 +560,22 @@ function OnPlayerRespawned(player)
 	
 		property = MAIN_MANAGER_SERVER:GetCustomProperty("P" .. tostring(i))
 	
-		for x in string.gmatch(property, "([^:]+)") do 
+		if string.find(property, player.id) then
 		
-			state = x
+			if not string.find(property, "GARAGE_STATE") then
 			
-			if player ~= GetPlayer(x) then
+				print(player.name .. "getting tank equipment")
 			
-				break 
-							
+				GivePlayerEquipment(player)
+				
 			end
-		
+			
+			return
+			
 		end
 		
 	end
 	
-	print(player.name .. " current state is " .. state)
-	
-	if state ~= "GARAGE_STATE" then
-	
-		GivePlayerEquipment(player)
-		
-	end
-
 end
 
 -- nil OnPlayerJoined(Player)
