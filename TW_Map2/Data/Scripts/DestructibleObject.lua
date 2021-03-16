@@ -1,4 +1,4 @@
-﻿-- Script by Antti Koponen. Feel free to modify/optimize
+-- Script by Antti Koponen. Feel free to modify/optimize
 -- Updated Dec 18. 2020
 -- 1. Plays SFX & VFX
 -- 2. Removes objects inside RemoveGroup folder
@@ -45,11 +45,13 @@ function handleOverlap(trigger, object)
         -- Activate debris physics for everything else
         for _, child in ipairs(debrisGroup:GetChildren()) do          
             child.isSimulatingDebrisPhysics = true
-            child.isCameraCollisionEnabled = false  
+            child.cameraCollision = 2
         end
                 
         -- Destroy unneeded trigger        
-        destructionTrigger:Destroy()
+        if Object.IsValid(destructionTrigger) then
+            destructionTrigger:Destroy()
+        end
     end
 end
 
