@@ -1992,5 +1992,5 @@ Assets {
       AssetId: "Barbed_Wire_Barrier_Template"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 79
 }

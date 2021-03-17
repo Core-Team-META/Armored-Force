@@ -2,7 +2,7 @@ Assets {
   Id: 16618620968398882842
   Name: "Custom Branch from Branches Cluster Big_terrain_branches"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 79
   CustomMaterialAsset {
     BaseMaterialId: 14132571530005516359
     ParameterOverrides {

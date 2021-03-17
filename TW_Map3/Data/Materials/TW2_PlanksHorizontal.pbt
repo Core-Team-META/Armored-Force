@@ -2,7 +2,7 @@ Assets {
   Id: 16222007757601024097
   Name: "TW2_PlanksHorizontal"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 79
   CustomMaterialAsset {
     BaseMaterialId: 17393961314713938594
     ParameterOverrides {

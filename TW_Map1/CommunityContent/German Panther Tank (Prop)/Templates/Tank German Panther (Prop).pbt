@@ -10515,6 +10515,6 @@ Assets {
   Marketplace {
     Description: "German Panther Tank (Prop)"
   }
-  SerializationVersion: 78
+  SerializationVersion: 79
   DirectlyPublished: true
 }

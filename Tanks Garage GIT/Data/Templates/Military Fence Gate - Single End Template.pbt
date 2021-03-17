@@ -691,5 +691,5 @@ Assets {
       AssetId: "Military_Fence_Gate_-_Single_End_Template"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 79
 }
