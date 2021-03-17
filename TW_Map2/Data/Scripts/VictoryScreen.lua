@@ -7,7 +7,6 @@
 	+ WitcherSilver (META) (Art) (https://www.coregames.com/user/e730c40ae54d4c588658667927acc6d8)
 
 --]]
-
 ------------------------------------------------------------------------------------------------------------------------
 --	EXTERNAL SCRIPTS AND APIS
 ------------------------------------------------------------------------------------------------------------------------
@@ -17,9 +16,7 @@ local VictoryScreenAPI = require(script:GetCustomProperty("API_VictoryScreen"))
 --	OBJECTS AND REFERENCES
 ------------------------------------------------------------------------------------------------------------------------
 local RootGroup = script:GetCustomProperty("Root"):WaitForObject()
-
-local gameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitForObject()
-
+local GameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitForObject()
 
 ------------------------------------------------------------------------------------------------------------------------
 --	CONSTANTS
@@ -29,25 +26,54 @@ local ACTIVATE_EVENT = RootGroup:GetCustomProperty("ActivateEvent")
 local DEACTIVATE_EVENT = RootGroup:GetCustomProperty("DeactivateEvent")
 
 ------------------------------------------------------------------------------------------------------------------------
---	LOCAL VARIABLES
-------------------------------------------------------------------------------------------------------------------------
-local active = false
-
-------------------------------------------------------------------------------------------------------------------------
 --	GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
+local deactivated = true
+
+function OnStateChanged(manager, propertyName)
+
+	if propertyName ~= "GameState" then
+	
+		return
+		
+	end
+	
+	local newState = GameStateManager:GetCustomProperty("GameState")
+
+	if newState == "VICTORY_STATE" then
+	
+		if deactivated then
+	
+			Activate()
+		
+		end
+		
+		deactivated = false
+		
+	elseif not deactivated then
+	
+		Deactivate()
+		
+		deactivated = true
+	
+	end
+	
+end
+	
+		
+
 --	nil Activate()
 --	Forcefully activates the victory Screen
-function Activate(playerList)
-	active = true
-	VictoryScreenAPI.TeleportPlayers(RootGroup, playerList)
+function Activate()
+
+	VictoryScreenAPI.TeleportPlayers(RootGroup)
+		
 end
 
 --	nil Activate()
 --	Forcefully deactivates the victory Screen
 function Deactivate()
-	active = false
 	local emptyData = {}
 	for _, player in pairs(Game.GetPlayers()) do
 		VictoryScreenAPI.OnPlayerRestored(RootGroup, player, emptyData)
@@ -60,38 +86,17 @@ end
 ------------------------------------------------------------------------------------------------------------------------
 
 --	Connect Game.roundEndEvent to teleport players if ACTIVATE_AUTOMATICALLY is true
-if(ACTIVATE_AUTOMATICALLY) then
+if (ACTIVATE_AUTOMATICALLY) then
 	Game.roundEndEvent:Connect(Activate)
 end
 
 --	Connect ACTIVATE_EVENT to teleport players
-if(ACTIVATE_EVENT and (#ACTIVATE_EVENT > 0)) then
+if (ACTIVATE_EVENT and (#ACTIVATE_EVENT > 0)) then
 	Events.Connect(ACTIVATE_EVENT, Activate)
 end
 --	Connect DEACTIVATE_EVENT to restore players
-if(DEACTIVATE_EVENT and (#DEACTIVATE_EVENT > 0)) then
+if (DEACTIVATE_EVENT and (#DEACTIVATE_EVENT > 0)) then
 	Events.Connect(DEACTIVATE_EVENT, Deactivate)
 end
 
-function OnGameStateChanged(gsm, property)
-
-	if property ~= "GameState" then
-	
-		return
-		
-	end
-	
-	local newState = gameStateManager:GetCustomProperty(property)
-	
-    if newState == "VICTORYSTATE" then
-        
-        Activate()
-        
-    elseif active then
-
-        Deactivate()        
-    end
-    
-end
-
-gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
+GameStateManager.networkedPropertyChangedEvent:Connect(OnStateChanged)

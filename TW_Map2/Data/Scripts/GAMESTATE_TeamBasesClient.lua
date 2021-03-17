@@ -34,7 +34,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCHSTATE" or not gameModeEnabled then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" or not gameModeEnabled then
 	
 		teamBasesUI.visibility = Visibility.FORCE_OFF
 		

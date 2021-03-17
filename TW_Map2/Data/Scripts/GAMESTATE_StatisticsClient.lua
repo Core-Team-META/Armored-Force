@@ -157,7 +157,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "STATSSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "STATS_STATE" then
 	
 		winner = -1
 	

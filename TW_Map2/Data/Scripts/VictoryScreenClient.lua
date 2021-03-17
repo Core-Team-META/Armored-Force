@@ -13,7 +13,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 local RootGroup = script:GetCustomProperty("Root"):WaitForObject()
 
-local gameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitForObject()
+local GameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitForObject()
 
 local Container = script:GetCustomProperty("Container"):WaitForObject()
 
@@ -33,13 +33,12 @@ local WinnerTriggers = Spawns:GetChildren()
 local WINNER_SORT_TYPE = RootGroup:GetCustomProperty("WinnerSortType")
 local WINNER_SORT_RESOURCE = RootGroup:GetCustomProperty("WinnerSortResource")
 
-local WINNER_SORT_TYPES = { "KILL_DEATH", "RESOURCE" }
+local WINNER_SORT_TYPES = {"KILL_DEATH", "RESOURCE"}
 
 ------------------------------------------------------------------------------------------------------------------------
 --	LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
 local UpdateUITask = nil
-
 ------------------------------------------------------------------------------------------------------------------------
 --	LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -48,7 +47,7 @@ local UpdateUITask = nil
 --	Returns the player object based on their name
 local function GetPlayer(players, name)
 	for _, player in pairs(players) do
-		if(player.name == name) then
+		if (player.name == name) then
 			return player
 		end
 	end
@@ -57,27 +56,24 @@ end
 --	nil UpdatePanelForPlayer(CoreObject, Player)
 --	Updates the visual for the player stats
 local function UpdatePanelForPlayer(panel, player)
-
 	if not Object.IsValid(player) then
-	
-		panel.visibility = Visibility .FORCE_OFF
-		
+		panel.visibility = Visibility.FORCE_OFF
+
 		return
-		
 	end
 
 	local nameTextLabel, deathsValueLabel, killsValueLabel, resourceValueLabel, resourcePanel =
-	panel:GetCustomProperty("NameText"):WaitForObject(),
-	panel:GetCustomProperty("DeathsValue"):WaitForObject(),
-	panel:GetCustomProperty("KillsValue"):WaitForObject(),
-	panel:GetCustomProperty("ResourceValue"):WaitForObject(),
-	panel:GetCustomProperty("ResourcePanel"):WaitForObject()
+		panel:GetCustomProperty("NameText"):WaitForObject(),
+		panel:GetCustomProperty("DeathsValue"):WaitForObject(),
+		panel:GetCustomProperty("KillsValue"):WaitForObject(),
+		panel:GetCustomProperty("ResourceValue"):WaitForObject(),
+		panel:GetCustomProperty("ResourcePanel"):WaitForObject()
 
 	nameTextLabel.text = player.name
 	killsValueLabel.text = tostring(player.kills)
 	deathsValueLabel.text = tostring(player.deaths)
 
-	if(WINNER_SORT_TYPE == "RESOURCE") then
+	if (WINNER_SORT_TYPE == "RESOURCE") then
 		resourceValueLabel.text = tostring(player:GetResource(WINNER_SORT_RESOURCE))
 		resourcePanel.visibility = Visibility.FORCE_ON
 	end
@@ -88,49 +84,37 @@ end
 --	nil UpdateUI()
 --	Checks the triggerboxes and updates each corresponding UI panel
 local function UpdateUI()
-
 	local selectedPlayer = nil
-	
-	for index, trigger in pairs(WinnerTriggers) do
-	
-		selectedPlayer = nil
-	
-		for _, object in pairs(trigger:GetOverlappingObjects()) do
-			
-			if object:IsA("Player") then
-			
-				selectedPlayer = object
-				
-				break
-			
-			end
-		
-		end
-		
-		UpdatePanelForPlayer(PlayerPanels[index], selectedPlayer)
-				
-	end
 
+	for index, trigger in pairs(WinnerTriggers) do
+		selectedPlayer = nil
+
+		for _, object in pairs(trigger:GetOverlappingObjects()) do
+			if object:IsA("Player") then
+				selectedPlayer = object
+
+				break
+			end
+		end
+
+		UpdatePanelForPlayer(PlayerPanels[index], selectedPlayer)
+	end
 end
 
 --	nil SendToVictoryScreen(string, table)
 --	Sets the camera and shows the UI for the victory Screen
-local function SendToVictoryScreen() -- topThreePlayerStats
-
+local function SendToVictoryScreen() -- topThreePlayerStats	
 	-- change the default camera rotation to look in the same direction so the head faces the right way
 	LocalPlayer:SetLookWorldRotation(OverrideCamera:GetWorldRotation())
 	LocalPlayer:SetOverrideCamera(OverrideCamera)
 	LocalPlayer.lookSensitivity = 0
-		
+
 	if not UpdateUITask then
-	
 		UpdateUITask = Task.Spawn(UpdateUI)
 		UpdateUITask.repeatCount = -1
-		UpdateUITask.repeatInterval = 0
-		
+		UpdateUITask.repeatInterval = 0.1
 	end
-	
-	
+
 	Task.Wait(.1)
 	Events.Broadcast("HideUI")
 end
@@ -138,25 +122,24 @@ end
 --	nil SendToVictoryScreen(string)
 --	Resets the camera and hides the UI for the victory Screen
 local function RestoreFromPodium()
-
 	Events.Broadcast("ShowUI")
 	LocalPlayer:ClearOverrideCamera()
 	LocalPlayer.lookSensitivity = 1
-		
+
 	if UpdateUITask then
-	
 		UpdateUITask:Cancel()
 		UpdateUITask = nil
-		
 	end
-		
+
 	for _, panel in pairs(PlayerPanels) do
 		panel.visibility = Visibility.FORCE_OFF
+
+		local nameTextLabel = panel:GetCustomProperty("NameText"):WaitForObject()
+		nameTextLabel.text = ""
 
 		local resourcePanel = panel:GetCustomProperty("ResourcePanel"):WaitForObject()
 		resourcePanel.visibility = Visibility.FORCE_OFF
 	end
-	
 end
 
 --	string GetProperty(string, table)
@@ -165,30 +148,42 @@ local function GetProperty(value, options)
 	value = string.upper(value)
 
 	for _, option in pairs(options) do
-		if(value == option) then return value end
+		if (value == option) then
+			return value
+		end
 	end
 
 	return options[1]
 end
 
+function OnStateChanged(manager, propertyName)
 
-function OnGameStateChanged(gsm, property)
-
-	if property ~= "GameState" then
+	if propertyName ~= "GameState" then
 	
 		return
 		
 	end
 	
-	local newState = gameStateManager:GetCustomProperty(property)
+	local newState = GameStateManager:GetCustomProperty("GameState")
 	
-    if newState == "VOTINGSTATE" then
-        
-        RestoreFromPodium()       
-    end
-    
+	if newState == "VICTORY_STATE" then
+	
+		SendToVictoryScreen()
+		
+	elseif newState == "LOBBY_STATE" then
+	
+		RestoreFromPodium()
+		
+	end
+	
 end
 
+function ForceCamera()
+	if gameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
+		SendToVictoryScreen()
+	end
+end
+ForceCamera()
 ------------------------------------------------------------------------------------------------------------------------
 --	INITIALIZATION
 ------------------------------------------------------------------------------------------------------------------------
@@ -196,7 +191,5 @@ end
 --	Get the default sort type if the current one is not valid
 WINNER_SORT_TYPE = GetProperty(WINNER_SORT_TYPE, WINNER_SORT_TYPES)
 
---	Connect events appropriately
---Events.Connect("SendToVictoryScreen", SendToVictoryScreen)
-Game.roundEndEvent:Connect(SendToVictoryScreen)
-gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
+gameStateManager.networkedPropertyChangedEvent:Connect(OnStateChanged)
+Events.Connect("VictoryUI.ForceCamera",ForceCamera)

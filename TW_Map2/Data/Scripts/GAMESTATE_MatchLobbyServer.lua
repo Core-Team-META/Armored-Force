@@ -1,5 +1,3 @@
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
-
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local lobbyCountdown = script:GetCustomProperty("LobbyCountdown")
 
@@ -15,7 +13,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "LOBBY_STATE" then
 	
 		return
 		
@@ -56,7 +54,7 @@ function StateEND()
 	timerTask:Cancel()
 	timerTask = nil
 	
-	ReliableEvents.Broadcast("CHANGESTATE", "LOBBYSTATE")
+	Events.Broadcast("CHANGE_STATE", "LOBBY_STATE")
 	
 end
 

@@ -63,15 +63,13 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") == "LOBBYSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") == "LOBBY_STATE" then
 	
 		winner = -1
 		
 		return
 		
-	end
-	
-	if mainGameStateManager:GetCustomProperty("GameState") == "STATSSTATE" then
+	elseif mainGameStateManager:GetCustomProperty("GameState") == "STATS_STATE" then
 	
 		while winner < 0 do
 		

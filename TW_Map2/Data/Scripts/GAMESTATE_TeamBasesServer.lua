@@ -34,7 +34,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCHSTATE" or not gameModeEnabled then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" or not gameModeEnabled then
 	
 		aCapProgress = 0
 		bCapProgress = 0
@@ -192,7 +192,7 @@ function CheckPlayerCountTask()
 	
 		Task.Wait(1)
 		
-		ReliableEvents.Broadcast("CHANGESTATE", "MATCHSTATE")
+		Events.Broadcast("CHANGE_STATE", "MATCH_STATE")
 		
 		while true do
 		
