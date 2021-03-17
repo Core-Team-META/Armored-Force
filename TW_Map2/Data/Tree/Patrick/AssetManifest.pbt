@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11459567137536615475
+  Name: "Dry Fire Click Generic 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_gun_dryfire"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
@@ -50,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 4504686085818425438
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {

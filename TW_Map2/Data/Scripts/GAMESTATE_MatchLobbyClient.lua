@@ -40,7 +40,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "LOBBY_STATE" then
 	
 		lobbyUI.visibility = Visibility.FORCE_OFF
 		

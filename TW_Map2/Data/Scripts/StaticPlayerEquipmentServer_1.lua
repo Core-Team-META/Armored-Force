@@ -196,7 +196,7 @@ function OnPlayerRespawned(player)
 	
 	RemovePlayerEquipment(player)
 	
-	if MAIN_MANAGER_SERVER:GetCustomProperty("GameState") ~= "VICTORYSTATE" then
+	if MAIN_MANAGER_SERVER:GetCustomProperty("GameState") ~= "VICTORY_STATE" then
 	
 		GivePlayerEquipment(player)
 		

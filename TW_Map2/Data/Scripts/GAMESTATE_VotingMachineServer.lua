@@ -1,5 +1,3 @@
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
-
 local mainGameStateManager = script:GetCustomProperty("MainGameStateManager"):WaitForObject()
 
 local thisMapSelection = script:GetCustomProperty("ThisMapSelection"):WaitForObject()
@@ -48,7 +46,7 @@ function SetVote(player, vote)
 		
 		matchSelection[vote]["Votes"] = matchSelection[vote]["Votes"] + 1
 		
-		print("Vote Recieved")
+		print("Vote Recieved from " .. player.name)
 	end
 
 end
@@ -61,7 +59,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "VOTINGSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "VOTING_STATE" then
 	
 		return
 		
@@ -109,7 +107,7 @@ function StateEND()
 	end
 	
 	script:SetNetworkedCustomProperty("ToggleUI", false)
-	ReliableEvents.Broadcast("CHANGESTATE", "VOTINGSTATE")
+	Events.Broadcast("CHANGE_STATE", "VOTING_STATE")
 
 end
 

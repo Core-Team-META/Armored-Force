@@ -1,10 +1,10 @@
 --[[
 
 	States: (recieved from CHANGESTATE broadcast)
-	LOBBYSTATE
-	MATCHSTATE
-	VOTINGSTATE
-	VICTORYSTATE
+	LOBBY_STATE
+	MATCH_STATE
+	VOTING_STATE
+	VICTORY_STATE
 	
 	]]--
 
@@ -34,13 +34,13 @@ function OnChangeState(previousState)
 		
 	end
 
-	if previousState == "VOTINGSTATE" then
+	if previousState == "VOTING_STATE" then
 
-		script:SetNetworkedCustomProperty("GameState", "LOBBYSTATE")
+		script:SetNetworkedCustomProperty("GameState", "LOBBY_STATE")
 		
-		currentState = "LOBBYSTATE"
+		currentState = "LOBBY_STATE"
 		
-	elseif previousState == "LOBBYSTATE" then
+	elseif previousState == "LOBBY_STATE" then
 	
 		for _, player in ipairs(Game.GetPlayers()) do
 		
@@ -50,35 +50,39 @@ function OnChangeState(previousState)
 			
 		end
 	
-		script:SetNetworkedCustomProperty("GameState", "MATCHSTATE")
+		script:SetNetworkedCustomProperty("GameState", "MATCH_STATE")
 		
-		currentState = "MATCHSTATE"
+		currentState = "MATCH_STATE"
 		
 		SetTimer(matchMaxDuration)
 		
-	elseif previousState == "MATCHSTATE" then
+	elseif previousState == "MATCH_STATE" then
 	
-		script:SetNetworkedCustomProperty("GameState", "VICTORYSTATE")
+		script:SetNetworkedCustomProperty("GameState", "VICTORY_STATE")
 		
-		currentState = "VICTORYSTATE"	
+		currentState = "VICTORY_STATE"	
 		
 		SetTimer(victoryMaxDuration)
 		
-	elseif previousState == "VICTORYSTATE" then
+	elseif previousState == "VICTORY_STATE" then
 	
-		script:SetNetworkedCustomProperty("GameState", "STATSSTATE")
+		script:SetNetworkedCustomProperty("GameState", "STATS_STATE")
 		
-		currentState = "STATSSTATE"	
+		currentState = "STATS_STATE"	
 		
 		SetTimer(statsMaxDuration)		
 		
-	elseif previousState == "STATSSTATE" then
+	elseif previousState == "STATS_STATE" then
 	
-		script:SetNetworkedCustomProperty("GameState", "VOTINGSTATE")
+		script:SetNetworkedCustomProperty("GameState", "VOTING_STATE")
 		
-		currentState = "VOTINGSTATE"
+		currentState = "VOTING_STATE"
 		
 	end
+	
+	print("Transitioning to state: " .. currentState)
+	
+	Events.Broadcast("NEW_STATE", currentState)
 
 end
 
@@ -112,7 +116,7 @@ function Test(player, binding)
 	
 		player:Die()
 		
-	elseif binding == "ability_extra_38" and not tankEquipToggle[player.id] and currentState == "LOBBYSTATE" then
+	elseif binding == "ability_extra_38" and not tankEquipToggle[player.id] and currentState == "LOBBY_STATE" then
 	
 		player.lookControlMode = LookControlMode.NONE
 		
@@ -120,7 +124,7 @@ function Test(player, binding)
 		
 		--print("lookMode toggle on")
 		
-	elseif binding == "ability_extra_38" and tankEquipToggle[player.id] and currentState == "LOBBYSTATE" then
+	elseif binding == "ability_extra_38" and tankEquipToggle[player.id] and currentState == "LOBBY_STATE" then
 	
 		player.lookControlMode = LookControlMode.RELATIVE
 		
@@ -138,8 +142,8 @@ function OnJoined(player)
 	
 end
 
-Events.Connect("CHANGESTATE", OnChangeState)
+Events.Connect("CHANGE_STATE", OnChangeState)
 
 Game.playerJoinedEvent:Connect(OnJoined)
 
-OnChangeState("VOTINGSTATE")
+OnChangeState("VOTING_STATE")
