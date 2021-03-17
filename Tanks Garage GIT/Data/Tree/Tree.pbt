@@ -25,6 +25,7 @@ Objects {
   ChildIds: 1515039180194458749
   ChildIds: 12342638008067059637
   ChildIds: 17443067706710834713
+  ChildIds: 4950709826130370908
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,35 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4950709826130370908
+  Name: "Chat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Chat"
   }
 }
 Objects {
