@@ -206,7 +206,9 @@ function SetTankModifications(player)
 		
 			if entry.id == tankId then
 			
-				modifications = {entry.hasWeapon, entry.hasArmor, entry.hasEngine}
+				modifications = {tonumber(entry.weaponProgress), tonumber(entry.armorProgress), tonumber(entry.engineProgress)}
+				
+				--print("Retrieved from entry " .. entry.id .. " : " .. tostring(modifications[1]) .. ", " .. tostring(modifications[2]) .. ", " .. tostring(modifications[3]))
 				
 			end
 			
@@ -218,11 +220,11 @@ function SetTankModifications(player)
 	
 		warn("COULD NOT FIND TANK ID " .. tankId)
 		
-		modifications = {false, false, false}
+		modifications = {0, 0, 0}
 		
 	end
 	
-	if modifications[1] then
+	if modifications[1] == 2 then
 	
 		reloadSpeed = upgradedReload
 		turretTraverseSpeed = upgradedTraverse
@@ -242,7 +244,7 @@ function SetTankModifications(player)
 		
 	end
 	
-	if modifications[2] then
+	if modifications[2] == 2 then
 	
 		hitpoints = upgradedHitpoints
 		
@@ -256,7 +258,7 @@ function SetTankModifications(player)
 		
 	end
 
-	if modifications[3] then
+	if modifications[3] == 2 then
 	
 		topSpeed = upgradedTopSpeed
 		acceleration = upgradedAcceleration
@@ -334,7 +336,7 @@ function BindingPressed(player, action)
 	
 		controlTracker[4] = true
 		
-	elseif action == "ability_primary" and player.lookControlMode == LookControlMode.RELATIVE then
+	elseif action == "ability_primary" then
 	
 		holdFire = true
 	

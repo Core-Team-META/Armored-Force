@@ -10,15 +10,7 @@ local API = {}
 ------------------------------------------------------------------------------------------------------------------------
 local NUMBER_OF_TANKS = 33
 local EQUIPPED_TANK_RES = "EquippedTank"
-local DEFAULT_TANK_DATA =
-{
-    id = "01",
-    researched = true,
-    purchased = true,
-    hasWeapon = true,
-    hasArmor = true,
-    hasEngine = true
-}
+
 ------------------------------------------------------------------------------------------------------------------------
 -- STORAGE KEYS -- DO NOT EDIT
 ------------------------------------------------------------------------------------------------------------------------
@@ -74,6 +66,13 @@ API.TECH_TREE_POSITION = {
 API.UPGRADE_TYPE = {
     RESEARCH = 1,
     PURCHASE = 2
+}
+
+-- UPGRADE PROGRESS
+API.UPGRADE_PROGRESS = {
+	NONE = 0,
+	RESEARCHED = 1,
+	PURCHASED = 2
 }
 
 ------------------------------------------------------------------------------------------------------------------------
