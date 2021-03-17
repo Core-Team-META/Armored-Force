@@ -2,7 +2,7 @@ Assets {
   Id: 8528548367235743505
   Name: "TW_Invisible"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 79
   CustomMaterialAsset {
     BaseMaterialId: 10472778939299609072
     ParameterOverrides {

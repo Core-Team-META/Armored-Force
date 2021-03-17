@@ -2,7 +2,7 @@ Assets {
   Id: 18345558741204381886
   Name: "Custom terrain_rocks"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 79
   CustomMaterialAsset {
     BaseMaterialId: 6797287239076159786
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 8849082015995057530
   Name: "TW_Black"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 79
   CustomMaterialAsset {
     BaseMaterialId: 15743147641625697283
     ParameterOverrides {

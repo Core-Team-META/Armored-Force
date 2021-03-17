@@ -286,5 +286,5 @@ Assets {
       AssetId: "Urban_Pipe_Wall_Attachment_-_01__Prop_"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 79
 }

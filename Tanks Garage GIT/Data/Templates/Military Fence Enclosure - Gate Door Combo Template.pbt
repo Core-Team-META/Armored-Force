@@ -13259,5 +13259,5 @@ Assets {
       AssetId: "Military_Fence_Enclosure_-_Gate_Door_Combo_Template"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 79
 }
