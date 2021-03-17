@@ -45,11 +45,11 @@ function RetrieveData()
 	                    elseif(position == Constants_API.TECH_TREE_POSITION.PURCHASED) then
 	                        tankEntry.purchased = (v == "1")
 	                    elseif(position == Constants_API.TECH_TREE_POSITION.HASWEAPON) then
-	                        tankEntry.hasWeapon = (v == "1")
+	                        tankEntry.weaponProgress = v
 	                    elseif(position == Constants_API.TECH_TREE_POSITION.HASARMOR) then
-	                        tankEntry.hasArmor = (v == "1")
+	                        tankEntry.armorProgress = v
 	                    elseif(position == Constants_API.TECH_TREE_POSITION.HASENGINE) then
-	                        tankEntry.hasEngine = (v == "1")
+	                        tankEntry.engineProgress = v
 	                    else
 	                        warn("Unable to parse data at position: " .. position)
 	                    end
@@ -62,7 +62,7 @@ function RetrieveData()
 	            LOCAL_PLAYER.clientUserData.techTreeProgress = tankEntryCollection
 	
 	            -- DEBUG print tank entries           
-	            -- UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
+	            UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
 	            
 	            Events.Broadcast("TankClientDataSet")
 	            

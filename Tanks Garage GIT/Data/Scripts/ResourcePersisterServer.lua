@@ -65,7 +65,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	--playerSharedStorage = {}
+	playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -204,7 +204,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 			
 		elseif i == 1 or i == 18 then
 		
-			tankEntry = tankEntry .. "|1|1|1|1|1~"
+			tankEntry = tankEntry .. "|1|1|2|2|2~"
 			
 		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
 		-- (requires forced use of SetNewPlayerProgression(playerSharedStorage) function)
@@ -251,11 +251,11 @@ function SetTankProgressionDataForServer(dataString, player)
             elseif(position == CONSTANTS_API.TECH_TREE_POSITION.PURCHASED) then
                 tankEntry.purchased = (v == "1")
             elseif(position == CONSTANTS_API.TECH_TREE_POSITION.HASWEAPON) then
-                tankEntry.hasWeapon = (v == "1")
+                tankEntry.weaponProgress = v 
             elseif(position == CONSTANTS_API.TECH_TREE_POSITION.HASARMOR) then
-                tankEntry.hasArmor = (v == "1")
+                tankEntry.armorProgress = v
             elseif(position == CONSTANTS_API.TECH_TREE_POSITION.HASENGINE) then
-                tankEntry.hasEngine = (v == "1")
+                tankEntry.engineProgress = v
             else
                 warn("Unable to parse data at position: " .. position)
             end
@@ -293,9 +293,9 @@ function ConvertTechTreeProgressToDataString(player)
 		dataString = dataString .. v.id .. 
 					"|" .. ConvertBoolToString(v.researched) ..
 					"|" .. ConvertBoolToString(v.purchased) ..
-					"|" .. ConvertBoolToString(v.hasWeapon) ..
-					"|" .. ConvertBoolToString(v.hasArmor) ..
-					"|" .. ConvertBoolToString(v.hasEngine) 
+					"|" .. v.weaponProgress ..
+					"|" .. v.armorProgress ..
+					"|" .. v.engineProgress
 					
 		if k <  CONSTANTS_API.GetNumberOfTanks() then
 		

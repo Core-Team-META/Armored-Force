@@ -2948,6 +2948,36 @@ Objects {
         SelfId: 5942154244488329189
       }
     }
+    Overrides {
+      Name: "cs:UpgradeWeapon"
+      ObjectReference {
+        SelfId: 15272875763507954167
+      }
+    }
+    Overrides {
+      Name: "cs:UpgradeArmor"
+      ObjectReference {
+        SelfId: 2667473009802627967
+      }
+    }
+    Overrides {
+      Name: "cs:UpgradeEngine"
+      ObjectReference {
+        SelfId: 10607641793433307559
+      }
+    }
+    Overrides {
+      Name: "cs:UpgradeTank"
+      ObjectReference {
+        SelfId: 4095103234076962172
+      }
+    }
+    Overrides {
+      Name: "cs:UpgradeTankCost"
+      ObjectReference {
+        SelfId: 7739174200950341715
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
