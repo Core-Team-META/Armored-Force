@@ -82,6 +82,8 @@ local tier2Count = 0
 local tier3Count = 0
 local tier4Count = 0
 
+-- Used to store values of the selected tank to use for upgrading
+local tankDetails = {}
 
 local PURCHASED_TEXT = "PURCHASED"
 local RESEARCHED_TEXT = "RESEARCHED"
@@ -217,7 +219,6 @@ end
 
 function ButtonHover(button)
 	-- TODO: Play hover sound
-	-- TODO: Show a tooltip covering the before and after effects of the upgrade
 end
 
 -- Initialization
@@ -434,27 +435,6 @@ function GetTierCount(tier)
 end
 
 -- Listener functions
-function UpgradeWeapon(button)
-	-- DEBUG
-	print("Upgrade weapon for Id: " .. button.name)
-	local tank = GetPlayerTankData(tonumber(button.name))
-	-- TODO: Upgrade weapon and persist data
-end
-
-function UpgradeArmor(button)
-	-- DEBUG
-	print("Upgrade armor for Id:" .. button.name)
-	local tank = GetPlayerTankData(tonumber(button.name))
-	-- TODO: Upgrade armor and persist data
-end
-
-function UpgradeEngine(button)
-	-- DEBUG
-	print("Upgrade engine for Id: " .. button.name)
-	local tank = GetPlayerTankData(tonumber(button.name))
-	-- TODO: Upgrade engine and persist data
-end
-
 function ShowWeaponTooltip(button)
 	-- DEBUG
 	print("Hovering for weapon upgrade. Tank Id: " .. button.name)
@@ -471,6 +451,7 @@ end
 
 function CloseTechTreeModal()
 	techTreeModalPopup.visibility = Visibility.FORCE_OFF
+	ResetTankDetails()
 end
 
 function OpenDetails(button)
@@ -481,6 +462,40 @@ function OpenDetails(button)
 		if(tank:GetCustomProperty("ID") == id) then			
 			PopulateDetailsModal(tank)
 		end
+	end
+end
+
+function UpgradeTank()
+	if(tankDetails.purchasedTank) then
+		print("Equip tank")
+	elseif(tankDetails.researchedTank) then
+		print("Purchase cost: " .. tankDetails.tankPurchaseCost)
+	else
+		print("Research cost: " .. tankDetails.tankResearchCost)
+	end
+end
+
+function UpgradeWeapon()
+	if(tankDetails.weaponProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
+		print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
+	else
+		print("Research cost: " .. tankDetails.weaponPurchaseCost)
+	end
+end
+
+function UpgradeArmor()
+	if(tankDetails.armorProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
+		print("Purchase cost: " .. tankDetails.armorPurchaseCost)
+	else
+		print("Research cost: " .. tankDetails.armorPurchaseCost)
+	end
+end
+
+function UpgradeEngine()
+	if(tankDetails.engineProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
+		print("Purchase cost: " .. tankDetails.enginePurchaseCost)
+	else
+		print("Research cost: " .. tankDetails.enginePurchaseCost)
 	end
 end
 
@@ -502,35 +517,39 @@ function PopulateDetailsModal(tank)
 	local elevationUpgraded = tank:GetCustomProperty("ElevationUpgraded")
 	local maxDepth = tank:GetCustomProperty("MaxDepth")
 	
-	-- Setting default states
-	local researchedTank = false
-	local purchasedTank = false
-	local weaponProgress = false
-	local armorProgress = false
-	local engineProgress = false
 	-- Get the player's tank data
 	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
 		if(t.id == tank:GetCustomProperty("ID")) then			
-			researchedTank = t.researched
-			purchasedTank = t.purchased
-			weaponProgress = t.weaponProgress
-			armorProgress = t.armorProgress
-			engineProgress = t.engineProgress			
+			tankDetails.researchedTank = t.researched
+			tankDetails.purchasedTank = t.purchased
+			tankDetails.weaponProgress = t.weaponProgress
+			tankDetails.armorProgress = t.armorProgress
+			tankDetails.engineProgress = t.engineProgress			
 		end
 	end
 	
-	if(purchasedTank) then
+	tankDetails.tankResearchCost = tank:GetCustomProperty("ResearchCost")
+	tankDetails.tankPurchaseCost = tank:GetCustomProperty("PurchaseCost")
+	
+	if(tankDetails.purchasedTank) then		
 		upgradeTank.text = "Equip"
 		upgradeTankCost.visibility = Visibility.FORCE_OFF
-	elseif(purchasedTank) then
+	elseif(tankDetails.researchedTank) then
 		upgradeTank.text = "Purchase"
-		upgradeTankCost.text = "Cost " .. tostring(tank:GetCustomProperty("PurchaseCost"))
+		upgradeTankCost.text = "Cost " .. tostring(tankDetails.tankPurchaseCost)
 		upgradeTankCost.visibility = Visibility.FORCE_ON
 	else
 		upgradeTank.text = "Research"
-		upgradeTankCost.text = "Cost " .. tostring(tank:GetCustomProperty("ResearchCost"))
+		upgradeTankCost.text = "Cost " .. tostring(tankDetails.tankResearchCost)
 		upgradeTankCost.visibility = Visibility.FORCE_ON
 	end
+	
+	tankDetails.weaponResearchCost = tank:GetCustomProperty("WeaponResearchCost")
+	tankDetails.weaponPurchaseCost = tank:GetCustomProperty("WeaponPurchaseCost")
+	tankDetails.armorResearchCost = tank:GetCustomProperty("ArmorResearchCost")
+	tankDetails.armorPurchaseCost = tank:GetCustomProperty("ArmorPurchaseCost")
+	tankDetails.engineResearchCost = tank:GetCustomProperty("MobilityResearchCost")
+	tankDetails.enginePurchaseCost = tank:GetCustomProperty("MobilityPurchaseCost")
 	
 	reloadSubStat.text = "Reload: " .. string.format("%.1f", reload) .. " s"
 	damageSubStat.text = "Damage: " .. string.format(math.floor(damage)) .. "pt"
@@ -588,10 +607,38 @@ function PopulateDetailsModal(tank)
 	end
 end
 
+function ResetTankDetails()
+	tankDetails = {
+	researchedTank = false,
+	purchasedTank = false,
+	weaponProgress = 0,
+	armorProgress = 0,
+	engineProgress = 0,
+	tankResearchCost = 0,
+	tankPurchaseCost = 0,
+	weaponResearchCost = 0,
+	weaponPurchaseCost = 0,
+	armorResearchCost = 0,
+	armorPurchaseCost = 0,
+	engineResearchCost = 0,
+	enginePurchaseCost = 0
+}
+end
+
 Init()
+ResetTankDetails()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
 
 closeTechTreeModalButton.hoveredEvent:Connect(ButtonHover)
 closeTechTreeModalButton.clickedEvent:Connect(CloseTechTreeModal)
+
+upgradeWeapon.clickedEvent:Connect(UpgradeWeapon)
+upgradeArmor.clickedEvent:Connect(UpgradeArmor)
+upgradeEngine.clickedEvent:Connect(UpgradeEngine)
+upgradeTank.clickedEvent:Connect(UpgradeTank)
+upgradeWeapon.hoveredEvent:Connect(ButtonHover)
+upgradeArmor.hoveredEvent:Connect(ButtonHover)
+upgradeEngine.hoveredEvent:Connect(ButtonHover)
+upgradeTank.hoveredEvent:Connect(ButtonHover)
