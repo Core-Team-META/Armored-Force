@@ -41,17 +41,13 @@ function OnStateChanged(manager, propertyName)
 	
 	local newState = GameStateManager:GetCustomProperty("GameState")
 
-	if newState == "VICTORY_STATE" then
+	if newState == "VICTORY_STATE" and deactivated then
 	
-		if deactivated then
-	
-			Activate()
-		
-		end
+		Activate()
 		
 		deactivated = false
 		
-	elseif not deactivated then
+	elseif newState == "LOBBY_STATE" and not deactivated then
 	
 		Deactivate()
 		
@@ -74,10 +70,9 @@ end
 --	nil Activate()
 --	Forcefully deactivates the victory Screen
 function Deactivate()
-	local emptyData = {}
 	for _, player in pairs(Game.GetPlayers()) do
-		VictoryScreenAPI.OnPlayerRestored(RootGroup, player, emptyData)
-		VictoryScreenAPI.playerRestoredEvent:_Fire(player, RootGroup, emptyData)
+		VictoryScreenAPI.OnPlayerRestored(RootGroup, player)
+		VictoryScreenAPI.playerRestoredEvent:_Fire(player, RootGroup)
 	end
 end
 

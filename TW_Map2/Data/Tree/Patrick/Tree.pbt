@@ -2381,7 +2381,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -3601,7 +3601,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -4821,7 +4821,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -6041,7 +6041,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -7261,7 +7261,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -8480,7 +8480,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -9699,7 +9699,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -10917,7 +10917,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Score"
+      Label: "DAMAGE"
       Color {
         R: 0.75
         G: 0.5
@@ -21436,7 +21436,7 @@ Objects {
   }
   Camera {
     FreeControl: true
-    InitialDistance: 400
+    InitialDistance: 500
     IsDistanceAdjustable: true
     MinDistance: 300
     MaxDistance: 6000
@@ -23874,15 +23874,15 @@ Objects {
   ParentId: 9455534053840477121
   UnregisteredParameters {
     Overrides {
-      Name: "cs:APIBasicGameState"
-      AssetReference {
-        Id: 11974742996071064388
-      }
-    }
-    Overrides {
       Name: "cs:EaseUI"
       AssetReference {
         Id: 12045507068401926921
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_MainGameStateManagerServer"
+      ObjectReference {
+        SelfId: 7520210139489262472
       }
     }
     Overrides {
@@ -23892,15 +23892,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:YourNemesisText"
-      ObjectReference {
-        SelfId: 7553501267047674677
-      }
-    }
-    Overrides {
       Name: "cs:YourNemesisKillsText"
       ObjectReference {
         SelfId: 9070509612006782284
+      }
+    }
+    Overrides {
+      Name: "cs:YourNemesisText"
+      ObjectReference {
+        SelfId: 7553501267047674677
       }
     }
     Overrides {
@@ -23971,12 +23971,6 @@ Objects {
   }
   ParentId: 13200903332619292921
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:APIBasicGameState"
-      AssetReference {
-        Id: 11974742996071064388
-      }
-    }
     Overrides {
       Name: "cs:ListSet"
       Bool: false
