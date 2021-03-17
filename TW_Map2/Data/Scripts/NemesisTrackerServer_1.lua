@@ -1,10 +1,3 @@
-local GT_API
-repeat
-    GT_API = _G.META_GAME_MODES
-    Task.Wait()
-until GT_API
-local ABGS = require(script:GetCustomProperty("APIBasicGameState"))
-
 local nemesisIndex = {}
 local victimIndex = {}
 
@@ -184,14 +177,6 @@ function RemoveFromTable(player)
 end
 
 function CleanNemesisTable()
-	--[[
-
-		for _, marker in ipairs(markerList) do
-			
-			marker.visibility = Visibility.FORCE_OFF
-			
-		end
-	]]
 
 	resetting = true
 
@@ -294,6 +279,8 @@ function CalculateNemesis()
 		end
 							
 	end
+	
+	print("Finished Calculating Nemesis")
 			
 end
 
@@ -321,19 +308,27 @@ function SetNemesis()
 	
 	script:SetNetworkedCustomProperty("ListSet", true)
 	
+	print("Finished Setting Nemesis")
+	
 		
 end
 
 
 function OnGameStateChanged(newState)
 
+	print("Nemesis Server got: " .. tostring(newState))
+
 	if newState == "VICTORY_STATE"  then
+	
+		print("Calculating and setting nemesis")
 		
 		CalculateNemesis()		
 		
 		SetNemesis()
 	        
     elseif newState == "LOBBY_STATE" then
+    
+    	print("Cleaning Nemesis entries")
     
     	script:SetNetworkedCustomProperty("ListSet", false)
         

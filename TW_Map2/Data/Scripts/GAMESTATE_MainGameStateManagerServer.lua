@@ -49,6 +49,8 @@ function OnChangeState(previousState)
 			tankEquipToggle[player.id] = false 
 			
 		end
+		
+		_G["GameWinner"] = -1
 	
 		script:SetNetworkedCustomProperty("GameState", "MATCH_STATE")
 		

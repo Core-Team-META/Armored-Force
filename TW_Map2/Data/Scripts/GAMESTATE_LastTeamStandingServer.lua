@@ -28,7 +28,7 @@ function StateSTART(manager, propertyName)
 			playerCountTask:Cancel()
 			playerCountTask = nil
 			
-			Task.Wait(1)
+			Task.Wait()
 			
 			ReliableEvents.BroadcastToAllPlayers("WINNERclient", leadTeam)
 			ReliableEvents.Broadcast("WINNER", leadTeam)

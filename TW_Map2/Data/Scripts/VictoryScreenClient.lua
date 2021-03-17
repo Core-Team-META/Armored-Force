@@ -179,7 +179,7 @@ function OnStateChanged(manager, propertyName)
 end
 
 function ForceCamera()
-	if gameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
+	if GameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
 		SendToVictoryScreen()
 	end
 end
@@ -191,5 +191,5 @@ ForceCamera()
 --	Get the default sort type if the current one is not valid
 WINNER_SORT_TYPE = GetProperty(WINNER_SORT_TYPE, WINNER_SORT_TYPES)
 
-gameStateManager.networkedPropertyChangedEvent:Connect(OnStateChanged)
+GameStateManager.networkedPropertyChangedEvent:Connect(OnStateChanged)
 Events.Connect("VictoryUI.ForceCamera",ForceCamera)
