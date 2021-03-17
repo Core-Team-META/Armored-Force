@@ -275,6 +275,18 @@ end
 
 function CalculateNemesis()
 
+	for x, e in ipairs(nemesisList) do
+	
+		for y, ee in pairs(e) do
+		
+			e[y] = nil
+			
+		end
+		
+		nemesisList[x] = nil
+		
+	end
+
 	nemesisList = {}
 		
 	while not nemesisTrackerServer:GetCustomProperty("ListSet") do
@@ -619,8 +631,6 @@ function OnGameStateChanged(manager, propertyName)
        	
         YourNemesisText.text = ""
         YourNemesisKillsText.text = "0"
-        
-        CleanNemesisTable()
         
     end
 end

@@ -16537,7 +16537,7 @@ Objects {
     }
     Overrides {
       Name: "cs:StatsMaxDuration"
-      Int: 10
+      Int: 20
     }
     Overrides {
       Name: "cs:TankSettings"
@@ -22830,6 +22830,12 @@ Objects {
       Name: "cs:TruePointer"
       ObjectReference {
         SelfId: 5304430695460001480
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_MainGameStateManagerServer"
+      ObjectReference {
+        SelfId: 7520210139489262472
       }
     }
     Overrides {

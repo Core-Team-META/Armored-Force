@@ -10,6 +10,8 @@ local ringPart2 = script:GetCustomProperty("RingPart2"):WaitForObject()
 
 local truePointer = script:GetCustomProperty("TruePointer"):WaitForObject()
 
+local mainGameStateManagerServer = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+
 local localPlayer = Game.GetLocalPlayer()
 
 local reloadSpeed = 1
@@ -18,6 +20,7 @@ local accumulatedReloadingTime = 0
 
 local cannon = nil
 local turretHelper = nil
+local currentState = nil
 
 function RaycastResultFromPointRotationDistance(point, rotation, distance)
 
@@ -163,7 +166,9 @@ end
 
 function Tick(dt)
 
-	if not Object.IsValid(cannon) or not Object.IsValid(turretHelper)  then
+	currentState = mainGameStateManagerServer:GetCustomProperty("GameState")
+
+	if not Object.IsValid(cannon) or not Object.IsValid(turretHelper) then
 	
 		reticleUI.visibility = Visibility.FORCE_OFF
 		
@@ -175,6 +180,21 @@ function Tick(dt)
 		reloading = false
 	
 		FindTank()
+		
+		return
+		
+	end
+	
+	if currentState == "VICTORY_STATE" or currentState == "VOTING_STATE" then
+	
+		reticleUI.visibility = Visibility.FORCE_OFF
+		
+		spinPoint1.rotationAngle = 180
+		spinPoint2.rotationAngle = 180
+			
+		accumulatedReloadingTime = 0
+			
+		reloading = false
 		
 		return
 		
