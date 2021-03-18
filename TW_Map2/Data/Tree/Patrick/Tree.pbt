@@ -1774,6 +1774,18 @@ Objects {
         SelfId: 9592813986143236212
       }
     }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1924,6 +1936,7 @@ Objects {
     }
   }
   ParentId: 11800523572548119810
+  ChildIds: 13897527623311126856
   ChildIds: 11046005690778905113
   ChildIds: 7144886169829071707
   Collidable_v2 {
@@ -2060,7 +2073,7 @@ Objects {
   Control {
     Width: 180
     Height: 130
-    UIX: -755
+    UIX: -710
     UIY: -160
     RenderTransformPivot {
       Anchor {
@@ -3280,7 +3293,7 @@ Objects {
   Control {
     Width: 180
     Height: 130
-    UIX: 545
+    UIX: 590
     UIY: -150
     RenderTransformPivot {
       Anchor {
@@ -4500,7 +4513,7 @@ Objects {
   Control {
     Width: 180
     Height: 130
-    UIX: -565
+    UIX: -520
     UIY: -150
     RenderTransformPivot {
       Anchor {
@@ -5720,7 +5733,7 @@ Objects {
   Control {
     Width: 180
     Height: 150
-    UIX: 355
+    UIX: 400
     UIY: -130
     RenderTransformPivot {
       Anchor {
@@ -6940,7 +6953,7 @@ Objects {
   Control {
     Width: 180
     Height: 150
-    UIX: -375
+    UIX: -330
     UIY: -130
     RenderTransformPivot {
       Anchor {
@@ -8159,7 +8172,7 @@ Objects {
   Control {
     Width: 210
     Height: 180
-    UIX: 135
+    UIX: 180
     UIY: -100
     RenderTransformPivot {
       Anchor {
@@ -9378,7 +9391,7 @@ Objects {
   Control {
     Width: 210
     Height: 180
-    UIX: -155
+    UIX: -110
     UIY: -100
     RenderTransformPivot {
       Anchor {
@@ -10597,7 +10610,7 @@ Objects {
   Control {
     Width: 270
     Height: 240
-    UIX: -10
+    UIX: 35
     UIY: -40
     RenderTransformPivot {
       Anchor {
@@ -11744,6 +11757,107 @@ Objects {
   }
 }
 Objects {
+  Id: 13897527623311126856
+  Name: "VictoryScreenTankSetter"
+  Transform {
+    Location {
+      X: -849.994629
+      Y: 7199.99854
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16846902982503404270
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TankSpawns"
+      ObjectReference {
+        SelfId: 1222819902264568315
+      }
+    }
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 11800523572548119810
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:M3StuartGARAGEMODEL"
+      AssetReference {
+        Id: 14032403485247481385
+      }
+    }
+    Overrides {
+      Name: "cs:Panzer3GARAGEMODEL"
+      AssetReference {
+        Id: 616489956946034427
+      }
+    }
+    Overrides {
+      Name: "cs:TankUSM24ChaffeeGARAGEMODEL"
+      AssetReference {
+        Id: 17661669092028267410
+      }
+    }
+    Overrides {
+      Name: "cs:M4A1ShermanGARAGEMODEL"
+      AssetReference {
+        Id: 5168191616823378001
+      }
+    }
+    Overrides {
+      Name: "cs:M10WolverineGARAGEMODEL"
+      AssetReference {
+        Id: 6547800262969392050
+      }
+    }
+    Overrides {
+      Name: "cs:T57GARAGEMODEL"
+      AssetReference {
+        Id: 11824009024669225901
+      }
+    }
+    Overrides {
+      Name: "cs:TankUST34HeavyGARAGEMODEL"
+      AssetReference {
+        Id: 9072741598498568350
+      }
+    }
+    Overrides {
+      Name: "cs:BatChatGARAGEMODEL"
+      AssetReference {
+        Id: 5592172945436724684
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 107660199603938156
+    }
+  }
+}
+Objects {
   Id: 13828915763408443215
   Name: "VictoryScreen"
   Transform {
@@ -11829,12 +11943,12 @@ Objects {
   Name: "VictoryLocation"
   Transform {
     Location {
-      X: -11134.9922
-      Y: -15544.9844
+      X: -9665
+      Y: -15200
       Z: 240
     }
     Rotation {
-      Yaw: -15.0000505
+      Yaw: 5
     }
     Scale {
       X: 1
@@ -11845,6 +11959,7 @@ Objects {
   ParentId: 11800523572548119810
   ChildIds: 1852559468064675834
   ChildIds: 7137217383023676484
+  ChildIds: 1222819902264568315
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11859,12 +11974,392 @@ Objects {
   }
 }
 Objects {
+  Id: 1222819902264568315
+  Name: "TankSpawns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18443785708120810745
+  ChildIds: 1224889955140059376
+  ChildIds: 15220006946212539941
+  ChildIds: 4784705819632012061
+  ChildIds: 13256421995457709481
+  ChildIds: 2116842755201388211
+  ChildIds: 6190705224755132624
+  ChildIds: 1823022719095258003
+  ChildIds: 3966323187419818024
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3966323187419818024
+  Name: "8"
+  Transform {
+    Location {
+      X: -1600
+      Y: 2400.00049
+    }
+    Rotation {
+      Yaw: 24.9999275
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1823022719095258003
+  Name: "7"
+  Transform {
+    Location {
+      X: -1399.99988
+      Y: -1800
+    }
+    Rotation {
+      Yaw: 24.999939
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6190705224755132624
+  Name: "6"
+  Transform {
+    Location {
+      X: -1400.00012
+      Y: 1800
+    }
+    Rotation {
+      Yaw: 24.9999485
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2116842755201388211
+  Name: "5"
+  Transform {
+    Location {
+      X: -1199.99976
+      Y: -1200
+    }
+    Rotation {
+      Yaw: 24.999958
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13256421995457709481
+  Name: "4"
+  Transform {
+    Location {
+      X: -1199.99963
+      Y: 1200
+    }
+    Rotation {
+      Yaw: 24.9999676
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4784705819632012061
+  Name: "3"
+  Transform {
+    Location {
+      X: -1000.00018
+      Y: -600
+    }
+    Rotation {
+      Yaw: 24.999979
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15220006946212539941
+  Name: "2"
+  Transform {
+    Location {
+      X: -1000
+      Y: 599.999573
+    }
+    Rotation {
+      Yaw: 24.9999905
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1224889955140059376
+  Name: "1"
+  Transform {
+    Location {
+      X: -771.378601
+      Y: 0.364188671
+    }
+    Rotation {
+      Yaw: 25
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1222819902264568315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 7137217383023676484
   Name: "Spawns"
   Transform {
     Location {
-      X: -208.424072
-      Y: -5.28278397e-05
+      X: -150
+      Y: -0.00067293644
     }
     Rotation {
     }
@@ -11901,8 +12396,8 @@ Objects {
   Name: "8"
   Transform {
     Location {
-      X: -399.999481
-      Y: 599.99939
+      X: -399.999268
+      Y: 2000
     }
     Rotation {
     }
@@ -11937,8 +12432,8 @@ Objects {
   Name: "7"
   Transform {
     Location {
-      X: -299.999756
-      Y: -449.999695
+      X: -300.001312
+      Y: -1500
     }
     Rotation {
     }
@@ -11973,8 +12468,8 @@ Objects {
   Name: "6"
   Transform {
     Location {
-      X: -299.999756
-      Y: 449.999329
+      X: -300.000183
+      Y: 1500
     }
     Rotation {
     }
@@ -12009,8 +12504,8 @@ Objects {
   Name: "5"
   Transform {
     Location {
-      X: -199.999771
-      Y: -299.999817
+      X: -200.000793
+      Y: -1000
     }
     Rotation {
     }
@@ -12045,8 +12540,8 @@ Objects {
   Name: "4"
   Transform {
     Location {
-      X: -199.999741
-      Y: 299.999939
+      X: -199.999161
+      Y: 1000
     }
     Rotation {
     }
@@ -12081,8 +12576,8 @@ Objects {
   Name: "3"
   Transform {
     Location {
-      X: -99.999855
-      Y: -149.999908
+      X: -99.9993286
+      Y: -500
     }
     Rotation {
     }
@@ -12117,8 +12612,8 @@ Objects {
   Name: "2"
   Transform {
     Location {
-      X: -99.9999
-      Y: 149.999969
+      X: -100.000053
+      Y: 500
     }
     Rotation {
     }
@@ -12189,11 +12684,12 @@ Objects {
   Name: "Camera"
   Transform {
     Location {
-      X: 204.947266
-      Y: -0.000151383269
-      Z: 100
+      X: 1633.55298
+      Y: 26.7615013
+      Z: 547.743958
     }
     Rotation {
+      Pitch: 12
     }
     Scale {
       X: 1

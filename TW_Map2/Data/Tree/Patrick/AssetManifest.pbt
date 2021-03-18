@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 11459567137536615475
   Name: "Dry Fire Click Generic 01 SFX"
   PlatformAssetType: 7

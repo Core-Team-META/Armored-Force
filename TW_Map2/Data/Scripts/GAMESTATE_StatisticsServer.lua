@@ -1,3 +1,6 @@
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local victoryComponent = script:GetCustomProperty("GAMESTATE_VictoryComponent"):WaitForObject()
 
@@ -87,8 +90,11 @@ function SaveStatistics()
 
 	for x, p in pairs(Game.GetPlayers()) do
 	
-		print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP")
+		print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP for " .. UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())))
 		print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
+		
+		p:AddResource(UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())), CalculateTotalXP(p))
+		p:AddResource("Silver", CalculateTotalCurrency(p))
 		
 	end
 	
