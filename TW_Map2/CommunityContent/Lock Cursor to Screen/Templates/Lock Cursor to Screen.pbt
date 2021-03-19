@@ -68,6 +68,6 @@ Assets {
   Marketplace {
     Description: "This CC will ensure that your cursor does not leave the screen/game while you are playing as to make sure it does not go to a secondary monitor."
   }
-  SerializationVersion: 79
+  SerializationVersion: 80
   DirectlyPublished: true
 }
