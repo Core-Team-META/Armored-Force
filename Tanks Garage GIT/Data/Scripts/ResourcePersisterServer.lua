@@ -335,3 +335,4 @@ Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)
+Events.ConnectForPlayer("SAVE_PLAYER_DATA", SavePlayerDataIntoSharedStorage)

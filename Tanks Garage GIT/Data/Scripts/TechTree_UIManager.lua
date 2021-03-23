@@ -4,6 +4,7 @@
 
 -- API
 local Constants_API = require(script:GetCustomProperty("Constants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 -- Definitions
 local TEAM_DEFINITIONS = script:GetCustomProperty("TechTree_TeamDefinitions"):WaitForObject()
@@ -122,6 +123,8 @@ function DisableThisComponent()
 	techTreeViewUI.isEnabled = false
 	
 	displayTanks.visibility = Visibility.FORCE_OFF
+	
+	CloseTechTreeModal()
 	
 	CloseUI()
 	
@@ -352,7 +355,27 @@ function PopulateUI(selectedTeam)
 		tankContentsPanel.x = X_OFFSET + ((v.tier -1) * X_SPACING)
 		IncrementCount(v.tier)
 	end	
-	local currencyCount = 0
+	PopulateCurrencyUI()
+end
+
+function EmptyUI()
+	for k,panel in ipairs(TankContentPanel:GetChildren()) do
+		if(Object.IsValid(panel)) then
+			panel:Destroy()
+		end
+	end
+end
+
+function PopulateCurrencyUI()
+	-- First clear out any existing panels if they exist
+	for k,v in ipairs(currencyPanel:GetChildren()) do
+		if(Object.IsValid(v)) then
+			v:Destroy()
+		end
+	end
+	
+	-- Load up currency panels based on set definitions
+	local currencyCount = 0	
 	for k,v in ipairs(CURRENCY_DEFINITIONS:GetChildren()) do
 		local panel = World.SpawnAsset(currencyContentsPanel, {parent = currencyPanel})
 		panel.x = BASE_CURRENCY_POSITION_X + (currencyCount * CURRENCY_X_OFFSET)
@@ -365,14 +388,6 @@ function PopulateUI(selectedTeam)
 			end
 		end
 		currencyCount = currencyCount + 1
-	end
-end
-
-function EmptyUI()
-	for k,panel in ipairs(TankContentPanel:GetChildren()) do
-		if(Object.IsValid(panel)) then
-			panel:Destroy()
-		end
 	end
 end
 
@@ -467,36 +482,218 @@ end
 
 function UpgradeTank()
 	if(tankDetails.purchasedTank) then
-		print("Equip tank")
+		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
+		-- TODO: Play SFX/Message
+		UI.PrintToScreen(tankDetails.name .. " equipped.")
 	elseif(tankDetails.researchedTank) then
-		print("Purchase cost: " .. tankDetails.tankPurchaseCost)
+		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+		if(silver < tankDetails.tankPurchaseCost) then
+			-- DEBUG
+			ShowNotEnoughSilverMessage()			
+		else
+			Events.BroadcastToServer("PurchaseTank", tankDetails.id)
+			-- TODO: Play SFX/Message
+			UI.PrintToScreen(tankDetails.name .. " purchased.")
+			PopulateCurrencyUI()
+			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+				if(tank.id == tankDetails.id) then
+					tank.purchased = true
+				end
+			end
+			CloseTechTreeModal()		
+		end		
 	else
-		print("Research cost: " .. tankDetails.tankResearchCost)
+		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
+		if(rp < tankDetails.tankResearchCost) then
+			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+			if(freeRP >= tankDetails.tankResearchCost) then
+				-- Bring up modal asking if user wants to use Free RP
+				
+			else
+				-- DEBUG
+				ShowNotEnoughRPMessage()
+			end
+		else		
+			local event = Events.BroadcastToServer("ResearchTank", tankDetails.id, false)
+			if(event == BroadcastEventResultCode.SUCCESS) then				
+				-- TODO: Play SFX/Message				
+				UI.PrintToScreen(tankDetails.name .. " successfully researched.")
+				PopulateCurrencyUI()
+				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+					if(tank.id == tankDetails.id) then
+						tank.researched = true
+					end
+				end
+				CloseTechTreeModal()
+			else
+				-- TODO: Better prompt for user
+				UI.PrintToScreen("There was an error sending the event. Please try again.")
+			end
+		end		
 	end
 end
 
 function UpgradeWeapon()
 	if(tankDetails.weaponProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
 		print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
+		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+		if(silver < tankDetails.weaponPurchaseCost) then
+			-- DEBUG
+			ShowNotEnoughSilverMessage()			
+		else
+			Events.BroadcastToServer("PurchaseWeapon", tankDetails.id)
+			-- TODO: Play SFX/Message
+			UI.PrintToScreen(tankDetails.name .. " weapon purchased.")
+			PopulateCurrencyUI()
+			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+				if(tank.id == tankDetails.id) then
+					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+				end
+			end
+			CloseTechTreeModal()		
+		end
 	else
-		print("Research cost: " .. tankDetails.weaponPurchaseCost)
+		print("Research cost: " .. tankDetails.weaponResearchCost)
+		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
+		if(rp < tankDetails.weaponResearchCost) then
+			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+			if(freeRP >= tankDetails.tankResearchCost) then
+				-- Bring up modal asking if user wants to use Free RP
+				
+			else
+				-- DEBUG
+				ShowNotEnoughRPMessage()
+			end
+		else		
+			local event = Events.BroadcastToServer("ResearchWeapon", tankDetails.id, false)
+			if(event == BroadcastEventResultCode.SUCCESS) then				
+				-- TODO: Play SFX/Message				
+				UI.PrintToScreen(tankDetails.name .. " weapon successfully researched.")
+				PopulateCurrencyUI()
+				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+					if(tank.id == tankDetails.id) then
+						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
+					end
+				end
+				CloseTechTreeModal()
+			else
+				-- TODO: Better prompt for user
+				UI.PrintToScreen("There was an error sending the event. Please try again.")
+			end
+		end		
 	end
 end
 
 function UpgradeArmor()
 	if(tankDetails.armorProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
 		print("Purchase cost: " .. tankDetails.armorPurchaseCost)
+		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+		if(silver < tankDetails.armorPurchaseCost) then
+			-- DEBUG
+			ShowNotEnoughSilverMessage()			
+		else
+			Events.BroadcastToServer("PurchaseArmor", tankDetails.id)
+			-- TODO: Play SFX/Message
+			UI.PrintToScreen(tankDetails.name .. " armor purchased.")
+			PopulateCurrencyUI()
+			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+				if(tank.id == tankDetails.id) then
+					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+				end
+			end
+			CloseTechTreeModal()		
+		end
 	else
-		print("Research cost: " .. tankDetails.armorPurchaseCost)
+		print("Research cost: " .. tankDetails.armorResearchCost)
+		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
+		if(rp < tankDetails.armorResearchCost) then
+			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+			if(freeRP >= tankDetails.armorResearchCost) then
+				-- Bring up modal asking if user wants to use Free RP
+				
+			else
+				-- DEBUG
+				ShowNotEnoughRPMessage()
+			end
+		else		
+			local event = Events.BroadcastToServer("ResearchArmor", tankDetails.id, false)
+			if(event == BroadcastEventResultCode.SUCCESS) then				
+				-- TODO: Play SFX/Message				
+				UI.PrintToScreen(tankDetails.name .. " armor successfully researched.")
+				PopulateCurrencyUI()
+				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+					if(tank.id == tankDetails.id) then
+						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
+					end
+				end
+				CloseTechTreeModal()
+			else
+				-- TODO: Better prompt for user
+				UI.PrintToScreen("There was an error sending the event. Please try again.")
+			end
+		end		
 	end
 end
 
 function UpgradeEngine()
 	if(tankDetails.engineProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
 		print("Purchase cost: " .. tankDetails.enginePurchaseCost)
+		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+		if(silver < tankDetails.enginePurchaseCost) then
+			-- DEBUG
+			ShowNotEnoughSilverMessage()			
+		else
+			Events.BroadcastToServer("PurchaseEngine", tankDetails.id)
+			-- TODO: Play SFX/Message
+			UI.PrintToScreen(tankDetails.name .. " engine purchased.")
+			PopulateCurrencyUI()
+			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+				if(tank.id == tankDetails.id) then
+					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+				end
+			end
+			CloseTechTreeModal()		
+		end
 	else
-		print("Research cost: " .. tankDetails.enginePurchaseCost)
+		print("Research cost: " .. tankDetails.engineResearchCost)
+		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
+		if(rp < tankDetails.engineResearchCost) then
+			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+			if(freeRP >= tankDetails.engineResearchCost) then
+				-- Bring up modal asking if user wants to use Free RP
+				
+			else
+				-- DEBUG
+				ShowNotEnoughRPMessage()
+			end
+		else		
+			local event = Events.BroadcastToServer("ResearchEngine", tankDetails.id, false)
+			if(event == BroadcastEventResultCode.SUCCESS) then				
+				-- TODO: Play SFX/Message				
+				UI.PrintToScreen(tankDetails.name .. " engine successfully researched.")
+				PopulateCurrencyUI()
+				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+					if(tank.id == tankDetails.id) then
+						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
+					end
+				end
+				CloseTechTreeModal()
+			else
+				-- TODO: Better prompt for user
+				UI.PrintToScreen("There was an error sending the event. Please try again.")
+			end
+		end		
 	end
+end
+
+function ShowNotEnoughSilverMessage()
+	-- TODO: Show a better message to the user
+	UI.PrintToScreen("You do not have enough Silver.")
+end
+
+function ShowNotEnoughRPMessage()
+	-- TODO: Show a better message to the user
+	UI.PrintToScreen("You do not have enough Research Points.")
 end
 
 function PopulateDetailsModal(tank)
@@ -519,7 +716,9 @@ function PopulateDetailsModal(tank)
 	
 	-- Get the player's tank data
 	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
-		if(t.id == tank:GetCustomProperty("ID")) then			
+		if(t.id == tank:GetCustomProperty("ID")) then	
+			tankDetails.id = t.id
+			tankDetails.name = tank:GetCustomProperty("Name")
 			tankDetails.researchedTank = t.researched
 			tankDetails.purchasedTank = t.purchased
 			tankDetails.weaponProgress = t.weaponProgress
@@ -566,39 +765,41 @@ function PopulateDetailsModal(tank)
 	elevationSubStat.text = "Elevation/Depression: +" .. tostring(elevation) .. "/" .. tostring(maxDepth)
 	elevationSubStatChange.text = "+" .. tostring(elevationUpgraded - elevation) .. "/0" -- Is there always no change in max depth?
 	
-	if(purchasedTank) then
+	-- DEBUG
+	print("Tank purchased? " .. tostring(tankDetails.purchasedTank))
+	if(tankDetails.purchasedTank) then
 		-- Hide upgrade buttons if they aren't needed
-		if(tostring(weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
+		if(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
 			print("weapon purchased")
 			upgradeWeapon.visibility = Visibility.FORCE_OFF
-		elseif(tostring(weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
+		elseif(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			print("weapon researched")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
 			upgradeWeapon.text = "P " .. tostring(tank:GetCustomProperty("WeaponPurchaseCost"))
-		elseif(tostring(weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+		elseif(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			print("no weapon progress")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
 			upgradeWeapon.text = "R " .. tostring(tank:GetCustomProperty("WeaponResearchCost"))
 		else
 			warn("Weapon progress not found with value: " .. tostring(weaponProgress))
 		end
-		if(tostring(armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
+		if(tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
 			upgradeArmor.visibility = Visibility.FORCE_OFF
-		elseif(tostring(armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
+		elseif(tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			upgradeArmor.visibility = Visibility.FORCE_ON
 			upgradeArmor.text = "P " .. tostring(tank:GetCustomProperty("ArmorPurchaseCost"))
-		elseif(tostring(armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+		elseif(tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			upgradeArmor.visibility = Visibility.FORCE_ON
 			upgradeArmor.text = "R " .. tostring(tank:GetCustomProperty("ArmorResearchCost"))
 		else
 			warn("Armor progress not found with value: " .. tostring(armorProgress))
 		end
-		if(tostring(engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
+		if(tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
 			upgradeEngine.visibility = Visibility.FORCE_OFF
-		elseif(tostring(engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
+		elseif(tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			upgradeEngine.visibility = Visibility.FORCE_ON
 			upgradeEngine.text = "P  " .. tostring(tank:GetCustomProperty("MobilityPurchaseCost"))
-		elseif(tostring(engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+		elseif(tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			upgradeEngine.visibility = Visibility.FORCE_ON
 			upgradeEngine.text = "R  " .. tostring(tank:GetCustomProperty("MobilityResearchCost"))
 		else
@@ -609,20 +810,25 @@ end
 
 function ResetTankDetails()
 	tankDetails = {
-	researchedTank = false,
-	purchasedTank = false,
-	weaponProgress = 0,
-	armorProgress = 0,
-	engineProgress = 0,
-	tankResearchCost = 0,
-	tankPurchaseCost = 0,
-	weaponResearchCost = 0,
-	weaponPurchaseCost = 0,
-	armorResearchCost = 0,
-	armorPurchaseCost = 0,
-	engineResearchCost = 0,
-	enginePurchaseCost = 0
-}
+		id = "00",
+		name = "",
+		researchedTank = false,
+		purchasedTank = false,
+		weaponProgress = 0,
+		armorProgress = 0,
+		engineProgress = 0,
+		tankResearchCost = 0,
+		tankPurchaseCost = 0,
+		weaponResearchCost = 0,
+		weaponPurchaseCost = 0,
+		armorResearchCost = 0,
+		armorPurchaseCost = 0,
+		engineResearchCost = 0,
+		enginePurchaseCost = 0	
+	}
+	upgradeWeapon.visibility = Visibility.FORCE_OFF
+	upgradeArmor.visibility = Visibility.FORCE_OFF
+	upgradeEngine.visibility = Visibility.FORCE_OFF
 end
 
 Init()
