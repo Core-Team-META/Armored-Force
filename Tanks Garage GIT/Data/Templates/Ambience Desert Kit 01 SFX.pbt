@@ -193,5 +193,9 @@ Assets {
       AssetId: "Ambience_Desert_Kit_01_SFX"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }

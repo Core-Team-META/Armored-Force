@@ -908,5 +908,9 @@ Assets {
       AssetId: "Military_Fence_-_8m_Doorway_Template"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }

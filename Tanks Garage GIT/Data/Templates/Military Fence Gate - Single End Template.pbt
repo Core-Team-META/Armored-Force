@@ -691,5 +691,9 @@ Assets {
       AssetId: "Military_Fence_Gate_-_Single_End_Template"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }

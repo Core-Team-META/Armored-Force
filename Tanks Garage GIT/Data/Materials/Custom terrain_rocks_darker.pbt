@@ -2,7 +2,11 @@ Assets {
   Id: 8555905438658388206
   Name: "Custom terrain_rocks_darker"
   PlatformAssetType: 13
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
   CustomMaterialAsset {
     BaseMaterialId: 6797287239076159786
     ParameterOverrides {

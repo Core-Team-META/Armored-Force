@@ -2,7 +2,11 @@ Assets {
   Id: 2980634375096337590
   Name: "Gray Custom Advanced Material"
   PlatformAssetType: 13
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
   CustomMaterialAsset {
     BaseMaterialId: 4934385586437146638
     ParameterOverrides {

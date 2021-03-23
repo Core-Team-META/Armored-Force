@@ -501,5 +501,9 @@ Assets {
       AssetId: "Military_Sandbag_Wall_-_Crescent_Template"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }

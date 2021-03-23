@@ -1132,5 +1132,9 @@ Assets {
       AssetId: "Sci-fi_Console_01_Prop_"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }

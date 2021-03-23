@@ -2,7 +2,11 @@ Assets {
   Id: 15190929299423395447
   Name: "Custom Detail 3 from Sci-fi Console Screen 02_1"
   PlatformAssetType: 13
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
   CustomMaterialAsset {
     BaseMaterialId: 14243307494812307772
     ParameterOverrides {
