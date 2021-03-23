@@ -2,7 +2,7 @@ Assets {
   Id: 6006320083634352783
   Name: "Custom Window Blind Vertical 01_tank vents"
   PlatformAssetType: 13
-  SerializationVersion: 79
+  SerializationVersion: 80
   CustomMaterialAsset {
     BaseMaterialId: 10712574067302352946
     ParameterOverrides {
