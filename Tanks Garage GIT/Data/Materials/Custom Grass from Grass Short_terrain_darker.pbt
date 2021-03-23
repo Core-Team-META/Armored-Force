@@ -2,7 +2,11 @@ Assets {
   Id: 12770782285917496110
   Name: "Custom Grass from Grass Short_terrain_darker"
   PlatformAssetType: 13
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
   CustomMaterialAsset {
     BaseMaterialId: 6090051424931769036
     ParameterOverrides {

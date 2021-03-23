@@ -2,7 +2,11 @@ Assets {
   Id: 16705429669041540710
   Name: "Custom Metal Corrugated 01_vents"
   PlatformAssetType: 13
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
   CustomMaterialAsset {
     BaseMaterialId: 12896004883766260485
     ParameterOverrides {

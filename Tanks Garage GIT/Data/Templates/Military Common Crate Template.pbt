@@ -266,5 +266,9 @@ Assets {
       AssetId: "Military_Common_Crate"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }

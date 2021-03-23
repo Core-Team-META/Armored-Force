@@ -1992,5 +1992,9 @@ Assets {
       AssetId: "Barbed_Wire_Barrier_Template"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }

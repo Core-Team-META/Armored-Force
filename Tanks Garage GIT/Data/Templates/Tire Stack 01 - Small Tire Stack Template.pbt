@@ -333,5 +333,9 @@ Assets {
       AssetId: "Military_Tire_Stack_01_Template"
     }
   }
+<<<<<<< Updated upstream
   SerializationVersion: 80
+=======
+  SerializationVersion: 81
+>>>>>>> Stashed changes
 }
