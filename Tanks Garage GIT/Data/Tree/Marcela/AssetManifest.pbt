@@ -152,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16890205056291965690
+  Name: "Sign Bracket - Round"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_signbracket_round_001"
+  }
+}
+Assets {
   Id: 16815000814721488088
   Name: "Ellipsoid - Truncated Wedge"
   PlatformAssetType: 1
@@ -1295,6 +1304,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8878003385948589672
+  Name: "Urban Fence Pole - Connecting 3-Way"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mil_fence_pole_02_connect_003"
+  }
+}
+Assets {
   Id: 8777653088300600563
   Name: "Bush 01"
   PlatformAssetType: 1
@@ -1328,6 +1346,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_curve90_002"
+  }
+}
+Assets {
+  Id: 8088145951334388726
+  Name: "Play"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "PlayRegular_ref"
   }
 }
 Assets {
@@ -1400,6 +1427,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_arched_001"
+  }
+}
+Assets {
+  Id: 7720350652240094542
+  Name: "Urban Fence Pole - Connecting"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mil_fence_pole_02_connect_001"
   }
 }
 Assets {
@@ -1727,6 +1763,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5457962044230310640
+  Name: "Urban Fence Crossbar - Panel"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mil_fence_crossbar_01"
+  }
+}
+Assets {
   Id: 5381367210591412322
   Name: "Urban Pipe Elbow 01"
   PlatformAssetType: 1
@@ -1898,6 +1943,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4371665944147568918
+  Name: "Decal Military Symbols 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_military_logo_001_ref"
+  }
+}
+Assets {
   Id: 4281380979366999084
   Name: "Hatchet - Blade"
   PlatformAssetType: 1
@@ -2012,6 +2066,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_mod_skirt_001_front_ref"
+  }
+}
+Assets {
+  Id: 3433416882178080463
+  Name: "Street Sign - Rectangle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_street-sign_rectangle_001"
   }
 }
 Assets {
@@ -2336,6 +2399,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_big_001"
+  }
+}
+Assets {
+  Id: 472496642976630875
+  Name: "Urban Fence Panel"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_mil_fence_wall_01"
   }
 }
 Assets {
