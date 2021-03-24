@@ -2747,7 +2747,10 @@ Objects {
     Overrides {
       Name: "cs:Background"
       ObjectReference {
-        SelfId: 17673340388354254850
+        SelfId: 16734332594049786333
+        SubObjectId: 17673340388354254850
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
@@ -2757,19 +2760,28 @@ Objects {
     Overrides {
       Name: "cs:OpenSFX"
       ObjectReference {
-        SelfId: 9005815637734376879
+        SelfId: 7026475500129193072
+        SubObjectId: 9005815637734376879
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TechTreeUIContainer"
       ObjectReference {
-        SelfId: 14966627174895260745
+        SelfId: 15189585705583533462
+        SubObjectId: 14966627174895260745
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 7647187385909291407
+        SelfId: 8599728835086770256
+        SubObjectId: 7647187385909291407
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
@@ -2801,181 +2813,277 @@ Objects {
     Overrides {
       Name: "cs:CurrencyPanel"
       ObjectReference {
-        SelfId: 11741062274946987772
+        SelfId: 13801485878491299619
+        SubObjectId: 11741062274946987772
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TechTree_TeamDefinitions"
       ObjectReference {
-        SelfId: 7712902404816319527
+        SelfId: 8534779212637830648
+        SubObjectId: 7712902404816319527
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TechTree_CurrencyDefinitions"
       ObjectReference {
-        SelfId: 2727903136666322489
+        SelfId: 4081227552685084646
+        SubObjectId: 2727903136666322489
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:OverrideCamera"
       ObjectReference {
-        SelfId: 4408893661492794121
+        SelfId: 2330492736492313302
+        SubObjectId: 4408893661492794121
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TechTreeViewUI"
       ObjectReference {
-        SelfId: 15460131420867581493
+        SelfId: 14696776359549968362
+        SubObjectId: 15460131420867581493
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:OtherGarageButtons"
       ObjectReference {
-        SelfId: 6496697485475280040
+        SelfId: 5138884629533703543
+        SubObjectId: 6496697485475280040
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:CloseTechTreeModalButton"
       ObjectReference {
-        SelfId: 16244310878080369737
+        SelfId: 3339493306375841305
+        SubObjectId: 3684042209447702470
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TechTreeModalPopup"
       ObjectReference {
-        SelfId: 1392047029076375020
+        SelfId: 15783896732805586944
+        SubObjectId: 14299968772191824351
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TankFullName"
       ObjectReference {
-        SelfId: 8400759405247778496
+        SelfId: 14609021274369628480
+        SubObjectId: 15548027715982610591
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:ReloadSubStat"
       ObjectReference {
-        SelfId: 15409430923312397069
+        SelfId: 898315009652491491
+        SubObjectId: 1229323386010881340
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:DamageSubStat"
       ObjectReference {
-        SelfId: 3629041008149732381
+        SelfId: 11156944907638501425
+        SubObjectId: 9776600034670426606
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:ReloadSubStatChange"
       ObjectReference {
-        SelfId: 4678259048214319867
+        SelfId: 6433130101971689154
+        SubObjectId: 4917660418557237021
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:DamageSubStatChange"
       ObjectReference {
-        SelfId: 4899682080488655839
+        SelfId: 15841162945141829772
+        SubObjectId: 14316668760050448723
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TankContentPanel"
       ObjectReference {
-        SelfId: 7989164801245509352
+        SelfId: 8333678736372514615
+        SubObjectId: 7989164801245509352
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:DisplayTanks"
       ObjectReference {
-        SelfId: 17812715862257263058
+        SelfId: 16882694373923366925
+        SubObjectId: 17812715862257263058
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:HitpointsSubStat"
       ObjectReference {
-        SelfId: 14969049176660100057
+        SelfId: 16262131451551034451
+        SubObjectId: 18218936001107551628
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:HitpointsSubStatChange"
       ObjectReference {
-        SelfId: 3010127405305443314
+        SelfId: 11136219952666620022
+        SubObjectId: 9796409655875926441
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TopSpeedSubStat"
       ObjectReference {
-        SelfId: 14863832307458299869
+        SelfId: 527700304742932491
+        SubObjectId: 1885564616305420756
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:HullTraverseSubStat"
       ObjectReference {
-        SelfId: 6005885096541658525
+        SelfId: 30207800780021694
+        SubObjectId: 2095100111268812385
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TurretTraverseSubStat"
       ObjectReference {
-        SelfId: 728031295510820053
+        SelfId: 10706017468202473527
+        SubObjectId: 9938161852199113192
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:ElevationSubStat"
       ObjectReference {
-        SelfId: 4259034509754864216
+        SelfId: 12418741957095822470
+        SubObjectId: 12763244937383828825
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TopSpeedSubStatChange"
       ObjectReference {
-        SelfId: 16145922597118411686
+        SelfId: 5179261453334375378
+        SubObjectId: 6528096848381551117
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:HullTraverseSubStatChange"
       ObjectReference {
-        SelfId: 16405875447406317944
+        SelfId: 1786361432424228032
+        SubObjectId: 410520141443755295
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:TurretSubStatChange"
       ObjectReference {
-        SelfId: 1824059216503619610
+        SelfId: 14838771185508077750
+        SubObjectId: 15030196824834939241
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:ElevationSubStatChange"
       ObjectReference {
-        SelfId: 5942154244488329189
+        SelfId: 2781539202397930909
+        SubObjectId: 4315038382687243330
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:UpgradeWeapon"
       ObjectReference {
-        SelfId: 15272875763507954167
+        SelfId: 7413395607417534230
+        SubObjectId: 8906351636737130185
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:UpgradeArmor"
       ObjectReference {
-        SelfId: 2667473009802627967
+        SelfId: 14187941037015339916
+        SubObjectId: 15680877034945632851
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:UpgradeEngine"
       ObjectReference {
-        SelfId: 10607641793433307559
+        SelfId: 4506239974326137145
+        SubObjectId: 2589986257738184934
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:UpgradeTank"
       ObjectReference {
-        SelfId: 4095103234076962172
+        SelfId: 8055576141436816802
+        SubObjectId: 8265016213768979581
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
       }
     }
     Overrides {
       Name: "cs:UpgradeTankCost"
       ObjectReference {
-        SelfId: 7739174200950341715
+        SelfId: 15497782884301107092
+        SubObjectId: 14585809864503207499
+        InstanceId: 16140700812140092326
+        TemplateId: 6467707477551426106
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
       }
     }
   }
@@ -3180,7 +3288,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
