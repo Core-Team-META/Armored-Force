@@ -2,7 +2,7 @@ Assets {
   Id: 10603477074800125567
   Name: "CapPointBorder"
   PlatformAssetType: 13
-  SerializationVersion: 80
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 10472778939299609072
     ParameterOverrides {

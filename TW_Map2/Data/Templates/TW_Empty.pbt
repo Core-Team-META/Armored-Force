@@ -24,7 +24,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -36,5 +36,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 80
+  SerializationVersion: 81
 }
