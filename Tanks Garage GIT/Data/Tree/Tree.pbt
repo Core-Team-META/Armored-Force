@@ -35,7 +35,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
   }
@@ -1759,7 +1759,7 @@ Objects {
       Z: -5700
     }
     Rotation {
-      Yaw: -140.649185
+      Yaw: -140.648
     }
     Scale {
       X: 1
