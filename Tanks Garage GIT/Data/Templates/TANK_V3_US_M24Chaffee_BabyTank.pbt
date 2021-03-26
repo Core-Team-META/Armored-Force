@@ -699,14 +699,14 @@ Assets {
         Name: "ServerCollisionTrigger"
         Transform {
           Location {
-            X: 122.627808
-            Y: 0.026343517
+            X: 88.4798584
+            Y: 0.0263671875
             Z: 0.288482666
           }
           Rotation {
           }
           Scale {
-            X: 1.82869506
+            X: 1.42811155
             Y: 0.166699082
             Z: 0.134953469
           }
@@ -756,8 +756,8 @@ Assets {
         Name: "MuzzleMarker"
         Transform {
           Location {
-            X: 217.829071
-            Y: -0.315651774
+            X: 166.431641
+            Y: -0.315673828
             Z: 0.04296875
           }
           Rotation {
@@ -2690,9 +2690,9 @@ Assets {
         Name: "Smoke Volume VFX"
         Transform {
           Location {
-            X: -385.323486
-            Y: -155.133301
-            Z: 8.97129822
+            X: -402.180908
+            Y: -156.3414
+            Z: 60.4945221
           }
           Rotation {
           }
@@ -2803,9 +2803,9 @@ Assets {
         Name: "Smoke Volume VFX"
         Transform {
           Location {
-            X: -385.323486
-            Y: 159.836914
-            Z: 8.97129822
+            X: -402.180908
+            Y: 160.224625
+            Z: 60.4945221
           }
           Rotation {
           }
@@ -21800,7 +21800,7 @@ Assets {
         Name: "Pipe - Thick"
         Transform {
           Location {
-            X: 130.250885
+            X: 43.2010803
           }
           Rotation {
             Pitch: -90
@@ -21900,7 +21900,7 @@ Assets {
           Scale {
             X: 0.223503783
             Y: 0.22350356
-            Z: 2.76388335
+            Z: 1.8
           }
         }
         ParentId: 18337734522054746323
@@ -21985,8 +21985,8 @@ Assets {
         Name: "FiringFX"
         Transform {
           Location {
-            X: 217.829071
-            Y: -0.315651774
+            X: 166.431641
+            Y: -0.315673828
             Z: 0.04296875
           }
           Rotation {
@@ -22127,14 +22127,14 @@ Assets {
         Name: "ClientCollisionTrigger"
         Transform {
           Location {
-            X: 122.627808
-            Y: 0.026343517
+            X: 88.4798584
+            Y: 0.0263671875
             Z: 0.288482666
           }
           Rotation {
           }
           Scale {
-            X: 1.82869506
+            X: 1.42811155
             Y: 0.166699082
             Z: 0.134953469
           }
