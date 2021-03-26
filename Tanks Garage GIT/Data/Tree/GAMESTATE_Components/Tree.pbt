@@ -2747,10 +2747,7 @@ Objects {
     Overrides {
       Name: "cs:Background"
       ObjectReference {
-        SelfId: 16734332594049786333
-        SubObjectId: 17673340388354254850
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 17673340388354254850
       }
     }
     Overrides {
@@ -2760,28 +2757,19 @@ Objects {
     Overrides {
       Name: "cs:OpenSFX"
       ObjectReference {
-        SelfId: 7026475500129193072
-        SubObjectId: 9005815637734376879
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 9005815637734376879
       }
     }
     Overrides {
       Name: "cs:TechTreeUIContainer"
       ObjectReference {
-        SelfId: 15189585705583533462
-        SubObjectId: 14966627174895260745
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 14966627174895260745
       }
     }
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 8599728835086770256
-        SubObjectId: 7647187385909291407
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 7647187385909291407
       }
     }
     Overrides {
@@ -2813,55 +2801,37 @@ Objects {
     Overrides {
       Name: "cs:CurrencyPanel"
       ObjectReference {
-        SelfId: 13801485878491299619
-        SubObjectId: 11741062274946987772
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 11741062274946987772
       }
     }
     Overrides {
       Name: "cs:TechTree_TeamDefinitions"
       ObjectReference {
-        SelfId: 8534779212637830648
-        SubObjectId: 7712902404816319527
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 7712902404816319527
       }
     }
     Overrides {
       Name: "cs:TechTree_CurrencyDefinitions"
       ObjectReference {
-        SelfId: 4081227552685084646
-        SubObjectId: 2727903136666322489
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 2727903136666322489
       }
     }
     Overrides {
       Name: "cs:OverrideCamera"
       ObjectReference {
-        SelfId: 2330492736492313302
-        SubObjectId: 4408893661492794121
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 4408893661492794121
       }
     }
     Overrides {
       Name: "cs:TechTreeViewUI"
       ObjectReference {
-        SelfId: 14696776359549968362
-        SubObjectId: 15460131420867581493
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 15460131420867581493
       }
     }
     Overrides {
       Name: "cs:OtherGarageButtons"
       ObjectReference {
-        SelfId: 5138884629533703543
-        SubObjectId: 6496697485475280040
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 6496697485475280040
       }
     }
     Overrides {
@@ -2930,19 +2900,13 @@ Objects {
     Overrides {
       Name: "cs:TankContentPanel"
       ObjectReference {
-        SelfId: 8333678736372514615
-        SubObjectId: 7989164801245509352
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 7989164801245509352
       }
     }
     Overrides {
       Name: "cs:DisplayTanks"
       ObjectReference {
-        SelfId: 16882694373923366925
-        SubObjectId: 17812715862257263058
-        InstanceId: 16140700812140092326
-        TemplateId: 6467707477551426106
+        SelfId: 17812715862257263058
       }
     }
     Overrides {
