@@ -699,13 +699,13 @@ Assets {
         Name: "ServerCollisionTrigger"
         Transform {
           Location {
-            X: 101.626465
+            X: 83.6529541
             Z: 1.94229126
           }
           Rotation {
           }
           Scale {
-            X: 1.89122045
+            X: 1.03412938
             Y: 0.066506125
             Z: 0.0538409203
           }
@@ -755,8 +755,8 @@ Assets {
         Name: "MuzzleMarker"
         Transform {
           Location {
-            X: 199.489594
-            Y: -0.323776364
+            X: 137.014221
+            Y: -0.323730469
             Z: 1.90777588
           }
           Rotation {
@@ -9311,7 +9311,7 @@ Assets {
           Scale {
             X: 0.187565491
             Y: 0.187564984
-            Z: 4.61075687
+            Z: 2.5
           }
         }
         ParentId: 16883168430253979800
@@ -9396,8 +9396,8 @@ Assets {
         Name: "FiringFX"
         Transform {
           Location {
-            X: 199.489594
-            Y: -0.323776364
+            X: 137.014221
+            Y: -0.323730469
             Z: 1.90777588
           }
           Rotation {
@@ -9538,13 +9538,13 @@ Assets {
         Name: "ClientCollisionTrigger"
         Transform {
           Location {
-            X: 101.626465
+            X: 83.6529541
             Z: 1.94229126
           }
           Rotation {
           }
           Scale {
-            X: 1.89122045
+            X: 1.03412938
             Y: 0.066506125
             Z: 0.0538409203
           }
