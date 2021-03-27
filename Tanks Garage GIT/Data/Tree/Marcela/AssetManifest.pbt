@@ -1403,6 +1403,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7807120585765719985
+  Name: "Ambient Occlusion Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_ao"
+  }
+}
+Assets {
   Id: 7790074985852139766
   Name: "Electric Hum Room Tone Loop 01 SFX"
   PlatformAssetType: 7
