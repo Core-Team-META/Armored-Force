@@ -2422,7 +2422,6 @@ Assets {
           }
           AutoPlay: true
           Repeat: true
-          Pitch: -200
           Volume: 1.5
           Falloff: 5000
           Radius: 2000
