@@ -1,15 +1,15 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
-local votingMachineServer = script:GetCustomProperty("GAMESTATE_VotingMachineServer"):WaitForObject()
+local settings = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
 
+local activeGameMode = settings:GetCustomProperty("MatchMode")
 local gameModeID = script:GetCustomProperty("GameModeID")
 
 local defaultGameMode = script:GetCustomProperty("DefaultGameMode")
 
 local playerCountTask = nil
 local gameModeEnabled = defaultGameMode
-
 
 local leadTeam = 0
 
@@ -21,7 +21,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" or not gameModeEnabled then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" then
 	
 		if playerCountTask then
 		
@@ -63,27 +63,6 @@ function StateSTART(manager, propertyName)
 	
 end
 
-function CheckGameMode(manager, propertyName)
-
-	if propertyName ~= "SelectedMatchID" or votingMachineServer:GetCustomProperty("SelectedMatchID") == "" then
-	
-		return
-		
-	end
-	
-	if votingMachineServer:GetCustomProperty("SelectedMatchID") == gameModeID then
-	
-		gameModeEnabled = true
-		
-	else 
-	
-		gameModeEnabled = false
-		
-	end
-	
-end
-
-
 function CheckPlayerCountTask()
 	
 	local count = Game.GetPlayers()
@@ -122,6 +101,10 @@ function CheckPlayerCountTask()
 		
 end
 
+function Initialize()
+	if activeGameMode == gameModeID then
+		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
+	end
+end
 
-mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
-votingMachineServer.networkedPropertyChangedEvent:Connect(CheckGameMode)
+Initialize()

@@ -3,14 +3,16 @@
 	States: (recieved from CHANGESTATE broadcast)
 	LOBBY_STATE
 	MATCH_STATE
-	VOTING_STATE
 	VICTORY_STATE
+	STATS_STATE
 	
 	]]--
+local settings = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
 
-local matchMaxDuration = script:GetCustomProperty("MatchMaxDuration")
-local victoryMaxDuration = script:GetCustomProperty("VictoryMaxDuration")
-local statsMaxDuration = script:GetCustomProperty("StatsMaxDuration")
+local matchMaxDuration = settings:GetCustomProperty("MatchMaxDuration")
+local victoryMaxDuration = settings:GetCustomProperty("VictoryMaxDuration")
+local statsMaxDuration = settings:GetCustomProperty("StatsMaxDuration")
+local garageLink = settings:GetCustomProperty("GarageLink")
 
 local tankSettings = script:GetCustomProperty("TankSettings"):WaitForObject()
 
@@ -34,13 +36,15 @@ function OnChangeState(previousState)
 		
 	end
 
-	if previousState == "VOTING_STATE" then
+	if previousState == "STARTING_STATE" then
 
 		script:SetNetworkedCustomProperty("GameState", "LOBBY_STATE")
 		
 		currentState = "LOBBY_STATE"
 		
 	elseif previousState == "LOBBY_STATE" then
+	
+		Game.StopAcceptingPlayers()
 	
 		for _, player in ipairs(Game.GetPlayers()) do
 		
@@ -76,10 +80,11 @@ function OnChangeState(previousState)
 		
 	elseif previousState == "STATS_STATE" then
 	
-		script:SetNetworkedCustomProperty("GameState", "VOTING_STATE")
+		script:SetNetworkedCustomProperty("GameState", "")
 		
-		currentState = "VOTING_STATE"
+		currentState = ""
 		
+		Game.TransferAllPlayersToGame(garageLink)		
 	end
 	
 	print("Transitioning to state: " .. currentState)
@@ -148,4 +153,4 @@ Events.Connect("CHANGE_STATE", OnChangeState)
 
 Game.playerJoinedEvent:Connect(OnJoined)
 
-OnChangeState("VOTING_STATE")
+OnChangeState("STARTING_STATE")
