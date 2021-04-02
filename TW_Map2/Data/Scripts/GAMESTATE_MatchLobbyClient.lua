@@ -114,7 +114,7 @@ function ToggleEquipTankUI(player, binding)
 
 	if binding == "ability_extra_38" and not tankEquipToggle then
 	
-		print("lookMode toggle on")
+		--print("lookMode toggle on")
 	
 		switchInProgress = true
 	
@@ -134,7 +134,7 @@ function ToggleEquipTankUI(player, binding)
 		
 	elseif binding == "ability_extra_38" and tankEquipToggle then
 	
-		print("lookMode toggle off")
+		--print("lookMode toggle off")
 	
 		switchInProgress = true
 	

@@ -308,7 +308,7 @@ function SetNemesis()
 	
 	script:SetNetworkedCustomProperty("ListSet", true)
 	
-	print("Finished Setting Nemesis")
+	--print("Finished Setting Nemesis")
 	
 		
 end
@@ -316,7 +316,7 @@ end
 
 function OnGameStateChanged(newState)
 
-	print("Nemesis Server got: " .. tostring(newState))
+	--print("Nemesis Server got: " .. tostring(newState))
 
 	if newState == "VICTORY_STATE"  then
 	
