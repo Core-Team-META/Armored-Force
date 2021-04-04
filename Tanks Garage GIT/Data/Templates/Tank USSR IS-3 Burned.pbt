@@ -8340,7 +8340,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8748212014664122890
+              Id: 2288213157925483137
             }
           }
           Overrides {
@@ -8355,6 +8355,14 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
           }
         }
         Collidable_v2 {
@@ -8537,7 +8545,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.407240301
+              R: 0.407240242
               G: 0.514917791
               B: 0.212230802
               A: 1

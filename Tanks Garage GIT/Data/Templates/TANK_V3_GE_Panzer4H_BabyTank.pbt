@@ -2629,7 +2629,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Life"
-            Float: 3
+            Float: 2.5
           }
           Overrides {
             Name: "bp:Density"
@@ -2637,7 +2637,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 0.75
+            Float: 0.5
           }
           Overrides {
             Name: "bp:Gravity"
@@ -2663,14 +2663,14 @@ Assets {
           Overrides {
             Name: "bp:Initial Velocity Low"
             Vector {
-              X: -200
+              X: -400
               Y: -25
               Z: -25
             }
           }
           Overrides {
             Name: "bp:Camera Depth Fade Length"
-            Float: 3
+            Float: 2
           }
         }
         Collidable_v2 {
