@@ -14,13 +14,13 @@ Objects {
   ChildIds: 9351552797092553710
   ChildIds: 7070797141575206195
   ChildIds: 9121575415731092307
-  ChildIds: 13345785802435781910
+  ChildIds: 13067684798784393031
   ChildIds: 11800523572548119810
   ChildIds: 9592813986143236212
   UnregisteredParameters {
     Overrides {
       Name: "cs:MatchMode"
-      String: "LastTeamStanding"
+      String: "Frontline"
     }
     Overrides {
       Name: "cs:MatchMaxDuration"
@@ -12746,7 +12746,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13345785802435781910
+  Id: 13067684798784393031
   Name: "GAMESTATE_MatchComponent"
   Transform {
     Location {
@@ -12760,11 +12760,11 @@ Objects {
     }
   }
   ParentId: 3881357346618484820
-  ChildIds: 13439593497749092695
-  ChildIds: 16701474956812085596
-  ChildIds: 1829568003537508325
-  ChildIds: 18094804088576246160
-  ChildIds: 7560763459277463903
+  ChildIds: 15236967115737169336
+  ChildIds: 12950396262770854823
+  ChildIds: 5332687290715458223
+  ChildIds: 30931044828347431
+  ChildIds: 12539193982495849416
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12779,7 +12779,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7560763459277463903
+  Id: 12539193982495849416
   Name: "ClientContext"
   Transform {
     Location {
@@ -12792,10 +12792,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13345785802435781910
-  ChildIds: 3999397600400606975
-  ChildIds: 15167675016510360495
-  ChildIds: 13584788336795256155
+  ParentId: 13067684798784393031
+  ChildIds: 16115472081417827473
+  ChildIds: 7395096823182364366
+  ChildIds: 15635145083837323675
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -12809,7 +12809,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13584788336795256155
+  Id: 15635145083837323675
   Name: "UI Container"
   Transform {
     Location {
@@ -12822,9 +12822,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7560763459277463903
-  ChildIds: 13460302365945582878
-  ChildIds: 18200831684364026695
+  ParentId: 12539193982495849416
+  ChildIds: 15698198954498448292
+  ChildIds: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12857,7 +12857,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18200831684364026695
+  Id: 9191885746639089649
   Name: "TeamBasesUI"
   Transform {
     Location {
@@ -12870,14 +12870,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13584788336795256155
-  ChildIds: 763277437381136885
-  ChildIds: 7144821861419566081
-  ChildIds: 8508992522820207667
-  ChildIds: 2985265671979483511
-  ChildIds: 2684995907271761670
-  ChildIds: 16723962508223898042
-  ChildIds: 5347095460218446530
+  ParentId: 15635145083837323675
+  ChildIds: 10207039569628339938
+  ChildIds: 15453192149632766797
+  ChildIds: 15640269551154967214
+  ChildIds: 10096794113570657368
+  ChildIds: 11424687306069245437
+  ChildIds: 15919232058769401234
+  ChildIds: 12354472505422571238
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12914,7 +12914,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5347095460218446530
+  Id: 12354472505422571238
   Name: "Timer"
   Transform {
     Location {
@@ -12927,7 +12927,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18200831684364026695
+  ParentId: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12977,7 +12977,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16723962508223898042
+  Id: 15919232058769401234
   Name: "EnemyProgress"
   Transform {
     Location {
@@ -12990,7 +12990,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18200831684364026695
+  ParentId: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13037,7 +13037,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2684995907271761670
+  Id: 11424687306069245437
   Name: "EnemyScore"
   Transform {
     Location {
@@ -13050,7 +13050,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18200831684364026695
+  ParentId: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13099,7 +13099,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2985265671979483511
+  Id: 10096794113570657368
   Name: "Divide"
   Transform {
     Location {
@@ -13112,7 +13112,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18200831684364026695
+  ParentId: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13162,7 +13162,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8508992522820207667
+  Id: 15640269551154967214
   Name: "AllyProgress"
   Transform {
     Location {
@@ -13175,7 +13175,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18200831684364026695
+  ParentId: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13224,7 +13224,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7144821861419566081
+  Id: 15453192149632766797
   Name: "AllyScore"
   Transform {
     Location {
@@ -13237,7 +13237,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18200831684364026695
+  ParentId: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13287,7 +13287,7 @@ Objects {
   }
 }
 Objects {
-  Id: 763277437381136885
+  Id: 10207039569628339938
   Name: "GamemodeTitle"
   Transform {
     Location {
@@ -13300,7 +13300,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18200831684364026695
+  ParentId: 9191885746639089649
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13350,7 +13350,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13460302365945582878
+  Id: 15698198954498448292
   Name: "LastTeamStandingUI"
   Transform {
     Location {
@@ -13363,12 +13363,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13584788336795256155
-  ChildIds: 13034227813658966167
-  ChildIds: 8248672740944288738
-  ChildIds: 6301987044122747368
-  ChildIds: 3653436126897471606
-  ChildIds: 14717426737427631443
+  ParentId: 15635145083837323675
+  ChildIds: 6311201610696787658
+  ChildIds: 3794380502119995932
+  ChildIds: 16405013757557501823
+  ChildIds: 7483716352597621064
+  ChildIds: 6736578827238923790
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13405,7 +13405,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14717426737427631443
+  Id: 6736578827238923790
   Name: "Timer"
   Transform {
     Location {
@@ -13418,7 +13418,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13460302365945582878
+  ParentId: 15698198954498448292
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13468,7 +13468,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3653436126897471606
+  Id: 7483716352597621064
   Name: "EnemyScore"
   Transform {
     Location {
@@ -13481,7 +13481,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13460302365945582878
+  ParentId: 15698198954498448292
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13530,7 +13530,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6301987044122747368
+  Id: 16405013757557501823
   Name: "Divide"
   Transform {
     Location {
@@ -13543,7 +13543,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13460302365945582878
+  ParentId: 15698198954498448292
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13593,7 +13593,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8248672740944288738
+  Id: 3794380502119995932
   Name: "AllyScore"
   Transform {
     Location {
@@ -13606,7 +13606,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13460302365945582878
+  ParentId: 15698198954498448292
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13656,7 +13656,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13034227813658966167
+  Id: 6311201610696787658
   Name: "GamemodeTitle"
   Transform {
     Location {
@@ -13669,7 +13669,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13460302365945582878
+  ParentId: 15698198954498448292
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13719,7 +13719,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15167675016510360495
+  Id: 7395096823182364366
   Name: "GAMESTATE_TeamBasesClient"
   Transform {
     Location {
@@ -13732,7 +13732,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7560763459277463903
+  ParentId: 12539193982495849416
   UnregisteredParameters {
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
@@ -13741,63 +13741,63 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_VotingMachineServer"
+      Name: "cs:GAMESTATE_TeamBasesServer"
       ObjectReference {
-        SelfId: 8830912457636372445
+        SelfId: 12950396262770854823
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_TeamBasesServer"
+      Name: "cs:GAMESTATE_Components"
       ObjectReference {
-        SelfId: 16701474956812085596
+        SelfId: 3881357346618484820
       }
     }
     Overrides {
       Name: "cs:TeamBasesUI"
       ObjectReference {
-        SelfId: 18200831684364026695
+        SelfId: 9191885746639089649
       }
     }
     Overrides {
       Name: "cs:AllyScore"
       ObjectReference {
-        SelfId: 7144821861419566081
+        SelfId: 15453192149632766797
       }
     }
     Overrides {
       Name: "cs:AllyProgress"
       ObjectReference {
-        SelfId: 8508992522820207667
+        SelfId: 15640269551154967214
       }
     }
     Overrides {
       Name: "cs:EnemyScore"
       ObjectReference {
-        SelfId: 2684995907271761670
+        SelfId: 11424687306069245437
       }
     }
     Overrides {
       Name: "cs:EnemyProgress"
       ObjectReference {
-        SelfId: 16723962508223898042
+        SelfId: 15919232058769401234
       }
     }
     Overrides {
       Name: "cs:Timer"
       ObjectReference {
-        SelfId: 5347095460218446530
+        SelfId: 12354472505422571238
       }
     }
     Overrides {
       Name: "cs:APointVisual"
       ObjectReference {
-        SelfId: 4869559792690271709
+        SelfId: 2411302634620797190
       }
     }
     Overrides {
       Name: "cs:BPointVisual"
       ObjectReference {
-        SelfId: 7207118639721252636
+        SelfId: 9080605244307029645
       }
     }
   }
@@ -13817,7 +13817,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3999397600400606975
+  Id: 16115472081417827473
   Name: "GAMESTATE_LastTeamStandingClient"
   Transform {
     Location {
@@ -13830,7 +13830,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7560763459277463903
+  ParentId: 12539193982495849416
   UnregisteredParameters {
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
@@ -13839,39 +13839,39 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_VotingMachineServer"
+      Name: "cs:GAMESTATE_LastTeamStandingServer"
       ObjectReference {
-        SelfId: 8830912457636372445
+        SelfId: 15236967115737169336
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_LastTeamStandingServer"
+      Name: "cs:GAMESTATE_Components"
       ObjectReference {
-        SelfId: 13439593497749092695
+        SelfId: 3881357346618484820
       }
     }
     Overrides {
       Name: "cs:LastTeamStandingUI"
       ObjectReference {
-        SelfId: 13460302365945582878
+        SelfId: 15698198954498448292
       }
     }
     Overrides {
       Name: "cs:AllyScore"
       ObjectReference {
-        SelfId: 8248672740944288738
+        SelfId: 3794380502119995932
       }
     }
     Overrides {
       Name: "cs:EnemyScore"
       ObjectReference {
-        SelfId: 3653436126897471606
+        SelfId: 7483716352597621064
       }
     }
     Overrides {
       Name: "cs:Timer"
       ObjectReference {
-        SelfId: 14717426737427631443
+        SelfId: 6736578827238923790
       }
     }
   }
@@ -13891,7 +13891,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18094804088576246160
+  Id: 30931044828347431
   Name: "Team Autobalancer"
   Transform {
     Scale {
@@ -13900,8 +13900,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13345785802435781910
-  ChildIds: 1662480390439979172
+  ParentId: 13067684798784393031
+  ChildIds: 5115889465748010000
   UnregisteredParameters {
     Overrides {
       Name: "cs:TeamCount"
@@ -13958,7 +13958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1662480390439979172
+  Id: 5115889465748010000
   Name: "TeamAutobalancerServer"
   Transform {
     Location {
@@ -13971,12 +13971,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18094804088576246160
+  ParentId: 30931044828347431
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 18094804088576246160
+        SelfId: 30931044828347431
       }
     }
     Overrides {
@@ -14002,7 +14002,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1829568003537508325
+  Id: 5332687290715458223
   Name: "GAMESTATE_TeamBasesServerObjects"
   Transform {
     Location {
@@ -14015,9 +14015,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13345785802435781910
-  ChildIds: 16666817086414417216
-  ChildIds: 18049449335604040431
+  ParentId: 13067684798784393031
+  ChildIds: 6852990197047032878
+  ChildIds: 5711716498896268555
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14032,7 +14032,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18049449335604040431
+  Id: 5711716498896268555
   Name: "TeamBasesBPoint"
   Transform {
     Location {
@@ -14047,10 +14047,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1829568003537508325
-  ChildIds: 16996266723032808228
-  ChildIds: 4300451200546247655
-  ChildIds: 13505549804169579544
+  ParentId: 5332687290715458223
+  ChildIds: 8749237166575141813
+  ChildIds: 7327821631818942445
+  ChildIds: 15140705155193130684
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14065,7 +14065,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13505549804169579544
+  Id: 15140705155193130684
   Name: "ClientContext"
   Transform {
     Location {
@@ -14078,8 +14078,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18049449335604040431
-  ChildIds: 7207118639721252636
+  ParentId: 5711716498896268555
+  ChildIds: 9080605244307029645
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -14093,7 +14093,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7207118639721252636
+  Id: 9080605244307029645
   Name: "BPointVisual"
   Transform {
     Location {
@@ -14107,8 +14107,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13505549804169579544
-  ChildIds: 8133202312704448271
+  ParentId: 15140705155193130684
+  ChildIds: 17865083435428937042
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14123,7 +14123,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8133202312704448271
+  Id: 17865083435428937042
   Name: "BPointBorder"
   Transform {
     Location {
@@ -14136,7 +14136,7 @@ Objects {
       Z: 75.1999817
     }
   }
-  ParentId: 7207118639721252636
+  ParentId: 9080605244307029645
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14173,7 +14173,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4300451200546247655
+  Id: 7327821631818942445
   Name: "BEdgePoint"
   Transform {
     Location {
@@ -14187,7 +14187,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18049449335604040431
+  ParentId: 5711716498896268555
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -14214,7 +14214,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16996266723032808228
+  Id: 8749237166575141813
   Name: "BCenterPoint"
   Transform {
     Location {
@@ -14227,7 +14227,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18049449335604040431
+  ParentId: 5711716498896268555
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -14254,7 +14254,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16666817086414417216
+  Id: 6852990197047032878
   Name: "TeamBasesAPoint"
   Transform {
     Location {
@@ -14269,10 +14269,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1829568003537508325
-  ChildIds: 6911887625301084486
-  ChildIds: 1959140317540093900
-  ChildIds: 2034335166435251274
+  ParentId: 5332687290715458223
+  ChildIds: 2180358008524408079
+  ChildIds: 16649374725878862360
+  ChildIds: 11146588020022294720
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14287,7 +14287,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2034335166435251274
+  Id: 11146588020022294720
   Name: "ClientContext"
   Transform {
     Location {
@@ -14300,8 +14300,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16666817086414417216
-  ChildIds: 4869559792690271709
+  ParentId: 6852990197047032878
+  ChildIds: 2411302634620797190
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -14315,7 +14315,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4869559792690271709
+  Id: 2411302634620797190
   Name: "APointVisual"
   Transform {
     Location {
@@ -14329,8 +14329,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2034335166435251274
-  ChildIds: 8840631565546790325
+  ParentId: 11146588020022294720
+  ChildIds: 5789305354247445466
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14345,7 +14345,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8840631565546790325
+  Id: 5789305354247445466
   Name: "APointBorder"
   Transform {
     Location {
@@ -14358,7 +14358,7 @@ Objects {
       Z: 75.1999817
     }
   }
-  ParentId: 4869559792690271709
+  ParentId: 2411302634620797190
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -14395,7 +14395,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1959140317540093900
+  Id: 16649374725878862360
   Name: "AEdgePoint"
   Transform {
     Location {
@@ -14409,7 +14409,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16666817086414417216
+  ParentId: 6852990197047032878
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -14436,7 +14436,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6911887625301084486
+  Id: 2180358008524408079
   Name: "ACenterPoint"
   Transform {
     Location {
@@ -14449,7 +14449,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16666817086414417216
+  ParentId: 6852990197047032878
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -14476,7 +14476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16701474956812085596
+  Id: 12950396262770854823
   Name: "GAMESTATE_TeamBasesServer"
   Transform {
     Location {
@@ -14489,7 +14489,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13345785802435781910
+  ParentId: 13067684798784393031
   UnregisteredParameters {
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
@@ -14510,30 +14510,26 @@ Objects {
     Overrides {
       Name: "cs:ACenterPoint"
       ObjectReference {
-        SelfId: 6911887625301084486
+        SelfId: 2180358008524408079
       }
     }
     Overrides {
       Name: "cs:AEdgePoint"
       ObjectReference {
-        SelfId: 1959140317540093900
+        SelfId: 16649374725878862360
       }
     }
     Overrides {
       Name: "cs:BCenterPoint"
       ObjectReference {
-        SelfId: 16996266723032808228
+        SelfId: 8749237166575141813
       }
     }
     Overrides {
       Name: "cs:BEdgePoint"
       ObjectReference {
-        SelfId: 4300451200546247655
+        SelfId: 7327821631818942445
       }
-    }
-    Overrides {
-      Name: "cs:DefaultGameMode"
-      Bool: false
     }
     Overrides {
       Name: "cs:CapLimit"
@@ -14579,7 +14575,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13439593497749092695
+  Id: 15236967115737169336
   Name: "GAMESTATE_LastTeamStandingServer"
   Transform {
     Location {
@@ -14592,7 +14588,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13345785802435781910
+  ParentId: 13067684798784393031
   UnregisteredParameters {
     Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
@@ -14609,10 +14605,6 @@ Objects {
     Overrides {
       Name: "cs:GameModeID"
       String: "LastTeamStanding"
-    }
-    Overrides {
-      Name: "cs:DefaultGameMode"
-      Bool: true
     }
     Overrides {
       Name: "cs:ReliableEvents"

@@ -6,8 +6,6 @@ local settings = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject(
 local activeGameMode = settings:GetCustomProperty("MatchMode")
 local gameModeID = script:GetCustomProperty("GameModeID")
 
-local defaultGameMode = script:GetCustomProperty("DefaultGameMode")
-
 local playerCountTask = nil
 local gameModeEnabled = defaultGameMode
 

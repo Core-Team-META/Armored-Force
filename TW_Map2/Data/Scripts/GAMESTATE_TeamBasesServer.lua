@@ -11,8 +11,6 @@ local aEdgePoint = script:GetCustomProperty("AEdgePoint"):WaitForObject()
 local bCenterPoint = script:GetCustomProperty("BCenterPoint"):WaitForObject()
 local bEdgePoint = script:GetCustomProperty("BEdgePoint"):WaitForObject()
 
-local defaultGameMode = script:GetCustomProperty("DefaultGameMode")
-
 local aRadius = (aCenterPoint:GetWorldPosition()-aEdgePoint:GetWorldPosition()).size
 local bRadius = (bCenterPoint:GetWorldPosition()-bEdgePoint:GetWorldPosition()).size
 
@@ -35,7 +33,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" or not gameModeEnabled then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" then
 	
 		aCapProgress = 0
 		bCapProgress = 0
