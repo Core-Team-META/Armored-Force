@@ -4037,7 +4037,6 @@ Objects {
   ChildIds: 11117704241550489632
   ChildIds: 13846349244836216111
   ChildIds: 6723999046891923055
-  ChildIds: 16061707730840331517
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4072,99 +4071,8 @@ Objects {
   }
 }
 Objects {
-  Id: 16061707730840331517
-  Name: "GoToTundraButton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 717203380532970816
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SendToMap"
-      String: "TUNDRA"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    UIX: 135
-    UIY: 75
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "TUNDRA"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 0.409999967
-        G: 0.138476819
-        A: 1
-      }
-      HoveredColor {
-        R: 0.87
-        G: 0.276556313
-        A: 1
-      }
-      PressedColor {
-        R: 0.120000005
-        G: 0.050066229
-        A: 1
-      }
-      DisabledColor {
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 6723999046891923055
-  Name: "GoToDesertButton"
+  Name: "GoToFRTButton"
   Transform {
     Location {
     }
@@ -4180,7 +4088,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SendToMap"
-      String: "DESERT"
+      String: "Frontline"
     }
   }
   Collidable_v2 {
@@ -4193,8 +4101,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
+    Width: 260
     Height: 70
+    UIX: 140
     UIY: 75
     RenderTransformPivot {
       Anchor {
@@ -4202,7 +4111,7 @@ Objects {
       }
     }
     Button {
-      Label: "DESERT"
+      Label: "FRONTLINE"
       FontColor {
         R: 1
         G: 1
@@ -4254,7 +4163,7 @@ Objects {
 }
 Objects {
   Id: 13846349244836216111
-  Name: "GoToFieldsButton"
+  Name: "GoToLTSButton"
   Transform {
     Location {
     }
@@ -4270,7 +4179,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SendToMap"
-      String: "FIELD"
+      String: "LastTeam"
     }
   }
   Collidable_v2 {
@@ -4283,9 +4192,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 200
+    Width: 260
     Height: 70
-    UIX: -135
+    UIX: -5
     UIY: 75
     RenderTransformPivot {
       Anchor {
@@ -4293,7 +4202,7 @@ Objects {
       }
     }
     Button {
-      Label: "FIELDS"
+      Label: "LAST TEAM STANDING"
       FontColor {
         R: 1
         G: 1
