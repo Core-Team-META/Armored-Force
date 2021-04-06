@@ -1,4 +1,6 @@
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+local teamBasesServer = script:GetCustomProperty("GAMESTATE_TeamBasesServer"):WaitForObject()
+local matchComponent = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
 
 local teamBasesUI = script:GetCustomProperty("TeamBasesUI"):WaitForObject()
 
@@ -13,14 +15,9 @@ local timer = script:GetCustomProperty("Timer"):WaitForObject()
 local aPointVisual = script:GetCustomProperty("APointVisual"):WaitForObject()
 local bPointVisual = script:GetCustomProperty("BPointVisual"):WaitForObject()
 
-local updateTask = nil
-
-local localPlayer = Game.GetLocalPlayer()local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
-local votingMachineServer = script:GetCustomProperty("GAMESTATE_VotingMachineServer"):WaitForObject()
-local teamBasesServer = script:GetCustomProperty("GAMESTATE_TeamBasesServer"):WaitForObject()
+local gameModeID = teamBasesServer:GetCustomProperty("GameModeID")
 
 local updateTask = nil
-local gameModeEnabled = teamBasesServer:GetCustomProperty("DefaultGameMode")
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -34,7 +31,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" or not gameModeEnabled then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" then
 	
 		teamBasesUI.visibility = Visibility.FORCE_OFF
 		
@@ -52,6 +49,8 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
+	Task.Wait(0.1)
+	
 	teamBasesUI.visibility = Visibility.INHERIT
 	
 	aPointVisual.visibility = Visibility.INHERIT
@@ -60,26 +59,6 @@ function StateSTART(manager, propertyName)
 	updateTask = Task.Spawn(UpdateUITask)
 	updateTask.repeatCount = -1
 	updateTask.repeatInterval = 0.1
-	
-end
-
-function CheckGameMode(manager, propertyName)
-
-	if propertyName ~= "SelectedMatchID" or votingMachineServer:GetCustomProperty("SelectedMatchID") == "" then
-	
-		return
-		
-	end
-	
-	if votingMachineServer:GetCustomProperty("SelectedMatchID") == teamBasesServer:GetCustomProperty("GameModeID") then
-		
-		gameModeEnabled = true
-		
-	else 
-
-		gameModeEnabled = false
-		
-	end
 	
 end
 
@@ -113,5 +92,10 @@ function UpdateUITask()
 
 end
 
-mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
-votingMachineServer.networkedPropertyChangedEvent:Connect(CheckGameMode)
+function Initialize()
+	if gameModeID == matchComponent:GetCustomProperty("MatchMode") then
+		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
+	end
+end
+
+Initialize()
