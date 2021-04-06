@@ -21443,7 +21443,6 @@ Objects {
     }
   }
   ParentId: 11544850952862364982
-  ChildIds: 3784311581941268578
   ChildIds: 13200903332619292921
   ChildIds: 2884402867881120593
   ChildIds: 6883721644744228497
@@ -23414,65 +23413,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 12866426948029032868
-    }
-  }
-}
-Objects {
-  Id: 3784311581941268578
-  Name: "GAMEHELPER_StatisticsTracker"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 827868497107807608
-  ChildIds: 1235618296866919172
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 1235618296866919172
-  Name: "GAMEHELPER_StatisticsTrackerServer"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3784311581941268578
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5007455920040453615
     }
   }
 }
