@@ -98,8 +98,15 @@ for _,shape in ipairs(worldShapes) do
 		boundsLow = pos.z
 	end
 end
-local boundsWidth = boundsRight - boundsLeft
+
+local boundsCenter = script:GetCustomProperty("BoundsCenter")
+boundsLeft = script:GetCustomProperty("BoundsWidth") * -0.5 + boundsCenter.x
+boundsTop = script:GetCustomProperty("BoundsHeight") * -0.5 + boundsCenter.y
+boundsRight = script:GetCustomProperty("BoundsWidth") * 0.5 + boundsCenter.x
+boundsBottom = script:GetCustomProperty("BoundsHeight") * 0.5 + boundsCenter.y
+local boundsWidth = (boundsRight - boundsLeft)
 local boundsHeight = boundsBottom - boundsTop
+
 
 -- Precompute coeficients
 local scaleX = MAP_PANEL.width / boundsWidth
@@ -136,26 +143,26 @@ end
 
 -- Border
 for _,shape in ipairs(worldShapes) do
-	local mapPiece = AddForShape(shape)
-	mapPiece.width = mapPiece.width + BORDER_SIZE * 2
-	mapPiece.height = mapPiece.height + BORDER_SIZE * 2
+	--local mapPiece = AddForShape(shape)
+	--mapPiece.width = mapPiece.width + BORDER_SIZE * 2
+	--mapPiece.height = mapPiece.height + BORDER_SIZE * 2
 	-- Color
-	mapPiece:SetColor(BORDER_COLOR)
+	--mapPiece:SetColor(BORDER_COLOR)
 end
 
 -- Fill
 for _,shape in ipairs(worldShapes) do
-	local mapPiece = AddForShape(shape)
+	--local mapPiece = AddForShape(shape)
 	-- Color
-	local baseColor = shape:GetCustomProperty("Tint") or Color.WHITE
-	if GRADIENT_HEIGHT then
-		local posZ = shape:GetWorldPosition().z
-		local heightNormalized = (posZ - boundsLow) / (boundsHigh - boundsLow)
-		local color = Color.Lerp(COLOR_LOW, COLOR_HIGH, heightNormalized)
-		mapPiece:SetColor(color * baseColor)
-	else
-		mapPiece:SetColor(baseColor)
-	end
+	--local baseColor = shape:GetCustomProperty("Tint") or Color.WHITE
+	--if GRADIENT_HEIGHT then
+	--	local posZ = shape:GetWorldPosition().z
+	--	local heightNormalized = (posZ - boundsLow) / (boundsHigh - boundsLow)
+	--	local color = Color.Lerp(COLOR_LOW, COLOR_HIGH, heightNormalized)
+	--	mapPiece:SetColor(color * baseColor)
+	--else
+	--	mapPiece:SetColor(baseColor)
+	--end
 end
 
 -- Team Bases Game Mode Objectives
