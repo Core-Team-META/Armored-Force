@@ -2,7 +2,7 @@ Assets {
   Id: 5200444972158461565
   Name: "TW_BushLeaves"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 83
   CustomMaterialAsset {
     BaseMaterialId: 5213547757587382338
     ParameterOverrides {
