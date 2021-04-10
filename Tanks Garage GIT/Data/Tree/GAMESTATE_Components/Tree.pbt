@@ -1334,6 +1334,7 @@ Objects {
     }
   }
   ParentId: 15534379475757777486
+  ChildIds: 17995390642081607111
   ChildIds: 14902805887420335098
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1604,6 +1605,12 @@ Objects {
       }
       Font {
       }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -1722,6 +1729,36 @@ Objects {
   Script {
     ScriptAsset {
       Id: 8434949993462316102
+    }
+  }
+}
+Objects {
+  Id: 17995390642081607111
+  Name: "GAMESTATE_GARAGE_AchievementsViewServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5636373347746678799
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15989684265976252894
     }
   }
 }
@@ -2009,6 +2046,12 @@ Objects {
         Value: "mc:ebuttonclickmode:default"
       }
       Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
       }
     }
     AnchorLayout {
@@ -2416,6 +2459,12 @@ Objects {
         Value: "mc:ebuttonclickmode:default"
       }
       Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
       }
     }
     AnchorLayout {
@@ -3354,6 +3403,12 @@ Objects {
       }
       Font {
       }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3668,6 +3723,12 @@ Objects {
       }
       Font {
       }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3758,6 +3819,12 @@ Objects {
         Value: "mc:ebuttonclickmode:default"
       }
       Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
       }
     }
     AnchorLayout {
@@ -3850,6 +3917,12 @@ Objects {
       }
       Font {
       }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -3940,6 +4013,12 @@ Objects {
         Value: "mc:ebuttonclickmode:default"
       }
       Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
       }
     }
     AnchorLayout {
@@ -4146,6 +4225,12 @@ Objects {
       }
       Font {
       }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -4236,6 +4321,12 @@ Objects {
         Value: "mc:ebuttonclickmode:default"
       }
       Font {
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
       }
     }
     AnchorLayout {

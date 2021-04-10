@@ -127,6 +127,12 @@ function LoadAndSetDataFromSharedStorage(player)
 		player:SetResource(UTIL_API.GetTankRPString(i), playerSharedStorage[UTIL_API.GetTankRPString(i)])
 	end
 	
+	player.serverUserData.CHALLENGE1 = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE1]
+	player.serverUserData.CHALLENGE2 = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE2]
+	player.serverUserData.CHALLENGE3 = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE3]
+	
+	Events.Broadcast("SET_DAILY_CHALLENGES", player)
+	
 	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES])
@@ -157,6 +163,10 @@ function SavePlayerDataIntoSharedStorage(player)
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		playerSharedStorage[UTIL_API.GetTankRPString(i)] = player:GetResource(UTIL_API.GetTankRPString(i))
 	end
+	
+	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE1] = player.serverUserData.CHALLENGE1
+	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE2] = player.serverUserData.CHALLENGE2
+	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE3] = player.serverUserData.CHALLENGE3
 
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = player:GetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY)
