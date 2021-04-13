@@ -78,9 +78,8 @@ API.UPGRADE_PROGRESS = {
 -- DAILY CHALLENGES PROGRESS
 ------------------------------------------------------------------------------------------------------------------------
 API.CHALLENGES = {
-	CHALLENGE1 = 1,
-	CHALLENGE2 = 2,
-	CHALLENGE3 = 3
+	CHALLENGE_INFO = "CHALLENGEINFO",
+	CHALLENGE_DUE_DATE = "CHALLENGEDUEDATE"
 }
 ------------------------------------------------------------------------------------------------------------------------
 -- RESOURCE NAMES

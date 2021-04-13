@@ -65,7 +65,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	-- playerSharedStorage = {}
+	playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -102,6 +102,9 @@ function CheckAndSetSharedStorageDefault(player)
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		if(playerSharedStorage[UTIL_API.GetTankRPString(i)] == nil) then playerSharedStorage[UTIL_API.GetTankRPString(i)] = 0 end
 	end
+	
+	if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = "" end
+	if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = "" end
 
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = 0 end
@@ -127,9 +130,9 @@ function LoadAndSetDataFromSharedStorage(player)
 		player:SetResource(UTIL_API.GetTankRPString(i), playerSharedStorage[UTIL_API.GetTankRPString(i)])
 	end
 	
-	player.serverUserData.CHALLENGE1 = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE1]
-	player.serverUserData.CHALLENGE2 = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE2]
-	player.serverUserData.CHALLENGE3 = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE3]
+	player.serverUserData.CHALLENGES = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO]
+	player.serverUserData.CHALLENGES_DUE_DATE = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE]
+
 	
 	Events.Broadcast("SET_DAILY_CHALLENGES", player)
 	
@@ -163,10 +166,9 @@ function SavePlayerDataIntoSharedStorage(player)
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		playerSharedStorage[UTIL_API.GetTankRPString(i)] = player:GetResource(UTIL_API.GetTankRPString(i))
 	end
-	
-	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE1] = player.serverUserData.CHALLENGE1
-	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE2] = player.serverUserData.CHALLENGE2
-	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE3] = player.serverUserData.CHALLENGE3
+
+	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = player.serverUserData.CHALLENGES
+	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = player.serverUserData.CHALLENGES_DUE_DATE	
 
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = player:GetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY)
