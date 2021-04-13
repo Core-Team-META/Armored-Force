@@ -81,12 +81,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 17279271160725833355
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 16
     }
@@ -169,6 +163,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "22"
     }
   }
   Collidable_v2 {
@@ -267,12 +265,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 2858020672155068903
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 16
     }
@@ -355,6 +347,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 25
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "24"
     }
   }
   Collidable_v2 {
@@ -453,12 +449,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 2858020672155068903
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 16
     }
@@ -541,6 +531,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "24"
     }
   }
   Collidable_v2 {
@@ -639,12 +633,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 2858020672155068903
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 16
     }
@@ -727,6 +715,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "24"
     }
   }
   Collidable_v2 {
@@ -825,12 +817,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 6350454563662778588
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 7.7
     }
@@ -913,6 +899,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "23"
     }
   }
   Collidable_v2 {
@@ -1011,12 +1001,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 6350454563662778588
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 6
     }
@@ -1099,6 +1083,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "23"
     }
   }
   Collidable_v2 {
@@ -1197,12 +1185,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 6350454563662778588
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 7.7
     }
@@ -1285,6 +1267,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "23"
     }
   }
   Collidable_v2 {
@@ -1383,12 +1369,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 6350454563662778588
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 0.7
     }
@@ -1471,6 +1451,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 35
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "23"
     }
   }
   Collidable_v2 {
@@ -1749,18 +1733,6 @@ Objects {
       Int: 10000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 12389725920489405935
-      }
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      ObjectReference {
-        SelfId: 4816792748251191994
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 8.5
     }
@@ -1843,6 +1815,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:Prerequisite2"
+      String: "21"
     }
   }
   Collidable_v2 {
@@ -1941,18 +1921,6 @@ Objects {
       Int: 10000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 12389725920489405935
-      }
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      ObjectReference {
-        SelfId: 4816792748251191994
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 8.4
     }
@@ -2035,6 +2003,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:Prerequisite2"
+      String: "21"
     }
   }
   Collidable_v2 {
@@ -2133,12 +2109,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 2886840664100349933
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 6.9
     }
@@ -2221,6 +2191,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "18"
     }
   }
   Collidable_v2 {
@@ -2319,12 +2293,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 2886840664100349933
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 6.9
     }
@@ -2407,6 +2375,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "18"
     }
   }
   Collidable_v2 {
@@ -2505,12 +2477,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 2886840664100349933
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 7
     }
@@ -2593,6 +2559,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 35
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "18"
     }
   }
   Collidable_v2 {
@@ -2691,12 +2661,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 2886840664100349933
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 3
     }
@@ -2779,6 +2743,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "18"
     }
   }
   Collidable_v2 {
@@ -3057,12 +3025,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 10233193045497117094
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 16
     }
@@ -3145,6 +3107,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "07"
     }
   }
   Collidable_v2 {
@@ -3243,12 +3209,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 17522960231821543017
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 6
     }
@@ -3331,6 +3291,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "06"
     }
   }
   Collidable_v2 {
@@ -3429,12 +3393,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 17522960231821543017
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 10
     }
@@ -3517,6 +3475,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 25
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "06"
     }
   }
   Collidable_v2 {
@@ -3615,12 +3577,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 17522960231821543017
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 8
     }
@@ -3703,6 +3659,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "06"
     }
   }
   Collidable_v2 {
@@ -3801,12 +3761,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 16112401986264729532
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 10.2
     }
@@ -3889,6 +3843,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "05"
     }
   }
   Collidable_v2 {
@@ -3987,12 +3945,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 16112401986264729532
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 8.5
     }
@@ -4075,6 +4027,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 35
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "05"
     }
   }
   Collidable_v2 {
@@ -4173,12 +4129,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 16112401986264729532
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 7
     }
@@ -4261,6 +4211,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "05"
     }
   }
   Collidable_v2 {
@@ -4359,12 +4313,6 @@ Objects {
       Int: 15000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 1622089773876428206
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 10
     }
@@ -4447,6 +4395,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 50
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "02"
     }
   }
   Collidable_v2 {
@@ -4905,12 +4857,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 15577797884718781262
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 7.3
     }
@@ -4993,6 +4939,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 35
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "01"
     }
   }
   Collidable_v2 {
@@ -5091,18 +5041,6 @@ Objects {
       Int: 10000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 17929277135764654659
-      }
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      ObjectReference {
-        SelfId: 1211288199967520796
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 16
     }
@@ -5185,6 +5123,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "03"
+    }
+    Overrides {
+      Name: "cs:Prerequisite2"
+      String: "04"
     }
   }
   Collidable_v2 {
@@ -5283,18 +5229,6 @@ Objects {
       Int: 10000
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 17929277135764654659
-      }
-    }
-    Overrides {
-      Name: "cs:Prerequisite2"
-      ObjectReference {
-        SelfId: 1211288199967520796
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 6.9
     }
@@ -5377,6 +5311,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 45
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "03"
+    }
+    Overrides {
+      Name: "cs:Prerequisite2"
+      String: "04"
     }
   }
   Collidable_v2 {
@@ -5475,12 +5417,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 15577797884718781262
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 7.5
     }
@@ -5563,6 +5499,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 35
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "01"
     }
   }
   Collidable_v2 {
@@ -5661,12 +5601,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 15577797884718781262
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 6
     }
@@ -5749,6 +5683,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 70
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "01"
     }
   }
   Collidable_v2 {
@@ -5847,12 +5785,6 @@ Objects {
       Int: 7500
     }
     Overrides {
-      Name: "cs:Prerequisite1"
-      ObjectReference {
-        SelfId: 15577797884718781262
-      }
-    }
-    Overrides {
       Name: "cs:Reload"
       Float: 7.5
     }
@@ -5935,6 +5867,10 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:Prerequisite1"
+      String: "01"
     }
   }
   Collidable_v2 {
