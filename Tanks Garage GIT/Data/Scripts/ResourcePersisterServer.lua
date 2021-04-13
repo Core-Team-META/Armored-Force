@@ -65,7 +65,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	playerSharedStorage = {}
+	-- playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -104,7 +104,7 @@ function CheckAndSetSharedStorageDefault(player)
 	end
 	
 	if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = "" end
-	if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = "" end
+	--if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = "" end
 
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = 0 end
@@ -131,7 +131,7 @@ function LoadAndSetDataFromSharedStorage(player)
 	end
 	
 	player.serverUserData.CHALLENGES = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO]
-	player.serverUserData.CHALLENGES_DUE_DATE = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE]
+	--player.serverUserData.CHALLENGES_DUE_DATE = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE]
 
 	
 	Events.Broadcast("SET_DAILY_CHALLENGES", player)
@@ -168,7 +168,7 @@ function SavePlayerDataIntoSharedStorage(player)
 	end
 
 	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = player.serverUserData.CHALLENGES
-	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = player.serverUserData.CHALLENGES_DUE_DATE	
+	--playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = player.serverUserData.CHALLENGES_DUE_DATE	
 
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = player:GetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY)
