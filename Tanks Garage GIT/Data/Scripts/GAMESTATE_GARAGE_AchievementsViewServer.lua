@@ -1,14 +1,15 @@
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 
 local playerChallengeCheck = {}
 
-function AddInfoToSlot(playerId, data, date)
+function AddInfoToSlot(playerId, data)
 	while true do
 		for i = 1, 16, 1 do
 			if data == "" and string.find(script:GetCustomProperty("P" .. tostring(i)), playerId) then
 				script:SetNetworkedCustomProperty("P" .. tostring(i), "")
 				return
 			elseif script:GetCustomProperty("P" .. tostring(i)) == "" then
-				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. "[" .. data .. "[" .. date)
+				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data)
 				return
 			end
 		end
@@ -29,11 +30,13 @@ function UnpackChallengeInfo(player)
 			
 			for s in string.gmatch(c, "([^;]+)") do
 				if section == 1 then
-					player.serverUserData.CHALLENGE[challengeNumber].challengeType = tostring(s)
+					player.serverUserData.CHALLENGE[challengeNumber].challengeType = s
 				elseif section == 2 then
 					player.serverUserData.CHALLENGE[challengeNumber].target = tonumber(s)
 				elseif section == 3 then
 					player.serverUserData.CHALLENGE[challengeNumber].progress = tonumber(s)
+				elseif section == 4 then
+					player.serverUserData.CHALLENGE[challengeNumber].dueDate = s
 				end
 				
 				section = section + 1
@@ -43,31 +46,38 @@ function UnpackChallengeInfo(player)
 		end	
 	else 
 		local challengeString = ""
+		local challengeDueDate = os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
 		
 		for i = 1, 3 do
 			player.serverUserData.CHALLENGE[i] = {}
 			player.serverUserData.CHALLENGE[i].progress = 0
+			player.serverUserData.CHALLENGE[i].dueDate = challengeDueDate
 	
 			if i == 1 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Kills"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Kills;2;0|"
+				challengeString = challengeString .. "Kills;2;0" .. challengeDueDate .. "|"
 			elseif i == 2 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Damage"
 				player.serverUserData.CHALLENGE[i].target = 1000
-				challengeString = challengeString .. "Damage;1000;0|"
+				challengeString = challengeString .. "Damage;1000;0" .. challengeDueDate .. "|"
 			elseif i == 3 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Wins"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Wins;2;0|"
+				challengeString = challengeString .. "Wins;2;0" .. challengeDueDate .. "|"
 			end
+			
+			--[[
+			local showTime = os.date("*t", challengeDueDate)
+			print("Setting new Date: " .. tostring(showTime.month) 
+			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
+			]]--
 		end
 		
 		player.serverUserData.CHALLENGES = challengeString
 	end
 	
-	print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)
-	print("UNPACKED DATE: " .. player.serverUserData.CHALLENGES_DUE_DATE)
+	--print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)
 
 end
 
@@ -78,14 +88,14 @@ function RepackChallengeInfo(player)
 	for i = 1, 3 do
 		challengeString = challengeString .. player.serverUserData.CHALLENGE[i].challengeType
 		.. ";" .. tostring(player.serverUserData.CHALLENGE[i].target) 
-		.. ";" .. tostring(player.serverUserData.CHALLENGE[i].progress) .. "|"
+		.. ";" .. tostring(player.serverUserData.CHALLENGE[i].progress) 
+		.. ";" .. tostring(player.serverUserData.CHALLENGE[i].dueDate) .. "|"
 	end
 	
 	player.serverUserData.CHALLENGES = challengeString
 	player.serverUserData.CHALLENGES_DUE_DATE = os.time(player.serverUserData.dueDate)
 	
-	print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
-	print("REPACKED DATE: " .. tostring(player.serverUserData.CHALLENGES_DUE_DATE))
+	--print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
 	
 end
 
@@ -105,21 +115,23 @@ function SetChallengeProgressInfo(player)
 
 	UnpackChallengeInfo(player)
 	
-	if player.serverUserData.CHALLENGES_DUE_DATE ~= "" and CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGES_DUE_DATE)) then
-		player.serverUserData.dueDate = os.date("*t", player.serverUserData.CHALLENGES_DUE_DATE)
-		print("Using old date: " .. tostring(player.serverUserData.dueDate.month) .. "/" .. tostring(player.serverUserData.dueDate.day) 
-		.. "/" .. tostring(player.serverUserData.dueDate.hour))
-	else
-		player.serverUserData.dueDate = os.date("!*t", os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0}))
-		for i = 1, 3, 1 do
+	for i = 1, 3 do
+		if not CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) then
 			player.serverUserData.CHALLENGE[i].progress = 0
+			player.serverUserData.CHALLENGE[i].dueDate = 
+			os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+			
+			--[[
+			local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
+			print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
+			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
+			]]--
 		end
-		print("Reset date reached / Setting a new due date: " .. tostring(player.serverUserData.dueDate.month) 
-		.. "/" .. tostring(player.serverUserData.dueDate.day) .. "/" .. tostring(player.serverUserData.dueDate.hour))
 	end
 		
 	RepackChallengeInfo(player)
-	AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.CHALLENGES_DUE_DATE)
+	
+	AddInfoToSlot(player.id, player.serverUserData.CHALLENGES)
 	
 	playerChallengeCheck[player.id] = true
 		
@@ -128,32 +140,58 @@ end
 function Tick()
 
 	for x, player in ipairs(Game.GetPlayers()) do
-		if Object.IsValid(player) and playerChallengeCheck[player.id] then
-			if CheckDueDate(os.date("!*t", os.time()), player.serverUserData.dueDate) then
-				player.serverUserData.dueDate = os.date("!*t", os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0}))
-				
-				for i = 1, 3, 1 do
+		if not Object.IsValid(player) and playerChallengeCheck[player.id] then
+			for i = 1, 3 do
+				if CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) 
+					and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
 					player.serverUserData.CHALLENGE[i].progress = 0
+					player.serverUserData.CHALLENGE[i].dueDate = 
+					os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+					
+					--[[
+					local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
+					print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
+					.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
+					]]--
 				end
-				
-				RepackChallengeInfo(player)
-				
-				print("Reset date reached / Setting a new due date: " .. tostring(player.serverUserData.dueDate.month) 
-				.. "/" .. tostring(player.serverUserData.dueDate.day) .. "/" .. tostring(player.serverUserData.dueDate.hour))
-
 			end
+				
+			RepackChallengeInfo(player)
+			
+			AddInfoToSlot(player.id, player.serverUserData.CHALLENGES)
 		end	
 	end
 	
-	Task.Wait(10)
+	Task.Wait(1)
 	
+end
+
+function ClaimReward(player, challengeNumber)
+
+	if  player.serverUserData.CHALLENGE[i].progress >= player.serverUserData.CHALLENGE[i].target then
+		player:AddResource(CONSTANTS_API.SILVER, 1000)
+		player:AddResource(CONSTANTS_API.GetEquippedTankResource(), 200)
+		
+		player.serverUserData.CHALLENGE[i].progress = 0
+		player.serverUserData.CHALLENGE[i].dueDate = 
+		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+					
+		--[[
+		local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
+		print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
+		.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
+		]]--
+	end	
+
 end
 
 function OnLeft(player)
 
 	playerChallengeCheck[player.id] = nil
-	AddInfoToSlot(player.id, "", "")
+	AddInfoToSlot(player.id, "")
+	
 end
 
 Game.playerLeftEvent:Connect(OnLeft)
 Events.Connect("SET_DAILY_CHALLENGES", SetChallengeProgressInfo)
+Events.ConnectForPlayer("CLAIM_REWARD", ClaimReward)
