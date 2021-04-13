@@ -45,6 +45,16 @@ local upgradeArmor = script:GetCustomProperty("UpgradeArmor"):WaitForObject()
 local upgradeEngine = script:GetCustomProperty("UpgradeEngine"):WaitForObject()
 local upgradeTank = script:GetCustomProperty("UpgradeTank"):WaitForObject()
 local upgradeTankCost = script:GetCustomProperty("UpgradeTankCost"):WaitForObject()
+local researchTankSidePanel = script:GetCustomProperty("ResearchTankSidePanel"):WaitForObject()
+local freeRPValue = researchTankSidePanel:FindChildByName("FreeRPValue")
+local closeButton = script:GetCustomProperty("CloseButton"):WaitForObject()
+local useFreeRP = script:GetCustomProperty("UseFreeRP"):WaitForObject()
+local usePrerequisite1 = script:GetCustomProperty("UsePrerequisite1"):WaitForObject()
+local usePrerequisite2 = script:GetCustomProperty("UsePrerequisite2"):WaitForObject()
+local prerequisite1Name = researchTankSidePanel:FindChildByName("Prerequisite1Name")
+local prerequisite1RP = researchTankSidePanel:FindChildByName("Prerequisite1RP")
+local prerequisite2Name = researchTankSidePanel:FindChildByName("Prerequisite2Name")
+local prerequisite2RP = researchTankSidePanel:FindChildByName("Prerequisite2RP")
 ------------------------------------------------------------------------------------------------------
 local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
 
@@ -82,6 +92,8 @@ local tier1Count = 0
 local tier2Count = 0
 local tier3Count = 0
 local tier4Count = 0
+
+local researchPointCollection = {}
 
 -- Used to store values of the selected tank to use for upgrading
 local tankDetails = {}
@@ -292,7 +304,6 @@ function GetTankListBySelectedTeam(teamId)
 	error("Unable to determine team with Id of: [" .. tostring(teamId) .. "]")
 end
 
--- Need to clean this up for sure, just doing some very basic editing of the UI panel to showcase player's progress for the tank and running out of time for the day :)
 function PopulateTankContentsPanel(panel, tank)
 	local playerTankData = GetPlayerTankData(tank.id)
 	for k,v in ipairs(panel:GetChildren()) do		
@@ -478,6 +489,7 @@ function OpenDetails(button)
 			PopulateDetailsModal(tank)
 		end
 	end
+	ForceHideResearchSidePanel()
 end
 
 function UpgradeTank()
@@ -503,6 +515,24 @@ function UpgradeTank()
 			CloseTechTreeModal()		
 		end		
 	else
+		-- When researching tank, we'll be using the RP values of prerequisite tanks, not the tank's RP itself
+		researchPointCollection = GetPrerequisiteRPValues(tankDetails.id)
+		ToggleResearchSidePanel()
+		freeRPValue.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.FREERP))
+		if(researchPointCollection[1] ~= nil) then
+			print(researchPointCollection[1].rp)
+			TogglePrerequisite1Visibility(Visibility.FORCE_ON)
+		end
+		if(researchPointCollection[2] ~= nil) then
+			print(researchPointCollection[2].rp)
+			TogglePrerequisite2Visibility(Visibility.FORCE_ON)
+		end		
+		
+		--[[
+		for i, prereq in ipairs(researchPointCollection) do
+			print(tostring(prereq.id) .. ": " .. tostring(prereq.rp))
+		end
+		--[[
 		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
 		if(rp < tankDetails.tankResearchCost) then
 			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
@@ -529,7 +559,8 @@ function UpgradeTank()
 				-- TODO: Better prompt for user
 				UI.PrintToScreen("There was an error sending the event. Please try again.")
 			end
-		end		
+		end	
+		--]]
 	end
 end
 
@@ -696,6 +727,31 @@ function ShowNotEnoughRPMessage()
 	UI.PrintToScreen("You do not have enough Research Points.")
 end
 
+function GetPrerequisiteRPValues(id)
+	local prerequisites = {}
+	local prerequisite1 = {}
+	local prerequisite2 = {}
+	print("Getting pre-req RP values")
+	for i, tank in ipairs(TANK_LIST) do
+		if(tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
+			print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
+			if(tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
+				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
+				local preReq1Tank = GetTankData(preReq1Id)
+				prerequisite1 = {id = preReq1Tank.id, name = preReq1Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq1Tank.id)))}
+				table.insert(prerequisites, prerequisite1)
+			end
+			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
+				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
+				local preReq2Tank = GetTankData(preReq2Id)
+				prerequisite2 = {id = preReq2Tank.id, name = preReq2Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq2Tank.id)))}
+				table.insert(prerequisites, prerequisite2)
+			end
+		end
+	end
+	return prerequisites
+end
+
 function PopulateDetailsModal(tank)
 	tankFullName.text = tank:GetCustomProperty("Name")
 	local reload = tank:GetCustomProperty("Reload")
@@ -829,6 +885,64 @@ function ResetTankDetails()
 	upgradeWeapon.visibility = Visibility.FORCE_OFF
 	upgradeArmor.visibility = Visibility.FORCE_OFF
 	upgradeEngine.visibility = Visibility.FORCE_OFF
+	ForceHideResearchSidePanel()
+	TogglePrerequisite1Visibility(Visibility.FORCE_OFF)
+	TogglePrerequisite2Visibility(Visibility.FORCE_OFF)
+	researchPointCollection = {}
+end
+
+function GetTankData(id)
+	for i, tank in ipairs(TANK_LIST) do
+		if(tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
+			return PopulateTank(tank)
+		end
+	end
+	warn("Tank not found with Id: " .. tostring(id))
+	return nil
+end
+
+function ToggleResearchSidePanel()
+	if(researchTankSidePanel.visibility == Visibility.FORCE_ON) then
+		researchTankSidePanel.visibility = Visibility.FORCE_OFF
+	else
+		researchTankSidePanel.visibility = Visibility.FORCE_ON
+	end
+end
+
+function ForceHideResearchSidePanel()
+	researchTankSidePanel.visibility = Visibility.FORCE_OFF
+end
+
+function UseFreeRP()
+	print(LOCAL_PLAYER:GetResource(Constants_API.FREERP))
+end
+
+function UsePrerequisite1()
+	print(researchPointCollection[1].rp)
+end
+
+function UsePrerequisite2()
+	print(researchPointCollection[2].rp)
+end
+
+function TogglePrerequisite1Visibility(visibility)
+	usePrerequisite1.visibility = visibility
+	prerequisite1RP.visibility = visibility
+	prerequisite1Name.visibility = visibility
+	if(researchPointCollection[1] ~= nil) then
+		prerequisite1Name.text = researchPointCollection[1].name .. ":"
+		prerequisite1RP.text = tostring(researchPointCollection[1].rp)
+	end
+end
+
+function TogglePrerequisite2Visibility(visibility)
+	usePrerequisite2.visibility = visibility
+	prerequisite2RP.visibility = visibility
+	prerequisite2Name.visibility = visibility
+	if(researchPointCollection[2] ~= nil) then
+		prerequisite2Name.text = researchPointCollection[2].name .. ":"
+		prerequisite2RP.text = tostring(researchPointCollection[2].rp)
+	end
 end
 
 Init()
@@ -848,3 +962,12 @@ upgradeWeapon.hoveredEvent:Connect(ButtonHover)
 upgradeArmor.hoveredEvent:Connect(ButtonHover)
 upgradeEngine.hoveredEvent:Connect(ButtonHover)
 upgradeTank.hoveredEvent:Connect(ButtonHover)
+
+closeButton.clickedEvent:Connect(ToggleResearchSidePanel)
+closeButton.hoveredEvent:Connect(ButtonHover)
+useFreeRP.clickedEvent:Connect(UseFreeRP)
+useFreeRP.hoveredEvent:Connect(ButtonHover)
+usePrerequisite1.clickedEvent:Connect(UsePrerequisite1)
+usePrerequisite1.hoveredEvent:Connect(ButtonHover)
+usePrerequisite2.clickedEvent:Connect(UsePrerequisite2)
+usePrerequisite2.hoveredEvent:Connect(ButtonHover)

@@ -3230,6 +3230,36 @@ Objects {
         Id: 2269572116006940077
       }
     }
+    Overrides {
+      Name: "cs:ResearchTankSidePanel"
+      ObjectReference {
+        SelfId: 2451927662005634573
+      }
+    }
+    Overrides {
+      Name: "cs:CloseButton"
+      ObjectReference {
+        SelfId: 3791846666040383314
+      }
+    }
+    Overrides {
+      Name: "cs:UseFreeRP"
+      ObjectReference {
+        SelfId: 3596265631369730650
+      }
+    }
+    Overrides {
+      Name: "cs:UsePrerequisite1"
+      ObjectReference {
+        SelfId: 16544504705593111940
+      }
+    }
+    Overrides {
+      Name: "cs:UsePrerequisite2"
+      ObjectReference {
+        SelfId: 4070073671428996539
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
