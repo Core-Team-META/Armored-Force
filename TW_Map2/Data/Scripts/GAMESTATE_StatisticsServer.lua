@@ -16,6 +16,20 @@ local killCurrencyValue = victoryComponent:GetCustomProperty("KillCurrencyValue"
 
 local winner = -1
 
+function TrackDailyChallenge(player, type, amount)
+
+	for i = 1, 3 do
+		if player.serverUserData.CHALLENGE[i].challengeType == type then
+			if player.serverUserData.CHALLENGE[i].target > player.serverUserData.CHALLENGE[i].progress then
+				player.serverUserData.CHALLENGE[i].progress = player.serverUserData.CHALLENGE[i].progress + amount
+				Events.Broadcast("PACK_DAILY_CHALLENGES", player)
+			end
+			break
+		end
+	end
+
+end
+
 function CalculateTotalXP(player)
 
 	local baseXP = 0
@@ -99,6 +113,7 @@ function SaveStatistics()
 		if p.team == winner then
 			print("This player won, adding to Total Wins")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS, 1)
+			TrackDailyChallenge(p, "Wins", 1)
 		else 
 			print("This player lost, adding to Total Losses")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)		
@@ -125,6 +140,7 @@ function OnDamagedRecord(player, damage)
 			end
 			
 			player.serverUserData.assistedInDeath[damage.sourcePlayer.id] = damage.sourcePlayer
+			TrackDailyChallenge(damage.sourcePlayer, "Damage", damage.amount)
 		end
 	end
 	
@@ -140,6 +156,7 @@ function OnDiedRecord(player, damage)
 			if damage.sourcePlayer:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED) < damage.sourcePlayer.kills then
 				damage.sourcePlayer:SetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED, damage.sourcePlayer.kills)
 			end
+			TrackDailyChallenge(damage.sourcePlayer, "Kills", 1)
 		end
 		
 		for x, p in pairs(player.serverUserData.assistedInDeath) do
