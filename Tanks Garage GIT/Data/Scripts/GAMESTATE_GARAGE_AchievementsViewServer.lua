@@ -121,11 +121,11 @@ function SetChallengeProgressInfo(player)
 			player.serverUserData.CHALLENGE[i].dueDate = 
 			os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
 			
-			--[[
+
 			local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
 			print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
 			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
-			]]--
+
 		end
 	end
 		
