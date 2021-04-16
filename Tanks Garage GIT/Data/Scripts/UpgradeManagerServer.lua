@@ -32,7 +32,7 @@ function PurchaseTank(player, id)
 	return BroadcastEventResultCode.FAILURE
 end
 
-function ResearchTank(player, id, useFreeRP)
+function ResearchTank(player, id, prereqId, useFreeRP)
 	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
 		if(v:GetCustomProperty("ID") == id) then
@@ -42,7 +42,7 @@ function ResearchTank(player, id, useFreeRP)
 			if(useFreeRP) then
 				rp = player:GetResource(Constants_API.FREERP)
 			else
-				rp = player:GetResource(UTIL_API.GetTankRPString(tonumber(id)))
+				rp = player:GetResource(UTIL_API.GetTankRPString(tonumber(prereqId)))
 			end
 			
 			if(rp < cost) then
@@ -54,7 +54,11 @@ function ResearchTank(player, id, useFreeRP)
 				if(tank.id == id) then
 					print("DEBUG: Owned tank found")
 					tank.researched = true
-					player:RemoveResource(UTIL_API.GetTankRPString(tonumber(id)), cost)
+					if(useFreeRP) then
+						player:RemoveResource("Free RP", cost)
+					else
+						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(prereqId)), cost)
+					end					
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
