@@ -87,6 +87,46 @@ commands = {
         adminOnly = false
     },
     
+        ["/freerp"] = {
+        OnCommandCalledClient = function (player, message)
+        
+            local resourceFound = nil
+        	local number = nil
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+        		print("Section " .. section)
+        		number = tonumber(section)
+        	
+        		if number then
+        		        		
+    				resourceFound = section
+    				        				
+    				Chat.LocalMessage("Setting Free RP to " .. tostring(number))
+        		
+        		end
+        	
+        	end      	
+        end,
+        OnCommandCalledServer = function (player, message)
+        
+        	local resourceFound = nil
+        	local number = nil
+        	
+        	for section in (message.." "):gmatch("(.-) ") do        	
+        		number = tonumber(section)     
+        		print("Number " .. tostring(number))
+        		if(number) then
+	        		player:SetResource("Free RP", number)        	
+        		end
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Set the Free RP value.",
+        requireMessage = false,
+        adminOnly = false
+    },
+    
     ["/sl"] = {
         OnCommandCalledClient = function (player, message)
         	

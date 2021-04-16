@@ -55,6 +55,9 @@ local prerequisite1Name = researchTankSidePanel:FindChildByName("Prerequisite1Na
 local prerequisite1RP = researchTankSidePanel:FindChildByName("Prerequisite1RP")
 local prerequisite2Name = researchTankSidePanel:FindChildByName("Prerequisite2Name")
 local prerequisite2RP = researchTankSidePanel:FindChildByName("Prerequisite2RP")
+local useFreeRPPanel = script:GetCustomProperty("UseFreeRPPanel"):WaitForObject()
+local freeRPNo = script:GetCustomProperty("No"):WaitForObject()
+local freeRPYes = script:GetCustomProperty("Yes"):WaitForObject()
 ------------------------------------------------------------------------------------------------------
 local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
 
@@ -66,7 +69,8 @@ local TankContentPanel = script:GetCustomProperty("TankContentPanel"):WaitForObj
 
 -- Local properties
 local thisComponent = "TECH_TREE_MENU"
-
+local researchingName = ""
+local researchingProgress = nil
 
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -527,41 +531,29 @@ function UpgradeTank()
 			print(researchPointCollection[2].rp)
 			TogglePrerequisite2Visibility(Visibility.FORCE_ON)
 		end		
-		
-		--[[
-		for i, prereq in ipairs(researchPointCollection) do
-			print(tostring(prereq.id) .. ": " .. tostring(prereq.rp))
-		end
-		--[[
-		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
-		if(rp < tankDetails.tankResearchCost) then
-			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
-			if(freeRP >= tankDetails.tankResearchCost) then
-				-- Bring up modal asking if user wants to use Free RP
-				
-			else
-				-- DEBUG
-				ShowNotEnoughRPMessage()
-			end
-		else		
-			local event = Events.BroadcastToServer("ResearchTank", tankDetails.id, false)
-			if(event == BroadcastEventResultCode.SUCCESS) then				
-				-- TODO: Play SFX/Message				
-				UI.PrintToScreen(tankDetails.name .. " successfully researched.")
-				PopulateCurrencyUI()
-				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-					if(tank.id == tankDetails.id) then
-						tank.researched = true
-					end
-				end
-				CloseTechTreeModal()
-			else
-				-- TODO: Better prompt for user
-				UI.PrintToScreen("There was an error sending the event. Please try again.")
-			end
-		end	
-		--]]
 	end
+end
+
+function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
+	if(rp < tankDetails.tankResearchCost) then
+		ShowNotEnoughRPMessage()
+	else		
+		local event = Events.BroadcastToServer("ResearchTank", tankDetails.id, prereqId, usingFreeRP)
+		if(event == BroadcastEventResultCode.SUCCESS) then				
+			-- TODO: Play SFX/Message				
+			UI.PrintToScreen(tankDetails.name .. " successfully researched.")
+			PopulateCurrencyUI()
+			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+				if(tank.id == tankDetails.id) then
+					tank.researched = true
+				end
+			end
+			CloseTechTreeModal()
+		else
+			-- TODO: Better prompt for user
+			UI.PrintToScreen("There was an error sending the event. Please try again.")
+		end
+	end	
 end
 
 function UpgradeWeapon()
@@ -584,13 +576,15 @@ function UpgradeWeapon()
 			CloseTechTreeModal()		
 		end
 	else
+		researchingName = "Weapon"
+		researchingProgress = tankDetails.weaponProgress	
 		print("Research cost: " .. tankDetails.weaponResearchCost)
 		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
 		if(rp < tankDetails.weaponResearchCost) then
 			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
-			if(freeRP >= tankDetails.tankResearchCost) then
+			if(freeRP >= tankDetails.weaponResearchCost) then
 				-- Bring up modal asking if user wants to use Free RP
-				
+				useFreeRPPanel.visibility = Visibility.FORCE_ON
 			else
 				-- DEBUG
 				ShowNotEnoughRPMessage()
@@ -635,13 +629,14 @@ function UpgradeArmor()
 			CloseTechTreeModal()		
 		end
 	else
-		print("Research cost: " .. tankDetails.armorResearchCost)
+		researchingName = "Armor"
+		researchingProgress = tankDetails.armorProgress
 		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
 		if(rp < tankDetails.armorResearchCost) then
 			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 			if(freeRP >= tankDetails.armorResearchCost) then
 				-- Bring up modal asking if user wants to use Free RP
-				
+				useFreeRPPanel.visibility = Visibility.FORCE_ON
 			else
 				-- DEBUG
 				ShowNotEnoughRPMessage()
@@ -686,13 +681,14 @@ function UpgradeEngine()
 			CloseTechTreeModal()		
 		end
 	else
-		print("Research cost: " .. tankDetails.engineResearchCost)
+		researchingName = "Engine"
+		researchingProgress = tankDetails.engineProgress	
 		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
 		if(rp < tankDetails.engineResearchCost) then
 			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 			if(freeRP >= tankDetails.engineResearchCost) then
 				-- Bring up modal asking if user wants to use Free RP
-				
+				useFreeRPPanel.visibility = Visibility.FORCE_ON
 			else
 				-- DEBUG
 				ShowNotEnoughRPMessage()
@@ -889,6 +885,8 @@ function ResetTankDetails()
 	TogglePrerequisite1Visibility(Visibility.FORCE_OFF)
 	TogglePrerequisite2Visibility(Visibility.FORCE_OFF)
 	researchPointCollection = {}
+	researchingName = ""
+	researchingProgress = nil
 end
 
 function GetTankData(id)
@@ -913,16 +911,16 @@ function ForceHideResearchSidePanel()
 	researchTankSidePanel.visibility = Visibility.FORCE_OFF
 end
 
-function UseFreeRP()
-	print(LOCAL_PLAYER:GetResource(Constants_API.FREERP))
+function UseFreeRP()	
+	ResearchTank(LOCAL_PLAYER:GetResource(Constants_API.FREERP), tankDetails.id, 0, true)
 end
 
 function UsePrerequisite1()
-	print(researchPointCollection[1].rp)
+	ResearchTank(researchPointCollection[1].rp, tankDetails.id, researchPointCollection[1].id, false)
 end
 
 function UsePrerequisite2()
-	print(researchPointCollection[2].rp)
+	ResearchTank(researchPointCollection[2].rp, tankDetails.id, researchPointCollection[2].id, false)
 end
 
 function TogglePrerequisite1Visibility(visibility)
@@ -945,6 +943,35 @@ function TogglePrerequisite2Visibility(visibility)
 	end
 end
 
+function DenyFreeRP()
+	useFreeRPPanel.visibility = Visibility.FORCE_OFF
+end
+
+function AcceptFreeRP()
+	local event = Events.BroadcastToServer("Research"..researchingName, tankDetails.id, true)
+	if(event == BroadcastEventResultCode.SUCCESS) then				
+		-- TODO: Play SFX/Message				
+		UI.PrintToScreen(tankDetails.name .. " " .. researchingName .. " successfully researched.")
+		PopulateCurrencyUI()
+		for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+			if(tank.id == tankDetails.id) then
+				if(researchingName == "Weapon") then
+					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
+				elseif(researchingName == "Armor") then
+					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
+				elseif(researchingName == "Engine") then
+					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED	
+				end				 
+			end
+		end
+		CloseTechTreeModal()
+	else
+		-- TODO: Better prompt for user
+		UI.PrintToScreen("There was an error sending the event. Please try again.")
+	end
+	useFreeRPPanel.visibility = Visibility.FORCE_OFF
+end
+
 Init()
 ResetTankDetails()
 
@@ -962,6 +989,9 @@ upgradeWeapon.hoveredEvent:Connect(ButtonHover)
 upgradeArmor.hoveredEvent:Connect(ButtonHover)
 upgradeEngine.hoveredEvent:Connect(ButtonHover)
 upgradeTank.hoveredEvent:Connect(ButtonHover)
+
+freeRPNo.clickedEvent:Connect(DenyFreeRP)
+freeRPYes.clickedEvent:Connect(AcceptFreeRP)
 
 closeButton.clickedEvent:Connect(ToggleResearchSidePanel)
 closeButton.hoveredEvent:Connect(ButtonHover)

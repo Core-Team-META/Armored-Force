@@ -5301,6 +5301,24 @@ Objects {
         SelfId: 4070073671428996539
       }
     }
+    Overrides {
+      Name: "cs:UseFreeRPPanel"
+      ObjectReference {
+        SelfId: 18220275962599248067
+      }
+    }
+    Overrides {
+      Name: "cs:No"
+      ObjectReference {
+        SelfId: 6680993859859033191
+      }
+    }
+    Overrides {
+      Name: "cs:Yes"
+      ObjectReference {
+        SelfId: 5404198808869508183
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
