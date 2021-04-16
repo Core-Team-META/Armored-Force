@@ -41,7 +41,7 @@ end
 
 function Pacing()
 
-	if not pacingDistance then
+	if pacingDistance <= 0 then
 		return
 	end
 	

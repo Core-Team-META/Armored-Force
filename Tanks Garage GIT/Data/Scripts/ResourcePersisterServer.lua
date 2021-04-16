@@ -46,14 +46,14 @@ function OnPlayerJoined(player)
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
-
+	--[[
 	print("-----PRINTING SHARED STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
 	print("-----FINISHED PRINTING SHARED STORAGE-----")
 	print("-----PRINTING LOCAL STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetPlayerData(player))
 	print("-----FINISHED PRINTING LOCAL STORAGE-----")
-
+	]]--
 end
 
 function OnPlayerLeft(player)
@@ -65,7 +65,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	-- playerSharedStorage = {}
+	--playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -103,8 +103,8 @@ function CheckAndSetSharedStorageDefault(player)
 		if(playerSharedStorage[UTIL_API.GetTankRPString(i)] == nil) then playerSharedStorage[UTIL_API.GetTankRPString(i)] = 0 end
 	end
 	
-	if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = "" end
-	--if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = "" end
+	if(playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO] == nil) then playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO] = "" end
+	if(playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN] == nil) then playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN] = "" end
 
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = 0 end
@@ -130,8 +130,8 @@ function LoadAndSetDataFromSharedStorage(player)
 		player:SetResource(UTIL_API.GetTankRPString(i), playerSharedStorage[UTIL_API.GetTankRPString(i)])
 	end
 	
-	player.serverUserData.CHALLENGES = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO]
-	--player.serverUserData.CHALLENGES_DUE_DATE = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE]
+	player.serverUserData.CHALLENGES = playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO]
+	player.serverUserData.LOGIN = playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN]
 
 	
 	Events.Broadcast("SET_DAILY_CHALLENGES", player)
@@ -167,8 +167,8 @@ function SavePlayerDataIntoSharedStorage(player)
 		playerSharedStorage[UTIL_API.GetTankRPString(i)] = player:GetResource(UTIL_API.GetTankRPString(i))
 	end
 
-	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = player.serverUserData.CHALLENGES
-	--playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = player.serverUserData.CHALLENGES_DUE_DATE	
+	playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO] = player.serverUserData.CHALLENGES
+	playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN] = player.serverUserData.LOGIN	
 
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = player:GetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY)
@@ -188,7 +188,7 @@ end
 
 function SetNewPlayerProgression(playerSharedStorage)
 
-	print("Setting new progress data")
+	--print("Setting new progress data")
 
 	local tankString = ""
 	local tankEntry = ""

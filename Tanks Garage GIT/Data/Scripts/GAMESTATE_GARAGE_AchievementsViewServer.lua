@@ -46,7 +46,8 @@ function UnpackChallengeInfo(player)
 		end	
 	else 
 		local challengeString = ""
-		local challengeDueDate = os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+		local challengeDueDate = 
+		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
 		
 		for i = 1, 3 do
 			player.serverUserData.CHALLENGE[i] = {}
