@@ -128,7 +128,7 @@ function Tick()
 		
 	for x, child in ipairs(dailyChallenges:GetChildren()) do	
 		if localPlayer.clientUserData.CHALLENGES[x] and localPlayer.clientUserData.CHALLENGES[x].dueDate then
-			child:GetCustomProperty("ChallengeDueDate"):WaitForObject().text = os.date("%X",localPlayer.clientUserData.CHALLENGES[x].dueDate - os.time())
+			child:GetCustomProperty("ChallengeDueDate"):WaitForObject().text = os.date("%X",math.abs(localPlayer.clientUserData.CHALLENGES[x].dueDate - os.time()))
 		end
 	end
 	
