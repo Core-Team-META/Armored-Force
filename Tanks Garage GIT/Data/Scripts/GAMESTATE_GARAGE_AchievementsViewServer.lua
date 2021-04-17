@@ -1,15 +1,19 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local playerChallengeCheck = {}
 
-function AddInfoToSlot(playerId, data)
+function AddInfoToSlot(playerId, data, login)
 	while true do
 		for i = 1, 16, 1 do
 			if data == "" and string.find(script:GetCustomProperty("P" .. tostring(i)), playerId) then
 				script:SetNetworkedCustomProperty("P" .. tostring(i), "")
 				return
+			elseif string.find(script:GetCustomProperty("P" .. tostring(i)), playerId) then
+				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data .. "-" .. login)
+				return
 			elseif script:GetCustomProperty("P" .. tostring(i)) == "" then
-				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data)
+				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data .. "-" .. login)
 				return
 			end
 		end
@@ -47,7 +51,7 @@ function UnpackChallengeInfo(player)
 	else 
 		local challengeString = ""
 		local challengeDueDate = 
-		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
 		
 		for i = 1, 3 do
 			player.serverUserData.CHALLENGE[i] = {}
@@ -78,8 +82,7 @@ function UnpackChallengeInfo(player)
 		player.serverUserData.CHALLENGES = challengeString
 	end
 	
-	--print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)
-
+	--print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
 end
 
 function RepackChallengeInfo(player)
@@ -94,7 +97,6 @@ function RepackChallengeInfo(player)
 	end
 	
 	player.serverUserData.CHALLENGES = challengeString
-	player.serverUserData.CHALLENGES_DUE_DATE = os.time(player.serverUserData.dueDate)
 	
 	--print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
 	
@@ -104,7 +106,7 @@ function CheckDueDate(current, dueDate)
 
 	if current.year > dueDate.year or current.month > dueDate.month then
 		return false
-	elseif current.day > dueDate.day and current.hour > 5 then
+	elseif current.day >= dueDate.day and current.hour > 5 then
 		return false
 	end
 	
@@ -116,11 +118,15 @@ function SetChallengeProgressInfo(player)
 
 	UnpackChallengeInfo(player)
 	
+	if player.serverUserData.LOGIN == "" then
+		player.serverUserData.LOGIN = tostring(os.time())
+	end
+	
 	for i = 1, 3 do
 		if not CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) then
 			player.serverUserData.CHALLENGE[i].progress = 0
 			player.serverUserData.CHALLENGE[i].dueDate = 
-			os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+			os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
 			
 
 			local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
@@ -132,7 +138,7 @@ function SetChallengeProgressInfo(player)
 		
 	RepackChallengeInfo(player)
 	
-	AddInfoToSlot(player.id, player.serverUserData.CHALLENGES)
+	AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
 	
 	playerChallengeCheck[player.id] = true
 		
@@ -147,7 +153,7 @@ function Tick()
 					and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
 					player.serverUserData.CHALLENGE[i].progress = 0
 					player.serverUserData.CHALLENGE[i].dueDate = 
-					os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+					os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
 					
 					--[[
 					local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
@@ -159,7 +165,7 @@ function Tick()
 				
 			RepackChallengeInfo(player)
 			
-			AddInfoToSlot(player.id, player.serverUserData.CHALLENGES)
+			AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
 		end	
 	end
 	
@@ -170,12 +176,12 @@ end
 function ClaimReward(player, challengeNumber)
 
 	if  player.serverUserData.CHALLENGE[i].progress >= player.serverUserData.CHALLENGE[i].target then
-		player:AddResource(CONSTANTS_API.SILVER, 1000)
-		player:AddResource(CONSTANTS_API.GetEquippedTankResource(), 200)
+		player:AddResource(CONSTANTS_API.SILVER, 100)
+		player:AddResource(UTIL_API.GetTankRPString(player:GetResource(CONSTANTS_API.GetEquippedTankResource())), 2000)
 		
 		player.serverUserData.CHALLENGE[i].progress = 0
 		player.serverUserData.CHALLENGE[i].dueDate = 
-		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
 					
 		--[[
 		local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
@@ -184,6 +190,22 @@ function ClaimReward(player, challengeNumber)
 		]]--
 	end	
 
+end
+
+function ClaimDaily(player)
+
+	if  tonumber(player.serverUserData.LOGIN) - tonumber(os.time()) <= 0 then
+		player:AddResource(CONSTANTS_API.SILVER, 100)
+		player:AddResource(UTIL_API.GetTankRPString(player:GetResource(CONSTANTS_API.GetEquippedTankResource())), 2000)
+		
+		local loginDay = os.date("*t").day
+		local loginHour = os.date("*t").hour
+				
+		player.serverUserData.LOGIN  = 
+		tostring(os.time() + 72000)
+		
+		AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
+	end
 end
 
 function OnLeft(player)
@@ -196,3 +218,4 @@ end
 Game.playerLeftEvent:Connect(OnLeft)
 Events.Connect("SET_DAILY_CHALLENGES", SetChallengeProgressInfo)
 Events.ConnectForPlayer("CLAIM_REWARD", ClaimReward)
+Events.ConnectForPlayer("CLAIM_LOGIN", ClaimDaily)
