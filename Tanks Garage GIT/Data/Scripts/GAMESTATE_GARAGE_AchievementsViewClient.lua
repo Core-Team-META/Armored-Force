@@ -2,6 +2,7 @@ local achievementsViewServer = script:GetCustomProperty("AchievementsViewServer"
 local achievementsViewUI = script:GetCustomProperty("AchievementsViewUI"):WaitForObject()
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 local dailyChallenges = script:GetCustomProperty("DailyChallenges"):WaitForObject()
+local dailyLogin = script:GetCustomProperty("DailyLogin"):WaitForObject()
 
 local thisComponent = "ACHIEVEMENTS_MENU"
 
@@ -10,6 +11,9 @@ local localPlayer = Game.GetLocalPlayer()
 local challengeButtonIndex = {}
 
 local challengeInfoSet = false
+
+local loginText = dailyLogin:GetCustomProperty("LoginDueDate"):WaitForObject()
+local loginButton = dailyLogin:GetCustomProperty("LoginClaim"):WaitForObject()
 
 function UnpackChallengeInfo(challengeString)
 
@@ -94,7 +98,11 @@ function OnChallengeInfoChanged(serverScript, property)
 
 	if playerDataFound then
 
-		UnpackChallengeInfo(string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, playerDataFound.size))
+		UnpackChallengeInfo(string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, "-") - 1))
+		
+		localPlayer.clientUserData.LOGIN = string.sub(playerDataFound, string.find(playerDataFound, "-") + 1, playerDataFound.size)
+		
+		print("Login: " .. os.date("%X", localPlayer.clientUserData.LOGIN))
 				
 		for x, child in ipairs(dailyChallenges:GetChildren()) do
 			local type = localPlayer.clientUserData.CHALLENGES[x].challengeType
@@ -120,6 +128,12 @@ function OnClaimButtonPressed(button)
 	
 end
 
+function OnDailyClaimButtonPressed(button)
+
+	Events.BroadcastToServer("CLAIM_LOGIN")
+
+end
+
 function Tick()
 	
 	if not challengeInfoSet then
@@ -130,6 +144,24 @@ function Tick()
 		if localPlayer.clientUserData.CHALLENGES[x] and localPlayer.clientUserData.CHALLENGES[x].dueDate then
 			child:GetCustomProperty("ChallengeDueDate"):WaitForObject().text = os.date("%X",math.abs(localPlayer.clientUserData.CHALLENGES[x].dueDate - os.time()))
 		end
+	end
+
+	if localPlayer.clientUserData.LOGIN and tonumber(localPlayer.clientUserData.LOGIN) - tonumber(os.time()) > 0 then
+	
+		loginText.text = os.date("%X", math.abs(localPlayer.clientUserData.LOGIN - os.time()))
+		
+		if loginButton.isInteractable then
+			loginButton.isInteractable = false
+		end
+		
+	else 
+	
+		loginText.text = "00:00:00"
+		
+		if not loginButton.isInteractable then
+			loginButton.isInteractable = true
+		end
+
 	end
 	
 	Task.Wait(0.1)
@@ -154,6 +186,8 @@ function InitializeComponent()
 		challengeButton.clickedEvent:Connect(OnClaimButtonPressed)
 		challengeButtonIndex[challengeButton] = x
 	end
+	
+	loginButton.clickedEvent:Connect(OnDailyClaimButtonPressed)
 	
 	OnChallengeInfoChanged(achievementsViewServer, "")
 
