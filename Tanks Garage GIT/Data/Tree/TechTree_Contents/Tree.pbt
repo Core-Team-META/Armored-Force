@@ -4942,7 +4942,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Prerequisite1"
-      String: "01"
+      String: "03"
     }
   }
   Collidable_v2 {

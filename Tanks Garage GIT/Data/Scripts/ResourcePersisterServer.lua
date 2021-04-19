@@ -301,7 +301,7 @@ function ConvertTechTreeProgressToDataString(player)
 	table.sort(player.serverUserData.techTreeProgress, function(a, b) return tonumber(a.id) < tonumber(b.id) end)
 	
 	for k,v in ipairs(player.serverUserData.techTreeProgress) do
-	
+		print("Saving tan Id: " .. tostring(v.id))
 		dataString = dataString .. v.id .. 
 					"|" .. ConvertBoolToString(v.researched) ..
 					"|" .. ConvertBoolToString(v.purchased) ..
