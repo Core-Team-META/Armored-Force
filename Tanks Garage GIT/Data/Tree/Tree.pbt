@@ -1704,7 +1704,6 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
-      IsCrouchEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
       AbilityAimMode {
