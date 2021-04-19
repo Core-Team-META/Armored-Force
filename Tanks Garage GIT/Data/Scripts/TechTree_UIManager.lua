@@ -749,6 +749,13 @@ function GetPrerequisiteRPValues(id)
 end
 
 function PopulateDetailsModal(tank)
+	print(CanTankBeResearched(tank:GetCustomProperty("ID")))
+	if CanTankBeResearched(tank:GetCustomProperty("ID")) then
+		upgradeTank.visibility = Visibility.FORCE_ON
+	else  
+		upgradeTank.visibility = Visibility.FORCE_OFF
+	end 
+	
 	tankFullName.text = tank:GetCustomProperty("Name")
 	local reload = tank:GetCustomProperty("Reload")
 	local reloadUpgrade = tank:GetCustomProperty("ReloadUpgraded")
@@ -859,6 +866,52 @@ function PopulateDetailsModal(tank)
 		end
 	end
 end
+
+function CanTankBeResearched(id)
+	local canBeResearched = true
+	print("Checking if tank can be researched")
+	print(id)
+	for i, tank in ipairs(TANK_LIST) do
+		if(tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
+			print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
+			if(tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
+				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
+				local preReq1Tank = {}
+				for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
+					if(tostring(t.id) == tostring(preReq1Id)) then	
+						preReq1Tank.id = t.id
+						preReq1Tank.name = tank:GetCustomProperty("Name")
+						preReq1Tank.researchedTank = t.researched
+						preReq1Tank.purchasedTank = t.purchased
+						preReq1Tank.weaponProgress = t.weaponProgress
+						preReq1Tank.armorProgress = t.armorProgress
+						preReq1Tank.engineProgress = t.engineProgress			
+					end
+				end
+	
+				print("Pre req tank name: " .. tostring(preReq1Tank.name))
+				print(preReq1Tank.weaponProgress)
+				print(preReq1Tank.armorProgress)
+				print(preReq1Tank.engineProgress)
+				if(tostring(preReq1Tank.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
+				and tostring(preReq1Tank.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
+				and tostring(preReq1Tank.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+					print("cannot research")
+					canBeResearched = false
+				end
+			end
+			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
+				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
+				local preReq2Tank = GetTankData(preReq2Id)
+				if(tostring(preReq2Tank.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
+				and tostring(preReq2Tank.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
+				and tostring(preReq2Tank.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then					canBeResearched = false
+				end			
+			end
+		end
+	end
+	return canBeResearched
+end	
 
 function ResetTankDetails()
 	tankDetails = {
