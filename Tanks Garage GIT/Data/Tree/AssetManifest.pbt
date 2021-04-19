@@ -1,4 +1,17 @@
 Assets {
+  Id: 18000572852129032995
+  Name: "PremiumSubscription"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "9abf1b587fae433886324a6c15781365"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 17287164381252296468
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -39,6 +52,32 @@ Assets {
   }
 }
 Assets {
+  Id: 9724936981949476817
+  Name: "GoldBundle3"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "fe2bff7f21ab4ff69c9bf66c5bfdcad5"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 8779881459085015496
+  Name: "GoldBundle2"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "5acf83274aa842b9900f8f5cc3f11e1c"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 8777653088300600563
   Name: "Bush 01"
   PlatformAssetType: 1
@@ -63,6 +102,19 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "weapon_guide_pistol_BP_ref"
+  }
+}
+Assets {
+  Id: 1232946962373306830
+  Name: "GoldBundle1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e7d099070e034a5093f8345ef347d704"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
