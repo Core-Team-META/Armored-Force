@@ -15,9 +15,7 @@ local SFX_flag2 = script:GetCustomProperty("SFX_flag2"):WaitForObject()
 
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
---on player death, but for testing purposes on binding X
-function OnBindingPressed(whichPlayer, binding)
-	if (binding == "ability_extra_40") then 
+--on player death
         pole.visibility = Visibility.FORCE_ON
         bundle.visibility = Visibility.FORCE_ON
         local door = root:FindDescendantByName("door")
@@ -41,8 +39,6 @@ function OnBindingPressed(whichPlayer, binding)
         Task.Wait(0.1)
         bundle.visibility = Visibility.FORCE_OFF
         SFX_flag2:Play()
-    end
-end
 
 function Tick()
 	Task.Wait()
@@ -59,12 +55,3 @@ function Tick()
 	Ease3D.EaseRotation(Flag2, Rotation.New(0, 0, 20), .25, Ease3D.EasingEquation.CUBIC, Ease3D.EasingDirection.INOUT)
 	Task.Wait()
 end
-
-function OnPlayerJoined(player)
-	player.bindingPressedEvent:Connect(OnBindingPressed)
-end
-
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
-
-
---note: original placement of flag is around (0,0,-250)
