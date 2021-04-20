@@ -513,7 +513,7 @@ function GetEquippedTankTemplate(player, id)
 	elseif(equippedTankId == 7) then
 		return EQUIPMENT_TEMPLATE7
 	elseif(equippedTankId == 8) then
-		return EQUIPMENT_TEMPLATE6
+		return EQUIPMENT_TEMPLATE8
 	elseif(equippedTankId == 9) then
 		return EQUIPMENT_TEMPLATE21
 	elseif(equippedTankId == 10) then
@@ -528,9 +528,11 @@ function GetEquippedTankTemplate(player, id)
 		return EQUIPMENT_TEMPLATE28
 	elseif(equippedTankId == 15) then
 		return EQUIPMENT_TEMPLATE6
-		
+	
 	elseif(equippedTankId == 18) then
 		return EQUIPMENT_TEMPLATE20
+	elseif(equippedTankId == 25) then
+		return EQUIPMENT_TEMPLATE15
 	else
 		print("Returning default")
 		return EQUIPMENT_TEMPLATE6
