@@ -648,6 +648,18 @@ Objects {
         Id: 616489956946034427
       }
     }
+    Overrides {
+      Name: "cs:M6A1HeavyGARAGEMODEL"
+      AssetReference {
+        Id: 5749015215759485643
+      }
+    }
+    Overrides {
+      Name: "cs:TankGELoweGARAGEMODEL"
+      AssetReference {
+        Id: 12479631322612503858
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

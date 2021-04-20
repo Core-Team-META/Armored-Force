@@ -7,8 +7,11 @@ local M3StuartGARAGEMODEL = script:GetCustomProperty("M3StuartGARAGEMODEL")
 local IS3GARAGEMODEL = script:GetCustomProperty("IS3GARAGEMODEL")
 local M10WolverineGARAGEMODEL = script:GetCustomProperty("M10WolverineGARAGEMODEL")
 local M4A1ShermanGARAGEMODEL = script:GetCustomProperty("M4A1ShermanGARAGEMODEL")
+local M6A1HeavyGARAGEMODEL = script:GetCustomProperty("M6A1HeavyGARAGEMODEL")
+
 
 local Panzer3GARAGEMODEL = script:GetCustomProperty("Panzer3GARAGEMODEL")
+local LoweGARAGEMODEL = script:GetCustomProperty("TankGELoweGARAGEMODEL")
 
 ---------------------
 
@@ -237,6 +240,8 @@ function SetGarageModelFromEquippedTank(player, id)
 		garageModel = IS3GARAGEMODEL
 	elseif(equippedTankId == 7) then
 		garageModel = M10WolverineGARAGEMODEL
+	elseif(equippedTankId == 8) then
+		garageModel = M6A1HeavyGARAGEMODEL
 	elseif(equippedTankId == 9) then
 		garageModel = TankUST34HeavyGARAGEMODEL
 	elseif(equippedTankId == 11) then
@@ -246,6 +251,8 @@ function SetGarageModelFromEquippedTank(player, id)
 		
 	elseif(equippedTankId == 18) then
 		garageModel = Panzer3GARAGEMODEL
+	elseif(equippedTankId == 25) then
+		garageModel = LoweGARAGEMODEL
 	else
 		garageModel = TankUSM24ChaffeeGARAGEMODEL
 	end
