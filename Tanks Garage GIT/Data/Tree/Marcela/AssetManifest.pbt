@@ -1529,6 +1529,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7142026819783828011
+  Name: "Epic Explosion Sub Bass Designer Sweetener Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_explosion_sub_bass_impact_designer_sweetener_set_01_ref"
+  }
+}
+Assets {
   Id: 6827615561326724763
   Name: "Urban Pipe Straight"
   PlatformAssetType: 1
@@ -1643,6 +1652,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_hq_test_001"
+  }
+}
+Assets {
+  Id: 6091244996894068446
+  Name: "Ambience Desert Creatures 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_desert_creatures_01_Cue_ref"
   }
 }
 Assets {
@@ -1850,6 +1868,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_sand_patch_001"
+  }
+}
+Assets {
+  Id: 4987417600748127307
+  Name: "Ambience Desert Wind and Sand 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_desert_sandwind_01_Cue_ref"
   }
 }
 Assets {
@@ -2426,6 +2453,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_curve45_001"
+  }
+}
+Assets {
+  Id: 370132569225143281
+  Name: "Ambience Desert Day 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_desert_day_01_Cue_ref"
   }
 }
 Assets {
