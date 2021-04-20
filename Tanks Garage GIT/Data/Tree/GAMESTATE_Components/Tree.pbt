@@ -7237,6 +7237,12 @@ Objects {
         }
       }
     }
+    Overrides {
+      Name: "cs:TechTreeContents"
+      ObjectReference {
+        SelfId: 7647187385909291407
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -81,34 +81,84 @@ function CheckPerks(player, perk)
 end
 
 function AttemptPremiumPurchase(button)
-	if localPlayer:GetResource(CONSTANTS_API.GOLD) >= premiumTanksInfo[button].cost then
-		Events.BroadcastToserver("PurchasePremTank", premiumTanksInfo[button].id)
+
+	if localPlayer:GetResource(CONSTANTS_API.GOLD) >= premiumTanksInfo[button.id].cost then
+		Events.BroadcastToServer("PurchasePremTank", premiumTanksInfo[button.id].id)
+	else 
+		AcknowledgePurchase(premiumTanksInfo[button.id].id, false)
 	end
+	
+end
+
+function AcknowledgePurchase(tankId, confirmed)
+	
+	local button = nil
+	
+	for b, c in pairs(premiumTanksInfo) do
+		if c.id == tankId then
+			button = World.FindObjectById(b)
+		end
+	end
+	
+	if not confirmed then
+		if button then
+			button.isInteractable = false
+			button.text = "NOT ENOUGH GOLD"
+			Task.Wait(1)
+			button.isInteractable = true
+			button.text = "PURCHASE"			
+		end
+		return
+	end
+	
+	for x, t in pairs(localPlayer.clientUserData.techTreeProgress) do
+		if t.id == tankId then
+			t.purchased = true
+			t.researched = true
+			t.weaponProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
+			t.armorProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
+			t.engineProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
+
+			print("Purchase successful")
+		end
+	end
+	
+	if button then
+		button.isInteractable = false
+		button.text = "PURCHASED"
+	end
+
 end
 
 function PopulatePremiumTanks()
 
 	local entryCount = 0
+	local premiumEntry = nil
+	local button = nil
+	local cost = ""
+	local id = ""
 	
 	for x, t in ipairs(techTreeContents:GetChildren()) do
 		if t:GetCustomProperty("PurchaseCurrencyName") == "Gold" then
-			local premiumEntry = World.SpawnAsset(premiumTankEntry, {parent = premiumTanks:GetCustomProperty("ScrollPanel"):WaitForObject()})
-			local button = premiumEntry:GetCustomProperty("TankPurchaseButton"):WaitForObject()
+			premiumEntry = World.SpawnAsset(premiumTankEntry, {parent = premiumTanks:GetCustomProperty("ScrollPanel"):WaitForObject()})
+			button = premiumEntry:GetCustomProperty("TankPurchaseButton"):WaitForObject()
+			cost = t:GetCustomProperty("PurchaseCost")
+			id = t:GetCustomProperty("ID")
 
 			premiumEntry.y = entryCount * (premiumEntry.height + 10)
 			premiumEntry:GetCustomProperty("TankText"):WaitForObject().text = t:GetCustomProperty("Name")
-			premiumEntry:GetCustomProperty("CostText"):WaitForObject().text = "Gold: " .. tostring(t:GetCustomProperty("PurchaseCost"))
+			premiumEntry:GetCustomProperty("CostText"):WaitForObject().text = "Gold: " .. cost
 			button.text = "PURCHASE"
 			
-			premiumTanksInfo[button] = {}
-			premiumTanksInfo[button].cost = tonumber(t:GetCustomProperty("PurchaseCost"))
-			premiumTanksInfo[button].id = t:GetCustomProperty("ID")
+			premiumTanksInfo[button.id] = {}
+			premiumTanksInfo[button.id].cost = tonumber(cost)
+			premiumTanksInfo[button.id].id = id
 			
 			button.clickedEvent:Connect(AttemptPremiumPurchase)
 			
 			for y, p in ipairs(localPlayer.clientUserData.techTreeProgress) do
-				if p.id == t:GetCustomProperty("ID") and p.purchased then
-					button.isInterractable = false
+				if p.id == id and p.purchased then
+					button.isInteractable = false
 					button.text = "PURCHASED"
 				end
 			end
@@ -145,3 +195,4 @@ InitializeComponent()
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
 Events.Connect("TankClientDataSet", PopulatePremiumTanks)
+Events.Connect("PremTankPurchased", AcknowledgePurchase)
