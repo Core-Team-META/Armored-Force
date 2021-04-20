@@ -1,6 +1,6 @@
 Assets {
   Id: 238381761017864835
-  Name: "BabyTankDeath"
+  Name: "BabyTankFlag"
   PlatformAssetType: 3
   TextAsset {
   }

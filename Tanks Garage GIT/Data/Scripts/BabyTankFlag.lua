@@ -1,5 +1,6 @@
 local root = script.parent
 local Rotation = script:GetCustomProperty("rotation")
+local Rotation2 = script:GetCustomProperty("rotation2")
 local pole = script:GetCustomProperty("pole"):WaitForObject()
 local bundle = script:GetCustomProperty("bundle"):WaitForObject()
 local FlagRoot = script:GetCustomProperty("FlagRoot"):WaitForObject()
@@ -16,13 +17,16 @@ local SFX_flag2 = script:GetCustomProperty("SFX_flag2"):WaitForObject()
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
 --on player death
+        Task.Wait(1)
         pole.visibility = Visibility.FORCE_ON
         bundle.visibility = Visibility.FORCE_ON
         local door = root:FindDescendantByName("door")
+        local door2 = root:FindDescendantByName("door2")
         SFX_door1:Play()
         SFX_door2:Play()
         SFX_door3:Play()
         Ease3D.EaseRotation(door, Rotation, 0.8, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
+        Ease3D.EaseRotation(door2, Rotation2, 0.8, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
         Task.Wait(0.5)
         SFX_pole1:Play()
         Ease3D.EasePosition(pole, Vector3.New(0, 0, 0), 0.8, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)

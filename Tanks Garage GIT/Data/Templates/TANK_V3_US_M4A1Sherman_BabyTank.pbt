@@ -294,7 +294,7 @@ Assets {
           Overrides {
             Name: "cs:DeadTank"
             AssetReference {
-              Id: 10433149572241240872
+              Id: 1770258487050852156
             }
           }
           Overrides {
