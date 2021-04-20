@@ -66,6 +66,28 @@ function PurchasePremiumTank(player, tankId)
 
 end
 
+function ConvertToFreeXP(player, xpTankString)
+
+	local totalXP = 0
+	
+	for s in string.gmatch(xpTankString, "([^:]+)") do
+		print("Tank with RP: " .. s)
+		totalXP = totalXP + player:GetResource(UTIL_API.GetTankRPString(tonumber(s)))
+		player:SetResource(UTIL_API.GetTankRPString(tonumber(s)), 0)
+	end
+	
+	local cost = math.ceil(totalXP/100)
+	
+	if cost > player:GetResource(CONSTANTS_API.GOLD) then
+		warn("ERROR: cannot afford conversion for Free RP")
+		return
+	end
+	
+	player:AddResource(CONSTANTS_API.FREERP, totalXP)
+	player:RemoveResource(CONSTANTS_API.GOLD, tonumber(cost))
+	
+end
+
 function OnJoined(player)
 	
 	player.perkChangedEvent:Connect(CheckPerks)
@@ -74,4 +96,4 @@ end
 
 Events.Connect("SET_DAILY_CHALLENGES", OnJoined)
 Events.ConnectForPlayer("PurchasePremTank", PurchasePremiumTank)
-
+Events.ConnectForPlayer("ConvertXP", ConvertToFreeXP)

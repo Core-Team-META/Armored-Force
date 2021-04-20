@@ -5002,7 +5002,7 @@ Objects {
       }
     }
     Text {
-      Label: " [     ]  XP to [  ] Free XP"
+      Label: " Convert [     ]  XP"
       Color {
         R: 1
         G: 1
@@ -6628,7 +6628,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 30
+      Size: 25
       Justification {
         Value: "mc:etextjustify:left"
       }
