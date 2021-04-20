@@ -122,9 +122,9 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 30
+            Size: 20
             Justification {
-              Value: "mc:etextjustify:left"
+              Value: "mc:etextjustify:right"
             }
             AutoWrapText: true
             Font {
@@ -176,18 +176,22 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 170
-          Height: 85
+          Width: 65
+          Height: 60
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
           Button {
+            Label: "[    ]"
             FontColor {
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
-            FontSize: 20
+            FontSize: 22
             ButtonColor {
               R: 0.289999962
               G: 0.149801314
@@ -222,7 +226,7 @@ Assets {
               Value: "mc:etextjustify:center"
             }
             VerticalJustification {
-              Value: "mc:everticaljustification:center"
+              Value: "mc:everticaljustification:top"
             }
           }
           AnchorLayout {
