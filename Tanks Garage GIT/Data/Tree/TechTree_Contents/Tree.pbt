@@ -1526,7 +1526,7 @@ Objects {
     }
     Overrides {
       Name: "cs:PurchaseCost"
-      Int: 50000
+      Int: 1000
     }
     Overrides {
       Name: "cs:WeaponResearchCost"
@@ -4470,7 +4470,7 @@ Objects {
     }
     Overrides {
       Name: "cs:PurchaseCost"
-      Int: 10000
+      Int: 1000
     }
     Overrides {
       Name: "cs:WeaponResearchCost"
@@ -4614,7 +4614,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
-      String: "T34 Heavy"
+      String: "M6A1 Heavy"
     }
     Overrides {
       Name: "cs:ID"
@@ -4650,7 +4650,7 @@ Objects {
     }
     Overrides {
       Name: "cs:PurchaseCost"
-      Int: 10000
+      Int: 1000
     }
     Overrides {
       Name: "cs:WeaponResearchCost"

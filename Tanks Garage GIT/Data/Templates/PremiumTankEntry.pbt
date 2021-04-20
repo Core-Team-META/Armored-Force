@@ -18,11 +18,18 @@ Assets {
         ParentId: 2602029246336914417
         ChildIds: 5415621001218322173
         ChildIds: 3917871515567828030
+        ChildIds: 14328103320820479850
         UnregisteredParameters {
           Overrides {
             Name: "cs:TankText"
             ObjectReference {
               SubObjectId: 5415621001218322173
+            }
+          }
+          Overrides {
+            Name: "cs:CostText"
+            ObjectReference {
+              SubObjectId: 14328103320820479850
             }
           }
           Overrides {
@@ -46,7 +53,7 @@ Assets {
         }
         Control {
           Width: 200
-          Height: 200
+          Height: 180
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -107,8 +114,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 290
+          Width: 220
           Height: 100
+          UIY: -35
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -122,7 +130,7 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 30
+            Size: 20
             Justification {
               Value: "mc:etextjustify:left"
             }
@@ -176,7 +184,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 260
+          Width: 160
           Height: 85
           RenderTransformPivot {
             Anchor {
@@ -184,7 +192,11 @@ Assets {
             }
           }
           Button {
+            Label: "Purchase"
             FontColor {
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             FontSize: 20
@@ -234,6 +246,76 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middleleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14328103320820479850
+        Name: "UI Text Box"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8378585061096510506
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 220
+          Height: 100
+          UIY: 50
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "Gold"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 20
+            Justification {
+              Value: "mc:etextjustify:left"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 841534158063459245
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:center"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
               }
             }
           }
