@@ -515,6 +515,11 @@ function UpgradeTank()
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 				if(tank.id == tankDetails.id) then
 					tank.purchased = true
+					if(tankDetails.currency == Constants_API.GOLD) then
+						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					end
 				end
 			end
 			CloseTechTreeModal()		

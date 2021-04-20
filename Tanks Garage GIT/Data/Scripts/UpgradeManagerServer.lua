@@ -14,8 +14,8 @@ function PurchaseTank(player, id, currency)
 		if(v:GetCustomProperty("ID") == id) then
 			print("DEBUG: Found match")
 			local cost = v:GetCustomProperty("PurchaseCost")
-			local currency = player:GetResource(currency)
-			if(currency < cost) then return BroadcastEventResultCode.FAILURE end
+			local currencyAmount = player:GetResource(currency)
+			if(currencyAmount < cost) then return BroadcastEventResultCode.FAILURE end
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
@@ -24,9 +24,11 @@ function PurchaseTank(player, id, currency)
 					player:RemoveResource(currency, cost)
 					-- If the tank is a premium tank, set all upgrades to owned
 					if(currency == "Gold") then
+						print("Premium tank. All upgrades purchased.")
 						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+						print("Premium tank. All upgrades purchased.")
 					end
 					return BroadcastEventResultCode.SUCCESS															
 				end
