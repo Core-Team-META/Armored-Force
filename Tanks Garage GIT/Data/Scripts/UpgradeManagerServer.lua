@@ -114,7 +114,7 @@ local tank = {}
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
 					print("DEBUG: Owned tank found")
-					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.Researched
+					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
 					if(useFreeRP) then
 						player:RemoveResource(Constants_API.FREERP, cost)
 					else
