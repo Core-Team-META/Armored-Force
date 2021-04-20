@@ -127,6 +127,46 @@ commands = {
         adminOnly = false
     },
     
+    ["/gold"] = {
+        OnCommandCalledClient = function (player, message)
+        
+            local resourceFound = nil
+        	local number = nil
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+        		print("Section " .. section)
+        		number = tonumber(section)
+        	
+        		if number then
+        		        		
+    				resourceFound = section
+    				        				
+    				Chat.LocalMessage("Setting Gold to " .. tostring(number))
+        		
+        		end
+        	
+        	end      	
+        end,
+        OnCommandCalledServer = function (player, message)
+        
+        	local resourceFound = nil
+        	local number = nil
+        	
+        	for section in (message.." "):gmatch("(.-) ") do        	
+        		number = tonumber(section)     
+        		print("Number " .. tostring(number))
+        		if(number) then
+	        		player:SetResource("Gold", number)        	
+        		end
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Set the Gold value.",
+        requireMessage = false,
+        adminOnly = false
+    },
+    
     ["/sl"] = {
         OnCommandCalledClient = function (player, message)
         	
