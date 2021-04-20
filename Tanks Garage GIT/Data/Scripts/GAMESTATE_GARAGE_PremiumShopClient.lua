@@ -12,8 +12,11 @@ local goldAmountText = script:GetCustomProperty("GoldAmountText"):WaitForObject(
 local freeXPAmountText = script:GetCustomProperty("FreeXPAmountText"):WaitForObject()
 local subscriptionTitle = script:GetCustomProperty("SubscriptionTitle"):WaitForObject()
 local premiumSubscription = script:GetCustomProperty("PremiumSubscription")
+local techTreeContents = script:GetCustomProperty("TechTreeContents"):WaitForObject()
 
 local thisComponent = "SHOP_MENU"
+
+local premiumTanksInfo = {}
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -77,6 +80,45 @@ function CheckPerks(player, perk)
 
 end
 
+function AttemptPremiumPurchase(button)
+	if localPlayer:GetResource(CONSTANTS_API.GOLD) >= premiumTanksInfo[button].cost then
+		Events.BroadcastToserver("PurchasePremTank", premiumTanksInfo[button].id)
+	end
+end
+
+function PopulatePremiumTanks()
+
+	local entryCount = 0
+	
+	for x, t in ipairs(techTreeContents:GetChildren()) do
+		if t:GetCustomProperty("PurchaseCurrencyName") == "Gold" then
+			local premiumEntry = World.SpawnAsset(premiumTankEntry, {parent = premiumTanks:GetCustomProperty("ScrollPanel"):WaitForObject()})
+			local button = premiumEntry:GetCustomProperty("TankPurchaseButton"):WaitForObject()
+
+			premiumEntry.y = entryCount * (premiumEntry.height + 10)
+			premiumEntry:GetCustomProperty("TankText"):WaitForObject().text = t:GetCustomProperty("Name")
+			premiumEntry:GetCustomProperty("CostText"):WaitForObject().text = "Gold: " .. tostring(t:GetCustomProperty("PurchaseCost"))
+			button.text = "PURCHASE"
+			
+			premiumTanksInfo[button] = {}
+			premiumTanksInfo[button].cost = tonumber(t:GetCustomProperty("PurchaseCost"))
+			premiumTanksInfo[button].id = t:GetCustomProperty("ID")
+			
+			button.clickedEvent:Connect(AttemptPremiumPurchase)
+			
+			for y, p in ipairs(localPlayer.clientUserData.techTreeProgress) do
+				if p.id == t:GetCustomProperty("ID") and p.purchased then
+					button.isInterractable = false
+					button.text = "PURCHASED"
+				end
+			end
+			
+			entryCount = entryCount + 1
+		end
+	end
+
+end
+
 function InitializeComponent()
 
 	shopViewUI.visibility = Visibility.INHERIT
@@ -92,7 +134,7 @@ function InitializeComponent()
 		end
 		
 	end
-	
+		
 	localPlayer.perkChangedEvent:Connect(CheckPerks)
 	localPlayer.resourceChangedEvent:Connect(OnResourceChanged)
 
@@ -102,3 +144,4 @@ InitializeComponent()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
+Events.Connect("TankClientDataSet", PopulatePremiumTanks)
