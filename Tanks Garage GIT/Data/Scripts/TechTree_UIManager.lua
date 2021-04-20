@@ -497,17 +497,18 @@ function OpenDetails(button)
 end
 
 function UpgradeTank()
+	print(tankDetails.currency)
 	if(tankDetails.purchasedTank) then
 		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
 		-- TODO: Play SFX/Message
 		UI.PrintToScreen(tankDetails.name .. " equipped.")
 	elseif(tankDetails.researchedTank) then
-		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-		if(silver < tankDetails.tankPurchaseCost) then
+		local currency = LOCAL_PLAYER:GetResource(tankDetails.currency)
+		if(currency < tankDetails.tankPurchaseCost) then
 			-- DEBUG
-			ShowNotEnoughSilverMessage()			
+			ShowNotEnoughCurrencyMessage()			
 		else
-			Events.BroadcastToServer("PurchaseTank", tankDetails.id)
+			Events.BroadcastToServer("PurchaseTank", tankDetails.id, tankDetails.currency)
 			-- TODO: Play SFX/Message
 			UI.PrintToScreen(tankDetails.name .. " purchased.")
 			PopulateCurrencyUI()
@@ -562,7 +563,7 @@ function UpgradeWeapon()
 		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 		if(silver < tankDetails.weaponPurchaseCost) then
 			-- DEBUG
-			ShowNotEnoughSilverMessage()			
+			ShowNotEnoughCurrencyMessage()			
 		else
 			Events.BroadcastToServer("PurchaseWeapon", tankDetails.id)
 			-- TODO: Play SFX/Message
@@ -615,7 +616,7 @@ function UpgradeArmor()
 		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 		if(silver < tankDetails.armorPurchaseCost) then
 			-- DEBUG
-			ShowNotEnoughSilverMessage()			
+			ShowNotEnoughCurrencyMessage()			
 		else
 			Events.BroadcastToServer("PurchaseArmor", tankDetails.id)
 			-- TODO: Play SFX/Message
@@ -667,7 +668,7 @@ function UpgradeEngine()
 		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 		if(silver < tankDetails.enginePurchaseCost) then
 			-- DEBUG
-			ShowNotEnoughSilverMessage()			
+			ShowNotEnoughCurrencyMessage()			
 		else
 			Events.BroadcastToServer("PurchaseEngine", tankDetails.id)
 			-- TODO: Play SFX/Message
@@ -713,9 +714,9 @@ function UpgradeEngine()
 	end
 end
 
-function ShowNotEnoughSilverMessage()
+function ShowNotEnoughCurrencyMessage()
 	-- TODO: Show a better message to the user
-	UI.PrintToScreen("You do not have enough Silver.")
+	UI.PrintToScreen("You do not have enough " .. tankDetails.currency .. ".")
 end
 
 function ShowNotEnoughRPMessage()
@@ -782,12 +783,13 @@ function PopulateDetailsModal(tank)
 			tankDetails.purchasedTank = t.purchased
 			tankDetails.weaponProgress = t.weaponProgress
 			tankDetails.armorProgress = t.armorProgress
-			tankDetails.engineProgress = t.engineProgress			
+			tankDetails.engineProgress = t.engineProgress
 		end
 	end
 	
 	tankDetails.tankResearchCost = tank:GetCustomProperty("ResearchCost")
 	tankDetails.tankPurchaseCost = tank:GetCustomProperty("PurchaseCost")
+	tankDetails.currency = tank:GetCustomProperty("PurchaseCurrencyName")
 	
 	if(tankDetails.purchasedTank) then		
 		upgradeTank.text = "Equip"
@@ -929,7 +931,8 @@ function ResetTankDetails()
 		armorResearchCost = 0,
 		armorPurchaseCost = 0,
 		engineResearchCost = 0,
-		enginePurchaseCost = 0	
+		enginePurchaseCost = 0,
+		currency = ""
 	}
 	upgradeWeapon.visibility = Visibility.FORCE_OFF
 	upgradeArmor.visibility = Visibility.FORCE_OFF

@@ -8,21 +8,27 @@ local techTreeContents = script:GetCustomProperty("TechTree_Contents"):WaitForOb
 local TANK_LIST = techTreeContents:GetChildren()
 --
 
-function PurchaseTank(player, id)
+function PurchaseTank(player, id, currency)
 	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
 		if(v:GetCustomProperty("ID") == id) then
 			print("DEBUG: Found match")
 			local cost = v:GetCustomProperty("PurchaseCost")
-			local silver = player:GetResource(Constants_API.SILVER)
-			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
+			local currency = player:GetResource(currency)
+			if(currency < cost) then return BroadcastEventResultCode.FAILURE end
 			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
 					print("DEBUG: Owned tank found")
 					tank.purchased = true
-					player:RemoveResource(Constants_API.SILVER, cost)
-					return BroadcastEventResultCode.SUCCESS
+					player:RemoveResource(currency, cost)
+					-- If the tank is a premium tank, set all upgrades to owned
+					if(currency == "Gold") then
+						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					end
+					return BroadcastEventResultCode.SUCCESS															
 				end
 			end
 			return BroadcastEventResultCode.FAILURE
