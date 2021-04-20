@@ -8228,7 +8228,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -8295,7 +8295,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -8362,7 +8362,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -8428,7 +8428,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -8548,7 +8548,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -24398,7 +24398,6 @@ Assets {
           Volume: 2
           Falloff: 3000
           Radius: 1000
-          EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
