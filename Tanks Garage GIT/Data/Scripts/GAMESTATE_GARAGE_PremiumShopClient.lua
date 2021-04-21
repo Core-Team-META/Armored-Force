@@ -2,8 +2,6 @@ local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local shopViewUI = script:GetCustomProperty("ShopViewUI"):WaitForObject()
-local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
-
 local premiumTanks = script:GetCustomProperty("PremiumTanks"):WaitForObject()
 local premiumTankEntry = script:GetCustomProperty("PremiumTankEntry")
 local convertFreeXP = script:GetCustomProperty("ConvertFreeXP"):WaitForObject()
@@ -55,16 +53,6 @@ function DisableThisComponent()
 	
 	shopViewUI.isEnabled = false
 	
-end
-
-function OnOtherComponentButtonPressed(button)
-
-	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToComponent"))
-	
-	Events.Broadcast("ENABLE_GARAGE_COMPONENT", button:GetCustomProperty("SendToComponent"))
-	
-	DisableThisComponent()
-
 end
 
 function OnResourceChanged(player, resource, amount)
@@ -287,12 +275,6 @@ function InitializeComponent()
 	shopViewUI.visibility = Visibility.INHERIT
 	
 	shopViewUI.isEnabled = false
-	
-	for _, child in ipairs(otherGarageButtons:GetChildren()) do
-		if child:IsA("UIButton") then
-			child.clickedEvent:Connect(OnOtherComponentButtonPressed)
-		end
-	end
 		
 	localPlayer.perkChangedEvent:Connect(CheckPerks)
 	localPlayer.resourceChangedEvent:Connect(OnResourceChanged)
