@@ -21,11 +21,13 @@ local Ease3D = require(script:GetCustomProperty("Ease3D"))
         pole.visibility = Visibility.FORCE_ON
         bundle.visibility = Visibility.FORCE_ON
         local door = root:FindDescendantByName("door")
+        local door1 = root:FindDescendantByName("door1")
         local door2 = root:FindDescendantByName("door2")
         SFX_door1:Play()
         SFX_door2:Play()
         SFX_door3:Play()
         Ease3D.EaseRotation(door, Rotation, 0.8, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
+        Ease3D.EaseRotation(door1, Rotation, 0.8, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
         Ease3D.EaseRotation(door2, Rotation2, 0.8, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
         Task.Wait(0.5)
         SFX_pole1:Play()
