@@ -740,14 +740,33 @@ function GetPrerequisiteRPValues(id)
 			if(tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
 				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
 				local preReq1Tank = GetTankData(preReq1Id)
-				prerequisite1 = {id = preReq1Tank.id, name = preReq1Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq1Tank.id)))}
-				table.insert(prerequisites, prerequisite1)
+				-- Check to make sure the pre-req has at least one completed upgrade
+				for i, preReq1Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+					if(tostring(preReq1Progress.id) == tostring(preReq1Id)) then
+						if(tonumber(preReq1Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
+						or tonumber(preReq1Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
+						or tonumber(preReq1Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+							prerequisite1 = {id = preReq1Tank.id, name = preReq1Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq1Tank.id)))}
+							table.insert(prerequisites, prerequisite1)
+						end
+					end
+				end
 			end
 			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
 				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
 				local preReq2Tank = GetTankData(preReq2Id)
-				prerequisite2 = {id = preReq2Tank.id, name = preReq2Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq2Tank.id)))}
-				table.insert(prerequisites, prerequisite2)
+				-- Check to make sure the pre-req has at least one completed upgrade
+				-- Check to make sure the pre-req has at least one completed upgrade
+				for i, preReq2Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+					if(tostring(preReq2Progress.id) == tostring(preReq2Id)) then
+						if(tonumber(preReq2Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
+						or tonumber(preReq2Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
+						or tonumber(preReq2Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+							prerequisite2 = {id = preReq2Tank.id, name = preReq2Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq2Tank.id)))}
+							table.insert(prerequisites, prerequisite2)						
+						end
+					end
+				end				
 			end
 		end
 	end
@@ -895,26 +914,30 @@ function CanTankBeResearched(id)
 						preReq1Tank.engineProgress = t.engineProgress			
 					end
 				end
-	
-				print("Pre req tank name: " .. tostring(preReq1Tank.name))
-				print(preReq1Tank.weaponProgress)
-				print(preReq1Tank.armorProgress)
-				print(preReq1Tank.engineProgress)
-				if(tostring(preReq1Tank.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
-				and tostring(preReq1Tank.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
-				and tostring(preReq1Tank.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
+				
+				if(tostring(preReq1Tank.weaponProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
+				and tostring(preReq1Tank.armorProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
+				and tostring(preReq1Tank.engineProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
 					print("cannot research")
 					canBeResearched = false
+					break
 				end
 			end
+			-- If we can research at this point, then there's no point in checking pre-req 2
+			if(CanTankBeResearched) then return CanTankBeResearched end
+			
 			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
 				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
 				local preReq2Tank = GetTankData(preReq2Id)
-				if(tostring(preReq2Tank.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
-				and tostring(preReq2Tank.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)
-				and tostring(preReq2Tank.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then					canBeResearched = false
+				if(tostring(preReq2Tank.weaponProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
+				and tostring(preReq2Tank.armorProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
+				and tostring(preReq2Tank.engineProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
+					canBeResearched = false
 				end			
 			end
+		else
+			-- Tank has no prereqs, can be researched
+			canBeResearched = true
 		end
 	end
 	return canBeResearched
