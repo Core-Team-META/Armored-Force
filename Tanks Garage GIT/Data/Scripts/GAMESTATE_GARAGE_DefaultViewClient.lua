@@ -32,26 +32,16 @@ local localPlayer = Game.GetLocalPlayer()
 function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
-	
 		if not firstTime then
-			
 			Task.Wait(2)
-			
-		else 
-			
+		else
 			firstTime = false
-			
 		end
 	
 		defaultViewUI.isEnabled = true
-		
-	
 	else
-
 		Task.Wait(0.1)
-	
 		DisableThisComponent()
-		
 	end
 	
 end
@@ -70,26 +60,18 @@ end
 
 function OnOtherComponentButtonPressed(button)
 
-	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToComponent"))
-	
 	Events.Broadcast("ENABLE_GARAGE_COMPONENT", button:GetCustomProperty("SendToComponent"))
 	
 end
 
 function OnBattleButtonPressed(button)
 
-	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToMap"))
-	
 	ReliableEvents.BroadcastToServer("SEND_TO_MAP", button:GetCustomProperty("SendToMap"))
 	
 	for _, child in ipairs(toBattleButtons:GetChildren()) do
-	
 		if child:IsA("UIButton") then
-		
 			child.isInterractable = false
-			
 		end
-		
 	end
 	
 end
@@ -97,37 +79,31 @@ end
 function InitializeComponent()
 
 	loadEquippableTanks.clickedEvent:Connect(LoadEquippableTanks)
-
 	defaultViewUI.visibility = Visibility.INHERIT
-	
 	defaultViewUI.isEnabled = false
 	
 	for _, child in ipairs(otherGarageButtons:GetChildren()) do
-	
 		if child:IsA("UIButton") then
-		
 			child.clickedEvent:Connect(OnOtherComponentButtonPressed)
-			
 		end
-		
 	end
 	
 	for _, child in ipairs(toBattleButtons:GetChildren()) do
-	
 		if child:IsA("UIButton") then
-		
 			child.clickedEvent:Connect(OnBattleButtonPressed)
-			
 		end
-		
 	end
 	
 end
 
 function LoadEquippableTanks()
+
 	EmptyEquippableTankPanel()
+	
 	Task.Wait()
+	
 	local count = 0
+	
 	for i, tank in ipairs(localPlayer.clientUserData.techTreeProgress) do
 	
 		print(tank.name .. " : " .. tostring(tank.purchased))
@@ -141,14 +117,17 @@ function LoadEquippableTanks()
 			count = count + 1
 		end
 	end
+	
 end
 
 function EmptyEquippableTankPanel()
+
 	for i, child in ipairs(equipTankScrollPanel:GetChildren()) do
 		if(Object.IsValid(child)) then
 			child:Destroy()
 		end
 	end
+	
 end
 
 function EquipTank(button)

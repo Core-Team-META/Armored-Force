@@ -1,6 +1,5 @@
 local achievementsViewServer = script:GetCustomProperty("AchievementsViewServer"):WaitForObject()
 local achievementsViewUI = script:GetCustomProperty("AchievementsViewUI"):WaitForObject()
-local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 local dailyChallenges = script:GetCustomProperty("DailyChallenges"):WaitForObject()
 local dailyLogin = script:GetCustomProperty("DailyLogin"):WaitForObject()
 
@@ -52,18 +51,11 @@ end
 function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
-		
 		Task.Wait(2)
-	
 		achievementsViewUI.isEnabled = true
-		
-	
 	else
-	
 		Task.Wait(0.1)
-	
 		DisableThisComponent()
-		
 	end
 	
 end
@@ -72,16 +64,6 @@ function DisableThisComponent()
 	
 	achievementsViewUI.isEnabled = false
 	
-end
-
-function OnOtherComponentButtonPressed(button)
-
-	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToComponent"))
-	
-	Events.Broadcast("ENABLE_GARAGE_COMPONENT", button:GetCustomProperty("SendToComponent"))
-	
-	DisableThisComponent()
-
 end
 
 function OnChallengeInfoChanged(serverScript, property)
@@ -94,7 +76,6 @@ function OnChallengeInfoChanged(serverScript, property)
 			break
 		end
 	end
-		
 
 	if playerDataFound then
 
@@ -102,7 +83,7 @@ function OnChallengeInfoChanged(serverScript, property)
 		
 		localPlayer.clientUserData.LOGIN = string.sub(playerDataFound, string.find(playerDataFound, "-") + 1, playerDataFound.size)
 		
-		print("Login: " .. os.date("%X", localPlayer.clientUserData.LOGIN))
+		--print("Login: " .. os.date("%X", localPlayer.clientUserData.LOGIN))
 				
 		for x, child in ipairs(dailyChallenges:GetChildren()) do
 			local type = localPlayer.clientUserData.CHALLENGES[x].challengeType
@@ -147,21 +128,17 @@ function Tick()
 	end
 
 	if localPlayer.clientUserData.LOGIN and tonumber(localPlayer.clientUserData.LOGIN) - tonumber(os.time()) > 0 then
-	
 		loginText.text = os.date("%X", math.abs(localPlayer.clientUserData.LOGIN - os.time()))
 		
 		if loginButton.isInteractable then
 			loginButton.isInteractable = false
 		end
-		
 	else 
-	
 		loginText.text = "00:00:00"
 		
 		if not loginButton.isInteractable then
 			loginButton.isInteractable = true
 		end
-
 	end
 	
 	Task.Wait(0.1)
@@ -172,13 +149,7 @@ function InitializeComponent()
 
 	achievementsViewUI.visibility = Visibility.INHERIT
 	achievementsViewUI.isEnabled = false
-	
-	for _, child in ipairs(otherGarageButtons:GetChildren()) do
-		if child:IsA("UIButton") then
-			child.clickedEvent:Connect(OnOtherComponentButtonPressed)
-		end
-	end
-	
+		
 	local challengeButton = nil
 	
 	for x, child in ipairs(dailyChallenges:GetChildren()) do

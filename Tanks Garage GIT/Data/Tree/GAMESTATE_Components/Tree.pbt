@@ -1455,7 +1455,6 @@ Objects {
     }
   }
   ParentId: 7583994993298154244
-  ChildIds: 16435890080017040526
   ChildIds: 10148949044572319660
   ChildIds: 7211121367779988079
   Collidable_v2 {
@@ -4101,152 +4100,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16435890080017040526
-  Name: "OtherGarageButtons"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15401294820751075291
-  ChildIds: 16355426264492516972
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    UIX: 30
-    UIY: 30
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Panel {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 16355426264492516972
-  Name: "ReturnToDefaultButton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16435890080017040526
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SendToComponent"
-      String: "DEFAULT_MENU"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "BACK"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 0.409999967
-        G: 0.138476819
-        A: 1
-      }
-      HoveredColor {
-        R: 0.87
-        G: 0.276556313
-        A: 1
-      }
-      PressedColor {
-        R: 0.120000005
-        G: 0.050066229
-        A: 1
-      }
-      DisabledColor {
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 7571315481988523865
   Name: "GAMESTATE_GARAGE_AchievementsViewClient"
   Transform {
@@ -4272,12 +4125,6 @@ Objects {
       Name: "cs:AchievementsViewUI"
       ObjectReference {
         SelfId: 15401294820751075291
-      }
-    }
-    Overrides {
-      Name: "cs:OtherGarageButtons"
-      ObjectReference {
-        SelfId: 16435890080017040526
       }
     }
     Overrides {
@@ -4605,7 +4452,6 @@ Objects {
     }
   }
   ParentId: 14824784533466871774
-  ChildIds: 15550793369046258650
   ChildIds: 17157547289767870909
   ChildIds: 976652543416076843
   ChildIds: 2667450371549691174
@@ -6927,152 +6773,6 @@ Objects {
   }
 }
 Objects {
-  Id: 15550793369046258650
-  Name: "OtherGarageButtons"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2102117450491797609
-  ChildIds: 12335875239613671935
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    UIX: 30
-    UIY: 30
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Panel {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12335875239613671935
-  Name: "ReturnToDefaultButton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15550793369046258650
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SendToComponent"
-      String: "DEFAULT_MENU"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "BACK"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 0.409999967
-        G: 0.138476819
-        A: 1
-      }
-      HoveredColor {
-        R: 0.87
-        G: 0.276556313
-        A: 1
-      }
-      PressedColor {
-        R: 0.120000005
-        G: 0.050066229
-        A: 1
-      }
-      DisabledColor {
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 10378382016004222299
   Name: "GAMESTATE_GARAGE_PremiumShopClient"
   Transform {
@@ -7104,12 +6804,6 @@ Objects {
       Name: "cs:ShopViewUI"
       ObjectReference {
         SelfId: 2102117450491797609
-      }
-    }
-    Overrides {
-      Name: "cs:OtherGarageButtons"
-      ObjectReference {
-        SelfId: 15550793369046258650
       }
     }
     Overrides {
@@ -8757,10 +8451,8 @@ Objects {
   }
   ParentId: 15177659444916868221
   ChildIds: 6386836946034972835
-  ChildIds: 1138976157500878290
   ChildIds: 17209884673843944142
   ChildIds: 13530425638157431226
-  ChildIds: 187754549796396910
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8790,103 +8482,6 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:bottomcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 187754549796396910
-  Name: "GoToAchievementsButton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3422279684606684169
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SendToComponent"
-      String: "ACHIEVEMENTS_MENU"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    UIX: 220
-    UIY: 75
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "ACHIEVEMENTS"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 0.409999967
-        G: 0.138476819
-        A: 1
-      }
-      HoveredColor {
-        R: 0.87
-        G: 0.276556313
-        A: 1
-      }
-      PressedColor {
-        R: 0.120000005
-        G: 0.050066229
-        A: 1
-      }
-      DisabledColor {
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -9076,103 +8671,6 @@ Objects {
       SelfAnchor {
         Anchor {
           Value: "mc:euianchor:topcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 1138976157500878290
-  Name: "GoToShopButton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3422279684606684169
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SendToComponent"
-      String: "SHOP_MENU"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    UIX: -220
-    UIY: 75
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "SHOP"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 0.409999967
-        G: 0.138476819
-        A: 1
-      }
-      HoveredColor {
-        R: 0.87
-        G: 0.276556313
-        A: 1
-      }
-      PressedColor {
-        R: 0.120000005
-        G: 0.050066229
-        A: 1
-      }
-      DisabledColor {
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
         }
       }
       TargetAnchor {
@@ -9804,6 +9302,18 @@ Objects {
       Name: "cs:GAMESTATE_MainManagerServer"
       ObjectReference {
         SelfId: 16752799134896046516
+      }
+    }
+    Overrides {
+      Name: "cs:MainHUD"
+      ObjectReference {
+        SelfId: 15186286892296639228
+      }
+    }
+    Overrides {
+      Name: "cs:DisplayHandler"
+      ObjectReference {
+        SelfId: 13955950796283986913
       }
     }
   }
