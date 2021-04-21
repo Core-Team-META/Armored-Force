@@ -548,6 +548,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14229011836246835513
+  Name: "Game Portal"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_webportal"
+  }
+}
+Assets {
   Id: 14211527857426905558
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
