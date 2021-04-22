@@ -147,7 +147,7 @@ end
 function Tick()
 
 	for x, player in ipairs(Game.GetPlayers()) do
-		if not Object.IsValid(player) and playerChallengeCheck[player.id] then
+		if Object.IsValid(player) and playerChallengeCheck[player.id] then
 			for i = 1, 3 do
 				if CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) 
 					and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
@@ -182,7 +182,8 @@ function ClaimReward(player, challengeNumber)
 		player.serverUserData.CHALLENGE[i].progress = 0
 		player.serverUserData.CHALLENGE[i].dueDate = 
 		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
-					
+		
+		AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
 		--[[
 		local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
 		print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
