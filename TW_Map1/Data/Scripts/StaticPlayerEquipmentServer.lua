@@ -20,10 +20,12 @@ Gives a specific equipment to every player on spawn, and handles destroying them
 replaces each equipment on respawn to reset the state.
 --]]
 
-local gsm = World.FindObjectByName("GAMESTATE_MainGameStateManagerServer")
+-- API
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
+local MAIN_MANAGER_SERVER = script:GetCustomProperty("MainManagerServer"):WaitForObject()
 
 -- User exposed properties
 local EQUIPMENT_TEMPLATE = COMPONENT_ROOT:GetCustomProperty("EquipmentTemplate")
@@ -82,6 +84,66 @@ local tankBurning = false
 
 local selectedEquipment = {}
 
+function GetEquippedTankTemplate(player, id)
+	-- TODO: This is incomplete
+	local equippedTankId = id
+	if(equippedTankId == 1) then
+		return EQUIPMENT_TEMPLATE19
+	elseif(equippedTankId == 2) then
+		return EQUIPMENT_TEMPLATE20
+	elseif(equippedTankId == 3) then
+		return EQUIPMENT_TEMPLATE3
+	elseif(equippedTankId == 4) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 5) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 6) then
+		return EQUIPMENT_TEMPLATE26
+	elseif(equippedTankId == 7) then
+		return EQUIPMENT_TEMPLATE7
+	elseif(equippedTankId == 8) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 9) then
+		return EQUIPMENT_TEMPLATE21
+	elseif(equippedTankId == 10) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 11) then
+		return EQUIPMENT_TEMPLATE30
+	elseif(equippedTankId == 12) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 13) then
+		return EQUIPMENT_TEMPLATE6
+	elseif(equippedTankId == 14) then
+		return EQUIPMENT_TEMPLATE28
+	elseif(equippedTankId == 15) then
+		return EQUIPMENT_TEMPLATE6
+	
+	elseif(equippedTankId == 18) then
+		return EQUIPMENT_TEMPLATE20
+	else
+		print("Returning default")
+		return EQUIPMENT_TEMPLATE6
+	end
+end
+
+function GetPlayer(playerId)
+	
+	local playerList = Game.GetPlayers()
+	
+	for _, player in pairs(playerList) do
+	
+		if player.id == playerId then
+		
+			return player 
+			
+		end
+		
+	end
+	
+	return nil
+
+end
+
 -- bool AppliesToPlayersTeam(Player)
 -- Returns whether this player should get equipment given the team setting
 function AppliesToPlayersTeam(player)
@@ -96,15 +158,7 @@ end
 -- Gives the referenced equipment to the player
 function GivePlayerEquipment(player)
 
-	if not selectedEquipment[player] then
-	
-		equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE)
-		
-	else 
-	
-		equipment[player] = World.SpawnAsset(selectedEquipment[player])
-	
-	end
+	equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player, player:GetResource(CONSTANTS_API.GetEquippedTankResource())))
 	
 	assert(equipment[player]:IsA("Equipment"))
 	Task.Wait(0.1)
@@ -117,7 +171,7 @@ function RemovePlayerEquipment(player)
 	if equipment[player] and equipment[player]:IsValid() then
 		equipment[player]:Unequip()
 		
-		Task.Wait(0.5)
+		Task.Wait(0.1)
 
 		-- Have to check IsValid() again, because unequip may have destroyed this equipment
 		if equipment[player]:IsValid() then			
@@ -128,14 +182,58 @@ function RemovePlayerEquipment(player)
 	end
 end
 
+function ChangeEquippedTank(player, id)
+	
+	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(id))
+
+	RemovePlayerEquipment(player)
+	GivePlayerEquipment(player)
+end
+
+-- nil OnPlayerRespawned(Player)
+-- Replace the equipment if ReplaceOnEachRespawn
+function OnPlayerRespawned(player)
+	
+	RemovePlayerEquipment(player)
+	
+	if MAIN_MANAGER_SERVER:GetCustomProperty("GameState") ~= "VICTORY_STATE" then
+	
+		GivePlayerEquipment(player)
+		
+	else 
+	
+		player:SetVisibility(true)
+		player.animationStance = "unarmed_stance"
+		
+	end
+		
+end
+
+-- nil OnPlayerJoined(Player)
+-- Gives original equipment
+function OnPlayerJoined(player)
+	--player.bindingPressedEvent:Connect(OnBindingPressed)
+
+	if REPLACE_ON_EACH_RESPAWN then
+		player.respawnedEvent:Connect(OnPlayerRespawned)
+	end
+
+end
+
+-- nil OnPlayerLeft(Player)
+-- Removes equipment
+function OnPlayerLeft(player)
+	RemovePlayerEquipment(player)
+end
+
 --On binding press, switch tank
 function OnBindingPressed(player,bindingPressed)
 
- 	if gsm:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
+--[[  	if gsm:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
 	
 		return
 		
-	end
+	end ]]
 	--burned tank
 	if bindingPressed == "ability_extra_40" and tankBurning == false then
 		local BurnedTank = equipment[player]:GetCustomProperty("BurnedTank")
@@ -480,83 +578,8 @@ function OnBindingPressed(player,bindingPressed)
 		end
 end
 
--- nil OnPlayerRespawned(Player)
--- Replace the equipment if ReplaceOnEachRespawn
-function OnPlayerRespawned(player)
-	RemovePlayerEquipment(player)
-	
-	if gsm:GetCustomProperty("GameState") == "VICTORYSTATE" then
-	
-		player:SetVisibility(true)
-	
-		return
-		
-	end
-	
-	GivePlayerEquipment(player)
-
-end
-
--- nil OnPlayerJoined(Player)
--- Gives original equipment
-function OnPlayerJoined(player)
-	player.bindingPressedEvent:Connect(OnBindingPressed)
-
-	if TEAM ~= 0 then
-		playerTeams[player] = player.team
-	end
-
-	if REPLACE_ON_EACH_RESPAWN then
-		player.respawnedEvent:Connect(OnPlayerRespawned)
-	end
-
-	if AppliesToPlayersTeam(player) then
-		GivePlayerEquipment(player)
-	end
-end
-
--- nil OnPlayerLeft(Player)
--- Removes equipment
-function OnPlayerLeft(player)
-	RemovePlayerEquipment(player)
-end
-
--- nil OnPlayerTeamChanged(Player)
--- Handles reassinging equipment if the player changes teams
---[[
-function OnPlayerTeamChanged(player)
-	RemovePlayerEquipment(player)
-	
-	if gsm:GetCustomProperty("GameState") == "VICTORYSTATE" then
-	
-		player:SetVisibility(true)
-	
-		return
-		
-	end
-
-	if AppliesToPlayersTeam(player) then
-		GivePlayerEquipment(player)
-	end
-end
-]]
--- nil Tick(float)
--- Handles players changing teams
---[[
-function Tick(deltaTime)
-	if TEAM ~= 0 then
-		for _, player in pairs(Game.GetPlayers()) do
-			local team = player.team
-
-			if team ~= playerTeams[player] then
-				OnPlayerTeamChanged(player)
-
-				playerTeams[player] = team
-			end
-		end
-	end
-end
-]]
 -- Initialize
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, id)
+Events.Connect("SET_EQUIPPED_TANK", ChangeEquippedTank, player, id)
