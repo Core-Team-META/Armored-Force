@@ -329,6 +329,7 @@ Assets {
               Mass: 500
               LinearDamping: 1
             }
+            BoundsScale: 1
           }
         }
       }
@@ -482,6 +483,7 @@ Assets {
               Mass: 500
               LinearDamping: 1
             }
+            BoundsScale: 1
           }
         }
       }
@@ -636,6 +638,7 @@ Assets {
               Mass: 500
               LinearDamping: 1
             }
+            BoundsScale: 1
           }
         }
       }
@@ -790,6 +793,7 @@ Assets {
               Mass: 500
               LinearDamping: 1
             }
+            BoundsScale: 1
           }
         }
       }
@@ -944,6 +948,7 @@ Assets {
               Mass: 500
               LinearDamping: 1
             }
+            BoundsScale: 1
           }
         }
       }
@@ -1098,6 +1103,7 @@ Assets {
               Mass: 500
               LinearDamping: 1
             }
+            BoundsScale: 1
           }
         }
       }
@@ -1237,5 +1243,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 83
+  SerializationVersion: 84
 }

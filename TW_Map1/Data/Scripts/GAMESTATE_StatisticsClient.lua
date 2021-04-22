@@ -157,9 +157,13 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "STATSSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") == "LOBBY_STATE" then
 	
 		winner = -1
+	
+		return
+	
+	elseif mainGameStateManager:GetCustomProperty("GameState") ~= "STATS_STATE" then
 	
 		victoryAndEarningsUI.visibility = Visibility.FORCE_OFF
 		
@@ -249,6 +253,8 @@ function ShowStatisticsAnimation()
 	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
 	
 	CountThisTextUp(totalDamageAmountText, localPlayer:GetResource("TankDamage"), "", true)
+	
+	Events.Broadcast("SHOW_NEMESIS")
 
 end
 
