@@ -118,6 +118,7 @@ Assets {
               IsEnabled: true
               Mass: 500
             }
+            BoundsScale: 1
           }
         }
       }
@@ -238,5 +239,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 83
+  SerializationVersion: 84
 }
