@@ -140,6 +140,12 @@ API.playerRestoredEvent = {
 --	table CalculateWinners(string, string)
 --	Returns a sorted table of all players dependant on the WINNER_SORT_TYPE
 function API.CalculateWinners(winnerSortType, winnerSortResource)
+
+	while _G["GameWinner"] < 0 do
+	
+		Task.Wait()
+		
+	end
 	
 	local winners = Game.GetPlayers({includeTeams = _G["GameWinner"]})
 
@@ -178,6 +184,7 @@ function API.TeleportWinners( player, spawnObject, overrideCamera)
 		player:SetWorldRotation(spawnRotation)
 		
 		Task.Wait(.1)
+		if not Object.IsValid(player) then return end
 
 		player:ResetVelocity()
 		player:SetWorldPosition(spawnPosition)
@@ -188,16 +195,17 @@ function API.TeleportWinners( player, spawnObject, overrideCamera)
 		end
 
 		Task.Wait()
+		if not Object.IsValid(player) then return end
 		
 		player.animationStance = "unarmed_stance"
 		
 		for i=1,5 do
 			Task.Wait(.1)
+			if not Object.IsValid(player) then return end
 
 			player:ResetVelocity()
 			player:SetWorldPosition(spawnPosition)
-			player:SetWorldRotation(spawnRotation)	
-			
+			player:SetWorldRotation(spawnRotation)
 		end
 end
 
@@ -206,20 +214,10 @@ end
 --	nil API.OnPlayerTeleported(Player, CoreObject, table, float, CoreObject, bool)
 --	Callback, overwriteable, called when a player is spawned
 function API.OnPlayerTeleported(victoryScreen, player,  topThreePlayerStats, duration, respawnOnDeactivate)
-	for _, equipment in pairs(player:GetEquipment()) do -- remove all equipment
-		equipment:Destroy()
-	end
-
 	
-	local data = {
-		originalMovementControlMode = player.movementControlMode,
-		originalLookControlMode = player.lookControlMode
-	}
-
 	if(_G["HeadPlayerSetting"] ) then
 		_G["HeadPlayerSetting"]:ApplyToPlayer(player)
 	end
-
 	
 	-- prevent player from moving or turning
 	player.movementControlMode = MovementControlMode.NONE
@@ -227,17 +225,18 @@ function API.OnPlayerTeleported(victoryScreen, player,  topThreePlayerStats, dur
 	player:Respawn()
 	
 	Task.Wait(.1)
-
-	for _, equipment in pairs(player:GetEquipment()) do -- remove all equipment
-		equipment:Destroy()
-	end
-
+	if not Object.IsValid(player) then return end
+	
+	player.movementControlMode = MovementControlMode.NONE
+	player.lookControlMode = LookControlMode.NONE
 	Task.Wait()
 
 	if(duration > 0) then
 		tasks[player] = Task.Spawn(function()
-			API.OnPlayerRestored(victoryScreen, player, data)
-			API.playerRestoredEvent:_Fire(player, data)
+			if Object.IsValid(player) then
+				API.OnPlayerRestored(victoryScreen, player)
+				API.playerRestoredEvent:_Fire(player)
+			end
 		end, duration)
 	end
 
@@ -247,17 +246,14 @@ end
 
 --	nil API.OnPlayerRestored(CoreObject, Player, table)
 --	Restores original settings passed in the data table when a player on the victory Screen is sent back
-function API.OnPlayerRestored(victoryScreen, player, data)
+function API.OnPlayerRestored(victoryScreen, player)
 	local respawnOnDeactivate = victoryScreen:GetCustomProperty("RespawnOnDeactivate")
 	_G["MovementCanControl"] = true
 	if(_G["DefaultPlayerSetting"] ) then
 		_G["DefaultPlayerSetting"]:ApplyToPlayer(player)
 
 	end
-
-	--player.movementControlMode = data.originalMovementControlMode
-	--player.lookControlMode = data.originalLookControlMode 
-	
+		
 	if(respawnOnDeactivate) then
 		player:Respawn()
 	end
@@ -266,7 +262,8 @@ function API.OnPlayerRestored(victoryScreen, player, data)
 		tasks[player] = nil
 	end
 	Task.Wait()
-	--player.lookControlMode = data.originalLookControlMode 
+	if not Object.IsValid(player) then return end
+
 end
 
 --	nil API.TeleportPlayers(CoreObject, table)

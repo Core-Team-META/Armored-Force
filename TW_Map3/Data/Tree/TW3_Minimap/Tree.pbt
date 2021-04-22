@@ -129,6 +129,7 @@ Objects {
     StaticMesh {
       Physics {
       }
+      BoundsScale: 1
     }
   }
 }
@@ -834,7 +835,7 @@ Objects {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 9926489097908938785
+        SelfId: 4487131940693476857
       }
     }
     Overrides {

@@ -1,11 +1,9 @@
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
-
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local lobbyCountdown = script:GetCustomProperty("LobbyCountdown")
 
 local timerTask = nil
 
-local timer = 0
+local timer = lobbyCountdown
 
 function StateSTART(manager, propertyName)
 
@@ -15,7 +13,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "LOBBYSTATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "LOBBY_STATE" then
 	
 		return
 		
@@ -33,15 +31,13 @@ function CountdownTask()
 
 	script:SetNetworkedCustomProperty("Timer", timer)
 	
-	local count = Game.GetPlayers()
-	
 	if timer <= 0 then
 	
 		StateEND()
 		
 	end
 		
-	if #count < 2 then
+	if #Game.GetPlayers() < 2 then
 	
 		timer = lobbyCountdown
 		
@@ -58,10 +54,16 @@ function StateEND()
 	timerTask:Cancel()
 	timerTask = nil
 	
-	ReliableEvents.Broadcast("CHANGESTATE", "LOBBYSTATE")
+	Events.Broadcast("CHANGE_STATE", "LOBBY_STATE")
+	
+end
 
+function SendPlayerToGarage(player)
+
+	player:TransferToGame("27f652/armored-force-garage")
 end
 
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 
 StateSTART(mainGameStateManager, "GameState")
+Events.ConnectForPlayer("SEND_TO_GARAGE", SendPlayerToGarage)

@@ -1,16 +1,15 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
-local votingMachineServer = script:GetCustomProperty("GAMESTATE_VotingMachineServer"):WaitForObject()
+local settings = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
 
+local activeGameMode = settings:GetCustomProperty("MatchMode")
 local gameModeID = script:GetCustomProperty("GameModeID")
 
 local aCenterPoint = script:GetCustomProperty("ACenterPoint"):WaitForObject()
 local aEdgePoint = script:GetCustomProperty("AEdgePoint"):WaitForObject()
 local bCenterPoint = script:GetCustomProperty("BCenterPoint"):WaitForObject()
 local bEdgePoint = script:GetCustomProperty("BEdgePoint"):WaitForObject()
-
-local defaultGameMode = script:GetCustomProperty("DefaultGameMode")
 
 local aRadius = (aCenterPoint:GetWorldPosition()-aEdgePoint:GetWorldPosition()).size
 local bRadius = (bCenterPoint:GetWorldPosition()-bEdgePoint:GetWorldPosition()).size
@@ -34,7 +33,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCHSTATE" or not gameModeEnabled then
+	if mainGameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" then
 	
 		aCapProgress = 0
 		bCapProgress = 0
@@ -78,26 +77,6 @@ function StateSTART(manager, propertyName)
 	playerCountTask = Task.Spawn(CheckPlayerCountTask)
 	playerCountTask.repeatCount = -1
 	playerCountTask.repeatInterval = 1
-	
-end
-
-function CheckGameMode(manager, propertyName)
-
-	if propertyName ~= "SelectedMatchID" or votingMachineServer:GetCustomProperty("SelectedMatchID") == "" then
-	
-		return
-		
-	end
-	
-	if votingMachineServer:GetCustomProperty("SelectedMatchID") == gameModeID then
-	
-		gameModeEnabled = true
-		
-	else 
-
-		gameModeEnabled = false
-		
-	end
 	
 end
 
@@ -192,7 +171,7 @@ function CheckPlayerCountTask()
 	
 		Task.Wait(1)
 		
-		ReliableEvents.Broadcast("CHANGESTATE", "MATCHSTATE")
+		Events.Broadcast("CHANGE_STATE", "MATCH_STATE")
 		
 		while true do
 		
@@ -204,6 +183,10 @@ function CheckPlayerCountTask()
 		
 end
 
+function Initialize()
+	if activeGameMode == gameModeID then
+		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
+	end
+end
 
-mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
-votingMachineServer.networkedPropertyChangedEvent:Connect(CheckGameMode)
+Initialize()
