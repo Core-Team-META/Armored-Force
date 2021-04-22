@@ -7,8 +7,6 @@ local propUITextBox = script:GetCustomProperty("UITextBox"):WaitForObject()
 local localPlayer = Game.GetLocalPlayer()
 
 function Tick()
-
-	Task.Wait(1)
 	
 	if propResource == "Tank" then
 	
@@ -27,5 +25,11 @@ function Tick()
 		propUITextBox.text = "Gold: " .. tostring(localPlayer:GetResource(CONSTANTS_API.GOLD))
 		
 	end
+	
+	Task.Wait(1)
 
 end
+
+Task.Wait(3)
+
+script:GetChildren()[1].visibility = Visibility.INHERIT

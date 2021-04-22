@@ -5,6 +5,8 @@ local defaultViewUI = script:GetCustomProperty("DefaultViewUI"):WaitForObject()
 
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 local toBattleButtons = script:GetCustomProperty("ToBattleButtons"):WaitForObject()
+local blackScreen = script:GetCustomProperty("BlackScreen"):WaitForObject()
+blackScreen.visibility = Visibility.INHERIT
 
 -- Equip tank panel
 local loadEquippableTanks = script:GetCustomProperty("LoadEquippableTanks"):WaitForObject()
@@ -94,6 +96,20 @@ function InitializeComponent()
 		end
 	end
 	
+	while not localPlayer.id do
+		Task.Wait()
+	end
+	
+	Task.Wait(1)
+	
+	for i = 100, 1, -1 do 
+		
+		blackScreen:SetColor(Color.New(0, 0, 0, i/100))
+			
+		Task.Wait(0.02)
+			
+	end
+	
 end
 
 function LoadEquippableTanks()
@@ -135,6 +151,7 @@ function EquipTank(button)
 end
 
 InitializeComponent()
+ToggleThisComponent(thisComponent)
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
