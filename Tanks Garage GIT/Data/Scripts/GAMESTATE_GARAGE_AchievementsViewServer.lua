@@ -202,7 +202,7 @@ function ClaimDaily(player)
 		local loginHour = os.date("*t").hour
 				
 		player.serverUserData.LOGIN  = 
-		tostring(os.time() + 72000)
+		tostring(os.time() + 100800)
 		
 		AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
 	end
