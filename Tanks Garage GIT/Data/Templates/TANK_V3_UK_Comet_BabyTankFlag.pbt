@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 13965888329874068820
         ChildIds: 284258288545489860
         ChildIds: 15223182660682262259
         ChildIds: 11211012762907542463
@@ -19749,6 +19749,7 @@ Assets {
         Transform {
           Location {
             X: -6.57394123
+            Z: -3.09411168
           }
           Rotation {
           }
@@ -20157,7 +20158,7 @@ Assets {
         Name: "pole"
         Transform {
           Location {
-            Z: -250
+            Z: -350
           }
           Rotation {
           }
@@ -20168,6 +20169,7 @@ Assets {
           }
         }
         ParentId: 12719325001750946222
+        ChildIds: 13823908621398700636
         ChildIds: 15715752007754957146
         ChildIds: 13600171376562530355
         ChildIds: 13190572611234991133
@@ -20175,7 +20177,6 @@ Assets {
         ChildIds: 9327992359347067061
         ChildIds: 14551529148321508584
         ChildIds: 725311470963707013
-        ChildIds: 13823908621398700636
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20193,13 +20194,87 @@ Assets {
         }
       }
       Objects {
+        Id: 13823908621398700636
+        Name: "Street Light Pole Clamp 01"
+        Transform {
+          Location {
+            Z: 150.424545
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.29905957
+            Y: 0.29905957
+            Z: 0.180467159
+          }
+        }
+        ParentId: 6971864101199038170
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6777447344140592468
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.7
+              G: 0.7
+              B: 0.7
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12868138083867151982
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 15715752007754957146
         Name: "bundle"
         Transform {
           Location {
-            X: 3.34985352
-            Y: 6.12646484
-            Z: 73.0398712
+            X: 3.34980273
+            Y: 6.12647724
+            Z: 118.644073
           }
           Rotation {
           }
@@ -20442,15 +20517,15 @@ Assets {
         Name: "Urban Pipe Coupline 03"
         Transform {
           Location {
-            Z: 44.5000114
+            Z: 90.1042099
           }
           Rotation {
-            Yaw: -43.6459351
+            Yaw: -43.6459198
           }
           Scale {
             X: 0.352945238
             Y: 0.352945238
-            Z: 0.212984547
+            Z: 0.212984562
           }
         }
         ParentId: 6971864101199038170
@@ -20563,15 +20638,15 @@ Assets {
         Name: "Urban Pipe Coupline 03"
         Transform {
           Location {
-            Z: 99.7492447
+            Z: 145.353455
           }
           Rotation {
-            Yaw: -43.6459351
+            Yaw: -43.6459198
           }
           Scale {
             X: 0.352945238
             Y: 0.352945238
-            Z: 0.212984547
+            Z: 0.212984562
           }
         }
         ParentId: 6971864101199038170
@@ -20684,9 +20759,9 @@ Assets {
         Name: "FlagRoot"
         Transform {
           Location {
-            X: 4.54409027
-            Y: 4.58915567
-            Z: 71.5537796
+            X: 4.54409313
+            Y: 4.58915854
+            Z: 117.157974
           }
           Rotation {
             Yaw: 178.582
@@ -20975,14 +21050,14 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            Z: 21.7392292
+            Z: 43.304
           }
           Rotation {
           }
           Scale {
             X: 0.105208375
             Y: 0.105208375
-            Z: 0.489464641
+            Z: 1
           }
         }
         ParentId: 6971864101199038170
@@ -21049,14 +21124,14 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            Z: 75.2865295
+            Z: 120.890724
           }
           Rotation {
           }
           Scale {
             X: 0.076336965
             Y: 0.076336965
-            Z: 0.617791176
+            Z: 0.617791235
           }
         }
         ParentId: 6971864101199038170
@@ -21123,14 +21198,14 @@ Assets {
         Name: "Fantasy Pommel 02"
         Transform {
           Location {
-            Z: 104.079559
+            Z: 149.683746
           }
           Rotation {
             Roll: -179.999954
           }
           Scale {
             X: 1.74035096
-            Y: 1.74035192
+            Y: 1.74035203
             Z: 1.54472244
           }
         }
@@ -21179,80 +21254,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 17616555706524180168
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 13823908621398700636
-        Name: "Street Light Pole Clamp 01"
-        Transform {
-          Location {
-            Z: 104.820335
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.29905957
-            Y: 0.29905957
-            Z: 0.180467159
-          }
-        }
-        ParentId: 6971864101199038170
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 6777447344140592468
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.7
-              G: 0.7
-              B: 0.7
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12868138083867151982
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -29816,6 +29817,10 @@ Assets {
             Name: "bp:Radius"
             Float: 10
           }
+          Overrides {
+            Name: "bp:Size"
+            Float: 2
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30708,6 +30713,15 @@ Assets {
       }
     }
     Assets {
+      Id: 6777447344140592468
+      Name: "Metal Steel Brushed"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stainless-steel_001_uv"
+      }
+    }
+    Assets {
       Id: 17508282918215783903
       Name: "Bone Human Tibula 01"
       PlatformAssetType: 1
@@ -30741,15 +30755,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_urb_pipes_acc_coupling_003_ref"
-      }
-    }
-    Assets {
-      Id: 6777447344140592468
-      Name: "Metal Steel Brushed"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_stainless-steel_001_uv"
       }
     }
     Assets {
