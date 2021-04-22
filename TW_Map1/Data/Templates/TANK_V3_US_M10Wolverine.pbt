@@ -2442,7 +2442,6 @@ Assets {
           }
           AutoPlay: true
           Repeat: true
-          Pitch: -200
           Volume: 1.5
           Falloff: 5000
           Radius: 2000
@@ -31821,7 +31820,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16060214784296519809
+            Id: 15463439290356156719
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -37841,7 +37840,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16060214784296519809
+      Id: 15463439290356156719
       Name: "Plane 1m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {

@@ -1,13 +1,13 @@
 Assets {
   Id: 2118376248870002276
-  Name: "Tank USSR T-62A1 Burned"
+  Name: "Tank USSR T62A1 Burned"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 13355033994967234360
       Objects {
         Id: 13355033994967234360
-        Name: "Tank USSR T-62A1 Burned"
+        Name: "Tank USSR T62A1 Burned"
         Transform {
           Scale {
             X: 1
@@ -15,23 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7007552800397280980
-        ChildIds: 14701587000472121492
-        ChildIds: 14026468724444684484
-        ChildIds: 9020620661200662279
-        ChildIds: 10093690356927821146
-        ChildIds: 2887269300301702849
-        ChildIds: 13540111096802769204
-        ChildIds: 7562737612300384130
-        ChildIds: 2378475237290463723
-        ChildIds: 2962144879557763754
-        ChildIds: 4452524442526330457
-        ChildIds: 10168188647244755101
-        ChildIds: 1625694980368427353
+        ParentId: 4781671109827199097
+        ChildIds: 14803245353409905467
         ChildIds: 647424732945073583
         ChildIds: 7366667103004021093
         ChildIds: 16893299153168097133
-        Lifespan: 15
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -46,13 +34,13 @@ Assets {
         }
       }
       Objects {
-        Id: 14701587000472121492
-        Name: "Point Light"
+        Id: 14803245353409905467
+        Name: "FX"
         Transform {
           Location {
-            X: 387.546509
-            Y: -122.793945
-            Z: 257.021027
+            X: 259.974304
+            Y: -87.8997421
+            Z: -62.469017
           }
           Rotation {
           }
@@ -63,6 +51,57 @@ Assets {
           }
         }
         ParentId: 13355033994967234360
+        ChildIds: 14701587000472121492
+        ChildIds: 14026468724444684484
+        ChildIds: 9020620661200662279
+        ChildIds: 10093690356927821146
+        ChildIds: 6464483616471950459
+        ChildIds: 6917327917077153932
+        ChildIds: 17065079219093910427
+        ChildIds: 16757390054009388940
+        ChildIds: 12804279077372599103
+        ChildIds: 13383716825539385424
+        ChildIds: 13540111096802769204
+        ChildIds: 7562737612300384130
+        ChildIds: 2378475237290463723
+        ChildIds: 2962144879557763754
+        ChildIds: 4452524442526330457
+        ChildIds: 10168188647244755101
+        ChildIds: 1625694980368427353
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14701587000472121492
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: 127.572144
+            Y: -34.8942871
+            Z: 319.490051
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14803245353409905467
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -104,9 +143,9 @@ Assets {
         Name: "Smoke Volume VFX"
         Transform {
           Location {
-            X: 403.123169
-            Y: -91.6279297
-            Z: 302.753479
+            X: 143.148804
+            Y: -3.72827148
+            Z: 365.222504
           }
           Rotation {
           }
@@ -116,7 +155,7 @@ Assets {
             Z: 0.845505714
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
@@ -203,9 +242,9 @@ Assets {
         Name: "Fire Volume VFX"
         Transform {
           Location {
-            X: 387.546509
-            Y: -122.793945
-            Z: 257.021027
+            X: 127.572144
+            Y: -34.8942871
+            Z: 319.490051
           }
           Rotation {
           }
@@ -215,7 +254,7 @@ Assets {
             Z: 2.96456027
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -244,9 +283,9 @@ Assets {
         Name: "Fire and Flame Burning Loop Set 01 SFX"
         Transform {
           Location {
-            X: 387.546509
-            Y: -122.793945
-            Z: 257.021027
+            X: 127.572144
+            Y: -34.8942871
+            Z: 319.490051
           }
           Rotation {
           }
@@ -256,7 +295,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -293,13 +332,13 @@ Assets {
         }
       }
       Objects {
-        Id: 2887269300301702849
-        Name: "Epic Explosions Set 01 SFX"
+        Id: 6464483616471950459
+        Name: "Explosion Creation & Construction Kit 01 SFX"
         Transform {
           Location {
-            X: 402.172974
-            Y: -122.246582
-            Z: 370.290894
+            X: -151.492432
+            Y: 75.8598633
+            Z: 88.8926544
           }
           Rotation {
           }
@@ -309,12 +348,54 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Type"
+            Name: "bp:Explosion Type 1"
             Enum {
-              Value: "mc:esfx_explosions_standalone:30"
+              Value: "mc:esfx_explosions:14"
+            }
+          }
+          Overrides {
+            Name: "bp:Enable Explosion 1 Dynamic Distant Sound"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Sweetener Impact Type 1"
+            Enum {
+              Value: "mc:esfx_explosions_sw_impact:14"
+            }
+          }
+          Overrides {
+            Name: "bp:Sweetener Tail Type"
+            Enum {
+              Value: "mc:esfx_explosions_sw_tail:21"
+            }
+          }
+          Overrides {
+            Name: "bp:Sweetener Sub Type"
+            Enum {
+              Value: "mc:esfx_explosions_sw_sub:18"
+            }
+          }
+          Overrides {
+            Name: "bp:Explosion Type 2"
+            Enum {
+              Value: "mc:esfx_explosions:47"
+            }
+          }
+          Overrides {
+            Name: "bp:Impact 1 Volume"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Impact 1 Pitch"
+            Float: -1000
+          }
+          Overrides {
+            Name: "bp:Sweetener Impact Type 2"
+            Enum {
+              Value: "mc:esfx_explosions_sw_impact:28"
             }
           }
         }
@@ -327,20 +408,300 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Blueprint {
           BlueprintAsset {
-            Id: 2042230822359484932
+            Id: 12154521009953844992
           }
           TeamSettings {
           }
           AudioBP {
             AutoPlay: true
-            Volume: 1.3
-            Falloff: 5000
-            Radius: 2000
+            Volume: 1
+            Falloff: 3600
+            Radius: 1000
             IsSpatializationEnabled: true
             IsAttenuationEnabled: true
           }
+        }
+      }
+      Objects {
+        Id: 6917327917077153932
+        Name: "Explosion Kit Spark Burst VFX"
+        Transform {
+          Location {
+            X: -151.492432
+            Y: 75.8598633
+            Z: 88.8926544
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14803245353409905467
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Size"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.8
+          }
+          Overrides {
+            Name: "bp:Initial Velocity Multiplier"
+            Float: 20
+          }
+          Overrides {
+            Name: "bp:Radial Velocity Multiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Radius"
+            Float: 15
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 7905335965830850457
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 17065079219093910427
+        Name: "Explosion Kit Base Spikes VFX"
+        Transform {
+          Location {
+            X: -151.492432
+            Y: 75.8598633
+            Z: 88.8926544
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14803245353409905467
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.164
+              G: 0.118080005
+              B: 0.0656
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Particle Scale"
+            Float: 2.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13887344734822271181
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 16757390054009388940
+        Name: "Large Dirt Impact VFX"
+        Transform {
+          Location {
+            X: -151.492432
+            Y: 75.8598633
+            Z: 88.8926544
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2
+            Y: 2
+            Z: 2
+          }
+        }
+        ParentId: 14803245353409905467
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13895075984275763081
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 12804279077372599103
+        Name: "Explosion Kit Fireball VFX"
+        Transform {
+          Location {
+            X: -204.583252
+            Y: 64.4458
+            Z: 523.115051
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14803245353409905467
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.7
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13812633556341707021
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13383716825539385424
+        Name: "Explosion Kit Afterglow VFX"
+        Transform {
+          Location {
+            X: -151.492432
+            Y: 75.8598633
+            Z: 88.8926544
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14803245353409905467
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale"
+            Float: 2.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 16499638918719845702
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -348,9 +709,9 @@ Assets {
         Name: "Basic Explosion VFX"
         Transform {
           Location {
-            X: 402.172974
-            Y: -122.246582
-            Z: 370.290894
+            X: 142.198608
+            Y: -34.3469238
+            Z: 432.759918
           }
           Rotation {
           }
@@ -360,7 +721,7 @@ Assets {
             Z: 3.29167819
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:Enable Ring"
@@ -377,6 +738,10 @@ Assets {
               G: 0.800000072
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Enable Sparks"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -407,12 +772,11 @@ Assets {
         Name: "Decal Soil Cracks Big 01"
         Transform {
           Location {
-            X: 140.536865
-            Y: -30.0073242
-            Z: -62.469017
+            X: -119.4375
+            Y: 57.892334
           }
           Rotation {
-            Yaw: 5.00680351
+            Yaw: 5.0068059
           }
           Scale {
             X: 3.43650341
@@ -420,7 +784,7 @@ Assets {
             Z: 0.582155049
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
@@ -468,12 +832,12 @@ Assets {
         Name: "Scorch Mark Decal"
         Transform {
           Location {
-            X: 80.3909912
-            Y: 80.699707
-            Z: -41.5879364
+            X: -179.583374
+            Y: 168.599365
+            Z: 20.8810806
           }
           Rotation {
-            Yaw: 5.00680351
+            Yaw: 5.0068059
           }
           Scale {
             X: 11.8779154
@@ -481,7 +845,7 @@ Assets {
             Z: 0.933933616
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:Enable Hot Spot"
@@ -555,14 +919,14 @@ Assets {
         Name: "Scorch Mark Decal"
         Transform {
           Location {
-            X: 404.073242
-            Y: -105.143066
-            Z: 192.04805
+            X: 144.098877
+            Y: -17.2434082
+            Z: 254.517059
           }
           Rotation {
-            Pitch: 27.7108746
+            Pitch: 27.7108688
             Yaw: 178.544327
-            Roll: 2.73042059
+            Roll: 2.73042107
           }
           Scale {
             X: 3.31487679
@@ -570,7 +934,7 @@ Assets {
             Z: 3.54974818
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:Enable Hot Spot"
@@ -612,14 +976,14 @@ Assets {
         Name: "Scorch Mark Decal"
         Transform {
           Location {
-            X: -182.744629
-            Y: -272.567871
-            Z: 167.823959
+            X: -442.719
+            Y: -184.668213
+            Z: 230.292969
           }
           Rotation {
-            Pitch: -16.0806885
+            Pitch: -16.0806828
             Yaw: 158.905411
-            Roll: 74.2248
+            Roll: 74.2247696
           }
           Scale {
             X: 1.86486864
@@ -627,7 +991,7 @@ Assets {
             Z: 3.88244033
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:Fade Time"
@@ -673,12 +1037,12 @@ Assets {
         Name: "Scorch Mark Decal"
         Transform {
           Location {
-            X: 238.326904
-            Y: -225.487305
-            Z: 244.904877
+            X: -21.6474609
+            Y: -137.587646
+            Z: 307.373901
           }
           Rotation {
-            Pitch: -10.5593262
+            Pitch: -10.5593214
             Yaw: -175.3125
             Roll: 54.1349144
           }
@@ -688,7 +1052,7 @@ Assets {
             Z: 2.85980082
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:Fade Time"
@@ -734,14 +1098,14 @@ Assets {
         Name: "Scorch Mark Decal"
         Transform {
           Location {
-            X: 68.9995117
-            Y: 202.211914
-            Z: 244.904877
+            X: -190.974854
+            Y: 290.111572
+            Z: 307.373901
           }
           Rotation {
             Pitch: 6.41456509
             Yaw: -170.382645
-            Roll: -32.0368347
+            Roll: -32.0368538
           }
           Scale {
             X: 3.73078179
@@ -749,7 +1113,7 @@ Assets {
             Z: 2.8598
           }
         }
-        ParentId: 13355033994967234360
+        ParentId: 14803245353409905467
         UnregisteredParameters {
           Overrides {
             Name: "bp:Fade Time"
@@ -23745,12 +24109,57 @@ Assets {
       }
     }
     Assets {
-      Id: 2042230822359484932
-      Name: "Epic Explosions Set 01 SFX"
+      Id: 12154521009953844992
+      Name: "Explosion Creation & Construction Kit 01 SFX"
       PlatformAssetType: 10
       PrimaryAsset {
         AssetType: "AudioBlueprintAssetRef"
-        AssetId: "sfxabp_epic_explosion_set_01_ref"
+        AssetId: "sfxabp_explosion_construction_kit_ref"
+      }
+    }
+    Assets {
+      Id: 7905335965830850457
+      Name: "Explosion Kit Spark Burst VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_mil_explokit_sparkBurst"
+      }
+    }
+    Assets {
+      Id: 13887344734822271181
+      Name: "Explosion Kit Base Spikes VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_mil_dirt_impact_explosikit_baseSpikes"
+      }
+    }
+    Assets {
+      Id: 13895075984275763081
+      Name: "Large Dirt Impact VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_mil_dirt_impact_large"
+      }
+    }
+    Assets {
+      Id: 13812633556341707021
+      Name: "Explosion Kit Fireball VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_mil_dirt_impact_explokit_fireball2"
+      }
+    }
+    Assets {
+      Id: 16499638918719845702
+      Name: "Explosion Kit Afterglow VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_mil_explokit_afterglow"
       }
     }
     Assets {

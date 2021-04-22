@@ -155,7 +155,7 @@ Assets {
           }
           Overrides {
             Name: "cs:TankHeightTweaker"
-            Float: 30
+            Float: 100
           }
           Overrides {
             Name: "cs:TankAngleTweaker"
@@ -885,7 +885,6 @@ Assets {
         Name: "ServerContext2"
         Transform {
           Location {
-            Z: -32.6493225
           }
           Rotation {
           }
@@ -920,7 +919,7 @@ Assets {
         Transform {
           Location {
             Y: 205.448563
-            Z: -200
+            Z: -213.158203
           }
           Rotation {
           }
@@ -953,7 +952,6 @@ Assets {
           Location {
             X: -220.251221
             Y: 1.52587891e-05
-            Z: -30.1715546
           }
           Rotation {
           }
@@ -1040,7 +1038,7 @@ Assets {
         Name: "HighestPositionLimiter"
         Transform {
           Location {
-            Z: 75
+            Z: 47.3345032
           }
           Rotation {
           }
@@ -1095,7 +1093,7 @@ Assets {
         Name: "HighestRaycastMarker"
         Transform {
           Location {
-            Z: 165
+            Z: 106.764618
           }
           Rotation {
           }
@@ -1180,7 +1178,6 @@ Assets {
           Location {
             X: 130.749725
             Y: 1.52587891e-05
-            Z: -30.1715546
           }
           Rotation {
           }
@@ -1267,7 +1264,7 @@ Assets {
         Name: "HighestPositionLimiter"
         Transform {
           Location {
-            Z: 75
+            Z: 47.3345032
           }
           Rotation {
           }
@@ -1322,7 +1319,7 @@ Assets {
         Name: "HighestRaycastMarker"
         Transform {
           Location {
-            Z: 165
+            Z: 106.764618
           }
           Rotation {
           }
@@ -1406,7 +1403,7 @@ Assets {
         Transform {
           Location {
             Y: -205.449
-            Z: -200
+            Z: -213.158203
           }
           Rotation {
           }
@@ -1438,7 +1435,6 @@ Assets {
         Transform {
           Location {
             X: -220.251221
-            Z: -30.1715546
           }
           Rotation {
           }
@@ -1525,7 +1521,7 @@ Assets {
         Name: "HighestPositionLimiter"
         Transform {
           Location {
-            Z: 75
+            Z: 47.3345032
           }
           Rotation {
           }
@@ -1580,7 +1576,7 @@ Assets {
         Name: "HighestRaycastMarker"
         Transform {
           Location {
-            Z: 165
+            Z: 106.764618
           }
           Rotation {
           }
@@ -1664,7 +1660,6 @@ Assets {
         Transform {
           Location {
             X: 130.749725
-            Z: -30.1715546
           }
           Rotation {
           }
@@ -1751,7 +1746,7 @@ Assets {
         Name: "HighestPositionLimiter"
         Transform {
           Location {
-            Z: 75
+            Z: 47.3345032
           }
           Rotation {
           }
@@ -1806,7 +1801,7 @@ Assets {
         Name: "HighestRaycastMarker"
         Transform {
           Location {
-            Z: 165
+            Z: 106.764618
           }
           Rotation {
           }
@@ -1890,7 +1885,7 @@ Assets {
         Transform {
           Location {
             X: -91.8899078
-            Z: -47.3506775
+            Z: -80
           }
           Rotation {
           }
@@ -1934,7 +1929,7 @@ Assets {
         Transform {
           Location {
             X: -91.8899078
-            Z: -47.3506775
+            Z: -80
           }
           Rotation {
           }
@@ -3026,7 +3021,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16060214784296519809
+            Id: 15463439290356156719
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -4661,7 +4656,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16060214784296519809
+            Id: 15463439290356156719
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -4799,7 +4794,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16060214784296519809
+            Id: 15463439290356156719
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -6022,7 +6017,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16060214784296519809
+            Id: 15463439290356156719
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25410,7 +25405,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16060214784296519809
+            Id: 15463439290356156719
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -26108,7 +26103,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16060214784296519809
+            Id: 15463439290356156719
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -27474,7 +27469,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16060214784296519809
+      Id: 15463439290356156719
       Name: "Plane 1m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {

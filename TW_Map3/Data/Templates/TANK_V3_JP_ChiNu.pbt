@@ -3049,6 +3049,9 @@ Assets {
         ChildIds: 8246677875597015789
         ChildIds: 14153963722359672321
         ChildIds: 8973562013227568951
+        ChildIds: 6005547799483938805
+        ChildIds: 10434867827195129609
+        ChildIds: 4175237907447115934
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3893,6 +3896,227 @@ Assets {
         }
       }
       Objects {
+        Id: 6005547799483938805
+        Name: "Cube - Arched"
+        Transform {
+          Location {
+            X: 117.523827
+            Y: -13.0777969
+            Z: 54.7769394
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.473038077
+            Y: 0.0564385615
+            Z: 0.214657575
+          }
+        }
+        ParentId: 7590096980409994569
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.169999957
+              G: 0.121271931
+              B: 0.0601799786
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7757866143058981948
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10434867827195129609
+        Name: "Cylinder - Polished"
+        Transform {
+          Location {
+            X: 117.523827
+            Y: -9.00414658
+            Z: 72.2732849
+          }
+          Rotation {
+            Roll: -89.9999924
+          }
+          Scale {
+            X: 0.145290479
+            Y: 0.145290479
+            Z: 0.318566889
+          }
+        }
+        ParentId: 7590096980409994569
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.169999957
+              G: 0.121271931
+              B: 0.0601799786
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18088187323891878271
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4175237907447115934
+        Name: "Gem - Diamond 6-Sided Polished"
+        Transform {
+          Location {
+            X: 117.523827
+            Y: -24.7499924
+            Z: 72.2732849
+          }
+          Rotation {
+            Roll: 89.9999542
+          }
+          Scale {
+            X: 0.125303179
+            Y: 0.12530306
+            Z: 0.09278173
+          }
+        }
+        ParentId: 7590096980409994569
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.169999957
+              G: 0.121271931
+              B: 0.0601799786
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10844440357506060708
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 10624230815982531324
         Name: "Wheels"
         Transform {
@@ -3921,9 +4145,6 @@ Assets {
         ChildIds: 6084786663529763029
         ChildIds: 3308948719887155125
         ChildIds: 5030807736142640964
-        ChildIds: 6005547799483938805
-        ChildIds: 10434867827195129609
-        ChildIds: 4175237907447115934
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -5554,7 +5775,7 @@ Assets {
       }
       Objects {
         Id: 3308948719887155125
-        Name: "wheel"
+        Name: "Wheel"
         Transform {
           Location {
             X: 93.3566895
@@ -5730,7 +5951,7 @@ Assets {
       }
       Objects {
         Id: 5030807736142640964
-        Name: "wheel"
+        Name: "Wheel"
         Transform {
           Location {
             X: 198.389603
@@ -5849,227 +6070,6 @@ Assets {
           }
         }
         ParentId: 5030807736142640964
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.169999957
-              G: 0.121271931
-              B: 0.0601799786
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10844440357506060708
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 6005547799483938805
-        Name: "Cube - Arched"
-        Transform {
-          Location {
-            X: 145.337357
-            Y: 22.5736446
-            Z: -20.2230644
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.473038077
-            Y: 0.0564385578
-            Z: 0.214657575
-          }
-        }
-        ParentId: 10624230815982531324
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.169999957
-              G: 0.121271931
-              B: 0.0601799786
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7757866143058981948
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10434867827195129609
-        Name: "Cylinder - Polished"
-        Transform {
-          Location {
-            X: 145.337357
-            Y: 26.647295
-            Z: -2.7267158
-          }
-          Rotation {
-            Roll: -90
-          }
-          Scale {
-            X: 0.145290479
-            Y: 0.145290464
-            Z: 0.318566889
-          }
-        }
-        ParentId: 10624230815982531324
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.169999957
-              G: 0.121271931
-              B: 0.0601799786
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18088187323891878271
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4175237907447115934
-        Name: "Gem - Diamond 6-Sided Polished"
-        Transform {
-          Location {
-            X: 145.337357
-            Y: 10.9014492
-            Z: -2.7267158
-          }
-          Rotation {
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.125303179
-            Y: 0.12530306
-            Z: 0.09278173
-          }
-        }
-        ParentId: 10624230815982531324
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -19848,7 +19848,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -22265,7 +22265,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -34156,7 +34156,7 @@ Assets {
       }
     }
     Assets {
-      Id: 10755294693114967386
+      Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {

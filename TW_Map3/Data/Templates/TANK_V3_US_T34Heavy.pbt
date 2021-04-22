@@ -22792,7 +22792,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -26561,7 +26561,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 10755294693114967386
+            Id: 13650699884663610996
           }
           TeamSettings {
           }
@@ -35714,7 +35714,7 @@ Assets {
       }
     }
     Assets {
-      Id: 10755294693114967386
+      Id: 13650699884663610996
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {
