@@ -52,10 +52,8 @@ local CHOOSE_MODE = World.FindObjectByName("CHOOSE_MODE")
 
 local SHELL_UPGRADE_CONFIRM = World.FindObjectByName("SHELL_UPGRADE_CONFIRM")
 local SHELL_UPGRADE_DENY = World.FindObjectByName("SHELL_UPGRADE_DENY")
-
 local TURRET_UPGRADE_CONFIRM = World.FindObjectByName("ENGINE_UPGRADE_CONFIRM")
 local TURRET_UPGRADE_DENY = World.FindObjectByName("TURRET_UPGRADE_DENY")
-
 local ENGINE_UPGRADE_CONFIRM = World.FindObjectByName("ENGINE_UPGRADE_CONFIRM")
 local ENGINE_UPGRADE_DENY = World.FindObjectByName("ENGINE_UPGRADE_DENY")
 
@@ -165,9 +163,7 @@ function Tick(deltaTime)
 		else
 			newPosition = CoreMath.Lerp(OPEN_DROPDOWN_Y, CLOSED_DROPDOWN_Y, (DROPDOWN_TOGGLE_TIME - timeRemaining) / DROPDOWN_TOGGLE_TIME)
 		end
-		
 		CHOOSE_MODE.y = newPosition
-		
 		if timeRemaining <= 0 then
 			isMoving = false
 		end
@@ -181,9 +177,7 @@ function Tick(deltaTime)
 		else
 			STATS_newPosition = CoreMath.Lerp(STATS_OPEN_DROPDOWN_Y, STATS_CLOSED_DROPDOWN_Y, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		STATS_CONTAINER.y = STATS_newPosition
-		
 		if STATS_timeRemaining <= 0 then
 			STATS_isMoving = false
 		end
@@ -197,9 +191,7 @@ function Tick(deltaTime)
 		else
 			STATS_PLAYER_newPosition = CoreMath.Lerp(STATS_PLAYER_OPEN_DROPDOWN_Y, STATS_PLAYER_CLOSED_DROPDOWN_Y, (STATS_PLAYER_DROPDOWN_TOGGLE_TIME - STATS_PLAYER_timeRemaining) / STATS_PLAYER_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		STATS_PLAYER.y = STATS_PLAYER_newPosition
-		
 		if STATS_PLAYER_timeRemaining <= 0 then
 			STATS_PLAYER_isMoving = false
 		end
@@ -213,9 +205,7 @@ function Tick(deltaTime)
 		else
 			STATS_TANK_newPosition = CoreMath.Lerp(STATS_TANK_OPEN_DROPDOWN_Y, STATS_TANK_CLOSED_DROPDOWN_Y, (STATS_TANK_DROPDOWN_TOGGLE_TIME - STATS_TANK_timeRemaining) / STATS_TANK_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		STATS_TANK.y = STATS_TANK_newPosition
-		
 		if STATS_TANK_timeRemaining <= 0 then
 			STATS_TANK_isMoving = false
 		end
@@ -229,9 +219,7 @@ function Tick(deltaTime)
 		else
 			SHELL_CONFIRM_newPosition = CoreMath.Lerp(TANKUPGRADE_CONFIRM_OPEN_DROPDOWN_Y, TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y, (TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_CONFIRM_timeRemaining) / TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		SHELL_UPGRADE_CONFIRM.y = SHELL_CONFIRM_newPosition
-		
 		if TANKUPGRADE_CONFIRM_timeRemaining <= 0 then
 			SHELL_CONFIRM_isMoving = false
 		end
@@ -245,9 +233,7 @@ function Tick(deltaTime)
 		else
 			SHELL_DENY_newPosition = CoreMath.Lerp(TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		SHELL_DENY_CONFIRM.y = SHELL_DENY_newPosition
-		
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			SHELL_DENY_isMoving = false
 		end
@@ -261,9 +247,7 @@ function Tick(deltaTime)
 		else
 			TURRET_CONFIRM_newPosition = CoreMath.Lerp(TANKUPGRADE_CONFIRM_OPEN_DROPDOWN_Y, TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y, (TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_CONFIRM_timeRemaining) / TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		TURRET_UPGRADE_CONFIRM.y = TURRET_CONFIRM_newPosition
-		
 		if TANKUPGRADE_CONFIRM_timeRemaining <= 0 then
 			TURRET_CONFIRM_isMoving = false
 		end
@@ -277,9 +261,7 @@ function Tick(deltaTime)
 		else
 			TURRET_DENY_newPosition = CoreMath.Lerp(TURRET_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		TURRET_DENY_CONFIRM.y = TURRET_DENY_newPosition
-		
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			TURRET_DENY_isMoving = false
 		end
@@ -293,9 +275,7 @@ function Tick(deltaTime)
 		else
 			ENGINE_CONFIRM_newPosition = CoreMath.Lerp(TANKUPGRADE_CONFIRM_OPEN_DROPDOWN_Y, TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y, (TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_CONFIRM_timeRemaining) / TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		ENGINE_UPGRADE_CONFIRM.y = ENGINE_CONFIRM_newPosition
-		
 		if TANKUPGRADE_CONFIRM_timeRemaining <= 0 then
 			ENGINE_CONFIRM_isMoving = false
 		end
@@ -309,9 +289,7 @@ function Tick(deltaTime)
 		else
 			ENGINE_DENY_newPosition = CoreMath.Lerp(TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		ENGINE_DENY_CONFIRM.y = ENGINE_DENY_newPosition
-		
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			ENGINE_DENY_isMoving = false
 		end
@@ -694,8 +672,8 @@ function CLICKED_STATS(STATS_DROPDOWN_BUTTON)
 	TANK_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
-	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	STATS_TANK_TOGGLE_DROPDOWN_CLOSE()
+	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	STATS_TOGGLE_DROPDOWN()
 end
 
@@ -708,12 +686,12 @@ end
 -- PLAYER_STATS BUTTON HANDLER
 function CLICKED_PLAYER_STATS(PLAYER_STATS_BUTTON)
 	if PLAYER_STATS_BUTTON_ACTIVE.visibility == Visibility.FORCE_OFF then
-	SFX_CLICK:Play()
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
 	TANK_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_OFF
-	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	STATS_TANK_TOGGLE_DROPDOWN_CLOSE()
+	Task.Wait(0.25)
+	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	end
 end
 
@@ -733,12 +711,12 @@ end
 -- TANK_STATS BUTTON HANDLER
 function CLICKED_TANK_STATS(TANK_STATS_BUTTON)
 	if TANK_STATS_BUTTON_ACTIVE.visibility == Visibility.FORCE_OFF then
-	SFX_CLICK:Play()
 	TANK_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_OFF
 	TANK_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
-	STATS_TANK_TOGGLE_DROPDOWN_OPEN()
 	STATS_PLAYER_TOGGLE_DROPDOWN_CLOSE()
+	Task.Wait(0.2)
+	STATS_TANK_TOGGLE_DROPDOWN_OPEN()
 	end
 end
 
@@ -1090,6 +1068,6 @@ CHOOSE_MODE_TUNDRA_BUTTON.unhoveredEvent:Connect(UNHOVERED_CHOOSE_MODE_TUNDRA)
 DEPLOY_BUTTON.unhoveredEvent:Connect(UNHOVERED_DEPLOY)
 
 -- Change MAP to MODE on all values and functions KonzZwodrei [ 07.04.2021 ]
--- Added additional functionality by USERNAME [ dd.mm.yyyyy ]
+-- Added and animated functional: User Menu + Player Stats & Chosen Tank Stats UI's [ 22.04.2021 ]
 -- Added additional functionality by USERNAME [ dd.mm.yyyyy ]
 -- Added additional functionality by USERNAME [ dd.mm.yyyyy ]
