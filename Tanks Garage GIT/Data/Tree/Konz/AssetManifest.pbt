@@ -98,15 +98,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9799761457461904762
-  Name: "BG Gradient 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_019"
-  }
-}
-Assets {
   Id: 9686253618519087109
   Name: "Teko Light"
   PlatformAssetType: 28
