@@ -7,7 +7,7 @@ Assets {
       RootId: 7469281412286242997
       Objects {
         Id: 7469281412286242997
-        Name: "Tank US T34 Heavy Burned"
+        Name: "Tank US T34Heavy Burned"
         Transform {
           Scale {
             X: 1
@@ -527,7 +527,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale"
-            Float: 2
+            Float: 2.5
           }
         }
         Collidable_v2 {
@@ -568,9 +568,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1.5
-            Y: 1.5
-            Z: 1.5
+            X: 2
+            Y: 2
+            Z: 2
           }
         }
         ParentId: 758946987582986042

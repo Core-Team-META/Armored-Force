@@ -534,7 +534,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Particle Scale"
-            Float: 2
+            Float: 2.5
           }
         }
         Collidable_v2 {
@@ -574,9 +574,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1.5
-            Y: 1.5
-            Z: 1.5
+            X: 2
+            Y: 2
+            Z: 2
           }
         }
         ParentId: 17994225726412816063
