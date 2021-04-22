@@ -27,7 +27,6 @@ Objects {
   ChildIds: 17443067706710834713
   ChildIds: 4950709826130370908
   ChildIds: 6164747938729123173
-  ChildIds: 10660674450217180352
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,45 +39,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 10660674450217180352
-  Name: "TankXPEntry"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1470443520281139121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TankXPEntry"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1625
-            Y: 10600
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9910574544374691705
-    }
   }
 }
 Objects {
