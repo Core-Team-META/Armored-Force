@@ -20,7 +20,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MatchMode"
-      String: "Frontline"
+      String: "LastTeamStanding"
     }
     Overrides {
       Name: "cs:MatchMaxDuration"
@@ -36,7 +36,7 @@ Objects {
     }
     Overrides {
       Name: "cs:GarageLink"
-      String: ""
+      String: "27f652/armored-force-garage"
     }
   }
   Collidable_v2 {
@@ -11964,9 +11964,9 @@ Objects {
   Name: "VictoryLocation"
   Transform {
     Location {
-      X: -9665
-      Y: -15200
-      Z: 240
+      X: -13625
+      Y: -14760
+      Z: 830
     }
     Rotation {
       Yaw: 5
