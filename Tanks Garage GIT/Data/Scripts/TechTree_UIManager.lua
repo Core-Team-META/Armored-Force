@@ -397,7 +397,9 @@ function PopulateCurrencyUI()
 		panel.y = BASE_CURRENCY_POSITION_Y
 		for _, child in ipairs(panel:GetChildren()) do
 			if(child.name == "Icon") then
-				--child:SetImage(v:GetCustomProperty("Icon"))
+				local icon = v:GetCustomProperty("Icon")
+				child:SetImage(icon)
+				child:SetColor(Color.WHITE)
 			elseif(child.name == "Amount") then
 				child.text = tostring(LOCAL_PLAYER:GetResource(v.name))
 			end
