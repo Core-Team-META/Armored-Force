@@ -29597,6 +29597,10 @@ Assets {
               Value: "mc:esfx_cannonshots:59"
             }
           }
+          Overrides {
+            Name: "bp:Enable Dynamic Distant Sound"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
