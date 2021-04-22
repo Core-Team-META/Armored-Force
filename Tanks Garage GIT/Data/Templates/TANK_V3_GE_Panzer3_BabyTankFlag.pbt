@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8967123788436048824
+        ParentId: 13965888329874068820
         ChildIds: 10078787491941011375
         ChildIds: 11405052665646757013
         ChildIds: 15005128715232979486
@@ -242,6 +242,10 @@ Assets {
           Overrides {
             Name: "bp:Radius"
             Float: 10
+          }
+          Overrides {
+            Name: "bp:Size"
+            Float: 2
           }
         }
         Collidable_v2 {
@@ -21871,7 +21875,7 @@ Assets {
         Name: "pole"
         Transform {
           Location {
-            Z: -250
+            Z: -350
           }
           Rotation {
           }
@@ -21883,13 +21887,13 @@ Assets {
         }
         ParentId: 7814192380391849040
         ChildIds: 14243075496351876488
-        ChildIds: 1653779323976173844
-        ChildIds: 15975478611804100682
-        ChildIds: 10900548301944775970
-        ChildIds: 11304048125602205518
-        ChildIds: 4803141953659343234
-        ChildIds: 270934742800422414
         ChildIds: 16632075141405664446
+        ChildIds: 270934742800422414
+        ChildIds: 4803141953659343234
+        ChildIds: 11304048125602205518
+        ChildIds: 10900548301944775970
+        ChildIds: 15975478611804100682
+        ChildIds: 1653779323976173844
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21911,9 +21915,9 @@ Assets {
         Name: "bundle"
         Transform {
           Location {
-            X: 3.34985352
-            Y: 6.12646484
-            Z: 73.0398712
+            X: 3.34990621
+            Y: 6.12647295
+            Z: 118.644073
           }
           Rotation {
           }
@@ -22152,19 +22156,18 @@ Assets {
         }
       }
       Objects {
-        Id: 1653779323976173844
-        Name: "Urban Pipe Coupline 03"
+        Id: 16632075141405664446
+        Name: "Street Light Pole Clamp 01"
         Transform {
           Location {
-            Z: 44.5000114
+            Z: 150.42453
           }
           Rotation {
-            Yaw: -43.6459351
           }
           Scale {
-            X: 0.352945238
-            Y: 0.352945238
-            Z: 0.212984547
+            X: 0.29905957
+            Y: 0.29905957
+            Z: 0.180467173
           }
         }
         ParentId: 10623481451666562999
@@ -22182,9 +22185,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.7
+              G: 0.7
+              B: 0.7
               A: 1
             }
           }
@@ -22195,52 +22198,6 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 5
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 6777447344140592468
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 8748212014664122890
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.2
-              G: 0.2
-              B: 0.2
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 3
           }
         }
         Collidable_v2 {
@@ -22257,7 +22214,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14135151109225738306
+            Id: 12868138083867151982
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -22273,19 +22230,19 @@ Assets {
         }
       }
       Objects {
-        Id: 15975478611804100682
-        Name: "Urban Pipe Coupline 03"
+        Id: 270934742800422414
+        Name: "Fantasy Pommel 02"
         Transform {
           Location {
-            Z: 99.7492447
+            Z: 149.683746
           }
           Rotation {
-            Yaw: -43.6459351
+            Roll: -179.999954
           }
           Scale {
-            X: 0.352945238
-            Y: 0.352945238
-            Z: 0.212984547
+            X: 1.74035084
+            Y: 1.74035192
+            Z: 1.54472244
           }
         }
         ParentId: 10623481451666562999
@@ -22311,57 +22268,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
+            Float: 20
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 6777447344140592468
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail2:vtile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 8748212014664122890
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.2
-              G: 0.2
-              B: 0.2
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 20
           }
         }
         Collidable_v2 {
@@ -22378,7 +22289,155 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14135151109225738306
+            Id: 17616555706524180168
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4803141953659343234
+        Name: "Cylinder - Polished"
+        Transform {
+          Location {
+            Z: 120.890724
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.076336965
+            Y: 0.076336965
+            Z: 0.617791176
+          }
+        }
+        ParentId: 10623481451666562999
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6777447344140592468
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18088187323891878271
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 11304048125602205518
+        Name: "Cylinder - Polished"
+        Transform {
+          Location {
+            Z: 43.304
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.105208375
+            Y: 0.105208375
+            Z: 1
+          }
+        }
+        ParentId: 10623481451666562999
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6777447344140592468
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18088187323891878271
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -22398,17 +22457,17 @@ Assets {
         Name: "FlagRoot"
         Transform {
           Location {
-            X: 4.54409027
-            Y: 4.58915567
-            Z: 71.5537796
+            X: 4.54408932
+            Y: 4.5891552
+            Z: 117.157974
           }
           Rotation {
             Yaw: 178.582
           }
           Scale {
-            X: 0.2
-            Y: 0.2
-            Z: 0.2
+            X: 0.200000018
+            Y: 0.200000018
+            Z: 0.200000018
           }
         }
         ParentId: 10623481451666562999
@@ -22685,18 +22744,19 @@ Assets {
         }
       }
       Objects {
-        Id: 11304048125602205518
-        Name: "Cylinder - Polished"
+        Id: 15975478611804100682
+        Name: "Urban Pipe Coupline 03"
         Transform {
           Location {
-            Z: 21.7392292
+            Z: 145.353439
           }
           Rotation {
+            Yaw: -43.6459198
           }
           Scale {
-            X: 0.105208375
-            Y: 0.105208375
-            Z: 0.489464641
+            X: 0.352945238
+            Y: 0.352945238
+            Z: 0.212984547
           }
         }
         ParentId: 10623481451666562999
@@ -22717,229 +22777,6 @@ Assets {
               R: 1
               G: 1
               B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18088187323891878271
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4803141953659343234
-        Name: "Cylinder - Polished"
-        Transform {
-          Location {
-            Z: 75.2865295
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.076336965
-            Y: 0.076336965
-            Z: 0.617791176
-          }
-        }
-        ParentId: 10623481451666562999
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 6777447344140592468
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18088187323891878271
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 270934742800422414
-        Name: "Fantasy Pommel 02"
-        Transform {
-          Location {
-            Z: 104.079559
-          }
-          Rotation {
-            Roll: -179.999954
-          }
-          Scale {
-            X: 1.74035096
-            Y: 1.74035192
-            Z: 1.54472244
-          }
-        }
-        ParentId: 10623481451666562999
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 6777447344140592468
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 20
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 20
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17616555706524180168
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 16632075141405664446
-        Name: "Street Light Pole Clamp 01"
-        Transform {
-          Location {
-            Z: 104.820335
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.29905957
-            Y: 0.29905957
-            Z: 0.180467159
-          }
-        }
-        ParentId: 10623481451666562999
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 6777447344140592468
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.7
-              G: 0.7
-              B: 0.7
               A: 1
             }
           }
@@ -22951,6 +22788,52 @@ Assets {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 5
           }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 6777447344140592468
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 8748212014664122890
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.2
+              G: 0.2
+              B: 0.2
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 3
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22966,7 +22849,128 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 12868138083867151982
+            Id: 14135151109225738306
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 1653779323976173844
+        Name: "Urban Pipe Coupline 03"
+        Transform {
+          Location {
+            Z: 90.1042099
+          }
+          Rotation {
+            Yaw: -43.6459198
+          }
+          Scale {
+            X: 0.352945238
+            Y: 0.352945238
+            Z: 0.212984547
+          }
+        }
+        ParentId: 10623481451666562999
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6777447344140592468
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 6777447344140592468
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:vtile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 8748212014664122890
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.2
+              G: 0.2
+              B: 0.2
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14135151109225738306
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -26854,21 +26858,21 @@ Assets {
       }
     }
     Assets {
-      Id: 14135151109225738306
-      Name: "Urban Pipe Coupline 03"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_pipes_acc_coupling_003_ref"
-      }
-    }
-    Assets {
       Id: 6777447344140592468
       Name: "Metal Steel Brushed"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_stainless-steel_001_uv"
+      }
+    }
+    Assets {
+      Id: 17616555706524180168
+      Name: "Fantasy Pommel 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_pommel_002"
       }
     }
     Assets {
@@ -26881,12 +26885,12 @@ Assets {
       }
     }
     Assets {
-      Id: 17616555706524180168
-      Name: "Fantasy Pommel 02"
+      Id: 14135151109225738306
+      Name: "Urban Pipe Coupline 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_pommel_002"
+        AssetId: "sm_prop_urb_pipes_acc_coupling_003_ref"
       }
     }
     Assets {

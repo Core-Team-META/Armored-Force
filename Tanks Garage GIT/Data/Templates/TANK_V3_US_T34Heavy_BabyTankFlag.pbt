@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 13965888329874068820
         ChildIds: 2089642028127939598
         ChildIds: 6610963308763986329
         ChildIds: 437151402972571904
@@ -629,7 +629,7 @@ Assets {
         Name: "BabyTankFlag"
         Transform {
           Location {
-            Z: 29.7527103
+            Z: 17.0797157
           }
           Rotation {
           }
@@ -1036,7 +1036,7 @@ Assets {
         Name: "pole"
         Transform {
           Location {
-            Z: -250
+            Z: -350
           }
           Rotation {
           }
@@ -1047,6 +1047,7 @@ Assets {
           }
         }
         ParentId: 12998297222274044361
+        ChildIds: 1204274989351982882
         ChildIds: 13746562673123795243
         ChildIds: 2541612554809996042
         ChildIds: 6883618078988013017
@@ -1054,7 +1055,6 @@ Assets {
         ChildIds: 4752397963552415259
         ChildIds: 4331161479452704630
         ChildIds: 11773993303101032531
-        ChildIds: 1204274989351982882
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1072,13 +1072,87 @@ Assets {
         }
       }
       Objects {
+        Id: 1204274989351982882
+        Name: "Street Light Pole Clamp 01"
+        Transform {
+          Location {
+            Z: 150.4245
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.29905957
+            Y: 0.29905957
+            Z: 0.180467159
+          }
+        }
+        ParentId: 11719621803623308772
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6777447344140592468
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.7
+              G: 0.7
+              B: 0.7
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12868138083867151982
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 13746562673123795243
         Name: "bundle"
         Transform {
           Location {
-            X: 3.34985352
-            Y: 6.12646484
-            Z: 73.0398712
+            X: 3.34990621
+            Y: 6.12647295
+            Z: 118.644051
           }
           Rotation {
           }
@@ -1321,10 +1395,10 @@ Assets {
         Name: "Urban Pipe Coupline 03"
         Transform {
           Location {
-            Z: 44.5000114
+            Z: 90.104187
           }
           Rotation {
-            Yaw: -43.6459351
+            Yaw: -43.6459198
           }
           Scale {
             X: 0.352945238
@@ -1442,10 +1516,10 @@ Assets {
         Name: "Urban Pipe Coupline 03"
         Transform {
           Location {
-            Z: 99.7492447
+            Z: 145.353409
           }
           Rotation {
-            Yaw: -43.6459351
+            Yaw: -43.6459198
           }
           Scale {
             X: 0.352945238
@@ -1563,9 +1637,9 @@ Assets {
         Name: "FlagRoot"
         Transform {
           Location {
-            X: 4.54409027
-            Y: 4.58915567
-            Z: 71.5537796
+            X: 4.54408932
+            Y: 4.5891552
+            Z: 117.157951
           }
           Rotation {
             Yaw: 178.582
@@ -1854,14 +1928,14 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            Z: 21.7392292
+            Z: 43.304
           }
           Rotation {
           }
           Scale {
             X: 0.105208375
             Y: 0.105208375
-            Z: 0.489464641
+            Z: 1
           }
         }
         ParentId: 11719621803623308772
@@ -1928,7 +2002,7 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            Z: 75.2865295
+            Z: 120.890701
           }
           Rotation {
           }
@@ -2002,13 +2076,13 @@ Assets {
         Name: "Fantasy Pommel 02"
         Transform {
           Location {
-            Z: 104.079559
+            Z: 149.683731
           }
           Rotation {
             Roll: -179.999954
           }
           Scale {
-            X: 1.74035096
+            X: 1.74035084
             Y: 1.74035192
             Z: 1.54472244
           }
@@ -2058,80 +2132,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 17616555706524180168
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1204274989351982882
-        Name: "Street Light Pole Clamp 01"
-        Transform {
-          Location {
-            Z: 104.820335
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.29905957
-            Y: 0.29905957
-            Z: 0.180467159
-          }
-        }
-        ParentId: 11719621803623308772
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 6777447344140592468
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.7
-              G: 0.7
-              B: 0.7
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12868138083867151982
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -31097,6 +31097,10 @@ Assets {
             Name: "bp:Radius"
             Float: 10
           }
+          Overrides {
+            Name: "bp:Size"
+            Float: 2
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31502,6 +31506,24 @@ Assets {
       }
     }
     Assets {
+      Id: 12868138083867151982
+      Name: "Street Light Pole Clamp 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_urb_st_post_lights_post_clamp_001"
+      }
+    }
+    Assets {
+      Id: 6777447344140592468
+      Name: "Metal Steel Brushed"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stainless-steel_001_uv"
+      }
+    }
+    Assets {
       Id: 17508282918215783903
       Name: "Bone Human Tibula 01"
       PlatformAssetType: 1
@@ -31547,15 +31569,6 @@ Assets {
       }
     }
     Assets {
-      Id: 6777447344140592468
-      Name: "Metal Steel Brushed"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_stainless-steel_001_uv"
-      }
-    }
-    Assets {
       Id: 6886083913538060196
       Name: "Main Street Awning 02"
       PlatformAssetType: 1
@@ -31580,15 +31593,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_pommel_002"
-      }
-    }
-    Assets {
-      Id: 12868138083867151982
-      Name: "Street Light Pole Clamp 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_urb_st_post_lights_post_clamp_001"
       }
     }
     Assets {

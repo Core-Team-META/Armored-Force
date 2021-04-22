@@ -1,3 +1,5 @@
+--written by AwkwardGameDev
+
 local root = script.parent
 local Rotation = script:GetCustomProperty("rotation")
 local Rotation2 = script:GetCustomProperty("rotation2")
@@ -16,7 +18,7 @@ local SFX_flag2 = script:GetCustomProperty("SFX_flag2"):WaitForObject()
 
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
---on player death
+--SFX, VFX, and animation on baby tank's death
         Task.Wait(1)
         pole.visibility = Visibility.FORCE_ON
         bundle.visibility = Visibility.FORCE_ON
@@ -46,6 +48,7 @@ local Ease3D = require(script:GetCustomProperty("Ease3D"))
         bundle.visibility = Visibility.FORCE_OFF
         SFX_flag2:Play()
 
+--flag cloth animation by WitcherSilver
 function Tick()
 	Task.Wait()
 	Ease3D.EaseRotation(FlagRoot, Rotation.New(0, 0, 100), 2, Ease3D.EasingEquation.SINE, Ease3D.EasingDirection.INOUT)
