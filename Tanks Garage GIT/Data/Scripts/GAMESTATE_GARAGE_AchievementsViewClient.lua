@@ -128,7 +128,7 @@ function Tick()
 	end
 
 	if localPlayer.clientUserData.LOGIN and tonumber(localPlayer.clientUserData.LOGIN) - tonumber(os.time()) > 0 then
-		loginText.text = os.date("%X", math.abs(localPlayer.clientUserData.LOGIN - os.time()))
+		loginText.text = os.date("%X", math.abs(tonumber(localPlayer.clientUserData.LOGIN) - tonumber(os.time())))
 		
 		if loginButton.isInteractable then
 			loginButton.isInteractable = false
