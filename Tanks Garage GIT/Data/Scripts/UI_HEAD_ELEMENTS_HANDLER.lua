@@ -26,6 +26,7 @@ local PLAYER_STATS_BUTTON_HOVER = World.FindObjectByName("PLAYER_STATS_BUTTON_HO
 local TANK_STATS_BUTTON_ACTIVE = World.FindObjectByName("TANK_STATS_BUTTON_ACTIVE")
 local TANK_STATS_BUTTON_HOVER = World.FindObjectByName("TANK_STATS_BUTTON_HOVER")
 
+local BUTTON_TECHTREE_SHOP = World.FindObjectByName("BUTTON_TECHTREE_SHOP")
 local BUTTON_PREMIUM_SHOP = World.FindObjectByName("BUTTON_PREMIUM_SHOP")
 local BUTTON_ACHIEVEMENTS = World.FindObjectByName("BUTTON_ACHIEVEMENTS")
 local BUTTON_LEADERBOARDS = World.FindObjectByName("BUTTON_LEADERBOARDS")
@@ -51,14 +52,13 @@ local CHOOSE_MODE = World.FindObjectByName("CHOOSE_MODE")
 
 local SHELL_UPGRADE_CONFIRM = World.FindObjectByName("SHELL_UPGRADE_CONFIRM")
 local SHELL_UPGRADE_DENY = World.FindObjectByName("SHELL_UPGRADE_DENY")
-
 local TURRET_UPGRADE_CONFIRM = World.FindObjectByName("ENGINE_UPGRADE_CONFIRM")
 local TURRET_UPGRADE_DENY = World.FindObjectByName("TURRET_UPGRADE_DENY")
-
 local ENGINE_UPGRADE_CONFIRM = World.FindObjectByName("ENGINE_UPGRADE_CONFIRM")
 local ENGINE_UPGRADE_DENY = World.FindObjectByName("ENGINE_UPGRADE_DENY")
 
 -- CONNECTING MAIN_MENU HOVER_PANELS
+local TECHTREE_HOVER = World.FindObjectByName("TECHTREE_HOVER")
 local PREMIUM_SHOP_HOVER = World.FindObjectByName("PREMIUM_SHOP_HOVER")
 local ACHIEVEMENTS_HOVER = World.FindObjectByName("ACHIEVEMENTS_HOVER")
 local LEADERBOARDS_HOVER = World.FindObjectByName("LEADERBOARDS_HOVER")
@@ -69,6 +69,7 @@ local CHOOSE_MODE_TUNDRA_HOVER = World.FindObjectByName("CHOOSE_MODE_TUNDRA_HOVE
 local DEPLOY_HOVER = World.FindObjectByName("DEPLOY_HOVER")
 
 -- CONNECTING MAIN_MENU ACTIVE_PANELS
+local TECHTREE_ACTIVE = World.FindObjectByName("TECHTREE_ACTIVE")
 local PREMIUM_SHOP_ACTIVE = World.FindObjectByName("PREMIUM_SHOP_ACTIVE")
 local ACHIEVEMENTS_ACTIVE = World.FindObjectByName("ACHIEVEMENTS_ACTIVE")
 local LEADERBOARDS_ACTIVE = World.FindObjectByName("LEADERBOARDS_ACTIVE")
@@ -162,9 +163,7 @@ function Tick(deltaTime)
 		else
 			newPosition = CoreMath.Lerp(OPEN_DROPDOWN_Y, CLOSED_DROPDOWN_Y, (DROPDOWN_TOGGLE_TIME - timeRemaining) / DROPDOWN_TOGGLE_TIME)
 		end
-		
 		CHOOSE_MODE.y = newPosition
-		
 		if timeRemaining <= 0 then
 			isMoving = false
 		end
@@ -178,9 +177,7 @@ function Tick(deltaTime)
 		else
 			STATS_newPosition = CoreMath.Lerp(STATS_OPEN_DROPDOWN_Y, STATS_CLOSED_DROPDOWN_Y, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		STATS_CONTAINER.y = STATS_newPosition
-		
 		if STATS_timeRemaining <= 0 then
 			STATS_isMoving = false
 		end
@@ -194,9 +191,7 @@ function Tick(deltaTime)
 		else
 			STATS_PLAYER_newPosition = CoreMath.Lerp(STATS_PLAYER_OPEN_DROPDOWN_Y, STATS_PLAYER_CLOSED_DROPDOWN_Y, (STATS_PLAYER_DROPDOWN_TOGGLE_TIME - STATS_PLAYER_timeRemaining) / STATS_PLAYER_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		STATS_PLAYER.y = STATS_PLAYER_newPosition
-		
 		if STATS_PLAYER_timeRemaining <= 0 then
 			STATS_PLAYER_isMoving = false
 		end
@@ -210,9 +205,7 @@ function Tick(deltaTime)
 		else
 			STATS_TANK_newPosition = CoreMath.Lerp(STATS_TANK_OPEN_DROPDOWN_Y, STATS_TANK_CLOSED_DROPDOWN_Y, (STATS_TANK_DROPDOWN_TOGGLE_TIME - STATS_TANK_timeRemaining) / STATS_TANK_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		STATS_TANK.y = STATS_TANK_newPosition
-		
 		if STATS_TANK_timeRemaining <= 0 then
 			STATS_TANK_isMoving = false
 		end
@@ -226,9 +219,7 @@ function Tick(deltaTime)
 		else
 			SHELL_CONFIRM_newPosition = CoreMath.Lerp(TANKUPGRADE_CONFIRM_OPEN_DROPDOWN_Y, TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y, (TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_CONFIRM_timeRemaining) / TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		SHELL_UPGRADE_CONFIRM.y = SHELL_CONFIRM_newPosition
-		
 		if TANKUPGRADE_CONFIRM_timeRemaining <= 0 then
 			SHELL_CONFIRM_isMoving = false
 		end
@@ -242,9 +233,7 @@ function Tick(deltaTime)
 		else
 			SHELL_DENY_newPosition = CoreMath.Lerp(TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		SHELL_DENY_CONFIRM.y = SHELL_DENY_newPosition
-		
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			SHELL_DENY_isMoving = false
 		end
@@ -258,9 +247,7 @@ function Tick(deltaTime)
 		else
 			TURRET_CONFIRM_newPosition = CoreMath.Lerp(TANKUPGRADE_CONFIRM_OPEN_DROPDOWN_Y, TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y, (TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_CONFIRM_timeRemaining) / TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		TURRET_UPGRADE_CONFIRM.y = TURRET_CONFIRM_newPosition
-		
 		if TANKUPGRADE_CONFIRM_timeRemaining <= 0 then
 			TURRET_CONFIRM_isMoving = false
 		end
@@ -274,9 +261,7 @@ function Tick(deltaTime)
 		else
 			TURRET_DENY_newPosition = CoreMath.Lerp(TURRET_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		TURRET_DENY_CONFIRM.y = TURRET_DENY_newPosition
-		
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			TURRET_DENY_isMoving = false
 		end
@@ -290,9 +275,7 @@ function Tick(deltaTime)
 		else
 			ENGINE_CONFIRM_newPosition = CoreMath.Lerp(TANKUPGRADE_CONFIRM_OPEN_DROPDOWN_Y, TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y, (TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_CONFIRM_timeRemaining) / TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		ENGINE_UPGRADE_CONFIRM.y = ENGINE_CONFIRM_newPosition
-		
 		if TANKUPGRADE_CONFIRM_timeRemaining <= 0 then
 			ENGINE_CONFIRM_isMoving = false
 		end
@@ -306,9 +289,7 @@ function Tick(deltaTime)
 		else
 			ENGINE_DENY_newPosition = CoreMath.Lerp(TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		end
-		
 		ENGINE_DENY_CONFIRM.y = ENGINE_DENY_newPosition
-		
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			ENGINE_DENY_isMoving = false
 		end
@@ -691,8 +672,8 @@ function CLICKED_STATS(STATS_DROPDOWN_BUTTON)
 	TANK_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
-	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	STATS_TANK_TOGGLE_DROPDOWN_CLOSE()
+	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	STATS_TOGGLE_DROPDOWN()
 end
 
@@ -705,12 +686,12 @@ end
 -- PLAYER_STATS BUTTON HANDLER
 function CLICKED_PLAYER_STATS(PLAYER_STATS_BUTTON)
 	if PLAYER_STATS_BUTTON_ACTIVE.visibility == Visibility.FORCE_OFF then
-	SFX_CLICK:Play()
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
 	TANK_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_OFF
-	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	STATS_TANK_TOGGLE_DROPDOWN_CLOSE()
+	Task.Wait(0.25)
+	STATS_PLAYER_TOGGLE_DROPDOWN_OPEN()
 	end
 end
 
@@ -730,12 +711,12 @@ end
 -- TANK_STATS BUTTON HANDLER
 function CLICKED_TANK_STATS(TANK_STATS_BUTTON)
 	if TANK_STATS_BUTTON_ACTIVE.visibility == Visibility.FORCE_OFF then
-	SFX_CLICK:Play()
 	TANK_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_OFF
 	TANK_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
-	STATS_TANK_TOGGLE_DROPDOWN_OPEN()
 	STATS_PLAYER_TOGGLE_DROPDOWN_CLOSE()
+	Task.Wait(0.2)
+	STATS_TANK_TOGGLE_DROPDOWN_OPEN()
 	end
 end
 
@@ -751,6 +732,25 @@ function UNHOVERED_TANK_STATS(TANK_STATS_BUTTON)
 	if TANK_STATS_BUTTON_ACTIVE.visibility == Visibility.FORCE_OFF then
 	TANK_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
 	end
+end
+
+-- TECHTREE_SHOP BUTTON HANDLER
+function CLICKED_TECHTREE_SHOP(BUTTON_TECHTREE_SHOP)
+	SFX_CLICK:Play()
+	if ACTIVE_HEAD_MENU ~= 4 then
+		ACTIVE_HEAD_MENU = 4
+	else
+		ACTIVE_HEAD_MENU = 0
+	end
+end
+
+function HOVERED_TECHTREE_SHOP(BUTTON_TECHTREE_SHOP)
+	SFX_HOVER:Play()
+	HOVER_HEAD_MENU = 4
+end
+
+function UNHOVERED_TECHTREE_SHOP(BUTTON_TECHTREE_SHOP)
+	HOVER_HEAD_MENU = 0
 end
 
 -- PREMIUM_SHOP BUTTON HANDLER
@@ -930,36 +930,54 @@ function CHECK_STATE()
 	PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
 	ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
 	LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
+	TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
 	elseif ACTIVE_HEAD_MENU == 1 then
 	PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_ON
 	ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
 	LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
+	TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
 	elseif ACTIVE_HEAD_MENU == 2 then
 	PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
 	ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_ON
 	LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
+	TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
 	elseif ACTIVE_HEAD_MENU == 3 then
 	PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
 	ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
 	LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_ON
+	TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
+	elseif ACTIVE_HEAD_MENU == 4 then
+	PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
+	ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
+	LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
+	TECHTREE_ACTIVE.visibility = Visibility.FORCE_ON
 	end
 	
 	if HOVER_HEAD_MENU == 0 then
 	PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
 	ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
 	LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
+	TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
 	elseif HOVER_HEAD_MENU == 1 then
 	PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_ON
 	ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
 	LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
+	TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
 	elseif HOVER_HEAD_MENU == 2 then
 	PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
 	ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_ON
 	LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
+	TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
 	elseif HOVER_HEAD_MENU == 3 then
 	PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
 	ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
 	LEADERBOARDS_HOVER.visibility = Visibility.FORCE_ON
+	TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
+	elseif HOVER_HEAD_MENU == 4 then
+	PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
+	ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
+	LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
+	TECHTREE_HOVER.visibility = Visibility.FORCE_ON
 	end
 		
 	if HOVERED_MODE== 0 then
@@ -1012,6 +1030,7 @@ Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 STATS_DROPDOWN_BUTTON.clickedEvent:Connect(CLICKED_STATS)
 PLAYER_STATS_BUTTON.clickedEvent:Connect(CLICKED_PLAYER_STATS)
 TANK_STATS_BUTTON.clickedEvent:Connect(CLICKED_TANK_STATS)
+BUTTON_TECHTREE_SHOP.clickedEvent:Connect(CLICKED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.clickedEvent:Connect(CLICKED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.clickedEvent:Connect(CLICKED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.clickedEvent:Connect(CLICKED_LEADERBOARDS)
@@ -1025,6 +1044,7 @@ DEPLOY_BUTTON.clickedEvent:Connect(CLICKED_DEPLOY)
 STATS_DROPDOWN_BUTTON.hoveredEvent:Connect(HOVERED_STATS)
 PLAYER_STATS_BUTTON.hoveredEvent:Connect(HOVERED_PLAYER_STATS)
 TANK_STATS_BUTTON.hoveredEvent:Connect(HOVERED_TANK_STATS)
+BUTTON_TECHTREE_SHOP.hoveredEvent:Connect(HOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.hoveredEvent:Connect(HOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.hoveredEvent:Connect(HOVERED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.hoveredEvent:Connect(HOVERED_LEADERBOARDS)
@@ -1038,6 +1058,7 @@ DEPLOY_BUTTON.hoveredEvent:Connect(HOVERED_DEPLOY)
 STATS_DROPDOWN_BUTTON.unhoveredEvent:Connect(UNHOVERED_STATS)
 PLAYER_STATS_BUTTON.unhoveredEvent:Connect(UNHOVERED_PLAYER_STATS)
 TANK_STATS_BUTTON.unhoveredEvent:Connect(UNHOVERED_TANK_STATS)
+BUTTON_TECHTREE_SHOP.unhoveredEvent:Connect(UNHOVERED_TECHTREE_SHOP)
 BUTTON_ACHIEVEMENTS.unhoveredEvent:Connect(UNHOVERED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.unhoveredEvent:Connect(UNHOVERED_LEADERBOARDS)
 CHOOSE_MODE_BUTTON.unhoveredEvent:Connect(UNHOVERED_CHOOSE_MODE)
@@ -1047,6 +1068,6 @@ CHOOSE_MODE_TUNDRA_BUTTON.unhoveredEvent:Connect(UNHOVERED_CHOOSE_MODE_TUNDRA)
 DEPLOY_BUTTON.unhoveredEvent:Connect(UNHOVERED_DEPLOY)
 
 -- Change MAP to MODE on all values and functions KonzZwodrei [ 07.04.2021 ]
--- Added additional functionality by USERNAME [ dd.mm.yyyyy ]
+-- Added and animated functional: User Menu + Player Stats & Chosen Tank Stats UI's [ 22.04.2021 ]
 -- Added additional functionality by USERNAME [ dd.mm.yyyyy ]
 -- Added additional functionality by USERNAME [ dd.mm.yyyyy ]
