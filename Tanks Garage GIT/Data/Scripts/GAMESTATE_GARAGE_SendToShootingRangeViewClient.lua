@@ -18,19 +18,15 @@ local LoweGARAGEMODEL = script:GetCustomProperty("TankGELoweGARAGEMODEL")
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
 local mainManagerServer = script:GetCustomProperty("GAMESTATE_MainManagerServer"):WaitForObject()
-
 local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
-
 local sendToShootingRangeViewUI = script:GetCustomProperty("SendToShootingRangeViewUI"):WaitForObject()
 local blackScreen = script:GetCustomProperty("BlackScreen"):WaitForObject()
-
 local door = script:GetCustomProperty("Door"):WaitForObject()
-
 local equippedTankInGarage = script:GetCustomProperty("EquippedTankInGarage"):WaitForObject()
-
 local returnToGarageTrigger = script:GetCustomProperty("ReturnToGarageTrigger"):WaitForObject()
-
 local spawnLocation = script:GetCustomProperty("SpawnOutsideGarageLocation"):WaitForObject()
+local mainUI = script:GetCustomProperty("MainUI"):WaitForObject()
+
 
 local thisComponent = "SHOOTING_RANGE"
 
@@ -134,8 +130,7 @@ function SendBackToGarage(trigger, other)
 			
 	end
 	
-	sendToShootingRangeViewUI.isEnabled = false
-	
+	sendToShootingRangeViewUI.isEnabled = false	
 	
 end
 
@@ -149,6 +144,8 @@ end
 function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
+	
+		mainUI.visibility = Visibility.FORCE_OFF
 		
 		Task.Wait(2.5)
 		
@@ -184,13 +181,15 @@ function ToggleThisComponent(requestedPlayerState)
 		
 		localPlayer:ClearOverrideCamera()
 		
+		--[[
 		while (localPlayer:GetWorldPosition() - spawnLocation:GetWorldPosition()).size > 100 do -- wait for respawn.
 		
 			Task.Wait(0.1)
 			
 		end
+		]]
 		
-		Task.Wait(1) -- wait for tank to settle.
+		Task.Wait(1.5) -- wait for tank to settle.
 		
 		for i = 100, 1, -1 do 
 		

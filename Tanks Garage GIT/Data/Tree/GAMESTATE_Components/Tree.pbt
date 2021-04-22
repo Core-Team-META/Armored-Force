@@ -596,6 +596,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:MainUI"
+      ObjectReference {
+        SelfId: 15186286892296639228
+      }
+    }
+    Overrides {
       Name: "cs:TankUSM24ChaffeeGARAGEMODEL"
       AssetReference {
         Id: 17661669092028267410
@@ -9087,6 +9093,12 @@ Objects {
       Name: "cs:LoadEquippableTanks"
       ObjectReference {
         SelfId: 4622464741000195041
+      }
+    }
+    Overrides {
+      Name: "cs:BlackScreen"
+      ObjectReference {
+        SelfId: 13299598676297154641
       }
     }
   }

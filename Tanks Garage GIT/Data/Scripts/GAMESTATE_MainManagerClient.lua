@@ -27,12 +27,11 @@ function OnServerStateChange(serverManager, property)
 	
 	if string.find(property, "GARAGE_STATE") and not isInGarage then
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "DEFAULT_MENU")
-		
 		isInGarage = true
+		Task.Wait(1)
 		mainHUD.visibility = Visibility.INHERIT
 	elseif not string.find(property, "GARAGE_STATE") and isInGarage then 
 		Events.Broadcast("DISABLE_ALL_GARAGE_COMPONENTS")
-		
 		isInGarage = false
 		mainHUD.visibility = Visibility.FORCE_OFF
 	end	
