@@ -8461,7 +8461,6 @@ Objects {
   }
   ParentId: 15177659444916868221
   ChildIds: 6386836946034972835
-  ChildIds: 17209884673843944142
   ChildIds: 13530425638157431226
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8530,7 +8529,6 @@ Objects {
   Control {
     Width: 200
     Height: 70
-    UIX: 110
     UIY: 75
     RenderTransformPivot {
       Anchor {
@@ -8539,103 +8537,6 @@ Objects {
     }
     Button {
       Label: "SHOOTING RANGE"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 0.409999967
-        G: 0.138476819
-        A: 1
-      }
-      HoveredColor {
-        R: 0.87
-        G: 0.276556313
-        A: 1
-      }
-      PressedColor {
-        R: 0.120000005
-        G: 0.050066229
-        A: 1
-      }
-      DisabledColor {
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17209884673843944142
-  Name: "GoToTechTreeButton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3422279684606684169
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SendToComponent"
-      String: "TECH_TREE_MENU"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    UIX: -110
-    UIY: 75
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "TECH TREE"
       FontColor {
         R: 1
         G: 1
