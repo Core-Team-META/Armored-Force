@@ -154,12 +154,6 @@ function Tick()
 					player.serverUserData.CHALLENGE[i].progress = 0
 					player.serverUserData.CHALLENGE[i].dueDate = 
 					os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
-					
-					--[[
-					local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
-					print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
-					.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
-					]]--
 				end
 			end
 				
@@ -175,20 +169,15 @@ end
 
 function ClaimReward(player, challengeNumber)
 
-	if  player.serverUserData.CHALLENGE[i].progress >= player.serverUserData.CHALLENGE[i].target then
+	if  player.serverUserData.CHALLENGE[challengeNumber].progress >= player.serverUserData.CHALLENGE[challengeNumber].target then
 		player:AddResource(CONSTANTS_API.SILVER, 100)
 		player:AddResource(UTIL_API.GetTankRPString(player:GetResource(CONSTANTS_API.GetEquippedTankResource())), 2000)
 		
-		player.serverUserData.CHALLENGE[i].progress = 0
-		player.serverUserData.CHALLENGE[i].dueDate = 
+		player.serverUserData.CHALLENGE[challengeNumber].progress = 0
+		player.serverUserData.CHALLENGE[challengeNumber].dueDate = 
 		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
 		
 		AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
-		--[[
-		local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
-		print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
-		.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
-		]]--
 	end	
 
 end
