@@ -26,6 +26,12 @@ local equippedTankInGarage = script:GetCustomProperty("EquippedTankInGarage"):Wa
 local returnToGarageTrigger = script:GetCustomProperty("ReturnToGarageTrigger"):WaitForObject()
 local spawnLocation = script:GetCustomProperty("SpawnOutsideGarageLocation"):WaitForObject()
 local mainUI = script:GetCustomProperty("MainUI"):WaitForObject()
+local Spotlight = script:GetCustomProperty("Spotlight"):WaitForObject()
+local SFX1 = script:GetCustomProperty("SFX1"):WaitForObject()
+local SFX2 = script:GetCustomProperty("SFX2"):WaitForObject()
+local SFX3 = script:GetCustomProperty("SFX3"):WaitForObject()
+local SFXStinger1 = script:GetCustomProperty("SFXStinger1"):WaitForObject()
+local SFXMusic = script:GetCustomProperty("SFXMusic"):WaitForObject()
 
 
 local thisComponent = "SHOOTING_RANGE"
@@ -97,6 +103,11 @@ function SendBackToGarage(trigger, other)
 	sendToShootingRangeViewUI.isEnabled = true
 	
 	Ease3D.EasePosition(door, Vector3.UP * 850, 2, Ease3D.EasingEquation.QUADRATIC, Ease3D.EasingDirection.OUT)
+	SFX1:Play()
+	Task.Wait(0.2)
+	SFX2:Play()
+	Task.Wait(1.4)
+	SFX3:Play()
 	
 	Task.Wait(1)
 	
@@ -118,6 +129,8 @@ function SendBackToGarage(trigger, other)
 	
 	door:SetPosition(Vector3.ZERO)
 	
+	SFXMusic:Play()
+	Spotlight.visibility = Visibility.FORCE_ON
 	equippedTankInGarage.visibility = Visibility.INHERIT
 	
 	Task.Wait(2)
@@ -146,16 +159,23 @@ function ToggleThisComponent(requestedPlayerState)
 	if requestedPlayerState == thisComponent then
 	
 		mainUI.visibility = Visibility.FORCE_OFF
-		
+		SFXMusic:Stop()
+		SFXStinger1:Play()
+
 		Task.Wait(2.5)
-		
+
 		localPlayer:SetOverrideCamera(overrideCamera)
 		
 		Ease3D.EasePosition(equippedTankInGarage, Vector3.FORWARD * 2000, 4, Ease3D.EasingEquation.QUADRATIC, Ease3D.EasingDirection.IN)
 		
 		Ease3D.EasePosition(door, Vector3.UP * 850, 2, Ease3D.EasingEquation.QUADRATIC, Ease3D.EasingDirection.OUT)
+		SFX1:Play()
+		Task.Wait(0.2)
+		SFX2:Play()
+		Task.Wait(1.4)
+		SFX3:Play()
 		
-		Task.Wait(2)
+		Task.Wait(1)
 		
 		blackScreen:SetColor(Color.New(0, 0, 0, 0))
 	
@@ -169,6 +189,7 @@ function ToggleThisComponent(requestedPlayerState)
 			
 		end
 		
+		Spotlight.visibility = Visibility.FORCE_OFF
 		equippedTankInGarage.visibility = Visibility.FORCE_OFF
 				
 		while not CheckPlayerIsInState("SHOOTING_RANGE_STATE") do 
@@ -200,6 +221,11 @@ function ToggleThisComponent(requestedPlayerState)
 		end
 		
 		Ease3D.EasePosition(door, Vector3.ZERO, 2, Ease3D.EasingEquation.QUADRATIC, Ease3D.EasingDirection.IN)
+		SFX1:Play()
+		Task.Wait(0.2)
+		SFX2:Play()
+		Task.Wait(1.4)
+		SFX3:Play()
 		
 		sendToShootingRangeViewUI.isEnabled = false
 		

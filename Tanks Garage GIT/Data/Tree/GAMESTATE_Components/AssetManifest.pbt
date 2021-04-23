@@ -1,4 +1,31 @@
 Assets {
+  Id: 17033873748477954084
+  Name: "Heavy Turning Mechanism Machine Start 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_heavy_turning_mechanism_machine_start_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 14980006289843045641
+  Name: "Action Combat Stingers 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_stinger_action_combat_stingers_01_ref"
+  }
+}
+Assets {
+  Id: 14696357391736689682
+  Name: "Heavy Turning Mechanism Machine Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_heavy_turning_mechanism_machine_loop_01_Cue_ref"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -32,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_painted_old_001_uv"
+  }
+}
+Assets {
+  Id: 8261458164842943679
+  Name: "Heavy Turning Mechanism Machine End 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_heavy_turning_mechanism_machine_end_01_Cue_ref"
   }
 }
 Assets {
@@ -77,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
+  Id: 4205293609565108055
+  Name: "\"Epic Tides Battle\" Music Construction Kit (Layers) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_epic_tides_battle_layers_kit_ref"
   }
 }
 Assets {
