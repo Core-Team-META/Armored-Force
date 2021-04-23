@@ -1074,8 +1074,8 @@ Objects {
   Name: "exposure correction"
   Transform {
     Location {
-      X: 54.7647324
-      Y: 112.768539
+      X: 23.2669067
+      Y: 112.768723
       Z: 635.622559
     }
     Rotation {

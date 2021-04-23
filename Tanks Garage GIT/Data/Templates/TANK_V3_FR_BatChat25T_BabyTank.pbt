@@ -294,7 +294,7 @@ Assets {
           Overrides {
             Name: "cs:DeadTank"
             AssetReference {
-              Id: 13924359390479276914
+              Id: 13920366079316851234
             }
           }
           Overrides {
@@ -8997,8 +8997,8 @@ Assets {
         Name: "Street Light Pole Top 01"
         Transform {
           Location {
-            X: -144.513428
-            Z: 45.157753
+            X: -186
+            Z: 45.1577606
           }
           Rotation {
           }

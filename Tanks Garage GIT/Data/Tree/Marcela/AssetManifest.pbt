@@ -1088,15 +1088,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10813994503165371451
-  Name: "Tank Muzzle Flash VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_mil_tank_mf"
-  }
-}
-Assets {
   Id: 10780552303138620685
   Name: "Sci-fi Ship Engine 03"
   PlatformAssetType: 1
@@ -2318,15 +2309,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_pipes_acc_flange_002_ref"
-  }
-}
-Assets {
-  Id: 1481620952400580020
-  Name: "Cannon Tank Artillery Shots Set 01 SFX"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "sfxabp_gunshot_cannons_ref"
   }
 }
 Assets {
