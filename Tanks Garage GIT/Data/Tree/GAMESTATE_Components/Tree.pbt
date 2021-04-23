@@ -50,6 +50,7 @@ Objects {
   ParentId: 13018728252322818432
   ChildIds: 14888022740908897639
   ChildIds: 3560013976433981838
+  ChildIds: 10288060073474526785
   ChildIds: 3309395010913558913
   ChildIds: 6098914780170697153
   ChildIds: 9577293156366078378
@@ -459,6 +460,317 @@ Objects {
   }
 }
 Objects {
+  Id: 10288060073474526785
+  Name: "SFX"
+  Transform {
+    Location {
+      X: -420.956055
+      Y: 5045.77344
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6917066571319477230
+  ChildIds: 14583709737474355677
+  ChildIds: 11463568954640832463
+  ChildIds: 16481052851139742946
+  ChildIds: 6448185584997789717
+  ChildIds: 1541642657207629662
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1541642657207629662
+  Name: "Action Combat Stingers 01"
+  Transform {
+    Location {
+      X: 420.956055
+      Y: -5045.77344
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10288060073474526785
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_action_combat_stingers:41"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14980006289843045641
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 1.2
+      Falloff: 3600
+      Radius: 400
+    }
+  }
+}
+Objects {
+  Id: 6448185584997789717
+  Name: "Heavy Turning Mechanism Machine End 01 SFX"
+  Transform {
+    Location {
+      X: -280.63739
+      Y: 3363.84863
+      Z: 1091.98218
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10288060073474526785
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8261458164842943679
+    }
+    Volume: 2
+    Falloff: 5000
+    Radius: 1500
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 16481052851139742946
+  Name: "Heavy Turning Mechanism Machine Loop 01 SFX"
+  Transform {
+    Location {
+      X: -280.63739
+      Y: 3363.84863
+      Z: 1091.98218
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10288060073474526785
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 14696357391736689682
+    }
+    Pitch: -100
+    Volume: 2
+    Falloff: 5000
+    Radius: 1500
+    IsAttenuationEnabled: true
+    StopTime: 1.4
+  }
+}
+Objects {
+  Id: 11463568954640832463
+  Name: "Heavy Turning Mechanism Machine Start 01 SFX"
+  Transform {
+    Location {
+      X: -280.63739
+      Y: 3363.84863
+      Z: 1091.98218
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10288060073474526785
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 17033873748477954084
+    }
+    Pitch: -500
+    Volume: 1
+    Falloff: 5000
+    Radius: 1500
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 14583709737474355677
+  Name: "\"Epic Tides Battle\" Music Construction Kit (Layers) 01"
+  Transform {
+    Location {
+      X: 420.956055
+      Y: -5045.77344
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10288060073474526785
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:String Melody 1 High Volume"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:String Melody 1 Low Volume"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:High Strings Chords Volume"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Low Strings Chords Strings Volume"
+      Float: 25
+    }
+    Overrides {
+      Name: "bp:Low Notes Hit Strings Volume"
+      Float: 15
+    }
+    Overrides {
+      Name: "bp:Low Notes Hit Brass Volume"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vocal Chants Volume"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Hand Percussion Volume"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Metal Percussion Volume"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:String Melody 2 High Volume"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:String Melody 2 Low Volume"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Epic Drums"
+      Float: 24
+    }
+    Overrides {
+      Name: "bp:Cymbals Volume"
+      Float: 25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4205293609565108055
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      AutoPlay: true
+      Repeat: true
+      Volume: 0.45
+      Falloff: 3600
+      Radius: 400
+      FadeInTime: 1
+      FadeOutTime: 3
+    }
+  }
+}
+Objects {
   Id: 3560013976433981838
   Name: "Spotlight"
   Transform {
@@ -489,7 +801,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Light {
-    Intensity: 57.4637909
+    Intensity: 100
     Color {
       R: 1
       G: 1
@@ -599,6 +911,42 @@ Objects {
       Name: "cs:MainUI"
       ObjectReference {
         SelfId: 15186286892296639228
+      }
+    }
+    Overrides {
+      Name: "cs:Spotlight"
+      ObjectReference {
+        SelfId: 3560013976433981838
+      }
+    }
+    Overrides {
+      Name: "cs:SFX1"
+      ObjectReference {
+        SelfId: 11463568954640832463
+      }
+    }
+    Overrides {
+      Name: "cs:SFX2"
+      ObjectReference {
+        SelfId: 16481052851139742946
+      }
+    }
+    Overrides {
+      Name: "cs:SFX3"
+      ObjectReference {
+        SelfId: 6448185584997789717
+      }
+    }
+    Overrides {
+      Name: "cs:SFXStinger1"
+      ObjectReference {
+        SelfId: 1541642657207629662
+      }
+    }
+    Overrides {
+      Name: "cs:SFXMusic"
+      ObjectReference {
+        SelfId: 14583709737474355677
       }
     }
     Overrides {
@@ -793,7 +1141,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -838,7 +1186,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -909,7 +1257,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -980,7 +1328,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -1050,7 +1398,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
