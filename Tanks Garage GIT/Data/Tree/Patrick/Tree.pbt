@@ -1500,6 +1500,12 @@ Objects {
         Id: 2269572116006940077
       }
     }
+    Overrides {
+      Name: "cs:GAMESTATE_MainManagerServer"
+      ObjectReference {
+        SelfId: 16752799134896046516
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1798,6 +1804,12 @@ Objects {
       Name: "cs:MetaAbilityProgressionUTIL_API"
       AssetReference {
         Id: 2269572116006940077
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_MainManagerServer"
+      ObjectReference {
+        SelfId: 16752799134896046516
       }
     }
   }
@@ -2100,6 +2112,12 @@ Objects {
         Id: 2269572116006940077
       }
     }
+    Overrides {
+      Name: "cs:GAMESTATE_MainManagerServer"
+      ObjectReference {
+        SelfId: 16752799134896046516
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2398,6 +2416,12 @@ Objects {
       Name: "cs:MetaAbilityProgressionUTIL_API"
       AssetReference {
         Id: 2269572116006940077
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_MainManagerServer"
+      ObjectReference {
+        SelfId: 16752799134896046516
       }
     }
   }
