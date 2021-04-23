@@ -17,6 +17,7 @@ local firstTime = true
 -------------------
 
 local thisComponent = "DEFAULT_MENU"
+local savedState = ""
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -30,8 +31,9 @@ local localPlayer = Game.GetLocalPlayer()
 	
 ]]
 
-
 function ToggleThisComponent(requestedPlayerState)
+	
+	savedState = requestedPlayerState
 
 	if requestedPlayerState == thisComponent then
 		if not firstTime then
@@ -39,7 +41,11 @@ function ToggleThisComponent(requestedPlayerState)
 		else
 			firstTime = false
 		end
-	
+		
+		if savedState ~= thisComponent then
+			return
+		end
+		
 		defaultViewUI.isEnabled = true
 	else
 		Task.Wait(0.1)

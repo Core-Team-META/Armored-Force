@@ -13,6 +13,7 @@ local premiumSubscription = script:GetCustomProperty("PremiumSubscription")
 local techTreeContents = script:GetCustomProperty("TechTreeContents"):WaitForObject()
 
 local thisComponent = "SHOP_MENU"
+local savedState = ""
 
 local premiumTanksInfo = {}
 local xpTanksInfo = {}
@@ -25,6 +26,8 @@ local localPlayer = Game.GetLocalPlayer()
 
 function ToggleThisComponent(requestedPlayerState)
 
+	savedState = requestedPlayerState
+	
 	if requestedPlayerState == thisComponent then
 
 		freeXPAmountText.text = "Free XP: " .. tostring(localPlayer:GetResource(CONSTANTS_API.FREERP))
@@ -35,16 +38,17 @@ function ToggleThisComponent(requestedPlayerState)
 		PopulateXPTanks()
 		
 		Task.Wait(2)
+		
+		if savedState ~= thisComponent or shopViewUI.isEnabled then
+			return
+		end
 	
 		shopViewUI.isEnabled = true
 		
 	
 	else
-	
 		Task.Wait(0.1)
-	
 		DisableThisComponent()
-		
 	end
 	
 end

@@ -4,29 +4,29 @@ local techTreeViewUI = script:GetCustomProperty("TechTreeViewUI"):WaitForObject(
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 
 local thisComponent = "TECH_TREE_MENU"
+local savedState = ""
 
 local localPlayer = Game.GetLocalPlayer()
 
 
 function ToggleThisComponent(requestedPlayerState)
 
-	if requestedPlayerState == thisComponent then
+	savedState = requestedPlayerState
 	
+	if requestedPlayerState == thisComponent then
 		localPlayer:SetOverrideCamera(overrideCamera, 2)
 		
 		Task.Wait(2)
+		
+		if savedState ~= thisComponent or techTreeViewUI.isEnabled then
+			localPlayer:ClearOverrideCamera()
+			return
+		end
 	
 		techTreeViewUI.isEnabled = true
-		
-		
-		
-	
 	else
-	
 		Task.Wait(0.1)
-	
 		DisableThisComponent()
-		
 	end
 	
 end
