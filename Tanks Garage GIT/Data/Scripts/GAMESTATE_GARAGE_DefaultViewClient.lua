@@ -42,7 +42,7 @@ function ToggleThisComponent(requestedPlayerState)
 			firstTime = false
 		end
 		
-		if savedState ~= thisComponent then
+		if savedState ~= thisComponent or defaultViewUI.isEnabled then
 			return
 		end
 		
@@ -156,8 +156,7 @@ function EquipTank(button)
 	ReliableEvents.BroadcastToServer("CHANGE_EQUIPPED_TANK", button.name)
 end
 
-InitializeComponent()
-ToggleThisComponent(thisComponent)
-
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
+
+InitializeComponent()

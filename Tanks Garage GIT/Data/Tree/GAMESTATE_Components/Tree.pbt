@@ -4926,6 +4926,7 @@ Objects {
   Control {
     Width: 500
     Height: 700
+    UIY: 45
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4981,7 +4982,7 @@ Objects {
   Control {
     Width: 200
     Height: 100
-    UIY: 75
+    UIY: 120
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5177,6 +5178,7 @@ Objects {
   Control {
     Width: 500
     Height: 700
+    UIY: 40
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5232,7 +5234,7 @@ Objects {
   Control {
     Width: 200
     Height: 100
-    UIY: 75
+    UIY: 115
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5421,7 +5423,7 @@ Objects {
   }
   Control {
     Width: 100
-    Height: 200
+    Height: 120
     UIY: 775
     RenderTransformPivot {
       Anchor {
@@ -5669,8 +5671,8 @@ Objects {
   }
   Control {
     Width: 100
-    Height: 200
-    UIY: 535
+    Height: 120
+    UIY: 615
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5916,8 +5918,8 @@ Objects {
   }
   Control {
     Width: 100
-    Height: 200
-    UIY: 285
+    Height: 120
+    UIY: 450
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6163,8 +6165,8 @@ Objects {
   }
   Control {
     Width: 100
-    Height: 200
-    UIY: 35
+    Height: 120
+    UIY: 280
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6411,9 +6413,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 250
-    Height: 70
-    UIY: 245
+    Width: 200
+    Height: 50
+    UIY: 355
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6489,7 +6491,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 25
+      Size: 20
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6537,7 +6539,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6546,9 +6548,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 250
-    Height: 70
-    UIY: 155
+    Width: 200
+    Height: 50
+    UIY: 290
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6625,7 +6627,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 30
+      Size: 20
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -6673,7 +6675,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6682,9 +6684,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 250
-    Height: 70
-    UIY: 70
+    Width: 200
+    Height: 50
+    UIY: 225
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6761,7 +6763,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 30
+      Size: 20
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -7029,7 +7031,6 @@ Objects {
   ParentId: 17273027800815053455
   ChildIds: 6882488211758513002
   ChildIds: 1916192981161755610
-  ChildIds: 10716745581545347572
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -7040,316 +7041,6 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 10716745581545347572
-  Name: "UI Container"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 430938123953625846
-  ChildIds: 15460131420867581493
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Canvas {
-      ContentType {
-        Value: "mc:ecanvascontenttype:dynamic"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15460131420867581493
-  Name: "TechTreeViewUI"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10716745581545347572
-  ChildIds: 17178587594156634795
-  ChildIds: 6496697485475280040
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 100
-    Height: 100
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Panel {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 6496697485475280040
-  Name: "OtherGarageButtons"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15460131420867581493
-  ChildIds: 8847867844027469078
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    UIX: 30
-    UIY: 30
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Panel {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8847867844027469078
-  Name: "ReturnToDefaultButton"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6496697485475280040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SendToComponent"
-      String: "DEFAULT_MENU"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 70
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Button {
-      Label: "BACK"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 0.409999967
-        G: 0.138476819
-        A: 1
-      }
-      HoveredColor {
-        R: 0.87
-        G: 0.276556313
-        A: 1
-      }
-      PressedColor {
-        R: 0.120000005
-        G: 0.050066229
-        A: 1
-      }
-      DisabledColor {
-        A: 1
-      }
-      Brush {
-        Id: 7957816731913452808
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17178587594156634795
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15460131420867581493
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "[TECH TREE]"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 30
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      Font {
-        Id: 841534158063459245
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
   }
 }
 Objects {
@@ -7606,7 +7297,7 @@ Objects {
     Overrides {
       Name: "cs:Background"
       ObjectReference {
-        SelfId: 17673340388354254850
+        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -7679,18 +7370,6 @@ Objects {
       Name: "cs:OverrideCamera"
       ObjectReference {
         SelfId: 4408893661492794121
-      }
-    }
-    Overrides {
-      Name: "cs:TechTreeViewUI"
-      ObjectReference {
-        SelfId: 15460131420867581493
-      }
-    }
-    Overrides {
-      Name: "cs:OtherGarageButtons"
-      ObjectReference {
-        SelfId: 6496697485475280040
       }
     }
     Overrides {
@@ -8097,7 +7776,6 @@ Objects {
     }
   }
   ParentId: 842166714640240227
-  ChildIds: 10711773900252600376
   ChildIds: 717203380532970816
   ChildIds: 3422279684606684169
   ChildIds: 6089598563796785841
@@ -8159,7 +7837,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8167,7 +7845,7 @@ Objects {
   Control {
     Width: 400
     Height: 600
-    UIX: 100
+    UIX: 55
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8691,6 +8369,7 @@ Objects {
   Control {
     Width: 710
     Height: 155
+    UIY: 80
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8964,68 +8643,6 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 10711773900252600376
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15177659444916868221
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "[DEFAULT VIEW]"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 30
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      Font {
-        Id: 841534158063459245
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
         }
       }
     }
