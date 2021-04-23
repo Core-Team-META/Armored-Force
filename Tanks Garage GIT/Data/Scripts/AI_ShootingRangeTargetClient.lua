@@ -15,15 +15,20 @@ local localPlayer = Game.GetLocalPlayer()
 local savedDamage = 100
 local allowImpact = true
 local currentHP = 0
+local hitboxes = nil
 
 function Initialize()
+
+	localPlayer = Game.GetLocalPlayer()
 
 	activeModelReference:Follow(enemyHitbox, 1000)
 	hpBarHolder:Follow(enemyHitbox, 1000)
 	
 	hpBar:LookAtLocalView(true)
 	
-	for _, t in ipairs(enemyHitbox:GetChildren()) do
+	hitboxes = enemyHitbox:GetChildren()
+	
+	for _, t in ipairs(hitboxes) do
 		t.beginOverlapEvent:Connect(OnImpact)
 	end
 	
@@ -33,10 +38,11 @@ function Initialize()
 end
 
 function OnImpact(trigger, other)
+
+	print("hit by projectile")
 	
 	if other.type == "Projectile" and allowImpact and other.owner == localPlayer then
-		print("hit by projectile for " .. tostring(savedDamage))
-		
+			
 		currentHP = currentHP - savedDamage
 		
 		if currentHP <= 0 then
@@ -51,13 +57,13 @@ function OnImpact(trigger, other)
 			Task.Wait(4)
 			
 			currentHP = maxHP
-			label.text = tostring(maxHP) .. " / " .. tostring(currentHP)
+			label.text = tostring(currentHP) .. " / " .. tostring(maxHP)
 			fill:ScaleTo(Vector3.New(0.01, 0.11, 1), 0.1, true)
 			
 			hpBarHolder.visibility = Visibility.INHERIT
 			activeModelReference.visibility = Visibility.INHERIT			
 		else 
-			label.text = tostring(maxHP) .. " / " .. tostring(currentHP)
+			label.text = tostring(currentHP) .. " / " .. tostring(maxHP)
 			fill:ScaleTo(Vector3.New(0.01, 0.11, currentHP/maxHP), 0.1, true)		
 		end		
 	end
@@ -67,7 +73,10 @@ end
 function GetPlayersTankDamage()
 	for _, e in ipairs(localPlayer:GetEquipment()) do
 		if string.find(e.name, "TANK_") then
-			savedDamage = e:GetCustomProperty("DamagePerShot")
+			local newDamage = e:GetCustomProperty("DamagePerShot")
+			if newDamage ~= savedDamage then
+				savedDamage = newDamage
+			end
 		end
 	end
 end
@@ -77,8 +86,18 @@ function Tick()
 	GetPlayersTankDamage()
 
 	activeModelReference:RotateTo(enemyHitbox:GetRotation(), 0.1, true)
+
+	if not hitboxes then
+		return
+	end
 	
-	Task.Wait(0.1)
+	for _, t in ipairs(hitboxes) do
+		for x, t2 in ipairs(t:GetOverlappingObjects()) do
+			OnImpact(t, t2)
+		end
+	end
+	
+	Task.Wait(0.05)
 	
 end
 
