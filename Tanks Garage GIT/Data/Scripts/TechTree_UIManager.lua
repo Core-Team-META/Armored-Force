@@ -467,7 +467,6 @@ function OpenDetails(button)
 end
 
 function UpgradeTank()
-	print(tankDetails.currency)
 	if(tankDetails.purchasedTank) then
 		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
 		-- TODO: Play SFX/Message
@@ -508,6 +507,7 @@ function UpgradeTank()
 			TogglePrerequisite2Visibility(Visibility.FORCE_ON)
 		end		
 	end
+	PopulateCurrencyUI()
 end
 
 function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
@@ -529,7 +529,8 @@ function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
 			-- TODO: Better prompt for user
 			UI.PrintToScreen("There was an error sending the event. Please try again.")
 		end
-	end	
+	end
+	PopulateCurrencyUI()
 end
 
 function UpgradeWeapon()
@@ -583,6 +584,7 @@ function UpgradeWeapon()
 			end
 		end		
 	end
+	PopulateCurrencyUI()
 end
 
 function UpgradeArmor()
@@ -635,6 +637,7 @@ function UpgradeArmor()
 			end
 		end		
 	end
+	PopulateCurrencyUI()
 end
 
 function UpgradeEngine()
@@ -687,6 +690,7 @@ function UpgradeEngine()
 			end
 		end		
 	end
+	PopulateCurrencyUI()
 end
 
 function ShowNotEnoughCurrencyMessage()
