@@ -914,14 +914,16 @@ end
 function CLICKED_DEPLOY(DEPLOY_BUTTON)
 	if CHOSEN_MODE== 0 then
 		TOGGLE_DROPDOWN_OPEN()
+	elseif CHOSEN_MODE == 1 then
+		Events.BroadcastToServer("SEND_TO_MAP", "Fields")
+	elseif CHOSEN_MODE == 2 then
+		Events.BroadcastToServer("SEND_TO_MAP", "Desert")
+	elseif CHOSEN_MODE == 3 then
+		Events.BroadcastToServer("SEND_TO_MAP", "Tundra")
 	elseif CHOSEN_MODE == 4 then
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOOTING_RANGE")
 		return
 	end
-	-- add here elseif teleporting to chosen MODE
-	-- if CHOSEN_MODE== 1 > Fields
-	-- if CHOSEN_MODE== 2 > Desert
-	-- if CHOSEN_MODE== 3 > Tundra
 end
 
 function HOVERED_DEPLOY(DEPLOY_BUTTON)
