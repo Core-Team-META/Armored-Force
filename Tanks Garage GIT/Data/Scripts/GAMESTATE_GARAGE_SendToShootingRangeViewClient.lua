@@ -283,6 +283,14 @@ function SetGarageModelFromEquippedTank(player, id)
 	end
 end
 
+function ToggleGarage(player, binding)
+
+	if binding == "ability_extra_34" and not sendToShootingRangeViewUI.isEnabled then
+		SendBackToGarage(returnToGarageTrigger, localPlayer)
+	end
+
+end
+
 SetGarageModelFromEquippedTank(localPlayer)
 
 function InitializeComponent()
@@ -292,6 +300,8 @@ function InitializeComponent()
 	sendToShootingRangeViewUI.isEnabled = false
 	
 	World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
+	
+	localPlayer.bindingPressedEvent:Connect(ToggleGarage)
 end
 
 InitializeComponent()
