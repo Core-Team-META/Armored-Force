@@ -36951,7 +36951,7 @@ Objects {
 }
 Objects {
   Id: 1327575297581716449
-  Name: "CHOOSE_MODE_SHOOTINGRANGE"
+  Name: "CHOOSE_MODE_SHOOTINGRANGE_HOVER"
   Transform {
     Location {
     }
