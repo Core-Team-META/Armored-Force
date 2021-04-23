@@ -20,8 +20,6 @@ local techTreeContents = script:GetCustomProperty("TechTree_Contents"):WaitForOb
 local currencyPanel = script:GetCustomProperty("CurrencyPanel"):WaitForObject()
 local currencyContentsPanel = script:GetCustomProperty("CurrencyContentsPanel")
 local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()
-local techTreeViewUI = script:GetCustomProperty("TechTreeViewUI"):WaitForObject()
-local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 -- Tech Tree Modal Properties ------------------------------------------------------------------------
 local closeTechTreeModalButton = script:GetCustomProperty("CloseTechTreeModalButton"):WaitForObject()
 local techTreeModalPopup = script:GetCustomProperty("TechTreeModalPopup"):WaitForObject()
@@ -69,9 +67,9 @@ local TankContentPanel = script:GetCustomProperty("TankContentPanel"):WaitForObj
 
 -- Local properties
 local thisComponent = "TECH_TREE_MENU"
+local savedState = ""
 local researchingName = ""
 local researchingProgress = nil
-
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local BASE_Y = 50
@@ -79,8 +77,8 @@ local Y_OFFSET = 90
 local X_OFFSET = 170
 local X_SPACING = 480
 
-local BASE_TEAM_POSITION_X = 250
-local BASE_TEAM_POSITION_Y = 32
+local BASE_TEAM_POSITION_X = 200
+local BASE_TEAM_POSITION_Y = 80
 local TEAM_X_OFFSET = 200
 
 local BASE_CURRENCY_POSITION_X = -10
@@ -112,68 +110,38 @@ local HAS_PURCHASE_TEXT = "P"
 -- Functions
 function ToggleThisComponent(requestedPlayerState)
 
+	savedState = requestedPlayerState
+	
 	if requestedPlayerState == thisComponent then
-		
 		Task.Wait(2.5)
 		
+		if savedState ~= thisComponent or displayTanks.visibility == Visibility.FORCE_ON then
+			localPlayer:ClearOverrideCamera()
+			return
+		end
+		
 		LOCAL_PLAYER:SetOverrideCamera(overrideCamera)
-	
-		techTreeViewUI.isEnabled = true
-		
 		displayTanks.visibility = Visibility.FORCE_ON
-				
 		OpenUI()
-	
 	else
-	
 		Task.Wait(0.1)
-	
 		DisableThisComponent()
-		
 	end
 	
 end
 
 function DisableThisComponent()
-	
-	techTreeViewUI.isEnabled = false
-	
+
 	displayTanks.visibility = Visibility.FORCE_OFF
-	
 	CloseTechTreeModal()
-	
 	CloseUI()
 	
 end
 
-function OnOtherComponentButtonPressed(button)
-
-	print(button.name .. " pressed. Now broadcasting: " .. button:GetCustomProperty("SendToComponent"))
-	
-	Events.Broadcast("ENABLE_GARAGE_COMPONENT", button:GetCustomProperty("SendToComponent"))
-	
-	DisableThisComponent()
-
-end
-
 function InitializeComponent()
-
-	techTreeViewUI.visibility = Visibility.INHERIT
-	
-	techTreeViewUI.isEnabled = false
-	
-	for _, child in ipairs(otherGarageButtons:GetChildren()) do
-	
-		if child:IsA("UIButton") then
-		
-			child.clickedEvent:Connect(OnOtherComponentButtonPressed)
-			
-		end
-		
-	end
 	
 	displayTanks.visibility = Visibility.FORCE_OFF
-
+	
 end
 
 InitializeComponent()
