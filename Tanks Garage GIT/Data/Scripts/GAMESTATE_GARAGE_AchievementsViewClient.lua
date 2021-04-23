@@ -4,6 +4,7 @@ local dailyChallenges = script:GetCustomProperty("DailyChallenges"):WaitForObjec
 local dailyLogin = script:GetCustomProperty("DailyLogin"):WaitForObject()
 
 local thisComponent = "ACHIEVEMENTS_MENU"
+local savedState = ""
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -50,8 +51,15 @@ end
 
 function ToggleThisComponent(requestedPlayerState)
 
+	savedState = requestedPlayerState
+	
 	if requestedPlayerState == thisComponent then
 		Task.Wait(2)
+		
+		if savedState ~= thisComponent or achievementsViewUI.isEnabled then
+			return
+		end
+		
 		achievementsViewUI.isEnabled = true
 	else
 		Task.Wait(0.1)

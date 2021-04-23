@@ -221,7 +221,6 @@ Objects {
     }
   }
   ParentId: 17563950383364723476
-  ChildIds: 17673340388354254850
   ChildIds: 12690902996165256707
   ChildIds: 2461544402236431987
   ChildIds: 10794810745051780671
@@ -4137,7 +4136,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4197,8 +4196,9 @@ Objects {
   }
   Control {
     Width: 1800
-    Height: 915
-    UIY: 155
+    Height: 825
+    UIX: -95
+    UIY: 225
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4309,8 +4309,8 @@ Objects {
   Control {
     Width: 295
     Height: 55
-    UIX: 725
-    UIY: 100
+    UIX: 630
+    UIY: 170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4374,8 +4374,8 @@ Objects {
   Control {
     Width: 295
     Height: 55
-    UIX: 250
-    UIY: 100
+    UIX: 155
+    UIY: 170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4439,8 +4439,8 @@ Objects {
   Control {
     Width: 295
     Height: 55
-    UIX: -250
-    UIY: 100
+    UIX: -345
+    UIY: 170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4503,8 +4503,8 @@ Objects {
   Control {
     Width: 295
     Height: 55
-    UIX: -725
-    UIY: 100
+    UIX: -820
+    UIY: 170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4535,64 +4535,6 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17673340388354254850
-  Name: "Background"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -1.36603767e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14966627174895260745
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 9999
-    Height: 9999
-    UIX: 0.000122070313
-    UIY: 0.000122070313
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-      }
-      Color {
-        A: 0.443000019
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
         }
       }
     }
