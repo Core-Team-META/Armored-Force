@@ -86,16 +86,6 @@ function Tick()
 	GetPlayersTankDamage()
 
 	activeModelReference:RotateTo(enemyHitbox:GetRotation(), 0.1, true)
-
-	if not hitboxes then
-		return
-	end
-	
-	for _, t in ipairs(hitboxes) do
-		for x, t2 in ipairs(t:GetOverlappingObjects()) do
-			OnImpact(t, t2)
-		end
-	end
 	
 	Task.Wait(0.05)
 	
