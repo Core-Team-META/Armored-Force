@@ -22,11 +22,16 @@ local elevationTime = 0
 
 function StartTank(equipment, player)
 
-	while not tankMovementControllerServer:GetCustomProperty("TankReady") do
+	local ready = tankMovementControllerServer:GetCustomProperty("TankReady")
+
+	while not ready do
 	
 		Task.Wait()
+		ready = tankMovementControllerServer:GetCustomProperty("TankReady")
 		
 	end
+	
+	print("Setting up client part of tank for " .. player.name)
 		
 	tankOwner = player
 	
@@ -38,7 +43,7 @@ function Tick()
 
 	if not Object.IsValid(tankOwner) then
 	
-		if tankEquipment.owner then
+		if Object.IsValid(tankEquipment.owner) then
 		
 			StartTank(tankEquipment, tankEquipment.owner)
 			
@@ -55,5 +60,15 @@ function Tick()
 	
 end
 
+function OnJoin(player)
+
+	local owner = tankEquipment.owner
+	if owner then
+		StartTank(tankEquipment, owner)
+	end
+	
+end
+
 
 tankEquipment.equippedEvent:Connect(StartTank)
+Game.playerJoinedEvent:Connect(OnJoin)

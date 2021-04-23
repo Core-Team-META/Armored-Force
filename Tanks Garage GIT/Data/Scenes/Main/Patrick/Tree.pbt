@@ -175,6 +175,12 @@ Objects {
           Vector {
           }
         }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -853,6 +859,12 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+          }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
           }
         }
       }

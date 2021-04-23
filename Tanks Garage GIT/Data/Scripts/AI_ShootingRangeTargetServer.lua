@@ -30,7 +30,7 @@ function OnImpact(trigger, other)
 		
 		explosion.lifeSpan = 2
 		
-		Task.Wait(0.05)
+		Task.Wait(0.1)
 		
 		if Object.IsValid(other) then
 			other:Destroy()
