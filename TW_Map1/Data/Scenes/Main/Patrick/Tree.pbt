@@ -14044,8 +14044,8 @@ Objects {
   Name: "TeamBasesBPoint"
   Transform {
     Location {
-      X: 31105
-      Y: -44430
+      X: -34550
+      Y: 28055
     }
     Rotation {
     }
@@ -14269,8 +14269,8 @@ Objects {
   Name: "TeamBasesAPoint"
   Transform {
     Location {
-      X: -34550
-      Y: 28055
+      X: 31105
+      Y: -44430
     }
     Rotation {
     }

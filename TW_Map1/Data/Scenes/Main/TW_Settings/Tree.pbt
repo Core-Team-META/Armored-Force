@@ -158,6 +158,7 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:facemovement"
       }
+      DefaultRotationRate: 5
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"

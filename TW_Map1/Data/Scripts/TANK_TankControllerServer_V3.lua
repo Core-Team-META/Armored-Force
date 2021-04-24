@@ -276,6 +276,14 @@ function SetTankModifications(player)
 		
 	end
 	
+	reloadSpeed = reloadSpeed / 1.5
+	topSpeed = topSpeed * 1.5
+	reverseSpeed = reverseSpeed * 1.5
+	hullTraverseSpeed = hullTraverseSpeed * 1.5
+	turretTraverseSpeed = turretTraverseSpeed * 1.5
+	turretElevationSpeed = turretElevationSpeed * 1.5
+	projectileSpeed = projectileSpeed * 3
+	
 end
 	
 function OnDeath(player, damage)
