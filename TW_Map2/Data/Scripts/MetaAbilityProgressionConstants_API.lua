@@ -77,9 +77,9 @@ API.UPGRADE_PROGRESS = {
 ------------------------------------------------------------------------------------------------------------------------
 -- DAILY CHALLENGES PROGRESS
 ------------------------------------------------------------------------------------------------------------------------
-API.CHALLENGES = {
+API.DAILIES = {
 	CHALLENGE_INFO = "CHALLENGEINFO",
-	CHALLENGE_DUE_DATE = "CHALLENGEDUEDATE"
+	LOGIN = "LOGINTIME"
 }
 ------------------------------------------------------------------------------------------------------------------------
 -- RESOURCE NAMES
@@ -101,11 +101,20 @@ API.COMBAT_STATS = {
 
 API.CURRENCY = {
     [1] = "Silver",
-    [2] = "Free RP"
+    [2] = "Free RP",
+    [3] = "Gold"
+}
+
+
+API.PERKS = {
+    BUNDLE1 = "B1",
+    BUNDLE2 = "B2",
+    BUNDLE3 = "B3"
 }
 
 API.SILVER = API.CURRENCY[1]
 API.FREERP = API.CURRENCY[2]
+API.GOLD = API.CURRENCY[3]
 
 API.TEAM = {
     ALLIES = 1,

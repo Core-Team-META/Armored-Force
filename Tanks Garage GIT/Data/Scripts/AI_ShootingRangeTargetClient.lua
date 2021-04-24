@@ -84,7 +84,7 @@ end
 function Tick()
 
 	GetPlayersTankDamage()
-
+	
 	activeModelReference:RotateTo(enemyHitbox:GetRotation(), 0.1, true)
 	
 	Task.Wait(0.05)

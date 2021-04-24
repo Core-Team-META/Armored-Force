@@ -46,14 +46,14 @@ function OnPlayerJoined(player)
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
-
+	--[[
 	print("-----PRINTING SHARED STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
 	print("-----FINISHED PRINTING SHARED STORAGE-----")
 	print("-----PRINTING LOCAL STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetPlayerData(player))
 	print("-----FINISHED PRINTING LOCAL STORAGE-----")
-
+	]]--
 end
 
 function OnPlayerLeft(player)
@@ -65,7 +65,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	-- playerSharedStorage = {}
+	--playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -98,13 +98,19 @@ function CheckAndSetSharedStorageDefault(player)
     dataTransferObject:SetNetworkedCustomProperty("Data", playerSharedStorage[CONSTANTS_API.PROGRESS.DATA])
     		
 	if(playerSharedStorage[CONSTANTS_API.SILVER] == nil) then playerSharedStorage[CONSTANTS_API.SILVER] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.FREERP] == nil) then playerSharedStorage[CONSTANTS_API.FREERP] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.GOLD] == nil) then playerSharedStorage[CONSTANTS_API.GOLD] = 0 end
 
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		if(playerSharedStorage[UTIL_API.GetTankRPString(i)] == nil) then playerSharedStorage[UTIL_API.GetTankRPString(i)] = 0 end
 	end
 	
-	if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = "" end
-	--if(playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] == nil) then playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = "" end
+	if(playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO] == nil) then playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO] = "" end
+	if(playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN] == nil) then playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN] = "" end
+	
+	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = 0 end
 
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = 0 end
@@ -124,14 +130,22 @@ end
 function LoadAndSetDataFromSharedStorage(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
-	player:SetResource(CONSTANTS_API.SILVER, playerSharedStorage[CONSTANTS_API.SILVER]) 
+	player:SetResource(CONSTANTS_API.SILVER, playerSharedStorage[CONSTANTS_API.SILVER])
+	player:SetResource(CONSTANTS_API.FREERP, playerSharedStorage[CONSTANTS_API.FREERP]) 
+	player:SetResource(CONSTANTS_API.GOLD, playerSharedStorage[CONSTANTS_API.GOLD]) 
 	
 	for i=1, CONSTANTS_API.GetNumberOfTanks(), 1 do
 		player:SetResource(UTIL_API.GetTankRPString(i), playerSharedStorage[UTIL_API.GetTankRPString(i)])
 	end
 	
-	player.serverUserData.CHALLENGES = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO]
-	--player.serverUserData.CHALLENGES_DUE_DATE = playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE]
+	player.serverUserData.CHALLENGES = playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO]
+	player.serverUserData.LOGIN = playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN]
+	
+	player.serverUserData.GOLD_FROM_BUNDLE = {}
+	
+	player.serverUserData.GOLD_FROM_BUNDLE[1] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1])
+	player.serverUserData.GOLD_FROM_BUNDLE[2] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2])
+	player.serverUserData.GOLD_FROM_BUNDLE[3] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3])
 	
 	Events.Broadcast("SET_DAILY_CHALLENGES", player)
 	
@@ -157,6 +171,8 @@ function SavePlayerDataIntoSharedStorage(player)
 	playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = UTIL_API.RetrieveTankDataById(player:GetResource(CONSTANTS_API.GetEquippedTankResource()), player.serverUserData.techTreeProgress)
 
 	playerSharedStorage[CONSTANTS_API.SILVER] = player:GetResource(CONSTANTS_API.SILVER)
+	playerSharedStorage[CONSTANTS_API.FREERP] = player:GetResource(CONSTANTS_API.FREERP)
+	playerSharedStorage[CONSTANTS_API.GOLD] = player:GetResource(CONSTANTS_API.GOLD)
 	
 	playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = ConvertTechTreeProgressToDataString(player)
 	
@@ -166,8 +182,12 @@ function SavePlayerDataIntoSharedStorage(player)
 		playerSharedStorage[UTIL_API.GetTankRPString(i)] = player:GetResource(UTIL_API.GetTankRPString(i))
 	end
 
-	playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_INFO] = player.serverUserData.CHALLENGES
-	--playerSharedStorage[CONSTANTS_API.CHALLENGES.CHALLENGE_DUE_DATE] = player.serverUserData.CHALLENGES_DUE_DATE	
+	playerSharedStorage[CONSTANTS_API.DAILIES.CHALLENGE_INFO] = player.serverUserData.CHALLENGES
+	playerSharedStorage[CONSTANTS_API.DAILIES.LOGIN] = player.serverUserData.LOGIN
+	
+	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] = player.serverUserData.GOLD_FROM_BUNDLE[1]
+	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = player.serverUserData.GOLD_FROM_BUNDLE[2]
+	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = player.serverUserData.GOLD_FROM_BUNDLE[3]
 
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = player:GetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY)
@@ -187,7 +207,7 @@ end
 
 function SetNewPlayerProgression(playerSharedStorage)
 
-	print("Setting new progress data")
+	--print("Setting new progress data")
 
 	local tankString = ""
 	local tankEntry = ""
@@ -300,7 +320,7 @@ function ConvertTechTreeProgressToDataString(player)
 	table.sort(player.serverUserData.techTreeProgress, function(a, b) return tonumber(a.id) < tonumber(b.id) end)
 	
 	for k,v in ipairs(player.serverUserData.techTreeProgress) do
-	
+		print("Saving tan Id: " .. tostring(v.id))
 		dataString = dataString .. v.id .. 
 					"|" .. ConvertBoolToString(v.researched) ..
 					"|" .. ConvertBoolToString(v.purchased) ..
