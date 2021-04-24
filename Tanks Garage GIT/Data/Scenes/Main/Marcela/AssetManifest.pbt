@@ -1259,6 +1259,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9270962475891780029
+  Name: "Play Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "PlayBold_ref"
+  }
+}
+Assets {
   Id: 9152619968203525726
   Name: "Military Tank Historic Armor Plate 02"
   PlatformAssetType: 1
@@ -1364,15 +1373,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_curve90_002"
-  }
-}
-Assets {
-  Id: 8088145951334388726
-  Name: "Play"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "PlayRegular_ref"
   }
 }
 Assets {
