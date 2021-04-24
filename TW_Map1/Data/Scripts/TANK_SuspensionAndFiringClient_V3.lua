@@ -31,9 +31,12 @@ local initialized = false
 
 function StartTank(equipment, player)
 
-	while not tankMovementControllerServer:GetCustomProperty("TankReady") do
+	local ready = tankMovementControllerServer:GetCustomProperty("TankReady")
+
+	while not ready do
 	
 		Task.Wait()
+		ready = tankMovementControllerServer:GetCustomProperty("TankReady")
 		
 	end
 		
@@ -141,7 +144,7 @@ function Tick(dt)
 
 	if not initialized then
 	
-		if tankEquipment.owner then
+		if Object.IsValid(tankEquipment.owner) then
 		
 			StartTank(tankEquipment, tankEquipment.owner)
 			
@@ -180,5 +183,15 @@ function Tick(dt)
 		
 end
 
+function OnJoin(player)
+
+	local owner = tankEquipment.owner
+	if owner then
+		StartTank(tankEquipment, owner)
+	end
+	
+end
+
 tankEquipment.equippedEvent:Connect(StartTank)
 Events.Connect("ANIMATEFIRING", FiringAnimation)
+Game.playerJoinedEvent:Connect(OnJoin)
