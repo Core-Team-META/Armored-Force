@@ -1,7 +1,7 @@
-Name: "Ryan"
-RootId: 4010463696103856807
+Name: "DataCompression"
+RootId: 9566988139834358389
 Objects {
-  Id: 300392950567633537
+  Id: 3642074531604572323
   Name: "DataTransfer"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4010463696103856807
+  ParentId: 9566988139834358389
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10246942921509936575
+  Id: 14502955300110019644
   Name: "Player Storage Manager"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4010463696103856807
-  ChildIds: 10855754083470230434
+  ParentId: 9566988139834358389
+  ChildIds: 3293633106175246301
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -58,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10855754083470230434
+  Id: 3293633106175246301
   Name: "PlayerStorageManagerClient"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10246942921509936575
+  ParentId: 14502955300110019644
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
@@ -88,13 +88,13 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 300392950567633537
+        SelfId: 3642074531604572323
       }
     }
     Overrides {
       Name: "cs:TankContents"
       ObjectReference {
-        SelfId: 16622560247339570764
+        SelfId: 12482852906630976509
       }
     }
   }
@@ -114,7 +114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7409236656061086847
+  Id: 5483260844558133491
   Name: "ResourcePersisterServer"
   Transform {
     Location {
@@ -127,7 +127,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4010463696103856807
+  ParentId: 9566988139834358389
   UnregisteredParameters {
     Overrides {
       Name: "cs:PlayerSharedStorage"
@@ -153,7 +153,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 300392950567633537
+        SelfId: 3642074531604572323
       }
     }
     Overrides {
@@ -179,8 +179,8 @@ Objects {
   }
 }
 Objects {
-  Id: 16622560247339570764
-  Name: "TechTree_Contents"
+  Id: 3739528596988841730
+  Name: "MetaPlayerStorageManager_Server"
   Transform {
     Location {
     }
@@ -192,12 +192,30 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4010463696103856807
+  ParentId: 9566988139834358389
   UnregisteredParameters {
     Overrides {
-      Name: "cs:TechTree_Contents"
+      Name: "cs:VFX_LIST"
       ObjectReference {
-        SelfId: 16622560247339570764
+        SelfId: 5874015840417789592
+      }
+    }
+    Overrides {
+      Name: "cs:Base64"
+      AssetReference {
+        Id: 14568273880639568162
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransfer"
+      ObjectReference {
+        SelfId: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:META_Player_Cosmetic_Data"
+      AssetReference {
+        Id: 10632890108449713432
       }
     }
   }
@@ -210,8 +228,9 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TechTree_Contents"
+  Script {
+    ScriptAsset {
+      Id: 10419913492106103170
+    }
   }
 }
