@@ -11,4 +11,4 @@ PublishedState: Child
 ParentGameId: "27f6529913fb495987550a976e1a0c94"
 AllowDirectJoinAsChild: true
 IsQueued: true
-MinPlayersToStart: 4
+MinPlayersToStart: 2
