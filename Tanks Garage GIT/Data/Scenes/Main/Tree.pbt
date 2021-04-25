@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
   ChildIds: 1280018966653012080
+  ChildIds: 7367735074338159388
   ChildIds: 11193472375340858099
   ChildIds: 765611719618973778
   ChildIds: 13531313327230624130
@@ -1721,12 +1721,11 @@ Objects {
         Value: "mc:emovementcontrolmode:facingrelative"
       }
       LookControlMode {
-        Value: "mc:elookcontrolmode:relative"
+        Value: "mc:elookcontrolmode:none"
       }
       FacingMode {
         Value: "mc:efacingmode:facemovement"
       }
-      DefaultRotationRate: 5
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
@@ -1747,73 +1746,6 @@ Objects {
       FlipOnMultiJump: true
       MaxHitpoints: 100
     }
-  }
-}
-Objects {
-  Id: 1280018966653012080
-  Name: "Respawn Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    RespawnSettings {
-      RespawnDelay: 1
-      RespawnMode_v2 {
-        Value: "mc:erespawnmode:atclosestspawnpoint"
-      }
-    }
-  }
-}
-Objects {
-  Id: 16813558807825262224
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      Z: -5700
-    }
-    Rotation {
-      Yaw: -140.648
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -1892,5 +1824,72 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 1280018966653012080
+  Name: "Respawn Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    RespawnSettings {
+      RespawnDelay: 1
+      RespawnMode_v2 {
+        Value: "mc:erespawnmode:atclosestspawnpoint"
+      }
+    }
+  }
+}
+Objects {
+  Id: 16813558807825262224
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      Z: -5700
+    }
+    Rotation {
+      Yaw: -140.648
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
