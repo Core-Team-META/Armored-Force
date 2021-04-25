@@ -17,7 +17,7 @@ Objects {
   ParentId: 15534379475757777486
   ChildIds: 8283238851402836391
   ChildIds: 7924190469298149539
-  ChildIds: 7644466000373891307
+  ChildIds: 18062787381579496885
   ChildIds: 726657449272133057
   ChildIds: 6917066571319477230
   Collidable_v2 {
@@ -898,7 +898,7 @@ Objects {
     Overrides {
       Name: "cs:ReturnToGarageTrigger"
       ObjectReference {
-        SelfId: 7644466000373891307
+        SelfId: 18062787381579496885
       }
     }
     Overrides {
@@ -1569,32 +1569,37 @@ Objects {
   }
 }
 Objects {
-  Id: 7644466000373891307
-  Name: "ReturnToGarageTrigger"
+  Id: 18062787381579496885
+  Name: "ToGarageTrigger"
   Transform {
     Location {
-      X: -1200
-      Y: 8145
-      Z: 225
+      X: -1190
+      Y: 8050
+      Z: 195
     }
     Rotation {
-      Yaw: 35
+      Pitch: 10
+      Yaw: 36
     }
     Scale {
       X: 10.4000006
       Y: 14.4000006
-      Z: 7.79999876
+      Z: 4.60000038
     }
   }
   ParentId: 13018728252322818432
+  WantsNetworking: true
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
