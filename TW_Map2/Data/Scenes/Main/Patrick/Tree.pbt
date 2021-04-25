@@ -20767,9 +20767,9 @@ Objects {
   }
   Camera {
     FreeControl: true
-    InitialDistance: 500
+    InitialDistance: 1500
     IsDistanceAdjustable: true
-    MinDistance: 300
+    MinDistance: 1000
     MaxDistance: 6000
     PositionOffset {
       Z: 400

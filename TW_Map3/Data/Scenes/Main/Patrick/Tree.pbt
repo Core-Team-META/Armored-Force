@@ -20767,9 +20767,9 @@ Objects {
   }
   Camera {
     FreeControl: true
-    InitialDistance: 500
+    InitialDistance: 1500
     IsDistanceAdjustable: true
-    MinDistance: 300
+    MinDistance: 1000
     MaxDistance: 6000
     PositionOffset {
       Z: 400
@@ -24225,7 +24225,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12500911120235620385
+  Id: 16695452146520624446
   Name: "TW_Settings"
   Transform {
     Location {

@@ -20767,9 +20767,9 @@ Objects {
   }
   Camera {
     FreeControl: true
-    InitialDistance: 500
+    InitialDistance: 1500
     IsDistanceAdjustable: true
-    MinDistance: 300
+    MinDistance: 1000
     MaxDistance: 6000
     PositionOffset {
       Z: 400
@@ -24197,35 +24197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14306943170083082652
-  Name: "TANK_TankDock"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10206351254527588574
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 6245131130955856299
+  Id: 17339780242541693532
   Name: "TW_Settings"
   Transform {
     Location {
@@ -24251,6 +24223,34 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "TW_Settings"
+  }
+}
+Objects {
+  Id: 14306943170083082652
+  Name: "TANK_TankDock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10206351254527588574
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
