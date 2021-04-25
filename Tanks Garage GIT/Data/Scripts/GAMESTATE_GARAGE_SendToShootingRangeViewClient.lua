@@ -9,7 +9,6 @@ local M10WolverineGARAGEMODEL = script:GetCustomProperty("M10WolverineGARAGEMODE
 local M4A1ShermanGARAGEMODEL = script:GetCustomProperty("M4A1ShermanGARAGEMODEL")
 local M6A1HeavyGARAGEMODEL = script:GetCustomProperty("M6A1HeavyGARAGEMODEL")
 
-
 local Panzer3GARAGEMODEL = script:GetCustomProperty("Panzer3GARAGEMODEL")
 local LoweGARAGEMODEL = script:GetCustomProperty("TankGELoweGARAGEMODEL")
 
@@ -93,6 +92,8 @@ function CheckPlayerIsInState(state)
 end
 
 function SendBackToGarage(trigger, other)
+
+	print("Trigger hit " .. other.name)
 
 	if other ~= localPlayer then
 	
@@ -291,21 +292,21 @@ function ToggleGarage(player, binding)
 
 end
 
-SetGarageModelFromEquippedTank(localPlayer)
-
 function InitializeComponent()
 
+	SetGarageModelFromEquippedTank(localPlayer)
+
 	sendToShootingRangeViewUI.visibility = Visibility.INHERIT
-	
 	sendToShootingRangeViewUI.isEnabled = false
 	
 	World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
 	
-	localPlayer.bindingPressedEvent:Connect(ToggleGarage)
 end
 
 InitializeComponent()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("CHANGE_EQUIPPED_TANK", ChangeGarageModel, id)
+
+localPlayer.bindingPressedEvent:Connect(ToggleGarage)
 returnToGarageTrigger.beginOverlapEvent:Connect(SendBackToGarage)
