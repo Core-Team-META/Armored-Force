@@ -80,7 +80,7 @@ function StateSTART(manager, propertyName)
 	
 	timerTask = Task.Spawn(CountdownTask)
 	timerTask.repeatCount = -1
-	timerTask.repeatInterval = 1
+	timerTask.repeatInterval = 0.1
 	
 end
 
