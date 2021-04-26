@@ -15873,7 +15873,7 @@ Objects {
     Overrides {
       Name: "cs:TankSettings"
       ObjectReference {
-        SelfId: 4169963418943161530
+        SelfId: 6688850890950343672
       }
     }
     Overrides {
