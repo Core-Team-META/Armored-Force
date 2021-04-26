@@ -56,19 +56,23 @@ local prerequisite2RP = researchTankSidePanel:FindChildByName("Prerequisite2RP")
 local useFreeRPPanel = script:GetCustomProperty("UseFreeRPPanel"):WaitForObject()
 local freeRPNo = script:GetCustomProperty("No"):WaitForObject()
 local freeRPYes = script:GetCustomProperty("Yes"):WaitForObject()
-------------------------------------------------------------------------------------------------------
 local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
+------------------------------------------------------------------------------------------------------
 
 local ALLIES_TEAM = script:GetCustomProperty("AlliesTeam")
 local AXIS_TEAM = script:GetCustomProperty("AxisTeam")
 
+-- Stores the collection of tanks and their data
 local TANK_CONTENTS_PANEL = script:GetCustomProperty("TechTree_TankContentsPanel")
+-- Used to store tank entries on the UI
 local TankContentPanel = script:GetCustomProperty("TankContentPanel"):WaitForObject()
 
 -- Local properties
 local thisComponent = "TECH_TREE_MENU"
 local savedState = ""
+-- Used to store which tank part is currently being researched
 local researchingName = ""
+-- Used to store the tank's part upgrade progress (weapon, armor, engine)
 local researchingProgress = nil
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -107,7 +111,9 @@ local RESEARCHED_TEXT = "RESEARCHED"
 local HAS_RESEARCH_TEXT = "R"
 local HAS_PURCHASE_TEXT = "P"
 
--- Functions
+------------------------------------------------------------------------------------
+-- A set of functions handling initializing the tech tree component
+-- Initialization functions --------------------------------------------------------
 function ToggleThisComponent(requestedPlayerState)
 
 	savedState = requestedPlayerState
@@ -146,6 +152,32 @@ end
 
 InitializeComponent()
 
+-- Initialization
+function Init()
+	-- Populate tables corresponding to each team's set of tanks
+	for k,v in ipairs(TANK_LIST) do
+		if(v:GetCustomProperty("Team") == ALLIES_TEAM) then
+			table.insert(ALLIES_TANKS, PopulateTank(v))
+		elseif(v:GetCustomProperty("Team") == AXIS_TEAM) then
+			table.insert(AXIS_TANKS, PopulateTank(v))
+		end
+	end
+	-- Initialize the teams
+	local teamCount = 0
+	for k,v in ipairs(TEAM_DEFINITIONS:GetChildren()) do
+		table.insert(TEAMS, {name = v.name, id = v:GetCustomProperty("Id")})
+		-- Add a button to toggle between each team
+		CreateAndPopulateTeamButton(v, teamCount)
+		teamCount = teamCount + 1
+		-- Select the first team as default
+		if not selectedTeam then selectedTeam = v:GetCustomProperty("Id") end
+	end	
+end
+
+---------------------------------------------------------------------------------
+-- A set of functions handling functionality for UI and UI components
+-- UI functions -----------------------------------------------------------------
+
 function OpenUI()
 	openSFX:Play()
 	techTreeUIContainer.visibility = Visibility.FORCE_ON
@@ -175,158 +207,6 @@ function ToggleUIInteraction(bool)
 	else
 		Events.BroadcastToServer("ChangeLookControl", LookControlMode.RELATIVE)
 	end
-end
-
--- Listener functions
-function KeybindingPressed(player, key)
-	if(key == keyBindingToOpen and IsUIVisible()) then
-		-- Close/Hide UI
-		CloseUI()
-	elseif(key == keyBindingToOpen and not IsUIVisible()) then
-		-- Show/Open UI
-		OpenUI()
-	end
-end
-
-function ButtonClickTeamSwitch(button)
-	-- Use the team name to set its Id appropriately
-	for k,v in ipairs(TEAMS) do
-		if(v.name == button.text) then
-			selectedTeam = v.id
-			EmptyUI()
-			ResetUI()
-			PopulateUI(selectedTeam)
-			return 
-		end
-	end
-	-- Set first team if for some reason no team was selected and issue a warning (although this shouldn't really get hit...)
-	selectedTeam = 1
-	warn("Team name [" .. button.text .. "] not found.")
-end
-
-function ButtonHover(button)
-	-- TODO: Play hover sound
-end
-
--- Initialization
-function Init()
-	-- Populate tables corresponding to each team's set of tanks
-	for k,v in ipairs(TANK_LIST) do
-		if(v:GetCustomProperty("Team") == ALLIES_TEAM) then
-			table.insert(ALLIES_TANKS, PopulateTank(v))
-		elseif(v:GetCustomProperty("Team") == AXIS_TEAM) then
-			table.insert(AXIS_TANKS, PopulateTank(v))
-		end
-	end
-	-- Initialize the teams
-	local teamCount = 0
-	for k,v in ipairs(TEAM_DEFINITIONS:GetChildren()) do
-		table.insert(TEAMS, {name = v.name, id = v:GetCustomProperty("Id")})
-		-- Add a button to toggle between each team
-		CreateAndPopulateTeamButton(v, teamCount)
-		teamCount = teamCount + 1
-		-- Select the first team as default
-		if not selectedTeam then selectedTeam = v:GetCustomProperty("Id") end
-	end	
-end
-
--- Helper functions
-function CreateAndPopulateTeamButton(team, teamCount)
-	local button = World.SpawnAsset(teamSelectorButton, {parent = techTreeUIContainer})
-	button.x = BASE_TEAM_POSITION_X + (TEAM_X_OFFSET * teamCount)
-	button.y = BASE_TEAM_POSITION_Y
-	button.clickedEvent:Connect(ButtonClickTeamSwitch)
-	button.hoveredEvent:Connect(ButtonHover)
-	button.text = team.name
-end
-
-function PopulateTank(tank)
- return 
- 	{
-		id = tank:GetCustomProperty("ID"),
-		name = tank:GetCustomProperty("Name"),
-		type = tank:GetCustomProperty("Type"),
-		country = tank:GetCustomProperty("Country"),
-		tier = tank:GetCustomProperty("Tier"),
-		researchCurrencyName = tank:GetCustomProperty("ResearchCurrencyName"),
-		purchaseCurrencyName = tank:GetCustomProperty("PurchaseCurrencyName"),
-		researchCost = tank:GetCustomProperty("ResearchCost"),
-		purchaseCost = tank:GetCustomProperty("PurchaseCost"),
-		weaponResearchCost = tank:GetCustomProperty("WeaponResearchCost"),
-		weaponPurchaseCost = tank:GetCustomProperty("WeaponPurchaseCost"),
-		armorResearchCost = tank:GetCustomProperty("ArmorResearchCost"),
-		armorPurchaseCost = tank:GetCustomProperty("ArmorPurchaseCost"),
-		mobilityResearchCost = tank:GetCustomProperty("MobilityResearchCost"),
-		mobilityPurchaseCost = tank:GetCustomProperty("MobilityPurchaseCost"),
-		prerequisite1 = tank:GetCustomProperty("Prerequisite1") or nil,
-		prerequisite2 = tank:GetCustomProperty("Prerequisite2") or nil
-	}
-end
-
-function GetTankListBySelectedTeam(teamId)
-	-- Get team name from Id
-	local teamName = ""
-	for k,v in ipairs(TEAMS) do
-		if(v.id == teamId) then teamName = v.name end
-	end
-	
-	if(teamName == ALLIES_TEAM) then return ALLIES_TANKS
-	elseif(teamName == AXIS_TEAM) then return AXIS_TANKS 
-	end
-	error("Unable to determine team with Id of: [" .. tostring(teamId) .. "]")
-end
-
-function PopulateTankContentsPanel(panel, tank)
-	local playerTankData = GetPlayerTankData(tank.id)
-	for k,v in ipairs(panel:GetChildren()) do		
-		if(v.name == "Name") then
-			v.text = tank.name
-			--[[
-		elseif(v.name == "Type") then
-			v.text = tank.type
-		elseif(v.name == "Country") then
-			-- TODO: Maybe show the country's flag here instead of text. Should be able to create it from UI elements
-			v.text = tank.country
-		elseif(v.name == "ResearchCost") then			
-			if(playerTankData.researched) then
-				v.text = RESEARCHED_TEXT
-			else
-				v.text = tostring(tank.researchCost)
-			end			
-		elseif(v.name == "PurchaseCost") then
-			if(playerTankData.purchased) then
-				v.text = PURCHASED_TEXT
-			else
-				v.text = tostring(tank.purchaseCost)
-			end				
-		elseif(v.name == "ResearchWeapon") then
-			v.text = GetUpgradeText(playerTankData.hasWeapon, tank.weaponResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasWeapon, tank.weaponPurchaseCost, Constants_API.UPGRADE_TYPE.PURCHASE)
-			v.clickedEvent:Connect(UpgradeWeapon)
-			v.hoveredEvent:Connect(ShowWeaponTooltip)
-			v.name = tostring(tank.id)
-			print(v:GetCustomProperty("Id"))
-		elseif(v.name == "ResearchArmor") then			
-			v.text = GetUpgradeText(playerTankData.hasArmor, tank.armorResearchCost, Constants_API.UPGRADE_TYPE.RESEARCH) .. "/" .. GetUpgradeText(playerTankData.hasArmor, tank.armorPurchaseCost, Constants_API.UPGRADE_TYPE.PURCHASE)
-			v.clickedEvent:Connect(UpgradeArmor)
-			v.hoveredEvent:Connect(ShowArmorTooltip)
-			v.name = tostring(tank.id)
-			print(v:GetCustomProperty("Id"))
-			--]]
-		elseif(v.name == "Details") then			
-			v.clickedEvent:Connect(OpenDetails)
-			v.hoveredEvent:Connect(ButtonHover)
-			v.name = tostring(tank.id)			
-		end
-	end
-end
-
-function GetPlayerTankData(id)
-	for _, tankEntry in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		if(tankEntry.id == id) then
-			return tankEntry
-		end
-	end
-	return {}
 end
 
 function PopulateUI(selectedTeam)
@@ -376,6 +256,191 @@ function PopulateCurrencyUI()
 	end
 end
 
+function CloseTechTreeModal()
+	techTreeModalPopup.visibility = Visibility.FORCE_OFF
+	ResetTankDetails()
+end
+
+function OpenDetails(button)
+	techTreeModalPopup.visibility = Visibility.FORCE_ON
+	local id = button.name
+	for i, tank in ipairs(TANK_LIST) do	
+		if(tank:GetCustomProperty("ID") == id) then			
+			PopulateDetailsModal(tank)
+		end
+	end
+	ForceHideResearchSidePanel()
+end
+
+function CreateAndPopulateTeamButton(team, teamCount)
+	local button = World.SpawnAsset(teamSelectorButton, {parent = techTreeUIContainer})
+	button.x = BASE_TEAM_POSITION_X + (TEAM_X_OFFSET * teamCount)
+	button.y = BASE_TEAM_POSITION_Y
+	button.clickedEvent:Connect(ButtonClickTeamSwitch)
+	button.hoveredEvent:Connect(ButtonHover)
+	button.text = team.name
+end
+
+function ResetUI()
+	tier1Count = 0
+	tier2Count = 0
+	tier3Count = 0
+	tier4Count = 0
+end
+
+function ForceHideResearchSidePanel()
+	researchTankSidePanel.visibility = Visibility.FORCE_OFF
+end
+
+function UseFreeRP()	
+	ResearchTank(LOCAL_PLAYER:GetResource(Constants_API.FREERP), tankDetails.id, 0, true)
+end
+
+function UsePrerequisite1()
+	ResearchTank(researchPointCollection[1].rp, tankDetails.id, researchPointCollection[1].id, false)
+end
+
+function UsePrerequisite2()
+	ResearchTank(researchPointCollection[2].rp, tankDetails.id, researchPointCollection[2].id, false)
+end
+
+function TogglePrerequisite1Visibility(visibility)
+	usePrerequisite1.visibility = visibility
+	prerequisite1RP.visibility = visibility
+	prerequisite1Name.visibility = visibility
+	if(researchPointCollection[1] ~= nil) then
+		prerequisite1Name.text = researchPointCollection[1].name .. ":"
+		prerequisite1RP.text = tostring(researchPointCollection[1].rp)
+	end
+end
+
+function TogglePrerequisite2Visibility(visibility)
+	usePrerequisite2.visibility = visibility
+	prerequisite2RP.visibility = visibility
+	prerequisite2Name.visibility = visibility
+	if(researchPointCollection[2] ~= nil) then
+		prerequisite2Name.text = researchPointCollection[2].name .. ":"
+		prerequisite2RP.text = tostring(researchPointCollection[2].rp)
+	end
+end
+
+---------------------------------------------------------------------------------
+-- A set of functions handling listeners or other non descript event functions
+-- Listener functions -----------------------------------------------------------
+function KeybindingPressed(player, key)
+	if(key == keyBindingToOpen and IsUIVisible()) then
+		-- Close/Hide UI
+		CloseUI()
+	elseif(key == keyBindingToOpen and not IsUIVisible()) then
+		-- Show/Open UI
+		OpenUI()
+	end
+end
+
+function ButtonClickTeamSwitch(button)
+	-- Use the team name to set its Id appropriately
+	for k,v in ipairs(TEAMS) do
+		if(v.name == button.text) then
+			selectedTeam = v.id
+			EmptyUI()
+			ResetUI()
+			PopulateUI(selectedTeam)
+			return 
+		end
+	end
+	-- Set first team if for some reason no team was selected and issue a warning (although this shouldn't really get hit...)
+	selectedTeam = 1
+	warn("Team name [" .. button.text .. "] not found.")
+end
+
+function ButtonHover(button)
+	-- TODO: Play hover sound
+end
+
+function ToggleResearchSidePanel()
+	if(researchTankSidePanel.visibility == Visibility.FORCE_ON) then
+		researchTankSidePanel.visibility = Visibility.FORCE_OFF
+	else
+		researchTankSidePanel.visibility = Visibility.FORCE_ON
+	end
+end
+
+function ShowNotEnoughCurrencyMessage()
+	-- TODO: Show a better message to the user
+	UI.PrintToScreen("You do not have enough " .. tankDetails.currency .. ".")
+end
+
+function ShowNotEnoughRPMessage()
+	-- TODO: Show a better message to the user
+	UI.PrintToScreen("You do not have enough Research Points.")
+end
+
+----------------------------------------------------------------------------------------------
+-- A set of functions relating to populating data objects and other generalizaed functionality
+-- Helper functions --------------------------------------------------------------------------
+
+function PopulateTank(tank)
+ return 
+ 	{
+		id = tank:GetCustomProperty("ID"),
+		name = tank:GetCustomProperty("Name"),
+		type = tank:GetCustomProperty("Type"),
+		country = tank:GetCustomProperty("Country"),
+		tier = tank:GetCustomProperty("Tier"),
+		researchCurrencyName = tank:GetCustomProperty("ResearchCurrencyName"),
+		purchaseCurrencyName = tank:GetCustomProperty("PurchaseCurrencyName"),
+		researchCost = tank:GetCustomProperty("ResearchCost"),
+		purchaseCost = tank:GetCustomProperty("PurchaseCost"),
+		weaponResearchCost = tank:GetCustomProperty("WeaponResearchCost"),
+		weaponPurchaseCost = tank:GetCustomProperty("WeaponPurchaseCost"),
+		armorResearchCost = tank:GetCustomProperty("ArmorResearchCost"),
+		armorPurchaseCost = tank:GetCustomProperty("ArmorPurchaseCost"),
+		mobilityResearchCost = tank:GetCustomProperty("MobilityResearchCost"),
+		mobilityPurchaseCost = tank:GetCustomProperty("MobilityPurchaseCost"),
+		prerequisite1 = tank:GetCustomProperty("Prerequisite1") or nil,
+		prerequisite2 = tank:GetCustomProperty("Prerequisite2") or nil
+	}
+end
+
+function GetTankListBySelectedTeam(teamId)
+	-- Get team name from Id
+	local teamName = ""
+	for k,v in ipairs(TEAMS) do
+		if(v.id == teamId) then teamName = v.name end
+	end
+	
+	if(teamName == ALLIES_TEAM) then
+		return ALLIES_TANKS
+	elseif(teamName == AXIS_TEAM) then
+		return AXIS_TANKS 
+	end
+	
+	error("Unable to determine team with Id of: [" .. tostring(teamId) .. "]")
+end
+
+function PopulateTankContentsPanel(panel, tank)
+	local playerTankData = GetPlayerTankData(tank.id)
+	for k,v in ipairs(panel:GetChildren()) do		
+		if(v.name == "Name") then
+			v.text = tank.name
+		elseif(v.name == "Details") then			
+			v.clickedEvent:Connect(OpenDetails)
+			v.hoveredEvent:Connect(ButtonHover)
+			v.name = tostring(tank.id)			
+		end
+	end
+end
+
+function GetPlayerTankData(id)
+	for _, tankEntry in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tankEntry.id == id) then
+			return tankEntry
+		end
+	end
+	return {}
+end
+
+
 function GetUpgradeText(hasUpgrade, cost, upgradeType)
 	if(hasUpgrade and upgradeType == Constants_API.UPGRADE_TYPE.RESEARCH) then
 		return HAS_RESEARCH_TEXT 
@@ -385,12 +450,6 @@ function GetUpgradeText(hasUpgrade, cost, upgradeType)
 	return tostring(cost)
 end
 
-function ResetUI()
-	tier1Count = 0
-	tier2Count = 0
-	tier3Count = 0
-	tier4Count = 0
-end
 
 function GetScrollPanelByTier(tier)
 	if(tier == 1) then
@@ -434,38 +493,7 @@ function GetTierCount(tier)
 	end
 end
 
--- Listener functions
-function ShowWeaponTooltip(button)
-	-- DEBUG
-	print("Hovering for weapon upgrade. Tank Id: " .. button.name)
-	local tank = GetPlayerTankData(tonumber(button.name))
-	-- Create/show tooltip and display weapon tank data as needed...
-end
-
-function ShowArmorTooltip(button)
-	-- DEBUG
-	print("Hovering for armor upgrade. Tank Id: " .. button.name)
-	local tank = GetPlayerTankData(tonumber(button.name))
-	-- Create/show tooltip and display armor tank data as needed...
-end
-
-function CloseTechTreeModal()
-	techTreeModalPopup.visibility = Visibility.FORCE_OFF
-	ResetTankDetails()
-end
-
-function OpenDetails(button)
-	-- TODO: Populate data on modal for tank
-	techTreeModalPopup.visibility = Visibility.FORCE_ON
-	local id = button.name
-	for i, tank in ipairs(TANK_LIST) do	
-		if(tank:GetCustomProperty("ID") == id) then			
-			PopulateDetailsModal(tank)
-		end
-	end
-	ForceHideResearchSidePanel()
-end
-
+-- Upgrade the tank's progress
 function UpgradeTank()
 	if(tankDetails.purchasedTank) then
 		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
@@ -479,8 +507,7 @@ function UpgradeTank()
 		else
 			Events.BroadcastToServer("PurchaseTank", tankDetails.id, tankDetails.currency)
 			-- TODO: Play SFX/Message
-			UI.PrintToScreen(tankDetails.name .. " purchased.")
-			PopulateCurrencyUI()
+			UI.PrintToScreen(tankDetails.name .. " purchased.")			
 			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 				if(tank.id == tankDetails.id) then
 					tank.purchased = true
@@ -491,6 +518,7 @@ function UpgradeTank()
 					end
 				end
 			end
+			PopulateCurrencyUI()
 			CloseTechTreeModal()		
 		end		
 	else
@@ -510,6 +538,7 @@ function UpgradeTank()
 	PopulateCurrencyUI()
 end
 
+-- Set the selected tank's progress to researched
 function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
 	if(rp < tankDetails.tankResearchCost) then
 		ShowNotEnoughRPMessage()
@@ -533,6 +562,7 @@ function ResearchTank(rp, researchedTankId, prereqId, usingFreeRP)
 	PopulateCurrencyUI()
 end
 
+-- Upgrade the weapon progress for the tank loaded into tankDetails
 function UpgradeWeapon()
 	if(tankDetails.weaponProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
 		print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
@@ -587,6 +617,7 @@ function UpgradeWeapon()
 	PopulateCurrencyUI()
 end
 
+-- Upgrade the armor progress for the tank loaded into tankDetails
 function UpgradeArmor()
 	if(tankDetails.armorProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
 		print("Purchase cost: " .. tankDetails.armorPurchaseCost)
@@ -640,6 +671,7 @@ function UpgradeArmor()
 	PopulateCurrencyUI()
 end
 
+-- Upgrade the engine progress for the tank loaded into tankDetails
 function UpgradeEngine()
 	if(tankDetails.engineProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
 		print("Purchase cost: " .. tankDetails.enginePurchaseCost)
@@ -693,16 +725,7 @@ function UpgradeEngine()
 	PopulateCurrencyUI()
 end
 
-function ShowNotEnoughCurrencyMessage()
-	-- TODO: Show a better message to the user
-	UI.PrintToScreen("You do not have enough " .. tankDetails.currency .. ".")
-end
-
-function ShowNotEnoughRPMessage()
-	-- TODO: Show a better message to the user
-	UI.PrintToScreen("You do not have enough Research Points.")
-end
-
+-- Returns a simple table that holds data for a given tank's pre-requisites. Used to determine which tank's RP can be used to research the tank
 function GetPrerequisiteRPValues(id)
 	local prerequisites = {}
 	local prerequisite1 = {}
@@ -747,14 +770,15 @@ function GetPrerequisiteRPValues(id)
 	return prerequisites
 end
 
+-- This function populates the modal popup with the tank data and its player's progress
 function PopulateDetailsModal(tank)
-	print(CanTankBeResearched(tank:GetCustomProperty("ID")))
 	if CanTankBeResearched(tank:GetCustomProperty("ID")) then
 		upgradeTank.visibility = Visibility.FORCE_ON
 	else  
 		upgradeTank.visibility = Visibility.FORCE_OFF
 	end 
 	
+	-- Load up the tank details
 	tankFullName.text = tank:GetCustomProperty("Name")
 	local reload = tank:GetCustomProperty("Reload")
 	local reloadUpgrade = tank:GetCustomProperty("ReloadUpgraded")
@@ -785,6 +809,7 @@ function PopulateDetailsModal(tank)
 		end
 	end
 	
+	-- Populate the UI with tank data based on player's progression
 	tankDetails.tankResearchCost = tank:GetCustomProperty("ResearchCost")
 	tankDetails.tankPurchaseCost = tank:GetCustomProperty("PurchaseCost")
 	tankDetails.currency = tank:GetCustomProperty("PurchaseCurrencyName")
@@ -824,8 +849,6 @@ function PopulateDetailsModal(tank)
 	elevationSubStat.text = "Elevation/Depression: +" .. tostring(elevation) .. "/" .. tostring(maxDepth)
 	elevationSubStatChange.text = "+" .. tostring(elevationUpgraded - elevation) .. "/0" -- Is there always no change in max depth?
 	
-	-- DEBUG
-	print("Tank purchased? " .. tostring(tankDetails.purchasedTank))
 	if(tankDetails.purchasedTank) then
 		-- Hide upgrade buttons if they aren't needed
 		if(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
@@ -867,17 +890,18 @@ function PopulateDetailsModal(tank)
 	end
 end
 
+-- Returns whether the tank can be researched. Checks for pre-requisite tanks and whether they have an upgrade or not.
 function CanTankBeResearched(id)
+	-- Start by assuming the tank can be researched
 	local canBeResearched = true
-	print("Checking if tank can be researched")
-	print(id)
 	for i, tank in ipairs(TANK_LIST) do
 		if(tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
-			print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
 			if(tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
+				-- The selected tank has a pre-requisite. Let's get its data
 				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
 				local preReq1Tank = {}
 				for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
+					-- Loading up the data for the pre-req tank
 					if(tostring(t.id) == tostring(preReq1Id)) then	
 						preReq1Tank.id = t.id
 						preReq1Tank.name = tank:GetCustomProperty("Name")
@@ -888,11 +912,10 @@ function CanTankBeResearched(id)
 						preReq1Tank.engineProgress = t.engineProgress			
 					end
 				end
-				
+				-- If the pre-req tank doesn't have at least 1 upgrade at purchased, then we cannot research
 				if(tostring(preReq1Tank.weaponProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
 				and tostring(preReq1Tank.armorProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
 				and tostring(preReq1Tank.engineProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
-					print("cannot research")
 					canBeResearched = false
 					break
 				end
@@ -901,8 +924,10 @@ function CanTankBeResearched(id)
 			if(CanTankBeResearched) then return CanTankBeResearched end
 			
 			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
+				-- Tank has two pre-reqs, load up data for this one
 				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
 				local preReq2Tank = GetTankData(preReq2Id)
+				-- If the pre-req tank doesn't have at least 1 upgrade at purchased, then we cannot research
 				if(tostring(preReq2Tank.weaponProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
 				and tostring(preReq2Tank.armorProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)
 				and tostring(preReq2Tank.engineProgress) < tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
@@ -911,12 +936,13 @@ function CanTankBeResearched(id)
 			end
 		else
 			-- Tank has no prereqs, can be researched
-			canBeResearched = true
+			return true
 		end
 	end
 	return canBeResearched
 end	
 
+-- Resets the properties used to handle the information about the selected tank
 function ResetTankDetails()
 	tankDetails = {
 		id = "00",
@@ -947,6 +973,7 @@ function ResetTankDetails()
 	researchingProgress = nil
 end
 
+-- Returns the data associated for the given tank
 function GetTankData(id)
 	for i, tank in ipairs(TANK_LIST) do
 		if(tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
@@ -957,54 +984,12 @@ function GetTankData(id)
 	return nil
 end
 
-function ToggleResearchSidePanel()
-	if(researchTankSidePanel.visibility == Visibility.FORCE_ON) then
-		researchTankSidePanel.visibility = Visibility.FORCE_OFF
-	else
-		researchTankSidePanel.visibility = Visibility.FORCE_ON
-	end
-end
-
-function ForceHideResearchSidePanel()
-	researchTankSidePanel.visibility = Visibility.FORCE_OFF
-end
-
-function UseFreeRP()	
-	ResearchTank(LOCAL_PLAYER:GetResource(Constants_API.FREERP), tankDetails.id, 0, true)
-end
-
-function UsePrerequisite1()
-	ResearchTank(researchPointCollection[1].rp, tankDetails.id, researchPointCollection[1].id, false)
-end
-
-function UsePrerequisite2()
-	ResearchTank(researchPointCollection[2].rp, tankDetails.id, researchPointCollection[2].id, false)
-end
-
-function TogglePrerequisite1Visibility(visibility)
-	usePrerequisite1.visibility = visibility
-	prerequisite1RP.visibility = visibility
-	prerequisite1Name.visibility = visibility
-	if(researchPointCollection[1] ~= nil) then
-		prerequisite1Name.text = researchPointCollection[1].name .. ":"
-		prerequisite1RP.text = tostring(researchPointCollection[1].rp)
-	end
-end
-
-function TogglePrerequisite2Visibility(visibility)
-	usePrerequisite2.visibility = visibility
-	prerequisite2RP.visibility = visibility
-	prerequisite2Name.visibility = visibility
-	if(researchPointCollection[2] ~= nil) then
-		prerequisite2Name.text = researchPointCollection[2].name .. ":"
-		prerequisite2RP.text = tostring(researchPointCollection[2].rp)
-	end
-end
-
+-- Function when user denies use of Free RP to research
 function DenyFreeRP()
 	useFreeRPPanel.visibility = Visibility.FORCE_OFF
 end
 
+-- Function when user confirms using Free RP to research
 function AcceptFreeRP()
 	local event = Events.BroadcastToServer("Research"..researchingName, tankDetails.id, true)
 	if(event == BroadcastEventResultCode.SUCCESS) then				
@@ -1019,7 +1004,7 @@ function AcceptFreeRP()
 					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
 				elseif(researchingName == "Engine") then
 					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED	
-				end				 
+				end
 			end
 		end
 		CloseTechTreeModal()
