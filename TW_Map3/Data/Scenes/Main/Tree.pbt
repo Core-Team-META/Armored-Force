@@ -23,6 +23,7 @@ Objects {
   ChildIds: 16749004403265649282
   ChildIds: 9058985876994128996
   ChildIds: 13993498866007246311
+  ChildIds: 1283348674582026527
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,38 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1283348674582026527
+  Name: "Morticai (Brent)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Morticai (Brent)"
   }
 }
 Objects {
