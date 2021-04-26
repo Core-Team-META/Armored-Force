@@ -5,9 +5,9 @@ map["LastTeam"] = {"ed1bcb/tanks-map-1-lts", "9fdb74/armored-force-map-2", "1f57
 map["Frontline"] = {"c80e70/tanks-map-1-frt", "24830e/tanks-map-2-frt", "3084a4/tanks-map-3-frt"}
 
 -- Individual maps
-map["Fields"] = {"ed1bcb/tanks-map-1-lts", "c80e70/tanks-map-1-frt"}
-map["Desert"] = {"9fdb74/armored-force-map-2", "24830e/tanks-map-2-frt"}
-map["Tundra"] = {"1f57c5/armored-force-map-3-test", "3084a4/tanks-map-3-frt"}
+map["Fields"] = {"c80e70/tanks-map-1-frt", "ed1bcb/tanks-map-1-lts"}
+map["Desert"] = {"24830e/tanks-map-2-frt", "9fdb74/armored-force-map-2"}
+map["Tundra"] = {"3084a4/tanks-map-3-frt", "1f57c5/armored-force-map-3-test"}
 
 function SendToMap(player, selectedMap)
 	
