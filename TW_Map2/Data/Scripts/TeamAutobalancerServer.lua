@@ -27,6 +27,7 @@ local ONLY_SWITCH_DEAD_PLAYERS = COMPONENT_ROOT:GetCustomProperty("OnlySwitchDea
 local KILL_ON_TEAM_SWITCH = COMPONENT_ROOT:GetCustomProperty("KillOnTeamSwitch")
 local SCRAMBLE_AT_ROUND_END = COMPONENT_ROOT:GetCustomProperty("ScrambleAtRoundEnd")
 
+local currentState = ""
 -- Check user properties
 if TEAM_COUNT < 2 or TEAM_COUNT > 4 then
     warn("TeamCount must be in the range [2, 4]")
@@ -42,6 +43,13 @@ end
 -- Watch team sizes and enforce autobalance. We only switch one player per frame.
 
 function Tick(deltaTime)
+
+	currentState = gameStateManager:GetCustomProperty("GameState")
+	
+	if currentState ~= "LOBBY_STATE" then
+		return
+	end
+	
 	local teamSizes = {}
 
 	for i = 1, TEAM_COUNT do
@@ -97,12 +105,12 @@ function Tick(deltaTime)
 		player.team = smallestTeam
 
 		if KILL_ON_TEAM_SWITCH and not player.isDead then
-			player:Die()
+			player:Respawn()
 		end
 	end
 end
 
-
+--[[
 -- nil OnRoundEnd()
 -- Scrambles the teams if the creator wants
 function ScrambleTeams()
@@ -145,7 +153,7 @@ function OnGameStateChanged(gsm, property)
 	
 	local newState = gameStateManager:GetCustomProperty(property)
 	
-    if newState == "LOBBYSTATE" then
+    if newState == "LOBBY_STATE" then
         
         ScrambleTeams()       
     end
@@ -154,3 +162,4 @@ end
 
 -- Initialize
 gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
+]]
