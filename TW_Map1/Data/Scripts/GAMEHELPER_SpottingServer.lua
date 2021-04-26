@@ -1,7 +1,6 @@
 local viewRange = script:GetCustomProperty("ViewRange")
 local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
 
-
 local spottingList = {}
 local viewPointList = {}
 
@@ -133,7 +132,7 @@ function CheckForSpotting()
 
 	local playerList = Game.GetPlayers()
 	
-	if gameStateManager:GetCustomProperty("GameState") ~= "MATCHSTATE" then
+	if gameStateManager:GetCustomProperty("GameState") ~= "MATCH_STATE" then
 	
 		return
 		
@@ -228,7 +227,7 @@ function OnGameStateChanged(gsm, property)
 	
 	local newState = gameStateManager:GetCustomProperty(property)
 	
-    if newState == "MATCHSTATE" then
+    if newState == "MATCH_STATE" then
         
         if not spottingTask then
         
