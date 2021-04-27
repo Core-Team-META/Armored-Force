@@ -589,6 +589,7 @@ function OnProjectileImpact(projectile, other, hitresult)
 
 	local explosion = World.SpawnAsset(explosionVFX, {position = hitresult:GetImpactPosition()})
 	
+		
 	explosion.lifeSpan = 2
 	
 	local possibleTank = other:FindAncestorByType("Equipment")
@@ -602,6 +603,8 @@ function OnProjectileImpact(projectile, other, hitresult)
 			damage.sourcePlayer = tankOwner
 		
 			possibleTank.owner:ApplyDamage(damage)
+			
+			Events.BroadcastToPlayer(tankOwner, "ShowDamageFeedback", damagePerShot)
 					
 	end
 	
