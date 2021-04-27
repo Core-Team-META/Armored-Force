@@ -12,18 +12,6 @@ function OnDamagedRecord(player, damage)
 
 end
 
-function OnStartResetStatistics()
-	
-	for _, p in pairs(Game.GetPlayers()) do
-	
-		p:SetResource("TankDamage", 0)
-		
-		p.kills = 0
-		p.deaths = 0
-		
-	end
-	
-end
 
 function OnJoined(player)
 
@@ -34,4 +22,3 @@ function OnJoined(player)
 end
 
 Game.playerJoinedEvent:Connect(OnJoined)
-Game.roundStartEvent:Connect(OnStartResetStatistics)

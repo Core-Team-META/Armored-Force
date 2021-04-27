@@ -1,10 +1,68 @@
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
-
-local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
-
 local nemesisIndex = {}
+local victimIndex = {}
 
-local resetting = false
+local nemesisList = {}
+
+function PrintNemesisIndex(player)
+	
+	if not nemesisIndex then
+	
+		return
+		
+	end
+	
+	local nemesisString = ""
+	local fullString = "NEMESIS INDEX TABLE:"
+	local playerName = ""
+	local shortenedName = ""
+	
+	for victim, killerList in pairs(nemesisIndex) do
+	
+		playerName = GetPlayer(victim).name
+		
+		shortenedName = ""
+		
+		for x = 1, 4 do
+		
+			if string.sub(playerName, x, x) then
+			
+				shortenedName = shortenedName .. string.sub(playerName, x, x)
+				
+			end
+			
+		end
+	
+		nemesisString = " \n " .. shortenedName .. " KB: "
+
+	
+		for killer, killCount in pairs(killerList) do
+		
+			playerName = GetPlayer(killer).name
+			
+			shortenedName = ""
+		
+			for x = 1, 4 do
+			
+				if string.sub(playerName, x, x) then
+				
+					shortenedName = shortenedName .. string.sub(playerName, x, x)
+					
+				end
+				
+			end
+		
+			nemesisString = nemesisString .. shortenedName .. ": " .. killCount .. ", "
+		
+		end
+		
+		fullString = fullString .. nemesisString
+		
+	end
+	
+	Chat.BroadcastMessage(fullString, {players = {player}})
+
+end
+
 
 function GetPlayer(playerId)
 	
@@ -24,29 +82,67 @@ function GetPlayer(playerId)
 
 end
 
-function TrackDamage(player, damage)
+function TrackKill(victim, damage)
 
-	if resetting or not damage or not damage.sourcePlayer then
+	if not damage.sourcePlayer then
+	
+		return
+		
+	end
+	
+	local killer = damage.sourcePlayer
+
+	if not killer or not victim or not killer:IsA("Player") or not victim:IsA("Player") then
 	
 		return
 		
 	end
 
-	if not nemesisIndex[player.id] then
+	if resetting then
 	
-		nemesisIndex[player.id] = {}
+		return
+		
+	end
+
+	-- nemesis index
+	if not nemesisIndex[victim.id] then
+	
+		nemesisIndex[victim.id] = {}
 		
 	end
 	
-	if not nemesisIndex[player.id][damage.sourcePlayer.id] then
+	if not nemesisIndex[victim.id][killer.id] then
 	
-		nemesisIndex[player.id][damage.sourcePlayer.id] = damage.amount
+		nemesisIndex[victim.id][killer.id] = damage.amount
 		
 	else 
 	
-		nemesisIndex[player.id][damage.sourcePlayer.id] = nemesisIndex[player.id][damage.sourcePlayer.id] + damage.amount
+		nemesisIndex[victim.id][killer.id] = nemesisIndex[victim.id][killer.id] + damage.amount
 		
 	end
+	
+	-- victim index
+	if not victimIndex[killer.id] then
+	
+		victimIndex[killer.id] = {}
+		
+	end
+	
+	if not victimIndex[killer.id][victim.id] then
+	
+		victimIndex[killer.id][victim.id] = damage.amount
+		
+	else 
+	
+		victimIndex[killer.id][victim.id] = victimIndex[killer.id][victim.id] + damage.amount
+		
+	end
+	
+end
+
+function Setup(player)
+
+	player.damagedEvent:Connect(TrackKill)
 
 end
 
@@ -96,7 +192,20 @@ function CleanNemesisTable()
 		
 	end
 	
+	for killer, victimList in pairs(victimIndex) do
+	
+		for victim, killCount in pairs(victimList) do
+		
+			victimList[victim] = nil
+		
+		end
+		
+		nemesisIndex[killer] = nil
+		
+	end
+	
 	nemesisIndex = {}
+	victimIndex = {}
 	
 	resetting = false
 	
@@ -104,25 +213,31 @@ end
 
 function CalculateNemesis()
 
-	local nemesisList = {}
+	nemesisList = {}
 
 	local selectedNemesis = nil
+	local victimKilledMost = " "
+	
 	local nemesisKills = 0
 	local otherNemesisCount = 0
+	local victimHighestKills = 0
 	
 	-- Calculate who is the nemeis of who
 	for victim, killerList in pairs(nemesisIndex) do
 	
-		selectedNemesis = nil
+		selectedNemesis = " "
+		victimKilledMost = " "
 		
 		nemesisKills = 0
 		otherNemesisCount = 0
-	
-		for killer, damageCount in pairs(killerList) do
 		
-			if damageCount > nemesisKills then
+		victimHighestKills = 0
+	
+		for killer, killCount in pairs(killerList) do
+		
+			if killCount > nemesisKills then
 			
-				nemesisKills = damageCount
+				nemesisKills = killCount
 				
 				selectedNemesis = killer 
 				
@@ -130,11 +245,11 @@ function CalculateNemesis()
 		
 		end
 		
-		if selectedNemesis then
+		if selectedNemesis ~= " " then
 		
-			for killer, damageCount in pairs(killerList) do
+			for killer, killCount in pairs(killerList) do
 			
-				if damageCount == nemesisKills then
+				if killCount == nemesisKills then
 				
 					otherNemesisCount = otherNemesisCount + 1					
 				end
@@ -143,99 +258,87 @@ function CalculateNemesis()
 			
 			otherNemesisCount = otherNemesisCount - 1 -- removing the same nemesis from count
 			
-			table.insert(nemesisList, {selectedNemesis, victim, otherNemesisCount, nemesisKills})
+			if victimIndex[victim] then
+			
+				for victim2, victimKillCount in pairs(victimIndex[victim]) do
+				
+					if victimKillCount > victimHighestKills then
+					
+						victimHighestKills = victimKillCount
+						
+						victimKilledMost = victim2
+						
+					end
+					
+				end
+				
+			end
+			
+			table.insert(nemesisList, {selectedNemesis, victim, otherNemesisCount, nemesisKills, victimKilledMost, victimHighestKills})
 					
 		end
 							
 	end
 	
-	-- create string to show your nemesis and who you are the nemesis of
-	
-	for _, player in pairs(Game.GetPlayers()) do
-	
+	print("Finished Calculating Nemesis")
+			
+end
 
-		local youAreNemesisOf = ""
-		local yourDamageCountAsNemesis = 0
-		local countOfBeingNemesis = 0
-		
-		local yourNemesisIs = ""
-		local yourNemesisDamgeCount = 0
-		local countOfYourNemesis = 0
+function SetNemesis()
+
+	local nemesisString = ""
+
+	for i = 1, 12 do
 	
-		for _, entry in pairs(nemesisList) do
-			
-			if entry[1] == player.id and GetPlayer(entry[2]) and youAreNemesisOf == "" then
-			
-				youAreNemesisOf = GetPlayer(entry[2]).name
-				
-				yourDamageCountAsNemesis = entry[4]
-				
-			elseif entry[1] == player.id and youAreNemesisOf then
-			
-				countOfBeingNemesis = countOfBeingNemesis + 1
-				
-			end
-			
-			if entry[2] == player.id and GetPlayer(entry[1]) then
-			
-				yourNemesisIs = GetPlayer(entry[1]).name
-				
-				yourNemesisDamageCount = entry[4]
-				
-				if entry[3] > 0 then
-				
-					countOfYourNemesis =  entry[3]
-					
-				end
-				
-			end
+		if i <= #nemesisList then
 		
+			nemesisString = nemesisList[i][1] .. ":" .. nemesisList[i][2]
+			nemesisString = nemesisString .. ":" .. tostring(nemesisList[i][3]) .. ":" .. tostring(nemesisList[i][4])
+			nemesisString = nemesisString .. ":" .. nemesisList[i][5] .. ":" .. tostring(nemesisList[i][6])
+		
+		else 
+		
+			nemesisString = ""
+			
 		end
 		
-		ReliableEvents.BroadcastToPlayer(player, "NEMESISOF", youAreNemesisOf, yourDamageCountAsNemesis, countOfBeingNemesis)
+		script:SetNetworkedCustomProperty("P" .. tostring(i), nemesisString)
 		
-		Task.Wait(0.1)
-		
-		ReliableEvents.BroadcastToPlayer(player, "YOURNEMESIS", yourNemesisIs, yourNemesisDamageCount, countOfYourNemesis)
-		
-		Task.Wait(0.1)
-				
 	end
+	
+	script:SetNetworkedCustomProperty("ListSet", true)
+	
+	--print("Finished Setting Nemesis")
 	
 		
 end
 
-function OnJoined(player)
 
-	player.damagedEvent:Connect(TrackDamage)
+function OnGameStateChanged(newState)
+
+	--print("Nemesis Server got: " .. tostring(newState))
+
+	if newState == "VICTORY_STATE"  then
 	
-end
-
-
-function OnGameStateChanged(gsm, property)
-
-	if property ~= "GameState" then
-	
-		return
+		print("Calculating and setting nemesis")
 		
-	end
-	
-	local newState = gameStateManager:GetCustomProperty(property)
-	
-    if newState == "VICTORYSTATE" then
+		CalculateNemesis()		
+		
+		SetNemesis()
+	        
+    elseif newState == "LOBBY_STATE" then
     
-    	Task.Wait(1)
-        
-        CalculateNemesis()
-        
-    elseif newState == "LOBBYSTATE" then
+    	print("Cleaning Nemesis entries")
     
+    	script:SetNetworkedCustomProperty("ListSet", false)
+        
         CleanNemesisTable()
         
     end
 end
 
-Game.playerJoinedEvent:Connect(OnJoined)
+Game.playerJoinedEvent:Connect(Setup)
 Game.playerLeftEvent:Connect(RemoveFromTable)
 
-gameStateManager.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
+Events.Connect("NEW_STATE", OnGameStateChanged)
+Events.Connect("PRINT_NEMESIS", PrintNemesisIndex)

@@ -570,7 +570,7 @@ end
 
 function ShowNemesis()
 	
-	if yourNemesisIs and yourNemesisIs ~= "Took No Damage" and localPlayer.deaths > 0 then
+	if yourNemesisIs and yourNemesisIs ~= "Took No Damage" then
 	
 		Task.Spawn(AnimateYourNemesis)
 		
@@ -581,7 +581,7 @@ function ShowNemesis()
 		
 	end
 	
-	if youAreNemesisOf and youAreNemesisOf ~= "Dealt No Damage" and localPlayer.kills > 0 then
+	if youAreNemesisOf and youAreNemesisOf ~= "Dealt No Damage" then
 	
 		Task.Spawn(AnimateYouAsNemesis)
 		

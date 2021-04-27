@@ -142,7 +142,7 @@ end
 
 function Setup(player)
 
-	player.diedEvent:Connect(TrackKill)
+	player.damagedEvent:Connect(TrackKill)
 
 end
 
