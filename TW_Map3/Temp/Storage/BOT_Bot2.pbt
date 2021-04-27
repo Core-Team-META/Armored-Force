@@ -6,6 +6,30 @@ Entries {
     Table {
       Entries {
         Key {
+          StringVar: "Silver"
+        }
+        SimpleValue {
+          IntVar: 28000
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "GAMESPLAYED"
+        }
+        SimpleValue {
+          IntVar: 23
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "TOTALWINS"
+        }
+        SimpleValue {
+          IntVar: 17
+        }
+      }
+      Entries {
+        Key {
           StringVar: "AVERAGEDMG"
         }
         SimpleValue {
@@ -17,31 +41,7 @@ Entries {
           StringVar: "T_18RP"
         }
         SimpleValue {
-          IntVar: 8850
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "GAMESPLAYED"
-        }
-        SimpleValue {
-          IntVar: 11
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "TOTALWINS"
-        }
-        SimpleValue {
-          IntVar: 10
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "Silver"
-        }
-        SimpleValue {
-          IntVar: 18250
+          IntVar: 13700
         }
       }
     }

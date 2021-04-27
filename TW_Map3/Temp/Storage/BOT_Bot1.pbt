@@ -6,18 +6,10 @@ Entries {
     Table {
       Entries {
         Key {
-          StringVar: "AVERAGEDMG"
+          StringVar: "TankDamage"
         }
         SimpleValue {
-          IntVar: 135
-        }
-      }
-      Entries {
-        Key {
-          StringVar: "T_01RP"
-        }
-        SimpleValue {
-          IntVar: 9300
+          IntVar: 150
         }
       }
       Entries {
@@ -42,6 +34,30 @@ Entries {
         }
         SimpleValue {
           IntVar: 12
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "TOTALDMG"
+        }
+        SimpleValue {
+          IntVar: 3700
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "AVERAGEDMG"
+        }
+        SimpleValue {
+          IntVar: 135
+        }
+      }
+      Entries {
+        Key {
+          StringVar: "T_01RP"
+        }
+        SimpleValue {
+          IntVar: 9300
         }
       }
     }
