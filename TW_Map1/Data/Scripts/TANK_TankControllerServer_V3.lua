@@ -602,6 +602,8 @@ function OnProjectileImpact(projectile, other, hitresult)
 			damage.sourcePlayer = tankOwner
 		
 			possibleTank.owner:ApplyDamage(damage)
+			
+			Events.BroadcastToPlayer(tankOwner, "ShowDamageFeedback", damagePerShot)
 					
 	end
 	
