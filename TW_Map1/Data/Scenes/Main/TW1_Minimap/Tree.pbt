@@ -1149,7 +1149,7 @@ Objects {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 12241662763814120887
+        SelfId: 55861294835824491
       }
     }
     Overrides {

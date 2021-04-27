@@ -99,11 +99,10 @@ for _,shape in ipairs(worldShapes) do
 	end
 end
 
-local boundsCenter = script:GetCustomProperty("BoundsCenter")
-boundsLeft = script:GetCustomProperty("BoundsWidth") * -0.5 + boundsCenter.x
-boundsTop = script:GetCustomProperty("BoundsHeight") * -0.5 + boundsCenter.y
-boundsRight = script:GetCustomProperty("BoundsWidth") * 0.5 + boundsCenter.x
-boundsBottom = script:GetCustomProperty("BoundsHeight") * 0.5 + boundsCenter.y
+boundsLeft = -script:GetCustomProperty("BoundsWidth") * 0.5
+boundsTop = -script:GetCustomProperty("BoundsHeight") * 0.5
+boundsRight = script:GetCustomProperty("BoundsWidth") * 0.5
+boundsBottom = script:GetCustomProperty("BoundsHeight") * 0.5
 local boundsWidth = (boundsRight - boundsLeft)
 local boundsHeight = boundsBottom - boundsTop
 
