@@ -24,8 +24,6 @@ local deadTank = script:GetCustomProperty("DeadTank")
 
 local hitbox = tankEquipment:FindDescendantsByName("ServerCollisionTrigger")
 
-local tankId = tankEquipment:GetCustomProperty("TankID")
-
 -- FIREPOWER
 local defaultReloadSpeed = tankEquipment:GetCustomProperty("ReloadSpeed")
 local upgradedReload = tankEquipment:GetCustomProperty("UpgradedReload")
@@ -198,40 +196,16 @@ end
 
 function SetTankModifications(player)
 	
-	local modifications = nil
+	local modifications = "FSM"
 	
-	if player.serverUserData.techTreeProgress then
-	
-		for x, entry in ipairs(player.serverUserData.techTreeProgress) do
-		
-			if entry.id == tankId then
-			
-				modifications = {tonumber(entry.weaponProgress), tonumber(entry.armorProgress), tonumber(entry.engineProgress)}
-				
-				--print("Retrieved from entry " .. entry.id .. " : " .. tostring(modifications[1]) .. ", " .. tostring(modifications[2]) .. ", " .. tostring(modifications[3]))
-				
-			end
-			
-		end
-	
-	end
-	
-	if not modifications then
-	
-		warn("COULD NOT FIND TANK ID " .. tankId)
-		
-		modifications = {0, 0, 0}
-		
-	end
-	
-	if modifications[1] == 2 then
+	if string.find(modifications, "F") then
 	
 		reloadSpeed = upgradedReload
 		turretTraverseSpeed = upgradedTraverse
 		turretElevationSpeed = upgradedElevation
 		damagePerShot = upgradedDamage
 		
-		print("Upgraded firepower")
+		--print("Upgraded firepower")
 		
 	else 
 	
@@ -240,31 +214,31 @@ function SetTankModifications(player)
 		turretElevationSpeed = defaultTurretElevationSpeed
 		damagePerShot = defaultDamagePerShot
 		
-		print("Default firepower")
+		--print("Default firepower")
 		
 	end
 	
-	if modifications[2] == 2 then
+	if string.find(modifications, "S") then
 	
 		hitpoints = upgradedHitpoints
 		
-		print("Upgraded surivability")
+		--print("Upgraded surivability")
 		
 	else 
 	
 		hitpoints = defaultHitpoints
 		
-		print("Default surivability")
+		--print("Default surivability")
 		
 	end
 
-	if modifications[3] == 2 then
+	if string.find(modifications, "M") then
 	
 		topSpeed = upgradedTopSpeed
 		acceleration = upgradedAcceleration
 		hullTraverseSpeed = upgradedHullTraverse
 		
-		print("Upgraded mobility")
+		--print("Upgraded mobility")
 		
 	else 
 	
@@ -272,17 +246,9 @@ function SetTankModifications(player)
 		acceleration = defaultAcceleration
 		hullTraverseSpeed = defaultHullTraverseSpeed	
 		
-		print("Default mobility")
+		--print("Default mobility")
 		
 	end
-	
-	reloadSpeed = reloadSpeed / 1.5
-	topSpeed = topSpeed * 1.5
-	reverseSpeed = reverseSpeed * 1.5
-	hullTraverseSpeed = hullTraverseSpeed * 1.5
-	turretTraverseSpeed = turretTraverseSpeed * 1.5
-	turretElevationSpeed = turretElevationSpeed * 1.5
-	projectileSpeed = projectileSpeed * 3
 	
 end
 	
@@ -298,29 +264,31 @@ function OnDeath(player, damage)
 	
 	end
 	
-	if damage then
-		
-		local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition() + Vector3.New(0, 0, -105), rotation = adjustmentPoint:GetWorldRotation()})
-		local destroyedTurret = destroyedTank:FindDescendantByName("Turret")
-		local destroyedCannon = destroyedTank:FindDescendantByName("Cannon")
-		
-		if destroyedTurret then
-		
-			destroyedTurret:SetRotation(turretTraverseMarker:GetRotation())
-			
-		end
-		
-		if destroyedCannon then
-		
-			destroyedCannon:SetRotation(turretElevationMarker:GetRotation())
-			
-		end
-		
-		destroyedTank.lifeSpan = 5
+	if not damage then
+	
+		return
 		
 	end
 	
-	tankEquipment:Destroy()
+	local destroyedTank = World.SpawnAsset(deadTank, {position = tankOwner:GetWorldPosition() + Vector3.New(0, 0, -105), rotation = adjustmentPoint:GetWorldRotation()})
+	local destroyedTurret = destroyedTank:FindDescendantByName("Turret")
+	local destroyedCannon = destroyedTank:FindDescendantByName("Cannon")
+	
+	if destroyedTurret then
+	
+		destroyedTurret:SetRotation(turretTraverseMarker:GetRotation())
+		
+	end
+	
+	if destroyedCannon then
+	
+		destroyedCannon:SetRotation(turretElevationMarker:GetRotation())
+		
+	end
+	
+	destroyedTank.lifeSpan = 5
+	
+	script:Destroy()
 
 end
 
@@ -602,8 +570,6 @@ function OnProjectileImpact(projectile, other, hitresult)
 			damage.sourcePlayer = tankOwner
 		
 			possibleTank.owner:ApplyDamage(damage)
-			
-			Events.BroadcastToPlayer(tankOwner, "ShowDamageFeedback", damagePerShot)
 					
 	end
 	
