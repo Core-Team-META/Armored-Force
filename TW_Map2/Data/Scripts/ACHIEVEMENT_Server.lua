@@ -111,8 +111,9 @@ local function PlayerKilled(player, target, weaponType, isHeadShot)
     player.serverUserData.ACH_killCount =
         player.serverUserData.ACH_killCount and player.serverUserData.ACH_killCount + 1 or 1
 
-    ACH_API.AddProgress(player, "ASKILL1", 1)
-    ACH_API.AddProgress(player, "ASKILL2", 1)
+    ACH_API.AddProgress(player, "KILL", 1)
+    ACH_API.AddProgress(player, "KILL2", 1)
+    ACH_API.AddProgress(player, "KILL3", 1)
 
     target.serverUserData.ACH_killCredited = true
     target.serverUserData.ACH_diedInRound = true
@@ -245,10 +246,15 @@ Game.playerLeftEvent:Connect(OnPlayerLeft)
 --GAME_STATE.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
 
 -- Server (Same Context) Broadcast Listeners
-Events.Connect("AS.PlayerDamaged", PlayerDamaged)
-Events.Connect("AS.KillStreak", OnKillStreak)
-Events.Connect("AS.PlayerPointCapture", OnPlayerCapture)
-Events.Connect("AS.PlayerAssistPointCapture", OnPlayerAssistCapture)
+--Events.Connect("CombatWrapAPI.GoingToTakeDamage", GoingToTakeDamage)
+Events.Connect("CombatWrapAPI.OnDamageTaken", PlayerDamaged)
+--Events.Connect("CombatWrapAPI.ObjectHasDied", OnDied)
+
+
+--Events.Connect("AS.PlayerDamaged", PlayerDamaged)
+--Events.Connect("AS.KillStreak", OnKillStreak)
+--Events.Connect("AS.PlayerPointCapture", OnPlayerCapture)
+--Events.Connect("AS.PlayerAssistPointCapture", OnPlayerAssistCapture)
 
 -- Client Broadcast Listeners
 Events.ConnectForPlayer("AS.RewardClaim", OnRewardCollected)
