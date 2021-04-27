@@ -26,8 +26,6 @@ function OnImpact(trigger, other)
 	
 	if other.type == "Projectile" then
 	
-		Events.BroadcastToPlayer(other.owner, "ShowDamageFeedback", other.damage)
-	
 		local explosion = World.SpawnAsset(explosionVFX, {position = other:GetWorldPosition()})
 		
 		explosion.lifeSpan = 2

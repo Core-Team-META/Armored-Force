@@ -42,6 +42,8 @@ function OnImpact(trigger, other)
 	print("hit by projectile")
 	
 	if other.type == "Projectile" and allowImpact and other.owner == localPlayer then
+	
+		Events.Broadcast("ShowDamageFeedback", savedDamage)
 			
 		currentHP = currentHP - savedDamage
 		
