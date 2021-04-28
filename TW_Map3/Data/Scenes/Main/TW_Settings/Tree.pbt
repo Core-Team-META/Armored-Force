@@ -220,7 +220,6 @@ Objects {
       WalkSpeed: 1000
       MaxAcceleration: 500
       WalkableFloorAngle: 50
-      JumpMaxCount: 1
       JumpVelocity: 900
       GroundFriction: 10
       GravityScale: 1.9
@@ -248,6 +247,7 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
+      IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
       AbilityAimMode {
