@@ -1,8 +1,3 @@
-while not _G["standardcombo.Combat.Wrap"] do
-	Task.Wait()
-end
-local COMBAT = _G["standardcombo.Combat.Wrap"]
-
 local reliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local tankEquipment = script:GetCustomProperty("TankEquipment"):WaitForObject()
@@ -282,11 +277,11 @@ function SetTankModifications(player)
 	end
 	
 	reloadSpeed = reloadSpeed / 1.5
-	topSpeed = topSpeed * 1.5
+	topSpeed = topSpeed * 1.25
 	reverseSpeed = reverseSpeed * 1.5
-	hullTraverseSpeed = hullTraverseSpeed * 1.5
-	turretTraverseSpeed = turretTraverseSpeed * 1.5
-	turretElevationSpeed = turretElevationSpeed * 1.5
+	hullTraverseSpeed = hullTraverseSpeed * 2
+	turretTraverseSpeed = turretTraverseSpeed * 2
+	turretElevationSpeed = turretElevationSpeed * 2
 	projectileSpeed = projectileSpeed * 3
 	
 end
@@ -536,7 +531,7 @@ function AdjustTurretRotation()
 	turretHelperMarker:LookAt(RaycastResultFromPointRotationDistance(tankOwner:GetViewWorldPosition(),tankOwner:GetViewWorldRotation(), 10000))
 
 end
-
+--[[
 function CheckAimAndTurret()
 
 	local ownerView = turretHelperMarker:GetWorldRotation()
@@ -560,10 +555,10 @@ function CheckAimAndTurret()
 	return false
 	
 end
-
+]]
 function ShootProjectile()
 
-	if reloading or not CheckAimAndTurret() then
+	if reloading then --  or not CheckAimAndTurret()
 	
 		return
 		
@@ -594,13 +589,12 @@ function OnProjectileImpact(projectile, other, hitresult)
 
 	local explosion = World.SpawnAsset(explosionVFX, {position = hitresult:GetImpactPosition()})
 	
-		
 	explosion.lifeSpan = 2
 	
 	local possibleTank = other:FindAncestorByType("Equipment")
 	
 	if possibleTank then
-		--[[
+	
 			local damage = Damage.New(damagePerShot)
 			
 			damage.reason = DamageReason.COMBAT
@@ -608,24 +602,6 @@ function OnProjectileImpact(projectile, other, hitresult)
 			damage.sourcePlayer = tankOwner
 		
 			possibleTank.owner:ApplyDamage(damage)
-		]]--
-
-			-- Using Combat Wrap
-			local dmg = Damage.New(damagePerShot)
-			dmg.reason = DamageReason.COMBAT
-			dmg.sourcePlayer = tankOwner
-			--dmg.sourceAbility = tankEquipment
-
-			local attackData = {
-				object = possibleTank.owner,
-				damage = dmg,
-				source = tankOwner,
-				position = nil,
-				rotation = nil,
-				tags = {id = "Example"}
-			}
-			COMBAT.ApplyDamage(attackData) -- damage enemy
-
 			
 			Events.BroadcastToPlayer(tankOwner, "ShowDamageFeedback", damagePerShot)
 					
@@ -655,7 +631,7 @@ function Tick(dt)
 		
 	end
 	
-	CheckAimAndTurret()
+	--CheckAimAndTurret()
 	
 	AdjustTurretRotation()
 	

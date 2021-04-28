@@ -277,11 +277,11 @@ function SetTankModifications(player)
 	end
 	
 	reloadSpeed = reloadSpeed / 1.5
-	topSpeed = topSpeed * 1.5
+	topSpeed = topSpeed * 1.25
 	reverseSpeed = reverseSpeed * 1.5
-	hullTraverseSpeed = hullTraverseSpeed * 1.5
-	turretTraverseSpeed = turretTraverseSpeed * 1.5
-	turretElevationSpeed = turretElevationSpeed * 1.5
+	hullTraverseSpeed = hullTraverseSpeed * 2
+	turretTraverseSpeed = turretTraverseSpeed * 2
+	turretElevationSpeed = turretElevationSpeed * 2
 	projectileSpeed = projectileSpeed * 3
 	
 end
@@ -531,7 +531,7 @@ function AdjustTurretRotation()
 	turretHelperMarker:LookAt(RaycastResultFromPointRotationDistance(tankOwner:GetViewWorldPosition(),tankOwner:GetViewWorldRotation(), 10000))
 
 end
-
+--[[
 function CheckAimAndTurret()
 
 	local ownerView = turretHelperMarker:GetWorldRotation()
@@ -555,10 +555,10 @@ function CheckAimAndTurret()
 	return false
 	
 end
-
+]]
 function ShootProjectile()
 
-	if reloading or not CheckAimAndTurret() then
+	if reloading then --  or not CheckAimAndTurret()
 	
 		return
 		
@@ -631,7 +631,7 @@ function Tick(dt)
 		
 	end
 	
-	CheckAimAndTurret()
+	--CheckAimAndTurret()
 	
 	AdjustTurretRotation()
 	
