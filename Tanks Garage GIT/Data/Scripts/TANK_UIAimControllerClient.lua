@@ -114,7 +114,7 @@ function FindTank()
 		
 			
 end
-
+--[[
 function CheckAimAndTurret()
 
 	local ownerView = turretHelper:GetWorldRotation()
@@ -141,7 +141,7 @@ function CheckAimAndTurret()
 	ringPart2:SetColor(Color.RED)
 		
 end
-
+]]
 function UpdatePointer()
 		
 	local uiPostion = UI.GetScreenPosition(RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation() - Rotation.New(0, 3, 0), 100000))
@@ -208,7 +208,7 @@ function Tick(dt)
 				
 	end
 	
-	CheckAimAndTurret()
+	--CheckAimAndTurret()
 	
 	UpdatePointer()
 		
