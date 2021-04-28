@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17066449609679557524
+  Name: "Frame Outline Thin 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_019"
+  }
+}
+Assets {
   Id: 16329205256895515262
   Name: "Sci-fi Parts 030"
   PlatformAssetType: 9
