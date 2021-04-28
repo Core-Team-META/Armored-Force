@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 
 	Spectator - Client
 	1.0.0 - December 04, 2020
@@ -19,6 +19,7 @@ local SpectateNextPlayerPanel = script:GetCustomProperty("SpectateNextPlayerPane
 local FreecamMovePanel = script:GetCustomProperty("FreecamMovePanel"):WaitForObject()
 local FreecamDecreaseSpeedPanel = script:GetCustomProperty("FreecamDecreaseSpeedPanel"):WaitForObject()
 local FreecamIncreaseSpeedPanel = script:GetCustomProperty("FreecamIncreaseSpeedPanel"):WaitForObject()
+local ReturnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject()
 
 local LocalPlayer = Game.GetLocalPlayer()
 
@@ -50,6 +51,7 @@ local BINDING_PREVIOUS_PLAYER_3 = RootGroup:GetCustomProperty("B_PreviousPlayer_
 local BINDING_NEXT_PLAYER_1 = RootGroup:GetCustomProperty("B_NextPlayer_1")
 local BINDING_NEXT_PLAYER_2 = RootGroup:GetCustomProperty("B_NextPlayer_2")
 local BINDING_NEXT_PLAYER_3 = RootGroup:GetCustomProperty("B_NextPlayer_3")
+local BINDING_RETURN_TO_GARAGE = RootGroup:GetCustomProperty("B_ReturnToGarage")
 
 ------------------------------------------------------------------------------------------------------------------------
 --	INITIAL VARIABLES
@@ -145,11 +147,10 @@ end
 local function SpectateFirstPlayer(player)
 	if(spectateMode ~= SpectateMode.PLAYER) then return end
 
-	local players = GetPlayersList(player)
-	local newPlayer = players[1]
-	if(not newPlayer) then return Unspectate() end
+	local nearestTeammate = Game.FindNearestPlayer(LocalPlayer:GetWorldPosition(), {ignoreDead = true, includeTeams = LocalPlayer.team})
+	if(not nearestTeammate) then return Unspectate() end
 
-	Spectate(newPlayer)
+	Spectate(nearestTeammate)
 
 	return true
 end
@@ -216,6 +217,11 @@ end
 local function OnBindingReleased(player, binding)
 	bindingsPressed[binding] = false
 
+	if(binding == BINDING_RETURN_TO_GARAGE) then
+		Events.BroadcastToServer("SEND_TO_GARAGE")
+		return
+	end
+
 	if(binding == BINDING_TOGGLE) then
 		if(spectateMode == SpectateMode.NONE) then
 			return ChangeSpectateMode(SpectateMode.PLAYER)
@@ -275,6 +281,7 @@ local function ChangeUiMode()
 		FreecamDecreaseSpeedPanel.visibility = Visibility.FORCE_OFF
 		FreecamIncreaseSpeedPanel.visibility = Visibility.FORCE_OFF
 	end
+	ReturnToGarage.visibility = Visibility.INHERIT
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -299,6 +306,8 @@ end
 --	Forces spectate a player
 function Spectate(player)
 	if((TEAM_SPECTATOR > 0) and (player.team ~= TEAM_SPECTATOR)) then return end
+	if(player.team ~= LocalPlayer.team) then return end
+	
 	if(PlayerCamera.followPlayer == player) then return end
 
 	if(debounce) then return end
