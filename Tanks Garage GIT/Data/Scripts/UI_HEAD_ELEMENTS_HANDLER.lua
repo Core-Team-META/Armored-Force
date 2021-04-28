@@ -93,11 +93,11 @@ local targetDestination = CLOSED_DROPDOWN_Y
 local timeRemaining = 1
 
 -- SETTINGS FOR SLIDING STATS MENU
-local STATS_OPEN_DROPDOWN_Y = script:GetCustomProperty("STATS_OPEN_DROPDOWN_Y")
-local STATS_CLOSED_DROPDOWN_Y = script:GetCustomProperty("STATS_CLOSED_DROPDOWN_Y")
+local STATS_OPEN_DROPDOWN_X = script:GetCustomProperty("STATS_OPEN_DROPDOWN_X")
+local STATS_CLOSED_DROPDOWN_X = script:GetCustomProperty("STATS_CLOSED_DROPDOWN_X")
 local STATS_DROPDOWN_TOGGLE_TIME = script:GetCustomProperty("STATS_DROPDOWN_TOGGLE_TIME")
 local STATS_isMoving = false
-local STATS_targetDestination = STATS_CLOSED_DROPDOWN_Y
+local STATS_targetDestination = STATS_CLOSED_DROPDOWN_X
 local STATS_timeRemaining = 1
 
 -- SETTINGS FOR SLIDING PLAYER_STATS MENU
@@ -174,12 +174,12 @@ function Tick(deltaTime)
 	if STATS_isMoving then
 		STATS_timeRemaining = CoreMath.Clamp(STATS_timeRemaining - deltaTime, 0, STATS_DROPDOWN_TOGGLE_TIME)
 		local STATS_newPosition = 0
-		if STATS_targetDestination == STATS_OPEN_DROPDOWN_Y then
-			STATS_newPosition = CoreMath.Lerp(STATS_CLOSED_DROPDOWN_Y, STATS_OPEN_DROPDOWN_Y, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
+		if STATS_targetDestination == STATS_OPEN_DROPDOWN_X then
+			STATS_newPosition = CoreMath.Lerp(STATS_CLOSED_DROPDOWN_X, STATS_OPEN_DROPDOWN_X, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
 		else
-			STATS_newPosition = CoreMath.Lerp(STATS_OPEN_DROPDOWN_Y, STATS_CLOSED_DROPDOWN_Y, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
+			STATS_newPosition = CoreMath.Lerp(STATS_OPEN_DROPDOWN_X, STATS_CLOSED_DROPDOWN_X, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
 		end
-		STATS_CONTAINER.y = STATS_newPosition
+		STATS_CONTAINER.x = STATS_newPosition
 		if STATS_timeRemaining <= 0 then
 			STATS_isMoving = false
 		end
@@ -332,14 +332,14 @@ end
 
 -- TOGGLE STATS
 function STATS_TOGGLE_DROPDOWN()
-	if STATS_CONTAINER.y == STATS_CLOSED_DROPDOWN_Y then
+	if STATS_CONTAINER.x == STATS_CLOSED_DROPDOWN_X then
 	SFX_SLIDE_DOWN:Play()
 		if isMoving and timeRemaining > 0 then
-			STATS_targetDestination = STATS_OPEN_DROPDOWN_Y
+			STATS_targetDestination = STATS_OPEN_DROPDOWN_X
 			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining
 		else
 			STATS_isMoving = true
-			STATS_targetDestination = STATS_OPEN_DROPDOWN_Y
+			STATS_targetDestination = STATS_OPEN_DROPDOWN_X
 			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME
 		end
 	Task.Wait(0.1)
@@ -348,11 +348,11 @@ function STATS_TOGGLE_DROPDOWN()
 	else
 	SFX_SLIDE_UP:Play()
 		if STATS_isMoving and STATS_timeRemaining > 0 then
-			STATS_targetDestination = STATS_CLOSED_DROPDOWN_Y
+			STATS_targetDestination = STATS_CLOSED_DROPDOWN_X
 			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining
 		else
 			STATS_isMoving = true
-			STATS_targetDestination = STATS_CLOSED_DROPDOWN_Y
+			STATS_targetDestination = STATS_CLOSED_DROPDOWN_X
 			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME
 		end
 	Task.Wait(0.1)
