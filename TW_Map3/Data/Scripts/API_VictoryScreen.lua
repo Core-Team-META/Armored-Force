@@ -222,6 +222,7 @@ function API.OnPlayerTeleported(victoryScreen, player,  topThreePlayerStats, dur
 	-- prevent player from moving or turning
 	player.movementControlMode = MovementControlMode.NONE
 	player.lookControlMode = LookControlMode.NONE
+	player.maxJumpCount = 1
 	player:Respawn()
 	
 	Task.Wait(.1)
