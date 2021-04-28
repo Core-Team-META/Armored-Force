@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16329205256895515262
+  Name: "Sci-fi Parts 030"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFi_Equip_Parts_030"
+  }
+}
+Assets {
   Id: 14514750246421432694
   Name: "Button Page Slide Core 01 SFX"
   PlatformAssetType: 7
@@ -224,6 +233,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4532731467347944027
+  Name: "Survival Money 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Money_001"
+  }
+}
+Assets {
   Id: 4519748528802078203
   Name: "Icon Checkmark"
   PlatformAssetType: 9
@@ -251,6 +269,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3576362623870181230
+  Name: "Icon Arrow Turn Left"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_ArrowTurnLeft"
+  }
+}
+Assets {
   Id: 1772837125351970481
   Name: "Money"
   PlatformAssetType: 9
@@ -266,5 +293,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
+  Id: 198353679974341757
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
   }
 }
