@@ -26,8 +26,12 @@ function OnResourceChanged(player, resource, value)
 end
 
 function OnPlayerJoined(player)
+
+	print("Player Joined " .. player.name)
 	
 	local playerData = Storage.GetPlayerData(player)
+	
+	print("Storage Retrieved")
 
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
@@ -39,21 +43,22 @@ function OnPlayerJoined(player)
 	
 	player.serverUserData.techTreeProgress = {}
 	
+	print("Checking and setting shared storage")
 	CheckAndSetSharedStorageDefault(player)
-	
+	print("Loading shared storage")
 	LoadAndSetDataFromSharedStorage(player)
 		
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
-	--[[
+
 	print("-----PRINTING SHARED STORAGE-----")
 	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
 	print("-----FINISHED PRINTING SHARED STORAGE-----")
-	print("-----PRINTING LOCAL STORAGE-----")
-	UTIL_API.TablePrint(Storage.GetPlayerData(player))
-	print("-----FINISHED PRINTING LOCAL STORAGE-----")
-	]]--
+	--print("-----PRINTING LOCAL STORAGE-----")
+	--UTIL_API.TablePrint(Storage.GetPlayerData(player))
+	--print("-----FINISHED PRINTING LOCAL STORAGE-----")
+
 end
 
 function OnPlayerLeft(player)
@@ -85,7 +90,7 @@ function CheckAndSetSharedStorageDefault(player)
 		
 	end
 	
-	--print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
+	print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 	
 	if(player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
 		playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()
@@ -148,6 +153,7 @@ function LoadAndSetDataFromSharedStorage(player)
 	player.serverUserData.GOLD_FROM_BUNDLE[3] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3])
 	
 	Events.Broadcast("SET_DAILY_CHALLENGES", player)
+	print("Daily challenges broadcasted: " .. player.serverUserData.CHALLENGES)
 	
 	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 

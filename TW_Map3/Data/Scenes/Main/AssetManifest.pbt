@@ -20,3 +20,16 @@ Assets {
     AssetId: "sm_grass_generic_002"
   }
 }
+Assets {
+  Id: 2270873216224074824
+  Name: "TankStorage2"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c44d80dce0734c06ad0ddc319af85848"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}

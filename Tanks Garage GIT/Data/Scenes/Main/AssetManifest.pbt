@@ -30,6 +30,19 @@ Assets {
   }
 }
 Assets {
+  Id: 14985143257782791330
+  Name: "TankStorage2"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c44d80dce0734c06ad0ddc319af85848"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 13849856485583202930
   Name: "Grass Tall"
   PlatformAssetType: 1

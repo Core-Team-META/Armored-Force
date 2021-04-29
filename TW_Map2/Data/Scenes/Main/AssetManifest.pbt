@@ -8,6 +8,19 @@ Assets {
   }
 }
 Assets {
+  Id: 12339364069313146684
+  Name: "TankStorage2"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c44d80dce0734c06ad0ddc319af85848"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 12238322892289313733
   Name: "TankStorage"
   PlatformAssetType: 23

@@ -77,17 +77,25 @@ end
 function OnChallengeInfoChanged(serverScript, property)
 
 	local playerDataFound = nil
+	local propertyValue = nil
 
 	for i = 1, 16 do
-		if string.find(serverScript:GetCustomProperty("P" .. tostring(i)), localPlayer.id) then
-			playerDataFound = serverScript:GetCustomProperty("P" .. tostring(i))
+		propertyValue = serverScript:GetCustomProperty("P" .. tostring(i))
+		if string.find(propertyValue, localPlayer.id) then
+			playerDataFound = propertyValue
 			break
 		end
 	end
 
 	if playerDataFound then
-
-		UnpackChallengeInfo(string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, "-") - 1))
+	
+		local infoString = string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, "-") - 1)
+		local loginString = string.sub(playerDataFound, string.find(playerDataFound, "-") + 1, playerDataFound.size)
+		
+		print(infoString)
+		print(loginString)
+		
+		UnpackChallengeInfo(infoString)
 		
 		localPlayer.clientUserData.LOGIN = string.sub(playerDataFound, string.find(playerDataFound, "-") + 1, playerDataFound.size)
 		
@@ -112,6 +120,8 @@ function OnChallengeInfoChanged(serverScript, property)
 end
 
 function OnClaimButtonPressed(button)
+
+	print("Broadcascting claim reward for index " .. tostring(challengeButtonIndex[button]))
 
 	Events.BroadcastToServer("CLAIM_REWARD", challengeButtonIndex[button])
 	
