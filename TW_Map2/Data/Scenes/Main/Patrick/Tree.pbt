@@ -14760,7 +14760,6 @@ Objects {
       Justification {
         Value: "mc:etextjustify:center"
       }
-      AutoWrapText: true
       Font {
       }
     }
@@ -14952,7 +14951,6 @@ Objects {
       Justification {
         Value: "mc:etextjustify:center"
       }
-      AutoWrapText: true
       Font {
       }
     }

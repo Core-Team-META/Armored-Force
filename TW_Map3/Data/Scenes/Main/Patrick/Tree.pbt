@@ -676,7 +676,6 @@ Objects {
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
       }
     }
@@ -868,7 +867,6 @@ Objects {
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
       }
     }
