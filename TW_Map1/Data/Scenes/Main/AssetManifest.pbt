@@ -125,6 +125,19 @@ Assets {
   }
 }
 Assets {
+  Id: 5770538471489135293
+  Name: "TankStorage2"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c44d80dce0734c06ad0ddc319af85848"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 3377721323622766709
   Name: "Rock Pile 002"
   PlatformAssetType: 1
