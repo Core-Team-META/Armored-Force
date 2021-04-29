@@ -7447,7 +7447,6 @@ Objects {
     }
   }
   ParentId: 1916192981161755610
-  ChildIds: 3256357343758554030
   ChildIds: 14214284827256063865
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7467,8 +7466,9 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 197.027557
-      Y: 2.43309021
+      X: 672.80896
+      Y: 8.72583
+      Z: 1452.44263
     }
     Rotation {
     }
@@ -7512,7 +7512,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7531,54 +7531,6 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 3256357343758554030
-  Name: "Tank US M24 Chaffee [GARAGE MODEL]"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17812715862257263058
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9707674720421586260
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Tank US M24 Chaffee [GARAGE MODEL]"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.1
-            Y: 0.1
-            Z: 0.1
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -22.8841095
-            Yaw: -134.302673
-            Roll: -14.3525267
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17661669092028267410
     }
   }
 }
@@ -7615,7 +7567,6 @@ Objects {
     }
     FieldOfView: 90
     ViewWidth: 1200
-    IsOrthographic: true
     RotationMode {
       Value: "mc:erotationmode:default"
     }
@@ -7666,7 +7617,7 @@ Objects {
     Overrides {
       Name: "cs:TechTreeUIContainer"
       ObjectReference {
-        SelfId: 14966627174895260745
+        SelfId: 219431580378672440
       }
     }
     Overrides {
