@@ -35,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17066449609679557524
-  Name: "Frame Outline Thin 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_019"
-  }
-}
-Assets {
   Id: 16329205256895515262
   Name: "Sci-fi Parts 030"
   PlatformAssetType: 9
@@ -59,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfxui_pageslide_core_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 14060330023043759337
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {
@@ -185,6 +185,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
+  Id: 7477507662470043777
+  Name: "Fantasy Crown 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Crown_001"
   }
 }
 Assets {
