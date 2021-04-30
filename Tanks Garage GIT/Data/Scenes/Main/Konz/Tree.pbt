@@ -17,6 +17,7 @@ Objects {
   ParentId: 6164747938729123173
   ChildIds: 15186286892296639228
   ChildIds: 4236679586038949904
+  ChildIds: 9440775509242882221
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -27,6 +28,262 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 9440775509242882221
+  Name: "TECH_TREE_PORTAL"
+  Transform {
+    Location {
+      X: -10005.9453
+      Y: 11003.8809
+      Z: 293.823486
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17694086301462411714
+  ChildIds: 4431101423022832811
+  ChildIds: 6781942296195359921
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6781942296195359921
+  Name: "M3STUART_CAM"
+  Transform {
+    Location {
+      X: -8506.35547
+      Y: -1742.68164
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9440775509242882221
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 4431101423022832811
+  Name: "M3STUART"
+  Transform {
+    Location {
+      X: 8506.35547
+      Y: 1742.68262
+      Z: 282.169495
+    }
+    Rotation {
+      Yaw: -53.5031624
+    }
+    Scale {
+      X: 1.00000477
+      Y: 0.007
+      Z: 0.00710011786
+    }
+  }
+  ParentId: 9440775509242882221
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator2"
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Background Texture"
+      Enum {
+        Value: "mc:eportalbackground:14"
+      }
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Capture Target"
+      ObjectReference {
+        SelfId: 6781942296195359921
+      }
+    }
+    Overrides {
+      Name: "bp:Capture Resolution"
+      Enum {
+        Value: "mc:ecaptureresolution:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Live Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6677237403455816226
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
