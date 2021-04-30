@@ -11,6 +11,8 @@ local localPlayer = Game.GetLocalPlayer()
 local challengeButtonIndex = {}
 
 local challengeInfoSet = false
+local currentDueDate = nil
+local currentDate = nil
 
 local loginText = dailyLogin:GetCustomProperty("LoginDueDate"):WaitForObject()
 local loginButton = dailyLogin:GetCustomProperty("LoginClaim"):WaitForObject()
@@ -89,15 +91,15 @@ function OnChallengeInfoChanged(serverScript, property)
 
 	if playerDataFound then
 	
-		local infoString = string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, "-") - 1)
-		local loginString = string.sub(playerDataFound, string.find(playerDataFound, "-") + 1, playerDataFound.size)
+		local infoString = string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, ",") - 1)
+		local loginString = string.sub(playerDataFound, string.find(playerDataFound, ",") + 1, playerDataFound.size)
 		
 		print(infoString)
 		print(loginString)
 		
 		UnpackChallengeInfo(infoString)
 		
-		localPlayer.clientUserData.LOGIN = string.sub(playerDataFound, string.find(playerDataFound, "-") + 1, playerDataFound.size)
+		localPlayer.clientUserData.LOGIN = string.sub(playerDataFound, string.find(playerDataFound, ",") + 1, playerDataFound.size)
 		
 		--print("Login: " .. os.date("%X", localPlayer.clientUserData.LOGIN))
 				
@@ -109,9 +111,12 @@ function OnChallengeInfoChanged(serverScript, property)
 			if type then
 				child:GetCustomProperty("ChallengeType"):WaitForObject().text = type
 			end
-			if target and progress then
+			if target and progress and progress >= 0 then
 				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = tostring(progress) .. "/" .. tostring(target)
 				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = progress >= target
+			else 
+				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = "CLAIMED"
+				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = false			
 			end
 		end
 		
@@ -136,17 +141,25 @@ end
 function Tick()
 	
 	if not challengeInfoSet then
+		OnChallengeInfoChanged(achievementsViewServer, "")
 		return
 	end
 		
 	for x, child in ipairs(dailyChallenges:GetChildren()) do	
 		if localPlayer.clientUserData.CHALLENGES[x] and localPlayer.clientUserData.CHALLENGES[x].dueDate then
-			child:GetCustomProperty("ChallengeDueDate"):WaitForObject().text = os.date("%X",math.abs(localPlayer.clientUserData.CHALLENGES[x].dueDate - os.time()))
+			currentDueDate = os.date("!*t", localPlayer.clientUserData.CHALLENGES[x].dueDate)
+			currentDate =  os.date("!*t")
+						
+			if os.time(currentDueDate) - os.time(currentDate) > 0 then
+				child:GetCustomProperty("ChallengeDueDate"):WaitForObject().text = os.date("!%X", os.time(currentDueDate) - os.time(currentDate))
+			else 
+				child:GetCustomProperty("ChallengeDueDate"):WaitForObject().text = "00:00:00"
+			end
 		end
 	end
 
 	if localPlayer.clientUserData.LOGIN and tonumber(localPlayer.clientUserData.LOGIN) - tonumber(os.time()) > 0 then
-		loginText.text = os.date("%X", math.abs(tonumber(localPlayer.clientUserData.LOGIN) - tonumber(os.time())))
+		loginText.text = os.date("%X", math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time()))
 		
 		if loginButton.isInteractable then
 			loginButton.isInteractable = false
@@ -173,6 +186,7 @@ function InitializeComponent()
 	for x, child in ipairs(dailyChallenges:GetChildren()) do
 		challengeButton = child:GetCustomProperty("ChallengeClaim"):WaitForObject()
 		challengeButton.clickedEvent:Connect(OnClaimButtonPressed)
+		challengeButton.isInteractable = false
 		challengeButtonIndex[challengeButton] = x
 	end
 	

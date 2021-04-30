@@ -26,7 +26,7 @@ function OnResourceChanged(player, resource, value)
 end
 
 function OnPlayerJoined(player)
-	
+	--[[
 	local playerData = Storage.GetPlayerData(player)
 
 	if type(playerData.resources) ~= "table" then
@@ -36,6 +36,7 @@ function OnPlayerJoined(player)
 	for resource, value in pairs(playerData.resources) do
 		player:SetResource(resource, value)
 	end
+	]]
 	
 	player.serverUserData.techTreeProgress = {}
 	
@@ -43,7 +44,7 @@ function OnPlayerJoined(player)
 	
 	LoadAndSetDataFromSharedStorage(player)
 		
-	player.resourceChangedEvent:Connect(OnResourceChanged)
+	--player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
 	--[[

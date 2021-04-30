@@ -20,7 +20,7 @@ function TrackDailyChallenge(player, type, amount)
 
 	for i = 1, 3 do
 		if player.serverUserData.CHALLENGE[i].challengeType == type then
-			if player.serverUserData.CHALLENGE[i].target > player.serverUserData.CHALLENGE[i].progress then
+			if player.serverUserData.CHALLENGE[i].target > player.serverUserData.CHALLENGE[i].progress and player.serverUserData.CHALLENGE[i].progress >= 0 then
 				player.serverUserData.CHALLENGE[i].progress = player.serverUserData.CHALLENGE[i].progress + amount
 				Events.Broadcast("PACK_DAILY_CHALLENGES", player)
 			end
@@ -183,6 +183,7 @@ function ResourceCheck(player)
 	print("Wins: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS)))
 	print("Losses: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES)))
 	print("Total Games: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES)))
+	print("TankDamage Resource: " .. tostring(player:GetResource("TankDamage")))
 	print("===============================================")
 	
 end
@@ -190,10 +191,10 @@ end
 
 function OnJoined(player)
 
-	player:SetResource("TankDamage", 0)
 	player.damagedEvent:Connect(OnDamagedRecord)
 	player.diedEvent:Connect(OnDiedRecord)
-	Task.Wait(5)
+	player:SetResource("TankDamage", 0)
+	Task.Wait(10)
 	ResourceCheck(player)
 
 end
