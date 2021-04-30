@@ -19,11 +19,11 @@ Objects {
   ChildIds: 14246791555251678451
   ChildIds: 10433577698686771103
   ChildIds: 4689494391382931675
-  ChildIds: 3109815723270287146
-  ChildIds: 10206351254527588574
-  ChildIds: 4692250733570603943
-  ChildIds: 9662208161607403538
-  ChildIds: 12379110334380840608
+  ChildIds: 10905649252353194541
+  ChildIds: 15429561671638965847
+  ChildIds: 7829215888213390904
+  ChildIds: 2353863463125911361
+  ChildIds: 12631040744479278761
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,7 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12379110334380840608
+  Id: 12631040744479278761
   Name: "Morticai (Brent)"
   Transform {
     Location {
@@ -71,36 +71,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9662208161607403538
-  Name: "Marcela"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Marcela"
-  }
-}
-Objects {
-  Id: 4692250733570603943
+  Id: 2353863463125911361
   Name: "Ryan"
   Transform {
     Location {
@@ -129,7 +100,36 @@ Objects {
   }
 }
 Objects {
-  Id: 10206351254527588574
+  Id: 7829215888213390904
+  Name: "Marcela"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Marcela"
+  }
+}
+Objects {
+  Id: 15429561671638965847
   Name: "Patrick"
   Transform {
     Location {
@@ -158,7 +158,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3109815723270287146
+  Id: 10905649252353194541
   Name: "Chat"
   Transform {
     Location {

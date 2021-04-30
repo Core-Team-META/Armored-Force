@@ -1,7 +1,7 @@
 Name: "DataCompression"
-RootId: 8945432765513863181
+RootId: 4245072002013671093
 Objects {
-  Id: 11141962321304254204
+  Id: 16651671052061536039
   Name: "DataTransfer"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8945432765513863181
+  ParentId: 4245072002013671093
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16918523756567562056
+  Id: 4642046119240832201
   Name: "Player Storage Manager"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8945432765513863181
-  ChildIds: 9308666032773965141
+  ParentId: 4245072002013671093
+  ChildIds: 18293266386244839625
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -58,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9308666032773965141
+  Id: 18293266386244839625
   Name: "PlayerStorageManagerClient"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16918523756567562056
+  ParentId: 4642046119240832201
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
@@ -88,13 +88,13 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 11141962321304254204
+        SelfId: 16651671052061536039
       }
     }
     Overrides {
       Name: "cs:TankContents"
       ObjectReference {
-        SelfId: 7858993762494520777
+        SelfId: 16153179701391349638
       }
     }
   }
@@ -114,7 +114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17412922110175576809
+  Id: 3157490516047858600
   Name: "ResourcePersisterServer"
   Transform {
     Location {
@@ -127,7 +127,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8945432765513863181
+  ParentId: 4245072002013671093
   UnregisteredParameters {
     Overrides {
       Name: "cs:PlayerSharedStorage"
@@ -153,7 +153,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 11141962321304254204
+        SelfId: 16651671052061536039
       }
     }
     Overrides {
@@ -179,7 +179,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4302315555114563808
+  Id: 3944888975928331861
   Name: "MetaPlayerStorageManager_Server"
   Transform {
     Location {
@@ -192,7 +192,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8945432765513863181
+  ParentId: 4245072002013671093
   UnregisteredParameters {
     Overrides {
       Name: "cs:VFX_LIST"

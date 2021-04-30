@@ -108,7 +108,7 @@ function CheckDueDate(current, dueDate)
 
 	if current.year < dueDate.year or current.month < dueDate.month then
 		return false
-	elseif current.day <= dueDate.day then
+	elseif current.day < dueDate.day then
 		return false
 	elseif current.hour < dueDate.hour then
 		return false
