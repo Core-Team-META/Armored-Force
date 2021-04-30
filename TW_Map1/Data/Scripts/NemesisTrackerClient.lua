@@ -276,15 +276,10 @@ end
 function CalculateNemesis()
 
 	for x, e in ipairs(nemesisList) do
-	
 		for y, ee in pairs(e) do
-		
 			e[y] = nil
-			
 		end
-		
 		nemesisList[x] = nil
-		
 	end
 
 	nemesisList = {}
@@ -297,35 +292,26 @@ function CalculateNemesis()
 	
 	local providedString = ""
 	
-	for i = 1, 12 do
-	
+	for i = 1, 16 do
 		providedString = nemesisTrackerServer:GetCustomProperty("P" .. tostring(i)) 
 		
 	    local result = {}
-	    
 	    local insertThis = true
 	    
 	    for section in (providedString..":"):gmatch("(.-):") do
-	    
 	    	if section == "" then
-	    	
 	    		insertThis = false
-	    	
 	    		break
-	    		
 	    	end
 	    
 	        table.insert(result, section)
-	        
 	    end	
 	    
 	    if insertThis then
-	    
 	   		table.insert(nemesisList, {result[1], result[2], tonumber(result[3]), tonumber(result[4]), result[5], tonumber(result[6])})
-	   		
-	   	end
-	    
+	   	end 
 	end
+	
 end
 
 function MarkNemesis()
@@ -506,19 +492,19 @@ function MarkNemesis()
 					
 			end
 				
-			if theirNemesisOfEntryText[number][3] <= 3 then
+			if theirNemesisOfEntryText[number][3] <= 200 then
 				
 				SetChildrenText(nemesisOfLabelText, "YOU CRUSHED")
 				
-			elseif theirNemesisOfEntryText[number][3] <= 5 then
+			elseif theirNemesisOfEntryText[number][3] <= 300 then
 				
 				SetChildrenText(nemesisOfLabelText, "YOU WRECKED")
 
-			elseif theirNemesisOfEntryText[number][3] <= 7 then
+			elseif theirNemesisOfEntryText[number][3] <= 400 then
 				
 				SetChildrenText(nemesisOfLabelText, "YOU PULVERIZED")
 					
-			elseif theirNemesisOfEntryText[number][3] <= 10 then
+			elseif theirNemesisOfEntryText[number][3] <= 500 then
 				
 				SetChildrenText(nemesisOfLabelText, "YOU DECIMATED")
 					
