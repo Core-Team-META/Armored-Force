@@ -32326,7 +32326,7 @@ Objects {
 }
 Objects {
   Id: 16499279724693656169
-  Name: "DROWPDOWN_ICON"
+  Name: "SLIDER_ICON"
   Transform {
     Location {
     }
@@ -32382,7 +32382,7 @@ Objects {
 }
 Objects {
   Id: 7718468959110764187
-  Name: "STATS_DROPDOWN_BUTTON"
+  Name: "STATS_SLIDER_BUTTON"
   Transform {
     Location {
     }
@@ -32474,7 +32474,7 @@ Objects {
 }
 Objects {
   Id: 741301881175788082
-  Name: "STATS_DROPDOWN_ARROW_CLOSE"
+  Name: "STATS_SLIDER_ARROW_CLOSE"
   Transform {
     Location {
     }
@@ -32491,7 +32491,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32534,7 +32534,7 @@ Objects {
 }
 Objects {
   Id: 5146510450377608483
-  Name: "STATS_DROPDOWN_ARROW_OPEN"
+  Name: "STATS_SLIDER_ARROW_OPEN"
   Transform {
     Location {
     }
@@ -41040,6 +41040,7 @@ Objects {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentHeight: true
     Panel {
       IsClipping: true
     }
@@ -41089,8 +41090,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 100
-    Height: 100
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -41230,7 +41230,7 @@ Objects {
 }
 Objects {
   Id: 10379634520816330851
-  Name: "BUTTON_UPGRADE_SHELL"
+  Name: "BUTTON_UPGRADE_SHELL_CONTAINER"
   Transform {
     Location {
     }
@@ -41556,7 +41556,7 @@ Objects {
 }
 Objects {
   Id: 4207992304373222757
-  Name: "BUTTON_PRESSED"
+  Name: "BUTTON_UPGRADE_SHELL_PRESSED"
   Transform {
     Location {
     }
@@ -42349,7 +42349,7 @@ Objects {
 }
 Objects {
   Id: 11713342962528748280
-  Name: "BUTTON_HOVER"
+  Name: "BUTTON_UPGRADE_SHELL_HOVER"
   Transform {
     Location {
     }
@@ -43215,7 +43215,7 @@ Objects {
 }
 Objects {
   Id: 8012911646768882674
-  Name: "BUTTON_IDLE"
+  Name: "BUTTON_UPGRADE_SHELL_IDLE"
   Transform {
     Location {
     }
@@ -45063,8 +45063,7 @@ Objects {
   Control {
     Width: 4
     Height: 124
-    UIX: -10
-    UIY: 20
+    UIY: 95
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -45184,7 +45183,7 @@ Objects {
   Control {
     Width: 100
     Height: 79
-    UIY: 23.6547241
+    UIY: 17
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -50283,7 +50282,7 @@ Objects {
     Width: 35
     Height: 35
     UIX: -52.2373047
-    UIY: -37.4167519
+    UIY: -27.7398109
     RotationAngle: 45
     RenderTransformPivot {
       Anchor {
@@ -50346,7 +50345,7 @@ Objects {
     Width: 35
     Height: 35
     UIX: -52.2373047
-    UIY: -34.4167519
+    UIY: -24.7398109
     RotationAngle: 45
     RenderTransformPivot {
       Anchor {
@@ -50407,7 +50406,7 @@ Objects {
   Control {
     Width: 200
     Height: 38
-    UIY: 54.1290436
+    UIY: 63.8059845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -50476,7 +50475,7 @@ Objects {
   Control {
     Width: 200
     Height: 38
-    UIY: 57.1290436
+    UIY: 66.8059845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -50795,8 +50794,7 @@ Objects {
   Control {
     Width: 4
     Height: 64
-    UIX: -10
-    UIY: 20
+    UIY: 95
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -57180,7 +57178,7 @@ Objects {
 }
 Objects {
   Id: 8546058262734508480
-  Name: "SHELL_DENY_CONTAINER"
+  Name: "TURRET_DENY_CONTAINER"
   Transform {
     Location {
     }
@@ -57209,7 +57207,7 @@ Objects {
   Control {
     Width: 4
     Height: 124
-    UIY: 20
+    UIY: 95
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -57236,7 +57234,7 @@ Objects {
 }
 Objects {
   Id: 5622901403851107528
-  Name: "SHELL_UPGRADE_DENY"
+  Name: "TURRET_UPGRADE_DENY"
   Transform {
     Location {
     }
@@ -57329,7 +57327,7 @@ Objects {
   Control {
     Width: 100
     Height: 79
-    UIY: 23.6547241
+    UIY: 17
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -62428,7 +62426,7 @@ Objects {
     Width: 35
     Height: 35
     UIX: -52.2373047
-    UIY: -37.4167519
+    UIY: -27.7398109
     RotationAngle: 45
     RenderTransformPivot {
       Anchor {
@@ -62491,7 +62489,7 @@ Objects {
     Width: 35
     Height: 35
     UIX: -52.2373047
-    UIY: -34.4167519
+    UIY: -24.7398109
     RotationAngle: 45
     RenderTransformPivot {
       Anchor {
@@ -62552,7 +62550,7 @@ Objects {
   Control {
     Width: 200
     Height: 38
-    UIY: 54.1290436
+    UIY: 63.8059845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -62621,7 +62619,7 @@ Objects {
   Control {
     Width: 200
     Height: 38
-    UIY: 57.1290436
+    UIY: 66.8059845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -62911,7 +62909,7 @@ Objects {
 }
 Objects {
   Id: 16484802907897827722
-  Name: "SHELL_CONFIRMATION_CONTAINER"
+  Name: "TURRET_CONFIRMATION_CONTAINER"
   Transform {
     Location {
     }
@@ -62940,7 +62938,7 @@ Objects {
   Control {
     Width: 4
     Height: 64
-    UIY: 20
+    UIY: 95
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -62967,7 +62965,7 @@ Objects {
 }
 Objects {
   Id: 14258793314788783035
-  Name: "SHELL_UPGRADE_CONFIRM"
+  Name: "TURRET_UPGRADE_CONFIRM"
   Transform {
     Location {
     }
@@ -63003,7 +63001,7 @@ Objects {
   Control {
     Width: 100
     Height: 100
-    UIY: -145
+    UIY: -80
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -63598,7 +63596,7 @@ Objects {
 }
 Objects {
   Id: 14759847579368133484
-  Name: "BUTTON_UPGRADE_SHELL"
+  Name: "BUTTON_UPGRADE_TURRET_CONTAINER"
   Transform {
     Location {
     }
@@ -63653,7 +63651,7 @@ Objects {
 }
 Objects {
   Id: 7249982761216876022
-  Name: "BUTTON_UPGRADE_SHELL"
+  Name: "BUTTON_UPGRADE_TURRET"
   Transform {
     Location {
     }
@@ -63924,7 +63922,7 @@ Objects {
 }
 Objects {
   Id: 10619687531400941197
-  Name: "BUTTON_PRESSED"
+  Name: "BUTTON_UPGRADE_TURRET_PRESSED"
   Transform {
     Location {
     }
@@ -64717,7 +64715,7 @@ Objects {
 }
 Objects {
   Id: 12750358322198457269
-  Name: "BUTTON_HOVER"
+  Name: "BUTTON_UPGRADE_TURRET_HOVER"
   Transform {
     Location {
     }
@@ -65583,7 +65581,7 @@ Objects {
 }
 Objects {
   Id: 11272755972154559059
-  Name: "BUTTON_IDLE"
+  Name: "BUTTON_UPGRADE_TURRET_IDLE"
   Transform {
     Location {
     }
@@ -74914,7 +74912,7 @@ Objects {
 }
 Objects {
   Id: 4463646847334935412
-  Name: "SHELL_DENY_CONTAINER"
+  Name: "ENGINE_DENY_CONTAINER"
   Transform {
     Location {
     }
@@ -74943,7 +74941,7 @@ Objects {
   Control {
     Width: 4
     Height: 124
-    UIY: 20
+    UIY: 95
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -74970,7 +74968,7 @@ Objects {
 }
 Objects {
   Id: 11136140455713699073
-  Name: "SHELL_UPGRADE_DENY"
+  Name: "ENGINE_UPGRADE_DENY"
   Transform {
     Location {
     }
@@ -75063,7 +75061,7 @@ Objects {
   Control {
     Width: 100
     Height: 79
-    UIY: 23.6547241
+    UIY: 17
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -80162,7 +80160,7 @@ Objects {
     Width: 35
     Height: 35
     UIX: -52.2373047
-    UIY: -37.4167519
+    UIY: -27.7398109
     RotationAngle: 45
     RenderTransformPivot {
       Anchor {
@@ -80225,7 +80223,7 @@ Objects {
     Width: 35
     Height: 35
     UIX: -52.2373047
-    UIY: -34.4167519
+    UIY: -24.7398109
     RotationAngle: 45
     RenderTransformPivot {
       Anchor {
@@ -80286,7 +80284,7 @@ Objects {
   Control {
     Width: 200
     Height: 38
-    UIY: 54.1290436
+    UIY: 63.8059845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -80355,7 +80353,7 @@ Objects {
   Control {
     Width: 200
     Height: 38
-    UIY: 57.1290436
+    UIY: 66.8059845
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -80645,7 +80643,7 @@ Objects {
 }
 Objects {
   Id: 6232538691790247819
-  Name: "SHELL_CONFIRMATION_CONTAINER"
+  Name: "ENGINE_CONFIRMATION_CONTAINER"
   Transform {
     Location {
     }
@@ -80674,7 +80672,7 @@ Objects {
   Control {
     Width: 4
     Height: 64
-    UIY: 20
+    UIY: 95
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -80701,7 +80699,7 @@ Objects {
 }
 Objects {
   Id: 12740510328218984893
-  Name: "SHELL_UPGRADE_CONFIRM"
+  Name: "ENGINE_UPGRADE_CONFIRM"
   Transform {
     Location {
     }
@@ -81332,7 +81330,7 @@ Objects {
 }
 Objects {
   Id: 12228392418971526307
-  Name: "BUTTON_UPGRADE_SHELL"
+  Name: "BUTTON_UPGRADE_ENGINE_CONTAINER"
   Transform {
     Location {
     }
@@ -81387,7 +81385,7 @@ Objects {
 }
 Objects {
   Id: 2252733264540653303
-  Name: "BUTTON_UPGRADE_SHELL"
+  Name: "BUTTON_UPGRADE_ENGINE"
   Transform {
     Location {
     }
@@ -81658,7 +81656,7 @@ Objects {
 }
 Objects {
   Id: 3375361695791702822
-  Name: "BUTTON_PRESSED"
+  Name: "BUTTON_UPGRADE_ENGINE_PRESSED"
   Transform {
     Location {
     }
@@ -82451,7 +82449,7 @@ Objects {
 }
 Objects {
   Id: 367115626159231533
-  Name: "BUTTON_HOVER"
+  Name: "BUTTON_UPGRADE_ENGINE_HOVER"
   Transform {
     Location {
     }
@@ -83317,7 +83315,7 @@ Objects {
 }
 Objects {
   Id: 14853919200084953160
-  Name: "BUTTON_IDLE"
+  Name: "BUTTON_UPGRADE_ENGINE_IDLE"
   Transform {
     Location {
     }
@@ -92617,6 +92615,7 @@ Objects {
   Control {
     Width: 353
     Height: 40
+    UIY: -117.011368
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -131405,11 +131404,11 @@ Objects {
       Float: 0.05
     }
     Overrides {
-      Name: "cs:STATS_OPEN_DROPDOWN_X"
+      Name: "cs:STATS_OPEN_SLIDER_X"
       Int: -4
     }
     Overrides {
-      Name: "cs:STATS_CLOSED_DROPDOWN_X"
+      Name: "cs:STATS_CLOSED_SLIDER_X"
       Int: -400
     }
     Overrides {
@@ -131442,11 +131441,11 @@ Objects {
     }
     Overrides {
       Name: "cs:TANKUPGRADE_CONFIRM_OPEN_DROPDOWN_Y"
-      Int: -45
+      Int: -68
     }
     Overrides {
       Name: "cs:TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y"
-      Int: -80
+      Int: -145
     }
     Overrides {
       Name: "cs:TANKUPGRADE_CONFIRM_DROPDOWN_TOGGLE_TIME"

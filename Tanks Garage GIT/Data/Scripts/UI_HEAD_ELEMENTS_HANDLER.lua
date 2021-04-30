@@ -93,11 +93,11 @@ local targetDestination = CLOSED_DROPDOWN_Y
 local timeRemaining = 1
 
 -- SETTINGS FOR SLIDING STATS MENU
-local STATS_OPEN_DROPDOWN_X = script:GetCustomProperty("STATS_OPEN_DROPDOWN_X")
-local STATS_CLOSED_DROPDOWN_X = script:GetCustomProperty("STATS_CLOSED_DROPDOWN_X")
-local STATS_DROPDOWN_TOGGLE_TIME = script:GetCustomProperty("STATS_DROPDOWN_TOGGLE_TIME")
+local STATS_OPEN_SLIDER_X = script:GetCustomProperty("STATS_OPEN_SLIDER_X")
+local STATS_CLOSED_SLIDER_X = script:GetCustomProperty("STATS_CLOSED_SLIDER_X")
+local STATS_SLIDER_TOGGLE_TIME = script:GetCustomProperty("STATS_SLIDER_TOGGLE_TIME")
 local STATS_isMoving = false
-local STATS_targetDestination = STATS_CLOSED_DROPDOWN_X
+local STATS_targetDestination = STATS_CLOSED_SLIDER_X
 local STATS_timeRemaining = 1
 
 -- SETTINGS FOR SLIDING PLAYER_STATS MENU
@@ -172,12 +172,12 @@ function Tick(deltaTime)
 	end
 	
 	if STATS_isMoving then
-		STATS_timeRemaining = CoreMath.Clamp(STATS_timeRemaining - deltaTime, 0, STATS_DROPDOWN_TOGGLE_TIME)
+		STATS_timeRemaining = CoreMath.Clamp(STATS_timeRemaining - deltaTime, 0, STATS_SLIDER_TOGGLE_TIME)
 		local STATS_newPosition = 0
-		if STATS_targetDestination == STATS_OPEN_DROPDOWN_X then
-			STATS_newPosition = CoreMath.Lerp(STATS_CLOSED_DROPDOWN_X, STATS_OPEN_DROPDOWN_X, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
+		if STATS_targetDestination == STATS_OPEN_SLIDER_X then
+			STATS_newPosition = CoreMath.Lerp(STATS_CLOSED_SLIDER_X, STATS_OPEN_SLIDER_X, (STATS_SLIDER_TOGGLE_TIME - STATS_timeRemaining) / STATS_SLIDER_TOGGLE_TIME)
 		else
-			STATS_newPosition = CoreMath.Lerp(STATS_OPEN_DROPDOWN_X, STATS_CLOSED_DROPDOWN_X, (STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining) / STATS_DROPDOWN_TOGGLE_TIME)
+			STATS_newPosition = CoreMath.Lerp(STATS_OPEN_SLIDER_X, STATS_CLOSED_SLIDER_X, (STATS_SLIDER_TOGGLE_TIME - STATS_timeRemaining) / STATS_SLIDER_TOGGLE_TIME)
 		end
 		STATS_CONTAINER.x = STATS_newPosition
 		if STATS_timeRemaining <= 0 then
@@ -331,33 +331,63 @@ function TOGGLE_DROPDOWN()
 end
 
 -- TOGGLE STATS
-function STATS_TOGGLE_DROPDOWN()
-	if STATS_CONTAINER.x == STATS_CLOSED_DROPDOWN_X then
+function STATS_TOGGLE_SLIDER()
+	if STATS_CONTAINER.x == STATS_CLOSED_SLIDER_X then
 	SFX_SLIDE_DOWN:Play()
-		if isMoving and timeRemaining > 0 then
-			STATS_targetDestination = STATS_OPEN_DROPDOWN_X
-			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining
+		if STATS_isMoving and STATS_timeRemaining > 0 then
+			STATS_targetDestination = STATS_OPEN_SLIDER_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME - STATS_timeRemaining
 		else
 			STATS_isMoving = true
-			STATS_targetDestination = STATS_OPEN_DROPDOWN_X
-			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME
+			STATS_targetDestination = STATS_OPEN_SLIDER_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME
 		end
 	Task.Wait(0.1)
-	STATS_DROPDOWN_ARROW_OPEN.visibility = Visibility.FORCE_OFF
-	STATS_DROPDOWN_ARROW_CLOSE.visibility = Visibility.FORCE_ON
+	STATS_SLIDER_ARROW_OPEN.visibility = Visibility.FORCE_OFF
+	STATS_SLIDER_ARROW_CLOSE.visibility = Visibility.FORCE_ON
 	else
 	SFX_SLIDE_UP:Play()
 		if STATS_isMoving and STATS_timeRemaining > 0 then
-			STATS_targetDestination = STATS_CLOSED_DROPDOWN_X
-			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME - STATS_timeRemaining
+			STATS_targetDestination = STATS_SLIDER_DROPDOWN_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME - STATS_timeRemaining
 		else
 			STATS_isMoving = true
-			STATS_targetDestination = STATS_CLOSED_DROPDOWN_X
-			STATS_timeRemaining = STATS_DROPDOWN_TOGGLE_TIME
+			STATS_targetDestination = STATS_SLIDER_DROPDOWN_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME
 		end
 	Task.Wait(0.1)
-	STATS_DROPDOWN_ARROW_OPEN.visibility = Visibility.FORCE_ON
-	STATS_DROPDOWN_ARROW_CLOSE.visibility = Visibility.FORCE_OFF
+	STATS_SLIDER_ARROW_OPEN.visibility = Visibility.FORCE_ON
+	STATS_SLIDER_ARROW_CLOSE.visibility = Visibility.FORCE_OFF
+	end
+end
+
+-- TOGGLE STATS OPEN
+function STATS_TOGGLE_SLIDER_OPEN()
+	if STATS_CONTAINER.x == STATS_CLOSED_SLIDER_X then
+		SFX_SLIDE_DOWN:Play()
+		if STATS_isMoving and STATS_timeRemaining > 0 then
+			STATS_targetDestination = STATS_OPEN_SLIDER_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME - STATS_timeRemaining
+		else
+			STATS_isMoving = true
+			STATS_targetDestination = STATS_OPEN_SLIDER_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME
+		end
+	end
+end
+
+-- TOGGLE STATS CLOSE
+function STATS_TOGGLE_SLIDER_CLOSE()
+	if STATS_CONTAINER.x == STATS_OPEN_SLIDER_X then
+		SFX_SLIDE_UP:Play()
+		if STATS_isMoving and STATS_timeRemaining > 0 then
+			STATS_targetDestination = STATS_CLOSED_SLIDER_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME - STATS_timeRemaining
+		else
+			STATS_isMoving = true
+			STATS_targetDestination = STATS_CLOSED_SLIDER_X
+			STATS_timeRemaining = STATS_SLIDER_TOGGLE_TIME
+		end
 	end
 end
 
@@ -1070,7 +1100,7 @@ end
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS
-STATS_DROPDOWN_BUTTON.clickedEvent:Connect(CLICKED_STATS)
+STATS_SLIDER_BUTTON.clickedEvent:Connect(CLICKED_STATS)
 PLAYER_STATS_BUTTON.clickedEvent:Connect(CLICKED_PLAYER_STATS)
 TANK_STATS_BUTTON.clickedEvent:Connect(CLICKED_TANK_STATS)
 BUTTON_TECHTREE_SHOP.clickedEvent:Connect(CLICKED_TECHTREE_SHOP)
@@ -1085,7 +1115,7 @@ CHOOSE_MODE_TUNDRA_BUTTON.clickedEvent:Connect(CLICKED_CHOOSE_MODE_TUNDRA)
 DEPLOY_BUTTON.clickedEvent:Connect(CLICKED_DEPLOY)
 
 -- CONNECTING HOVERED EVENTS
-STATS_DROPDOWN_BUTTON.hoveredEvent:Connect(HOVERED_STATS)
+STATS_SLIDER_BUTTON.hoveredEvent:Connect(HOVERED_STATS)
 PLAYER_STATS_BUTTON.hoveredEvent:Connect(HOVERED_PLAYER_STATS)
 TANK_STATS_BUTTON.hoveredEvent:Connect(HOVERED_TANK_STATS)
 BUTTON_TECHTREE_SHOP.hoveredEvent:Connect(HOVERED_TECHTREE_SHOP)
@@ -1100,7 +1130,7 @@ CHOOSE_MODE_TUNDRA_BUTTON.hoveredEvent:Connect(HOVERED_CHOOSE_MODE_TUNDRA)
 DEPLOY_BUTTON.hoveredEvent:Connect(HOVERED_DEPLOY)
 
 -- CONNECTING UNHOVERED EVENTS
-STATS_DROPDOWN_BUTTON.unhoveredEvent:Connect(UNHOVERED_STATS)
+STATS_SLIDER_BUTTON.unhoveredEvent:Connect(UNHOVERED_STATS)
 PLAYER_STATS_BUTTON.unhoveredEvent:Connect(UNHOVERED_PLAYER_STATS)
 TANK_STATS_BUTTON.unhoveredEvent:Connect(UNHOVERED_TANK_STATS)
 BUTTON_TECHTREE_SHOP.unhoveredEvent:Connect(UNHOVERED_TECHTREE_SHOP)
