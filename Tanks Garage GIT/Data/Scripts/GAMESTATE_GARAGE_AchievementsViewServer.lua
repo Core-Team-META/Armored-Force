@@ -10,11 +10,11 @@ function AddInfoToSlot(playerId, data, login)
 			if data == "" and string.find(script:GetCustomProperty("P" .. tostring(i)), playerId) then
 				script:SetNetworkedCustomProperty("P" .. tostring(i), "")
 				return
-			elseif string.find(script:GetCustomProperty("P" .. tostring(i)), playerId) then
-				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data .. "-" .. login)
+			elseif data ~= "" and string.find(script:GetCustomProperty("P" .. tostring(i)), playerId) then
+				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data .. "," .. login)
 				return
-			elseif script:GetCustomProperty("P" .. tostring(i)) == "" then
-				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data .. "-" .. login)
+			elseif data ~= "" and script:GetCustomProperty("P" .. tostring(i)) == "" then
+				script:SetNetworkedCustomProperty("P" .. tostring(i), playerId .. ":" .. data .. "," .. login)
 				return
 			end
 		end
@@ -51,8 +51,9 @@ function UnpackChallengeInfo(player)
 		end	
 	else 
 		local challengeString = ""
+		local newDate = os.date("!*t")
 		local challengeDueDate = 
-		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
+		os.time({year = newDate.year, month = newDate.month, day = newDate.day + 1, hour = 5, min = 0, sec = 0})
 		
 		for i = 1, 3 do
 			player.serverUserData.CHALLENGE[i] = {}
@@ -62,15 +63,15 @@ function UnpackChallengeInfo(player)
 			if i == 1 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Kills"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Kills;2;0" .. challengeDueDate .. "|"
+				challengeString = challengeString .. "Kills;2;0;" .. challengeDueDate .. "|"
 			elseif i == 2 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Damage"
 				player.serverUserData.CHALLENGE[i].target = 1000
-				challengeString = challengeString .. "Damage;1000;0" .. challengeDueDate .. "|"
+				challengeString = challengeString .. "Damage;1000;0;" .. challengeDueDate .. "|"
 			elseif i == 3 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Wins"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Wins;2;0" .. challengeDueDate .. "|"
+				challengeString = challengeString .. "Wins;2;0;" .. challengeDueDate .. "|"
 			end
 			
 			--[[
@@ -128,16 +129,25 @@ function SetChallengeProgressInfo(player)
 	end
 	
 	for i = 1, 3 do
-		if CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) then
+		if CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
 			player.serverUserData.CHALLENGE[i].progress = 0
+			local newDate = os.date("!*t")
 			player.serverUserData.CHALLENGE[i].dueDate = 
-			os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
-			
+			os.time({year = newDate.year, month = newDate.month, day = newDate.day + 1, hour = 5, min = 0, sec = 0})			
 
-			local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
+			local showTime = os.date("!*t", player.serverUserData.CHALLENGE[i].dueDate)
 			print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
 			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
-
+		else
+			local showTime = os.date("!*t", player.serverUserData.CHALLENGE[i].dueDate)
+			print("Assigned date: " .. tostring(showTime.year) .. "/" .. tostring(showTime.month) 
+			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour) .. "/" ..  tostring(showTime.min))
+			
+			local showTime2 = os.date("!*t")
+			print("Current date: " .. tostring(showTime2.year) .. "/" .. tostring(showTime2.month) 
+			.. "/" .. tostring(showTime2.day) .. "/" .. tostring(showTime2.hour) .. "/" ..  tostring(showTime2.min))
+			
+			print("Remaining time: " .. os.date("!%X", os.time(showTime) - os.time(showTime2)))
 		end
 	end
 		
@@ -158,9 +168,14 @@ function Tick()
 				if CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) 
 					and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
 					player.serverUserData.CHALLENGE[i].progress = 0
+					local newDate = os.date("!*t")
 					player.serverUserData.CHALLENGE[i].dueDate = 
-					os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
+					os.time({year = newDate.year, month = newDate.month, day = newDate.day + 1, hour = 5, min = 0, sec = 0})
 					needRepack = true
+					
+					local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
+					print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
+					.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
 				end
 			end
 			
@@ -183,9 +198,7 @@ function ClaimReward(player, challengeNumber)
 		player:AddResource(CONSTANTS_API.SILVER, 100)
 		player:AddResource(UTIL_API.GetTankRPString(player:GetResource(CONSTANTS_API.GetEquippedTankResource())), 2000)
 		
-		player.serverUserData.CHALLENGE[challengeNumber].progress = 0
-		player.serverUserData.CHALLENGE[challengeNumber].dueDate = 
-		os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, min = 0, sec = 0})
+		player.serverUserData.CHALLENGE[challengeNumber].progress = -1
 		
 		RepackChallengeInfo(player)
 		AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
@@ -198,10 +211,7 @@ function ClaimDaily(player)
 	if  tonumber(player.serverUserData.LOGIN) - tonumber(os.time()) <= 0 then
 		player:AddResource(CONSTANTS_API.SILVER, 100)
 		player:AddResource(UTIL_API.GetTankRPString(player:GetResource(CONSTANTS_API.GetEquippedTankResource())), 2000)
-		
-		local loginDay = os.date("*t").day
-		local loginHour = os.date("*t").hour
-				
+						
 		player.serverUserData.LOGIN  = 
 		tostring(os.time() + 100800)
 		
@@ -212,7 +222,7 @@ end
 function OnLeft(player)
 
 	playerChallengeCheck[player.id] = nil
-	AddInfoToSlot(player.id, "")
+	AddInfoToSlot(player.id, "", "")
 	
 end
 

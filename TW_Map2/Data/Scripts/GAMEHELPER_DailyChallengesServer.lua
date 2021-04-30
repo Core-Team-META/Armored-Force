@@ -29,7 +29,9 @@ function UnpackChallengeInfo(player)
 		end	
 	else 
 		local challengeString = ""
-		local challengeDueDate = os.time({year = os.date("!*t").year, month = os.date("!*t").month, day = os.date("!*t").day + 1, hour = 5, sec = 0})
+		local newDate = os.date("!*t")
+		local challengeDueDate = 
+		os.time({year = newDate.year, month = newDate.month, day = newDate.day + 1, hour = 5, min = 0, sec = 0})
 		
 		for i = 1, 3 do
 			player.serverUserData.CHALLENGE[i] = {}
@@ -50,18 +52,12 @@ function UnpackChallengeInfo(player)
 				challengeString = challengeString .. "Wins;2;0" .. challengeDueDate .. "|"
 			end
 			
-			--[[
-			local showTime = os.date("*t", challengeDueDate)
-			print("Setting new Date: " .. tostring(showTime.month) 
-			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
-			]]--
 		end
 		
 		player.serverUserData.CHALLENGES = challengeString
 	end
 	
-	print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)
-
+	print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
 end
 
 function RepackChallengeInfo(player)
@@ -76,7 +72,6 @@ function RepackChallengeInfo(player)
 	end
 	
 	player.serverUserData.CHALLENGES = challengeString
-	player.serverUserData.CHALLENGES_DUE_DATE = os.time(player.serverUserData.dueDate)
 	
 	print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
 	
