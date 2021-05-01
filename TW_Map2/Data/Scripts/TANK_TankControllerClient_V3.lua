@@ -20,6 +20,8 @@ local tankOwner = nil
 local totalDt = 0
 local elevationTime = 0
 
+local joinListener = nil
+
 function StartTank(equipment, player)
 
 	local ready = tankMovementControllerServer:GetCustomProperty("TankReady")
@@ -62,6 +64,13 @@ end
 
 function OnJoin(player)
 
+	if not Object.IsValid(tankEquipment) then
+		if joinListener then
+			joinListener:Disconnect()
+		end
+		return
+	end
+
 	local owner = tankEquipment.owner
 	if owner then
 		StartTank(tankEquipment, owner)
@@ -71,4 +80,4 @@ end
 
 
 tankEquipment.equippedEvent:Connect(StartTank)
-Game.playerJoinedEvent:Connect(OnJoin)
+joinListener = Game.playerJoinedEvent:Connect(OnJoin)
