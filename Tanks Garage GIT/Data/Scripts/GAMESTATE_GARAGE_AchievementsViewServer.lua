@@ -106,15 +106,7 @@ end
 
 function CheckDueDate(current, dueDate)
 
-	if current.year < dueDate.year or current.month < dueDate.month then
-		return false
-	elseif current.day < dueDate.day then
-		return false
-	elseif current.hour < dueDate.hour then
-		return false
-	end
-	
-	return true
+	return os.time(current) - os.time(dueDate) > 0 
 	
 end
 
@@ -147,7 +139,9 @@ function SetChallengeProgressInfo(player)
 			print("Current date: " .. tostring(showTime2.year) .. "/" .. tostring(showTime2.month) 
 			.. "/" .. tostring(showTime2.day) .. "/" .. tostring(showTime2.hour) .. "/" ..  tostring(showTime2.min))
 			
-			print("Remaining time: " .. os.date("!%X", os.time(showTime) - os.time(showTime2)))
+			if os.time(showTime) - os.time(showTime2) > 0 then
+				print("Remaining time: " .. os.date("!%X", os.time(showTime) - os.time(showTime2)))
+			end
 		end
 	end
 		
