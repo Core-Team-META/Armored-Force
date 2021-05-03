@@ -288,9 +288,17 @@ end
 	
 function OnDeath(player, damage)
 
-	deathListener:Disconnect()
-	pressedListener:Disconnect()
-	releasedListener:Disconnect()
+	if(deathListener) then
+		deathListener:Disconnect()
+	end
+	
+	if(pressedListener) then
+		pressedListener:Disconnect()
+	end
+	
+	if(releasedListener) then
+		releasedListener:Disconnect()
+	end
 
 	if Object.IsValid(tankAnchor) then
 	
@@ -679,7 +687,7 @@ function Tick(dt)
 end
 
 function RemoveTank(equipment, player)
-		
+	
 	OnDeath(tankOwner, nil)
 	
 end
