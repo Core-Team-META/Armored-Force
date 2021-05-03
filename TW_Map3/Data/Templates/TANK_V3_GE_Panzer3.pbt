@@ -2009,7 +2009,7 @@ Assets {
         ChildIds: 6000472297682609358
         ChildIds: 10135765848218166576
         ChildIds: 9610480980901754204
-        ChildIds: 11305759946835228853
+        ChildIds: 17594584988992778995
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -18178,7 +18178,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 13650699884663610996
+            Id: 10755294693114967386
           }
           TeamSettings {
           }
@@ -18229,7 +18229,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 13650699884663610996
+            Id: 10755294693114967386
           }
           TeamSettings {
           }
@@ -29921,13 +29921,13 @@ Assets {
         }
       }
       Objects {
-        Id: 11305759946835228853
+        Id: 17594584988992778995
         Name: "DamageFeedback"
         Transform {
           Location {
-            X: 45475
-            Y: -38885
-            Z: -975
+            X: -50
+            Y: 50
+            Z: 60
           }
           Rotation {
           }
@@ -29938,8 +29938,8 @@ Assets {
           }
         }
         ParentId: 9568004360652288024
-        ChildIds: 13102058822720700096
-        ChildIds: 13831569443402963382
+        ChildIds: 11910753962006535328
+        ChildIds: 6106129219223923894
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -29957,7 +29957,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13102058822720700096
+        Id: 11910753962006535328
         Name: "DamageFeedbackClient"
         Transform {
           Location {
@@ -29970,30 +29970,30 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11305759946835228853
+        ParentId: 17594584988992778995
         UnregisteredParameters {
           Overrides {
             Name: "cs:SmallExplosionSet01SFX"
             ObjectReference {
-              SubObjectId: 4668898297966375319
+              SubObjectId: 1919342087206715809
             }
           }
           Overrides {
             Name: "cs:ImpactMetalHeavy01SFX"
             ObjectReference {
-              SubObjectId: 5033528203570554007
+              SubObjectId: 5531710756722513058
             }
           }
           Overrides {
             Name: "cs:UIPanel"
             ObjectReference {
-              SubObjectId: 2524605234851699709
+              SubObjectId: 5059216821160634391
             }
           }
           Overrides {
             Name: "cs:DamageDealt"
             ObjectReference {
-              SubObjectId: 11306677667635724824
+              SubObjectId: 3388392067049530053
             }
           }
         }
@@ -30016,7 +30016,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13831569443402963382
+        Id: 6106129219223923894
         Name: "ClientContext"
         Transform {
           Location {
@@ -30029,10 +30029,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11305759946835228853
-        ChildIds: 4668898297966375319
-        ChildIds: 5033528203570554007
-        ChildIds: 3983988788173500016
+        ParentId: 17594584988992778995
+        ChildIds: 1919342087206715809
+        ChildIds: 5531710756722513058
+        ChildIds: 2564886263039269306
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -30049,7 +30049,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4668898297966375319
+        Id: 1919342087206715809
         Name: "Small Explosion Set 01 SFX"
         Transform {
           Location {
@@ -30062,7 +30062,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13831569443402963382
+        ParentId: 6106129219223923894
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -30097,7 +30097,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5033528203570554007
+        Id: 5531710756722513058
         Name: "Impact Metal Heavy 01 SFX"
         Transform {
           Location {
@@ -30110,7 +30110,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13831569443402963382
+        ParentId: 6106129219223923894
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30133,7 +30133,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3983988788173500016
+        Id: 2564886263039269306
         Name: "UI Container"
         Transform {
           Location {
@@ -30150,8 +30150,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13831569443402963382
-        ChildIds: 2524605234851699709
+        ParentId: 6106129219223923894
+        ChildIds: 5059216821160634391
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30190,7 +30190,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2524605234851699709
+        Id: 5059216821160634391
         Name: "UI Panel"
         Transform {
           Location {
@@ -30204,11 +30204,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3983988788173500016
-        ChildIds: 16998268913490009267
-        ChildIds: 544775163503919584
-        ChildIds: 15792624504591491710
-        ChildIds: 11306677667635724824
+        ParentId: 2564886263039269306
+        ChildIds: 8407075067145042816
+        ChildIds: 4760770160706388274
+        ChildIds: 14674749189932545364
+        ChildIds: 3388392067049530053
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30247,7 +30247,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16998268913490009267
+        Id: 8407075067145042816
         Name: "BG"
         Transform {
           Location {
@@ -30260,7 +30260,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2524605234851699709
+        ParentId: 5059216821160634391
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30308,7 +30308,7 @@ Assets {
         }
       }
       Objects {
-        Id: 544775163503919584
+        Id: 4760770160706388274
         Name: "Icon"
         Transform {
           Location {
@@ -30324,7 +30324,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2524605234851699709
+        ParentId: 5059216821160634391
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30375,7 +30375,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15792624504591491710
+        Id: 14674749189932545364
         Name: "Header"
         Transform {
           Location {
@@ -30391,7 +30391,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2524605234851699709
+        ParentId: 5059216821160634391
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -30448,7 +30448,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11306677667635724824
+        Id: 3388392067049530053
         Name: "DamageDealt"
         Transform {
           Location {
@@ -30465,7 +30465,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2524605234851699709
+        ParentId: 5059216821160634391
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -31063,7 +31063,7 @@ Assets {
       }
     }
     Assets {
-      Id: 13650699884663610996
+      Id: 10755294693114967386
       Name: "Decal Stains Round 01"
       PlatformAssetType: 14
       PrimaryAsset {
@@ -31382,5 +31382,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

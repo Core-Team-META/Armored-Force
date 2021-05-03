@@ -252,7 +252,7 @@ function ShowStatisticsAnimation()
 
 	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
 	
-	CountThisTextUp(totalDamageAmountText, localPlayer:GetResource("TankDamage"), "", true)
+	CountThisTextUp(totalDamageAmountText, localPlayer:GetResource("MatchTankDamage"), "", true)
 	
 	Events.Broadcast("SHOW_NEMESIS")
 

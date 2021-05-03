@@ -29,6 +29,9 @@ local accumulatedReloadingTime = 0
 
 local initialized = false
 
+local joinListener = nil
+local animateListener = nil
+
 function StartTank(equipment, player)
 
 	local ready = tankMovementControllerServer:GetCustomProperty("TankReady")
@@ -122,15 +125,21 @@ function FiringAnimation(player, reloadTime)
 	
 	shootShakeOverride = true
 	
-	adjustmentPoint:RotateTo(adjustmentPoint:GetRotation() + Rotation.New(xRotation, yRotation, 0), 0.2, true)
-
+	if Object.IsValid(adjustmentPoint) then
+		adjustmentPoint:RotateTo(adjustmentPoint:GetRotation() + Rotation.New(xRotation, yRotation, 0), 0.2, true)
+	end
+	
 	flashVFX:Play()
-
-	barrel:MoveTo(Vector3.New(-recoilAmount, 0, 0), 0.12, true)
+	
+	if Object.IsValid(barrel) then
+		barrel:MoveTo(Vector3.New(-recoilAmount, 0, 0), 0.12, true)
+	end
 	
 	Task.Wait(0.13)
 	
-	barrel:MoveTo(Vector3.ZERO, 0.2, true)
+	if Object.IsValid(barrel) then
+		barrel:MoveTo(Vector3.ZERO, 0.2, true)
+	end
 	
 	Task.Wait(0.07)
 	
@@ -185,6 +194,16 @@ end
 
 function OnJoin(player)
 
+	if not Object.IsValid(tankEquipment) then
+		if joinListener then
+			joinListener:Disconnect()
+		end
+		if animateListener then
+			animateListener:Disconnect()
+		end
+		return
+	end
+
 	local owner = tankEquipment.owner
 	if owner then
 		StartTank(tankEquipment, owner)
@@ -193,5 +212,5 @@ function OnJoin(player)
 end
 
 tankEquipment.equippedEvent:Connect(StartTank)
-Events.Connect("ANIMATEFIRING", FiringAnimation)
-Game.playerJoinedEvent:Connect(OnJoin)
+animateListener = Events.Connect("ANIMATEFIRING", FiringAnimation)
+joinListener = Game.playerJoinedEvent:Connect(OnJoin)

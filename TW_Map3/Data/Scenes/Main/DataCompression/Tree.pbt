@@ -1,7 +1,7 @@
 Name: "DataCompression"
-RootId: 9566988139834358389
+RootId: 1255203107920837761
 Objects {
-  Id: 3642074531604572323
+  Id: 17064312247895203158
   Name: "DataTransfer"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9566988139834358389
+  ParentId: 1255203107920837761
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14502955300110019644
+  Id: 12516907547224383091
   Name: "Player Storage Manager"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9566988139834358389
-  ChildIds: 3293633106175246301
+  ParentId: 1255203107920837761
+  ChildIds: 6137811435330406129
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -58,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3293633106175246301
+  Id: 6137811435330406129
   Name: "PlayerStorageManagerClient"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14502955300110019644
+  ParentId: 12516907547224383091
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
@@ -88,13 +88,13 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 3642074531604572323
+        SelfId: 17064312247895203158
       }
     }
     Overrides {
       Name: "cs:TankContents"
       ObjectReference {
-        SelfId: 12482852906630976509
+        SelfId: 14254280606723072177
       }
     }
   }
@@ -114,7 +114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5483260844558133491
+  Id: 16282117761876908647
   Name: "ResourcePersisterServer"
   Transform {
     Location {
@@ -127,7 +127,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9566988139834358389
+  ParentId: 1255203107920837761
   UnregisteredParameters {
     Overrides {
       Name: "cs:PlayerSharedStorage"
@@ -153,7 +153,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 3642074531604572323
+        SelfId: 17064312247895203158
       }
     }
     Overrides {
@@ -179,7 +179,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3739528596988841730
+  Id: 4901514474555510101
   Name: "MetaPlayerStorageManager_Server"
   Transform {
     Location {
@@ -192,7 +192,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9566988139834358389
+  ParentId: 1255203107920837761
   UnregisteredParameters {
     Overrides {
       Name: "cs:VFX_LIST"

@@ -53,13 +53,9 @@ local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):Wai
 function CheckSpotting(player)
 	
 	for i=1, 16 do
-	
 		if spottingServer:GetCustomProperty("P" .. tostring(i)) == player.id then
-			
 			return true
-			
 		end
-		
 	end
 	
 	return false
