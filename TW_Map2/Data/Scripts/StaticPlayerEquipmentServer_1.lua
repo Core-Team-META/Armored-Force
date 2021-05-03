@@ -131,13 +131,9 @@ function GetPlayer(playerId)
 	local playerList = Game.GetPlayers()
 	
 	for _, player in pairs(playerList) do
-	
 		if player.id == playerId then
-		
 			return player 
-			
 		end
-		
 	end
 	
 	return nil
@@ -159,10 +155,12 @@ end
 function GivePlayerEquipment(player)
 
 	equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player, player:GetResource(CONSTANTS_API.GetEquippedTankResource())))
-	
+	Task.Wait(0.1)	
 	assert(equipment[player]:IsA("Equipment"))
-	Task.Wait(0.1)
-	equipment[player]:Equip(player)
+	
+	if equipment[player] then
+		equipment[player]:Equip(player)
+	end
 end
 
 -- nil RemovePlayerEquipment(Player)

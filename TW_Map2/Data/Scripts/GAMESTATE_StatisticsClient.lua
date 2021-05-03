@@ -24,16 +24,18 @@ local victoryXPValue = statisticsComponent:GetCustomProperty("VictoryXPValue")
 local victoryCurrencyValue = statisticsComponent:GetCustomProperty("VictoryCurrencyValue")
 local lossXPValue = statisticsComponent:GetCustomProperty("LossXPValue")
 local lossCurrencyValue = statisticsComponent:GetCustomProperty("LossCurrencyValue")
+local drawXPValue = statisticsComponent:GetCustomProperty("DrawXPValue")
+local drawCurrencyValue = statisticsComponent:GetCustomProperty("DrawCurrencyValue")
+
 local killXPValue = statisticsComponent:GetCustomProperty("KillXPValue")
 local killCurrencyValue = statisticsComponent:GetCustomProperty("KillCurrencyValue")
 
 local localPlayer = Game.GetLocalPlayer()
-
 local localTeam = 0
-
 local winner = -1
 
 function SetChildrenText(uiObj,_text) -- <-- generic children text function by AJ
+
     if Object.IsValid(uiObj) and uiObj:IsA("UIText") then
         uiObj.text = _text
     end
@@ -112,13 +114,11 @@ function CalculateTotalXP(player)
 	local baseXP = 0
 	
 	if winner == player.team then
-	
 		baseXP = victoryXPValue
-		
-	else 
-	
+	elseif winner > 0 then
 		baseXP = lossXPValue
-		
+	else
+		baseXP = drawXPValue
 	end
 	
 	return baseXP + player.kills * killXPValue
@@ -130,13 +130,11 @@ function CalculateTotalCurrency(player)
 	local baseCurrency = 0
 	
 	if winner == player.team then
-	
 		baseCurrency = victoryCurrencyValue
-		
-	else 
-	
+	elseif winner > 0 then 
 		baseCurrency = lossCurrencyValue
-		
+	else
+		baseCurrency = drawCurrencyValue
 	end
 	
 	return baseCurrency + player.kills * killCurrencyValue
@@ -152,13 +150,10 @@ end
 function StateSTART(manager, propertyName)
 
 	if propertyName ~= "GameState" then
-	
 		return
-		
 	end
 	
 	if mainGameStateManager:GetCustomProperty("GameState") == "LOBBY_STATE" then
-	
 		winner = -1
 	
 		return
@@ -237,12 +232,19 @@ function ShowStatisticsAnimation()
 		winLossText.text = "YOUR TEAM WON"
 		baseText.text = "Victory Earnings: "
 		
-	else 
+	elseif winner > 0 then
 	
 		baseXP = lossXPValue
 		baseCurrency = lossCurrencyValue
 		winLossText.text = "YOUR TEAM LOST"
 		baseText.text = "Loss Earnings: "
+		
+	else 
+
+		baseXP = drawXPValue
+		baseCurrency = drawCurrencyValue
+		winLossText.text = "DRAW"
+		baseText.text = "Draw Earnings: "		
 		
 	end
 

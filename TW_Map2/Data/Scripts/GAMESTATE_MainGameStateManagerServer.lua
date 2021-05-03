@@ -3,6 +3,7 @@
 	States: (recieved from CHANGESTATE broadcast)
 	LOBBY_STATE
 	MATCH_STATE
+	CARD_STATE
 	VICTORY_STATE
 	STATS_STATE
 	
@@ -10,6 +11,7 @@
 local settings = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
 
 local matchMaxDuration = settings:GetCustomProperty("MatchMaxDuration")
+local cardMaxDuration = settings:GetCustomProperty("CardMaxDuration")
 local victoryMaxDuration = settings:GetCustomProperty("VictoryMaxDuration")
 local statsMaxDuration = settings:GetCustomProperty("StatsMaxDuration")
 local garageLink = settings:GetCustomProperty("GarageLink")
@@ -25,7 +27,7 @@ local currentState = nil
 
 local tankEquipToggle = {}
 
-_G["GameWinner"] = 0
+_G["GameWinner"] = -1
 	
 function OnChangeState(previousState)
 
@@ -53,8 +55,6 @@ function OnChangeState(previousState)
 			tankEquipToggle[player.id] = false 
 			
 		end
-		
-		_G["GameWinner"] = -1
 	
 		script:SetNetworkedCustomProperty("GameState", "MATCH_STATE")
 		
@@ -64,11 +64,29 @@ function OnChangeState(previousState)
 		
 	elseif previousState == "MATCH_STATE" then
 	
+		script:SetNetworkedCustomProperty("GameState", "CARD_STATE")
+		
+		currentState = "CARD_STATE"	
+		
+		SetTimer(cardMaxDuration)
+		
+	elseif previousState == "CARD_STATE" then
+	
+		for x, p in pairs(Game.GetPlayers()) do
+				
+			p:Respawn()
+					
+		end
+
 		script:SetNetworkedCustomProperty("GameState", "VICTORY_STATE")
 		
-		currentState = "VICTORY_STATE"	
+		currentState = "VICTORY_STATE"			
 		
-		SetTimer(victoryMaxDuration)
+		if _G["GameWinner"] == 0 then
+			SetTimer(3)
+		else 
+			SetTimer(victoryMaxDuration)
+		end
 		
 	elseif previousState == "VICTORY_STATE" then
 	

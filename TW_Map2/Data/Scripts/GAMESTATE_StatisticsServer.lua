@@ -10,6 +10,9 @@ local victoryXPValue = victoryComponent:GetCustomProperty("VictoryXPValue")
 local victoryCurrencyValue = victoryComponent:GetCustomProperty("VictoryCurrencyValue")
 local lossXPValue = victoryComponent:GetCustomProperty("LossXPValue")
 local lossCurrencyValue = victoryComponent:GetCustomProperty("LossCurrencyValue")
+local drawXPValue = victoryComponent:GetCustomProperty("DrawXPValue")
+local drawCurrencyValue = victoryComponent:GetCustomProperty("DrawCurrencyValue")
+
 local killXPValue = victoryComponent:GetCustomProperty("KillXPValue")
 local killCurrencyValue = victoryComponent:GetCustomProperty("KillCurrencyValue")
 
@@ -35,13 +38,11 @@ function CalculateTotalXP(player)
 	local baseXP = 0
 	
 	if winner == player.team then
-	
 		baseXP = victoryXPValue
-		
-	else 
-	
+	elseif winner > 0 then
 		baseXP = lossXPValue
-		
+	else
+		baseXP = drawXPValue
 	end
 	
 	return baseXP + player.kills * killXPValue
@@ -53,13 +54,11 @@ function CalculateTotalCurrency(player)
 	local baseCurrency = 0
 	
 	if winner == player.team then
-	
 		baseCurrency = victoryCurrencyValue
-		
-	else 
-	
+	elseif winner > 0 then 
 		baseCurrency = lossCurrencyValue
-		
+	else
+		baseCurrency = drawCurrencyValue
 	end
 	
 	return baseCurrency + player.kills * killCurrencyValue
@@ -111,12 +110,14 @@ function SaveStatistics()
 		p:AddResource("Silver", CalculateTotalCurrency(p))
 		
 		if p.team == winner then
-			print("This player won, adding to Total Wins")
+			print(p.name .. " won, adding to Total Wins")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS, 1)
 			TrackDailyChallenge(p, "Wins", 1)
-		else 
-			print("This player lost, adding to Total Losses")
-			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)		
+		elseif winner > 0 then
+			print(p.name .. " lost, adding to Total Losses")
+			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)	
+		else
+			print(p.name .. " had a draw")
 		end
 		
 		p:AddResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES, 1)
