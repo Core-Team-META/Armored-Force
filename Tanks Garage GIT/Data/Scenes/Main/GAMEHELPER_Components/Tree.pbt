@@ -1118,7 +1118,7 @@ Objects {
     }
   }
   ParentId: 15909495326084412995
-  ChildIds: 9249541416210129601
+  ChildIds: 14587836449933293330
   ChildIds: 13237728475164602616
   ChildIds: 2001611918321763745
   ChildIds: 57192136426736814
@@ -1318,18 +1318,14 @@ Objects {
   }
 }
 Objects {
-  Id: 9249541416210129601
-  Name: "DEFAULT_MENU"
+  Id: 14587836449933293330
+  Name: "DEFAULT_MENU_CameraPivot"
   Transform {
     Location {
-      X: 359.644806
-      Y: 10171.5605
-      Z: 334.414337
+      X: 1752.20068
+      Y: 10262.7393
     }
     Rotation {
-      Pitch: -5.9261179
-      Yaw: 0.22744745
-      Roll: -8.38243e-10
     }
     Scale {
       X: 1
@@ -1338,6 +1334,44 @@ Objects {
     }
   }
   ParentId: 1076283315250795942
+  ChildIds: 9249541416210129601
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9249541416210129601
+  Name: "DEFAULT_MENU"
+  Transform {
+    Location {
+      X: -1392.5553
+      Y: -91.1787109
+      Z: 334.414337
+    }
+    Rotation {
+      Pitch: -5.9261179
+      Yaw: 0.227442086
+      Roll: 1.5339846e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14587836449933293330
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1348,8 +1382,8 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Camera {
-    MinDistance: 300
-    MaxDistance: 600
+    IsDistanceAdjustable: true
+    MinDistance: -500
     PositionOffset {
     }
     RotationOffset {
@@ -1383,6 +1417,12 @@ Objects {
       Name: "cs:Cameras"
       ObjectReference {
         SelfId: 1076283315250795942
+      }
+    }
+    Overrides {
+      Name: "cs:DEFAULT_MENU_CameraPivot"
+      ObjectReference {
+        SelfId: 14587836449933293330
       }
     }
   }
