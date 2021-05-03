@@ -78,7 +78,7 @@ function OnBattleButtonPressed(button)
 	
 	for _, child in ipairs(toBattleButtons:GetChildren()) do
 		if child:IsA("UIButton") then
-			child.isInterractable = false
+			child.isInteractable = false
 		end
 	end
 	

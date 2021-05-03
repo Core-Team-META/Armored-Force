@@ -19,11 +19,11 @@ Objects {
   ChildIds: 5837658692554861011
   ChildIds: 16716271045736805020
   ChildIds: 7310433976514289622
-  ChildIds: 16471530784388724245
-  ChildIds: 16749004403265649282
-  ChildIds: 9058985876994128996
-  ChildIds: 13993498866007246311
-  ChildIds: 1283348674582026527
+  ChildIds: 16330745916369210991
+  ChildIds: 1021681393837569277
+  ChildIds: 1504849790738137830
+  ChildIds: 762121144140643227
+  ChildIds: 17794108511586971579
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,97 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1283348674582026527
-  Name: "Morticai (Brent)"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Morticai (Brent)"
-  }
-}
-Objects {
-  Id: 13993498866007246311
-  Name: "Ryan"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Ryan"
-  }
-}
-Objects {
-  Id: 9058985876994128996
-  Name: "Marcela"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Marcela"
-  }
-}
-Objects {
-  Id: 16749004403265649282
+  Id: 17794108511586971579
   Name: "Chat"
   Transform {
     Location {
@@ -158,7 +68,65 @@ Objects {
   }
 }
 Objects {
-  Id: 16471530784388724245
+  Id: 762121144140643227
+  Name: "Ryan"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ryan"
+  }
+}
+Objects {
+  Id: 1504849790738137830
+  Name: "Marcela"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Marcela"
+  }
+}
+Objects {
+  Id: 1021681393837569277
   Name: "Patrick"
   Transform {
     Location {
@@ -184,6 +152,38 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
+  }
+}
+Objects {
+  Id: 16330745916369210991
+  Name: "Morticai (Brent)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Morticai (Brent)"
   }
 }
 Objects {

@@ -93,8 +93,6 @@ end
 
 function SendBackToGarage(trigger, other)
 
-	print("Trigger hit " .. other.name)
-
 	if other ~= localPlayer then
 	
 		return
