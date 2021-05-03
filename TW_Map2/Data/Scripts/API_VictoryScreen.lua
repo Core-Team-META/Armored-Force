@@ -142,9 +142,11 @@ API.playerRestoredEvent = {
 function API.CalculateWinners(winnerSortType, winnerSortResource)
 
 	while _G["GameWinner"] < 0 do
-	
 		Task.Wait()
-		
+	end
+	
+	if _G["GameWinner"] == 0 then -- for draw edge case
+		return nil
 	end
 	
 	local winners = Game.GetPlayers({includeTeams = _G["GameWinner"]})
@@ -178,15 +180,9 @@ function API.TeleportWinners( player, spawnObject, overrideCamera)
 	local spawnPosition = spawnObject:GetWorldPosition()
 	local spawnRotation = spawnObject:GetWorldRotation()
 		player:Respawn({position = spawnPosition, rotation = spawnRotation})
-
-		player:ResetVelocity() -- stop the player from flying off if they are currently in motion
-		player:SetWorldPosition(spawnPosition)
-		player:SetWorldRotation(spawnRotation)
 		
-		Task.Wait(.1)
 		if not Object.IsValid(player) then return end
-
-		player:ResetVelocity()
+		player:ResetVelocity() -- stop the player from flying off if they are currently in motion
 		player:SetWorldPosition(spawnPosition)
 		player:SetWorldRotation(spawnRotation)	
 		
@@ -194,13 +190,12 @@ function API.TeleportWinners( player, spawnObject, overrideCamera)
 			equipment:Destroy()
 		end
 
-		Task.Wait()
 		if not Object.IsValid(player) then return end
 		
 		player.animationStance = "unarmed_stance"
 		
-		for i=1,5 do
-			Task.Wait(.1)
+		for i=1, 3 do
+			Task.Wait(0.1)
 			if not Object.IsValid(player) then return end
 
 			player:ResetVelocity()
@@ -284,6 +279,10 @@ function API.TeleportPlayers(victoryScreen, playerList)
 	_G["MovementCanControl"] = false
 	if(not playerList) then
 		playerList = API.CalculateWinners(winnerSortType, winnerSortResource)
+	end
+	
+	if _G["GameWinner"] == 0 then -- for draw edge case
+		return
 	end
 
 	local topThreePlayerStats = {}
