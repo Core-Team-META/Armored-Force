@@ -1848,6 +1848,7 @@ Objects {
   ChildIds: 18443785708120810745
   ChildIds: 17435524863169244602
   ChildIds: 13828915763408443215
+  ChildIds: 13897527623311126856
   ChildIds: 16846902982503404270
   UnregisteredParameters {
     Overrides {
@@ -1968,7 +1969,6 @@ Objects {
     }
   }
   ParentId: 11800523572548119810
-  ChildIds: 13897527623311126856
   ChildIds: 11046005690778905113
   ChildIds: 7144886169829071707
   Collidable_v2 {
@@ -11793,11 +11793,10 @@ Objects {
   Name: "VictoryScreenTankSetter"
   Transform {
     Location {
-      X: -849.994629
-      Y: 7199.99854
+      X: -0.0009765625
+      Y: 0.0078125
     }
     Rotation {
-      Yaw: 179.999954
     }
     Scale {
       X: 1
@@ -11805,7 +11804,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16846902982503404270
+  ParentId: 11800523572548119810
   UnregisteredParameters {
     Overrides {
       Name: "cs:TankSpawns"
@@ -11826,51 +11825,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:M3StuartGARAGEMODEL"
-      AssetReference {
-        Id: 14032403485247481385
-      }
-    }
-    Overrides {
-      Name: "cs:Panzer3GARAGEMODEL"
-      AssetReference {
-        Id: 616489956946034427
-      }
-    }
-    Overrides {
-      Name: "cs:TankUSM24ChaffeeGARAGEMODEL"
-      AssetReference {
-        Id: 17661669092028267410
-      }
-    }
-    Overrides {
-      Name: "cs:M4A1ShermanGARAGEMODEL"
-      AssetReference {
-        Id: 5168191616823378001
-      }
-    }
-    Overrides {
-      Name: "cs:M10WolverineGARAGEMODEL"
-      AssetReference {
-        Id: 6547800262969392050
-      }
-    }
-    Overrides {
-      Name: "cs:T57GARAGEMODEL"
-      AssetReference {
-        Id: 11824009024669225901
-      }
-    }
-    Overrides {
-      Name: "cs:TankUST34HeavyGARAGEMODEL"
-      AssetReference {
-        Id: 9072741598498568350
-      }
-    }
-    Overrides {
-      Name: "cs:BatChatGARAGEMODEL"
-      AssetReference {
-        Id: 5592172945436724684
+      Name: "cs:EquipmentServer"
+      ObjectReference {
+        SelfId: 16301210256669850007
       }
     }
   }
@@ -12048,6 +12005,7 @@ Objects {
     Location {
       X: -1811.24536
       Y: 2818.48193
+      Z: 55
     }
     Rotation {
       Yaw: 24.9999275
@@ -12092,6 +12050,7 @@ Objects {
     Location {
       X: -1611.24683
       Y: -2081.5188
+      Z: 55
     }
     Rotation {
       Yaw: 24.999939
@@ -12136,6 +12095,7 @@ Objects {
     Location {
       X: -1611.24634
       Y: 2118.48218
+      Z: 55
     }
     Rotation {
       Yaw: 24.9999485
@@ -12180,6 +12140,7 @@ Objects {
     Location {
       X: -1411.24609
       Y: -1381.51672
+      Z: 55
     }
     Rotation {
       Yaw: 24.999958
@@ -12224,6 +12185,7 @@ Objects {
     Location {
       X: -1411.24634
       Y: 1418.48193
+      Z: 55
     }
     Rotation {
       Yaw: 24.9999676
@@ -12268,6 +12230,7 @@ Objects {
     Location {
       X: -1211.24573
       Y: -681.518555
+      Z: 55
     }
     Rotation {
       Yaw: 24.999979
@@ -12312,6 +12275,7 @@ Objects {
     Location {
       X: -1211.24609
       Y: 718.481812
+      Z: 55
     }
     Rotation {
       Yaw: 24.9999905
@@ -12356,6 +12320,7 @@ Objects {
     Location {
       X: -982.624
       Y: 18.84585
+      Z: 55
     }
     Rotation {
       Yaw: 25
