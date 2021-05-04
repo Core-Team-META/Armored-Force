@@ -40,7 +40,7 @@ function OnPlayerJoined(player)
 	for resource, value in pairs(playerData.resources) do
 		player:SetResource(resource, value)
 	end
-	
+		
 	player.serverUserData.techTreeProgress = {}
 	
 	print("Checking and setting shared storage")
