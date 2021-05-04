@@ -1,6 +1,6 @@
 Assets {
-  Id: 17445017811211620973
-  Name: "TANK_TankControllerClient_V2_1"
+  Id: 2519069929519781060
+  Name: "GAMESTATE_MatchEndCardClient"
   PlatformAssetType: 3
   TextAsset {
   }

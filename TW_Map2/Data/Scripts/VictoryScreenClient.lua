@@ -117,15 +117,30 @@ local function SendToVictoryScreen() -- topThreePlayerStats
 
 	Task.Wait(.1)
 	Events.Broadcast("HideUI")
+	
+	Task.Wait(1)
+	
+	local attempts = 0
+	
+	while LocalPlayer:GetOverrideCamera() ~= OverrideCamera and attempts < 10 do
+		LocalPlayer:SetLookWorldRotation(OverrideCamera:GetWorldRotation())
+		LocalPlayer:SetOverrideCamera(OverrideCamera)
+		LocalPlayer.lookSensitivity = 0	
+		Task.Wait(0.1)
+		attempts = attempts + 1
+	end
+	
 end
 
 --	nil SendToVictoryScreen(string)
 --	Resets the camera and hides the UI for the victory Screen
 local function RestoreFromPodium()
 	Events.Broadcast("ShowUI")
+	--[[
 	LocalPlayer:ClearOverrideCamera()
 	LocalPlayer.lookSensitivity = 1
-
+	]]
+	
 	if UpdateUITask then
 		UpdateUITask:Cancel()
 		UpdateUITask = nil
@@ -170,7 +185,7 @@ function OnStateChanged(manager, propertyName)
 	
 		SendToVictoryScreen()
 		
-	elseif newState == "LOBBY_STATE" then
+	elseif newState == "STATS_STATE" then
 	
 		RestoreFromPodium()
 		
