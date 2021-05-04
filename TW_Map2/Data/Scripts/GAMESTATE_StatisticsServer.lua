@@ -160,11 +160,13 @@ function OnDiedRecord(player, damage)
 			TrackDailyChallenge(damage.sourcePlayer, "Kills", 1)
 		end
 		
-		for x, p in pairs(player.serverUserData.assistedInDeath) do
-			if p ~= damage.sourcePlayer then
-				p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS, 1)
+		if player.serverUserData.assistedInDeath then
+			for x, p in pairs(player.serverUserData.assistedInDeath) do
+				if p ~= damage.sourcePlayer then
+					p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS, 1)
+				end
+				player.serverUserData.assistedInDeath[x] = nil
 			end
-			player.serverUserData.assistedInDeath[x] = nil
 		end
 		
 		player.serverUserData.assistedInDeath = {}

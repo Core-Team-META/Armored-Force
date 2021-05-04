@@ -156,7 +156,8 @@ function GivePlayerEquipment(player)
 
 	equipment[player] = World.SpawnAsset(GetEquippedTankTemplate(player, player:GetResource(CONSTANTS_API.GetEquippedTankResource())))
 	Task.Wait(0.1)	
-	assert(equipment[player]:IsA("Equipment"))
+	
+	--assert(equipment[player]:IsA("Equipment"))
 	
 	if equipment[player] then
 		equipment[player]:Equip(player)
