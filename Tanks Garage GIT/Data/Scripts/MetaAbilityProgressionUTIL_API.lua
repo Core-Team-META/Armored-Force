@@ -346,6 +346,10 @@ function API.BuildRewardsTable(list)
     return tempTable
 end
 
+function API.GetRankData(player)
+	return "RANK " .. tostring(player:GetResource(CONST.RANK_NAME))
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- COSMETIC DATA FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------

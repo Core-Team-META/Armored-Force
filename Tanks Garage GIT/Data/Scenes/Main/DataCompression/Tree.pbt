@@ -97,6 +97,18 @@ Objects {
         SelfId: 7647187385909291407
       }
     }
+    Overrides {
+      Name: "cs:RANK_PRIMARY"
+      ObjectReference {
+        SelfId: 2523039621331456336
+      }
+    }
+    Overrides {
+      Name: "cs:RANK_SECONDARY"
+      ObjectReference {
+        SelfId: 3716595645937158360
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

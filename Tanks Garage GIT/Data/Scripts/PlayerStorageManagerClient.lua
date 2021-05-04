@@ -5,6 +5,8 @@ local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 -- Objects
 local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
 local TANK_CONTENTS = script:GetCustomProperty("TankContents"):WaitForObject()
+local RANK_PRIMARY = script:GetCustomProperty("RANK_PRIMARY"):WaitForObject()
+local RANK_SECONDARY = script:GetCustomProperty("RANK_SECONDARY"):WaitForObject()
 
 -- Local properties
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -65,6 +67,10 @@ function RetrieveData()
 	            --UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
 	            
 	            Events.Broadcast("TankClientDataSet")
+	            
+	            -- Set the level/rank
+	            RANK_PRIMARY.text = UTIL_API.GetRankData(LOCAL_PLAYER)
+	            RANK_SECONDARY.text = RANK_PRIMARY.text
 	            
 	            return
 	        end
