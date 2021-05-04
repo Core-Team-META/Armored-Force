@@ -19,6 +19,11 @@ local reloadSpeed = tankEquipment:GetCustomProperty("ReloadSpeed")
 local recoilAmount = tankEquipment:GetCustomProperty("RecoilAmount")
 local recoilRockingMultiplier = tankEquipment:GetCustomProperty("RecoilRockingMultiplier")
 
+local elevationLimit = tankEquipment:GetCustomProperty("MaxElevationAngle")
+local rotationLimit = tankEquipment:GetCustomProperty("LeftAndRightCannonAngles")
+
+
+
 local tankOwner = nil
 
 local canShoot = true
@@ -31,6 +36,7 @@ local initialized = false
 
 local joinListener = nil
 local animateListener = nil
+local saluteListener = nil
 
 function StartTank(equipment, player)
 
@@ -80,7 +86,7 @@ end
 
 function FiringAnimation(player, reloadTime)
 
-	if player ~= tankOwner or not Object.IsValid(tankEquipment) then
+	if not Object.IsValid(tankEquipment) then
 	
 		return
 		
@@ -149,6 +155,29 @@ function FiringAnimation(player, reloadTime)
 
 end
 
+function Salute()
+	
+	if not Object.IsValid(cannon) or not Object.IsValid(turret) then
+		return
+	end
+	cannon:RotateTo(Rotation.New(0, elevationLimit/2, 0), 1, true)
+	
+	Task.Wait(0.5)
+	
+	if rotationLimit > 0 then
+		turret:RotateTo(Rotation.New(0, 0, -rotationLimit), 1.5, true)
+	else 
+		turret:RotateTo(Rotation.New(0, 0, -45), 1.5, true)
+	end	
+	
+	Task.Wait(2)
+	
+	FiringAnimation(tankOwner, 0)
+	
+	adjustmentPoint:RotateTo(Rotation.ZERO, 0.2, true)
+
+end
+
 function Tick(dt)
 
 	if not initialized then
@@ -201,6 +230,9 @@ function OnJoin(player)
 		if animateListener then
 			animateListener:Disconnect()
 		end
+		if saluteListener then
+			saluteListener:Disconnect()
+		end
 		return
 	end
 
@@ -213,4 +245,5 @@ end
 
 tankEquipment.equippedEvent:Connect(StartTank)
 animateListener = Events.Connect("ANIMATEFIRING", FiringAnimation)
+saluteListener = Events.Connect("VICTORY_SALUTE", Salute)
 joinListener = Game.playerJoinedEvent:Connect(OnJoin)
