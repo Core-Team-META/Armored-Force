@@ -269,6 +269,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4530883103915400467
+  Name: "Sci-fi Frame 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Frame_002"
+  }
+}
+Assets {
   Id: 4519748528802078203
   Name: "Icon Checkmark"
   PlatformAssetType: 9
