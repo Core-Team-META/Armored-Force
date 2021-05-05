@@ -39,12 +39,7 @@ function StartTank(equipment, player)
 	while not ready do
 	
 		Task.Wait()
-		
-		if(Object.IsValid(tankMovementControllerServer)) then
-		
-			ready = tankMovementControllerServer:GetCustomProperty("TankReady")
-			
-		end
+		ready = tankMovementControllerServer:GetCustomProperty("TankReady")
 		
 	end
 		
