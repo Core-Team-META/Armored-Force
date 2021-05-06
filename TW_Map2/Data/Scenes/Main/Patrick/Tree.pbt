@@ -25,7 +25,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MatchMaxDuration"
-      Int: 10
+      Int: 300
     }
     Overrides {
       Name: "cs:CardMaxDuration"
@@ -107,6 +107,14 @@ Objects {
       Name: "cs:KillCurrencyValue"
       Int: 250
     }
+    Overrides {
+      Name: "cs:SurvivalXPValue"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:SurvivalCurrencyValue"
+      Int: 500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -166,6 +174,7 @@ Objects {
   }
   ParentId: 10822000690975507823
   ChildIds: 5555072149459617070
+  ChildIds: 7081724605779961161
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -192,6 +201,62 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 7081724605779961161
+  Name: "ShowXPPanel"
+  Transform {
+    Location {
+      X: -4805
+      Y: -91200
+      Z: 6755
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16744102432660411739
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 400
+    Height: 100
+    UIY: -250
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
         }
       }
     }
@@ -284,6 +349,9 @@ Objects {
   ChildIds: 13401999755441766438
   ChildIds: 637727823555957432
   ChildIds: 15830454996986001608
+  ChildIds: 5814219634931509733
+  ChildIds: 17551859027268836215
+  ChildIds: 3287598278842977355
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -295,7 +363,7 @@ Objects {
   }
   Control {
     Width: 1010
-    Height: 600
+    Height: 700
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -322,6 +390,198 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3287598278842977355
+  Name: "SurvivalCurrencyAmountText"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9124519264539936485
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIX: 195
+    UIY: 250
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "+00 Silver"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 25
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17551859027268836215
+  Name: "SurvivalXPAmountText"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9124519264539936485
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIX: -5
+    UIY: 250
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "+00 XP"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 25
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5814219634931509733
+  Name: "SurvivalText"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9124519264539936485
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 250
+    Height: 60
+    UIX: -255
+    UIY: 250
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "SURVIVAL"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 25
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -355,7 +615,7 @@ Objects {
     Width: 250
     Height: 60
     UIX: -5
-    UIY: 515
+    UIY: 590
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -419,7 +679,7 @@ Objects {
     Width: 250
     Height: 60
     UIX: -5
-    UIY: 470
+    UIY: 545
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -482,7 +742,7 @@ Objects {
   Control {
     Width: 700
     Height: 7
-    UIY: 455
+    UIY: 530
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -543,7 +803,7 @@ Objects {
     Width: 120
     Height: 60
     UIX: 330
-    UIY: 395
+    UIY: 455
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -607,7 +867,7 @@ Objects {
     Width: 300
     Height: 60
     UIX: 115
-    UIY: 395
+    UIY: 455
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -671,7 +931,7 @@ Objects {
     Width: 300
     Height: 60
     UIX: 210
-    UIY: 340
+    UIY: 400
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -734,7 +994,7 @@ Objects {
     Width: 120
     Height: 60
     UIX: -70
-    UIY: 400
+    UIY: 460
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -798,7 +1058,7 @@ Objects {
     Width: 300
     Height: 60
     UIX: -290
-    UIY: 400
+    UIY: 460
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -862,7 +1122,7 @@ Objects {
     Width: 300
     Height: 60
     UIX: -220
-    UIY: 345
+    UIY: 405
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -924,7 +1184,7 @@ Objects {
   Control {
     Width: 700
     Height: 7
-    UIY: 325
+    UIY: 385
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -985,7 +1245,7 @@ Objects {
     Width: 200
     Height: 60
     UIX: 195
-    UIY: 265
+    UIY: 315
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1049,7 +1309,7 @@ Objects {
     Width: 200
     Height: 60
     UIX: -5
-    UIY: 265
+    UIY: 315
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1113,7 +1373,7 @@ Objects {
     Width: 250
     Height: 60
     UIX: -255
-    UIY: 265
+    UIY: 315
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1624,7 +1884,7 @@ Objects {
     Width: 750
     Height: 7
     UIX: -40
-    UIY: 255
+    UIY: 305
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1760,6 +2020,42 @@ Objects {
       Name: "cs:RollTextTickSFX"
       AssetReference {
         Id: 3523787590995695701
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:XPEntry"
+      AssetReference {
+        Id: 15601766259490227597
+      }
+    }
+    Overrides {
+      Name: "cs:RankEntry"
+      AssetReference {
+        Id: 10342459682821423283
+      }
+    }
+    Overrides {
+      Name: "cs:ShowXPPanel"
+      ObjectReference {
+        SelfId: 7081724605779961161
+      }
+    }
+    Overrides {
+      Name: "cs:SurvivalXPAmountText"
+      ObjectReference {
+        SelfId: 17551859027268836215
+      }
+    }
+    Overrides {
+      Name: "cs:SurvivalCurrencyAmountText"
+      ObjectReference {
+        SelfId: 3287598278842977355
       }
     }
   }
@@ -23372,6 +23668,16 @@ Objects {
     Overrides {
       Name: "cs:P16"
       String: ""
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:SpottingXP"
+      Int: 25
     }
     Overrides {
       Name: "cs:P1:isrep"
