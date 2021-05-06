@@ -73,7 +73,9 @@ function OnChangeState(previousState)
 	elseif previousState == "CARD_STATE" then
 	
 		for x, p in pairs(Game.GetPlayers()) do
-				
+		
+			p:SetResource("MatchEndHP", p.hitPoints)
+			
 			p:Respawn()
 					
 		end

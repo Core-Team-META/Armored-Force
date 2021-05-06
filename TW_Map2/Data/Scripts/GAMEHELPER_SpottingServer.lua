@@ -1,5 +1,9 @@
+-- API
+local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+
 local viewRange = script:GetCustomProperty("ViewRange")
 local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
+local spottingXP = script:GetCustomProperty("SpottingXP")
 
 local spottingList = {}
 local viewPointList = {}
@@ -41,11 +45,18 @@ function AddToList(player)
 	end
 	
 	spottingList[player.id] = true
-	
+		
 	for i=1, 16 do
 	
 		if script:GetCustomProperty("P" .. tostring(i)) == "" then
 		
+			-- Add XP
+			player:AddResource(Constants_API.XP, spottingXP)
+			-- Add RP to tank
+			damage.sourcePlayer:AddResource(UTIL_API.GetTankRPString(damage.sourcePlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())), spottingXP)
+			
+			Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
+	
 			script:SetNetworkedCustomProperty("P" .. tostring(i), player.id)
 			
 			return
@@ -170,7 +181,7 @@ function CheckForSpotting()
 							
 							if tank.owner == p2 then
 							
-								--print("Other Player spotted")
+								
 							
 								AddToList(p)
 								AddToList(p2)

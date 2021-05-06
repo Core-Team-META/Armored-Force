@@ -30,24 +30,28 @@ function OnPlayerJoined(player)
 	print("Player Joined " .. player.name)
 	
 	local playerData = Storage.GetPlayerData(player)
-	
+	UTIL_API.TablePrint(playerData)
 	print("Storage Retrieved")
 
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
 	end
+	
+	if(player:GetResource(CONSTANTS_API.RANK_NAME) <= 0) then
+		player:SetResource(CONSTANTS_API.RANK_NAME, 1)
+	end
 
 	for resource, value in pairs(playerData.resources) do
 		player:SetResource(resource, value)
 	end
-	
+		
 	player.serverUserData.techTreeProgress = {}
 	
 	print("Checking and setting shared storage")
 	CheckAndSetSharedStorageDefault(player)
 	print("Loading shared storage")
 	LoadAndSetDataFromSharedStorage(player)
-		
+
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
@@ -129,6 +133,7 @@ function CheckAndSetSharedStorageDefault(player)
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.RANK_NAME] == nil) then playerSharedStorage[CONSTANTS_API.RANK_NAME] = 1 end
 
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
@@ -169,6 +174,8 @@ function LoadAndSetDataFromSharedStorage(player)
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS])
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS])
 	player:SetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED, playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED])
+	player:SetResource(CONSTANTS_API.RANK_NAME, playerSharedStorage[CONSTANTS_API.RANK_NAME])
+	player:SetResource(CONSTANTS_API.XP, playerSharedStorage[CONSTANTS_API.XP])
 end
 
 function SavePlayerDataIntoSharedStorage(player)
@@ -207,6 +214,8 @@ function SavePlayerDataIntoSharedStorage(player)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] = player:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED)
+	playerSharedStorage[CONSTANTS_API.RANK_NAME] = player:GetResource(CONSTANTS_API.RANK_NAME)
+	playerSharedStorage[CONSTANTS_API.XP] = player:GetResource(CONSTANTS_API.XP)
 
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end

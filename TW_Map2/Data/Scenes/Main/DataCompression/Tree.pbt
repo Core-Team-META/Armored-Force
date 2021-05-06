@@ -132,7 +132,7 @@ Objects {
     Overrides {
       Name: "cs:PlayerSharedStorage"
       NetReference {
-        Key: "c44d80dce0734c06ad0ddc319af85848"
+        Key: "8cd7b4910d07447a8fac4ca5a361a105"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }

@@ -206,15 +206,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6677237403455816226
-  Name: "Portal VFX"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_portal"
-  }
-}
-Assets {
   Id: 6106781574284671706
   Name: "Frame Ring 007"
   PlatformAssetType: 9
