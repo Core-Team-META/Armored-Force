@@ -1,4 +1,4 @@
--- This script is handling UI Effects for the top menu "HEAD_ELEMENTS"
+-- This script is handling the UI
 -- Originally written by KonzZwodrei [ 07.04.2021 ] to add visual and audible Feedback to the UI
 -- Add edit notes at the bottom of the script
 
@@ -31,6 +31,13 @@ local PLAYER_STATS_BUTTON_HOVER = World.FindObjectByName("PLAYER_STATS_BUTTON_HO
 local TANK_STATS_BUTTON_ACTIVE = World.FindObjectByName("TANK_STATS_BUTTON_ACTIVE")
 local TANK_STATS_BUTTON_HOVER = World.FindObjectByName("TANK_STATS_BUTTON_HOVER")
 
+local BUTTON_AXIS = World.FindObjectByName("BUTTON_AXIS")
+local BUTTON_AXIS_HOVER = World.FindObjectByName("BUTTON_AXIS_HOVER")
+local BUTTON_AXIS_ACTIVE = World.FindObjectByName("BUTTON_AXIS_ACTIVE")
+local BUTTON_ALLIES = World.FindObjectByName("BUTTON_ALLIES")
+local BUTTON_ALLIES_HOVER = World.FindObjectByName("BUTTON_ALLIES_HOVER")
+local BUTTON_ALLIES_ACTIVE = World.FindObjectByName("BUTTON_ALLIES_ACTIVE")
+
 local BUTTON_UPGRADE_ENGINE_HOVER = World.FindObjectByName("BUTTON_UPGRADE_ENGINE_HOVER")
 local BUTTON_UPGRADE_ENGINE_PRESSED = World.FindObjectByName("BUTTON_UPGRADE_ENGINE_PRESSED")
 local BUTTON_UPGRADE_TURRET_HOVER = World.FindObjectByName("BUTTON_UPGRADE_TURRET_HOVER")
@@ -59,6 +66,10 @@ local CHOOSE_MODE_SHOOTINGRANGE_BUTTON = World.FindObjectByName("CHOOSE_MODE_SHO
 local CHOOSE_MODE_FIELDS_BUTTON = World.FindObjectByName("CHOOSE_MODE_FIELDS_BUTTON")
 local CHOOSE_MODE_DESERT_BUTTON = World.FindObjectByName("CHOOSE_MODE_DESERT_BUTTON")
 local CHOOSE_MODE_TUNDRA_BUTTON = World.FindObjectByName("CHOOSE_MODE_TUNDRA_BUTTON")
+
+-- CONNECTING TECH_TREE TANK_CARD BUTTONS
+local ALLIES_TANKS = World.FindObjectByName("ALLIES_TANKS")
+local AXIS_TANKS = World.FindObjectByName("AXIS_TANKS")
 
 -- CONNECTING TECH_TREE TANK_CARD BUTTONS
 local BUTTON_ALLIES_T1L = World.FindObjectByName("BUTTON_ALLIES_T1L")
@@ -1160,6 +1171,59 @@ function UNHOVERED_DEPLOY(DEPLOY_BUTTON)
 	end
 end
 
+------------------------------------------------------------------------------------------
+------ TECH_TREE ALLIES & AXIS CHANGER
+function CLICKED_BUTTON_ALLIES(BUTTON_ALLIES)
+	if BUTTON_ALLIES_ACTIVE.visibility == Visibility.FORCE_OFF then
+	ALLIES_TANKS.visibility = Visibility.FORCE_ON
+	AXIS_TANKS.visibility = Visibility.FORCE_OFF
+	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_OFF
+	BUTTON_ALLIES_ACTIVE.visibility = Visibility.FORCE_ON
+	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_OFF
+	BUTTON_AXIS_ACTIVE.visibility = Visibility.FORCE_OFF
+	SFX_CLICK:Play()
+	end
+end
+
+function HOVERED_BUTTON_ALLIES(BUTTON_ALLIES)
+	if BUTTON_ALLIES_ACTIVE.visibility == Visibility.FORCE_OFF then
+	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_ON
+	SFX_HOVER:Play()
+	end
+end
+
+function UNHOVERED_BUTTON_ALLIES(BUTTON_ALLIES)
+	if BUTTON_ALLIES_ACTIVE.visibility == Visibility.FORCE_OFF then
+	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_OFF
+	SFX_UNHOVERED:Play()
+	end
+end
+
+function CLICKED_BUTTON_AXIS(BUTTON_AXIS)
+	if BUTTON_AXIS_ACTIVE.visibility == Visibility.FORCE_OFF then
+	ALLIES_TANKS.visibility = Visibility.FORCE_OFF
+	AXIS_TANKS.visibility = Visibility.FORCE_ON
+	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_OFF
+	BUTTON_AXIS_ACTIVE.visibility = Visibility.FORCE_ON
+	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_OFF
+	BUTTON_ALLIES_ACTIVE.visibility = Visibility.FORCE_OFF
+	SFX_CLICK:Play()
+	end
+end
+
+function HOVERED_BUTTON_AXIS(BUTTON_AXIS)
+	if BUTTON_AXIS_ACTIVE.visibility == Visibility.FORCE_OFF then
+	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_ON
+	SFX_HOVER:Play()
+	end
+end
+
+function UNHOVERED_BUTTON_AXIS(BUTTON_AXIS)
+	if BUTTON_AXIS_ACTIVE.visibility == Visibility.FORCE_OFF then
+	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_OFF
+	SFX_UNHOVERED:Play()
+	end
+end
 ------------------------------------------------------------------------------------------
 ------ TECH_TREE BUTTONS HANDLER
 function CLICKED_BUTTON_ALLIES_T1L(BUTTON_ALLIES_T1L)
@@ -3027,6 +3091,9 @@ BUTTON_UPGRADE_ENGINE.clickedEvent:Connect(CLICKED_UPGRADE_ENGINE)
 BUTTON_UPGRADE_TURRET.clickedEvent:Connect(CLICKED_UPGRADE_TURRET)
 BUTTON_UPGRADE_SHELL.clickedEvent:Connect(CLICKED_UPGRADE_SHELL)
 
+BUTTON_ALLIES.clickedEvent:Connect(CLICKED_BUTTON_ALLIES)
+BUTTON_AXIS.clickedEvent:Connect(CLICKED_BUTTON_AXIS)
+
 BUTTON_TECHTREE_SHOP.clickedEvent:Connect(CLICKED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.clickedEvent:Connect(CLICKED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.clickedEvent:Connect(CLICKED_ACHIEVEMENTS)
@@ -3076,9 +3143,14 @@ BUTTON_AXIS_T4D.clickedEvent:Connect(CLICKED_BUTTON_AXIS_T4D)
 STATS_SLIDER_BUTTON.hoveredEvent:Connect(HOVERED_STATS)
 PLAYER_STATS_BUTTON.hoveredEvent:Connect(HOVERED_PLAYER_STATS)
 TANK_STATS_BUTTON.hoveredEvent:Connect(HOVERED_TANK_STATS)
+
 BUTTON_UPGRADE_ENGINE.hoveredEvent:Connect(HOVERED_UPGRADE_ENGINE)
 BUTTON_UPGRADE_TURRET.hoveredEvent:Connect(HOVERED_UPGRADE_TURRET)
 BUTTON_UPGRADE_SHELL.hoveredEvent:Connect(HOVERED_UPGRADE_SHELL)
+
+BUTTON_ALLIES.hoveredEvent:Connect(HOVERED_BUTTON_ALLIES)
+BUTTON_AXIS.hoveredEvent:Connect(HOVERED_BUTTON_AXIS)
+
 BUTTON_TECHTREE_SHOP.hoveredEvent:Connect(HOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.hoveredEvent:Connect(HOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.hoveredEvent:Connect(HOVERED_ACHIEVEMENTS)
@@ -3128,9 +3200,14 @@ BUTTON_AXIS_T4D.hoveredEvent:Connect(HOVERED_BUTTON_AXIS_T4D)
 STATS_SLIDER_BUTTON.unhoveredEvent:Connect(UNHOVERED_STATS)
 PLAYER_STATS_BUTTON.unhoveredEvent:Connect(UNHOVERED_PLAYER_STATS)
 TANK_STATS_BUTTON.unhoveredEvent:Connect(UNHOVERED_TANK_STATS)
+
 BUTTON_UPGRADE_ENGINE.unhoveredEvent:Connect(UNHOVERED_UPGRADE_ENGINE)
 BUTTON_UPGRADE_TURRET.unhoveredEvent:Connect(UNHOVERED_UPGRADE_TURRET)
 BUTTON_UPGRADE_SHELL.unhoveredEvent:Connect(UNHOVERED_UPGRADE_SHELL)
+
+BUTTON_ALLIES.unhoveredEvent:Connect(UNHOVERED_BUTTON_ALLIES)
+BUTTON_AXIS.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS)
+
 BUTTON_TECHTREE_SHOP.unhoveredEvent:Connect(UNHOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.unhoveredEvent:Connect(UNHOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.unhoveredEvent:Connect(UNHOVERED_ACHIEVEMENTS)
