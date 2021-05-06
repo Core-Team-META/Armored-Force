@@ -112240,7 +112240,7 @@ Objects {
 }
 Objects {
   Id: 15105528130495963658
-  Name: "SUBMENU_ITEM_1"
+  Name: "BUTTONS_AXIS"
   Transform {
     Location {
     }
@@ -112311,7 +112311,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -112386,7 +112386,7 @@ Objects {
 }
 Objects {
   Id: 2683348314380727921
-  Name: "ACTIVE"
+  Name: "BUTTON_AXIS_ACTIVE"
   Transform {
     Location {
     }
@@ -112409,7 +112409,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -112812,7 +112812,7 @@ Objects {
 }
 Objects {
   Id: 8883865318975253728
-  Name: "HOVER"
+  Name: "BUTTON_AXIS_HOVER"
   Transform {
     Location {
     }
@@ -112834,7 +112834,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -113175,7 +113175,7 @@ Objects {
 }
 Objects {
   Id: 3572680702987701548
-  Name: "IDLE"
+  Name: "BUTTON_AXIS_IDLE"
   Transform {
     Location {
     }
@@ -113538,7 +113538,7 @@ Objects {
 }
 Objects {
   Id: 6137367825948170525
-  Name: "SUBMENU_ITEM_2"
+  Name: "BUTTONS_ALLIES"
   Transform {
     Location {
     }
@@ -113684,7 +113684,7 @@ Objects {
 }
 Objects {
   Id: 14009247714815157478
-  Name: "ACTIVE"
+  Name: "BUTTON_ALLIES_ACTIVE"
   Transform {
     Location {
     }
@@ -114110,7 +114110,7 @@ Objects {
 }
 Objects {
   Id: 17710409977000536007
-  Name: "HOVER"
+  Name: "BUTTON_ALLIES_HOVER"
   Transform {
     Location {
     }
@@ -114132,7 +114132,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -114473,7 +114473,7 @@ Objects {
 }
 Objects {
   Id: 10183534583321984258
-  Name: "IDLE"
+  Name: "BUTTON_ALLIES_IDLE"
   Transform {
     Location {
     }
@@ -115335,7 +115335,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "T110 E3"
+      Label: "Jagdtiger"
       Color {
         R: 1
         G: 1
@@ -117115,7 +117115,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "M10 Wolverine"
+      Label: "StuG 3 G"
       Color {
         R: 1
         G: 1
@@ -118905,7 +118905,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "T57"
+      Label: "VK72.01"
       Color {
         R: 1
         G: 1
@@ -118972,7 +118972,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "AM-50"
+      Label: "E-100"
       Color {
         R: 1
         G: 1
@@ -119040,7 +119040,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "IS-7"
+      Label: "Maus"
       Color {
         R: 1
         G: 1
@@ -122032,7 +122032,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "T34 Heavy"
+      Label: "L\303\266we"
       Color {
         R: 1
         G: 1
@@ -123876,7 +123876,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "IS-3"
+      Label: "Tiger 2"
       Color {
         R: 1
         G: 1
@@ -125666,7 +125666,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "T-62A1"
+      Label: "Type-74"
       Color {
         R: 1
         G: 1
@@ -125733,7 +125733,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "M48 Patton"
+      Label: "E-50"
       Color {
         R: 1
         G: 1
@@ -125801,7 +125801,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "Bat-Chat 25T"
+      Label: "OF-40"
       Color {
         R: 1
         G: 1
@@ -128792,7 +128792,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "Comet"
+      Label: "Panther"
       Color {
         R: 1
         G: 1
@@ -130485,7 +130485,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "T-34"
+      Label: "Panzer 4"
       Color {
         R: 1
         G: 1
@@ -130553,7 +130553,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "M4A1 Sherman"
+      Label: "Chi-Nu"
       Color {
         R: 1
         G: 1
@@ -133006,7 +133006,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "1955 Chimera"
+      Label: "FIAT 6616"
       Color {
         R: 1
         G: 1
@@ -134786,7 +134786,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "M24 Chaffee"
+      Label: "Leopard VK1602"
       Color {
         R: 1
         G: 1
@@ -136565,7 +136565,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "M3 Stuart"
+      Label: "Panzer 3"
       Color {
         R: 1
         G: 1
@@ -139062,7 +139062,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
