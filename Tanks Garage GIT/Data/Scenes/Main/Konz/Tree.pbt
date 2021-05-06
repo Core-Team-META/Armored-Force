@@ -3649,6 +3649,7 @@ Objects {
     }
   }
   ParentId: 17694086301462411714
+  ChildIds: 3243702946864327333
   ChildIds: 10647935135568310505
   ChildIds: 8745392010101095915
   ChildIds: 17268737890680548439
@@ -3799,6 +3800,43 @@ Objects {
     }
     Pitch: 200
     Volume: 4
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 3243702946864327333
+  Name: "SFX_UNHOVERED"
+  Transform {
+    Location {
+      X: 20.2730713
+      Y: 70.7412109
+      Z: 3.05175781e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4236679586038949904
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 9147971727626517997
+    }
+    Pitch: 1
+    Volume: 1.90682876
     Falloff: -1
     Radius: -1
   }
