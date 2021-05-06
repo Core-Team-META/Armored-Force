@@ -346,6 +346,20 @@ function API.BuildRewardsTable(list)
     return tempTable
 end
 
+function API.GetRankData(player)
+	return "RANK " .. tostring(player:GetResource(CONST.RANK_NAME))
+end
+
+function API.GetXPValue(player)
+	return player:GetResource(CONST.XP)
+end
+
+function API.GetXPToNextRank(player)
+	local rank = player:GetResource(CONST.RANK_NAME)
+	-- TODO: Make a proper level curve?
+	return rank * 1000
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- COSMETIC DATA FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------

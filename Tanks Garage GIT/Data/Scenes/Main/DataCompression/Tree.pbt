@@ -97,6 +97,24 @@ Objects {
         SelfId: 7647187385909291407
       }
     }
+    Overrides {
+      Name: "cs:RANK_PRIMARY"
+      ObjectReference {
+        SelfId: 2523039621331456336
+      }
+    }
+    Overrides {
+      Name: "cs:RANK_SECONDARY"
+      ObjectReference {
+        SelfId: 3716595645937158360
+      }
+    }
+    Overrides {
+      Name: "cs:CHOSEN_TANKNAME"
+      ObjectReference {
+        SelfId: 3711073407798969477
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -132,7 +150,7 @@ Objects {
     Overrides {
       Name: "cs:PlayerSharedStorage"
       NetReference {
-        Key: "c44d80dce0734c06ad0ddc319af85848"
+        Key: "8cd7b4910d07447a8fac4ca5a361a105"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
