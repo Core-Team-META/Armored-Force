@@ -7,6 +7,7 @@ local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
 local TANK_CONTENTS = script:GetCustomProperty("TankContents"):WaitForObject()
 local RANK_PRIMARY = script:GetCustomProperty("RANK_PRIMARY"):WaitForObject()
 local RANK_SECONDARY = script:GetCustomProperty("RANK_SECONDARY"):WaitForObject()
+local CHOSEN_TANKNAME = script:GetCustomProperty("CHOSEN_TANKNAME"):WaitForObject()
 
 -- Local properties
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -71,7 +72,8 @@ function RetrieveData()
 	            -- Set the level/rank
 	            RANK_PRIMARY.text = UTIL_API.GetRankData(LOCAL_PLAYER)
 	            RANK_SECONDARY.text = RANK_PRIMARY.text
-	            
+	            -- Using this text box as an XP display for now
+	            CHOSEN_TANKNAME.text = "XP " .. tostring(UTIL_API.GetXPValue(LOCAL_PLAYER)) .. " / " .. tostring(UTIL_API.GetXPToNextRank(LOCAL_PLAYER))
 	            return
 	        end
 	    end
