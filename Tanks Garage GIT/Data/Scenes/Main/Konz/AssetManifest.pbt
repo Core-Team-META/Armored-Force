@@ -323,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2604353830693238371
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
   Id: 1772837125351970481
   Name: "Money"
   PlatformAssetType: 9
