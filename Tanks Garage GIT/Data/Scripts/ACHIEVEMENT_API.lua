@@ -383,8 +383,13 @@ function API.ResetRepeatable(player)
 end
 
 --@param object player
-function API.LoadAchievementStorage(player)
-    local data = Storage.GetPlayerData(player)
+function API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
+    local data = {}
+    if not useSharedKey then
+        data = Storage.GetPlayerData(player)
+    else
+        data = Storage.GetSharedPlayerData(sharedKeyNetRef, player)
+    end
     if data["META_ACH"] then
         local achievementData = data["META_ACH"]
         if type(achievementData) ~= "number" then
