@@ -1,5 +1,6 @@
 -- API
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local viewRange = script:GetCustomProperty("ViewRange")
 local gameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObject()
@@ -53,7 +54,7 @@ function AddToList(player)
 			-- Add XP
 			player:AddResource(Constants_API.XP, spottingXP)
 			-- Add RP to tank
-			damage.sourcePlayer:AddResource(UTIL_API.GetTankRPString(damage.sourcePlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())), spottingXP)
+			player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
 			
 			Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
 	
