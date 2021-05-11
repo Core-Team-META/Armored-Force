@@ -1,6 +1,7 @@
--- This script is handling the UI
--- Originally written by KonzZwodrei [ 07.04.2021 ] to add visual and audible Feedback to the UI
--- Add edit notes at the bottom of the script
+-- This script is handling the following UI elements:
+-- Main Menu (TOP)
+-- User Stats
+-- Chosen Tank Stats
 
 -- CONNECTING CUSTOM PROPERTIES
 local ACTIVE_HEAD_MENU = script:GetCustomProperty("ACTIVE_HEAD_MENU")
