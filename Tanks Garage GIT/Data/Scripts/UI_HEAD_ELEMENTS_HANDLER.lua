@@ -1,6 +1,7 @@
--- This script is handling the UI
--- Originally written by KonzZwodrei [ 07.04.2021 ] to add visual and audible Feedback to the UI
--- Add edit notes at the bottom of the script
+-- This script is handling the following UI elements:
+-- Main Menu (TOP)
+-- User Stats
+-- Chosen Tank Stats
 
 -- CONNECTING CUSTOM PROPERTIES
 local ACTIVE_HEAD_MENU = script:GetCustomProperty("ACTIVE_HEAD_MENU")
@@ -3251,8 +3252,3 @@ BUTTON_AXIS_T4H_1.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_1)
 BUTTON_AXIS_T4H_2.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_2)
 BUTTON_AXIS_T4H_3.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_3)
 BUTTON_AXIS_T4D.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4D)
-
--- Change MAP to MODE on all values and functions KonzZwodrei [ 07.04.2021 ]
--- Added and animated functional: User Menu + Player Stats & Chosen Tank Stats UI's [ 22.04.2021 ]
--- Added additional functionality by USERNAME [ dd.mm.yyyyy ]
--- Added additional functionality by USERNAME [ dd.mm.yyyyy ]

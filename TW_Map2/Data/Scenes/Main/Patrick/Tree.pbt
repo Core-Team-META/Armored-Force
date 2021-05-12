@@ -23680,6 +23680,12 @@ Objects {
       Int: 25
     }
     Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
+    Overrides {
       Name: "cs:P1:isrep"
       Bool: true
     }
