@@ -21,17 +21,22 @@ local NOTIFICATION_ICON_BG = NOTIFICATION:GetCustomProperty("ICONBG"):WaitForObj
 local NOTIFICATION_ICON = NOTIFICATION:GetCustomProperty("ICON"):WaitForObject()
 local ACHIEVEMENT_NAME_TEXT = NOTIFICATION:GetCustomProperty("ACHIEVEMENT_NAME_TEXT"):WaitForObject()
 local ACHIEVEMENTS_DETAILS_UI = nil
- --script:GetCustomProperty("ACHIEVEMENTS_DETAILS_UI"):WaitForObject()
+--script:GetCustomProperty("ACHIEVEMENTS_DETAILS_UI"):WaitForObject()
 
-local ACHIEVEMENT_PANEL = nil--script:GetCustomProperty("AchievementsPanel"):WaitForObject()
+local ACHIEVEMENT_PANEL = script:GetCustomProperty("AchievementsPanel"):WaitForObject()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local SFX = script:GetCustomProperty("SFX")
 local AchievementPanelTemplate = script:GetCustomProperty("Achievement_EndScreen_Template")
+local ScrollPanelTemplate = script:GetCustomProperty("UIAchievementScrollPanel")
+
+local achievementScrollPanel = World.SpawnAsset(ScrollPanelTemplate, {parent = ACHIEVEMENT_PANEL})
 ------------------------------------------------------------------------------------------------------------------------
 -- Variables
 ------------------------------------------------------------------------------------------------------------------------
+local thisComponent = "ACHIEVEMENTS_MENU"
+local savedState = ""
 local shouldShow = false
 local achievementQueue = {}
 local achievementIds = {}
@@ -39,6 +44,7 @@ local listeners = {}
 local scriptListeners = {}
 
 NOTIFICATION.visibility = Visibility.FORCE_OFF
+
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -67,8 +73,10 @@ local function ClearListeners(listeners)
 end
 
 local function ClearAchievements()
-    if not ACHIEVEMENT_PANEL then return end
-    for _, child in ipairs(ACHIEVEMENT_PANEL:GetChildren()) do
+    if not achievementScrollPanel then
+        return
+    end
+    for _, child in ipairs(achievementScrollPanel:GetChildren()) do
         if Object.IsValid(child) then
             child:Destroy()
         end
@@ -99,17 +107,52 @@ end
 
 local function BuildAchievementInfoPanel()
     local count = 0
-    for _, achievement in pairs(ACH_API.CheckUnlockedAchievements(LOCAL_PLAYER)) do
-
+    for _, achievement in pairs(ACH_API.GetAchievements()) do
         --#TODO Needs to be changed to how many achievements should show in the end round panel
-        if count >= 6 then
-            break
+        local achievementPanel = World.SpawnAsset(AchievementPanelTemplate, {parent = achievementScrollPanel})
+        local iconBG = achievementPanel:GetCustomProperty("Background"):WaitForObject()
+        local icon = achievementPanel:GetCustomProperty("Icon"):WaitForObject()
+        local name = achievementPanel:GetCustomProperty("ChallengeTitle"):WaitForObject()
+        local progressBar = achievementPanel:GetCustomProperty("Progress"):WaitForObject()
+        local button = achievementPanel:GetCustomProperty("ChallengeClaim"):WaitForObject()
+
+        local activePanel = achievementPanel:GetCustomProperty("Active"):WaitForObject()
+        local inactivePanel = achievementPanel:GetCustomProperty("Inactive"):WaitForObject()
+
+        if achievement.preReq and not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, achievement.id) then
+            activePanel.visibility = Visibility.FORCE_OFF
+            inactivePanel.visibility = Visibility.FORCE_ON
+
+            local tempTbl = {CoreString.Split(achievement.preReq, ",")}
+            local str = ""
+            for _, preReqId in ipairs(tempTbl) do
+                if not ACH_API.IsUnlocked(LOCAL_PLAYER, preReqId) then
+                    if str == "" then
+                        str = preReqId
+                    else
+                        str = str .. " & " .. preReqId
+                    end
+                end
+            end
+            inactivePanel:GetCustomProperty("Text"):WaitForObject().text = "Requires completion of: " .. "\n" .. str
+        else
+            activePanel.visibility = Visibility.FORCE_ON
+            inactivePanel.visibility = Visibility.FORCE_OFF
         end
-        local achievementPanel = World.SpawnAsset(AchievementPanelTemplate, {parent = ACHIEVEMENT_PANEL})
-        local iconBG = achievementPanel:GetCustomProperty("ACHIEVEMENT_ICON_BG"):WaitForObject()
-        local icon = achievementPanel:GetCustomProperty("ACHIEVEMENT_ICON"):WaitForObject()
-        local name = achievementPanel:GetCustomProperty("ACHIEVEMENT_NAME"):WaitForObject()
-        --local button = achievementPanel:GetCustomProperty("BUTTON"):WaitForObject()
+
+        if ACH_API.IsUnlocked(LOCAL_PLAYER, achievement.id) then
+            button.visibility = Visibility.FORCE_ON
+            progressBar.visibility = Visibility.FORCE_OFF
+        else
+            button.visibility = Visibility.FORCE_OFF
+            progressBar.visibility = Visibility.FORCE_ON
+            local currentProgress = CoreMath.Round(ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id))
+            local requiredProgress = CoreMath.Round(ACH_API.GetAchievementRequired(achievement.id))
+            progressBar.progress = currentProgress / requiredProgress
+            progressBar:GetChildren()[1].text = tostring(currentProgress) .. " / " .. tostring(requiredProgress - 1)
+        end
+
+        --local button = achievementPanel:GetCustomProperty("ChallengeClaim"):WaitForObject()
 
         --button.clientUserData.detailPanel = achievementPanel:GetCustomProperty("ACHIEVEMENTS_DETAILS_UI"):WaitForObject()
         --button.clientUserData.achievement = achievement
@@ -124,14 +167,8 @@ local function BuildAchievementInfoPanel()
 
         name.text = achievement.name
 
-        if count < 6 then
-            achievementPanel.x = count * 125 --#TODO Needs to be changed
-            count = count + 1
-        else
-            achievementPanel.x = (count - 5) * 130 --#TODO Needs to be changed
-            achievementPanel.y = 150
-            count = count + 1
-        end
+        achievementPanel.y = count * 235 --#TODO Needs to be changed
+        count = count + 1
     end
     --ACHIEVEMENTS_DETAILS_UI.visibility = Visibility.FORCE_OFF
 end
@@ -188,6 +225,25 @@ function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime) 
     end
 end
 
+function ToggleThisComponent(requestedPlayerState)
+    savedState = requestedPlayerState
+
+    if requestedPlayerState == thisComponent then
+        if savedState ~= thisComponent or ACHIEVEMENT_PANEL.isEnabled then
+            return
+        end
+        BuildAchievementInfoPanel()
+    else
+        Task.Wait(0.1)
+        DisableThisComponent()
+    end
+end
+
+function DisableThisComponent()
+    ClearAchievements()
+    ClearListeners(listeners)
+end
+
 function Tick()
     if shouldShow and #achievementQueue > 0 then
         for _, id in ipairs(achievementQueue) do
@@ -199,7 +255,9 @@ end
 
 Int()
 scriptListeners[#scriptListeners + 1] = LOCAL_PLAYER.resourceChangedEvent:Connect(OnResourceChanged)
-scriptListeners[#scriptListeners + 1] = Events.Connect("GameStateChanged", OnGameStateChanged)
+--scriptListeners[#scriptListeners + 1] = Events.Connect("GameStateChanged", OnGameStateChanged)
+scriptListeners[#scriptListeners + 1] = Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
+scriptListeners[#scriptListeners + 1] = Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
 
 scriptListeners[#scriptListeners + 1] =
     script.destroyEvent:Connect(
