@@ -192,6 +192,7 @@ Objects {
       }
     }
     Canvas {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -264,6 +265,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -317,6 +319,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -501,6 +504,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -850,6 +854,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -905,6 +910,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1456,6 +1462,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1883,6 +1890,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -2165,6 +2173,7 @@ Objects {
     UseParentHeight: true
     Panel {
       IsClipping: true
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -2580,6 +2589,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -2745,6 +2755,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -4207,6 +4218,7 @@ Objects {
       ContentType {
         Value: "mc:ecanvascontenttype:dynamic"
       }
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -4295,13 +4307,19 @@ Objects {
     Overrides {
       Name: "cs:AchievementsPanel"
       ObjectReference {
-        SelfId: 18258655967248789995
+        SelfId: 15401294820751075291
       }
     }
     Overrides {
       Name: "cs:Achievement_EndScreen_Template"
       AssetReference {
-        Id: 3264268890164788131
+        Id: 13588584302579303775
+      }
+    }
+    Overrides {
+      Name: "cs:UIAchievementScrollPanel"
+      AssetReference {
+        Id: 12951294657090176674
       }
     }
   }
