@@ -356,6 +356,7 @@ end
 
 function API.GetXPToNextRank(player)
 	local rank = player:GetResource(CONST.RANK_NAME)
+	print("RANK IS: " .. tostring(rank))
 	-- TODO: Make a proper level curve?
 	return rank * 1000
 end
@@ -611,5 +612,38 @@ function API.RetrieveTankNameById(id, tankCollection)
 	return "M3 Stuart"
 end
 
+
+-- Retrieves the highest damage of a tank to use as the upper limit for the stat progress bar
+function API.GetHighestDamage()
+	return 550
+end
+
+function API.GetHighestReload()
+	return 16
+end
+
+function API.GetHighestTurretSpeed()
+	return 40
+end
+
+function API.GetHighestHitPoints()
+	return 2000
+end
+
+function API.GetHighestTopSpeed()
+	return 2000
+end
+
+function API.GetHighestAcceleration()
+	return 1200
+end
+
+function API.GetHighestTraverse()
+	return 70
+end
+
+function API.GetHighestElevation()
+	return 30
+end
 ------------------------------------------------------------------------------------------------------------------------
 return API
