@@ -101,6 +101,7 @@ Objects {
       ContentType {
         Value: "mc:ecanvascontenttype:dynamic"
       }
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -152,6 +153,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1794,6 +1796,7 @@ Objects {
       ContentType {
         Value: "mc:ecanvascontenttype:dynamic"
       }
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1846,6 +1849,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1900,6 +1904,7 @@ Objects {
     }
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1992,6 +1997,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -2669,6 +2675,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -3346,6 +3353,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -4009,6 +4017,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -4790,6 +4799,7 @@ Objects {
       ContentType {
         Value: "mc:ecanvascontenttype:dynamic"
       }
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -4846,6 +4856,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -4928,6 +4939,7 @@ Objects {
     }
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -5486,6 +5498,7 @@ Objects {
     }
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -5731,6 +5744,7 @@ Objects {
     }
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -5785,6 +5799,7 @@ Objects {
     }
     UseParentWidth: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -6033,6 +6048,7 @@ Objects {
     }
     UseParentWidth: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -6280,6 +6296,7 @@ Objects {
     }
     UseParentWidth: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -6527,6 +6544,7 @@ Objects {
     }
     UseParentWidth: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -7601,7 +7619,6 @@ Objects {
     Overrides {
       Name: "cs:Background"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -7940,6 +7957,180 @@ Objects {
         SelfId: 5404198808869508183
       }
     }
+    Overrides {
+      Name: "cs:XP_Texts"
+      ObjectReference {
+        SelfId: 1370884785713797609
+      }
+    }
+    Overrides {
+      Name: "cs:TNL_Texts"
+      ObjectReference {
+        SelfId: 8017128008511653395
+      }
+    }
+    Overrides {
+      Name: "cs:Rank"
+      ObjectReference {
+        SelfId: 6237762948681104390
+      }
+    }
+    Overrides {
+      Name: "cs:NextRank"
+      ObjectReference {
+        SelfId: 1858027122263594704
+      }
+    }
+    Overrides {
+      Name: "cs:XPProgressBar"
+      ObjectReference {
+        SelfId: 15802587022692840913
+      }
+    }
+    Overrides {
+      Name: "cs:TotalMatches"
+      ObjectReference {
+        SelfId: 4338056522281174862
+      }
+    }
+    Overrides {
+      Name: "cs:TotalWins"
+      ObjectReference {
+        SelfId: 11906461361061406067
+      }
+    }
+    Overrides {
+      Name: "cs:LongestKillStreak"
+      ObjectReference {
+        SelfId: 12226819044901041610
+      }
+    }
+    Overrides {
+      Name: "cs:TotalDamage"
+      ObjectReference {
+        SelfId: 7713701671790812379
+      }
+    }
+    Overrides {
+      Name: "cs:Accuracy"
+      ObjectReference {
+        SelfId: 14782568836475394252
+      }
+    }
+    Overrides {
+      Name: "cs:TanksDestroyed"
+      ObjectReference {
+        SelfId: 10907070692285861148
+      }
+    }
+    Overrides {
+      Name: "cs:MoneyAmount"
+      ObjectReference {
+        SelfId: 10101858228983834888
+      }
+    }
+    Overrides {
+      Name: "cs:FreeRPAmount"
+      ObjectReference {
+        SelfId: 10021389830642514841
+      }
+    }
+    Overrides {
+      Name: "cs:DamageBar_LVLUP"
+      ObjectReference {
+        SelfId: 14993757968904406349
+      }
+    }
+    Overrides {
+      Name: "cs:DamageBar"
+      ObjectReference {
+        SelfId: 2091660509431889494
+      }
+    }
+    Overrides {
+      Name: "cs:ReloadBar_LVLUP"
+      ObjectReference {
+        SelfId: 14279890878578446399
+      }
+    }
+    Overrides {
+      Name: "cs:ReloadBar"
+      ObjectReference {
+        SelfId: 15737483195528418802
+      }
+    }
+    Overrides {
+      Name: "cs:TurretSpeed_LVLUP"
+      ObjectReference {
+        SelfId: 15685749898446323799
+      }
+    }
+    Overrides {
+      Name: "cs:TurretBar"
+      ObjectReference {
+        SelfId: 14929729326819882596
+      }
+    }
+    Overrides {
+      Name: "cs:HitPoints_LVLUP"
+      ObjectReference {
+        SelfId: 5053367364599431502
+      }
+    }
+    Overrides {
+      Name: "cs:HitPointsBar"
+      ObjectReference {
+        SelfId: 1026470562186399315
+      }
+    }
+    Overrides {
+      Name: "cs:TopSpeed_LVLUP"
+      ObjectReference {
+        SelfId: 390024196547581906
+      }
+    }
+    Overrides {
+      Name: "cs:TopSpeedBar"
+      ObjectReference {
+        SelfId: 10561146631575629760
+      }
+    }
+    Overrides {
+      Name: "cs:Acceleration_LVLUP"
+      ObjectReference {
+        SelfId: 6512095404357494532
+      }
+    }
+    Overrides {
+      Name: "cs:AccelerationBar"
+      ObjectReference {
+        SelfId: 9160968398281126723
+      }
+    }
+    Overrides {
+      Name: "cs:Traverse_LVLUP"
+      ObjectReference {
+        SelfId: 1581991240491862977
+      }
+    }
+    Overrides {
+      Name: "cs:TraverseBar"
+      ObjectReference {
+        SelfId: 11753131745219905722
+      }
+    }
+    Overrides {
+      Name: "cs:Elevation_LVLUP"
+      ObjectReference {
+        SelfId: 8484299875578965383
+      }
+    }
+    Overrides {
+      Name: "cs:ElevationBar"
+      ObjectReference {
+        SelfId: 15143526552137198037
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8050,6 +8241,7 @@ Objects {
       ContentType {
         Value: "mc:ecanvascontenttype:dynamic"
       }
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -8103,6 +8295,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -8141,7 +8334,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8156,6 +8349,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -8467,6 +8661,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -8519,6 +8714,7 @@ Objects {
       }
     }
     Panel {
+      Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {

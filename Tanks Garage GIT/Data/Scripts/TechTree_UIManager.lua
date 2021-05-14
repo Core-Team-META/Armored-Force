@@ -10,6 +10,39 @@ local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_AP
 local TEAM_DEFINITIONS = script:GetCustomProperty("TechTree_TeamDefinitions"):WaitForObject()
 local CURRENCY_DEFINITIONS = script:GetCustomProperty("TechTree_CurrencyDefinitions"):WaitForObject()
 
+-- Player stat panel properties
+local XP_Texts = script:GetCustomProperty("XP_Texts"):WaitForObject()
+local TNL_Texts = script:GetCustomProperty("TNL_Texts"):WaitForObject()
+local Rank = script:GetCustomProperty("Rank"):WaitForObject()
+local NextRank = script:GetCustomProperty("NextRank"):WaitForObject()
+local XPProgressBar = script:GetCustomProperty("XPProgressBar"):WaitForObject()
+local TotalMatches = script:GetCustomProperty("TotalMatches"):WaitForObject()
+local TotalWins = script:GetCustomProperty("TotalWins"):WaitForObject()
+local LongestKillStreak = script:GetCustomProperty("LongestKillStreak"):WaitForObject()
+local TotalDamage = script:GetCustomProperty("TotalDamage"):WaitForObject()
+local Accuracy = script:GetCustomProperty("Accuracy"):WaitForObject()
+local TanksDestroyed = script:GetCustomProperty("TanksDestroyed"):WaitForObject()
+local MoneyAmount = script:GetCustomProperty("MoneyAmount"):WaitForObject()
+local FreeRPAmount = script:GetCustomProperty("FreeRPAmount"):WaitForObject()
+
+-- Tank stat panel properties
+local DamageBar_LVLUP = script:GetCustomProperty("DamageBar_LVLUP"):WaitForObject()
+local DamageBar = script:GetCustomProperty("DamageBar"):WaitForObject()
+local ReloadBar_LVLUP = script:GetCustomProperty("ReloadBar_LVLUP"):WaitForObject()
+local ReloadBar = script:GetCustomProperty("ReloadBar"):WaitForObject()
+local TurretSpeed_LVLUP = script:GetCustomProperty("TurretSpeed_LVLUP"):WaitForObject()
+local TurretBar = script:GetCustomProperty("TurretBar"):WaitForObject()
+local HitPoints_LVLUP = script:GetCustomProperty("HitPoints_LVLUP"):WaitForObject()
+local HitPointsBar = script:GetCustomProperty("HitPointsBar"):WaitForObject()
+local TopSpeed_LVLUP = script:GetCustomProperty("TopSpeed_LVLUP"):WaitForObject()
+local TopSpeedBar = script:GetCustomProperty("TopSpeedBar"):WaitForObject()
+local Acceleration_LVLUP = script:GetCustomProperty("Acceleration_LVLUP"):WaitForObject()
+local AccelerationBar = script:GetCustomProperty("AccelerationBar"):WaitForObject()
+local Traverse_LVLUP = script:GetCustomProperty("Traverse_LVLUP"):WaitForObject()
+local TraverseBar = script:GetCustomProperty("TraverseBar"):WaitForObject()
+local Elevation_LVLUP = script:GetCustomProperty("Elevation_LVLUP"):WaitForObject()
+local ElevationBar = script:GetCustomProperty("ElevationBar"):WaitForObject()
+
 -- UI properties
 local background = script:GetCustomProperty("Background"):WaitForObject()
 local keyBindingToOpen = script:GetCustomProperty("KeyBindingToOpen")
@@ -112,6 +145,10 @@ local HAS_RESEARCH_TEXT = "R"
 local HAS_PURCHASE_TEXT = "P"
 
 ------------------------------------------------------------------------------------
+-- Completed UI references. Remove above ones as they are made obsolete
+
+
+------------------------------------------------------------------------------------
 -- A set of functions handling initializing the tech tree component
 -- Initialization functions --------------------------------------------------------
 function ToggleThisComponent(requestedPlayerState)
@@ -122,7 +159,7 @@ function ToggleThisComponent(requestedPlayerState)
 		Task.Wait(2.5)
 		
 		if savedState ~= thisComponent or displayTanks.visibility == Visibility.FORCE_ON then
-			localPlayer:ClearOverrideCamera()
+			LOCAL_PLAYER:ClearOverrideCamera()
 			return
 		end
 		
@@ -171,12 +208,85 @@ function Init()
 		teamCount = teamCount + 1
 		-- Select the first team as default
 		if not selectedTeam then selectedTeam = v:GetCustomProperty("Id") end
-	end	
+	end
+	
+	-- Initialize player panel
+	PopulatePlayerPanel()
+	PopulateSelectedTankPanel()
+
 end
 
 ---------------------------------------------------------------------------------
 -- A set of functions handling functionality for UI and UI components
 -- UI functions -----------------------------------------------------------------
+function PopulatePlayerPanel()
+	for i, xpText in ipairs(XP_Texts:GetChildren()) do
+		xpText.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.XP))
+	end
+	for i, tnlText in ipairs(TNL_Texts:GetChildren()) do
+		tnlText.text = tostring(UTIL_API.GetXPToNextRank(LOCAL_PLAYER))
+	end
+	Rank.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.RANK_NAME))
+	NextRank.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.RANK_NAME) + 1)
+	XPProgressBar.progress = LOCAL_PLAYER:GetResource(Constants_API.XP) / UTIL_API.GetXPToNextRank(LOCAL_PLAYER)
+	
+	TotalMatches.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.GAMES_PLAYED_RES))
+	TotalWins.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_WINS))
+	LongestKillStreak.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.LARGEST_KILL_STREAK))
+	TotalDamage.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_DAMAGE_RES))
+	Accuracy.text = string.format("%.2f", LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.ACCURACY) / 100) .. "%"
+	TanksDestroyed.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_KILLS))
+	
+	MoneyAmount.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER))
+	for i, child in ipairs(MoneyAmount:GetChildren()) do
+		child.text = child.parent.text
+	end
+	FreeRPAmount.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.FREERP))
+	for i, child in ipairs(FreeRPAmount:GetChildren()) do
+		child.text = child.parent.text
+	end
+end
+
+function PopulateSelectedTankPanel(id)
+	local selectedTankId = id or -1
+	local tankData = {}
+	if(selectedTankId == -1) then -- Assume selection is currently equipped tank
+		local equippedTankId = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource())
+		-- Because resources are saved as integers and we need our Id as a string, we need to convert it and append a "0" if the Id is < than 10
+		local stringTankId = tostring(equippedTankId)
+		if(equippedTankId < 10) then
+			stringTankId = "0" .. tostring(equippedTankId)
+		end
+		tankData = GetTankData(stringTankId)
+		selectedTankId = stringTankId
+	else
+		tankData = GetTankData(id)
+	end
+	
+	HitPointsBar.progress = tonumber(tankData.hitPoints) / UTIL_API.GetHighestHitPoints()
+	
+	DamageBar.progress = tonumber(tankData.damage) / UTIL_API.GetHighestDamage()
+	ReloadBar.progress = tonumber(tankData.reload) / UTIL_API.GetHighestReload()
+	TurretBar.progress = tonumber(tankData.turret) / UTIL_API.GetHighestTurretSpeed()
+	
+	TopSpeedBar.progress = tonumber(tankData.topSpeed) / UTIL_API.GetHighestTopSpeed()
+	AccelerationBar.progress = tonumber(tankData.acceleration) / UTIL_API.GetHighestAcceleration()
+	TraverseBar.progress = tonumber(tankData.traverse) / UTIL_API.GetHighestTraverse()
+	ElevationBar.progress = tonumber(tankData.elevation) / UTIL_API.GetHighestElevation()
+	
+	for i, obj in ipairs(World.FindObjectsByName("AMOUNT_RP_OWNED")) do
+		obj.text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(selectedTankId))))
+	end
+	for i, obj in ipairs(World.FindObjectsByName("AMOUNT_MONEY_OWNED")) do
+		obj.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER))
+	end
+	World.FindObjectByName("AMOUNT_RP_MOBILITY").text = tostring(tankData.mobilityResearchCost)
+	World.FindObjectByName("AMOUNT_MONEY_MOBILITY").text = tostring(tankData.mobilityPurchaseCost)
+	World.FindObjectByName("AMOUNT_RP_FIREPOWER").text = tostring(tankData.weaponResearchCost)
+	World.FindObjectByName("AMOUNT_MONEY_FIREPOWER").text = tostring(tankData.weaponPurchaseCost)
+	World.FindObjectByName("AMOUNT_RP_ARMOR").text = tostring(tankData.armorResearchCost)
+	World.FindObjectByName("AMOUNT_MONEY_ARMOR").text = tostring(tankData.armorPurchaseCost)	
+end
 
 function OpenUI()
 	openSFX:Play()
@@ -398,7 +508,23 @@ function PopulateTank(tank)
 		mobilityResearchCost = tank:GetCustomProperty("MobilityResearchCost"),
 		mobilityPurchaseCost = tank:GetCustomProperty("MobilityPurchaseCost"),
 		prerequisite1 = tank:GetCustomProperty("Prerequisite1") or nil,
-		prerequisite2 = tank:GetCustomProperty("Prerequisite2") or nil
+		prerequisite2 = tank:GetCustomProperty("Prerequisite2") or nil,
+		damage = tank:GetCustomProperty("Damage"),
+		damageUpgraded = tank:GetCustomProperty("DamageUpgraded"),
+		reload = tank:GetCustomProperty("Reload"),
+		reloadUpgraded = tank:GetCustomProperty("ReloadUpgraded"),
+		turret = tank:GetCustomProperty("Turret"),
+		turretUpgraded = tank:GetCustomProperty("TurretUpgraded"),
+		hitPoints = tank:GetCustomProperty("HitPoints"),
+		hitPointsUpgraded = tank:GetCustomProperty("HitPointsUpgraded"),
+		topSpeed = tank:GetCustomProperty("TopSpeed"),
+		topSpeedUpgraded = tank:GetCustomProperty("TopSpeedUpgraded"),
+		acceleration = tank:GetCustomProperty("Acceleration"),
+		accelerationUpgraded = tank:GetCustomProperty("AccelerationUpgraded"),
+		traverse = tank:GetCustomProperty("Traverse"),
+		traverseUpgraded = tank:GetCustomProperty("TraverseUpgraded"),
+		elevation = tank:GetCustomProperty("Elevation"),
+		elevationUpgraded = tank:GetCustomProperty("ElevationUpgraded")
 	}
 end
 
@@ -960,6 +1086,12 @@ function ResetTankDetails()
 		armorPurchaseCost = 0,
 		engineResearchCost = 0,
 		enginePurchaseCost = 0,
+		damage = 0,
+		damageUpgraded = 0,
+		reload = 0,
+		reloadUpgraded = 0,
+		turret = 0,
+		turretUpgraded = 0,
 		currency = ""
 	}
 	upgradeWeapon.visibility = Visibility.FORCE_OFF
@@ -1014,7 +1146,7 @@ function AcceptFreeRP()
 	end
 	useFreeRPPanel.visibility = Visibility.FORCE_OFF
 end
-
+Task.Wait(2)
 Init()
 ResetTankDetails()
 

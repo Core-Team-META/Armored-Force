@@ -288,9 +288,15 @@ end
 	
 function OnDeath(player, damage)
 
-	deathListener:Disconnect()
-	pressedListener:Disconnect()
-	releasedListener:Disconnect()
+	if(deathListener) then
+		deathListener:Disconnect()
+	end
+	if(pressedListener) then
+		pressedListener:Disconnect()
+	end
+	if(releasedListener) then
+		releasedListener:Disconnect()
+	end
 
 	if Object.IsValid(tankAnchor) then
 	

@@ -2,7 +2,7 @@ Assets {
   Id: 5499525573771791819
   Name: "Custom Emissive Glow Transparent_hanging lights"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 86
   CustomMaterialAsset {
     BaseMaterialId: 3702191406046426907
     ParameterOverrides {
