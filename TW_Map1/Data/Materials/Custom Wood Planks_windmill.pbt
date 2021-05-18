@@ -2,7 +2,7 @@ Assets {
   Id: 14264329150417833464
   Name: "Custom Wood Planks_windmill"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 86
   CustomMaterialAsset {
     BaseMaterialId: 6947005568715944180
     ParameterOverrides {
