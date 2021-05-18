@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16636415353835813981
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 15463439290356156719
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1

@@ -819,7 +819,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: 140
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -839,7 +839,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -904,7 +904,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: 100
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -924,7 +924,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -989,7 +989,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: 60
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1009,7 +1009,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1074,7 +1074,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: 20
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1094,7 +1094,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1159,7 +1159,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: -20
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1179,7 +1179,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1244,7 +1244,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: -60
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1264,7 +1264,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1329,7 +1329,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: -100
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1349,7 +1349,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1414,7 +1414,7 @@ Objects {
     Width: 19
     Height: 60
     UIX: -140
-    UIY: -2
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1434,7 +1434,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1577,7 +1577,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: 150
     RenderTransformPivot {
       Anchor {
@@ -1598,7 +1598,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1662,7 +1662,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: 110
     RenderTransformPivot {
       Anchor {
@@ -1683,7 +1683,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1747,7 +1747,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: 70
     RenderTransformPivot {
       Anchor {
@@ -1768,7 +1768,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1832,7 +1832,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: 30
     RenderTransformPivot {
       Anchor {
@@ -1853,7 +1853,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -1917,7 +1917,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: -10
     RenderTransformPivot {
       Anchor {
@@ -1938,7 +1938,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -2002,7 +2002,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: -50
     RenderTransformPivot {
       Anchor {
@@ -2023,7 +2023,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -2087,7 +2087,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: -90
     RenderTransformPivot {
       Anchor {
@@ -2108,7 +2108,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -2172,7 +2172,7 @@ Objects {
   Control {
     Width: 19
     Height: 60
-    UIX: -2
+    UIX: -1
     UIY: -130
     RenderTransformPivot {
       Anchor {
@@ -2193,7 +2193,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 2543686750193076668
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"

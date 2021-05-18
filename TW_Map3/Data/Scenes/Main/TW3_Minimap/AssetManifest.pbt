@@ -43,3 +43,12 @@ Assets {
     AssetId: "UI_Basic_Shape_Square"
   }
 }
+Assets {
+  Id: 2543686750193076668
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
