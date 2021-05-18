@@ -8131,6 +8131,69 @@ Objects {
         SelfId: 15143526552137198037
       }
     }
+    Overrides {
+      Name: "cs:LOCKED_TANK_CARD"
+      ObjectReference {
+        SelfId: 3594295705549066905
+        SubObjectId: 3517184498479757502
+        InstanceId: 4292961954314456140
+        TemplateId: 1556911412059544256
+      }
+    }
+    Overrides {
+      Name: "cs:CONFIRM_TANK_UPGRADE"
+      ObjectReference {
+        SelfId: 9480003103803726430
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_UPGRADE_TURRET"
+      ObjectReference {
+        SelfId: 7249982761216876022
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_UPGRADE_ARMOR"
+      ObjectReference {
+        SelfId: 10984492083084461092
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_UPGRADE_ENGINE"
+      ObjectReference {
+        SelfId: 2252733264540653303
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_ALLIES_T1L"
+      ObjectReference {
+        SelfId: 11148227166343432085
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_ALLIES_T2L"
+      ObjectReference {
+        SelfId: 5693700791414385988
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_ALLIES_T4L"
+      ObjectReference {
+        SelfId: 5015632992202679852
+      }
+    }
+    Overrides {
+      Name: "cs:CONFIRM_WINDOW_CLOSE_BUTTON"
+      ObjectReference {
+        SelfId: 5380650074922356320
+      }
+    }
+    Overrides {
+      Name: "cs:CONFIRM_WINDOW_CONFIRM_BUTTON"
+      ObjectReference {
+        SelfId: 14460394602831913523
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
