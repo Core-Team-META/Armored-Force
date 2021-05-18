@@ -73,39 +73,39 @@ local ALLIES_TANKS = World.FindObjectByName("ALLIES_TANKS")
 local AXIS_TANKS = World.FindObjectByName("AXIS_TANKS")
 
 -- CONNECTING TECH_TREE TANK_CARD BUTTONS
-local BUTTON_ALLIES_T1L = World.FindObjectByName("BUTTON_ALLIES_T1L")
-local BUTTON_ALLIES_T2L = World.FindObjectByName("BUTTON_ALLIES_T2L")
-local BUTTON_ALLIES_T2M_1 = World.FindObjectByName("BUTTON_ALLIES_T2M_1")
-local BUTTON_ALLIES_T2M_2 = World.FindObjectByName("BUTTON_ALLIES_T2M_2")
-local BUTTON_ALLIES_T2D = World.FindObjectByName("BUTTON_ALLIES_T2D")
-local BUTTON_ALLIES_T3M = World.FindObjectByName("BUTTON_ALLIES_T3M")
-local BUTTON_ALLIES_T3H = World.FindObjectByName("BUTTON_ALLIES_T3H")
-local BUTTON_ALLIES_T3H_PREMIUM = World.FindObjectByName("BUTTON_ALLIES_T3H_PREMIUM")
-local BUTTON_ALLIES_T4L = World.FindObjectByName("BUTTON_ALLIES_T4L")
-local BUTTON_ALLIES_T4M_1 = World.FindObjectByName("BUTTON_ALLIES_T4M_1")
-local BUTTON_ALLIES_T4M_2 = World.FindObjectByName("BUTTON_ALLIES_T4M_2")
-local BUTTON_ALLIES_T4M_3 = World.FindObjectByName("BUTTON_ALLIES_T4M_3")
-local BUTTON_ALLIES_T4H_1 = World.FindObjectByName("BUTTON_ALLIES_T4H_1")
-local BUTTON_ALLIES_T4H_2 = World.FindObjectByName("BUTTON_ALLIES_T4H_2")
-local BUTTON_ALLIES_T4H_3 = World.FindObjectByName("BUTTON_ALLIES_T4H_3")
-local BUTTON_ALLIES_T4D = World.FindObjectByName("BUTTON_ALLIES_T4D")
+local BUTTON_ALLIES_T1L = World.FindObjectByName("01")
+local BUTTON_ALLIES_T2L = World.FindObjectByName("02")
+local BUTTON_ALLIES_T2M_1 = World.FindObjectByName("03")
+local BUTTON_ALLIES_T2M_2 = World.FindObjectByName("04")
+local BUTTON_ALLIES_T2D = World.FindObjectByName("07")
+local BUTTON_ALLIES_T3M = World.FindObjectByName("05")
+local BUTTON_ALLIES_T3H = World.FindObjectByName("06")
+local BUTTON_ALLIES_T3H_PREMIUM = World.FindObjectByName("09")
+local BUTTON_ALLIES_T4L = World.FindObjectByName("10")
+local BUTTON_ALLIES_T4M_1 = World.FindObjectByName("11")
+local BUTTON_ALLIES_T4M_2 = World.FindObjectByName("12")
+local BUTTON_ALLIES_T4M_3 = World.FindObjectByName("13")
+local BUTTON_ALLIES_T4H_1 = World.FindObjectByName("14")
+local BUTTON_ALLIES_T4H_2 = World.FindObjectByName("15")
+local BUTTON_ALLIES_T4H_3 = World.FindObjectByName("16")
+local BUTTON_ALLIES_T4D = World.FindObjectByName("17")
 
-local BUTTON_AXIS_T1L = World.FindObjectByName("BUTTON_AXIS_T1L")
-local BUTTON_AXIS_T2L = World.FindObjectByName("BUTTON_AXIS_T2L")
-local BUTTON_AXIS_T2M_1 = World.FindObjectByName("BUTTON_AXIS_T2M_1")
-local BUTTON_AXIS_T2M_2 = World.FindObjectByName("BUTTON_AXIS_T2M_2")
-local BUTTON_AXIS_T2D = World.FindObjectByName("BUTTON_AXIS_T2D")
-local BUTTON_AXIS_T3M = World.FindObjectByName("BUTTON_AXIS_T3M")
-local BUTTON_AXIS_T3H = World.FindObjectByName("BUTTON_AXIS_T3H")
-local BUTTON_AXIS_T3H_PREMIUM = World.FindObjectByName("BUTTON_AXIS_T3H_PREMIUM")
-local BUTTON_AXIS_T4L = World.FindObjectByName("BUTTON_AXIS_T4L")
-local BUTTON_AXIS_T4M_1 = World.FindObjectByName("BUTTON_AXIS_T4M_1")
-local BUTTON_AXIS_T4M_2 = World.FindObjectByName("BUTTON_AXIS_T4M_2")
-local BUTTON_AXIS_T4M_3 = World.FindObjectByName("BUTTON_AXIS_T4M_3")
-local BUTTON_AXIS_T4H_1 = World.FindObjectByName("BUTTON_AXIS_T4H_1")
-local BUTTON_AXIS_T4H_2 = World.FindObjectByName("BUTTON_AXIS_T4H_2")
-local BUTTON_AXIS_T4H_3 = World.FindObjectByName("BUTTON_AXIS_T4H_3")
-local BUTTON_AXIS_T4D = World.FindObjectByName("BUTTON_AXIS_T4D")
+local BUTTON_AXIS_T1L = World.FindObjectByName("18")
+local BUTTON_AXIS_T2L = World.FindObjectByName("19")
+local BUTTON_AXIS_T2M_1 = World.FindObjectByName("20")
+local BUTTON_AXIS_T2M_2 = World.FindObjectByName("21")
+local BUTTON_AXIS_T2D = World.FindObjectByName("22")
+local BUTTON_AXIS_T3M = World.FindObjectByName("23")
+local BUTTON_AXIS_T3H = World.FindObjectByName("24")
+local BUTTON_AXIS_T3H_PREMIUM = World.FindObjectByName("25")
+local BUTTON_AXIS_T4L = World.FindObjectByName("26")
+local BUTTON_AXIS_T4M_1 = World.FindObjectByName("27")
+local BUTTON_AXIS_T4M_2 = World.FindObjectByName("28")
+local BUTTON_AXIS_T4M_3 = World.FindObjectByName("29")
+local BUTTON_AXIS_T4H_1 = World.FindObjectByName("30")
+local BUTTON_AXIS_T4H_2 = World.FindObjectByName("31")
+local BUTTON_AXIS_T4H_3 = World.FindObjectByName("32")
+local BUTTON_AXIS_T4D = World.FindObjectByName("33")
 
 -- CONNECTING TECH_TREE TANK_CARD FRAMES
 local FRAME_ALLIES_T1L = World.FindObjectByName("FRAME_ALLIES_T1L")
@@ -879,6 +879,17 @@ end
 function CLICKED_UPGRADE_ENGINE(BUTTON_UPGRADE_ENGINE)
 	BUTTON_UPGRADE_ENGINE_HOVER.visibility = Visibility.FORCE_OFF
 	BUTTON_UPGRADE_ENGINE_PRESSED.visibility = Visibility.FORCE_ON
+	--[[
+	TOGGLE_ENGINE_UPGRADE_CONFIRM_OPEN()
+	SFX_CLICK:Play()
+	Task.Wait(0.5)
+	BUTTON_UPGRADE_ENGINE_PRESSED.visibility = Visibility.FORCE_OFF
+	Task.Wait(0.5)
+	TOGGLE_ENGINE_UPGRADE_CONFIRM_CLOSE()
+	--]]
+end
+
+function ShowEngineUpgrade()
 	TOGGLE_ENGINE_UPGRADE_CONFIRM_OPEN()
 	SFX_CLICK:Play()
 	Task.Wait(0.5)
@@ -902,6 +913,17 @@ end
 function CLICKED_UPGRADE_TURRET(BUTTON_UPGRADE_TURRET)
 	BUTTON_UPGRADE_TURRET_HOVER.visibility = Visibility.FORCE_OFF
 	BUTTON_UPGRADE_TURRET_PRESSED.visibility = Visibility.FORCE_ON
+	--[[
+	TOGGLE_TURRET_UPGRADE_CONFIRM_OPEN()
+	SFX_CLICK:Play()
+	Task.Wait(0.5)
+	BUTTON_UPGRADE_TURRET_PRESSED.visibility = Visibility.FORCE_OFF
+	Task.Wait(0.5)
+	TOGGLE_TURRET_UPGRADE_CONFIRM_CLOSE()
+	--]]
+end
+
+function ShowWeaponUpgrade()
 	TOGGLE_TURRET_UPGRADE_CONFIRM_OPEN()
 	SFX_CLICK:Play()
 	Task.Wait(0.5)
@@ -925,6 +947,17 @@ end
 function CLICKED_UPGRADE_SHELL(BUTTON_UPGRADE_SHELL)
 	BUTTON_UPGRADE_SHELL_HOVER.visibility = Visibility.FORCE_OFF
 	BUTTON_UPGRADE_SHELL_PRESSED.visibility = Visibility.FORCE_ON
+	--[[
+	TOGGLE_SHELL_UPGRADE_CONFIRM_OPEN()
+	SFX_CLICK:Play()
+	Task.Wait(0.5)
+	BUTTON_UPGRADE_SHELL_PRESSED.visibility = Visibility.FORCE_OFF
+	Task.Wait(0.5)
+	TOGGLE_SHELL_UPGRADE_CONFIRM_CLOSE()
+	--]]
+end
+
+function ShowArmorUpgrade()
 	TOGGLE_SHELL_UPGRADE_CONFIRM_OPEN()
 	SFX_CLICK:Play()
 	Task.Wait(0.5)
@@ -3253,3 +3286,7 @@ BUTTON_AXIS_T4H_1.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_1)
 BUTTON_AXIS_T4H_2.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_2)
 BUTTON_AXIS_T4H_3.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_3)
 BUTTON_AXIS_T4D.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4D)
+
+Events.Connect("WeaponUpgradeSuccessful", ShowWeaponUpgrade)
+Events.Connect("ArmorUpgradeSuccessful", ShowArmorUpgrade)
+Events.Connect("EngineUpgradeSuccessful", ShowEngineUpgrade)
