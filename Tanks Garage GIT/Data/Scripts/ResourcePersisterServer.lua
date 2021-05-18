@@ -311,7 +311,7 @@ function SetTankProgressionDataForServer(dataString, player)
     end     
     
     player.serverUserData.techTreeProgress = progressionTable
-   
+   UTIL_API.TablePrint(player.serverUserData.techTreeProgress)
 end
 
 function ConvertBoolToString(boolean)

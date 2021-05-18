@@ -90,6 +90,18 @@ local useFreeRPPanel = script:GetCustomProperty("UseFreeRPPanel"):WaitForObject(
 local freeRPNo = script:GetCustomProperty("No"):WaitForObject()
 local freeRPYes = script:GetCustomProperty("Yes"):WaitForObject()
 local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
+local CONFIRM_WINDOW_CLOSE_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CLOSE_BUTTON"):WaitForObject()
+local CONFIRM_WINDOW_CONFIRM_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CONFIRM_BUTTON"):WaitForObject()
+
+local LOCKED_TANK_CARD = script:GetCustomProperty("LOCKED_TANK_CARD"):WaitForObject()
+local CONFIRM_TANK_UPGRADE = script:GetCustomProperty("CONFIRM_TANK_UPGRADE"):WaitForObject()
+local BUTTON_UPGRADE_TURRET = script:GetCustomProperty("BUTTON_UPGRADE_TURRET"):WaitForObject()
+local BUTTON_UPGRADE_ARMOR = script:GetCustomProperty("BUTTON_UPGRADE_ARMOR"):WaitForObject()
+local BUTTON_UPGRADE_ENGINE = script:GetCustomProperty("BUTTON_UPGRADE_ENGINE"):WaitForObject()
+
+local BUTTON_ALLIES_T1L = script:GetCustomProperty("BUTTON_ALLIES_T1L"):WaitForObject()
+local BUTTON_ALLIES_T2L = script:GetCustomProperty("BUTTON_ALLIES_T2L"):WaitForObject()
+local BUTTON_ALLIES_T4L = script:GetCustomProperty("BUTTON_ALLIES_T4L"):WaitForObject()
 ------------------------------------------------------------------------------------------------------
 
 local ALLIES_TEAM = script:GetCustomProperty("AlliesTeam")
@@ -143,6 +155,8 @@ local RESEARCHED_TEXT = "RESEARCHED"
 -- Placeholders until UI is finalized
 local HAS_RESEARCH_TEXT = "R"
 local HAS_PURCHASE_TEXT = "P"
+
+local confirmButtonFunction = ""
 
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
@@ -241,6 +255,7 @@ function PopulatePlayerPanel()
 	for i, child in ipairs(MoneyAmount:GetChildren()) do
 		child.text = child.parent.text
 	end
+	
 	FreeRPAmount.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.FREERP))
 	for i, child in ipairs(FreeRPAmount:GetChildren()) do
 		child.text = child.parent.text
@@ -250,6 +265,7 @@ end
 function PopulateSelectedTankPanel(id)
 	local selectedTankId = id or -1
 	local tankData = {}
+	local isSelection = tonumber(selectedTankId) > 0
 	if(selectedTankId == -1) then -- Assume selection is currently equipped tank
 		local equippedTankId = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource())
 		-- Because resources are saved as integers and we need our Id as a string, we need to convert it and append a "0" if the Id is < than 10
@@ -263,17 +279,46 @@ function PopulateSelectedTankPanel(id)
 		tankData = GetTankData(id)
 	end
 	
-	HitPointsBar.progress = tonumber(tankData.hitPoints) / UTIL_API.GetHighestHitPoints()
+	tankDetails = tankData
 	
-	DamageBar.progress = tonumber(tankData.damage) / UTIL_API.GetHighestDamage()
-	ReloadBar.progress = tonumber(tankData.reload) / UTIL_API.GetHighestReload()
-	TurretBar.progress = tonumber(tankData.turret) / UTIL_API.GetHighestTurretSpeed()
+	local playerTankData = {}
 	
-	TopSpeedBar.progress = tonumber(tankData.topSpeed) / UTIL_API.GetHighestTopSpeed()
-	AccelerationBar.progress = tonumber(tankData.acceleration) / UTIL_API.GetHighestAcceleration()
-	TraverseBar.progress = tonumber(tankData.traverse) / UTIL_API.GetHighestTraverse()
-	ElevationBar.progress = tonumber(tankData.elevation) / UTIL_API.GetHighestElevation()
+	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tonumber(tank.id) == tonumber(selectedTankId)) then
+			playerTankData.weaponProgress = tank.weaponProgress
+			playerTankData.armorProgress = tank.weaponProgress
+			playerTankData.engineProgress = tank.weaponProgress
+		end
+	end
+
+	if(tonumber(playerTankData.armorProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+		HitPointsBar.progress = tonumber(tankData.hitPointsUpgraded) / UTIL_API.GetHighestHitPoints()
+	else
+		HitPointsBar.progress = tonumber(tankData.hitPoints) / UTIL_API.GetHighestHitPoints()
+	end
 	
+	if(tonumber(playerTankData.weaponProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+		DamageBar.progress = tonumber(tankData.damageUpgraded) / UTIL_API.GetHighestDamage()
+		ReloadBar.progress = tonumber(tankData.reloadUpgraded) / UTIL_API.GetHighestReload()
+		TurretBar.progress = tonumber(tankData.turretUpgraded) / UTIL_API.GetHighestTurretSpeed()
+	else
+		DamageBar.progress = tonumber(tankData.damage) / UTIL_API.GetHighestDamage()
+		ReloadBar.progress = tonumber(tankData.reload) / UTIL_API.GetHighestReload()
+		TurretBar.progress = tonumber(tankData.turret) / UTIL_API.GetHighestTurretSpeed()
+	end
+	
+	if(tonumber(playerTankData.engineProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+		TopSpeedBar.progress = tonumber(tankData.topSpeedUpgraded) / UTIL_API.GetHighestTopSpeed()
+		AccelerationBar.progress = tonumber(tankData.accelerationUpgraded) / UTIL_API.GetHighestAcceleration()
+		TraverseBar.progress = tonumber(tankData.traverseUpgraded) / UTIL_API.GetHighestTraverse()
+		ElevationBar.progress = tonumber(tankData.elevationUpgraded) / UTIL_API.GetHighestElevation()
+	else
+		TopSpeedBar.progress = tonumber(tankData.topSpeed) / UTIL_API.GetHighestTopSpeed()
+		AccelerationBar.progress = tonumber(tankData.acceleration) / UTIL_API.GetHighestAcceleration()
+		TraverseBar.progress = tonumber(tankData.traverse) / UTIL_API.GetHighestTraverse()
+		ElevationBar.progress = tonumber(tankData.elevation) / UTIL_API.GetHighestElevation()
+	end
+		
 	for i, obj in ipairs(World.FindObjectsByName("AMOUNT_RP_OWNED")) do
 		obj.text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(selectedTankId))))
 	end
@@ -286,6 +331,172 @@ function PopulateSelectedTankPanel(id)
 	World.FindObjectByName("AMOUNT_MONEY_FIREPOWER").text = tostring(tankData.weaponPurchaseCost)
 	World.FindObjectByName("AMOUNT_RP_ARMOR").text = tostring(tankData.armorResearchCost)
 	World.FindObjectByName("AMOUNT_MONEY_ARMOR").text = tostring(tankData.armorPurchaseCost)	
+	
+	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
+		if(t.id == tostring(selectedTankId)) then	
+			tankData.researchedTank = t.researched
+			tankData.purchasedTank = t.purchased
+			tankData.weaponProgress = t.weaponProgress
+			tankData.armorProgress = t.armorProgress
+			tankData.engineProgress = t.engineProgress
+		end
+	end
+	
+	if(isSelection) then
+		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_ON
+		local prereqs = GetPrerequisiteRPValues(selectedTankId)
+		PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
+	end
+	
+	LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF	
+	
+	if(not tankDetails.purchasedTank) then
+		World.FindObjectByName("UPGRADE_TURRET").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("UPGRADE_ENGINE").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("UPGRADE_SHELL").visibility = Visibility.FORCE_OFF
+	else
+	
+		if(tonumber(tankDetails.weaponProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+			World.FindObjectByName("UPGRADE_TURRET").visibility = Visibility.FORCE_OFF
+		else
+			World.FindObjectByName("UPGRADE_TURRET").visibility = Visibility.FORCE_ON
+		end
+		
+		if(tonumber(tankDetails.armorProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+			World.FindObjectByName("UPGRADE_SHELL").visibility = Visibility.FORCE_OFF
+		else
+			World.FindObjectByName("UPGRADE_SHELL").visibility = Visibility.FORCE_ON
+		end
+		
+		if(tonumber(tankDetails.engineProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+			World.FindObjectByName("UPGRADE_ENGINE").visibility = Visibility.FORCE_OFF
+		else
+			World.FindObjectByName("UPGRADE_ENGINE").visibility = Visibility.FORCE_ON
+		end
+	end
+	
+end
+
+function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
+	-- Change title
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SHADOW").text = "CONFIRM " .. tankData.name .. " PURCHASE" 
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SECONDARY").text = "CONFIRM " .. tankData.name .. " PURCHASE"
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_LIGHT").text = "CONFIRM " .. tankData.name .. " PURCHASE"
+	
+	local cost = tankData.researchCost
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("PRICE_1").text = tostring(cost)
+	local rpPayment = 0
+	if(prereqs[1]) then
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = tostring(prereqs[1].rp)
+		if(prereqs[1].rp > tankData.researchCost) then
+			rpPayment = tankData.researchCost
+			cost = 0
+		else
+			rpPayment = tonumber(prereqs[1].rp)
+			cost = cost - rpPayment
+		end		
+	else
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = "0"
+	end	
+	
+	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+	
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_1").text = tostring(rpPayment)
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_2").text = tostring(freeRP)	
+	
+	if(cost > 0) then		
+		if(freeRP > cost) then
+			CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_2").text = tostring(freeRP - cost)
+			cost = 0
+		else
+			CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_2").text = tostring(freeRP)
+			cost = cost - freeRP
+		end		
+	else
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_2").text = "0"
+	end
+	
+	local silverCost = tonumber(tankData.purchaseCost)
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("PRICE_3").text = tostring(silverCost)
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_3").text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER))
+	if(LOCAL_PLAYER:GetResource(Constants_API.SILVER) > silverCost) then
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_3").text = tostring(silverCost)
+		silverCost = 0
+	else
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_3").text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER) - silverCost)
+		silverCost = LOCAL_PLAYER:GetResource(Constants_API.SILVER) - silverCost
+	end
+	
+	local button = CONFIRM_TANK_UPGRADE:FindDescendantByName("CONFIRM_WINDOW_CONFIRM_BUTTON")
+		
+	if(tankData.purchasedTank) then
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_OFF
+		for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_SHADOW")) do
+			childText.text = "EQUIP"
+		end
+		for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_DARK")) do
+			childText.text = "EQUIP"
+		end
+		for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_LIGHT")) do
+			childText.text = "EQUIP"
+		end
+		confirmButtonFunction = "EQUIP"
+	else
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_ON
+		if(cost > 0 or silverCost > 0) then
+			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_SHADOW")) do
+				childText.text = "CAN'T AFFORD"
+			end
+			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_DARK")) do
+				childText.text = "CAN'T AFFORD"
+			end
+			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_LIGHT")) do
+				childText.text = "CAN'T AFFORD"
+			end
+		else
+			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_SHADOW")) do
+				childText.text = "PURCHASE"
+			end
+			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_DARK")) do
+				childText.text = "PURCHASE"
+			end
+			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_LIGHT")) do
+				childText.text = "PURCHASE"
+			end
+			confirmButtonFunction = "PURCHASE"
+		end
+	end
+	
+end
+
+function ConfirmButtonClicked()
+	if(confirmButtonFunction == "EQUIP") then
+		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
+		print(tankDetails.id)
+		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
+	elseif(confirmButtonFunction == "PURCHASE") then
+		local prereqs = GetPrerequisiteRPValues(tankDetails.id)
+		Events.BroadcastToServer("PurchaseTank", tankDetails.id, prereqs)
+		UI.PrintToScreen(tankDetails.name .. " purchased.")			
+		for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+			if(tank.id == tankDetails.id) then
+				tank.purchased = true
+				tank.researched = true
+				if(tankDetails.currency == Constants_API.GOLD) then
+					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+				end
+			end
+		end
+		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
+	else
+		-- Most likely in can't afford state
+	end
+end
+
+function CloseConfirmationWindow()
+	CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 end
 
 function OpenUI()
@@ -619,6 +830,16 @@ function GetTierCount(tier)
 	end
 end
 
+function PurchaseTank()
+	local purchasedId = tankDetails.id
+	local purchaseCost = tankDetails.purchaseCost
+	local researchCost = tankDetails.researchCost
+	
+	local tankRPUsed = UTIL_API.GetTankRPString(purchasedID)
+	
+	Events.BroadcastToServer("PurchaseTank", purchasedId)
+end
+
 -- Upgrade the tank's progress
 function UpgradeTank()
 	if(tankDetails.purchasedTank) then
@@ -690,165 +911,137 @@ end
 
 -- Upgrade the weapon progress for the tank loaded into tankDetails
 function UpgradeWeapon()
-	if(tankDetails.weaponProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
-		print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
-		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-		if(silver < tankDetails.weaponPurchaseCost) then
-			-- DEBUG
-			ShowNotEnoughCurrencyMessage()			
-		else
-			Events.BroadcastToServer("PurchaseWeapon", tankDetails.id)
-			-- TODO: Play SFX/Message
-			UI.PrintToScreen(tankDetails.name .. " weapon purchased.")
-			PopulateCurrencyUI()
-			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-				if(tank.id == tankDetails.id) then
-					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-				end
-			end
-			CloseTechTreeModal()		
-		end
-	else
-		researchingName = "Weapon"
-		researchingProgress = tankDetails.weaponProgress	
-		print("Research cost: " .. tankDetails.weaponResearchCost)
-		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
-		if(rp < tankDetails.weaponResearchCost) then
-			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
-			if(freeRP >= tankDetails.weaponResearchCost) then
-				-- Bring up modal asking if user wants to use Free RP
-				useFreeRPPanel.visibility = Visibility.FORCE_ON
-			else
-				-- DEBUG
-				ShowNotEnoughRPMessage()
-			end
-		else		
-			local event = Events.BroadcastToServer("ResearchWeapon", tankDetails.id, false)
-			if(event == BroadcastEventResultCode.SUCCESS) then				
-				-- TODO: Play SFX/Message				
-				UI.PrintToScreen(tankDetails.name .. " weapon successfully researched.")
-				PopulateCurrencyUI()
-				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-					if(tank.id == tankDetails.id) then
-						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-					end
-				end
-				CloseTechTreeModal()
-			else
-				-- TODO: Better prompt for user
-				UI.PrintToScreen("There was an error sending the event. Please try again.")
-			end
-		end		
+	print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
+	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+	if(silver < tankDetails.weaponPurchaseCost) then
+		-- DEBUG
+		ShowNotEnoughCurrencyMessage()
+		return
 	end
+	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
+	local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
+	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+	
+	if(tankRP + freeRP < tankDetails.weaponResearchCost) then
+		ShowNotEnoughRPMessage()
+		return
+	end
+	
+	Events.BroadcastToServer("PurchaseWeapon", tankDetails.id)
+
+	UI.PrintToScreen(tankDetails.name .. " weapon purchased.")
+	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tank.id == tankDetails.id) then
+			tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+		end
+	end
+	PopulateSelectedTankPanel(tankDetails.id)		
+	
 	PopulateCurrencyUI()
+end
+
+function HoverWeapon()
+	DamageBar_LVLUP.visibility = Visibility.FORCE_ON
+	DamageBar_LVLUP.progress = tonumber(tankDetails.damageUpgraded) / UTIL_API.GetHighestDamage()
+	ReloadBar_LVLUP.visibility = Visibility.FORCE_ON
+	ReloadBar_LVLUP.progress = tonumber(tankDetails.reloadUpgraded) / UTIL_API.GetHighestReload()
+	TurretSpeed_LVLUP.visibility = Visibility.FORCE_ON
+	TurretSpeed_LVLUP.progress = tonumber(tankDetails.turretUpgraded) / UTIL_API.GetHighestTurretSpeed()
+end
+
+function UnhoverWeapon()
+	DamageBar_LVLUP.visibility = Visibility.FORCE_OFF
+	ReloadBar_LVLUP.visibility = Visibility.FORCE_OFF
+	TurretSpeed_LVLUP.visibility = Visibility.FORCE_OFF
 end
 
 -- Upgrade the armor progress for the tank loaded into tankDetails
 function UpgradeArmor()
-	if(tankDetails.armorProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
-		print("Purchase cost: " .. tankDetails.armorPurchaseCost)
-		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-		if(silver < tankDetails.armorPurchaseCost) then
-			-- DEBUG
-			ShowNotEnoughCurrencyMessage()			
-		else
-			Events.BroadcastToServer("PurchaseArmor", tankDetails.id)
-			-- TODO: Play SFX/Message
-			UI.PrintToScreen(tankDetails.name .. " armor purchased.")
-			PopulateCurrencyUI()
-			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-				if(tank.id == tankDetails.id) then
-					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-				end
-			end
-			CloseTechTreeModal()		
-		end
-	else
-		researchingName = "Armor"
-		researchingProgress = tankDetails.armorProgress
-		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
-		if(rp < tankDetails.armorResearchCost) then
-			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
-			if(freeRP >= tankDetails.armorResearchCost) then
-				-- Bring up modal asking if user wants to use Free RP
-				useFreeRPPanel.visibility = Visibility.FORCE_ON
-			else
-				-- DEBUG
-				ShowNotEnoughRPMessage()
-			end
-		else		
-			local event = Events.BroadcastToServer("ResearchArmor", tankDetails.id, false)
-			if(event == BroadcastEventResultCode.SUCCESS) then				
-				-- TODO: Play SFX/Message				
-				UI.PrintToScreen(tankDetails.name .. " armor successfully researched.")
-				PopulateCurrencyUI()
-				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-					if(tank.id == tankDetails.id) then
-						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-					end
-				end
-				CloseTechTreeModal()
-			else
-				-- TODO: Better prompt for user
-				UI.PrintToScreen("There was an error sending the event. Please try again.")
-			end
-		end		
+	print("Purchase cost: " .. tankDetails.armorPurchaseCost)
+	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+	if(silver < tankDetails.armorPurchaseCost) then
+		-- DEBUG
+		ShowNotEnoughCurrencyMessage()
+		return
 	end
+	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
+	local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
+	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+	
+	if(tankRP + freeRP < tankDetails.armorResearchCost) then
+		ShowNotEnoughRPMessage()
+		return
+	end
+	
+	Events.BroadcastToServer("PurchaseArmor", tankDetails.id)
+
+	UI.PrintToScreen(tankDetails.name .. " armor purchased.")
+	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tank.id == tankDetails.id) then
+			tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+		end
+	end
+	PopulateSelectedTankPanel(tankDetails.id)		
+	
 	PopulateCurrencyUI()
+end
+
+function HoverArmor()
+	HitPoints_LVLUP.visibility = Visibility.FORCE_ON
+	HitPoints_LVLUP.progress = tonumber(tankDetails.hitPointsUpgraded) / UTIL_API.GetHighestHitPoints()
+end
+
+function UnhoverArmor()
+	HitPoints_LVLUP.visibility = Visibility.FORCE_OFF
 end
 
 -- Upgrade the engine progress for the tank loaded into tankDetails
 function UpgradeEngine()
-	if(tankDetails.engineProgress == Constants_API.UPGRADE_PROGRESS.RESEARCHED) then
-		print("Purchase cost: " .. tankDetails.enginePurchaseCost)
-		local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
-		if(silver < tankDetails.enginePurchaseCost) then
-			-- DEBUG
-			ShowNotEnoughCurrencyMessage()			
-		else
-			Events.BroadcastToServer("PurchaseEngine", tankDetails.id)
-			-- TODO: Play SFX/Message
-			UI.PrintToScreen(tankDetails.name .. " engine purchased.")
-			PopulateCurrencyUI()
-			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-				if(tank.id == tankDetails.id) then
-					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-				end
-			end
-			CloseTechTreeModal()		
-		end
-	else
-		researchingName = "Engine"
-		researchingProgress = tankDetails.engineProgress	
-		local rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankDetails.id)))
-		if(rp < tankDetails.engineResearchCost) then
-			local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
-			if(freeRP >= tankDetails.engineResearchCost) then
-				-- Bring up modal asking if user wants to use Free RP
-				useFreeRPPanel.visibility = Visibility.FORCE_ON
-			else
-				-- DEBUG
-				ShowNotEnoughRPMessage()
-			end
-		else		
-			local event = Events.BroadcastToServer("ResearchEngine", tankDetails.id, false)
-			if(event == BroadcastEventResultCode.SUCCESS) then				
-				-- TODO: Play SFX/Message				
-				UI.PrintToScreen(tankDetails.name .. " engine successfully researched.")
-				PopulateCurrencyUI()
-				for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-					if(tank.id == tankDetails.id) then
-						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.RESEARCHED
-					end
-				end
-				CloseTechTreeModal()
-			else
-				-- TODO: Better prompt for user
-				UI.PrintToScreen("There was an error sending the event. Please try again.")
-			end
-		end		
+	print("Purchase cost: " .. tankDetails.mobilityPurchaseCost)
+	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+	if(silver < tankDetails.mobilityPurchaseCost) then
+		-- DEBUG
+		ShowNotEnoughCurrencyMessage()
+		return
 	end
+	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
+	local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
+	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
+	
+	if(tankRP + freeRP < tankDetails.mobilityResearchCost) then
+		ShowNotEnoughRPMessage()
+		return
+	end
+	
+	Events.BroadcastToServer("PurchaseEngine", tankDetails.id)
+
+	UI.PrintToScreen(tankDetails.name .. " engine purchased.")
+	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tank.id == tankDetails.id) then
+			tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+		end
+	end
+	PopulateSelectedTankPanel(tankDetails.id)		
+	
 	PopulateCurrencyUI()
+end
+
+function HoverEngine()
+	TopSpeed_LVLUP.visibility = Visibility.FORCE_ON
+	Acceleration_LVLUP.visibility = Visibility.FORCE_ON
+	Traverse_LVLUP.visibility = Visibility.FORCE_ON
+	Elevation_LVLUP.visibility = Visibility.FORCE_ON
+	TopSpeed_LVLUP.progress = tonumber(tankDetails.topSpeedUpgraded) / UTIL_API.GetHighestTopSpeed()
+	Acceleration_LVLUP.progress = tonumber(tankDetails.accelerationUpgraded) / UTIL_API.GetHighestAcceleration()
+	Traverse_LVLUP.progress = tonumber(tankDetails.traverseUpgraded) / UTIL_API.GetHighestTraverse()
+	Elevation_LVLUP.progress = tonumber(tankDetails.elevationUpgraded) / UTIL_API.GetHighestElevation()
+end
+
+function UnhoverEngine()
+	TopSpeed_LVLUP.visibility = Visibility.FORCE_OFF
+	Acceleration_LVLUP.visibility = Visibility.FORCE_OFF
+	Traverse_LVLUP.visibility = Visibility.FORCE_OFF
+	Elevation_LVLUP.visibility = Visibility.FORCE_OFF
 end
 
 -- Returns a simple table that holds data for a given tank's pre-requisites. Used to determine which tank's RP can be used to research the tank
@@ -923,17 +1116,7 @@ function PopulateDetailsModal(tank)
 	local maxDepth = tank:GetCustomProperty("MaxDepth")
 	
 	-- Get the player's tank data
-	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
-		if(t.id == tank:GetCustomProperty("ID")) then	
-			tankDetails.id = t.id
-			tankDetails.name = tank:GetCustomProperty("Name")
-			tankDetails.researchedTank = t.researched
-			tankDetails.purchasedTank = t.purchased
-			tankDetails.weaponProgress = t.weaponProgress
-			tankDetails.armorProgress = t.armorProgress
-			tankDetails.engineProgress = t.engineProgress
-		end
-	end
+	LoadProgressIntoTankDetails()
 	
 	-- Populate the UI with tank data based on player's progression
 	tankDetails.tankResearchCost = tank:GetCustomProperty("ResearchCost")
@@ -1047,7 +1230,7 @@ function CanTankBeResearched(id)
 				end
 			end
 			-- If we can research at this point, then there's no point in checking pre-req 2
-			if(CanTankBeResearched) then return CanTankBeResearched end
+			if(canBeResearched) then return canBeResearched end
 			
 			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
 				-- Tank has two pre-reqs, load up data for this one
@@ -1060,13 +1243,25 @@ function CanTankBeResearched(id)
 					canBeResearched = false
 				end			
 			end
-		else
-			-- Tank has no prereqs, can be researched
-			return true
 		end
 	end
 	return canBeResearched
 end	
+
+function LoadProgressIntoTankDetails()
+	-- Get the player's tank data
+	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
+		if(t.id == tank:GetCustomProperty("ID")) then	
+			tankDetails.id = t.id
+			tankDetails.name = tank:GetCustomProperty("Name")
+			tankDetails.researchedTank = t.researched
+			tankDetails.purchasedTank = t.purchased
+			tankDetails.weaponProgress = t.weaponProgress
+			tankDetails.armorProgress = t.armorProgress
+			tankDetails.engineProgress = t.engineProgress
+		end
+	end
+end
 
 -- Resets the properties used to handle the information about the selected tank
 function ResetTankDetails()
@@ -1114,6 +1309,64 @@ function GetTankData(id)
 	end
 	warn("Tank not found with Id: " .. tostring(id))
 	return nil
+end
+
+function SelectTank(button)
+	PopulateSelectedTankPanel(button.name)
+end
+
+function HoverTank(button)
+	local tankData = {}
+	tankData = GetTankData(button.name)		
+	
+	-- Get pre req
+	local rp = 0
+	
+	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do		
+		if(t.id == tostring(button.name)) then	
+			tankData.researchedTank = t.researched
+			tankData.purchasedTank = t.purchased
+			tankData.weaponProgress = t.weaponProgress
+			tankData.armorProgress = t.armorProgress
+			tankData.engineProgress = t.engineProgress
+		end
+	end
+	
+	if not tankData.researchedTank then
+		LOCKED_TANK_CARD.visibility = Visibility.FORCE_ON
+		PopulateLockedTankCard(tankData)
+	else
+		LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF
+	end
+end
+
+function PopulateLockedTankCard(tankData)
+	LOCKED_TANK_CARD:FindDescendantByName("HOVERED_TANK_NAME").text = tankData.name
+	local canBeResearched = CanTankBeResearched(tankData.id)
+	if(canBeResearched) then
+		-- TODO check for premium tank
+		local prereqs = GetPrerequisiteRPValues(tankData.id)
+		if(prereqs[1]) then
+			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").text = tostring(prereqs[1].rp) .. " / " .. tostring(tankData.researchCost)
+			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").progress = prereqs[1].rp / tankData.researchCost
+			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = prereqs[1].name .. " Research Points"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_ON
+			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_ON
+			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_ON
+			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").visibility = Visibility.FORCE_ON
+			LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Play previous Tanks to gain Research Points for this tank."
+		end
+	else
+		LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_OFF
+		LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_OFF
+		LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_OFF
+		LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").visibility = Visibility.FORCE_OFF
+		LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Unlock pre-requisite tanks in order to research this tank."
+	end
+end
+
+function UnhoverTank()
+	LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF
 end
 
 -- Function when user denies use of Free RP to research
@@ -1176,3 +1429,117 @@ usePrerequisite1.clickedEvent:Connect(UsePrerequisite1)
 usePrerequisite1.hoveredEvent:Connect(ButtonHover)
 usePrerequisite2.clickedEvent:Connect(UsePrerequisite2)
 usePrerequisite2.hoveredEvent:Connect(ButtonHover)
+
+BUTTON_UPGRADE_TURRET.clickedEvent:Connect(UpgradeWeapon)
+BUTTON_UPGRADE_ARMOR.clickedEvent:Connect(UpgradeArmor)
+BUTTON_UPGRADE_ENGINE.clickedEvent:Connect(UpgradeEngine)
+
+BUTTON_UPGRADE_TURRET.hoveredEvent:Connect(HoverWeapon)
+BUTTON_UPGRADE_ARMOR.hoveredEvent:Connect(HoverArmor)
+BUTTON_UPGRADE_ENGINE.hoveredEvent:Connect(HoverEngine)
+
+BUTTON_UPGRADE_TURRET.unhoveredEvent:Connect(UnhoverWeapon)
+BUTTON_UPGRADE_ARMOR.unhoveredEvent:Connect(UnhoverArmor)
+BUTTON_UPGRADE_ENGINE.unhoveredEvent:Connect(UnhoverEngine)
+
+World.FindObjectByName("01").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("02").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("03").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("04").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("05").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("06").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("07").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("09").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("10").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("11").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("12").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("13").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("14").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("15").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("16").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("17").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("18").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("19").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("20").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("21").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("22").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("23").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("24").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("25").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("26").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("27").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("28").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("29").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("30").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("31").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("32").clickedEvent:Connect(SelectTank)
+World.FindObjectByName("33").clickedEvent:Connect(SelectTank)
+
+CONFIRM_WINDOW_CLOSE_BUTTON.clickedEvent:Connect(CloseConfirmationWindow)
+CONFIRM_WINDOW_CONFIRM_BUTTON.clickedEvent:Connect(ConfirmButtonClicked)
+
+World.FindObjectByName("01").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("02").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("03").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("04").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("05").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("06").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("07").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("09").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("10").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("11").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("12").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("13").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("14").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("15").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("16").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("17").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("18").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("19").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("20").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("21").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("22").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("23").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("24").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("25").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("26").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("27").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("28").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("29").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("30").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("31").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("32").hoveredEvent:Connect(HoverTank)
+World.FindObjectByName("33").hoveredEvent:Connect(HoverTank)
+
+World.FindObjectByName("01").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("02").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("03").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("04").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("05").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("06").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("07").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("09").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("10").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("11").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("12").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("13").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("14").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("15").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("16").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("17").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("18").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("19").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("20").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("21").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("22").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("23").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("24").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("25").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("26").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("27").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("28").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("29").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("30").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("31").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("32").unhoveredEvent:Connect(UnhoverTank)
+World.FindObjectByName("33").unhoveredEvent:Connect(UnhoverTank)
