@@ -2,7 +2,7 @@ Assets {
   Id: 803013199804260715
   Name: "TW2_RockSandMixHighDensity"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 86
   CustomMaterialAsset {
     BaseMaterialId: 10187833625336657848
     ParameterOverrides {

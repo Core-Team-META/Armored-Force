@@ -16,3 +16,30 @@ Assets {
     AssetId: "sm_plane_1m_001"
   }
 }
+Assets {
+  Id: 10491750277735809258
+  Name: "Military Frame 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Frame_002"
+  }
+}
+Assets {
+  Id: 10043949526674053130
+  Name: "Frame Outlined 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_020"
+  }
+}
+Assets {
+  Id: 7387673503276873905
+  Name: "UI Basic Shape Square"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Square"
+  }
+}

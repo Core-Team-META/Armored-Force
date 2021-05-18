@@ -2,7 +2,7 @@ Assets {
   Id: 4693709835421441385
   Name: "TW3_Grass2"
   PlatformAssetType: 13
-  SerializationVersion: 85
+  SerializationVersion: 86
   CustomMaterialAsset {
     BaseMaterialId: 908558108835757030
     ParameterOverrides {
