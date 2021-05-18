@@ -4810,7 +4810,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Tier"
-      Int: 3
+      Int: 2
     }
     Overrides {
       Name: "cs:Type"
@@ -4942,7 +4942,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Prerequisite1"
-      String: "03"
+      String: "01"
     }
   }
   Collidable_v2 {

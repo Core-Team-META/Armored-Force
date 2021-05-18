@@ -8,28 +8,74 @@ local techTreeContents = script:GetCustomProperty("TechTree_Contents"):WaitForOb
 local TANK_LIST = techTreeContents:GetChildren()
 --
 
-function PurchaseTank(player, id, currency)
+function PurchaseTank(player, id, prereqs)
 	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
 		if(v:GetCustomProperty("ID") == id) then
 			print("DEBUG: Found match")
-			local cost = v:GetCustomProperty("PurchaseCost")
-			local currencyAmount = player:GetResource(currency)
-			if(currencyAmount < cost) then return BroadcastEventResultCode.FAILURE end
+			local purchaseCost = v:GetCustomProperty("PurchaseCost")
+			local researchCost = v:GetCustomProperty("ResearchCost")
+			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
 			
-			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
-				if(tank.id == id) then
+			local purchaseCurrencyName = v:GetCustomProperty("PurchaseCurrencyName")
+			
+			local currencyAmount = player:GetResource(purchaseCurrencyName)
+			local rpAmount1 = 0
+			local rpTank1 = 0
+			local rpAmount2 = 0
+			local rpTank2 = 0
+			local totalRPToUse = 0
+			
+			if(prereqs[1]) then
+				rpAmount1 = prereqs[1].rp
+				rpTank1 = prereqs[1].id
+			end
+			if(prereqs[2]) then
+				rpAmount2 = prereqs[2].rp
+				rpTank2 = prereqs[2].id
+			end
+			
+			local freeRP = player:GetResource(Constants_API.FREERP)
+			
+			totalRPToUse = freeRP + rpAmount1 + rpAmount2
+			
+			if(currencyAmount < purchaseCost) then warn("Not enough currency.") return end
+			if(totalRPToUse < researchCost) then warn("Not enough RP") return end					
+			
+			for i, tank in ipairs(player.serverUserData.techTreeProgress) do			
+				if(tonumber(tank.id) == tonumber(id)) then
 					print("DEBUG: Owned tank found")
 					tank.purchased = true
-					player:RemoveResource(currency, cost)
+					tank.researched = true
+					
+					player:RemoveResource(purchaseCurrencyName, purchaseCost)
+					
+					if(rpAmount1 < researchCost) then
+						researchCost = researchCost - rpAmount1
+						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank1)), rpAmount1)
+					else
+						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank1)), researchCost)
+					end
+					
+					if(rpAmount2 < researchCost) then
+						researchCost = researchCost - rpAmount2
+						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank2)), rpAmount2)
+					else
+						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank2)), researchCost)
+					end
+					
+					if(researchCost > 0) then
+						player:RemoveResource(Constants_API.FREERP, researchCost)
+					end					
+					
 					-- If the tank is a premium tank, set all upgrades to owned
-					if(currency == "Gold") then
+					if(purchaseCurrencyName == "Gold") then
 						print("Premium tank. All upgrades purchased.")
 						tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 						tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
-						print("Premium tank. All upgrades purchased.")
 					end
+					Events.BroadcastToPlayer(player, "TankPurchaseSuccessful")
 					return BroadcastEventResultCode.SUCCESS															
 				end
 			end
@@ -40,6 +86,7 @@ function PurchaseTank(player, id, currency)
 	return BroadcastEventResultCode.FAILURE
 end
 
+--[[
 function ResearchTank(player, id, prereqId, useFreeRP)
 	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
@@ -76,6 +123,7 @@ function ResearchTank(player, id, prereqId, useFreeRP)
 	
 	return BroadcastEventResultCode.FAILURE
 end
+--]]
 
 function PurchaseWeapon(player, id)
 	local tank = {}
@@ -83,14 +131,37 @@ function PurchaseWeapon(player, id)
 		if(v:GetCustomProperty("ID") == id) then
 			print("DEBUG: Found match")
 			local cost = v:GetCustomProperty("WeaponPurchaseCost")
+			local researchCost = v:GetCustomProperty("WeaponResearchCost")
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
+			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
+			local tankRP = player:GetResource(tankRPString)
+			local freeRP = player:GetResource(Constants_API.FREERP)
+			
+			if(tankRP + freeRP < researchCost) then
+				return BroadcastEventResultCode.FAILURE				
+			end
+			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
-					print("DEBUG: Owned tank found")
-					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					print("DEBUG: Owned tank found")					
 					player:RemoveResource(Constants_API.SILVER, cost)
+					
+					if(tankRP < researchCost) then
+						researchCost = researchCost - tankRP
+						player:RemoveResource(tankRPString, tankRP)
+					else
+						player:RemoveResource(tankRPString, researchCost)
+					end
+					
+					if(researchCost > 0) then
+						player:RemoveResource(Constants_API.FREERP, researchCost)
+					end
+					
+					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					
+					Events.BroadcastToPlayer(player, "WeaponUpgradeSuccessful")
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -101,6 +172,7 @@ function PurchaseWeapon(player, id)
 	return BroadcastEventResultCode.FAILURE
 end
 
+--[[
 function ResearchWeapon(player, id, useFreeRP)
 local tank = {}
 	for k,v in ipairs(TANK_LIST) do
@@ -138,21 +210,45 @@ local tank = {}
 	
 	return BroadcastEventResultCode.FAILURE
 end
+--]]
 
 function PurchaseArmor(player, id)
-local tank = {}
+	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
 		if(v:GetCustomProperty("ID") == id) then
 			print("DEBUG: Found match")
 			local cost = v:GetCustomProperty("ArmorPurchaseCost")
+			local researchCost = v:GetCustomProperty("ArmorResearchCost")
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
+			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
+			local tankRP = player:GetResource(tankRPString)
+			local freeRP = player:GetResource(Constants_API.FREERP)
+			
+			if(tankRP + freeRP < researchCost) then
+				return BroadcastEventResultCode.FAILURE				
+			end
+			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
-					print("DEBUG: Owned tank found")
-					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					print("DEBUG: Owned tank found")					
 					player:RemoveResource(Constants_API.SILVER, cost)
+					
+					if(tankRP < researchCost) then
+						researchCost = researchCost - tankRP
+						player:RemoveResource(tankRPString, tankRP)
+					else
+						player:RemoveResource(tankRPString, researchCost)
+					end
+					
+					if(researchCost > 0) then
+						player:RemoveResource(Constants_API.FREERP, researchCost)
+					end
+					
+					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					
+					Events.BroadcastToPlayer(player, "ArmorUpgradeSuccessful")
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -162,7 +258,7 @@ local tank = {}
 	
 	return BroadcastEventResultCode.FAILURE
 end
-
+--[[
 function ResearchArmor(player, id, useFreeRP)
 local tank = {}
 	for k,v in ipairs(TANK_LIST) do
@@ -200,21 +296,45 @@ local tank = {}
 	
 	return BroadcastEventResultCode.FAILURE
 end
+--]]
 
 function PurchaseEngine(player, id)
-local tank = {}
+	local tank = {}
 	for k,v in ipairs(TANK_LIST) do
 		if(v:GetCustomProperty("ID") == id) then
 			print("DEBUG: Found match")
 			local cost = v:GetCustomProperty("MobilityPurchaseCost")
+			local researchCost = v:GetCustomProperty("MobilityResearchCost")
 			local silver = player:GetResource(Constants_API.SILVER)
 			if(silver < cost) then return BroadcastEventResultCode.FAILURE end
 			
+			local tankRPString = UTIL_API.GetTankRPString(tonumber(id))
+			local tankRP = player:GetResource(tankRPString)
+			local freeRP = player:GetResource(Constants_API.FREERP)
+			
+			if(tankRP + freeRP < researchCost) then
+				return BroadcastEventResultCode.FAILURE				
+			end
+			
 			for i, tank in ipairs(player.serverUserData.techTreeProgress) do
 				if(tank.id == id) then
-					print("DEBUG: Owned tank found")
-					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					print("DEBUG: Owned tank found")					
 					player:RemoveResource(Constants_API.SILVER, cost)
+					
+					if(tankRP < researchCost) then
+						researchCost = researchCost - tankRP
+						player:RemoveResource(tankRPString, tankRP)
+					else
+						player:RemoveResource(tankRPString, researchCost)
+					end
+					
+					if(researchCost > 0) then
+						player:RemoveResource(Constants_API.FREERP, researchCost)
+					end
+					
+					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
+					
+					Events.BroadcastToPlayer(player, "EngineUpgradeSuccessful")
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -224,7 +344,7 @@ local tank = {}
 	
 	return BroadcastEventResultCode.FAILURE
 end
-
+--[[
 function ResearchEngine(player, id, useFreeRP)
 local tank = {}
 	for k,v in ipairs(TANK_LIST) do
@@ -262,15 +382,16 @@ local tank = {}
 	
 	return BroadcastEventResultCode.FAILURE
 end
+--]]
 
 Events.ConnectForPlayer("PurchaseTank", PurchaseTank)
-Events.ConnectForPlayer("ResearchTank", ResearchTank)
+--Events.ConnectForPlayer("ResearchTank", ResearchTank)
 
 Events.ConnectForPlayer("PurchaseWeapon", PurchaseWeapon)
-Events.ConnectForPlayer("ResearchWeapon", ResearchWeapon)
+--Events.ConnectForPlayer("ResearchWeapon", ResearchWeapon)
 
 Events.ConnectForPlayer("PurchaseArmor", PurchaseArmor)
-Events.ConnectForPlayer("ResearchArmor", ResearchArmor)
+--Events.ConnectForPlayer("ResearchArmor", ResearchArmor)
 
 Events.ConnectForPlayer("PurchaseEngine", PurchaseEngine)
-Events.ConnectForPlayer("ResearchEngine", ResearchEngine)
+--Events.ConnectForPlayer("ResearchEngine", ResearchEngine)
