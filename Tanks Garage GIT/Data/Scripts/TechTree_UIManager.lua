@@ -418,7 +418,14 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 	
 	local silverCost = tonumber(tankData.purchaseCost)
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("PRICE_3").text = tostring(silverCost)
-	CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_3").text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER))
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("ITEMNAME_3").text = tankData.purchaseCurrencyName
+	local playerCurrency = 0
+	if(tankData.purchaseCurrencyName == Constants_API.GOLD) then
+		playerCurrency = LOCAL_PLAYER:GetResource(Constants_API.GOLD)
+	else
+		playerCurrency = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+	end
+	CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_3").text = tostring(playerCurrency)
 	if(LOCAL_PLAYER:GetResource(Constants_API.SILVER) > silverCost) then
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_3").text = tostring(silverCost)
 		silverCost = 0

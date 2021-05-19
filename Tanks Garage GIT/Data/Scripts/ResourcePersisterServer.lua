@@ -74,7 +74,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	--playerSharedStorage = {}
+	playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -134,7 +134,7 @@ function CheckAndSetSharedStorageDefault(player)
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.RANK_NAME] == nil) then playerSharedStorage[CONSTANTS_API.RANK_NAME] = 1 end
-
+	if(playerSharedStorage[CONSTANTS_API.XP] == nil) then playerSharedStorage[CONSTANTS_API.XP] = 0 end
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
 function LoadAndSetDataFromSharedStorage(player)
