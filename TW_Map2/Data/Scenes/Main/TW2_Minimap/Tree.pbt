@@ -137,9 +137,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 0.1
-      Y: 0.1
-      Z: 0.1
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
     }
   }
   ParentId: 16008995577468840791
