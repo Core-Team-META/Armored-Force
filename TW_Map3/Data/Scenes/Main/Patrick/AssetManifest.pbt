@@ -1,4 +1,13 @@
 Assets {
+  Id: 17429960155465889390
+  Name: "Center Arrow 007 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_007Wedge"
+  }
+}
+Assets {
   Id: 15791153848741605690
   Name: "Sci-fi UI Crisp Hitech Scan Error 01 SFX"
   PlatformAssetType: 7
@@ -77,6 +86,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 1288374006336414321
+  Name: "Crosshair 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_002"
   }
 }
 Assets {

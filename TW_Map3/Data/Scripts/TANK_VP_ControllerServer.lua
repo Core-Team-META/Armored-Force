@@ -288,6 +288,10 @@ function OnBindingPressed(player, binding)
 		return
 	end
 	
+	if player:IsBindingPressed("ability_extra_14") then
+		return
+	end
+	
 	if binding == "ability_primary" then
 		FireProjectile()
 	end
