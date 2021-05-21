@@ -2,6 +2,7 @@ local gridlines = script:GetCustomProperty("Gridlines"):WaitForObject()
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
 
 local localPlayer = Game.GetLocalPlayer()
+local cursorEnabled = false
 
 for x, c in ipairs(gridlines:GetChildren()) do
 	print(tostring(c.x) .. " : " .. tostring(c.y) .. " - " .. tostring(c.rotationAngle))
@@ -23,6 +24,8 @@ function OnBindingPressed(player, binding)
 		currentCamera.hasFreeControl = false
 		currentCamera:SetRotationOffset(Rotation.New(0, currentPitch, currentYaw))
 		UI.SetCursorVisible(true)
+		
+		cursorEnabled = true
 	end
 
 end
@@ -41,7 +44,21 @@ function OnBindingReleased(player, binding)
 		currentCamera.hasFreeControl = true	
 		currentCamera:SetRotationOffset(Rotation.ZERO)
 		UI.SetCursorVisible(false)
+		
+		cursorEnabled = false
 	end
+
+end
+
+function Tick()
+
+	if not cursorEnabled then
+		return
+	end
+	
+	local cursorPosition = UI.GetCursorPosition()
+		
+	print(tostring(cursorPosition.x) .. ", " .. tostring(cursorPosition.y))
 
 end
 
