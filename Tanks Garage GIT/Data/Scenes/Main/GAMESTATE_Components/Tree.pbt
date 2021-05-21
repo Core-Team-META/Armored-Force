@@ -7191,7 +7191,7 @@ Objects {
     Overrides {
       Name: "cs:ShopViewUI"
       ObjectReference {
-        SelfId: 2102117450491797609
+        SelfId: 1961680718095297532
       }
     }
     Overrides {
