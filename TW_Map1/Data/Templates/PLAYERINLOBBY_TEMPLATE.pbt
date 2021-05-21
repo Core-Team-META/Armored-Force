@@ -19,7 +19,6 @@ Assets {
         ChildIds: 879568769993778608
         ChildIds: 16404786981084039567
         ChildIds: 8624367595292332299
-        ChildIds: 16846429252552976309
         ChildIds: 6022457370676478645
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -243,83 +242,6 @@ Assets {
           UseParentHeight: true
           Text {
             Label: "TankName 123"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-            Size: 15
-            Justification {
-              Value: "mc:etextjustify:center"
-            }
-            AutoWrapText: true
-            Font {
-              Id: 17191612518869424272
-            }
-            VerticalJustification {
-              Value: "mc:everticaljustification:top"
-            }
-            ShadowColor {
-              A: 1
-            }
-            ShadowOffset {
-              Y: 2
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middleright"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middleright"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16846429252552976309
-        Name: "USERS_TANK_TIER"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8330795147539106653
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Control {
-          Width: 50
-          Height: 30
-          UIX: -279.804077
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentHeight: true
-          Text {
-            Label: "T4"
             Color {
               R: 1
               G: 1
