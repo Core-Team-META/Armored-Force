@@ -24,6 +24,7 @@ Objects {
   ChildIds: 7829215888213390904
   ChildIds: 2353863463125911361
   ChildIds: 12631040744479278761
+  ChildIds: 15794543342961490778
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,6 +37,38 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 15794543342961490778
+  Name: "Konz"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Konz"
   }
 }
 Objects {
