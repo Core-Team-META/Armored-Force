@@ -1,5 +1,6 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
+local tankGarage = script:GetCustomProperty("TANK_VP_TankGarage"):WaitForObject()
 local tankCount = script:GetCustomProperty("TankCount")
 
 local tankTemplates = script.parent
@@ -62,8 +63,10 @@ function GivePlayerEquipment(player)
 		id = "0" .. tostring(resourceID)
 	end
 	
-	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, id))
-	Task.Wait(1)
+	local playerPosition = player:GetWorldPosition()
+	local playerRotation = player:GetWorldRotation()
+	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, id), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
+	Task.Wait(0.1)
 	equippedTank[player].context.AssignDriver(player)
 	
 end

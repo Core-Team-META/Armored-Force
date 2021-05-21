@@ -22935,6 +22935,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:TANK_VP_TankGarage"
+      ObjectReference {
+        SelfId: 12136404547175840087
+      }
+    }
+    Overrides {
       Name: "cs:TankCount"
       Int: 33
     }
