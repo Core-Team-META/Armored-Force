@@ -134,15 +134,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10675789663154810793
-  Name: "Fantasy Coins 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Equip_Coins_004"
-  }
-}
-Assets {
   Id: 9686253618519087109
   Name: "Teko Light"
   PlatformAssetType: 28
