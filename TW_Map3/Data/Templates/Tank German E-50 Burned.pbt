@@ -23183,6 +23183,4 @@ Assets {
     }
   }
   SerializationVersion: 86
-  VirtualFolderPath: "AXIS COMPLETE"
-  VirtualFolderPath: "E50"
 }

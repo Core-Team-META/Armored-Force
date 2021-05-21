@@ -22657,7 +22657,7 @@ Objects {
     Overrides {
       Name: "cs:Default"
       AssetReference {
-        Id: 13459062561465717307
+        Id: 9036046470398052542
       }
     }
     Overrides {
