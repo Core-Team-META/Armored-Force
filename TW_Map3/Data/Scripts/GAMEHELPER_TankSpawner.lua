@@ -55,9 +55,15 @@ end
 -- nil GivePlayerEquipment(Player)
 -- Gives the referenced equipment to the player
 function GivePlayerEquipment(player)
-
-	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, player:GetResource(CONSTANTS_API.GetEquippedTankResource())))
-	Task.Wait(0.1)
+	local resourceID =  player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	local id = tostring(resourceID)
+	
+	if resourceID < 10 then
+		id = "0" .. tostring(resourceID)
+	end
+	
+	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, id))
+	Task.Wait(1)
 	equippedTank[player].context.AssignDriver(player)
 	
 end
