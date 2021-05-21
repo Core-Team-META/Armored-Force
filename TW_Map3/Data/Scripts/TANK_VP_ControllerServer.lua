@@ -104,21 +104,21 @@ function AssignDriver(newDriver)
 		return
 	end
 	
+	script:SetWorldPosition(newDriver:GetWorldPosition())
+	driver = newDriver
+	
+	SetTankModifications()
+	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
-	local scriptPosition = script:GetWorldPosition()
-	local scriptRotation = script:GetWorldRotation()
-		
-	driver = newDriver
-	SetTankModifications()
-		
+	
 	projectile = templateReferences:GetCustomProperty("Projectile")
 	explosion = templateReferences:GetCustomProperty("ProjectileExplosion")
 	destroyedTankTempate = templateReferences:GetCustomProperty("DestroyedTank")
 	
-	chassis = World.SpawnAsset(chassisTemplate, {parent = tankGarage, position = scriptPosition + Vector3.UP * 400, rotation = scriptRotation})
+	chassis = World.SpawnAsset(chassisTemplate, {parent = tankGarage, position = script:GetWorldPosition()})
 	
-	Task.Wait(0.1)
+	Task.Wait(0.5)
 	
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis})
 	turret = hitbox:FindDescendantByName("Turret")
@@ -152,7 +152,7 @@ function AssignDriver(newDriver)
 	driver.hitPoints = tankHitPoints
 	driver:AttachToCoreObject(turret)
 	
-	Task.Wait(0.1)
+	Task.Wait()
 	
 	script:SetNetworkedCustomProperty("TankReady", true)
 	
@@ -285,10 +285,6 @@ end
 function OnBindingPressed(player, binding)
 	
 	if player ~= driver then
-		return
-	end
-	
-	if player:IsBindingPressed("ability_extra_14") then
 		return
 	end
 	
