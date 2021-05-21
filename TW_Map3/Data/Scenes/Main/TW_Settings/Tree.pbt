@@ -250,6 +250,8 @@ Objects {
       IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
+      CanMoveLeft: true
+      CanMoveRight: true
       AbilityAimMode {
         Value: "mc:eabilityaimmode:viewrelative"
       }
