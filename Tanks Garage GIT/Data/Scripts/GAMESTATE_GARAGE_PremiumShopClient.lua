@@ -276,7 +276,7 @@ end
 
 function InitializeComponent()
 
-	shopViewUI.visibility = Visibility.INHERIT
+	shopViewUI.visibility = Visibility.FORCE_ON
 	
 	shopViewUI.isEnabled = false
 		
