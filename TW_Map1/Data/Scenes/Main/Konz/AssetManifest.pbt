@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16797068327331994841
+  Name: "Frame Ring 4x 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing4x_004"
+  }
+}
+Assets {
   Id: 16636415353835813981
   Name: "Teko"
   PlatformAssetType: 28
@@ -32,6 +41,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
+  Id: 12515110197061593602
+  Name: "Frame Ring 013 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_013Wedge"
   }
 }
 Assets {
@@ -77,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
+  Id: 6552376844877606649
+  Name: "Frame Ring 007 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_007Wedge"
   }
 }
 Assets {
