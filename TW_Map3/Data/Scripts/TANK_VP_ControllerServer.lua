@@ -147,7 +147,7 @@ function AssignDriver(newDriver)
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
 	
 	driver.isCollidable = false
-	driver:SetVisibility(false, true)
+	driver.isVisible = false
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
 	driver:AttachToCoreObject(turret)

@@ -145,7 +145,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 7672894170880533820
+            Id: 8755246352613049809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -285,7 +285,7 @@ Assets {
       }
     }
     Assets {
-      Id: 7672894170880533820
+      Id: 8755246352613049809
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -299,4 +299,5 @@ Assets {
     }
   }
   SerializationVersion: 86
+  VirtualFolderPath: "Template"
 }

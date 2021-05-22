@@ -256,6 +256,12 @@ Assets {
           Overrides {
             Name: "cs:DefaultSkin"
             AssetReference {
+              Id: 18347317752157652426
+            }
+          }
+          Overrides {
+            Name: "cs:Mau5Skin"
+            AssetReference {
               Id: 15027931431611894570
             }
           }

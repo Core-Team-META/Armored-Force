@@ -258,7 +258,7 @@ function GetIndicatorType(player)
 		return DESTROYER_TANK_TEMPLATE
 	end 
 	
-	warn("COULD NOT FIND TANK TYPE FOR " .. player.name .. " : " .. tostring(player.clientUserData.minimapType))
+	--warn("COULD NOT FIND TANK TYPE FOR " .. player.name .. " : " .. tostring(player.clientUserData.minimapType))
 	
 	return PLAYER_TEMPLATE
 
