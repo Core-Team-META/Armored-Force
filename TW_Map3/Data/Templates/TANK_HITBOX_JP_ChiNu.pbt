@@ -112,15 +112,15 @@ Assets {
         Name: "SIDE_Profiler"
         Transform {
           Location {
-            X: -5.03801727
-            Z: -0.391037
+            X: 2.46484375
+            Z: -0.390991211
           }
           Rotation {
           }
           Scale {
-            X: 4.80110693
-            Y: 2.90484953
-            Z: 1.60000014
+            X: 5.1
+            Y: 2.9
+            Z: 1.6
           }
         }
         ParentId: 2106571587510071028
@@ -293,14 +293,14 @@ Assets {
         Name: "HULLSIDE"
         Transform {
           Location {
-            X: -5.03801727
-            Z: -0.391037
+            X: 2.46484375
+            Z: -0.390991211
           }
           Rotation {
           }
           Scale {
-            X: 4.80110693
-            Y: 2.83729506
+            X: 5.1
+            Y: 2.9
             Z: 1.6
           }
         }

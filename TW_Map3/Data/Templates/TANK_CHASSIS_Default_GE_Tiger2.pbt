@@ -44,12 +44,13 @@ Assets {
           PhysicsBodyScale {
             X: 5
             Y: 3.5
-            Z: 1
+            Z: 1.2
           }
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
+            X: -30
             Z: 105
           }
           MaxSpeed: 1250
@@ -57,20 +58,23 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 500
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 110
+          }
           Tank {
-            LeftTreadRadius: 70
+            LeftTreadRadius: 55
             LeftTreadWidth: 110
-            RightTreadRadius: 70
+            RightTreadRadius: 55
             RightTreadWidth: 110
             LeftTreadOffset {
               X: -20
               Y: -255
-              Z: 65
+              Z: 57
             }
             RightTreadOffset {
               X: -20
               Y: 255
-              Z: 65
+              Z: 57
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

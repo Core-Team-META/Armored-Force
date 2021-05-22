@@ -7,7 +7,7 @@ Assets {
       RootId: 12350310120557639198
       Objects {
         Id: 12350310120557639198
-        Name: "TANK_VP_CHASSIS_Default_ExampleTank"
+        Name: "TANK_CHASSIS_Upgraded_ExampleTank"
         Transform {
           Scale {
             X: 1
@@ -57,6 +57,9 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 900
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 100
+          }
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 70
@@ -73,6 +76,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
+            TurnSpeed: 40
           }
         }
       }

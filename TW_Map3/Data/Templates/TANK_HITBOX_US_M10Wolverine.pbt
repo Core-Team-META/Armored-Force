@@ -171,16 +171,16 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 380.556335
-            Z: 2.98260498
+            X: 366.064209
+            Z: 11.7733154
           }
           Rotation {
             Pitch: -28.6130981
           }
           Scale {
-            X: 1.66395891
-            Y: 5.9607234
-            Z: 1.40555048
+            X: 2
+            Y: 5.99999952
+            Z: 1.4
           }
         }
         ParentId: 10831647192919096169
@@ -336,16 +336,16 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 380.556335
-            Z: 2.98260498
+            X: 366.064209
+            Z: 11.7733154
           }
           Rotation {
             Pitch: -28.6130981
           }
           Scale {
-            X: 1.66395891
-            Y: 5.9607234
-            Z: 1.40555048
+            X: 2
+            Y: 5.99999952
+            Z: 1.4
           }
         }
         ParentId: 10669220580562810907

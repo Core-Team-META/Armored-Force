@@ -112,14 +112,15 @@ Assets {
         Name: "SIDE_Profiler"
         Transform {
           Location {
+            X: -35.2597046
             Z: 37.1002808
           }
           Rotation {
           }
           Scale {
-            X: 5.8
-            Y: 5.26591396
-            Z: 1.80459464
+            X: 5.49999905
+            Y: 5.3
+            Z: 1.80000007
           }
         }
         ParentId: 7294987945268277251
@@ -171,16 +172,16 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 290
-            Z: 29.7665405
+            X: 289.740295
+            Z: -2.7935791
           }
           Rotation {
-            Pitch: -45
+            Pitch: -30
           }
           Scale {
-            X: 1.63755763
-            Y: 5.24567842
-            Z: 1.18409276
+            X: 1.80000019
+            Y: 5.20000029
+            Z: 1
           }
         }
         ParentId: 7294987945268277251
@@ -292,14 +293,15 @@ Assets {
         Name: "HULLSIDE"
         Transform {
           Location {
+            X: -35.2597046
             Z: 37.1002808
           }
           Rotation {
           }
           Scale {
-            X: 5.8
-            Y: 5.14345074
-            Z: 1.80459452
+            X: 5.49999905
+            Y: 5.3
+            Z: 1.80000007
           }
         }
         ParentId: 11377192152912754335
@@ -336,16 +338,16 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 290
-            Z: 29.7665405
+            X: 289.740295
+            Z: -2.7935791
           }
           Rotation {
-            Pitch: -45
+            Pitch: -30
           }
           Scale {
-            X: 1.63755763
-            Y: 5.24567842
-            Z: 1.18409276
+            X: 1.80000019
+            Y: 5.20000029
+            Z: 1
           }
         }
         ParentId: 11377192152912754335

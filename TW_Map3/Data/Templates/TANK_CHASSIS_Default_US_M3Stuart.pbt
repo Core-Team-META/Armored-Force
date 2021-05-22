@@ -57,6 +57,9 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 700
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 100
+          }
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 70

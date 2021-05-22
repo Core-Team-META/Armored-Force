@@ -26040,7 +26040,8 @@ Assets {
         Name: "Tank Camera"
         Transform {
           Location {
-            Z: 478.480164
+            X: -110
+            Z: 545
           }
           Rotation {
           }
@@ -26088,8 +26089,8 @@ Assets {
         Name: "Sniper Camera"
         Transform {
           Location {
-            X: 37.5
-            Z: 405.397034
+            X: -110
+            Z: 425
           }
           Rotation {
           }
