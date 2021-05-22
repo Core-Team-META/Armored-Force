@@ -7,7 +7,7 @@ Assets {
       RootId: 12350310120557639198
       Objects {
         Id: 12350310120557639198
-        Name: "TANK_CHASSIS_Upgraded_ExampleTank"
+        Name: "TANK_VP_CHASSIS_Default_ExampleTank"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 10000
+          Mass: 50000
           PhysicsBodyScale {
             X: 5
             Y: 3.5
@@ -73,7 +73,6 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 60
           }
         }
       }
@@ -84,4 +83,5 @@ Assets {
     }
   }
   SerializationVersion: 86
+  VirtualFolderPath: "Template"
 }

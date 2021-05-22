@@ -7,7 +7,7 @@ Assets {
       RootId: 3884162509371086888
       Objects {
         Id: 3884162509371086888
-        Name: "TANK_HITBOX_US_M3Stuart"
+        Name: "TANK_VP_HITBOX_ExampleTank_2"
         Transform {
           Scale {
             X: 1
@@ -491,7 +491,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 7672894170880533820
+            Id: 8755246352613049809
           }
           Teams {
           }
@@ -545,7 +545,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 7672894170880533820
+            Id: 8755246352613049809
           }
           Teams {
           }
@@ -1051,7 +1051,7 @@ Assets {
       }
     }
     Assets {
-      Id: 7672894170880533820
+      Id: 8755246352613049809
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -1065,4 +1065,5 @@ Assets {
     }
   }
   SerializationVersion: 86
+  VirtualFolderPath: "Template"
 }
