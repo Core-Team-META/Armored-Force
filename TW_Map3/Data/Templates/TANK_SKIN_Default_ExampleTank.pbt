@@ -7,7 +7,7 @@ Assets {
       RootId: 218838624630087300
       Objects {
         Id: 218838624630087300
-        Name: "TANK_VP_SKIN_ExampleTank"
+        Name: "TANK_SKIN_Default_ExampleTank"
         Transform {
           Scale {
             X: 1
@@ -68,7 +68,8 @@ Assets {
         Name: "Tank Camera"
         Transform {
           Location {
-            Z: 495
+            X: 35
+            Z: 515
           }
           Rotation {
           }

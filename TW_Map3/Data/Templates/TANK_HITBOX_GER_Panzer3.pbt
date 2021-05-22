@@ -118,9 +118,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 6.09525299
-            Y: 3.34250975
-            Z: 1.9686836
+            X: 4.8
+            Y: 3.3
+            Z: 2
           }
         }
         ParentId: 30589642998017100
@@ -172,16 +172,16 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 312.587585
-            Z: 7.41819763
+            X: 277.199646
+            Z: -1.61120605
           }
           Rotation {
-            Pitch: -45
+            Pitch: -20
           }
           Scale {
-            X: 1.3685708
-            Y: 3.27474213
-            Z: 1.3685708
+            X: 1.6
+            Y: 3.3
+            Z: 1.1
           }
         }
         ParentId: 30589642998017100
@@ -232,16 +232,16 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -327.757568
-            Z: 11.7009277
+            X: -302.800354
+            Z: 13.3887939
           }
           Rotation {
-            Pitch: -58.6582642
+            Pitch: -78.6581726
           }
           Scale {
-            X: 1.45581794
-            Y: 3.24687696
-            Z: 1.45581794
+            X: 1.60000014
+            Y: 3.2
+            Z: 1.80000007
           }
         }
         ParentId: 30589642998017100
@@ -299,9 +299,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 6.09525299
-            Y: 3.26477599
-            Z: 1.96868348
+            X: 4.8
+            Y: 3.3
+            Z: 2
           }
         }
         ParentId: 255525455903815833
@@ -338,16 +338,16 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 312.587585
-            Z: 7.41819763
+            X: 277.199646
+            Z: -1.61120605
           }
           Rotation {
-            Pitch: -45
+            Pitch: -20
           }
           Scale {
-            X: 1.3685708
-            Y: 3.27474213
-            Z: 1.3685708
+            X: 1.6
+            Y: 3.3
+            Z: 1.1
           }
         }
         ParentId: 255525455903815833
@@ -384,16 +384,16 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -327.757568
-            Z: 11.7009277
+            X: -302.800354
+            Z: 13.3887939
           }
           Rotation {
-            Pitch: -58.6582642
+            Pitch: -78.6581726
           }
           Scale {
-            X: 1.45581794
-            Y: 3.24687696
-            Z: 1.45581794
+            X: 1.60000014
+            Y: 3.2
+            Z: 1.80000007
           }
         }
         ParentId: 255525455903815833
@@ -644,15 +644,15 @@ Assets {
         Name: "SIDE_Profiler"
         Transform {
           Location {
-            X: -13.4013367
-            Z: 16.0056763
+            X: 5
+            Z: 22.9527588
           }
           Rotation {
           }
           Scale {
-            X: 2.39206433
-            Y: 2.88533926
-            Z: 1.18113875
+            X: 2.60000014
+            Y: 2.9
+            Z: 0.900000036
           }
         }
         ParentId: 7102385059067007007
@@ -704,16 +704,16 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 109.510529
-            Z: 11.1547852
+            X: 135
+            Z: 22.9527588
           }
           Rotation {
             Pitch: -44.9999695
           }
           Scale {
-            X: 0.900000036
-            Y: 2.84553814
-            Z: 0.900000036
+            X: 0.6
+            Y: 2.4
+            Z: 0.6
           }
         }
         ParentId: 7102385059067007007
@@ -765,14 +765,13 @@ Assets {
         Transform {
           Location {
             X: -135.968307
-            Z: 10.907196
+            Z: 22.9527588
           }
           Rotation {
-            Pitch: -44.9999695
           }
           Scale {
             X: 0.900000036
-            Y: 2.85561109
+            Y: 2.20000029
             Z: 0.900000036
           }
         }
@@ -825,15 +824,15 @@ Assets {
         Name: "TURRETSIDE"
         Transform {
           Location {
-            X: -13.4013367
-            Z: 16.0056763
+            X: 5
+            Z: 22.9527588
           }
           Rotation {
           }
           Scale {
-            X: 2.39206433
-            Y: 2.88533926
-            Z: 1.18113875
+            X: 2.60000014
+            Y: 2.9
+            Z: 0.900000036
           }
         }
         ParentId: 7293880199826519243
@@ -870,16 +869,16 @@ Assets {
         Name: "TURRETFRONT"
         Transform {
           Location {
-            X: 109.510529
-            Z: 11.1547852
+            X: 135
+            Z: 22.9527588
           }
           Rotation {
             Pitch: -44.9999695
           }
           Scale {
-            X: 0.900000036
-            Y: 2.84553814
-            Z: 0.900000036
+            X: 0.6
+            Y: 2.4
+            Z: 0.6
           }
         }
         ParentId: 7293880199826519243
@@ -917,14 +916,13 @@ Assets {
         Transform {
           Location {
             X: -135.968307
-            Z: 10.907196
+            Z: 22.9527588
           }
           Rotation {
-            Pitch: -44.9999695
           }
           Scale {
             X: 0.900000036
-            Y: 2.85561109
+            Y: 2.20000029
             Z: 0.900000036
           }
         }

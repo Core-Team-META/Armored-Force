@@ -428,8 +428,8 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: 37.5
-            Z: 245
+            X: -31.6035156
+            Z: 272.813385
           }
           Rotation {
           }
@@ -643,8 +643,8 @@ Assets {
         Name: "SIDE_Profiler"
         Transform {
           Location {
-            X: -64.6068649
-            Z: 111.693146
+            X: 2.70709229
+            Z: 79.2657471
           }
           Rotation {
           }
@@ -703,8 +703,8 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 157.684921
-            Z: 123.444794
+            X: 224.998901
+            Z: 91.0174561
           }
           Rotation {
           }
@@ -762,8 +762,8 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -310.710449
-            Z: 109.614014
+            X: -243.396484
+            Z: 77.1866455
           }
           Rotation {
           }
@@ -822,8 +822,8 @@ Assets {
         Name: "TURRETSIDE"
         Transform {
           Location {
-            X: -64.6068649
-            Z: 111.693146
+            X: 2.70709229
+            Z: 79.2657471
           }
           Rotation {
           }
@@ -867,8 +867,8 @@ Assets {
         Name: "TURRETFRONT"
         Transform {
           Location {
-            X: 157.684921
-            Z: 123.444794
+            X: 224.998901
+            Z: 91.0174561
           }
           Rotation {
           }
@@ -912,8 +912,8 @@ Assets {
         Name: "TURRETREAR"
         Transform {
           Location {
-            X: -310.710449
-            Z: 109.614014
+            X: -243.396484
+            Z: 77.1866455
           }
           Rotation {
           }
@@ -992,8 +992,7 @@ Assets {
         Name: "Muzzle"
         Transform {
           Location {
-            X: 832.740356
-            Z: 26.4462891
+            X: 936.965942
           }
           Rotation {
           }

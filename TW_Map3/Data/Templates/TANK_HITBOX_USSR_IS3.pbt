@@ -521,8 +521,8 @@ Assets {
         Name: "CannonGuide"
         Transform {
           Location {
-            X: 185
-            Z: 65
+            X: 193.374146
+            Z: 39.7795105
           }
           Rotation {
           }
@@ -705,14 +705,14 @@ Assets {
         Transform {
           Location {
             X: 218.034561
-            Z: 39.1993408
+            Z: 51.4945068
           }
           Rotation {
           }
           Scale {
-            X: 1.76985848
-            Y: 3.64808
-            Z: 1.45179856
+            X: 1.80000007
+            Y: 3.60000014
+            Z: 1
           }
         }
         ParentId: 12919372156134402109
@@ -868,14 +868,14 @@ Assets {
         Transform {
           Location {
             X: 218.034561
-            Z: 39.1993408
+            Z: 51.4945068
           }
           Rotation {
           }
           Scale {
-            X: 1.76985848
-            Y: 3.64808
-            Z: 1.45179856
+            X: 1.80000007
+            Y: 3.60000014
+            Z: 1
           }
         }
         ParentId: 7565591981593655134
@@ -957,8 +957,8 @@ Assets {
         Name: "Cannon"
         Transform {
           Location {
-            X: 185
-            Z: 65
+            X: 193.374146
+            Z: 39.7795105
           }
           Rotation {
           }
@@ -992,7 +992,7 @@ Assets {
         Name: "Muzzle"
         Transform {
           Location {
-            X: 217.5
+            X: 946.011
           }
           Rotation {
           }

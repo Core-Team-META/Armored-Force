@@ -50,6 +50,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
+            X: -70
             Z: 105
           }
           MaxSpeed: 1000
@@ -57,6 +58,10 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 800
           TireFriction: 50
+          CenterOfMassOFfset {
+            X: -10
+            Z: 100
+          }
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 100

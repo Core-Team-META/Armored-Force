@@ -42,22 +42,25 @@ Assets {
           }
           Mass: 50000
           PhysicsBodyScale {
-            X: 4.83656454
+            X: 4.5
             Y: 2.5
-            Z: 1
+            Z: 1.2
           }
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
             X: -33.7012444
-            Z: 73.3392639
+            Z: 90
           }
           MaxSpeed: 937.5
           AccelerationRate: 500
           DecelerationRate: 15
           BrakeStrength: 500
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 120
+          }
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 90
@@ -76,7 +79,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 0.526315808
+            TurnSpeed: 30
           }
         }
       }
