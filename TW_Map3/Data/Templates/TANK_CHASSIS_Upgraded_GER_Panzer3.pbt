@@ -75,7 +75,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 0.61403507
+            TurnSpeed: 35
           }
         }
       }
