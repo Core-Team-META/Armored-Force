@@ -29,7 +29,9 @@ local driver = nil
 
 -- Additional Local Variables
 local tankSet = false
+local saluteOverride = false
 local animateListener = nil
+local saluteListener = nil
 local destroyedListener = nil
 
 function GetDriver()
@@ -44,13 +46,21 @@ function CheckTankReady()
 		return
 	end
 	
+	Task.Wait(0.1)
+	
+	for _, p in ipairs(Game.GetPlayers()) do
+		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
+			driver = p
+		end
+	end
+	
 	local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
-	local skin = templateReferences:GetCustomProperty("Default" .. "Skin")
 	
 	tankBodyServer = tankControllerServer:GetCustomProperty("ChassisReference"):WaitForObject()
-	tankBodyClient = World.SpawnAsset(skin, {parent = tankBodyServer})
+	tankBodyClient = World.SpawnAsset(GetSkin(driver), {parent = tankBodyServer})
 	
 	tankBodyClient:SetPosition(Vector3.ZERO)
+	tankBodyClient:SetRotation(Rotation.ZERO)
 	
 	local treadsLeft = tankBodyClient:FindDescendantByName("TreadsLeft")
 	local treadsRight = tankBodyClient:FindDescendantByName("TreadsRight")
@@ -67,16 +77,8 @@ function CheckTankReady()
 	barrelClient = tankBodyClient:FindDescendantByName("Barrel")
 	shotSFX = tankBodyClient:FindDescendantByName("ShotSFX")
 	flashVFX = tankBodyClient:FindDescendantByName("FlashVFX")
-	
-
-	for _, p in ipairs(Game.GetPlayers()) do
-		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
-			driver = p
-		end
-	end
-	
+		
 	print(tankBodyServer.driver)
-	--driver = tankBodyServer.driver
 
 	if driver == Game.GetLocalPlayer() then
 		driver:SetOverrideCamera(defaultCamera)
@@ -85,6 +87,12 @@ function CheckTankReady()
 
 
 	tankSet = true
+	
+end
+
+function GetSkin(player)
+
+	return templateReferences:GetCustomProperty("Default" .. "Skin")
 	
 end
 
@@ -105,8 +113,10 @@ end
 
 function FiringAnimation(player, reloadTime)
 
-	if player ~= driver or not Object.IsValid(tankBodyClient) then
-		return
+	if not saluteOverride then
+		if player ~= driver or not Object.IsValid(tankBodyClient) then
+			return
+		end
 	end
 	
 	reloadSpeed = reloadTime
@@ -146,6 +156,8 @@ function FiringAnimation(player, reloadTime)
 	
 	if Object.IsValid(barrelClient) then
 		barrelClient:MoveTo(Vector3.New(-recoilAmount, 0, 0), 0.12, true)
+	else
+		barrelClient = tankBodyClient:FindDescendantByName("Barrel")
 	end
 	
 	Task.Wait(0.13)
@@ -160,10 +172,61 @@ function FiringAnimation(player, reloadTime)
 
 end
 
+function PerformSalute()
+
+	local owner = nil
+	
+	for _, p in ipairs(Game.GetPlayers()) do
+		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
+			owner = p
+		end
+	end
+	
+	tankBodyClient = World.SpawnAsset(GetSkin(owner), {parent = script})
+	tankBodyClient:SetPosition(Vector3.ZERO)
+	tankBodyClient:SetRotation(Rotation.ZERO)
+	
+	Task.Wait(1)
+	
+	adjustmentPoint = tankBodyClient:FindDescendantByName("AdjustmentPoint")
+	turretClient = tankBodyClient:FindDescendantByName("Turret")
+	cannonClient = tankBodyClient:FindDescendantByName("Cannon")
+	barrelClient = tankBodyClient:FindDescendantByName("Barrel")
+	
+	shotSFX = tankBodyClient:FindDescendantByName("ShotSFX")
+	flashVFX = tankBodyClient:FindDescendantByName("FlashVFX")
+	
+	local verticalLimit = tankControllerServer:GetCustomProperty("MaxElevationAngle")
+	local horizontalLimit = tankControllerServer:GetCustomProperty("HorizontalCannonAngles")
+		
+	Task.Wait(0.5)
+	
+	if verticalLimit < 15 then
+		if horizontalLimit > 0 then
+			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, -horizontalLimit), 1, true)
+		else 
+			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, 0), 1, true)
+			turretClient:RotateTo(Rotation.New(0, 0, -25), 1, true)
+		end
+	else 
+		if horizontalLimit > 0 then
+			cannonClient:RotateTo(Rotation.New(0, 15, -horizontalLimit), 1, true)
+		else 
+			cannonClient:RotateTo(Rotation.New(0, 15, 0), 1, true)
+			turretClient:RotateTo(Rotation.New(0, 0, -25), 1, true)
+		end
+	end
+	
+	Task.Wait(1.5)
+	
+	saluteOverride = true
+	FiringAnimation(owner, 0)
+
+end
+
 function SetWheelSpeed()
 
 	if not Object.IsValid(tankBodyClient) then
-		--print(driver)
 		return
 	end
 	
@@ -208,6 +271,11 @@ function OnDestroy(object)
 		animateListener = nil
 	end
 	
+	if saluteListener then
+		saluteListener:Disconnect()
+		saluteListener = nil
+	end
+	
 	if Object.IsValid(tankBodyClient) then
 		tankBodyClient:Destroy()
 	end
@@ -231,15 +299,24 @@ function Tick()
 
 	if Object.IsValid(turretClient) and Object.IsValid(turretServer) then
 		turretClient:RotateTo(turretServer:GetRotation(), 0.1, true)
+	else 
+		local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
+		turretServer = hitbox:FindDescendantByName("Turret")
+		turretClient = tankBodyClient:FindDescendantByName("Turret")
 	end
 
 	if Object.IsValid(cannonClient) and Object.IsValid(cannonServer) then
 		cannonClient:RotateTo(cannonServer:GetRotation(), 0.1, true)
+	else 
+		local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
+		cannonServer = hitbox:FindDescendantByName("Cannon")
+		cannonClient = tankBodyClient:FindDescendantByName("Cannon")
 	end
 	
 	SetWheelSpeed()
 	
 end
 
-animateListener = Events.Connect("ANIMATEFIRING", FiringAnimation)
+animateListener = Events.Connect("ANIMATE_FIRING", FiringAnimation)
+saluteListener = Events.Connect("VICTORY_SALUTE", PerformSalute)
 destroyedListener = script.destroyEvent:Connect(OnDestroy)

@@ -145,7 +145,7 @@ function OnDamagedRecord(player, damage)
 			
 			local damageDealtPercentage = damage.amount / player.maxHitPoints
 
-			local tankId = player:GetEquipment()[1]:GetCustomProperty("TankID")
+			local tankId = player.serverUserData.currentTankData.id
 			local tankXPValue = UTIL_API.GetTankXPValueFromId(tankId)
 			
 			local xpRewarded = math.floor(damageDealtPercentage * tankXPValue)

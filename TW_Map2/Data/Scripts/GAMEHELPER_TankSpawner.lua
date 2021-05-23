@@ -41,14 +41,17 @@ function ChangeEquippedTank(player, id)
 end
 
 function OnPlayerRespawned(player)
+
+	Task.Wait(0.1)
 	
 	RemovePlayerEquipment(player)
 	
 	if mainManagerServer:GetCustomProperty("GameState") ~= "VICTORY_STATE" then
 		GivePlayerEquipment(player)
 	else 
-		player:SetVisibility(true)
+		player.isVisible = true
 		player.animationStance = "unarmed_stance"
+		player.isCollidable = true
 	end
 		
 end

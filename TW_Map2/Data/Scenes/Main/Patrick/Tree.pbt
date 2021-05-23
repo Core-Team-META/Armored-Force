@@ -12157,9 +12157,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:EquipmentServer"
+      Name: "cs:TankSpawner"
       ObjectReference {
-        SelfId: 16301210256669850007
+        SelfId: 5829123396881106539
       }
     }
   }
