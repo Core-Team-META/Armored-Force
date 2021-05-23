@@ -20,11 +20,11 @@ Objects {
   ChildIds: 18217549399293975483
   ChildIds: 9479035303955472683
   ChildIds: 11780395721209308910
-  ChildIds: 14125168387794350446
   ChildIds: 11544850952862364982
   ChildIds: 14274737480113221828
   ChildIds: 15816620826778612547
   ChildIds: 9076550816120083263
+  ChildIds: 14125168387794350446
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +37,35 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 14125168387794350446
+  Name: "Chat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Chat"
   }
 }
 Objects {
@@ -152,35 +181,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
-  }
-}
-Objects {
-  Id: 14125168387794350446
-  Name: "Chat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Chat"
   }
 }
 Objects {

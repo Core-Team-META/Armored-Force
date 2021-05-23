@@ -44,7 +44,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 5109129970559468393
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -60,7 +60,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5109129970559468393
+      Id: 12095835209017042614
       Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {
