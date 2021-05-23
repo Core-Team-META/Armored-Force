@@ -166,6 +166,8 @@ function Tick(dt)
 	
 		FindTank()
 		
+		Task.Wait(0.1)
+		
 		return
 	end
 	
@@ -195,4 +197,4 @@ function Tick(dt)
 end
 
 bindingPressedListener = localPlayer.bindingPressedEvent:Connect(OnBindingPressed)
-Events.Connect("ANIMATEFIRING", ReloadAnimation)
+Events.Connect("ANIMATE_FIRING", ReloadAnimation)

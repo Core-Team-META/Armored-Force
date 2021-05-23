@@ -5,7 +5,7 @@ local GameStateManager = RootGroup:GetCustomProperty("GameStateManager"):WaitFor
 
 local TankSpawns = script:GetCustomProperty("TankSpawns"):WaitForObject()
 local Spawns = RootGroup:GetCustomProperty("Spawns"):WaitForObject()
-local equipmentServer = script:GetCustomProperty("EquipmentServer"):WaitForObject()
+local tankSpawner = script:GetCustomProperty("TankSpawner"):WaitForObject()
 
 local placedTanks = {}
 local newState = ""
@@ -13,10 +13,17 @@ local newState = ""
 function GetPlayerTank(player)
 
 	local tankId = nil
+	local stringId = ""
 	
 	tankId = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
 	
-	return equipmentServer.context.GetEquippedTankTemplate(player, tankId)
+	if tankId < 10 then
+		stringId = "0" .. tostring(tankId)
+	else 
+		stringId = tostring(tankId)
+	end
+	
+	return tankSpawner.context.GetEquippedTankTemplate(player, stringId)
 	
 end
 
@@ -46,39 +53,32 @@ function SetTanks()
 		Task.Wait()
 		
 	end
-	
-	Task.Wait(0.1)
 
 	for x, slot in ipairs(TankSpawns:GetChildren()) do
-	
 		playerTrigger = nil
 		selectedPlayer = nil
 	
 		playerTrigger = Spawns:FindChildByName(tostring(x))
 		
 		if playerTrigger then
-		
 			for _, object in pairs(playerTrigger:GetOverlappingObjects()) do
 				if object:IsA("Player") then
 					selectedPlayer = object
-	
 					break
 				end
 			end
-			
 		end
 		
 		if selectedPlayer then
-		
 			placedTanks[x] = World.SpawnAsset(GetPlayerTank(selectedPlayer), {parent = slot})
 			placedTanks[x]:SetPosition(Vector3.ZERO)
-			placedTanks[x]:SetRotation(Rotation.New(0, 0, 0))
+			placedTanks[x]:SetRotation(Rotation.ZERO)
 			placedTanks[x].visibility = Visibility.FORCE_ON
+			placedTanks[x].context.AssignOwner(selectedPlayer)
 		end
-	
 	end
 	
-	Task.Wait(1)
+	Task.Wait(0.1)
 	
 	Events.BroadcastToAllPlayers("VICTORY_SALUTE")
 

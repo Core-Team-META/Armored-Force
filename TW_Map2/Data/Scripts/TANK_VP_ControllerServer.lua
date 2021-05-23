@@ -160,6 +160,12 @@ function AssignDriver(newDriver)
 	
 end
 
+function AssignOwner(newOwner)
+
+	script:SetNetworkedCustomProperty("DriverID", newOwner.id)
+
+end
+
 function SetServerData()
 
 	if not driver.serverUserData.currentTankData then
@@ -290,6 +296,8 @@ function OnBindingPressed(player, binding)
 	
 	if binding == "ability_primary" then
 		FireProjectile()
+	elseif binding == "ability_extra_40" and Environment.IsMultiplayerPreview() then
+		driver:Die()
 	end
 
 
@@ -317,7 +325,7 @@ function FireProjectile()
 	
 	firedProjectile.shouldDieOnImpact = true
 	
-	Events.BroadcastToAllPlayers("ANIMATEFIRING", driver, reloadTime)
+	Events.BroadcastToAllPlayers("ANIMATE_FIRING", driver, reloadTime)
 	
 	Task.Wait(reloadTime + 0.1)
 	
@@ -366,7 +374,7 @@ function OnArmorHit(trigger, other)
 		damageDealt.reason = DamageReason.COMBAT
 		driver:ApplyDamage(damageDealt)
 		
-		print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
+		--print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage)
 	end
 	
