@@ -40,9 +40,9 @@ Assets {
           }
           Camera {
           }
-          Mass: 10000
+          Mass: 12000
           PhysicsBodyScale {
-            X: 5
+            X: 7
             Y: 3.5
             Z: 1
           }
@@ -50,7 +50,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -100
+            X: -150
             Z: 140
           }
           MaxSpeed: 1250
@@ -58,10 +58,13 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 1000
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 100
+          }
           Tank {
-            LeftTreadRadius: 100
+            LeftTreadRadius: 90
             LeftTreadWidth: 100
-            RightTreadRadius: 100
+            RightTreadRadius: 90
             RightTreadWidth: 100
             LeftTreadOffset {
               X: -10

@@ -58,10 +58,13 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 800
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 90
+          }
           Tank {
-            LeftTreadRadius: 80
+            LeftTreadRadius: 70
             LeftTreadWidth: 140
-            RightTreadRadius: 80
+            RightTreadRadius: 70
             RightTreadWidth: 140
             LeftTreadOffset {
               X: -10
@@ -76,7 +79,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 0.5
+            TurnSpeed: 30
           }
         }
       }

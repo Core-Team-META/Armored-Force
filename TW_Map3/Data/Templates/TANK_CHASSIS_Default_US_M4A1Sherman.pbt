@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 50000
+          Mass: 10000
           PhysicsBodyScale {
             X: 4.5
             Y: 2.5
@@ -53,7 +53,7 @@ Assets {
             X: -33.7012444
             Z: 90
           }
-          MaxSpeed: 937.5
+          MaxSpeed: 900
           AccelerationRate: 500
           DecelerationRate: 15
           BrakeStrength: 500

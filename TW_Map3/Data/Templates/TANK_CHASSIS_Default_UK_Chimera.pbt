@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 10000
+          Mass: 7000
           PhysicsBodyScale {
             X: 4
             Y: 3
@@ -58,25 +58,28 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 1000
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 50
+          }
           Tank {
-            LeftTreadRadius: 50
+            LeftTreadRadius: 45
             LeftTreadWidth: 70
-            RightTreadRadius: 50
+            RightTreadRadius: 45
             RightTreadWidth: 70
             LeftTreadOffset {
               X: -50
               Y: -200
-              Z: 35
+              Z: 40
             }
             RightTreadOffset {
               X: -50
               Y: 200
-              Z: 35
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 0.3
+            TurnSpeed: 40
           }
         }
       }
