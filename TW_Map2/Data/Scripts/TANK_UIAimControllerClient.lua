@@ -1,14 +1,16 @@
 local EaseUI = require(script:GetCustomProperty("EaseUI"))
 
 local mainPointer = script:GetCustomProperty("Main"):WaitForObject()
-
 local reticleUI = script:GetCustomProperty("ReticleUI"):WaitForObject()
 local spinPoint1 = script:GetCustomProperty("SpinPoint1"):WaitForObject()
 local spinPoint2 = script:GetCustomProperty("SpinPoint2"):WaitForObject()
 local ringPart1 = script:GetCustomProperty("RingPart1"):WaitForObject()
 local ringPart2 = script:GetCustomProperty("RingPart2"):WaitForObject()
-
 local truePointer = script:GetCustomProperty("TruePointer"):WaitForObject()
+local sniperView = script:GetCustomProperty("SniperView"):WaitForObject()
+local distanceReadout = script:GetCustomProperty("DistanceReadout"):WaitForObject()
+
+local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -16,45 +18,36 @@ local reloadSpeed = 1
 local reloading = false
 local accumulatedReloadingTime = 0
 
+local turret = nil
+local defaultCamera = nil
+local sniperCamera = nil
+local bindingPressedListener = nil
+
 local cannon = nil
-local turretHelper = nil
 
-function RaycastResultFromPointRotationDistance(point, rotation, distance)
-
-	local worldPosition = point
-	local worldRotation = rotation
+local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
-	local azimuth = worldRotation.z
-	local altitude = worldRotation.y
+	local azimuth = rotation.z
+	local altitude = rotation.y
 	
 	if azimuth < 0 then
-	
 		azimuth = azimuth + 360
-		
 	end
 	
 	azimuth = azimuth * math.pi/180
 	
 	if altitude < 0 then
-	
 		altitude = altitude + 360
-		
 	end
 	
 	altitude = altitude * math.pi/180
 	
-	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude) + 0.05)
-	
-	local destination = (direction * distance) + worldPosition
-	
-	local point = World.Raycast(worldPosition, destination, {ignoreTeams = localPlayer.team})
-
-	--CoreDebug.DrawLine(worldPosition, destination)
+	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude))
+	local destination = (direction * distance) + point
+	local point = World.Raycast(point, destination)
 	
 	if point then
-	
 		destination = point:GetImpactPosition()
-		
 	end
 	
 	return destination
@@ -80,91 +73,88 @@ end
 
 function FindTank()
 
-	local controller = nil
-	local clientPortion = nil
-	local clientAnchor = nil
-
-	for _, e in ipairs(localPlayer:GetEquipment()) do
-	
-		controller = e:FindDescendantByName("TANK_TankControllerServer_V3")
-		
-		if controller then
-		
-			clientPortion = controller:GetCustomProperty("TankAnchor")
-			
-			turretHelper = e:FindDescendantByName("TurretHelperMarker")
-			
-			clientAnchor = World.FindObjectById(clientPortion.id)
-			
-		end
-	
-		if clientAnchor then
-		
-			cannon = clientAnchor:FindDescendantByName("Cannon")
-			
-			if Object.IsValid(cannon) then 
-			
-				return
-				
-			end
-			
-		end
-		
-	end
-		
-			
-end
---[[
-function CheckAimAndTurret()
-
-	local ownerView = turretHelper:GetWorldRotation()
-	local currentRotation = cannon:GetWorldRotation()
-	
-	if ownerView.y + 5 > currentRotation.y and ownerView.y - 5 < currentRotation.y then
-		
-		if ownerView.z + 5 > currentRotation.z and ownerView.z - 5 < currentRotation.z then
-			
-			if not reloading then
-
-				ringPart1:SetColor(Color.GREEN)
-				ringPart2:SetColor(Color.GREEN)
-													
-				return
-					
-			end
-				
-		end
-
+	if not localPlayer.clientUserData.currentTankData or not Object.IsValid(localPlayer.clientUserData.currentTankData.skin) then
+		return
 	end
 	
-	ringPart1:SetColor(Color.RED)
-	ringPart2:SetColor(Color.RED)
-		
+	local clientSkin = localPlayer.clientUserData.currentTankData.skin	
+
+	turret = clientSkin:FindDescendantByName("Turret")
+	cannon = clientSkin:FindDescendantByName("Cannon")
+				
+	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
+	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
+			
+	Task.Wait(0.1)
+				
+	if Object.IsValid(defaultCamera) then
+		localPlayer:SetOverrideCamera(defaultCamera)
+	end
+	
 end
-]]
+
 function UpdatePointer()
+
+	local position = RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(),cannon:GetWorldRotation(), 100000)
+	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
 		
-	local uiPostion = UI.GetScreenPosition(RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation() - Rotation.New(0, 3, 0), 100000))
+	distanceReadout.text = tostring(distance) .. " m"
+		
+	local uiPostion = UI.GetScreenPosition(position)
 		
 	if uiPostion then
-	
 		truePointer.visibility = Visibility.FORCE_ON
 		
 		EaseUI.EaseX(truePointer, uiPostion.x, 0.02, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
 		EaseUI.EaseY(truePointer, uiPostion.y, 0.02, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
-			
 	else 
-	
 		truePointer.visibility = Visibility.FORCE_OFF
-		
 	end
 
 end
 
+function TransitionCameras(oldCamera, newCamera)
+
+	local newPitch = oldCamera.currentPitch
+	local newYaw = oldCamera.currentYaw
+	
+	if newPitch > newCamera.maxPitch then
+		newPitch = newCamera.maxPitch 
+	elseif newPitch < newCamera.minPitch then
+		newPitch = newCamera.minPitch
+	end
+	
+	if newCamera.isYawLimited and newYaw > newCamera.maxYaw then
+		newYaw = newCamera.maxYaw
+	elseif newCamera.isYawLimited and newYaw < newCamera.minYaw then
+		newYaw = newCamera.minYaw
+	end
+	
+	newCamera.currentPitch = newPitch
+	newCamera.currentYaw = newYaw
+		
+	localPlayer:SetOverrideCamera(newCamera)
+end
+
+function OnBindingPressed(player, binding)
+	
+	if binding == "ability_extra_12" then
+		if localPlayer:GetActiveCamera() == defaultCamera and turret then
+			TransitionCameras(defaultCamera, sniperCamera)
+			turret.visibility = Visibility.FORCE_OFF
+			sniperView.visibility = Visibility.INHERIT
+		elseif defaultCamera and turret then
+			TransitionCameras(sniperCamera, defaultCamera)
+			turret.visibility = Visibility.INHERIT
+			sniperView.visibility = Visibility.FORCE_OFF
+		end
+	end
+	
+end
+
 function Tick(dt)
 
-	if not Object.IsValid(cannon) or not Object.IsValid(turretHelper)  then
-	
+	if not Object.IsValid(cannon)  then
 		reticleUI.visibility = Visibility.FORCE_OFF
 		
 		spinPoint1.rotationAngle = 180
@@ -177,42 +167,32 @@ function Tick(dt)
 		FindTank()
 		
 		return
-		
 	end
 	
 	reticleUI.visibility = Visibility.INHERIT
 	
 	if reloading and reloadSpeed then
-	
 		accumulatedReloadingTime = accumulatedReloadingTime + dt
-		
 		if accumulatedReloadingTime < reloadSpeed / 2 then
-		
 			spinPoint1.rotationAngle = (accumulatedReloadingTime / reloadSpeed) * 360
-			
 		elseif accumulatedReloadingTime < reloadSpeed then
-		
 			spinPoint1.rotationAngle = 180
 			spinPoint2.rotationAngle = ((accumulatedReloadingTime / reloadSpeed) * 360) + 180
-			
 		else
-			
 			spinPoint1.rotationAngle = 180
 			spinPoint2.rotationAngle = 180
 			
 			accumulatedReloadingTime = 0
-			
 			reloading = false
-			
-		end
-				
+			if Object.IsValid(localPlayer.clientUserData.currentTankData.reloadSFX) then
+				localPlayer.clientUserData.currentTankData.reloadSFX:Play()
+			end
+		end		
 	end
-	
-	--CheckAimAndTurret()
 	
 	UpdatePointer()
 		
 end
 
-
+bindingPressedListener = localPlayer.bindingPressedEvent:Connect(OnBindingPressed)
 Events.Connect("ANIMATEFIRING", ReloadAnimation)

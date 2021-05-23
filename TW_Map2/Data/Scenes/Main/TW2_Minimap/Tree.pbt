@@ -156,12 +156,6 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 17615069152452695899
-    SubobjectId: 9985372447441611410
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
-  }
 }
 Objects {
   Id: 10758419360337109398
@@ -314,12 +308,6 @@ Objects {
     TeamSettings {
     }
   }
-  InstanceHistory {
-    SelfId: 10758419360337109398
-    SubobjectId: 16981933101859773535
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
-  }
 }
 Objects {
   Id: 4997491850563028597
@@ -378,12 +366,6 @@ Objects {
       Id: 4822191344238976801
     }
   }
-  InstanceHistory {
-    SelfId: 4997491850563028597
-    SubobjectId: 4304543058510265276
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
-  }
 }
 Objects {
   Id: 11714689192215668751
@@ -435,12 +417,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11714689192215668751
-    SubobjectId: 15885471895257601478
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
   }
 }
 Objects {
@@ -496,12 +472,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11084953981634957258
-    SubobjectId: 16659885587888599555
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
   }
 }
 Objects {
@@ -665,12 +635,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11714689192215668751
-    SubobjectId: 15885471895257601478
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
-  }
 }
 Objects {
   Id: 7701784366223993837
@@ -729,12 +693,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11084953981634957258
-    SubobjectId: 16659885587888599555
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
   }
 }
 Objects {
@@ -3511,7 +3469,7 @@ Objects {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 13363095960670895192
+        SelfId: 8105739523966840122
       }
     }
     Overrides {
