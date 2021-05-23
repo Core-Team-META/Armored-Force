@@ -59,11 +59,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 4.6
+            Float: 4.7
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 4
+            Float: 3.7
           }
           Overrides {
             Name: "cs:ProjectileSpeed"

@@ -41,11 +41,11 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 5000
+          Mass: 7000
           PhysicsBodyScale {
-            X: 3
-            Y: 3
-            Z: 1
+            X: 6
+            Y: 2.5
+            Z: 1.2
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -60,6 +60,9 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 1200
           TireFriction: 50
+          CenterOfMassOFfset {
+            Z: 100
+          }
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
@@ -104,7 +107,7 @@ Assets {
               Y: 180
               Z: 85
             }
-            TurningRadius: 1000
+            TurningRadius: 800
           }
         }
       }
