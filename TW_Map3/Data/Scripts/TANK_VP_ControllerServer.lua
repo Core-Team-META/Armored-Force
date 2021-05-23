@@ -360,13 +360,14 @@ function OnArmorHit(trigger, other)
 		local armorValue = trigger:GetCustomProperty("ArmorValue")
 		local potentialDamage = enemyPlayer.serverUserData.currentTankData.fullDamage
 		local totalDamage = math.floor(potentialDamage - potentialDamage * armorValue)
-		
-		print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
-		
 		local damageDealt = Damage.New(totalDamage)
+		
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
 		driver:ApplyDamage(damageDealt)
+		
+		print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
+		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage)
 	end
 	
 end
