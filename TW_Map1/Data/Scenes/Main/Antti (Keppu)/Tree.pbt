@@ -109786,7 +109786,8 @@ Objects {
     Overrides {
       Name: "bp:Zenith Color"
       Color {
-        G: 0.383333206
+        R: 0.192999959
+        G: 0.448549509
         B: 1
         A: 0.681000054
       }
@@ -109794,8 +109795,6 @@ Objects {
     Overrides {
       Name: "bp:Horizon Color"
       Color {
-        G: 0.807000041
-        B: 1
         A: 0.901
       }
     }
@@ -110069,15 +110068,6 @@ Objects {
   ParentId: 16581353279262638898
   UnregisteredParameters {
     Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 0.814116061
-        B: 0.520833373
-        A: 1
-      }
-    }
-    Overrides {
       Name: "bp:Start"
       Float: 3000
     }
@@ -110108,6 +110098,15 @@ Objects {
     Overrides {
       Name: "bp:Light Absorption Amount"
       Float: 6.47343683
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.395999968
+        G: 0.507999897
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
