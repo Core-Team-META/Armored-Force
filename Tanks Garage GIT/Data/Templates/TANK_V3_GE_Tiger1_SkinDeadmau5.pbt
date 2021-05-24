@@ -294,7 +294,7 @@ Assets {
           Overrides {
             Name: "cs:DeadTank"
             AssetReference {
-              Id: 16952317707152695295
+              Id: 17763361684044579139
             }
           }
           Overrides {
@@ -15013,16 +15013,16 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 0.188449502
-            Y: 0.56722784
-            Z: 28.9814796
+            X: 0.188560694
+            Y: 0.567197204
+            Z: 33.6937561
           }
           Rotation {
           }
           Scale {
-            X: 1.04637015
-            Y: 1.04637015
-            Z: 1.04637015
+            X: 1.04637027
+            Y: 1.04637027
+            Z: 1.04637027
           }
         }
         ParentId: 1755467548533480785
@@ -42560,6 +42560,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -44490,6 +44491,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -47900,8 +47902,8 @@ Assets {
         Transform {
           Location {
             X: 2.32517719
-            Y: 0.333752275
-            Z: 13.9638853
+            Y: 0.333765715
+            Z: 18.6377087
           }
           Rotation {
             Pitch: 85.2343597
@@ -47975,6 +47977,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -68003,7 +68006,6 @@ Assets {
         ChildIds: 15114702307966151452
         ChildIds: 12088755257453082317
         ChildIds: 16519966869003554614
-        ChildIds: 1009205552587556082
         ChildIds: 2585465672952914101
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -68970,79 +68972,6 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
             Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6177865935140508799
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1009205552587556082
-        Name: "Prism - 3-Sided Polished"
-        Transform {
-          Location {
-            X: -539.214783
-            Y: -60.0563736
-            Z: 6.91462898
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -149.413635
-          }
-          Scale {
-            X: 0.0203958731
-            Y: 0.15787439
-            Z: 0.676419377
-          }
-        }
-        ParentId: 18036478339503806011
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12561909601372583804
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.109867975
-              G: 0.335338
-              B: 0.484000027
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"

@@ -1541,16 +1541,16 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 0.188449502
-            Y: 0.56722784
-            Z: 28.9814796
+            X: 0.188063473
+            Y: 0.566925645
+            Z: 32.4551659
           }
           Rotation {
           }
           Scale {
-            X: 1.04637015
-            Y: 1.04637015
-            Z: 1.04637015
+            X: 1.04637027
+            Y: 1.04637027
+            Z: 1.04637027
           }
         }
         ParentId: 17378243184149822851
@@ -11253,6 +11253,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -12561,6 +12562,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -15724,9 +15726,9 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated Polished"
         Transform {
           Location {
-            X: 2.32517719
-            Y: 0.333752275
-            Z: 13.9638853
+            X: 2.32603741
+            Y: 0.333765715
+            Z: 19.1178055
           }
           Rotation {
             Pitch: 85.2343597
@@ -15800,6 +15802,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -39330,7 +39333,6 @@ Assets {
         ChildIds: 7899392950767310130
         ChildIds: 16312587906815106151
         ChildIds: 17761196252146682948
-        ChildIds: 16933151057520622141
         ChildIds: 11334251825302982287
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40297,79 +40299,6 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
             Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1758388402481224558
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 16933151057520622141
-        Name: "Prism - 3-Sided Polished"
-        Transform {
-          Location {
-            X: -539.214783
-            Y: -60.0563736
-            Z: 6.91462898
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -149.413635
-          }
-          Scale {
-            X: 0.0203958731
-            Y: 0.15787439
-            Z: 0.676419377
-          }
-        }
-        ParentId: 2317035393967960987
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 818783603953564962
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.318546832
-              G: 0.219526231
-              B: 0.102241717
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.25
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"

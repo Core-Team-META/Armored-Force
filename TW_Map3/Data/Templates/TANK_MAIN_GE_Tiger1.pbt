@@ -250,7 +250,7 @@ Assets {
           Overrides {
             Name: "cs:DestroyedTank"
             AssetReference {
-              Id: 16952317707152695295
+              Id: 17763361684044579139
             }
           }
           Overrides {
