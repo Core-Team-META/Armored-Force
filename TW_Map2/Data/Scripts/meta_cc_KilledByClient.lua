@@ -100,13 +100,13 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
     local playerTitle = PlayerTitles.GetPlayerTitle(killerPlayer)
 
     --Set Killer player image, and social image if applicable
-    KILLER_PLAYER_IMAGE:SetImage(killerPlayer)
+    --KILLER_PLAYER_IMAGE:SetImage(killerPlayer)
 
     if (playerTitle) then
         KILLER_PLAYER_SOCIAL:SetImage(playerTitle.icon)
         KILLER_PLAYER_SOCIAL:SetColor(playerTitle.iconColor)
     else
-        KILLER_PLAYER_SOCIAL:SetImage("")
+--        KILLER_PLAYER_SOCIAL:SetImage("")
     end
 
     -- TEMP, if extraCode = 0 (normal weapon)
@@ -128,16 +128,14 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
 
 
     -- Set weapon name
-    local sourceObject = nil
+   --[[ local sourceObject = nil
 	if sourceObjectId then
 		sourceObject = World.FindObjectById(sourceObjectId)
 	end
 
-    if (sourceObject:GetCustomProperty("WeaponType") == "Grenade") then
-        WEAPON_NAME.text = "Grenade"
-    else
-        WEAPON_NAME.text = sourceObject.name
-    end
+
+        --WEAPON_NAME.text = sourceObject.name
+   ]]--
 
     -- Sort entries with highest damage first
     local sortTable = {}
@@ -268,7 +266,7 @@ function OnDamaged(damageAmount, player, sourcePlayer, weapon)
             player.clientUserData.KilledBy[sourcePlayer.name].damager = sourcePlayer
 
             -- Temp
-            if (not weapon or weapon == nil) then weapon = "no weapon" end
+            if (not weapon or weapon == nil) then weapon = "Tank" end
 
             player.clientUserData.KilledBy[sourcePlayer.name].weapon = weapon
             
@@ -292,7 +290,7 @@ function OnDamaged(damageAmount, player, sourcePlayer, weapon)
                 player.clientUserData.KilledBy[sourcePlayer.name].healing = player.clientUserData.KilledBy[sourcePlayer.name].healing + (CoreMath.Round(damageAmount,0) * -1)
             end
         end
-
+print("Damage Amount: " .. tostring(damageAmount) .. " Player: " .. tostring(player) .. " Source Player: " .. tostring(sourcePlayer) .. " Weapon: " .. tostring(weapon))
     end
 
 end
@@ -301,6 +299,6 @@ function Tick(deltaTime)
 end
 
 -- Initialize
-Events.Connect("PDmg", OnDamaged)
+Events.Connect("PlayerDamaged", OnDamaged)
 Events.Connect("PlayerKilled", ShowKilledByScreen)
 
