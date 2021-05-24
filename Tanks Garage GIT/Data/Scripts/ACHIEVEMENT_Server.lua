@@ -11,7 +11,7 @@ if not isEnabled then
 end
 local shouldSaveProgress = ROOT:GetCustomProperty("SaveProgress")
 local useSharedKey = ROOT:GetCustomProperty("UseSharedKey")
-local sharedKeyNetRef = ROOT:GetCustomProperty("sharedKeyNetRef")
+local sharedKeyNetRef = ROOT:GetCustomProperty("SharedKeyNetRef")
 
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
