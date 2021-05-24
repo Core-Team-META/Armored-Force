@@ -58,6 +58,7 @@ local driver = nil
 -- Additional Local Variables
 local aimTask = nil
 local reloading = false
+local flipping = false
 local bindingPressedListener = nil
 local diedEventListener = nil
 local destroyedListener = nil
@@ -423,6 +424,23 @@ function AdjustTurretAim()
 	
 end
 
+function FlipTank()
+
+	Task.Wait(2)
+	
+	if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
+		chassis:AddImpulse(Vector3.New(0, 0, 9000000))
+		Task.Wait(1)
+		chassis:SetLocalAngularVelocity(Vector3.New(180, 0, 0))
+		Task.Wait(1)
+		chassis:SetLocalAngularVelocity(Vector3.ZERO)
+		Task.Wait(1)
+	end
+	
+	flipping = false
+
+end
+
 function Tick()
 	
 	if Object.IsValid(hitbox) and Object.IsValid(driver) then
@@ -433,6 +451,14 @@ function Tick()
 		
 		if allowHoldDownFiring and driver:IsBindingPressed("ability_primary") then
 			FireProjectile()
+		end
+		
+		if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
+			if not flipping then
+				print("attempting flip")
+				flipping = true
+				Task.Spawn(FlipTank, 0)
+			end
 		end
 		 
 		if driver:IsBindingPressed("ability_extra_21") then -- W
