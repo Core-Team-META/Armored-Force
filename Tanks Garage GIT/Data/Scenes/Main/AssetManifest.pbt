@@ -100,6 +100,19 @@ Assets {
   }
 }
 Assets {
+  Id: 6921239680151824385
+  Name: "Achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "5a6a23edbc3446c4a4be4429414a5fa9"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
