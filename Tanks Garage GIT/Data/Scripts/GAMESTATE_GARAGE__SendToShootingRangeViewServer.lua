@@ -44,6 +44,8 @@ function OnServerStateChange(serverManager, property)
 	
 	if string.find(property, "SHOOTING_RANGE_STATE") then
 	
+		Task.Wait(0.1)
+	
 		player:Respawn({position = spawnLocation:GetWorldPosition(), rotation = spawnLocation:GetWorldRotation()})	
 		
 	elseif string.find(property, "GARAGE_STATE") then

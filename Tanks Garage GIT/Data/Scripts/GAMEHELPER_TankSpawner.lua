@@ -10,6 +10,8 @@ function GetEquippedTankTemplate(player, id)
 	print("Checking for tank with id: " .. id)
 	if tonumber(id) <= tankCount and tonumber(id) > 0 then
 		print("Tank with given id found")
+		print(id)
+		print(tankTemplates:GetCustomProperty(id))
 		return tankTemplates:GetCustomProperty(id)
 	else
 		print("Returning default")
@@ -33,7 +35,7 @@ function CheckPlayerState(player)
 				end
 			end
 		end
-		Task.Wait(0.1)
+		Task.Wait()
 	end
 	
 	return true
@@ -93,7 +95,8 @@ function GivePlayerEquipment(player)
 	
 	local playerPosition = player:GetWorldPosition()
 	local playerRotation = player:GetWorldRotation()
-	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, id), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
+	local selectedTemplate = GetEquippedTankTemplate(player, id)
+	equippedTank[player] = World.SpawnAsset(selectedTemplate, {parent = tankGarage, position = playerPosition, rotation = playerRotation})
 	Task.Wait(0.1)
 	equippedTank[player].context.AssignDriver(player)
 	

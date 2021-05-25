@@ -16,7 +16,7 @@ Objects {
   }
   ParentId: 12342638008067059637
   ChildIds: 2420366693617177241
-  ChildIds: 1253649240867448888
+  ChildIds: 5965762023720113418
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -34,7 +34,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1253649240867448888
+  Id: 5965762023720113418
   Name: "EnemyUnit2"
   Transform {
     Location {
@@ -52,9 +52,9 @@ Objects {
     }
   }
   ParentId: 12781204872226265453
-  ChildIds: 5236949209060569841
-  ChildIds: 10688314175226794858
-  ChildIds: 7694913708388989442
+  ChildIds: 2823517304073707524
+  ChildIds: 11772205701143336007
+  ChildIds: 12365868913611538820
   UnregisteredParameters {
     Overrides {
       Name: "cs:MaxHP"
@@ -75,9 +75,9 @@ Objects {
     Overrides {
       Name: "cs:ActiveModelReference"
       ObjectReference {
-        SelfId: 9797249041036927515
+        SelfId: 960342703709651445
         SubObjectId: 9029176811944566351
-        InstanceId: 9884482355341084256
+        InstanceId: 2262741854638163681
         TemplateId: 11824009024669225901
       }
     }
@@ -105,7 +105,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7694913708388989442
+  Id: 12365868913611538820
   Name: "EnemyVisuals"
   Transform {
     Location {
@@ -118,10 +118,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1253649240867448888
-  ChildIds: 17645618494025789321
-  ChildIds: 1864760082254861332
-  ChildIds: 9884482355341084256
+  ParentId: 5965762023720113418
+  ChildIds: 2323410541676142474
+  ChildIds: 7436922828808795842
+  ChildIds: 2262741854638163681
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -138,7 +138,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9884482355341084256
+  Id: 2262741854638163681
   Name: "T57 [GARAGE MODEL]"
   Transform {
     Scale {
@@ -147,7 +147,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7694913708388989442
+  ParentId: 12365868913611538820
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -189,7 +189,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1864760082254861332
+  Id: 7436922828808795842
   Name: "HPBarHolder"
   Transform {
     Location {
@@ -202,8 +202,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7694913708388989442
-  ChildIds: 17364219367211892876
+  ParentId: 12365868913611538820
+  ChildIds: 206115816211335625
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -221,7 +221,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17364219367211892876
+  Id: 206115816211335625
   Name: "HPBar"
   Transform {
     Location {
@@ -236,9 +236,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864760082254861332
-  ChildIds: 243950226946410338
-  ChildIds: 5441579444031957598
+  ParentId: 7436922828808795842
+  ChildIds: 1156546061035138897
+  ChildIds: 3226128113951348533
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -256,7 +256,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5441579444031957598
+  Id: 3226128113951348533
   Name: "Label"
   Transform {
     Location {
@@ -272,7 +272,7 @@ Objects {
       Z: 1.80000007
     }
   }
-  ParentId: 17364219367211892876
+  ParentId: 206115816211335625
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -309,7 +309,7 @@ Objects {
   }
 }
 Objects {
-  Id: 243950226946410338
+  Id: 1156546061035138897
   Name: "Group"
   Transform {
     Location {
@@ -326,9 +326,9 @@ Objects {
       Z: 3.80000114
     }
   }
-  ParentId: 17364219367211892876
-  ChildIds: 14990667985994286331
-  ChildIds: 7479483020090394343
+  ParentId: 206115816211335625
+  ChildIds: 13986763255217872089
+  ChildIds: 4774507337994847240
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -349,7 +349,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7479483020090394343
+  Id: 4774507337994847240
   Name: "Fill"
   Transform {
     Location {
@@ -364,7 +364,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 243950226946410338
+  ParentId: 1156546061035138897
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -414,7 +414,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14990667985994286331
+  Id: 13986763255217872089
   Name: "BG"
   Transform {
     Location {
@@ -431,7 +431,7 @@ Objects {
       Z: 1.01126945
     }
   }
-  ParentId: 243950226946410338
+  ParentId: 1156546061035138897
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -482,7 +482,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17645618494025789321
+  Id: 2323410541676142474
   Name: "AI_ShootingRangeTargetClient"
   Transform {
     Location {
@@ -495,42 +495,42 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7694913708388989442
+  ParentId: 12365868913611538820
   UnregisteredParameters {
     Overrides {
       Name: "cs:EnemyUnit"
       ObjectReference {
-        SelfId: 1253649240867448888
+        SelfId: 5965762023720113418
       }
     }
     Overrides {
       Name: "cs:EnemyHitbox"
       ObjectReference {
-        SelfId: 10688314175226794858
+        SelfId: 11772205701143336007
       }
     }
     Overrides {
       Name: "cs:HPBarHolder"
       ObjectReference {
-        SelfId: 1864760082254861332
+        SelfId: 7436922828808795842
       }
     }
     Overrides {
       Name: "cs:HPBar"
       ObjectReference {
-        SelfId: 17364219367211892876
+        SelfId: 206115816211335625
       }
     }
     Overrides {
       Name: "cs:Fill"
       ObjectReference {
-        SelfId: 7479483020090394343
+        SelfId: 4774507337994847240
       }
     }
     Overrides {
       Name: "cs:Label"
       ObjectReference {
-        SelfId: 5441579444031957598
+        SelfId: 3226128113951348533
       }
     }
   }
@@ -553,12 +553,13 @@ Objects {
   }
 }
 Objects {
-  Id: 10688314175226794858
-  Name: "EnemyHitbox"
+  Id: 11772205701143336007
+  Name: "Hitbox"
   Transform {
     Location {
     }
     Rotation {
+      Yaw: 1.02452832e-05
     }
     Scale {
       X: 1
@@ -566,9 +567,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1253649240867448888
-  ChildIds: 8219623565039601344
-  ChildIds: 2839947327244034073
+  ParentId: 5965762023720113418
+  ChildIds: 14358439018933860057
+  ChildIds: 12269576079236134913
+  ChildIds: 16456784662916599340
+  ChildIds: 4870311838914980667
+  ChildIds: 13146257504240816511
+  ChildIds: 4612918581398024296
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -582,29 +587,39 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsGroup: true
+  NetworkContext {
+    Type: RuntimeStatic
   }
 }
 Objects {
-  Id: 2839947327244034073
-  Name: "TurretHitbox"
+  Id: 4612918581398024296
+  Name: "TURRETFRONT"
   Transform {
     Location {
-      Z: 330
+      X: 256.90918
+      Y: -0.000495910645
+      Z: 350
     }
     Rotation {
+      Pitch: -44.9999504
+      Yaw: 5.34651235e-06
+      Roll: -1.75253683e-06
     }
     Scale {
-      X: 5.70000029
-      Y: 4.20000029
-      Z: 1.9000001
+      X: 1.1
+      Y: 3.10000086
+      Z: 1.1
     }
   }
-  ParentId: 10688314175226794858
-  WantsNetworking: true
+  ParentId: 11772205701143336007
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.8
+    }
+  }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -613,7 +628,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
+    Value: "mc:eindicatorvisibility:alwaysvisible"
   }
   Trigger {
     TeamSettings {
@@ -626,26 +641,31 @@ Objects {
   }
 }
 Objects {
-  Id: 8219623565039601344
-  Name: "HullHitbox"
+  Id: 13146257504240816511
+  Name: "TURRETSIDE"
   Transform {
     Location {
-      X: -15.0004406
-      Y: -3.81469727e-06
-      Z: 130
+      X: 76.90979
+      Y: -0.000225067139
+      Z: 345
     }
     Rotation {
     }
     Scale {
-      X: 10
-      Y: 5.70000029
-      Z: 2.4
+      X: 3.5
+      Y: 4.5
+      Z: 1.70000017
     }
   }
-  ParentId: 10688314175226794858
-  WantsNetworking: true
+  ParentId: 11772205701143336007
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.5
+    }
+  }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -654,7 +674,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
+    Value: "mc:eindicatorvisibility:alwaysvisible"
   }
   Trigger {
     TeamSettings {
@@ -667,7 +687,194 @@ Objects {
   }
 }
 Objects {
-  Id: 5236949209060569841
+  Id: 4870311838914980667
+  Name: "HULLREAR"
+  Transform {
+    Location {
+      X: -414.999573
+      Y: 0.000534057617
+      Z: 175
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.9000001
+      Y: 3.8
+      Z: 1.5999999
+    }
+  }
+  ParentId: 11772205701143336007
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 16456784662916599340
+  Name: "HULLFRONT"
+  Transform {
+    Location {
+      X: 344.999756
+      Y: 0.000389099121
+      Z: 170
+    }
+    Rotation {
+      Pitch: -29.999979
+      Yaw: -1.84073156e-06
+      Roll: 2.72249423e-07
+    }
+    Scale {
+      X: 1.80000031
+      Y: 3.8
+      Z: 0.900000036
+    }
+  }
+  ParentId: 11772205701143336007
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.6
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 12269576079236134913
+  Name: "HULLSIDE"
+  Transform {
+    Location {
+      X: -14.9999371
+      Y: -0.00022315979
+      Z: 170
+    }
+    Rotation {
+    }
+    Scale {
+      X: 6.1
+      Y: 3.90000033
+      Z: 1.7
+    }
+  }
+  ParentId: 11772205701143336007
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 14358439018933860057
+  Name: "TURRETREAR"
+  Transform {
+    Location {
+      X: -205.000809
+      Y: -0.000366210938
+      Z: 380
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.2
+      Y: 3.60000014
+      Z: 0.900000036
+    }
+  }
+  ParentId: 11772205701143336007
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 2823517304073707524
   Name: "AI_ShootingRangeTargetServer"
   Transform {
     Location {
@@ -680,18 +887,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1253649240867448888
+  ParentId: 5965762023720113418
   UnregisteredParameters {
     Overrides {
       Name: "cs:EnemyUnit"
       ObjectReference {
-        SelfId: 1253649240867448888
+        SelfId: 5965762023720113418
       }
     }
     Overrides {
       Name: "cs:EnemyHitbox"
       ObjectReference {
-        SelfId: 10688314175226794858
+        SelfId: 11772205701143336007
       }
     }
     Overrides {
@@ -739,7 +946,7 @@ Objects {
   }
   ParentId: 12781204872226265453
   ChildIds: 17533008145859469813
-  ChildIds: 5941282960956962300
+  ChildIds: 16720262580289535530
   ChildIds: 14303006146213364735
   UnregisteredParameters {
     Overrides {
@@ -1192,7 +1399,7 @@ Objects {
     Overrides {
       Name: "cs:EnemyHitbox"
       ObjectReference {
-        SelfId: 5941282960956962300
+        SelfId: 16720262580289535530
       }
     }
     Overrides {
@@ -1239,14 +1446,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5941282960956962300
-  Name: "EnemyHitbox"
+  Id: 16720262580289535530
+  Name: "Hitbox"
   Transform {
     Location {
-      X: 5074.11719
-      Y: 2.24121094
     }
     Rotation {
+      Yaw: 1.02452832e-05
     }
     Scale {
       X: 1
@@ -1255,8 +1461,12 @@ Objects {
     }
   }
   ParentId: 2420366693617177241
-  ChildIds: 3469120763404888006
-  ChildIds: 13276225264277358390
+  ChildIds: 4770593328262879374
+  ChildIds: 7387194906482326956
+  ChildIds: 12334603132016726812
+  ChildIds: 3178321724713566022
+  ChildIds: 6494536159837733765
+  ChildIds: 12876291109711452089
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1270,29 +1480,39 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsGroup: true
+  NetworkContext {
+    Type: RuntimeStatic
   }
 }
 Objects {
-  Id: 13276225264277358390
-  Name: "TurretHitbox"
+  Id: 12876291109711452089
+  Name: "TURRETFRONT"
   Transform {
     Location {
-      Z: 330
+      X: 256.909271
+      Y: -0.000244140625
+      Z: 350
     }
     Rotation {
+      Pitch: -44.999958
+      Yaw: 3.53791688e-06
+      Roll: 3.82783469e-07
     }
     Scale {
-      X: 5.70000029
-      Y: 4.20000029
-      Z: 1.9000001
+      X: 1.1
+      Y: 3.10000086
+      Z: 1.1
     }
   }
-  ParentId: 5941282960956962300
-  WantsNetworking: true
+  ParentId: 16720262580289535530
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.8
+    }
+  }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -1301,7 +1521,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
+    Value: "mc:eindicatorvisibility:alwaysvisible"
   }
   Trigger {
     TeamSettings {
@@ -1314,26 +1534,31 @@ Objects {
   }
 }
 Objects {
-  Id: 3469120763404888006
-  Name: "HullHitbox"
+  Id: 6494536159837733765
+  Name: "TURRETSIDE"
   Transform {
     Location {
-      X: -15.0004406
-      Y: -3.81469727e-06
-      Z: 130
+      X: 76.909874
+      Y: -0.000228881836
+      Z: 345
     }
     Rotation {
     }
     Scale {
-      X: 10
-      Y: 5.70000029
-      Z: 2.4
+      X: 3.5
+      Y: 4.5
+      Z: 1.70000017
     }
   }
-  ParentId: 5941282960956962300
-  WantsNetworking: true
+  ParentId: 16720262580289535530
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.5
+    }
+  }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -1342,7 +1567,194 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 3178321724713566022
+  Name: "HULLREAR"
+  Transform {
+    Location {
+      X: -415.000092
+      Y: 3.05175781e-05
+      Z: 175
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.9000001
+      Y: 3.8
+      Z: 1.5999999
+    }
+  }
+  ParentId: 16720262580289535530
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 12334603132016726812
+  Name: "HULLFRONT"
+  Transform {
+    Location {
+      X: 345.000336
+      Y: -9.15527344e-05
+      Z: 170
+    }
+    Rotation {
+      Pitch: -30
+      Yaw: -3.80904316e-06
+      Roll: 1.02063e-06
+    }
+    Scale {
+      X: 1.80000031
+      Y: 3.8
+      Z: 0.900000036
+    }
+  }
+  ParentId: 16720262580289535530
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.6
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7387194906482326956
+  Name: "HULLSIDE"
+  Transform {
+    Location {
+      X: -15.0004406
+      Y: -9.53674316e-07
+      Z: 170
+    }
+    Rotation {
+    }
+    Scale {
+      X: 6.1
+      Y: 3.90000033
+      Z: 1.7
+    }
+  }
+  ParentId: 16720262580289535530
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 4770593328262879374
+  Name: "TURRETREAR"
+  Transform {
+    Location {
+      X: -205.000778
+      Y: -0.000289917
+      Z: 380
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.2
+      Y: 3.60000014
+      Z: 0.900000036
+    }
+  }
+  ParentId: 16720262580289535530
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ArmorValue"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
   }
   Trigger {
     TeamSettings {
@@ -1379,7 +1791,7 @@ Objects {
     Overrides {
       Name: "cs:EnemyHitbox"
       ObjectReference {
-        SelfId: 5941282960956962300
+        SelfId: 16720262580289535530
       }
     }
     Overrides {

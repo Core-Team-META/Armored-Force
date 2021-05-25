@@ -61,6 +61,7 @@ Assets {
           CenterOfMassOFfset {
             Z: 90
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 90
             LeftTreadWidth: 125
