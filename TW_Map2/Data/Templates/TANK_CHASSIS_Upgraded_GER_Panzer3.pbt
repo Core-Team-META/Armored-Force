@@ -57,6 +57,7 @@ Assets {
           DecelerationRate: 15
           BrakeStrength: 700
           TireFriction: 50
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 70

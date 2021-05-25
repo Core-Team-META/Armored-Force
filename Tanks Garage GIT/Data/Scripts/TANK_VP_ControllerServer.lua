@@ -31,7 +31,12 @@ local tierValue = script:GetCustomProperty("TierValue")
 -- Main Component References
 local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()
 local target = script:GetCustomProperty("Target"):WaitForObject()
-
+--[[
+while not _G["standardcombo.Combat.Wrap"] do
+	Task.Wait()
+end
+local COMBAT = _G["standardcombo.Combat.Wrap"]
+]]
 -- Selected/Active Tank Stats
 local reloadTime = nil
 local projectileDamage = nil
@@ -360,7 +365,7 @@ function OnArmorHit(trigger, other)
 		other.speed = 0
 		other.capsuleRadius = 0
 		other.capsuleLength = 0
-		other.lifeSpan = 0.01
+		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData then
 			return
@@ -374,6 +379,18 @@ function OnArmorHit(trigger, other)
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
 		driver:ApplyDamage(damageDealt)
+
+		--[[
+		local attackData = {
+			object = driver,
+			damage = damageDealt,
+			source = enemyPlayer,
+			position = nil,
+			rotation = nil,
+			tags = {id = "Example"}
+		}
+		COMBAT.ApplyDamage(attackData)
+		]]
 		
 		--print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage)
