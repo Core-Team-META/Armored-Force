@@ -1102,6 +1102,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
       Name: "cs:GAMESTATE_MainManagerServer"
       ObjectReference {
         SelfId: 16752799134896046516

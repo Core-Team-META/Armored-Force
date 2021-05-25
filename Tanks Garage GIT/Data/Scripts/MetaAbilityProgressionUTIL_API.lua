@@ -360,6 +360,40 @@ function API.GetXPToNextRank(player)
 	return rank * 1000
 end
 
+
+-- Retrieves the highest damage of a tank to use as the upper limit for the stat progress bar
+function API.GetHighestDamage()
+	return 550
+end
+
+function API.GetHighestReload()
+	return 16
+end
+
+function API.GetHighestTurretSpeed()
+	return 40
+end
+
+function API.GetHighestHitPoints()
+	return 2000
+end
+
+function API.GetHighestTopSpeed()
+	return 2000
+end
+
+function API.GetHighestAcceleration()
+	return 1200
+end
+
+function API.GetHighestTraverse()
+	return 70
+end
+
+function API.GetHighestElevation()
+	return 30
+end
+
 function API.GetTankXPValueFromId(tankId)
 	for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
 		if(tank:GetCustomProperty("ID") == tankId) then
