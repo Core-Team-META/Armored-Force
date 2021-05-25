@@ -15,9 +15,6 @@ Objects {
     }
   }
   ChildIds: 16813558807825262224
-  ChildIds: 1280018966653012080
-  ChildIds: 7367735074338159388
-  ChildIds: 11193472375340858099
   ChildIds: 765611719618973778
   ChildIds: 13531313327230624130
   ChildIds: 17398334354223688829
@@ -25,7 +22,6 @@ Objects {
   ChildIds: 1515039180194458749
   ChildIds: 12342638008067059637
   ChildIds: 6164747938729123173
-  ChildIds: 17443067706710834713
   ChildIds: 4950709826130370908
   ChildIds: 8043684082903823001
   ChildIds: 3332374115834155172
@@ -132,342 +128,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Chat"
-  }
-}
-Objects {
-  Id: 17443067706710834713
-  Name: "Nameplates"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 11710180438792470660
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ShowNames"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:ShowHealthbars"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:ShowOnSelf"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:ShowOnTeammates"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:MaxDistanceOnTeammates"
-      Float: 0
-    }
-    Overrides {
-      Name: "cs:ShowOnEnemies"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:MaxDistanceOnEnemies"
-      Float: 0
-    }
-    Overrides {
-      Name: "cs:ShowOnDeadPlayers"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Scale"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:ShowNumbers"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:AnimateChanges"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:ChangeAnimationTime"
-      Float: 0.4
-    }
-    Overrides {
-      Name: "cs:ShowSegments"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:SegmentSize"
-      Float: 20
-    }
-    Overrides {
-      Name: "cs:FriendlyNameColor"
-      Color {
-        G: 0.0762913
-        B: 0.72
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:EnemyNameColor"
-      Color {
-        R: 0.450000048
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:BorderColor"
-      Color {
-        R: 0.0110000009
-        G: 0.0110000009
-        B: 0.0110000009
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:BackgroundColor"
-      Color {
-        R: 0.334000021
-        G: 0.334000021
-        B: 0.334000021
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:FriendlyHealthColor"
-      Color {
-        G: 0.0762913
-        B: 0.72
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:EnemyHealthColor"
-      Color {
-        R: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:DamageChangeColor"
-      Color {
-        R: 0.590000033
-        G: 0.152384102
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:HealChangeColor"
-      Color {
-        R: 0.0670196861
-        G: 0.919999957
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:HealthNumberColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:ShowNames:tooltip"
-      String: "Show names as part of the nameplate. Default names are hidden either way."
-    }
-    Overrides {
-      Name: "cs:ShowOnSelf:tooltip"
-      String: "Show a nameplate on the local player"
-    }
-    Overrides {
-      Name: "cs:ShowOnTeammates:tooltip"
-      String: "Show nameplates on teammates"
-    }
-    Overrides {
-      Name: "cs:MaxDistanceOnTeammates:tooltip"
-      String: "Only show nameplates on teammates up to this distance away. 0 means always show them."
-    }
-    Overrides {
-      Name: "cs:ShowOnEnemies:tooltip"
-      String: "Show nameplates on enemies"
-    }
-    Overrides {
-      Name: "cs:MaxDistanceOnEnemies:tooltip"
-      String: "Only show nameplates on enemies up to this distance away. 0 means always show them."
-    }
-    Overrides {
-      Name: "cs:ShowOnDeadPlayers:tooltip"
-      String: "Show nameplates even on dead players"
-    }
-    Overrides {
-      Name: "cs:Scale:tooltip"
-      String: "Overall scale factor for nameplates"
-    }
-    Overrides {
-      Name: "cs:ShowNumbers:tooltip"
-      String: "Show numerical value for hitpoints and maximum"
-    }
-    Overrides {
-      Name: "cs:AnimateChanges:tooltip"
-      String: "Show animated region when a player\'s health changes"
-    }
-    Overrides {
-      Name: "cs:ChangeAnimationTime:tooltip"
-      String: "Duration of animated health change"
-    }
-    Overrides {
-      Name: "cs:FriendlyNameColor:tooltip"
-      String: "Name color for teammates and self"
-    }
-    Overrides {
-      Name: "cs:EnemyNameColor:tooltip"
-      String: "Name color for enemies"
-    }
-    Overrides {
-      Name: "cs:BorderColor:tooltip"
-      String: "Color of border"
-    }
-    Overrides {
-      Name: "cs:BackgroundColor:tooltip"
-      String: "Color of space where health is missing"
-    }
-    Overrides {
-      Name: "cs:FriendlyHealthColor:tooltip"
-      String: "Color of friendly health bars"
-    }
-    Overrides {
-      Name: "cs:EnemyHealthColor:tooltip"
-      String: "Color of enemy health bars"
-    }
-    Overrides {
-      Name: "cs:DamageChangeColor:tooltip"
-      String: "Color for damage when animating changes"
-    }
-    Overrides {
-      Name: "cs:HealChangeColor:tooltip"
-      String: "Color for heals when animating changes"
-    }
-    Overrides {
-      Name: "cs:HealthNumberColor:tooltip"
-      String: "Color of health number text"
-    }
-    Overrides {
-      Name: "cs:ShowHealthbars:tooltip"
-      String: "Whether to show healthbars at all"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 11710180438792470660
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17443067706710834713
-  ChildIds: 1043916082344544759
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 1043916082344544759
-  Name: "NameplateControllerClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11710180438792470660
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 14633632985083390763
-      }
-    }
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 17443067706710834713
-      }
-    }
-    Overrides {
-      Name: "cs:NameplateTemplate"
-      AssetReference {
-        Id: 5049470299132475441
-      }
-    }
-    Overrides {
-      Name: "cs:SegmentSeparatorTemplate"
-      AssetReference {
-        Id: 621782261612844046
-      }
-    }
-    Overrides {
-      Name: "cs:GAMEHELPER_SpottingServer"
-      ObjectReference {
-        SelfId: 1911047947963401796
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14278482860986951316
-    }
   }
 }
 Objects {
@@ -717,13 +377,6 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 1515039180194458749
-    SubobjectId: 16121779860319454006
-    InstanceId: 14207008870831395142
-    TemplateId: 11996254606677649648
-    WasRoot: true
-  }
 }
 Objects {
   Id: 16887701596234230431
@@ -756,12 +409,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 16887701596234230431
-    SubobjectId: 2371068679195444692
-    InstanceId: 14207008870831395142
-    TemplateId: 11996254606677649648
   }
 }
 Objects {
@@ -810,12 +457,6 @@ Objects {
     MinPitch: -89
     MaxPitch: 89
   }
-  InstanceHistory {
-    SelfId: 6628836853083898468
-    SubobjectId: 10467714333780274479
-    InstanceId: 14207008870831395142
-    TemplateId: 11996254606677649648
-  }
 }
 Objects {
   Id: 6335888720375485977
@@ -861,12 +502,6 @@ Objects {
     MinPitch: -89
     MaxPitch: 89
   }
-  InstanceHistory {
-    SelfId: 6335888720375485977
-    SubobjectId: 11337539924846704978
-    InstanceId: 14207008870831395142
-    TemplateId: 11996254606677649648
-  }
 }
 Objects {
   Id: 11841525025739022797
@@ -905,12 +540,6 @@ Objects {
       Id: 3971044753121829565
     }
   }
-  InstanceHistory {
-    SelfId: 11841525025739022797
-    SubobjectId: 7993639763724455558
-    InstanceId: 14207008870831395142
-    TemplateId: 11996254606677649648
-  }
 }
 Objects {
   Id: 18013318136746478929
@@ -947,12 +576,6 @@ Objects {
       Id: 3116133004127615129
     }
   }
-  InstanceHistory {
-    SelfId: 18013318136746478929
-    SubobjectId: 3694843055699485210
-    InstanceId: 14207008870831395142
-    TemplateId: 11996254606677649648
-  }
 }
 Objects {
   Id: 10753134572675194911
@@ -985,12 +608,6 @@ Objects {
     ScriptAsset {
       Id: 8612242257024979510
     }
-  }
-  InstanceHistory {
-    SelfId: 10753134572675194911
-    SubobjectId: 6881605427783503700
-    InstanceId: 14207008870831395142
-    TemplateId: 11996254606677649648
   }
 }
 Objects {
@@ -1626,300 +1243,6 @@ Objects {
       Height {
         Min: -102400
         Max: 102400
-      }
-    }
-  }
-}
-Objects {
-  Id: 11193472375340858099
-  Name: "Third Person Camera Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 10511039503260704461
-  ChildIds: 7921421438351436265
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7921421438351436265
-  Name: "Client Context"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11193472375340858099
-  ChildIds: 1339518016736747120
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 1339518016736747120
-  Name: "Third Person Camera"
-  Transform {
-    Location {
-      Z: 500
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7921421438351436265
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Camera {
-    UseAsDefault: true
-    AttachToLocalPlayer: true
-    InitialDistance: 1500
-    IsDistanceAdjustable: true
-    MinDistance: 300
-    MaxDistance: 2500
-    PositionOffset {
-      Z: 400
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 1200
-    RotationMode {
-      Value: "mc:erotationmode:lookangle"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-  }
-}
-Objects {
-  Id: 10511039503260704461
-  Name: "Third Person Player Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11193472375340858099
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    PlayerMovementSettings {
-      WalkSpeed: 1000
-      MaxAcceleration: 500
-      WalkableFloorAngle: 50
-      JumpMaxCount: 1
-      JumpVelocity: 900
-      GroundFriction: 10
-      GravityScale: 1.9
-      MaxSwimSpeed: 420
-      Buoyancy: 1
-      TouchForceFactor: 1
-      BrakingDecelerationFlying: 600
-      MaxFlightSpeed: 600
-      MovementControlMode {
-        Value: "mc:emovementcontrolmode:facingrelative"
-      }
-      LookControlMode {
-        Value: "mc:elookcontrolmode:relative"
-      }
-      FacingMode {
-        Value: "mc:efacingmode:facemovement"
-      }
-      SlideRotationRate: 20
-      LookAtCursorProjectionPlane {
-        Value: "mc:eprojectionplane:xy"
-      }
-      MountedMaxAcceleration: 1800
-      MountedWalkSpeed: 960
-      MountedJumpMaxCount: 1
-      MountedJumpVelocity: 900
-      HeadVisibleToSelf: true
-      IsSlideEnabled: true
-      CanMoveForward: true
-      CanMoveBackward: true
-      AbilityAimMode {
-        Value: "mc:eabilityaimmode:viewrelative"
-      }
-      AppearanceChannelingTime: 2
-      MountChannelingTime: 2
-      FlipOnMultiJump: true
-      MaxHitpoints: 100
-    }
-  }
-}
-Objects {
-  Id: 7367735074338159388
-  Name: "Game Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    GameSettings {
-      RagdollOnDeath: true
-      EnablePlayerStorage: true
-      ChatMode {
-        Value: "mc:echatmode:teamandall"
-      }
-      EnablePlayModeProfiler: true
-      ChatSettings {
-        ChatMode {
-        }
-        ChatPosition {
-          X: 40
-        }
-        ChatSize {
-          X: 450
-          Y: 400
-        }
-        ChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:right"
-        }
-        ChatVerticalAlignment {
-          Value: "mc:ecoreverticalalign:bottom"
-        }
-      }
-      PhysicsSettings {
-        MinContactOffset: 2
-        MaxContactOffset: 8
-      }
-      VfxSettings {
-        LowDistance: 4500
-        MediumDistance: 7000
-        HighDistance: 9000
-      }
-      RelevanceSettings {
-        key: "decal"
-        value {
-          LowDistance: 4500
-          MediumDistance: 7000
-          HighDistance: 9000
-        }
-      }
-      RelevanceSettings {
-        key: "vfx"
-        value {
-          LowDistance: 4500
-          MediumDistance: 7000
-          HighDistance: 9000
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 1280018966653012080
-  Name: "Respawn Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    RespawnSettings {
-      RespawnDelay: 1
-      RespawnMode_v2 {
-        Value: "mc:erespawnmode:atclosestspawnpoint"
       }
     }
   }

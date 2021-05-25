@@ -8,6 +8,19 @@ Assets {
   }
 }
 Assets {
+  Id: 15135476573687464164
+  Name: "Achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "5a6a23edbc3446c4a4be4429414a5fa9"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 13284832079433518737
   Name: "PlayerSharedStorage"
   PlatformAssetType: 23

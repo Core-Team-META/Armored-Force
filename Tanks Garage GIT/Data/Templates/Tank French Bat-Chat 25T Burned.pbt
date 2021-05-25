@@ -30772,4 +30772,6 @@ Assets {
     }
   }
   SerializationVersion: 86
+  VirtualFolderPath: "ALLIES COMPLETE"
+  VirtualFolderPath: "BatChat"
 }

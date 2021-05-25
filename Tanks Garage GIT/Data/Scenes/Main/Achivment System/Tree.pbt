@@ -3674,9 +3674,9 @@ Objects {
     }
   }
   ParentId: 1809387925543207695
-  ChildIds: 8956748906844617934
-  ChildIds: 12680481756269352339
-  ChildIds: 28259985994987910
+  ChildIds: 10767764800198002398
+  ChildIds: 15701400141769842438
+  ChildIds: 18190220056990607542
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3691,7 +3691,7 @@ Objects {
   }
 }
 Objects {
-  Id: 28259985994987910
+  Id: 18190220056990607542
   Name: "TEST3"
   Transform {
     Location {
@@ -3705,8 +3705,8 @@ Objects {
     }
   }
   ParentId: 1170744160792143945
-  ChildIds: 205078142943613032
-  ChildIds: 3502582050299528998
+  ChildIds: 14439029882923871295
+  ChildIds: 6773068925107934267
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -3718,7 +3718,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "KILL3"
+      String: "ASKILL3"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -3759,7 +3759,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3502582050299528998
+  Id: 6773068925107934267
   Name: "Cosmetic Tokens"
   Transform {
     Location {
@@ -3772,7 +3772,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 28259985994987910
+  ParentId: 18190220056990607542
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3803,7 +3803,7 @@ Objects {
   }
 }
 Objects {
-  Id: 205078142943613032
+  Id: 14439029882923871295
   Name: "Gold"
   Transform {
     Location {
@@ -3816,7 +3816,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 28259985994987910
+  ParentId: 18190220056990607542
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -3847,7 +3847,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12680481756269352339
+  Id: 15701400141769842438
   Name: "TEST2"
   Transform {
     Location {
@@ -3861,8 +3861,8 @@ Objects {
     }
   }
   ParentId: 1170744160792143945
-  ChildIds: 4892779259607739878
-  ChildIds: 224699368035028338
+  ChildIds: 15572631210341111490
+  ChildIds: 16184701126431569352
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -3874,7 +3874,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "KILL2"
+      String: "ASKILL2"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -3915,7 +3915,7 @@ Objects {
   }
 }
 Objects {
-  Id: 224699368035028338
+  Id: 16184701126431569352
   Name: "Cosmetic Tokens"
   Transform {
     Location {
@@ -3928,7 +3928,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12680481756269352339
+  ParentId: 15701400141769842438
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3959,7 +3959,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4892779259607739878
+  Id: 15572631210341111490
   Name: "Gold"
   Transform {
     Location {
@@ -3972,7 +3972,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12680481756269352339
+  ParentId: 15701400141769842438
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -4003,7 +4003,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8956748906844617934
+  Id: 10767764800198002398
   Name: "TEST"
   Transform {
     Location {
@@ -4017,8 +4017,8 @@ Objects {
     }
   }
   ParentId: 1170744160792143945
-  ChildIds: 1732459720273363887
-  ChildIds: 6576967114703104944
+  ChildIds: 13468933225141015519
+  ChildIds: 17480957748068472548
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -4030,7 +4030,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ID"
-      String: "KILL"
+      String: "ASKILL"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -4067,7 +4067,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6576967114703104944
+  Id: 17480957748068472548
   Name: "Cosmetic Tokens"
   Transform {
     Location {
@@ -4080,7 +4080,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8956748906844617934
+  ParentId: 10767764800198002398
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4111,7 +4111,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1732459720273363887
+  Id: 13468933225141015519
   Name: "Gold"
   Transform {
     Location {
@@ -4124,7 +4124,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8956748906844617934
+  ParentId: 10767764800198002398
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"

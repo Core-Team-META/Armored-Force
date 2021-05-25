@@ -479,6 +479,7 @@ end
 function ConfirmButtonClicked()
 	if(confirmButtonFunction == "EQUIP") then
 		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
+		Events.Broadcast("CHANGE_EQUIPPED_TANK", tankDetails.id) 
 		print(tankDetails.id)
 		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 	elseif(confirmButtonFunction == "PURCHASE") then
