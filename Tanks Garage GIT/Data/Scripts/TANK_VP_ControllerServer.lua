@@ -446,7 +446,7 @@ function FlipTank()
 	Task.Wait(2)
 	
 	if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
-		chassis:AddImpulse(Vector3.New(0, 0, 9000000))
+		chassis:AddImpulse(Vector3.New(0, 0, chassis.mass * 2000))
 		Task.Wait(1)
 		chassis:SetLocalAngularVelocity(Vector3.New(180, 0, 0))
 		Task.Wait(1)
