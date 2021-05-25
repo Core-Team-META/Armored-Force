@@ -17,17 +17,17 @@ local DAMAGER_ROW_TEMPLATE = script:GetCustomProperty("METADamagerRowTemplate")
 _G.META_GAME_MODES.
 
 ]]
-
 function GetDistance(playerFrom, playerTo)
-	return (playerTo:GetWorldPosition() - playerFrom:GetWorldPosition()).size
+    return (playerTo:GetWorldPosition() - playerFrom:GetWorldPosition()).size
 end
 
 function ResetData(player)
-	if not Object.IsValid(player) then return end
+    if not Object.IsValid(player) then
+        return
+    end
 
     EaseUI.EaseX(MAIN_PANEL, 720, 0.5, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.INOUT)
-    
-    
+
     player.clientUserData.KilledBy = {}
 
     Task.Wait(0.5)
@@ -47,13 +47,13 @@ end
 local fallingDeath = {
     "Fell to your death",
     "Slipped and fell",
-    "Tried to parkour and failed",
+    "Tried to parkour and failed"
 }
 
 local headShotDeath = {
     "You took one to the brain pan",
     "Used your head for target practice",
-    "Eliminated by headshot",
+    "Eliminated by headshot"
 }
 
 local suicideDeath = {
@@ -91,10 +91,10 @@ LOCAL_PLAYER.clientUserData.KilledBy = {}
 
 local killedByTask = nil
 function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCode)
-
     -- ignore anything not releated to local player
-     if (killedPlayer ~= LOCAL_PLAYER) then return end
-
+    if (killedPlayer ~= LOCAL_PLAYER) then
+        return
+    end
 
     -- Grab player titles
     local playerTitle = PlayerTitles.GetPlayerTitle(killerPlayer)
@@ -106,7 +106,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         KILLER_PLAYER_SOCIAL:SetImage(playerTitle.icon)
         KILLER_PLAYER_SOCIAL:SetColor(playerTitle.iconColor)
     else
---        KILLER_PLAYER_SOCIAL:SetImage("")
+        --        KILLER_PLAYER_SOCIAL:SetImage("")
     end
 
     -- TEMP, if extraCode = 0 (normal weapon)
@@ -125,19 +125,17 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
     else
         KILLER_TITLE.text = ""
     end
-
+     --
 
     -- Set weapon name
-   --[[ local sourceObject = nil
+    --[[ local sourceObject = nil
 	if sourceObjectId then
 		sourceObject = World.FindObjectById(sourceObjectId)
 	end
 
 
         --WEAPON_NAME.text = sourceObject.name
-   ]]--
-
-    -- Sort entries with highest damage first
+   ]] -- Sort entries with highest damage first
     local sortTable = {}
     for name, damageTable in pairs(killedPlayer.clientUserData.KilledBy) do
         local counter = #sortTable + 1
@@ -149,7 +147,6 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
             weapon = damageTable.weapon,
             distance = damageTable.distance
         }
-    
     end
 
     table.sort(
@@ -157,14 +154,13 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         function(a, b)
             return a.damage > b.damage
         end
-	)
+    )
 
     -- Set up rows
     for index, damageTable in ipairs(sortTable) do
-
         -- Spawn template row
-         local newRow = World.SpawnAsset(DAMAGER_ROW_TEMPLATE, {parent = DAMAGER_ROWS})
-        newRow.y = (newRow.height * (index-1)) + (2 * (index-1))
+        local newRow = World.SpawnAsset(DAMAGER_ROW_TEMPLATE, {parent = DAMAGER_ROWS})
+        newRow.y = (newRow.height * (index - 1)) + (2 * (index - 1))
 
         -- Grab row template fields
         local playerImage = newRow:GetCustomProperty("PlayerImage"):WaitForObject()
@@ -175,7 +171,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         local damagerHealth = newRow:GetCustomProperty("HealthText"):WaitForObject()
         local damageAmount = newRow:GetCustomProperty("DamageText"):WaitForObject()
         local healingAmount = newRow:GetCustomProperty("HealingText"):WaitForObject()
-  
+
         -- Set player image
         playerImage:SetImage(damageTable.damager)
 
@@ -189,7 +185,6 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
             socialIcon:SetImage("")
         end
 
-        
         -- _G.META_GAME_MODES.TablePrint(playerTitle)
 
         -- Set damaging player name
@@ -207,7 +202,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         damageDistance.text = damageTable.distance
 
         -- Set damager's HP and color appropriately
-        local damagerHP = CoreMath.Round((damageTable.damager.hitPoints/damageTable.damager.maxHitPoints)*100,0)
+        local damagerHP = CoreMath.Round((damageTable.damager.hitPoints / damageTable.damager.maxHitPoints) * 100, 0)
         if (damagerHP > 75) then
             damagerHealth:SetColor(Color.GREEN)
         elseif (damagerHP > 55) then
@@ -230,9 +225,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
             MAIN_PANEL.visibility = Visibility.FORCE_ON
         end
 
-
         EaseUI.EaseX(MAIN_PANEL, 0, 0.5, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.INOUT)
- 
 
         -- If reset timer is already running and player receives damage, cancel and start a new one
         if (killedByTask and killedByTask:GetStatus() == TaskStatus.RUNNING) then
@@ -240,59 +233,59 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         end
 
         -- Reset killedBy table if x seconds have gone by without taking damage or dying
-        killedByTask = Task.Spawn(function()
-         ResetData(killedPlayer)
-        end, 7)
-
+        killedByTask =
+            Task.Spawn(
+            function()
+                ResetData(killedPlayer)
+            end,
+            7
+        )
     end
 end
 
 local damageResetTask = nil
-function OnDamaged(damageAmount, player, sourcePlayer, weapon)
 
+function OnDamaged(sourcePlayer, player, _, _, damageAmount)
     -- ignore anything not releated to local player
-    if (player ~= LOCAL_PLAYER) then return end
+    if (player ~= LOCAL_PLAYER) then
+        return
+    end
     if (player.hitPoints == player.maxHitPoints) then
         -- if player has healed all the way back to full HP, then reset damage tracking
         player.clientUserData.KilledBy = {}
     end
-    
-    if Object.IsValid(sourcePlayer) and damageAmount ~= 0 then
-   
-        -- Set initial damage to self, 
-        if (player.clientUserData.KilledBy or player.clientUserData.KilledBy[sourcePlayer.name] == nil) then
 
+    if Object.IsValid(sourcePlayer) and damageAmount ~= 0 then
+        -- Set initial damage to self,
+        if (player.clientUserData.KilledBy or player.clientUserData.KilledBy[sourcePlayer.name] == nil) then
             player.clientUserData.KilledBy[sourcePlayer.name] = {}
             player.clientUserData.KilledBy[sourcePlayer.name].damager = sourcePlayer
 
-            -- Temp
-            if (not weapon or weapon == nil) then weapon = "Tank" end
-
-            player.clientUserData.KilledBy[sourcePlayer.name].weapon = weapon
             
-            player.clientUserData.KilledBy[sourcePlayer.name].distance = tostring(CoreMath.Round(GetDistance(sourcePlayer, player) / 100,0)) .. "m"
+            player.clientUserData.KilledBy[sourcePlayer.name].weapon = "Tank"
+
+            player.clientUserData.KilledBy[sourcePlayer.name].distance =
+                tostring(CoreMath.Round(GetDistance(sourcePlayer, player) / 100, 0)) .. "m"
 
             player.clientUserData.KilledBy[sourcePlayer.name].damage = 0
             player.clientUserData.KilledBy[sourcePlayer.name].healing = 0
 
-
             if (damageAmount > 0) then
-                player.clientUserData.KilledBy[sourcePlayer.name].damage = CoreMath.Round(damageAmount,0)
+                player.clientUserData.KilledBy[sourcePlayer.name].damage = CoreMath.Round(damageAmount, 0)
             elseif (damageAmount < 0) then
-                player.clientUserData.KilledBy[sourcePlayer.name].healing = CoreMath.Round(damageAmount,0)*-1
+                player.clientUserData.KilledBy[sourcePlayer.name].healing = CoreMath.Round(damageAmount, 0) * -1
             end
-
         else
-
             if (damageAmount > 0) then
-                player.clientUserData.KilledBy[sourcePlayer.name].damage = player.clientUserData.KilledBy[sourcePlayer.name].damage + CoreMath.Round(damageAmount,0)
+                player.clientUserData.KilledBy[sourcePlayer.name].damage =
+                    player.clientUserData.KilledBy[sourcePlayer.name].damage + CoreMath.Round(damageAmount, 0)
             elseif (damageAmount < 0) then
-                player.clientUserData.KilledBy[sourcePlayer.name].healing = player.clientUserData.KilledBy[sourcePlayer.name].healing + (CoreMath.Round(damageAmount,0) * -1)
+                player.clientUserData.KilledBy[sourcePlayer.name].healing =
+                    player.clientUserData.KilledBy[sourcePlayer.name].healing + (CoreMath.Round(damageAmount, 0) * -1)
             end
         end
-print("Damage Amount: " .. tostring(damageAmount) .. " Player: " .. tostring(player) .. " Source Player: " .. tostring(sourcePlayer) .. " Weapon: " .. tostring(weapon))
+    --print("Damage Amount: " .. tostring(damageAmount) .. " Player: " .. tostring(player) .. " Source Player: " .. tostring(sourcePlayer) .. " Weapon: " .. tostring(weapon))
     end
-
 end
 
 function Tick(deltaTime)
@@ -301,4 +294,3 @@ end
 -- Initialize
 Events.Connect("PlayerDamaged", OnDamaged)
 Events.Connect("PlayerKilled", ShowKilledByScreen)
-
