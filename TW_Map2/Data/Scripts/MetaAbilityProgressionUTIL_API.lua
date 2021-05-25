@@ -632,5 +632,15 @@ function API.RetrieveTankNameById(id, tankCollection)
 	return "M3 Stuart"
 end
 
+function API.CalculateLeaveEarlyEarnings(timeElapsed, matchDuration, maxAwardXP)
+	local percentagedElapsed = timeElapsed / matchDuration
+	local awardedXP = percentagedElapsed * maxAwardXP
+	-- Only award up to 50% of the maximum as a penalty for leaving early
+	if(awardedXP > (maxAwardXP / 2)) then
+		awardedXP = math.floor(maxAwardXP / 2)
+	end
+	return awardedXP
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 return API
