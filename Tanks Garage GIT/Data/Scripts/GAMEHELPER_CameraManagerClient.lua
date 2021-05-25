@@ -119,8 +119,7 @@ function Tick()
 		cursorLocationDifference.y = 10 - newRotation.y
 	end
 		
-	defaultCameraPivot:RotateTo(newRotation + Rotation.New(0, cursorLocationDifference.y, -cursorLocationDifference.x), 0.1, true)
-	print(defaultCameraPivot:GetRotation().y)	
+	defaultCameraPivot:RotateTo(newRotation + Rotation.New(0, cursorLocationDifference.y, -cursorLocationDifference.x), 0.1, true)	
 
 end
 
