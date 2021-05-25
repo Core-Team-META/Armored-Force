@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6025213881326729292
+  Name: "Icon Close"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Close"
+  }
+}
+Assets {
   Id: 4504686085818425438
   Name: "BG Flat 001"
   PlatformAssetType: 9
