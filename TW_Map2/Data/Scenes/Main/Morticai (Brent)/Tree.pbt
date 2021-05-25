@@ -83,17 +83,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SaveProgress"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:UseSharedKey"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:SharedKeyNetRef"
       NetReference {
+        Key: "5a6a23edbc3446c4a4be4429414a5fa9"
         Type {
-          Value: "mc:enetreferencetype:unknown"
+          Value: "mc:enetreferencetype:sharedpersistence"
         }
       }
     }

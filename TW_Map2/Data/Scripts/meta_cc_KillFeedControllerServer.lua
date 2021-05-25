@@ -77,7 +77,7 @@ end
 -- nil OnPlayerDamaged(Player, Damage)
 -- Fires an event for the client to add a line to the kill feed
 function OnPlayerDamaged(player, damage)
-		Events.BroadcastToAllPlayers("PlayerDamaged", damage.sourcePlayer, player, nil, GetExtraCode(damage,player))
+		Events.BroadcastToAllPlayers("PlayerDamaged", damage.sourcePlayer, player, nil, GetExtraCode(damage,player), damage.amount)
 end
 
 function OnPlayerJoined(player)
