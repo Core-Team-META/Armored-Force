@@ -27370,4 +27370,6 @@ Assets {
     }
   }
   SerializationVersion: 86
+  VirtualFolderPath: "ALLIES COMPLETE"
+  VirtualFolderPath: "IS7"
 }

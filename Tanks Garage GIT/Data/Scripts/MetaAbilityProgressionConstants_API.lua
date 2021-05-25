@@ -123,6 +123,23 @@ API.TEAM = {
     AXIS = 2
 }
 
+API.XP_TIER_VALUE = {
+	TIER1 = 100,
+	TIER2 = 200,
+	TIER3 = 300,
+	TIER4 = 400
+}
+
+API.XP_GAIN_REASON = {
+	DAMAGE_DEALT = 1,
+	SPOTTED_ENEMY = 2
+}
+
+API.XP_GAIN_TEXT = {
+	[1] = "Damage Dealt",
+	[2] = "Spotted Enemy"
+}
+
 API.RANK_NAME = "Rank"
 
 function API.GetNumberOfTanks()

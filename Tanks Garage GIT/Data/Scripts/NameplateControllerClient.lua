@@ -48,6 +48,20 @@ local DAMAGE_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("DamageChangeColor"
 local HEAL_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("HealChangeColor") 
 local HEALTH_NUMBER_COLOR = COMPONENT_ROOT:GetCustomProperty("HealthNumberColor") 
 
+local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
+
+function CheckSpotting(player)
+	
+	for i=1, 16 do
+		if spottingServer:GetCustomProperty("P" .. tostring(i)) == player.id then
+			return true
+		end
+	end
+	
+	return false
+	
+end
+
 -- Check user properties
 if MAX_DISTANCE_ON_TEAMMATES < 0.0 then
     warn("MaxDistanceOnTeammates cannot be negative")
@@ -196,7 +210,7 @@ function IsNameplateVisible(player)
 			end
 		end
 	else
-		if SHOW_ON_ENEMIES then
+		if CheckSpotting(GetViewedPlayer()) then
 			local distance = (player:GetWorldPosition() - GetViewedPlayer():GetWorldPosition()).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
@@ -228,7 +242,7 @@ function Tick(deltaTime)
 			if not visible then
 				nameplate.templateRoot.visibility = Visibility.FORCE_OFF
 			else
-				nameplate.templateRoot.visibility = Visibility.INHERIT
+				nameplate.templateRoot.visibility = Visibility.FORCE_ON
 				RotateNameplate(nameplate)
 
 				if SHOW_HEALTHBARS then

@@ -49,6 +49,7 @@ Objects {
   }
   ParentId: 13018728252322818432
   ChildIds: 14888022740908897639
+  ChildIds: 9970671044239007701
   ChildIds: 3560013976433981838
   ChildIds: 10288060073474526785
   ChildIds: 3309395010913558913
@@ -834,6 +835,251 @@ Objects {
   }
 }
 Objects {
+  Id: 9970671044239007701
+  Name: "DefaultSkins"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6917066571319477230
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Default"
+      AssetReference {
+        Id: 18347317752157652426
+      }
+    }
+    Overrides {
+      Name: "cs:01"
+      AssetReference {
+        Id: 18362966145195176330
+      }
+    }
+    Overrides {
+      Name: "cs:02"
+      AssetReference {
+        Id: 174747048665006779
+      }
+    }
+    Overrides {
+      Name: "cs:03"
+      AssetReference {
+        Id: 5147025571090304892
+      }
+    }
+    Overrides {
+      Name: "cs:04"
+      AssetReference {
+        Id: 14976029984994932141
+      }
+    }
+    Overrides {
+      Name: "cs:05"
+      AssetReference {
+        Id: 7817298435634758891
+      }
+    }
+    Overrides {
+      Name: "cs:06"
+      AssetReference {
+        Id: 16749601013821094976
+      }
+    }
+    Overrides {
+      Name: "cs:07"
+      AssetReference {
+        Id: 12927889372863480900
+      }
+    }
+    Overrides {
+      Name: "cs:08"
+      AssetReference {
+        Id: 3413467583475604137
+      }
+    }
+    Overrides {
+      Name: "cs:09"
+      AssetReference {
+        Id: 16444073768052727388
+      }
+    }
+    Overrides {
+      Name: "cs:10"
+      AssetReference {
+        Id: 15999249858457301640
+      }
+    }
+    Overrides {
+      Name: "cs:11"
+      AssetReference {
+        Id: 5022358164993766478
+      }
+    }
+    Overrides {
+      Name: "cs:12"
+      AssetReference {
+        Id: 14734618150306082998
+      }
+    }
+    Overrides {
+      Name: "cs:13"
+      AssetReference {
+        Id: 16618425757165247819
+      }
+    }
+    Overrides {
+      Name: "cs:14"
+      AssetReference {
+        Id: 12007025093329606674
+      }
+    }
+    Overrides {
+      Name: "cs:15"
+      AssetReference {
+        Id: 6967810016710749395
+      }
+    }
+    Overrides {
+      Name: "cs:16"
+      AssetReference {
+        Id: 292989087944729503
+      }
+    }
+    Overrides {
+      Name: "cs:17"
+      AssetReference {
+        Id: 17543628135159375808
+      }
+    }
+    Overrides {
+      Name: "cs:18"
+      AssetReference {
+        Id: 16373468405269177347
+      }
+    }
+    Overrides {
+      Name: "cs:19"
+      AssetReference {
+        Id: 16688209154811981123
+      }
+    }
+    Overrides {
+      Name: "cs:20"
+      AssetReference {
+        Id: 14231213766044306774
+      }
+    }
+    Overrides {
+      Name: "cs:21"
+      AssetReference {
+        Id: 13519590410405361860
+      }
+    }
+    Overrides {
+      Name: "cs:22"
+      AssetReference {
+        Id: 790130176502935494
+      }
+    }
+    Overrides {
+      Name: "cs:23"
+      AssetReference {
+        Id: 1796766768434848394
+      }
+    }
+    Overrides {
+      Name: "cs:24"
+      AssetReference {
+        Id: 1988775105748760057
+      }
+    }
+    Overrides {
+      Name: "cs:25"
+      AssetReference {
+        Id: 17803770010812892952
+      }
+    }
+    Overrides {
+      Name: "cs:26"
+      AssetReference {
+        Id: 3718229507894421252
+      }
+    }
+    Overrides {
+      Name: "cs:27"
+      AssetReference {
+        Id: 9448563897710362426
+      }
+    }
+    Overrides {
+      Name: "cs:28"
+      AssetReference {
+        Id: 16282881575517012136
+      }
+    }
+    Overrides {
+      Name: "cs:29"
+      AssetReference {
+        Id: 1168590625939389549
+      }
+    }
+    Overrides {
+      Name: "cs:30"
+      AssetReference {
+        Id: 8444509078946312129
+      }
+    }
+    Overrides {
+      Name: "cs:31"
+      AssetReference {
+        Id: 8622017408546023531
+      }
+    }
+    Overrides {
+      Name: "cs:32"
+      AssetReference {
+        Id: 16164927167686131757
+      }
+    }
+    Overrides {
+      Name: "cs:33"
+      AssetReference {
+        Id: 2921756505793099649
+      }
+    }
+    Overrides {
+      Name: "cs:34"
+      AssetReference {
+        Id: 18347317752157652426
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2460547308129622168
+    }
+  }
+}
+Objects {
   Id: 14888022740908897639
   Name: "GAMESTATE_GARAGE_SendToShootingRangeViewClient"
   Transform {
@@ -952,69 +1198,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TankUSM24ChaffeeGARAGEMODEL"
-      AssetReference {
-        Id: 17661669092028267410
-      }
-    }
-    Overrides {
-      Name: "cs:TankUST34HeavyGARAGEMODEL"
-      AssetReference {
-        Id: 9072741598498568350
-      }
-    }
-    Overrides {
-      Name: "cs:T57GARAGEMODEL"
-      AssetReference {
-        Id: 11824009024669225901
-      }
-    }
-    Overrides {
-      Name: "cs:BatChatGARAGEMODEL"
-      AssetReference {
-        Id: 5592172945436724684
-      }
-    }
-    Overrides {
-      Name: "cs:M3StuartGARAGEMODEL"
-      AssetReference {
-        Id: 14032403485247481385
-      }
-    }
-    Overrides {
-      Name: "cs:IS3GARAGEMODEL"
-      AssetReference {
-        Id: 15823162386314188331
-      }
-    }
-    Overrides {
-      Name: "cs:M10WolverineGARAGEMODEL"
-      AssetReference {
-        Id: 6547800262969392050
-      }
-    }
-    Overrides {
-      Name: "cs:M4A1ShermanGARAGEMODEL"
-      AssetReference {
-        Id: 5168191616823378001
-      }
-    }
-    Overrides {
-      Name: "cs:Panzer3GARAGEMODEL"
-      AssetReference {
-        Id: 616489956946034427
-      }
-    }
-    Overrides {
-      Name: "cs:M6A1HeavyGARAGEMODEL"
-      AssetReference {
-        Id: 5749015215759485643
-      }
-    }
-    Overrides {
-      Name: "cs:TankGELoweGARAGEMODEL"
-      AssetReference {
-        Id: 12479631322612503858
+      Name: "cs:DefaultSkins"
+      ObjectReference {
+        SelfId: 9970671044239007701
       }
     }
   }

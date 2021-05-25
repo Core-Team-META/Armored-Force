@@ -1,37 +1,6 @@
 Name: "Patrick"
 RootId: 12342638008067059637
 Objects {
-  Id: 3615101156948019368
-  Name: "TANK_TankDock"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12342638008067059637
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
   Id: 12781204872226265453
   Name: "EnemyTargetPracticeAI"
   Transform {
@@ -3175,5 +3144,370 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+}
+Objects {
+  Id: 9636987119694057846
+  Name: "Nameplates"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12342638008067059637
+  ChildIds: 15171120229398249245
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ShowNames"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowHealthbars"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowOnSelf"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ShowOnTeammates"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnTeammates"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:ShowOnEnemies"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnEnemies"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:ShowOnDeadPlayers"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Scale"
+      Float: 3
+    }
+    Overrides {
+      Name: "cs:ShowNumbers"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:AnimateChanges"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ChangeAnimationTime"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "cs:ShowSegments"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:SegmentSize"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:FriendlyNameColor"
+      Color {
+        G: 0.0762913
+        B: 0.72
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyNameColor"
+      Color {
+        R: 0.450000048
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:BorderColor"
+      Color {
+        R: 0.0110000009
+        G: 0.0110000009
+        B: 0.0110000009
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundColor"
+      Color {
+        R: 0.334000021
+        G: 0.334000021
+        B: 0.334000021
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:FriendlyHealthColor"
+      Color {
+        G: 0.0762913
+        B: 0.72
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyHealthColor"
+      Color {
+        R: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:DamageChangeColor"
+      Color {
+        R: 0.590000033
+        G: 0.152384102
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:HealChangeColor"
+      Color {
+        R: 0.0670196861
+        G: 0.919999957
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:HealthNumberColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:ShowNames:tooltip"
+      String: "Show names as part of the nameplate. Default names are hidden either way."
+    }
+    Overrides {
+      Name: "cs:ShowOnSelf:tooltip"
+      String: "Show a nameplate on the local player"
+    }
+    Overrides {
+      Name: "cs:ShowOnTeammates:tooltip"
+      String: "Show nameplates on teammates"
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnTeammates:tooltip"
+      String: "Only show nameplates on teammates up to this distance away. 0 means always show them."
+    }
+    Overrides {
+      Name: "cs:ShowOnEnemies:tooltip"
+      String: "Show nameplates on enemies"
+    }
+    Overrides {
+      Name: "cs:MaxDistanceOnEnemies:tooltip"
+      String: "Only show nameplates on enemies up to this distance away. 0 means always show them."
+    }
+    Overrides {
+      Name: "cs:ShowOnDeadPlayers:tooltip"
+      String: "Show nameplates even on dead players"
+    }
+    Overrides {
+      Name: "cs:Scale:tooltip"
+      String: "Overall scale factor for nameplates"
+    }
+    Overrides {
+      Name: "cs:ShowNumbers:tooltip"
+      String: "Show numerical value for hitpoints and maximum"
+    }
+    Overrides {
+      Name: "cs:AnimateChanges:tooltip"
+      String: "Show animated region when a player\'s health changes"
+    }
+    Overrides {
+      Name: "cs:ChangeAnimationTime:tooltip"
+      String: "Duration of animated health change"
+    }
+    Overrides {
+      Name: "cs:FriendlyNameColor:tooltip"
+      String: "Name color for teammates and self"
+    }
+    Overrides {
+      Name: "cs:EnemyNameColor:tooltip"
+      String: "Name color for enemies"
+    }
+    Overrides {
+      Name: "cs:BorderColor:tooltip"
+      String: "Color of border"
+    }
+    Overrides {
+      Name: "cs:BackgroundColor:tooltip"
+      String: "Color of space where health is missing"
+    }
+    Overrides {
+      Name: "cs:FriendlyHealthColor:tooltip"
+      String: "Color of friendly health bars"
+    }
+    Overrides {
+      Name: "cs:EnemyHealthColor:tooltip"
+      String: "Color of enemy health bars"
+    }
+    Overrides {
+      Name: "cs:DamageChangeColor:tooltip"
+      String: "Color for damage when animating changes"
+    }
+    Overrides {
+      Name: "cs:HealChangeColor:tooltip"
+      String: "Color for heals when animating changes"
+    }
+    Overrides {
+      Name: "cs:HealthNumberColor:tooltip"
+      String: "Color of health number text"
+    }
+    Overrides {
+      Name: "cs:ShowHealthbars:tooltip"
+      String: "Whether to show healthbars at all"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15171120229398249245
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9636987119694057846
+  ChildIds: 14321829273492747158
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 14321829273492747158
+  Name: "NameplateControllerClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15171120229398249245
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 14633632985083390763
+      }
+    }
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 9636987119694057846
+      }
+    }
+    Overrides {
+      Name: "cs:NameplateTemplate"
+      AssetReference {
+        Id: 5049470299132475441
+      }
+    }
+    Overrides {
+      Name: "cs:SegmentSeparatorTemplate"
+      AssetReference {
+        Id: 621782261612844046
+      }
+    }
+    Overrides {
+      Name: "cs:GAMEHELPER_SpottingServer"
+      ObjectReference {
+        SelfId: 17486376699248963065
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14278482860986951316
+    }
+  }
+}
+Objects {
+  Id: 8952587490261469478
+  Name: "TW_Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12342638008067059637
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW_Settings"
   }
 }
