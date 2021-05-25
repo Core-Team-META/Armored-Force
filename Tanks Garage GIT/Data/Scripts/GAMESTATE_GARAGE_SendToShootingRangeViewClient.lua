@@ -1,3 +1,4 @@
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
 local mainManagerServer = script:GetCustomProperty("GAMESTATE_MainManagerServer"):WaitForObject()
@@ -32,45 +33,27 @@ function CheckPlayerIsInState(state)
 	if not rememberSlot then
 
 		for i = 1, 16 do 
-		
 			property = mainManagerServer:GetCustomProperty("P" .. tostring(i))
-		
 			if string.find(property, localPlayer.id) then
-			
 				rememberSlot = "P" .. tostring(i)
-			
 				if string.find(property, state) then
-				
 					return true
-					
 				else 
-				
-					return false
-					
+					return false	
 				end
-		
 			end
-		
 		end
 		
 	else 
-	
 		property = mainManagerServer:GetCustomProperty(rememberSlot)
 		
-		if string.find(property, localPlayer.id) then
-			
+		if string.find(property, localPlayer.id) then	
 			if string.find(property, state) then
-				
-				return true
-					
+				return true	
 			else 
-				
-				return false
-					
+				return false	
 			end
-		
 		end
-
 	end
 
 end
@@ -78,9 +61,7 @@ end
 function SendBackToGarage(trigger, other)
 
 	if other ~= localPlayer then
-	
 		return
-		
 	end
 	
 	sendToShootingRangeViewUI.isEnabled = true
@@ -103,11 +84,8 @@ function SendBackToGarage(trigger, other)
 	end
 				
 	while not CheckPlayerIsInState("GARAGE_STATE") do 
-		
 		Events.BroadcastToServer("PlayerStateChanged", "GARAGE_STATE")
-		
-		Task.Wait(0.1)
-			
+		Task.Wait(0.1)	
 	end
 	
 	door:SetPosition(Vector3.ZERO)
@@ -119,11 +97,8 @@ function SendBackToGarage(trigger, other)
 	Task.Wait(2)
 				
 	for i = 100, 1, -1 do 
-		
-		blackScreen:SetColor(Color.New(0, 0, 0, i/100))
-			
-		Task.Wait(0.01)
-			
+		blackScreen:SetColor(Color.New(0, 0, 0, i/100))	
+		Task.Wait(0.01)	
 	end
 	
 	sendToShootingRangeViewUI.isEnabled = false	
@@ -239,22 +214,30 @@ function ChangeGarageModel(id)
 	
 end
 
-function SetGarageModelFromEquippedTank(player, id)
+function SetGarageModelFromEquippedTank(player, tankId)
+
+	local selectedId = tankId
+
+	if not tankId then
 	
-	local tankId = 0
-	-- Just making sure the player resource has been set before we try and grab it
-	while tankId == 0 do		
-		tankId = player:GetResource("EquippedTank")
-		Task.Wait()
+		while not player:GetResource(CONSTANTS_API.GetEquippedTankResource()) do
+			Task.Wait(0.1)
+		end
+		
+		selectedId = player:GetResource(CONSTANTS_API.GetEquippedTankResource())
 	end
+		
+	local id = tostring(selectedId)
 	
-	local id = tostring(tankId)
-	
-	if tankId < 10 then
-		id = "0" .. tostring(tankId)
+	if tonumber(selectedId) < 10 and not string.find(id, "0") then
+		id = "0" .. id
 	end
 	
 	garageModel = defaultSkins:GetCustomProperty(id)
+	
+	if not garageModel then
+		garageModel = defaultSkins:GetCustomProperty("Default")
+	end
 
 end
 
@@ -267,6 +250,8 @@ function ToggleGarage(player, binding)
 end
 
 function InitializeComponent()
+
+	Task.Wait(1)
 
 	SetGarageModelFromEquippedTank(localPlayer)
 
