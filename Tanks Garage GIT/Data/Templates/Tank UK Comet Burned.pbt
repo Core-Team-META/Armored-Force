@@ -31334,4 +31334,5 @@ Assets {
     }
   }
   SerializationVersion: 86
+  VirtualFolderPath: "Comet"
 }
