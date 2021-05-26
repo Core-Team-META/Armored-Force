@@ -757,9 +757,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.5502
-        G: 0.690013289
-        B: 0.7
+        R: 0.0127019985
+        G: 0.0163717326
+        B: 0.029
         A: 0.7
       }
       TeamSettings {
@@ -828,9 +828,9 @@ Objects {
     Text {
       Label: "8"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -845,9 +845,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -913,9 +913,9 @@ Objects {
     Text {
       Label: "7"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -930,9 +930,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -998,9 +998,9 @@ Objects {
     Text {
       Label: "6"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1015,9 +1015,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1083,9 +1083,9 @@ Objects {
     Text {
       Label: "5"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1100,9 +1100,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1168,9 +1168,9 @@ Objects {
     Text {
       Label: "4"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1185,9 +1185,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1253,9 +1253,9 @@ Objects {
     Text {
       Label: "3"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1270,9 +1270,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1338,9 +1338,9 @@ Objects {
     Text {
       Label: "2"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1355,9 +1355,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1423,9 +1423,9 @@ Objects {
     Text {
       Label: "1"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1440,9 +1440,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1516,9 +1516,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.5502
-        G: 0.690013289
-        B: 0.7
+        R: 0.0127019985
+        G: 0.0163717326
+        B: 0.029
         A: 0.7
       }
       TeamSettings {
@@ -1587,9 +1587,9 @@ Objects {
     Text {
       Label: "H"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1604,9 +1604,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1672,9 +1672,9 @@ Objects {
     Text {
       Label: "G"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1689,9 +1689,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1757,9 +1757,9 @@ Objects {
     Text {
       Label: "F"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1774,9 +1774,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1842,9 +1842,9 @@ Objects {
     Text {
       Label: "E"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1859,9 +1859,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -1927,9 +1927,9 @@ Objects {
     Text {
       Label: "D"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -1944,9 +1944,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -2012,9 +2012,9 @@ Objects {
     Text {
       Label: "C"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -2029,9 +2029,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -2097,9 +2097,9 @@ Objects {
     Text {
       Label: "B"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -2114,9 +2114,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -2182,9 +2182,9 @@ Objects {
     Text {
       Label: "A"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.8
+        G: 0.8
+        B: 0.8
         A: 1
       }
       Size: 14
@@ -2199,9 +2199,9 @@ Objects {
         Value: "mc:everticaljustification:center"
       }
       ShadowColor {
-        R: 0.24000001
-        G: 0.24000001
-        B: 0.24000001
+        R: 0.00402471703
+        G: 0.00477695186
+        B: 0.00749903172
         A: 0.5
       }
       ShadowOffset {
@@ -2270,6 +2270,7 @@ Objects {
   Control {
     Width: 322
     Height: 322
+    UIY: -0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2280,10 +2281,10 @@ Objects {
         Id: 10043949526674053130
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
-        A: 1
+        R: 0.0127019985
+        G: 0.0163717326
+        B: 0.029
+        A: 0.7
       }
       TeamSettings {
       }
@@ -2338,8 +2339,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIY: 120
     RenderTransformPivot {
       Anchor {
@@ -2351,9 +2352,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2409,8 +2410,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIX: 120
     RotationAngle: 90
     RenderTransformPivot {
@@ -2423,9 +2424,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2481,8 +2482,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIY: 80
     RenderTransformPivot {
       Anchor {
@@ -2494,9 +2495,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2552,8 +2553,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIX: 80
     RotationAngle: 90
     RenderTransformPivot {
@@ -2566,9 +2567,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2624,8 +2625,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIY: 40
     RenderTransformPivot {
       Anchor {
@@ -2637,9 +2638,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2695,8 +2696,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIX: 40
     RotationAngle: 90
     RenderTransformPivot {
@@ -2709,9 +2710,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2767,8 +2768,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2779,9 +2780,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2837,8 +2838,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     RotationAngle: 90
     RenderTransformPivot {
       Anchor {
@@ -2850,9 +2851,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2908,8 +2909,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIY: -40
     RenderTransformPivot {
       Anchor {
@@ -2921,9 +2922,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -2979,8 +2980,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIX: -40
     RotationAngle: 90
     RenderTransformPivot {
@@ -2993,9 +2994,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -3051,8 +3052,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIY: -80
     RenderTransformPivot {
       Anchor {
@@ -3064,9 +3065,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -3122,8 +3123,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIX: -80
     RotationAngle: 90
     RenderTransformPivot {
@@ -3136,9 +3137,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -3194,8 +3195,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIY: -120
     RenderTransformPivot {
       Anchor {
@@ -3207,9 +3208,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -3265,8 +3266,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 315
-    Height: 3
+    Width: 310
+    Height: 2
     UIX: -120
     RotationAngle: 90
     RenderTransformPivot {
@@ -3279,9 +3280,9 @@ Objects {
         Id: 7387673503276873905
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.556199908
+        G: 0.715577245
+        B: 0.9
         A: 0.5
       }
       TeamSettings {
@@ -3338,6 +3339,7 @@ Objects {
   Control {
     Width: 350
     Height: 350
+    UIY: 0.5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3348,9 +3350,9 @@ Objects {
         Id: 10491750277735809258
       }
       Color {
-        R: 0.7
-        G: 0.7
-        B: 0.7
+        R: 0.0493199974
+        G: 0.0820855275
+        B: 0.120000005
         A: 0.7
       }
       TeamSettings {
