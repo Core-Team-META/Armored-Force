@@ -70397,6 +70397,8 @@ Objects {
   ChildIds: 14560277503384866981
   ChildIds: 10502941244896560741
   ChildIds: 1958922267170387736
+  ChildIds: 17250444613103601337
+  ChildIds: 7560044751638969746
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -70408,6 +70410,132 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 7560044751638969746
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -12494.9063
+      Y: 25325.1094
+      Z: 137.65625
+    }
+    Rotation {
+      Pitch: -12.6456852
+      Yaw: 27.4246311
+      Roll: -0.343444586
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 1.5
+    }
+  }
+  ParentId: 7255228284457457390
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5189.36914
+            Y: 3286.40234
+            Z: 255.207458
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 12.3538647
+            Yaw: 27.275898
+            Roll: -0.343048096
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2
+            Y: 2
+            Z: 1.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
+    }
+  }
+}
+Objects {
+  Id: 17250444613103601337
+  Name: "TW_Bush01"
+  Transform {
+    Location {
+      X: -12465
+      Y: 25955
+      Z: 65
+    }
+    Rotation {
+      Pitch: 11.4413376
+      Yaw: -128.527054
+      Roll: 5.43329239
+    }
+    Scale {
+      X: 1.40766704
+      Y: 1.40766704
+      Z: 1.05575013
+    }
+  }
+  ParentId: 7255228284457457390
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16934796068878505761
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Bush01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4111.43555
+            Y: 3761.70117
+            Z: 121.481934
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -17.2993469
+            Yaw: -125.347366
+            Roll: 8.54303837
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.75
+            Y: 1.75
+            Z: 1.75
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9960003411460384525
     }
   }
 }
@@ -76351,25 +76479,25 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2959.51465
-            Y: 615.855469
-            Z: 339.138123
+            X: 3101.43555
+            Y: 2051.70117
+            Z: 226.481934
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 11.4413376
-            Yaw: -128.527069
-            Roll: 5.43328905
+            Pitch: 26.3684349
+            Yaw: -126.959534
+            Roll: 5.94552231
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1.40766704
-            Y: 1.40766704
-            Z: 1.05575013
+            X: 1.75
+            Y: 1.75
+            Z: 1.25
           }
         }
       }
@@ -110343,9 +110471,9 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 75525
-      Y: 13300
-      Z: 100
+      X: 76041.0625
+      Y: 12394.4
+      Z: 99.9999695
     }
     Rotation {
       Yaw: -142.007385
@@ -110511,9 +110639,9 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: -30730
-      Y: 16355
-      Z: 100
+      X: -30213.9336
+      Y: 15449.4
+      Z: 99.9999695
     }
     Rotation {
       Yaw: 38.0042572
@@ -110618,16 +110746,49 @@ Objects {
   }
 }
 Objects {
+  Id: 8864662057286598159
+  Name: "InvisibleOneWayWaterColliders"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "InvisibleOneWayWaterColliders"
+  }
+}
+Objects {
   Id: 9931152782035993007
   Name: "TW_Water"
   Transform {
     Location {
-      X: -1900
-      Y: 13575
-      Z: -511.289398
+      X: -1383.90808
+      Y: 12669.4
+      Z: -511.289429
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
     }
     Scale {
       X: 9722.79883
