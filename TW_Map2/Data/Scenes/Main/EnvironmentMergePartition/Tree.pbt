@@ -233,7 +233,6 @@ Objects {
   ChildIds: 13644659879076739241
   ChildIds: 3780955586150116128
   ChildIds: 9676938805086325688
-  ChildIds: 11739997741798601032
   ChildIds: 6349647560062723158
   ChildIds: 13801630481807194975
   ChildIds: 12449248195937036718
@@ -8002,13 +8001,13 @@ Objects {
   }
   ParentId: 13102845937134120119
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -8026,12 +8025,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 13801630481807194975
-    SubobjectId: 476504908591041899
-    InstanceId: 2242430002036858748
-    TemplateId: 4900798215571511034
   }
 }
 Objects {
@@ -8056,13 +8049,13 @@ Objects {
   }
   ParentId: 13102845937134120119
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -8080,78 +8073,6 @@ Objects {
       }
       BoundsScale: 1
     }
-  }
-  InstanceHistory {
-    SelfId: 6349647560062723158
-    SubobjectId: 16216237043534549602
-    InstanceId: 2242430002036858748
-    TemplateId: 4900798215571511034
-  }
-}
-Objects {
-  Id: 11739997741798601032
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: -4764.18555
-      Y: 834.161133
-      Z: 1296.10474
-    }
-    Rotation {
-      Yaw: -20.9309921
-    }
-    Scale {
-      X: 0.830219567
-      Y: 0.830219567
-      Z: 0.830219567
-    }
-  }
-  ParentId: 13102845937134120119
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 7692059865741963186
-      }
-    }
-    Overrides {
-      Name: "ma:Nature_Leaves:id"
-      AssetReference {
-        Id: 2897474060105501612
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11216701439107531141
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 11739997741798601032
-    SubobjectId: 2015649741350995836
-    InstanceId: 2242430002036858748
-    TemplateId: 4900798215571511034
   }
 }
 Objects {
@@ -15112,18 +15033,18 @@ Objects {
   Transform {
     Location {
       X: -3713.17969
-      Y: 15301.6025
-      Z: 1426.06873
+      Y: 14538.2275
+      Z: 1543.76904
     }
     Rotation {
-      Pitch: 10.1499538
-      Yaw: -101.610992
-      Roll: 76.8086548
+      Pitch: -9.64859
+      Yaw: -101.593292
+      Roll: 80.851059
     }
     Scale {
-      X: 4.99147
-      Y: 5.70024
-      Z: 13.7867393
+      X: 4.21100616
+      Y: 5.70024204
+      Z: 13.7867422
     }
   }
   ParentId: 13102845937134120119
@@ -15376,8 +15297,8 @@ Objects {
       Z: 1834.36353
     }
     Rotation {
-      Pitch: -1.73790741
-      Yaw: -49.1513863
+      Pitch: -1.73791504
+      Yaw: -49.1513977
       Roll: 112.20089
     }
     Scale {
@@ -38200,7 +38121,7 @@ Objects {
       Z: 1978.14734
     }
     Rotation {
-      Pitch: -9.90948391
+      Pitch: -9.90948486
       Yaw: 22.7193413
       Roll: 113.420769
     }

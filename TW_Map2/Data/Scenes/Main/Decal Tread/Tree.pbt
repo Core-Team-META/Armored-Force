@@ -6598,14 +6598,14 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: 12174.2822
-      Y: 3067.46191
-      Z: 124.490128
+      X: 12215.6318
+      Y: 3248.97
+      Z: 103.325035
     }
     Rotation {
-      Pitch: -6.48632956
-      Yaw: 77.1662445
-      Roll: -11.648242
+      Pitch: -6.95968628
+      Yaw: 74.8260193
+      Roll: -11.3744202
     }
     Scale {
       X: 1.64184105

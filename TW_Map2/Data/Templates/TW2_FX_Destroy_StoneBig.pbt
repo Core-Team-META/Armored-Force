@@ -140,13 +140,14 @@ Assets {
         Name: "Smoke Puff Radial VFX"
         Transform {
           Location {
+            Y: -2.20788574
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2442503
+            Y: 1.2442503
+            Z: 1.2442503
           }
         }
         ParentId: 16244906926373107681
@@ -157,7 +158,16 @@ Assets {
           }
           Overrides {
             Name: "bp:Density"
-            Float: 0.1
+            Float: 0.178058103
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.554
+              G: 0.511369
+              B: 0.415500015
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -180,7 +190,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:critical"
+          Value: "mc:eproxyrelevance:high"
         }
       }
       Objects {
@@ -192,9 +202,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2.51954842
+            Y: 2.51954842
+            Z: 2.51954842
           }
         }
         ParentId: 16244906926373107681
@@ -209,7 +219,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Density"
-            Float: 0.1
+            Float: 0.320792913
           }
         }
         Collidable_v2 {
@@ -232,7 +242,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:critical"
+          Value: "mc:eproxyrelevance:high"
         }
       }
       Objects {
@@ -244,9 +254,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 4.4
-            Y: 4.4
-            Z: 4.4
+            X: 8.63156
+            Y: 8.63156
+            Z: 8.63156
           }
         }
         ParentId: 16244906926373107681
@@ -284,7 +294,7 @@ Assets {
           }
         }
         Relevance {
-          Value: "mc:eproxyrelevance:critical"
+          Value: "mc:eproxyrelevance:high"
         }
       }
     }
