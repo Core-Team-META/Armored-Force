@@ -1,14 +1,14 @@
-GameId: "1f57c504faf34b5697b95ece79ec8658"
-ClientVersion: "1.41519.905-dev-d"
-Name: "Armored Force Map 3 LTS"
-Description: "Last Team Standing"
+GameId: "3f696321a25949e29ed2f1fc8120b41f"
+ClientVersion: "1.48670.434-test-s"
+Name: "Tundra LTS"
+Description: "Tundra LTS Test"
 MaxPlayers: 16
 Tags: "Experimental"
-ScreenshotPaths: "C:/ProgramData/Manticore Games/Core_Dev/Platform/Saved/Maps/Tank-Wars/TW_Map3/Screenshots/Screenshot0002.png"
-OwnerId: "0683255743f5409e9f09991ff0c54fc4"
+ScreenshotPaths: "C:\\Users\\Patri\\OneDrive\\Documents\\My Games\\CORE_Test\\Saved\\Maps\\Tank-Wars\\TW_Map3\\Screenshots\\Screenshot0001.png"
+OwnerId: "82f754fac0fb4dde89cff5d6a04ec3c9"
 SerializationVersion: 1
 PublishedState: Child
-ParentGameId: "27f6529913fb495987550a976e1a0c94"
+ParentGameId: "b478fdcf494c4259b1a087a098a344a7"
 AllowDirectJoinAsChild: true
 IsQueued: true
 MinPlayersToStart: 2

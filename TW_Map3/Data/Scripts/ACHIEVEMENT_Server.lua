@@ -11,7 +11,7 @@ if not isEnabled then
 end
 local shouldSaveProgress = ROOT:GetCustomProperty("SaveProgress")
 local useSharedKey = ROOT:GetCustomProperty("UseSharedKey")
-local sharedKeyNetRef = ROOT:GetCustomProperty("sharedKeyNetRef")
+local sharedKeyNetRef = ROOT:GetCustomProperty("SharedKeyNetRef")
 
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
@@ -111,9 +111,9 @@ local function PlayerKilled(player, target, weaponType, isHeadShot)
     player.serverUserData.ACH_killCount =
         player.serverUserData.ACH_killCount and player.serverUserData.ACH_killCount + 1 or 1
 
-    ACH_API.AddProgress(player, "KILL", 1)
-    ACH_API.AddProgress(player, "KILL2", 1)
-    ACH_API.AddProgress(player, "KILL3", 1)
+    ACH_API.AddProgress(player, "ASKILL", 1)
+    ACH_API.AddProgress(player, "ASKILL2", 1)
+    ACH_API.AddProgress(player, "ASKILL3", 1)
 
     target.serverUserData.ACH_killCredited = true
     target.serverUserData.ACH_diedInRound = true

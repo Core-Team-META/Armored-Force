@@ -23271,7 +23271,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4369638826208147952
+            Id: 11036095586913707253
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24651,7 +24651,7 @@ Assets {
       }
     }
     Assets {
-      Id: 4369638826208147952
+      Id: 11036095586913707253
       Name: "Donut"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -24673,7 +24673,7 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
   VirtualFolderPath: "ALLIES COMPLETE"
   VirtualFolderPath: "T57"
 }

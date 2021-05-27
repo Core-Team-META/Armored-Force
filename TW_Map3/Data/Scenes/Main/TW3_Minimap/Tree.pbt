@@ -242,11 +242,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "47cb81/screenshottestdivide"
+      String: "e53f41/mapholder"
     }
     Overrides {
       Name: "bp:Screenshot Index"
-      Int: 5
+      Int: 3
     }
     Overrides {
       Name: "bp:Speed"
@@ -3482,7 +3482,7 @@ Objects {
     Overrides {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
-        SelfId: 15635139038248861745
+        SelfId: 13657336482248073503
       }
     }
     Overrides {

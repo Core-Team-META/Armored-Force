@@ -56,10 +56,11 @@ Assets {
           AccelerationRate: 500
           DecelerationRate: 15
           BrakeStrength: 500
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 100
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 60
             LeftTreadWidth: 110
@@ -88,6 +89,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "T-34"
+  SerializationVersion: 87
 }

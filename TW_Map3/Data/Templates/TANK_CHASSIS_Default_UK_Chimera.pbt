@@ -57,10 +57,11 @@ Assets {
           AccelerationRate: 1000
           DecelerationRate: 15
           BrakeStrength: 1000
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 50
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 45
             LeftTreadWidth: 70
@@ -89,5 +90,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }

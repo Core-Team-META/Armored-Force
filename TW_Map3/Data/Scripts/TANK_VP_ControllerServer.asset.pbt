@@ -298,6 +298,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "Vehicle Physics Scripts"
+  SerializationVersion: 87
 }

@@ -57,10 +57,11 @@ Assets {
           AccelerationRate: 700
           DecelerationRate: 15
           BrakeStrength: 700
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 110
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 55
             LeftTreadWidth: 110
@@ -89,6 +90,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "Tiger II"
+  SerializationVersion: 87
 }

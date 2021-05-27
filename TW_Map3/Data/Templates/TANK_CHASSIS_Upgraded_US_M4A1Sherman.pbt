@@ -57,10 +57,11 @@ Assets {
           AccelerationRate: 700
           DecelerationRate: 15
           BrakeStrength: 700
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 120
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 90
@@ -89,6 +90,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "M4A1 Sherman"
+  SerializationVersion: 87
 }

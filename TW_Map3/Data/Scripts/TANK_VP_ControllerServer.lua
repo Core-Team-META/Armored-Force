@@ -32,6 +32,11 @@ local tierValue = script:GetCustomProperty("TierValue")
 local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()
 local target = script:GetCustomProperty("Target"):WaitForObject()
 
+while not _G["standardcombo.Combat.Wrap"] do
+	Task.Wait()
+end
+local COMBAT = _G["standardcombo.Combat.Wrap"]
+
 -- Selected/Active Tank Stats
 local reloadTime = nil
 local projectileDamage = nil
@@ -58,6 +63,7 @@ local driver = nil
 -- Additional Local Variables
 local aimTask = nil
 local reloading = false
+local flipping = false
 local bindingPressedListener = nil
 local diedEventListener = nil
 local destroyedListener = nil
@@ -116,7 +122,7 @@ function AssignDriver(newDriver)
 	explosion = templateReferences:GetCustomProperty("ProjectileExplosion")
 	destroyedTankTempate = templateReferences:GetCustomProperty("DestroyedTank")
 	
-	chassis = World.SpawnAsset(chassisTemplate, {parent = tankGarage, position = script:GetWorldPosition()})
+	chassis = World.SpawnAsset(chassisTemplate, {parent = tankGarage, position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
 	
 	Task.Wait(0.5)
 	
@@ -158,6 +164,12 @@ function AssignDriver(newDriver)
 	
 	SetServerData()
 	
+end
+
+function AssignOwner(newOwner)
+
+	script:SetNetworkedCustomProperty("DriverID", newOwner.id)
+
 end
 
 function SetServerData()
@@ -290,6 +302,8 @@ function OnBindingPressed(player, binding)
 	
 	if binding == "ability_primary" then
 		FireProjectile()
+	elseif binding == "ability_extra_40" and Environment.IsMultiplayerPreview() then
+		driver:Die()
 	end
 
 
@@ -317,7 +331,7 @@ function FireProjectile()
 	
 	firedProjectile.shouldDieOnImpact = true
 	
-	Events.BroadcastToAllPlayers("ANIMATEFIRING", driver, reloadTime)
+	Events.BroadcastToAllPlayers("ANIMATE_FIRING", driver, reloadTime)
 	
 	Task.Wait(reloadTime + 0.1)
 	
@@ -364,9 +378,20 @@ function OnArmorHit(trigger, other)
 		
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
-		driver:ApplyDamage(damageDealt)
+		--driver:ApplyDamage(damageDealt)
+
+		local attackData = {
+			object = driver,
+			damage = damageDealt,
+			source = enemyPlayer,
+			position = nil,
+			rotation = nil,
+			tags = {id = "Example"}
+		}
+		COMBAT.ApplyDamage(attackData)
+
 		
-		print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
+		--print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage)
 	end
 	
@@ -415,6 +440,23 @@ function AdjustTurretAim()
 	
 end
 
+function FlipTank()
+
+	Task.Wait(2)
+	
+	if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
+		chassis:AddImpulse(Vector3.New(0, 0, chassis.mass * 2000))
+		Task.Wait(1)
+		chassis:SetLocalAngularVelocity(Vector3.New(180, 0, 0))
+		Task.Wait(1)
+		chassis:SetLocalAngularVelocity(Vector3.ZERO)
+		Task.Wait(1)
+	end
+	
+	flipping = false
+
+end
+
 function Tick()
 	
 	if Object.IsValid(hitbox) and Object.IsValid(driver) then
@@ -425,6 +467,14 @@ function Tick()
 		
 		if allowHoldDownFiring and driver:IsBindingPressed("ability_primary") then
 			FireProjectile()
+		end
+		
+		if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
+			if not flipping then
+				print("attempting flip")
+				flipping = true
+				Task.Spawn(FlipTank, 0)
+			end
 		end
 		 
 		if driver:IsBindingPressed("ability_extra_21") then -- W

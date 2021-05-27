@@ -500,7 +500,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 8755246352613049809
+            Id: 7672894170880533820
           }
           Teams {
           }
@@ -554,7 +554,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 8755246352613049809
+            Id: 7672894170880533820
           }
           Teams {
           }
@@ -1061,7 +1061,7 @@ Assets {
       }
     }
     Assets {
-      Id: 8755246352613049809
+      Id: 7672894170880533820
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -1074,6 +1074,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "M4A1 Sherman"
+  SerializationVersion: 87
 }

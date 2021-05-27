@@ -59,10 +59,11 @@ Assets {
           AccelerationRate: 1200
           DecelerationRate: 15
           BrakeStrength: 1200
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 100
           }
+          GravityScale: 1.9
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
@@ -818,5 +819,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }

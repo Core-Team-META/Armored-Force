@@ -2,7 +2,7 @@ Assets {
   Id: 8786238017646296429
   Name: "TW3_TreeBark"
   PlatformAssetType: 13
-  SerializationVersion: 86
+  SerializationVersion: 87
   CustomMaterialAsset {
     BaseMaterialId: 6444512414911904420
     ParameterOverrides {

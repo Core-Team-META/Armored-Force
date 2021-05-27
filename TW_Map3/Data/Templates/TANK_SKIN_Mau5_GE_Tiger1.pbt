@@ -12925,9 +12925,9 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 0.188368484
-            Y: 0.567253649
-            Z: 35.6585159
+            X: 0.188063473
+            Y: 0.566925645
+            Z: 34.2762108
           }
           Rotation {
           }
@@ -45814,9 +45814,9 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 2.32517719
+            X: 2.32603741
             Y: 0.333765715
-            Z: 18.6008797
+            Z: 19.0961113
           }
           Rotation {
             Pitch: 85.2343597
@@ -50639,7 +50639,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -50790,7 +50790,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -51319,7 +51319,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -51470,7 +51470,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -65919,7 +65919,7 @@ Assets {
         ChildIds: 12864263370884867828
         ChildIds: 14161248041059777317
         ChildIds: 9657838131774079710
-        ChildIds: 7873512407470262554
+        ChildIds: 4657942056027762013
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -66916,8 +66916,8 @@ Assets {
         }
       }
       Objects {
-        Id: 7873512407470262554
-        Name: "Prism - 3-Sided Polished"
+        Id: 4657942056027762013
+        Name: "Cube - Polished"
         Transform {
           Location {
             X: -539.214783
@@ -66925,8 +66925,8 @@ Assets {
             Z: 6.91462898
           }
           Rotation {
-            Yaw: -90
-            Roll: -149.413635
+            Yaw: -89.9999695
+            Roll: -149.413605
           }
           Scale {
             X: 0.0203958731
@@ -113365,7 +113365,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16374150260036817633
+      Id: 198353679974341757
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -113558,5 +113558,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }
