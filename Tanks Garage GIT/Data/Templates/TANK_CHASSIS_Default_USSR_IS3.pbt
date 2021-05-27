@@ -62,6 +62,7 @@ Assets {
             X: -10
             Z: 100
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 100

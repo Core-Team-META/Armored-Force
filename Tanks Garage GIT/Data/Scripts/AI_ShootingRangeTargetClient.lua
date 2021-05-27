@@ -39,13 +39,21 @@ end
 
 function OnImpact(trigger, other)
 
-	print("hit by projectile")
+	--print("hit by projectile")
 	
 	if other.type == "Projectile" and allowImpact and other.owner == localPlayer then
 	
-		Events.Broadcast("ShowDamageFeedback", savedDamage)
+		if other.clientUserData.hitOnce then
+			return
+		end
+		
+		other.clientUserData.hitOnce = true
+	
+		local actualDamage = math.floor(savedDamage - savedDamage * trigger:GetCustomProperty("ArmorValue"))
+	
+		Events.Broadcast("ShowDamageFeedback", actualDamage)
 			
-		currentHP = currentHP - savedDamage
+		currentHP = currentHP - actualDamage
 		
 		if currentHP <= 0 then
 			currentHP = 0
@@ -73,14 +81,18 @@ function OnImpact(trigger, other)
 end
 
 function GetPlayersTankDamage()
-	for _, e in ipairs(localPlayer:GetEquipment()) do
-		if string.find(e.name, "TANK_") then
-			local newDamage = e:GetCustomProperty("DamagePerShot")
-			if newDamage ~= savedDamage then
-				savedDamage = newDamage
-			end
+
+	if localPlayer.clientUserData.currentTankData and Object.IsValid(localPlayer.clientUserData.currentTankData.controlScript) then
+		local clientScript = localPlayer.clientUserData.currentTankData.controlScript
+		local serverScript = clientScript.parent.parent
+		
+		local newDamage = serverScript:GetCustomProperty("DamagePerShot")
+		
+		if newDamage and newDamage ~= savedDamage then
+			savedDamage = newDamage
 		end
 	end
+
 end
 
 function Tick()
