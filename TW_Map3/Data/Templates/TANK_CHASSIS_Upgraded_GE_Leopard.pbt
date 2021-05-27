@@ -56,10 +56,11 @@ Assets {
           AccelerationRate: 1000
           DecelerationRate: 15
           BrakeStrength: 900
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 100
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 100
@@ -88,6 +89,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "Leopard"
+  SerializationVersion: 87
 }

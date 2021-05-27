@@ -1,7 +1,39 @@
 Name: "Morticai (Brent)"
-RootId: 16330745916369210991
+RootId: 3938293389549324359
 Objects {
-  Id: 13349950449177445216
+  Id: 9213590865146280717
+  Name: "META KilledByUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3938293389549324359
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "META KilledByUI"
+  }
+}
+Objects {
+  Id: 7133435851054616480
   Name: "Achievement System"
   Transform {
     Location {
@@ -14,7 +46,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16330745916369210991
+  ParentId: 3938293389549324359
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -22,17 +54,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SaveProgress"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:UseSharedKey"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:SharedKeyNetRef"
       NetReference {
+        Key: "107fd79174b747cdac21b195559ddadb"
         Type {
-          Value: "mc:enetreferencetype:unknown"
+          Value: "mc:enetreferencetype:sharedpersistence"
         }
       }
     }
@@ -52,7 +85,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12685887268336317528
+  Id: 14107581936855827603
   Name: "Combat Dependencies"
   Transform {
     Location {
@@ -65,10 +98,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16330745916369210991
-  ChildIds: 339041634924695629
-  ChildIds: 5160342658421635145
-  ChildIds: 8429718964631005374
+  ParentId: 3938293389549324359
+  ChildIds: 12419629161890653459
+  ChildIds: 5781302754242912720
+  ChildIds: 2498318607684341370
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -83,7 +116,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8429718964631005374
+  Id: 2498318607684341370
   Name: "CrossContextCaller"
   Transform {
     Location {
@@ -96,7 +129,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12685887268336317528
+  ParentId: 14107581936855827603
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -115,7 +148,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5160342658421635145
+  Id: 5781302754242912720
   Name: "PlayerHomingTargets"
   Transform {
     Location {
@@ -128,7 +161,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12685887268336317528
+  ParentId: 14107581936855827603
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -145,7 +178,7 @@ Objects {
   }
 }
 Objects {
-  Id: 339041634924695629
+  Id: 12419629161890653459
   Name: "CombatWrapAPI"
   Transform {
     Location {
@@ -158,7 +191,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12685887268336317528
+  ParentId: 14107581936855827603
   UnregisteredParameters {
   }
   Collidable_v2 {

@@ -56,10 +56,11 @@ Assets {
           AccelerationRate: 800
           DecelerationRate: 15
           BrakeStrength: 700
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 100
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 70
@@ -88,6 +89,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "M3 Stuart"
+  SerializationVersion: 87
 }

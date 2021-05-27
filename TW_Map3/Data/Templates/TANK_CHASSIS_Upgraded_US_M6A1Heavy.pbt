@@ -57,10 +57,11 @@ Assets {
           AccelerationRate: 500
           DecelerationRate: 15
           BrakeStrength: 500
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 120
           }
+          GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 140
@@ -89,6 +90,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
-  VirtualFolderPath: "M6A1 Heavy"
+  SerializationVersion: 87
 }

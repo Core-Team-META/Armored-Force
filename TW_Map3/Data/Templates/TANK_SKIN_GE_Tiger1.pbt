@@ -1541,9 +1541,9 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: 0.188368484
-            Y: 0.567253649
-            Z: 34.3571663
+            X: 0.188063473
+            Y: 0.566925645
+            Z: 32.4551659
           }
           Rotation {
           }
@@ -15726,9 +15726,9 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated Polished"
         Transform {
           Location {
-            X: 2.32517719
+            X: 2.32603741
             Y: 0.333765715
-            Z: 19.2081947
+            Z: 19.1178055
           }
           Rotation {
             Pitch: 85.2343597
@@ -23672,7 +23672,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -23823,7 +23823,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24352,7 +24352,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24503,7 +24503,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 16374150260036817633
+            Id: 198353679974341757
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -39333,7 +39333,7 @@ Assets {
         ChildIds: 7899392950767310130
         ChildIds: 16312587906815106151
         ChildIds: 17761196252146682948
-        ChildIds: 16933151057520622141
+        ChildIds: 11334251825302982287
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40330,8 +40330,8 @@ Assets {
         }
       }
       Objects {
-        Id: 16933151057520622141
-        Name: "Prism - 3-Sided Polished"
+        Id: 11334251825302982287
+        Name: "Cube - Polished"
         Transform {
           Location {
             X: -539.214783
@@ -40339,8 +40339,8 @@ Assets {
             Z: 6.91462898
           }
           Rotation {
-            Yaw: -90
-            Roll: -149.413635
+            Yaw: -89.9999695
+            Roll: -149.413605
           }
           Scale {
             X: 0.0203958731
@@ -47607,7 +47607,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16374150260036817633
+      Id: 198353679974341757
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -47845,5 +47845,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }

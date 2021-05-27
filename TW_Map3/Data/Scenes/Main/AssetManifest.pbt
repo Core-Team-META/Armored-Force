@@ -1,10 +1,23 @@
 Assets {
-  Id: 13707344558397935713
-  Name: "TankStorage"
+  Id: 18085199332802590211
+  Name: "Tanks01"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "22e16ec4053b4478aed0d586ae67a57d"
+      Key: "be2be36ce2e34cfa86624456e2954eb6"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 15824186331035697774
+  Name: "Achievements01"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "107fd79174b747cdac21b195559ddadb"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -18,18 +31,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_002"
-  }
-}
-Assets {
-  Id: 2270873216224074824
-  Name: "TankStorage2"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "c44d80dce0734c06ad0ddc319af85848"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
