@@ -346,6 +346,41 @@ function API.BuildRewardsTable(list)
     return tempTable
 end
 
+function API.GetRankData(player)
+	return "RANK " .. tostring(player:GetResource(CONST.RANK_NAME))
+end
+
+function API.GetXPValue(player)
+	return player:GetResource(CONST.XP)
+end
+
+function API.GetXPToNextRank(player)
+	local rank = player:GetResource(CONST.RANK_NAME)
+	-- TODO: Make a proper level curve
+	return rank * 1000
+end
+
+function API.GetTankXPValueFromId(tankId)
+	for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
+		if(tank:GetCustomProperty("ID") == tankId) then
+			local tier = tank:GetCustomProperty("Tier")
+			if(tier == 1) then
+				return CONST.XP_TIER_VALUE.TIER1
+			elseif(tier == 2) then
+				return CONST.XP_TIER_VALUE.TIER2
+			elseif(tier == 3) then
+				return CONST.XP_TIER_VALUE.TIER3
+			elseif(tier == 4) then
+				return CONST.XP_TIER_VALUE.TIER4
+			else
+				return CONST.XP_TIER_VALUE.TIER1
+			end
+		end
+	end
+	warn("XP value not found with tank Id: " .. tankId)
+	return CONST.XP_TIER_VALUE.TIER1
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- COSMETIC DATA FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -595,6 +630,16 @@ function API.RetrieveTankNameById(id, tankCollection)
 	end
 	warn("Tank not found with Id: " .. id)
 	return "M3 Stuart"
+end
+
+function API.CalculateLeaveEarlyEarnings(timeElapsed, matchDuration, maxAwardXP)
+	local percentagedElapsed = timeElapsed / matchDuration
+	local awardedXP = percentagedElapsed * maxAwardXP
+	-- Only award up to 50% of the maximum as a penalty for leaving early
+	if(awardedXP > (maxAwardXP / 2)) then
+		awardedXP = math.floor(maxAwardXP / 2)
+	end
+	return awardedXP
 end
 
 ------------------------------------------------------------------------------------------------------------------------

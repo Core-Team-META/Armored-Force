@@ -241,11 +241,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "47cb81/screenshottestdivide"
+      String: "e53f41/mapholder"
     }
     Overrides {
       Name: "bp:Screenshot Index"
-      Int: 3
+      Int: 2
     }
     Overrides {
       Name: "bp:Speed"

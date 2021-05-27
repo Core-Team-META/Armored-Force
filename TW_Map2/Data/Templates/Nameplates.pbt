@@ -337,5 +337,5 @@ Assets {
       AssetId: "Nameplates"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }

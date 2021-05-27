@@ -32,13 +32,7 @@ function StateSTART(manager, propertyName)
 			ReliableEvents.Broadcast("WINNER", leadTeam)
 			
 			_G["GameWinner"] = leadTeam
-			
-			for x, p in pairs(Game.GetPlayers()) do
-				
-				p:Respawn()
-					
-			end
-			
+						
 			Game.EndRound()
 									
 		end

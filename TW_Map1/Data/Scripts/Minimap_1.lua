@@ -106,14 +106,15 @@ boundsBottom = script:GetCustomProperty("BoundsHeight") * 0.5
 local boundsWidth = (boundsRight - boundsLeft)
 local boundsHeight = boundsBottom - boundsTop
 
-
 -- Precompute coeficients
 local scaleX = MAP_PANEL.width / boundsWidth
 local scaleY = scaleX
+
 if boundsHeight > boundsWidth then
 	scaleY = MAP_PANEL.height / boundsHeight
 	scaleX = scaleY
 end
+
 local scaleLabels = scaleY * 0.15
 --local offsetX = 0
 --local offsetY = 0
@@ -166,7 +167,6 @@ end
 
 -- Team Bases Game Mode Objectives
 for _, objective in ipairs(BaseObjectiveObjects:GetChildren()) do
-
 	local objectiveSet = {}
 	
 	objectiveSet[1] = World.SpawnAsset(OBJECTIVE_PIECE_TEMPLATE, {parent = MAP_PANEL})
@@ -187,21 +187,14 @@ for _, objective in ipairs(BaseObjectiveObjects:GetChildren()) do
 	objectiveSet[1].y = (pos.y - boundsTop) * scaleY
 	
 	if name.text == "A" then
-	
 		objectiveSet[1].team = 1
-		
 	elseif  name.text == "B" then
-	
 		objectiveSet[1].team = 2
-		
 	end
 	
 	objectiveSet[2] = objective:FindDescendantByName(string.sub(center.name, 1, 1) .. "PointVisual")
-	
 	objectiveSet[1].visibility = objectiveSet[2].visibility
-	
 	table.insert(TeamBasesObjectives, objectiveSet)	
-
 end
 
 -- Labels
@@ -241,97 +234,49 @@ function Tick()
 	end
 	
 	for _, objective in ipairs(TeamBasesObjectives) do
-	
 		objective[1].visibility = objective[2].visibility
-		
 	end
 end
 
 function GetIndicatorType(player)
 
-	local tank = nil
+	local tankType = nil
 	
-	for _, e in ipairs(player:GetEquipment()) do
-		
-		if string.find(e.name, "TANK_V") then
-			
-			tank = e
-				
-			break
-				
-		end
-			
+	if player.clientUserData.currentTankData then
+		tankType = player.clientUserData.currentTankData.type
 	end
 	
-	player.clientUserData.minimapType = nil
-	
-	if tank then
-	
-		local type = tank:GetCustomProperty("TankType")
-		
-		player.clientUserData.minimapType = type
-		
-		if type == "LIGHT" then
-		
-			return LIGHT_TANK_TEMPLATE
+	player.clientUserData.minimapType = tankType
 			
-		elseif type == "MEDIUM" then
-		
-			return MEDIUM_TANK_TEMPLATE
-		
-		elseif type == "HEAVY" then
-		
-			return HEAVY_TANK_TEMPLATE
-			
-		elseif type == "DESTROYER" then
-		
-			return DESTROYER_TANK_TEMPLATE
-		
-		end 
-		
-		
-	end
+	if tankType == "Light" then
+		return LIGHT_TANK_TEMPLATE
+	elseif tankType == "Medium" then
+		return MEDIUM_TANK_TEMPLATE
+	elseif tankType == "Heavy" then
+		return HEAVY_TANK_TEMPLATE
+	elseif tankType == "Destroyer" then
+		return DESTROYER_TANK_TEMPLATE
+	end 
 	
-	warn("COULD NOT FIND TANK TYPE FOR " .. player.name .. " : " .. tostring(player.clientUserData.minimapType))
+	--warn("COULD NOT FIND TANK TYPE FOR " .. player.name .. " : " .. tostring(player.clientUserData.minimapType))
 	
 	return PLAYER_TEMPLATE
-
 
 end
 
 function CheckIndicatorType(player)
 
-	local tank = nil
-
-	for _, e in ipairs(player:GetEquipment()) do
-		
-		if string.find(e.name, "TANK_V") then
-			
-			tank = e
-				
-			break
-				
-		end
-			
+	local tankType = nil
+	
+	if player.clientUserData.currentTankData then
+		tankType = player.clientUserData.currentTankData.type
 	end
 	
-	if tank then
-	
-		local type = tank:GetCustomProperty("TankType")
-
-		if player.clientUserData.minimapType == type then
-		
-			return true
-			
-		else 
-		
-			return false
-						
-		end
-		
+	if player.clientUserData.minimapType == tankType then
+		return true
+	else
+		return false			
 	end
-	
-	return true
 	
 end
 
@@ -351,16 +296,15 @@ function GetIndicatorForPlayer(player)
 	end
 	
 	if Object.IsValid(player.clientUserData.minimap) then
-	
 		player.clientUserData.minimap:Destroy()
 		player.clientUserData.minimapScript = nil
-		
 	end
 	
 	-- Spawn new indicator for this player
 	local minimapPlayer = World.SpawnAsset(GetIndicatorType(player), {parent = MAP_PANEL})
 	player.clientUserData.minimap = minimapPlayer
 	return minimapPlayer
+	
 end
 
 

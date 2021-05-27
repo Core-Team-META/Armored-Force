@@ -1,3 +1,6 @@
+-- API
+local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local statisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
 
@@ -24,16 +27,28 @@ local victoryXPValue = statisticsComponent:GetCustomProperty("VictoryXPValue")
 local victoryCurrencyValue = statisticsComponent:GetCustomProperty("VictoryCurrencyValue")
 local lossXPValue = statisticsComponent:GetCustomProperty("LossXPValue")
 local lossCurrencyValue = statisticsComponent:GetCustomProperty("LossCurrencyValue")
+local drawXPValue = statisticsComponent:GetCustomProperty("DrawXPValue")
+local drawCurrencyValue = statisticsComponent:GetCustomProperty("DrawCurrencyValue")
+
 local killXPValue = statisticsComponent:GetCustomProperty("KillXPValue")
 local killCurrencyValue = statisticsComponent:GetCustomProperty("KillCurrencyValue")
 
+local survivalXPValue = statisticsComponent:GetCustomProperty("SurvivalXPValue")
+local survivalCurrencyValue = statisticsComponent:GetCustomProperty("SurvivalCurrencyValue")
+
+local survivalXPAmountText = script:GetCustomProperty("SurvivalXPAmountText"):WaitForObject()
+local survivalCurrencyAmountText = script:GetCustomProperty("SurvivalCurrencyAmountText"):WaitForObject()
+
+local showXPPanel = script:GetCustomProperty("ShowXPPanel"):WaitForObject()
+local XPEntry = script:GetCustomProperty("XPEntry")
+local RankEntry = script:GetCustomProperty("RankEntry")
+
 local localPlayer = Game.GetLocalPlayer()
-
 local localTeam = 0
-
 local winner = -1
 
 function SetChildrenText(uiObj,_text) -- <-- generic children text function by AJ
+
     if Object.IsValid(uiObj) and uiObj:IsA("UIText") then
         uiObj.text = _text
     end
@@ -112,16 +127,16 @@ function CalculateTotalXP(player)
 	local baseXP = 0
 	
 	if winner == player.team then
-	
 		baseXP = victoryXPValue
-		
-	else 
-	
+	elseif winner > 0 then
 		baseXP = lossXPValue
-		
+	else
+		baseXP = drawXPValue
 	end
 	
-	return baseXP + player.kills * killXPValue
+	local survivalBonus = math.floor(survivalXPValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
+	
+	return baseXP + survivalBonus + (player.kills * killXPValue)
 	
 end
 
@@ -130,16 +145,16 @@ function CalculateTotalCurrency(player)
 	local baseCurrency = 0
 	
 	if winner == player.team then
-	
 		baseCurrency = victoryCurrencyValue
-		
-	else 
-	
+	elseif winner > 0 then 
 		baseCurrency = lossCurrencyValue
-		
+	else
+		baseCurrency = drawCurrencyValue
 	end
 	
-	return baseCurrency + player.kills * killCurrencyValue
+	local survivalBonus = math.floor(survivalCurrencyValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
+	
+	return baseCurrency + survivalBonus + (player.kills * killCurrencyValue)
 	
 end
 
@@ -152,13 +167,10 @@ end
 function StateSTART(manager, propertyName)
 
 	if propertyName ~= "GameState" then
-	
 		return
-		
 	end
 	
 	if mainGameStateManager:GetCustomProperty("GameState") == "LOBBY_STATE" then
-	
 		winner = -1
 	
 		return
@@ -172,6 +184,9 @@ function StateSTART(manager, propertyName)
 		
 		killXPAmountText.text = ""
 		killCurrencyAmountText.text = ""
+		
+		survivalXPAmountText.text = ""
+		survivalCurrencyAmountText.text = ""
 		
 		totalXPAmountText.text = ""
 		totalCurrencyAmountText.text = ""
@@ -237,18 +252,27 @@ function ShowStatisticsAnimation()
 		winLossText.text = "YOUR TEAM WON"
 		baseText.text = "Victory Earnings: "
 		
-	else 
+	elseif winner > 0 then
 	
 		baseXP = lossXPValue
 		baseCurrency = lossCurrencyValue
 		winLossText.text = "YOUR TEAM LOST"
 		baseText.text = "Loss Earnings: "
 		
+	else 
+
+		baseXP = drawXPValue
+		baseCurrency = drawCurrencyValue
+		winLossText.text = "DRAW"
+		baseText.text = "Draw Earnings: "		
+		
 	end
 
 	RollUpNumberText(baseXPAmountText, baseXP, baseCurrencyAmountText, baseCurrency)
 	
 	RollUpNumberText(killXPAmountText, localPlayer.kills * killXPValue, killCurrencyAmountText, localPlayer.kills * killCurrencyValue)
+	
+	RollUpNumberText(survivalXPAmountText, math.floor(survivalXPValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)), survivalCurrencyAmountText, math.floor(survivalCurrencyValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)))
 
 	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
 	
@@ -258,7 +282,26 @@ function ShowStatisticsAnimation()
 
 end
 
+function ShowXP(obj)
+	local panel = World.SpawnAsset(XPEntry, {parent = showXPPanel})
+	panel:FindChildByName("Text").text = Constants_API.XP_GAIN_TEXT[obj.reason] .. " XP+" .. tostring(obj.amount)
+	panel:FindChildByName("Text2").text = Constants_API.XP_GAIN_TEXT[obj.reason] .. " XP+" .. tostring(obj.amount)
+	panel.lifeSpan = 2
+end
+
+function OnResourceChanged(player, resource, value)
+	if(resource == Constants_API.RANK_NAME) then
+		local panel = World.SpawnAsset(RankEntry, {parent = showXPPanel})
+		panel:FindChildByName("Text").text = " RANK UP! Rank " .. tostring(value)
+		panel:FindChildByName("Text2").text = " RANK UP! Rank " .. tostring(value)
+		panel.lifeSpan = 3
+	end
+end
+
 Game.roundStartEvent:Connect(SaveTeam)
 
+localPlayer.resourceChangedEvent:Connect(OnResourceChanged)
+
 Events.Connect("WINNERclient", SetWinner)
+Events.Connect("GainXP", ShowXP)
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)

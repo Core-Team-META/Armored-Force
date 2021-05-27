@@ -56,7 +56,7 @@ Assets {
           AccelerationRate: 500
           DecelerationRate: 15
           BrakeStrength: 500
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 100
           }
@@ -89,5 +89,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }
