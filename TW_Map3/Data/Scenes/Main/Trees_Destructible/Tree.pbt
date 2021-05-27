@@ -1,6 +1,124 @@
 Name: "Trees_Destructible"
 RootId: 9644438302980116240
 Objects {
+  Id: 1617854924349220000
+  Name: "TW3_Tree_Destructible"
+  Transform {
+    Location {
+      X: 5733.86475
+      Y: -1853.72266
+      Z: 12.680069
+    }
+    Rotation {
+      Yaw: -154.602554
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12561400358109127262
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1121.38635
+            Y: -6592.57666
+            Z: -40.0830231
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -154.602554
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14490812313093711740
+    }
+  }
+}
+Objects {
+  Id: 5781172186471292873
+  Name: "TW3_Tree2_Destructible"
+  Transform {
+    Location {
+      X: 2419.98926
+      Y: 17349.8652
+      Z: 4.78314209
+    }
+    Rotation {
+      Yaw: -119.242203
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9644438302980116240
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7691061584645470247
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW3_Tree2_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1000.74445
+            Y: 14069.3398
+            Z: -40.5900879
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -119.242203
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2230310488114005167
+    }
+  }
+}
+Objects {
   Id: 12173806841127693489
   Name: "TW3_Tree3_Destructible"
   Transform {

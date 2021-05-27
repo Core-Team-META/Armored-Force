@@ -1,6 +1,307 @@
 Name: "Ice_Breakable"
 RootId: 10179970712843138106
 Objects {
+  Id: 16911920003205572004
+  Name: "TW_Ice_Destructible01"
+  Transform {
+    Location {
+      X: 561.33252
+      Y: 15080.0186
+      Z: -54.9997559
+    }
+    Rotation {
+      Yaw: -102.921608
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10179970712843138106
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17166053848095756977
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Ice_Destructible01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 473.255371
+            Y: 14451.8691
+            Z: -54.9997559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -102.921631
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13481523236563720043
+    }
+  }
+}
+Objects {
+  Id: 8696447416694343959
+  Name: "TW_Ice_Destructible01"
+  Transform {
+    Location {
+      X: 2068.22583
+      Y: 15657.1465
+      Z: -54.9997559
+    }
+    Rotation {
+      Yaw: -157.989944
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10179970712843138106
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17166053848095756977
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Ice_Destructible01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 561.33252
+            Y: 15080.0186
+            Z: -54.9997559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -102.9216
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13481523236563720043
+    }
+  }
+}
+Objects {
+  Id: 18307746860618445695
+  Name: "TW_Ice_Destructible01"
+  Transform {
+    Location {
+      X: 1377.89355
+      Y: 14290.8906
+      Z: -55.0002441
+    }
+    Rotation {
+      Yaw: 32.9945183
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10179970712843138106
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17166053848095756977
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Ice_Destructible01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -695.939209
+            Y: 12536.0332
+            Z: -55.0004883
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 53.1194572
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13481523236563720043
+    }
+  }
+}
+Objects {
+  Id: 6839997103125430024
+  Name: "TW_Ice_Destructible02"
+  Transform {
+    Location {
+      X: 688.926
+      Y: 14057.0645
+      Z: -54.9992676
+    }
+    Rotation {
+      Yaw: 59.6430931
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10179970712843138106
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6540320886333325920
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Ice_Destructible02"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1262.38867
+            Y: 12079.4316
+            Z: -54.9995117
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 79.7678528
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 913715863164874785
+    }
+  }
+}
+Objects {
+  Id: 4831714155756393462
+  Name: "TW_Ice_Destructible01"
+  Transform {
+    Location {
+      X: 1377.89355
+      Y: 14290.8906
+      Z: -55.0002441
+    }
+    Rotation {
+      Yaw: 32.9945183
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10179970712843138106
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17166053848095756977
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TW_Ice_Destructible01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -574.190918
+            Y: 13294.5361
+            Z: -54.9997559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -156.448471
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13481523236563720043
+    }
+  }
+}
+Objects {
   Id: 14008133965501445297
   Name: "TW_Ice_Destructible02"
   Transform {
@@ -39,9 +340,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1432.72729
-            Y: 13345.6738
-            Z: -54.9990234
+            X: -2098.43799
+            Y: 13088.7461
+            Z: -54.9992676
           }
         }
         Overrides {
@@ -98,15 +399,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1745.00549
-            Y: 15837.5215
-            Z: -55
+            X: 53.9224854
+            Y: 13738.0938
+            Z: -55.0004883
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 34.119236
+            Yaw: -145.822571
           }
         }
         Overrides {
@@ -157,15 +458,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 420.473389
-            Y: 15286.0742
-            Z: -54.9997559
+            X: 1377.89355
+            Y: 14290.8906
+            Z: -55.0002441
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -147.063889
+            Yaw: 32.994503
           }
         }
         Overrides {
@@ -222,15 +523,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1109.67944
-            Y: 15519.1963
-            Z: -54.9987793
+            X: 688.926
+            Y: 14057.0645
+            Z: -54.9992676
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -120.415466
+            Yaw: 59.6431084
           }
         }
         Overrides {
@@ -281,15 +582,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2371.89355
-            Y: 16181.9082
-            Z: -54.9986572
+            X: 2602.91821
+            Y: 15993.2852
+            Z: -54.9984131
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 21.202095
+            Yaw: 27.3780537
           }
         }
         Overrides {
@@ -346,15 +647,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3033.56982
-            Y: 16181.2354
+            X: 3286.53784
+            Y: 15999.9854
             Z: -55.0007324
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -16.8473358
+            Yaw: -10.6714172
           }
         }
         Overrides {
@@ -647,8 +948,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4467.90771
-            Y: 15123.9727
+            X: 4560.63232
+            Y: 15265.3193
             Z: -54.9987793
           }
         }
@@ -1674,9 +1975,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3978.21387
-            Y: -2084.47168
-            Z: -54.9997559
+            X: 3552.979
+            Y: -1746.06335
+            Z: -54.9992676
           }
         }
         Overrides {
@@ -1739,9 +2040,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4474.58691
-            Y: -1475.86279
-            Z: -54.9990234
+            X: 4082.63281
+            Y: -1198.02307
+            Z: -54.9984131
           }
         }
         Overrides {
@@ -1857,15 +2158,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4871.49561
-            Y: -975.040527
-            Z: -54.9993896
+            X: 4402.00195
+            Y: -622.981567
+            Z: -54.9984131
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 54.1282043
+            Yaw: 68.5400314
           }
         }
         Overrides {
@@ -1916,15 +2217,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 5285.29492
-            Y: -492.933105
-            Z: -54.9993896
+            X: 4682.7876
+            Y: -53.0545044
+            Z: -54.9984131
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -115.943901
+            Yaw: -101.532074
           }
         }
         Overrides {
@@ -1975,15 +2276,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 5528.32568
-            Y: 293.876556
-            Z: -54.9997559
+            X: 5074.29248
+            Y: 601.495605
+            Z: -54.9992676
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -102.357254
+            Yaw: -102.357239
           }
         }
         Overrides {
@@ -2099,15 +2400,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6268.42578
-            Y: 2404.20728
+            X: 6193.86914
+            Y: 2450.40747
             Z: -54.9993896
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 75.3912582
+            Yaw: 67.1625443
           }
         }
         Overrides {
@@ -2158,15 +2459,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6105.85254
-            Y: 1623.97705
+            X: 5921.30029
+            Y: 1701.47827
             Z: -54.9997559
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 71.0569
+            Yaw: 62.828392
           }
         }
         Overrides {
@@ -2223,15 +2524,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 5743.22803
-            Y: 1004.71289
+            X: 5473.77783
+            Y: 1140.48975
             Z: -54.9987793
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 97.7054749
+            Yaw: 89.4764633
           }
         }
         Overrides {
@@ -2282,15 +2583,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2805.23853
-            Y: 13225.4414
-            Z: -54.9993896
+            X: -1752.06506
+            Y: 13135.251
+            Z: -55.0001221
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 66.6902924
+            Yaw: 47.8045387
           }
         }
         Overrides {
@@ -2341,15 +2642,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3083.97217
-            Y: 12478.7842
-            Z: -54.9997559
+            X: -2353.5
+            Y: 12516.7412
+            Z: -55.0004883
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 62.3561
+            Yaw: 43.4703865
           }
         }
         Overrides {
@@ -2400,8 +2701,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2147.19312
-            Y: 13497.4951
+            X: -1840.11035
+            Y: 11949.541
             Z: -54.9997559
           }
         }
@@ -2459,15 +2760,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -41.8088379
-            Y: 14686.6797
-            Z: -54.9991455
+            X: 1839.56873
+            Y: 14890.75
+            Z: -54.9996338
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 80.7287
+            Yaw: -99.2131958
           }
         }
         Overrides {
@@ -2518,15 +2819,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -271.244873
-            Y: 13920.5156
-            Z: -54.9992676
+            X: 2068.22583
+            Y: 15657.1465
+            Z: -54.9997559
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 21.9519501
+            Yaw: -157.989944
           }
         }
         Overrides {
@@ -2583,8 +2884,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -816.617249
-            Y: 13463.4619
+            X: -1054.9165
+            Y: 13121.8672
             Z: -54.9990234
           }
         }
@@ -2701,15 +3002,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3049.16235
-            Y: 11818.4277
-            Z: -54.9993896
+            X: -2438.28149
+            Y: 11882.9326
+            Z: -55.0001221
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 110.949722
+            Yaw: 92.0641937
           }
         }
         Overrides {
@@ -2760,15 +3061,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2727.69165
-            Y: 11089.1504
-            Z: -54.9997559
+            X: -2370.16895
+            Y: 11088.8643
+            Z: -55.0004883
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 106.615509
+            Yaw: 87.7298508
           }
         }
         Overrides {
@@ -4176,6 +4477,83 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2233341082434207126
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 26.9122677
+            Y: 235.660553
+            Z: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -5.90316772
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5933090443418648068
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -444.301666
+            Y: -389.223907
+            Z: 0.000122070313
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -59.2528381
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11158816504774483270
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3.13919258
+            Y: -209.758118
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11875453430358470913
+      value {
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 29.8736057
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 9.30754089
+            Y: 3.75000262
+            Z: 2.25
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -219.399307
+            Y: -75.8829575
+            Z: -60
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17166053848095756977
       value {
         Overrides {
@@ -4185,9 +4563,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 424.175537
-            Y: -7457.32422
-            Z: -55.0007324
+            X: 549.463257
+            Y: -6861.98291
+            Z: -55.0012207
           }
         }
         Overrides {
@@ -4250,8 +4628,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -218.406738
-            Y: -7903.70068
+            X: -472.529297
+            Y: -6398.74121
             Z: -55.0007324
           }
         }
@@ -4315,15 +4693,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -671.4104
-            Y: -8645.92578
+            X: -925.532959
+            Y: -7140.96338
             Z: -55.0004883
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -80.6617813
+            Yaw: -80.6617737
           }
         }
         Overrides {
@@ -4374,8 +4752,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2572.33545
-            Y: -4422.71875
+            X: 2188.12061
+            Y: -3838.70703
             Z: -55
           }
         }
@@ -4433,8 +4811,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2899.47021
-            Y: -3753.08936
+            X: 2465.06592
+            Y: -3235.05688
             Z: -54.9996338
           }
         }
@@ -4498,9 +4876,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3292.7749
-            Y: -3212.02026
-            Z: -55.0007324
+            X: 2609.31958
+            Y: -2494.49219
+            Z: -55.0002441
           }
         }
         Overrides {
@@ -4563,9 +4941,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3924.67676
-            Y: -2859.75439
-            Z: -55.0007324
+            X: 3402.75879
+            Y: -2715.65601
+            Z: -55.0002441
           }
         }
         Overrides {
@@ -4622,15 +5000,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1961.88062
-            Y: -4851.45752
+            X: 1773.62476
+            Y: -4409.29639
             Z: -55
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -113.571831
+            Yaw: -113.571838
           }
         }
         Overrides {
@@ -4681,15 +5059,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1702.31519
-            Y: -5483.8833
+            X: 1261.69397
+            Y: -4888.22266
             Z: -54.9996338
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -90.7405396
+            Yaw: -99.6869507
           }
         }
         Overrides {
@@ -4746,15 +5124,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1426.13086
-            Y: -6093.11865
-            Z: -55.0007324
+            X: 863.190308
+            Y: -5486.3584
+            Z: -55.0012207
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 49.877636
+            Yaw: 86.7558823
           }
         }
         Overrides {
@@ -4811,8 +5189,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 878.193604
-            Y: -6565.51123
+            X: 387.508057
+            Y: -6032.00146
             Z: -55.0007324
           }
         }
@@ -4870,8 +5248,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1162.55957
-            Y: -9180.6123
+            X: -1416.68213
+            Y: -7675.64941
             Z: -55
           }
         }
@@ -4929,15 +5307,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1474.71436
-            Y: -9857.35547
-            Z: -54.9996338
+            X: -1563.35449
+            Y: -8326.87891
+            Z: -54.9998779
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -101.092819
+            Yaw: -90.0827
           }
         }
         Overrides {
@@ -4994,15 +5372,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1855.88232
-            Y: -10407.0439
-            Z: -55.0007324
+            X: -1815.95508
+            Y: -9112.13281
+            Z: -55.0009766
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 39.5252609
+            Yaw: 50.5353661
           }
         }
         Overrides {
@@ -5059,15 +5437,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2474.27808
-            Y: -10761.5957
-            Z: -55.0007324
+            X: -1852.84302
+            Y: -9751.31152
+            Z: -55.0009766
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -122.422745
+            Yaw: -111.412292
           }
         }
         Overrides {
@@ -5124,15 +5502,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2934.2793
-            Y: -11605.2871
-            Z: -55.0004883
+            X: -2719.01318
+            Y: -9455.69336
+            Z: -55.0007324
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -80.6617813
+            Yaw: -69.6513672
           }
         }
         Overrides {
@@ -5183,15 +5561,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3224.05615
-            Y: -12211.1563
-            Z: -54.9993896
+            X: -3051.49316
+            Y: -9958.93359
+            Z: -54.9998779
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -118.110359
+            Yaw: -107.099991
           }
         }
         Overrides {
@@ -5242,15 +5620,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3752.86475
-            Y: -11911.6943
-            Z: -54.9997559
+            X: -3431.2937
+            Y: -10424.4941
+            Z: -55.0002441
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 115.887802
+            Yaw: 126.89782
           }
         }
         Overrides {
@@ -5301,8 +5679,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -4180.86865
-            Y: -11301.5869
+            X: -4466.56787
+            Y: -10827.2754
             Z: -54.9993896
           }
         }
@@ -7621,8 +7999,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -18931.1543
-            Y: -30192.0703
+            X: -18355.9121
+            Y: -29873.2422
             Z: -55.0004883
           }
         }
