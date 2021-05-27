@@ -2522,8 +2522,8 @@ Objects {
     Overrides {
       Name: "bp:Horizon Color"
       Color {
-        R: 0.207999945
-        G: 0.847143948
+        R: 0.582999945
+        G: 0.805399895
         B: 1
         A: 0.901
       }
@@ -2565,7 +2565,8 @@ Objects {
     Overrides {
       Name: "bp:Cloud Color"
       Color {
-        G: 0.533333063
+        R: 0.390999973
+        G: 0.715799689
         B: 1
         A: 1
       }
@@ -2802,9 +2803,9 @@ Objects {
     Overrides {
       Name: "bp:Color"
       Color {
-        R: 0.0934399739
-        G: 0.259941578
-        B: 0.64
+        R: 0.64
+        G: 0.481365293
+        B: 0.423679948
         A: 1
       }
     }
