@@ -56,7 +56,7 @@ Assets {
           AccelerationRate: 700
           DecelerationRate: 15
           BrakeStrength: 700
-          TireFriction: 50
+          TireFriction: 20
           GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
@@ -86,5 +86,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }
