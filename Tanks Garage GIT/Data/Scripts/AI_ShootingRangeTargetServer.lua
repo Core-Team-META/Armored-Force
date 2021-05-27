@@ -16,7 +16,9 @@ function Initialize()
 		pacingTask.repeatInterval = 0
 	end
 	
-	for _, t in ipairs(enemyHitbox:GetChildren()) do
+	local hitboxes = enemyHitbox:GetChildren()
+	
+	for _, t in ipairs(hitboxes) do
 		t.beginOverlapEvent:Connect(OnImpact)
 	end
 	
@@ -26,15 +28,16 @@ function OnImpact(trigger, other)
 	
 	if other.type == "Projectile" then
 	
-		local explosion = World.SpawnAsset(explosionVFX, {position = other:GetWorldPosition()})
-		
-		explosion.lifeSpan = 2
-		
-		Task.Wait(0.1)
-		
-		if Object.IsValid(other) then
-			other:Destroy()
+		if other.serverUserData.hitOnce then
+			return
 		end
+		
+		other.serverUserData.hitOnce = true
+		other.speed = 0
+		other.capsuleRadius = 0
+		other.capsuleLength = 0
+		other.lifeSpan = 0.1
+			
 	end
 
 end

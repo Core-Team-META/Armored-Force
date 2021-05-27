@@ -1,13 +1,13 @@
 Assets {
-  Id: 12740784258620985029
-  Name: "RP_TANKLIST_TANK"
+  Id: 4299356226100361856
+  Name: "QUICKSELECTTANK_TEMPLATE"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 10398001065411322558
+      RootId: 6048669626846972382
       Objects {
-        Id: 10398001065411322558
-        Name: "RP_TANKLIST_TANK"
+        Id: 6048669626846972382
+        Name: "QUICKSELECTTANK_TEMPLATE"
         Transform {
           Scale {
             X: 1
@@ -15,16 +15,16 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1612973605638649547
-        ChildIds: 17035423910161843707
-        ChildIds: 7973202077417858615
-        ChildIds: 13517039300885372983
-        ChildIds: 66717366421728478
-        ChildIds: 4917002971350866895
-        ChildIds: 14797053901829402713
-        ChildIds: 15957667548732072640
-        ChildIds: 17360964630146172686
-        ChildIds: 111490579092347996
+        ParentId: 12790749656399020920
+        ChildIds: 1907237838836454983
+        ChildIds: 11004726524238017931
+        ChildIds: 5586731679250592651
+        ChildIds: 17794604396307939170
+        ChildIds: 12835981707442899059
+        ChildIds: 4271549194348143589
+        ChildIds: 3128633308080468348
+        ChildIds: 500088834568524978
+        ChildIds: 9068892075957817934
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39,7 +39,7 @@ Assets {
         }
         Control {
           Width: 100
-          Height: 40
+          Height: 45
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -64,7 +64,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17035423910161843707
+        Id: 1907237838836454983
         Name: "BG"
         Transform {
           Location {
@@ -77,7 +77,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
+        ParentId: 6048669626846972382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -93,7 +93,6 @@ Assets {
         Control {
           Width: 200
           Height: 200
-          UIY: 2.5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -131,7 +130,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7973202077417858615
+        Id: 11004726524238017931
         Name: "DIVIDER"
         Transform {
           Location {
@@ -144,7 +143,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
+        ParentId: 6048669626846972382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -160,7 +159,6 @@ Assets {
         Control {
           Width: -6
           Height: 1
-          UIY: 3
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -201,7 +199,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13517039300885372983
+        Id: 5586731679250592651
         Name: "TANK_TIER"
         Transform {
           Location {
@@ -214,7 +212,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
+        ParentId: 6048669626846972382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -228,9 +226,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 50
+          Width: 60
           Height: 60
-          UIY: 10
+          UIY: 7
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -240,12 +238,12 @@ Assets {
           Text {
             Label: "T4"
             Color {
-              R: 0.111932434
-              G: 0.111932434
-              B: 0.111932434
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
-            Size: 16
+            Size: 18
             Justification {
               Value: "mc:etextjustify:center"
             }
@@ -277,7 +275,7 @@ Assets {
         }
       }
       Objects {
-        Id: 66717366421728478
+        Id: 17794604396307939170
         Name: "TANK_CLASS"
         Transform {
           Location {
@@ -290,7 +288,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
+        ParentId: 6048669626846972382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -304,10 +302,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 140
+          Width: 120
           Height: 60
-          UIX: 50
-          UIY: 10
+          UIX: 60
+          UIY: 7
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -315,14 +313,14 @@ Assets {
           }
           UseParentHeight: true
           Text {
-            Label: "Destroyer Premium"
+            Label: "Heavy Premium"
             Color {
-              R: 0.111932434
-              G: 0.111932434
-              B: 0.111932434
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
-            Size: 16
+            Size: 18
             Justification {
               Value: "mc:etextjustify:center"
             }
@@ -354,7 +352,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4917002971350866895
+        Id: 12835981707442899059
         Name: "TANK_NAME"
         Transform {
           Location {
@@ -367,7 +365,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
+        ParentId: 6048669626846972382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -383,8 +381,8 @@ Assets {
         Control {
           Width: 150
           Height: 60
-          UIX: 190
-          UIY: 10
+          UIX: 180
+          UIY: 7
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -399,7 +397,7 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 16
+            Size: 18
             Justification {
               Value: "mc:etextjustify:center"
             }
@@ -431,7 +429,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14797053901829402713
+        Id: 4271549194348143589
         Name: "CHECKBOX_IDLE"
         Transform {
           Location {
@@ -444,12 +442,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
-        ChildIds: 12008752414568095467
-        ChildIds: 10224649990925550236
-        ChildIds: 3838437552847234068
-        ChildIds: 293528624856586421
-        ChildIds: 11455533743084527078
+        ParentId: 6048669626846972382
+        ChildIds: 5816836311181512023
+        ChildIds: 8933845898877915424
+        ChildIds: 14076840535404443560
+        ChildIds: 17441587890208312073
+        ChildIds: 7558199346545462874
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -466,7 +464,6 @@ Assets {
           Width: 24
           Height: 24
           UIX: -10
-          UIY: 4
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -490,7 +487,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12008752414568095467
+        Id: 5816836311181512023
         Name: "BG"
         Transform {
           Location {
@@ -503,7 +500,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14797053901829402713
+        ParentId: 4271549194348143589
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -558,7 +555,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10224649990925550236
+        Id: 8933845898877915424
         Name: "FRAME_TOP"
         Transform {
           Location {
@@ -571,7 +568,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14797053901829402713
+        ParentId: 4271549194348143589
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -626,7 +623,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3838437552847234068
+        Id: 14076840535404443560
         Name: "FRAME_BOTTOM"
         Transform {
           Location {
@@ -639,7 +636,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14797053901829402713
+        ParentId: 4271549194348143589
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -694,7 +691,7 @@ Assets {
         }
       }
       Objects {
-        Id: 293528624856586421
+        Id: 17441587890208312073
         Name: "FRAME_LEFT"
         Transform {
           Location {
@@ -707,7 +704,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14797053901829402713
+        ParentId: 4271549194348143589
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -762,7 +759,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11455533743084527078
+        Id: 7558199346545462874
         Name: "FRAME_RIGHT"
         Transform {
           Location {
@@ -775,7 +772,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14797053901829402713
+        ParentId: 4271549194348143589
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -830,7 +827,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15957667548732072640
+        Id: 3128633308080468348
         Name: "CHECKBOX_HOVER"
         Transform {
           Location {
@@ -843,12 +840,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
-        ChildIds: 997135140459384217
-        ChildIds: 993753985694563268
-        ChildIds: 1077458514221714107
-        ChildIds: 4917377247880791256
-        ChildIds: 16317430850349252543
+        ParentId: 6048669626846972382
+        ChildIds: 18142940613845671461
+        ChildIds: 18146305271978305656
+        ChildIds: 17937208064805738759
+        ChildIds: 12835309454402951012
+        ChildIds: 1471847616339930115
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -865,7 +862,6 @@ Assets {
           Width: 24
           Height: 24
           UIX: -10
-          UIY: 4
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -889,7 +885,7 @@ Assets {
         }
       }
       Objects {
-        Id: 997135140459384217
+        Id: 18142940613845671461
         Name: "BG"
         Transform {
           Location {
@@ -902,7 +898,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15957667548732072640
+        ParentId: 3128633308080468348
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -957,7 +953,7 @@ Assets {
         }
       }
       Objects {
-        Id: 993753985694563268
+        Id: 18146305271978305656
         Name: "FRAME_TOP"
         Transform {
           Location {
@@ -970,7 +966,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15957667548732072640
+        ParentId: 3128633308080468348
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1025,7 +1021,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1077458514221714107
+        Id: 17937208064805738759
         Name: "FRAME_BOTTOM"
         Transform {
           Location {
@@ -1038,7 +1034,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15957667548732072640
+        ParentId: 3128633308080468348
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1093,7 +1089,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4917377247880791256
+        Id: 12835309454402951012
         Name: "FRAME_LEFT"
         Transform {
           Location {
@@ -1106,7 +1102,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15957667548732072640
+        ParentId: 3128633308080468348
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1161,7 +1157,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16317430850349252543
+        Id: 1471847616339930115
         Name: "FRAME_RIGHT"
         Transform {
           Location {
@@ -1174,7 +1170,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15957667548732072640
+        ParentId: 3128633308080468348
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1229,8 +1225,8 @@ Assets {
         }
       }
       Objects {
-        Id: 17360964630146172686
-        Name: "CHECKBOX_CHECKED"
+        Id: 500088834568524978
+        Name: "CHECKBOX_IDLE"
         Transform {
           Location {
           }
@@ -1242,13 +1238,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
-        ChildIds: 11482713713762857134
-        ChildIds: 12649195810924806303
-        ChildIds: 15743588963646754477
-        ChildIds: 7570264681418741935
-        ChildIds: 7619108884683391267
-        ChildIds: 4265766922793194829
+        ParentId: 6048669626846972382
+        ChildIds: 7585449582376788754
+        ChildIds: 6455028180903990051
+        ChildIds: 3198210785164631313
+        ChildIds: 11461906114216790803
+        ChildIds: 11502939285580993183
+        ChildIds: 14784518327179953905
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1265,7 +1261,6 @@ Assets {
           Width: 24
           Height: 24
           UIX: -10
-          UIY: 4
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1289,7 +1284,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11482713713762857134
+        Id: 7585449582376788754
         Name: "BG"
         Transform {
           Location {
@@ -1302,7 +1297,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17360964630146172686
+        ParentId: 500088834568524978
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1357,7 +1352,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12649195810924806303
+        Id: 6455028180903990051
         Name: "FRAME_TOP"
         Transform {
           Location {
@@ -1370,7 +1365,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17360964630146172686
+        ParentId: 500088834568524978
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1425,7 +1420,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15743588963646754477
+        Id: 3198210785164631313
         Name: "FRAME_BOTTOM"
         Transform {
           Location {
@@ -1438,7 +1433,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17360964630146172686
+        ParentId: 500088834568524978
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1493,7 +1488,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7570264681418741935
+        Id: 11461906114216790803
         Name: "FRAME_LEFT"
         Transform {
           Location {
@@ -1506,7 +1501,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17360964630146172686
+        ParentId: 500088834568524978
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1561,7 +1556,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7619108884683391267
+        Id: 11502939285580993183
         Name: "FRAME_RIGHT"
         Transform {
           Location {
@@ -1574,7 +1569,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17360964630146172686
+        ParentId: 500088834568524978
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1629,7 +1624,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4265766922793194829
+        Id: 14784518327179953905
         Name: "CHECKMARK"
         Transform {
           Location {
@@ -1642,7 +1637,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17360964630146172686
+        ParentId: 500088834568524978
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1704,8 +1699,8 @@ Assets {
         }
       }
       Objects {
-        Id: 111490579092347996
-        Name: "BUTTON_RP_TANKLIST_TANK"
+        Id: 9068892075957817934
+        Name: "TANK_BUTTON"
         Transform {
           Location {
           }
@@ -1717,7 +1712,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10398001065411322558
+        ParentId: 6048669626846972382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1731,13 +1726,14 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 45
+          Width: 100
           Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           UseParentHeight: true
           Button {
             FontColor {
@@ -1745,18 +1741,19 @@ Assets {
             }
             FontSize: 20
             ButtonColor {
-              G: 0.00439144205
-              B: 0.00972121768
+              R: 1
+              G: 1
+              B: 1
             }
             HoveredColor {
-              G: 0.00439144205
-              B: 0.00972121768
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             PressedColor {
-              G: 0.00212468905
-              B: 0.00477695325
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             DisabledColor {
               R: 1
@@ -1764,7 +1761,7 @@ Assets {
               B: 1
             }
             Brush {
-              Id: 14060330023043759337
+              Id: 841534158063459245
             }
             IsButtonEnabled: true
             ClickMode {
@@ -1787,12 +1784,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
