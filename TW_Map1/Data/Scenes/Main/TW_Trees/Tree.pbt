@@ -644,66 +644,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6750738597375138917
-  Name: "TW_BirchTree_Destructible"
-  Transform {
-    Location {
-      X: -12163.2871
-      Y: 23795.8281
-      Z: 156.826355
-    }
-    Rotation {
-      Yaw: -20.4185104
-    }
-    Scale {
-      X: 0.942136705
-      Y: 0.942136705
-      Z: 0.942136705
-    }
-  }
-  ParentId: 15604239347440454439
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14766061465847274198
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_BirchTree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -12431.4258
-            Y: 24112.0137
-            Z: 234.422852
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 99.229866
-            Roll: -9.61138916
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.952739
-            Y: 0.952739
-            Z: 0.952739
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1877293447267286738
-    }
-  }
-}
-Objects {
   Id: 10199119451334220445
   Name: "TW_BirchTree_Destructible"
   Transform {
@@ -763,64 +703,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16099802797402541022
-  Name: "TW_BirchTree_Destructible"
-  Transform {
-    Location {
-      X: -12444.2734
-      Y: 25008.8789
-      Z: 256.592407
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15604239347440454439
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14766061465847274198
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TW_BirchTree_Destructible"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -12188.6094
-            Y: 24428.5918
-            Z: 260.859131
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -138.296387
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.686049521
-            Y: 0.686049521
-            Z: 0.686049521
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1877293447267286738
-    }
-  }
-}
-Objects {
   Id: 4965556809067398146
   Name: "TW_BirchTree_Destructible"
   Transform {
@@ -852,8 +734,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -12444.2734
-            Y: 25008.8789
+            X: -12695
+            Y: 25355
             Z: 256.592407
           }
         }
