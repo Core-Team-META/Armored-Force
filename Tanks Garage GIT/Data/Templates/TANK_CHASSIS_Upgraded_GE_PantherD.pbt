@@ -57,7 +57,7 @@ Assets {
           AccelerationRate: 900
           DecelerationRate: 15
           BrakeStrength: 900
-          TireFriction: 50
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 110
           }
@@ -90,5 +90,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }
