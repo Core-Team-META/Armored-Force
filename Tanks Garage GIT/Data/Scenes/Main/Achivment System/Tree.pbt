@@ -2640,6 +2640,9 @@ Objects {
       }
     }
     ScrollPanel {
+      Orientation {
+        Value: "mc:eorientation:orient_vertical"
+      }
     }
     AnchorLayout {
       SelfAnchor {

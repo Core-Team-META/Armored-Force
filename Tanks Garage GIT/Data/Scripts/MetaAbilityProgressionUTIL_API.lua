@@ -204,6 +204,10 @@ function API.GetTankRPString(id)
     return "T_" .. stringId .. "RP"
 end
 
+function API.GetRPConversionCost(amount)
+	return math.floor(amount / 100)
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- ABILITY PROGRESSION DATA FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
