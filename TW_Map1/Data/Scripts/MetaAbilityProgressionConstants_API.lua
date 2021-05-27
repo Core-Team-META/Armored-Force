@@ -102,7 +102,8 @@ API.COMBAT_STATS = {
 API.CURRENCY = {
     [1] = "Silver",
     [2] = "Free RP",
-    [3] = "Gold"
+    [3] = "Gold",
+    [4] = "XP"
 }
 
 
@@ -115,11 +116,31 @@ API.PERKS = {
 API.SILVER = API.CURRENCY[1]
 API.FREERP = API.CURRENCY[2]
 API.GOLD = API.CURRENCY[3]
+API.XP = API.CURRENCY[4]
 
 API.TEAM = {
     ALLIES = 1,
     AXIS = 2
 }
+
+API.XP_TIER_VALUE = {
+	TIER1 = 100,
+	TIER2 = 200,
+	TIER3 = 300,
+	TIER4 = 400
+}
+
+API.XP_GAIN_REASON = {
+	DAMAGE_DEALT = 1,
+	SPOTTED_ENEMY = 2
+}
+
+API.XP_GAIN_TEXT = {
+	[1] = "Damage Dealt",
+	[2] = "Spotted Enemy"
+}
+
+API.RANK_NAME = "Rank"
 
 function API.GetNumberOfTanks()
     return NUMBER_OF_TANKS

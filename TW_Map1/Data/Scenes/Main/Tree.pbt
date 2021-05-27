@@ -19,12 +19,12 @@ Objects {
   ChildIds: 14246791555251678451
   ChildIds: 10433577698686771103
   ChildIds: 4689494391382931675
-  ChildIds: 10905649252353194541
-  ChildIds: 15429561671638965847
-  ChildIds: 7829215888213390904
-  ChildIds: 2353863463125911361
-  ChildIds: 12631040744479278761
   ChildIds: 15794543342961490778
+  ChildIds: 16735376720692569099
+  ChildIds: 4585259135210765398
+  ChildIds: 14408459680598347347
+  ChildIds: 11812671579849953524
+  ChildIds: 105145388225632500
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,8 +40,8 @@ Objects {
   }
 }
 Objects {
-  Id: 15794543342961490778
-  Name: "Konz"
+  Id: 105145388225632500
+  Name: "Chat"
   Transform {
     Location {
     }
@@ -63,16 +63,13 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Konz"
+    FilePartitionName: "Chat"
   }
 }
 Objects {
-  Id: 12631040744479278761
+  Id: 11812671579849953524
   Name: "Morticai (Brent)"
   Transform {
     Location {
@@ -104,7 +101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2353863463125911361
+  Id: 14408459680598347347
   Name: "Ryan"
   Transform {
     Location {
@@ -133,7 +130,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7829215888213390904
+  Id: 4585259135210765398
   Name: "Marcela"
   Transform {
     Location {
@@ -162,7 +159,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15429561671638965847
+  Id: 16735376720692569099
   Name: "Patrick"
   Transform {
     Location {
@@ -191,8 +188,8 @@ Objects {
   }
 }
 Objects {
-  Id: 10905649252353194541
-  Name: "Chat"
+  Id: 15794543342961490778
+  Name: "Konz"
   Transform {
     Location {
     }
@@ -209,14 +206,17 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Chat"
+    FilePartitionName: "Konz"
   }
 }
 Objects {

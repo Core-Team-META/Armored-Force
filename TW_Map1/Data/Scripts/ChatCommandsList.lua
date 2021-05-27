@@ -125,6 +125,28 @@ commands = {
         requireMessage = false,
         adminOnly = false
     },
+    
+    ["/equip"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	local number = nil
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+        		number = tonumber(section)
+        		if number and number > 0 and number < 34 then
+        			Events.Broadcast("SET_EQUIPPED_TANK", player, section)
+        			return
+        		end
+        	end 
+        	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Equip a specific tank. Format: /equip <tankID>",
+        requireMessage = false,
+        adminOnly = false
+    },
 
     ["/help"] = {
         OnCommandCalledClient = function (player, message)
@@ -138,7 +160,7 @@ commands = {
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "shows a list of available commands, none currently available",
+        description = "shows a list of available commands",
         requireMessage = false,
         adminOnly = false
     },
