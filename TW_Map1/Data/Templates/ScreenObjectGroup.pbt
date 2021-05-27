@@ -21,7 +21,7 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -66,5 +66,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }

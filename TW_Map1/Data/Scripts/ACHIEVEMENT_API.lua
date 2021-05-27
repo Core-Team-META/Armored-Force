@@ -360,6 +360,7 @@ function API.AddProgress(player, id, value)
         elseif currentProgress + value >= required then
             player:SetResource(id, required)
         end
+        warn(tostring(id) .. " Added Progress: " .. tostring(value))
     end
 end
 
@@ -383,8 +384,13 @@ function API.ResetRepeatable(player)
 end
 
 --@param object player
-function API.LoadAchievementStorage(player)
-    local data = Storage.GetPlayerData(player)
+function API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
+    local data = {}
+    if useSharedKey then
+        data = Storage.GetSharedPlayerData(sharedKeyNetRef, player)
+    else
+        data = Storage.GetPlayerData(player)
+    end
     if data["META_ACH"] then
         local achievementData = data["META_ACH"]
         if type(achievementData) ~= "number" then
@@ -398,10 +404,10 @@ end
 --@param object player
 function API.SaveAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     local data = {}
-    if not useSharedKey then
-        data = Storage.GetPlayerData(player)
-    else
+    if useSharedKey then
         data = Storage.GetSharedPlayerData(sharedKeyNetRef, player)
+    else
+        data = Storage.GetPlayerData(player)
     end
     local tempTbl = {}
     for id, achievement in pairs(API.GetAchievements()) do
@@ -413,10 +419,10 @@ function API.SaveAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     end
 
     data["META_ACH"] = tempTbl
-    if not useSharedKey then
-        Storage.SetPlayerData(player, data)
-    else
+    if useSharedKey then
         Storage.SetSharedPlayerData(sharedKeyNetRef, player, data)
+    else
+        Storage.SetPlayerData(player, data)
     end
 end
 

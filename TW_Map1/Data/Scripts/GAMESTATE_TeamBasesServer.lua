@@ -53,7 +53,6 @@ function StateSTART(manager, propertyName)
 			for x, p in pairs(Game.GetPlayers()) do
 				
 				damageListeners[p.id]:Disconnect()
-				p:Respawn()
 					
 			end
 			
@@ -137,6 +136,10 @@ function CheckCapPoints()
 	elseif bCapProgress > aCapProgress then
 		
 		leadTeam = 1 
+		
+	else 
+	
+		leadTeam = 0
 				
 	end
 	
