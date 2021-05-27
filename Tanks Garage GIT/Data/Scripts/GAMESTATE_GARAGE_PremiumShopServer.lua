@@ -66,23 +66,24 @@ function PurchasePremiumTank(player, tankId)
 
 end
 
-function ConvertToFreeXP(player, xpTankString)
-
+function ConvertToFreeXP(player, xpTankString, RPTradeTotal)
+	if(RPTradeTotal == 0) then return end
+	
 	local totalXP = 0
+	
+	local cost = UTIL_API.GetRPConversionCost(RPTradeTotal)
+	
+	if cost > player:GetResource(CONSTANTS_API.GOLD) then
+		warn("ERROR (Server): cannot afford conversion for Free RP")
+		return
+	end
 	
 	for s in string.gmatch(xpTankString, "([^:]+)") do
 		print("Tank with RP: " .. s)
 		totalXP = totalXP + player:GetResource(UTIL_API.GetTankRPString(tonumber(s)))
 		player:SetResource(UTIL_API.GetTankRPString(tonumber(s)), 0)
 	end
-	
-	local cost = math.ceil(totalXP/100)
-	
-	if cost > player:GetResource(CONSTANTS_API.GOLD) then
-		warn("ERROR: cannot afford conversion for Free RP")
-		return
-	end
-	
+		
 	player:AddResource(CONSTANTS_API.FREERP, totalXP)
 	player:RemoveResource(CONSTANTS_API.GOLD, tonumber(cost))
 	
