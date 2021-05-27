@@ -30,12 +30,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14985143257782791330
-  Name: "TankStorage2"
+  Id: 14767719108918890470
+  Name: "Tanks01"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "c44d80dce0734c06ad0ddc319af85848"
+      Key: "be2be36ce2e34cfa86624456e2954eb6"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -49,19 +49,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 10573954452887993462
-  Name: "TankStorage"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "22e16ec4053b4478aed0d586ae67a57d"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -100,19 +87,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6921239680151824385
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "5a6a23edbc3446c4a4be4429414a5fa9"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -122,12 +96,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4618750271437888517
-  Name: "PlayerSharedStorage"
+  Id: 6410325436713471205
+  Name: "Achievements01"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "8cd7b4910d07447a8fac4ca5a361a105"
+      Key: "107fd79174b747cdac21b195559ddadb"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }

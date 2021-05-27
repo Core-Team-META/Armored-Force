@@ -20,8 +20,16 @@ local FreecamMovePanel = script:GetCustomProperty("FreecamMovePanel"):WaitForObj
 local FreecamDecreaseSpeedPanel = script:GetCustomProperty("FreecamDecreaseSpeedPanel"):WaitForObject()
 local FreecamIncreaseSpeedPanel = script:GetCustomProperty("FreecamIncreaseSpeedPanel"):WaitForObject()
 local ReturnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject()
+local UserLeavingPromptUI = script:GetCustomProperty("UserLeavingPrompt"):WaitForObject()
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local GAMESTATE_StatisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
+local GAMESTATE_Components = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
+local GAMESTATE_MainGameStateManagerServer = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+local Leave = script:GetCustomProperty("Leave"):WaitForObject()
+local Close = script:GetCustomProperty("Close"):WaitForObject()
 
 local LocalPlayer = Game.GetLocalPlayer()
+local leaveEarlyAward = 0
 
 ------------------------------------------------------------------------------------------------------------------------
 --	ENUMERATIONS
@@ -218,8 +226,21 @@ local function OnBindingReleased(player, binding)
 	bindingsPressed[binding] = false
 
 	if(binding == BINDING_RETURN_TO_GARAGE) then
-		Events.BroadcastToServer("SEND_TO_GARAGE")
-		return
+		-- Calculate earnings for leaving. When leaving, we assume a draw for consistent earnings
+		local maxAwardXP = GAMESTATE_StatisticsComponent:GetCustomProperty("DrawXPValue")
+		local maxMatchDuration = GAMESTATE_Components:GetCustomProperty("MatchMaxDuration")
+		local currentTime = GAMESTATE_MainGameStateManagerServer:GetCustomProperty("Timer")
+		local timeElapsed = maxMatchDuration - currentTime
+		
+		leaveEarlyAward = UTIL_API.CalculateLeaveEarlyEarnings(timeElapsed, maxMatchDuration, maxAwardXP)
+		
+		UserLeavingPromptUI:FindDescendantByName("SilverAmount").text = "Silver: " .. tostring(math.floor(leaveEarlyAward * 2)) -- Money is double that of RP/XP
+		UserLeavingPromptUI:FindDescendantByName("RPAmount").text = "RP: " .. tostring(math.floor(leaveEarlyAward))
+		UserLeavingPromptUI:FindDescendantByName("XPAmount").text = "XP: " .. tostring(math.floor(leaveEarlyAward))
+		-- Show UI that will prompt user		
+		UserLeavingPromptUI.visibility = Visibility.FORCE_ON
+		UI.SetCursorVisible(true)
+		UI.SetCanCursorInteractWithUI(true)
 	end
 
 	if(binding == BINDING_TOGGLE) then
@@ -244,6 +265,16 @@ local function OnBindingReleased(player, binding)
 			SpectatePreviousPlayer()
 		end
 	end
+end
+
+function LeaveEarly()
+	Events.BroadcastToServer("LEAVE_EARLY", leaveEarlyAward)
+end
+
+function CloseLeaveEarly()
+	UserLeavingPromptUI.visibility = Visibility.FORCE_OFF
+	UI.SetCursorVisible(false)
+	UI.SetCanCursorInteractWithUI(false)
 end
 
 --	nil OnPlayerLeft(Player)
@@ -380,3 +411,5 @@ end
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 LocalPlayer.bindingPressedEvent:Connect(OnBindingPressed)
 LocalPlayer.bindingReleasedEvent:Connect(OnBindingReleased)
+Leave.clickedEvent:Connect(LeaveEarly)
+Close.clickedEvent:Connect(CloseLeaveEarly)

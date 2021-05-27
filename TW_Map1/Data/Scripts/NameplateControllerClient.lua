@@ -242,7 +242,7 @@ function Tick(deltaTime)
 			if not visible then
 				nameplate.templateRoot.visibility = Visibility.FORCE_OFF
 			else
-				nameplate.templateRoot.visibility = Visibility.INHERIT
+				nameplate.templateRoot.visibility = Visibility.FORCE_ON
 				RotateNameplate(nameplate)
 
 				if SHOW_HEALTHBARS then

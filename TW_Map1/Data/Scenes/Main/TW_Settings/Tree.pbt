@@ -1,7 +1,7 @@
 Name: "TW_Settings"
-RootId: 7289959704957716376
+RootId: 3599637342018500247
 Objects {
-  Id: 16841392591678561065
+  Id: 9273329063538681631
   Name: "Game Settings"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7289959704957716376
+  ParentId: 3599637342018500247
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79,7 +79,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11685850252253586612
+  Id: 6646693237146322802
   Name: "Third Person Camera Settings"
   Transform {
     Location {
@@ -92,9 +92,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7289959704957716376
-  ChildIds: 16085849763706621351
-  ChildIds: 2140428146845036542
+  ParentId: 3599637342018500247
+  ChildIds: 12309277353528962190
+  ChildIds: 15749168927570432585
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -111,7 +111,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2140428146845036542
+  Id: 15749168927570432585
   Name: "Client Context"
   Transform {
     Location {
@@ -124,8 +124,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11685850252253586612
-  ChildIds: 14427306282990496189
+  ParentId: 6646693237146322802
+  ChildIds: 8006766914146309331
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -141,7 +141,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14427306282990496189
+  Id: 8006766914146309331
   Name: "Third Person Camera"
   Transform {
     Location {
@@ -155,7 +155,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2140428146845036542
+  ParentId: 15749168927570432585
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -189,7 +189,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16085849763706621351
+  Id: 12309277353528962190
   Name: "Third Person Player Settings"
   Transform {
     Location {
@@ -202,7 +202,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11685850252253586612
+  ParentId: 6646693237146322802
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -250,6 +250,8 @@ Objects {
       IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
+      CanMoveLeft: true
+      CanMoveRight: true
       AbilityAimMode {
         Value: "mc:eabilityaimmode:viewrelative"
       }
@@ -261,7 +263,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3904879819071449512
+  Id: 14173964239004500681
   Name: "Respawn Settings"
   Transform {
     Location {
@@ -274,7 +276,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7289959704957716376
+  ParentId: 3599637342018500247
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

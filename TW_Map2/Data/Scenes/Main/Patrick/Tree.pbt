@@ -41,7 +41,7 @@ Objects {
     }
     Overrides {
       Name: "cs:GarageLink"
-      String: "27f652/armored-force-garage"
+      String: "b478fd/armored-force"
     }
   }
   Collidable_v2 {
@@ -15665,6 +15665,9 @@ Objects {
       }
     }
     ScrollPanel {
+      Orientation {
+        Value: "mc:eorientation:orient_vertical"
+      }
     }
     AnchorLayout {
       SelfAnchor {
