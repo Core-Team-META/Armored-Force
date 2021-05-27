@@ -1,13 +1,13 @@
 
 local map = {}
 
-map["LastTeam"] = {"ed1bcb/tanks-map-1-lts", "82b567/desert-lts", "1f57c5/armored-force-map-3-test"}
-map["Frontline"] = {"c80e70/tanks-map-1-frt", "bb70a8/desert-frt", "3084a4/tanks-map-3-frt"}
+map["LastTeam"] = {"55d07c/fields-lts", "82b567/desert-lts", "3f6963/tundra-lts"}
+map["Frontline"] = {"18e141/fields-frt", "bb70a8/desert-frt", "707106/tundra-frt"}
 
 -- Individual maps
-map["Fields"] = {"c80e70/tanks-map-1-frt", "ed1bcb/tanks-map-1-lts"}
+map["Fields"] = {"18e141/fields-frt", "55d07c/fields-lts"}
 map["Desert"] = {"bb70a8/desert-frt", "82b567/desert-lts"}
-map["Tundra"] = {"3084a4/tanks-map-3-frt", "1f57c5/armored-force-map-3-test"}
+map["Tundra"] = {"707106/tundra-frt", "3f6963/tundra-lts"}
 
 function SendToMap(player, selectedMap)
 	
