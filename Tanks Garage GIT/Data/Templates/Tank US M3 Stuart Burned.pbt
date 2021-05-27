@@ -30617,6 +30617,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
   VirtualFolderPath: "M3 Stuart"
 }

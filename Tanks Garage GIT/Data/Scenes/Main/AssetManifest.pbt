@@ -65,6 +65,19 @@ Assets {
   }
 }
 Assets {
+  Id: 10352912822465946741
+  Name: "ArmoredForceStorage"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "ac01421de5664fb38e6c7c59ee40f339"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 9724936981949476817
   Name: "GoldBundle3"
   PlatformAssetType: 24

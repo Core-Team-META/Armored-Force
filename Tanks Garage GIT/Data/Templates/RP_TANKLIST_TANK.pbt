@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 1612973605638649547
+        ChildIds: 550669479964498705
         ChildIds: 17035423910161843707
         ChildIds: 7973202077417858615
         ChildIds: 13517039300885372983
@@ -58,6 +59,82 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 550669479964498705
+        Name: "TANK_ID"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10398001065411322558
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 86
+          Height: 60
+          UIY: 10
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentHeight: true
+          Text {
+            Label: "T4"
+            Color {
+              R: 0.111932434
+              G: 0.111932434
+              B: 0.111932434
+              A: 1
+            }
+            Size: 16
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 9686253618519087109
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:top"
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }
@@ -202,7 +279,7 @@ Assets {
       }
       Objects {
         Id: 13517039300885372983
-        Name: "TANK_TIER"
+        Name: "TANK_RP"
         Transform {
           Location {
           }
@@ -228,7 +305,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 50
+          Width: 86
           Height: 60
           UIY: 10
           RenderTransformPivot {
@@ -304,9 +381,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 140
+          Width: 105
           Height: 60
-          UIX: 50
+          UIX: 84.6135254
           UIY: 10
           RenderTransformPivot {
             Anchor {
@@ -315,7 +392,7 @@ Assets {
           }
           UseParentHeight: true
           Text {
-            Label: "Destroyer Premium"
+            Label: "Destroyer"
             Color {
               R: 0.111932434
               G: 0.111932434
@@ -463,9 +540,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 24
-          Height: 24
-          UIX: -10
+          Width: 20
+          Height: 20
+          UIX: -15
           UIY: 4
           RenderTransformPivot {
             Anchor {
@@ -853,7 +930,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -862,9 +939,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 24
-          Height: 24
-          UIX: -10
+          Width: 20
+          Height: 20
+          UIX: -15
           UIY: 4
           RenderTransformPivot {
             Anchor {
@@ -1253,7 +1330,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1262,9 +1339,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 24
-          Height: 24
-          UIX: -10
+          Width: 20
+          Height: 20
+          UIX: -15
           UIY: 4
           RenderTransformPivot {
             Anchor {
@@ -1731,8 +1808,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 45
-          Height: 30
+          Width: 22
+          Height: 22
+          UIX: -16
+          UIY: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1751,12 +1830,10 @@ Assets {
             HoveredColor {
               G: 0.00439144205
               B: 0.00972121768
-              A: 1
             }
             PressedColor {
-              G: 0.00212468905
-              B: 0.00477695325
-              A: 1
+              G: 0.00439144205
+              B: 0.00972121768
             }
             DisabledColor {
               R: 1
@@ -1800,21 +1877,21 @@ Assets {
       }
     }
     Assets {
-      Id: 14060330023043759337
-      Name: "BG Flat 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
-      }
-    }
-    Assets {
       Id: 9686253618519087109
       Name: "Teko Light"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "TekoLight_ref"
+      }
+    }
+    Assets {
+      Id: 14060330023043759337
+      Name: "BG Flat 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
@@ -1831,5 +1908,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 86
+  SerializationVersion: 87
 }
