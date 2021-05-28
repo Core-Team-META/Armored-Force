@@ -17,6 +17,7 @@ local SFX3 = script:GetCustomProperty("SFX3"):WaitForObject()
 local SFXStinger1 = script:GetCustomProperty("SFXStinger1"):WaitForObject()
 local SFXMusic = script:GetCustomProperty("SFXMusic"):WaitForObject()
 local defaultSkins = script:GetCustomProperty("DefaultSkins"):WaitForObject()
+local returnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject()
 
 local thisComponent = "SHOOTING_RANGE"
 
@@ -60,11 +61,20 @@ end
 
 function SendBackToGarage(trigger, other)
 
-	if other ~= localPlayer then
+	if other ~= localPlayer and not other:IsA("Vehicle") then
+		return
+	end
+		
+	if other:IsA("Vehicle") then
+		other = other.driver
+	end
+	
+	if sendToShootingRangeViewUI.isEnabled then
 		return
 	end
 	
 	sendToShootingRangeViewUI.isEnabled = true
+	returnToGarage.visibility = Visibility.FORCE_OFF
 	
 	Ease3D.EasePosition(door, Vector3.UP * 850, 2, Ease3D.EasingEquation.QUADRATIC, Ease3D.EasingDirection.OUT)
 	SFX1:Play()
@@ -85,7 +95,7 @@ function SendBackToGarage(trigger, other)
 				
 	while not CheckPlayerIsInState("GARAGE_STATE") do 
 		Events.BroadcastToServer("PlayerStateChanged", "GARAGE_STATE")
-		Task.Wait(0.1)	
+		Task.Wait(1)	
 	end
 	
 	door:SetPosition(Vector3.ZERO)
@@ -168,7 +178,7 @@ function ToggleThisComponent(requestedPlayerState)
 		end
 		]]
 		
-		Task.Wait(1.5) -- wait for tank to settle.
+		Task.Wait(2) -- wait for tank to settle.
 		
 		for i = 100, 1, -1 do 
 		
@@ -186,6 +196,7 @@ function ToggleThisComponent(requestedPlayerState)
 		SFX3:Play()
 		
 		sendToShootingRangeViewUI.isEnabled = false
+		returnToGarage.visibility = Visibility.FORCE_ON
 		
 	else 
 	
