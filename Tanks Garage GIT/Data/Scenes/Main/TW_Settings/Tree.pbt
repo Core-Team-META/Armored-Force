@@ -229,13 +229,13 @@ Objects {
       BrakingDecelerationFlying: 600
       MaxFlightSpeed: 600
       MovementControlMode {
-        Value: "mc:emovementcontrolmode:facingrelative"
+        Value: "mc:emovementcontrolmode:lookrelative"
       }
       LookControlMode {
         Value: "mc:elookcontrolmode:relative"
       }
       FacingMode {
-        Value: "mc:efacingmode:facemovement"
+        Value: "mc:efacingmode:faceaimwhenactive"
       }
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
@@ -247,6 +247,7 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
+      IsCrouchEnabled: true
       IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
@@ -258,6 +259,8 @@ Objects {
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
       FlipOnMultiJump: true
+      CanMoveUp: true
+      CanMoveDown: true
       MaxHitpoints: 100
     }
   }

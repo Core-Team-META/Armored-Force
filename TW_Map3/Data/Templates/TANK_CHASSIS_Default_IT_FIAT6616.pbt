@@ -32,6 +32,7 @@ Assets {
         }
         Vehicle {
           DriverPosition {
+            Z: 200
           }
           DriverRotation {
           }
@@ -41,7 +42,7 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 7000
+          Mass: 10000
           PhysicsBodyScale {
             X: 6
             Y: 2.5
@@ -50,7 +51,7 @@ Assets {
           IsDriverHidden: true
           IsDriverAttached: true
           ExitBinding {
-            Value: "mc:egameaction:extraaction_43"
+            Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
             Z: 105
@@ -59,11 +60,11 @@ Assets {
           AccelerationRate: 1000
           DecelerationRate: 15
           BrakeStrength: 1000
-          TireFriction: 20
+          TireFriction: 0.5
           CenterOfMassOFfset {
-            Z: 100
+            Z: -10
           }
-          GravityScale: 1.9
+          GravityScale: 2
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533

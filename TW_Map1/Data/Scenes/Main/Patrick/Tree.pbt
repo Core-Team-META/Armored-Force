@@ -16473,7 +16473,7 @@ Objects {
     }
     Overrides {
       Name: "cs:LobbyCountdown"
-      Int: 10
+      Int: 30
     }
     Overrides {
       Name: "cs:Timer:isrep"

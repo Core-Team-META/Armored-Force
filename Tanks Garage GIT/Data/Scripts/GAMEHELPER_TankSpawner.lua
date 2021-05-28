@@ -79,6 +79,7 @@ function OnPlayerRespawned(player)
 		player.isVisible = true
 		player.animationStance = "unarmed_stance"
 		player.isCollidable = true
+		player.gravityScale = 1.9
 	end
 		
 end

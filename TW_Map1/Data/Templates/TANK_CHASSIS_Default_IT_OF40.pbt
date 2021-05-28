@@ -31,7 +31,7 @@ Assets {
         }
         Vehicle {
           DriverPosition {
-            Z: 115
+            Z: 200
           }
           DriverRotation {
           }
@@ -40,12 +40,14 @@ Assets {
           }
           Camera {
           }
-          Mass: 10000
+          Mass: 100000
           PhysicsBodyScale {
             X: 8
             Y: 3.2
             Z: 1.5
           }
+          IsDriverHidden: true
+          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
@@ -57,11 +59,11 @@ Assets {
           AccelerationRate: 800
           DecelerationRate: 15
           BrakeStrength: 800
-          TireFriction: 20
+          TireFriction: 0.5
           CenterOfMassOFfset {
-            Z: 80
+            Z: -10
           }
-          GravityScale: 1.9
+          GravityScale: 2
           Tank {
             LeftTreadRadius: 90
             LeftTreadWidth: 125
