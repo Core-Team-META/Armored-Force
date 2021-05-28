@@ -249,6 +249,8 @@ local ENGINE_CONFIRM_targetDestination = TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y
 local ENGINE_DENY_isMoving = false
 local ENGINE_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 
+CHOSEN_MODE = 3
+
 ------------------------------------------------------------------------------------------
 ---- HANDLING DROPDOWN SLIDER
 function Tick(deltaTime)
@@ -1175,11 +1177,14 @@ function CLICKED_DEPLOY(DEPLOY_BUTTON)
 	if CHOSEN_MODE== 0 then
 		TOGGLE_DROPDOWN_OPEN()
 	elseif CHOSEN_MODE == 1 then
-		Events.BroadcastToServer("SEND_TO_MAP", "Fields")
+		World.FindObjectByName("Queue Indicator Panel").visibility = Visibility.FORCE_ON
+		Events.BroadcastToServer("SEND_TO_MAP", "LastTeam")
 	elseif CHOSEN_MODE == 2 then
-		Events.BroadcastToServer("SEND_TO_MAP", "Desert")
+		World.FindObjectByName("Queue Indicator Panel").visibility = Visibility.FORCE_ON
+		Events.BroadcastToServer("SEND_TO_MAP", "Frontline")
 	elseif CHOSEN_MODE == 3 then
-		Events.BroadcastToServer("SEND_TO_MAP", "Tundra")
+		World.FindObjectByName("Queue Indicator Panel").visibility = Visibility.FORCE_ON
+		Events.BroadcastToServer("SEND_TO_MAP", "Random")
 	elseif CHOSEN_MODE == 4 then
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOOTING_RANGE")
 		return
@@ -3090,17 +3095,17 @@ function CHECK_STATE()
 	CHOSEN_MODE_SECONDARY.text = "CHOOSE MODE"
 	CHOSEN_MODE_SHADOW.text = "CHOOSE MODE"
 	elseif CHOSEN_MODE== 1 then
-	CHOSEN_MODE_LIGHT.text = "MODE: FIELDS"
-	CHOSEN_MODE_SECONDARY.text = "MODE: FIELDS"
-	CHOSEN_MODE_SHADOW.text = "MODE: FIELDS"
+	CHOSEN_MODE_LIGHT.text = "MODE: LAST TEAM STANDING"
+	CHOSEN_MODE_SECONDARY.text = "MODE: LAST TEAM STANDING"
+	CHOSEN_MODE_SHADOW.text = "MODE: LAST TEAM STANDING"
 	elseif CHOSEN_MODE== 2 then
-	CHOSEN_MODE_LIGHT.text = "MODE: DESERT"
-	CHOSEN_MODE_SECONDARY.text = "MODE: DESERT"
-	CHOSEN_MODE_SHADOW.text = "MODE: DESERT"
+	CHOSEN_MODE_LIGHT.text = "MODE: FRONTLINE"
+	CHOSEN_MODE_SECONDARY.text = "MODE: FRONTLINE"
+	CHOSEN_MODE_SHADOW.text = "MODE: FRONTLINE"
 	elseif CHOSEN_MODE== 3 then
-	CHOSEN_MODE_LIGHT.text = "MODE: TUNDRA"
-	CHOSEN_MODE_SECONDARY.text = "MODE: TUNDRA"
-	CHOSEN_MODE_SHADOW.text = "MODE: TUNDRA"
+	CHOSEN_MODE_LIGHT.text = "MODE: RANDOM BATTLE"
+	CHOSEN_MODE_SECONDARY.text = "MODE: RANDOM BATTLE"
+	CHOSEN_MODE_SHADOW.text = "MODE: RANDOM BATTLE"
 	elseif CHOSEN_MODE== 4 then
 	CHOSEN_MODE_LIGHT.text = "MODE: RANGE"
 	CHOSEN_MODE_SECONDARY.text = "MODE: RANGE"
@@ -3112,6 +3117,7 @@ end
 
 -- INITIALISING CHECK_STATE() FUNCTION
 function INITIATE_CHECK_STATE(player)
+	CLICKED_CHOOSE_MODE_TUNDRA(CHOOSE_MODE_TUNDRA_BUTTON)
 	CHECK_STATE()
 end
 
