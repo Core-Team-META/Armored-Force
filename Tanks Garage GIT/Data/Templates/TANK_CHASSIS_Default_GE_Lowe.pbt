@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 12000
+          Mass: 100000
           PhysicsBodyScale {
             X: 7
             Y: 3.2
@@ -63,7 +63,7 @@ Assets {
           CenterOfMassOFfset {
             Z: -10
           }
-          GravityScale: 2
+          GravityScale: 1
           Tank {
             LeftTreadRadius: 90
             LeftTreadWidth: 135
