@@ -9168,7 +9168,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9557,6 +9557,14 @@ Objects {
     }
   }
   ParentId: 7478596360271859373
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:QueueIndicatorPanel"
+      ObjectReference {
+        SelfId: 17413968878563161576
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
