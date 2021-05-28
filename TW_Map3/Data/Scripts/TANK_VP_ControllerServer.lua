@@ -110,10 +110,16 @@ function AssignDriver(newDriver)
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition())
+	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 500)
 	driver = newDriver
 	
 	SetTankModifications()
+	
+	driver.isCollidable = false
+	driver.isVisible = false
+	driver.maxHitPoints = tankHitPoints
+	driver.hitPoints = tankHitPoints
+	driver.gravityScale = 0
 	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
@@ -122,7 +128,7 @@ function AssignDriver(newDriver)
 	explosion = templateReferences:GetCustomProperty("ProjectileExplosion")
 	destroyedTankTempate = templateReferences:GetCustomProperty("DestroyedTank")
 	
-	chassis = World.SpawnAsset(chassisTemplate, {parent = tankGarage, position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
+	chassis = World.SpawnAsset(chassisTemplate, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
 	
 	Task.Wait(0.5)
 	
@@ -152,11 +158,7 @@ function AssignDriver(newDriver)
 	bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
 	
-	driver.isCollidable = false
-	driver.isVisible = false
-	driver.maxHitPoints = tankHitPoints
-	driver.hitPoints = tankHitPoints
-	driver:AttachToCoreObject(turret)
+	--driver:AttachToCoreObject(turret)
 	
 	Task.Wait()
 	
@@ -165,7 +167,6 @@ function AssignDriver(newDriver)
 	SetServerData()
 	
 end
-
 function AssignOwner(newOwner)
 
 	script:SetNetworkedCustomProperty("DriverID", newOwner.id)
@@ -300,7 +301,7 @@ function OnBindingPressed(player, binding)
 		return
 	end
 	
-	if binding == "ability_primary" then
+	if binding == "ability_primary" and not player:IsBindingPressed("ability_extra_14") then
 		FireProjectile()
 	elseif binding == "ability_extra_40" and Environment.IsMultiplayerPreview() then
 		driver:Die()
@@ -367,7 +368,7 @@ function OnArmorHit(trigger, other)
 		other.capsuleLength = 0
 		other.lifeSpan = 0.01
 				
-		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData then
+		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
 			return
 		end
 		

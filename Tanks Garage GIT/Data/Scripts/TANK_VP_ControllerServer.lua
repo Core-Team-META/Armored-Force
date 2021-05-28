@@ -110,10 +110,16 @@ function AssignDriver(newDriver)
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition())
+	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 500)
 	driver = newDriver
 	
 	SetTankModifications()
+	
+	driver.isCollidable = false
+	driver.isVisible = false
+	driver.maxHitPoints = tankHitPoints
+	driver.hitPoints = tankHitPoints
+	driver.gravityScale = 0
 	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
@@ -122,9 +128,9 @@ function AssignDriver(newDriver)
 	explosion = templateReferences:GetCustomProperty("ProjectileExplosion")
 	destroyedTankTempate = templateReferences:GetCustomProperty("DestroyedTank")
 	
-	chassis = World.SpawnAsset(chassisTemplate, {parent = tankGarage, position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
+	chassis = World.SpawnAsset(chassisTemplate, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
 	
-	Task.Wait(0.5)
+	Task.Wait(2)
 	
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis})
 	turret = hitbox:FindDescendantByName("Turret")
@@ -152,11 +158,7 @@ function AssignDriver(newDriver)
 	bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
 	
-	driver.isCollidable = false
-	driver.isVisible = false
-	driver.maxHitPoints = tankHitPoints
-	driver.hitPoints = tankHitPoints
-	driver:AttachToCoreObject(turret)
+	--driver:AttachToCoreObject(turret)
 	
 	Task.Wait()
 	
@@ -367,7 +369,7 @@ function OnArmorHit(trigger, other)
 		other.capsuleLength = 0
 		other.lifeSpan = 0.1
 				
-		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData then
+		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
 			return
 		end
 		
