@@ -128,9 +128,11 @@ function AssignDriver(newDriver)
 	explosion = templateReferences:GetCustomProperty("ProjectileExplosion")
 	destroyedTankTempate = templateReferences:GetCustomProperty("DestroyedTank")
 	
-	chassis = World.SpawnAsset(chassisTemplate, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
+	chassis = World.SpawnAsset(chassisTemplate)
+	chassis:SetWorldPosition(script:GetWorldPosition())
+	chassis:SetWorldRotation(script:GetWorldRotation())
 	
-	Task.Wait(2)
+	Task.Wait(0.5)
 	
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis})
 	turret = hitbox:FindDescendantByName("Turret")

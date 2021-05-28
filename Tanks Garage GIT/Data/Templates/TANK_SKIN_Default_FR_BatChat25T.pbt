@@ -7,7 +7,7 @@ Assets {
       RootId: 6743150734518977410
       Objects {
         Id: 6743150734518977410
-        Name: "TANK_SKIN_FR_BatChat25T"
+        Name: "TANK_SKIN_Default_FR_BatChat25T"
         Transform {
           Scale {
             X: 1
@@ -20,7 +20,7 @@ Assets {
         ChildIds: 7892108323066774928
         ChildIds: 16653470208310042544
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"

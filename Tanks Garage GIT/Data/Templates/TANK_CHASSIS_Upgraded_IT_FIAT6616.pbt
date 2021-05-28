@@ -42,7 +42,7 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 10000
+          Mass: 7000
           PhysicsBodyScale {
             X: 6
             Y: 2.5
@@ -60,7 +60,7 @@ Assets {
           AccelerationRate: 1200
           DecelerationRate: 15
           BrakeStrength: 1200
-          TireFriction: 0.5
+          TireFriction: 50
           CenterOfMassOFfset {
             Z: -10
           }
