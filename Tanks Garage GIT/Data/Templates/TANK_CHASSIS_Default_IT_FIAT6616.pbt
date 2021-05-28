@@ -65,7 +65,7 @@ Assets {
             X: 20
             Z: 40
           }
-          GravityScale: 2
+          GravityScale: 1
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
