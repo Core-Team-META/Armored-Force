@@ -24,6 +24,7 @@ Objects {
   ChildIds: 17339312201002368737
   ChildIds: 3938293389549324359
   ChildIds: 8836799249945110737
+  ChildIds: 4272278534625085140
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,6 +37,39 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4272278534625085140
+  Name: "TANK_CHASSIS_Default_US_M3Stuart"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6132183089281744122
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TANK_CHASSIS_Default_US_M3Stuart"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18440003844035607917
+    }
   }
 }
 Objects {
