@@ -1,4 +1,13 @@
 Assets {
+  Id: 17828656623802134300
+  Name: "Icon Skull"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Skull"
+  }
+}
+Assets {
   Id: 17289448223043935888
   Name: "UI Gradient Rectangular 001"
   PlatformAssetType: 9
@@ -17,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17184659105200274704
+  Name: "Icon Diamond"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Diamond"
+  }
+}
+Assets {
   Id: 16797068327331994841
   Name: "Frame Ring 4x 004"
   PlatformAssetType: 9
@@ -32,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
+  Id: 15392186923000422511
+  Name: "Teko Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoBold_ref"
   }
 }
 Assets {
