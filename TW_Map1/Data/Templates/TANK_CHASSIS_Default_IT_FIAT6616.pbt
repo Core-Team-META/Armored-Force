@@ -64,7 +64,7 @@ Assets {
           CenterOfMassOFfset {
             Z: -10
           }
-          GravityScale: 1
+          GravityScale: 1.9
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
