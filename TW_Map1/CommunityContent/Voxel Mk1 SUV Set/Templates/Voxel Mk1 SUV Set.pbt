@@ -346,7 +346,7 @@ Assets {
             JumpMaxCount: 1
             JumpVelocity: 900
             GroundFriction: 8
-            GravityScale: 1
+            GravityScale: 1.9
             MaxSwimSpeed: 420
             Buoyancy: 1
             TouchForceFactor: 1
@@ -26976,7 +26976,7 @@ Assets {
             JumpMaxCount: 1
             JumpVelocity: 900
             GroundFriction: 8
-            GravityScale: 1
+            GravityScale: 1.9
             MaxSwimSpeed: 420
             Buoyancy: 1
             TouchForceFactor: 1
