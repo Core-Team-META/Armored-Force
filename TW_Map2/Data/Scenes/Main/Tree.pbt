@@ -20,6 +20,7 @@ Objects {
   ChildIds: 18217549399293975483
   ChildIds: 9479035303955472683
   ChildIds: 11780395721209308910
+  ChildIds: 6985822757853840602
   ChildIds: 11544850952862364982
   ChildIds: 14274737480113221828
   ChildIds: 15816620826778612547
@@ -181,6 +182,38 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
+  }
+}
+Objects {
+  Id: 6985822757853840602
+  Name: "Konz"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Konz"
   }
 }
 Objects {
