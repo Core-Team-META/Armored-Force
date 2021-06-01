@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7946634531565250888
-  Name: "BG Flat 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_019"
-  }
-}
-Assets {
   Id: 7648893931280516746
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9

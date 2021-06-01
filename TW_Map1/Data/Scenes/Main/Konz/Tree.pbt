@@ -221,7 +221,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16099,7 +16099,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20136,7 +20136,7 @@ Objects {
     UseParentWidth: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.00322018936
@@ -20341,7 +20341,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.000888889
@@ -20404,7 +20404,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         A: 1
@@ -20464,7 +20464,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 1
@@ -25091,7 +25091,7 @@ Objects {
     UseParentWidth: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.00322018936
@@ -25152,7 +25152,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.000888889
@@ -25215,7 +25215,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         A: 1
@@ -25275,7 +25275,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 1
@@ -25830,7 +25830,7 @@ Objects {
     UseParentWidth: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.00322018936
@@ -25891,7 +25891,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.000888889
@@ -25954,7 +25954,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         A: 1
@@ -26014,7 +26014,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 1
@@ -26569,7 +26569,7 @@ Objects {
     UseParentWidth: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.00322018936
@@ -26630,7 +26630,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 0.000888889
@@ -26693,7 +26693,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         A: 1
@@ -26753,7 +26753,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 7946634531565250888
+        Id: 4504686085818425438
       }
       Color {
         R: 1
