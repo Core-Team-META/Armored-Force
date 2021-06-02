@@ -136,6 +136,7 @@ Objects {
   ParentId: 9577293156366078378
   ChildIds: 15144240268806480763
   ChildIds: 7141930088689968983
+  ChildIds: 2170827090847983177
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -151,8 +152,6 @@ Objects {
   Control {
     Width: 325
     Height: 94
-    UIX: -40.6660156
-    UIY: -59.9293213
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -170,6 +169,65 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2170827090847983177
+  Name: "BACKGROUND"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4500389154811181686
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 10
+    Height: 2
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 10820194954338241369
+      }
+      Color {
+        A: 0.603000045
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -211,20 +269,20 @@ Objects {
       }
     }
     Text {
-      Label: "Press G to Return to Garage"
+      Label: "PRESS [G] TO RETURN TO GARAGE"
       Color {
         R: 1
         G: 1
         B: 1
         A: 1
       }
-      Size: 22
+      Size: 24
       Justification {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 17251969847265876676
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -233,6 +291,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 1
+        Y: 1
       }
     }
     AnchorLayout {
@@ -290,9 +350,9 @@ Objects {
       Brush {
       }
       Color {
-        R: 0.086
-        G: 0.086
-        B: 0.086
+        R: 0.0127019985
+        G: 0.01637174
+        B: 0.029
         A: 1
       }
       TeamSettings {
@@ -1412,6 +1472,18 @@ Objects {
       Name: "cs:ReturnToGarage"
       ObjectReference {
         SelfId: 4500389154811181686
+      }
+    }
+    Overrides {
+      Name: "cs:API_Tutorial"
+      AssetReference {
+        Id: 3002171482500064982
+      }
+    }
+    Overrides {
+      Name: "cs:Tutorial_WaypointsPanel"
+      ObjectReference {
+        SelfId: 18427583266494172976
       }
     }
   }
@@ -9524,6 +9596,18 @@ Objects {
       Name: "cs:BlackScreen"
       ObjectReference {
         SelfId: 13299598676297154641
+      }
+    }
+    Overrides {
+      Name: "cs:Tutorial_ShootingRangePanel"
+      ObjectReference {
+        SelfId: 1360069177793361706
+      }
+    }
+    Overrides {
+      Name: "cs:API_Tutorial"
+      AssetReference {
+        Id: 3002171482500064982
       }
     }
   }
