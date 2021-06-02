@@ -1,4 +1,13 @@
 Assets {
+  Id: 17251969847265876676
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 17033873748477954084
   Name: "Heavy Turning Mechanism Machine Start 01 SFX"
   PlatformAssetType: 7

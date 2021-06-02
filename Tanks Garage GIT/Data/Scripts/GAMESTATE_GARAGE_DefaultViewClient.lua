@@ -1,8 +1,10 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
 local defaultViewUI = script:GetCustomProperty("DefaultViewUI"):WaitForObject()
 
+local Tutorial_ShootingRangePanel = script:GetCustomProperty("Tutorial_ShootingRangePanel"):WaitForObject()
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 local toBattleButtons = script:GetCustomProperty("ToBattleButtons"):WaitForObject()
 local blackScreen = script:GetCustomProperty("BlackScreen"):WaitForObject()
@@ -47,6 +49,10 @@ function ToggleThisComponent(requestedPlayerState)
 		end
 		
 		defaultViewUI.isEnabled = true
+		print("Set default view")
+		if(localPlayer:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
+			Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
+		end
 	else
 		Task.Wait(0.1)
 		DisableThisComponent()
