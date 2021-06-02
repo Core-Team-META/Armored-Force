@@ -59,7 +59,7 @@ Assets {
           AccelerationRate: 750
           DecelerationRate: 15
           BrakeStrength: 750
-          TireFriction: 10
+          TireFriction: 50
           CenterOfMassOFfset {
             Z: 20
           }
