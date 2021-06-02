@@ -58,9 +58,9 @@ Assets {
           AccelerationRate: 1163
           DecelerationRate: 15
           BrakeStrength: 1163
-          TireFriction: 10
+          TireFriction: 50
           CenterOfMassOFfset {
-            Z: -10
+            Z: 20
           }
           GravityScale: 1.9
           Tank {
