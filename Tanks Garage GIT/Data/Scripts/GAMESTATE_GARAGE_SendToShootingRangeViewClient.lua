@@ -1,5 +1,6 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
+local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
 local mainManagerServer = script:GetCustomProperty("GAMESTATE_MainManagerServer"):WaitForObject()
 local overrideCamera = script:GetCustomProperty("OverrideCamera"):WaitForObject()

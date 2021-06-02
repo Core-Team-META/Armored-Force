@@ -44,6 +44,8 @@ function OnPlayerJoined(player)
 	for resource, value in pairs(playerData.resources) do
 		player:SetResource(resource, value)
 	end
+	
+	player:SetResource("TutorialProgress", 0)
 		
 	player.serverUserData.techTreeProgress = {}
 	
