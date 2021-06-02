@@ -88,7 +88,7 @@ Objects {
     Overrides {
       Name: "cs:SharedKeyNetRef"
       NetReference {
-        Key: "107fd79174b747cdac21b195559ddadb"
+        Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
