@@ -56,12 +56,12 @@ Assets {
             Z: 70
           }
           MaxSpeed: 625
-          AccelerationRate: 400
+          AccelerationRate: 469
           DecelerationRate: 15
-          BrakeStrength: 400
-          TireFriction: 50
+          BrakeStrength: 469
+          TireFriction: 10
           CenterOfMassOFfset {
-            Z: -10
+            Z: 20
           }
           GravityScale: 1.9
           Tank {
@@ -82,7 +82,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 30
+            TurnSpeed: 50
           }
         }
       }
