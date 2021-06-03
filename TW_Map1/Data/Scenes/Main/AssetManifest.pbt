@@ -80,19 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11982944016432158213
-  Name: "Tanks01"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "be2be36ce2e34cfa86624456e2954eb6"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 11444263423430666783
   Name: "Plane 4m - Two Sided"
   PlatformAssetType: 1
@@ -129,19 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9790882288088922206
-  Name: "Achievements01"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "107fd79174b747cdac21b195559ddadb"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 6674876388081502680
   Name: "Rocky Ground 01"
   PlatformAssetType: 2
@@ -157,6 +131,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 2850362878920347160
+  Name: "Achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -184,5 +171,18 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 37611015403273492
+  Name: "Tanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "3b3cfe44e7fb41d0b0783e9eba8729ea"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }

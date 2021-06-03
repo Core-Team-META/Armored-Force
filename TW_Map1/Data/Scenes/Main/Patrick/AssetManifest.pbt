@@ -1,10 +1,55 @@
 Assets {
-  Id: 17429960155465889390
-  Name: "Center Arrow 007 Wedge"
+  Id: 17828656623802134300
+  Name: "Icon Skull"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterArrow_007Wedge"
+    AssetId: "Icon_Skull"
+  }
+}
+Assets {
+  Id: 17289448223043935888
+  Name: "UI Gradient Rectangular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_002"
+  }
+}
+Assets {
+  Id: 17191612518869424272
+  Name: "Teko Light"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoLight_ref"
+  }
+}
+Assets {
+  Id: 17184659105200274704
+  Name: "Icon Diamond"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Diamond"
+  }
+}
+Assets {
+  Id: 16797068327331994841
+  Name: "Frame Ring 4x 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing4x_004"
+  }
+}
+Assets {
+  Id: 16636415353835813981
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
   }
 }
 Assets {
@@ -35,12 +80,30 @@ Assets {
   }
 }
 Assets {
-  Id: 13808555627449592887
-  Name: "Center Circle 001 Outline"
+  Id: 15392186923000422511
+  Name: "Teko Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoBold_ref"
+  }
+}
+Assets {
+  Id: 12728303312772814266
+  Name: "BG Flat 006"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterCircle_001Outline"
+    AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
+  Id: 12515110197061593602
+  Name: "Frame Ring 013 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_013Wedge"
   }
 }
 Assets {
@@ -71,15 +134,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10506016181184346374
-  Name: "Military Frame 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Military_Frame_006"
-  }
-}
-Assets {
   Id: 9572930539580500746
   Name: "Sci-fi Button Charge 01 SFX"
   PlatformAssetType: 7
@@ -104,6 +158,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 7648893931280516746
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
+  Id: 6552376844877606649
+  Name: "Frame Ring 007 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_007Wedge"
   }
 }
 Assets {
@@ -140,15 +212,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_small_explosion_set_01_ref"
-  }
-}
-Assets {
-  Id: 1288374006336414321
-  Name: "Crosshair 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Crosshair_002"
   }
 }
 Assets {

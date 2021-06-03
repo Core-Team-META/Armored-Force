@@ -92,11 +92,17 @@ function CountdownTask()
 			
 	if #count < 2 then
 	
-		timerText.text = "Waiting for More Players... "
+		timerText.text = " ... "
 		
 	else 
-	
-		timerText.text = "Match Starting in: " .. tostring(currentTime)
+		
+		local startText = "00:"
+		
+		if currentTime < 10 then
+			startText = startText .. "0"
+		end 
+		
+		timerText.text = startText .. tostring(currentTime)
 		
 	end
 		
