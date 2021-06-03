@@ -55,10 +55,10 @@ Assets {
             Z: 105
           }
           MaxSpeed: 1300
-          AccelerationRate: 975
+          AccelerationRate: 600
           DecelerationRate: 15
-          BrakeStrength: 975
-          TireFriction: 50
+          BrakeStrength: 1
+          TireFriction: 10
           CenterOfMassOFfset {
             Z: 20
           }

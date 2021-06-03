@@ -42,7 +42,7 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 8500
+          Mass: 2200
           PhysicsBodyScale {
             X: 6
             Y: 2.5
@@ -57,10 +57,10 @@ Assets {
             Z: 105
           }
           MaxSpeed: 2250
-          AccelerationRate: 1688
+          AccelerationRate: 600
           DecelerationRate: 15
-          BrakeStrength: 1688
-          TireFriction: 50
+          BrakeStrength: 10
+          TireFriction: 10
           CenterOfMassOFfset {
             Z: 20
           }
@@ -81,14 +81,14 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            FrontLeftWheelRadius: 90
-            FrontRightWheelRadius: 90
-            RearLeftWheelRadius: 90
-            RearRightWheelRadius: 90
-            FrontLeftWheelWidth: 25
-            FrontRightWheelWidth: 25
-            RearLeftWheelWidth: 25
-            RearRightWheelWidth: 25
+            FrontLeftWheelRadius: 85
+            FrontRightWheelRadius: 85
+            RearLeftWheelRadius: 85
+            RearRightWheelRadius: 85
+            FrontLeftWheelWidth: 70
+            FrontRightWheelWidth: 70
+            RearLeftWheelWidth: 70
+            RearRightWheelWidth: 70
             FrontLeftWheelOffset {
               X: 272
               Y: -180
@@ -109,7 +109,7 @@ Assets {
               Y: 180
               Z: 85
             }
-            TurningRadius: 1000
+            TurningRadius: 1500
           }
         }
       }
@@ -193,9 +193,9 @@ Assets {
             Yaw: -179.999969
           }
           Scale {
-            X: 0.8
-            Y: 0.7
-            Z: 0.8
+            X: 0.79676652
+            Y: 0.712158
+            Z: 0.79676652
           }
         }
         ParentId: 14385980834781738243
@@ -261,11 +261,11 @@ Assets {
           }
           Rotation {
             Yaw: -179.999969
-            Roll: -89.9999619
+            Roll: -89.9999695
           }
           Scale {
             X: 0.995958149
-            Y: 0.890197575
+            Y: 1.01736867
             Z: 0.995958149
           }
         }
@@ -335,15 +335,15 @@ Assets {
         Name: "Tire Worn"
         Transform {
           Location {
-            Y: 21.7128811
+            Y: 21.7128754
           }
           Rotation {
             Roll: -90
           }
           Scale {
-            X: 0.999999762
-            Y: 0.999999762
-            Z: 0.999999762
+            X: 0.995957911
+            Y: 1.01736844
+            Z: 0.995957911
           }
         }
         ParentId: 14111030558235412212
@@ -379,14 +379,14 @@ Assets {
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            Y: -21.7123241
+            Y: -21.712326
           }
           Rotation {
           }
           Scale {
-            X: 0.803246498
-            Y: 0.786342263
-            Z: 0.803246498
+            X: 0.799999952
+            Y: 0.8
+            Z: 0.799999952
           }
         }
         ParentId: 14111030558235412212
@@ -509,15 +509,15 @@ Assets {
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 0.00013962909
-            Y: -21.7123241
+            X: 0.000152587891
+            Y: -21.712326
           }
           Rotation {
           }
           Scale {
-            X: 0.803246737
-            Y: 0.786342382
-            Z: 0.803246737
+            X: 0.80000025
+            Y: 0.800000131
+            Z: 0.80000025
           }
         }
         ParentId: 15509249066964598056
@@ -578,16 +578,16 @@ Assets {
         Name: "Tire Worn"
         Transform {
           Location {
-            X: 0.00013962909
-            Y: 21.7128811
+            X: 0.000152587891
+            Y: 21.7128754
           }
           Rotation {
             Roll: -90
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.995958149
+            Y: 1.01736867
+            Z: 0.995958149
           }
         }
         ParentId: 15509249066964598056
@@ -686,15 +686,15 @@ Assets {
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: 0.000343994499
-            Y: -21.712883
+            X: 0.000350680668
+            Y: -21.7128906
           }
           Rotation {
           }
           Scale {
-            X: 0.803246677
-            Y: 0.786342382
-            Z: 0.803246677
+            X: 0.800000131
+            Y: 0.800000131
+            Z: 0.800000131
           }
         }
         ParentId: 11557106629610824312
@@ -755,16 +755,16 @@ Assets {
         Name: "Tire Worn"
         Transform {
           Location {
-            X: 0.000319430779
-            Y: 21.7123928
+            X: 0.000320705702
+            Y: 21.7123871
           }
           Rotation {
             Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.995958149
+            Y: 1.01736867
+            Z: 0.995958149
           }
         }
         ParentId: 11557106629610824312

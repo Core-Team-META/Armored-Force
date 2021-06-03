@@ -110,16 +110,16 @@ function AssignDriver(newDriver)
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 500)
+	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 700)
 	driver = newDriver
 	
 	SetTankModifications()
 	
-	driver.isCollidable = false
-	driver.isVisible = false
+	--driver.isCollidable = false
+	--driver.isVisible = false
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
-	driver.gravityScale = 0
+	--driver.gravityScale = 0
 	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
@@ -132,7 +132,9 @@ function AssignDriver(newDriver)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
 	
-	Task.Wait(0.5)
+	Task.Wait(0.1)
+	
+	chassis:SetDriver(driver)
 	
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis})
 	turret = hitbox:FindDescendantByName("Turret")
@@ -140,8 +142,9 @@ function AssignDriver(newDriver)
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
 	
+	Task.Wait(0.1)
+	
 	hitbox:SetPosition(Vector3.ZERO)
-	chassis:SetDriver(driver)
 	
 	if turret and horizontalCannonAngles <= 0 then
 		turret:LookAtContinuous(target, true, traverseSpeed/57)
@@ -159,8 +162,6 @@ function AssignDriver(newDriver)
 	
 	bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
-	
-	--driver:AttachToCoreObject(turret)
 	
 	Task.Wait()
 	

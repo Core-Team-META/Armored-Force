@@ -59,7 +59,7 @@ Assets {
           AccelerationRate: 713
           DecelerationRate: 15
           BrakeStrength: 713
-          TireFriction: 50
+          TireFriction: 25
           CenterOfMassOFfset {
             Z: 20
           }
@@ -82,7 +82,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 70
+            TurnSpeed: 75
           }
         }
       }
