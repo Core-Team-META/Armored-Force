@@ -8,12 +8,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14835976318670094476
-  Name: "Tanks01"
+  Id: 16844715161913635150
+  Name: "Tanks"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "be2be36ce2e34cfa86624456e2954eb6"
+      Key: "3b3cfe44e7fb41d0b0783e9eba8729ea"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -21,12 +21,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7576276574877987052
-  Name: "Achievements01"
+  Id: 12449423141912433601
+  Name: "Achievements"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "107fd79174b747cdac21b195559ddadb"
+      Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }

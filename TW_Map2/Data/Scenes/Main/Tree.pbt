@@ -18,14 +18,14 @@ Objects {
   ChildIds: 4965067273124672211
   ChildIds: 16933976679426407654
   ChildIds: 18217549399293975483
+  ChildIds: 3633572912189158159
   ChildIds: 9479035303955472683
-  ChildIds: 11780395721209308910
   ChildIds: 6985822757853840602
-  ChildIds: 11544850952862364982
-  ChildIds: 14274737480113221828
-  ChildIds: 15816620826778612547
-  ChildIds: 9076550816120083263
-  ChildIds: 14125168387794350446
+  ChildIds: 13653510529546050229
+  ChildIds: 9647716851810047072
+  ChildIds: 14096343832332444043
+  ChildIds: 1381238082432506037
+  ChildIds: 12477312514186313496
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,36 +41,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14125168387794350446
-  Name: "Chat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Chat"
-  }
-}
-Objects {
-  Id: 9076550816120083263
+  Id: 12477312514186313496
   Name: "Morticai (Brent)"
   Transform {
     Location {
@@ -102,7 +73,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15816620826778612547
+  Id: 1381238082432506037
   Name: "Ryan"
   Transform {
     Location {
@@ -131,7 +102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14274737480113221828
+  Id: 14096343832332444043
   Name: "Marcela"
   Transform {
     Location {
@@ -160,9 +131,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11544850952862364982
+  Id: 9647716851810047072
   Name: "Patrick"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -182,6 +157,35 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
+  }
+}
+Objects {
+  Id: 13653510529546050229
+  Name: "Chat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Chat"
   }
 }
 Objects {
@@ -217,35 +221,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11780395721209308910
-  Name: "TW2_Minimap"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW2_Minimap"
-  }
-}
-Objects {
   Id: 9479035303955472683
   Name: "Antti (Keppu)"
   Transform {
@@ -272,6 +247,35 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
+  }
+}
+Objects {
+  Id: 3633572912189158159
+  Name: "TW_Minimap"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW1_Minimap"
   }
 }
 Objects {

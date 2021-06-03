@@ -94,7 +94,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               R: 0.411458343
@@ -151,7 +151,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               R: 0.09375
@@ -210,7 +210,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               R: 0.09375
@@ -269,7 +269,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               R: 0.09375
@@ -328,7 +328,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               R: 0.09375
@@ -390,7 +390,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               A: 1
@@ -447,7 +447,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               R: 0.494791657
@@ -535,7 +535,7 @@ Assets {
       }
     }
     Assets {
-      Id: 1814707273787853473
+      Id: 4504686085818425438
       Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {

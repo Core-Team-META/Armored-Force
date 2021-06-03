@@ -18,7 +18,7 @@ function Initialize()
 	
 	-- cursor position origin is upper left, need to change grid row and columns to match.
 	local xOffset = screenSize.x - (gridPanel.width + math.abs(gridPanel.x))
-	local yOffset = gridPanel.y
+	local yOffset = screenSize.y - gridPanel.height
 	
 	local rows = row:GetChildren()
 	local columns = column:GetChildren()

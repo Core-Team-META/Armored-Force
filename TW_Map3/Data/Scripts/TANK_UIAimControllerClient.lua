@@ -2,13 +2,17 @@ local EaseUI = require(script:GetCustomProperty("EaseUI"))
 
 local mainPointer = script:GetCustomProperty("Main"):WaitForObject()
 local reticleUI = script:GetCustomProperty("ReticleUI"):WaitForObject()
-local spinPoint1 = script:GetCustomProperty("SpinPoint1"):WaitForObject()
-local spinPoint2 = script:GetCustomProperty("SpinPoint2"):WaitForObject()
-local ringPart1 = script:GetCustomProperty("RingPart1"):WaitForObject()
-local ringPart2 = script:GetCustomProperty("RingPart2"):WaitForObject()
 local truePointer = script:GetCustomProperty("TruePointer"):WaitForObject()
 local sniperView = script:GetCustomProperty("SniperView"):WaitForObject()
 local distanceReadout = script:GetCustomProperty("DistanceReadout"):WaitForObject()
+
+local reloadTimer = script:GetCustomProperty("ReloadTimer"):WaitForObject()
+local fireState = script:GetCustomProperty("FireState"):WaitForObject()
+local redDot = script:GetCustomProperty("RedDot"):WaitForObject()
+local zoom = script:GetCustomProperty("Zoom"):WaitForObject()
+
+local reloadColor = script:GetCustomProperty("ReloadColor")
+local activeColor = script:GetCustomProperty("ActiveColor")
 
 local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
 
@@ -61,9 +65,6 @@ function ReloadAnimation(player, reloadTime)
 		return
 		
 	end
-
-	spinPoint1.rotationAngle = 0
-	spinPoint2.rotationAngle = 0	
 
 	reloadSpeed = reloadTime
 	
@@ -156,10 +157,7 @@ function Tick(dt)
 
 	if not Object.IsValid(cannon)  then
 		reticleUI.visibility = Visibility.FORCE_OFF
-		
-		spinPoint1.rotationAngle = 180
-		spinPoint2.rotationAngle = 180
-			
+					
 		accumulatedReloadingTime = 0
 			
 		reloading = false
@@ -175,22 +173,36 @@ function Tick(dt)
 	
 	if reloading and reloadSpeed then
 		accumulatedReloadingTime = accumulatedReloadingTime + dt
-		if accumulatedReloadingTime < reloadSpeed / 2 then
-			spinPoint1.rotationAngle = (accumulatedReloadingTime / reloadSpeed) * 360
-		elseif accumulatedReloadingTime < reloadSpeed then
-			spinPoint1.rotationAngle = 180
-			spinPoint2.rotationAngle = ((accumulatedReloadingTime / reloadSpeed) * 360) + 180
-		else
-			spinPoint1.rotationAngle = 180
-			spinPoint2.rotationAngle = 180
-			
+		
+		if reloadSpeed - accumulatedReloadingTime > 0 then
+			reloadTimer.text = string.format("%.2f",reloadSpeed - accumulatedReloadingTime)
+			fireState.text = "Reloading"
+			fireState:SetColor(reloadColor)
+			redDot.visibility = Visibility.FORCE_OFF
+		else 
 			accumulatedReloadingTime = 0
 			reloading = false
+			
+			redDot.visibility = Visibility.INHERIT
+			
 			if Object.IsValid(localPlayer.clientUserData.currentTankData.reloadSFX) then
 				localPlayer.clientUserData.currentTankData.reloadSFX:Play()
 			end
-		end		
+		end
+
+	else
+		fireState.text = "Ready"
+		fireState:SetColor(activeColor)
+		reloadTimer.text = ""
+		
 	end
+	
+	local currentCamera = localPlayer:GetActiveCamera()
+	local currentZoom = currentCamera.currentDistance
+	local maxZoom = currentCamera.minDistance
+	local minZoom = currentCamera.maxDistance
+	
+	zoom.text = string.format("%.1f", (minZoom - currentZoom)/700) .. "xZoom"
 	
 	UpdatePointer()
 		

@@ -17,15 +17,14 @@ Objects {
   ChildIds: 15182677334456928949
   ChildIds: 12209608198557882361
   ChildIds: 5837658692554861011
-  ChildIds: 16716271045736805020
+  ChildIds: 16072974022073617001
   ChildIds: 7310433976514289622
   ChildIds: 9108897930868411190
-  ChildIds: 5302429759504111089
-  ChildIds: 8108805893332874686
-  ChildIds: 17339312201002368737
-  ChildIds: 3938293389549324359
-  ChildIds: 8836799249945110737
-  ChildIds: 4272278534625085140
+  ChildIds: 5258621666791644160
+  ChildIds: 3263049988825329085
+  ChildIds: 14419027859949643500
+  ChildIds: 2588005250307059280
+  ChildIds: 12947177889286022124
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,40 +40,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4272278534625085140
-  Name: "TANK_CHASSIS_Default_US_M3Stuart"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6132183089281744122
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_CHASSIS_Default_US_M3Stuart"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18440003844035607917
-    }
-  }
-}
-Objects {
-  Id: 8836799249945110737
+  Id: 12947177889286022124
   Name: "Chat"
   Transform {
     Location {
@@ -103,7 +69,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3938293389549324359
+  Id: 2588005250307059280
   Name: "Morticai (Brent)"
   Transform {
     Location {
@@ -135,7 +101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17339312201002368737
+  Id: 14419027859949643500
   Name: "Ryan"
   Transform {
     Location {
@@ -164,7 +130,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8108805893332874686
+  Id: 3263049988825329085
   Name: "Marcela"
   Transform {
     Location {
@@ -193,7 +159,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5302429759504111089
+  Id: 5258621666791644160
   Name: "Patrick"
   Transform {
     Location {
@@ -283,8 +249,8 @@ Objects {
   }
 }
 Objects {
-  Id: 16716271045736805020
-  Name: "TW3_Minimap"
+  Id: 16072974022073617001
+  Name: "TW_Minimap"
   Transform {
     Location {
     }
@@ -308,7 +274,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "TW3_Minimap"
+    FilePartitionName: "TW1_Minimap"
   }
 }
 Objects {
