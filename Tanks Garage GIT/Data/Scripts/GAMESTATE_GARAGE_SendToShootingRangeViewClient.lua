@@ -70,6 +70,10 @@ function SendBackToGarage(trigger, other)
 		other = other.driver
 	end
 	
+	if other ~= localPlayer then
+		return
+	end
+	
 	if sendToShootingRangeViewUI.isEnabled then
 		return
 	end

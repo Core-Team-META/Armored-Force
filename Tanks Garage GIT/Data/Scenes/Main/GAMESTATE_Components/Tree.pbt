@@ -2044,9 +2044,9 @@ Objects {
   Name: "ToGarageTrigger"
   Transform {
     Location {
-      X: -1190
-      Y: 8050
-      Z: 195
+      X: -804.69342
+      Y: 8329.73145
+      Z: 278.705231
     }
     Rotation {
       Pitch: 10

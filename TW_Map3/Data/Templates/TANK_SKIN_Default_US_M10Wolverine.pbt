@@ -18,7 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 14053453635395893004
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -15762,7 +15762,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -31064,7 +31064,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -31460,7 +31460,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -32954,7 +32954,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 198353679974341757
+            Id: 16374150260036817633
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -35476,7 +35476,7 @@ Assets {
       }
     }
     Assets {
-      Id: 198353679974341757
+      Id: 16374150260036817633
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {

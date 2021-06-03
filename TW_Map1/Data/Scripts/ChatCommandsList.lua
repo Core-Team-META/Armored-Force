@@ -147,6 +147,19 @@ commands = {
         requireMessage = false,
         adminOnly = false
     },
+    
+    ["/respawn"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	player:Respawn()        	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Respawn (for casese when falling through the map).",
+        requireMessage = false,
+        adminOnly = false
+    },
 
     ["/help"] = {
         OnCommandCalledClient = function (player, message)

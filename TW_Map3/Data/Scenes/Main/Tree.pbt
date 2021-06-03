@@ -24,7 +24,7 @@ Objects {
   ChildIds: 3263049988825329085
   ChildIds: 14419027859949643500
   ChildIds: 2588005250307059280
-  ChildIds: 12947177889286022124
+  ChildIds: 12373301024267504133
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,7 +40,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12947177889286022124
+  Id: 12373301024267504133
   Name: "Chat"
   Transform {
     Location {

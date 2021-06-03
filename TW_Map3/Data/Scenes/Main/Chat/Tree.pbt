@@ -1,7 +1,7 @@
 Name: "Chat"
-RootId: 12947177889286022124
+RootId: 12373301024267504133
 Objects {
-  Id: 4196171594251071950
+  Id: 5526061116663919135
   Name: "Chat Controller"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12947177889286022124
-  ChildIds: 16509604280912538741
-  ChildIds: 17244710928398746982
+  ParentId: 12373301024267504133
+  ChildIds: 9975988692991531758
+  ChildIds: 5895954100908212627
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,7 +31,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17244710928398746982
+  Id: 5895954100908212627
   Name: "ClientContext"
   Transform {
     Location {
@@ -44,9 +44,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4196171594251071950
-  ChildIds: 13791896615011694330
-  ChildIds: 6495990468620418496
+  ParentId: 5526061116663919135
+  ChildIds: 9817292031918574148
+  ChildIds: 4576551665883866018
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6495990468620418496
+  Id: 4576551665883866018
   Name: "UI Container"
   Transform {
     Location {
@@ -73,7 +73,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17244710928398746982
+  ParentId: 5895954100908212627
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -110,7 +110,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13791896615011694330
+  Id: 9817292031918574148
   Name: "ChatControllerClient"
   Transform {
     Location {
@@ -123,7 +123,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17244710928398746982
+  ParentId: 5895954100908212627
   UnregisteredParameters {
     Overrides {
       Name: "cs:CommandsList"
@@ -140,7 +140,7 @@ Objects {
     Overrides {
       Name: "cs:Container"
       ObjectReference {
-        SelfId: 6495990468620418496
+        SelfId: 4576551665883866018
       }
     }
   }
@@ -160,7 +160,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16509604280912538741
+  Id: 9975988692991531758
   Name: "ChatControllerServer"
   Transform {
     Location {
@@ -173,7 +173,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4196171594251071950
+  ParentId: 5526061116663919135
   UnregisteredParameters {
     Overrides {
       Name: "cs:CommandsList"

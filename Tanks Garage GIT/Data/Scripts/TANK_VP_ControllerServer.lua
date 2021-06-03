@@ -207,7 +207,7 @@ function SetTankModifications()
 	
 	if not modifications then
 		warn("COULD NOT FIND TANK ID " .. identifier)
-		modifications = {2, 2, 2} -- 2, 2, 2 \ 0, 0, 0
+		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
 	end
 	
 	if modifications[1] == 2 then
@@ -328,7 +328,7 @@ function FireProjectile()
 	firedProjectile.gravityScale = 0
 	firedProjectile.lifeSpan = 5
 	firedProjectile.capsuleRadius = projectileRadius 
-	firedProjectile.capsuleLength = projectileLength
+	firedProjectile.capsuleLength = projectileLength * 5
 	firedProjectile.speed = projectileSpeed
 	
 	firedProjectile.lifeSpanEndedEvent:Connect(ProjectileExpired)
