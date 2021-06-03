@@ -1,10 +1,10 @@
 Assets {
-  Id: 17429960155465889390
-  Name: "Center Arrow 007 Wedge"
+  Id: 16797068327331994841
+  Name: "Frame Ring 4x 004"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterArrow_007Wedge"
+    AssetId: "FrameRing4x_004"
   }
 }
 Assets {
@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13808555627449592887
-  Name: "Center Circle 001 Outline"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterCircle_001Outline"
-  }
-}
-Assets {
   Id: 13410380981912624496
   Name: "Small Explosion Set 01 SFX"
   PlatformAssetType: 10
@@ -62,12 +53,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12515110197061593602
+  Name: "Frame Ring 013 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_013Wedge"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 9686253618519087109
+  Name: "Teko Light"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoLight_ref"
   }
 }
 Assets {
@@ -89,11 +98,20 @@ Assets {
   }
 }
 Assets {
-  Id: 1288374006336414321
-  Name: "Crosshair 002"
+  Id: 6552376844877606649
+  Name: "Frame Ring 007 Wedge"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "Crosshair_002"
+    AssetId: "FrameRing_007Wedge"
+  }
+}
+Assets {
+  Id: 675260763225735688
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
   }
 }

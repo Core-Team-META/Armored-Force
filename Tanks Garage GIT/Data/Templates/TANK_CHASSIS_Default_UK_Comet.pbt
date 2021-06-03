@@ -56,27 +56,27 @@ Assets {
             Z: 90
           }
           MaxSpeed: 1050
-          AccelerationRate: 788
+          AccelerationRate: 600
           DecelerationRate: 15
-          BrakeStrength: 788
-          TireFriction: 50
+          BrakeStrength: 1
+          TireFriction: 10
           CenterOfMassOFfset {
             Z: 20
           }
           GravityScale: 1.9
           Tank {
             LeftTreadRadius: 70
-            LeftTreadWidth: 100
+            LeftTreadWidth: 70
             RightTreadRadius: 70
-            RightTreadWidth: 100
+            RightTreadWidth: 70
             LeftTreadOffset {
               X: -20
-              Y: -245
+              Y: -225
               Z: 60
             }
             RightTreadOffset {
               X: -20
-              Y: 245
+              Y: 225
               Z: 60
             }
             HandbrakeBinding {
