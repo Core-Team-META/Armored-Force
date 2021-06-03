@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4064249699380950692
+  Name: "Frosted Glass No Distortion"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass_nodistortion"
+  }
+}
+Assets {
   Id: 663082363223318009
   Name: "Stucco Tintable"
   PlatformAssetType: 2
