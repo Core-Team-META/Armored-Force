@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 10000
+          Mass: 100000
           PhysicsBodyScale {
             X: 7
             Y: 3.2
@@ -55,13 +55,13 @@ Assets {
             X: -30
             Z: 70
           }
-          MaxSpeed: 1000
+          MaxSpeed: 1100
           AccelerationRate: 800
           DecelerationRate: 15
           BrakeStrength: 800
-          TireFriction: 50
+          TireFriction: 10
           CenterOfMassOFfset {
-            Z: -10
+            Z: 20
           }
           GravityScale: 1.9
           Tank {

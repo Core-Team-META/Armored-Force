@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 12000
+          Mass: 50000
           PhysicsBodyScale {
             X: 5
             Y: 3.5
@@ -55,13 +55,13 @@ Assets {
             X: -70
             Z: 105
           }
-          MaxSpeed: 875
-          AccelerationRate: 500
+          MaxSpeed: 800
+          AccelerationRate: 600
           DecelerationRate: 15
-          BrakeStrength: 500
-          TireFriction: 50
+          BrakeStrength: 1
+          TireFriction: 10
           CenterOfMassOFfset {
-            Z: -10
+            Z: 20
           }
           GravityScale: 1.9
           Tank {
@@ -81,7 +81,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 20
+            TurnSpeed: 50
           }
         }
       }

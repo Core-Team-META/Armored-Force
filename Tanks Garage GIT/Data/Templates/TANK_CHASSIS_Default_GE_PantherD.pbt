@@ -55,7 +55,7 @@ Assets {
             X: -50
             Z: 105
           }
-          MaxSpeed: 1125
+          MaxSpeed: 1225
           AccelerationRate: 600
           DecelerationRate: 15
           BrakeStrength: 1

@@ -110,16 +110,16 @@ function AssignDriver(newDriver)
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 500)
+	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 700)
 	driver = newDriver
 	
 	SetTankModifications()
 	
-	driver.isCollidable = false
-	driver.isVisible = false
+	--driver.isCollidable = false
+	--driver.isVisible = false
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
-	driver.gravityScale = 0
+	--driver.gravityScale = 0
 	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
@@ -128,9 +128,13 @@ function AssignDriver(newDriver)
 	explosion = templateReferences:GetCustomProperty("ProjectileExplosion")
 	destroyedTankTempate = templateReferences:GetCustomProperty("DestroyedTank")
 	
-	chassis = World.SpawnAsset(chassisTemplate, {position = script:GetWorldPosition(), rotation = script:GetWorldRotation()})
+	chassis = World.SpawnAsset(chassisTemplate)
+	chassis:SetWorldPosition(script:GetWorldPosition())
+	chassis:SetWorldRotation(script:GetWorldRotation())
 	
-	Task.Wait(0.5)
+	Task.Wait(0.1)
+	
+	chassis:SetDriver(driver)
 	
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis})
 	turret = hitbox:FindDescendantByName("Turret")
@@ -138,8 +142,9 @@ function AssignDriver(newDriver)
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
 	
+	Task.Wait(0.1)
+	
 	hitbox:SetPosition(Vector3.ZERO)
-	chassis:SetDriver(driver)
 	
 	if turret and horizontalCannonAngles <= 0 then
 		turret:LookAtContinuous(target, true, traverseSpeed/57)
@@ -158,8 +163,6 @@ function AssignDriver(newDriver)
 	bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
 	
-	--driver:AttachToCoreObject(turret)
-	
 	Task.Wait()
 	
 	script:SetNetworkedCustomProperty("TankReady", true)
@@ -167,6 +170,7 @@ function AssignDriver(newDriver)
 	SetServerData()
 	
 end
+
 function AssignOwner(newOwner)
 
 	script:SetNetworkedCustomProperty("DriverID", newOwner.id)
@@ -203,7 +207,7 @@ function SetTankModifications()
 	
 	if not modifications then
 		warn("COULD NOT FIND TANK ID " .. identifier)
-		modifications = {2, 2, 2} -- 2, 2, 2 \ 0, 0, 0
+		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
 	end
 	
 	if modifications[1] == 2 then
@@ -301,7 +305,7 @@ function OnBindingPressed(player, binding)
 		return
 	end
 	
-	if binding == "ability_primary" and not player:IsBindingPressed("ability_extra_14") then
+	if binding == "ability_primary" then
 		FireProjectile()
 	elseif binding == "ability_extra_40" and Environment.IsMultiplayerPreview() then
 		driver:Die()
@@ -324,7 +328,7 @@ function FireProjectile()
 	firedProjectile.gravityScale = 0
 	firedProjectile.lifeSpan = 5
 	firedProjectile.capsuleRadius = projectileRadius 
-	firedProjectile.capsuleLength = projectileLength
+	firedProjectile.capsuleLength = projectileLength * 5
 	firedProjectile.speed = projectileSpeed
 	
 	firedProjectile.lifeSpanEndedEvent:Connect(ProjectileExpired)
@@ -366,7 +370,7 @@ function OnArmorHit(trigger, other)
 		other.speed = 0
 		other.capsuleRadius = 0
 		other.capsuleLength = 0
-		other.lifeSpan = 0.01
+		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
 			return
@@ -379,7 +383,7 @@ function OnArmorHit(trigger, other)
 		
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
-		--driver:ApplyDamage(damageDealt)
+		driver:ApplyDamage(damageDealt)
 
 		local attackData = {
 			object = driver,
@@ -390,7 +394,6 @@ function OnArmorHit(trigger, other)
 			tags = {id = "Example"}
 		}
 		COMBAT.ApplyDamage(attackData)
-
 		
 		--print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage)

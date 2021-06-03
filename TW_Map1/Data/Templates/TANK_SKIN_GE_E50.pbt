@@ -20,7 +20,7 @@ Assets {
         ChildIds: 9251225266593629459
         ChildIds: 1228336377654928815
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
