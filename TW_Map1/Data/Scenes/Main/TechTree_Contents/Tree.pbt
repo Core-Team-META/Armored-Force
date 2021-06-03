@@ -1,7 +1,7 @@
 Name: "TechTree_Contents"
-RootId: 10902389067132200447
+RootId: 7275808827381717669
 Objects {
-  Id: 18248530474436141770
+  Id: 14037219826356011184
   Name: "TechTree_Jagdtiger"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -83,7 +83,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 10419676979546155762
+        SelfId: 11152348987982870329
       }
     }
     Overrides {
@@ -187,7 +187,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7965059017204415295
+  Id: 15170362612162572231
   Name: "TechTree_VK72.01"
   Transform {
     Location {
@@ -200,7 +200,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -269,7 +269,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 13442176226081305531
+        SelfId: 15055632414975596653
       }
     }
     Overrides {
@@ -373,7 +373,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8431197700406251246
+  Id: 12975575014271569455
   Name: "TechTree_E-100"
   Transform {
     Location {
@@ -386,7 +386,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -455,7 +455,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 13442176226081305531
+        SelfId: 15055632414975596653
       }
     }
     Overrides {
@@ -559,7 +559,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10348097348320376325
+  Id: 10719296699972440039
   Name: "TechTree_Maus"
   Transform {
     Location {
@@ -572,7 +572,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -641,7 +641,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 13442176226081305531
+        SelfId: 15055632414975596653
       }
     }
     Overrides {
@@ -745,7 +745,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9875747904292296596
+  Id: 10321794810875968543
   Name: "TechTree_Type 74"
   Transform {
     Location {
@@ -758,7 +758,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -827,7 +827,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 10947212363697226294
+        SelfId: 18318149177576851897
       }
     }
     Overrides {
@@ -931,7 +931,7 @@ Objects {
   }
 }
 Objects {
-  Id: 547163457998413810
+  Id: 6404617107053458887
   Name: "TechTree_E-50"
   Transform {
     Location {
@@ -944,7 +944,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -1013,7 +1013,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 10947212363697226294
+        SelfId: 18318149177576851897
       }
     }
     Overrides {
@@ -1117,7 +1117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14524401806274275031
+  Id: 10607733223503204329
   Name: "TechTree_OF-40"
   Transform {
     Location {
@@ -1130,7 +1130,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -1199,7 +1199,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 10947212363697226294
+        SelfId: 18318149177576851897
       }
     }
     Overrides {
@@ -1303,7 +1303,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2790502100582464585
+  Id: 9979501222328221376
   Name: "TechTree_FIAT 6616"
   Transform {
     Location {
@@ -1316,7 +1316,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -1385,7 +1385,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 10947212363697226294
+        SelfId: 18318149177576851897
       }
     }
     Overrides {
@@ -1489,7 +1489,7 @@ Objects {
   }
 }
 Objects {
-  Id: 103390089447957502
+  Id: 18035123001837279376
   Name: "TechTree_Lowe"
   Transform {
     Location {
@@ -1502,7 +1502,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -1669,7 +1669,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13442176226081305531
+  Id: 15055632414975596653
   Name: "TechTree_Tiger 2"
   Transform {
     Location {
@@ -1682,7 +1682,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -1751,13 +1751,13 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 10759803081904165737
+        SelfId: 9969482020121999767
       }
     }
     Overrides {
       Name: "cs:Prerequisite2"
       ObjectReference {
-        SelfId: 16324549051837455865
+        SelfId: 3983062572359940795
       }
     }
     Overrides {
@@ -1861,7 +1861,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10947212363697226294
+  Id: 18318149177576851897
   Name: "TechTree_Panther"
   Transform {
     Location {
@@ -1874,7 +1874,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -1943,13 +1943,13 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 10759803081904165737
+        SelfId: 9969482020121999767
       }
     }
     Overrides {
       Name: "cs:Prerequisite2"
       ObjectReference {
-        SelfId: 16324549051837455865
+        SelfId: 3983062572359940795
       }
     }
     Overrides {
@@ -2053,7 +2053,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10419676979546155762
+  Id: 11152348987982870329
   Name: "TechTree_StuG 3 G"
   Transform {
     Location {
@@ -2066,7 +2066,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -2135,7 +2135,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 12263984345910889189
+        SelfId: 15325466732779012551
       }
     }
     Overrides {
@@ -2239,7 +2239,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16324549051837455865
+  Id: 3983062572359940795
   Name: "TechTree_Panzer 4"
   Transform {
     Location {
@@ -2252,7 +2252,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -2321,7 +2321,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 12263984345910889189
+        SelfId: 15325466732779012551
       }
     }
     Overrides {
@@ -2425,7 +2425,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10759803081904165737
+  Id: 9969482020121999767
   Name: "TechTree_Chi-Nu"
   Transform {
     Location {
@@ -2438,7 +2438,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -2507,7 +2507,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 12263984345910889189
+        SelfId: 15325466732779012551
       }
     }
     Overrides {
@@ -2611,7 +2611,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16409165254901403820
+  Id: 3632519334743317164
   Name: "TechTree_Leopard VK1602"
   Transform {
     Location {
@@ -2624,7 +2624,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -2693,7 +2693,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 12263984345910889189
+        SelfId: 15325466732779012551
       }
     }
     Overrides {
@@ -2797,7 +2797,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12263984345910889189
+  Id: 15325466732779012551
   Name: "TechTree_Panzer 3"
   Transform {
     Location {
@@ -2810,7 +2810,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -2977,7 +2977,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10077491643045007433
+  Id: 7531663706060895895
   Name: "TechTree_T110 E3"
   Transform {
     Location {
@@ -2990,7 +2990,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -3059,7 +3059,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 1959415103978821918
+        SelfId: 6842055841259777047
       }
     }
     Overrides {
@@ -3163,7 +3163,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5359953419272607145
+  Id: 8952010027931313155
   Name: "TechTree_AMX-50"
   Transform {
     Location {
@@ -3176,7 +3176,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -3245,7 +3245,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 333687301045529628
+        SelfId: 2013233068301814194
       }
     }
     Overrides {
@@ -3349,7 +3349,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14268809015791216104
+  Id: 10250587851221949483
   Name: "TechTree_IS-7"
   Transform {
     Location {
@@ -3362,7 +3362,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -3431,7 +3431,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 333687301045529628
+        SelfId: 2013233068301814194
       }
     }
     Overrides {
@@ -3535,7 +3535,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3979528818918726319
+  Id: 17330628305949780050
   Name: "TechTree_T57"
   Transform {
     Location {
@@ -3548,7 +3548,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -3617,7 +3617,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 333687301045529628
+        SelfId: 2013233068301814194
       }
     }
     Overrides {
@@ -3721,7 +3721,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9624580214404038676
+  Id: 9452968374051957878
   Name: "TechTree_T-62A1"
   Transform {
     Location {
@@ -3734,7 +3734,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -3803,7 +3803,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 6509085908528929078
+        SelfId: 5065178496823148086
       }
     }
     Overrides {
@@ -3907,7 +3907,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8127052971694609753
+  Id: 1716923952780649599
   Name: "TechTree_M48 Patton"
   Transform {
     Location {
@@ -3920,7 +3920,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -3989,7 +3989,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 6509085908528929078
+        SelfId: 5065178496823148086
       }
     }
     Overrides {
@@ -4093,7 +4093,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16529831618164295620
+  Id: 3527271488789223459
   Name: "TechTree_Bat-Chat 25T"
   Transform {
     Location {
@@ -4106,7 +4106,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -4175,7 +4175,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 6509085908528929078
+        SelfId: 5065178496823148086
       }
     }
     Overrides {
@@ -4279,7 +4279,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10972267940890428795
+  Id: 5621358742721592019
   Name: "TechTree_1955 Chimera"
   Transform {
     Location {
@@ -4292,7 +4292,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -4361,7 +4361,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 15515612808567568701
+        SelfId: 9935116244801977354
       }
     }
     Overrides {
@@ -4465,7 +4465,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4735354043350159875
+  Id: 15267528517297339249
   Name: "TechTree_T34 Heavy"
   Transform {
     Location {
@@ -4478,7 +4478,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -4645,7 +4645,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3184720902801382448
+  Id: 9897204117093974620
   Name: "TechTree_M6A1 Heavy"
   Transform {
     Location {
@@ -4658,7 +4658,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -4825,7 +4825,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1959415103978821918
+  Id: 6842055841259777047
   Name: "TechTree_M10 Wolverine"
   Transform {
     Location {
@@ -4838,7 +4838,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -4907,7 +4907,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 2532548569050973279
+        SelfId: 593061770962749728
       }
     }
     Overrides {
@@ -5011,7 +5011,7 @@ Objects {
   }
 }
 Objects {
-  Id: 333687301045529628
+  Id: 2013233068301814194
   Name: "TechTree_IS-3"
   Transform {
     Location {
@@ -5024,7 +5024,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -5093,13 +5093,13 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 3519630143353976930
+        SelfId: 10775548380833033531
       }
     }
     Overrides {
       Name: "cs:Prerequisite2"
       ObjectReference {
-        SelfId: 2349042749694806896
+        SelfId: 3742629614099594568
       }
     }
     Overrides {
@@ -5203,7 +5203,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6509085908528929078
+  Id: 5065178496823148086
   Name: "TechTree_Comet"
   Transform {
     Location {
@@ -5216,7 +5216,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -5285,13 +5285,13 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 3519630143353976930
+        SelfId: 10775548380833033531
       }
     }
     Overrides {
       Name: "cs:Prerequisite2"
       ObjectReference {
-        SelfId: 2349042749694806896
+        SelfId: 3742629614099594568
       }
     }
     Overrides {
@@ -5395,7 +5395,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2349042749694806896
+  Id: 3742629614099594568
   Name: "TechTree_T-34"
   Transform {
     Location {
@@ -5408,7 +5408,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -5477,7 +5477,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 2532548569050973279
+        SelfId: 593061770962749728
       }
     }
     Overrides {
@@ -5581,7 +5581,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3519630143353976930
+  Id: 10775548380833033531
   Name: "TechTree_M4A1Sherman"
   Transform {
     Location {
@@ -5594,7 +5594,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -5663,7 +5663,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 2532548569050973279
+        SelfId: 593061770962749728
       }
     }
     Overrides {
@@ -5767,7 +5767,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15515612808567568701
+  Id: 9935116244801977354
   Name: "TechTree_M24Chaffee"
   Transform {
     Location {
@@ -5780,7 +5780,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -5849,7 +5849,7 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       ObjectReference {
-        SelfId: 2532548569050973279
+        SelfId: 593061770962749728
       }
     }
     Overrides {
@@ -5953,7 +5953,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2532548569050973279
+  Id: 593061770962749728
   Name: "TechTree_M3Stuart"
   Transform {
     Location {
@@ -5966,7 +5966,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10902389067132200447
+  ParentId: 7275808827381717669
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"

@@ -16,6 +16,19 @@ local updateTask = nil
 local localPlayer = Game.GetLocalPlayer()
 
 
+function SetChildrenText(uiObj,_text) -- <-- generic children text function by AJ
+    if Object.IsValid(uiObj) and uiObj:IsA("UIText") then
+        uiObj.text = _text
+    end
+
+    for i,v in ipairs(uiObj:GetChildren()) do
+        if v:IsA("UIText") then
+            SetChildrenText(v,_text)
+        end
+    end
+
+end
+
 function StateSTART(manager, propertyName)
 
 	if propertyName ~= "GameState" then
@@ -57,17 +70,17 @@ function UpdateUITask()
 	
 	local count2 = Game.GetPlayers({includeTeams = 2, ignoreDead = true})
 	
-	timer.text = string.format("%02d:%02d",math.floor(count / 60),count % 60)
+	SetChildrenText(timer, string.format("%02d:%02d",math.floor(count / 60),count % 60))
 		
 	if localPlayer.team == 1 then
 		
-		allyScore.text = tostring(#count1)
-		enemyScore.text = tostring(#count2)
+		SetChildrenText(allyScore, tostring(#count1))
+		SetChildrenText(enemyScore, tostring(#count2))
 		
 	else 
 	
-		allyScore.text = tostring(#count2)
-		enemyScore.text = tostring(#count1)
+		SetChildrenText(allyScore, tostring(#count2))
+		SetChildrenText(enemyScore, tostring(#count1))
 		
 	end
 

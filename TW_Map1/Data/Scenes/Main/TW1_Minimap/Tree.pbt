@@ -16,10 +16,10 @@ Objects {
   }
   ParentId: 10433577698686771103
   ChildIds: 5661825852142314628
+  ChildIds: 14563912036218642855
   ChildIds: 9450910477321486850
   ChildIds: 12424463349357942591
   ChildIds: 3302597894179016669
-  ChildIds: 14563912036218642855
   ChildIds: 8877312406397874313
   ChildIds: 378484177755757853
   Collidable_v2 {
@@ -49,7 +49,6 @@ Objects {
     }
   }
   ParentId: 10370141871558452859
-  ChildIds: 8794502718689441022
   ChildIds: 6517589804281672817
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -91,509 +90,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Base"
-  }
-}
-Objects {
-  Id: 8794502718689441022
-  Name: "Edges"
-  Transform {
-    Location {
-      X: -30705
-      Y: -15350
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 378484177755757853
-  ChildIds: 14969097025301362101
-  ChildIds: 8458371530811632464
-  ChildIds: 8462082284273364694
-  ChildIds: 8873405959178177918
-  ChildIds: 3408493544939164859
-  ChildIds: 16494631146533115046
-  ChildIds: 18072668614606905448
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 18072668614606905448
-  Name: "MiniMap_Edge"
-  Transform {
-    Location {
-      X: 46709.5586
-      Y: -46025
-      Z: 1025
-    }
-    Rotation {
-    }
-    Scale {
-      X: 573.287231
-      Y: 7.3
-      Z: 0.6
-    }
-  }
-  ParentId: 8794502718689441022
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.396000028
-        G: 0.237205803
-        B: 0.123524055
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.694437385
-        B: 0.98
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 16494631146533115046
-  Name: "MiniMap_Edge"
-  Transform {
-    Location {
-      X: -6401.09
-      Y: -14676.7988
-      Z: 1025
-    }
-    Rotation {
-      Yaw: 128.120071
-    }
-    Scale {
-      X: 797.524597
-      Y: 7.30000067
-      Z: 0.6
-    }
-  }
-  ParentId: 8794502718689441022
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.396000028
-        G: 0.237205803
-        B: 0.123524055
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.694437385
-        B: 0.98
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 3408493544939164859
-  Name: "MiniMap_Edge"
-  Transform {
-    Location {
-      X: -30745
-      Y: 43150
-      Z: 1025
-    }
-    Rotation {
-      Yaw: 90
-    }
-    Scale {
-      X: 537.2
-      Y: 7.3
-      Z: 0.6
-    }
-  }
-  ParentId: 8794502718689441022
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.396000028
-        G: 0.237205803
-        B: 0.123524055
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.694437385
-        B: 0.98
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 8873405959178177918
-  Name: "MiniMap_Edge"
-  Transform {
-    Location {
-      X: 405
-      Y: 69750
-      Z: 1025
-    }
-    Rotation {
-    }
-    Scale {
-      X: 622.4
-      Y: 7.3
-      Z: 0.6
-    }
-  }
-  ParentId: 8794502718689441022
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.396000028
-        G: 0.237205803
-        B: 0.123524055
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.694437385
-        B: 0.98
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 8462082284273364694
-  Name: "MiniMap_Edge"
-  Transform {
-    Location {
-      X: 53376.3594
-      Y: 41434.4922
-      Z: 1025
-    }
-    Rotation {
-      Yaw: 128.036148
-    }
-    Scale {
-      X: 715.168
-      Y: 7.3
-      Z: 0.6
-    }
-  }
-  ParentId: 8794502718689441022
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.396000028
-        G: 0.237205803
-        B: 0.123524055
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.694437385
-        B: 0.98
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 8458371530811632464
-  Name: "MiniMap_Edge"
-  Transform {
-    Location {
-      X: 75480
-      Y: -16425
-      Z: 1025
-    }
-    Rotation {
-      Yaw: 90
-    }
-    Scale {
-      X: 597.9
-      Y: 7.3
-      Z: 0.6
-    }
-  }
-  ParentId: 8794502718689441022
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.396000028
-        G: 0.237205803
-        B: 0.123524055
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.694437385
-        B: 0.98
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 14969097025301362101
-  Name: "MiniMap_Edge"
-  Transform {
-    Location {
-      X: 47166.8047
-      Y: -46025
-      Z: 1025
-    }
-    Rotation {
-    }
-    Scale {
-      X: 573.287231
-      Y: 7.3
-      Z: 0.6
-    }
-  }
-  ParentId: 8794502718689441022
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Tint"
-      Color {
-        R: 0.396000028
-        G: 0.237205803
-        B: 0.123524055
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.694437385
-        B: 0.98
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
   }
 }
 Objects {
@@ -709,7 +205,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "e53f41/mapholder"
+      String: "0607ec/armoredforcemapholder"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -774,64 +270,6 @@ Objects {
       Id: 17413793273080869839
     }
     TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 14563912036218642855
-  Name: "MinimapScreenObject"
-  Transform {
-    Location {
-      X: 1103.33337
-      Y: -4193.3335
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10370141871558452859
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ScreenObject"
-      AssetReference {
-        Id: 1676661402537418123
-      }
-    }
-    Overrides {
-      Name: "cs:MiniMapPanel"
-      ObjectReference {
-        SelfId: 1626479392366946328
-      }
-    }
-    Overrides {
-      Name: "cs:ScreenObjectGroup"
-      ObjectReference {
-        SelfId: 8877312406397874313
-      }
-    }
-    Overrides {
-      Name: "cs:MinimapVisibilitySource"
-      ObjectReference {
-        SelfId: 3302597894179016669
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4822191344238976801
     }
   }
 }
@@ -917,9 +355,7 @@ Objects {
   }
   Control {
     Width: 315
-    Height: 315
-    UIX: -50
-    UIY: 50
+    Height: 310
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -931,12 +367,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:bottomright"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:bottomright"
         }
       }
     }
@@ -1023,10 +459,8 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 300
-    Height: 300
-    UIX: -50
-    UIY: 50
+    Width: 315
+    Height: 310
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1038,12 +472,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:bottomright"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:bottomright"
         }
       }
     }
@@ -1103,12 +537,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 11714689192215668751
-    SubobjectId: 15885471895257601478
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
-  }
 }
 Objects {
   Id: 5710145084287052893
@@ -1167,12 +595,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11084953981634957258
-    SubobjectId: 16659885587888599555
-    InstanceId: 14580612466727085894
-    TemplateId: 6578097607144013264
   }
 }
 Objects {
@@ -3518,7 +2940,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIY: 120
     RenderTransformPivot {
       Anchor {
@@ -3589,7 +3011,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIX: 120
     RotationAngle: 90
     RenderTransformPivot {
@@ -3661,7 +3083,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIY: 80
     RenderTransformPivot {
       Anchor {
@@ -3732,7 +3154,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIX: 80
     RotationAngle: 90
     RenderTransformPivot {
@@ -3804,7 +3226,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIY: 40
     RenderTransformPivot {
       Anchor {
@@ -3875,7 +3297,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIX: 40
     RotationAngle: 90
     RenderTransformPivot {
@@ -3947,7 +3369,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4017,7 +3439,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     RotationAngle: 90
     RenderTransformPivot {
       Anchor {
@@ -4088,7 +3510,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIY: -40
     RenderTransformPivot {
       Anchor {
@@ -4159,7 +3581,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIX: -40
     RotationAngle: 90
     RenderTransformPivot {
@@ -4231,7 +3653,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIY: -80
     RenderTransformPivot {
       Anchor {
@@ -4302,7 +3724,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIX: -80
     RotationAngle: 90
     RenderTransformPivot {
@@ -4374,7 +3796,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIY: -120
     RenderTransformPivot {
       Anchor {
@@ -4445,7 +3867,7 @@ Objects {
   }
   Control {
     Width: 310
-    Height: 1
+    Height: 2
     UIX: -120
     RotationAngle: 90
     RenderTransformPivot {
@@ -4482,6 +3904,62 @@ Objects {
           Value: "mc:euianchor:middlecenter"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 14563912036218642855
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10370141871558452859
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 1626479392366946328
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 8877312406397874313
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 3302597894179016669
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4822191344238976801
     }
   }
 }

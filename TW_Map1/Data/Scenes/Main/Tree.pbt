@@ -17,14 +17,14 @@ Objects {
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
   ChildIds: 14246791555251678451
-  ChildIds: 10433577698686771103
   ChildIds: 4689494391382931675
   ChildIds: 15794543342961490778
-  ChildIds: 16735376720692569099
-  ChildIds: 4585259135210765398
-  ChildIds: 14408459680598347347
-  ChildIds: 11812671579849953524
-  ChildIds: 105145388225632500
+  ChildIds: 10433577698686771103
+  ChildIds: 9760950192611797696
+  ChildIds: 9150084831990358686
+  ChildIds: 18175534153066006281
+  ChildIds: 17846127275428705935
+  ChildIds: 11984403265931894140
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,7 +40,7 @@ Objects {
   }
 }
 Objects {
-  Id: 105145388225632500
+  Id: 11984403265931894140
   Name: "Chat"
   Transform {
     Location {
@@ -69,7 +69,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11812671579849953524
+  Id: 17846127275428705935
   Name: "Morticai (Brent)"
   Transform {
     Location {
@@ -101,7 +101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14408459680598347347
+  Id: 18175534153066006281
   Name: "Ryan"
   Transform {
     Location {
@@ -130,7 +130,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4585259135210765398
+  Id: 9150084831990358686
   Name: "Marcela"
   Transform {
     Location {
@@ -159,7 +159,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16735376720692569099
+  Id: 9760950192611797696
   Name: "Patrick"
   Transform {
     Location {
@@ -185,6 +185,35 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
+  }
+}
+Objects {
+  Id: 10433577698686771103
+  Name: "TW_Minimap"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW1_Minimap"
   }
 }
 Objects {
@@ -246,35 +275,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
-  }
-}
-Objects {
-  Id: 10433577698686771103
-  Name: "TW1_Minimap"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW1_Minimap"
   }
 }
 Objects {
