@@ -23,6 +23,32 @@ local localPlayer = Game.GetLocalPlayer()
 
 local capLimit = teamBasesServer:GetCustomProperty("CapLimit")
 
+function SetChildrenText(uiObj,_text) -- <-- generic children text function by AJ
+    if Object.IsValid(uiObj) and uiObj:IsA("UIText") then
+        uiObj.text = _text
+    end
+
+    for i,v in ipairs(uiObj:GetChildren()) do
+        if v:IsA("UIText") then
+            SetChildrenText(v,_text)
+        end
+    end
+
+end
+
+function SetChildrenBars(uiObj, _progress)
+    if Object.IsValid(uiObj) and uiObj:IsA("UIProgressBar") then
+        uiObj.progress = _progress
+    end
+
+    for i,v in ipairs(uiObj:GetChildren()) do
+        if v:IsA("UIProgressBar") then
+            SetChildrenBars(v,_progress)
+        end
+    end
+
+end
+
 function StateSTART(manager, propertyName)
 
 	if propertyName ~= "GameState" then
@@ -65,28 +91,32 @@ end
 function UpdateUITask()
 
 	local count = mainGameStateManager:GetCustomProperty("Timer")
-
 	local count1 = Game.GetPlayers({includeTeams = 1, ignoreDead = true})
-	
 	local count2 = Game.GetPlayers({includeTeams = 2, ignoreDead = true})
 	
-	timer.text = string.format("%02d:%02d",math.floor(count / 60),count % 60)
+	SetChildrenText(timer, string.format("%02d:%02d",math.floor(count / 60),count % 60))
+
+	local team1Progress = teamBasesServer:GetCustomProperty("Team1BaseProgress")
+	local team2Progress = teamBasesServer:GetCustomProperty("Team2BaseProgress")
+	
+	print(#count2)
+	print(team2Progress)
 		
 	if localPlayer.team == 1 then
 		
-		allyScore.text = tostring(#count1)
-		enemyScore.text = tostring(#count2)
-		
-		allyProgress.progress = teamBasesServer:GetCustomProperty("Team1BaseProgress")/capLimit
-		enemyProgress.progress = teamBasesServer:GetCustomProperty("Team2BaseProgress")/capLimit
+		SetChildrenText(allyScore, tostring(#count1))
+		SetChildrenText(enemyScore, tostring(#count2))
+				
+		SetChildrenBars(allyProgress, team1Progress/capLimit)
+		SetChildrenBars(enemyProgress, team2Progress/capLimit)
 		
 	else 
 	
-		allyScore.text = tostring(#count2)
-		enemyScore.text = tostring(#count1)
+		SetChildrenText(allyScore, tostring(#count2))
+		SetChildrenText(enemyScore, tostring(#count1))
 		
-		allyProgress.progress = teamBasesServer:GetCustomProperty("Team2BaseProgress")/capLimit
-		enemyProgress.progress = teamBasesServer:GetCustomProperty("Team1BaseProgress")/capLimit
+		SetChildrenBars(allyProgress, team2Progress/capLimit)
+		SetChildrenBars(enemyProgress, team1Progress/capLimit)
 		
 	end
 

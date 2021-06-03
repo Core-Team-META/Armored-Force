@@ -14,7 +14,7 @@ local screenObject = ScreenObject.New(SCREEN_OBJECT_GROUP, {
         objectWidth = 1000 * SCREEN_OBJECT_GROUP:GetScale().x,
         pixelWidth = MINIMAP_PANEL.width,
         pixelPosX = lastScreenSize.x + MINIMAP_PANEL.x,
-        pixelPosY = MINIMAP_PANEL.y,
+        pixelPosY = lastScreenSize.y - MINIMAP_PANEL.height,
         faceCamera = false
 })
 SCREEN_OBJECT_GROUP:SetRotation(Rotation.ZERO)

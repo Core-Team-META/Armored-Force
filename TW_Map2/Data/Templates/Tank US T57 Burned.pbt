@@ -23271,7 +23271,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 11036095586913707253
+            Id: 4369638826208147952
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -24651,7 +24651,7 @@ Assets {
       }
     }
     Assets {
-      Id: 11036095586913707253
+      Id: 4369638826208147952
       Name: "Donut"
       PlatformAssetType: 1
       PrimaryAsset {

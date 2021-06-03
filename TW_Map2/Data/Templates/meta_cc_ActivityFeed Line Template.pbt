@@ -98,7 +98,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 3827265796245897469
+              Id: 10820194954338241369
             }
             Color {
               R: 1
@@ -156,7 +156,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 3827265796245897469
+              Id: 10820194954338241369
             }
             Color {
               R: 1
@@ -214,7 +214,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 3827265796245897469
+              Id: 10820194954338241369
             }
             Color {
               R: 1
@@ -240,7 +240,7 @@ Assets {
       }
     }
     Assets {
-      Id: 3827265796245897469
+      Id: 10820194954338241369
       Name: "BG Highlighted 001"
       PlatformAssetType: 9
       PrimaryAsset {
