@@ -214,7 +214,7 @@ Objects {
     Location {
       X: 8687.73
       Y: 25565
-      Z: -3217.29443
+      Z: -2687.29443
     }
     Rotation {
       Yaw: -90
@@ -271,7 +271,7 @@ Objects {
     Location {
       X: 25560
       Y: -1266.32422
-      Z: -1273.2334
+      Z: -743.233398
     }
     Rotation {
       Yaw: -179.999969
@@ -328,10 +328,10 @@ Objects {
     Location {
       X: 12281.7939
       Y: 25535
-      Z: -5167.29395
+      Z: -4637.29395
     }
     Rotation {
-      Yaw: -89.9999771
+      Yaw: -89.9999695
     }
     Scale {
       X: 0.0999522805
@@ -394,7 +394,7 @@ Objects {
     Location {
       X: 25560
       Y: -1055
-      Z: -5167.29395
+      Z: -4637.29395
     }
     Rotation {
       Yaw: -179.999954
@@ -460,7 +460,7 @@ Objects {
     Location {
       X: -25585
       Y: 7080
-      Z: -5167.29443
+      Z: -4637.29443
     }
     Rotation {
     }
@@ -516,7 +516,7 @@ Objects {
     Location {
       X: -11130
       Y: 25565
-      Z: -3217.29443
+      Z: -2687.29443
     }
     Rotation {
       Yaw: -90
@@ -573,7 +573,7 @@ Objects {
     Location {
       X: 25560
       Y: -22060
-      Z: -222.294434
+      Z: 307.705566
     }
     Rotation {
       Yaw: 180
@@ -630,7 +630,7 @@ Objects {
     Location {
       X: 16610
       Y: -25610
-      Z: -1005.78076
+      Z: -475.780762
     }
     Rotation {
       Yaw: 89.9999619
@@ -687,7 +687,7 @@ Objects {
     Location {
       X: -14505
       Y: -25610
-      Z: -1005.78076
+      Z: -475.780762
     }
     Rotation {
       Yaw: 89.9999847
@@ -2925,5 +2925,37 @@ Objects {
     }
     TeamSettings {
     }
+  }
+}
+Objects {
+  Id: 14685299095961325504
+  Name: "TerrainColliders"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9479035303955472683
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TerrainColliders"
   }
 }

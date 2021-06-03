@@ -35589,6 +35589,27 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2015649741350995836
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2.71223974
+            Y: -18.6755333
+            Z: 39.1688766
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.830219567
+            Y: 0.830219567
+            Z: 0.830219567
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 18435660001994587871
       value {
         Overrides {
@@ -38393,14 +38414,14 @@ Objects {
       Z: 1848.40161
     }
     Rotation {
-      Pitch: -9.15228176
+      Pitch: -9.15228271
       Yaw: 19.8656578
       Roll: -72.8317261
     }
     Scale {
-      X: 3.34250402
-      Y: 6.70581818
-      Z: 10.2322178
+      X: 3.34251428
+      Y: 8.10047722
+      Z: 10.2322235
     }
   }
   ParentId: 17588605924264395954
@@ -43167,7 +43188,7 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -5454.7583
+      X: -4601.60596
       Y: 14218.5635
       Z: 789.380554
     }
@@ -45667,9 +45688,9 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: -7788.84424
-      Y: 997.540039
-      Z: 1678.21106
+      X: -7787.81787
+      Y: 991.451172
+      Z: 1822.18042
     }
     Rotation {
       Pitch: 2.04903626
