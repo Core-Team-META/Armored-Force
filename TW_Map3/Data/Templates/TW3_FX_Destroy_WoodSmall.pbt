@@ -1,13 +1,13 @@
 Assets {
   Id: 16053895811275915311
-  Name: "TW3_FX_Destroy_WoodSmall"
+  Name: "TW_FX_Destroy_WoodSmall"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 16552807409293342440
       Objects {
         Id: 16552807409293342440
-        Name: "TW3_FX_Destroy_WoodSmall"
+        Name: "TW_FX_Destroy_WoodSmall"
         Transform {
           Scale {
             X: 1
@@ -47,6 +47,7 @@ Assets {
         }
         ParentId: 16552807409293342440
         ChildIds: 1931861044756111411
+        ChildIds: 6126017066899706790
         ChildIds: 6751051348620328607
         ChildIds: 16555186748733780488
         Collidable_v2 {
@@ -66,6 +67,7 @@ Assets {
         Name: "Small Wooden Structure Break Destroy Impact 01 SFX"
         Transform {
           Location {
+            Z: 48.333252
           }
           Rotation {
           }
@@ -98,18 +100,61 @@ Assets {
         }
       }
       Objects {
-        Id: 6751051348620328607
-        Name: "Dust Puff VFX"
+        Id: 6126017066899706790
+        Name: "Smoke Puff Radial VFX"
         Transform {
           Location {
-            Z: 49.1795654
           }
           Rotation {
           }
           Scale {
             X: 1
             Y: 1
-            Z: 2.37147069
+            Z: 1
+          }
+        }
+        ParentId: 12706679138312205064
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.61714685
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2291617573478914944
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 6751051348620328607
+        Name: "Dust Puff VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 12706679138312205064
@@ -117,23 +162,6 @@ Assets {
           Overrides {
             Name: "bp:density"
             Float: 2.25032854
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 1.10245311
-          }
-          Overrides {
-            Name: "bp:Gravity"
-            Float: -3.44853592
           }
         }
         Collidable_v2 {
@@ -223,6 +251,15 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_small_wooden_structure_break_impact_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 2291617573478914944
+      Name: "Smoke Puff Radial VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_smoke_puff_radial"
       }
     }
     Assets {

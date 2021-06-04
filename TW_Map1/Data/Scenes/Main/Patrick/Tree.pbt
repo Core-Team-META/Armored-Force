@@ -31123,9 +31123,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_Components"
+      Name: "cs:Settings"
       ObjectReference {
-        SelfId: 1166632495457348430
+        SelfId: 2911846559236864704
       }
     }
     Overrides {
@@ -31221,9 +31221,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_Components"
+      Name: "cs:Settings"
       ObjectReference {
-        SelfId: 1166632495457348430
+        SelfId: 2911846559236864704
       }
     }
     Overrides {
@@ -42655,6 +42655,7 @@ Objects {
     }
   }
   ParentId: 1166632495457348430
+  ChildIds: 16094538916162324985
   ChildIds: 9799174879708093659
   ChildIds: 17730352760149507276
   ChildIds: 413622859677532288
@@ -48693,9 +48694,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_Components"
+      Name: "cs:Settings"
       ObjectReference {
-        SelfId: 1166632495457348430
+        SelfId: 2911846559236864704
       }
     }
     Overrides {
@@ -49309,6 +49310,71 @@ Objects {
   Script {
     ScriptAsset {
       Id: 5115062399328739932
+    }
+  }
+}
+Objects {
+  Id: 16094538916162324985
+  Name: "GAMESTATE_ReturnToGarageServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2288912942131574933
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:Links"
+      ObjectReference {
+        SelfId: 9431579987956007090
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_StatisticsComponent"
+      ObjectReference {
+        SelfId: 5450352911273174700
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_MainGameStateManagerServer"
+      ObjectReference {
+        SelfId: 16554756392297303216
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6039091175078071259
     }
   }
 }

@@ -9,24 +9,20 @@ Assets {
       Overrides {
         Name: "color_accent"
         Color {
-          R: 0.74
-          G: 1
-          B: 0.943178892
+          R: 1
+          G: 0.494399965
+          B: 0.0519999266
           A: 1
         }
       }
       Overrides {
         Name: "color"
         Color {
-          R: 0.74
-          G: 1
-          B: 0.943178892
+          R: 1
+          G: 0.494399965
+          B: 0.0519999266
           A: 1
         }
-      }
-      Overrides {
-        Name: "v_tiles"
-        Float: 1
       }
     }
     Assets {

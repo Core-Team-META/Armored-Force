@@ -117,13 +117,13 @@ Assets {
           Overrides {
             Name: "cs:DestructionFX01"
             AssetReference {
-              Id: 16053895811275915311
+              Id: 2041471029211383226
             }
           }
           Overrides {
             Name: "cs:DestructionFX02"
             AssetReference {
-              Id: 841534158063459245
+              Id: 10741374102143104409
             }
           }
           Overrides {
@@ -288,7 +288,7 @@ Assets {
           Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {

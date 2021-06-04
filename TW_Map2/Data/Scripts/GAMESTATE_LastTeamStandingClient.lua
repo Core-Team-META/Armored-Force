@@ -1,6 +1,7 @@
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local lastTeamStandingServer = script:GetCustomProperty("GAMESTATE_LastTeamStandingServer"):WaitForObject()
-local matchComponent = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
+local settings = script:GetCustomProperty("Settings"):WaitForObject()
+
 local lastTeamStandingUI = script:GetCustomProperty("LastTeamStandingUI"):WaitForObject()
 local allyScore = script:GetCustomProperty("AllyScore"):WaitForObject()
 local enemyScore = script:GetCustomProperty("EnemyScore"):WaitForObject()
@@ -87,7 +88,7 @@ function UpdateUITask()
 end
 
 function Initialize()
-	if gameModeID == matchComponent:GetCustomProperty("MatchMode") then
+	if gameModeID == settings:GetCustomProperty("MatchMode") then
 		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 	end
 end
