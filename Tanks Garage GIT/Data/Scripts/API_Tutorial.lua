@@ -6,7 +6,7 @@ API.TutorialPhase = {
 	TargetPractice = 2,
 	PrecisionShots = 3,
 	BaseCapture = 4,
-	BackToGarage = 5,
+	JoinBattle = 5,
 	Completed = 99
 }
 

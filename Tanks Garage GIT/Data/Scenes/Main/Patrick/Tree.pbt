@@ -825,6 +825,12 @@ Objects {
         Id: 3002171482500064982
       }
     }
+    Overrides {
+      Name: "cs:TutorialCompletePopup"
+      AssetReference {
+        Id: 5513507585235710589
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25507,6 +25513,12 @@ Objects {
       Name: "cs:API_Tutorial"
       AssetReference {
         Id: 3002171482500064982
+      }
+    }
+    Overrides {
+      Name: "cs:TutorialCompletePopup"
+      AssetReference {
+        Id: 5513507585235710589
       }
     }
   }

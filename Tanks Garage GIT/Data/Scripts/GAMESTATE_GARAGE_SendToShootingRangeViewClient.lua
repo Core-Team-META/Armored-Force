@@ -262,6 +262,13 @@ function ToggleGarage(player, binding)
 	if binding == "ability_extra_34" and not sendToShootingRangeViewUI.isEnabled then
 		SendBackToGarage(returnToGarageTrigger, localPlayer)
 	end
+	
+	if binding == "ability_extra_42" and localPlayer:GetResource(API_Tutorial.GetTutorialResource()) >= API_Tutorial.TutorialPhase.JoinBattle then
+		if localPlayer:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.JoinBattle then 
+			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed)
+		end
+		Events.BroadcastToServer("SEND_TO_MAP", "Random")
+	end
 
 end
 

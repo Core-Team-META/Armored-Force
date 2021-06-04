@@ -292,6 +292,12 @@ Objects {
       Name: "cs:AdvancePhase"
       Bool: true
     }
+    Overrides {
+      Name: "cs:TutorialCompletePopup"
+      AssetReference {
+        Id: 5513507585235710589
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -884,6 +890,24 @@ Objects {
         SelfId: 3381017784015682211
       }
     }
+    Overrides {
+      Name: "cs:TutorialCompletePopup"
+      AssetReference {
+        Id: 5513507585235710589
+      }
+    }
+    Overrides {
+      Name: "cs:JoinBattle"
+      ObjectReference {
+        SelfId: 16746914393606924482
+      }
+    }
+    Overrides {
+      Name: "cs:Tutorial_JoinBattlePanel"
+      ObjectReference {
+        SelfId: 8208501464243926319
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -927,6 +951,7 @@ Objects {
   ChildIds: 3916861803194813061
   ChildIds: 6626189260521823070
   ChildIds: 12992987394650089782
+  ChildIds: 8208501464243926319
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -960,6 +985,452 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8208501464243926319
+  Name: "Tutorial_Join Battle Panel"
+  Transform {
+    Location {
+      X: 4037.26807
+      Y: -39390.7422
+      Z: 3595.82227
+    }
+    Rotation {
+      Yaw: -85.7674789
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14672083327800524015
+  ChildIds: 2740407326962510283
+  ChildIds: 5989408807490010195
+  ChildIds: 17593190525725900173
+  ChildIds: 820336296442892802
+  ChildIds: 5790754590058103163
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 385
+    Height: 155
+    UIX: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5790754590058103163
+  Name: "Objective_1"
+  Transform {
+    Location {
+      X: -39581.6953
+      Y: -1115.23828
+      Z: -3575.61304
+    }
+    Rotation {
+      Yaw: 87.2346344
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8208501464243926319
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -40
+    Height: 40
+    UIY: -10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "\342\200\242 Press [B] to join a battle (0/1)"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      Font {
+        Id: 4319230699050670341
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 820336296442892802
+  Name: "Description"
+  Transform {
+    Location {
+      X: -39581.7266
+      Y: -1115.23828
+      Z: -3575.61304
+    }
+    Rotation {
+      Yaw: 87.2346344
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8208501464243926319
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: -10
+    Height: 70
+    UIX: 5
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "You have learned the basics of tank warfare. Now put what you have learned into practice and join a battle with other players."
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 16
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 17251969847265876676
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        X: 2
+        Y: 2
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17593190525725900173
+  Name: "Header"
+  Transform {
+    Location {
+      X: -39581.7422
+      Y: -1115.24219
+      Z: -3575.61304
+    }
+    Rotation {
+      Yaw: 87.2346268
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8208501464243926319
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Height: 40
+    UIY: -30
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "TUTORIAL (5 OF 5)"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 24
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 4319230699050670341
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        X: 2
+        Y: 2
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5989408807490010195
+  Name: "BACKGROUND"
+  Transform {
+    Location {
+      X: -31746.2949
+      Y: 3193.48438
+      Z: -4445.82227
+    }
+    Rotation {
+      Yaw: 130.767487
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8208501464243926319
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 10
+    Height: 2
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 10820194954338241369
+      }
+      Color {
+        A: 0.603000045
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2740407326962510283
+  Name: "BACKGROUND"
+  Transform {
+    Location {
+      X: -31746.2949
+      Y: 3193.48438
+      Z: -4445.82227
+    }
+    Rotation {
+      Yaw: 130.767487
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8208501464243926319
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 10
+    Height: 2
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 7523603796159964991
+      }
+      Color {
+        R: 0.0127019985
+        G: 0.01637174
+        B: 0.029
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 0.8
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -1450,7 +1921,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 385
+    Width: 490
     Height: 155
     UIX: 10
     RenderTransformPivot {
@@ -1518,7 +1989,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "\342\200\242 Hit a training tank from the rear (0/1)"
+      Label: "\342\200\242 Shoot a training tank from behind (0/1)"
       Color {
         R: 1
         G: 1
@@ -1600,7 +2071,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "\342\200\242 Hit a training tank from the side (0/1)"
+      Label: "\342\200\242 Shoot a training tank from the side (0/1)"
       Color {
         R: 1
         G: 1
@@ -1682,7 +2153,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "\342\200\242 Hit a training tank from the front (0/1)"
+      Label: "\342\200\242 Shoot a training tank from the front (0/1)"
       Color {
         R: 1
         G: 1
@@ -1764,7 +2235,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "Hitting a tank on the front, sides, or rear affects the damage you deal. Hit each side and see how it affects your damage."
+      Label: "Shooting a tank on the front, sides, or rear affects the damage you deal. Shoot each side and see how it affects your damage."
       Color {
         R: 1
         G: 1
@@ -2059,7 +2530,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 385
+    Width: 490
     Height: 155
     UIX: 10
     RenderTransformPivot {
@@ -2127,7 +2598,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "\342\200\242 Destroy training tanks (0/2)"
+      Label: "\342\200\242 Shoot training tanks and deal 50 damage (0/50)"
       Color {
         R: 1
         G: 1
@@ -2210,7 +2681,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "Aim your tank\'s turret with the mouse and fire your gun with left click. Destroy the training tanks."
+      Label: "Aim your tank\'s turret with the mouse and fire your gun with left click. Shoot the tanks and deal 50 damage."
       Color {
         R: 1
         G: 1
