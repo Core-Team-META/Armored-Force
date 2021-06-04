@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16191173343733875993
+  Name: "Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_001"
+  }
+}
+Assets {
   Id: 14514750246421432694
   Name: "Button Page Slide Core 01 SFX"
   PlatformAssetType: 7
@@ -338,6 +347,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 1283463588493558965
+  Name: "Fantasy Gold 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Gold_002"
   }
 }
 Assets {
