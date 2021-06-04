@@ -17356,7 +17356,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17721,6 +17721,7 @@ Objects {
   ChildIds: 17848554257601435113
   ChildIds: 16000406474735780545
   ChildIds: 9098805339071229647
+  ChildIds: 10164030111224410351
   ChildIds: 10362326463114605810
   ChildIds: 2288659007153149661
   ChildIds: 3887131714425326068
@@ -17811,7 +17812,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -17877,7 +17878,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -17943,7 +17944,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -18009,7 +18010,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -18075,7 +18076,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -18141,7 +18142,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -18207,7 +18208,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.157
       }
       TeamSettings {
       }
@@ -18273,7 +18274,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.157
       }
       TeamSettings {
       }
@@ -18529,6 +18530,69 @@ Objects {
   }
 }
 Objects {
+  Id: 10164030111224410351
+  Name: "UI Progress Bar"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13040198043353991425
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 86
+    Height: 5
+    UIX: -108.708824
+    UIY: 198
+    RotationAngle: 180
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    StatBar {
+      Color {
+        R: 0.0626488402
+        G: 0.86
+        A: 1
+      }
+      BackgroundColor {
+        A: 0.313000023
+      }
+      Percent: 0.266746968
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 9098805339071229647
   Name: "FIRE_STATE"
   Transform {
@@ -18571,7 +18635,7 @@ Objects {
         R: 0.88
         A: 1
       }
-      Size: 30
+      Size: 25
       Justification {
         Value: "mc:etextjustify:right"
       }
@@ -18632,7 +18696,7 @@ Objects {
   }
   Control {
     Width: 185
-    Height: 3
+    Height: 1
     UIX: -90
     RenderTransformPivot {
       Anchor {
@@ -18644,7 +18708,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.39200002
       }
       TeamSettings {
       }
@@ -18697,7 +18761,7 @@ Objects {
   }
   Control {
     Width: 185
-    Height: 3
+    Height: 1
     UIX: 90
     RenderTransformPivot {
       Anchor {
@@ -18709,7 +18773,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.39200002
       }
       TeamSettings {
       }
@@ -18774,7 +18838,7 @@ Objects {
         Id: 6552376844877606649
       }
       Color {
-        A: 1
+        A: 0.39200002
       }
       TeamSettings {
       }
@@ -18839,7 +18903,7 @@ Objects {
         Id: 6552376844877606649
       }
       Color {
-        A: 1
+        A: 0.39200002
       }
       TeamSettings {
       }
