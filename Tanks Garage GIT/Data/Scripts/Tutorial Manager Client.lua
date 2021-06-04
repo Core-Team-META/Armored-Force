@@ -14,6 +14,9 @@ local Tutorial_DestroyTanksPanel = script:GetCustomProperty("Tutorial_DestroyTan
 local Tutorial_PrecisionTanksPanel = script:GetCustomProperty("Tutorial_PrecisionTanksPanel"):WaitForObject()
 local Tutorial_BaseCapturePanel = script:GetCustomProperty("Tutorial_BaseCapturePanel"):WaitForObject()
 local WaypointBase = script:GetCustomProperty("WaypointBase"):WaitForObject()
+local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
+local JoinBattle = script:GetCustomProperty("JoinBattle"):WaitForObject()
+local Tutorial_JoinBattlePanel = script:GetCustomProperty("Tutorial_JoinBattlePanel"):WaitForObject()
 
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
@@ -26,6 +29,7 @@ LOCAL_PLAYER.clientUserData.tutorial2 = 0
 LOCAL_PLAYER.clientUserData.tutorial3_1 = 0
 LOCAL_PLAYER.clientUserData.tutorial3_2 = 0
 LOCAL_PLAYER.clientUserData.tutorial3_3 = 0
+LOCAL_PLAYER.clientUserData.tutorial4 = 1
 
 Task.Wait(2)
 
@@ -43,6 +47,8 @@ end
 function GotoShootingRange()
 	SFX_CLICK:Play()
 	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.None) then
+		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
+		panel.lifeSpan = 3
 		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange)
 	end
 	Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOOTING_RANGE")
@@ -80,6 +86,8 @@ function ToggleTutorialState()
 	Tutorial_PrecisionTanksPanel.visibility = Visibility.FORCE_OFF
 	Tutorial_BaseCapturePanel.visibility = Visibility.FORCE_OFF
 	WaypointBase.visibility = Visibility.FORCE_OFF
+	JoinBattle.visibility = Visibility.FORCE_OFF
+	Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_OFF
 	
 	 --Show Tutorial Phase 1 (MovedToShootingRange)
 	if(tutorialProgress == API_Tutorial.TutorialPhase.MovedToShootingRange) then
@@ -102,26 +110,35 @@ function ToggleTutorialState()
 	--Show Tutorial Phase 2 (TargetPractice)
 	if(tutorialProgress == API_Tutorial.TutorialPhase.TargetPractice) then
 		Tutorial_DestroyTanksPanel.visibility = Visibility.FORCE_ON
-		Tutorial_DestroyTanksPanel:FindChildByName("Objective").text = "• Destroy training tanks ("..tostring(LOCAL_PLAYER.clientUserData.tutorial2).."/2)"
+		Tutorial_DestroyTanksPanel:FindChildByName("Objective").text = "• Shoot training tanks and deal 50 damage ("..tostring(LOCAL_PLAYER.clientUserData.tutorial2).."/50)"
 		--local waypoints = EnemyTargetPracticeAI:FindChildrenByName("Waypoint_2")
 		for i, waypoint in ipairs(EnemyTargetPracticeAI:FindDescendantsByName("Waypoint_2")) do
 			waypoint.visibility = Visibility.FORCE_ON
-			Tutorial_DestroyTanksPanel:FindChildByName("Objective").text = "• Destroy training tanks ("..tostring(LOCAL_PLAYER.clientUserData.tutorial2).."/2)"
+			Tutorial_DestroyTanksPanel:FindChildByName("Objective").text = "• Shoot training tanks and deal 50 damage ("..tostring(LOCAL_PLAYER.clientUserData.tutorial2).."/50)"
 		end
 	end
 	
 	--Show Tutorial Phase 3 (PrecisionShots)
 	if(tutorialProgress == API_Tutorial.TutorialPhase.PrecisionShots) then
 		Tutorial_PrecisionTanksPanel.visibility = Visibility.FORCE_ON
-		Tutorial_PrecisionTanksPanel:FindChildByName("Objective_1").text = "• Hit a training tank from the front ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_1).."/1)"
-		Tutorial_PrecisionTanksPanel:FindChildByName("Objective_2").text = "• Hit a training tank from the side ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_2).."/1)"
-		Tutorial_PrecisionTanksPanel:FindChildByName("Objective_3").text = "• Hit a training tank from the rear ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_3).."/1)"
+		Tutorial_PrecisionTanksPanel:FindChildByName("Objective_1").text = "• Shoot a training tank from the front ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_1).."/1)"
+		Tutorial_PrecisionTanksPanel:FindChildByName("Objective_2").text = "• Shoot a training tank from the side ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_2).."/1)"
+		Tutorial_PrecisionTanksPanel:FindChildByName("Objective_3").text = "• Shoot a training tank from behind ("..tostring(LOCAL_PLAYER.clientUserData.tutorial3_3).."/1)"
 	end
 	
 	--Show Tutorial Phase 4 (BaseCapture)
 	if(tutorialProgress == API_Tutorial.TutorialPhase.BaseCapture) then
 		Tutorial_BaseCapturePanel.visibility = Visibility.FORCE_ON
 		WaypointBase.visibility = Visibility.FORCE_ON
+	end
+	
+	-- Show Tutorial Phase 5 (JoinBattle)
+	if(tutorialProgress == API_Tutorial.TutorialPhase.JoinBattle) then
+		Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_ON		
+	end
+	
+	if(tutorialProgress >= API_Tutorial.TutorialPhase.JoinBattle) then
+		JoinBattle.visibility = Visibility.FORCE_ON
 	end
 
 end

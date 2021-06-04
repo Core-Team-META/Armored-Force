@@ -5,6 +5,7 @@ local hpBar = script:GetCustomProperty("HPBar"):WaitForObject()
 local fill = script:GetCustomProperty("Fill"):WaitForObject()
 local label = script:GetCustomProperty("Label"):WaitForObject()
 local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
+local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
 
 local maxHP = enemyUnit:GetCustomProperty("MaxHP")
 local activeModelReference = enemyUnit:GetCustomProperty("ActiveModelReference"):WaitForObject()
@@ -49,8 +50,8 @@ function OnImpact(trigger, other)
 		
 		other.clientUserData.hitOnce = true
 	
-		local actualDamage = math.floor(savedDamage - savedDamage * trigger:GetCustomProperty("ArmorValue"))
-		
+		local actualDamage = math.floor(savedDamage - savedDamage * trigger:GetCustomProperty("ArmorValue"))	
+				
 		if(other.owner:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.PrecisionShots) then
 			if((trigger.name == "HULLREAR" or trigger.name == "TURRETREAR") and other.owner.clientUserData.tutorial3_3 == 0) then
 				other.owner.clientUserData.tutorial3_3 = 1
@@ -60,7 +61,21 @@ function OnImpact(trigger, other)
 				other.owner.clientUserData.tutorial3_1 = 1
 			end
 			if(other.owner.clientUserData.tutorial3_1 == 1 and other.owner.clientUserData.tutorial3_2 == 1 and other.owner.clientUserData.tutorial3_3 == 1) then
+				local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
+				panel.lifeSpan = 3
 				Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.BaseCapture)
+			end
+		end
+		
+		if(other.owner:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.TargetPractice) then
+			if(other.owner.clientUserData.tutorial2 < 50) then
+				other.owner.clientUserData.tutorial2 = other.owner.clientUserData.tutorial2 + actualDamage
+				if(other.owner.clientUserData.tutorial2 >= 50) then
+					print(TutorialCompletePopup.name)
+					local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
+					panel.lifeSpan = 3
+					Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.PrecisionShots)
+				end
 			end
 		end
 					
@@ -77,16 +92,7 @@ function OnImpact(trigger, other)
 			script.parent:FindDescendantByName("Waypoint_2").visibility = Visibility.FORCE_OFF
 			
 			local destroyed = World.SpawnAsset(destroyedModelTempate, {position = activeModelReference:GetWorldPosition(), rotation = activeModelReference:GetWorldRotation()})
-			
-			if(other.owner:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.TargetPractice) then
-				if(other.owner.clientUserData.tutorial2 < 2) then
-					other.owner.clientUserData.tutorial2 = other.owner.clientUserData.tutorial2 + 1
-					if(other.owner.clientUserData.tutorial2 == 2) then
-						Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.PrecisionShots)
-					end
-				end
-			end
-			
+									
 			destroyed.lifeSpan = 3
 			
 			Task.Wait(4)

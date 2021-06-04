@@ -49,6 +49,7 @@ function ToggleThisComponent(requestedPlayerState)
 		end
 		
 		defaultViewUI.isEnabled = true
+		
 		print("Set default view")
 		if(localPlayer:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
 			Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
@@ -70,6 +71,7 @@ function DisableThisComponent()
 	
 	defaultViewUI.isEnabled = false
 	
+	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 end
 
 function OnOtherComponentButtonPressed(button)
