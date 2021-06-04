@@ -16149,8 +16149,8 @@ Objects {
     }
   }
   ParentId: 13682588434161062900
-  ChildIds: 2903909814267500862
-  ChildIds: 16090893665681169061
+  ChildIds: 15866834236801237883
+  ChildIds: 11552278053585364973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16189,7 +16189,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16090893665681169061
+  Id: 11552278053585364973
   Name: "TURRET"
   Transform {
     Location {
@@ -16203,9 +16203,9 @@ Objects {
     }
   }
   ParentId: 6650976182459583215
-  ChildIds: 17213259975479640240
-  ChildIds: 12097839897861917833
-  ChildIds: 1512603356478856800
+  ChildIds: 8328699008722727885
+  ChildIds: 7813319072043583332
+  ChildIds: 5562776454771372340
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16244,7 +16244,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1512603356478856800
+  Id: 5562776454771372340
   Name: "TOP"
   Transform {
     Location {
@@ -16257,7 +16257,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16090893665681169061
+  ParentId: 11552278053585364973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16312,7 +16312,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12097839897861917833
+  Id: 7813319072043583332
   Name: "BOTTOM"
   Transform {
     Location {
@@ -16325,7 +16325,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16090893665681169061
+  ParentId: 11552278053585364973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16379,7 +16379,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17213259975479640240
+  Id: 8328699008722727885
   Name: "RED_DOT"
   Transform {
     Location {
@@ -16392,7 +16392,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16090893665681169061
+  ParentId: 11552278053585364973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16444,7 +16444,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2903909814267500862
+  Id: 15866834236801237883
   Name: "AIM"
   Transform {
     Location {
@@ -16458,23 +16458,24 @@ Objects {
     }
   }
   ParentId: 6650976182459583215
-  ChildIds: 12603161990385059325
-  ChildIds: 9545129905286902270
-  ChildIds: 14058854344210071182
-  ChildIds: 3742443838213735100
-  ChildIds: 17977729572274227138
-  ChildIds: 7221456684233305534
-  ChildIds: 16747742371486681253
-  ChildIds: 11607717760441524611
-  ChildIds: 14620170305054801541
-  ChildIds: 9435659454448680850
-  ChildIds: 9173981534074188163
-  ChildIds: 11151869766466613156
-  ChildIds: 9993856327066152838
-  ChildIds: 14308207208736204823
-  ChildIds: 9118902651957610955
-  ChildIds: 15136049166316988773
-  ChildIds: 15359578236974218726
+  ChildIds: 5022589527054784685
+  ChildIds: 12242982379086082387
+  ChildIds: 2982368083839590840
+  ChildIds: 9296722220135963153
+  ChildIds: 18003061932825701721
+  ChildIds: 15631581484074185144
+  ChildIds: 8863000803154964415
+  ChildIds: 14577318669639350722
+  ChildIds: 5311506930369516091
+  ChildIds: 5357698900235428414
+  ChildIds: 5239897425910548953
+  ChildIds: 3361695868521720108
+  ChildIds: 3505925044489419785
+  ChildIds: 5437486033718691245
+  ChildIds: 12860567168123178912
+  ChildIds: 3421297115341169020
+  ChildIds: 5970967847541932416
+  ChildIds: 16126145209317329588
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16513,7 +16514,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15359578236974218726
+  Id: 16126145209317329588
   Name: "DOTTED_LINE_R_3_H"
   Transform {
     Location {
@@ -16526,7 +16527,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16554,7 +16555,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -16579,7 +16580,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15136049166316988773
+  Id: 5970967847541932416
   Name: "DOTTED_LINE_R_2_H"
   Transform {
     Location {
@@ -16592,7 +16593,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16620,7 +16621,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -16645,7 +16646,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9118902651957610955
+  Id: 3421297115341169020
   Name: "DOTTED_LINE_R_1_H"
   Transform {
     Location {
@@ -16658,7 +16659,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16686,7 +16687,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -16711,7 +16712,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14308207208736204823
+  Id: 12860567168123178912
   Name: "DOTTED_LINE_L_3_H"
   Transform {
     Location {
@@ -16724,7 +16725,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16752,7 +16753,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -16777,7 +16778,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9993856327066152838
+  Id: 5437486033718691245
   Name: "DOTTED_LINE_L_2_H"
   Transform {
     Location {
@@ -16790,7 +16791,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16818,7 +16819,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -16843,7 +16844,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11151869766466613156
+  Id: 3505925044489419785
   Name: "DOTTED_LINE_L_1_H"
   Transform {
     Location {
@@ -16856,7 +16857,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16884,7 +16885,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.509
       }
       TeamSettings {
       }
@@ -16909,7 +16910,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9173981534074188163
+  Id: 3361695868521720108
   Name: "AIM_LINE_R"
   Transform {
     Location {
@@ -16922,7 +16923,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16950,7 +16951,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.157
       }
       TeamSettings {
       }
@@ -16975,7 +16976,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9435659454448680850
+  Id: 5239897425910548953
   Name: "AIM_LINE_L"
   Transform {
     Location {
@@ -16988,7 +16989,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17016,7 +17017,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.157
       }
       TeamSettings {
       }
@@ -17041,7 +17042,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14620170305054801541
+  Id: 5357698900235428414
   Name: "ZOOM"
   Transform {
     Location {
@@ -17054,7 +17055,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17118,7 +17119,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11607717760441524611
+  Id: 5311506930369516091
   Name: "RELOAD_TIMER"
   Transform {
     Location {
@@ -17131,7 +17132,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17195,7 +17196,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16747742371486681253
+  Id: 14577318669639350722
   Name: "AIM_DISTANCE"
   Transform {
     Location {
@@ -17208,7 +17209,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17272,7 +17273,70 @@ Objects {
   }
 }
 Objects {
-  Id: 7221456684233305534
+  Id: 8863000803154964415
+  Name: "UI Progress Bar"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15866834236801237883
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 86
+    Height: 5
+    UIX: -108.708824
+    UIY: 198
+    RotationAngle: 180
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    StatBar {
+      Color {
+        R: 0.0626488402
+        G: 0.86
+        A: 1
+      }
+      BackgroundColor {
+        A: 0.313000023
+      }
+      Percent: 0.266746968
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15631581484074185144
   Name: "FIRE_STATE"
   Transform {
     Location {
@@ -17285,7 +17349,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17314,7 +17378,7 @@ Objects {
         R: 0.88
         A: 1
       }
-      Size: 30
+      Size: 25
       Justification {
         Value: "mc:etextjustify:right"
       }
@@ -17347,7 +17411,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17977729572274227138
+  Id: 18003061932825701721
   Name: "LINE_R"
   Transform {
     Location {
@@ -17360,7 +17424,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17375,7 +17439,7 @@ Objects {
   }
   Control {
     Width: 185
-    Height: 3
+    Height: 1
     UIX: -90
     RenderTransformPivot {
       Anchor {
@@ -17387,7 +17451,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.39200002
       }
       TeamSettings {
       }
@@ -17412,7 +17476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3742443838213735100
+  Id: 9296722220135963153
   Name: "LINE_L"
   Transform {
     Location {
@@ -17425,7 +17489,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17440,7 +17504,7 @@ Objects {
   }
   Control {
     Width: 185
-    Height: 3
+    Height: 1
     UIX: 90
     RenderTransformPivot {
       Anchor {
@@ -17452,7 +17516,7 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        A: 0.666
+        A: 0.39200002
       }
       TeamSettings {
       }
@@ -17477,7 +17541,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14058854344210071182
+  Id: 2982368083839590840
   Name: "FRAME_R"
   Transform {
     Location {
@@ -17490,7 +17554,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17517,7 +17581,7 @@ Objects {
         Id: 6552376844877606649
       }
       Color {
-        A: 1
+        A: 0.39200002
       }
       TeamSettings {
       }
@@ -17542,7 +17606,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9545129905286902270
+  Id: 12242982379086082387
   Name: "FRAME_L"
   Transform {
     Location {
@@ -17555,7 +17619,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17582,7 +17646,7 @@ Objects {
         Id: 6552376844877606649
       }
       Color {
-        A: 1
+        A: 0.39200002
       }
       TeamSettings {
       }
@@ -17607,7 +17671,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12603161990385059325
+  Id: 5022589527054784685
   Name: "INNER_RETICLE"
   Transform {
     Location {
@@ -17620,7 +17684,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2903909814267500862
+  ParentId: 15866834236801237883
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
