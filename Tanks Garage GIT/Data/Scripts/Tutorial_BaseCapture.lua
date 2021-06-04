@@ -12,7 +12,7 @@ function Tick()
 		LOCAL_PLAYER.clientUserData.captureProgress = LOCAL_PLAYER.clientUserData.captureProgress + 0.1
 		UIPanel:FindChildByName("Progress Bar").progress = LOCAL_PLAYER.clientUserData.captureProgress / 10
 		if(LOCAL_PLAYER.clientUserData.captureProgress >= 10) then
-			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.BackToGarage)
+			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.JoinBattle)
 			UIPanel.visibility = Visibility.FORCE_OFF
 			UIPanel:FindChildByName("Progress Bar").visibility = Visibility.FORCE_OFF
 		end	
