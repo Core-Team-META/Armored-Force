@@ -106,8 +106,8 @@ function UpdatePointer()
 	if uiPostion then
 		truePointer.visibility = Visibility.FORCE_ON
 		
-		EaseUI.EaseX(truePointer, uiPostion.x, 0.02, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
-		EaseUI.EaseY(truePointer, uiPostion.y, 0.02, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+		EaseUI.EaseX(truePointer, uiPostion.x, 0.04, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.INOUT)
+		EaseUI.EaseY(truePointer, uiPostion.y, 0.04, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.INOUT)
 	else 
 		truePointer.visibility = Visibility.FORCE_OFF
 	end
@@ -198,11 +198,17 @@ function Tick(dt)
 	end
 	
 	local currentCamera = localPlayer:GetActiveCamera()
-	local currentZoom = currentCamera.currentDistance
-	local maxZoom = currentCamera.minDistance
-	local minZoom = currentCamera.maxDistance
 	
-	zoom.text = string.format("%.1f", (minZoom - currentZoom)/700) .. "xZoom"
+	if currentCamera == sniperCamera then
+		local currentZoom = currentCamera.currentDistance
+		local maxZoom = currentCamera.minDistance
+		local minZoom = currentCamera.maxDistance
+		
+		zoom.text = string.format("%.1f", (minZoom - currentZoom)/200) .. "xZoom"
+		zoom.visibility = Visibility.INHERIT
+	else 
+		zoom.visibility = Visibility.FORCE_OFF
+	end
 	
 	UpdatePointer()
 		

@@ -14,18 +14,20 @@ Objects {
       Z: 1
     }
   }
+  ChildIds: 7379262102625081213
+  ChildIds: 14027290532857229850
   ChildIds: 4316049936135708946
   ChildIds: 4965067273124672211
   ChildIds: 16933976679426407654
   ChildIds: 18217549399293975483
-  ChildIds: 3633572912189158159
+  ChildIds: 9345499818667395532
   ChildIds: 9479035303955472683
   ChildIds: 6985822757853840602
-  ChildIds: 9647716851810047072
-  ChildIds: 14096343832332444043
-  ChildIds: 1381238082432506037
-  ChildIds: 12477312514186313496
-  ChildIds: 10496815089886252948
+  ChildIds: 6663135731407742715
+  ChildIds: 421715713720627097
+  ChildIds: 15706354341530477371
+  ChildIds: 1439749271299690726
+  ChildIds: 2882299994980456532
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,7 +43,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10496815089886252948
+  Id: 2882299994980456532
   Name: "Chat"
   Transform {
     Location {
@@ -70,7 +72,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12477312514186313496
+  Id: 1439749271299690726
   Name: "Morticai (Brent)"
   Transform {
     Location {
@@ -102,7 +104,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1381238082432506037
+  Id: 15706354341530477371
   Name: "Ryan"
   Transform {
     Location {
@@ -131,7 +133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14096343832332444043
+  Id: 421715713720627097
   Name: "Marcela"
   Transform {
     Location {
@@ -160,7 +162,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9647716851810047072
+  Id: 6663135731407742715
   Name: "Patrick"
   Transform {
     Location {
@@ -250,7 +252,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3633572912189158159
+  Id: 9345499818667395532
   Name: "TW_Minimap"
   Transform {
     Location {
@@ -501,5 +503,120 @@ Objects {
     TemplateAsset {
       Id: 626964292754089367
     }
+  }
+}
+Objects {
+  Id: 14027290532857229850
+  Name: "Copy Adjustments"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MINIMAP"
+      String: "================================="
+    }
+    Overrides {
+      Name: "cs:BoundsWidth"
+      Int: 51000
+    }
+    Overrides {
+      Name: "cs:BoundsHeight"
+      Int: 51000
+    }
+    Overrides {
+      Name: "cs:BoundsCenter"
+      Vector2 {
+        X: -7600
+        Y: -3300
+      }
+    }
+    Overrides {
+      Name: "cs:CAPTUREPOINTS"
+      String: "================================="
+    }
+    Overrides {
+      Name: "cs:APointLocation"
+      Vector {
+        X: -20540
+        Y: 15705
+      }
+    }
+    Overrides {
+      Name: "cs:BPointLocation"
+      Vector {
+        X: 20510
+        Y: -21340
+      }
+    }
+    Overrides {
+      Name: "cs:VICTORYSCREEN"
+      String: "================================="
+    }
+    Overrides {
+      Name: "cs:VictoryLocation"
+      Vector {
+        X: -9875
+        Y: -16280
+        Z: 130
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Copy Adjustments"
+  }
+}
+Objects {
+  Id: 7379262102625081213
+  Name: "Keys, Links, and Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Keys, Links, and Settings"
   }
 }

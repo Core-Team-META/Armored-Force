@@ -59,20 +59,6 @@ function StateEND()
 	
 end
 
-function SendPlayerToGarage(player)
-
-	player:TransferToGame("27f652/armored-force-garage")
-end
-
-function LeaveEarly(player, xpAward)
-	player:AddResource(UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())), math.floor(xpAward))
-	player:AddResource(CONSTANTS_API.XP, math.floor(xpAward))
-	player:AddResource("Silver", match.floor(xpAward * 2))
-	SendPlayerToGarage(player)
-end
-
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 
 StateSTART(mainGameStateManager, "GameState")
-Events.ConnectForPlayer("SEND_TO_GARAGE", SendPlayerToGarage)
-Events.ConnectForPlayer("LEAVE_EARLY", LeaveEarly)

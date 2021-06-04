@@ -1,7 +1,7 @@
 Name: "Rank Manager"
-RootId: 6656522221270841056
+RootId: 9593357322507275425
 Objects {
-  Id: 12838361995875435468
+  Id: 14139030951987834656
   Name: "ClientContext"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6656522221270841056
-  ChildIds: 12250247799429807115
-  ChildIds: 13602997875747895422
+  ParentId: 9593357322507275425
+  ChildIds: 1226329540639028754
+  ChildIds: 5314682726854442588
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13602997875747895422
+  Id: 5314682726854442588
   Name: "Rank_EndGameUI_Client"
   Transform {
     Location {
@@ -43,7 +43,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12838361995875435468
+  ParentId: 14139030951987834656
   UnregisteredParameters {
     Overrides {
       Name: "cs:APIBasicGameState"
@@ -86,7 +86,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12250247799429807115
+  Id: 1226329540639028754
   Name: "RankManager_API"
   Transform {
     Location {
@@ -99,12 +99,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12838361995875435468
+  ParentId: 14139030951987834656
   UnregisteredParameters {
     Overrides {
       Name: "cs:Ranks"
       ObjectReference {
-        SelfId: 205506029644401326
+        SelfId: 17030119095030518772
       }
     }
   }
@@ -124,7 +124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 205506029644401326
+  Id: 17030119095030518772
   Name: "Ranks"
   Transform {
     Location {
@@ -137,18 +137,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6656522221270841056
-  ChildIds: 9381327479885382661
-  ChildIds: 1827813590698836266
-  ChildIds: 7453048075003990126
-  ChildIds: 196333927121619615
-  ChildIds: 4389081116700100250
-  ChildIds: 13011624397598091115
-  ChildIds: 1248181518268438568
-  ChildIds: 8325359499907257077
-  ChildIds: 17889786752572760368
-  ChildIds: 11194875995091302553
-  ChildIds: 6285415316123963726
+  ParentId: 9593357322507275425
+  ChildIds: 12134603029595804324
+  ChildIds: 6791746513179574444
+  ChildIds: 2304773286036225322
+  ChildIds: 4920331487479963790
+  ChildIds: 1271605033937832758
+  ChildIds: 15448166527282196445
+  ChildIds: 5801693522964918007
+  ChildIds: 16004482898476150558
+  ChildIds: 16764410948578829670
+  ChildIds: 17143430374009453810
+  ChildIds: 13233433324456913211
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -165,7 +165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6285415316123963726
+  Id: 13233433324456913211
   Name: "RankFinal"
   Transform {
     Location {
@@ -178,7 +178,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -223,7 +223,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11194875995091302553
+  Id: 17143430374009453810
   Name: "Rank10"
   Transform {
     Location {
@@ -236,7 +236,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -281,7 +281,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17889786752572760368
+  Id: 16764410948578829670
   Name: "Rank9"
   Transform {
     Location {
@@ -294,7 +294,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -339,7 +339,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8325359499907257077
+  Id: 16004482898476150558
   Name: "Rank8"
   Transform {
     Location {
@@ -352,7 +352,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -397,7 +397,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1248181518268438568
+  Id: 5801693522964918007
   Name: "Rank7"
   Transform {
     Location {
@@ -410,7 +410,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -455,7 +455,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13011624397598091115
+  Id: 15448166527282196445
   Name: "Rank6"
   Transform {
     Location {
@@ -468,7 +468,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -513,7 +513,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4389081116700100250
+  Id: 1271605033937832758
   Name: "Rank5"
   Transform {
     Location {
@@ -526,7 +526,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -571,7 +571,7 @@ Objects {
   }
 }
 Objects {
-  Id: 196333927121619615
+  Id: 4920331487479963790
   Name: "Rank4"
   Transform {
     Location {
@@ -584,7 +584,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -629,7 +629,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7453048075003990126
+  Id: 2304773286036225322
   Name: "Rank3"
   Transform {
     Location {
@@ -642,7 +642,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -687,7 +687,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1827813590698836266
+  Id: 6791746513179574444
   Name: "Rank2"
   Transform {
     Location {
@@ -700,7 +700,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
@@ -745,7 +745,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9381327479885382661
+  Id: 12134603029595804324
   Name: "Rank1"
   Transform {
     Location {
@@ -758,7 +758,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 205506029644401326
+  ParentId: 17030119095030518772
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"

@@ -305,7 +305,7 @@ function OnBindingPressed(player, binding)
 		return
 	end
 	
-	if binding == "ability_primary" then
+	if binding == "ability_primary" and not player:IsBindingPressed("ability_extra_14") then
 		FireProjectile()
 	elseif binding == "ability_extra_40" and Environment.IsMultiplayerPreview() then
 		driver:Die()

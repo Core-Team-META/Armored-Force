@@ -92,7 +92,7 @@ Assets {
             Id: 8379251541439944181
           }
           AutoPlay: true
-          Volume: 1
+          Volume: 2
           Falloff: -1
           Radius: -1
           IsSpatializationEnabled: true

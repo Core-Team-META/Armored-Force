@@ -1,13 +1,13 @@
 Assets {
   Id: 15253247271758234121
-  Name: "TW2_FX_Destroy_StoneBig"
+  Name: "TW_FX_Destroy_WoodStoneBig"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 18069542106520143989
       Objects {
         Id: 18069542106520143989
-        Name: "TW2_FX_Destroy_StoneBig"
+        Name: "TW_FX_Destroy_WoodStoneBig"
         Transform {
           Scale {
             X: 1
@@ -48,6 +48,7 @@ Assets {
         ParentId: 18069542106520143989
         ChildIds: 17923069531757899060
         ChildIds: 14485971597824949533
+        ChildIds: 18289506624895581993
         ChildIds: 15004902084475968802
         ChildIds: 7904962334959976889
         ChildIds: 3615849140189632088
@@ -136,6 +137,43 @@ Assets {
         }
       }
       Objects {
+        Id: 18289506624895581993
+        Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
+        Transform {
+          Location {
+            Z: 48.333252
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16244906926373107681
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 9746315760228600376
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 15000
+          Radius: -1
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
         Id: 15004902084475968802
         Name: "Smoke Puff Radial VFX"
         Transform {
@@ -154,10 +192,6 @@ Assets {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
             Float: 7.18631554
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 0.1
           }
         }
         Collidable_v2 {
@@ -304,6 +338,15 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_big_rock_boulder_ground_impact_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 9746315760228600376
+      Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_large_wooden_structure_break_impact_01a_Cue_ref"
       }
     }
     Assets {

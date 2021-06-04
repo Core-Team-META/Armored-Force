@@ -1,7 +1,7 @@
 Name: "Feed Icons"
-RootId: 7109400855139124182
+RootId: 5609719620072057685
 Objects {
-  Id: 13870973397120927995
+  Id: 1073669568124359496
   Name: "TankDeath"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7109400855139124182
+  ParentId: 5609719620072057685
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -124,7 +124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18155677387565410573
+  Id: 10883666869893255529
   Name: "TankHit"
   Transform {
     Location {
@@ -137,7 +137,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7109400855139124182
+  ParentId: 5609719620072057685
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -247,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9466176244874676925
+  Id: 14816952401858292352
   Name: "PlayerJoined"
   Transform {
     Location {
@@ -260,7 +260,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7109400855139124182
+  ParentId: 5609719620072057685
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -312,7 +312,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6773543307476147502
+  Id: 5944016493773077256
   Name: "PlayerLeft"
   Transform {
     Location {
@@ -325,7 +325,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7109400855139124182
+  ParentId: 5609719620072057685
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -385,7 +385,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15546474038534768593
+  Id: 7664927806199384146
   Name: "Default icon"
   Transform {
     Location {
@@ -398,7 +398,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7109400855139124182
+  ParentId: 5609719620072057685
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"

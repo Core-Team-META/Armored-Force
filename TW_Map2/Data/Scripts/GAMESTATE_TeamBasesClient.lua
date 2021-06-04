@@ -1,6 +1,6 @@
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local teamBasesServer = script:GetCustomProperty("GAMESTATE_TeamBasesServer"):WaitForObject()
-local matchComponent = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
+local settings = script:GetCustomProperty("Settings"):WaitForObject()
 
 local teamBasesUI = script:GetCustomProperty("TeamBasesUI"):WaitForObject()
 
@@ -123,7 +123,7 @@ function UpdateUITask()
 end
 
 function Initialize()
-	if gameModeID == matchComponent:GetCustomProperty("MatchMode") then
+	if gameModeID == settings:GetCustomProperty("MatchMode") then
 		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 	end
 end

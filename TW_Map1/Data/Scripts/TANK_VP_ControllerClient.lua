@@ -82,9 +82,9 @@ function CheckTankReady()
 
 	if driver == Game.GetLocalPlayer() then
 		driver:SetOverrideCamera(defaultCamera)
-		SetClientData()
 	end
-
+	
+	SetClientData()
 
 	tankSet = true
 	

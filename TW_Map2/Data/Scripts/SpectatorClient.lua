@@ -23,13 +23,12 @@ local ReturnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject(
 local UserLeavingPromptUI = script:GetCustomProperty("UserLeavingPrompt"):WaitForObject()
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local GAMESTATE_StatisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
-local GAMESTATE_Components = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
+local settings = script:GetCustomProperty("Settings"):WaitForObject()
 local GAMESTATE_MainGameStateManagerServer = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local Leave = script:GetCustomProperty("Leave"):WaitForObject()
 local Close = script:GetCustomProperty("Close"):WaitForObject()
 
 local LocalPlayer = Game.GetLocalPlayer()
-local leaveEarlyAward = 0
 
 ------------------------------------------------------------------------------------------------------------------------
 --	ENUMERATIONS
@@ -228,11 +227,11 @@ local function OnBindingReleased(player, binding)
 	if(binding == BINDING_RETURN_TO_GARAGE) then
 		-- Calculate earnings for leaving. When leaving, we assume a draw for consistent earnings
 		local maxAwardXP = GAMESTATE_StatisticsComponent:GetCustomProperty("DrawXPValue")
-		local maxMatchDuration = GAMESTATE_Components:GetCustomProperty("MatchMaxDuration")
+		local maxMatchDuration = settings:GetCustomProperty("MatchMaxDuration")
 		local currentTime = GAMESTATE_MainGameStateManagerServer:GetCustomProperty("Timer")
 		local timeElapsed = maxMatchDuration - currentTime
 		
-		leaveEarlyAward = UTIL_API.CalculateLeaveEarlyEarnings(timeElapsed, maxMatchDuration, maxAwardXP)
+		local leaveEarlyAward = UTIL_API.CalculateLeaveEarlyEarnings(timeElapsed, maxMatchDuration, maxAwardXP)
 		
 		UserLeavingPromptUI:FindDescendantByName("SilverAmount").text = "Silver: " .. tostring(math.floor(leaveEarlyAward * 2)) -- Money is double that of RP/XP
 		UserLeavingPromptUI:FindDescendantByName("RPAmount").text = "RP: " .. tostring(math.floor(leaveEarlyAward))
@@ -268,7 +267,7 @@ local function OnBindingReleased(player, binding)
 end
 
 function LeaveEarly()
-	Events.BroadcastToServer("LEAVE_EARLY", leaveEarlyAward)
+	Events.BroadcastToServer("LEAVE_EARLY")
 end
 
 function CloseLeaveEarly()

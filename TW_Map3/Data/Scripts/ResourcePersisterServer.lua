@@ -1,5 +1,6 @@
 -- SHARED STORAGE KEY
-local PLAYER_SHARED_STORAGE = script:GetCustomProperty("PlayerSharedStorage")
+local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
+local PLAYER_SHARED_STORAGE = KEYS:GetCustomProperty("Tanks")
 
 -- API
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
