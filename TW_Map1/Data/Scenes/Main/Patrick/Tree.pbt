@@ -19,30 +19,6 @@ Objects {
   ChildIds: 3216315914285168726
   ChildIds: 5450352911273174700
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:MatchMode"
-      String: "LastTeamStanding"
-    }
-    Overrides {
-      Name: "cs:MatchMaxDuration"
-      Int: 300
-    }
-    Overrides {
-      Name: "cs:CardMaxDuration"
-      Int: 5
-    }
-    Overrides {
-      Name: "cs:VictoryMaxDuration"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:StatsMaxDuration"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:GarageLink"
-      String: "fdcad3/armored-force"
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2152,7 +2128,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Duration"
-      Float: 29
+      Float: 20
     }
     Overrides {
       Name: "cs:NumberOfWinners"
@@ -31904,9 +31880,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_Components"
+      Name: "cs:Settings"
       ObjectReference {
-        SelfId: 1166632495457348430
+        SelfId: 2911846559236864704
       }
     }
     Overrides {
@@ -32003,9 +31979,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:GAMESTATE_Components"
+      Name: "cs:Settings"
       ObjectReference {
-        SelfId: 1166632495457348430
+        SelfId: 2911846559236864704
       }
     }
     Overrides {
@@ -42534,8 +42510,10 @@ Objects {
       Int: 0
     }
     Overrides {
-      Name: "cs:LobbyCountdown"
-      Int: 30
+      Name: "cs:Settings"
+      ObjectReference {
+        SelfId: 2911846559236864704
+      }
     }
     Overrides {
       Name: "cs:Timer:isrep"
@@ -42614,9 +42592,15 @@ Objects {
       Int: 0
     }
     Overrides {
-      Name: "cs:GAMESTATE_Components"
+      Name: "cs:Settings"
       ObjectReference {
-        SelfId: 1166632495457348430
+        SelfId: 2911846559236864704
+      }
+    }
+    Overrides {
+      Name: "cs:Links"
+      ObjectReference {
+        SelfId: 9431579987956007090
       }
     }
     Overrides {

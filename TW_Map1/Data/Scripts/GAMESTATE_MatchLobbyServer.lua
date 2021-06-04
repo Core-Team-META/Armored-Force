@@ -1,5 +1,6 @@
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
-local lobbyCountdown = script:GetCustomProperty("LobbyCountdown")
+local settings = script:GetCustomProperty("Settings"):WaitForObject()
+local lobbyCountdown = settings:GetCustomProperty("LobbyCountdown")
 
 local timerTask = nil
 

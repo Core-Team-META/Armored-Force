@@ -148,12 +148,9 @@ Objects {
   ParentId: 8790839518416858328
   UnregisteredParameters {
     Overrides {
-      Name: "cs:PlayerSharedStorage"
-      NetReference {
-        Key: "3b3cfe44e7fb41d0b0783e9eba8729ea"
-        Type {
-          Value: "mc:enetreferencetype:sharedpersistence"
-        }
+      Name: "cs:Keys"
+      ObjectReference {
+        SelfId: 1126690814057033551
       }
     }
     Overrides {

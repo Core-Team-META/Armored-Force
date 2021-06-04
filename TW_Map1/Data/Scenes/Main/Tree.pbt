@@ -14,6 +14,7 @@ Objects {
       Z: 1
     }
   }
+  ChildIds: 13966797509968964878
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
   ChildIds: 14246791555251678451
@@ -4416,5 +4417,37 @@ Objects {
         Max: 102400
       }
     }
+  }
+}
+Objects {
+  Id: 13966797509968964878
+  Name: "Keys, Links, and Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Keys, Links, and Settings"
   }
 }
