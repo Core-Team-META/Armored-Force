@@ -9648,6 +9648,12 @@ Objects {
         SelfId: 17413968878563161576
       }
     }
+    Overrides {
+      Name: "cs:Links"
+      ObjectReference {
+        SelfId: 14790457172183743746
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -1,17 +1,21 @@
+local links = script:GetCustomProperty("Links"):WaitForObject()
 local map = {}
 
-map["LastTeam"] = {"963eac/fields-last-team-standing", "67c935/desert-last-team-standing", "3194d0/tundra-last-team-standing"}
-map["Frontline"] = {"0b024a/fields-frontline", "782775/desert-frontline", "737a57/tundra-frontline"}
-
--- Individual maps
-map["Fields"] = {"18e141/fields-frt", "55d07c/fields-lts"}
-map["Desert"] = {"bb70a8/desert-frt", "82b567/desert-lts"}
-map["Random"] = {"963eac/fields-last-team-standing", "67c935/desert-last-team-standing", "3194d0/tundra-last-team-standing", "0b024a/fields-frontline", "782775/desert-frontline", "737a57/tundra-frontline"}
+map["LastTeam"] = links:GetCustomProperty("Map1")
+map["Frontline"] = links:GetCustomProperty("Map2")
+map["Random"] = {links:GetCustomProperty("Map1"), links:GetCustomProperty("Map2")}
 
 function SendToMap(player, selectedMap)
 
-	for x, m in pairs(map[selectedMap]) do
-		player:TransferToGame(m)		
+	if not map[selectedMap] then
+		return
+	end
+	
+	if selectedMap == "Random" then
+		local selected = math.random(2)
+		player:TransferToGame(map[selectedMap][selected])
+	else
+		player:TransferToGame(map[selectedMap])
 	end
 
 end

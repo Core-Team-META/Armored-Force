@@ -86,12 +86,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:SharedKeyNetRef"
-      NetReference {
-        Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
-        Type {
-          Value: "mc:enetreferencetype:sharedpersistence"
-        }
+      Name: "cs:Keys"
+      ObjectReference {
+        SelfId: 1126690814057033551
       }
     }
   }

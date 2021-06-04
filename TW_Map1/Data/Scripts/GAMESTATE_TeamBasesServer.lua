@@ -1,7 +1,7 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
-local settings = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
+local settings = script:GetCustomProperty("Settings"):WaitForObject()
 
 local activeGameMode = settings:GetCustomProperty("MatchMode")
 local gameModeID = script:GetCustomProperty("GameModeID")

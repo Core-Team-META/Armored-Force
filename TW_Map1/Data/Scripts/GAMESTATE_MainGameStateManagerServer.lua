@@ -8,13 +8,15 @@
 	STATS_STATE
 	
 	]]--
-local settings = script:GetCustomProperty("GAMESTATE_Components"):WaitForObject()
+local settings = script:GetCustomProperty("Settings"):WaitForObject()
 
 local matchMaxDuration = settings:GetCustomProperty("MatchMaxDuration")
 local cardMaxDuration = settings:GetCustomProperty("CardMaxDuration")
 local victoryMaxDuration = settings:GetCustomProperty("VictoryMaxDuration")
 local statsMaxDuration = settings:GetCustomProperty("StatsMaxDuration")
-local garageLink = settings:GetCustomProperty("GarageLink")
+
+local links = script:GetCustomProperty("Links"):WaitForObject()
+local garageLink = links:GetCustomProperty("Garage")
 
 local tankSettings = script:GetCustomProperty("TankSettings"):WaitForObject()
 
