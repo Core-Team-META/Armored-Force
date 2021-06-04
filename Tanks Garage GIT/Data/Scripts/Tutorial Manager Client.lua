@@ -17,6 +17,7 @@ local WaypointBase = script:GetCustomProperty("WaypointBase"):WaitForObject()
 local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
 local JoinBattle = script:GetCustomProperty("JoinBattle"):WaitForObject()
 local Tutorial_JoinBattlePanel = script:GetCustomProperty("Tutorial_JoinBattlePanel"):WaitForObject()
+local Tutorial_OptOutPanel = script:GetCustomProperty("Tutorial_OptOutPanel"):WaitForObject()
 
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
@@ -49,7 +50,7 @@ function GotoShootingRange()
 	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.None) then
 		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
 		panel.lifeSpan = 3
-		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange)
+		Events.BroadcastToServer("AdvanceTutorial",  API_Tutorial.TutorialPhase.MovedToShootingRange, true)
 	end
 	Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOOTING_RANGE")
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
@@ -75,9 +76,7 @@ end
 
 function ToggleTutorialState()
 	local tutorialProgress = LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource())
-	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then return end	
-	if not inShootingRange then return end
-	
+		
 	-- Start by turning off visibility of everything, things will get turned on as needed
 	Tutorial_WaypointsPanel.visibility = Visibility.FORCE_OFF
 	Waypoint_11.visibility = Visibility.FORCE_OFF
@@ -86,8 +85,12 @@ function ToggleTutorialState()
 	Tutorial_PrecisionTanksPanel.visibility = Visibility.FORCE_OFF
 	Tutorial_BaseCapturePanel.visibility = Visibility.FORCE_OFF
 	WaypointBase.visibility = Visibility.FORCE_OFF
-	JoinBattle.visibility = Visibility.FORCE_OFF
+	--JoinBattle.visibility = Visibility.FORCE_OFF
 	Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_OFF
+	Tutorial_OptOutPanel.visibility = Visibility.FORCE_OFF
+	
+	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then return end	
+	if not inShootingRange then return end
 	
 	 --Show Tutorial Phase 1 (MovedToShootingRange)
 	if(tutorialProgress == API_Tutorial.TutorialPhase.MovedToShootingRange) then
@@ -137,13 +140,26 @@ function ToggleTutorialState()
 		Tutorial_JoinBattlePanel.visibility = Visibility.FORCE_ON		
 	end
 	
+	-- Show panel to join battle
 	if(tutorialProgress >= API_Tutorial.TutorialPhase.JoinBattle) then
 		JoinBattle.visibility = Visibility.FORCE_ON
 	end
+	
+	-- Show opt out panel
+	if(tutorialProgress < API_Tutorial.TutorialPhase.Completed) then
+		Tutorial_OptOutPanel.visibility = Visibility.FORCE_ON
+	end
+end
 
+function BindingPressed(player, binding)
+	if(binding == "ability_extra_54" and LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
+		Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed, false)
+	end
 end
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", EnableComponent)
+
+LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
 
 Tutorial_ShootingRangeButton.clickedEvent:Connect(GotoShootingRange)
 Tutorial_ShootingRangeButton.hoveredEvent:Connect(ButtonHover)

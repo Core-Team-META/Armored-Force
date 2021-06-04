@@ -272,7 +272,7 @@ Objects {
       }
     }
     Text {
-      Label: "PRESS [B] TO JOIN A BATTLE"
+      Label: "PRESS [V] TO JOIN A BATTLE"
       Color {
         R: 1
         G: 1
@@ -1746,6 +1746,18 @@ Objects {
       Name: "cs:Tutorial_WaypointsPanel"
       ObjectReference {
         SelfId: 18427583266494172976
+      }
+    }
+    Overrides {
+      Name: "cs:TutorialFinishedPopup"
+      AssetReference {
+        Id: 17184799959805036908
+      }
+    }
+    Overrides {
+      Name: "cs:JoinBattle"
+      ObjectReference {
+        SelfId: 16746914393606924482
       }
     }
   }

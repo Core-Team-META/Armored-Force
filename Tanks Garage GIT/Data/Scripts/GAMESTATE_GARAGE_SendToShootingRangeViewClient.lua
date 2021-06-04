@@ -19,6 +19,8 @@ local SFXStinger1 = script:GetCustomProperty("SFXStinger1"):WaitForObject()
 local SFXMusic = script:GetCustomProperty("SFXMusic"):WaitForObject()
 local defaultSkins = script:GetCustomProperty("DefaultSkins"):WaitForObject()
 local returnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject()
+local TutorialFinishedPopup = script:GetCustomProperty("TutorialFinishedPopup")
+local JoinBattle = script:GetCustomProperty("JoinBattle"):WaitForObject()
 
 local thisComponent = "SHOOTING_RANGE"
 
@@ -80,6 +82,7 @@ function SendBackToGarage(trigger, other)
 	
 	sendToShootingRangeViewUI.isEnabled = true
 	returnToGarage.visibility = Visibility.FORCE_OFF
+	JoinBattle.visibility = Visibility.FORCE_OFF
 	
 	Ease3D.EasePosition(door, Vector3.UP * 850, 2, Ease3D.EasingEquation.QUADRATIC, Ease3D.EasingDirection.OUT)
 	SFX1:Play()
@@ -203,6 +206,10 @@ function ToggleThisComponent(requestedPlayerState)
 		sendToShootingRangeViewUI.isEnabled = false
 		returnToGarage.visibility = Visibility.FORCE_ON
 		
+		if(localPlayer:GetResource(API_Tutorial.GetTutorialResource()) >= API_Tutorial.TutorialPhase.JoinBattle) then
+			JoinBattle.visibility = Visibility.FORCE_ON
+		end
+		
 	else 
 	
 		ResetComponent()
@@ -264,8 +271,10 @@ function ToggleGarage(player, binding)
 	end
 	
 	if binding == "ability_extra_42" and localPlayer:GetResource(API_Tutorial.GetTutorialResource()) >= API_Tutorial.TutorialPhase.JoinBattle then
-		if localPlayer:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.JoinBattle then 
-			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed)
+		if localPlayer:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.JoinBattle then
+			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.Completed, true)
+			local panel = World.SpawnAsset(TutorialFinishedPopup, {parent = World.FindObjectByName("Tutorial UI")})
+			panel.lifeSpan = 3			
 		end
 		Events.BroadcastToServer("SEND_TO_MAP", "Random")
 	end
