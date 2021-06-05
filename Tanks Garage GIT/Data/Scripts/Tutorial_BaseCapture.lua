@@ -2,6 +2,7 @@ local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
 local UIPanel = script:GetCustomProperty("UIPanel"):WaitForObject()
 local Trigger = script:GetCustomProperty("Trigger"):WaitForObject()
+local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 LOCAL_PLAYER.clientUserData.captureProgress = 0
@@ -12,7 +13,9 @@ function Tick()
 		LOCAL_PLAYER.clientUserData.captureProgress = LOCAL_PLAYER.clientUserData.captureProgress + 0.1
 		UIPanel:FindChildByName("Progress Bar").progress = LOCAL_PLAYER.clientUserData.captureProgress / 10
 		if(LOCAL_PLAYER.clientUserData.captureProgress >= 10) then
-			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.JoinBattle)
+			local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
+			panel.lifeSpan = 3
+			Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.JoinBattle, true)
 			UIPanel.visibility = Visibility.FORCE_OFF
 			UIPanel:FindChildByName("Progress Bar").visibility = Visibility.FORCE_OFF
 		end	

@@ -18,9 +18,10 @@ Assets {
         ParentId: 14672083327800524015
         ChildIds: 1188072151204701046
         ChildIds: 10333413354131805866
-        ChildIds: 12864608106345449273
         ChildIds: 8381836577386706256
         ChildIds: 15866593286241306026
+        ChildIds: 182831243688726987
+        ChildIds: 12864608106345449273
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -196,87 +197,6 @@ Assets {
         }
       }
       Objects {
-        Id: 12864608106345449273
-        Name: "Header"
-        Transform {
-          Location {
-            X: -0.0036424906
-            Y: 0.0020339163
-          }
-          Rotation {
-            Yaw: -3.4150944e-06
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13900603611236620789
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Control {
-          Width: 200
-          Height: 30
-          UIY: 5
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          Text {
-            Label: "Tutorial Task Completed"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 0.9
-            }
-            Size: 20
-            Justification {
-              Value: "mc:etextjustify:center"
-            }
-            AutoWrapText: true
-            Font {
-              Id: 17251969847265876676
-            }
-            VerticalJustification {
-              Value: "mc:everticaljustification:top"
-            }
-            ShadowColor {
-              A: 0.9
-            }
-            ShadowOffset {
-              X: 1
-              Y: 1
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topcenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topcenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
         Id: 8381836577386706256
         Name: "Description"
         Transform {
@@ -310,7 +230,7 @@ Assets {
         Control {
           Width: 200
           Height: 30
-          UIY: 10
+          UIY: 15
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -318,7 +238,7 @@ Assets {
           }
           UseParentWidth: true
           Text {
-            Label: "Obtained 1,000       "
+            Label: "Obtained 1,000         "
             Color {
               R: 1
               G: 1
@@ -471,6 +391,149 @@ Assets {
           Radius: -1
         }
       }
+      Objects {
+        Id: 182831243688726987
+        Name: "BACKGROUND"
+        Transform {
+          Location {
+            X: -21392.9375
+            Y: 5383.43799
+            Z: -3550.03442
+          }
+          Rotation {
+            Yaw: 81.3776245
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13900603611236620789
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 10
+          Height: 42
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Image {
+            Brush {
+              Id: 10820194954338241369
+            }
+            Color {
+              A: 0.603000045
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12864608106345449273
+        Name: "Header"
+        Transform {
+          Location {
+            X: -0.0036424906
+            Y: 0.0020339163
+          }
+          Rotation {
+            Yaw: -3.4150944e-06
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13900603611236620789
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 200
+          Height: 30
+          UIY: 5
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          Text {
+            Label: "TASK COMPLETED"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.9
+            }
+            Size: 20
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 4319230699050670341
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:top"
+            }
+            ShadowColor {
+              A: 0.9
+            }
+            ShadowOffset {
+              X: 1
+              Y: 1
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 7523603796159964991
@@ -515,6 +578,15 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_scifi_button_Charge_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4319230699050670341
+      Name: "Teko Bold"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "TekoBold_ref"
       }
     }
     PrimaryAssetId {
