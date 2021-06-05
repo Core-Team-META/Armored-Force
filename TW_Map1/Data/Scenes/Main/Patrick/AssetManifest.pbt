@@ -170,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7515015531196152948
+  Name: "BG Gradient 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
   Id: 6552376844877606649
   Name: "Frame Ring 007 Wedge"
   PlatformAssetType: 9

@@ -16,10 +16,8 @@ local killText = script:GetCustomProperty("KillText"):WaitForObject()
 local killXPAmountText = script:GetCustomProperty("KillXPAmountText"):WaitForObject()
 local killCurrencyAmountText = script:GetCustomProperty("KillCurrencyAmountText"):WaitForObject()
 
-local totalText = script:GetCustomProperty("TotalText"):WaitForObject()
 local totalXPAmountText = script:GetCustomProperty("TotalXPAmountText"):WaitForObject()
 local totalCurrencyAmountText = script:GetCustomProperty("TotalCurrencyAmountText"):WaitForObject()
-local totalDamageAmountText = script:GetCustomProperty("TotalDamageAmountText"):WaitForObject()
 
 local rollTextTickSFX = script:GetCustomProperty("RollTextTickSFX")
 
@@ -216,13 +214,13 @@ function RollUpNumberText(textXP, targetXP, textCurrency, targetCurrency)
 		
 		if start <= targetXP then
 	
-			textXP.text = tostring(start) .. " XP"
+			textXP.text = tostring(start)
 			
 		end
 		
 		if start <= targetCurrency then
 		
-			textCurrency.text = tostring(start) .. " Silver"
+			textCurrency.text = tostring(start)
 			
 		end			
 		
@@ -231,6 +229,9 @@ function RollUpNumberText(textXP, targetXP, textCurrency, targetCurrency)
 		Task.Wait()
 		
 	end
+	
+	textXP.text = tostring(targetXP)
+	textCurrency.text = tostring(targetCurrency)
 	
 end
 
@@ -275,8 +276,6 @@ function ShowStatisticsAnimation()
 	RollUpNumberText(survivalXPAmountText, math.floor(survivalXPValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)), survivalCurrencyAmountText, math.floor(survivalCurrencyValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)))
 
 	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
-	
-	CountThisTextUp(totalDamageAmountText, localPlayer:GetResource("MatchTankDamage"), "", true)
 	
 	Events.Broadcast("SHOW_NEMESIS")
 
