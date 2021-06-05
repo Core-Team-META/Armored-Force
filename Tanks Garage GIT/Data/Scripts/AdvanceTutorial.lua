@@ -16,7 +16,7 @@ function OnOverlap(trigger, other)
 			if(AdvancePhase) then
 				local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
 				panel.lifeSpan = 3
-				Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.TargetPractice)
+				Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.TargetPractice, true)
 			end
 		end
 	end

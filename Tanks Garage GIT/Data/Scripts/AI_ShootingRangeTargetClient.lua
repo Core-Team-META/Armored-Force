@@ -63,7 +63,7 @@ function OnImpact(trigger, other)
 			if(other.owner.clientUserData.tutorial3_1 == 1 and other.owner.clientUserData.tutorial3_2 == 1 and other.owner.clientUserData.tutorial3_3 == 1) then
 				local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
 				panel.lifeSpan = 3
-				Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.BaseCapture)
+				Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.BaseCapture, true)
 			end
 		end
 		
@@ -74,7 +74,7 @@ function OnImpact(trigger, other)
 					print(TutorialCompletePopup.name)
 					local panel = World.SpawnAsset(TutorialCompletePopup, {parent = World.FindObjectByName("Tutorial UI")})
 					panel.lifeSpan = 3
-					Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.PrecisionShots)
+					Events.BroadcastToServer("AdvanceTutorial", API_Tutorial.TutorialPhase.PrecisionShots, true)
 				end
 			end
 		end
