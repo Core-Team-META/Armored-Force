@@ -34,9 +34,9 @@ function StateSTART(manager, propertyName)
 		end
 	
 		if localTeam == winner then
-			cardText.text = "VICTORY"
+			cardText.text = "YOUR TEAM WON"
 		elseif winner > 0 then
-			cardText.text = "DEFEAT"
+			cardText.text = "YOUR TEAM LOST"
 		else
 			cardText.text = "DRAW"
 		end

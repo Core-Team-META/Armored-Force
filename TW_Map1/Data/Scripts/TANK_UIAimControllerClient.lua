@@ -7,6 +7,8 @@ local sniperView = script:GetCustomProperty("SniperView"):WaitForObject()
 local distanceReadout = script:GetCustomProperty("DistanceReadout"):WaitForObject()
 
 local reloadTimer = script:GetCustomProperty("ReloadTimer"):WaitForObject()
+local reloadProgress = script:GetCustomProperty("ReloadProgress"):WaitForObject()
+
 local fireState = script:GetCustomProperty("FireState"):WaitForObject()
 local redDot = script:GetCustomProperty("RedDot"):WaitForObject()
 local zoom = script:GetCustomProperty("Zoom"):WaitForObject()
@@ -179,21 +181,24 @@ function Tick(dt)
 			fireState.text = "Reloading"
 			fireState:SetColor(reloadColor)
 			redDot.visibility = Visibility.FORCE_OFF
+			reloadProgress.progress = accumulatedReloadingTime/reloadSpeed
+			reloadProgress:SetFillColor(reloadColor)
 		else 
 			accumulatedReloadingTime = 0
 			reloading = false
 			
 			redDot.visibility = Visibility.INHERIT
+			reloadProgress.progress = 1
+			reloadProgress:SetFillColor(activeColor)
+			
+			fireState.text = "Ready"
+			fireState:SetColor(activeColor)
+			reloadTimer.text = ""
 			
 			if Object.IsValid(localPlayer.clientUserData.currentTankData.reloadSFX) then
 				localPlayer.clientUserData.currentTankData.reloadSFX:Play()
 			end
 		end
-
-	else
-		fireState.text = "Ready"
-		fireState:SetColor(activeColor)
-		reloadTimer.text = ""
 		
 	end
 	
