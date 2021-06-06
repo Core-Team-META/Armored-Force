@@ -93,6 +93,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -145,6 +146,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -316,6 +318,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -487,6 +490,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -584,31 +588,28 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: -5
-          UIY: 2.46648741
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Text {
             Label: "PlayerName"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.416
+              G: 0.416
+              B: 0.416
               A: 1
             }
-            Size: 13
+            Size: 15
             Justification {
-              Value: "mc:etextjustify:left"
+              Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -662,6 +663,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -759,30 +761,28 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          UIY: 7.06380129
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Text {
             Label: "BCK 3000"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.416
+              G: 0.416
+              B: 0.416
               A: 1
             }
-            Size: 10
+            Size: 15
             Justification {
               Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -836,6 +836,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -933,30 +934,28 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          UIY: 2.46648741
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Text {
             Label: "100m"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.416
+              G: 0.416
+              B: 0.416
               A: 1
             }
-            Size: 13
+            Size: 15
             Justification {
               Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -1010,6 +1009,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -1107,30 +1107,28 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          UIY: 2.46648741
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Text {
             Label: "90%"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.416
+              G: 0.416
+              B: 0.416
               A: 1
             }
-            Size: 13
+            Size: 15
             Justification {
               Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -1184,6 +1182,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -1281,13 +1280,11 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          UIY: 2.46648741
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
           Text {
@@ -1296,13 +1293,13 @@ Assets {
               R: 1
               A: 1
             }
-            Size: 13
+            Size: 15
             Justification {
               Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -1356,6 +1353,7 @@ Assets {
           AddSizeToParentIfUsingParentSize: true
           UseParentHeight: true
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -1453,14 +1451,12 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 200
-          UIY: 2.46648741
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
           UseParentHeight: true
           Text {
             Label: "120"
@@ -1468,13 +1464,13 @@ Assets {
               G: 1
               A: 1
             }
-            Size: 13
+            Size: 15
             Justification {
               Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -1511,12 +1507,12 @@ Assets {
       }
     }
     Assets {
-      Id: 2044747135125227812
-      Name: "Play"
+      Id: 17191612518869424272
+      Name: "Teko Light"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "PlayRegular_ref"
+        AssetId: "TekoLight_ref"
       }
     }
     PrimaryAssetId {
