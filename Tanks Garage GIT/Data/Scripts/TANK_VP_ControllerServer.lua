@@ -472,7 +472,7 @@ function Tick()
 		end
 		
 		if Object.IsValid(chassis) and not flipping then
-			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.33)
+			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.5)
 		end
 		
 		if allowHoldDownFiring and driver:IsBindingPressed("ability_primary") then

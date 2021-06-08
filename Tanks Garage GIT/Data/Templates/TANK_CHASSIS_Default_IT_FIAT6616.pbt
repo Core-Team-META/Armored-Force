@@ -57,14 +57,14 @@ Assets {
             Z: 105
           }
           MaxSpeed: 2350
-          AccelerationRate: 600
+          AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 10
-          TireFriction: 10
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 20
           }
-          GravityScale: 1.9
+          GravityScale: 1
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
@@ -109,7 +109,7 @@ Assets {
               Y: 180
               Z: 85
             }
-            TurningRadius: 1500
+            TurningRadius: 2000
           }
         }
       }
