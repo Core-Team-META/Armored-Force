@@ -1,19 +1,19 @@
 Assets {
-  Id: 11619439792683854596
-  Name: "Frame Outline Thin 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_020"
-  }
-}
-Assets {
-  Id: 10698833128597864431
-  Name: "Play Bold"
+  Id: 17191612518869424272
+  Name: "Teko Light"
   PlatformAssetType: 28
   PrimaryAsset {
     AssetType: "FontAssetRef"
-    AssetId: "PlayBold_ref"
+    AssetId: "TekoLight_ref"
+  }
+}
+Assets {
+  Id: 10820194954338241369
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
   }
 }
 Assets {
@@ -44,11 +44,29 @@ Assets {
   }
 }
 Assets {
+  Id: 2543686750193076668
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 2232822513297089776
   Name: "Award"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_036"
+  }
+}
+Assets {
+  Id: 96162478431907100
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
   }
 }
