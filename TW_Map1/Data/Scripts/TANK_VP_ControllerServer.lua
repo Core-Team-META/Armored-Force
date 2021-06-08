@@ -396,7 +396,7 @@ function OnArmorHit(trigger, other)
 		COMBAT.ApplyDamage(attackData)
 		
 		--print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
-		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage)
+		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition())
 	end
 	
 end
