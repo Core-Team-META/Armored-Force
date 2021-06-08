@@ -1,0 +1,32 @@
+.vscode/settings.json
+
+# Temporary files used when publishing & to store some preview data like persistent storage
+# No need to synchronize
+Temp/
+TW_Map3/Temp/
+
+# Local user settings used to store script breakpoints & hierarchy state (locked/hidden objects)
+# No need to synchronize
+UserSettings/
+TW_Map3/UserSettings/
+
+# Screenshots used when publishing & for project thumbnails in the Create tab
+# Comment out if you want to synchronize screenshots
+Screenshots/
+TW_Map3/Screenshots/
+
+# Directory created when publishing a game, excluding this allows anyone to publish without
+# the "You aren't authorized" message
+# No need to synchronize
+PublishData/
+TW_Map3/PublishData/
+
+# Folder created when you export templates from a game project
+# No need to synchronize
+Exports/
+TW_Map3/Exports/
+
+# Directory created when migrating from an old storage format
+# No need to synchronize
+.core_backup/
+TW_Map3/.core_backup/
