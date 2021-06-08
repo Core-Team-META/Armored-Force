@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_USSR_T34"
         Transform {
           Scale {
-            X: 1.2
+            X: 1
             Y: 1
             Z: 1
           }
