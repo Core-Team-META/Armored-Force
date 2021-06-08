@@ -48,8 +48,10 @@ function CalculateTotalXP(player)
 	end
 	
 	local survivalBonus = math.floor(survivalXPValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
+	local damageBounus = player:GetResource("DamageTracker")
+	local spotBonus = player:GetResource("SpottingTracker") 
 	
-	return baseXP + survivalBonus + (player.kills * killXPValue)
+	return baseXP + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)
 	
 end
 
@@ -66,8 +68,10 @@ function CalculateTotalCurrency(player)
 	end
 	
 	local survivalBonus = math.floor(survivalCurrencyValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
+	local damageBounus = player:GetResource("DamageTracker")
+	local spotBonus = player:GetResource("SpottingTracker") 
 	
-	return baseCurrency + survivalBonus + (player.kills * killXPValue)
+	return baseCurrency + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)
 	
 end
 
@@ -152,6 +156,8 @@ function OnDamagedRecord(player, damage)
 			Events.BroadcastToPlayer(damage.sourcePlayer, "GainXP", {reason = CONSTANTS_API.XP_GAIN_REASON.DAMAGE_DEALT, amount = xpRewarded})
 			print("XP rewarded for dealing damage: " .. tostring(xpRewarded))
 			
+			damage.sourcePlayer:AddResource("DamageTracker", xpRewarded)
+			
 			damage.sourcePlayer:AddResource(UTIL_API.GetTankRPString(damage.sourcePlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())), xpRewarded)
 			
 			damage.sourcePlayer:AddResource(CONSTANTS_API.XP, xpRewarded)
@@ -191,6 +197,12 @@ function OnDiedRecord(player, damage)
 		
 		player.serverUserData.assistedInDeath = {}
 	end
+
+end
+
+function OnSpotRecord(player, spottingAmount)
+	
+	player:SetResource("SpottingTracker", spottingAmount)
 
 end
 
@@ -236,6 +248,8 @@ function OnJoined(player)
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	player:SetResource("MatchEndHP", 0)
 	player:SetResource("TankDamage", 0)
+	player:SetResource("DamageTracker", 0)
+	player:SetResource("SpottingTracker", 0)
 	Task.Wait(10)
 	ResourceCheck(player)
 
@@ -243,4 +257,5 @@ end
 
 Game.playerJoinedEvent:Connect(OnJoined)
 Events.Connect("WINNER", SetWinner)
+Events.Connect("PlayerSpotted", OnSpotRecord)
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
