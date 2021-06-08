@@ -1,6 +1,38 @@
 Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
+  Id: 9705282421602965738
+  Name: "InvisibleStoneHedgeColliders"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "InvisibleStoneHedgeColliders"
+  }
+}
+Objects {
   Id: 11473089596160032213
   Name: "Windmills"
   Transform {
@@ -448,6 +480,10 @@ Objects {
   ChildIds: 3918709369751853023
   ChildIds: 1251063268575013482
   ChildIds: 14360821420199002597
+  ChildIds: 18188889105837708766
+  ChildIds: 1187360397969824003
+  ChildIds: 17608718653996918268
+  ChildIds: 7722725989962552577
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -459,6 +495,220 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 7722725989962552577
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: 17805.6836
+      Y: -6147.17188
+      Z: 851.926514
+    }
+    Rotation {
+      Pitch: 79.1156
+      Yaw: -145.790466
+      Roll: 67.0723572
+    }
+    Scale {
+      X: 2.03454208
+      Y: 3.32828522
+      Z: 3.32828784
+    }
+  }
+  ParentId: 7260946776493855142
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17608718653996918268
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -21098.8867
+      Y: -11.3671875
+      Z: 839.758667
+    }
+    Rotation {
+      Pitch: 79.1155243
+      Yaw: -145.790359
+      Roll: 67.0722122
+    }
+    Scale {
+      X: 3.32828379
+      Y: 3.32828379
+      Z: 3.32828379
+    }
+  }
+  ParentId: 7260946776493855142
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 1187360397969824003
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -18874.5859
+      Y: 5666.95313
+      Z: 854.667114
+    }
+    Rotation {
+      Pitch: 78.6181564
+      Yaw: -64.8458862
+      Roll: 58.2472763
+    }
+    Scale {
+      X: 3.32828379
+      Y: 3.32828379
+      Z: 3.32828379
+    }
+  }
+  ParentId: 7260946776493855142
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 18188889105837708766
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -15852.1104
+      Y: -4119.60938
+      Z: 977.222595
+    }
+    Rotation {
+      Yaw: 175.404266
+    }
+    Scale {
+      X: 3.31539965
+      Y: 4.18561602
+      Z: 4.18562508
+    }
+  }
+  ParentId: 7260946776493855142
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
     }
   }
 }
@@ -3012,8 +3262,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -6820.67
-      Y: 1547.44531
+      X: -6321.83594
+      Y: 1317.73047
       Z: 923.020203
     }
     Rotation {
@@ -3377,12 +3627,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -8048.92578
-      Y: 995.179688
-      Z: 919.720703
+      X: -8015.23584
+      Y: 1170.89453
+      Z: 901.091736
     }
     Rotation {
-      Pitch: -19.5619411
+      Pitch: -19.5619507
       Yaw: 158.392487
       Roll: 0.981029749
     }
@@ -3485,8 +3735,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -6106.51367
-      Y: 1218.875
+      X: -6151.06348
+      Y: 1277.12109
       Z: 867.746399
     }
     Rotation {
@@ -4946,12 +5196,12 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -11236.3027
-      Y: 8969.82227
+      X: -11315.8662
+      Y: 9050.56055
       Z: 1019.8208
     }
     Rotation {
-      Yaw: 85.404274
+      Yaw: -121.026672
     }
     Scale {
       X: 3.31539965
@@ -5229,12 +5479,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -18868.1855
-      Y: 5662.26563
-      Z: 969.162842
+      X: -18747.0898
+      Y: 5594.31641
+      Z: 969.162903
     }
     Rotation {
-      Pitch: -13.1745596
+      Pitch: -13.1745605
       Yaw: 156.857712
       Roll: 5.56426144
     }
@@ -5956,11 +6206,11 @@ Objects {
   Transform {
     Location {
       X: -16892.7871
-      Y: 5562.54297
-      Z: 998.972534
+      Y: 5555.35156
+      Z: 924.684509
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
       Roll: 4.23300934
     }
     Scale {
@@ -6062,12 +6312,12 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15590.4531
+      X: -15464.916
       Y: 6677.12109
       Z: 1019.45105
     }
     Rotation {
-      Pitch: -1.12487745
+      Pitch: -1.12487793
       Yaw: 174.992599
       Roll: 1.36664987
     }
@@ -6541,8 +6791,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15590.9766
-      Y: 5685.95313
+      X: -15435.5977
+      Y: 5842.98828
       Z: 824.017639
     }
     Rotation {
@@ -7182,12 +7432,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -20979.2441
-      Y: 33.828125
+      X: -20848.0313
+      Y: 55.640625
       Z: 996.580444
     }
     Rotation {
-      Pitch: -17.0606632
+      Pitch: -17.0606689
       Yaw: 156.403625
       Roll: 7.30314779
     }
@@ -9430,13 +9680,13 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -10606.8145
-      Y: 221.9375
-      Z: 835.506348
+      X: -10779.6123
+      Y: 178.898438
+      Z: 835.506409
     }
     Rotation {
       Pitch: 2.12741947
-      Yaw: -32.6817818
+      Yaw: -32.6817932
       Roll: 3.31225896
     }
     Scale {
@@ -11025,14 +11275,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -16082.457
-      Y: -3606.63281
-      Z: 847.674194
+      X: -15904.1504
+      Y: -3701.32031
+      Z: 869.150574
     }
     Rotation {
-      Pitch: 2.12741947
-      Yaw: 57.3182
-      Roll: 3.31225944
+      Pitch: -2.88284302
+      Yaw: 34.8412209
+      Roll: -0.171722412
     }
     Scale {
       X: 3.82419658
@@ -11311,12 +11561,12 @@ Objects {
   Transform {
     Location {
       X: -1652.9707
-      Y: 12623.375
-      Z: 959.036804
+      Y: 12613.8594
+      Z: 882.173
     }
     Rotation {
-      Yaw: -89.9999313
-      Roll: -0.338508606
+      Yaw: -89.999939
+      Roll: -0.338500977
     }
     Scale {
       X: 4.9300971
@@ -11363,8 +11613,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -2432.48047
-      Y: 12562.7422
+      X: -2250.59619
+      Y: 12644.3652
       Z: 829.279724
     }
     Rotation {
@@ -12836,9 +13086,9 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 5973.86523
+      X: 5897.63086
       Y: 12787.8047
-      Z: 903.519287
+      Z: 861.521362
     }
     Rotation {
       Pitch: 12.0054159
@@ -13284,10 +13534,10 @@ Objects {
     Location {
       X: 13693.0176
       Y: -6122.51563
-      Z: 977.222595
+      Z: 951.496765
     }
     Rotation {
-      Yaw: 85.4043
+      Yaw: 57.5227
     }
     Scale {
       X: 3.31539965
@@ -14115,7 +14365,7 @@ Objects {
       Z: 1030.91553
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 4.9300971
@@ -15122,12 +15372,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: 4192.10156
-      Y: -6383.64063
-      Z: 1030.91553
+      X: 4261.74707
+      Y: -6397.98047
+      Z: 1016.83154
     }
     Rotation {
-      Pitch: -17.0606976
+      Pitch: -17.0607
       Yaw: 156.403595
       Roll: 7.3031373
     }
@@ -24319,6 +24569,12 @@ Objects {
   ChildIds: 14383730309825956409
   ChildIds: 5284688326778602813
   ChildIds: 8224942868281782191
+  ChildIds: 4732434743571619059
+  ChildIds: 17334527359703235231
+  ChildIds: 11969559679016036359
+  ChildIds: 7259003271514663672
+  ChildIds: 9927229666857726154
+  ChildIds: 16365485382450118786
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -24330,6 +24586,326 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 16365485382450118786
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -16337.3906
+      Y: 36220.2422
+      Z: 267.333618
+    }
+    Rotation {
+      Pitch: 69.2662048
+      Yaw: 111.147713
+      Roll: -38.3270264
+    }
+    Scale {
+      X: 3.32828379
+      Y: 3.32828379
+      Z: 3.32828379
+    }
+  }
+  ParentId: 14477761987983383230
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9927229666857726154
+  Name: "Rock Pile 001"
+  Transform {
+    Location {
+      X: -9208.83
+      Y: 27762.7402
+      Z: 295.490662
+    }
+    Rotation {
+      Yaw: 89.9999619
+    }
+    Scale {
+      X: 4.14414358
+      Y: 2.93328595
+      Z: 2.59474421
+    }
+  }
+  ParentId: 14477761987983383230
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7259003271514663672
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -15198.0234
+      Y: 8423.64258
+      Z: 225.712051
+    }
+    Rotation {
+      Pitch: 68.5749435
+      Yaw: 137.258224
+      Roll: -33.8540649
+    }
+    Scale {
+      X: 3.32829118
+      Y: 3.3282795
+      Z: 2.44340563
+    }
+  }
+  ParentId: 14477761987983383230
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11969559679016036359
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -11580.207
+      Y: 2349.38672
+      Z: 309.034485
+    }
+    Rotation {
+      Yaw: -152.320816
+    }
+    Scale {
+      X: 3.31539965
+      Y: 4.18561602
+      Z: 4.18562508
+    }
+  }
+  ParentId: 14477761987983383230
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17334527359703235231
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -2826.39063
+      Y: 6095.67773
+      Z: 115.449112
+    }
+    Rotation {
+      Pitch: 65.003006
+      Yaw: -128.317596
+      Roll: -37.7990723
+    }
+    Scale {
+      X: 3.32829428
+      Y: 4.34873199
+      Z: 3.32825017
+    }
+  }
+  ParentId: 14477761987983383230
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 4732434743571619059
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -25825.4824
+      Y: 21800.3242
+      Z: 225.712051
+    }
+    Rotation {
+      Pitch: 68.5750275
+      Yaw: -154.67807
+      Roll: 11.1461115
+    }
+    Scale {
+      X: 3.32828379
+      Y: 3.32828379
+      Z: 3.32828379
+    }
+  }
+  ParentId: 14477761987983383230
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
     }
   }
 }
@@ -24959,13 +25535,13 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -12688.0488
+      X: -12657.1582
       Y: 31310.9102
       Z: 321.534912
     }
     Rotation {
       Pitch: 1.98552227
-      Yaw: -120.2873
+      Yaw: -120.287292
       Roll: 7.5482893
     }
     Scale {
@@ -25014,11 +25590,11 @@ Objects {
   Transform {
     Location {
       X: -12722.0957
-      Y: 31465.959
+      Y: 31390.3242
       Z: 360.867798
     }
     Rotation {
-      Pitch: -17.0606709
+      Pitch: -17.0606689
       Yaw: 12.5523758
       Roll: 7.30443335
     }
@@ -25362,19 +25938,19 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -24589.3184
-      Y: 32216.0156
+      X: -24517.2832
+      Y: 32299.8438
       Z: 256.937561
     }
     Rotation {
-      Pitch: -3.43173265
-      Yaw: -16.5369053
-      Roll: -5.39423323
+      Pitch: -1.6071167
+      Yaw: -20.2975464
+      Roll: 6.18694925
     }
     Scale {
-      X: 3.31539965
-      Y: 4.18561602
-      Z: 4.18562508
+      X: 3.04543352
+      Y: 3.84479
+      Z: 3.84479833
     }
   }
   ParentId: 14477761987983383230
@@ -26353,8 +26929,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -25929.3945
-      Y: 17246.0449
+      X: -25967.1582
+      Y: 17280.3242
       Z: 359.856018
     }
     Rotation {
@@ -28804,14 +29380,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -16445.7969
+      X: -16580.8906
       Y: 36373.3672
-      Z: 363.829163
+      Z: 351.332703
     }
     Rotation {
       Pitch: 13.1896887
       Yaw: -139.682632
-      Roll: -0.142874077
+      Roll: -0.142883301
     }
     Scale {
       X: 3.82419658
@@ -29375,14 +29951,14 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -14242.2207
-      Y: 36436.2109
-      Z: 365.178162
+      X: -14039.3066
+      Y: 36344.2578
+      Z: 414.935974
     }
     Rotation {
-      Pitch: -0.000191245286
-      Yaw: -91.8911591
-      Roll: -4.1141324
+      Pitch: -0.000183105469
+      Yaw: -91.8911743
+      Roll: -4.11413574
     }
     Scale {
       X: 6.54440069
@@ -29975,13 +30551,13 @@ Objects {
   Transform {
     Location {
       X: -13410.4746
-      Y: 28040.3906
+      Y: 27956.4492
       Z: 321.37384
     }
     Rotation {
-      Pitch: -9.23162174
-      Yaw: 73.1709824
-      Roll: 2.77801752
+      Pitch: 9.17462349
+      Yaw: -72.0194702
+      Roll: 2.9626739
     }
     Scale {
       X: 3.31539965
@@ -30082,7 +30658,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -9065.31738
+      X: -9398.10547
       Y: 27713.3242
       Z: 328.311523
     }
@@ -31984,14 +32560,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -26588.6914
-      Y: 30005.3809
-      Z: 236.966492
+      X: -26362.1582
+      Y: 29890.3242
+      Z: 281.37384
     }
     Rotation {
-      Pitch: 12.2954397
-      Yaw: -121.055054
-      Roll: 1.39988065
+      Pitch: -11.8808594
+      Yaw: 35.9317
+      Roll: 3.48246193
     }
     Scale {
       X: 3.82419658
@@ -33037,9 +33613,9 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -26464.8887
-      Y: 24073.8691
-      Z: 342.180603
+      X: -26432.1582
+      Y: 24120.3242
+      Z: 281.37384
     }
     Rotation {
       Pitch: 12.2953987
@@ -33544,11 +34120,11 @@ Objects {
   Transform {
     Location {
       X: -26388.7207
-      Y: 23890.6328
-      Z: 230.287247
+      Y: 23985.3242
+      Z: 271.37384
     }
     Rotation {
-      Yaw: -4.5956707
+      Yaw: -4.59567261
     }
     Scale {
       X: 3.21626568
@@ -33597,7 +34173,7 @@ Objects {
     Location {
       X: -21575.5254
       Y: 24496.4531
-      Z: 404.70105
+      Z: 336.980835
     }
     Rotation {
       Yaw: -179.999954
@@ -33647,16 +34223,16 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -21999.998
+      X: -21566.7891
       Y: 26726.4277
-      Z: 232.602
+      Z: 370.139221
     }
     Rotation {
       Yaw: 163.395416
     }
     Scale {
-      X: 3.31539965
-      Y: 4.18561602
+      X: 3.06842136
+      Y: 4.18561459
       Z: 4.18562508
     }
   }
@@ -33762,8 +34338,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -21638.0488
-      Y: 30005.3809
+      X: -21544.5547
+      Y: 29917.25
       Z: 299.172913
     }
     Rotation {
@@ -34042,12 +34618,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -21629.1016
+      X: -21555.9141
       Y: 29131.0059
-      Z: 394.433899
+      Z: 397.209595
     }
     Rotation {
-      Pitch: -17.0606976
+      Pitch: -17.0607
       Yaw: 66.4036179
       Roll: 7.3031373
     }
@@ -34709,14 +35285,14 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: -21698.834
+      X: -21672.3789
       Y: 25159.1582
       Z: 225.712051
     }
     Rotation {
       Pitch: 68.5751801
       Yaw: 25.3220463
-      Roll: -33.8538933
+      Roll: -33.8538818
     }
     Scale {
       X: 3.32828379
@@ -35595,13 +36171,13 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -24739.6133
+      X: -24567.1582
       Y: 22021.6484
-      Z: 414.599
+      Z: 371.37384
     }
     Rotation {
       Pitch: 12.2954397
-      Yaw: -31.05509
+      Yaw: -31.0550842
       Roll: 1.39988124
     }
     Scale {
@@ -36169,11 +36745,11 @@ Objects {
   Transform {
     Location {
       X: -23332.0332
-      Y: 21991.1855
+      Y: 22050.3242
       Z: 394.433899
     }
     Rotation {
-      Pitch: -17.0606842
+      Pitch: -17.0606689
       Yaw: 156.403564
       Roll: 7.30313683
     }
@@ -37170,7 +37746,7 @@ Objects {
   Transform {
     Location {
       X: -20010.2598
-      Y: 21995.1602
+      Y: 22035.3242
       Z: 327.425171
     }
     Rotation {
@@ -37221,7 +37797,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -18745.0137
+      X: -18872.1582
       Y: 22043.6055
       Z: 345.64447
     }
@@ -37499,14 +38075,14 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: 2045.06055
-      Y: 7367.7793
-      Z: 360.612793
+      X: 2132.8418
+      Y: 7625.32422
+      Z: 216.37384
     }
     Rotation {
-      Pitch: -17.0606976
-      Yaw: -113.596436
-      Roll: 7.30313921
+      Pitch: 72.905426
+      Yaw: 176.433929
+      Roll: 3.57146597
     }
     Scale {
       X: 4.9300971
@@ -38217,12 +38793,12 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 1935.65234
-      Y: 11492.668
+      X: 2050.99731
+      Y: 11502.6855
       Z: 296.021
     }
     Rotation {
-      Yaw: 175.404282
+      Yaw: -49.5957642
     }
     Scale {
       X: 3.21626568
@@ -38623,19 +39199,19 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: 6447.28125
-      Y: 8605.38281
-      Z: 351.360046
+      X: 6467.8418
+      Y: 8880.32422
+      Z: 381.37384
     }
     Rotation {
-      Pitch: -14.5142813
+      Pitch: -14.5142822
       Yaw: -129.371689
       Roll: 11.6218233
     }
     Scale {
-      X: 4.9300971
-      Y: 4.9300971
-      Z: 4.9300971
+      X: 5
+      Y: 5
+      Z: 5
     }
   }
   ParentId: 14477761987983383230
@@ -39977,7 +40553,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -11768
+      X: -11677.0098
       Y: 7388.77734
       Z: 331.190125
     }
@@ -40135,7 +40711,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -11749.7676
+      X: -11673.0449
       Y: 4029.69336
       Z: 301.942078
     }
@@ -40296,13 +40872,13 @@ Objects {
   Transform {
     Location {
       X: -12011.8672
-      Y: 7959.73828
+      Y: 8095.85547
       Z: 309.298065
     }
     Rotation {
-      Pitch: -10.4502916
+      Pitch: -10.4502869
       Yaw: 54.0274239
-      Roll: -1.12197888
+      Roll: -1.12197876
     }
     Scale {
       X: 3.21626568
@@ -42427,12 +43003,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -15044.502
+      X: -15057.9
       Y: 8602.42188
-      Z: 383.422668
+      Z: 308.147034
     }
     Rotation {
-      Yaw: -89.9999619
+      Yaw: 176.078308
     }
     Scale {
       X: 4.9300971
@@ -43719,7 +44295,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -7940.70898
+      X: -8023.2041
       Y: 8442.59
       Z: 342.180603
     }
@@ -44576,9 +45152,9 @@ Objects {
       Z: 325.142456
     }
     Rotation {
-      Pitch: 12.210021
-      Yaw: -121.043892
-      Roll: 1.45252025
+      Pitch: 12.210001
+      Yaw: 36.4559708
+      Roll: 1.45251727
     }
     Scale {
       X: 3.82419658
@@ -44625,14 +45201,14 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: 2014.9541
-      Y: 18380.2695
+      X: 1892.8418
+      Y: 18450.3242
       Z: 388.823608
     }
     Rotation {
-      Pitch: -17.0587234
-      Yaw: 178.872925
-      Roll: 7.40751743
+      Pitch: -17.0587158
+      Yaw: 111.372887
+      Roll: 7.4075532
     }
     Scale {
       X: 4.9300971
@@ -49067,8 +49643,8 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: 1680.21875
-      Y: 14225.3809
+      X: 1824.27856
+      Y: 14177.7686
       Z: 225.897781
     }
     Rotation {
@@ -56456,6 +57032,7 @@ Objects {
   ChildIds: 912346396389794484
   ChildIds: 9018742697203519347
   ChildIds: 6767784380120768638
+  ChildIds: 12346667816546589250
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -56467,6 +57044,60 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 12346667816546589250
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -15625.8145
+      Y: 14346.1787
+      Z: 629.172058
+    }
+    Rotation {
+      Pitch: 67.5341721
+      Yaw: 52.8278351
+      Roll: -28.572052
+    }
+    Scale {
+      X: 3.32828379
+      Y: 3.32828379
+      Z: 3.32828379
+    }
+  }
+  ParentId: 14383259138504260082
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
     }
   }
 }
@@ -58065,14 +58696,13 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15918.5332
-      Y: 8666.9873
-      Z: 1197.51221
+      X: -15873.6895
+      Y: 8674.78223
+      Z: 1163.51733
     }
     Rotation {
       Pitch: 1.36603776e-05
       Yaw: 9.86220074
-      Roll: -4.2964125e-06
     }
     Scale {
       X: 3.13656425
@@ -58119,14 +58749,13 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -14336.3184
-      Y: 8731.62
-      Z: 1220.55298
+      X: -14428.541
+      Y: 8715.58691
+      Z: 1193.70105
     }
     Rotation {
       Pitch: 1.36603776e-05
       Yaw: 9.86220074
-      Roll: -4.2964125e-06
     }
     Scale {
       X: 3.13656425
@@ -58894,7 +59523,7 @@ Objects {
   Transform {
     Location {
       X: -6639.78906
-      Y: 11133.5146
+      Y: 11127.2646
       Z: 694.609253
     }
     Rotation {
@@ -59240,14 +59869,14 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -19979.041
-      Y: 14408.0518
+      X: -19816.5762
+      Y: 14326.2607
       Z: 591.527893
     }
     Rotation {
-      Pitch: -0.000245886797
+      Pitch: -0.000244140625
       Yaw: 137.767853
-      Roll: -2.22964978
+      Roll: -2.22964478
     }
     Scale {
       X: 4.9300971
@@ -59295,13 +59924,13 @@ Objects {
   Transform {
     Location {
       X: -18461.291
-      Y: 13916.1826
-      Z: 575.078369
+      Y: 14241.8438
+      Z: 640.298889
     }
     Rotation {
-      Pitch: -0.637044907
+      Pitch: -0.637054443
       Yaw: -106.592712
-      Roll: -2.13690233
+      Roll: -2.13690186
     }
     Scale {
       X: 3.31539965
@@ -60015,13 +60644,13 @@ Objects {
   Transform {
     Location {
       X: -16894.9434
-      Y: 14217.3486
+      Y: 14346.1787
       Z: 629.172058
     }
     Rotation {
       Pitch: 67.5351868
       Yaw: 120.221024
-      Roll: -28.5729694
+      Roll: -28.5729675
     }
     Scale {
       X: 3.32828379
@@ -60745,14 +61374,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15660.5801
+      X: -15538.8223
       Y: 15373.3877
       Z: 702.009033
     }
     Rotation {
-      Pitch: -0.13059321
+      Pitch: -0.130584717
       Yaw: 175.406113
-      Roll: -1.62483728
+      Roll: -1.62484741
     }
     Scale {
       X: 3.31539965
@@ -62099,13 +62728,13 @@ Objects {
   Transform {
     Location {
       X: -15574.0215
-      Y: 19020.498
-      Z: 492.125122
+      Y: 18962.5254
+      Z: 474.296875
     }
     Rotation {
-      Pitch: -0.130866423
+      Pitch: -0.130859375
       Yaw: 108.371246
-      Roll: -1.62481141
+      Roll: -1.62481689
     }
     Scale {
       X: 3.21626568
@@ -62270,8 +62899,8 @@ Objects {
   Transform {
     Location {
       X: -12405.8926
-      Y: 21584.7207
-      Z: 464.878021
+      Y: 21737.5195
+      Z: 491.407501
     }
     Rotation {
       Pitch: 12.2954741
@@ -62324,8 +62953,8 @@ Objects {
   Transform {
     Location {
       X: -13454.1309
-      Y: 21584.8262
-      Z: 464.878021
+      Y: 21664.9805
+      Z: 462.220184
     }
     Rotation {
       Pitch: 12.2954741
@@ -62564,12 +63193,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -15858.0449
+      X: -15784.6777
       Y: 27488.4629
       Z: 500.068726
     }
     Rotation {
-      Pitch: -17.0606632
+      Pitch: -17.0606689
       Yaw: 66.4036179
       Roll: 7.30319214
     }
@@ -62905,13 +63534,13 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15715.6074
+      X: -15713.6348
       Y: 28362.6621
       Z: 480.733978
     }
     Rotation {
       Pitch: 12.2954054
-      Yaw: -121.055122
+      Yaw: -121.055115
       Roll: 1.39987838
     }
     Scale {
@@ -63085,8 +63714,8 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -15602.834
-      Y: 29548.4297
+      X: -15702.9082
+      Y: 29339.0254
       Z: 423.958313
     }
     Rotation {
@@ -63250,8 +63879,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15685.9043
-      Y: 21903.9785
+      X: -15543.5332
+      Y: 21913.8555
       Z: 452.008667
     }
     Rotation {
@@ -63426,7 +64055,7 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -15748.7402
+      X: -15697.7715
       Y: 25365.0176
       Z: 489.057434
     }
@@ -63478,14 +64107,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15822.1543
-      Y: 24843.8535
-      Z: 426.537018
+      X: -15790.584
+      Y: 24859.0313
+      Z: 393.49707
     }
     Rotation {
-      Pitch: 12.295433
-      Yaw: -121.055122
-      Roll: 1.39988101
+      Pitch: 7.65327454
+      Yaw: -122.377045
+      Roll: -6.21380615
     }
     Scale {
       X: 3.82419658
@@ -63651,11 +64280,11 @@ Objects {
   Transform {
     Location {
       X: -11396.6973
-      Y: 21401.1836
-      Z: 338.236816
+      Y: 21530.502
+      Z: 373.792236
     }
     Rotation {
-      Yaw: -106.604591
+      Yaw: -106.604584
     }
     Scale {
       X: 3.31539965
@@ -63756,12 +64385,12 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -15847.9355
+      X: -15590.877
       Y: 21881.127
       Z: 489.057465
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
       X: 4.9300971
@@ -70399,6 +71028,7 @@ Objects {
   ChildIds: 1958922267170387736
   ChildIds: 17250444613103601337
   ChildIds: 7560044751638969746
+  ChildIds: 11652024619475405246
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -70410,6 +71040,60 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 11652024619475405246
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -5585.00781
+      Y: 5706.03125
+      Z: 291.710022
+    }
+    Rotation {
+      Pitch: 68.5751801
+      Yaw: 64.1658401
+      Roll: -33.8539124
+    }
+    Scale {
+      X: 3.32828379
+      Y: 3.32828379
+      Z: 3.32828379
+    }
+  }
+  ParentId: 7255228284457457390
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11182969111770509228
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1908253659651347838
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    InteractWithTriggers: true
+    StaticMesh {
+      Physics {
+      }
+      BoundsScale: 1
     }
   }
 }
@@ -72390,7 +73074,7 @@ Objects {
   Transform {
     Location {
       X: -15653.9668
-      Y: 7743.92578
+      Y: 7615.93359
       Z: 292.710083
     }
     Rotation {
@@ -73198,12 +73882,12 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -5990.46289
-      Y: 6414.17383
+      X: -6054.18945
+      Y: 6367.68945
       Z: 381.710266
     }
     Rotation {
-      Yaw: -117.959328
+      Yaw: -117.95932
     }
     Scale {
       X: 3.21626568
@@ -74178,7 +74862,7 @@ Objects {
   Transform {
     Location {
       X: -10120.2207
-      Y: 11419.5645
+      Y: 11346.9512
       Z: 449.420624
     }
     Rotation {
@@ -74591,8 +75275,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -8045.55664
-      Y: 8733.4
+      X: -8089.27734
+      Y: 8703.63281
       Z: 391.293213
     }
     Rotation {
@@ -75470,12 +76154,12 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -5784.08
-      Y: 5822.20898
-      Z: 400.052368
+      X: -5758.96875
+      Y: 5842.19727
+      Z: 406.451385
     }
     Rotation {
-      Pitch: -11.2748661
+      Pitch: -11.2748718
       Yaw: -141.479568
       Roll: 5.13116074
     }
@@ -83428,12 +84112,12 @@ Objects {
   Transform {
     Location {
       X: 4294.05762
-      Y: -10526.1074
+      Y: -10544.1611
       Z: 809.934204
     }
     Rotation {
       Pitch: 0.000724000041
-      Yaw: -14.8704596
+      Yaw: -14.8704529
       Roll: 0.000986243831
     }
     Scale {
@@ -84579,9 +85263,9 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 12000.3672
-      Y: 11117.2314
-      Z: 983.766113
+      X: 11826.0859
+      Y: 10990.1367
+      Z: 983.765259
     }
     Rotation {
       Pitch: 12.7111864
@@ -84633,14 +85317,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 11441.8281
-      Y: 4287.1748
+      X: 11490.9121
+      Y: 4401
       Z: 628.891724
     }
     Rotation {
       Pitch: 17.2645454
       Yaw: 52.7128143
-      Roll: -8.05138874
+      Roll: -8.0513916
     }
     Scale {
       X: 3.82419658
@@ -86421,12 +87105,12 @@ Objects {
     Rotation {
       Pitch: 66.7753754
       Yaw: -149.551514
-      Roll: -24.1436577
+      Roll: -24.1436462
     }
     Scale {
-      X: 3.32828379
-      Y: 3.32828379
-      Z: 3.32828379
+      X: 4.36958408
+      Y: 3.32825494
+      Z: 3.32826567
     }
   }
   ParentId: 7219194076105567950
@@ -86577,11 +87261,11 @@ Objects {
   Transform {
     Location {
       X: 11521.0137
-      Y: 11117.2256
+      Y: 11057.9775
       Z: 977.294556
     }
     Rotation {
-      Pitch: -13.4999771
+      Pitch: -13.4999695
       Yaw: 171.324371
       Roll: 6.18308306
     }
@@ -86630,14 +87314,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 2829.57227
+      X: 2882.4082
       Y: 11167.0068
       Z: 622.989624
     }
     Rotation {
-      Pitch: -5.90622139
-      Yaw: -122.010231
-      Roll: -12.9534416
+      Pitch: -5.90621948
+      Yaw: -122.010223
+      Roll: -12.9534302
     }
     Scale {
       X: 3.82419658
@@ -86684,19 +87368,19 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 2942.75
-      Y: 8640.38477
+      X: 3011.71875
+      Y: 8995.94629
       Z: 447.716522
     }
     Rotation {
-      Pitch: 15.6443291
-      Yaw: 54.4966507
-      Roll: -1.0346632
+      Pitch: 6.74203825
+      Yaw: 123.417412
+      Roll: 14.1874428
     }
     Scale {
-      X: 3.82419658
-      Y: 3.82419658
-      Z: 3.82419658
+      X: 3.82420063
+      Y: 3.82420635
+      Z: 5.58203745
     }
   }
   ParentId: 7219194076105567950
@@ -86864,7 +87548,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 3104.93555
+      X: 3075.60254
       Y: 10517.7256
       Z: 614.960693
     }
@@ -87404,14 +88088,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 3066.47656
+      X: 3037.65039
       Y: 11453.8662
       Z: 690.991577
     }
     Rotation {
       Pitch: 15.6443491
       Yaw: 54.4966927
-      Roll: -1.03466058
+      Roll: -1.03466797
     }
     Scale {
       X: 3.82419658
@@ -88225,14 +88909,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 2942.69043
+      X: 3035.02246
       Y: 14220.4541
-      Z: 838.770264
+      Z: 841.273926
     }
     Rotation {
       Pitch: 15.6443634
       Yaw: 54.4967117
-      Roll: -1.0346607
+      Roll: -1.03466797
     }
     Scale {
       X: 3.82419658
@@ -89298,9 +89982,9 @@ Objects {
       Z: 1052.63989
     }
     Rotation {
-      Pitch: 0.934356153
-      Yaw: 13.1573687
-      Roll: -3.9904089
+      Pitch: -7.27297974
+      Yaw: 69.8827362
+      Roll: 6.92437315
     }
     Scale {
       X: 3.21626568
@@ -89408,14 +90092,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 3007.69824
+      X: 3115.05664
       Y: 17637.8496
       Z: 1044.30225
     }
     Rotation {
       Pitch: 15.6443768
       Yaw: 54.4967422
-      Roll: -1.03465712
+      Roll: -1.03466797
     }
     Scale {
       X: 3.82419658
@@ -89517,13 +90201,13 @@ Objects {
   Transform {
     Location {
       X: 3149.13574
-      Y: 19611.3379
-      Z: 1056.30505
+      Y: 19423.6563
+      Z: 1112.35168
     }
     Rotation {
-      Pitch: -1.73713553
-      Yaw: -154.957565
-      Roll: 3.71234846
+      Pitch: -1.73712158
+      Yaw: -154.957901
+      Roll: -14.2498779
     }
     Scale {
       X: 3.06264067
@@ -89935,19 +90619,19 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: -24712.5742
-      Y: 10654.6631
+      X: -24649.0039
+      Y: 10697.6201
       Z: 699.157837
     }
     Rotation {
-      Pitch: 66.5316849
-      Yaw: 167.769211
-      Roll: -24.480381
+      Pitch: 66.5310364
+      Yaw: -31.8612976
+      Roll: -24.4791565
     }
     Scale {
-      X: 3.32828379
-      Y: 3.32828379
-      Z: 3.32828379
+      X: 3.3282938
+      Y: 3.77263832
+      Z: 2.33944869
     }
   }
   ParentId: 7219194076105567950
@@ -91000,14 +91684,14 @@ Objects {
   Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -13640.1914
-      Y: -6562.79785
+      X: -13805.8086
+      Y: -6569.39453
       Z: 426.342743
     }
     Rotation {
-      Pitch: -17.0581436
-      Yaw: 59.5919304
-      Roll: 7.408319
+      Pitch: -17.058136
+      Yaw: 82.0918884
+      Roll: 7.4083252
     }
     Scale {
       X: 4.9300971
@@ -101612,8 +102296,8 @@ Objects {
   Transform {
     Location {
       X: -8254.86719
-      Y: -9645.11719
-      Z: 588.356384
+      Y: -9947.81055
+      Z: 538.660156
     }
     Rotation {
       Pitch: 10.3708086
@@ -102486,8 +103170,8 @@ Objects {
   Name: "Rock 03"
   Transform {
     Location {
-      X: -13744.2012
-      Y: -10374.1855
+      X: -13776.6426
+      Y: -10231.123
       Z: 256.714661
     }
     Rotation {
@@ -102496,9 +103180,9 @@ Objects {
       Roll: 75.0594
     }
     Scale {
-      X: 3.32828379
-      Y: 3.32828379
-      Z: 3.32828379
+      X: 3.65465236
+      Y: 3.32829547
+      Z: 3.32826614
     }
   }
   ParentId: 8857761804896968120
@@ -103128,11 +103812,11 @@ Objects {
   Transform {
     Location {
       X: -12463.5938
-      Y: -10531.2305
+      Y: -10500.6367
       Z: 360.80481
     }
     Rotation {
-      Pitch: -0.108429246
+      Pitch: -0.108428955
       Yaw: 175.159821
       Roll: 3.50167918
     }
@@ -103422,9 +104106,9 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -7936.18359
-      Y: -8818.49219
-      Z: 644.487793
+      X: -7713.13867
+      Y: -8850.95703
+      Z: 629.504333
     }
     Rotation {
       Pitch: 7.66646338
