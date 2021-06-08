@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11978124045830704171
+  Name: "Icon Trophy"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Trophy"
+  }
+}
+Assets {
   Id: 11646227894815174831
   Name: "Fantasy Coins 003"
   PlatformAssetType: 9
@@ -356,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 2550158881344947937
+  Name: "Garage"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Racing_Icon_012"
   }
 }
 Assets {
