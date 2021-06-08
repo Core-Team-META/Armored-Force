@@ -1,3 +1,4 @@
+--[[
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
@@ -70,3 +71,4 @@ Initialize()
 Task.Wait(3)
 
 scriptChild.visibility = Visibility.INHERIT
+--]]
