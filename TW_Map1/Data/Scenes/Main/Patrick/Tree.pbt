@@ -58933,9 +58933,11 @@ Objects {
   }
   ParentId: 4175524570554495221
   ChildIds: 8440960363525399038
+  ChildIds: 11503608100440484061
   ChildIds: 15257011197194155932
   ChildIds: 8745769454035540633
   ChildIds: 4587497590800616186
+  ChildIds: 5047821580087548600
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -58949,8 +58951,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 400
-    Height: 80
+    Width: 334
+    Height: 60
     UIY: -190
     RenderTransformPivot {
       Anchor {
@@ -58969,6 +58971,87 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5047821580087548600
+  Name: "DamageAmount"
+  Transform {
+    Location {
+      X: -4.35779476
+      Y: 49.8097382
+      Z: 115
+    }
+    Rotation {
+      Yaw: -1.2806604e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4105341505052041312
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 50
+    Height: 40
+    UIX: 80
+    UIY: -12
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "40"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 25
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      Font {
+        Id: 15392186923000422511
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:baseline"
+      }
+      ShadowColor {
+        A: 0.9
+      }
+      ShadowOffset {
+        X: 2
+        Y: 2
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
         }
       }
     }
@@ -59008,15 +59091,15 @@ Objects {
   Control {
     Width: 295
     Height: 40
-    UIX: 80
-    UIY: 35
+    UIX: 135
+    UIY: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     Text {
-      Label: "40 DAMAGE DEALT"
+      Label: "DAMAGE DEALT"
       Color {
         R: 1
         G: 1
@@ -59028,21 +59111,28 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       Font {
-        Id: 2044747135125227812
+        Id: 16636415353835813981
       }
       VerticalJustification {
-        Value: "mc:everticaljustification:center"
+        Value: "mc:everticaljustification:baseline"
+      }
+      ShadowColor {
+        A: 0.9
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
       }
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:bottomleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:bottomleft"
         }
       }
     }
@@ -59080,31 +59170,38 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 45
+    Height: 30
     UIX: 80
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentWidth: true
     Text {
-      Label: "TANK HIT!"
+      Label: "HIT TANK FROM BEHIND! (1.5x DMG)"
       Color {
         R: 1
         G: 1
         B: 1
         A: 1
       }
-      Size: 20
+      Size: 18
       Justification {
         Value: "mc:etextjustify:left"
       }
-      AutoWrapText: true
       Font {
-        Id: 2044747135125227812
+        Id: 16636415353835813981
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 0.9
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
       }
     }
     AnchorLayout {
@@ -59152,10 +59249,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 60
-    Height: 60
-    UIX: 10
-    UIY: 10
+    Width: 70
+    Height: 70
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -59163,7 +59258,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 8577223158266405289
+        Id: 6818558336275318495
       }
       Color {
         R: 1
@@ -59173,16 +59268,155 @@ Objects {
       }
       TeamSettings {
       }
+      ShadowOffset {
+      }
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middleleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11503608100440484061
+  Name: "Icon"
+  Transform {
+    Location {
+      X: -4.35779476
+      Y: 49.8097382
+      Z: 115
+    }
+    Rotation {
+      Yaw: -1.2806604e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4105341505052041312
+  ChildIds: 17299638272893682818
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 136
+    Height: 130
+    UIX: -28.230896
+    UIY: 6.64157104
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 7648893931280516746
+      }
+      Color {
+        A: 0.9
+      }
+      TeamSettings {
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17299638272893682818
+  Name: "Icon"
+  Transform {
+    Location {
+      X: -4.35779476
+      Y: 49.8097382
+      Z: 115
+    }
+    Rotation {
+      Yaw: -1.2806604e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11503608100440484061
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 7648893931280516746
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -59216,21 +59450,25 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 80
-    Height: 400
-    UIX: 400
-    RotationAngle: 90
+    Width: 150
+    UIX: -59.7833252
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
     Image {
       Brush {
-        Id: 10820194954338241369
+        Id: 17289448223043935888
       }
       Color {
-        A: 0.8
+        R: 0.00402471703
+        G: 0.00477695279
+        B: 0.00749903172
+        A: 0.5
       }
       TeamSettings {
       }
@@ -59368,9 +59606,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:DamageDealt"
+      Name: "cs:DamageAmount"
       ObjectReference {
-        SelfId: 4587497590800616186
+        SelfId: 5047821580087548600
+      }
+    }
+    Overrides {
+      Name: "cs:Header"
+      ObjectReference {
+        SelfId: 8745769454035540633
       }
     }
   }
