@@ -52,6 +52,7 @@ function AddToList(player)
 			player:AddResource(Constants_API.XP, spottingXP)
 			-- Add RP to tank
 			player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
+			Events.Broadcast("PlayerSpotted", player, spottingXP)
 			Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
 			script:SetNetworkedCustomProperty("P" .. tostring(i), player.id)
 			return
