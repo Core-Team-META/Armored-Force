@@ -448,6 +448,10 @@ function FlipTank()
 
 	Task.Wait(2)
 	
+	if not Object.IsValid(chassis) then
+		return
+	end
+	
 	if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
 		chassis:AddImpulse(Vector3.New(0, 0, chassis.mass * 2000))
 		Task.Wait(1)
@@ -479,6 +483,10 @@ function Tick()
 				flipping = true
 				Task.Spawn(FlipTank, 0)
 			end
+		end
+		
+		if Object.IsValid(chassis) and not flipping then
+			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.25)
 		end
 		 
 		if driver:IsBindingPressed("ability_extra_21") then -- W
