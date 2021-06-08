@@ -3,6 +3,8 @@
 -- User Stats
 -- Chosen Tank Stats
 
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+
 -- CONNECTING CUSTOM PROPERTIES
 local ACTIVE_HEAD_MENU = script:GetCustomProperty("ACTIVE_HEAD_MENU")
 local HOVER_HEAD_MENU = script:GetCustomProperty("HOVER_HEAD_MENU")
@@ -396,7 +398,56 @@ function Tick(deltaTime)
 			ENGINE_DENY_isMoving = false
 		end
 	end
+
+	local LOCAL_PLAYER = Game.GetLocalPlayer()
+
+	local silverText = STATS_PLAYER:FindDescendantByName("AMOUNT_MONEY_SHADOW")
+	silverText.text = tostring(LOCAL_PLAYER:GetResource("Silver"))
+	for i, child in ipairs(silverText:GetChildren()) do
+			child.text = silverText.text
+	end		
+
+	local rpText = STATS_PLAYER:FindDescendantByName("AMOUNT_RP_SHADOW")
+	rpText.text = tostring(LOCAL_PLAYER:GetResource("Free RP"))
+	for i, child in ipairs(rpText:GetChildren()) do
+			child.text = rpText.text
+	end
 	
+	local goldText = STATS_PLAYER:FindDescendantByName("AMOUNT_GOLD_SHADOW")
+	goldText.text = tostring(LOCAL_PLAYER:GetResource("Gold"))
+	for i, child in ipairs(goldText:GetChildren()) do
+		child.text = goldText.text
+	end
+		
+	local specificRPText = STATS_PLAYER:FindDescendantByName("AMOUNT_SPECIFIC_RP_SHADOW")	
+	specificRPText.text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(LOCAL_PLAYER:GetResource("EquippedTank"))))
+	for i, child in ipairs(specificRPText:GetChildren()) do
+		child.text = specificRPText.text
+	end	
+	
+	local silverText = STATS_TANK:FindDescendantByName("AMOUNT_MONEY_SHADOW")
+	silverText.text = tostring(LOCAL_PLAYER:GetResource("Silver"))
+	for i, child in ipairs(silverText:GetChildren()) do
+			child.text = silverText.text
+	end		
+
+	local rpText = STATS_TANK:FindDescendantByName("AMOUNT_RP_SHADOW")
+	rpText.text = tostring(LOCAL_PLAYER:GetResource("Free RP"))
+	for i, child in ipairs(rpText:GetChildren()) do
+			child.text = rpText.text
+	end
+	
+	local goldText = STATS_TANK:FindDescendantByName("AMOUNT_GOLD_SHADOW")
+	goldText.text = tostring(LOCAL_PLAYER:GetResource("Gold"))
+	for i, child in ipairs(goldText:GetChildren()) do
+		child.text = goldText.text
+	end
+		
+	local specificRPText = STATS_TANK:FindDescendantByName("AMOUNT_SPECIFIC_RP_SHADOW")	
+	specificRPText.text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(LOCAL_PLAYER:GetResource("EquippedTank"))))
+	for i, child in ipairs(specificRPText:GetChildren()) do
+		child.text = specificRPText.text
+	end	
 	
 end
 
@@ -3120,6 +3171,8 @@ function INITIATE_CHECK_STATE(player)
 	CLICKED_CHOOSE_MODE_TUNDRA(CHOOSE_MODE_TUNDRA_BUTTON)
 	CHECK_STATE()
 end
+
+CLICKED_STATS()
 
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
