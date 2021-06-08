@@ -143,15 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8577223158266405289
-  Name: "Icon Explosion"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Explosion"
-  }
-}
-Assets {
   Id: 7946634531565250888
   Name: "BG Flat 002"
   PlatformAssetType: 9
@@ -176,6 +167,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
+  Id: 6818558336275318495
+  Name: "Military Ability Explosion 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Military_Ability_Red_014"
   }
 }
 Assets {
