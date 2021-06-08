@@ -79,7 +79,7 @@ function OnImpact(trigger, other)
 			end
 		end
 					
-		Events.Broadcast("ShowDamageFeedback", actualDamage, trigger.name)
+		Events.Broadcast("ShowDamageFeedback", actualDamage, trigger.name, trigger:GetWorldPosition())
 
 		UI.ShowFlyUpText(tostring(actualDamage), trigger:GetWorldPosition(), {isBig = true, color = Color.RED, duration = 1})
 			

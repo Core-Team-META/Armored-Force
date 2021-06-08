@@ -1,4 +1,22 @@
 Assets {
+  Id: 17289448223043935888
+  Name: "UI Gradient Rectangular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_002"
+  }
+}
+Assets {
+  Id: 17251969847265876676
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 16797068327331994841
   Name: "Frame Ring 4x 004"
   PlatformAssetType: 9
@@ -53,21 +71,21 @@ Assets {
   }
 }
 Assets {
+  Id: 13257658630242510450
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
   Id: 12515110197061593602
   Name: "Frame Ring 013 Wedge"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing_013Wedge"
-  }
-}
-Assets {
-  Id: 10820194954338241369
-  Name: "BG Highlighted 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_020"
   }
 }
 Assets {
@@ -80,21 +98,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8577223158266405289
-  Name: "Icon Explosion"
+  Id: 6818558336275318495
+  Name: "Military Ability Explosion 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Explosion"
-  }
-}
-Assets {
-  Id: 8088145951334388726
-  Name: "Play"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "PlayRegular_ref"
+    AssetId: "Icon_Military_Ability_Red_014"
   }
 }
 Assets {
@@ -104,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing_007Wedge"
+  }
+}
+Assets {
+  Id: 4319230699050670341
+  Name: "Teko Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoBold_ref"
   }
 }
 Assets {
