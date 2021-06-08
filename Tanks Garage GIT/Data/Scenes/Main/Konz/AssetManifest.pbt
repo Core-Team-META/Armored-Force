@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15180609955807349348
+  Name: "Wolf"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Wolf"
+  }
+}
+Assets {
   Id: 14514750246421432694
   Name: "Button Page Slide Core 01 SFX"
   PlatformAssetType: 7
@@ -356,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Gold_002"
+  }
+}
+Assets {
+  Id: 858186239500606381
+  Name: "Medal"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Racing_Icon_011"
   }
 }
 Assets {
