@@ -37,6 +37,12 @@ local survivalCurrencyValue = statisticsComponent:GetCustomProperty("SurvivalCur
 local survivalXPAmountText = script:GetCustomProperty("SurvivalXPAmountText"):WaitForObject()
 local survivalCurrencyAmountText = script:GetCustomProperty("SurvivalCurrencyAmountText"):WaitForObject()
 
+local damageXPAmountText = script:GetCustomProperty("DamageXPAmountText"):WaitForObject()
+local damageCurrencyAmountText = script:GetCustomProperty("DamageCurrencyAmountText"):WaitForObject()
+
+local spottingXPAmountText = script:GetCustomProperty("SpottingXPAmountText"):WaitForObject()
+local spottingCurrencyAmountText = script:GetCustomProperty("SpottingCurrencyAmountText"):WaitForObject()
+
 local showXPPanel = script:GetCustomProperty("ShowXPPanel"):WaitForObject()
 local XPEntry = script:GetCustomProperty("XPEntry")
 local RankEntry = script:GetCustomProperty("RankEntry")
@@ -186,6 +192,12 @@ function StateSTART(manager, propertyName)
 		survivalXPAmountText.text = ""
 		survivalCurrencyAmountText.text = ""
 		
+		damageXPAmountText.text = ""
+		damageCurrencyAmountText.text = ""
+		
+		spottingXPAmountText.text = ""
+		spottingCurrencyAmountText.text = ""
+		
 		totalXPAmountText.text = ""
 		totalCurrencyAmountText.text = ""
 		
@@ -268,6 +280,9 @@ function ShowStatisticsAnimation()
 		baseText.text = "Draw Earnings: "		
 		
 	end
+	
+	local damageBonus = localPlayer:GetResource("DamageTracker")
+	local spottingBonus = localPlayer:GetResource("SpottingTracker")
 
 	RollUpNumberText(baseXPAmountText, baseXP, baseCurrencyAmountText, baseCurrency)
 	
@@ -275,6 +290,10 @@ function ShowStatisticsAnimation()
 	
 	RollUpNumberText(survivalXPAmountText, math.floor(survivalXPValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)), survivalCurrencyAmountText, math.floor(survivalCurrencyValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)))
 
+	RollUpNumberText(damageXPAmountText, damageBonus, damageCurrencyAmountText, damageBonus)
+	
+	RollUpNumberText(spottingXPAmountText, spottingBonus, spottingCurrencyAmountText, spottingBonus) 
+	
 	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
 	
 	Events.Broadcast("SHOW_NEMESIS")

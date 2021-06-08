@@ -5716,6 +5716,30 @@ Objects {
         SelfId: 15833663908560318807
       }
     }
+    Overrides {
+      Name: "cs:DamageXPAmountText"
+      ObjectReference {
+        SelfId: 13262787871627078616
+      }
+    }
+    Overrides {
+      Name: "cs:DamageCurrencyAmountText"
+      ObjectReference {
+        SelfId: 3818156307944354897
+      }
+    }
+    Overrides {
+      Name: "cs:SpottingXPAmountText"
+      ObjectReference {
+        SelfId: 10607978142808488845
+      }
+    }
+    Overrides {
+      Name: "cs:SpottingCurrencyAmountText"
+      ObjectReference {
+        SelfId: 10665609530081517051
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55647,7 +55671,6 @@ Objects {
       }
     }
     Text {
-      Label: "2.98s"
       Color {
         R: 1
         G: 1

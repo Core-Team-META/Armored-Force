@@ -232,13 +232,13 @@ Assets {
           Overrides {
             Name: "cs:DefaultChassis"
             AssetReference {
-              Id: 4792894603005875016
+              Id: 6019478368473772471
             }
           }
           Overrides {
             Name: "cs:UpgradedChassis"
             AssetReference {
-              Id: 665104530983257129
+              Id: 5942818711862363909
             }
           }
           Overrides {
