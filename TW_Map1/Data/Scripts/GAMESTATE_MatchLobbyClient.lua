@@ -12,23 +12,26 @@ local equipTankScrollPanel = script:GetCustomProperty("EquipTankScrollPanel"):Wa
 
 local returnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject()
 
+local lobbyTable = script:GetCustomProperty("LobbyTable"):WaitForObject()
+local lobbyTableEntryTemplate = script:GetCustomProperty("LobbyTableEntryTemplate")
+
 local Y_OFFSET = 60
-
 local timerTask = nil
-
 local currentTime = 0
 
 local localPlayer = Game.GetLocalPlayer()
 
 local bindingListener = nil
-
 local tankEquipToggle = false
-
 local switchInProgress = false
+
+local tableChangeInProgress = false
+local tableEntries = {}
 
 function Initialize()
 
 	equipTankPanel.isEnabled = false
+	UpdateTable(nil)
 	
 end
 
@@ -106,6 +109,54 @@ function CountdownTask()
 		
 	end
 		
+end
+
+function OnLeft(player)
+	UpdateTable(player)
+end
+
+function UpdateTable(exclude)
+
+	local allPlayers = nil
+	
+	if exclude then
+		allPlayers = Game.GetPlayers({ignorePlayers = exclude})
+		tableEntries[#tableEntries]:Destroy()
+		table.remove(tableEntries)
+	else 
+		allPlayers = Game.GetPlayers()
+	end
+	
+	while tableChangeInProgress do
+		Task.Wait()
+	end
+	
+	tableChangeInProgress = true
+	
+	for x, p in ipairs(allPlayers) do
+		if x > #tableEntries then
+			local entry = World.SpawnAsset(lobbyTableEntryTemplate, {parent = lobbyTable})
+			entry.x = 0
+			entry.y = 30 * (x - 1)
+			
+			table.insert(tableEntries, entry)
+		end
+		
+		if Object.IsValid(tableEntries[x]) and Object.IsValid(p) then
+			local playerName = tableEntries[x]:GetCustomProperty("User"):WaitForObject()
+			local tankName = tableEntries[x]:GetCustomProperty("Tank"):WaitForObject()
+			
+			playerName.text = p.name
+			if p.clientUserData.currentTankData then
+				tankName.text = p.clientUserData.currentTankData.name
+			else 
+				tankName.text = ""
+			end
+		end
+	end
+	
+	tableChangeInProgress = false
+
 end
 
 function ToggleEquipTankUI(player, binding)
@@ -195,7 +246,6 @@ end
 function ReturnToTheGarage()
 
 	returnToGarage.isInteractable = false
-
 	ReliableEvents.BroadcastToServer("SEND_TO_GARAGE")
 
 end
@@ -203,8 +253,9 @@ end
 Initialize()
 
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
-
 StateSTART(mainGameStateManager, "GameState")
 
+Game.playerLeftEvent:Connect(OnLeft)
+Events.Connect("EquippedTankDataSet", UpdateTable)
 Events.Connect("TankClientDataSet", LoadEquippableTanks)
 returnToGarage.clickedEvent:Connect(ReturnToTheGarage)

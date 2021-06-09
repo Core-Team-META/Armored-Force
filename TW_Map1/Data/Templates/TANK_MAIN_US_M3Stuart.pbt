@@ -117,6 +117,10 @@ Assets {
             Name: "cs:TierValue"
             Int: 1
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "M3 Stuart"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

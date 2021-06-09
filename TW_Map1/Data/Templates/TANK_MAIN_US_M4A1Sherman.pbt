@@ -109,6 +109,10 @@ Assets {
             Name: "cs:Type"
             String: "Medium"
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "M4A1 Sherman"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
