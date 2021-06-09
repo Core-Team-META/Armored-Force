@@ -1,13 +1,4 @@
 Assets {
-  Id: 17828656623802134300
-  Name: "Icon Skull"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Skull"
-  }
-}
-Assets {
   Id: 17289448223043935888
   Name: "UI Gradient Rectangular 001"
   PlatformAssetType: 9
