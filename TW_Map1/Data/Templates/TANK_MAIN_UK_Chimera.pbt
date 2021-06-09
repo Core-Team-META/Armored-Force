@@ -125,6 +125,10 @@ Assets {
               SubObjectId: 13295890404100588137
             }
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Chimera"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

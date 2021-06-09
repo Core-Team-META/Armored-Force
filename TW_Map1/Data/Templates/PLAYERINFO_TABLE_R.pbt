@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13770813738613282765
+        ParentId: 7985072853598804521
         ChildIds: 879568769993778608
         ChildIds: 14031952795825731487
         ChildIds: 8084363321710577171
@@ -25,6 +25,44 @@ Assets {
         ChildIds: 10261710555233332336
         ChildIds: 14174513267888907979
         ChildIds: 1413892752573863707
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:User"
+            ObjectReference {
+              SubObjectId: 16404786981084039567
+            }
+          }
+          Overrides {
+            Name: "cs:Tank"
+            ObjectReference {
+              SubObjectId: 8624367595292332299
+            }
+          }
+          Overrides {
+            Name: "cs:Health"
+            ObjectReference {
+              SubObjectId: 10261710555233332336
+            }
+          }
+          Overrides {
+            Name: "cs:HealthDamaged"
+            ObjectReference {
+              SubObjectId: 14174513267888907979
+            }
+          }
+          Overrides {
+            Name: "cs:DeathIcon"
+            ObjectReference {
+              SubObjectId: 1413892752573863707
+            }
+          }
+          Overrides {
+            Name: "cs:DeathBackground"
+            ObjectReference {
+              SubObjectId: 8084363321710577171
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -449,7 +487,7 @@ Assets {
         }
         Control {
           Width: 1
-          Height: 395
+          Height: 330
           UIX: -1.21154785
           UIY: 29
           RotationAngle: -90
@@ -518,9 +556,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 100
+          Width: 60
           Height: 14
-          UIX: 30
+          UIX: 25
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -579,9 +617,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 100
+          Width: 60
           Height: 14
-          UIX: 30
+          UIX: 25
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -642,7 +680,7 @@ Assets {
         Control {
           Width: 24
           Height: 22
-          UIX: 69
+          UIX: 42
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

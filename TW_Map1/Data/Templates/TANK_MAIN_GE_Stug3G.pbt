@@ -125,6 +125,10 @@ Assets {
             Name: "cs:DamagePerShot"
             Int: 200
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Stug III"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

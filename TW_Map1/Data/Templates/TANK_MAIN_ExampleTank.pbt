@@ -85,6 +85,10 @@ Assets {
             Name: "cs:HorizontalCannonAngles"
             Int: 0
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Chaffee"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
