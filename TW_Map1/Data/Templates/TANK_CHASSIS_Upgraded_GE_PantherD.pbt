@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_GE_PantherD"
         Transform {
           Scale {
-            X: 1.15
+            X: 1
             Y: 1
             Z: 1
           }
@@ -59,7 +59,7 @@ Assets {
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1031
-          TireFriction: 10
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 20
           }

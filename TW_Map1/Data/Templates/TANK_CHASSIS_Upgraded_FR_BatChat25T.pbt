@@ -42,7 +42,7 @@ Assets {
           }
           Mass: 28000
           PhysicsBodyScale {
-            X: 5.7
+            X: 8
             Y: 3.3
             Z: 1
           }
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -30
-            Z: 90
+            Z: 70
           }
           MaxSpeed: 1725
           AccelerationRate: 400
@@ -65,19 +65,19 @@ Assets {
           }
           GravityScale: 1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 140
-            RightTreadRadius: 70
-            RightTreadWidth: 140
+            LeftTreadRadius: 50
+            LeftTreadWidth: 110
+            RightTreadRadius: 50
+            RightTreadWidth: 110
             LeftTreadOffset {
               X: -10
               Y: -250
-              Z: 70
+              Z: 50
             }
             RightTreadOffset {
               X: -10
               Y: 250
-              Z: 70
+              Z: 50
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

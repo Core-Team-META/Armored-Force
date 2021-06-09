@@ -40,9 +40,9 @@ Assets {
           }
           Camera {
           }
-          Mass: 70000
+          Mass: 50000
           PhysicsBodyScale {
-            X: 6
+            X: 8
             Y: 3.2
             Z: 1.3
           }
@@ -65,19 +65,19 @@ Assets {
           }
           GravityScale: 1
           Tank {
-            LeftTreadRadius: 80
+            LeftTreadRadius: 50
             LeftTreadWidth: 135
-            RightTreadRadius: 80
+            RightTreadRadius: 50
             RightTreadWidth: 135
             LeftTreadOffset {
               X: -30
               Y: -220
-              Z: 80
+              Z: 50
             }
             RightTreadOffset {
               X: -30
               Y: 220
-              Z: 80
+              Z: 50
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

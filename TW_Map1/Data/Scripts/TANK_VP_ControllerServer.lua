@@ -132,7 +132,7 @@ function AssignDriver(newDriver)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
 	
-	Task.Wait(0.1)
+	Task.Wait(0.5)
 	
 	chassis:SetDriver(driver)
 	
@@ -395,7 +395,6 @@ function OnArmorHit(trigger, other)
 		}
 		COMBAT.ApplyDamage(attackData)
 		
-		--print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition())
 	end
 	
@@ -479,16 +478,17 @@ function Tick()
 		
 		if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
 			if not flipping then
-				print("attempting flip")
 				flipping = true
 				Task.Spawn(FlipTank, 0)
 			end
 		end
 		
+		--[[
 		if Object.IsValid(chassis) and not flipping then
-			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.25)
+			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.5)
 		end
-		 
+		--]]
+		
 		if driver:IsBindingPressed("ability_extra_21") then -- W
 			script:SetNetworkedCustomProperty("WheelSpeedMultiplier", 1)
 		elseif driver:IsBindingPressed("ability_extra_31") then -- S

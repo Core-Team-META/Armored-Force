@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_GE_Leopard"
         Transform {
           Scale {
-            X: 1.05
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,11 +40,11 @@ Assets {
           }
           Camera {
           }
-          Mass: 22000
+          Mass: 32000
           PhysicsBodyScale {
-            X: 4
+            X: 7
             Y: 3
-            Z: 1
+            Z: 1.2
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,7 +52,8 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            Z: 105
+            X: -50
+            Z: 50
           }
           MaxSpeed: 1350
           AccelerationRate: 400
@@ -64,19 +65,19 @@ Assets {
           }
           GravityScale: 1
           Tank {
-            LeftTreadRadius: 70
+            LeftTreadRadius: 40
             LeftTreadWidth: 100
-            RightTreadRadius: 70
+            RightTreadRadius: 40
             RightTreadWidth: 100
             LeftTreadOffset {
-              X: -20
+              X: -40
               Y: -200
-              Z: 65
+              Z: 40
             }
             RightTreadOffset {
-              X: -20
+              X: -40
               Y: 200
-              Z: 65
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_UK_Comet"
         Transform {
           Scale {
-            X: 1.23418033
+            X: 1
             Y: 1
             Z: 1
           }
@@ -42,8 +42,8 @@ Assets {
           }
           Mass: 32000
           PhysicsBodyScale {
-            X: 4.5
-            Y: 2.56056309
+            X: 8
+            Y: 4
             Z: 1
           }
           IsDriverHidden: true
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -80
-            Z: 90
+            Z: 40
           }
           MaxSpeed: 1150
           AccelerationRate: 400
@@ -65,19 +65,19 @@ Assets {
           }
           GravityScale: 1
           Tank {
-            LeftTreadRadius: 70
+            LeftTreadRadius: 40
             LeftTreadWidth: 70
-            RightTreadRadius: 70
+            RightTreadRadius: 40
             RightTreadWidth: 70
             LeftTreadOffset {
               X: -20
               Y: -225
-              Z: 60
+              Z: 40
             }
             RightTreadOffset {
               X: -20
               Y: 225
-              Z: 60
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

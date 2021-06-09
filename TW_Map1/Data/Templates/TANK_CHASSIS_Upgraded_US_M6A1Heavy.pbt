@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_US_M6A1Heavy"
         Transform {
           Scale {
-            X: 1.4
+            X: 1
             Y: 1
             Z: 1
           }
@@ -59,7 +59,7 @@ Assets {
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 25
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 20
           }

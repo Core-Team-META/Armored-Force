@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_GER_Panzer3"
         Transform {
           Scale {
-            X: 1.1
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 20000
+          Mass: 30000
           PhysicsBodyScale {
             X: 5
             Y: 3.5

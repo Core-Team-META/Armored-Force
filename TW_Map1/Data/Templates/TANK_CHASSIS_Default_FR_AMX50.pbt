@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 68000
+          Mass: 48000
           PhysicsBodyScale {
             X: 7
             Y: 3.5
@@ -59,7 +59,7 @@ Assets {
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 25
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 20
           }
