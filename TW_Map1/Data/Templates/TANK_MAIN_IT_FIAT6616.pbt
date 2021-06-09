@@ -129,6 +129,10 @@ Assets {
             Name: "cs:AllowHoldDownFiring"
             Bool: true
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "FIAT 6616"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
