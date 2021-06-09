@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_GE_Tiger2"
         Transform {
           Scale {
-            X: 1.5
+            X: 1
             Y: 1
             Z: 1
           }
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 70000
           PhysicsBodyScale {
-            X: 5
+            X: 8
             Y: 3.5
-            Z: 1.2
+            Z: 1.3
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,37 +52,37 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
+            X: -50
             Z: 105
           }
           MaxSpeed: 1050
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 713
-          TireFriction: 10
+          TireFriction: 20
           CenterOfMassOFfset {
             Z: 20
           }
           GravityScale: 1
           Tank {
-            LeftTreadRadius: 55
-            LeftTreadWidth: 110
-            RightTreadRadius: 55
-            RightTreadWidth: 110
+            LeftTreadRadius: 40
+            LeftTreadWidth: 100
+            RightTreadRadius: 40
+            RightTreadWidth: 100
             LeftTreadOffset {
-              X: -20
+              X: -40
               Y: -255
-              Z: 57
+              Z: 40
             }
             RightTreadOffset {
-              X: -20
+              X: -40
               Y: 255
-              Z: 57
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 60
+            TurnSpeed: 70
           }
         }
       }

@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_US_M10Wolverine"
         Transform {
           Scale {
-            X: 1.1900475
+            X: 1
             Y: 1
             Z: 1
           }

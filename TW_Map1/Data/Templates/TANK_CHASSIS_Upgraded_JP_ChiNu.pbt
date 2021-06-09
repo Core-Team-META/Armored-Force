@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_JP_ChiNu"
         Transform {
           Scale {
-            X: 1.15
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 19000
+          Mass: 29000
           PhysicsBodyScale {
             X: 4
             Y: 3

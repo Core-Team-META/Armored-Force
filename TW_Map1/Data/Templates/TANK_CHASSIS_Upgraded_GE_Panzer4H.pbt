@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_GE_Panzer4H"
         Transform {
           Scale {
-            X: 1.15
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,10 +40,10 @@ Assets {
           }
           Camera {
           }
-          Mass: 27000
+          Mass: 37000
           PhysicsBodyScale {
-            X: 4.2
-            Y: 3
+            X: 7
+            Y: 4.5
             Z: 1.2
           }
           IsDriverHidden: true
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -50
-            Z: 105
+            Z: 50
           }
           MaxSpeed: 1100
           AccelerationRate: 400
@@ -65,19 +65,19 @@ Assets {
           }
           GravityScale: 1
           Tank {
-            LeftTreadRadius: 67
+            LeftTreadRadius: 40
             LeftTreadWidth: 70
-            RightTreadRadius: 67
+            RightTreadRadius: 40
             RightTreadWidth: 70
             LeftTreadOffset {
               X: -30
               Y: -200
-              Z: 65
+              Z: 40
             }
             RightTreadOffset {
               X: -30
               Y: 200
-              Z: 65
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

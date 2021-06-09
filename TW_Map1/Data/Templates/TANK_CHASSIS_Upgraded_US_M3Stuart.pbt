@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_US_M3Stuart"
         Transform {
           Scale {
-            X: 0.862312376
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,11 +40,11 @@ Assets {
           }
           Camera {
           }
-          Mass: 16000
+          Mass: 26000
           PhysicsBodyScale {
-            X: 4.04570532
+            X: 5.5
             Y: 2.5
-            Z: 0.90697521
+            Z: 1
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            Z: 73.3392639
+            Z: 50
           }
           MaxSpeed: 1700
           AccelerationRate: 400
@@ -64,19 +64,19 @@ Assets {
           }
           GravityScale: 1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 70
-            RightTreadRadius: 70
-            RightTreadWidth: 70
+            LeftTreadRadius: 30
+            LeftTreadWidth: 50
+            RightTreadRadius: 30
+            RightTreadWidth: 50
             LeftTreadOffset {
               X: 20
               Y: -160
-              Z: 65
+              Z: 30
             }
             RightTreadOffset {
               X: 20
               Y: 160
-              Z: 65
+              Z: 30
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
