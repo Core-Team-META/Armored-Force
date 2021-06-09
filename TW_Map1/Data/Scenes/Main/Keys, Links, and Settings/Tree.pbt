@@ -18,7 +18,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MatchMode"
-      String: "LastTeamStanding"
+      String: "Frontline"
     }
     Overrides {
       Name: "cs:LobbyCountdown"
