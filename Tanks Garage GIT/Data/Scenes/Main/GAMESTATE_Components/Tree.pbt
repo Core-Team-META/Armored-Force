@@ -8234,16 +8234,17 @@ Objects {
   Name: "Game Portal"
   Transform {
     Location {
-      X: -419.252167
-      Y: 0.249206543
+      X: -725.340942
+      Y: -318.806519
+      Z: 152.297424
     }
     Rotation {
       Yaw: 180
     }
     Scale {
-      X: 0.1
-      Y: 0.1
-      Z: 0.1
+      X: 0.04589203
+      Y: 0.04589203
+      Z: 0.04589203
     }
   }
   ParentId: 17812715862257263058
@@ -10188,6 +10189,30 @@ Objects {
       Name: "cs:DisplayHandler"
       ObjectReference {
         SelfId: 13955950796283986913
+      }
+    }
+    Overrides {
+      Name: "cs:AddXPButton"
+      ObjectReference {
+        SelfId: 5810249496914987554
+      }
+    }
+    Overrides {
+      Name: "cs:AddSilverButton"
+      ObjectReference {
+        SelfId: 9355645120957343728
+      }
+    }
+    Overrides {
+      Name: "cs:TradeXPButton"
+      ObjectReference {
+        SelfId: 6326274094489446775
+      }
+    }
+    Overrides {
+      Name: "cs:AddGoldButton"
+      ObjectReference {
+        SelfId: 2639302693057997766
       }
     }
   }

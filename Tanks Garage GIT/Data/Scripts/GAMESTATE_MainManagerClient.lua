@@ -1,7 +1,10 @@
 local mainManagerServer = script:GetCustomProperty("GAMESTATE_MainManagerServer"):WaitForObject()
 local mainHUD = script:GetCustomProperty("MainHUD"):WaitForObject()
 local displayHandler = script:GetCustomProperty("DisplayHandler"):WaitForObject()
-
+local AddXPButton = script:GetCustomProperty("AddXPButton"):WaitForObject()
+local AddSilverButton = script:GetCustomProperty("AddSilverButton"):WaitForObject()
+local TradeXPButton = script:GetCustomProperty("TradeXPButton"):WaitForObject()
+local AddGoldButton = script:GetCustomProperty("AddGoldButton"):WaitForObject()
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -57,7 +60,15 @@ function Tick()
 
 end
 
+function GoToPremiumShop()
+	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1])
+end
+
 UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
 
 mainManagerServer.networkedPropertyChangedEvent:Connect(OnServerStateChange)
+AddXPButton.clickedEvent:Connect(GoToPremiumShop)
+TradeXPButton.clickedEvent:Connect(GoToPremiumShop)
+AddSilverButton.clickedEvent:Connect(GoToPremiumShop)
+AddGoldButton.clickedEvent:Connect(GoToPremiumShop)
