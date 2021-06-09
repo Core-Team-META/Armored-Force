@@ -117,6 +117,10 @@ Assets {
             Name: "cs:Type"
             String: "Medium"
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Chi-Nu"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

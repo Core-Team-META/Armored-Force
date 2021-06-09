@@ -113,6 +113,10 @@ Assets {
             Name: "cs:MaxElevationAngle"
             Int: 20
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Panzer IV H"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

@@ -117,6 +117,10 @@ Assets {
         String: "02"
       }
       Overrides {
+        Name: "cs:Name"
+        String: ""
+      }
+      Overrides {
         Name: "cs:Type"
         String: "Light"
       }
