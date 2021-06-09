@@ -25,7 +25,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33,7 +33,8 @@ Assets {
         Control {
           Width: 436
           Height: 454
-          UIY: 200
+          UIX: -50
+          UIY: -500
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -45,12 +46,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topcenter"
+                Value: "mc:euianchor:middleright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topcenter"
+                Value: "mc:euianchor:middleright"
               }
             }
           }
@@ -151,7 +152,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               A: 1
@@ -210,7 +211,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               A: 1
@@ -269,7 +270,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               A: 1
@@ -328,7 +329,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               A: 1
@@ -387,7 +388,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               A: 1
@@ -446,7 +447,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               A: 1
@@ -506,7 +507,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               A: 1
@@ -564,7 +565,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               R: 0.00402471703
@@ -797,7 +798,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               R: 0.0127019985
@@ -858,7 +859,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               A: 0.603000045
@@ -1027,7 +1028,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               R: 1
@@ -1339,7 +1340,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1886,7 +1887,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 12478180938234886174
+              Id: 2604353830693238371
             }
             Color {
               R: 0.000888889
@@ -1949,7 +1950,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               R: 1
@@ -2012,7 +2013,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               A: 1
@@ -2070,7 +2071,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               R: 0.000888889
@@ -2457,7 +2458,7 @@ Assets {
           }
           UseParentWidth: true
           Text {
-            Label: "Tank specific ReasearchPoints:"
+            Label: "Tank specific XP:"
             Color {
               R: 0.420000017
               G: 0.420000017
@@ -2611,7 +2612,7 @@ Assets {
           }
           UseParentWidth: true
           Text {
-            Label: "Play previous Tanks to gain Research Points for this Tank."
+            Label: "Play previous Tanks to gain XP for this Tank."
             Color {
               R: 0.420000017
               G: 0.420000017
@@ -2978,7 +2979,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 7957816731913452808
+              Id: 14060330023043759337
             }
             Color {
               R: 0.00322018936
@@ -3201,21 +3202,21 @@ Assets {
       }
     }
     Assets {
-      Id: 12478180938234886174
-      Name: "BG Highlighted 002"
+      Id: 2604353830693238371
+      Name: "BG Highlighted 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundHighlighted_019"
+        AssetId: "BackgroundHighlighted_020"
       }
     }
     Assets {
-      Id: 7957816731913452808
-      Name: "BG Flat 002"
+      Id: 14060330023043759337
+      Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
@@ -3255,21 +3256,30 @@ Assets {
       }
     }
     Assets {
+      Id: 7957816731913452808
+      Name: "BG Flat 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_019"
+      }
+    }
+    Assets {
+      Id: 12478180938234886174
+      Name: "BG Highlighted 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundHighlighted_019"
+      }
+    }
+    Assets {
       Id: 4913010023776999523
       Name: "Baloo 2"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "Baloo2Regular_ref"
-      }
-    }
-    Assets {
-      Id: 14060330023043759337
-      Name: "BG Flat 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
       }
     }
     PrimaryAssetId {

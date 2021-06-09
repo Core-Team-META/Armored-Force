@@ -701,7 +701,7 @@ end
 
 function ShowNotEnoughRPMessage()
 	-- TODO: Show a better message to the user
-	UI.PrintToScreen("You do not have enough Research Points.")
+	UI.PrintToScreen("You do not have enough XP.")
 end
 
 ----------------------------------------------------------------------------------------------
@@ -1357,12 +1357,12 @@ function PopulateLockedTankCard(tankData)
 		if(prereqs[1]) then
 			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").text = tostring(prereqs[1].rp) .. " / " .. tostring(tankData.researchCost)
 			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").progress = prereqs[1].rp / tankData.researchCost
-			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = prereqs[1].name .. " Research Points"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = prereqs[1].name .. " XP"
 			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_ON
 			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_ON
 			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_ON
 			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").visibility = Visibility.FORCE_ON
-			LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Play previous Tanks to gain Research Points for this tank."
+			LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Play previous Tanks to gain XP for this tank."
 		end
 	else
 		LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_OFF
