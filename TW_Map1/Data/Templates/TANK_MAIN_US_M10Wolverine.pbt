@@ -117,6 +117,10 @@ Assets {
             Name: "cs:MaxElevationAngle"
             Int: 30
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "M10 Wolverine"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

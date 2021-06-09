@@ -121,6 +121,10 @@ Assets {
             Name: "cs:TierValue"
             Int: 3
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "M6A1"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
