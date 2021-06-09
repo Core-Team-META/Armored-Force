@@ -15,13 +15,27 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6621903291285640027
+        ParentId: 14247372791690553398
         ChildIds: 16210896634558714102
         ChildIds: 8131749555691981957
         ChildIds: 4874039113657706725
         ChildIds: 16915104379361408190
         ChildIds: 14579612368632492686
         ChildIds: 16353198143129610232
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:User"
+            ObjectReference {
+              SubObjectId: 16915104379361408190
+            }
+          }
+          Overrides {
+            Name: "cs:Tank"
+            ObjectReference {
+              SubObjectId: 14579612368632492686
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
