@@ -8314,7 +8314,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "85309f/tanksportal-images1"
+      String: "ef75e3/tankspremium-images"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -8342,7 +8342,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.2
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -8362,7 +8362,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: -0.02
     }
   }
   Collidable_v2 {
