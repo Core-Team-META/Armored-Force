@@ -73,7 +73,7 @@ function RetrieveData()
 	            RANK_PRIMARY.text = UTIL_API.GetRankData(LOCAL_PLAYER)
 	            RANK_SECONDARY.text = RANK_PRIMARY.text
 	            -- Using this text box as an XP display for now
-	            CHOSEN_TANKNAME.text = "XP " .. tostring(UTIL_API.GetXPValue(LOCAL_PLAYER)) .. " / " .. tostring(UTIL_API.GetXPToNextRank(LOCAL_PLAYER))
+	            CHOSEN_TANKNAME.text = "TOTAL XP: " .. tostring(UTIL_API.GetXPValue(LOCAL_PLAYER)) .. " / " .. tostring(UTIL_API.GetXPToNextRank(LOCAL_PLAYER))
 	            return
 	        end
 	    end
