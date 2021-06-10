@@ -172,12 +172,15 @@ function ToggleThisComponent(requestedPlayerState)
 	if requestedPlayerState == thisComponent then
 		Task.Wait(2.5)
 		
-		if savedState ~= thisComponent or displayTanks.visibility == Visibility.FORCE_ON then
+		if savedState ~= thisComponent then
+		print("Clearing")
 			LOCAL_PLAYER:ClearOverrideCamera()
 			return
 		end
 		
+		print("Override")
 		LOCAL_PLAYER:SetOverrideCamera(overrideCamera)
+		
 		displayTanks.visibility = Visibility.FORCE_ON
 		OpenUI()
 	else

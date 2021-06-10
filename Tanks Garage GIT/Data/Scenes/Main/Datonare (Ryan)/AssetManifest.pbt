@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14229011836246835513
+  Name: "Game Portal"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_webportal"
+  }
+}
+Assets {
   Id: 11619439792683854596
   Name: "Frame Outline Thin 001"
   PlatformAssetType: 9
