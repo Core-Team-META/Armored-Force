@@ -31,7 +31,6 @@ local driver = nil
 local tankSet = false
 local saluteOverride = false
 local animateListener = nil
-local saluteListener = nil
 local destroyedListener = nil
 
 function GetDriver()
@@ -177,12 +176,32 @@ end
 
 function PerformSalute()
 
+	local gameStateManager = World.FindObjectByName("GAMESTATE_MainGameStateManagerServer")
+	
+	if not Object.IsValid(gameStateManager) then
+		return
+	end
+	
+	local currentState = gameStateManager:GetCustomProperty("GameState")
+	
+	if currentState ~= "VICTORY_STATE" then
+		return
+	end
+
 	local owner = nil
 	
-	for _, p in ipairs(Game.GetPlayers()) do
-		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
-			owner = p
+	while not owner do
+		local tankOwner = tankControllerServer:GetCustomProperty("DriverID")
+		
+		if tankOwner then
+			for _, p in ipairs(Game.GetPlayers()) do
+				if p.id == tankOwner then
+					owner = p
+				end
+			end
 		end
+		
+		Task.Wait()
 	end
 	
 	tankBodyClient = World.SpawnAsset(GetSkin(owner), {parent = script})
@@ -202,21 +221,21 @@ function PerformSalute()
 	local verticalLimit = tankControllerServer:GetCustomProperty("MaxElevationAngle")
 	local horizontalLimit = tankControllerServer:GetCustomProperty("HorizontalCannonAngles")
 		
-	Task.Wait(0.5)
+	Task.Wait(1)
 	
 	if verticalLimit < 15 then
 		if horizontalLimit > 0 then
-			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, -horizontalLimit), 1, true)
+			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, -horizontalLimit + cannonClient:GetWorldRotation().z), 1)
 		else 
-			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, 0), 1, true)
-			turretClient:RotateTo(Rotation.New(0, 0, -25), 1, true)
+			cannonClient:RotateTo(Rotation.New(0, verticalLimit, 0), 1)
+			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetWorldRotation().z), 1)
 		end
 	else 
 		if horizontalLimit > 0 then
-			cannonClient:RotateTo(Rotation.New(0, 15, -horizontalLimit), 1, true)
+			cannonClient:RotateTo(Rotation.New(0, 15, -horizontalLimit + cannonClient:GetWorldRotation().z), 1)
 		else 
-			cannonClient:RotateTo(Rotation.New(0, 15, 0), 1, true)
-			turretClient:RotateTo(Rotation.New(0, 0, -25), 1, true)
+			cannonClient:RotateTo(Rotation.New(0, 15, 0), 1)
+			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetWorldRotation().z), 1)
 		end
 	end
 	
@@ -321,5 +340,5 @@ function Tick()
 end
 
 animateListener = Events.Connect("ANIMATE_FIRING", FiringAnimation)
-saluteListener = Events.Connect("VICTORY_SALUTE", PerformSalute)
 destroyedListener = script.destroyEvent:Connect(OnDestroy)
+PerformSalute()

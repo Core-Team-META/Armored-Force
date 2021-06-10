@@ -22,7 +22,7 @@ Objects {
     }
     Overrides {
       Name: "cs:LobbyCountdown"
-      Int: 45
+      Int: 30
     }
     Overrides {
       Name: "cs:MatchMaxDuration"

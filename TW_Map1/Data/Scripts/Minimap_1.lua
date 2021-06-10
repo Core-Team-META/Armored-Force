@@ -36,6 +36,8 @@ local worldShapes = ROOT:FindDescendantsByType("StaticMesh")
 local worldTexts = ROOT:FindDescendantsByType("WorldText")
 
 local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
+local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+local minimapComponents = script:GetCustomProperty("MinimapComponents"):WaitForObject()
 
 function CheckSpotting(player)
 	
@@ -307,6 +309,22 @@ function GetIndicatorForPlayer(player)
 	
 end
 
+
+function StateSTART(manager, propertyName)
+
+	if propertyName ~= "GameState" then
+		return
+	end
+	
+	if mainGameStateManager:GetCustomProperty("GameState") == "CARD_STATE" then
+		minimapComponents.visibility = Visibility.FORCE_OFF
+	end
+		
+end
+
+
+
+mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 
 
 

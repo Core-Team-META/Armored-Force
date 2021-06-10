@@ -35,16 +35,17 @@ Objects {
       EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
+          Value: "mc:echatmode:teamandall"
         }
         ChatPosition {
-          Y: -40
+          X: -350
         }
         ChatSize {
           X: 450
           Y: 250
         }
         ChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:center"
+          Value: "mc:ecorehorizontalalign:right"
         }
         ChatVerticalAlignment {
           Value: "mc:ecoreverticalalign:bottom"

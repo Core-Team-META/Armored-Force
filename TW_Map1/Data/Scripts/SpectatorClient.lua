@@ -27,6 +27,8 @@ local settings = script:GetCustomProperty("Settings"):WaitForObject()
 local GAMESTATE_MainGameStateManagerServer = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local Leave = script:GetCustomProperty("Leave"):WaitForObject()
 local Close = script:GetCustomProperty("Close"):WaitForObject()
+local spectatorUIComponents = script:GetCustomProperty("SpectatorUIComponents"):WaitForObject()
+
 
 local LocalPlayer = Game.GetLocalPlayer()
 
@@ -403,6 +405,22 @@ function Tick()
 	end
 end
 
+function OnStateChanged(manager, propertyName)
+
+	if propertyName ~= "GameState" then
+	
+		return
+		
+	end
+	
+	local newState = manager:GetCustomProperty("GameState")
+
+	if newState == "VICTORY_STATE" then
+		spectatorUIComponents.visibility = Visibility.FORCE_OFF
+	end
+	
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 --	INITIALIZATION
 ------------------------------------------------------------------------------------------------------------------------
@@ -412,3 +430,4 @@ LocalPlayer.bindingPressedEvent:Connect(OnBindingPressed)
 LocalPlayer.bindingReleasedEvent:Connect(OnBindingReleased)
 Leave.clickedEvent:Connect(LeaveEarly)
 Close.clickedEvent:Connect(CloseLeaveEarly)
+GAMESTATE_MainGameStateManagerServer.networkedPropertyChangedEvent:Connect(OnStateChanged)

@@ -43,6 +43,8 @@ function OnStateChanged(manager, propertyName)
 
 	if newState == "VICTORY_STATE" and deactivated then
 	
+		Task.Wait(1)
+	
 		Activate()
 		
 		deactivated = false
