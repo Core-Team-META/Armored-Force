@@ -3856,7 +3856,6 @@ Objects {
     }
     FieldOfView: 90
     ViewWidth: 1200
-    IsOrthographic: true
     RotationMode {
       Value: "mc:erotationmode:default"
     }

@@ -26,9 +26,8 @@ function CameraTransition(newState)
 			ToggleClickDrag(selectedCamera)
 			
 			oldCamera = selectedCamera
-		
-			localPlayer:SetOverrideCamera(selectedCamera)
 			
+			localPlayer:SetOverrideCamera(selectedCamera)
 		end
 		
 		return

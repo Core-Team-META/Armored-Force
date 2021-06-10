@@ -8184,6 +8184,7 @@ Objects {
   ParentId: 430938123953625846
   ChildIds: 4408893661492794121
   ChildIds: 17812715862257263058
+  ChildIds: 16591706574147490427
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8198,8 +8199,39 @@ Objects {
   }
 }
 Objects {
+  Id: 16591706574147490427
+  Name: "AxisTanksPortalImages"
+  Transform {
+    Location {
+      X: 1317.73242
+      Y: -1.00549316
+    }
+    Rotation {
+      Yaw: -1.02452814e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1916192981161755610
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 17812715862257263058
-  Name: "DisplayTanks"
+  Name: "AlliesTanksPortalImages"
   Transform {
     Location {
       X: 1317.73242
@@ -8214,13 +8246,11 @@ Objects {
     }
   }
   ParentId: 1916192981161755610
-  ChildIds: 14214284827256063865
-  ChildIds: 11263088966867231670
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8230,237 +8260,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11263088966867231670
-  Name: "Game Portal"
-  Transform {
-    Location {
-      X: -725.340942
-      Y: -318.806519
-      Z: 152.297424
-    }
-    Rotation {
-      Yaw: 180
-    }
-    Scale {
-      X: 0.04589203
-      Y: 0.04589203
-      Z: 0.04589203
-    }
-  }
-  ParentId: 17812715862257263058
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Portal Shape"
-      Int: 2
-    }
-    Overrides {
-      Name: "bp:Edge Distance"
-      Float: 0.169120297
-    }
-    Overrides {
-      Name: "bp:Portal Spread"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:View Distortion Amount"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Intersection Distance"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Unlit"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Disable Swirl and Edge"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Mask Range"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Rotation"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Swirl Element Distance"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Edge Distortion"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Use World Capture"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Color Offset A"
-      Float: 0.0261588935
-    }
-    Overrides {
-      Name: "bp:Color Offset B"
-      Float: 0.170215309
-    }
-    Overrides {
-      Name: "bp:Color Offset C"
-      Float: 0.364886165
-    }
-    Overrides {
-      Name: "bp:Intensity Color Blend"
-      Float: 0.325952
-    }
-    Overrides {
-      Name: "bp:Game ID"
-      String: "ef75e3/tankspremium-images"
-    }
-    Overrides {
-      Name: "bp:Screenshot Index"
-      Int: 1
-    }
-    Overrides {
-      Name: "bp:Speed"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Cast Shadows"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Use Radial Mask"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Mask Hardness"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:U Scale"
-      Float: 1.2
-    }
-    Overrides {
-      Name: "bp:Horizontal Bend Amount"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Vertical Bend Amount"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:V Scale"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:V Offset"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:U Offset"
-      Float: -0.02
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 14229011836246835513
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 14214284827256063865
-  Name: "Cube"
-  Transform {
-    Location {
-      X: 672.80896
-      Y: 8.72583
-      Z: 1452.44263
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 14.9000006
-      Z: 8.2
-    }
-  }
-  ParentId: 17812715862257263058
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1309234685084379169
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.444
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 4.444
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
   Id: 4408893661492794121
   Name: "OverrideCamera"
   Transform {
     Location {
+      X: -7.25179577
+      Y: -1.38912487
+      Z: 100
     }
     Rotation {
     }
