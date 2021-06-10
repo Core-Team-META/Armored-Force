@@ -3859,14 +3859,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -289.717285
-            Y: -160.501831
-            Z: -7.56329346
+            X: -289.701904
+            Y: -160.501953
+            Z: -103.271667
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: -0.999998152
+            Y: 0.999998152
+            Z: 0.999998152
           }
         }
       }
@@ -3902,13 +3910,21 @@ Objects {
           Name: "Position"
           Vector {
             X: 297.194092
-            Y: -160.501831
-            Z: -7.56329346
+            Y: -160.501923
+            Z: -103.271133
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.999998152
+            Y: 0.999998152
+            Z: 0.999998152
           }
         }
       }

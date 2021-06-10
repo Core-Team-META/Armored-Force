@@ -7,7 +7,7 @@ Assets {
       RootId: 6132183089281744122
       Objects {
         Id: 6132183089281744122
-        Name: "TANK_CHASSIS_Default_US_M3Stuart"
+        Name: "01TANK_CHASSIS_Default_US_M3Stuart"
         Transform {
           Scale {
             X: 1
@@ -54,7 +54,7 @@ Assets {
           PhysicsBodyOffset {
             Z: 50
           }
-          MaxSpeed: 1450
+          MaxSpeed: 1160
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
