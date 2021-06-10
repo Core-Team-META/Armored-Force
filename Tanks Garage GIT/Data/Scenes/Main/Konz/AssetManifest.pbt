@@ -287,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5150949843251062576
+  Name: "Trophy"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Racing_Icon_010"
+  }
+}
+Assets {
   Id: 4913010023776999523
   Name: "Baloo 2"
   PlatformAssetType: 28
