@@ -1,6 +1,38 @@
 Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
+  Id: 4638002272976236053
+  Name: "TankTest"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4689494391382931675
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TankTest"
+  }
+}
+Objects {
   Id: 9705282421602965738
   Name: "InvisibleStoneHedgeColliders"
   Transform {
@@ -4428,9 +4460,9 @@ Objects {
       Z: 1081.09644
     }
     Rotation {
-      Pitch: -17.0606842
-      Yaw: 156.403564
-      Roll: 7.30313587
+      Pitch: -17.0606689
+      Yaw: -160.063828
+      Roll: 7.30335522
     }
     Scale {
       X: 4.9300971
@@ -6951,9 +6983,9 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15673.0781
-      Y: 9139.73828
-      Z: 980.28186
+      X: -15335.377
+      Y: 8919.63672
+      Z: 983.613953
     }
     Rotation {
       Pitch: 3.86228061
@@ -23843,14 +23875,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -1901.99219
-      Y: 21552.0332
+      X: -1900.05225
+      Y: 21593.7539
       Z: 1505.82983
     }
     Rotation {
-      Pitch: 0.456406862
-      Yaw: -4.57309914
-      Roll: 5.68831205
+      Pitch: 0.0897555128
+      Yaw: -0.899047852
+      Roll: 5.70585966
     }
     Scale {
       X: 4.2236166
@@ -23897,14 +23929,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -1730.70898
-      Y: 21963.9512
+      X: -1742.83691
+      Y: 21944.0195
       Z: 1419.41138
     }
     Rotation {
       Pitch: 5.83966112
       Yaw: -143.517731
-      Roll: -1.5373832
+      Roll: -1.53738403
     }
     Scale {
       X: 4.2236166
