@@ -1,20 +1,662 @@
 Name: "InvisibleOneWayWaterColliders"
 RootId: 8864662057286598159
 Objects {
-  Id: 15151304785851406027
+  Id: 14975865655014354109
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -24234.0781
-      Y: -10097.3936
-      Z: -294.999908
+      X: 2617.65625
+      Y: 22667.3242
+      Z: -236.54834
     }
     Rotation {
-      Yaw: -160.650177
-      Roll: 90
+      Pitch: 1.81883144
+      Yaw: -72.9810181
+      Roll: 99.8865585
     }
     Scale {
-      X: 18
+      X: 12.4869947
+      Y: 5.9999938
+      Z: 1.00000811
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13576015539634231981
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -25413.9531
+      Y: -9261.21582
+      Z: -257.36554
+    }
+    Rotation {
+      Yaw: 59.1518784
+      Roll: 99.6149
+    }
+    Scale {
+      X: 13.0167856
+      Y: 6
+      Z: 0.999987
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13672360662661319423
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -24897.5488
+      Y: -8112.55664
+      Z: -222.548737
+    }
+    Rotation {
+      Pitch: 4.81078863
+      Yaw: 68.8724442
+      Roll: 99.6902771
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9838672471721098892
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -23810.4121
+      Y: -5386.51172
+      Z: -119.134796
+    }
+    Rotation {
+      Yaw: 68.0518112
+      Roll: 99.6556931
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17610689255176729061
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -22462.8164
+      Y: -2808.92
+      Z: -119.134918
+    }
+    Rotation {
+      Yaw: 57.3539429
+      Roll: 99.6556854
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7733489116056349621
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -20529.4746
+      Y: -669.894531
+      Z: -119.13504
+    }
+    Rotation {
+      Yaw: 40.3370895
+      Roll: 99.6555557
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10139150102481909113
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -18137.2969
+      Y: 990.646484
+      Z: -119.135101
+    }
+    Rotation {
+      Yaw: 29.762743
+      Roll: 99.6554565
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 18138937351580885082
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -15499.1152
+      Y: 2192.91113
+      Z: -119.135223
+    }
+    Rotation {
+      Yaw: 20.028101
+      Roll: 99.6553879
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2187631056488660338
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -12886.2627
+      Y: 3532.61523
+      Z: -119.135101
+    }
+    Rotation {
+      Yaw: 35.0772743
+      Roll: 99.655304
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11879383161926916680
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -11289.959
+      Y: 5350.2832
+      Z: -119.135101
+    }
+    Rotation {
+      Yaw: 70.0994186
+      Roll: 101.607231
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12397798873365871249
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -10309.4287
+      Y: 8077.94336
+      Z: -119.135101
+    }
+    Rotation {
+      Yaw: 70.0994263
+      Roll: 101.607224
+    }
+    Scale {
+      X: 29.7102852
+      Y: 5.99998522
+      Z: 0.999994159
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 208421458789374160
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -7696.40625
+      Y: 12716.0449
+      Z: -119.13504
+    }
+    Rotation {
+      Pitch: 0.0878293961
+      Yaw: 57.006424
+      Roll: 101.734215
+    }
+    Scale {
+      X: 78.0674591
+      Y: 5.99998903
+      Z: 0.999993205
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11674776791581614842
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -5175.85352
+      Y: 16837.1309
+      Z: -119.13504
+    }
+    Rotation {
+      Pitch: -1.53823853
+      Yaw: 61.7432251
+      Roll: 101.738281
+    }
+    Scale {
+      X: 26.7110977
+      Y: 5.99999046
+      Z: 1.00000834
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2618345650403029938
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -4044.87305
+      Y: 18615.916
+      Z: -134.020172
+    }
+    Rotation {
+      Pitch: -1.53823853
+      Yaw: 49.718
+      Roll: 101.738083
+    }
+    Scale {
+      X: 21.25
       Y: 6
       Z: 1
     }
@@ -24,7 +666,205 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6048390374529579317
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -2942.59961
+      Y: 20366.1504
+      Z: -134.020172
+    }
+    Rotation {
+      Pitch: -1.53823853
+      Yaw: 62.788662
+      Roll: 101.737946
+    }
+    Scale {
+      X: 21.25
+      Y: 6
+      Z: 1
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6495618501338996106
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -2224.2832
+      Y: 22099.7441
+      Z: -129.664063
+    }
+    Rotation {
+      Pitch: -1.53823853
+      Yaw: 71.0248
+      Roll: 101.737762
+    }
+    Scale {
+      X: 21.25
+      Y: 6
+      Z: 1
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 18254602444185853274
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -1320.37305
+      Y: 23961.4297
+      Z: -154.488922
+    }
+    Rotation {
+      Yaw: 57.4580688
+      Roll: 101.836365
+    }
+    Scale {
+      X: 20.1796398
+      Y: 5.99999523
+      Z: 1.00001109
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15463439290356156719
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15151304785851406027
+  Name: "InvisibleOneWayWaterCollider"
+  Transform {
+    Location {
+      X: -23865.8574
+      Y: -10630.2783
+      Z: -226.908722
+    }
+    Rotation {
+      Yaw: -160.650024
+      Roll: 100.719078
+    }
+    Scale {
+      X: 13.5931368
+      Y: 6.00000954
+      Z: 1.00000405
+    }
+  }
+  ParentId: 8864662057286598159
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -54,13 +894,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -22681.6328
-      Y: -8644.93457
-      Z: -295
+      X: -22603.0449
+      Y: -9260.42285
+      Z: -175.744141
     }
     Rotation {
       Yaw: -120.649994
-      Roll: 89.9999542
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -73,7 +913,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -103,13 +943,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -21369.7246
-      Y: -6438.66211
-      Z: -294.999695
+      X: -21291.2305
+      Y: -7054.20215
+      Z: -175.743835
     }
     Rotation {
       Yaw: -120.649963
-      Roll: 90
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -122,7 +962,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -152,13 +992,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -20117.5098
-      Y: -4602.92578
-      Z: -295
+      X: -20039.0664
+      Y: -5218.57422
+      Z: -175.744141
     }
     Rotation {
       Yaw: -130.649902
-      Roll: 90
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -171,7 +1011,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -201,14 +1041,14 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -18485.041
-      Y: -3072.29297
-      Z: -294.999481
+      X: -18406.6328
+      Y: -3687.97266
+      Z: -175.743622
     }
     Rotation {
       Pitch: 6.83018879e-06
       Yaw: -145.649872
-      Roll: 89.9999695
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -221,7 +1061,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -251,13 +1091,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -16628.332
-      Y: -1803.94336
-      Z: -294.999786
+      X: -16549.9258
+      Y: -2419.63281
+      Z: -175.743927
     }
     Rotation {
       Yaw: -145.649887
-      Roll: 90
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -270,7 +1110,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -300,13 +1140,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -14401.9756
-      Y: -555.730469
-      Z: -294.999969
+      X: -14323.6553
+      Y: -1171.42969
+      Z: -175.74411
     }
     Rotation {
       Yaw: -155.649887
-      Roll: 90
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -319,7 +1159,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -349,13 +1189,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -12090.9404
-      Y: 744.142578
-      Z: -295
+      X: -12012.6592
+      Y: 128.452148
+      Z: -175.744141
     }
     Rotation {
       Yaw: -145.649841
-      Roll: 90
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -368,7 +1208,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -398,13 +1238,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -10055.0107
-      Y: 1695.39746
-      Z: -294.999878
+      X: -9908.37695
+      Y: 1079.69238
+      Z: -175.744019
     }
     Rotation {
       Yaw: -165.649948
-      Roll: 90
+      Roll: 103.247192
     }
     Scale {
       X: 27.0600891
@@ -417,7 +1257,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -447,18 +1287,19 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -8129.39844
-      Y: 3131.08301
-      Z: -295
+      X: -7791.75732
+      Y: 2307.02148
+      Z: -181.189178
     }
     Rotation {
-      Yaw: -120.650055
-      Roll: 90
+      Pitch: -0.242126465
+      Yaw: -132.774673
+      Roll: 100.969055
     }
     Scale {
-      X: 27.0600891
-      Y: 6.00000715
-      Z: 1.00000644
+      X: 25.0253735
+      Y: 6.00001
+      Z: 1.00000846
     }
   }
   ParentId: 8864662057286598159
@@ -466,7 +1307,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -496,13 +1337,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -6524.32813
-      Y: 5057.18
-      Z: -294.999908
+      X: -6074.05029
+      Y: 4186.87305
+      Z: -181.189148
     }
     Rotation {
       Yaw: -132.116577
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
       X: 42.2888031
@@ -515,7 +1356,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -545,13 +1386,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -4576.72607
-      Y: 7492.18799
-      Z: -295
+      X: -4126.62109
+      Y: 6621.72363
+      Z: -181.18924
     }
     Rotation {
       Yaw: -121.742645
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
       X: 21.0000019
@@ -564,7 +1405,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -594,13 +1435,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -3674.8833
-      Y: 8701.21777
-      Z: -295
+      X: -3224.84961
+      Y: 7830.69531
+      Z: -181.18924
     }
     Rotation {
       Yaw: -135
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
       X: 21.0000019
@@ -613,7 +1454,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -643,13 +1484,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -2565.34961
-      Y: 10409.249
-      Z: -294.999512
+      X: -2115.48047
+      Y: 9538.66797
+      Z: -181.188751
     }
     Rotation {
       Yaw: -110
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
       X: 21.0000019
@@ -662,7 +1503,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -692,13 +1533,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -322.124023
-      Y: 14439.1289
-      Z: -294.999969
+      X: 127.737305
+      Y: 13568.3018
+      Z: -181.189209
     }
     Rotation {
       Yaw: -150
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
       X: 9.75
@@ -711,7 +1552,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -741,13 +1582,13 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -1531.55273
-      Y: 12589.498
-      Z: -295
+      X: -1081.68359
+      Y: 11718.7217
+      Z: -181.18924
     }
     Rotation {
       Yaw: -120
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
       X: 39.25
@@ -760,7 +1601,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -790,18 +1631,18 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: 1009.49609
-      Y: 15981.3506
-      Z: -295
+      X: 1569.91504
+      Y: 15268.2275
+      Z: -181.18924
     }
     Rotation {
       Yaw: -125
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
-      X: 33.25
-      Y: 6
-      Z: 1
+      X: 35.7619438
+      Y: 6.00000095
+      Z: 0.99999
     }
   }
   ParentId: 8864662057286598159
@@ -809,7 +1650,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -839,18 +1680,18 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: 1955.02344
-      Y: 19299.7285
-      Z: -294.999847
+      X: 2628.4707
+      Y: 18403.3711
+      Z: -181.188965
     }
     Rotation {
       Yaw: -90
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
-      X: 40.5
-      Y: 6
-      Z: 1
+      X: 33.6928062
+      Y: 5.99999714
+      Z: 1.00000238
     }
   }
   ParentId: 8864662057286598159
@@ -858,7 +1699,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -888,18 +1729,18 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: 2052.15234
-      Y: 22415.1191
-      Z: -295
+      X: 2716.28125
+      Y: 21104.4844
+      Z: -181.189102
     }
     Rotation {
       Yaw: -95
-      Roll: 90
+      Roll: 101.056992
     }
     Scale {
-      X: 22.7500019
-      Y: 6
-      Z: 1
+      X: 20.3904018
+      Y: 6.00001526
+      Z: 0.999991596
     }
   }
   ParentId: 8864662057286598159
@@ -907,7 +1748,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -937,18 +1778,18 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: 1819.08984
-      Y: 23923.4277
+      X: 2008.97266
+      Y: 23696.5215
       Z: -295
     }
     Rotation {
       Yaw: -50
-      Roll: 90
+      Roll: 103.24585
     }
     Scale {
-      X: 9.5
-      Y: 6
-      Z: 1
+      X: 13.9717159
+      Y: 6.00000143
+      Z: 0.999980867
     }
   }
   ParentId: 8864662057286598159
@@ -956,7 +1797,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -986,18 +1827,19 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: 935.591797
-      Y: 24395.6289
-      Z: -295
+      X: 408.421875
+      Y: 24497.1074
+      Z: -224.898956
     }
     Rotation {
-      Yaw: -10
-      Roll: 90
+      Pitch: -2.58135986
+      Yaw: -13.6482849
+      Roll: 105.435593
     }
     Scale {
-      X: 12.000001
-      Y: 6
-      Z: 1
+      X: 24.4531364
+      Y: 6.00001574
+      Z: 0.999969304
     }
   }
   ParentId: 8864662057286598159
@@ -1005,693 +1847,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 8756395197489184915
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -381.814453
-      Y: 23762.0449
-      Z: -295
-    }
-    Rotation {
-      Yaw: 45
-      Roll: 90
-    }
-    Scale {
-      X: 21.25
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 4227698689496469859
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -1698.13086
-      Y: 21443.6172
-      Z: -294.999969
-    }
-    Rotation {
-      Yaw: 70
-      Roll: 90
-    }
-    Scale {
-      X: 33.75
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 6353831829446189606
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -4884.93945
-      Y: 15358.834
-      Z: -295
-    }
-    Rotation {
-      Yaw: 60
-      Roll: 90
-    }
-    Scale {
-      X: 105.999977
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13895007972790395387
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -7469.38867
-      Y: 10882.3984
-      Z: -295.000061
-    }
-    Rotation {
-      Yaw: 60
-      Roll: 90
-    }
-    Scale {
-      X: 29.75
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13582311071025072223
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -8752.45
-      Y: 8822.08203
-      Z: -295
-    }
-    Rotation {
-      Yaw: 55
-      Roll: 90
-    }
-    Scale {
-      X: 26.7500076
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 15799930671090961858
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -9915.90918
-      Y: 6102.46094
-      Z: -295
-    }
-    Rotation {
-      Yaw: 75
-      Roll: 90
-    }
-    Scale {
-      X: 34.5000038
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 7162020101915352277
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -11157.3535
-      Y: 3461.38379
-      Z: -295.000031
-    }
-    Rotation {
-      Yaw: 50
-      Roll: 90
-    }
-    Scale {
-      X: 28.75
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 10313262507778163149
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -13150.8936
-      Y: 2117.10156
-      Z: -295
-    }
-    Rotation {
-      Yaw: 20
-      Roll: 90
-    }
-    Scale {
-      X: 28.75
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 4035978396791318647
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -15917.7686
-      Y: 960.69043
-      Z: -295.000244
-    }
-    Rotation {
-      Yaw: 25
-      Roll: 90
-    }
-    Scale {
-      X: 31.7499962
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 2865768289636364545
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -20464.0059
-      Y: -1820.10156
-      Z: -295.000031
-    }
-    Rotation {
-      Yaw: 35
-      Roll: 90
-    }
-    Scale {
-      X: 23.75
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 2824257930465435335
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -18721.8086
-      Y: -634.34375
-      Z: -295.000031
-    }
-    Rotation {
-      Yaw: 35
-      Roll: 90
-    }
-    Scale {
-      X: 37.0000038
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 12733910386766418271
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -23223.1582
-      Y: -6216.0625
-      Z: -295
-    }
-    Rotation {
-      Yaw: 69.9999847
-      Roll: 89.9999924
-    }
-    Scale {
-      X: 37.0000038
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 13548102457419045947
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -24409.3223
-      Y: -8513.56055
-      Z: -295
-    }
-    Rotation {
-      Yaw: 44.9999733
-      Roll: 89.9999847
-    }
-    Scale {
-      X: 16.5000076
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 6789719267622574026
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -25225.9941
-      Y: -9588.71582
-      Z: -295
-    }
-    Rotation {
-      Yaw: 65.0000076
-      Roll: 89.9999924
-    }
-    Scale {
-      X: 11
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1721,18 +1877,19 @@ Objects {
   Name: "InvisibleOneWayWaterCollider"
   Transform {
     Location {
-      X: -25274.3887
-      Y: -10238.1709
-      Z: -293.877411
+      X: -25126.3105
+      Y: -10321.0166
+      Z: -240.984558
     }
     Rotation {
-      Yaw: 140
-      Roll: 90
+      Pitch: -1.0116272
+      Yaw: 139.881241
+      Roll: 96.6972885
     }
     Scale {
-      X: 5
-      Y: 6
-      Z: 1
+      X: 17.034874
+      Y: 6.00000143
+      Z: 0.99996084
     }
   }
   ParentId: 8864662057286598159
@@ -1740,56 +1897,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15463439290356156719
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 1269836646536519447
-  Name: "InvisibleOneWayWaterCollider"
-  Transform {
-    Location {
-      X: -22014.3457
-      Y: -3498.56445
-      Z: -295
-    }
-    Rotation {
-      Yaw: 60
-      Roll: 90
-    }
-    Scale {
-      X: 23.75
-      Y: 6
-      Z: 1
-    }
-  }
-  ParentId: 8864662057286598159
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
