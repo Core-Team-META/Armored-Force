@@ -4179,11 +4179,14 @@ Objects {
   Name: "Split"
   Transform {
     Location {
-      X: 570
+      X: 717.373047
+      Y: 225.841797
+      Z: 2273.23926
     }
     Rotation {
-      Pitch: -90
-      Roll: 90.0000076
+      Pitch: -96.056488
+      Yaw: 10.9195251
+      Roll: 79.0654602
     }
     Scale {
       X: 5.6
@@ -4238,10 +4241,14 @@ Objects {
   Name: "Split"
   Transform {
     Location {
-      X: 665
+      X: 811.867188
+      Y: 225.712646
+      Z: 2263.47705
     }
     Rotation {
-      Pitch: -90
+      Pitch: -96.0571289
+      Yaw: 10.918396
+      Roll: -10.9334717
     }
     Scale {
       X: 5.6

@@ -16,7 +16,7 @@ Assets {
       }
       Overrides {
         Name: "opacity"
-        Float: 0.4295398
+        Float: 0.616556704
       }
       Overrides {
         Name: "reflection brightness"
