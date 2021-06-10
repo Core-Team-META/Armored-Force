@@ -4340,7 +4340,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.61955953
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -4352,7 +4352,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.962543905
     }
     Overrides {
       Name: "bp:V Offset"
@@ -4360,7 +4360,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.128402591
     }
     Overrides {
       Name: "bp:Color A"
@@ -4699,7 +4699,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0890861824
     }
     Overrides {
       Name: "bp:Color A"
@@ -5038,7 +5038,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0944719836
     }
     Overrides {
       Name: "bp:Color A"
@@ -5377,7 +5377,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.108017415
     }
     Overrides {
       Name: "bp:Color A"
@@ -5696,7 +5696,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.62989259
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -5708,7 +5708,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.920094848
     }
     Overrides {
       Name: "bp:V Offset"
@@ -5716,7 +5716,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0890861824
     }
     Overrides {
       Name: "bp:Color A"
@@ -6055,7 +6055,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0984607041
     }
     Overrides {
       Name: "bp:Color A"
@@ -6374,7 +6374,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.5768714
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -6386,7 +6386,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.920094848
     }
     Overrides {
       Name: "bp:V Offset"
@@ -6394,7 +6394,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0536656342
     }
     Overrides {
       Name: "bp:Color A"
@@ -6733,7 +6733,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0890861824
     }
     Overrides {
       Name: "bp:Color A"
@@ -7052,7 +7052,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.60907531
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -7064,7 +7064,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.9290694
     }
     Overrides {
       Name: "bp:V Offset"
@@ -7072,7 +7072,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0641567633
     }
     Overrides {
       Name: "bp:Color A"
@@ -7391,7 +7391,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.6600312
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -7403,7 +7403,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.937822
     }
     Overrides {
       Name: "bp:V Offset"
@@ -7411,7 +7411,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.131627828
     }
     Overrides {
       Name: "bp:Color A"
@@ -7750,7 +7750,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0799051225
     }
     Overrides {
       Name: "bp:Color A"
@@ -8089,7 +8089,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.158225238
     }
     Overrides {
       Name: "bp:Color A"
@@ -8380,7 +8380,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "9026c3/tanksportal-images1"
+      String: "647fb3/tanksportal-images4"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -8428,7 +8428,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0799051225
     }
     Overrides {
       Name: "bp:Color A"
@@ -8719,11 +8719,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "9026c3/tanksportal-images1"
+      String: "647fb3/tanksportal-images4"
     }
     Overrides {
       Name: "bp:Screenshot Index"
-      Int: 3
+      Int: 4
     }
     Overrides {
       Name: "bp:Speed"
@@ -8767,7 +8767,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0890861824
     }
     Overrides {
       Name: "bp:Color A"
@@ -9058,7 +9058,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "9026c3/tanksportal-images1"
+      String: "647fb3/tanksportal-images4"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -9106,7 +9106,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0984607041
     }
     Overrides {
       Name: "bp:Color A"
@@ -9445,7 +9445,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0759164
     }
     Overrides {
       Name: "bp:Color A"
@@ -9764,7 +9764,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.6886915
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -9776,7 +9776,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.946334362
     }
     Overrides {
       Name: "bp:V Offset"
@@ -9784,7 +9784,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.113757722
     }
     Overrides {
       Name: "bp:Color A"
@@ -10103,7 +10103,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.65013862
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -10115,7 +10115,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.9290694
     }
     Overrides {
       Name: "bp:V Offset"
@@ -10123,7 +10123,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.112006135
     }
     Overrides {
       Name: "bp:Color A"
@@ -10442,7 +10442,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.6600312
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -10454,7 +10454,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.937822
     }
     Overrides {
       Name: "bp:V Offset"
@@ -10462,7 +10462,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.078908056
     }
     Overrides {
       Name: "bp:Color A"
@@ -10781,7 +10781,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.60907531
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -10793,7 +10793,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.920094848
     }
     Overrides {
       Name: "bp:V Offset"
@@ -10801,7 +10801,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0984607041
     }
     Overrides {
       Name: "bp:Color A"
@@ -11120,7 +11120,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.50956988
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -11132,7 +11132,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.954584241
     }
     Overrides {
       Name: "bp:V Offset"
@@ -11140,7 +11140,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.100753263
     }
     Overrides {
       Name: "bp:Color A"
@@ -11320,7 +11320,7 @@ Objects {
 }
 Objects {
   Id: 16525171782561540020
-  Name: "ScreenObjectGroup (Chimera)"
+  Name: "ScreenObjectGroup (Patton)"
   Transform {
     Location {
     }
@@ -11349,7 +11349,7 @@ Objects {
 }
 Objects {
   Id: 3209443777342432726
-  Name: "Chimera"
+  Name: "Patton"
   Transform {
     Location {
       Y: -482
@@ -11470,16 +11470,12 @@ Objects {
       Float: 0
     }
     Overrides {
-      Name: "bp:V Scale"
-      Float: 1
-    }
-    Overrides {
       Name: "bp:V Offset"
       Float: 0
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.117746443
     }
     Overrides {
       Name: "bp:Color A"
@@ -11659,7 +11655,7 @@ Objects {
 }
 Objects {
   Id: 4912722073248422776
-  Name: "ScreenObjectGroup (Chimera)"
+  Name: "ScreenObjectGroup (BatChat)"
   Transform {
     Location {
     }
@@ -11688,7 +11684,7 @@ Objects {
 }
 Objects {
   Id: 11534556659246567621
-  Name: "Chimera"
+  Name: "BatChat"
   Transform {
     Location {
       Y: -482
@@ -11818,7 +11814,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0890861824
     }
     Overrides {
       Name: "bp:Color A"
@@ -12157,7 +12153,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.112006135
     }
     Overrides {
       Name: "bp:Color A"
@@ -12476,7 +12472,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.50934756
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -12488,7 +12484,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.954584241
     }
     Overrides {
       Name: "bp:V Offset"
@@ -12815,7 +12811,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1.23160267
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -12826,16 +12822,12 @@ Objects {
       Float: 0
     }
     Overrides {
-      Name: "bp:V Scale"
-      Float: 1
-    }
-    Overrides {
       Name: "bp:V Offset"
       Float: 0
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: -0.0147508569
     }
     Overrides {
       Name: "bp:Color A"
@@ -13174,7 +13166,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0930749
     }
     Overrides {
       Name: "bp:Color A"
@@ -13513,7 +13505,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0890861824
     }
     Overrides {
       Name: "bp:Color A"
@@ -13852,7 +13844,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0725636184
     }
     Overrides {
       Name: "bp:Color A"
@@ -14191,7 +14183,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0625636205
     }
     Overrides {
       Name: "bp:Color A"
@@ -14509,10 +14501,6 @@ Objects {
       Float: 0
     }
     Overrides {
-      Name: "bp:U Scale"
-      Float: 1.77777767
-    }
-    Overrides {
       Name: "bp:Horizontal Bend Amount"
       Float: 0
     }
@@ -14530,7 +14518,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.0255148858
     }
     Overrides {
       Name: "bp:Color A"
@@ -14593,6 +14581,10 @@ Objects {
     Overrides {
       Name: "bp:Maintain picture scale"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.75
     }
   }
   Collidable_v2 {
@@ -14869,7 +14861,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: 0.05
     }
     Overrides {
       Name: "bp:Color A"
