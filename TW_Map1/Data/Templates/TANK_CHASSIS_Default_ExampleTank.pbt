@@ -7,7 +7,7 @@ Assets {
       RootId: 5438919963439710727
       Objects {
         Id: 5438919963439710727
-        Name: "TANK_CHASSIS_Default_ExampleTank"
+        Name: "02TANK_CHASSIS_Default_ExampleTank"
         Transform {
           Scale {
             X: 1
@@ -54,7 +54,7 @@ Assets {
           PhysicsBodyOffset {
             Z: 105
           }
-          MaxSpeed: 1400
+          MaxSpeed: 1120
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

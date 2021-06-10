@@ -1,6 +1,88 @@
 Name: "Medium"
 RootId: 5263631007715456847
 Objects {
+  Id: 9054289146919706053
+  Name: "TANK_CHASSIS_Upgraded_UK_Comet"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5263631007715456847
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9303364304416259622
+      value {
+        Overrides {
+          Name: "Name"
+          String: "05TANK_CHASSIS_Upgraded_UK_Comet"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 665104530983257129
+    }
+  }
+}
+Objects {
+  Id: 10031061543426676909
+  Name: "TANK_CHASSIS_Default_UK_Comet"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5263631007715456847
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13833320584572759485
+      value {
+        Overrides {
+          Name: "Name"
+          String: "05TANK_CHASSIS_Default_UK_Comet"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4792894603005875016
+    }
+  }
+}
+Objects {
   Id: 10068880297791214615
   Name: "TANK_CHASSIS_Upgraded_JP_ChiNu"
   Transform {
@@ -353,6 +435,10 @@ Objects {
             Y: 1
             Z: 1
           }
+        }
+        Overrides {
+          Name: "Vehicle.BrakeStrength"
+          Float: 1
         }
       }
     }

@@ -7,7 +7,7 @@ Assets {
       RootId: 4189224137868429160
       Objects {
         Id: 4189224137868429160
-        Name: "TANK_CHASSIS_Default_GER_Panzer3"
+        Name: "18TANK_CHASSIS_Default_GER_Panzer3"
         Transform {
           Scale {
             X: 1

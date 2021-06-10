@@ -7,7 +7,7 @@ Assets {
       RootId: 17788723325610312870
       Objects {
         Id: 17788723325610312870
-        Name: "TANK_CHASSIS_Default_GE_Maus"
+        Name: "30TANK_CHASSIS_Default_GE_Maus"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 60000
+          Mass: 1000
           PhysicsBodyScale {
             X: 10
             Y: 3.2
@@ -56,7 +56,7 @@ Assets {
             Z: 100
           }
           MaxSpeed: 750
-          AccelerationRate: 400
+          AccelerationRate: 440
           DecelerationRate: 15
           BrakeStrength: 1
           TireFriction: 30

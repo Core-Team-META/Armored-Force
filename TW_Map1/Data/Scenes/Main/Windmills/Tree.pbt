@@ -67,13 +67,6 @@ Objects {
   Id: 9905011231677558992
   Name: "windmill2_merged"
   Transform {
-    Location {
-      X: 4317.11328
-      Y: -37514.7539
-      Z: 137.749863
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -86,9 +79,6 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -110,45 +100,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 48.2025375
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6027205798500096928
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -11.7568359
-            Z: 843.895
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -3.05175781e-05
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15533327961279533751
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -129.761917
-            Y: -446.504364
-            Z: 483.112671
           }
         }
       }
