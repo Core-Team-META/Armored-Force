@@ -15943,9 +15943,9 @@ Objects {
   Name: "VictoryLocation"
   Transform {
     Location {
-      X: -9665
-      Y: -15200
-      Z: 65
+      X: -39835
+      Y: 20205
+      Z: 180
     }
     Rotation {
       Yaw: 5
@@ -15988,14 +15988,14 @@ Objects {
     }
   }
   ParentId: 14756772455371924364
-  ChildIds: 4440505849845220617
-  ChildIds: 12434482774007529860
-  ChildIds: 14441861798463264031
-  ChildIds: 2005385496175616165
-  ChildIds: 17270410912837413212
-  ChildIds: 11023381701129727149
-  ChildIds: 7424449329750444187
-  ChildIds: 8976798401226522440
+  ChildIds: 7409903328883021318
+  ChildIds: 3737926984007657054
+  ChildIds: 1736111046578517644
+  ChildIds: 519222581302416005
+  ChildIds: 16171004262341572214
+  ChildIds: 18381912479107597349
+  ChildIds: 3820371836101270986
+  ChildIds: 13934979961207377778
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16010,13 +16010,12 @@ Objects {
   }
 }
 Objects {
-  Id: 8976798401226522440
+  Id: 13934979961207377778
   Name: "8"
   Transform {
     Location {
       X: -1811.24536
       Y: 2818.48193
-      Z: 55
     }
     Rotation {
       Yaw: 24.9999275
@@ -16029,39 +16028,28 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 7424449329750444187
+  Id: 3820371836101270986
   Name: "7"
   Transform {
     Location {
       X: -1611.24683
       Y: -2081.5188
-      Z: 55
     }
     Rotation {
       Yaw: 24.999939
@@ -16074,39 +16062,28 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 11023381701129727149
+  Id: 18381912479107597349
   Name: "6"
   Transform {
     Location {
-      X: -1611.24634
-      Y: 2118.48218
-      Z: 55
+      X: -1611.24719
+      Y: 2118.48315
     }
     Rotation {
       Yaw: 24.9999485
@@ -16119,39 +16096,28 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 17270410912837413212
+  Id: 16171004262341572214
   Name: "5"
   Transform {
     Location {
       X: -1411.24609
       Y: -1381.51672
-      Z: 55
     }
     Rotation {
       Yaw: 24.999958
@@ -16164,39 +16130,28 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 2005385496175616165
+  Id: 519222581302416005
   Name: "4"
   Transform {
     Location {
-      X: -1411.24634
-      Y: 1418.48193
-      Z: 55
+      X: -1411.24536
+      Y: 1418.48181
     }
     Rotation {
       Yaw: 24.9999676
@@ -16209,39 +16164,28 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 14441861798463264031
+  Id: 1736111046578517644
   Name: "3"
   Transform {
     Location {
       X: -1211.24573
       Y: -681.518555
-      Z: 55
     }
     Rotation {
       Yaw: 24.999979
@@ -16254,39 +16198,28 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 12434482774007529860
+  Id: 3737926984007657054
   Name: "2"
   Transform {
     Location {
-      X: -1211.24609
-      Y: 718.481812
-      Z: 55
+      X: -1211.24719
+      Y: 718.480896
     }
     Rotation {
       Yaw: 24.9999905
@@ -16299,39 +16232,28 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 4440505849845220617
+  Id: 7409903328883021318
   Name: "1"
   Transform {
     Location {
       X: -982.624
       Y: 18.84585
-      Z: 55
     }
     Rotation {
       Yaw: 25
@@ -16344,29 +16266,19 @@ Objects {
   }
   ParentId: 2015577560590240279
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
@@ -16374,6 +16286,7 @@ Objects {
   Name: "Spawns"
   Transform {
     Location {
+      Z: 60
     }
     Rotation {
     }
@@ -18459,6 +18372,12 @@ Objects {
       Name: "cs:CardText"
       ObjectReference {
         SelfId: 7796761008697731279
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapComponents"
+      ObjectReference {
+        SelfId: 26148042514551584
       }
     }
   }
@@ -36478,9 +36397,7 @@ Objects {
   }
   ParentId: 2288912942131574933
   ChildIds: 9964447388881828036
-  ChildIds: 1231314307407088357
-  ChildIds: 3246395460102361622
-  ChildIds: 13789443441863233763
+  ChildIds: 582970047037801276
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -36491,6 +36408,40 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 582970047037801276
+  Name: "SpectatorUIComponents"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17571685535217648343
+  ChildIds: 1231314307407088357
+  ChildIds: 3246395460102361622
+  ChildIds: 13789443441863233763
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
@@ -36507,7 +36458,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17571685535217648343
+  ParentId: 582970047037801276
   ChildIds: 2650966725823455388
   ChildIds: 16037432977574277353
   Collidable_v2 {
@@ -37281,7 +37232,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17571685535217648343
+  ParentId: 582970047037801276
   ChildIds: 2470520042685288237
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42151,7 +42102,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17571685535217648343
+  ParentId: 582970047037801276
   ChildIds: 5069071840252042367
   ChildIds: 9783620748093022628
   Collidable_v2 {
@@ -42357,6 +42308,12 @@ Objects {
       Name: "cs:Close"
       ObjectReference {
         SelfId: 4420814336069090000
+      }
+    }
+    Overrides {
+      Name: "cs:SpectatorUIComponents"
+      ObjectReference {
+        SelfId: 582970047037801276
       }
     }
   }

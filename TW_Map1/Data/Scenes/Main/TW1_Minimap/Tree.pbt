@@ -17,10 +17,7 @@ Objects {
   ParentId: 10433577698686771103
   ChildIds: 5661825852142314628
   ChildIds: 14563912036218642855
-  ChildIds: 12424463349357942591
-  ChildIds: 3302597894179016669
-  ChildIds: 8877312406397874313
-  ChildIds: 378484177755757853
+  ChildIds: 26148042514551584
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -34,8 +31,8 @@ Objects {
   }
 }
 Objects {
-  Id: 378484177755757853
-  Name: "3D"
+  Id: 26148042514551584
+  Name: "MinimapComponents"
   Transform {
     Location {
     }
@@ -48,7 +45,10 @@ Objects {
     }
   }
   ParentId: 10370141871558452859
-  ChildIds: 6517589804281672817
+  ChildIds: 378484177755757853
+  ChildIds: 12424463349357942591
+  ChildIds: 3302597894179016669
+  ChildIds: 8877312406397874313
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -57,38 +57,12 @@ Objects {
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 6517589804281672817
-  Name: "Base"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 378484177755757853
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Base"
   }
 }
 Objects {
@@ -105,7 +79,7 @@ Objects {
       Z: 0.05
     }
   }
-  ParentId: 10370141871558452859
+  ParentId: 26148042514551584
   ChildIds: 1876406623500830276
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -290,14 +264,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10370141871558452859
+  ParentId: 26148042514551584
   ChildIds: 1626479392366946328
   ChildIds: 5710145084287052893
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3765,7 +3739,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10370141871558452859
+  ParentId: 26148042514551584
   ChildIds: 8056327412988251041
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3850,6 +3824,64 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 378484177755757853
+  Name: "3D"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 26148042514551584
+  ChildIds: 6517589804281672817
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6517589804281672817
+  Name: "Base"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 378484177755757853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Base"
   }
 }
 Objects {
@@ -4014,6 +4046,18 @@ Objects {
       Name: "cs:GAMEHELPER_SpottingServer"
       ObjectReference {
         SelfId: 1684701547217154315
+      }
+    }
+    Overrides {
+      Name: "cs:GAMESTATE_MainGameStateManagerServer"
+      ObjectReference {
+        SelfId: 16554756392297303216
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapComponents"
+      ObjectReference {
+        SelfId: 26148042514551584
       }
     }
     Overrides {

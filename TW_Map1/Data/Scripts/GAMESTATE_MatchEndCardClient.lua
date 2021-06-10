@@ -29,6 +29,7 @@ function StateSTART(manager, propertyName)
 	end
 	
 	if mainGameStateManager:GetCustomProperty("GameState") == "CARD_STATE" then
+
 		while winner < 0 do
 			Task.Wait()
 		end

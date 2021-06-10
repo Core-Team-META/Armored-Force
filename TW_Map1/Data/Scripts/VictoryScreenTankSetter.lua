@@ -73,15 +73,9 @@ function SetTanks()
 			placedTanks[x] = World.SpawnAsset(GetPlayerTank(selectedPlayer), {parent = slot})
 			placedTanks[x]:SetPosition(Vector3.ZERO)
 			placedTanks[x]:SetRotation(Rotation.ZERO)
-			placedTanks[x].visibility = Visibility.FORCE_ON
 			placedTanks[x].context.AssignOwner(selectedPlayer)
 		end
 	end
-	
-	Task.Wait(0.1)
-	
-	Events.BroadcastToAllPlayers("VICTORY_SALUTE")
-
 end
 
 function CleanTanks()
@@ -109,6 +103,8 @@ function OnStateChanged(manager, propertyName)
 	newState = GameStateManager:GetCustomProperty("GameState")
 
 	if newState == "VICTORY_STATE" then
+	
+		Task.Wait(0.5)
 	
 		SetTanks()
 		

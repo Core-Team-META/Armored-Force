@@ -130,17 +130,9 @@ function CheckCapPoints()
 	script:SetNetworkedCustomProperty("Team1BaseProgress", bCapProgress)
 	
 	if aCapProgress > bCapProgress then
-	
 		leadTeam = 2
-		
 	elseif bCapProgress > aCapProgress then
-		
-		leadTeam = 1 
-		
-	else 
-	
-		leadTeam = 0
-				
+		leadTeam = 1	
 	end
 	
 end
@@ -149,39 +141,32 @@ end
 function CheckPlayerCountTask()
 	
 	local count = Game.GetPlayers()
-	
 	local count1 = Game.GetPlayers({includeTeams = 1, ignoreDead = true})
-	
 	local count2 = Game.GetPlayers({includeTeams = 2, ignoreDead = true})
 	
 	if #count1 > #count2 then
-	
 		leadTeam = 1
-		
 	elseif #count2 > #count1 then
-	
 		leadTeam = 2
-		
 	else 
-	
 		leadTeam = 0
-		
 	end
 	
 	CheckCapPoints()
 			
 	if #count < 2 or #count1 < 1 or #count2 < 1 or aCapProgress >= capLimit or bCapProgress >= capLimit then
+		
+		if #count2 < 1 and #count1 >= 1 then
+			leadTeam = 1
+		elseif #count1 < 1 and #count2 >= 1 then
+			leadTeam = 2
+		end
 	
 		Task.Wait(1)
 		
 		Events.Broadcast("CHANGE_STATE", "MATCH_STATE")
 		
-		while true do
-		
-			Task.Wait(1)
-			
-		end
-		
+		Task.Wait(10)
 	end
 		
 end
