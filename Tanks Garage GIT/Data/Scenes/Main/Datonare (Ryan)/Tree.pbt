@@ -1,6 +1,15020 @@
 Name: "Datonare (Ryan)"
 RootId: 17398334354223688829
 Objects {
+  Id: 15673090807380095478
+  Name: "Premium Shop Portal Images"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17398334354223688829
+  ChildIds: 4692228350244537424
+  ChildIds: 9214178279041710218
+  ChildIds: 11607069673808404538
+  ChildIds: 4853725708900983559
+  ChildIds: 10859672708917997996
+  ChildIds: 18249109942203387828
+  ChildIds: 10352574857194020434
+  ChildIds: 947458919986405611
+  ChildIds: 9410033341373406116
+  ChildIds: 4747144547888318883
+  ChildIds: 12422160342429482450
+  ChildIds: 13056566834688409611
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 13056566834688409611
+  Name: "Portal Image Placement (Lowe)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 10142236241302086882
+  ChildIds: 16389975589671670735
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16389975589671670735
+  Name: "ScreenObjectGroup (Lowe)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 13056566834688409611
+  ChildIds: 11936462812987571434
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11936462812987571434
+  Name: "Lowe"
+  Transform {
+    Location {
+      Y: 1082.05737
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16389975589671670735
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "4414b1/tanksportal-images5"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 10142236241302086882
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13056566834688409611
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 1606436429672660503
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 16389975589671670735
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 11947562023715093474
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 860
+        Y: 125
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 12422160342429482450
+  Name: "Portal Image Placement (T34 Heavy)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 9167897489671764095
+  ChildIds: 7862930513822923811
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7862930513822923811
+  Name: "ScreenObjectGroup (T34 Heavy)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 12422160342429482450
+  ChildIds: 11645869564931311665
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11645869564931311665
+  Name: "T34 Heavy"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7862930513822923811
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "301e59/tanksportal-images2"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.333
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 0.75
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 9167897489671764095
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12422160342429482450
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3201535909623399732
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 7862930513822923811
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 11947562023715093474
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1100
+        Y: 125
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 4747144547888318883
+  Name: "Portal Image Placement (RP Trade)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 11533439016868421734
+  ChildIds: 10837068655654899608
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10837068655654899608
+  Name: "ScreenObjectGroup (RP Trade)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 4747144547888318883
+  ChildIds: 7322686076269125899
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7322686076269125899
+  Name: "RP Trade"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10837068655654899608
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c8da5f/tanksportal-images8"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.333
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 0.75
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 11533439016868421734
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4747144547888318883
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 1277857715801962856
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 10837068655654899608
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 13566963409643572452
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1550
+        Y: 150
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 9410033341373406116
+  Name: "Portal Image Placement (Crate of Gold)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 12512646852942567019
+  ChildIds: 2707036136632514550
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2707036136632514550
+  Name: "ScreenObjectGroup (Crate of Gold)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 9410033341373406116
+  ChildIds: 2512144694800526348
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2512144694800526348
+  Name: "Crate of Gold"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2707036136632514550
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c8da5f/tanksportal-images8"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.333
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 0.75
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 12512646852942567019
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9410033341373406116
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8752846429946044720
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 2707036136632514550
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 13515930428143634102
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1750
+        Y: 545
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 947458919986405611
+  Name: "Portal Image Placement (Bag of Gold)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 11386926184639355424
+  ChildIds: 14028372400553394012
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14028372400553394012
+  Name: "ScreenObjectGroup (Bag of Gold)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 947458919986405611
+  ChildIds: 604179487105313011
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 604179487105313011
+  Name: "Bag of Gold"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14028372400553394012
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c8da5f/tanksportal-images8"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 11386926184639355424
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 947458919986405611
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8752846429946044720
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 14028372400553394012
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 13515930428143634102
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1335
+        Y: 545
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 10352574857194020434
+  Name: "Portal Image Placement (Handful of Gold)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 9019544764859660816
+  ChildIds: 1264992180158642358
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1264992180158642358
+  Name: "ScreenObjectGroup (Bunch of Gold)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 10352574857194020434
+  ChildIds: 11866397230323250757
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11866397230323250757
+  Name: "Bunch of Gold"
+  Transform {
+    Location {
+      Y: 1082.05737
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1264992180158642358
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "5a8909/tanksportal-images7"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 9019544764859660816
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10352574857194020434
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8752846429946044720
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 1264992180158642358
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 13515930428143634102
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 320
+        Y: 545
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 18249109942203387828
+  Name: "Portal Image Placement (Crate of Silver)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 2365801233299861794
+  ChildIds: 856607951630400648
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 856607951630400648
+  Name: "ScreenObjectGroup (Crate of Silver)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 18249109942203387828
+  ChildIds: 3775206090999918460
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3775206090999918460
+  Name: "Crate of Silver"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 856607951630400648
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c8da5f/tanksportal-images8"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.333
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 0.75
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 2365801233299861794
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18249109942203387828
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8752846429946044720
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 856607951630400648
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 13515930428143634102
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1750
+        Y: 190
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 10859672708917997996
+  Name: "Portal Image Placement (Bag of Silver)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 15799442603009954361
+  ChildIds: 7184800358789230742
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7184800358789230742
+  Name: "ScreenObjectGroup (Bag of Silver)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 10859672708917997996
+  ChildIds: 14833636059613822933
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14833636059613822933
+  Name: "Bag of Silver"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7184800358789230742
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c8da5f/tanksportal-images8"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 15799442603009954361
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10859672708917997996
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8752846429946044720
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 7184800358789230742
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 13515930428143634102
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1335
+        Y: 190
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 4853725708900983559
+  Name: "Portal Image Placement (Handful of Silver)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 9489826995475205627
+  ChildIds: 4891530721999184683
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4891530721999184683
+  Name: "ScreenObjectGroup (Bunch of Silver)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 4853725708900983559
+  ChildIds: 653441925787499989
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 653441925787499989
+  Name: "Bunch of Silver"
+  Transform {
+    Location {
+      Y: 1082.05737
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4891530721999184683
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "5a8909/tanksportal-images7"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 9489826995475205627
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4853725708900983559
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8752846429946044720
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 4891530721999184683
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 13515930428143634102
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 320
+        Y: 185
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 11607069673808404538
+  Name: "Portal Image Placement (General\'s Pack)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 8556223311170603066
+  ChildIds: 10533843881362322110
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10533843881362322110
+  Name: "ScreenObjectGroup (General\'s Pack)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 11607069673808404538
+  ChildIds: 11914451638495275624
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11914451638495275624
+  Name: "General\'s Pack"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10533843881362322110
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c8da5f/tanksportal-images8"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.333
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 0.75
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 8556223311170603066
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11607069673808404538
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 17893534697042367868
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 10533843881362322110
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 2260912370468442872
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1750
+        Y: 190
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 9214178279041710218
+  Name: "Portal Image Placement (Captain\'s Pack)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 11627447514848371992
+  ChildIds: 18433756829780314552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18433756829780314552
+  Name: "ScreenObjectGroup (Captain\'s Pack)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 9214178279041710218
+  ChildIds: 18292223053498032766
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18292223053498032766
+  Name: "Captain\'s Pack"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18433756829780314552
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c8da5f/tanksportal-images8"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 11627447514848371992
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9214178279041710218
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 17893534697042367868
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 18433756829780314552
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 2260912370468442872
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1335
+        Y: 190
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 4692228350244537424
+  Name: "Portal Image Placement (Soldier\'s Pack)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15673090807380095478
+  ChildIds: 15310697379907770513
+  ChildIds: 1761364562385100642
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1761364562385100642
+  Name: "ScreenObjectGroup (Soldier\'s Pack)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 4692228350244537424
+  ChildIds: 8307531629955582497
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8307531629955582497
+  Name: "Soldier\'s Pack"
+  Transform {
+    Location {
+      Y: 1082.05737
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1761364562385100642
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "5a8909/tanksportal-images7"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 15310697379907770513
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4692228350244537424
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 17893534697042367868
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 1761364562385100642
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 2260912370468442872
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 320
+        Y: 190
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 18378895235497925026
+  Name: "Tech Tree Portal Images"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17398334354223688829
+  ChildIds: 13732957533575418092
+  ChildIds: 9497232614558791044
+  ChildIds: 15482594156752410489
+  ChildIds: 1036701379992418007
+  ChildIds: 17099501845076488792
+  ChildIds: 15034149068276235092
+  ChildIds: 16900463249011540787
+  ChildIds: 1109799804162889502
+  ChildIds: 15406107805040285112
+  ChildIds: 17687123863228829233
+  ChildIds: 11410288594073102754
+  ChildIds: 3749508237983194913
+  ChildIds: 3803140556628784342
+  ChildIds: 3525654799527336549
+  ChildIds: 18130642021416062126
+  ChildIds: 10675183728233905096
+  ChildIds: 9330289147813706775
+  ChildIds: 4932901290579612618
+  ChildIds: 13418801094559049561
+  ChildIds: 279641991232220153
+  ChildIds: 17841931964965715369
+  ChildIds: 9029114012319289075
+  ChildIds: 16925233522412178716
+  ChildIds: 13225248665880322805
+  ChildIds: 8243446999874846701
+  ChildIds: 4041815941280601941
+  ChildIds: 2246372827099685641
+  ChildIds: 5809883345558753300
+  ChildIds: 16823963026823143543
+  ChildIds: 214497969266016201
+  ChildIds: 1939928412919215294
+  ChildIds: 9761903893893108696
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9761903893893108696
+  Name: "Portal Image Placement (Jagdtiger)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 8298296684135582442
+  ChildIds: 8801205494356047594
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8801205494356047594
+  Name: "ScreenObjectGroup (Jagdtiger)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 9761903893893108696
+  ChildIds: 7000714503915002483
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7000714503915002483
+  Name: "Jagdtiger"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8801205494356047594
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "5a8909/tanksportal-images7"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 8298296684135582442
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9761903893893108696
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 8801205494356047594
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1680
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 1939928412919215294
+  Name: "Portal Image Placement (VK72)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 10067413197350905884
+  ChildIds: 8909103424925891536
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8909103424925891536
+  Name: "ScreenObjectGroup (VK72)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 1939928412919215294
+  ChildIds: 10318745349329374003
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10318745349329374003
+  Name: "VK72"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8909103424925891536
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "5a8909/tanksportal-images7"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 10067413197350905884
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1939928412919215294
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 8909103424925891536
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1480
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 214497969266016201
+  Name: "Portal Image Placement (E100)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 5058555278218530405
+  ChildIds: 18379153368566690389
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18379153368566690389
+  Name: "ScreenObjectGroup (E100)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 214497969266016201
+  ChildIds: 819404776276892022
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 819404776276892022
+  Name: "E100"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18379153368566690389
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "594482/tanksportal-images6"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 5058555278218530405
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 214497969266016201
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 18379153368566690389
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1360
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 16823963026823143543
+  Name: "Portal Image Placement (Maus)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 1330930814111233710
+  ChildIds: 17882452360584907824
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17882452360584907824
+  Name: "ScreenObjectGroup (Maus)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 16823963026823143543
+  ChildIds: 236494362346134336
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 236494362346134336
+  Name: "Maus"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17882452360584907824
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "594482/tanksportal-images6"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 1330930814111233710
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16823963026823143543
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 17882452360584907824
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1240
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 5809883345558753300
+  Name: "Portal Image Placement (Type-74)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 204770200529260955
+  ChildIds: 13173997918300437277
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13173997918300437277
+  Name: "ScreenObjectGroup (Type-74)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 5809883345558753300
+  ChildIds: 3736876624499336729
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3736876624499336729
+  Name: "Type-74"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13173997918300437277
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "594482/tanksportal-images6"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 204770200529260955
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5809883345558753300
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 13173997918300437277
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1050
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 2246372827099685641
+  Name: "Portal Image Placement (E-50)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 15736027064093867944
+  ChildIds: 16549949893846288822
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16549949893846288822
+  Name: "ScreenObjectGroup (E50)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 2246372827099685641
+  ChildIds: 10530841336958340202
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10530841336958340202
+  Name: "E50"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16549949893846288822
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "594482/tanksportal-images6"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 15736027064093867944
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2246372827099685641
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 16549949893846288822
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 930
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 4041815941280601941
+  Name: "Portal Image Placement (OF-40)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 17550819903635724417
+  ChildIds: 785704330412080853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 785704330412080853
+  Name: "ScreenObjectGroup (OF40)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 4041815941280601941
+  ChildIds: 12073776040842164053
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12073776040842164053
+  Name: "OF40"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 785704330412080853
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "594482/tanksportal-images6"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 17550819903635724417
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4041815941280601941
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 785704330412080853
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 810
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 8243446999874846701
+  Name: "Portal Image Placement (FIAT)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 14896838236689438242
+  ChildIds: 5518096817122469117
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5518096817122469117
+  Name: "ScreenObjectGroup (FIAT)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 8243446999874846701
+  ChildIds: 10847548592462670058
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10847548592462670058
+  Name: "FIAT"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5518096817122469117
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "4414b1/tanksportal-images5"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 14896838236689438242
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8243446999874846701
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 5518096817122469117
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 620
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 13225248665880322805
+  Name: "Portal Image Placement (Lowe)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 10851876849281196047
+  ChildIds: 12713170776916842780
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12713170776916842780
+  Name: "ScreenObjectGroup (Lowe)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 13225248665880322805
+  ChildIds: 4006020975140494360
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4006020975140494360
+  Name: "Lowe"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12713170776916842780
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "4414b1/tanksportal-images5"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 10851876849281196047
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13225248665880322805
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 12713170776916842780
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1480
+        Y: 650
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 16925233522412178716
+  Name: "Portal Image Placement (Tiger 2)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 3905281976273380386
+  ChildIds: 11764476915614580919
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11764476915614580919
+  Name: "ScreenObjectGroup (Tiger2)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 16925233522412178716
+  ChildIds: 5210862018012655003
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5210862018012655003
+  Name: "Tiger2"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11764476915614580919
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "4414b1/tanksportal-images5"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 3905281976273380386
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16925233522412178716
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 11764476915614580919
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1240
+        Y: 650
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 9029114012319289075
+  Name: "Portal Image Placement (Panther)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 3545885971586880192
+  ChildIds: 14746563407955071077
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14746563407955071077
+  Name: "ScreenObjectGroup (Panther)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 9029114012319289075
+  ChildIds: 8240902051655305036
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8240902051655305036
+  Name: "Panther"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14746563407955071077
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "4414b1/tanksportal-images5"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 3545885971586880192
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9029114012319289075
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 14746563407955071077
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 810
+        Y: 650
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 17841931964965715369
+  Name: "Portal Image Placement (StuG)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 10255645689275998290
+  ChildIds: 17343911597592246150
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17343911597592246150
+  Name: "ScreenObjectGroup (StuG)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 17841931964965715369
+  ChildIds: 1625277851020974893
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1625277851020974893
+  Name: "StuG"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17343911597592246150
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "4414b1/tanksportal-images5"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 10255645689275998290
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17841931964965715369
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 17343911597592246150
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1680
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 279641991232220153
+  Name: "Portal Image Placement (Panzer 4)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 634113929730147843
+  ChildIds: 10108422214221511800
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10108422214221511800
+  Name: "ScreenObjectGroup (Panzer4)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 279641991232220153
+  ChildIds: 13527955822449651935
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13527955822449651935
+  Name: "Panzer 4"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10108422214221511800
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 634113929730147843
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 279641991232220153
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 10108422214221511800
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1050
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 13418801094559049561
+  Name: "Portal Image Placement (Chinu)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 11320771784972065819
+  ChildIds: 13243917813418113723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13243917813418113723
+  Name: "ScreenObjectGroup (Chinu)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 13418801094559049561
+  ChildIds: 3147213753699639498
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3147213753699639498
+  Name: "Chinu"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13243917813418113723
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 11320771784972065819
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13418801094559049561
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 13243917813418113723
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 930
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 4932901290579612618
+  Name: "Portal Image Placement (Leopard)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 15341081170029117047
+  ChildIds: 17669944934742970851
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17669944934742970851
+  Name: "ScreenObjectGroup (Leopard)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 4932901290579612618
+  ChildIds: 8183038577843232550
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8183038577843232550
+  Name: "Leopard"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17669944934742970851
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 15341081170029117047
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4932901290579612618
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 17669944934742970851
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 620
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 9330289147813706775
+  Name: "Portal Image Placement (Panzer 3)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 13951431874328013069
+  ChildIds: 9222717328855314851
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9222717328855314851
+  Name: "ScreenObjectGroup (Panzer3)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 9330289147813706775
+  ChildIds: 9319248411361182874
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9319248411361182874
+  Name: "Panzer3"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9222717328855314851
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "647fb3/tanksportal-images4"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 13951431874328013069
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9330289147813706775
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 9222717328855314851
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 620
+        Y: 170
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 10675183728233905096
+  Name: "Portal Image Placement (T110 E3)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 18385587975803279854
+  ChildIds: 3518820507963253801
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3518820507963253801
+  Name: "ScreenObjectGroup (T110 E3)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 10675183728233905096
+  ChildIds: 2282771536715424965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2282771536715424965
+  Name: "T110 E3"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3518820507963253801
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "647fb3/tanksportal-images4"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 18385587975803279854
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10675183728233905096
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 3518820507963253801
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1680
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 18130642021416062126
+  Name: "Portal Image Placement (T57)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 18353880253695254990
+  ChildIds: 759689190238720846
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 759689190238720846
+  Name: "ScreenObjectGroup (T57)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 18130642021416062126
+  ChildIds: 369736055118933128
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 369736055118933128
+  Name: "T57"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 759689190238720846
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c0d350/tanksportal-images3"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 18353880253695254990
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18130642021416062126
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 759689190238720846
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1480
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 3525654799527336549
+  Name: "Portal Image Placement (AM50)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 10982032624207686083
+  ChildIds: 4305195524398492625
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4305195524398492625
+  Name: "ScreenObjectGroup (AM50)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 3525654799527336549
+  ChildIds: 8789964762847928021
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8789964762847928021
+  Name: "AM50"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4305195524398492625
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c0d350/tanksportal-images3"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 10982032624207686083
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3525654799527336549
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 4305195524398492625
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1360
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 3803140556628784342
+  Name: "Portal Image Placement (IS-7)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 3454238236210324044
+  ChildIds: 4184319369114421796
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4184319369114421796
+  Name: "ScreenObjectGroup (IS-7)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 3803140556628784342
+  ChildIds: 15228777454230020684
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15228777454230020684
+  Name: "IS7"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4184319369114421796
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c0d350/tanksportal-images3"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 3454238236210324044
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3803140556628784342
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 4184319369114421796
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1240
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 3749508237983194913
+  Name: "Portal Image Placement (T62A1)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 13444613779767191715
+  ChildIds: 17538065016407084676
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17538065016407084676
+  Name: "ScreenObjectGroup (T62A1)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 3749508237983194913
+  ChildIds: 15961992445426577992
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15961992445426577992
+  Name: "T62A1"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17538065016407084676
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c0d350/tanksportal-images3"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 13444613779767191715
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3749508237983194913
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 17538065016407084676
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1050
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 11410288594073102754
+  Name: "Portal Image Placement (Patton)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 1489227477740047639
+  ChildIds: 16525171782561540020
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16525171782561540020
+  Name: "ScreenObjectGroup (Chimera)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 11410288594073102754
+  ChildIds: 3209443777342432726
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3209443777342432726
+  Name: "Chimera"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16525171782561540020
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "c0d350/tanksportal-images3"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 1489227477740047639
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11410288594073102754
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 16525171782561540020
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 930
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 17687123863228829233
+  Name: "Portal Image Placement (BatChat)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 17586140881204247740
+  ChildIds: 4912722073248422776
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4912722073248422776
+  Name: "ScreenObjectGroup (Chimera)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 17687123863228829233
+  ChildIds: 11534556659246567621
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11534556659246567621
+  Name: "Chimera"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4912722073248422776
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "301e59/tanksportal-images2"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 17586140881204247740
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17687123863228829233
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 4912722073248422776
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 810
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 15406107805040285112
+  Name: "Portal Image Placement (Chimera)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 13384116990472279234
+  ChildIds: 9437583064310079930
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9437583064310079930
+  Name: "ScreenObjectGroup (Chimera)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 15406107805040285112
+  ChildIds: 12802486491062199482
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12802486491062199482
+  Name: "Chimera"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9437583064310079930
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "301e59/tanksportal-images2"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 13384116990472279234
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15406107805040285112
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 9437583064310079930
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 620
+        Y: 880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 1109799804162889502
+  Name: "Portal Image Placement (T34 Heavy)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 12228427533779498847
+  ChildIds: 10075715947863485054
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10075715947863485054
+  Name: "ScreenObjectGroup (T34 Heavy)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 1109799804162889502
+  ChildIds: 2101379796118895350
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2101379796118895350
+  Name: "T34 Heavy"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10075715947863485054
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "301e59/tanksportal-images2"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 12228427533779498847
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1109799804162889502
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 10075715947863485054
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1480
+        Y: 650
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 16900463249011540787
+  Name: "Portal Image Placement (IS3)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 4326564743990745279
+  ChildIds: 6630022755544079641
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6630022755544079641
+  Name: "ScreenObjectGroup (IS3)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 16900463249011540787
+  ChildIds: 12744914533882813511
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12744914533882813511
+  Name: "IS3"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6630022755544079641
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "301e59/tanksportal-images2"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 4326564743990745279
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16900463249011540787
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 6630022755544079641
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1240
+        Y: 650
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 15034149068276235092
+  Name: "Portal Image Placement (Comet)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 5597099730590687441
+  ChildIds: 4740139572156596155
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4740139572156596155
+  Name: "ScreenObjectGroup (Comet)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 15034149068276235092
+  ChildIds: 80853614574877598
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 80853614574877598
+  Name: "Comet"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4740139572156596155
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "301e59/tanksportal-images2"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 5597099730590687441
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15034149068276235092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 4740139572156596155
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 810
+        Y: 650
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 17099501845076488792
+  Name: "Portal Image Placement (Wolverine)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 7717941491575079682
+  ChildIds: 7509989014752911322
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7509989014752911322
+  Name: "ScreenObjectGroup (Wolverine)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 17099501845076488792
+  ChildIds: 5921851532092543535
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5921851532092543535
+  Name: "Wolverine"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7509989014752911322
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 7717941491575079682
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17099501845076488792
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 7509989014752911322
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1680
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 1036701379992418007
+  Name: "Portal Image Placement (T34)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 5226295233787415240
+  ChildIds: 14964452462490950919
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14964452462490950919
+  Name: "ScreenObjectGroup (T34)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 1036701379992418007
+  ChildIds: 3961307507905162629
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3961307507905162629
+  Name: "T34"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14964452462490950919
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 5226295233787415240
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1036701379992418007
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 14964452462490950919
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 1050
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 15482594156752410489
+  Name: "Portal Image Placement (Sherman)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 13151151649984280692
+  ChildIds: 15759372264889482381
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15759372264889482381
+  Name: "ScreenObjectGroup (Sherman)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 15482594156752410489
+  ChildIds: 1880121028778332630
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1880121028778332630
+  Name: "Sherman"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15759372264889482381
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 13151151649984280692
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15482594156752410489
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 15759372264889482381
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 930
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 9497232614558791044
+  Name: "Portal Image Placement (Chaffee)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 454912270173521624
+  ChildIds: 4514071937050334406
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4514071937050334406
+  Name: "ScreenObjectGroup (Chaffee)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 9497232614558791044
+  ChildIds: 14320874836865252963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14320874836865252963
+  Name: "Chaffee"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4514071937050334406
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 454912270173521624
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9497232614558791044
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 3166679053287340824
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 4514071937050334406
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 620
+        Y: 410
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
+  Id: 13732957533575418092
+  Name: "Portal Image Placement (Stuart)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18378895235497925026
+  ChildIds: 1857574731340313150
+  ChildIds: 6451312247856383280
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6451312247856383280
+  Name: "ScreenObjectGroup (Stuart)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.05
+      Y: 0.05
+      Z: 0.05
+    }
+  }
+  ParentId: 13732957533575418092
+  ChildIds: 13862907279212189492
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13862907279212189492
+  Name: "Stuart"
+  Transform {
+    Location {
+      Y: -482
+      Z: -482
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6451312247856383280
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.169120297
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:View Distortion Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Intersection Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Unlit"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Disable Swirl and Edge"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Range"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Swirl Element Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Edge Distortion"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Use World Capture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0.0261588935
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.170215309
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.364886165
+    }
+    Overrides {
+      Name: "bp:Intensity Color Blend"
+      Float: 0.325952
+    }
+    Overrides {
+      Name: "bp:Game ID"
+      String: "9026c3/tanksportal-images1"
+    }
+    Overrides {
+      Name: "bp:Screenshot Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Use Radial Mask"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Mask Hardness"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Scale"
+      Float: 1.77777767
+    }
+    Overrides {
+      Name: "bp:Horizontal Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Vertical Bend Amount"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:V Scale"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:U Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        G: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.348742
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.802083
+        G: 0.097664
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Swirl Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator0"
+      }
+    }
+    Overrides {
+      Name: "bp:Mask Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Bend Distance"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Maintain picture scale"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14229011836246835513
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 1857574731340313150
+  Name: "MinimapScreenObject"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13732957533575418092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ScreenObject"
+      AssetReference {
+        Id: 1676661402537418123
+      }
+    }
+    Overrides {
+      Name: "cs:MiniMapPanel"
+      ObjectReference {
+        SelfId: 8153097948946962175
+      }
+    }
+    Overrides {
+      Name: "cs:ScreenObjectGroup"
+      ObjectReference {
+        SelfId: 6451312247856383280
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapVisibilitySource"
+      ObjectReference {
+        SelfId: 17812715862257263058
+      }
+    }
+    Overrides {
+      Name: "cs:PositionOffset"
+      Vector2 {
+        X: 620
+        Y: 170
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15898178794463633379
+    }
+  }
+}
+Objects {
   Id: 1781389592371830153
   Name: "Tutorial"
   Transform {

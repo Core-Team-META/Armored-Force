@@ -35,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14229011836246835513
-  Name: "Game Portal"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_webportal"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
