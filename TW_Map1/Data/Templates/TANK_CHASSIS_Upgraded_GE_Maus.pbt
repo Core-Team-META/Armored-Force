@@ -7,7 +7,7 @@ Assets {
       RootId: 16661255914680863456
       Objects {
         Id: 16661255914680863456
-        Name: "TANK_CHASSIS_Upgraded_GE_Maus"
+        Name: "30TANK_CHASSIS_Upgraded_GE_Maus"
         Transform {
           Scale {
             X: 1
@@ -56,9 +56,9 @@ Assets {
             Z: 100
           }
           MaxSpeed: 900
-          AccelerationRate: 400
+          AccelerationRate: 440
           DecelerationRate: 15
-          BrakeStrength: 375
+          BrakeStrength: 1
           TireFriction: 30
           CenterOfMassOFfset {
             Z: 20

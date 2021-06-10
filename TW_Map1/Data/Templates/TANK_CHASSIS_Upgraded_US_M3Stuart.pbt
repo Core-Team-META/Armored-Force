@@ -7,7 +7,7 @@ Assets {
       RootId: 16622461863356479011
       Objects {
         Id: 16622461863356479011
-        Name: "TANK_CHASSIS_Upgraded_US_M3Stuart"
+        Name: "01TANK_CHASSIS_Upgraded_US_M3Stuart"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 26000
+          Mass: 260000
           PhysicsBodyScale {
             X: 5.5
             Y: 2.5
@@ -54,11 +54,11 @@ Assets {
           PhysicsBodyOffset {
             Z: 50
           }
-          MaxSpeed: 1700
+          MaxSpeed: 1160
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 10
+          TireFriction: 30
           CenterOfMassOFfset {
             Z: 20
           }

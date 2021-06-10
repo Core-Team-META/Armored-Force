@@ -16,6 +16,10 @@ Assets {
           }
         }
         ParentId: 11473089596160032213
+        ChildIds: 7096559100792382456
+        ChildIds: 16417584620691992837
+        ChildIds: 17886830650930936242
+        ChildIds: 10976287313934793703
         ChildIds: 9669389152347951419
         ChildIds: 4092048403921180824
         ChildIds: 13907808345637679121
@@ -39,12 +43,277 @@ Assets {
         }
       }
       Objects {
+        Id: 7096559100792382456
+        Name: "InvisibleStoneHedgeCollider"
+        Transform {
+          Location {
+            X: -120.27803
+            Y: -345.048492
+            Z: 130.371704
+          }
+          Rotation {
+            Pitch: -89.2287292
+            Yaw: 76.9636688
+            Roll: -179.996948
+          }
+          Scale {
+            X: 1.63315642
+            Y: 1.63286746
+            Z: 1
+          }
+        }
+        ParentId: 5024972979897396711
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9384902847455848183
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              B: 0.9635759
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10248141355361265696
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 16417584620691992837
+        Name: "InvisibleStoneHedgeCollider"
+        Transform {
+          Location {
+            X: 56.2919121
+            Y: 304.417969
+            Z: 144.086243
+          }
+          Rotation {
+            Pitch: -89.2229
+            Yaw: -109.097015
+            Roll: -179.994949
+          }
+          Scale {
+            X: 1.63315511
+            Y: 1.55764103
+            Z: 0.999999821
+          }
+        }
+        ParentId: 5024972979897396711
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9384902847455848183
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              B: 0.9635759
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10248141355361265696
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17886830650930936242
+        Name: "InvisibleStoneHedgeCollider"
+        Transform {
+          Location {
+            X: 270.469116
+            Y: -115.126816
+            Z: 140.355835
+          }
+          Rotation {
+            Pitch: -89.2229156
+            Yaw: 166.964
+            Roll: -179.99585
+          }
+          Scale {
+            X: 1.63315511
+            Y: 1.55764103
+            Z: 0.999999821
+          }
+        }
+        ParentId: 5024972979897396711
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9384902847455848183
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              B: 0.9635759
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10248141355361265696
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10976287313934793703
+        Name: "InvisibleStoneHedgeCollider"
+        Transform {
+          Location {
+            X: -380.789795
+            Y: 71.4892
+            Z: 124.422546
+          }
+          Rotation {
+            Pitch: -89.2267
+            Yaw: -13.0367708
+            Roll: -179.996
+          }
+          Scale {
+            X: 1.63315618
+            Y: 1.31807852
+            Z: 0.999999881
+          }
+        }
+        ParentId: 5024972979897396711
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9384902847455848183
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              B: 0.9635759
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10248141355361265696
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 9669389152347951419
         Name: "ClientContext"
         Transform {
           Location {
           }
           Rotation {
+            Yaw: -1.7075472e-05
           }
           Scale {
             X: 1
@@ -10178,9 +10447,9 @@ Assets {
         Name: "Rock Pile 001"
         Transform {
           Location {
-            X: -416.862396
-            Y: -356.782959
-            Z: 491.017426
+            X: -129.761917
+            Y: -446.504364
+            Z: 483.112671
           }
           Rotation {
           }
@@ -10436,6 +10705,24 @@ Assets {
             BoundsScale: 1
           }
         }
+      }
+    }
+    Assets {
+      Id: 10248141355361265696
+      Name: "Plane 4m - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_4m_001"
+      }
+    }
+    Assets {
+      Id: 9384902847455848183
+      Name: "Sand 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_sand_001_uv"
       }
     }
     Assets {

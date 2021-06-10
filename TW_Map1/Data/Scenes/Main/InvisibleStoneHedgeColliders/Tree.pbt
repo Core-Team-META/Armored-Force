@@ -1189,9 +1189,9 @@ Objects {
   Name: "InvisibleStoneHedgeCollider"
   Transform {
     Location {
-      X: -38465.3477
-      Y: 10106.6201
-      Z: 325.196472
+      X: -38469.0039
+      Y: 10106.0137
+      Z: 397.74884
     }
     Rotation {
       Pitch: -2.78027344
@@ -1255,9 +1255,9 @@ Objects {
   Name: "InvisibleStoneHedgeCollider"
   Transform {
     Location {
-      X: -37725.5703
-      Y: 8468.16699
-      Z: 349.25824
+      X: -37723.0234
+      Y: 8467.36133
+      Z: 406.081238
     }
     Rotation {
       Pitch: -4.8444519
@@ -1320,9 +1320,9 @@ Objects {
   Name: "InvisibleStoneHedgeCollider"
   Transform {
     Location {
-      X: -37669.2148
-      Y: 11064.6064
-      Z: 340.473694
+      X: -37669.5234
+      Y: 11068.7354
+      Z: 402.457642
     }
     Rotation {
       Pitch: 3.82164097
@@ -1385,14 +1385,14 @@ Objects {
   Name: "InvisibleStoneHedgeCollider"
   Transform {
     Location {
-      X: -36350.8555
-      Y: 10504.3711
-      Z: 324.226318
+      X: -36365.3945
+      Y: 10459.2695
+      Z: 407.54
     }
     Rotation {
-      Pitch: -3.3364563
-      Yaw: -23.8256836
-      Roll: 0.616734803
+      Pitch: -3.39407349
+      Yaw: -23.8177185
+      Roll: 0.485884756
     }
     Scale {
       X: 6.70045471
@@ -1451,9 +1451,9 @@ Objects {
   Name: "InvisibleStoneHedgeCollider"
   Transform {
     Location {
-      X: -37062.2031
-      Y: 8413.5752
-      Z: 363.142
+      X: -37059.6563
+      Y: 8412.77
+      Z: 419.965
     }
     Rotation {
       Pitch: -2.68869019
@@ -2950,18 +2950,18 @@ Objects {
   Name: "InvisibleStoneHedgeCollider"
   Transform {
     Location {
-      X: -7585
-      Y: -13125
-      Z: 135
+      X: -7584.79883
+      Y: -13974.0752
+      Z: 134.99968
     }
     Rotation {
       Yaw: 0.0135496454
       Roll: 89.9999924
     }
     Scale {
-      X: 12.75
-      Y: 5
-      Z: 84
+      X: 12.7500124
+      Y: 4.99999428
+      Z: 66.172
     }
   }
   ParentId: 9705282421602965738
