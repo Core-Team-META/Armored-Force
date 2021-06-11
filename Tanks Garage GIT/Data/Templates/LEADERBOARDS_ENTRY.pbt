@@ -16,9 +16,30 @@ Assets {
           }
         }
         ParentId: 5878149396085058756
+        ChildIds: 14818560644185370639
         ChildIds: 2345913400286367678
         ChildIds: 1989976260070561240
         ChildIds: 13475207322202405040
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:PLAYERPOSITION"
+            ObjectReference {
+              SubObjectId: 14818560644185370639
+            }
+          }
+          Overrides {
+            Name: "cs:PLAYERNAME"
+            ObjectReference {
+              SubObjectId: 2345913400286367678
+            }
+          }
+          Overrides {
+            Name: "cs:SCORE"
+            ObjectReference {
+              SubObjectId: 1989976260070561240
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -34,7 +55,6 @@ Assets {
         Control {
           Width: 100
           Height: 43
-          UIY: 172
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -53,6 +73,82 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14818560644185370639
+        Name: "PLAYERPOSITION"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1032783523609644593
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 50
+          UIY: 4
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentHeight: true
+          Text {
+            Label: "1."
+            Color {
+              R: 0.278894335
+              G: 0.278894335
+              B: 0.278894335
+              A: 1
+            }
+            Size: 20
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 9686253618519087109
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:top"
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }
@@ -86,6 +182,7 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
+          Width: -130
           Height: -20
           UIY: 4
           RenderTransformPivot {
@@ -106,7 +203,7 @@ Assets {
             }
             Size: 20
             Justification {
-              Value: "mc:etextjustify:center"
+              Value: "mc:etextjustify:left"
             }
             AutoWrapText: true
             Font {
