@@ -3680,6 +3680,7 @@ Objects {
   ChildIds: 10767764800198002398
   ChildIds: 15701400141769842438
   ChildIds: 18190220056990607542
+  ChildIds: 13499609800702173481
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3691,6 +3692,162 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13499609800702173481
+  Name: "TEST4"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1170744160792143945
+  ChildIds: 16158807330390422148
+  ChildIds: 7724661702967330621
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Description"
+      String: "Kill Test"
+    }
+    Overrides {
+      Name: "cs:Required"
+      Float: 150
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "ASKILL4"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 8945471471486851310
+      }
+    }
+    Overrides {
+      Name: "cs:IsRepeatable"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Family"
+      String: "KILL"
+    }
+    Overrides {
+      Name: "cs:PreRequisite"
+      String: "KILL,KILL2"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4954130354820301591
+    }
+  }
+}
+Objects {
+  Id: 7724661702967330621
+  Name: "Cosmetic Tokens"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13499609800702173481
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "COSM_TOKEN"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
+  }
+}
+Objects {
+  Id: 16158807330390422148
+  Name: "Gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13499609800702173481
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "GOLD"
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
   }
 }
 Objects {
@@ -3730,7 +3887,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 4417804760414966795
+        Id: 5143737906702620566
       }
     }
     Overrides {
@@ -3886,7 +4043,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 4417804760414966795
+        Id: 18263634593835897870
       }
     }
     Overrides {
@@ -4042,7 +4199,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 4417804760414966795
+        Id: 9349277896133220339
       }
     }
     Overrides {
@@ -4316,13 +4473,19 @@ Objects {
     Overrides {
       Name: "cs:Achievement_EndScreen_Template"
       AssetReference {
-        Id: 13588584302579303775
+        Id: 8577598584564231637
       }
     }
     Overrides {
       Name: "cs:UIAchievementScrollPanel"
       AssetReference {
         Id: 12951294657090176674
+      }
+    }
+    Overrides {
+      Name: "cs:ACHIEVEMENT_SCROLL"
+      ObjectReference {
+        SelfId: 8554670856797773246
       }
     }
   }
