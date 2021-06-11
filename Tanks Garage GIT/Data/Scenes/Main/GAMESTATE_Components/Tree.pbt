@@ -5250,7 +5250,7 @@ Objects {
     Overrides {
       Name: "cs:AchievementsViewUI"
       ObjectReference {
-        SelfId: 15401294820751075291
+        SelfId: 4867176115381794883
       }
     }
     Overrides {
