@@ -8,5 +8,6 @@ ScreenshotPaths: "D:\\ART\\Game Dev\\Lets Be Awkward Games\\Team META\\TANKS\\po
 ScreenshotPaths: "D:\\ART\\Game Dev\\Lets Be Awkward Games\\Team META\\TANKS\\portals\\currency_bag_silver_1.jpg"
 ScreenshotPaths: "D:\\ART\\Game Dev\\Lets Be Awkward Games\\Team META\\TANKS\\portals\\currency_crate_gold_1.jpg"
 ScreenshotPaths: "D:\\ART\\Game Dev\\Lets Be Awkward Games\\Team META\\TANKS\\portals\\currency_crate_silver2_1.jpg"
+ScreenshotPaths: "D:\\ART\\Game Dev\\Lets Be Awkward Games\\Team META\\TANKS\\portals\\bundle_soldier_1.jpg"
 OwnerId: "ef18f7661bf14d0eae60d7f31ea769af"
 SerializationVersion: 1
