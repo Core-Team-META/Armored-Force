@@ -23,7 +23,7 @@ function ShowDamageFeedback(amount, armorName, pos)
 		elseif(armorName == "TURRETREAR") then
 			Header.text = "HIT TURRET FROM REAR! (0.9x DAMAGE)"
 		elseif(armorName == "TRACK") then
-			Header.text = "HIT TRACKS! (0.2x DAMAGE)"
+			Header.text = "HIT TRACKS! (0.5x DAMAGE)"
 		end
 	end
 	if(Object.IsValid(MetalImpactSFX)) then
