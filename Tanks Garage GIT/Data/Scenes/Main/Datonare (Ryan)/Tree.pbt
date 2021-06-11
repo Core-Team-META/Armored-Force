@@ -213,7 +213,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -225,11 +225,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.559952497
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.042449
     }
     Overrides {
       Name: "bp:U Offset"
@@ -551,10 +551,6 @@ Objects {
       Float: 0
     }
     Overrides {
-      Name: "bp:U Scale"
-      Float: 1.333
-    }
-    Overrides {
       Name: "bp:Horizontal Bend Amount"
       Float: 0
     }
@@ -564,15 +560,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 0.75
+      Float: 0.559952497
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:U Offset"
-      Float: 0
+      Float: -0.0374561213
     }
     Overrides {
       Name: "bp:Color A"
@@ -891,7 +883,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.333
+      Float: 1.2
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -903,15 +895,15 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 0.75
+      Float: 0.779822648
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: -0.0298226513
     }
     Overrides {
       Name: "bp:U Offset"
-      Float: 0
+      Float: -0.0157483611
     }
     Overrides {
       Name: "bp:Color A"
@@ -1230,7 +1222,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.333
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -1242,11 +1234,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 0.75
+      Float: 0.5
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.07
     }
     Overrides {
       Name: "bp:U Offset"
@@ -1569,7 +1561,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -1581,11 +1573,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.5
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.07
     }
     Overrides {
       Name: "bp:U Offset"
@@ -1908,7 +1900,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -1920,11 +1912,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.5
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.045
     }
     Overrides {
       Name: "bp:U Offset"
@@ -2247,7 +2239,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.333
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -2259,11 +2251,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 0.75
+      Float: 0.5
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.07
     }
     Overrides {
       Name: "bp:U Offset"
@@ -2586,7 +2578,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -2598,11 +2590,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:V Offset"
-      Float: 0
+      Float: 0.5
     }
     Overrides {
       Name: "bp:U Offset"
@@ -2669,6 +2657,10 @@ Objects {
     Overrides {
       Name: "bp:Maintain picture scale"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: 0.07
     }
   }
   Collidable_v2 {
@@ -2925,7 +2917,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -2937,11 +2929,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.5
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.07
     }
     Overrides {
       Name: "bp:U Offset"
@@ -3263,10 +3255,6 @@ Objects {
       Float: 0
     }
     Overrides {
-      Name: "bp:U Scale"
-      Float: 1.333
-    }
-    Overrides {
       Name: "bp:Horizontal Bend Amount"
       Float: 0
     }
@@ -3276,11 +3264,7 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 0.75
-    }
-    Overrides {
-      Name: "bp:V Offset"
-      Float: 0
+      Float: 0.537456095
     }
     Overrides {
       Name: "bp:U Offset"
@@ -3347,6 +3331,10 @@ Objects {
     Overrides {
       Name: "bp:Maintain picture scale"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:V Offset"
+      Float: -0.07
     }
   }
   Collidable_v2 {
@@ -3603,7 +3591,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -3615,11 +3603,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.5
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.2
     }
     Overrides {
       Name: "bp:U Offset"
@@ -3942,7 +3930,7 @@ Objects {
     }
     Overrides {
       Name: "bp:U Scale"
-      Float: 1.77777767
+      Float: 1
     }
     Overrides {
       Name: "bp:Horizontal Bend Amount"
@@ -3954,11 +3942,11 @@ Objects {
     }
     Overrides {
       Name: "bp:V Scale"
-      Float: 1
+      Float: 0.5
     }
     Overrides {
       Name: "bp:V Offset"
-      Float: 0
+      Float: 0.2
     }
     Overrides {
       Name: "bp:U Offset"
