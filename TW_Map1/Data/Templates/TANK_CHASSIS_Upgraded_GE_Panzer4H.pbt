@@ -7,7 +7,7 @@ Assets {
       RootId: 2349191729022502425
       Objects {
         Id: 2349191729022502425
-        Name: "TANK_CHASSIS_Upgraded_GE_Panzer4H"
+        Name: "21TANK_CHASSIS_Upgraded_GE_Panzer4H"
         Transform {
           Scale {
             X: 1
@@ -55,10 +55,10 @@ Assets {
             X: -50
             Z: 50
           }
-          MaxSpeed: 1100
+          MaxSpeed: 900
           AccelerationRate: 400
           DecelerationRate: 15
-          BrakeStrength: 750
+          BrakeStrength: 1
           TireFriction: 10
           CenterOfMassOFfset {
             Z: 20

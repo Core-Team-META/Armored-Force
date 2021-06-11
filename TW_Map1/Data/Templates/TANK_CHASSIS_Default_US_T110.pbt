@@ -7,7 +7,7 @@ Assets {
       RootId: 15261358702013478541
       Objects {
         Id: 15261358702013478541
-        Name: "TANK_CHASSIS_Default_US_T110"
+        Name: "17TANK_CHASSIS_Default_US_T110"
         Transform {
           Scale {
             X: 1

@@ -7,7 +7,7 @@ Assets {
       RootId: 7760524158744867356
       Objects {
         Id: 7760524158744867356
-        Name: "TANK_CHASSIS_Upgraded_GE_Stug3G"
+        Name: "22TANK_CHASSIS_Upgraded_GE_Stug3G"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -30
             Z: 50
           }
-          MaxSpeed: 1100
+          MaxSpeed: 880
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 750

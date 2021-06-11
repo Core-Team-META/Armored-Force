@@ -7,7 +7,7 @@ Assets {
       RootId: 17145847341972920585
       Objects {
         Id: 17145847341972920585
-        Name: "TANK_CHASSIS_Upgraded_IT_FIAT6616"
+        Name: "26TANK_CHASSIS_Upgraded_IT_FIAT6616"
         Transform {
           Scale {
             X: 1
@@ -42,7 +42,7 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 2200
+          Mass: 22000
           PhysicsBodyScale {
             X: 6
             Y: 2.5

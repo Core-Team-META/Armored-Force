@@ -7,7 +7,7 @@ Assets {
       RootId: 12750289463121341098
       Objects {
         Id: 12750289463121341098
-        Name: "TANK_CHASSIS_Default_GE_Tiger2"
+        Name: "24TANK_CHASSIS_Default_GE_Tiger2"
         Transform {
           Scale {
             X: 1
