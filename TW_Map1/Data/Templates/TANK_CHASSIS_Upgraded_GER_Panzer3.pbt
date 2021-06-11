@@ -54,7 +54,7 @@ Assets {
           PhysicsBodyOffset {
             Z: 92.5440216
           }
-          MaxSpeed: 1700
+          MaxSpeed: 1360
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

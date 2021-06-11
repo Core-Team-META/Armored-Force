@@ -7,7 +7,7 @@ Assets {
       RootId: 9339050458742790163
       Objects {
         Id: 9339050458742790163
-        Name: "TANK_CHASSIS_Default_JP_ChiNu"
+        Name: "20TANK_CHASSIS_Default_JP_ChiNu"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -73.1867676
             Z: 105
           }
-          MaxSpeed: 800
+          MaxSpeed: 720
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

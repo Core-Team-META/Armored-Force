@@ -7,7 +7,7 @@ Assets {
       RootId: 11287507908810474218
       Objects {
         Id: 11287507908810474218
-        Name: "TANK_CHASSIS_Default_GE_Leopard"
+        Name: "19TANK_CHASSIS_Default_GE_Leopard"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -50
             Z: 50
           }
-          MaxSpeed: 1350
+          MaxSpeed: 1147
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

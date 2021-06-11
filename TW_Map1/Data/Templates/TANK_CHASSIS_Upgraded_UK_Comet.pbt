@@ -7,7 +7,7 @@ Assets {
       RootId: 9303364304416259622
       Objects {
         Id: 9303364304416259622
-        Name: "TANK_CHASSIS_Upgraded_UK_Comet"
+        Name: "05TANK_CHASSIS_Upgraded_UK_Comet"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -80
             Z: 40
           }
-          MaxSpeed: 1350
+          MaxSpeed: 1080
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
