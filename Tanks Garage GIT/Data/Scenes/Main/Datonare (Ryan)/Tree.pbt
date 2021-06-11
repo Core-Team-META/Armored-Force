@@ -819,7 +819,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -863,7 +863,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "c8da5f/tanksportal-images8"
+      String: "4f9018/tanksportal-images9"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -1158,7 +1158,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -1226,7 +1226,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Emissive Boost"
-      Float: 0
+      Float: 1
     }
     Overrides {
       Name: "bp:U Scale"
@@ -1497,7 +1497,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -1565,7 +1565,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Emissive Boost"
-      Float: 0
+      Float: 1
     }
     Overrides {
       Name: "bp:U Scale"
@@ -1836,7 +1836,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -1904,7 +1904,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Emissive Boost"
-      Float: 0
+      Float: 1
     }
     Overrides {
       Name: "bp:U Scale"
@@ -2514,7 +2514,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -2582,7 +2582,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Emissive Boost"
-      Float: 0
+      Float: 1
     }
     Overrides {
       Name: "bp:U Scale"
@@ -2853,7 +2853,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -2921,7 +2921,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Emissive Boost"
-      Float: 0
+      Float: 1
     }
     Overrides {
       Name: "bp:U Scale"
@@ -3192,7 +3192,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -3236,11 +3236,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "c8da5f/tanksportal-images8"
+      String: "4f9018/tanksportal-images9"
     }
     Overrides {
       Name: "bp:Screenshot Index"
-      Int: 3
+      Int: 2
     }
     Overrides {
       Name: "bp:Speed"
@@ -3531,7 +3531,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -3575,7 +3575,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "c8da5f/tanksportal-images8"
+      String: "4f9018/tanksportal-images9"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -3730,7 +3730,7 @@ Objects {
     Overrides {
       Name: "cs:MiniMapPanel"
       ObjectReference {
-        SelfId: 17893534697042367868
+        SelfId: 10532325234254636650
       }
     }
     Overrides {
@@ -3749,7 +3749,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1335
-        Y: 190
+        Y: 180
       }
     }
   }
@@ -3870,7 +3870,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Unlit"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "bp:Disable Swirl and Edge"
@@ -3914,11 +3914,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "5a8909/tanksportal-images7"
+      String: "c8da5f/tanksportal-images8"
     }
     Overrides {
       Name: "bp:Screenshot Index"
-      Int: 4
+      Int: 5
     }
     Overrides {
       Name: "bp:Speed"
@@ -4069,7 +4069,7 @@ Objects {
     Overrides {
       Name: "cs:MiniMapPanel"
       ObjectReference {
-        SelfId: 17893534697042367868
+        SelfId: 10532325234254636650
       }
     }
     Overrides {
@@ -4088,7 +4088,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 320
-        Y: 190
+        Y: 180
       }
     }
   }
