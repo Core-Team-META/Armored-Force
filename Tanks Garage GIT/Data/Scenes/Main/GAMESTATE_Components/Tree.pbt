@@ -8910,6 +8910,12 @@ Objects {
         SelfId: 14460394602831913523
       }
     }
+    Overrides {
+      Name: "cs:AxisDisplayTanks"
+      ObjectReference {
+        SelfId: 16591706574147490427
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
