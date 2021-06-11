@@ -1,4 +1,13 @@
 Assets {
+  Id: 18263634593835897870
+  Name: "Arrow"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Arrow"
+  }
+}
+Assets {
   Id: 17066449609679557524
   Name: "Frame Outline Thin 002"
   PlatformAssetType: 9
@@ -71,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9349277896133220339
+  Name: "Alien"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_021"
+  }
+}
+Assets {
   Id: 9084852752205607158
   Name: "Fantasy Ability Blue 016"
   PlatformAssetType: 9
@@ -80,12 +98,21 @@ Assets {
   }
 }
 Assets {
-  Id: 4417804760414966795
-  Name: "Fantasy Ability Green 011"
+  Id: 8945471471486851310
+  Name: "Boar"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Ability_Green_011"
+    AssetId: "UI_Fantasy_Icon_Boar"
+  }
+}
+Assets {
+  Id: 5143737906702620566
+  Name: "Band Aid"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_043"
   }
 }
 Assets {
