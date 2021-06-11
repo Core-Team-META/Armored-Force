@@ -1581,6 +1581,12 @@ Objects {
         Id: 18347317752157652426
       }
     }
+    Overrides {
+      Name: "cs:26_W"
+      AssetReference {
+        Id: 3719164494606147373
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
