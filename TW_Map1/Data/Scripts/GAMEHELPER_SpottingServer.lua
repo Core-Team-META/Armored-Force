@@ -9,6 +9,7 @@ local spottingXP = script:GetCustomProperty("SpottingXP")
 local spottingList = {}
 local viewPointList = {}
 local viewRangeList = {}
+local spottedPlayerList = {}
 
 local damageOverride ={}
 
@@ -48,14 +49,25 @@ function AddToList(player)
 		
 	for i=1, 16 do
 		if script:GetCustomProperty("P" .. tostring(i)) == "" then
-			-- Add XP
-			player:AddResource(Constants_API.XP, spottingXP)
-			-- Add RP to tank
-			player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
-			Events.Broadcast("PlayerSpotted", player, spottingXP)
-			Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
 			script:SetNetworkedCustomProperty("P" .. tostring(i), player.id)
-			return
+			
+			local canGainSpottedXP = true
+			for i, pId in ipairs(spottedPlayerList) do
+				if(pId == player.id) then
+					canGainSpottedXP = false
+				end
+			end
+			
+			if canGainSpottedXP then
+				-- Add XP
+				player:AddResource(Constants_API.XP, spottingXP)
+				-- Add RP to tank
+				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
+				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
+				table.insert(spottedPlayerList, player.id)
+			end
+			
+			return		
 		end
 	end
 end
