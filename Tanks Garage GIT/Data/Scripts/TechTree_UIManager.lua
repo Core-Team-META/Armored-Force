@@ -90,6 +90,7 @@ local useFreeRPPanel = script:GetCustomProperty("UseFreeRPPanel"):WaitForObject(
 local freeRPNo = script:GetCustomProperty("No"):WaitForObject()
 local freeRPYes = script:GetCustomProperty("Yes"):WaitForObject()
 local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
+local axisDisplayTanks = script:GetCustomProperty("AxisDisplayTanks"):WaitForObject()
 local CONFIRM_WINDOW_CLOSE_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CLOSE_BUTTON"):WaitForObject()
 local CONFIRM_WINDOW_CONFIRM_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CONFIRM_BUTTON"):WaitForObject()
 
@@ -193,6 +194,8 @@ end
 function DisableThisComponent()
 
 	displayTanks.visibility = Visibility.FORCE_OFF
+	axisDisplayTanks.visibility = Visibility.FORCE_OFF
+	
 	CloseTechTreeModal()
 	CloseUI()
 	

@@ -1271,7 +1271,7 @@ function CLICKED_BUTTON_ALLIES(BUTTON_ALLIES)
 	BUTTON_ALLIES_ACTIVE.visibility = Visibility.FORCE_ON
 	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_OFF
 	BUTTON_AXIS_ACTIVE.visibility = Visibility.FORCE_OFF
-	World.FindObjectByName("AlliesTanksPortalImages").visibility = Visibility.FORCE_ON
+	World.FindObjectByName("AlliesTanksPortalImages").visibility = Visibility.INHERIT
 	World.FindObjectByName("AxisTanksPortalImages").visibility = Visibility.FORCE_OFF
 	SFX_CLICK:Play()
 	end
@@ -1300,7 +1300,7 @@ function CLICKED_BUTTON_AXIS(BUTTON_AXIS)
 	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_OFF
 	BUTTON_ALLIES_ACTIVE.visibility = Visibility.FORCE_OFF
 	World.FindObjectByName("AlliesTanksPortalImages").visibility = Visibility.FORCE_OFF
-	World.FindObjectByName("AxisTanksPortalImages").visibility = Visibility.FORCE_ON
+	World.FindObjectByName("AxisTanksPortalImages").visibility = Visibility.INHERIT
 	SFX_CLICK:Play()
 	end
 end
