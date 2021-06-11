@@ -15,7 +15,7 @@ local menuIndex = {
 	[0] = "DEFAULT_MENU",
 	[1] = "SHOP_MENU",
 	[2] = "ACHIEVEMENTS_MENU",
-	[3] = "DEFAULT_MENU", -- supposed to be leaderboards, but leaderboards page not implemented yet.
+	[3] = "LEADERBOARDS_MENU",
 	[4] = "TECH_TREE_MENU"
 }
 	

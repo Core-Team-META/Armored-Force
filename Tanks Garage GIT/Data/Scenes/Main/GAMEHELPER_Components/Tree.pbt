@@ -3668,6 +3668,7 @@ Objects {
   ChildIds: 13237728475164602616
   ChildIds: 2001611918321763745
   ChildIds: 57192136426736814
+  ChildIds: 18250057345404307839
   ChildIds: 15514622962550807715
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3694,6 +3695,51 @@ Objects {
     Rotation {
       Pitch: -3.57421875
       Yaw: -143.729
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1076283315250795942
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Camera {
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+  }
+}
+Objects {
+  Id: 18250057345404307839
+  Name: "LEADERBOARDS_MENU"
+  Transform {
+    Location {
+      X: 2017.88025
+      Y: 8729.37305
+      Z: 1008.50867
+    }
+    Rotation {
+      Pitch: -0.116638184
+      Yaw: -52.3414917
     }
     Scale {
       X: 1
