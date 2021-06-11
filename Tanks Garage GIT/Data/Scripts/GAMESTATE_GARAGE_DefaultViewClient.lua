@@ -30,6 +30,7 @@ local localPlayer = Game.GetLocalPlayer()
 	TECH_TREE_MENU
 	SHOOTING_RANGE
 	ACHIEVEMENTS_MENU
+	LEADERBOARDS_MENU
 	
 ]]
 
