@@ -347,6 +347,32 @@ end
 function ProjectileImpacted(expiredProjectile, other)
 
 	ProjectileExpired(expiredProjectile)
+	
+	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce then
+		return
+	end
+	
+	expiredProjectile.serverUserData.hitOnce = true
+	
+	local potentialDamage = driver.serverUserData.currentTankData.fullDamage
+	local totalDamage = math.floor(potentialDamage - potentialDamage * 0.2)
+	local damageDealt = Damage.New(totalDamage)
+	
+	damageDealt.sourcePlayer = driver
+	damageDealt.reason = DamageReason.COMBAT
+	--other.driver:ApplyDamage(damageDealt)
+
+	local attackData = {
+		object = other.driver,
+		damage = damageDealt,
+		source = driver,
+		position = nil,
+		rotation = nil,
+		tags = {id = "Example"}
+	}
+	COMBAT.ApplyDamage(attackData)
+	
+	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", vehicle:GetWorldPosition())
 
 end
 
@@ -383,7 +409,7 @@ function OnArmorHit(trigger, other)
 		
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
-		driver:ApplyDamage(damageDealt)
+		--driver:ApplyDamage(damageDealt)
 
 		local attackData = {
 			object = driver,

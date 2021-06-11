@@ -27,6 +27,7 @@ local thisComponent = "SHOOTING_RANGE"
 local localPlayer = Game.GetLocalPlayer()
 
 local garageModel = {}
+local garageModelWheels = nil
 
 local rememberSlot = nil
 
@@ -227,6 +228,13 @@ function ChangeGarageModel(id)
 	end
 	
 	SetGarageModelFromEquippedTank(localPlayer, id)
+	
+	if id == "26" and not Object.IsValid(garageModelWheels) then
+		local wheelSkin = defaultSkins:GetCustomProperty("26_W")
+		garageModelWheels = World.SpawnAsset(wheelSkin, {parent = equippedTankInGarage})
+	elseif id ~= "26" and Object.IsValid(garageModelWheels) then
+		garageModelWheels:Destroy()
+	end
 	
 	local newModel = World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
 	local modelSFX = newModel:FindDescendantsByType("Audio")
