@@ -258,7 +258,6 @@ CHOSEN_MODE = 3
 function Tick(deltaTime)
 
 	Task.Wait(0.01)
-	
 	if isMoving then
 		timeRemaining = CoreMath.Clamp(timeRemaining - deltaTime, 0, DROPDOWN_TOGGLE_TIME)
 		local newPosition = 0
@@ -3236,11 +3235,8 @@ end
 
 -- INITIALISING CHECK_STATE() FUNCTION
 function INITIATE_CHECK_STATE(player)
-	CLICKED_CHOOSE_MODE_TUNDRA(CHOOSE_MODE_TUNDRA_BUTTON)
 	CHECK_STATE()
 end
-
-CLICKED_STATS()
 
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
