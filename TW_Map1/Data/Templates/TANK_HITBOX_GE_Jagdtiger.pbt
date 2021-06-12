@@ -55,6 +55,8 @@ Assets {
         ChildIds: 1004215387615156112
         ChildIds: 7033468927572205859
         ChildIds: 17491169254284460320
+        ChildIds: 18068278093952928950
+        ChildIds: 16733495949597149892
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -398,6 +400,98 @@ Assets {
           Overrides {
             Name: "cs:ArmorValue"
             Float: 0.1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 18068278093952928950
+        Name: "TRACK"
+        Transform {
+          Location {
+            X: -25
+            Y: -265
+            Z: -90
+          }
+          Rotation {
+          }
+          Scale {
+            X: 10
+            Y: 1
+            Z: 1.7
+          }
+        }
+        ParentId: 6281844670646351756
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 16733495949597149892
+        Name: "TRACK"
+        Transform {
+          Location {
+            X: -25
+            Y: 265
+            Z: -90
+          }
+          Rotation {
+          }
+          Scale {
+            X: 10
+            Y: 1
+            Z: 1.7
+          }
+        }
+        ParentId: 6281844670646351756
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
           }
         }
         Collidable_v2 {
