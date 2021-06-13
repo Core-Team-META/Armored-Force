@@ -9,8 +9,10 @@ local savedState = ""
 local localPlayer = Game.GetLocalPlayer()
 
 local challengeButtonIndex = {}
+local challengeButtonStates = {}
 
 local challengeInfoSet = false
+local initialized = false
 local currentDueDate = nil
 local currentDate = nil
 
@@ -78,6 +80,10 @@ end
 
 function OnChallengeInfoChanged(serverScript, property)
 
+	while not initialized do
+		Task.Wait()
+	end
+
 	local playerDataFound = nil
 	local propertyValue = nil
 
@@ -94,8 +100,8 @@ function OnChallengeInfoChanged(serverScript, property)
 		local infoString = string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, ",") - 1)
 		local loginString = string.sub(playerDataFound, string.find(playerDataFound, ",") + 1, playerDataFound.size)
 		
-		print(infoString)
-		print(loginString)
+		--print(infoString)
+		--print(loginString)
 		
 		UnpackChallengeInfo(infoString)
 		
@@ -108,18 +114,63 @@ function OnChallengeInfoChanged(serverScript, property)
 			local target = localPlayer.clientUserData.CHALLENGES[x].target
 			local progress = localPlayer.clientUserData.CHALLENGES[x].progress
 			
-			if type then
-				child:GetCustomProperty("ChallengeType"):WaitForObject().text = type
-			end
 			if target and progress and progress >= 0 then
-				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = tostring(progress) .. "/" .. tostring(target)
+				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = type .. ": " .. tostring(progress) .. "/" .. tostring(target)
+				child:GetCustomProperty("ChallengeProgressBar"):WaitForObject().progress = progress/target
 				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = progress >= target
+				
+				if GetActiveButtonState(child) ~= "Locked" then
+					SwitchButtonState(child, "Locked")
+				end
 			else 
-				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = "CLAIMED"
-				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = false			
+				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = ""
+				child:GetCustomProperty("ChallengeProgressBar"):WaitForObject().progress = 1
+				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = false
+				
+				if GetActiveButtonState(child) ~= "Idle" then
+					SwitchButtonState(child, "Idle")
+				end
 			end
 		end
 		
+	end
+
+end
+
+function SwitchButtonState(challenge, state)
+
+	for x, s in pairs(challengeButtonStates[challenge]) do
+		if x == state then
+			s.visibility = Visibility.INHERIT
+		else 
+			s.visibility = Visibility.FORCE_OFF
+		end
+	end
+
+end
+
+function GetActiveButtonState(challenge)
+
+	for x, s in pairs(challengeButtonStates[challenge]) do
+		if s.visibility == Visibility.INHERIT then
+			return x
+		end
+	end
+
+end
+
+function OnClaimButtomHovered(button)
+
+	if GetActiveButtonState(button.parent.parent) == "Idle" then
+		SwitchButtonState(button.parent.parent, "Hover")
+	end
+
+end
+
+function OnClaimButtomUnhovered(button)
+
+	if GetActiveButtonState(button.parent.parent) == "Hover" then
+		SwitchButtonState(button.parent.parent, "Idle")
 	end
 
 end
@@ -130,11 +181,19 @@ function OnClaimButtonPressed(button)
 
 	Events.BroadcastToServer("CLAIM_REWARD", challengeButtonIndex[button])
 	
+	if GetActiveButtonState(button.parent.parent) == "Hover" then
+		SwitchButtonState(button.parent.parent, "Pressed")
+	end
+	
 end
 
 function OnDailyClaimButtonPressed(button)
 
 	Events.BroadcastToServer("CLAIM_LOGIN")
+	
+	if GetActiveButtonState(button.parent.parent) == "Hover" then
+		SwitchButtonState(button.parent.parent, "Pressed")
+	end
 
 end
 
@@ -164,11 +223,20 @@ function Tick()
 		if loginButton.isInteractable then
 			loginButton.isInteractable = false
 		end
+		
+		if GetActiveButtonState(dailyLogin) == "Pressed" then
+			SwitchButtonState(dailyLogin, "Claimed")
+		end
+		
 	else 
 		loginText.text = "00:00:00"
 		
 		if not loginButton.isInteractable then
 			loginButton.isInteractable = true
+		end
+		
+		if GetActiveButtonState(dailyLogin) == "Locked" or GetActiveButtonState(dailyLogin) == "Claimed" then
+			SwitchButtonState(dailyLogin, "Idle")
 		end
 	end
 	
@@ -186,11 +254,45 @@ function InitializeComponent()
 	for x, child in ipairs(dailyChallenges:GetChildren()) do
 		challengeButton = child:GetCustomProperty("ChallengeClaim"):WaitForObject()
 		challengeButton.clickedEvent:Connect(OnClaimButtonPressed)
+		challengeButton.hoveredEvent:Connect(OnClaimButtomHovered)
+		challengeButton.unhoveredEvent:Connect(OnClaimButtomUnhovered)
 		challengeButton.isInteractable = false
 		challengeButtonIndex[challengeButton] = x
+
+		local challengeTitle = child:GetCustomProperty("ChallengeTitle"):WaitForObject()
+		challengeTitle.text = "Daily Challenge " .. tostring(x)
+		local buttonStates = child:GetCustomProperty("ChallengeButtonStates"):WaitForObject()
+		
+		challengeButtonStates[child] = {}
+		challengeButtonStates[child]["Locked"] =buttonStates:FindChildByName("BUTTON_CHALLANGE_LOCKED")
+		challengeButtonStates[child]["Idle"] =buttonStates:FindChildByName("BUTTON_CHALLANGE_IDLE")
+		challengeButtonStates[child]["Pressed"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_PRESSED")
+		challengeButtonStates[child]["Hover"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_HOVER")
+		challengeButtonStates[child]["Claimed"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_CLAIMED")
+		
+		SwitchButtonState(child, "Locked")
+		
 	end
 	
 	loginButton.clickedEvent:Connect(OnDailyClaimButtonPressed)
+	loginButton.hoveredEvent:Connect(OnClaimButtomHovered)
+	loginButton.unhoveredEvent:Connect(OnClaimButtomUnhovered)
+	
+	local loginTitle = dailyLogin:GetCustomProperty("LoginTitle"):WaitForObject()
+	loginTitle.text = "Daily Login"
+	
+	local buttonStates = dailyLogin:GetCustomProperty("LoginClaimButtonStates"):WaitForObject()
+	
+	challengeButtonStates[dailyLogin] = {}
+	challengeButtonStates[dailyLogin]["Locked"] =buttonStates:FindChildByName("BUTTON_CHALLANGE_LOCKED")
+	challengeButtonStates[dailyLogin]["Idle"] =buttonStates:FindChildByName("BUTTON_CHALLANGE_IDLE")
+	challengeButtonStates[dailyLogin]["Pressed"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_PRESSED")
+	challengeButtonStates[dailyLogin]["Hover"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_HOVER")
+	challengeButtonStates[dailyLogin]["Claimed"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_CLAIMED")
+	
+	SwitchButtonState(dailyLogin, "Locked")
+	
+	initialized = true
 	
 	OnChallengeInfoChanged(achievementsViewServer, "")
 
