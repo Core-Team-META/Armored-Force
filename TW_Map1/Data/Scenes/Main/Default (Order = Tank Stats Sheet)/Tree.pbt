@@ -422,6 +422,11 @@ Objects {
           String: "15TANK_CHASSIS_Default_USSR_IS7"
         }
         Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -653,6 +658,11 @@ Objects {
         Overrides {
           Name: "Name"
           String: "10TANK_CHASSIS_Default_UK_Chimera"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
         }
         Overrides {
           Name: "Rotation"

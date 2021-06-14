@@ -117382,13 +117382,6 @@ Objects {
       Float: 0.912584
     }
     Overrides {
-      Name: "bp:Lower Hemisphere Color"
-      Color {
-        R: 0.444000036
-        A: 0.585000038
-      }
-    }
-    Overrides {
       Name: "bp:Realtime Update"
       Bool: false
     }
