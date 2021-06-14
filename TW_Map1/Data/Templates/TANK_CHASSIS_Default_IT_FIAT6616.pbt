@@ -7,7 +7,7 @@ Assets {
       RootId: 17145847341972920585
       Objects {
         Id: 17145847341972920585
-        Name: "TANK_CHASSIS_Default_IT_FIAT6616"
+        Name: "26TANK_CHASSIS_Default_IT_FIAT6616"
         Transform {
           Scale {
             X: 1

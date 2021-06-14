@@ -7,7 +7,7 @@ Assets {
       RootId: 13454049678549189348
       Objects {
         Id: 13454049678549189348
-        Name: "TANK_CHASSIS_Upgraded_GE_PantherD"
+        Name: "23TANK_CHASSIS_Upgraded_GE_PantherD"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -50
             Z: 105
           }
-          MaxSpeed: 1475
+          MaxSpeed: 1327
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1031

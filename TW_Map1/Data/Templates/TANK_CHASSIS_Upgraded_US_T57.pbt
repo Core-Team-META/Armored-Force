@@ -7,7 +7,7 @@ Assets {
       RootId: 7201845003621308571
       Objects {
         Id: 7201845003621308571
-        Name: "TANK_CHASSIS_Upgraded_US_T57"
+        Name: "14TANK_CHASSIS_Upgraded_US_T57"
         Transform {
           Scale {
             X: 1

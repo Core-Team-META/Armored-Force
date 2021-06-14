@@ -134,19 +134,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2850362878920347160
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 1908253659651347838
   Name: "Rock 03"
   PlatformAssetType: 1
@@ -171,18 +158,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
-  Id: 37611015403273492
-  Name: "Tanks"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3b3cfe44e7fb41d0b0783e9eba8729ea"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }

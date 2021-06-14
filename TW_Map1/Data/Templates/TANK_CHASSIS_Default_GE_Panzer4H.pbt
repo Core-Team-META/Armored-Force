@@ -7,7 +7,7 @@ Assets {
       RootId: 16848243897652293121
       Objects {
         Id: 16848243897652293121
-        Name: "TANK_CHASSIS_Default_GE_Panzer4H"
+        Name: "21TANK_CHASSIS_Default_GE_Panzer4H"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -50
             Z: 50
           }
-          MaxSpeed: 850
+          MaxSpeed: 688
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

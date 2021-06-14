@@ -7,7 +7,7 @@ Assets {
       RootId: 8523728319199771843
       Objects {
         Id: 8523728319199771843
-        Name: "TANK_CHASSIS_Upgraded_FR_BatChat25T"
+        Name: "11TANK_CHASSIS_Upgraded_FR_BatChat25T"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -30
             Z: 70
           }
-          MaxSpeed: 1725
+          MaxSpeed: 1552
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1219

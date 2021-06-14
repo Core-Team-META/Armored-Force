@@ -7,7 +7,7 @@ Assets {
       RootId: 4574484490881684780
       Objects {
         Id: 4574484490881684780
-        Name: "TANK_CHASSIS_Default_UK_Chimera"
+        Name: "10TANK_CHASSIS_Default_UK_Chimera"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -50
             Z: 40
           }
-          MaxSpeed: 1550
+          MaxSpeed: 1162
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

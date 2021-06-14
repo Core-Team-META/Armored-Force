@@ -196,7 +196,7 @@ end
 function SetTankModifications()
 	
 	local modifications = nil
-	
+	--[[
 	if driver.serverUserData.techTreeProgress then
 		for x, entry in ipairs(driver.serverUserData.techTreeProgress) do
 			if entry.id == identifier then
@@ -204,10 +204,10 @@ function SetTankModifications()
 			end
 		end
 	end
-	
+	]]
 	if not modifications then
 		warn("COULD NOT FIND TANK ID " .. identifier)
-		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+		modifications = {2, 2, 2} -- 2, 2, 2 \ 0, 0, 0
 	end
 	
 	if modifications[1] == 2 then

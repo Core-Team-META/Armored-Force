@@ -7,7 +7,7 @@ Assets {
       RootId: 4189224137868429160
       Objects {
         Id: 4189224137868429160
-        Name: "TANK_CHASSIS_Default_GER_Panzer3"
+        Name: "18TANK_CHASSIS_Default_GER_Panzer3"
         Transform {
           Scale {
             X: 1
@@ -54,7 +54,7 @@ Assets {
           PhysicsBodyOffset {
             Z: 92.5440216
           }
-          MaxSpeed: 1450
+          MaxSpeed: 1160
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

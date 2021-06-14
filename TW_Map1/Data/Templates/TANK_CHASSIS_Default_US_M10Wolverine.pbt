@@ -7,7 +7,7 @@ Assets {
       RootId: 146066313680108414
       Objects {
         Id: 146066313680108414
-        Name: "TANK_CHASSIS_Default_US_M10Wolverine"
+        Name: "07TANK_CHASSIS_Default_US_M10Wolverine"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -80
             Z: 105
           }
-          MaxSpeed: 1300
+          MaxSpeed: 936
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
