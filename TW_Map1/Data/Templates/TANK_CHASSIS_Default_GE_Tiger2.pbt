@@ -55,11 +55,11 @@ Assets {
             X: -50
             Z: 105
           }
-          MaxSpeed: 800
+          MaxSpeed: 720
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 20
+          TireFriction: 30
           CenterOfMassOFfset {
             Z: 20
           }
@@ -82,7 +82,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 60
+            TurnSpeed: 30
           }
         }
       }

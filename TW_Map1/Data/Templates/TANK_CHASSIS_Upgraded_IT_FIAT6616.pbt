@@ -42,7 +42,7 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 22000
+          Mass: 2200
           PhysicsBodyScale {
             X: 6
             Y: 2.5

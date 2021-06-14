@@ -27,11 +27,6 @@ Objects {
           String: "32TANK_CHASSIS_Default_GE_VK7201"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -115,9 +110,6 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
           }
         }
         Overrides {
@@ -159,11 +151,6 @@ Objects {
           String: "27TANK_CHASSIS_Default_IT_OF40"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -200,11 +187,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "29TANK_CHASSIS_Default_JP_Type74"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -245,11 +227,6 @@ Objects {
           String: "28TANK_CHASSIS_Default_GE_E50"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -286,11 +263,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "33TANK_CHASSIS_Default_GE_Jagdtiger"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -374,11 +346,6 @@ Objects {
           String: "25TANK_CHASSIS_Default_GE_Lowe"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -415,11 +382,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "16TANK_CHASSIS_Default_FR_AMX50"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -460,11 +422,6 @@ Objects {
           String: "15TANK_CHASSIS_Default_USSR_IS7"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -501,11 +458,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "14TANK_CHASSIS_Default_US_T57"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -589,11 +541,6 @@ Objects {
           String: "13TANK_CHASSIS_Default_USSR_T62A1"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -630,11 +577,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "12TANK_CHASSIS_Default_US_M48Patton"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -675,11 +617,6 @@ Objects {
           String: "17TANK_CHASSIS_Default_US_T110"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -718,14 +655,6 @@ Objects {
           String: "10TANK_CHASSIS_Default_UK_Chimera"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -762,11 +691,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "09TANK_CHASSIS_Default_US_T34Heavy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -850,11 +774,6 @@ Objects {
           String: "23TANK_CHASSIS_Default_GE_PantherD"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -891,11 +810,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "22TANK_CHASSIS_Default_GE_Stug3G"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -936,11 +850,6 @@ Objects {
           String: "06TANK_CHASSIS_Default_USSR_IS3"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -977,11 +886,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "05TANK_CHASSIS_Default_UK_Comet"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -1022,11 +926,6 @@ Objects {
           String: "07TANK_CHASSIS_Default_US_M10Wolverine"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -1063,11 +962,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "08TANK_CHASSIS_Default_US_M6A1Heavy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -1108,14 +1002,6 @@ Objects {
           String: "20TANK_CHASSIS_Default_JP_ChiNu"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -1152,14 +1038,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "21TANK_CHASSIS_Default_GE_Panzer4H"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -1200,14 +1078,6 @@ Objects {
           String: "19TANK_CHASSIS_Default_GE_Leopard"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -1244,14 +1114,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "04TANK_CHASSIS_Default_USSR_T34"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -1292,14 +1154,6 @@ Objects {
           String: "03TANK_CHASSIS_Default_US_M4A1Sherman"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -1336,11 +1190,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "02TANK_CHASSIS_Default_ExampleTank"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -1381,14 +1230,6 @@ Objects {
           String: "18TANK_CHASSIS_Default_GER_Panzer3"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -1425,14 +1266,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "01TANK_CHASSIS_Default_US_M3Stuart"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 38022.957
-            Y: 13648.168
-            Z: 1239.56726
-          }
         }
         Overrides {
           Name: "Rotation"

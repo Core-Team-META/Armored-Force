@@ -7,7 +7,7 @@ Assets {
       RootId: 11747631602550984809
       Objects {
         Id: 11747631602550984809
-        Name: "TANK_CHASSIS_Upgraded_GE_E50"
+        Name: "28TANK_CHASSIS_Upgraded_GE_E50"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -30
             Z: 70
           }
-          MaxSpeed: 1600
+          MaxSpeed: 1440
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1125
