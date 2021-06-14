@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13015746523943313020
+  Name: "Tech Circle"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_031"
+  }
+}
+Assets {
   Id: 12478180938234886174
   Name: "BG Highlighted 002"
   PlatformAssetType: 9
@@ -356,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_ArrowTurnLeft"
+  }
+}
+Assets {
+  Id: 2640316907363900924
+  Name: "Icon Star"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Star"
   }
 }
 Assets {
