@@ -42,7 +42,7 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 22000
+          Mass: 2200
           PhysicsBodyScale {
             X: 6
             Y: 2.5
@@ -56,7 +56,7 @@ Assets {
           PhysicsBodyOffset {
             Z: 105
           }
-          MaxSpeed: 1880
+          MaxSpeed: 2350
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 10

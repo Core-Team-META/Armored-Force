@@ -7,7 +7,7 @@ Assets {
       RootId: 5911922063575085945
       Objects {
         Id: 5911922063575085945
-        Name: "TANK_CHASSIS_Upgraded_US_T34Heavy"
+        Name: "09TANK_CHASSIS_Upgraded_US_T34Heavy"
         Transform {
           Scale {
             X: 1

@@ -1,10 +1,12 @@
-Name: "TankChassisForTweaking"
+Name: "AllTankChassisForTweakingOrdered"
 RootId: 4638002272976236053
 Objects {
   Id: 746199241737657603
   Name: "Upgraded (Order = Tank Stats Sheet)"
   Transform {
     Location {
+      X: 74770
+      Y: 56450
     }
     Rotation {
     }
@@ -37,6 +39,8 @@ Objects {
   Name: "Default (Order = Tank Stats Sheet)"
   Transform {
     Location {
+      X: 74770
+      Y: 56450
     }
     Rotation {
     }

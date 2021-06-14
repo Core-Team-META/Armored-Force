@@ -7,7 +7,7 @@ Assets {
       RootId: 6448750086190425345
       Objects {
         Id: 6448750086190425345
-        Name: "TANK_CHASSIS_Upgraded_IT_OF40"
+        Name: "27TANK_CHASSIS_Upgraded_IT_OF40"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -90
             Z: 50
           }
-          MaxSpeed: 1750
+          MaxSpeed: 1575
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

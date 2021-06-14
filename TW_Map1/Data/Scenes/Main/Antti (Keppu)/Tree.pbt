@@ -2,7 +2,7 @@ Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
   Id: 4638002272976236053
-  Name: "TankChassisForTweaking"
+  Name: "AllTankChassisForTweakingOrdered"
   Transform {
     Location {
     }
@@ -29,7 +29,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "TankChassisForTweaking"
+    FilePartitionName: "AllTankChassisForTweakingOrdered"
   }
 }
 Objects {
