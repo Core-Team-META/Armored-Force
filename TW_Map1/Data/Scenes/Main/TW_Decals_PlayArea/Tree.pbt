@@ -13595,9 +13595,9 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: -32922.8047
+      X: -33449.5703
       Y: 7749.29688
-      Z: 246.835648
+      Z: 184.65358
     }
     Rotation {
       Pitch: 0.585681856
@@ -20540,14 +20540,14 @@ Objects {
   Name: "Decal Tread Tracks 01"
   Transform {
     Location {
-      X: -16355.4795
-      Y: 24195.2344
-      Z: 636.804321
+      X: -16375.1592
+      Y: 24199.9609
+      Z: 410.510559
     }
     Rotation {
       Pitch: -3.2663269
-      Yaw: -63.8597412
-      Roll: -0.309509277
+      Yaw: -63.8599548
+      Roll: 3.93313813
     }
     Scale {
       X: 1.36100113
@@ -38168,14 +38168,14 @@ Objects {
   Name: "Decal Stains Round 01 Orange patch"
   Transform {
     Location {
-      X: -16260
-      Y: -29910
-      Z: 795
+      X: -15972.6738
+      Y: -29083.6504
+      Z: 591.428345
     }
     Rotation {
-      Pitch: 13.0602016
-      Yaw: -49.0390625
-      Roll: 0.758708835
+      Pitch: 10.5197201
+      Yaw: -49.0731812
+      Roll: 0.751714826
     }
     Scale {
       X: 8.93676281
@@ -38222,9 +38222,9 @@ Objects {
   Name: "Decal Stains Round 01 Orange patch"
   Transform {
     Location {
-      X: -12785
-      Y: -28010
-      Z: 950
+      X: -12851.1504
+      Y: -27939.0234
+      Z: 662.010498
     }
     Rotation {
       Pitch: 13.0602016
@@ -38232,9 +38232,9 @@ Objects {
       Roll: 0.758709669
     }
     Scale {
-      X: 8.93676281
-      Y: 8.93668079
-      Z: 2.12852526
+      X: -3.39749241
+      Y: 8.93667412
+      Z: 2.12852621
     }
   }
   ParentId: 3323884308924931292

@@ -7,7 +7,7 @@ Assets {
       RootId: 10516458141066745376
       Objects {
         Id: 10516458141066745376
-        Name: "TANK_CHASSIS_Default_US_M6A1Heavy"
+        Name: "08TANK_CHASSIS_Default_US_M6A1Heavy"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -70
             Z: 105
           }
-          MaxSpeed: 825
+          MaxSpeed: 625
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

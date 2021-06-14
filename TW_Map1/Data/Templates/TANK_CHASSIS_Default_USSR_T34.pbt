@@ -7,7 +7,7 @@ Assets {
       RootId: 6170417272256538993
       Objects {
         Id: 6170417272256538993
-        Name: "TANK_CHASSIS_Default_USSR_T34"
+        Name: "04TANK_CHASSIS_Default_USSR_T34"
         Transform {
           Scale {
             X: 1
@@ -54,7 +54,7 @@ Assets {
           PhysicsBodyOffset {
             Z: 105
           }
-          MaxSpeed: 1250
+          MaxSpeed: 1125
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

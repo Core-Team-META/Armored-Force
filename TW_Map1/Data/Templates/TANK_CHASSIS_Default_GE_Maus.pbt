@@ -7,7 +7,7 @@ Assets {
       RootId: 17788723325610312870
       Objects {
         Id: 17788723325610312870
-        Name: "TANK_CHASSIS_Default_GE_Maus"
+        Name: "30TANK_CHASSIS_Default_GE_Maus"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 60000
+          Mass: 42000
           PhysicsBodyScale {
             X: 10
             Y: 3.2
@@ -82,7 +82,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 60
+            TurnSpeed: 30
           }
         }
       }

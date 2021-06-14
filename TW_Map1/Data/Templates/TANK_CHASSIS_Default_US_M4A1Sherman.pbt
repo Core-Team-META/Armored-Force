@@ -7,7 +7,7 @@ Assets {
       RootId: 14486682271573329136
       Objects {
         Id: 14486682271573329136
-        Name: "TANK_CHASSIS_Default_US_M4A1Sherman"
+        Name: "03TANK_CHASSIS_Default_US_M4A1Sherman"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -33.7012444
             Z: 90
           }
-          MaxSpeed: 1050
+          MaxSpeed: 945
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

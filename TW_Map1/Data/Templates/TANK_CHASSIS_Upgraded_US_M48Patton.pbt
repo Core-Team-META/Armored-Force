@@ -7,7 +7,7 @@ Assets {
       RootId: 6468061815660712916
       Objects {
         Id: 6468061815660712916
-        Name: "TANK_CHASSIS_Upgraded_US_M48Patton"
+        Name: "12TANK_CHASSIS_Upgraded_US_M48Patton"
         Transform {
           Scale {
             X: 1
@@ -55,7 +55,7 @@ Assets {
             X: -40
             Z: 110
           }
-          MaxSpeed: 1225
+          MaxSpeed: 1102
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1

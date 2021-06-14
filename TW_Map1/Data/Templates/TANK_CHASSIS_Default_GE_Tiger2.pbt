@@ -7,7 +7,7 @@ Assets {
       RootId: 12750289463121341098
       Objects {
         Id: 12750289463121341098
-        Name: "TANK_CHASSIS_Default_GE_Tiger2"
+        Name: "24TANK_CHASSIS_Default_GE_Tiger2"
         Transform {
           Scale {
             X: 1
@@ -55,11 +55,11 @@ Assets {
             X: -50
             Z: 105
           }
-          MaxSpeed: 800
+          MaxSpeed: 720
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 20
+          TireFriction: 30
           CenterOfMassOFfset {
             Z: 20
           }
@@ -82,7 +82,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 60
+            TurnSpeed: 30
           }
         }
       }

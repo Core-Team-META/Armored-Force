@@ -4428,9 +4428,9 @@ Objects {
       Z: 1081.09644
     }
     Rotation {
-      Pitch: -17.0606842
-      Yaw: 156.403564
-      Roll: 7.30313587
+      Pitch: -17.0606689
+      Yaw: -160.063828
+      Roll: 7.30335522
     }
     Scale {
       X: 4.9300971
@@ -6951,9 +6951,9 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -15673.0781
-      Y: 9139.73828
-      Z: 980.28186
+      X: -15335.377
+      Y: 8919.63672
+      Z: 983.613953
     }
     Rotation {
       Pitch: 3.86228061
@@ -23843,14 +23843,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -1901.99219
-      Y: 21552.0332
+      X: -1900.05225
+      Y: 21593.7539
       Z: 1505.82983
     }
     Rotation {
-      Pitch: 0.456406862
-      Yaw: -4.57309914
-      Roll: 5.68831205
+      Pitch: 0.0897555128
+      Yaw: -0.899047852
+      Roll: 5.70585966
     }
     Scale {
       X: 4.2236166
@@ -23897,14 +23897,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -1730.70898
-      Y: 21963.9512
+      X: -1742.83691
+      Y: 21944.0195
       Z: 1419.41138
     }
     Rotation {
       Pitch: 5.83966112
       Yaw: -143.517731
-      Roll: -1.5373832
+      Roll: -1.53738403
     }
     Scale {
       X: 4.2236166
@@ -117350,13 +117350,6 @@ Objects {
       Float: 0.912584
     }
     Overrides {
-      Name: "bp:Lower Hemisphere Color"
-      Color {
-        R: 0.444000036
-        A: 0.585000038
-      }
-    }
-    Overrides {
       Name: "bp:Realtime Update"
       Bool: false
     }
@@ -117625,18 +117618,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 31500
+      X: 30732.0313
       Y: 69665
-      Z: 100
+      Z: 100.000137
     }
     Rotation {
+      Pitch: -5
       Yaw: -90
       Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 622.205688
+      Z: 613.84
     }
   }
   ParentId: 10639644213682625907
@@ -117681,19 +117675,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 75834.6875
-      Y: 12529.1152
-      Z: -2211.02124
+      X: 75607.5469
+      Y: 12816.4805
+      Z: -2195.47046
     }
     Rotation {
-      Pitch: 5.58421898
+      Pitch: -5
       Yaw: -141.888245
       Roll: -87.5597534
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 715.167542
+      Z: 724.413513
     }
   }
   ParentId: 10639644213682625907
@@ -117738,19 +117732,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 75401.3125
-      Y: -45899
-      Z: -608.773438
+      X: 75537.2266
+      Y: -46088.8125
+      Z: -608.77356
     }
     Rotation {
-      Pitch: 5.89879704
+      Pitch: -5
       Yaw: 179.921494
       Roll: -91.5268555
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 593.689697
+      Z: 585.613525
     }
   }
   ParentId: 10639644213682625907
@@ -117795,18 +117789,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 18040
+      X: 17880.3711
       Y: -46060
-      Z: 100
+      Z: 99.9999695
     }
     Rotation {
+      Pitch: -5
       Yaw: 89.9999847
-      Roll: -89.9999847
+      Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 574.823547
+      Z: 576.405823
     }
   }
   ParentId: 10639644213682625907
@@ -117851,18 +117846,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: -30213.9336
-      Y: 15449.4
-      Z: 99.9999695
+      X: -30710.7422
+      Y: 16085.1875
+      Z: 99.9998245
     }
     Rotation {
+      Pitch: -5
       Yaw: 38.0042572
       Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 792.035522
+      Z: 788.39563
     }
   }
   ParentId: 10639644213682625907
@@ -117908,16 +117904,17 @@ Objects {
   Transform {
     Location {
       X: -30730
-      Y: 69670
-      Z: 100
+      Y: 69596.1797
+      Z: 99.9999924
     }
     Rotation {
+      Pitch: -5
       Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 533.139221
+      Z: 534.721497
     }
   }
   ParentId: 10639644213682625907
