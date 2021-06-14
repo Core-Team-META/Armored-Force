@@ -132,7 +132,7 @@ function AssignDriver(newDriver)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
 	
-	Task.Wait(0.1)
+	Task.Wait(0.5)
 	
 	chassis:SetDriver(driver)
 	
@@ -196,7 +196,7 @@ end
 function SetTankModifications()
 	
 	local modifications = nil
-	
+
 	if driver.serverUserData.techTreeProgress then
 		for x, entry in ipairs(driver.serverUserData.techTreeProgress) do
 			if entry.id == identifier then
@@ -204,10 +204,15 @@ function SetTankModifications()
 			end
 		end
 	end
-	
+
 	if not modifications then
 		warn("COULD NOT FIND TANK ID " .. identifier)
 		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+	end
+	
+	if driver.serverUserData.TankUpgradeOverride and #driver.serverUserData.TankUpgradeOverride > 0 then
+		print("Overriding tank upgrades")
+		modifications = driver.serverUserData.TankUpgradeOverride 
 	end
 	
 	if modifications[1] == 2 then
@@ -305,7 +310,7 @@ function OnBindingPressed(player, binding)
 		return
 	end
 	
-	if binding == "ability_primary" then
+	if binding == "ability_primary" and not player:IsBindingPressed("ability_extra_14") then
 		FireProjectile()
 	elseif binding == "ability_extra_40" and Environment.IsMultiplayerPreview() then
 		driver:Die()
@@ -347,6 +352,32 @@ end
 function ProjectileImpacted(expiredProjectile, other)
 
 	ProjectileExpired(expiredProjectile)
+	
+	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce then
+		return
+	end
+	
+	expiredProjectile.serverUserData.hitOnce = true
+	
+	local potentialDamage = driver.serverUserData.currentTankData.fullDamage
+	local totalDamage = math.floor(potentialDamage - potentialDamage * 0.2)
+	local damageDealt = Damage.New(totalDamage)
+	
+	damageDealt.sourcePlayer = driver
+	damageDealt.reason = DamageReason.COMBAT
+	other.driver:ApplyDamage(damageDealt)
+	--[[
+	local attackData = {
+		object = other.driver,
+		damage = damageDealt,
+		source = driver,
+		position = nil,
+		rotation = nil,
+		tags = {id = "Example"}
+	}
+	COMBAT.ApplyDamage(attackData)
+	]]
+	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", vehicle:GetWorldPosition())
 
 end
 
@@ -384,7 +415,6 @@ function OnArmorHit(trigger, other)
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
 		driver:ApplyDamage(damageDealt)
-
 		--[[
 		local attackData = {
 			object = driver,
@@ -396,8 +426,6 @@ function OnArmorHit(trigger, other)
 		}
 		COMBAT.ApplyDamage(attackData)
 		]]
-		
-		--print(driver.name .. "'s " .. trigger.name .. " hit by " .. enemyPlayer.name .. " for " .. tostring(totalDamage))
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition())
 	end
 	
@@ -450,6 +478,10 @@ function FlipTank()
 
 	Task.Wait(2)
 	
+	if not Object.IsValid(chassis) then
+		return
+	end
+	
 	if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
 		chassis:AddImpulse(Vector3.New(0, 0, chassis.mass * 2000))
 		Task.Wait(1)
@@ -471,22 +503,23 @@ function Tick()
 			AdjustTurretAim()
 		end
 		
-		if Object.IsValid(chassis) and not flipping then
-			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.5)
-		end
-		
 		if allowHoldDownFiring and driver:IsBindingPressed("ability_primary") then
 			FireProjectile()
 		end
 		
 		if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
 			if not flipping then
-				print("attempting flip")
 				flipping = true
 				Task.Spawn(FlipTank, 0)
 			end
 		end
-		 
+		
+		--[[
+		if Object.IsValid(chassis) and not flipping then
+			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.5)
+		end
+		--]]
+		
 		if driver:IsBindingPressed("ability_extra_21") then -- W
 			script:SetNetworkedCustomProperty("WheelSpeedMultiplier", 1)
 		elseif driver:IsBindingPressed("ability_extra_31") then -- S

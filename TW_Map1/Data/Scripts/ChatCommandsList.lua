@@ -131,19 +131,41 @@ commands = {
         end,
         OnCommandCalledServer = function (player, message)
         	local number = nil
+        	local upgradeAppled = false
+        	
+        	player.serverUserData.TankUpgradeOverride = {}
         	
         	for section in (message.." "):gmatch("(.-) ") do
-        		number = tonumber(section)
-        		if number and number > 0 and number < 34 then
-        			Events.Broadcast("SET_EQUIPPED_TANK", player, section)
-        			return
-        		end
+        		if upgradeAppled then
+	        		number = tonumber(section)
+	        		if number and number > 0 and number < 34 then
+	        			Events.Broadcast("SET_EQUIPPED_TANK", player, section)
+	        			return
+	        		end
+	        	elseif section == "0" then
+        			player.serverUserData.TankUpgradeOverride = {0, 0, 0}
+        			upgradeAppled = true
+        		elseif section == "1" then
+        			player.serverUserData.TankUpgradeOverride = {2, 2, 2}
+        			upgradeAppled = true
+        		elseif string.find(section, ",") then
+        			for _, part in pairs{CoreString.Split(section, ",")} do
+        				number = tonumber(part)
+        				if number and number == 1 then
+        					number = 2
+        				end
+        				if number then
+        					table.insert(player.serverUserData.TankUpgradeOverride, number)
+        				end
+        			end
+        			upgradeAppled = true
+	        	end
         	end 
         	
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Equip a specific tank. Format: /equip <tankID>",
+        description = "Equip a specific tank with a specified upgrade. 0 for no upgrades, 1 for all upgrades, and x,x,x for specific upgrades. Format: /equip <upgrade> <tankID>",
         requireMessage = false,
         adminOnly = false
     },
