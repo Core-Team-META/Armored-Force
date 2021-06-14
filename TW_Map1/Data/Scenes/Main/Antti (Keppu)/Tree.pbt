@@ -1,38 +1,6 @@
 Name: "Antti (Keppu)"
 RootId: 4689494391382931675
 Objects {
-  Id: 4638002272976236053
-  Name: "AllTankChassisForTweakingOrdered"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4689494391382931675
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "AllTankChassisForTweakingOrdered"
-  }
-}
-Objects {
   Id: 9705282421602965738
   Name: "InvisibleStoneHedgeColliders"
   Transform {
@@ -117650,18 +117618,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 31500
+      X: 30732.0313
       Y: 69665
-      Z: 100
+      Z: 100.000137
     }
     Rotation {
+      Pitch: -5
       Yaw: -90
       Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 622.205688
+      Z: 613.84
     }
   }
   ParentId: 10639644213682625907
@@ -117706,19 +117675,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 75834.6875
-      Y: 12529.1152
-      Z: -2211.02124
+      X: 75607.5469
+      Y: 12816.4805
+      Z: -2195.47046
     }
     Rotation {
-      Pitch: 5.58421898
+      Pitch: -5
       Yaw: -141.888245
       Roll: -87.5597534
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 715.167542
+      Z: 724.413513
     }
   }
   ParentId: 10639644213682625907
@@ -117763,19 +117732,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 75401.3125
-      Y: -45899
-      Z: -608.773438
+      X: 75537.2266
+      Y: -46088.8125
+      Z: -608.77356
     }
     Rotation {
-      Pitch: 5.89879704
+      Pitch: -5
       Yaw: 179.921494
       Roll: -91.5268555
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 593.689697
+      Z: 585.613525
     }
   }
   ParentId: 10639644213682625907
@@ -117820,18 +117789,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: 18040
+      X: 17880.3711
       Y: -46060
-      Z: 100
+      Z: 99.9999695
     }
     Rotation {
+      Pitch: -5
       Yaw: 89.9999847
-      Roll: -89.9999847
+      Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 574.823547
+      Z: 576.405823
     }
   }
   ParentId: 10639644213682625907
@@ -117876,18 +117846,19 @@ Objects {
   Name: "EdgeIndicator"
   Transform {
     Location {
-      X: -30213.9336
-      Y: 15449.4
-      Z: 99.9999695
+      X: -30710.7422
+      Y: 16085.1875
+      Z: 99.9998245
     }
     Rotation {
+      Pitch: -5
       Yaw: 38.0042572
       Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 792.035522
+      Z: 788.39563
     }
   }
   ParentId: 10639644213682625907
@@ -117933,16 +117904,17 @@ Objects {
   Transform {
     Location {
       X: -30730
-      Y: 69670
-      Z: 100
+      Y: 69596.1797
+      Z: 99.9999924
     }
     Rotation {
+      Pitch: -5
       Roll: -90
     }
     Scale {
       X: 0.1
       Y: 604.4
-      Z: 533.139221
+      Z: 534.721497
     }
   }
   ParentId: 10639644213682625907
