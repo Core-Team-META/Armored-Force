@@ -23,9 +23,9 @@ Objects {
   ChildIds: 1515039180194458749
   ChildIds: 12342638008067059637
   ChildIds: 6164747938729123173
-  ChildIds: 4950709826130370908
   ChildIds: 12914858331235740922
   ChildIds: 8043684082903823001
+  ChildIds: 16492573472081015425
   ChildIds: 3332374115834155172
   UnregisteredParameters {
   }
@@ -69,6 +69,35 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   AIActivityHandler {
+  }
+}
+Objects {
+  Id: 16492573472081015425
+  Name: "Chat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Chat"
   }
 }
 Objects {
@@ -135,35 +164,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Tutorial"
-  }
-}
-Objects {
-  Id: 4950709826130370908
-  Name: "Chat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Chat"
   }
 }
 Objects {

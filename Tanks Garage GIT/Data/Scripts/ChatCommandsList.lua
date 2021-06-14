@@ -126,64 +126,56 @@ commands = {
         adminOnly = false
     },
     
-    ["/gold"] = {
-        OnCommandCalledClient = function (player, message)
-        	
-        	for section in (message.." "):gmatch("(.-) ") do
-
-        		if tonumber(section) then
-        		
-        			Chat.LocalMessage("Setting Gold resource to " .. section)
-        			
-        			return
-        			
-        		end
-        	
-        	end
-
-        	Chat.LocalMessage("ERROR: command does not contain a valid resource amount. Format: /gold <GoldValue>")
-        end,
-        OnCommandCalledServer = function (player, message)
-        	
-        	for section in (message.." "):gmatch("(.-) ") do
-
-        		if tonumber(section) then
-        		
-        			player:SetResource("Gold", tonumber(section))
-        			
-        			return
-        			
-        		end
-        	
-        	end
-        	
-        end,
-        OnCommandReceivedClient = function (player, message)
-        end,
-        description = "Set the Gold resource of the player. Format: /gold <GoldValue>",
-        requireMessage = false,
-        adminOnly = false
-    },
-    
     ["/equip"] = {
         OnCommandCalledClient = function (player, message)       
         end,
         OnCommandCalledServer = function (player, message)
         	local number = nil
+        	local upgradeAppled = false
+        	
+        	player.serverUserData.TankUpgradeOverride = {}
         	
         	for section in (message.." "):gmatch("(.-) ") do
-        		number = tonumber(section)
-        		if number and number > 0 and number <= 34 then
-        			Events.Broadcast("SET_EQUIPPED_TANK", player, section)
-        			Events.BroadcastToPlayer(player, "CHANGE_EQUIPPED_TANK", section)
-        			return
-        		end
+        		if upgradeAppled then
+	        		number = tonumber(section)
+	        		if number and number > 0 and number < 34 then
+	        			Events.Broadcast("SET_EQUIPPED_TANK", player, section)
+	        			return
+	        		end
+	        	elseif section == "0" then
+        			player.serverUserData.TankUpgradeOverride = {0, 0, 0}
+        			upgradeAppled = true
+        		elseif section == "1" then
+        			player.serverUserData.TankUpgradeOverride = {2, 2, 2}
+        			upgradeAppled = true
+        		elseif string.find(section, ",") then
+        			for _, part in pairs{CoreString.Split(section, ",")} do
+        				number = tonumber(part)
+        				if number then
+        					table.insert(player.serverUserData.TankUpgradeOverride, number)
+        				end
+        			end
+        			upgradeAppled = true
+	        	end
         	end 
         	
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Equip a specific tank. Format: /equip <tankID>",
+        description = "Equip a specific tank with a specified upgrade. 0 for no upgrades, 1 for all upgrades, and x,x,x for specific upgrades. Format: /equip <upgrade> <tankID>",
+        requireMessage = false,
+        adminOnly = false
+    },
+    
+    ["/respawn"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	player:Respawn()        	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Respawn (for casese when falling through the map).",
         requireMessage = false,
         adminOnly = false
     },
