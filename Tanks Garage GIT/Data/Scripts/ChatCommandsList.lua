@@ -166,6 +166,33 @@ commands = {
         requireMessage = false,
         adminOnly = false
     },
+
+    ["/unlocktanks"] = {
+        OnCommandCalledClient = function (player, message)      
+            for i, tank in ipairs(player.clientUserData.techTreeProgress) do							
+                tank.purchased = true
+                tank.researched = true
+                tank.weaponProgress = 2
+				tank.armorProgress = 2
+				tank.engineProgress = 2
+            end    
+            Chat.LocalMessage("All tanks are unlocked and can be equipped in the tech tree.")
+        end,
+        OnCommandCalledServer = function (player, message)
+            for i, tank in ipairs(player.serverUserData.techTreeProgress) do							
+                tank.purchased = true
+                tank.researched = true
+                tank.weaponProgress = 2
+				tank.armorProgress = 2
+				tank.engineProgress = 2
+            end                  	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Unlock all tanks.",
+        requireMessage = false,
+        adminOnly = false
+    },
     
     ["/respawn"] = {
         OnCommandCalledClient = function (player, message)       
