@@ -529,7 +529,7 @@ function MarkNemesis()
 		end
 
 	end
-	
+	--[[
 	SetChildrenText(nemesisOfStatText, "YOU CRUSHED")
 					
 	if yourKillCountAsNemesis <= 200 then
@@ -553,7 +553,7 @@ function MarkNemesis()
 		SetChildrenText(nemesisOfStatText, "YOU HUMILIATED")
 					
 	end
-
+	--]]
 end
 
 function ShowNemesis()
