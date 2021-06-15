@@ -250,7 +250,7 @@ function OnJoined(player)
 	player:SetResource("TankDamage", 0)
 	player:SetResource("DamageTracker", 0)
 	player:SetResource("SpottingTracker", 0)
-	Task.Wait(10)
+	Task.Wait(20)
 	ResourceCheck(player)
 
 end

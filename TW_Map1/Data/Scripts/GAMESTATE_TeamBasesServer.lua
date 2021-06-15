@@ -46,7 +46,7 @@ function StateSTART(manager, propertyName)
 			Task.Wait(1)
 			
 			ReliableEvents.BroadcastToAllPlayers("WINNERclient", leadTeam)
-			ReliableEvents.Broadcast("WINNER", leadTeam)
+			Events.Broadcast("WINNER", leadTeam)
 			
 			_G["GameWinner"] = leadTeam
 			
