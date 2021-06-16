@@ -5394,6 +5394,30 @@ Objects {
         SelfId: 7647187385909291407
       }
     }
+    Overrides {
+      Name: "cs:BIG_DEALS_CONTAINER"
+      ObjectReference {
+        SelfId: 13341102131129763218
+      }
+    }
+    Overrides {
+      Name: "cs:MONEY_CONTAINER"
+      ObjectReference {
+        SelfId: 7636616306951170334
+      }
+    }
+    Overrides {
+      Name: "cs:TRADE_CONTAINER"
+      ObjectReference {
+        SelfId: 14592901805745036095
+      }
+    }
+    Overrides {
+      Name: "cs:PREMIUM_TANKS_CONTAINER"
+      ObjectReference {
+        SelfId: 13256554077844899425
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7419,6 +7443,30 @@ Objects {
       Name: "cs:AddGoldButton"
       ObjectReference {
         SelfId: 2639302693057997766
+      }
+    }
+    Overrides {
+      Name: "cs:AddXP_Tank"
+      ObjectReference {
+        SelfId: 17787107405562289328
+      }
+    }
+    Overrides {
+      Name: "cs:AddSilver_Tank"
+      ObjectReference {
+        SelfId: 4315920901279593206
+      }
+    }
+    Overrides {
+      Name: "cs:AddGold_Tank"
+      ObjectReference {
+        SelfId: 2104998287924045365
+      }
+    }
+    Overrides {
+      Name: "cs:TradeXP_Tank"
+      ObjectReference {
+        SelfId: 17957788805880858096
       }
     }
   }

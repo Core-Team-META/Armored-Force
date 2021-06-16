@@ -214,6 +214,10 @@ Objects {
         B: 1
         A: 1
       }
+      FillBrush {
+      }
+      BackgroundBrush {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -400,6 +404,10 @@ Objects {
         G: 1
         B: 1
         A: 1
+      }
+      FillBrush {
+      }
+      BackgroundBrush {
       }
     }
     AnchorLayout {
@@ -844,6 +852,10 @@ Objects {
         G: 0.01637174
         B: 0.029
         A: 1
+      }
+      FillBrush {
+      }
+      BackgroundBrush {
       }
     }
     AnchorLayout {

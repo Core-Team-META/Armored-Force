@@ -284,7 +284,7 @@ function ToggleGarage(player, binding)
 			local panel = World.SpawnAsset(TutorialFinishedPopup, {parent = World.FindObjectByName("Tutorial UI")})
 			panel.lifeSpan = 3			
 		end
-		Events.BroadcastToServer("SEND_TO_MAP", "Random")
+		Events.BroadcastToServer("SEND_TO_MAP", "Frontline")
 	end
 
 end

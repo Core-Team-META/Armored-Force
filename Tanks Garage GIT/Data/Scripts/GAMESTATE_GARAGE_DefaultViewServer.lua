@@ -2,7 +2,7 @@ local links = script:GetCustomProperty("Links"):WaitForObject()
 local map = {}
 
 map["LastTeam"] = links:GetCustomProperty("Map1")
-map["Frontline"] = links:GetCustomProperty("Map2")
+map["Frontline"] = links:GetCustomProperty("Map1")
 map["Random"] = {links:GetCustomProperty("Map1"), links:GetCustomProperty("Map2")}
 
 function SendToMap(player, selectedMap)
