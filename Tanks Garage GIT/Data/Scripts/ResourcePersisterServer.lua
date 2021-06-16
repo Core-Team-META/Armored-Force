@@ -28,11 +28,11 @@ end
 
 function OnPlayerJoined(player)
 
-	print("Player Joined " .. player.name)
+	--print("Player Joined " .. player.name)
 	
 	local playerData = Storage.GetPlayerData(player)
 	UTIL_API.TablePrint(playerData)
-	print("Storage Retrieved")
+	--print("Storage Retrieved")
 
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
@@ -51,18 +51,18 @@ function OnPlayerJoined(player)
 		
 	player.serverUserData.techTreeProgress = {}
 	
-	print("Checking and setting shared storage")
+	--print("Checking and setting shared storage")
 	CheckAndSetSharedStorageDefault(player)
-	print("Loading shared storage")
+	--print("Loading shared storage")
 	LoadAndSetDataFromSharedStorage(player)
 
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
 
-	print("-----PRINTING SHARED STORAGE-----")
-	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
-	print("-----FINISHED PRINTING SHARED STORAGE-----")
+	--print("-----PRINTING SHARED STORAGE-----")
+	--UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
+	--print("-----FINISHED PRINTING SHARED STORAGE-----")
 	--print("-----PRINTING LOCAL STORAGE-----")
 	--UTIL_API.TablePrint(Storage.GetPlayerData(player))
 	--print("-----FINISHED PRINTING LOCAL STORAGE-----")
@@ -78,7 +78,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	playerSharedStorage = {}
+	-- playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil

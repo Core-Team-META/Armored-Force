@@ -65,7 +65,7 @@ end
 -- Update shared storage, or give it default values if the data doesn't exist
 function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
-	print("Storage value for rank: " .. tostring(playerSharedStorage[CONSTANTS_API.RANK_NAME]))
+	--print("Storage value for rank: " .. tostring(playerSharedStorage[CONSTANTS_API.RANK_NAME]))
 	-- DEBUG: Clear shared storage
 	--playerSharedStorage = {}
 			
@@ -328,7 +328,7 @@ function ConvertTechTreeProgressToDataString(player)
 	table.sort(player.serverUserData.techTreeProgress, function(a, b) return tonumber(a.id) < tonumber(b.id) end)
 	
 	for k,v in ipairs(player.serverUserData.techTreeProgress) do
-		print("Saving tan Id: " .. tostring(v.id))
+		--print("Saving tan Id: " .. tostring(v.id))
 		dataString = dataString .. v.id .. 
 					"|" .. ConvertBoolToString(v.researched) ..
 					"|" .. ConvertBoolToString(v.purchased) ..
