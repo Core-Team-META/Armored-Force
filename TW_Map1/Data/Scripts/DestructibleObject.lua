@@ -1,4 +1,4 @@
-﻿-- Script by Antti Koponen. Feel free to modify/optimize
+-- Script by Antti Koponen. Feel free to modify/optimize
 -- Updated Dec 18. 2020
 -- 1. Plays SFX & VFX
 -- 2. Removes objects inside RemoveGroup folder
@@ -21,8 +21,20 @@ local debrisGroup = script:GetCustomProperty("DebrisGroup"):WaitForObject()
 
 local destructionTrigger = script.parent
 
+local reset = {}
+local overlapListener = nil
+local isDestroyed= false
+
+function Initialize()
+    for _, child in ipairs(debrisGroup:GetChildren()) do          
+        table.insert(reset, {child, child:GetWorldPosition(), child:GetWorldRotation()})
+    end	
+end
+
 function handleOverlap(trigger, object)
-    if object ~= nil and object:IsA("Trigger") and object.name == "ClientCollisionTrigger" then
+    if object ~= nil and object:IsA("Trigger") and object.name == "ClientCollisionTrigger" and not isDestroyed then
+    	isDestroyed = true
+		overlapListener:Disconnect()
     
          -- Apply SFX & VFX
         if Object.IsValid(FXLocation01) then
@@ -38,7 +50,8 @@ function handleOverlap(trigger, object)
     	-- Remove problematic objects
         if Object.IsValid(removeGroup) then
 	        for _, child in ipairs(removeGroup:GetChildren()) do	            
-	            child:Destroy()
+	            --child:Destroy()
+	            child.visibility = Visibility.FORCE_OFF
 	        end
         end
            
@@ -47,12 +60,36 @@ function handleOverlap(trigger, object)
             child.isSimulatingDebrisPhysics = true
             child.cameraCollision = 2
         end
-                
+ 		--[[
         -- Destroy unneeded trigger        
         if Object.IsValid(destructionTrigger) then
             destructionTrigger:Destroy()
         end
+		]]
     end
 end
 
-destructionTrigger.beginOverlapEvent:Connect(handleOverlap)
+function ResetObject()
+
+    if Object.IsValid(removeGroup) then
+        for _, child in ipairs(removeGroup:GetChildren()) do
+            child.visibility = Visibility.INHERIT
+        end
+    end
+    
+    for _, entry in ipairs(reset) do          
+        entry[1].isSimulatingDebrisPhysics = false
+        Task.Wait()
+        entry[1]:SetWorldPosition(entry[2])
+        entry[1]:SetWorldRotation(entry[3])
+    end
+    
+    overlapListener = destructionTrigger.beginOverlapEvent:Connect(handleOverlap)
+    isDestroyed = false
+    
+end
+
+Initialize()
+
+overlapListener = destructionTrigger.beginOverlapEvent:Connect(handleOverlap)
+Events.Connect("OBJECT_RESET", ResetObject)
