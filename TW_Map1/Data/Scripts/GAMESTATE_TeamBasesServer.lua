@@ -40,8 +40,6 @@ function StateSTART(manager, propertyName)
 	
 		if playerCountTask then
 		
-			print("setting winner")
-		
 			playerCountTask:Cancel()
 			playerCountTask = nil
 			

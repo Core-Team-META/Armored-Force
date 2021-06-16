@@ -118,7 +118,7 @@ function SetViewPoint(player)
 	viewPointList[player.id] = player.serverUserData.currentTankData.hitbox:FindDescendantByName("ViewPoint")
 	viewRangeList[player.id] = tonumber(player.serverUserData.currentTankData.viewRange) or viewRange
 	
-	print(player.name .. " viewpoint set")
+	--print(player.name .. " viewpoint set")
 	
 end
 

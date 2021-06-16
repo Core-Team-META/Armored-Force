@@ -24,7 +24,7 @@ function RetrieveData()
 	        if(child:GetCustomProperty(OWNER_ID_CUSTOM_PROPERTY) == LOCAL_PLAYER.id) then
 	        	
 	        	-- DEBUG
-	        	print("Got data string: " .. child:GetCustomProperty(DATA_CUSTOM_PROPERTY))
+	        	--print("Got data string: " .. child:GetCustomProperty(DATA_CUSTOM_PROPERTY))
 	        
 	        	--print("RETRIEVING DATA FROM OBJECT TRANSFER")
 	            -- Build tank list based off string data

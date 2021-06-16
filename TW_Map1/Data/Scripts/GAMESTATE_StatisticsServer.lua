@@ -76,8 +76,7 @@ function CalculateTotalCurrency(player)
 end
 
 function SetWinner(winningTeam)
-	
-	print("winner assigned: " .. tostring(winningTeam))
+
 	winner = winningTeam
 
 end
@@ -90,13 +89,19 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
+	print("Statistics recieved state: " .. mainGameStateManager:GetCustomProperty("GameState"))
+	
 	if mainGameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
+	
+		print("Waiting for winner...")
 	
 		while winner < 0 do
 		
 			Task.Wait()
 			
 		end
+		
+		print("got winner...")
 		
 		SaveStatistics()
 		
@@ -108,22 +113,22 @@ function SaveStatistics()
 
 	for x, p in pairs(Game.GetPlayers()) do
 	
-		print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP for " .. UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())))
-		print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
+		--print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP for " .. UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())))
+		--print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
 		
 		p:AddResource(UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())), CalculateTotalXP(p))
 		p:AddResource(CONSTANTS_API.XP, CalculateTotalXP(p))
 		p:AddResource("Silver", CalculateTotalCurrency(p))
 		
 		if p.team == winner then
-			print(p.name .. " won, adding to Total Wins")
+			--print(p.name .. " won, adding to Total Wins")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS, 1)
 			TrackDailyChallenge(p, "Wins", 1)
 		elseif winner > 0 then
-			print(p.name .. " lost, adding to Total Losses")
+			--print(p.name .. " lost, adding to Total Losses")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)	
 		else
-			print(p.name .. " had a draw")
+			--print(p.name .. " had a draw")
 		end
 				
 		p:AddResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES, 1)
@@ -149,7 +154,7 @@ function OnDamagedRecord(player, damage)
 			
 			local xpRewarded = math.floor(damageDealtPercentage * tankXPValue)
 			Events.BroadcastToPlayer(damage.sourcePlayer, "GainXP", {reason = CONSTANTS_API.XP_GAIN_REASON.DAMAGE_DEALT, amount = xpRewarded})
-			print("XP rewarded for dealing damage: " .. tostring(xpRewarded))
+			--print("XP rewarded for dealing damage: " .. tostring(xpRewarded))
 			
 			damage.sourcePlayer:AddResource("DamageTracker", xpRewarded)
 			

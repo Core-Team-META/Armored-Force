@@ -7,12 +7,12 @@ local tankTemplates = script.parent
 local equippedTank = {}
 
 function GetEquippedTankTemplate(player, id)
-	print("Checking for tank with id: " .. id)
+	--print("Checking for tank with id: " .. id)
 	if tonumber(id) <= tankCount and tonumber(id) > 0 then
-		print("Tank with given id found")
+		--print("Tank with given id found")
 		return tankTemplates:GetCustomProperty(id)
 	else
-		print("Returning default")
+		--print("Returning default")
 		return tankTemplates:GetCustomProperty("Default")
 	end
 	
