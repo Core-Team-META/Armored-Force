@@ -513,7 +513,13 @@ function Tick()
 				Task.Spawn(FlipTank, 0)
 			end
 		end
-		
+    
+    local angularVelo = chassis:GetAngularVelocity()
+    local MAX_ANGULAR_VELOCITY = 150
+    if angularVelo.sizeSquared > MAX_ANGULAR_VELOCITY * MAX_ANGULAR_VELOCITY then
+      chassis:SetAngularVelocity(angularVelo:GetNormalized() * MAX_ANGULAR_VELOCITY)
+    end
+    
 		--[[
 		if Object.IsValid(chassis) and not flipping then
 			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.5)
