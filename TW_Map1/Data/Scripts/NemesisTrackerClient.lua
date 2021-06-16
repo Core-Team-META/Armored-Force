@@ -12,7 +12,7 @@ local NemesisOfKillsText = script:GetCustomProperty("NemesisOfKillsText"):WaitFo
 
 local victoryScreenContainer = script:GetCustomProperty("VictoryScreenContainer"):WaitForObject()
 
-local nemesisOfStatText = script:GetCustomProperty("NemesisOfStatText"):WaitForObject()
+--local nemesisOfStatText = script:GetCustomProperty("NemesisOfStatText"):WaitForObject()
 
 local nemesisMarker = script:GetCustomProperty("NemesisVictoryScreenMarker")
 
@@ -86,12 +86,14 @@ function SetChildrenText(uiObj,_text) -- <-- generic children text function by A
     if Object.IsValid(uiObj) and uiObj:IsA("UIText") then
         uiObj.text = _text
     end
-
-    for i,v in ipairs(uiObj:GetChildren()) do
-        if v:IsA("UIText") then
-            SetChildrenText(v,_text)
-        end
-    end
+    
+    if Object.IsValid(uiObj) then 
+	    for i,v in ipairs(uiObj:GetChildren()) do
+	        if v:IsA("UIText") then
+	            SetChildrenText(v,_text)
+	        end
+	    end
+	end
 
 end
 
@@ -527,7 +529,7 @@ function MarkNemesis()
 		end
 
 	end
-	
+	--[[
 	SetChildrenText(nemesisOfStatText, "YOU CRUSHED")
 					
 	if yourKillCountAsNemesis <= 200 then
@@ -551,7 +553,7 @@ function MarkNemesis()
 		SetChildrenText(nemesisOfStatText, "YOU HUMILIATED")
 					
 	end
-
+	--]]
 end
 
 function ShowNemesis()
