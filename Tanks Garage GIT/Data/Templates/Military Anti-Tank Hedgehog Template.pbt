@@ -2429,5 +2429,5 @@ Assets {
       AssetId: "Anit-Tank_Hedgehog_Template"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
 }
