@@ -55,7 +55,6 @@ Objects {
   ChildIds: 2823517304073707524
   ChildIds: 11772205701143336007
   ChildIds: 12365868913611538820
-  ChildIds: 10931079994558747280
   UnregisteredParameters {
     Overrides {
       Name: "cs:MaxHP"
@@ -103,54 +102,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 10931079994558747280
-  Name: "CollisionBox"
-  Transform {
-    Location {
-      X: -33.9411812
-      Y: 10.8560543
-      Z: 5
-    }
-    Rotation {
-      Yaw: 179.234268
-    }
-    Scale {
-      X: 9.72143841
-      Y: 5.9733
-      Z: 2.64885044
-    }
-  }
-  ParentId: 5965762023720113418
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 198353679974341757
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
   }
 }
 Objects {
@@ -921,6 +872,7 @@ Objects {
   ChildIds: 4870311838914980667
   ChildIds: 13146257504240816511
   ChildIds: 4612918581398024296
+  ChildIds: 10931079994558747280
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -936,6 +888,54 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 10931079994558747280
+  Name: "CollisionBox"
+  Transform {
+    Location {
+      X: -33.9411774
+      Y: 10.85606
+      Z: 5
+    }
+    Rotation {
+      Yaw: 179.234253
+    }
+    Scale {
+      X: 10.6998243
+      Y: 6.89830589
+      Z: 3.06897736
+    }
+  }
+  ParentId: 11772205701143336007
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -25637,8 +25637,8 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 9.01495838
-      Y: 6.37108088
+      X: 9.82211685
+      Y: 7.00903368
       Z: 2.56264377
     }
   }
