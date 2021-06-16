@@ -45,6 +45,10 @@ function StateSTART(manager, propertyName)
 			playerCountTask:Cancel()
 			playerCountTask = nil
 			
+			if _G["GameOverwrite"] then
+				return
+			end
+			
 			Task.Wait(1)
 			
 			ReliableEvents.BroadcastToAllPlayers("WINNERclient", leadTeam)
