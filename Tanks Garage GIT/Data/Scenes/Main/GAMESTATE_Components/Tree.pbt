@@ -5394,6 +5394,30 @@ Objects {
         SelfId: 7647187385909291407
       }
     }
+    Overrides {
+      Name: "cs:BIG_DEALS_CONTAINER"
+      ObjectReference {
+        SelfId: 13341102131129763218
+      }
+    }
+    Overrides {
+      Name: "cs:MONEY_CONTAINER"
+      ObjectReference {
+        SelfId: 7636616306951170334
+      }
+    }
+    Overrides {
+      Name: "cs:TRADE_CONTAINER"
+      ObjectReference {
+        SelfId: 14592901805745036095
+      }
+    }
+    Overrides {
+      Name: "cs:PREMIUM_TANKS_CONTAINER"
+      ObjectReference {
+        SelfId: 13256554077844899425
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

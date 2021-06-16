@@ -4,6 +4,7 @@ local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 
 -- Menu
 local BUTTON_PREMIUM_SHOP = script:GetCustomProperty("BUTTON_PREMIUM_SHOP"):WaitForObject()
+local PREMIUM_SHOP = script:GetCustomProperty("PREMIUM_SHOP"):WaitForObject()
 
 -- Sub Menu
 local SUB_MENU = script:GetCustomProperty("SUB_MENU"):WaitForObject()
@@ -320,6 +321,28 @@ function ToggleShop()
 	UpdateTotal()
 end
 
+function ToggleThisComponent(requestedPlayerState, substate)
+	if(substate) then
+		HideSubmenuActives()
+		HideSubmenuContent()
+		--button.parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
+		
+		if(substate == 1) then
+			BIG_DEALS.visibility = Visibility.FORCE_ON
+			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_1_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
+		elseif(substate == 2) then
+			MONEY.visibility = Visibility.FORCE_ON
+			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_2_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
+		elseif(substate == 3) then
+			RESEARCH_POINTS.visibility = Visibility.FORCE_ON
+			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_3_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
+		elseif(substate == 4) then
+			PREMIUM_TANKS.visibility = Visibility.FORCE_ON
+			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_4_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
+		end
+	end
+end
+
 -- Click handlers
 SUBMENU_ITEM_1_BUTTON.clickedEvent:Connect(SubmenuClick)
 SUBMENU_ITEM_2_BUTTON.clickedEvent:Connect(SubmenuClick)
@@ -351,3 +374,5 @@ CLOSE_PREMIUM_SHOP_BUTTON.unhoveredEvent:Connect(CloseUnhover)
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 BUTTON_CONVERT_RPs:FindChildByName("BUTTON").unhoveredEvent:Connect(ConvertSelectedTankRPUnhover)
+
+Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)

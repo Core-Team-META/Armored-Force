@@ -38,13 +38,12 @@ function ToggleThisComponent(requestedPlayerState)
 		PopulateXPTanks()
 		
 		Task.Wait(2)
-		
+
 		if savedState ~= thisComponent or shopViewUI.isEnabled then
 			return
 		end
 	
 		shopViewUI.isEnabled = true
-		
 	
 	else
 		Task.Wait(0.1)

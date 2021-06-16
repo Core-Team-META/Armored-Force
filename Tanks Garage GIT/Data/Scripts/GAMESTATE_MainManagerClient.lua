@@ -60,15 +60,23 @@ function Tick()
 
 end
 
-function GoToPremiumShop()
-	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1])
+function GoToPremiumShop_1()
+	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1], 1)
+end
+
+function GoToPremiumShop_2()
+	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1], 2)
+end
+
+function GoToPremiumShop_3()
+	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1], 3)
 end
 
 UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
 
 mainManagerServer.networkedPropertyChangedEvent:Connect(OnServerStateChange)
-AddXPButton.clickedEvent:Connect(GoToPremiumShop)
-TradeXPButton.clickedEvent:Connect(GoToPremiumShop)
-AddSilverButton.clickedEvent:Connect(GoToPremiumShop)
-AddGoldButton.clickedEvent:Connect(GoToPremiumShop)
+AddXPButton.clickedEvent:Connect(GoToPremiumShop_1)
+TradeXPButton.clickedEvent:Connect(GoToPremiumShop_3)
+AddSilverButton.clickedEvent:Connect(GoToPremiumShop_2)
+AddGoldButton.clickedEvent:Connect(GoToPremiumShop_2)
