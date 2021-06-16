@@ -2,7 +2,7 @@ Assets {
   Id: 2236853898797912450
   Name: "WinchCable"
   PlatformAssetType: 13
-  SerializationVersion: 87
+  SerializationVersion: 89
   CustomMaterialAsset {
     BaseMaterialId: 8122358321577084954
     ParameterOverrides {

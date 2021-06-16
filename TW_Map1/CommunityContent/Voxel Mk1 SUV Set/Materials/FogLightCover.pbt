@@ -2,7 +2,7 @@ Assets {
   Id: 14535157815910758624
   Name: "FogLightCover"
   PlatformAssetType: 13
-  SerializationVersion: 87
+  SerializationVersion: 89
   CustomMaterialAsset {
     BaseMaterialId: 2112804179467698174
     ParameterOverrides {
