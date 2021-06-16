@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8554670856797773246
+        ParentId: 9503913149628986679
         ChildIds: 16564435318592320789
         ChildIds: 16611576805482364796
         ChildIds: 15182355815806285189
@@ -23,6 +23,7 @@ Assets {
         ChildIds: 4896267088159680762
         ChildIds: 14414818796433095065
         ChildIds: 1619499002851652577
+        ChildIds: 587819518257537401
         UnregisteredParameters {
           Overrides {
             Name: "cs:ClaimButton"
@@ -58,6 +59,24 @@ Assets {
             Name: "cs:StatusText"
             ObjectReference {
               SubObjectId: 1619499002851652577
+            }
+          }
+          Overrides {
+            Name: "cs:PREREQUISITE"
+            ObjectReference {
+              SubObjectId: 14414818796433095065
+            }
+          }
+          Overrides {
+            Name: "cs:PreReqText"
+            ObjectReference {
+              SubObjectId: 2843646247147990313
+            }
+          }
+          Overrides {
+            Name: "cs:RewardClaimButton"
+            ObjectReference {
+              SubObjectId: 587819518257537401
             }
           }
         }
@@ -504,7 +523,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -753,6 +772,101 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topright"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 587819518257537401
+        Name: "RewardClaimButton"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16569564263885498074
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 100
+          Height: 30
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Button {
+            FontColor {
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              G: 0.0834435821
+              B: 0.179999948
+            }
+            HoveredColor {
+              G: 0.0834436268
+              B: 0.179999948
+              A: 1
+            }
+            PressedColor {
+              G: 0.0834436268
+              B: 0.179999948
+              A: 1
+            }
+            DisabledColor {
+              A: 1
+            }
+            Brush {
+              Id: 14060330023043759337
+            }
+            IsButtonEnabled: true
+            OnlyUseMainColor: true
+            ClickMode {
+              Value: "mc:ebuttonclickmode:default"
+            }
+            Font {
+            }
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:center"
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }

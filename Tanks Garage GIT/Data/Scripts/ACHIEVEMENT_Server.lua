@@ -36,8 +36,6 @@ local function SetPlayerFlags(player)
     player.serverUserData.ACH_diedInRound = false
     player.serverUserData.ACH_killCount = 0
     player.serverUserData.classDamage = {}
-    --player:SetResource(CONST.ROUND_DAMAGE, 0)
-    --player:SetResource(CONST.ROUND_HEALING, 0)
 end
 
 local function OnLobby()
@@ -52,15 +50,7 @@ local function OnRoundStart()
     end
 end
 
--- Warrior Damage Achievements
-local function CheckClassDamageAchievements(player, key, class)
-    local amount = player.serverUserData.classDamage[class] or 0
-    for i = 1, 4 do
-        if ACH_API.IsUnlocked(player, key .. tostring(i), amount) then
-            ACH_API.UnlockAchievement(player, key .. tostring(i))
-        end
-    end
-end
+
 
 local function OnResourceChanged(player, resName, resAmt)
     if resAmt == 0 then
@@ -181,7 +171,7 @@ function OnKillStreak(player, value)
 end
 
 function OnRewardCollected(player, id)
-    ACH_API.CollectReward(player, id)
+    ACH_API.GiveRewards(player, id)
 end
 
 function OnPlayerCapture(player, value)
@@ -199,17 +189,18 @@ function OnKillStreak(player, value)
     end
 end
 
---#TODO Needs to be changed to cross key
+
 function OnPlayerJoined(player)
+    
     if shouldSaveProgress then
         ACH_API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     end
     listeners[player.id] = {}
     listeners[player.id]["Respawn"] = player.respawnedEvent:Connect(OnPlayerRespawn)
     listeners[player.id]["Resource"] = player.resourceChangedEvent:Connect(OnResourceChanged)
-
     SetPlayerFlags(player)
 end
+
 
 function OnPlayerLeft(player)
     if shouldSaveProgress then

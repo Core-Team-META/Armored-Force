@@ -220,17 +220,13 @@ function API.GiveRewards(player, id)
             for _, reward in ipairs(achievements[id].rewards) do
                 local resourceName = reward:GetCustomProperty("ResourceName")
                 local rewardAmount = reward:GetCustomProperty("Amount")
-                --#TODO Currently setup for Strike Team
-                local weaponId = reward:GetCustomProperty("WeaponId")
-                local skinId = reward:GetCustomProperty("SkinId")
+
                 if resourceName and rewardAmount then
                     --player.serverUserData.XP:AddXP(rewardAmount) -- #TODO use XP Manager
                     player:AddResource(resourceName, rewardAmount)
-                elseif weaponId and skinId then
-                    player.serverUserData.Storage:AddSkin(weaponId, skinId)
                 end
             end
-        --API.SetClaimed(player, id)
+            API.SetClaimed(player, id)
         end
     end
 end
