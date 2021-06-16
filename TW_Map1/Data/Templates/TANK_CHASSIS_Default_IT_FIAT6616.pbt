@@ -65,6 +65,7 @@ Assets {
             Z: 20
           }
           GravityScale: 1
+          CoastBrakeStrength: 1
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
@@ -828,5 +829,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
 }

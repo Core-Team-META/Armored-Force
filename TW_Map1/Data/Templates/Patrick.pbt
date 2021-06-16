@@ -178,6 +178,7 @@ Assets {
             RespawnMode_v2 {
               Value: "mc:erespawnmode:roundrobin"
             }
+            StartSpawned: true
           }
         }
       }
@@ -740,6 +741,10 @@ Assets {
               G: 0.5
               B: 0.5
               A: 1
+            }
+            FillBrush {
+            }
+            BackgroundBrush {
             }
           }
           AnchorLayout {
@@ -16169,6 +16174,10 @@ Assets {
               B: 1
               A: 1
             }
+            FillBrush {
+            }
+            BackgroundBrush {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -16353,6 +16362,10 @@ Assets {
               G: 1
               B: 1
               A: 1
+            }
+            FillBrush {
+            }
+            BackgroundBrush {
             }
           }
           AnchorLayout {
@@ -25852,5 +25865,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 89
 }

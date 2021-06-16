@@ -151,6 +151,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4249713416572262948
+  Name: "Container - Hex- Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_hex_rnd_001_ref"
+  }
+}
+Assets {
   Id: 3377721323622766709
   Name: "Rock Pile 002"
   PlatformAssetType: 1

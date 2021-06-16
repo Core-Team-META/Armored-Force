@@ -76,7 +76,8 @@ function CalculateTotalCurrency(player)
 end
 
 function SetWinner(winningTeam)
-
+	
+	print("winner assigned: " .. tostring(winningTeam))
 	winner = winningTeam
 
 end
@@ -89,13 +90,7 @@ function StateSTART(manager, propertyName)
 		
 	end
 	
-	if mainGameStateManager:GetCustomProperty("GameState") == "LOBBY_STATE" then
-	
-		winner = -1
-		
-		return
-		
-	elseif mainGameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
+	if mainGameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
 	
 		while winner < 0 do
 		
