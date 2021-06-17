@@ -46,25 +46,7 @@ Objects {
   ParentId: 3011402980091570879
   UnregisteredParameters {
     Overrides {
-      Name: "cs:APIBasicGameState"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
       Name: "cs:Insignia"
-      ObjectReference {
-        SelfId: 5888703191258211335
-      }
-    }
-    Overrides {
-      Name: "cs:PlayerTitles_Scoreboard"
-      ObjectReference {
-        SelfId: 6136997686353458719
-      }
-    }
-    Overrides {
-      Name: "cs:RANK_PANEL"
       ObjectReference {
         SelfId: 17070274267426031654
       }
@@ -143,11 +125,6 @@ Objects {
   ChildIds: 9152732280943118475
   ChildIds: 8962159185834153303
   ChildIds: 9163686943911561427
-  ChildIds: 8545021096038669227
-  ChildIds: 9528094750289747005
-  ChildIds: 16646293641831240397
-  ChildIds: 143921725406102248
-  ChildIds: 17200430895158365611
   ChildIds: 7094891159404907762
   UnregisteredParameters {
   }
@@ -203,297 +180,7 @@ Objects {
     Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
-        Id: 15867500514693436262
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2893761781180628874
-    }
-  }
-}
-Objects {
-  Id: 17200430895158365611
-  Name: "Rank10"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14787043924438047764
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MinLevel"
-      Int: 45
-    }
-    Overrides {
-      Name: "cs:MaxLevel"
-      Int: 49
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 12863629710650729689
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 12349231471752820263
-      }
-    }
-    Overrides {
-      Name: "cs:MedRankIcon"
-      AssetReference {
-        Id: 11059270527174102125
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2893761781180628874
-    }
-  }
-}
-Objects {
-  Id: 143921725406102248
-  Name: "Rank9"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14787043924438047764
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MinLevel"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:MaxLevel"
-      Int: 44
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 7212918376377627913
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 14750409854262784100
-      }
-    }
-    Overrides {
-      Name: "cs:MedRankIcon"
-      AssetReference {
-        Id: 15488453803563036100
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2893761781180628874
-    }
-  }
-}
-Objects {
-  Id: 16646293641831240397
-  Name: "Rank8"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14787043924438047764
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MinLevel"
-      Int: 35
-    }
-    Overrides {
-      Name: "cs:MaxLevel"
-      Int: 39
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 4199697846800287897
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 14607161776633735426
-      }
-    }
-    Overrides {
-      Name: "cs:MedRankIcon"
-      AssetReference {
-        Id: 12309692384200925382
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2893761781180628874
-    }
-  }
-}
-Objects {
-  Id: 9528094750289747005
-  Name: "Rank7"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14787043924438047764
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MinLevel"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:MaxLevel"
-      Int: 34
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 17522905265635573699
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 6590716691316691742
-      }
-    }
-    Overrides {
-      Name: "cs:MedRankIcon"
-      AssetReference {
-        Id: 8768134870772704756
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2893761781180628874
-    }
-  }
-}
-Objects {
-  Id: 8545021096038669227
-  Name: "Rank6"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14787043924438047764
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:MinLevel"
-      Int: 25
-    }
-    Overrides {
-      Name: "cs:MaxLevel"
-      Int: 29
-    }
-    Overrides {
-      Name: "cs:SmallRankIcon"
-      AssetReference {
-        Id: 12346830977779954617
-      }
-    }
-    Overrides {
-      Name: "cs:LargeRankIcon"
-      AssetReference {
-        Id: 10021987152125489027
-      }
-    }
-    Overrides {
-      Name: "cs:MedRankIcon"
-      AssetReference {
-        Id: 11193421392147770028
+        Id: 13754214866157378522
       }
     }
   }
@@ -530,11 +217,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
-      Int: 20
+      Int: 40
     }
     Overrides {
       Name: "cs:MaxLevel"
-      Int: 24
+      Int: 49
     }
     Overrides {
       Name: "cs:SmallRankIcon"
@@ -551,7 +238,7 @@ Objects {
     Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
-        Id: 603466221403959114
+        Id: 14052890819589790136
       }
     }
   }
@@ -588,11 +275,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
-      Int: 15
+      Int: 30
     }
     Overrides {
       Name: "cs:MaxLevel"
-      Int: 19
+      Int: 39
     }
     Overrides {
       Name: "cs:SmallRankIcon"
@@ -609,7 +296,7 @@ Objects {
     Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
-        Id: 16431823694720267158
+        Id: 9033700003077298857
       }
     }
   }
@@ -646,11 +333,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
-      Int: 10
+      Int: 20
     }
     Overrides {
       Name: "cs:MaxLevel"
-      Int: 14
+      Int: 29
     }
     Overrides {
       Name: "cs:SmallRankIcon"
@@ -667,7 +354,7 @@ Objects {
     Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
-        Id: 6979534147942131960
+        Id: 7388947560576348752
       }
     }
   }
@@ -704,11 +391,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:MinLevel"
-      Int: 5
+      Int: 10
     }
     Overrides {
       Name: "cs:MaxLevel"
-      Int: 9
+      Int: 19
     }
     Overrides {
       Name: "cs:SmallRankIcon"
@@ -725,7 +412,7 @@ Objects {
     Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
-        Id: 2716535327352744320
+        Id: 11918174607508767811
       }
     }
   }
@@ -766,7 +453,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MaxLevel"
-      Int: 4
+      Int: 9
     }
     Overrides {
       Name: "cs:RankAcronym"
@@ -787,7 +474,7 @@ Objects {
     Overrides {
       Name: "cs:MedRankIcon"
       AssetReference {
-        Id: 16317074618882866322
+        Id: 3055614023848673770
       }
     }
   }
