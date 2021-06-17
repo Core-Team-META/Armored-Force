@@ -17,13 +17,12 @@ local sharedKeyNetRef = keys:GetCustomProperty("Achievements")
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRES
 ------------------------------------------------------------------------------------------------------------------------
---local GAME_STATE_API = require(script:GetCustomProperty("APIBasicGameState"))
 local ACH_API = require(script:GetCustomProperty("ACH_API"))
+local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 ------------------------------------------------------------------------------------------------------------------------
 -- OBJECTS
 ------------------------------------------------------------------------------------------------------------------------
 local ACHIEVEMENT_LIST = script:GetCustomProperty("Achievement_List"):WaitForObject()
---local GAME_STATE = script:GetCustomProperty("BasicGameStateManagerServer"):WaitForObject()
 local listeners = {}
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
@@ -35,63 +34,20 @@ end
 local function SetPlayerFlags(player)
     player.serverUserData.ACH_diedInRound = false
     player.serverUserData.ACH_killCount = 0
-    player.serverUserData.classDamage = {}
-end
-
-local function OnLobby()
-    for _, player in ipairs(Game.GetPlayers()) do
-        ACH_API.ResetRepeatable(player)
-    end
 end
 
 local function OnRoundStart()
     for _, player in ipairs(Game.GetPlayers()) do
+        ACH_API.ResetRepeatable(player)
         SetPlayerFlags(player)
     end
 end
-
-
 
 local function OnResourceChanged(player, resName, resAmt)
     if resAmt == 0 then
         return
     end
-    --[[if resName == CONST.ROUND_DAMAGE then
-        local class = player:GetResource(CONST.CLASS_RES)
-        -- Class Based Damage Achievements
-        if class == CONST.CLASS.WARRIOR then
-            CheckClassDamageAchievements(player, "ASWARDMG", class)
-        elseif class == CONST.CLASS.MAGE then
-            CheckClassDamageAchievements(player, "ASMAGDMG", class)
-        elseif class == CONST.CLASS.HUNTER then
-            CheckClassDamageAchievements(player, "ASHUNDMG", class)
-        elseif class == CONST.CLASS.HEALER then
-            CheckClassDamageAchievements(player, "ASHELDMG", class)
-        elseif class == CONST.CLASS.ASSASSIN then
-            CheckClassDamageAchievements(player, "ASASNDMG", class)
-        end
-    elseif resName == CONST.ROUND_HEALING then
-        if ACH_API.IsUnlocked(player, "ASHEAL1", resAmt) then
-            ACH_API.UnlockAchievement(player, "ASHEAL1")
-        end
-        if ACH_API.IsUnlocked(player, "ASHEAL2", resAmt) then
-            ACH_API.UnlockAchievement(player, "ASHEAL2")
-        end
-        if ACH_API.IsUnlocked(player, "ASHEAL3", resAmt) then
-            ACH_API.UnlockAchievement(player, "ASHEAL3")
-        end
-    elseif resName == "Objective" then
-        if ACH_API.IsUnlocked(player, "AS_NRSC1", resAmt) then
-            ACH_API.UnlockAchievement(player, "AS_NRSC1")
-        end
-        if ACH_API.IsUnlocked(player, "AS_NRSC2", resAmt) then
-            ACH_API.UnlockAchievement(player, "AS_NRSC2")
-        end
-        if ACH_API.IsUnlocked(player, "AS_NRSC3", resAmt) then
-            ACH_API.UnlockAchievement(player, "AS_NRSC3")
-        end
-    else
-    end]]--
+ 
 end
 
 local function PlayerKilled(player, target, weaponType, isHeadShot)
@@ -102,8 +58,10 @@ local function PlayerKilled(player, target, weaponType, isHeadShot)
     player.serverUserData.ACH_killCount =
         player.serverUserData.ACH_killCount and player.serverUserData.ACH_killCount + 1 or 1
 
-    ACH_API.AddProgress(player, "ASKILL1", 1)
-    ACH_API.AddProgress(player, "ASKILL2", 1)
+    ACH_API.AddProgress(player, "ASKI", 1)
+    ACH_API.AddProgress(player, "ACLA", 1)
+    ACH_API.AddProgress(player, "AASS", 1)
+    ACH_API.AddProgress(player, "AWAR", 1)
 
     target.serverUserData.ACH_killCredited = true
     target.serverUserData.ACH_diedInRound = true
@@ -116,23 +74,37 @@ local function OnRoundEnd()
     for _, player in ipairs(Game.GetPlayers()) do --
         if Object.IsValid(player) then
             if (teamOne > teamTwo and player.team == 1) or (teamOne < teamTwo and player.team == 2) then
-                ACH_API.AddProgress(player, "AS_100WINS", 1)
+            --ACH_API.AddProgress(player, "AS_100WINS", 1)
             end
+            local tankType = player.serverUserData.currentTankdata and player.serverUserData.currentTankdata.type
+            if tankType then
+                if
+                    player.serverUserData.ACH_killCount and player.serverUserData.ACH_killCount >= 1 and
+                        not player.serverUserData.ACH_diedInRound
+                 then
+                    -- Tank Type based achievements
+                    if tankType == CONST.TANK_TYPE.LIGHT then
+                        ACH_API.AddProgress(player, "ALP", 1)
+                        ACH_API.AddProgress(player, "ASP", 1)
+                        ACH_API.AddProgress(player, "ALCOM", 1)
+                    elseif tankType == CONST.TANK_TYPE.MEDIUM then
+                        ACH_API.AddProgress(player, "AMP", 1)
+                        ACH_API.AddProgress(player, "AMS", 1)
+                        ACH_API.AddProgress(player, "AMC", 1)
+                    elseif tankType == CONST.TANK_TYPE.HEAVY then
+                        ACH_API.AddProgress(player, "AHP", 1)
+                        ACH_API.AddProgress(player, "AHS", 1)
+                        ACH_API.AddProgress(player, "AHC", 1)
+                    elseif tankType == CONST.TANK_TYPE.TANKDESTROYER then
+                        ACH_API.AddProgress(player, "ADP", 1)
+                        ACH_API.AddProgress(player, "ADS", 1)
+                        ACH_API.AddProgress(player, "ADC", 1)
+                    end
+                end
 
-            ACH_API.AddProgress(player, "AS_500MATCHES", 1)
-            if
-                player.serverUserData.ACH_killCount and player.serverUserData.ACH_killCount >= 1 and
-                    not player.serverUserData.ACH_diedInRound
-             then
-                ACH_API.AddProgress(player, "AS_UNKILLABLE", 1)
+                player.serverUserData.ACH_killCount = 0
+                player.serverUserData.ACH_diedInRound = false
             end
-
-            player.serverUserData.ACH_killCount = 0
-            player.serverUserData.ACH_diedInRound = false
-        end
-        Task.Wait()
-        if Object.IsValid(player) then
-            ACH_API.GiveAllRewards(player)
         end
     end
     Task.Spawn(
@@ -141,7 +113,7 @@ local function OnRoundEnd()
                 ACH_API.ResetRepeatable(player)
             end
         end,
-        10
+        3
     )
 end
 
@@ -154,7 +126,7 @@ end
 -- GLOBAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
-function PlayerDamaged(attackData)
+function OnPlayerDied(attackData)
     local target = attackData.object
     local source = attackData.source
     if IsValidPlayer(source) and IsValidPlayer(target) then
@@ -164,43 +136,20 @@ function PlayerDamaged(attackData)
     end
 end
 
-function OnKillStreak(player, value)
-    if ACH_API.IsUnlocked(player, "AS_10KS") then
-        ACH_API.UnlockAchievement(player, "AS_10KS")
-    end
-end
-
 function OnRewardCollected(player, id)
     ACH_API.GiveRewards(player, id)
 end
 
-function OnPlayerCapture(player, value)
-    ACH_API.AddProgress(player, "AS_CAP1", value)
-    ACH_API.AddProgress(player, "AS_CAP2", value)
-end
-
-function OnPlayerAssistCapture(player, value)
-    ACH_API.AddProgress(player, "AS_ASSISTCAP25", value)
-end
-
-function OnKillStreak(player, value)
-    if ACH_API.IsUnlocked(player, "AS_10KS") then
-        ACH_API.UnlockAchievement(player, "AS_10KS")
-    end
-end
-
-
 function OnPlayerJoined(player)
-    
     if shouldSaveProgress then
         ACH_API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     end
     listeners[player.id] = {}
-    listeners[player.id]["Respawn"] = player.respawnedEvent:Connect(OnPlayerRespawn)
+    listeners[player.id]["Respawn"] = player.spawnedEvent:Connect(OnPlayerRespawn)
     listeners[player.id]["Resource"] = player.resourceChangedEvent:Connect(OnResourceChanged)
+
     SetPlayerFlags(player)
 end
-
 
 function OnPlayerLeft(player)
     if shouldSaveProgress then
@@ -214,33 +163,17 @@ function OnPlayerLeft(player)
     end
 end
 
-function OnGameStateChanged(object, string)
-    if string == "State" then
-        local state = object:GetCustomProperty(string)
-        if state == GAME_STATE_API.GAME_STATE_ROUND then
-            OnRoundStart()
-        end
-        if state == GAME_STATE_API.GAME_STATE_ROUND_END then
-            OnRoundEnd()
-        end
-        if state == GAME_STATE_API.GAME_STATE_LOBBY then
-            OnLobby()
-        end
-    end
-end
-
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
---GAME_STATE.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
+Game.roundEndEvent:Connect(OnRoundEnd)
 
 -- Server (Same Context) Broadcast Listeners
-Events.Connect("AS.PlayerDamaged", PlayerDamaged)
-Events.Connect("AS.KillStreak", OnKillStreak)
-Events.Connect("AS.PlayerPointCapture", OnPlayerCapture)
-Events.Connect("AS.PlayerAssistPointCapture", OnPlayerAssistCapture)
+--Events.Connect("CombatWrapAPI.GoingToTakeDamage", OnGoingToTakeDamage)
+--Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTaken)
+Events.Connect("CombatWrapAPI.ObjectHasDied", OnPlayerDied)
 
 -- Client Broadcast Listeners
 Events.ConnectForPlayer("AS.RewardClaim", OnRewardCollected)
