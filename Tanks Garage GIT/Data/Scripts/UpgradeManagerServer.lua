@@ -76,6 +76,7 @@ function PurchaseTank(player, id, prereqs)
 						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 					end
 					Events.BroadcastToPlayer(player, "TankPurchaseSuccessful")
+					Events.Broadcast("TankAcquired", player, id, v:GetCustomProperty("Tier"))
 					return BroadcastEventResultCode.SUCCESS															
 				end
 			end
@@ -162,6 +163,7 @@ function PurchaseWeapon(player, id)
 					tank.weaponProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 					
 					Events.BroadcastToPlayer(player, "WeaponUpgradeSuccessful")
+					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.WEAPON)
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -249,6 +251,7 @@ function PurchaseArmor(player, id)
 					tank.armorProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 					
 					Events.BroadcastToPlayer(player, "ArmorUpgradeSuccessful")
+					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.ARMOR)
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
@@ -335,6 +338,7 @@ function PurchaseEngine(player, id)
 					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 					
 					Events.BroadcastToPlayer(player, "EngineUpgradeSuccessful")
+					Events.Broadcast("UpgradeAcquired", player, id, Constants_API.UPGRADE_SLOT.ENGINE)
 					return BroadcastEventResultCode.SUCCESS
 				end
 			end
