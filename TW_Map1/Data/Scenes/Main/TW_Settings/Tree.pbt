@@ -38,14 +38,14 @@ Objects {
           Value: "mc:echatmode:teamandall"
         }
         ChatPosition {
-          X: -350
+          Y: -50
         }
         ChatSize {
           X: 450
           Y: 250
         }
         ChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:right"
+          Value: "mc:ecorehorizontalalign:center"
         }
         ChatVerticalAlignment {
           Value: "mc:ecoreverticalalign:bottom"
