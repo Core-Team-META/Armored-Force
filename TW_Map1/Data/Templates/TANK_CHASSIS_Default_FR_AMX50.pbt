@@ -7,7 +7,7 @@ Assets {
       RootId: 14746283572221431950
       Objects {
         Id: 14746283572221431950
-        Name: "16TANK_CHASSIS_Default_FR_AMX50"
+        Name: "TANK_CHASSIS_Default_FR_AMX50"
         Transform {
           Scale {
             X: 1
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 48000
           PhysicsBodyScale {
-            X: 7
-            Y: 3.5
-            Z: 1
+            X: 8
+            Y: 4.7
+            Z: 1.4
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,8 +52,8 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -150
-            Z: 140
+            X: -70
+            Z: 60
           }
           MaxSpeed: 1475
           AccelerationRate: 400
@@ -61,24 +61,24 @@ Assets {
           BrakeStrength: 1
           TireFriction: 20
           CenterOfMassOFfset {
-            Z: 20
+            Z: -20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 90
+            LeftTreadRadius: 40
             LeftTreadWidth: 100
-            RightTreadRadius: 90
+            RightTreadRadius: 40
             RightTreadWidth: 100
             LeftTreadOffset {
-              X: -10
+              X: -60
               Y: -260
-              Z: 90
+              Z: 40
             }
             RightTreadOffset {
-              X: -10
+              X: -60
               Y: 260
-              Z: 90
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

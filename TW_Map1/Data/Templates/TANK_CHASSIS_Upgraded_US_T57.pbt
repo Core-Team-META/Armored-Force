@@ -7,7 +7,7 @@ Assets {
       RootId: 7201845003621308571
       Objects {
         Id: 7201845003621308571
-        Name: "14TANK_CHASSIS_Upgraded_US_T57"
+        Name: "TANK_CHASSIS_Upgraded_US_T57"
         Transform {
           Scale {
             X: 1
@@ -42,8 +42,8 @@ Assets {
           }
           Mass: 48000
           PhysicsBodyScale {
-            X: 7.7
-            Y: 3.2
+            X: 8
+            Y: 4
             Z: 1.5
           }
           IsDriverHidden: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
+            X: -80
             Z: 70
           }
           MaxSpeed: 975
@@ -66,19 +66,19 @@ Assets {
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 60
-            LeftTreadWidth: 135
-            RightTreadRadius: 60
-            RightTreadWidth: 135
+            LeftTreadRadius: 50
+            LeftTreadWidth: 80
+            RightTreadRadius: 50
+            RightTreadWidth: 80
             LeftTreadOffset {
-              X: -30
-              Y: -240
-              Z: 60
+              X: -70
+              Y: -220
+              Z: 50
             }
             RightTreadOffset {
-              X: -30
-              Y: 240
-              Z: 60
+              X: -70
+              Y: 220
+              Z: 50
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

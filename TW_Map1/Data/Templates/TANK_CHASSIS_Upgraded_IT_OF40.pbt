@@ -7,7 +7,7 @@ Assets {
       RootId: 6448750086190425345
       Objects {
         Id: 6448750086190425345
-        Name: "27TANK_CHASSIS_Upgraded_IT_OF40"
+        Name: "TANK_CHASSIS_Upgraded_IT_OF40"
         Transform {
           Scale {
             X: 1
@@ -42,8 +42,8 @@ Assets {
           }
           Mass: 36000
           PhysicsBodyScale {
-            X: 8
-            Y: 3.2
+            X: 9.5
+            Y: 4.5
             Z: 1.5
           }
           IsDriverHidden: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -90
+            X: -70
             Z: 50
           }
           MaxSpeed: 1575
@@ -61,24 +61,25 @@ Assets {
           BrakeStrength: 1
           TireFriction: 20
           CenterOfMassOFfset {
+            X: -60
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 90
-            LeftTreadWidth: 125
-            RightTreadRadius: 90
-            RightTreadWidth: 125
+            LeftTreadRadius: 50
+            LeftTreadWidth: 100
+            RightTreadRadius: 50
+            RightTreadWidth: 100
             LeftTreadOffset {
-              X: -30
+              X: -60
               Y: -210
-              Z: 90
+              Z: 50
             }
             RightTreadOffset {
-              X: -30
+              X: -60
               Y: 210
-              Z: 90
+              Z: 50
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

@@ -7,7 +7,7 @@ Assets {
       RootId: 8523728319199771843
       Objects {
         Id: 8523728319199771843
-        Name: "11TANK_CHASSIS_Upgraded_FR_BatChat25T"
+        Name: "TANK_CHASSIS_Upgraded_FR_BatChat25T"
         Transform {
           Scale {
             X: 1
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 28000
           PhysicsBodyScale {
-            X: 8
-            Y: 3.3
-            Z: 1
+            X: 7
+            Y: 5
+            Z: 1.3
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,8 +52,8 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
-            Z: 70
+            X: -20
+            Z: 60
           }
           MaxSpeed: 1552
           AccelerationRate: 400
@@ -66,19 +66,19 @@ Assets {
           GravityScale: 1
           CoastBrakeStrength: 121.9
           Tank {
-            LeftTreadRadius: 50
-            LeftTreadWidth: 110
-            RightTreadRadius: 50
-            RightTreadWidth: 110
+            LeftTreadRadius: 40
+            LeftTreadWidth: 80
+            RightTreadRadius: 40
+            RightTreadWidth: 80
             LeftTreadOffset {
-              X: -10
+              X: -20
               Y: -250
-              Z: 50
+              Z: 40
             }
             RightTreadOffset {
-              X: -10
+              X: -20
               Y: 250
-              Z: 50
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

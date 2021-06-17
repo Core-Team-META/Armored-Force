@@ -7,7 +7,7 @@ Assets {
       RootId: 12298551519920312036
       Objects {
         Id: 12298551519920312036
-        Name: "13TANK_CHASSIS_Upgraded_USSR_T62A1"
+        Name: "TANK_CHASSIS_Upgraded_USSR_T62A1"
         Transform {
           Scale {
             X: 1
@@ -43,7 +43,7 @@ Assets {
           Mass: 37000
           PhysicsBodyScale {
             X: 8
-            Y: 3.5
+            Y: 4
             Z: 1.5
           }
           IsDriverHidden: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
+            X: -60
             Z: 80
           }
           MaxSpeed: 1237
@@ -67,16 +67,16 @@ Assets {
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 50
-            LeftTreadWidth: 150
+            LeftTreadWidth: 120
             RightTreadRadius: 50
-            RightTreadWidth: 150
+            RightTreadWidth: 120
             LeftTreadOffset {
-              X: -10
+              X: -60
               Y: -240
               Z: 50
             }
             RightTreadOffset {
-              X: -10
+              X: -60
               Y: 240
               Z: 50
             }

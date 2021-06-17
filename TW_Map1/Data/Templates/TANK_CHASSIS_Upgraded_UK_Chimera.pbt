@@ -7,7 +7,7 @@ Assets {
       RootId: 8313356443706471011
       Objects {
         Id: 8313356443706471011
-        Name: "10TANK_CHASSIS_Upgraded_UK_Chimera"
+        Name: "TANK_CHASSIS_Upgraded_UK_Chimera"
         Transform {
           Scale {
             X: 1
@@ -40,11 +40,11 @@ Assets {
           }
           Camera {
           }
-          Mass: 23000
+          Mass: 30000
           PhysicsBodyScale {
-            X: 6
-            Y: 3
-            Z: 0.6
+            X: 7
+            Y: 3.7
+            Z: 1
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -50
-            Z: 40
+            Z: 30
           }
           MaxSpeed: 1275
           AccelerationRate: 400
@@ -61,23 +61,24 @@ Assets {
           BrakeStrength: 1
           TireFriction: 10
           CenterOfMassOFfset {
-            Z: 20
+            X: -50
+            Z: 5
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 30
-            LeftTreadWidth: 70
+            LeftTreadWidth: 50
             RightTreadRadius: 30
-            RightTreadWidth: 70
+            RightTreadWidth: 50
             LeftTreadOffset {
               X: -50
-              Y: -200
+              Y: -180
               Z: 30
             }
             RightTreadOffset {
               X: -50
-              Y: 200
+              Y: 180
               Z: 30
             }
             HandbrakeBinding {

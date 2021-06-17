@@ -7,7 +7,7 @@ Assets {
       RootId: 11747631602550984809
       Objects {
         Id: 11747631602550984809
-        Name: "28TANK_CHASSIS_Upgraded_GE_E50"
+        Name: "TANK_CHASSIS_Upgraded_GE_E50"
         Transform {
           Scale {
             X: 1
@@ -42,8 +42,8 @@ Assets {
           }
           Mass: 40000
           PhysicsBodyScale {
-            X: 7
-            Y: 3.2
+            X: 9
+            Y: 4.5
             Z: 1.7
           }
           IsDriverHidden: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
+            X: -70
             Z: 70
           }
           MaxSpeed: 1440
@@ -61,24 +61,25 @@ Assets {
           BrakeStrength: 1125
           TireFriction: 20
           CenterOfMassOFfset {
+            X: -50
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 112.5
           Tank {
-            LeftTreadRadius: 90
-            LeftTreadWidth: 125
-            RightTreadRadius: 90
-            RightTreadWidth: 125
+            LeftTreadRadius: 50
+            LeftTreadWidth: 100
+            RightTreadRadius: 50
+            RightTreadWidth: 100
             LeftTreadOffset {
-              X: -30
+              X: -50
               Y: -250
-              Z: 90
+              Z: 50
             }
             RightTreadOffset {
-              X: -30
+              X: -50
               Y: 250
-              Z: 90
+              Z: 50
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

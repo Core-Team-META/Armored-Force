@@ -7,7 +7,7 @@ Assets {
       RootId: 7257084140772063349
       Objects {
         Id: 7257084140772063349
-        Name: "15TANK_CHASSIS_Default_USSR_IS7"
+        Name: "TANK_CHASSIS_Default_USSR_IS7"
         Transform {
           Scale {
             X: 1
@@ -43,8 +43,8 @@ Assets {
           Mass: 50000
           PhysicsBodyScale {
             X: 8
-            Y: 3.2
-            Z: 1.3
+            Y: 4.5
+            Z: 1.5
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,32 +52,33 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
+            X: -60
             Z: 70
           }
           MaxSpeed: 1125
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 25
+          TireFriction: 20
           CenterOfMassOFfset {
+            X: -60
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 50
-            LeftTreadWidth: 135
+            LeftTreadWidth: 100
             RightTreadRadius: 50
-            RightTreadWidth: 135
+            RightTreadWidth: 100
             LeftTreadOffset {
-              X: -30
-              Y: -220
+              X: -60
+              Y: -200
               Z: 50
             }
             RightTreadOffset {
-              X: -30
-              Y: 220
+              X: -60
+              Y: 200
               Z: 50
             }
             HandbrakeBinding {

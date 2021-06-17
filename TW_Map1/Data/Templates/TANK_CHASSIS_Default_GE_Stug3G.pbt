@@ -7,7 +7,7 @@ Assets {
       RootId: 9094843975659035065
       Objects {
         Id: 9094843975659035065
-        Name: "22TANK_CHASSIS_Default_GE_Stug3G"
+        Name: "TANK_CHASSIS_Default_GE_Stug3G"
         Transform {
           Scale {
             X: 1
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 33000
           PhysicsBodyScale {
-            X: 7
-            Y: 2.7
-            Z: 1.1
+            X: 6.7
+            Y: 3.4
+            Z: 1.3
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
+            X: -40
             Z: 50
           }
           MaxSpeed: 850
@@ -61,24 +61,25 @@ Assets {
           BrakeStrength: 1
           TireFriction: 10
           CenterOfMassOFfset {
+            X: -40
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 40
-            LeftTreadWidth: 60
-            RightTreadRadius: 40
-            RightTreadWidth: 60
+            LeftTreadRadius: 30
+            LeftTreadWidth: 50
+            RightTreadRadius: 30
+            RightTreadWidth: 50
             LeftTreadOffset {
-              X: -20
-              Y: -200
-              Z: 40
+              X: -40
+              Y: -180
+              Z: 30
             }
             RightTreadOffset {
-              X: -20
-              Y: 200
-              Z: 40
+              X: -40
+              Y: 180
+              Z: 30
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

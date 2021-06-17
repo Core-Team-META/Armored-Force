@@ -7,7 +7,7 @@ Assets {
       RootId: 12750289463121341098
       Objects {
         Id: 12750289463121341098
-        Name: "24TANK_CHASSIS_Default_GE_Tiger2"
+        Name: "TANK_CHASSIS_Default_GE_Tiger2"
         Transform {
           Scale {
             X: 1
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 70000
           PhysicsBodyScale {
-            X: 8
-            Y: 3.5
-            Z: 1.3
+            X: 8.5
+            Y: 5
+            Z: 1.6
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,8 +52,8 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -50
-            Z: 105
+            X: -100
+            Z: 60
           }
           MaxSpeed: 720
           AccelerationRate: 400
@@ -61,22 +61,23 @@ Assets {
           BrakeStrength: 1
           TireFriction: 30
           CenterOfMassOFfset {
+            X: -70
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 40
-            LeftTreadWidth: 100
+            LeftTreadWidth: 80
             RightTreadRadius: 40
-            RightTreadWidth: 100
+            RightTreadWidth: 80
             LeftTreadOffset {
-              X: -40
+              X: -90
               Y: -255
               Z: 40
             }
             RightTreadOffset {
-              X: -40
+              X: -90
               Y: 255
               Z: 40
             }

@@ -7,7 +7,7 @@ Assets {
       RootId: 6468061815660712916
       Objects {
         Id: 6468061815660712916
-        Name: "12TANK_CHASSIS_Upgraded_US_M48Patton"
+        Name: "TANK_CHASSIS_Upgraded_US_M48Patton"
         Transform {
           Scale {
             X: 1
@@ -43,8 +43,8 @@ Assets {
           Mass: 50000
           PhysicsBodyScale {
             X: 8
-            Y: 3.5
-            Z: 1.3
+            Y: 4
+            Z: 1.5
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,8 +52,8 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -40
-            Z: 110
+            X: -70
+            Z: 80
           }
           MaxSpeed: 1102
           AccelerationRate: 400
@@ -67,17 +67,17 @@ Assets {
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 60
-            LeftTreadWidth: 120
+            LeftTreadWidth: 80
             RightTreadRadius: 60
-            RightTreadWidth: 120
+            RightTreadWidth: 80
             LeftTreadOffset {
-              X: -40
-              Y: -240
+              X: -70
+              Y: -220
               Z: 60
             }
             RightTreadOffset {
-              X: -40
-              Y: 240
+              X: -70
+              Y: 220
               Z: 60
             }
             HandbrakeBinding {

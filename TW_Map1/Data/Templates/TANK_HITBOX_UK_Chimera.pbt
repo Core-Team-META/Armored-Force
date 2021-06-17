@@ -113,15 +113,15 @@ Assets {
         Name: "SIDE_Profiler"
         Transform {
           Location {
-            X: -40
-            Z: -105
+            X: -35
+            Z: -90
           }
           Rotation {
           }
           Scale {
-            X: 3.7
-            Y: 3.9
-            Z: 1
+            X: 3.88499975
+            Y: 4.72105312
+            Z: 1.1
           }
         }
         ParentId: 16715225012181031923
@@ -173,16 +173,16 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 180
-            Z: -85
+            X: 205
+            Z: -80
           }
           Rotation {
-            Pitch: -15
+            Pitch: -5
           }
           Scale {
-            X: 1.80000019
-            Y: 3.8
-            Z: 0.7
+            X: 2.4
+            Y: 4.6
+            Z: 1.1
           }
         }
         ParentId: 16715225012181031923
@@ -233,15 +233,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -300
-            Z: -105
+            X: -320
+            Z: -90
           }
           Rotation {
           }
           Scale {
-            X: 1.5
-            Y: 3.8
-            Z: 1
+            X: 2.10000014
+            Y: 4.6
+            Z: 1.1
           }
         }
         ParentId: 16715225012181031923
@@ -293,15 +293,15 @@ Assets {
         Name: "HULLSIDE"
         Transform {
           Location {
-            X: -40
-            Z: -105
+            X: -35
+            Z: -90
           }
           Rotation {
           }
           Scale {
-            X: 3.7
-            Y: 3.9
-            Z: 1
+            X: 3.88499975
+            Y: 4.72105312
+            Z: 1.1
           }
         }
         ParentId: 14522498248367197329
@@ -338,16 +338,16 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 180
-            Z: -85
+            X: 205
+            Z: -80
           }
           Rotation {
-            Pitch: -15
+            Pitch: -5
           }
           Scale {
-            X: 1.80000019
-            Y: 3.8
-            Z: 0.7
+            X: 2.4
+            Y: 4.6
+            Z: 1.1
           }
         }
         ParentId: 14522498248367197329
@@ -384,15 +384,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -300
-            Z: -105
+            X: -320
+            Z: -90
           }
           Rotation {
           }
           Scale {
-            X: 1.5
-            Y: 3.8
-            Z: 1
+            X: 2.10000014
+            Y: 4.6
+            Z: 1.1
           }
         }
         ParentId: 14522498248367197329
