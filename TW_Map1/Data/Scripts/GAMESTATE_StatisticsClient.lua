@@ -6,6 +6,7 @@ local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateMa
 local statisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
 
 local victoryAndEarningsUI = script:GetCustomProperty("VictoryAndEarningsUI"):WaitForObject()
+local premiumBonusPanel = script:GetCustomProperty("PREMIUM_BONUS_PANEL"):WaitForObject()
 
 local winLossText = script:GetCustomProperty("WinLossText"):WaitForObject()
 
@@ -219,9 +220,12 @@ function StateSTART(manager, propertyName)
 		
 end
 
-function RollUpNumberText(textXP, targetXP, textCurrency, targetCurrency)
+function RollUpNumberText(textXP, targetXP, textCurrency, targetCurrency, modifier)
 
 	local start = 0
+
+	targetXP = targetXP * modifier
+	targetCurrency = targetCurrency * modifier
 	
 	while start <= targetXP or start <= targetCurrency do
 		
@@ -285,17 +289,23 @@ function ShowStatisticsAnimation()
 	local damageBonus = localPlayer:GetResource("DamageTracker")
 	local spottingBonus = localPlayer:GetResource("SpottingTracker")
 
-	RollUpNumberText(baseXPAmountText, baseXP, baseCurrencyAmountText, baseCurrency)
-	
-	RollUpNumberText(killXPAmountText, localPlayer.kills * killXPValue, killCurrencyAmountText, localPlayer.kills * killCurrencyValue)
-	
-	RollUpNumberText(survivalXPAmountText, math.floor(survivalXPValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)), survivalCurrencyAmountText, math.floor(survivalCurrencyValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)))
+	local modifier = 1
+	if(UTIL_API.UsingPremiumTank(tonumber(localPlayer.clientUserData.currentTankData.id))) then
+		modifier = 2
+		premiumBonusPanel.visibility = Visibility.FORCE_ON
+	end
 
-	RollUpNumberText(damageXPAmountText, damageBonus, damageCurrencyAmountText, damageBonus)
+	RollUpNumberText(baseXPAmountText, baseXP, baseCurrencyAmountText, baseCurrency, modifier)
 	
-	RollUpNumberText(spottingXPAmountText, spottingBonus, spottingCurrencyAmountText, spottingBonus) 
+	RollUpNumberText(killXPAmountText, localPlayer.kills * killXPValue, killCurrencyAmountText, localPlayer.kills * killCurrencyValue, modifier)
 	
-	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer))
+	RollUpNumberText(survivalXPAmountText, math.floor(survivalXPValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)), survivalCurrencyAmountText, math.floor(survivalCurrencyValue * (localPlayer:GetResource("MatchEndHP") / localPlayer.maxHitPoints)), modifier)
+
+	RollUpNumberText(damageXPAmountText, damageBonus, damageCurrencyAmountText, damageBonus, modifier)
+	
+	RollUpNumberText(spottingXPAmountText, spottingBonus, spottingCurrencyAmountText, spottingBonus, modifier) 
+	
+	RollUpNumberText(totalXPAmountText, CalculateTotalXP(localPlayer), totalCurrencyAmountText, CalculateTotalCurrency(localPlayer), modifier)
 	
 	Events.Broadcast("SHOW_NEMESIS")
 

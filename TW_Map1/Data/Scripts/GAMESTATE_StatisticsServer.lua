@@ -52,7 +52,7 @@ function CalculateTotalXP(player)
 	local spotBonus = player:GetResource("SpottingTracker") 
 	
 	local modifier = 1
-	if(UTIL_API.UsingPremiumTank(player.serverUserData.currentTankData.id)) then
+	if(UTIL_API.UsingPremiumTank(tonumber(player.serverUserData.currentTankData.id))) then
 		modifier = 2
 	end
 

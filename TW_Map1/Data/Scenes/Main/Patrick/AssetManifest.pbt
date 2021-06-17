@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11677541148788115718
+  Name: "Icon Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Tank"
+  }
+}
+Assets {
   Id: 11459567137536615475
   Name: "Dry Fire Click Generic 01 SFX"
   PlatformAssetType: 7
