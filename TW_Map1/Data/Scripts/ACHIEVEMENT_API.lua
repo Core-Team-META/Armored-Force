@@ -220,17 +220,13 @@ function API.GiveRewards(player, id)
             for _, reward in ipairs(achievements[id].rewards) do
                 local resourceName = reward:GetCustomProperty("ResourceName")
                 local rewardAmount = reward:GetCustomProperty("Amount")
-                --#TODO Currently setup for Strike Team
-                local weaponId = reward:GetCustomProperty("WeaponId")
-                local skinId = reward:GetCustomProperty("SkinId")
+
                 if resourceName and rewardAmount then
                     --player.serverUserData.XP:AddXP(rewardAmount) -- #TODO use XP Manager
                     player:AddResource(resourceName, rewardAmount)
-                elseif weaponId and skinId then
-                    player.serverUserData.Storage:AddSkin(weaponId, skinId)
                 end
             end
-        --API.SetClaimed(player, id)
+            API.SetClaimed(player, id)
         end
     end
 end
@@ -360,7 +356,6 @@ function API.AddProgress(player, id, value)
         elseif currentProgress + value >= required then
             player:SetResource(id, required)
         end
-        warn(tostring(id) .. " Added Progress: " .. tostring(value))
     end
 end
 
@@ -386,10 +381,10 @@ end
 --@param object player
 function API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     local data = {}
-    if useSharedKey then
-        data = Storage.GetSharedPlayerData(sharedKeyNetRef, player)
-    else
+    if not useSharedKey then
         data = Storage.GetPlayerData(player)
+    else
+        data = Storage.GetSharedPlayerData(sharedKeyNetRef, player)
     end
     if data["META_ACH"] then
         local achievementData = data["META_ACH"]
@@ -404,10 +399,10 @@ end
 --@param object player
 function API.SaveAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     local data = {}
-    if useSharedKey then
-        data = Storage.GetSharedPlayerData(sharedKeyNetRef, player)
-    else
+    if not useSharedKey then
         data = Storage.GetPlayerData(player)
+    else
+        data = Storage.GetSharedPlayerData(sharedKeyNetRef, player)
     end
     local tempTbl = {}
     for id, achievement in pairs(API.GetAchievements()) do
@@ -419,10 +414,10 @@ function API.SaveAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     end
 
     data["META_ACH"] = tempTbl
-    if useSharedKey then
-        Storage.SetSharedPlayerData(sharedKeyNetRef, player, data)
-    else
+    if not useSharedKey then
         Storage.SetPlayerData(player, data)
+    else
+        Storage.SetSharedPlayerData(sharedKeyNetRef, player, data)
     end
 end
 

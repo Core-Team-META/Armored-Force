@@ -1,4 +1,4 @@
-	--[[
+--[[
 Copyright 2019 Manticore Games, Inc. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -28,8 +28,9 @@ local API = {}
 API.GAME_STATE_LOBBY = 0
 API.GAME_STATE_ROUND = 1
 API.GAME_STATE_ROUND_END = 2
-API.GAME_STATE_ROUND_STATS = 3
-API.GAME_STATE_ROUND_VOTING = 4
+API.GAME_STATE_PLAYER_SHOWCASE = 3
+API.GAME_STATE_REWARDS = 4
+API.GAME_STATE_REWARDS_END = 5
 
 -- nil RegisterGameStateManager(function, function, function, function) [Server]
 -- Called once by a manager component that at minimum handles replication.
