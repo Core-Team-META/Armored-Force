@@ -51,7 +51,12 @@ function CalculateTotalXP(player)
 	local damageBounus = player:GetResource("DamageTracker")
 	local spotBonus = player:GetResource("SpottingTracker") 
 	
-	return baseXP + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)
+	local modifier = 1
+	if(UTIL_API.UsingPremiumTank(player.serverUserData.currentTankData.id)) then
+		modifier = 2
+	end
+
+	return (baseXP + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
 	
 end
 
@@ -70,8 +75,13 @@ function CalculateTotalCurrency(player)
 	local survivalBonus = math.floor(survivalCurrencyValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
 	local damageBounus = player:GetResource("DamageTracker")
 	local spotBonus = player:GetResource("SpottingTracker") 
+
+	local modifier = 1
+	if(UTIL_API.UsingPremiumTank(player.serverUserData.currentTankData.id)) then
+		modifier = 2
+	end
 	
-	return baseCurrency + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)
+	return (baseCurrency + survivalBonus + damageBounus + spotBonus + (player.kills * killXPValue)) * modifier
 	
 end
 
