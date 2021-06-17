@@ -1,5 +1,6 @@
 -- API
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local statisticsComponent = script:GetCustomProperty("GAMESTATE_StatisticsComponent"):WaitForObject()
@@ -305,6 +306,9 @@ function ShowXP(obj)
 	panel:FindChildByName("Text").text = Constants_API.XP_GAIN_TEXT[obj.reason] .. " XP+" .. tostring(obj.amount)
 	panel:FindChildByName("Text2").text = Constants_API.XP_GAIN_TEXT[obj.reason] .. " XP+" .. tostring(obj.amount)
 	panel.lifeSpan = 2
+	if(obj.premium) then
+		panel:FindChildByName("PremiumBonus").visibility = Visibility.FORCE_ON
+	end
 end
 
 function OnResourceChanged(player, resource, value)
