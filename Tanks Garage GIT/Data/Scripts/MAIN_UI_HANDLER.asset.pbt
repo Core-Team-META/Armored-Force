@@ -1,6 +1,6 @@
 Assets {
   Id: 8005305632578165639
-  Name: "UI_HEAD_ELEMENTS_HANDLER"
+  Name: "MAIN_UI_HANDLER"
   PlatformAssetType: 3
   TextAsset {
   }
