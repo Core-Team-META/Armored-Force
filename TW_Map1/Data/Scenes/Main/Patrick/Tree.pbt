@@ -239,7 +239,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5771,6 +5771,12 @@ Objects {
       Name: "cs:SpottingCurrencyAmountText"
       ObjectReference {
         SelfId: 10665609530081517051
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
       }
     }
   }
@@ -47722,7 +47728,6 @@ Objects {
     Width: 50
     Height: 40
     UIX: 80
-    UIY: -12
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -47744,7 +47749,7 @@ Objects {
         Id: 15392186923000422511
       }
       VerticalJustification {
-        Value: "mc:everticaljustification:baseline"
+        Value: "mc:everticaljustification:top"
       }
       ShadowColor {
         A: 0.9
@@ -47803,7 +47808,7 @@ Objects {
     Width: 295
     Height: 40
     UIX: 135
-    UIY: -5
+    UIY: -7
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

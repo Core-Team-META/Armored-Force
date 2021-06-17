@@ -153,7 +153,23 @@ function OnDamagedRecord(player, damage)
 			local tankXPValue = UTIL_API.GetTankXPValueFromId(tankId)
 			
 			local xpRewarded = math.floor(damageDealtPercentage * tankXPValue)
-			Events.BroadcastToPlayer(damage.sourcePlayer, "GainXP", {reason = CONSTANTS_API.XP_GAIN_REASON.DAMAGE_DEALT, amount = xpRewarded})
+
+			-- Calculate bonus based on your tier vs enemy
+			local sourceTankId = damage.sourcePlayer.serverUserData.currentTankData.id
+			local sourcePlayerTier = UTIL_API.GetTierFromId(sourceTankId)
+			local targetPlayerTier = UTIL_API.GetTierFromId(tankId)
+
+			local bonus = 1 + ((targetPlayerTier - sourcePlayerTier) / 10)
+			print("BONUS: " .. tostring(bonus))
+			xpRewarded = xpRewarded * bonus
+
+			if(UTIL_API.UsingPremiumTank(tonumber(sourceTankId))) then
+				xpRewarded = xpRewarded * 2
+			end
+
+			xpRewarded = math.ceil(xpRewarded)
+			
+			Events.BroadcastToPlayer(damage.sourcePlayer, "GainXP", {reason = CONSTANTS_API.XP_GAIN_REASON.DAMAGE_DEALT, amount = xpRewarded, premium = UTIL_API.UsingPremiumTank(tonumber(sourceTankId))})
 			--print("XP rewarded for dealing damage: " .. tostring(xpRewarded))
 			
 			damage.sourcePlayer:AddResource("DamageTracker", xpRewarded)
