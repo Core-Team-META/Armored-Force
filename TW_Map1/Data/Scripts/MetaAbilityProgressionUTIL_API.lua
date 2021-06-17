@@ -381,6 +381,16 @@ function API.GetTankXPValueFromId(tankId)
 	return CONST.XP_TIER_VALUE.TIER1
 end
 
+function API.GetTierFromId(tankId)
+    for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
+		if(tank:GetCustomProperty("ID") == tankId) then
+			return tank:GetCustomProperty("Tier")			
+		end
+	end
+	warn("XP value not found with tank Id: " .. tankId)
+	return 1
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- COSMETIC DATA FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -630,6 +640,10 @@ function API.RetrieveTankNameById(id, tankCollection)
 	end
 	warn("Tank not found with Id: " .. id)
 	return "M3 Stuart"
+end
+
+function API.UsingPremiumTank(tankId)
+    return (tankId == 9 or tankId == 25)
 end
 
 function API.CalculateLeaveEarlyEarnings(timeElapsed, matchDuration, maxAwardXP)

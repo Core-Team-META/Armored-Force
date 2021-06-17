@@ -60,10 +60,15 @@ function AddToList(player)
 			
 			if canGainSpottedXP then
 				-- Add XP
-				player:AddResource(Constants_API.XP, spottingXP)
+				local tankId = player.serverUserData.currentTankData.id
+				local modifiedXP = spottingXP
+				if(UTIL_API.UsingPremiumTank(tonumber(tankId))) then
+					modifiedXP = modifiedXP * 2
+				end
+				player:AddResource(Constants_API.XP, modifiedXP)
 				-- Add RP to tank
-				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), spottingXP)
-				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = spottingXP})
+				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), modifiedXP)
+				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = modifiedXP, premium = UTIL_API.UsingPremiumTank(tonumber(tankId))})
 				table.insert(spottedPlayerList, player.id)
 			end
 			
