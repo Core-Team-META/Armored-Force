@@ -66,7 +66,7 @@ Objects {
     Overrides {
       Name: "cs:RANK_PANEL"
       ObjectReference {
-        SelfId: 4482462946224314045
+        SelfId: 17070274267426031654
       }
     }
   }
