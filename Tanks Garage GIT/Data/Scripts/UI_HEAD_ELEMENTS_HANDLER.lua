@@ -251,7 +251,10 @@ local ENGINE_CONFIRM_targetDestination = TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y
 local ENGINE_DENY_isMoving = false
 local ENGINE_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 
+-- Initialize the drop down with "Frontline"
 CHOSEN_MODE = 2
+DEPLOY.visibility = Visibility.FORCE_ON
+DEPLOY_IDLE.visibility = Visibility.FORCE_OFF
 
 ------------------------------------------------------------------------------------------
 ---- HANDLING DROPDOWN SLIDER
