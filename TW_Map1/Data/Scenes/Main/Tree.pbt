@@ -16,6 +16,7 @@ Objects {
   }
   ChildIds: 13966797509968964878
   ChildIds: 621544670553070009
+  ChildIds: 4696984981918326577
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
   ChildIds: 14246791555251678451
@@ -4471,6 +4472,37 @@ Objects {
         Max: 102400
       }
     }
+  }
+}
+Objects {
+  Id: 4696984981918326577
+  Name: "SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {

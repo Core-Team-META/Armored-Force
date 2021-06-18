@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16252063464168954428
+  Name: "Analog Click 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ui_analog_click_02_Cue_ref"
+  }
+}
+Assets {
   Id: 15791153848741605690
   Name: "Sci-fi UI Crisp Hitech Scan Error 01 SFX"
   PlatformAssetType: 7
@@ -113,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_gun_dryfire"
+  }
+}
+Assets {
+  Id: 11163931541398047305
+  Name: "\"Action Combat\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_action_combat_sections_kit_ref"
   }
 }
 Assets {

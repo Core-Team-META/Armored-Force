@@ -26805,6 +26805,7 @@ Objects {
   ParentId: 13292017571368410914
   ChildIds: 13203492666528020653
   ChildIds: 14392032819605889792
+  ChildIds: 17070746726455774099
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -26815,6 +26816,176 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 17070746726455774099
+  Name: "Music/SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17203295370021868057
+  ChildIds: 13903778194886898490
+  ChildIds: 13232972679381982179
+  ChildIds: 6666586155656095957
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6666586155656095957
+  Name: "Clock Tick"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17070746726455774099
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16252063464168954428
+    }
+    Volume: 0.9
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 13232972679381982179
+  Name: "Match Music"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17070746726455774099
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_action_combat_sections_kit:28"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11163931541398047305
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 0.8
+      Falloff: 3600
+      Radius: 400
+      FadeInTime: 2
+      FadeOutTime: 2
+    }
+  }
+}
+Objects {
+  Id: 13903778194886898490
+  Name: "Lobby Music"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17070746726455774099
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_action_combat_sections_kit:39"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11163931541398047305
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 0.6
+      Falloff: 3600
+      Radius: 400
+      FadeInTime: 2
+      FadeOutTime: 2
+    }
   }
 }
 Objects {
@@ -36319,6 +36490,24 @@ Objects {
       Name: "cs:LobbyTableEntryTemplate"
       AssetReference {
         Id: 4684466231807830295
+      }
+    }
+    Overrides {
+      Name: "cs:LobbyMusic"
+      ObjectReference {
+        SelfId: 13903778194886898490
+      }
+    }
+    Overrides {
+      Name: "cs:MatchMusic"
+      ObjectReference {
+        SelfId: 13232972679381982179
+      }
+    }
+    Overrides {
+      Name: "cs:ClockTick"
+      ObjectReference {
+        SelfId: 6666586155656095957
       }
     }
   }

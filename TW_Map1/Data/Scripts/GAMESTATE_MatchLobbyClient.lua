@@ -15,9 +15,14 @@ local returnToGarage = script:GetCustomProperty("ReturnToGarage"):WaitForObject(
 local lobbyTable = script:GetCustomProperty("LobbyTable"):WaitForObject()
 local lobbyTableEntryTemplate = script:GetCustomProperty("LobbyTableEntryTemplate")
 
+local lobbyMusic = script:GetCustomProperty("LobbyMusic"):WaitForObject()
+local matchMusic = script:GetCustomProperty("MatchMusic"):WaitForObject()
+local clockTick = script:GetCustomProperty("ClockTick"):WaitForObject()
+
 local Y_OFFSET = 60
 local timerTask = nil
 local currentTime = 0
+local lastTime = 0
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -68,6 +73,9 @@ function StateSTART(manager, propertyName)
 			timerTask = nil
 			
 		end
+
+		lobbyMusic:Stop()
+		matchMusic:Play()
 	
 		return
 		
@@ -84,6 +92,8 @@ function StateSTART(manager, propertyName)
 	timerTask = Task.Spawn(CountdownTask)
 	timerTask.repeatCount = -1
 	timerTask.repeatInterval = 0.1
+
+	lobbyMusic:Play()
 	
 end
 
@@ -96,19 +106,21 @@ function CountdownTask()
 	if #count < 2 then
 	
 		timerText.text = " ... "
-		
 	else 
-		
+
+		if(lastTime ~= currentTime) then
+			clockTick:Play()
+		end
+
 		local startText = "00:"
 		
 		if currentTime < 10 then
 			startText = startText .. "0"
 		end 
 		
-		timerText.text = startText .. tostring(currentTime)
-		
+		timerText.text = startText .. tostring(currentTime)		
 	end
-		
+	lastTime = currentTime	
 end
 
 function OnLeft(player)
