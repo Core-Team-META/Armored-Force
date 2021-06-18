@@ -16,12 +16,13 @@ local EaseUI = require(script:GetCustomProperty("EaseUI"))
 -- OBJECTS
 ------------------------------------------------------------------------------------------------------------------------
 local ACHIEVEMENT_LIST = script:GetCustomProperty("Achievement_List"):WaitForObject()
+--
 --[[local NOTIFICATION = script:GetCustomProperty("NOTIFICATION"):WaitForObject()
 local NOTIFICATION_ICON_BG = NOTIFICATION:GetCustomProperty("ICONBG"):WaitForObject()
 local NOTIFICATION_ICON = NOTIFICATION:GetCustomProperty("ICON"):WaitForObject()
 local ACHIEVEMENT_NAME_TEXT = NOTIFICATION:GetCustomProperty("ACHIEVEMENT_NAME_TEXT"):WaitForObject()
-]]--
-local ACHIEVEMENTS_DETAILS_UI = nil
+]] local ACHIEVEMENTS_DETAILS_UI =
+    nil
 --script:GetCustomProperty("ACHIEVEMENTS_DETAILS_UI"):WaitForObject()
 
 local ACHIEVEMENT_PANEL = script:GetCustomProperty("AchievementsPanel"):WaitForObject()
@@ -43,7 +44,7 @@ local achievementQueue = {}
 local achievementIds = {}
 local listeners = {}
 local scriptListeners = {}
-
+local activeAchievements = {}
 --NOTIFICATION.visibility = Visibility.FORCE_OFF
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -62,6 +63,18 @@ local function IsAchievement(id)
         end
     end
     return false
+end
+
+local function CompareAchievement(a, b)
+    local aProgress =
+        ACH_API.IsUnlocked(LOCAL_PLAYER, a.id) and 100000 or
+        not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, a.id) and -1 or
+        ACH_API.GetProgressPercentage(LOCAL_PLAYER, a.id) + 2
+    local bProgress =
+        ACH_API.IsUnlocked(LOCAL_PLAYER, b.id) and 100000 or
+        not ACH_API.HasPreRequsistCompleted(LOCAL_PLAYER, b.id) and -1 or
+        ACH_API.GetProgressPercentage(LOCAL_PLAYER, b.id) + 2
+    return aProgress > bProgress
 end
 
 local function ClearListeners(listeners)
@@ -84,12 +97,17 @@ local function ClearAchievements()
     end
 end
 
-
 local function BuildAchievementInfoPanel()
     local totalCount = 0
     local xCount = 0
     local yCount = 0
+
     for _, achievement in pairs(ACH_API.GetAchievements()) do
+        table.insert(activeAchievements, achievement)
+    end
+    table.sort(activeAchievements, CompareAchievement)
+
+    for _, achievement in ipairs(activeAchievements) do
         if ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id) ~= 1 then
             --#TODO Needs to be changed to how many achievements should show in the end round panel
             local achievementPanel = World.SpawnAsset(AchievementPanelTemplate, {parent = achievementScrollPanel})
@@ -198,7 +216,7 @@ function Int()
     ClearAchievements()
     if ABGS and ABGS.GetGameState() == ABGS.GAME_STATE_ROUND then
         shouldShow = true
-        --NOTIFICATION.visibility = Visibility.FORCE_ON
+    --NOTIFICATION.visibility = Visibility.FORCE_ON
     end
 end
 
@@ -206,11 +224,11 @@ function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime) 
     if newState == ABGS.GAME_STATE_LOBBY then
         --ACHIEVEMENTS_DETAILS_UI.visibility = Visibility.FORCE_OFF
     elseif newState ~= ABGS.GAME_STATE_ROUND then
-        shouldShow = true
         --NOTIFICATION.visibility = Visibility.FORCE_ON
+        shouldShow = true
     else
-        shouldShow = true
         --NOTIFICATION.visibility = Visibility.FORCE_ON
+        shouldShow = true
     end
     if newState == ABGS.GAME_STATE_PLAYER_SHOWCASE then
         BuildAchievementInfoPanel()
