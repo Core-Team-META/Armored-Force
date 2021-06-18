@@ -118,6 +118,7 @@ local function BuildAchievementInfoPanel()
                 progressBar.visibility = Visibility.FORCE_ON
                 local currentProgress = CoreMath.Round(ACH_API.GetCurrentProgress(LOCAL_PLAYER, achievement.id))
                 local requiredProgress = CoreMath.Round(ACH_API.GetAchievementRequired(achievement.id))
+                currentProgress = currentProgress > 0 and currentProgress - 1 or 0
                 progressBar.progress = currentProgress / requiredProgress
                 progressText.text = tostring(currentProgress) .. " / " .. tostring(requiredProgress - 1)
 
