@@ -91,7 +91,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Type"
-            String: "Destroyer"
+            String: "Tank Destroyer"
           }
           Overrides {
             Name: "cs:TierValue"
