@@ -129,6 +129,10 @@ Assets {
             Name: "cs:Name"
             String: "Jagdtiger"
           }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 35000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

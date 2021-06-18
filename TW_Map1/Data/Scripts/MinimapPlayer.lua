@@ -1,4 +1,4 @@
-﻿
+
 local ROOT = script.parent
 local CIRCLE_BG = script:GetCustomProperty("CircleLocalPlayerBG"):WaitForObject()
 local CIRCLE = script:GetCustomProperty("Circle"):WaitForObject()
@@ -6,10 +6,12 @@ local NAME = script:GetCustomProperty("Name"):WaitForObject()
 local DEAD = script:GetCustomProperty("Dead"):WaitForObject()
 local DIRECTION_ROOT = script:GetCustomProperty("DirectionRoot"):WaitForObject()
 local ARROW = script:GetCustomProperty("Arrow"):WaitForObject()
+local viewRange = script:GetCustomProperty("ViewRange"):WaitForObject()
 
 ROOT.visibility = Visibility.FORCE_OFF
 
 local myPlayer = nil
+local localPlayer = Game.GetLocalPlayer()
 local initialized = false
 
 function SetPlayer(player)
@@ -18,17 +20,25 @@ function SetPlayer(player)
 	
 	ROOT.visibility = Visibility.INHERIT
 	
-	CIRCLE_BG.isEnabled = (player == Game.GetLocalPlayer())
+	CIRCLE_BG.isEnabled = (player == localPlayer)
 	
 	-- Set player's initial name letter
-	NAME.text = string.sub(player.name, 1, 1)
+	--NAME.text = string.sub(player.name, 1, 1)
 	
 	UpdateContent()
 end
 
 function UpdateContent()
 	-- Team
-	CIRCLE.team = myPlayer.team
+	
+	if myPlayer == localPlayer and CIRCLE:GetColor() ~= Color.ORANGE then
+		CIRCLE.isTeamColorUsed = false
+		CIRCLE:SetColor(Color.ORANGE)
+		viewRange.visibility = Visibility.INHERIT
+	else 
+		CIRCLE.team = myPlayer.team
+	end
+	
 	DEAD.team = myPlayer.team
 	ARROW.team = myPlayer.team
 	
@@ -53,4 +63,3 @@ function Tick()
 	
 	UpdateContent()
 end
-

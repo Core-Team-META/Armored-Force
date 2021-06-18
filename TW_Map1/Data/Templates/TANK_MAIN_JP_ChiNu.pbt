@@ -121,6 +121,10 @@ Assets {
             Name: "cs:Name"
             String: "Chi-Nu"
           }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

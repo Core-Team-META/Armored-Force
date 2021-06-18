@@ -129,6 +129,10 @@ Assets {
             Name: "cs:Name"
             String: "T-62 A1"
           }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

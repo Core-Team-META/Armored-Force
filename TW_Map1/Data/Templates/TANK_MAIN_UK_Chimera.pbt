@@ -129,6 +129,10 @@ Assets {
             Name: "cs:Name"
             String: "Chimera"
           }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

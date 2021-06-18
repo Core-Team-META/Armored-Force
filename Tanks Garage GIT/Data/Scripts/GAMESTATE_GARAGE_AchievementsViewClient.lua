@@ -119,17 +119,13 @@ function OnChallengeInfoChanged(serverScript, property)
 				child:GetCustomProperty("ChallengeProgressBar"):WaitForObject().progress = progress/target
 				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = progress >= target
 				
-				if GetActiveButtonState(child) ~= "Locked" then
-					SwitchButtonState(child, "Locked")
-				end
+				SwitchButtonState(child, "Locked")
 			else 
 				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = ""
 				child:GetCustomProperty("ChallengeProgressBar"):WaitForObject().progress = 1
 				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = false
 				
-				if GetActiveButtonState(child) ~= "Idle" then
-					SwitchButtonState(child, "Idle")
-				end
+				SwitchButtonState(child, "Claimed")
 			end
 		end
 		
@@ -224,12 +220,13 @@ function Tick()
 			loginButton.isInteractable = false
 		end
 		
-		if GetActiveButtonState(dailyLogin) == "Pressed" then
+		if GetActiveButtonState(dailyLogin) ~= "Claimed" then
 			SwitchButtonState(dailyLogin, "Claimed")
 		end
-		
+		dailyLogin:GetCustomProperty("LoginDueProgress"):WaitForObject().progress = 1 - math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time())/20
 	else 
 		loginText.text = "00:00:00"
+		dailyLogin:GetCustomProperty("LoginDueProgress"):WaitForObject().progress = 1
 		
 		if not loginButton.isInteractable then
 			loginButton.isInteractable = true

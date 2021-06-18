@@ -89,6 +89,10 @@ Assets {
             Name: "cs:Name"
             String: "Chaffee"
           }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

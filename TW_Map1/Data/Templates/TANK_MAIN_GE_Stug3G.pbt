@@ -129,6 +129,10 @@ Assets {
             Name: "cs:Name"
             String: "Stug III"
           }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 35000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

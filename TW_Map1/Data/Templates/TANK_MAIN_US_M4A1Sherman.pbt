@@ -113,6 +113,10 @@ Assets {
             Name: "cs:Name"
             String: "M4A1 Sherman"
           }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

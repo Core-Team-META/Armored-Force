@@ -28,7 +28,7 @@ local GAMESTATE_MainGameStateManagerServer = script:GetCustomProperty("GAMESTATE
 local Leave = script:GetCustomProperty("Leave"):WaitForObject()
 local Close = script:GetCustomProperty("Close"):WaitForObject()
 local spectatorUIComponents = script:GetCustomProperty("SpectatorUIComponents"):WaitForObject()
-
+local spectatorWindow = script:GetCustomProperty("SpectatorWindow"):WaitForObject()
 
 local LocalPlayer = Game.GetLocalPlayer()
 
@@ -314,6 +314,7 @@ local function ChangeUiMode()
 		FreecamIncreaseSpeedPanel.visibility = Visibility.FORCE_OFF
 	end
 	ReturnToGarage.visibility = Visibility.INHERIT
+	spectatorWindow.visibility = Visibility.INHERIT
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -354,6 +355,7 @@ function Spectate(player)
 
 	--SpectatingName.text = player.name
 	--SpectatorUI.visibility = Visibility.FORCE_ON
+	spectatorWindow.visibility = Visibility.INHERIT
 
 	debounce = false
 end
@@ -367,6 +369,7 @@ function Unspectate()
 
 	--SpectatorUI.visibility = Visibility.FORCE_OFF
 	--SpectatingName.text = ""
+	spectatorWindow.visibility = Visibility.FORCE_OFF
 
 	PlayerCamera.followPlayer = nil
 
