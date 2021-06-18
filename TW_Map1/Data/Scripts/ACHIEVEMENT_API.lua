@@ -259,6 +259,15 @@ end
 
 --@param object player
 --@param string id
+--@return int currentProgress for an achievement
+function API.GetProgressPercentage(player, id)
+    if IsValidPlayer(player) then
+        return player:GetResource(id) + 1 / API.GetAchievementRequired(id)
+    end
+end
+
+--@param object player
+--@param string id
 --@param int value
 --@return bool true if player has enough to unlock achievement
 function API.IsUnlocked(player, id, value)
