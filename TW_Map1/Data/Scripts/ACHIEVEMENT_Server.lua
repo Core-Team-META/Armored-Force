@@ -47,7 +47,6 @@ local function OnResourceChanged(player, resName, resAmt)
     if resAmt == 0 then
         return
     end
- 
 end
 
 local function PlayerKilled(player, target, weaponType, isHeadShot)
@@ -78,33 +77,28 @@ local function OnRoundEnd()
             end
             local tankType = player.serverUserData.currentTankdata and player.serverUserData.currentTankdata.type
             if tankType then
-                if
-                    player.serverUserData.ACH_killCount and player.serverUserData.ACH_killCount >= 1 and
-                        not player.serverUserData.ACH_diedInRound
-                 then
-                    -- Tank Type based achievements
-                    if tankType == CONST.TANK_TYPE.LIGHT then
-                        ACH_API.AddProgress(player, "ALP", 1)
-                        ACH_API.AddProgress(player, "ASP", 1)
-                        ACH_API.AddProgress(player, "ALCOM", 1)
-                    elseif tankType == CONST.TANK_TYPE.MEDIUM then
-                        ACH_API.AddProgress(player, "AMP", 1)
-                        ACH_API.AddProgress(player, "AMS", 1)
-                        ACH_API.AddProgress(player, "AMC", 1)
-                    elseif tankType == CONST.TANK_TYPE.HEAVY then
-                        ACH_API.AddProgress(player, "AHP", 1)
-                        ACH_API.AddProgress(player, "AHS", 1)
-                        ACH_API.AddProgress(player, "AHC", 1)
-                    elseif tankType == CONST.TANK_TYPE.TANKDESTROYER then
-                        ACH_API.AddProgress(player, "ADP", 1)
-                        ACH_API.AddProgress(player, "ADS", 1)
-                        ACH_API.AddProgress(player, "ADC", 1)
-                    end
+                -- Tank Type based achievements
+                if tankType == CONST.TANK_TYPE.LIGHT then
+                    ACH_API.AddProgress(player, "ALP", 1)
+                    ACH_API.AddProgress(player, "ASP", 1)
+                    ACH_API.AddProgress(player, "ALCOM", 1)
+                elseif tankType == CONST.TANK_TYPE.MEDIUM then
+                    ACH_API.AddProgress(player, "AMP", 1)
+                    ACH_API.AddProgress(player, "AMS", 1)
+                    ACH_API.AddProgress(player, "AMC", 1)
+                elseif tankType == CONST.TANK_TYPE.HEAVY then
+                    ACH_API.AddProgress(player, "AHP", 1)
+                    ACH_API.AddProgress(player, "AHS", 1)
+                    ACH_API.AddProgress(player, "AHC", 1)
+                elseif tankType == CONST.TANK_TYPE.TANKDESTROYER then
+                    ACH_API.AddProgress(player, "ADP", 1)
+                    ACH_API.AddProgress(player, "ADS", 1)
+                    ACH_API.AddProgress(player, "ADC", 1)
                 end
-
-                player.serverUserData.ACH_killCount = 0
-                player.serverUserData.ACH_diedInRound = false
             end
+
+            player.serverUserData.ACH_killCount = 0
+            player.serverUserData.ACH_diedInRound = false
         end
     end
     Task.Spawn(
