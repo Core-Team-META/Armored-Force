@@ -7,7 +7,7 @@ Assets {
       RootId: 6132183089281744122
       Objects {
         Id: 6132183089281744122
-        Name: "01TANK_CHASSIS_Default_US_M3Stuart"
+        Name: "TANK_CHASSIS_Default_US_M3Stuart"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 260000
+          Mass: 30000
           PhysicsBodyScale {
             X: 5.5
             Y: 2.5
