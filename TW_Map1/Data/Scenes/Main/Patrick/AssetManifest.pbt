@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12478180938234886174
+  Name: "BG Highlighted 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_019"
+  }
+}
+Assets {
   Id: 11677541148788115718
   Name: "Icon Tank"
   PlatformAssetType: 9
@@ -197,12 +206,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6025213881326729292
-  Name: "Icon Close"
-  PlatformAssetType: 9
+  Id: 4913010023776999523
+  Name: "Baloo 2"
+  PlatformAssetType: 28
   PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Close"
+    AssetType: "FontAssetRef"
+    AssetId: "Baloo2Regular_ref"
   }
 }
 Assets {
