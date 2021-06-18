@@ -138,6 +138,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: "ADP,ADS"
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -338,6 +342,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: "ADP"
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -540,6 +548,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: ""
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -740,6 +752,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: "AHP,AHS"
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -942,6 +958,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: "AHP"
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1142,6 +1162,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -1344,6 +1368,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: "AMP,AMS"
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1544,6 +1572,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: "AMP"
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -1746,6 +1778,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: ""
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1946,6 +1982,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: "ALP,ASP"
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -2148,6 +2188,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: "ALP"
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2348,6 +2392,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -2550,6 +2598,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: "ASKI,ACLA,AASS"
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2750,6 +2802,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: "ASKI,ACLA"
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -2952,6 +3008,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: "ASKI"
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3152,6 +3212,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -3354,6 +3418,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: ""
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3554,6 +3622,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -3756,6 +3828,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: ""
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3956,6 +4032,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -4158,6 +4238,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: ""
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4358,6 +4442,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -4560,6 +4648,10 @@ Objects {
       Name: "cs:PreRequisite"
       String: ""
     }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4760,6 +4852,10 @@ Objects {
     Overrides {
       Name: "cs:PreRequisite"
       String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
     }
   }
   Collidable_v2 {

@@ -24,6 +24,7 @@ local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_
 ------------------------------------------------------------------------------------------------------------------------
 local ACHIEVEMENT_LIST = script:GetCustomProperty("Achievement_List"):WaitForObject()
 local listeners = {}
+local tankInfo = {}
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -69,28 +70,30 @@ end
 local function OnRoundEnd()
     local teamOne = Game.GetTeamScore(1)
     local teamTwo = Game.GetTeamScore(2)
-
     for _, player in ipairs(Game.GetPlayers()) do --
         if Object.IsValid(player) then
             if (teamOne > teamTwo and player.team == 1) or (teamOne < teamTwo and player.team == 2) then
-            --ACH_API.AddProgress(player, "AS_100WINS", 1)
+                if not player.serverUserData.ACH_diedInRound then
+                    ACH_API.UnlockAchievement(player, "AGLO")
+                end
             end
-            local tankType = player.serverUserData.currentTankdata and player.serverUserData.currentTankdata.type
+
+            local tankType = player.serverUserData.currentTankData and player.serverUserData.currentTankData.type
             if tankType then
                 -- Tank Type based achievements
-                if tankType == CONST.TANK_TYPE.LIGHT then
+                if tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.LIGHT] then
                     ACH_API.AddProgress(player, "ALP", 1)
                     ACH_API.AddProgress(player, "ASP", 1)
                     ACH_API.AddProgress(player, "ALCOM", 1)
-                elseif tankType == CONST.TANK_TYPE.MEDIUM then
+                elseif tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.MEDIUM] then
                     ACH_API.AddProgress(player, "AMP", 1)
                     ACH_API.AddProgress(player, "AMS", 1)
                     ACH_API.AddProgress(player, "AMC", 1)
-                elseif tankType == CONST.TANK_TYPE.HEAVY then
+                elseif tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.HEAVY] then
                     ACH_API.AddProgress(player, "AHP", 1)
                     ACH_API.AddProgress(player, "AHS", 1)
                     ACH_API.AddProgress(player, "AHC", 1)
-                elseif tankType == CONST.TANK_TYPE.TANKDESTROYER then
+                elseif tankType == CONST.TANK_TYPE_NAME[CONST.TANK_TYPE.TANKDESTROYER] then
                     ACH_API.AddProgress(player, "ADP", 1)
                     ACH_API.AddProgress(player, "ADS", 1)
                     ACH_API.AddProgress(player, "ADC", 1)
@@ -99,16 +102,13 @@ local function OnRoundEnd()
 
             player.serverUserData.ACH_killCount = 0
             player.serverUserData.ACH_diedInRound = false
+            Task.Wait()
+
+            if shouldSaveProgress and Object.IsValid(player) then
+                ACH_API.SaveAchievementStorage(player, useSharedKey, sharedKeyNetRef)
+            end
         end
     end
-    Task.Spawn(
-        function()
-            for _, player in ipairs(Game.GetPlayers()) do
-                ACH_API.ResetRepeatable(player)
-            end
-        end,
-        3
-    )
 end
 
 local function OnPlayerRespawn(player)
@@ -155,6 +155,43 @@ function OnPlayerLeft(player)
         end
         listeners[player.id] = nil
     end
+    tankInfo[player] = nil
+end
+
+function OnUpgrade(player, tankId, upgradeSlot)
+    ACH_API.UnlockAchievement(player, "ANU")
+    for i, tank in ipairs(player.serverUserData.techTreeProgress) do
+        if (tank.id == tankId) then
+            if
+                tank.weaponProgress == CONST.UPGRADE_PROGRESS.PURCHASED and
+                    tank.armorProgress == CONST.UPGRADE_PROGRESS.PURCHASED and
+                    tank.engineProgress == CONST.UPGRADE_PROGRESS.PURCHASED
+             then
+                ACH_API.UnlockAchievement(player, "ATE")
+            end
+        end
+    end
+end
+
+function OnTankAcquired(player, tankId, teir)
+    if teir == 2 then
+        ACH_API.AddProgress(player, "AJUN", 1)
+    elseif teir == 3 then
+        ACH_API.AddProgress(player, "AMED", 1)
+    elseif teir == 4 then
+        ACH_API.AddProgress(player, "ALEN", 1)
+    end
+    for i, tank in ipairs(player.serverUserData.techTreeProgress) do
+        if (tank.id == tankId) then
+            if
+                tank.weaponProgress == CONST.UPGRADE_PROGRESS.PURCHASED and
+                    tank.armorProgress == CONST.UPGRADE_PROGRESS.PURCHASED and
+                    tank.engineProgress == CONST.UPGRADE_PROGRESS.PURCHASED
+             then
+                ACH_API.UnlockAchievement(player, "ATE")
+            end
+        end
+    end
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -163,11 +200,15 @@ end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Game.roundEndEvent:Connect(OnRoundEnd)
+Game.roundStartEvent:Connect(OnRoundStart)
+--Events.Connect("ACH_VICTORY", OnRoundEnd)
 
 -- Server (Same Context) Broadcast Listeners
 --Events.Connect("CombatWrapAPI.GoingToTakeDamage", OnGoingToTakeDamage)
 --Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTaken)
 Events.Connect("CombatWrapAPI.ObjectHasDied", OnPlayerDied)
+Events.Connect("UpgradeAcquired", OnUpgrade)
+Events.Connect("TankAcquired", OnTankAcquired)
 
 -- Client Broadcast Listeners
 Events.ConnectForPlayer("AS.RewardClaim", OnRewardCollected)
