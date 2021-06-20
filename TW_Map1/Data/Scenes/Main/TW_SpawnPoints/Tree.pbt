@@ -2,12 +2,12 @@ Name: "TW_SpawnPoints"
 RootId: 14246791555251678451
 Objects {
   Id: 14724507057739475381
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -49776.9883
-      Y: 50074.1758
-      Z: 1362.55432
+      X: -46245
+      Y: 39095
+      Z: 530
     }
     Rotation {
       Yaw: -42.3683777
@@ -35,12 +35,12 @@ Objects {
 }
 Objects {
   Id: 17852684925258894508
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -50603.293
-      Y: 51441.3672
-      Z: 1362.55457
+      X: -47071.3047
+      Y: 40462.1914
+      Z: 530.000244
     }
     Rotation {
       Yaw: -42.3683472
@@ -68,12 +68,12 @@ Objects {
 }
 Objects {
   Id: 9338709539663447430
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -52713.3711
-      Y: 49918.7148
-      Z: 1362.55457
+      X: -49181.3828
+      Y: 38939.5391
+      Z: 530.000244
     }
     Rotation {
       Yaw: -42.3683472
@@ -101,12 +101,12 @@ Objects {
 }
 Objects {
   Id: 2426492404841046067
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -54124.5938
-      Y: 51624.9492
-      Z: 1362.55432
+      X: -50592.6055
+      Y: 40645.7734
+      Z: 530
     }
     Rotation {
       Yaw: -42.3683472
@@ -134,12 +134,12 @@ Objects {
 }
 Objects {
   Id: 11297027080914213146
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -52854.6
-      Y: 52468.5469
-      Z: 1362.55457
+      X: -49322.6133
+      Y: 41489.3711
+      Z: 530.000244
     }
     Rotation {
       Yaw: -42.3683472
@@ -167,12 +167,12 @@ Objects {
 }
 Objects {
   Id: 6546545488235336660
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -51533.2773
-      Y: 52874.2695
-      Z: 1362.55432
+      X: -48001.2891
+      Y: 41895.0938
+      Z: 530
     }
     Rotation {
       Yaw: -42.3683472
@@ -200,12 +200,12 @@ Objects {
 }
 Objects {
   Id: 7916167792464393210
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -51535.5703
-      Y: 50859.0273
-      Z: 1362.55457
+      X: -48003.582
+      Y: 39879.8516
+      Z: 530.000244
     }
     Rotation {
       Yaw: -42.3683472
@@ -233,12 +233,12 @@ Objects {
 }
 Objects {
   Id: 9989771637510579947
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 2"
   Transform {
     Location {
-      X: -51635.543
-      Y: 48520.3477
-      Z: 1362.55457
+      X: -48103.5547
+      Y: 37541.1719
+      Z: 530.000244
     }
     Rotation {
       Yaw: -42.3683472
@@ -266,12 +266,12 @@ Objects {
 }
 Objects {
   Id: 18328994042500275627
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 35110.7422
-      Y: -60343.2461
-      Z: 1362.55408
+      X: 37283.9
+      Y: -53116.293
+      Z: 464.999512
     }
     Rotation {
       Yaw: 117.995
@@ -299,12 +299,12 @@ Objects {
 }
 Objects {
   Id: 10047402980379861912
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 33474.8516
-      Y: -60506.7109
-      Z: 1362.55457
+      X: 35648.0078
+      Y: -53279.7578
+      Z: 465
     }
     Rotation {
       Yaw: 117.995
@@ -332,12 +332,12 @@ Objects {
 }
 Objects {
   Id: 15728167357000265706
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 34814.9023
-      Y: -59087.4727
-      Z: 1362.55457
+      X: 36988.0586
+      Y: -51860.5195
+      Z: 465
     }
     Rotation {
       Yaw: 117.995
@@ -365,12 +365,12 @@ Objects {
 }
 Objects {
   Id: 16662298418228032137
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 33690.4922
-      Y: -57917.4844
-      Z: 1362.55457
+      X: 35863.6484
+      Y: -50690.5313
+      Z: 465
     }
     Rotation {
       Yaw: 117.995
@@ -398,12 +398,12 @@ Objects {
 }
 Objects {
   Id: 6980719676800595146
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 35390.7109
-      Y: -57571.9805
-      Z: 1362.55432
+      X: 37563.8672
+      Y: -50345.0273
+      Z: 464.999756
     }
     Rotation {
       Yaw: 117.995
@@ -431,12 +431,12 @@ Objects {
 }
 Objects {
   Id: 8349527428916139743
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 33373.918
-      Y: -58964.375
-      Z: 1362.55457
+      X: 35547.0742
+      Y: -51737.4219
+      Z: 465
     }
     Rotation {
       Yaw: 117.995
@@ -464,12 +464,12 @@ Objects {
 }
 Objects {
   Id: 1971521001583904264
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 36379.6563
-      Y: -58721.1875
-      Z: 1362.55457
+      X: 38552.8125
+      Y: -51494.2344
+      Z: 465
     }
     Rotation {
       Yaw: 117.995
@@ -497,12 +497,12 @@ Objects {
 }
 Objects {
   Id: 11488164079922228028
-  Name: "Spawn Point"
+  Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 36431.8438
-      Y: -60206.9531
-      Z: 1362.55457
+      X: 38605
+      Y: -52980
+      Z: 465
     }
     Rotation {
       Yaw: 133.639481

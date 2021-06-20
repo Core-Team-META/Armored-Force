@@ -24,7 +24,7 @@ commands = {
         adminOnly = true
     },
 
-    ["/rp"] = {
+    ["/xp"] = {
         OnCommandCalledClient = function (player, message)
         
             local resourceFound = nil
@@ -42,7 +42,7 @@ commands = {
         				
         			elseif resourceFound then
         				
-        				Chat.LocalMessage("Setting T_" .. resourceFound .. "RP resource to " .. tostring(number))
+        				Chat.LocalMessage("Setting T_" .. resourceFound .. "XP resource to " .. tostring(number))
         				
         				return
         			end
@@ -53,7 +53,7 @@ commands = {
         	
         	
         	
-        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /rp <tankID> <RPvalue>")
+        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /xp <tankID> <RPvalue>")
         end,
         OnCommandCalledServer = function (player, message)
         
@@ -82,7 +82,7 @@ commands = {
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Set the RP resource of a tank. Format: /rp <tankID> <RPvalue>",
+        description = "Set the XP resource of a tank. Format: /xp <tankID> <RPvalue>",
         requireMessage = false,
         adminOnly = false
     },
