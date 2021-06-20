@@ -25,6 +25,7 @@ local LIGHT_TANK_TEMPLATE = script:GetCustomProperty("MinimapLightTank")
 local MEDIUM_TANK_TEMPLATE = script:GetCustomProperty("MinimapMediumTank")
 local HEAVY_TANK_TEMPLATE = script:GetCustomProperty("MinimapHeavyTank")
 local DESTROYER_TANK_TEMPLATE = script:GetCustomProperty("MinimapDestroyerTank")
+local TANK_TEMPLATE = script:GetCustomProperty("MinimapTank")
 
 local GRADIENT_HEIGHT = script:GetCustomProperty("GradientHeight")
 local COLOR_LOW = script:GetCustomProperty("ColorLow")
@@ -249,7 +250,10 @@ function GetIndicatorType(player)
 	end
 	
 	player.clientUserData.minimapType = tankType
-			
+	
+	return TANK_TEMPLATE
+	
+	--[[
 	if tankType == "Light" then
 		return LIGHT_TANK_TEMPLATE
 	elseif tankType == "Medium" then
@@ -263,7 +267,7 @@ function GetIndicatorType(player)
 	--warn("COULD NOT FIND TANK TYPE FOR " .. player.name .. " : " .. tostring(player.clientUserData.minimapType))
 	
 	return PLAYER_TEMPLATE
-
+	]]
 end
 
 function CheckIndicatorType(player)

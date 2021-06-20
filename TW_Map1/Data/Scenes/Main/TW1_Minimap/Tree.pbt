@@ -46,7 +46,6 @@ Objects {
   }
   ParentId: 10370141871558452859
   ChildIds: 378484177755757853
-  ChildIds: 12424463349357942591
   ChildIds: 3302597894179016669
   ChildIds: 8877312406397874313
   Collidable_v2 {
@@ -3705,111 +3704,7 @@ Objects {
       }
     }
     Panel {
-      Opacity: 1
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12424463349357942591
-  Name: "UI Container"
-  Transform {
-    Location {
-      X: -3310
-      Y: 12580
-      Z: 2810
-    }
-    Rotation {
-      Yaw: 135
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 26148042514551584
-  ChildIds: 8056327412988251041
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Canvas {
-      Opacity: 1
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8056327412988251041
-  Name: "UI Panel"
-  Transform {
-    Location {
-      X: -3310
-      Y: 12580
-      Z: 2810
-    }
-    Rotation {
-      Yaw: 135
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12424463349357942591
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 315
-    Height: 310
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Panel {
+      IsClipping: true
       Opacity: 1
     }
     AnchorLayout {
@@ -3959,7 +3854,7 @@ Objects {
     Overrides {
       Name: "cs:UIPanel"
       ObjectReference {
-        SelfId: 8056327412988251041
+        SelfId: 1626479392366946328
       }
     }
     Overrides {
@@ -4002,6 +3897,12 @@ Objects {
       Name: "cs:MinimapDestroyerTank"
       AssetReference {
         Id: 18197261912546029751
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapTank"
+      AssetReference {
+        Id: 1846946720695767507
       }
     }
     Overrides {

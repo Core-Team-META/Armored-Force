@@ -20,9 +20,10 @@ Objects {
   ChildIds: 11231522143225906364
   ChildIds: 17707050887276379352
   ChildIds: 14246791555251678451
+  ChildIds: 10433577698686771103
+  ChildIds: 10691560634103126800
   ChildIds: 4689494391382931675
   ChildIds: 15794543342961490778
-  ChildIds: 10433577698686771103
   ChildIds: 9760950192611797696
   ChildIds: 9150084831990358686
   ChildIds: 18175534153066006281
@@ -237,35 +238,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10433577698686771103
-  Name: "TW_Minimap"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TW1_Minimap"
-  }
-}
-Objects {
   Id: 15794543342961490778
   Name: "Konz"
   Transform {
@@ -324,6 +296,64 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Antti (Keppu)"
+  }
+}
+Objects {
+  Id: 10691560634103126800
+  Name: "TW_Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW_Settings"
+  }
+}
+Objects {
+  Id: 10433577698686771103
+  Name: "TW_Minimap"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW1_Minimap"
   }
 }
 Objects {

@@ -20,7 +20,15 @@ function SetPlayer(player)
 	
 	ROOT.visibility = Visibility.INHERIT
 	
-	CIRCLE_BG.isEnabled = (player == localPlayer)
+	CIRCLE_BG.isEnabled = false --(player == localPlayer)
+	if player == localPlayer then
+		CIRCLE.visibility = Visibility.FORCE_OFF
+		viewRange.visibility = Visibility.INHERIT
+	else 
+		CIRCLE.visibility = Visibility.INHERIT
+		viewRange.visibility = Visibility.FORCE_OFF
+		DIRECTION_ROOT.visibility = Visibility.FORCE_OFF
+	end
 	
 	-- Set player's initial name letter
 	--NAME.text = string.sub(player.name, 1, 1)
@@ -28,28 +36,58 @@ function SetPlayer(player)
 	UpdateContent()
 end
 
+function SetTankIcon(player)
+	
+	if not player or not player.clientUserData.currentTankData then
+		return
+	end
+	
+	local selectedTemplate = nil
+	local tankType = player.clientUserData.currentTankData.type
+	
+	if tankType == "Tank Destroyer" then
+		selectedTemplate = script:GetCustomProperty(t"Destroyer")
+		CIRCLE:SetImage(selectedTemplate)
+	else 
+		selectedTemplate = script:GetCustomProperty(tankType)
+		CIRCLE:SetImage(selectedTemplate)
+	end
+	
+end
+
+function SetViewRange(player)
+
+	if not player or not player.clientUserData.currentTankData then
+		return
+	end
+	
+	local viewRangeInfo = player.clientUserData.currentTankData.viewRange
+	
+	local viewRangeScale = viewRangeInfo / 100 * 0.5
+	
+	viewRange.width = viewRangeScale
+	viewRange.height = viewRangeScale
+
+end
+
 function UpdateContent()
 	-- Team
 	
 	if myPlayer == localPlayer and CIRCLE:GetColor() ~= Color.ORANGE then
-		CIRCLE.isTeamColorUsed = false
-		CIRCLE:SetColor(Color.ORANGE)
-		viewRange.visibility = Visibility.INHERIT
+		local rot = myPlayer:GetWorldRotation()
+		DIRECTION_ROOT.rotationAngle = rot.z
+		SetViewRange(myPlayer)
 	else 
 		CIRCLE.team = myPlayer.team
+		SetTankIcon(myPlayer)
 	end
 	
 	DEAD.team = myPlayer.team
-	ARROW.team = myPlayer.team
 	
 	-- Dead/Alive
 	CIRCLE.isEnabled = (not myPlayer.isDead)
 	DEAD.isEnabled = myPlayer.isDead
-	DIRECTION_ROOT.isEnabled = CIRCLE.isEnabled
-	
-	-- Direction arrow
-	local rot = myPlayer:GetWorldRotation()
-	DIRECTION_ROOT.rotationAngle = rot.z
+	DIRECTION_ROOT.isEnabled = (not myPlayer.isDead)
 end
 
 function Tick()

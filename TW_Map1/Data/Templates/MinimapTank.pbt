@@ -116,6 +116,30 @@ Assets {
               SubObjectId: 18132462283986457369
             }
           }
+          Overrides {
+            Name: "cs:Light"
+            AssetReference {
+              Id: 1826018453272641144
+            }
+          }
+          Overrides {
+            Name: "cs:Medium"
+            AssetReference {
+              Id: 7782333196411936789
+            }
+          }
+          Overrides {
+            Name: "cs:Heavy"
+            AssetReference {
+              Id: 2522207801968448555
+            }
+          }
+          Overrides {
+            Name: "cs:Destroyer"
+            AssetReference {
+              Id: 6378091711898254638
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -226,8 +250,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 200
-          Height: 200
+          Width: 220
+          Height: 220
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -357,8 +381,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 125
-          Height: 125
+          Width: 200
+          Height: 200
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -366,12 +390,11 @@ Assets {
           }
           Image {
             Brush {
-              Id: 1388135340872512900
+              Id: 13750712654183587261
             }
             Color {
-              R: 1
-              G: 0.724172175
-              B: 0.149999976
+              R: 0.919999957
+              G: 0.383841068
               A: 1
             }
             TeamSettings {
@@ -597,9 +620,8 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 19
-          Height: 15
-          UIY: -20
+          Width: 17
+          Height: 17
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -610,12 +632,16 @@ Assets {
               Id: 18056787318024051379
             }
             Color {
-              R: 1
-              G: 0.724172175
-              B: 0.149999976
+              R: 0.919999957
+              G: 0.383841068
               A: 1
             }
             TeamSettings {
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
             }
           }
           AnchorLayout {
@@ -634,6 +660,42 @@ Assets {
       }
     }
     Assets {
+      Id: 1826018453272641144
+      Name: "UI Basic Shape Circle"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Basic_Shape_Circle"
+      }
+    }
+    Assets {
+      Id: 7782333196411936789
+      Name: "UI Basic Shape Pentagon"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Basic_Shape_Pentagon"
+      }
+    }
+    Assets {
+      Id: 2522207801968448555
+      Name: "Emblem 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Military_Icon_052"
+      }
+    }
+    Assets {
+      Id: 6378091711898254638
+      Name: "UI Basic Shape Triangle"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Basic_Shape_Triangle"
+      }
+    }
+    Assets {
       Id: 14038508103508472964
       Name: "Center Tri 001"
       PlatformAssetType: 9
@@ -643,12 +705,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1388135340872512900
-      Name: "Frame Outline Thin 006"
+      Id: 13750712654183587261
+      Name: "Frame Ring 1x 004"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameOutline_015"
+        AssetId: "FrameRing1x_004"
       }
     }
     Assets {
