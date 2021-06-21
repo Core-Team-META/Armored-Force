@@ -7,7 +7,7 @@ Assets {
       RootId: 877226798922062688
       Objects {
         Id: 877226798922062688
-        Name: "33TANK_CHASSIS_Upgraded_GE_Jagdtiger"
+        Name: "TANK_CHASSIS_Upgraded_GE_Jagdtiger"
         Transform {
           Scale {
             X: 1
@@ -43,7 +43,7 @@ Assets {
           Mass: 42000
           PhysicsBodyScale {
             X: 9
-            Y: 3.5
+            Y: 4.5
             Z: 1.7
           }
           IsDriverHidden: true
@@ -58,27 +58,28 @@ Assets {
           MaxSpeed: 1050
           AccelerationRate: 400
           DecelerationRate: 15
-          BrakeStrength: 713
-          TireFriction: 20
+          BrakeStrength: 1
+          TireFriction: 10
           CenterOfMassOFfset {
+            X: -90
             Z: 20
           }
           GravityScale: 1
-          CoastBrakeStrength: 71.3
+          CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 50
-            LeftTreadWidth: 100
-            RightTreadRadius: 50
-            RightTreadWidth: 100
+            LeftTreadRadius: 40
+            LeftTreadWidth: 80
+            RightTreadRadius: 40
+            RightTreadWidth: 80
             LeftTreadOffset {
-              X: -50
+              X: -70
               Y: -250
-              Z: 50
+              Z: 40
             }
             RightTreadOffset {
-              X: -50
+              X: -70
               Y: 250
-              Z: 50
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

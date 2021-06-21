@@ -42,6 +42,8 @@ end
 
 function OnPlayerRespawned(player)
 
+	player.isVisible = false
+
 	Task.Wait(0.1)
 	
 	RemovePlayerEquipment(player)
@@ -89,7 +91,7 @@ end
 -- Gives original equipment
 function OnPlayerJoined(player)
 
-	player.respawnedEvent:Connect(OnPlayerRespawned)
+	player.spawnedEvent:Connect(OnPlayerRespawned)
 	
 end
 
