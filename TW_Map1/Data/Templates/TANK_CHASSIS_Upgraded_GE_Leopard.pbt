@@ -7,7 +7,7 @@ Assets {
       RootId: 12223694778412608664
       Objects {
         Id: 12223694778412608664
-        Name: "19TANK_CHASSIS_Upgraded_GE_Leopard"
+        Name: "TANK_CHASSIS_Upgraded_GE_Leopard"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 32000
+          Mass: 42000
           PhysicsBodyScale {
             X: 7
             Y: 3

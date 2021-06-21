@@ -18,8 +18,10 @@ function Initialize()
 	
 	local hitboxes = enemyHitbox:GetChildren()
 	
-	for _, t in ipairs(hitboxes) do
-		t.beginOverlapEvent:Connect(OnImpact)
+  for _, t in ipairs(hitboxes) do
+    if t:IsA("Trigger") then
+      t.beginOverlapEvent:Connect(OnImpact)
+    end
 	end
 	
 end

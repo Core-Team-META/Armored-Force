@@ -7,7 +7,7 @@ Assets {
       RootId: 9421820912929343427
       Objects {
         Id: 9421820912929343427
-        Name: "18TANK_CHASSIS_Upgraded_GER_Panzer3"
+        Name: "TANK_CHASSIS_Upgraded_GER_Panzer3"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 30000
+          Mass: 50000
           PhysicsBodyScale {
             X: 5
             Y: 3.5

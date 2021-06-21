@@ -7,7 +7,7 @@ Assets {
       RootId: 17876041483625998119
       Objects {
         Id: 17876041483625998119
-        Name: "04TANK_CHASSIS_Upgraded_USSR_T34"
+        Name: "TANK_CHASSIS_Upgraded_USSR_T34"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 36000
+          Mass: 50000
           PhysicsBodyScale {
             X: 4
             Y: 3.5

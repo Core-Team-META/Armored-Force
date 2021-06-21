@@ -7,7 +7,7 @@ Assets {
       RootId: 3038603519323516763
       Objects {
         Id: 3038603519323516763
-        Name: "23TANK_CHASSIS_Default_GE_PantherD"
+        Name: "TANK_CHASSIS_Default_GE_PantherD"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 45000
+          Mass: 50000
           PhysicsBodyScale {
             X: 5
             Y: 3

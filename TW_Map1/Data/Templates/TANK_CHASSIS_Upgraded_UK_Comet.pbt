@@ -7,7 +7,7 @@ Assets {
       RootId: 9303364304416259622
       Objects {
         Id: 9303364304416259622
-        Name: "05TANK_CHASSIS_Upgraded_UK_Comet"
+        Name: "TANK_CHASSIS_Upgraded_UK_Comet"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 32000
+          Mass: 52000
           PhysicsBodyScale {
             X: 8
             Y: 4

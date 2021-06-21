@@ -7,7 +7,7 @@ Assets {
       RootId: 16105963350766208052
       Objects {
         Id: 16105963350766208052
-        Name: "03TANK_CHASSIS_Upgraded_US_M4A1Sherman"
+        Name: "TANK_CHASSIS_Upgraded_US_M4A1Sherman"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 31000
+          Mass: 51000
           PhysicsBodyScale {
             X: 4.5
             Y: 2.5
