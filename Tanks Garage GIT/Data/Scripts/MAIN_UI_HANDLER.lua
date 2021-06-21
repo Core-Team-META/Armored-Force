@@ -582,7 +582,6 @@ end
 
 -- TOGGLE TANK_STATS OPEN
 function STATS_TANK_TOGGLE_DROPDOWN_OPEN()
-
 	if STATS_TANK.y == STATS_TANK_CLOSED_DROPDOWN_Y then
 		SFX_SLIDE_DOWN:Play()
 		if STATS_TANK_isMoving and STATS_TANK_timeRemaining > 0 then
@@ -590,7 +589,7 @@ function STATS_TANK_TOGGLE_DROPDOWN_OPEN()
 			STATS_TANK_timeRemaining = STATS_TANK_DROPDOWN_TOGGLE_TIME - STATS_TANK_timeRemaining
 		else
 			STATS_TANK_isMoving = true
-			STATS_TANK_targetDestination = TANK_STATS_OPEN_DROPDOWN_Y
+			STATS_TANK_targetDestination = STATS_TANK_OPEN_DROPDOWN_Y
 			STATS_TANK_timeRemaining = STATS_TANK_DROPDOWN_TOGGLE_TIME
 		end
 	end
