@@ -29,9 +29,11 @@ function Initialize()
 	
 	hitboxes = enemyHitbox:GetChildren()
 	
-	for _, t in ipairs(hitboxes) do
-		t.beginOverlapEvent:Connect(OnImpact)
-	end
+  for _, t in ipairs(hitboxes) do
+    if t:IsA("Trigger") then
+		  t.beginOverlapEvent:Connect(OnImpact)
+    end 
+  end
 	
 	label.text = tostring(maxHP) .. " / " .. tostring(maxHP)
 	currentHP = maxHP
