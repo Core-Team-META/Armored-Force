@@ -71,6 +71,33 @@ Assets {
   }
 }
 Assets {
+  Id: 15463439290356156719
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
+  Id: 15234553642973347520
+  Name: "Ambience Nature Cicadas Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_cicadas_ref"
+  }
+}
+Assets {
+  Id: 15172180549504871240
+  Name: "Ambience Nature Forest Birds Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_forestbirds_ref"
+  }
+}
+Assets {
   Id: 14697405062555329113
   Name: "Ambient Occlusion Post Process"
   PlatformAssetType: 6
@@ -95,6 +122,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_hill_002"
+  }
+}
+Assets {
+  Id: 13100330238861707551
+  Name: "Decal Tread Tracks 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_mil_decal_tracks_001_ref"
+  }
+}
+Assets {
+  Id: 12145181589079789543
+  Name: "Decal Stains Top 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_top_001"
   }
 }
 Assets {
@@ -152,12 +197,30 @@ Assets {
   }
 }
 Assets {
+  Id: 9384902847455848183
+  Name: "Sand 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_sand_001_uv"
+  }
+}
+Assets {
   Id: 8973805628172335992
   Name: "Stone Block Standard Broken"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_01"
+  }
+}
+Assets {
+  Id: 8857078069961347605
+  Name: "Smoke Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_volume_vfx"
   }
 }
 Assets {
@@ -176,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 7724989921381923917
+  Name: "Ambience Nature Wind and Trees Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_windytrees_ref"
   }
 }
 Assets {
@@ -215,6 +287,24 @@ Assets {
   }
 }
 Assets {
+  Id: 5039800715923770000
+  Name: "Prism - 3-Sided Convex"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_triangle_convex_001"
+  }
+}
+Assets {
+  Id: 4409471342408545730
+  Name: "Ambience Nature Waterflow Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_waterflow_ref"
+  }
+}
+Assets {
   Id: 4284415134293720527
   Name: "Pyramid - 8-Sided Truncated"
   PlatformAssetType: 1
@@ -239,6 +329,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 2567692420992227131
+  Name: "Nature Pond Birds Ambience Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_nature_pond_birds_loop_01_Cue_ref"
   }
 }
 Assets {

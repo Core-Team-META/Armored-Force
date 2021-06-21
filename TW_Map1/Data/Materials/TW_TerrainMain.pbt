@@ -15,7 +15,7 @@ Assets {
       Overrides {
         Name: "cmp:Material4"
         AssetReference {
-          Id: 16538824738551663546
+          Id: 4075769487832034125
         }
       }
       Overrides {
@@ -42,9 +42,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material4"
         Color {
-          R: 1
-          G: 0.874172211
-          B: 0.75
+          R: 0.577
+          G: 0.359374821
+          B: 0.155789956
           A: 1
         }
       }
@@ -68,7 +68,7 @@ Assets {
       Overrides {
         Name: "cmp:Material4_Sides"
         AssetReference {
-          Id: 16538824738551663546
+          Id: 4075769487832034125
         }
       }
       Overrides {
@@ -99,9 +99,9 @@ Assets {
       Overrides {
         Name: "cmpc:Material4_Sides"
         Color {
-          R: 1
-          G: 0.874172211
-          B: 0.75
+          R: 0.577
+          G: 0.359374821
+          B: 0.155789956
           A: 1
         }
       }
@@ -148,12 +148,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16538824738551663546
-      Name: "Bone Raw"
+      Id: 4075769487832034125
+      Name: "Stucco Tintable"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_bone_raw_001_uv_ref"
+        AssetId: "mi_stucco_tint_001_uv"
       }
     }
     Assets {
@@ -175,12 +175,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16538824738551663546
-      Name: "Bone Raw"
+      Id: 4075769487832034125
+      Name: "Stucco Tintable"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_bone_raw_001_uv_ref"
+        AssetId: "mi_stucco_tint_001_uv"
       }
     }
     Assets {
