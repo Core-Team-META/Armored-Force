@@ -223,7 +223,8 @@ function Tick()
 		if GetActiveButtonState(dailyLogin) ~= "Claimed" then
 			SwitchButtonState(dailyLogin, "Claimed")
 		end
-		dailyLogin:GetCustomProperty("LoginDueProgress"):WaitForObject().progress = 1 - math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time())/20
+		
+		dailyLogin:GetCustomProperty("LoginDueProgress"):WaitForObject().progress = 1 - tonumber(os.date("%H", math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time())))/20
 	else 
 		loginText.text = "00:00:00"
 		dailyLogin:GetCustomProperty("LoginDueProgress"):WaitForObject().progress = 1
