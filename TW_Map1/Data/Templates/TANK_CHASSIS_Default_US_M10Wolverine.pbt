@@ -7,7 +7,7 @@ Assets {
       RootId: 146066313680108414
       Objects {
         Id: 146066313680108414
-        Name: "07TANK_CHASSIS_Default_US_M10Wolverine"
+        Name: "TANK_CHASSIS_Default_US_M10Wolverine"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 29000
+          Mass: 49000
           PhysicsBodyScale {
             X: 5.5
             Y: 3

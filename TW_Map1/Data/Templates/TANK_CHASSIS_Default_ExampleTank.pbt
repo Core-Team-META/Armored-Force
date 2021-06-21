@@ -7,7 +7,7 @@ Assets {
       RootId: 5438919963439710727
       Objects {
         Id: 5438919963439710727
-        Name: "02TANK_CHASSIS_Default_ExampleTank"
+        Name: "TANK_CHASSIS_Default_ExampleTank"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 29000
+          Mass: 49000
           PhysicsBodyScale {
             X: 5
             Y: 3.5

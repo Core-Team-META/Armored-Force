@@ -7,7 +7,7 @@ Assets {
       RootId: 6199424312657164438
       Objects {
         Id: 6199424312657164438
-        Name: "32TANK_CHASSIS_Upgraded_GE_VK7201"
+        Name: "TANK_CHASSIS_Upgraded_GE_VK7201"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 50000
+          Mass: 60000
           PhysicsBodyScale {
             X: 8.5
             Y: 3.2

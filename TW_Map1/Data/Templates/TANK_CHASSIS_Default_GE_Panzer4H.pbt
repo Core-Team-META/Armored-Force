@@ -7,7 +7,7 @@ Assets {
       RootId: 16848243897652293121
       Objects {
         Id: 16848243897652293121
-        Name: "21TANK_CHASSIS_Default_GE_Panzer4H"
+        Name: "TANK_CHASSIS_Default_GE_Panzer4H"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 37000
+          Mass: 47000
           PhysicsBodyScale {
             X: 7
             Y: 4.5

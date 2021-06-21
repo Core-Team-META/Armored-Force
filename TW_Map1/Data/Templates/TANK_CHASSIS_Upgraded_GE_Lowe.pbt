@@ -7,7 +7,7 @@ Assets {
       RootId: 8521437648478186440
       Objects {
         Id: 8521437648478186440
-        Name: "25TANK_CHASSIS_Upgraded_GE_Lowe"
+        Name: "TANK_CHASSIS_Upgraded_GE_Lowe"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 40000
+          Mass: 55000
           PhysicsBodyScale {
             X: 8.5
             Y: 3.2

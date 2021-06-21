@@ -7,7 +7,7 @@ Assets {
       RootId: 6170417272256538993
       Objects {
         Id: 6170417272256538993
-        Name: "04TANK_CHASSIS_Default_USSR_T34"
+        Name: "TANK_CHASSIS_Default_USSR_T34"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 36000
+          Mass: 50000
           PhysicsBodyScale {
             X: 4
             Y: 3.5

@@ -7,7 +7,7 @@ Assets {
       RootId: 16513585765158067091
       Objects {
         Id: 16513585765158067091
-        Name: "20TANK_CHASSIS_Upgraded_JP_ChiNu"
+        Name: "TANK_CHASSIS_Upgraded_JP_ChiNu"
         Transform {
           Scale {
             X: 1
@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 29000
+          Mass: 49000
           PhysicsBodyScale {
             X: 4
             Y: 3

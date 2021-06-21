@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 28000
+          Mass: 48000
           PhysicsBodyScale {
             X: 7
             Y: 5
