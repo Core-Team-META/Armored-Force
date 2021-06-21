@@ -873,6 +873,7 @@ Objects {
   ChildIds: 13146257504240816511
   ChildIds: 4612918581398024296
   ChildIds: 10931079994558747280
+  ChildIds: 17610486237545754826
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -891,21 +892,69 @@ Objects {
   }
 }
 Objects {
+  Id: 17610486237545754826
+  Name: "CollisionBox"
+  Transform {
+    Location {
+      X: -91.5812
+      Y: -0.876184464
+      Z: 185
+    }
+    Rotation {
+      Yaw: 179.234222
+    }
+    Scale {
+      X: 7.25
+      Y: 3.75
+      Z: 0.5
+    }
+  }
+  ParentId: 11772205701143336007
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 10931079994558747280
   Name: "CollisionBox"
   Transform {
     Location {
-      X: -33.9411774
-      Y: 10.85606
+      X: -91.5812
+      Y: -0.876184464
       Z: 5
     }
     Rotation {
       Yaw: 179.234253
     }
     Scale {
-      X: 10.6998243
-      Y: 6.89830589
-      Z: 3.06897736
+      X: 7.25
+      Y: 3.5
+      Z: 2.25
     }
   }
   ParentId: 11772205701143336007
@@ -25611,6 +25660,7 @@ Objects {
   ChildIds: 6494536159837733765
   ChildIds: 12876291109711452089
   ChildIds: 16076898780153562977
+  ChildIds: 4915193429522851607
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25629,17 +25679,66 @@ Objects {
   }
 }
 Objects {
-  Id: 16076898780153562977
+  Id: 4915193429522851607
   Name: "CollisionBox"
   Transform {
     Location {
+      X: -107.365799
+      Y: 0.0471725464
+      Z: 150
     }
     Rotation {
     }
     Scale {
-      X: 9.82211685
-      Y: 7.00903368
-      Z: 2.56264377
+      X: 7.75
+      Y: 3.25
+      Z: 0.75
+    }
+  }
+  ParentId: 16720262580289535530
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 198353679974341757
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16076898780153562977
+  Name: "CollisionBox"
+  Transform {
+    Location {
+      X: -107.365799
+      Y: 0.0471725464
+    }
+    Rotation {
+    }
+    Scale {
+      X: 7.75
+      Y: 2.75
+      Z: 2
     }
   }
   ParentId: 16720262580289535530
