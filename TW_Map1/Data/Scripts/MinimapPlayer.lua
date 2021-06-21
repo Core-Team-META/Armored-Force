@@ -46,7 +46,7 @@ function SetTankIcon(player)
 	local tankType = player.clientUserData.currentTankData.type
 	
 	if tankType == "Tank Destroyer" then
-		selectedTemplate = script:GetCustomProperty(t"Destroyer")
+		selectedTemplate = script:GetCustomProperty("Destroyer")
 		CIRCLE:SetImage(selectedTemplate)
 	else 
 		selectedTemplate = script:GetCustomProperty(tankType)
