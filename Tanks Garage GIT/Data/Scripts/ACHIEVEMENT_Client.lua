@@ -80,16 +80,16 @@ end
 local function ClearListeners(listeners)
     for _, listener in ipairs(listeners) do
         if listener and listener.isConnected then
-            listeners:Disconnect()
+            listener:Disconnect()
         end
     end
     listeners = {}
 end
 
 local function ClearAchievements()
-    if not achievementScrollPanel then
+--[[    if not achievementScrollPanel then
         return
-    end
+    end]]--
     for _, child in ipairs(achievementScrollPanel:GetChildren()) do
         if Object.IsValid(child) then
             child:Destroy()
@@ -98,9 +98,15 @@ local function ClearAchievements()
 end
 
 local function BuildAchievementInfoPanel()
+    activeAchievements = {}
+    DisableThisComponent()
+    --ClearAchievements()
+
     local totalCount = 0
     local xCount = 0
     local yCount = 0
+
+    
 
     for _, achievement in pairs(ACH_API.GetAchievements()) do
         table.insert(activeAchievements, achievement)
@@ -176,6 +182,7 @@ local function BuildAchievementInfoPanel()
             end
         end
     end
+    achievementScrollPanel.scrollPosition = 0
 end
 
 local function AnimateNotification(id)
@@ -196,17 +203,13 @@ function OnResourceChanged(player, resName, resAmt)
     if player == LOCAL_PLAYER and IsAchievement(resName) and resAmt == ACH_API.GetAchievementRequired(resName) then
         achievementQueue[#achievementQueue + 1] = resName
     elseif player == LOCAL_PLAYER and IsAchievement(resName) and resAmt == 1 then
-    --#TODO Achievement Claimed
-    --World.SpawnAsset(SFX_Achievement)
+        BuildAchievementInfoPanel()
     end
 end
 
 function OnClaimButtonPressed(button)
     Events.BroadcastToServer("AS.RewardClaim", button.clientUserData.key)
     button.isInteractable = false
-    Task.Wait(1)
-    DisableThisComponent()
-    BuildAchievementInfoPanel()
 end
 
 function Int()
@@ -233,8 +236,9 @@ function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime) 
     if newState == ABGS.GAME_STATE_PLAYER_SHOWCASE then
         BuildAchievementInfoPanel()
     else
-        ClearAchievements()
         ClearListeners(listeners)
+        ClearAchievements()
+        
     end
 end
 
@@ -253,8 +257,10 @@ function ToggleThisComponent(requestedPlayerState)
 end
 
 function DisableThisComponent()
-    ClearAchievements()
     ClearListeners(listeners)
+    Task.Wait()
+    ClearAchievements()
+    
 end
 
 function Tick()
