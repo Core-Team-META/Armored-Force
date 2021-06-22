@@ -99,6 +99,86 @@ Objects {
   }
 }
 Objects {
+  Id: 17736868490696546371
+  Name: "Leaderboards"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13966797509968964878
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TotalDestroyed"
+      NetReference {
+        Key: "27CB45FA531F565B"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TotalDamage"
+      NetReference {
+        Key: "1D2DB228D64195F4"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TotalWinRate"
+      NetReference {
+        Key: "93F89442E6473534"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MatchDestroyed"
+      NetReference {
+        Key: "61AF5892A77B70F0"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MatchDamage"
+      NetReference {
+        Key: "9BE050A61E8A639A"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7627234086622722874
+    }
+  }
+}
+Objects {
   Id: 8053548290070406507
   Name: "Keys"
   Transform {
