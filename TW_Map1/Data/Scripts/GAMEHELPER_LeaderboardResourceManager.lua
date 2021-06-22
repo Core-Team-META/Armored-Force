@@ -31,7 +31,8 @@ local lastTimestamp
 
 local function BuildLeaderboardTable(netref)
     local tbl = {}
-    for i, entry in ipairs(netref) do
+    
+    for i, entry in ipairs(Leaderboards.GetLeaderboard(netref, LeaderboardType.WEEKLY)) do
         if i <= MAX_ENTRIES then
             tbl[entry.name] = entry.score
         else
@@ -85,3 +86,5 @@ function OnPlayerLeft(player)
     Storage.SetSharedPlayerData(LEADERBOARD_NETREF, player, storageData)
 end
 
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
+Game.playerLeftEvent:Connect(OnPlayerLeft)
