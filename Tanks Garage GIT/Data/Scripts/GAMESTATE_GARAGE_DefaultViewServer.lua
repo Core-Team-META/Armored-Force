@@ -17,7 +17,7 @@ function SendToMap(player, selectedMap)
 	else
 		player:TransferToGame(map[selectedMap])
 	end
-
+	Events.Broadcast("PLAYER_DEPLOYED", player)
 end
 
 Events.ConnectForPlayer("SEND_TO_MAP", SendToMap)

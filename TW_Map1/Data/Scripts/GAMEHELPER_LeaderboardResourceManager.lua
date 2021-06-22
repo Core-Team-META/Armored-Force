@@ -27,11 +27,12 @@ end
 
 local lastTimestamp
 
-
-
 local function BuildLeaderboardTable(netref)
     local tbl = {}
-    
+    local startTime = time()
+    repeat
+        Task.Wait()
+    until Leaderboards.HasLeaderboards() or time() - startTime > 30
     for i, entry in ipairs(Leaderboards.GetLeaderboard(netref, LeaderboardType.WEEKLY)) do
         if i <= MAX_ENTRIES then
             tbl[entry.name] = entry.score
@@ -71,7 +72,7 @@ function OnPlayerJoined(player)
     storageData.LTTD = BuildLeaderboardTable(LTTD_LEADERBOARD)
     storageData.LTDD = BuildLeaderboardTable(LTDD_LEADERBOARD)
     storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD)
-    storageData.time = os.time(os.date('!*t'))
+    storageData.time = os.time(os.date("!*t"))
 
     Storage.SetSharedPlayerData(LEADERBOARD_NETREF, player, storageData)
 end
@@ -90,7 +91,7 @@ function OnPlayerLeft(player)
     storageData.LTTD = BuildLeaderboardTable(LTTD_LEADERBOARD)
     storageData.LTDD = BuildLeaderboardTable(LTDD_LEADERBOARD)
     storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD)
-    storageData.time = os.time(os.date('!*t'))
+    storageData.time = os.time(os.date("!*t"))
 
     Storage.SetSharedPlayerData(LEADERBOARD_NETREF, player, storageData)
 end

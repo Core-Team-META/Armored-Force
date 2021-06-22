@@ -38,21 +38,23 @@ function OnPlayerJoined(player)
     end
 end
 
-function OnPlayerLeft(player)
-    playersLeft[#playersLeft + 1] = player.id
+function OnPlayerDeployed(player)
+    playersLeft[player.id] = time() + 120
 end
 
--- Search for players with more recent storage every 60 seconds
+-- Search for players with more recent storage every 120 seconds
 function Tick()
     if next(playersLeft) then
-        for _, playerId in ipairs(playersLeft) do
+        for playerId, timeLeft in pairs(playersLeft) do
+            while time() < timeLeft do
+                Task.Wait()
+            end
             local data = Storage.GetSharedOfflinePlayerData(LEADERBOARD_NETREF, playerId)
             SetNetworkData(data)
         end
         playersLeft = {}
-        Task.Wait(60)
     end
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
-Game.playerLeftEvent:Connect(OnPlayerLeft)
+Events.Connect("PLAYER_DEPLOYED", OnPlayerDeployed)
