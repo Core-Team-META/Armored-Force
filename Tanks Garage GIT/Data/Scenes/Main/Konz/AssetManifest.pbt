@@ -161,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11619439792683854596
+  Name: "Frame Outline Thin 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_020"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
