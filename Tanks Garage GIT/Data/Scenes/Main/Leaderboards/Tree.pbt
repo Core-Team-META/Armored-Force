@@ -107,6 +107,18 @@ Objects {
         Id: 10199204154804073601
       }
     }
+    Overrides {
+      Name: "cs:Leaderboards_Networked"
+      ObjectReference {
+        SelfId: 7053830574120603273
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -123,6 +135,94 @@ Objects {
   Script {
     ScriptAsset {
       Id: 13324874675606933976
+    }
+  }
+}
+Objects {
+  Id: 7053830574120603273
+  Name: "Leaderboards_Networked"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11247493096644056341
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MTD"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:Keys"
+      ObjectReference {
+        SelfId: 1126690814057033551
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
+    Overrides {
+      Name: "cs:MDD"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:LTTD"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:LTDD"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:LTWR"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:MTD:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:MDD:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:LTTD:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:LTDD:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:LTWR:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8508848918848851180
     }
   }
 }

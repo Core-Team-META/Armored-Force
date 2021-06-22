@@ -77,6 +77,14 @@ Objects {
         }
       }
     }
+    Overrides {
+      Name: "cs:Leaderboards"
+      NetReference {
+        Type {
+          Value: "mc:enetreferencetype:unknown"
+        }
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -1,3 +1,5 @@
+local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local LEADERBOARDS_MATCH_CONTAINER = script:GetCustomProperty("LEADERBOARDS_MATCH_CONTAINER"):WaitForObject()
@@ -7,6 +9,10 @@ local TOTAL_BUTTON = script:GetCustomProperty("TOTAL_BUTTON"):WaitForObject()
 local MATCH_BUTTON = script:GetCustomProperty("MATCH_BUTTON"):WaitForObject()
 
 local LEADERBOARDS_ENTRY = script:GetCustomProperty("LEADERBOARDS_ENTRY")
+
+local NETWORKED = script:GetCustomProperty("Leaderboards_Networked"):WaitForObject()
+
+local propertyTbl = {MTD = {}, MDD = {}, LTTD = {}, LTDD = {}, LTWR = {}}
 
 --#TODO not able to scale, should have this all on custom properties.
 local leaderBoards = {
@@ -30,6 +36,10 @@ local leaderBoards = {
 }
 
 local totalEntries = 15
+
+local function CompareScore(a, b)
+    return tonumber(a.score) > tonumber(b.score)
+end
 
 local function HideAllStates()
     leaderBoards.match.active.visibility = Visibility.FORCE_OFF
@@ -56,11 +66,17 @@ local function PopulateEntry(newEntry, data, rank)
 end
 
 local function CreateEntries(leaderboards, parent)
+    local sortedTbl = {}
     if leaderboards then
-        for rank, data in ipairs(leaderboards) do
-            if rank < totalEntries then
+        for name, score in pairs(leaderboards) do
+            sortedTbl[#sortedTbl + 1] = {name = name, score = score}
+        end
+        table.sort(sortedTbl, CompareScore)
+        for i, data in pairs(sortedTbl) do
+            if i <= totalEntries then
                 local newEntry = World.SpawnAsset(LEADERBOARDS_ENTRY, {parent = parent})
-                PopulateEntry(newEntry, data, rank)
+                newEntry.y = (i - 1) * 50
+                PopulateEntry(newEntry, data, i)
             else
                 break
             end
@@ -69,29 +85,23 @@ local function CreateEntries(leaderboards, parent)
 end
 
 local function BuildMatchLeaderBoards()
-    local tanksDestroyed = nil --Leaderboards.GetLeaderboard(NetReference_leaderboardReference, LeaderboardType_leaderboardType)
-    local damageDealt = nil --Leaderboards.GetLeaderboard(NetReference_leaderboardReference, LeaderboardType_leaderboardType)
 
     for _, panel in pairs(leaderBoards.match.parentPanels) do
         DestroyChildren(panel)
     end
-
-    CreateEntries(tanksDestroyed, leaderBoards.match.parentPanels.tanksDestroyed)
-    CreateEntries(damageDealt, leaderBoards.match.parentPanels.damageDealt)
+    CreateEntries(propertyTbl.MTD, leaderBoards.match.parentPanels.tanksDestroyed)
+    CreateEntries(propertyTbl.MDD, leaderBoards.match.parentPanels.damageDealt)
 end
 
 local function BuildTotalLeaderBoards()
-    local tanksDestroyed = nil --Leaderboards.GetLeaderboard(NetReference_leaderboardReference, LeaderboardType_leaderboardType)
-    local damageDealt = nil --Leaderboards.GetLeaderboard(NetReference_leaderboardReference, LeaderboardType_leaderboardType)
-    local winRate = nil --Leaderboards.GetLeaderboard(NetReference_leaderboardReference, LeaderboardType_leaderboardType)
 
     for _, panel in pairs(leaderBoards.total.parentPanels) do
         DestroyChildren(panel)
     end
 
-    CreateEntries(tanksDestroyed, leaderBoards.total.parentPanels.tanksDestroyed)
-    CreateEntries(damageDealt, leaderBoards.total.parentPanels.damageDealt)
-    CreateEntries(winRate, leaderBoards.total.parentPanels.winRate)
+    CreateEntries(propertyTbl.LTTD, leaderBoards.total.parentPanels.tanksDestroyed)
+    CreateEntries(propertyTbl.LTDD, leaderBoards.total.parentPanels.damageDealt)
+    CreateEntries(propertyTbl.LTWR, leaderBoards.total.parentPanels.winRate)
 end
 
 function ToggleLeaderboards(button)
@@ -114,8 +124,27 @@ function Init()
     for _, panel in pairs(leaderBoards.match.parentPanels) do
         DestroyChildren(panel)
     end
+
+    for key, value in pairs(NETWORKED:GetCustomProperties()) do
+        if key ~= "Keys" and value ~= "" then
+            propertyTbl[key] = UTIL.ConvertStringToTable(value)
+        end
+    end
+end
+
+function OnNetworkChanged(object, string)
+    local data = object:GetCustomProperty(string)
+    tanksDestroyed = UTIL.ConvertStringToTable(data)
 end
 
 TOTAL_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 MATCH_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
+NETWORKED.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
 Init()
+Task.Wait(3)
+for key, value in pairs(NETWORKED:GetCustomProperties()) do
+    if key ~= "Keys" and value ~= "" then
+        propertyTbl[key] = UTIL.ConvertStringToTable(value)
+    end
+end
+BuildMatchLeaderBoards()
