@@ -119,6 +119,36 @@ Objects {
         Id: 2269572116006940077
       }
     }
+    Overrides {
+      Name: "cs:MTD_SCORE"
+      ObjectReference {
+        SelfId: 18426390883020698910
+      }
+    }
+    Overrides {
+      Name: "cs:MDD_SCORE"
+      ObjectReference {
+        SelfId: 14476817109191220854
+      }
+    }
+    Overrides {
+      Name: "cs:LTTD_SCORE"
+      ObjectReference {
+        SelfId: 1426220980730390325
+      }
+    }
+    Overrides {
+      Name: "cs:LTDD_SCORE"
+      ObjectReference {
+        SelfId: 5426630406745590310
+      }
+    }
+    Overrides {
+      Name: "cs:LTWR_RATE"
+      ObjectReference {
+        SelfId: 16667687926009155745
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
