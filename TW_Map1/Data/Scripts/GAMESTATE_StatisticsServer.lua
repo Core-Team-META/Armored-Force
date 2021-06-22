@@ -174,7 +174,7 @@ function OnDamagedRecord(player, damage)
 			end
 			
 			local lifetimeDamage = damage.sourcePlayer:GetResource("LifetimeDamageDealt")
-			Leaderboards.SubmitPlayerScore(LTDD_LEADERBOARD, damage.sourcePlayer, lifetimeDamage)
+			Leaderboards.SubmitPlayerScore(LTTD_LEADERBOARD, damage.sourcePlayer, lifetimeDamage)
 			
 			local damageDealtPercentage = damage.amount / player.maxHitPoints
 
