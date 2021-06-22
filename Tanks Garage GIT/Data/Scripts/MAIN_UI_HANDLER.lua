@@ -3237,6 +3237,10 @@ function INITIATE_CHECK_STATE(player)
 	CHECK_STATE()
 end
 
+function NavigateToPremiumShop()
+	ACTIVE_HEAD_MENU = 1
+end
+
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS
@@ -3412,3 +3416,4 @@ BUTTON_AXIS_T4D.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4D)
 Events.Connect("WeaponUpgradeSuccessful", ShowWeaponUpgrade)
 Events.Connect("ArmorUpgradeSuccessful", ShowArmorUpgrade)
 Events.Connect("EngineUpgradeSuccessful", ShowEngineUpgrade)
+Events.Connect("NavigateToPremiumShop", NavigateToPremiumShop)

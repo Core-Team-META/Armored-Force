@@ -384,8 +384,16 @@ function PopulateSelectedTankPanel(id)
 end
 
 function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
+	if not tankData.purchasedTank and tankData.purchaseCurrencyName == "Gold" then
+		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
+		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
+		Task.Wait(1.8)
+		Events.Broadcast("NavigateToPremiumShop")
+		return
+	end
+
 	-- Change title
-	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SHADOW").text = "CONFIRM " .. tankData.name .. " PURCHASE" 
+	-- CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SHADOW").text = "CONFIRM " .. tankData.name .. " PURCHASE" 
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SECONDARY").text = "CONFIRM " .. tankData.name .. " PURCHASE"
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_LIGHT").text = "CONFIRM " .. tankData.name .. " PURCHASE"
 	
