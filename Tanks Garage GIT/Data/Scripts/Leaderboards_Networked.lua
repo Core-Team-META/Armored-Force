@@ -9,19 +9,26 @@ if not LEADERBOARD_NETREF then
 end
 
 local lastTimestamp
+local playersLeft = {}
+
+local function SetNetworkData(data)
+    if data and next(data) and data.time then
+        if not lastTimestamp or lastTimestamp and data.time > lastTimestamp then
+            script:SetNetworkedCustomProperty("MTD", UTIL.ConvertTableToString(data.MTD))
+            script:SetNetworkedCustomProperty("MDD", UTIL.ConvertTableToString(data.MDD))
+            script:SetNetworkedCustomProperty("LTTD", UTIL.ConvertTableToString(data.LTTD))
+            script:SetNetworkedCustomProperty("LTDD", UTIL.ConvertTableToString(data.LTDD))
+            script:SetNetworkedCustomProperty("LTWR", UTIL.ConvertTableToString(data.LTWR))
+            lastTimestamp = data.time 
+        end
+    end
+end
 
 function OnPlayerJoined(player)
     local storageData = Storage.GetSharedPlayerData(LEADERBOARD_NETREF, player)
-    warn(tostring(Storage.GetSharedPlayerData(LEADERBOARD_NETREF, player)))
-    --Storage.GetSharedPlayerData(LEADERBOARD_NETREF, player)
     if storageData and next(storageData) and storageData.time then
         if not lastTimestamp or lastTimestamp and storageData.time > lastTimestamp then
-            script:SetNetworkedCustomProperty("MTD", UTIL.ConvertTableToString(storageData.MTD))
-            script:SetNetworkedCustomProperty("MDD", UTIL.ConvertTableToString(storageData.MDD))
-            script:SetNetworkedCustomProperty("LTTD", UTIL.ConvertTableToString(storageData.LTTD))
-            script:SetNetworkedCustomProperty("LTDD", UTIL.ConvertTableToString(storageData.LTDD))
-            script:SetNetworkedCustomProperty("LTWR", UTIL.ConvertTableToString(storageData.LTWR))
-
+            SetNetworkData(storageData)
             player:SetResource("MatchTanksDestroyed", storageData.playerResources.MTD or 0)
             player:SetResource("MatchDamageDealt", storageData.playerResources.MDD or 0)
             player:SetResource("LifetimeTanksDestroyed", storageData.playerResources.LTTD or 0)
@@ -31,4 +38,21 @@ function OnPlayerJoined(player)
     end
 end
 
+function OnPlayerLeft(player)
+    playersLeft[#playersLeft + 1] = player.id
+end
+
+-- Search for players with more recent storage every 60 seconds
+function Tick()
+    if next(playersLeft) then
+        for _, playerId in ipairs(playersLeft) do
+            local data = Storage.GetSharedOfflinePlayerData(LEADERBOARD_NETREF, playerId)
+            SetNetworkData(data)
+        end
+        playersLeft = {}
+        Task.Wait(60)
+    end
+end
+
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
+Game.playerLeftEvent:Connect(OnPlayerLeft)
