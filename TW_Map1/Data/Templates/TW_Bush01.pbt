@@ -10,9 +10,9 @@ Assets {
         Name: "TW_Bush01"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.18249404
+            Y: 1.18249404
+            Z: 1.18249404
           }
         }
         ParentId: 4781671109827199097
@@ -31,13 +31,13 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -47,7 +47,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }

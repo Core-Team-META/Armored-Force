@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4689494391382931675
         ChildIds: 2700043845878209264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46,6 +46,7 @@ Assets {
         }
         ParentId: 3822032582495142433
         ChildIds: 3095641107315436390
+        ChildIds: 11837833187728185875
         ChildIds: 10092158849475795203
         ChildIds: 3439175302792502438
         Collidable_v2 {
@@ -227,6 +228,57 @@ Assets {
         }
       }
       Objects {
+        Id: 11837833187728185875
+        Name: "Decal Hay Patch 02"
+        Transform {
+          Location {
+            X: -13.2348633
+            Y: 56.4570313
+            Z: -72.7567749
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.944132209
+            Y: 1.24537694
+            Z: 0.303120613
+          }
+        }
+        ParentId: 2700043845878209264
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 2
+              G: 2
+              B: 2
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17087285610227069023
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
         Id: 10092158849475795203
         Name: "DebrisGroup"
         Transform {
@@ -242,7 +294,7 @@ Assets {
         }
         ParentId: 2700043845878209264
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -269,7 +321,31 @@ Assets {
           }
         }
         ParentId: 2700043845878209264
-        ChildIds: 7554360874789939711
+        ChildIds: 1470946209723821953
+        ChildIds: 11986820769423317189
+        ChildIds: 16801250848903476356
+        ChildIds: 5691802677344127279
+        ChildIds: 17028775762241162917
+        ChildIds: 12055049922785845306
+        ChildIds: 13175277279040148018
+        ChildIds: 6868605382436966202
+        ChildIds: 4706998825688056892
+        ChildIds: 15654650755783942857
+        ChildIds: 4766188175431295151
+        ChildIds: 1912912447424209410
+        ChildIds: 5025308946231948324
+        ChildIds: 16127290178847497603
+        ChildIds: 5420645747808530846
+        ChildIds: 6617573037913732562
+        ChildIds: 1971345324587658894
+        ChildIds: 374409848885705397
+        ChildIds: 10885213408051464757
+        ChildIds: 15802463544814333153
+        ChildIds: 17799691921518476558
+        ChildIds: 6738320363486691848
+        ChildIds: 13571460719928459014
+        ChildIds: 4895313006938304951
+        ChildIds: 4719809528253079337
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -284,55 +360,34 @@ Assets {
         }
       }
       Objects {
-        Id: 7554360874789939711
-        Name: "hay bale_merged"
+        Id: 1470946209723821953
+        Name: "Decal Hay Patch 02"
         Transform {
           Location {
-            X: -25.3710938
-            Y: 6.328125
-            Z: -39.0440979
+            X: -46.421875
+            Y: 10.3554688
+            Z: 60.8261108
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.516349137
+            Y: 0.544897556
+            Z: 1.19661844
           }
         }
         ParentId: 3439175302792502438
-        ChildIds: 11986820769423317189
-        ChildIds: 1470946209723821953
-        ChildIds: 17943324352487039277
-        ChildIds: 11837833187728185875
-        ChildIds: 1109552962371964305
-        ChildIds: 5081511200568386090
-        ChildIds: 16801250848903476356
-        ChildIds: 5691802677344127279
-        ChildIds: 17028775762241162917
-        ChildIds: 12055049922785845306
-        ChildIds: 13175277279040148018
-        ChildIds: 6868605382436966202
-        ChildIds: 4706998825688056892
-        ChildIds: 15654650755783942857
-        ChildIds: 4766188175431295151
-        ChildIds: 1912912447424209410
-        ChildIds: 5025308946231948324
-        ChildIds: 16127290178847497603
-        ChildIds: 14052697978211393650
-        ChildIds: 15784987959396922254
-        ChildIds: 5420645747808530846
-        ChildIds: 6617573037913732562
-        ChildIds: 1971345324587658894
-        ChildIds: 374409848885705397
-        ChildIds: 10885213408051464757
-        ChildIds: 15802463544814333153
-        ChildIds: 17799691921518476558
-        ChildIds: 6738320363486691848
-        ChildIds: 13571460719928459014
-        ChildIds: 4895313006938304951
-        ChildIds: 4719809528253079337
-        ChildIds: 13238012865508079998
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 2
+              G: 2
+              B: 2
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -342,9 +397,17 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        Folder {
-          Model {
+        Blueprint {
+          BlueprintAsset {
+            Id: 17087285610227069023
           }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -352,12 +415,12 @@ Assets {
         Name: "Cylinder - 2-Toned"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -1.4309082
-            Z: 123.896942
+            X: -28.4621582
+            Y: 4.8972168
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 2.42634892
@@ -365,7 +428,7 @@ Assets {
             Z: 2.42634892
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -401,268 +464,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1470946209723821953
-        Name: "Decal Hay Patch 02"
-        Transform {
-          Location {
-            X: -21.0507813
-            Y: 4.02734375
-            Z: 99.8702698
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.516349137
-            Y: 0.544897556
-            Z: 1.19661844
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 2
-              G: 2
-              B: 2
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 17087285610227069023
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 17943324352487039277
-        Name: "Decal Hay Patch 02"
-        Transform {
-          Location {
-            X: -118.207031
-            Y: -53.8076172
-            Z: -21.9710541
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.847252369
-            Y: 0.942750275
-            Z: 0.303120613
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 2
-              G: 2
-              B: 2
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 17087285610227069023
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 11837833187728185875
-        Name: "Decal Hay Patch 02"
-        Transform {
-          Location {
-            X: 149.303711
-            Y: 50.1289063
-            Z: -21.9710541
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.847252369
-            Y: 1.16271114
-            Z: 0.303120613
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 2
-              G: 2
-              B: 2
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 17087285610227069023
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 1109552962371964305
-        Name: "Grass Tall"
-        Transform {
-          Location {
-            X: -53.6307373
-            Y: -106.984619
-            Z: 71.5829544
-          }
-          Rotation {
-            Pitch: 43.0675659
-            Yaw: -18.3180904
-            Roll: -89.9999619
-          }
-          Scale {
-            X: 0.413894147
-            Y: 0.712810099
-            Z: 0.914968491
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Nature_Grass:id"
-            AssetReference {
-              Id: 7186211005642715010
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18095757882595708726
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 5081511200568386090
-        Name: "Grass Tall"
-        Transform {
-          Location {
-            X: 52.6030273
-            Y: -106.984619
-            Z: 70.2608948
-          }
-          Rotation {
-            Pitch: -37.7091522
-            Yaw: 23.8098469
-            Roll: -90.0000153
-          }
-          Scale {
-            X: 0.413894147
-            Y: 0.712810099
-            Z: 0.914968491
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Nature_Grass:id"
-            AssetReference {
-              Id: 7186211005642715010
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18095757882595708726
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -675,14 +476,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 48.5958252
-            Y: -113.041016
-            Z: 182.585312
+            X: 23.2247314
+            Y: -106.712891
+            Z: 143.541199
           }
           Rotation {
             Pitch: 31.0121441
-            Yaw: 34.7435455
-            Roll: -54.7409859
+            Yaw: 34.743557
+            Roll: -54.7409744
           }
           Scale {
             X: 0.407585621
@@ -690,7 +491,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -716,7 +517,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -729,13 +529,13 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -53.6307373
-            Y: -106.984619
-            Z: 178.468369
+            X: -79.0018311
+            Y: -100.656494
+            Z: 139.424255
           }
           Rotation {
-            Pitch: -28.0883598
-            Yaw: -24.2743244
+            Pitch: -28.0883522
+            Yaw: -24.2742977
             Roll: -64.3717117
           }
           Scale {
@@ -744,7 +544,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -770,7 +570,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -783,14 +582,13 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -2.11340332
-            Y: -95.9638672
-            Z: 124.791878
+            X: -27.5616455
+            Y: -96.4956055
+            Z: 53.0101318
           }
           Rotation {
-            Pitch: -37.7091904
-            Yaw: -4.31675471e-06
-            Roll: -89.9999695
+            Pitch: -37.7091675
+            Roll: -89.999939
           }
           Scale {
             X: 0.672119737
@@ -798,7 +596,7 @@ Assets {
             Z: 1.26948762
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -824,7 +622,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -837,14 +634,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -85.0178223
-            Y: -98.6352539
-            Z: 172.590851
+            X: -110.388916
+            Y: -92.3071289
+            Z: 133.546692
           }
           Rotation {
-            Pitch: -28.0883598
-            Yaw: -79.5624237
-            Roll: -64.3723068
+            Pitch: -28.0883522
+            Yaw: -79.5624084
+            Roll: -64.3723145
           }
           Scale {
             X: 0.407585621
@@ -852,7 +649,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -879,7 +676,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -892,13 +688,13 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 61.4996338
-            Y: -104.091309
-            Z: 192.025513
+            X: 36.12854
+            Y: -97.7631836
+            Z: 152.981384
           }
           Rotation {
-            Pitch: 22.2896385
-            Yaw: 80.7711563
+            Pitch: 22.2896309
+            Yaw: 80.7711411
             Roll: -49.1431046
           }
           Scale {
@@ -907,7 +703,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -934,7 +730,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -947,12 +742,12 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -123.643311
-            Z: 123.896965
+            X: -28.4621582
+            Y: -117.315186
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 2.01146078
@@ -960,7 +755,7 @@ Assets {
             Z: 2.01146078
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -999,7 +794,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1012,12 +806,12 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -123.643311
-            Z: 123.896965
+            X: -28.4621582
+            Y: -117.315186
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 1.54372871
@@ -1025,7 +819,7 @@ Assets {
             Z: 1.54372871
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1064,7 +858,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1077,12 +870,12 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -123.643311
-            Z: 123.896965
+            X: -28.4621582
+            Y: -117.315186
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 1.12491071
@@ -1090,7 +883,7 @@ Assets {
             Z: 1.12491071
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1129,7 +922,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1142,12 +934,12 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -123.643311
-            Z: 123.896965
+            X: -28.4621582
+            Y: -117.315186
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 0.60165894
@@ -1155,7 +947,7 @@ Assets {
             Z: 0.60165894
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1194,7 +986,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1207,12 +998,12 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -123.643311
-            Z: 123.896965
+            X: -28.4621582
+            Y: -117.315186
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 0.342786312
@@ -1220,7 +1011,7 @@ Assets {
             Z: 0.342786312
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1259,7 +1050,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1272,12 +1062,12 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -123.643311
-            Z: 123.896965
+            X: -28.4621582
+            Y: -117.315186
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999619
+            Roll: -89.9999542
           }
           Scale {
             X: 2.38567758
@@ -1285,7 +1075,7 @@ Assets {
             Z: 2.38567758
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1324,7 +1114,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1337,12 +1126,12 @@ Assets {
         Name: "Ring"
         Transform {
           Location {
-            X: -3.09106445
-            Y: -117.337158
-            Z: 123.896965
+            X: -28.4621582
+            Y: -111.009033
+            Z: 84.8528442
           }
           Rotation {
-            Roll: -89.9999771
+            Roll: -89.9999619
           }
           Scale {
             X: 2.4581728
@@ -1350,7 +1139,7 @@ Assets {
             Z: 2.54019332
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1380,117 +1169,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 14052697978211393650
-        Name: "Grass Tall"
-        Transform {
-          Location {
-            X: -75.4272461
-            Y: 103.962891
-            Z: 131.544693
-          }
-          Rotation {
-            Pitch: -7.26702
-            Yaw: 13.383378
-            Roll: 75.5371475
-          }
-          Scale {
-            X: 0.413894147
-            Y: -0.712810099
-            Z: 0.914968491
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Nature_Grass:id"
-            AssetReference {
-              Id: 7186211005642715010
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18095757882595708726
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableCastShadows: true
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 15784987959396922254
-        Name: "Grass Tall"
-        Transform {
-          Location {
-            X: -11.0996094
-            Y: 103.962891
-            Z: 46.9910202
-          }
-          Rotation {
-            Pitch: -71.2469711
-            Yaw: -96.5668106
-            Roll: 171.827393
-          }
-          Scale {
-            X: 0.413894147
-            Y: -0.712810099
-            Z: 0.914968491
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Nature_Grass:id"
-            AssetReference {
-              Id: 7186211005642715010
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18095757882595708726
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableCastShadows: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1503,14 +1181,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 74.975708
-            Y: 110.019287
-            Z: 119.267265
+            X: 49.6046143
+            Y: 116.347412
+            Z: 80.2231445
           }
           Rotation {
-            Pitch: -13.7746124
+            Pitch: -13.7746058
             Yaw: -30.1923542
-            Roll: 82.2918549
+            Roll: 82.2918396
           }
           Scale {
             X: 0.407585621
@@ -1518,7 +1196,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1545,7 +1223,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1558,14 +1235,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 8.82666
-            Y: 103.962891
-            Z: 197.315384
+            X: -16.5444336
+            Y: 110.291016
+            Z: 158.27124
           }
           Rotation {
-            Pitch: -67.4672
-            Yaw: 71.1631393
-            Roll: 6.63084269
+            Pitch: -67.4671936
+            Yaw: 71.163147
+            Roll: 6.63083458
           }
           Scale {
             X: 0.407585621
@@ -1573,7 +1250,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1600,7 +1277,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1613,14 +1289,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -1.78405762
-            Y: 92.9421387
-            Z: 123.676964
+            X: -62.5919189
+            Y: 106.283203
+            Z: 55.96875
           }
           Rotation {
-            Pitch: -89.7302
-            Yaw: 0.00545397028
-            Roll: 89.9927216
+            Pitch: -89.7287598
+            Yaw: 0.0061641112
+            Roll: 89.9905701
           }
           Scale {
             X: 0.672119737
@@ -1628,7 +1304,7 @@ Assets {
             Z: 1.26948762
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1654,7 +1330,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1667,14 +1342,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: -15.1201172
-            Y: 95.6135254
-            Z: 218.44
+            X: -40.4912109
+            Y: 101.94165
+            Z: 179.395874
           }
           Rotation {
             Pitch: -24.563839
             Yaw: 107.453827
-            Roll: 5.90304661
+            Roll: 5.90304279
           }
           Scale {
             X: 0.407585621
@@ -1682,7 +1357,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1709,7 +1384,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1722,14 +1396,14 @@ Assets {
         Name: "Grass Tall"
         Transform {
           Location {
-            X: 90.3573
-            Y: 101.06958
-            Z: 114.904587
+            X: 64.9862061
+            Y: 107.397705
+            Z: 75.8604736
           }
           Rotation {
             Pitch: 6.68535471
             Yaw: -66.8609772
-            Roll: 100.714798
+            Roll: 100.714821
           }
           Scale {
             X: 0.407585621
@@ -1737,7 +1411,7 @@ Assets {
             Z: 0.914968491
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Grass:id"
@@ -1764,7 +1438,6 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           DisableCastShadows: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1777,14 +1450,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: 120.621582
-            Z: 123.89695
+            X: -28.4621582
+            Y: 126.949707
+            Z: 84.8528442
           }
           Rotation {
-            Pitch: -52.0234604
-            Yaw: 3.05246831e-05
-            Roll: 89.9998932
+            Pitch: -52.0234489
+            Yaw: 4.43995341e-05
+            Roll: 89.9998779
           }
           Scale {
             X: 2.01146078
@@ -1792,7 +1465,7 @@ Assets {
             Z: 2.01146078
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1831,7 +1504,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1844,14 +1516,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: 120.621582
-            Z: 123.89695
+            X: -28.4621582
+            Y: 126.949707
+            Z: 84.8528442
           }
           Rotation {
-            Pitch: -52.0234489
-            Yaw: 1.94247932e-05
-            Roll: 89.9999466
+            Pitch: -52.0234451
+            Yaw: 1.38748519e-05
+            Roll: 89.9999619
           }
           Scale {
             X: 1.54372871
@@ -1859,7 +1531,7 @@ Assets {
             Z: 1.54372871
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1898,7 +1570,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1911,14 +1582,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: 120.621582
-            Z: 123.89695
+            X: -28.4621582
+            Y: 126.949707
+            Z: 84.8528442
           }
           Rotation {
-            Pitch: -52.0234375
-            Yaw: 5.27244338e-05
-            Roll: 89.9998627
+            Pitch: -52.0234261
+            Yaw: 6.10493298e-05
+            Roll: 89.9998398
           }
           Scale {
             X: 1.12491071
@@ -1926,7 +1597,7 @@ Assets {
             Z: 1.12491071
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1965,7 +1636,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -1978,14 +1648,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: 120.621582
-            Z: 123.89695
+            X: -28.4621582
+            Y: 126.949707
+            Z: 84.8528442
           }
           Rotation {
-            Pitch: -52.0234718
-            Yaw: 2.21997761e-05
-            Roll: 89.9999
+            Pitch: -52.0234489
+            Yaw: 1.9424795e-05
+            Roll: 89.9998932
           }
           Scale {
             X: 0.60165894
@@ -1993,7 +1663,7 @@ Assets {
             Z: 0.60165894
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2032,7 +1702,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -2045,14 +1714,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: 120.621582
-            Z: 123.89695
+            X: -28.4621582
+            Y: 126.949707
+            Z: 84.8528442
           }
           Rotation {
-            Pitch: -52.0234718
-            Yaw: 2.21997743e-05
-            Roll: 89.9998932
+            Pitch: -52.0234604
+            Yaw: 3.60746271e-05
+            Roll: 89.9998627
           }
           Scale {
             X: 0.342786312
@@ -2060,7 +1729,7 @@ Assets {
             Z: 0.342786312
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2099,7 +1768,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -2112,14 +1780,14 @@ Assets {
         Name: "Plane Ring - One Sided Thin"
         Transform {
           Location {
-            X: -3.09106445
-            Y: 120.621582
-            Z: 123.89695
+            X: -28.4621582
+            Y: 126.949707
+            Z: 84.8528442
           }
           Rotation {
-            Pitch: -52.0234489
-            Yaw: 3.60746271e-05
-            Roll: 89.9998856
+            Pitch: -52.0234375
+            Yaw: 3.60746053e-05
+            Roll: 89.9998779
           }
           Scale {
             X: 2.38567758
@@ -2127,7 +1795,7 @@ Assets {
             Z: 2.38567758
           }
         }
-        ParentId: 7554360874789939711
+        ParentId: 3439175302792502438
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2166,7 +1834,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -2174,61 +1841,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 13238012865508079998
-        Name: "Ring"
-        Transform {
-          Location {
-            X: -3.09095478
-            Y: 110.174576
-            Z: 123.896729
-          }
-          Rotation {
-            Roll: -89.999939
-          }
-          Scale {
-            X: 2.44786572
-            Y: 2.44787335
-            Z: 2.23751593
-          }
-        }
-        ParentId: 7554360874789939711
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 9467001099313846445
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4895696571039676751
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
+    }
+    Assets {
+      Id: 17087285610227069023
+      Name: "Decal Hay Patch 02"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_fan_hay_002"
       }
     }
     Assets {
@@ -2247,15 +1867,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_fan_hay_002_uv"
-      }
-    }
-    Assets {
-      Id: 17087285610227069023
-      Name: "Decal Hay Patch 02"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_decal_fan_hay_002"
       }
     }
     Assets {
