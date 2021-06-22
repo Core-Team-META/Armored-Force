@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15613631792190449472
+  Name: "Icon Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Tank"
+  }
+}
+Assets {
   Id: 14514750246421432694
   Name: "Button Page Slide Core 01 SFX"
   PlatformAssetType: 7
@@ -149,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Coins_003"
+  }
+}
+Assets {
+  Id: 11619439792683854596
+  Name: "Frame Outline Thin 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_020"
   }
 }
 Assets {
@@ -413,21 +431,21 @@ Assets {
   }
 }
 Assets {
+  Id: 1152302030520335391
+  Name: "Boost"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Racing_Icon_020"
+  }
+}
+Assets {
   Id: 858186239500606381
   Name: "Medal"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Racing_Icon_011"
-  }
-}
-Assets {
-  Id: 675260763225735688
-  Name: "BG Flat 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_015"
   }
 }
 Assets {
