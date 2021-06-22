@@ -26,6 +26,24 @@ Assets {
   }
 }
 Assets {
+  Id: 14060330023043759337
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 13257658630242510450
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
   Id: 11619439792683854596
   Name: "Frame Outline Thin 001"
   PlatformAssetType: 9
@@ -71,15 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7515015531196152948
-  Name: "BG Gradient 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_020"
-  }
-}
-Assets {
   Id: 5448259814457251395
   Name: "CB Radio Click Beep Squelch 01 SFX"
   PlatformAssetType: 7
@@ -98,21 +107,21 @@ Assets {
   }
 }
 Assets {
-  Id: 4319230699050670341
-  Name: "Teko Bold"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "TekoBold_ref"
-  }
-}
-Assets {
   Id: 2903415737883036314
   Name: "Icon Close"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Close"
+  }
+}
+Assets {
+  Id: 2604353830693238371
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
   }
 }
 Assets {
