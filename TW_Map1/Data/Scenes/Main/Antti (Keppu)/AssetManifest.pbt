@@ -1,13 +1,4 @@
 Assets {
-  Id: 17925326465180611494
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
-  }
-}
-Assets {
   Id: 17184591166555015249
   Name: "Cliff 03"
   PlatformAssetType: 2
@@ -161,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11296696299295417863
+  Name: "Tree Birch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_001"
+  }
+}
+Assets {
   Id: 11182969111770509228
   Name: "Cliff 02"
   PlatformAssetType: 2
@@ -197,15 +197,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9384902847455848183
-  Name: "Sand 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_sand_001_uv"
-  }
-}
-Assets {
   Id: 8973805628172335992
   Name: "Stone Block Standard Broken"
   PlatformAssetType: 1
@@ -221,15 +212,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_smoke_volume_vfx"
-  }
-}
-Assets {
-  Id: 8844316130701469456
-  Name: "Sun Adjustment Volume"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_sun_adjustment"
   }
 }
 Assets {
@@ -311,15 +293,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_eighsided_truncated_001"
-  }
-}
-Assets {
-  Id: 3998592366905403415
-  Name: "Glass 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_glass_refrac_001"
   }
 }
 Assets {

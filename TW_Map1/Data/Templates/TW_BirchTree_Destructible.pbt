@@ -10,9 +10,9 @@ Assets {
         Name: "TW_BirchTree_Destructible"
         Transform {
           Scale {
-            X: 1.18545437
-            Y: 1.18545437
-            Z: 1.18545437
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 4689494391382931675
@@ -299,7 +299,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
               Mass: 1500

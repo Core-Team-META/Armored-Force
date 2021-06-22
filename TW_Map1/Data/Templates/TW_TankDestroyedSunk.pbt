@@ -15,38 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
-        ChildIds: 6095791422729052372
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 6095791422729052372
-        Name: "MergedModel"
-        Transform {
-          Location {
-            X: 25
-            Z: -20
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6441128677033427218
+        ParentId: 7219194076105567950
         ChildIds: 14887903997196152327
         ChildIds: 13651117821505899774
         ChildIds: 7524424432838554961
@@ -67,8 +36,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
-          Model {
-          }
+          IsGroup: true
         }
       }
       Objects {
@@ -76,13 +44,13 @@ Assets {
         Name: "Military Tank Historic Hull 01 Rear"
         Transform {
           Location {
-            X: -359.734039
-            Y: -0.000785827637
-            Z: 164.999985
+            X: -334.733795
+            Y: -0.000396728516
+            Z: 145.000107
           }
           Rotation {
-            Yaw: 1.36603776e-05
-            Roll: 3.4150944e-06
+            Yaw: 1.36603767e-05
+            Roll: 4.26886754e-06
           }
           Scale {
             X: 1
@@ -90,7 +58,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
@@ -135,7 +103,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -145,7 +113,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -158,13 +125,13 @@ Assets {
         Name: "Military Tank Historic Hull 01 Mid"
         Transform {
           Location {
-            X: -63.7001114
-            Y: -0.000150680542
-            Z: 165.000183
+            X: -38.699646
+            Y: 0.000916481
+            Z: 145.000427
           }
           Rotation {
-            Yaw: 1.36603776e-05
-            Roll: 3.4150944e-06
+            Yaw: 1.36603767e-05
+            Roll: 4.26886754e-06
           }
           Scale {
             X: 1.47114992
@@ -172,7 +139,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -225,7 +192,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -235,7 +202,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -248,14 +214,14 @@ Assets {
         Name: "Military Tank Historic Armorplate 01 Rear"
         Transform {
           Location {
-            X: -425.39209
+            X: -400.392578
             Y: 177.722656
-            Z: 210.587891
+            Z: 190.588379
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: 89.9999771
-            Roll: -167.127258
+            Yaw: 89.9999619
+            Roll: -167.127228
           }
           Scale {
             X: -0.986
@@ -263,7 +229,7 @@ Assets {
             Z: 1.16984153
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -296,7 +262,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -306,7 +272,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -319,14 +284,14 @@ Assets {
         Name: "Military Tank Historic Armorplate 01 Rear"
         Transform {
           Location {
-            X: -425.391205
-            Y: -177.344772
-            Z: 210.587463
+            X: -400.391235
+            Y: -177.344666
+            Z: 190.587463
           }
           Rotation {
             Pitch: -1.36603776e-05
-            Yaw: 89.9999542
-            Roll: -167.127289
+            Yaw: 89.9999466
+            Roll: -167.127258
           }
           Scale {
             X: 0.985980928
@@ -334,7 +299,7 @@ Assets {
             Z: 1.16984153
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -367,7 +332,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -377,7 +342,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -390,13 +354,14 @@ Assets {
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
-            X: 82.1367
-            Y: -217.816956
-            Z: 134.006531
+            X: 107.136414
+            Y: -217.817169
+            Z: 114.006409
           }
           Rotation {
-            Yaw: 1.44890182e-05
-            Roll: 89.9999847
+            Pitch: 6.83018879e-06
+            Yaw: 1.20741815e-05
+            Roll: 89.9999771
           }
           Scale {
             X: 3.59361172
@@ -404,7 +369,7 @@ Assets {
             Z: 4.39915323
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -441,7 +406,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -451,7 +416,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -464,13 +428,14 @@ Assets {
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
-            X: 82.1380234
-            Y: 115.41655
-            Z: 134.007324
+            X: 107.138107
+            Y: 115.416916
+            Z: 114.007385
           }
           Rotation {
-            Yaw: 1.32816e-05
-            Roll: -89.9999847
+            Pitch: -6.83018879e-06
+            Yaw: 1.59982883e-05
+            Roll: -89.9999619
           }
           Scale {
             X: 3.59361172
@@ -478,7 +443,7 @@ Assets {
             Z: 2.31030369
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -515,7 +480,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -525,7 +490,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -538,13 +502,13 @@ Assets {
         Name: "Urban Pipe Cap 03"
         Transform {
           Location {
-            X: 303.743591
-            Y: -62.3562317
-            Z: 264.737732
+            X: 328.743896
+            Y: -62.3554077
+            Z: 244.737915
           }
           Rotation {
-            Yaw: 1.36603776e-05
-            Roll: 3.4150944e-06
+            Yaw: 1.36603767e-05
+            Roll: 4.26886754e-06
           }
           Scale {
             X: 1.43512022
@@ -552,7 +516,7 @@ Assets {
             Z: 0.536945283
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -577,7 +541,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -587,7 +551,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -600,14 +563,14 @@ Assets {
         Name: "Military Tank Historic Turret 01"
         Transform {
           Location {
-            X: -43.9044762
-            Y: 57.2152405
-            Z: 299.835022
+            X: -18.9047
+            Y: 57.2150421
+            Z: 279.8349
           }
           Rotation {
-            Pitch: 7.15067482
-            Yaw: -13.4451294
-            Roll: -1.86550903
+            Pitch: 7.15066814
+            Yaw: -13.4451523
+            Roll: -1.86550915
           }
           Scale {
             X: 1.18417168
@@ -615,7 +578,7 @@ Assets {
             Z: 1.02892661
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -648,7 +611,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -658,7 +621,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -671,14 +633,14 @@ Assets {
         Name: "Military Tank Historic Mantlet 01"
         Transform {
           Location {
-            X: 119.516365
-            Y: 16.2335739
-            Z: 340.846344
+            X: 144.516266
+            Y: 16.233551
+            Z: 320.846283
           }
           Rotation {
-            Pitch: 7.15067482
-            Yaw: -13.4451294
-            Roll: -1.86550903
+            Pitch: 7.15066814
+            Yaw: -13.4451523
+            Roll: -1.86550915
           }
           Scale {
             X: 1.4208622
@@ -686,7 +648,7 @@ Assets {
             Z: 0.926318109
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -726,7 +688,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -736,7 +698,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -749,14 +710,14 @@ Assets {
         Name: "Military Tank Historic MainGun 01"
         Transform {
           Location {
-            X: 66.7663879
-            Y: 31.6748447
-            Z: 334.157898
+            X: 91.7669296
+            Y: 31.6760101
+            Z: 314.158173
           }
           Rotation {
-            Pitch: -0.755432129
-            Yaw: -13.1882935
-            Roll: -1.85043335
+            Pitch: -0.755432546
+            Yaw: -13.1883125
+            Roll: -1.85043406
           }
           Scale {
             X: 1.18410873
@@ -764,7 +725,7 @@ Assets {
             Z: 0.637173653
           }
         }
-        ParentId: 6095791422729052372
+        ParentId: 6441128677033427218
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -816,7 +777,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
@@ -826,7 +787,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }

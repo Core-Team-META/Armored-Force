@@ -7,7 +7,7 @@ Assets {
       RootId: 1194296193948601795
       Objects {
         Id: 1194296193948601795
-        Name: "TW_FX_Destroy_Woodmedium"
+        Name: "TW_FX_Destroy_WoodMedium"
         Transform {
           Scale {
             X: 1
@@ -170,6 +170,10 @@ Assets {
           Overrides {
             Name: "bp:Density"
             Float: 0.1
+          }
+          Overrides {
+            Name: "bp:Sort Priority Adjustment"
+            Int: 1
           }
         }
         Collidable_v2 {

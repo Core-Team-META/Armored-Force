@@ -134,6 +134,10 @@ Assets {
             Name: "bp:Density"
             Float: 0.703234673
           }
+          Overrides {
+            Name: "bp:Sort Priority Adjustment"
+            Int: 1
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
