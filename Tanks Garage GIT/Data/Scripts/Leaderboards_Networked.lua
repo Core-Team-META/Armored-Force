@@ -21,9 +21,14 @@ function OnPlayerJoined(player)
             script:SetNetworkedCustomProperty("LTTD", UTIL.ConvertTableToString(storageData.LTTD))
             script:SetNetworkedCustomProperty("LTDD", UTIL.ConvertTableToString(storageData.LTDD))
             script:SetNetworkedCustomProperty("LTWR", UTIL.ConvertTableToString(storageData.LTWR))
+
+            player:SetResource("MatchTanksDestroyed", storageData.playerResources.MTD or 0)
+            player:SetResource("MatchDamageDealt", storageData.playerResources.MDD or 0)
+            player:SetResource("LifetimeTanksDestroyed", storageData.playerResources.LTTD or 0)
+            player:SetResource("LifetimeDamageDealt", storageData.playerResources.LTDD or 0)
+            player:SetResource("LifetimeWinrate", storageData.playerResources.LTWR or 0)
         end
     end
 end
-
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
