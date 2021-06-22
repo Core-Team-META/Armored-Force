@@ -65,6 +65,15 @@ function OnPlayerJoined(player)
     player:SetResource("LifetimeTanksDestroyed", storageData.playerResources.LTTD)
     player:SetResource("LifetimeDamageDealt", storageData.playerResources.LTDD)
     player:SetResource("LifetimeWinrate", storageData.playerResources.LTWR)
+
+    storageData.MTD = BuildLeaderboardTable(MTD_LEADERBOARD)
+    storageData.MDD = BuildLeaderboardTable(MDD_LEADERBOARD)
+    storageData.LTTD = BuildLeaderboardTable(LTTD_LEADERBOARD)
+    storageData.LTDD = BuildLeaderboardTable(LTDD_LEADERBOARD)
+    storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD)
+    storageData.time = os.time(os.date('!*t'))
+
+    Storage.SetSharedPlayerData(LEADERBOARD_NETREF, player, storageData)
 end
 
 function OnPlayerLeft(player)
