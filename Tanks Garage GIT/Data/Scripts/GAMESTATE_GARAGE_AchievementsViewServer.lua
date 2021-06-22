@@ -121,7 +121,7 @@ function SetChallengeProgressInfo(player)
 	end
 	
 	for i = 1, 3 do
-		if CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
+		if CheckDueDate(os.date("!*t"), os.date("*t", tonumber(player.serverUserData.CHALLENGE[i].dueDate))) and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
 			player.serverUserData.CHALLENGE[i].progress = 0
 			local newDate = os.date("!*t")
 			player.serverUserData.CHALLENGE[i].dueDate = 
@@ -131,7 +131,7 @@ function SetChallengeProgressInfo(player)
 			print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
 			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
 		else
-			local showTime = os.date("!*t", player.serverUserData.CHALLENGE[i].dueDate)
+			local showTime = os.date("!*t", tonumber(player.serverUserData.CHALLENGE[i].dueDate))
 			print("Assigned date: " .. tostring(showTime.year) .. "/" .. tostring(showTime.month) 
 			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour) .. "/" ..  tostring(showTime.min))
 			
@@ -159,7 +159,7 @@ function Tick()
 		needRepack = false
 		if Object.IsValid(player) and playerChallengeCheck[player.id] then
 			for i = 1, 3 do
-				if CheckDueDate(os.date("!*t"), os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)) 
+				if CheckDueDate(os.date("!*t"), os.date("*t", tonumber(player.serverUserData.CHALLENGE[i].dueDate))) 
 					and player.serverUserData.CHALLENGE[i].progress < player.serverUserData.CHALLENGE[i].target then
 					player.serverUserData.CHALLENGE[i].progress = 0
 					local newDate = os.date("!*t")
