@@ -395,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1814707273787853473
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 1283463588493558965
   Name: "Fantasy Gold 001"
   PlatformAssetType: 9
