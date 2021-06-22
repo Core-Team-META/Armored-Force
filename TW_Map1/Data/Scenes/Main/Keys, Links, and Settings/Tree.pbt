@@ -115,6 +115,24 @@ Objects {
   ParentId: 13966797509968964878
   UnregisteredParameters {
     Overrides {
+      Name: "cs:MatchDestroyed"
+      NetReference {
+        Key: "61AF5892A77B70F0"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MatchDamage"
+      NetReference {
+        Key: "9BE050A61E8A639A"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
       Name: "cs:TotalDestroyed"
       NetReference {
         Key: "27CB45FA531F565B"
@@ -136,24 +154,6 @@ Objects {
       Name: "cs:TotalWinRate"
       NetReference {
         Key: "93F89442E6473534"
-        Type {
-          Value: "mc:enetreferencetype:leaderboard"
-        }
-      }
-    }
-    Overrides {
-      Name: "cs:MatchDestroyed"
-      NetReference {
-        Key: "61AF5892A77B70F0"
-        Type {
-          Value: "mc:enetreferencetype:leaderboard"
-        }
-      }
-    }
-    Overrides {
-      Name: "cs:MatchDamage"
-      NetReference {
-        Key: "9BE050A61E8A639A"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -207,6 +207,15 @@ Objects {
       Name: "cs:Achievements"
       NetReference {
         Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:Leaderboards"
+      NetReference {
+        Key: "93dcd54767a8410a9a42b348c43e4e80"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }

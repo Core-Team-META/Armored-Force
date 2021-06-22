@@ -26,6 +26,19 @@ Assets {
   }
 }
 Assets {
+  Id: 15184781966273741360
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "93dcd54767a8410a9a42b348c43e4e80"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 14002253654344460699
   Name: "Grass Tall"
   PlatformAssetType: 1
