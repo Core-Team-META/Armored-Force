@@ -5976,6 +5976,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Leaderboards"
+      ObjectReference {
+        SelfId: 17736868490696546371
+      }
+    }
+    Overrides {
       Name: "cs:MetaAbilityProgressionConstants_API"
       AssetReference {
         Id: 15718075383189814537

@@ -1,6 +1,13 @@
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
+local LEADERBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
+local MTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDestroyed")
+local MDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDamage")
+local LTTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDestroyed")
+local LTDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDamage")
+local LTWR_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalWinRate")
+
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local victoryComponent = script:GetCustomProperty("GAMESTATE_VictoryComponent"):WaitForObject()
 
@@ -155,7 +162,19 @@ function OnDamagedRecord(player, damage)
 	if damage then
 		if damage.sourcePlayer then
 			damage.sourcePlayer:AddResource("TankDamage", damage.amount)
+			damage.sourcePlayer:AddResource("LifetimeDamageDealt", damage.amount)
 			damage.sourcePlayer:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES, damage.amount)
+			
+			local currentMatchDamage = damage.sourcePlayer:GetResource("TankDamage")
+			local recordedMatchDamage = damage.sourcePlayer:GetResource("MatchDamageDealt")
+			
+			if currentMatchDamage > recordedMatchDamage then
+				 damage.sourcePlayer:SetResource("MatchDamageDealt", currentMatchDamage)
+				 Leaderboards.SubmitPlayerScore(MDD_LEADERBOARD, damage.sourcePlayer, currentMatchDamage)
+			end
+			
+			local lifetimeDamage = damage.sourcePlayer:GetResource("LifetimeDamageDealt")
+			Leaderboards.SubmitPlayerScore(LTDD_LEADERBOARD, damage.sourcePlayer, lifetimeDamage)
 			
 			local damageDealtPercentage = damage.amount / player.maxHitPoints
 
@@ -206,6 +225,20 @@ function OnDiedRecord(player, damage)
 		
 		if damage.sourcePlayer then
 			damage.sourcePlayer:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS, 1)
+			damage.sourcePlayer:AddResource("LifetimeTanksDestroyed", 1)
+			damage.sourcePlayer:AddResource("MatchKills", 1)
+			
+			local currentKills = damage.sourcePlayer:GetResource("MatchKills")
+			local recordedKills = damage.sourcePlayer:GetResource("MatchTanksDestroyed")
+			
+			if currentKills > recordedKills then
+				 damage.sourcePlayer:SetResource("MatchDamageDealt", currentKills)
+				 Leaderboards.SubmitPlayerScore(MTD_LEADERBOARD, damage.sourcePlayer, currentKills)
+			end
+			
+			local lifetimeKills = damage.sourcePlayer:GetResource("LifetimeTanksDestroyed")
+			Leaderboards.SubmitPlayerScore(LTDD_LEADERBOARD, damage.sourcePlayer, lifetimeKills)
+			
 			if damage.sourcePlayer:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED) < damage.sourcePlayer.kills then
 				damage.sourcePlayer:SetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED, damage.sourcePlayer.kills)
 			end
@@ -266,7 +299,6 @@ function OnResourceChanged(player, resource, value)
 	
 end
 
-
 function OnJoined(player)
 
 	player.damagedEvent:Connect(OnDamagedRecord)
@@ -274,10 +306,11 @@ function OnJoined(player)
 	player.resourceChangedEvent:Connect(OnResourceChanged)
 	player:SetResource("MatchEndHP", 0)
 	player:SetResource("TankDamage", 0)
+	player:SetResource("MatchKills", 0)
 	player:SetResource("DamageTracker", 0)
 	player:SetResource("SpottingTracker", 0)
-	Task.Wait(20)
-	ResourceCheck(player)
+	--Task.Wait(20)
+	--ResourceCheck(player)
 
 end
 
