@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15613631792190449472
+  Name: "Icon Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Tank"
+  }
+}
+Assets {
   Id: 14514750246421432694
   Name: "Button Page Slide Core 01 SFX"
   PlatformAssetType: 7
@@ -410,6 +419,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Gold_002"
+  }
+}
+Assets {
+  Id: 1152302030520335391
+  Name: "Boost"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Racing_Icon_020"
   }
 }
 Assets {
