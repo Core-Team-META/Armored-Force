@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1814707273787853473
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 567193264820089861
   Name: "Urban Fence Lock"
   PlatformAssetType: 1

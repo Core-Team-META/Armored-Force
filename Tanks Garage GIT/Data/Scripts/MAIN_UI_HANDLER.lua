@@ -35,11 +35,7 @@ local TANK_STATS_BUTTON_ACTIVE = World.FindObjectByName("TANK_STATS_BUTTON_ACTIV
 local TANK_STATS_BUTTON_HOVER = World.FindObjectByName("TANK_STATS_BUTTON_HOVER")
 
 local BUTTON_AXIS = World.FindObjectByName("BUTTON_AXIS")
-local BUTTON_AXIS_HOVER = World.FindObjectByName("BUTTON_AXIS_HOVER")
-local BUTTON_AXIS_ACTIVE = World.FindObjectByName("BUTTON_AXIS_ACTIVE")
 local BUTTON_ALLIES = World.FindObjectByName("BUTTON_ALLIES")
-local BUTTON_ALLIES_HOVER = World.FindObjectByName("BUTTON_ALLIES_HOVER")
-local BUTTON_ALLIES_ACTIVE = World.FindObjectByName("BUTTON_ALLIES_ACTIVE")
 
 local BUTTON_UPGRADE_ENGINE_HOVER = World.FindObjectByName("BUTTON_UPGRADE_ENGINE_HOVER")
 local BUTTON_UPGRADE_ENGINE_PRESSED = World.FindObjectByName("BUTTON_UPGRADE_ENGINE_PRESSED")
@@ -1268,60 +1264,21 @@ end
 ------------------------------------------------------------------------------------------
 ------ TECH_TREE ALLIES & AXIS CHANGER
 function CLICKED_BUTTON_ALLIES(BUTTON_ALLIES)
-	if BUTTON_ALLIES_ACTIVE.visibility == Visibility.FORCE_OFF then
 	ALLIES_TANKS.visibility = Visibility.FORCE_ON
 	AXIS_TANKS.visibility = Visibility.FORCE_OFF
-	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_OFF
-	BUTTON_ALLIES_ACTIVE.visibility = Visibility.FORCE_ON
-	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_OFF
-	BUTTON_AXIS_ACTIVE.visibility = Visibility.FORCE_OFF
 	World.FindObjectByName("AlliesTanksPortalImages").visibility = Visibility.INHERIT
 	World.FindObjectByName("AxisTanksPortalImages").visibility = Visibility.FORCE_OFF
 	SFX_CLICK:Play()
-	end
-end
-
-function HOVERED_BUTTON_ALLIES(BUTTON_ALLIES)
-	if BUTTON_ALLIES_ACTIVE.visibility == Visibility.FORCE_OFF then
-	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_ON
-	SFX_HOVER:Play()
-	end
-end
-
-function UNHOVERED_BUTTON_ALLIES(BUTTON_ALLIES)
-	if BUTTON_ALLIES_ACTIVE.visibility == Visibility.FORCE_OFF then
-	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_OFF
-	SFX_UNHOVERED:Play()
-	end
 end
 
 function CLICKED_BUTTON_AXIS(BUTTON_AXIS)
-	if BUTTON_AXIS_ACTIVE.visibility == Visibility.FORCE_OFF then
 	ALLIES_TANKS.visibility = Visibility.FORCE_OFF
 	AXIS_TANKS.visibility = Visibility.FORCE_ON
-	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_OFF
-	BUTTON_AXIS_ACTIVE.visibility = Visibility.FORCE_ON
-	BUTTON_ALLIES_HOVER.visibility = Visibility.FORCE_OFF
-	BUTTON_ALLIES_ACTIVE.visibility = Visibility.FORCE_OFF
 	World.FindObjectByName("AlliesTanksPortalImages").visibility = Visibility.FORCE_OFF
 	World.FindObjectByName("AxisTanksPortalImages").visibility = Visibility.INHERIT
 	SFX_CLICK:Play()
-	end
 end
 
-function HOVERED_BUTTON_AXIS(BUTTON_AXIS)
-	if BUTTON_AXIS_ACTIVE.visibility == Visibility.FORCE_OFF then
-	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_ON
-	SFX_HOVER:Play()
-	end
-end
-
-function UNHOVERED_BUTTON_AXIS(BUTTON_AXIS)
-	if BUTTON_AXIS_ACTIVE.visibility == Visibility.FORCE_OFF then
-	BUTTON_AXIS_HOVER.visibility = Visibility.FORCE_OFF
-	SFX_UNHOVERED:Play()
-	end
-end
 ------------------------------------------------------------------------------------------
 ------ TECH_TREE BUTTONS HANDLER
 function CLICKED_BUTTON_ALLIES_T1L(BUTTON_ALLIES_T1L)
@@ -3309,9 +3266,6 @@ BUTTON_UPGRADE_ENGINE.hoveredEvent:Connect(HOVERED_UPGRADE_ENGINE)
 BUTTON_UPGRADE_TURRET.hoveredEvent:Connect(HOVERED_UPGRADE_TURRET)
 BUTTON_UPGRADE_SHELL.hoveredEvent:Connect(HOVERED_UPGRADE_SHELL)
 
-BUTTON_ALLIES.hoveredEvent:Connect(HOVERED_BUTTON_ALLIES)
-BUTTON_AXIS.hoveredEvent:Connect(HOVERED_BUTTON_AXIS)
-
 BUTTON_TECHTREE_SHOP.hoveredEvent:Connect(HOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.hoveredEvent:Connect(HOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.hoveredEvent:Connect(HOVERED_ACHIEVEMENTS)
@@ -3365,9 +3319,6 @@ TANK_STATS_BUTTON.unhoveredEvent:Connect(UNHOVERED_TANK_STATS)
 BUTTON_UPGRADE_ENGINE.unhoveredEvent:Connect(UNHOVERED_UPGRADE_ENGINE)
 BUTTON_UPGRADE_TURRET.unhoveredEvent:Connect(UNHOVERED_UPGRADE_TURRET)
 BUTTON_UPGRADE_SHELL.unhoveredEvent:Connect(UNHOVERED_UPGRADE_SHELL)
-
-BUTTON_ALLIES.unhoveredEvent:Connect(UNHOVERED_BUTTON_ALLIES)
-BUTTON_AXIS.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS)
 
 BUTTON_TECHTREE_SHOP.unhoveredEvent:Connect(UNHOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.unhoveredEvent:Connect(UNHOVERED_PREMIUM_SHOP)
