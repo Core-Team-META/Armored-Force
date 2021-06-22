@@ -126,12 +126,41 @@ function StateSTART(manager, propertyName)
 			
 end
 
+function SubmitScores(player)
+
+	local currentKills = player:GetResource("MatchKills")
+	local recordedKills = player:GetResource("MatchTanksDestroyed")
+	
+	if currentKills > recordedKills then
+		 player:SetResource("MatchDamageDealt", currentKills)
+		 Leaderboards.SubmitPlayerScore(MTD_LEADERBOARD, player, currentKills)
+	end
+	
+	local lifetimeKills = player:GetResource("LifetimeTanksDestroyed")
+	Leaderboards.SubmitPlayerScore(LTTD_LEADERBOARD, player, lifetimeKills)
+	
+	local currentMatchDamage = player:GetResource("TankDamage")
+	local recordedMatchDamage = player:GetResource("MatchDamageDealt")
+	
+	if currentMatchDamage > recordedMatchDamage then
+		 player:SetResource("MatchDamageDealt", currentMatchDamage)
+		 Leaderboards.SubmitPlayerScore(MDD_LEADERBOARD, player, currentMatchDamage)
+	end
+	
+	local lifetimeDamage = player:GetResource("LifetimeDamageDealt")
+	Leaderboards.SubmitPlayerScore(LTDD_LEADERBOARD, player, lifetimeDamage)
+
+
+end
+
 function SaveStatistics()
 
 	for x, p in pairs(Game.GetPlayers()) do
 	
 		--print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP for " .. UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())))
 		--print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
+		
+		SubmitScores(p)
 		
 		p:AddResource(UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())), CalculateTotalXP(p))
 		p:AddResource(CONSTANTS_API.XP, CalculateTotalXP(p))
@@ -152,7 +181,8 @@ function SaveStatistics()
 				
 		p:SetResource(CONSTANTS_API.COMBAT_STATS.AVERAGE_DAMAGE, math.ceil(p:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES) / p:GetResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES)))
 		
-		ResourceCheck(p)
+		--ResourceCheck(p)
+		Task.Wait(0.1)
 	end
 	
 end
@@ -164,18 +194,7 @@ function OnDamagedRecord(player, damage)
 			damage.sourcePlayer:AddResource("TankDamage", damage.amount)
 			damage.sourcePlayer:AddResource("LifetimeDamageDealt", damage.amount)
 			damage.sourcePlayer:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES, damage.amount)
-			
-			local currentMatchDamage = damage.sourcePlayer:GetResource("TankDamage")
-			local recordedMatchDamage = damage.sourcePlayer:GetResource("MatchDamageDealt")
-			
-			if currentMatchDamage > recordedMatchDamage then
-				 damage.sourcePlayer:SetResource("MatchDamageDealt", currentMatchDamage)
-				 Leaderboards.SubmitPlayerScore(MDD_LEADERBOARD, damage.sourcePlayer, currentMatchDamage)
-			end
-			
-			local lifetimeDamage = damage.sourcePlayer:GetResource("LifetimeDamageDealt")
-			Leaderboards.SubmitPlayerScore(LTTD_LEADERBOARD, damage.sourcePlayer, lifetimeDamage)
-			
+						
 			local damageDealtPercentage = damage.amount / player.maxHitPoints
 
 			local tankId = player.serverUserData.currentTankData.id
@@ -227,18 +246,7 @@ function OnDiedRecord(player, damage)
 			damage.sourcePlayer:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS, 1)
 			damage.sourcePlayer:AddResource("LifetimeTanksDestroyed", 1)
 			damage.sourcePlayer:AddResource("MatchKills", 1)
-			
-			local currentKills = damage.sourcePlayer:GetResource("MatchKills")
-			local recordedKills = damage.sourcePlayer:GetResource("MatchTanksDestroyed")
-			
-			if currentKills > recordedKills then
-				 damage.sourcePlayer:SetResource("MatchDamageDealt", currentKills)
-				 Leaderboards.SubmitPlayerScore(MTD_LEADERBOARD, damage.sourcePlayer, currentKills)
-			end
-			
-			local lifetimeKills = damage.sourcePlayer:GetResource("LifetimeTanksDestroyed")
-			Leaderboards.SubmitPlayerScore(LTDD_LEADERBOARD, damage.sourcePlayer, lifetimeKills)
-			
+						
 			if damage.sourcePlayer:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED) < damage.sourcePlayer.kills then
 				damage.sourcePlayer:SetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED, damage.sourcePlayer.kills)
 			end

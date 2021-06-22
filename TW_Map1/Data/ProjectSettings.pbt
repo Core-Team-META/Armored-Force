@@ -7,8 +7,8 @@ LeaderboardConfigs {
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "TotalDestroyed"
-    Id: "27CB45FA531F565B"
+    Name: "TWR"
+    Id: "D908C5EBFB173742"
     EntryLimit: 20
   }
   Config {
@@ -19,8 +19,8 @@ LeaderboardConfigs {
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "TotalDamage"
-    Id: "1D2DB228D64195F4"
+    Name: "TDG"
+    Id: "4F6B4C4864FDA853"
     EntryLimit: 20
   }
   Config {
@@ -31,8 +31,8 @@ LeaderboardConfigs {
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "TotalWinRate"
-    Id: "93F89442E6473534"
+    Name: "TD"
+    Id: "7D56BFDFF2C83864"
     EntryLimit: 20
   }
   Config {
@@ -43,8 +43,8 @@ LeaderboardConfigs {
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "MatchDestroyed"
-    Id: "61AF5892A77B70F0"
+    Name: "MDG"
+    Id: "867D7D641B425176"
     EntryLimit: 20
   }
   Config {
@@ -55,8 +55,8 @@ LeaderboardConfigs {
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "MatchDamage"
-    Id: "9BE050A61E8A639A"
+    Name: "MD"
+    Id: "2ABB942B0C4BE711"
     EntryLimit: 20
   }
 }
