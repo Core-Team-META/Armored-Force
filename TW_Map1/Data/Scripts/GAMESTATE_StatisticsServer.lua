@@ -8,6 +8,12 @@ local LTTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDestroyed")
 local LTDD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalDamage")
 local LTWR_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalWinRate")
 
+local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
+local STORAGE_LEADERBOARD = KEYS:GetCustomProperty("Leaderboards")
+
+
+
+
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local victoryComponent = script:GetCustomProperty("GAMESTATE_VictoryComponent"):WaitForObject()
 
@@ -159,20 +165,30 @@ function SaveStatistics()
 	
 		--print(p.name .. " earned " .. tostring(CalculateTotalXP(p)) .. " XP for " .. UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())))
 		--print(p.name .. " earned " .. tostring(CalculateTotalCurrency(p)) .. " currency")
-		
+
+		local tankRPString = UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource()))
+		local totalXp = CalculateTotalXP(p)
+		local baseXP = drawXPValue
+		local baseCurrency = drawCurrencyValue
+		local totalCurrency = CalculateTotalCurrency(p)
+
 		SubmitScores(p)
 		
-		p:AddResource(UTIL_API.GetTankRPString(p:GetResource(CONSTANTS_API.GetEquippedTankResource())), CalculateTotalXP(p))
-		p:AddResource(CONSTANTS_API.XP, CalculateTotalXP(p))
-		p:AddResource("Silver", CalculateTotalCurrency(p))
+		p:AddResource(tankRPString, totalXp)
+		p:AddResource(CONSTANTS_API.XP, totalXp)
+		p:AddResource("Silver", totalCurrency)
 		
 		if p.team == winner then
 			--print(p.name .. " won, adding to Total Wins")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS, 1)
 			TrackDailyChallenge(p, "Wins", 1)
+			baseXP = victoryXPValue
+			baseCurrency= victoryCurrencyValue
 		elseif winner > 0 then
 			--print(p.name .. " lost, adding to Total Losses")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)	
+			baseXP = lossXPValue
+			baseCurrency = lossCurrencyValue
 		else
 			--print(p.name .. " had a draw")
 		end
@@ -181,6 +197,23 @@ function SaveStatistics()
 				
 		p:SetResource(CONSTANTS_API.COMBAT_STATS.AVERAGE_DAMAGE, math.ceil(p:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES) / p:GetResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES)))
 		
+
+		local modifier = 1
+		if(UTIL_API.UsingPremiumTank(tonumber(p.serverUserData.currentTankData.id))) then
+			modifier = 2
+		end
+
+		local tempTbl = {}
+		tempTbl["XP"] = totalXp
+		tempTbl["BaseXP"] = baseXP
+		tempTbl["TankString"] = tankRPString
+		tempTbl["Silver"] = totalCurrency
+		tempTbl["Kills"] = p.kills
+		tempTbl["MatchEndHP"] = p:GetResource("MatchEndHP")
+		tempTbl["MaxHP"] = p.maxHitPoints
+		tempTbl["DamageTracker"] = p:GetResource("DamageTracker")
+		tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker")
+
 		--ResourceCheck(p)
 		Task.Wait(0.1)
 	end

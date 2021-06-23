@@ -1,5 +1,5 @@
 Assets {
-  Id: 12680090038369995929
+  Id: 15380404744105278529
   Name: "Player_Currency_UI"
   PlatformAssetType: 3
   TextAsset {

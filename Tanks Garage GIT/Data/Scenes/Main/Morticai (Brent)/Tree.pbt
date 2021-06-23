@@ -1,8 +1,8 @@
 Name: "Morticai (Brent)"
 RootId: 8043684082903823001
 Objects {
-  Id: 6357500819481696637
-  Name: "UI Managment"
+  Id: 11158258478903046729
+  Name: "UI"
   Transform {
     Location {
     }
@@ -29,7 +29,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "UI Managment"
+    FilePartitionName: "UI"
   }
 }
 Objects {

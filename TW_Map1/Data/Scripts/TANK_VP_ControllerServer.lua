@@ -384,7 +384,7 @@ end
 function ProjectileExpired(expiredProjectile)
 
 	local activeExplosion = World.SpawnAsset(explosion, {position = expiredProjectile:GetWorldPosition()})
-	activeExplosion.lifeSpan = 3
+	activeExplosion.lifeSpan = 6
 	
 end
 

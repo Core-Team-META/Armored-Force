@@ -5993,6 +5993,12 @@ Objects {
         Id: 2269572116006940077
       }
     }
+    Overrides {
+      Name: "cs:Keys"
+      ObjectReference {
+        SelfId: 8053548290070406507
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

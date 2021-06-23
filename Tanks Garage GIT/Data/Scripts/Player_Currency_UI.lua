@@ -1,5 +1,4 @@
 --#FIXME This can be moved to a UI Manager in the future
-
 local CONST = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
@@ -10,10 +9,10 @@ local AMOUNT_RP = script:GetCustomProperty("AMOUNT_RP"):WaitForObject()
 
 local listener
 local currencyInfo = {}
+
 currencyInfo[CONST.SILVER] = AMOUNT_SILVER
 currencyInfo[CONST.GOLD] = AMOUNT_GOLD
 currencyInfo[CONST.FREERP] = AMOUNT_RP
-
 
 function Init()
     for _, key in ipairs(CONST.CURRENCY) do
@@ -26,7 +25,6 @@ function Init()
         end
     end
 end
-
 
 function OnResourceChanged(player, key, value)
     print(key, value, currencyInfo[key])
