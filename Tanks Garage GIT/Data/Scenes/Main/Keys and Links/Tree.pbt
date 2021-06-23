@@ -80,8 +80,9 @@ Objects {
     Overrides {
       Name: "cs:Leaderboards"
       NetReference {
+        Key: "93dcd54767a8410a9a42b348c43e4e80"
         Type {
-          Value: "mc:enetreferencetype:unknown"
+          Value: "mc:enetreferencetype:sharedpersistence"
         }
       }
     }

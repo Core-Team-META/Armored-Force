@@ -359,11 +359,11 @@ function Tick(deltaTime)
 		TANKUPGRADE_DENY_timeRemaining = CoreMath.Clamp(TANKUPGRADE_DENY_timeRemaining - deltaTime, 0, TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		local TURRET_DENY_newPosition = 0
 		if TURRET_DENY_targetDestination == TANKUPGRADE_DENY_OPEN_DROPDOWN_Y  then
-			TURRET_DENY_newPosition = CoreMath.Lerp(TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, TURRET_DENY_OPEN_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
+			TURRET_DENY_newPosition = CoreMath.Lerp(TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y, TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		else
-			TURRET_DENY_newPosition = CoreMath.Lerp(TURRET_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
+			TURRET_DENY_newPosition = CoreMath.Lerp(TANKUPGRADE_DENY_OPEN_DROPDOWN_Y, TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y, (TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME)
 		end
-		TURRET_DENY_CONFIRM.y = TURRET_DENY_newPosition
+		TURRET_UPGRADE_DENY.y = TURRET_DENY_newPosition
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			TURRET_DENY_isMoving = false
 		end
@@ -737,7 +737,9 @@ end
 
 -- TOGGLE TURRET_UPGRADE_DENY OPEN
 function TOGGLE_TURRET_UPGRADE_DENY_OPEN()
-	if TURRET_UPGRADE_DENY.y == TANKUPGRADE_DENY_OPEN_DROPDOWN_Y  then
+	print(TURRET_UPGRADE_DENY.y)
+	print(TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y)
+	if TURRET_UPGRADE_DENY.y == TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y  then
 		SFX_SLIDE_DOWN:Play()
 		if TURRET_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
 			TURRET_DENY_targetDestination = TANKUPGRADE_DENY_OPEN_DROPDOWN_Y 
@@ -3202,6 +3204,18 @@ function NavigateToPremiumShop()
 	ACTIVE_HEAD_MENU = 1
 end
 
+function UpgradeFailedSlide(part)
+	if(part == "Weapon") then
+		
+		print(TANKUPGRADE_DENY_timeRemaining)
+		TOGGLE_TURRET_UPGRADE_DENY_OPEN()
+	elseif(part == "Armor") then
+		TOGGLE_SHELL_UPGRADE_DENY_OPEN()
+	elseif(part == "Engine") then
+		TOGGLE_ENGINE_UPGRADE_DENY_OPEN()
+	end	
+end
+
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS
@@ -3372,3 +3386,4 @@ Events.Connect("WeaponUpgradeSuccessful", ShowWeaponUpgrade)
 Events.Connect("ArmorUpgradeSuccessful", ShowArmorUpgrade)
 Events.Connect("EngineUpgradeSuccessful", ShowEngineUpgrade)
 Events.Connect("NavigateToPremiumShop", NavigateToPremiumShop)
+Events.Connect("UpgradeFailedSlide", UpgradeFailedSlide)
