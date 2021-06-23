@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16620715433808296829
+  Name: "Lens - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
+  }
+}
+Assets {
   Id: 16587759780299340145
   Name: "Cube - Rounded Bottom-Aligned"
   PlatformAssetType: 1
@@ -293,15 +302,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_waterflow_ref"
-  }
-}
-Assets {
-  Id: 4284415134293720527
-  Name: "Pyramid - 8-Sided Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_eighsided_truncated_001"
   }
 }
 Assets {
