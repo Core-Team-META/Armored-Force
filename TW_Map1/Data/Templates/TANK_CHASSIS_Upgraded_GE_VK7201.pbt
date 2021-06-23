@@ -43,8 +43,8 @@ Assets {
           Mass: 60000
           PhysicsBodyScale {
             X: 8.5
-            Y: 3.2
-            Z: 1.8
+            Y: 6
+            Z: 2.5
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -59,7 +59,7 @@ Assets {
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 619
-          TireFriction: 20
+          TireFriction: 10
           CenterOfMassOFfset {
             Z: 20
           }
@@ -67,16 +67,16 @@ Assets {
           CoastBrakeStrength: 61.9
           Tank {
             LeftTreadRadius: 70
-            LeftTreadWidth: 120
+            LeftTreadWidth: 80
             RightTreadRadius: 70
-            RightTreadWidth: 120
+            RightTreadWidth: 80
             LeftTreadOffset {
-              X: -5
+              X: -30
               Y: -235
               Z: 70
             }
             RightTreadOffset {
-              X: -5
+              X: -30
               Y: 235
               Z: 70
             }

@@ -68,7 +68,8 @@ Assets {
         Name: "ExtraFX"
         Transform {
           Location {
-            Z: 166.201935
+            X: 83.3333435
+            Z: 166.20195
           }
           Rotation {
           }
@@ -739,7 +740,7 @@ Assets {
         Name: "Hull"
         Transform {
           Location {
-            X: -39.7417755
+            X: 43.5915604
             Z: 168.468872
           }
           Rotation {
@@ -22170,7 +22171,7 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: -23.2018585
+            X: 60.1314926
             Z: 279.023071
           }
           Rotation {
@@ -30463,6 +30464,7 @@ Assets {
         Name: "Tank Camera"
         Transform {
           Location {
+            X: 83.3333435
             Z: 490
           }
           Rotation {
@@ -30511,7 +30513,8 @@ Assets {
         Name: "Sniper Camera"
         Transform {
           Location {
-            Z: 357.224121
+            X: 83.3333435
+            Z: 357.224152
           }
           Rotation {
           }

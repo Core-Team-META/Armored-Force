@@ -40,7 +40,7 @@ Assets {
         Name: "HullHitbox"
         Transform {
           Location {
-            X: -39.7417755
+            X: 43.5915604
             Z: 168.468872
           }
           Rotation {
@@ -524,7 +524,7 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: -23.2018585
+            X: 60.1314926
             Z: 279.023071
           }
           Rotation {

@@ -294,6 +294,9 @@ Objects {
       RespawnMode_v2 {
         Value: "mc:erespawnmode:roundrobin"
       }
+      SpawnMode {
+        Value: "mc:erespawnmode:roundrobin"
+      }
     }
   }
 }

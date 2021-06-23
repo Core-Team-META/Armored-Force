@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_SKIN_Default_FR_AMX50"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 4781671109827199097

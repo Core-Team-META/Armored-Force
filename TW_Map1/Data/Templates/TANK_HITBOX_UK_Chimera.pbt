@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_UK_Chimera"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 4781671109827199097
@@ -114,14 +114,14 @@ Assets {
         Transform {
           Location {
             X: -35
-            Z: -90
+            Z: -79.1667
           }
           Rotation {
           }
           Scale {
             X: 3.88499975
             Y: 4.72105312
-            Z: 1.1
+            Z: 1.2
           }
         }
         ParentId: 16715225012181031923
@@ -173,8 +173,8 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 205
-            Z: -80
+            X: 205.000015
+            Z: -69.1666794
           }
           Rotation {
             Pitch: -5
@@ -182,7 +182,7 @@ Assets {
           Scale {
             X: 2.4
             Y: 4.6
-            Z: 1.1
+            Z: 1.2
           }
         }
         ParentId: 16715225012181031923
@@ -234,14 +234,14 @@ Assets {
         Transform {
           Location {
             X: -320
-            Z: -90
+            Z: -79.1667
           }
           Rotation {
           }
           Scale {
             X: 2.10000014
             Y: 4.6
-            Z: 1.1
+            Z: 1.2
           }
         }
         ParentId: 16715225012181031923
@@ -294,14 +294,14 @@ Assets {
         Transform {
           Location {
             X: -35
-            Z: -90
+            Z: -79.1667
           }
           Rotation {
           }
           Scale {
             X: 3.88499975
             Y: 4.72105312
-            Z: 1.1
+            Z: 1.2
           }
         }
         ParentId: 14522498248367197329
@@ -338,8 +338,8 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 205
-            Z: -80
+            X: 205.000015
+            Z: -69.1666794
           }
           Rotation {
             Pitch: -5
@@ -347,7 +347,7 @@ Assets {
           Scale {
             X: 2.4
             Y: 4.6
-            Z: 1.1
+            Z: 1.2
           }
         }
         ParentId: 14522498248367197329
@@ -385,14 +385,14 @@ Assets {
         Transform {
           Location {
             X: -320
-            Z: -90
+            Z: -79.1667
           }
           Rotation {
           }
           Scale {
             X: 2.10000014
             Y: 4.6
-            Z: 1.1
+            Z: 1.2
           }
         }
         ParentId: 14522498248367197329
