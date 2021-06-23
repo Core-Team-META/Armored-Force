@@ -139,6 +139,14 @@ function Init()
             propertyTbl[key] = UTIL.ConvertStringToTable(value)
         end
     end
+
+    Task.Wait(3)
+    for key, value in pairs(NETWORKED:GetCustomProperties()) do
+        if key ~= "Keys" and value ~= "" then
+            propertyTbl[key] = UTIL.ConvertStringToTable(value)
+        end
+    end
+    BuildMatchLeaderBoards()
 end
 
 function OnNetworkChanged(object, string)
@@ -153,10 +161,3 @@ TOTAL_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 MATCH_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 NETWORKED.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
 Init()
-Task.Wait(3)
-for key, value in pairs(NETWORKED:GetCustomProperties()) do
-    if key ~= "Keys" and value ~= "" then
-        propertyTbl[key] = UTIL.ConvertStringToTable(value)
-    end
-end
-BuildMatchLeaderBoards()
