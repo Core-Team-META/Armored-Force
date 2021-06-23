@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_US_T110"
         Transform {
           Scale {
-            X: 1
+            X: 1.2
             Y: 1
             Z: 1
           }
@@ -42,7 +42,7 @@ Assets {
           }
           Mass: 58000
           PhysicsBodyScale {
-            X: 8
+            X: 8.5
             Y: 6
             Z: 2
           }
@@ -59,7 +59,7 @@ Assets {
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 20
+          TireFriction: 10
           CenterOfMassOFfset {
             X: -60
             Z: 20
@@ -68,9 +68,9 @@ Assets {
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 60
-            LeftTreadWidth: 60
+            LeftTreadWidth: 100
             RightTreadRadius: 60
-            RightTreadWidth: 60
+            RightTreadWidth: 100
             LeftTreadOffset {
               X: -60
               Y: -250
