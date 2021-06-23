@@ -4474,7 +4474,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1680
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -4813,7 +4813,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1480
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -5152,7 +5152,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1360
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -5491,7 +5491,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1240
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -5830,7 +5830,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1050
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -6169,7 +6169,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 930
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -6508,7 +6508,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 810
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -6847,7 +6847,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 620
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -7186,7 +7186,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1480
-        Y: 650
+        Y: 680
       }
     }
   }
@@ -7525,7 +7525,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1240
-        Y: 650
+        Y: 680
       }
     }
   }
@@ -7864,7 +7864,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 810
-        Y: 650
+        Y: 680
       }
     }
   }
@@ -8203,7 +8203,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1680
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -8542,7 +8542,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1050
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -8881,7 +8881,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 930
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -9220,7 +9220,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 620
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -9559,7 +9559,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 620
-        Y: 170
+        Y: 200
       }
     }
   }
@@ -9898,7 +9898,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1680
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -10237,7 +10237,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1480
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -10576,7 +10576,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1360
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -10915,7 +10915,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1240
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -11254,7 +11254,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1050
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -11589,7 +11589,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 930
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -11928,7 +11928,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 810
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -12267,7 +12267,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 620
-        Y: 880
+        Y: 910
       }
     }
   }
@@ -12606,7 +12606,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1480
-        Y: 650
+        Y: 680
       }
     }
   }
@@ -12941,7 +12941,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1240
-        Y: 650
+        Y: 680
       }
     }
   }
@@ -13280,7 +13280,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 810
-        Y: 650
+        Y: 680
       }
     }
   }
@@ -13619,7 +13619,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1680
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -13958,7 +13958,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 1050
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -14297,7 +14297,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 930
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -14636,7 +14636,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 620
-        Y: 410
+        Y: 440
       }
     }
   }
@@ -14975,7 +14975,7 @@ Objects {
       Name: "cs:PositionOffset"
       Vector2 {
         X: 620
-        Y: 170
+        Y: 200
       }
     }
   }
@@ -24994,7 +24994,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25005,7 +25005,7 @@ Objects {
   Control {
     Width: 500
     Height: 180
-    UIY: -100
+    UIY: -151.098145
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

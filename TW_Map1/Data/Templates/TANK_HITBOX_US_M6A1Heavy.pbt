@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_US_M6A1Heavy"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 4781671109827199097

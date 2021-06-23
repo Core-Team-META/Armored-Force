@@ -40,11 +40,11 @@ Assets {
           }
           Camera {
           }
-          Mass: 50000
+          Mass: 45000
           PhysicsBodyScale {
             X: 8
-            Y: 4
-            Z: 1.5
+            Y: 6
+            Z: 2.5
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -70
-            Z: 80
+            Z: 50
           }
           MaxSpeed: 877
           AccelerationRate: 400
@@ -61,23 +61,24 @@ Assets {
           BrakeStrength: 1
           TireFriction: 20
           CenterOfMassOFfset {
+            X: -70
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 60
-            LeftTreadWidth: 80
+            LeftTreadWidth: 60
             RightTreadRadius: 60
-            RightTreadWidth: 80
+            RightTreadWidth: 60
             LeftTreadOffset {
               X: -70
-              Y: -220
+              Y: -250
               Z: 60
             }
             RightTreadOffset {
               X: -70
-              Y: 220
+              Y: 250
               Z: 60
             }
             HandbrakeBinding {

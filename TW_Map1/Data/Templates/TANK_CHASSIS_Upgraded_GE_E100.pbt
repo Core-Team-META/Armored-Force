@@ -43,8 +43,8 @@ Assets {
           Mass: 60000
           PhysicsBodyScale {
             X: 9
-            Y: 4
-            Z: 2.2
+            Y: 6.5
+            Z: 3
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -30
-            Z: 70
+            Z: 50
           }
           MaxSpeed: 950
           AccelerationRate: 400
@@ -61,6 +61,7 @@ Assets {
           BrakeStrength: 563
           TireFriction: 10
           CenterOfMassOFfset {
+            X: -30
             Z: 20
           }
           GravityScale: 1

@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_SKIN_Default_FR_BatChat25T"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.30000007
+            Y: 1.30000007
+            Z: 1.30000007
           }
         }
         ParentId: 4781671109827199097

@@ -7,7 +7,7 @@ Assets {
       RootId: 6627506282493155443
       Objects {
         Id: 6627506282493155443
-        Name: "06TANK_CHASSIS_Default_USSR_IS3"
+        Name: "TANK_CHASSIS_Default_USSR_IS3"
         Transform {
           Scale {
             X: 1
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 50000
           PhysicsBodyScale {
-            X: 5
-            Y: 3.5
-            Z: 1
+            X: 8
+            Y: 6
+            Z: 2.2
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -70
-            Z: 105
+            Z: 50
           }
           MaxSpeed: 800
           AccelerationRate: 400
@@ -61,23 +61,25 @@ Assets {
           BrakeStrength: 1
           TireFriction: 20
           CenterOfMassOFfset {
+            X: -70
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 100
-            RightTreadRadius: 70
-            RightTreadWidth: 100
+            LeftTreadRadius: 60
+            LeftTreadWidth: 70
+            RightTreadRadius: 60
+            RightTreadWidth: 70
             LeftTreadOffset {
-              Y: -225
-              Z: 67
+              X: -70
+              Y: -250
+              Z: 60
             }
             RightTreadOffset {
               X: -25
-              Y: 225
-              Z: 67
+              Y: 250
+              Z: 60
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

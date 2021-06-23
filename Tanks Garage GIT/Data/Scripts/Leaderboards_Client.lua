@@ -5,6 +5,12 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local LEADERBOARDS_MATCH_CONTAINER = script:GetCustomProperty("LEADERBOARDS_MATCH_CONTAINER"):WaitForObject()
 local LEADERBOARDS_TOTAL_CONTAINER = script:GetCustomProperty("LEADERBOARDS_TOTAL_CONTAINER"):WaitForObject()
 
+local MTD_SCORE = script:GetCustomProperty("MTD_SCORE"):WaitForObject()
+local MDD_SCORE = script:GetCustomProperty("MDD_SCORE"):WaitForObject()
+local LTTD_SCORE = script:GetCustomProperty("LTTD_SCORE"):WaitForObject()
+local LTDD_SCORE = script:GetCustomProperty("LTDD_SCORE"):WaitForObject()
+local LTWR_RATE = script:GetCustomProperty("LTWR_RATE"):WaitForObject()
+
 local TOTAL_BUTTON = script:GetCustomProperty("TOTAL_BUTTON"):WaitForObject()
 local MATCH_BUTTON = script:GetCustomProperty("MATCH_BUTTON"):WaitForObject()
 
@@ -85,7 +91,6 @@ local function CreateEntries(leaderboards, parent)
 end
 
 local function BuildMatchLeaderBoards()
-
     for _, panel in pairs(leaderBoards.match.parentPanels) do
         DestroyChildren(panel)
     end
@@ -94,7 +99,6 @@ local function BuildMatchLeaderBoards()
 end
 
 local function BuildTotalLeaderBoards()
-
     for _, panel in pairs(leaderBoards.total.parentPanels) do
         DestroyChildren(panel)
     end
@@ -115,6 +119,11 @@ function ToggleLeaderboards(button)
         LEADERBOARDS_MATCH_CONTAINER.visibility = Visibility.FORCE_ON
         leaderBoards.match.active.visibility = Visibility.FORCE_ON
     end
+    MTD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("MatchTanksDestroyed")
+    MDD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("MatchDamageDealt")
+    LTTD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeTanksDestroyed")
+    LTDD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeDamageDealt")
+    LTWR_RATE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeWinrate")
 end
 
 function Init()
@@ -130,21 +139,25 @@ function Init()
             propertyTbl[key] = UTIL.ConvertStringToTable(value)
         end
     end
+
+    Task.Wait(3)
+    for key, value in pairs(NETWORKED:GetCustomProperties()) do
+        if key ~= "Keys" and value ~= "" then
+            propertyTbl[key] = UTIL.ConvertStringToTable(value)
+        end
+    end
+    BuildMatchLeaderBoards()
 end
 
 function OnNetworkChanged(object, string)
-    local data = object:GetCustomProperty(string)
-    tanksDestroyed = UTIL.ConvertStringToTable(data)
+    for key, value in pairs(NETWORKED:GetCustomProperties()) do
+        if key ~= "Keys" and value ~= "" then
+            propertyTbl[key] = UTIL.ConvertStringToTable(value)
+        end
+    end
 end
 
 TOTAL_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 MATCH_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 NETWORKED.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
 Init()
-Task.Wait(3)
-for key, value in pairs(NETWORKED:GetCustomProperties()) do
-    if key ~= "Keys" and value ~= "" then
-        propertyTbl[key] = UTIL.ConvertStringToTable(value)
-    end
-end
-BuildMatchLeaderBoards()

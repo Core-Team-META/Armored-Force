@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_US_T110"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -120,7 +120,7 @@ Assets {
           }
           Scale {
             X: 5.5
-            Y: 4.4
+            Y: 6.02105331
             Z: 1.7
           }
         }
@@ -173,16 +173,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 325
-            Z: -40
+            X: 325.000031
+            Z: -20.4545593
           }
           Rotation {
-            Pitch: -30
           }
           Scale {
-            X: 1.80000007
-            Y: 3.8
-            Z: 1.4
+            X: 1.75
+            Y: 6
+            Z: 2
           }
         }
         ParentId: 626565722536751385
@@ -240,7 +239,7 @@ Assets {
           }
           Scale {
             X: 2.4
-            Y: 3.8
+            Y: 5.99999857
             Z: 1.2
           }
         }
@@ -300,8 +299,8 @@ Assets {
           }
           Scale {
             X: 5.5
-            Y: 4.4
-            Z: 1.7
+            Y: 6.25
+            Z: 1.75000012
           }
         }
         ParentId: 2889436416242818742
@@ -338,16 +337,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 325
-            Z: -40
+            X: 290.908966
+            Z: -20.4545593
           }
           Rotation {
-            Pitch: -30
           }
           Scale {
-            X: 1.80000007
-            Y: 3.8
-            Z: 1.4
+            X: 1.75
+            Y: 5.99999905
+            Z: 2
           }
         }
         ParentId: 2889436416242818742
@@ -384,14 +382,14 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -380
-            Z: 15
+            X: -400
+            Z: 14.999999
           }
           Rotation {
           }
           Scale {
             X: 2.4
-            Y: 3.8
+            Y: 5.99999857
             Z: 1.2
           }
         }
@@ -429,15 +427,15 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -25
-            Y: -220
+            X: -59.0908928
+            Y: -219.999985
             Z: -100
           }
           Rotation {
           }
           Scale {
-            X: 9.59999943
-            Y: 1.4
+            X: 9.3
+            Y: 1
             Z: 1.7
           }
         }
@@ -475,15 +473,15 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -25
-            Y: 220
+            X: -59.0908928
+            Y: 219.999985
             Z: -100
           }
           Rotation {
           }
           Scale {
-            X: 9.59999943
-            Y: 1.4
+            X: 9.3
+            Y: 1.39999986
             Z: 1.7
           }
         }

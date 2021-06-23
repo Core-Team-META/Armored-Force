@@ -708,14 +708,16 @@ function ToggleResearchSidePanel()
 	end
 end
 
-function ShowNotEnoughCurrencyMessage()
+function ShowNotEnoughCurrencyMessage(part)
 	-- TODO: Show a better message to the user
-	UI.PrintToScreen("You do not have enough " .. tankDetails.currency .. ".")
+	UI.PrintToScreen("You do not have enough Silver.")
+	Events.Broadcast("UpgradeFailedSlide", part)
 end
 
-function ShowNotEnoughRPMessage()
+function ShowNotEnoughRPMessage(part)
 	-- TODO: Show a better message to the user
 	UI.PrintToScreen("You do not have enough XP.")
+	Events.Broadcast("UpgradeFailedSlide", part)
 end
 
 ----------------------------------------------------------------------------------------------
@@ -937,7 +939,7 @@ function UpgradeWeapon()
 	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 	if(silver < tankDetails.weaponPurchaseCost) then
 		-- DEBUG
-		ShowNotEnoughCurrencyMessage()
+		ShowNotEnoughCurrencyMessage("Weapon")
 		return
 	end
 	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
@@ -945,7 +947,7 @@ function UpgradeWeapon()
 	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 	
 	if(tankRP + freeRP < tankDetails.weaponResearchCost) then
-		ShowNotEnoughRPMessage()
+		ShowNotEnoughRPMessage("Weapon")
 		return
 	end
 	
@@ -983,7 +985,7 @@ function UpgradeArmor()
 	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 	if(silver < tankDetails.armorPurchaseCost) then
 		-- DEBUG
-		ShowNotEnoughCurrencyMessage()
+		ShowNotEnoughCurrencyMessage("Armor")
 		return
 	end
 	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
@@ -991,7 +993,7 @@ function UpgradeArmor()
 	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 	
 	if(tankRP + freeRP < tankDetails.armorResearchCost) then
-		ShowNotEnoughRPMessage()
+		ShowNotEnoughRPMessage("Armor")
 		return
 	end
 	
@@ -1023,7 +1025,7 @@ function UpgradeEngine()
 	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 	if(silver < tankDetails.mobilityPurchaseCost) then
 		-- DEBUG
-		ShowNotEnoughCurrencyMessage()
+		ShowNotEnoughCurrencyMessage("Engine")
 		return
 	end
 	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
@@ -1031,7 +1033,7 @@ function UpgradeEngine()
 	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
 	
 	if(tankRP + freeRP < tankDetails.mobilityResearchCost) then
-		ShowNotEnoughRPMessage()
+		ShowNotEnoughRPMessage("Engine")
 		return
 	end
 	
@@ -1144,7 +1146,7 @@ function PopulateDetailsModal(tank)
 	tankDetails.tankResearchCost = tank:GetCustomProperty("ResearchCost")
 	tankDetails.tankPurchaseCost = tank:GetCustomProperty("PurchaseCost")
 	tankDetails.currency = tank:GetCustomProperty("PurchaseCurrencyName")
-	
+	print(tankDetails.currency)
 	if(tankDetails.purchasedTank) then		
 		upgradeTank.text = "Equip"
 		upgradeTankCost.visibility = Visibility.FORCE_OFF

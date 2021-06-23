@@ -15,14 +15,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11473089596160032213
+        ParentId: 16150101728613406469
         ChildIds: 7096559100792382456
         ChildIds: 16417584620691992837
         ChildIds: 17886830650930936242
         ChildIds: 10976287313934793703
         ChildIds: 9669389152347951419
         ChildIds: 4092048403921180824
-        ChildIds: 13907808345637679121
+        ChildIds: 15975379014221206389
         ChildIds: 12428661930301032294
         ChildIds: 8909343198819769012
         ChildIds: 7741329448545015106
@@ -491,8 +491,8 @@ Assets {
         }
       }
       Objects {
-        Id: 13907808345637679121
-        Name: "fanContinuous"
+        Id: 15975379014221206389
+        Name: "fan"
         Transform {
           Location {
             X: -85
@@ -502,51 +502,14 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5024972979897396711
-        ChildIds: 15975379014221206389
-        ChildIds: 6173357355698334674
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 15975379014221206389
-        Name: "fan"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
             X: 1.2008301
             Y: 1.2008301
             Z: 1.2008301
           }
         }
-        ParentId: 13907808345637679121
-        ChildIds: 6977407786119649891
-        ChildIds: 9553231945504095832
-        ChildIds: 17493898684466299282
-        ChildIds: 13312783224869580252
-        ChildIds: 4286161561792695928
-        ChildIds: 11407551041037028894
-        ChildIds: 14093293797008629772
-        WantsNetworking: true
+        ParentId: 5024972979897396711
+        ChildIds: 6173357355698334674
+        ChildIds: 9768905505731844755
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -560,6 +523,129 @@ Assets {
         }
       }
       Objects {
+        Id: 6173357355698334674
+        Name: "windmill2_anim"
+        Transform {
+          Location {
+            X: 63.242382
+            Y: -237.901825
+            Z: -794.385
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.832757115
+            Y: 0.832757115
+            Z: 0.832757115
+          }
+        }
+        ParentId: 15975379014221206389
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:fan"
+            ObjectReference {
+              SubObjectId: 14389246963224677202
+            }
+          }
+          Overrides {
+            Name: "cs:Ease3D"
+            AssetReference {
+              Id: 1869291580377666123
+            }
+          }
+          Overrides {
+            Name: "cs:fanContinuous"
+            ObjectReference {
+              SubObjectId: 9768905505731844755
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5044481199150460928
+          }
+        }
+      }
+      Objects {
+        Id: 9768905505731844755
+        Name: "fan_continuous"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15975379014221206389
+        ChildIds: 14389246963224677202
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14389246963224677202
+        Name: "fan"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 0.99999994
+          }
+        }
+        ParentId: 9768905505731844755
+        ChildIds: 6977407786119649891
+        ChildIds: 9553231945504095832
+        ChildIds: 17493898684466299282
+        ChildIds: 13312783224869580252
+        ChildIds: 4286161561792695928
+        ChildIds: 11407551041037028894
+        ChildIds: 14093293797008629772
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 6977407786119649891
         Name: "Cylinder - Chamfered Polished"
         Transform {
@@ -570,12 +656,12 @@ Assets {
             Roll: 89.9999542
           }
           Scale {
-            X: 0.49999997
-            Y: 0.49999997
+            X: 0.49999994
+            Y: 0.49999994
             Z: 3.75000024
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 14389246963224677202
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -634,9 +720,9 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: -63.4912643
-            Yaw: -146.298279
-            Roll: 149.169449
+            Pitch: -63.4912567
+            Yaw: -146.298248
+            Roll: 149.169418
           }
           Scale {
             X: 0.999999881
@@ -644,7 +730,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 14389246963224677202
         ChildIds: 12569794264461312773
         ChildIds: 13757670427909244744
         ChildIds: 13724416526551104842
@@ -1192,7 +1278,7 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: -14.3386955
+            Yaw: -14.3387146
           }
           Scale {
             X: 0.999999881
@@ -1200,7 +1286,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 14389246963224677202
         ChildIds: 12513953426272631868
         ChildIds: 17444890205711225569
         ChildIds: 11655110363842008551
@@ -1748,7 +1834,7 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: -165.661087
+            Yaw: -165.661072
             Roll: -179.999954
           }
           Scale {
@@ -1757,7 +1843,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 14389246963224677202
         ChildIds: 15375215624789384120
         ChildIds: 2660522274489777802
         ChildIds: 406724538320822838
@@ -2305,7 +2391,7 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: 54.9287224
+            Pitch: 54.9287071
             Yaw: -154.467941
             Roll: -158.647675
           }
@@ -2315,7 +2401,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 14389246963224677202
         ChildIds: 3158507566879390370
         ChildIds: 10109724967561527349
         ChildIds: 11628124779346213275
@@ -2863,9 +2949,9 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: -54.928627
-            Yaw: -25.5314941
-            Roll: 21.3518906
+            Pitch: -54.9286118
+            Yaw: -25.5314655
+            Roll: 21.3518753
           }
           Scale {
             X: 0.999999881
@@ -2873,7 +2959,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 14389246963224677202
         ChildIds: 8866652612626647420
         ChildIds: 15752974028524814739
         ChildIds: 9212178866845722238
@@ -3421,9 +3507,9 @@ Assets {
           Location {
           }
           Rotation {
-            Pitch: 63.491169
-            Yaw: -33.7014732
-            Roll: -30.8303661
+            Pitch: 63.4911804
+            Yaw: -33.7014885
+            Roll: -30.8303871
           }
           Scale {
             X: 0.999999881
@@ -3431,7 +3517,7 @@ Assets {
             Z: 0.999999881
           }
         }
-        ParentId: 15975379014221206389
+        ParentId: 14389246963224677202
         ChildIds: 6666644070301272070
         ChildIds: 139327300447171585
         ChildIds: 18209139474918878963
@@ -3969,60 +4055,6 @@ Assets {
               LinearDamping: 0.01
             }
             BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 6173357355698334674
-        Name: "windmill2_anim"
-        Transform {
-          Location {
-            X: 75.9433594
-            Y: -285.679688
-            Z: -953.921509
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13907808345637679121
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:fan"
-            ObjectReference {
-              SubObjectId: 15975379014221206389
-            }
-          }
-          Overrides {
-            Name: "cs:Ease3D"
-            AssetReference {
-              Id: 1869291580377666123
-            }
-          }
-          Overrides {
-            Name: "cs:fanContinuous"
-            ObjectReference {
-              SubObjectId: 13907808345637679121
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 5044481199150460928
           }
         }
       }

@@ -7,7 +7,7 @@ Assets {
       RootId: 17145847341972920585
       Objects {
         Id: 17145847341972920585
-        Name: "26TANK_CHASSIS_Upgraded_IT_FIAT6616"
+        Name: "TANK_CHASSIS_Upgraded_IT_FIAT6616"
         Transform {
           Scale {
             X: 1
@@ -44,9 +44,9 @@ Assets {
           }
           Mass: 2200
           PhysicsBodyScale {
-            X: 6
-            Y: 2.5
-            Z: 1.2
+            X: 9
+            Y: 4
+            Z: 1.7
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -54,7 +54,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            Z: 105
+            Z: 70
           }
           MaxSpeed: 2600
           AccelerationRate: 400
@@ -82,33 +82,33 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            FrontLeftWheelRadius: 85
-            FrontRightWheelRadius: 85
-            RearLeftWheelRadius: 85
-            RearRightWheelRadius: 85
-            FrontLeftWheelWidth: 70
-            FrontRightWheelWidth: 70
-            RearLeftWheelWidth: 70
-            RearRightWheelWidth: 70
+            FrontLeftWheelRadius: 110
+            FrontRightWheelRadius: 110
+            RearLeftWheelRadius: 110
+            RearRightWheelRadius: 110
+            FrontLeftWheelWidth: 80
+            FrontRightWheelWidth: 80
+            RearLeftWheelWidth: 80
+            RearRightWheelWidth: 80
             FrontLeftWheelOffset {
-              X: 272
-              Y: -180
-              Z: 85
+              X: 320
+              Y: -200
+              Z: 105
             }
             FrontRightWheelOffset {
-              X: 272
-              Y: 180
-              Z: 85
+              X: 320
+              Y: 200
+              Z: 105
             }
             RearLeftWheelOffset {
-              X: -245
-              Y: -180
-              Z: 85
+              X: -300
+              Y: -199.999969
+              Z: 105
             }
             RearRightWheelOffset {
-              X: -245
-              Y: 180
-              Z: 85
+              X: -300
+              Y: 200
+              Z: 105
             }
             TurningRadius: 1500
           }
@@ -154,16 +154,16 @@ Assets {
         Name: "Wheel"
         Transform {
           Location {
-            X: -246.307617
-            Y: 169.564087
-            Z: 85
+            X: -300
+            Y: 200
+            Z: 105
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 6422864050923033628
@@ -303,16 +303,16 @@ Assets {
         Name: "Wheel"
         Transform {
           Location {
-            X: -246.307617
-            Y: -169.563965
-            Z: 84.9991913
+            X: -300.000061
+            Y: -200
+            Z: 105
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 6422864050923033628
@@ -448,16 +448,16 @@ Assets {
         Name: "LeftSteeringWheel"
         Transform {
           Location {
-            X: 272.612305
-            Y: -169.563965
-            Z: 84.9991913
+            X: 320
+            Y: -200
+            Z: 105
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 6422864050923033628
@@ -624,16 +624,16 @@ Assets {
         Name: "RightSteeringWheel"
         Transform {
           Location {
-            X: 272.612305
-            Y: 169.564087
-            Z: 85
+            X: 320
+            Y: 200
+            Z: 105
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 6422864050923033628

@@ -202,7 +202,7 @@ function Tick()
 		
 	for x, child in ipairs(dailyChallenges:GetChildren()) do	
 		if localPlayer.clientUserData.CHALLENGES[x] and localPlayer.clientUserData.CHALLENGES[x].dueDate then
-			currentDueDate = os.date("!*t", localPlayer.clientUserData.CHALLENGES[x].dueDate)
+			currentDueDate = os.date("!*t", tonumber(localPlayer.clientUserData.CHALLENGES[x].dueDate))
 			currentDate =  os.date("!*t")
 						
 			if os.time(currentDueDate) - os.time(currentDate) > 0 then

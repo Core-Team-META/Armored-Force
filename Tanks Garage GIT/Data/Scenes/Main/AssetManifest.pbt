@@ -91,6 +91,19 @@ Assets {
   }
 }
 Assets {
+  Id: 11978237897467864443
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "93dcd54767a8410a9a42b348c43e4e80"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 10275389552133456967
   Name: "SoldierPack"
   PlatformAssetType: 24

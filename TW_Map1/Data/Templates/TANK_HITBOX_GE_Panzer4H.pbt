@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_GE_Panzer4H"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 4781671109827199097
@@ -174,16 +174,16 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 289.740295
-            Z: -2.7935791
+            X: 288.073608
+            Z: 8.03976631
           }
           Rotation {
             Pitch: -30
           }
           Scale {
-            X: 1.80000019
+            X: 1.99999988
             Y: 5.20000029
-            Z: 1
+            Z: 1.2
           }
         }
         ParentId: 7294987945268277251
@@ -340,16 +340,16 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 289.740295
-            Z: -2.7935791
+            X: 288.073608
+            Z: 8.03976631
           }
           Rotation {
             Pitch: -30
           }
           Scale {
-            X: 1.80000019
+            X: 1.99999988
             Y: 5.20000029
-            Z: 1
+            Z: 1.2
           }
         }
         ParentId: 11377192152912754335

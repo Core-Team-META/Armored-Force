@@ -197,6 +197,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9576447221174344611
+  Name: "Wispy Fog Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fog_volume_vfx"
+  }
+}
+Assets {
   Id: 8973805628172335992
   Name: "Stone Block Standard Broken"
   PlatformAssetType: 1

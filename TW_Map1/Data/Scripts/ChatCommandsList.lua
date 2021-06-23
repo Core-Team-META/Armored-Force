@@ -23,6 +23,27 @@ commands = {
         requireMessage = true,
         adminOnly = true
     },
+    
+    ["/tp"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	local playerName = CoreString.Trim(message, message)
+        	print(playerName)
+        	for _, p in ipairs(Game.GetPlayers()) do
+        		if string.find(p.name, playerName) then
+        			local vehicle = player.occupiedVehicle
+        			local otherVehicle = p.occupiedVehicle
+        			vehicle:SetWorldPosition(otherVehicle:GetWorldPosition() + Vector3.New(500, 500, 500))
+        		end
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "teleport to selected player. Format: /tp <otherPlayerName>",
+        requireMessage = false,
+        adminOnly = false
+    },
 
     ["/xp"] = {
         OnCommandCalledClient = function (player, message)
