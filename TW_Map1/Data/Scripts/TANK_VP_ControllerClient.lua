@@ -56,7 +56,7 @@ function CheckTankReady()
 	local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
 	
 	tankBodyServer = tankControllerServer:GetCustomProperty("ChassisReference"):WaitForObject()
-	tankBodyClient = World.SpawnAsset(GetSkin(driver), {parent = tankBodyServer})
+	tankBodyClient = World.SpawnAsset(GetSkin(driver), {parent = tankBodyServer, scale = Vector3.ONE * 1.2})
 	
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)

@@ -40,11 +40,11 @@ Assets {
           }
           Camera {
           }
-          Mass: 50000
+          Mass: 30000
           PhysicsBodyScale {
-            X: 5.5
-            Y: 2.5
-            Z: 1
+            X: 6.5
+            Y: 4
+            Z: 1.7
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -66,17 +66,15 @@ Assets {
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 30
-            LeftTreadWidth: 50
+            LeftTreadWidth: 40
             RightTreadRadius: 30
-            RightTreadWidth: 50
+            RightTreadWidth: 40
             LeftTreadOffset {
-              X: 20
-              Y: -160
+              Y: -170
               Z: 30
             }
             RightTreadOffset {
-              X: 20
-              Y: 160
+              Y: 170
               Z: 30
             }
             HandbrakeBinding {

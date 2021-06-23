@@ -7,7 +7,7 @@ Assets {
       RootId: 8048250784201651040
       Objects {
         Id: 8048250784201651040
-        Name: "08TANK_CHASSIS_Upgraded_US_M6A1Heavy"
+        Name: "TANK_CHASSIS_Upgraded_US_M6A1Heavy"
         Transform {
           Scale {
             X: 1
@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 57000
           PhysicsBodyScale {
-            X: 5
-            Y: 3.5
-            Z: 1.3
+            X: 8
+            Y: 6
+            Z: 3
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,8 +52,8 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -70
-            Z: 105
+            X: -120
+            Z: 50
           }
           MaxSpeed: 975
           AccelerationRate: 400
@@ -61,24 +61,25 @@ Assets {
           BrakeStrength: 1
           TireFriction: 20
           CenterOfMassOFfset {
+            X: -120
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 140
-            RightTreadRadius: 70
-            RightTreadWidth: 140
+            LeftTreadRadius: 50
+            LeftTreadWidth: 70
+            RightTreadRadius: 50
+            RightTreadWidth: 70
             LeftTreadOffset {
-              X: -22
+              X: -120
               Y: -225
-              Z: 65
+              Z: 50
             }
             RightTreadOffset {
-              X: -22
+              X: -120
               Y: 225
-              Z: 65
+              Z: 50
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

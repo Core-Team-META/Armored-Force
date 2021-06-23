@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_GER_Panzer3"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 4781671109827199097
@@ -120,8 +120,8 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 4.8
-            Y: 3.3
+            X: 4.79999971
+            Y: 4.64062595
             Z: 2
           }
         }
@@ -174,16 +174,16 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 277.199646
-            Z: -1.61120605
+            X: 294.699646
+            Z: 13.3888245
           }
           Rotation {
             Pitch: -20
           }
           Scale {
-            X: 1.6
-            Y: 3.3
-            Z: 1.1
+            X: 1.60000014
+            Y: 4.6
+            Z: 1.4
           }
         }
         ParentId: 30589642998017100
@@ -241,8 +241,8 @@ Assets {
             Pitch: -78.6581726
           }
           Scale {
-            X: 1.60000014
-            Y: 3.2
+            X: 1.6
+            Y: 4.5
             Z: 1.80000007
           }
         }
@@ -301,8 +301,8 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 4.8
-            Y: 3.3
+            X: 4.79999971
+            Y: 4.64062595
             Z: 2
           }
         }
@@ -340,16 +340,16 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 277.199646
-            Z: -1.61120605
+            X: 294.699646
+            Z: 13.3888245
           }
           Rotation {
             Pitch: -20
           }
           Scale {
-            X: 1.6
-            Y: 3.3
-            Z: 1.1
+            X: 1.60000014
+            Y: 4.6
+            Z: 1.4
           }
         }
         ParentId: 255525455903815833
@@ -393,8 +393,8 @@ Assets {
             Pitch: -78.6581726
           }
           Scale {
-            X: 1.60000014
-            Y: 3.2
+            X: 1.6
+            Y: 4.5
             Z: 1.80000007
           }
         }

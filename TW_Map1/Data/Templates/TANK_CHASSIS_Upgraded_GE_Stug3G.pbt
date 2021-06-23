@@ -40,11 +40,11 @@ Assets {
           }
           Camera {
           }
-          Mass: 47000
+          Mass: 37000
           PhysicsBodyScale {
             X: 7
-            Y: 3.5
-            Z: 1.4
+            Y: 5
+            Z: 1.8
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -61,7 +61,7 @@ Assets {
           BrakeStrength: 750
           TireFriction: 5
           CenterOfMassOFfset {
-            X: -40
+            X: -50
             Z: 20
           }
           GravityScale: 1
@@ -73,12 +73,12 @@ Assets {
             RightTreadWidth: 50
             LeftTreadOffset {
               X: -50
-              Y: -170
+              Y: -200
               Z: 40
             }
             RightTreadOffset {
               X: -50
-              Y: 170
+              Y: 200
               Z: 40
             }
             HandbrakeBinding {

@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_SKIN_Default_US_M3Stuart"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.2
+            Y: 1.2
+            Z: 1.2
           }
         }
         ParentId: 4781671109827199097
@@ -37,7 +37,7 @@ Assets {
         Name: "Sniper Camera"
         Transform {
           Location {
-            Z: 413.101196
+            Z: 413.101227
           }
           Rotation {
           }
@@ -86,7 +86,7 @@ Assets {
         Name: "Tank Camera"
         Transform {
           Location {
-            Z: 469.803741
+            Z: 469.803772
           }
           Rotation {
           }
