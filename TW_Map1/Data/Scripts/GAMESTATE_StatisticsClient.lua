@@ -142,7 +142,7 @@ function CalculateTotalXP(player)
 	
 	local survivalBonus = math.floor(survivalXPValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
 	
-	return baseXP + survivalBonus + (player.kills * killXPValue)
+	return baseXP + survivalBonus + (player.kills * killXPValue) + localPlayer:GetResource("DamageTracker")
 	
 end
 
@@ -160,7 +160,7 @@ function CalculateTotalCurrency(player)
 	
 	local survivalBonus = math.floor(survivalCurrencyValue * (player:GetResource("MatchEndHP") / player.maxHitPoints))
 	
-	return baseCurrency + survivalBonus + (player.kills * killCurrencyValue)
+	return baseCurrency + survivalBonus + (player.kills * killCurrencyValue) + localPlayer:GetResource("DamageTracker")
 	
 end
 
