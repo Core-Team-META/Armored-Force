@@ -164,7 +164,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -222,7 +222,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17488,7 +17488,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18844,6 +18844,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
+        R: 0.0150000006
+        G: 0.0150000006
+        B: 0.0150000006
         A: 0.39200002
       }
       TeamSettings {
@@ -18909,6 +18912,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
+        R: 0.0150000006
+        G: 0.0150000006
+        B: 0.0150000006
         A: 0.39200002
       }
       TeamSettings {
@@ -18974,6 +18980,9 @@ Objects {
         Id: 6552376844877606649
       }
       Color {
+        R: 0.0150000006
+        G: 0.0150000006
+        B: 0.0150000006
         A: 0.39200002
       }
       TeamSettings {
@@ -19039,6 +19048,9 @@ Objects {
         Id: 6552376844877606649
       }
       Color {
+        R: 0.0150000006
+        G: 0.0150000006
+        B: 0.0150000006
         A: 0.39200002
       }
       TeamSettings {
@@ -19103,6 +19115,9 @@ Objects {
         Id: 16797068327331994841
       }
       Color {
+        R: 0.0210000016
+        G: 0.0210000016
+        B: 0.0210000016
         A: 0.666
       }
       TeamSettings {
@@ -21596,9 +21611,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00322018936
-        G: 0.00382205565
-        B: 0.006
+        R: 0.00152125489
+        G: 0.002
+        B: 0.00107339653
         A: 1
       }
       TeamSettings {
@@ -21749,11 +21764,232 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 1471847616339930115
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.276464462
+            G: 0.564
+            B: 0.00747972
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3198210785164631313
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5816836311181512023
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.00483333226
+            G: 0.01
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 6048669626846972382
       value {
         Overrides {
           Name: "Name"
           String: "QUICKSELECTTANK_TEMPLATE"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6455028180903990051
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7558199346545462874
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7585449582376788754
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.00483333226
+            G: 0.01
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8933845898877915424
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11461906114216790803
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11502939285580993183
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12835309454402951012
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.276464462
+            G: 0.564
+            B: 0.00747972
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14076840535404443560
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14784518327179953905
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.551394582
+            G: 0.846
+            B: 0.275796
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17441587890208312073
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0560945384
+            G: 0.114435382
+            B: 0.00151763903
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17937208064805738759
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.276464462
+            G: 0.564
+            B: 0.00747972
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18142940613845671461
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.00483333226
+            G: 0.01
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18146305271978305656
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.276464462
+            G: 0.564
+            B: 0.00747972
+            A: 1
+          }
         }
       }
     }
@@ -21801,9 +22037,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000888889
-        G: 0.00120370346
-        B: 0.002
+        R: 0.00142592588
+        G: 0.002
+        B: 0.000888889
         A: 1
       }
       TeamSettings {
@@ -21964,7 +22200,6 @@ Objects {
   ChildIds: 13746451916081823733
   ChildIds: 2243948354877795821
   ChildIds: 17886619955873993940
-  ChildIds: 6360338250137014179
   ChildIds: 7502982006905098079
   ChildIds: 8233392611454620108
   ChildIds: 18292786654356745707
@@ -22102,7 +22337,6 @@ Objects {
   Control {
     Width: 200
     Height: 24
-    UIY: -10.7773819
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -22171,7 +22405,6 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIY: 3.22564697
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -22186,72 +22419,6 @@ Objects {
         G: 0.433365941
         B: 0.50888145
         A: 1
-      }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 17191612518869424272
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 6360338250137014179
-  Name: "TITLE_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1908435741019684359
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    UIY: 5.74634218
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "QUICK SELECT TANK"
-      Color {
-        A: 0.219000012
       }
       Size: 27
       Justification {
@@ -22543,8 +22710,8 @@ Objects {
         Id: 7648893931280516746
       }
       Color {
-        G: 0.176367015
-        B: 0.728000045
+        R: 0.351866603
+        G: 0.728000045
         A: 0.261
       }
       TeamSettings {
@@ -22661,9 +22828,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0127019985
-        G: 0.01637174
-        B: 0.029
+        R: 0.0205793623
+        G: 0.029
+        B: 0.0127019985
         A: 1
       }
       TeamSettings {
@@ -23473,9 +23640,6 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000990702189
-        G: 0.00110845361
-        B: 0.002
         A: 1
       }
       TeamSettings {
@@ -23533,9 +23697,6 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000990702189
-        G: 0.00110845361
-        B: 0.002
         A: 1
       }
       TeamSettings {
@@ -23593,9 +23754,6 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000990702189
-        G: 0.00110845361
-        B: 0.002
         A: 1
       }
       TeamSettings {
@@ -23895,9 +24053,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0024767553
-        G: 0.00277113379
-        B: 0.005
+        R: 0.000910581031
+        G: 0.000607054
+        B: 0.000303527
         A: 1
       }
       TeamSettings {
@@ -23955,9 +24113,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0024767553
-        G: 0.00277113379
-        B: 0.005
+        R: 0.000910581031
+        G: 0.000607054
+        B: 0.000303527
         A: 1
       }
       TeamSettings {
@@ -24015,9 +24173,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0024767553
-        G: 0.00277113379
-        B: 0.005
+        R: 0.000910581031
+        G: 0.000607054
+        B: 0.000303527
         A: 1
       }
       TeamSettings {
@@ -24257,9 +24415,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00148605322
-        G: 0.0016626803
-        B: 0.003
+        R: 0.00182116206
+        G: 0.00151763496
+        B: 0.000910581031
         A: 1
       }
       TeamSettings {
@@ -24317,9 +24475,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00148605322
-        G: 0.0016626803
-        B: 0.003
+        R: 0.00182116206
+        G: 0.00151763496
+        B: 0.000910581031
         A: 1
       }
       TeamSettings {
@@ -24377,9 +24535,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00148605322
-        G: 0.0016626803
-        B: 0.003
+        R: 0.00182116206
+        G: 0.00151763496
+        B: 0.000910581031
         A: 1
       }
       TeamSettings {
@@ -24954,9 +25112,6 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000990702189
-        G: 0.00110845361
-        B: 0.002
         A: 1
       }
       TeamSettings {
@@ -25014,9 +25169,6 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000990702189
-        G: 0.00110845361
-        B: 0.002
         A: 1
       }
       TeamSettings {
@@ -25074,9 +25226,6 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000990702189
-        G: 0.00110845361
-        B: 0.002
         A: 1
       }
       TeamSettings {
@@ -25376,9 +25525,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0024767553
-        G: 0.00277113379
-        B: 0.005
+        R: 0.000910581031
+        G: 0.000607054
+        B: 0.000303527
         A: 1
       }
       TeamSettings {
@@ -25436,9 +25585,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0024767553
-        G: 0.00277113379
-        B: 0.005
+        R: 0.000910581031
+        G: 0.000607054
+        B: 0.000303527
         A: 1
       }
       TeamSettings {
@@ -25496,9 +25645,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0024767553
-        G: 0.00277113379
-        B: 0.005
+        R: 0.000910581031
+        G: 0.000607054
+        B: 0.000303527
         A: 1
       }
       TeamSettings {
@@ -25738,9 +25887,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00148605322
-        G: 0.0016626803
-        B: 0.003
+        R: 0.00182116206
+        G: 0.00151763496
+        B: 0.000910581031
         A: 1
       }
       TeamSettings {
@@ -25798,9 +25947,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00148605322
-        G: 0.0016626803
-        B: 0.003
+        R: 0.00182116206
+        G: 0.00151763496
+        B: 0.000910581031
         A: 1
       }
       TeamSettings {
@@ -25858,9 +26007,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00148605322
-        G: 0.0016626803
-        B: 0.003
+        R: 0.00182116206
+        G: 0.00151763496
+        B: 0.000910581031
         A: 1
       }
       TeamSettings {
@@ -26189,14 +26338,14 @@ Objects {
     }
     StatBar {
       Color {
-        R: 0.99
-        G: 0.511390746
+        R: 0.921582162
+        G: 0.533276618
         A: 1
       }
       BackgroundColor {
-        G: 0.0556291044
-        B: 0.120000005
-        A: 1
+        R: 0.428690553
+        G: 0.119538531
+        A: 0.138000011
       }
       Percent: 0.481028944
       FillBrush {
@@ -26555,9 +26704,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00322018936
-        G: 0.00382205565
-        B: 0.006
+        R: 0.00152125477
+        G: 0.002
+        B: 0.00107339653
         A: 1
       }
       TeamSettings {
@@ -26616,9 +26765,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000888889
-        G: 0.00120370346
-        B: 0.002
+        R: 0.00142592588
+        G: 0.002
+        B: 0.000888889
         A: 1
       }
       TeamSettings {
@@ -26932,14 +27081,14 @@ Objects {
     }
     StatBar {
       Color {
-        R: 0.99
-        G: 0.511390746
+        R: 0.921582162
+        G: 0.533276618
         A: 1
       }
       BackgroundColor {
-        G: 0.0556291044
-        B: 0.120000005
-        A: 1
+        R: 0.428690553
+        G: 0.119538531
+        A: 0.138000011
       }
       Percent: 0.481028944
       FillBrush {
@@ -27298,9 +27447,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00322018936
-        G: 0.00382205565
-        B: 0.006
+        R: 0.00152125489
+        G: 0.002
+        B: 0.00107339653
         A: 1
       }
       TeamSettings {
@@ -27359,9 +27508,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000888889
-        G: 0.00120370346
-        B: 0.002
+        R: 0.00142592588
+        G: 0.002
+        B: 0.000888889
         A: 1
       }
       TeamSettings {
@@ -27675,14 +27824,14 @@ Objects {
     }
     StatBar {
       Color {
-        R: 0.99
-        G: 0.511390746
+        R: 0.921582162
+        G: 0.533276618
         A: 1
       }
       BackgroundColor {
-        G: 0.0556291044
-        B: 0.120000005
-        A: 1
+        R: 0.428690553
+        G: 0.119538531
+        A: 0.138000011
       }
       Percent: 0.481028944
       FillBrush {
@@ -28041,9 +28190,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00322018936
-        G: 0.00382205565
-        B: 0.006
+        R: 0.0022818821
+        G: 0.003
+        B: 0.00161009468
         A: 1
       }
       TeamSettings {
@@ -28102,9 +28251,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000888889
-        G: 0.00120370346
-        B: 0.002
+        R: 0.00142592588
+        G: 0.002
+        B: 0.000888889
         A: 1
       }
       TeamSettings {
@@ -28265,7 +28414,6 @@ Objects {
   ChildIds: 17464357842261334549
   ChildIds: 18429033603767397003
   ChildIds: 3912483666913565187
-  ChildIds: 14554980153995439669
   ChildIds: 5664735783974609170
   ChildIds: 1589383132785992166
   Collidable_v2 {
@@ -28331,7 +28479,6 @@ Objects {
   Control {
     Width: 200
     Height: 24
-    UIY: -10.7773819
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -28400,7 +28547,6 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIY: 3.22564697
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -28415,72 +28561,6 @@ Objects {
         G: 0.433365941
         B: 0.50888145
         A: 1
-      }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 17191612518869424272
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 14554980153995439669
-  Name: "TITLE_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3886971301672023401
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    UIY: 5.74634218
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "DAILY MISSIONS"
-      Color {
-        A: 0.219000012
       }
       Size: 27
       Justification {
@@ -28772,8 +28852,8 @@ Objects {
         Id: 7648893931280516746
       }
       Color {
-        G: 0.176367015
-        B: 0.728000045
+        R: 0.351866603
+        G: 0.728000045
         A: 0.261
       }
       TeamSettings {
@@ -28890,9 +28970,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0122864898
-        G: 0.0159962922
-        B: 0.0284260381
+        R: 0.0200872701
+        G: 0.0284260381
+        B: 0.0122864898
         A: 1
       }
       TeamSettings {
@@ -29010,9 +29090,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00402471703
-        G: 0.00477695325
-        B: 0.00749903172
+        R: 0.00570396893
+        G: 0.00749903172
+        B: 0.00402471703
         A: 1
       }
       TeamSettings {
