@@ -107,6 +107,7 @@ function SetClientData()
 	driver.clientUserData.currentTankData.reloadSFX = tankBodyClient:FindDescendantByName("ReloadSFX")
 	driver.clientUserData.currentTankData.type = tankControllerServer:GetCustomProperty("Type")
 	driver.clientUserData.currentTankData.id = tankControllerServer:GetCustomProperty("Identifier")
+	driver.clientUserData.currentTankData.name = tankControllerServer:GetCustomProperty("Name")
 	driver.clientUserData.currentTankData.controlScript = script
 
 end
