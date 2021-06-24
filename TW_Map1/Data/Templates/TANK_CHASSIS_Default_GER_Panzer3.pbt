@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 35000
           PhysicsBodyScale {
-            X: 7
+            X: 8.5
             Y: 5
-            Z: 2
+            Z: 1.7
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -53,7 +53,7 @@ Assets {
           }
           PhysicsBodyOffset {
             X: -50
-            Z: 50
+            Z: 60
           }
           MaxSpeed: 1160
           AccelerationRate: 400
@@ -67,19 +67,19 @@ Assets {
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 30
+            LeftTreadRadius: 40
             LeftTreadWidth: 50
-            RightTreadRadius: 30
+            RightTreadRadius: 40
             RightTreadWidth: 50
             LeftTreadOffset {
               X: -40
               Y: -210
-              Z: 30
+              Z: 40
             }
             RightTreadOffset {
               X: -40
               Y: 210
-              Z: 30
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

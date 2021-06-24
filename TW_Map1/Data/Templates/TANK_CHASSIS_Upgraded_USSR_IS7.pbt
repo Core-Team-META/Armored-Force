@@ -42,9 +42,9 @@ Assets {
           }
           Mass: 55000
           PhysicsBodyScale {
-            X: 8
-            Y: 6
-            Z: 2.2
+            X: 11
+            Y: 6.5
+            Z: 1.7
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,14 +52,14 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -60
-            Z: 50
+            X: -20
+            Z: 60
           }
           MaxSpeed: 1375
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 20
+          TireFriction: 10
           CenterOfMassOFfset {
             X: -60
             Z: 20
@@ -72,12 +72,12 @@ Assets {
             RightTreadRadius: 70
             RightTreadWidth: 80
             LeftTreadOffset {
-              X: -60
+              X: -20
               Y: -250
               Z: 70
             }
             RightTreadOffset {
-              X: -60
+              X: -20
               Y: 250
               Z: 70
             }

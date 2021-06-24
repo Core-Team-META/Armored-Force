@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_GE_Panzer4H"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -121,8 +121,8 @@ Assets {
           }
           Scale {
             X: 5.49999905
-            Y: 5.3
-            Z: 1.80000007
+            Y: 5.60576868
+            Z: 1.8
           }
         }
         ParentId: 7294987945268277251
@@ -174,16 +174,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 288.073608
-            Z: 8.03976631
+            X: 329.740143
+            Z: 16.7518883
           }
           Rotation {
-            Pitch: -30
           }
           Scale {
-            X: 1.99999988
-            Y: 5.20000029
-            Z: 1.2
+            X: 2
+            Y: 5.49999952
+            Z: 2.19999981
           }
         }
         ParentId: 7294987945268277251
@@ -234,16 +233,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -317.414307
-            Z: 19.7444458
+            X: -374.805
+            Z: 30.3882523
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
-            X: 1.47824156
-            Y: 4.72632504
-            Z: 1.64360213
+            X: 1.5
+            Y: 5.49999905
+            Z: 1.9
           }
         }
         ParentId: 7294987945268277251
@@ -302,8 +300,8 @@ Assets {
           }
           Scale {
             X: 5.49999905
-            Y: 5.3
-            Z: 1.80000007
+            Y: 5.60576868
+            Z: 1.8
           }
         }
         ParentId: 11377192152912754335
@@ -340,16 +338,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 288.073608
-            Z: 8.03976631
+            X: 329.740143
+            Z: 16.7518883
           }
           Rotation {
-            Pitch: -30
           }
           Scale {
-            X: 1.99999988
-            Y: 5.20000029
-            Z: 1.2
+            X: 2
+            Y: 5.49999952
+            Z: 2.19999981
           }
         }
         ParentId: 11377192152912754335
@@ -386,16 +383,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -317.414307
-            Z: 19.7444458
+            X: -374.805
+            Z: 30.3882523
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
-            X: 1.47824156
-            Y: 4.72632504
-            Z: 1.64360213
+            X: 1.5
+            Y: 5.49999905
+            Z: 1.9
           }
         }
         ParentId: 11377192152912754335

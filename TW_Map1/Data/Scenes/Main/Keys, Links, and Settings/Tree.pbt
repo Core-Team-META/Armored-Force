@@ -26,7 +26,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MatchMaxDuration"
-      Int: 600
+      Int: 1800
     }
     Overrides {
       Name: "cs:CardMaxDuration"

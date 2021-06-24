@@ -42,7 +42,7 @@ Assets {
           }
           Mass: 40000
           PhysicsBodyScale {
-            X: 7
+            X: 8.5
             Y: 5
             Z: 2
           }
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -40
+            X: -25
             Z: 50
           }
           MaxSpeed: 1125

@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_USSR_T34"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -174,16 +174,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 345.20517
-            Z: -9.79512
+            X: 389.371704
+            Z: 4.49457312
           }
           Rotation {
-            Pitch: -31.0405273
           }
           Scale {
-            X: 2.2
+            X: 2
             Y: 5.6
-            Z: 1.2
+            Z: 1.80000007
           }
         }
         ParentId: 12059435911847317624
@@ -234,17 +233,16 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -234.377045
+            X: -287.901
             Y: -3.05175781e-05
-            Z: -15.768158
+            Z: -0.050881125
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
-            X: 1.30000007
-            Y: 5.599998
-            Z: 1.7
+            X: 1.39999986
+            Y: 5.59999943
+            Z: 1.89999986
           }
         }
         ParentId: 12059435911847317624
@@ -341,16 +339,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 345.20517
-            Z: -9.79512
+            X: 389.371704
+            Z: 4.49457312
           }
           Rotation {
-            Pitch: -31.0405273
           }
           Scale {
-            X: 2.2
+            X: 2
             Y: 5.6
-            Z: 1.2
+            Z: 1.80000007
           }
         }
         ParentId: 3428978832260214964
@@ -387,17 +384,16 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -234.377045
+            X: -287.901
             Y: -3.05175781e-05
-            Z: -15.768158
+            Z: -0.050881125
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
-            X: 1.30000007
-            Y: 5.599998
-            Z: 1.7
+            X: 1.39999986
+            Y: 5.59999943
+            Z: 1.89999986
           }
         }
         ParentId: 3428978832260214964

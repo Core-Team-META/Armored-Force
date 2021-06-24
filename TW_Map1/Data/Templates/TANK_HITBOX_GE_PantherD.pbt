@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_GE_PantherD"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -114,15 +114,15 @@ Assets {
         Name: "SIDE_Profiler"
         Transform {
           Location {
-            X: 12.0475082
-            Z: 13.8693848
+            X: -7.04340124
+            Z: 13.8693924
           }
           Rotation {
           }
           Scale {
-            X: 6.9711566
-            Y: 5.29787731
-            Z: 2.03897262
+            X: 6.1
+            Y: 5.7
+            Z: 2
           }
         }
         ParentId: 18336071423543306148
@@ -174,16 +174,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 392.047516
-            Z: -1.13061523
+            X: 397.501923
+            Z: 7.05119705
           }
           Rotation {
-            Pitch: -44.9629211
           }
           Scale {
             X: 2.10000014
-            Y: 5.20000029
-            Z: 1.1
+            Y: 5.59245348
+            Z: 2.19999981
           }
         }
         ParentId: 18336071423543306148
@@ -234,14 +233,14 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -372.952484
-            Z: 12.9568634
+            X: -372.952454
+            Z: 12.9568605
           }
           Rotation {
           }
           Scale {
             X: 1.30000007
-            Y: 5.3
+            Y: 5.7
             Z: 2.10000014
           }
         }
@@ -294,15 +293,15 @@ Assets {
         Name: "HULLSIDE"
         Transform {
           Location {
-            X: 12.0475082
-            Z: 13.8693848
+            X: -7.04340124
+            Z: 13.8693924
           }
           Rotation {
           }
           Scale {
-            X: 6.9711566
-            Y: 5.29787731
-            Z: 2.03897262
+            X: 6.1
+            Y: 5.7
+            Z: 2
           }
         }
         ParentId: 17960702863571945571
@@ -339,16 +338,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 392.047516
-            Z: -1.13061523
+            X: 397.501923
+            Z: 7.05119705
           }
           Rotation {
-            Pitch: -44.9629211
           }
           Scale {
             X: 2.10000014
-            Y: 5.20000029
-            Z: 1.1
+            Y: 5.59245348
+            Z: 2.19999981
           }
         }
         ParentId: 17960702863571945571
@@ -385,14 +383,14 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -372.952484
-            Z: 12.9568634
+            X: -372.952454
+            Z: 12.9568605
           }
           Rotation {
           }
           Scale {
             X: 1.30000007
-            Y: 5.3
+            Y: 5.7
             Z: 2.10000014
           }
         }
@@ -431,14 +429,14 @@ Assets {
         Transform {
           Location {
             X: 67.0475082
-            Y: -195
-            Z: -91.1306152
+            Y: -204.545441
+            Z: -91.1306
           }
           Rotation {
           }
           Scale {
-            X: 8.6
-            Y: 1
+            X: 8.5
+            Y: 1.30000007
             Z: 1.7
           }
         }
@@ -477,14 +475,14 @@ Assets {
         Transform {
           Location {
             X: 67.0475082
-            Y: 195
-            Z: -91.1306152
+            Y: 185.454529
+            Z: -91.1306
           }
           Rotation {
           }
           Scale {
-            X: 8.6
-            Y: 1
+            X: 8.5
+            Y: 1.30000007
             Z: 1.7
           }
         }

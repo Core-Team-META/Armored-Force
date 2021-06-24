@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_GE_Leopard"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -114,15 +114,15 @@ Assets {
         Name: "SIDE_Profiler"
         Transform {
           Location {
-            X: -8.63897705
-            Z: 25.2621307
+            X: -8.63897419
+            Z: 9.47064495
           }
           Rotation {
           }
           Scale {
-            X: 5.8
-            Y: 4.94854832
-            Z: 1.60000014
+            X: 5.79999924
+            Y: 5.1
+            Z: 1.89999986
           }
         }
         ParentId: 18371727447368695403
@@ -174,16 +174,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 311.143768
-            Z: 4.57820129
+            X: 347.461731
+            Z: 14.0160847
           }
           Rotation {
-            Pitch: -40
           }
           Scale {
-            X: 1.70000017
-            Y: 4.9
-            Z: 1.1
+            X: 1.40000021
+            Y: 5.00425529
+            Z: 1.80000007
           }
         }
         ParentId: 18371727447368695403
@@ -234,15 +233,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -351.230865
-            Z: 34.8494072
+            X: -366.174438
+            Z: 9.47064495
           }
           Rotation {
           }
           Scale {
-            X: 1.1
-            Y: 4.70000029
-            Z: 1.4
+            X: 1.39999986
+            Y: 4.8
+            Z: 1.99999976
           }
         }
         ParentId: 18371727447368695403
@@ -294,15 +293,15 @@ Assets {
         Name: "HULLSIDE"
         Transform {
           Location {
-            X: -8.63897705
-            Z: 25.2621307
+            X: -8.63897419
+            Z: 9.47064495
           }
           Rotation {
           }
           Scale {
-            X: 5.8
-            Y: 4.83346558
-            Z: 1.6
+            X: 5.79999924
+            Y: 4.98139429
+            Z: 1.89999986
           }
         }
         ParentId: 7954244767357240401
@@ -339,16 +338,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 311.143768
-            Z: 4.57820129
+            X: 347.461731
+            Z: 14.0160847
           }
           Rotation {
-            Pitch: -40
           }
           Scale {
-            X: 1.7
-            Y: 4.9
-            Z: 1.1
+            X: 1.4000001
+            Y: 5.00425529
+            Z: 1.80000007
           }
         }
         ParentId: 7954244767357240401
@@ -385,15 +383,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -351.230865
-            Z: 34.8494072
+            X: -366.174438
+            Z: 9.47064495
           }
           Rotation {
           }
           Scale {
-            X: 1.1
-            Y: 4.70000029
-            Z: 1.4
+            X: 1.39999986
+            Y: 4.8
+            Z: 1.99999976
           }
         }
         ParentId: 7954244767357240401
@@ -430,16 +428,16 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: 17.9163513
+            X: 11.0981674
             Y: -190
-            Z: -55.9839172
+            Z: -55.9839134
           }
           Rotation {
           }
           Scale {
-            X: 7.8
+            X: 8.2
             Y: 1
-            Z: 1.80000019
+            Z: 1.80000007
           }
         }
         ParentId: 7954244767357240401
@@ -476,16 +474,16 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: 17.9163513
+            X: 11.0981674
             Y: 190
-            Z: -55.9839172
+            Z: -55.9839134
           }
           Rotation {
           }
           Scale {
-            X: 7.8
+            X: 8.2
             Y: 1
-            Z: 1.80000019
+            Z: 1.80000007
           }
         }
         ParentId: 7954244767357240401

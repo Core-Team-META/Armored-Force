@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_US_M48Patton"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -119,8 +119,8 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 5.5
-            Y: 6.36315918
+            X: 5.50000095
+            Y: 6.67105341
             Z: 1.69999993
           }
         }
@@ -173,15 +173,14 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 325
+            X: 372.727173
           }
           Rotation {
-            Pitch: -30
           }
           Scale {
-            X: 1.80000007
-            Y: 6.19999886
-            Z: 1.39999986
+            X: 1.90000033
+            Y: 6.49999952
+            Z: 2
           }
         }
         ParentId: 6974796842380153443
@@ -232,14 +231,14 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -390
-            Z: -5
+            X: -409.090851
+            Z: 11.3636217
           }
           Rotation {
           }
           Scale {
-            X: 2.60000014
-            Y: 6.19999886
+            X: 2.9
+            Y: 6.49999952
             Z: 1.80000007
           }
         }
@@ -298,8 +297,8 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 5.5
-            Y: 6.36315918
+            X: 5.50000095
+            Y: 6.67105341
             Z: 1.69999993
           }
         }
@@ -337,15 +336,14 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 325
+            X: 372.727173
           }
           Rotation {
-            Pitch: -30
           }
           Scale {
-            X: 1.80000007
-            Y: 6.19999886
-            Z: 1.39999986
+            X: 1.90000033
+            Y: 6.49999952
+            Z: 2
           }
         }
         ParentId: 13561828219651818308
@@ -382,14 +380,14 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -390
-            Z: -5
+            X: -409.090851
+            Z: 11.3636217
           }
           Rotation {
           }
           Scale {
-            X: 2.60000014
-            Y: 6.19999886
+            X: 2.9
+            Y: 6.49999952
             Z: 1.80000007
           }
         }
@@ -427,14 +425,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -30
-            Y: -235
+            X: -45.4545212
+            Y: -234.999985
             Z: -80
           }
           Rotation {
           }
           Scale {
-            X: 9.40000057
+            X: 9.99999905
             Y: 1.30000007
             Z: 2.3
           }
@@ -473,14 +471,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -30
-            Y: 235
+            X: -45.4545212
+            Y: 234.999985
             Z: -80
           }
           Rotation {
           }
           Scale {
-            X: 9.40000057
+            X: 9.99999905
             Y: 1.30000007
             Z: 2.3
           }

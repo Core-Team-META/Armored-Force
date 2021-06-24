@@ -28,7 +28,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
+          Value: "mc:eindicatorvisibility:alwaysvisible"
         }
         Vehicle {
           DriverPosition {
@@ -42,11 +42,11 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 2200
+          Mass: 4200
           PhysicsBodyScale {
-            X: 9
-            Y: 4
-            Z: 1.7
+            X: 10
+            Y: 5
+            Z: 1.8
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -54,7 +54,8 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            Z: 70
+            X: 50
+            Z: 60
           }
           MaxSpeed: 2350
           AccelerationRate: 400
@@ -82,33 +83,33 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            FrontLeftWheelRadius: 110
-            FrontRightWheelRadius: 110
-            RearLeftWheelRadius: 110
-            RearRightWheelRadius: 110
+            FrontLeftWheelRadius: 100
+            FrontRightWheelRadius: 100
+            RearLeftWheelRadius: 100
+            RearRightWheelRadius: 100
             FrontLeftWheelWidth: 80
             FrontRightWheelWidth: 80
             RearLeftWheelWidth: 80
             RearRightWheelWidth: 80
             FrontLeftWheelOffset {
-              X: 320
-              Y: -200
-              Z: 105
+              X: 295
+              Y: -199.999969
+              Z: 90
             }
             FrontRightWheelOffset {
-              X: 320
+              X: 295
               Y: 200
-              Z: 105
+              Z: 90
             }
             RearLeftWheelOffset {
-              X: -300
-              Y: -199.999969
-              Z: 105
+              X: -270.000061
+              Y: -200
+              Z: 90
             }
             RearRightWheelOffset {
-              X: -300
+              X: -270.000061
               Y: 200
-              Z: 105
+              Z: 90
             }
             TurningRadius: 1500
           }
@@ -154,16 +155,16 @@ Assets {
         Name: "Wheel"
         Transform {
           Location {
-            X: -300
+            X: -270
             Y: 200
-            Z: 105
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628
@@ -303,16 +304,16 @@ Assets {
         Name: "Wheel"
         Transform {
           Location {
-            X: -300
+            X: -270
             Y: -199.999969
-            Z: 105
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628
@@ -448,16 +449,16 @@ Assets {
         Name: "LeftSteeringWheel"
         Transform {
           Location {
-            X: 320
+            X: 295
             Y: -199.999969
-            Z: 105
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628
@@ -624,16 +625,16 @@ Assets {
         Name: "RightSteeringWheel"
         Transform {
           Location {
-            X: 320
+            X: 295
             Y: 200
-            Z: 105
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628

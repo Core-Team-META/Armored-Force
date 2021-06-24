@@ -42,7 +42,7 @@ Assets {
           }
           Mass: 35000
           PhysicsBodyScale {
-            X: 7
+            X: 8
             Y: 6
             Z: 1.7
           }

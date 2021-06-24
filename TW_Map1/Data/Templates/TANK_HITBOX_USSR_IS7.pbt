@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_USSR_IS7"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -120,7 +120,7 @@ Assets {
           }
           Scale {
             X: 6.9
-            Y: 5.95263243
+            Y: 6.56842136
             Z: 1.7
           }
         }
@@ -173,16 +173,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 400
-            Z: -20
+            X: 427.272583
+            Z: -25.0000134
           }
           Rotation {
-            Pitch: -25
           }
           Scale {
-            X: 1.80000031
-            Y: 5.79999971
-            Z: 0.900000036
+            X: 1.80000007
+            Y: 6.39999819
+            Z: 1.7
           }
         }
         ParentId: 17200379349570237659
@@ -240,7 +239,7 @@ Assets {
           }
           Scale {
             X: 2
-            Y: 5.79999971
+            Y: 6.39999914
             Z: 1.6
           }
         }
@@ -300,7 +299,7 @@ Assets {
           }
           Scale {
             X: 6.9
-            Y: 5.95263243
+            Y: 6.56842136
             Z: 1.7
           }
         }
@@ -338,16 +337,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 400
-            Z: -20
+            X: 427.272583
+            Z: -25.0000134
           }
           Rotation {
-            Pitch: -25
           }
           Scale {
-            X: 1.80000031
-            Y: 5.79999971
-            Z: 0.900000036
+            X: 1.80000007
+            Y: 6.39999819
+            Z: 1.7
           }
         }
         ParentId: 10992467688042006224
@@ -391,7 +389,7 @@ Assets {
           }
           Scale {
             X: 2
-            Y: 5.79999971
+            Y: 6.39999914
             Z: 1.6
           }
         }

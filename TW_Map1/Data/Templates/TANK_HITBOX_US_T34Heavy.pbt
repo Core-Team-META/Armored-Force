@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_US_T34Heavy"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -173,15 +173,14 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 340
+            X: 381.818054
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
-            X: 1.80000043
-            Y: 5.69999933
-            Z: 0.7
+            X: 1.80000007
+            Y: 5.7
+            Z: 1.7
           }
         }
         ParentId: 13164076652294973780
@@ -337,15 +336,14 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 340
+            X: 381.818054
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
-            X: 1.80000043
-            Y: 5.69999933
-            Z: 0.7
+            X: 1.80000007
+            Y: 5.7
+            Z: 1.7
           }
         }
         ParentId: 5321763476451797696

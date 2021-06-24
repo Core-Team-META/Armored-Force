@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_GE_E50"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -173,16 +173,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 435
-            Z: 5
+            X: 463.636292
+            Z: 20.4545307
           }
           Rotation {
-            Pitch: -40
           }
           Scale {
-            X: 2.10000038
-            Y: 6.49999809
-            Z: 0.9
+            X: 1.7
+            Y: 6.5
+            Z: 1.7
           }
         }
         ParentId: 14502563639728930781
@@ -233,15 +232,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -385
+            X: -454.54538
             Z: 20
           }
           Rotation {
           }
           Scale {
-            X: 3.2
-            Y: 6.49999809
-            Z: 1.9
+            X: 2.10000014
+            Y: 6.5
+            Z: 1.7
           }
         }
         ParentId: 14502563639728930781
@@ -338,16 +337,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 435
-            Z: 5
+            X: 463.636292
+            Z: 20.4545307
           }
           Rotation {
-            Pitch: -40
           }
           Scale {
-            X: 2.10000038
-            Y: 6.49999809
-            Z: 0.9
+            X: 1.7
+            Y: 6.5
+            Z: 1.7
           }
         }
         ParentId: 12149580196703534303
@@ -384,15 +382,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -385
+            X: -454.54538
             Z: 20
           }
           Rotation {
           }
           Scale {
-            X: 3.2
-            Y: 6.49999809
-            Z: 1.9
+            X: 2.10000014
+            Y: 6.5
+            Z: 1.7
           }
         }
         ParentId: 12149580196703534303
@@ -429,14 +427,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -30
-            Y: -255
+            X: -4.5454545
+            Y: -254.999985
             Z: -100
           }
           Rotation {
           }
           Scale {
-            X: 10.1
+            X: 10.9000015
             Y: 1.1
             Z: 1.7
           }
@@ -475,14 +473,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -30
-            Y: 255
+            X: -4.5454545
+            Y: 254.999985
             Z: -100
           }
           Rotation {
           }
           Scale {
-            X: 10.1
+            X: 10.9000015
             Y: 1.1
             Z: 1.7
           }

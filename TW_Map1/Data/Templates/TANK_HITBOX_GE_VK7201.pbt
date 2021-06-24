@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_GE_VK7201"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -120,7 +120,7 @@ Assets {
           }
           Scale {
             X: 7.69999886
-            Y: 5.58409166
+            Y: 6.67265797
             Z: 1.9
           }
         }
@@ -173,15 +173,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 425
+            X: 481.818115
+            Z: 11.3636217
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
             X: 2.4
-            Y: 5.44090939
-            Z: 1.1
+            Y: 6.45267963
+            Z: 2.19999981
           }
         }
         ParentId: 5191514938123466147
@@ -232,7 +232,7 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -405
+            X: -504.545227
             Z: 40
           }
           Rotation {
@@ -240,8 +240,8 @@ Assets {
           }
           Scale {
             X: 1.80000007
-            Y: 6.29999876
-            Z: 3.9
+            Y: 6.59999943
+            Z: 2.3
           }
         }
         ParentId: 5191514938123466147
@@ -300,7 +300,7 @@ Assets {
           }
           Scale {
             X: 7.69999886
-            Y: 5.58409166
+            Y: 6.67265797
             Z: 1.9
           }
         }
@@ -338,15 +338,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 425
+            X: 481.818115
+            Z: 11.3636217
           }
           Rotation {
-            Pitch: -45
           }
           Scale {
             X: 2.4
-            Y: 5.44090939
-            Z: 1.1
+            Y: 6.45267963
+            Z: 2.19999981
           }
         }
         ParentId: 9728840000373645310
@@ -383,7 +383,7 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -405
+            X: -504.545227
             Z: 40
           }
           Rotation {
@@ -391,8 +391,8 @@ Assets {
           }
           Scale {
             X: 1.80000007
-            Y: 6.29999876
-            Z: 3.9
+            Y: 6.59999943
+            Z: 2.3
           }
         }
         ParentId: 9728840000373645310
