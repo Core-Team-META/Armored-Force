@@ -171,7 +171,7 @@ local function BuildAchievementInfoPanel()
 
             name.text = achievement.name
 
-            achievementPanel.y = (121 * yCount - 1) + 10
+            achievementPanel.y = (225 * yCount - 1) + 10
             achievementPanel.x = (427.5 * xCount) + 10
 
             totalCount = totalCount + 1

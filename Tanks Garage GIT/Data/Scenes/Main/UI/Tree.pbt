@@ -16,6 +16,7 @@ Objects {
   }
   ParentId: 11158258478903046729
   ChildIds: 16588485923003442032
+  ChildIds: 14935623589585056461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -29,6 +30,47 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 14935623589585056461
+  Name: "Top_Bar_UI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5244537954034025024
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:CHOSEN_TANKNAME"
+      ObjectReference {
+        SelfId: 3711073407798969477
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11791372271280983811
+    }
   }
 }
 Objects {
