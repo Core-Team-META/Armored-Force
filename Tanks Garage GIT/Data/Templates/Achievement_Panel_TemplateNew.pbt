@@ -161,18 +161,18 @@ Assets {
             }
             FontSize: 20
             ButtonColor {
-              G: 0.0834436268
-              B: 0.179999948
+              R: 0.00699541
+              G: 0.0144438436
               A: 1
             }
             HoveredColor {
-              G: 0.0834436268
-              B: 0.179999948
+              R: 0.00699541
+              G: 0.0144438436
               A: 1
             }
             PressedColor {
-              G: 0.0834436268
-              B: 0.179999948
+              R: 0.00699541
+              G: 0.0144438436
               A: 1
             }
             DisabledColor {
@@ -262,9 +262,10 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              A: 0.614
             }
             ShadowOffset {
+              Y: 5
             }
           }
           AnchorLayout {
@@ -824,13 +825,13 @@ Assets {
               B: 0.179999948
             }
             HoveredColor {
-              G: 0.0834436268
-              B: 0.179999948
+              R: 0.0869999528
+              G: 0.179999948
               A: 1
             }
             PressedColor {
-              G: 0.0834436268
-              B: 0.179999948
+              R: 0.0869999528
+              G: 0.179999948
               A: 1
             }
             DisabledColor {
