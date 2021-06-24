@@ -119,9 +119,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 6.29999971
-            Y: 6.80000067
-            Z: 1.9607842
+            X: 6.70645094
+            Y: 7.62424231
+            Z: 2.05882335
           }
         }
         ParentId: 4590650892159040565
@@ -173,15 +173,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 404.545563
-            Z: -17.1212482
+            X: 436.363495
+            Z: -6.81818151
           }
           Rotation {
           }
           Scale {
-            X: 2.10000014
-            Y: 6.8
-            Z: 2.11111093
+            X: 2.2
+            Y: 7.59999943
+            Z: 2
           }
         }
         ParentId: 4590650892159040565
@@ -232,15 +232,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -487.499969
+            X: -513.636353
             Z: -11.3636494
           }
           Rotation {
           }
           Scale {
-            X: 3.10000014
-            Y: 6.6
-            Z: 2.00000024
+            X: 3.3
+            Y: 7.39999914
+            Z: 2.10000014
           }
         }
         ParentId: 4590650892159040565
@@ -298,9 +298,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 6.29999971
-            Y: 6.80000067
-            Z: 1.9607842
+            X: 6.70645094
+            Y: 7.62424231
+            Z: 2.05882335
           }
         }
         ParentId: 6281844670646351756
@@ -337,15 +337,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 404.545563
-            Z: -17.1212482
+            X: 436.363495
+            Z: -6.81818151
           }
           Rotation {
           }
           Scale {
-            X: 2.10000014
-            Y: 6.8
-            Z: 2.11111093
+            X: 2.2
+            Y: 7.59999943
+            Z: 2
           }
         }
         ParentId: 6281844670646351756
@@ -382,15 +382,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -487.499969
+            X: -513.636353
             Z: -11.3636494
           }
           Rotation {
           }
           Scale {
-            X: 3.10000014
-            Y: 6.6
-            Z: 2.00000024
+            X: 3.3
+            Y: 7.39999914
+            Z: 2.10000014
           }
         }
         ParentId: 6281844670646351756
@@ -427,14 +427,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -25.0000019
+            X: -72.7272568
             Y: -265
-            Z: -90.0000076
+            Z: -90
           }
           Rotation {
           }
           Scale {
-            X: 10
+            X: 12.5999985
             Y: 1.30000007
             Z: 1.7
           }
@@ -473,14 +473,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: -25
+            X: -72.7272568
             Y: 249.999985
             Z: -90
           }
           Rotation {
           }
           Scale {
-            X: 10
+            X: 12.5999985
             Y: 1.30000007
             Z: 1.7
           }
