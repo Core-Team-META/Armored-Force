@@ -254,7 +254,7 @@ function PopulatePlayerPanel()
 	TotalWins.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_WINS))
 	LongestKillStreak.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.LARGEST_KILL_STREAK))
 	TotalDamage.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_DAMAGE_RES))
-	Accuracy.text = string.format("%.2f", LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.ACCURACY) / 100) .. "%"
+	Accuracy.text = string.format("%f",LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_SHOTS_HIT) / LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_SHOTS_FIRED) * 100) .. "%"
 	TanksDestroyed.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_KILLS))
 	
 	MoneyAmount.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER))

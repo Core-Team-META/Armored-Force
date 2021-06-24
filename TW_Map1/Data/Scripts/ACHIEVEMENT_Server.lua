@@ -173,6 +173,14 @@ function OnUpgrade(player, tankId, upgradeSlot)
     end
 end
 
+function OnDamageTaken(attackData)
+    local target = attackData.object
+    local source = attackData.source
+    if IsValidPlayer(source) and IsValidPlayer(target) then
+        source:AddResource(CONST.COMBAT_STATS.TOTAL_SHOTS_HIT, 1)
+    end
+end
+
 function OnTankAcquired(player, tankId, teir)
     if teir == 2 then
         ACH_API.AddProgress(player, "AJUN", 1)
@@ -205,7 +213,7 @@ Game.roundStartEvent:Connect(OnRoundStart)
 
 -- Server (Same Context) Broadcast Listeners
 --Events.Connect("CombatWrapAPI.GoingToTakeDamage", OnGoingToTakeDamage)
---Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTaken)
+Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTaken)
 Events.Connect("CombatWrapAPI.ObjectHasDied", OnPlayerDied)
 Events.Connect("UpgradeAcquired", OnUpgrade)
 Events.Connect("TankAcquired", OnTankAcquired)

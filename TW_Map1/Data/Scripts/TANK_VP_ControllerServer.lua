@@ -316,7 +316,7 @@ function OnBindingPressed(player, binding)
 	end
 	
 	if binding == "ability_primary" and not player:IsBindingPressed("ability_extra_14") then
-		FireProjectile()
+		FireProjectile(player)
 	elseif binding == "ability_extra_40" and Environment.IsMultiplayerPreview() then
 		driver:Die()
 	end
@@ -324,7 +324,7 @@ function OnBindingPressed(player, binding)
 
 end
 
-function FireProjectile()
+function FireProjectile(player)
 
 	if reloading then
 		return
@@ -347,7 +347,9 @@ function FireProjectile()
 	firedProjectile.shouldDieOnImpact = true
 	
 	Events.BroadcastToAllPlayers("ANIMATE_FIRING", driver, reloadTime)
-	
+
+	--#TODO This should be tied into the constants file
+	player:AddResource("TOTALSHOTSFIRED", 1)
 	Task.Wait(reloadTime + 0.1)
 	
 	reloading = false
