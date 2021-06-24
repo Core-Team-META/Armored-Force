@@ -42,7 +42,7 @@ Assets {
           }
           Mass: 32000
           PhysicsBodyScale {
-            X: 7
+            X: 8.5
             Y: 5
             Z: 2
           }
@@ -67,9 +67,9 @@ Assets {
           CoastBrakeStrength: 112.5
           Tank {
             LeftTreadRadius: 40
-            LeftTreadWidth: 40
+            LeftTreadWidth: 80
             RightTreadRadius: 40
-            RightTreadWidth: 40
+            RightTreadWidth: 80
             LeftTreadOffset {
               X: -50
               Y: -200

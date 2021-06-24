@@ -44,7 +44,7 @@ Assets {
           PhysicsBodyScale {
             X: 7.5
             Y: 5
-            Z: 1.2
+            Z: 1.1
           }
           IsDriverHidden: true
           IsDriverAttached: true

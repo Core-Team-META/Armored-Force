@@ -36,7 +36,7 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 		elseif (armorName == "HULLSIDE") then
 			Header.text = "HIT HULL FROM SIDE! (0.5x DAMAGE)"
 		elseif (armorName == "HULLREAR") then
-			Header.text = "HIT HULL FROM FRONT! (0.4x DAMAGE)"
+			Header.text = "HIT HULL FROM REAR! (0.9x DAMAGE)"
 		elseif (armorName == "TURRETFRONT") then
 			Header.text = "HIT TURRET FROM FRONT! (0.2x DAMAGE)"
 		elseif (armorName == "TURRETSIDE") then

@@ -40,11 +40,11 @@ Assets {
           }
           Camera {
           }
-          Mass: 52000
+          Mass: 47000
           PhysicsBodyScale {
-            X: 8
-            Y: 6.5
-            Z: 2.2
+            X: 12.5
+            Y: 7.5
+            Z: 2
           }
           IsDriverHidden: true
           IsDriverAttached: true
@@ -52,10 +52,10 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -90
-            Z: 50
+            X: -80
+            Z: 70
           }
-          MaxSpeed: 1050
+          MaxSpeed: 1200
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
@@ -67,19 +67,19 @@ Assets {
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 60
-            LeftTreadWidth: 80
-            RightTreadRadius: 60
-            RightTreadWidth: 80
+            LeftTreadRadius: 100
+            LeftTreadWidth: 120
+            RightTreadRadius: 100
+            RightTreadWidth: 120
             LeftTreadOffset {
               X: -90
-              Y: -270
-              Z: 60
+              Y: -280
+              Z: 100
             }
             RightTreadOffset {
               X: -90
-              Y: 270
-              Z: 60
+              Y: 280
+              Z: 100
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

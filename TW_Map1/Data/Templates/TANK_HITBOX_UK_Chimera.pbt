@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_UK_Chimera"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -120,7 +120,7 @@ Assets {
           }
           Scale {
             X: 3.88499975
-            Y: 4.72105312
+            Y: 5.23421144
             Z: 1.2
           }
         }
@@ -173,15 +173,14 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 205.000015
-            Z: -69.1666794
+            X: 205
+            Z: -79.5454483
           }
           Rotation {
-            Pitch: -5
           }
           Scale {
             X: 2.4
-            Y: 4.6
+            Y: 5.1
             Z: 1.2
           }
         }
@@ -233,14 +232,14 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -320
+            X: -327.272644
             Z: -79.1667
           }
           Rotation {
           }
           Scale {
-            X: 2.10000014
-            Y: 4.6
+            X: 2
+            Y: 5.1
             Z: 1.2
           }
         }
@@ -300,7 +299,7 @@ Assets {
           }
           Scale {
             X: 3.88499975
-            Y: 4.72105312
+            Y: 5.23421144
             Z: 1.2
           }
         }
@@ -338,15 +337,14 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 205.000015
-            Z: -69.1666794
+            X: 205
+            Z: -79.5454483
           }
           Rotation {
-            Pitch: -5
           }
           Scale {
             X: 2.4
-            Y: 4.6
+            Y: 5.1
             Z: 1.2
           }
         }
@@ -384,14 +382,14 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -320
+            X: -327.272644
             Z: -79.1667
           }
           Rotation {
           }
           Scale {
-            X: 2.10000014
-            Y: 4.6
+            X: 2
+            Y: 5.1
             Z: 1.2
           }
         }

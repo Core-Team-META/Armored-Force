@@ -42,8 +42,8 @@ Assets {
           }
           Mass: 40000
           PhysicsBodyScale {
-            X: 7.5
-            Y: 5
+            X: 9.7
+            Y: 5.7
             Z: 2.2
           }
           IsDriverHidden: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -100
+            X: -80
             Z: 50
           }
           MaxSpeed: 1102

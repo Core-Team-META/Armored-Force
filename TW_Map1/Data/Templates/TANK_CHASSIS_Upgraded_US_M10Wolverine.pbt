@@ -42,8 +42,8 @@ Assets {
           }
           Mass: 39000
           PhysicsBodyScale {
-            X: 7.5
-            Y: 5
+            X: 10
+            Y: 6
             Z: 2.1
           }
           IsDriverHidden: true
@@ -52,7 +52,7 @@ Assets {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -100
+            X: -70
             Z: 50
           }
           MaxSpeed: 1012
@@ -68,9 +68,9 @@ Assets {
           CoastBrakeStrength: 0.1
           Tank {
             LeftTreadRadius: 50
-            LeftTreadWidth: 50
+            LeftTreadWidth: 60
             RightTreadRadius: 50
-            RightTreadWidth: 50
+            RightTreadWidth: 60
             LeftTreadOffset {
               X: -100
               Y: -200

@@ -136,7 +136,7 @@ function AssignDriver(newDriver)
 	
 	chassis:SetDriver(driver)
 	
-	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.2})
+	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.1})
 	turret = hitbox:FindDescendantByName("Turret")
 	cannon = hitbox:FindDescendantByName("Cannon")
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
