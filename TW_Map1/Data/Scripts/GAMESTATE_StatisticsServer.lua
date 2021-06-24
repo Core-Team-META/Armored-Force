@@ -157,12 +157,15 @@ function SaveStatistics()
 		p:AddResource(CONSTANTS_API.XP, totalXp)
 		p:AddResource("Silver", totalCurrency)
 
+		local isWinner = false
+
 		if p.team == winner then
 			--print(p.name .. " won, adding to Total Wins")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_WINS, 1)
 			TrackDailyChallenge(p, "Wins", 1)
 			baseXP = victoryXPValue
 			baseCurrency = victoryCurrencyValue
+			isWinner = true
 		elseif winner > 0 then
 			--print(p.name .. " lost, adding to Total Losses")
 			p:AddResource(CONSTANTS_API.COMBAT_STATS.TOTAL_LOSSES, 1)
@@ -197,6 +200,7 @@ function SaveStatistics()
 		tempTbl["MaxHP"] = p.maxHitPoints
 		tempTbl["DamageTracker"] = p:GetResource("DamageTracker")
 		tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker")
+		tempTbl["Winner"] = isWinner
 
 		local storageData = Storage.GetSharedPlayerData(STORAGE_LEADERBOARD, p)
 		storageData.ROUND = tempTbl

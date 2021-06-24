@@ -125,25 +125,26 @@ function CalculateTotalXP(player)
 	)
 
 	return localPlayer.clientUserData.roundStats["BaseXP"] + survivalBonus +
-		(localPlayer.clientUserData.roundStats["Kills"] * killXPValue) + localPlayer.clientUserData.roundStats["DamageTracker"]
+		(localPlayer.clientUserData.roundStats["Kills"] * killXPValue) +
+		localPlayer.clientUserData.roundStats["DamageTracker"]
 end
 
 function CalculateTotalCurrency(player)
 	local baseCurrency = 0
 
-	baseCurrency = victoryCurrencyValue
-	 --
-	--[[elseif winner > 0 then
-		baseCurrency = lossCurrencyValue
+	if localPlayer.clientUserData.roundStats["Winner"] == "^true^" then
+		baseCurrency = victoryCurrencyValue
 	else
-		baseCurrency = drawCurrencyValue
-	end]] local survivalBonus =
+		baseCurrency = lossCurrencyValue
+	end
+	local survivalBonus =
 		math.floor(
 		survivalCurrencyValue *
 			(localPlayer.clientUserData.roundStats["MatchEndHP"] / localPlayer.clientUserData.roundStats["MaxHP"])
 	)
 
-	return baseCurrency + survivalBonus + (localPlayer.clientUserData.roundStats["Kills"] * killCurrencyValue) + localPlayer.clientUserData.roundStats["DamageTracker"]
+	return baseCurrency + survivalBonus + (localPlayer.clientUserData.roundStats["Kills"] * killCurrencyValue) +
+		localPlayer.clientUserData.roundStats["DamageTracker"]
 end
 
 function SetWinner(winningTeam)
@@ -207,26 +208,20 @@ end
 function ShowStatisticsAnimation()
 	--if winner == localTeam then
 	local baseCurrency
-	baseCurrency = victoryCurrencyValue
-	winLossText.text = "YOUR TEAM WON"
-	baseText.text = "Victory Earnings: "
-	 --
-	--[[elseif winner > 0 then
-	
+	if localPlayer.clientUserData.roundStats["Winner"] == "^true^" then
+		baseCurrency = victoryCurrencyValue
+		winLossText.text = "YOUR TEAM WON"
+		baseText.text = "Victory Earnings: "
+	else
 		baseCurrency = lossCurrencyValue
 		winLossText.text = "YOUR TEAM LOST"
 		baseText.text = "Loss Earnings: "
-	else
-	
-		baseCurrency = drawCurrencyValue
-		winLossText.text = "DRAW"
-		baseText.text = "Draw Earnings: "
-	end]] local damageBonus =
-		localPlayer.clientUserData.roundStats["DamageTracker"]
+	end
+	local damageBonus = localPlayer.clientUserData.roundStats["DamageTracker"]
 	local spottingBonus = localPlayer.clientUserData.roundStats["SpottingTracker"]
 
 	local modifier = 1
-	 --
+	--
 	--[[if (UTIL_API.UsingPremiumTank(tonumber(localPlayer.clientUserData.currentTankData.id))) then
 		modifier = 2
 		premiumBonusPanel.visibility = Visibility.FORCE_ON
