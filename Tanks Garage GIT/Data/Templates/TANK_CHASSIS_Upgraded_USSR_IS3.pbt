@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Upgraded_USSR_IS3"
         Transform {
           Scale {
-            X: 1.55
+            X: 1
             Y: 1
             Z: 1
           }
@@ -42,18 +42,16 @@ Assets {
           }
           Mass: 50000
           PhysicsBodyScale {
-            X: 5
-            Y: 3.5
-            Z: 1
+            X: 11.5
+            Y: 6
+            Z: 2
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -70
-            Z: 105
+            X: -30
+            Z: 50
           }
           MaxSpeed: 1050
           AccelerationRate: 400
@@ -61,23 +59,25 @@ Assets {
           BrakeStrength: 1
           TireFriction: 10
           CenterOfMassOFfset {
+            X: -70
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 100
-            RightTreadRadius: 70
-            RightTreadWidth: 100
+            LeftTreadRadius: 60
+            LeftTreadWidth: 80
+            RightTreadRadius: 60
+            RightTreadWidth: 80
             LeftTreadOffset {
-              Y: -225
-              Z: 67
+              X: -30
+              Y: -250
+              Z: 60
             }
             RightTreadOffset {
-              X: -25
-              Y: 225
-              Z: 67
+              X: -30
+              Y: 250
+              Z: 60
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

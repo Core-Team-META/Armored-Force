@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_HITBOX_US_M4A1Sherman"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -56,6 +56,8 @@ Assets {
         ChildIds: 14096129923599683871
         ChildIds: 565226518211981251
         ChildIds: 13052955393979561392
+        ChildIds: 7338592126922444533
+        ChildIds: 8151103056808498878
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -113,13 +115,13 @@ Assets {
         Transform {
           Location {
             X: 62.641983
-            Z: 33.9665527
+            Z: 33.9665604
           }
           Rotation {
           }
           Scale {
-            X: 4.5
-            Y: 4.1
+            X: 4.49999952
+            Y: 4.71499968
             Z: 1.7
           }
         }
@@ -172,16 +174,15 @@ Assets {
         Name: "FRONT_Profiler"
         Transform {
           Location {
-            X: 351.75354
-            Z: -8.53340149
+            X: 379.914703
+            Z: 6.19795322
           }
           Rotation {
-            Pitch: -39.1643066
           }
           Scale {
-            X: 2.52988601
-            Y: 3.22580171
-            Z: 1.13035405
+            X: 2
+            Y: 4.6
+            Z: 2.2
           }
         }
         ParentId: 2035737594677843735
@@ -232,16 +233,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -234.804031
-            Z: 7.61424255
+            X: -256.448914
+            Z: 7.61423254
           }
           Rotation {
-            Pitch: -66.5181885
           }
           Scale {
-            X: 1.39965832
-            Y: 3.58310342
-            Z: 2.23198342
+            X: 2
+            Y: 4.6
+            Z: 2.2
           }
         }
         ParentId: 2035737594677843735
@@ -294,13 +294,13 @@ Assets {
         Transform {
           Location {
             X: 62.641983
-            Z: 33.9665527
+            Z: 33.9665604
           }
           Rotation {
           }
           Scale {
-            X: 4.5
-            Y: 4.1
+            X: 4.49999952
+            Y: 4.71499968
             Z: 1.7
           }
         }
@@ -338,16 +338,15 @@ Assets {
         Name: "HULLFRONT"
         Transform {
           Location {
-            X: 351.75354
-            Z: -8.53340149
+            X: 379.914703
+            Z: 6.19795322
           }
           Rotation {
-            Pitch: -39.1643066
           }
           Scale {
-            X: 2.52988601
-            Y: 3.22580171
-            Z: 1.13035405
+            X: 2
+            Y: 4.6
+            Z: 2.2
           }
         }
         ParentId: 6043246181186524232
@@ -384,16 +383,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -234.804031
-            Z: 7.61424255
+            X: -256.448914
+            Z: 7.61423254
           }
           Rotation {
-            Pitch: -66.5181885
           }
           Scale {
-            X: 1.39965832
-            Y: 3.58310342
-            Z: 2.23198342
+            X: 2
+            Y: 4.6
+            Z: 2.2
           }
         }
         ParentId: 6043246181186524232
@@ -401,6 +399,98 @@ Assets {
           Overrides {
             Name: "cs:ArmorValue"
             Float: 0.1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 7338592126922444533
+        Name: "TRACK"
+        Transform {
+          Location {
+            X: 72.6419678
+            Y: -170
+            Z: -81.9838562
+          }
+          Rotation {
+          }
+          Scale {
+            X: 8.2
+            Y: 1.1
+            Z: 1.6
+          }
+        }
+        ParentId: 6043246181186524232
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 8151103056808498878
+        Name: "TRACK"
+        Transform {
+          Location {
+            X: 72.6419678
+            Y: 170
+            Z: -81.9838562
+          }
+          Rotation {
+          }
+          Scale {
+            X: 8.2
+            Y: 1.1
+            Z: 1.6
+          }
+        }
+        ParentId: 6043246181186524232
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
           }
         }
         Collidable_v2 {

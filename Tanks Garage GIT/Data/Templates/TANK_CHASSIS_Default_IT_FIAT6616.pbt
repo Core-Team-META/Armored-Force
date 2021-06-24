@@ -28,7 +28,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
+          Value: "mc:eindicatorvisibility:alwaysvisible"
         }
         Vehicle {
           DriverPosition {
@@ -42,25 +42,24 @@ Assets {
           Camera {
             SelfId: 841534158063459245
           }
-          Mass: 2200
+          Mass: 4200
           PhysicsBodyScale {
-            X: 6
-            Y: 2.5
-            Z: 1.2
+            X: 10
+            Y: 5
+            Z: 1.8
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            Z: 105
+            X: 50
+            Z: 60
           }
           MaxSpeed: 2350
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 10
-          TireFriction: 20
+          TireFriction: 10
           CenterOfMassOFfset {
             Z: 20
           }
@@ -82,35 +81,35 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            FrontLeftWheelRadius: 85
-            FrontRightWheelRadius: 85
-            RearLeftWheelRadius: 85
-            RearRightWheelRadius: 85
-            FrontLeftWheelWidth: 70
-            FrontRightWheelWidth: 70
-            RearLeftWheelWidth: 70
-            RearRightWheelWidth: 70
+            FrontLeftWheelRadius: 100
+            FrontRightWheelRadius: 100
+            RearLeftWheelRadius: 100
+            RearRightWheelRadius: 100
+            FrontLeftWheelWidth: 80
+            FrontRightWheelWidth: 80
+            RearLeftWheelWidth: 80
+            RearRightWheelWidth: 80
             FrontLeftWheelOffset {
-              X: 272
-              Y: -180
-              Z: 85
+              X: 295
+              Y: -199.999969
+              Z: 90
             }
             FrontRightWheelOffset {
-              X: 272
-              Y: 180
-              Z: 85
+              X: 295
+              Y: 200
+              Z: 90
             }
             RearLeftWheelOffset {
-              X: -245
-              Y: -180
-              Z: 85
+              X: -270.000061
+              Y: -200
+              Z: 90
             }
             RearRightWheelOffset {
-              X: -245
-              Y: 180
-              Z: 85
+              X: -270.000061
+              Y: 200
+              Z: 90
             }
-            TurningRadius: 2000
+            TurningRadius: 1500
           }
         }
       }
@@ -154,16 +153,16 @@ Assets {
         Name: "Wheel"
         Transform {
           Location {
-            X: -246.30751
-            Y: 169.564087
-            Z: 85
+            X: -270
+            Y: 200
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628
@@ -303,16 +302,16 @@ Assets {
         Name: "Wheel"
         Transform {
           Location {
-            X: -246.307541
-            Y: -169.563934
-            Z: 84.9991913
+            X: -270
+            Y: -199.999969
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628
@@ -448,16 +447,16 @@ Assets {
         Name: "LeftSteeringWheel"
         Transform {
           Location {
-            X: 272.612305
-            Y: -169.563934
-            Z: 84.9991913
+            X: 295
+            Y: -199.999969
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628
@@ -624,16 +623,16 @@ Assets {
         Name: "RightSteeringWheel"
         Transform {
           Location {
-            X: 272.612335
-            Y: 169.564087
-            Z: 85
+            X: 295
+            Y: 200
+            Z: 90
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 6422864050923033628

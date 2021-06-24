@@ -31,7 +31,6 @@ local driver = nil
 local tankSet = false
 local saluteOverride = false
 local animateListener = nil
-local saluteListener = nil
 local destroyedListener = nil
 
 function GetDriver()
@@ -57,7 +56,7 @@ function CheckTankReady()
 	local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
 	
 	tankBodyServer = tankControllerServer:GetCustomProperty("ChassisReference"):WaitForObject()
-	tankBodyClient = World.SpawnAsset(GetSkin(driver), {parent = tankBodyServer})
+	tankBodyClient = World.SpawnAsset(GetSkin(driver), {parent = tankBodyServer, scale = Vector3.ONE * 1.1})
 	
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
@@ -82,9 +81,9 @@ function CheckTankReady()
 
 	if driver == Game.GetLocalPlayer() then
 		driver:SetOverrideCamera(defaultCamera)
-		SetClientData()
 	end
-
+	
+	SetClientData()
 
 	tankSet = true
 	
@@ -98,6 +97,10 @@ end
 
 function SetClientData()
 
+	if not driver then
+		return
+	end
+
 	if not driver.clientUserData.currentTankData then
 		driver.clientUserData.currentTankData = {}
 	end
@@ -108,7 +111,10 @@ function SetClientData()
 	driver.clientUserData.currentTankData.type = tankControllerServer:GetCustomProperty("Type")
 	driver.clientUserData.currentTankData.id = tankControllerServer:GetCustomProperty("Identifier")
 	driver.clientUserData.currentTankData.name = tankControllerServer:GetCustomProperty("Name")
+	driver.clientUserData.currentTankData.viewRange = tankControllerServer:GetCustomProperty("ViewRange")
 	driver.clientUserData.currentTankData.controlScript = script
+	
+	Events.Broadcast("EquippedTankDataSet", nil)
 
 end
 
@@ -175,17 +181,44 @@ end
 
 function PerformSalute()
 
+	local gameStateManager = World.FindObjectByName("GAMESTATE_MainGameStateManagerServer")
+	
+	if not Object.IsValid(gameStateManager) then
+		return
+	end
+	
+	local currentState = gameStateManager:GetCustomProperty("GameState")
+	
+	if currentState ~= "VICTORY_STATE" then
+		return
+	end
+
 	local owner = nil
 	
-	for _, p in ipairs(Game.GetPlayers()) do
-		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
-			owner = p
+	while not owner do
+		local tankOwner = tankControllerServer:GetCustomProperty("DriverID")
+		
+		if tankOwner then
+			for _, p in ipairs(Game.GetPlayers()) do
+				if p.id == tankOwner then
+					owner = p
+				end
+			end
 		end
+		
+		Task.Wait()
 	end
 	
 	tankBodyClient = World.SpawnAsset(GetSkin(owner), {parent = script})
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
+	
+	local tankId = tankControllerServer:GetCustomProperty("Identifier")
+	
+	if tankId == "26" then
+		local wheels = tankBodyClient:FindDescendantByName("WHEEL_SET")
+		wheels.visibility = Visibility.INHERIT
+	end
 	
 	Task.Wait(1)
 	
@@ -200,21 +233,21 @@ function PerformSalute()
 	local verticalLimit = tankControllerServer:GetCustomProperty("MaxElevationAngle")
 	local horizontalLimit = tankControllerServer:GetCustomProperty("HorizontalCannonAngles")
 		
-	Task.Wait(0.5)
+	Task.Wait(1)
 	
 	if verticalLimit < 15 then
 		if horizontalLimit > 0 then
-			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, -horizontalLimit), 1, true)
+			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, -horizontalLimit + cannonClient:GetRotation().z), 1, true)
 		else 
-			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, 0), 1, true)
-			turretClient:RotateTo(Rotation.New(0, 0, -25), 1, true)
+			cannonClient:RotateTo(Rotation.New(0, verticalLimit, 0), 1, true)
+			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetRotation().z), 1, true)
 		end
 	else 
 		if horizontalLimit > 0 then
-			cannonClient:RotateTo(Rotation.New(0, 15, -horizontalLimit), 1, true)
+			cannonClient:RotateTo(Rotation.New(0, 15, -horizontalLimit + cannonClient:GetRotation().z), 1, true)
 		else 
 			cannonClient:RotateTo(Rotation.New(0, 15, 0), 1, true)
-			turretClient:RotateTo(Rotation.New(0, 0, -25), 1, true)
+			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetRotation().z), 1, true)
 		end
 	end
 	
@@ -319,5 +352,5 @@ function Tick()
 end
 
 animateListener = Events.Connect("ANIMATE_FIRING", FiringAnimation)
-saluteListener = Events.Connect("VICTORY_SALUTE", PerformSalute)
 destroyedListener = script.destroyEvent:Connect(OnDestroy)
+PerformSalute()

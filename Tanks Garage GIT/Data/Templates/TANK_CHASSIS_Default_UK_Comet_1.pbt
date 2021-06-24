@@ -1,13 +1,13 @@
 Assets {
-  Id: 6798521115850491294
-  Name: "TANK_CHASSIS_Default_USSR_IS3"
+  Id: 4792894603005875016
+  Name: "TANK_CHASSIS_Default_UK_Comet_1"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 6627506282493155443
+      RootId: 13833320584572759485
       Objects {
-        Id: 6627506282493155443
-        Name: "TANK_CHASSIS_Default_USSR_IS3"
+        Id: 13833320584572759485
+        Name: "TANK_CHASSIS_Default_UK_Comet"
         Transform {
           Scale {
             X: 1
@@ -40,49 +40,48 @@ Assets {
           }
           Camera {
           }
-          Mass: 50000
+          Mass: 42000
           PhysicsBodyScale {
-            X: 11.5
-            Y: 6
+            X: 10
+            Y: 6.5
             Z: 2
           }
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -30
+            X: 40
             Z: 50
           }
-          MaxSpeed: 800
+          MaxSpeed: 1035
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
           TireFriction: 10
           CenterOfMassOFfset {
-            X: -70
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 60
-            LeftTreadWidth: 80
-            RightTreadRadius: 60
-            RightTreadWidth: 80
+            LeftTreadRadius: 40
+            LeftTreadWidth: 70
+            RightTreadRadius: 40
+            RightTreadWidth: 70
             LeftTreadOffset {
-              X: -30
-              Y: -250
-              Z: 60
+              X: 40
+              Y: -270
+              Z: 40
             }
             RightTreadOffset {
-              X: -30
-              Y: 250
-              Z: 60
+              X: 40
+              Y: 270
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 50
+            TurnSpeed: 55
           }
         }
       }

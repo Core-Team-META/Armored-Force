@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_SKIN_GE_E100"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097

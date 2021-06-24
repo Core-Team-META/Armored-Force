@@ -125,6 +125,14 @@ Assets {
             Name: "cs:MinDepressionAngle"
             Int: -6
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "T-62 A1"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

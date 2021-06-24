@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_GER_Panzer3"
         Transform {
           Scale {
-            X: 1.1
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,44 +40,44 @@ Assets {
           }
           Camera {
           }
-          Mass: 20000
+          Mass: 35000
           PhysicsBodyScale {
-            X: 5
-            Y: 3.5
-            Z: 0.852114916
+            X: 8.5
+            Y: 5
+            Z: 1.7
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            Z: 92.5440216
+            X: -50
+            Z: 60
           }
-          MaxSpeed: 1450
+          MaxSpeed: 1160
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
           TireFriction: 10
           CenterOfMassOFfset {
+            X: -40
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 70
-            RightTreadRadius: 70
-            RightTreadWidth: 70
+            LeftTreadRadius: 40
+            LeftTreadWidth: 50
+            RightTreadRadius: 40
+            RightTreadWidth: 50
             LeftTreadOffset {
               X: -40
-              Y: -195
-              Z: 70
+              Y: -210
+              Z: 40
             }
             RightTreadOffset {
               X: -40
-              Y: 195
-              Z: 70
+              Y: 210
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

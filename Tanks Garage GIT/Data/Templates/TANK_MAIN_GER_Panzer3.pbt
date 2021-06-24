@@ -121,6 +121,14 @@ Assets {
             Name: "cs:TierValue"
             Int: 1
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Panzer III"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

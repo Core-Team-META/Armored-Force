@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_US_T110"
         Transform {
           Scale {
-            X: 1
+            X: 1.2
             Y: 1
             Z: 1
           }
@@ -40,50 +40,49 @@ Assets {
           }
           Camera {
           }
-          Mass: 78000
+          Mass: 58000
           PhysicsBodyScale {
-            X: 5
-            Y: 3.5
-            Z: 1.2
+            X: 8.5
+            Y: 6
+            Z: 2
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
             X: -60
-            Z: 120
+            Z: 70
           }
           MaxSpeed: 750
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 25
+          TireFriction: 10
           CenterOfMassOFfset {
+            X: -60
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 100
-            LeftTreadWidth: 150
-            RightTreadRadius: 100
-            RightTreadWidth: 150
+            LeftTreadRadius: 60
+            LeftTreadWidth: 100
+            RightTreadRadius: 60
+            RightTreadWidth: 100
             LeftTreadOffset {
-              X: -10
-              Y: -220
-              Z: 90
+              X: -60
+              Y: -250
+              Z: 60
             }
             RightTreadOffset {
-              X: -10
-              Y: 220
-              Z: 90
+              X: -60
+              Y: 250
+              Z: 60
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 70
+            TurnSpeed: 65
           }
         }
       }

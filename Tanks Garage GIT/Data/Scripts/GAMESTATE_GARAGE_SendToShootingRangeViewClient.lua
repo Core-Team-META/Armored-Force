@@ -228,16 +228,15 @@ function ChangeGarageModel(id)
 	end
 	
 	SetGarageModelFromEquippedTank(localPlayer, id)
-	
-	if id == "26" and not Object.IsValid(garageModelWheels) then
-		local wheelSkin = defaultSkins:GetCustomProperty("26_W")
-		garageModelWheels = World.SpawnAsset(wheelSkin, {parent = equippedTankInGarage})
-	elseif id ~= "26" and Object.IsValid(garageModelWheels) then
-		garageModelWheels:Destroy()
-	end
-	
+		
 	local newModel = World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
 	local modelSFX = newModel:FindDescendantsByType("Audio")
+	
+	local wheels = newModel:FindDescendantByName("WHEEL_SET")
+	
+	if Object.IsValid(wheels) then
+		wheels.visibility = Visibility.INHERIT
+	end
 	
 	for _, c in ipairs(modelSFX) do
 		c:Stop()
@@ -300,6 +299,12 @@ function InitializeComponent()
 	
 	local newModel = World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
 	local modelSFX = newModel:FindDescendantsByType("Audio")
+	
+	local wheels = newModel:FindDescendantByName("WHEEL_SET")
+	
+	if Object.IsValid(wheels) then
+		wheels.visibility = Visibility.INHERIT
+	end
 	
 	for _, c in ipairs(modelSFX) do
 		c:Stop()

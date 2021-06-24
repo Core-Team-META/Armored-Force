@@ -121,6 +121,14 @@ Assets {
             Name: "cs:Type"
             String: "Medium"
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "T-34"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

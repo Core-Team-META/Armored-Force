@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_SKIN_Default_US_T110"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -136,6 +136,7 @@ Assets {
         Name: "AdjustmentPoint"
         Transform {
           Location {
+            X: -22
           }
           Rotation {
           }

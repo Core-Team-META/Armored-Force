@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_US_M10Wolverine"
         Transform {
           Scale {
-            X: 1.1900475
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,45 +40,44 @@ Assets {
           }
           Camera {
           }
-          Mass: 29000
+          Mass: 39000
           PhysicsBodyScale {
-            X: 5.5
-            Y: 3
-            Z: 1.2
+            X: 10
+            Y: 6
+            Z: 2.1
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -80
-            Z: 105
+            X: -70
+            Z: 50
           }
-          MaxSpeed: 1300
+          MaxSpeed: 936
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
           TireFriction: 10
           CenterOfMassOFfset {
+            X: -100
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 100
-            RightTreadRadius: 70
-            RightTreadWidth: 100
+            LeftTreadRadius: 50
+            LeftTreadWidth: 60
+            RightTreadRadius: 50
+            RightTreadWidth: 60
             LeftTreadOffset {
-              X: -30
+              X: -100
               Y: -200
-              Z: 60
+              Z: 50
             }
             RightTreadOffset {
-              X: -30
+              X: -100
               Y: 200
-              Z: 60
+              Z: 50
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

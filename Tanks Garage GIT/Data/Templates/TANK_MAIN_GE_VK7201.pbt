@@ -125,6 +125,10 @@ Assets {
             Name: "cs:MinDepressionAngle"
             Int: -7
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "VK 72.01"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

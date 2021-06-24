@@ -97,6 +97,14 @@ Assets {
             Name: "cs:MaxElevationAngle"
             Int: 20
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Leopard"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 50000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

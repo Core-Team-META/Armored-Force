@@ -125,6 +125,10 @@ Assets {
             Name: "cs:MinDepressionAngle"
             Int: -10
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "T34 Heavy"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

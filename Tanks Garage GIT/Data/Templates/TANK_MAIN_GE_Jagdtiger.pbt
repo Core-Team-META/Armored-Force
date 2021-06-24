@@ -91,7 +91,7 @@ Assets {
           }
           Overrides {
             Name: "cs:Type"
-            String: "Destroyer"
+            String: "Tank Destroyer"
           }
           Overrides {
             Name: "cs:TierValue"
@@ -124,6 +124,14 @@ Assets {
           Overrides {
             Name: "cs:MinDepressionAngle"
             Int: -10
+          }
+          Overrides {
+            Name: "cs:Name"
+            String: "Jagdtiger"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 35000
           }
         }
         WantsNetworking: true

@@ -125,6 +125,14 @@ Assets {
             Name: "cs:MinDepressionAngle"
             Int: -9
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "M48 Patton"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

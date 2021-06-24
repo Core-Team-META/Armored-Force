@@ -110,13 +110,11 @@ function AssignDriver(newDriver)
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 700)
+	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 100)
 	driver = newDriver
 	
 	SetTankModifications()
 	
-	--driver.isCollidable = false
-	--driver.isVisible = false
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
 	--driver.gravityScale = 0
@@ -132,17 +130,24 @@ function AssignDriver(newDriver)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
 	
-	Task.Wait(0.5)
+	Task.Wait()
 	
 	chassis:SetDriver(driver)
 	
-	hitbox = World.SpawnAsset(newHitbox, {parent = chassis})
+	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.1})
 	turret = hitbox:FindDescendantByName("Turret")
 	cannon = hitbox:FindDescendantByName("Cannon")
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
 	
-	Task.Wait(0.1)
+	Task.Wait()
+	
+	driver.isCollidable = false
+	driver.isVisible = false
+	
+	Task.Wait()
+	
+	driver:AttachToCoreObject(turret)
 	
 	hitbox:SetPosition(Vector3.ZERO)
 	
@@ -377,14 +382,14 @@ function ProjectileImpacted(expiredProjectile, other)
 	}
 	COMBAT.ApplyDamage(attackData)
 	]]
-	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", vehicle:GetWorldPosition())
+	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", vehicle:GetWorldPosition(), other.driver)
 
 end
 
 function ProjectileExpired(expiredProjectile)
 
 	local activeExplosion = World.SpawnAsset(explosion, {position = expiredProjectile:GetWorldPosition()})
-	activeExplosion.lifeSpan = 3
+	activeExplosion.lifeSpan = 6
 	
 end
 
@@ -414,8 +419,8 @@ function OnArmorHit(trigger, other)
 		
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
-		driver:ApplyDamage(damageDealt)
-		--[[
+		--driver:ApplyDamage(damageDealt)
+
 		local attackData = {
 			object = driver,
 			damage = damageDealt,
@@ -425,8 +430,8 @@ function OnArmorHit(trigger, other)
 			tags = {id = "Example"}
 		}
 		COMBAT.ApplyDamage(attackData)
-		]]
-		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition())
+		
+		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition(), driver)
 	end
 	
 end
@@ -512,14 +517,14 @@ function Tick()
 				flipping = true
 				Task.Spawn(FlipTank, 0)
 			end
-    end
+		end
     
     local angularVelo = chassis:GetAngularVelocity()
     local MAX_ANGULAR_VELOCITY = 150
     if angularVelo.sizeSquared > MAX_ANGULAR_VELOCITY * MAX_ANGULAR_VELOCITY then
       chassis:SetAngularVelocity(angularVelo:GetNormalized() * MAX_ANGULAR_VELOCITY)
     end
-		
+    
 		--[[
 		if Object.IsValid(chassis) and not flipping then
 			chassis:AddImpulse(-Vector3.UP * chassis.mass * 0.5)

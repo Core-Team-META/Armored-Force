@@ -125,6 +125,14 @@ Assets {
             Name: "cs:MinDepressionAngle"
             Int: -6
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Bat-Chat 25T"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

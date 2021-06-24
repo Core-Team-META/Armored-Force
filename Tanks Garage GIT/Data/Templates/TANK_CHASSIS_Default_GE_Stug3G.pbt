@@ -10,7 +10,7 @@ Assets {
         Name: "TANK_CHASSIS_Default_GE_Stug3G"
         Transform {
           Scale {
-            X: 1.1
+            X: 1
             Y: 1
             Z: 1
           }
@@ -40,45 +40,44 @@ Assets {
           }
           Camera {
           }
-          Mass: 23000
+          Mass: 37000
           PhysicsBodyScale {
-            X: 4.5
-            Y: 2.7
-            Z: 1
+            X: 8.2
+            Y: 5
+            Z: 1.5
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            X: -60
-            Z: 105
+            X: -40
+            Z: 50
           }
           MaxSpeed: 850
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 1
-          TireFriction: 10
+          TireFriction: 5
           CenterOfMassOFfset {
+            X: -50
             Z: 20
           }
           GravityScale: 1
           CoastBrakeStrength: 0.1
           Tank {
-            LeftTreadRadius: 70
-            LeftTreadWidth: 70
-            RightTreadRadius: 70
-            RightTreadWidth: 70
+            LeftTreadRadius: 40
+            LeftTreadWidth: 50
+            RightTreadRadius: 40
+            RightTreadWidth: 50
             LeftTreadOffset {
-              X: -20
+              X: -40
               Y: -200
-              Z: 71
+              Z: 40
             }
             RightTreadOffset {
-              X: -20
+              X: -40
               Y: 200
-              Z: 71
+              Z: 40
             }
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"

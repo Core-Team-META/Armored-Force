@@ -125,6 +125,14 @@ Assets {
             Name: "cs:MinDepressionAngle"
             Int: -12
           }
+          Overrides {
+            Name: "cs:Name"
+            String: "Comet"
+          }
+          Overrides {
+            Name: "cs:ViewRange"
+            Int: 40000
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -232,13 +240,13 @@ Assets {
           Overrides {
             Name: "cs:DefaultChassis"
             AssetReference {
-              Id: 6019478368473772471
+              Id: 4792894603005875016
             }
           }
           Overrides {
             Name: "cs:UpgradedChassis"
             AssetReference {
-              Id: 5942818711862363909
+              Id: 665104530983257129
             }
           }
           Overrides {
