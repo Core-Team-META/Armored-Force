@@ -223,7 +223,7 @@ Objects {
       WalkableFloorAngle: 50
       JumpVelocity: 900
       GroundFriction: 10
-      GravityScale: 1.9
+      GravityScale: 0.1
       MaxSwimSpeed: 420
       Buoyancy: 1
       TouchForceFactor: 1
@@ -294,6 +294,7 @@ Objects {
       RespawnMode_v2 {
         Value: "mc:erespawnmode:roundrobin"
       }
+      StartSpawned: true
       SpawnMode {
         Value: "mc:erespawnmode:roundrobin"
       }

@@ -115,8 +115,6 @@ function AssignDriver(newDriver)
 	
 	SetTankModifications()
 	
-	--driver.isCollidable = false
-	--driver.isVisible = false
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
 	--driver.gravityScale = 0
@@ -132,7 +130,7 @@ function AssignDriver(newDriver)
 	chassis:SetWorldPosition(script:GetWorldPosition())
 	chassis:SetWorldRotation(script:GetWorldRotation())
 	
-	Task.Wait(0.5)
+	Task.Wait()
 	
 	chassis:SetDriver(driver)
 	
@@ -142,7 +140,14 @@ function AssignDriver(newDriver)
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
 	
-	Task.Wait(0.1)
+	Task.Wait()
+	
+	driver.isCollidable = false
+	driver.isVisible = false
+	
+	Task.Wait()
+	
+	driver:AttachToCoreObject(turret)
 	
 	hitbox:SetPosition(Vector3.ZERO)
 	

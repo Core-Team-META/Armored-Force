@@ -40,13 +40,7 @@ function StateSTART(manager, propertyName)
 		return
 		
 	end
-	
-	for x, p in pairs(Game.GetPlayers()) do
-	
-		p:Respawn()
 		
-	end
-	
 	Game.StartRound()
 		
 	playerCountTask = Task.Spawn(CheckPlayerCountTask)

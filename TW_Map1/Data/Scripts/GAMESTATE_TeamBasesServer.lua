@@ -71,10 +71,9 @@ function StateSTART(manager, propertyName)
 	for x, p in pairs(Game.GetPlayers()) do
 		
 		damageListeners[p.id] = p.damagedEvent:Connect(ReduceCapOnDamaged)
-		p:Respawn()
 		
 	end
-	
+		
 	Game.StartRound()
 		
 	playerCountTask = Task.Spawn(CheckPlayerCountTask)

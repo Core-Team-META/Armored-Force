@@ -46,8 +46,6 @@ Assets {
             Y: 6
             Z: 2.1
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }

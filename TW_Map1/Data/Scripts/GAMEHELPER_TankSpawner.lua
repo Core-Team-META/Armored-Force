@@ -40,11 +40,21 @@ function ChangeEquippedTank(player, id)
 	
 end
 
+function ResetAllVehicles()
+	local playerList = Game.GetPlayers()
+	
+	for _, player in pairs(playerList) do
+		player:Spawn()
+		Task.Wait()
+		RemovePlayerEquipment(player)
+		GivePlayerEquipment(player)
+	end
+end
+
 function OnPlayerRespawned(player)
 
-	player.isVisible = false
-
-	Task.Wait(0.1)
+	--player.isVisible = false
+	--Task.Wait(0.1)
 	
 	RemovePlayerEquipment(player)
 	
@@ -105,5 +115,6 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+Events.Connect("RESET_TANKS", ResetAllVehicles)
 Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, id)
 Events.Connect("SET_EQUIPPED_TANK", ChangeEquippedTank, player, id)

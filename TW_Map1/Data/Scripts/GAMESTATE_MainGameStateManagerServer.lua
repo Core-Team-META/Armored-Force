@@ -61,6 +61,8 @@ function OnChangeState(previousState)
 		script:SetNetworkedCustomProperty("GameState", "MATCH_STATE")
 		
 		currentState = "MATCH_STATE"
+
+		Events.Broadcast("RESET_TANKS")
 		
 		SetTimer(matchMaxDuration)
 		
@@ -78,7 +80,7 @@ function OnChangeState(previousState)
 		
 			p:SetResource("MatchEndHP", p.hitPoints)
 			
-			p:Respawn()
+			p:Spawn()
 					
 		end
 
