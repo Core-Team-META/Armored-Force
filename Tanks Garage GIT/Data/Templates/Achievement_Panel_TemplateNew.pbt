@@ -89,6 +89,24 @@ Assets {
               SubObjectId: 2056903401633718081
             }
           }
+          Overrides {
+            Name: "cs:FREERP"
+            ObjectReference {
+              SubObjectId: 8211306776785742564
+            }
+          }
+          Overrides {
+            Name: "cs:Silver"
+            ObjectReference {
+              SubObjectId: 14184331668212968370
+            }
+          }
+          Overrides {
+            Name: "cs:Gold"
+            ObjectReference {
+              SubObjectId: 513946064933432338
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -638,7 +656,7 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 15
+            Size: 18
             Justification {
               Value: "mc:etextjustify:left"
             }
@@ -751,6 +769,12 @@ Assets {
             Name: "cs:Icon"
             ObjectReference {
               SubObjectId: 17110651661015553262
+            }
+          }
+          Overrides {
+            Name: "cs:Value"
+            ObjectReference {
+              SubObjectId: 5057280018162386662
             }
           }
         }
@@ -940,7 +964,7 @@ Assets {
       }
       Objects {
         Id: 8211306776785742564
-        Name: "Silver"
+        Name: "FREE RP"
         Transform {
           Location {
           }
@@ -960,6 +984,12 @@ Assets {
             Name: "cs:Icon"
             ObjectReference {
               SubObjectId: 4957820783297060253
+            }
+          }
+          Overrides {
+            Name: "cs:Value"
+            ObjectReference {
+              SubObjectId: 12391928262576577787
             }
           }
         }
@@ -1170,6 +1200,12 @@ Assets {
             Name: "cs:Icon"
             ObjectReference {
               SubObjectId: 3904291138101043893
+            }
+          }
+          Overrides {
+            Name: "cs:Value"
+            ObjectReference {
+              SubObjectId: 15446186488970589767
             }
           }
         }
