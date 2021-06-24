@@ -252,6 +252,20 @@ CHOSEN_MODE = 2
 DEPLOY.visibility = Visibility.FORCE_ON
 DEPLOY_IDLE.visibility = Visibility.FORCE_OFF
 
+local preventTime = time()
+local spamPreventDuration = 0.75
+
+local function SpamPrevent(duration)
+	duration = duration or 0
+	if preventTime < time() then
+		preventTime = time() + spamPreventDuration + duration
+		return true
+	else
+		return false
+	end
+end
+
+
 ------------------------------------------------------------------------------------------
 ---- HANDLING DROPDOWN SLIDER
 function Tick(deltaTime)
@@ -860,6 +874,7 @@ end
 ---- HANDLING BUTTON RESPONSES
 -- STATS BUTTON HANDLER
 function CLICKED_STATS(STATS_SLIDER_BUTTON)
+	if not SpamPrevent() then return end
 	SFX_CLICK:Play()
 	TANK_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_OFF
 	TANK_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
@@ -880,6 +895,7 @@ end
 
 -- PLAYER_STATS BUTTON HANDLER
 function CLICKED_PLAYER_STATS(PLAYER_STATS_BUTTON)
+	if not SpamPrevent() then return end
 	if PLAYER_STATS_BUTTON_ACTIVE.visibility == Visibility.FORCE_OFF then
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_HOVER.visibility = Visibility.FORCE_OFF
@@ -907,6 +923,7 @@ end
 
 -- TANK_STATS BUTTON HANDLER
 function CLICKED_TANK_STATS(TANK_STATS_BUTTON)
+	if not SpamPrevent() then return end
 	if TANK_STATS_BUTTON_ACTIVE.visibility == Visibility.FORCE_OFF then
 	TANK_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_ON
 	PLAYER_STATS_BUTTON_ACTIVE.visibility = Visibility.FORCE_OFF
@@ -1036,8 +1053,11 @@ end
 
 -- TECHTREE_SHOP BUTTON HANDLER
 function CLICKED_TECHTREE_SHOP(BUTTON_TECHTREE_SHOP)
-	SFX_CLICK:Play()
+	
+	
 	if ACTIVE_HEAD_MENU ~= 4 then
+		if not SpamPrevent(2.1) then return end
+		SFX_CLICK:Play()
 		ACTIVE_HEAD_MENU = 4		
 		Task.Wait(1.25)		
 		STATS_PLAYER_TOGGLE_DROPDOWN_CLOSE()
@@ -1048,6 +1068,8 @@ function CLICKED_TECHTREE_SHOP(BUTTON_TECHTREE_SHOP)
 		CLICKED_TANK_STATS(TANK_STATS_BUTTON)
 		CLICKED_BUTTON_ALLIES()
 	else
+		if not SpamPrevent(0.6) then return end
+		SFX_CLICK:Play()
 		ACTIVE_HEAD_MENU = 0
 		Task.Wait(0.5)
 		--STATS_TOGGLE_SLIDER_CLOSE()
@@ -1067,6 +1089,7 @@ end
 
 -- PREMIUM_SHOP BUTTON HANDLER
 function CLICKED_PREMIUM_SHOP(BUTTON_PREMIUM_SHOP)
+	if not SpamPrevent() then return end
 	SFX_CLICK:Play()
 	if ACTIVE_HEAD_MENU ~= 1 then
 		ACTIVE_HEAD_MENU = 1
@@ -1087,6 +1110,7 @@ end
 
 -- ACHIEVEMENTS BUTTON HANDLER
 function CLICKED_ACHIEVEMENTS(BUTTON_ACHIEVEMENTS)
+	if not SpamPrevent() then return end
 	SFX_CLICK:Play()
 	if ACTIVE_HEAD_MENU ~= 2 then
 		ACTIVE_HEAD_MENU = 2
@@ -1107,6 +1131,7 @@ end
 
 -- LEADERBOARDS BUTTON HANDLER
 function CLICKED_LEADERBOARDS(BUTTON_LEADERBOARDS)
+	if not SpamPrevent() then return end
 	SFX_CLICK:Play()
 	if ACTIVE_HEAD_MENU ~= 3 then
 		ACTIVE_HEAD_MENU = 3
@@ -1132,6 +1157,7 @@ end
 
 -- CHOOSE MODE DROPDOWN
 function CLICKED_CHOOSE_MODE(CHOOSE_MODE_BUTTON)
+	if not SpamPrevent() then return end
 	TOGGLE_DROPDOWN()
 end
 
