@@ -173,8 +173,8 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
         local healingAmount = newRow:GetCustomProperty("HealingText"):WaitForObject()
 
         -- Set player image
-        playerImage:SetImage(damageTable.damager)
-
+        playerImage:SetPlayerProfile(damageTable.damager)
+    
         -- Set player title icon and icon color
         local playerTitle = PlayerTitles.GetPlayerTitle(damageTable.damager)
 
@@ -182,7 +182,7 @@ function ShowKilledByScreen(killerPlayer, killedPlayer, sourceObjectId, extraCod
             socialIcon:SetImage(playerTitle.icon)
             socialIcon:SetColor(playerTitle.iconColor)
         else
-            socialIcon:SetImage("")
+            --socialIcon:SetImage("")
         end
 
         -- _G.META_GAME_MODES.TablePrint(playerTitle)

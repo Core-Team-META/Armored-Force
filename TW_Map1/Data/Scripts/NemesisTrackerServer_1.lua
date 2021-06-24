@@ -219,6 +219,7 @@ function CalculateNemesis()
 			nemesisPlayer.serverUserData.nemesisStorage.nemesisOfText = nemesisOfText
 			nemesisPlayer.serverUserData.nemesisStorage.nemesisOfKills = nemesisOfKills
 		end
+	end
 
 end
 
