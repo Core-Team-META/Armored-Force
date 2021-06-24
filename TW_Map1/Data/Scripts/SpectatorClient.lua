@@ -27,6 +27,7 @@ local settings = script:GetCustomProperty("Settings"):WaitForObject()
 local GAMESTATE_MainGameStateManagerServer = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local Leave = script:GetCustomProperty("Leave"):WaitForObject()
 local Close = script:GetCustomProperty("Close"):WaitForObject()
+local Requeue = script:GetCustomProperty("Requeue"):WaitForObject()
 local spectatorUIComponents = script:GetCustomProperty("SpectatorUIComponents"):WaitForObject()
 local spectatorWindow = script:GetCustomProperty("SpectatorWindow"):WaitForObject()
 
@@ -268,8 +269,13 @@ local function OnBindingReleased(player, binding)
 	end
 end
 
-function LeaveEarly()
-	Events.BroadcastToServer("LEAVE_EARLY")
+function LeaveEarly(button)
+	if button == Requeue then
+		CloseLeaveEarly()
+		Events.BroadcastToServer("LEAVE_EARLY", 1)
+	elseif button == Leave then
+		Events.BroadcastToServer("LEAVE_EARLY", 1)
+	end
 end
 
 function CloseLeaveEarly()
@@ -432,5 +438,6 @@ Game.playerLeftEvent:Connect(OnPlayerLeft)
 LocalPlayer.bindingPressedEvent:Connect(OnBindingPressed)
 LocalPlayer.bindingReleasedEvent:Connect(OnBindingReleased)
 Leave.clickedEvent:Connect(LeaveEarly)
+Requeue.clickedEvent:Connect(LeaveEarly)
 Close.clickedEvent:Connect(CloseLeaveEarly)
 GAMESTATE_MainGameStateManagerServer.networkedPropertyChangedEvent:Connect(OnStateChanged)

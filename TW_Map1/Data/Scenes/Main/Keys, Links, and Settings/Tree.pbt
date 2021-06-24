@@ -79,6 +79,10 @@ Objects {
       Name: "cs:Garage"
       String: "fdcad3/armored-force"
     }
+    Overrides {
+      Name: "cs:Map1"
+      String: "963eac/fields-last-team-standing"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
