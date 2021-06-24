@@ -71,7 +71,7 @@ A				ability_extra_30
 S				ability_extra_31
 D				ability_extra_32
 F				ability_extra_33
-G				ability_extra_34
+G				ability_extra_35
 H				ability_extra_35
 J				ability_extra_36
 K				ability_extra_37

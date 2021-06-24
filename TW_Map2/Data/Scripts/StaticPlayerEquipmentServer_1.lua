@@ -477,7 +477,7 @@ function OnBindingPressed(player,bindingPressed)
 			tankBurning = false
 		end
 		--us m3 stuart
-		if bindingPressed == "ability_extra_34" then
+		if bindingPressed == "ability_extra_35" then
 			RemovePlayerEquipment(player)
 			equipment[player] = World.SpawnAsset(EQUIPMENT_TEMPLATE19)
 			selectedEquipment[player] = EQUIPMENT_TEMPLATE19

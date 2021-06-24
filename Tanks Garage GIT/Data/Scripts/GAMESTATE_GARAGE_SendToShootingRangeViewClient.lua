@@ -274,7 +274,7 @@ end
 
 function ToggleGarage(player, binding)
 
-	if binding == "ability_extra_34" and not sendToShootingRangeViewUI.isEnabled then
+	if binding == "ability_extra_35" and not sendToShootingRangeViewUI.isEnabled then
 		SendBackToGarage(returnToGarageTrigger, localPlayer)
 	end
 	
