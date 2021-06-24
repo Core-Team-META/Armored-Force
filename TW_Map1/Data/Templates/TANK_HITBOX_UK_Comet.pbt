@@ -430,14 +430,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: 4.74177551
+            X: 4.74177647
             Y: -235
             Z: -83.4688721
           }
           Rotation {
           }
           Scale {
-            X: 8.8
+            X: 9.29999924
             Y: 0.900000036
             Z: 1.7
           }
@@ -476,14 +476,14 @@ Assets {
         Name: "TRACK"
         Transform {
           Location {
-            X: 4.74177551
+            X: 4.74177647
             Y: 235
             Z: -83.4688721
           }
           Rotation {
           }
           Scale {
-            X: 8.8
+            X: 9.29999924
             Y: 0.900000036
             Z: 1.7
           }
