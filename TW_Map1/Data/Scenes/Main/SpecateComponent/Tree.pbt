@@ -96,7 +96,7 @@ Objects {
     }
     Overrides {
       Name: "cs:B_ReturnToGarage"
-      String: "ability_extra_29"
+      String: "ability_extra_35"
     }
     Overrides {
       Name: "cs:FreecamEnabled:tooltip"

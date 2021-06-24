@@ -66,7 +66,7 @@ Y				ability_extra_25
 U				ability_extra_26
 I				ability_extra_27
 O				ability_extra_28
-P				ability_extra_29
+P				ability_extra_35
 A				ability_extra_30
 S				ability_extra_31
 D				ability_extra_32
