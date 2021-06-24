@@ -436,7 +436,7 @@ Objects {
 }
 Objects {
   Id: 17704663225119347774
-  Name: "G"
+  Name: "H"
   Transform {
     Location {
     }
@@ -521,7 +521,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "G"
+      Label: "H"
       Color {
         R: 0.623
         G: 0.623
@@ -597,7 +597,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "G"
+      Label: "H"
       Color {
         R: 0.522
         G: 0.522
