@@ -695,7 +695,6 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "AVeryLongUsername + 1"
       Color {
         R: 1
         G: 1
@@ -1501,7 +1500,6 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "AVeryLongUsername + 1"
       Color {
         R: 1
         G: 1
@@ -6496,6 +6494,30 @@ Objects {
       Name: "cs:Close"
       ObjectReference {
         SelfId: 8590067273557018676
+      }
+    }
+    Overrides {
+      Name: "cs:NEMESIS_YOUR"
+      ObjectReference {
+        SelfId: 14940810426457610594
+      }
+    }
+    Overrides {
+      Name: "cs:NEMESIS_DAMAGE"
+      ObjectReference {
+        SelfId: 17516989101505315664
+      }
+    }
+    Overrides {
+      Name: "cs:NEMESIS_OF"
+      ObjectReference {
+        SelfId: 9049348324936330796
+      }
+    }
+    Overrides {
+      Name: "cs:NEMESIS_DAMAGE_1"
+      ObjectReference {
+        SelfId: 8965355662140716760
       }
     }
   }

@@ -57,6 +57,16 @@ function GetPlayer(playerId)
 	return nil
 end
 
+function GetPlayerByName(name)
+	local playerList = Game.GetPlayers()
+	for _, player in ipairs(playerList) do
+		if player.name == name then
+			return player 
+		end
+	end
+	return nil
+end
+
 function TrackKill(victim, damage)
 
 	if not damage.sourcePlayer then	
@@ -72,14 +82,16 @@ function TrackKill(victim, damage)
 		return
 	end
 
+	local amount = damage.amount or 0
+
 	-- nemesis index
 	if not nemesisIndex[victim.name] then
 		nemesisIndex[victim.name] = {}
 	end
 	if not nemesisIndex[victim.name][killer.name] then
-		nemesisIndex[victim.name][killer.name] = 1
+		nemesisIndex[victim.name][killer.name] = amount
 	else 
-		nemesisIndex[victim.name][killer.name] = nemesisIndex[victim.name][killer.name] + 1
+		nemesisIndex[victim.name][killer.name] = nemesisIndex[victim.name][killer.name] + amount
 	end
 	
 	-- victim index
@@ -87,9 +99,9 @@ function TrackKill(victim, damage)
 		victimIndex[killer.name] = {}
 	end
 	if not victimIndex[killer.name][victim.name] then
-		victimIndex[killer.name][victim.name] = 1
+		victimIndex[killer.name][victim.name] = amount
 	else 
-		victimIndex[killer.name][victim.name] = victimIndex[killer.name][victim.name] + 1
+		victimIndex[killer.name][victim.name] = victimIndex[killer.name][victim.name] + amount
 	end
 	
 end
@@ -147,7 +159,7 @@ function CalculateNemesis()
 	local otherNemesisOfCount = 0
 	
 	-- Calculate nemesis and nemesis of messages
-	for _, player in pairs(playerList) do
+	for id, player in pairs(playerList) do
 	
 		nemesisText = "No Deaths"
 		nemesisKills = 0
@@ -194,8 +206,20 @@ function CalculateNemesis()
 		end
 		
 		table.insert(nemesisList, {player, nemesisText, nemesisKills, nemesisOfText, nemesisOfKills})
+
+		local nemesisPlayer = GetPlayer(id)
+
+		if nemesisPlayer and Object.IsValid(nemesisPlayer) then
 	
-	end		
+			nemesisPlayer.serverUserData.nemesisStorage = nemesisPlayer.serverUserData.nemesisStorage or {}
+
+			nemesisPlayer.serverUserData.nemesisStorage.nemesis = nemesisText
+			nemesisPlayer.serverUserData.nemesisStorage.nemesisKills = nemesisKills
+
+			nemesisPlayer.serverUserData.nemesisStorage.nemesisOfText = nemesisOfText
+			nemesisPlayer.serverUserData.nemesisStorage.nemesisOfKills = nemesisOfKills
+		end
+
 end
 
 function SetNemesis()

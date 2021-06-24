@@ -190,21 +190,35 @@ function SaveStatistics()
 			modifier = 2
 		end
 
-		local tempTbl = {}
-		tempTbl["XP"] = totalXp
-		tempTbl["BaseXP"] = baseXP
-		tempTbl["TankString"] = tankRPString
-		tempTbl["Silver"] = totalCurrency
-		tempTbl["Kills"] = p.kills
-		tempTbl["MatchEndHP"] = p:GetResource("MatchEndHP")
-		tempTbl["MaxHP"] = p.maxHitPoints
-		tempTbl["DamageTracker"] = p:GetResource("DamageTracker")
-		tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker")
-		tempTbl["Winner"] = isWinner
+		Task.Spawn(
+			function()
+				if p and Object.IsValid(p) then
+					local tempTbl = {}
+					tempTbl["XP"] = totalXp
+					tempTbl["BaseXP"] = baseXP
+					tempTbl["TankString"] = tankRPString
+					tempTbl["Silver"] = totalCurrency
+					tempTbl["Kills"] = p.kills
+					tempTbl["MatchEndHP"] = p:GetResource("MatchEndHP")
+					tempTbl["MaxHP"] = p.maxHitPoints
+					tempTbl["DamageTracker"] = p:GetResource("DamageTracker")
+					tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker")
+					tempTbl["Winner"] = isWinner
 
-		local storageData = Storage.GetSharedPlayerData(STORAGE_LEADERBOARD, p)
-		storageData.ROUND = tempTbl
-		Storage.SetSharedPlayerData(STORAGE_LEADERBOARD, p, storageData)
+					if p.serverUserData.nemesisStorage then
+						tempTbl["Nemesis"] = p.serverUserData.nemesisStorage.nemesis or "No Deaths"
+						tempTbl["nemesisKills"] = p.serverUserData.nemesisStorage.nemesisKills
+						tempTbl["nemesisOfText"] = p.serverUserData.nemesisStorage.nemesisOfText or "No Kills"
+						tempTbl["nemesisOfKills"] = p.serverUserData.nemesisStorage.nemesisOfKills
+					end
+
+					local storageData = Storage.GetSharedPlayerData(STORAGE_LEADERBOARD, p)
+					storageData.ROUND = tempTbl
+					Storage.SetSharedPlayerData(STORAGE_LEADERBOARD, p, storageData)
+				end
+			end,
+			1
+		)
 		--ResourceCheck(p)
 		Task.Wait(0.1)
 	end

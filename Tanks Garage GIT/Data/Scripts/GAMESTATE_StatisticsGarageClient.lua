@@ -46,6 +46,11 @@ local spottingCurrencyAmountText = script:GetCustomProperty("SpottingCurrencyAmo
 
 local CLOSE_BUTTON = script:GetCustomProperty("Close"):WaitForObject()
 
+local NEMESIS_YOUR = script:GetCustomProperty("NEMESIS_YOUR"):WaitForObject()
+local NEMESIS_DAMAGE = script:GetCustomProperty("NEMESIS_DAMAGE"):WaitForObject()
+local NEMESIS_OF = script:GetCustomProperty("NEMESIS_OF"):WaitForObject()
+local NEMESIS_OF_DAMAGE = script:GetCustomProperty("NEMESIS_DAMAGE_1"):WaitForObject()
+
 local showXPPanel = script:GetCustomProperty("ShowXPPanel"):WaitForObject()
 local XPEntry = script:GetCustomProperty("XPEntry")
 local RankEntry = script:GetCustomProperty("RankEntry")
@@ -126,7 +131,8 @@ function CalculateTotalXP(player)
 
 	return localPlayer.clientUserData.roundStats["BaseXP"] + survivalBonus +
 		(localPlayer.clientUserData.roundStats["Kills"] * killXPValue) +
-		localPlayer.clientUserData.roundStats["DamageTracker"] + localPlayer.clientUserData.roundStats["SpottingTracker"]
+		localPlayer.clientUserData.roundStats["DamageTracker"] +
+		localPlayer.clientUserData.roundStats["SpottingTracker"]
 end
 
 function CalculateTotalCurrency(player)
@@ -144,7 +150,8 @@ function CalculateTotalCurrency(player)
 	)
 
 	return baseCurrency + survivalBonus + (localPlayer.clientUserData.roundStats["Kills"] * killCurrencyValue) +
-		localPlayer.clientUserData.roundStats["DamageTracker"] + localPlayer.clientUserData.roundStats["SpottingTracker"]
+		localPlayer.clientUserData.roundStats["DamageTracker"] +
+		localPlayer.clientUserData.roundStats["SpottingTracker"]
 end
 
 function SetWinner(winningTeam)
@@ -267,6 +274,13 @@ function ShowStatisticsAnimation()
 		CalculateTotalCurrency(localPlayer),
 		modifier
 	)
+
+	local nemesisDamage = localPlayer.clientUserData.roundStats["nemesisKills"] or 0
+	local nemesisOfDamage = localPlayer.clientUserData.roundStats["nemesisOfKills"] or 0
+	NEMESIS_YOUR.text = localPlayer.clientUserData.roundStats["Nemesis"] or ""
+	NEMESIS_DAMAGE.text = tostring(nemesisDamage)
+	NEMESIS_OF.text = localPlayer.clientUserData.roundStats["nemesisOfText"] or ""
+	NEMESIS_OF_DAMAGE.text = tostring(nemesisOfDamage)
 end
 
 Events.Connect("LAST_ROUND_STATS", StateSTART)
