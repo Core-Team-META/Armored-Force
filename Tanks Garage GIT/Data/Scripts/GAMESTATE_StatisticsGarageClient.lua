@@ -126,7 +126,7 @@ function CalculateTotalXP(player)
 
 	return localPlayer.clientUserData.roundStats["BaseXP"] + survivalBonus +
 		(localPlayer.clientUserData.roundStats["Kills"] * killXPValue) +
-		localPlayer.clientUserData.roundStats["DamageTracker"]
+		localPlayer.clientUserData.roundStats["DamageTracker"] + localPlayer.clientUserData.roundStats["SpottingTracker"]
 end
 
 function CalculateTotalCurrency(player)
@@ -144,7 +144,7 @@ function CalculateTotalCurrency(player)
 	)
 
 	return baseCurrency + survivalBonus + (localPlayer.clientUserData.roundStats["Kills"] * killCurrencyValue) +
-		localPlayer.clientUserData.roundStats["DamageTracker"]
+		localPlayer.clientUserData.roundStats["DamageTracker"] + localPlayer.clientUserData.roundStats["SpottingTracker"]
 end
 
 function SetWinner(winningTeam)

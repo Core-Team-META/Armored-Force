@@ -69,6 +69,7 @@ function AddToList(player)
 				-- Add RP to tank
 				player:AddResource(UTIL_API.GetTankRPString(player:GetResource(Constants_API.GetEquippedTankResource())), modifiedXP)
 				Events.BroadcastToPlayer(player, "GainXP", {reason = Constants_API.XP_GAIN_REASON.SPOTTED_ENEMY, amount = modifiedXP, premium = UTIL_API.UsingPremiumTank(tonumber(tankId))})
+				Events.Broadcast("PlayerSpotted", player, modifiedXP)
 				table.insert(spottedPlayerList, player.id)
 			end
 			
