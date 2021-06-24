@@ -414,7 +414,7 @@ function Tick(deltaTime)
 				(TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME
 			)
 		end
-		SHELL_DENY_CONFIRM.y = SHELL_DENY_newPosition
+		SHELL_UPGRADE_DENY.y = SHELL_DENY_newPosition
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			SHELL_DENY_isMoving = false
 		end
@@ -518,7 +518,7 @@ function Tick(deltaTime)
 				(TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining) / TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME
 			)
 		end
-		ENGINE_DENY_CONFIRM.y = ENGINE_DENY_newPosition
+		ENGINE_UPGRADE_DENY.y = ENGINE_DENY_newPosition
 		if TANKUPGRADE_DENY_timeRemaining <= 0 then
 			ENGINE_DENY_isMoving = false
 		end
@@ -806,7 +806,7 @@ end
 
 -- TOGGLE SHELL_UPGRADE_DENY OPEN
 function TOGGLE_SHELL_UPGRADE_DENY_OPEN()
-	if SHELL_UPGRADE_DENY.y == TANKUPGRADE_DENY_OPEN_DROPDOWN_Y then
+	if SHELL_UPGRADE_DENY.y == TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y then
 		SFX_SLIDE_DOWN:Play()
 		if SHELL_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
 			SHELL_DENY_targetDestination = TANKUPGRADE_DENY_OPEN_DROPDOWN_Y
@@ -821,14 +821,14 @@ end
 
 -- TOGGLE SHELL_UPGRADE_DENY CLOSE
 function TOGGLE_SHELL_UPGRADE_DENY_CLOSE()
-	if SHELL_UPGRADE_DENY.y == SHELL_DENY_OPEN_DROPDOWN_Y then
+	if SHELL_UPGRADE_DENY.y == TANKUPGRADE_DENY_OPEN_DROPDOWN_Y then
 		SFX_SLIDE_UP:Play()
 		if SHELL_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
-			SHELL_DENY_targetDestination = TANKUPGRADE_DENY_OPEN_DROPDOWN_Y
+			SHELL_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 			SHELL_DENY_timeRemaining = TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining
 		else
 			SHELL_DENY_isMoving = true
-			SHELL_DENY_targetDestination = TANKUPGRADE_DENY_OPEN_DROPDOWN_Y
+			SHELL_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 			TANKUPGRADE_DENY_timeRemaining = TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME
 		end
 	end
@@ -866,8 +866,6 @@ end
 
 -- TOGGLE TURRET_UPGRADE_DENY OPEN
 function TOGGLE_TURRET_UPGRADE_DENY_OPEN()
-	print(TURRET_UPGRADE_DENY.y)
-	print(TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y)
 	if TURRET_UPGRADE_DENY.y == TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y then
 		SFX_SLIDE_DOWN:Play()
 		if TURRET_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
@@ -883,14 +881,16 @@ end
 
 -- TOGGLE TURRET_UPGRADE_DENY CLOSE
 function TOGGLE_TURRET_UPGRADE_DENY_CLOSE()
-	if TURRET_UPGRADE_DENY.y == TURRET_DENY_OPEN_DROPDOWN_Y then
+	print("CLOSE")
+	print(TURRET_UPGRADE_DENY.y)
+	if TURRET_UPGRADE_DENY.y == TANKUPGRADE_DENY_OPEN_DROPDOWN_Y then
 		SFX_SLIDE_UP:Play()
 		if TURRET_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
-			TURRET_DENY_targetDestination = TANKUPGRADE_DENY_OPEN_DROPDOWN_Y
+			TURRET_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 			TURRET_DENY_timeRemaining = TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining
 		else
 			TURRET_DENY_isMoving = true
-			TURRET_DENY_targetDestination = TANKUPGRADE_DENY_OPEN_DROPDOWN_Y
+			TURRET_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 			TANKUPGRADE_DENY_timeRemaining = TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME
 		end
 	end
@@ -958,7 +958,7 @@ end
 
 -- TOGGLE ENGINE_UPGRADE_DENY OPEN
 function TOGGLE_ENGINE_UPGRADE_DENY_OPEN()
-	if ENGINE_UPGRADE_DENY.y == TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y then
+	if ENGINE_UPGRADE_DENY.y == TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y then
 		SFX_SLIDE_DOWN:Play()
 		if ENGINE_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
 			ENGINE_DENY_targetDestination = TANKUPGRADE_DENY_OPEN_DROPDOWN_Y
@@ -973,14 +973,14 @@ end
 
 -- TOGGLE ENGINE_UPGRADE_DENY CLOSE
 function TOGGLE_ENGINE_UPGRADE_DENY_CLOSE()
-	if ENGINE_UPGRADE_DENY.y == ENGINE_DENY_OPEN_DROPDOWN_Y then
+	if ENGINE_UPGRADE_DENY.y == TANKUPGRADE_DENY_OPEN_DROPDOWN_Y then
 		SFX_SLIDE_UP:Play()
 		if ENGINE_DENY_isMoving and TANKUPGRADE_DENY_timeRemaining > 0 then
-			ENGINE_DENY_targetDestination = TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y
+			ENGINE_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 			ENGINE_DENY_timeRemaining = TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME - TANKUPGRADE_DENY_timeRemaining
 		else
 			ENGINE_DENY_isMoving = true
-			ENGINE_DENY_targetDestination = TANKUPGRADE_CONFIRM_CLOSED_DROPDOWN_Y
+			ENGINE_DENY_targetDestination = TANKUPGRADE_DENY_CLOSED_DROPDOWN_Y
 			TANKUPGRADE_DENY_timeRemaining = TANKUPGRADE_DENY_DROPDOWN_TOGGLE_TIME
 		end
 	end
@@ -3379,6 +3379,18 @@ function UpgradeFailedSlide(part)
 	end
 end
 
+function ConvertXP()
+	Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 3)
+	Task.Wait(1.8)
+	Events.Broadcast("NavigateToPremiumShop")
+end
+
+function AddSilver()
+	Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 2)
+	Task.Wait(1.8)
+	Events.Broadcast("NavigateToPremiumShop")
+end
+
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS
@@ -3545,6 +3557,18 @@ BUTTON_AXIS_T4H_1.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_1)
 BUTTON_AXIS_T4H_2.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_2)
 BUTTON_AXIS_T4H_3.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_3)
 BUTTON_AXIS_T4D.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4D)
+
+TURRET_UPGRADE_DENY:FindDescendantByName("Turret_CloseDeny").clickedEvent:Connect(TOGGLE_TURRET_UPGRADE_DENY_CLOSE)
+SHELL_UPGRADE_DENY:FindDescendantByName("Shell_CloseDeny").clickedEvent:Connect(TOGGLE_SHELL_UPGRADE_DENY_CLOSE)
+ENGINE_UPGRADE_DENY:FindDescendantByName("Engine_CloseDeny").clickedEvent:Connect(TOGGLE_ENGINE_UPGRADE_DENY_CLOSE)
+
+TURRET_UPGRADE_DENY:FindDescendantByName("Turret_AddXP").clickedEvent:Connect(ConvertXP)
+SHELL_UPGRADE_DENY:FindDescendantByName("Shell_AddXP").clickedEvent:Connect(ConvertXP)
+ENGINE_UPGRADE_DENY:FindDescendantByName("Engine_AddXP").clickedEvent:Connect(ConvertXP)
+
+TURRET_UPGRADE_DENY:FindDescendantByName("Turret_AddSilver").clickedEvent:Connect(AddSilver)
+SHELL_UPGRADE_DENY:FindDescendantByName("Shell_AddSilver").clickedEvent:Connect(AddSilver)
+ENGINE_UPGRADE_DENY:FindDescendantByName("Engine_AddSilver").clickedEvent:Connect(AddSilver)
 
 Events.Connect("WeaponUpgradeSuccessful", ShowWeaponUpgrade)
 Events.Connect("ArmorUpgradeSuccessful", ShowArmorUpgrade)
