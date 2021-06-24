@@ -601,7 +601,7 @@ end
 
 function CloseTechTreeModal()
 	techTreeModalPopup.visibility = Visibility.FORCE_OFF
-	ResetTankDetails()
+	--ResetTankDetails()
 end
 
 function OpenDetails(button)
@@ -1425,7 +1425,8 @@ function AcceptFreeRP()
 end
 Task.Wait(2)
 Init()
-ResetTankDetails()
+PopulateSelectedTankPanel()
+--ResetTankDetails()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)

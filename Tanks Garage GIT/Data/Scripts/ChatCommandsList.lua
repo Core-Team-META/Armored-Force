@@ -194,6 +194,45 @@ commands = {
         requireMessage = false,
         adminOnly = false
     },
+
+    ["/reverttanks"] = {
+        OnCommandCalledClient = function (player, message)      
+            for i, tank in ipairs(player.clientUserData.techTreeProgress) do
+                if (tank.id == "01") then	
+                    -- Do nothing
+                elseif(tank.id == "18") then
+                    -- Do nothing
+                else					
+                    tank.purchased = false
+                    tank.researched = false
+                    tank.weaponProgress = 0
+                    tank.armorProgress = 0
+                    tank.engineProgress = 0
+                end
+            end    
+            Chat.LocalMessage("Tank progress reverted to starter tanks only.")
+        end,
+        OnCommandCalledServer = function (player, message)
+            for i, tank in ipairs(player.serverUserData.techTreeProgress) do							
+                if (tank.id == "01") then	
+                    -- Do nothing
+                elseif(tank.id == "18") then
+                    -- Do nothing
+                else						
+                    tank.purchased = false
+                    tank.researched = false
+                    tank.weaponProgress = 0
+                    tank.armorProgress = 0
+                    tank.engineProgress = 0
+                end
+            end                  	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Unlock all tanks.",
+        requireMessage = false,
+        adminOnly = false
+    },
     
     ["/respawn"] = {
         OnCommandCalledClient = function (player, message)       

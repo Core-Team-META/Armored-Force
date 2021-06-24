@@ -47,7 +47,7 @@ function OnPlayerJoined(player)
 	end
 	
 	-- Uncomment to reset tutorial progress
-	player:SetResource("TutorialProgress", 0)
+	--player:SetResource("TutorialProgress", 0)
 		
 	player.serverUserData.techTreeProgress = {}
 	
