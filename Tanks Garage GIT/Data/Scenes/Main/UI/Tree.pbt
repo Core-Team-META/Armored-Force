@@ -54,6 +54,18 @@ Objects {
         SelfId: 3711073407798969477
       }
     }
+    Overrides {
+      Name: "cs:TechTree_Contents"
+      ObjectReference {
+        SelfId: 7647187385909291407
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
