@@ -147,6 +147,7 @@ Assets {
         ChildIds: 9705601715611496922
         ChildIds: 12683427179464021774
         ChildIds: 1798660666110397606
+        ChildIds: 12145790983492942114
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -22922,6 +22923,688 @@ Assets {
         }
         Relevance {
           Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 12145790983492942114
+        Name: "WHEEL_SET"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.909090877
+            Y: 0.909090877
+            Z: 0.909090877
+          }
+        }
+        ParentId: 7388989298930460448
+        ChildIds: 11184427601277610993
+        ChildIds: 6059592223038020524
+        ChildIds: 5793539916131821659
+        ChildIds: 7575112910455537250
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 11184427601277610993
+        Name: "RightSteeringWheel"
+        Transform {
+          Location {
+            X: 295
+            Y: 200
+            Z: 90
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
+          }
+        }
+        ParentId: 12145790983492942114
+        ChildIds: 3733956209231482071
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 3733956209231482071
+        Name: "Wheel"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -179.999969
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11184427601277610993
+        ChildIds: 18285997061995271809
+        ChildIds: 626621083490905001
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 18285997061995271809
+        Name: "Military Tank Historic Wheel 01"
+        Transform {
+          Location {
+            X: 0.000350680668
+            Y: -21.7128906
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.800000131
+            Y: 0.800000131
+            Z: 0.800000131
+          }
+        }
+        ParentId: 3733956209231482071
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.127638355
+              G: 0.157
+              B: 0.121047
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12765447074461671329
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 626621083490905001
+        Name: "Tire Worn"
+        Transform {
+          Location {
+            X: 0.000320705702
+            Y: 21.7123871
+          }
+          Rotation {
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 0.995958149
+            Y: 1.01736867
+            Z: 0.995958149
+          }
+        }
+        ParentId: 3733956209231482071
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9549271738234425470
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 6059592223038020524
+        Name: "Wheel"
+        Transform {
+          Location {
+            X: -270
+            Y: 200
+            Z: 90
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
+          }
+        }
+        ParentId: 12145790983492942114
+        ChildIds: 4806794622345824269
+        ChildIds: 14997918365160700069
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 4806794622345824269
+        Name: "Military Tank Historic Wheel 01"
+        Transform {
+          Location {
+            Y: 21.7128601
+            Z: 1.52587891e-05
+          }
+          Rotation {
+            Yaw: -179.999969
+          }
+          Scale {
+            X: 0.8
+            Y: 0.800000072
+            Z: 0.8
+          }
+        }
+        ParentId: 6059592223038020524
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.127638355
+              G: 0.157
+              B: 0.121047
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12765447074461671329
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 14997918365160700069
+        Name: "Tire Worn"
+        Transform {
+          Location {
+            Y: -21.7123871
+            Z: 1.52587891e-05
+          }
+          Rotation {
+            Yaw: -179.999969
+            Roll: -89.9999695
+          }
+          Scale {
+            X: 0.995958149
+            Y: 1.01736867
+            Z: 0.995958149
+          }
+        }
+        ParentId: 6059592223038020524
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9549271738234425470
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 5793539916131821659
+        Name: "Wheel"
+        Transform {
+          Location {
+            X: -270.000061
+            Y: -200
+            Z: 90
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
+          }
+        }
+        ParentId: 12145790983492942114
+        ChildIds: 12704141394591137863
+        ChildIds: 10600855690271827321
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 12704141394591137863
+        Name: "Tire Worn"
+        Transform {
+          Location {
+            Y: 21.7128754
+          }
+          Rotation {
+            Roll: -90
+          }
+          Scale {
+            X: 0.995958
+            Y: 1.01736844
+            Z: 0.995958
+          }
+        }
+        ParentId: 5793539916131821659
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9549271738234425470
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10600855690271827321
+        Name: "Military Tank Historic Wheel 01"
+        Transform {
+          Location {
+            Y: -21.712326
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
+          }
+        }
+        ParentId: 5793539916131821659
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.127638355
+              G: 0.157
+              B: 0.121047
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12765447074461671329
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 7575112910455537250
+        Name: "LeftSteeringWheel"
+        Transform {
+          Location {
+            X: 295
+            Y: -200
+            Z: 90
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
+          }
+        }
+        ParentId: 12145790983492942114
+        ChildIds: 4938568102660215687
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 4938568102660215687
+        Name: "Wheel"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7575112910455537250
+        ChildIds: 349855627813487178
+        ChildIds: 10439126852980156700
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 349855627813487178
+        Name: "Military Tank Historic Wheel 01"
+        Transform {
+          Location {
+            X: 0.000152587891
+            Y: -21.712326
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.80000025
+            Y: 0.800000131
+            Z: 0.80000025
+          }
+        }
+        ParentId: 4938568102660215687
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 818783603953564962
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.127638355
+              G: 0.157
+              B: 0.121047
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12765447074461671329
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10439126852980156700
+        Name: "Tire Worn"
+        Transform {
+          Location {
+            X: 0.000152587891
+            Y: 21.7128754
+          }
+          Rotation {
+            Roll: -90
+          }
+          Scale {
+            X: 0.995958149
+            Y: 1.01736867
+            Z: 0.995958149
+          }
+        }
+        ParentId: 4938568102660215687
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9549271738234425470
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
         }
       }
     }

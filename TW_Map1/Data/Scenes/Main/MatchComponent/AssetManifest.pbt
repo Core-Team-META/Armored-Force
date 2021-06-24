@@ -1,13 +1,4 @@
 Assets {
-  Id: 17191612518869424272
-  Name: "Teko Light"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "TekoLight_ref"
-  }
-}
-Assets {
   Id: 17184659105200274704
   Name: "Icon Diamond"
   PlatformAssetType: 9

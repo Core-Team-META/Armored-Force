@@ -213,6 +213,13 @@ function PerformSalute()
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
 	
+	local tankId = tankControllerServer:GetCustomProperty("Identifier")
+	
+	if tankId == "26" then
+		local wheels = tankBodyClient:FindDescendantByName("WHEEL_SET")
+		wheels.visibility = Visibility.INHERIT
+	end
+	
 	Task.Wait(1)
 	
 	adjustmentPoint = tankBodyClient:FindDescendantByName("AdjustmentPoint")
@@ -230,17 +237,17 @@ function PerformSalute()
 	
 	if verticalLimit < 15 then
 		if horizontalLimit > 0 then
-			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, -horizontalLimit + cannonClient:GetWorldRotation().z), 1)
+			cannonClient:RotateTo(Rotation.New(0, vetricalLimit, -horizontalLimit + cannonClient:GetRotation().z), 1, true)
 		else 
-			cannonClient:RotateTo(Rotation.New(0, verticalLimit, 0), 1)
-			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetWorldRotation().z), 1)
+			cannonClient:RotateTo(Rotation.New(0, verticalLimit, 0), 1, true)
+			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetRotation().z), 1, true)
 		end
 	else 
 		if horizontalLimit > 0 then
-			cannonClient:RotateTo(Rotation.New(0, 15, -horizontalLimit + cannonClient:GetWorldRotation().z), 1)
+			cannonClient:RotateTo(Rotation.New(0, 15, -horizontalLimit + cannonClient:GetRotation().z), 1, true)
 		else 
-			cannonClient:RotateTo(Rotation.New(0, 15, 0), 1)
-			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetWorldRotation().z), 1)
+			cannonClient:RotateTo(Rotation.New(0, 15, 0), 1, true)
+			turretClient:RotateTo(Rotation.New(0, 0, -20 + cannonClient:GetRotation().z), 1, true)
 		end
 	end
 	

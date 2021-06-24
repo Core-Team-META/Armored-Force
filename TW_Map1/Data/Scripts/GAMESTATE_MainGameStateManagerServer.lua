@@ -80,7 +80,7 @@ function OnChangeState(previousState)
 		
 			p:SetResource("MatchEndHP", p.hitPoints)
 			
-			p:Spawn()
+			--p:Spawn()
 					
 		end
 
