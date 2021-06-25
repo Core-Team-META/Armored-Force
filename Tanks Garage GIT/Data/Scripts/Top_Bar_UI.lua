@@ -5,9 +5,12 @@ local CONTENTS = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
 local tankTbl = {}
 
 local function SetTankInfo(value)
-    CHOSEN_TANKNAME.text = tankTbl[value].name .. " (" .. tankTbl[value].type .. " Teir: " .. tankTbl[value].teir .. ")"
+    local tankType = tankTbl[value].type
+    if tankType == "Tank Destroyer" then
+        tankType = "Destroyer"
+    end
+    CHOSEN_TANKNAME.text = tankTbl[value].name .. " (T" .. tankTbl[value].teir .. " " .. tankType .. ")"
 end
-
 
 function Init()
     for _, child in ipairs(CONTENTS:GetChildren()) do
