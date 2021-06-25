@@ -63,6 +63,7 @@ function RetrieveData()
 	            end 
 	            
 	            LOCAL_PLAYER.clientUserData.techTreeProgress = tankEntryCollection
+				Events.Broadcast("LoadQuickSelect")
 	
 	            -- DEBUG print tank entries           
 	            --UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
