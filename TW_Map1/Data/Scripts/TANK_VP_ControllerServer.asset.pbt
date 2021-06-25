@@ -177,6 +177,10 @@ Assets {
         Bool: false
       }
       Overrides {
+        Name: "cs:BarrelDown"
+        Bool: false
+      }
+      Overrides {
         Name: "cs:ChassisReference:isrep"
         Bool: true
       }
@@ -322,6 +326,10 @@ Assets {
       }
       Overrides {
         Name: "cs:TurretDown:isrep"
+        Bool: true
+      }
+      Overrides {
+        Name: "cs:BarrelDown:isrep"
         Bool: true
       }
     }

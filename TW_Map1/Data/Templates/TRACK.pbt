@@ -15,7 +15,25 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16314957966692393104
+        ParentId: 2636436846409629253
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Charges"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:Enabled"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Charges:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Enabled:isrep"
+            Bool: true
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39,7 +57,7 @@ Assets {
             PreventOtherAbilities: true
             IsTargetDataUpdated: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
+              Value: "mc:eabilitysetfacing:aim"
             }
           }
           ExecutePhaseSettings {
@@ -50,7 +68,7 @@ Assets {
             PreventOtherAbilities: true
             IsTargetDataUpdated: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
+              Value: "mc:eabilitysetfacing:aim"
             }
           }
           RecoveryPhaseSettings {
@@ -65,7 +83,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
-            Duration: 30
+            Duration: 90
             CanMove: true
             CanJump: true
             CanRotate: true

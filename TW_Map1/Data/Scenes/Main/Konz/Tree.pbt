@@ -22837,7 +22837,7 @@ Objects {
 }
 Objects {
   Id: 16896586792103495400
-  Name: "FIRE"
+  Name: "REPAIRKIT"
   Transform {
     Location {
     }
@@ -22856,7 +22856,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23579,7 +23579,7 @@ Objects {
 }
 Objects {
   Id: 2941635432436958807
-  Name: "TURRET"
+  Name: "FIRE"
   Transform {
     Location {
     }
@@ -23598,7 +23598,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24343,7 +24343,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -222,7 +222,6 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      Volume: 1
       Falloff: 3600
       Radius: 400
     }
@@ -263,7 +262,6 @@ Objects {
     }
     AudioBP {
       Pitch: 500
-      Volume: 1.2
       Falloff: 3600
       Radius: 400
     }
@@ -386,6 +384,24 @@ Objects {
       Name: "cs:RepairSFX"
       ObjectReference {
         SelfId: 18214187351996667837
+      }
+    }
+    Overrides {
+      Name: "cs:TreadsPanel"
+      ObjectReference {
+        SelfId: 742158182518851632
+      }
+    }
+    Overrides {
+      Name: "cs:TurretPanel"
+      ObjectReference {
+        SelfId: 16896586792103495400
+      }
+    }
+    Overrides {
+      Name: "cs:FirePanel"
+      ObjectReference {
+        SelfId: 2941635432436958807
       }
     }
   }
@@ -613,6 +629,12 @@ Objects {
         SelfId: 16601521526429965325
       }
     }
+    Overrides {
+      Name: "cs:Charges"
+      ObjectReference {
+        SelfId: 7736957868418876027
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -765,7 +787,6 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -802,6 +823,12 @@ Objects {
       Name: "cs:LeftShadow"
       ObjectReference {
         SelfId: 3363362535169618791
+      }
+    }
+    Overrides {
+      Name: "cs:Charges"
+      ObjectReference {
+        SelfId: 4402176488457079409
       }
     }
   }
@@ -989,6 +1016,12 @@ Objects {
       Name: "cs:LeftShadow"
       ObjectReference {
         SelfId: 13533615230907245607
+      }
+    }
+    Overrides {
+      Name: "cs:Charges"
+      ObjectReference {
+        SelfId: 3985323191649983719
       }
     }
   }

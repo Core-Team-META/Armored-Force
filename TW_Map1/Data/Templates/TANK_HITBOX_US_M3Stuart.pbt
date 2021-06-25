@@ -115,7 +115,7 @@ Assets {
         Transform {
           Location {
             X: 49.1917343
-            Z: 17.4570332
+            Z: 8.36613
           }
           Rotation {
           }
@@ -175,14 +175,14 @@ Assets {
         Transform {
           Location {
             X: 309.982941
-            Z: -3.45203733
+            Z: 5.63887119
           }
           Rotation {
           }
           Scale {
             X: 1.5
-            Y: 4.00000048
-            Z: 1.80000007
+            Y: 4
+            Z: 1.39999986
           }
         }
         ParentId: 4778756153726695782
@@ -233,15 +233,15 @@ Assets {
         Name: "REAR_Profiler"
         Transform {
           Location {
-            X: -189.63826
-            Z: 2.45703363
+            X: -189.638275
+            Z: 10.1843262
           }
           Rotation {
           }
           Scale {
             X: 1.1
             Y: 4
-            Z: 1.7
+            Z: 1.39999986
           }
         }
         ParentId: 4778756153726695782
@@ -294,7 +294,7 @@ Assets {
         Transform {
           Location {
             X: 49.1917343
-            Z: 17.4570332
+            Z: 8.36613
           }
           Rotation {
           }
@@ -339,14 +339,14 @@ Assets {
         Transform {
           Location {
             X: 309.982941
-            Z: -3.45203733
+            Z: 5.63887119
           }
           Rotation {
           }
           Scale {
             X: 1.5
-            Y: 4.00000048
-            Z: 1.80000007
+            Y: 4
+            Z: 1.39999986
           }
         }
         ParentId: 2009049958420977256
@@ -383,15 +383,15 @@ Assets {
         Name: "HULLREAR"
         Transform {
           Location {
-            X: -189.63826
-            Z: 2.45703363
+            X: -189.638275
+            Z: 10.1843262
           }
           Rotation {
           }
           Scale {
             X: 1.1
             Y: 4
-            Z: 1.7
+            Z: 1.39999986
           }
         }
         ParentId: 2009049958420977256
@@ -425,18 +425,18 @@ Assets {
       }
       Objects {
         Id: 17683155132194618845
-        Name: "TRACK"
+        Name: "LEFTTRACK"
         Transform {
           Location {
             X: 79.5284
-            Y: -155
-            Z: -82.5429688
+            Y: -170
+            Z: -82.5429611
           }
           Rotation {
           }
           Scale {
-            X: 6.09999895
-            Y: 0.6
+            X: 6.6
+            Y: 1.1
             Z: 1.7
           }
         }
@@ -471,18 +471,18 @@ Assets {
       }
       Objects {
         Id: 13382001084814470016
-        Name: "TRACK"
+        Name: "RIGHTTRACK"
         Transform {
           Location {
             X: 79.5284
-            Y: 155
-            Z: -82.5429688
+            Y: 170
+            Z: -82.5429611
           }
           Rotation {
           }
           Scale {
-            X: 6.09999895
-            Y: 0.6
+            X: 6.6
+            Y: 1.1
             Z: 1.7
           }
         }
