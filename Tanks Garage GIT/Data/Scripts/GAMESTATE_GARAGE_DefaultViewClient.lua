@@ -9,6 +9,7 @@ local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitFo
 local toBattleButtons = script:GetCustomProperty("ToBattleButtons"):WaitForObject()
 local blackScreen = script:GetCustomProperty("BlackScreen"):WaitForObject()
 blackScreen.visibility = Visibility.INHERIT
+local TANK_TABLE_SLIDER = script:GetCustomProperty("TANK_TABLE_SLIDER"):WaitForObject()
 
 -- Equip tank panel
 local loadEquippableTanks = script:GetCustomProperty("LoadEquippableTanks"):WaitForObject()
@@ -54,6 +55,7 @@ function ToggleThisComponent(requestedPlayerState)
 		if(localPlayer:GetResource(API_Tutorial.GetTutorialResource()) < API_Tutorial.TutorialPhase.Completed) then
 			Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
 		end
+		TANK_TABLE_SLIDER.visibility = Visibility.FORCE_ON
 	else
 		Task.Wait(0.1)
 		DisableThisComponent()
@@ -72,6 +74,7 @@ function DisableThisComponent()
 	defaultViewUI.isEnabled = false
 	
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
+	TANK_TABLE_SLIDER.visibility = Visibility.FORCE_OFF
 end
 
 function OnOtherComponentButtonPressed(button)

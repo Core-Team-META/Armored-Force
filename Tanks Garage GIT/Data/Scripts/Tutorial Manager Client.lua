@@ -95,8 +95,8 @@ function ToggleTutorialState()
 	if(tutorialProgress == API_Tutorial.TutorialPhase.Completed) then return end	
 	if not inShootingRange then return end
 	
-	warn("tutorial1")
-	warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))	
+	--warn("tutorial1")
+	--warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))	
 
 	 --Show Tutorial Phase 1 (MovedToShootingRange)
 	if(tutorialProgress == API_Tutorial.TutorialPhase.MovedToShootingRange) then

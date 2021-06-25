@@ -275,9 +275,10 @@ function PopulatePlayerPanel()
 end
 
 function PopulateSelectedTankPanel(id)
+	print(doNotShowModal)
 	local selectedTankId = id or -1
 	local tankData = {}
-	local isSelection = tonumber(selectedTankId) > 0
+	local isSelection = tonumber(selectedTankId) > 0 
 	if(selectedTankId == -1) then -- Assume selection is currently equipped tank
 		local equippedTankId = LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource())
 		-- Because resources are saved as integers and we need our Id as a string, we need to convert it and append a "0" if the Id is < than 10
@@ -354,7 +355,7 @@ function PopulateSelectedTankPanel(id)
 		end
 	end
 	
-	if(isSelection) then
+	if(isSelection and not doNotShowModal) then
 		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_ON
 		local prereqs = GetPrerequisiteRPValues(selectedTankId)
 		PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
@@ -1436,6 +1437,7 @@ PopulateSelectedTankPanel()
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
+Events.Connect("QuickSelectTankChange", PopulateSelectedTankPanel)
 
 closeTechTreeModalButton.hoveredEvent:Connect(ButtonHover)
 closeTechTreeModalButton.clickedEvent:Connect(CloseTechTreeModal)

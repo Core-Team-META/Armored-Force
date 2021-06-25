@@ -925,6 +925,12 @@ Objects {
         Id: 3002171482500064982
       }
     }
+    Overrides {
+      Name: "cs:TANK_TABLE_SLIDER"
+      ObjectReference {
+        SelfId: 17307660758729169401
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
