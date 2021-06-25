@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13575128885289472533
+  Name: "Frame Outlined Thick 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_020"
+  }
+}
+Assets {
   Id: 12728303312772814266
   Name: "BG Flat 006"
   PlatformAssetType: 9
@@ -71,12 +80,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11748658234763714575
+  Name: "Survival Extinguisher 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Extinguisher_001"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 9297610767996246578
+  Name: "Survival Tool Toolbox 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_022"
   }
 }
 Assets {
@@ -122,5 +149,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 3807975642088276623
+  Name: "Weapon Ammo 013"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Weapon_Ammo_013"
   }
 }
