@@ -27,6 +27,7 @@ Objects {
   ChildIds: 8043684082903823001
   ChildIds: 16492573472081015425
   ChildIds: 3332374115834155172
+  ChildIds: 5046090435613223544
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,6 +40,38 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5046090435613223544
+  Name: "Bigglebuns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Bigglebuns"
   }
 }
 Objects {

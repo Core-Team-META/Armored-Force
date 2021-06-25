@@ -76,14 +76,13 @@ function CheckTankReady()
 	barrelClient = tankBodyClient:FindDescendantByName("Barrel")
 	shotSFX = tankBodyClient:FindDescendantByName("ShotSFX")
 	flashVFX = tankBodyClient:FindDescendantByName("FlashVFX")
-		
-	print(tankBodyServer.driver)
 
+	SetClientData()
+		
 	if driver == Game.GetLocalPlayer() then
 		driver:SetOverrideCamera(defaultCamera)
+		Events.Broadcast("EquippedTankSet")
 	end
-	
-	SetClientData()
 
 	tankSet = true
 	
@@ -113,9 +112,9 @@ function SetClientData()
 	driver.clientUserData.currentTankData.name = tankControllerServer:GetCustomProperty("Name")
 	driver.clientUserData.currentTankData.viewRange = tankControllerServer:GetCustomProperty("ViewRange")
 	driver.clientUserData.currentTankData.controlScript = script
+	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 	
 	Events.Broadcast("EquippedTankDataSet", nil)
-
 end
 
 function FiringAnimation(player, reloadTime)

@@ -165,6 +165,10 @@ Assets {
         Bool: false
       }
       Overrides {
+        Name: "cs:Tracked"
+        Int: 0
+      }
+      Overrides {
         Name: "cs:ChassisReference:isrep"
         Bool: true
       }
@@ -298,6 +302,10 @@ Assets {
       }
       Overrides {
         Name: "cs:DriverID:isrep"
+        Bool: true
+      }
+      Overrides {
+        Name: "cs:Tracked:isrep"
         Bool: true
       }
     }

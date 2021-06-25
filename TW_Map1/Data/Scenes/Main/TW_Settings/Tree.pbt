@@ -223,7 +223,7 @@ Objects {
       WalkableFloorAngle: 50
       JumpVelocity: 900
       GroundFriction: 10
-      GravityScale: 0.1
+      GravityScale: 1.9
       MaxSwimSpeed: 420
       Buoyancy: 1
       TouchForceFactor: 1
