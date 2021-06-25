@@ -197,6 +197,7 @@ local function OnDied()
 	lpIsDead = true
 
 	if(not SPECTATE_AFTER_DEATH) then return end
+	if #Game.GetPlayers({includeTeams = LocalPlayer.team, ignoreDead = true}) == 0 then return end
 	Task.Spawn(function()
 		Task.Wait(WAIT_TIME_AFTER_DEATH)
 		if(not lpIsDead) then return end
