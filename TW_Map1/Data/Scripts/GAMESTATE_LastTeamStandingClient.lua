@@ -89,6 +89,7 @@ end
 
 function Initialize()
 	if gameModeID == settings:GetCustomProperty("MatchMode") then
+		StateSTART(_, "GameState")
 		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 	end
 end

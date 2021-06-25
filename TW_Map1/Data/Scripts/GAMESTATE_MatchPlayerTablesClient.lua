@@ -153,5 +153,5 @@ function UpdateUITask()
 	end
 
 end
-
+StateSTART(_, "GameState")
 mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
