@@ -14,6 +14,7 @@ Objects {
       Z: 1
     }
   }
+  ChildIds: 15794543342961490778
   ChildIds: 13966797509968964878
   ChildIds: 621544670553070009
   ChildIds: 17707050887276379352
@@ -22,7 +23,6 @@ Objects {
   ChildIds: 10433577698686771103
   ChildIds: 10691560634103126800
   ChildIds: 4689494391382931675
-  ChildIds: 15794543342961490778
   ChildIds: 9760950192611797696
   ChildIds: 9150084831990358686
   ChildIds: 18175534153066006281
@@ -234,38 +234,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Patrick"
-  }
-}
-Objects {
-  Id: 15794543342961490778
-  Name: "Konz"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Konz"
   }
 }
 Objects {
@@ -1288,5 +1256,37 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Keys, Links, and Settings"
+  }
+}
+Objects {
+  Id: 15794543342961490778
+  Name: "Konz"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Konz"
   }
 }
