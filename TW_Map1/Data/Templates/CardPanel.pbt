@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7675689356358385301
+        ParentId: 4842393899849849034
         ChildIds: 15722353997458606707
         ChildIds: 8409367084575563023
         ChildIds: 12959646105579793829
@@ -568,9 +568,9 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.00402471703
-              G: 0.00477695325
-              B: 0.00749903172
+              R: 0.00570396893
+              G: 0.00749903172
+              B: 0.00402471703
               A: 1
             }
             TeamSettings {
@@ -809,9 +809,9 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.000888889
-              G: 0.00120370346
-              B: 0.002
+              R: 0.00142592588
+              G: 0.002
+              B: 0.000888889
               A: 1
             }
             TeamSettings {
@@ -887,6 +887,12 @@ Assets {
             VerticalJustification {
               Value: "mc:everticaljustification:center"
             }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+              Y: 4
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -917,11 +923,12 @@ Assets {
           }
         }
         ParentId: 18181260913508803205
-        ChildIds: 12322246360649341781
-        ChildIds: 9628772667620047406
-        ChildIds: 12827900492141927467
-        ChildIds: 14926401835101479274
-        ChildIds: 8735787290257913969
+        ChildIds: 9491281659781531714
+        ChildIds: 9197171304158501004
+        ChildIds: 10309895986477625982
+        ChildIds: 14078116420855989152
+        ChildIds: 6772027610457022194
+        ChildIds: 15122356689006132459
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -959,7 +966,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12322246360649341781
+        Id: 9491281659781531714
         Name: "DROP_SHADOW"
         Transform {
           Location {
@@ -1018,7 +1025,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9628772667620047406
+        Id: 9197171304158501004
         Name: "BACKGROUND"
         Transform {
           Location {
@@ -1032,10 +1039,10 @@ Assets {
           }
         }
         ParentId: 14054682011059450388
-        ChildIds: 15944968051735716741
-        ChildIds: 8862819181924654796
-        ChildIds: 5746409173352440063
-        ChildIds: 13222591718767927127
+        ChildIds: 8067814033259085596
+        ChildIds: 1924451282588588492
+        ChildIds: 938495324719777045
+        ChildIds: 3116946448240493738
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1073,7 +1080,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15944968051735716741
+        Id: 8067814033259085596
         Name: "BACKGROUND"
         Transform {
           Location {
@@ -1086,7 +1093,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9628772667620047406
+        ParentId: 9197171304158501004
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1111,9 +1118,9 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.0127019985
-              G: 0.01637174
-              B: 0.029
+              R: 0.0200872701
+              G: 0.0284260381
+              B: 0.0122864898
               A: 1
             }
             TeamSettings {
@@ -1134,7 +1141,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8862819181924654796
+        Id: 1924451282588588492
         Name: "BACKGROUND"
         Transform {
           Location {
@@ -1147,7 +1154,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9628772667620047406
+        ParentId: 9197171304158501004
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1169,10 +1176,10 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 7515015531196152948
+              Id: 10820194954338241369
             }
             Color {
-              A: 0.603000045
+              A: 0.603921592
             }
             TeamSettings {
             }
@@ -1192,7 +1199,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5746409173352440063
+        Id: 938495324719777045
         Name: "BOTTOM_SHINE"
         Transform {
           Location {
@@ -1205,7 +1212,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9628772667620047406
+        ParentId: 9197171304158501004
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1229,8 +1236,8 @@ Assets {
               Id: 7648893931280516746
             }
             Color {
-              G: 0.176367015
-              B: 0.728000045
+              R: 0.351866603
+              G: 0.728000045
               A: 0.261
             }
             TeamSettings {
@@ -1251,7 +1258,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13222591718767927127
+        Id: 3116946448240493738
         Name: "TOP_SHINE"
         Transform {
           Location {
@@ -1264,8 +1271,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9628772667620047406
-        ChildIds: 3381145457200110516
+        ParentId: 9197171304158501004
+        ChildIds: 18137323534347837957
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1303,7 +1310,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3381145457200110516
+        Id: 18137323534347837957
         Name: "BACKGROUND"
         Transform {
           Location {
@@ -1316,7 +1323,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13222591718767927127
+        ParentId: 3116946448240493738
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1364,7 +1371,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12827900492141927467
+        Id: 10309895986477625982
         Name: "DIVIDER"
         Transform {
           Location {
@@ -1422,7 +1429,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14926401835101479274
+        Id: 14078116420855989152
         Name: "TITLE_SECONDAIRY"
         Transform {
           Location {
@@ -1448,7 +1455,6 @@ Assets {
         Control {
           Width: 200
           Height: 60
-          UIY: 9
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1459,9 +1465,9 @@ Assets {
           Text {
             Label: "ROUND END"
             Color {
-              R: 0.391329825
-              G: 0.433365941
-              B: 0.50888145
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             Size: 27
@@ -1473,25 +1479,31 @@ Assets {
               Id: 17191612518869424272
             }
             VerticalJustification {
-              Value: "mc:everticaljustification:top"
+              Value: "mc:everticaljustification:center"
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+              Y: 3
             }
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topcenter"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topcenter"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
         }
       }
       Objects {
-        Id: 8735787290257913969
+        Id: 6772027610457022194
         Name: "TITLE_LIGHT"
         Transform {
           Location {
@@ -1516,8 +1528,7 @@ Assets {
         }
         Control {
           Width: 200
-          Height: 23
-          UIY: 9
+          Height: 24
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1542,7 +1553,244 @@ Assets {
               Id: 17191612518869424272
             }
             VerticalJustification {
-              Value: "mc:everticaljustification:top"
+              Value: "mc:everticaljustification:center"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15122356689006132459
+        Name: "CLOSE"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14054682011059450388
+        ChildIds: 4423499535599004736
+        ChildIds: 10693683044420729065
+        ChildIds: 6874907503386154048
+        ChildIds: 1505948782726726927
+        ChildIds: 130275949697513931
+        ChildIds: 17782912294938055138
+        ChildIds: 2717807541028541067
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 30
+          Height: 30
+          UIX: -15
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Panel {
+            Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4423499535599004736
+        Name: "DROPSHADOW"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15122356689006132459
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 4
+          Height: 2
+          UIY: 2.93441772
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 7946634531565250888
+            }
+            Color {
+              A: 0.327000022
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10693683044420729065
+        Name: "DEPTHSHADOW"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15122356689006132459
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 2
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 7946634531565250888
+            }
+            Color {
+              A: 0.687000036
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6874907503386154048
+        Name: "BACKGROUND"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15122356689006132459
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 10
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 7946634531565250888
+            }
+            Color {
+              R: 0.0127019985
+              G: 0.01637174
+              B: 0.029
+              A: 1
+            }
+            TeamSettings {
             }
           }
           AnchorLayout {
@@ -1554,6 +1802,347 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1505948782726726927
+        Name: "BG_GRADIENT"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15122356689006132459
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 10
+          Height: 68
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 12478180938234886174
+            }
+            Color {
+              A: 0.603000045
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 130275949697513931
+        Name: "TOP_SHINE"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15122356689006132459
+        ChildIds: 5230630718648608937
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: -2
+          Height: 5
+          UIY: -2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Panel {
+            IsClipping: true
+            Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5230630718648608937
+        Name: "BACKGROUND"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 130275949697513931
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 10
+          Height: 186
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Image {
+            Brush {
+              Id: 7946634531565250888
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.136
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17782912294938055138
+        Name: "X"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15122356689006132459
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          UIX: 1
+          UIY: -5.76153135
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Text {
+            Label: "x"
+            Color {
+              R: 0.419999957
+              A: 1
+            }
+            Size: 20
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 4913010023776999523
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:center"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 2717807541028541067
+        Name: "CLOSE_PREMIUM_SHOP_BUTTON"
+        Transform {
+          Location {
+            X: 1850
+            Y: 8745
+            Z: 815
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15122356689006132459
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 100
+          Height: 30
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Button {
+            FontColor {
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            HoveredColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            PressedColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            DisabledColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            Brush {
+              Id: 841534158063459245
+            }
+            IsButtonEnabled: true
+            ClickMode {
+              Value: "mc:ebuttonclickmode:default"
+            }
+            Font {
+            }
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:center"
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }
@@ -1588,15 +2177,6 @@ Assets {
       }
     }
     Assets {
-      Id: 7515015531196152948
-      Name: "BG Gradient 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundFlat_020"
-      }
-    }
-    Assets {
       Id: 7648893931280516746
       Name: "UI Gradient Circular 001"
       PlatformAssetType: 9
@@ -1612,6 +2192,33 @@ Assets {
       PrimaryAsset {
         AssetType: "FontAssetRef"
         AssetId: "TekoLight_ref"
+      }
+    }
+    Assets {
+      Id: 7946634531565250888
+      Name: "BG Flat 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_019"
+      }
+    }
+    Assets {
+      Id: 12478180938234886174
+      Name: "BG Highlighted 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundHighlighted_019"
+      }
+    }
+    Assets {
+      Id: 4913010023776999523
+      Name: "Baloo 2"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "Baloo2Regular_ref"
       }
     }
     PrimaryAssetId {
