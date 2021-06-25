@@ -67,6 +67,135 @@ Objects {
   }
 }
 Objects {
+  Id: 7145884715559690437
+  Name: "EXTINGUISH"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9760950192611797696
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16804178095563366274
+      value {
+        Overrides {
+          Name: "Name"
+          String: "EXTINGUISH"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10969410443581590865
+    }
+  }
+}
+Objects {
+  Id: 1874537903662608356
+  Name: "TURRET"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9760950192611797696
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15319809205196317682
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TURRET"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 911893884010453810
+    }
+  }
+}
+Objects {
+  Id: 15211898507893487104
+  Name: "TRACK"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9760950192611797696
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9383385775015807703
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TRACK"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11980922986673312361
+    }
+  }
+}
+Objects {
   Id: 13683933116930220516
   Name: "TEMPORARY_EnvironmentControl"
   Transform {
@@ -654,7 +783,7 @@ Objects {
   Control {
     Width: 140
     Height: 20
-    UIY: 14.2222023
+    UIY: 21.4931374
     RotationAngle: 180
     RenderTransformPivot {
       Anchor {
@@ -669,7 +798,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 13
+      Size: 15
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -684,8 +813,14 @@ Objects {
         A: 0.833000064
       }
       ShadowOffset {
-        Y: 1
       }
+      OutlineColor {
+        R: 0.00980963837
+        G: 0.02
+        B: 0.000265239476
+        A: 1
+      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -769,7 +904,7 @@ Objects {
 }
 Objects {
   Id: 12633089246931868798
-  Name: "TIMER"
+  Name: "BG"
   Transform {
     Location {
     }
@@ -783,7 +918,6 @@ Objects {
   }
   ParentId: 6849895786060790041
   ChildIds: 2013685511970546210
-  ChildIds: 14787206181191488442
   ChildIds: 10270133422262987784
   ChildIds: 3253969207559996586
   Collidable_v2 {
@@ -864,10 +998,10 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 0.755000055
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -924,10 +1058,10 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 0.755000055
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -941,65 +1075,6 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 14787206181191488442
-  Name: "SHINE"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12633089246931868798
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 427
-    Height: 164
-    UIY: -54.5502396
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 7648893931280516746
-      }
-      Color {
-        R: 0.351866603
-        G: 0.728000045
-        A: 0.261
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
         }
       }
     }

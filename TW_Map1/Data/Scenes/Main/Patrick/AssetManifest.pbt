@@ -16,12 +16,3 @@ Assets {
     AssetId: "BackgroundHighlighted_020"
   }
 }
-Assets {
-  Id: 7648893931280516746
-  Name: "UI Gradient Circular 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Basic_Shape_001"
-  }
-}

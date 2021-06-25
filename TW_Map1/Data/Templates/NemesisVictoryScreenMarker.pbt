@@ -58,7 +58,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 270
+          Width: 274
           Height: 115
           UIY: -94
           RenderTransformPivot {
@@ -527,10 +527,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.871367335
-              G: 0.278894424
-              B: 0.0122865
-              A: 0.655000031
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -587,10 +587,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.871367335
-              G: 0.278894424
-              B: 0.0122865
-              A: 0.655000031
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -647,10 +647,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.871367335
-              G: 0.278894424
-              B: 0.0122865
-              A: 0.655000031
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -707,10 +707,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.871367335
-              G: 0.278894424
-              B: 0.0122865
-              A: 0.655000031
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -771,8 +771,8 @@ Assets {
               Id: 10820194954338241369
             }
             Color {
-              R: 0.53
-              G: 0.242185324
+              R: 0.256166607
+              G: 0.53
               A: 0.384
             }
             TeamSettings {
@@ -893,12 +893,12 @@ Assets {
               B: 0.000367194094
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -958,12 +958,12 @@ Assets {
               B: 0.000367194094
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -1023,12 +1023,12 @@ Assets {
               B: 0.000367194094
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -1088,12 +1088,12 @@ Assets {
               B: 0.000367194094
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -1151,12 +1151,12 @@ Assets {
               B: 0.0122865
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -1215,12 +1215,12 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 12
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -1337,8 +1337,8 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              G: 0.00804349687
-              B: 0.0100000007
+              R: 0.00483333273
+              G: 0.0100000007
               A: 0.836
             }
             TeamSettings {
@@ -1396,9 +1396,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              G: 0.804349661
-              B: 1
-              A: 0.4
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -1455,9 +1456,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              G: 0.804349661
-              B: 1
-              A: 0.4
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -1514,9 +1516,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              G: 0.804349661
-              B: 1
-              A: 0.4
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -1573,9 +1576,10 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              G: 0.804349661
-              B: 1
-              A: 0.4
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
+              A: 1
             }
             TeamSettings {
             }
@@ -1636,8 +1640,8 @@ Assets {
               Id: 10820194954338241369
             }
             Color {
-              G: 0.804349661
-              B: 1
+              R: 0.48333323
+              G: 1
               A: 0.4
             }
             TeamSettings {
@@ -1758,12 +1762,12 @@ Assets {
               B: 0.0833333358
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -1821,12 +1825,12 @@ Assets {
               B: 0.0833333358
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -1884,12 +1888,12 @@ Assets {
               B: 0.0833333358
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -1948,12 +1952,12 @@ Assets {
               B: 0.0833333358
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -2012,12 +2016,12 @@ Assets {
               B: 0.654834628
               A: 1
             }
-            Size: 13
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 10698833128597864431
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -2076,12 +2080,12 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 12
+            Size: 16
             Justification {
               Value: "mc:etextjustify:center"
             }
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
           }
           AnchorLayout {
@@ -2127,21 +2131,21 @@ Assets {
       }
     }
     Assets {
-      Id: 10698833128597864431
-      Name: "Play Bold"
+      Id: 16636415353835813981
+      Name: "Teko"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "PlayBold_ref"
+        AssetId: "TekoRegular_ref"
       }
     }
     Assets {
-      Id: 2044747135125227812
-      Name: "Play"
+      Id: 17191612518869424272
+      Name: "Teko Light"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "PlayRegular_ref"
+        AssetId: "TekoLight_ref"
       }
     }
     PrimaryAssetId {

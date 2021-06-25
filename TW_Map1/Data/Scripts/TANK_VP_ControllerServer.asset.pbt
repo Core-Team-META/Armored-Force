@@ -169,6 +169,14 @@ Assets {
         Int: 0
       }
       Overrides {
+        Name: "cs:Burning"
+        Bool: false
+      }
+      Overrides {
+        Name: "cs:TurretDown"
+        Bool: false
+      }
+      Overrides {
         Name: "cs:ChassisReference:isrep"
         Bool: true
       }
@@ -306,6 +314,14 @@ Assets {
       }
       Overrides {
         Name: "cs:Tracked:isrep"
+        Bool: true
+      }
+      Overrides {
+        Name: "cs:Burning:isrep"
+        Bool: true
+      }
+      Overrides {
+        Name: "cs:TurretDown:isrep"
         Bool: true
       }
     }

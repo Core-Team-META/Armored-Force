@@ -350,7 +350,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.741176486
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -418,7 +421,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -543,6 +546,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -611,6 +615,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -735,6 +740,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -804,6 +810,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -928,6 +935,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -997,6 +1005,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -1055,10 +1064,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -1125,10 +1134,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -1195,10 +1204,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -1265,10 +1274,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -1338,8 +1347,8 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 0.53
-        G: 0.242185414
+        R: 0.256166607
+        G: 0.53
         A: 0.238
       }
       TeamSettings {
@@ -1574,7 +1583,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.741176486
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -1642,7 +1654,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -1767,6 +1779,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -1835,6 +1848,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -1959,6 +1973,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -2028,6 +2043,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -2152,6 +2168,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -2221,6 +2238,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -2279,10 +2297,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -2349,10 +2367,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -2419,10 +2437,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -2489,10 +2507,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -2562,8 +2580,8 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 0.53
-        G: 0.242185414
+        R: 0.256166607
+        G: 0.53
         A: 0.238
       }
       TeamSettings {
@@ -2798,7 +2816,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.741176486
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -2866,7 +2887,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -2991,6 +3012,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -3059,6 +3081,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -3183,6 +3206,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -3252,6 +3276,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -3376,6 +3401,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -3445,6 +3471,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -3503,10 +3530,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -3573,10 +3600,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -3643,10 +3670,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -3713,10 +3740,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -3786,8 +3813,8 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 0.53
-        G: 0.242185414
+        R: 0.256166607
+        G: 0.53
         A: 0.238
       }
       TeamSettings {
@@ -4022,7 +4049,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.741176486
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -4090,7 +4120,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -4215,6 +4245,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -4283,6 +4314,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -4407,6 +4439,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -4476,6 +4509,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -4600,6 +4634,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -4669,6 +4704,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -4727,10 +4763,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -4797,10 +4833,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -4867,10 +4903,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -4937,10 +4973,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -5010,8 +5046,8 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 0.53
-        G: 0.242185414
+        R: 0.256166607
+        G: 0.53
         A: 0.238
       }
       TeamSettings {
@@ -5246,7 +5282,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.741176486
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -5314,7 +5353,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -5439,6 +5478,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -5507,6 +5547,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -5631,6 +5672,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -5700,6 +5742,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -5824,6 +5867,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -5893,6 +5937,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -5951,10 +5996,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -6021,10 +6066,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -6091,10 +6136,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -6161,10 +6206,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -6234,8 +6279,8 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 0.53
-        G: 0.242185414
+        R: 0.256166607
+        G: 0.53
         A: 0.238
       }
       TeamSettings {
@@ -6469,7 +6514,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.741176486
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -6537,7 +6585,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -6662,6 +6710,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -6730,6 +6779,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -6854,6 +6904,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -6923,6 +6974,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -7047,6 +7099,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -7116,6 +7169,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -7245,10 +7299,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -7315,10 +7369,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -7385,10 +7439,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -7455,10 +7509,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -7692,7 +7746,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.741176486
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -7760,7 +7817,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -7885,6 +7942,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -7953,6 +8011,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -8077,6 +8136,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -8146,6 +8206,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -8270,6 +8331,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -8339,6 +8401,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -8397,10 +8460,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -8467,10 +8530,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -8537,10 +8600,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -8607,10 +8670,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -8680,8 +8743,8 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 0.53
-        G: 0.242185414
+        R: 0.256166607
+        G: 0.53
         A: 0.238
       }
       TeamSettings {
@@ -8914,7 +8977,10 @@ Objects {
         Id: 841534158063459245
       }
       Color {
-        A: 0.788000047
+        R: 0.00560539169
+        G: 0.00749903172
+        B: 0.00402471703
+        A: 0.772549093
       }
       TeamSettings {
       }
@@ -8982,7 +9048,7 @@ Objects {
       }
       AutoWrapText: true
       Font {
-        Id: 841534158063459245
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -9107,6 +9173,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -9175,6 +9242,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -9299,6 +9367,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -9368,6 +9437,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -9492,6 +9562,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -9561,6 +9632,7 @@ Objects {
       }
       ClipTextToSize: true
       Font {
+        Id: 16636415353835813981
       }
     }
     AnchorLayout {
@@ -9622,8 +9694,8 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 0.53
-        G: 0.242185414
+        R: 0.256166607
+        G: 0.53
         A: 0.238
       }
       TeamSettings {
@@ -9691,10 +9763,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -9761,10 +9833,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -9831,10 +9903,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.775000036
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }
@@ -9901,10 +9973,10 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.871367335
-        G: 0.278894424
-        B: 0.0122865
-        A: 0.655000031
+        R: 0.0561284944
+        G: 0.114435382
+        B: 0.00151763496
+        A: 1
       }
       TeamSettings {
       }

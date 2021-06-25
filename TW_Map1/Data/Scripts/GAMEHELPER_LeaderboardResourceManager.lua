@@ -1,5 +1,7 @@
+local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+
 local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
-local LEADERBOARD_NETREF = KEYS:GetCustomProperty("Leaderboards")
+local STORAGE_LEADERBOARD = KEYS:GetCustomProperty("Leaderboards")
 
 local LEADERBOARDS = script:GetCustomProperty("Leaderboards"):WaitForObject()
 local MTD_LEADERBOARD = LEADERBOARDS:GetCustomProperty("MatchDestroyed")
@@ -10,7 +12,7 @@ local LTWR_LEADERBOARD = LEADERBOARDS:GetCustomProperty("TotalWinRate")
 
 local MAX_ENTRIES = 10
 
-if not LEADERBOARD_NETREF then
+if not STORAGE_LEADERBOARD then
     warn("Leaderboard Net Refrence Missing!")
     return
 end
@@ -27,12 +29,14 @@ end
 
 local lastTimestamp
 
-local function BuildLeaderboardTable(netref)
+local function BuildLeaderboardTable(netref, bool)
     local tbl = {}
     local startTime = time()
-    repeat
-        Task.Wait()
-    until Leaderboards.HasLeaderboards() or time() - startTime > 30
+    if not bool then
+        repeat
+            Task.Wait()
+        until Leaderboards.HasLeaderboards() or time() - startTime > 30
+    end
     for i, entry in ipairs(Leaderboards.GetLeaderboard(netref, LeaderboardType.WEEKLY)) do
         if i <= MAX_ENTRIES then
             tbl[entry.name] = entry.score
@@ -44,25 +48,23 @@ local function BuildLeaderboardTable(netref)
 end
 
 function SetupPlayerResouces(data)
-    data.playerResources = {}
+    data.playerResources = data.playerResources or {}
 
-    data.playerResources.MTD = 0
-    data.playerResources.MDD = 0
-    data.playerResources.LTTD = 0
-    data.playerResources.LTDD = 0
-    data.playerResources.LTWR = 0
+    data.playerResources.MTD = data.playerResources.MTD or 0
+    data.playerResources.MDD = data.playerResources.MDD or 0
+    data.playerResources.LTTD = data.playerResources.LTTD or 0
+    data.playerResources.LTDD = data.playerResources.LTDD or 0
+    data.playerResources.LTWR = data.playerResources.LTWR or 0
 end
 
 function OnPlayerJoined(player)
-    local storageData = Storage.GetSharedPlayerData(LEADERBOARD_NETREF, player)
+    local storageData = Storage.GetSharedPlayerData(STORAGE_LEADERBOARD, player)
 
-    if not storageData or not storageData.playerResources then
-        SetupPlayerResouces(storageData)
-        Storage.SetSharedPlayerData(LEADERBOARD_NETREF, player, storageData)
-    end
+    SetupPlayerResouces(storageData)
 
-    player:SetResource("MatchTanksDestroyed", storageData.playerResources.MTD)
+    player.serverUserData.ACH_killCount = 0
     player:SetResource("MatchDamageDealt", storageData.playerResources.MDD)
+
     player:SetResource("LifetimeTanksDestroyed", storageData.playerResources.LTTD)
     player:SetResource("LifetimeDamageDealt", storageData.playerResources.LTDD)
     player:SetResource("LifetimeWinrate", storageData.playerResources.LTWR)
@@ -74,26 +76,46 @@ function OnPlayerJoined(player)
     storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD)
     storageData.time = os.time(os.date("!*t"))
 
-    Storage.SetSharedPlayerData(LEADERBOARD_NETREF, player, storageData)
+    Storage.SetSharedPlayerData(STORAGE_LEADERBOARD, player, storageData)
 end
 
 function OnPlayerLeft(player)
-    local storageData = Storage.GetSharedPlayerData(LEADERBOARD_NETREF, player)
+    local storageData = Storage.GetSharedPlayerData(STORAGE_LEADERBOARD, player)
 
-    storageData.playerResources.MTD = player:GetResource("MatchTanksDestroyed")
-    storageData.playerResources.MDD = player:GetResource("MatchDamageDealt")
-    storageData.playerResources.LTTD = player:GetResource("LifetimeTanksDestroyed")
-    storageData.playerResources.LTDD = player:GetResource("LifetimeDamageDealt")
-    storageData.playerResources.LTWR = player:GetResource("LifetimeWinrate")
-
-    storageData.MTD = BuildLeaderboardTable(MTD_LEADERBOARD)
-    storageData.MDD = BuildLeaderboardTable(MDD_LEADERBOARD)
-    storageData.LTTD = BuildLeaderboardTable(LTTD_LEADERBOARD)
-    storageData.LTDD = BuildLeaderboardTable(LTDD_LEADERBOARD)
-    storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD)
+    storageData.MTD = BuildLeaderboardTable(MTD_LEADERBOARD, true)
+    storageData.MDD = BuildLeaderboardTable(MDD_LEADERBOARD, true)
+    storageData.LTTD = BuildLeaderboardTable(LTTD_LEADERBOARD, true)
+    storageData.LTDD = BuildLeaderboardTable(LTDD_LEADERBOARD, true)
+    storageData.LTWR = BuildLeaderboardTable(LTWR_LEADERBOARD, true)
     storageData.time = os.time(os.date("!*t"))
 
-    Storage.SetSharedPlayerData(LEADERBOARD_NETREF, player, storageData)
+
+    local matchTanksDestroyed = player.serverUserData.ACH_killCount
+    if storageData.playerResources.MTD < matchTanksDestroyed then
+        storageData.playerResources.MTD = matchTanksDestroyed
+    end
+  
+    local matchDamageDealt = player:GetResource("MatchDamageDealt")
+    if storageData.playerResources.MDD < matchDamageDealt then
+        storageData.playerResources.MDD = matchDamageDealt
+    end
+   
+    local lifeTimeTanksDestroyed = player:GetResource("LifetimeTanksDestroyed")
+    if storageData.playerResources.LTTD < lifeTimeTanksDestroyed then
+        storageData.playerResources.LTTD = lifeTimeTanksDestroyed
+    end
+    
+    local lifeTimeDamageDealt = player:GetResource("LifetimeDamageDealt")
+    if storageData.playerResources.LTDD < lifeTimeDamageDealt then
+        storageData.playerResources.LTDD = lifeTimeDamageDealt
+    end
+    
+    local lifeTimeWinRate = player:GetResource("LifetimeWinrate")
+    if storageData.playerResources.LTWR < lifeTimeWinRate then
+        storageData.playerResources.LTWR = lifeTimeWinRate
+    end
+   
+    Storage.SetSharedPlayerData(STORAGE_LEADERBOARD, player, storageData)
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
