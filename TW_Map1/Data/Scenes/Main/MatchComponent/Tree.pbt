@@ -6682,6 +6682,9 @@ Objects {
   ParentId: 8267740080157389479
   ChildIds: 12079442732135103021
   ChildIds: 2936517260904600412
+  ChildIds: 10720673054569435460
+  ChildIds: 9696874371163028875
+  ChildIds: 10381881125052001592
   ChildIds: 16670938731671055490
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6741,6 +6744,11 @@ Objects {
   }
   ParentId: 16670938731671055490
   ChildIds: 1614656279161653162
+  ChildIds: 861262256687438097
+  ChildIds: 15464489607496022458
+  ChildIds: 11366449040649432762
+  ChildIds: 16215511540512991437
+  ChildIds: 8929696265251705174
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6752,6 +6760,1907 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 8929696265251705174
+  Name: "range tower_sm"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15244630145552195172
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13566592186840689830
+      value {
+        Overrides {
+          Name: "Name"
+          String: "range tower_sm"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1117.41406
+            Y: 4189.83789
+            Z: -3587.54785
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -109.95433
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4429895015974441344
+    }
+  }
+}
+Objects {
+  Id: 16215511540512991437
+  Name: "flag"
+  Transform {
+    Location {
+      Z: -2342.13184
+    }
+    Rotation {
+      Yaw: -41.0780334
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15244630145552195172
+  ChildIds: 3516851116148928645
+  ChildIds: 2886564713969082354
+  ChildIds: 2070802893728815653
+  ChildIds: 12584973551193781818
+  ChildIds: 13556505922076363627
+  ChildIds: 15623381871718193701
+  ChildIds: 2625760851485054463
+  ChildIds: 5954675797975501041
+  ChildIds: 2478382057417465798
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2478382057417465798
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 30.2123566
+      Y: 134.68869
+      Z: 16.0868225
+    }
+    Rotation {
+      Yaw: -30.7475891
+      Roll: 4.94932461
+    }
+    Scale {
+      X: 1.97647345
+      Y: 1.97647345
+      Z: 1.97647345
+    }
+  }
+  ParentId: 16215511540512991437
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 5954675797975501041
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 40.0903473
+      Y: -114.342728
+      Z: 27.0589752
+    }
+    Rotation {
+      Yaw: 2.27170563
+    }
+    Scale {
+      X: 1.97647345
+      Y: 1.97647345
+      Z: 1.97647345
+    }
+  }
+  ParentId: 16215511540512991437
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2625760851485054463
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1743.21448
+    }
+    Rotation {
+      Yaw: -179.999954
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.429893643
+      Y: 0.429894149
+      Z: 0.0851345509
+    }
+  }
+  ParentId: 16215511540512991437
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17717964210032804457
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15623381871718193701
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1446.07227
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: -179.999985
+    }
+    Scale {
+      X: 0.429893643
+      Y: 0.429894149
+      Z: 0.0851345509
+    }
+  }
+  ParentId: 16215511540512991437
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17717964210032804457
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 13556505922076363627
+  Name: "Fantasy Sack Laying"
+  Transform {
+    Location {
+      X: -4.20019531
+      Y: -245.016602
+      Z: 1574.151
+    }
+    Rotation {
+      Pitch: 87.9373932
+      Yaw: -177.06929
+      Roll: 1.49247813
+    }
+    Scale {
+      X: 3.04247451
+      Y: 3.04248381
+      Z: 1.16995323
+    }
+  }
+  ParentId: 16215511540512991437
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17867758206567398333
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1299092320390753640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12584973551193781818
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1780.91284
+    }
+    Rotation {
+      Pitch: 180
+    }
+    Scale {
+      X: 0.754319489
+      Y: 0.754319489
+      Z: 0.754319489
+    }
+  }
+  ParentId: 16215511540512991437
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9137069705282888790
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2070802893728815653
+  Name: "Urban Pipe Straight"
+  Transform {
+    Location {
+      Z: 14.9985352
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.13020158
+      Y: 3.13020158
+      Z: 0.377629042
+    }
+  }
+  ParentId: 16215511540512991437
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15897705887741699672
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2886564713969082354
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1804.18567
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.754319489
+      Y: 0.754319489
+      Z: 0.754319489
+    }
+  }
+  ParentId: 16215511540512991437
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7672894170880533820
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3516851116148928645
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.341201812
+      Y: 0.341201812
+      Z: 17.7590561
+    }
+  }
+  ParentId: 16215511540512991437
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 818783603953564962
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.838000059
+        G: 0.68827
+        B: 0.54051
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8155994152759289014
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11366449040649432762
+  Name: "destructible sandbags"
+  Transform {
+    Location {
+      X: -1662.09766
+      Y: -2652.01758
+      Z: -2293.08911
+    }
+    Rotation {
+      Pitch: -1.39251709
+      Yaw: 36.0895233
+      Roll: 0.998733699
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15244630145552195172
+  ChildIds: 5612759302302753970
+  ChildIds: 14891418127113337238
+  ChildIds: 4312197978069297954
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 4312197978069297954
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11366449040649432762
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 593.277893
+            Y: -365.775818
+            Z: -1.32104492
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -116.39978
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 14891418127113337238
+  Name: "Sandbag Wall_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11366449040649432762
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 992912565469932425
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1358190391205238664
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1498618904713764072
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1578644738561362412
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3409591068068092453
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3554657036469073619
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4455667514777151041
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag Wall_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -63.0433197
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4793030528138304397
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7167252974457857926
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7303644067523868597
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7351989364873707696
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7612393740914924214
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7995815423287303840
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8631622214737414581
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8831004249702647655
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8948495012808200381
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9398436376909806868
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9568422932315030436
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10396260244363450997
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10881331205719161676
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12312035119040200440
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13326250472765166784
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14730433533240659920
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17637061810446319001
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14499687446632775229
+    }
+  }
+}
+Objects {
+  Id: 5612759302302753970
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11366449040649432762
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 17.2321777
+            Y: 749.199951
+            Z: 18.7636719
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 163.248505
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 15464489607496022458
+  Name: "destructible sandbags"
+  Transform {
+    Location {
+      X: 2483.24219
+      Y: -1146.54883
+      Z: -2277.57715
+    }
+    Rotation {
+      Yaw: 96.0315094
+      Roll: 2.14327884
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15244630145552195172
+  ChildIds: 15726385918727589261
+  ChildIds: 12962352836336548147
+  ChildIds: 7197854021202511166
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 7197854021202511166
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15464489607496022458
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 593.277893
+            Y: -365.775818
+            Z: -1.32104492
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -116.39978
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 12962352836336548147
+  Name: "Sandbag Wall_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15464489607496022458
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 992912565469932425
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1358190391205238664
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1498618904713764072
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1578644738561362412
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3409591068068092453
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3554657036469073619
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4455667514777151041
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag Wall_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -63.0433197
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4793030528138304397
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7167252974457857926
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7303644067523868597
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7351989364873707696
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7612393740914924214
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7995815423287303840
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8631622214737414581
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8831004249702647655
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8948495012808200381
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9398436376909806868
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9568422932315030436
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10396260244363450997
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10881331205719161676
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12312035119040200440
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13326250472765166784
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14730433533240659920
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17637061810446319001
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14499687446632775229
+    }
+  }
+}
+Objects {
+  Id: 15726385918727589261
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15464489607496022458
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 17.2321777
+            Y: 749.199951
+            Z: 18.7636719
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 163.248505
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 861262256687438097
+  Name: "container training"
+  Transform {
+    Location {
+      X: 33604.3047
+      Y: -44294.9688
+      Z: 249.495361
+    }
+    Rotation {
+      Pitch: -0.256043285
+      Yaw: 110.14991
+      Roll: -0.425140351
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15244630145552195172
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11145278326678646849
+      value {
+        Overrides {
+          Name: "Name"
+          String: "container training"
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.5390625
+            Yaw: -77.9379883
+            Roll: 0.38492614
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1972.10938
+            Y: 1104.60547
+            Z: -2161.1582
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16944655828506709489
+    }
   }
 }
 Objects {
@@ -6796,6 +8705,162 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10381881125052001592
+  Name: "collision"
+  Transform {
+    Location {
+      X: 6.5625
+      Y: 6.12109375
+      Z: 952.76709
+    }
+    Rotation {
+      Yaw: -86.7444458
+    }
+    Scale {
+      X: 0.674473464
+      Y: 0.674473464
+      Z: 18.1664295
+    }
+  }
+  ParentId: 9835716358719369167
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9696874371163028875
+  Name: "collision"
+  Transform {
+    Location {
+      X: -2169.80469
+      Y: 1103.99609
+      Z: 428.194458
+    }
+    Rotation {
+      Yaw: -86.7444458
+    }
+    Scale {
+      X: 10.1145544
+      Y: 6.71705246
+      Z: 7.71744633
+    }
+  }
+  ParentId: 9835716358719369167
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1758388402481224558
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10720673054569435460
+  Name: "collision"
+  Transform {
+    Location {
+      X: 1122.4375
+      Y: 4328.57813
+      Z: 553.428223
+    }
+    Rotation {
+      Yaw: -89.6991
+    }
+    Scale {
+      X: 10.8265285
+      Y: 8.8399477
+      Z: 16.3269844
+    }
+  }
+  ParentId: 9835716358719369167
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1758388402481224558
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
     StaticMesh {
       Physics {
         Mass: 100
@@ -6907,6 +8972,9 @@ Objects {
   ParentId: 8267740080157389479
   ChildIds: 5966568522588242568
   ChildIds: 6743409450711468058
+  ChildIds: 16215398441480241385
+  ChildIds: 7472812997227071936
+  ChildIds: 17738890925290524785
   ChildIds: 11117588250731053673
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6966,6 +9034,11 @@ Objects {
   }
   ParentId: 11117588250731053673
   ChildIds: 14334864332276902345
+  ChildIds: 9145784342907063488
+  ChildIds: 9821830481783031989
+  ChildIds: 13000239592527608260
+  ChildIds: 12682895864671535284
+  ChildIds: 10270638467111543841
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6977,6 +9050,1921 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10270638467111543841
+  Name: "range tower_sm"
+  Transform {
+    Location {
+      X: -33432.5859
+      Y: 32244.8379
+      Z: -1207.54785
+    }
+    Rotation {
+      Yaw: -109.95433
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17535637864104918195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13566592186840689830
+      value {
+        Overrides {
+          Name: "Name"
+          String: "range tower_sm"
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 70.0456467
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 58.3359375
+            Y: -4522.03516
+            Z: -3523.28149
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4429895015974441344
+    }
+  }
+}
+Objects {
+  Id: 12682895864671535284
+  Name: "container training"
+  Transform {
+    Location {
+      X: -16963.3711
+      Y: -6184.8584
+      Z: -2459.02905
+    }
+    Rotation {
+      Pitch: -1.82525182
+      Yaw: 22.9318752
+      Roll: -0.772064149
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17535637864104918195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11145278326678646849
+      value {
+        Overrides {
+          Name: "Name"
+          String: "container training"
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.25604248
+            Yaw: 110.149925
+            Roll: -0.425140381
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2499.30469
+            Y: 135.03125
+            Z: -2130.50464
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16944655828506709489
+    }
+  }
+}
+Objects {
+  Id: 13000239592527608260
+  Name: "destructible sandbags"
+  Transform {
+    Location {
+      X: 774.080078
+      Y: 2380.63672
+      Z: -2306.38037
+    }
+    Rotation {
+      Yaw: -125.95697
+      Roll: 4.1528573
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17535637864104918195
+  ChildIds: 16247202059455611035
+  ChildIds: 3141167405653204842
+  ChildIds: 9238422998666393338
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9238422998666393338
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13000239592527608260
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 593.277893
+            Y: -365.775818
+            Z: -1.32104492
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -116.39978
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 3141167405653204842
+  Name: "Sandbag Wall_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13000239592527608260
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 992912565469932425
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1358190391205238664
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1498618904713764072
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1578644738561362412
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3409591068068092453
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3554657036469073619
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4455667514777151041
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag Wall_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -63.0433197
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4793030528138304397
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7167252974457857926
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7303644067523868597
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7351989364873707696
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7612393740914924214
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7995815423287303840
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8631622214737414581
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8831004249702647655
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8948495012808200381
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9398436376909806868
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9568422932315030436
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10396260244363450997
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10881331205719161676
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12312035119040200440
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13326250472765166784
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14730433533240659920
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17637061810446319001
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14499687446632775229
+    }
+  }
+}
+Objects {
+  Id: 16247202059455611035
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13000239592527608260
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 17.2321777
+            Y: 749.199951
+            Z: 18.7636719
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 163.248505
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 9821830481783031989
+  Name: "destructible sandbags"
+  Transform {
+    Location {
+      X: -3083.76563
+      Y: -277.003906
+      Z: -2293.08594
+    }
+    Rotation {
+      Yaw: -69.9522095
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17535637864104918195
+  ChildIds: 18220471778215954001
+  ChildIds: 4878805991099821366
+  ChildIds: 8113714163070106428
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 8113714163070106428
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9821830481783031989
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 593.277893
+            Y: -365.775818
+            Z: -1.32104492
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -116.39978
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 4878805991099821366
+  Name: "Sandbag Wall_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9821830481783031989
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 992912565469932425
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1358190391205238664
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1498618904713764072
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 1578644738561362412
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3409591068068092453
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3554657036469073619
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4455667514777151041
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag Wall_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -63.0433197
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 4793030528138304397
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7167252974457857926
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7303644067523868597
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7351989364873707696
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7612393740914924214
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7995815423287303840
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8631622214737414581
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8831004249702647655
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8948495012808200381
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9398436376909806868
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9568422932315030436
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10396260244363450997
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10881331205719161676
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12312035119040200440
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13326250472765166784
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14730433533240659920
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17637061810446319001
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14499687446632775229
+    }
+  }
+}
+Objects {
+  Id: 18220471778215954001
+  Name: "Sandbag WallSM_Destructible"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9821830481783031989
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4065610061684089389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sandbag WallSM_Destructible"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 17.2321777
+            Y: 749.199951
+            Z: 18.7636719
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 163.248505
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5888267701760982358
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6628334227826848188
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6747889640696748734
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10608737639400723689
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15681682787849492219
+      value {
+        Overrides {
+          Name: "PhysicsOverrideMass"
+          Bool: true
+        }
+        Overrides {
+          Name: "PhysicsMass"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 610936693956157938
+    }
+  }
+}
+Objects {
+  Id: 9145784342907063488
+  Name: "flag"
+  Transform {
+    Location {
+      Z: -2294.5542
+    }
+    Rotation {
+      Yaw: 120
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17535637864104918195
+  ChildIds: 12770231910150819267
+  ChildIds: 3295885610164579139
+  ChildIds: 2768134799031114701
+  ChildIds: 14735145718179147389
+  ChildIds: 7564856393438562422
+  ChildIds: 10018178697112323153
+  ChildIds: 16733481481829016639
+  ChildIds: 9598623832264147738
+  ChildIds: 13283593154452501526
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13283593154452501526
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 30.2123566
+      Y: 134.68869
+      Z: 16.0868225
+    }
+    Rotation {
+      Yaw: -30.7475891
+      Roll: 4.94932461
+    }
+    Scale {
+      X: 1.97647345
+      Y: 1.97647345
+      Z: 1.97647345
+    }
+  }
+  ParentId: 9145784342907063488
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 9598623832264147738
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 40.0903473
+      Y: -114.342728
+      Z: 27.0589752
+    }
+    Rotation {
+      Yaw: 2.27170563
+    }
+    Scale {
+      X: 1.97647345
+      Y: 1.97647345
+      Z: 1.97647345
+    }
+  }
+  ParentId: 9145784342907063488
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16733481481829016639
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1743.21448
+    }
+    Rotation {
+      Yaw: -179.999954
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.429893643
+      Y: 0.429894149
+      Z: 0.0851345509
+    }
+  }
+  ParentId: 9145784342907063488
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17717964210032804457
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 10018178697112323153
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1446.07227
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: -179.999985
+    }
+    Scale {
+      X: 0.429893643
+      Y: 0.429894149
+      Z: 0.0851345509
+    }
+  }
+  ParentId: 9145784342907063488
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17717964210032804457
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7564856393438562422
+  Name: "Fantasy Sack Laying"
+  Transform {
+    Location {
+      X: -4.20019531
+      Y: -245.016602
+      Z: 1574.151
+    }
+    Rotation {
+      Pitch: 87.9373932
+      Yaw: -177.06929
+      Roll: 1.49247813
+    }
+    Scale {
+      X: 3.04247451
+      Y: 3.04248381
+      Z: 1.16995323
+    }
+  }
+  ParentId: 9145784342907063488
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17867758206567398333
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1299092320390753640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 14735145718179147389
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1780.91284
+    }
+    Rotation {
+      Pitch: 180
+    }
+    Scale {
+      X: 0.754319489
+      Y: 0.754319489
+      Z: 0.754319489
+    }
+  }
+  ParentId: 9145784342907063488
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9137069705282888790
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 2768134799031114701
+  Name: "Urban Pipe Straight"
+  Transform {
+    Location {
+      Z: 14.9985352
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.13020158
+      Y: 3.13020158
+      Z: 0.377629042
+    }
+  }
+  ParentId: 9145784342907063488
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15897705887741699672
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3295885610164579139
+  Name: "Sphere"
+  Transform {
+    Location {
+      Z: 1804.18567
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.754319489
+      Y: 0.754319489
+      Z: 0.754319489
+    }
+  }
+  ParentId: 9145784342907063488
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 2
+        G: 1.364
+        B: 0.727999926
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7672894170880533820
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12770231910150819267
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.341201812
+      Y: 0.341201812
+      Z: 17.7590561
+    }
+  }
+  ParentId: 9145784342907063488
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 818783603953564962
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.838000059
+        G: 0.68827
+        B: 0.54051
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8155994152759289014
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -7021,6 +11009,162 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17738890925290524785
+  Name: "collision"
+  Transform {
+    Location {
+      X: 2693.08203
+      Y: 164.386719
+      Z: 434.070984
+    }
+    Rotation {
+      Yaw: -79.4928589
+    }
+    Scale {
+      X: 10.1145544
+      Y: 6.71705246
+      Z: 7.71744633
+    }
+  }
+  ParentId: 14485987308071664276
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1758388402481224558
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7472812997227071936
+  Name: "collision"
+  Transform {
+    Location {
+      X: 58.3359375
+      Y: -4522.03516
+      Z: 620.090698
+    }
+    Rotation {
+      Yaw: -89.6991
+    }
+    Scale {
+      X: 10.8265285
+      Y: 8.8399477
+      Z: 16.3269844
+    }
+  }
+  ParentId: 14485987308071664276
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1758388402481224558
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 16215398441480241385
+  Name: "collision"
+  Transform {
+    Location {
+      X: 1.34765625
+      Y: 1.62890625
+      Z: 1003.37732
+    }
+    Rotation {
+      Yaw: -86.7444458
+    }
+    Scale {
+      X: 0.674473464
+      Y: 0.674473464
+      Z: 18.1664295
+    }
+  }
+  ParentId: 14485987308071664276
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
     StaticMesh {
       Physics {
         Mass: 100
