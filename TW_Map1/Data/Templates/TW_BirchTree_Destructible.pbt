@@ -10,9 +10,9 @@ Assets {
         Name: "TW_BirchTree_Destructible"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.840592
+            Y: 0.840592
+            Z: 0.840592
           }
         }
         ParentId: 4689494391382931675
@@ -279,6 +279,12 @@ Assets {
             Name: "ma:Nature_Leaves:id"
             AssetReference {
               Id: 5200444972158461565
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Trunk:id"
+            AssetReference {
+              Id: 4643585931492114101
             }
           }
         }
