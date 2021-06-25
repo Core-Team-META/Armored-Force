@@ -151,13 +151,14 @@ function SaveStatistics()
 		local baseCurrency = drawCurrencyValue
 		local totalCurrency = CalculateTotalCurrency(p)
 
+		
+
 		SubmitScores(p)
 
-		p:AddResource(tankRPString, totalXp)
-		p:AddResource(CONSTANTS_API.XP, totalXp)
-		p:AddResource("Silver", totalCurrency)
+		
 
 		local isWinner = false
+		local isDailyWin = false
 
 		if p.team == winner then
 			--print(p.name .. " won, adding to Total Wins")
@@ -175,6 +176,20 @@ function SaveStatistics()
 			--print(p.name .. " had a draw")
 		end
 
+		-- Used for XP Multiplier
+		if p:GetResource("DAILY_BONUS") == 1 and isWinner then
+			totalXp = totalXp * 2
+			totalCurrency = totalCurrency * 2
+			baseXP = baseXP * 2
+			baseCurrency = baseCurrency * 2
+			Events.Broadcast("SetDailyWin", p)
+			isDailyWin = true
+		end
+
+		p:AddResource(tankRPString, totalXp)
+		p:AddResource(CONSTANTS_API.XP, totalXp)
+		p:AddResource("Silver", totalCurrency)
+		
 		p:AddResource(CONSTANTS_API.COMBAT_STATS.GAMES_PLAYED_RES, 1)
 
 		p:SetResource(
@@ -204,7 +219,7 @@ function SaveStatistics()
 					tempTbl["DamageTracker"] = p:GetResource("DamageTracker")
 					tempTbl["SpottingTracker"] = p:GetResource("SpottingTracker")
 					tempTbl["Winner"] = isWinner
-
+					tempTbl["DailyWin"] = isDailyWin
 					if p.serverUserData.nemesisStorage then
 						tempTbl["Nemesis"] = p.serverUserData.nemesisStorage.nemesis or "No Deaths"
 						tempTbl["nemesisKills"] = p.serverUserData.nemesisStorage.nemesisKills

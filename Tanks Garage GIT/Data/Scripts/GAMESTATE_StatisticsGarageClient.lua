@@ -51,6 +51,9 @@ local NEMESIS_DAMAGE = script:GetCustomProperty("NEMESIS_DAMAGE"):WaitForObject(
 local NEMESIS_OF = script:GetCustomProperty("NEMESIS_OF"):WaitForObject()
 local NEMESIS_OF_DAMAGE = script:GetCustomProperty("NEMESIS_DAMAGE_1"):WaitForObject()
 
+local DOUBLE_REWARD = script:GetCustomProperty("DOUBLE_REWARD"):WaitForObject()
+
+
 local showXPPanel = script:GetCustomProperty("ShowXPPanel"):WaitForObject()
 local XPEntry = script:GetCustomProperty("XPEntry")
 local RankEntry = script:GetCustomProperty("RankEntry")
@@ -224,10 +227,18 @@ function ShowStatisticsAnimation()
 		winLossText.text = "YOUR TEAM LOST"
 		baseText.text = "Loss Earnings: "
 	end
+	local modifier = 1
+	if localPlayer.clientUserData.roundStats["DailyWin"] == "^true^" then
+		DOUBLE_REWARD.visibility = Visibility.FORCE_ON
+		modifier = modifier + 1
+	else
+		DOUBLE_REWARD.visibility = Visibility.FORCE_OFF
+	end
+
 	local damageBonus = localPlayer.clientUserData.roundStats["DamageTracker"]
 	local spottingBonus = localPlayer.clientUserData.roundStats["SpottingTracker"]
 
-	local modifier = 1
+	
 	--
 	--[[if (UTIL_API.UsingPremiumTank(tonumber(localPlayer.clientUserData.currentTankData.id))) then
 		modifier = 2
