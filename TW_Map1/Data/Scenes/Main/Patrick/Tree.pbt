@@ -67,39 +67,6 @@ Objects {
   }
 }
 Objects {
-  Id: 13683933116930220516
-  Name: "TEMPORARY_EnvironmentControl"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9760950192611797696
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 941968350579038488
-    }
-  }
-}
-Objects {
   Id: 8837543661928307065
   Name: "Nameplates"
   Transform {
