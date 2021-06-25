@@ -1,27 +1,45 @@
 Assets {
-  Id: 16636415353835813981
-  Name: "Teko"
-  PlatformAssetType: 28
+  Id: 17265679504046593478
+  Name: "Vehicle Car Crash Heavy Metal Impact 02 SFX"
+  PlatformAssetType: 7
   PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "TekoRegular_ref"
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_car_crash_heavy_metal_impact_02a_Cue_ref"
   }
 }
 Assets {
-  Id: 10820194954338241369
-  Name: "BG Highlighted 001"
-  PlatformAssetType: 9
+  Id: 11970795429868016287
+  Name: "Ratchet Wrench Repair Quick 01 SFX"
+  PlatformAssetType: 7
   PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_020"
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_rachet_wrench_repair_quick_01a_Cue_ref"
   }
 }
 Assets {
-  Id: 7648893931280516746
-  Name: "UI Gradient Circular 001"
-  PlatformAssetType: 9
+  Id: 10844340598764937560
+  Name: "Fire and Flame Burning Loop Set 01 SFX"
+  PlatformAssetType: 10
   PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Basic_Shape_001"
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_nature_fireloops_ref"
+  }
+}
+Assets {
+  Id: 10073879670164126290
+  Name: "Metal Door Hatch Slide 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_metal_door_hatch_slide_01a_Cue_ref"
+  }
+}
+Assets {
+  Id: 1439471337524212660
+  Name: "Small Explosion Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_small_explosion_set_01_ref"
   }
 }

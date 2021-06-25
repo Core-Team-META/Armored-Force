@@ -65,9 +65,16 @@ local aimTask = nil
 local reloading = false
 local flipping = false
 local trackStatus = 0
+local playerWhoBurned = nil
+local turretDown = false
+local trackTask = nil
+local burnTask = nil
+local turretDamagedTask = nil
+local barrelDamagedTask = nil
 local bindingPressedListener = nil
 local diedEventListener = nil
 local destroyedListener = nil
+local consumableListener = nil
 local armorImpactListeners = {}
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
@@ -168,7 +175,7 @@ function AssignDriver(newDriver)
 	
 	bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
-	
+	consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
 	Task.Wait()
 	
 	script:SetNetworkedCustomProperty("TankReady", true)
@@ -296,6 +303,11 @@ function OnDestroy(object)
 		diedEventListener = nil
 	end
 	
+	if consumableListener then
+		consumableListener:Disconnect()
+		consumableListener = nil
+	end
+	
 	for _, a in pairs(armorImpactListeners) do
 		a:Disconnect()
 		a = nil
@@ -350,7 +362,7 @@ function FireProjectile(player)
 	Events.BroadcastToAllPlayers("ANIMATE_FIRING", driver, reloadTime)
 
 	--#TODO This should be tied into the constants file
-	player:AddResource("TOTALSHOTSFIRED", 1)
+	driver:AddResource("TOTALSHOTSFIRED", 1)
 	Task.Wait(reloadTime + 0.1)
 	
 	reloading = false
@@ -434,30 +446,147 @@ function OnArmorHit(trigger, other)
 		}
 		COMBAT.ApplyDamage(attackData)
 		
-		if trigger.name == "TRACK" and trackStatus <= 0 then
-			trackStatus = 1
-			Task.Spawn(OnTracked, 0)
-		end
-		
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition(), driver)
+		
+		if trigger.name == "TRACK" and not trackTask then
+			trackStatus = 1
+			trackTask = Task.Spawn(OnTracked, 0)
+		elseif trigger.name == "HULLREAR" and not burnTask then
+			playerWhoBurned = enemyPlayer
+			burnTask = Task.Spawn(OnBurning, 0)
+		elseif string.find(trigger.name, "TURRET") then
+			turretDown = true
+			turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
+		end
+
 	end
 	
 end
 
-function OnTracked()
+function OnConsumableUsed(consumableType)
 
+	if consumableType == "TRACK" then
+		if trackTask then
+			trackTask:Cancel()
+		end
+		
+		driver.movementControlMode = MovementControlMode.FACING_RELATIVE
+		script:SetNetworkedCustomProperty("Tracked", 0)
+		trackStatus = 0
+		Events.Broadcast("ToggleConsumable", driver, "TRACK", false)
+		
+		Task.Wait(2)
+		
+		trackTask = nil
+	elseif consumableType == "EXTINGUISH" then
+		if burnTask then
+			burnTask:Cancel()
+		end	
+		
+		script:SetNetworkedCustomProperty("Burning", false)
+		playerWhoBurned = nil
+		Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", false)
+		
+		Task.Wait(2)
+		
+		burnTask = nil
+
+	elseif consumableType == "TURRET" then
+		if turretDamagedTask then
+			turretDamagedTask:Cancel()
+		end	
+		
+		script:SetNetworkedCustomProperty("TurretDown", false)
+		turretDown = false
+		Events.Broadcast("ToggleConsumable", driver, "TURRET", false)
+		
+		Task.Wait(2)
+		
+		turretDamagedTask = nil
+	end
+
+end
+
+function OnTracked()
+	Events.Broadcast("ToggleConsumable", driver, "TRACK", true)
 	script:SetNetworkedCustomProperty("Tracked", trackStatus)
 	driver.movementControlMode = MovementControlMode.NONE
 	
-	Task.Wait(5)
+	Task.Wait(10)
 	
 	driver.movementControlMode = MovementControlMode.FACING_RELATIVE
 	script:SetNetworkedCustomProperty("Tracked", 0)
+	Events.Broadcast("ToggleConsumable", driver, "TRACK", false)
 	
-	Task.Wait(5)
+	Task.Wait(2)
 	
 	trackStatus = 0
+	trackTask = nil
 	
+end
+
+function OnBurning()
+
+	script:SetNetworkedCustomProperty("Burning", true)
+	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", true)
+	
+	for i = 10, 1, -1 do
+		local damageDealt = Damage.New(10)
+		
+		damageDealt.sourcePlayer = playerWhoBurned
+		damageDealt.reason = DamageReason.COMBAT
+		--driver:ApplyDamage(damageDealt)
+
+		local attackData = {
+			object = driver,
+			damage = damageDealt,
+			source = playerWhoBurned,
+			position = nil,
+			rotation = nil,
+			tags = {id = "Example"}
+		}
+		
+		COMBAT.ApplyDamage(attackData)
+		
+		Task.Wait(1)
+	end
+	
+	script:SetNetworkedCustomProperty("Burning", false)
+	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", false)
+	
+	Task.Wait(2)
+	
+	playerWhoBurned = nil
+	burnTask = nil
+	
+end
+
+function OnDamagedTurret()
+	
+	script:SetNetworkedCustomProperty("TurretDown", true)
+	Events.Broadcast("ToggleConsumable", driver, "TURRET", true)
+	if horizontalCannonAngles <= 0 then
+		turret:LookAtContinuous(target, true, traverseSpeed/(57 * 5))
+	end
+	
+	Task.Wait(10)
+	
+	if horizontalCannonAngles <= 0 then
+		turret:LookAtContinuous(target, true, traverseSpeed/57)
+	end
+	
+	script:SetNetworkedCustomProperty("TurretDown", false)
+	Events.Broadcast("ToggleConsumable", driver, "TURRET", false)
+	
+	Task.Wait(2)
+	
+	turretDown = false
+	turretDamagedTask = nil
+
+end
+
+function OnDamagedBarrel()
+
 end
 
 function AdjustTurretAim()
@@ -496,7 +625,11 @@ function AdjustTurretAim()
 				targetRotation.z = -horizontalCannonAngles
 			end
 			local distance = math.abs(math.sqrt((targetRotation.y - currentRotation.y) ^ 2 + (targetRotation.z - currentRotation.z) ^ 2)) + 0.1
-			cannon:RotateTo(Rotation.New(0, targetRotation.y, targetRotation.z), distance / elevationSpeed, true)
+			if not turretDown then
+				cannon:RotateTo(Rotation.New(0, targetRotation.y, targetRotation.z), distance / elevationSpeed, true)
+			else
+				cannon:RotateTo(Rotation.New(0, targetRotation.y, targetRotation.z), distance / elevationSpeed * 0.2, true)
+			end
 		end
 		
 	end

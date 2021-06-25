@@ -67,6 +67,135 @@ Objects {
   }
 }
 Objects {
+  Id: 7145884715559690437
+  Name: "EXTINGUISH"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9760950192611797696
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16804178095563366274
+      value {
+        Overrides {
+          Name: "Name"
+          String: "EXTINGUISH"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10969410443581590865
+    }
+  }
+}
+Objects {
+  Id: 1874537903662608356
+  Name: "TURRET"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9760950192611797696
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15319809205196317682
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TURRET"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 911893884010453810
+    }
+  }
+}
+Objects {
+  Id: 15211898507893487104
+  Name: "TRACK"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9760950192611797696
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9383385775015807703
+      value {
+        Overrides {
+          Name: "Name"
+          String: "TRACK"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11980922986673312361
+    }
+  }
+}
+Objects {
   Id: 13683933116930220516
   Name: "TEMPORARY_EnvironmentControl"
   Transform {
