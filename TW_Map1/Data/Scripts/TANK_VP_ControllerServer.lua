@@ -64,6 +64,7 @@ local driver = nil
 local aimTask = nil
 local reloading = false
 local flipping = false
+local trackStatus = 0
 local bindingPressedListener = nil
 local diedEventListener = nil
 local destroyedListener = nil
@@ -433,8 +434,29 @@ function OnArmorHit(trigger, other)
 		}
 		COMBAT.ApplyDamage(attackData)
 		
+		if trigger.name == "TRACK" and trackStatus <= 0 then
+			trackStatus = 1
+			Task.Spawn(OnTracked, 0)
+		end
+		
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition(), driver)
 	end
+	
+end
+
+function OnTracked()
+
+	script:SetNetworkedCustomProperty("Tracked", trackStatus)
+	driver.movementControlMode = MovementControlMode.NONE
+	
+	Task.Wait(5)
+	
+	driver.movementControlMode = MovementControlMode.FACING_RELATIVE
+	script:SetNetworkedCustomProperty("Tracked", 0)
+	
+	Task.Wait(5)
+	
+	trackStatus = 0
 	
 end
 
@@ -490,7 +512,7 @@ function FlipTank()
 	end
 	
 	if math.abs(chassis:GetWorldRotation().x) > 120 or math.abs(chassis:GetWorldRotation().y) > 120 then
-		chassis:AddImpulse(Vector3.New(0, 0, chassis.mass * 2000))
+		chassis:AddImpulse(Vector3.New(0, 0, chassis.mass * 1000))
 		Task.Wait(1)
 		chassis:SetLocalAngularVelocity(Vector3.New(180, 0, 0))
 		Task.Wait(1)
