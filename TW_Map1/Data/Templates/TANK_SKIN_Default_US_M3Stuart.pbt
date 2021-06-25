@@ -10,9 +10,9 @@ Assets {
         Name: "TANK_SKIN_Default_US_M3Stuart"
         Transform {
           Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
+            X: 1.1
+            Y: 1.1
+            Z: 1.1
           }
         }
         ParentId: 4781671109827199097
@@ -14192,7 +14192,7 @@ Assets {
           }
           AudioBP {
             Repeat: true
-            Volume: 1
+            Volume: 2
             Falloff: 4000
             Radius: 2000
             IsSpatializationEnabled: true
@@ -14235,7 +14235,7 @@ Assets {
             Id: 24448311725237521
           }
           Pitch: 500
-          Volume: 1
+          Volume: 2
           Falloff: -1
           Radius: -1
           IsSpatializationEnabled: true

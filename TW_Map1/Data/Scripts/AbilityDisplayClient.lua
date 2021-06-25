@@ -32,6 +32,7 @@ local BINDING = COMPONENT_ROOT:GetCustomProperty("Binding")
 local BINDING_HINT = COMPONENT_ROOT:GetCustomProperty("BindingHint")
 local SHOW_ABILITY_NAME = COMPONENT_ROOT:GetCustomProperty("ShowAbilityName")
 local HIDE_WHEN_DISABLED = COMPONENT_ROOT:GetCustomProperty("HideWhenDisabled")
+local CHARGES = script:GetCustomProperty("Charges"):WaitForObject()
 
 -- Constants
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -43,6 +44,7 @@ local currentAbility = nil
 local executeDuration = 0.0
 local recoveryDuration = 0.0
 local cooldownDuration = 0.0
+local chargeTracking = 0
 
 -- <Ability> GetLocalPlayerAbilityWithBinding()
 -- Finds the first ability that matches the given binding
@@ -94,8 +96,11 @@ end
 -- Checks for changes to the players abiltiies, or icons on those abilities
 function Tick(deltaTime)
     UpdateCurrentAbility()
-
+	
     if currentAbility then
+    	chargeTracking = currentAbility:GetCustomProperty("Charges")
+    	CHARGES.text = tostring(chargeTracking)
+    	
         local currentPhase = currentAbility:GetCurrentPhase()
         local phaseTime = currentAbility:GetPhaseTimeRemaining()
 
@@ -107,11 +112,13 @@ function Tick(deltaTime)
                 CANVAS.visibility = Visibility.FORCE_OFF
                 NAME_TEXT.visibility = Visibility.FORCE_OFF
             end
+            
+        --[[
         else
-            if currentAbility.isEnabled and (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
+            if currentAbility.isEnabled or currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST then
                 --ICON:SetColor(ICON_COLOR)
-                PROGRESS_INDICATOR.visibility = Visibility.FORCE_OFF
-            else
+                PROGRESS_INDICATOR.visibility = Visibility.FORCE_OFF 
+            elseif chargeTracking <= 0 then
                 --local newIconColor = Color.New(ICON_COLOR)
                 --newIconColor.a = newIconColor.a / 5.0
                -- ICON:SetColor(newIconColor)
@@ -119,12 +126,22 @@ function Tick(deltaTime)
                COUNTDOWN_TEXT.text = ""
                return
             end
+            ]]
         end
-
-        if currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST then
+        
+        --local abilityEnabled = currentAbility:GetCustomProperty("Enabled")
+        
+        if not currentAbility.isEnabled and (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
+        	PROGRESS_INDICATOR.visibility = Visibility.INHERIT
+        	RIGHT_SHADOW.visibility = Visibility.INHERIT
+        	LEFT_SHADOW.visibility = Visibility.INHERIT
+        	LEFT_SHADOW.rotationAngle = 0.0
+        	RIGHT_SHADOW.rotationAngle = 0.0
+            COUNTDOWN_TEXT.text = ""
+		elseif currentAbility.isEnabled  and (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
             COUNTDOWN_TEXT.visibility = Visibility.FORCE_OFF
             PROGRESS_INDICATOR.visibility = Visibility.FORCE_OFF
-        else
+        elseif chargeTracking > 0 and not (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
             COUNTDOWN_TEXT.visibility = Visibility.INHERIT
             PROGRESS_INDICATOR.visibility = Visibility.INHERIT
 

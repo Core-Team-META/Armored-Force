@@ -67,10 +67,10 @@ local flipping = false
 local trackStatus = 0
 local playerWhoBurned = nil
 local turretDown = false
+local barrelDown = false
 local trackTask = nil
 local burnTask = nil
 local turretDamagedTask = nil
-local barrelDamagedTask = nil
 local bindingPressedListener = nil
 local diedEventListener = nil
 local destroyedListener = nil
@@ -339,7 +339,7 @@ end
 
 function FireProjectile(player)
 
-	if reloading then
+	if reloading or barrelDown then
 		return
 	end
 	
@@ -446,17 +446,37 @@ function OnArmorHit(trigger, other)
 		}
 		COMBAT.ApplyDamage(attackData)
 		
-		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition(), driver)
+		local armorName = trigger.name
 		
-		if trigger.name == "TRACK" and not trackTask then
-			trackStatus = 1
+		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" then
+			armorName = "TRACK"
+		end
+		
+		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver)
+		
+		local possibleDamageState = math.random(100)
+		
+		if possibleDamageState > 100 then
+			return
+		end
+		
+		if string.find(trigger.name, "TRACK") and not trackTask then
+			if trigger.name == "LEFTTRACK" then
+				trackStatus = 1	
+			elseif trigger.name == "RIGHTTRACK" then
+				trackStatus = 2
+			end
 			trackTask = Task.Spawn(OnTracked, 0)
-		elseif trigger.name == "HULLREAR" and not burnTask then
+		elseif armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 			burnTask = Task.Spawn(OnBurning, 0)
-		elseif string.find(trigger.name, "TURRET") then
-			turretDown = true
-			turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
+		elseif string.find(armorName, "TURRET") and not turretDamagedTask then
+			local pickTurretDamage = math.random(100)
+			if pickTurretDamage <= 50 then
+				turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
+			else 
+				turretDamagedTask = Task.Spawn(OnDamagedBarrel, 0)
+			end
 		end
 
 	end
@@ -497,6 +517,7 @@ function OnConsumableUsed(consumableType)
 		end	
 		
 		script:SetNetworkedCustomProperty("TurretDown", false)
+		script:SetNetworkedCustomProperty("BarrelDown", false)
 		turretDown = false
 		Events.Broadcast("ToggleConsumable", driver, "TURRET", false)
 		
@@ -565,6 +586,8 @@ function OnDamagedTurret()
 	
 	script:SetNetworkedCustomProperty("TurretDown", true)
 	Events.Broadcast("ToggleConsumable", driver, "TURRET", true)
+	turretDown = true
+	
 	if horizontalCannonAngles <= 0 then
 		turret:LookAtContinuous(target, true, traverseSpeed/(57 * 5))
 	end
@@ -577,16 +600,29 @@ function OnDamagedTurret()
 	
 	script:SetNetworkedCustomProperty("TurretDown", false)
 	Events.Broadcast("ToggleConsumable", driver, "TURRET", false)
+	turretDown = false
 	
 	Task.Wait(2)
 	
-	turretDown = false
 	turretDamagedTask = nil
 
 end
 
 function OnDamagedBarrel()
 
+	script:SetNetworkedCustomProperty("BarrelDown", true)
+	Events.Broadcast("ToggleConsumable", driver, "TURRET", true)
+	barrelDown = true
+	
+	Task.Wait(10)
+		
+	script:SetNetworkedCustomProperty("BarrelDown", false)
+	Events.Broadcast("ToggleConsumable", driver, "TURRET", false)
+	barrelDown = false
+	Task.Wait(2)
+	
+	turretDamagedTask = nil
+	
 end
 
 function AdjustTurretAim()
