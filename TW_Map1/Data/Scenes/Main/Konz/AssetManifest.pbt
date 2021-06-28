@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11580556476579907525
+  Name: "Frame Line 008a Corner"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameLine_008aHalf"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
@@ -158,5 +167,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Weapon_Ammo_013"
+  }
+}
+Assets {
+  Id: 3184086928171217139
+  Name: "Frame Hex 007 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameHex_007Wedge"
   }
 }

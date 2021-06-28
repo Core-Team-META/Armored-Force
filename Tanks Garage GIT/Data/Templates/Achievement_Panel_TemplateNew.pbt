@@ -209,7 +209,7 @@ Assets {
               A: 1
             }
             Brush {
-              Id: 14060330023043759337
+              Id: 11619439792683854596
             }
             IsButtonEnabled: true
             OnlyUseMainColor: true
@@ -496,7 +496,7 @@ Assets {
             }
           }
           Text {
-            Label: "Daily Challange 1"
+            Label: "Daily Challenge 1"
             Color {
               R: 1
               G: 1
@@ -1689,12 +1689,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14060330023043759337
-      Name: "BG Flat 001"
+      Id: 11619439792683854596
+      Name: "Frame Outline Thin 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
+        AssetId: "FrameOutline_020"
       }
     }
     Assets {
@@ -1758,6 +1758,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Gold_002"
+      }
+    }
+    Assets {
+      Id: 14060330023043759337
+      Name: "BG Flat 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     PrimaryAssetId {

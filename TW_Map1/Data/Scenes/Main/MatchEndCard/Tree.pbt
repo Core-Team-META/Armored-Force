@@ -186,11 +186,11 @@ Objects {
     }
   }
   ParentId: 9910176639110380473
-  ChildIds: 16058073316458758761
-  ChildIds: 17327758878348485394
-  ChildIds: 14401683492025074967
-  ChildIds: 13474187617836267606
-  ChildIds: 928609162078675277
+  ChildIds: 4418088402466944351
+  ChildIds: 8305061790531944022
+  ChildIds: 7118211233159649926
+  ChildIds: 8863686189890699145
+  ChildIds: 10738743054891447020
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -228,7 +228,7 @@ Objects {
   }
 }
 Objects {
-  Id: 928609162078675277
+  Id: 10738743054891447020
   Name: "TITLE_LIGHT"
   Transform {
     Location {
@@ -253,8 +253,7 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 23
-    UIY: 9
+    Height: 24
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -279,25 +278,25 @@ Objects {
         Id: 17191612518869424272
       }
       VerticalJustification {
-        Value: "mc:everticaljustification:top"
+        Value: "mc:everticaljustification:center"
       }
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
   }
 }
 Objects {
-  Id: 13474187617836267606
+  Id: 8863686189890699145
   Name: "TITLE_SECONDAIRY"
   Transform {
     Location {
@@ -323,7 +322,6 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIY: 9
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -334,9 +332,9 @@ Objects {
     Text {
       Label: "ROUND END"
       Color {
-        R: 0.391329825
-        G: 0.433365941
-        B: 0.50888145
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 27
@@ -348,25 +346,25 @@ Objects {
         Id: 17191612518869424272
       }
       VerticalJustification {
-        Value: "mc:everticaljustification:top"
+        Value: "mc:everticaljustification:center"
       }
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
   }
 }
 Objects {
-  Id: 14401683492025074967
+  Id: 7118211233159649926
   Name: "DIVIDER"
   Transform {
     Location {
@@ -424,7 +422,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17327758878348485394
+  Id: 8305061790531944022
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -438,10 +436,10 @@ Objects {
     }
   }
   ParentId: 13174321452711406376
-  ChildIds: 12150486033771166393
-  ChildIds: 1092081453586286576
-  ChildIds: 4208488438503668163
-  ChildIds: 14004154430249862763
+  ChildIds: 3556037238574715311
+  ChildIds: 15315530536339370804
+  ChildIds: 6544504037038293691
+  ChildIds: 8937998364263645408
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -479,7 +477,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14004154430249862763
+  Id: 8937998364263645408
   Name: "TOP_SHINE"
   Transform {
     Location {
@@ -492,8 +490,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17327758878348485394
-  ChildIds: 6572133652064895624
+  ParentId: 8305061790531944022
+  ChildIds: 11441951186855307426
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -531,7 +529,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6572133652064895624
+  Id: 11441951186855307426
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -544,7 +542,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14004154430249862763
+  ParentId: 8937998364263645408
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -592,7 +590,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4208488438503668163
+  Id: 6544504037038293691
   Name: "BOTTOM_SHINE"
   Transform {
     Location {
@@ -605,7 +603,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17327758878348485394
+  ParentId: 8305061790531944022
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -629,8 +627,8 @@ Objects {
         Id: 7648893931280516746
       }
       Color {
-        G: 0.176367015
-        B: 0.728000045
+        R: 0.351866603
+        G: 0.728000045
         A: 0.261
       }
       TeamSettings {
@@ -651,7 +649,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1092081453586286576
+  Id: 15315530536339370804
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -664,7 +662,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17327758878348485394
+  ParentId: 8305061790531944022
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -686,7 +684,7 @@ Objects {
     UseParentWidth: true
     Image {
       Brush {
-        Id: 7515015531196152948
+        Id: 10820194954338241369
       }
       Color {
         A: 0.603000045
@@ -709,7 +707,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12150486033771166393
+  Id: 3556037238574715311
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -722,7 +720,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17327758878348485394
+  ParentId: 8305061790531944022
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -747,9 +745,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.0127019985
-        G: 0.01637174
-        B: 0.029
+        R: 0.0205793623
+        G: 0.029
+        B: 0.0127019985
         A: 1
       }
       TeamSettings {
@@ -770,7 +768,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16058073316458758761
+  Id: 4418088402466944351
   Name: "DROP_SHADOW"
   Transform {
     Location {
@@ -941,6 +939,12 @@ Objects {
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 4
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -995,9 +999,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.000888889
-        G: 0.00120370346
-        B: 0.002
+        R: 0.00142592588
+        G: 0.002
+        B: 0.000888889
         A: 1
       }
       TeamSettings {
@@ -1179,9 +1183,9 @@ Objects {
         Id: 4504686085818425438
       }
       Color {
-        R: 0.00402471703
-        G: 0.00477695325
-        B: 0.00749903172
+        R: 0.00570396893
+        G: 0.00749903172
+        B: 0.00402471703
         A: 1
       }
       TeamSettings {
