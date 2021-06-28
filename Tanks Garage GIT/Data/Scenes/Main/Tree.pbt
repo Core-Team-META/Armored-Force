@@ -773,6 +773,7 @@ Objects {
     VoxelSize: 100
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
+    MaxLOD: 32
   }
 }
 Objects {
@@ -1314,6 +1315,7 @@ Objects {
         Max: 102400
       }
     }
+    MaxLOD: 32
   }
 }
 Objects {

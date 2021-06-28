@@ -43,32 +43,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14177783333210584351
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 14136492303613702060
-  Name: "Tanks"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3b3cfe44e7fb41d0b0783e9eba8729ea"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 14003803618664791449
   Name: "GoldPack2"
   PlatformAssetType: 24
@@ -88,19 +62,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 11978237897467864443
-  Name: "Leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "93dcd54767a8410a9a42b348c43e4e80"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -165,12 +126,51 @@ Assets {
   }
 }
 Assets {
+  Id: 7384732450900840151
+  Name: "Achievements1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 6928255822254716244
+  Name: "Tanks1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 6056411041462983192
+  Name: "Leaderboards1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "5054e091c2a04962af336edce485ef05"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {

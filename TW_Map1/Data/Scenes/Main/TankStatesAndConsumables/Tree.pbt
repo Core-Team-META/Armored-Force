@@ -404,6 +404,12 @@ Objects {
         SelfId: 2941635432436958807
       }
     }
+    Overrides {
+      Name: "cs:turretDamageText"
+      ObjectReference {
+        SelfId: 11123220739344086227
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

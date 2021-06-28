@@ -380,5 +380,5 @@ Assets {
       AssetId: "Health_Bar"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
 }

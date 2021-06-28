@@ -479,6 +479,7 @@ Objects {
         Max: 102400
       }
     }
+    MaxLOD: 32
   }
 }
 Objects {
@@ -1141,6 +1142,7 @@ Objects {
         Max: 102400
       }
     }
+    MaxLOD: 32
   }
 }
 Objects {

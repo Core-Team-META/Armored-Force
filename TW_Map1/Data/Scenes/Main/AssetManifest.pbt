@@ -26,12 +26,25 @@ Assets {
   }
 }
 Assets {
-  Id: 15184781966273741360
-  Name: "Leaderboards"
+  Id: 14852852292048066844
+  Name: "Tanks1"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "93dcd54767a8410a9a42b348c43e4e80"
+      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 14544136749024991844
+  Name: "Leaderboards1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "5054e091c2a04962af336edce485ef05"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -54,6 +67,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_clover_patch_001"
+  }
+}
+Assets {
+  Id: 12138254496542770230
+  Name: "Achievements1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -81,32 +107,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
-  }
-}
-Assets {
-  Id: 10035745821061317849
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 9416428102120094878
-  Name: "Tanks"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3b3cfe44e7fb41d0b0783e9eba8729ea"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {

@@ -1,13 +1,14 @@
 local treadsDamage = script:GetCustomProperty("TreadsDamage"):WaitForObject()
-local treadIndicator = script:GetCustomProperty("TreadIndicator"):WaitForObject()
+--local treadIndicator = script:GetCustomProperty("TreadIndicator"):WaitForObject()
 local treadBreakSFX = script:GetCustomProperty("TreadBreakSFX"):WaitForObject()
 
 local turretDamage = script:GetCustomProperty("TurretDamage"):WaitForObject()
-local turretIndicator = script:GetCustomProperty("TurretIndicator"):WaitForObject()
+--local turretIndicator = script:GetCustomProperty("TurretIndicator"):WaitForObject()
 local turretScreachSFX = script:GetCustomProperty("TurretScreachSFX"):WaitForObject()
+local turretDamageText = script:GetCustomProperty("turretDamageText"):WaitForObject()
 
 local fireDamage = script:GetCustomProperty("FireDamage"):WaitForObject()
-local fireIndicator = script:GetCustomProperty("FireIndicator"):WaitForObject()
+--local fireIndicator = script:GetCustomProperty("FireIndicator"):WaitForObject()
 local fireBurstSFX = script:GetCustomProperty("FireBurstSFX"):WaitForObject()
 local fireLoopSFX = script:GetCustomProperty("FireLoopSFX"):WaitForObject()
 
@@ -16,7 +17,6 @@ local repairSFX = script:GetCustomProperty("RepairSFX"):WaitForObject()
 local treadsPanel = script:GetCustomProperty("TreadsPanel"):WaitForObject()
 local turretPanel = script:GetCustomProperty("TurretPanel"):WaitForObject()
 local firePanel = script:GetCustomProperty("FirePanel"):WaitForObject()
-
 
 local trackedTask = nil
 local fireTask = nil
@@ -40,7 +40,7 @@ function OnTankStateChanged(controllerServer, property)
 			trackedTask:Cancel()
 			trackedTask = nil
 			treadsDamage.progress = 0
-			treadIndicator.visibility= Visibility.FORCE_OFF
+			--treadIndicator.visibility= Visibility.FORCE_OFF
 			treadsPanel.visibility= Visibility.FORCE_OFF
 			RepairSFX()
 		end
@@ -56,21 +56,26 @@ function OnTankStateChanged(controllerServer, property)
 			fireTask:Cancel()
 			fireTask = nil	
 			fireDamage.progress = 0
-			fireIndicator.visibility= Visibility.FORCE_OFF
+			--fireIndicator.visibility= Visibility.FORCE_OFF
 			firePanel.visibility= Visibility.FORCE_OFF
 			RepairSFX()
 		end
-	elseif property == "TurretDown" and value then
+	elseif (property == "TurretDown" or property == "BarrelDown") and value then
+		if property == "TurretDown" then
+			turretDamageText.text = "Turret speed reduced"
+		elseif property == "BarrelDown" then
+			turretDamageText.text = "Barrel damaged"
+		end
 		if not turretTask then
 			turretScreachSFX:Play()
 			turretTask = Task.Spawn(BrokenTurret, 0)
 		end
-	elseif property == "TurretDown" and not value then
+	elseif (property == "TurretDown" or property == "BarrelDown") and not value then
 		if turretTask then
 			turretTask:Cancel()
 			turretTask = nil	
 			turretDamage.progress = 0
-			turretIndicator.visibility= Visibility.FORCE_OFF
+			--turretIndicator.visibility= Visibility.FORCE_OFF
 			turretPanel.visibility= Visibility.FORCE_OFF
 			RepairSFX()
 		end
@@ -90,7 +95,7 @@ end
 function Tracked()
 	
 	treadsDamage.progress = 1
-	treadIndicator.visibility = Visibility.INHERIT
+	--treadIndicator.visibility = Visibility.INHERIT
 	treadsPanel.visibility = Visibility.INHERIT
 	
 	for i = 100, 1, -1 do
@@ -99,7 +104,7 @@ function Tracked()
 	end
 	
 	treadsDamage.progress = 0
-	treadIndicator.visibility = Visibility.FORCE_OFF
+	--treadIndicator.visibility = Visibility.FORCE_OFF
 	treadsPanel.visibility = Visibility.FORCE_OFF
 	trackedTask = nil
 	RepairSFX()
@@ -107,7 +112,7 @@ end
 
 function Burning()
 	fireDamage.progress = 1
-	fireIndicator.visibility = Visibility.INHERIT
+	--fireIndicator.visibility = Visibility.INHERIT
 	firePanel.visibility = Visibility.INHERIT
 	
 	for i = 100, 1, -1 do
@@ -117,7 +122,7 @@ function Burning()
 	
 	fireLoopSFX:Stop()
 	fireDamage.progress = 0
-	fireIndicator.visibility = Visibility.FORCE_OFF
+	--fireIndicator.visibility = Visibility.FORCE_OFF
 	firePanel.visibility = Visibility.FORCE_OFF
 	fireTask = nil
 	RepairSFX()
@@ -125,7 +130,7 @@ end
 
 function BrokenTurret()
 	turretDamage.progress = 1
-	turretIndicator.visibility = Visibility.INHERIT
+	--turretIndicator.visibility = Visibility.INHERIT
 	turretPanel.visibility = Visibility.INHERIT
 	
 	for i = 100, 1, -1 do
@@ -134,7 +139,7 @@ function BrokenTurret()
 	end
 	
 	turretDamage.progress = 0
-	turretIndicator.visibility = Visibility.FORCE_OFF
+	--turretIndicator.visibility = Visibility.FORCE_OFF
 	turretPanel.visibility = Visibility.FORCE_OFF
 	turretTask = nil
 	RepairSFX()

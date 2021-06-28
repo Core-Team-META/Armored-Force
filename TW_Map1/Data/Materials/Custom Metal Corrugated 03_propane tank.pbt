@@ -2,7 +2,7 @@ Assets {
   Id: 7054246259363084184
   Name: "Custom Metal Corrugated 03_propane tank"
   PlatformAssetType: 13
-  SerializationVersion: 89
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 15007490093890018590
     ParameterOverrides {
