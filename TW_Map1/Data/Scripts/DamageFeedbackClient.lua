@@ -5,7 +5,7 @@ local DamageAmount = script:GetCustomProperty("DamageAmount"):WaitForObject()
 local Header = script:GetCustomProperty("Header"):WaitForObject()
 local DestroyPanel = script:GetCustomProperty("DestroyPanel"):WaitForObject()
 local KillInfo = script:GetCustomProperty("KillInfo"):WaitForObject()
-
+local FeedbackWhenHitContext = script:GetCustomProperty("FeedbackWhenHitContext")
 
 --@params object target
 --@return int tankId, string tankName, int tankType
@@ -75,4 +75,11 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 	end
 end
 
+function ShowHitFeedback(amount, armorName, pos)
+	local panel = World.SpawnAsset(FeedbackWhenHitContext, {parent = World.FindObjectByName("Feedback When Hit"), position = pos})
+	panel.lifeSpan = 3
+	panel:FindDescendantByName("DamageText").text = tostring(amount) .. " damage taken"
+end
+
 Events.Connect("ShowDamageFeedback", ShowDamageFeedback)
+Events.Connect("ShowHitFeedback", ShowHitFeedback)

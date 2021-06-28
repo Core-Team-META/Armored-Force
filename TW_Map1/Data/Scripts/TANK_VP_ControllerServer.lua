@@ -446,7 +446,9 @@ function OnArmorHit(trigger, other)
 		}
 		COMBAT.ApplyDamage(attackData)
 		
+
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, trigger.name, trigger:GetWorldPosition(), driver)
+		Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, trigger.name, trigger:GetWorldPosition())
 		
 		if trigger.name == "TRACK" and not trackTask then
 			trackStatus = 1

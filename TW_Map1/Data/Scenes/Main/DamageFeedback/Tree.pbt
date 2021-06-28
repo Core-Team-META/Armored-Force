@@ -1184,6 +1184,12 @@ Objects {
         SelfId: 15416501023010914238
       }
     }
+    Overrides {
+      Name: "cs:FeedbackWhenHitContext"
+      AssetReference {
+        Id: 5447397715314154716
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
