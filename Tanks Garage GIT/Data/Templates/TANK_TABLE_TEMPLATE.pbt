@@ -20,6 +20,7 @@ Assets {
         ChildIds: 8080415147474499918
         ChildIds: 4034916153270733290
         ChildIds: 4791203578078411425
+        ChildIds: 1709872149089703699
         ChildIds: 17152427715376479011
         ChildIds: 1476668144710989979
         ChildIds: 2198366159451783291
@@ -324,6 +325,86 @@ Assets {
             Size: 17
             Justification {
               Value: "mc:etextjustify:left"
+            }
+            AutoWrapText: true
+            Font {
+              Id: 9686253618519087109
+            }
+            VerticalJustification {
+              Value: "mc:everticaljustification:top"
+            }
+            ShadowColor {
+              A: 1
+            }
+            ShadowOffset {
+            }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1709872149089703699
+        Name: "2X_XP"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12678180207792735907
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: -18
+          Height: 37
+          UIY: 36.432
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Text {
+            Label: "2x Resources"
+            Color {
+              R: 0.950000048
+              G: 0.434106
+              A: 1
+            }
+            Size: 17
+            Justification {
+              Value: "mc:etextjustify:right"
             }
             AutoWrapText: true
             Font {
@@ -830,7 +911,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1122,7 +1203,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1444,12 +1525,12 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 11619439792683854596
+              Id: 5164711776771633793
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.0561284944
+              G: 0.114435382
+              B: 0.00151763496
               A: 1
             }
             TeamSettings {
@@ -1527,15 +1608,6 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "Icon_Star"
-      }
-    }
-    Assets {
-      Id: 11619439792683854596
-      Name: "Frame Outline Thin 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameOutline_020"
       }
     }
     PrimaryAssetId {

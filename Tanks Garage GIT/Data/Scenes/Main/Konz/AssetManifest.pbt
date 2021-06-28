@@ -35,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16329205256895515262
-  Name: "Sci-fi Parts 030"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_SciFi_Equip_Parts_030"
-  }
-}
-Assets {
   Id: 16191173343733875993
   Name: "Tank"
   PlatformAssetType: 9
@@ -113,15 +104,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_001"
-  }
-}
-Assets {
-  Id: 13103708215437864490
-  Name: "Blast"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Scifi_Icon_040"
   }
 }
 Assets {
@@ -242,15 +224,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8378494895395987076
-  Name: "Icon Arrow"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Arrow"
-  }
-}
-Assets {
   Id: 7957816731913452808
   Name: "BG Flat 002"
   PlatformAssetType: 9
@@ -347,15 +320,6 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "Baloo2Regular_ref"
-  }
-}
-Assets {
-  Id: 4532731467347944027
-  Name: "Survival Money 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Survival_Equip_Money_001"
   }
 }
 Assets {
