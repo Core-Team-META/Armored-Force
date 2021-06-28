@@ -453,6 +453,7 @@ function OnArmorHit(trigger, other)
 		end
 		
 		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver)
+		Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, armorName trigger:GetWorldPosition())
 		
 		local possibleDamageState = math.random(100)
 		
