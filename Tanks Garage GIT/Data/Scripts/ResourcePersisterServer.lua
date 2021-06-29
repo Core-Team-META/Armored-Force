@@ -124,6 +124,13 @@ function CheckAndSetSharedStorageDefault(player)
 	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = 0 end
+	
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR] = 0 end
 
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = 0 end
@@ -163,8 +170,16 @@ function LoadAndSetDataFromSharedStorage(player)
 	player.serverUserData.GOLD_FROM_BUNDLE[2] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2])
 	player.serverUserData.GOLD_FROM_BUNDLE[3] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3])
 	
+	player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.REPAIR, playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR])
+	
+	player:SetResource(CONSTANTS_API.CONSUMABLES.AUTO_TREADS, playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER, playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR, playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR])
+	
 	Events.Broadcast("SET_DAILY_CHALLENGES", player)
-	print("Daily challenges broadcasted: " .. player.serverUserData.CHALLENGES)
+	--print("Daily challenges broadcasted: " .. player.serverUserData.CHALLENGES)
 	
 	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 
@@ -209,6 +224,14 @@ function SavePlayerDataIntoSharedStorage(player)
 	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] = player.serverUserData.GOLD_FROM_BUNDLE[1]
 	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = player.serverUserData.GOLD_FROM_BUNDLE[2]
 	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = player.serverUserData.GOLD_FROM_BUNDLE[3]
+	
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS] = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER] = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR] = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
+	
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS] = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_TREADS)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER] = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR] = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR)
 
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = player:GetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY)

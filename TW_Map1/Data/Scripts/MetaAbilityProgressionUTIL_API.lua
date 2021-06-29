@@ -204,6 +204,10 @@ function API.GetTankRPString(id)
     return "T_" .. stringId .. "RP"
 end
 
+function API.GetRPConversionCost(amount)
+	return math.floor(amount / 100)
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- ABILITY PROGRESSION DATA FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
@@ -360,6 +364,40 @@ function API.GetXPToNextRank(player)
 	return rank * 1000
 end
 
+
+-- Retrieves the highest damage of a tank to use as the upper limit for the stat progress bar
+function API.GetHighestDamage()
+	return 550
+end
+
+function API.GetHighestReload()
+	return 16
+end
+
+function API.GetHighestTurretSpeed()
+	return 40
+end
+
+function API.GetHighestHitPoints()
+	return 2000
+end
+
+function API.GetHighestTopSpeed()
+	return 2000
+end
+
+function API.GetHighestAcceleration()
+	return 1200
+end
+
+function API.GetHighestTraverse()
+	return 70
+end
+
+function API.GetHighestElevation()
+	return 30
+end
+
 function API.GetTankXPValueFromId(tankId)
 	for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
 		if(tank:GetCustomProperty("ID") == tankId) then
@@ -379,16 +417,6 @@ function API.GetTankXPValueFromId(tankId)
 	end
 	warn("XP value not found with tank Id: " .. tankId)
 	return CONST.XP_TIER_VALUE.TIER1
-end
-
-function API.GetTierFromId(tankId)
-    for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
-		if(tank:GetCustomProperty("ID") == tankId) then
-			return tank:GetCustomProperty("Tier")			
-		end
-	end
-	warn("XP value not found with tank Id: " .. tankId)
-	return 1
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -640,20 +668,6 @@ function API.RetrieveTankNameById(id, tankCollection)
 	end
 	warn("Tank not found with Id: " .. id)
 	return "M3 Stuart"
-end
-
-function API.UsingPremiumTank(tankId)
-    return (tankId == 9 or tankId == 25)
-end
-
-function API.CalculateLeaveEarlyEarnings(timeElapsed, matchDuration, maxAwardXP)
-	local percentagedElapsed = timeElapsed / matchDuration
-	local awardedXP = percentagedElapsed * maxAwardXP
-	-- Only award up to 50% of the maximum as a penalty for leaving early
-	if(awardedXP > (maxAwardXP / 2)) then
-		awardedXP = math.floor(maxAwardXP / 2)
-	end
-	return awardedXP
 end
 
 ------------------------------------------------------------------------------------------------------------------------

@@ -27,35 +27,46 @@ function OnResourceChanged(player, resource, value)
 end
 
 function OnPlayerJoined(player)
-	--[[
+
+	--print("Player Joined " .. player.name)
+	
 	local playerData = Storage.GetPlayerData(player)
+	UTIL_API.TablePrint(playerData)
+	--print("Storage Retrieved")
 
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
+	end
+	
+	if(player:GetResource(CONSTANTS_API.RANK_NAME) <= 0) then
+		player:SetResource(CONSTANTS_API.RANK_NAME, 1)
 	end
 
 	for resource, value in pairs(playerData.resources) do
 		player:SetResource(resource, value)
 	end
-	]]
 	
+	-- Uncomment to reset tutorial progress
+	--player:SetResource("TutorialProgress", 0)
+		
 	player.serverUserData.techTreeProgress = {}
 	
+	--print("Checking and setting shared storage")
 	CheckAndSetSharedStorageDefault(player)
-	
+	--print("Loading shared storage")
 	LoadAndSetDataFromSharedStorage(player)
-		
-	--player.resourceChangedEvent:Connect(OnResourceChanged)
+
+	player.resourceChangedEvent:Connect(OnResourceChanged)
 	
 	-- DEBUG: Print out storage
-	--[[
-	print("-----PRINTING SHARED STORAGE-----")
-	UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
-	print("-----FINISHED PRINTING SHARED STORAGE-----")
-	print("-----PRINTING LOCAL STORAGE-----")
-	UTIL_API.TablePrint(Storage.GetPlayerData(player))
-	print("-----FINISHED PRINTING LOCAL STORAGE-----")
-	]]--
+
+	--print("-----PRINTING SHARED STORAGE-----")
+	--UTIL_API.TablePrint(Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player))
+	--print("-----FINISHED PRINTING SHARED STORAGE-----")
+	--print("-----PRINTING LOCAL STORAGE-----")
+	--UTIL_API.TablePrint(Storage.GetPlayerData(player))
+	--print("-----FINISHED PRINTING LOCAL STORAGE-----")
+
 end
 
 function OnPlayerLeft(player)
@@ -65,9 +76,9 @@ end
 -- Update shared storage, or give it default values if the data doesn't exist
 function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
-	--print("Storage value for rank: " .. tostring(playerSharedStorage[CONSTANTS_API.RANK_NAME]))
+
 	-- DEBUG: Clear shared storage
-	--playerSharedStorage = {}
+	-- playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -87,7 +98,7 @@ function CheckAndSetSharedStorageDefault(player)
 		
 	end
 	
-	--print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
+	print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 	
 	if(player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
 		playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()
@@ -113,6 +124,13 @@ function CheckAndSetSharedStorageDefault(player)
 	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] == nil) then playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = 0 end
+	
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER] = 0 end
+	if(playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR] == nil) then playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR] = 0 end
 
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = 0 end
@@ -128,9 +146,8 @@ function CheckAndSetSharedStorageDefault(player)
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_FIRED] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_FIRED] = 0 end
 	if(playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] == nil) then playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] = 0 end
-	if(playerSharedStorage[CONSTANTS_API.RANK_NAME] == nil or playerSharedStorage[CONSTANTS_API.RANK_NAME] == 0) then playerSharedStorage[CONSTANTS_API.RANK_NAME] = 1 end
+	if(playerSharedStorage[CONSTANTS_API.RANK_NAME] == nil) then playerSharedStorage[CONSTANTS_API.RANK_NAME] = 1 end
 	if(playerSharedStorage[CONSTANTS_API.XP] == nil) then playerSharedStorage[CONSTANTS_API.XP] = 0 end
-
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
 function LoadAndSetDataFromSharedStorage(player)
@@ -153,7 +170,16 @@ function LoadAndSetDataFromSharedStorage(player)
 	player.serverUserData.GOLD_FROM_BUNDLE[2] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2])
 	player.serverUserData.GOLD_FROM_BUNDLE[3] = tonumber(playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3])
 	
+	player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.REPAIR, playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR])
+	
+	player:SetResource(CONSTANTS_API.CONSUMABLES.AUTO_TREADS, playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER, playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER])
+	player:SetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR, playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR])
+	
 	Events.Broadcast("SET_DAILY_CHALLENGES", player)
+	--print("Daily challenges broadcasted: " .. player.serverUserData.CHALLENGES)
 	
 	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 
@@ -198,6 +224,14 @@ function SavePlayerDataIntoSharedStorage(player)
 	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE1] = player.serverUserData.GOLD_FROM_BUNDLE[1]
 	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE2] = player.serverUserData.GOLD_FROM_BUNDLE[2]
 	playerSharedStorage[CONSTANTS_API.PERKS.BUNDLE3] = player.serverUserData.GOLD_FROM_BUNDLE[3]
+	
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.TREADS] = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.EXTINGUISHER] = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.REPAIR] = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
+	
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_TREADS] = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_TREADS)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER] = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER)
+	playerSharedStorage[CONSTANTS_API.CONSUMABLES.AUTO_REPAIR] = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR)
 
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DAMAGE_RES)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.ACCURACY] = player:GetResource(CONSTANTS_API.COMBAT_STATS.ACCURACY)
@@ -210,9 +244,9 @@ function SavePlayerDataIntoSharedStorage(player)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_DEATHS] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_DEATHS)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_ASSISTS)
+	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] = player:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_FIRED] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_FIRED)
 	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT] = player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_SHOTS_HIT)
-	playerSharedStorage[CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED] = player:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED)
 	playerSharedStorage[CONSTANTS_API.RANK_NAME] = player:GetResource(CONSTANTS_API.RANK_NAME)
 	playerSharedStorage[CONSTANTS_API.XP] = player:GetResource(CONSTANTS_API.XP)
 
@@ -310,7 +344,7 @@ function SetTankProgressionDataForServer(dataString, player)
     end     
     
     player.serverUserData.techTreeProgress = progressionTable
-   
+   UTIL_API.TablePrint(player.serverUserData.techTreeProgress)
 end
 
 function ConvertBoolToString(boolean)
@@ -334,7 +368,7 @@ function ConvertTechTreeProgressToDataString(player)
 	table.sort(player.serverUserData.techTreeProgress, function(a, b) return tonumber(a.id) < tonumber(b.id) end)
 	
 	for k,v in ipairs(player.serverUserData.techTreeProgress) do
-		--print("Saving tan Id: " .. tostring(v.id))
+		print("Saving tan Id: " .. tostring(v.id))
 		dataString = dataString .. v.id .. 
 					"|" .. ConvertBoolToString(v.researched) ..
 					"|" .. ConvertBoolToString(v.purchased) ..

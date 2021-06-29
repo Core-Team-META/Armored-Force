@@ -25,9 +25,22 @@ API.STORAGE = {
 }
 
 API.PROGRESS = {
-	DATA = 1,
-	CURRENT = 2
+    DATA = 1,
+    CURRENT = 2
 }
+
+API.PERK_STORAGE_KEYS = {
+    SILVER_PACK1 = 1,
+    SILVER_PACK2 = 2,
+    SILVER_PACK3 = 3,
+    GOLD_PACK1 = 4,
+    GOLD_PACK2 = 5,
+    GOLD_PACK3 = 6,
+    SOLDIERPACK = 7,
+    CAPTAINPACK = 8,
+    GENERALPACK = 9
+}
+
 ------------------------------------------------------------------------------------------------------------------------
 -- PROGRESS KEYS
 ------------------------------------------------------------------------------------------------------------------------
@@ -70,16 +83,22 @@ API.UPGRADE_TYPE = {
 
 -- UPGRADE PROGRESS
 API.UPGRADE_PROGRESS = {
-	NONE = 0,
-	RESEARCHED = 1,
-	PURCHASED = 2
+    NONE = 0,
+    RESEARCHED = 1,
+    PURCHASED = 2
+}
+
+API.UPGRADE_SLOT = {
+    WEAPON = 0,
+    ARMOR = 1,
+    ENGINE = 2
 }
 ------------------------------------------------------------------------------------------------------------------------
 -- DAILY CHALLENGES PROGRESS
 ------------------------------------------------------------------------------------------------------------------------
 API.DAILIES = {
-	CHALLENGE_INFO = "CHALLENGEINFO",
-	LOGIN = "LOGINTIME"
+    CHALLENGE_INFO = "CHALLENGEINFO",
+    LOGIN = "LOGINTIME"
 }
 ------------------------------------------------------------------------------------------------------------------------
 -- RESOURCE NAMES
@@ -87,7 +106,7 @@ API.DAILIES = {
 API.COMBAT_STATS = {
     TOTAL_DAMAGE_RES = "TOTALDMG",
     ACCURACY = "ACCURACY",
-    AVERAGE_DAMAGE = "AVERAGEDMG",  
+    AVERAGE_DAMAGE = "AVERAGEDMG",
     CURRENT_KILL_STREAK = "CKSTREAK",
     LARGEST_KILL_STREAK = "LKSTREAK",
     GAMES_PLAYED_RES = "GAMESPLAYED",
@@ -98,7 +117,7 @@ API.COMBAT_STATS = {
     TOTAL_ASSISTS = "TOTALASSISTS",
     MOST_TANKS_DESTROYED = "MOSTDESTROYED",
     TOTAL_SHOTS_FIRED = "TOTALSHOTSFIRED",
-    TOTAL_SHOTS_HIT = "TOTALSHOTSHIT"      
+    TOTAL_SHOTS_HIT = "TOTALSHOTSHIT"  
 }
 
 API.CURRENCY = {
@@ -108,11 +127,20 @@ API.CURRENCY = {
     [4] = "XP"
 }
 
-
 API.PERKS = {
     BUNDLE1 = "B1",
     BUNDLE2 = "B2",
     BUNDLE3 = "B3"
+}
+
+API.CONSUMABLES = {
+	TREADS = "ExtraTreads",
+	EXTINGUISHER = "Extinguisher",
+	REPAIR = "TurretRepair",
+	AUTO_TREADS = "AutoSupplyTreads",
+	AUTO_EXTINGUISHER = "AutoSupplyExtinguisher",
+	AUTO_REPAIR = "AutoSupplyRepair"
+	
 }
 
 API.SILVER = API.CURRENCY[1]
@@ -126,20 +154,20 @@ API.TEAM = {
 }
 
 API.XP_TIER_VALUE = {
-	TIER1 = 100,
-	TIER2 = 200,
-	TIER3 = 300,
-	TIER4 = 400
+    TIER1 = 100,
+    TIER2 = 200,
+    TIER3 = 300,
+    TIER4 = 400
 }
 
 API.XP_GAIN_REASON = {
-	DAMAGE_DEALT = 1,
-	SPOTTED_ENEMY = 2
+    DAMAGE_DEALT = 1,
+    SPOTTED_ENEMY = 2
 }
 
 API.XP_GAIN_TEXT = {
-	[1] = "Damage Dealt",
-	[2] = "Spotted Enemy"
+    [1] = "Damage Dealt",
+    [2] = "Spotted Enemy"
 }
 
 API.RANK_NAME = "Rank"

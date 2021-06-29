@@ -133,6 +133,16 @@ API.PERKS = {
     BUNDLE3 = "B3"
 }
 
+API.CONSUMABLES = {
+	TREADS = "ExtraTreads",
+	EXTINGUISHER = "Extinguisher",
+	REPAIR = "TurretRepair",
+	AUTO_TREADS = "AutoSupplyTreads",
+	AUTO_EXTINGUISHER = "AutoSupplyExtinguisher",
+	AUTO_REPAIR = "AutoSupplyRepair"
+	
+}
+
 API.SILVER = API.CURRENCY[1]
 API.FREERP = API.CURRENCY[2]
 API.GOLD = API.CURRENCY[3]
