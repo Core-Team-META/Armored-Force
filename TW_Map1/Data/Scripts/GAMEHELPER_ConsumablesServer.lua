@@ -1,3 +1,4 @@
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local trackConsumable = script:GetCustomProperty("TrackConsumable")
 local extinguisherConsumable = script:GetCustomProperty("ExtinguisherConsumable")
 local turretRepairConsumable = script:GetCustomProperty("TurretRepairConsumable")
@@ -12,35 +13,35 @@ function OnRecovery(abilityUsed)
 	local abilityName = abilityUsed.name
 	
 	if abilityName == "TRACK" then
-		consumables[abilityOwner].trackRepair.charges = consumables[abilityOwner].trackRepair.charges - 1
-		if consumables[abilityOwner].trackRepair.charges <= 0 then
-			consumables[abilityOwner].trackRepair.charges = 0
+		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+		if count <= 0 then
+			player:RemoveResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
 			Events.Broadcast(abilityOwner .. "RepairTank", "TRACK")
 			abilityUsed:Interrupt()
 		else 
 			Events.Broadcast(abilityOwner .. "RepairTank", "TRACK")
 		end
-		abilityUsed:SetNetworkedCustomProperty("Charges", consumables[abilityOwner].trackRepair.charges)
+		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	elseif abilityName == "EXTINGUISH" then
-		consumables[abilityOwner].fireExtinguisher.charges = consumables[abilityOwner].fireExtinguisher.charges - 1
-		if consumables[abilityOwner].fireExtinguisher.charges <= 0 then
-			consumables[abilityOwner].fireExtinguisher.charges = 0
+		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+		if count <= 0 then
+			player:RemoveResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
 			Events.Broadcast(abilityOwner .. "RepairTank", "EXTINGUISH")
 			abilityUsed:Interrupt()
 		else
 			Events.Broadcast(abilityOwner .. "RepairTank", "EXTINGUISH")
 		end
-		abilityUsed:SetNetworkedCustomProperty("Charges", consumables[abilityOwner].fireExtinguisher.charges)
+		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	elseif abilityName == "TURRET" then
-		consumables[abilityOwner].turretKit.charges = consumables[abilityOwner].turretKit.charges - 1
-		if consumables[abilityOwner].turretKit.charges <= 0 then
-			consumables[abilityOwner].fireExtinguisher.charges = 0
+		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
+		if count <= 0 then
+			player:RemoveResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
 			Events.Broadcast(abilityOwner .. "RepairTank", "TURRET")
 			abilityUsed:Interrupt()
 		else
 			Events.Broadcast(abilityOwner .. "RepairTank", "TURRET")
 		end
-		abilityUsed:SetNetworkedCustomProperty("Charges", consumables[abilityOwner].turretKit.charges)
+		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	end
 	abilityUsed.isEnabled = false
 	--abilityUsed:SetNetworkedCustomProperty("Enabled", false)
@@ -49,17 +50,20 @@ end
 
 function ToggleAbility(player, abilityToToggle, toggle)
 	if abilityToToggle == "TRACK" then
-		if consumables[player.id].trackRepair.charges > 0 then
+		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+		if count > 0 then
 			consumables[player.id].trackRepair.ability.isEnabled = toggle
 			--consumables[player.id].trackRepair.ability:SetNetworkedCustomProperty("Enabled", toggle)
 		end
 	elseif abilityToToggle == "EXTINGUISH" then
-		if consumables[player.id].fireExtinguisher.charges > 0 then
+		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+		if count > 0 then
 			consumables[player.id].fireExtinguisher.ability.isEnabled = toggle
 			--consumables[player.id].fireExtinguisher.ability:SetNetworkedCustomProperty("Enabled", toggle)
 		end
 	elseif abilityToToggle == "TURRET" then
-		if consumables[player.id].turretKit.charges > 0 then
+		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
+		if count > 0 then
 			consumables[player.id].turretKit.ability.isEnabled = toggle
 			--consumables[player.id].turretKit.ability:SetNetworkedCustomProperty("Enabled", toggle)
 		end
@@ -67,6 +71,42 @@ function ToggleAbility(player, abilityToToggle, toggle)
 end
 
 function OnJoin(player)
+	
+	local currentSilver = player:GetResource(CONSTANTS_API.SILVER)
+	local consumableCost = 100
+	local initialTreadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+	
+	if initialTreadCount < 1 then
+		player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
+	end
+	
+	local autoTreads = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_TREADS)
+	local treadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+	
+	local autoExtinguisher = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER)
+	local extinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+	
+	local autoTurret = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR)
+	local turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
+	
+	if autoTreads and treadCount < 2 and currentSilver >= consumableCost then
+		player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, 2)
+		player:RemoveResource(CONSTANTS_API.SILVER, 100)
+	end
+
+	if autoExtinguisher and extinguisherCount < 1 and currentSilver >= consumableCost then
+		player:SetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
+		player:RemoveResource(CONSTANTS_API.SILVER, 100)
+	end
+	
+	if autoTurret and turretCount < 1 and currentSilver >= consumableCost then
+		player:SetResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
+		player:RemoveResource(CONSTANTS_API.SILVER, 100)
+	end
+	
+	treadCount = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+	extinguisherCount = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+	turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
 
 	consumables[player.id] = {}
 	consumables[player.id].trackRepair = {}
@@ -74,8 +114,7 @@ function OnJoin(player)
 	consumables[player.id].trackRepair.ability.owner = player
 	consumables[player.id].trackRepair.ability.isEnabled = false
 	consumables[player.id].trackRepair.listener = consumables[player.id].trackRepair.ability.recoveryEvent:Connect(OnRecovery)
-	consumables[player.id].trackRepair.charges = 2
-	consumables[player.id].trackRepair.ability:SetNetworkedCustomProperty("Charges", consumables[player.id].trackRepair.charges)
+	consumables[player.id].trackRepair.ability:SetNetworkedCustomProperty("Charges", treadCount)
 	--consumables[player.id].trackRepair.ability:SetNetworkedCustomProperty("Enabled", false)
 	
 	consumables[player.id].fireExtinguisher = {}
@@ -83,8 +122,7 @@ function OnJoin(player)
 	consumables[player.id].fireExtinguisher.ability.owner = player
 	consumables[player.id].fireExtinguisher.ability.isEnabled = false
 	consumables[player.id].fireExtinguisher.listener = consumables[player.id].fireExtinguisher.ability.recoveryEvent:Connect(OnRecovery)
-	consumables[player.id].fireExtinguisher.charges = 1
-	consumables[player.id].fireExtinguisher.ability:SetNetworkedCustomProperty("Charges", consumables[player.id].fireExtinguisher.charges)
+	consumables[player.id].fireExtinguisher.ability:SetNetworkedCustomProperty("Charges", extinguisherCount)
 	--consumables[player.id].fireExtinguisher.ability:SetNetworkedCustomProperty("Enabled", false)
 	
 	consumables[player.id].turretKit = {}
@@ -92,9 +130,10 @@ function OnJoin(player)
 	consumables[player.id].turretKit.ability.owner = player
 	consumables[player.id].turretKit.ability.isEnabled = false
 	consumables[player.id].turretKit.listener = consumables[player.id].turretKit.ability.recoveryEvent:Connect(OnRecovery)
-	consumables[player.id].turretKit.charges = 1
-	consumables[player.id].turretKit.ability:SetNetworkedCustomProperty("Charges", consumables[player.id].turretKit.charges)
+	consumables[player.id].turretKit.ability:SetNetworkedCustomProperty("Charges", turretCount)
 	--consumables[player.id].turretKit.ability:SetNetworkedCustomProperty("Enabled", false)
+	
+	
 
 end
 
@@ -124,5 +163,5 @@ function OnLeft(player)
 end
 
 Events.Connect("ToggleConsumable", ToggleAbility)
-Game.playerJoinedEvent:Connect(OnJoin)
+Events.Connect("SET_DAILY_CHALLENGES", OnJoin)
 Game.playerLeftEvent:Connect(OnLeft)

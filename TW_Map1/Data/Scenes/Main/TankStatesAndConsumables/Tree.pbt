@@ -1063,6 +1063,12 @@ Objects {
   ParentId: 16314957966692393104
   UnregisteredParameters {
     Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
       Name: "cs:TrackConsumable"
       AssetReference {
         Id: 11980922986673312361
