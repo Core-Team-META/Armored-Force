@@ -161,6 +161,24 @@ Assets {
   }
 }
 Assets {
+  Id: 4194909855045064954
+  Name: "Military Ability Tank Attack"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Military_Ability_Yellow_008"
+  }
+}
+Assets {
+  Id: 4056803710864138273
+  Name: "Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_001"
+  }
+}
+Assets {
   Id: 3807975642088276623
   Name: "Weapon Ammo 013"
   PlatformAssetType: 9
@@ -176,5 +194,23 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameHex_007Wedge"
+  }
+}
+Assets {
+  Id: 3125449001268701343
+  Name: "Line Half 006a"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "LineHalf_006a"
+  }
+}
+Assets {
+  Id: 1101945558934518389
+  Name: "Frame Hex 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameHex_005"
   }
 }

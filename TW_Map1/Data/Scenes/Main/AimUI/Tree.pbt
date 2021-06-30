@@ -315,7 +315,7 @@ Objects {
         Id: 12515110197061593602
       }
       Color {
-        A: 1
+        A: 0.697
       }
       TeamSettings {
       }
@@ -382,7 +382,7 @@ Objects {
         Id: 12515110197061593602
       }
       Color {
-        A: 1
+        A: 0.697
       }
       TeamSettings {
       }
@@ -504,6 +504,7 @@ Objects {
   ChildIds: 94907920443802619
   ChildIds: 11254321391191863055
   ChildIds: 2326021134296651070
+  ChildIds: 4507134571634820272
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -536,6 +537,299 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 4507134571634820272
+  Name: "DMG_FEEDBACK"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15559174866140399715
+  ChildIds: 1277638352008554425
+  ChildIds: 2350369476746086035
+  ChildIds: 771571379020762179
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 280
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 771571379020762179
+  Name: "Enemy-DMG_Text_3"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4507134571634820272
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 250
+    Height: 38
+    UIY: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Set Enemies tank on fire"
+      Color {
+        R: 1
+        G: 0.0500000119
+        B: 0.0500000119
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 16636415353835813981
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 0.577
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2350369476746086035
+  Name: "Enemy-DMG_Text_2"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4507134571634820272
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 250
+    Height: 38
+    UIY: 30
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Enemies Turret damaged"
+      Color {
+        R: 0.229933709
+        G: 0.62
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 16636415353835813981
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 0.577
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1277638352008554425
+  Name: "Enemy-DMG_Text_1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4507134571634820272
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 250
+    Height: 38
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Enemies Treads damaged"
+      Color {
+        R: 0.561000049
+        G: 0.561000049
+        B: 0.561000049
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 16636415353835813981
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 0.577
+      }
+      ShadowOffset {
+        Y: 3
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -1126,11 +1420,15 @@ Objects {
         Value: "mc:everticaljustification:top"
       }
       ShadowColor {
-        A: 1
+        A: 0.491000026
       }
       ShadowOffset {
         Y: 1
       }
+      OutlineColor {
+        A: 0.791
+      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1202,11 +1500,15 @@ Objects {
         Value: "mc:everticaljustification:top"
       }
       ShadowColor {
-        A: 1
+        A: 0.491000026
       }
       ShadowOffset {
         Y: 1
       }
+      OutlineColor {
+        A: 0.791
+      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1279,11 +1581,15 @@ Objects {
         Value: "mc:everticaljustification:top"
       }
       ShadowColor {
-        A: 1
+        A: 0.491000026
       }
       ShadowOffset {
         Y: 1
       }
+      OutlineColor {
+        A: 0.791
+      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1422,11 +1728,15 @@ Objects {
         Value: "mc:everticaljustification:top"
       }
       ShadowColor {
-        A: 1
+        A: 0.564
       }
       ShadowOffset {
         Y: 1
       }
+      OutlineColor {
+        A: 0.624
+      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {

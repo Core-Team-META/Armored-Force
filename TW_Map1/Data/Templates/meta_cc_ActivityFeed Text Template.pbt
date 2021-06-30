@@ -485,6 +485,7 @@ Assets {
               Value: "mc:etextjustify:center"
             }
             Font {
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -574,6 +575,7 @@ Assets {
               Value: "mc:etextjustify:center"
             }
             Font {
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -663,6 +665,7 @@ Assets {
               Value: "mc:etextjustify:center"
             }
             Font {
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -728,6 +731,7 @@ Assets {
               Value: "mc:etextjustify:center"
             }
             Font {
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -787,6 +791,7 @@ Assets {
               Value: "mc:etextjustify:center"
             }
             Font {
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -802,6 +807,15 @@ Assets {
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 16636415353835813981
+      Name: "Teko"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "TekoRegular_ref"
       }
     }
     PrimaryAssetId {

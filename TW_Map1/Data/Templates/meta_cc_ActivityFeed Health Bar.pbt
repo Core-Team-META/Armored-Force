@@ -517,6 +517,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
+              Id: 16636415353835813981
             }
           }
           AnchorLayout {
@@ -541,6 +542,15 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "BackgroundNoOutline_020"
+      }
+    }
+    Assets {
+      Id: 16636415353835813981
+      Name: "Teko"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "TekoRegular_ref"
       }
     }
     PrimaryAssetId {
