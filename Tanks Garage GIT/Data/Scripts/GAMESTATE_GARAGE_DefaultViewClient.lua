@@ -1,5 +1,6 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
 
 local defaultViewUI = script:GetCustomProperty("DefaultViewUI"):WaitForObject()
@@ -10,6 +11,12 @@ local toBattleButtons = script:GetCustomProperty("ToBattleButtons"):WaitForObjec
 local blackScreen = script:GetCustomProperty("BlackScreen"):WaitForObject()
 blackScreen.visibility = Visibility.INHERIT
 local TANK_TABLE_SLIDER = script:GetCustomProperty("TANK_TABLE_SLIDER"):WaitForObject()
+local SHOP_CONSUMABLES = script:GetCustomProperty("SHOP_CONSUMABLES"):WaitForObject()
+
+local treadsSlot = script:GetCustomProperty("TreadsSlot"):WaitForObject()
+local extinguisherSlot = script:GetCustomProperty("ExtinguisherSlot"):WaitForObject()
+local repairKitSlot = script:GetCustomProperty("RepairKitSlot"):WaitForObject()
+
 
 -- Equip tank panel
 local loadEquippableTanks = script:GetCustomProperty("LoadEquippableTanks"):WaitForObject()
@@ -21,6 +28,8 @@ local firstTime = true
 
 local thisComponent = "DEFAULT_MENU"
 local savedState = ""
+
+local consumableSlots = {}
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -56,6 +65,7 @@ function ToggleThisComponent(requestedPlayerState)
 			Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_ON
 		end
 		TANK_TABLE_SLIDER.visibility = Visibility.FORCE_ON
+		SHOP_CONSUMABLES.visibility = Visibility.FORCE_ON
 	else
 		Task.Wait(0.1)
 		DisableThisComponent()
@@ -75,6 +85,7 @@ function DisableThisComponent()
 	
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 	TANK_TABLE_SLIDER.visibility = Visibility.FORCE_OFF
+	SHOP_CONSUMABLES.visibility = Visibility.FORCE_OFF
 end
 
 function OnOtherComponentButtonPressed(button)
@@ -95,10 +106,103 @@ function OnBattleButtonPressed(button)
 	
 end
 
+function OnPurchaseButtonPressed(button)
+	print("purchasing")
+	ReliableEvents.BroadcastToServer("PURCHASE_CONSUME", button.clientUserData.type)
+end
+
+function OnResupplyButtonPressed(button)
+	print("resupply")
+	ReliableEvents.BroadcastToServer("SET_AUTO_CONSUME", button.clientUserData.type)
+end
+
+function OnResourceChanged(player, resource, amount)
+
+	print("resource recieved " .. resource)
+	
+	if resource == CONSTANTS_API.CONSUMABLES.TREADS or resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS then
+		if amount > 1 or (resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS and amount > 0) then
+			consumableSlots.treads.purchaseButton.isEnabled = false
+			consumableSlots.treads.purchased.visibility = Visibility.INHERIT
+			consumableSlots.treads.idle.visibility = Visibility.FORCE_OFF
+			consumableSlots.treads.countText.text = "2 / 2"
+		end
+	elseif resource == CONSTANTS_API.CONSUMABLES.EXTINGUISHER or resource == CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER then
+		if amount > 0 then
+			consumableSlots.extinguisher.purchaseButton.isEnabled = false
+			consumableSlots.extinguisher.purchased.visibility = Visibility.INHERIT
+			consumableSlots.extinguisher.idle.visibility = Visibility.FORCE_OFF
+			consumableSlots.extinguisher.countText.text = "1 / 1"
+			
+		end
+	elseif resource == CONSTANTS_API.CONSUMABLES.REPAIR or resource == CONSTANTS_API.CONSUMABLES.AUTO_REPAIR then
+		if amount > 0 then
+			consumableSlots.repairKit.purchaseButton.isEnabled = false
+			consumableSlots.repairKit.purchased.visibility = Visibility.INHERIT
+			consumableSlots.repairKit.idle.visibility = Visibility.FORCE_OFF
+			consumableSlots.repairKit.countText.text = "1 / 1"
+		end
+	end
+	
+	if resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS then
+		if amount > 0 then
+			consumableSlots.treads.check.visibility = Visibility.INHERIT
+		else 
+			consumableSlots.treads.check.visibility = Visibility.FORCE_OFF
+		end	
+	elseif resource == CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER then
+		if amount > 0 then
+			consumableSlots.extinguisher.check.visibility = Visibility.INHERIT
+		else 
+			consumableSlots.extinguisher.check.visibility = Visibility.FORCE_OFF
+		end	
+	elseif resource == CONSTANTS_API.CONSUMABLES.AUTO_REPAIR then
+		if amount > 0 then
+			consumableSlots.repairKit.check.visibility = Visibility.INHERIT
+		else 
+			consumableSlots.repairKit.check.visibility = Visibility.FORCE_OFF
+		end	
+	end
+
+end
+
+function InitializeSlot(slotTableEntry, panelReference)
+	
+	slotTableEntry.check = panelReference:FindDescendantByName("AUTOBUY_HOVERANDCHECKED")
+	slotTableEntry.resupplyButton = panelReference:FindDescendantByName("BUTTON_AUTOREBUY")
+	slotTableEntry.resupplyButton.clientUserData.type = slotTableEntry.type
+	slotTableEntry.resupplyButton.clickedEvent:Connect(OnResupplyButtonPressed)
+
+	slotTableEntry.idle = panelReference:FindDescendantByName("BUTTON_NORMAL_IDLE")
+	slotTableEntry.purchased = panelReference:FindDescendantByName("BUTTON_PURCHASED")	
+	slotTableEntry.purchaseButton = panelReference:FindDescendantByName("BUTTON_BUY")
+	slotTableEntry.purchaseButton.clientUserData.type = slotTableEntry.type
+	slotTableEntry.purchaseButton.clickedEvent:Connect(OnPurchaseButtonPressed)
+	
+	slotTableEntry.countText = panelReference:FindDescendantByName("CONSUMABLE_COUNT")
+
+end
+
 function InitializeComponent()
 
+	consumableSlots.treads = {}
+	consumableSlots.extinguisher = {}
+	consumableSlots.repairKit = {}
+	
+	consumableSlots.treads.type = "TreadsRepair"
+	consumableSlots.extinguisher.type = "Extinguisher"
+	consumableSlots.repairKit.type = "TurretRepair"
+	
+	InitializeSlot(consumableSlots.treads, treadsSlot)
+	InitializeSlot(consumableSlots.extinguisher, extinguisherSlot)
+	InitializeSlot(consumableSlots.repairKit, repairKitSlot)
+	
+	localPlayer.resourceChangedEvent:Connect(OnResourceChanged)
+	
 	loadEquippableTanks.clickedEvent:Connect(LoadEquippableTanks)
 	defaultViewUI.visibility = Visibility.INHERIT
+	TANK_TABLE_SLIDER.visibility = Visibility.FORCE_ON
+	SHOP_CONSUMABLES.visibility = Visibility.FORCE_ON
 	defaultViewUI.isEnabled = false
 	
 	for _, child in ipairs(otherGarageButtons:GetChildren()) do
@@ -126,6 +230,14 @@ function InitializeComponent()
 		Task.Wait(0.02)
 			
 	end
+	
+	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.TREADS, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.TREADS))
+	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.EXTINGUISHER, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER))
+	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.REPAIR, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR))
+	
+	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.AUTO_TREADS, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_TREADS))
+	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER))
+	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.AUTO_REPAIR, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR))
 	
 end
 

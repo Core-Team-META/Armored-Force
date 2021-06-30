@@ -872,6 +872,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
       Name: "cs:DefaultViewUI"
       ObjectReference {
         SelfId: 15177659444916868221
@@ -929,6 +935,30 @@ Objects {
       Name: "cs:TANK_TABLE_SLIDER"
       ObjectReference {
         SelfId: 17307660758729169401
+      }
+    }
+    Overrides {
+      Name: "cs:SHOP_CONSUMABLES"
+      ObjectReference {
+        SelfId: 15419529815338121241
+      }
+    }
+    Overrides {
+      Name: "cs:TreadsSlot"
+      ObjectReference {
+        SelfId: 12618261364729113040
+      }
+    }
+    Overrides {
+      Name: "cs:ExtinguisherSlot"
+      ObjectReference {
+        SelfId: 8508264400708181003
+      }
+    }
+    Overrides {
+      Name: "cs:RepairKitSlot"
+      ObjectReference {
+        SelfId: 14766574473239698047
       }
     }
   }

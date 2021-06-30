@@ -27,21 +27,40 @@ function SendToMap(player, selectedMap)
 end
 
 function PurchaseConsumable(player, consumable)
+
+	print(consumable)
+	
 	local currentPlayerSilver = player:GetResource(CONSTANTS_API.SILVER)
 	local cost = consumableCost[consumable]	
 	local resourceOfConsumable = nil
+	local currentCount = 3
+	local maxCount = 1
 
 	if consumable == "TreadsRepair" then
 		resourceOfConsumable = CONSTANTS_API.CONSUMABLES.TREADS
+		maxCount = 2
 	elseif consumable == "Extinguisher" then
 		resourceOfConsumable = CONSTANTS_API.CONSUMABLES.EXTINGUISHER
 	elseif consumable == "TurretRepair" then
 		resourceOfConsumable = CONSTANTS_API.CONSUMABLES.REPAIR
 	end
 	
-	if not resourceOfConsumable or cost > currentPlayerSilver then
+	if resourceOfConsumable then
+		currentCount = player:GetResource(resourceOfConsumable)
+	end
+	
+	if not resourceOfConsumable then
+		print("Consumable not valid")
+		return
+	elseif cost > currentPlayerSilver then
+		print("Cannot afford consumable")
+		return
+	elseif currentCount >= maxCount then
+		print("Consumable at max count")
 		return
 	end
+	
+	print("adding comsumable")
 	
 	player:AddResource(resourceOfConsumable, 1)
 	player:RemoveResource(CONSTANTS_API.SILVER, cost)
@@ -50,10 +69,16 @@ end
 
 function SetAutoPurchase(player, consumable)
 
+	print(consumable)
+	
+	local currentPlayerSilver = player:GetResource(CONSTANTS_API.SILVER)
+	local cost = consumableCost[consumable]	
 	local resourceOfConsumable = nil
+	local maxCount = 1
 
 	if consumable == "TreadsRepair" then
 		resourceOfConsumable = CONSTANTS_API.CONSUMABLES.AUTO_TREADS
+		maxCount = 2
 	elseif consumable == "Extinguisher" then
 		resourceOfConsumable = CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER
 	elseif consumable == "TurretRepair" then
@@ -69,6 +94,11 @@ function SetAutoPurchase(player, consumable)
 	if originalSetting <= 0 then
 		player:SetResource(resourceOfConsumable, 1)
 		PurchaseConsumable(player, consumable)
+		
+		if cost <= currentPlayerSilver or player:GetResource(resourceOfConsumable) < maxCount then
+			player:AddResource(resourceOfConsumable, 1)
+			player:RemoveResource(CONSTANTS_API.SILVER, cost)
+		end
 	else 
 		player:SetResource(resourceOfConsumable, 0)
 	end
