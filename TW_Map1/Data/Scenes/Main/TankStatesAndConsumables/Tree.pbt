@@ -347,7 +347,7 @@ Objects {
     Overrides {
       Name: "cs:TurretIndicator"
       ObjectReference {
-        SelfId: 8484233316206723453
+        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -365,7 +365,7 @@ Objects {
     Overrides {
       Name: "cs:FireIndicator"
       ObjectReference {
-        SelfId: 17336602207993706112
+        SelfId: 841534158063459245
       }
     }
     Overrides {

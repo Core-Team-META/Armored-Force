@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16636415353835813981
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 12728303312772814266
   Name: "BG Flat 006"
   PlatformAssetType: 9
