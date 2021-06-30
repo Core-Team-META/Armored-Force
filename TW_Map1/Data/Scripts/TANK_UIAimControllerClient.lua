@@ -109,7 +109,7 @@ function UpdatePointer()
 		truePointer.visibility = Visibility.FORCE_ON
 		
 		EaseUI.EaseX(truePointer, uiPostion.x, 0.04, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.INOUT)
-		EaseUI.EaseY(truePointer, uiPostion.y, 0.04, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.INOUT)
+		EaseUI.EaseY(truePointer, uiPostion.y, 0.01, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.INOUT)
 	else 
 		truePointer.visibility = Visibility.FORCE_OFF
 	end
