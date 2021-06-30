@@ -118,7 +118,7 @@ function AssignDriver(newDriver)
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 100)
+	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 200)
 	driver = newDriver
 	
 	SetTankModifications()
@@ -148,12 +148,12 @@ function AssignDriver(newDriver)
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
 	
-	Task.Wait()
+	Task.Wait(0.1)
 	
 	driver.isCollidable = false
 	driver.isVisible = false
 	
-	Task.Wait()
+	Task.Wait(0.1)
 	
 	driver:AttachToCoreObject(turret)
 	

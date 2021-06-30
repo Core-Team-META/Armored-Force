@@ -46,7 +46,7 @@ function OnSendMessage(params)
     end
 
     if not IsNameComamnd(params.message) and IsComamnd(params.message) then
-        Chat.LocalMessage("[System] "..params.message.." is an invalid command. Use /commands.")
+        Chat.LocalMessage("[System] "..params.message.." is an invalid command. Use /help.")
         params.message = ""
         return
     end
