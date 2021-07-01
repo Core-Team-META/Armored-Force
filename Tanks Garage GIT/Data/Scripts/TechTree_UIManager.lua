@@ -183,6 +183,7 @@ function ToggleThisComponent(requestedPlayerState)
 		LOCAL_PLAYER:SetOverrideCamera(overrideCamera)
 		
 		displayTanks.visibility = Visibility.FORCE_ON
+		PopulateOwnedTanks()
 		OpenUI()
 	else
 		Task.Wait(0.1)
@@ -518,6 +519,7 @@ function ConfirmButtonClicked()
 				end
 			end
 		end
+		PopulateOwnedTanks()
 		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 	else
 		-- Most likely in can't afford state
@@ -1434,6 +1436,15 @@ Task.Wait(2)
 Init()
 PopulateSelectedTankPanel()
 --ResetTankDetails()
+
+function PopulateOwnedTanks()
+	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tank.purchased) then
+			local panel = World.FindObjectByName("UNLOCKED_"..tank.id)
+			panel.visibility = Visibility.FORCE_ON
+		end
+	end
+end
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
