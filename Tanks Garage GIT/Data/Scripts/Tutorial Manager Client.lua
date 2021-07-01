@@ -48,8 +48,9 @@ function Init()
 	end
 end
 
-function GotoShootingRange()
+function GotoShootingRange(button)
 	SFX_CLICK:Play()
+	button.parent:FindDescendantByName("BUTTON_NORMAL_PRESSED").visibility = Visibility.FORCE_OFF
 	if(LOCAL_PLAYER:GetResource(API_Tutorial.GetTutorialResource()) == API_Tutorial.TutorialPhase.None) then
 		local panel = World.SpawnAsset(TutorialCompletePopup, {parent = script.parent:FindChildByName("Tutorial UI")})
 		panel.lifeSpan = 3
@@ -59,12 +60,19 @@ function GotoShootingRange()
 	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
 end
 
-function ButtonHover()
+function ButtonRelease(button)
 	SFX_HOVER:Play()
+	button.parent:FindDescendantByName("BUTTON_NORMAL_PRESSED").visibility = Visibility.FORCE_OFF
 end
 
-function ButtonUnhover()
+function ButtonHover(button)
+	SFX_HOVER:Play()
+	button.parent:FindDescendantByName("BUTTON_NORMAL_HOVER").visibility = Visibility.FORCE_ON
+end
+
+function ButtonUnhover(button)
 	SFX_UNHOVERED:Play()
+	button.parent:FindDescendantByName("BUTTON_NORMAL_HOVER").visibility = Visibility.FORCE_OFF
 end
 
 Init()
@@ -168,5 +176,6 @@ Events.Connect("ENABLE_GARAGE_COMPONENT", EnableComponent)
 LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
 
 Tutorial_ShootingRangeButton.clickedEvent:Connect(GotoShootingRange)
+Tutorial_ShootingRangeButton.releasedEvent:Connect(ButtonRelease)
 Tutorial_ShootingRangeButton.hoveredEvent:Connect(ButtonHover)
 Tutorial_ShootingRangeButton.unhoveredEvent:Connect(ButtonUnhover)
