@@ -43,12 +43,18 @@ function UnpackChallengeInfo(player)
 				elseif section == 4 then
 					player.serverUserData.CHALLENGE[challengeNumber].dueDate = s
 				end
-				
 				section = section + 1
 			end
 			section = 1
 			challengeNumber = challengeNumber + 1
 		end	
+
+		if not player.serverUserData.CHALLENGE[1].dueDate or player.serverUserData.CHALLENGE[1].dueDate == "nil" then
+			player.serverUserData.CHALLENGES = ""
+			UnpackChallengeInfo(player)
+			return		
+		
+		end
 	else 
 		local challengeString = ""
 		local newDate = os.date("!*t")
@@ -63,15 +69,15 @@ function UnpackChallengeInfo(player)
 			if i == 1 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Kills"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Kills;2;0;" .. challengeDueDate .. ";0|"
+				challengeString = challengeString .. "Kills;2;0;" .. challengeDueDate .. "|"
 			elseif i == 2 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Damage"
 				player.serverUserData.CHALLENGE[i].target = 1000
-				challengeString = challengeString .. "Damage;1000;0;" .. challengeDueDate .. ";0|"
+				challengeString = challengeString .. "Damage;1000;0;" .. challengeDueDate .. "|"
 			elseif i == 3 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Wins"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Wins;2;0;" .. challengeDueDate .. ";0|"
+				challengeString = challengeString .. "Wins;2;0;" .. challengeDueDate .. "|"
 			end
 			
 			--[[
