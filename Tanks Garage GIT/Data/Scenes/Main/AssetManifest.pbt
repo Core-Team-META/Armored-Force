@@ -174,6 +174,19 @@ Assets {
   }
 }
 Assets {
+  Id: 4413664130009284128
+  Name: "teststorage1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "d1a69f5da5c541fc994e9615afda579b"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 3985805927326060140
   Name: "SilverPack1"
   PlatformAssetType: 24

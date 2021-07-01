@@ -63,15 +63,15 @@ function UnpackChallengeInfo(player)
 			if i == 1 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Kills"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Kills;2;0;" .. challengeDueDate .. "|"
+				challengeString = challengeString .. "Kills;2;0;" .. challengeDueDate .. ";0|"
 			elseif i == 2 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Damage"
 				player.serverUserData.CHALLENGE[i].target = 1000
-				challengeString = challengeString .. "Damage;1000;0;" .. challengeDueDate .. "|"
+				challengeString = challengeString .. "Damage;1000;0;" .. challengeDueDate .. ";0|"
 			elseif i == 3 then
 				player.serverUserData.CHALLENGE[i].challengeType = "Wins"
 				player.serverUserData.CHALLENGE[i].target = 2
-				challengeString = challengeString .. "Wins;2;0;" .. challengeDueDate .. "|"
+				challengeString = challengeString .. "Wins;2;0;" .. challengeDueDate .. ";0|"
 			end
 			
 			--[[
