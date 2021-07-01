@@ -131,7 +131,7 @@ function Tick(deltaTime)
         
         --local abilityEnabled = currentAbility:GetCustomProperty("Enabled")
         
-        if not currentAbility.isEnabled and (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
+        if (not currentAbility.isEnabled and currentPhase ~= AbilityPhase.COOLDOWN) or chargeTracking <= 0 then
         	PROGRESS_INDICATOR.visibility = Visibility.INHERIT
         	RIGHT_SHADOW.visibility = Visibility.INHERIT
         	LEFT_SHADOW.visibility = Visibility.INHERIT
@@ -141,6 +141,7 @@ function Tick(deltaTime)
 		elseif currentAbility.isEnabled  and (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
             COUNTDOWN_TEXT.visibility = Visibility.FORCE_OFF
             PROGRESS_INDICATOR.visibility = Visibility.FORCE_OFF
+            COUNTDOWN_TEXT.text = ""
         elseif chargeTracking > 0 and not (currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST) then
             COUNTDOWN_TEXT.visibility = Visibility.INHERIT
             PROGRESS_INDICATOR.visibility = Visibility.INHERIT

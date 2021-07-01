@@ -5,6 +5,7 @@ local tankCount = script:GetCustomProperty("TankCount")
 
 local tankTemplates = script.parent
 local equippedTank = {}
+local resetOverride = false
 
 function GetEquippedTankTemplate(player, id)
 	--print("Checking for tank with id: " .. id)
@@ -42,19 +43,25 @@ end
 
 function ResetAllVehicles()
 	local playerList = Game.GetPlayers()
+	--resetOverride = true
 	
 	for _, player in pairs(playerList) do
+		--RemovePlayerEquipment(player)
 		player:Spawn()
-		Task.Wait()
-		RemovePlayerEquipment(player)
-		GivePlayerEquipment(player)
+		--GivePlayerEquipment(player)
 	end
+	
+	--resetOverride = false
 end
 
 function OnPlayerRespawned(player)
 
 	--player.isVisible = false
 	--Task.Wait(0.1)
+	
+	if resetOverride then
+		return
+	end
 	
 	RemovePlayerEquipment(player)
 	
@@ -116,5 +123,5 @@ end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.Connect("RESET_TANKS", ResetAllVehicles)
-Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, id)
-Events.Connect("SET_EQUIPPED_TANK", ChangeEquippedTank, player, id)
+Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank)
+Events.Connect("SET_EQUIPPED_TANK", ChangeEquippedTank)

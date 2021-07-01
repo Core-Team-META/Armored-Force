@@ -118,7 +118,7 @@ function AssignDriver(newDriver)
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 200)
+	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 150)
 	driver = newDriver
 	
 	SetTankModifications()

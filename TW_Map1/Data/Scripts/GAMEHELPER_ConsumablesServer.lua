@@ -13,33 +13,27 @@ function OnRecovery(abilityUsed)
 	local abilityName = abilityUsed.name
 	
 	if abilityName == "TRACK" then
-		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
+		abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
+		Events.Broadcast(abilityOwner .. "RepairTank", "TRACK")
+		local count = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.TREADS)
 		if count <= 0 then
-			player:RemoveResource(CONSTANTS_API.CONSUMABLES.TREADS, 1)
-			Events.Broadcast(abilityOwner .. "RepairTank", "TRACK")
 			abilityUsed:Interrupt()
-		else 
-			Events.Broadcast(abilityOwner .. "RepairTank", "TRACK")
 		end
 		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	elseif abilityName == "EXTINGUISH" then
-		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
+		abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
+		Events.Broadcast(abilityOwner .. "RepairTank", "EXTINGUISH")
+		local count = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER)
 		if count <= 0 then
-			player:RemoveResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
-			Events.Broadcast(abilityOwner .. "RepairTank", "EXTINGUISH")
 			abilityUsed:Interrupt()
-		else
-			Events.Broadcast(abilityOwner .. "RepairTank", "EXTINGUISH")
 		end
 		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	elseif abilityName == "TURRET" then
-		local count = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
+		abilityUsed.owner:RemoveResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
+		Events.Broadcast(abilityOwner .. "RepairTank", "TURRET")
+		local count = abilityUsed.owner:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
 		if count <= 0 then
-			player:RemoveResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
-			Events.Broadcast(abilityOwner .. "RepairTank", "TURRET")
 			abilityUsed:Interrupt()
-		else
-			Events.Broadcast(abilityOwner .. "RepairTank", "TURRET")
 		end
 		abilityUsed:SetNetworkedCustomProperty("Charges", count)
 	end
@@ -88,6 +82,15 @@ function OnJoin(player)
 	
 	local autoTurret = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR)
 	local turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
+	
+	print("CONSUMABLE CHECKS")
+	print(autoTreads)
+	print(treadCount)
+	print(autoExtinguisher)
+	print(extinguisherCount)
+	print(autoTurret)
+	print(turretCount)
+	print("=================")
 	
 	if autoTreads and treadCount < 2 and currentSilver >= consumableCost then
 		player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, 2)
