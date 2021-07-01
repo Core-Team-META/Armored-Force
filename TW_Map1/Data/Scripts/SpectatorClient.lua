@@ -228,7 +228,7 @@ end
 local function OnBindingReleased(player, binding)
 	bindingsPressed[binding] = false
 
-	if(binding == BINDING_RETURN_TO_GARAGE) then
+	if(binding == BINDING_RETURN_TO_GARAGE and GAMESTATE_MainGameStateManagerServer:GetCustomProperty("GameState") ~= "LOBBY_STATE") then
 		-- Calculate earnings for leaving. When leaving, we assume a draw for consistent earnings
 		local maxAwardXP = GAMESTATE_StatisticsComponent:GetCustomProperty("DrawXPValue")
 		local maxMatchDuration = settings:GetCustomProperty("MatchMaxDuration")
