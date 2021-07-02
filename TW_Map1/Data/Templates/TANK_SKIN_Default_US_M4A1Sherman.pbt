@@ -748,8 +748,6 @@ Assets {
         Name: "TankEngineAndMovementLoopSFX"
         Transform {
           Location {
-            X: -102.641983
-            Z: -149.13681
           }
           Rotation {
           }
@@ -790,7 +788,6 @@ Assets {
             Volume: 0.5
             Falloff: 3384.07715
             Radius: 1625.76941
-            EnableOcclusion: true
             IsSpatializationEnabled: true
             IsAttenuationEnabled: true
           }
@@ -801,8 +798,6 @@ Assets {
         Name: "TankEngineLoopSFX"
         Transform {
           Location {
-            X: -102.641983
-            Z: -149.13681
           }
           Rotation {
           }
@@ -828,10 +823,9 @@ Assets {
           }
           AutoPlay: true
           Repeat: true
-          Volume: 1.5
+          Volume: 1
           Falloff: 5000
           Radius: 2000
-          EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -43906,9 +43900,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
+              R: 0.502886593
+              G: 0.610495746
+              B: 0.323143244
               A: 1
             }
           }
@@ -44008,9 +44002,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
+              R: 0.502886593
+              G: 0.610495746
+              B: 0.323143244
               A: 1
             }
           }
@@ -44110,9 +44104,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
+              R: 0.502886593
+              G: 0.610495746
+              B: 0.323143244
               A: 1
             }
           }
@@ -44212,9 +44206,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
+              R: 0.502886593
+              G: 0.610495746
+              B: 0.323143244
               A: 1
             }
           }
@@ -44315,9 +44309,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
+              R: 0.502886593
+              G: 0.610495746
+              B: 0.323143244
               A: 1
             }
           }
@@ -44417,9 +44411,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.124771841
-              G: 0.147027284
-              B: 0.0865004659
+              R: 0.502886593
+              G: 0.610495746
+              B: 0.323143244
               A: 1
             }
           }
