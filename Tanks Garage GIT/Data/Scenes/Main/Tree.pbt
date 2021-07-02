@@ -14,6 +14,7 @@ Objects {
       Z: 1
     }
   }
+  ChildIds: 14522293077169646344
   ChildIds: 8476228121599389749
   ChildIds: 16813558807825262224
   ChildIds: 765611719618973778
@@ -1381,5 +1382,38 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Keys and Links"
+  }
+}
+Objects {
+  Id: 14522293077169646344
+  Name: "test"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  BindingSet {
+    BindingSetAsset {
+      Id: 16843081455974476741
+    }
   }
 }

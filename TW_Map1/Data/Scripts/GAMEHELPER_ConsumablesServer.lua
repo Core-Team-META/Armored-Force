@@ -83,6 +83,7 @@ function OnJoin(player)
 	local autoTurret = player:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR)
 	local turretCount = player:GetResource(CONSTANTS_API.CONSUMABLES.REPAIR)
 	
+	--[[
 	print("CONSUMABLE CHECKS")
 	print(autoTreads)
 	print(treadCount)
@@ -91,6 +92,7 @@ function OnJoin(player)
 	print(autoTurret)
 	print(turretCount)
 	print("=================")
+	]]
 	
 	if autoTreads and treadCount < 2 and currentSilver >= consumableCost then
 		player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, 2)

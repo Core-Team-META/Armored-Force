@@ -57,7 +57,7 @@ function UnpackChallengeInfo(player)
 		player.serverUserData.CHALLENGES = challengeString
 	end
 	
-	print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
+	--print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
 end
 
 function RepackChallengeInfo(player)
@@ -73,7 +73,7 @@ function RepackChallengeInfo(player)
 	
 	player.serverUserData.CHALLENGES = challengeString
 	
-	print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
+	--print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
 	
 end
 

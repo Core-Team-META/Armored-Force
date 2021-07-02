@@ -646,7 +646,7 @@ function API.RetrieveTankDataById(id, playerTanks)
 	local tankData = {}
 	for k, tank in ipairs(playerTanks) do
 		if(tank.id == id) then
-			print("Tank found with Id: " .. tostring(id))
+			--print("Tank found with Id: " .. tostring(id))
 			tankData.id = tank.id
 			tankData.hasWeapon = tank.hasWeapon
 			tankData.hasArmor = tank.hasArmor
