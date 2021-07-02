@@ -1,4 +1,5 @@
 -- API
+local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 
 -- Object references
 local TANK_TABLE_TEMPLATE = script:GetCustomProperty("TANK_TABLE_TEMPLATE")
@@ -6,6 +7,7 @@ local UIScrollPanel = script:GetCustomProperty("UIScrollPanel"):WaitForObject()
 local TechTree_Contents = script:GetCustomProperty("TechTree_Contents"):WaitForObject()
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
+local TANKS_OWNED = script:GetCustomProperty("TANKS_OWNED"):WaitForObject()
 
 -- Local properties
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -41,6 +43,7 @@ function PopulateQuickSelectPanel()
             tankCount = tankCount + 1
         end
     end
+    TANKS_OWNED.text = "Tanks owned : " .. tostring(tankCount) .. " / " .. tostring(Constants_API.GetNumberOfTanks())
 end
 
 function ClearPanel()
