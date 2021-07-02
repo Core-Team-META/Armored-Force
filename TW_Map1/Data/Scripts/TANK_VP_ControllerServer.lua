@@ -409,7 +409,7 @@ function ProjectileExpired(expiredProjectile)
 end
 
 function OnArmorHit(trigger, other)
-
+	
 	if other.type == "Projectile" then
 		local enemyPlayer = other.owner
 		
@@ -479,7 +479,69 @@ function OnArmorHit(trigger, other)
 				turretDamagedTask = Task.Spawn(OnDamagedBarrel, 0)
 			end
 		end
+	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" then
+		
+		local enemyPlayer = other.driver
+		local armorName = trigger.name
+		
+		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" then
+			armorName = "TRACK"
+		end
+	
+		local otherVehicleSpeed = other:GetVelocity().size
+		local thisVehicleSpeed = chassis:GetVelocity().size
+		
+		local otherRotation = other:GetWorldRotation().z 
+		local thisRotation = chassis:GetWorldRotation().z
+		
+		local rotationDifference = math.abs(otherRotation - thisRotation)
+		
+		local netSpeed = 0
+		
+		if rotationDifference < 90 then
+			netSpeed =math.abs(otherVehicleSpeed - thisVehicleSpeed)
+		else 
+			netSpeed = otherVehicleSpeed + thisVehicleSpeed
+		end
+		
+		if netSpeed < 300 or armorName == "TRACK" then
+			return
+		end
+		
+		local ramDamage = (netSpeed + other.mass * 0.02)/400
+		
+		if armorName == "HULLFRONT" then
+			ramDamage = ramDamage/2
+		end
+		
+		ramDamage = math.ceil(ramDamage)
+		
+		local damageDealt = Damage.New(ramDamage)
+		
+		damageDealt.sourcePlayer = enemyPlayer
+		damageDealt.reason = DamageReason.COMBAT
+		--driver:ApplyDamage(damageDealt)
 
+		local attackData = {
+			object = driver,
+			damage = damageDealt,
+			source = enemyPlayer,
+			position = nil,
+			rotation = nil,
+			tags = {id = "Example"}
+		}
+		COMBAT.ApplyDamage(attackData)
+		
+		local possibleDamageState = math.random(100)
+				
+		if possibleDamageState > 100 then
+			return
+		end		
+		
+		if armorName == "HULLREAR" and not burnTask then
+			playerWhoBurned = enemyPlayer
+			burnTask = Task.Spawn(OnBurning, 0)
+		end
 	end
 	
 end

@@ -174,13 +174,14 @@ function CheckForSpotting()
 end
 
 function OnDamaged(player, damage)
-
-	damageOverride[player.id] = true
+	
+	local playerID = player.id
+	damageOverride[playerID] = true
 	AddToListFromDamaged(player)
 	
 	Task.Wait(5)
 	
-	damageOverride[player.id] = nil
+	damageOverride[playerID] = nil
 	
 end	
 
