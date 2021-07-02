@@ -50,6 +50,7 @@ Assets {
         ChildIds: 14875676559791954388
         ChildIds: 14647864428571634787
         ChildIds: 10552430341459749959
+        ChildIds: 4841080636710237205
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -39354,6 +39355,257 @@ Assets {
           DoesPositionOffsetSpring: true
         }
       }
+      Objects {
+        Id: 4841080636710237205
+        Name: "Damage Effects"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.909090877
+            Y: 0.909090877
+            Z: 0.909090877
+          }
+        }
+        ParentId: 17751299163268970225
+        ChildIds: 18295031231720691265
+        ChildIds: 9997519201215268548
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 18295031231720691265
+        Name: "VehicleDamageEffectsClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4841080636710237205
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Debug"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:SpeedDamageThreshold"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:DamageEffectTemplate"
+            AssetReference {
+              Id: 2492452858327876152
+            }
+          }
+          Overrides {
+            Name: "cs:CollisionBoxes"
+            ObjectReference {
+              SubObjectId: 9997519201215268548
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 10607153596125005263
+          }
+        }
+      }
+      Objects {
+        Id: 9997519201215268548
+        Name: "Collision Boxes"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4841080636710237205
+        ChildIds: 3023448997095586445
+        ChildIds: 1904570894249412390
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 3023448997095586445
+        Name: "Collision Box"
+        Transform {
+          Location {
+            X: -551.070313
+            Z: 109.999992
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 1.1
+            Y: 5.20000029
+            Z: 2.4
+          }
+        }
+        ParentId: 9997519201215268548
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9118011185503589263
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.1
+              B: 0.1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+          }
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 1904570894249412390
+        Name: "Collision Box"
+        Transform {
+          Location {
+            X: 470.867188
+            Z: 109.999992
+          }
+          Rotation {
+            Yaw: 5.46414958e-05
+          }
+          Scale {
+            X: 0.900000036
+            Y: 5.20000029
+            Z: 1.30000007
+          }
+        }
+        ParentId: 9997519201215268548
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9118011185503589263
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.1
+              B: 0.1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+          }
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          DisableAngularMotionBlur: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
     }
     Assets {
       Id: 14783869045496354241
@@ -40055,6 +40307,24 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_urb_road_ramp_edge_bot_001"
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
+      }
+    }
+    Assets {
+      Id: 9118011185503589263
+      Name: "Wireframe"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "wireframe_glow_001"
       }
     }
     PrimaryAssetId {
