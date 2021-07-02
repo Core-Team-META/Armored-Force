@@ -101,16 +101,16 @@ function StateSTART(manager, propertyName)
 		return
 	end
 
-	print("Statistics recieved state: " .. mainGameStateManager:GetCustomProperty("GameState"))
+	--print("Statistics recieved state: " .. mainGameStateManager:GetCustomProperty("GameState"))
 
 	if mainGameStateManager:GetCustomProperty("GameState") == "VICTORY_STATE" then
-		print("Waiting for winner...")
+		--print("Waiting for winner...")
 
 		while winner < 0 do
 			Task.Wait()
 		end
 
-		print("got winner...")
+		--print("got winner...")
 
 		SaveStatistics()
 	end
@@ -331,6 +331,7 @@ function OnSpotRecord(player, spottingAmount)
 end
 
 function ResourceCheck(player)
+
 	print(player.name .. " resource check:")
 	print("Kills: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.TOTAL_KILLS)))
 	print("Most Kills in a Match: " .. tostring(player:GetResource(CONSTANTS_API.COMBAT_STATS.MOST_TANKS_DESTROYED)))
@@ -345,6 +346,7 @@ function ResourceCheck(player)
 	print("Rank: " .. tostring(player:GetResource(CONSTANTS_API.RANK_NAME)))
 	print("XP: " .. tostring(player:GetResource(CONSTANTS_API.XP)) .. " / " .. tostring(UTIL_API.GetXPToNextRank(player)))
 	print("===============================================")
+
 end
 
 function OnResourceChanged(player, resource, value)

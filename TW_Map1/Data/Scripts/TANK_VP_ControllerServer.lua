@@ -224,39 +224,39 @@ function SetTankModifications()
 	end
 	
 	if driver.serverUserData.TankUpgradeOverride and #driver.serverUserData.TankUpgradeOverride > 0 then
-		print("Overriding tank upgrades")
+		--print("Overriding tank upgrades")
 		modifications = driver.serverUserData.TankUpgradeOverride 
 	end
 	
 	if modifications[1] == 2 then
 		reloadTime = upgradedReload
 		projectileDamage = upgradedDamage
-		print("Upgraded firepower")
+		--print("Upgraded firepower")
 	else 
 		reloadTime = reloadSpeed
 		projectileDamage = damagePerShot
-		print("Default firepower")
+		--print("Default firepower")
 	end
 	
 	if modifications[2] == 2 then
 		tankHitPoints = upgradedHitPoints
-		print("Upgraded surivability")
+		--print("Upgraded surivability")
 	else 
 		tankHitPoints = hitPoints
-		print("Default surivability")
+		--print("Default surivability")
 	end
 
 	if modifications[3] == 2 then
 		traverseSpeed = upgradedTraverse	
 		elevationSpeed = upgradedElevation
 		chassisTemplate = templateReferences:GetCustomProperty("UpgradedChassis")
-		print("Upgraded mobility")
+		--print("Upgraded mobility")
 		
 	else 
 		traverseSpeed = turretTraverseSpeed
 		elevationSpeed = turretElevationSpeed
 		chassisTemplate = templateReferences:GetCustomProperty("DefaultChassis")
-		print("Default mobility")
+		--print("Default mobility")
 	end
 	
 end
@@ -457,7 +457,7 @@ function OnArmorHit(trigger, other)
 		
 		local possibleDamageState = math.random(100)
 		
-		if possibleDamageState > 100 then
+		if possibleDamageState > 50 then
 			return
 		end
 		
@@ -484,8 +484,8 @@ function OnArmorHit(trigger, other)
 		local enemyPlayer = other.driver
 		local armorName = trigger.name
 		
-		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" then
-			armorName = "TRACK"
+		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" or enemyPlayer.team == driver.team then
+			return
 		end
 	
 		local otherVehicleSpeed = other:GetVelocity().size
@@ -504,7 +504,7 @@ function OnArmorHit(trigger, other)
 			netSpeed = otherVehicleSpeed + thisVehicleSpeed
 		end
 		
-		if netSpeed < 300 or armorName == "TRACK" then
+		if netSpeed < 300 then
 			return
 		end
 		
@@ -514,7 +514,7 @@ function OnArmorHit(trigger, other)
 			ramDamage = ramDamage/2
 		end
 		
-		ramDamage = math.ceil(ramDamage)
+		ramDamage = math.floor(ramDamage)
 		
 		local damageDealt = Damage.New(ramDamage)
 		
@@ -534,7 +534,7 @@ function OnArmorHit(trigger, other)
 		
 		local possibleDamageState = math.random(100)
 				
-		if possibleDamageState > 100 then
+		if possibleDamageState > 50 then
 			return
 		end		
 		
