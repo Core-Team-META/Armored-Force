@@ -110,15 +110,9 @@ function CountdownTask()
 
 		if(lastTime ~= currentTime) then
 			clockTick:Play()
-		end
-
-		local startText = "00:"
+		end		
 		
-		if currentTime < 10 then
-			startText = startText .. "0"
-		end 
-		
-		timerText.text = startText .. tostring(currentTime)		
+		timerText.text = string.format("%02d:%02d",math.floor(currentTime / 60),currentTime % 60)	
 	end
 	lastTime = currentTime	
 end
