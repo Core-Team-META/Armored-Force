@@ -31143,8 +31143,6 @@ Assets {
         Name: "TankEngineAndMovementLoopSFX"
         Transform {
           Location {
-            X: -80
-            Z: -145.088104
           }
           Rotation {
           }
@@ -31185,7 +31183,6 @@ Assets {
             Volume: 0.5
             Falloff: 3384.07715
             Radius: 1625.76941
-            EnableOcclusion: true
             IsSpatializationEnabled: true
             IsAttenuationEnabled: true
           }
@@ -31196,8 +31193,6 @@ Assets {
         Name: "TankEngineLoopSFX"
         Transform {
           Location {
-            X: -80
-            Z: -145.088104
           }
           Rotation {
           }
@@ -31223,10 +31218,9 @@ Assets {
           }
           AutoPlay: true
           Repeat: true
-          Volume: 1.5
+          Volume: 1
           Falloff: 5000
           Radius: 2000
-          EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
