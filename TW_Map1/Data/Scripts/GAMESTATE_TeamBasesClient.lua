@@ -1,3 +1,5 @@
+local EaseUI = require(script:GetCustomProperty("EaseUI"))
+
 local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
 local teamBasesServer = script:GetCustomProperty("GAMESTATE_TeamBasesServer"):WaitForObject()
 local settings = script:GetCustomProperty("Settings"):WaitForObject()
@@ -15,9 +17,24 @@ local timer = script:GetCustomProperty("Timer"):WaitForObject()
 local aPointVisual = script:GetCustomProperty("APointVisual"):WaitForObject()
 local bPointVisual = script:GetCustomProperty("BPointVisual"):WaitForObject()
 
+local ownBaseNotification = script:GetCustomProperty("OwnBaseNotification"):WaitForObject()
+local baseCaptureAlertSFX = script:GetCustomProperty("BaseCaptureAlertSFX"):WaitForObject()
+
+local enemyBaseNotification = script:GetCustomProperty("EnemyBaseNotification"):WaitForObject()
+local captureInProgressSFX = script:GetCustomProperty("CaptureInProgressSFX"):WaitForObject()
+
 local gameModeID = teamBasesServer:GetCustomProperty("GameModeID")
 
 local updateTask = nil
+
+local previousTeam1Progress = 0
+local previousTeam2Progress = 0
+
+local changeCount = 0
+local changeCount2 = 0
+
+local ownNotificationOn = false
+local enemyNotificationOn = false
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -88,6 +105,30 @@ function StateSTART(manager, propertyName)
 	
 end
 
+function OwnBaseNotificationTask()
+
+	EaseUI.EaseY(ownBaseNotification, 75, 1, EaseUI.EasingEquation.ELASTIC, EaseUI.EasingDirection.OUT)
+	baseCaptureAlertSFX:Play()
+	
+	Task.Wait(4)
+	
+	baseCaptureAlertSFX:Stop()
+	EaseUI.EaseY(ownBaseNotification, -1000, 1, EaseUI.EasingEquation.ELASTIC, EaseUI.EasingDirection.OUT)
+		
+end
+
+function EnemyBaseNotificationTask()
+
+	EaseUI.EaseY(enemyBaseNotification, 0, 1, EaseUI.EasingEquation.ELASTIC, EaseUI.EasingDirection.OUT)
+	captureInProgressSFX:Play()
+	
+	Task.Wait(4)
+	
+	captureInProgressSFX:Stop()
+	EaseUI.EaseY(enemyBaseNotification, -1000, 1, EaseUI.EasingEquation.ELASTIC, EaseUI.EasingDirection.OUT)
+		
+end
+
 function UpdateUITask()
 
 	local count = mainGameStateManager:GetCustomProperty("Timer")
@@ -98,6 +139,53 @@ function UpdateUITask()
 
 	local team1Progress = teamBasesServer:GetCustomProperty("Team1BaseProgress")
 	local team2Progress = teamBasesServer:GetCustomProperty("Team2BaseProgress")
+	
+	if team1Progress > previousTeam1Progress then
+		if localPlayer.team == 2 and not ownNotificationOn then
+			ownNotificationOn = true
+			Task.Spawn(OwnBaseNotificationTask, 0)
+		elseif localPlayer.team == 1 and not enemyNotificationOn then
+			enemyNotificationOn = true
+			Task.Spawn(EnemyBaseNotificationTask, 0)
+		end
+		changeCount = 0
+	elseif changeCount then
+		changeCount = changeCount + 1
+		
+		if changeCount > 20 then
+			if localPlayer.team == 2 then
+				ownNotificationOn = false
+			elseif localPlayer.team == 1 then 
+				enemyNotificationOn = false
+			end	
+			changeCount = 0
+		end
+	end
+	
+	if team2Progress > previousTeam2Progress then
+		if localPlayer.team == 1 and not ownNotificationOn then
+			ownNotificationOn = true
+			Task.Spawn(OwnBaseNotificationTask, 0)
+		elseif localPlayer.team == 2 and not enemyNotificationOn then 
+			enemyNotificationOn = true
+			Task.Spawn(EnemyBaseNotificationTask, 0)
+		end
+		changeCount2 = 0
+	elseif changeCount2 then
+		changeCount2 = changeCount2 + 1
+		
+		if changeCount2 > 20 then
+			if localPlayer.team == 1 then
+				ownNotificationOn = false
+			elseif localPlayer.team == 2 then
+				enemyNotificationOn = false
+			end	
+			changeCount2 = 0
+		end
+	end
+	
+	previousTeam1Progress = team1Progress
+	previousTeam2Progress = team2Progress
 			
 	if localPlayer.team == 1 then
 		
@@ -121,6 +209,10 @@ end
 
 function Initialize()
 	if gameModeID == settings:GetCustomProperty("MatchMode") then
+		ownBaseNotification.y = -1000
+		enemyBaseNotification.y = -1000
+		ownBaseNotification.visibility = Visibility.INHERIT
+		enemyBaseNotification.visibility = Visibility.INHERIT
 		StateSTART(_, "GameState")
 		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 	end

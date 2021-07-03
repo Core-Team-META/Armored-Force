@@ -616,7 +616,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -634,7 +634,7 @@ Objects {
       }
     }
     Text {
-      Label: "Set Enemies tank on fire"
+      Label: "Enemy caught on Fire"
       Color {
         R: 1
         G: 0.0500000119
@@ -696,7 +696,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -714,7 +714,7 @@ Objects {
       }
     }
     Text {
-      Label: "Enemies Turret damaged"
+      Label: "Enemy Turret damaged"
       Color {
         R: 0.229933709
         G: 0.62
@@ -775,7 +775,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -792,7 +792,7 @@ Objects {
       }
     }
     Text {
-      Label: "Enemies Treads damaged"
+      Label: "Enemy Treads damaged"
       Color {
         R: 0.561000049
         G: 0.561000049

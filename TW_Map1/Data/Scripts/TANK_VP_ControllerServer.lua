@@ -468,15 +468,19 @@ function OnArmorHit(trigger, other)
 				trackStatus = 2
 			end
 			trackTask = Task.Spawn(OnTracked, 0)
+			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TRACK")
 		elseif armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 			burnTask = Task.Spawn(OnBurning, 0)
+			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
 		elseif string.find(armorName, "TURRET") and not turretDamagedTask then
 			local pickTurretDamage = math.random(100)
 			if pickTurretDamage <= 50 then
 				turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
+				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TURRET")
 			else 
 				turretDamagedTask = Task.Spawn(OnDamagedBarrel, 0)
+				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
 			end
 		end
 	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" then
@@ -541,6 +545,7 @@ function OnArmorHit(trigger, other)
 		if armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 			burnTask = Task.Spawn(OnBurning, 0)
+			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
 		end
 	end
 	

@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8979603098884220712
+  Name: "Sci-fi Notify 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfxui_scifi_notify_01_Cue"
+  }
+}
+Assets {
   Id: 1439471337524212660
   Name: "Small Explosion Set 01 SFX"
   PlatformAssetType: 10

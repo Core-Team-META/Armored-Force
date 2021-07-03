@@ -84,6 +84,7 @@ Objects {
     }
   }
   ParentId: 4005436078400917018
+  ChildIds: 10837900812757159979
   ChildIds: 11166342549563022572
   ChildIds: 9221587178924893527
   ChildIds: 6869308265297023080
@@ -305,6 +306,42 @@ Objects {
   }
 }
 Objects {
+  Id: 10837900812757159979
+  Name: "DamagedStateInflictedSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8701418158710432739
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8979603098884220712
+    }
+    Volume: 2
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
   Id: 11266677930060679002
   Name: "GAMEHELPER_TankStatesClient"
   Transform {
@@ -327,12 +364,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TreadIndicator"
-      ObjectReference {
-        SelfId: 9316901923205259844
-      }
-    }
-    Overrides {
       Name: "cs:TreadBreakSFX"
       ObjectReference {
         SelfId: 11166342549563022572
@@ -345,12 +376,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TurretIndicator"
-      ObjectReference {
-        SelfId: 841534158063459245
-      }
-    }
-    Overrides {
       Name: "cs:TurretScreachSFX"
       ObjectReference {
         SelfId: 7348362782133020712
@@ -360,12 +385,6 @@ Objects {
       Name: "cs:FireDamage"
       ObjectReference {
         SelfId: 16753716028542892396
-      }
-    }
-    Overrides {
-      Name: "cs:FireIndicator"
-      ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -408,6 +427,30 @@ Objects {
       Name: "cs:turretDamageText"
       ObjectReference {
         SelfId: 11123220739344086227
+      }
+    }
+    Overrides {
+      Name: "cs:TreadsFeedback"
+      ObjectReference {
+        SelfId: 1277638352008554425
+      }
+    }
+    Overrides {
+      Name: "cs:TurretFeedback"
+      ObjectReference {
+        SelfId: 2350369476746086035
+      }
+    }
+    Overrides {
+      Name: "cs:FireFeedback"
+      ObjectReference {
+        SelfId: 771571379020762179
+      }
+    }
+    Overrides {
+      Name: "cs:DamagedStateInflictedSFX"
+      ObjectReference {
+        SelfId: 10837900812757159979
       }
     }
   }
