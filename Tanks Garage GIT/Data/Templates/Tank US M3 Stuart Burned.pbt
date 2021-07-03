@@ -30618,5 +30618,5 @@ Assets {
     }
   }
   SerializationVersion: 91
-  VirtualFolderPath: "M3 Stuart"
+   
 }

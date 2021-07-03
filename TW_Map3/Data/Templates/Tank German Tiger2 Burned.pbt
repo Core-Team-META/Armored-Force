@@ -29035,5 +29035,5 @@ Assets {
     }
   }
   SerializationVersion: 87
-  VirtualFolderPath: "Tiger II"
+   
 }

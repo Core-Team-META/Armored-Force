@@ -36243,5 +36243,5 @@ Assets {
     }
   }
   SerializationVersion: 87
-  VirtualFolderPath: "M6A1 Heavy"
+   
 }
