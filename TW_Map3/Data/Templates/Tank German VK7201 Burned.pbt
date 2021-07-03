@@ -24626,6 +24626,6 @@ Assets {
     }
   }
   SerializationVersion: 87
-  VirtualFolderPath: "AXIS COMPLETE"
-  VirtualFolderPath: "VK72"
+   
+   
 }

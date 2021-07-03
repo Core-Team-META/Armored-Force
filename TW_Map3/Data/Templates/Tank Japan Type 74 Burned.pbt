@@ -41147,6 +41147,6 @@ Assets {
     }
   }
   SerializationVersion: 87
-  VirtualFolderPath: "AXIS COMPLETE"
-  VirtualFolderPath: "Type 74"
+   
+   
 }
