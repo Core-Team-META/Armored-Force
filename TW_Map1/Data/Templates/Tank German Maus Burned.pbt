@@ -27534,6 +27534,6 @@ Assets {
     }
   }
   SerializationVersion: 91
-  VirtualFolderPath: "AXIS COMPLETE"
-  VirtualFolderPath: "Maus"
+   
+   
 }

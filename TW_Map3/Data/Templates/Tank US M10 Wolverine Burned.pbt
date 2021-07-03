@@ -34761,5 +34761,5 @@ Assets {
     }
   }
   SerializationVersion: 87
-  VirtualFolderPath: "M10 Wolverine"
+   
 }

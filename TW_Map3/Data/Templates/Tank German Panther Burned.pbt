@@ -24553,5 +24553,5 @@ Assets {
     }
   }
   SerializationVersion: 87
-  VirtualFolderPath: "Panther D"
+   
 }

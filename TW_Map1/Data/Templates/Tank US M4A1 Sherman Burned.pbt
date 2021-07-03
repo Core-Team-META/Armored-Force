@@ -29070,5 +29070,5 @@ Assets {
     }
   }
   SerializationVersion: 91
-  VirtualFolderPath: "M4A1 Sherman"
+   
 }
