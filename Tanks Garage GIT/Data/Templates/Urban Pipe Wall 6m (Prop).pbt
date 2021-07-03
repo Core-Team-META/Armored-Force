@@ -2891,5 +2891,5 @@ Assets {
       AssetId: "Urban_Pipe_Wall_6m__Prop_"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }

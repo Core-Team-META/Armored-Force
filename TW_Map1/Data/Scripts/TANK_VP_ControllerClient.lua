@@ -53,7 +53,7 @@ function CheckTankReady()
 		return
 	end
 	
-	Task.Wait(0.1)
+	Task.Wait(0.5)
 	
 	for _, p in ipairs(Game.GetPlayers()) do
 		if p.id == tankControllerServer:GetCustomProperty("DriverID") then

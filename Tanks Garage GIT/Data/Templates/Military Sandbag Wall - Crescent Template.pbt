@@ -510,5 +510,5 @@ Assets {
       AssetId: "Military_Sandbag_Wall_-_Crescent_Template"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }
