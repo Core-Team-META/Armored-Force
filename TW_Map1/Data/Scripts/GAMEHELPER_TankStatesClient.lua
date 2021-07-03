@@ -1,14 +1,11 @@
 local treadsDamage = script:GetCustomProperty("TreadsDamage"):WaitForObject()
---local treadIndicator = script:GetCustomProperty("TreadIndicator"):WaitForObject()
 local treadBreakSFX = script:GetCustomProperty("TreadBreakSFX"):WaitForObject()
 
 local turretDamage = script:GetCustomProperty("TurretDamage"):WaitForObject()
---local turretIndicator = script:GetCustomProperty("TurretIndicator"):WaitForObject()
 local turretScreachSFX = script:GetCustomProperty("TurretScreachSFX"):WaitForObject()
 local turretDamageText = script:GetCustomProperty("turretDamageText"):WaitForObject()
 
 local fireDamage = script:GetCustomProperty("FireDamage"):WaitForObject()
---local fireIndicator = script:GetCustomProperty("FireIndicator"):WaitForObject()
 local fireBurstSFX = script:GetCustomProperty("FireBurstSFX"):WaitForObject()
 local fireLoopSFX = script:GetCustomProperty("FireLoopSFX"):WaitForObject()
 
@@ -17,6 +14,12 @@ local repairSFX = script:GetCustomProperty("RepairSFX"):WaitForObject()
 local treadsPanel = script:GetCustomProperty("TreadsPanel"):WaitForObject()
 local turretPanel = script:GetCustomProperty("TurretPanel"):WaitForObject()
 local firePanel = script:GetCustomProperty("FirePanel"):WaitForObject()
+
+local treadsFeedback = script:GetCustomProperty("TreadsFeedback"):WaitForObject()
+local turretFeedback = script:GetCustomProperty("TurretFeedback"):WaitForObject()
+local fireFeedback = script:GetCustomProperty("FireFeedback"):WaitForObject()
+local damagedStateInflictedSFX = script:GetCustomProperty("DamagedStateInflictedSFX"):WaitForObject()
+
 
 local trackedTask = nil
 local fireTask = nil
@@ -145,6 +148,34 @@ function BrokenTurret()
 	RepairSFX()
 end
 
+function OnStateInflicted(damagedState)
+
+	damagedStateInflictedSFX:Play()
+	
+	local feedbackText = nil
+	
+	if damagedState == "TURRET" then
+		feedbackText = turretFeedback
+		turretFeedback.text = "Enemy Turret speed reduced"
+	elseif damagedState == "BARREL" then
+		feedbackText = turretFeedback
+		turretFeedback.text = "Enemy Barrel broken"
+	elseif damagedState == "TRACK" then
+		feedbackText = treadsFeedback
+	elseif damagedState == "FIRE" then
+		feedbackText = fireFeedback
+	end
+	
+	if Object.IsValid(feedbackText) then
+		feedbackText.visibility = Visibility.INHERIT
+	end
+	
+	Task.Wait(2)
+	
+	feedbackText.visibility = Visibility.FORCE_OFF
+
+end
+
 function SetListener()
 	
 	if tankStateListener then
@@ -156,4 +187,5 @@ function SetListener()
 	
 end
 
+Events.Connect("INFLICTED_STATE", OnStateInflicted)
 Events.Connect("EquippedTankSet", SetListener)

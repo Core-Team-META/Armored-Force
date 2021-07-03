@@ -57,7 +57,7 @@ end
 function OnPlayerRespawned(player)
 
 	--player.isVisible = false
-	--Task.Wait(0.1)
+	Task.Wait(0.5)
 	
 	if resetOverride then
 		return

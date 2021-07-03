@@ -51,6 +51,8 @@ Objects {
   ChildIds: 17296412534623842589
   ChildIds: 5028009133986211033
   ChildIds: 10002739729889364044
+  ChildIds: 13535062894327828338
+  ChildIds: 6524529885796717570
   ChildIds: 5189657666551059436
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -6274,6 +6276,79 @@ Objects {
   }
 }
 Objects {
+  Id: 6524529885796717570
+  Name: "CaptureInProgressSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13440351562585081359
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3122920638586329417
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 13535062894327828338
+  Name: "BaseCaptureAlertSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13440351562585081359
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 13242758874046926374
+    }
+    Pitch: -250
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
   Id: 10002739729889364044
   Name: "GAMESTATE_MatchPlayerTablesClient"
   Transform {
@@ -6367,6 +6442,12 @@ Objects {
   ParentId: 13440351562585081359
   UnregisteredParameters {
     Overrides {
+      Name: "cs:EaseUI"
+      AssetReference {
+        Id: 7263250394224245872
+      }
+    }
+    Overrides {
       Name: "cs:GAMESTATE_MainGameStateManagerServer"
       ObjectReference {
         SelfId: 16554756392297303216
@@ -6430,6 +6511,30 @@ Objects {
       Name: "cs:BPointVisual"
       ObjectReference {
         SelfId: 15244630145552195172
+      }
+    }
+    Overrides {
+      Name: "cs:OwnBaseNotification"
+      ObjectReference {
+        SelfId: 8354378047050769677
+      }
+    }
+    Overrides {
+      Name: "cs:BaseCaptureAlertSFX"
+      ObjectReference {
+        SelfId: 13535062894327828338
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyBaseNotification"
+      ObjectReference {
+        SelfId: 11824582573300395687
+      }
+    }
+    Overrides {
+      Name: "cs:CaptureInProgressSFX"
+      ObjectReference {
+        SelfId: 6524529885796717570
       }
     }
   }

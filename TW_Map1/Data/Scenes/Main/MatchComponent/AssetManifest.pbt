@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13242758874046926374
+  Name: "Military Air Raid Siren Single Blast 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_air_raid_siren_01_Cue_ref"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
@@ -104,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
+  Id: 3122920638586329417
+  Name: "Military Radio Communications Unintelligible Chatter 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_military_radio_communications_unintelligible_chatter_01_Cue_ref"
   }
 }
 Assets {
