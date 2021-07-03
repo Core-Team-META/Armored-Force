@@ -107,6 +107,8 @@ Assets {
                 HighDistance: 9000
               }
             }
+            PlayerInteractDistance: 500
+            PlayerInteractAngleDeg: 50
           }
         }
       }
@@ -335,5 +337,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }
