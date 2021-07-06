@@ -1,13 +1,4 @@
 Assets {
-  Id: 17184591166555015249
-  Name: "Cliff 03"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "cliff_003"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
