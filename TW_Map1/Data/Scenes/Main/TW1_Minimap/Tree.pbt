@@ -177,7 +177,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "0607ec/armoredforcemapholder"
+      String: "253f1e/afmapholder"
     }
     Overrides {
       Name: "bp:Screenshot Index"
