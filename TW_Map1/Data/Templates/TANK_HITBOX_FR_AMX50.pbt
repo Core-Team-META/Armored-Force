@@ -424,7 +424,7 @@ Assets {
       }
       Objects {
         Id: 11983360027852997652
-        Name: "TRACK"
+        Name: "LEFTTRACK"
         Transform {
           Location {
             X: -29.9999981
@@ -470,7 +470,7 @@ Assets {
       }
       Objects {
         Id: 3315913731404958059
-        Name: "TRACK"
+        Name: "RIGHTTRACK"
         Transform {
           Location {
             X: -29.9999981
