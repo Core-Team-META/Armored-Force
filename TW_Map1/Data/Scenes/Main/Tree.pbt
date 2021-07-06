@@ -397,24 +397,26 @@ Objects {
         Max: 50000
       }
       GroundSlopeAngle {
-        Max: 90
+        Max: 45
       }
       Scaling {
+        Scaling: LockXY
         ScaleX {
-          Min: 0.900000036
-          Max: 3
+          Min: 2.5
+          Max: 2.5
         }
         ScaleY {
           Min: 1
           Max: 1
         }
         ScaleZ {
-          Min: 1
-          Max: 1
+          Min: 1.5
+          Max: 3
         }
       }
+      RotationAlignment: AlignToWorldUp
       RandomYaw: true
-      RandomPitchAngle: 6
+      RandomPitchAngle: 3
       Materials {
         key: "Nature_Grass"
         value {
@@ -422,6 +424,7 @@ Objects {
         }
       }
       LocalPositionOffset {
+        Z: -50
       }
       LocalRotationOffset {
       }
@@ -444,7 +447,7 @@ Objects {
       }
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 90
+        Max: 45
       }
       Scaling {
         Scaling: LockXY
