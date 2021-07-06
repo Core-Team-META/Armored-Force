@@ -26,8 +26,6 @@ local TANK_LIST_SCROLL_PANEL = script:GetCustomProperty("TANK_LIST_SCROLL_PANEL"
 local OUTCOME_RPs = script:GetCustomProperty("OUTCOME_RPs"):WaitForObject()
 local BUTTON_CONVERT_RPs = script:GetCustomProperty("BUTTON_CONVERT_RPs"):WaitForObject()
 
-local CLOSE_PREMIUM_SHOP_BUTTON = script:GetCustomProperty("CLOSE_PREMIUM_SHOP_BUTTON"):WaitForObject()
-
 local TANK_LIST = World.FindObjectByName("TechTree_Contents"):GetChildren()
 local ALLIES_TANKS = {}
 local AXIS_TANKS = {}
@@ -348,7 +346,6 @@ SUBMENU_ITEM_1_BUTTON.clickedEvent:Connect(SubmenuClick)
 SUBMENU_ITEM_2_BUTTON.clickedEvent:Connect(SubmenuClick)
 SUBMENU_ITEM_3_BUTTON.clickedEvent:Connect(SubmenuClick)
 SUBMENU_ITEM_4_BUTTON.clickedEvent:Connect(SubmenuClick)
-CLOSE_PREMIUM_SHOP_BUTTON.clickedEvent:Connect(CloseShop)
 BUTTON_PREMIUM_SHOP.clickedEvent:Connect(ToggleShop)
 
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").clickedEvent:Connect(ResearchSubmenuClick)
@@ -360,7 +357,6 @@ SUBMENU_ITEM_1_BUTTON.hoveredEvent:Connect(SubmenuHover)
 SUBMENU_ITEM_2_BUTTON.hoveredEvent:Connect(SubmenuHover)
 SUBMENU_ITEM_3_BUTTON.hoveredEvent:Connect(SubmenuHover)
 SUBMENU_ITEM_4_BUTTON.hoveredEvent:Connect(SubmenuHover)
-CLOSE_PREMIUM_SHOP_BUTTON.hoveredEvent:Connect(CloseHover)
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").hoveredEvent:Connect(ResearchSubmenuHover)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").hoveredEvent:Connect(ResearchSubmenuHover)
 BUTTON_CONVERT_RPs:FindChildByName("BUTTON").hoveredEvent:Connect(ConvertSelectedTankRPHover)
@@ -370,7 +366,6 @@ SUBMENU_ITEM_1_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
 SUBMENU_ITEM_2_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
 SUBMENU_ITEM_3_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
 SUBMENU_ITEM_4_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
-CLOSE_PREMIUM_SHOP_BUTTON.unhoveredEvent:Connect(CloseUnhover)
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 BUTTON_CONVERT_RPs:FindChildByName("BUTTON").unhoveredEvent:Connect(ConvertSelectedTankRPUnhover)
