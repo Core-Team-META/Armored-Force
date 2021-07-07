@@ -62,6 +62,9 @@ local driver = nil
 
 -- Additional Local Variables
 local originalSpeed = 0
+local originalFriction = 0
+local originalAcceleration = 0
+local originalTurnSpeed = 0
 local aimTask = nil
 local reloading = false
 local flipping = false
@@ -143,7 +146,13 @@ function AssignDriver(newDriver)
 	Task.Wait()
 	
 	chassis:SetDriver(driver)
+	
 	originalSpeed = chassis.maxSpeed
+	originalFriction = chassis.tireFriction
+	originalAcceleration = chassis.accelerationRate
+	if chassis.type == "TreadedVehicle" then
+		originalTurnSpeed = chassis.turnSpeed
+	end
 	
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.1})
 	turret = hitbox:FindDescendantByName("Turret")
@@ -770,6 +779,37 @@ end
 function Tick()
 	
 	if Object.IsValid(hitbox) and Object.IsValid(driver) then
+		
+		if chassis.mass >= 40000 then
+			local currentRotation = chassis:GetWorldRotation()
+			if math.abs(currentRotation.x) >= 10 or math.abs(currentRotation.y) >= 8 then
+				if chassis.maxSpeed == originalSpeed then
+					chassis.maxSpeed = originalSpeed * 2
+					chassis.tireFriction = originalFriction * 2
+					chassis.accelerationRate = originalAcceleration * 2
+					print("boosting tank")
+				end
+			elseif math.abs(currentRotation.x) < 10 or math.abs(currentRotation.y) < 8 then
+				if chassis.maxSpeed > originalSpeed then
+					chassis.maxSpeed = originalSpeed
+					chassis.tireFriction = originalFriction
+					chassis.accelerationRate = originalAcceleration
+					print("Restoring tank stats")
+				end
+			end
+			
+			if not driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31") then 
+				if chassis.turnSpeed == originalTurnSpeed then
+					chassis.turnSpeed = math.floor(originalTurnSpeed * 1.25)
+					print("boosting turn speed")
+				end
+			elseif driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31") then 
+				if chassis.turnSpeed > originalTurnSpeed then
+					chassis.turnSpeed = originalTurnSpeed
+					print("Restoring turn speed")
+				end
+			end
+		end
 	
 		if not driver:IsBindingPressed("ability_secondary") then
 			AdjustTurretAim()
@@ -786,11 +826,11 @@ function Tick()
 			end
 		end
     
-    local angularVelo = chassis:GetAngularVelocity()
-    local MAX_ANGULAR_VELOCITY = 150
-    if angularVelo.sizeSquared > MAX_ANGULAR_VELOCITY * MAX_ANGULAR_VELOCITY then
-      chassis:SetAngularVelocity(angularVelo:GetNormalized() * MAX_ANGULAR_VELOCITY)
-    end
+	    local angularVelo = chassis:GetAngularVelocity()
+	    local MAX_ANGULAR_VELOCITY = 150
+	    if angularVelo.sizeSquared > MAX_ANGULAR_VELOCITY * MAX_ANGULAR_VELOCITY then
+	      chassis:SetAngularVelocity(angularVelo:GetNormalized() * MAX_ANGULAR_VELOCITY)
+	    end
     
 		--[[
 		if Object.IsValid(chassis) and not flipping then
