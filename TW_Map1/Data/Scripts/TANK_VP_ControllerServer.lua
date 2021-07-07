@@ -61,6 +61,7 @@ local destroyedTank = nil
 local driver = nil
 
 -- Additional Local Variables
+local originalSpeed = 0
 local aimTask = nil
 local reloading = false
 local flipping = false
@@ -119,6 +120,7 @@ function AssignDriver(newDriver)
 	end
 	
 	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 150)
+	script:SetWorldRotation(newDriver:GetWorldRotation())
 	driver = newDriver
 	
 	SetTankModifications()
@@ -141,6 +143,7 @@ function AssignDriver(newDriver)
 	Task.Wait()
 	
 	chassis:SetDriver(driver)
+	originalSpeed = chassis.maxSpeed
 	
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.1})
 	turret = hitbox:FindDescendantByName("Turret")
@@ -574,6 +577,7 @@ function OnConsumableUsed(consumableType)
 		script:SetNetworkedCustomProperty("Burning", false)
 		playerWhoBurned = nil
 		Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", false)
+		chassis.maxSpeed = originalSpeed
 		
 		Task.Wait(2)
 		
@@ -618,6 +622,7 @@ function OnBurning()
 
 	script:SetNetworkedCustomProperty("Burning", true)
 	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", true)
+	chassis.maxSpeed = math.floor(originalSpeed/2)
 	
 	for i = 10, 1, -1 do
 		local damageDealt = Damage.New(10)
@@ -642,6 +647,7 @@ function OnBurning()
 	
 	script:SetNetworkedCustomProperty("Burning", false)
 	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", false)
+	chassis.maxSpeed = originalSpeed
 	
 	Task.Wait(2)
 	

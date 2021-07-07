@@ -53,7 +53,7 @@ function CheckTankReady()
 		return
 	end
 	
-	Task.Wait(0.5)
+	Task.Wait(1)
 	
 	for _, p in ipairs(Game.GetPlayers()) do
 		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
@@ -95,7 +95,7 @@ function CheckTankReady()
 	SetClientData()
 		
 	if driver == Game.GetLocalPlayer() then
-		driver:SetOverrideCamera(defaultCamera)
+		--driver:SetOverrideCamera(defaultCamera)
 		Events.Broadcast("EquippedTankSet")
 	end
 
