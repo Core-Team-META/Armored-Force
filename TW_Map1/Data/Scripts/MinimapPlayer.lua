@@ -75,6 +75,11 @@ function UpdateContent()
 	
 	if myPlayer == localPlayer and CIRCLE:GetColor() ~= Color.ORANGE then
 		local rot = myPlayer:GetWorldRotation()
+		
+		if myPlayer.occupiedVehicle then
+			rot = myPlayer.occupiedVehicle:GetWorldRotation()
+		end
+		
 		DIRECTION_ROOT.rotationAngle = rot.z
 		SetViewRange(myPlayer)
 	else 
