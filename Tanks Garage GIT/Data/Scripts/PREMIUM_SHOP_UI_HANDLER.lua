@@ -168,7 +168,8 @@ function LoadAxisTanks()
 end
 
 function EmptyScrollPanel()
-	print("Emptying scroll panel")
+	ClearRPTradeValues()
+	UpdateTotal()
 	for i, element in ipairs(TANK_LIST_SCROLL_PANEL:GetChildren()) do
 		if(Object.IsValid(element)) then
 			element:Destroy()

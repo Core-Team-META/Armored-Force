@@ -189,6 +189,7 @@ function PopulateXPTanks()
 
 	xpTankString = ""
 	totalXPTanks = 0
+	totalAmount = 0
 
 	for _, e in ipairs(xpTanksInfo) do
 		e.listener:Disconnect()
