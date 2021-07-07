@@ -92,6 +92,8 @@ function FindTank()
 				
 	if Object.IsValid(defaultCamera) then
 		localPlayer:SetOverrideCamera(defaultCamera)
+		defaultCamera.currentPitch = 0
+		defaultCamera.currentYaw = localPlayer.clientUserData.currentTankData.chassis:GetWorldRotation().z
 	end
 	
 end
