@@ -93,6 +93,7 @@ local displayTanks = script:GetCustomProperty("DisplayTanks"):WaitForObject()
 local axisDisplayTanks = script:GetCustomProperty("AxisDisplayTanks"):WaitForObject()
 local CONFIRM_WINDOW_CLOSE_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CLOSE_BUTTON"):WaitForObject()
 local CONFIRM_WINDOW_CONFIRM_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CONFIRM_BUTTON"):WaitForObject()
+local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 
 local LOCKED_TANK_CARD = script:GetCustomProperty("LOCKED_TANK_CARD"):WaitForObject()
 local CONFIRM_TANK_UPGRADE = script:GetCustomProperty("CONFIRM_TANK_UPGRADE"):WaitForObject()
@@ -460,38 +461,14 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 		
 	if(tankData.purchasedTank) then
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_OFF
-		for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_SHADOW")) do
-			childText.text = "EQUIP"
-		end
-		for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_DARK")) do
-			childText.text = "EQUIP"
-		end
-		for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_LIGHT")) do
-			childText.text = "EQUIP"
-		end
+		CONFIRM_WINDOW_CONFIRM_BUTTON.text = "EQUIP"
 		confirmButtonFunction = "EQUIP"
 	else
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_ON
 		if(cost > 0 or silverCost > 0) then
-			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_SHADOW")) do
-				childText.text = "CAN'T AFFORD"
-			end
-			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_DARK")) do
-				childText.text = "CAN'T AFFORD"
-			end
-			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_LIGHT")) do
-				childText.text = "CAN'T AFFORD"
-			end
+			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
 		else
-			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_SHADOW")) do
-				childText.text = "PURCHASE"
-			end
-			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_DARK")) do
-				childText.text = "PURCHASE"
-			end
-			for i, childText in ipairs(CONFIRM_TANK_UPGRADE:FindDescendantsByName("BUTTONTEXT_LIGHT")) do
-				childText.text = "PURCHASE"
-			end
+			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "PURCHASE"
 			confirmButtonFunction = "PURCHASE"
 		end
 	end
@@ -706,7 +683,7 @@ function ButtonClickTeamSwitch(button)
 end
 
 function ButtonHover(button)
-	-- TODO: Play hover sound
+	SFX_HOVER:Play()
 end
 
 function ToggleResearchSidePanel()
@@ -1555,6 +1532,8 @@ World.FindObjectByName("31").hoveredEvent:Connect(HoverTank)
 World.FindObjectByName("32").hoveredEvent:Connect(HoverTank)
 World.FindObjectByName("33").hoveredEvent:Connect(HoverTank)
 
+CONFIRM_WINDOW_CONFIRM_BUTTON.hoveredEvent:Connect(ButtonHover)
+
 World.FindObjectByName("01").unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName("02").unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName("03").unhoveredEvent:Connect(UnhoverTank)
@@ -1587,3 +1566,4 @@ World.FindObjectByName("30").unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName("31").unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName("32").unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName("33").unhoveredEvent:Connect(UnhoverTank)
+
