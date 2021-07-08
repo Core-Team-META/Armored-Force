@@ -44,14 +44,14 @@ Assets {
           PhysicsBodyScale {
             X: 13.5
             Y: 5.5
-            Z: 2.7
+            Z: 2.5
           }
           ExitBinding {
             Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
             X: -20
-            Z: 80
+            Z: 90
           }
           MaxSpeed: 1250
           AccelerationRate: 400
