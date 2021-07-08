@@ -255,7 +255,7 @@ DEPLOY_IDLE.visibility = Visibility.FORCE_OFF
 ----
 
 local BUTTON_HOME = script:GetCustomProperty("BUTTON_HOME"):WaitForObject()
-local BUTTON_HOME_ACTIVE = BUTTON_HOME:GetCustomProperty("HOME_ACTIVE"):WaitForObject()
+--local BUTTON_HOME_ACTIVE = BUTTON_HOME:GetCustomProperty("HOME_ACTIVE"):WaitForObject()
 
 local preventTime = time()
 local spamPreventDuration = 0.75
@@ -273,11 +273,13 @@ end
 ------------------------------------------------------------------------------------------
 ---- HANDLING DROPDOWN SLIDER
 function Tick(deltaTime)
+	--[[
 	if ACTIVE_HEAD_MENU > 0 then
 		BUTTON_HOME_ACTIVE.visibility = Visibility.FORCE_OFF
 	else
 		BUTTON_HOME_ACTIVE.visibility = Visibility.FORCE_ON
 	end
+	--]]
 	Task.Wait(0.01)
 	if isMoving then
 		timeRemaining = CoreMath.Clamp(timeRemaining - deltaTime, 0, DROPDOWN_TOGGLE_TIME)
@@ -3399,6 +3401,10 @@ function AddSilver()
 	Events.Broadcast("NavigateToPremiumShop")
 end
 
+function ButtonHover()
+	SFX_HOVER:Play()
+end
+
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS
@@ -3567,6 +3573,9 @@ BUTTON_AXIS_T4H_1.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_1)
 BUTTON_AXIS_T4H_2.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_2)
 BUTTON_AXIS_T4H_3.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4H_3)
 BUTTON_AXIS_T4D.unhoveredEvent:Connect(UNHOVERED_BUTTON_AXIS_T4D)
+
+World.FindObjectByName("BUTTON_HOME").hoveredEvent:Connect(ButtonHover)
+World.FindObjectByName("TradeXPButton").hoveredEvent:Connect(ButtonHover)
 
 TURRET_UPGRADE_DENY:FindDescendantByName("Turret_CloseDeny").clickedEvent:Connect(TOGGLE_TURRET_UPGRADE_DENY_CLOSE)
 SHELL_UPGRADE_DENY:FindDescendantByName("Shell_CloseDeny").clickedEvent:Connect(TOGGLE_SHELL_UPGRADE_DENY_CLOSE)
