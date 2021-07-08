@@ -780,13 +780,13 @@ function Tick()
 	
 	if Object.IsValid(hitbox) and Object.IsValid(driver) then
 		
-		if chassis.mass >= 40000 then
+		if chassis.mass >= 50000 then
 			local currentRotation = chassis:GetWorldRotation()
 			if math.abs(currentRotation.x) >= 10 or math.abs(currentRotation.y) >= 8 then
 				if chassis.maxSpeed == originalSpeed then
-					chassis.maxSpeed = originalSpeed * 2
+					chassis.maxSpeed = originalSpeed * 1.5
 					chassis.tireFriction = originalFriction * 2
-					chassis.accelerationRate = originalAcceleration * 2
+					chassis.accelerationRate = originalAcceleration * 1.5
 					print("boosting tank")
 				end
 			elseif math.abs(currentRotation.x) < 10 or math.abs(currentRotation.y) < 8 then
@@ -800,7 +800,7 @@ function Tick()
 			
 			if not driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31") then 
 				if chassis.turnSpeed == originalTurnSpeed then
-					chassis.turnSpeed = math.floor(originalTurnSpeed * 1.25)
+					chassis.turnSpeed = math.floor(originalTurnSpeed * 1.1)
 					print("boosting turn speed")
 				end
 			elseif driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31") then 
