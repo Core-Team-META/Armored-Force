@@ -40,7 +40,7 @@ Assets {
           }
           Camera {
           }
-          Mass: 50000
+          Mass: 55000
           PhysicsBodyScale {
             X: 12
             Y: 6.7
@@ -80,7 +80,7 @@ Assets {
             HandbrakeBinding {
               Value: "mc:egameaction:extraaction_27"
             }
-            TurnSpeed: 75
+            TurnSpeed: 60
           }
         }
       }
