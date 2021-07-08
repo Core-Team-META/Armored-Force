@@ -14,6 +14,9 @@ local LTWR_RATE = script:GetCustomProperty("LTWR_RATE"):WaitForObject()
 local TOTAL_BUTTON = script:GetCustomProperty("TOTAL_BUTTON"):WaitForObject()
 local MATCH_BUTTON = script:GetCustomProperty("MATCH_BUTTON"):WaitForObject()
 
+local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
+local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
+
 local LEADERBOARDS_ENTRY = script:GetCustomProperty("LEADERBOARDS_ENTRY")
 
 local NETWORKED = script:GetCustomProperty("Leaderboards_Networked"):WaitForObject()
@@ -109,6 +112,7 @@ local function BuildTotalLeaderBoards()
 end
 
 function ToggleLeaderboards(button)
+    SFX_CLICK:Play()
     HideAllStates()
     if button == TOTAL_BUTTON then
         BuildTotalLeaderBoards()
@@ -149,8 +153,14 @@ function OnNetworkChanged(object, string)
     end
 end
 
+function Hover()
+    SFX_HOVER:Play()
+end
+
 TOTAL_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 MATCH_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
+TOTAL_BUTTON.hoveredEvent:Connect(Hover)
+MATCH_BUTTON.hoveredEvent:Connect(Hover)
 NETWORKED.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
 Init()
 Task.Wait(3)
