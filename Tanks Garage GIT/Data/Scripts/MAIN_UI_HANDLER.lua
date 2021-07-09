@@ -57,6 +57,9 @@ local DEPLOY = World.FindObjectByName("DEPLOY")
 local DEPLOY_IDLE = World.FindObjectByName("DEPLOY_IDLE")
 local DEPLOY_BUTTON = World.FindObjectByName("DEPLOY_BUTTON")
 
+local CloseLeaderboards = script:GetCustomProperty("CloseLeaderboards"):WaitForObject()
+local ClosePremiumShop = script:GetCustomProperty("ClosePremiumShop"):WaitForObject()
+
 local CHOOSE_MODE_BUTTON = World.FindObjectByName("CHOOSE_MODE_BUTTON")
 local CHOOSE_MODE_DROPDOWN = World.FindObjectByName("CHOOSE_MODE_DROPDOWN")
 local CHOOSE_MODE_DROPDOWN_ARROW_OPEN = World.FindObjectByName("CHOOSE_MODE_DROPDOWN_ARROW_OPEN")
@@ -1263,6 +1266,7 @@ function UNHOVERED_ACHIEVEMENTS(BUTTON_ACHIEVEMENTS)
 end
 
 function OnButtonClicked(button)
+	SFX_CLICK:Play()
 	if not SpamPrevent() then
 		return
 	end
@@ -1311,10 +1315,12 @@ function CLICKED_CHOOSE_MODE(CHOOSE_MODE_BUTTON)
 end
 
 function HOVERED_CHOOSE_MODE(CHOOSE_MODE_BUTTON)
+	SFX_HOVER:Play()
 	CHOOSE_MODE_DROPDOWN_HOVER.visibility = Visibility.FORCE_ON
 end
 
 function UNHOVERED_CHOOSE_MODE(CHOOSE_MODE_BUTTON)
+	SFX_UNHOVERED:Play()
 	if CHOOSE_MODE.y == CLOSED_DROPDOWN_Y then
 		CHOOSE_MODE_DROPDOWN_HOVER.visibility = Visibility.FORCE_OFF
 	else
@@ -3405,6 +3411,10 @@ function ButtonHover()
 	SFX_HOVER:Play()
 end
 
+function ButtonUnhover()
+	SFX_UNHOVERED:Play()
+end
+
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS
@@ -3423,6 +3433,8 @@ BUTTON_TECHTREE_SHOP.clickedEvent:Connect(CLICKED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.clickedEvent:Connect(CLICKED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.clickedEvent:Connect(CLICKED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.clickedEvent:Connect(CLICKED_LEADERBOARDS)
+CloseLeaderboards.clickedEvent:Connect(CLICKED_LEADERBOARDS)
+ClosePremiumShop.clickedEvent:Connect(CLICKED_PREMIUM_SHOP)
 CHOOSE_MODE_BUTTON.clickedEvent:Connect(CLICKED_CHOOSE_MODE)
 CHOOSE_MODE_SHOOTINGRANGE_BUTTON.clickedEvent:Connect(CLICKED_CHOOSE_MODE_SHOOTING_RANGE)
 CHOOSE_MODE_FIELDS_BUTTON.clickedEvent:Connect(CLICKED_CHOOSE_MODE_FIELDS)
@@ -3480,6 +3492,8 @@ BUTTON_TECHTREE_SHOP.hoveredEvent:Connect(HOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.hoveredEvent:Connect(HOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.hoveredEvent:Connect(HOVERED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.hoveredEvent:Connect(HOVERED_LEADERBOARDS)
+CloseLeaderboards.hoveredEvent:Connect(ButtonHover)
+ClosePremiumShop.hoveredEvent:Connect(ButtonHover)
 CHOOSE_MODE_BUTTON.hoveredEvent:Connect(HOVERED_CHOOSE_MODE)
 CHOOSE_MODE_SHOOTINGRANGE_BUTTON.hoveredEvent:Connect(HOVERED_CHOOSE_MODE_SHOOTING_RANGE)
 CHOOSE_MODE_FIELDS_BUTTON.hoveredEvent:Connect(HOVERED_CHOOSE_MODE_FIELDS)
@@ -3534,6 +3548,8 @@ BUTTON_TECHTREE_SHOP.unhoveredEvent:Connect(UNHOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.unhoveredEvent:Connect(UNHOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.unhoveredEvent:Connect(UNHOVERED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.unhoveredEvent:Connect(UNHOVERED_LEADERBOARDS)
+CloseLeaderboards.unhoveredEvent:Connect(ButtonUnhover)
+ClosePremiumShop.unhoveredEvent:Connect(ButtonUnhover)
 CHOOSE_MODE_BUTTON.unhoveredEvent:Connect(UNHOVERED_CHOOSE_MODE)
 CHOOSE_MODE_SHOOTINGRANGE_BUTTON.unhoveredEvent:Connect(HOVERED_CHOOSE_MODE_SHOOTING_RANGE)
 CHOOSE_MODE_FIELDS_BUTTON.unhoveredEvent:Connect(UNHOVERED_CHOOSE_MODE_FIELDS)
