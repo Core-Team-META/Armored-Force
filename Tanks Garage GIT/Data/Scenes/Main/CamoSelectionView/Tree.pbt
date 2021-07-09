@@ -1,8 +1,8 @@
-Name: "GAMESTATE_Components"
-RootId: 15534379475757777486
+Name: "CamoSelectionView"
+RootId: 16175003310112352478
 Objects {
-  Id: 6031029581927456576
-  Name: "SendToShootingRangeView"
+  Id: 14291081844228980758
+  Name: "GAMESTATE_GARAGE_CamoSkinsSelectionView"
   Transform {
     Location {
     }
@@ -14,7 +14,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 16175003310112352478
+  ChildIds: 4220144541678378015
+  ChildIds: 9524975357084448244
+  ChildIds: 17506603784249648358
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -28,13 +31,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Folder {
-    IsFilePartition: true
-    FilePartitionName: "SendToShootingRangeView"
+    IsGroup: true
   }
 }
 Objects {
-  Id: 15291958963287484757
-  Name: "LeaderboardsView"
+  Id: 17506603784249648358
+  Name: "Skins_Groups"
   Transform {
     Location {
     }
@@ -46,7 +48,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 14291081844228980758
+  ChildIds: 16763584839463712172
+  ChildIds: 2421382352112058609
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60,13 +64,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Folder {
-    IsFilePartition: true
-    FilePartitionName: "LeaderboardsView"
+    IsGroup: true
   }
 }
 Objects {
-  Id: 441966749736944290
-  Name: "AchievementsAndChallengesView"
+  Id: 2421382352112058609
+  Name: "Skins_UniversalGroup"
   Transform {
     Location {
     }
@@ -78,7 +81,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 17506603784249648358
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92,13 +95,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Folder {
-    IsFilePartition: true
-    FilePartitionName: "AchievementsAndChallengesView"
+    IsGroup: true
   }
 }
 Objects {
-  Id: 12230082620669992097
-  Name: "PremiumShopView"
+  Id: 16763584839463712172
+  Name: "Skins_Individual"
   Transform {
     Location {
     }
@@ -110,7 +112,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 17506603784249648358
+  ChildIds: 3933943344914895777
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -124,13 +127,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Folder {
-    IsFilePartition: true
-    FilePartitionName: "PremiumShopView"
+    IsGroup: true
   }
 }
 Objects {
-  Id: 16175003310112352478
-  Name: "CamoSelectionView"
+  Id: 3933943344914895777
+  Name: "Skins_M3Stuart"
   Transform {
     Location {
     }
@@ -142,7 +144,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 16763584839463712172
+  ChildIds: 9935891964514552041
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -156,13 +159,12 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Folder {
-    IsFilePartition: true
-    FilePartitionName: "CamoSelectionView"
+    IsGroup: true
   }
 }
 Objects {
-  Id: 1655022513448648736
-  Name: "TechTreeView"
+  Id: 9935891964514552041
+  Name: "Skins_IndividualSkinInfo"
   Transform {
     Location {
     }
@@ -174,7 +176,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 3933943344914895777
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -187,14 +189,15 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TechTreeView"
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
   }
 }
 Objects {
-  Id: 11185965130373561837
-  Name: "DefaultView"
+  Id: 9524975357084448244
+  Name: "ClientContext"
   Transform {
     Location {
     }
@@ -206,9 +209,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 14291081844228980758
+  ChildIds: 9828983140129475871
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -219,14 +223,12 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "DefaultView"
+  NetworkContext {
   }
 }
 Objects {
-  Id: 11128050866934017708
-  Name: "MainManager"
+  Id: 9828983140129475871
+  Name: "GAMESTATE_GARAGE_SkinsClient"
   Transform {
     Location {
     }
@@ -238,7 +240,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15534379475757777486
+  ParentId: 9524975357084448244
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -251,8 +253,42 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "MainManager"
+  Script {
+    ScriptAsset {
+      Id: 2896591224378290973
+    }
+  }
+}
+Objects {
+  Id: 4220144541678378015
+  Name: "GAMESTATE_GARAGE_SkinsServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14291081844228980758
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7145139164389251397
+    }
   }
 }
