@@ -65,6 +65,7 @@ local originalSpeed = 0
 local originalFriction = 0
 local originalAcceleration = 0
 local originalTurnSpeed = 0
+local ramCooldown = false
 local aimTask = nil
 local reloading = false
 local flipping = false
@@ -495,7 +496,9 @@ function OnArmorHit(trigger, other)
 				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
 			end
 		end
-	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" then
+	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" and not ramCooldown then
+		
+		ramCooldown = true
 		
 		local enemyPlayer = other.driver
 		local armorName = trigger.name
@@ -520,11 +523,11 @@ function OnArmorHit(trigger, other)
 			netSpeed = otherVehicleSpeed + thisVehicleSpeed
 		end
 		
-		if netSpeed < 300 then
+		if netSpeed < 500 then
 			return
 		end
 		
-		local ramDamage = (netSpeed + other.mass * 0.02)/400
+		local ramDamage = (netSpeed + other.mass * 0.01)/500
 		
 		if armorName == "HULLFRONT" then
 			ramDamage = ramDamage/2
@@ -559,6 +562,8 @@ function OnArmorHit(trigger, other)
 			burnTask = Task.Spawn(OnBurning, 0)
 			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
 		end
+		
+		Task.Wait(1)
 	end
 	
 end

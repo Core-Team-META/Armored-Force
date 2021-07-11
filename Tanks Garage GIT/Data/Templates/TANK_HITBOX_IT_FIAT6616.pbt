@@ -55,6 +55,10 @@ Assets {
         ChildIds: 15771876165027353118
         ChildIds: 11886263323919492927
         ChildIds: 5605024653819339374
+        ChildIds: 14297081248197310385
+        ChildIds: 10295614018336175274
+        ChildIds: 9995787029191139820
+        ChildIds: 7929240757165302426
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -398,6 +402,190 @@ Assets {
           Overrides {
             Name: "cs:ArmorValue"
             Float: 0.1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 14297081248197310385
+        Name: "RIGHTTRACK"
+        Transform {
+          Location {
+            X: 271.818146
+            Y: 170
+            Z: -95
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.69999993
+            Y: 1.1
+            Z: 1.7
+          }
+        }
+        ParentId: 15574898390884102698
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 10295614018336175274
+        Name: "RIGHTTRACK"
+        Transform {
+          Location {
+            X: -244.545364
+            Y: 170
+            Z: -95
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.69999993
+            Y: 1.1
+            Z: 1.7
+          }
+        }
+        ParentId: 15574898390884102698
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 9995787029191139820
+        Name: "LEFTTRACK"
+        Transform {
+          Location {
+            X: 271.818146
+            Y: -170
+            Z: -95
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.69999993
+            Y: 1.1
+            Z: 1.7
+          }
+        }
+        ParentId: 15574898390884102698
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:alwaysvisible"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 7929240757165302426
+        Name: "LEFTTRACK"
+        Transform {
+          Location {
+            X: -244.545364
+            Y: -170
+            Z: -95
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.69999993
+            Y: 1.1
+            Z: 1.7
+          }
+        }
+        ParentId: 15574898390884102698
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ArmorValue"
+            Float: 0.5
           }
         }
         Collidable_v2 {
