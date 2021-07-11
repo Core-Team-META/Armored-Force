@@ -56,14 +56,14 @@ Assets {
           MaxSpeed: 850
           AccelerationRate: 400
           DecelerationRate: 15
-          BrakeStrength: 1
+          BrakeStrength: 15
           TireFriction: 5
           CenterOfMassOFfset {
             X: -50
             Z: 20
           }
           GravityScale: 1
-          CoastBrakeStrength: 0.1
+          CoastBrakeStrength: 10
           Tank {
             LeftTreadRadius: 40
             LeftTreadWidth: 50

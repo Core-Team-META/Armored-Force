@@ -12,6 +12,8 @@ local adjustmentPoint = nil
 
 local tankBodyClient = nil
 local tankBodyServer = nil
+local treadsLeft = nil
+local treadsRight = nil
 local leftWheels = nil
 local rightWheels = nil
 
@@ -24,6 +26,11 @@ local barrelClient = nil
 local shotSFX = nil
 local flashVFX = nil
 
+local trackedLeftState = nil
+local trackedRightState = nil
+local barrelDamageState = nil
+local fireState = nil
+
 -- Player Reference
 local driver = nil
 
@@ -32,6 +39,7 @@ local tankSet = false
 local saluteOverride = false
 local animateListener = nil
 local destroyedListener = nil
+local stateListener = nil
 
 function GetDriver()
 
@@ -45,7 +53,7 @@ function CheckTankReady()
 		return
 	end
 	
-	Task.Wait(0.1)
+	Task.Wait(1)
 	
 	for _, p in ipairs(Game.GetPlayers()) do
 		if p.id == tankControllerServer:GetCustomProperty("DriverID") then
@@ -61,8 +69,8 @@ function CheckTankReady()
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
 	
-	local treadsLeft = tankBodyClient:FindDescendantByName("TreadsLeft")
-	local treadsRight = tankBodyClient:FindDescendantByName("TreadsRight")
+	treadsLeft = tankBodyClient:FindDescendantByName("TreadsLeft")
+	treadsRight = tankBodyClient:FindDescendantByName("TreadsRight")
 	
 	leftWheels = treadsLeft:FindDescendantsByName("Wheel")
 	rightWheels = treadsRight:FindDescendantsByName("Wheel")
@@ -76,14 +84,20 @@ function CheckTankReady()
 	barrelClient = tankBodyClient:FindDescendantByName("Barrel")
 	shotSFX = tankBodyClient:FindDescendantByName("ShotSFX")
 	flashVFX = tankBodyClient:FindDescendantByName("FlashVFX")
-		
-	print(tankBodyServer.driver)
-
-	if driver == Game.GetLocalPlayer() then
-		driver:SetOverrideCamera(defaultCamera)
-	end
 	
+	fireState = tankBodyClient:FindDescendantByName("HullFire")
+	trackedLeftState = tankBodyClient:FindDescendantByName("TreadsLeftDamaged")
+	trackedRightState = tankBodyClient:FindDescendantByName("TreadsRightDamaged")
+	barrelDamageState = tankBodyClient:FindDescendantByName("BarrelDamaged")
+	
+	stateListener = tankControllerServer.networkedPropertyChangedEvent:Connect(OnTankStateChanged)
+
 	SetClientData()
+		
+	if driver == Game.GetLocalPlayer() then
+		--driver:SetOverrideCamera(defaultCamera)
+		Events.Broadcast("EquippedTankSet")
+	end
 
 	tankSet = true
 	
@@ -113,8 +127,51 @@ function SetClientData()
 	driver.clientUserData.currentTankData.name = tankControllerServer:GetCustomProperty("Name")
 	driver.clientUserData.currentTankData.viewRange = tankControllerServer:GetCustomProperty("ViewRange")
 	driver.clientUserData.currentTankData.controlScript = script
+	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 	
 	Events.Broadcast("EquippedTankDataSet", nil)
+end
+
+function OnTankStateChanged(controllerServer, property)
+	
+	local value = controllerServer:GetCustomProperty(property)
+	
+	if property == "Tracked" then
+		if value == 1 then
+			trackedLeftState.visibility = Visibility.INHERIT
+			treadsLeft.visibility = Visibility.FORCE_OFF
+		elseif value == 2 then
+			trackedRightState.visibility = Visibility.INHERIT
+			treadsRight.visibility = Visibility.FORCE_OFF
+		else 
+			trackedLeftState.visibility = Visibility.FORCE_OFF
+			trackedRightState.visibility = Visibility.FORCE_OFF
+			treadsLeft.visibility = Visibility.INHERIT
+			treadsRight.visibility = Visibility.INHERIT
+		end
+	elseif property == "Burning" then
+		if value then
+			fireState.visibility = Visibility.INHERIT
+			
+			for _, i in ipairs(fireState:FindDescendantsByType("SFX")) do
+				i:Play()
+			end
+		else 
+			fireState.visibility = Visibility.FORCE_OFF
+			
+			for _, i in ipairs(fireState:FindDescendantsByType("SFX")) do
+				i:Stop()
+			end		
+		end
+	elseif property == "BarrelDown" then
+		if value then
+			barrelDamageState.visibility = Visibility.INHERIT
+			barrelClient.visibility = Visibility.FORCE_OFF
+		else 
+			barrelDamageState.visibility = Visibility.FORCE_OFF
+			barrelClient.visibility = Visibility.INHERIT
+		end
+	end
 
 end
 
@@ -308,6 +365,11 @@ function OnDestroy(object)
 	if saluteListener then
 		saluteListener:Disconnect()
 		saluteListener = nil
+	end
+	
+	if stateListener then
+		stateListener:Disconnect()
+		stateListener = nil
 	end
 	
 	if Object.IsValid(tankBodyClient) then

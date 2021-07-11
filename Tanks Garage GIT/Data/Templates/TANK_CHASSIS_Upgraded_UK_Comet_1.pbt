@@ -1,6 +1,6 @@
 Assets {
   Id: 665104530983257129
-  Name: "TANK_CHASSIS_Upgraded_UK_Comet_1"
+  Name: "TANK_CHASSIS_Upgraded_UK_Comet"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -56,13 +56,13 @@ Assets {
           MaxSpeed: 1215
           AccelerationRate: 400
           DecelerationRate: 15
-          BrakeStrength: 1
+          BrakeStrength: 15
           TireFriction: 10
           CenterOfMassOFfset {
             Z: 20
           }
           GravityScale: 1
-          CoastBrakeStrength: 0.1
+          CoastBrakeStrength: 10
           Tank {
             LeftTreadRadius: 40
             LeftTreadWidth: 70

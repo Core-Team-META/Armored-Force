@@ -58,13 +58,13 @@ Assets {
           MaxSpeed: 2600
           AccelerationRate: 400
           DecelerationRate: 15
-          BrakeStrength: 10
+          BrakeStrength: 15
           TireFriction: 10
           CenterOfMassOFfset {
             Z: 20
           }
           GravityScale: 1
-          CoastBrakeStrength: 1
+          CoastBrakeStrength: 10
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
