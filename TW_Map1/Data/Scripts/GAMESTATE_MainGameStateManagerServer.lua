@@ -80,7 +80,7 @@ function OnChangeState(previousState)
 		
 			p:SetResource("MatchEndHP", p.hitPoints)
 			
-			--p:Spawn()
+			p:Spawn()
 					
 		end
 
@@ -96,13 +96,21 @@ function OnChangeState(previousState)
 		
 	elseif previousState == "VICTORY_STATE" then
 	
+		script:SetNetworkedCustomProperty("GameState", "")
+		
+		currentState = ""
+		
+		Game.TransferAllPlayersToGame(garageLink)
+		
+		--[[
 		script:SetNetworkedCustomProperty("GameState", "STATS_STATE")
 		
 		currentState = "STATS_STATE"	
 		
 		SetTimer(statsMaxDuration)		
+		]]
 		
-	elseif previousState == "STATS_STATE" then
+	elseif previousState == "STATS_STATE" then -- UNUSED, moved to garage.
 	
 		script:SetNetworkedCustomProperty("GameState", "")
 		
@@ -111,7 +119,7 @@ function OnChangeState(previousState)
 		Game.TransferAllPlayersToGame(garageLink)		
 	end
 	
-	print("Transitioning to state: " .. currentState)
+	--print("Transitioning to state: " .. currentState)
 	
 	Events.Broadcast("NEW_STATE", currentState)
 

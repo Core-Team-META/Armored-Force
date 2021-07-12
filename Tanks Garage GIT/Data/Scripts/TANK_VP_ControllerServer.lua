@@ -31,12 +31,12 @@ local tierValue = script:GetCustomProperty("TierValue")
 -- Main Component References
 local templateReferences = script:GetCustomProperty("TemplateReferences"):WaitForObject()
 local target = script:GetCustomProperty("Target"):WaitForObject()
---[[
+
 while not _G["standardcombo.Combat.Wrap"] do
 	Task.Wait()
 end
 local COMBAT = _G["standardcombo.Combat.Wrap"]
-]]
+
 -- Selected/Active Tank Stats
 local reloadTime = nil
 local projectileDamage = nil
@@ -149,7 +149,9 @@ function AssignDriver(newDriver)
 	chassis:SetDriver(driver)
 	
 	originalSpeed = chassis.maxSpeed
-	originalFriction = chassis.tireFriction
+	originalFriction = chassis.tireFriction * 50
+	chassis.tireFriction = chassis.tireFriction * 50
+	chassis.coastBrakeStrength = chassis.coastBrakeStrength * 50
 	originalAcceleration = chassis.accelerationRate
 	if chassis.type == "TreadedVehicle" then
 		originalTurnSpeed = chassis.turnSpeed
@@ -398,8 +400,8 @@ function ProjectileImpacted(expiredProjectile, other)
 	
 	damageDealt.sourcePlayer = driver
 	damageDealt.reason = DamageReason.COMBAT
-	other.driver:ApplyDamage(damageDealt)
---[[
+	--other.driver:ApplyDamage(damageDealt)
+
 	local attackData = {
 		object = other.driver,
 		damage = damageDealt,
@@ -409,7 +411,7 @@ function ProjectileImpacted(expiredProjectile, other)
 		tags = {id = "Example"}
 	}
 	COMBAT.ApplyDamage(attackData)
-]]	
+	
 	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", vehicle:GetWorldPosition(), other.driver)
 
 end
@@ -447,8 +449,8 @@ function OnArmorHit(trigger, other)
 		
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
-		driver:ApplyDamage(damageDealt)
---[[
+		--driver:ApplyDamage(damageDealt)
+
 		local attackData = {
 			object = driver,
 			damage = damageDealt,
@@ -458,7 +460,7 @@ function OnArmorHit(trigger, other)
 			tags = {id = "Example"}
 		}
 		COMBAT.ApplyDamage(attackData)
-		]]
+		
 		local armorName = trigger.name
 		
 		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" then
@@ -539,8 +541,8 @@ function OnArmorHit(trigger, other)
 		
 		damageDealt.sourcePlayer = enemyPlayer
 		damageDealt.reason = DamageReason.COMBAT
-		driver:ApplyDamage(damageDealt)
---[[
+		--driver:ApplyDamage(damageDealt)
+
 		local attackData = {
 			object = driver,
 			damage = damageDealt,
@@ -550,7 +552,7 @@ function OnArmorHit(trigger, other)
 			tags = {id = "Example"}
 		}
 		COMBAT.ApplyDamage(attackData)
-]]		
+		
 		local possibleDamageState = math.random(100)
 				
 		if possibleDamageState > 50 then
@@ -643,8 +645,8 @@ function OnBurning()
 		
 		damageDealt.sourcePlayer = playerWhoBurned
 		damageDealt.reason = DamageReason.COMBAT
-		driver:ApplyDamage(damageDealt)
---[[
+		--driver:ApplyDamage(damageDealt)
+
 		local attackData = {
 			object = driver,
 			damage = damageDealt,
@@ -653,7 +655,7 @@ function OnBurning()
 			rotation = nil,
 			tags = {id = "Example"}
 		}
-	]]	
+		
 		COMBAT.ApplyDamage(attackData)
 		
 		Task.Wait(1)

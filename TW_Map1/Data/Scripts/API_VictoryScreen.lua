@@ -179,7 +179,7 @@ end
 function API.TeleportWinners( player, spawnObject, overrideCamera)
 	local spawnPosition = spawnObject:GetWorldPosition()
 	local spawnRotation = spawnObject:GetWorldRotation()
-		player:Respawn({position = spawnPosition, rotation = spawnRotation})
+		player:Spawn({position = spawnPosition, rotation = spawnRotation})
 		
 		if not Object.IsValid(player) then return end
 		player:ResetVelocity() -- stop the player from flying off if they are currently in motion
@@ -218,7 +218,7 @@ function API.OnPlayerTeleported(victoryScreen, player,  topThreePlayerStats, dur
 	player.movementControlMode = MovementControlMode.NONE
 	player.lookControlMode = LookControlMode.NONE
 	player.maxJumpCount = 1
-	player:Respawn()
+	player:Spawn()
 	
 	Task.Wait(.1)
 	if not Object.IsValid(player) then return end
@@ -251,7 +251,7 @@ function API.OnPlayerRestored(victoryScreen, player)
 	end
 		
 	if(respawnOnDeactivate) then
-		player:Respawn()
+		player:Spawn()
 	end
 	if(tasks[player]) then
 		tasks[player]:Cancel()

@@ -385,7 +385,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "ENEMIES BASED IS BEING CAPTURED!"
+      Label: "ENEMIES BASE IS BEING CAPTURED!"
       Color {
         R: 1
         G: 1

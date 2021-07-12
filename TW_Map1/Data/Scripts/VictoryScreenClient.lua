@@ -27,6 +27,8 @@ local PlayerPanels = Container:GetChildren()
 
 local WinnerTriggers = Spawns:GetChildren()
 
+local TurnOffThisUI = script:GetCustomProperty("turnOffThisUI"):WaitForObject()
+
 ------------------------------------------------------------------------------------------------------------------------
 --	CONSTANTS
 ------------------------------------------------------------------------------------------------------------------------
@@ -182,11 +184,25 @@ function OnStateChanged(manager, propertyName)
 	local newState = GameStateManager:GetCustomProperty("GameState")
 	
 	if newState == "VICTORY_STATE" then
+		
+		local otherUI = TurnOffThisUI:GetChildren()
+		
+		for _, o in ipairs(otherUI) do
+			local ui = o:GetCustomProperty("UIReference"):WaitForObject()
+			ui.visibility = Visibility.FORCE_OFF
+		end
 	
 		SendToVictoryScreen()
 		
 	elseif newState == "STATS_STATE" then
-	
+
+		local otherUI = TurnOffThisUI:GetChildren()
+		
+		for _, o in ipairs(otherUI) do
+			local ui = o:GetCustomProperty("UIReference"):WaitForObject()
+			ui.visibility = Visibility.INHERIT
+		end
+		
 		RestoreFromPodium()
 		
 	end
