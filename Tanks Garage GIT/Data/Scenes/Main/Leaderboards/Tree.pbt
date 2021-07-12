@@ -161,6 +161,12 @@ Objects {
         SelfId: 8745392010101095915
       }
     }
+    Overrides {
+      Name: "cs:SFX_UNHOVERED"
+      ObjectReference {
+        SelfId: 3243702946864327333
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

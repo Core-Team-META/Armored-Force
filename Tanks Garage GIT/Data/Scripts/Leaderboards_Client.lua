@@ -16,6 +16,7 @@ local MATCH_BUTTON = script:GetCustomProperty("MATCH_BUTTON"):WaitForObject()
 
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
+local SFX_UNHOVERED = script:GetCustomProperty("SFX_UNHOVERED"):WaitForObject()
 
 local LEADERBOARDS_ENTRY = script:GetCustomProperty("LEADERBOARDS_ENTRY")
 
@@ -157,10 +158,16 @@ function Hover()
     SFX_HOVER:Play()
 end
 
+function Unhover()
+    SFX_UNHOVERED:Play()
+end
+
 TOTAL_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 MATCH_BUTTON.clickedEvent:Connect(ToggleLeaderboards)
 TOTAL_BUTTON.hoveredEvent:Connect(Hover)
 MATCH_BUTTON.hoveredEvent:Connect(Hover)
+TOTAL_BUTTON.unhoveredEvent:Connect(Unhover)
+MATCH_BUTTON.unhoveredEvent:Connect(Unhover)
 NETWORKED.networkedPropertyChangedEvent:Connect(OnNetworkChanged)
 Init()
 Task.Wait(3)
