@@ -70,7 +70,7 @@ Assets {
         Transform {
           Location {
             X: 40
-            Z: 455
+            Z: 454.54541
           }
           Rotation {
           }
@@ -21201,6 +21201,10 @@ Assets {
             Name: "bp:Roughness"
             Float: 0.290468901
           }
+          Overrides {
+            Name: "bp:Enable"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23928,6 +23932,10 @@ Assets {
           Overrides {
             Name: "bp:Roughness"
             Float: 0.290468901
+          }
+          Overrides {
+            Name: "bp:Enable"
+            Bool: true
           }
         }
         Collidable_v2 {

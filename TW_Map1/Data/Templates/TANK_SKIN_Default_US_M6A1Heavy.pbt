@@ -54232,7 +54232,7 @@ Assets {
         Transform {
           Location {
             X: 35
-            Z: 605
+            Z: 604.545349
           }
           Rotation {
           }

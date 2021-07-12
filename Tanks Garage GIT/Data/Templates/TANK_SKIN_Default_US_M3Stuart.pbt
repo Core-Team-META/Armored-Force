@@ -86,7 +86,7 @@ Assets {
         Name: "Tank Camera"
         Transform {
           Location {
-            Z: 469.803772
+            Z: 469.349243
           }
           Rotation {
           }
