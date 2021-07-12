@@ -65,7 +65,9 @@ function OnPlayerRespawned(player)
 	
 	RemovePlayerEquipment(player)
 	
-	if mainManagerServer:GetCustomProperty("GameState") ~= "VICTORY_STATE" then
+	local currentState = mainManagerServer:GetCustomProperty("GameState")
+	
+	if currentState ~= "VICTORY_STATE" and currentState ~= "CARD_STATE" then
 		GivePlayerEquipment(player)
 	else 
 		player.isVisible = true

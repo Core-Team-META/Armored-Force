@@ -141,6 +141,7 @@ Objects {
   ParentId: 3216315914285168726
   ChildIds: 3929383575730619043
   ChildIds: 12884610491719302893
+  ChildIds: 17632661262297345400
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -151,6 +152,40 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 17632661262297345400
+  Name: "turnOffThisUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10683085038235344362
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "turnOffThisUI"
   }
 }
 Objects {
@@ -10045,6 +10080,12 @@ Objects {
       Name: "cs:Spawns"
       ObjectReference {
         SelfId: 17937293938837843560
+      }
+    }
+    Overrides {
+      Name: "cs:turnOffThisUI"
+      ObjectReference {
+        SelfId: 17632661262297345400
       }
     }
   }

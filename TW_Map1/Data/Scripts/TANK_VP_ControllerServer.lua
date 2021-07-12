@@ -149,7 +149,9 @@ function AssignDriver(newDriver)
 	chassis:SetDriver(driver)
 	
 	originalSpeed = chassis.maxSpeed
-	originalFriction = chassis.tireFriction
+	originalFriction = chassis.tireFriction * 50
+	chassis.tireFriction = chassis.tireFriction * 50
+	chassis.coastBrakeStrength = chassis.coastBrakeStrength * 50
 	originalAcceleration = chassis.accelerationRate
 	if chassis.type == "TreadedVehicle" then
 		originalTurnSpeed = chassis.turnSpeed

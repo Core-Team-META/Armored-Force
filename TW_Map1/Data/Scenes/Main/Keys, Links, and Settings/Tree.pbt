@@ -30,11 +30,11 @@ Objects {
     }
     Overrides {
       Name: "cs:CardMaxDuration"
-      Int: 3
+      Int: 5
     }
     Overrides {
       Name: "cs:VictoryMaxDuration"
-      Int: 10
+      Int: 20
     }
     Overrides {
       Name: "cs:StatsMaxDuration"
