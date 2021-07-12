@@ -192,8 +192,9 @@ function CloseHover()
 	SFX_HOVER:Play()
 end
 
-function SubmenuUnhover()
+function SubmenuUnhover(button)
 	SFX_UNHOVERED:Play()
+	button.parent:FindDescendantByName("HOVER").visibility = Visibility.FORCE_OFF
 end
 
 function CloseUnhover()
