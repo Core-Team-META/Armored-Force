@@ -274,6 +274,19 @@ Assets {
   }
 }
 Assets {
+  Id: 949284689335985436
+  Name: "Skins1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "9b2318a99ff448e0aa9cc18becefba2d"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 474514312989930799
   Name: "Branches Cluster Big"
   PlatformAssetType: 1

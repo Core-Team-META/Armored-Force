@@ -9,8 +9,12 @@ Assets {
         String: "01"
       }
       Overrides {
+        Name: "cs:SkinID"
+        String: "0101"
+      }
+      Overrides {
         Name: "cs:SkinName"
-        String: ""
+        String: "Steel"
       }
       Overrides {
         Name: "cs:SkinMaterial"

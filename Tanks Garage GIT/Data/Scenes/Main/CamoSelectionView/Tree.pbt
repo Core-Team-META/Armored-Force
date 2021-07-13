@@ -69,7 +69,7 @@ Objects {
 }
 Objects {
   Id: 2421382352112058609
-  Name: "Skins_UniversalGroup"
+  Name: "Skins_Universal"
   Transform {
     Location {
     }
@@ -177,6 +177,18 @@ Objects {
     }
   }
   ParentId: 3933943344914895777
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Steel"
+    }
+    Overrides {
+      Name: "cs:SkinMaterial"
+      AssetReference {
+        Id: 1329351575637904310
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -274,6 +286,32 @@ Objects {
     }
   }
   ParentId: 14291081844228980758
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Keys"
+      ObjectReference {
+        SelfId: 1126690814057033551
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:Skins_Individual"
+      ObjectReference {
+        SelfId: 16763584839463712172
+      }
+    }
+    Overrides {
+      Name: "cs:Skins_Universal"
+      ObjectReference {
+        SelfId: 2421382352112058609
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

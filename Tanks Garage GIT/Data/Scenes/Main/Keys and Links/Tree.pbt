@@ -69,6 +69,15 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Skins"
+      NetReference {
+        Key: "9b2318a99ff448e0aa9cc18becefba2d"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
       Name: "cs:Achievements"
       NetReference {
         Key: "03cfd5130aba46b5818a37f60dbe7fd1"
