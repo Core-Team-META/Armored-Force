@@ -366,27 +366,36 @@ function PopulateSelectedTankPanel(id)
 	LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF	
 	
 	if(not tankDetails.purchasedTank) then
-		World.FindObjectByName("UPGRADE_TURRET").visibility = Visibility.FORCE_OFF
-		World.FindObjectByName("UPGRADE_ENGINE").visibility = Visibility.FORCE_OFF
-		World.FindObjectByName("UPGRADE_SHELL").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("BUTTON_UPGRADE_TURRET_CONTAINER").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("UPGRADE_TURRET"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("BUTTON_UPGRADE_ENGINE_CONTAINER").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_OFF
+		World.FindObjectByName("UPGRADE_SHELL"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 	else
 	
 		if(tonumber(tankDetails.weaponProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-			World.FindObjectByName("UPGRADE_TURRET").visibility = Visibility.FORCE_OFF
+			World.FindObjectByName("BUTTON_UPGRADE_TURRET_CONTAINER").visibility = Visibility.FORCE_OFF
+			World.FindObjectByName("UPGRADE_TURRET"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		else
-			World.FindObjectByName("UPGRADE_TURRET").visibility = Visibility.FORCE_ON
+			World.FindObjectByName("BUTTON_UPGRADE_TURRET_CONTAINER").visibility = Visibility.FORCE_ON
+			World.FindObjectByName("UPGRADE_TURRET"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		end
 		
 		if(tonumber(tankDetails.armorProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-			World.FindObjectByName("UPGRADE_SHELL").visibility = Visibility.FORCE_OFF
+			World.FindObjectByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_OFF
+			World.FindObjectByName("UPGRADE_SHELL"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		else
-			World.FindObjectByName("UPGRADE_SHELL").visibility = Visibility.FORCE_ON
+			World.FindObjectByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_ON
+			World.FindObjectByName("UPGRADE_SHELL"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		end
 		
 		if(tonumber(tankDetails.engineProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-			World.FindObjectByName("UPGRADE_ENGINE").visibility = Visibility.FORCE_OFF
+			World.FindObjectByName("BUTTON_UPGRADE_ENGINE_CONTAINER").visibility = Visibility.FORCE_OFF
+			World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		else
-			World.FindObjectByName("UPGRADE_ENGINE").visibility = Visibility.FORCE_ON
+			World.FindObjectByName("BUTTON_UPGRADE_ENGINE_CONTAINER").visibility = Visibility.FORCE_ON
+			World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		end
 	end
 	
@@ -1173,36 +1182,45 @@ function PopulateDetailsModal(tank)
 		if(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
 			print("weapon purchased")
 			upgradeWeapon.visibility = Visibility.FORCE_OFF
+			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		elseif(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			print("weapon researched")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
 			upgradeWeapon.text = "P " .. tostring(tank:GetCustomProperty("WeaponPurchaseCost"))
+			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		elseif(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			print("no weapon progress")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
 			upgradeWeapon.text = "R " .. tostring(tank:GetCustomProperty("WeaponResearchCost"))
+			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		else
 			warn("Weapon progress not found with value: " .. tostring(weaponProgress))
 		end
 		if(tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
-			upgradeArmor.visibility = Visibility.FORCE_OFF
+			upgradeArmor:FindDescendantByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_OFF
+			upgradeArmor:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		elseif(tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
-			upgradeArmor.visibility = Visibility.FORCE_ON
+			upgradeArmor:FindDescendantByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_ON
 			upgradeArmor.text = "P " .. tostring(tank:GetCustomProperty("ArmorPurchaseCost"))
+			upgradeArmor:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		elseif(tostring(tankDetails.armorProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
-			upgradeArmor.visibility = Visibility.FORCE_ON
+			upgradeArmor:FindDescendantByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_ON
 			upgradeArmor.text = "R " .. tostring(tank:GetCustomProperty("ArmorResearchCost"))
+			upgradeArmor:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		else
 			warn("Armor progress not found with value: " .. tostring(armorProgress))
 		end
 		if(tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
 			upgradeEngine.visibility = Visibility.FORCE_OFF
+			upgradeEngine:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		elseif(tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
 			upgradeEngine.visibility = Visibility.FORCE_ON
 			upgradeEngine.text = "P  " .. tostring(tank:GetCustomProperty("MobilityPurchaseCost"))
+			upgradeEngine:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		elseif(tostring(tankDetails.engineProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
 			upgradeEngine.visibility = Visibility.FORCE_ON
 			upgradeEngine.text = "R  " .. tostring(tank:GetCustomProperty("MobilityResearchCost"))
+			upgradeEngine:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		else
 			warn("Engine progress not found with value: " .. tostring(engineProgress))
 		end
@@ -1300,7 +1318,7 @@ function ResetTankDetails()
 		currency = ""
 	}
 	upgradeWeapon.visibility = Visibility.FORCE_OFF
-	upgradeArmor.visibility = Visibility.FORCE_OFF
+	upgradeArmor:FindDescendantByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_OFF
 	upgradeEngine.visibility = Visibility.FORCE_OFF
 	ForceHideResearchSidePanel()
 	TogglePrerequisite1Visibility(Visibility.FORCE_OFF)
