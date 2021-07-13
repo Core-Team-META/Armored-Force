@@ -265,24 +265,17 @@ function SetNewPlayerProgression(playerSharedStorage)
 		tankEntry = ""
 	
 		if i < 10 then
-		
 			tankEntry = "0" .. tostring(i)
-			
 		else 
-		
 			tankEntry = tostring(i)
-			
 		end
 		
 		
 		-- players get tanks 1 and 18 (M3 and Panzer 3) as starter tanks.
 		-- Currently set 
 		if i ~= 1 and i ~= 18 and i ~= CONSTANTS_API.GetNumberOfTanks() then
-		
 			tankEntry = tankEntry .. "|0|0|0|0|0~"
-			
 		elseif i == 1 or i == 18 then
-		
 			tankEntry = tankEntry .. "|1|1|2|2|2~"
 			
 		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
@@ -294,9 +287,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 		]]--
 			
 		else 
-		
 			tankEntry = tankEntry .. "|0|0|0|0|0"
-			
 		end
 		
 		
@@ -344,7 +335,7 @@ function SetTankProgressionDataForServer(dataString, player)
     end     
     
     player.serverUserData.techTreeProgress = progressionTable
-   UTIL_API.TablePrint(player.serverUserData.techTreeProgress)
+   --UTIL_API.TablePrint(player.serverUserData.techTreeProgress)
 end
 
 function ConvertBoolToString(boolean)
