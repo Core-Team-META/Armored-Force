@@ -811,6 +811,12 @@ Objects {
         SelfId: 10647935135568310505
       }
     }
+    Overrides {
+      Name: "cs:SFX_EQUIP_TANK"
+      ObjectReference {
+        SelfId: 8027717470199943460
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
