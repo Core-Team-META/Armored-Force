@@ -215,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8893979289421564399
+  Name: "Tank Cannon Metal Clink Load 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_tank_cannon_metal_click_01a_Cue1_ref"
+  }
+}
+Assets {
   Id: 8581935008439073870
   Name: "Icon DNA"
   PlatformAssetType: 9

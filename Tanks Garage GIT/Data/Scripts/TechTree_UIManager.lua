@@ -94,6 +94,7 @@ local axisDisplayTanks = script:GetCustomProperty("AxisDisplayTanks"):WaitForObj
 local CONFIRM_WINDOW_CLOSE_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CLOSE_BUTTON"):WaitForObject()
 local CONFIRM_WINDOW_CONFIRM_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CONFIRM_BUTTON"):WaitForObject()
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
+local SFX_EQUIP_TANK = script:GetCustomProperty("SFX_EQUIP_TANK"):WaitForObject()
 
 local LOCKED_TANK_CARD = script:GetCustomProperty("LOCKED_TANK_CARD"):WaitForObject()
 local CONFIRM_TANK_UPGRADE = script:GetCustomProperty("CONFIRM_TANK_UPGRADE"):WaitForObject()
@@ -160,6 +161,8 @@ local HAS_PURCHASE_TEXT = "P"
 
 local confirmButtonFunction = ""
 
+local prereqLineInactiveColor = Color.New(0.021, 0.021, 0.021, 1)
+local prereqLineActiveColor = Color.New(0.153, 0.313, 0.004, 1)
 ------------------------------------------------------------------------------------
 -- Completed UI references. Remove above ones as they are made obsolete
 
@@ -476,6 +479,7 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_ON
 		if(cost > 0 or silverCost > 0) then
 			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
+			confirmButtonFunction = "CAN'T AFFORD"
 		else
 			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "PURCHASE"
 			confirmButtonFunction = "PURCHASE"
@@ -489,6 +493,7 @@ function ConfirmButtonClicked()
 		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
 		Events.Broadcast("CHANGE_EQUIPPED_TANK", tankDetails.id) 
 		print(tankDetails.id)
+		SFX_EQUIP_TANK:Play()
 		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 	elseif(confirmButtonFunction == "PURCHASE") then
 		local prereqs = GetPrerequisiteRPValues(tankDetails.id)
@@ -863,7 +868,7 @@ end
 function UpgradeTank()
 	if(tankDetails.purchasedTank) then
 		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
-		-- TODO: Play SFX/Message
+		SFX_EQUIP_TANK:Play()
 		UI.PrintToScreen(tankDetails.name .. " equipped.")
 	elseif(tankDetails.researchedTank) then
 		local currency = LOCAL_PLAYER:GetResource(tankDetails.currency)
@@ -1432,13 +1437,104 @@ Init()
 PopulateSelectedTankPanel()
 --ResetTankDetails()
 
-function PopulateOwnedTanks()
+function PopulateOwnedTanks()	
+	local ownedTank02 = false
+	local ownedTank03 = false
+	local ownedTank04 = false
+	local ownedTank05 = false
+	local ownedTank06 = false
+	local ownedTank07 = false
+
+	local ownedTank19 = false
+	local ownedTank20 = false
+	local ownedTank21 = false
+	local ownedTank22 = false
+	local ownedTank23 = false
+	local ownedTank24 = false
+
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if(tank.purchased) then
 			local panel = World.FindObjectByName("UNLOCKED_"..tank.id)
-			panel.visibility = Visibility.FORCE_ON
+			if(panel) then panel.visibility = Visibility.FORCE_ON end
+
+			-- Populate variables to show pre-req lines
+			if(tank.id == "02") then ownedTank02 = true end
+			if(tank.id == "03") then ownedTank03 = true end
+			if(tank.id == "04") then ownedTank04 = true end
+			if(tank.id == "05") then ownedTank05 = true end
+			if(tank.id == "06") then ownedTank06 = true end
+			if(tank.id == "07") then ownedTank07 = true end				
+			if(tank.id == "19") then ownedTank19 = true end
+			if(tank.id == "20") then ownedTank20 = true end
+			if(tank.id == "21") then ownedTank21 = true end
+			if(tank.id == "22") then ownedTank22 = true end
+			if(tank.id == "23") then ownedTank23 = true end
+			if(tank.id == "24") then ownedTank24 = true end
+		end
+	end	
+
+	-- Toggle pre-req lines
+	if ownedTank02 then
+		local preReqLines = World.FindObjectsByName("02_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
 		end
 	end
+	if ownedTank03 and ownedTank04 then
+		local preReqLines = World.FindObjectsByName("0304_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank05 then
+		local preReqLines = World.FindObjectsByName("05_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank06 then
+		local preReqLines = World.FindObjectsByName("06_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank07 then
+		local preReqLines = World.FindObjectsByName("07_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end	
+	-- Axis tanks
+	if ownedTank19 then
+		local preReqLines = World.FindObjectsByName("19_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank20 and ownedTank21 then
+		local preReqLines = World.FindObjectsByName("2021_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank22 then
+		local preReqLines = World.FindObjectsByName("22_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank23 then
+		local preReqLines = World.FindObjectsByName("23_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank24 then
+		local preReqLines = World.FindObjectsByName("24_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end	
 end
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
