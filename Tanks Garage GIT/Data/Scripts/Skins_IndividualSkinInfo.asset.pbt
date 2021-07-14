@@ -17,10 +17,24 @@ Assets {
         String: "Steel"
       }
       Overrides {
-        Name: "cs:SkinMaterial"
+        Name: "cs:NewMaterial"
         AssetReference {
           Id: 841534158063459245
         }
+      }
+      Overrides {
+        Name: "cs:UseNewMaterial"
+        Bool: false
+      }
+      Overrides {
+        Name: "cs:NewColor"
+        Color {
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cs:UseNewColor"
+        Bool: false
       }
       Overrides {
         Name: "cs:Cost"

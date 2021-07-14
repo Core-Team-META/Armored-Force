@@ -102,7 +102,7 @@ function Initialize()
 			end
 			
 			local skinEntry = {}
-			local skinID = s:GetCustomProperty("SkinID")
+			local skinID = skin:GetCustomProperty("SkinID")
 			
 			skinEntry.cost = skin:GetCustomProperty("Cost")
 			skinEntry.resource = skin:GetCustomProperty("Resource")
@@ -114,7 +114,9 @@ function Initialize()
 	end
 
 end
-
+--[[
+Initialize()
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+]]
