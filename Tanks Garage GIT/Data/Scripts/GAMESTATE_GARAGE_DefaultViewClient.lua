@@ -107,18 +107,18 @@ function OnBattleButtonPressed(button)
 end
 
 function OnPurchaseButtonPressed(button)
-	print("purchasing")
+	--print("purchasing")
 	ReliableEvents.BroadcastToServer("PURCHASE_CONSUME", button.clientUserData.type)
 end
 
 function OnResupplyButtonPressed(button)
-	print("resupply")
+	--print("resupply")
 	ReliableEvents.BroadcastToServer("SET_AUTO_CONSUME", button.clientUserData.type)
 end
 
 function OnResourceChanged(player, resource, amount)
 
-	print("resource recieved " .. resource)
+	--print("resource recieved " .. resource)
 	
 	if resource == CONSTANTS_API.CONSUMABLES.TREADS or resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS then
 		if amount > 1 or (resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS and amount > 0) then

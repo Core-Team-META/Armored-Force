@@ -90,7 +90,7 @@ function UnpackChallengeInfo(player)
 		player.serverUserData.CHALLENGES = challengeString
 	end
 	
-	print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
+	--print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
 end
 
 function RepackChallengeInfo(player)
@@ -106,7 +106,7 @@ function RepackChallengeInfo(player)
 	
 	player.serverUserData.CHALLENGES = challengeString
 	
-	print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
+	--print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
 	
 end
 
@@ -134,19 +134,19 @@ function SetChallengeProgressInfo(player)
 			os.time({year = newDate.year, month = newDate.month, day = newDate.day + 1, hour = 5, min = 0, sec = 0})			
 
 			local showTime = os.date("!*t", player.serverUserData.CHALLENGE[i].dueDate)
-			print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
-			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
+			--print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
+			--.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
 		else
 			local showTime = os.date("!*t", tonumber(player.serverUserData.CHALLENGE[i].dueDate))
-			print("Assigned date: " .. tostring(showTime.year) .. "/" .. tostring(showTime.month) 
-			.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour) .. "/" ..  tostring(showTime.min))
+			--print("Assigned date: " .. tostring(showTime.year) .. "/" .. tostring(showTime.month) 
+			--.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour) .. "/" ..  tostring(showTime.min))
 			
 			local showTime2 = os.date("!*t")
-			print("Current date: " .. tostring(showTime2.year) .. "/" .. tostring(showTime2.month) 
-			.. "/" .. tostring(showTime2.day) .. "/" .. tostring(showTime2.hour) .. "/" ..  tostring(showTime2.min))
+			--print("Current date: " .. tostring(showTime2.year) .. "/" .. tostring(showTime2.month) 
+			--.. "/" .. tostring(showTime2.day) .. "/" .. tostring(showTime2.hour) .. "/" ..  tostring(showTime2.min))
 			
 			if os.time(showTime) - os.time(showTime2) > 0 then
-				print("Remaining time: " .. os.date("!%X", os.time(showTime) - os.time(showTime2)))
+				--print("Remaining time: " .. os.date("!%X", os.time(showTime) - os.time(showTime2)))
 			end
 		end
 	end
@@ -174,8 +174,8 @@ function Tick()
 					needRepack = true
 					
 					local showTime = os.date("*t", player.serverUserData.CHALLENGE[i].dueDate)
-					print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
-					.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
+					--print("Reset date reached / Setting a new due date: " .. tostring(showTime.month) 
+					--.. "/" .. tostring(showTime.day) .. "/" .. tostring(showTime.hour))
 				end
 			end
 			
@@ -192,7 +192,7 @@ end
 
 function ClaimReward(player, challengeNumber)
 
-	print("Player trying to claim challenge " .. tostring(challengeNumber) .. " with " .. tostring(player.serverUserData.CHALLENGE[challengeNumber].progress)) 
+	--print("Player trying to claim challenge " .. tostring(challengeNumber) .. " with " .. tostring(player.serverUserData.CHALLENGE[challengeNumber].progress)) 
 
 	if  player.serverUserData.CHALLENGE[challengeNumber].progress >= player.serverUserData.CHALLENGE[challengeNumber].target then
 		player:AddResource(CONSTANTS_API.SILVER, 100)
