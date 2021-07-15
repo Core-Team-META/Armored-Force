@@ -114,6 +114,7 @@ Objects {
   }
   ParentId: 17506603784249648358
   ChildIds: 3933943344914895777
+  ChildIds: 15527845239859835415
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -128,6 +129,461 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 15527845239859835415
+  Name: "Skins_Panzer3"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16763584839463712172
+  ChildIds: 9353337668930058569
+  ChildIds: 7017076280581118091
+  ChildIds: 9509061138189016400
+  ChildIds: 6511515584182552252
+  ChildIds: 4988225015018204434
+  ChildIds: 14106181106494554980
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14106181106494554980
+  Name: "Holo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15527845239859835415
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Holo"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.39
+        G: 0.170463577
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 7584551294468385459
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "1805"
+    }
+    Overrides {
+      Name: "cs:VehicleID"
+      String: "18"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 4988225015018204434
+  Name: "Crazy"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15527845239859835415
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Crazy"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.51
+        B: 0.415430427
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 14993338682699294199
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "1804"
+    }
+    Overrides {
+      Name: "cs:VehicleID"
+      String: "18"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 6511515584182552252
+  Name: "Blue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15527845239859835415
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Blue"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        G: 0.00284749246
+        B: 0.429999948
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "1803"
+    }
+    Overrides {
+      Name: "cs:VehicleID"
+      String: "18"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 9509061138189016400
+  Name: "gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15527845239859835415
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Gold"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 2821307588416139022
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "1802"
+    }
+    Overrides {
+      Name: "cs:VehicleID"
+      String: "18"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 7017076280581118091
+  Name: "Steel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15527845239859835415
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Steel"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 1329351575637904310
+      }
+    }
+    Overrides {
+      Name: "cs:VehicleID"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "1801"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 9353337668930058569
+  Name: "Stock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15527845239859835415
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stock"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "1800"
+    }
+    Overrides {
+      Name: "cs:Resource"
+      String: "Stock"
+    }
+    Overrides {
+      Name: "cs:VehicleID"
+      String: "18"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
   }
 }
 Objects {
@@ -661,6 +1117,12 @@ Objects {
       Name: "cs:MetaAbilityProgressionConstants_API"
       AssetReference {
         Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
       }
     }
     Overrides {
