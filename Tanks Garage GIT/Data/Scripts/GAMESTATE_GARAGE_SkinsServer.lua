@@ -1,90 +1,147 @@
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+
 local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
 local PLAYER_SHARED_STORAGE = KEYS:GetCustomProperty("Skins")
 
 local individualSkinInfo = script:GetCustomProperty("Skins_Individual"):WaitForObject()
 local universalSkinInfo = script:GetCustomProperty("Skins_Universal"):WaitForObject()
 
-local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+-- LOCAL PROPERTIES
 
 local allIndividualSkins = {}
 local allUniversalSkins = {}
 
 function OnPlayerJoined(player)
+	
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
+	
+	playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = nil
 	
 	if not playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] then
 		SetNewPlayerSkins(playerSharedStorage)
 	end
 	
+	--print("Player current String: " .. playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL])
+	
+	SetTankSkinDataForServer(playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL], player)
+	
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
 
 function OnPlayerLeft(player)
+
+	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
+		
+	playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = ConvertSkinDataToString(player)
+	
+	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 	
 end
 
 function SetNewPlayerSkins(playerSharedStorage)
 
 	local skinString = ""
-	local tankEntry = ""
-	local skinEntry = ""
 	
-	for tankID, group in ipairs(allIndividualSkins) do
-		local skins = group:GetChildren()
+	for tankID, skins in pairs(allIndividualSkins) do
 		
-		tankEntry = tankID .. "/"
+		skinString = skinString .. tankID 
 		
-		for skinID, skin in ipairs(skins) do
-						
-			skinEntry.cost = skin:GetCustomProperty("Cost")
-			skinEntry.resource = skin:GetCustomProperty("Resource")
-			skinEntry.enabled = skin:GetCustomProperty("Enabled")
-			
-			tankEntry = tankEntry .. "/" .. skinID .. "|0|0"
+		for skinID, skinData in pairs(skins) do
+									
+			skinString = skinString .. "/" .. skinID .. "|0|0"
 		end
+		
+		skinString = skinString .. ";"
 	
 	end
+	--print("New Player String: " .. skinString)
+	
 	playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = skinString
 	
 end
 
 function SetTankSkinDataForServer(dataString, player)
-	--print("Saving tank data on server. Data string: " .. dataString)
-   local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
-   -- print("Finished converting string into table.")
+
+   local dataTable = UTIL_API.SplitStringIntoObjects(dataString, ";") -- separate into tank segments
     
-    local progressionTable = {}
+    local camoTable = {}
            
-    -- Split the individual tank data strings into separate tables we can iterate through and build local tank objects
-    for k,v in pairs(tankProgressionTable) do
-    	--print(v)
-        local tankEntryTable = UTIL_API.SplitStringIntoObjects(k, DELIMITER)
-        local position = 1
-        local tankEntry = {}
-        for k,v in pairs(tankEntryTable) do 
-        	--print(v)
-            if(position == CONSTANTS_API.TECH_TREE_POSITION.TANKID) then
-                tankEntry.id = v
-            elseif(position == CONSTANTS_API.TECH_TREE_POSITION.RESEARCHED) then
-                tankEntry.researched = (v == "1")
-            elseif(position == CONSTANTS_API.TECH_TREE_POSITION.PURCHASED) then
-                tankEntry.purchased = (v == "1")
-            elseif(position == CONSTANTS_API.TECH_TREE_POSITION.HASWEAPON) then
-                tankEntry.weaponProgress = v 
-            elseif(position == CONSTANTS_API.TECH_TREE_POSITION.HASARMOR) then
-                tankEntry.armorProgress = v
-            elseif(position == CONSTANTS_API.TECH_TREE_POSITION.HASENGINE) then
-                tankEntry.engineProgress = v
+
+    for x,skinEntries in pairs(dataTable) do
+        local skinEntryTable = UTIL_API.SplitStringIntoObjects(skinEntries, "/") -- separate into skin entries
+        local tankIDSkip = false
+        local tankID = nil
+        
+        for y,individualSkinEntry in pairs(skinEntryTable) do 
+        	
+            if tankID then
+            	local skinEntryData = UTIL_API.SplitStringIntoObjects(individualSkinEntry, "|") -- separate into the saved data of the skin entry
+            	local position = 1
+            	local skinID = nil
+            	
+            	for z, skinData in pairs(skinEntryData) do 
+        			if position == 1 then
+        				skinID = skinData
+        				camoTable[tankID][skinID] = {}
+        			elseif position == 2 then
+        				if tonumber(skinData) > 0 then
+        					camoTable[tankID][skinID].purchased = true
+        				else 
+        					camoTable[tankID][skinID].purchased = false
+        				end
+        			elseif position == 3 then
+          				if tonumber(skinData) > 0 then
+        					camoTable[tankID][skinID].equipped = true
+        				else 
+        					camoTable[tankID][skinID].equipped = false
+        				end      			
+        			end
+        			position = position + 1
+        		end
+            
             else
-                warn("Unable to parse data at position: " .. position)
+            	tankID = individualSkinEntry
+            	camoTable[tankID] = {}
             end
-            position = position + 1
-        end                
-        table.insert(progressionTable, tankEntry)
+        end
     end     
     
-    player.serverUserData.techTreeProgress = progressionTable
-   --UTIL_API.TablePrint(player.serverUserData.techTreeProgress)
+    player.serverUserData.camoData = camoTable
+   UTIL_API.TablePrint(player.serverUserData.camoData)
+end
+
+function ConvertSkinDataToString(player)
+	
+	local dataString = ""
+	
+	for tankID, skinData in pairs(player.serverUserData.camoData) do
+
+		dataString = dataString .. tankID
+		
+		for skinID, data in pairs(skinData) do
+			local purchased = "0"
+			local equipped = "0"
+			
+			if data.purchased then
+				purchased = "1"
+			end
+			
+			if data.equipped then
+				equipped = "1"
+			end
+			
+			dataString = dataString .. "/" .. skinID .. "|" .. purchased .. "|" .. equipped
+		end
+		
+		dataString = dataString .. ";"
+	end
+	
+	-- DEBUG
+	print("Saved Camo/Skins string: " .. dataString)
+	
+	return dataString
+
 end
 
 function Initialize()
@@ -104,6 +161,7 @@ function Initialize()
 			local skinEntry = {}
 			local skinID = skin:GetCustomProperty("SkinID")
 			
+			
 			skinEntry.cost = skin:GetCustomProperty("Cost")
 			skinEntry.resource = skin:GetCustomProperty("Resource")
 			skinEntry.enabled = skin:GetCustomProperty("Enabled")
@@ -114,9 +172,8 @@ function Initialize()
 	end
 
 end
---[[
+
 Initialize()
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-]]
