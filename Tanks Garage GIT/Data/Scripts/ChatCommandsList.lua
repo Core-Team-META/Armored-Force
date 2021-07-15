@@ -53,7 +53,7 @@ commands = {
         	
         	
         	
-        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /xp <tankID> <RPvalue>")
+        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /xp <tankID> <XPvalue>")
         end,
         OnCommandCalledServer = function (player, message)
         
@@ -67,8 +67,12 @@ commands = {
         		if number then
         		
         			if number > 0 and number < 33 then
-        		
-        				resourceFound = section
+        				
+        				if number < 10 and not string.find(section, "0") then
+        					resourceFound = "0" .. section
+        				else 
+        					resourceFound = section
+        				end
         				
         			elseif resourceFound then
         			
@@ -229,7 +233,7 @@ commands = {
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Unlock all tanks.",
+        description = "Lock all tanks.",
         requireMessage = false,
         adminOnly = false
     },
