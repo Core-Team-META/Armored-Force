@@ -50,17 +50,17 @@ function PurchaseConsumable(player, consumable)
 	end
 	
 	if not resourceOfConsumable then
-		print("Consumable not valid")
+		--print("Consumable not valid")
 		return
 	elseif cost > currentPlayerSilver then
-		print("Cannot afford consumable")
+		--print("Cannot afford consumable")
 		return
 	elseif currentCount >= maxCount then
-		print("Consumable at max count")
+		--print("Consumable at max count")
 		return
 	end
 	
-	print("adding comsumable")
+	--print("adding comsumable")
 	
 	player:AddResource(resourceOfConsumable, 1)
 	player:RemoveResource(CONSTANTS_API.SILVER, cost)
