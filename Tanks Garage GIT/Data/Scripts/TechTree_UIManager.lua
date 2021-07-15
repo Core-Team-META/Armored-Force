@@ -265,7 +265,7 @@ function PopulatePlayerPanel()
 	if shotsFired > 0 then
 		accuracyValue = shotsHit / shotsFired * 100
 	end
-	Accuracy.text = string.format("%f",accuracyValue) .. "%"
+	Accuracy.text = string.format("%.2f",accuracyValue) .. "%"
 	TanksDestroyed.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_KILLS))
 	
 	MoneyAmount.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER))
