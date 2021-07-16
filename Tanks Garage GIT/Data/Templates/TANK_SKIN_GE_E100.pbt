@@ -883,6 +883,7 @@ Assets {
           }
         }
         ParentId: 10858991801260467867
+        ChildIds: 13284353986910656576
         ChildIds: 16036409442687655516
         ChildIds: 5075474688996704116
         ChildIds: 10022974407730971224
@@ -906,6 +907,1217 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13284353986910656576
+        Name: "IgnoreGroup"
+        Transform {
+          Location {
+            X: 137.727554
+            Y: 19.9790421
+            Z: 24.9709206
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10529607113226174235
+        ChildIds: 13349753430632578891
+        ChildIds: 16270902823375844284
+        ChildIds: 3478098227373281123
+        ChildIds: 9356262863906891686
+        ChildIds: 1929126356841703278
+        ChildIds: 10936743758367360951
+        ChildIds: 16001874290320251373
+        ChildIds: 12799338330161882658
+        ChildIds: 1549699118533006564
+        ChildIds: 4860201755964901753
+        ChildIds: 2357449191588696778
+        ChildIds: 4663650409278852931
+        ChildIds: 10767172157563441450
+        ChildIds: 1680515041987259542
+        ChildIds: 39679909363379140
+        ChildIds: 4555255345105367187
+        ChildIds: 3614088931165335385
+        ChildIds: 8157251937773094330
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13349753430632578891
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: -593.017517
+            Y: 80.9008484
+          }
+          Rotation {
+            Pitch: 23.2212563
+          }
+          Scale {
+            X: 0.167457893
+            Y: 0.167457893
+            Z: 0.167457893
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 16270902823375844284
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: -593.017517
+            Y: -74.2668076
+          }
+          Rotation {
+            Pitch: 23.2212353
+          }
+          Scale {
+            X: 0.167457893
+            Y: 0.167457893
+            Z: 0.167457893
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3478098227373281123
+        Name: "Cylinder"
+        Transform {
+          Location {
+            X: 309.911377
+            Y: -194.277832
+            Z: 53.059021
+          }
+          Rotation {
+            Yaw: 89.6617355
+            Roll: 90.4141159
+          }
+          Scale {
+            X: 0.0497617275
+            Y: -0.0390984565
+            Z: 0.647499144
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.557000041
+              G: 0.417387813
+              B: 0.246751
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7177433471695729940
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1137112816547272582
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9356262863906891686
+        Name: "Fantasy Pommel 04"
+        Transform {
+          Location {
+            X: 340.251068
+            Y: -194.5289
+            Z: 54.0800972
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 14.0362635
+            Roll: -104.374542
+          }
+          Scale {
+            X: 0.0921454057
+            Y: 0.105717599
+            Z: 0.183420748
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3196588608655635314
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 1929126356841703278
+        Name: "Hatchet - Blade"
+        Transform {
+          Location {
+            X: 313.543488
+            Y: 195.628937
+            Z: 52.1278419
+          }
+          Rotation {
+            Pitch: 2.73074365
+            Yaw: -77.5562744
+            Roll: 89.7958755
+          }
+          Scale {
+            X: 1.48057461
+            Y: 1.48057461
+            Z: 1.48057461
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5692788368185141194
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4281380979366999084
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10936743758367360951
+        Name: "Baseball Bat"
+        Transform {
+          Location {
+            X: 222.327652
+            Y: 186.544159
+            Z: 52.8949318
+          }
+          Rotation {
+            Pitch: 9.16062164
+            Yaw: 92.3103638
+            Roll: -90.4534836
+          }
+          Scale {
+            X: 1.21679544
+            Y: 0.768645525
+            Z: 0.960951209
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7177433471695729940
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.558340609
+              G: 0.417885154
+              B: 0.246201396
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16801067998025151096
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 16001874290320251373
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -522.489807
+            Y: 146.520218
+            Z: 46.1797905
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322825
+            Y: 0.954503596
+            Z: 0.110018991
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12338587050614977044
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 12799338330161882658
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -522.489807
+            Y: 146.520218
+            Z: 45.437748
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322825
+            Y: 0.954503596
+            Z: 0.110018991
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 1549699118533006564
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -522.489807
+            Y: -143.679199
+            Z: 45.437748
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322885
+            Y: 0.954503715
+            Z: 0.110019
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4860201755964901753
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -522.489807
+            Y: -143.679199
+            Z: 46.1797905
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322885
+            Y: 0.954503715
+            Z: 0.110019
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12338587050614977044
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2357449191588696778
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: -423.180389
+            Y: -147.827072
+            Z: 56.1116905
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.816196442
+            Y: 0.8157022
+            Z: 0.173245564
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12338587050614977044
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4663650409278852931
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: -423.180389
+            Y: -147.827072
+            Z: 50.8790054
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.816196442
+            Y: 0.8157022
+            Z: 0.173245564
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10767172157563441450
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -338.677856
+            Y: -143.679199
+            Z: 50.5738182
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322825
+            Y: 0.954503596
+            Z: 0.110018991
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 1680515041987259542
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -338.677856
+            Y: -143.679199
+            Z: 51.3158607
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322825
+            Y: 0.954503596
+            Z: 0.110018991
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12338587050614977044
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 39679909363379140
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -338.67804
+            Y: 141.164063
+            Z: 50.5738182
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322766
+            Y: 0.954503536
+            Z: 0.110018991
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4555255345105367187
+        Name: "Plane 1m - One Sided"
+        Transform {
+          Location {
+            X: -338.67804
+            Y: 141.164063
+            Z: 51.3158607
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.518322766
+            Y: 0.954503536
+            Z: 0.110018991
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12338587050614977044
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4893467904009059928
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 3614088931165335385
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: -423.180389
+            Y: 146.692429
+            Z: 50.8790054
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.816196382
+            Y: 0.81570214
+            Z: 0.173245549
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 8157251937773094330
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: -423.180389
+            Y: 146.692429
+            Z: 56.1116905
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.816196382
+            Y: 0.81570214
+            Z: 0.173245549
+          }
+        }
+        ParentId: 13284353986910656576
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12338587050614977044
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -5541,8 +6753,6 @@ Assets {
           }
         }
         ParentId: 15737818746779790560
-        ChildIds: 1929126356841703278
-        ChildIds: 10936743758367360951
         ChildIds: 6035557736351344364
         ChildIds: 10327707373389610487
         Collidable_v2 {
@@ -5556,147 +6766,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 1929126356841703278
-        Name: "Hatchet - Blade"
-        Transform {
-          Location {
-            X: -58.8721
-            Y: -3.03644133
-            Z: 12.2439938
-          }
-          Rotation {
-            Pitch: -64.9668579
-            Yaw: 120.574471
-            Roll: 61.0334549
-          }
-          Scale {
-            X: 1.48057365
-            Y: 1.48057365
-            Z: 1.48057365
-          }
-        }
-        ParentId: 16333274025936744751
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4281380979366999084
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10936743758367360951
-        Name: "Baseball Bat"
-        Transform {
-          Location {
-            X: 32.3437614
-            Y: 0.66220969
-            Z: 3.91102767
-          }
-          Rotation {
-            Pitch: 79.804306
-            Yaw: -77.0066833
-            Roll: -78.0265808
-          }
-          Scale {
-            X: 1.21679461
-            Y: 0.768645048
-            Z: 0.960950553
-          }
-        }
-        ParentId: 16333274025936744751
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7177433471695729940
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.558340609
-              G: 0.417885154
-              B: 0.246201396
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 2
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16801067998025151096
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -5900,8 +6969,6 @@ Assets {
           }
         }
         ParentId: 15737818746779790560
-        ChildIds: 3478098227373281123
-        ChildIds: 9356262863906891686
         ChildIds: 6914867212685071002
         ChildIds: 9574359150069098961
         Collidable_v2 {
@@ -5915,143 +6982,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 3478098227373281123
-        Name: "Cylinder"
-        Transform {
-          Location {
-            X: 16.7301941
-            Y: 0.0952148438
-            Z: 4.44998169
-          }
-          Rotation {
-            Yaw: 90
-            Roll: 90.4141464
-          }
-          Scale {
-            X: 0.0657364354
-            Y: -0.0516500063
-            Z: 0.855361938
-          }
-        }
-        ParentId: 785373435506723264
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.557000041
-              G: 0.417387813
-              B: 0.246751
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7177433471695729940
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1137112816547272582
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 9356262863906891686
-        Name: "Fantasy Pommel 04"
-        Transform {
-          Location {
-            X: 56.8102341
-            Z: 5.79890394
-          }
-          Rotation {
-            Pitch: -90
-            Yaw: 5.71059704
-            Roll: -95.7105713
-          }
-          Scale {
-            X: 0.121726297
-            Y: 0.139655486
-            Z: 0.242303208
-          }
-        }
-        ParentId: 785373435506723264
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5692788368185141194
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3196588608655635314
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -6449,8 +7379,6 @@ Assets {
         }
         ParentId: 5371290783484517398
         ChildIds: 10403009643034578918
-        ChildIds: 8157251937773094330
-        ChildIds: 3614088931165335385
         ChildIds: 9962997731488673953
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6527,129 +7455,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 8157251937773094330
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 0.094671838
-            Z: 5.94037294
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.52546972
-            Y: 0.525151551
-            Z: 0.111536019
-          }
-        }
-        ParentId: 16469460829709854540
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12338587050614977044
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 3614088931165335385
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 0.094671838
-            Z: 2.57154441
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.52546972
-            Y: 0.525151551
-            Z: 0.111536019
-          }
-        }
-        ParentId: 16469460829709854540
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -6745,8 +7550,6 @@ Assets {
           }
         }
         ParentId: 5371290783484517398
-        ChildIds: 4555255345105367187
-        ChildIds: 39679909363379140
         ChildIds: 11793752497819860340
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6759,129 +7562,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 4555255345105367187
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 2.63622713
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 14304216627335546843
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12338587050614977044
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 39679909363379140
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 1.89418316
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 14304216627335546843
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -6971,8 +7651,6 @@ Assets {
           }
         }
         ParentId: 5371290783484517398
-        ChildIds: 1680515041987259542
-        ChildIds: 10767172157563441450
         ChildIds: 12975305165956584945
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6985,129 +7663,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 1680515041987259542
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 2.63622713
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 11798184731139485074
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12338587050614977044
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10767172157563441450
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 1.89418316
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 11798184731139485074
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -7198,8 +7753,6 @@ Assets {
         }
         ParentId: 5371290783484517398
         ChildIds: 16940971300379942659
-        ChildIds: 2357449191588696778
-        ChildIds: 4663650409278852931
         ChildIds: 3832056004791178831
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7276,129 +7829,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 2357449191588696778
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 0.094671838
-            Z: 5.94037294
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.52546972
-            Y: 0.525151551
-            Z: 0.111536019
-          }
-        }
-        ParentId: 1783214099869136445
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12338587050614977044
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4663650409278852931
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 0.094671838
-            Z: 2.57154441
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.52546972
-            Y: 0.525151551
-            Z: 0.111536019
-          }
-        }
-        ParentId: 1783214099869136445
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -7494,8 +7924,6 @@ Assets {
           }
         }
         ParentId: 5371290783484517398
-        ChildIds: 4860201755964901753
-        ChildIds: 1549699118533006564
         ChildIds: 18095150981832255796
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7508,129 +7936,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 4860201755964901753
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 2.63622713
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 16072303992794228124
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12338587050614977044
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 1549699118533006564
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 1.89418316
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 16072303992794228124
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -7720,8 +8025,6 @@ Assets {
           }
         }
         ParentId: 5371290783484517398
-        ChildIds: 16001874290320251373
-        ChildIds: 12799338330161882658
         ChildIds: 3383414285629360942
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7734,129 +8037,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 16001874290320251373
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 2.63622713
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 2611906824123935063
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12338587050614977044
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 12799338330161882658
-        Name: "Plane 1m - One Sided"
-        Transform {
-          Location {
-            Y: -0.000130598419
-            Z: 1.89418316
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.518322766
-            Y: 0.954503477
-            Z: 0.110018976
-          }
-        }
-        ParentId: 2611906824123935063
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4893467904009059928
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -7950,7 +8130,6 @@ Assets {
         ChildIds: 5419347209003514502
         ChildIds: 2088044609909235547
         ChildIds: 5281289752277020018
-        ChildIds: 13349753430632578891
         ChildIds: 15489028327089472193
         ChildIds: 2902572873105897155
         ChildIds: 15318252220368820266
@@ -8224,72 +8403,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 13349753430632578891
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 11.8344507
-            Y: 0.713983357
-            Z: 8.11815548
-          }
-          Rotation {
-            Pitch: 26.5989952
-          }
-          Scale {
-            X: 0.162735671
-            Y: 0.162735671
-            Z: 0.162735671
-          }
-        }
-        ParentId: 4093752146148908290
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -8716,7 +8829,6 @@ Assets {
         ChildIds: 10507994035344995671
         ChildIds: 2478705519896219689
         ChildIds: 7499911988882402316
-        ChildIds: 16270902823375844284
         ChildIds: 4948275259313665951
         ChildIds: 16964687530927382981
         ChildIds: 13932754075198303823
@@ -8990,72 +9102,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 16270902823375844284
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 11.8344507
-            Y: 0.713983357
-            Z: 8.11815548
-          }
-          Rotation {
-            Pitch: 26.5989952
-          }
-          Scale {
-            X: 0.162735671
-            Y: 0.162735671
-            Z: 0.162735671
-          }
-        }
-        ParentId: 4646321654103250844
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -13716,7 +13762,7 @@ Assets {
       }
       Objects {
         Id: 9699043204061664711
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: -21.2534866
@@ -16888,7 +16934,7 @@ Assets {
       }
       Objects {
         Id: 4605069896735141308
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: -21.2534847
@@ -20513,6 +20559,7 @@ Assets {
           }
         }
         ParentId: 13754998921990465897
+        ChildIds: 9092761133128889556
         ChildIds: 11024049631734073458
         ChildIds: 9396975340101701303
         ChildIds: 14185694885732728495
@@ -20528,6 +20575,100 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9092761133128889556
+        Name: "IgnoreGroup"
+        Transform {
+          Location {
+            X: -9.89213371
+            Y: -0.204974845
+            Z: 44.3076591
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5002093126969200164
+        ChildIds: 5083200235642169479
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5083200235642169479
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -51.5694199
+            Yaw: 89.9999542
+            Roll: -89.9999542
+          }
+          Scale {
+            X: 0.107575424
+            Y: 0.107577384
+            Z: 0.320784777
+          }
+        }
+        ParentId: 9092761133128889556
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -20808,7 +20949,6 @@ Assets {
         ParentId: 5002093126969200164
         ChildIds: 12047910779722242423
         ChildIds: 12226650062990339177
-        ChildIds: 5083200235642169479
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -20963,67 +21103,6 @@ Assets {
         }
       }
       Objects {
-        Id: 5083200235642169479
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 5.86011314
-            Z: 2.43671608
-          }
-          Rotation {
-            Pitch: -51.5694275
-            Yaw: 89.9999542
-            Roll: -89.999939
-          }
-          Scale {
-            X: 0.0940963402
-            Y: 0.0940980539
-            Z: 0.280590802
-          }
-        }
-        ParentId: 9476273045320245838
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 14387862759984884652
         Name: "Barrel"
         Transform {
@@ -21109,12 +21188,11 @@ Assets {
           }
         }
         ParentId: 14387862759984884652
+        ChildIds: 5889867310299214088
         ChildIds: 15867757100392528882
         ChildIds: 5463824470985777394
-        ChildIds: 9450262602117064942
         ChildIds: 504676476194412400
         ChildIds: 14636349810299440235
-        ChildIds: 225409661387246244
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21126,6 +21204,178 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5889867310299214088
+        Name: "IgnoreGroup"
+        Transform {
+          Location {
+            X: 30.3746529
+            Y: -0.0976825953
+            Z: 6.18071135e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4191698547129158822
+        ChildIds: 225409661387246244
+        ChildIds: 9450262602117064942
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 225409661387246244
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: 0.0554391034
+            Y: -0.000299670821
+            Z: -1.87294263e-05
+          }
+          Rotation {
+            Pitch: 51.5694
+            Yaw: -89.9999619
+            Roll: 89.9999619
+          }
+          Scale {
+            X: 0.184619442
+            Y: 0.184625268
+            Z: 0.420348
+          }
+        }
+        ParentId: 5889867310299214088
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9450262602117064942
+        Name: "Pipe"
+        Transform {
+          Location {
+            X: -0.0557387732
+            Y: 0.000299670821
+            Z: -1.87294263e-05
+          }
+          Rotation {
+            Pitch: -51.569313
+            Yaw: 89.9999084
+            Roll: -89.9998703
+          }
+          Scale {
+            X: 0.303223372
+            Y: 0.303212464
+            Z: 0.383836329
+          }
+        }
+        ParentId: 5889867310299214088
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12338587050614977044
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2
+              G: 1.37829804
+              B: 0.641925812
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.2
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4854270377050611262
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -21272,80 +21522,6 @@ Assets {
         }
       }
       Objects {
-        Id: 9450262602117064942
-        Name: "Pipe"
-        Transform {
-          Location {
-            X: 30.318985
-            Y: -0.0973529592
-            Z: 6.18071135e-05
-          }
-          Rotation {
-            Pitch: -51.5693207
-            Yaw: 89.9999237
-            Roll: -89.9998703
-          }
-          Scale {
-            X: 0.303223372
-            Y: 0.303212464
-            Z: 0.383836329
-          }
-        }
-        ParentId: 4191698547129158822
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12338587050614977044
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 2
-              G: 1.37829804
-              B: 0.641925812
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.2
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4854270377050611262
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 504676476194412400
         Name: "Pipe - Thick"
         Transform {
@@ -21478,68 +21654,6 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 225409661387246244
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 30.4303188
-            Y: -0.0980122387
-            Z: 6.18071135e-05
-          }
-          Rotation {
-            Pitch: 51.569416
-            Yaw: -89.9999847
-            Roll: 89.9999847
-          }
-          Scale {
-            X: 0.184619457
-            Y: 0.184625268
-            Z: 0.420348
-          }
-        }
-        ParentId: 4191698547129158822
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -22623,11 +22737,11 @@ Assets {
           }
         }
         ParentId: 9100510385136975802
+        ChildIds: 9254110435406436244
         ChildIds: 2246777658972341080
         ChildIds: 2171373347812709711
         ChildIds: 9181412140610065481
         ChildIds: 7661491708787984520
-        ChildIds: 17590788183376421681
         ChildIds: 15849909970771349194
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22640,6 +22754,329 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9254110435406436244
+        Name: "IgnoreGroup"
+        Transform {
+          Location {
+            X: -304.407959
+            Y: 29.7340374
+            Z: 109.373863
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2715362847343364139
+        ChildIds: 6772732324514197255
+        ChildIds: 10154607232898657471
+        ChildIds: 4153890321114715730
+        ChildIds: 17734942345410660233
+        ChildIds: 17590788183376421681
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 6772732324514197255
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            Z: -2.25088697e-05
+          }
+          Rotation {
+            Pitch: 69.7144089
+            Yaw: -6.64254242e-12
+            Roll: -3.92758e-12
+          }
+          Scale {
+            X: 0.0911001787
+            Y: 0.0911001787
+            Z: 0.0911001787
+          }
+        }
+        ParentId: 9254110435406436244
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10154607232898657471
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: 358.533173
+            Y: -104.530472
+            Z: 61.4045563
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 0.0650609285
+            Y: 0.0650609285
+            Z: 0.0650609285
+          }
+        }
+        ParentId: 9254110435406436244
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4153890321114715730
+        Name: "Pipe - Quarter Thin"
+        Transform {
+          Location {
+            X: 370.053558
+            Y: -58.0404701
+            Z: 62.7943878
+          }
+          Rotation {
+            Pitch: -16.4537601
+            Yaw: 136.214859
+            Roll: 16.9340725
+          }
+          Scale {
+            X: 0.181828633
+            Y: 0.195271254
+            Z: 0.134939328
+          }
+        }
+        ParentId: 9254110435406436244
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3180794530394243418
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.32
+              G: 0.32
+              B: 0.32
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5571206572552270378
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17734942345410660233
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: 358.533173
+            Y: 98.2362671
+            Z: 61.4045563
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 0.0650609285
+            Y: 0.0650609285
+            Z: 0.0650609285
+          }
+        }
+        ParentId: 9254110435406436244
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17590788183376421681
+        Name: "Plane Circle - One Sided"
+        Transform {
+          Location {
+            X: 451.049286
+            Y: -82.959053
+            Z: 0.692170262
+          }
+          Rotation {
+            Pitch: -52.3682442
+          }
+          Scale {
+            X: 0.191888139
+            Y: 0.0782106593
+            Z: 0.112065472
+          }
+        }
+        ParentId: 9254110435406436244
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1493619771870277314
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7900187111309595218
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
         }
       }
       Objects {
@@ -23097,7 +23534,6 @@ Assets {
         ChildIds: 9229300582779140692
         ChildIds: 6572230365371461683
         ChildIds: 15632788974942885983
-        ChildIds: 6772732324514197255
         ChildIds: 2524477323912957806
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23465,60 +23901,6 @@ Assets {
         }
       }
       Objects {
-        Id: 6772732324514197255
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: -9.53286
-            Y: 0.0134117156
-            Z: 11.3059416
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: 1.9318697e-05
-            Roll: 1.93186988e-05
-          }
-          Scale {
-            X: 0.0717247054
-            Y: 0.0717247054
-            Z: 0.0717247054
-          }
-        }
-        ParentId: 13855251780481640874
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 2524477323912957806
         Name: "Cube - Polished"
         Transform {
@@ -23613,8 +23995,6 @@ Assets {
         ChildIds: 12679701174707364147
         ChildIds: 11346303451247598656
         ChildIds: 1910038373307584685
-        ChildIds: 10154607232898657471
-        ChildIds: 17734942345410660233
         ChildIds: 7152647244626315808
         ChildIds: 102784883439222768
         Collidable_v2 {
@@ -23845,110 +24225,6 @@ Assets {
         }
       }
       Objects {
-        Id: 10154607232898657471
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 13.7256212
-            Y: -101.480148
-            Z: 5.9340229
-          }
-          Rotation {
-            Pitch: -90
-          }
-          Scale {
-            X: 0.0650609285
-            Y: 0.0650609285
-            Z: 0.0650609285
-          }
-        }
-        ParentId: 2038507610140727118
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 17734942345410660233
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 13.7256212
-            Y: 101.286819
-            Z: 5.9340229
-          }
-          Rotation {
-            Pitch: -90
-          }
-          Scale {
-            X: 0.0650609285
-            Y: 0.0650609285
-            Z: 0.0650609285
-          }
-        }
-        ParentId: 2038507610140727118
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 7152647244626315808
         Name: "Plane Circle - One Sided"
         Transform {
@@ -24109,7 +24385,6 @@ Assets {
           }
         }
         ParentId: 2246777658972341080
-        ChildIds: 4153890321114715730
         ChildIds: 13965465563268838947
         ChildIds: 14245549658176595777
         Collidable_v2 {
@@ -24123,68 +24398,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 4153890321114715730
-        Name: "Pipe - Quarter Thin"
-        Transform {
-          Location {
-            X: 11.9107456
-            Y: -0.0102060214
-            Z: 7.07263613
-          }
-          Rotation {
-            Pitch: -16.4537659
-            Yaw: 136.214859
-            Roll: 16.9340572
-          }
-          Scale {
-            X: 0.224863619
-            Y: 0.241487831
-            Z: 0.166876614
-          }
-        }
-        ParentId: 12291397410063121606
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3180794530394243418
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.32
-              G: 0.32
-              B: 0.32
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5571206572552270378
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -25830,72 +26043,6 @@ Assets {
         }
       }
       Objects {
-        Id: 17590788183376421681
-        Name: "Plane Circle - One Sided"
-        Transform {
-          Location {
-            X: 146.641281
-            Y: -53.2250366
-            Z: 110.066063
-          }
-          Rotation {
-            Pitch: -52.368248
-          }
-          Scale {
-            X: 0.191888139
-            Y: 0.0782106593
-            Z: 0.112065479
-          }
-        }
-        ParentId: 2715362847343364139
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 1493619771870277314
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.3
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7900187111309595218
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 15849909970771349194
         Name: "Plane Circle - One Sided"
         Transform {
@@ -26322,6 +26469,87 @@ Assets {
       }
     }
     Assets {
+      Id: 7900187111309595218
+      Name: "Plane Circle - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_circle_001"
+      }
+    }
+    Assets {
+      Id: 1137112816547272582
+      Name: "Cylinder"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_002"
+      }
+    }
+    Assets {
+      Id: 7177433471695729940
+      Name: "Bark Dead 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_bark_dead_001_uv"
+      }
+    }
+    Assets {
+      Id: 3196588608655635314
+      Name: "Prism - 8-Sided Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prism_octagon_hq_001"
+      }
+    }
+    Assets {
+      Id: 5692788368185141194
+      Name: "Metal Iron 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_001"
+      }
+    }
+    Assets {
+      Id: 4281380979366999084
+      Name: "Hatchet - Blade"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_modern_axe_001"
+      }
+    }
+    Assets {
+      Id: 16801067998025151096
+      Name: "Baseball Bat"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_modern_bat_001"
+      }
+    }
+    Assets {
+      Id: 4893467904009059928
+      Name: "Plane 1m - One Sided"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_plane_1m_001"
+      }
+    }
+    Assets {
+      Id: 12338587050614977044
+      Name: "Metal Grates 03"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_scf_grates_006_uv"
+      }
+    }
+    Assets {
       Id: 11242933075375658963
       Name: "Military Tank Historic Hull 01 - Front"
       PlatformAssetType: 1
@@ -26412,15 +26640,6 @@ Assets {
       }
     }
     Assets {
-      Id: 1137112816547272582
-      Name: "Cylinder"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_002"
-      }
-    }
-    Assets {
       Id: 8264236312157117638
       Name: "Pipe - 90-Degree Long"
       PlatformAssetType: 1
@@ -26475,57 +26694,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4281380979366999084
-      Name: "Hatchet - Blade"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_axe_001"
-      }
-    }
-    Assets {
-      Id: 5692788368185141194
-      Name: "Metal Iron 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_iron_001"
-      }
-    }
-    Assets {
-      Id: 16801067998025151096
-      Name: "Baseball Bat"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_bat_001"
-      }
-    }
-    Assets {
-      Id: 7177433471695729940
-      Name: "Bark Dead 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_bark_dead_001_uv"
-      }
-    }
-    Assets {
       Id: 17814718521639562316
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_shield_strap_001"
-      }
-    }
-    Assets {
-      Id: 3196588608655635314
-      Name: "Prism - 8-Sided Polished"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prism_octagon_hq_001"
       }
     }
     Assets {
@@ -26553,33 +26727,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cone_truncated_hollow_006"
-      }
-    }
-    Assets {
-      Id: 7900187111309595218
-      Name: "Plane Circle - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_circle_001"
-      }
-    }
-    Assets {
-      Id: 12338587050614977044
-      Name: "Metal Grates 03"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_scf_grates_006_uv"
-      }
-    }
-    Assets {
-      Id: 4893467904009059928
-      Name: "Plane 1m - One Sided"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_plane_1m_001"
       }
     }
     Assets {
@@ -26925,6 +27072,15 @@ Assets {
       }
     }
     Assets {
+      Id: 5571206572552270378
+      Name: "Pipe - Quarter Thin"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_quarter-pipe_002"
+      }
+    }
+    Assets {
       Id: 7485085632274293435
       Name: "Decal Military Symbols 02"
       PlatformAssetType: 14
@@ -26970,15 +27126,6 @@ Assets {
       }
     }
     Assets {
-      Id: 5571206572552270378
-      Name: "Pipe - Quarter Thin"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_quarter-pipe_002"
-      }
-    }
-    Assets {
       Id: 10126871160743796714
       Name: "Ring - Beveled Thick"
       PlatformAssetType: 1
@@ -27019,5 +27166,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 93
 }
