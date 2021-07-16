@@ -28,7 +28,7 @@ end
 
 function PurchaseConsumable(player, consumable)
 
-	print(consumable)
+	--print(consumable)
 	
 	local currentPlayerSilver = player:GetResource(CONSTANTS_API.SILVER)
 	local cost = consumableCost[consumable]	
@@ -59,18 +59,17 @@ function PurchaseConsumable(player, consumable)
 		--print("Consumable at max count")
 		return
 	end
-	
-	--print("adding comsumable")
-	
-	player:AddResource(resourceOfConsumable, 1)
-	player:RemoveResource(CONSTANTS_API.SILVER, cost)
-	
+
+	if cost <= currentPlayerSilver and currentCount < maxCount then
+		player:AddResource(resourceOfConsumable, 1)
+		player:RemoveResource(CONSTANTS_API.SILVER, cost)
+	end	
 end
 
 function SetAutoPurchase(player, consumable)
 
 	print(consumable)
-	
+
 	local currentPlayerSilver = player:GetResource(CONSTANTS_API.SILVER)
 	local cost = consumableCost[consumable]	
 	local resourceOfConsumable = nil
@@ -90,15 +89,12 @@ function SetAutoPurchase(player, consumable)
 	end
 	
 	local originalSetting = player:GetResource(resourceOfConsumable)
+
+	print(originalSetting)
 	
 	if originalSetting <= 0 then
 		player:SetResource(resourceOfConsumable, 1)
 		PurchaseConsumable(player, consumable)
-		
-		if cost <= currentPlayerSilver or player:GetResource(resourceOfConsumable) < maxCount then
-			player:AddResource(resourceOfConsumable, 1)
-			player:RemoveResource(CONSTANTS_API.SILVER, cost)
-		end
 	else 
 		player:SetResource(resourceOfConsumable, 0)
 	end
