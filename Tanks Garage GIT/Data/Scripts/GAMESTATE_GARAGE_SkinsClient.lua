@@ -1,3 +1,8 @@
+local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
+
+local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
+
 local individualSkinInfo = script:GetCustomProperty("Skins_Individual"):WaitForObject()
 local universalSkinInfo = script:GetCustomProperty("Skins_Universal"):WaitForObject()
 
@@ -70,6 +75,76 @@ function OnBindingPressed(player, binding)
 
 end
 
+function RetrieveData()
+
+	while true do
+	
+		Task.Wait(0.1)
+		
+	    for k,child in ipairs(DATA_TRANSFER:GetChildren()) do
+	        if(child:GetCustomProperty("OwnerId") == localPlayer.id) then
+	        
+	        	local dataString = child:GetCustomProperty("Data")
+	        	
+	        	-- DEBUG
+	        	-- print("Got data string: " .. dataString)
+	        	
+	        	SetTankSkinDataForClient(dataString)
+	        
+	            return
+	        end
+	    end
+	end
+end
+
+function SetTankSkinDataForClient(dataString)
+
+	local dataTable = UTIL_API.SplitStringIntoObjects(dataString, ";") -- separate into tank segments   
+
+    for x,skinEntries in pairs(dataTable) do
+        local skinEntryTable = UTIL_API.SplitStringIntoObjects(skinEntries, "/") -- separate into skin entries
+        local tankIDSkip = false
+        local tankID = nil
+        
+        for y,individualSkinEntry in pairs(skinEntryTable) do 
+        	
+            if tankID then
+            	local skinEntryData = UTIL_API.SplitStringIntoObjects(individualSkinEntry, "|") -- separate into the saved data of the skin entry
+            	local position = 1
+            	local skinID = nil
+            	
+            	for z, skinData in pairs(skinEntryData) do 
+        			if position == 1 then
+        				skinID = skinData
+        				
+        				if not allIndividualSkins[tankID] or not allIndividualSkins[tankID][skinID] then
+        					break
+        				end
+        				
+        			elseif position == 2 then
+        				if tonumber(skinData) > 0 then
+        					allIndividualSkins[tankID][skinID].purchased = true
+        				else 
+        					allIndividualSkins[tankID][skinID].purchased = false
+        				end
+        			elseif position == 3 then
+          				if tonumber(skinData) > 0 then
+        					allIndividualSkins[tankID][skinID].equipped = true
+        				else 
+        					allIndividualSkins[tankID][skinID].equipped = false
+        				end      			
+        			end
+        			position = position + 1
+        		end
+        	else 
+        		tankID = individualSkinEntry
+            end
+        end
+    end     
+    
+   	--UTIL_API.TablePrint(allIndividualSkins)
+end
+
 function Initialize()
 
 	local individualSkinGroups = individualSkinInfo:GetChildren()
@@ -104,5 +179,6 @@ function Initialize()
 end
 
 Initialize()
+RetrieveData()
 
 localPlayer.bindingPressedEvent:Connect(OnBindingPressed)

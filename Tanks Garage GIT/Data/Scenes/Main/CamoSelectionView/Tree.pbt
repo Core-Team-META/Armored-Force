@@ -16,6 +16,7 @@ Objects {
   }
   ParentId: 16175003310112352478
   ChildIds: 4220144541678378015
+  ChildIds: 16381132896457829381
   ChildIds: 9524975357084448244
   ChildIds: 17506603784249648358
   Collidable_v2 {
@@ -1061,6 +1062,18 @@ Objects {
   ParentId: 9524975357084448244
   UnregisteredParameters {
     Overrides {
+      Name: "cs:MetaAbilityProgressionConstants_API"
+      AssetReference {
+        Id: 15718075383189814537
+      }
+    }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
+    Overrides {
       Name: "cs:Skins_Individual"
       ObjectReference {
         SelfId: 16763584839463712172
@@ -1070,6 +1083,12 @@ Objects {
       Name: "cs:Skins_Universal"
       ObjectReference {
         SelfId: 2421382352112058609
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransfer"
+      ObjectReference {
+        SelfId: 16381132896457829381
       }
     }
   }
@@ -1089,6 +1108,35 @@ Objects {
     ScriptAsset {
       Id: 2896591224378290973
     }
+  }
+}
+Objects {
+  Id: 16381132896457829381
+  Name: "DataTransfer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14291081844228980758
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
@@ -1135,6 +1183,18 @@ Objects {
       Name: "cs:Skins_Universal"
       ObjectReference {
         SelfId: 2421382352112058609
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransfer"
+      ObjectReference {
+        SelfId: 16381132896457829381
+      }
+    }
+    Overrides {
+      Name: "cs:DataTransferObject"
+      AssetReference {
+        Id: 226768975638950587
       }
     }
   }
