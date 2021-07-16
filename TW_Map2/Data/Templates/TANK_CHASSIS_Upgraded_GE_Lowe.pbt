@@ -64,6 +64,7 @@ Assets {
             Z: 20
           }
           GravityScale: 1
+          CoastBrakeStrength: 65.6
           Tank {
             LeftTreadRadius: 90
             LeftTreadWidth: 135
@@ -92,5 +93,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 93
 }

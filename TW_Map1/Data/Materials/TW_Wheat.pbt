@@ -2,7 +2,7 @@ Assets {
   Id: 4555802358449462110
   Name: "TW_Wheat"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 93
   CustomMaterialAsset {
     BaseMaterialId: 12223811200745286487
     ParameterOverrides {

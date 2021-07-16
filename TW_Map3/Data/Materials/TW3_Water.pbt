@@ -2,7 +2,7 @@ Assets {
   Id: 18168970011809872138
   Name: "TW3_Water"
   PlatformAssetType: 13
-  SerializationVersion: 87
+  SerializationVersion: 93
   CustomMaterialAsset {
     BaseMaterialId: 95563910293771105
     ParameterOverrides {

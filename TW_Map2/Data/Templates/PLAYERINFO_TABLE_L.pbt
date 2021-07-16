@@ -536,6 +536,10 @@ Assets {
               A: 0.509
             }
             Percent: 0.624834895
+            FillBrush {
+            }
+            BackgroundBrush {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -596,6 +600,10 @@ Assets {
               A: 0.509
             }
             Percent: 1
+            FillBrush {
+            }
+            BackgroundBrush {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -776,5 +784,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 93
 }
