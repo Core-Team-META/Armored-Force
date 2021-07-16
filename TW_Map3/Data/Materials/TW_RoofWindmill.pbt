@@ -2,7 +2,7 @@ Assets {
   Id: 14595513663479660720
   Name: "TW_RoofWindmill"
   PlatformAssetType: 13
-  SerializationVersion: 87
+  SerializationVersion: 93
   CustomMaterialAsset {
     BaseMaterialId: 6003598145742136050
     ParameterOverrides {
