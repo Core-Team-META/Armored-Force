@@ -2,7 +2,7 @@ Assets {
   Id: 7360602162123997816
   Name: "TW_Roof"
   PlatformAssetType: 13
-  SerializationVersion: 87
+  SerializationVersion: 93
   CustomMaterialAsset {
     BaseMaterialId: 6003598145742136050
     ParameterOverrides {

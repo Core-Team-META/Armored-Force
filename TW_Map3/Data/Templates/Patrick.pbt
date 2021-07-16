@@ -144,6 +144,38 @@ Assets {
                 HighDistance: 9000
               }
             }
+            VoiceChatSettings {
+              VoiceChatMode {
+                Value: "mc:evoicechatmode:none"
+              }
+              VoiceChannelType {
+                Value: "mc:evoicechanneltype:normal"
+              }
+              AudibleDistance: 6000
+              ConversationalDistance: 1500
+              AudioFadeModel {
+                Value: "mc:evoiceaudiofademodel:inverse"
+              }
+              AudioFadeIntensityByDistance: 1
+              VoiceChatPosition {
+                X: -40
+                Y: 40
+              }
+              VoiceChatHorizontalAlignment {
+                Value: "mc:ecorehorizontalalign:right"
+              }
+              VoiceChatVerticalAlignment {
+                Value: "mc:ecoreverticalalign:top"
+              }
+              VoiceChatEntryHorizontalFlow {
+                Value: "mc:ecorehorizontalflow:righttoleft"
+              }
+              VoiceChatEntryVerticalFlow {
+                Value: "mc:ecoreverticalflow:toptobottom"
+              }
+            }
+            PlayerInteractDistance: 500
+            PlayerInteractAngleDeg: 50
           }
         }
       }
@@ -178,6 +210,7 @@ Assets {
             RespawnMode_v2 {
               Value: "mc:erespawnmode:roundrobin"
             }
+            StartSpawned: true
           }
         }
       }
@@ -740,6 +773,10 @@ Assets {
               G: 0.5
               B: 0.5
               A: 1
+            }
+            FillBrush {
+            }
+            BackgroundBrush {
             }
           }
           AnchorLayout {
@@ -16169,6 +16206,10 @@ Assets {
               B: 1
               A: 1
             }
+            FillBrush {
+            }
+            BackgroundBrush {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -16353,6 +16394,10 @@ Assets {
               G: 1
               B: 1
               A: 1
+            }
+            FillBrush {
+            }
+            BackgroundBrush {
             }
           }
           AnchorLayout {
@@ -25852,5 +25897,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 87
+  SerializationVersion: 93
 }
