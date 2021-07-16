@@ -2,7 +2,7 @@ Assets {
   Id: 3038176905818941505
   Name: "TW3_Woodplanks"
   PlatformAssetType: 13
-  SerializationVersion: 87
+  SerializationVersion: 93
   CustomMaterialAsset {
     BaseMaterialId: 6947005568715944180
     ParameterOverrides {
