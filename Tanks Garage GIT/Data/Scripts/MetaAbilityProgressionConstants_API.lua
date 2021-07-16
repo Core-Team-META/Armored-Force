@@ -127,7 +127,7 @@ API.COMBAT_STATS = {
 
 API.CURRENCY = {
     [1] = "Silver",
-    [2] = "Free RP",
+    [2] = "Free XP",
     [3] = "Gold",
     [4] = "XP"
 }
