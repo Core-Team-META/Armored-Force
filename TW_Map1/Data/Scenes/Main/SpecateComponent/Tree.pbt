@@ -99,6 +99,10 @@ Objects {
       String: "ability_extra_35"
     }
     Overrides {
+      Name: "cs:B_Requeue"
+      String: "ability_extra_34"
+    }
+    Overrides {
       Name: "cs:FreecamEnabled:tooltip"
       String: "Dictates if toggling freecam is enabled or disabled"
     }
@@ -7394,7 +7398,7 @@ Objects {
 }
 Objects {
   Id: 2392631367283647918
-  Name: "H"
+  Name: "G"
   Transform {
     Location {
     }
@@ -7480,7 +7484,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "H"
+      Label: "G"
       Color {
         R: 0.623
         G: 0.623
@@ -7555,7 +7559,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "H"
+      Label: "G"
       Color {
         R: 0.522
         G: 0.522
