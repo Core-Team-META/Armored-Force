@@ -7,8 +7,8 @@ Tags: "Experimental"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_9\\Screenshots\\1bundle_captain_2.jpg"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_9\\Screenshots\\2bundle_general_2.jpg"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_9\\Screenshots\\3conversion3_2.jpg"
-ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_9\\Screenshots\\4grid_global.png"
-ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_9\\Screenshots\\5grid_unique.png"
+ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_9\\Screenshots\\4grid_global1.png"
+ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_9\\Screenshots\\5grid_unique1.png"
 OwnerId: "b8b517de85454ed0bd1806043717f889"
 SerializationVersion: 1
 SceneNameToSceneIdMap {
