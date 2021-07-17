@@ -86,7 +86,53 @@ commands = {
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Set the XP resource of a tank. Format: /xp <tankID> <RPvalue>",
+        description = "Set the XP resource of a tank. Format: /xp <tankID> <XPvalue>",
+        requireMessage = false,
+        adminOnly = false
+    },
+    
+    ["/freexp"] = {
+        OnCommandCalledClient = function (player, message)
+        
+        	local number = nil
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+        	
+        		number = tonumber(section)
+        	
+        		if number then
+        		        				
+        			Chat.LocalMessage("Setting FreeXP resource to " .. tostring(number))
+        				
+        			return
+        		
+        		end
+        	
+        	end
+        	
+        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /freexp <XPvalue>")
+        end,
+        OnCommandCalledServer = function (player, message)
+        
+        	local number = nil
+        	
+        	for section in (message.." "):gmatch("(.-) ") do
+        	
+        		number = tonumber(section)
+        	
+        		if number then
+        		        			
+        			player:SetResource("Free XP", number)
+        			
+        			return
+        		
+        		end
+        	
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "Set the Free XP resource. Format: /freexp <XPvalue>",
         requireMessage = false,
         adminOnly = false
     },

@@ -62,6 +62,7 @@ local BINDING_NEXT_PLAYER_1 = RootGroup:GetCustomProperty("B_NextPlayer_1")
 local BINDING_NEXT_PLAYER_2 = RootGroup:GetCustomProperty("B_NextPlayer_2")
 local BINDING_NEXT_PLAYER_3 = RootGroup:GetCustomProperty("B_NextPlayer_3")
 local BINDING_RETURN_TO_GARAGE = RootGroup:GetCustomProperty("B_ReturnToGarage")
+local BINDING_REQUEUE = RootGroup:GetCustomProperty("B_Requeue")
 
 ------------------------------------------------------------------------------------------------------------------------
 --	INITIAL VARIABLES
@@ -228,7 +229,7 @@ end
 local function OnBindingReleased(player, binding)
 	bindingsPressed[binding] = false
 
-	if(binding == BINDING_RETURN_TO_GARAGE and GAMESTATE_MainGameStateManagerServer:GetCustomProperty("GameState") ~= "LOBBY_STATE") then
+	if((binding == BINDING_RETURN_TO_GARAGE or binding == BINDING_REQUEUE) and GAMESTATE_MainGameStateManagerServer:GetCustomProperty("GameState") ~= "LOBBY_STATE") then
 		-- Calculate earnings for leaving. When leaving, we assume a draw for consistent earnings
 		local maxAwardXP = GAMESTATE_StatisticsComponent:GetCustomProperty("DrawXPValue")
 		local maxMatchDuration = settings:GetCustomProperty("MatchMaxDuration")
