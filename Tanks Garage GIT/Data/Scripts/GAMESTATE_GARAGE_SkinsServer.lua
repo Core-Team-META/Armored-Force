@@ -4,6 +4,9 @@ local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_AP
 local KEYS = script:GetCustomProperty("Keys"):WaitForObject()
 local PLAYER_SHARED_STORAGE = KEYS:GetCustomProperty("Skins")
 
+local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
+local DATA_TRANSFER_OBJECT = script:GetCustomProperty("DataTransferObject")
+
 local individualSkinInfo = script:GetCustomProperty("Skins_Individual"):WaitForObject()
 local universalSkinInfo = script:GetCustomProperty("Skins_Universal"):WaitForObject()
 
@@ -25,6 +28,10 @@ function OnPlayerJoined(player)
 	--print("Player current String: " .. playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL])
 	
 	SetTankSkinDataForServer(playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL], player)
+	
+	local dataTransferObject = World.SpawnAsset(DATA_TRANSFER_OBJECT, {parent = DATA_TRANSFER})
+    dataTransferObject:SetNetworkedCustomProperty("OwnerId", player.id)
+    dataTransferObject:SetNetworkedCustomProperty("Data", playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL])
 	
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 end
