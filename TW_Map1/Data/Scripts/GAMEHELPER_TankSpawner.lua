@@ -97,6 +97,39 @@ function GivePlayerEquipment(player)
 	
 end
 
+
+function SpawnAITank(position)
+	print("Spawning an AI tank...")
+	--player.isVisible = false
+	
+	local currentState = mainManagerServer:GetCustomProperty("GameState")
+	--GivePlayerEquipment(player)
+
+	--local resourceID =  player:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	local resourceID = 0
+	local id = tostring(resourceID)
+	
+	if resourceID < 10 then
+		id = "0" .. tostring(resourceID)
+	end
+	
+	local newAI = {
+		GetHealth = function() return 100 end,
+		GetWorldPosition = function() return position end,
+		GetWorldRotation = function() return Rotation.New() end,
+		serverUserData = {},
+	}
+	local playerPosition = position
+	local playerRotation = Rotation.New()
+	equippedTank[newAI] = World.SpawnAsset(GetEquippedTankTemplate(nil, -1), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
+	print("spawned", equippedTank[newAI])
+	Task.Wait(0.1)
+	equippedTank[newAI].context.AssignDriver(newAI, true)
+	
+
+end
+
+
 -- nil RemovePlayerEquipment(Player)
 -- Removes the referenced requipment if that player has it
 function RemovePlayerEquipment(player)
@@ -113,6 +146,8 @@ end
 function OnPlayerJoined(player)
 
 	player.spawnedEvent:Connect(OnPlayerRespawned)
+
+	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000))
 	
 end
 

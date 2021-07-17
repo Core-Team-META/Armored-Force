@@ -59,6 +59,7 @@ local destroyedTank = nil
 
 -- Player Reference
 local driver = nil
+local isAI = false
 
 -- Additional Local Variables
 local originalSpeed = 0
@@ -81,6 +82,8 @@ local diedEventListener = nil
 local destroyedListener = nil
 local consumableListener = nil
 local armorImpactListeners = {}
+
+print("aaaaaaaaaaaaa")
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -117,17 +120,24 @@ function GetDriver()
 
 end
 
-function AssignDriver(newDriver)
+function AssignDriver(newDriver, _isAI)
+	isAI = _isAI or false
+	print("assigning a driver.  AI?", isAI)
 
-	if Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player") then
+	if (not isAI) and (Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player")) then
+		print("returning")
 		return
 	end
 	
-	script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 150)
-	script:SetWorldRotation(newDriver:GetWorldRotation())
+	if not isAI then
+		script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 150)
+		script:SetWorldRotation(newDriver:GetWorldRotation())
+	end
 	driver = newDriver
 	
+	print("Checkpoint 1", isAI)
 	SetTankModifications()
+	print("Checkpoint 2", isAI)
 	
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
@@ -145,9 +155,13 @@ function AssignDriver(newDriver)
 	chassis:SetWorldRotation(script:GetWorldRotation())
 	
 	Task.Wait()
-	
-	chassis:SetDriver(driver)
-	
+	print("Checkpoint 3", isAI)
+
+	if not isAI then
+		chassis:SetDriver(driver)
+	end
+	print("Checkpoint 4", isAI)
+
 	originalSpeed = chassis.maxSpeed
 	originalFriction = chassis.tireFriction
 	chassis.tireFriction = chassis.tireFriction
@@ -157,7 +171,8 @@ function AssignDriver(newDriver)
 	if chassis.type == "TreadedVehicle" then
 		originalTurnSpeed = chassis.turnSpeed
 	end
-	
+	print("Checkpoint 5", isAI)
+
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.1})
 	turret = hitbox:FindDescendantByName("Turret")
 	cannon = hitbox:FindDescendantByName("Cannon")
@@ -170,8 +185,11 @@ function AssignDriver(newDriver)
 	driver.isVisible = false
 	
 	Task.Wait(0.1)
-	
-	driver:AttachToCoreObject(turret)
+	print("Checkpoint 6", isAI)
+
+	if not isAI then
+		driver:AttachToCoreObject(turret)
+	end
 	
 	hitbox:SetPosition(Vector3.ZERO)
 	
@@ -180,20 +198,28 @@ function AssignDriver(newDriver)
 	end
 	
 	cannonGuide:LookAtContinuous(target, false)
-	
+	print("Checkpoint 7", isAI)
+
 	script:SetNetworkedCustomProperty("ChassisReference", chassis)
 	script:SetNetworkedCustomProperty("HitboxReference", hitbox)
-	script:SetNetworkedCustomProperty("DriverID", driver.id)
+	if not isAI then
+		script:SetNetworkedCustomProperty("DriverID", driver.id)
+	else
+		script:SetNetworkedCustomProperty("DriverID", "AI_DRIVER")
+	end
 	
 	for _, t in pairs(hitbox:FindDescendantsByType("Trigger")) do
 	 	armorImpactListeners[t] = t.beginOverlapEvent:Connect(OnArmorHit)
 	end
+	print("Checkpoint 8", isAI)
 	
-	bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
-	diedEventListener = driver.diedEvent:Connect(OnDeath)
-	consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
+	if not isAI then
+		bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
+		diedEventListener = driver.diedEvent:Connect(OnDeath)
+		consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
+	end
 	Task.Wait()
-	
+	print("Setting tank ready!")
 	script:SetNetworkedCustomProperty("TankReady", true)
 	
 	SetServerData()
@@ -226,22 +252,26 @@ function SetTankModifications()
 	
 	local modifications = nil
 
-	if driver.serverUserData.techTreeProgress then
-		for x, entry in ipairs(driver.serverUserData.techTreeProgress) do
-			if entry.id == identifier then
-				modifications = {tonumber(entry.weaponProgress), tonumber(entry.armorProgress), tonumber(entry.engineProgress)}
+	if isAI then
+		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+	else
+		if driver.serverUserData.techTreeProgress then
+			for x, entry in ipairs(driver.serverUserData.techTreeProgress) do
+				if entry.id == identifier then
+					modifications = {tonumber(entry.weaponProgress), tonumber(entry.armorProgress), tonumber(entry.engineProgress)}
+				end
 			end
 		end
-	end
 
-	if not modifications then
-		warn("COULD NOT FIND TANK ID " .. identifier)
-		modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
-	end
+		if not modifications then
+			warn("COULD NOT FIND TANK ID " .. identifier)
+			modifications = {0, 0, 0} -- 2, 2, 2 \ 0, 0, 0
+		end
 	
-	if driver.serverUserData.TankUpgradeOverride and #driver.serverUserData.TankUpgradeOverride > 0 then
-		--print("Overriding tank upgrades")
-		modifications = driver.serverUserData.TankUpgradeOverride 
+		if driver.serverUserData.TankUpgradeOverride and #driver.serverUserData.TankUpgradeOverride > 0 then
+			--print("Overriding tank upgrades")
+			modifications = driver.serverUserData.TankUpgradeOverride 
+		end
 	end
 	
 	if modifications[1] == 2 then
