@@ -5678,7 +5678,7 @@ Assets {
         Transform {
           Location {
             X: -25.0893555
-            Y: -8.11914063
+            Y: -8.11914062
             Z: 9.82951355
           }
           Rotation {
@@ -6273,7 +6273,7 @@ Assets {
           Rotation {
             Pitch: -90
             Yaw: 5.46415104e-05
-            Roll: 6.10351563e-05
+            Roll: 6.10351562e-05
           }
           Scale {
             X: 0.5348894
@@ -6731,7 +6731,7 @@ Assets {
         Name: "Prism - 8-Sided Polished"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 19.1904297
             Z: -1.09657288
           }
@@ -6803,7 +6803,7 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: -26.1870117
             Z: 33.3322449
           }
@@ -9617,7 +9617,7 @@ Assets {
         Transform {
           Location {
             X: -80.8822632
-            Y: -212.382813
+            Y: -212.382812
             Z: 16.8495636
           }
           Rotation {
@@ -11256,7 +11256,7 @@ Assets {
           Rotation {
             Pitch: -27.9698181
             Yaw: 61.8177032
-            Roll: -89.7382813
+            Roll: -89.7382812
           }
           Scale {
             X: 0.349086046
@@ -28368,7 +28368,7 @@ Assets {
         Transform {
           Location {
             X: -67.083252
-            Y: 70.2539063
+            Y: 70.2539062
             Z: 108.034332
           }
           Rotation {
@@ -31333,5 +31333,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

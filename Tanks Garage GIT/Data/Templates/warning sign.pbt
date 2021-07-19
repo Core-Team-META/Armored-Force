@@ -612,7 +612,7 @@ Assets {
         Name: "Street Sign - Rectangle"
         Transform {
           Location {
-            X: 0.661132813
+            X: 0.661132812
             Y: -4.68505859
             Z: 107.681488
           }
@@ -2582,5 +2582,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

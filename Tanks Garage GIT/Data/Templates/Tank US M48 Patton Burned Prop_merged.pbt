@@ -1440,7 +1440,7 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: -81.6757813
+            X: -81.6757812
             Y: 93.2890625
             Z: 482.802734
           }
@@ -2658,7 +2658,7 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 170.007813
+            X: 170.007812
             Y: 171.240234
             Z: 362.014404
           }
@@ -4201,7 +4201,7 @@ Assets {
         Transform {
           Location {
             X: -246.343079
-            Y: 80.8945313
+            Y: 80.8945312
             Z: 345.589722
           }
           Rotation {
@@ -4497,7 +4497,7 @@ Assets {
         Transform {
           Location {
             X: -228.661102
-            Y: 36.3789063
+            Y: 36.3789062
             Z: 344.791595
           }
           Rotation {
@@ -4941,7 +4941,7 @@ Assets {
         Transform {
           Location {
             X: -245.321198
-            Y: 80.8945313
+            Y: 80.8945312
             Z: 368.249786
           }
           Rotation {
@@ -5311,7 +5311,7 @@ Assets {
         Transform {
           Location {
             X: -244.256836
-            Y: 80.8945313
+            Y: 80.8945312
             Z: 391.821747
           }
           Rotation {
@@ -5829,7 +5829,7 @@ Assets {
         Transform {
           Location {
             X: -252.938019
-            Y: -11.8476563
+            Y: -11.8476562
             Z: 369.104675
           }
           Rotation {
@@ -6278,7 +6278,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -31.3007813
+            X: -31.3007812
             Y: 194.801758
             Z: 398.36377
           }
@@ -8017,7 +8017,7 @@ Assets {
         Transform {
           Location {
             X: 270.269806
-            Y: -14.0664063
+            Y: -14.0664062
             Z: 352.772156
           }
           Rotation {
@@ -8904,7 +8904,7 @@ Assets {
         Transform {
           Location {
             X: 131.904037
-            Y: -0.157226563
+            Y: -0.157226562
             Z: 163.055695
           }
           Rotation {
@@ -8968,7 +8968,7 @@ Assets {
         Transform {
           Location {
             X: 131.921234
-            Y: -0.157226563
+            Y: -0.157226562
             Z: 163.426666
           }
           Rotation {
@@ -9034,7 +9034,7 @@ Assets {
         Transform {
           Location {
             X: 232.53833
-            Y: 3.19726563
+            Y: 3.19726562
             Z: 157.206711
           }
           Rotation {
@@ -9108,7 +9108,7 @@ Assets {
         Transform {
           Location {
             X: 232.767578
-            Y: 4.92382813
+            Y: 4.92382812
             Z: 157.196655
           }
           Rotation {
@@ -11014,7 +11014,7 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 305.195313
+            X: 305.195312
             Y: -121.796875
             Z: 229.754639
           }
@@ -11163,7 +11163,7 @@ Assets {
         Transform {
           Location {
             X: 268.802795
-            Y: -0.157226563
+            Y: -0.157226562
             Z: 274.056885
           }
           Rotation {
@@ -11587,7 +11587,7 @@ Assets {
         Transform {
           Location {
             X: 284.419556
-            Y: 54.5039063
+            Y: 54.5039062
             Z: 275.780457
           }
           Rotation {
@@ -12238,7 +12238,7 @@ Assets {
         Transform {
           Location {
             X: -317.361237
-            Y: -2.24414063
+            Y: -2.24414062
             Z: 317.69577
           }
           Rotation {
@@ -12909,7 +12909,7 @@ Assets {
         Transform {
           Location {
             X: -250.771484
-            Y: -209.101563
+            Y: -209.101562
             Z: 315.664917
           }
           Rotation {
@@ -15038,7 +15038,7 @@ Assets {
         Name: "Sci-fi Chest Hinge 01"
         Transform {
           Location {
-            X: -510.226563
+            X: -510.226562
             Y: 135.210938
             Z: 229.612305
           }
@@ -15565,7 +15565,7 @@ Assets {
         Transform {
           Location {
             X: -532.225281
-            Y: 65.3789063
+            Y: 65.3789062
             Z: 252.489365
           }
           Rotation {
@@ -15629,7 +15629,7 @@ Assets {
         Transform {
           Location {
             X: -526.517944
-            Y: 65.3789063
+            Y: 65.3789062
             Z: 252.231644
           }
           Rotation {
@@ -18133,7 +18133,7 @@ Assets {
         Name: "Military Tank Historic Armor Plate 01 - Rear"
         Transform {
           Location {
-            X: -281.789063
+            X: -281.789062
             Y: 239.510742
             Z: 272.949951
           }
@@ -18273,7 +18273,7 @@ Assets {
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
-            X: 342.101563
+            X: 342.101562
             Y: 159.886719
             Z: 227.166748
           }
@@ -19919,7 +19919,7 @@ Assets {
         Transform {
           Location {
             X: -428.807739
-            Y: -264.976563
+            Y: -264.976562
             Z: 176.026978
           }
           Rotation {
@@ -20820,7 +20820,7 @@ Assets {
         Transform {
           Location {
             X: -123.894531
-            Y: 231.257813
+            Y: 231.257812
             Z: 51.9351807
           }
           Rotation {
@@ -21396,7 +21396,7 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: -429.664063
+            X: -429.664062
             Y: 279.140625
             Z: 198.220093
           }
@@ -21463,7 +21463,7 @@ Assets {
         Name: "Gear - generic small hollow"
         Transform {
           Location {
-            X: -429.664063
+            X: -429.664062
             Y: 304.774414
             Z: 198.220093
           }
@@ -21534,7 +21534,7 @@ Assets {
         Name: "Star - Outline"
         Transform {
           Location {
-            X: -429.664063
+            X: -429.664062
             Y: 301.4375
             Z: 198.220093
           }
@@ -21604,7 +21604,7 @@ Assets {
         Name: "Gear - generic small hollow"
         Transform {
           Location {
-            X: -429.664063
+            X: -429.664062
             Y: 253.626953
             Z: 198.220093
           }
@@ -21675,7 +21675,7 @@ Assets {
         Name: "Star - Outline"
         Transform {
           Location {
-            X: -429.664063
+            X: -429.664062
             Y: 250.287109
             Z: 198.220093
           }
@@ -21882,7 +21882,7 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: 368.414063
+            X: 368.414062
             Y: 358.177734
             Z: 106.113525
           }
@@ -23182,5 +23182,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

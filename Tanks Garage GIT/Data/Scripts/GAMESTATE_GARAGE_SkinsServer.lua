@@ -19,7 +19,7 @@ function OnPlayerJoined(player)
 	
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 	
-	playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = nil
+	--playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = nil
 	
 	if not playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] then
 		SetNewPlayerSkins(playerSharedStorage)
@@ -46,21 +46,43 @@ function OnPlayerLeft(player)
 	
 end
 
+function OnEquipSkin(player, tankID, skinID)
+
+	local camoTable = player.serverUserData.camoData
+
+	if not camoTable[tankID] or not camoTable[tankID][skinID] then
+		print(camoTable[tankID])
+		print(camoTable[tankID][skinID])
+		print("invalid due to tankID: " .. tostring(tankID) .. " or skinID: " .. tostring(skinID))
+		return
+	end
+	 
+	for _, s in pairs(camoTable[tankID]) do
+		s.equipped = false
+	end
+	 
+	camoTable[tankID][skinID].equipped = true
+	
+	print("Equipping " .. tostring(skinID) .. " for " .. player.name)
+	 
+	Events.BroadcastToAllPlayers("SET_SKIN", player, tankID, skinID)
+	
+	--UTIL_API.TablePrint(player.serverUserData.camoData)
+
+end
+
 function SetNewPlayerSkins(playerSharedStorage)
 
 	local skinString = ""
 	
 	for tankID, skins in pairs(allIndividualSkins) do
-		
 		skinString = skinString .. tankID 
 		
-		for skinID, skinData in pairs(skins) do
-									
+		for skinID, skinData in pairs(skins) do						
 			skinString = skinString .. "/" .. skinID .. "|0|0"
 		end
 		
 		skinString = skinString .. ";"
-	
 	end
 	--print("New Player String: " .. skinString)
 	
@@ -115,7 +137,7 @@ function SetTankSkinDataForServer(dataString, player)
     end     
     
     player.serverUserData.camoData = camoTable
-   UTIL_API.TablePrint(player.serverUserData.camoData)
+	--UTIL_API.TablePrint(player.serverUserData.camoData)
 end
 
 function ConvertSkinDataToString(player)
@@ -182,5 +204,6 @@ end
 
 Initialize()
 
+Events.ConnectForPlayer("EQUIP_SKIN", OnEquipSkin)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)

@@ -803,7 +803,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: -163.994156
           }
           Rotation {
@@ -13228,7 +13228,7 @@ Assets {
         Transform {
           Location {
             X: 147.998291
-            Y: 17.3007813
+            Y: 17.3007812
             Z: -9.08313
           }
           Rotation {
@@ -21630,7 +21630,7 @@ Assets {
         Transform {
           Location {
             X: 30.2460938
-            Y: 73.8320313
+            Y: 73.8320312
             Z: 15.8076477
           }
           Rotation {
@@ -33518,7 +33518,7 @@ Assets {
         Transform {
           Location {
             X: -10.4312744
-            Y: 23.9570313
+            Y: 23.9570312
             Z: 24.8369751
           }
           Rotation {
@@ -35896,7 +35896,7 @@ Assets {
           Location {
             X: 90.8673096
             Y: 103.141113
-            Z: 65.5664063
+            Z: 65.5664062
           }
           Rotation {
           }
@@ -35929,7 +35929,7 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 2.15820313
+            X: 2.15820312
             Y: -3.07324219
             Z: 1.4727478
           }
@@ -39472,6 +39472,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -39522,6 +39523,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -39650,7 +39652,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: -551.070313
+            X: -551.070312
             Z: 109.999992
           }
           Rotation {
@@ -40501,5 +40503,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

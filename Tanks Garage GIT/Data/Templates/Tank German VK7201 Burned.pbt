@@ -6538,7 +6538,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -0.583007813
+            X: -0.583007812
             Y: 71.4595413
             Z: 54.2606125
           }
@@ -13204,7 +13204,7 @@ Assets {
             Z: 15.9185095
           }
           Rotation {
-            Pitch: -5.66601563
+            Pitch: -5.66601562
             Yaw: -105.375336
             Roll: 70.0058441
           }
@@ -14607,7 +14607,7 @@ Assets {
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
-            X: -397.632813
+            X: -397.632812
             Y: -11.2783203
             Z: 18.2539673
           }
@@ -24625,5 +24625,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

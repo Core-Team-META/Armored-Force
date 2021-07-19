@@ -172,7 +172,7 @@ Assets {
           Location {
             X: 277.07077
             Y: 262.000366
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Yaw: -85.0385056
@@ -510,5 +510,5 @@ Assets {
       AssetId: "Military_Sandbag_Wall_-_Crescent_Template"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

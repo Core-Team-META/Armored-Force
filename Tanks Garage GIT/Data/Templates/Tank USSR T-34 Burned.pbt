@@ -1187,7 +1187,7 @@ Assets {
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -215.620117
           }
           Rotation {
@@ -2188,7 +2188,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 209.567627
           }
           Rotation {
@@ -3977,7 +3977,7 @@ Assets {
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: -29.4803467
           }
           Rotation {
@@ -4050,7 +4050,7 @@ Assets {
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 29.4802856
           }
           Rotation {
@@ -7491,7 +7491,7 @@ Assets {
         Transform {
           Location {
             X: 354.10321
-            Y: 109.726563
+            Y: 109.726562
             Z: 32.0632324
           }
           Rotation {
@@ -15315,7 +15315,7 @@ Assets {
             Z: 12.9185295
           }
           Rotation {
-            Pitch: -35.4726563
+            Pitch: -35.4726562
             Yaw: -0.466278076
             Roll: -165.296722
           }
@@ -16602,7 +16602,7 @@ Assets {
         Transform {
           Location {
             X: -101.668175
-            Y: 56.6289063
+            Y: 56.6289062
             Z: 108.67411
           }
           Rotation {
@@ -17480,7 +17480,7 @@ Assets {
           Location {
             X: 4.88317871
             Y: 3.59228516
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -89.9999924
@@ -20659,7 +20659,7 @@ Assets {
         Transform {
           Location {
             X: 5
-            Y: 208.414063
+            Y: 208.414062
             Z: -15
           }
           Rotation {
@@ -22228,5 +22228,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

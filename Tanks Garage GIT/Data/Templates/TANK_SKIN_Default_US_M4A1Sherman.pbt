@@ -111,6 +111,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -161,6 +162,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -3454,7 +3456,7 @@ Assets {
         Transform {
           Location {
             X: -24.7202759
-            Y: -19.3789063
+            Y: -19.3789062
             Z: 14.1269531
           }
           Rotation {
@@ -4051,7 +4053,7 @@ Assets {
         Transform {
           Location {
             X: -24.7202759
-            Y: -19.3789063
+            Y: -19.3789062
             Z: 14.1269531
           }
           Rotation {
@@ -4912,7 +4914,7 @@ Assets {
         Transform {
           Location {
             X: -13.1657715
-            Y: 0.0922851563
+            Y: 0.0922851562
             Z: 0.115600586
           }
           Rotation {
@@ -5592,7 +5594,7 @@ Assets {
         Transform {
           Location {
             X: -13.1657715
-            Y: 0.0922851563
+            Y: 0.0922851562
             Z: 0.115600586
           }
           Rotation {
@@ -6684,7 +6686,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -12618,7 +12620,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -157.84082
           }
           Rotation {
@@ -20758,7 +20760,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -20848,7 +20850,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -22259,7 +22261,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -22349,7 +22351,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -23762,7 +23764,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -23852,7 +23854,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -25116,7 +25118,7 @@ Assets {
         Name: "TreadsRight"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 155.217773
           }
           Rotation {
@@ -33220,7 +33222,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -33310,7 +33312,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -35095,7 +35097,7 @@ Assets {
         Transform {
           Location {
             X: -3.41882324
-            Y: -30.5820313
+            Y: -30.5820312
             Z: -41.671978
           }
           Rotation {
@@ -35243,7 +35245,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -35317,7 +35319,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -36646,7 +36648,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -36720,7 +36722,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -38396,7 +38398,7 @@ Assets {
         Name: "Modern Weapon - Body 02"
         Transform {
           Location {
-            X: 4.06445313
+            X: 4.06445312
             Z: 14.589325
           }
           Rotation {
@@ -38708,7 +38710,7 @@ Assets {
         Transform {
           Location {
             X: -63.6716919
-            Y: -11.5195313
+            Y: -11.5195312
             Z: 8.16540527
           }
           Rotation {
@@ -44796,7 +44798,7 @@ Assets {
         Transform {
           Location {
             X: 10.0493774
-            Y: 5.32226563
+            Y: 5.32226562
             Z: 203.826538
           }
           Rotation {
@@ -45993,5 +45995,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

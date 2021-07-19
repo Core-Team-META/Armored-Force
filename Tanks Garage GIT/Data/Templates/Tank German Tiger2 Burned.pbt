@@ -615,7 +615,7 @@ Assets {
         Name: "Explosion Kit Fireball VFX"
         Transform {
           Location {
-            X: -104.039063
+            X: -104.039062
             Y: -14.4489746
             Z: 534.393555
           }
@@ -14191,7 +14191,7 @@ Assets {
         Transform {
           Location {
             X: 156.051819
-            Y: 241.820313
+            Y: 241.820312
             Z: -6.29255676
           }
           Rotation {
@@ -15889,7 +15889,7 @@ Assets {
         Transform {
           Location {
             X: 109.611938
-            Y: -34.9570313
+            Y: -34.9570312
             Z: 17.7801514
           }
           Rotation {
@@ -29034,5 +29034,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

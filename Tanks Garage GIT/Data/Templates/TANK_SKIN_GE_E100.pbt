@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -1876,7 +1878,7 @@ Assets {
         Transform {
           Location {
             X: -338.67804
-            Y: 141.164063
+            Y: 141.164062
             Z: 50.5738182
           }
           Rotation {
@@ -1939,7 +1941,7 @@ Assets {
         Transform {
           Location {
             X: -338.67804
-            Y: 141.164063
+            Y: 141.164062
             Z: 51.3158607
           }
           Rotation {
@@ -6991,7 +6993,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -7328,7 +7330,7 @@ Assets {
         Name: "grates"
         Transform {
           Location {
-            X: -187.101563
+            X: -187.101562
             Y: 158.233826
             Z: 73.4167633
           }
@@ -13643,7 +13645,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -259.722717
             Z: 1.52587891e-05
           }
@@ -17239,7 +17241,7 @@ Assets {
         Name: "Military Tank Modern Gear 01"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 3.05175781e-05
           }
           Rotation {
@@ -23237,7 +23239,7 @@ Assets {
         Transform {
           Location {
             X: -42.5552979
-            Y: 79.7226563
+            Y: 79.7226562
             Z: 54.6927795
           }
           Rotation {
@@ -27166,5 +27168,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

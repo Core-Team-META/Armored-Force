@@ -174,7 +174,7 @@ Assets {
         Name: "Urban Pipe Flange 01"
         Transform {
           Location {
-            X: 6.10351563e-05
+            X: 6.10351562e-05
           }
           Rotation {
             Pitch: -3.05175781e-05
@@ -291,5 +291,5 @@ Assets {
       AssetId: "Urban_Pipe_Wall_Attachment_-_01__Prop_"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

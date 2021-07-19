@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -426,7 +428,7 @@ Assets {
         Transform {
           Location {
             X: -431.93869
-            Y: 227.539063
+            Y: 227.539062
             Z: -156.061401
           }
           Rotation {
@@ -487,7 +489,7 @@ Assets {
         Transform {
           Location {
             X: -431.93869
-            Y: 227.539063
+            Y: 227.539062
             Z: -156.061401
           }
           Rotation {
@@ -7119,7 +7121,7 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: 3.62255859
             Z: 3.05175781e-05
           }
@@ -14842,7 +14844,7 @@ Assets {
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -18536,7 +18538,7 @@ Assets {
         Name: "HullFire"
         Transform {
           Location {
-            X: -142.539063
+            X: -142.539062
             Z: 1.45105529
           }
           Rotation {
@@ -23003,7 +23005,7 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 30.9780273
           }
           Rotation {
@@ -24080,7 +24082,7 @@ Assets {
         Transform {
           Location {
             X: 8.50973511
-            Y: 3.33789063
+            Y: 3.33789062
             Z: -3.5552063
           }
           Rotation {
@@ -24346,7 +24348,7 @@ Assets {
         Transform {
           Location {
             X: 8.50973511
-            Y: 3.33789063
+            Y: 3.33789062
             Z: -0.883605957
           }
           Rotation {
@@ -31476,5 +31478,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

@@ -6276,7 +6276,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -6753,7 +6753,7 @@ Assets {
         Name: "grates"
         Transform {
           Location {
-            X: -187.101563
+            X: -187.101562
             Y: 158.233826
             Z: 73.4167633
           }
@@ -22182,5 +22182,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

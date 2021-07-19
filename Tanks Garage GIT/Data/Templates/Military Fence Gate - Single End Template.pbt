@@ -616,7 +616,7 @@ Assets {
         Name: "Military Fence Pole - Gate End"
         Transform {
           Location {
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
           }
@@ -694,5 +694,5 @@ Assets {
       AssetId: "Military_Fence_Gate_-_Single_End_Template"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }
