@@ -79,6 +79,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -127,6 +128,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -5767,7 +5769,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -90.9882813
+            X: -90.9882812
             Y: 45.159565
             Z: 33.698
           }
@@ -22251,7 +22253,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -22563,7 +22565,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -36853,7 +36855,7 @@ Assets {
           }
           Rotation {
             Yaw: -89.9999924
-            Roll: 12.0351563
+            Roll: 12.0351562
           }
           Scale {
             X: 0.965889
@@ -55340,7 +55342,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: 539.414063
+            X: 539.414062
             Z: 109.999992
           }
           Rotation {
@@ -56333,5 +56335,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

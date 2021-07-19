@@ -10004,7 +10004,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -17717,7 +17717,7 @@ Assets {
             Z: 150.949539
           }
           Rotation {
-            Pitch: -6.10351563e-05
+            Pitch: -6.10351562e-05
             Yaw: 89.9999313
             Roll: -89.9998779
           }
@@ -19442,7 +19442,7 @@ Assets {
             Z: 150.949539
           }
           Rotation {
-            Pitch: -6.10351563e-05
+            Pitch: -6.10351562e-05
             Yaw: 89.9999313
             Roll: -89.9998779
           }
@@ -20383,7 +20383,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -186.455887
             Z: 7.62939453e-06
           }
@@ -23111,7 +23111,7 @@ Assets {
         Name: "ClientCollisionTrigger"
         Transform {
           Location {
-            X: -14.1289063
+            X: -14.1289062
             Z: 4.28269958
           }
           Rotation {
@@ -23524,7 +23524,7 @@ Assets {
         Transform {
           Location {
             X: 42.028923
-            Y: -27.6132813
+            Y: -27.6132812
             Z: -18.7511292
           }
           Rotation {
@@ -28502,5 +28502,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

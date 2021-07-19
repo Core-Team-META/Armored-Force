@@ -4246,7 +4246,7 @@ Assets {
         Transform {
           Location {
             X: -73.6411133
-            Y: 9.88476563
+            Y: 9.88476562
             Z: 9.61425781
           }
           Rotation {
@@ -4473,7 +4473,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -23182,5 +23182,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

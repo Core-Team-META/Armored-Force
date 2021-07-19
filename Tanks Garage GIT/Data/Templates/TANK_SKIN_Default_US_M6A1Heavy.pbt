@@ -10966,7 +10966,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -11040,7 +11040,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -12951,7 +12951,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -13025,7 +13025,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -14850,7 +14850,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -14924,7 +14924,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -16749,7 +16749,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -16823,7 +16823,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -27789,7 +27789,7 @@ Assets {
         Name: "Tank Tread"
         Transform {
           Location {
-            X: 42.7851563
+            X: 42.7851562
             Z: 7.62939453e-06
           }
           Rotation {
@@ -28623,7 +28623,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -28697,7 +28697,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -30460,7 +30460,7 @@ Assets {
         Name: "wheel set"
         Transform {
           Location {
-            X: 12.3164063
+            X: 12.3164062
             Y: -16.0234375
             Z: -57.029953
           }
@@ -30610,7 +30610,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -30684,7 +30684,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -32508,7 +32508,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -32582,7 +32582,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -34191,7 +34191,7 @@ Assets {
         Transform {
           Location {
             X: 0.044921875
-            Y: -31.5195313
+            Y: -31.5195312
             Z: 102.626083
           }
           Rotation {
@@ -36495,7 +36495,7 @@ Assets {
         Transform {
           Location {
             X: -24.6157227
-            Y: -18.2539063
+            Y: -18.2539062
             Z: 8.28419495
           }
           Rotation {
@@ -36948,7 +36948,7 @@ Assets {
         Transform {
           Location {
             X: -24.6157227
-            Y: -18.2539063
+            Y: -18.2539062
             Z: 8.28419495
           }
           Rotation {
@@ -40772,7 +40772,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: -0.000244140625
             Z: 1.52587891e-05
           }
@@ -50620,7 +50620,7 @@ Assets {
         Transform {
           Location {
             X: 1.29830933
-            Y: -5.96289063
+            Y: -5.96289062
             Z: 10.1077576
           }
           Rotation {
@@ -50699,7 +50699,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Yaw: -0.000122070313
+            Yaw: -0.000122070312
             Roll: 179.999832
           }
           Scale {
@@ -51154,7 +51154,7 @@ Assets {
           }
           Rotation {
             Pitch: 141.931549
-            Yaw: -0.790039063
+            Yaw: -0.790039062
           }
           Scale {
             X: 5.66534
@@ -54434,6 +54434,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -54483,6 +54484,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -54611,7 +54613,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: -668.664063
+            X: -668.664062
             Z: 109.999992
           }
           Rotation {
@@ -55651,5 +55653,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

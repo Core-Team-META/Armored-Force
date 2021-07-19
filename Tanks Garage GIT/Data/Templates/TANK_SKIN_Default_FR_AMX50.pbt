@@ -80,6 +80,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -5059,7 +5061,7 @@ Assets {
         Transform {
           Location {
             X: 217.61969
-            Y: 2.89257813
+            Y: 2.89257812
             Z: 63.9561768
           }
           Rotation {
@@ -5318,7 +5320,7 @@ Assets {
           Location {
             X: -63.0041504
             Y: -10.5933838
-            Z: -0.0571289063
+            Z: -0.0571289062
           }
           Rotation {
             Roll: 90.0000305
@@ -5390,7 +5392,7 @@ Assets {
           Location {
             X: -63.0048828
             Y: 2.40881348
-            Z: -0.0571289063
+            Z: -0.0571289062
           }
           Rotation {
             Yaw: -3.05175781e-05
@@ -5610,7 +5612,7 @@ Assets {
         Transform {
           Location {
             X: 308.843811
-            Y: 2.89257813
+            Y: 2.89257812
             Z: 42.882019
           }
           Rotation {
@@ -5685,7 +5687,7 @@ Assets {
         Transform {
           Location {
             X: 322.562683
-            Y: 2.89257813
+            Y: 2.89257812
             Z: 41.29953
           }
           Rotation {
@@ -6352,7 +6354,7 @@ Assets {
           Location {
             X: -63.0041504
             Y: -10.5933838
-            Z: -0.0571289063
+            Z: -0.0571289062
           }
           Rotation {
             Roll: 90.0000305
@@ -6424,7 +6426,7 @@ Assets {
           Location {
             X: -63.0048828
             Y: 2.40881348
-            Z: -0.0571289063
+            Z: -0.0571289062
           }
           Rotation {
             Yaw: -3.05175781e-05
@@ -6755,7 +6757,7 @@ Assets {
           Location {
             X: -63.0041504
             Y: -10.5933838
-            Z: -0.0571289063
+            Z: -0.0571289062
           }
           Rotation {
             Roll: 90.0000305
@@ -6827,7 +6829,7 @@ Assets {
           Location {
             X: -63.0048828
             Y: 2.40881348
-            Z: -0.0571289063
+            Z: -0.0571289062
           }
           Rotation {
             Yaw: -3.05175781e-05
@@ -23957,7 +23959,7 @@ Assets {
         Transform {
           Location {
             X: 265.856812
-            Y: 22.7539063
+            Y: 22.7539062
             Z: 55.7788391
           }
           Rotation {
@@ -28398,7 +28400,7 @@ Assets {
         Transform {
           Location {
             X: -2.00439453
-            Y: 30.5820313
+            Y: 30.5820312
             Z: -2.49591064
           }
           Rotation {
@@ -36963,5 +36965,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

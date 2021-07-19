@@ -237,10 +237,25 @@ function ChangeGarageModel(id)
 	if Object.IsValid(wheels) then
 		wheels.visibility = Visibility.INHERIT
 	end
-	
+		
 	for _, c in ipairs(modelSFX) do
 		c:Stop()
 	end
+	
+	local vehicleIDString = tostring(id)
+	
+	if tonumber(id) < 10 and not string.find(vehicleIDString, "0") then
+		vehicleIDString = "0" .. vehicleIDString
+	end	
+
+	if not localPlayer.clientUserData.garageModel then
+		localPlayer.clientUserData.garageModel = {}
+	end
+	
+	localPlayer.clientUserData.garageModel.reference = newModel
+	localPlayer.clientUserData.garageModel.id = vehicleIDString
+	
+	Events.Broadcast("SET_SKIN", localPlayer, vehicleID, nil)
 	
 end
 
@@ -310,6 +325,22 @@ function InitializeComponent()
 		c:Stop()
 	end
 	
+	local vehicleID = localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())
+	local vehicleIDString = tostring(vehicleID)
+	
+	if tonumber(vehicleID) < 10 and not string.find(vehicleIDString, "0") then
+		vehicleIDString = "0" .. vehicleIDString
+	end	
+
+	if not localPlayer.clientUserData.garageModel then
+		localPlayer.clientUserData.garageModel = {}
+	end
+	
+	localPlayer.clientUserData.garageModel.reference = newModel
+	localPlayer.clientUserData.garageModel.id = vehicleIDString
+	
+	Events.Broadcast("SET_SKIN", localPlayer, vehicleID, nil)
+		
 end
 
 InitializeComponent()

@@ -79,6 +79,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -127,6 +128,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -8318,7 +8320,7 @@ Assets {
         Transform {
           Location {
             X: -31.4260826
-            Y: 0.333007813
+            Y: 0.333007812
             Z: 18.4990234
           }
           Rotation {
@@ -8918,7 +8920,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -0.00415039063
+            X: -0.00415039062
             Y: -0.167480469
             Z: -0.883361816
           }
@@ -12625,7 +12627,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -0.00415039063
+            X: -0.00415039062
             Y: -0.167495728
             Z: -0.883422852
           }
@@ -16551,7 +16553,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -90.9882813
+            X: -90.9882812
             Y: 45.159565
             Z: 33.698
           }
@@ -47823,7 +47825,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -48275,7 +48277,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -62603,7 +62605,7 @@ Assets {
           }
           Rotation {
             Yaw: -89.9999924
-            Roll: 12.0351563
+            Roll: 12.0351562
           }
           Scale {
             X: 0.965889
@@ -113558,5 +113560,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

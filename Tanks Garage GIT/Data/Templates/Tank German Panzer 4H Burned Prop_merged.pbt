@@ -498,7 +498,7 @@ Assets {
           }
           Rotation {
             Pitch: -7.01250696
-            Yaw: 176.976563
+            Yaw: 176.976562
             Roll: 40.9343147
           }
           Scale {
@@ -1564,7 +1564,7 @@ Assets {
         Transform {
           Location {
             X: 97.2148438
-            Y: 63.5351563
+            Y: 63.5351562
             Z: 348.088867
           }
           Rotation {
@@ -5739,7 +5739,7 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            X: 137.132813
+            X: 137.132812
             Y: 223.803711
             Z: 93.1975098
           }
@@ -15135,7 +15135,7 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: 323.070313
+            X: 323.070312
             Y: 198.504883
             Z: 214.453369
           }
@@ -15205,7 +15205,7 @@ Assets {
         Name: "Military Crate Hinge 01"
         Transform {
           Location {
-            X: 323.070313
+            X: 323.070312
             Y: 235.077148
             Z: 215.205322
           }
@@ -15766,7 +15766,7 @@ Assets {
         Transform {
           Location {
             X: 279.234375
-            Y: 188.539063
+            Y: 188.539062
             Z: 211.5625
           }
           Rotation {
@@ -16115,7 +16115,7 @@ Assets {
         Name: "Military Tank Historic Armorplate 01 Rear"
         Transform {
           Location {
-            X: -360.632813
+            X: -360.632812
             Y: 238.976074
             Z: 212.364258
           }
@@ -16186,7 +16186,7 @@ Assets {
         Transform {
           Location {
             X: -359.003906
-            Y: 188.539063
+            Y: 188.539062
             Z: 211.562744
           }
           Rotation {
@@ -17571,7 +17571,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -27.7382813
+            X: -27.7382812
             Y: 269.522461
             Z: 225.790771
           }
@@ -17948,7 +17948,7 @@ Assets {
         Transform {
           Location {
             X: -329.511719
-            Y: -172.039063
+            Y: -172.039062
             Z: 60.3527832
           }
           Rotation {
@@ -19673,5 +19673,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

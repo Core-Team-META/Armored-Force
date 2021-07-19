@@ -38,7 +38,7 @@ Assets {
         Transform {
           Location {
             Y: 5
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
           }
@@ -369,5 +369,5 @@ Assets {
       AssetId: "Sci-fi_Terminal_01_Prop_"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

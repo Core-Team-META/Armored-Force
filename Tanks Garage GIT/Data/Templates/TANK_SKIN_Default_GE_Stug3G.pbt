@@ -790,7 +790,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -187.753891
             Z: 1.52587891e-05
           }
@@ -4322,7 +4322,7 @@ Assets {
         Name: "Military Tank Modern Gear 01"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: 3.58642578
             Z: -7.62939453e-06
           }
@@ -12329,7 +12329,7 @@ Assets {
         Name: "Prism - 4-Sided Trapezoid Right"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: -0.0307617188
             Z: -0.295013428
           }
@@ -17490,7 +17490,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 40.0351563
+            X: 40.0351562
             Y: 314.206055
             Z: 14.6242981
           }
@@ -18917,7 +18917,7 @@ Assets {
             Z: 150.94957
           }
           Rotation {
-            Pitch: -6.10351563e-05
+            Pitch: -6.10351562e-05
             Yaw: 89.9999313
             Roll: -89.9998779
           }
@@ -19415,7 +19415,7 @@ Assets {
         Name: "Wedge - Polished"
         Transform {
           Location {
-            X: -96.2070313
+            X: -96.2070312
             Y: 316.542969
             Z: 154.183441
           }
@@ -20127,7 +20127,7 @@ Assets {
             Z: 150.94957
           }
           Rotation {
-            Pitch: -6.10351563e-05
+            Pitch: -6.10351562e-05
             Yaw: 89.9999313
             Roll: -89.9998779
           }
@@ -20625,7 +20625,7 @@ Assets {
         Name: "Wedge - Polished"
         Transform {
           Location {
-            X: -96.2070313
+            X: -96.2070312
             Y: 316.542969
             Z: 154.183441
           }
@@ -20696,7 +20696,7 @@ Assets {
         Name: "ClientCollisionTrigger"
         Transform {
           Location {
-            X: -14.1289063
+            X: -14.1289062
             Y: -1.29800034
             Z: -31.9558716
           }
@@ -24834,7 +24834,7 @@ Assets {
         Transform {
           Location {
             X: -46.5910645
-            Y: 1.23632813
+            Y: 1.23632812
             Z: 47.8449097
           }
           Rotation {
@@ -25191,7 +25191,7 @@ Assets {
           Location {
             X: 13.7891846
             Y: -51.534668
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Pitch: 6.83018879e-06
@@ -25323,7 +25323,7 @@ Assets {
           Location {
             X: 36.381958
             Y: 36.5649414
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Pitch: 2.04905664e-05
@@ -25389,7 +25389,7 @@ Assets {
           Location {
             X: -13.6025391
             Y: 50.0361328
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: -164.990311
@@ -25454,7 +25454,7 @@ Assets {
           Location {
             X: 15.4107666
             Y: -57.519043
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Pitch: 6.83018879e-06
@@ -25524,7 +25524,7 @@ Assets {
           Location {
             X: 57.262207
             Y: -14.9941406
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: 74.8172302
@@ -25662,7 +25662,7 @@ Assets {
           Location {
             X: -15.5823975
             Y: 56.2758789
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -164.207672
@@ -25799,7 +25799,7 @@ Assets {
           Location {
             X: -49.3140869
             Y: 17.1835938
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -113.66391
@@ -25932,7 +25932,7 @@ Assets {
           Location {
             X: -37.6756592
             Y: -38.5288086
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -43.8973541
@@ -26067,7 +26067,7 @@ Assets {
         Transform {
           Location {
             X: 0.188110352
-            Y: 0.567382813
+            Y: 0.567382812
             Z: 29.5822144
           }
           Rotation {
@@ -27760,7 +27760,7 @@ Assets {
         Name: "Cube - Arched"
         Transform {
           Location {
-            X: -7.71289063
+            X: -7.71289062
             Y: 6.88525391
             Z: -2.24411
           }
@@ -31228,6 +31228,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -31278,6 +31279,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -32320,5 +32322,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

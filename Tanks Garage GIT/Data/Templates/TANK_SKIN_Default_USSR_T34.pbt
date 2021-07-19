@@ -903,7 +903,7 @@ Assets {
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: -29.4803467
           }
           Rotation {
@@ -976,7 +976,7 @@ Assets {
         Name: "Wedge - Convex"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 29.4802856
           }
           Rotation {
@@ -6145,7 +6145,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -9657,7 +9657,7 @@ Assets {
         Transform {
           Location {
             X: 354.10321
-            Y: 109.726563
+            Y: 109.726562
             Z: 32.0632324
           }
           Rotation {
@@ -19403,7 +19403,7 @@ Assets {
           Location {
             X: 4.88317871
             Y: 3.59228516
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -89.9999924
@@ -22213,7 +22213,7 @@ Assets {
         Transform {
           Location {
             X: 5
-            Y: 208.414063
+            Y: 208.414062
             Z: -15
           }
           Rotation {
@@ -22524,7 +22524,7 @@ Assets {
         Transform {
           Location {
             X: -331.091675
-            Y: -17.2539063
+            Y: -17.2539062
             Z: -3.38735962
           }
           Rotation {
@@ -22859,7 +22859,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -215.620117
           }
           Rotation {
@@ -24938,7 +24938,7 @@ Assets {
         Name: "TreadsRight"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 209.567627
           }
           Rotation {
@@ -27655,6 +27655,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -27705,6 +27706,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -28774,5 +28776,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

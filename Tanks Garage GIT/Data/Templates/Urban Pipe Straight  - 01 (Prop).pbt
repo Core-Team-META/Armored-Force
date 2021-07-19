@@ -474,7 +474,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: 1.91958679e-05
           }
           Scale {
@@ -577,5 +577,5 @@ Assets {
       AssetId: "Urban_Pipe_Straight__-_01__Prop_"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

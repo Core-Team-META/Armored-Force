@@ -514,7 +514,7 @@ Assets {
         Name: "Treads"
         Transform {
           Location {
-            X: 72.0507813
+            X: 72.0507812
             Z: -169.833969
           }
           Rotation {
@@ -546,7 +546,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -180.19751
           }
           Rotation {
@@ -794,7 +794,7 @@ Assets {
         Transform {
           Location {
             X: -288.902679
-            Y: 0.00415039063
+            Y: 0.00415039062
             Z: 4.58356476
           }
           Rotation {
@@ -7694,7 +7694,7 @@ Assets {
         Name: "TreadsRight"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 183.100235
           }
           Rotation {
@@ -7943,7 +7943,7 @@ Assets {
         Transform {
           Location {
             X: -288.902679
-            Y: 0.00415039063
+            Y: 0.00415039062
             Z: 4.58356476
           }
           Rotation {
@@ -16343,7 +16343,7 @@ Assets {
         Transform {
           Location {
             X: -24.7202759
-            Y: -19.3789063
+            Y: -19.3789062
             Z: 14.1269531
           }
           Rotation {
@@ -17088,7 +17088,7 @@ Assets {
         Transform {
           Location {
             X: -24.7202759
-            Y: -19.3789063
+            Y: -19.3789062
             Z: 14.1269531
           }
           Rotation {
@@ -28860,7 +28860,7 @@ Assets {
         Transform {
           Location {
             X: -24.7202759
-            Y: -19.3789063
+            Y: -19.3789062
             Z: 14.1269531
           }
           Rotation {
@@ -29395,7 +29395,7 @@ Assets {
         Transform {
           Location {
             X: -24.7202759
-            Y: -19.3789063
+            Y: -19.3789062
             Z: 14.1269531
           }
           Rotation {
@@ -35890,5 +35890,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

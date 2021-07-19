@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -6904,7 +6906,7 @@ Assets {
         Transform {
           Location {
             X: -0.015625
-            Y: 237.601563
+            Y: 237.601562
             Z: 7.62939453e-06
           }
           Rotation {
@@ -12339,7 +12341,7 @@ Assets {
         Transform {
           Location {
             X: 1.83496094
-            Y: 5.58007813
+            Y: 5.58007812
             Z: 22.2758331
           }
           Rotation {
@@ -29782,7 +29784,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: -635.007813
+            X: -635.007812
             Z: 109.999985
           }
           Rotation {
@@ -30768,5 +30770,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

@@ -9685,7 +9685,7 @@ Assets {
         Name: "TreadsRightDamaged"
         Transform {
           Location {
-            Y: 225.132813
+            Y: 225.132812
           }
           Rotation {
           }
@@ -10317,8 +10317,8 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: 0.0102539063
-            Y: 0.301757813
+            X: 0.0102539062
+            Y: 0.301757812
             Z: 2.57978058
           }
           Rotation {
@@ -12489,7 +12489,7 @@ Assets {
         Transform {
           Location {
             X: -222.084167
-            Y: -6.12695313
+            Y: -6.12695312
             Z: -36.2444077
           }
           Rotation {
@@ -36175,6 +36175,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -36223,6 +36224,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -36351,7 +36353,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: -707.695313
+            X: -707.695312
             Z: 109.999985
           }
           Rotation {
@@ -37256,5 +37258,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

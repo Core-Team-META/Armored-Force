@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -8357,7 +8359,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -10506,7 +10508,7 @@ Assets {
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -11320,7 +11322,7 @@ Assets {
         Transform {
           Location {
             X: -25.7955322
-            Y: 52.8945313
+            Y: 52.8945312
             Z: 37.5057068
           }
           Rotation {
@@ -14269,7 +14271,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -21544,7 +21546,7 @@ Assets {
           Location {
             X: -12.5532227
             Y: 132.037598
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: -74.9826202
@@ -22764,7 +22766,7 @@ Assets {
         Transform {
           Location {
             X: 8.50973511
-            Y: 3.33789063
+            Y: 3.33789062
             Z: 2.16455078
           }
           Rotation {
@@ -26705,5 +26707,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

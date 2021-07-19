@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -902,7 +904,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -231.075607
           }
           Rotation {
@@ -24359,7 +24361,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Roll: -117.476563
+            Roll: -117.476562
           }
           Scale {
             X: 0.130400777
@@ -30009,7 +30011,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: 694.664063
+            X: 694.664062
             Z: 110
           }
           Rotation {
@@ -30939,5 +30941,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

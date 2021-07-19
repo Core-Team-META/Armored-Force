@@ -8,8 +8,8 @@ local universalSkinInfo = script:GetCustomProperty("Skins_Universal"):WaitForObj
 
 local localPlayer = Game.GetLocalPlayer()
 
-local allIndividualSkins = {}
-local allUniversalSkins = {}
+--local allIndividualSkins = {}
+--local allUniversalSkins = {}
 local selectedSkin = 0
 
 local function GetChangeableGeo(tank)
@@ -22,22 +22,110 @@ local function GetChangeableGeo(tank)
     return NewGeo
 end
 
-function ChangeTankSkin(player, tankID, skinID)
+function InitializeTankSkin(player)
+	if not player.clientUserData.camoData then
+		RetrieveData(player)
+	end
+	
+	local camoTable = player.clientUserData.camoData
+	
+	local tankID = nil
 
-	if not allIndividualSkins[tankID] or not allIndividualSkins[tankID][skinID] then
-		print("Invalid id")
+	if player.clientUserData.currentTankData then
+		tankID = player.clientUserData.currentTankData.id 
+		--print("initializing with current tank id")
+	elseif player.clientUserData.garageModel then
+		tankID =player.clientUserData.garageModel.id
+		--print("initializing with garage tank id")
+	end
+	
+	if not camoTable or not tankID or not camoTable[tankID] then
+		return
+	end	
+	
+	local selectedSkin = "00"
+	 
+	for sid, s in pairs(camoTable[tankID]) do
+		if s.equipped then
+			selectedSkin = sid
+			break
+		end
+	end
+		
+	ChangeTankSkin(player, tankID, selectedSkin)
+	
+end
+
+function ChangeTankSkin(player, tankID, skinID)	
+
+	if not player.clientUserData.camoData then
+		RetrieveData(player)
+	end
+
+	print("Changing tank skin for " .. player.name)
+	local vehicle = nil
+	local garageModel = nil
+		
+	local camoTable = player.clientUserData.camoData
+
+	if not camoTable or not camoTable[tankID] or not camoTable[tankID][skinID] then
+		return
+	end
+	
+	print("setting equipped data for " .. player.name)
+	
+	for sid, s in pairs(camoTable[tankID]) do
+		s.equipped = false
+	end
+	
+	camoTable[tankID][skinID].equipped = true
+	
+	--print("Request from :")
+	--print(player)
+	--print("for " .. tostring(tankID) .. " skin: " .. tostring(skinID))
+	
+	if player.clientUserData.currentTankData then
+		vehicle = player.clientUserData.currentTankData.skin
+	end
+	
+	if player.clientUserData.garageModel then
+		--print("Setting garage model")
+		garageModel = player.clientUserData.garageModel.reference
+		SetSkinOnSpecificVehicle(player, garageModel, tankID, skinID)
+	else 
+		--print("unable to set garage model")
+	end
+	
+	SetSkinOnSpecificVehicle(player, vehicle, tankID, skinID)
+end
+
+function SetSkinOnSpecificVehicle(player, vehicle, tankID, skinID)
+
+	local camoTable = player.clientUserData.camoData
+
+	if not Object.IsValid(vehicle) or not camoTable[tankID] or not camoTable[tankID][skinID] then
+		--print("Invalid id")
 		return
 	end
 
-	local vehicle = player.clientUserData.currentTankData.skin 
+	if not skinID then
+		skinID = "00"
+		for sid, s in pairs(camoTable[tankID]) do
+			if s.equipped then
+				skinID = sid
+				break
+			end
+		end
+	end	
+			
 	local changeThisGeo = GetChangeableGeo(vehicle)
-	local enableMaterialChange = allIndividualSkins[tankID][skinID].useMaterial
-	local materialToChangeTo = allIndividualSkins[tankID][skinID].newMaterial
-	local enableColorChange = allIndividualSkins[tankID][skinID].useColor
-	local colorToChangeTo = allIndividualSkins[tankID][skinID].newColor
+	local enableMaterialChange = camoTable[tankID][skinID].useMaterial
+	local materialToChangeTo = camoTable[tankID][skinID].newMaterial
+	local enableColorChange = camoTable[tankID][skinID].useColor
+	local colorToChangeTo = camoTable[tankID][skinID].newColor
 	
 	if not Object.IsValid(vehicle) or not changeThisGeo then
-		print("Invalid vehicle")
+		--print("Invalid vehicle")
 		return
 	end
 	
@@ -61,35 +149,52 @@ function ChangeTankSkin(player, tankID, skinID)
 	            end 
 	        end
         end
-    end
+    end	
 end
 
 function OnBindingPressed(player, binding)
 	if binding == "ability_extra_41" then
-		if selectedSkin > 5 then
+		if selectedSkin > 8 then
 			selectedSkin = 0
 		end
-		ChangeTankSkin(localPlayer, "01", "010" .. tostring(selectedSkin))
+		
+		local tankID = nil
+		
+		if player.clientUserData.currentTankData then
+			tankID = player.clientUserData.currentTankData.id 
+			--print("using active tank id " .. tostring(tankID))
+		elseif player.clientUserData.garageModel then
+			tankID = player.clientUserData.garageModel.id
+			--print("using garage id " .. tostring(tankID))
+		end
+		
+		if not tankID then 
+			--print("unable to find tank id")
+			return
+		end
+		
+		Events.BroadcastToServer("EQUIP_SKIN", tankID, "0" .. tostring(selectedSkin))
+		
 		selectedSkin = selectedSkin + 1
 	end
 
 end
 
-function RetrieveData()
+function RetrieveData(player)
 
 	while true do
 	
 		Task.Wait(0.1)
 		
 	    for k,child in ipairs(DATA_TRANSFER:GetChildren()) do
-	        if(child:GetCustomProperty("OwnerId") == localPlayer.id) then
+	        if(child:GetCustomProperty("OwnerId") == player.id) then
 	        
 	        	local dataString = child:GetCustomProperty("Data")
 	        	
 	        	-- DEBUG
-	        	-- print("Got data string: " .. dataString)
+	        	print("Got data string: " .. dataString)
 	        	
-	        	SetTankSkinDataForClient(dataString)
+	        	SetTankSkinDataForClient(player, dataString)
 	        
 	            return
 	        end
@@ -97,9 +202,12 @@ function RetrieveData()
 	end
 end
 
-function SetTankSkinDataForClient(dataString)
+function SetTankSkinDataForClient(player, dataString)
 
 	local dataTable = UTIL_API.SplitStringIntoObjects(dataString, ";") -- separate into tank segments   
+	local skinsTable = {}
+	SetupSkinsTable(skinsTable)
+	
 
     for x,skinEntries in pairs(dataTable) do
         local skinEntryTable = UTIL_API.SplitStringIntoObjects(skinEntries, "/") -- separate into skin entries
@@ -117,21 +225,21 @@ function SetTankSkinDataForClient(dataString)
         			if position == 1 then
         				skinID = skinData
         				
-        				if not allIndividualSkins[tankID] or not allIndividualSkins[tankID][skinID] then
+        				if not skinsTable[tankID] or not skinsTable[tankID][skinID] then
         					break
         				end
         				
         			elseif position == 2 then
         				if tonumber(skinData) > 0 then
-        					allIndividualSkins[tankID][skinID].purchased = true
+        					skinsTable[tankID][skinID].purchased = true
         				else 
-        					allIndividualSkins[tankID][skinID].purchased = false
+        					skinsTable[tankID][skinID].purchased = false
         				end
         			elseif position == 3 then
           				if tonumber(skinData) > 0 then
-        					allIndividualSkins[tankID][skinID].equipped = true
+        					skinsTable[tankID][skinID].equipped = true
         				else 
-        					allIndividualSkins[tankID][skinID].equipped = false
+        					skinsTable[tankID][skinID].equipped = false
         				end      			
         			end
         			position = position + 1
@@ -140,12 +248,14 @@ function SetTankSkinDataForClient(dataString)
         		tankID = individualSkinEntry
             end
         end
-    end     
+    end
     
-   	--UTIL_API.TablePrint(allIndividualSkins)
+    player.clientUserData.camoData = skinsTable
+    
+   	--UTIL_API.TablePrint(skinsTable)
 end
 
-function Initialize()
+function SetupSkinsTable(skinsTable)
 
 	local individualSkinGroups = individualSkinInfo:GetChildren()
 	
@@ -156,7 +266,7 @@ function Initialize()
 		for _, skin in ipairs(skins) do
 			if not tankID then
 				tankID = skin:GetCustomProperty("VehicleID")
-				allIndividualSkins[tankID] = {}
+				skinsTable[tankID] = {}
 			end
 			
 			local skinEntry = {}
@@ -171,14 +281,19 @@ function Initialize()
 			skinEntry.useColor = skin:GetCustomProperty("UseNewColor")
 			skinEntry.enabled = skin:GetCustomProperty("Enabled")
 			
-			allIndividualSkins[tankID][skinID] = skinEntry
+			skinsTable[tankID][skinID] = skinEntry
 		end
-	
 	end
 
 end
 
-Initialize()
-RetrieveData()
+RetrieveData(localPlayer)
 
 localPlayer.bindingPressedEvent:Connect(OnBindingPressed)
+Game.playerJoinedEvent:Connect(RetrieveData)
+Events.Connect("SET_SKIN", ChangeTankSkin)
+Events.Connect("INITIALIZE_SKIN", InitializeTankSkin)
+
+Task.Wait(1)
+
+InitializeTankSkin(localPlayer)

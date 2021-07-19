@@ -23,7 +23,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 -- Internal custom properties
 Task.Wait(1)
 local VEHICLE = script:FindAncestorByType('Vehicle')
-if not VEHICLE:IsA('Vehicle') then
+if not Object.IsValid(VEHICLE) or not VEHICLE:IsA('Vehicle') then
     error(script.name .. " should be part of Vehicle object hierarchy.")
 end
 

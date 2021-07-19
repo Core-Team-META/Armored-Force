@@ -129,7 +129,7 @@ Assets {
         Name: "Point Light"
         Transform {
           Location {
-            X: -0.0415039063
+            X: -0.0415039062
             Y: -2.73168945
             Z: 347.366943
           }
@@ -6735,7 +6735,7 @@ Assets {
           Location {
             X: -69.1864
             Y: -2.50830078
-            Z: 2.83007813
+            Z: 2.83007812
           }
           Rotation {
             Yaw: 1.26447
@@ -6868,7 +6868,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -14728,7 +14728,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 185.878418
             Z: 6.88433647e-06
           }
@@ -19107,7 +19107,7 @@ Assets {
         Transform {
           Location {
             Y: -0.000732421875
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: 2.6789919e-06
@@ -23532,5 +23532,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

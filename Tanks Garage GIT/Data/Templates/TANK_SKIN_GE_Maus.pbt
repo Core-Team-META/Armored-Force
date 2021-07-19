@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -6523,7 +6525,7 @@ Assets {
         Transform {
           Location {
             X: -218.300049
-            Y: 176.820313
+            Y: 176.820312
             Z: 43.8112793
           }
           Rotation {
@@ -6826,7 +6828,7 @@ Assets {
         Transform {
           Location {
             X: -218.187134
-            Y: 87.3476563
+            Y: 87.3476562
             Z: 156.507416
           }
           Rotation {
@@ -19746,7 +19748,7 @@ Assets {
         Name: "Scorch Mark Decal"
         Transform {
           Location {
-            Y: -42.4570313
+            Y: -42.4570312
             Z: 67.6250458
           }
           Rotation {
@@ -33166,7 +33168,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: -805.601563
+            X: -805.601562
             Z: 110
           }
           Rotation {
@@ -33972,5 +33974,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -8043,7 +8045,7 @@ Assets {
         Transform {
           Location {
             X: 331.994019
-            Y: -0.133789063
+            Y: -0.133789062
             Z: -19.375679
           }
           Rotation {
@@ -11999,7 +12001,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -15521,7 +15523,7 @@ Assets {
         Name: "O-Bracket"
         Transform {
           Location {
-            X: 573.101563
+            X: 573.101562
             Y: 67.389
             Z: -38.0672607
           }
@@ -15595,7 +15597,7 @@ Assets {
         Name: "O-Bracket"
         Transform {
           Location {
-            X: 573.101563
+            X: 573.101562
             Y: -67.3886719
             Z: -38.0672607
           }
@@ -16862,7 +16864,7 @@ Assets {
         Transform {
           Location {
             X: 3.27941895
-            Y: -6.84570313
+            Y: -6.84570312
             Z: 31.763443
           }
           Rotation {
@@ -17340,7 +17342,7 @@ Assets {
         Transform {
           Location {
             X: 3.27941895
-            Y: -6.84570313
+            Y: -6.84570312
             Z: 31.763443
           }
           Rotation {
@@ -17736,7 +17738,7 @@ Assets {
         Name: "Modern Weapon - Sight Rear 01"
         Transform {
           Location {
-            X: -7.81445313
+            X: -7.81445312
             Y: -50.2128906
           }
           Rotation {
@@ -18383,7 +18385,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -20846,7 +20848,7 @@ Assets {
         Name: "Pipe - 4-Sided Thin"
         Transform {
           Location {
-            X: 12.1914063
+            X: 12.1914062
           }
           Rotation {
           }
@@ -21204,7 +21206,7 @@ Assets {
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -35027,7 +35029,7 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 5.97851563
+            X: 5.97851562
             Y: -222.1875
           }
           Rotation {
@@ -43138,7 +43140,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Roll: -0.000122070313
+            Roll: -0.000122070312
           }
           Scale {
             X: 3.9190681
@@ -45323,7 +45325,7 @@ Assets {
           }
           Rotation {
             Pitch: -88.0564
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: -89.9998169
           }
           Scale {
@@ -48147,5 +48149,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }
