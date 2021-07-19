@@ -268,7 +268,7 @@ Assets {
         Transform {
           Location {
             X: 109.69751
-            Y: 70.8007813
+            Y: 70.8007812
             Z: 277.65625
           }
           Rotation {
@@ -328,7 +328,7 @@ Assets {
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: 69.0039063
+            X: 69.0039062
             Y: 23.046875
             Z: 286.558777
           }
@@ -528,7 +528,7 @@ Assets {
         Transform {
           Location {
             X: 44.701416
-            Y: -21.0351563
+            Y: -21.0351562
             Z: 148.708344
           }
           Rotation {
@@ -1304,5 +1304,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

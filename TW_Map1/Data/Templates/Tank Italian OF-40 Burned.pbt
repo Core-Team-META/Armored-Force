@@ -3181,7 +3181,7 @@ Assets {
         Name: "O-Bracket"
         Transform {
           Location {
-            X: 573.101563
+            X: 573.101562
             Y: 67.389
             Z: -38.0672607
           }
@@ -5311,7 +5311,7 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: 3.37695313
+            X: 3.37695312
             Y: 4.69824219
             Z: -1.15921021
           }
@@ -5539,7 +5539,7 @@ Assets {
         Name: "Sign Bracket - Square"
         Transform {
           Location {
-            X: 55.2382813
+            X: 55.2382812
             Y: -2.78222656
             Z: -18.0183411
           }
@@ -6066,7 +6066,7 @@ Assets {
         Name: "Modern Weapon - Sight Rear 01"
         Transform {
           Location {
-            X: -7.81445313
+            X: -7.81445312
             Y: -50.2128906
           }
           Rotation {
@@ -11651,7 +11651,7 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 12.1914063
+            X: 12.1914062
             Z: 2.89312744
           }
           Rotation {
@@ -11713,7 +11713,7 @@ Assets {
         Name: "Plane 1m - One Sided"
         Transform {
           Location {
-            X: 12.1914063
+            X: 12.1914062
             Z: 1.88946533
           }
           Rotation {
@@ -11775,7 +11775,7 @@ Assets {
         Name: "Pipe - 4-Sided Thin"
         Transform {
           Location {
-            X: 12.1914063
+            X: 12.1914062
           }
           Rotation {
           }
@@ -22658,7 +22658,7 @@ Assets {
           Location {
             X: -0.561920166
             Y: -0.507080078
-            Z: -2.89257813
+            Z: -2.89257812
           }
           Rotation {
             Pitch: 80.3249512
@@ -25817,7 +25817,7 @@ Assets {
         Transform {
           Location {
             X: -487.028198
-            Y: -33.3007813
+            Y: -33.3007812
             Z: -60.1275177
           }
           Rotation {
@@ -29148,7 +29148,7 @@ Assets {
         Transform {
           Location {
             X: 331.994019
-            Y: -0.133789063
+            Y: -0.133789062
             Z: -19.375679
           }
           Rotation {
@@ -30861,7 +30861,7 @@ Assets {
         Transform {
           Location {
             X: -196.067383
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: -90
@@ -30930,7 +30930,7 @@ Assets {
         Transform {
           Location {
             X: -207.04187
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: -90
@@ -32227,7 +32227,7 @@ Assets {
           }
           Rotation {
             Pitch: -88.0564
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: -89.9998169
           }
           Scale {
@@ -36246,7 +36246,7 @@ Assets {
           Location {
             X: -267.575195
             Y: 75.7978516
-            Z: -44.3476563
+            Z: -44.3476562
           }
           Rotation {
             Yaw: 133.818802
@@ -39437,7 +39437,7 @@ Assets {
         Transform {
           Location {
             X: 33.6167
-            Y: 0.559570313
+            Y: 0.559570312
             Z: 30.7329712
           }
           Rotation {
@@ -39658,7 +39658,7 @@ Assets {
         Transform {
           Location {
             X: 11.923584
-            Y: 0.559570313
+            Y: 0.559570312
             Z: 30.7329712
           }
           Rotation {
@@ -39879,7 +39879,7 @@ Assets {
         Transform {
           Location {
             X: -8.98901367
-            Y: 0.559570313
+            Y: 0.559570312
             Z: 30.7329712
           }
           Rotation {
@@ -40100,7 +40100,7 @@ Assets {
         Transform {
           Location {
             X: -28.5056152
-            Y: 0.559570313
+            Y: 0.559570312
             Z: 30.7329712
           }
           Rotation {
@@ -40512,7 +40512,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Roll: -0.000122070313
+            Roll: -0.000122070312
           }
           Scale {
             X: 3.91906786
@@ -41748,5 +41748,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

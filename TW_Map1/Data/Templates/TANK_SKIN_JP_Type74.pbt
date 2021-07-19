@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -5778,7 +5780,7 @@ Assets {
         Name: "Tank Tread"
         Transform {
           Location {
-            X: -46.6757813
+            X: -46.6757812
             Z: 7.62939453e-06
           }
           Rotation {
@@ -5902,7 +5904,7 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -29.6757813
+            X: -29.6757812
             Z: -4.99998474
           }
           Rotation {
@@ -19633,7 +19635,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -19931,7 +19933,7 @@ Assets {
         Transform {
           Location {
             X: -68.2142334
-            Y: 1.54882813
+            Y: 1.54882812
             Z: 5.8684082
           }
           Rotation {
@@ -20165,7 +20167,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -20821,7 +20823,7 @@ Assets {
         Transform {
           Location {
             X: 1.52044678
-            Y: 9.54101563
+            Y: 9.54101562
             Z: 8.28443909
           }
           Rotation {
@@ -21850,7 +21852,7 @@ Assets {
         Transform {
           Location {
             X: -196.819214
-            Y: 9.54101563
+            Y: 9.54101562
             Z: 8.2845
           }
           Rotation {
@@ -22374,7 +22376,7 @@ Assets {
         Transform {
           Location {
             X: 1.52044678
-            Y: 9.54101563
+            Y: 9.54101562
             Z: 8.28443909
           }
           Rotation {
@@ -23403,7 +23405,7 @@ Assets {
         Transform {
           Location {
             X: -196.819214
-            Y: 9.54101563
+            Y: 9.54101562
             Z: 8.2845
           }
           Rotation {
@@ -31904,7 +31906,7 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.700195313
+            X: 0.700195312
             Y: 1
             Z: 0.810717762
           }
@@ -45821,7 +45823,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: -786.539063
+            X: -786.539062
             Z: 109.999992
           }
           Rotation {
@@ -46951,5 +46953,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

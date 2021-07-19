@@ -79,6 +79,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -5544,7 +5546,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -22633,7 +22635,7 @@ Assets {
             Z: 53.329277
           }
           Rotation {
-            Yaw: -13.4257813
+            Yaw: -13.4257812
           }
           Scale {
             X: 1.203
@@ -28681,7 +28683,7 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -45.8007813
+            X: -45.8007812
             Y: 2.44607091
             Z: 6.30859613
           }
@@ -36126,5 +36128,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

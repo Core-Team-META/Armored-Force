@@ -5580,7 +5580,7 @@ Assets {
         Name: "Urban Floor Grate Fire Escape - 2m x 2m"
         Transform {
           Location {
-            X: -308.351563
+            X: -308.351562
             Y: -453.862061
             Z: 1852.71814
           }
@@ -11640,5 +11640,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

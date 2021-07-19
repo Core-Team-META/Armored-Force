@@ -8055,7 +8055,7 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: 5.50976563
+            X: 5.50976562
             Y: 12.5779419
             Z: 6.29370117
           }
@@ -8348,7 +8348,7 @@ Assets {
         Transform {
           Location {
             X: -237.236328
-            Y: 22.0664063
+            Y: 22.0664062
             Z: 95.7941589
           }
           Rotation {
@@ -11282,7 +11282,7 @@ Assets {
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -19337,7 +19337,7 @@ Assets {
         Transform {
           Location {
             X: 26.1444092
-            Y: 0.0219726563
+            Y: 0.0219726562
             Z: 11.6255798
           }
           Rotation {
@@ -20064,7 +20064,7 @@ Assets {
         Transform {
           Location {
             X: 215.804504
-            Y: 255.164063
+            Y: 255.164062
             Z: 81.437561
           }
           Rotation {
@@ -20395,7 +20395,7 @@ Assets {
           Rotation {
             Pitch: 0.213149697
             Yaw: -140.08493
-            Roll: -0.254882813
+            Roll: -0.254882812
           }
           Scale {
             X: 0.727047145
@@ -23576,7 +23576,7 @@ Assets {
         Transform {
           Location {
             X: 25.5830078
-            Y: 16.2539063
+            Y: 16.2539062
             Z: 0.000213623047
           }
           Rotation {
@@ -24552,5 +24552,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

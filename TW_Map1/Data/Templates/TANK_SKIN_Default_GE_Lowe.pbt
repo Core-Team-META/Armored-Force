@@ -79,6 +79,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -902,7 +904,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -231.62027
           }
           Rotation {
@@ -5218,7 +5220,7 @@ Assets {
         Name: "Military Tank Historic Wheel 01"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 11.9225616
             Z: -1.52587891e-05
           }
@@ -5285,7 +5287,7 @@ Assets {
         Name: "Urban Pipe Straight"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 7.70288086
             Z: 4.57763672e-05
           }
@@ -5353,7 +5355,7 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -19.6254578
             Z: 4.57763672e-05
           }
@@ -6210,7 +6212,7 @@ Assets {
         Name: "Tank Tread"
         Transform {
           Location {
-            X: 62.7226563
+            X: 62.7226562
             Y: 0.0078125
             Z: 1.52587891e-05
           }
@@ -7394,7 +7396,7 @@ Assets {
         Transform {
           Location {
             X: 175.05542
-            Y: -43.6132813
+            Y: -43.6132812
             Z: 0.765602112
           }
           Rotation {
@@ -13142,7 +13144,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -30473,5 +30475,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

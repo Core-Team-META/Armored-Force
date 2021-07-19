@@ -6744,7 +6744,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 0.211914063
+            X: 0.211914062
             Y: 106.821289
             Z: 33.4627686
           }
@@ -6810,7 +6810,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 0.211914063
+            X: 0.211914062
             Y: 428.216309
             Z: 309.540771
           }
@@ -8005,7 +8005,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -0.442382813
+            X: -0.442382812
             Y: -185.616699
             Z: 351.657715
           }
@@ -8778,7 +8778,7 @@ Assets {
         Name: "Craftsman Interior Door 01"
         Transform {
           Location {
-            X: -78.1601563
+            X: -78.1601562
             Y: -9.25927734
             Z: 186.2146
           }
@@ -10030,7 +10030,7 @@ Assets {
         Transform {
           Location {
             X: 196.885742
-            Y: -0.340820313
+            Y: -0.340820312
           }
           Rotation {
             Pitch: 53.6828575
@@ -10259,7 +10259,7 @@ Assets {
         Name: "Stone"
         Transform {
           Location {
-            X: 322.976563
+            X: 322.976562
             Y: -254.421875
             Z: 485.527466
           }
@@ -10969,5 +10969,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

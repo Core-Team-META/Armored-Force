@@ -734,7 +734,7 @@ Assets {
         Name: "Cylinder - Polished"
         Transform {
           Location {
-            X: -88.7695313
+            X: -88.7695312
             Y: 0.277340591
             Z: 23.9827042
           }
@@ -1212,7 +1212,7 @@ Assets {
         Transform {
           Location {
             X: -88.8437576
-            Y: 78.7695313
+            Y: 78.7695312
             Z: 23.5673981
           }
           Rotation {
@@ -1282,7 +1282,7 @@ Assets {
         Transform {
           Location {
             X: -88.8437576
-            Y: 87.9726563
+            Y: 87.9726562
             Z: 23.5673981
           }
           Rotation {
@@ -1898,7 +1898,7 @@ Assets {
         Transform {
           Location {
             X: -46.3867188
-            Y: -58.1289063
+            Y: -58.1289062
             Z: 48.1423416
           }
           Rotation {
@@ -1973,7 +1973,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -89.2226563
+            X: -89.2226562
             Y: -55.890625
             Z: 45.2220497
           }
@@ -2126,7 +2126,7 @@ Assets {
         Transform {
           Location {
             X: -21.5898438
-            Y: 63.0976563
+            Y: 63.0976562
             Z: 49.7743301
           }
           Rotation {
@@ -2202,7 +2202,7 @@ Assets {
         Transform {
           Location {
             X: 48.4335938
-            Y: 63.0976563
+            Y: 63.0976562
             Z: 49.7743301
           }
           Rotation {
@@ -2277,7 +2277,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 73.2382813
+            X: 73.2382812
             Y: 59.0625
             Z: 48.1423721
           }
@@ -2430,7 +2430,7 @@ Assets {
         Transform {
           Location {
             X: -89.2226639
-            Y: 56.9882813
+            Y: 56.9882812
             Z: 45.2219353
           }
           Rotation {
@@ -3095,5 +3095,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

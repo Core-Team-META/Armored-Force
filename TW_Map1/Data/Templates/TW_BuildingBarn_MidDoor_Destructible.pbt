@@ -65,7 +65,7 @@ Assets {
         Name: "DestructionTrigger"
         Transform {
           Location {
-            X: -52.2382813
+            X: -52.2382812
             Y: 60
             Z: 231.929138
           }
@@ -672,7 +672,7 @@ Assets {
         Transform {
           Location {
             X: 65.5
-            Y: -59.5976563
+            Y: -59.5976562
             Z: 51.8256836
           }
           Rotation {
@@ -834,7 +834,7 @@ Assets {
         Transform {
           Location {
             X: 65.5
-            Y: -34.5976563
+            Y: -34.5976562
             Z: 416.825684
           }
           Rotation {
@@ -999,7 +999,7 @@ Assets {
         Transform {
           Location {
             X: 85.4277344
-            Y: -59.5976563
+            Y: -59.5976562
             Z: 471.839355
           }
           Rotation {
@@ -1254,7 +1254,7 @@ Assets {
         Name: "Roof"
         Transform {
           Location {
-            X: -37.0507813
+            X: -37.0507812
             Y: 56.7597656
             Z: 625
           }
@@ -1319,7 +1319,7 @@ Assets {
         Transform {
           Location {
             X: 65.5
-            Y: -34.5976563
+            Y: -34.5976562
             Z: 465.7771
           }
           Rotation {
@@ -1438,5 +1438,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

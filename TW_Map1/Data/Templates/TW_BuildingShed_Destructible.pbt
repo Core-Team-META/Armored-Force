@@ -339,7 +339,7 @@ Assets {
         Transform {
           Location {
             X: -52.3085938
-            Y: -17.8320313
+            Y: -17.8320312
             Z: 432.12677
           }
           Rotation {
@@ -1302,7 +1302,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 2.80664063
+            X: 2.80664062
             Y: -19.5
             Z: 2.43664551
           }
@@ -1464,7 +1464,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 2.80664063
+            X: 2.80664062
             Y: 405.5
             Z: 2.43664551
           }
@@ -1859,7 +1859,7 @@ Assets {
             Z: 20.12117
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 0.815593243
@@ -2146,5 +2146,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

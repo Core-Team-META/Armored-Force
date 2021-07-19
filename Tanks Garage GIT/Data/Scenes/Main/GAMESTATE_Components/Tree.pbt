@@ -1,6 +1,35 @@
 Name: "GAMESTATE_Components"
 RootId: 15534379475757777486
 Objects {
+  Id: 18182848617759073398
+  Name: "GAMEHELPER_Components"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15534379475757777486
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "GAMEHELPER_Components_1"
+  }
+}
+Objects {
   Id: 6031029581927456576
   Name: "SendToShootingRangeView"
   Transform {

@@ -5516,7 +5516,7 @@ Assets {
         Transform {
           Location {
             X: -208.691162
-            Y: -227.507813
+            Y: -227.507812
             Z: 306.74884
           }
           Rotation {
@@ -5663,7 +5663,7 @@ Assets {
         Transform {
           Location {
             X: -112.32666
-            Y: -227.507813
+            Y: -227.507812
             Z: 306.74884
           }
           Rotation {
@@ -5823,7 +5823,7 @@ Assets {
         Transform {
           Location {
             X: -32.8474121
-            Y: -227.507813
+            Y: -227.507812
             Z: 306.74884
           }
           Rotation {
@@ -5983,7 +5983,7 @@ Assets {
         Transform {
           Location {
             X: 75.6568604
-            Y: -227.507813
+            Y: -227.507812
             Z: 306.74884
           }
           Rotation {
@@ -7436,7 +7436,7 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -219.101563
+            X: -219.101562
             Y: 88.0236816
             Z: 442.263855
           }
@@ -7581,7 +7581,7 @@ Assets {
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: -219.101563
+            X: -219.101562
             Y: 13.7243652
             Z: 442.051849
           }
@@ -8842,7 +8842,7 @@ Assets {
         Transform {
           Location {
             X: -55.4035645
-            Y: -53.0820313
+            Y: -53.0820312
             Z: 499.766571
           }
           Rotation {
@@ -13229,5 +13229,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

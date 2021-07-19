@@ -444,7 +444,7 @@ Assets {
         Name: "Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: 111.320313
+            X: 111.320312
             Y: 177.371094
             Z: 135.19516
           }
@@ -498,7 +498,7 @@ Assets {
         Transform {
           Location {
             X: -12.2763672
-            Y: 83.2695313
+            Y: 83.2695312
             Z: 690.195068
           }
           Rotation {
@@ -602,7 +602,7 @@ Assets {
         Transform {
           Location {
             X: -12.4482422
-            Y: 23.2695313
+            Y: 23.2695312
             Z: 802.237793
           }
           Rotation {
@@ -1916,7 +1916,7 @@ Assets {
         Transform {
           Location {
             X: -46.8603516
-            Y: 33.6289063
+            Y: 33.6289062
             Z: 627.349609
           }
           Rotation {
@@ -2123,7 +2123,7 @@ Assets {
         Transform {
           Location {
             X: -73.7685547
-            Y: 166.664063
+            Y: 166.664062
             Z: 101.126923
           }
           Rotation {
@@ -2249,7 +2249,7 @@ Assets {
         Transform {
           Location {
             X: -73.7685547
-            Y: 60.0976563
+            Y: 60.0976562
             Z: 11.5870056
           }
           Rotation {
@@ -2375,7 +2375,7 @@ Assets {
         Transform {
           Location {
             X: -11.2363281
-            Y: 53.2695313
+            Y: 53.2695312
             Z: 848.875122
           }
           Rotation {
@@ -2761,7 +2761,7 @@ Assets {
         Transform {
           Location {
             X: 20.8798828
-            Y: 63.6289063
+            Y: 63.6289062
             Z: 203.333344
           }
           Rotation {
@@ -2825,7 +2825,7 @@ Assets {
         Name: "Arch"
         Transform {
           Location {
-            X: -65.8164063
+            X: -65.8164062
             Y: 52.6992188
             Z: 95.2434387
           }
@@ -3053,5 +3053,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

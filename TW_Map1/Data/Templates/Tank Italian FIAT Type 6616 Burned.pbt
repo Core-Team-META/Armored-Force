@@ -9821,7 +9821,7 @@ Assets {
           }
           Rotation {
             Pitch: 90
-            Roll: -0.000122070313
+            Roll: -0.000122070312
           }
           Scale {
             X: 3.79367661
@@ -12103,7 +12103,7 @@ Assets {
         Name: "Pyramid - 4-Sided Truncated Polished"
         Transform {
           Location {
-            X: -71.5820313
+            X: -71.5820312
             Y: 162.866211
             Z: -1.56013489
           }
@@ -12548,7 +12548,7 @@ Assets {
         Transform {
           Location {
             X: -395.012878
-            Y: 239.539063
+            Y: 239.539062
             Z: 11.8130341
           }
           Rotation {
@@ -12698,7 +12698,7 @@ Assets {
         Transform {
           Location {
             X: -412.250916
-            Y: 161.601563
+            Y: 161.601562
             Z: -1.56971741
           }
           Rotation {
@@ -16473,8 +16473,8 @@ Assets {
         Name: "Wedge - Convex Polished"
         Transform {
           Location {
-            X: 11.8476563
-            Y: 0.0629882813
+            X: 11.8476562
+            Y: 0.0629882812
             Z: 18.7202148
           }
           Rotation {
@@ -17976,7 +17976,7 @@ Assets {
         Transform {
           Location {
             X: 1.13256836
-            Y: -3.35351563
+            Y: -3.35351562
             Z: 16.0265503
           }
           Rotation {
@@ -18204,7 +18204,7 @@ Assets {
         Transform {
           Location {
             X: 13.4431152
-            Y: 15.7851563
+            Y: 15.7851562
             Z: 40.022522
           }
           Rotation {
@@ -20035,7 +20035,7 @@ Assets {
           Location {
             X: -44.418335
             Y: 97.3461914
-            Z: 0.0786132813
+            Z: 0.0786132812
           }
           Rotation {
             Pitch: -53.7861061
@@ -21269,7 +21269,7 @@ Assets {
         Name: "Ring - Thick"
         Transform {
           Location {
-            X: -328.195313
+            X: -328.195312
             Y: -88.5639191
             Z: 93.9170532
           }
@@ -24836,5 +24836,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

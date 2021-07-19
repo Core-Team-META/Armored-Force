@@ -255,7 +255,7 @@ function ChangeGarageModel(id)
 	localPlayer.clientUserData.garageModel.reference = newModel
 	localPlayer.clientUserData.garageModel.id = vehicleIDString
 	
-	Events.Broadcast("SET_SKIN", localPlayer, vehicleID, nil)
+	Events.Broadcast("INITIALIZE_SKIN", localPlayer)
 	
 end
 

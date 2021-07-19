@@ -2817,7 +2817,7 @@ Assets {
         Transform {
           Location {
             X: -26.0059204
-            Y: 0.000122070313
+            Y: 0.000122070312
           }
           Rotation {
             Pitch: -90
@@ -2889,7 +2889,7 @@ Assets {
         Transform {
           Location {
             X: -10.0063782
-            Y: 0.000122070313
+            Y: 0.000122070312
             Z: 4.15477
           }
           Rotation {
@@ -2962,7 +2962,7 @@ Assets {
         Transform {
           Location {
             X: 36.0123901
-            Y: 0.000122070313
+            Y: 0.000122070312
             Z: 4.15477
           }
           Rotation {
@@ -5683,7 +5683,7 @@ Assets {
         Transform {
           Location {
             X: 70
-            Y: 6.10351563e-05
+            Y: 6.10351562e-05
             Z: -20
           }
           Rotation {
@@ -6822,7 +6822,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 196.384155
           }
           Rotation {
@@ -8613,7 +8613,7 @@ Assets {
           Location {
             X: -0.868408203
             Y: -20.9482422
-            Z: 0.786132813
+            Z: 0.786132812
           }
           Rotation {
             Pitch: -90
@@ -10642,6 +10642,6 @@ Assets {
   Marketplace {
     Description: "German Panther Tank (Prop)"
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
   DirectlyPublished: true
 }

@@ -291,7 +291,7 @@ Assets {
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -21.7539063
+            X: -21.7539062
             Y: 0.048828125
             Z: 112.3862
           }
@@ -762,7 +762,7 @@ Assets {
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: 55.9414063
+            X: 55.9414062
             Y: 182.208252
             Z: 449.059143
           }
@@ -2713,5 +2713,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

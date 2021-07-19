@@ -6441,7 +6441,7 @@ Assets {
         Name: "Pipe - 90-Degree Long"
         Transform {
           Location {
-            X: 5.50976563
+            X: 5.50976562
             Y: 12.5779419
             Z: 6.29370117
           }
@@ -6734,7 +6734,7 @@ Assets {
         Transform {
           Location {
             X: -237.236328
-            Y: 22.0664063
+            Y: 22.0664062
             Z: 95.7941589
           }
           Rotation {
@@ -8559,7 +8559,7 @@ Assets {
         Transform {
           Location {
             X: 21.3701172
-            Y: 5.32226563
+            Y: 5.32226562
             Z: 61.8255615
           }
           Rotation {
@@ -9677,7 +9677,7 @@ Assets {
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -14655,7 +14655,7 @@ Assets {
           Rotation {
             Pitch: -9.85165405
             Yaw: 59.5114746
-            Roll: 89.1132813
+            Roll: 89.1132812
           }
           Scale {
             X: 0.0549496301
@@ -16825,7 +16825,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -17718,7 +17718,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -20831,7 +20831,7 @@ Assets {
         Transform {
           Location {
             X: 215.804504
-            Y: 255.164063
+            Y: 255.164062
             Z: 81.437561
           }
           Rotation {
@@ -29907,7 +29907,7 @@ Assets {
         Name: "Scorch Mark Decal"
         Transform {
           Location {
-            Y: -55.0507813
+            Y: -55.0507812
             Z: 121.968399
           }
           Rotation {
@@ -30607,6 +30607,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -30657,6 +30658,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -31843,5 +31845,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

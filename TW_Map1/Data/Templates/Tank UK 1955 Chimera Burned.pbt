@@ -609,7 +609,7 @@ Assets {
         Name: "Basic Explosion VFX"
         Transform {
           Location {
-            X: -3.16601563
+            X: -3.16601562
             Y: -57.3862305
             Z: 305.299225
           }
@@ -5590,7 +5590,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -8695,7 +8695,7 @@ Assets {
         Name: "Military Tank Historic Armorplate 01 Rear"
         Transform {
           Location {
-            X: 136.289063
+            X: 136.289062
             Y: 310.610352
             Z: 134.160126
           }
@@ -15038,7 +15038,7 @@ Assets {
             Z: 53.329277
           }
           Rotation {
-            Yaw: -13.4257813
+            Yaw: -13.4257812
           }
           Scale {
             X: 1.203
@@ -20173,7 +20173,7 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -45.8007813
+            X: -45.8007812
             Y: 2.44607091
             Z: 6.30859613
           }
@@ -21744,7 +21744,7 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 17.2851563
+            X: 17.2851562
             Y: 126.652344
             Z: -368.763672
           }
@@ -21892,7 +21892,7 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 17.2851563
+            X: 17.2851562
             Y: 126.652344
             Z: -255.46582
           }
@@ -22040,7 +22040,7 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 17.2851563
+            X: 17.2851562
             Y: 126.652344
             Z: -138.624512
           }
@@ -25649,5 +25649,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }
