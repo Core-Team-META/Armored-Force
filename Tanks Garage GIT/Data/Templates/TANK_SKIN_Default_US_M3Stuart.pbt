@@ -168,7 +168,7 @@ Assets {
         Name: "Hull"
         Transform {
           Location {
-            X: -64.5284
+            X: -64.5283661
             Z: 162.542938
           }
           Rotation {
@@ -24116,7 +24116,7 @@ Assets {
       }
       Objects {
         Id: 12183065303998920283
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: -3.38519979
@@ -30193,7 +30193,7 @@ Assets {
       }
       Objects {
         Id: 6727931700597543080
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 10
@@ -35357,7 +35357,7 @@ Assets {
       }
       Objects {
         Id: 4875812750322805085
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 10.9335938
@@ -43817,7 +43817,7 @@ Assets {
         Name: "ExtraFX"
         Transform {
           Location {
-            Z: 169.894897
+            Z: 169.894882
           }
           Rotation {
           }

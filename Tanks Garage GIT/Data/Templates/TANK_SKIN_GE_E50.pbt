@@ -2629,7 +2629,7 @@ Assets {
       }
       Objects {
         Id: 13642846409155531573
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 10
@@ -5834,7 +5834,7 @@ Assets {
       }
       Objects {
         Id: 10749605486310127592
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 10
