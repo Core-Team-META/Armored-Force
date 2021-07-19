@@ -439,7 +439,7 @@ function OnArmorHit(trigger, other)
 		other.capsuleLength = 0
 		other.lifeSpan = 0.1
 				
-		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
+		if not Object.IsValid(enemyPlayer) or not enemyPlayer:IsA("Player") or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
 			return
 		end
 		
