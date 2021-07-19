@@ -30,13 +30,9 @@ function OnServerStateChange(serverManager, property)
 		player = GetPlayer(w)
 		
 		if player then
-		
-			break 
-			
+			break 	
 		else 
-		
-			return
-			
+			return	
 		end
 	
 	end
@@ -46,11 +42,11 @@ function OnServerStateChange(serverManager, property)
 	
 		Task.Wait(0.1)
 	
-		player:Respawn({position = spawnLocation:GetWorldPosition(), rotation = spawnLocation:GetWorldRotation()})	
+		player:Spawn({position = spawnLocation:GetWorldPosition(), rotation = spawnLocation:GetWorldRotation()})	
 		
 	elseif string.find(property, "GARAGE_STATE") then
 	
-		player:Respawn()
+		player:Spawn()
 		
 	end	
 

@@ -118,7 +118,7 @@ end
 -- Gives original equipment
 function OnPlayerJoined(player)
 
-	player.respawnedEvent:Connect(OnPlayerRespawned)
+	player.spawnedEvent:Connect(OnPlayerRespawned)
 	
 end
 
