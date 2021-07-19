@@ -362,13 +362,11 @@ Objects {
   Name: "DEFAULT_MENU"
   Transform {
     Location {
-      X: -1392.5553
-      Y: -91.1787109
-      Z: 334.414337
+      X: -1100
+      Z: 300
     }
     Rotation {
-      Pitch: -5.9261179
-      Yaw: 0.227442086
+      Pitch: -5
       Roll: 1.5339846e-07
     }
     Scale {
@@ -391,6 +389,7 @@ Objects {
     IsDistanceAdjustable: true
     MinDistance: -500
     PositionOffset {
+      X: -500
     }
     RotationOffset {
     }
@@ -401,6 +400,7 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
+    DoesPositionOffsetSpring: true
     UseAsAudioListener: true
   }
 }
