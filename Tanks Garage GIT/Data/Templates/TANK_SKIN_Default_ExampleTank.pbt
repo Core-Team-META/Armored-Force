@@ -17058,9 +17058,7 @@ Assets {
           }
         }
         ParentId: 8428483058073940955
-        ChildIds: 16649418168247765662
-        ChildIds: 2641130656017523732
-        ChildIds: 14118632003333772371
+        ChildIds: 5925737635337646520
         ChildIds: 6814361611971930306
         ChildIds: 6711251933245162040
         ChildIds: 14322936596934342679
@@ -17080,23 +17078,59 @@ Assets {
         }
       }
       Objects {
-        Id: 16649418168247765662
-        Name: "Military Tank Historic Tread 01 Mid"
+        Id: 5925737635337646520
+        Name: "IgnoreGroup"
         Transform {
           Location {
-            X: -24.4377518
-            Y: -6.76348352
+            X: -17.3213921
+            Y: -6.76322079
             Z: -7.03273916
           }
           Rotation {
           }
           Scale {
-            X: 1.44502687
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18203038588702905488
+        ChildIds: 16649418168247765662
+        ChildIds: 2641130656017523732
+        ChildIds: 14118632003333772371
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 16649418168247765662
+        Name: "Military Tank Historic Tread 01 Mid"
+        Transform {
+          Location {
+            X: -7.11629772
+            Y: -0.00023576
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.44502676
             Y: 1
             Z: 1.13092875
           }
         }
-        ParentId: 18203038588702905488
+        ParentId: 5925737635337646520
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -17126,9 +17160,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 258.437439
-            Y: -6.76348352
-            Z: 0.463591516
+            X: 275.75882
+            Y: -0.00023576
+            Z: 7.49633074
           }
           Rotation {
           }
@@ -17138,7 +17172,7 @@ Assets {
             Z: 1.06140053
           }
         }
-        ParentId: 18203038588702905488
+        ParentId: 5925737635337646520
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -17168,9 +17202,9 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -285.963867
-            Y: -6.76269531
-            Z: 3.92625427
+            X: -268.642456
+            Y: 0.00048828125
+            Z: 10.958993
           }
           Rotation {
           }
@@ -17180,7 +17214,7 @@ Assets {
             Z: 1.06127965
           }
         }
-        ParentId: 18203038588702905488
+        ParentId: 5925737635337646520
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -21888,7 +21922,7 @@ Assets {
       }
       Objects {
         Id: 11549131246418914923
-        Name: "TreadFrame"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 10
