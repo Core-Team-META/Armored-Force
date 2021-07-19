@@ -21,7 +21,7 @@ function OnPlayerJoined(player)
 	
 	--playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = nil
 	
-	if not playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] then
+	if not playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] or not string.find(playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL], "33") then
 		SetNewPlayerSkins(playerSharedStorage)
 	end
 	

@@ -5797,7 +5797,7 @@ Assets {
         Transform {
           Location {
             X: 0.991943359
-            Y: -1.15039063
+            Y: -1.15039062
             Z: 3.93948364
           }
           Rotation {
@@ -11528,7 +11528,7 @@ Assets {
           Rotation {
             Pitch: -5.73693848
             Yaw: -89.5108
-            Roll: -0.0239257813
+            Roll: -0.0239257812
           }
           Scale {
             X: 0.296892792
@@ -12213,7 +12213,7 @@ Assets {
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -15260,7 +15260,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 198.732178
             Z: -2.86102295e-06
           }
@@ -15865,8 +15865,8 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: 0.0102539063
-            Y: 0.301757813
+            X: 0.0102539062
+            Y: 0.301757812
             Z: 2.57978058
           }
           Rotation {
@@ -18037,7 +18037,7 @@ Assets {
         Transform {
           Location {
             X: -222.084167
-            Y: -6.12695313
+            Y: -6.12695312
             Z: -36.2444077
           }
           Rotation {
@@ -24618,7 +24618,7 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: -23.9414063
+            X: -23.9414062
             Y: 18.4675293
           }
           Rotation {
@@ -28278,5 +28278,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

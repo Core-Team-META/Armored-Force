@@ -8929,7 +8929,7 @@ Objects {
   Transform {
     Location {
       X: 1122.4375
-      Y: 4328.57813
+      Y: 4328.57812
       Z: 553.428223
     }
     Rotation {
@@ -9903,7 +9903,7 @@ Objects {
   Name: "destructible sandbags"
   Transform {
     Location {
-      X: -3083.76563
+      X: -3083.76562
       Y: -277.003906
       Z: -2293.08594
     }

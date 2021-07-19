@@ -6562,7 +6562,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -18786,7 +18786,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 228.422852
             Z: 6.67572e-06
           }
@@ -20004,7 +20004,7 @@ Assets {
         Transform {
           Location {
             X: 175.05542
-            Y: -43.6132813
+            Y: -43.6132812
             Z: 0.765602112
           }
           Rotation {
@@ -25118,5 +25118,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

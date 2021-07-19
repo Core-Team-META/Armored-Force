@@ -449,7 +449,7 @@ Assets {
         Transform {
           Location {
             X: 108.59668
-            Y: 174.101563
+            Y: 174.101562
             Z: 132.563416
           }
           Rotation {
@@ -1869,7 +1869,7 @@ Assets {
         Transform {
           Location {
             X: 51.4543457
-            Y: -177.632813
+            Y: -177.632812
             Z: 464.370728
           }
           Rotation {
@@ -2485,7 +2485,7 @@ Assets {
         Transform {
           Location {
             X: -13.5483398
-            Y: 84.8789063
+            Y: 84.8789062
             Z: 859.441528
           }
           Rotation {
@@ -2549,7 +2549,7 @@ Assets {
         Transform {
           Location {
             X: 21.7390137
-            Y: 47.1445313
+            Y: 47.1445312
             Z: 860.296875
           }
           Rotation {
@@ -2798,7 +2798,7 @@ Assets {
         Transform {
           Location {
             X: -76.4924316
-            Y: -49.8476563
+            Y: -49.8476562
             Z: 98.4951782
           }
           Rotation {
@@ -2923,8 +2923,8 @@ Assets {
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -255.070313
-            Y: 50.7851563
+            X: -255.070312
+            Y: 50.7851562
             Z: 777.28125
           }
           Rotation {
@@ -3554,5 +3554,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

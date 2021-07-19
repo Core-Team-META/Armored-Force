@@ -130,6 +130,7 @@ function SetClientData()
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 	
 	Events.Broadcast("EquippedTankDataSet", nil)
+	Events.Broadcast("INITIALIZE_SKIN", driver)
 end
 
 function OnTankStateChanged(controllerServer, property)

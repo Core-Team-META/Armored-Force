@@ -12341,7 +12341,7 @@ Assets {
         Name: "Military Tank Historic Armor Plate 01 - Rear"
         Transform {
           Location {
-            X: -18.7226563
+            X: -18.7226562
             Y: 306.317749
             Z: 147.277573
           }
@@ -22131,5 +22131,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

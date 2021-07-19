@@ -1,6 +1,6 @@
 Assets {
-  Id: 7145139164389251397
-  Name: "GAMESTATE_GARAGE_SkinsServer"
+  Id: 2896591224378290973
+  Name: "GAMESTATE_SkinsClient"
   PlatformAssetType: 3
   TextAsset {
   }

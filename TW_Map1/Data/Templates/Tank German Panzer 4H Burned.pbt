@@ -429,7 +429,7 @@ Assets {
         Name: "Explosion Kit Spark Burst VFX"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Z: 58
           }
           Rotation {
@@ -498,7 +498,7 @@ Assets {
         Name: "Explosion Kit Base Spikes VFX"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Z: 58
           }
           Rotation {
@@ -556,7 +556,7 @@ Assets {
         Name: "Large Dirt Impact VFX"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Z: 58
           }
           Rotation {
@@ -653,7 +653,7 @@ Assets {
         Name: "Explosion Kit Afterglow VFX"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Z: 58
           }
           Rotation {
@@ -977,7 +977,7 @@ Assets {
           }
           Rotation {
             Pitch: -7.01250696
-            Yaw: 176.976563
+            Yaw: 176.976562
             Roll: 40.9343147
           }
           Scale {
@@ -5866,7 +5866,7 @@ Assets {
         Transform {
           Location {
             X: -21.838501
-            Y: 3.86914063
+            Y: 3.86914062
             Z: 4.14889526
           }
           Rotation {
@@ -6764,7 +6764,7 @@ Assets {
         Transform {
           Location {
             X: -264.150024
-            Y: -230.070313
+            Y: -230.070312
             Z: 33.951355
           }
           Rotation {
@@ -14288,7 +14288,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 227.365723
             Z: 8.04662704e-06
           }
@@ -15418,7 +15418,7 @@ Assets {
         Name: "Turret"
         Transform {
           Location {
-            X: -38.4882813
+            X: -38.4882812
             Y: 2.74121094
             Z: 262.085938
           }
@@ -20344,7 +20344,7 @@ Assets {
             Z: 71.5171
           }
           Rotation {
-            Pitch: -0.0532226563
+            Pitch: -0.0532226562
             Yaw: -90.3538513
             Roll: 76.6167
           }
@@ -21313,5 +21313,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

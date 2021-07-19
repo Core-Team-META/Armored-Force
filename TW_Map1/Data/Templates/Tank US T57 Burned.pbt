@@ -977,7 +977,7 @@ Assets {
           }
           Rotation {
             Pitch: -7.01250696
-            Yaw: 176.976563
+            Yaw: 176.976562
             Roll: -40.8482628
           }
           Scale {
@@ -3573,7 +3573,7 @@ Assets {
         Transform {
           Location {
             X: 1.83496094
-            Y: 5.58007813
+            Y: 5.58007812
             Z: 22.2758331
           }
           Rotation {
@@ -13269,7 +13269,7 @@ Assets {
           }
           Rotation {
             Yaw: 5.71015903e-07
-            Roll: -84.1289063
+            Roll: -84.1289062
           }
           Scale {
             X: 0.15308103
@@ -13891,7 +13891,7 @@ Assets {
         Name: "Tread_L"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -200.237366
           }
           Rotation {
@@ -15957,7 +15957,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -0.00805664063
+            X: -0.00805664062
             Y: 202.036621
             Z: 1.7285347e-06
           }
@@ -24673,5 +24673,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

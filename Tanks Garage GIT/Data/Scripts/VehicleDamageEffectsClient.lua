@@ -24,7 +24,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 Task.Wait(1)
 local VEHICLE = script:FindAncestorByType('Vehicle')
 if not Object.IsValid(VEHICLE) or not VEHICLE:IsA('Vehicle') then
-    error(script.name .. " should be part of Vehicle object hierarchy.")
+    --error(script.name .. " should be part of Vehicle object hierarchy.")
 end
 
 -- User exposed external properties

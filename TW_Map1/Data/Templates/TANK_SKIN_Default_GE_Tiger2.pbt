@@ -12783,7 +12783,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -13315,7 +13315,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -22214,7 +22214,7 @@ Assets {
         Transform {
           Location {
             X: 156.051819
-            Y: 241.820313
+            Y: 241.820312
             Z: -6.29257202
           }
           Rotation {
@@ -29786,7 +29786,7 @@ Assets {
           Rotation {
             Pitch: -67.8917236
             Yaw: 90.0423203
-            Roll: -0.204101563
+            Roll: -0.204101562
           }
           Scale {
             X: 0.28346467
@@ -34489,6 +34489,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -34538,6 +34539,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -35715,5 +35717,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

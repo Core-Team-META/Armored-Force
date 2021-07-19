@@ -110,6 +110,19 @@ Assets {
   }
 }
 Assets {
+  Id: 9832100953694811233
+  Name: "Skins1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "9b2318a99ff448e0aa9cc18becefba2d"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 4249713416572262948
   Name: "Container - Hex- Rounded"
   PlatformAssetType: 1

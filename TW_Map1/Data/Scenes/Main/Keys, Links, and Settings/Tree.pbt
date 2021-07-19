@@ -225,6 +225,15 @@ Objects {
         }
       }
     }
+    Overrides {
+      Name: "cs:Skins"
+      NetReference {
+        Key: "9b2318a99ff448e0aa9cc18becefba2d"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

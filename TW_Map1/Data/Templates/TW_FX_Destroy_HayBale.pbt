@@ -36,7 +36,7 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
-            Y: 12.3476563
+            Y: 12.3476562
           }
           Rotation {
           }
@@ -169,7 +169,7 @@ Assets {
         Transform {
           Location {
             X: 11.6328125
-            Y: 13.2070313
+            Y: 13.2070312
           }
           Rotation {
           }
@@ -484,5 +484,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

@@ -48,7 +48,7 @@ Objects {
   Name: "Container - Hex- Rounded"
   Transform {
     Location {
-      X: -13.6132813
+      X: -13.6132812
       Z: -38420
     }
     Rotation {

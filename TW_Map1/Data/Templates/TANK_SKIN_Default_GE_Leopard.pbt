@@ -138,7 +138,7 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -194.788757
             Z: 1.52587891e-05
           }
@@ -4249,7 +4249,7 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: 232.507813
+            X: 232.507812
             Y: -0.0078125
             Z: -5.00001526
           }
@@ -11167,7 +11167,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -11699,7 +11699,7 @@ Assets {
         Name: "Fantasy Shield Strap 01"
         Transform {
           Location {
-            X: 37.0507813
+            X: 37.0507812
             Y: 2.89709473
             Z: 0.428710938
           }
@@ -24588,7 +24588,7 @@ Assets {
           Location {
             X: 2.53497314
             Y: 0.69140625
-            Z: 5.81445313
+            Z: 5.81445312
           }
           Rotation {
             Pitch: 1.24928939
@@ -24641,8 +24641,8 @@ Assets {
         Transform {
           Location {
             X: 0.198242188
-            Y: 0.684570313
-            Z: 7.22070313
+            Y: 0.684570312
+            Z: 7.22070312
           }
           Rotation {
             Pitch: -0.00133188686
@@ -28360,6 +28360,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -28410,6 +28411,7 @@ Assets {
           MinYaw: -50
           MaxYaw: 50
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -28603,7 +28605,7 @@ Assets {
         Name: "Collision Box"
         Transform {
           Location {
-            X: 467.632813
+            X: 467.632812
             Z: 109.999985
           }
           Rotation {
@@ -29524,5 +29526,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

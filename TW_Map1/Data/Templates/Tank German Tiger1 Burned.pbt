@@ -6259,7 +6259,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -90.9882813
+            X: -90.9882812
             Y: 45.159565
             Z: 33.698
           }
@@ -24514,7 +24514,7 @@ Assets {
           Location {
             X: 31.5288391
             Y: 1.12426758
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Pitch: -0.0979309082
@@ -40451,7 +40451,7 @@ Assets {
           }
           Rotation {
             Yaw: -89.9999924
-            Roll: 12.0351563
+            Roll: 12.0351562
           }
           Scale {
             X: 0.965889
@@ -46635,5 +46635,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

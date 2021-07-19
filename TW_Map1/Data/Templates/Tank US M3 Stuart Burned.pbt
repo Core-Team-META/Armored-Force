@@ -89,7 +89,7 @@ Assets {
         Name: "Point Light"
         Transform {
           Location {
-            X: -2.83789063
+            X: -2.83789062
             Y: -24.862793
             Z: 288.370117
           }
@@ -283,7 +283,7 @@ Assets {
         Name: "Fire and Flame Burning Loop Set 01 SFX"
         Transform {
           Location {
-            X: -2.83789063
+            X: -2.83789062
             Y: -24.862793
             Z: 288.370117
           }
@@ -920,7 +920,7 @@ Assets {
           }
           Rotation {
             Pitch: -7.01250696
-            Yaw: 176.976563
+            Yaw: 176.976562
             Roll: 21.3191547
           }
           Scale {
@@ -3173,7 +3173,7 @@ Assets {
         Transform {
           Location {
             X: -5.05578613
-            Y: -14.2382813
+            Y: -14.2382812
             Z: 2.58502197
           }
           Rotation {
@@ -3597,7 +3597,7 @@ Assets {
         Transform {
           Location {
             X: -12.2507324
-            Y: -9.01757813
+            Y: -9.01757812
             Z: -13.5409546
           }
           Rotation {
@@ -5921,7 +5921,7 @@ Assets {
         Transform {
           Location {
             X: 17.2264404
-            Y: 27.0039063
+            Y: 27.0039062
             Z: -29.8470154
           }
           Rotation {
@@ -6740,7 +6740,7 @@ Assets {
         Transform {
           Location {
             X: 17.2264404
-            Y: 27.0039063
+            Y: 27.0039062
             Z: -29.8470154
           }
           Rotation {
@@ -11845,7 +11845,7 @@ Assets {
         Transform {
           Location {
             X: -185.181519
-            Y: -46.9101563
+            Y: -46.9101562
             Z: -38.0937347
           }
           Rotation {
@@ -12604,7 +12604,7 @@ Assets {
         Name: "Military Tank Historic Armor Plate 01 - Rear"
         Transform {
           Location {
-            X: 286.289063
+            X: 286.289062
             Y: -56.1572266
             Z: 12.5234528
           }
@@ -16518,7 +16518,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -16600,7 +16600,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -17973,7 +17973,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -18047,7 +18047,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -20345,7 +20345,7 @@ Assets {
         Name: "Tread_R"
         Transform {
           Location {
-            X: -0.000122070313
+            X: -0.000122070312
             Y: 177.666016
             Z: -7.62939453e-06
           }
@@ -20512,7 +20512,7 @@ Assets {
         Name: "Military Tank Historic Tread 01 Mid"
         Transform {
           Location {
-            X: -0.524414063
+            X: -0.524414062
             Y: 11.1318359
             Z: -3.89485931
           }
@@ -21079,7 +21079,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -21153,7 +21153,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -23017,7 +23017,7 @@ Assets {
         Transform {
           Location {
             X: 54.9678955
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -23107,7 +23107,7 @@ Assets {
         Transform {
           Location {
             X: -54.9678345
-            Y: -5.31445313
+            Y: -5.31445312
           }
           Rotation {
             Yaw: -179.999954
@@ -24911,7 +24911,7 @@ Assets {
         Transform {
           Location {
             X: -27.1878052
-            Y: 7.90820313
+            Y: 7.90820312
             Z: -7.51921082
           }
           Rotation {
@@ -27469,7 +27469,7 @@ Assets {
         Transform {
           Location {
             X: -38.5313721
-            Y: -24.5664063
+            Y: -24.5664062
             Z: 31.9013367
           }
           Rotation {
@@ -28463,7 +28463,7 @@ Assets {
         Transform {
           Location {
             X: 2.24694824
-            Y: -0.125976563
+            Y: -0.125976562
             Z: 2.08889771
           }
           Rotation {
@@ -28534,7 +28534,7 @@ Assets {
         Transform {
           Location {
             X: 2.21496582
-            Y: -0.208007813
+            Y: -0.208007812
           }
           Rotation {
           }
@@ -30617,5 +30617,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

@@ -80,6 +80,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -4032,7 +4034,7 @@ Assets {
         Transform {
           Location {
             X: -13.8203125
-            Y: -12.1757813
+            Y: -12.1757812
             Z: -5
           }
           Rotation {
@@ -4091,7 +4093,7 @@ Assets {
         Transform {
           Location {
             X: 334.609375
-            Y: -12.1757813
+            Y: -12.1757812
             Z: -5
           }
           Rotation {
@@ -4149,8 +4151,8 @@ Assets {
         Name: "Military Tank Historic Tread 01 Front"
         Transform {
           Location {
-            X: -351.851563
-            Y: -12.1757813
+            X: -351.851562
+            Y: -12.1757812
             Z: -5
           }
           Rotation {
@@ -4611,8 +4613,8 @@ Assets {
         Name: "Military Tank Historic Gear 03"
         Transform {
           Location {
-            X: -283.476563
-            Y: 1.69726563
+            X: -283.476562
+            Y: 1.69726562
             Z: -11.9217987
           }
           Rotation {
@@ -14669,7 +14671,7 @@ Assets {
           }
           Rotation {
             Pitch: -87.8768
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
             Roll: 89.9979706
           }
           Scale {
@@ -15468,7 +15470,7 @@ Assets {
         Transform {
           Location {
             X: 30.3337402
-            Y: -0.00805664063
+            Y: -0.00805664062
             Z: 7.77267456
           }
           Rotation {
@@ -17690,7 +17692,7 @@ Assets {
             Z: 2.20698547
           }
           Rotation {
-            Pitch: -2.14257813
+            Pitch: -2.14257812
             Yaw: 95.3869247
             Roll: -4.69271851
           }
@@ -24228,7 +24230,7 @@ Assets {
           Location {
             X: 0.437744141
             Y: 22.4316406
-            Z: -24.2226563
+            Z: -24.2226562
           }
           Rotation {
             Roll: 42.5495567
@@ -24300,7 +24302,7 @@ Assets {
           Location {
             X: 0.437744141
             Y: 22.4316406
-            Z: -24.2226563
+            Z: -24.2226562
           }
           Rotation {
             Yaw: 180
@@ -24373,7 +24375,7 @@ Assets {
           Location {
             X: 0.437744141
             Y: 22.4316406
-            Z: -24.2226563
+            Z: -24.2226562
           }
           Rotation {
             Roll: -137.450241
@@ -24445,7 +24447,7 @@ Assets {
           Location {
             X: 0.437744141
             Y: 22.4316406
-            Z: -24.2226563
+            Z: -24.2226562
           }
           Rotation {
             Yaw: 180
@@ -32381,5 +32383,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }

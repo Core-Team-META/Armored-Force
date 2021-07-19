@@ -79,6 +79,7 @@ Assets {
           MinPitch: -89
           MaxPitch: 89
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -129,6 +130,7 @@ Assets {
           MinYaw: -30
           MaxYaw: 30
           DoesPositionOffsetSpring: true
+          UseAsAudioListener: true
         }
       }
       Objects {
@@ -7513,7 +7515,7 @@ Assets {
           }
           Rotation {
             Yaw: 172.215424
-            Roll: -6.10351563e-05
+            Roll: -6.10351562e-05
           }
           Scale {
             X: 0.785206497
@@ -9273,7 +9275,7 @@ Assets {
         Transform {
           Location {
             X: -315.330933
-            Y: 135.757813
+            Y: 135.757812
             Z: 1.52587891e-05
           }
           Rotation {
@@ -21132,7 +21134,7 @@ Assets {
         Name: "guard"
         Transform {
           Location {
-            X: -42.2382813
+            X: -42.2382812
             Y: 147.5625
             Z: 4.80209351
           }
@@ -26839,7 +26841,7 @@ Assets {
           Rotation {
             Pitch: -171.478088
             Yaw: 0.172302246
-            Roll: -1.40820313
+            Roll: -1.40820312
           }
           Scale {
             X: 0.526470304
@@ -28413,5 +28415,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 94
 }
