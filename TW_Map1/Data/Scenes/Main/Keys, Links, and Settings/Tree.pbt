@@ -228,7 +228,7 @@ Objects {
     Overrides {
       Name: "cs:Skins"
       NetReference {
-        Key: "9b2318a99ff448e0aa9cc18becefba2d"
+        Key: "27ad65b2d21646c7825cd2cbb4fce33d"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
