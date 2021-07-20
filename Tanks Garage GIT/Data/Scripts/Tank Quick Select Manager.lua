@@ -87,3 +87,4 @@ function TanksChanged()
 end
 
 Events.Connect("LoadQuickSelect", PopulateQuickSelectPanel)
+Events.Connect("CHANGE_EQUIPPED_TANK", PopulateQuickSelectPanel)
