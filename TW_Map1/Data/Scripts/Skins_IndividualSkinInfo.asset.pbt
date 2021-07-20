@@ -1,13 +1,9 @@
 Assets {
   Id: 14840956372502537854
-  Name: "Skins_IndividualSkinInfo"
+  Name: "Skins_SkinInfo"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
-      Overrides {
-        Name: "cs:VehicleID"
-        String: "01"
-      }
       Overrides {
         Name: "cs:SkinID"
         String: "0101"

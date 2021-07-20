@@ -15,10 +15,13 @@ local universalSkinInfo = script:GetCustomProperty("Skins_Universal"):WaitForObj
 local allIndividualSkins = {}
 local allUniversalSkins = {}
 
+local dataTransferSet = {}
+
 function OnPlayerJoined(player)
 	
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 	
+	--DEBUG
 	--playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = nil
 	
 	if not playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] or not string.find(playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL], "33") then
@@ -32,16 +35,20 @@ function OnPlayerJoined(player)
 	local dataTransferObject = World.SpawnAsset(DATA_TRANSFER_OBJECT, {parent = DATA_TRANSFER})
     dataTransferObject:SetNetworkedCustomProperty("OwnerId", player.id)
     dataTransferObject:SetNetworkedCustomProperty("Data", playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL])
+    dataTransferSet[player] = dataTransferObject
 	
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
+	
 end
 
 function OnPlayerLeft(player)
 
+	dataTransferSet[player]:Destroy()
+	dataTransferSet[player] = nil
+
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 		
 	playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = ConvertSkinDataToString(player)
-	
 	Storage.SetSharedPlayerData(PLAYER_SHARED_STORAGE, player, playerSharedStorage)
 	
 end
@@ -63,9 +70,9 @@ function OnEquipSkin(player, tankID, skinID)
 	 
 	camoTable[tankID][skinID].equipped = true
 	
-	print("Equipping " .. tostring(skinID) .. " for " .. player.name)
+	print("Equipping " .. tostring(skinID) .. " to " .. tostring(tankID) .. " for " .. player.name)
 	 
-	Events.BroadcastToAllPlayers("SET_SKIN", player, tankID, skinID)
+    dataTransferSet[player]:SetNetworkedCustomProperty("Data", ConvertSkinDataToString(player))
 	
 	--UTIL_API.TablePrint(player.serverUserData.camoData)
 
@@ -84,7 +91,7 @@ function SetNewPlayerSkins(playerSharedStorage)
 		
 		skinString = skinString .. ";"
 	end
-	--print("New Player String: " .. skinString)
+	print("New Player String: " .. skinString)
 	
 	playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = skinString
 	
@@ -167,7 +174,7 @@ function ConvertSkinDataToString(player)
 	end
 	
 	-- DEBUG
-	print("Saved Camo/Skins string: " .. dataString)
+	--print("Saved Camo/Skins string: " .. dataString)
 	
 	return dataString
 
@@ -179,14 +186,10 @@ function Initialize()
 	
 	for _, group in ipairs(individualSkinGroups) do
 		local skins = group:GetChildren()
-		local tankID = nil
+		local tankID = group:GetCustomProperty("VehicleID")
+		allIndividualSkins[tankID] = {}
 		
-		for _, skin in ipairs(skins) do
-			if not tankID then
-				tankID = skin:GetCustomProperty("VehicleID")
-				allIndividualSkins[tankID] = {}
-			end
-			
+		for _, skin in ipairs(skins) do			
 			local skinEntry = {}
 			local skinID = skin:GetCustomProperty("SkinID")
 			
@@ -199,6 +202,8 @@ function Initialize()
 		end
 	
 	end
+	
+	--UTIL_API.TablePrint(allIndividualSkins)
 
 end
 
