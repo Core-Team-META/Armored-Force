@@ -20,7 +20,8 @@ local menuIndex = {
 	[1] = "SHOP_MENU",
 	[2] = "ACHIEVEMENTS_MENU",
 	[3] = "LEADERBOARDS_MENU",
-	[4] = "TECH_TREE_MENU"
+	[4] = "TECH_TREE_MENU",
+	[5] = "CAMOSPRAYS_MENU"
 }
 	
 
