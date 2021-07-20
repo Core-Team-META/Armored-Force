@@ -8,24 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14993338682699294199
-  Name: "Animated Digital Racing Screen"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_clear-coat_001_chevron_uv1"
-  }
-}
-Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
-  }
-}
-Assets {
   Id: 4465877919970375297
   Name: "Metal Greebles 03"
   PlatformAssetType: 2
