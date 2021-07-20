@@ -94,7 +94,7 @@ Objects {
           Value: "mc:ecorehorizontalalign:right"
         }
         VoiceChatVerticalAlignment {
-          Value: "mc:ecoreverticalalign:bottom"
+          Value: "mc:ecoreverticalalign:top"
         }
         VoiceChatEntryHorizontalFlow {
           Value: "mc:ecorehorizontalflow:righttoleft"
