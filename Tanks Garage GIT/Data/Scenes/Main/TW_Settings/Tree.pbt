@@ -89,14 +89,12 @@ Objects {
         }
         AudioFadeIntensityByDistance: 1
         VoiceChatPosition {
-          X: -40
-          Y: 40
         }
         VoiceChatHorizontalAlignment {
           Value: "mc:ecorehorizontalalign:right"
         }
         VoiceChatVerticalAlignment {
-          Value: "mc:ecoreverticalalign:top"
+          Value: "mc:ecoreverticalalign:bottom"
         }
         VoiceChatEntryHorizontalFlow {
           Value: "mc:ecorehorizontalflow:righttoleft"
