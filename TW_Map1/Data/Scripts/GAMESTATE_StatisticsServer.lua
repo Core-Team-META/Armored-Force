@@ -121,7 +121,7 @@ function SubmitScores(player)
 	local recordedKills = player:GetResource("MatchTanksDestroyed")
 
 	if currentKills > recordedKills then
-		player:SetResource("MatchDamageDealt", currentKills)
+		player:SetResource("MatchTanksDestroyed", currentKills)
 		Leaderboards.SubmitPlayerScore(MTD_LEADERBOARD, player, currentKills)
 	end
 
