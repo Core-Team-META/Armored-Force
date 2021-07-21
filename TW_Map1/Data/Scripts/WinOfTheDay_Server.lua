@@ -19,9 +19,11 @@ end
 
 local function SetDailyBonusStatus(player)
     local currentId = player:GetResource(CONST.GetEquippedTankResource())
-    for tankId, value in ipairs(playerDailyTbl[player.id]) do
-        if tankId == currentId and value == 0 then
+    for tankId, value in pairs(playerDailyTbl[player.id]) do
+        if tankId == currentId and tonumber(value) == 0 then
             player:SetResource("DAILY_BONUS", 1)
+        elseif tankId == currentId and tonumber(value) == 1 then
+            player:SetResource("DAILY_BONUS", 0)
         end
     end
 end
@@ -30,7 +32,7 @@ function Init()
     BuildTankTable()
 end
 
-function SetTeamWinner(player)
+function SetWinning(player)
     local tankId = player:GetResource(CONST.GetEquippedTankResource())
     if playerDailyTbl[player.id] and player:GetResource("DAILY_BONUS") == 1 then
         playerDailyTbl[player.id][tankId] = 1
@@ -52,18 +54,19 @@ function OnPlayerJoined(player)
     local shouldReset = false
     if data and data.DAILY and data.DAILY ~= "" then
         dailyTbl = UTIL.ConvertStringToTable(data.DAILY)
-        if dailyTbl.TIME and dailyTbl.TIME < os.time(os.date("!*t")) or not dailyTbl.TIME then
+        if dailyTbl.TIME and dailyTbl.TIME ~= os.date("!*t").yday or not dailyTbl.TIME then
             shouldReset = true
         end
     end
-    if next(dailyTbl) and shouldReset or not next(dailyTbl) then
-        for tankId, _ in ipairs(tankTbl) do
+    if (next(dailyTbl) and shouldReset) or not next(dailyTbl) then
+        for tankId, _ in pairs(tankTbl) do
             dailyTbl[tankId] = 0
         end
-        dailyTbl.TIME = os.time(os.date("!*t")) + (60 * 60 * 12)
+        dailyTbl.TIME = os.date("!*t").yday
     end
 
     playerDailyTbl[player.id] = dailyTbl
+
     SetDailyBonusStatus(player)
 end
 
@@ -73,6 +76,7 @@ function OnPlayerLeft(player)
         data.DAILY = UTIL.ConvertTableToString(playerDailyTbl[player.id])
     end
     Storage.SetSharedPlayerData(STORAGE_NET_REF, player, data)
+    
     playerDailyTbl[player.id] = nil
 end
 
@@ -82,4 +86,4 @@ end
 Init()
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("SetDailyWin", SetTeamWinner)
+Events.Connect("SetDailyWin", SetWinning)
