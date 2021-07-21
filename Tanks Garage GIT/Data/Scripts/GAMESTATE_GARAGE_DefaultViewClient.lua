@@ -30,6 +30,7 @@ local thisComponent = "DEFAULT_MENU"
 local savedState = ""
 
 local consumableSlots = {}
+local enteringFromCamoMenu = false
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -41,15 +42,21 @@ local localPlayer = Game.GetLocalPlayer()
 	SHOOTING_RANGE
 	ACHIEVEMENTS_MENU
 	LEADERBOARDS_MENU
-	
+	CAMOSPRAYS_MENU
 ]]
 
 function ToggleThisComponent(requestedPlayerState)
+
+	if savedState == "CAMOSPRAYS_MENU" then
+		enteringFromCamoMenu = true
+	else 
+		enteringFromCamoMenu = false
+	end
 	
 	savedState = requestedPlayerState
 
 	if requestedPlayerState == thisComponent then
-		if not firstTime then
+		if not firstTime and not enteringFromCamoMenu then
 			Task.Wait(2)
 		else
 			firstTime = false

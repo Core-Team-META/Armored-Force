@@ -52,6 +52,7 @@ local BUTTON_TECHTREE_SHOP = World.FindObjectByName("BUTTON_TECHTREE_SHOP")
 local BUTTON_PREMIUM_SHOP = World.FindObjectByName("BUTTON_PREMIUM_SHOP")
 local BUTTON_ACHIEVEMENTS = World.FindObjectByName("BUTTON_ACHIEVEMENTS")
 local BUTTON_LEADERBOARDS = World.FindObjectByName("BUTTON_LEADERBOARDS")
+local BUTTON_CAMOSPRAYS = World.FindObjectByName("BUTTON_CAMOSPRAYS")
 
 local DEPLOY = World.FindObjectByName("DEPLOY")
 local DEPLOY_IDLE = World.FindObjectByName("DEPLOY_IDLE")
@@ -162,6 +163,7 @@ local TECHTREE_HOVER = World.FindObjectByName("TECHTREE_HOVER")
 local PREMIUM_SHOP_HOVER = World.FindObjectByName("PREMIUM_SHOP_HOVER")
 local ACHIEVEMENTS_HOVER = World.FindObjectByName("ACHIEVEMENTS_HOVER")
 local LEADERBOARDS_HOVER = World.FindObjectByName("LEADERBOARDS_HOVER")
+local CAMOSPRAYS_HOVER = World.FindObjectByName("CAMOSPRAYS_HOVER")
 local CHOOSE_MODE_DROPDOWN_HOVER = World.FindObjectByName("CHOOSE_MODE_DROPDOWN_HOVER")
 local CHOOSE_MODE_SHOOTINGRANGE_HOVER = World.FindObjectByName("CHOOSE_MODE_SHOOTINGRANGE_HOVER")
 local CHOOSE_MODE_FIELDS_HOVER = World.FindObjectByName("CHOOSE_MODE_FIELDS_HOVER")
@@ -174,7 +176,7 @@ local TECHTREE_ACTIVE = World.FindObjectByName("TECHTREE_ACTIVE")
 local PREMIUM_SHOP_ACTIVE = World.FindObjectByName("PREMIUM_SHOP_ACTIVE")
 local ACHIEVEMENTS_ACTIVE = World.FindObjectByName("ACHIEVEMENTS_ACTIVE")
 local LEADERBOARDS_ACTIVE = World.FindObjectByName("LEADERBOARDS_ACTIVE")
-
+local CAMOSPRAYS_ACTIVE = World.FindObjectByName("CAMOSPRAYS_ACTIVE")
 -- CONNECTING TEXT
 local USERNAME = World.FindObjectByName("USERNAME")
 local USERNAME_SECONDARY = World.FindObjectByName("USERNAME_SECONDARY")
@@ -1297,6 +1299,29 @@ function HOVERED_LEADERBOARDS(BUTTON_LEADERBOARDS)
 end
 
 function UNHOVERED_LEADERBOARDS(BUTTON_LEADERBOARDS)
+	HOVER_HEAD_MENU = 0
+	SFX_UNHOVERED:Play()
+end
+
+-- CAMOSPRAYS BUTTON HANDLER
+function CLICKED_CAMOSPRAYS(BUTTON_CAMOSPRAYS)
+	if not SpamPrevent() then
+		return
+	end
+	SFX_CLICK:Play()
+	if ACTIVE_HEAD_MENU ~= 5 then
+		ACTIVE_HEAD_MENU = 5
+	else
+		ACTIVE_HEAD_MENU = 0
+	end
+end
+
+function HOVERED_CAMOSPRAYS(BUTTON_CAMOSPRAYS)
+	SFX_HOVER:Play()
+	HOVER_HEAD_MENU = 5
+end
+
+function UNHOVERED_CAMOSPRAYS(BUTTON_CAMOSPRAYS)
 	HOVER_HEAD_MENU = 0
 	SFX_UNHOVERED:Play()
 end
@@ -3280,26 +3305,37 @@ function CHECK_STATE()
 		ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
 		TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_ACTIVE.visibility = Visibility.FORCE_OFF
 	elseif ACTIVE_HEAD_MENU == 1 then
 		PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_ON
 		ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
 		TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_ACTIVE.visibility = Visibility.FORCE_OFF
 	elseif ACTIVE_HEAD_MENU == 2 then
 		PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
 		ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_ON
 		LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
 		TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_ACTIVE.visibility = Visibility.FORCE_OFF
 	elseif ACTIVE_HEAD_MENU == 3 then
 		PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
 		ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_ON
 		TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_ACTIVE.visibility = Visibility.FORCE_OFF
 	elseif ACTIVE_HEAD_MENU == 4 then
 		PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
 		ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
 		TECHTREE_ACTIVE.visibility = Visibility.FORCE_ON
+		CAMOSPRAYS_ACTIVE.visibility = Visibility.FORCE_OFF
+	elseif ACTIVE_HEAD_MENU == 5 then
+		PREMIUM_SHOP_ACTIVE.visibility = Visibility.FORCE_OFF
+		ACHIEVEMENTS_ACTIVE.visibility = Visibility.FORCE_OFF
+		LEADERBOARDS_ACTIVE.visibility = Visibility.FORCE_OFF
+		TECHTREE_ACTIVE.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_ACTIVE.visibility = Visibility.FORCE_ON	
 	end
 
 	if HOVER_HEAD_MENU == 0 then
@@ -3307,26 +3343,37 @@ function CHECK_STATE()
 		ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
 		TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_HOVER.visibility = Visibility.FORCE_OFF
 	elseif HOVER_HEAD_MENU == 1 then
 		PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_ON
 		ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
 		TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_HOVER.visibility = Visibility.FORCE_OFF
 	elseif HOVER_HEAD_MENU == 2 then
 		PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
 		ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_ON
 		LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
 		TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_HOVER.visibility = Visibility.FORCE_OFF
 	elseif HOVER_HEAD_MENU == 3 then
 		PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
 		ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_HOVER.visibility = Visibility.FORCE_ON
 		TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_HOVER.visibility = Visibility.FORCE_OFF
 	elseif HOVER_HEAD_MENU == 4 then
 		PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
 		ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
 		LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
 		TECHTREE_HOVER.visibility = Visibility.FORCE_ON
+		CAMOSPRAYS_HOVER.visibility = Visibility.FORCE_OFF
+	elseif HOVER_HEAD_MENU == 5 then
+		PREMIUM_SHOP_HOVER.visibility = Visibility.FORCE_OFF
+		ACHIEVEMENTS_HOVER.visibility = Visibility.FORCE_OFF
+		LEADERBOARDS_HOVER.visibility = Visibility.FORCE_OFF
+		TECHTREE_HOVER.visibility = Visibility.FORCE_OFF
+		CAMOSPRAYS_HOVER.visibility = Visibility.FORCE_ON
 	end
 
 	if HOVERED_MODE == 0 then
@@ -3433,6 +3480,7 @@ BUTTON_TECHTREE_SHOP.clickedEvent:Connect(CLICKED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.clickedEvent:Connect(CLICKED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.clickedEvent:Connect(CLICKED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.clickedEvent:Connect(CLICKED_LEADERBOARDS)
+BUTTON_CAMOSPRAYS.clickedEvent:Connect(CLICKED_CAMOSPRAYS)
 CloseLeaderboards.clickedEvent:Connect(CLICKED_LEADERBOARDS)
 ClosePremiumShop.clickedEvent:Connect(CLICKED_PREMIUM_SHOP)
 CHOOSE_MODE_BUTTON.clickedEvent:Connect(CLICKED_CHOOSE_MODE)
@@ -3492,6 +3540,7 @@ BUTTON_TECHTREE_SHOP.hoveredEvent:Connect(HOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.hoveredEvent:Connect(HOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.hoveredEvent:Connect(HOVERED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.hoveredEvent:Connect(HOVERED_LEADERBOARDS)
+BUTTON_CAMOSPRAYS.hoveredEvent:Connect(HOVERED_CAMOSPRAYS)
 CloseLeaderboards.hoveredEvent:Connect(ButtonHover)
 ClosePremiumShop.hoveredEvent:Connect(ButtonHover)
 CHOOSE_MODE_BUTTON.hoveredEvent:Connect(HOVERED_CHOOSE_MODE)
@@ -3548,6 +3597,7 @@ BUTTON_TECHTREE_SHOP.unhoveredEvent:Connect(UNHOVERED_TECHTREE_SHOP)
 BUTTON_PREMIUM_SHOP.unhoveredEvent:Connect(UNHOVERED_PREMIUM_SHOP)
 BUTTON_ACHIEVEMENTS.unhoveredEvent:Connect(UNHOVERED_ACHIEVEMENTS)
 BUTTON_LEADERBOARDS.unhoveredEvent:Connect(UNHOVERED_LEADERBOARDS)
+BUTTON_CAMOSPRAYS.unhoveredEvent:Connect(UNHOVERED_CAMOSPRAYS)
 CloseLeaderboards.unhoveredEvent:Connect(ButtonUnhover)
 ClosePremiumShop.unhoveredEvent:Connect(ButtonUnhover)
 CHOOSE_MODE_BUTTON.unhoveredEvent:Connect(UNHOVERED_CHOOSE_MODE)
