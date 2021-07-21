@@ -30,19 +30,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15421627179843447613
-  Name: "Skins1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "27ad65b2d21646c7825cd2cbb4fce33d"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 14345407072251931141
   Name: "SilverPack2"
   PlatformAssetType: 24
@@ -112,6 +99,19 @@ Assets {
       Key: "ac05a84be6ff4d1bb1473bd3381171bf"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 9454526116525649750
+  Name: "Skins1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }

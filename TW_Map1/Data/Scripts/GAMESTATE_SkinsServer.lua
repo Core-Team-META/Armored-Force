@@ -24,7 +24,7 @@ function OnPlayerJoined(player)
 	--DEBUG
 	--playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = nil
 	
-	if not playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] or not string.find(playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL], "33") then
+	if not playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] then
 		SetNewPlayerSkins(playerSharedStorage)
 	end
 	
@@ -53,6 +53,38 @@ function OnPlayerLeft(player)
 	
 end
 
+function OnPurchaseSkin(player, tankID, skinID)
+
+	local camoTable = player.serverUserData.camoData
+
+	if not camoTable[tankID] or not camoTable[tankID][skinID] then
+		print(camoTable[tankID])
+		print(camoTable[tankID][skinID])
+		print("invalid due to tankID: " .. tostring(tankID) .. " or skinID: " .. tostring(skinID))
+		return
+	end
+	
+	local resource = allIndividualSkins[tankID][skinID].resource
+	local currentResourceAmount = player:GetResource(resource)
+	local skinResourceCost = allIndividualSkins[tankID][skinID].cost
+	
+	print("current player " .. resource .. ": " .. tostring(currentResourceAmount) .. " cost: " .. tostring(skinResourceCost))
+	
+	if currentResourceAmount < skinResourceCost then
+		print("Not enough funds")
+		return
+	end
+		
+	player:RemoveResource(allIndividualSkins[tankID][skinID].resource, allIndividualSkins[tankID][skinID].cost)
+	 
+	camoTable[tankID][skinID].purchased = true
+	
+	print("Purchasing " .. tostring(skinID) .. " on " .. tostring(tankID) .. " for " .. player.name)
+	 
+    dataTransferSet[player]:SetNetworkedCustomProperty("Data", ConvertSkinDataToString(player))
+
+end
+
 function OnEquipSkin(player, tankID, skinID)
 
 	local camoTable = player.serverUserData.camoData
@@ -61,6 +93,10 @@ function OnEquipSkin(player, tankID, skinID)
 		print(camoTable[tankID])
 		print(camoTable[tankID][skinID])
 		print("invalid due to tankID: " .. tostring(tankID) .. " or skinID: " .. tostring(skinID))
+		return
+	end
+	
+	if not camoTable[tankID][skinID].purchased then
 		return
 	end
 	 
@@ -85,8 +121,12 @@ function SetNewPlayerSkins(playerSharedStorage)
 	for tankID, skins in pairs(allIndividualSkins) do
 		skinString = skinString .. tankID 
 		
-		for skinID, skinData in pairs(skins) do						
-			skinString = skinString .. "/" .. skinID .. "|0|0"
+		for skinID, skinData in pairs(skins) do		
+			if skinID ~= "00" then
+				skinString = skinString .. "/" .. skinID .. "|0|0"
+			else 
+				skinString = skinString .. "/" .. skinID .. "|1|1"
+			end
 		end
 		
 		skinString = skinString .. ";"
@@ -209,6 +249,7 @@ end
 
 Initialize()
 
+Events.ConnectForPlayer("PURCHASE_SKIN", OnPurchaseSkin)
 Events.ConnectForPlayer("EQUIP_SKIN", OnEquipSkin)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
