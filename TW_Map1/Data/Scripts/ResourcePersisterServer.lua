@@ -42,10 +42,7 @@ function OnPlayerJoined(player)
 		player:SetResource(CONSTANTS_API.RANK_NAME, 1)
 	end
 
-	for resource, value in pairs(playerData.resources) do
-		player:SetResource(resource, value)
-	end
-	
+
 	-- Uncomment to reset tutorial progress
 	--player:SetResource("TutorialProgress", 0)
 		
@@ -56,8 +53,6 @@ function OnPlayerJoined(player)
 	--print("Loading shared storage")
 	LoadAndSetDataFromSharedStorage(player)
 
-	player.resourceChangedEvent:Connect(OnResourceChanged)
-	
 	-- DEBUG: Print out storage
 
 	--print("-----PRINTING SHARED STORAGE-----")
