@@ -1,3 +1,6 @@
+local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
+
+
 -- Tank Custom Properties:
 -- FIREPOWER
 local reloadSpeed = script:GetCustomProperty("ReloadSpeed")
@@ -83,7 +86,6 @@ local destroyedListener = nil
 local consumableListener = nil
 local armorImpactListeners = {}
 
-print("aaaaaaaaaaaaa")
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -177,6 +179,7 @@ function AssignDriver(newDriver, _isAI)
 	if not isAI then
 		chassis:SetDriver(driver)
 	else
+		driver:AssignToTank(chassis)
 		chassis.serverMovementHook:Connect(RoboDriver)
 	end
 	print("Checkpoint 4", isAI)
@@ -464,7 +467,7 @@ function ProjectileImpacted(expiredProjectile, other)
 	}
 	COMBAT.ApplyDamage(attackData)
 	
-	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", vehicle:GetWorldPosition(), other.driver)
+	Events.BroadcastToPlayer(driver, "ShowDamageFeedback", totalDamage, "TRACK", chassis:GetWorldPosition(), other.driver.id)
 
 end
 
@@ -517,9 +520,11 @@ function OnArmorHit(trigger, other)
 		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" then
 			armorName = "TRACK"
 		end
-		
-		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver)
-		Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, armorName, trigger:GetWorldPosition())
+
+		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver.id)
+		if not isAI then
+			Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, armorName, trigger:GetWorldPosition())
+		end
 		
 		local possibleDamageState = math.random(100)
 		
@@ -552,8 +557,13 @@ function OnArmorHit(trigger, other)
 	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" and not ramCooldown then
 		
 		ramCooldown = true
-		
+
+		local isAI = false
 		local enemyPlayer = other.driver
+		if enemyPlayer == nil then
+			enemyPlayer = AIPlayer.FindAIDriver(other)
+			isAI = true
+		end
 		local armorName = trigger.name
 		
 		if armorName == "LEFTTRACK" or armorName == "RIGHTTRACK" or enemyPlayer.team == driver.team then
@@ -595,7 +605,9 @@ function OnArmorHit(trigger, other)
 		
 		local damageDealt = Damage.New(ramDamage)
 		
-		damageDealt.sourcePlayer = driver
+		if not isAI then
+			damageDealt.sourcePlayer = enemyPlayer
+		end
 		damageDealt.reason = DamageReason.COMBAT
 		--enemyPlayer:ApplyDamage(damageDealt)
 
