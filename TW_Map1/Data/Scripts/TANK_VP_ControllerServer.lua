@@ -790,14 +790,14 @@ function Tick()
 		
 		if chassis.mass >= 50000 then
 			local currentRotation = chassis:GetWorldRotation()
-			if math.abs(currentRotation.x) >= 10 or math.abs(currentRotation.y) >= 8 then
+			if math.abs(currentRotation.x) >= 10 or math.abs(currentRotation.y) >= 10 then
 				if chassis.maxSpeed == originalSpeed then
-					chassis.maxSpeed = originalSpeed * 1.5
+					chassis.maxSpeed = originalSpeed * 1.15
 					chassis.tireFriction = originalFriction * 2
-					chassis.accelerationRate = originalAcceleration * 1.5
+					chassis.accelerationRate = originalAcceleration * 1.3
 					print("boosting tank")
 				end
-			elseif math.abs(currentRotation.x) < 10 or math.abs(currentRotation.y) < 8 then
+			elseif math.abs(currentRotation.x) < 10 or math.abs(currentRotation.y) < 10 then
 				if chassis.maxSpeed > originalSpeed then
 					chassis.maxSpeed = originalSpeed
 					chassis.tireFriction = originalFriction
