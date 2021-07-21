@@ -3,8 +3,11 @@ local MetalImpactSFX = script:GetCustomProperty("ImpactMetalHeavy01SFX"):WaitFor
 local UIPanel = script:GetCustomProperty("UIPanel"):WaitForObject()
 local DamageAmount = script:GetCustomProperty("DamageAmount"):WaitForObject()
 local Header = script:GetCustomProperty("Header"):WaitForObject()
+local DamageDealt = script:GetCustomProperty("DamageDealt"):WaitForObject()
 local DestroyPanel = script:GetCustomProperty("DestroyPanel"):WaitForObject()
 local KillInfo = script:GetCustomProperty("KillInfo"):WaitForObject()
+local propIcon2 = script:GetCustomProperty("Icon2"):WaitForObject()
+local propIcon2Frame = script:GetCustomProperty("Icon2Frame"):WaitForObject()
 local FeedbackWhenHitContext = script:GetCustomProperty("FeedbackWhenHitContext")
 
 --@params object target
@@ -30,23 +33,46 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 	if (Object.IsValid(ExplosionSFX)) then
 		ExplosionSFX:Play()
 	end
-	if (Object.IsValid(Header)) then
+	if (Object.IsValid(DamageDealt)) then
 		if (armorName == "HULLFRONT") then
-			Header.text = "HIT HULL FROM FRONT! (0.4x DAMAGE)"
+			DamageDealt.text = "DAMAGE DEALT (0.4x DAMAGE)"
 		elseif (armorName == "HULLSIDE") then
-			Header.text = "HIT HULL FROM SIDE! (0.5x DAMAGE)"
+			DamageDealt.text = "DAMAGE DEALT (0.5x DAMAGE)"
 		elseif (armorName == "HULLREAR") then
-			Header.text = "HIT HULL FROM REAR! (0.9x DAMAGE)"
+			DamageDealt.text = "DAMAGE DEALT (0.9x DAMAGE)"
 		elseif (armorName == "TURRETFRONT") then
-			Header.text = "HIT TURRET FROM FRONT! (0.2x DAMAGE)"
+			DamageDealt.text = "DAMAGE DEALT (0.2x DAMAGE)"
 		elseif (armorName == "TURRETSIDE") then
-			Header.text = "HIT TURRET FROM SIDE! (0.5x DAMAGE)"
+			DamageDealt.text = "DAMAGE DEALT (0.5x DAMAGE)"
 		elseif (armorName == "TURRETREAR") then
-			Header.text = "HIT TURRET FROM REAR! (0.9x DAMAGE)"
+			DamageDealt.text = "DAMAGE DEALT! (0.9x DAMAGE)"
 		elseif (armorName == "TRACK") then
-			Header.text = "HIT TRACKS! (0.5x DAMAGE)"
+			DamageDealt.text = "DAMAGE DEALT! (0.5x DAMAGE)"
 		end
 	end
+	
+	if (Object.IsValid(Header)) then
+		if (armorName == "HULLFRONT") then
+			Header.text = "HIT TANK FROM FRONT"
+		elseif (armorName == "HULLSIDE") then
+			Header.text = "HIT TANK FROM SIDE!"
+		elseif (armorName == "HULLREAR") then
+			Header.text = "CRITICAL HIT!"
+			propIcon2.visibility = Visibility.FORCE_ON
+			propIcon2Frame.visibility = Visibility.FORCE_ON
+		elseif (armorName == "TURRETFRONT") then
+			Header.text = "HIT TURRENT FROM FRONT"
+		elseif (armorName == "TURRETSIDE") then
+			Header.text = "HIT TURRET FROM SIDE!"
+		elseif (armorName == "TURRETREAR") then
+			Header.text = "CRITICAL HIT!"
+			propIcon2.visibility = Visibility.FORCE_ON
+			propIcon2Frame.visibility = Visibility.FORCE_ON
+		elseif (armorName == "TRACK") then
+			Header.text = "HIT TANK TRACKS!"
+		end
+	end	
+	
 
 	if (Object.IsValid(MetalImpactSFX)) then
 		MetalImpactSFX:Play()
@@ -68,6 +94,8 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 	if (Object.IsValid(UIPanel)) then
 		UIPanel.visibility = Visibility.FORCE_OFF
 		DestroyPanel.visibility = Visibility.FORCE_OFF
+		propIcon2.visibility = Visibility.FORCE_OFF
+		propIcon2Frame.visibility = Visibility.FORCE_OFF
 	end
 	if (Object.IsValid(DamageAmount)) then
 		DamageAmount.text = ""
