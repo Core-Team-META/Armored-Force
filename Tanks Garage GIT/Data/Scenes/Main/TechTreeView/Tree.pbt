@@ -818,6 +818,12 @@ Objects {
         SelfId: 8027717470199943460
       }
     }
+    Overrides {
+      Name: "cs:PURCHASE_NOTIFICATION"
+      ObjectReference {
+        SelfId: 3184754748961175882
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
