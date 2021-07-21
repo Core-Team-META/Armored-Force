@@ -17,6 +17,10 @@ local localPlayer = Game.GetLocalPlayer()
 
 function CameraTransition(newState)
 
+	if newState == "CAMOSPRAYS_MENU" then
+		newState = "DEFAULT_MENU"
+	end
+
 	local selectedCamera = cameras:FindDescendantByName(newState)
 
 	if not oldCamera then
@@ -33,6 +37,10 @@ function CameraTransition(newState)
 		return
 		
 	end 
+	
+	if selectedCamera == oldCamera then
+		return
+	end
 	
 	if oldCamera and oldCamera:IsA("Camera") and selectedCamera and selectedCamera:IsA("Camera") then
 

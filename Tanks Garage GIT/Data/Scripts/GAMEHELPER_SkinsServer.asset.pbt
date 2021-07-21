@@ -1,6 +1,6 @@
 Assets {
   Id: 7145139164389251397
-  Name: "GAMESTATE_SkinsServer"
+  Name: "GAMEHELPER_SkinsServer"
   PlatformAssetType: 3
   TextAsset {
   }

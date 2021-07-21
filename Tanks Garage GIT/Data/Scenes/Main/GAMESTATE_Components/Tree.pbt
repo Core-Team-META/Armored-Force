@@ -1,6 +1,38 @@
 Name: "GAMESTATE_Components"
 RootId: 15534379475757777486
 Objects {
+  Id: 1679366962857801055
+  Name: "CamoSelectionView"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15534379475757777486
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "CamoSelectionView_1"
+  }
+}
+Objects {
   Id: 6031029581927456576
   Name: "SendToShootingRangeView"
   Transform {
@@ -126,38 +158,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "PremiumShopView"
-  }
-}
-Objects {
-  Id: 16175003310112352478
-  Name: "CamoSelectionView"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15534379475757777486
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "CamoSelectionView"
   }
 }
 Objects {
