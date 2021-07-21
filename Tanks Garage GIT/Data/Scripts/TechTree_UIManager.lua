@@ -1390,6 +1390,9 @@ function PopulateLockedTankCard(tankData)
 		-- TODO check for premium tank
 		local prereqs = GetPrerequisiteRPValues(tankData.id)
 		if(prereqs[1]) then
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SHADOW").text = "UNLOCKED TANK"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SECONDAIRY").text = "UNLOCKED TANK"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_LIGHT").text = "UNLOCKED TANK"
 			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").text = tostring(prereqs[1].rp) .. " / " .. tostring(tankData.researchCost)
 			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").progress = prereqs[1].rp / tankData.researchCost
 			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = prereqs[1].name .. " XP"
@@ -1400,6 +1403,9 @@ function PopulateLockedTankCard(tankData)
 			LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Play previous Tanks to gain XP for this tank."
 		end
 	else
+		LOCKED_TANK_CARD:FindDescendantByName("TITLE_SHADOW").text = "LOCKED TANK"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SECONDAIRY").text = "LOCKED TANK"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_LIGHT").text = "LOCKED TANK"
 		LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_OFF
 		LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_OFF
 		LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_OFF
