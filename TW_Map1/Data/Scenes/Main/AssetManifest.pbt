@@ -70,19 +70,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12254804963784358394
-  Name: "Skins1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "27ad65b2d21646c7825cd2cbb4fce33d"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 12138254496542770230
   Name: "Achievements1"
   PlatformAssetType: 23
@@ -120,6 +107,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
+  Id: 7532952088396380783
+  Name: "Skins1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {

@@ -178,28 +178,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 16511088351683547441
-  ChildIds: 9312475259776768410
-  ChildIds: 14012596481620835406
-  ChildIds: 10323316728801239921
-  ChildIds: 8700536889076551470
-  ChildIds: 16991704000495085725
-  ChildIds: 10997764751611221884
-  ChildIds: 7230835051846260173
-  ChildIds: 4490071536319985483
-  ChildIds: 14942554983531389897
-  ChildIds: 12425248910038501039
-  ChildIds: 2735954938790665600
-  ChildIds: 16546856058761364110
-  ChildIds: 4500996604320337021
-  ChildIds: 15553800395757562010
-  ChildIds: 9219121687225359198
-  ChildIds: 1199479025243630046
-  ChildIds: 11086168247080539771
-  ChildIds: 3278665063822357937
-  ChildIds: 12302828230992460993
-  ChildIds: 9441336570799040569
-  ChildIds: 14404769635933699884
+  ChildIds: 5284733348474133676
+  ChildIds: 14946249304629252983
+  ChildIds: 3043255987407539661
+  ChildIds: 1545560009838578051
+  ChildIds: 7977081090570023707
+  ChildIds: 11691593023429130004
+  ChildIds: 7140102824819224325
+  ChildIds: 5743319192256826393
+  ChildIds: 18397291875865426999
+  ChildIds: 1637227947000317595
+  ChildIds: 17692137296668058350
+  ChildIds: 15626209280034606204
+  ChildIds: 6258701058377005876
+  ChildIds: 1269691583340729443
+  ChildIds: 8250110383898793717
+  ChildIds: 9801773067066216732
+  ChildIds: 8926517675772771397
+  ChildIds: 13632112232706322374
+  ChildIds: 16867937251739148477
+  ChildIds: 7601530731939574737
+  ChildIds: 11006792933044764447
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -223,7 +222,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14404769635933699884
+  Id: 11006792933044764447
   Name: "Forest Floor"
   Transform {
     Location {
@@ -267,7 +266,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -289,7 +295,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9441336570799040569
+  Id: 7601530731939574737
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -333,7 +339,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -355,7 +368,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12302828230992460993
+  Id: 16867937251739148477
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -399,7 +412,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -421,7 +441,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3278665063822357937
+  Id: 13632112232706322374
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -465,7 +485,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -487,7 +514,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11086168247080539771
+  Id: 8926517675772771397
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -531,7 +558,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -553,7 +587,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1199479025243630046
+  Id: 9801773067066216732
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -597,7 +631,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -619,7 +660,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9219121687225359198
+  Id: 8250110383898793717
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -663,7 +704,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -685,7 +733,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15553800395757562010
+  Id: 1269691583340729443
   Name: "Reflector Green"
   Transform {
     Location {
@@ -729,7 +777,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -751,7 +806,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4500996604320337021
+  Id: 6258701058377005876
   Name: "Reflector Red"
   Transform {
     Location {
@@ -793,7 +848,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -815,7 +877,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16546856058761364110
+  Id: 15626209280034606204
   Name: "Tiled Green"
   Transform {
     Location {
@@ -859,7 +921,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -881,7 +950,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2735954938790665600
+  Id: 17692137296668058350
   Name: "Force Field Green"
   Transform {
     Location {
@@ -925,7 +994,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -947,7 +1023,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12425248910038501039
+  Id: 1637227947000317595
   Name: "Force Field"
   Transform {
     Location {
@@ -991,7 +1067,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -1013,7 +1096,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14942554983531389897
+  Id: 18397291875865426999
   Name: "Fruit"
   Transform {
     Location {
@@ -1056,7 +1139,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -1078,7 +1168,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4490071536319985483
+  Id: 5743319192256826393
   Name: "Energy Tube"
   Transform {
     Location {
@@ -1121,7 +1211,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -1143,7 +1240,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7230835051846260173
+  Id: 7140102824819224325
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -1187,7 +1284,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -1209,7 +1313,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10997764751611221884
+  Id: 11691593023429130004
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -1253,7 +1357,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -1275,7 +1386,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16991704000495085725
+  Id: 7977081090570023707
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -1318,7 +1429,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -1340,7 +1458,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8700536889076551470
+  Id: 1545560009838578051
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -1384,73 +1502,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 10323316728801239921
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15736898026102261485
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1471,7 +1531,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14012596481620835406
+  Id: 3043255987407539661
   Name: "Gold"
   Transform {
     Location {
@@ -1516,6 +1576,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1536,7 +1603,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9312475259776768410
+  Id: 14946249304629252983
   Name: "Chrome"
   Transform {
     Location {
@@ -1582,6 +1649,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1602,7 +1676,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16511088351683547441
+  Id: 5284733348474133676
   Name: "Stock"
   Transform {
     Location {
@@ -1647,7 +1721,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -1683,28 +1761,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 9567101601075579393
-  ChildIds: 4164963965806231666
-  ChildIds: 5757540023291524533
-  ChildIds: 16445071854533852509
-  ChildIds: 11887990895071442775
-  ChildIds: 16345549562375796243
-  ChildIds: 4406867077464402610
-  ChildIds: 9391566927958799285
-  ChildIds: 16767967618688326970
-  ChildIds: 7706781639773237
-  ChildIds: 8348931627290650737
-  ChildIds: 15985745112110039111
-  ChildIds: 9743766169574120964
-  ChildIds: 9418628078615245121
-  ChildIds: 3082298708859223419
-  ChildIds: 8008634004181081826
-  ChildIds: 1253262969601707803
-  ChildIds: 5130373695371137571
-  ChildIds: 16269727723025020570
-  ChildIds: 17218373834870096298
-  ChildIds: 6364022997573731359
-  ChildIds: 17066544787846447782
+  ChildIds: 1685789145234700637
+  ChildIds: 12549404386285033579
+  ChildIds: 4261396207839214598
+  ChildIds: 3352179435685401946
+  ChildIds: 15115456320877049189
+  ChildIds: 15039677722008661366
+  ChildIds: 4025416820804080656
+  ChildIds: 14039622874032581616
+  ChildIds: 979554821724642556
+  ChildIds: 15203872491511838514
+  ChildIds: 10532067093755988607
+  ChildIds: 3048002433381206851
+  ChildIds: 129390979116200888
+  ChildIds: 8784334994845411825
+  ChildIds: 656101440993709770
+  ChildIds: 371880543843668572
+  ChildIds: 16387872418197029887
+  ChildIds: 10247229256044363198
+  ChildIds: 16566667764156229655
+  ChildIds: 9928613628291748446
+  ChildIds: 11191896008344941904
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -1728,7 +1805,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17066544787846447782
+  Id: 11191896008344941904
   Name: "Forest Floor"
   Transform {
     Location {
@@ -1772,7 +1849,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1794,7 +1878,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6364022997573731359
+  Id: 9928613628291748446
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -1838,7 +1922,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1860,7 +1951,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17218373834870096298
+  Id: 16566667764156229655
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -1904,7 +1995,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -1926,7 +2024,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16269727723025020570
+  Id: 10247229256044363198
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -1970,7 +2068,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -1992,7 +2097,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5130373695371137571
+  Id: 16387872418197029887
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -2036,7 +2141,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -2058,7 +2170,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1253262969601707803
+  Id: 371880543843668572
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -2102,7 +2214,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -2124,7 +2243,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8008634004181081826
+  Id: 656101440993709770
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -2168,7 +2287,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -2190,7 +2316,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3082298708859223419
+  Id: 8784334994845411825
   Name: "Reflector Green"
   Transform {
     Location {
@@ -2234,7 +2360,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -2256,7 +2389,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9418628078615245121
+  Id: 129390979116200888
   Name: "Reflector Red"
   Transform {
     Location {
@@ -2298,7 +2431,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -2320,7 +2460,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9743766169574120964
+  Id: 3048002433381206851
   Name: "Tiled Green"
   Transform {
     Location {
@@ -2364,7 +2504,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -2386,7 +2533,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15985745112110039111
+  Id: 10532067093755988607
   Name: "Force Field Green"
   Transform {
     Location {
@@ -2430,7 +2577,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -2452,7 +2606,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8348931627290650737
+  Id: 15203872491511838514
   Name: "Force Field"
   Transform {
     Location {
@@ -2496,7 +2650,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -2518,7 +2679,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7706781639773237
+  Id: 979554821724642556
   Name: "Fruit"
   Transform {
     Location {
@@ -2561,7 +2722,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -2583,7 +2751,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16767967618688326970
+  Id: 14039622874032581616
   Name: "Energy Tube"
   Transform {
     Location {
@@ -2626,7 +2794,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -2648,7 +2823,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9391566927958799285
+  Id: 4025416820804080656
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -2692,7 +2867,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -2714,7 +2896,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4406867077464402610
+  Id: 15039677722008661366
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -2758,7 +2940,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -2780,7 +2969,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16345549562375796243
+  Id: 15115456320877049189
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -2823,7 +3012,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -2845,7 +3041,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11887990895071442775
+  Id: 3352179435685401946
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -2889,73 +3085,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 16445071854533852509
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5108077466355234175
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2976,7 +3114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5757540023291524533
+  Id: 4261396207839214598
   Name: "Gold"
   Transform {
     Location {
@@ -3021,6 +3159,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3041,7 +3186,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4164963965806231666
+  Id: 12549404386285033579
   Name: "Chrome"
   Transform {
     Location {
@@ -3087,6 +3232,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3107,7 +3259,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9567101601075579393
+  Id: 1685789145234700637
   Name: "Stock"
   Transform {
     Location {
@@ -3152,7 +3304,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -3188,28 +3344,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 7286763185492934558
-  ChildIds: 10833078213246703877
-  ChildIds: 6458377593935168850
-  ChildIds: 1766622832708752102
-  ChildIds: 4703240070566799827
-  ChildIds: 12593319622269369525
-  ChildIds: 6576879685380939356
-  ChildIds: 17584226861552426216
-  ChildIds: 6681923585007867723
-  ChildIds: 17664012165709608596
-  ChildIds: 3506235470171832436
-  ChildIds: 11201789578931079363
-  ChildIds: 18059744942342913645
-  ChildIds: 7954532766525458830
-  ChildIds: 6849047888809693998
-  ChildIds: 14927487712604086408
-  ChildIds: 3333594306078426890
-  ChildIds: 2568320826826818699
-  ChildIds: 5879036631743096284
-  ChildIds: 13228919785402466914
-  ChildIds: 4324903256209502725
-  ChildIds: 9003269078852612482
+  ChildIds: 10223817738031467897
+  ChildIds: 16041339955570036014
+  ChildIds: 17294504278476930854
+  ChildIds: 7633128079196699299
+  ChildIds: 12426356376165462330
+  ChildIds: 12032316667045234292
+  ChildIds: 17345618276542100579
+  ChildIds: 9514243417226298450
+  ChildIds: 10862399580690033845
+  ChildIds: 13083654359853559552
+  ChildIds: 17951056487637220595
+  ChildIds: 2478727632529436465
+  ChildIds: 11638284276177644305
+  ChildIds: 10073798353472077237
+  ChildIds: 1057424768534947664
+  ChildIds: 6933287266698482643
+  ChildIds: 10861616929856653170
+  ChildIds: 6512573040311948778
+  ChildIds: 10442620645080062584
+  ChildIds: 16186178980084347159
+  ChildIds: 17641366762891436189
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -3233,7 +3388,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9003269078852612482
+  Id: 17641366762891436189
   Name: "Forest Floor"
   Transform {
     Location {
@@ -3277,7 +3432,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -3299,7 +3461,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4324903256209502725
+  Id: 16186178980084347159
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -3343,7 +3505,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -3365,7 +3534,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13228919785402466914
+  Id: 10442620645080062584
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -3409,7 +3578,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -3431,7 +3607,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5879036631743096284
+  Id: 6512573040311948778
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -3475,7 +3651,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -3497,7 +3680,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2568320826826818699
+  Id: 10861616929856653170
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -3541,7 +3724,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -3563,7 +3753,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3333594306078426890
+  Id: 6933287266698482643
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -3607,7 +3797,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -3629,7 +3826,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14927487712604086408
+  Id: 1057424768534947664
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -3673,7 +3870,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -3695,7 +3899,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6849047888809693998
+  Id: 10073798353472077237
   Name: "Reflector Green"
   Transform {
     Location {
@@ -3739,7 +3943,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -3761,7 +3972,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7954532766525458830
+  Id: 11638284276177644305
   Name: "Reflector Red"
   Transform {
     Location {
@@ -3803,7 +4014,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -3825,7 +4043,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18059744942342913645
+  Id: 2478727632529436465
   Name: "Tiled Green"
   Transform {
     Location {
@@ -3869,7 +4087,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -3891,7 +4116,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11201789578931079363
+  Id: 17951056487637220595
   Name: "Force Field Green"
   Transform {
     Location {
@@ -3935,7 +4160,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -3957,7 +4189,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3506235470171832436
+  Id: 13083654359853559552
   Name: "Force Field"
   Transform {
     Location {
@@ -4001,7 +4233,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -4023,7 +4262,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17664012165709608596
+  Id: 10862399580690033845
   Name: "Fruit"
   Transform {
     Location {
@@ -4066,7 +4305,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -4088,7 +4334,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6681923585007867723
+  Id: 9514243417226298450
   Name: "Energy Tube"
   Transform {
     Location {
@@ -4131,7 +4377,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -4153,7 +4406,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17584226861552426216
+  Id: 17345618276542100579
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -4197,7 +4450,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -4219,7 +4479,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6576879685380939356
+  Id: 12032316667045234292
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -4263,7 +4523,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -4285,7 +4552,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12593319622269369525
+  Id: 12426356376165462330
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -4328,7 +4595,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -4350,7 +4624,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4703240070566799827
+  Id: 7633128079196699299
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -4394,73 +4668,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 1766622832708752102
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14824669344192663145
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4481,7 +4697,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6458377593935168850
+  Id: 17294504278476930854
   Name: "Gold"
   Transform {
     Location {
@@ -4526,6 +4742,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4546,7 +4769,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10833078213246703877
+  Id: 16041339955570036014
   Name: "Chrome"
   Transform {
     Location {
@@ -4592,6 +4815,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4612,7 +4842,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7286763185492934558
+  Id: 10223817738031467897
   Name: "Stock"
   Transform {
     Location {
@@ -4657,7 +4887,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -4693,28 +4927,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 4134126646294446629
-  ChildIds: 10539832415705726630
-  ChildIds: 11439821057258432675
-  ChildIds: 7558360023312540392
-  ChildIds: 6998002410032935119
-  ChildIds: 11230428465895054102
-  ChildIds: 11489537644445722348
-  ChildIds: 15782247011238251061
-  ChildIds: 10374212193256076469
-  ChildIds: 16640483736547281691
-  ChildIds: 11392035202988529608
-  ChildIds: 10538764403290771351
-  ChildIds: 9567491815659290313
-  ChildIds: 10480702785441610585
-  ChildIds: 8491807027131770635
-  ChildIds: 6239499395938795076
-  ChildIds: 6977164478407356815
-  ChildIds: 11447578827850670275
-  ChildIds: 8551236790728635992
-  ChildIds: 7290707569790437502
-  ChildIds: 14381648107912705531
-  ChildIds: 1241870953051008901
+  ChildIds: 14624228305680906592
+  ChildIds: 2690798405174432292
+  ChildIds: 6597165426928319407
+  ChildIds: 4069818876383802721
+  ChildIds: 6660032032840718259
+  ChildIds: 8518328965041472449
+  ChildIds: 58396211896770133
+  ChildIds: 12075468127775507774
+  ChildIds: 2634311274150580198
+  ChildIds: 4254381669020741934
+  ChildIds: 3520807966379741694
+  ChildIds: 12831925154821873431
+  ChildIds: 4093044723350588409
+  ChildIds: 6195717258947146372
+  ChildIds: 12786186769651510502
+  ChildIds: 3803781111553283393
+  ChildIds: 178615668657034562
+  ChildIds: 14520037609567473746
+  ChildIds: 3034212209225877361
+  ChildIds: 9680828469372106100
+  ChildIds: 15581374213901436455
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -4738,7 +4971,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1241870953051008901
+  Id: 15581374213901436455
   Name: "Forest Floor"
   Transform {
     Location {
@@ -4782,7 +5015,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4804,7 +5044,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14381648107912705531
+  Id: 9680828469372106100
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -4848,7 +5088,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4870,7 +5117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7290707569790437502
+  Id: 3034212209225877361
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -4914,7 +5161,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -4936,7 +5190,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8551236790728635992
+  Id: 14520037609567473746
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -4980,7 +5234,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -5002,7 +5263,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11447578827850670275
+  Id: 178615668657034562
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -5046,7 +5307,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -5068,7 +5336,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6977164478407356815
+  Id: 3803781111553283393
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -5112,7 +5380,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -5134,7 +5409,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6239499395938795076
+  Id: 12786186769651510502
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -5178,7 +5453,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -5200,7 +5482,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8491807027131770635
+  Id: 6195717258947146372
   Name: "Reflector Green"
   Transform {
     Location {
@@ -5244,7 +5526,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -5266,7 +5555,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10480702785441610585
+  Id: 4093044723350588409
   Name: "Reflector Red"
   Transform {
     Location {
@@ -5308,7 +5597,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -5330,7 +5626,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9567491815659290313
+  Id: 12831925154821873431
   Name: "Tiled Green"
   Transform {
     Location {
@@ -5374,7 +5670,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -5396,7 +5699,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10538764403290771351
+  Id: 3520807966379741694
   Name: "Force Field Green"
   Transform {
     Location {
@@ -5440,7 +5743,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -5462,7 +5772,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11392035202988529608
+  Id: 4254381669020741934
   Name: "Force Field"
   Transform {
     Location {
@@ -5506,7 +5816,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -5528,7 +5845,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16640483736547281691
+  Id: 2634311274150580198
   Name: "Fruit"
   Transform {
     Location {
@@ -5571,7 +5888,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -5593,7 +5917,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10374212193256076469
+  Id: 12075468127775507774
   Name: "Energy Tube"
   Transform {
     Location {
@@ -5636,7 +5960,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -5658,7 +5989,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15782247011238251061
+  Id: 58396211896770133
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -5702,7 +6033,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -5724,7 +6062,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11489537644445722348
+  Id: 8518328965041472449
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -5768,7 +6106,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -5790,7 +6135,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11230428465895054102
+  Id: 6660032032840718259
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -5833,7 +6178,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -5855,7 +6207,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6998002410032935119
+  Id: 4069818876383802721
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -5899,73 +6251,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 7558360023312540392
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15368821220206495851
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5986,7 +6280,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11439821057258432675
+  Id: 6597165426928319407
   Name: "Gold"
   Transform {
     Location {
@@ -6031,6 +6325,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6051,7 +6352,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10539832415705726630
+  Id: 2690798405174432292
   Name: "Chrome"
   Transform {
     Location {
@@ -6097,6 +6398,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6117,7 +6425,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4134126646294446629
+  Id: 14624228305680906592
   Name: "Stock"
   Transform {
     Location {
@@ -6162,7 +6470,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -6198,28 +6510,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 5298291060025414863
-  ChildIds: 17830295509413909417
-  ChildIds: 15791177498615785350
-  ChildIds: 12423539047601308878
-  ChildIds: 15303761551409065092
-  ChildIds: 16715533671277838987
-  ChildIds: 17292890880046293023
-  ChildIds: 13601950242510890004
-  ChildIds: 1566389445248665789
-  ChildIds: 13211839391688654943
-  ChildIds: 15078033560230032828
-  ChildIds: 2446136046990759696
-  ChildIds: 1287546053079408412
-  ChildIds: 11059682202433236476
-  ChildIds: 3905423535397963885
-  ChildIds: 18225162214461573003
-  ChildIds: 14826788750815880610
-  ChildIds: 11054737504615250666
-  ChildIds: 8530008981083315357
-  ChildIds: 1490765485409357850
-  ChildIds: 16640567471613686269
-  ChildIds: 11055015311846901068
+  ChildIds: 1431658326797014308
+  ChildIds: 13056057983690543057
+  ChildIds: 12488901206769100797
+  ChildIds: 9712895074119019829
+  ChildIds: 11111349742399671673
+  ChildIds: 17397523518584004875
+  ChildIds: 11429829999255104641
+  ChildIds: 3503530007340559371
+  ChildIds: 13145877537271632995
+  ChildIds: 6090084672148430652
+  ChildIds: 1768260886305474844
+  ChildIds: 13770841762524545121
+  ChildIds: 839628784206958932
+  ChildIds: 8128903090156777262
+  ChildIds: 15202193243437301828
+  ChildIds: 13124708750619384792
+  ChildIds: 9324317144220586555
+  ChildIds: 8786072678573374372
+  ChildIds: 1522539136362392608
+  ChildIds: 16639211049385359899
+  ChildIds: 4243586606076948817
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -6243,7 +6554,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11055015311846901068
+  Id: 4243586606076948817
   Name: "Forest Floor"
   Transform {
     Location {
@@ -6287,7 +6598,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6309,7 +6627,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16640567471613686269
+  Id: 16639211049385359899
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -6353,7 +6671,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6375,7 +6700,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1490765485409357850
+  Id: 1522539136362392608
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -6419,7 +6744,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -6441,7 +6773,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8530008981083315357
+  Id: 8786072678573374372
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -6485,7 +6817,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -6507,7 +6846,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11054737504615250666
+  Id: 9324317144220586555
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -6551,7 +6890,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -6573,7 +6919,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14826788750815880610
+  Id: 13124708750619384792
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -6617,7 +6963,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -6639,7 +6992,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18225162214461573003
+  Id: 15202193243437301828
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -6683,7 +7036,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -6705,7 +7065,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3905423535397963885
+  Id: 8128903090156777262
   Name: "Reflector Green"
   Transform {
     Location {
@@ -6749,7 +7109,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -6771,7 +7138,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11059682202433236476
+  Id: 839628784206958932
   Name: "Reflector Red"
   Transform {
     Location {
@@ -6813,7 +7180,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -6835,7 +7209,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1287546053079408412
+  Id: 13770841762524545121
   Name: "Tiled Green"
   Transform {
     Location {
@@ -6879,7 +7253,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -6901,7 +7282,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2446136046990759696
+  Id: 1768260886305474844
   Name: "Force Field Green"
   Transform {
     Location {
@@ -6945,7 +7326,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -6967,7 +7355,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15078033560230032828
+  Id: 6090084672148430652
   Name: "Force Field"
   Transform {
     Location {
@@ -7011,7 +7399,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -7033,7 +7428,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13211839391688654943
+  Id: 13145877537271632995
   Name: "Fruit"
   Transform {
     Location {
@@ -7076,7 +7471,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -7098,7 +7500,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1566389445248665789
+  Id: 3503530007340559371
   Name: "Energy Tube"
   Transform {
     Location {
@@ -7141,7 +7543,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -7163,7 +7572,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13601950242510890004
+  Id: 11429829999255104641
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -7207,7 +7616,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -7229,7 +7645,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17292890880046293023
+  Id: 17397523518584004875
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -7273,7 +7689,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -7295,7 +7718,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16715533671277838987
+  Id: 11111349742399671673
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -7338,7 +7761,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -7360,7 +7790,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15303761551409065092
+  Id: 9712895074119019829
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -7404,73 +7834,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 12423539047601308878
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16601157454947311375
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7491,7 +7863,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15791177498615785350
+  Id: 12488901206769100797
   Name: "Gold"
   Transform {
     Location {
@@ -7536,6 +7908,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7556,7 +7935,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17830295509413909417
+  Id: 13056057983690543057
   Name: "Chrome"
   Transform {
     Location {
@@ -7602,6 +7981,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7622,7 +8008,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5298291060025414863
+  Id: 1431658326797014308
   Name: "Stock"
   Transform {
     Location {
@@ -7667,7 +8053,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -7703,28 +8093,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 16109948357039899884
-  ChildIds: 14089782848868084825
-  ChildIds: 15161139630260947207
-  ChildIds: 796573792584497454
-  ChildIds: 2586548671022557521
-  ChildIds: 16655687182878609492
-  ChildIds: 4159335966768127472
-  ChildIds: 13558143017833036951
-  ChildIds: 18164874473733674781
-  ChildIds: 9323190577594467780
-  ChildIds: 10532550435236229289
-  ChildIds: 17578592293740387034
-  ChildIds: 14466916108933749721
-  ChildIds: 1595130157987123714
-  ChildIds: 7477798894188919856
-  ChildIds: 5192023078790532822
-  ChildIds: 12823277583397346401
-  ChildIds: 13437343427314726246
-  ChildIds: 3073701928083460090
-  ChildIds: 157244858347774965
-  ChildIds: 208583884564498165
-  ChildIds: 11771686413996431189
+  ChildIds: 14592811627097986316
+  ChildIds: 17572276707600825576
+  ChildIds: 3884620548385561473
+  ChildIds: 8166226416921175005
+  ChildIds: 11752735756802742061
+  ChildIds: 6666189681998204845
+  ChildIds: 7159246242424183218
+  ChildIds: 16332025023690877141
+  ChildIds: 16639852463992071983
+  ChildIds: 8186052826000896609
+  ChildIds: 14076201101723314531
+  ChildIds: 10896358270206561196
+  ChildIds: 2507047967490440226
+  ChildIds: 17728221784425993489
+  ChildIds: 2704204799997979026
+  ChildIds: 9693393308690779727
+  ChildIds: 11171449752546428568
+  ChildIds: 14291695155440854392
+  ChildIds: 6584365126639069043
+  ChildIds: 1378305925091973278
+  ChildIds: 12574674796769538059
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -7748,7 +8137,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11771686413996431189
+  Id: 12574674796769538059
   Name: "Forest Floor"
   Transform {
     Location {
@@ -7792,7 +8181,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7814,7 +8210,7 @@ Objects {
   }
 }
 Objects {
-  Id: 208583884564498165
+  Id: 1378305925091973278
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -7858,7 +8254,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7880,7 +8283,7 @@ Objects {
   }
 }
 Objects {
-  Id: 157244858347774965
+  Id: 6584365126639069043
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -7924,7 +8327,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -7946,7 +8356,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3073701928083460090
+  Id: 14291695155440854392
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -7990,7 +8400,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -8012,7 +8429,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13437343427314726246
+  Id: 11171449752546428568
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -8056,7 +8473,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -8078,7 +8502,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12823277583397346401
+  Id: 9693393308690779727
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -8122,7 +8546,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -8144,7 +8575,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5192023078790532822
+  Id: 2704204799997979026
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -8188,7 +8619,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -8210,7 +8648,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7477798894188919856
+  Id: 17728221784425993489
   Name: "Reflector Green"
   Transform {
     Location {
@@ -8254,7 +8692,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -8276,7 +8721,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1595130157987123714
+  Id: 2507047967490440226
   Name: "Reflector Red"
   Transform {
     Location {
@@ -8318,7 +8763,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -8340,7 +8792,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14466916108933749721
+  Id: 10896358270206561196
   Name: "Tiled Green"
   Transform {
     Location {
@@ -8384,7 +8836,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -8406,7 +8865,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17578592293740387034
+  Id: 14076201101723314531
   Name: "Force Field Green"
   Transform {
     Location {
@@ -8450,7 +8909,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -8472,7 +8938,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10532550435236229289
+  Id: 8186052826000896609
   Name: "Force Field"
   Transform {
     Location {
@@ -8516,7 +8982,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -8538,7 +9011,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9323190577594467780
+  Id: 16639852463992071983
   Name: "Fruit"
   Transform {
     Location {
@@ -8581,7 +9054,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -8603,7 +9083,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18164874473733674781
+  Id: 16332025023690877141
   Name: "Energy Tube"
   Transform {
     Location {
@@ -8646,7 +9126,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -8668,7 +9155,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13558143017833036951
+  Id: 7159246242424183218
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -8712,7 +9199,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -8734,7 +9228,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4159335966768127472
+  Id: 6666189681998204845
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -8778,7 +9272,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -8800,7 +9301,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16655687182878609492
+  Id: 11752735756802742061
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -8843,7 +9344,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -8865,7 +9373,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2586548671022557521
+  Id: 8166226416921175005
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -8909,73 +9417,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 796573792584497454
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3389021283923220819
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8996,7 +9446,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15161139630260947207
+  Id: 3884620548385561473
   Name: "Gold"
   Transform {
     Location {
@@ -9041,6 +9491,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9061,7 +9518,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14089782848868084825
+  Id: 17572276707600825576
   Name: "Chrome"
   Transform {
     Location {
@@ -9107,6 +9564,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9127,7 +9591,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16109948357039899884
+  Id: 14592811627097986316
   Name: "Stock"
   Transform {
     Location {
@@ -9172,7 +9636,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -9208,28 +9676,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 8378243389398512027
-  ChildIds: 6145741212277636749
-  ChildIds: 727497724623718320
-  ChildIds: 13329241022409688576
-  ChildIds: 9766421535554024412
-  ChildIds: 17007575067805729061
-  ChildIds: 351096845986771517
-  ChildIds: 12375934867931959213
-  ChildIds: 897157333427879771
-  ChildIds: 13939026082252460021
-  ChildIds: 13487116939871079483
-  ChildIds: 15312560861067004112
-  ChildIds: 16674176566002138724
-  ChildIds: 173630588049641642
-  ChildIds: 15757212391293396739
-  ChildIds: 15953687031678436021
-  ChildIds: 12175565233330196030
-  ChildIds: 7735875579568376187
-  ChildIds: 13294930640877090512
-  ChildIds: 3491170157169013822
-  ChildIds: 14795959048925029138
-  ChildIds: 208973566171303664
+  ChildIds: 7911577802717993527
+  ChildIds: 3542419570464403328
+  ChildIds: 18260603047086957939
+  ChildIds: 16868115595097646823
+  ChildIds: 4057308663606899948
+  ChildIds: 16664531256553204049
+  ChildIds: 2483834954803854760
+  ChildIds: 2630752238505584717
+  ChildIds: 16888655800756736644
+  ChildIds: 12094014442384663926
+  ChildIds: 2118095102987657830
+  ChildIds: 14872773936862663918
+  ChildIds: 16343834620020398573
+  ChildIds: 2095286556014904477
+  ChildIds: 10277550177937889893
+  ChildIds: 17853574062025245366
+  ChildIds: 6714477427789143417
+  ChildIds: 9027754059411877106
+  ChildIds: 13277625374919011933
+  ChildIds: 15312767630782185775
+  ChildIds: 9779832021296914490
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -9253,7 +9720,7 @@ Objects {
   }
 }
 Objects {
-  Id: 208973566171303664
+  Id: 9779832021296914490
   Name: "Forest Floor"
   Transform {
     Location {
@@ -9297,7 +9764,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9319,7 +9793,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14795959048925029138
+  Id: 15312767630782185775
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -9363,7 +9837,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9385,7 +9866,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3491170157169013822
+  Id: 13277625374919011933
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -9429,7 +9910,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -9451,7 +9939,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13294930640877090512
+  Id: 9027754059411877106
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -9495,7 +9983,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -9517,7 +10012,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7735875579568376187
+  Id: 6714477427789143417
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -9561,7 +10056,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -9583,7 +10085,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12175565233330196030
+  Id: 17853574062025245366
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -9627,7 +10129,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -9649,7 +10158,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15953687031678436021
+  Id: 10277550177937889893
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -9693,7 +10202,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -9715,7 +10231,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15757212391293396739
+  Id: 2095286556014904477
   Name: "Reflector Green"
   Transform {
     Location {
@@ -9759,7 +10275,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -9781,7 +10304,7 @@ Objects {
   }
 }
 Objects {
-  Id: 173630588049641642
+  Id: 16343834620020398573
   Name: "Reflector Red"
   Transform {
     Location {
@@ -9823,7 +10346,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -9845,7 +10375,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16674176566002138724
+  Id: 14872773936862663918
   Name: "Tiled Green"
   Transform {
     Location {
@@ -9889,7 +10419,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -9911,7 +10448,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15312560861067004112
+  Id: 2118095102987657830
   Name: "Force Field Green"
   Transform {
     Location {
@@ -9955,7 +10492,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -9977,7 +10521,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13487116939871079483
+  Id: 12094014442384663926
   Name: "Force Field"
   Transform {
     Location {
@@ -10021,7 +10565,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -10043,7 +10594,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13939026082252460021
+  Id: 16888655800756736644
   Name: "Fruit"
   Transform {
     Location {
@@ -10086,7 +10637,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -10108,7 +10666,7 @@ Objects {
   }
 }
 Objects {
-  Id: 897157333427879771
+  Id: 2630752238505584717
   Name: "Energy Tube"
   Transform {
     Location {
@@ -10151,7 +10709,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -10173,7 +10738,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12375934867931959213
+  Id: 2483834954803854760
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -10217,7 +10782,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -10239,7 +10811,7 @@ Objects {
   }
 }
 Objects {
-  Id: 351096845986771517
+  Id: 16664531256553204049
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -10283,7 +10855,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -10305,7 +10884,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17007575067805729061
+  Id: 4057308663606899948
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -10348,7 +10927,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -10370,7 +10956,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9766421535554024412
+  Id: 16868115595097646823
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -10414,73 +11000,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 13329241022409688576
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18173040775387684071
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10501,7 +11029,7 @@ Objects {
   }
 }
 Objects {
-  Id: 727497724623718320
+  Id: 18260603047086957939
   Name: "Gold"
   Transform {
     Location {
@@ -10546,6 +11074,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10566,7 +11101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6145741212277636749
+  Id: 3542419570464403328
   Name: "Chrome"
   Transform {
     Location {
@@ -10612,6 +11147,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10632,7 +11174,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8378243389398512027
+  Id: 7911577802717993527
   Name: "Stock"
   Transform {
     Location {
@@ -10677,7 +11219,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -10713,28 +11259,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 8858541145428487004
-  ChildIds: 5199168013006399137
-  ChildIds: 3255927152253144236
-  ChildIds: 9190169834412921795
-  ChildIds: 4876147816965311939
-  ChildIds: 12625372596363858203
-  ChildIds: 12077208576909492190
-  ChildIds: 4960129342103727511
-  ChildIds: 6714413911211893786
-  ChildIds: 8039489821821875675
-  ChildIds: 12014532460365654029
-  ChildIds: 17759070432431417483
-  ChildIds: 11699100671595176219
-  ChildIds: 10742990673074593786
-  ChildIds: 17648345070282430003
-  ChildIds: 2946725299577230799
-  ChildIds: 17563271139694930192
-  ChildIds: 1712422869003151692
-  ChildIds: 2219469706818902812
-  ChildIds: 11508620673046780458
-  ChildIds: 4717392440135214477
-  ChildIds: 2163250680956994516
+  ChildIds: 13763726157388953228
+  ChildIds: 952917583321964783
+  ChildIds: 13297509908259663913
+  ChildIds: 14872366772429828662
+  ChildIds: 14398176511002606104
+  ChildIds: 12071640677265481385
+  ChildIds: 2906592698499635319
+  ChildIds: 15813777804649217052
+  ChildIds: 13424856794921724870
+  ChildIds: 13859462004909638859
+  ChildIds: 2447899441349924146
+  ChildIds: 5782725601856324906
+  ChildIds: 4750994056856133257
+  ChildIds: 1715609429721310279
+  ChildIds: 923123066381690254
+  ChildIds: 13326384657748468569
+  ChildIds: 1459418848117058034
+  ChildIds: 305198987136993151
+  ChildIds: 16825959824567557565
+  ChildIds: 8884570352577737680
+  ChildIds: 11403873272832997600
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -10758,7 +11303,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2163250680956994516
+  Id: 11403873272832997600
   Name: "Forest Floor"
   Transform {
     Location {
@@ -10802,7 +11347,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -10824,7 +11376,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4717392440135214477
+  Id: 8884570352577737680
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -10868,7 +11420,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -10890,7 +11449,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11508620673046780458
+  Id: 16825959824567557565
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -10934,7 +11493,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -10956,7 +11522,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2219469706818902812
+  Id: 305198987136993151
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -11000,7 +11566,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -11022,7 +11595,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1712422869003151692
+  Id: 1459418848117058034
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -11066,7 +11639,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -11088,7 +11668,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17563271139694930192
+  Id: 13326384657748468569
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -11132,7 +11712,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -11154,7 +11741,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2946725299577230799
+  Id: 923123066381690254
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -11198,7 +11785,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -11220,7 +11814,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17648345070282430003
+  Id: 1715609429721310279
   Name: "Reflector Green"
   Transform {
     Location {
@@ -11264,7 +11858,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -11286,7 +11887,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10742990673074593786
+  Id: 4750994056856133257
   Name: "Reflector Red"
   Transform {
     Location {
@@ -11328,7 +11929,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -11350,7 +11958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11699100671595176219
+  Id: 5782725601856324906
   Name: "Tiled Green"
   Transform {
     Location {
@@ -11394,7 +12002,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -11416,7 +12031,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17759070432431417483
+  Id: 2447899441349924146
   Name: "Force Field Green"
   Transform {
     Location {
@@ -11460,7 +12075,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -11482,7 +12104,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12014532460365654029
+  Id: 13859462004909638859
   Name: "Force Field"
   Transform {
     Location {
@@ -11526,7 +12148,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -11548,7 +12177,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8039489821821875675
+  Id: 13424856794921724870
   Name: "Fruit"
   Transform {
     Location {
@@ -11591,7 +12220,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -11613,7 +12249,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6714413911211893786
+  Id: 15813777804649217052
   Name: "Energy Tube"
   Transform {
     Location {
@@ -11656,7 +12292,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -11678,7 +12321,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4960129342103727511
+  Id: 2906592698499635319
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -11722,7 +12365,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -11744,7 +12394,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12077208576909492190
+  Id: 12071640677265481385
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -11788,7 +12438,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -11810,7 +12467,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12625372596363858203
+  Id: 14398176511002606104
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -11853,7 +12510,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -11875,7 +12539,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4876147816965311939
+  Id: 14872366772429828662
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -11919,73 +12583,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 9190169834412921795
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10257043552041318330
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12006,7 +12612,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3255927152253144236
+  Id: 13297509908259663913
   Name: "Gold"
   Transform {
     Location {
@@ -12051,6 +12657,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12071,7 +12684,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5199168013006399137
+  Id: 952917583321964783
   Name: "Chrome"
   Transform {
     Location {
@@ -12117,6 +12730,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12137,7 +12757,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8858541145428487004
+  Id: 13763726157388953228
   Name: "Stock"
   Transform {
     Location {
@@ -12182,7 +12802,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -12218,28 +12842,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 17026664145848044531
-  ChildIds: 2553540207904868920
-  ChildIds: 5213449937747074081
-  ChildIds: 7249305312002753044
-  ChildIds: 1187290046198886501
-  ChildIds: 9477764954408174135
-  ChildIds: 12659630964257436218
-  ChildIds: 8091085400911002631
-  ChildIds: 18127236707660494878
-  ChildIds: 16798200164751882778
-  ChildIds: 12803623982583133374
-  ChildIds: 7349136043595343471
-  ChildIds: 7973854982524605154
-  ChildIds: 11048233085513771394
-  ChildIds: 2398177297570045748
-  ChildIds: 7848924028984282791
-  ChildIds: 11203996224972459296
-  ChildIds: 16971276937056597001
-  ChildIds: 9899482047917602751
-  ChildIds: 9946863651423524846
-  ChildIds: 13999505463451187544
-  ChildIds: 14381131616587894487
+  ChildIds: 9810075595397138664
+  ChildIds: 9508590002165863776
+  ChildIds: 8011674538509047946
+  ChildIds: 5166343712936783657
+  ChildIds: 3444647145403998624
+  ChildIds: 8448200727077890994
+  ChildIds: 4436929591782372136
+  ChildIds: 13556070763359446808
+  ChildIds: 12335219975910801691
+  ChildIds: 4790487058644624484
+  ChildIds: 10185395005274833200
+  ChildIds: 17246205711592546048
+  ChildIds: 9605958173132038850
+  ChildIds: 676430832207832013
+  ChildIds: 3475680989068007702
+  ChildIds: 2869404705675546147
+  ChildIds: 10934266702114875833
+  ChildIds: 1264462641747002877
+  ChildIds: 16417176325936410484
+  ChildIds: 13971568502241355165
+  ChildIds: 1298405302132450467
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -12263,7 +12886,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14381131616587894487
+  Id: 1298405302132450467
   Name: "Forest Floor"
   Transform {
     Location {
@@ -12307,7 +12930,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12329,7 +12959,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13999505463451187544
+  Id: 13971568502241355165
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -12373,7 +13003,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12395,7 +13032,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9946863651423524846
+  Id: 16417176325936410484
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -12439,7 +13076,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -12461,7 +13105,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9899482047917602751
+  Id: 1264462641747002877
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -12505,7 +13149,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -12527,7 +13178,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16971276937056597001
+  Id: 10934266702114875833
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -12571,7 +13222,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -12593,7 +13251,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11203996224972459296
+  Id: 2869404705675546147
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -12637,7 +13295,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -12659,7 +13324,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7848924028984282791
+  Id: 3475680989068007702
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -12703,7 +13368,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -12725,7 +13397,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2398177297570045748
+  Id: 676430832207832013
   Name: "Reflector Green"
   Transform {
     Location {
@@ -12769,7 +13441,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -12791,7 +13470,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11048233085513771394
+  Id: 9605958173132038850
   Name: "Reflector Red"
   Transform {
     Location {
@@ -12833,7 +13512,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -12855,7 +13541,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7973854982524605154
+  Id: 17246205711592546048
   Name: "Tiled Green"
   Transform {
     Location {
@@ -12899,7 +13585,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -12921,7 +13614,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7349136043595343471
+  Id: 10185395005274833200
   Name: "Force Field Green"
   Transform {
     Location {
@@ -12965,7 +13658,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -12987,7 +13687,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12803623982583133374
+  Id: 4790487058644624484
   Name: "Force Field"
   Transform {
     Location {
@@ -13031,7 +13731,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -13053,7 +13760,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16798200164751882778
+  Id: 12335219975910801691
   Name: "Fruit"
   Transform {
     Location {
@@ -13096,7 +13803,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -13118,7 +13832,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18127236707660494878
+  Id: 13556070763359446808
   Name: "Energy Tube"
   Transform {
     Location {
@@ -13161,7 +13875,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -13183,7 +13904,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8091085400911002631
+  Id: 4436929591782372136
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -13227,7 +13948,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -13249,7 +13977,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12659630964257436218
+  Id: 8448200727077890994
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -13293,7 +14021,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -13315,7 +14050,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9477764954408174135
+  Id: 3444647145403998624
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -13358,7 +14093,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -13380,7 +14122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1187290046198886501
+  Id: 5166343712936783657
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -13424,73 +14166,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 7249305312002753044
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1986487188251272994
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13511,7 +14195,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5213449937747074081
+  Id: 8011674538509047946
   Name: "Gold"
   Transform {
     Location {
@@ -13556,6 +14240,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13576,7 +14267,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2553540207904868920
+  Id: 9508590002165863776
   Name: "Chrome"
   Transform {
     Location {
@@ -13622,6 +14313,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13642,7 +14340,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17026664145848044531
+  Id: 9810075595397138664
   Name: "Stock"
   Transform {
     Location {
@@ -13687,7 +14385,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -13723,28 +14425,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 13710804848154279803
-  ChildIds: 8868624802448486882
-  ChildIds: 7238699749226813010
-  ChildIds: 13986634111980741088
-  ChildIds: 17132326242171178143
-  ChildIds: 15927613287582309717
-  ChildIds: 14644506327552406046
-  ChildIds: 11285953096669261262
-  ChildIds: 7720847781218740763
-  ChildIds: 15052295079679894910
-  ChildIds: 10203136851230782873
-  ChildIds: 8129249324168685546
-  ChildIds: 6386999492255518239
-  ChildIds: 15639666786593741040
-  ChildIds: 14036891920328898246
-  ChildIds: 2676870410706049657
-  ChildIds: 8937937526363645643
-  ChildIds: 7659017889491453851
-  ChildIds: 16847670769629125528
-  ChildIds: 901651533621875491
-  ChildIds: 11325145544592311528
-  ChildIds: 6271470356076315185
+  ChildIds: 6861056134177131734
+  ChildIds: 10875756085779267905
+  ChildIds: 17085520181492211765
+  ChildIds: 18280479759868131334
+  ChildIds: 3843673793059171873
+  ChildIds: 1752019471886105542
+  ChildIds: 7678971755021618339
+  ChildIds: 3036685136573244367
+  ChildIds: 12071245930769893730
+  ChildIds: 8218881885400993183
+  ChildIds: 7120230560381862598
+  ChildIds: 5671920570473889676
+  ChildIds: 4931013688579334756
+  ChildIds: 12072745015727210467
+  ChildIds: 8621976083387886917
+  ChildIds: 1349346252802970432
+  ChildIds: 15154002219449880370
+  ChildIds: 1450289417687871747
+  ChildIds: 15965613395257654617
+  ChildIds: 3092138011392775510
+  ChildIds: 13634116104214028487
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -13768,7 +14469,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6271470356076315185
+  Id: 13634116104214028487
   Name: "Forest Floor"
   Transform {
     Location {
@@ -13812,7 +14513,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -13834,7 +14542,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11325145544592311528
+  Id: 3092138011392775510
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -13878,7 +14586,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -13900,7 +14615,7 @@ Objects {
   }
 }
 Objects {
-  Id: 901651533621875491
+  Id: 15965613395257654617
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -13944,7 +14659,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -13966,7 +14688,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16847670769629125528
+  Id: 1450289417687871747
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -14010,7 +14732,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -14032,7 +14761,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7659017889491453851
+  Id: 15154002219449880370
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -14076,7 +14805,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -14098,7 +14834,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8937937526363645643
+  Id: 1349346252802970432
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -14142,7 +14878,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -14164,7 +14907,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2676870410706049657
+  Id: 8621976083387886917
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -14208,7 +14951,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -14230,7 +14980,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14036891920328898246
+  Id: 12072745015727210467
   Name: "Reflector Green"
   Transform {
     Location {
@@ -14274,7 +15024,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -14296,7 +15053,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15639666786593741040
+  Id: 4931013688579334756
   Name: "Reflector Red"
   Transform {
     Location {
@@ -14338,7 +15095,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -14360,7 +15124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6386999492255518239
+  Id: 5671920570473889676
   Name: "Tiled Green"
   Transform {
     Location {
@@ -14404,7 +15168,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -14426,7 +15197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8129249324168685546
+  Id: 7120230560381862598
   Name: "Force Field Green"
   Transform {
     Location {
@@ -14470,7 +15241,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -14492,7 +15270,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10203136851230782873
+  Id: 8218881885400993183
   Name: "Force Field"
   Transform {
     Location {
@@ -14536,7 +15314,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -14558,7 +15343,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15052295079679894910
+  Id: 12071245930769893730
   Name: "Fruit"
   Transform {
     Location {
@@ -14601,7 +15386,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -14623,7 +15415,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7720847781218740763
+  Id: 3036685136573244367
   Name: "Energy Tube"
   Transform {
     Location {
@@ -14666,7 +15458,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -14688,7 +15487,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11285953096669261262
+  Id: 7678971755021618339
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -14732,7 +15531,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -14754,7 +15560,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14644506327552406046
+  Id: 1752019471886105542
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -14798,7 +15604,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -14820,7 +15633,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15927613287582309717
+  Id: 3843673793059171873
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -14863,7 +15676,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -14885,7 +15705,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17132326242171178143
+  Id: 18280479759868131334
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -14929,73 +15749,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 13986634111980741088
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3252150858469960285
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15016,7 +15778,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7238699749226813010
+  Id: 17085520181492211765
   Name: "Gold"
   Transform {
     Location {
@@ -15061,6 +15823,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15081,7 +15850,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8868624802448486882
+  Id: 10875756085779267905
   Name: "Chrome"
   Transform {
     Location {
@@ -15127,6 +15896,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15147,7 +15923,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13710804848154279803
+  Id: 6861056134177131734
   Name: "Stock"
   Transform {
     Location {
@@ -15192,7 +15968,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -15250,6 +16030,27 @@ Objects {
   ChildIds: 2110387132564489320
   ChildIds: 16560210011872782008
   ChildIds: 16775392370723933616
+  ChildIds: 3015115898666695833
+  ChildIds: 13386489752340808195
+  ChildIds: 8888260221722465698
+  ChildIds: 12278348523404908441
+  ChildIds: 6291512418346393208
+  ChildIds: 8522386913672886399
+  ChildIds: 487408698146590128
+  ChildIds: 9750219331096173532
+  ChildIds: 4834906258061603764
+  ChildIds: 14921358903814861378
+  ChildIds: 712376107806282575
+  ChildIds: 9082560953739020733
+  ChildIds: 10998821407025062757
+  ChildIds: 14422031420648316665
+  ChildIds: 11536425708794394576
+  ChildIds: 2066252825314884229
+  ChildIds: 16076018592876546548
+  ChildIds: 17973883621346485767
+  ChildIds: 13486450045634745992
+  ChildIds: 9978712596368263696
+  ChildIds: 1241269341118175206
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -15270,6 +16071,1531 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 1241269341118175206
+  Name: "Forest Floor"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Forest Floor"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 289372818548227518
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 9978712596368263696
+  Name: "Sand Dunes"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Sand Dunes"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 373034708355704799
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 13486450045634745992
+  Name: "Metal Greebles"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Metal Greebles"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.494792
+        G: 0.494792
+        B: 0.494792
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 4465877919970375297
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 17973883621346485767
+  Name: "Stripes Blue Alt"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stripes Blue Alt"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0170999952
+        G: 0.0548199
+        B: 0.3
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 942118974176962227
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 16076018592876546548
+  Name: "Stripes Blue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stripes Blue"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0284429919
+        G: 0.0911837667
+        B: 0.499
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 942118974176962227
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 2066252825314884229
+  Name: "Stripes Purple"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stripes Purple"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.593000054
+        G: 0.154179975
+        B: 0.432099313
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 942118974176962227
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 11536425708794394576
+  Name: "Reflector Grey"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Reflector Grey"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.168000013
+        G: 0.168000013
+        B: 0.168000013
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 18087485408544217211
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 14422031420648316665
+  Name: "Reflector Green"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Reflector Green"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0552924
+        G: 0.467
+        B: 0.0410959721
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 18087485408544217211
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 10998821407025062757
+  Name: "Reflector Red"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Reflector Red"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.477000028
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 18087485408544217211
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 9082560953739020733
+  Name: "Tiled Green"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Tiled Green"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0552924
+        G: 0.467
+        B: 0.0410959721
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 15910750051962798568
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 712376107806282575
+  Name: "Force Field Green"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Force Field Green"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0411443152
+        G: 0.650000036
+        B: 0.020149935
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 5950052926211564984
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 14921358903814861378
+  Name: "Force Field"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Force Field"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.750596046
+        G: 0.770000041
+        B: 0.60368
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 5950052926211564984
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 4834906258061603764
+  Name: "Fruit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Fruit"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.39
+        G: 0.170463577
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 942118974176962227
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 9750219331096173532
+  Name: "Energy Tube"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Energy Tube"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        G: 0.0245998893
+        B: 0.123
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 9743499594980233710
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 487408698146590128
+  Name: "Advanced Metal"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Advanced Metal"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0410959721
+        G: 0.403114349
+        B: 0.467
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 9187540498960513143
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 8522386913672886399
+  Name: "Magic Glass Grey"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Magic Glass Grey"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.382964045
+        G: 0.389000028
+        B: 0.337263018
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 6005397606915098357
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 6291512418346393208
+  Name: "Magic Glass Blue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Magic Glass Blue"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        G: 0.00999994297
+        B: 0.05
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 6005397606915098357
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 12278348523404908441
+  Name: "Magic Glass Purple"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Magic Glass Purple"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.0322325043
+        G: 0.00364999776
+        B: 0.05
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 6005397606915098357
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "03"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 8888260221722465698
+  Name: "Gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Gold"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.73300004
+        G: 0.525316715
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 2821307588416139022
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "02"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 13386489752340808195
+  Name: "Chrome"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Chrome"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 3180794530394243418
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "01"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
+  }
+}
+Objects {
+  Id: 3015115898666695833
+  Name: "Stock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4933973338153241784
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:SkinName"
+      String: "Stock"
+    }
+    Overrides {
+      Name: "cs:UseNewMaterial"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:UseNewColor"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewMaterial"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:SkinID"
+      String: "00"
+    }
+    Overrides {
+      Name: "cs:Resource"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840956372502537854
+    }
   }
 }
 Objects {
@@ -16697,7 +19023,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -16733,28 +19063,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 6103443827825067276
-  ChildIds: 4086141845455058611
-  ChildIds: 2208290284407485028
-  ChildIds: 4492199177563156959
-  ChildIds: 11429270998212299913
-  ChildIds: 10405047934460889347
-  ChildIds: 1378441739074011662
-  ChildIds: 9896575209335691011
-  ChildIds: 7145843310054701897
-  ChildIds: 8611342935177008380
-  ChildIds: 3990885203280944800
-  ChildIds: 14350613395462060902
-  ChildIds: 6657821951043712491
-  ChildIds: 11862297682089706019
-  ChildIds: 5147746674992485480
-  ChildIds: 14392822916152627759
-  ChildIds: 3802111280130827673
-  ChildIds: 13818276072020655249
-  ChildIds: 18229528479567837897
-  ChildIds: 6251990814845881022
-  ChildIds: 635157812206849753
-  ChildIds: 9239675483119115292
+  ChildIds: 16100228244912527564
+  ChildIds: 6372561482790488975
+  ChildIds: 2842563529990945032
+  ChildIds: 4733297056771935418
+  ChildIds: 15351467197486070845
+  ChildIds: 3592853649896636913
+  ChildIds: 1264476847407482437
+  ChildIds: 890317304225267502
+  ChildIds: 10235378071891089951
+  ChildIds: 16838578754709175383
+  ChildIds: 3539271113428248971
+  ChildIds: 112705260314847284
+  ChildIds: 14858069282311593756
+  ChildIds: 7785239863853003497
+  ChildIds: 18046492399821067584
+  ChildIds: 16016044903400407423
+  ChildIds: 13890060825681669620
+  ChildIds: 1910896427723354242
+  ChildIds: 14998924741398038328
+  ChildIds: 18291005837505353432
+  ChildIds: 5576526047456385651
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -16778,7 +19107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9239675483119115292
+  Id: 5576526047456385651
   Name: "Forest Floor"
   Transform {
     Location {
@@ -16822,7 +19151,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16844,7 +19180,7 @@ Objects {
   }
 }
 Objects {
-  Id: 635157812206849753
+  Id: 18291005837505353432
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -16888,7 +19224,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16910,7 +19253,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6251990814845881022
+  Id: 14998924741398038328
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -16954,7 +19297,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -16976,7 +19326,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18229528479567837897
+  Id: 1910896427723354242
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -17020,7 +19370,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -17042,7 +19399,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13818276072020655249
+  Id: 13890060825681669620
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -17086,7 +19443,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -17108,7 +19472,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3802111280130827673
+  Id: 16016044903400407423
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -17152,7 +19516,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -17174,7 +19545,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14392822916152627759
+  Id: 18046492399821067584
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -17218,7 +19589,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -17240,7 +19618,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5147746674992485480
+  Id: 7785239863853003497
   Name: "Reflector Green"
   Transform {
     Location {
@@ -17284,7 +19662,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -17306,7 +19691,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11862297682089706019
+  Id: 14858069282311593756
   Name: "Reflector Red"
   Transform {
     Location {
@@ -17348,7 +19733,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -17370,7 +19762,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6657821951043712491
+  Id: 112705260314847284
   Name: "Tiled Green"
   Transform {
     Location {
@@ -17414,7 +19806,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -17436,7 +19835,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14350613395462060902
+  Id: 3539271113428248971
   Name: "Force Field Green"
   Transform {
     Location {
@@ -17480,7 +19879,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -17502,7 +19908,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3990885203280944800
+  Id: 16838578754709175383
   Name: "Force Field"
   Transform {
     Location {
@@ -17546,7 +19952,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -17568,7 +19981,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8611342935177008380
+  Id: 10235378071891089951
   Name: "Fruit"
   Transform {
     Location {
@@ -17611,7 +20024,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -17633,7 +20053,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7145843310054701897
+  Id: 890317304225267502
   Name: "Energy Tube"
   Transform {
     Location {
@@ -17676,7 +20096,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -17698,7 +20125,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9896575209335691011
+  Id: 1264476847407482437
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -17742,7 +20169,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -17764,7 +20198,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1378441739074011662
+  Id: 3592853649896636913
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -17808,7 +20242,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -17830,7 +20271,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10405047934460889347
+  Id: 15351467197486070845
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -17873,7 +20314,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -17895,7 +20343,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11429270998212299913
+  Id: 4733297056771935418
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -17939,73 +20387,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 4492199177563156959
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5285147033980017679
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18026,7 +20416,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2208290284407485028
+  Id: 2842563529990945032
   Name: "Gold"
   Transform {
     Location {
@@ -18071,6 +20461,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18091,7 +20488,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4086141845455058611
+  Id: 6372561482790488975
   Name: "Chrome"
   Transform {
     Location {
@@ -18137,6 +20534,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18157,7 +20561,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6103443827825067276
+  Id: 16100228244912527564
   Name: "Stock"
   Transform {
     Location {
@@ -18202,7 +20606,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -18238,28 +20646,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 15011653624365695509
-  ChildIds: 13696663400091106468
-  ChildIds: 12806727777416423068
-  ChildIds: 14434913388004956296
-  ChildIds: 13209113345820013775
-  ChildIds: 16234336418383907818
-  ChildIds: 17381070589032059822
-  ChildIds: 10131462582020995843
-  ChildIds: 14094134176444477460
-  ChildIds: 1590672757542625074
-  ChildIds: 15366699748144456269
-  ChildIds: 10993582251973638014
-  ChildIds: 15360182270481437340
-  ChildIds: 14861647346382791493
-  ChildIds: 17619627704323152639
-  ChildIds: 17841717750408681947
-  ChildIds: 16332781081338001517
-  ChildIds: 16241999249865947872
-  ChildIds: 16052913978706012004
-  ChildIds: 4968814836441032440
-  ChildIds: 12406036693016497436
-  ChildIds: 14995878907412335630
+  ChildIds: 13925066302851961646
+  ChildIds: 6596155504230160340
+  ChildIds: 16672018244237335369
+  ChildIds: 14566805837239638235
+  ChildIds: 11841551256682699253
+  ChildIds: 11929477191864270531
+  ChildIds: 11180841410554050778
+  ChildIds: 2078165914278814562
+  ChildIds: 4437065703060561074
+  ChildIds: 7958523877294209666
+  ChildIds: 12534076007946513753
+  ChildIds: 7408859449278723339
+  ChildIds: 1434760527164289144
+  ChildIds: 10115323623041188323
+  ChildIds: 8981958264459237667
+  ChildIds: 18028392929354538276
+  ChildIds: 5376010684499836840
+  ChildIds: 12401355647135346924
+  ChildIds: 11220954482506566347
+  ChildIds: 10934830954014463072
+  ChildIds: 12333208220034997338
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -18283,7 +20690,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14995878907412335630
+  Id: 12333208220034997338
   Name: "Forest Floor"
   Transform {
     Location {
@@ -18327,7 +20734,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -18349,7 +20763,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12406036693016497436
+  Id: 10934830954014463072
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -18393,7 +20807,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -18415,7 +20836,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4968814836441032440
+  Id: 11220954482506566347
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -18459,7 +20880,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18481,7 +20909,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16052913978706012004
+  Id: 12401355647135346924
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -18525,7 +20953,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18547,7 +20982,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16241999249865947872
+  Id: 5376010684499836840
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -18591,7 +21026,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18613,7 +21055,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16332781081338001517
+  Id: 18028392929354538276
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -18657,7 +21099,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18679,7 +21128,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17841717750408681947
+  Id: 8981958264459237667
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -18723,7 +21172,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -18745,7 +21201,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17619627704323152639
+  Id: 10115323623041188323
   Name: "Reflector Green"
   Transform {
     Location {
@@ -18789,7 +21245,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -18811,7 +21274,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14861647346382791493
+  Id: 1434760527164289144
   Name: "Reflector Red"
   Transform {
     Location {
@@ -18853,7 +21316,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -18875,7 +21345,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15360182270481437340
+  Id: 7408859449278723339
   Name: "Tiled Green"
   Transform {
     Location {
@@ -18919,7 +21389,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18941,7 +21418,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10993582251973638014
+  Id: 12534076007946513753
   Name: "Force Field Green"
   Transform {
     Location {
@@ -18985,7 +21462,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -19007,7 +21491,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15366699748144456269
+  Id: 7958523877294209666
   Name: "Force Field"
   Transform {
     Location {
@@ -19051,7 +21535,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -19073,7 +21564,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1590672757542625074
+  Id: 4437065703060561074
   Name: "Fruit"
   Transform {
     Location {
@@ -19116,7 +21607,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -19138,7 +21636,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14094134176444477460
+  Id: 2078165914278814562
   Name: "Energy Tube"
   Transform {
     Location {
@@ -19181,7 +21679,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -19203,7 +21708,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10131462582020995843
+  Id: 11180841410554050778
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -19247,7 +21752,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -19269,7 +21781,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17381070589032059822
+  Id: 11929477191864270531
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -19313,7 +21825,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -19335,7 +21854,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16234336418383907818
+  Id: 11841551256682699253
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -19378,7 +21897,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -19400,7 +21926,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13209113345820013775
+  Id: 14566805837239638235
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -19444,73 +21970,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 14434913388004956296
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18444441628994035687
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19531,7 +21999,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12806727777416423068
+  Id: 16672018244237335369
   Name: "Gold"
   Transform {
     Location {
@@ -19576,6 +22044,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19596,7 +22071,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13696663400091106468
+  Id: 6596155504230160340
   Name: "Chrome"
   Transform {
     Location {
@@ -19642,6 +22117,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19662,7 +22144,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15011653624365695509
+  Id: 13925066302851961646
   Name: "Stock"
   Transform {
     Location {
@@ -19707,7 +22189,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -19743,28 +22229,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 9397089649909008949
-  ChildIds: 16588904776023175265
-  ChildIds: 5329751118609751531
-  ChildIds: 9043683602749835848
-  ChildIds: 5750089958857836903
-  ChildIds: 5389646367309045526
-  ChildIds: 13436729629709306670
-  ChildIds: 17440994802264447452
-  ChildIds: 14144103140447121180
-  ChildIds: 11834631616077255113
-  ChildIds: 5971611450804584398
-  ChildIds: 4062288504958254601
-  ChildIds: 18144397993232797038
-  ChildIds: 7947506828385312808
-  ChildIds: 6746424041951273315
-  ChildIds: 11025940023311785370
-  ChildIds: 9517008891717836289
-  ChildIds: 10130926550398170448
-  ChildIds: 3632848367353505788
-  ChildIds: 15663156263392584109
-  ChildIds: 6379080741514411429
-  ChildIds: 13068680855662696283
+  ChildIds: 2153509392046951942
+  ChildIds: 7199698801198791627
+  ChildIds: 16630857031319329840
+  ChildIds: 6177486612500243257
+  ChildIds: 17990441741433922881
+  ChildIds: 17463676646803349714
+  ChildIds: 13659643992343799415
+  ChildIds: 17716276487307426831
+  ChildIds: 9192533573233670621
+  ChildIds: 12398892384851890754
+  ChildIds: 13030447953671208178
+  ChildIds: 6026829976968343382
+  ChildIds: 4181250480001122796
+  ChildIds: 6488653603636710594
+  ChildIds: 18321229613109173177
+  ChildIds: 10388547781375841278
+  ChildIds: 4564797338580901984
+  ChildIds: 6392193392592285625
+  ChildIds: 11800714752490295566
+  ChildIds: 13504691968250741625
+  ChildIds: 3163904440183236709
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -19788,7 +22273,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13068680855662696283
+  Id: 3163904440183236709
   Name: "Forest Floor"
   Transform {
     Location {
@@ -19832,7 +22317,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19854,7 +22346,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6379080741514411429
+  Id: 13504691968250741625
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -19898,7 +22390,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19920,7 +22419,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15663156263392584109
+  Id: 11800714752490295566
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -19964,7 +22463,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -19986,7 +22492,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3632848367353505788
+  Id: 6392193392592285625
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -20030,7 +22536,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -20052,7 +22565,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10130926550398170448
+  Id: 4564797338580901984
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -20096,7 +22609,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -20118,7 +22638,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9517008891717836289
+  Id: 10388547781375841278
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -20162,7 +22682,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -20184,7 +22711,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11025940023311785370
+  Id: 18321229613109173177
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -20228,7 +22755,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -20250,7 +22784,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6746424041951273315
+  Id: 6488653603636710594
   Name: "Reflector Green"
   Transform {
     Location {
@@ -20294,7 +22828,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -20316,7 +22857,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7947506828385312808
+  Id: 4181250480001122796
   Name: "Reflector Red"
   Transform {
     Location {
@@ -20358,7 +22899,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -20380,7 +22928,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18144397993232797038
+  Id: 6026829976968343382
   Name: "Tiled Green"
   Transform {
     Location {
@@ -20424,7 +22972,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -20446,7 +23001,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4062288504958254601
+  Id: 13030447953671208178
   Name: "Force Field Green"
   Transform {
     Location {
@@ -20490,7 +23045,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -20512,7 +23074,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5971611450804584398
+  Id: 12398892384851890754
   Name: "Force Field"
   Transform {
     Location {
@@ -20556,7 +23118,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -20578,7 +23147,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11834631616077255113
+  Id: 9192533573233670621
   Name: "Fruit"
   Transform {
     Location {
@@ -20621,7 +23190,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -20643,7 +23219,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14144103140447121180
+  Id: 17716276487307426831
   Name: "Energy Tube"
   Transform {
     Location {
@@ -20686,7 +23262,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -20708,7 +23291,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17440994802264447452
+  Id: 13659643992343799415
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -20752,7 +23335,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -20774,7 +23364,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13436729629709306670
+  Id: 17463676646803349714
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -20818,7 +23408,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -20840,7 +23437,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5389646367309045526
+  Id: 17990441741433922881
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -20883,7 +23480,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -20905,7 +23509,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5750089958857836903
+  Id: 6177486612500243257
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -20949,73 +23553,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 9043683602749835848
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12732989830499554754
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21036,7 +23582,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5329751118609751531
+  Id: 16630857031319329840
   Name: "Gold"
   Transform {
     Location {
@@ -21081,6 +23627,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21101,7 +23654,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16588904776023175265
+  Id: 7199698801198791627
   Name: "Chrome"
   Transform {
     Location {
@@ -21147,6 +23700,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21167,7 +23727,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9397089649909008949
+  Id: 2153509392046951942
   Name: "Stock"
   Transform {
     Location {
@@ -21212,7 +23772,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -21248,28 +23812,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 13124583999733662643
-  ChildIds: 9180744133843784663
-  ChildIds: 6598190969458213905
-  ChildIds: 17461450200241563590
-  ChildIds: 17541818835722404690
-  ChildIds: 7026036524969412098
-  ChildIds: 6472290539160030097
-  ChildIds: 4618018958950684920
-  ChildIds: 14603720298343360132
-  ChildIds: 8684971145307697637
-  ChildIds: 3584432248643476674
-  ChildIds: 10666078259363306072
-  ChildIds: 17203046543380715740
-  ChildIds: 5230657199818056941
-  ChildIds: 10865955101296551686
-  ChildIds: 4919752908146734987
-  ChildIds: 7277746249779361558
-  ChildIds: 12811921267265196929
-  ChildIds: 13132056282428195272
-  ChildIds: 17648846539679705129
-  ChildIds: 11122896014797215196
-  ChildIds: 16602408147000628971
+  ChildIds: 461011671903963913
+  ChildIds: 9272390431783731718
+  ChildIds: 13323860016656367676
+  ChildIds: 5405932530047196332
+  ChildIds: 11435314810861327856
+  ChildIds: 16710116471185054893
+  ChildIds: 5400472838245494794
+  ChildIds: 7955455130223433040
+  ChildIds: 15861418767856921185
+  ChildIds: 8577219181428764326
+  ChildIds: 18325622259133437371
+  ChildIds: 16021229747691815167
+  ChildIds: 6861952809181200628
+  ChildIds: 8913231506237806346
+  ChildIds: 8664907232545048715
+  ChildIds: 11000662650924125946
+  ChildIds: 2164143516590163664
+  ChildIds: 13213120073500287786
+  ChildIds: 9773483121980611791
+  ChildIds: 1013677333955956342
+  ChildIds: 3405945203110780827
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -21293,7 +23856,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16602408147000628971
+  Id: 3405945203110780827
   Name: "Forest Floor"
   Transform {
     Location {
@@ -21337,7 +23900,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21359,7 +23929,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11122896014797215196
+  Id: 1013677333955956342
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -21403,7 +23973,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21425,7 +24002,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17648846539679705129
+  Id: 9773483121980611791
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -21469,7 +24046,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -21491,7 +24075,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13132056282428195272
+  Id: 13213120073500287786
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -21535,7 +24119,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -21557,7 +24148,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12811921267265196929
+  Id: 2164143516590163664
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -21601,7 +24192,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -21623,7 +24221,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7277746249779361558
+  Id: 11000662650924125946
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -21667,7 +24265,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -21689,7 +24294,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4919752908146734987
+  Id: 8664907232545048715
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -21733,7 +24338,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -21755,7 +24367,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10865955101296551686
+  Id: 8913231506237806346
   Name: "Reflector Green"
   Transform {
     Location {
@@ -21799,7 +24411,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -21821,7 +24440,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5230657199818056941
+  Id: 6861952809181200628
   Name: "Reflector Red"
   Transform {
     Location {
@@ -21863,7 +24482,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -21885,7 +24511,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17203046543380715740
+  Id: 16021229747691815167
   Name: "Tiled Green"
   Transform {
     Location {
@@ -21929,7 +24555,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -21951,7 +24584,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10666078259363306072
+  Id: 18325622259133437371
   Name: "Force Field Green"
   Transform {
     Location {
@@ -21995,7 +24628,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -22017,7 +24657,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3584432248643476674
+  Id: 8577219181428764326
   Name: "Force Field"
   Transform {
     Location {
@@ -22061,7 +24701,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -22083,7 +24730,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8684971145307697637
+  Id: 15861418767856921185
   Name: "Fruit"
   Transform {
     Location {
@@ -22126,7 +24773,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -22148,7 +24802,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14603720298343360132
+  Id: 7955455130223433040
   Name: "Energy Tube"
   Transform {
     Location {
@@ -22191,7 +24845,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -22213,7 +24874,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4618018958950684920
+  Id: 5400472838245494794
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -22257,7 +24918,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -22279,7 +24947,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6472290539160030097
+  Id: 16710116471185054893
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -22323,7 +24991,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -22345,7 +25020,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7026036524969412098
+  Id: 11435314810861327856
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -22388,7 +25063,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -22410,7 +25092,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17541818835722404690
+  Id: 5405932530047196332
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -22454,73 +25136,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 17461450200241563590
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16159280996151985200
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22541,7 +25165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6598190969458213905
+  Id: 13323860016656367676
   Name: "Gold"
   Transform {
     Location {
@@ -22586,6 +25210,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22606,7 +25237,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9180744133843784663
+  Id: 9272390431783731718
   Name: "Chrome"
   Transform {
     Location {
@@ -22652,6 +25283,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22672,7 +25310,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13124583999733662643
+  Id: 461011671903963913
   Name: "Stock"
   Transform {
     Location {
@@ -22717,7 +25355,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -22753,28 +25395,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 15070397264169185167
-  ChildIds: 17341175200073852677
-  ChildIds: 4438030180617441184
-  ChildIds: 14732682167372145957
-  ChildIds: 4996740942707184187
-  ChildIds: 6337303546427889716
-  ChildIds: 11114438544362724288
-  ChildIds: 9892165312155527022
-  ChildIds: 3749871773857572706
-  ChildIds: 7349935148663169103
-  ChildIds: 17442901866790435005
-  ChildIds: 11266344764756015479
-  ChildIds: 1131405732614563330
-  ChildIds: 6735719734549811321
-  ChildIds: 4303678152214345620
-  ChildIds: 10653466967641610054
-  ChildIds: 11667129178915759957
-  ChildIds: 6786346047664639206
-  ChildIds: 12062146508554861989
-  ChildIds: 9148527732228125021
-  ChildIds: 7046583244678161952
-  ChildIds: 11988897309846776242
+  ChildIds: 8246543575694010128
+  ChildIds: 16451805050135181412
+  ChildIds: 18197942220674899972
+  ChildIds: 532395213179759136
+  ChildIds: 16620627194246021106
+  ChildIds: 2419507272675417579
+  ChildIds: 17410082474033389663
+  ChildIds: 12736939597428469122
+  ChildIds: 14939932260152389060
+  ChildIds: 1737661039285108410
+  ChildIds: 10972917866370189410
+  ChildIds: 3146347940168374942
+  ChildIds: 877404132260701080
+  ChildIds: 6096567719429112630
+  ChildIds: 16091061407029473370
+  ChildIds: 16390943449343979897
+  ChildIds: 3551804538610361374
+  ChildIds: 14125133158649757443
+  ChildIds: 268004174093584861
+  ChildIds: 15010060292355380879
+  ChildIds: 12648248776687070499
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -22798,7 +25439,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11988897309846776242
+  Id: 12648248776687070499
   Name: "Forest Floor"
   Transform {
     Location {
@@ -22842,7 +25483,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22864,7 +25512,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7046583244678161952
+  Id: 15010060292355380879
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -22908,7 +25556,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22930,7 +25585,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9148527732228125021
+  Id: 268004174093584861
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -22974,7 +25629,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -22996,7 +25658,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12062146508554861989
+  Id: 14125133158649757443
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -23040,7 +25702,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -23062,7 +25731,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6786346047664639206
+  Id: 3551804538610361374
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -23106,7 +25775,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -23128,7 +25804,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11667129178915759957
+  Id: 16390943449343979897
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -23172,7 +25848,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -23194,7 +25877,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10653466967641610054
+  Id: 16091061407029473370
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -23238,7 +25921,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -23260,7 +25950,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4303678152214345620
+  Id: 6096567719429112630
   Name: "Reflector Green"
   Transform {
     Location {
@@ -23304,7 +25994,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -23326,7 +26023,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6735719734549811321
+  Id: 877404132260701080
   Name: "Reflector Red"
   Transform {
     Location {
@@ -23368,7 +26065,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -23390,7 +26094,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1131405732614563330
+  Id: 3146347940168374942
   Name: "Tiled Green"
   Transform {
     Location {
@@ -23434,7 +26138,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -23456,7 +26167,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11266344764756015479
+  Id: 10972917866370189410
   Name: "Force Field Green"
   Transform {
     Location {
@@ -23500,7 +26211,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -23522,7 +26240,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17442901866790435005
+  Id: 1737661039285108410
   Name: "Force Field"
   Transform {
     Location {
@@ -23566,7 +26284,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -23588,7 +26313,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7349935148663169103
+  Id: 14939932260152389060
   Name: "Fruit"
   Transform {
     Location {
@@ -23631,7 +26356,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -23653,7 +26385,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3749871773857572706
+  Id: 12736939597428469122
   Name: "Energy Tube"
   Transform {
     Location {
@@ -23696,7 +26428,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -23718,7 +26457,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9892165312155527022
+  Id: 17410082474033389663
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -23762,7 +26501,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -23784,7 +26530,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11114438544362724288
+  Id: 2419507272675417579
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -23828,7 +26574,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -23850,7 +26603,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6337303546427889716
+  Id: 16620627194246021106
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -23893,7 +26646,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -23915,7 +26675,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4996740942707184187
+  Id: 532395213179759136
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -23959,73 +26719,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 14732682167372145957
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3951419179056633677
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24046,7 +26748,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4438030180617441184
+  Id: 18197942220674899972
   Name: "Gold"
   Transform {
     Location {
@@ -24091,6 +26793,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24111,7 +26820,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17341175200073852677
+  Id: 16451805050135181412
   Name: "Chrome"
   Transform {
     Location {
@@ -24157,6 +26866,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24177,7 +26893,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15070397264169185167
+  Id: 8246543575694010128
   Name: "Stock"
   Transform {
     Location {
@@ -24222,7 +26938,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -24258,28 +26978,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 11330512843298395357
-  ChildIds: 8936911637705627236
-  ChildIds: 16969560754930809482
-  ChildIds: 17289604754465488797
-  ChildIds: 10226869279474407551
-  ChildIds: 14253278150533101046
-  ChildIds: 17004014322505386276
-  ChildIds: 5809914790956561923
-  ChildIds: 8046804483316058423
-  ChildIds: 15521634714634868965
-  ChildIds: 9126324770117510678
-  ChildIds: 1812663503553687722
-  ChildIds: 18023626365212074382
-  ChildIds: 14926926213998795360
-  ChildIds: 15034358021117498573
-  ChildIds: 10476724164594617710
-  ChildIds: 9993139891267333959
-  ChildIds: 8076484319292534854
-  ChildIds: 3680053201304005181
-  ChildIds: 15486051274339205699
-  ChildIds: 55837981094529490
-  ChildIds: 5592664283554914840
+  ChildIds: 8555308049544169823
+  ChildIds: 17050490207741835411
+  ChildIds: 9278327773934363327
+  ChildIds: 12121888649392056432
+  ChildIds: 2421699167725768518
+  ChildIds: 17624020669290333706
+  ChildIds: 18174464050830761805
+  ChildIds: 16754565626533123030
+  ChildIds: 4750669130261442841
+  ChildIds: 14507229118984916804
+  ChildIds: 14642555244914109531
+  ChildIds: 8595061693835735257
+  ChildIds: 17365217914644925706
+  ChildIds: 11373288889615556921
+  ChildIds: 4340341476868896837
+  ChildIds: 4254565661371357697
+  ChildIds: 3597857543514167903
+  ChildIds: 3794241580067836012
+  ChildIds: 1964144896129635080
+  ChildIds: 1280014363931509856
+  ChildIds: 5935852987680930140
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -24303,7 +27022,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5592664283554914840
+  Id: 5935852987680930140
   Name: "Forest Floor"
   Transform {
     Location {
@@ -24347,7 +27066,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24369,7 +27095,7 @@ Objects {
   }
 }
 Objects {
-  Id: 55837981094529490
+  Id: 1280014363931509856
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -24413,7 +27139,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24435,7 +27168,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15486051274339205699
+  Id: 1964144896129635080
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -24479,7 +27212,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -24501,7 +27241,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3680053201304005181
+  Id: 3794241580067836012
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -24545,7 +27285,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -24567,7 +27314,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8076484319292534854
+  Id: 3597857543514167903
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -24611,7 +27358,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -24633,7 +27387,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9993139891267333959
+  Id: 4254565661371357697
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -24677,7 +27431,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -24699,7 +27460,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10476724164594617710
+  Id: 4340341476868896837
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -24743,7 +27504,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -24765,7 +27533,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15034358021117498573
+  Id: 11373288889615556921
   Name: "Reflector Green"
   Transform {
     Location {
@@ -24809,7 +27577,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -24831,7 +27606,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14926926213998795360
+  Id: 17365217914644925706
   Name: "Reflector Red"
   Transform {
     Location {
@@ -24873,7 +27648,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -24895,7 +27677,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18023626365212074382
+  Id: 8595061693835735257
   Name: "Tiled Green"
   Transform {
     Location {
@@ -24939,7 +27721,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -24961,7 +27750,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1812663503553687722
+  Id: 14642555244914109531
   Name: "Force Field Green"
   Transform {
     Location {
@@ -25005,7 +27794,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -25027,7 +27823,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9126324770117510678
+  Id: 14507229118984916804
   Name: "Force Field"
   Transform {
     Location {
@@ -25071,7 +27867,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -25093,7 +27896,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15521634714634868965
+  Id: 4750669130261442841
   Name: "Fruit"
   Transform {
     Location {
@@ -25136,7 +27939,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -25158,7 +27968,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8046804483316058423
+  Id: 16754565626533123030
   Name: "Energy Tube"
   Transform {
     Location {
@@ -25201,7 +28011,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -25223,7 +28040,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5809914790956561923
+  Id: 18174464050830761805
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -25267,7 +28084,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -25289,7 +28113,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17004014322505386276
+  Id: 17624020669290333706
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -25333,7 +28157,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -25355,7 +28186,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14253278150533101046
+  Id: 2421699167725768518
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -25398,7 +28229,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -25420,7 +28258,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10226869279474407551
+  Id: 12121888649392056432
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -25464,73 +28302,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 17289604754465488797
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10780530757807564291
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25551,7 +28331,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16969560754930809482
+  Id: 9278327773934363327
   Name: "Gold"
   Transform {
     Location {
@@ -25596,6 +28376,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25616,7 +28403,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8936911637705627236
+  Id: 17050490207741835411
   Name: "Chrome"
   Transform {
     Location {
@@ -25662,6 +28449,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25682,7 +28476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11330512843298395357
+  Id: 8555308049544169823
   Name: "Stock"
   Transform {
     Location {
@@ -25727,7 +28521,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -25763,28 +28561,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 3001553483372116535
-  ChildIds: 3549086155281124843
-  ChildIds: 2396979503356770557
-  ChildIds: 12414609860019009731
-  ChildIds: 15885199877299814336
-  ChildIds: 1251159940487585168
-  ChildIds: 7870743843541801707
-  ChildIds: 3018356460480281545
-  ChildIds: 648215701533108783
-  ChildIds: 14797436770939424940
-  ChildIds: 17935197495267359485
-  ChildIds: 9516745232592302237
-  ChildIds: 15937333625981961180
-  ChildIds: 15478911964496697195
-  ChildIds: 14528139310462593196
-  ChildIds: 320641777146515784
-  ChildIds: 1607799374051764838
-  ChildIds: 15921594253239754258
-  ChildIds: 8269896207704099380
-  ChildIds: 10329293350567466116
-  ChildIds: 6964249446163366661
-  ChildIds: 1960280930108513893
+  ChildIds: 10246270444612297990
+  ChildIds: 175913321185166088
+  ChildIds: 1843111773670918558
+  ChildIds: 5690580522539192328
+  ChildIds: 3920796761141923088
+  ChildIds: 13340737017446393760
+  ChildIds: 14121282234767950229
+  ChildIds: 583373444202100906
+  ChildIds: 9253251755303660194
+  ChildIds: 2283463474742121103
+  ChildIds: 9986092241223963190
+  ChildIds: 10815894578129046464
+  ChildIds: 16764738286179502269
+  ChildIds: 5906607664846250187
+  ChildIds: 10522091120707311446
+  ChildIds: 9712228623745853362
+  ChildIds: 14082894530067148301
+  ChildIds: 1644870067975613646
+  ChildIds: 844745098910016336
+  ChildIds: 7032272475503113968
+  ChildIds: 2872833663579231110
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -25808,7 +28605,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1960280930108513893
+  Id: 2872833663579231110
   Name: "Forest Floor"
   Transform {
     Location {
@@ -25852,7 +28649,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -25874,7 +28678,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6964249446163366661
+  Id: 7032272475503113968
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -25918,7 +28722,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -25940,7 +28751,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10329293350567466116
+  Id: 844745098910016336
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -25984,7 +28795,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -26006,7 +28824,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8269896207704099380
+  Id: 1644870067975613646
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -26050,7 +28868,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -26072,7 +28897,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15921594253239754258
+  Id: 14082894530067148301
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -26116,7 +28941,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -26138,7 +28970,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1607799374051764838
+  Id: 9712228623745853362
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -26182,7 +29014,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -26204,7 +29043,7 @@ Objects {
   }
 }
 Objects {
-  Id: 320641777146515784
+  Id: 10522091120707311446
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -26248,7 +29087,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -26270,7 +29116,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14528139310462593196
+  Id: 5906607664846250187
   Name: "Reflector Green"
   Transform {
     Location {
@@ -26314,7 +29160,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -26336,7 +29189,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15478911964496697195
+  Id: 16764738286179502269
   Name: "Reflector Red"
   Transform {
     Location {
@@ -26378,7 +29231,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -26400,7 +29260,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15937333625981961180
+  Id: 10815894578129046464
   Name: "Tiled Green"
   Transform {
     Location {
@@ -26444,7 +29304,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -26466,7 +29333,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9516745232592302237
+  Id: 9986092241223963190
   Name: "Force Field Green"
   Transform {
     Location {
@@ -26510,7 +29377,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -26532,7 +29406,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17935197495267359485
+  Id: 2283463474742121103
   Name: "Force Field"
   Transform {
     Location {
@@ -26576,7 +29450,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -26598,7 +29479,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14797436770939424940
+  Id: 9253251755303660194
   Name: "Fruit"
   Transform {
     Location {
@@ -26641,7 +29522,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -26663,7 +29551,7 @@ Objects {
   }
 }
 Objects {
-  Id: 648215701533108783
+  Id: 583373444202100906
   Name: "Energy Tube"
   Transform {
     Location {
@@ -26706,7 +29594,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -26728,7 +29623,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3018356460480281545
+  Id: 14121282234767950229
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -26772,7 +29667,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -26794,7 +29696,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7870743843541801707
+  Id: 13340737017446393760
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -26838,7 +29740,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -26860,7 +29769,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1251159940487585168
+  Id: 3920796761141923088
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -26903,7 +29812,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -26925,7 +29841,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15885199877299814336
+  Id: 5690580522539192328
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -26969,73 +29885,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 12414609860019009731
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9411422638577743365
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27056,7 +29914,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2396979503356770557
+  Id: 1843111773670918558
   Name: "Gold"
   Transform {
     Location {
@@ -27101,6 +29959,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27121,7 +29986,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3549086155281124843
+  Id: 175913321185166088
   Name: "Chrome"
   Transform {
     Location {
@@ -27167,6 +30032,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27187,7 +30059,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3001553483372116535
+  Id: 10246270444612297990
   Name: "Stock"
   Transform {
     Location {
@@ -27232,7 +30104,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -27268,28 +30144,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 1349570951848166417
-  ChildIds: 8993621941379060943
-  ChildIds: 2866179621958158540
-  ChildIds: 1311797010800471221
-  ChildIds: 12338487957944735722
-  ChildIds: 9823408120013270706
-  ChildIds: 10778535265924303853
-  ChildIds: 3162819217341713661
-  ChildIds: 11533188825298053301
-  ChildIds: 12353929696390249221
-  ChildIds: 10907380864173849028
-  ChildIds: 2428779938949614363
-  ChildIds: 3514174574081402660
-  ChildIds: 6076495548277703669
-  ChildIds: 6811766151196186878
-  ChildIds: 16415497190901442344
-  ChildIds: 10514968752930466820
-  ChildIds: 3653006566897977622
-  ChildIds: 15013304899639998348
-  ChildIds: 721669319985360219
-  ChildIds: 3440662331233516799
-  ChildIds: 12905031241203685249
+  ChildIds: 5697371321370052029
+  ChildIds: 14608422739960248017
+  ChildIds: 8180783911266731232
+  ChildIds: 5875542901794187081
+  ChildIds: 5984297857084190872
+  ChildIds: 9972499707892214642
+  ChildIds: 6646323941938113044
+  ChildIds: 9296844531857876610
+  ChildIds: 4209619900420837987
+  ChildIds: 6642526589064754431
+  ChildIds: 10558041956760476902
+  ChildIds: 16392803415818313285
+  ChildIds: 2036087132858892262
+  ChildIds: 17717625255110592052
+  ChildIds: 2007525997283876820
+  ChildIds: 14327624986358683554
+  ChildIds: 16210815400446736782
+  ChildIds: 15219443993244885907
+  ChildIds: 4371451446820468658
+  ChildIds: 15786690100022325038
+  ChildIds: 3469026581661965416
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -27313,7 +30188,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12905031241203685249
+  Id: 3469026581661965416
   Name: "Forest Floor"
   Transform {
     Location {
@@ -27357,7 +30232,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27379,7 +30261,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3440662331233516799
+  Id: 15786690100022325038
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -27423,7 +30305,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27445,7 +30334,7 @@ Objects {
   }
 }
 Objects {
-  Id: 721669319985360219
+  Id: 4371451446820468658
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -27489,7 +30378,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -27511,7 +30407,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15013304899639998348
+  Id: 15219443993244885907
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -27555,7 +30451,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -27577,7 +30480,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3653006566897977622
+  Id: 16210815400446736782
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -27621,7 +30524,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -27643,7 +30553,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10514968752930466820
+  Id: 14327624986358683554
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -27687,7 +30597,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -27709,7 +30626,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16415497190901442344
+  Id: 2007525997283876820
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -27753,7 +30670,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -27775,7 +30699,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6811766151196186878
+  Id: 17717625255110592052
   Name: "Reflector Green"
   Transform {
     Location {
@@ -27819,7 +30743,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -27841,7 +30772,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6076495548277703669
+  Id: 2036087132858892262
   Name: "Reflector Red"
   Transform {
     Location {
@@ -27883,7 +30814,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -27905,7 +30843,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3514174574081402660
+  Id: 16392803415818313285
   Name: "Tiled Green"
   Transform {
     Location {
@@ -27949,7 +30887,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -27971,7 +30916,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2428779938949614363
+  Id: 10558041956760476902
   Name: "Force Field Green"
   Transform {
     Location {
@@ -28015,7 +30960,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -28037,7 +30989,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10907380864173849028
+  Id: 6642526589064754431
   Name: "Force Field"
   Transform {
     Location {
@@ -28081,7 +31033,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -28103,7 +31062,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12353929696390249221
+  Id: 4209619900420837987
   Name: "Fruit"
   Transform {
     Location {
@@ -28146,7 +31105,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -28168,7 +31134,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11533188825298053301
+  Id: 9296844531857876610
   Name: "Energy Tube"
   Transform {
     Location {
@@ -28211,7 +31177,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -28233,7 +31206,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3162819217341713661
+  Id: 6646323941938113044
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -28277,7 +31250,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -28299,7 +31279,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10778535265924303853
+  Id: 9972499707892214642
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -28343,7 +31323,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -28365,7 +31352,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9823408120013270706
+  Id: 5984297857084190872
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -28408,7 +31395,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -28430,7 +31424,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12338487957944735722
+  Id: 5875542901794187081
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -28474,73 +31468,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 1311797010800471221
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16562231633928091206
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28561,7 +31497,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2866179621958158540
+  Id: 8180783911266731232
   Name: "Gold"
   Transform {
     Location {
@@ -28606,6 +31542,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28626,7 +31569,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8993621941379060943
+  Id: 14608422739960248017
   Name: "Chrome"
   Transform {
     Location {
@@ -28672,6 +31615,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28692,7 +31642,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1349570951848166417
+  Id: 5697371321370052029
   Name: "Stock"
   Transform {
     Location {
@@ -28737,7 +31687,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -28773,28 +31727,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 1692090629988111288
-  ChildIds: 11489613991075674013
-  ChildIds: 6537903271758191035
-  ChildIds: 12820438409666570918
-  ChildIds: 4422248935509219826
-  ChildIds: 12675479228622722919
-  ChildIds: 13928740525925147354
-  ChildIds: 12817334360863508265
-  ChildIds: 8092266989290995564
-  ChildIds: 18027034196470748433
-  ChildIds: 11737555937964325368
-  ChildIds: 12455723938537318693
-  ChildIds: 5455059985881895639
-  ChildIds: 9016171049790501240
-  ChildIds: 11357334999176650952
-  ChildIds: 2249537158795040506
-  ChildIds: 14333709833859950861
-  ChildIds: 15514953194628569784
-  ChildIds: 4032633069014607009
-  ChildIds: 5891102579075566418
-  ChildIds: 14648339290479613386
-  ChildIds: 18176535280924157020
+  ChildIds: 3254258701611377151
+  ChildIds: 3589714101935524100
+  ChildIds: 4498611142411819438
+  ChildIds: 979063537615472539
+  ChildIds: 17452092092438819122
+  ChildIds: 3865697770381823616
+  ChildIds: 17904204359218224137
+  ChildIds: 966941280332331834
+  ChildIds: 6647829272919623838
+  ChildIds: 15741492218872551170
+  ChildIds: 11697980590610757582
+  ChildIds: 12953300885568596867
+  ChildIds: 17493764782058477330
+  ChildIds: 12657038658384679473
+  ChildIds: 7667534538323273704
+  ChildIds: 8511726205638217528
+  ChildIds: 18339785382437481074
+  ChildIds: 2796653285546637349
+  ChildIds: 6412744095106595224
+  ChildIds: 4721570640848951783
+  ChildIds: 11714230998959583314
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -28818,7 +31771,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18176535280924157020
+  Id: 11714230998959583314
   Name: "Forest Floor"
   Transform {
     Location {
@@ -28862,7 +31815,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -28884,7 +31844,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14648339290479613386
+  Id: 4721570640848951783
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -28928,7 +31888,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -28950,7 +31917,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5891102579075566418
+  Id: 6412744095106595224
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -28994,7 +31961,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -29016,7 +31990,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4032633069014607009
+  Id: 2796653285546637349
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -29060,7 +32034,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -29082,7 +32063,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15514953194628569784
+  Id: 18339785382437481074
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -29126,7 +32107,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -29148,7 +32136,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14333709833859950861
+  Id: 8511726205638217528
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -29192,7 +32180,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -29214,7 +32209,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2249537158795040506
+  Id: 7667534538323273704
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -29258,7 +32253,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -29280,7 +32282,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11357334999176650952
+  Id: 12657038658384679473
   Name: "Reflector Green"
   Transform {
     Location {
@@ -29324,7 +32326,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -29346,7 +32355,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9016171049790501240
+  Id: 17493764782058477330
   Name: "Reflector Red"
   Transform {
     Location {
@@ -29388,7 +32397,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -29410,7 +32426,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5455059985881895639
+  Id: 12953300885568596867
   Name: "Tiled Green"
   Transform {
     Location {
@@ -29454,7 +32470,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -29476,7 +32499,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12455723938537318693
+  Id: 11697980590610757582
   Name: "Force Field Green"
   Transform {
     Location {
@@ -29520,7 +32543,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -29542,7 +32572,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11737555937964325368
+  Id: 15741492218872551170
   Name: "Force Field"
   Transform {
     Location {
@@ -29586,7 +32616,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -29608,7 +32645,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18027034196470748433
+  Id: 6647829272919623838
   Name: "Fruit"
   Transform {
     Location {
@@ -29651,7 +32688,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -29673,7 +32717,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8092266989290995564
+  Id: 966941280332331834
   Name: "Energy Tube"
   Transform {
     Location {
@@ -29716,7 +32760,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -29738,7 +32789,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12817334360863508265
+  Id: 17904204359218224137
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -29782,7 +32833,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -29804,7 +32862,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13928740525925147354
+  Id: 3865697770381823616
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -29848,7 +32906,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -29870,7 +32935,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12675479228622722919
+  Id: 17452092092438819122
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -29913,7 +32978,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -29935,7 +33007,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4422248935509219826
+  Id: 979063537615472539
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -29979,73 +33051,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 12820438409666570918
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1389136069249002098
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30066,7 +33080,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6537903271758191035
+  Id: 4498611142411819438
   Name: "Gold"
   Transform {
     Location {
@@ -30111,6 +33125,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30131,7 +33152,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11489613991075674013
+  Id: 3589714101935524100
   Name: "Chrome"
   Transform {
     Location {
@@ -30177,6 +33198,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30197,7 +33225,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1692090629988111288
+  Id: 3254258701611377151
   Name: "Stock"
   Transform {
     Location {
@@ -30242,7 +33270,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -30278,28 +33310,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 1016905874591839527
-  ChildIds: 7054614823824554663
-  ChildIds: 2789795412868847936
-  ChildIds: 6577964730166012126
-  ChildIds: 2644815648091272520
-  ChildIds: 1244499259245083862
-  ChildIds: 1473821817300460379
-  ChildIds: 8465269599998575373
-  ChildIds: 16945483597144389161
-  ChildIds: 1897705966219144098
-  ChildIds: 4761220511776305457
-  ChildIds: 15533449878277830704
-  ChildIds: 14506124490705281663
-  ChildIds: 2136534183306452263
-  ChildIds: 4191763271998002596
-  ChildIds: 11502422520762562602
-  ChildIds: 7308641829825202289
-  ChildIds: 13734038041364087161
-  ChildIds: 1528719241744367300
-  ChildIds: 16089011286753000068
-  ChildIds: 6719556095268914802
-  ChildIds: 8185237177033834390
+  ChildIds: 11271299136747249202
+  ChildIds: 5078707088801269727
+  ChildIds: 1388031143253647041
+  ChildIds: 1265710995540907993
+  ChildIds: 4623690856384489380
+  ChildIds: 2511651284484043025
+  ChildIds: 16063632451088794213
+  ChildIds: 6093065212062964074
+  ChildIds: 1058719044043210039
+  ChildIds: 7251602718260171869
+  ChildIds: 14147006936749309641
+  ChildIds: 7214015915561847126
+  ChildIds: 8910052970692332738
+  ChildIds: 4481348164893530049
+  ChildIds: 6569505881865699997
+  ChildIds: 11150474962411435692
+  ChildIds: 15787081298837553311
+  ChildIds: 3564545254845409492
+  ChildIds: 15868099641099038456
+  ChildIds: 15704100938934651689
+  ChildIds: 8890227292425675122
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -30323,7 +33354,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8185237177033834390
+  Id: 8890227292425675122
   Name: "Forest Floor"
   Transform {
     Location {
@@ -30367,7 +33398,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -30389,7 +33427,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6719556095268914802
+  Id: 15704100938934651689
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -30433,7 +33471,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -30455,7 +33500,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16089011286753000068
+  Id: 15868099641099038456
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -30499,7 +33544,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -30521,7 +33573,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1528719241744367300
+  Id: 3564545254845409492
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -30565,7 +33617,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -30587,7 +33646,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13734038041364087161
+  Id: 15787081298837553311
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -30631,7 +33690,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -30653,7 +33719,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7308641829825202289
+  Id: 11150474962411435692
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -30697,7 +33763,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -30719,7 +33792,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11502422520762562602
+  Id: 6569505881865699997
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -30763,7 +33836,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -30785,7 +33865,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4191763271998002596
+  Id: 4481348164893530049
   Name: "Reflector Green"
   Transform {
     Location {
@@ -30829,7 +33909,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -30851,7 +33938,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2136534183306452263
+  Id: 8910052970692332738
   Name: "Reflector Red"
   Transform {
     Location {
@@ -30893,7 +33980,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -30915,7 +34009,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14506124490705281663
+  Id: 7214015915561847126
   Name: "Tiled Green"
   Transform {
     Location {
@@ -30959,7 +34053,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -30981,7 +34082,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15533449878277830704
+  Id: 14147006936749309641
   Name: "Force Field Green"
   Transform {
     Location {
@@ -31025,7 +34126,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -31047,7 +34155,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4761220511776305457
+  Id: 7251602718260171869
   Name: "Force Field"
   Transform {
     Location {
@@ -31091,7 +34199,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -31113,7 +34228,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1897705966219144098
+  Id: 1058719044043210039
   Name: "Fruit"
   Transform {
     Location {
@@ -31156,7 +34271,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -31178,7 +34300,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16945483597144389161
+  Id: 6093065212062964074
   Name: "Energy Tube"
   Transform {
     Location {
@@ -31221,7 +34343,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -31243,7 +34372,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8465269599998575373
+  Id: 16063632451088794213
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -31287,7 +34416,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -31309,7 +34445,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1473821817300460379
+  Id: 2511651284484043025
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -31353,7 +34489,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -31375,7 +34518,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1244499259245083862
+  Id: 4623690856384489380
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -31418,7 +34561,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -31440,7 +34590,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2644815648091272520
+  Id: 1265710995540907993
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -31484,73 +34634,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 6577964730166012126
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15373089774759451155
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31571,7 +34663,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2789795412868847936
+  Id: 1388031143253647041
   Name: "Gold"
   Transform {
     Location {
@@ -31616,6 +34708,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31636,7 +34735,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7054614823824554663
+  Id: 5078707088801269727
   Name: "Chrome"
   Transform {
     Location {
@@ -31682,6 +34781,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31702,7 +34808,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1016905874591839527
+  Id: 11271299136747249202
   Name: "Stock"
   Transform {
     Location {
@@ -31747,7 +34853,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -31783,28 +34893,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 2265208444180463632
-  ChildIds: 1391584776776649792
-  ChildIds: 1097758193866751837
-  ChildIds: 3864277470638533027
-  ChildIds: 1311939839267722217
-  ChildIds: 3647939336955002142
-  ChildIds: 4688414034279199725
-  ChildIds: 13354803058347848446
-  ChildIds: 8207074747173067718
-  ChildIds: 15089907922208367270
-  ChildIds: 1903510622016113439
-  ChildIds: 17558015486993335292
-  ChildIds: 8606075751118290982
-  ChildIds: 6482440120443964666
-  ChildIds: 5436874528529959751
-  ChildIds: 6367007226973093724
-  ChildIds: 10739704924757978026
-  ChildIds: 17434615047930520727
-  ChildIds: 1727505871375088434
-  ChildIds: 14642859819267259493
-  ChildIds: 7450147251756320648
-  ChildIds: 2120172855237771360
+  ChildIds: 1617410170495620535
+  ChildIds: 1617044052739353393
+  ChildIds: 11027759577435547330
+  ChildIds: 15952685726228564031
+  ChildIds: 9194449533556714464
+  ChildIds: 2537437881529343900
+  ChildIds: 15964720558629348763
+  ChildIds: 18192813005466102865
+  ChildIds: 13764631763708942663
+  ChildIds: 10260239071213933527
+  ChildIds: 10633687146575333917
+  ChildIds: 2651232511480609908
+  ChildIds: 4025450556381186434
+  ChildIds: 5114632356870472578
+  ChildIds: 15113665184431460217
+  ChildIds: 7532351501421133080
+  ChildIds: 1992406290021095951
+  ChildIds: 14886305733627543193
+  ChildIds: 14135738811970250895
+  ChildIds: 15321702312623801152
+  ChildIds: 12413270829722779984
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -31828,7 +34937,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2120172855237771360
+  Id: 12413270829722779984
   Name: "Forest Floor"
   Transform {
     Location {
@@ -31872,7 +34981,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31894,7 +35010,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7450147251756320648
+  Id: 15321702312623801152
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -31938,7 +35054,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31960,7 +35083,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14642859819267259493
+  Id: 14135738811970250895
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -32004,7 +35127,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -32026,7 +35156,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1727505871375088434
+  Id: 14886305733627543193
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -32070,7 +35200,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -32092,7 +35229,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17434615047930520727
+  Id: 1992406290021095951
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -32136,7 +35273,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -32158,7 +35302,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10739704924757978026
+  Id: 7532351501421133080
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -32202,7 +35346,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -32224,7 +35375,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6367007226973093724
+  Id: 15113665184431460217
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -32268,7 +35419,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -32290,7 +35448,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5436874528529959751
+  Id: 5114632356870472578
   Name: "Reflector Green"
   Transform {
     Location {
@@ -32334,7 +35492,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -32356,7 +35521,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6482440120443964666
+  Id: 4025450556381186434
   Name: "Reflector Red"
   Transform {
     Location {
@@ -32398,7 +35563,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -32420,7 +35592,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8606075751118290982
+  Id: 2651232511480609908
   Name: "Tiled Green"
   Transform {
     Location {
@@ -32464,7 +35636,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -32486,7 +35665,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17558015486993335292
+  Id: 10633687146575333917
   Name: "Force Field Green"
   Transform {
     Location {
@@ -32530,7 +35709,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -32552,7 +35738,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1903510622016113439
+  Id: 10260239071213933527
   Name: "Force Field"
   Transform {
     Location {
@@ -32596,7 +35782,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -32618,7 +35811,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15089907922208367270
+  Id: 13764631763708942663
   Name: "Fruit"
   Transform {
     Location {
@@ -32661,7 +35854,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -32683,7 +35883,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8207074747173067718
+  Id: 18192813005466102865
   Name: "Energy Tube"
   Transform {
     Location {
@@ -32726,7 +35926,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -32748,7 +35955,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13354803058347848446
+  Id: 15964720558629348763
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -32792,7 +35999,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -32814,7 +36028,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4688414034279199725
+  Id: 2537437881529343900
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -32858,7 +36072,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -32880,7 +36101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3647939336955002142
+  Id: 9194449533556714464
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -32923,7 +36144,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -32945,7 +36173,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1311939839267722217
+  Id: 15952685726228564031
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -32989,73 +36217,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 3864277470638533027
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 247036500510613605
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33076,7 +36246,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1097758193866751837
+  Id: 11027759577435547330
   Name: "Gold"
   Transform {
     Location {
@@ -33121,6 +36291,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33141,7 +36318,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1391584776776649792
+  Id: 1617044052739353393
   Name: "Chrome"
   Transform {
     Location {
@@ -33187,6 +36364,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33207,7 +36391,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2265208444180463632
+  Id: 1617410170495620535
   Name: "Stock"
   Transform {
     Location {
@@ -33252,7 +36436,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -33288,28 +36476,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 6375131909917049982
-  ChildIds: 13845513032979697828
-  ChildIds: 16384560219797555067
-  ChildIds: 7367120407575994947
-  ChildIds: 18425909523998321562
-  ChildIds: 9877805189147125577
-  ChildIds: 6562339188090033239
-  ChildIds: 10630351958823880670
-  ChildIds: 2050621937515694251
-  ChildIds: 11695480657842813392
-  ChildIds: 16386218338087589134
-  ChildIds: 6981516202302370387
-  ChildIds: 4428072184013092258
-  ChildIds: 999607032551094364
-  ChildIds: 13450088364418911245
-  ChildIds: 1708312596788697332
-  ChildIds: 8139160469254047893
-  ChildIds: 14273205657492076205
-  ChildIds: 14703264555533854800
-  ChildIds: 4420593169197493058
-  ChildIds: 2913737223310219031
-  ChildIds: 9038436937820367009
+  ChildIds: 4971523098555766479
+  ChildIds: 10586164673949843971
+  ChildIds: 246594222515831429
+  ChildIds: 9912589168513571085
+  ChildIds: 17167077827358773994
+  ChildIds: 3488525131798216237
+  ChildIds: 13525691718826533175
+  ChildIds: 13144740737030889207
+  ChildIds: 15123136159671977126
+  ChildIds: 5684399509706497743
+  ChildIds: 9474690553443784726
+  ChildIds: 4664905950501160320
+  ChildIds: 3862483713203503428
+  ChildIds: 7261496084734097831
+  ChildIds: 4610892345180407850
+  ChildIds: 14770416084874255971
+  ChildIds: 18033569100275364068
+  ChildIds: 13836535058594429372
+  ChildIds: 8784288282976744545
+  ChildIds: 16651904919326434895
+  ChildIds: 1259815503534444947
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -33333,7 +36520,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9038436937820367009
+  Id: 1259815503534444947
   Name: "Forest Floor"
   Transform {
     Location {
@@ -33377,7 +36564,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -33399,7 +36593,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2913737223310219031
+  Id: 16651904919326434895
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -33443,7 +36637,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -33465,7 +36666,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4420593169197493058
+  Id: 8784288282976744545
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -33509,7 +36710,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -33531,7 +36739,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14703264555533854800
+  Id: 13836535058594429372
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -33575,7 +36783,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -33597,7 +36812,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14273205657492076205
+  Id: 18033569100275364068
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -33641,7 +36856,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -33663,7 +36885,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8139160469254047893
+  Id: 14770416084874255971
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -33707,7 +36929,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -33729,7 +36958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1708312596788697332
+  Id: 4610892345180407850
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -33773,7 +37002,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -33795,7 +37031,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13450088364418911245
+  Id: 7261496084734097831
   Name: "Reflector Green"
   Transform {
     Location {
@@ -33839,7 +37075,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -33861,7 +37104,7 @@ Objects {
   }
 }
 Objects {
-  Id: 999607032551094364
+  Id: 3862483713203503428
   Name: "Reflector Red"
   Transform {
     Location {
@@ -33903,7 +37146,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -33925,7 +37175,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4428072184013092258
+  Id: 4664905950501160320
   Name: "Tiled Green"
   Transform {
     Location {
@@ -33969,7 +37219,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -33991,7 +37248,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6981516202302370387
+  Id: 9474690553443784726
   Name: "Force Field Green"
   Transform {
     Location {
@@ -34035,7 +37292,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -34057,7 +37321,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16386218338087589134
+  Id: 5684399509706497743
   Name: "Force Field"
   Transform {
     Location {
@@ -34101,7 +37365,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -34123,7 +37394,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11695480657842813392
+  Id: 15123136159671977126
   Name: "Fruit"
   Transform {
     Location {
@@ -34166,7 +37437,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -34188,7 +37466,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2050621937515694251
+  Id: 13144740737030889207
   Name: "Energy Tube"
   Transform {
     Location {
@@ -34231,7 +37509,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -34253,7 +37538,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10630351958823880670
+  Id: 13525691718826533175
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -34297,7 +37582,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -34319,7 +37611,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6562339188090033239
+  Id: 3488525131798216237
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -34363,7 +37655,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -34385,7 +37684,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9877805189147125577
+  Id: 17167077827358773994
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -34428,7 +37727,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -34450,7 +37756,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18425909523998321562
+  Id: 9912589168513571085
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -34494,73 +37800,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 7367120407575994947
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9225331688374586131
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34581,7 +37829,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16384560219797555067
+  Id: 246594222515831429
   Name: "Gold"
   Transform {
     Location {
@@ -34626,6 +37874,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34646,7 +37901,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13845513032979697828
+  Id: 10586164673949843971
   Name: "Chrome"
   Transform {
     Location {
@@ -34692,6 +37947,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34712,7 +37974,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6375131909917049982
+  Id: 4971523098555766479
   Name: "Stock"
   Transform {
     Location {
@@ -34757,7 +38019,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -34793,28 +38059,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 12959668942225394268
-  ChildIds: 9267543497627066158
-  ChildIds: 7688395975631404815
-  ChildIds: 4240742571382012219
-  ChildIds: 2528775724320599342
-  ChildIds: 2635391833174846572
-  ChildIds: 13652679220848442734
-  ChildIds: 16201961967657459161
-  ChildIds: 13672976854502865153
-  ChildIds: 7461110141170560568
-  ChildIds: 10531382455161286179
-  ChildIds: 13111780547050208987
-  ChildIds: 11580465345280511230
-  ChildIds: 10045469203757350857
-  ChildIds: 6957847177973676184
-  ChildIds: 7938049011022773049
-  ChildIds: 15569864663127418070
-  ChildIds: 8182897814614511680
-  ChildIds: 16357837876177853564
-  ChildIds: 9271970593532495687
-  ChildIds: 3462698187943101650
-  ChildIds: 7255079696455750709
+  ChildIds: 5835263258437575525
+  ChildIds: 591790249034270925
+  ChildIds: 10185487204446862109
+  ChildIds: 2010961247172820790
+  ChildIds: 8125201718766604224
+  ChildIds: 16030260170160112065
+  ChildIds: 3217705231899482100
+  ChildIds: 2788753160823217953
+  ChildIds: 13995422878270489679
+  ChildIds: 8755224213769618168
+  ChildIds: 1422344025450128966
+  ChildIds: 13120396092190139825
+  ChildIds: 3075683603664372986
+  ChildIds: 7243088315817813480
+  ChildIds: 10936959712273879182
+  ChildIds: 14759465135765348477
+  ChildIds: 17854713542821651245
+  ChildIds: 10051292747672587146
+  ChildIds: 3543291931118397673
+  ChildIds: 12234499023225317793
+  ChildIds: 4112936488407073458
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -34838,7 +38103,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7255079696455750709
+  Id: 4112936488407073458
   Name: "Forest Floor"
   Transform {
     Location {
@@ -34882,7 +38147,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34904,7 +38176,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3462698187943101650
+  Id: 12234499023225317793
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -34948,7 +38220,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34970,7 +38249,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9271970593532495687
+  Id: 3543291931118397673
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -35014,7 +38293,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -35036,7 +38322,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16357837876177853564
+  Id: 10051292747672587146
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -35080,7 +38366,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -35102,7 +38395,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8182897814614511680
+  Id: 17854713542821651245
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -35146,7 +38439,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -35168,7 +38468,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15569864663127418070
+  Id: 14759465135765348477
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -35212,7 +38512,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -35234,7 +38541,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7938049011022773049
+  Id: 10936959712273879182
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -35278,7 +38585,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -35300,7 +38614,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6957847177973676184
+  Id: 7243088315817813480
   Name: "Reflector Green"
   Transform {
     Location {
@@ -35344,7 +38658,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -35366,7 +38687,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10045469203757350857
+  Id: 3075683603664372986
   Name: "Reflector Red"
   Transform {
     Location {
@@ -35408,7 +38729,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -35430,7 +38758,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11580465345280511230
+  Id: 13120396092190139825
   Name: "Tiled Green"
   Transform {
     Location {
@@ -35474,7 +38802,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -35496,7 +38831,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13111780547050208987
+  Id: 1422344025450128966
   Name: "Force Field Green"
   Transform {
     Location {
@@ -35540,7 +38875,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -35562,7 +38904,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10531382455161286179
+  Id: 8755224213769618168
   Name: "Force Field"
   Transform {
     Location {
@@ -35606,7 +38948,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -35628,7 +38977,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7461110141170560568
+  Id: 13995422878270489679
   Name: "Fruit"
   Transform {
     Location {
@@ -35671,7 +39020,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -35693,7 +39049,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13672976854502865153
+  Id: 2788753160823217953
   Name: "Energy Tube"
   Transform {
     Location {
@@ -35736,7 +39092,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -35758,7 +39121,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16201961967657459161
+  Id: 3217705231899482100
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -35802,7 +39165,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -35824,7 +39194,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13652679220848442734
+  Id: 16030260170160112065
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -35868,7 +39238,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -35890,7 +39267,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2635391833174846572
+  Id: 8125201718766604224
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -35933,7 +39310,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -35955,7 +39339,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2528775724320599342
+  Id: 2010961247172820790
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -35999,73 +39383,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 4240742571382012219
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8945588944615922688
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36086,7 +39412,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7688395975631404815
+  Id: 10185487204446862109
   Name: "Gold"
   Transform {
     Location {
@@ -36131,6 +39457,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36151,7 +39484,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9267543497627066158
+  Id: 591790249034270925
   Name: "Chrome"
   Transform {
     Location {
@@ -36197,6 +39530,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36217,7 +39557,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12959668942225394268
+  Id: 5835263258437575525
   Name: "Stock"
   Transform {
     Location {
@@ -36262,7 +39602,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -36298,28 +39642,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 18040808301868949689
-  ChildIds: 2876406206436198755
-  ChildIds: 17207682524200733185
-  ChildIds: 6170801042617502892
-  ChildIds: 1751729491463501609
-  ChildIds: 16874854515804271889
-  ChildIds: 1156043726113995980
-  ChildIds: 16324848412000832611
-  ChildIds: 1136753732413578828
-  ChildIds: 8452103689696840926
-  ChildIds: 9331487564679014453
-  ChildIds: 11036266522497081306
-  ChildIds: 12421247050592701645
-  ChildIds: 10450406772622927537
-  ChildIds: 3832875825736182211
-  ChildIds: 5240428337044214824
-  ChildIds: 17915211052796327027
-  ChildIds: 16073971529029875610
-  ChildIds: 17035930506438468038
-  ChildIds: 48415145180417649
-  ChildIds: 6331615042364700737
-  ChildIds: 18246092374803990700
+  ChildIds: 10422978834167325979
+  ChildIds: 5882193590302848356
+  ChildIds: 3838612597259728030
+  ChildIds: 15878104866608104950
+  ChildIds: 6663283091294449587
+  ChildIds: 233346506542776930
+  ChildIds: 15614649386548424142
+  ChildIds: 16731913495613941336
+  ChildIds: 9129472750288278646
+  ChildIds: 7701703881900078938
+  ChildIds: 6360681195727285646
+  ChildIds: 5904043442075642632
+  ChildIds: 15914653733840498898
+  ChildIds: 7269607877121246204
+  ChildIds: 4992927397363712770
+  ChildIds: 5056813188852588987
+  ChildIds: 448008410033919673
+  ChildIds: 14143395470658949089
+  ChildIds: 12675352787914829355
+  ChildIds: 10330207997362098061
+  ChildIds: 9256146456305714501
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -36343,7 +39686,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18246092374803990700
+  Id: 9256146456305714501
   Name: "Forest Floor"
   Transform {
     Location {
@@ -36387,7 +39730,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36409,7 +39759,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6331615042364700737
+  Id: 10330207997362098061
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -36453,7 +39803,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36475,7 +39832,7 @@ Objects {
   }
 }
 Objects {
-  Id: 48415145180417649
+  Id: 12675352787914829355
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -36519,7 +39876,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -36541,7 +39905,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17035930506438468038
+  Id: 14143395470658949089
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -36585,7 +39949,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -36607,7 +39978,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16073971529029875610
+  Id: 448008410033919673
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -36651,7 +40022,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -36673,7 +40051,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17915211052796327027
+  Id: 5056813188852588987
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -36717,7 +40095,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -36739,7 +40124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5240428337044214824
+  Id: 4992927397363712770
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -36783,7 +40168,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -36805,7 +40197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3832875825736182211
+  Id: 7269607877121246204
   Name: "Reflector Green"
   Transform {
     Location {
@@ -36849,7 +40241,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -36871,7 +40270,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10450406772622927537
+  Id: 15914653733840498898
   Name: "Reflector Red"
   Transform {
     Location {
@@ -36913,7 +40312,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -36935,7 +40341,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12421247050592701645
+  Id: 5904043442075642632
   Name: "Tiled Green"
   Transform {
     Location {
@@ -36979,7 +40385,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -37001,7 +40414,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11036266522497081306
+  Id: 6360681195727285646
   Name: "Force Field Green"
   Transform {
     Location {
@@ -37045,7 +40458,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -37067,7 +40487,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9331487564679014453
+  Id: 7701703881900078938
   Name: "Force Field"
   Transform {
     Location {
@@ -37111,7 +40531,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -37133,7 +40560,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8452103689696840926
+  Id: 9129472750288278646
   Name: "Fruit"
   Transform {
     Location {
@@ -37176,7 +40603,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -37198,7 +40632,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1136753732413578828
+  Id: 16731913495613941336
   Name: "Energy Tube"
   Transform {
     Location {
@@ -37241,7 +40675,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -37263,7 +40704,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16324848412000832611
+  Id: 15614649386548424142
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -37307,7 +40748,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -37329,7 +40777,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1156043726113995980
+  Id: 233346506542776930
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -37373,7 +40821,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -37395,7 +40850,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16874854515804271889
+  Id: 6663283091294449587
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -37438,7 +40893,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -37460,7 +40922,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1751729491463501609
+  Id: 15878104866608104950
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -37504,73 +40966,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 6170801042617502892
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15704669923792079176
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37591,7 +40995,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17207682524200733185
+  Id: 3838612597259728030
   Name: "Gold"
   Transform {
     Location {
@@ -37636,6 +41040,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37656,7 +41067,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2876406206436198755
+  Id: 5882193590302848356
   Name: "Chrome"
   Transform {
     Location {
@@ -37702,6 +41113,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37722,7 +41140,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18040808301868949689
+  Id: 10422978834167325979
   Name: "Stock"
   Transform {
     Location {
@@ -37767,7 +41185,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -37803,28 +41225,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 1637377715998683684
-  ChildIds: 1624687952142311062
-  ChildIds: 9818857046225934468
-  ChildIds: 12348686886716085044
-  ChildIds: 3635519222448666763
-  ChildIds: 13879164353867373654
-  ChildIds: 12974093471127031736
-  ChildIds: 7107645385279053005
-  ChildIds: 14712289310146362606
-  ChildIds: 18021977877552207033
-  ChildIds: 16275382387860157679
-  ChildIds: 5009787131168379518
-  ChildIds: 1175568214981499945
-  ChildIds: 18179721037806690275
-  ChildIds: 12421454849764028432
-  ChildIds: 13966583113621901741
-  ChildIds: 5435655957359137929
-  ChildIds: 11937245163611702294
-  ChildIds: 2626929383204189982
-  ChildIds: 6025398476829073111
-  ChildIds: 5285764070961210341
-  ChildIds: 2455387586196254600
+  ChildIds: 12470363244737387935
+  ChildIds: 13869143741522605172
+  ChildIds: 4317412148272346280
+  ChildIds: 8115721042473575994
+  ChildIds: 10375568160828754322
+  ChildIds: 13990642458936447239
+  ChildIds: 14128190289093598083
+  ChildIds: 6084166103490956337
+  ChildIds: 5976598599861653928
+  ChildIds: 36476284970324848
+  ChildIds: 3492489216725290752
+  ChildIds: 17857878862248064354
+  ChildIds: 12704893706911472771
+  ChildIds: 4716586280130124717
+  ChildIds: 5819271058057605178
+  ChildIds: 17794940616206664611
+  ChildIds: 4741846524284144735
+  ChildIds: 132707263107533543
+  ChildIds: 5634075100269389403
+  ChildIds: 1927520636410490920
+  ChildIds: 1725281391044008479
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -37848,7 +41269,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2455387586196254600
+  Id: 1725281391044008479
   Name: "Forest Floor"
   Transform {
     Location {
@@ -37892,7 +41313,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37914,7 +41342,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5285764070961210341
+  Id: 1927520636410490920
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -37958,7 +41386,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37980,7 +41415,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6025398476829073111
+  Id: 5634075100269389403
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -38024,7 +41459,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -38046,7 +41488,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2626929383204189982
+  Id: 132707263107533543
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -38090,7 +41532,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -38112,7 +41561,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11937245163611702294
+  Id: 4741846524284144735
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -38156,7 +41605,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -38178,7 +41634,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5435655957359137929
+  Id: 17794940616206664611
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -38222,7 +41678,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -38244,7 +41707,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13966583113621901741
+  Id: 5819271058057605178
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -38288,7 +41751,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -38310,7 +41780,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12421454849764028432
+  Id: 4716586280130124717
   Name: "Reflector Green"
   Transform {
     Location {
@@ -38354,7 +41824,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -38376,7 +41853,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18179721037806690275
+  Id: 12704893706911472771
   Name: "Reflector Red"
   Transform {
     Location {
@@ -38418,7 +41895,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -38440,7 +41924,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1175568214981499945
+  Id: 17857878862248064354
   Name: "Tiled Green"
   Transform {
     Location {
@@ -38484,7 +41968,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -38506,7 +41997,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5009787131168379518
+  Id: 3492489216725290752
   Name: "Force Field Green"
   Transform {
     Location {
@@ -38550,7 +42041,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -38572,7 +42070,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16275382387860157679
+  Id: 36476284970324848
   Name: "Force Field"
   Transform {
     Location {
@@ -38616,7 +42114,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -38638,7 +42143,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18021977877552207033
+  Id: 5976598599861653928
   Name: "Fruit"
   Transform {
     Location {
@@ -38681,7 +42186,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -38703,7 +42215,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14712289310146362606
+  Id: 6084166103490956337
   Name: "Energy Tube"
   Transform {
     Location {
@@ -38746,7 +42258,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -38768,7 +42287,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7107645385279053005
+  Id: 14128190289093598083
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -38812,7 +42331,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -38834,7 +42360,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12974093471127031736
+  Id: 13990642458936447239
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -38878,7 +42404,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -38900,7 +42433,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13879164353867373654
+  Id: 10375568160828754322
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -38943,7 +42476,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -38965,7 +42505,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3635519222448666763
+  Id: 8115721042473575994
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -39009,73 +42549,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 12348686886716085044
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7898547284732318746
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39096,7 +42578,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9818857046225934468
+  Id: 4317412148272346280
   Name: "Gold"
   Transform {
     Location {
@@ -39141,6 +42623,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39161,7 +42650,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1624687952142311062
+  Id: 13869143741522605172
   Name: "Chrome"
   Transform {
     Location {
@@ -39207,6 +42696,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39227,7 +42723,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1637377715998683684
+  Id: 12470363244737387935
   Name: "Stock"
   Transform {
     Location {
@@ -39272,7 +42768,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -39308,28 +42808,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 13665827888839733764
-  ChildIds: 8751147954117398510
-  ChildIds: 14825948096977862912
-  ChildIds: 10333945017157091969
-  ChildIds: 9490682668095071240
-  ChildIds: 7486096890905595767
-  ChildIds: 5085110144525762291
-  ChildIds: 11867656902347431994
-  ChildIds: 2557657316499455655
-  ChildIds: 15772350901719682832
-  ChildIds: 17817910805592782957
-  ChildIds: 2874542563138877623
-  ChildIds: 13780040893190221905
-  ChildIds: 1364469485655320054
-  ChildIds: 12263586957705996221
-  ChildIds: 6839514839794394003
-  ChildIds: 2892316561016251483
-  ChildIds: 9965739882196261785
-  ChildIds: 11061569371615494464
-  ChildIds: 8496582570321057120
-  ChildIds: 1581164731128250499
-  ChildIds: 205969661526279657
+  ChildIds: 5480338878095119643
+  ChildIds: 2586099085516777650
+  ChildIds: 5217550483754391752
+  ChildIds: 1275513860360356190
+  ChildIds: 11469072400370742718
+  ChildIds: 5809187731077151088
+  ChildIds: 16360600384140075340
+  ChildIds: 8474464076859892858
+  ChildIds: 9732322829514214527
+  ChildIds: 7177495065253343712
+  ChildIds: 2394709730487023557
+  ChildIds: 3439461899292663393
+  ChildIds: 4595745078294426740
+  ChildIds: 5198901257339645226
+  ChildIds: 8372798109301237145
+  ChildIds: 5226349614662787381
+  ChildIds: 13382443460288034064
+  ChildIds: 10664374596846792126
+  ChildIds: 3139242248917212702
+  ChildIds: 12598840590015121652
+  ChildIds: 11965787911973704747
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -39353,7 +42852,7 @@ Objects {
   }
 }
 Objects {
-  Id: 205969661526279657
+  Id: 11965787911973704747
   Name: "Forest Floor"
   Transform {
     Location {
@@ -39397,7 +42896,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39419,7 +42925,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1581164731128250499
+  Id: 12598840590015121652
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -39463,7 +42969,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39485,7 +42998,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8496582570321057120
+  Id: 3139242248917212702
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -39529,7 +43042,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -39551,7 +43071,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11061569371615494464
+  Id: 10664374596846792126
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -39595,7 +43115,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -39617,7 +43144,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9965739882196261785
+  Id: 13382443460288034064
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -39661,7 +43188,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -39683,7 +43217,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2892316561016251483
+  Id: 5226349614662787381
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -39727,7 +43261,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -39749,7 +43290,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6839514839794394003
+  Id: 8372798109301237145
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -39793,7 +43334,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -39815,7 +43363,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12263586957705996221
+  Id: 5198901257339645226
   Name: "Reflector Green"
   Transform {
     Location {
@@ -39859,7 +43407,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -39881,7 +43436,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1364469485655320054
+  Id: 4595745078294426740
   Name: "Reflector Red"
   Transform {
     Location {
@@ -39923,7 +43478,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -39945,7 +43507,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13780040893190221905
+  Id: 3439461899292663393
   Name: "Tiled Green"
   Transform {
     Location {
@@ -39989,7 +43551,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -40011,7 +43580,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2874542563138877623
+  Id: 2394709730487023557
   Name: "Force Field Green"
   Transform {
     Location {
@@ -40055,7 +43624,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -40077,7 +43653,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17817910805592782957
+  Id: 7177495065253343712
   Name: "Force Field"
   Transform {
     Location {
@@ -40121,7 +43697,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -40143,7 +43726,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15772350901719682832
+  Id: 9732322829514214527
   Name: "Fruit"
   Transform {
     Location {
@@ -40186,7 +43769,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -40208,7 +43798,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2557657316499455655
+  Id: 8474464076859892858
   Name: "Energy Tube"
   Transform {
     Location {
@@ -40251,7 +43841,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -40273,7 +43870,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11867656902347431994
+  Id: 16360600384140075340
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -40317,7 +43914,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -40339,7 +43943,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5085110144525762291
+  Id: 5809187731077151088
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -40383,7 +43987,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -40405,7 +44016,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7486096890905595767
+  Id: 11469072400370742718
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -40448,7 +44059,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -40470,7 +44088,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9490682668095071240
+  Id: 1275513860360356190
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -40514,73 +44132,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 10333945017157091969
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3227969213154302956
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40601,7 +44161,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14825948096977862912
+  Id: 5217550483754391752
   Name: "Gold"
   Transform {
     Location {
@@ -40646,6 +44206,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40666,7 +44233,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8751147954117398510
+  Id: 2586099085516777650
   Name: "Chrome"
   Transform {
     Location {
@@ -40712,6 +44279,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40732,7 +44306,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13665827888839733764
+  Id: 5480338878095119643
   Name: "Stock"
   Transform {
     Location {
@@ -40777,7 +44351,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -40813,28 +44391,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 2395001626521820983
-  ChildIds: 5981719790026109112
-  ChildIds: 3248361496556959060
-  ChildIds: 15335151724234810959
-  ChildIds: 4871541148089455981
-  ChildIds: 3139657698413575136
-  ChildIds: 8373302463709298688
-  ChildIds: 8662886272602191119
-  ChildIds: 5319812250207622831
-  ChildIds: 5236197255078575521
-  ChildIds: 12397953691941223634
-  ChildIds: 1668726522736106699
-  ChildIds: 11020303015165054519
-  ChildIds: 4772827980309945822
-  ChildIds: 10999752339460055066
-  ChildIds: 11588485175972050847
-  ChildIds: 2593027760959468666
-  ChildIds: 8443876801100162375
-  ChildIds: 11733985485469593662
-  ChildIds: 5822773029781628216
-  ChildIds: 3684206846079416657
-  ChildIds: 7596897633696806210
+  ChildIds: 7754166441385952602
+  ChildIds: 5622956091467785866
+  ChildIds: 12989103633766635515
+  ChildIds: 49178797066344602
+  ChildIds: 1772250743267549354
+  ChildIds: 13782246259556844319
+  ChildIds: 15045741535742583533
+  ChildIds: 558158208248296962
+  ChildIds: 7379447286743423404
+  ChildIds: 5810921022447392112
+  ChildIds: 16505463108815267419
+  ChildIds: 18443207748085963179
+  ChildIds: 210187466867150405
+  ChildIds: 13399919236836180584
+  ChildIds: 16915815371941906762
+  ChildIds: 11324303175290021868
+  ChildIds: 16710722335608115769
+  ChildIds: 17436016916106122274
+  ChildIds: 9256135185898777826
+  ChildIds: 3187121822266360267
+  ChildIds: 3219946855977932737
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -40858,7 +44435,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7596897633696806210
+  Id: 3219946855977932737
   Name: "Forest Floor"
   Transform {
     Location {
@@ -40902,7 +44479,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -40924,7 +44508,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3684206846079416657
+  Id: 3187121822266360267
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -40968,7 +44552,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -40990,7 +44581,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5822773029781628216
+  Id: 9256135185898777826
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -41034,7 +44625,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -41056,7 +44654,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11733985485469593662
+  Id: 17436016916106122274
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -41100,7 +44698,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -41122,7 +44727,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8443876801100162375
+  Id: 16710722335608115769
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -41166,7 +44771,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -41188,7 +44800,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2593027760959468666
+  Id: 11324303175290021868
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -41232,7 +44844,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -41254,7 +44873,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11588485175972050847
+  Id: 16915815371941906762
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -41298,7 +44917,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -41320,7 +44946,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10999752339460055066
+  Id: 13399919236836180584
   Name: "Reflector Green"
   Transform {
     Location {
@@ -41364,7 +44990,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -41386,7 +45019,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4772827980309945822
+  Id: 210187466867150405
   Name: "Reflector Red"
   Transform {
     Location {
@@ -41428,7 +45061,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -41450,7 +45090,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11020303015165054519
+  Id: 18443207748085963179
   Name: "Tiled Green"
   Transform {
     Location {
@@ -41494,7 +45134,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -41516,7 +45163,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1668726522736106699
+  Id: 16505463108815267419
   Name: "Force Field Green"
   Transform {
     Location {
@@ -41560,7 +45207,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -41582,7 +45236,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12397953691941223634
+  Id: 5810921022447392112
   Name: "Force Field"
   Transform {
     Location {
@@ -41626,7 +45280,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -41648,7 +45309,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5236197255078575521
+  Id: 7379447286743423404
   Name: "Fruit"
   Transform {
     Location {
@@ -41691,7 +45352,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -41713,7 +45381,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5319812250207622831
+  Id: 558158208248296962
   Name: "Energy Tube"
   Transform {
     Location {
@@ -41756,7 +45424,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -41778,7 +45453,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8662886272602191119
+  Id: 15045741535742583533
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -41822,7 +45497,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -41844,7 +45526,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8373302463709298688
+  Id: 13782246259556844319
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -41888,7 +45570,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -41910,7 +45599,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3139657698413575136
+  Id: 1772250743267549354
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -41953,7 +45642,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -41975,7 +45671,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4871541148089455981
+  Id: 49178797066344602
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -42019,73 +45715,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 15335151724234810959
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6268860178078486416
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42106,7 +45744,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3248361496556959060
+  Id: 12989103633766635515
   Name: "Gold"
   Transform {
     Location {
@@ -42151,6 +45789,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42171,7 +45816,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5981719790026109112
+  Id: 5622956091467785866
   Name: "Chrome"
   Transform {
     Location {
@@ -42217,6 +45862,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42237,7 +45889,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2395001626521820983
+  Id: 7754166441385952602
   Name: "Stock"
   Transform {
     Location {
@@ -42282,7 +45934,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -42318,28 +45974,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 13329687203696994010
-  ChildIds: 10474922988743398783
-  ChildIds: 6829032292156609226
-  ChildIds: 15042582371401986486
-  ChildIds: 9856102335373031076
-  ChildIds: 14605703792284325723
-  ChildIds: 11613074336655680784
-  ChildIds: 602673307763843739
-  ChildIds: 9623502868948268083
-  ChildIds: 10811488514102069368
-  ChildIds: 11592586046910666037
-  ChildIds: 16050335714954808433
-  ChildIds: 11755129063938891275
-  ChildIds: 7006917473906274999
-  ChildIds: 14342092558784423219
-  ChildIds: 16335400637830919037
-  ChildIds: 5657243818510176990
-  ChildIds: 6353860327286200515
-  ChildIds: 8931444816521615161
-  ChildIds: 11410341901209202177
-  ChildIds: 5426603328725115517
-  ChildIds: 3157277755935611539
+  ChildIds: 6522701942887074549
+  ChildIds: 14414915590679195491
+  ChildIds: 3961542766636518029
+  ChildIds: 14291350987930062316
+  ChildIds: 17970372868473073574
+  ChildIds: 4921856766414776724
+  ChildIds: 2559010540264747198
+  ChildIds: 8343167343234629585
+  ChildIds: 10737352985420097493
+  ChildIds: 15106960228678069852
+  ChildIds: 15964844095272751377
+  ChildIds: 12394289337656116069
+  ChildIds: 7624573665528735214
+  ChildIds: 12577767989408145909
+  ChildIds: 1404602060901531382
+  ChildIds: 1974155678115518704
+  ChildIds: 9387236442088025979
+  ChildIds: 16563207679361408176
+  ChildIds: 5790659303693366161
+  ChildIds: 212644145191143860
+  ChildIds: 2740339628400944416
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -42363,7 +46018,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3157277755935611539
+  Id: 2740339628400944416
   Name: "Forest Floor"
   Transform {
     Location {
@@ -42407,7 +46062,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42429,7 +46091,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5426603328725115517
+  Id: 212644145191143860
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -42473,7 +46135,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42495,7 +46164,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11410341901209202177
+  Id: 5790659303693366161
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -42539,7 +46208,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -42561,7 +46237,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8931444816521615161
+  Id: 16563207679361408176
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -42605,7 +46281,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -42627,7 +46310,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6353860327286200515
+  Id: 9387236442088025979
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -42671,7 +46354,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -42693,7 +46383,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5657243818510176990
+  Id: 1974155678115518704
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -42737,7 +46427,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -42759,7 +46456,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16335400637830919037
+  Id: 1404602060901531382
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -42803,7 +46500,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -42825,7 +46529,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14342092558784423219
+  Id: 12577767989408145909
   Name: "Reflector Green"
   Transform {
     Location {
@@ -42869,7 +46573,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -42891,7 +46602,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7006917473906274999
+  Id: 7624573665528735214
   Name: "Reflector Red"
   Transform {
     Location {
@@ -42933,7 +46644,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -42955,7 +46673,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11755129063938891275
+  Id: 12394289337656116069
   Name: "Tiled Green"
   Transform {
     Location {
@@ -42999,7 +46717,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -43021,7 +46746,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16050335714954808433
+  Id: 15964844095272751377
   Name: "Force Field Green"
   Transform {
     Location {
@@ -43065,7 +46790,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -43087,7 +46819,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11592586046910666037
+  Id: 15106960228678069852
   Name: "Force Field"
   Transform {
     Location {
@@ -43131,7 +46863,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -43153,7 +46892,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10811488514102069368
+  Id: 10737352985420097493
   Name: "Fruit"
   Transform {
     Location {
@@ -43196,7 +46935,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -43218,7 +46964,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9623502868948268083
+  Id: 8343167343234629585
   Name: "Energy Tube"
   Transform {
     Location {
@@ -43261,7 +47007,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -43283,7 +47036,7 @@ Objects {
   }
 }
 Objects {
-  Id: 602673307763843739
+  Id: 2559010540264747198
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -43327,7 +47080,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -43349,7 +47109,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11613074336655680784
+  Id: 4921856766414776724
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -43393,7 +47153,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -43415,7 +47182,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14605703792284325723
+  Id: 17970372868473073574
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -43458,7 +47225,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -43480,7 +47254,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9856102335373031076
+  Id: 14291350987930062316
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -43524,73 +47298,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 15042582371401986486
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10367610354021891658
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43611,7 +47327,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6829032292156609226
+  Id: 3961542766636518029
   Name: "Gold"
   Transform {
     Location {
@@ -43656,6 +47372,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43676,7 +47399,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10474922988743398783
+  Id: 14414915590679195491
   Name: "Chrome"
   Transform {
     Location {
@@ -43722,6 +47445,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43742,7 +47472,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13329687203696994010
+  Id: 6522701942887074549
   Name: "Stock"
   Transform {
     Location {
@@ -43787,7 +47517,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -43823,28 +47557,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 13251672409712955839
-  ChildIds: 1139684391981473919
-  ChildIds: 16856452079744357503
-  ChildIds: 3040696424599566079
-  ChildIds: 17998610266322597142
-  ChildIds: 1293823052076801505
-  ChildIds: 11355184450293583442
-  ChildIds: 10615181672335742557
-  ChildIds: 8807251085967117418
-  ChildIds: 4155271851962623733
-  ChildIds: 5820063048829673611
-  ChildIds: 11305605458796839452
-  ChildIds: 5575032013485671306
-  ChildIds: 12814287313137086942
-  ChildIds: 1296803206382709456
-  ChildIds: 5233698607117709617
-  ChildIds: 12693813351397647009
-  ChildIds: 10505731333094387578
-  ChildIds: 14225611500739124956
-  ChildIds: 15514809591452279155
-  ChildIds: 8669698478614005001
-  ChildIds: 6046521283346356076
+  ChildIds: 5670044780638576443
+  ChildIds: 15124852759236497618
+  ChildIds: 13855223762959585815
+  ChildIds: 7443855862822240256
+  ChildIds: 2562593033832648403
+  ChildIds: 3316068892203820355
+  ChildIds: 8388815357041234062
+  ChildIds: 2556617005503003349
+  ChildIds: 17291261365156989786
+  ChildIds: 2080174926625063090
+  ChildIds: 15161293893936946359
+  ChildIds: 2733237606829803893
+  ChildIds: 276035142212396423
+  ChildIds: 17629729012115529668
+  ChildIds: 1487054095332661607
+  ChildIds: 6650669306911504855
+  ChildIds: 8301830594961465815
+  ChildIds: 2822933052475671504
+  ChildIds: 4245877960303629299
+  ChildIds: 13744853209679249894
+  ChildIds: 9967809850784768146
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -43868,7 +47601,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6046521283346356076
+  Id: 9967809850784768146
   Name: "Forest Floor"
   Transform {
     Location {
@@ -43912,7 +47645,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -43934,7 +47674,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8669698478614005001
+  Id: 13744853209679249894
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -43978,7 +47718,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44000,7 +47747,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15514809591452279155
+  Id: 4245877960303629299
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -44044,7 +47791,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -44066,7 +47820,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14225611500739124956
+  Id: 2822933052475671504
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -44110,7 +47864,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -44132,7 +47893,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10505731333094387578
+  Id: 8301830594961465815
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -44176,7 +47937,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -44198,7 +47966,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12693813351397647009
+  Id: 6650669306911504855
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -44242,7 +48010,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -44264,7 +48039,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5233698607117709617
+  Id: 1487054095332661607
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -44308,7 +48083,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -44330,7 +48112,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1296803206382709456
+  Id: 17629729012115529668
   Name: "Reflector Green"
   Transform {
     Location {
@@ -44374,7 +48156,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -44396,7 +48185,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12814287313137086942
+  Id: 276035142212396423
   Name: "Reflector Red"
   Transform {
     Location {
@@ -44438,7 +48227,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -44460,7 +48256,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5575032013485671306
+  Id: 2733237606829803893
   Name: "Tiled Green"
   Transform {
     Location {
@@ -44504,7 +48300,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -44526,7 +48329,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11305605458796839452
+  Id: 15161293893936946359
   Name: "Force Field Green"
   Transform {
     Location {
@@ -44570,7 +48373,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -44592,7 +48402,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5820063048829673611
+  Id: 2080174926625063090
   Name: "Force Field"
   Transform {
     Location {
@@ -44636,7 +48446,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -44658,7 +48475,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4155271851962623733
+  Id: 17291261365156989786
   Name: "Fruit"
   Transform {
     Location {
@@ -44701,7 +48518,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -44723,7 +48547,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8807251085967117418
+  Id: 2556617005503003349
   Name: "Energy Tube"
   Transform {
     Location {
@@ -44766,7 +48590,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -44788,7 +48619,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10615181672335742557
+  Id: 8388815357041234062
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -44832,7 +48663,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -44854,7 +48692,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11355184450293583442
+  Id: 3316068892203820355
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -44898,7 +48736,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -44920,7 +48765,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1293823052076801505
+  Id: 2562593033832648403
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -44963,7 +48808,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -44985,7 +48837,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17998610266322597142
+  Id: 7443855862822240256
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -45029,73 +48881,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 3040696424599566079
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 73957978074800956
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45116,7 +48910,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16856452079744357503
+  Id: 13855223762959585815
   Name: "Gold"
   Transform {
     Location {
@@ -45161,6 +48955,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45181,7 +48982,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1139684391981473919
+  Id: 15124852759236497618
   Name: "Chrome"
   Transform {
     Location {
@@ -45227,6 +49028,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45247,7 +49055,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13251672409712955839
+  Id: 5670044780638576443
   Name: "Stock"
   Transform {
     Location {
@@ -45292,7 +49100,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -45328,28 +49140,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 8444369579236689772
-  ChildIds: 3059882305630397200
-  ChildIds: 7273294311145165371
-  ChildIds: 13544700214492970138
-  ChildIds: 959614293475076420
-  ChildIds: 16881187009865460254
-  ChildIds: 10501193594627841864
-  ChildIds: 449186009101445423
-  ChildIds: 2870273031668582245
-  ChildIds: 10643512087053340446
-  ChildIds: 1513828779395154611
-  ChildIds: 7318662356872678553
-  ChildIds: 456385533794069820
-  ChildIds: 2132357313767284447
-  ChildIds: 17223709611007572316
-  ChildIds: 18053448534801925541
-  ChildIds: 16973869544629808462
-  ChildIds: 12873216683463250596
-  ChildIds: 11157490692421746811
-  ChildIds: 14935546523074385634
-  ChildIds: 5538409856097326649
-  ChildIds: 8129928796415129574
+  ChildIds: 6876451665938556259
+  ChildIds: 2067766991442088427
+  ChildIds: 297387738965079204
+  ChildIds: 12003260263826562024
+  ChildIds: 12734651057138977269
+  ChildIds: 4624937662665491361
+  ChildIds: 3666977695144836478
+  ChildIds: 409474437996968416
+  ChildIds: 8761678227559321725
+  ChildIds: 16821399546714733815
+  ChildIds: 1182125299920780998
+  ChildIds: 8404624630338627076
+  ChildIds: 6551384563502512808
+  ChildIds: 18128652449346221519
+  ChildIds: 6699843848968548006
+  ChildIds: 17440051507839696273
+  ChildIds: 6604066056824673827
+  ChildIds: 14135026844896665478
+  ChildIds: 1618140023943824269
+  ChildIds: 2809349009900295704
+  ChildIds: 4755772951879796552
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -45373,7 +49184,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8129928796415129574
+  Id: 4755772951879796552
   Name: "Forest Floor"
   Transform {
     Location {
@@ -45417,7 +49228,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -45439,7 +49257,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5538409856097326649
+  Id: 2809349009900295704
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -45483,7 +49301,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -45505,7 +49330,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14935546523074385634
+  Id: 1618140023943824269
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -45549,7 +49374,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -45571,7 +49403,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11157490692421746811
+  Id: 14135026844896665478
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -45615,7 +49447,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -45637,7 +49476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12873216683463250596
+  Id: 6604066056824673827
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -45681,7 +49520,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -45703,7 +49549,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16973869544629808462
+  Id: 17440051507839696273
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -45747,7 +49593,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -45769,7 +49622,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18053448534801925541
+  Id: 6699843848968548006
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -45813,7 +49666,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -45835,7 +49695,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17223709611007572316
+  Id: 18128652449346221519
   Name: "Reflector Green"
   Transform {
     Location {
@@ -45879,7 +49739,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -45901,7 +49768,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2132357313767284447
+  Id: 6551384563502512808
   Name: "Reflector Red"
   Transform {
     Location {
@@ -45943,7 +49810,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -45965,7 +49839,7 @@ Objects {
   }
 }
 Objects {
-  Id: 456385533794069820
+  Id: 8404624630338627076
   Name: "Tiled Green"
   Transform {
     Location {
@@ -46009,7 +49883,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -46031,7 +49912,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7318662356872678553
+  Id: 1182125299920780998
   Name: "Force Field Green"
   Transform {
     Location {
@@ -46075,7 +49956,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -46097,7 +49985,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1513828779395154611
+  Id: 16821399546714733815
   Name: "Force Field"
   Transform {
     Location {
@@ -46141,7 +50029,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -46163,7 +50058,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10643512087053340446
+  Id: 8761678227559321725
   Name: "Fruit"
   Transform {
     Location {
@@ -46206,7 +50101,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -46228,7 +50130,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2870273031668582245
+  Id: 409474437996968416
   Name: "Energy Tube"
   Transform {
     Location {
@@ -46271,7 +50173,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -46293,7 +50202,7 @@ Objects {
   }
 }
 Objects {
-  Id: 449186009101445423
+  Id: 3666977695144836478
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -46337,7 +50246,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -46359,7 +50275,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10501193594627841864
+  Id: 4624937662665491361
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -46403,7 +50319,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -46425,7 +50348,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16881187009865460254
+  Id: 12734651057138977269
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -46468,7 +50391,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -46490,7 +50420,7 @@ Objects {
   }
 }
 Objects {
-  Id: 959614293475076420
+  Id: 12003260263826562024
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -46534,73 +50464,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 13544700214492970138
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18408569933801927901
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46621,7 +50493,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7273294311145165371
+  Id: 297387738965079204
   Name: "Gold"
   Transform {
     Location {
@@ -46666,6 +50538,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46686,7 +50565,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3059882305630397200
+  Id: 2067766991442088427
   Name: "Chrome"
   Transform {
     Location {
@@ -46732,6 +50611,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46752,7 +50638,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8444369579236689772
+  Id: 6876451665938556259
   Name: "Stock"
   Transform {
     Location {
@@ -46797,7 +50683,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -46833,28 +50723,27 @@ Objects {
     }
   }
   ParentId: 16763584839463712172
-  ChildIds: 5864709446948992785
-  ChildIds: 16940369855734486180
-  ChildIds: 14173450225929765211
-  ChildIds: 2473641470924693616
-  ChildIds: 6839169459580899430
-  ChildIds: 18262859820236589256
-  ChildIds: 5323151090021044234
-  ChildIds: 15285019907203080242
-  ChildIds: 17467600598057844411
-  ChildIds: 8884912475058170413
-  ChildIds: 6066033577536723135
-  ChildIds: 15546902498650415296
-  ChildIds: 2571614216690089543
-  ChildIds: 7105104390490576645
-  ChildIds: 2445933120204912953
-  ChildIds: 13669020216716199847
-  ChildIds: 12631851715856795291
-  ChildIds: 9529692876026938184
-  ChildIds: 1927890218178468729
-  ChildIds: 15472517550283439245
-  ChildIds: 16068865910849428420
-  ChildIds: 10933732032703482156
+  ChildIds: 4033001620401864535
+  ChildIds: 8172032617005346040
+  ChildIds: 3939515683634070538
+  ChildIds: 3685664866702263749
+  ChildIds: 592087669882324364
+  ChildIds: 10338043513785069005
+  ChildIds: 17477448406306463633
+  ChildIds: 10876686535246843456
+  ChildIds: 15197203096780640642
+  ChildIds: 18038881940748950478
+  ChildIds: 10359297901332631067
+  ChildIds: 8475436981800501512
+  ChildIds: 2966634416647790287
+  ChildIds: 7765685262753171367
+  ChildIds: 16505206136553593884
+  ChildIds: 11548455975083619891
+  ChildIds: 6701737716001802388
+  ChildIds: 9096678197437430281
+  ChildIds: 10153810583237599115
+  ChildIds: 9502228121255980976
+  ChildIds: 2522399426610313155
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -46878,7 +50767,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10933732032703482156
+  Id: 2522399426610313155
   Name: "Forest Floor"
   Transform {
     Location {
@@ -46922,7 +50811,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -46944,7 +50840,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16068865910849428420
+  Id: 9502228121255980976
   Name: "Sand Dunes"
   Transform {
     Location {
@@ -46988,7 +50884,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -47010,7 +50913,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15472517550283439245
+  Id: 10153810583237599115
   Name: "Metal Greebles"
   Transform {
     Location {
@@ -47054,7 +50957,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -47076,7 +50986,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1927890218178468729
+  Id: 9096678197437430281
   Name: "Stripes Blue Alt"
   Transform {
     Location {
@@ -47120,7 +51030,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -47142,7 +51059,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9529692876026938184
+  Id: 6701737716001802388
   Name: "Stripes Blue"
   Transform {
     Location {
@@ -47186,7 +51103,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -47208,7 +51132,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12631851715856795291
+  Id: 11548455975083619891
   Name: "Stripes Purple"
   Transform {
     Location {
@@ -47252,7 +51176,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -47274,7 +51205,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13669020216716199847
+  Id: 16505206136553593884
   Name: "Reflector Grey"
   Transform {
     Location {
@@ -47318,7 +51249,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -47340,7 +51278,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2445933120204912953
+  Id: 7765685262753171367
   Name: "Reflector Green"
   Transform {
     Location {
@@ -47384,7 +51322,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -47406,7 +51351,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7105104390490576645
+  Id: 2966634416647790287
   Name: "Reflector Red"
   Transform {
     Location {
@@ -47448,7 +51393,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -47470,7 +51422,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2571614216690089543
+  Id: 8475436981800501512
   Name: "Tiled Green"
   Transform {
     Location {
@@ -47514,7 +51466,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -47536,7 +51495,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15546902498650415296
+  Id: 10359297901332631067
   Name: "Force Field Green"
   Transform {
     Location {
@@ -47580,7 +51539,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -47602,7 +51568,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6066033577536723135
+  Id: 18038881940748950478
   Name: "Force Field"
   Transform {
     Location {
@@ -47646,7 +51612,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -47668,7 +51641,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8884912475058170413
+  Id: 15197203096780640642
   Name: "Fruit"
   Transform {
     Location {
@@ -47711,7 +51684,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -47733,7 +51713,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17467600598057844411
+  Id: 10876686535246843456
   Name: "Energy Tube"
   Transform {
     Location {
@@ -47776,7 +51756,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -47798,7 +51785,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15285019907203080242
+  Id: 17477448406306463633
   Name: "Advanced Metal"
   Transform {
     Location {
@@ -47842,7 +51829,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -47864,7 +51858,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5323151090021044234
+  Id: 10338043513785069005
   Name: "Magic Glass Grey"
   Transform {
     Location {
@@ -47908,7 +51902,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -47930,7 +51931,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18262859820236589256
+  Id: 592087669882324364
   Name: "Magic Glass Blue"
   Transform {
     Location {
@@ -47973,7 +51974,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -47995,7 +52003,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6839169459580899430
+  Id: 3685664866702263749
   Name: "Magic Glass Purple"
   Transform {
     Location {
@@ -48039,73 +52047,15 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 2473641470924693616
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6867549957113510674
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48126,7 +52076,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14173450225929765211
+  Id: 3939515683634070538
   Name: "Gold"
   Transform {
     Location {
@@ -48171,6 +52121,13 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48191,7 +52148,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16940369855734486180
+  Id: 8172032617005346040
   Name: "Chrome"
   Transform {
     Location {
@@ -48237,6 +52194,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48257,7 +52221,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5864709446948992785
+  Id: 4033001620401864535
   Name: "Stock"
   Transform {
     Location {
@@ -48302,7 +52266,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -48341,7 +52309,6 @@ Objects {
   ChildIds: 5608269616515684624
   ChildIds: 9935891964514552041
   ChildIds: 15684509623262776661
-  ChildIds: 2987268961103994394
   ChildIds: 1176084845056644005
   ChildIds: 14736648842106310315
   ChildIds: 6637291897401580836
@@ -48427,7 +52394,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "21"
+      String: "20"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -48493,7 +52467,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "20"
+      String: "19"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -48559,7 +52540,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -48625,7 +52613,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -48691,7 +52686,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -48757,7 +52759,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -48823,7 +52832,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -48889,7 +52905,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -48953,7 +52976,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -49019,7 +53049,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -49085,7 +53122,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -49151,7 +53195,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -49216,7 +53267,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -49281,7 +53339,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -49347,7 +53412,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -49413,7 +53485,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -49478,7 +53557,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -49544,72 +53630,14 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 2987268961103994394
-  Name: "Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3933943344914895777
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00284749246
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
       String: "03"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -49675,6 +53703,13 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "02"
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -49742,6 +53777,13 @@ Objects {
       Name: "cs:SkinID"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49807,7 +53849,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
