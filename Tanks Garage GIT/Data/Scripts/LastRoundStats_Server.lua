@@ -7,7 +7,7 @@ local STORAGE_LEADERBOARDS = KEYS:GetCustomProperty("Leaderboards")
 
 local DATA_TEMPLATE = script:GetCustomProperty("LastRoundStats_DATA")
 
-local shouldClear = false
+local shouldClear = true
 
 function OnPlayerJoined(player)
     local data = Storage.GetSharedPlayerData(STORAGE_LEADERBOARDS, player)
