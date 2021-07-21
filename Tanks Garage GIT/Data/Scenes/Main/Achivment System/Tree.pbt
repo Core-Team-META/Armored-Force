@@ -5043,7 +5043,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 9349277896133220339
+        Id: 15948490240988173210
       }
     }
     Overrides {

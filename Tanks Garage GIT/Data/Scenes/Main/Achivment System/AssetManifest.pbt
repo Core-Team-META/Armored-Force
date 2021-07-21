@@ -8,12 +8,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9349277896133220339
-  Name: "Alien"
+  Id: 15948490240988173210
+  Name: "Military Ability Aerial Attack"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Scifi_Icon_021"
+    AssetId: "Icon_Military_Ability_Blue_008"
   }
 }
 Assets {
