@@ -95,6 +95,7 @@ local CONFIRM_WINDOW_CLOSE_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CLO
 local CONFIRM_WINDOW_CONFIRM_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CONFIRM_BUTTON"):WaitForObject()
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 local SFX_EQUIP_TANK = script:GetCustomProperty("SFX_EQUIP_TANK"):WaitForObject()
+local PURCHASE_NOTIFICATION = script:GetCustomProperty("PURCHASE_NOTIFICATION"):WaitForObject()
 
 local LOCKED_TANK_CARD = script:GetCustomProperty("LOCKED_TANK_CARD"):WaitForObject()
 local CONFIRM_TANK_UPGRADE = script:GetCustomProperty("CONFIRM_TANK_UPGRADE"):WaitForObject()
@@ -422,14 +423,20 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("PRICE_1").text = tostring(cost)
 	local rpPayment = 0
 	if(prereqs[1]) then
-		CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = tostring(prereqs[1].rp)
-		if(prereqs[1].rp > tankData.researchCost) then
-			rpPayment = tankData.researchCost
-			cost = 0
+		if prereqs[1].usable then
+			CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = tostring(prereqs[1].rp)
+			if(prereqs[1].rp > tankData.researchCost) then
+				rpPayment = tankData.researchCost
+				cost = 0
+			else
+				rpPayment = tonumber(prereqs[1].rp)
+				cost = cost - rpPayment
+			end	
+			PURCHASE_NOTIFICATION.visibility = Visibility.FORCE_OFF
 		else
-			rpPayment = tonumber(prereqs[1].rp)
-			cost = cost - rpPayment
-		end		
+			PURCHASE_NOTIFICATION.visibility = Visibility.FORCE_ON
+			CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = "-"
+		end	
 	else
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = "0"
 	end	
@@ -1080,21 +1087,23 @@ function GetPrerequisiteRPValues(id)
 			if(tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
 				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
 				local preReq1Tank = GetTankData(preReq1Id)
+				prerequisite1.usable = false
 				-- Check to make sure the pre-req has at least one completed upgrade
 				for i, preReq1Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 					if(tostring(preReq1Progress.id) == tostring(preReq1Id)) then
 						if(tonumber(preReq1Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq1Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq1Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-							prerequisite1 = {id = preReq1Tank.id, name = preReq1Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq1Tank.id)))}
-							table.insert(prerequisites, prerequisite1)
+							prerequisite1 = {id = preReq1Tank.id, name = preReq1Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq1Tank.id))), usable = true}							
 						end
+						table.insert(prerequisites, prerequisite1)
 					end
 				end
 			end
 			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
 				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
 				local preReq2Tank = GetTankData(preReq2Id)
+				prerequisite2.usable = false
 				-- Check to make sure the pre-req has at least one completed upgrade
 				-- Check to make sure the pre-req has at least one completed upgrade
 				for i, preReq2Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
@@ -1102,9 +1111,10 @@ function GetPrerequisiteRPValues(id)
 						if(tonumber(preReq2Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq2Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq2Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-							prerequisite2 = {id = preReq2Tank.id, name = preReq2Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq2Tank.id)))}
-							table.insert(prerequisites, prerequisite2)						
+							prerequisite2 = {id = preReq2Tank.id, name = preReq2Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq2Tank.id))), usable = true}
 						end
+						table.insert(prerequisites, prerequisite2)				
+						
 					end
 				end				
 			end
@@ -1379,7 +1389,10 @@ function PopulateLockedTankCard(tankData)
 	if(canBeResearched) then
 		-- TODO check for premium tank
 		local prereqs = GetPrerequisiteRPValues(tankData.id)
-		if(prereqs[1]) then
+		if(prereqs[1]) then			
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SHADOW").text = "UNLOCKED TANK"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SECONDAIRY").text = "UNLOCKED TANK"
+			LOCKED_TANK_CARD:FindDescendantByName("TITLE_LIGHT").text = "UNLOCKED TANK"
 			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").text = tostring(prereqs[1].rp) .. " / " .. tostring(tankData.researchCost)
 			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").progress = prereqs[1].rp / tankData.researchCost
 			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = prereqs[1].name .. " XP"
@@ -1390,11 +1403,14 @@ function PopulateLockedTankCard(tankData)
 			LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Play previous Tanks to gain XP for this tank."
 		end
 	else
+		LOCKED_TANK_CARD:FindDescendantByName("TITLE_SHADOW").text = "LOCKED TANK"
+		LOCKED_TANK_CARD:FindDescendantByName("TITLE_SECONDAIRY").text = "LOCKED TANK"
+		LOCKED_TANK_CARD:FindDescendantByName("TITLE_LIGHT").text = "LOCKED TANK"
 		LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_OFF
 		LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_OFF
 		LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_OFF
 		LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").visibility = Visibility.FORCE_OFF
-		LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Unlock pre-requisite tanks in order to research this tank."
+		LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Unlock and upgrade pre-requisite tanks in order to research this tank."
 	end
 end
 

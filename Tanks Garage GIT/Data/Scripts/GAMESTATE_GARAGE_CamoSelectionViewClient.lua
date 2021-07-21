@@ -1,5 +1,6 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local camoEntryTemplate = script:GetCustomProperty("CAMO_TEMPLATE")
 local statsContainer = script:GetCustomProperty("StatsContainer"):WaitForObject()
 local camoViewUI = script:GetCustomProperty("CamoViewUI"):WaitForObject()
 
@@ -11,6 +12,7 @@ local alliesContainer = script:GetCustomProperty("AlliesContainer"):WaitForObjec
 local universalButtonAssets = script:GetCustomProperty("UniversalButtonAssets"):WaitForObject()
 local individualButtonAssets = script:GetCustomProperty("IndividualButtonAssets"):WaitForObject()
 local camoContainer = script:GetCustomProperty("CamoContainer"):WaitForObject()
+local skinsClient = script:GetCustomProperty("GAMEHELPER_SkinsClient"):WaitForObject()
 
 local unlockedColor = script:GetCustomProperty("UnlockedColor")
 local lockedColor = script:GetCustomProperty("LockedColor")
@@ -27,6 +29,7 @@ local savedState = ""
 
 local consumableSlots = {}
 local enteringFromDefaultMenu = false
+local enteredMenuBefore = false
 
 local alliesButtonComponents = {}
 local axisButtonComponents = {}
@@ -37,6 +40,8 @@ local tankEntries = {}
 local camoEntries = {}
 local selectedTank = ""
 local originalTank = ""
+local lockedTank = false
+local selectedCamo = "00"
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -51,6 +56,14 @@ local localPlayer = Game.GetLocalPlayer()
 	LEADERBOARDS_MENU
 ]]
 
+local function SetAllTexts(textTable, textToSet)
+	
+	for _, t in pairs(textTable) do
+		t.text = textToSet
+	end
+	
+end
+
 function ToggleThisComponent(requestedPlayerState)
 
 	if savedState == "DEFAULT_MENU" then
@@ -62,7 +75,6 @@ function ToggleThisComponent(requestedPlayerState)
 	savedState = requestedPlayerState
 
 	if requestedPlayerState == thisComponent then
-	
 		if not enteringFromDefaultMenu then
 			Task.Wait(2)
 		end
@@ -74,6 +86,8 @@ function ToggleThisComponent(requestedPlayerState)
 		camoViewUI.isEnabled = true
 		statsContainer.visibility = Visibility.FORCE_OFF
 		AssignPreviewText()
+		RepopulateCamoEntries()
+		enteredMenuBefore = true
 	else
 		Task.Wait(0.1)
 		DisableThisComponent()
@@ -85,7 +99,11 @@ function DisableThisComponent()
 	
 	camoViewUI.isEnabled = false
 	statsContainer.visibility = Visibility.FORCE_ON
-	Events.Broadcast("CHANGE_EQUIPPED_TANK", originalTank)
+	if originalTank and enteredMenuBefore then
+		Events.Broadcast("CHANGE_EQUIPPED_TANK", originalTank)
+		Events.Broadcast("INITIALIZE_SKIN", localPlayer)
+		enteredMenuBefore = false
+	end
 	
 end
 
@@ -100,6 +118,7 @@ function InitializeComponent()
 	InitializeMainButton(universalButtonComponents, universalButtonAssets, "UNIVERSAL")
 	
 	OnMainButtonClicked(alliesButtonComponents.button)
+	OnMainButtonClicked(individualButtonComponents.button)
 	InitializeTankButtons()
 	
 end
@@ -213,12 +232,21 @@ function OnTankButtonClicked(button)
 	tankEntries[selectedTank].previewText.text = tankEntries[selectedTank].defaultText
 	
 	selectedTank = button.clientUserData.referencedTank
+	
+	if string.find(tankEntries[selectedTank].previewText.text, "Locked") then
+		lockedTank = true
+	else 
+		lockedTank = false
+	end
 
 	tankEntries[selectedTank].previewText:SetColor(selectedColor)
 	tankEntries[selectedTank].previewText.text = "Previewing Tank"
 	Events.Broadcast("CHANGE_EQUIPPED_TANK", selectedTank)
 	
+	RepopulateCamoEntries()
+	
 	SFX_CLICK:Play()
+	
 end
 
 function OnTankButtonHovered(button)
@@ -234,6 +262,7 @@ function OnTankButtonUnHovered(button)
 end
 
 function InitializeTankButtons()
+
 	local allAxis = axisContainer:GetChildren()
 	local allTanks = alliesContainer:GetChildren()
 	
@@ -259,7 +288,233 @@ function InitializeTankButtons()
 
 end
 
+function OnCamoButtonClicked(button)
+
+	local camoID = button.clientUserData.referencedCamo
+	local buttonEntry = camoEntries[camoID]
+		
+	if selectedCamo and camoEntries[selectedCamo] then
+		local previousEntry = camoEntries[selectedCamo]
+		
+		previousEntry.previewComponents.active.visibility = Visibility.FORCE_OFF
+		previousEntry.equipBuyComponents.active.visibility = Visibility.FORCE_OFF
+		
+		local sampleText = previousEntry.equipBuyComponents.text[1]
+		if string.find(sampleText.text, "Equipped") then
+			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equip")
+		end
+	end
+		
+	if button == buttonEntry.previewComponents.button then
+			
+		buttonEntry.previewComponents.active.visibility = Visibility.FORCE_ON
+		buttonEntry.equipBuyComponents.active.visibility = Visibility.FORCE_OFF
+		
+		Events.Broadcast("PREVIEW_SKIN", camoID)
+	else 
+	
+		buttonEntry.previewComponents.active.visibility = Visibility.FORCE_OFF
+	
+		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
+		local playerCamoEntry = playerCamoData[camoID]
+		
+		
+		if not playerCamoData[camoID].purchased then
+			ReliableEvents.BroadcastToServer("PURCHASE_SKIN", selectedTank, camoID)
+		else
+			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equipped")
+			buttonEntry.equipBuyComponents.active.visibility = Visibility.FORCE_ON
+			ReliableEvents.BroadcastToServer("EQUIP_SKIN", selectedTank, camoID)
+		end	
+
+	end
+	
+	selectedCamo = camoID
+	
+	SFX_CLICK:Play()
+
+end
+
+function OnCamoButtonHovered(button)
+
+	local camoID = button.clientUserData.referencedCamo
+	local buttonEntry = camoEntries[camoID]
+	
+	if selectedCamo ~= camoID then
+		if button == buttonEntry.previewComponents.button then
+			buttonEntry.previewComponents.hover.visibility = Visibility.FORCE_ON
+		else 
+			buttonEntry.equipBuyComponents.hover.visibility = Visibility.FORCE_ON
+		end
+	end
+	
+	SFX_HOVER:Play()
+	
+end
+
+function OnCamoButtonUnhovered(button)
+
+	local camoID = button.clientUserData.referencedCamo
+	local buttonEntry = camoEntries[camoID]
+
+	if selectedCamo ~= camoID then
+		if button == buttonEntry.previewComponents.button then
+			buttonEntry.previewComponents.hover.visibility = Visibility.FORCE_OFF
+		else 
+			buttonEntry.equipBuyComponents.hover.visibility = Visibility.FORCE_OFF
+		end
+	end	
+	
+	SFX_UNHOVERED:Play()	
+
+end
+
+function OnRenewEntries()
+
+	if not localPlayer.clientUserData.camoData or lockedTank then
+		return
+	end
+	
+	local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
+	local camoList = skinsClient.context.GetTankSkinData(selectedTank)
+	
+	for camoID, camo in pairs(camoList) do
+		if playerCamoData[camoID].equipped then
+			SetAllTexts(camoEntries[camoID].equipBuyComponents.text, "Equipped")
+			camoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
+			camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
+			camoEntries[camoID].equipBuyComponents.active.visibility = Visibility.FORCE_ON
+			
+			selectedCamo = camoID
+		elseif not playerCamoData[camoID].purchased then
+			SetAllTexts(camoEntries[camoID].equipBuyComponents.text, tostring(camo.cost))
+			if camoEntries[camoID].resource == "Gold" then
+				ccamoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
+				camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_ON
+			else 
+				camoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_ON
+				camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
+			end
+		else 
+			SetAllTexts(camoEntries[camoID].equipBuyComponents.text, "Equip")
+			camoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
+			camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
+			camoEntries[camoID].equipBuyComponents.active.visibility = Visibility.FORCE_OFF
+		end
+	end
+	
+end
+
+function RepopulateCamoEntries()
+	
+	if camoEntries then
+	
+		for _, entry in pairs(camoEntries) do	
+			entry.previewClickedListener:Disconnect()
+			entry.previewClickedListener = nil
+			entry.previewHoverListener:Disconnect()
+			entry.previewHoverListener = nil
+			entry.previewUnhoveredListener:Disconnect()
+			entry.previewUnhoveredListener = nil
+			
+			entry.camoUI:Destroy()
+			entry.camoUI = nil
+			
+			entry = nil
+		end
+		
+	end
+	
+	if not localPlayer.clientUserData.camoData then
+		return
+	end
+	
+	local camoList = skinsClient.context.GetTankSkinData(selectedTank)
+	local flippedPositioning = {}
+	local positioning = {}
+	
+	for camoID, camo in pairs(camoList) do
+		table.insert(flippedPositioning, camoID)
+	end
+	
+	table.sort(flippedPositioning, function (a, b) return tonumber(a) < tonumber(b) end)
+	
+	for position, camoID in ipairs(flippedPositioning) do
+		positioning[camoID] = position
+	end	
+	
+	for camoID, camo in pairs(camoList) do
+	
+		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
+			
+		local camoEntry = {}
+		camoEntry.camoUI = World.SpawnAsset(camoEntryTemplate, {parent = camoContainer})
+		camoEntry.camoUI.x = 0
+		camoEntry.camoUI.y = (positioning[camoID] - 1) * 190 + 5
+		
+		local camoTitle = camoEntry.camoUI:GetCustomProperty("CamoName"):WaitForObject()
+		camoTitle.text = camo.name
+		
+		local previewImage = camoEntry.camoUI:GetCustomProperty("PreviewImage"):WaitForObject()
+		previewImage.x = -(math.abs(camo.coordinates.x) - 1) * 240
+		previewImage.y = -(math.abs(camo.coordinates.y) - 1) * 140
+		
+		local previewAssets = camoEntry.camoUI:GetCustomProperty("PreviewButtonAssets"):WaitForObject()
+		local equipBuyAssets = camoEntry.camoUI:GetCustomProperty("EquipBuyButtonAssets"):WaitForObject()
+		
+		camoEntry.previewComponents = {}
+		camoEntry.previewComponents.button = previewAssets:FindDescendantByName("PREVIEW_BUTTON")
+		camoEntry.previewComponents.idle = previewAssets:FindDescendantByName("PREVIEW_BUTTON_IDLE")
+		camoEntry.previewComponents.hover = previewAssets:FindDescendantByName("PREVIEW_BUTTON_HOVER")
+		camoEntry.previewComponents.active = previewAssets:FindDescendantByName("PREVIEW_BUTTON_ACTIVE")
+		
+		camoEntry.previewComponents.button.clientUserData.referencedCamo = camoID
+		camoEntry.previewClickedListener = camoEntry.previewComponents.button.clickedEvent:Connect(OnCamoButtonClicked)
+		camoEntry.previewHoverListener = camoEntry.previewComponents.button.hoveredEvent:Connect(OnCamoButtonHovered)
+		camoEntry.previewUnhoveredListener = camoEntry.previewComponents.button.unhoveredEvent:Connect(OnCamoButtonUnhovered)
+		
+		camoEntry.equipBuyComponents = {}
+		camoEntry.equipBuyComponents.button = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON")
+		camoEntry.equipBuyComponents.idle = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON_IDLE")
+		camoEntry.equipBuyComponents.hover = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON_HOVER")
+		camoEntry.equipBuyComponents.active = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON_ACTIVE")
+		camoEntry.equipBuyComponents.text = equipBuyAssets:FindDescendantsByName("SUBMENU_TITLE")
+		camoEntry.equipBuyComponents.silverIcon = equipBuyAssets:FindDescendantByName("SILVER")
+		camoEntry.equipBuyComponents.goldIcon = equipBuyAssets:FindDescendantByName("GOLD")
+		
+		if lockedTank then
+			SetAllTexts(camoEntry.equipBuyComponents.text, "Tank Locked")
+		else
+			if playerCamoData[camoID].equipped then
+				selectedCamo = camoID
+				SetAllTexts(camoEntry.equipBuyComponents.text, "Equipped")
+				camoEntry.equipBuyComponents.active.visibility = Visibility.FORCE_ON
+			elseif not playerCamoData[camoID].purchased then
+				SetAllTexts(camoEntry.equipBuyComponents.text, tostring(camo.cost))
+				if camo.resource == "Gold" then
+					camoEntry.equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
+					camoEntry.equipBuyComponents.goldIcon.visibility = Visibility.FORCE_ON
+				else 
+					camoEntry.equipBuyComponents.silverIcon.visibility = Visibility.FORCE_ON
+					camoEntry.equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
+				end
+			else 
+				SetAllTexts(camoEntry.equipBuyComponents.text, "Equip")
+			end
+			
+			camoEntry.equipBuyComponents.button.clientUserData.referencedCamo = camoID
+			camoEntry.equipBuyClickedListener = camoEntry.equipBuyComponents.button.clickedEvent:Connect(OnCamoButtonClicked)
+			camoEntry.equipBuyHoverListener = camoEntry.equipBuyComponents.button.hoveredEvent:Connect(OnCamoButtonHovered)
+			camoEntry.equipBuyUnhoveredListener = camoEntry.equipBuyComponents.button.unhoveredEvent:Connect(OnCamoButtonUnhovered)
+		end
+		
+		camoEntries[camoID] = camoEntry
+	end
+
+end
+
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
+Events.Connect("RENEW_SKIN_DATA", OnRenewEntries)
 
 InitializeComponent()

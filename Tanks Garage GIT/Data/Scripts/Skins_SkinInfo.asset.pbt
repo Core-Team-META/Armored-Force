@@ -13,6 +13,11 @@ Assets {
         String: "Steel"
       }
       Overrides {
+        Name: "cs:PreviewImageLocation"
+        Vector2 {
+        }
+      }
+      Overrides {
         Name: "cs:NewMaterial"
         AssetReference {
           Id: 841534158063459245
