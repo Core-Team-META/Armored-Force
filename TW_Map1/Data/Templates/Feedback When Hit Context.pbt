@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2019000767004043276
+        ParentId: 4781671109827199097
         ChildIds: 12132939006719191970
         ChildIds: 3263991099507017621
         ChildIds: 3469847098297377889
@@ -54,6 +54,7 @@ Assets {
         }
         ParentId: 13303953283366290103
         ChildIds: 13483985038766433010
+        ChildIds: 6122900978985034048
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -300,6 +301,47 @@ Assets {
                 Value: "mc:euianchor:topleft"
               }
             }
+          }
+        }
+      }
+      Objects {
+        Id: 6122900978985034048
+        Name: "AlphaFadeLinear"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12132939006719191970
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:FeedbackWhenHitUIContainer"
+            ObjectReference {
+              SubObjectId: 12132939006719191970
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 3253850878677077948
           }
         }
       }

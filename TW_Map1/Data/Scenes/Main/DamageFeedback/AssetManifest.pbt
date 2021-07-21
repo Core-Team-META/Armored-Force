@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11530266170082884544
+  Name: "Frame Beveled 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_020"
+  }
+}
+Assets {
   Id: 7648893931280516746
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
