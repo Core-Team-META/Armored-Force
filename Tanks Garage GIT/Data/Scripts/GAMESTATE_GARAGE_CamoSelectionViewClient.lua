@@ -299,8 +299,11 @@ function OnCamoButtonClicked(button)
 		previousEntry.previewComponents.active.visibility = Visibility.FORCE_OFF
 		previousEntry.equipBuyComponents.active.visibility = Visibility.FORCE_OFF
 		
-		local sampleText = previousEntry.equipBuyComponents.text[1]
-		if string.find(sampleText.text, "Equipped") then
+		--local sampleText = previousEntry.equipBuyComponents.text[1]
+		
+		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
+		
+		if playerCamoData[camoID].purchased then
 			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equip")
 		end
 	end
@@ -312,7 +315,6 @@ function OnCamoButtonClicked(button)
 		
 		Events.Broadcast("PREVIEW_SKIN", camoID)
 	else 
-	
 		buttonEntry.previewComponents.active.visibility = Visibility.FORCE_OFF
 	
 		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
@@ -325,8 +327,7 @@ function OnCamoButtonClicked(button)
 			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equipped")
 			buttonEntry.equipBuyComponents.active.visibility = Visibility.FORCE_ON
 			ReliableEvents.BroadcastToServer("EQUIP_SKIN", selectedTank, camoID)
-		end	
-
+		end
 	end
 	
 	selectedCamo = camoID
