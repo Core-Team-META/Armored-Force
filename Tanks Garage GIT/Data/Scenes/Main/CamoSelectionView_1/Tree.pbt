@@ -92,6 +92,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:CAMO_TEMPLATE"
+      AssetReference {
+        Id: 8607889401878092637
+      }
+    }
+    Overrides {
       Name: "cs:StatsContainer"
       ObjectReference {
         SelfId: 16475119061964287367
@@ -143,6 +149,12 @@ Objects {
       Name: "cs:CamoContainer"
       ObjectReference {
         SelfId: 6009760356381010264
+      }
+    }
+    Overrides {
+      Name: "cs:GAMEHELPER_SkinsClient"
+      ObjectReference {
+        SelfId: 9828983140129475871
       }
     }
     Overrides {

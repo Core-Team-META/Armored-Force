@@ -114,7 +114,6 @@ function OnSkinDataChange(object, property)
 
 end
 
-
 function RetrieveData(player)
 
 	while true do
@@ -202,6 +201,12 @@ function SetTankSkinDataForClient(player, dataString)
    	--UTIL_API.TablePrint(skinsTable)
 end
 
+function GetTankSkinData(tankID)
+
+	return allIndividualSkins[tankID]
+
+end
+
 function Initialize()
 
 	local individualSkinGroups = individualSkinInfo:GetChildren()
@@ -218,6 +223,7 @@ function Initialize()
 			skinEntry.cost = skin:GetCustomProperty("Cost")
 			skinEntry.resource = skin:GetCustomProperty("Resource")
 			skinEntry.name = skin:GetCustomProperty("SkinName")
+			skinEntry.coordinates = skin:GetCustomProperty("PreviewImageLocation")
 			skinEntry.newMaterial = skin:GetCustomProperty("NewMaterial")
 			skinEntry.useMaterial = skin:GetCustomProperty("UseNewMaterial")
 			skinEntry.newColor = skin:GetCustomProperty("NewColor")
