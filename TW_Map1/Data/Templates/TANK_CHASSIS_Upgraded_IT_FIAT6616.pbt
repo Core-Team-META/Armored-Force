@@ -55,15 +55,15 @@ Assets {
             X: 50
             Z: 60
           }
-          MaxSpeed: 2600
-          AccelerationRate: 3100
+          MaxSpeed: 3800
+          AccelerationRate: 4400
           DecelerationRate: 15
           BrakeStrength: 15
-          TireFriction: 10
+          TireFriction: 2
           CenterOfMassOFfset {
             Z: 20
           }
-          GravityScale: 1
+          GravityScale: 2.6
           CoastBrakeStrength: 10
           FourWheeledVehicle {
             FrontLeftWheel {
