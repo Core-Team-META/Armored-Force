@@ -1721,7 +1721,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -3300,7 +3304,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -4879,7 +4887,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -6458,7 +6470,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -8037,7 +8053,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -9616,7 +9636,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -11195,7 +11219,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -12774,7 +12802,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -14353,7 +14385,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -15932,7 +15968,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -17533,7 +17573,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -18979,7 +19023,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -20558,7 +20606,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -22137,7 +22189,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -23716,7 +23772,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -25295,7 +25355,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -26874,7 +26938,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -28453,7 +28521,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -30032,7 +30104,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -31611,7 +31687,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -33190,7 +33270,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -34769,7 +34853,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -36348,7 +36436,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -37927,7 +38019,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -39506,7 +39602,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -41085,7 +41185,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -42664,7 +42768,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -44243,7 +44351,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -45822,7 +45934,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -47401,7 +47517,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -48980,7 +49100,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -50559,7 +50683,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -52138,7 +52266,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {
@@ -53717,7 +53849,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Resource"
-      String: "Stock"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 0
     }
   }
   Collidable_v2 {

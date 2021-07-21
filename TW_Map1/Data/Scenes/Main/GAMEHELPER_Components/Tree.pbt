@@ -1,8 +1,8 @@
 Name: "GAMEHELPER_Components"
 RootId: 16867063847943140816
 Objects {
-  Id: 3070842507638348336
-  Name: "CamoSelectionView"
+  Id: 16234653781971653733
+  Name: "CamoSelection"
   Transform {
     Location {
       X: 120

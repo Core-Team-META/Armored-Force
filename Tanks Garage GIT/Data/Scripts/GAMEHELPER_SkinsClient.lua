@@ -68,6 +68,39 @@ function InitializeTankSkin(player)
 	
 end
 
+function ApplySkin(selectedSkin)
+
+	if not localPlayer.clientUserData.camoData then
+		RetrieveData(localPlayer)
+	end
+	
+	local camoTable = localPlayer.clientUserData.camoData
+	local vehicle = nil
+	local selectedTank = nil
+
+	if localPlayer.clientUserData.currentTankData then
+		selectedTank = localPlayer.clientUserData.currentTankData.id 
+		--print("initializing with current tank id")
+	elseif localPlayer.clientUserData.garageModel then
+		selectedTank = localPlayer.clientUserData.garageModel.id
+		--print("initializing with garage tank id")
+	end	
+	
+	--print(selectedSkin)
+	--print(selectedTank)
+		
+	if localPlayer.clientUserData.currentTankData then
+		vehicle = localPlayer.clientUserData.currentTankData.skin
+		SetSkinOnSpecificVehicle(localPlayer, vehicle, selectedTank, selectedSkin)
+	end
+	
+	if localPlayer.clientUserData.garageModel then
+		vehicle = localPlayer.clientUserData.garageModel.reference
+		SetSkinOnSpecificVehicle(localPlayer, vehicle, selectedTank, selectedSkin)
+	end
+	
+end
+
 function SetSkinOnSpecificVehicle(player, vehicle, tankID, skinID)
 		
 	local changeThisGeo = GetChangeableGeo(vehicle)
@@ -111,6 +144,8 @@ function OnSkinDataChange(object, property)
 	SetTankSkinDataForClient(player, dataString)
 	
 	InitializeTankSkin(player)
+	
+	Events.Broadcast("RENEW_SKIN_DATA")
 
 end
 
@@ -275,9 +310,10 @@ end
 Initialize()
 RetrieveData(localPlayer)
 
-localPlayer.bindingPressedEvent:Connect(OnBindingPressed)
+--localPlayer.bindingPressedEvent:Connect(OnBindingPressed)
 Game.playerJoinedEvent:Connect(RetrieveData)
 Game.playerLeftEvent:Connect(DisconnectListener)
+Events.Connect("PREVIEW_SKIN", ApplySkin)
 Events.Connect("INITIALIZE_SKIN", InitializeTankSkin)
 
 Task.Wait(1)
