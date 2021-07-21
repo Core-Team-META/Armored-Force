@@ -51,6 +51,14 @@ local function CompareScore(a, b)
     return tonumber(a.score) > tonumber(b.score)
 end
 
+local function UpdatePlayerScore()
+    MTD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("MatchTanksDestroyed")
+    MDD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("MatchDamageDealt")
+    LTTD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeTanksDestroyed")
+    LTDD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeDamageDealt")
+    LTWR_RATE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeWinrate")
+end
+
 local function HideAllStates()
     leaderBoards.match.active.visibility = Visibility.FORCE_OFF
     leaderBoards.total.active.visibility = Visibility.FORCE_OFF
@@ -124,11 +132,7 @@ function ToggleLeaderboards(button)
         LEADERBOARDS_MATCH_CONTAINER.visibility = Visibility.FORCE_ON
         leaderBoards.match.active.visibility = Visibility.FORCE_ON
     end
-    MTD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("MatchTanksDestroyed")
-    MDD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("MatchDamageDealt")
-    LTTD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeTanksDestroyed")
-    LTDD_SCORE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeDamageDealt")
-    LTWR_RATE.text = "YOUR SCORE: " .. LOCAL_PLAYER:GetResource("LifetimeWinrate")
+    UpdatePlayerScore()
 end
 
 function Init()
@@ -144,6 +148,7 @@ function Init()
             propertyTbl[key] = UTIL.ConvertStringToTable(value)
         end
     end
+    UpdatePlayerScore()
 end
 
 function OnNetworkChanged(object, string)
@@ -177,3 +182,4 @@ for key, value in pairs(NETWORKED:GetCustomProperties()) do
     end
 end
 BuildMatchLeaderBoards()
+UpdatePlayerScore()
