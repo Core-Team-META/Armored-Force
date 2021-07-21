@@ -59,11 +59,11 @@ Assets {
           }
           Overrides {
             Name: "cs:ReloadSpeed"
-            Float: 8
+            Float: 10
           }
           Overrides {
             Name: "cs:UpgradedReload"
-            Float: 7
+            Float: 9
           }
           Overrides {
             Name: "cs:ProjectileSpeed"
@@ -79,7 +79,7 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 550
+            Int: 1000
           }
           Overrides {
             Name: "cs:HorizontalCannonAngles"
@@ -99,7 +99,7 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 540
+            Int: 950
           }
           Overrides {
             Name: "cs:HitPoints"
