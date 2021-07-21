@@ -275,6 +275,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -347,6 +351,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -421,6 +429,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -493,6 +505,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -567,6 +583,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -639,6 +659,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -713,6 +737,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -786,6 +814,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -856,6 +888,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -930,6 +966,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1002,6 +1042,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -1076,6 +1120,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1148,6 +1196,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1219,6 +1271,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -1293,6 +1349,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1366,6 +1426,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1437,6 +1501,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -1511,6 +1579,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1582,6 +1654,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -1655,6 +1731,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -1858,6 +1938,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1930,6 +2014,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -2004,6 +2092,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2076,6 +2168,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -2150,6 +2246,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2222,6 +2322,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -2296,6 +2400,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2369,6 +2477,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2439,6 +2551,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -2513,6 +2629,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2585,6 +2705,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -2659,6 +2783,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2731,6 +2859,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2802,6 +2934,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -2876,6 +3012,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2949,6 +3089,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3020,6 +3164,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -3094,6 +3242,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3165,6 +3317,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -3238,6 +3394,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -3441,6 +3601,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3513,6 +3677,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -3587,6 +3755,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3659,6 +3831,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -3733,6 +3909,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3805,6 +3985,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -3879,6 +4063,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3952,6 +4140,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4022,6 +4214,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -4096,6 +4292,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4168,6 +4368,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -4242,6 +4446,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4314,6 +4522,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4385,6 +4597,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -4459,6 +4675,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4532,6 +4752,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4603,6 +4827,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -4677,6 +4905,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4748,6 +4980,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -4821,6 +5057,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -5024,6 +5264,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5096,6 +5340,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -5170,6 +5418,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5242,6 +5494,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -5316,6 +5572,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5388,6 +5648,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -5462,6 +5726,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5535,6 +5803,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5605,6 +5877,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -5679,6 +5955,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5751,6 +6031,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -5825,6 +6109,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5897,6 +6185,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5968,6 +6260,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -6042,6 +6338,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6115,6 +6415,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6186,6 +6490,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -6260,6 +6568,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6331,6 +6643,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -6404,6 +6720,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -6607,6 +6927,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6679,6 +7003,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -6753,6 +7081,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6825,6 +7157,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -6899,6 +7235,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6971,6 +7311,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -7045,6 +7389,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7118,6 +7466,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7188,6 +7540,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -7262,6 +7618,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7334,6 +7694,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -7408,6 +7772,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7480,6 +7848,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7551,6 +7923,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -7625,6 +8001,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7698,6 +8078,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7769,6 +8153,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -7843,6 +8231,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7914,6 +8306,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -7987,6 +8383,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -8190,6 +8590,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8262,6 +8666,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -8336,6 +8744,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8408,6 +8820,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -8482,6 +8898,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8554,6 +8974,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -8628,6 +9052,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8701,6 +9129,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8771,6 +9203,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -8845,6 +9281,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8917,6 +9357,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -8991,6 +9435,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9063,6 +9511,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9134,6 +9586,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -9208,6 +9664,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9281,6 +9741,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9352,6 +9816,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -9426,6 +9894,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9497,6 +9969,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -9570,6 +10046,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -9773,6 +10253,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9845,6 +10329,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -9919,6 +10407,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9991,6 +10483,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -10065,6 +10561,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10137,6 +10637,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -10211,6 +10715,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10284,6 +10792,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10354,6 +10866,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -10428,6 +10944,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10500,6 +11020,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -10574,6 +11098,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10646,6 +11174,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10717,6 +11249,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -10791,6 +11327,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10864,6 +11404,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10935,6 +11479,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -11009,6 +11557,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11080,6 +11632,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -11153,6 +11709,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -11356,6 +11916,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11428,6 +11992,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -11502,6 +12070,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11574,6 +12146,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -11648,6 +12224,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11720,6 +12300,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -11794,6 +12378,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11867,6 +12455,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -11937,6 +12529,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -12011,6 +12607,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12083,6 +12683,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -12157,6 +12761,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12229,6 +12837,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12300,6 +12912,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -12374,6 +12990,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12447,6 +13067,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12518,6 +13142,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -12592,6 +13220,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12663,6 +13295,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -12736,6 +13372,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -12939,6 +13579,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13011,6 +13655,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -13085,6 +13733,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13157,6 +13809,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -13231,6 +13887,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13303,6 +13963,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -13377,6 +14041,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13450,6 +14118,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13520,6 +14192,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -13594,6 +14270,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13666,6 +14346,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -13740,6 +14424,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13812,6 +14500,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13883,6 +14575,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -13957,6 +14653,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14030,6 +14730,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14101,6 +14805,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -14175,6 +14883,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14246,6 +14958,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -14319,6 +15035,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -14522,6 +15242,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14594,6 +15318,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -14668,6 +15396,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14740,6 +15472,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -14814,6 +15550,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14886,6 +15626,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -14960,6 +15704,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15033,6 +15781,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15103,6 +15855,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -15177,6 +15933,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15249,6 +16009,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -15323,6 +16087,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15395,6 +16163,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15466,6 +16238,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -15540,6 +16316,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15613,6 +16393,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15684,6 +16468,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -15758,6 +16546,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15829,6 +16621,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -15902,6 +16698,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -16127,6 +16927,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16199,6 +17003,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -16273,6 +17081,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16345,6 +17157,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -16419,6 +17235,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16491,6 +17311,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -16565,6 +17389,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16638,6 +17466,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16708,6 +17540,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -16782,6 +17618,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -16854,6 +17694,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -16928,6 +17772,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17000,6 +17848,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17071,6 +17923,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -17145,6 +18001,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17218,6 +18078,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17289,6 +18153,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -17363,6 +18231,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17434,6 +18306,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -17507,6 +18383,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -17645,6 +18525,10 @@ Objects {
       Name: "cs:SkinID"
       String: "21"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17710,6 +18594,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "20"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -17777,6 +18665,10 @@ Objects {
       Name: "cs:SkinID"
       String: "19"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17842,6 +18734,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "18"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -17909,6 +18805,10 @@ Objects {
       Name: "cs:SkinID"
       String: "17"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17974,6 +18874,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "16"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -18041,6 +18945,10 @@ Objects {
       Name: "cs:SkinID"
       String: "15"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18107,6 +19015,10 @@ Objects {
       Name: "cs:SkinID"
       String: "14"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18170,6 +19082,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "13"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -18237,6 +19153,10 @@ Objects {
       Name: "cs:SkinID"
       String: "12"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18302,6 +19222,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "11"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -18369,6 +19293,10 @@ Objects {
       Name: "cs:SkinID"
       String: "10"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18434,6 +19362,10 @@ Objects {
       Name: "cs:SkinID"
       String: "09"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18498,6 +19430,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "08"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -18565,6 +19501,10 @@ Objects {
       Name: "cs:SkinID"
       String: "07"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18631,6 +19571,10 @@ Objects {
       Name: "cs:SkinID"
       String: "06"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18695,6 +19639,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "05"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -18761,6 +19709,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "04"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -18892,6 +19844,10 @@ Objects {
       Name: "cs:SkinID"
       String: "02"
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -18957,6 +19913,10 @@ Objects {
     Overrides {
       Name: "cs:SkinID"
       String: "01"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -19160,6 +20120,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19232,6 +20196,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -19306,6 +20274,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19378,6 +20350,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -19452,6 +20428,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19524,6 +20504,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -19598,6 +20582,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19671,6 +20659,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19741,6 +20733,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -19815,6 +20811,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19887,6 +20887,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -19961,6 +20965,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20033,6 +21041,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20104,6 +21116,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -20178,6 +21194,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20251,6 +21271,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20322,6 +21346,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -20396,6 +21424,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20467,6 +21499,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -20540,6 +21576,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -20743,6 +21783,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20815,6 +21859,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -20889,6 +21937,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -20961,6 +22013,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -21035,6 +22091,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21107,6 +22167,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -21181,6 +22245,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21254,6 +22322,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21324,6 +22396,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -21398,6 +22474,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21470,6 +22550,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -21544,6 +22628,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21616,6 +22704,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21687,6 +22779,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -21761,6 +22857,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21834,6 +22934,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21905,6 +23009,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -21979,6 +23087,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22050,6 +23162,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -22123,6 +23239,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -22326,6 +23446,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22398,6 +23522,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -22472,6 +23600,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22544,6 +23676,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -22618,6 +23754,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22690,6 +23830,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -22764,6 +23908,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22837,6 +23985,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22907,6 +24059,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -22981,6 +24137,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23053,6 +24213,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -23127,6 +24291,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23199,6 +24367,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23270,6 +24442,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -23344,6 +24520,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23417,6 +24597,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23488,6 +24672,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -23562,6 +24750,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23633,6 +24825,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -23706,6 +24902,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -23909,6 +25109,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -23981,6 +25185,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -24055,6 +25263,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24127,6 +25339,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -24201,6 +25417,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24273,6 +25493,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -24347,6 +25571,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24420,6 +25648,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24490,6 +25722,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -24564,6 +25800,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24636,6 +25876,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -24710,6 +25954,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24782,6 +26030,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24853,6 +26105,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -24927,6 +26183,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25000,6 +26260,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25071,6 +26335,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -25145,6 +26413,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25216,6 +26488,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -25289,6 +26565,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -25492,6 +26772,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25564,6 +26848,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -25638,6 +26926,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25710,6 +27002,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -25784,6 +27080,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25856,6 +27156,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -25930,6 +27234,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26003,6 +27311,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26073,6 +27385,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -26147,6 +27463,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26219,6 +27539,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -26293,6 +27617,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26365,6 +27693,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26436,6 +27768,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -26510,6 +27846,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26583,6 +27923,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26654,6 +27998,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -26728,6 +28076,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26799,6 +28151,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -26872,6 +28228,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -27075,6 +28435,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27147,6 +28511,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -27221,6 +28589,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27293,6 +28665,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -27367,6 +28743,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27439,6 +28819,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -27513,6 +28897,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27586,6 +28974,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27656,6 +29048,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -27730,6 +29126,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27802,6 +29202,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -27876,6 +29280,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27948,6 +29356,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28019,6 +29431,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -28093,6 +29509,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28166,6 +29586,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28237,6 +29661,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -28311,6 +29739,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28382,6 +29814,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -28455,6 +29891,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -28658,6 +30098,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28730,6 +30174,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -28804,6 +30252,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28876,6 +30328,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -28950,6 +30406,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29022,6 +30482,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -29096,6 +30560,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29169,6 +30637,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29239,6 +30711,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -29313,6 +30789,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29385,6 +30865,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -29459,6 +30943,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29531,6 +31019,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29602,6 +31094,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -29676,6 +31172,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29749,6 +31249,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29820,6 +31324,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -29894,6 +31402,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29965,6 +31477,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -30038,6 +31554,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -30241,6 +31761,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30313,6 +31837,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -30387,6 +31915,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30459,6 +31991,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -30533,6 +32069,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30605,6 +32145,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -30679,6 +32223,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30752,6 +32300,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30822,6 +32374,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -30896,6 +32452,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30968,6 +32528,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -31042,6 +32606,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31114,6 +32682,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31185,6 +32757,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -31259,6 +32835,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31332,6 +32912,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31403,6 +32987,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -31477,6 +33065,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31548,6 +33140,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -31621,6 +33217,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -31824,6 +33424,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31896,6 +33500,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -31970,6 +33578,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32042,6 +33654,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -32116,6 +33732,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32188,6 +33808,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -32262,6 +33886,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32335,6 +33963,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32405,6 +34037,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -32479,6 +34115,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32551,6 +34191,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -32625,6 +34269,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32697,6 +34345,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32768,6 +34420,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -32842,6 +34498,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32915,6 +34575,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -32986,6 +34650,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -33060,6 +34728,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33131,6 +34803,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -33204,6 +34880,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -33407,6 +35087,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33479,6 +35163,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -33553,6 +35241,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33625,6 +35317,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -33699,6 +35395,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33771,6 +35471,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -33845,6 +35549,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33918,6 +35626,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -33988,6 +35700,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -34062,6 +35778,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34134,6 +35854,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -34208,6 +35932,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34280,6 +36008,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34351,6 +36083,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -34425,6 +36161,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34498,6 +36238,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34569,6 +36313,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -34643,6 +36391,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34714,6 +36466,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -34787,6 +36543,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -34990,6 +36750,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35062,6 +36826,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -35136,6 +36904,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35208,6 +36980,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -35282,6 +37058,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35354,6 +37134,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -35428,6 +37212,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35501,6 +37289,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35571,6 +37363,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -35645,6 +37441,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35717,6 +37517,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -35791,6 +37595,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35863,6 +37671,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35934,6 +37746,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -36008,6 +37824,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36081,6 +37901,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36152,6 +37976,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -36226,6 +38054,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36297,6 +38129,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -36370,6 +38206,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -36573,6 +38413,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36645,6 +38489,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -36719,6 +38567,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36791,6 +38643,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -36865,6 +38721,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36937,6 +38797,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -37011,6 +38875,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37084,6 +38952,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37154,6 +39026,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -37228,6 +39104,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37300,6 +39180,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -37374,6 +39258,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37446,6 +39334,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37517,6 +39409,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -37591,6 +39487,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37664,6 +39564,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37735,6 +39639,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -37809,6 +39717,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -37880,6 +39792,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -37953,6 +39869,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -38156,6 +40076,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38228,6 +40152,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -38302,6 +40230,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38374,6 +40306,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -38448,6 +40384,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38520,6 +40460,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -38594,6 +40538,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38667,6 +40615,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38737,6 +40689,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -38811,6 +40767,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38883,6 +40843,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -38957,6 +40921,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39029,6 +40997,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39100,6 +41072,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -39174,6 +41150,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39247,6 +41227,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39318,6 +41302,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -39392,6 +41380,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39463,6 +41455,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -39536,6 +41532,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -39739,6 +41739,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39811,6 +41815,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -39885,6 +41893,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39957,6 +41969,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -40031,6 +42047,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40103,6 +42123,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -40177,6 +42201,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40250,6 +42278,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40320,6 +42352,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -40394,6 +42430,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40466,6 +42506,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -40540,6 +42584,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40612,6 +42660,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40683,6 +42735,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -40757,6 +42813,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40830,6 +42890,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -40901,6 +42965,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -40975,6 +43043,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41046,6 +43118,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -41119,6 +43195,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -41322,6 +43402,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41394,6 +43478,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -41468,6 +43556,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41540,6 +43632,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -41614,6 +43710,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41686,6 +43786,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -41760,6 +43864,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41833,6 +43941,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41903,6 +44015,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -41977,6 +44093,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42049,6 +44169,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -42123,6 +44247,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42195,6 +44323,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42266,6 +44398,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -42340,6 +44476,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42413,6 +44553,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42484,6 +44628,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -42558,6 +44706,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42629,6 +44781,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -42702,6 +44858,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -42905,6 +45065,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42977,6 +45141,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -43051,6 +45219,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43123,6 +45295,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -43197,6 +45373,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43269,6 +45449,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -43343,6 +45527,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43416,6 +45604,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43486,6 +45678,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -43560,6 +45756,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43632,6 +45832,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -43706,6 +45910,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43778,6 +45986,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43849,6 +46061,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -43923,6 +46139,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43996,6 +46216,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44067,6 +46291,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -44141,6 +46369,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44212,6 +46444,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -44285,6 +46521,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -44488,6 +46728,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44560,6 +46804,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -44634,6 +46882,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44706,6 +46958,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -44780,6 +47036,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44852,6 +47112,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -44926,6 +47190,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44999,6 +47267,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45069,6 +47341,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -45143,6 +47419,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45215,6 +47495,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -45289,6 +47573,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45361,6 +47649,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45432,6 +47724,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -45506,6 +47802,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45579,6 +47879,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45650,6 +47954,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -45724,6 +48032,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -45795,6 +48107,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -45868,6 +48184,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -46071,6 +48391,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46143,6 +48467,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -46217,6 +48545,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46289,6 +48621,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -46363,6 +48699,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46435,6 +48775,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -46509,6 +48853,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46582,6 +48930,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46652,6 +49004,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -46726,6 +49082,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46798,6 +49158,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -46872,6 +49236,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46944,6 +49312,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47015,6 +49387,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -47089,6 +49465,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47162,6 +49542,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47233,6 +49617,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -47307,6 +49695,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47378,6 +49770,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -47451,6 +49847,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -47654,6 +50054,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47726,6 +50130,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -47800,6 +50208,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47872,6 +50284,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -47946,6 +50362,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48018,6 +50438,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -48092,6 +50516,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48165,6 +50593,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48235,6 +50667,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -48309,6 +50745,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48381,6 +50821,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -48455,6 +50899,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48527,6 +50975,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48598,6 +51050,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -48672,6 +51128,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48745,6 +51205,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48816,6 +51280,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -48890,6 +51358,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -48961,6 +51433,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -49034,6 +51510,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -49237,6 +51717,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49309,6 +51793,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -49383,6 +51871,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49455,6 +51947,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -49529,6 +52025,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49601,6 +52101,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -49675,6 +52179,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49748,6 +52256,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49818,6 +52330,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -49892,6 +52408,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49964,6 +52484,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -50038,6 +52562,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50110,6 +52638,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50181,6 +52713,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -50255,6 +52791,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50328,6 +52868,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50399,6 +52943,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -50473,6 +53021,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50544,6 +53096,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -50617,6 +53173,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -50820,6 +53380,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50892,6 +53456,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -50966,6 +53534,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51038,6 +53610,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -51112,6 +53688,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51184,6 +53764,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -51258,6 +53842,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51331,6 +53919,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51401,6 +53993,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -51475,6 +54071,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51547,6 +54147,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -51621,6 +54225,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51693,6 +54301,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51764,6 +54376,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -51838,6 +54454,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51911,6 +54531,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51982,6 +54606,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -52056,6 +54684,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52127,6 +54759,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -52200,6 +54836,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -52403,6 +55043,10 @@ Objects {
         Y: 1
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52475,6 +55119,10 @@ Objects {
         X: 4
         Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8500
     }
   }
   Collidable_v2 {
@@ -52549,6 +55197,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 8000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52621,6 +55273,10 @@ Objects {
         X: 2
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -52695,6 +55351,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52767,6 +55427,10 @@ Objects {
         X: 4
         Y: 2
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 7000
     }
   }
   Collidable_v2 {
@@ -52841,6 +55505,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52914,6 +55582,10 @@ Objects {
         Y: 3
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -52984,6 +55656,10 @@ Objects {
         X: 2
         Y: 3
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 6000
     }
   }
   Collidable_v2 {
@@ -53058,6 +55734,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 5000
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53130,6 +55810,10 @@ Objects {
         X: 5
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
     }
   }
   Collidable_v2 {
@@ -53204,6 +55888,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53276,6 +55964,10 @@ Objects {
         Y: 2
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 4500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53347,6 +56039,10 @@ Objects {
         X: 2
         Y: 4
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -53421,6 +56117,10 @@ Objects {
         Y: 4
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53494,6 +56194,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53565,6 +56269,10 @@ Objects {
         X: 2
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
     }
   }
   Collidable_v2 {
@@ -53639,6 +56347,10 @@ Objects {
         Y: 5
       }
     }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 3500
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -53710,6 +56422,10 @@ Objects {
         X: 5
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
@@ -53783,6 +56499,10 @@ Objects {
         X: 4
         Y: 5
       }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 2500
     }
   }
   Collidable_v2 {
