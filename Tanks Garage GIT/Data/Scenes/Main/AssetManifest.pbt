@@ -187,6 +187,19 @@ Assets {
   }
 }
 Assets {
+  Id: 4969849339560233252
+  Name: "PlayerSharedStorage"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8cd7b4910d07447a8fac4ca5a361a105"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 4413664130009284128
   Name: "teststorage1"
   PlatformAssetType: 23
