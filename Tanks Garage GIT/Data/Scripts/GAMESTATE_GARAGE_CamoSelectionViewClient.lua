@@ -1,5 +1,6 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local camoEntryTemplate = script:GetCustomProperty("CAMO_TEMPLATE")
 local statsContainer = script:GetCustomProperty("StatsContainer"):WaitForObject()
 local camoViewUI = script:GetCustomProperty("CamoViewUI"):WaitForObject()
 
@@ -11,6 +12,7 @@ local alliesContainer = script:GetCustomProperty("AlliesContainer"):WaitForObjec
 local universalButtonAssets = script:GetCustomProperty("UniversalButtonAssets"):WaitForObject()
 local individualButtonAssets = script:GetCustomProperty("IndividualButtonAssets"):WaitForObject()
 local camoContainer = script:GetCustomProperty("CamoContainer"):WaitForObject()
+local skinsClient = script:GetCustomProperty("GAMEHELPER_SkinsClient"):WaitForObject()
 
 local unlockedColor = script:GetCustomProperty("UnlockedColor")
 local lockedColor = script:GetCustomProperty("LockedColor")
@@ -74,6 +76,7 @@ function ToggleThisComponent(requestedPlayerState)
 		camoViewUI.isEnabled = true
 		statsContainer.visibility = Visibility.FORCE_OFF
 		AssignPreviewText()
+		RepopulateCamoEntries()
 	else
 		Task.Wait(0.1)
 		DisableThisComponent()
@@ -100,6 +103,7 @@ function InitializeComponent()
 	InitializeMainButton(universalButtonComponents, universalButtonAssets, "UNIVERSAL")
 	
 	OnMainButtonClicked(alliesButtonComponents.button)
+	OnMainButtonClicked(individualButtonComponents.button)
 	InitializeTankButtons()
 	
 end
@@ -218,6 +222,8 @@ function OnTankButtonClicked(button)
 	tankEntries[selectedTank].previewText.text = "Previewing Tank"
 	Events.Broadcast("CHANGE_EQUIPPED_TANK", selectedTank)
 	
+	RepopulateCamoEntries()
+	
 	SFX_CLICK:Play()
 end
 
@@ -234,6 +240,7 @@ function OnTankButtonUnHovered(button)
 end
 
 function InitializeTankButtons()
+
 	local allAxis = axisContainer:GetChildren()
 	local allTanks = alliesContainer:GetChildren()
 	
@@ -255,6 +262,50 @@ function InitializeTankButtons()
 		tankEntry.button.unhoveredEvent:Connect(OnTankButtonUnHovered)
 		
 		tankEntries[tankID] = tankEntry
+	end
+
+end
+
+function RepopulateCamoEntries()
+	
+	if camoEntries then
+	
+		for _, entry in pairs(camoEntries) do
+			entry.camoUI:Destroy()
+			entry.camoUI = nil
+			
+			entry = nil
+		end
+		
+	end
+	
+	if not localPlayer.clientUserData.camoData then
+		return
+	end
+	
+	local camoList = skinsClient.context.GetTankSkinData(selectedTank)
+	local position = 0
+	
+	for skinID, camo in pairs(camoList) do
+			
+		local camoEntry = {}
+		camoEntry.camoUI = World.SpawnAsset(camoEntryTemplate, {parent = camoContainer})
+		camoEntry.camoUI.x = 0
+		camoEntry.camoUI.y = position * 190 + 5
+		
+		local camoTitle = camoEntry.camoUI:GetCustomProperty("CamoName"):WaitForObject()
+		camoTitle.text = camo.name
+		
+		local previewImage = camoEntry.camoUI:GetCustomProperty("PreviewImage"):WaitForObject()
+		previewImage.x = -(math.abs(camo.coordinates.x) - 1) * 240
+		previewImage.y = -(math.abs(camo.coordinates.y) - 1) * 140
+		
+		local previewAssets = camoEntry.camoUI:GetCustomProperty("PreviewButtonAssets"):WaitForObject()
+		local equipBuyAssets = camoEntry.camoUI:GetCustomProperty("EquipBuyButtonAssets"):WaitForObject()
+		
+		camoEntries[skinID] = camoentry
+		
+		position = position + 1
 	end
 
 end
