@@ -1,3 +1,5 @@
+local AIPlayer = require(script:GetCustomProperty("_AIPlayer"))
+
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local mainManagerServer = script:GetCustomProperty("MainManagerServer"):WaitForObject()
 local tankGarage = script:GetCustomProperty("TANK_VP_TankGarage"):WaitForObject()
@@ -98,6 +100,8 @@ function GivePlayerEquipment(player)
 end
 
 
+
+
 function SpawnAITank(position)
 	print("Spawning an AI tank...")
 	--player.isVisible = false
@@ -113,12 +117,15 @@ function SpawnAITank(position)
 		id = "0" .. tostring(resourceID)
 	end
 	
+	--[[
 	local newAI = {
 		GetHealth = function() return 100 end,
 		GetWorldPosition = function() return position end,
 		GetWorldRotation = function() return Rotation.New() end,
 		serverUserData = {},
-	}
+	}]]
+	local newAI = AIPlayer.New()
+	newAI:SetWorldPosition(position)
 	local playerPosition = position
 	local playerRotation = Rotation.New()
 	equippedTank[newAI] = World.SpawnAsset(GetEquippedTankTemplate(nil, -1), {parent = tankGarage, position = playerPosition, rotation = playerRotation})

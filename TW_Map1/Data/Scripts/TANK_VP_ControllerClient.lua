@@ -121,7 +121,10 @@ function SetClientData()
 		return
 	end
 
-	if not driver.clientUserData.currentTankData then
+	if driver.clientUserData == nil then
+		driver.clientUserData = {}
+	end
+	if driver.clientUserData.currentTankData == nil then
 		driver.clientUserData.currentTankData = {}
 	end
 	

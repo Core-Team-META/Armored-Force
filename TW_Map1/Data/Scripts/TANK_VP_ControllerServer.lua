@@ -120,6 +120,23 @@ function GetDriver()
 
 end
 
+
+
+
+function RoboDriver(vehicle, params)
+	
+	params.isHandbrakeEngaged = false
+	params.throttleInput = 1.0
+	params.steeringInput = 0.5
+
+end
+
+
+
+--propVehicle.serverMovementHook:Connect(RoboDriver)
+
+
+
 function AssignDriver(newDriver, _isAI)
 	isAI = _isAI or false
 	print("assigning a driver.  AI?", isAI)
@@ -159,6 +176,8 @@ function AssignDriver(newDriver, _isAI)
 
 	if not isAI then
 		chassis:SetDriver(driver)
+	else
+		chassis.serverMovementHook:Connect(RoboDriver)
 	end
 	print("Checkpoint 4", isAI)
 
@@ -202,11 +221,7 @@ function AssignDriver(newDriver, _isAI)
 
 	script:SetNetworkedCustomProperty("ChassisReference", chassis)
 	script:SetNetworkedCustomProperty("HitboxReference", hitbox)
-	if not isAI then
-		script:SetNetworkedCustomProperty("DriverID", driver.id)
-	else
-		script:SetNetworkedCustomProperty("DriverID", "AI_DRIVER")
-	end
+	script:SetNetworkedCustomProperty("DriverID", driver.id)
 	
 	for _, t in pairs(hitbox:FindDescendantsByType("Trigger")) do
 	 	armorImpactListeners[t] = t.beginOverlapEvent:Connect(OnArmorHit)
@@ -461,10 +476,9 @@ function ProjectileExpired(expiredProjectile)
 end
 
 function OnArmorHit(trigger, other)
-	
 	if other.type == "Projectile" then
 		local enemyPlayer = other.owner
-		
+
 		if other.serverUserData.hitOnce then
 			return
 		end
