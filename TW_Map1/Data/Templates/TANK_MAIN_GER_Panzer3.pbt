@@ -79,7 +79,7 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 60
+            Int: 80
           }
           Overrides {
             Name: "cs:HorizontalCannonAngles"
@@ -87,7 +87,7 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 50
+            Int: 65
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
@@ -107,11 +107,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 550
+            Int: 600
           }
           Overrides {
             Name: "cs:UpgradedHitPoints"
-            Int: 650
+            Int: 700
           }
           Overrides {
             Name: "cs:Identifier"

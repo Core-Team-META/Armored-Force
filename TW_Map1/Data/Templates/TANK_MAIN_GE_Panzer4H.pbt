@@ -79,7 +79,7 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 130
+            Int: 225
           }
           Overrides {
             Name: "cs:HorizontalCannonAngles"
@@ -120,6 +120,10 @@ Assets {
           Overrides {
             Name: "cs:ViewRange"
             Int: 40000
+          }
+          Overrides {
+            Name: "cs:DamagePerShot"
+            Int: 200
           }
         }
         WantsNetworking: true
