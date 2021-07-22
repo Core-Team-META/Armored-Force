@@ -389,6 +389,9 @@ end
 --	Updates spectate mode if camera changes, death/respawn state, and team
 function Tick()
 	if(currentlySpectating) then
+		if currentlySpectating.isDead then
+			SpectateFirstPlayer()
+		end
 		if(LocalPlayer:GetActiveCamera() ~= PlayerCamera and LocalPlayer:GetActiveCamera() ~= FreecamCamera) then
 			ChangeSpectateMode(SpectateMode.NONE)
 		end
@@ -406,6 +409,8 @@ function Tick()
 	lpTeam = team
 
 	if(TEAM_SPECTATOR <= 0) then return end
+
+	
 
 	if(lpTeam == TEAM_SPECTATOR) then
 		if(currentlySpectating) then return end
