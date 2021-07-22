@@ -31,11 +31,11 @@ function OnPlayerJoined(player)
             SetNetworkData(storageData)
         end
     end
-    player:SetResource("MatchTanksDestroyed", storageData.playerResources.MTD or 0)
-    player:SetResource("MatchDamageDealt", storageData.playerResources.MDD or 0)
-    player:SetResource("LifetimeTanksDestroyed", storageData.playerResources.LTTD or 0)
-    player:SetResource("LifetimeDamageDealt", storageData.playerResources.LTDD or 0)
-    player:SetResource("LifetimeWinrate", storageData.playerResources.LTWR or 0)
+    player:SetResource("MatchTanksDestroyed", storageData and storageData.playerResources and storageData.playerResources.MTD or 0)
+    player:SetResource("MatchDamageDealt", storageData and storageData.playerResources and storageData.playerResources.MDD or 0)
+    player:SetResource("LifetimeTanksDestroyed", storageData and storageData.playerResources and storageData.playerResources.LTTD or 0)
+    player:SetResource("LifetimeDamageDealt", storageData and storageData.playerResources and storageData.playerResources.LTDD or 0)
+    player:SetResource("LifetimeWinrate", storageData and storageData.playerResources and storageData.playerResources.LTWR or 0)
 end
 
 function OnPlayerDeployed(player)
