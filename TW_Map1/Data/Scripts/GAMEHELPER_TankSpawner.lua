@@ -56,6 +56,8 @@ end
 
 function OnPlayerRespawned(player)
 
+	player:DisableRagdoll()
+	
 	--player.isVisible = false
 	Task.Wait(0.5)
 	
