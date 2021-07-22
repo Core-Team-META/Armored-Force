@@ -16,22 +16,34 @@ local X_OFFSET = 180
 
 function PopulateQuickSelectPanel()
     ClearPanel()
+    local dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
+    while not next(dailyTbl) do
+        Task.Wait()
+        dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
+    end
     local tankCount = 0
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-        if(tank.purchased) then           
+        if (tank.purchased) then
             local tankData = GetTankDataById(tank.id)
             local entry = World.SpawnAsset(TANK_TABLE_TEMPLATE, {parent = UIScrollPanel})
             entry.x = tankCount * X_OFFSET
             entry:FindDescendantByName("TANKNAME").text = tankData:GetCustomProperty("Name")
-            entry:FindDescendantByName("TANKTIER").text = tostring(tankData:GetCustomProperty("Tier")) .. " " .. tankData:GetCustomProperty("Type")
-            if(tankData:GetCustomProperty("Team") == "Allies") then
+            entry:FindDescendantByName("TANKTIER").text =
+                tostring(tankData:GetCustomProperty("Tier")) .. " " .. tankData:GetCustomProperty("Type")
+            if (tankData:GetCustomProperty("Team") == "Allies") then
                 entry:FindDescendantByName("ALLIES").visibility = Visibility.FORCE_ON
                 entry:FindDescendantByName("AXIS").visibility = Visibility.FORCE_OFF
             else
                 entry:FindDescendantByName("ALLIES").visibility = Visibility.FORCE_OFF
                 entry:FindDescendantByName("AXIS").visibility = Visibility.FORCE_ON
             end
+
             tankId = tankData:GetCustomProperty("ID")
+
+            if dailyTbl[tonumber(tankId)] == 1 then
+                entry:FindDescendantByName("2X_XP").visibility = Visibility.FORCE_OFF
+            end
+
             if tonumber(tankId) == LOCAL_PLAYER:GetResource("EquippedTank") then
                 entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_ON
             end
@@ -48,7 +60,7 @@ end
 
 function ClearPanel()
     for i, entry in ipairs(UIScrollPanel:GetChildren()) do
-        if(Object.IsValid(entry)) then
+        if (Object.IsValid(entry)) then
             entry:Destroy()
         end
     end
@@ -56,7 +68,7 @@ end
 
 function GetTankDataById(id)
     for i, entry in ipairs(TANK_LIST) do
-        if(entry:GetCustomProperty("ID") == id) then
+        if (entry:GetCustomProperty("ID") == id) then
             return entry
         end
     end
@@ -65,7 +77,9 @@ end
 function SelectTank(button)
     SFX_CLICK:Play()
     local id = string.sub(button.name, 1, 2)
-    if(tonumber(id) == LOCAL_PLAYER:GetResource("EquippedTank")) then return end
+    if (tonumber(id) == LOCAL_PLAYER:GetResource("EquippedTank")) then
+        return
+    end
 
     Events.Broadcast("QuickSelectTankChange")
     Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", id)
@@ -78,7 +92,7 @@ function ButtonHover(button)
     button.parent:FindDescendantByName("HOVER_STATE").visibility = Visibility.FORCE_ON
 end
 
-function ButtonUnhover(button)   
+function ButtonUnhover(button)
     button.parent:FindDescendantByName("HOVER_STATE").visibility = Visibility.FORCE_OFF
 end
 
