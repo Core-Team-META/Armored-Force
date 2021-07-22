@@ -513,6 +513,7 @@ function OnArmorHit(trigger, other)
 		local otherVehicleSpeed = other:GetVelocity().size
 		local thisVehicleSpeed = chassis:GetVelocity().size
 		
+		
 		local otherRotation = other:GetWorldRotation().z 
 		local thisRotation = chassis:GetWorldRotation().z
 		
@@ -520,17 +521,21 @@ function OnArmorHit(trigger, other)
 		
 		local netSpeed = 0
 		
+		print(rotationDifference)
+		
 		if rotationDifference < 90 then
 			netSpeed =math.abs(otherVehicleSpeed - thisVehicleSpeed)
+			print("collision angle less than 90")
 		else 
 			netSpeed = otherVehicleSpeed + thisVehicleSpeed
+			print("collision angle more than 90")
 		end
 		
-		if netSpeed < 500 then
+		if netSpeed < 400 then
 			return
 		end
 		
-		local ramDamage = (netSpeed + other.mass * 0.01)/500
+		local ramDamage = ((netSpeed + other.mass * 0.01) * thisVehicleSpeed)/ (400 * (thisVehicleSpeed + 1))
 		
 		if armorName == "HULLFRONT" then
 			ramDamage = ramDamage/2
@@ -540,23 +545,27 @@ function OnArmorHit(trigger, other)
 		
 		local damageDealt = Damage.New(ramDamage)
 		
-		damageDealt.sourcePlayer = enemyPlayer
+		damageDealt.sourcePlayer = driver
 		damageDealt.reason = DamageReason.COMBAT
-		--driver:ApplyDamage(damageDealt)
+		--enemyPlayer:ApplyDamage(damageDealt)
 
 		local attackData = {
-			object = driver,
+			object = enemyPlayer,
 			damage = damageDealt,
-			source = enemyPlayer,
+			source = driver,
 			position = nil,
 			rotation = nil,
 			tags = {id = "Projectile"}
 		}
 		COMBAT.ApplyDamage(attackData)
 		
+		if otherVehicleSpeed > thisVehicleSpeed then
+			return
+		end
+		
 		local possibleDamageState = math.random(100)
 				
-		if possibleDamageState > 50 then
+		if possibleDamageState > 20 then
 			return
 		end		
 		
