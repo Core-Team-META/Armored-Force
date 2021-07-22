@@ -1,3 +1,5 @@
+local LuaEvents = require(script:GetCustomProperty("_LuaEvents"))
+
 local AIPlayer = {}
 
 
@@ -20,7 +22,9 @@ function AIPlayer.New(team)
     rotation = Rotation.ZERO,
     serverUserData = {},
     id = string.format("AI_%d", GetNewId()),
-    team = team
+    team = team,
+    diedEvent = LuaEvents.New(),
+    listeners = {}
   }
 
   setmetatable(newAIPlayer, {
@@ -39,9 +43,57 @@ function AIPlayer:IsA(t)
 end
 
 
+--[[
+    local attackData = {
+      object = driver,
+      damage = damageDealt,
+      source = enemyPlayer,
+      position = nil,
+      rotation = nil,
+      tags = {id = "Example"}
+    }
+]]
+function AIPlayer:ApplyDamage(damageTable)
+  local wasAlive = self.health > 0
+  self.health = self.health - damageTable.damage.amount
+  if self.health < 0 then
+    self.health = 0
+    if wasAlive then
+      Task.Spawn(function()
+          Task.Wait()  -- This is important.  Death happens on the following frame.
+          self.diedEvent:Trigger(self)
+        end)
+    end
+  end
+  print("Took damage!  New health:", self.health)
+end
+
+
+function RoboDriver(vehicle, params)
+  
+  params.isHandbrakeEngaged = false
+  params.throttleInput = 1.0
+  params.steeringInput = 0.5
+
+end
+
+
+
+
 function AIPlayer:AssignToTank(tank)
   --print("assign to tank", tank.id, self)
   AIList[tank.id] = self
+  table.insert(self.listeners, tank.serverMovementHook:Connect(RoboDriver))
+
+end
+
+function AIPlayer:Destroy(tank)
+  AIList[tank.id] = nil
+  -- disconnect listeners
+  for k,v in pairs(self.listeners) do
+    v:Disconnect()
+  end
+  self.listeners = {}
 end
 
 function AIPlayer.FindAIDriver(tank)
@@ -73,5 +125,6 @@ end
 function AIPlayer:GetRotation()
   return self.rotation
 end
+
 
 return AIPlayer
