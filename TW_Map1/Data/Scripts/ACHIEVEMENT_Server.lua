@@ -51,6 +51,7 @@ local function OnResourceChanged(player, resName, resAmt)
 end
 
 local function PlayerKilled(player, target, weaponType, isHeadShot)
+   
     if player == target then
         return
     end
