@@ -117,7 +117,7 @@ function GetDriver()
 
 end
 
-function AssignDriver(newDriver)
+function AssignDriver(newDriver, playerStart)
 
 	if Object.IsValid(driver) or not Object.IsValid(newDriver) or not newDriver:IsA("Player") then
 		return
@@ -125,8 +125,15 @@ function AssignDriver(newDriver)
 	
 	Task.Wait()
 	
-	local newScriptPosition = newDriver:GetWorldPosition()
-	local newScriptRotation = newDriver:GetWorldRotation()
+	local baseForPosition = newDriver
+	
+	if playerStart then
+		--print("Using player start position")
+		baseForPosition = playerStart
+	end
+	
+	local newScriptPosition = baseForPosition:GetWorldPosition()
+	local newScriptRotation = baseForPosition:GetWorldRotation()
 	
 	local moreIdealPositionRaycast = World.Raycast(newScriptPosition + Vector3.UP * 1000, newScriptPosition - Vector3.UP * 1000, {ignorePlayers = true})
 	
@@ -134,7 +141,7 @@ function AssignDriver(newDriver)
 		newScriptPosition = moreIdealPositionRaycast:GetImpactPosition()
 	end
 	
-	newScriptPosition = newScriptPosition + Vector3.UP * 250
+	newScriptPosition = newScriptPosition + Vector3.UP * 500
 	
 	script:SetWorldPosition(newScriptPosition)
 	script:SetWorldRotation(newScriptRotation)
