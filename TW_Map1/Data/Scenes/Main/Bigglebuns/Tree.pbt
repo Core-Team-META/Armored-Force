@@ -39,22 +39,22 @@ Objects {
         Overrides {
           Name: "Anchor"
           Enum {
-            Value: "mc:euianchor:topleft"
+            Value: "mc:euianchor:bottomleft"
           }
         }
         Overrides {
           Name: "Dock"
           Enum {
-            Value: "mc:euianchor:topleft"
+            Value: "mc:euianchor:bottomleft"
           }
         }
         Overrides {
-          Name: "UIY"
-          Float: 45.142746
+          Name: "UIX"
+          Float: 692.167664
         }
         Overrides {
-          Name: "UIX"
-          Float: 28.2008705
+          Name: "UIY"
+          Float: 50.9288483
         }
       }
     }
@@ -68,22 +68,22 @@ Objects {
         Overrides {
           Name: "Anchor"
           Enum {
-            Value: "mc:euianchor:topleft"
+            Value: "mc:euianchor:bottomleft"
           }
         }
         Overrides {
           Name: "Dock"
           Enum {
-            Value: "mc:euianchor:topleft"
+            Value: "mc:euianchor:bottomleft"
           }
         }
         Overrides {
           Name: "UIX"
-          Float: 10.0888
+          Float: 674.079712
         }
         Overrides {
           Name: "UIY"
-          Float: 80.3942795
+          Float: 58.3373184
         }
       }
     }
@@ -93,13 +93,13 @@ Objects {
         Overrides {
           Name: "Anchor"
           Enum {
-            Value: "mc:euianchor:topleft"
+            Value: "mc:euianchor:bottomleft"
           }
         }
         Overrides {
           Name: "Dock"
           Enum {
-            Value: "mc:euianchor:topleft"
+            Value: "mc:euianchor:bottomleft"
           }
         }
       }
