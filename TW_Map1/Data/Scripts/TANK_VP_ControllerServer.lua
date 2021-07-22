@@ -125,14 +125,6 @@ end
 
 
 
-function RoboDriver(vehicle, params)
-	
-	params.isHandbrakeEngaged = false
-	params.throttleInput = 1.0
-	params.steeringInput = 0.5
-
-end
-
 
 
 --propVehicle.serverMovementHook:Connect(RoboDriver)
@@ -180,7 +172,6 @@ function AssignDriver(newDriver, _isAI)
 		chassis:SetDriver(driver)
 	else
 		driver:AssignToTank(chassis)
-		chassis.serverMovementHook:Connect(RoboDriver)
 	end
 	print("Checkpoint 4", isAI)
 
@@ -233,9 +224,9 @@ function AssignDriver(newDriver, _isAI)
 	
 	if not isAI then
 		bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
-		diedEventListener = driver.diedEvent:Connect(OnDeath)
 		consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
 	end
+	diedEventListener = driver.diedEvent:Connect(OnDeath)
 	Task.Wait()
 	print("Setting tank ready!")
 	script:SetNetworkedCustomProperty("TankReady", true)
@@ -338,13 +329,22 @@ function OnDeath(player, damage)
 	local tankPosition = hitbox:GetWorldPosition()
 	local tankRotation = hitbox:GetWorldRotation()
 	
-	driver:Detach()
+	if driver:IsA("Player") then
+		driver:Detach()
+	elseif driver:IsA("AIPlayer") then
+		driver:Destroy(chassis)
+	end
 	hitbox:Destroy()
 	chassis:Destroy()
 	driver.isCollidable = true
 	script:SetNetworkedCustomProperty("TankReady", false)
 	
 	local destroyedTank = World.SpawnAsset(destroyedTankTempate, {parent = tankGarage, position = tankPosition, rotation = tankRotation})
+
+	if driver:IsA("Player") then
+		driver:AttachToCoreObject(destroyedTank)
+	end
+
 	destroyedTank.lifeSpan = 15
 
 	Task.Wait()
@@ -513,7 +513,12 @@ function OnArmorHit(trigger, other)
 			rotation = nil,
 			tags = {id = "Projectile"}
 		}
-		COMBAT.ApplyDamage(attackData)
+		-- This is kind of ugly. :( -CJC
+		if driver:IsA("AIPlayer") then
+			driver:ApplyDamage(attackData)
+		else
+			COMBAT.ApplyDamage(attackData)
+		end
 		
 		local armorName = trigger.name
 		
@@ -737,7 +742,9 @@ function OnBurning()
 	
 	script:SetNetworkedCustomProperty("Burning", false)
 	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", false)
-	chassis.maxSpeed = originalSpeed
+	if Object.IsValid(chassis) then
+		chassis.maxSpeed = originalSpeed
+	end
 	
 	Task.Wait(2)
 	
