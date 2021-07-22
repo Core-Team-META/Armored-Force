@@ -33,6 +33,10 @@ Assets {
           A: 1
         }
       }
+      Overrides {
+        Name: "dist_radius"
+        Float: 5
+      }
     }
     Assets {
       Id: 12223811200745286487
