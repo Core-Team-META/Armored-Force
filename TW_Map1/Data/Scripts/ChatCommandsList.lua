@@ -1,3 +1,4 @@
+local AdminData = require(script:GetCustomProperty("AdminData"))
 local commands = {}
 local messagePrefix = "[SERVER]"
 
@@ -21,7 +22,8 @@ commands = {
         end,
         description = "Shows admin message in chat to all players",
         requireMessage = true,
-        adminOnly = true
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
     },
     
     ["/tp"] = {
@@ -42,7 +44,8 @@ commands = {
         end,
         description = "teleport to selected player. Format: /tp <otherPlayerName>",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
     },
 
     ["/xp"] = {
@@ -105,7 +108,8 @@ commands = {
         end,
         description = "Set the XP resource of a tank. Format: /xp <tankID> <RPvalue>",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
     },
     
     ["/sl"] = {
@@ -144,7 +148,8 @@ commands = {
         end,
         description = "Set the Silver resource of the player. Format: /sl <SilverValue>",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
     },
     
     ["/equip"] = {
@@ -188,7 +193,8 @@ commands = {
         end,
         description = "Equip a specific tank with a specified upgrade. 0 for no upgrades, 1 for all upgrades, and x,x,x for specific upgrades. Format: /equip <upgrade> <tankID>",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
     },
     
     ["/respawn"] = {
@@ -201,7 +207,8 @@ commands = {
         end,
         description = "Respawn (for casese when falling through the map).",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
     },
 
     ["/help"] = {
@@ -218,7 +225,8 @@ commands = {
         end,
         description = "shows a list of available commands",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = false,
+        adminRank = AdminData.AdminRanks.None
     },
 --[[     ["/ragdoll"] = {
         OnCommandCalledClient = function (player, message)
