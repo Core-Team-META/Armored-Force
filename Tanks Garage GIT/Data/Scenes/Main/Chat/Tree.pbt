@@ -1,7 +1,7 @@
 Name: "Chat"
 RootId: 16492573472081015425
 Objects {
-  Id: 14565854514805306022
+  Id: 1071038059800096017
   Name: "Chat Controller"
   Transform {
     Location {
@@ -15,8 +15,8 @@ Objects {
     }
   }
   ParentId: 16492573472081015425
-  ChildIds: 6684601424088807110
-  ChildIds: 12903427626202445168
+  ChildIds: 3153724506958255239
+  ChildIds: 12790207886647010376
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,7 +31,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12903427626202445168
+  Id: 12790207886647010376
   Name: "ClientContext"
   Transform {
     Location {
@@ -44,9 +44,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14565854514805306022
-  ChildIds: 6366587146570662779
-  ChildIds: 6114997655248197845
+  ParentId: 1071038059800096017
+  ChildIds: 8253514264135641696
+  ChildIds: 4156252419283604590
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6114997655248197845
+  Id: 4156252419283604590
   Name: "UI Container"
   Transform {
     Location {
@@ -73,7 +73,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12903427626202445168
+  ParentId: 12790207886647010376
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -110,7 +110,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6366587146570662779
+  Id: 8253514264135641696
   Name: "ChatControllerClient"
   Transform {
     Location {
@@ -123,7 +123,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12903427626202445168
+  ParentId: 12790207886647010376
   UnregisteredParameters {
     Overrides {
       Name: "cs:CommandsList"
@@ -140,7 +140,7 @@ Objects {
     Overrides {
       Name: "cs:Container"
       ObjectReference {
-        SelfId: 6114997655248197845
+        SelfId: 4156252419283604590
       }
     }
   }
@@ -160,7 +160,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6684601424088807110
+  Id: 3153724506958255239
   Name: "ChatControllerServer"
   Transform {
     Location {
@@ -173,12 +173,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14565854514805306022
+  ParentId: 1071038059800096017
   UnregisteredParameters {
     Overrides {
       Name: "cs:CommandsList"
       AssetReference {
         Id: 16333179939683747270
+      }
+    }
+    Overrides {
+      Name: "cs:AdminData"
+      AssetReference {
+        Id: 11744387492311440543
       }
     }
   }
