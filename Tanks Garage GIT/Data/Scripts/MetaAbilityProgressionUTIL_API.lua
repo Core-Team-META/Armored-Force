@@ -646,7 +646,7 @@ function API.RetrieveTankDataById(id, playerTanks)
 	local tankData = {}
 	for k, tank in ipairs(playerTanks) do
 		if(tank.id == id) then
-			print("Tank found with Id: " .. tostring(id))
+			--print("Tank found with Id: " .. tostring(id))
 			tankData.id = tank.id
 			tankData.hasWeapon = tank.hasWeapon
 			tankData.hasArmor = tank.hasArmor
@@ -668,6 +668,30 @@ function API.RetrieveTankNameById(id, tankCollection)
 	end
 	warn("Tank not found with Id: " .. id)
 	return "M3 Stuart"
+end
+
+function API.UsingPremiumTank(tankId)
+    return (tankId == 9 or tankId == 25)
+end
+
+function API.CalculateLeaveEarlyEarnings(timeElapsed, matchDuration, maxAwardXP)
+	local percentagedElapsed = timeElapsed / matchDuration
+	local awardedXP = percentagedElapsed * maxAwardXP
+	-- Only award up to 50% of the maximum as a penalty for leaving early
+	if(awardedXP > (maxAwardXP / 2)) then
+		awardedXP = math.floor(maxAwardXP / 2)
+	end
+	return awardedXP
+end
+
+function API.GetTierFromId(tankId)
+    for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
+		if(tank:GetCustomProperty("ID") == tankId) then
+			return tank:GetCustomProperty("Tier")			
+		end
+	end
+	warn("XP value not found with tank Id: " .. tankId)
+	return 1
 end
 
 ------------------------------------------------------------------------------------------------------------------------
