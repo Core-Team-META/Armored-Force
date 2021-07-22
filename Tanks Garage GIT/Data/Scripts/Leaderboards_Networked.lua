@@ -19,7 +19,7 @@ local function SetNetworkData(data)
             script:SetNetworkedCustomProperty("LTTD", UTIL.ConvertTableToString(data.LTTD))
             script:SetNetworkedCustomProperty("LTDD", UTIL.ConvertTableToString(data.LTDD))
             script:SetNetworkedCustomProperty("LTWR", UTIL.ConvertTableToString(data.LTWR))
-            lastTimestamp = data.time 
+            lastTimestamp = data.time
         end
     end
 end
@@ -29,13 +29,13 @@ function OnPlayerJoined(player)
     if storageData and next(storageData) and storageData.time then
         if not lastTimestamp or lastTimestamp and storageData.time > lastTimestamp then
             SetNetworkData(storageData)
-            player:SetResource("MatchTanksDestroyed", storageData.playerResources.MTD or 0)
-            player:SetResource("MatchDamageDealt", storageData.playerResources.MDD or 0)
-            player:SetResource("LifetimeTanksDestroyed", storageData.playerResources.LTTD or 0)
-            player:SetResource("LifetimeDamageDealt", storageData.playerResources.LTDD or 0)
-            player:SetResource("LifetimeWinrate", storageData.playerResources.LTWR or 0)
         end
     end
+    player:SetResource("MatchTanksDestroyed", storageData.playerResources.MTD or 0)
+    player:SetResource("MatchDamageDealt", storageData.playerResources.MDD or 0)
+    player:SetResource("LifetimeTanksDestroyed", storageData.playerResources.LTTD or 0)
+    player:SetResource("LifetimeDamageDealt", storageData.playerResources.LTDD or 0)
+    player:SetResource("LifetimeWinrate", storageData.playerResources.LTWR or 0)
 end
 
 function OnPlayerDeployed(player)
