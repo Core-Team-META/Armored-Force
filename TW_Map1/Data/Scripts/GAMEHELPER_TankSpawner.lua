@@ -54,7 +54,7 @@ function ResetAllVehicles()
 	--resetOverride = false
 end
 
-function OnPlayerRespawned(player)
+function OnPlayerRespawned(player, playerStart)
 
 	player:DisableRagdoll()
 	
@@ -70,7 +70,7 @@ function OnPlayerRespawned(player)
 	local currentState = mainManagerServer:GetCustomProperty("GameState")
 	
 	if currentState ~= "VICTORY_STATE" and currentState ~= "CARD_STATE" then
-		GivePlayerEquipment(player)
+		GivePlayerEquipment(player, playerStart)
 	else 
 		player.isVisible = true
 		player.animationStance = "unarmed_stance"
@@ -81,7 +81,7 @@ end
 
 -- nil GivePlayerEquipment(Player)
 -- Gives the referenced equipment to the player
-function GivePlayerEquipment(player)
+function GivePlayerEquipment(player, playerStart)
 	local resourceID =  player:GetResource(CONSTANTS_API.GetEquippedTankResource())
 	local id = tostring(resourceID)
 	
@@ -93,7 +93,7 @@ function GivePlayerEquipment(player)
 	local playerRotation = player:GetWorldRotation()
 	equippedTank[player] = World.SpawnAsset(GetEquippedTankTemplate(player, id), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
 	Task.Wait(0.1)
-	equippedTank[player].context.AssignDriver(player)
+	equippedTank[player].context.AssignDriver(player, playerStart)
 	
 end
 
