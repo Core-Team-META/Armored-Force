@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16377052052155339189
+  Name: "Metal Vehicle Heavy Crunchy Crash Impact 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_metal_vehicle_heavy_crunchy_crash_impact_01_Cue_ref"
+  }
+}
+Assets {
   Id: 15392186923000422511
   Name: "Teko Bold"
   PlatformAssetType: 28
@@ -44,12 +53,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11530266170082884544
-  Name: "Frame Beveled 001"
+  Id: 8577223158266405289
+  Name: "Icon Explosion"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid8px_020"
+    AssetId: "Icon_Explosion"
   }
 }
 Assets {

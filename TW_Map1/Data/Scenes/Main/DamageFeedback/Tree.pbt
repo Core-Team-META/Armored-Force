@@ -51,6 +51,7 @@ Objects {
   ChildIds: 16842327816437332582
   ChildIds: 17081616456123407072
   ChildIds: 9438686850797871809
+  ChildIds: 10428535769661285001
   ChildIds: 4175524570554495221
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -144,8 +145,8 @@ Objects {
   ChildIds: 8440960363525399038
   ChildIds: 11503608100440484061
   ChildIds: 10017128558942460586
-  ChildIds: 15257011197194155932
   ChildIds: 14858721448404706838
+  ChildIds: 15257011197194155932
   ChildIds: 8745769454035540633
   ChildIds: 4587497590800616186
   ChildIds: 5047821580087548600
@@ -777,74 +778,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14858721448404706838
-  Name: "Icon2Frame"
-  Transform {
-    Location {
-      X: -4.35779476
-      Y: 49.8097382
-      Z: 115
-    }
-    Rotation {
-      Yaw: -1.2806604e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4105341505052041312
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 78
-    Height: 76
-    UIX: -4
-    UIY: 1
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 11530266170082884544
-      }
-      Color {
-        R: 0.429999948
-        A: 0.9
-      }
-      TeamSettings {
-      }
-      ShadowOffset {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middleleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middleleft"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 15257011197194155932
   Name: "Icon"
   Transform {
@@ -890,6 +823,75 @@ Objects {
         R: 1
         G: 1
         B: 1
+        A: 0.9
+      }
+      TeamSettings {
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14858721448404706838
+  Name: "Icon2Frame"
+  Transform {
+    Location {
+      X: -4.35779476
+      Y: 49.8097382
+      Z: 115
+    }
+    Rotation {
+      Yaw: -1.2806604e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4105341505052041312
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 132
+    Height: 122
+    UIX: -30.5292053
+    UIY: 1
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 8577223158266405289
+      }
+      Color {
+        R: 0.210000038
+        G: 0.00834436808
         A: 0.9
       }
       TeamSettings {
@@ -1253,6 +1255,42 @@ Objects {
   }
 }
 Objects {
+  Id: 10428535769661285001
+  Name: "Metal Vehicle Heavy Crunchy Crash Impact 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5100236706336899924
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16377052052155339189
+    }
+    Volume: 3
+    Falloff: -1
+    Radius: 1500
+  }
+}
+Objects {
   Id: 9438686850797871809
   Name: "Impact Metal Heavy 01 SFX"
   Transform {
@@ -1283,7 +1321,7 @@ Objects {
     AudioAsset {
       Id: 16603227598313047721
     }
-    Volume: 3
+    Volume: 2
     Falloff: -1
     Radius: -1
   }
@@ -1451,6 +1489,12 @@ Objects {
       Name: "cs:Icon2Frame"
       ObjectReference {
         SelfId: 14858721448404706838
+      }
+    }
+    Overrides {
+      Name: "cs:MetalVehicleHeavyCrunchyCrashImpact01SFX"
+      ObjectReference {
+        SelfId: 10428535769661285001
       }
     }
   }
