@@ -90,7 +90,7 @@ function OnPlayerLeft(player)
     storageData.time = os.time(os.date("!*t"))
 
 
-    local matchTanksDestroyed = player.serverUserData.ACH_killCount
+    local matchTanksDestroyed = player.kills
     if storageData.playerResources.MTD < matchTanksDestroyed then
         storageData.playerResources.MTD = matchTanksDestroyed
     end
