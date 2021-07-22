@@ -555,7 +555,7 @@ function OnArmorHit(trigger, other)
 			source = driver,
 			position = nil,
 			rotation = nil,
-			tags = {id = "Projectile"}
+			tags = {id = "Ram"}
 		}
 		COMBAT.ApplyDamage(attackData)
 		
