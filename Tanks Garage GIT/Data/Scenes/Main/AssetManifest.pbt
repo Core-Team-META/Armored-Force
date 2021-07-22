@@ -30,6 +30,19 @@ Assets {
   }
 }
 Assets {
+  Id: 15514386467634745068
+  Name: "TankProgress"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "6f32dfeddf494871915067a72c7edbd0"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 14345407072251931141
   Name: "SilverPack2"
   PlatformAssetType: 24
@@ -65,6 +78,19 @@ Assets {
   }
 }
 Assets {
+  Id: 13408636337207294900
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "052041e8d63b4517a952bb140099bb39"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 10275389552133456967
   Name: "SoldierPack"
   PlatformAssetType: 24
@@ -73,6 +99,19 @@ Assets {
       Key: "49585fe5e81b4de9827fd8d8e6190685"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 9945433159589621352
+  Name: "Skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8905467fb24d4808b3c2ae59a33229f2"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -104,19 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9454526116525649750
-  Name: "Skins1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 8779881459085015496
   Name: "GoldBundle2"
   PlatformAssetType: 24
@@ -139,64 +165,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7384732450900840151
-  Name: "Achievements1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 6928255822254716244
-  Name: "Tanks1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
-  Id: 6056411041462983192
-  Name: "Leaderboards1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "5054e091c2a04962af336edce485ef05"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 4413664130009284128
-  Name: "teststorage1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "d1a69f5da5c541fc994e9615afda579b"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -221,6 +195,19 @@ Assets {
       Key: "8cadd4667c1044fcaa914b011d86e503"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 3747932944117749264
+  Name: "Achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "5ded2bb7c8c349e1bedb86ea3cf486d1"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }

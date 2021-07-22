@@ -77,11 +77,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Garage"
-      String: "8cedb0/armored-force"
+      String: "a7620c/armored-force"
     }
     Overrides {
       Name: "cs:Map1"
-      String: "f5adba/tanks-map-1-frontline"
+      String: "4497ee/fields-frontline"
     }
   }
   Collidable_v2 {
@@ -201,7 +201,7 @@ Objects {
     Overrides {
       Name: "cs:Tanks"
       NetReference {
-        Key: "27405ddc7ce7461ea01c64acbbe37e9d"
+        Key: "6f32dfeddf494871915067a72c7edbd0"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -210,7 +210,7 @@ Objects {
     Overrides {
       Name: "cs:Achievements"
       NetReference {
-        Key: "03cfd5130aba46b5818a37f60dbe7fd1"
+        Key: "5ded2bb7c8c349e1bedb86ea3cf486d1"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -219,7 +219,7 @@ Objects {
     Overrides {
       Name: "cs:Leaderboards"
       NetReference {
-        Key: "5054e091c2a04962af336edce485ef05"
+        Key: "052041e8d63b4517a952bb140099bb39"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -228,7 +228,7 @@ Objects {
     Overrides {
       Name: "cs:Skins"
       NetReference {
-        Key: "8bfb4cd27f58473faa1c7b748b0c5757"
+        Key: "8905467fb24d4808b3c2ae59a33229f2"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
