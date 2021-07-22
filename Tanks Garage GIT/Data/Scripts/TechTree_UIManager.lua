@@ -258,7 +258,7 @@ function PopulatePlayerPanel()
 	
 	TotalMatches.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.GAMES_PLAYED_RES))
 	TotalWins.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_WINS))
-	LongestKillStreak.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.LARGEST_KILL_STREAK))
+	LongestKillStreak.text = tostring(LOCAL_PLAYER:GetResource("MatchTanksDestroyed"))
 	TotalDamage.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_DAMAGE_RES))
 	local shotsHit = LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_SHOTS_HIT)
 	local shotsFired = LOCAL_PLAYER:GetResource(Constants_API.COMBAT_STATS.TOTAL_SHOTS_FIRED)

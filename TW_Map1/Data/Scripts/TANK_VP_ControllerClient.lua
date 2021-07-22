@@ -158,6 +158,8 @@ function OnTankStateChanged(controllerServer, property)
 				i:Play()
 			end
 		else 
+			if not Object.IsValid(fireState) then return end
+			
 			fireState.visibility = Visibility.FORCE_OFF
 			
 			for _, i in ipairs(fireState:FindDescendantsByType("SFX")) do
