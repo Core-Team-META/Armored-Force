@@ -94,17 +94,17 @@ function OnJoin(player)
 	print("=================")
 	]]
 	
-	if autoTreads and treadCount < 2 and currentSilver >= consumableCost then
+	if autoTreads == 1 and treadCount < 2 and currentSilver >= consumableCost then
 		player:SetResource(CONSTANTS_API.CONSUMABLES.TREADS, 2)
 		player:RemoveResource(CONSTANTS_API.SILVER, 100)
 	end
 
-	if autoExtinguisher and extinguisherCount < 1 and currentSilver >= consumableCost then
+	if autoExtinguisher == 1 and extinguisherCount < 1 and currentSilver >= consumableCost then
 		player:SetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 100)
 	end
 	
-	if autoTurret and turretCount < 1 and currentSilver >= consumableCost then
+	if autoTurret == 1 and turretCount < 1 and currentSilver >= consumableCost then
 		player:SetResource(CONSTANTS_API.CONSUMABLES.REPAIR, 1)
 		player:RemoveResource(CONSTANTS_API.SILVER, 100)
 	end
