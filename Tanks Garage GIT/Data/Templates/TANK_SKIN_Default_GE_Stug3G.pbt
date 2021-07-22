@@ -2281,7 +2281,7 @@ Assets {
       }
       Objects {
         Id: 16651784418562492953
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
           }
@@ -5244,7 +5244,7 @@ Assets {
       }
       Objects {
         Id: 16639299657095239932
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
           }
