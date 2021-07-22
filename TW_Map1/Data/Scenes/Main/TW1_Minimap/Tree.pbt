@@ -16,7 +16,6 @@ Objects {
   }
   ParentId: 10433577698686771103
   ChildIds: 5661825852142314628
-  ChildIds: 14563912036218642855
   ChildIds: 26148042514551584
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3686,6 +3685,7 @@ Objects {
     }
   }
   ParentId: 3302597894179016669
+  ChildIds: 11467349785993795151
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3716,6 +3716,81 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11467349785993795151
+  Name: "UI Image"
+  Transform {
+    Location {
+      X: -5210.81055
+      Y: -1371.04395
+      Z: -8430
+    }
+    Rotation {
+      Yaw: -44.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1626479392366946328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 225
+    UIX: -110
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      GameId: "e53f41/mapholder"
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -3777,62 +3852,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Base"
-  }
-}
-Objects {
-  Id: 14563912036218642855
-  Name: "MinimapScreenObject"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10370141871558452859
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ScreenObject"
-      AssetReference {
-        Id: 1676661402537418123
-      }
-    }
-    Overrides {
-      Name: "cs:MiniMapPanel"
-      ObjectReference {
-        SelfId: 1626479392366946328
-      }
-    }
-    Overrides {
-      Name: "cs:ScreenObjectGroup"
-      ObjectReference {
-        SelfId: 8877312406397874313
-      }
-    }
-    Overrides {
-      Name: "cs:MinimapVisibilitySource"
-      ObjectReference {
-        SelfId: 3302597894179016669
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4822191344238976801
-    }
   }
 }
 Objects {
