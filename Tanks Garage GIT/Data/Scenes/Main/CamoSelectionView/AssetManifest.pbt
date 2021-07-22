@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8968668785704081500
+  Name: "Metal Diamond Plates 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_rust_diamond-plate_001"
+  }
+}
+Assets {
   Id: 4465877919970375297
   Name: "Metal Greebles 03"
   PlatformAssetType: 2
