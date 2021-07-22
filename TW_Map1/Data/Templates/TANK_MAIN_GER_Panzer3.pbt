@@ -107,11 +107,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 600
+            Int: 850
           }
           Overrides {
             Name: "cs:UpgradedHitPoints"
-            Int: 700
+            Int: 925
           }
           Overrides {
             Name: "cs:Identifier"
