@@ -853,7 +853,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 11646227894815174831
+              Id: 6262982467505051120
             }
             Color {
               R: 1
@@ -1734,12 +1734,12 @@ Assets {
       }
     }
     Assets {
-      Id: 11646227894815174831
-      Name: "Fantasy Coins 003"
+      Id: 6262982467505051120
+      Name: "Fantasy Craft Bar 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Coins_003"
+        AssetId: "UI_Fantasy_Crafting_Bar_002"
       }
     }
     Assets {
