@@ -297,8 +297,14 @@ function OnDeath(player, damage)
 	script:SetNetworkedCustomProperty("TankReady", false)
 	
 	local destroyedTank = World.SpawnAsset(destroyedTankTempate, {parent = tankGarage, position = tankPosition, rotation = tankRotation})
-	driver:AttachToCoreObject(destroyedTank)
 	destroyedTank.lifeSpan = 15
+
+	Task.Wait()
+	
+	if Object.IsValid(driver) then
+		driver:ResetVelocity()
+		driver:AttachToCoreObject(destroyedTank)
+	end
 	
 end
 
