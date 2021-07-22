@@ -125,8 +125,27 @@ end
 
 function OnResourceChanged(player, resource, amount)
 
-	--print("resource recieved " .. resource)
 	
+	--print("resource recieved " .. resource)
+	if resource == CONSTANTS_API.SILVER and amount < 100 then
+		consumableSlots.treads.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		consumableSlots.extinguisher.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		consumableSlots.repairKit.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+
+		consumableSlots.treads.purchaseButton.isInteractable = false
+		consumableSlots.extinguisher.purchaseButton.isInteractable = false
+		consumableSlots.repairKit.purchaseButton.isInteractable = false
+
+	elseif resource == CONSTANTS_API.SILVER and amount >= 100 then
+		consumableSlots.treads.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		consumableSlots.extinguisher.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		consumableSlots.repairKit.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+
+		consumableSlots.treads.purchaseButton.isInteractable = true
+		consumableSlots.extinguisher.purchaseButton.isInteractable = true
+		consumableSlots.repairKit.purchaseButton.isInteractable = true
+	end
+
 	if resource == CONSTANTS_API.CONSUMABLES.TREADS or resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS then
 		if amount > 1 or (resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS and amount > 0) then
 			consumableSlots.treads.purchaseButton.isEnabled = false
