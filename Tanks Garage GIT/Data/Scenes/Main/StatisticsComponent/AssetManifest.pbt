@@ -8,6 +8,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16622528590838133631
+  Name: "Fantasy Medal 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Medal_002"
+  }
+}
+Assets {
+  Id: 16191173343733875993
+  Name: "Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_001"
+  }
+}
+Assets {
   Id: 15613631792190449472
   Name: "Icon Tank"
   PlatformAssetType: 9
@@ -50,6 +68,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
+  Id: 6262982467505051120
+  Name: "Fantasy Craft Bar 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Bar_002"
   }
 }
 Assets {
