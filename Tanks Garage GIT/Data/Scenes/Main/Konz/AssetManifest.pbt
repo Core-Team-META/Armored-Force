@@ -278,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6262982467505051120
+  Name: "Fantasy Craft Bar 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Bar_002"
+  }
+}
+Assets {
   Id: 6106781574284671706
   Name: "Frame Ring 007"
   PlatformAssetType: 9
