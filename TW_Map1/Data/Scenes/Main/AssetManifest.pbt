@@ -1,4 +1,17 @@
 Assets {
+  Id: 18190579293091682063
+  Name: "Achievements"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "5ded2bb7c8c349e1bedb86ea3cf486d1"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 18095757882595708726
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -26,32 +39,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14852852292048066844
-  Name: "Tanks1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 14544136749024991844
-  Name: "Leaderboards1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "5054e091c2a04962af336edce485ef05"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 14002253654344460699
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -70,25 +57,25 @@ Assets {
   }
 }
 Assets {
-  Id: 12138254496542770230
-  Name: "Achievements1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 11182969111770509228
   Name: "Cliff 02"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "cliff_002"
+  }
+}
+Assets {
+  Id: 10875987836639546947
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "052041e8d63b4517a952bb140099bb39"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -110,12 +97,25 @@ Assets {
   }
 }
 Assets {
-  Id: 7532952088396380783
-  Name: "Skins1"
+  Id: 7971877911322319358
+  Name: "TankProgress"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
+      Key: "6f32dfeddf494871915067a72c7edbd0"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 6696558842108831768
+  Name: "Skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8905467fb24d4808b3c2ae59a33229f2"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
