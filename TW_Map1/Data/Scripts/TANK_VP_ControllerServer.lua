@@ -409,7 +409,7 @@ function ProjectileImpacted(expiredProjectile, other)
 		source = driver,
 		position = nil,
 		rotation = nil,
-		tags = {id = "Example"}
+		tags = {id = "Projectile"}
 	}
 	COMBAT.ApplyDamage(attackData)
 	
@@ -458,7 +458,7 @@ function OnArmorHit(trigger, other)
 			source = enemyPlayer,
 			position = nil,
 			rotation = nil,
-			tags = {id = "Example"}
+			tags = {id = "Projectile"}
 		}
 		COMBAT.ApplyDamage(attackData)
 		
@@ -550,7 +550,7 @@ function OnArmorHit(trigger, other)
 			source = enemyPlayer,
 			position = nil,
 			rotation = nil,
-			tags = {id = "Example"}
+			tags = {id = "Projectile"}
 		}
 		COMBAT.ApplyDamage(attackData)
 		
@@ -642,8 +642,10 @@ function OnBurning()
 	chassis.maxSpeed = math.floor(originalSpeed/2)
 	
 	for i = 10, 1, -1 do
+		if driver.isDead then break end
+
 		local damageDealt = Damage.New(10)
-		
+	
 		damageDealt.sourcePlayer = playerWhoBurned
 		damageDealt.reason = DamageReason.COMBAT
 		--driver:ApplyDamage(damageDealt)
@@ -654,7 +656,7 @@ function OnBurning()
 			source = playerWhoBurned,
 			position = nil,
 			rotation = nil,
-			tags = {id = "Example"}
+			tags = {id = "Burning"}
 		}
 		
 		COMBAT.ApplyDamage(attackData)
