@@ -7263,7 +7263,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "Press [V] to join a battle (0/1)"
+      Label: "Press [G] to join a battle (0/1)"
       Color {
         R: 1
         G: 1
