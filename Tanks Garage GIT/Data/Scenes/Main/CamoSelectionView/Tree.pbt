@@ -55961,8 +55961,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
