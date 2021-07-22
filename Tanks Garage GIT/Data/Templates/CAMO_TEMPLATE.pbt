@@ -743,7 +743,7 @@ Assets {
             }
             ShadowOffset {
             }
-            GameId: "ae5f1d/tanksportal-images9"
+            GameId: "7bc4ff/tanksportal-images9"
             ScreenshotIndex: 5
           }
           AnchorLayout {
