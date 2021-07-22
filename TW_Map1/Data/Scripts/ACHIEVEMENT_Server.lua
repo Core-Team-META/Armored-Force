@@ -176,8 +176,11 @@ end
 function OnDamageTaken(attackData)
     local target = attackData.object
     local source = attackData.source
-    if IsValidPlayer(source) and IsValidPlayer(target) then
-        source:AddResource(CONST.COMBAT_STATS.TOTAL_SHOTS_HIT, 1)
+    local hasTag = attackData.tags and attackData.tags.id
+    if hasTag and IsValidPlayer(source) and IsValidPlayer(target) then
+        if attackData.tags.id == "Projectile" then
+            source:AddResource(CONST.COMBAT_STATS.TOTAL_SHOTS_HIT, 1)
+        end
     end
 end
 
