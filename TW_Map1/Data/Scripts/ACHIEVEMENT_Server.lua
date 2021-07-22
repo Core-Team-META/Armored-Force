@@ -51,7 +51,6 @@ local function OnResourceChanged(player, resName, resAmt)
 end
 
 local function PlayerKilled(player, target, weaponType, isHeadShot)
-   
     if player == target then
         return
     end
@@ -71,12 +70,11 @@ end
 local function OnRoundEnd()
     local teamOne = Game.GetTeamScore(1)
     local teamTwo = Game.GetTeamScore(2)
+
     for _, player in ipairs(Game.GetPlayers()) do --
         if Object.IsValid(player) then
-            if (teamOne > teamTwo and player.team == 1) or (teamOne < teamTwo and player.team == 2) then
-                if not player.serverUserData.ACH_diedInRound then
-                    ACH_API.UnlockAchievement(player, "AGLO")
-                end
+            if not player.serverUserData.ACH_diedInRound then
+                ACH_API.UnlockAchievement(player, "AGLO")
             end
 
             local tankType = player.serverUserData.currentTankData and player.serverUserData.currentTankData.type
@@ -140,7 +138,7 @@ function OnPlayerJoined(player)
         ACH_API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     end
     listeners[player.id] = {}
-    listeners[player.id]["Respawn"] = player.spawnedEvent:Connect(OnPlayerRespawn)
+    --listeners[player.id]["Respawn"] = player.spawnedEvent:Connect(OnPlayerRespawn)
     listeners[player.id]["Resource"] = player.resourceChangedEvent:Connect(OnResourceChanged)
 
     SetPlayerFlags(player)
