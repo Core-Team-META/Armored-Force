@@ -35,11 +35,11 @@ Assets {
       }
       Overrides {
         Name: "dist_radius"
-        Float: 5
+        Float: 4
       }
       Overrides {
         Name: "dist_rotation"
-        Float: 1
+        Float: 0.18
       }
       Overrides {
         Name: "wind_weight"
