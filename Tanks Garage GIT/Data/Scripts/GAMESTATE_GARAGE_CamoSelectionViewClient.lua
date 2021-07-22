@@ -303,7 +303,7 @@ function OnCamoButtonClicked(button)
 		
 		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
 		
-		if playerCamoData[camoID].purchased then
+		if playerCamoData[camoID].purchased and not playerCamoData[camoID].equipped then
 			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equip")
 		end
 	end
@@ -326,6 +326,8 @@ function OnCamoButtonClicked(button)
 		else
 			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equipped")
 			buttonEntry.equipBuyComponents.active.visibility = Visibility.FORCE_ON
+			Events.Broadcast("INITIALIZE_SKIN", localPlayer)
+			Task.Wait()
 			ReliableEvents.BroadcastToServer("EQUIP_SKIN", selectedTank, camoID)
 		end
 	end
