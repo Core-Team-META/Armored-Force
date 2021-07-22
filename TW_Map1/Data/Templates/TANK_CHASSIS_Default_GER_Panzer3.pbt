@@ -54,7 +54,7 @@ Assets {
             Z: 60
           }
           MaxSpeed: 1160
-          AccelerationRate: 700
+          AccelerationRate: 500
           DecelerationRate: 15
           BrakeStrength: 15
           TireFriction: 2
