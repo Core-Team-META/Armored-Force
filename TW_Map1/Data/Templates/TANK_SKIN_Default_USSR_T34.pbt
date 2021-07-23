@@ -6992,7 +6992,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7054,7 +7054,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7116,7 +7116,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7178,7 +7178,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7242,7 +7242,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -23934,7 +23934,7 @@ Assets {
       }
       Objects {
         Id: 1200286872785066311
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: -7.631392
@@ -26013,7 +26013,7 @@ Assets {
       }
       Objects {
         Id: 17915923498505624508
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: -7.631392
@@ -28385,7 +28385,7 @@ Assets {
       }
     }
     Assets {
-      Id: 15463439290356156719
+      Id: 16060214784296519809
       Name: "Plane 1m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {

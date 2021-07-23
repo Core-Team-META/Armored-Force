@@ -61,7 +61,7 @@ Assets {
             X: -20
             Z: 20
           }
-          GravityScale: 2.6
+          GravityScale: 2.1
           CoastBrakeStrength: 10
           Tank {
             LeftTreadRadius: 70

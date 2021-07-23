@@ -115,11 +115,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 650
+            Int: 750
           }
           Overrides {
             Name: "cs:UpgradedHitPoints"
-            Int: 750
+            Int: 850
           }
           Overrides {
             Name: "cs:DamagePerShot"

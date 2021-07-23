@@ -46,6 +46,8 @@ function PopulateQuickSelectPanel()
 
             if tonumber(tankId) == LOCAL_PLAYER:GetResource("EquippedTank") then
                 entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_ON
+            else
+                entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_OFF
             end
             local button = entry:FindDescendantByName("SELECT_TANK_BUTTON")
             button.name = tankData:GetCustomProperty("ID") .. "T"
@@ -84,6 +86,7 @@ function SelectTank(button)
     Events.Broadcast("QuickSelectTankChange")
     Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", id)
     Events.Broadcast("CHANGE_EQUIPPED_TANK", id)
+    Task.Wait(1)
     PopulateQuickSelectPanel()
 end
 
