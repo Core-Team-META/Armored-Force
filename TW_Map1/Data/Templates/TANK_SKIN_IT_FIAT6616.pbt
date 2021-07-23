@@ -325,7 +325,7 @@ Assets {
       }
       Objects {
         Id: 5693825822360118297
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
           }
@@ -880,7 +880,7 @@ Assets {
       }
       Objects {
         Id: 5645875050661235010
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
           }
@@ -1644,7 +1644,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1839,7 +1839,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2372,7 +2372,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2440,7 +2440,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2506,7 +2506,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2574,7 +2574,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2642,7 +2642,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2695,7 +2695,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2761,7 +2761,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3528,7 +3528,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3598,7 +3598,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3666,7 +3666,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -4312,7 +4312,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -5263,7 +5263,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -11917,7 +11917,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -11982,7 +11982,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -12048,7 +12048,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -12115,7 +12115,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -12182,7 +12182,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -14034,7 +14034,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -14108,7 +14108,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -14436,7 +14436,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -14510,7 +14510,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -16472,7 +16472,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -16536,7 +16536,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -16598,7 +16598,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -16661,7 +16661,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -16724,7 +16724,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -25670,7 +25670,7 @@ Assets {
         }
         ParentId: 11184427601277610993
         ChildIds: 18285997061995271809
-        ChildIds: 626621083490905001
+        ChildIds: 14668703876351406088
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -25754,15 +25754,47 @@ Assets {
         }
       }
       Objects {
-        Id: 626621083490905001
-        Name: "Tire Worn"
+        Id: 14668703876351406088
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 0.000320705702
             Y: 21.7123871
           }
           Rotation {
-            Roll: -89.9999695
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3733956209231482071
+        ChildIds: 626621083490905001
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 626621083490905001
+        Name: "Tire Worn"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Roll: -89.9999619
           }
           Scale {
             X: 0.995958149
@@ -25770,7 +25802,7 @@ Assets {
             Z: 0.995958149
           }
         }
-        ParentId: 3733956209231482071
+        ParentId: 14668703876351406088
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -25817,7 +25849,7 @@ Assets {
         }
         ParentId: 12145790983492942114
         ChildIds: 4806794622345824269
-        ChildIds: 14997918365160700069
+        ChildIds: 3916579127479897708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -25902,16 +25934,48 @@ Assets {
         }
       }
       Objects {
-        Id: 14997918365160700069
-        Name: "Tire Worn"
+        Id: 3916579127479897708
+        Name: "IgnoreGroup"
         Transform {
           Location {
             Y: -21.7123871
             Z: 1.52587891e-05
           }
           Rotation {
-            Yaw: -179.999969
-            Roll: -89.9999695
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6059592223038020524
+        ChildIds: 14997918365160700069
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14997918365160700069
+        Name: "Tire Worn"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -179.999954
+            Roll: -89.9999619
           }
           Scale {
             X: 0.995958149
@@ -25919,7 +25983,7 @@ Assets {
             Z: 0.995958149
           }
         }
-        ParentId: 6059592223038020524
+        ParentId: 3916579127479897708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -25952,7 +26016,7 @@ Assets {
         Name: "Wheel"
         Transform {
           Location {
-            X: -270.000061
+            X: -270
             Y: -200
             Z: 90
           }
@@ -25965,7 +26029,7 @@ Assets {
           }
         }
         ParentId: 12145790983492942114
-        ChildIds: 12704141394591137863
+        ChildIds: 16031815651972125509
         ChildIds: 10600855690271827321
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25981,22 +26045,54 @@ Assets {
         }
       }
       Objects {
-        Id: 12704141394591137863
-        Name: "Tire Worn"
+        Id: 16031815651972125509
+        Name: "IgnoreGroup"
         Transform {
           Location {
             Y: 21.7128754
           }
           Rotation {
-            Roll: -90
           }
           Scale {
-            X: 0.995958
-            Y: 1.01736844
-            Z: 0.995958
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 5793539916131821659
+        ChildIds: 12704141394591137863
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 12704141394591137863
+        Name: "Tire Worn"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Roll: -89.9999924
+          }
+          Scale {
+            X: 0.995957911
+            Y: 1.01736844
+            Z: 0.995957911
+          }
+        }
+        ParentId: 16031815651972125509
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -26140,7 +26236,7 @@ Assets {
         }
         ParentId: 7575112910455537250
         ChildIds: 349855627813487178
-        ChildIds: 10439126852980156700
+        ChildIds: 9550997311458020913
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -26224,15 +26320,47 @@ Assets {
         }
       }
       Objects {
-        Id: 10439126852980156700
-        Name: "Tire Worn"
+        Id: 9550997311458020913
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 0.000152587891
             Y: 21.7128754
           }
           Rotation {
-            Roll: -90
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4938568102660215687
+        ChildIds: 10439126852980156700
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 10439126852980156700
+        Name: "Tire Worn"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Roll: -89.9999924
           }
           Scale {
             X: 0.995958149
@@ -26240,7 +26368,7 @@ Assets {
             Z: 0.995958149
           }
         }
-        ParentId: 4938568102660215687
+        ParentId: 9550997311458020913
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -26593,7 +26721,7 @@ Assets {
       }
     }
     Assets {
-      Id: 15463439290356156719
+      Id: 16060214784296519809
       Name: "Plane 1m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {

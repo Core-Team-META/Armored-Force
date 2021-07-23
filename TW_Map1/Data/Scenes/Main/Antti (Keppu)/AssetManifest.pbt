@@ -206,6 +206,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10512577683718946604
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
+  }
+}
+Assets {
   Id: 10077006419286131806
   Name: "Urban Damaged Rebar - Twisted Ends 01"
   PlatformAssetType: 1
