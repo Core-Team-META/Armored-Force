@@ -955,7 +955,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1541,7 +1541,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -7341,7 +7341,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -8481,7 +8481,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -8887,9 +8887,9 @@ Assets {
         Name: "front pull"
         Transform {
           Location {
-            X: 439.573212
-            Y: 130.369141
-            Z: -127.580254
+            X: 439.606659
+            Y: 126.671303
+            Z: -127.599495
           }
           Rotation {
             Pitch: -0.29864502
@@ -9465,9 +9465,9 @@ Assets {
         Name: "front pull"
         Transform {
           Location {
-            X: 439.573212
-            Y: -73.1538086
-            Z: -127.580261
+            X: 439.712494
+            Y: -87.7221909
+            Z: -127.656204
           }
           Rotation {
             Pitch: -0.29864502
@@ -13777,8 +13777,8 @@ Assets {
         Name: "Sci-fi Cockpit Console 001"
         Transform {
           Location {
-            X: 447.483795
-            Y: -140.493164
+            X: 447.483765
+            Y: -154.643
             Z: -32.414978
           }
           Rotation {
@@ -13871,16 +13871,16 @@ Assets {
         Name: "Sci-fi Cockpit Console 001"
         Transform {
           Location {
-            X: 447.483795
-            Y: 154.336182
+            X: 447.483
+            Y: 154.643
             Z: -32.414978
           }
           Rotation {
-            Pitch: -38.275528
+            Pitch: -38.2755127
             Roll: -179.999985
           }
           Scale {
-            X: 0.295742214
+            X: 0.295742184
             Y: 0.28893888
             Z: 1.19171691
           }
@@ -14228,8 +14228,8 @@ Assets {
         Transform {
           Location {
             X: 5
-            Y: -195.237305
-            Z: 3.80166626
+            Y: -195.237
+            Z: 3.80167174
           }
           Rotation {
           }
@@ -15325,7 +15325,7 @@ Assets {
         Transform {
           Location {
             X: 5
-            Y: 197.3125
+            Y: 195.238
             Z: 3.80166626
           }
           Rotation {
@@ -17013,8 +17013,8 @@ Assets {
         Name: "TreadsLeft"
         Transform {
           Location {
-            X: -6.48340065e-05
-            Y: -226.126755
+            X: -0.00011788
+            Y: -226.127
           }
           Rotation {
           }
@@ -18609,7 +18609,7 @@ Assets {
       }
       Objects {
         Id: 9025632606904806410
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 13.4817
@@ -20197,9 +20197,9 @@ Assets {
         Name: "TreadsRight"
         Transform {
           Location {
-            X: -6.10351562e-05
-            Y: 225.918213
-            Z: -7.62939453e-06
+            X: 0.0009765625
+            Y: 226.127
+            Z: -6.91413879e-06
           }
           Rotation {
           }
@@ -21769,8 +21769,9 @@ Assets {
         Name: "TreadsRightDamaged"
         Transform {
           Location {
-            Y: 225.917969
-            Z: -7.62939453e-06
+            X: 0.00146484375
+            Y: 226.127
+            Z: -6.91413879e-06
           }
           Rotation {
           }
@@ -21797,7 +21798,7 @@ Assets {
       }
       Objects {
         Id: 10860278979360993131
-        Name: "TreadGeo"
+        Name: "IgnoreGroup"
         Transform {
           Location {
             X: 16.6796875
@@ -27349,7 +27350,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 15463439290356156719
+            Id: 16060214784296519809
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -32392,7 +32393,7 @@ Assets {
       }
     }
     Assets {
-      Id: 15463439290356156719
+      Id: 16060214784296519809
       Name: "Plane 1m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {
