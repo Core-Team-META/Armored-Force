@@ -223,7 +223,7 @@ Objects {
 }
 Objects {
   Id: 11006792933044764447
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -239,7 +239,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -300,7 +300,7 @@ Objects {
 }
 Objects {
   Id: 7601530731939574737
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -316,7 +316,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -454,7 +454,7 @@ Objects {
 }
 Objects {
   Id: 13632112232706322374
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -483,7 +483,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -569,7 +569,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -608,7 +608,7 @@ Objects {
 }
 Objects {
   Id: 9801773067066216732
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -624,7 +624,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -685,7 +685,7 @@ Objects {
 }
 Objects {
   Id: 8250110383898793717
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -701,7 +701,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -762,7 +762,7 @@ Objects {
 }
 Objects {
   Id: 1269691583340729443
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -839,7 +839,7 @@ Objects {
 }
 Objects {
   Id: 6258701058377005876
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -914,7 +914,7 @@ Objects {
 }
 Objects {
   Id: 15626209280034606204
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -930,7 +930,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1040,7 +1040,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -1117,7 +1117,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -1145,7 +1145,7 @@ Objects {
 }
 Objects {
   Id: 18397291875865426999
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -1161,7 +1161,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1174,15 +1174,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -1192,8 +1193,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -1221,7 +1222,7 @@ Objects {
 }
 Objects {
   Id: 5743319192256826393
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -1237,7 +1238,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1527,7 +1528,7 @@ Objects {
 }
 Objects {
   Id: 1545560009838578051
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -1543,7 +1544,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1565,7 +1566,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -1628,7 +1629,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -1641,7 +1642,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -1886,7 +1887,7 @@ Objects {
 }
 Objects {
   Id: 11191896008344941904
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -1902,7 +1903,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1963,7 +1964,7 @@ Objects {
 }
 Objects {
   Id: 9928613628291748446
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -1979,7 +1980,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2117,7 +2118,7 @@ Objects {
 }
 Objects {
   Id: 10247229256044363198
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -2146,7 +2147,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -2232,7 +2233,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -2271,7 +2272,7 @@ Objects {
 }
 Objects {
   Id: 371880543843668572
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -2287,7 +2288,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2348,7 +2349,7 @@ Objects {
 }
 Objects {
   Id: 656101440993709770
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -2364,7 +2365,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2425,7 +2426,7 @@ Objects {
 }
 Objects {
   Id: 8784334994845411825
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -2502,7 +2503,7 @@ Objects {
 }
 Objects {
   Id: 129390979116200888
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -2577,7 +2578,7 @@ Objects {
 }
 Objects {
   Id: 3048002433381206851
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -2593,7 +2594,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2703,7 +2704,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -2780,7 +2781,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -2808,7 +2809,7 @@ Objects {
 }
 Objects {
   Id: 979554821724642556
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -2824,7 +2825,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2837,15 +2838,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -2855,8 +2857,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -2884,7 +2886,7 @@ Objects {
 }
 Objects {
   Id: 14039622874032581616
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -2900,7 +2902,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3190,7 +3192,7 @@ Objects {
 }
 Objects {
   Id: 3352179435685401946
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -3206,7 +3208,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3228,7 +3230,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -3291,7 +3293,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -3304,7 +3306,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -3549,7 +3551,7 @@ Objects {
 }
 Objects {
   Id: 17641366762891436189
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -3565,7 +3567,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3626,7 +3628,7 @@ Objects {
 }
 Objects {
   Id: 16186178980084347159
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -3642,7 +3644,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3780,7 +3782,7 @@ Objects {
 }
 Objects {
   Id: 6512573040311948778
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -3809,7 +3811,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -3895,7 +3897,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -3934,7 +3936,7 @@ Objects {
 }
 Objects {
   Id: 6933287266698482643
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -3950,7 +3952,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4011,7 +4013,7 @@ Objects {
 }
 Objects {
   Id: 1057424768534947664
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -4027,7 +4029,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4088,7 +4090,7 @@ Objects {
 }
 Objects {
   Id: 10073798353472077237
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -4165,7 +4167,7 @@ Objects {
 }
 Objects {
   Id: 11638284276177644305
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -4240,7 +4242,7 @@ Objects {
 }
 Objects {
   Id: 2478727632529436465
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -4256,7 +4258,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4366,7 +4368,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -4443,7 +4445,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -4471,7 +4473,7 @@ Objects {
 }
 Objects {
   Id: 10862399580690033845
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -4487,7 +4489,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4500,15 +4502,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -4518,8 +4521,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -4547,7 +4550,7 @@ Objects {
 }
 Objects {
   Id: 9514243417226298450
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -4563,7 +4566,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4853,7 +4856,7 @@ Objects {
 }
 Objects {
   Id: 7633128079196699299
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -4869,7 +4872,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4891,7 +4894,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -4954,7 +4957,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -4967,7 +4970,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -5212,7 +5215,7 @@ Objects {
 }
 Objects {
   Id: 15581374213901436455
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -5228,7 +5231,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5289,7 +5292,7 @@ Objects {
 }
 Objects {
   Id: 9680828469372106100
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -5305,7 +5308,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5443,7 +5446,7 @@ Objects {
 }
 Objects {
   Id: 14520037609567473746
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -5472,7 +5475,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -5558,7 +5561,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -5597,7 +5600,7 @@ Objects {
 }
 Objects {
   Id: 3803781111553283393
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -5613,7 +5616,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5674,7 +5677,7 @@ Objects {
 }
 Objects {
   Id: 12786186769651510502
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -5690,7 +5693,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5751,7 +5754,7 @@ Objects {
 }
 Objects {
   Id: 6195717258947146372
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -5828,7 +5831,7 @@ Objects {
 }
 Objects {
   Id: 4093044723350588409
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -5903,7 +5906,7 @@ Objects {
 }
 Objects {
   Id: 12831925154821873431
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -5919,7 +5922,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6029,7 +6032,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -6106,7 +6109,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -6134,7 +6137,7 @@ Objects {
 }
 Objects {
   Id: 2634311274150580198
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -6150,7 +6153,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6163,15 +6166,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -6181,8 +6185,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -6210,7 +6214,7 @@ Objects {
 }
 Objects {
   Id: 12075468127775507774
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -6226,7 +6230,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6516,7 +6520,7 @@ Objects {
 }
 Objects {
   Id: 4069818876383802721
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -6532,7 +6536,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6554,7 +6558,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -6617,7 +6621,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -6630,7 +6634,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -6875,7 +6879,7 @@ Objects {
 }
 Objects {
   Id: 4243586606076948817
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -6891,7 +6895,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6952,7 +6956,7 @@ Objects {
 }
 Objects {
   Id: 16639211049385359899
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -6968,7 +6972,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7106,7 +7110,7 @@ Objects {
 }
 Objects {
   Id: 8786072678573374372
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -7135,7 +7139,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -7221,7 +7225,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -7260,7 +7264,7 @@ Objects {
 }
 Objects {
   Id: 13124708750619384792
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -7276,7 +7280,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7337,7 +7341,7 @@ Objects {
 }
 Objects {
   Id: 15202193243437301828
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -7353,7 +7357,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7414,7 +7418,7 @@ Objects {
 }
 Objects {
   Id: 8128903090156777262
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -7491,7 +7495,7 @@ Objects {
 }
 Objects {
   Id: 839628784206958932
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -7566,7 +7570,7 @@ Objects {
 }
 Objects {
   Id: 13770841762524545121
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -7582,7 +7586,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7692,7 +7696,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -7769,7 +7773,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -7797,7 +7801,7 @@ Objects {
 }
 Objects {
   Id: 13145877537271632995
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -7813,7 +7817,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7826,15 +7830,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -7844,8 +7849,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -7873,7 +7878,7 @@ Objects {
 }
 Objects {
   Id: 3503530007340559371
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -7889,7 +7894,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8179,7 +8184,7 @@ Objects {
 }
 Objects {
   Id: 9712895074119019829
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -8195,7 +8200,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8217,7 +8222,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -8280,7 +8285,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -8293,7 +8298,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -8538,7 +8543,7 @@ Objects {
 }
 Objects {
   Id: 12574674796769538059
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -8554,7 +8559,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8615,7 +8620,7 @@ Objects {
 }
 Objects {
   Id: 1378305925091973278
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -8631,7 +8636,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8769,7 +8774,7 @@ Objects {
 }
 Objects {
   Id: 14291695155440854392
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -8798,7 +8803,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -8884,7 +8889,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -8923,7 +8928,7 @@ Objects {
 }
 Objects {
   Id: 9693393308690779727
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -8939,7 +8944,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9000,7 +9005,7 @@ Objects {
 }
 Objects {
   Id: 2704204799997979026
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -9016,7 +9021,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9077,7 +9082,7 @@ Objects {
 }
 Objects {
   Id: 17728221784425993489
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -9154,7 +9159,7 @@ Objects {
 }
 Objects {
   Id: 2507047967490440226
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -9229,7 +9234,7 @@ Objects {
 }
 Objects {
   Id: 10896358270206561196
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -9245,7 +9250,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9355,7 +9360,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -9432,7 +9437,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -9460,7 +9465,7 @@ Objects {
 }
 Objects {
   Id: 16639852463992071983
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -9476,7 +9481,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9489,15 +9494,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -9507,8 +9513,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -9536,7 +9542,7 @@ Objects {
 }
 Objects {
   Id: 16332025023690877141
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -9552,7 +9558,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9842,7 +9848,7 @@ Objects {
 }
 Objects {
   Id: 8166226416921175005
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -9858,7 +9864,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9880,7 +9886,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -9943,7 +9949,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -9956,7 +9962,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -10201,7 +10207,7 @@ Objects {
 }
 Objects {
   Id: 9779832021296914490
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -10217,7 +10223,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10278,7 +10284,7 @@ Objects {
 }
 Objects {
   Id: 15312767630782185775
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -10294,7 +10300,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10432,7 +10438,7 @@ Objects {
 }
 Objects {
   Id: 9027754059411877106
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -10461,7 +10467,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -10547,7 +10553,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -10586,7 +10592,7 @@ Objects {
 }
 Objects {
   Id: 17853574062025245366
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -10602,7 +10608,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10663,7 +10669,7 @@ Objects {
 }
 Objects {
   Id: 10277550177937889893
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -10679,7 +10685,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10740,7 +10746,7 @@ Objects {
 }
 Objects {
   Id: 2095286556014904477
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -10817,7 +10823,7 @@ Objects {
 }
 Objects {
   Id: 16343834620020398573
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -10892,7 +10898,7 @@ Objects {
 }
 Objects {
   Id: 14872773936862663918
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -10908,7 +10914,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11018,7 +11024,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -11095,7 +11101,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -11123,7 +11129,7 @@ Objects {
 }
 Objects {
   Id: 16888655800756736644
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -11139,7 +11145,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11152,15 +11158,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -11170,8 +11177,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -11199,7 +11206,7 @@ Objects {
 }
 Objects {
   Id: 2630752238505584717
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -11215,7 +11222,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11505,7 +11512,7 @@ Objects {
 }
 Objects {
   Id: 16868115595097646823
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -11521,7 +11528,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11543,7 +11550,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -11606,7 +11613,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -11619,7 +11626,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -11864,7 +11871,7 @@ Objects {
 }
 Objects {
   Id: 11403873272832997600
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -11880,7 +11887,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11941,7 +11948,7 @@ Objects {
 }
 Objects {
   Id: 8884570352577737680
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -11957,7 +11964,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12095,7 +12102,7 @@ Objects {
 }
 Objects {
   Id: 305198987136993151
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -12124,7 +12131,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -12210,7 +12217,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -12249,7 +12256,7 @@ Objects {
 }
 Objects {
   Id: 13326384657748468569
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -12265,7 +12272,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12326,7 +12333,7 @@ Objects {
 }
 Objects {
   Id: 923123066381690254
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -12342,7 +12349,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12403,7 +12410,7 @@ Objects {
 }
 Objects {
   Id: 1715609429721310279
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -12480,7 +12487,7 @@ Objects {
 }
 Objects {
   Id: 4750994056856133257
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -12555,7 +12562,7 @@ Objects {
 }
 Objects {
   Id: 5782725601856324906
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -12571,7 +12578,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12681,7 +12688,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -12758,7 +12765,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -12786,7 +12793,7 @@ Objects {
 }
 Objects {
   Id: 13424856794921724870
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -12802,7 +12809,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12815,15 +12822,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -12833,8 +12841,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -12862,7 +12870,7 @@ Objects {
 }
 Objects {
   Id: 15813777804649217052
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -12878,7 +12886,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13168,7 +13176,7 @@ Objects {
 }
 Objects {
   Id: 14872366772429828662
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -13184,7 +13192,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13206,7 +13214,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -13269,7 +13277,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -13282,7 +13290,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -13527,7 +13535,7 @@ Objects {
 }
 Objects {
   Id: 1298405302132450467
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -13543,7 +13551,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13604,7 +13612,7 @@ Objects {
 }
 Objects {
   Id: 13971568502241355165
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -13620,7 +13628,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13758,7 +13766,7 @@ Objects {
 }
 Objects {
   Id: 1264462641747002877
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -13787,7 +13795,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -13873,7 +13881,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -13912,7 +13920,7 @@ Objects {
 }
 Objects {
   Id: 2869404705675546147
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -13928,7 +13936,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13989,7 +13997,7 @@ Objects {
 }
 Objects {
   Id: 3475680989068007702
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -14005,7 +14013,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14066,7 +14074,7 @@ Objects {
 }
 Objects {
   Id: 676430832207832013
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -14143,7 +14151,7 @@ Objects {
 }
 Objects {
   Id: 9605958173132038850
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -14218,7 +14226,7 @@ Objects {
 }
 Objects {
   Id: 17246205711592546048
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -14234,7 +14242,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14344,7 +14352,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -14421,7 +14429,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -14449,7 +14457,7 @@ Objects {
 }
 Objects {
   Id: 12335219975910801691
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -14465,7 +14473,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14478,15 +14486,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -14496,8 +14505,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -14525,7 +14534,7 @@ Objects {
 }
 Objects {
   Id: 13556070763359446808
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -14541,7 +14550,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14831,7 +14840,7 @@ Objects {
 }
 Objects {
   Id: 5166343712936783657
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -14847,7 +14856,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14869,7 +14878,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -14932,7 +14941,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -14945,7 +14954,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -15190,7 +15199,7 @@ Objects {
 }
 Objects {
   Id: 13634116104214028487
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -15206,7 +15215,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15267,7 +15276,7 @@ Objects {
 }
 Objects {
   Id: 3092138011392775510
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -15283,7 +15292,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15421,7 +15430,7 @@ Objects {
 }
 Objects {
   Id: 1450289417687871747
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -15450,7 +15459,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -15536,7 +15545,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -15575,7 +15584,7 @@ Objects {
 }
 Objects {
   Id: 1349346252802970432
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -15591,7 +15600,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15652,7 +15661,7 @@ Objects {
 }
 Objects {
   Id: 8621976083387886917
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -15668,7 +15677,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15729,7 +15738,7 @@ Objects {
 }
 Objects {
   Id: 12072745015727210467
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -15806,7 +15815,7 @@ Objects {
 }
 Objects {
   Id: 4931013688579334756
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -15881,7 +15890,7 @@ Objects {
 }
 Objects {
   Id: 5671920570473889676
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -15897,7 +15906,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16007,7 +16016,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -16084,7 +16093,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -16112,7 +16121,7 @@ Objects {
 }
 Objects {
   Id: 12071245930769893730
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -16128,7 +16137,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16141,15 +16150,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -16159,8 +16169,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -16188,7 +16198,7 @@ Objects {
 }
 Objects {
   Id: 3036685136573244367
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -16204,7 +16214,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16494,7 +16504,7 @@ Objects {
 }
 Objects {
   Id: 18280479759868131334
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -16510,7 +16520,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16532,7 +16542,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -16595,7 +16605,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -16608,7 +16618,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -16830,27 +16840,6 @@ Objects {
   ChildIds: 2110387132564489320
   ChildIds: 16560210011872782008
   ChildIds: 16775392370723933616
-  ChildIds: 3015115898666695833
-  ChildIds: 13386489752340808195
-  ChildIds: 8888260221722465698
-  ChildIds: 12278348523404908441
-  ChildIds: 6291512418346393208
-  ChildIds: 8522386913672886399
-  ChildIds: 487408698146590128
-  ChildIds: 9750219331096173532
-  ChildIds: 4834906258061603764
-  ChildIds: 14921358903814861378
-  ChildIds: 712376107806282575
-  ChildIds: 9082560953739020733
-  ChildIds: 10998821407025062757
-  ChildIds: 14422031420648316665
-  ChildIds: 11536425708794394576
-  ChildIds: 2066252825314884229
-  ChildIds: 16076018592876546548
-  ChildIds: 17973883621346485767
-  ChildIds: 13486450045634745992
-  ChildIds: 9978712596368263696
-  ChildIds: 1241269341118175206
   UnregisteredParameters {
     Overrides {
       Name: "cs:VehicleID"
@@ -16874,8 +16863,8 @@ Objects {
   }
 }
 Objects {
-  Id: 1241269341118175206
-  Name: "Forest Floor"
+  Id: 16775392370723933616
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -16891,7 +16880,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16921,15 +16910,15 @@ Objects {
       String: "20"
     }
     Overrides {
+      Name: "cs:Cost"
+      Int: 10000
+    }
+    Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
         Y: 1
       }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 10000
     }
   }
   Collidable_v2 {
@@ -16951,8 +16940,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9978712596368263696
-  Name: "Sand Dunes"
+  Id: 16560210011872782008
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -16968,7 +16957,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16998,1606 +16987,15 @@ Objects {
       String: "19"
     }
     Overrides {
+      Name: "cs:Cost"
+      Int: 8500
+    }
+    Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
         Y: 1
       }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 8500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 13486450045634745992
-  Name: "Metal Greebles"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Metal Greebles"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.494792
-        G: 0.494792
-        B: 0.494792
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 4465877919970375297
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "18"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 1
-        Y: 2
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 8000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 17973883621346485767
-  Name: "Stripes Blue Alt"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Stripes Blue Alt"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0170999952
-        G: 0.0548199
-        B: 0.3
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 942118974176962227
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "17"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 2
-        Y: 2
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 7000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 16076018592876546548
-  Name: "Stripes Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Stripes Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0284429919
-        G: 0.0911837667
-        B: 0.499
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 942118974176962227
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "16"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 3
-        Y: 2
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 7000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 2066252825314884229
-  Name: "Stripes Purple"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Stripes Purple"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.593000054
-        G: 0.154179975
-        B: 0.432099313
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 942118974176962227
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "15"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 4
-        Y: 2
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 7000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 11536425708794394576
-  Name: "Reflector Grey"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Reflector Grey"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 18087485408544217211
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "14"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 1
-        Y: 3
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 6000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 14422031420648316665
-  Name: "Reflector Green"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Reflector Green"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 18087485408544217211
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "13"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 3
-        Y: 3
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 6000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 10998821407025062757
-  Name: "Reflector Red"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Reflector Red"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.477000028
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 18087485408544217211
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "12"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 2
-        Y: 3
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 6000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 9082560953739020733
-  Name: "Tiled Green"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Tiled Green"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 15910750051962798568
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "11"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 5
-        Y: 2
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 5000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 712376107806282575
-  Name: "Force Field Green"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Force Field Green"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 5950052926211564984
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "10"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 5
-        Y: 4
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 4500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 14921358903814861378
-  Name: "Force Field"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Force Field"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 5950052926211564984
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "09"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 4
-        Y: 4
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 4500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 4834906258061603764
-  Name: "Fruit"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Fruit"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.39
-        G: 0.170463577
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 942118974176962227
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "08"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 2
-        Y: 2
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 4500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 9750219331096173532
-  Name: "Energy Tube"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Energy Tube"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 9743499594980233710
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "07"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 2
-        Y: 4
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 3500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 487408698146590128
-  Name: "Advanced Metal"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Advanced Metal"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0410959721
-        G: 0.403114349
-        B: 0.467
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 9187540498960513143
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "06"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 5
-        Y: 4
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 3500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 8522386913672886399
-  Name: "Magic Glass Grey"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Magic Glass Grey"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 6005397606915098357
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "05"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 1
-        Y: 5
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 3500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 6291512418346393208
-  Name: "Magic Glass Blue"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Magic Glass Blue"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 6005397606915098357
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "04"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 2
-        Y: 5
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 3500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 12278348523404908441
-  Name: "Magic Glass Purple"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Magic Glass Purple"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 6005397606915098357
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "03"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 3
-        Y: 5
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 3500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 8888260221722465698
-  Name: "Gold"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Gold"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.73300004
-        G: 0.525316715
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 2821307588416139022
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "02"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 5
-        Y: 5
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 2500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 13386489752340808195
-  Name: "Chrome"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Chrome"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 3180794530394243418
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "01"
-    }
-    Overrides {
-      Name: "cs:PreviewImageLocation"
-      Vector2 {
-        X: 4
-        Y: 5
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 2500
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 3015115898666695833
-  Name: "Stock"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Stock"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "00"
-    }
-    Overrides {
-      Name: "cs:Resource"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 0
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 16775392370723933616
-  Name: "Forest Floor"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Forest Floor"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 289372818548227518
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "21"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 10000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14840956372502537854
-    }
-  }
-}
-Objects {
-  Id: 16560210011872782008
-  Name: "Sand Dunes"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4933973338153241784
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SkinName"
-      String: "Sand Dunes"
-    }
-    Overrides {
-      Name: "cs:UseNewMaterial"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:UseNewColor"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:NewMaterial"
-      AssetReference {
-        Id: 373034708355704799
-      }
-    }
-    Overrides {
-      Name: "cs:SkinID"
-      String: "20"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 8500
     }
   }
   Collidable_v2 {
@@ -18663,11 +17061,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "19"
+      String: "18"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 8000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18690,7 +17095,7 @@ Objects {
 }
 Objects {
   Id: 5881317147330567396
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -18719,7 +17124,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -18733,11 +17138,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "18"
+      String: "17"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 7000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18798,16 +17210,23 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "17"
+      String: "16"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 7000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18830,7 +17249,7 @@ Objects {
 }
 Objects {
   Id: 11604551758458192791
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -18846,7 +17265,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -18873,11 +17292,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "16"
+      String: "15"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 7000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -18900,7 +17326,7 @@ Objects {
 }
 Objects {
   Id: 5336338301284481797
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -18916,7 +17342,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -18943,11 +17369,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "15"
+      String: "14"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -18970,7 +17403,7 @@ Objects {
 }
 Objects {
   Id: 16115033920567527680
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -19013,11 +17446,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "14"
+      String: "13"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -19040,7 +17480,7 @@ Objects {
 }
 Objects {
   Id: 4171453475068028156
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -19081,11 +17521,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "13"
+      String: "12"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -19108,7 +17555,7 @@ Objects {
 }
 Objects {
   Id: 2051573824069714371
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -19124,7 +17571,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19151,11 +17598,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "12"
+      String: "11"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 2
+      }
     }
   }
   Collidable_v2 {
@@ -19221,11 +17675,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "11"
+      String: "10"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 3
+      }
     }
   }
   Collidable_v2 {
@@ -19291,11 +17752,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "10"
+      String: "09"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -19318,7 +17786,7 @@ Objects {
 }
 Objects {
   Id: 6666833568959158911
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -19334,7 +17802,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19347,24 +17815,32 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "09"
+      String: "08"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19387,7 +17863,7 @@ Objects {
 }
 Objects {
   Id: 11913300344691012249
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -19403,7 +17879,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19429,11 +17905,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "08"
+      String: "07"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -19499,11 +17982,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "07"
+      String: "06"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 4
+      }
     }
   }
   Collidable_v2 {
@@ -19569,11 +18059,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "06"
+      String: "05"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 1
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -19638,11 +18135,18 @@ Objects {
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "05"
+      String: "04"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 2
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -19665,7 +18169,7 @@ Objects {
 }
 Objects {
   Id: 7597240542992245842
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -19681,7 +18185,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19703,16 +18207,23 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
       Name: "cs:SkinID"
-      String: "04"
+      String: "03"
     }
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 3
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -19824,7 +18335,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -19837,7 +18348,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -19847,6 +18358,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 2500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 5
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -19917,6 +18435,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 2500
+    }
+    Overrides {
+      Name: "cs:PreviewImageLocation"
+      Vector2 {
+        X: 4
+        Y: 5
+      }
     }
   }
   Collidable_v2 {
@@ -20068,7 +18593,7 @@ Objects {
 }
 Objects {
   Id: 5576526047456385651
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -20084,7 +18609,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20145,7 +18670,7 @@ Objects {
 }
 Objects {
   Id: 18291005837505353432
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -20161,7 +18686,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20299,7 +18824,7 @@ Objects {
 }
 Objects {
   Id: 1910896427723354242
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -20328,7 +18853,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -20414,7 +18939,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -20453,7 +18978,7 @@ Objects {
 }
 Objects {
   Id: 16016044903400407423
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -20469,7 +18994,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20530,7 +19055,7 @@ Objects {
 }
 Objects {
   Id: 18046492399821067584
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -20546,7 +19071,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20607,7 +19132,7 @@ Objects {
 }
 Objects {
   Id: 7785239863853003497
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -20684,7 +19209,7 @@ Objects {
 }
 Objects {
   Id: 14858069282311593756
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -20759,7 +19284,7 @@ Objects {
 }
 Objects {
   Id: 112705260314847284
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -20775,7 +19300,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20885,7 +19410,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -20962,7 +19487,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -20990,7 +19515,7 @@ Objects {
 }
 Objects {
   Id: 10235378071891089951
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -21006,7 +19531,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21019,15 +19544,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -21037,8 +19563,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -21066,7 +19592,7 @@ Objects {
 }
 Objects {
   Id: 890317304225267502
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -21082,7 +19608,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21372,7 +19898,7 @@ Objects {
 }
 Objects {
   Id: 4733297056771935418
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -21388,7 +19914,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21410,7 +19936,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -21473,7 +19999,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -21486,7 +20012,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -21731,7 +20257,7 @@ Objects {
 }
 Objects {
   Id: 12333208220034997338
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -21747,7 +20273,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21808,7 +20334,7 @@ Objects {
 }
 Objects {
   Id: 10934830954014463072
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -21824,7 +20350,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21962,7 +20488,7 @@ Objects {
 }
 Objects {
   Id: 12401355647135346924
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -21991,7 +20517,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -22077,7 +20603,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -22116,7 +20642,7 @@ Objects {
 }
 Objects {
   Id: 18028392929354538276
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -22132,7 +20658,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22193,7 +20719,7 @@ Objects {
 }
 Objects {
   Id: 8981958264459237667
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -22209,7 +20735,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22270,7 +20796,7 @@ Objects {
 }
 Objects {
   Id: 10115323623041188323
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -22347,7 +20873,7 @@ Objects {
 }
 Objects {
   Id: 1434760527164289144
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -22422,7 +20948,7 @@ Objects {
 }
 Objects {
   Id: 7408859449278723339
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -22438,7 +20964,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22548,7 +21074,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -22625,7 +21151,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -22653,7 +21179,7 @@ Objects {
 }
 Objects {
   Id: 4437065703060561074
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -22669,7 +21195,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22682,15 +21208,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -22700,8 +21227,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -22729,7 +21256,7 @@ Objects {
 }
 Objects {
   Id: 2078165914278814562
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -22745,7 +21272,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23035,7 +21562,7 @@ Objects {
 }
 Objects {
   Id: 14566805837239638235
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -23051,7 +21578,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23073,7 +21600,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -23136,7 +21663,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -23149,7 +21676,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -23394,7 +21921,7 @@ Objects {
 }
 Objects {
   Id: 3163904440183236709
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -23410,7 +21937,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23471,7 +21998,7 @@ Objects {
 }
 Objects {
   Id: 13504691968250741625
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -23487,7 +22014,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23625,7 +22152,7 @@ Objects {
 }
 Objects {
   Id: 6392193392592285625
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -23654,7 +22181,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -23740,7 +22267,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -23779,7 +22306,7 @@ Objects {
 }
 Objects {
   Id: 10388547781375841278
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -23795,7 +22322,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23856,7 +22383,7 @@ Objects {
 }
 Objects {
   Id: 18321229613109173177
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -23872,7 +22399,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23933,7 +22460,7 @@ Objects {
 }
 Objects {
   Id: 6488653603636710594
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -24010,7 +22537,7 @@ Objects {
 }
 Objects {
   Id: 4181250480001122796
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -24085,7 +22612,7 @@ Objects {
 }
 Objects {
   Id: 6026829976968343382
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -24101,7 +22628,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24211,7 +22738,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -24288,7 +22815,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -24316,7 +22843,7 @@ Objects {
 }
 Objects {
   Id: 9192533573233670621
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -24332,7 +22859,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24345,15 +22872,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -24363,8 +22891,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -24392,7 +22920,7 @@ Objects {
 }
 Objects {
   Id: 17716276487307426831
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -24408,7 +22936,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24698,7 +23226,7 @@ Objects {
 }
 Objects {
   Id: 6177486612500243257
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -24714,7 +23242,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24736,7 +23264,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -24799,7 +23327,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -24812,7 +23340,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -25057,7 +23585,7 @@ Objects {
 }
 Objects {
   Id: 3405945203110780827
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -25073,7 +23601,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25134,7 +23662,7 @@ Objects {
 }
 Objects {
   Id: 1013677333955956342
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -25150,7 +23678,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25288,7 +23816,7 @@ Objects {
 }
 Objects {
   Id: 13213120073500287786
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -25317,7 +23845,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -25403,7 +23931,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -25442,7 +23970,7 @@ Objects {
 }
 Objects {
   Id: 11000662650924125946
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -25458,7 +23986,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25519,7 +24047,7 @@ Objects {
 }
 Objects {
   Id: 8664907232545048715
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -25535,7 +24063,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25596,7 +24124,7 @@ Objects {
 }
 Objects {
   Id: 8913231506237806346
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -25673,7 +24201,7 @@ Objects {
 }
 Objects {
   Id: 6861952809181200628
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -25748,7 +24276,7 @@ Objects {
 }
 Objects {
   Id: 16021229747691815167
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -25764,7 +24292,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25874,7 +24402,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -25951,7 +24479,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -25979,7 +24507,7 @@ Objects {
 }
 Objects {
   Id: 15861418767856921185
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -25995,7 +24523,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26008,15 +24536,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -26026,8 +24555,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -26055,7 +24584,7 @@ Objects {
 }
 Objects {
   Id: 7955455130223433040
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -26071,7 +24600,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26361,7 +24890,7 @@ Objects {
 }
 Objects {
   Id: 5405932530047196332
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -26377,7 +24906,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26399,7 +24928,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -26462,7 +24991,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -26475,7 +25004,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -26720,7 +25249,7 @@ Objects {
 }
 Objects {
   Id: 12648248776687070499
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -26736,7 +25265,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26797,7 +25326,7 @@ Objects {
 }
 Objects {
   Id: 15010060292355380879
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -26813,7 +25342,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26951,7 +25480,7 @@ Objects {
 }
 Objects {
   Id: 14125133158649757443
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -26980,7 +25509,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -27066,7 +25595,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -27105,7 +25634,7 @@ Objects {
 }
 Objects {
   Id: 16390943449343979897
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -27121,7 +25650,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27182,7 +25711,7 @@ Objects {
 }
 Objects {
   Id: 16091061407029473370
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -27198,7 +25727,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27259,7 +25788,7 @@ Objects {
 }
 Objects {
   Id: 6096567719429112630
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -27336,7 +25865,7 @@ Objects {
 }
 Objects {
   Id: 877404132260701080
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -27411,7 +25940,7 @@ Objects {
 }
 Objects {
   Id: 3146347940168374942
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -27427,7 +25956,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27537,7 +26066,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -27614,7 +26143,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -27642,7 +26171,7 @@ Objects {
 }
 Objects {
   Id: 14939932260152389060
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -27658,7 +26187,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27671,15 +26200,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -27689,8 +26219,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -27718,7 +26248,7 @@ Objects {
 }
 Objects {
   Id: 12736939597428469122
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -27734,7 +26264,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28024,7 +26554,7 @@ Objects {
 }
 Objects {
   Id: 532395213179759136
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -28040,7 +26570,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28062,7 +26592,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -28125,7 +26655,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -28138,7 +26668,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -28383,7 +26913,7 @@ Objects {
 }
 Objects {
   Id: 5935852987680930140
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -28399,7 +26929,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28460,7 +26990,7 @@ Objects {
 }
 Objects {
   Id: 1280014363931509856
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -28476,7 +27006,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28614,7 +27144,7 @@ Objects {
 }
 Objects {
   Id: 3794241580067836012
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -28643,7 +27173,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -28729,7 +27259,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -28768,7 +27298,7 @@ Objects {
 }
 Objects {
   Id: 4254565661371357697
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -28784,7 +27314,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28845,7 +27375,7 @@ Objects {
 }
 Objects {
   Id: 4340341476868896837
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -28861,7 +27391,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28922,7 +27452,7 @@ Objects {
 }
 Objects {
   Id: 11373288889615556921
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -28999,7 +27529,7 @@ Objects {
 }
 Objects {
   Id: 17365217914644925706
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -29074,7 +27604,7 @@ Objects {
 }
 Objects {
   Id: 8595061693835735257
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -29090,7 +27620,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29200,7 +27730,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -29277,7 +27807,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -29305,7 +27835,7 @@ Objects {
 }
 Objects {
   Id: 4750669130261442841
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -29321,7 +27851,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29334,15 +27864,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -29352,8 +27883,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -29381,7 +27912,7 @@ Objects {
 }
 Objects {
   Id: 16754565626533123030
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -29397,7 +27928,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29687,7 +28218,7 @@ Objects {
 }
 Objects {
   Id: 12121888649392056432
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -29703,7 +28234,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29725,7 +28256,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -29788,7 +28319,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -29801,7 +28332,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -30046,7 +28577,7 @@ Objects {
 }
 Objects {
   Id: 2872833663579231110
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -30062,7 +28593,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30123,7 +28654,7 @@ Objects {
 }
 Objects {
   Id: 7032272475503113968
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -30139,7 +28670,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30277,7 +28808,7 @@ Objects {
 }
 Objects {
   Id: 1644870067975613646
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -30306,7 +28837,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -30392,7 +28923,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -30431,7 +28962,7 @@ Objects {
 }
 Objects {
   Id: 9712228623745853362
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -30447,7 +28978,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30508,7 +29039,7 @@ Objects {
 }
 Objects {
   Id: 10522091120707311446
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -30524,7 +29055,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30585,7 +29116,7 @@ Objects {
 }
 Objects {
   Id: 5906607664846250187
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -30662,7 +29193,7 @@ Objects {
 }
 Objects {
   Id: 16764738286179502269
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -30737,7 +29268,7 @@ Objects {
 }
 Objects {
   Id: 10815894578129046464
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -30753,7 +29284,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30863,7 +29394,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -30940,7 +29471,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -30968,7 +29499,7 @@ Objects {
 }
 Objects {
   Id: 9253251755303660194
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -30984,7 +29515,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30997,15 +29528,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -31015,8 +29547,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -31044,7 +29576,7 @@ Objects {
 }
 Objects {
   Id: 583373444202100906
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -31060,7 +29592,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31350,7 +29882,7 @@ Objects {
 }
 Objects {
   Id: 5690580522539192328
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -31366,7 +29898,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31388,7 +29920,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -31451,7 +29983,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -31464,7 +29996,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -31709,7 +30241,7 @@ Objects {
 }
 Objects {
   Id: 3469026581661965416
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -31725,7 +30257,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31786,7 +30318,7 @@ Objects {
 }
 Objects {
   Id: 15786690100022325038
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -31802,7 +30334,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31940,7 +30472,7 @@ Objects {
 }
 Objects {
   Id: 15219443993244885907
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -31969,7 +30501,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -32055,7 +30587,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -32094,7 +30626,7 @@ Objects {
 }
 Objects {
   Id: 14327624986358683554
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -32110,7 +30642,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32171,7 +30703,7 @@ Objects {
 }
 Objects {
   Id: 2007525997283876820
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -32187,7 +30719,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32248,7 +30780,7 @@ Objects {
 }
 Objects {
   Id: 17717625255110592052
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -32325,7 +30857,7 @@ Objects {
 }
 Objects {
   Id: 2036087132858892262
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -32400,7 +30932,7 @@ Objects {
 }
 Objects {
   Id: 16392803415818313285
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -32416,7 +30948,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32526,7 +31058,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -32603,7 +31135,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -32631,7 +31163,7 @@ Objects {
 }
 Objects {
   Id: 4209619900420837987
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -32647,7 +31179,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32660,15 +31192,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -32678,8 +31211,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -32707,7 +31240,7 @@ Objects {
 }
 Objects {
   Id: 9296844531857876610
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -32723,7 +31256,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33013,7 +31546,7 @@ Objects {
 }
 Objects {
   Id: 5875542901794187081
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -33029,7 +31562,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33051,7 +31584,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -33114,7 +31647,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -33127,7 +31660,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -33372,7 +31905,7 @@ Objects {
 }
 Objects {
   Id: 11714230998959583314
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -33388,7 +31921,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33449,7 +31982,7 @@ Objects {
 }
 Objects {
   Id: 4721570640848951783
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -33465,7 +31998,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33603,7 +32136,7 @@ Objects {
 }
 Objects {
   Id: 2796653285546637349
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -33632,7 +32165,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -33718,7 +32251,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -33757,7 +32290,7 @@ Objects {
 }
 Objects {
   Id: 8511726205638217528
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -33773,7 +32306,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33834,7 +32367,7 @@ Objects {
 }
 Objects {
   Id: 7667534538323273704
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -33850,7 +32383,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33911,7 +32444,7 @@ Objects {
 }
 Objects {
   Id: 12657038658384679473
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -33988,7 +32521,7 @@ Objects {
 }
 Objects {
   Id: 17493764782058477330
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -34063,7 +32596,7 @@ Objects {
 }
 Objects {
   Id: 12953300885568596867
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -34079,7 +32612,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34189,7 +32722,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -34266,7 +32799,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -34294,7 +32827,7 @@ Objects {
 }
 Objects {
   Id: 6647829272919623838
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -34310,7 +32843,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34323,15 +32856,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -34341,8 +32875,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -34370,7 +32904,7 @@ Objects {
 }
 Objects {
   Id: 966941280332331834
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -34386,7 +32920,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34676,7 +33210,7 @@ Objects {
 }
 Objects {
   Id: 979063537615472539
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -34692,7 +33226,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34714,7 +33248,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -34777,7 +33311,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -34790,7 +33324,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -35035,7 +33569,7 @@ Objects {
 }
 Objects {
   Id: 8890227292425675122
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -35051,7 +33585,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35112,7 +33646,7 @@ Objects {
 }
 Objects {
   Id: 15704100938934651689
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -35128,7 +33662,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35266,7 +33800,7 @@ Objects {
 }
 Objects {
   Id: 3564545254845409492
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -35295,7 +33829,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -35381,7 +33915,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -35420,7 +33954,7 @@ Objects {
 }
 Objects {
   Id: 11150474962411435692
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -35436,7 +33970,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35497,7 +34031,7 @@ Objects {
 }
 Objects {
   Id: 6569505881865699997
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -35513,7 +34047,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35574,7 +34108,7 @@ Objects {
 }
 Objects {
   Id: 4481348164893530049
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -35651,7 +34185,7 @@ Objects {
 }
 Objects {
   Id: 8910052970692332738
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -35726,7 +34260,7 @@ Objects {
 }
 Objects {
   Id: 7214015915561847126
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -35742,7 +34276,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35852,7 +34386,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -35929,7 +34463,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -35957,7 +34491,7 @@ Objects {
 }
 Objects {
   Id: 1058719044043210039
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -35973,7 +34507,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35986,15 +34520,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -36004,8 +34539,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -36033,7 +34568,7 @@ Objects {
 }
 Objects {
   Id: 6093065212062964074
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -36049,7 +34584,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36339,7 +34874,7 @@ Objects {
 }
 Objects {
   Id: 1265710995540907993
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -36355,7 +34890,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36377,7 +34912,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -36440,7 +34975,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -36453,7 +34988,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -36698,7 +35233,7 @@ Objects {
 }
 Objects {
   Id: 12413270829722779984
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -36714,7 +35249,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36775,7 +35310,7 @@ Objects {
 }
 Objects {
   Id: 15321702312623801152
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -36791,7 +35326,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36929,7 +35464,7 @@ Objects {
 }
 Objects {
   Id: 14886305733627543193
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -36958,7 +35493,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -37044,7 +35579,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -37083,7 +35618,7 @@ Objects {
 }
 Objects {
   Id: 7532351501421133080
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -37099,7 +35634,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37160,7 +35695,7 @@ Objects {
 }
 Objects {
   Id: 15113665184431460217
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -37176,7 +35711,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37237,7 +35772,7 @@ Objects {
 }
 Objects {
   Id: 5114632356870472578
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -37314,7 +35849,7 @@ Objects {
 }
 Objects {
   Id: 4025450556381186434
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -37389,7 +35924,7 @@ Objects {
 }
 Objects {
   Id: 2651232511480609908
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -37405,7 +35940,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37515,7 +36050,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -37592,7 +36127,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -37620,7 +36155,7 @@ Objects {
 }
 Objects {
   Id: 13764631763708942663
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -37636,7 +36171,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37649,15 +36184,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -37667,8 +36203,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -37696,7 +36232,7 @@ Objects {
 }
 Objects {
   Id: 18192813005466102865
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -37712,7 +36248,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38002,7 +36538,7 @@ Objects {
 }
 Objects {
   Id: 15952685726228564031
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -38018,7 +36554,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38040,7 +36576,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -38103,7 +36639,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -38116,7 +36652,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -38361,7 +36897,7 @@ Objects {
 }
 Objects {
   Id: 1259815503534444947
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -38377,7 +36913,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38438,7 +36974,7 @@ Objects {
 }
 Objects {
   Id: 16651904919326434895
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -38454,7 +36990,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38592,7 +37128,7 @@ Objects {
 }
 Objects {
   Id: 13836535058594429372
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -38621,7 +37157,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -38707,7 +37243,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -38746,7 +37282,7 @@ Objects {
 }
 Objects {
   Id: 14770416084874255971
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -38762,7 +37298,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38823,7 +37359,7 @@ Objects {
 }
 Objects {
   Id: 4610892345180407850
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -38839,7 +37375,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38900,7 +37436,7 @@ Objects {
 }
 Objects {
   Id: 7261496084734097831
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -38977,7 +37513,7 @@ Objects {
 }
 Objects {
   Id: 3862483713203503428
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -39052,7 +37588,7 @@ Objects {
 }
 Objects {
   Id: 4664905950501160320
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -39068,7 +37604,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39178,7 +37714,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -39255,7 +37791,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -39283,7 +37819,7 @@ Objects {
 }
 Objects {
   Id: 15123136159671977126
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -39299,7 +37835,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39312,15 +37848,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -39330,8 +37867,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -39359,7 +37896,7 @@ Objects {
 }
 Objects {
   Id: 13144740737030889207
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -39375,7 +37912,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39665,7 +38202,7 @@ Objects {
 }
 Objects {
   Id: 9912589168513571085
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -39681,7 +38218,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39703,7 +38240,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -39766,7 +38303,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -39779,7 +38316,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -40024,7 +38561,7 @@ Objects {
 }
 Objects {
   Id: 4112936488407073458
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -40040,7 +38577,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40101,7 +38638,7 @@ Objects {
 }
 Objects {
   Id: 12234499023225317793
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -40117,7 +38654,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40255,7 +38792,7 @@ Objects {
 }
 Objects {
   Id: 10051292747672587146
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -40284,7 +38821,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -40370,7 +38907,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -40409,7 +38946,7 @@ Objects {
 }
 Objects {
   Id: 14759465135765348477
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -40425,7 +38962,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40486,7 +39023,7 @@ Objects {
 }
 Objects {
   Id: 10936959712273879182
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -40502,7 +39039,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40563,7 +39100,7 @@ Objects {
 }
 Objects {
   Id: 7243088315817813480
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -40640,7 +39177,7 @@ Objects {
 }
 Objects {
   Id: 3075683603664372986
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -40715,7 +39252,7 @@ Objects {
 }
 Objects {
   Id: 13120396092190139825
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -40731,7 +39268,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40841,7 +39378,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -40918,7 +39455,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -40946,7 +39483,7 @@ Objects {
 }
 Objects {
   Id: 13995422878270489679
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -40962,7 +39499,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40975,15 +39512,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -40993,8 +39531,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -41022,7 +39560,7 @@ Objects {
 }
 Objects {
   Id: 2788753160823217953
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -41038,7 +39576,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41328,7 +39866,7 @@ Objects {
 }
 Objects {
   Id: 2010961247172820790
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -41344,7 +39882,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41366,7 +39904,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -41429,7 +39967,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -41442,7 +39980,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -41687,7 +40225,7 @@ Objects {
 }
 Objects {
   Id: 9256146456305714501
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -41703,7 +40241,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41764,7 +40302,7 @@ Objects {
 }
 Objects {
   Id: 10330207997362098061
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -41780,7 +40318,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41918,7 +40456,7 @@ Objects {
 }
 Objects {
   Id: 14143395470658949089
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -41947,7 +40485,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -42033,7 +40571,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -42072,7 +40610,7 @@ Objects {
 }
 Objects {
   Id: 5056813188852588987
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -42088,7 +40626,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42149,7 +40687,7 @@ Objects {
 }
 Objects {
   Id: 4992927397363712770
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -42165,7 +40703,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42226,7 +40764,7 @@ Objects {
 }
 Objects {
   Id: 7269607877121246204
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -42303,7 +40841,7 @@ Objects {
 }
 Objects {
   Id: 15914653733840498898
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -42378,7 +40916,7 @@ Objects {
 }
 Objects {
   Id: 5904043442075642632
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -42394,7 +40932,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42504,7 +41042,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -42581,7 +41119,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -42609,7 +41147,7 @@ Objects {
 }
 Objects {
   Id: 9129472750288278646
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -42625,7 +41163,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42638,15 +41176,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -42656,8 +41195,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -42685,7 +41224,7 @@ Objects {
 }
 Objects {
   Id: 16731913495613941336
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -42701,7 +41240,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42991,7 +41530,7 @@ Objects {
 }
 Objects {
   Id: 15878104866608104950
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -43007,7 +41546,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43029,7 +41568,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -43092,7 +41631,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -43105,7 +41644,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -43350,7 +41889,7 @@ Objects {
 }
 Objects {
   Id: 1725281391044008479
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -43366,7 +41905,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43427,7 +41966,7 @@ Objects {
 }
 Objects {
   Id: 1927520636410490920
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -43443,7 +41982,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43581,7 +42120,7 @@ Objects {
 }
 Objects {
   Id: 132707263107533543
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -43610,7 +42149,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -43696,7 +42235,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -43735,7 +42274,7 @@ Objects {
 }
 Objects {
   Id: 17794940616206664611
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -43751,7 +42290,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43812,7 +42351,7 @@ Objects {
 }
 Objects {
   Id: 5819271058057605178
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -43828,7 +42367,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43889,7 +42428,7 @@ Objects {
 }
 Objects {
   Id: 4716586280130124717
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -43966,7 +42505,7 @@ Objects {
 }
 Objects {
   Id: 12704893706911472771
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -44041,7 +42580,7 @@ Objects {
 }
 Objects {
   Id: 17857878862248064354
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -44057,7 +42596,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44167,7 +42706,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -44244,7 +42783,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -44272,7 +42811,7 @@ Objects {
 }
 Objects {
   Id: 5976598599861653928
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -44288,7 +42827,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44301,15 +42840,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -44319,8 +42859,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -44348,7 +42888,7 @@ Objects {
 }
 Objects {
   Id: 6084166103490956337
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -44364,7 +42904,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44654,7 +43194,7 @@ Objects {
 }
 Objects {
   Id: 8115721042473575994
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -44670,7 +43210,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44692,7 +43232,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -44755,7 +43295,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -44768,7 +43308,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -45013,7 +43553,7 @@ Objects {
 }
 Objects {
   Id: 11965787911973704747
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -45029,7 +43569,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45090,7 +43630,7 @@ Objects {
 }
 Objects {
   Id: 12598840590015121652
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -45106,7 +43646,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45244,7 +43784,7 @@ Objects {
 }
 Objects {
   Id: 10664374596846792126
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -45273,7 +43813,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -45359,7 +43899,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -45398,7 +43938,7 @@ Objects {
 }
 Objects {
   Id: 5226349614662787381
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -45414,7 +43954,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45475,7 +44015,7 @@ Objects {
 }
 Objects {
   Id: 8372798109301237145
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -45491,7 +44031,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45552,7 +44092,7 @@ Objects {
 }
 Objects {
   Id: 5198901257339645226
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -45629,7 +44169,7 @@ Objects {
 }
 Objects {
   Id: 4595745078294426740
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -45704,7 +44244,7 @@ Objects {
 }
 Objects {
   Id: 3439461899292663393
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -45720,7 +44260,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45830,7 +44370,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -45907,7 +44447,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -45935,7 +44475,7 @@ Objects {
 }
 Objects {
   Id: 9732322829514214527
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -45951,7 +44491,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45964,15 +44504,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -45982,8 +44523,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -46011,7 +44552,7 @@ Objects {
 }
 Objects {
   Id: 8474464076859892858
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -46027,7 +44568,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46317,7 +44858,7 @@ Objects {
 }
 Objects {
   Id: 1275513860360356190
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -46333,7 +44874,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46355,7 +44896,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -46418,7 +44959,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -46431,7 +44972,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -46676,7 +45217,7 @@ Objects {
 }
 Objects {
   Id: 3219946855977932737
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -46692,7 +45233,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46753,7 +45294,7 @@ Objects {
 }
 Objects {
   Id: 3187121822266360267
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -46769,7 +45310,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46907,7 +45448,7 @@ Objects {
 }
 Objects {
   Id: 17436016916106122274
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -46936,7 +45477,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -47022,7 +45563,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -47061,7 +45602,7 @@ Objects {
 }
 Objects {
   Id: 11324303175290021868
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -47077,7 +45618,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47138,7 +45679,7 @@ Objects {
 }
 Objects {
   Id: 16915815371941906762
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -47154,7 +45695,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47215,7 +45756,7 @@ Objects {
 }
 Objects {
   Id: 13399919236836180584
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -47292,7 +45833,7 @@ Objects {
 }
 Objects {
   Id: 210187466867150405
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -47367,7 +45908,7 @@ Objects {
 }
 Objects {
   Id: 18443207748085963179
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -47383,7 +45924,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47493,7 +46034,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -47570,7 +46111,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -47598,7 +46139,7 @@ Objects {
 }
 Objects {
   Id: 7379447286743423404
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -47614,7 +46155,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47627,15 +46168,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -47645,8 +46187,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -47674,7 +46216,7 @@ Objects {
 }
 Objects {
   Id: 558158208248296962
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -47690,7 +46232,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47980,7 +46522,7 @@ Objects {
 }
 Objects {
   Id: 49178797066344602
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -47996,7 +46538,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48018,7 +46560,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -48081,7 +46623,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -48094,7 +46636,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -48339,7 +46881,7 @@ Objects {
 }
 Objects {
   Id: 2740339628400944416
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -48355,7 +46897,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48416,7 +46958,7 @@ Objects {
 }
 Objects {
   Id: 212644145191143860
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -48432,7 +46974,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48570,7 +47112,7 @@ Objects {
 }
 Objects {
   Id: 16563207679361408176
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -48599,7 +47141,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -48685,7 +47227,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -48724,7 +47266,7 @@ Objects {
 }
 Objects {
   Id: 1974155678115518704
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -48740,7 +47282,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48801,7 +47343,7 @@ Objects {
 }
 Objects {
   Id: 1404602060901531382
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -48817,7 +47359,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48878,7 +47420,7 @@ Objects {
 }
 Objects {
   Id: 12577767989408145909
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -48955,7 +47497,7 @@ Objects {
 }
 Objects {
   Id: 7624573665528735214
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -49030,7 +47572,7 @@ Objects {
 }
 Objects {
   Id: 12394289337656116069
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -49046,7 +47588,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49156,7 +47698,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -49233,7 +47775,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -49261,7 +47803,7 @@ Objects {
 }
 Objects {
   Id: 10737352985420097493
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -49277,7 +47819,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49290,15 +47832,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -49308,8 +47851,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -49337,7 +47880,7 @@ Objects {
 }
 Objects {
   Id: 8343167343234629585
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -49353,7 +47896,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49643,7 +48186,7 @@ Objects {
 }
 Objects {
   Id: 14291350987930062316
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -49659,7 +48202,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49681,7 +48224,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -49744,7 +48287,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -49757,7 +48300,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -50002,7 +48545,7 @@ Objects {
 }
 Objects {
   Id: 9967809850784768146
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -50018,7 +48561,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50079,7 +48622,7 @@ Objects {
 }
 Objects {
   Id: 13744853209679249894
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -50095,7 +48638,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50233,7 +48776,7 @@ Objects {
 }
 Objects {
   Id: 2822933052475671504
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -50262,7 +48805,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -50348,7 +48891,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -50387,7 +48930,7 @@ Objects {
 }
 Objects {
   Id: 6650669306911504855
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -50403,7 +48946,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50464,7 +49007,7 @@ Objects {
 }
 Objects {
   Id: 1487054095332661607
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -50480,7 +49023,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50541,7 +49084,7 @@ Objects {
 }
 Objects {
   Id: 17629729012115529668
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -50618,7 +49161,7 @@ Objects {
 }
 Objects {
   Id: 276035142212396423
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -50693,7 +49236,7 @@ Objects {
 }
 Objects {
   Id: 2733237606829803893
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -50709,7 +49252,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50819,7 +49362,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -50896,7 +49439,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -50924,7 +49467,7 @@ Objects {
 }
 Objects {
   Id: 17291261365156989786
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -50940,7 +49483,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50953,15 +49496,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -50971,8 +49515,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -51000,7 +49544,7 @@ Objects {
 }
 Objects {
   Id: 2556617005503003349
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -51016,7 +49560,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51306,7 +49850,7 @@ Objects {
 }
 Objects {
   Id: 7443855862822240256
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -51322,7 +49866,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51344,7 +49888,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -51407,7 +49951,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -51420,7 +49964,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -51665,7 +50209,7 @@ Objects {
 }
 Objects {
   Id: 4755772951879796552
-  Name: "Forest Floor"
+  Name: "Forest"
   Transform {
     Location {
     }
@@ -51681,7 +50225,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest Floor"
+      String: "Forest"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51742,7 +50286,7 @@ Objects {
 }
 Objects {
   Id: 2809349009900295704
-  Name: "Sand Dunes"
+  Name: "Wood"
   Transform {
     Location {
     }
@@ -51758,7 +50302,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Sand Dunes"
+      String: "Wood"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51896,7 +50440,7 @@ Objects {
 }
 Objects {
   Id: 14135026844896665478
-  Name: "Stripes Blue Alt"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -51925,7 +50469,7 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0170999952
+        R: 0.0171000138
         G: 0.0548199
         B: 0.3
         A: 1
@@ -52011,7 +50555,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 4085560558169437084
       }
     }
     Overrides {
@@ -52050,7 +50594,7 @@ Objects {
 }
 Objects {
   Id: 17440051507839696273
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -52066,7 +50610,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52127,7 +50671,7 @@ Objects {
 }
 Objects {
   Id: 6699843848968548006
-  Name: "Reflector Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -52143,7 +50687,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52204,7 +50748,7 @@ Objects {
 }
 Objects {
   Id: 18128652449346221519
-  Name: "Reflector Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -52281,7 +50825,7 @@ Objects {
 }
 Objects {
   Id: 6551384563502512808
-  Name: "Reflector Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -52356,7 +50900,7 @@ Objects {
 }
 Objects {
   Id: 8404624630338627076
-  Name: "Tiled Green"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -52372,7 +50916,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Tiled Green"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52482,7 +51026,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -52559,7 +51103,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -52587,7 +51131,7 @@ Objects {
 }
 Objects {
   Id: 8761678227559321725
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -52603,7 +51147,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52616,15 +51160,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -52634,8 +51179,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -52663,7 +51208,7 @@ Objects {
 }
 Objects {
   Id: 409474437996968416
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -52679,7 +51224,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52969,7 +51514,7 @@ Objects {
 }
 Objects {
   Id: 12003260263826562024
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -52985,7 +51530,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53007,7 +51552,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -53070,7 +51615,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -53083,7 +51628,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -53559,7 +52104,7 @@ Objects {
 }
 Objects {
   Id: 9096678197437430281
-  Name: "Stripes Pink"
+  Name: "Stripes Purple"
   Transform {
     Location {
     }
@@ -53575,7 +52120,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Pink"
+      String: "Stripes Purple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53588,16 +52133,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.593000054
-        G: 0.154179975
-        B: 0.432099313
+        R: 0.0171000138
+        G: 0.0548199
+        B: 0.3
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 13501404373750306564
       }
     }
     Overrides {
@@ -53713,7 +52258,7 @@ Objects {
 }
 Objects {
   Id: 11548455975083619891
-  Name: "Stripes Purple"
+  Name: "Stripes Pink"
   Transform {
     Location {
     }
@@ -53729,7 +52274,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Stripes Purple"
+      String: "Stripes Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53742,16 +52287,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.0171000138
-        G: 0.0548199
-        B: 0.3
+        R: 0.593000054
+        G: 0.154179975
+        B: 0.432099313
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 13501404373750306564
+        Id: 942118974176962227
       }
     }
     Overrides {
@@ -53790,7 +52335,7 @@ Objects {
 }
 Objects {
   Id: 16505206136553593884
-  Name: "Crystal Grey"
+  Name: "Diamond Grey"
   Transform {
     Location {
     }
@@ -53806,7 +52351,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Crystal Grey"
+      String: "Diamond Grey"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53867,7 +52412,7 @@ Objects {
 }
 Objects {
   Id: 7765685262753171367
-  Name: "Crystal Green"
+  Name: "Diamond Green"
   Transform {
     Location {
     }
@@ -53883,7 +52428,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Crystal Green"
+      String: "Diamond Green"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53944,7 +52489,7 @@ Objects {
 }
 Objects {
   Id: 2966634416647790287
-  Name: "Crystal Red"
+  Name: "Diamond Red"
   Transform {
     Location {
     }
@@ -53960,7 +52505,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Crystal Red"
+      String: "Diamond Red"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54019,7 +52564,7 @@ Objects {
 }
 Objects {
   Id: 8475436981800501512
-  Name: "Scaled"
+  Name: "Scales"
   Transform {
     Location {
     }
@@ -54035,7 +52580,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scaled"
+      String: "Scales"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54145,7 +52690,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 5
-        Y: 4
+        Y: 3
       }
     }
     Overrides {
@@ -54222,7 +52767,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 4
+        Y: 5
       }
     }
     Overrides {
@@ -54250,7 +52795,7 @@ Objects {
 }
 Objects {
   Id: 15197203096780640642
-  Name: "Fruit"
+  Name: "Metal Plate"
   Transform {
     Location {
     }
@@ -54266,7 +52811,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Fruit"
+      String: "Metal Plate"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54279,15 +52824,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.39
-        G: 0.170463577
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 942118974176962227
+        Id: 8968668785704081500
       }
     }
     Overrides {
@@ -54297,8 +52843,8 @@ Objects {
     Overrides {
       Name: "cs:PreviewImageLocation"
       Vector2 {
-        X: 2
-        Y: 2
+        X: 1
+        Y: 1
       }
     }
     Overrides {
@@ -54326,7 +52872,7 @@ Objects {
 }
 Objects {
   Id: 10876686535246843456
-  Name: "Energy Tube"
+  Name: "Energy Glow"
   Transform {
     Location {
     }
@@ -54342,7 +52888,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Tube"
+      String: "Energy Glow"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54632,7 +53178,7 @@ Objects {
 }
 Objects {
   Id: 3685664866702263749
-  Name: "Magic Glass Purple"
+  Name: "Magic Glass Pink"
   Transform {
     Location {
     }
@@ -54648,7 +53194,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Purple"
+      String: "Magic Glass Pink"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54670,7 +53216,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 1537055059638672614
       }
     }
     Overrides {
@@ -54733,7 +53279,7 @@ Objects {
     }
     Overrides {
       Name: "cs:UseNewColor"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:NewColor"
@@ -54746,7 +53292,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2821307588416139022
+        Id: 3180794530394243418
       }
     }
     Overrides {
@@ -55885,7 +54431,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 3
+        Y: 5
       }
     }
     Overrides {
@@ -56257,7 +54803,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 2574487328325442820
+        Id: 6005397606915098357
       }
     }
     Overrides {
