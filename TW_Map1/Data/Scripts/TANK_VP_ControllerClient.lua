@@ -7,6 +7,9 @@ local recoilRockingMultiplier = tankControllerServer:GetCustomProperty("RecoilRo
 local recoilAmount = tankControllerServer:GetCustomProperty("RecoilAmount")
 local wheelSpeedModifier = tankControllerServer:GetCustomProperty("WheelSpeedModifier")
 
+-- Other asset refs
+local extinguishVFX = script:GetCustomProperty("ExtinguishVFX")
+
 -- Object References
 local adjustmentPoint = nil
 
@@ -170,6 +173,8 @@ function OnTankStateChanged(controllerServer, property)
 			if not Object.IsValid(fireState) then return end
 			
 			fireState.visibility = Visibility.FORCE_OFF
+
+			World.SpawnAsset(extinguishVFX, {parent = fireState})
 			
 			for _, i in ipairs(fireState:FindDescendantsByType("SFX")) do
 				i:Stop()

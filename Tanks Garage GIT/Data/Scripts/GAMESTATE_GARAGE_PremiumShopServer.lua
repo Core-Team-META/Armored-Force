@@ -79,7 +79,7 @@ function ConvertToFreeXP(player, xpTankString, RPTradeTotal)
 	end
 	
 	for s in string.gmatch(xpTankString, "([^:]+)") do
-		print("Tank with RP: " .. s)
+		--print("Tank with RP: " .. s)
 		totalXP = totalXP + player:GetResource(UTIL_API.GetTankRPString(tonumber(s)))
 		player:SetResource(UTIL_API.GetTankRPString(tonumber(s)), 0)
 	end

@@ -125,8 +125,27 @@ end
 
 function OnResourceChanged(player, resource, amount)
 
-	--print("resource recieved " .. resource)
 	
+	--print("resource recieved " .. resource)
+	if resource == CONSTANTS_API.SILVER and amount < 100 then
+		consumableSlots.treads.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		consumableSlots.extinguisher.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+		consumableSlots.repairKit.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
+
+		consumableSlots.treads.purchaseButton.isInteractable = false
+		consumableSlots.extinguisher.purchaseButton.isInteractable = false
+		consumableSlots.repairKit.purchaseButton.isInteractable = false
+
+	elseif resource == CONSTANTS_API.SILVER and amount >= 100 then
+		consumableSlots.treads.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		consumableSlots.extinguisher.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+		consumableSlots.repairKit.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
+
+		consumableSlots.treads.purchaseButton.isInteractable = true
+		consumableSlots.extinguisher.purchaseButton.isInteractable = true
+		consumableSlots.repairKit.purchaseButton.isInteractable = true
+	end
+
 	if resource == CONSTANTS_API.CONSUMABLES.TREADS or resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS then
 		if amount > 1 or (resource == CONSTANTS_API.CONSUMABLES.AUTO_TREADS and amount > 0) then
 			consumableSlots.treads.purchaseButton.isEnabled = false
@@ -228,7 +247,7 @@ function InitializeComponent()
 		Task.Wait()
 	end
 	
-	Task.Wait(1)
+	Task.Wait(5)
 	
 	for i = 100, 1, -1 do 
 		
@@ -237,6 +256,18 @@ function InitializeComponent()
 		Task.Wait(0.02)
 			
 	end
+	
+	local logo = blackScreen:GetChildren()[1]
+	
+	for i = 0, 100, 1 do 
+		
+		logo.y = -i * i
+			
+		Task.Wait(0.02)
+			
+	end
+	
+	blackScreen.visibility = Visibility.FORCE_OFF
 	
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.TREADS, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.TREADS))
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.EXTINGUISHER, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER))
@@ -258,7 +289,7 @@ function LoadEquippableTanks()
 	
 	for i, tank in ipairs(localPlayer.clientUserData.techTreeProgress) do
 	
-		print(tank.name .. " : " .. tostring(tank.purchased))
+		--print(tank.name .. " : " .. tostring(tank.purchased))
 	
 		if tank.purchased then
 			local button = World.SpawnAsset(equipTankButton, {parent = equipTankScrollPanel})

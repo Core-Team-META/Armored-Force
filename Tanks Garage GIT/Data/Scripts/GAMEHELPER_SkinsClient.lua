@@ -52,10 +52,7 @@ function InitializeTankSkin(player)
 			end
 		end
 	end	
-	
-	--print(selectedSkin)
-	--print(selectedTank)
-		
+			
 	if player.clientUserData.currentTankData then
 		vehicle = player.clientUserData.currentTankData.skin
 		SetSkinOnSpecificVehicle(player, vehicle, selectedTank, selectedSkin)
@@ -85,9 +82,6 @@ function ApplySkin(selectedSkin)
 		selectedTank = localPlayer.clientUserData.garageModel.id
 		--print("initializing with garage tank id")
 	end	
-	
-	--print(selectedSkin)
-	--print(selectedTank)
 		
 	if localPlayer.clientUserData.currentTankData then
 		vehicle = localPlayer.clientUserData.currentTankData.skin
@@ -113,7 +107,7 @@ function SetSkinOnSpecificVehicle(player, vehicle, tankID, skinID)
 		return
 	end
 	
-	print("changing to color " .. skinID)
+	--print("changing to color " .. skinID)
 	
     for _, child in pairs(changeThisGeo) do
         for _, slot in pairs(child:GetMaterialSlots()) do
