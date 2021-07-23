@@ -138,9 +138,10 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	
 	if playerStart then
 		--print("Using player start position")
-		baseForPosition = playerStart
+		--baseForPosition = playerStart
 	end
-	
+	print(baseForPosition)
+	print(CoreDebug.GetStackTrace())
 	local newScriptPosition = baseForPosition:GetWorldPosition()
 	local newScriptRotation = baseForPosition:GetWorldRotation()
 	
