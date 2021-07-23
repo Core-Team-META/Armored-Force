@@ -509,18 +509,38 @@ function OnArmorHit(trigger, other)
 			elseif trigger.name == "RIGHTTRACK" then
 				trackStatus = 2
 			end
+
+			if Object.IsValid(driver) then
+				Events.Broadcast("PlayerTrackedTank", driver)
+			end
+
 			trackTask = Task.Spawn(OnTracked, 0)
 			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TRACK")
 		elseif armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
+
+			if Object.IsValid(driver) then
+				Events.Broadcast("PlayerBurntTank", driver)
+			end
+
 			burnTask = Task.Spawn(OnBurning, 0)
 			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
 		elseif string.find(armorName, "TURRET") and not turretDamagedTask then
 			local pickTurretDamage = math.random(100)
 			if pickTurretDamage <= 50 then
+
+				if Object.IsValid(driver) then
+					Events.Broadcast("PlayerDamageTurret", driver)
+				end
+
 				turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
 				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TURRET")
 			else 
+
+				if Object.IsValid(driver) then
+					Events.Broadcast("PlayerDamageBarrel", driver)
+				end
+
 				turretDamagedTask = Task.Spawn(OnDamagedBarrel, 0)
 				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
 			end
@@ -579,6 +599,12 @@ function OnArmorHit(trigger, other)
 		damageDealt.sourcePlayer = driver
 		damageDealt.reason = DamageReason.COMBAT
 		--driver:ApplyDamage(damageDealt)
+
+
+		if Object.IsValid(driver) then
+			Events.Broadcast("PlayerRammedTank", playerWhoBurned)
+		end
+	
 
 		local attackData = {
 			object = enemyPlayer,
@@ -687,7 +713,8 @@ function OnBurning()
 	script:SetNetworkedCustomProperty("Burning", true)
 	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", true)
 	chassis.maxSpeed = math.floor(originalSpeed/2)
-	
+
+
 	for i = 10, 1, -1 do
 		if driver.isDead then break end
 
