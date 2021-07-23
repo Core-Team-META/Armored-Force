@@ -24092,7 +24092,8 @@ Assets {
           TeamSettings {
           }
           AudioBP {
-            Volume: 3
+            Pitch: -100
+            Volume: 4
             Falloff: 7000
             Radius: 3000
             IsSpatializationEnabled: true
@@ -24111,20 +24112,20 @@ Assets {
             Pitch: -90
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 0.3
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 12264709468389717398
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
-            Float: 0.903791308
+            Float: 0.858964205
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 6.54244661
+            Float: 10
           }
           Overrides {
             Name: "bp:Enable Light"
@@ -24137,6 +24138,10 @@ Assets {
           Overrides {
             Name: "bp:Local Space"
             Bool: true
+          }
+          Overrides {
+            Name: "bp:Initial Start Delay"
+            Float: 0.15
           }
         }
         Collidable_v2 {

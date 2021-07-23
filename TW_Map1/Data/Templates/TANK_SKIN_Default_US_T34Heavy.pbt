@@ -37937,9 +37937,10 @@ Assets {
           TeamSettings {
           }
           AudioBP {
-            Volume: 3
+            Pitch: -100
+            Volume: 4
             Falloff: 7000
-            Radius: 3000
+            Radius: 4000
             IsSpatializationEnabled: true
             IsAttenuationEnabled: true
           }
@@ -37956,9 +37957,9 @@ Assets {
             Pitch: -90
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 0.3
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
           }
         }
         ParentId: 3620219412878733742
@@ -37969,7 +37970,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 6.54244661
+            Float: 12.542
           }
           Overrides {
             Name: "bp:Enable Light"

@@ -26668,7 +26668,7 @@ Assets {
           Overrides {
             Name: "bp:Type"
             Enum {
-              Value: "mc:esfx_cannonshots:59"
+              Value: "mc:esfx_cannonshots:28"
             }
           }
           Overrides {
@@ -26692,7 +26692,7 @@ Assets {
           TeamSettings {
           }
           AudioBP {
-            Volume: 3
+            Volume: 2
             Falloff: 7000
             Radius: 3000
             IsSpatializationEnabled: true
@@ -26711,9 +26711,9 @@ Assets {
             Pitch: -90
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 0.3
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
           }
         }
         ParentId: 3350857943996323809
@@ -26724,7 +26724,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 6.54244661
+            Float: 4.542
           }
           Overrides {
             Name: "bp:Enable Light"
