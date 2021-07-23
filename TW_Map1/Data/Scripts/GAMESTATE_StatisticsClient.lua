@@ -322,6 +322,11 @@ function ShowXP(obj)
 end
 
 function OnResourceChanged(player, resource, value)
+	-- Turn off Rank Up text
+	if true then
+		return
+	end
+
 	if(resource == Constants_API.RANK_NAME) then
 		local panel = World.SpawnAsset(RankEntry, {parent = showXPPanel})
 		panel:FindChildByName("Text").text = " RANK UP! Rank " .. tostring(value)
