@@ -179,12 +179,12 @@ function ToggleThisComponent(requestedPlayerState)
 		Task.Wait(2.5)
 		
 		if savedState ~= thisComponent then
-		print("Clearing")
+		--print("Clearing")
 			LOCAL_PLAYER:ClearOverrideCamera()
 			return
 		end
 		
-		print("Override")
+		--print("Override")
 		LOCAL_PLAYER:SetOverrideCamera(overrideCamera)
 		
 		displayTanks.visibility = Visibility.FORCE_ON
@@ -281,7 +281,7 @@ function PopulatePlayerPanel()
 end
 
 function PopulateSelectedTankPanel(id)
-	print(doNotShowModal)
+	--print(doNotShowModal)
 	local selectedTankId = id or -1
 	local tankData = {}
 	local isSelection = tonumber(selectedTankId) > 0 
@@ -499,7 +499,7 @@ function ConfirmButtonClicked()
 	if(confirmButtonFunction == "EQUIP") then
 		Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankDetails.id)
 		Events.Broadcast("CHANGE_EQUIPPED_TANK", tankDetails.id) 
-		print(tankDetails.id)
+		--print(tankDetails.id)
 		SFX_EQUIP_TANK:Play()
 		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 	elseif(confirmButtonFunction == "PURCHASE") then
@@ -905,11 +905,11 @@ function UpgradeTank()
 		ToggleResearchSidePanel()
 		freeRPValue.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.FREERP))
 		if(researchPointCollection[1] ~= nil) then
-			print(researchPointCollection[1].rp)
+			--print(researchPointCollection[1].rp)
 			TogglePrerequisite1Visibility(Visibility.FORCE_ON)
 		end
 		if(researchPointCollection[2] ~= nil) then
-			print(researchPointCollection[2].rp)
+			--print(researchPointCollection[2].rp)
 			TogglePrerequisite2Visibility(Visibility.FORCE_ON)
 		end		
 	end
@@ -942,7 +942,7 @@ end
 
 -- Upgrade the weapon progress for the tank loaded into tankDetails
 function UpgradeWeapon()
-	print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
+	--print("Purchase cost: " .. tankDetails.weaponPurchaseCost)
 	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 	if(silver < tankDetails.weaponPurchaseCost) then
 		-- DEBUG
@@ -988,7 +988,7 @@ end
 
 -- Upgrade the armor progress for the tank loaded into tankDetails
 function UpgradeArmor()
-	print("Purchase cost: " .. tankDetails.armorPurchaseCost)
+	--print("Purchase cost: " .. tankDetails.armorPurchaseCost)
 	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 	if(silver < tankDetails.armorPurchaseCost) then
 		-- DEBUG
@@ -1028,7 +1028,7 @@ end
 
 -- Upgrade the engine progress for the tank loaded into tankDetails
 function UpgradeEngine()
-	print("Purchase cost: " .. tankDetails.mobilityPurchaseCost)
+	--print("Purchase cost: " .. tankDetails.mobilityPurchaseCost)
 	local silver = LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 	if(silver < tankDetails.mobilityPurchaseCost) then
 		-- DEBUG
@@ -1080,10 +1080,10 @@ function GetPrerequisiteRPValues(id)
 	local prerequisites = {}
 	local prerequisite1 = {}
 	local prerequisite2 = {}
-	print("Getting pre-req RP values")
+	--print("Getting pre-req RP values")
 	for i, tank in ipairs(TANK_LIST) do
 		if(tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
-			print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
+			--print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
 			if(tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
 				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
 				local preReq1Tank = GetTankData(preReq1Id)
@@ -1156,7 +1156,7 @@ function PopulateDetailsModal(tank)
 	tankDetails.tankResearchCost = tank:GetCustomProperty("ResearchCost")
 	tankDetails.tankPurchaseCost = tank:GetCustomProperty("PurchaseCost")
 	tankDetails.currency = tank:GetCustomProperty("PurchaseCurrencyName")
-	print(tankDetails.currency)
+	--print(tankDetails.currency)
 	if(tankDetails.purchasedTank) then		
 		upgradeTank.text = "Equip"
 		upgradeTankCost.visibility = Visibility.FORCE_OFF
@@ -1195,16 +1195,16 @@ function PopulateDetailsModal(tank)
 	if(tankDetails.purchasedTank) then
 		-- Hide upgrade buttons if they aren't needed
 		if(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.PURCHASED)) then
-			print("weapon purchased")
+			--print("weapon purchased")
 			upgradeWeapon.visibility = Visibility.FORCE_OFF
 			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
 		elseif(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.RESEARCHED)) then
-			print("weapon researched")
+			--print("weapon researched")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
 			upgradeWeapon.text = "P " .. tostring(tank:GetCustomProperty("WeaponPurchaseCost"))
 			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		elseif(tostring(tankDetails.weaponProgress) == tostring(Constants_API.UPGRADE_PROGRESS.NONE)) then
-			print("no weapon progress")
+			--print("no weapon progress")
 			upgradeWeapon.visibility = Visibility.FORCE_ON
 			upgradeWeapon.text = "R " .. tostring(tank:GetCustomProperty("WeaponResearchCost"))
 			upgradeWeapon:FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF

@@ -247,7 +247,7 @@ function InitializeComponent()
 		Task.Wait()
 	end
 	
-	Task.Wait(1)
+	Task.Wait(5)
 	
 	for i = 100, 1, -1 do 
 		
@@ -256,6 +256,18 @@ function InitializeComponent()
 		Task.Wait(0.02)
 			
 	end
+	
+	local logo = blackScreen:GetChildren()[1]
+	
+	for i = 0, 100, 1 do 
+		
+		logo.y = -i * i
+			
+		Task.Wait(0.02)
+			
+	end
+	
+	blackScreen.visibility = Visibility.FORCE_OFF
 	
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.TREADS, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.TREADS))
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.EXTINGUISHER, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.EXTINGUISHER))
@@ -277,7 +289,7 @@ function LoadEquippableTanks()
 	
 	for i, tank in ipairs(localPlayer.clientUserData.techTreeProgress) do
 	
-		print(tank.name .. " : " .. tostring(tank.purchased))
+		--print(tank.name .. " : " .. tostring(tank.purchased))
 	
 		if tank.purchased then
 			local button = World.SpawnAsset(equipTankButton, {parent = equipTankScrollPanel})
