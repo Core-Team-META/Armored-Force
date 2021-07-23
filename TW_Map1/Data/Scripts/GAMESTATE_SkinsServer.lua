@@ -58,9 +58,9 @@ function OnPurchaseSkin(player, tankID, skinID)
 	local camoTable = player.serverUserData.camoData
 
 	if not camoTable[tankID] or not camoTable[tankID][skinID] then
-		print(camoTable[tankID])
-		print(camoTable[tankID][skinID])
-		print("invalid due to tankID: " .. tostring(tankID) .. " or skinID: " .. tostring(skinID))
+		--print(camoTable[tankID])
+		--print(camoTable[tankID][skinID])
+		--print("invalid due to tankID: " .. tostring(tankID) .. " or skinID: " .. tostring(skinID))
 		return
 	end
 	
@@ -68,10 +68,10 @@ function OnPurchaseSkin(player, tankID, skinID)
 	local currentResourceAmount = player:GetResource(resource)
 	local skinResourceCost = allIndividualSkins[tankID][skinID].cost
 	
-	print("current player " .. resource .. ": " .. tostring(currentResourceAmount) .. " cost: " .. tostring(skinResourceCost))
+	--print("current player " .. resource .. ": " .. tostring(currentResourceAmount) .. " cost: " .. tostring(skinResourceCost))
 	
 	if currentResourceAmount < skinResourceCost then
-		print("Not enough funds")
+		--print("Not enough funds")
 		return
 	end
 		
@@ -79,7 +79,7 @@ function OnPurchaseSkin(player, tankID, skinID)
 	 
 	camoTable[tankID][skinID].purchased = true
 	
-	print("Purchasing " .. tostring(skinID) .. " on " .. tostring(tankID) .. " for " .. player.name)
+	--print("Purchasing " .. tostring(skinID) .. " on " .. tostring(tankID) .. " for " .. player.name)
 	 
     dataTransferSet[player]:SetNetworkedCustomProperty("Data", ConvertSkinDataToString(player))
 
@@ -90,9 +90,9 @@ function OnEquipSkin(player, tankID, skinID)
 	local camoTable = player.serverUserData.camoData
 
 	if not camoTable[tankID] or not camoTable[tankID][skinID] then
-		print(camoTable[tankID])
-		print(camoTable[tankID][skinID])
-		print("invalid due to tankID: " .. tostring(tankID) .. " or skinID: " .. tostring(skinID))
+		--print(camoTable[tankID])
+		--print(camoTable[tankID][skinID])
+		--print("invalid due to tankID: " .. tostring(tankID) .. " or skinID: " .. tostring(skinID))
 		return
 	end
 	
@@ -106,7 +106,7 @@ function OnEquipSkin(player, tankID, skinID)
 	 
 	camoTable[tankID][skinID].equipped = true
 	
-	print("Equipping " .. tostring(skinID) .. " to " .. tostring(tankID) .. " for " .. player.name)
+	--print("Equipping " .. tostring(skinID) .. " to " .. tostring(tankID) .. " for " .. player.name)
 	 
     dataTransferSet[player]:SetNetworkedCustomProperty("Data", ConvertSkinDataToString(player))
 	
@@ -131,7 +131,7 @@ function SetNewPlayerSkins(playerSharedStorage)
 		
 		skinString = skinString .. ";"
 	end
-	print("New Player String: " .. skinString)
+	--print("New Player String: " .. skinString)
 	
 	playerSharedStorage[CONSTANTS_API.TANK_SKIN.INDIVIDUAL] = skinString
 	

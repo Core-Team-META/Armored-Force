@@ -113,7 +113,7 @@ function SetSkinOnSpecificVehicle(player, vehicle, tankID, skinID)
 		return
 	end
 	
-	print("changing to color " .. skinID)
+	--print("changing to color " .. skinID)
 	
     for _, child in pairs(changeThisGeo) do
         for _, slot in pairs(child:GetMaterialSlots()) do
