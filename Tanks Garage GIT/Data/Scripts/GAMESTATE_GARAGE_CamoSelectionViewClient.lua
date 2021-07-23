@@ -126,8 +126,6 @@ end
 function AssignPreviewText()
 
 	for _, entry in pairs(localPlayer.clientUserData.techTreeProgress) do
-	
-		print(entry.id)
 		
 		if tankEntries[entry.id] then
 			if entry.purchased then
