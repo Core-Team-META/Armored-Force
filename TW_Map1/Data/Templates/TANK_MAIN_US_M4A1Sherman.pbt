@@ -95,11 +95,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 750
+            Int: 1050
           }
           Overrides {
             Name: "cs:UpgradedHitPoints"
-            Int: 850
+            Int: 1100
           }
           Overrides {
             Name: "cs:MaxElevationAngle"

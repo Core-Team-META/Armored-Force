@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 500
+            Int: 750
           }
           Overrides {
             Name: "cs:UpgradedHitPoints"
-            Int: 600
+            Int: 800
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
