@@ -68,7 +68,7 @@ end
 
 function SetAutoPurchase(player, consumable)
 
-	print(consumable)
+	--print(consumable)
 
 	local currentPlayerSilver = player:GetResource(CONSTANTS_API.SILVER)
 	local cost = consumableCost[consumable]	
@@ -90,7 +90,7 @@ function SetAutoPurchase(player, consumable)
 	
 	local originalSetting = player:GetResource(resourceOfConsumable)
 
-	print(originalSetting)
+	--print(originalSetting)
 	
 	if originalSetting <= 0 then
 		player:SetResource(resourceOfConsumable, 1)

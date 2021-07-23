@@ -265,7 +265,7 @@ function InitializeComponent()
 		challengeButtonIndex[challengeButton] = x
 
 		local challengeTitle = child:GetCustomProperty("ChallengeTitle"):WaitForObject()
-		challengeTitle.text = "Daily Challenge " .. tostring(x)
+		challengeTitle.text = "Challenge " .. tostring(x)
 		local buttonStates = child:GetCustomProperty("ChallengeButtonStates"):WaitForObject()
 		
 		challengeButtonStates[child] = {}
