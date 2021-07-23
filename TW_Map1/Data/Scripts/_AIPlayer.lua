@@ -122,7 +122,7 @@ function AIPlayer:SetWorldRotation(rot)
   self.rotation = rot
 end
 
-function AIPlayer:GetRotation()
+function AIPlayer:GetWorldRotation()
   return self.rotation
 end
 

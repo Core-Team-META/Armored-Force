@@ -131,7 +131,7 @@ function SpawnAITank(position)
 	equippedTank[newAI] = World.SpawnAsset(GetEquippedTankTemplate(nil, -1), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
 	print("spawned", equippedTank[newAI])
 	Task.Wait(0.1)
-	equippedTank[newAI].context.AssignDriver(newAI, true)
+	equippedTank[newAI].context.AssignDriver(newAI, position, true)
 	
 
 end
