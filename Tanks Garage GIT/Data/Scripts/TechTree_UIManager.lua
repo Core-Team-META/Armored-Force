@@ -245,6 +245,113 @@ end
 ---------------------------------------------------------------------------------
 -- A set of functions handling functionality for UI and UI components
 -- UI functions -----------------------------------------------------------------
+function PopulateOwnedTanks()	
+	local ownedTank02 = false
+	local ownedTank03 = false
+	local ownedTank04 = false
+	local ownedTank05 = false
+	local ownedTank06 = false
+	local ownedTank07 = false
+
+	local ownedTank19 = false
+	local ownedTank20 = false
+	local ownedTank21 = false
+	local ownedTank22 = false
+	local ownedTank23 = false
+	local ownedTank24 = false
+
+	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		if(tank.purchased) then
+			local panel = World.FindObjectByName("UNLOCKED_"..tank.id)
+			if(panel) then panel.visibility = Visibility.FORCE_ON end
+
+			-- Populate variables to show pre-req lines
+			if(tank.id == "02") then ownedTank02 = true end
+			if(tank.id == "03") then ownedTank03 = true end
+			if(tank.id == "04") then ownedTank04 = true end
+			if(tank.id == "05") then ownedTank05 = true end
+			if(tank.id == "06") then ownedTank06 = true end
+			if(tank.id == "07") then ownedTank07 = true end				
+			if(tank.id == "19") then ownedTank19 = true end
+			if(tank.id == "20") then ownedTank20 = true end
+			if(tank.id == "21") then ownedTank21 = true end
+			if(tank.id == "22") then ownedTank22 = true end
+			if(tank.id == "23") then ownedTank23 = true end
+			if(tank.id == "24") then ownedTank24 = true end
+
+			World.FindObjectByName(tank.id).parent:FindChildByName("UNLOCKED_"..tank.id).visibility = Visibility.FORCE_ON
+			if LOCAL_PLAYER:GetResource(Constants_API.GetEquippedTankResource()) == tonumber(tank.id) then
+				World.FindObjectByName(tank.id).parent:FindChildByName("UNLOCKED_"..tank.id):FindChildByName("EQUIPPEDFRAME").visibility = Visibility.FORCE_ON
+			else
+				World.FindObjectByName(tank.id).parent:FindChildByName("UNLOCKED_"..tank.id):FindChildByName("EQUIPPEDFRAME").visibility = Visibility.FORCE_OFF
+			end
+		end
+	end
+	
+	-- Toggle pre-req lines
+	if ownedTank02 then
+		local preReqLines = World.FindObjectsByName("02_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank03 and ownedTank04 then
+		local preReqLines = World.FindObjectsByName("0304_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank05 then
+		local preReqLines = World.FindObjectsByName("05_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank06 then
+		local preReqLines = World.FindObjectsByName("06_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank07 then
+		local preReqLines = World.FindObjectsByName("07_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end	
+	-- Axis tanks
+	if ownedTank19 then
+		local preReqLines = World.FindObjectsByName("19_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank20 and ownedTank21 then
+		local preReqLines = World.FindObjectsByName("2021_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank22 then
+		local preReqLines = World.FindObjectsByName("22_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank23 then
+		local preReqLines = World.FindObjectsByName("23_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end
+	if ownedTank24 then
+		local preReqLines = World.FindObjectsByName("24_PrereqLine")
+		for i, entry in ipairs(preReqLines) do
+			entry:SetColor(prereqLineActiveColor)
+		end
+	end	
+end
+
 function PopulatePlayerPanel()
 	for i, xpText in ipairs(XP_Texts:GetChildren()) do
 		xpText.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.XP))
@@ -402,7 +509,7 @@ function PopulateSelectedTankPanel(id)
 			World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		end
 	end
-	
+	PopulateOwnedTanks()
 end
 
 function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
@@ -517,11 +624,13 @@ function ConfirmButtonClicked()
 				end
 			end
 		end
-		PopulateOwnedTanks()
+		
 		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 	else
 		-- Most likely in can't afford state
 	end
+	Task.Wait(1)
+	PopulateOwnedTanks()
 end
 
 function CloseConfirmationWindow()
@@ -1452,106 +1561,6 @@ Task.Wait(2)
 Init()
 PopulateSelectedTankPanel()
 --ResetTankDetails()
-
-function PopulateOwnedTanks()	
-	local ownedTank02 = false
-	local ownedTank03 = false
-	local ownedTank04 = false
-	local ownedTank05 = false
-	local ownedTank06 = false
-	local ownedTank07 = false
-
-	local ownedTank19 = false
-	local ownedTank20 = false
-	local ownedTank21 = false
-	local ownedTank22 = false
-	local ownedTank23 = false
-	local ownedTank24 = false
-
-	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		if(tank.purchased) then
-			local panel = World.FindObjectByName("UNLOCKED_"..tank.id)
-			if(panel) then panel.visibility = Visibility.FORCE_ON end
-
-			-- Populate variables to show pre-req lines
-			if(tank.id == "02") then ownedTank02 = true end
-			if(tank.id == "03") then ownedTank03 = true end
-			if(tank.id == "04") then ownedTank04 = true end
-			if(tank.id == "05") then ownedTank05 = true end
-			if(tank.id == "06") then ownedTank06 = true end
-			if(tank.id == "07") then ownedTank07 = true end				
-			if(tank.id == "19") then ownedTank19 = true end
-			if(tank.id == "20") then ownedTank20 = true end
-			if(tank.id == "21") then ownedTank21 = true end
-			if(tank.id == "22") then ownedTank22 = true end
-			if(tank.id == "23") then ownedTank23 = true end
-			if(tank.id == "24") then ownedTank24 = true end
-		end
-	end	
-
-	-- Toggle pre-req lines
-	if ownedTank02 then
-		local preReqLines = World.FindObjectsByName("02_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank03 and ownedTank04 then
-		local preReqLines = World.FindObjectsByName("0304_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank05 then
-		local preReqLines = World.FindObjectsByName("05_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank06 then
-		local preReqLines = World.FindObjectsByName("06_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank07 then
-		local preReqLines = World.FindObjectsByName("07_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end	
-	-- Axis tanks
-	if ownedTank19 then
-		local preReqLines = World.FindObjectsByName("19_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank20 and ownedTank21 then
-		local preReqLines = World.FindObjectsByName("2021_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank22 then
-		local preReqLines = World.FindObjectsByName("22_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank23 then
-		local preReqLines = World.FindObjectsByName("23_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end
-	if ownedTank24 then
-		local preReqLines = World.FindObjectsByName("24_PrereqLine")
-		for i, entry in ipairs(preReqLines) do
-			entry:SetColor(prereqLineActiveColor)
-		end
-	end	
-end
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("DISABLE_ALL_GARAGE_COMPONENTS", DisableThisComponent)
