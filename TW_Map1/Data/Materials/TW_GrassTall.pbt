@@ -39,7 +39,7 @@ Assets {
       }
       Overrides {
         Name: "dist_rotation"
-        Float: 0.18
+        Float: 0.25
       }
       Overrides {
         Name: "wind_weight"
@@ -48,6 +48,10 @@ Assets {
       Overrides {
         Name: "wind_intensity"
         Float: 2
+      }
+      Overrides {
+        Name: "material_scale"
+        Float: 50
       }
     }
     Assets {
