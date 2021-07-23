@@ -30,14 +30,14 @@ function OnPlayerJoined(player)
 
 	--print("Player Joined " .. player.name)
 	
-	local playerData = Storage.GetPlayerData(player)
-	UTIL_API.TablePrint(playerData)
+	--local playerData = Storage.GetPlayerData(player)
+	--UTIL_API.TablePrint(playerData)
 	--print("Storage Retrieved")
-
+	--[[
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
 	end
-	
+	]]
 	if(player:GetResource(CONSTANTS_API.RANK_NAME) <= 0) then
 		player:SetResource(CONSTANTS_API.RANK_NAME, 1)
 	end

@@ -220,6 +220,14 @@ Events.Connect("CombatWrapAPI.ObjectHasDied", OnPlayerDied)
 Events.Connect("UpgradeAcquired", OnUpgrade)
 Events.Connect("TankAcquired", OnTankAcquired)
 
+
+-- From tank controller
+--Events.Connect("PlayerBurntTank")
+--Events.Connect("PlayerRammedTank")
+--Events.Connect("PlayerDamageTurret")
+--Events.Connect("PlayerDamageBarrel")
+
+
 -- Client Broadcast Listeners
 Events.ConnectForPlayer("AS.RewardClaim", OnRewardCollected)
 

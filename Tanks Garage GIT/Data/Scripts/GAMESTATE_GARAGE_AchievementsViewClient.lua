@@ -138,11 +138,11 @@ end
 
 function SwitchButtonState(challenge, state)
 
-	print(challenge.name .. " looking for " .. state)
+	--print(challenge.name .. " looking for " .. state)
 
 	for x, s in pairs(challengeButtonStates[challenge]) do
 		if string.find(x, state) then
-			print(state .. " found")
+			--print(state .. " found")
 			s.visibility = Visibility.INHERIT
 		else 
 			s.visibility = Visibility.FORCE_OFF
@@ -179,7 +179,7 @@ end
 
 function OnClaimButtonPressed(button)
 
-	print("Broadcascting claim reward for index " .. tostring(challengeButtonIndex[button]))
+	--print("Broadcascting claim reward for index " .. tostring(challengeButtonIndex[button]))
 
 	Events.BroadcastToServer("CLAIM_REWARD", challengeButtonIndex[button])
 	
@@ -265,7 +265,7 @@ function InitializeComponent()
 		challengeButtonIndex[challengeButton] = x
 
 		local challengeTitle = child:GetCustomProperty("ChallengeTitle"):WaitForObject()
-		challengeTitle.text = "Daily Challenge " .. tostring(x)
+		challengeTitle.text = "Challenge " .. tostring(x)
 		local buttonStates = child:GetCustomProperty("ChallengeButtonStates"):WaitForObject()
 		
 		challengeButtonStates[child] = {}

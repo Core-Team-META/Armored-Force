@@ -31,7 +31,7 @@ function OnPlayerJoined(player)
 	--print("Player Joined " .. player.name)
 	
 	local playerData = Storage.GetPlayerData(player)
-	UTIL_API.TablePrint(playerData)
+	--UTIL_API.TablePrint(playerData)
 	--print("Storage Retrieved")
 
 	if type(playerData.resources) ~= "table" then
@@ -93,7 +93,7 @@ function CheckAndSetSharedStorageDefault(player)
 		
 	end
 	
-	print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
+	--print("SELECTED TANK ID: " .. tostring(playerSharedStorage[CONSTANTS_API.PROGRESS.CURRENT]))
 	
 	if(player:GetResource(CONSTANTS_API.GetEquippedTankResource()) <= 0) then
 		playerSharedStorage[CONSTANTS_API.GetEquippedTankResource()] = CONSTANTS_API.GetDefaultTankData()
@@ -363,7 +363,7 @@ function ConvertTechTreeProgressToDataString(player)
 	table.sort(player.serverUserData.techTreeProgress, function(a, b) return tonumber(a.id) < tonumber(b.id) end)
 	
 	for k,v in ipairs(player.serverUserData.techTreeProgress) do
-		print("Saving tan Id: " .. tostring(v.id))
+		--print("Saving tan Id: " .. tostring(v.id))
 		dataString = dataString .. v.id .. 
 					"|" .. ConvertBoolToString(v.researched) ..
 					"|" .. ConvertBoolToString(v.purchased) ..

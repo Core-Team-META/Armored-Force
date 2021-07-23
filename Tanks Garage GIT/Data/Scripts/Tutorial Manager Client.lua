@@ -34,8 +34,8 @@ LOCAL_PLAYER.clientUserData.tutorial4 = 1
 
 Task.Wait(2)
 
-warn("tutorial1")
-warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))
+--warn("tutorial1")
+--warn(tostring(LOCAL_PLAYER.clientUserData.tutorial1))
 
 function Tick()
 	Task.Wait(0.2)

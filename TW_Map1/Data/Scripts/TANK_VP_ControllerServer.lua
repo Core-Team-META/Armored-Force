@@ -122,16 +122,8 @@ function GetDriver()
 
 end
 
+function AssignDriver(newDriver, playerStart, _isAI)
 
-
-
-
-
---propVehicle.serverMovementHook:Connect(RoboDriver)
-
-
-
-function AssignDriver(newDriver, _isAI)
 	isAI = _isAI or false
 	print("assigning a driver.  AI?", isAI)
 
@@ -140,10 +132,29 @@ function AssignDriver(newDriver, _isAI)
 		return
 	end
 	
-	if not isAI then
-		script:SetWorldPosition(newDriver:GetWorldPosition() + Vector3.UP * 150)
-		script:SetWorldRotation(newDriver:GetWorldRotation())
+	Task.Wait()
+	
+	local baseForPosition = newDriver
+	
+	if playerStart then
+		--print("Using player start position")
+		baseForPosition = playerStart
 	end
+	
+	local newScriptPosition = baseForPosition:GetWorldPosition()
+	local newScriptRotation = baseForPosition:GetWorldRotation()
+	
+	local moreIdealPositionRaycast = World.Raycast(newScriptPosition + Vector3.UP * 1000, newScriptPosition - Vector3.UP * 1000, {ignorePlayers = true})
+	
+	if moreIdealPositionRaycast then
+		newScriptPosition = moreIdealPositionRaycast:GetImpactPosition()
+	end
+	
+	newScriptPosition = newScriptPosition + Vector3.UP * 500
+	
+	script:SetWorldPosition(newScriptPosition)
+	script:SetWorldRotation(newScriptRotation)
+
 	driver = newDriver
 	
 	print("Checkpoint 1", isAI)
@@ -152,7 +163,6 @@ function AssignDriver(newDriver, _isAI)
 	
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
-	--driver.gravityScale = 0
 	
 	local newHitbox = templateReferences:GetCustomProperty("DefaultHitbox")
 	local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
@@ -192,14 +202,13 @@ function AssignDriver(newDriver, _isAI)
 	cannonGuide = hitbox:FindDescendantByName("CannonGuide")
 	muzzle = hitbox:FindDescendantByName("Muzzle")
 	
-	Task.Wait(0.1)
+	Task.Wait()
 	
 	driver.isCollidable = false
 	driver.isVisible = false
 	
-	Task.Wait(0.1)
-	print("Checkpoint 6", isAI)
-
+	Task.Wait()
+	
 	if not isAI then
 		driver:AttachToCoreObject(turret)
 	end
@@ -227,6 +236,8 @@ function AssignDriver(newDriver, _isAI)
 		consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
 	end
 	diedEventListener = driver.diedEvent:Connect(OnDeath)
+	consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
+
 	Task.Wait()
 	print("Setting tank ready!")
 	script:SetNetworkedCustomProperty("TankReady", true)
@@ -543,31 +554,48 @@ function OnArmorHit(trigger, other)
 			elseif trigger.name == "RIGHTTRACK" then
 				trackStatus = 2
 			end
+
+			if Object.IsValid(driver) then
+				Events.Broadcast("PlayerTrackedTank", driver)
+			end
+
 			trackTask = Task.Spawn(OnTracked, 0)
 			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TRACK")
 		elseif armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
+
+			if Object.IsValid(driver) then
+				Events.Broadcast("PlayerBurntTank", driver)
+			end
+
 			burnTask = Task.Spawn(OnBurning, 0)
 			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
 		elseif string.find(armorName, "TURRET") and not turretDamagedTask then
 			local pickTurretDamage = math.random(100)
 			if pickTurretDamage <= 50 then
+
+				if Object.IsValid(driver) then
+					Events.Broadcast("PlayerDamageTurret", driver)
+				end
+
 				turretDamagedTask = Task.Spawn(OnDamagedTurret, 0)
 				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "TURRET")
 			else 
+
+				if Object.IsValid(driver) then
+					Events.Broadcast("PlayerDamageBarrel", driver)
+				end
+
 				turretDamagedTask = Task.Spawn(OnDamagedBarrel, 0)
 				Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "BARREL")
 			end
 		end
-	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" and not ramCooldown then
-		
-		ramCooldown = true
-
-		local isAI = false
+	elseif other.type == "TreadedVehicle" or other.type == "Vehicle" then
+		local otherIsAI = false
 		local enemyPlayer = other.driver
 		if enemyPlayer == nil then
 			enemyPlayer = AIPlayer.FindAIDriver(other)
-			isAI = true
+			otherIsAI = true
 		end
 		local armorName = trigger.name
 		
@@ -586,21 +614,28 @@ function OnArmorHit(trigger, other)
 		
 		local netSpeed = 0
 		
-		print(rotationDifference)
+		--print(rotationDifference)
 		
 		if rotationDifference < 90 then
 			netSpeed =math.abs(otherVehicleSpeed - thisVehicleSpeed)
-			print("collision angle less than 90")
+			--print("collision angle less than 90")
 		else 
 			netSpeed = otherVehicleSpeed + thisVehicleSpeed
-			print("collision angle more than 90")
+			--print("collision angle more than 90")
 		end
 		
 		if netSpeed < 400 then
 			return
 		end
 		
-		local ramDamage = ((netSpeed + other.mass * 0.01) * thisVehicleSpeed)/ (400 * (thisVehicleSpeed + 1))
+		if ramCooldown then
+			return
+		end
+		
+		ramCooldown = true
+		local cooldownTask = Task.Spawn(ResetRamCooldown)
+		
+		local ramDamage = ((netSpeed + other.mass * 0.02) * thisVehicleSpeed) / (50 * (thisVehicleSpeed + 1))
 		
 		if armorName == "HULLFRONT" then
 			ramDamage = ramDamage/2
@@ -610,11 +645,17 @@ function OnArmorHit(trigger, other)
 		
 		local damageDealt = Damage.New(ramDamage)
 		
-		if not isAI then
+		if not otherIsAI then
 			damageDealt.sourcePlayer = enemyPlayer
 		end
 		damageDealt.reason = DamageReason.COMBAT
-		--enemyPlayer:ApplyDamage(damageDealt)
+		--driver:ApplyDamage(damageDealt)
+
+
+		if Object.IsValid(driver) then
+			Events.Broadcast("PlayerRammedTank", playerWhoBurned)
+		end
+	
 
 		local attackData = {
 			object = enemyPlayer,
@@ -632,19 +673,24 @@ function OnArmorHit(trigger, other)
 		
 		local possibleDamageState = math.random(100)
 				
-		if possibleDamageState > 20 then
+		if possibleDamageState > 25 then
 			return
 		end		
 		
 		if armorName == "HULLREAR" and not burnTask then
 			playerWhoBurned = enemyPlayer
 			burnTask = Task.Spawn(OnBurning, 0)
-			Events.BroadcastToPlayer(enemyPlayer, "INFLICTED_STATE", "FIRE")
+			Events.BroadcastToPlayer(driver, "INFLICTED_STATE", "FIRE")
 		end
-		
-		Task.Wait(1)
 	end
 	
+end
+
+function ResetRamCooldown()
+
+	Task.Wait(1)
+	ramCooldown = false
+		
 end
 
 function OnConsumableUsed(consumableType)
@@ -683,7 +729,9 @@ function OnConsumableUsed(consumableType)
 		
 		script:SetNetworkedCustomProperty("TurretDown", false)
 		script:SetNetworkedCustomProperty("BarrelDown", false)
+		turret:LookAtContinuous(target, true, traverseSpeed/57)
 		turretDown = false
+		barrelDown = false
 		Events.Broadcast("ToggleConsumable", driver, "TURRET", false)
 		
 		Task.Wait(2)
@@ -716,7 +764,8 @@ function OnBurning()
 	script:SetNetworkedCustomProperty("Burning", true)
 	Events.Broadcast("ToggleConsumable", driver, "EXTINGUISH", true)
 	chassis.maxSpeed = math.floor(originalSpeed/2)
-	
+
+
 	for i = 10, 1, -1 do
 		if driver.isDead then break end
 

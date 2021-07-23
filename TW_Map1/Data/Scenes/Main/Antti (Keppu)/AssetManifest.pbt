@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13603250805774762953
+  Name: "Urban Damaged Rebar - Twisted Ends 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_rebar_004_ref"
+  }
+}
+Assets {
   Id: 13100330238861707551
   Name: "Decal Tread Tracks 01"
   PlatformAssetType: 14
@@ -194,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_round_001"
+  }
+}
+Assets {
+  Id: 10077006419286131806
+  Name: "Urban Damaged Rebar - Twisted Ends 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_rebar_003_ref"
   }
 }
 Assets {
@@ -311,6 +329,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_nature_pond_birds_loop_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 2255016320672118361
+  Name: "Liquid Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_liquid"
   }
 }
 Assets {

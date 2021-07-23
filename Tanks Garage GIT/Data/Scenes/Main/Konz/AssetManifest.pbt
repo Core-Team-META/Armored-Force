@@ -278,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6262982467505051120
+  Name: "Fantasy Craft Bar 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Bar_002"
+  }
+}
+Assets {
   Id: 6106781574284671706
   Name: "Frame Ring 007"
   PlatformAssetType: 9
@@ -395,6 +404,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3125449001268701343
+  Name: "Line Half 006a"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "LineHalf_006a"
+  }
+}
+Assets {
   Id: 2640316907363900924
   Name: "Icon Star"
   PlatformAssetType: 9
@@ -446,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Racing_Icon_020"
+  }
+}
+Assets {
+  Id: 1101945558934518389
+  Name: "Frame Hex 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameHex_005"
   }
 }
 Assets {

@@ -3462,6 +3462,48 @@ function ButtonUnhover()
 	SFX_UNHOVERED:Play()
 end
 
+function InitializePortalImages()
+	local techTreePortalImages = World.FindObjectsByName("TankImage")
+	local camoPreviewPortalImages = World.FindObjectsByName("TANK_IMAGE")
+	
+	Task.Wait(3)
+	
+	for _, i in ipairs(techTreePortalImages) do
+		local originalLink = i:GetCustomProperty("SetGameID")
+		local originalIndex = i:GetCustomProperty("SetImageIndex")
+		
+		if originalIndex < 5 then
+			i:SetGameScreenshot(originalLink, originalIndex + 1)
+		else 
+			i:SetGameScreenshot(originalLink, originalIndex - 1)
+		end
+		
+		Task.Wait(0.1)
+		
+		i:SetGameScreenshot(originalLink, originalIndex)
+	end
+	
+	for _, i in ipairs(camoPreviewPortalImages) do
+		if i.type == "UIImage" then
+			local originalLink = i:GetCustomProperty("SetGameID")
+			local originalIndex = i:GetCustomProperty("SetImageIndex")
+			
+			if originalIndex < 5 then
+				i:SetGameScreenshot(originalLink, originalIndex + 1)
+			else 
+				i:SetGameScreenshot(originalLink, originalIndex - 1)
+			end
+			
+			Task.Wait(0.1)
+			
+			i:SetGameScreenshot(originalLink, originalIndex)
+		end
+	end
+	
+end
+
+InitializePortalImages()
+
 Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS

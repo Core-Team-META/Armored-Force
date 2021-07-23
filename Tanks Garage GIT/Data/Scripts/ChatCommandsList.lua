@@ -1,3 +1,4 @@
+local AdminData = require(script:GetCustomProperty("AdminData"))
 local commands = {}
 local messagePrefix = "[SERVER]"
 
@@ -21,7 +22,30 @@ commands = {
         end,
         description = "Shows admin message in chat to all players",
         requireMessage = true,
-        adminOnly = true
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
+    ["/tp"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	local playerName = CoreString.Trim(message, message)
+        	print(playerName)
+        	for _, p in ipairs(Game.GetPlayers()) do
+        		if string.find(p.name, playerName) then
+        			local vehicle = player.occupiedVehicle
+        			local otherVehicle = p.occupiedVehicle
+        			vehicle:SetWorldPosition(otherVehicle:GetWorldPosition() + Vector3.New(500, 500, 500))
+        		end
+        	end
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "teleport to selected player. Format: /tp <otherPlayerName>",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
     },
 
     ["/xp"] = {
@@ -53,7 +77,7 @@ commands = {
         	
         	
         	
-        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /xp <tankID> <XPvalue>")
+        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /xp <tankID> <RPvalue>")
         end,
         OnCommandCalledServer = function (player, message)
         
@@ -67,12 +91,8 @@ commands = {
         		if number then
         		
         			if number > 0 and number < 33 then
-        				
-        				if number < 10 and not string.find(section, "0") then
-        					resourceFound = "0" .. section
-        				else 
-        					resourceFound = section
-        				end
+        		
+        				resourceFound = section
         				
         			elseif resourceFound then
         			
@@ -86,55 +106,10 @@ commands = {
         end,
         OnCommandReceivedClient = function (player, message)
         end,
-        description = "Set the XP resource of a tank. Format: /xp <tankID> <XPvalue>",
+        description = "Set the XP resource of a tank. Format: /xp <tankID> <RPvalue>",
         requireMessage = false,
-        adminOnly = false
-    },
-    
-    ["/freexp"] = {
-        OnCommandCalledClient = function (player, message)
-        
-        	local number = nil
-        	
-        	for section in (message.." "):gmatch("(.-) ") do
-        	
-        		number = tonumber(section)
-        	
-        		if number then
-        		        				
-        			Chat.LocalMessage("Setting FreeXP resource to " .. tostring(number))
-        				
-        			return
-        		
-        		end
-        	
-        	end
-        	
-        	Chat.LocalMessage("ERROR: command does not contain a tankID or valid resource amount. Format: /freexp <XPvalue>")
-        end,
-        OnCommandCalledServer = function (player, message)
-        
-        	local number = nil
-        	
-        	for section in (message.." "):gmatch("(.-) ") do
-        	
-        		number = tonumber(section)
-        	
-        		if number then
-        		        			
-        			player:SetResource("Free XP", number)
-        			
-        			return
-        		
-        		end
-        	
-        	end
-        end,
-        OnCommandReceivedClient = function (player, message)
-        end,
-        description = "Set the Free XP resource. Format: /freexp <XPvalue>",
-        requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
     },
     
     ["/sl"] = {
@@ -173,7 +148,8 @@ commands = {
         end,
         description = "Set the Silver resource of the player. Format: /sl <SilverValue>",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.HigherAdmin
     },
     
     ["/equip"] = {
@@ -190,7 +166,6 @@ commands = {
 	        		number = tonumber(section)
 	        		if number and number > 0 and number < 34 then
 	        			Events.Broadcast("SET_EQUIPPED_TANK", player, section)
-	        			Events.BroadcastToPlayer( player, "CHANGE_EQUIPPED_TANK", section)
 	        			return
 	        		end
 	        	elseif section == "0" then
@@ -202,6 +177,9 @@ commands = {
         		elseif string.find(section, ",") then
         			for _, part in pairs{CoreString.Split(section, ",")} do
         				number = tonumber(part)
+        				if number and number == 1 then
+        					number = 2
+        				end
         				if number then
         					table.insert(player.serverUserData.TankUpgradeOverride, number)
         				end
@@ -215,73 +193,8 @@ commands = {
         end,
         description = "Equip a specific tank with a specified upgrade. 0 for no upgrades, 1 for all upgrades, and x,x,x for specific upgrades. Format: /equip <upgrade> <tankID>",
         requireMessage = false,
-        adminOnly = false
-    },
-
-    ["/unlocktanks"] = {
-        OnCommandCalledClient = function (player, message)      
-            for i, tank in ipairs(player.clientUserData.techTreeProgress) do							
-                tank.purchased = true
-                tank.researched = true
-                tank.weaponProgress = 2
-				tank.armorProgress = 2
-				tank.engineProgress = 2
-            end    
-            Chat.LocalMessage("All tanks are unlocked and can be equipped in the tech tree.")
-        end,
-        OnCommandCalledServer = function (player, message)
-            for i, tank in ipairs(player.serverUserData.techTreeProgress) do							
-                tank.purchased = true
-                tank.researched = true
-                tank.weaponProgress = 2
-				tank.armorProgress = 2
-				tank.engineProgress = 2
-            end                  	
-        end,
-        OnCommandReceivedClient = function (player, message)
-        end,
-        description = "Unlock all tanks.",
-        requireMessage = false,
-        adminOnly = false
-    },
-
-    ["/reverttanks"] = {
-        OnCommandCalledClient = function (player, message)      
-            for i, tank in ipairs(player.clientUserData.techTreeProgress) do
-                if (tank.id == "01") then	
-                    -- Do nothing
-                elseif(tank.id == "18") then
-                    -- Do nothing
-                else					
-                    tank.purchased = false
-                    tank.researched = false
-                    tank.weaponProgress = 0
-                    tank.armorProgress = 0
-                    tank.engineProgress = 0
-                end
-            end    
-            Chat.LocalMessage("Tank progress reverted to starter tanks only.")
-        end,
-        OnCommandCalledServer = function (player, message)
-            for i, tank in ipairs(player.serverUserData.techTreeProgress) do							
-                if (tank.id == "01") then	
-                    -- Do nothing
-                elseif(tank.id == "18") then
-                    -- Do nothing
-                else						
-                    tank.purchased = false
-                    tank.researched = false
-                    tank.weaponProgress = 0
-                    tank.armorProgress = 0
-                    tank.engineProgress = 0
-                end
-            end                  	
-        end,
-        OnCommandReceivedClient = function (player, message)
-        end,
-        description = "Lock all tanks.",
-        requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
     },
     
     ["/respawn"] = {
@@ -294,7 +207,8 @@ commands = {
         end,
         description = "Respawn (for casese when falling through the map).",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
     },
 
     ["/help"] = {
@@ -311,7 +225,8 @@ commands = {
         end,
         description = "shows a list of available commands",
         requireMessage = false,
-        adminOnly = false
+        adminOnly = false,
+        adminRank = AdminData.AdminRanks.None
     },
 --[[     ["/ragdoll"] = {
         OnCommandCalledClient = function (player, message)
