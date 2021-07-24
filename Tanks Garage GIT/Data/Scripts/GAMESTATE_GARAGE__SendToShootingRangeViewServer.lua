@@ -1,5 +1,12 @@
 local mainManagerServer = script:GetCustomProperty("GAMESTATE_MainManagerServer"):WaitForObject()
-local spawnLocation = script:GetCustomProperty("SpawnOutsideGarageLocation"):WaitForObject()
+local spawnLocations = script:GetCustomProperty("SpawnOutsideGarageLocation"):WaitForObject():GetChildren()
+local spawnCount = 0
+
+function GetSpawnLocation()
+	sl = spawnLocations[spawnCount + 1]
+	spawnCount = math.fmod(spawnCount + 1, #spawnLocations)
+	return sl
+end
 
 function GetPlayer(playerId)
 	
@@ -41,9 +48,8 @@ function OnServerStateChange(serverManager, property)
 	if string.find(property, "SHOOTING_RANGE_STATE") then
 	
 		Task.Wait(0.1)
-	
-		player:Spawn({position = spawnLocation:GetWorldPosition(), rotation = spawnLocation:GetWorldRotation()})	
-		
+		spawnloc = GetSpawnLocation()
+		player:Spawn({position = spawnloc:GetWorldPosition(), rotation = spawnloc:GetWorldRotation()})	
 	elseif string.find(property, "GARAGE_STATE") then
 	
 		player:Spawn()
