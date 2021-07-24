@@ -415,7 +415,7 @@ function ProjectileImpacted(expiredProjectile, other)
 
 	ProjectileExpired(expiredProjectile)
 	
-	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce then
+	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
 		return
 	end
 	
@@ -444,15 +444,13 @@ function ProjectileImpacted(expiredProjectile, other)
 end
 
 function ProjectileExpired(expiredProjectile)
-
 	local activeExplosion = World.SpawnAsset(explosion, {position = expiredProjectile:GetWorldPosition()})
 	activeExplosion.lifeSpan = 6
 	
 end
 
-function OnArmorHit(trigger, other)
-	
-	if other.type == "Projectile" then
+function OnArmorHit(trigger, other)	
+	if other.type == "Projectile" and other.owner ~= driver then
 		local enemyPlayer = other.owner
 		
 		if other.serverUserData.hitOnce then
