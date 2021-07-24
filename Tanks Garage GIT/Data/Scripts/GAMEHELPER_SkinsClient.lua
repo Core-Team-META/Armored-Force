@@ -15,6 +15,10 @@ local selectedSkin = 1
 local dataTransferSet = {}
 
 local function GetChangeableGeo(tank)
+
+	if not Object.IsValid(tank) then
+		return
+	end
     local NewGeo = {}
     for _, Child in pairs(tank:FindDescendantsByType("StaticMesh")) do
         if not Child:FindAncestorByName("IgnoreGroup") then
@@ -22,6 +26,7 @@ local function GetChangeableGeo(tank)
         end
     end
     return NewGeo
+    
 end
 
 function InitializeTankSkin(player)

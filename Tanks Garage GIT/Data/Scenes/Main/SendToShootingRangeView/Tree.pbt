@@ -2804,7 +2804,7 @@ Objects {
 }
 Objects {
   Id: 12282944159925394139
-  Name: "12"
+  Name: "S12"
   Transform {
     Location {
       X: 2121.2251
@@ -2849,7 +2849,7 @@ Objects {
 }
 Objects {
   Id: 3324235413063510335
-  Name: "11"
+  Name: "S11"
   Transform {
     Location {
       X: 1532.6875
@@ -2894,7 +2894,7 @@ Objects {
 }
 Objects {
   Id: 8670939442591656746
-  Name: "10"
+  Name: "S10"
   Transform {
     Location {
       X: 1532.69238
@@ -2939,7 +2939,7 @@ Objects {
 }
 Objects {
   Id: 17589339054679283968
-  Name: "9"
+  Name: "S9"
   Transform {
     Location {
       X: -650.907227
@@ -2983,7 +2983,7 @@ Objects {
 }
 Objects {
   Id: 10267118663320253952
-  Name: "8"
+  Name: "S8"
   Transform {
     Location {
       X: -650.907959
@@ -3027,7 +3027,7 @@ Objects {
 }
 Objects {
   Id: 3071511537742472257
-  Name: "7"
+  Name: "S7"
   Transform {
     Location {
       X: 0.0029296875
@@ -3071,7 +3071,7 @@ Objects {
 }
 Objects {
   Id: 9686229285766779458
-  Name: "6"
+  Name: "S6"
   Transform {
     Location {
       X: 2121.21973
@@ -3116,7 +3116,7 @@ Objects {
 }
 Objects {
   Id: 3721389369858518668
-  Name: "5"
+  Name: "S5"
   Transform {
     Location {
       X: 1532.69214
@@ -3161,7 +3161,7 @@ Objects {
 }
 Objects {
   Id: 14855449449225277890
-  Name: "4"
+  Name: "S4"
   Transform {
     Location {
       X: 1532.69214
@@ -3206,7 +3206,7 @@ Objects {
 }
 Objects {
   Id: 11875070653775043426
-  Name: "3"
+  Name: "S3"
   Transform {
     Location {
       X: -650.912964
@@ -3250,7 +3250,7 @@ Objects {
 }
 Objects {
   Id: 5815280835563578297
-  Name: "2"
+  Name: "S2"
   Transform {
     Location {
       X: -650.912415
@@ -3294,7 +3294,7 @@ Objects {
 }
 Objects {
   Id: 12077852395007647155
-  Name: "1"
+  Name: "S1"
   Transform {
     Location {
     }

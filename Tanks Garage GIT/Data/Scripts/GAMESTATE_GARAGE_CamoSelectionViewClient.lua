@@ -56,14 +56,6 @@ local localPlayer = Game.GetLocalPlayer()
 	LEADERBOARDS_MENU
 ]]
 
-local function SetAllTexts(textTable, textToSet)
-	
-	for _, t in pairs(textTable) do
-		t.text = textToSet
-	end
-	
-end
-
 function ToggleThisComponent(requestedPlayerState)
 
 	if savedState == "DEFAULT_MENU" then
@@ -471,7 +463,7 @@ function RepopulateCamoEntries()
 		camoEntry.equipBuyComponents.priceText.text = tostring(camo.cost)
 		
 		if lockedTank then
-			SetAllTexts(camoEntry.equipBuyComponents.text, "Tank Locked")
+			camoEntry.equipBuyComponents.equipText.text = "Tank Locked"
 		else
 			if playerCamoData[camoID].equipped then
 				selectedCamo = camoID
