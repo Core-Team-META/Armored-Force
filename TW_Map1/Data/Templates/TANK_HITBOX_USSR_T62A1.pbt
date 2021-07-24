@@ -1085,7 +1085,7 @@ Assets {
         Name: "Muzzle"
         Transform {
           Location {
-            X: 769.112
+            X: 181.211121
           }
           Rotation {
           }
