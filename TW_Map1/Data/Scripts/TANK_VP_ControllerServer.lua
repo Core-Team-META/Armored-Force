@@ -449,7 +449,8 @@ function ProjectileExpired(expiredProjectile)
 	
 end
 
-function OnArmorHit(trigger, other)	if other.type == "Projectile" and other.owner ~= driver then
+function OnArmorHit(trigger, other)	
+	if other.type == "Projectile" and other.owner ~= driver then
 		local enemyPlayer = other.owner
 		
 		if other.serverUserData.hitOnce then
