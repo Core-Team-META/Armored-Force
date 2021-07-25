@@ -40,6 +40,7 @@ function OnServerStateChange(serverManager, property)
 		mainHUD.visibility = Visibility.INHERIT
 	elseif not string.find(property, "GARAGE_STATE") and isInGarage then 
 		Events.Broadcast("DISABLE_ALL_GARAGE_COMPONENTS")
+		Events.Broadcast("CLOSE_POPUP")
 		isInGarage = false
 		mainHUD.visibility = Visibility.FORCE_OFF
 	end	
