@@ -78,6 +78,8 @@ function ToggleThisComponent(requestedPlayerState)
 		DisableThisComponent()
 	end
 	
+	Events.Broadcast("CLOSE_POPUP")
+	
 end
 
 function DisableThisComponent()

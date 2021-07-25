@@ -300,8 +300,16 @@ function OnCamoButtonClicked(button)
 		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
 		local playerCamoEntry = playerCamoData[camoID]
 		
-		if not playerCamoData[camoID].purchased then
-			ReliableEvents.BroadcastToServer("PURCHASE_SKIN", selectedTank, camoID)
+		if not playerCamoEntry.purchased then
+			local playerAmount = localPlayer:GetResource(buttonEntry.resource)
+			local cost = buttonEntry.cost
+			
+			if playerAmount >= cost then
+				ReliableEvents.BroadcastToServer("PURCHASE_SKIN", selectedTank, camoID)
+				Events.Broadcast("SEND_POPUP", localPlayer, "CAMO PURCHASED", "Camo successfully purchased!")
+			else 
+				Events.Broadcast("SEND_POPUP", localPlayer, "PURCHASE UNSUCCESSFUL", "Camo could not be purchased.")
+			end 
 		else
 			buttonEntry.equipBuyComponents.equipText.text = "Equipped"
 			buttonEntry.equipBuyComponents.active.visibility = Visibility.FORCE_ON
@@ -461,6 +469,8 @@ function RepopulateCamoEntries()
 		camoEntry.equipBuyComponents.goldIcon = equipBuyAssets:FindDescendantByName("GOLD")
 			
 		camoEntry.equipBuyComponents.priceText.text = tostring(camo.cost)
+		camoEntry.resource = camo.resource
+		camoEntry.cost = camo.cost
 		
 		if lockedTank then
 			camoEntry.equipBuyComponents.equipText.text = "Tank Locked"
