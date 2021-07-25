@@ -75,7 +75,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	-- playerSharedStorage = {}
+	--playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil

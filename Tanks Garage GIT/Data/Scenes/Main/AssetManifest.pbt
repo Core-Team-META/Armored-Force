@@ -30,19 +30,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15514386467634745068
-  Name: "TankProgress"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "6f32dfeddf494871915067a72c7edbd0"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 14345407072251931141
   Name: "SilverPack2"
   PlatformAssetType: 24
@@ -256,6 +243,19 @@ Assets {
       Key: "67664d19c16944bba2de6e88ec6c7404"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 1587440743886153265
+  Name: "TankProgress"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "d0942430ab1447ecaf4155441f6206ed"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }

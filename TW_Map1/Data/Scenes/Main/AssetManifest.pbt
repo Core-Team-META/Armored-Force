@@ -48,6 +48,19 @@ Assets {
   }
 }
 Assets {
+  Id: 13009544308832973362
+  Name: "TankProgress"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "d0942430ab1447ecaf4155441f6206ed"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 12478635504539825254
   Name: "Clover Patch 01"
   PlatformAssetType: 1
@@ -94,19 +107,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
-  }
-}
-Assets {
-  Id: 7971877911322319358
-  Name: "TankProgress"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "6f32dfeddf494871915067a72c7edbd0"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
