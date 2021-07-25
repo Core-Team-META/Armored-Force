@@ -269,7 +269,7 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 36888.1563
+      X: 36888.1562
       Y: -53633.3594
       Z: 550
     }
@@ -368,7 +368,7 @@ Objects {
   Name: "Spawn Point Team 1"
   Transform {
     Location {
-      X: 36213.0313
+      X: 36213.0312
       Y: -49386.0859
       Z: 550
     }
