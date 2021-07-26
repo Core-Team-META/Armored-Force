@@ -20,6 +20,7 @@ local gameModeEnabled = defaultGameMode
 local leadTeam = 0
 local aCapProgress = 0
 local bCapProgress = 0
+local capDamagedPenalty = 30
 
 local damageListeners = {}
 
@@ -86,7 +87,7 @@ function ReduceCapOnDamaged(player, damage)
 
 	if (player:GetWorldPosition() - aCenterPoint:GetWorldPosition()).size <= aRadius and player.team ~= 1 then
 	
-		aCapProgress = aCapProgress - 10
+		aCapProgress = aCapProgress - capDamagedPenalty
 		
 		if aCapProgress < 0 then 
 		
@@ -96,7 +97,7 @@ function ReduceCapOnDamaged(player, damage)
 		
 	elseif (player:GetWorldPosition() - bCenterPoint:GetWorldPosition()).size <= aRadius and player.team ~= 2 then
 	
-		bCapProgress = bCapProgress - 10
+		bCapProgress = bCapProgress - capDamagedPenalty
 		
 		if bCapProgress < 0 then 
 		

@@ -11420,7 +11420,7 @@ Objects {
     }
     Overrides {
       Name: "cs:CapLimit"
-      Int: 45
+      Int: 50
     }
     Overrides {
       Name: "cs:Team1BaseProgress"

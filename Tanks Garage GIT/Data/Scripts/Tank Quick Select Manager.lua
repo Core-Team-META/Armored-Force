@@ -14,6 +14,8 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local TANK_LIST = TechTree_Contents:GetChildren()
 local X_OFFSET = 180
 
+local expectedEquip = nil
+
 function PopulateQuickSelectPanel()
     ClearPanel()
     local dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
@@ -44,7 +46,7 @@ function PopulateQuickSelectPanel()
                 entry:FindDescendantByName("2X_XP").visibility = Visibility.FORCE_OFF
             end
 
-            if tonumber(tankId) == LOCAL_PLAYER:GetResource("EquippedTank") then
+            if (tonumber(tankId) == LOCAL_PLAYER:GetResource("EquippedTank")) or (expectedEquip == tank.id) then
                 entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_ON
             else
                 entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_OFF
@@ -57,6 +59,8 @@ function PopulateQuickSelectPanel()
             tankCount = tankCount + 1
         end
     end
+    expectedEquip = nil
+    
     TANKS_OWNED.text = "Tanks owned : " .. tostring(tankCount) .. " / " .. tostring(Constants_API.GetNumberOfTanks())
 end
 
@@ -82,12 +86,27 @@ function SelectTank(button)
     if (tonumber(id) == LOCAL_PLAYER:GetResource("EquippedTank")) then
         return
     end
+    
+    expectedEquip = id
 
     Events.Broadcast("QuickSelectTankChange")
     Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", id)
     Events.Broadcast("CHANGE_EQUIPPED_TANK", id)
-    Task.Wait(1)
     PopulateQuickSelectPanel()
+end
+
+function OnTankSelectedChanged(player, resource, newValue)
+
+	local dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
+	
+	if not dailyTbl then
+		return
+	end
+
+	if resource == Constants_API.GetEquippedTankResource() then
+		PopulateQuickSelectPanel()
+	end
+
 end
 
 function ButtonHover(button)
@@ -105,3 +124,4 @@ end
 
 Events.Connect("LoadQuickSelect", PopulateQuickSelectPanel)
 Events.Connect("CHANGE_EQUIPPED_TANK", PopulateQuickSelectPanel)
+LOCAL_PLAYER.resourceChangedEvent:Connect(OnTankSelectedChanged)

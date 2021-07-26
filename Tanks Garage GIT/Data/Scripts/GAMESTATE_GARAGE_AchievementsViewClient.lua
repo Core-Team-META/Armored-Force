@@ -100,14 +100,12 @@ function OnChallengeInfoChanged(serverScript, property)
 		local infoString = string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, ",") - 1)
 		local loginString = string.sub(playerDataFound, string.find(playerDataFound, ",") + 1, playerDataFound.size)
 		
-		--print(infoString)
-		--print(loginString)
+		print(infoString)
+		print(loginString)
 		
 		UnpackChallengeInfo(infoString)
 		
 		localPlayer.clientUserData.LOGIN = string.sub(playerDataFound, string.find(playerDataFound, ",") + 1, playerDataFound.size)
-		
-		--print("Login: " .. os.date("%X", localPlayer.clientUserData.LOGIN))
 				
 		for x, child in ipairs(dailyChallenges:GetChildren()) do
 			local type = localPlayer.clientUserData.CHALLENGES[x].challengeType
@@ -217,7 +215,7 @@ function Tick()
 		if localPlayer.clientUserData.CHALLENGES[4].progress >= 0 then
 			loginProgress.progress = 1
 		else 
-			loginProgress.progress = math.abs(864000 - math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time())) / 864000
+			loginProgress.progress = math.abs(86400 - math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time())) / 86400
 		end
 	end
 	
@@ -258,8 +256,6 @@ function InitializeComponent()
 	OnChallengeInfoChanged(achievementsViewServer, "")
 
 end
-
-Task.Wait(1)
 
 InitializeComponent()
 
