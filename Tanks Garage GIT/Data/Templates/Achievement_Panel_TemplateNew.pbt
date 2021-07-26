@@ -275,6 +275,7 @@ Assets {
           Width: 100
           Height: 100
           UIX: 10
+          UIY: 9
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -345,7 +346,7 @@ Assets {
           Width: 292
           Height: 17
           UIX: 55
-          UIY: 63.6571198
+          UIY: 91.0555038
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -414,12 +415,13 @@ Assets {
         Control {
           Width: 265
           Height: 33
-          UIY: -12.3153591
+          UIY: -23.6686611
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           Text {
             Label: "0 / 0"
             Color {
@@ -430,7 +432,7 @@ Assets {
             }
             Size: 20
             Justification {
-              Value: "mc:etextjustify:center"
+              Value: "mc:etextjustify:left"
             }
             AutoWrapText: true
             Font {
@@ -640,9 +642,9 @@ Assets {
         }
         Control {
           Width: 397
-          Height: 50
+          Height: 45
           UIX: -13
-          UIY: 95
+          UIY: 105
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
