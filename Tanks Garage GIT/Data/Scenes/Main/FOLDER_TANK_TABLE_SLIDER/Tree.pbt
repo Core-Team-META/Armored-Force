@@ -37,8 +37,9 @@ Objects {
   }
   Control {
     Width: -377
-    Height: 150
+    Height: 165
     UIX: 388
+    UIY: 5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -121,6 +122,12 @@ Objects {
         Id: 15718075383189814537
       }
     }
+    Overrides {
+      Name: "cs:MetaAbilityProgressionUTIL_API"
+      AssetReference {
+        Id: 2269572116006940077
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -156,7 +163,6 @@ Objects {
   }
   ParentId: 17307660758729169401
   ChildIds: 1165658689195295684
-  ChildIds: 11463457221855915891
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -170,7 +176,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Height: -34
+    Height: 131
     UIX: 2
     UIY: 30
     RenderTransformPivot {
@@ -178,9 +184,7 @@ Objects {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
-    UseParentHeight: true
     ScrollPanel {
       Orientation {
         Value: "mc:eorientation:orient_horizontal"
@@ -197,97 +201,6 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 11463457221855915891
-  Name: "TANK_TABLE_TEMPLATE"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1070162571013658394
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1476668144710989979
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 3811886043272599878
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceon"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12678180207792735907
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_TABLE_TEMPLATE"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 180
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17773204868119444929
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16479738600627257569
     }
   }
 }
