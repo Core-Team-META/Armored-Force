@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14060330023043759337
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 13257658630242510450
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
@@ -62,12 +71,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7515015531196152948
-  Name: "BG Gradient 001"
+  Id: 7523603796159964991
+  Name: "BG Flat 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_020"
+    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {
@@ -86,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "Baloo2Regular_ref"
+  }
+}
+Assets {
+  Id: 2604353830693238371
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
   }
 }
 Assets {
