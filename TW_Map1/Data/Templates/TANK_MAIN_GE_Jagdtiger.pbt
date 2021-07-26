@@ -83,7 +83,7 @@ Assets {
           }
           Overrides {
             Name: "cs:HorizontalCannonAngles"
-            Int: 10
+            Int: 11
           }
           Overrides {
             Name: "cs:Identifier"
@@ -111,11 +111,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
-            Int: 8
+            Int: 25
           }
           Overrides {
             Name: "cs:UpgradedElevation"
-            Int: 12
+            Int: 35
           }
           Overrides {
             Name: "cs:MaxElevationAngle"
@@ -123,7 +123,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MinDepressionAngle"
-            Int: -10
+            Int: -11
           }
           Overrides {
             Name: "cs:Name"

@@ -1117,7 +1117,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -2781,7 +2781,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -4445,7 +4445,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -6109,7 +6109,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -7773,7 +7773,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -9437,7 +9437,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -11101,7 +11101,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -12765,7 +12765,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -14429,7 +14429,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -16093,7 +16093,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -17762,7 +17762,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
   }
@@ -19487,7 +19487,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -21151,7 +21151,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -22815,7 +22815,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -24479,7 +24479,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -26143,7 +26143,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -27807,7 +27807,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -29471,7 +29471,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -31135,7 +31135,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -32799,7 +32799,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -34463,7 +34463,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -36127,7 +36127,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -37791,7 +37791,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -39455,7 +39455,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -41119,7 +41119,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -42783,7 +42783,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -44447,7 +44447,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -46111,7 +46111,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -47775,7 +47775,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -49439,7 +49439,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -51103,7 +51103,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -52767,7 +52767,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {
@@ -54431,7 +54431,7 @@ Objects {
       Name: "cs:PreviewImageLocation"
       Vector2 {
         X: 4
-        Y: 5
+        Y: 3
       }
     }
     Overrides {

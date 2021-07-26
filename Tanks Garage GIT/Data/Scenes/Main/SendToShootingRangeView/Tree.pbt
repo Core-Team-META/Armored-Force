@@ -1197,8 +1197,8 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: 60.6997795
-      Y: -247.266281
+      X: 60.6990242
+      Y: -318.26059
       Z: 635.622559
     }
     Rotation {
@@ -1208,8 +1208,8 @@ Objects {
     }
     Scale {
       X: 8.58224
-      Y: 11.7047396
-      Z: 0.297925353
+      Y: 12.7591286
+      Z: 0.297925085
     }
   }
   ParentId: 1640396917148801302
@@ -2254,8 +2254,8 @@ Objects {
   Name: "Urban Fence Lock"
   Transform {
     Location {
-      X: -40.5327072
-      Y: -574.674622
+      X: -40.535511
+      Y: -704.196228
       Z: 429.475952
     }
     Rotation {
@@ -2299,8 +2299,8 @@ Objects {
   Name: "Sci-fi Console Screen 04"
   Transform {
     Location {
-      X: -40.9116859
-      Y: -593.257507
+      X: -40.9135094
+      Y: -722.779907
       Z: 460.719543
     }
     Rotation {
@@ -2344,8 +2344,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 1.24689674
-      Y: -473.339233
+      X: 6.37301779
+      Y: -609.521851
+      Z: -2.22509134e-05
     }
     Rotation {
       Pitch: 90
@@ -2415,8 +2416,8 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 1.24720824
-      Y: 695.035034
+      X: 5.38516617
+      Y: 695.034851
     }
     Rotation {
       Pitch: 90
@@ -2486,16 +2487,16 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 29.4661732
-      Y: 732.575256
+      X: 29.4660835
+      Y: 732.575073
       Z: 1096.09277
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
     }
     Scale {
-      X: 1.57120943
-      Y: 7.53711796
+      X: 1.7517246
+      Y: 7.537117
       Z: 1.55256987
     }
   }
@@ -2556,8 +2557,8 @@ Objects {
   Name: "exposure correction"
   Transform {
     Location {
-      X: 23.2669067
-      Y: 112.768723
+      X: 23.2669907
+      Y: 46.9956436
       Z: 635.622559
     }
     Rotation {
@@ -2567,18 +2568,12 @@ Objects {
     }
     Scale {
       X: 8.58224
-      Y: 11.7047396
-      Z: 0.297925353
+      Y: 13.1599712
+      Z: 0.297923625
     }
   }
   ParentId: 726657449272133057
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9431420845744582604
-      }
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: false
@@ -2595,6 +2590,12 @@ Objects {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
         A: 0.648
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9431420845744582604
       }
     }
   }
@@ -2630,8 +2631,8 @@ Objects {
   Name: "exposure correction"
   Transform {
     Location {
-      X: 8.44036102
-      Y: 112.747459
+      X: 8.44045258
+      Y: 46.9743576
       Z: 635.622559
     }
     Rotation {
@@ -2641,18 +2642,12 @@ Objects {
     }
     Scale {
       X: 8.58224
-      Y: 11.7047396
-      Z: 0.297925353
+      Y: 13.1599712
+      Z: 0.297923625
     }
   }
   ParentId: 726657449272133057
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9431420845744582604
-      }
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: false
@@ -2672,6 +2667,12 @@ Objects {
         G: 5
         B: 5
         A: 0.0210000016
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9431420845744582604
       }
     }
   }

@@ -105,6 +105,14 @@ Assets {
             Name: "cs:UpgradedHitPoints"
             Int: 950
           }
+          Overrides {
+            Name: "cs:MinDepressionAngle"
+            Int: -12
+          }
+          Overrides {
+            Name: "cs:UpgradedElevation"
+            Int: 22
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
