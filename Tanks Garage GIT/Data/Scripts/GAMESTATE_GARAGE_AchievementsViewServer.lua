@@ -92,7 +92,7 @@ function UnpackChallengeInfo(player)
 		player.serverUserData.CHALLENGES = challengeString
 	end
 	
-	--print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
+	print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
 end
 
 function RepackChallengeInfo(player)
@@ -107,7 +107,7 @@ function RepackChallengeInfo(player)
 	
 	player.serverUserData.CHALLENGES = challengeString
 	
-	--print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
+	print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
 	
 end
 
@@ -123,14 +123,16 @@ function SetChallengeProgressInfo(player)
 
 	UnpackChallengeInfo(player)
 	
-	if player.serverUserData.LOGIN == "" then
-		player.serverUserData.LOGIN = tostring(os.time())
-	end
+	print(player.serverUserData.LOGIN)
+		
+	print("time left: " .. tostring(tonumber(player.serverUserData.LOGIN) - tonumber(os.time())))
 		
 	if  tonumber(player.serverUserData.LOGIN) - tonumber(os.time()) <= 0 then
+		print("Reset reached")
 		for i = 1, 4 do
 			player.serverUserData.CHALLENGE[i].progress = 0
 		end
+		local newDate = os.date("!*t")
 		player.serverUserData.LOGIN = 
 		tostring(os.time({year = newDate.year, month = newDate.month, day = newDate.day + 1, hour = 5, min = 0, sec = 0}))
 		RepackChallengeInfo(player)
@@ -150,9 +152,11 @@ function Tick()
 	for x, player in ipairs(Game.GetPlayers()) do
 		if Object.IsValid(player) and playerChallengeCheck[player.id] then			
 			if  tonumber(player.serverUserData.LOGIN) - tonumber(os.time()) <= 0 then
+				print("Reset reached")
 				for i = 1, 4 do
 					player.serverUserData.CHALLENGE[i].progress = 0
 				end
+				local newDate = os.date("!*t")
 				player.serverUserData.LOGIN = 
 				tostring(os.time({year = newDate.year, month = newDate.month, day = newDate.day + 1, hour = 5, min = 0, sec = 0}))
 				RepackChallengeInfo(player)
