@@ -182,13 +182,14 @@ function ClaimReward(player, challengeNumber)
 
 	if pass then
 		if player.serverUserData.CHALLENGE[challengeNumber].progress >= 0 then
-			player:AddResource(CONSTANTS_API.SILVER, 1000)
-			player:AddResource(CONSTANTS_API.FREERP, 2000)
+			player:AddResource(CONSTANTS_API.SILVER, 2000)
+			player:AddResource(CONSTANTS_API.FREERP, 1000)
 			
 			player.serverUserData.CHALLENGE[challengeNumber].progress = -1
 			
 			RepackChallengeInfo(player)
 			AddInfoToSlot(player.id, player.serverUserData.CHALLENGES, player.serverUserData.LOGIN)
+			Events.BroadcastToPlayer(player, "SEND_POPUP", player, "CHALLENGE " .. tostring(challengeNumber) .. " COMPLETE", "You earned 2000 silver and 1000 Free XP!")
 		end
 	end	
 

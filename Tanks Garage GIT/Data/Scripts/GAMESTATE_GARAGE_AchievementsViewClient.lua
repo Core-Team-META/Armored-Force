@@ -119,8 +119,6 @@ function OnChallengeInfoChanged(serverScript, property)
 				loginProgress = child:GetCustomProperty("ChallengeProgressBar"):WaitForObject()
 				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = progress >= 0
 			else 
-				child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = type .. ": " .. tostring(progress) .. "/" .. tostring(target)
-				child:GetCustomProperty("ChallengeProgressBar"):WaitForObject().progress = progress/target
 				child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = progress >= target
 			end
 						
@@ -135,9 +133,17 @@ function OnChallengeInfoChanged(serverScript, property)
 					elseif progress >= target then
 						SwitchButtonState(child, "Idle")
 					end
+					if type ~= "Login" then
+						child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = type .. ": " .. tostring(progress) .. "/" .. tostring(target)
+						child:GetCustomProperty("ChallengeProgressBar"):WaitForObject().progress = progress/target
+					end					
 				elseif progress < 0 then
 					child:GetCustomProperty("ChallengeClaim"):WaitForObject().isInteractable = false
 					SwitchButtonState(child, "Claimed")
+					if type ~= "Login" then
+						child:GetCustomProperty("ChallengeProgress"):WaitForObject().text = type .. ": " .. tostring(target) .. "/" .. tostring(target)
+						child:GetCustomProperty("ChallengeProgressBar"):WaitForObject().progress = 1
+					end
 				end
 			end
 		end
@@ -188,7 +194,7 @@ end
 
 function OnClaimButtonPressed(button)
 
-	print("Broadcascting claim reward for index " .. tostring(challengeButtonIndex[button]))
+	--print("Broadcascting claim reward for index " .. tostring(challengeButtonIndex[button]))
 
 	Events.BroadcastToServer("CLAIM_REWARD", challengeButtonIndex[button])
 	
@@ -211,7 +217,7 @@ function Tick()
 		if localPlayer.clientUserData.CHALLENGES[4].progress >= 0 then
 			loginProgress.progress = 1
 		else 
-			loginProgress.progress = math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time()) / 24
+			loginProgress.progress = math.abs(864000 - math.abs(tonumber(localPlayer.clientUserData.LOGIN) - os.time())) / 864000
 		end
 	end
 	
@@ -246,26 +252,7 @@ function InitializeComponent()
 		challengeButtonStates[child]["Hover"] = buttonStates:FindDescendantByName("BUTTON_CHALLENGE_HOVER")
 		challengeButtonStates[child]["Claimed"] = buttonStates:FindDescendantByName("BUTTON_CHALLENGE_CLAIMED")
 	end
-	--[[
-	loginButton.clickedEvent:Connect(OnClaimButtonPressed)
-	loginButton.hoveredEvent:Connect(OnClaimButtomHovered)
-	loginButton.unhoveredEvent:Connect(OnClaimButtomUnhovered)
-	
-	local loginTitle = dailyLogin:GetCustomProperty("LoginTitle"):WaitForObject()
-	loginTitle.text = "Daily Login"
-	
-	local buttonStates = dailyLogin:GetCustomProperty("LoginClaimButtonStates"):WaitForObject()
-	
-	challengeButtonStates[dailyLogin] = {}
-	challengeButtonIndex[dailyLogin] = 4
-	challengeButtonStates[dailyLogin]["Locked"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_LOCKED")
-	challengeButtonStates[dailyLogin]["Idle"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_IDLE")
-	challengeButtonStates[dailyLogin]["Pressed"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_PRESSED")
-	challengeButtonStates[dailyLogin]["Hover"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_HOVER")
-	challengeButtonStates[dailyLogin]["Claimed"] = buttonStates:FindChildByName("BUTTON_CHALLANGE_CLAIMED")
-	
-	SwitchButtonState(dailyLogin, "Locked")
-	]]
+
 	initialized = true
 	
 	OnChallengeInfoChanged(achievementsViewServer, "")
