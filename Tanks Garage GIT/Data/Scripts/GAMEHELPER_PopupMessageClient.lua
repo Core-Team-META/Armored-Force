@@ -13,6 +13,10 @@ function CloseWindow()
 end
 
 function PopUpWindow(player, titleMessage, bodyMessage)
+
+	print(player)
+	print(titleMessage)
+	print(bodyMessage)
 	
 	messageUIWindow.visibility = Visibility.INHERIT
 	
