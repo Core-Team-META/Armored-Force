@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4913010023776999523
+  Name: "Baloo 2"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "Baloo2Regular_ref"
+  }
+}
+Assets {
   Id: 2903415737883036314
   Name: "Icon Close"
   PlatformAssetType: 9
@@ -113,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 1814707273787853473
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {
