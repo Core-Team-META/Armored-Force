@@ -566,6 +566,7 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 	end
 	
 	local silverCost = tonumber(tankData.purchaseCost)
+	print("Silver cost to purchase: " .. tostring(silverCost))
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("PRICE_3").text = tostring(silverCost)
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("ITEMNAME_3").text = tankData.purchaseCurrencyName
 	local playerCurrency = 0
@@ -579,12 +580,11 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_3").text = tostring(silverCost)
 		silverCost = 0
 	else
-		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_3").text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER) - silverCost)
-		silverCost = LOCAL_PLAYER:GetResource(Constants_API.SILVER) - silverCost
+		silverCost = silverCost - LOCAL_PLAYER:GetResource(Constants_API.SILVER)
+		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_3").text = tostring(silverCost)		
 	end
 	
 	local button = CONFIRM_TANK_UPGRADE:FindDescendantByName("CONFIRM_WINDOW_CONFIRM_BUTTON")
-		
 	if(tankData.purchasedTank) then
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_OFF
 		CONFIRM_WINDOW_CONFIRM_BUTTON.text = "EQUIP"
