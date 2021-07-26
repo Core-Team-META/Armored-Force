@@ -14658,9 +14658,10 @@ Objects {
         Id: 7523603796159964991
       }
       Color {
-        G: 0.0411161706
-        B: 0.136
-        A: 0.690196097
+        R: 0.479320228
+        G: 0.417885154
+        B: 0.262250721
+        A: 1
       }
       TeamSettings {
       }
@@ -15466,9 +15467,10 @@ Objects {
         Id: 7523603796159964991
       }
       Color {
-        G: 0.234550595
-        B: 0.775822461
-        A: 0.690196097
+        R: 0.479320228
+        G: 0.417885154
+        B: 0.262250721
+        A: 1
       }
       TeamSettings {
       }
@@ -17282,9 +17284,9 @@ Objects {
     Text {
       Label: "Get started by heading to the shooting range."
       Color {
-        R: 0.420000017
-        G: 0.420000017
-        B: 0.420000017
+        R: 0.423267752
+        G: 0.423267752
+        B: 0.423267752
         A: 1
       }
       Size: 20
@@ -17303,6 +17305,9 @@ Objects {
       }
       ShadowOffset {
         Y: 2
+      }
+      OutlineColor {
+        A: 1
       }
     }
     AnchorLayout {
@@ -17485,7 +17490,7 @@ Objects {
   Control {
     Width: 2
     Height: 114
-    UIY: 11.4291992
+    UIY: 11.429
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -17971,14 +17976,12 @@ Objects {
     }
   }
   ParentId: 13690824288040182562
-  ChildIds: 17954815245879193227
-  ChildIds: 382315111244417715
   ChildIds: 8482860661502313126
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17987,9 +17990,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 300
-    Height: 50
-    UIY: 124.531754
+    Width: 196
+    Height: 38
+    UIX: 633.317749
+    UIY: 70.1248932
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -18001,12 +18005,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topright"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -18042,7 +18046,7 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 27
+    Height: 34
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -18052,86 +18056,12 @@ Objects {
     Text {
       Label: "YOU ARE QUEUED FOR BATTLE"
       Color {
-        R: 0.768151402
-        G: 0.783538043
-        B: 0.8879233
+        R: 1
+        G: 0.82331121
+        B: 0.539999962
         A: 1
       }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      ClipTextToSize: true
-      Font {
-        Id: 9686253618519087109
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 382315111244417715
-  Name: "QUEUE_INDICATOR_SECONDARY"
-  Transform {
-    Location {
-      X: 4681.74268
-      Y: -7618.44482
-      Z: -870.209229
-    }
-    Rotation {
-      Yaw: 43.5328674
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17413968878563161576
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    UIY: 1.07521057
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "YOU ARE QUEUED FOR BATTLE"
-      Color {
-        R: 0.587409794
-        G: 0.599176049
-        B: 0.679
-        A: 1
-      }
-      Size: 27
+      Size: 15
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -18142,78 +18072,13 @@ Objects {
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17954815245879193227
-  Name: "QUEUE_INDICATOR_SHADOW"
-  Transform {
-    Location {
-      X: 4681.74268
-      Y: -7618.44482
-      Z: -870.209229
-    }
-    Rotation {
-      Yaw: 43.5328674
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17413968878563161576
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    UIY: 3
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "YOU ARE QUEUED FOR BATTLE"
-      Color {
-        G: 0.0584105141
-        B: 0.179999948
+      ShadowColor {
         A: 1
       }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
+      OutlineColor {
+        A: 1
       }
-      AutoWrapText: true
-      Font {
-        Id: 9686253618519087109
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
