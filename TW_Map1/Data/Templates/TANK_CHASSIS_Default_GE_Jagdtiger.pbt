@@ -53,8 +53,8 @@ Assets {
             X: -80
             Z: 70
           }
-          MaxSpeed: 890
-          AccelerationRate: 3300
+          MaxSpeed: 920
+          AccelerationRate: 3400
           DecelerationRate: 15
           BrakeStrength: 15
           TireFriction: 2.3
@@ -62,7 +62,7 @@ Assets {
             X: -90
             Z: 20
           }
-          GravityScale: 2.7
+          GravityScale: 2.5
           CoastBrakeStrength: 10
           Tank {
             LeftTreadRadius: 100

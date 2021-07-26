@@ -117,6 +117,18 @@ Assets {
             Name: "cs:ViewRange"
             Int: 40000
           }
+          Overrides {
+            Name: "cs:MinDepressionAngle"
+            Int: -12
+          }
+          Overrides {
+            Name: "cs:TurretElevationSpeed"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:UpgradedElevation"
+            Int: 25
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
