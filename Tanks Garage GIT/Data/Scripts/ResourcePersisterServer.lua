@@ -296,8 +296,8 @@ function SetNewPlayerProgression(playerSharedStorage)
 	
 end
 
-function SetTankProgressionDataForServer(dataString, player)
-	--print("Saving tank data on server. Data string: " .. dataString)
+function SetTankProgressionDataForServer(dataString, player)	
+	print("Saving tank data on server. Data string: " .. dataString)
    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
    -- print("Finished converting string into table.")
     
