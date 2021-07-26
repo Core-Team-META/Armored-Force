@@ -111,11 +111,11 @@ Assets {
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:UpgradedElevation"
-            Int: 15
+            Int: 22
           }
           Overrides {
             Name: "cs:MaxElevationAngle"

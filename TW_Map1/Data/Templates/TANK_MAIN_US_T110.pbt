@@ -123,7 +123,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MinDepressionAngle"
-            Int: -8
+            Int: -11
           }
           Overrides {
             Name: "cs:Name"
