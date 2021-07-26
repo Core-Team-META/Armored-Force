@@ -584,7 +584,7 @@ function OnArmorHit(trigger, other)
 		ramCooldown = true
 		local cooldownTask = Task.Spawn(ResetRamCooldown)
 		
-		local ramDamage = ((netSpeed + other.mass * 0.03) * thisVehicleSpeed) / (50 * (thisVehicleSpeed + 1))
+		local ramDamage = ((netSpeed + other.mass * 0.03) * thisVehicleSpeed) / (50 * (thisVehicleSpeed + 1)) + 20
 		
 		if armorName == "HULLFRONT" then
 			ramDamage = ramDamage/4
