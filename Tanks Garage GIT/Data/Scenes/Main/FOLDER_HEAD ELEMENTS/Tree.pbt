@@ -15315,7 +15315,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 148
+    Width: 189
     Height: 60
     UIX: 294.227661
     UIY: -19.3022766
@@ -15400,6 +15400,7 @@ Objects {
   }
   ParentId: 6694204000848149588
   ChildIds: 7080837745152815417
+  ChildIds: 1296656561739763548
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -15413,8 +15414,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 33
-    Height: 30
+    Width: 199
+    Height: 67
+    UIX: -39.5762329
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15454,6 +15456,87 @@ Objects {
   }
 }
 Objects {
+  Id: 1296656561739763548
+  Name: "BUTTON_EXPERIENCE_TEXT"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17046087367663830997
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 152
+    Height: 29
+    UIY: 6.12936115
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "(Can be used with any tank)"
+      Color {
+        R: 0.399999976
+        G: 0.833112359
+        B: 1
+        A: 1
+      }
+      Size: 14
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 9686253618519087109
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 7080837745152815417
   Name: "BUTTON_EXPERIENCE_TEXT"
   Transform {
@@ -15483,6 +15566,7 @@ Objects {
   Control {
     Width: 152
     Height: 29
+    UIY: -13.0407486
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15491,14 +15575,14 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Experience"
+      Label: "Global Experience"
       Color {
         R: 0.399999976
         G: 0.833112359
         B: 1
         A: 1
       }
-      Size: 15
+      Size: 16
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -15513,6 +15597,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 0.15
+        Y: 0.15
       }
       OutlineColor {
         A: 1
@@ -15662,6 +15748,7 @@ Objects {
   Control {
     Width: 33
     Height: 30
+    UIX: -20
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15759,6 +15846,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 0.1
+        Y: 0.1
       }
       OutlineColor {
         A: 1
@@ -15908,6 +15997,7 @@ Objects {
   Control {
     Width: 33
     Height: 30
+    UIX: -10
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -16006,6 +16096,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        X: 0.1
+        Y: 0.1
       }
       OutlineColor {
         A: 1
