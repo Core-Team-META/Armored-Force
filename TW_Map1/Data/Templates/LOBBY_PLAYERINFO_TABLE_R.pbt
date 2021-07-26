@@ -15,13 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14247372791690553398
+        ParentId: 7582143756357340986
         ChildIds: 16210896634558714102
-        ChildIds: 8131749555691981957
         ChildIds: 4874039113657706725
         ChildIds: 16915104379361408190
         ChildIds: 14579612368632492686
-        ChildIds: 16353198143129610232
         UnregisteredParameters {
           Overrides {
             Name: "cs:User"
@@ -49,13 +47,14 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 100
+          Width: 6
           Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           Panel {
             Opacity: 1
@@ -104,20 +103,21 @@ Assets {
         Control {
           Width: 30
           Height: 395
-          UIX: -1.21154785
-          UIY: 30
-          RotationAngle: -90
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
+          UseParentHeight: true
           Image {
             Brush {
-              Id: 10820194954338241369
+              Id: 4504686085818425438
             }
             Color {
-              A: 0.543000042
+              R: 0.00483333087
+              G: 0.01
+              A: 0.554
             }
             TeamSettings {
             }
@@ -130,79 +130,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8131749555691981957
-        Name: "BG_TOP"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18039565071595315559
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Control {
-          Width: 15
-          Height: 395
-          UIX: -1.21154785
-          UIY: 15
-          RotationAngle: -90
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 10820194954338241369
-            }
-            Color {
-              A: 0.488000035
-            }
-            TeamSettings {
-            }
-            ShadowColor {
-              A: 1
-            }
-            ShadowOffset {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -306,7 +239,7 @@ Assets {
         Control {
           Width: 200
           Height: 60
-          UIX: -5
+          UIX: -10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -337,8 +270,11 @@ Assets {
               A: 1
             }
             ShadowOffset {
-              Y: 2
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -394,9 +330,9 @@ Assets {
           Text {
             Label: "TankName 123"
             Color {
-              R: 0.666
-              G: 0.666
-              B: 0.666
+              R: 1
+              G: 0.778543055
+              B: 0.56
               A: 1
             }
             Size: 15
@@ -414,8 +350,11 @@ Assets {
               A: 1
             }
             ShadowOffset {
-              Y: 2
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -431,75 +370,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 16353198143129610232
-        Name: "DIVIDER"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18039565071595315559
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Control {
-          Width: 1
-          Height: 330
-          UIX: -1.21154785
-          UIY: 29
-          RotationAngle: -90
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 10820194954338241369
-            }
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-            TeamSettings {
-            }
-            ShadowColor {
-              A: 1
-            }
-            ShadowOffset {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
+    }
+    Assets {
+      Id: 4504686085818425438
+      Name: "BG Flat 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
