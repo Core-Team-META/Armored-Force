@@ -28,6 +28,8 @@ local turret = nil
 local defaultCamera = nil
 local sniperCamera = nil
 local bindingPressedListener = nil
+local previousDistance = 0
+local distanceMaxed = false
 
 local cannon = nil
 
@@ -50,10 +52,16 @@ local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
 	local direction = Vector3.New(math.cos(azimuth) * math.cos(altitude), math.sin(azimuth) * math.cos(altitude), math.sin(altitude))
 	local destination = (direction * distance) + point
-	local point = World.Raycast(point, destination)
-	
-	if point then
-		destination = point:GetImpactPosition()
+	local raycastPoint = World.Raycast(point, destination)
+		
+	if raycastPoint then
+		destination = raycastPoint:GetImpactPosition()
+		previousDistance = tonumber(math.ceil((destination - cannon:GetWorldPosition()).size))
+		distanceMaxed = false
+	else
+		print(previousDistance)
+		destination = (direction * previousDistance) + point
+		distanceMaxed = true
 	end
 	
 	return destination
@@ -87,6 +95,7 @@ function FindTank()
 				
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
+	sniperCamera.minDistance = sniperCamera.minDistance - 4000
 			
 	Task.Wait(0.1)
 				
@@ -102,9 +111,13 @@ function UpdatePointer()
 
 	local position = RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(),cannon:GetWorldRotation(), 100000)
 	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
-		
-	distanceReadout.text = tostring(distance) .. " m"
-		
+	
+	if distanceMaxed then
+		distanceReadout.text = "--m"
+	else
+		distanceReadout.text = tostring(distance) .. " m"
+	end
+	
 	local uiPostion = UI.GetScreenPosition(position)
 		
 	if uiPostion then
@@ -211,7 +224,7 @@ function Tick(dt)
 		local maxZoom = currentCamera.minDistance
 		local minZoom = currentCamera.maxDistance
 		
-		zoom.text = string.format("%.1f", (minZoom - currentZoom)/200) .. "xZoom"
+		zoom.text = string.format("%.1f", (minZoom - currentZoom)/1000) .. "xZoom"
 		zoom.visibility = Visibility.INHERIT
 	else 
 		zoom.visibility = Visibility.FORCE_OFF
