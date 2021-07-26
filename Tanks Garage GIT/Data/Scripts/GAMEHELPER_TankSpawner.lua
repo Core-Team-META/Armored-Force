@@ -64,7 +64,7 @@ function ChangeEquippedTank(player, id)
 	if CheckPlayerState(player) then
 		GivePlayerEquipment(player)
 	end
-	
+	player:SetPrivateNetworkedData("SelectedTank", tonumber(id))
 end
 
 function OnPlayerRespawned(player)
