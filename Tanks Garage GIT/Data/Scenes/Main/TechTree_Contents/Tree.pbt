@@ -168,6 +168,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "22"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "b54ba9/tanksportal-images7"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "2"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -351,6 +359,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "24"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "b54ba9/tanksportal-images7"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "1"
     }
   }
   Collidable_v2 {
@@ -536,6 +552,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "24"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "459990/tanksportal-images6"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "5"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -719,6 +743,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "24"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "459990/tanksportal-images6"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "4"
     }
   }
   Collidable_v2 {
@@ -904,6 +936,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "23"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "459990/tanksportal-images6"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1087,6 +1127,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "23"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "459990/tanksportal-images6"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "2"
     }
   }
   Collidable_v2 {
@@ -1272,6 +1320,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "23"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "459990/tanksportal-images6"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "1"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1456,6 +1512,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "23"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "ff55d5/tanksportal-images5"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "5"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1635,6 +1699,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "ff55d5/tanksportal-images5"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "4"
     }
   }
   Collidable_v2 {
@@ -1824,6 +1896,14 @@ Objects {
       Name: "cs:Prerequisite2"
       String: "21"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "ff55d5/tanksportal-images5"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2012,6 +2092,14 @@ Objects {
       Name: "cs:Prerequisite2"
       String: "21"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "ff55d5/tanksportal-images5"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "2"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2195,6 +2283,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "18"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "ff55d5/tanksportal-images5"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "1"
     }
   }
   Collidable_v2 {
@@ -2380,6 +2476,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "18"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "bf730d/tanksportal-images4"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "5"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2563,6 +2667,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "18"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "bf730d/tanksportal-images4"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "4"
     }
   }
   Collidable_v2 {
@@ -2748,6 +2860,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "18"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "bf730d/tanksportal-images4"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2927,6 +3047,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 35
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "bf730d/tanksportal-images4"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "2"
     }
   }
   Collidable_v2 {
@@ -3112,6 +3240,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "07"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "bf730d/tanksportal-images4"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "1"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3295,6 +3431,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "06"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "7a9494/tanksportal-images3"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "4"
     }
   }
   Collidable_v2 {
@@ -3480,6 +3624,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "06"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "7a9494/tanksportal-images3"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3663,6 +3815,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "06"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "7a9494/tanksportal-images3"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "5"
     }
   }
   Collidable_v2 {
@@ -3848,6 +4008,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "05"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "7a9494/tanksportal-images3"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "2"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4031,6 +4199,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "05"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "7a9494/tanksportal-images3"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "1"
     }
   }
   Collidable_v2 {
@@ -4216,6 +4392,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "05"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "71d92b/tanksportal-images2"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "5"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4400,6 +4584,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "02"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "71d92b/tanksportal-images2"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "4"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4580,6 +4772,14 @@ Objects {
       Name: "cs:TraverseUpgraded"
       Int: 35
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "71d92b/tanksportal-images2"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4759,6 +4959,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 30
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: ""
     }
   }
   Collidable_v2 {
@@ -4943,6 +5151,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "01"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "b4c1f7/tanksportal-images1"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "5"
     }
   }
   Collidable_v2 {
@@ -5132,6 +5348,14 @@ Objects {
       Name: "cs:Prerequisite2"
       String: "04"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "71d92b/tanksportal-images2"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "2"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5320,6 +5544,14 @@ Objects {
       Name: "cs:Prerequisite2"
       String: "04"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "71d92b/tanksportal-images2"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "1"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5503,6 +5735,14 @@ Objects {
     Overrides {
       Name: "cs:Prerequisite1"
       String: "01"
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "b4c1f7/tanksportal-images1"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "4"
     }
   }
   Collidable_v2 {
@@ -5688,6 +5928,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "b4c1f7/tanksportal-images1"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "3"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5872,6 +6120,14 @@ Objects {
       Name: "cs:Prerequisite1"
       String: "01"
     }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "b4c1f7/tanksportal-images1"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "2"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6051,6 +6307,14 @@ Objects {
     Overrides {
       Name: "cs:TraverseUpgraded"
       Int: 40
+    }
+    Overrides {
+      Name: "cs:PortalImageURL"
+      String: "b4c1f7/tanksportal-images1"
+    }
+    Overrides {
+      Name: "cs:ScreenShotIndex"
+      String: "1"
     }
   }
   Collidable_v2 {
