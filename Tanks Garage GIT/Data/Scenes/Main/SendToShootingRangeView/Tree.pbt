@@ -2808,9 +2808,9 @@ Objects {
   Name: "S12"
   Transform {
     Location {
-      X: 2121.2251
+      X: 3081.125
       Y: -4236.92871
-      Z: -221.754684
+      Z: -384.503082
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -2853,9 +2853,9 @@ Objects {
   Name: "S11"
   Transform {
     Location {
-      X: 1532.6875
-      Y: -4779.8374
-      Z: -85.2463684
+      X: 2067.86084
+      Y: -4779.83252
+      Z: -249.362244
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -2898,9 +2898,9 @@ Objects {
   Name: "S10"
   Transform {
     Location {
-      X: 1532.69238
-      Y: -3796.00049
-      Z: -170.210297
+      X: 2000.34863
+      Y: -3795.99707
+      Z: -227.438324
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -2943,8 +2943,8 @@ Objects {
   Name: "S9"
   Transform {
     Location {
-      X: -650.907227
-      Y: -4825.63721
+      X: -650.902344
+      Y: -5081.27637
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -3031,8 +3031,9 @@ Objects {
   Name: "S7"
   Transform {
     Location {
-      X: 0.0029296875
-      Y: -4259.16797
+      X: 531.096191
+      Y: -4259.16748
+      Z: -59.440918
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -3075,9 +3076,9 @@ Objects {
   Name: "S6"
   Transform {
     Location {
-      X: 2121.21973
-      Y: 22.2426758
-      Z: -221.754684
+      X: 3455.00073
+      Y: 22.2431641
+      Z: -410.33075
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -3120,9 +3121,9 @@ Objects {
   Name: "S5"
   Transform {
     Location {
-      X: 1532.69214
-      Y: -520.66748
-      Z: -85.2463684
+      X: 2130.97437
+      Y: -520.667114
+      Z: -262.37854
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -3165,9 +3166,9 @@ Objects {
   Name: "S4"
   Transform {
     Location {
-      X: 1532.69214
-      Y: 463.171387
-      Z: -170.210297
+      X: 2089.2229
+      Y: 463.171875
+      Z: -250.199707
     }
     Rotation {
       Yaw: 2.3905659e-05
@@ -3298,6 +3299,9 @@ Objects {
   Name: "S1"
   Transform {
     Location {
+      X: 578.540833
+      Y: 0.00048828125
+      Z: -74.7401428
     }
     Rotation {
       Yaw: 2.3905659e-05
