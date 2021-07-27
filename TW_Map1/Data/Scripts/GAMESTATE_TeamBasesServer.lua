@@ -11,6 +11,12 @@ local aEdgePoint = script:GetCustomProperty("AEdgePoint"):WaitForObject()
 local bCenterPoint = script:GetCustomProperty("BCenterPoint"):WaitForObject()
 local bEdgePoint = script:GetCustomProperty("BEdgePoint"):WaitForObject()
 
+local collisionA = script:GetCustomProperty("CollisionA"):WaitForObject()
+local collisionB = script:GetCustomProperty("collisionB"):WaitForObject()
+
+local collisionTemplateA = script:GetCustomProperty("collisionTemplateA")
+local collisionTemplateB = script:GetCustomProperty("collisionTemplateB")
+
 local aRadius = (aCenterPoint:GetWorldPosition()-aEdgePoint:GetWorldPosition()).size
 local bRadius = (bCenterPoint:GetWorldPosition()-bEdgePoint:GetWorldPosition()).size
 
@@ -21,6 +27,8 @@ local leadTeam = 0
 local aCapProgress = 0
 local bCapProgress = 0
 local capDamagedPenalty = 30
+
+local capPointCollisions = {}
 
 local damageListeners = {}
 
@@ -38,7 +46,7 @@ function StateSTART(manager, propertyName)
 	
 		aCapProgress = 0
 		bCapProgress = 0
-	
+		
 		if playerCountTask then
 		
 			playerCountTask:Cancel()
@@ -74,6 +82,11 @@ function StateSTART(manager, propertyName)
 		damageListeners[p.id] = p.damagedEvent:Connect(ReduceCapOnDamaged)
 		
 	end
+	
+	capPointCollisions[1] = collisionA:GetChildren()[1]	
+	capPointCollisions[1]:SetPosition(Vector3.ZERO)
+	capPointCollisions[2] = collisionB:GetChildren()[1]	
+	capPointCollisions[2]:SetPosition(Vector3.ZERO)
 		
 	Game.StartRound()
 		
