@@ -38322,7 +38322,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 82.1756668
+          Float: -166.103
         }
       }
     }
@@ -38366,7 +38366,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -38.801033
+          Float: 82.176
         }
       }
     }
@@ -38410,7 +38410,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -166.103088
+          Float: -38.801
         }
       }
     }
@@ -39307,7 +39307,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "T57"
+      Label: "AMX-50"
       Color {
         R: 1
         G: 1
@@ -39374,7 +39374,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "AMX-50"
+      Label: "IS-7"
       Color {
         R: 1
         G: 1
@@ -39442,7 +39442,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Text {
-      Label: "IS-7"
+      Label: "T57"
       Color {
         R: 1
         G: 1
@@ -42182,7 +42182,7 @@ Objects {
     }
     Overrides {
       Name: "cs:SetImageIndex"
-      Int: 5
+      Int: 4
     }
   }
   Collidable_v2 {
@@ -42223,7 +42223,7 @@ Objects {
       ShadowOffset {
       }
       GameId: "7a9494/tanksportal-images3"
-      ScreenshotIndex: 5
+      ScreenshotIndex: 4
     }
     AnchorLayout {
       SelfAnchor {
@@ -42316,7 +42316,7 @@ Objects {
     }
     Overrides {
       Name: "cs:SetImageIndex"
-      Int: 4
+      Int: 3
     }
   }
   Collidable_v2 {
@@ -42357,7 +42357,7 @@ Objects {
       ShadowOffset {
       }
       GameId: "7a9494/tanksportal-images3"
-      ScreenshotIndex: 4
+      ScreenshotIndex: 3
     }
     AnchorLayout {
       SelfAnchor {
@@ -42451,7 +42451,7 @@ Objects {
     }
     Overrides {
       Name: "cs:SetImageIndex"
-      Int: 3
+      Int: 5
     }
   }
   Collidable_v2 {
@@ -42492,7 +42492,7 @@ Objects {
       ShadowOffset {
       }
       GameId: "7a9494/tanksportal-images3"
-      ScreenshotIndex: 3
+      ScreenshotIndex: 5
     }
     AnchorLayout {
       SelfAnchor {
