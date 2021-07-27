@@ -26,15 +26,15 @@ local function SortByTier(tankA, tankB)
 
     local tankTeirA = tankAData:GetCustomProperty("Tier")
     local tankTeirB = tankBData:GetCustomProperty("Tier")
+
+    tankTeirA = tankTeirA * (tankA.data.id + 50)
+    tankTeirB = tankTeirB * (tankB.data.id + 50)
+
     if tankA.data.purchased then
-        tankTeirA = tankTeirA + 100
-    else
-        tankTeirA = tankTeirA - 100
+        tankTeirA = tankTeirA + 1000
     end
     if tankB.data.purchased then
-        tankTeirB = tankTeirB + 100
-    else
-        tankTeirB = tankTeirB - 100
+        tankTeirB = tankTeirB + 1000
     end
     return tankTeirA > tankTeirB
 end
@@ -228,7 +228,13 @@ function TanksChanged()
     PopulateQuickSelectPanel()
 end
 
+function TankPurchased()
+    Task.Wait(1)
+    PopulateQuickSelectPanel()
+end
+
 Events.Connect("LoadQuickSelect", PopulateQuickSelectPanel)
 Events.Connect("CHANGE_EQUIPPED_TANK", PopulateQuickSelectPanel)
+Events.Connect("TankPurchaseSuccessful", TankPurchased)
 --LOCAL_PLAYER.resourceChangedEvent:Connect(OnTankSelectedChanged)
 LOCAL_PLAYER.privateNetworkedDataChangedEvent:Connect(OnTankSelectedChanged)
