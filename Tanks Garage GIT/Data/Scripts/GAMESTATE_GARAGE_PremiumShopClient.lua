@@ -12,6 +12,10 @@ local subscriptionTitle = script:GetCustomProperty("SubscriptionTitle"):WaitForO
 local premiumSubscription = script:GetCustomProperty("PremiumSubscription")
 local techTreeContents = script:GetCustomProperty("TechTreeContents"):WaitForObject()
 
+local alliesPremiumButton = script:GetCustomProperty("ALLIES_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
+local axisPremiumButton = script:GetCustomProperty("AXIS_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
+
+
 local thisComponent = "SHOP_MENU"
 local savedState = ""
 
@@ -96,6 +100,8 @@ end
 
 function AttemptPremiumPurchase(button)
 
+	print("attempting to purchase")
+
 	if localPlayer:GetResource(CONSTANTS_API.GOLD) >= premiumTanksInfo[button.id].cost then
 		Events.BroadcastToServer("PurchasePremTank", premiumTanksInfo[button.id].id)
 	else 
@@ -118,7 +124,7 @@ function AcknowledgePurchase(tankId, confirmed)
 			button.text = "NOT ENOUGH GOLD"
 			Task.Wait(1)
 			button.isInteractable = true
-			button.text = "PURCHASE"			
+			button.text = "1000 Gold"			
 		end
 		return
 	end
@@ -240,23 +246,34 @@ function PopulatePremiumTanks()
 	local cost = ""
 	local id = ""
 	
+	print("populating premium tanks")
+	
 	for x, t in ipairs(techTreeContents:GetChildren()) do
 		if t:GetCustomProperty("PurchaseCurrencyName") == "Gold" then
-			premiumEntry = World.SpawnAsset(premiumTankEntry, {parent = premiumTanks:GetCustomProperty("ScrollPanel"):WaitForObject()})
-			button = premiumEntry:GetCustomProperty("TankPurchaseButton"):WaitForObject()
+			local team = t:GetCustomProperty("Team")
+			
+			if team == "Allies" then
+				button = alliesPremiumButton
+				print("Allies button set")
+			elseif team == "Axis" then
+				button = axisPremiumButton
+				print("Axis button set")
+			end
+			
+			--premiumEntry = World.SpawnAsset(premiumTankEntry, {parent = premiumTanks:GetCustomProperty("ScrollPanel"):WaitForObject()})
 			cost = t:GetCustomProperty("PurchaseCost")
 			id = t:GetCustomProperty("ID")
 
-			premiumEntry.y = entryCount * (premiumEntry.height + 10)
-			premiumEntry:GetCustomProperty("TankText"):WaitForObject().text = t:GetCustomProperty("Name")
-			premiumEntry:GetCustomProperty("CostText"):WaitForObject().text = "Gold: " .. cost
-			button.text = "PURCHASE"
+			--premiumEntry.y = entryCount * (premiumEntry.height + 10)
+			--premiumEntry:GetCustomProperty("TankText"):WaitForObject().text = t:GetCustomProperty("Name")
+			--premiumEntry:GetCustomProperty("CostText"):WaitForObject().text = "Gold: " .. cost
+			--button.text = "PURCHASE"
 			
 			premiumTanksInfo[button.id] = {}
 			premiumTanksInfo[button.id].cost = tonumber(cost)
 			premiumTanksInfo[button.id].id = id
 			premiumTanksInfo[id] = {}
-			premiumTanksInfo[id].entry = premiumEntry
+			--premiumTanksInfo[id].entry = premiumEntry
 			premiumTanksInfo[id].button = button
 			
 			button.clickedEvent:Connect(AttemptPremiumPurchase)
@@ -271,6 +288,8 @@ function PopulatePremiumTanks()
 			entryCount = entryCount + 1
 		end
 	end
+	
+	print("finished setting up premium tanks")
 
 end
 

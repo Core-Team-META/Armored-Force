@@ -4842,7 +4842,7 @@ Objects {
     }
     Overrides {
       Name: "cs:PurchaseCurrencyName"
-      String: "Gold"
+      String: "Silver"
     }
     Overrides {
       Name: "cs:ResearchCost"
