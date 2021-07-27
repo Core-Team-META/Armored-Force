@@ -30,6 +30,19 @@ Assets {
   }
 }
 Assets {
+  Id: 15304805888386549265
+  Name: "Tanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "3c3178dcc0494bd4904969d5250b3dff"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 14345407072251931141
   Name: "SilverPack2"
   PlatformAssetType: 24
@@ -65,19 +78,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13408636337207294900
-  Name: "Leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "052041e8d63b4517a952bb140099bb39"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 10275389552133456967
   Name: "SoldierPack"
   PlatformAssetType: 24
@@ -86,19 +86,6 @@ Assets {
       Key: "49585fe5e81b4de9827fd8d8e6190685"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 9945433159589621352
-  Name: "Skins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8905467fb24d4808b3c2ae59a33229f2"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -152,12 +139,38 @@ Assets {
   }
 }
 Assets {
+  Id: 8620200786685473623
+  Name: "Skins"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "e86521488aa340328f34b59e4a44f0d3"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 4738838424805941191
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c0c2d6c67a6644dcaa2a0db60e6e61f6"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {
@@ -187,12 +200,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3747932944117749264
+  Id: 3257753265588382030
   Name: "Achievements"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "5ded2bb7c8c349e1bedb86ea3cf486d1"
+      Key: "9e04fa959b5e4d3c8a7f25638bb17a9f"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -243,19 +256,6 @@ Assets {
       Key: "67664d19c16944bba2de6e88ec6c7404"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 1587440743886153265
-  Name: "TankProgress"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "d0942430ab1447ecaf4155441f6206ed"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
