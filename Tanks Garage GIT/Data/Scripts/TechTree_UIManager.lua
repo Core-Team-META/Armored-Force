@@ -406,7 +406,7 @@ function PopulateSelectedTankPanel(id)
 		tankData = GetTankData(id)
 	end
 	
-	tankDetails = tankData
+	tankDetails = tankData	
 	
 	local playerTankData = {}
 	
@@ -468,13 +468,16 @@ function PopulateSelectedTankPanel(id)
 			tankData.engineProgress = t.engineProgress
 		end
 	end
-	
-	if(isSelection and not doNotShowModal) then
-		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_ON
-		local prereqs = GetPrerequisiteRPValues(selectedTankId)
-		PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
+
+	if tankData.purchasedTank then
+		 Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", tankData.id)
+		 Events.Broadcast("CHANGE_EQUIPPED_TANK", tankData.id) 
+		 SFX_EQUIP_TANK:Play()
+		 doNotShowModal = true
+	else
+		doNotShowModal = false
 	end
-	
+		
 	LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF	
 	
 	if(not tankDetails.purchasedTank) then
@@ -511,17 +514,16 @@ function PopulateSelectedTankPanel(id)
 		end
 	end
 	PopulateOwnedTanks()
+	print(doNotShowModal)
+	if(isSelection and not doNotShowModal) then
+		print("SHOWING THE MODAL")
+		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_ON
+		local prereqs = GetPrerequisiteRPValues(selectedTankId)
+		PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
+	end
 end
 
 function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
-	if not tankData.purchasedTank and tankData.purchaseCurrencyName == "Gold" then
-		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
-		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
-		Task.Wait(1.8)
-		Events.Broadcast("NavigateToPremiumShop")
-		return
-	end
-
 	-- Change title
 	-- CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SHADOW").text = "CONFIRM " .. tankData.name .. " PURCHASE" 
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SECONDARY").text = "CONFIRM " .. tankData.name .. " PURCHASE"
@@ -586,9 +588,8 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 		silverCost = silverCost - LOCAL_PLAYER:GetResource(Constants_API.SILVER)
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("PAYMENT_3").text = tostring(silverCost)		
 	end
-	
-	local button = CONFIRM_TANK_UPGRADE:FindDescendantByName("CONFIRM_WINDOW_CONFIRM_BUTTON")
-	if(tankData.purchasedTank) then
+
+	if(tankData.purchasedTank) then		
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_OFF
 		CONFIRM_WINDOW_CONFIRM_BUTTON.text = "EQUIP"
 		confirmButtonFunction = "EQUIP"
@@ -602,7 +603,16 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 			confirmButtonFunction = "PURCHASE"
 		end
 	end
+
+	if not tankData.purchasedTank and tankData.purchaseCurrencyName == "Gold" then
+		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
+		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
+		Task.Wait(1.8)
+		Events.Broadcast("NavigateToPremiumShop")
+		return
+	end
 	
+	local button = CONFIRM_TANK_UPGRADE:FindDescendantByName("CONFIRM_WINDOW_CONFIRM_BUTTON")	
 end
 
 function ConfirmButtonClicked()
@@ -1231,6 +1241,8 @@ end
 
 -- This function populates the modal popup with the tank data and its player's progress
 function PopulateDetailsModal(tank)
+	if tankDetails.purchasedTank then return end
+
 	if CanTankBeResearched(tank:GetCustomProperty("ID")) then
 		upgradeTank.visibility = Visibility.FORCE_ON
 	else  
@@ -1266,6 +1278,7 @@ function PopulateDetailsModal(tank)
 	if(tankDetails.purchasedTank) then		
 		upgradeTank.text = "Equip"
 		upgradeTankCost.visibility = Visibility.FORCE_OFF
+		return
 	elseif(tankDetails.researchedTank) then
 		upgradeTank.text = "Purchase"
 		upgradeTankCost.text = "Cost " .. tostring(tankDetails.tankPurchaseCost)
