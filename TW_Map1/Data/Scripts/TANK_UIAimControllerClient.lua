@@ -59,7 +59,6 @@ local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 		previousDistance = tonumber(math.ceil((destination - cannon:GetWorldPosition()).size))
 		distanceMaxed = false
 	else
-		print(previousDistance)
 		destination = (direction * previousDistance) + point
 		distanceMaxed = true
 	end
