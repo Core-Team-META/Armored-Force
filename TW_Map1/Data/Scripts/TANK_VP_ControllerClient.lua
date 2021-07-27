@@ -250,6 +250,9 @@ function PerformSalute()
 	
 	if not Object.IsValid(gameStateManager) then
 		return
+	elseif not Object.IsValid(tankControllerServer) then
+		print("Invalid controller server")
+		return
 	end
 	
 	local currentState = gameStateManager:GetCustomProperty("GameState")
@@ -273,10 +276,20 @@ function PerformSalute()
 		
 		Task.Wait()
 	end
-	
+		
 	tankBodyClient = World.SpawnAsset(GetSkin(owner), {parent = script})
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
+	
+	for _, s in ipairs(tankBodyClient:FindDescendantsByType("Audio")) do
+		s:Stop()
+	end
+	
+	owner.clientUserData.currentTankData = nil
+	owner.clientUserData.garageModel = {}
+	owner.clientUserData.garageModel.id = tankControllerServer:GetCustomProperty("Identifier")
+	owner.clientUserData.garageModel.reference = tankBodyClient
+	Events.Broadcast("INITIALIZE_SKIN", owner)
 	
 	local tankId = tankControllerServer:GetCustomProperty("Identifier")
 	
