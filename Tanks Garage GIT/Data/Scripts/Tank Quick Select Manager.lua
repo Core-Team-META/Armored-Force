@@ -44,6 +44,9 @@ function Init()
     while not next(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         Task.Wait()
     end
+    if Environment.IsSinglePlayerPreview() then
+        Task.Wait(3)
+    end
     local tankCount = 0
 
     for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
