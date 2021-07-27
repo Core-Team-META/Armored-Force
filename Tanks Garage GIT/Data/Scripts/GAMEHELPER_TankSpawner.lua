@@ -71,7 +71,7 @@ function ChangeEquippedTank(player, id)
 			end
 		end
 		
-		print(selectedEntry.purchased)
+		--print(selectedEntry.purchased)
 		if (not selectedEntry) or (not selectedEntry.purchased) then
 			print("equip failed")
 			return
