@@ -612,7 +612,10 @@ function OnArmorHit(trigger, other)
 			rotation = nil,
 			tags = {id = "Ram"}
 		}
-		COMBAT.ApplyDamage(attackData)
+    COMBAT.ApplyDamage(attackData)
+    
+    Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver)
+		Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
 		
 		if otherVehicleSpeed > thisVehicleSpeed then
 			return
