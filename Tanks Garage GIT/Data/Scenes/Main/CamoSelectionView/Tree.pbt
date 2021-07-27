@@ -223,7 +223,7 @@ Objects {
 }
 Objects {
   Id: 11006792933044764447
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -239,7 +239,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -261,7 +261,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -300,7 +300,7 @@ Objects {
 }
 Objects {
   Id: 7601530731939574737
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -316,7 +316,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -330,15 +330,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -685,7 +685,7 @@ Objects {
 }
 Objects {
   Id: 8250110383898793717
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -701,7 +701,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -712,18 +712,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -740,6 +731,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -762,7 +760,7 @@ Objects {
 }
 Objects {
   Id: 1269691583340729443
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -789,18 +787,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -817,6 +806,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -839,7 +837,7 @@ Objects {
 }
 Objects {
   Id: 6258701058377005876
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -855,7 +853,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -868,14 +866,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -914,7 +914,7 @@ Objects {
 }
 Objects {
   Id: 15626209280034606204
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -930,7 +930,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -941,18 +941,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -969,6 +960,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -991,7 +991,7 @@ Objects {
 }
 Objects {
   Id: 17692137296668058350
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -1007,7 +1007,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1018,18 +1018,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -1046,6 +1037,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1068,7 +1068,7 @@ Objects {
 }
 Objects {
   Id: 1637227947000317595
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -1084,7 +1084,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1095,18 +1095,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -1123,6 +1114,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1145,7 +1145,7 @@ Objects {
 }
 Objects {
   Id: 18397291875865426999
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -1161,7 +1161,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1172,18 +1172,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -1200,6 +1191,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1222,7 +1222,7 @@ Objects {
 }
 Objects {
   Id: 5743319192256826393
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -1238,7 +1238,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1249,17 +1249,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -1276,6 +1268,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1375,7 +1376,7 @@ Objects {
 }
 Objects {
   Id: 11691593023429130004
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -1391,7 +1392,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1402,18 +1403,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -1430,6 +1422,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1452,7 +1453,7 @@ Objects {
 }
 Objects {
   Id: 7977081090570023707
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -1468,7 +1469,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1479,17 +1480,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -1506,6 +1499,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1528,7 +1530,7 @@ Objects {
 }
 Objects {
   Id: 1545560009838578051
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -1544,7 +1546,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1555,18 +1557,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -1583,6 +1576,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1887,7 +1889,7 @@ Objects {
 }
 Objects {
   Id: 11191896008344941904
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -1903,7 +1905,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1925,7 +1927,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -1964,7 +1966,7 @@ Objects {
 }
 Objects {
   Id: 9928613628291748446
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -1980,7 +1982,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -1994,15 +1996,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -2349,7 +2351,7 @@ Objects {
 }
 Objects {
   Id: 656101440993709770
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -2365,7 +2367,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2376,18 +2378,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -2404,6 +2397,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -2426,7 +2426,7 @@ Objects {
 }
 Objects {
   Id: 8784334994845411825
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -2453,18 +2453,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -2481,6 +2472,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -2503,7 +2503,7 @@ Objects {
 }
 Objects {
   Id: 129390979116200888
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -2519,7 +2519,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2532,14 +2532,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -2578,7 +2580,7 @@ Objects {
 }
 Objects {
   Id: 3048002433381206851
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -2594,7 +2596,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2605,18 +2607,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -2633,6 +2626,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -2655,7 +2657,7 @@ Objects {
 }
 Objects {
   Id: 10532067093755988607
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -2671,7 +2673,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2682,18 +2684,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -2710,6 +2703,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -2732,7 +2734,7 @@ Objects {
 }
 Objects {
   Id: 15203872491511838514
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -2748,7 +2750,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2759,18 +2761,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -2787,6 +2780,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -2809,7 +2811,7 @@ Objects {
 }
 Objects {
   Id: 979554821724642556
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -2825,7 +2827,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2836,18 +2838,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -2864,6 +2857,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -2886,7 +2888,7 @@ Objects {
 }
 Objects {
   Id: 14039622874032581616
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -2902,7 +2904,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -2913,17 +2915,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -2940,6 +2934,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -3039,7 +3042,7 @@ Objects {
 }
 Objects {
   Id: 15039677722008661366
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -3055,7 +3058,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3066,18 +3069,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -3094,6 +3088,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -3116,7 +3119,7 @@ Objects {
 }
 Objects {
   Id: 15115456320877049189
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -3132,7 +3135,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3143,17 +3146,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -3170,6 +3165,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -3192,7 +3196,7 @@ Objects {
 }
 Objects {
   Id: 3352179435685401946
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -3208,7 +3212,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3219,18 +3223,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -3247,6 +3242,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -3551,7 +3555,7 @@ Objects {
 }
 Objects {
   Id: 17641366762891436189
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -3567,7 +3571,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3589,7 +3593,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -3628,7 +3632,7 @@ Objects {
 }
 Objects {
   Id: 16186178980084347159
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -3644,7 +3648,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -3658,15 +3662,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -4013,7 +4017,7 @@ Objects {
 }
 Objects {
   Id: 1057424768534947664
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -4029,7 +4033,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4040,18 +4044,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -4068,6 +4063,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4090,7 +4092,7 @@ Objects {
 }
 Objects {
   Id: 10073798353472077237
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -4117,18 +4119,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -4145,6 +4138,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4167,7 +4169,7 @@ Objects {
 }
 Objects {
   Id: 11638284276177644305
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -4183,7 +4185,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4196,14 +4198,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -4242,7 +4246,7 @@ Objects {
 }
 Objects {
   Id: 2478727632529436465
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -4258,7 +4262,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4269,18 +4273,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -4297,6 +4292,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4319,7 +4323,7 @@ Objects {
 }
 Objects {
   Id: 17951056487637220595
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -4335,7 +4339,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4346,18 +4350,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -4374,6 +4369,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4396,7 +4400,7 @@ Objects {
 }
 Objects {
   Id: 13083654359853559552
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -4412,7 +4416,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4423,18 +4427,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -4451,6 +4446,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4473,7 +4477,7 @@ Objects {
 }
 Objects {
   Id: 10862399580690033845
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -4489,7 +4493,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4500,18 +4504,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -4528,6 +4523,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4550,7 +4554,7 @@ Objects {
 }
 Objects {
   Id: 9514243417226298450
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -4566,7 +4570,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4577,17 +4581,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -4604,6 +4600,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4703,7 +4708,7 @@ Objects {
 }
 Objects {
   Id: 12032316667045234292
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -4719,7 +4724,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4730,18 +4735,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -4758,6 +4754,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4780,7 +4785,7 @@ Objects {
 }
 Objects {
   Id: 12426356376165462330
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -4796,7 +4801,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4807,17 +4812,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -4834,6 +4831,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -4856,7 +4862,7 @@ Objects {
 }
 Objects {
   Id: 7633128079196699299
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -4872,7 +4878,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -4883,18 +4889,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -4911,6 +4908,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -5215,7 +5221,7 @@ Objects {
 }
 Objects {
   Id: 15581374213901436455
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -5231,7 +5237,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5253,7 +5259,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -5292,7 +5298,7 @@ Objects {
 }
 Objects {
   Id: 9680828469372106100
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -5308,7 +5314,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5322,15 +5328,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -5677,7 +5683,7 @@ Objects {
 }
 Objects {
   Id: 12786186769651510502
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -5693,7 +5699,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5704,18 +5710,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -5732,6 +5729,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -5754,7 +5758,7 @@ Objects {
 }
 Objects {
   Id: 6195717258947146372
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -5781,18 +5785,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -5809,6 +5804,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -5831,7 +5835,7 @@ Objects {
 }
 Objects {
   Id: 4093044723350588409
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -5847,7 +5851,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5860,14 +5864,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -5906,7 +5912,7 @@ Objects {
 }
 Objects {
   Id: 12831925154821873431
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -5922,7 +5928,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -5933,18 +5939,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -5961,6 +5958,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -5983,7 +5989,7 @@ Objects {
 }
 Objects {
   Id: 3520807966379741694
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -5999,7 +6005,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6010,18 +6016,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -6038,6 +6035,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6060,7 +6066,7 @@ Objects {
 }
 Objects {
   Id: 4254381669020741934
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -6076,7 +6082,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6087,18 +6093,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -6115,6 +6112,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6137,7 +6143,7 @@ Objects {
 }
 Objects {
   Id: 2634311274150580198
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -6153,7 +6159,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6164,18 +6170,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -6192,6 +6189,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6214,7 +6220,7 @@ Objects {
 }
 Objects {
   Id: 12075468127775507774
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -6230,7 +6236,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6241,17 +6247,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -6268,6 +6266,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6367,7 +6374,7 @@ Objects {
 }
 Objects {
   Id: 8518328965041472449
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -6383,7 +6390,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6394,18 +6401,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -6422,6 +6420,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6444,7 +6451,7 @@ Objects {
 }
 Objects {
   Id: 6660032032840718259
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -6460,7 +6467,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6471,17 +6478,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -6498,6 +6497,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6520,7 +6528,7 @@ Objects {
 }
 Objects {
   Id: 4069818876383802721
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -6536,7 +6544,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6547,18 +6555,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -6575,6 +6574,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6879,7 +6887,7 @@ Objects {
 }
 Objects {
   Id: 4243586606076948817
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -6895,7 +6903,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6917,7 +6925,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -6956,7 +6964,7 @@ Objects {
 }
 Objects {
   Id: 16639211049385359899
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -6972,7 +6980,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -6986,15 +6994,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -7341,7 +7349,7 @@ Objects {
 }
 Objects {
   Id: 15202193243437301828
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -7357,7 +7365,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7368,18 +7376,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -7396,6 +7395,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7418,7 +7424,7 @@ Objects {
 }
 Objects {
   Id: 8128903090156777262
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -7445,18 +7451,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -7473,6 +7470,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7495,7 +7501,7 @@ Objects {
 }
 Objects {
   Id: 839628784206958932
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -7511,7 +7517,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7524,14 +7530,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -7570,7 +7578,7 @@ Objects {
 }
 Objects {
   Id: 13770841762524545121
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -7586,7 +7594,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7597,18 +7605,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -7625,6 +7624,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7647,7 +7655,7 @@ Objects {
 }
 Objects {
   Id: 1768260886305474844
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -7663,7 +7671,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7674,18 +7682,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -7702,6 +7701,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7724,7 +7732,7 @@ Objects {
 }
 Objects {
   Id: 6090084672148430652
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -7740,7 +7748,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7751,18 +7759,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -7779,6 +7778,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7801,7 +7809,7 @@ Objects {
 }
 Objects {
   Id: 13145877537271632995
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -7817,7 +7825,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7828,18 +7836,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -7856,6 +7855,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -7878,7 +7886,7 @@ Objects {
 }
 Objects {
   Id: 3503530007340559371
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -7894,7 +7902,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -7905,17 +7913,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -7932,6 +7932,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -8031,7 +8040,7 @@ Objects {
 }
 Objects {
   Id: 17397523518584004875
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -8047,7 +8056,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8058,18 +8067,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -8086,6 +8086,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -8108,7 +8117,7 @@ Objects {
 }
 Objects {
   Id: 11111349742399671673
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -8124,7 +8133,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8135,17 +8144,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -8162,6 +8163,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -8184,7 +8194,7 @@ Objects {
 }
 Objects {
   Id: 9712895074119019829
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -8200,7 +8210,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8211,18 +8221,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -8239,6 +8240,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -8543,7 +8553,7 @@ Objects {
 }
 Objects {
   Id: 12574674796769538059
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -8559,7 +8569,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8581,7 +8591,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -8620,7 +8630,7 @@ Objects {
 }
 Objects {
   Id: 1378305925091973278
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -8636,7 +8646,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -8650,15 +8660,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -9005,7 +9015,7 @@ Objects {
 }
 Objects {
   Id: 2704204799997979026
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -9021,7 +9031,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9032,18 +9042,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -9060,6 +9061,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9082,7 +9090,7 @@ Objects {
 }
 Objects {
   Id: 17728221784425993489
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -9109,18 +9117,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -9137,6 +9136,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9159,7 +9167,7 @@ Objects {
 }
 Objects {
   Id: 2507047967490440226
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -9175,7 +9183,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9188,14 +9196,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -9234,7 +9244,7 @@ Objects {
 }
 Objects {
   Id: 10896358270206561196
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -9250,7 +9260,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9261,18 +9271,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -9289,6 +9290,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9311,7 +9321,7 @@ Objects {
 }
 Objects {
   Id: 14076201101723314531
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -9327,7 +9337,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9338,18 +9348,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -9366,6 +9367,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9388,7 +9398,7 @@ Objects {
 }
 Objects {
   Id: 8186052826000896609
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -9404,7 +9414,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9415,18 +9425,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -9443,6 +9444,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9465,7 +9475,7 @@ Objects {
 }
 Objects {
   Id: 16639852463992071983
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -9481,7 +9491,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9492,18 +9502,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -9520,6 +9521,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9542,7 +9552,7 @@ Objects {
 }
 Objects {
   Id: 16332025023690877141
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -9558,7 +9568,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9569,17 +9579,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -9596,6 +9598,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9695,7 +9706,7 @@ Objects {
 }
 Objects {
   Id: 6666189681998204845
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -9711,7 +9722,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9722,18 +9733,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -9750,6 +9752,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9772,7 +9783,7 @@ Objects {
 }
 Objects {
   Id: 11752735756802742061
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -9788,7 +9799,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9799,17 +9810,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -9826,6 +9829,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -9848,7 +9860,7 @@ Objects {
 }
 Objects {
   Id: 8166226416921175005
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -9864,7 +9876,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -9875,18 +9887,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -9903,6 +9906,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -10207,7 +10219,7 @@ Objects {
 }
 Objects {
   Id: 9779832021296914490
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -10223,7 +10235,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10245,7 +10257,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -10284,7 +10296,7 @@ Objects {
 }
 Objects {
   Id: 15312767630782185775
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -10300,7 +10312,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10314,15 +10326,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -10669,7 +10681,7 @@ Objects {
 }
 Objects {
   Id: 10277550177937889893
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -10685,7 +10697,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10696,18 +10708,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -10724,6 +10727,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -10746,7 +10756,7 @@ Objects {
 }
 Objects {
   Id: 2095286556014904477
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -10773,18 +10783,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -10801,6 +10802,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -10823,7 +10833,7 @@ Objects {
 }
 Objects {
   Id: 16343834620020398573
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -10839,7 +10849,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10852,14 +10862,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -10898,7 +10910,7 @@ Objects {
 }
 Objects {
   Id: 14872773936862663918
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -10914,7 +10926,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -10925,18 +10937,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -10953,6 +10956,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -10975,7 +10987,7 @@ Objects {
 }
 Objects {
   Id: 2118095102987657830
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -10991,7 +11003,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11002,18 +11014,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -11030,6 +11033,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -11052,7 +11064,7 @@ Objects {
 }
 Objects {
   Id: 12094014442384663926
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -11068,7 +11080,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11079,18 +11091,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -11107,6 +11110,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -11129,7 +11141,7 @@ Objects {
 }
 Objects {
   Id: 16888655800756736644
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -11145,7 +11157,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11156,18 +11168,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -11184,6 +11187,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -11206,7 +11218,7 @@ Objects {
 }
 Objects {
   Id: 2630752238505584717
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -11222,7 +11234,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11233,17 +11245,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -11260,6 +11264,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -11359,7 +11372,7 @@ Objects {
 }
 Objects {
   Id: 16664531256553204049
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -11375,7 +11388,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11386,18 +11399,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -11414,6 +11418,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -11436,7 +11449,7 @@ Objects {
 }
 Objects {
   Id: 4057308663606899948
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -11452,7 +11465,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11463,17 +11476,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -11490,6 +11495,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -11512,7 +11526,7 @@ Objects {
 }
 Objects {
   Id: 16868115595097646823
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -11528,7 +11542,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11539,18 +11553,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -11567,6 +11572,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -11871,7 +11885,7 @@ Objects {
 }
 Objects {
   Id: 11403873272832997600
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -11887,7 +11901,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11909,7 +11923,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -11948,7 +11962,7 @@ Objects {
 }
 Objects {
   Id: 8884570352577737680
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -11964,7 +11978,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -11978,15 +11992,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -12333,7 +12347,7 @@ Objects {
 }
 Objects {
   Id: 923123066381690254
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -12349,7 +12363,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12360,18 +12374,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -12388,6 +12393,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12410,7 +12422,7 @@ Objects {
 }
 Objects {
   Id: 1715609429721310279
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -12437,18 +12449,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -12465,6 +12468,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12487,7 +12499,7 @@ Objects {
 }
 Objects {
   Id: 4750994056856133257
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -12503,7 +12515,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12516,14 +12528,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -12562,7 +12576,7 @@ Objects {
 }
 Objects {
   Id: 5782725601856324906
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -12578,7 +12592,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12589,18 +12603,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -12617,6 +12622,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12639,7 +12653,7 @@ Objects {
 }
 Objects {
   Id: 2447899441349924146
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -12655,7 +12669,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12666,18 +12680,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -12694,6 +12699,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12716,7 +12730,7 @@ Objects {
 }
 Objects {
   Id: 13859462004909638859
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -12732,7 +12746,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12743,18 +12757,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -12771,6 +12776,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12793,7 +12807,7 @@ Objects {
 }
 Objects {
   Id: 13424856794921724870
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -12809,7 +12823,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12820,18 +12834,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -12848,6 +12853,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -12870,7 +12884,7 @@ Objects {
 }
 Objects {
   Id: 15813777804649217052
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -12886,7 +12900,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -12897,17 +12911,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -12924,6 +12930,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -13023,7 +13038,7 @@ Objects {
 }
 Objects {
   Id: 12071640677265481385
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -13039,7 +13054,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13050,18 +13065,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -13078,6 +13084,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -13100,7 +13115,7 @@ Objects {
 }
 Objects {
   Id: 14398176511002606104
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -13116,7 +13131,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13127,17 +13142,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -13154,6 +13161,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -13176,7 +13192,7 @@ Objects {
 }
 Objects {
   Id: 14872366772429828662
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -13192,7 +13208,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13203,18 +13219,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -13231,6 +13238,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -13535,7 +13551,7 @@ Objects {
 }
 Objects {
   Id: 1298405302132450467
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -13551,7 +13567,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13573,7 +13589,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -13612,7 +13628,7 @@ Objects {
 }
 Objects {
   Id: 13971568502241355165
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -13628,7 +13644,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -13642,15 +13658,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -13997,7 +14013,7 @@ Objects {
 }
 Objects {
   Id: 3475680989068007702
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -14013,7 +14029,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14024,18 +14040,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -14052,6 +14059,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14074,7 +14088,7 @@ Objects {
 }
 Objects {
   Id: 676430832207832013
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -14101,18 +14115,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -14129,6 +14134,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14151,7 +14165,7 @@ Objects {
 }
 Objects {
   Id: 9605958173132038850
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -14167,7 +14181,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14180,14 +14194,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -14226,7 +14242,7 @@ Objects {
 }
 Objects {
   Id: 17246205711592546048
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -14242,7 +14258,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14253,18 +14269,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -14281,6 +14288,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14303,7 +14319,7 @@ Objects {
 }
 Objects {
   Id: 10185395005274833200
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -14319,7 +14335,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14330,18 +14346,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -14358,6 +14365,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14380,7 +14396,7 @@ Objects {
 }
 Objects {
   Id: 4790487058644624484
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -14396,7 +14412,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14407,18 +14423,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -14435,6 +14442,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14457,7 +14473,7 @@ Objects {
 }
 Objects {
   Id: 12335219975910801691
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -14473,7 +14489,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14484,18 +14500,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -14512,6 +14519,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14534,7 +14550,7 @@ Objects {
 }
 Objects {
   Id: 13556070763359446808
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -14550,7 +14566,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14561,17 +14577,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -14588,6 +14596,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14687,7 +14704,7 @@ Objects {
 }
 Objects {
   Id: 8448200727077890994
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -14703,7 +14720,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14714,18 +14731,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -14742,6 +14750,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14764,7 +14781,7 @@ Objects {
 }
 Objects {
   Id: 3444647145403998624
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -14780,7 +14797,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14791,17 +14808,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -14818,6 +14827,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -14840,7 +14858,7 @@ Objects {
 }
 Objects {
   Id: 5166343712936783657
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -14856,7 +14874,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -14867,18 +14885,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -14895,6 +14904,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -15199,7 +15217,7 @@ Objects {
 }
 Objects {
   Id: 13634116104214028487
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -15215,7 +15233,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15237,7 +15255,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -15276,7 +15294,7 @@ Objects {
 }
 Objects {
   Id: 3092138011392775510
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -15292,7 +15310,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15306,15 +15324,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -15661,7 +15679,7 @@ Objects {
 }
 Objects {
   Id: 8621976083387886917
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -15677,7 +15695,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15688,18 +15706,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -15716,6 +15725,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -15738,7 +15754,7 @@ Objects {
 }
 Objects {
   Id: 12072745015727210467
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -15765,18 +15781,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -15793,6 +15800,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -15815,7 +15831,7 @@ Objects {
 }
 Objects {
   Id: 4931013688579334756
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -15831,7 +15847,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15844,14 +15860,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -15890,7 +15908,7 @@ Objects {
 }
 Objects {
   Id: 5671920570473889676
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -15906,7 +15924,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15917,18 +15935,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -15945,6 +15954,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -15967,7 +15985,7 @@ Objects {
 }
 Objects {
   Id: 7120230560381862598
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -15983,7 +16001,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -15994,18 +16012,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -16022,6 +16031,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16044,7 +16062,7 @@ Objects {
 }
 Objects {
   Id: 8218881885400993183
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -16060,7 +16078,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16071,18 +16089,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -16099,6 +16108,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16121,7 +16139,7 @@ Objects {
 }
 Objects {
   Id: 12071245930769893730
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -16137,7 +16155,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16148,18 +16166,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -16176,6 +16185,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16198,7 +16216,7 @@ Objects {
 }
 Objects {
   Id: 3036685136573244367
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -16214,7 +16232,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16225,17 +16243,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -16252,6 +16262,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16351,7 +16370,7 @@ Objects {
 }
 Objects {
   Id: 1752019471886105542
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -16367,7 +16386,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16378,18 +16397,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -16406,6 +16416,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16428,7 +16447,7 @@ Objects {
 }
 Objects {
   Id: 3843673793059171873
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -16444,7 +16463,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16455,17 +16474,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -16482,6 +16493,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16504,7 +16524,7 @@ Objects {
 }
 Objects {
   Id: 18280479759868131334
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -16520,7 +16540,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16531,18 +16551,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -16559,6 +16570,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -16864,7 +16884,7 @@ Objects {
 }
 Objects {
   Id: 16775392370723933616
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -16880,7 +16900,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16902,7 +16922,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -16941,7 +16961,7 @@ Objects {
 }
 Objects {
   Id: 16560210011872782008
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -16957,7 +16977,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -16971,15 +16991,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -17326,7 +17346,7 @@ Objects {
 }
 Objects {
   Id: 5336338301284481797
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -17342,7 +17362,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -17353,18 +17373,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -17380,6 +17391,13 @@ Objects {
       Vector2 {
         X: 1
         Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
       }
     }
   }
@@ -17403,7 +17421,7 @@ Objects {
 }
 Objects {
   Id: 16115033920567527680
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -17430,18 +17448,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -17457,6 +17466,15 @@ Objects {
       Vector2 {
         X: 3
         Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
       }
     }
   }
@@ -17480,7 +17498,7 @@ Objects {
 }
 Objects {
   Id: 4171453475068028156
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -17496,7 +17514,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -17509,14 +17527,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -17555,7 +17575,7 @@ Objects {
 }
 Objects {
   Id: 2051573824069714371
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -17571,7 +17591,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -17582,18 +17602,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -17609,6 +17620,15 @@ Objects {
       Vector2 {
         X: 5
         Y: 2
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
   }
@@ -17632,7 +17652,7 @@ Objects {
 }
 Objects {
   Id: 11615976731834994048
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -17648,7 +17668,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -17659,18 +17679,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -17686,6 +17697,15 @@ Objects {
       Vector2 {
         X: 5
         Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
   }
@@ -17709,7 +17729,7 @@ Objects {
 }
 Objects {
   Id: 7342015281431704593
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -17725,7 +17745,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -17736,18 +17756,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -17763,6 +17774,15 @@ Objects {
       Vector2 {
         X: 4
         Y: 3
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
   }
@@ -17786,7 +17806,7 @@ Objects {
 }
 Objects {
   Id: 6666833568959158911
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -17802,7 +17822,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -17813,18 +17833,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -17840,6 +17851,15 @@ Objects {
       Vector2 {
         X: 1
         Y: 1
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
       }
     }
   }
@@ -17863,7 +17883,7 @@ Objects {
 }
 Objects {
   Id: 11913300344691012249
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -17879,7 +17899,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -17890,17 +17910,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -17916,6 +17928,15 @@ Objects {
       Vector2 {
         X: 2
         Y: 4
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
   }
@@ -18016,7 +18037,7 @@ Objects {
 }
 Objects {
   Id: 13504889110665055951
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -18032,7 +18053,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -18043,18 +18064,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -18070,6 +18082,15 @@ Objects {
       Vector2 {
         X: 1
         Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
   }
@@ -18093,7 +18114,7 @@ Objects {
 }
 Objects {
   Id: 14355841453682855123
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -18109,7 +18130,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -18120,17 +18141,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -18146,6 +18159,15 @@ Objects {
       Vector2 {
         X: 2
         Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
       }
     }
   }
@@ -18169,7 +18191,7 @@ Objects {
 }
 Objects {
   Id: 7597240542992245842
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -18185,7 +18207,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -18196,18 +18218,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -18223,6 +18236,15 @@ Objects {
       Vector2 {
         X: 3
         Y: 5
+      }
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
   }
@@ -18593,7 +18615,7 @@ Objects {
 }
 Objects {
   Id: 5576526047456385651
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -18609,7 +18631,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -18631,7 +18653,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -18670,7 +18692,7 @@ Objects {
 }
 Objects {
   Id: 18291005837505353432
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -18686,7 +18708,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -18700,15 +18722,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -19055,7 +19077,7 @@ Objects {
 }
 Objects {
   Id: 18046492399821067584
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -19071,7 +19093,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19082,18 +19104,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -19110,6 +19123,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19132,7 +19152,7 @@ Objects {
 }
 Objects {
   Id: 7785239863853003497
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -19159,18 +19179,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -19187,6 +19198,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19209,7 +19229,7 @@ Objects {
 }
 Objects {
   Id: 14858069282311593756
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -19225,7 +19245,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19238,14 +19258,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -19284,7 +19306,7 @@ Objects {
 }
 Objects {
   Id: 112705260314847284
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -19300,7 +19322,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19311,18 +19333,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -19339,6 +19352,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19361,7 +19383,7 @@ Objects {
 }
 Objects {
   Id: 3539271113428248971
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -19377,7 +19399,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19388,18 +19410,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -19416,6 +19429,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19438,7 +19460,7 @@ Objects {
 }
 Objects {
   Id: 16838578754709175383
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -19454,7 +19476,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19465,18 +19487,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -19493,6 +19506,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19515,7 +19537,7 @@ Objects {
 }
 Objects {
   Id: 10235378071891089951
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -19531,7 +19553,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19542,18 +19564,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -19570,6 +19583,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19592,7 +19614,7 @@ Objects {
 }
 Objects {
   Id: 890317304225267502
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -19608,7 +19630,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19619,17 +19641,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -19646,6 +19660,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19745,7 +19768,7 @@ Objects {
 }
 Objects {
   Id: 3592853649896636913
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -19761,7 +19784,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19772,18 +19795,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -19800,6 +19814,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19822,7 +19845,7 @@ Objects {
 }
 Objects {
   Id: 15351467197486070845
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -19838,7 +19861,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19849,17 +19872,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -19876,6 +19891,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -19898,7 +19922,7 @@ Objects {
 }
 Objects {
   Id: 4733297056771935418
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -19914,7 +19938,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -19925,18 +19949,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -19953,6 +19968,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -20257,7 +20281,7 @@ Objects {
 }
 Objects {
   Id: 12333208220034997338
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -20273,7 +20297,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20295,7 +20319,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -20334,7 +20358,7 @@ Objects {
 }
 Objects {
   Id: 10934830954014463072
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -20350,7 +20374,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20364,15 +20388,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -20719,7 +20743,7 @@ Objects {
 }
 Objects {
   Id: 8981958264459237667
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -20735,7 +20759,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20746,18 +20770,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -20774,6 +20789,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -20796,7 +20818,7 @@ Objects {
 }
 Objects {
   Id: 10115323623041188323
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -20823,18 +20845,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -20851,6 +20864,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -20873,7 +20895,7 @@ Objects {
 }
 Objects {
   Id: 1434760527164289144
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -20889,7 +20911,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20902,14 +20924,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -20948,7 +20972,7 @@ Objects {
 }
 Objects {
   Id: 7408859449278723339
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -20964,7 +20988,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -20975,18 +20999,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -21003,6 +21018,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21025,7 +21049,7 @@ Objects {
 }
 Objects {
   Id: 12534076007946513753
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -21041,7 +21065,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21052,18 +21076,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -21080,6 +21095,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21102,7 +21126,7 @@ Objects {
 }
 Objects {
   Id: 7958523877294209666
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -21118,7 +21142,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21129,18 +21153,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -21157,6 +21172,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21179,7 +21203,7 @@ Objects {
 }
 Objects {
   Id: 4437065703060561074
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -21195,7 +21219,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21206,18 +21230,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -21234,6 +21249,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21256,7 +21280,7 @@ Objects {
 }
 Objects {
   Id: 2078165914278814562
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -21272,7 +21296,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21283,17 +21307,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -21310,6 +21326,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21409,7 +21434,7 @@ Objects {
 }
 Objects {
   Id: 11929477191864270531
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -21425,7 +21450,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21436,18 +21461,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -21464,6 +21480,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21486,7 +21511,7 @@ Objects {
 }
 Objects {
   Id: 11841551256682699253
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -21502,7 +21527,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21513,17 +21538,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -21540,6 +21557,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21562,7 +21588,7 @@ Objects {
 }
 Objects {
   Id: 14566805837239638235
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -21578,7 +21604,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21589,18 +21615,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -21617,6 +21634,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -21921,7 +21947,7 @@ Objects {
 }
 Objects {
   Id: 3163904440183236709
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -21937,7 +21963,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -21959,7 +21985,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -21998,7 +22024,7 @@ Objects {
 }
 Objects {
   Id: 13504691968250741625
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -22014,7 +22040,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22028,15 +22054,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -22383,7 +22409,7 @@ Objects {
 }
 Objects {
   Id: 18321229613109173177
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -22399,7 +22425,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22410,18 +22436,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -22438,6 +22455,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22460,7 +22484,7 @@ Objects {
 }
 Objects {
   Id: 6488653603636710594
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -22487,18 +22511,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -22515,6 +22530,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22537,7 +22561,7 @@ Objects {
 }
 Objects {
   Id: 4181250480001122796
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -22553,7 +22577,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22566,14 +22590,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -22612,7 +22638,7 @@ Objects {
 }
 Objects {
   Id: 6026829976968343382
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -22628,7 +22654,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22639,18 +22665,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -22667,6 +22684,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22689,7 +22715,7 @@ Objects {
 }
 Objects {
   Id: 13030447953671208178
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -22705,7 +22731,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22716,18 +22742,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -22744,6 +22761,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22766,7 +22792,7 @@ Objects {
 }
 Objects {
   Id: 12398892384851890754
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -22782,7 +22808,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22793,18 +22819,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -22821,6 +22838,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22843,7 +22869,7 @@ Objects {
 }
 Objects {
   Id: 9192533573233670621
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -22859,7 +22885,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22870,18 +22896,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -22898,6 +22915,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -22920,7 +22946,7 @@ Objects {
 }
 Objects {
   Id: 17716276487307426831
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -22936,7 +22962,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -22947,17 +22973,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -22974,6 +22992,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -23073,7 +23100,7 @@ Objects {
 }
 Objects {
   Id: 17463676646803349714
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -23089,7 +23116,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23100,18 +23127,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -23128,6 +23146,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -23150,7 +23177,7 @@ Objects {
 }
 Objects {
   Id: 17990441741433922881
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -23166,7 +23193,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23177,17 +23204,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -23204,6 +23223,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -23226,7 +23254,7 @@ Objects {
 }
 Objects {
   Id: 6177486612500243257
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -23242,7 +23270,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23253,18 +23281,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -23281,6 +23300,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -23585,7 +23613,7 @@ Objects {
 }
 Objects {
   Id: 3405945203110780827
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -23601,7 +23629,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23623,7 +23651,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -23662,7 +23690,7 @@ Objects {
 }
 Objects {
   Id: 1013677333955956342
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -23678,7 +23706,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -23692,15 +23720,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -24047,7 +24075,7 @@ Objects {
 }
 Objects {
   Id: 8664907232545048715
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -24063,7 +24091,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24074,18 +24102,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -24102,6 +24121,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24124,7 +24150,7 @@ Objects {
 }
 Objects {
   Id: 8913231506237806346
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -24151,18 +24177,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -24179,6 +24196,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24201,7 +24227,7 @@ Objects {
 }
 Objects {
   Id: 6861952809181200628
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -24217,7 +24243,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24230,14 +24256,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -24276,7 +24304,7 @@ Objects {
 }
 Objects {
   Id: 16021229747691815167
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -24292,7 +24320,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24303,18 +24331,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -24331,6 +24350,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24353,7 +24381,7 @@ Objects {
 }
 Objects {
   Id: 18325622259133437371
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -24369,7 +24397,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24380,18 +24408,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -24408,6 +24427,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24430,7 +24458,7 @@ Objects {
 }
 Objects {
   Id: 8577219181428764326
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -24446,7 +24474,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24457,18 +24485,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -24485,6 +24504,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24507,7 +24535,7 @@ Objects {
 }
 Objects {
   Id: 15861418767856921185
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -24523,7 +24551,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24534,18 +24562,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -24562,6 +24581,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24584,7 +24612,7 @@ Objects {
 }
 Objects {
   Id: 7955455130223433040
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -24600,7 +24628,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24611,17 +24639,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -24638,6 +24658,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24737,7 +24766,7 @@ Objects {
 }
 Objects {
   Id: 16710116471185054893
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -24753,7 +24782,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24764,18 +24793,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -24792,6 +24812,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24814,7 +24843,7 @@ Objects {
 }
 Objects {
   Id: 11435314810861327856
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -24830,7 +24859,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24841,17 +24870,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -24868,6 +24889,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -24890,7 +24920,7 @@ Objects {
 }
 Objects {
   Id: 5405932530047196332
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -24906,7 +24936,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -24917,18 +24947,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -24945,6 +24966,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -25249,7 +25279,7 @@ Objects {
 }
 Objects {
   Id: 12648248776687070499
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -25265,7 +25295,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25287,7 +25317,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -25326,7 +25356,7 @@ Objects {
 }
 Objects {
   Id: 15010060292355380879
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -25342,7 +25372,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25356,15 +25386,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -25711,7 +25741,7 @@ Objects {
 }
 Objects {
   Id: 16091061407029473370
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -25727,7 +25757,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25738,18 +25768,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -25766,6 +25787,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -25788,7 +25816,7 @@ Objects {
 }
 Objects {
   Id: 6096567719429112630
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -25815,18 +25843,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -25843,6 +25862,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -25865,7 +25893,7 @@ Objects {
 }
 Objects {
   Id: 877404132260701080
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -25881,7 +25909,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25894,14 +25922,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -25940,7 +25970,7 @@ Objects {
 }
 Objects {
   Id: 3146347940168374942
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -25956,7 +25986,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -25967,18 +25997,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -25995,6 +26016,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26017,7 +26047,7 @@ Objects {
 }
 Objects {
   Id: 10972917866370189410
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -26033,7 +26063,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26044,18 +26074,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -26072,6 +26093,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26094,7 +26124,7 @@ Objects {
 }
 Objects {
   Id: 1737661039285108410
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -26110,7 +26140,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26121,18 +26151,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -26149,6 +26170,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26171,7 +26201,7 @@ Objects {
 }
 Objects {
   Id: 14939932260152389060
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -26187,7 +26217,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26198,18 +26228,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -26226,6 +26247,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26248,7 +26278,7 @@ Objects {
 }
 Objects {
   Id: 12736939597428469122
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -26264,7 +26294,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26275,17 +26305,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -26302,6 +26324,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26401,7 +26432,7 @@ Objects {
 }
 Objects {
   Id: 2419507272675417579
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -26417,7 +26448,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26428,18 +26459,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -26456,6 +26478,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26478,7 +26509,7 @@ Objects {
 }
 Objects {
   Id: 16620627194246021106
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -26494,7 +26525,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26505,17 +26536,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -26532,6 +26555,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26554,7 +26586,7 @@ Objects {
 }
 Objects {
   Id: 532395213179759136
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -26570,7 +26602,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26581,18 +26613,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -26609,6 +26632,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -26913,7 +26945,7 @@ Objects {
 }
 Objects {
   Id: 5935852987680930140
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -26929,7 +26961,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -26951,7 +26983,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -26990,7 +27022,7 @@ Objects {
 }
 Objects {
   Id: 1280014363931509856
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -27006,7 +27038,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27020,15 +27052,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -27375,7 +27407,7 @@ Objects {
 }
 Objects {
   Id: 4340341476868896837
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -27391,7 +27423,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27402,18 +27434,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -27430,6 +27453,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27452,7 +27482,7 @@ Objects {
 }
 Objects {
   Id: 11373288889615556921
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -27479,18 +27509,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -27507,6 +27528,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27529,7 +27559,7 @@ Objects {
 }
 Objects {
   Id: 17365217914644925706
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -27545,7 +27575,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27558,14 +27588,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -27604,7 +27636,7 @@ Objects {
 }
 Objects {
   Id: 8595061693835735257
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -27620,7 +27652,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27631,18 +27663,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -27659,6 +27682,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27681,7 +27713,7 @@ Objects {
 }
 Objects {
   Id: 14642555244914109531
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -27697,7 +27729,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27708,18 +27740,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -27736,6 +27759,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27758,7 +27790,7 @@ Objects {
 }
 Objects {
   Id: 14507229118984916804
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -27774,7 +27806,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27785,18 +27817,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -27813,6 +27836,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27835,7 +27867,7 @@ Objects {
 }
 Objects {
   Id: 4750669130261442841
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -27851,7 +27883,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27862,18 +27894,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -27890,6 +27913,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -27912,7 +27944,7 @@ Objects {
 }
 Objects {
   Id: 16754565626533123030
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -27928,7 +27960,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -27939,17 +27971,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -27966,6 +27990,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -28065,7 +28098,7 @@ Objects {
 }
 Objects {
   Id: 17624020669290333706
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -28081,7 +28114,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28092,18 +28125,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -28120,6 +28144,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -28142,7 +28175,7 @@ Objects {
 }
 Objects {
   Id: 2421699167725768518
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -28158,7 +28191,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28169,17 +28202,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -28196,6 +28221,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -28218,7 +28252,7 @@ Objects {
 }
 Objects {
   Id: 12121888649392056432
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -28234,7 +28268,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28245,18 +28279,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -28273,6 +28298,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -28577,7 +28611,7 @@ Objects {
 }
 Objects {
   Id: 2872833663579231110
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -28593,7 +28627,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28615,7 +28649,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -28654,7 +28688,7 @@ Objects {
 }
 Objects {
   Id: 7032272475503113968
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -28670,7 +28704,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -28684,15 +28718,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -29039,7 +29073,7 @@ Objects {
 }
 Objects {
   Id: 10522091120707311446
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -29055,7 +29089,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29066,18 +29100,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -29094,6 +29119,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29116,7 +29148,7 @@ Objects {
 }
 Objects {
   Id: 5906607664846250187
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -29143,18 +29175,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -29171,6 +29194,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29193,7 +29225,7 @@ Objects {
 }
 Objects {
   Id: 16764738286179502269
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -29209,7 +29241,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29222,14 +29254,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -29268,7 +29302,7 @@ Objects {
 }
 Objects {
   Id: 10815894578129046464
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -29284,7 +29318,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29295,18 +29329,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -29323,6 +29348,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29345,7 +29379,7 @@ Objects {
 }
 Objects {
   Id: 9986092241223963190
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -29361,7 +29395,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29372,18 +29406,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -29400,6 +29425,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29422,7 +29456,7 @@ Objects {
 }
 Objects {
   Id: 2283463474742121103
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -29438,7 +29472,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29449,18 +29483,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -29477,6 +29502,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29499,7 +29533,7 @@ Objects {
 }
 Objects {
   Id: 9253251755303660194
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -29515,7 +29549,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29526,18 +29560,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -29554,6 +29579,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29576,7 +29610,7 @@ Objects {
 }
 Objects {
   Id: 583373444202100906
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -29592,7 +29626,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29603,17 +29637,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -29630,6 +29656,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29729,7 +29764,7 @@ Objects {
 }
 Objects {
   Id: 13340737017446393760
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -29745,7 +29780,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29756,18 +29791,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -29784,6 +29810,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29806,7 +29841,7 @@ Objects {
 }
 Objects {
   Id: 3920796761141923088
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -29822,7 +29857,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29833,17 +29868,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -29860,6 +29887,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -29882,7 +29918,7 @@ Objects {
 }
 Objects {
   Id: 5690580522539192328
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -29898,7 +29934,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -29909,18 +29945,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -29937,6 +29964,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -30241,7 +30277,7 @@ Objects {
 }
 Objects {
   Id: 3469026581661965416
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -30257,7 +30293,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30279,7 +30315,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -30318,7 +30354,7 @@ Objects {
 }
 Objects {
   Id: 15786690100022325038
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -30334,7 +30370,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30348,15 +30384,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -30703,7 +30739,7 @@ Objects {
 }
 Objects {
   Id: 2007525997283876820
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -30719,7 +30755,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30730,18 +30766,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -30758,6 +30785,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -30780,7 +30814,7 @@ Objects {
 }
 Objects {
   Id: 17717625255110592052
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -30807,18 +30841,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -30835,6 +30860,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -30857,7 +30891,7 @@ Objects {
 }
 Objects {
   Id: 2036087132858892262
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -30873,7 +30907,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30886,14 +30920,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -30932,7 +30968,7 @@ Objects {
 }
 Objects {
   Id: 16392803415818313285
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -30948,7 +30984,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -30959,18 +30995,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -30987,6 +31014,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31009,7 +31045,7 @@ Objects {
 }
 Objects {
   Id: 10558041956760476902
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -31025,7 +31061,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31036,18 +31072,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -31064,6 +31091,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31086,7 +31122,7 @@ Objects {
 }
 Objects {
   Id: 6642526589064754431
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -31102,7 +31138,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31113,18 +31149,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -31141,6 +31168,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31163,7 +31199,7 @@ Objects {
 }
 Objects {
   Id: 4209619900420837987
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -31179,7 +31215,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31190,18 +31226,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -31218,6 +31245,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31240,7 +31276,7 @@ Objects {
 }
 Objects {
   Id: 9296844531857876610
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -31256,7 +31292,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31267,17 +31303,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -31294,6 +31322,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31393,7 +31430,7 @@ Objects {
 }
 Objects {
   Id: 9972499707892214642
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -31409,7 +31446,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31420,18 +31457,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -31448,6 +31476,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31470,7 +31507,7 @@ Objects {
 }
 Objects {
   Id: 5984297857084190872
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -31486,7 +31523,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31497,17 +31534,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -31524,6 +31553,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31546,7 +31584,7 @@ Objects {
 }
 Objects {
   Id: 5875542901794187081
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -31562,7 +31600,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31573,18 +31611,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -31601,6 +31630,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -31905,7 +31943,7 @@ Objects {
 }
 Objects {
   Id: 11714230998959583314
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -31921,7 +31959,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -31943,7 +31981,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -31982,7 +32020,7 @@ Objects {
 }
 Objects {
   Id: 4721570640848951783
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -31998,7 +32036,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32012,15 +32050,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -32367,7 +32405,7 @@ Objects {
 }
 Objects {
   Id: 7667534538323273704
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -32383,7 +32421,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32394,18 +32432,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -32422,6 +32451,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -32444,7 +32480,7 @@ Objects {
 }
 Objects {
   Id: 12657038658384679473
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -32471,18 +32507,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -32499,6 +32526,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -32521,7 +32557,7 @@ Objects {
 }
 Objects {
   Id: 17493764782058477330
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -32537,7 +32573,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32550,14 +32586,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -32596,7 +32634,7 @@ Objects {
 }
 Objects {
   Id: 12953300885568596867
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -32612,7 +32650,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32623,18 +32661,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -32651,6 +32680,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -32673,7 +32711,7 @@ Objects {
 }
 Objects {
   Id: 11697980590610757582
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -32689,7 +32727,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32700,18 +32738,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -32728,6 +32757,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -32750,7 +32788,7 @@ Objects {
 }
 Objects {
   Id: 15741492218872551170
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -32766,7 +32804,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32777,18 +32815,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -32805,6 +32834,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -32827,7 +32865,7 @@ Objects {
 }
 Objects {
   Id: 6647829272919623838
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -32843,7 +32881,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32854,18 +32892,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -32882,6 +32911,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -32904,7 +32942,7 @@ Objects {
 }
 Objects {
   Id: 966941280332331834
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -32920,7 +32958,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -32931,17 +32969,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -32958,6 +32988,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -33057,7 +33096,7 @@ Objects {
 }
 Objects {
   Id: 3865697770381823616
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -33073,7 +33112,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33084,18 +33123,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -33112,6 +33142,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -33134,7 +33173,7 @@ Objects {
 }
 Objects {
   Id: 17452092092438819122
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -33150,7 +33189,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33161,17 +33200,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -33188,6 +33219,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -33210,7 +33250,7 @@ Objects {
 }
 Objects {
   Id: 979063537615472539
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -33226,7 +33266,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33237,18 +33277,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -33265,6 +33296,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -33569,7 +33609,7 @@ Objects {
 }
 Objects {
   Id: 8890227292425675122
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -33585,7 +33625,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33607,7 +33647,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -33646,7 +33686,7 @@ Objects {
 }
 Objects {
   Id: 15704100938934651689
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -33662,7 +33702,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -33676,15 +33716,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -34031,7 +34071,7 @@ Objects {
 }
 Objects {
   Id: 6569505881865699997
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -34047,7 +34087,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34058,18 +34098,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -34086,6 +34117,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34108,7 +34146,7 @@ Objects {
 }
 Objects {
   Id: 4481348164893530049
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -34135,18 +34173,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -34163,6 +34192,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34185,7 +34223,7 @@ Objects {
 }
 Objects {
   Id: 8910052970692332738
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -34201,7 +34239,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34214,14 +34252,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -34260,7 +34300,7 @@ Objects {
 }
 Objects {
   Id: 7214015915561847126
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -34276,7 +34316,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34287,18 +34327,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -34315,6 +34346,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34337,7 +34377,7 @@ Objects {
 }
 Objects {
   Id: 14147006936749309641
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -34353,7 +34393,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34364,18 +34404,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -34392,6 +34423,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34414,7 +34454,7 @@ Objects {
 }
 Objects {
   Id: 7251602718260171869
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -34430,7 +34470,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34441,18 +34481,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -34469,6 +34500,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34491,7 +34531,7 @@ Objects {
 }
 Objects {
   Id: 1058719044043210039
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -34507,7 +34547,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34518,18 +34558,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -34546,6 +34577,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34568,7 +34608,7 @@ Objects {
 }
 Objects {
   Id: 6093065212062964074
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -34584,7 +34624,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34595,17 +34635,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -34622,6 +34654,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34721,7 +34762,7 @@ Objects {
 }
 Objects {
   Id: 2511651284484043025
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -34737,7 +34778,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34748,18 +34789,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -34776,6 +34808,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34798,7 +34839,7 @@ Objects {
 }
 Objects {
   Id: 4623690856384489380
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -34814,7 +34855,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34825,17 +34866,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -34852,6 +34885,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -34874,7 +34916,7 @@ Objects {
 }
 Objects {
   Id: 1265710995540907993
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -34890,7 +34932,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -34901,18 +34943,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -34929,6 +34962,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -35233,7 +35275,7 @@ Objects {
 }
 Objects {
   Id: 12413270829722779984
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -35249,7 +35291,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35271,7 +35313,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -35310,7 +35352,7 @@ Objects {
 }
 Objects {
   Id: 15321702312623801152
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -35326,7 +35368,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35340,15 +35382,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -35695,7 +35737,7 @@ Objects {
 }
 Objects {
   Id: 15113665184431460217
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -35711,7 +35753,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35722,18 +35764,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -35750,6 +35783,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -35772,7 +35812,7 @@ Objects {
 }
 Objects {
   Id: 5114632356870472578
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -35799,18 +35839,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -35827,6 +35858,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -35849,7 +35889,7 @@ Objects {
 }
 Objects {
   Id: 4025450556381186434
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -35865,7 +35905,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35878,14 +35918,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -35924,7 +35966,7 @@ Objects {
 }
 Objects {
   Id: 2651232511480609908
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -35940,7 +35982,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -35951,18 +35993,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -35979,6 +36012,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36001,7 +36043,7 @@ Objects {
 }
 Objects {
   Id: 10633687146575333917
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -36017,7 +36059,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36028,18 +36070,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -36056,6 +36089,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36078,7 +36120,7 @@ Objects {
 }
 Objects {
   Id: 10260239071213933527
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -36094,7 +36136,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36105,18 +36147,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -36133,6 +36166,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36155,7 +36197,7 @@ Objects {
 }
 Objects {
   Id: 13764631763708942663
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -36171,7 +36213,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36182,18 +36224,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -36210,6 +36243,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36232,7 +36274,7 @@ Objects {
 }
 Objects {
   Id: 18192813005466102865
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -36248,7 +36290,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36259,17 +36301,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -36286,6 +36320,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36385,7 +36428,7 @@ Objects {
 }
 Objects {
   Id: 2537437881529343900
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -36401,7 +36444,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36412,18 +36455,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -36440,6 +36474,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36462,7 +36505,7 @@ Objects {
 }
 Objects {
   Id: 9194449533556714464
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -36478,7 +36521,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36489,17 +36532,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -36516,6 +36551,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36538,7 +36582,7 @@ Objects {
 }
 Objects {
   Id: 15952685726228564031
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -36554,7 +36598,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36565,18 +36609,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -36593,6 +36628,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -36897,7 +36941,7 @@ Objects {
 }
 Objects {
   Id: 1259815503534444947
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -36913,7 +36957,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -36935,7 +36979,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -36974,7 +37018,7 @@ Objects {
 }
 Objects {
   Id: 16651904919326434895
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -36990,7 +37034,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37004,15 +37048,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -37359,7 +37403,7 @@ Objects {
 }
 Objects {
   Id: 4610892345180407850
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -37375,7 +37419,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37386,18 +37430,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -37414,6 +37449,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37436,7 +37478,7 @@ Objects {
 }
 Objects {
   Id: 7261496084734097831
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -37463,18 +37505,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -37491,6 +37524,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37513,7 +37555,7 @@ Objects {
 }
 Objects {
   Id: 3862483713203503428
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -37529,7 +37571,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37542,14 +37584,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -37588,7 +37632,7 @@ Objects {
 }
 Objects {
   Id: 4664905950501160320
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -37604,7 +37648,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37615,18 +37659,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -37643,6 +37678,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37665,7 +37709,7 @@ Objects {
 }
 Objects {
   Id: 9474690553443784726
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -37681,7 +37725,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37692,18 +37736,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -37720,6 +37755,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37742,7 +37786,7 @@ Objects {
 }
 Objects {
   Id: 5684399509706497743
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -37758,7 +37802,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37769,18 +37813,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -37797,6 +37832,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37819,7 +37863,7 @@ Objects {
 }
 Objects {
   Id: 15123136159671977126
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -37835,7 +37879,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37846,18 +37890,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -37874,6 +37909,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -37896,7 +37940,7 @@ Objects {
 }
 Objects {
   Id: 13144740737030889207
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -37912,7 +37956,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -37923,17 +37967,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -37950,6 +37986,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -38049,7 +38094,7 @@ Objects {
 }
 Objects {
   Id: 3488525131798216237
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -38065,7 +38110,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38076,18 +38121,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -38104,6 +38140,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -38126,7 +38171,7 @@ Objects {
 }
 Objects {
   Id: 17167077827358773994
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -38142,7 +38187,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38153,17 +38198,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -38180,6 +38217,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -38202,7 +38248,7 @@ Objects {
 }
 Objects {
   Id: 9912589168513571085
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -38218,7 +38264,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38229,18 +38275,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -38257,6 +38294,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -38561,7 +38607,7 @@ Objects {
 }
 Objects {
   Id: 4112936488407073458
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -38577,7 +38623,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38599,7 +38645,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -38638,7 +38684,7 @@ Objects {
 }
 Objects {
   Id: 12234499023225317793
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -38654,7 +38700,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -38668,15 +38714,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -39023,7 +39069,7 @@ Objects {
 }
 Objects {
   Id: 10936959712273879182
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -39039,7 +39085,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39050,18 +39096,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -39078,6 +39115,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39100,7 +39144,7 @@ Objects {
 }
 Objects {
   Id: 7243088315817813480
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -39127,18 +39171,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -39155,6 +39190,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39177,7 +39221,7 @@ Objects {
 }
 Objects {
   Id: 3075683603664372986
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -39193,7 +39237,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39206,14 +39250,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -39252,7 +39298,7 @@ Objects {
 }
 Objects {
   Id: 13120396092190139825
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -39268,7 +39314,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39279,18 +39325,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -39307,6 +39344,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39329,7 +39375,7 @@ Objects {
 }
 Objects {
   Id: 1422344025450128966
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -39345,7 +39391,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39356,18 +39402,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -39384,6 +39421,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39406,7 +39452,7 @@ Objects {
 }
 Objects {
   Id: 8755224213769618168
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -39422,7 +39468,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39433,18 +39479,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -39461,6 +39498,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39483,7 +39529,7 @@ Objects {
 }
 Objects {
   Id: 13995422878270489679
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -39499,7 +39545,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39510,18 +39556,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -39538,6 +39575,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39560,7 +39606,7 @@ Objects {
 }
 Objects {
   Id: 2788753160823217953
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -39576,7 +39622,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39587,17 +39633,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -39614,6 +39652,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39713,7 +39760,7 @@ Objects {
 }
 Objects {
   Id: 16030260170160112065
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -39729,7 +39776,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39740,18 +39787,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -39768,6 +39806,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39790,7 +39837,7 @@ Objects {
 }
 Objects {
   Id: 8125201718766604224
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -39806,7 +39853,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39817,17 +39864,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -39844,6 +39883,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -39866,7 +39914,7 @@ Objects {
 }
 Objects {
   Id: 2010961247172820790
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -39882,7 +39930,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -39893,18 +39941,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -39921,6 +39960,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -40225,7 +40273,7 @@ Objects {
 }
 Objects {
   Id: 9256146456305714501
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -40241,7 +40289,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40263,7 +40311,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -40302,7 +40350,7 @@ Objects {
 }
 Objects {
   Id: 10330207997362098061
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -40318,7 +40366,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40332,15 +40380,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -40687,7 +40735,7 @@ Objects {
 }
 Objects {
   Id: 4992927397363712770
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -40703,7 +40751,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40714,18 +40762,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -40742,6 +40781,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -40764,7 +40810,7 @@ Objects {
 }
 Objects {
   Id: 7269607877121246204
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -40791,18 +40837,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -40819,6 +40856,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -40841,7 +40887,7 @@ Objects {
 }
 Objects {
   Id: 15914653733840498898
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -40857,7 +40903,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40870,14 +40916,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -40916,7 +40964,7 @@ Objects {
 }
 Objects {
   Id: 5904043442075642632
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -40932,7 +40980,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -40943,18 +40991,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -40971,6 +41010,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -40993,7 +41041,7 @@ Objects {
 }
 Objects {
   Id: 6360681195727285646
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -41009,7 +41057,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41020,18 +41068,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -41048,6 +41087,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -41070,7 +41118,7 @@ Objects {
 }
 Objects {
   Id: 7701703881900078938
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -41086,7 +41134,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41097,18 +41145,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -41125,6 +41164,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -41147,7 +41195,7 @@ Objects {
 }
 Objects {
   Id: 9129472750288278646
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -41163,7 +41211,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41174,18 +41222,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -41202,6 +41241,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -41224,7 +41272,7 @@ Objects {
 }
 Objects {
   Id: 16731913495613941336
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -41240,7 +41288,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41251,17 +41299,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -41278,6 +41318,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -41377,7 +41426,7 @@ Objects {
 }
 Objects {
   Id: 233346506542776930
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -41393,7 +41442,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41404,18 +41453,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -41432,6 +41472,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -41454,7 +41503,7 @@ Objects {
 }
 Objects {
   Id: 6663283091294449587
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -41470,7 +41519,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41481,17 +41530,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -41508,6 +41549,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -41530,7 +41580,7 @@ Objects {
 }
 Objects {
   Id: 15878104866608104950
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -41546,7 +41596,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41557,18 +41607,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -41585,6 +41626,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -41889,7 +41939,7 @@ Objects {
 }
 Objects {
   Id: 1725281391044008479
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -41905,7 +41955,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41927,7 +41977,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -41966,7 +42016,7 @@ Objects {
 }
 Objects {
   Id: 1927520636410490920
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -41982,7 +42032,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -41996,15 +42046,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -42351,7 +42401,7 @@ Objects {
 }
 Objects {
   Id: 5819271058057605178
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -42367,7 +42417,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42378,18 +42428,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -42406,6 +42447,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42428,7 +42476,7 @@ Objects {
 }
 Objects {
   Id: 4716586280130124717
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -42455,18 +42503,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -42483,6 +42522,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42505,7 +42553,7 @@ Objects {
 }
 Objects {
   Id: 12704893706911472771
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -42521,7 +42569,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42534,14 +42582,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -42580,7 +42630,7 @@ Objects {
 }
 Objects {
   Id: 17857878862248064354
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -42596,7 +42646,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42607,18 +42657,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -42635,6 +42676,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42657,7 +42707,7 @@ Objects {
 }
 Objects {
   Id: 3492489216725290752
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -42673,7 +42723,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42684,18 +42734,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -42712,6 +42753,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42734,7 +42784,7 @@ Objects {
 }
 Objects {
   Id: 36476284970324848
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -42750,7 +42800,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42761,18 +42811,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -42789,6 +42830,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42811,7 +42861,7 @@ Objects {
 }
 Objects {
   Id: 5976598599861653928
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -42827,7 +42877,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42838,18 +42888,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -42866,6 +42907,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -42888,7 +42938,7 @@ Objects {
 }
 Objects {
   Id: 6084166103490956337
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -42904,7 +42954,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -42915,17 +42965,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -42942,6 +42984,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -43041,7 +43092,7 @@ Objects {
 }
 Objects {
   Id: 13990642458936447239
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -43057,7 +43108,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43068,18 +43119,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -43096,6 +43138,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -43118,7 +43169,7 @@ Objects {
 }
 Objects {
   Id: 10375568160828754322
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -43134,7 +43185,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43145,17 +43196,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -43172,6 +43215,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -43194,7 +43246,7 @@ Objects {
 }
 Objects {
   Id: 8115721042473575994
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -43210,7 +43262,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43221,18 +43273,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -43249,6 +43292,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -43553,7 +43605,7 @@ Objects {
 }
 Objects {
   Id: 11965787911973704747
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -43569,7 +43621,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43591,7 +43643,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -43630,7 +43682,7 @@ Objects {
 }
 Objects {
   Id: 12598840590015121652
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -43646,7 +43698,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -43660,15 +43712,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -44015,7 +44067,7 @@ Objects {
 }
 Objects {
   Id: 8372798109301237145
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -44031,7 +44083,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44042,18 +44094,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -44070,6 +44113,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44092,7 +44142,7 @@ Objects {
 }
 Objects {
   Id: 5198901257339645226
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -44119,18 +44169,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -44147,6 +44188,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44169,7 +44219,7 @@ Objects {
 }
 Objects {
   Id: 4595745078294426740
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -44185,7 +44235,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44198,14 +44248,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -44244,7 +44296,7 @@ Objects {
 }
 Objects {
   Id: 3439461899292663393
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -44260,7 +44312,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44271,18 +44323,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -44299,6 +44342,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44321,7 +44373,7 @@ Objects {
 }
 Objects {
   Id: 2394709730487023557
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -44337,7 +44389,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44348,18 +44400,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -44376,6 +44419,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44398,7 +44450,7 @@ Objects {
 }
 Objects {
   Id: 7177495065253343712
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -44414,7 +44466,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44425,18 +44477,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -44453,6 +44496,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44475,7 +44527,7 @@ Objects {
 }
 Objects {
   Id: 9732322829514214527
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -44491,7 +44543,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44502,18 +44554,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -44530,6 +44573,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44552,7 +44604,7 @@ Objects {
 }
 Objects {
   Id: 8474464076859892858
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -44568,7 +44620,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44579,17 +44631,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -44606,6 +44650,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44705,7 +44758,7 @@ Objects {
 }
 Objects {
   Id: 5809187731077151088
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -44721,7 +44774,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44732,18 +44785,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -44760,6 +44804,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44782,7 +44835,7 @@ Objects {
 }
 Objects {
   Id: 11469072400370742718
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -44798,7 +44851,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44809,17 +44862,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -44836,6 +44881,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -44858,7 +44912,7 @@ Objects {
 }
 Objects {
   Id: 1275513860360356190
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -44874,7 +44928,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -44885,18 +44939,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -44913,6 +44958,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -45217,7 +45271,7 @@ Objects {
 }
 Objects {
   Id: 3219946855977932737
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -45233,7 +45287,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45255,7 +45309,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -45294,7 +45348,7 @@ Objects {
 }
 Objects {
   Id: 3187121822266360267
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -45310,7 +45364,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45324,15 +45378,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -45679,7 +45733,7 @@ Objects {
 }
 Objects {
   Id: 16915815371941906762
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -45695,7 +45749,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45706,18 +45760,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -45734,6 +45779,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -45756,7 +45808,7 @@ Objects {
 }
 Objects {
   Id: 13399919236836180584
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -45783,18 +45835,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -45811,6 +45854,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -45833,7 +45885,7 @@ Objects {
 }
 Objects {
   Id: 210187466867150405
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -45849,7 +45901,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45862,14 +45914,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -45908,7 +45962,7 @@ Objects {
 }
 Objects {
   Id: 18443207748085963179
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -45924,7 +45978,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -45935,18 +45989,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -45963,6 +46008,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -45985,7 +46039,7 @@ Objects {
 }
 Objects {
   Id: 16505463108815267419
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -46001,7 +46055,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46012,18 +46066,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -46040,6 +46085,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -46062,7 +46116,7 @@ Objects {
 }
 Objects {
   Id: 5810921022447392112
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -46078,7 +46132,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46089,18 +46143,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -46117,6 +46162,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -46139,7 +46193,7 @@ Objects {
 }
 Objects {
   Id: 7379447286743423404
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -46155,7 +46209,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46166,18 +46220,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -46194,6 +46239,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -46216,7 +46270,7 @@ Objects {
 }
 Objects {
   Id: 558158208248296962
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -46232,7 +46286,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46243,17 +46297,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -46270,6 +46316,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -46369,7 +46424,7 @@ Objects {
 }
 Objects {
   Id: 13782246259556844319
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -46385,7 +46440,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46396,18 +46451,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -46424,6 +46470,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -46446,7 +46501,7 @@ Objects {
 }
 Objects {
   Id: 1772250743267549354
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -46462,7 +46517,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46473,17 +46528,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -46500,6 +46547,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -46522,7 +46578,7 @@ Objects {
 }
 Objects {
   Id: 49178797066344602
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -46538,7 +46594,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46549,18 +46605,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -46881,7 +46928,7 @@ Objects {
 }
 Objects {
   Id: 2740339628400944416
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -46897,7 +46944,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46919,7 +46966,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -46958,7 +47005,7 @@ Objects {
 }
 Objects {
   Id: 212644145191143860
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -46974,7 +47021,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -46988,15 +47035,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -47343,7 +47390,7 @@ Objects {
 }
 Objects {
   Id: 1404602060901531382
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -47359,7 +47406,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47370,18 +47417,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -47398,6 +47436,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -47420,7 +47465,7 @@ Objects {
 }
 Objects {
   Id: 12577767989408145909
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -47447,18 +47492,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -47475,6 +47511,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -47497,7 +47542,7 @@ Objects {
 }
 Objects {
   Id: 7624573665528735214
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -47513,7 +47558,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47526,14 +47571,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -47572,7 +47619,7 @@ Objects {
 }
 Objects {
   Id: 12394289337656116069
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -47588,7 +47635,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47599,18 +47646,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -47627,6 +47665,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -47649,7 +47696,7 @@ Objects {
 }
 Objects {
   Id: 15964844095272751377
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -47665,7 +47712,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47676,18 +47723,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -47704,6 +47742,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -47726,7 +47773,7 @@ Objects {
 }
 Objects {
   Id: 15106960228678069852
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -47742,7 +47789,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47753,18 +47800,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -47781,6 +47819,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -47803,7 +47850,7 @@ Objects {
 }
 Objects {
   Id: 10737352985420097493
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -47819,7 +47866,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47830,18 +47877,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -47858,6 +47896,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -47880,7 +47927,7 @@ Objects {
 }
 Objects {
   Id: 8343167343234629585
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -47896,7 +47943,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -47907,17 +47954,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -47934,6 +47973,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -48033,7 +48081,7 @@ Objects {
 }
 Objects {
   Id: 4921856766414776724
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -48049,7 +48097,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48060,18 +48108,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -48088,6 +48127,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -48110,7 +48158,7 @@ Objects {
 }
 Objects {
   Id: 17970372868473073574
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -48126,7 +48174,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48137,17 +48185,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -48164,6 +48204,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -48186,7 +48235,7 @@ Objects {
 }
 Objects {
   Id: 14291350987930062316
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -48202,7 +48251,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48213,18 +48262,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -48545,7 +48585,7 @@ Objects {
 }
 Objects {
   Id: 9967809850784768146
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -48561,7 +48601,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48583,7 +48623,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -48622,7 +48662,7 @@ Objects {
 }
 Objects {
   Id: 13744853209679249894
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -48638,7 +48678,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -48652,15 +48692,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -49007,7 +49047,7 @@ Objects {
 }
 Objects {
   Id: 1487054095332661607
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -49023,7 +49063,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49034,18 +49074,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -49062,6 +49093,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49084,7 +49122,7 @@ Objects {
 }
 Objects {
   Id: 17629729012115529668
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -49111,18 +49149,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -49139,6 +49168,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49161,7 +49199,7 @@ Objects {
 }
 Objects {
   Id: 276035142212396423
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -49177,7 +49215,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49190,14 +49228,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -49236,7 +49276,7 @@ Objects {
 }
 Objects {
   Id: 2733237606829803893
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -49252,7 +49292,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49263,18 +49303,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -49291,6 +49322,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49313,7 +49353,7 @@ Objects {
 }
 Objects {
   Id: 15161293893936946359
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -49329,7 +49369,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49340,18 +49380,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -49368,6 +49399,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49390,7 +49430,7 @@ Objects {
 }
 Objects {
   Id: 2080174926625063090
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -49406,7 +49446,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49417,18 +49457,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -49445,6 +49476,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49467,7 +49507,7 @@ Objects {
 }
 Objects {
   Id: 17291261365156989786
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -49483,7 +49523,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49494,18 +49534,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -49522,6 +49553,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49544,7 +49584,7 @@ Objects {
 }
 Objects {
   Id: 2556617005503003349
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -49560,7 +49600,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49571,17 +49611,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -49598,6 +49630,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49697,7 +49738,7 @@ Objects {
 }
 Objects {
   Id: 3316068892203820355
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -49713,7 +49754,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49724,18 +49765,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -49752,6 +49784,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49774,7 +49815,7 @@ Objects {
 }
 Objects {
   Id: 2562593033832648403
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -49790,7 +49831,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49801,17 +49842,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -49828,6 +49861,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -49850,7 +49892,7 @@ Objects {
 }
 Objects {
   Id: 7443855862822240256
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -49866,7 +49908,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -49877,18 +49919,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -50209,7 +50242,7 @@ Objects {
 }
 Objects {
   Id: 4755772951879796552
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -50225,7 +50258,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50247,7 +50280,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -50286,7 +50319,7 @@ Objects {
 }
 Objects {
   Id: 2809349009900295704
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -50302,7 +50335,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50316,15 +50349,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -50671,7 +50704,7 @@ Objects {
 }
 Objects {
   Id: 6699843848968548006
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -50687,7 +50720,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50698,18 +50731,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -50726,6 +50750,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -50748,7 +50779,7 @@ Objects {
 }
 Objects {
   Id: 18128652449346221519
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -50775,18 +50806,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -50803,6 +50825,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -50825,7 +50856,7 @@ Objects {
 }
 Objects {
   Id: 6551384563502512808
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -50841,7 +50872,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Reflector Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50854,14 +50885,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -50900,7 +50933,7 @@ Objects {
 }
 Objects {
   Id: 8404624630338627076
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -50916,7 +50949,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -50927,18 +50960,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -50955,6 +50979,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -50977,7 +51010,7 @@ Objects {
 }
 Objects {
   Id: 1182125299920780998
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -50993,7 +51026,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51004,18 +51037,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -51032,6 +51056,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -51054,7 +51087,7 @@ Objects {
 }
 Objects {
   Id: 16821399546714733815
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -51070,7 +51103,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51081,18 +51114,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -51109,6 +51133,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -51131,7 +51164,7 @@ Objects {
 }
 Objects {
   Id: 8761678227559321725
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -51147,7 +51180,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51158,18 +51191,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -51186,6 +51210,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -51208,7 +51241,7 @@ Objects {
 }
 Objects {
   Id: 409474437996968416
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -51224,7 +51257,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51235,17 +51268,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -51262,6 +51287,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -51361,7 +51395,7 @@ Objects {
 }
 Objects {
   Id: 4624937662665491361
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -51377,7 +51411,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51388,18 +51422,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -51416,6 +51441,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -51438,7 +51472,7 @@ Objects {
 }
 Objects {
   Id: 12734651057138977269
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -51454,7 +51488,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51465,17 +51499,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -51492,6 +51518,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -51514,7 +51549,7 @@ Objects {
 }
 Objects {
   Id: 12003260263826562024
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -51530,7 +51565,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51541,18 +51576,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -51873,7 +51899,7 @@ Objects {
 }
 Objects {
   Id: 2522399426610313155
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -51889,7 +51915,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51911,7 +51937,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -51950,7 +51976,7 @@ Objects {
 }
 Objects {
   Id: 9502228121255980976
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -51966,7 +51992,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -51980,15 +52006,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -52335,7 +52361,7 @@ Objects {
 }
 Objects {
   Id: 16505206136553593884
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -52351,7 +52377,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52362,18 +52388,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -52390,6 +52407,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -52412,7 +52436,7 @@ Objects {
 }
 Objects {
   Id: 7765685262753171367
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -52439,18 +52463,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -52467,6 +52482,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -52489,7 +52513,7 @@ Objects {
 }
 Objects {
   Id: 2966634416647790287
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -52505,7 +52529,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52518,14 +52542,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -52564,7 +52590,7 @@ Objects {
 }
 Objects {
   Id: 8475436981800501512
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -52580,7 +52606,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52591,18 +52617,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -52619,6 +52636,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -52641,7 +52667,7 @@ Objects {
 }
 Objects {
   Id: 10359297901332631067
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -52657,7 +52683,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52668,18 +52694,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -52696,6 +52713,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -52718,7 +52744,7 @@ Objects {
 }
 Objects {
   Id: 18038881940748950478
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -52734,7 +52760,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52745,18 +52771,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -52773,6 +52790,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -52795,7 +52821,7 @@ Objects {
 }
 Objects {
   Id: 15197203096780640642
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -52811,7 +52837,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52822,18 +52848,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -52850,6 +52867,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -52872,7 +52898,7 @@ Objects {
 }
 Objects {
   Id: 10876686535246843456
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -52888,7 +52914,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -52899,17 +52925,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -52926,6 +52944,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -53025,7 +53052,7 @@ Objects {
 }
 Objects {
   Id: 10338043513785069005
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -53041,7 +53068,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53052,18 +53079,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -53080,6 +53098,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -53102,7 +53129,7 @@ Objects {
 }
 Objects {
   Id: 592087669882324364
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -53118,7 +53145,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53129,17 +53156,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -53156,6 +53175,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -53178,7 +53206,7 @@ Objects {
 }
 Objects {
   Id: 3685664866702263749
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -53194,7 +53222,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53205,18 +53233,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
@@ -53537,7 +53556,7 @@ Objects {
 }
 Objects {
   Id: 11003246494177465423
-  Name: "Forest"
+  Name: "Camo Orange"
   Transform {
     Location {
     }
@@ -53553,7 +53572,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Forest"
+      String: "Camo Orange"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53575,7 +53594,7 @@ Objects {
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 289372818548227518
+        Id: 7962709208819931505
       }
     }
     Overrides {
@@ -53614,7 +53633,7 @@ Objects {
 }
 Objects {
   Id: 237997426403998557
-  Name: "Wood"
+  Name: "Container 01"
   Transform {
     Location {
     }
@@ -53630,7 +53649,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Wood"
+      String: "Container 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -53644,15 +53663,15 @@ Objects {
       Name: "cs:NewColor"
       Color {
         R: 1
-        G: 1
-        B: 1
+        G: 0.149802029
+        B: 0.0100330114
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 373034708355704799
+        Id: 9521961532316426949
       }
     }
     Overrides {
@@ -53999,7 +54018,7 @@ Objects {
 }
 Objects {
   Id: 13067289821089925962
-  Name: "Diamond Grey"
+  Name: "Candy Apple"
   Transform {
     Location {
     }
@@ -54015,7 +54034,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Grey"
+      String: "Candy Apple"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54026,18 +54045,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.168000013
-        G: 0.168000013
-        B: 0.168000013
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 2329230905657722655
       }
     }
     Overrides {
@@ -54054,6 +54064,13 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 2
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54076,7 +54093,7 @@ Objects {
 }
 Objects {
   Id: 15914783330761716629
-  Name: "Diamond Green"
+  Name: "Camo Dark"
   Transform {
     Location {
     }
@@ -54103,18 +54120,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 3503457931000356404
       }
     }
     Overrides {
@@ -54131,6 +54139,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 6000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.140625
+        G: 0.140625
+        B: 0.140625
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54153,7 +54170,7 @@ Objects {
 }
 Objects {
   Id: 2931760501093507697
-  Name: "Diamond Red"
+  Name: "Camo Blue"
   Transform {
     Location {
     }
@@ -54169,7 +54186,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Diamond Red"
+      String: "Camo Blue"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54182,14 +54199,16 @@ Objects {
     Overrides {
       Name: "cs:NewColor"
       Color {
-        R: 0.477000028
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 18087485408544217211
+        Id: 682700398407096474
       }
     }
     Overrides {
@@ -54228,7 +54247,7 @@ Objects {
 }
 Objects {
   Id: 2018344480596549046
-  Name: "Scales"
+  Name: "Rusty"
   Transform {
     Location {
     }
@@ -54244,7 +54263,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Scales"
+      String: "Rusty"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54255,18 +54274,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0552924
-        G: 0.467
-        B: 0.0410959721
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 15910750051962798568
+        Id: 12770190894867165207
       }
     }
     Overrides {
@@ -54283,6 +54293,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 5000
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54305,7 +54324,7 @@ Objects {
 }
 Objects {
   Id: 14919215497141536652
-  Name: "Force Field Green"
+  Name: "Cardboard"
   Transform {
     Location {
     }
@@ -54321,7 +54340,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field Green"
+      String: "Cardboard"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54332,18 +54351,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0411443152
-        G: 0.650000036
-        B: 0.020149935
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 9404968316769731104
       }
     }
     Overrides {
@@ -54360,6 +54370,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54382,7 +54401,7 @@ Objects {
 }
 Objects {
   Id: 8983801550797731615
-  Name: "Force Field"
+  Name: "Tech Design 01"
   Transform {
     Location {
     }
@@ -54398,7 +54417,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Force Field"
+      String: "Tech Design 01"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54409,18 +54428,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.750596046
-        G: 0.770000041
-        B: 0.60368
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 5950052926211564984
+        Id: 3845926179118691013
       }
     }
     Overrides {
@@ -54437,6 +54447,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54459,7 +54478,7 @@ Objects {
 }
 Objects {
   Id: 2860802959913621173
-  Name: "Metal Plate"
+  Name: "Carbon Fiber"
   Transform {
     Location {
     }
@@ -54475,7 +54494,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Metal Plate"
+      String: "Carbon Fiber"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54486,18 +54505,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 8968668785704081500
+        Id: 2249794126015640337
       }
     }
     Overrides {
@@ -54514,6 +54524,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 4500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.009721
+        G: 0.009721
+        B: 0.009721
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54536,7 +54555,7 @@ Objects {
 }
 Objects {
   Id: 16771966296141063971
-  Name: "Energy Glow"
+  Name: "Moon"
   Transform {
     Location {
     }
@@ -54552,7 +54571,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Energy Glow"
+      String: "Moon"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54563,17 +54582,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.0245998893
-        B: 0.123
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 9743499594980233710
+        Id: 9960906544699791848
       }
     }
     Overrides {
@@ -54590,6 +54601,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54689,7 +54709,7 @@ Objects {
 }
 Objects {
   Id: 6637291897401580836
-  Name: "Magic Glass Grey"
+  Name: "Camo Digital"
   Transform {
     Location {
     }
@@ -54705,7 +54725,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Grey"
+      String: "Camo Digital"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54716,18 +54736,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.382964045
-        G: 0.389000028
-        B: 0.337263018
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6368363392805105925
       }
     }
     Overrides {
@@ -54744,6 +54755,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54766,7 +54786,7 @@ Objects {
 }
 Objects {
   Id: 14736648842106310315
-  Name: "Magic Glass Blue"
+  Name: "Camo Woodland"
   Transform {
     Location {
     }
@@ -54782,7 +54802,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Blue"
+      String: "Camo Woodland"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54793,17 +54813,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        G: 0.00999994297
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 6005397606915098357
+        Id: 6900641435737272158
       }
     }
     Overrides {
@@ -54820,6 +54832,15 @@ Objects {
     Overrides {
       Name: "cs:Cost"
       Int: 3500
+    }
+    Overrides {
+      Name: "cs:NewColor"
+      Color {
+        R: 0.046875
+        G: 0.031402
+        B: 0.00609400123
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -54842,7 +54863,7 @@ Objects {
 }
 Objects {
   Id: 1176084845056644005
-  Name: "Magic Glass Pink"
+  Name: "Camo Splinter"
   Transform {
     Location {
     }
@@ -54858,7 +54879,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:SkinName"
-      String: "Magic Glass Pink"
+      String: "Camo Splinter"
     }
     Overrides {
       Name: "cs:UseNewMaterial"
@@ -54869,18 +54890,9 @@ Objects {
       Bool: true
     }
     Overrides {
-      Name: "cs:NewColor"
-      Color {
-        R: 0.0322325043
-        G: 0.00364999776
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
       Name: "cs:NewMaterial"
       AssetReference {
-        Id: 1537055059638672614
+        Id: 7675962363203525070
       }
     }
     Overrides {
