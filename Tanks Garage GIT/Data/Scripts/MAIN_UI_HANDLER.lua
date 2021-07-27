@@ -3418,14 +3418,17 @@ function CHECK_STATE()
 		CHOSEN_MODE_LIGHT.text = "MODE: RANGE"
 		CHOSEN_MODE_SECONDARY.text = "MODE: RANGE"
 	end
-
-	CHECK_STATE()
 end
 
 -- INITIALISING CHECK_STATE() FUNCTION
-function INITIATE_CHECK_STATE(player)
-	CHECK_STATE()
+
+function INITIATE_CHECK_STATE()
+	
+ 	local checkTask = Task.Spawn(CHECK_STATE)
+ 	checkTask.repeatCount = -1
+ 	
 end
+
 
 function NavigateToPremiumShop()
 	ACTIVE_HEAD_MENU = 1
@@ -3504,7 +3507,8 @@ end
 
 InitializePortalImages()
 
-Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
+INITIATE_CHECK_STATE()
+--Game.playerJoinedEvent:Connect(INITIATE_CHECK_STATE)
 ------------------------------------------------------------------------------------------
 -- CONNECTING CLICKED EVENTS
 STATS_SLIDER_BUTTON.clickedEvent:Connect(CLICKED_STATS)
