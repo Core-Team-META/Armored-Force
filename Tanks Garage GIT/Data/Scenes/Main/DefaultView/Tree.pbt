@@ -878,6 +878,18 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:API_Tutorial"
+      AssetReference {
+        Id: 3002171482500064982
+      }
+    }
+    Overrides {
+      Name: "cs:EaseUI"
+      AssetReference {
+        Id: 1458786537451628614
+      }
+    }
+    Overrides {
       Name: "cs:DefaultViewUI"
       ObjectReference {
         SelfId: 15177659444916868221
@@ -920,15 +932,33 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Tutorial_ShootingRangePanel"
+      Name: "cs:LoadingContainer"
       ObjectReference {
-        SelfId: 1360069177793361706
+        SelfId: 14167779240352810670
       }
     }
     Overrides {
-      Name: "cs:API_Tutorial"
-      AssetReference {
-        Id: 3002171482500064982
+      Name: "cs:LoadingScreenBar"
+      ObjectReference {
+        SelfId: 1982479308807776374
+      }
+    }
+    Overrides {
+      Name: "cs:LoadingTankIcon"
+      ObjectReference {
+        SelfId: 3188285623096504314
+      }
+    }
+    Overrides {
+      Name: "cs:LoadingText"
+      ObjectReference {
+        SelfId: 5084092555844205763
+      }
+    }
+    Overrides {
+      Name: "cs:Tutorial_ShootingRangePanel"
+      ObjectReference {
+        SelfId: 1360069177793361706
       }
     }
     Overrides {
