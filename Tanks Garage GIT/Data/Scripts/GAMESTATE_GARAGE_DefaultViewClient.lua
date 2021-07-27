@@ -2,14 +2,21 @@ local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local UTIL_API = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
 local API_Tutorial = require(script:GetCustomProperty("API_Tutorial"))
+local EaseUI = require(script:GetCustomProperty("EaseUI"))
 
 local defaultViewUI = script:GetCustomProperty("DefaultViewUI"):WaitForObject()
 
 local Tutorial_ShootingRangePanel = script:GetCustomProperty("Tutorial_ShootingRangePanel"):WaitForObject()
 local otherGarageButtons = script:GetCustomProperty("OtherGarageButtons"):WaitForObject()
 local toBattleButtons = script:GetCustomProperty("ToBattleButtons"):WaitForObject()
+
 local blackScreen = script:GetCustomProperty("BlackScreen"):WaitForObject()
-blackScreen.visibility = Visibility.INHERIT
+local loadingContainer = script:GetCustomProperty("LoadingContainer"):WaitForObject()
+local loadingScreenBar = script:GetCustomProperty("LoadingScreenBar"):WaitForObject()
+local loadingTankIcon = script:GetCustomProperty("LoadingTankIcon"):WaitForObject()
+local loadingText = script:GetCustomProperty("LoadingText"):WaitForObject()
+
+
 local TANK_TABLE_SLIDER = script:GetCustomProperty("TANK_TABLE_SLIDER"):WaitForObject()
 local SHOP_CONSUMABLES = script:GetCustomProperty("SHOP_CONSUMABLES"):WaitForObject()
 
@@ -31,6 +38,8 @@ local savedState = ""
 
 local consumableSlots = {}
 local enteringFromCamoMenu = false
+
+local loadingProgress = 0
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -208,6 +217,9 @@ function InitializeSlot(slotTableEntry, panelReference)
 	slotTableEntry.purchaseButton.clickedEvent:Connect(OnPurchaseButtonPressed)
 	
 	slotTableEntry.countText = panelReference:FindDescendantByName("CONSUMABLE_COUNT")
+	
+	blackScreen.visibility = Visibility.INHERIT
+	loadingScreenBar.progress = 0
 
 end
 
@@ -249,24 +261,24 @@ function InitializeComponent()
 		Task.Wait()
 	end
 	
-	Task.Wait(5)
+	Task.Spawn(AnimateLoadingTank)
+	Task.Spawn(AnimateLoadingScreen)
+	
+	Task.Wait(8)
 	
 	for i = 100, 1, -1 do 
-		
-		blackScreen:SetColor(Color.New(0, 0, 0, i/100))
+		blackScreen:SetColor(Color.New(1, 1, 1, i/100))
 			
-		Task.Wait(0.02)
-			
+		Task.Wait(0.01)	
 	end
 	
 	local logo = blackScreen:GetChildren()[1]
 	
 	for i = 0, 100, 1 do 
-		
 		logo.y = -i * i
+		loadingContainer.y = i * i
 			
-		Task.Wait(0.02)
-			
+		Task.Wait(0.01)	
 	end
 	
 	blackScreen.visibility = Visibility.FORCE_OFF
@@ -279,6 +291,107 @@ function InitializeComponent()
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_EXTINGUISHER))
 	OnResourceChanged(localPlayer, CONSTANTS_API.CONSUMABLES.AUTO_REPAIR, localPlayer:GetResource(CONSTANTS_API.CONSUMABLES.AUTO_REPAIR))
 	
+end
+
+function AnimateLoadingTank()
+
+	local elastic = EaseUI.EasingEquation.ELASTIC
+	local bounce = EaseUI.EasingEquation.BOUNCE
+	local quad = EaseUI.EasingEquation.QUADRATIC
+
+	local directionIn = EaseUI.EasingDirection.IN
+	local directionOut = EaseUI.EasingDirection.OUT
+	local directionInOut = EaseUI.EasingDirection.INOUT
+	
+	local previousProgress = loadingProgress
+	local changes = 0
+	local speed = 1
+	
+	while changes < 3 do
+		EaseUI.EaseY(loadingTankIcon, -3, 0.1, elastic, directionIn)
+		Task.Wait(0.1)
+		EaseUI.EaseY(loadingTankIcon, 0, 0.1, bounce, directionOut)
+		Task.Wait(0.1)
+		
+		if loadingProgress ~= previousProgress then	
+			previousProgress = loadingProgress
+		
+			EaseUI.EaseRotation(loadingTankIcon, -7, 0.25, elastic, directionIn)
+			EaseUI.EaseX(loadingTankIcon, math.floor(loadingProgress * (UI.GetScreenSize().x - 100)), speed, quad, directionIn)
+			
+			Task.Wait(speed)
+			
+			for i = 25, 1 do
+			
+				loadingTankIcon.rotationAngle = i/25 * -7
+				
+				Task.Wait(0.01)
+			
+			end
+			
+			loadingTankIcon.rotationAngle = 0
+			
+			changes = changes + 1
+			
+			if changes == 3 then
+				speed = 0.5
+			end
+		end
+	end
+
+end
+
+function AnimateLoadingScreen()
+
+	blackScreen:SetGameScreenshot("a7620c/armored-force", 0)
+	Task.Wait(0.5)
+	blackScreen:SetGameScreenshot("a7620c/armored-force", 1)
+	Task.Wait(0.25)
+	blackScreen:SetColor(Color.New(1, 1, 1, 1))
+	
+	loadingText.text = "Loading Environment and UI..."
+
+	for i = 0, 100, 1 do 
+		
+		loadingScreenBar.progress = (i/100) * 0.25
+		
+		Task.Wait(0.01)
+			
+	end
+	
+	loadingScreenBar.progress = 0.25
+	loadingProgress = 0.25
+	
+	Task.Wait(1)
+	
+	loadingText.text = "Setting up UI portal images..."
+
+	for i = 0, 200, 1 do 
+		
+		loadingScreenBar.progress = ((i/200) * 0.5) + 0.25
+		
+		Task.Wait(0.01)
+			
+	end
+	
+	loadingScreenBar.progress = 0.75
+	loadingProgress = 0.75
+	
+	Task.Wait(1)
+	
+	loadingText.text = "Finalizing..."
+
+	for i = 0, 50, 1 do 
+		
+		loadingScreenBar.progress = ((i/50) * 0.25) + 0.75
+		
+		Task.Wait(0.01)
+			
+	end	
+	
+	loadingProgress = 1
+	loadingText.text = "Welcome to Armored Force Commander!"
+
 end
 
 function LoadEquippableTanks()
