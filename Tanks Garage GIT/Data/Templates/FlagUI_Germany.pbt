@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4424767201219642297
+        ParentId: 6663332593545662611
         ChildIds: 3202901143257570968
         ChildIds: 13948736221555355189
         ChildIds: 12174601364993419852
@@ -32,8 +32,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 80
-          Height: 40
+          Width: 50
+          Height: 25
+          UIX: -45.1357727
+          UIY: -38.3256073
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -86,14 +88,14 @@ Assets {
         }
         Control {
           Width: 200
-          Height: 14
-          UIY: 12.3269653
+          Height: 10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
           UseParentWidth: true
+          UseParentHeight: true
           Image {
             Brush {
               Id: 841534158063459245
@@ -106,9 +108,11 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              A: 0.3
             }
             ShadowOffset {
+              X: 2
+              Y: 2.8
             }
           }
           AnchorLayout {
@@ -155,8 +159,8 @@ Assets {
         }
         Control {
           Width: 200
-          Height: 14
-          UIY: -12.3266907
+          Height: 10
+          UIY: -7.0317173
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -173,9 +177,10 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              A: 0.3
             }
             ShadowOffset {
+              X: 2
             }
           }
           AnchorLayout {
@@ -222,7 +227,7 @@ Assets {
         }
         Control {
           Width: 200
-          Height: 14
+          Height: 8
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -242,9 +247,10 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              A: 0.3
             }
             ShadowOffset {
+              X: 2
             }
           }
           AnchorLayout {
