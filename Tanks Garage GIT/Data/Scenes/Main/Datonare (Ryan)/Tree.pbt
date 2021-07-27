@@ -185,7 +185,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "ff55d5/tanksportal-images5"
+      String: "458bb4/tanksportal-images5"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -524,7 +524,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "71d92b/tanksportal-images2"
+      String: "fd2682/tanksportal-images2"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -855,7 +855,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "ae5f1d/tanksportal-images9"
+      String: "e9bcfc/tanksportal-images9"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -1194,7 +1194,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "4e1244/tanksportal-images8"
+      String: "cc26cb/tanksportal-images8"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -1533,7 +1533,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "4e1244/tanksportal-images8"
+      String: "cc26cb/tanksportal-images8"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -1872,7 +1872,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "b54ba9/tanksportal-images7"
+      String: "7bfb91/tanksportal-images7"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -2211,7 +2211,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "4e1244/tanksportal-images8"
+      String: "cc26cb/tanksportal-images8"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -2550,7 +2550,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "4e1244/tanksportal-images8"
+      String: "cc26cb/tanksportal-images8"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -2889,7 +2889,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "b54ba9/tanksportal-images7"
+      String: "7bfb91/tanksportal-images7"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -3228,7 +3228,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "7bc4ff/tanksportal-images9"
+      String: "e9bcfc/tanksportal-images9"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -3563,7 +3563,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "7bc4ff/tanksportal-images9"
+      String: "e9bcfc/tanksportal-images9"
     }
     Overrides {
       Name: "bp:Screenshot Index"
@@ -3902,7 +3902,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Game ID"
-      String: "4e1244/tanksportal-images8"
+      String: "cc26cb/tanksportal-images8"
     }
     Overrides {
       Name: "bp:Screenshot Index"
