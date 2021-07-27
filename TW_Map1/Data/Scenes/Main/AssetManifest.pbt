@@ -1,17 +1,4 @@
 Assets {
-  Id: 18190579293091682063
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "5ded2bb7c8c349e1bedb86ea3cf486d1"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 18095757882595708726
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -48,12 +35,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13009544308832973362
-  Name: "TankProgress"
+  Id: 12787971655086326810
+  Name: "Achievements"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "d0942430ab1447ecaf4155441f6206ed"
+      Key: "9e04fa959b5e4d3c8a7f25638bb17a9f"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -79,19 +66,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10875987836639546947
-  Name: "Leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "052041e8d63b4517a952bb140099bb39"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -110,12 +84,25 @@ Assets {
   }
 }
 Assets {
-  Id: 6696558842108831768
+  Id: 8466853097235286672
   Name: "Skins"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "8905467fb24d4808b3c2ae59a33229f2"
+      Key: "e86521488aa340328f34b59e4a44f0d3"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 6699540765201334098
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "c0c2d6c67a6644dcaa2a0db60e6e61f6"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -147,5 +134,18 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_003"
+  }
+}
+Assets {
+  Id: 1699290015573167761
+  Name: "Tanks"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "3c3178dcc0494bd4904969d5250b3dff"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }

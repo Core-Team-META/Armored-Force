@@ -343,9 +343,9 @@ end
 
 function AnimateLoadingScreen()
 
-	blackScreen:SetGameScreenshot("a7620c/armored-force", 0)
+	blackScreen:SetGameScreenshot("ad55b3/armored-force", 0)
 	Task.Wait(0.5)
-	blackScreen:SetGameScreenshot("a7620c/armored-force", 1)
+	blackScreen:SetGameScreenshot("ad55b3/armored-force", 1)
 	Task.Wait(0.25)
 	blackScreen:SetColor(Color.New(1, 1, 1, 1))
 	
