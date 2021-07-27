@@ -121,10 +121,11 @@ local function BuildAchievementInfoPanel()
             local name = achievementPanel:GetCustomProperty("Name"):WaitForObject()
             local progressBar = achievementPanel:GetCustomProperty("ProgressBar"):WaitForObject()
             local progressText = achievementPanel:GetCustomProperty("ProgressText"):WaitForObject()
-            local button = achievementPanel:GetCustomProperty("ClaimButton"):WaitForObject()
             local status = achievementPanel:GetCustomProperty("StatusText"):WaitForObject()
             local preReqPanel = achievementPanel:GetCustomProperty("PREREQUISITE"):WaitForObject()
             local RewardClaimButton = achievementPanel:GetCustomProperty("RewardClaimButton"):WaitForObject()
+            local RewardButtonPanel = achievementPanel:GetCustomProperty("Reward_Button_IDLE"):WaitForObject()
+
             local Description = achievementPanel:GetCustomProperty("Description"):WaitForObject()
             local Silver = achievementPanel:GetCustomProperty("Silver"):WaitForObject()
             local Free_RP = achievementPanel:GetCustomProperty("FREERP"):WaitForObject()
@@ -132,6 +133,8 @@ local function BuildAchievementInfoPanel()
             local rewardPanels = {Silver = Silver, Xp = Free_RP, Gold = Gold}
 
             RewardClaimButton.isInteractable = false
+            RewardClaimButton.visibility = Visibility.FORCE_OFF
+            RewardButtonPanel.visibility = Visibility.FORCE_OFF
             RewardClaimButton.clientUserData.key = achievement.id
 
             for _, rewardPanel in pairs(rewardPanels) do
@@ -139,10 +142,11 @@ local function BuildAchievementInfoPanel()
             end
 
             if ACH_API.IsUnlocked(LOCAL_PLAYER, achievement.id) then
-                button.visibility = Visibility.FORCE_ON
                 progressBar.visibility = Visibility.FORCE_OFF
+                RewardButtonPanel.visibility = Visibility.FORCE_ON
                 progressText.text = "Click To Claim Reward"
                 RewardClaimButton.isInteractable = true
+                RewardClaimButton.visibility = Visibility.FORCE_ON
                 listeners[#listeners + 1] = RewardClaimButton.clickedEvent:Connect(OnClaimButtonPressed)
                 status.text = "Completed"
             else
