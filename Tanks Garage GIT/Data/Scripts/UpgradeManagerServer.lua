@@ -25,14 +25,27 @@ function PurchaseTank(player, id, prereqs)
 			local rpAmount2 = 0
 			local rpTank2 = 0
 			local totalRPToUse = 0
-			
-			if(prereqs[1]) then
-				rpAmount1 = prereqs[1].rp
+		
+			print("Prereqs ", prereqs[1], prereqs[2], prereqs[1] and prereqs[1].id)
+			if(prereqs[1]) and prereqs[1].id then
+				warn("Has Pre Reqs 1")
+				rpAmount1 = player:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[1].id)))
 				rpTank1 = prereqs[1].id
+				--local preReqTank = UTIL_API.RetrieveTankDataById(prereqs[1].id, player.serverUserData.techTreeProgress)
+				--warn("Is Purchased " .. tostring(preReqTank.purchased))
+				if not prereqs[1].usable then
+					return
+				end
 			end
-			if(prereqs[2]) then
-				rpAmount2 = prereqs[2].rp
+			if(prereqs[2]) and prereqs[2].id then
+				warn("Has Pre Reqs 2")
+				rpAmount2 = player:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[2].id)))
 				rpTank2 = prereqs[2].id
+				--local preReqTank = UTIL_API.RetrieveTankDataById(prereqs[2].id, player.serverUserData.techTreeProgress)
+				--warn("Is Purchased " .. tostring(preReqTank.purchased))
+				if not prereqs[2].usable then
+					return
+				end
 			end
 			
 			local freeRP = player:GetResource(Constants_API.FREERP)
@@ -57,7 +70,7 @@ function PurchaseTank(player, id, prereqs)
 						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank1)), researchCost)
 					end
 					
-					if(rpAmount2 < researchCost) then
+					if (rpAmount2 < researchCost) then
 						researchCost = researchCost - rpAmount2
 						player:RemoveResource(UTIL_API.GetTankRPString(tonumber(rpTank2)), rpAmount2)
 					else

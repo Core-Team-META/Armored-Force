@@ -242,6 +242,7 @@ function Init()
 
 end
 
+
 ---------------------------------------------------------------------------------
 -- A set of functions handling functionality for UI and UI components
 -- UI functions -----------------------------------------------------------------
@@ -531,12 +532,14 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 	local rpPayment = 0
 	if(prereqs[1]) then
 		if prereqs[1].usable then
-			CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = tostring(prereqs[1].rp)
-			if(prereqs[1].rp > tankData.researchCost) then
+			local prereqTank = GetTankData(prereqs[1].id)
+			local currentRP = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[1].id)))
+			CONFIRM_TANK_UPGRADE:FindDescendantByName("OWNED_1").text = tostring(currentRP)
+			if(currentRP > tankData.researchCost) then
 				rpPayment = tankData.researchCost
 				cost = 0
 			else
-				rpPayment = tonumber(prereqs[1].rp)
+				rpPayment = tonumber(currentRP)
 				cost = cost - rpPayment
 			end	
 			PURCHASE_NOTIFICATION.visibility = Visibility.FORCE_OFF
@@ -613,7 +616,7 @@ function ConfirmButtonClicked()
 		local prereqs = GetPrerequisiteRPValues(tankDetails.id)
 		Events.BroadcastToServer("PurchaseTank", tankDetails.id, prereqs)
 		UI.PrintToScreen(tankDetails.name .. " purchased.")			
-		for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+		--[[for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 			if(tank.id == tankDetails.id) then
 				tank.purchased = true
 				tank.researched = true
@@ -623,7 +626,7 @@ function ConfirmButtonClicked()
 					tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 				end
 			end
-		end
+		end]]--
 		
 		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
 	else
@@ -975,8 +978,8 @@ function PurchaseTank()
 	local purchaseCost = tankDetails.purchaseCost
 	local researchCost = tankDetails.researchCost
 	
-	local tankRPUsed = UTIL_API.GetTankRPString(purchasedID)
-	
+	local tankRPUsed = UTIL_API.GetTankRPString(purchasedId)
+
 	Events.BroadcastToServer("PurchaseTank", purchasedId)
 end
 
@@ -995,7 +998,7 @@ function UpgradeTank()
 			Events.BroadcastToServer("PurchaseTank", tankDetails.id, tankDetails.currency)
 			-- TODO: Play SFX/Message
 			UI.PrintToScreen(tankDetails.name .. " purchased.")			
-			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+			--[[for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 				if(tank.id == tankDetails.id) then
 					tank.purchased = true
 					if(tankDetails.currency == Constants_API.GOLD) then
@@ -1004,9 +1007,7 @@ function UpgradeTank()
 						tank.engineProgress = Constants_API.UPGRADE_PROGRESS.PURCHASED
 					end
 				end
-			end
-			PopulateCurrencyUI()
-			CloseTechTreeModal()		
+			end]]--		
 		end		
 	else
 		-- When researching tank, we'll be using the RP values of prerequisite tanks, not the tank's RP itself
@@ -1058,6 +1059,7 @@ function UpgradeWeapon()
 		ShowNotEnoughCurrencyMessage("Weapon")
 		return
 	end
+
 	local tankRPString = UTIL_API.GetTankRPString(tonumber(tankDetails.id))
 	local tankRP = LOCAL_PLAYER:GetResource(tankRPString)
 	local freeRP = LOCAL_PLAYER:GetResource(Constants_API.FREERP)
@@ -1186,30 +1188,29 @@ end
 
 -- Returns a simple table that holds data for a given tank's pre-requisites. Used to determine which tank's RP can be used to research the tank
 function GetPrerequisiteRPValues(id)
-	local prerequisites = {}
 	local prerequisite1 = {}
 	local prerequisite2 = {}
 	--print("Getting pre-req RP values")
 	for i, tank in ipairs(TANK_LIST) do
 		if(tostring(tank:GetCustomProperty("ID")) == tostring(id)) then
 			--print("Match found for tank: " .. tostring(tank:GetCustomProperty("Name")))
-			if(tank:GetCustomProperty("Prerequisite1") or 0 ~= 0) then
+			if(tank:GetCustomProperty("Prerequisite1")) then
 				local preReq1Id = tank:GetCustomProperty("Prerequisite1")
 				local preReq1Tank = GetTankData(preReq1Id)
 				prerequisite1.usable = false
 				-- Check to make sure the pre-req has at least one completed upgrade
 				for i, preReq1Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 					if(tostring(preReq1Progress.id) == tostring(preReq1Id)) then
+						prerequisite1.id = preReq1Progress.id
 						if(tonumber(preReq1Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq1Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq1Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-							prerequisite1 = {id = preReq1Tank.id, name = preReq1Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq1Tank.id))), usable = true}							
-						end
-						table.insert(prerequisites, prerequisite1)
-					end
+							prerequisite1.usable = true				
+						end	
+					end	
 				end
 			end
-			if(tank:GetCustomProperty("Prerequisite2") or 0 ~= 0) then
+			if(tank:GetCustomProperty("Prerequisite2")) then
 				local preReq2Id = tank:GetCustomProperty("Prerequisite2")
 				local preReq2Tank = GetTankData(preReq2Id)
 				prerequisite2.usable = false
@@ -1217,19 +1218,19 @@ function GetPrerequisiteRPValues(id)
 				-- Check to make sure the pre-req has at least one completed upgrade
 				for i, preReq2Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 					if(tostring(preReq2Progress.id) == tostring(preReq2Id)) then
+						prerequisite2.id = preReq2Progress.id
 						if(tonumber(preReq2Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq2Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
 						or tonumber(preReq2Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-							prerequisite2 = {id = preReq2Tank.id, name = preReq2Tank.name, rp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(preReq2Tank.id))), usable = true}
+							prerequisite2.usable = true
+								
 						end
-						table.insert(prerequisites, prerequisite2)				
-						
 					end
 				end				
 			end
 		end
 	end
-	return prerequisites
+	return {prerequisite1, prerequisite2}
 end
 
 -- This function populates the modal popup with the tank data and its player's progress
@@ -1498,13 +1499,15 @@ function PopulateLockedTankCard(tankData)
 	if(canBeResearched) then
 		-- TODO check for premium tank
 		local prereqs = GetPrerequisiteRPValues(tankData.id)
-		if(prereqs[1]) then			
+		if(prereqs[1] and prereqs[1].id) then	
+			local currentRp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[1].id)))		
+			local preReqTank = GetTankData(prereqs[1].id)
 			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SHADOW").text = "UNLOCKED TANK"
 			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SECONDAIRY").text = "UNLOCKED TANK"
 			LOCKED_TANK_CARD:FindDescendantByName("TITLE_LIGHT").text = "UNLOCKED TANK"
-			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").text = tostring(prereqs[1].rp) .. " / " .. tostring(tankData.researchCost)
-			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").progress = prereqs[1].rp / tankData.researchCost
-			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = prereqs[1].name .. " XP"
+			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").text = tostring(currentRp) .. " / " .. tostring(tankData.researchCost)
+			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").progress = currentRp / tankData.researchCost
+			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = preReqTank.name .. " XP"
 			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_ON
 			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_ON
 			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_ON
@@ -1706,3 +1709,16 @@ World.FindObjectByName("31").unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName("32").unhoveredEvent:Connect(UnhoverTank)
 World.FindObjectByName("33").unhoveredEvent:Connect(UnhoverTank)
 
+
+
+function OnServerDataUpdated(player, string)
+	if string == "PlayerTankData" then
+		LOCAL_PLAYER.clientUserData.techTreeProgress = player:GetPrivateNetworkedData(string)
+		PopulateCurrencyUI()
+		CloseTechTreeModal()
+	end
+end
+
+
+-- handler params: Player_player, string_key
+LOCAL_PLAYER.privateNetworkedDataChangedEvent:Connect(OnServerDataUpdated)

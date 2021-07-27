@@ -71,13 +71,14 @@ function ChangeEquippedTank(player, id)
 			end
 		end
 		
-		print(selectedEntry.purchased)
+		--print(selectedEntry.purchased)
 		if (not selectedEntry) or (not selectedEntry.purchased) then
 			print("equip failed")
 			return
 		end
 	end
 	
+
 	print("equip passed")
 	
 	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(id))
@@ -86,6 +87,7 @@ function ChangeEquippedTank(player, id)
 	if CheckPlayerState(player) then
 		GivePlayerEquipment(player)
 	end
+	
 	player:SetPrivateNetworkedData("SelectedTank", tonumber(id))
 end
 
