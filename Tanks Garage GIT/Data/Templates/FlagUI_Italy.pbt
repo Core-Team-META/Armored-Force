@@ -32,8 +32,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 80
-          Height: 40
+          Width: 50
+          Height: 25
+          UIX: -45.1357727
+          UIY: -38.3256073
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -84,17 +86,18 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 28
+          Width: 22
           Height: 14
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           UseParentHeight: true
           Image {
             Brush {
-              Id: 13260375150794736727
+              Id: 7694270228398824986
             }
             Color {
               G: 0.299999952
@@ -104,20 +107,22 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              A: 0.3
             }
             ShadowOffset {
+              X: 2
+              Y: 2.8
             }
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -151,9 +156,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 28
+          Width: 20
           Height: 14
-          UIX: 49.2004776
+          UIX: 15
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -162,7 +167,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 13260375150794736727
+              Id: 7694270228398824986
             }
             Color {
               R: 0.772
@@ -181,12 +186,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -220,9 +225,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 28
-          Height: 14
-          UIX: 25
+          Width: 18
+          Height: 10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -231,7 +235,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 13260375150794736727
+              Id: 7694270228398824986
             }
             Color {
               R: 1
@@ -250,12 +254,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -263,12 +267,12 @@ Assets {
       }
     }
     Assets {
-      Id: 13260375150794736727
-      Name: "BG Flat 002"
+      Id: 7694270228398824986
+      Name: "UI Basic Shape Square"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "UI_Basic_Shape_Square"
       }
     }
     PrimaryAssetId {

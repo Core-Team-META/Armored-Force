@@ -31,8 +31,10 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 80
-          Height: 40
+          Width: 50
+          Height: 25
+          UIX: -45.1357727
+          UIY: -38.3256073
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -106,9 +108,11 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              A: 0.3
             }
             ShadowOffset {
+              X: 2
+              Y: 2.8
             }
           }
           AnchorLayout {
@@ -154,8 +158,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 25
-          Height: 25
+          Width: 18
+          Height: 18
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

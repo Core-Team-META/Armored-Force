@@ -4306,6 +4306,7 @@ Objects {
   ChildIds: 12822792834811869738
   ChildIds: 10078461331437096795
   ChildIds: 9498379069176680277
+  ChildIds: 6893598959209726874
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4340,6 +4341,55 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 6893598959209726874
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7077020114021058703
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13948736221555355189
+      value {
+        Overrides {
+          Name: "UIY"
+          Float: -7.5
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -6348,6 +6398,7 @@ Objects {
   ChildIds: 1623806751541218128
   ChildIds: 15751221636052710136
   ChildIds: 3113368018809336098
+  ChildIds: 3421479838899563793
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6382,6 +6433,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 3421479838899563793
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17327518215213833066
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -8405,6 +8496,9 @@ Objects {
   ChildIds: 1057302056900710713
   ChildIds: 6797670485259664987
   ChildIds: 10755368267877417905
+  ChildIds: 14408104932488418169
+  ChildIds: 16212368973623237836
+  ChildIds: 1503053483749058179
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8439,6 +8533,165 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 1503053483749058179
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6280094511832193071
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 82.176
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13948736221555355189
+      value {
+        Overrides {
+          Name: "UIY"
+          Float: -7.5
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
+    }
+  }
+}
+Objects {
+  Id: 16212368973623237836
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6280094511832193071
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -38.801033
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13948736221555355189
+      value {
+        Overrides {
+          Name: "UIY"
+          Float: -7.5
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
+    }
+  }
+}
+Objects {
+  Id: 14408104932488418169
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6280094511832193071
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -166.103088
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13948736221555355189
+      value {
+        Overrides {
+          Name: "UIY"
+          Float: -7.5
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -12571,6 +12824,7 @@ Objects {
   ChildIds: 1664928830219402685
   ChildIds: 1338360157835229825
   ChildIds: 11225292896253132295
+  ChildIds: 2092151119180782492
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12605,6 +12859,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 2092151119180782492
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 518652871479486078
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -14680,6 +14974,7 @@ Objects {
   ChildIds: 4499166937213760878
   ChildIds: 11612814811514296166
   ChildIds: 10806406134948749529
+  ChildIds: 17510097798697367271
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14714,6 +15009,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 17510097798697367271
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8578156825657366981
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -16737,6 +17072,9 @@ Objects {
   ChildIds: 11753865303422187278
   ChildIds: 8286428528957737080
   ChildIds: 16390173594914696156
+  ChildIds: 7761234520614476460
+  ChildIds: 11306655921372610186
+  ChildIds: 5522295261363834219
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16771,6 +17109,147 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 5522295261363834219
+  Name: "FlagUI_Japan"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1104410783960359282
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5107218520572331221
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Japan"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 82.176
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13821740862684389955
+    }
+  }
+}
+Objects {
+  Id: 11306655921372610186
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1104410783960359282
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -38.801033
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13948736221555355189
+      value {
+        Overrides {
+          Name: "UIY"
+          Float: -8.00763893
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
+    }
+  }
+}
+Objects {
+  Id: 7761234520614476460
+  Name: "FlagUI_Italy"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1104410783960359282
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4890946126398865318
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Italy"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -166.103088
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4395155794584687179
     }
   }
 }
@@ -20902,6 +21381,7 @@ Objects {
   ChildIds: 710543407168305734
   ChildIds: 7638708849467741041
   ChildIds: 7055805021033138797
+  ChildIds: 13668334821348146781
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -20936,6 +21416,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 13668334821348146781
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4901782072793937381
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -22951,6 +23471,8 @@ Objects {
   ChildIds: 5820962543997421967
   ChildIds: 10378039888368398755
   ChildIds: 14587623787378868174
+  ChildIds: 10998943296341650329
+  ChildIds: 14161543260432093135
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -22985,6 +23507,94 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 14161543260432093135
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14399607727013678570
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 20.6859741
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
+    }
+  }
+}
+Objects {
+  Id: 10998943296341650329
+  Name: "FlagUI_Japan"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14399607727013678570
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5107218520572331221
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Japan"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -105.659
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13821740862684389955
     }
   }
 }
@@ -26033,6 +26643,7 @@ Objects {
   ChildIds: 9805707615422202304
   ChildIds: 11411757340848826813
   ChildIds: 5009833775204584643
+  ChildIds: 3384521446152437241
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -26067,6 +26678,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 3384521446152437241
+  Name: "FlagUI_Italy"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12058982147773916340
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4890946126398865318
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Italy"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4395155794584687179
     }
   }
 }
@@ -28069,6 +28720,7 @@ Objects {
   ChildIds: 15336319822686237190
   ChildIds: 7164538466827853375
   ChildIds: 3114371461193224366
+  ChildIds: 13827775242127234747
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -28103,6 +28755,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 13827775242127234747
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2889720444018098457
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -30111,6 +30803,7 @@ Objects {
   ChildIds: 13129153716649919388
   ChildIds: 15504654048548099092
   ChildIds: 3933330083818572957
+  ChildIds: 6874534549591172882
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30144,6 +30837,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 6874534549591172882
+  Name: "FlagUI_Germany"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17708280062514395202
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5636664143155333217
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Germany"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2905148507046167719
     }
   }
 }
@@ -33339,6 +34072,7 @@ Objects {
   ChildIds: 9475819479021873248
   ChildIds: 10270611336161414314
   ChildIds: 9587572283295339249
+  ChildIds: 10179733849406376022
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33373,6 +34107,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 10179733849406376022
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16241792238397876437
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
     }
   }
 }
@@ -35378,6 +36152,7 @@ Objects {
   ChildIds: 12938979909041063491
   ChildIds: 1792668938533644896
   ChildIds: 5115454985411378755
+  ChildIds: 12566130911689133002
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -35412,6 +36187,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 12566130911689133002
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3209758966122525420
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
     }
   }
 }
@@ -37432,6 +38247,9 @@ Objects {
   ChildIds: 3351890702811955718
   ChildIds: 14862556247892289991
   ChildIds: 8628814626849120334
+  ChildIds: 3132435765521028920
+  ChildIds: 1834714862959088513
+  ChildIds: 14976878801954717793
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -37466,6 +38284,138 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 14976878801954717793
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9872049113436265330
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 82.1756668
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
+    }
+  }
+}
+Objects {
+  Id: 1834714862959088513
+  Name: "FlagUI_France"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9872049113436265330
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4890946126398865318
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_France"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -38.801033
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6932940463165864984
+    }
+  }
+}
+Objects {
+  Id: 3132435765521028920
+  Name: "FlagUI_Russia"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9872049113436265330
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1737038005221732089
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Russia"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -166.103088
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16490220422039223235
     }
   }
 }
@@ -41587,6 +42537,7 @@ Objects {
   ChildIds: 17465876981668998857
   ChildIds: 11758264138981537396
   ChildIds: 10383548202078119455
+  ChildIds: 10567500012561666954
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41621,6 +42572,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 10567500012561666954
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6492045155039000355
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
     }
   }
 }
@@ -43693,6 +44684,7 @@ Objects {
   ChildIds: 12846620880002787555
   ChildIds: 8485618417897707434
   ChildIds: 11367912846947899701
+  ChildIds: 3238438727632045253
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -43727,6 +44719,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 3238438727632045253
+  Name: "FlagUI_Russia"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8290617264516584712
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1737038005221732089
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Russia"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16490220422039223235
     }
   }
 }
@@ -45747,6 +46779,9 @@ Objects {
   ChildIds: 4084991860832214664
   ChildIds: 9584075623845020173
   ChildIds: 9850038415957910201
+  ChildIds: 5520102436861722079
+  ChildIds: 7412816111800587433
+  ChildIds: 8619708879325489437
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -45781,6 +46816,138 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 8619708879325489437
+  Name: "FlagUI_Russia"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2869300749954718711
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1737038005221732089
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Russia"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 82.176
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16490220422039223235
+    }
+  }
+}
+Objects {
+  Id: 7412816111800587433
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2869300749954718711
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -38.801033
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
+    }
+  }
+}
+Objects {
+  Id: 5520102436861722079
+  Name: "FlagUI_France"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2869300749954718711
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4890946126398865318
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_France"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -166.103088
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6932940463165864984
     }
   }
 }
@@ -49901,6 +51068,7 @@ Objects {
   ChildIds: 10789362882029796796
   ChildIds: 8645385176235943643
   ChildIds: 5322485556211332534
+  ChildIds: 3132417726544215085
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -49935,6 +51103,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 3132417726544215085
+  Name: "FlagUI_UK"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11396315262596022870
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12953174708955547537
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UK"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2407601774736265560
     }
   }
 }
@@ -51947,6 +53155,8 @@ Objects {
   ChildIds: 9131267105307582085
   ChildIds: 7597412069415485535
   ChildIds: 12185549389045514062
+  ChildIds: 10821947951774223387
+  ChildIds: 13021269984329448005
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -51981,6 +53191,103 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 13021269984329448005
+  Name: "FlagUI_Russia"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15227456082461669396
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1737038005221732089
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_Russia"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 20.6859741
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16490220422039223235
+    }
+  }
+}
+Objects {
+  Id: 10821947951774223387
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15227456082461669396
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -105.659
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10263921973119671546
+      value {
+        Overrides {
+          Name: "UIX"
+          Float: -1.0303545
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
     }
   }
 }
@@ -55022,6 +56329,7 @@ Objects {
   ChildIds: 13895075093541876192
   ChildIds: 5015632992202679852
   ChildIds: 13468546101016613269
+  ChildIds: 15947033871136548749
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -55056,6 +56364,48 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 15947033871136548749
+  Name: "FlagUI_UK"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5312097040763194977
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12953174708955547537
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UK"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2407601774736265560
     }
   }
 }
@@ -57061,6 +58411,7 @@ Objects {
   ChildIds: 13269422263586439098
   ChildIds: 5693700791414385988
   ChildIds: 217739735564974643
+  ChildIds: 16129071448533580702
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -57095,6 +58446,46 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 16129071448533580702
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13713575566332327758
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
     }
   }
 }
@@ -59099,6 +60490,7 @@ Objects {
   ChildIds: 7876967952899553819
   ChildIds: 11148227166343432085
   ChildIds: 8153097948946962175
+  ChildIds: 7217969077210507202
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -59132,6 +60524,48 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 7217969077210507202
+  Name: "FlagUI_UnitedStates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6663332593545662611
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4172775757534723376
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FlagUI_UnitedStates"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8870593742398149532
     }
   }
 }
