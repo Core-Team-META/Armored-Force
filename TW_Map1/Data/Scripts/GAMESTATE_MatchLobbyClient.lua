@@ -154,7 +154,8 @@ function UpdateTable(exclude)
 			
 			playerName.text = p.name
 			if p.clientUserData.currentTankData then
-				tankName.text = p.clientUserData.currentTankData.name
+			 	local teirValue = p.clientUserData.currentTankData.teir
+				tankName.text = p.clientUserData.currentTankData.name .. " [T" .. tostring(teirValue) .. "]"
 			else 
 				tankName.text = ""
 			end
