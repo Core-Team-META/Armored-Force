@@ -386,6 +386,12 @@ Objects {
         SelfId: 1684701547217154315
       }
     }
+    Overrides {
+      Name: "cs:GameState"
+      ObjectReference {
+        SelfId: 16554756392297303216
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
