@@ -345,9 +345,9 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 119
+          Width: 111
           Height: 60
-          UIX: -130
+          UIX: -129
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -355,7 +355,7 @@ Assets {
           }
           UseParentHeight: true
           Text {
-            Label: "TankName 123"
+            Label: "TankName 123 [T4]"
             Color {
               R: 1
               G: 0.778543055
@@ -364,7 +364,7 @@ Assets {
             }
             Size: 15
             Justification {
-              Value: "mc:etextjustify:center"
+              Value: "mc:etextjustify:left"
             }
             AutoWrapText: true
             Font {
@@ -427,7 +427,7 @@ Assets {
         Control {
           Width: 60
           Height: 14
-          UIX: 25
+          UIX: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -492,7 +492,7 @@ Assets {
         Control {
           Width: 60
           Height: 14
-          UIX: 25
+          UIX: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

@@ -595,14 +595,22 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 		confirmButtonFunction = "EQUIP"
 	else
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_ON
-		if(cost > 0 or silverCost > 0) then
-			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
-			confirmButtonFunction = "CAN'T AFFORD"
+		if(prereqs[1] and not prereqs[1].usable) or (prereqs[2] and not prereqs[1].usable) then
+			CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
+			confirmButtonFunction = ""
 		else
 			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "PURCHASE"
 			confirmButtonFunction = "PURCHASE"
+	
+			if(cost > 0 or silverCost > 0) then
+				CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
+				confirmButtonFunction = "CAN'T AFFORD"
+			end
 		end
 	end
+
+
+
 
 	if not tankData.purchasedTank and tankData.purchaseCurrencyName == "Gold" then
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
@@ -1212,9 +1220,7 @@ function GetPrerequisiteRPValues(id)
 				for i, preReq1Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 					if(tostring(preReq1Progress.id) == tostring(preReq1Id)) then
 						prerequisite1.id = preReq1Progress.id
-						if(tonumber(preReq1Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
-						or tonumber(preReq1Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
-						or tonumber(preReq1Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+						if preReq1Progress.purchased then
 							prerequisite1.usable = true				
 						end	
 					end	
@@ -1229,9 +1235,7 @@ function GetPrerequisiteRPValues(id)
 				for i, preReq2Progress in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 					if(tostring(preReq2Progress.id) == tostring(preReq2Id)) then
 						prerequisite2.id = preReq2Progress.id
-						if(tonumber(preReq2Progress.weaponProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
-						or tonumber(preReq2Progress.armorProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED
-						or tonumber(preReq2Progress.engineProgress) == Constants_API.UPGRADE_PROGRESS.PURCHASED) then
+						if preReq2Progress.purchased then
 							prerequisite2.usable = true
 								
 						end
