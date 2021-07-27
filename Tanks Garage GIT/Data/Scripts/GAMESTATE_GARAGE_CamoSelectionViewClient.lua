@@ -141,7 +141,7 @@ function AssignPreviewText()
 	if selectedTankResource < 10 then
 		selectedTank = "0" .. selectedTank
 	end
-
+	
 	tankEntries[selectedTank].previewText:SetColor(selectedColor)
 	tankEntries[selectedTank].previewText.text = "Previewing Tank"
 	
