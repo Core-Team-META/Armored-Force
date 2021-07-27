@@ -40,12 +40,15 @@ local function SortByTier(tankA, tankB)
 end
 
 function Init()
+    if Environment.IsSinglePlayerPreview() then
+        Task.Wait(3)
+    end
+    if isLoaded then
+        return
+    end
     ClearPanel()
     while not next(LOCAL_PLAYER.clientUserData.techTreeProgress) do
         Task.Wait()
-    end
-    if Environment.IsSinglePlayerPreview() then
-        Task.Wait(3)
     end
     local tankCount = 0
 

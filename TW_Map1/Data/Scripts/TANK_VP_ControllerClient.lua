@@ -128,9 +128,12 @@ function SetClientData()
 	driver.clientUserData.currentTankData.type = tankControllerServer:GetCustomProperty("Type")
 	driver.clientUserData.currentTankData.id = tankControllerServer:GetCustomProperty("Identifier")
 	driver.clientUserData.currentTankData.name = tankControllerServer:GetCustomProperty("Name")
+	driver.clientUserData.currentTankData.teir = tankControllerServer:GetCustomProperty("TierValue")
 	driver.clientUserData.currentTankData.viewRange = tankControllerServer:GetCustomProperty("ViewRange")
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
+
+	
 	
 	Events.Broadcast("EquippedTankDataSet", nil)
 	Events.Broadcast("INITIALIZE_SKIN", driver)
