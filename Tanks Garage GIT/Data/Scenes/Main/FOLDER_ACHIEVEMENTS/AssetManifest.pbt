@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4896061093527729513
+  Name: "Chest Coins Opening 03 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_chest_coins_opening_03_Cue_ref"
+  }
+}
+Assets {
   Id: 2604353830693238371
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
