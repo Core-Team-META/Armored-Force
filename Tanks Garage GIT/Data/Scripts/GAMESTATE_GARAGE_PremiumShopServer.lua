@@ -34,6 +34,8 @@ end
 
 function PurchasePremiumTank(player, tankId)
 
+	print("recieved purchase attempt")
+
 	local cost = nil
 
 	for x, t in ipairs(techTreeContents:GetChildren()) do
@@ -45,6 +47,7 @@ function PurchasePremiumTank(player, tankId)
 	
 	if not cost or cost > player:GetResource(CONSTANTS_API.GOLD) then
 		Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, false)
+		print("purchase failed")
 		return
 	end
 	
@@ -59,6 +62,7 @@ function PurchasePremiumTank(player, tankId)
 			t.engineProgress = CONSTANTS_API.UPGRADE_PROGRESS.PURCHASED
 			
 			Events.BroadcastToPlayer(player, "PremTankPurchased", tankId, true)
+			print("purchase passed")
 			
 			return
 		end

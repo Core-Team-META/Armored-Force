@@ -92,7 +92,7 @@ function UnpackChallengeInfo(player)
 		player.serverUserData.CHALLENGES = challengeString
 	end
 	
-	print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
+	--print("UNPACKED CHALLENGES:" .. player.serverUserData.CHALLENGES)	
 end
 
 function RepackChallengeInfo(player)
@@ -107,7 +107,7 @@ function RepackChallengeInfo(player)
 	
 	player.serverUserData.CHALLENGES = challengeString
 	
-	print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
+	--print("REPACKED CHALLENGES: " .. player.serverUserData.CHALLENGES)
 	
 end
 
@@ -123,12 +123,12 @@ function SetChallengeProgressInfo(player)
 
 	UnpackChallengeInfo(player)
 	
-	print(player.serverUserData.LOGIN)
+	--print(player.serverUserData.LOGIN)
 		
-	print("time left: " .. tostring(tonumber(player.serverUserData.LOGIN) - tonumber(os.time())))
+	--print("time left: " .. tostring(tonumber(player.serverUserData.LOGIN) - tonumber(os.time())))
 		
 	if  tonumber(player.serverUserData.LOGIN) - tonumber(os.time()) <= 0 then
-		print("Reset reached")
+		--print("Reset reached")
 		for i = 1, 4 do
 			player.serverUserData.CHALLENGE[i].progress = 0
 		end
@@ -152,7 +152,7 @@ function Tick()
 	for x, player in ipairs(Game.GetPlayers()) do
 		if Object.IsValid(player) and playerChallengeCheck[player.id] then			
 			if  tonumber(player.serverUserData.LOGIN) - tonumber(os.time()) <= 0 then
-				print("Reset reached")
+				--print("Reset reached")
 				for i = 1, 4 do
 					player.serverUserData.CHALLENGE[i].progress = 0
 				end

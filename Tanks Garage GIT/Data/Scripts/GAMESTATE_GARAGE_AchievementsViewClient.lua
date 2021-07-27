@@ -100,8 +100,8 @@ function OnChallengeInfoChanged(serverScript, property)
 		local infoString = string.sub(playerDataFound, string.find(playerDataFound, ":") + 1, string.find(playerDataFound, ",") - 1)
 		local loginString = string.sub(playerDataFound, string.find(playerDataFound, ",") + 1, playerDataFound.size)
 		
-		print(infoString)
-		print(loginString)
+		--print(infoString)
+		--print(loginString)
 		
 		UnpackChallengeInfo(infoString)
 		
