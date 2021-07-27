@@ -27098,7 +27098,7 @@ Objects {
       }
     }
     Text {
-      Label: "Tank catched fire"
+      Label: "Tank caught fire"
       Color {
         R: 0.789999962
         A: 1
