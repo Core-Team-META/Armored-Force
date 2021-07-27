@@ -244,6 +244,8 @@ function SetTankModifications()
 		modifications = driver.serverUserData.TankUpgradeOverride 
 	end
 	
+	driver.serverUserData.TankUpgradeOverride = nil
+	
 	if modifications[1] == 2 then
 		reloadTime = upgradedReload
 		projectileDamage = upgradedDamage
