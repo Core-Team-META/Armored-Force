@@ -595,14 +595,22 @@ function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 		confirmButtonFunction = "EQUIP"
 	else
 		CONFIRM_TANK_UPGRADE:FindDescendantByName("CONTENT").visibility = Visibility.FORCE_ON
-		if(cost > 0 or silverCost > 0) then
-			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
-			confirmButtonFunction = "CAN'T AFFORD"
+		if(prereqs[1] and not prereqs[1].usable) or (prereqs[2] and not prereqs[1].usable) then
+			CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_OFF
+			confirmButtonFunction = ""
 		else
 			CONFIRM_WINDOW_CONFIRM_BUTTON.text = "PURCHASE"
 			confirmButtonFunction = "PURCHASE"
+	
+			if(cost > 0 or silverCost > 0) then
+				CONFIRM_WINDOW_CONFIRM_BUTTON.text = "CAN'T AFFORD"
+				confirmButtonFunction = "CAN'T AFFORD"
+			end
 		end
 	end
+
+
+
 
 	if not tankData.purchasedTank and tankData.purchaseCurrencyName == "Gold" then
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", "SHOP_MENU", 4)
