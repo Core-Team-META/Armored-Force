@@ -22166,6 +22166,8 @@ Objects {
     }
   }
   ParentId: 16828163004113438837
+  ChildIds: 5275792904385156884
+  ChildIds: 6782988864536570965
   ChildIds: 6029518654002515473
   ChildIds: 7996428728406411765
   ChildIds: 14194620750013595835
@@ -26381,6 +26383,107 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 6782988864536570965
+  Name: "DAILY_COLLECT_FX_HANDLER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4348522999340658744
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BUTTON_CHALLENGE1"
+      ObjectReference {
+        SelfId: 2932622944166098552
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_CHALLENGE2"
+      ObjectReference {
+        SelfId: 7302827586394478633
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_CHALLENGE3"
+      ObjectReference {
+        SelfId: 10332989460304128388
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_CHALLENGE_LOGIN"
+      ObjectReference {
+        SelfId: 5467941689942783654
+      }
+    }
+    Overrides {
+      Name: "cs:ChestCoinsOpening03SFX"
+      ObjectReference {
+        SelfId: 5275792904385156884
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10077457257880940349
+    }
+  }
+}
+Objects {
+  Id: 5275792904385156884
+  Name: "Chest Coins Opening 03 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4348522999340658744
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 4896061093527729513
+    }
+    Volume: 1.2
+    Falloff: -1
+    Radius: -1
   }
 }
 Objects {
