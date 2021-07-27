@@ -199,6 +199,10 @@ function API.GetCosmeticIdString(class, team, skin, bind)
 end
 
 function API.GetTankRPString(id)
+    if not id then
+        warn("ID is Nil, please check id")
+        warn(tostring(CoreDebug.GetStackTrace()))
+    end
     local stringId = tostring(id)
     if(id < 10) then stringId = "0" .. tostring(id) end
     return "T_" .. stringId .. "RP"
