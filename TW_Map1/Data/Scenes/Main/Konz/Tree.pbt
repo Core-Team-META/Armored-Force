@@ -9155,6 +9155,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
+    UIX: 5
     UIY: -3
     RenderTransformPivot {
       Anchor {
@@ -9172,7 +9173,7 @@ Objects {
       }
       Size: 20
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
       Font {
@@ -9427,6 +9428,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
+    UIX: -5
     UIY: -3
     RenderTransformPivot {
       Anchor {
@@ -9444,7 +9446,7 @@ Objects {
       }
       Size: 20
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:right"
       }
       AutoWrapText: true
       Font {
