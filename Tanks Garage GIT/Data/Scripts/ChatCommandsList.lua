@@ -176,6 +176,7 @@ commands = {
                     number = tonumber(section)
                     if number and number > 0 and number < 34 then
                         Events.Broadcast("SET_EQUIPPED_TANK", player, section)
+                        Events.BroadcastToPlayer(player, "CHANGE_EQUIPPED_TANK", section)
                         return
                     end
                 elseif section == "0" then
