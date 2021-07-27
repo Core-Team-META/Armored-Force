@@ -77,7 +77,7 @@ Objects {
       }
       VoiceChatSettings {
         VoiceChatMode {
-          Value: "mc:evoicechatmode:none"
+          Value: "mc:evoicechatmode:all"
         }
         VoiceChannelType {
           Value: "mc:evoicechanneltype:normal"
