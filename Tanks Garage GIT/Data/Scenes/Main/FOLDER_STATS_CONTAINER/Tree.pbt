@@ -3728,9 +3728,9 @@ Objects {
         Id: 7957816731913452808
       }
       Color {
-        R: 0.00402471703
-        G: 0.00477695325
-        B: 0.00749903172
+        R: 0.00570396893
+        G: 0.00749903172
+        B: 0.00402471703
         A: 1
       }
       TeamSettings {
@@ -4010,7 +4010,6 @@ Objects {
   ChildIds: 13998078360168063873
   ChildIds: 568200113599275412
   ChildIds: 7910412778424350197
-  ChildIds: 16740689055145453617
   ChildIds: 836272505575289972
   ChildIds: 17612463483518947645
   ChildIds: 3211207933358154210
@@ -4184,6 +4183,7 @@ Objects {
     }
   }
   ParentId: 15875466116457264793
+  ChildIds: 1345185518849237190
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4261,6 +4261,76 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1345185518849237190
+  Name: "SIlverIcon"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6676964626461435542
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 25
+    Height: 25
+    UIX: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 6262982467505051120
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 1
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -6657,6 +6727,7 @@ Objects {
     }
   }
   ParentId: 3203136235012370613
+  ChildIds: 13678447873186245996
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6734,6 +6805,80 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13678447873186245996
+  Name: "SIlverIcon"
+  Transform {
+    Location {
+      X: -1370
+      Y: 13115
+      Z: 855
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5674879206461635913
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 25
+    Height: 25
+    UIX: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 16622528590838133631
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 1
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -9329,74 +9474,10 @@ Objects {
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
+      OutlineColor {
+        A: 1
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 16740689055145453617
-  Name: "TEXT_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18074728313276874731
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 200
-    Height: 38
-    UIY: 66.8059845
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "INSUFFICIENT RESOURCES"
-      Color {
-        A: 0.512
-      }
-      Size: 16
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 841534158063459245
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -9736,7 +9817,6 @@ Objects {
   ChildIds: 14588344468350588518
   ChildIds: 10862614065519313185
   ChildIds: 10047362298477860530
-  ChildIds: 15250409013672645086
   ChildIds: 16141754031709191351
   ChildIds: 664945837316322694
   ChildIds: 17676809166344565267
@@ -9910,6 +9990,7 @@ Objects {
     }
   }
   ParentId: 13065575258801663149
+  ChildIds: 13365086751460619882
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9987,6 +10068,80 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13365086751460619882
+  Name: "SIlverIcon"
+  Transform {
+    Location {
+      X: -1370
+      Y: 13115
+      Z: 855
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5903638294747442999
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 25
+    Height: 25
+    UIX: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 6262982467505051120
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 1
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -12383,6 +12538,7 @@ Objects {
     }
   }
   ParentId: 12932815211150714575
+  ChildIds: 10713228961605640327
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12460,6 +12616,80 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10713228961605640327
+  Name: "SIlverIcon"
+  Transform {
+    Location {
+      X: -1370
+      Y: 13115
+      Z: 855
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11836512776401192274
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 25
+    Height: 25
+    UIX: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 16622528590838133631
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 1
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -15055,74 +15285,10 @@ Objects {
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
+      OutlineColor {
+        A: 1
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15250409013672645086
-  Name: "TEXT_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18413179225692078133
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 200
-    Height: 38
-    UIY: 66.8059845
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "INSUFFICIENT RESOURCES"
-      Color {
-        A: 0.512
-      }
-      Size: 16
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 841534158063459245
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -15812,9 +15978,9 @@ Objects {
         Id: 7957816731913452808
       }
       Color {
-        R: 0.00402471703
-        G: 0.00477695325
-        B: 0.00749903172
+        R: 0.00570396893
+        G: 0.00749903172
+        B: 0.00402471703
         A: 1
       }
       TeamSettings {
@@ -16094,7 +16260,6 @@ Objects {
   ChildIds: 7943553056209458132
   ChildIds: 15126175349893684355
   ChildIds: 12712765760079033156
-  ChildIds: 14531556410551394670
   ChildIds: 11040181685001848325
   ChildIds: 6643261363268457153
   ChildIds: 12843003531501044117
@@ -16268,6 +16433,7 @@ Objects {
     }
   }
   ParentId: 1747629432041036502
+  ChildIds: 3210065121886517900
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -16345,6 +16511,80 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3210065121886517900
+  Name: "SIlverIcon"
+  Transform {
+    Location {
+      X: -1370
+      Y: 13115
+      Z: 855
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11503726780350699787
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 25
+    Height: 25
+    UIX: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 6262982467505051120
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 1
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -18741,6 +18981,7 @@ Objects {
     }
   }
   ParentId: 1444687962645874877
+  ChildIds: 13120500996292398995
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -18818,6 +19059,80 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13120500996292398995
+  Name: "SIlverIcon"
+  Transform {
+    Location {
+      X: -1370
+      Y: 13115
+      Z: 855
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10064033277491846023
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 25
+    Height: 25
+    UIX: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 16622528590838133631
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        Y: 1
+      }
+      ScreenshotIndex: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -21413,74 +21728,10 @@ Objects {
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
+      OutlineColor {
+        A: 1
       }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 14531556410551394670
-  Name: "TEXT_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1292088033410879574
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 200
-    Height: 38
-    UIY: 66.8059845
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "INSUFFICIENT RESOURCES"
-      Color {
-        A: 0.512
-      }
-      Size: 16
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 841534158063459245
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -22170,9 +22421,9 @@ Objects {
         Id: 7957816731913452808
       }
       Color {
-        R: 0.00402471703
-        G: 0.00477695325
-        B: 0.00749903172
+        R: 0.00570396893
+        G: 0.00749903172
+        B: 0.00402471703
         A: 1
       }
       TeamSettings {
