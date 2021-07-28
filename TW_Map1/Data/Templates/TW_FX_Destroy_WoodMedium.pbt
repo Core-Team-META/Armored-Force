@@ -117,7 +117,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 2.70526314
+            Float: 2.48369789
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.541152
           }
         }
         Collidable_v2 {

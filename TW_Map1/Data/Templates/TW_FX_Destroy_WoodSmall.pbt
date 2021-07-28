@@ -117,7 +117,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 1.61714685
+            Float: 1.50169778
           }
         }
         Collidable_v2 {
@@ -166,6 +166,10 @@ Assets {
           Overrides {
             Name: "bp:Sort Priority Adjustment"
             Int: 1
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 1.25
           }
         }
         Collidable_v2 {
