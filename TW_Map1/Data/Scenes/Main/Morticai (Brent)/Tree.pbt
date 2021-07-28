@@ -1,6 +1,95 @@
 Name: "Morticai (Brent)"
 RootId: 17846127275428705935
 Objects {
+  Id: 14908858747236097820
+  Name: "Outline Object"
+  Transform {
+    Location {
+      X: 21907.4766
+      Y: -45743.7188
+      Z: 119.08522
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.1
+      Y: 1.1
+      Z: 1.1
+    }
+  }
+  ParentId: 17846127275428705935
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Object To Outline"
+      ObjectReference {
+        SelfId: 16327086437190865521
+      }
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 2
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Outline Channel"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Thickness"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Max Distance Thickness"
+      Float: 4
+    }
+    Overrides {
+      Name: "bp:Max Distance"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Min Distance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Dynamic Thickness"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Hierarchy Discovery Depth"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Show Behind Objects"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5210035358541266842
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
   Id: 1801463148882709744
   Name: "FirstVictory"
   Transform {
