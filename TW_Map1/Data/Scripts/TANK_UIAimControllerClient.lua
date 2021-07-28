@@ -32,6 +32,7 @@ local previousDistance = 0
 local distanceMaxed = false
 
 local cannon = nil
+local previousHighlights = nil
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -56,6 +57,7 @@ local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 		
 	if raycastPoint then
 		destination = raycastPoint:GetImpactPosition()
+		CheckEnemyTank(raycastPoint)
 		previousDistance = tonumber(math.ceil((destination - cannon:GetWorldPosition()).size))
 		distanceMaxed = false
 	else
@@ -129,6 +131,29 @@ function UpdatePointer()
 		truePointer.visibility = Visibility.FORCE_OFF
 	end
 
+end
+
+function CheckEnemyTank(raycastResult)
+	
+	local possibleEnemy = raycastResult.other
+	
+	if Object.IsValid(possibleEnemy) and ((possibleEnemy.type == "TreadedVehicle") or (possibleEnemy.type == "Vehicle")) then
+		local enemyDriver = possibleEnemy.driver
+		local enemyOutline = enemyDriver.clientUserData.currentTankData.enemyOutline
+		
+		if Object.IsValid(previousHighlights) then
+			previousHighlights:SetSmartProperty("Enabled", false)
+		end
+		
+		enemyOutline:SetSmartProperty("Enabled", true)
+		
+		previousHighlights = enemyOutline
+	else 
+		if Object.IsValid(previousHighlights) then
+			previousHighlights:SetSmartProperty("Enabled", false)
+		end
+	end
+	
 end
 
 function TransitionCameras(oldCamera, newCamera)
