@@ -4080,46 +4080,30 @@ Assets {
         ChildIds: 12627026507686041874
         ChildIds: 2416513616002251069
         ChildIds: 187024149089882124
-        ChildIds: 12701371073057327013
-        ChildIds: 2066331882346444403
-        ChildIds: 7087411420534005268
-        ChildIds: 3267044448101414667
-        ChildIds: 8870730687460174367
-        ChildIds: 4116374204393536321
         ChildIds: 5601471782347054579
         ChildIds: 18149971728304754112
         ChildIds: 2610427778573218488
         ChildIds: 7024136529479016761
         ChildIds: 11474031338818505939
-        ChildIds: 14773432820950072734
-        ChildIds: 949711888552481186
         ChildIds: 5345503665491576506
         ChildIds: 17075144283493344485
-        ChildIds: 5844262788754885337
         ChildIds: 12861772653854908326
-        ChildIds: 13012684095533433942
-        ChildIds: 263743396721704518
         ChildIds: 7254875123101974563
         ChildIds: 9285111843246510209
-        ChildIds: 13159328439783221346
         ChildIds: 14314120496472680275
-        ChildIds: 15625296305783053989
         ChildIds: 2690694751007912261
         ChildIds: 12826868558464770010
         ChildIds: 11678311687948780522
         ChildIds: 2893621389650679671
-        ChildIds: 4041273358041055090
         ChildIds: 13106376136179873263
         ChildIds: 12527712621877966581
-        ChildIds: 12468785702027673367
-        ChildIds: 6372479834613023828
         ChildIds: 11923758669372605561
         ChildIds: 17168598489098937444
         ChildIds: 16778633906736252797
         ChildIds: 17679119977644818717
         ChildIds: 3968878033979589255
         ChildIds: 8719411318347832289
-        ChildIds: 14100015624641773524
+        ChildIds: 12583337465093449488
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -4337,350 +4321,6 @@ Assets {
           Overrides {
             Name: "bp:Shape Index"
             Int: 0
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 12701371073057327013
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -37.2460938
-            Y: 157.47998
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 9.65934214e-06
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.448795259
-            Y: 0.517980456
-            Z: 0.050231047
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 0
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 2066331882346444403
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -37.2460938
-            Y: -372.862793
-          }
-          Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: -179.999939
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.448795259
-            Y: 0.517980456
-            Z: 0.050231047
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 0
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 7087411420534005268
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 57.8037109
-            Y: -372.862793
-          }
-          Rotation {
-            Pitch: -6.83018879e-06
-            Yaw: -179.999939
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.448795259
-            Y: 0.517980456
-            Z: 0.050231047
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 0
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 3267044448101414667
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 57.8027344
-            Y: 157.47998
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 9.65934214e-06
-            Roll: 89.9999542
-          }
-          Scale {
-            X: 0.448795259
-            Y: 0.517980456
-            Z: 0.050231047
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 0
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 8870730687460174367
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -333.362305
-            Y: -296.671875
-            Z: 484.564087
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -35.2644958
-            Roll: -35.264679
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.0142064644
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 4116374204393536321
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -333.362305
-            Y: -296.671875
-            Z: 582.033936
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -19.4712086
-            Roll: -19.4713745
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.0142064644
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
           }
         }
         Collidable_v2 {
@@ -4996,122 +4636,6 @@ Assets {
         }
       }
       Objects {
-        Id: 14773432820950072734
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -330.97168
-            Y: 150.568848
-            Z: 582.033936
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -35.2644958
-            Roll: -35.264679
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778001
-            Z: 0.0455858558
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 949711888552481186
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -330.97168
-            Y: 150.568848
-            Z: 337.174561
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -19.4712086
-            Roll: -19.4713745
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778001
-            Z: 0.0455858558
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 5345503665491576506
         Name: "Decal Wood Ends Variations"
         Transform {
@@ -5228,64 +4752,6 @@ Assets {
         }
       }
       Objects {
-        Id: 5844262788754885337
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -330.97168
-            Y: 150.568848
-            Z: 45.6478271
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -35.2644958
-            Roll: -35.264679
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778001
-            Z: 0.0455858558
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 12861772653854908326
         Name: "Decal Wood Ends Variations"
         Transform {
@@ -5293,122 +4759,6 @@ Assets {
             X: 331.739258
             Y: 156.141113
             Z: 484.564087
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -35.2644234
-            Roll: 144.735321
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.122223876
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 13012684095533433942
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 331.739258
-            Y: 156.141113
-            Z: 582.033936
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -6.72134638
-            Roll: 173.278442
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.122223876
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 263743396721704518
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 331.739258
-            Y: 156.141113
-            Z: 337.174561
           }
           Rotation {
             Pitch: 90
@@ -5576,64 +4926,6 @@ Assets {
         }
       }
       Objects {
-        Id: 13159328439783221346
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 331.739258
-            Y: 156.141113
-            Z: 45.6478271
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -6.72134638
-            Roll: 173.278442
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.122223876
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 14314120496472680275
         Name: "Decal Wood Ends Variations"
         Transform {
@@ -5646,64 +4938,6 @@ Assets {
             Pitch: 90
             Yaw: -6.7214179
             Roll: 173.278412
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.122223876
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 15625296305783053989
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: 332.652344
-            Y: -291.098145
-            Z: 582.033936
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -13.2627096
-            Roll: 166.737137
           }
           Scale {
             X: 0.572958052
@@ -5982,64 +5216,6 @@ Assets {
         }
       }
       Objects {
-        Id: 4041273358041055090
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -289.602539
-            Y: 205.958496
-            Z: 484.564087
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -14.0362635
-            Roll: 75.9634476
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.122223876
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
         Id: 13106376136179873263
         Name: "Decal Wood Ends Variations"
         Transform {
@@ -6105,122 +5281,6 @@ Assets {
             X: -289.602539
             Y: 205.958496
             Z: 337.174561
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -14.0362635
-            Roll: 75.9634476
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.122223876
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 12468785702027673367
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -289.602539
-            Y: 205.958496
-            Z: 287.925781
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: -16.6992588
-            Roll: 73.3004456
-          }
-          Scale {
-            X: 0.572958052
-            Y: 0.778000891
-            Z: 0.122223876
-          }
-        }
-        ParentId: 12428661930301032294
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Shape Index"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.478000015
-              G: 0.403463691
-              B: 0.293492
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9561757784240598956
-          }
-          TeamSettings {
-          }
-          DecalBP {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 6372479834613023828
-        Name: "Decal Wood Ends Variations"
-        Transform {
-          Location {
-            X: -289.602539
-            Y: 205.958496
-            Z: 143.246216
           }
           Rotation {
             Pitch: 90
@@ -6620,23 +5680,23 @@ Assets {
         }
       }
       Objects {
-        Id: 14100015624641773524
+        Id: 12583337465093449488
         Name: "Decal Wood Ends Variations"
         Transform {
           Location {
-            X: 283.211914
-            Y: 206.871582
-            Z: 45.6478271
+            X: -333.361328
+            Y: -296.671875
+            Z: 484.564087
           }
           Rotation {
             Pitch: 90
-            Yaw: 90
-            Roll: 179.999817
+            Yaw: -35.2644234
+            Roll: -35.2646179
           }
           Scale {
             X: 0.572958052
             Y: 0.778000891
-            Z: 0.122223876
+            Z: 0.0142064644
           }
         }
         ParentId: 12428661930301032294
