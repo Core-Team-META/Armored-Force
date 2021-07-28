@@ -824,6 +824,18 @@ Objects {
         SelfId: 3184754748961175882
       }
     }
+    Overrides {
+      Name: "cs:SFX_PURCHASE_UI"
+      AssetReference {
+        Id: 4641029729553894282
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_ERROR_UI"
+      AssetReference {
+        Id: 8525269059319462214
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

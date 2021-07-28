@@ -1,13 +1,13 @@
 Assets {
-  Id: 4641029729553894282
-  Name: "SFX_PURCHASE_UI"
+  Id: 8077372839145882330
+  Name: "SFX_ACHIEVEMENT_CLAIM_UI"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 6489967892871016729
+      RootId: 11444900008860695606
       Objects {
-        Id: 6489967892871016729
-        Name: "SFX_PURCHASE_UI"
+        Id: 11444900008860695606
+        Name: "SFX_ACHIEVEMENT_CLAIM_UI"
         Transform {
           Scale {
             X: 1
@@ -16,10 +16,9 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 14170133647281652454
-        ChildIds: 4638037000332632649
-        ChildIds: 12774065933147885336
-        Lifespan: 2
+        ChildIds: 10766119767836982043
+        ChildIds: 17759987739599325899
+        ChildIds: 17283824373302247624
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -36,8 +35,8 @@ Assets {
         }
       }
       Objects {
-        Id: 14170133647281652454
-        Name: "Meta Weapon Ammo Pickup 08 SFX"
+        Id: 10766119767836982043
+        Name: "Coin Collect Multiple 01 SFX"
         Transform {
           Location {
           }
@@ -49,7 +48,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6489967892871016729
+        ParentId: 11444900008860695606
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -64,56 +63,18 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 3990497944911644763
+            Id: 10713906467337661817
           }
           AutoPlay: true
-          Pitch: 270.663818
-          Volume: 1.8
-          Falloff: -1
-          Radius: -1
-        }
-      }
-      Objects {
-        Id: 4638037000332632649
-        Name: "Cash Coin Small Collect 01 SFX"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6489967892871016729
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 14459704044780994459
-          }
-          AutoPlay: true
-          Volume: 0.5
+          Volume: 0.782761335
           Falloff: -1
           Radius: -1
           FadeInTime: 0.3
         }
       }
       Objects {
-        Id: 12774065933147885336
-        Name: "Cash Coin Small Register Collect 01 SFX"
+        Id: 17759987739599325899
+        Name: "Purchase Buy Button 05 SFX"
         Transform {
           Location {
           }
@@ -125,7 +86,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6489967892871016729
+        ParentId: 11444900008860695606
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -140,40 +101,78 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 13527376765889505540
+            Id: 6911477928315490229
           }
           AutoPlay: true
-          Volume: 0.7
+          Volume: 0.782761335
+          Falloff: -1
+          Radius: -1
+          FadeInTime: 0.3
+        }
+      }
+      Objects {
+        Id: 17283824373302247624
+        Name: "Metal Shovel Dirt Dig Quick 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11444900008860695606
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 4941829747417813164
+          }
+          AutoPlay: true
+          Volume: 1.10738957
           Falloff: -1
           Radius: -1
         }
       }
     }
     Assets {
-      Id: 3990497944911644763
-      Name: "Meta Weapon Ammo Pickup 08 SFX"
+      Id: 10713906467337661817
+      Name: "Coin Collect Multiple 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_meta_weapon_ammo_pickup_08_Cue_ref"
+        AssetId: "sfx_crunchy_coin_collect_01_Cue_ref"
       }
     }
     Assets {
-      Id: 14459704044780994459
-      Name: "Cash Coin Small Collect 01 SFX"
+      Id: 6911477928315490229
+      Name: "Purchase Buy Button 05 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_cash_coin_small_collect_01_Cue_ref"
+        AssetId: "sfx_buy_button_05_Cue_ref"
       }
     }
     Assets {
-      Id: 13527376765889505540
-      Name: "Cash Coin Small Register Collect 01 SFX"
+      Id: 4941829747417813164
+      Name: "Metal Shovel Dirt Dig Quick 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_cash_coin_small_register_collect_01_Cue_ref"
+        AssetId: "sfx_metal_shovel_dirt_dig_quick_01a_Cue_ref"
       }
     }
     PrimaryAssetId {

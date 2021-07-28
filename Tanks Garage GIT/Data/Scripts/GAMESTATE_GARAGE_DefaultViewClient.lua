@@ -25,6 +25,8 @@ local extinguisherSlot = script:GetCustomProperty("ExtinguisherSlot"):WaitForObj
 local repairKitSlot = script:GetCustomProperty("RepairKitSlot"):WaitForObject()
 
 local AlertDialogBox = script:GetCustomProperty("POP_UP_MESSAGE"):WaitForObject()
+local SFX_PURCHASE_UI = script:GetCustomProperty("SFX_PURCHASE_UI")
+local SFX_ERROR_UI = script:GetCustomProperty("SFX_ERROR_UI")
 
 
 
@@ -135,6 +137,7 @@ function OnPurchaseButtonPressed(button)
 		title:GetChildren()[1].text = "Insufficient Silver"
 		body.text = "Not enough Silver to purchase this item."
 		AlertDialogBox.visibility = Visibility.FORCE_ON
+		World.SpawnAsset(SFX_ERROR_UI)
 	else
 		local body = AlertDialogBox:GetCustomProperty("BODY_TEXT"):WaitForObject()
 		local title = AlertDialogBox:GetCustomProperty("TITLE_SECONDARY"):WaitForObject()
@@ -143,6 +146,7 @@ function OnPurchaseButtonPressed(button)
 		body.text = "You have successfully purchased a new item."
 		AlertDialogBox.visibility = Visibility.FORCE_ON
 		ReliableEvents.BroadcastToServer("PURCHASE_CONSUME", button.clientUserData.type)
+		World.SpawnAsset(SFX_PURCHASE_UI)
 	end
 end
 
@@ -160,9 +164,9 @@ function OnResourceChanged(player, resource, amount)
 		consumableSlots.extinguisher.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
 		consumableSlots.repairKit.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.RED)
 
-		consumableSlots.treads.purchaseButton.isInteractable = false
-		consumableSlots.extinguisher.purchaseButton.isInteractable = false
-		consumableSlots.repairKit.purchaseButton.isInteractable = false
+		--consumableSlots.treads.purchaseButton.isInteractable = false
+		--consumableSlots.extinguisher.purchaseButton.isInteractable = false
+		--consumableSlots.repairKit.purchaseButton.isInteractable = false
 
 	elseif resource == CONSTANTS_API.SILVER and amount >= 100 then
 		consumableSlots.treads.idle:FindDescendantByName("BUTTONTEXT"):SetColor(Color.WHITE)
