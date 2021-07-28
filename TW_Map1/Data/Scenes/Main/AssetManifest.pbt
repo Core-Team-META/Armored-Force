@@ -48,15 +48,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12478635504539825254
-  Name: "Clover Patch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_clover_patch_001"
-  }
-}
-Assets {
   Id: 11182969111770509228
   Name: "Cliff 02"
   PlatformAssetType: 2
