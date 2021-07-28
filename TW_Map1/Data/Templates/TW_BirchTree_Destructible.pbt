@@ -10,12 +10,12 @@ Assets {
         Name: "TW_BirchTree_Destructible"
         Transform {
           Scale {
-            X: 0.840592
-            Y: 0.840592
-            Z: 0.840592
+            X: 1.18545437
+            Y: 1.18545437
+            Z: 1.18545437
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4201784248664273807
         ChildIds: 3464302058630838082
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46,6 +46,7 @@ Assets {
         }
         ParentId: 14766061465847274198
         ChildIds: 5740111222183065741
+        ChildIds: 5158734024377583514
         ChildIds: 7430713644516181526
         ChildIds: 17421692208922218527
         Collidable_v2 {
@@ -153,6 +154,12 @@ Assets {
               SubObjectId: 17421692208922218527
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 5158734024377583514
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -225,6 +232,37 @@ Assets {
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5158734024377583514
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3464302058630838082
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
           IsGroup: true

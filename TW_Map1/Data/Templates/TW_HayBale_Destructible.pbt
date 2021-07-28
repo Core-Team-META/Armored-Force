@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4689494391382931675
+        ParentId: 4009636171629317408
         ChildIds: 2700043845878209264
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -47,6 +47,7 @@ Assets {
         ParentId: 3822032582495142433
         ChildIds: 3095641107315436390
         ChildIds: 11837833187728185875
+        ChildIds: 9579709223043517624
         ChildIds: 10092158849475795203
         ChildIds: 3439175302792502438
         Collidable_v2 {
@@ -150,6 +151,12 @@ Assets {
             Name: "cs:RemoveGroup"
             ObjectReference {
               SubObjectId: 3439175302792502438
+            }
+          }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 9579709223043517624
             }
           }
         }
@@ -276,6 +283,37 @@ Assets {
         }
         Relevance {
           Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 9579709223043517624
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2700043845878209264
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {

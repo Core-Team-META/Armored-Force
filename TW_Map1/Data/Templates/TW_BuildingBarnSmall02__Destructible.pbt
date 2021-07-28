@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 7430710741170581748
         ChildIds: 2516186016794540801
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46,6 +46,7 @@ Assets {
         }
         ParentId: 4328919493911332835
         ChildIds: 10019859388858287814
+        ChildIds: 3404800470233583704
         ChildIds: 4739843848998540757
         ChildIds: 13572067991732455286
         Collidable_v2 {
@@ -154,6 +155,12 @@ Assets {
               SubObjectId: 13572067991732455286
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 3404800470233583704
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -233,10 +240,13 @@ Assets {
         }
       }
       Objects {
-        Id: 4739843848998540757
-        Name: "DebrisGroup"
+        Id: 3404800470233583704
+        Name: "LeftBehindGroup"
         Transform {
           Location {
+            X: -179.904694
+            Y: 197.355087
+            Z: 109.499512
           }
           Rotation {
           }
@@ -247,147 +257,48 @@ Assets {
           }
         }
         ParentId: 2516186016794540801
-        ChildIds: 15982824372895959495
-        ChildIds: 15222513616762456834
-        ChildIds: 4925001140554940827
-        ChildIds: 17932474185092657086
-        ChildIds: 13990319707072607497
-        ChildIds: 13269563531627675328
-        ChildIds: 18401579661016152582
-        ChildIds: 10385705531275546292
-        ChildIds: 14294689278824862901
-        ChildIds: 7330552298062283211
+        ChildIds: 14019647214747127586
         ChildIds: 10534534659478983225
-        ChildIds: 4861084965140075755
-        ChildIds: 9511450891005906080
         ChildIds: 14191953120678663358
-        ChildIds: 951350898830027371
-        ChildIds: 3188376469152855650
-        ChildIds: 5725911453154304408
         ChildIds: 17805873852035063090
         ChildIds: 4810633326559075125
-        ChildIds: 3677716036005143975
-        ChildIds: 3187503210646070845
-        ChildIds: 12398258298731448988
-        ChildIds: 5643794558689598735
-        ChildIds: 13197654062402511127
-        ChildIds: 13200691978228937739
-        ChildIds: 2712135900815495460
-        ChildIds: 14019647214747127586
-        ChildIds: 16978819781617560693
-        ChildIds: 11510563612161099950
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
           IsGroup: true
         }
       }
       Objects {
-        Id: 15982824372895959495
-        Name: "Large Wood Board 8m"
-        Transform {
-          Location {
-            X: -205.834473
-            Z: 452.563232
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: 76.5042496
-            Roll: -13.4957581
-          }
-          Scale {
-            X: 0.249488726
-            Y: 1.00000012
-            Z: 2.19999957
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.558133185
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.204804823
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18052318672521571529
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 15222513616762456834
+        Id: 14019647214747127586
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -21.7519531
-            Y: 0.05078125
-            Z: 112.3862
+            X: 144.904297
+            Y: -242.351562
+            Z: 1.2298584
           }
           Rotation {
-            Pitch: 90
-            Yaw: 30.9637699
-            Roll: -59.0357361
+            Pitch: -90
+            Yaw: 34.9920273
+            Roll: 55.0079041
           }
           Scale {
-            X: 0.439062536
-            Y: 0.908413708
-            Z: 1
+            X: -0.453614384
+            Y: 0.999999881
+            Z: 0.999999881
           }
         }
-        ParentId: 4739843848998540757
+        ParentId: 3404800470233583704
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -447,25 +358,26 @@ Assets {
         }
       }
       Objects {
-        Id: 4925001140554940827
+        Id: 10534534659478983225
         Name: "Urban Plank Debris 04"
         Transform {
           Location {
-            X: -230.721924
-            Y: 154.895142
-            Z: 735.721802
+            X: -67.8984375
+            Y: 204.208984
+            Z: 642.796631
           }
           Rotation {
-            Yaw: -90
+            Pitch: 6.83018879e-06
+            Yaw: -90.0000076
             Roll: -135
           }
           Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
+            X: 0.999999881
+            Y: 2.49999952
+            Z: 0.999999881
           }
         }
-        ParentId: 4739843848998540757
+        ParentId: 3404800470233583704
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -496,6 +408,277 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+      }
+      Objects {
+        Id: 14191953120678663358
+        Name: "Urban Plank Debris 04"
+        Transform {
+          Location {
+            X: -145.832031
+            Y: 10.8300781
+            Z: 637.327698
+          }
+          Rotation {
+            Pitch: 44.9784508
+            Yaw: -2.21344733
+            Roll: 178.435089
+          }
+          Scale {
+            X: 0.863558829
+            Y: 15.9271889
+            Z: 0.999997258
+          }
+        }
+        ParentId: 3404800470233583704
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7360602162123997816
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.410297483
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 9.3152
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4096954105294154559
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 17805873852035063090
+        Name: "Cube"
+        Transform {
+          Location {
+            X: -93.0878906
+            Y: 218.660156
+            Z: 0.000122070312
+          }
+          Rotation {
+            Yaw: 90.0000458
+            Roll: 2.66588984e-07
+          }
+          Scale {
+            X: -0.49999994
+            Y: 0.49999994
+            Z: 6.36281633
+          }
+        }
+        ParentId: 3404800470233583704
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.586388409
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.125
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16374150260036817633
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4810633326559075125
+        Name: "Cube"
+        Transform {
+          Location {
+            X: 161.912109
+            Y: -191.339844
+            Z: 193.02478
+          }
+          Rotation {
+            Pitch: -84.7724915
+            Yaw: 89.9977875
+            Roll: 0.000206158438
+          }
+          Scale {
+            X: -0.599999905
+            Y: 0.49999994
+            Z: 3.90000033
+          }
+        }
+        ParentId: 3404800470233583704
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.655000031
+              G: 0.655000031
+              B: 0.655000031
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5028462544160077647
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.243000016
+              G: 0.243000016
+              B: 0.243000016
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.45040831
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.163204163
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 16374150260036817633
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4739843848998540757
+        Name: "DebrisGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2516186016794540801
+        ChildIds: 17932474185092657086
+        ChildIds: 13990319707072607497
+        ChildIds: 13269563531627675328
+        ChildIds: 7330552298062283211
+        ChildIds: 4861084965140075755
+        ChildIds: 9511450891005906080
+        ChildIds: 3188376469152855650
+        ChildIds: 5725911453154304408
+        ChildIds: 3677716036005143975
+        ChildIds: 3187503210646070845
+        ChildIds: 12398258298731448988
+        ChildIds: 5643794558689598735
+        ChildIds: 13197654062402511127
+        ChildIds: 13200691978228937739
+        ChildIds: 2712135900815495460
+        ChildIds: 16978819781617560693
+        ChildIds: 11510563612161099950
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
@@ -656,164 +839,6 @@ Assets {
         }
       }
       Objects {
-        Id: 18401579661016152582
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -47.4580078
-            Y: -48.7124023
-            Z: 552.028503
-          }
-          Rotation {
-            Pitch: -3.05175781e-05
-            Yaw: 89.9999466
-            Roll: 134.999985
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 526843540183677030
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10385705531275546292
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -81.9602051
-            Y: 155.039551
-            Z: 587.303711
-          }
-          Rotation {
-            Pitch: -0.549682617
-            Yaw: -89.4506226
-            Roll: -135.002609
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 526843540183677030
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 14294689278824862901
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: 52.4086914
-            Y: 175.213745
-            Z: 452.591553
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17112985054030154012
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
         Id: 7330552298062283211
         Name: "Urban Plank Debris 04"
         Transform {
@@ -854,58 +879,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 526843540183677030
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10534534659478983225
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -247.803711
-            Y: 401.560089
-            Z: 752.295959
-          }
-          Rotation {
-            Yaw: -90
-            Roll: -135
-          }
-          Scale {
-            X: 1
-            Y: 2.5
-            Z: 1
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17112985054030154012
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1011,146 +984,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 4096954105294154559
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 14191953120678663358
-        Name: "Urban Plank Debris 04"
-        Transform {
-          Location {
-            X: -325.737061
-            Y: 208.181885
-            Z: 746.826843
-          }
-          Rotation {
-            Pitch: 44.9784775
-            Yaw: -2.21344
-            Roll: 178.435089
-          }
-          Scale {
-            X: 0.863558948
-            Y: 15.9271908
-            Z: 0.999997377
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7360602162123997816
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.410297483
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 9.3152
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4096954105294154559
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 951350898830027371
-        Name: "Large Wood Board 8m"
-        Transform {
-          Location {
-            X: -207.224365
-            Y: 425
-            Z: 452.563293
-          }
-          Rotation {
-            Pitch: 90
-            Yaw: 56.3099136
-            Roll: -33.6887207
-          }
-          Scale {
-            X: 0.249488726
-            Y: 1.00000012
-            Z: 2.19999957
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.558133185
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.204804823
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18052318672521571529
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1299,170 +1132,6 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
             Float: 0.199943036
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 17805873852035063090
-        Name: "Cube"
-        Transform {
-          Location {
-            X: -272.992188
-            Y: 416.011719
-            Z: 109.499634
-          }
-          Rotation {
-            Yaw: 90.0000458
-          }
-          Scale {
-            X: -0.5
-            Y: 0.5
-            Z: 6.36281729
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.586388409
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.125
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 4810633326559075125
-        Name: "Cube"
-        Transform {
-          Location {
-            X: -17.9921875
-            Y: 6.01171875
-            Z: 302.524414
-          }
-          Rotation {
-            Pitch: -84.772644
-            Yaw: 89.9979782
-            Roll: 0.000131195848
-          }
-          Scale {
-            X: -0.6
-            Y: 0.5
-            Z: 3.90000081
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.45040831
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.163204163
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -2058,85 +1727,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 16374150260036817633
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 14019647214747127586
-        Name: "Large Wood Beam 8m"
-        Transform {
-          Location {
-            X: -35
-            Y: -45
-            Z: 110.729248
-          }
-          Rotation {
-            Pitch: -90
-            Yaw: 26.565033
-            Roll: 63.4349594
-          }
-          Scale {
-            X: -0.453614444
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4739843848998540757
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.655000031
-              G: 0.655000031
-              B: 0.655000031
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5028462544160077647
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.243000016
-              G: 0.243000016
-              B: 0.243000016
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.305843472
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15812398897488532618
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3155,15 +2745,6 @@ Assets {
       }
     }
     Assets {
-      Id: 18052318672521571529
-      Name: "Large Wood Board 8m"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_large_board_6m"
-      }
-    }
-    Assets {
       Id: 15812398897488532618
       Name: "Large Wood Beam 8m"
       PlatformAssetType: 1
@@ -3191,21 +2772,21 @@ Assets {
       }
     }
     Assets {
-      Id: 526843540183677030
-      Name: "Urban Plank Debris 04"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urban_destruction_debris_plank_04_ref"
-      }
-    }
-    Assets {
       Id: 16374150260036817633
       Name: "Cube - Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_001"
+      }
+    }
+    Assets {
+      Id: 526843540183677030
+      Name: "Urban Plank Debris 04"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urban_destruction_debris_plank_04_ref"
       }
     }
     Assets {

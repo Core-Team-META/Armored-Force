@@ -7338,7 +7338,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -8265,84 +8265,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 992912565469932425
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 1358190391205238664
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 1498618904713764072
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 1578644738561362412
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 3409591068068092453
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 3554657036469073619
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 4455667514777151041
       value {
         Overrides {
@@ -8359,227 +8281,6 @@ Objects {
           Rotator {
             Yaw: -63.0433197
           }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 4793030528138304397
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7167252974457857926
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7303644067523868597
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7351989364873707696
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7612393740914924214
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7995815423287303840
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8631622214737414581
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8831004249702647655
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8948495012808200381
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9398436376909806868
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9568422932315030436
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10396260244363450997
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10881331205719161676
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12312035119040200440
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13326250472765166784
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14730433533240659920
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17637061810446319001
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
         }
       }
     }
@@ -8629,71 +8330,6 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 5888267701760982358
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6628334227826848188
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6747889640696748734
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10608737639400723689
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15681682787849492219
-      value {
-        Overrides {
-          Name: "PhysicsOverrideMass"
-          Bool: true
-        }
-        Overrides {
-          Name: "PhysicsMass"
-          Float: 500
-        }
-      }
-    }
     TemplateAsset {
       Id: 610936693956157938
     }
@@ -8738,27 +8374,19 @@ Objects {
           String: "container training"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.5390625
-            Yaw: -77.9379883
-            Roll: 0.38492614
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
           Name: "Position"
           Vector {
             X: -1972.10938
             Y: 1104.60547
             Z: -2161.1582
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.5390625
+            Yaw: -77.9379883
+            Roll: 0.38492614
           }
         }
       }
@@ -10932,7 +10560,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {

@@ -8948,6 +8948,7 @@ Assets {
         }
         ParentId: 7741329448545015106
         ChildIds: 3849167173576039517
+        ChildIds: 11505784662753922723
         ChildIds: 13668012883112890656
         ChildIds: 12444556442253079107
         Collidable_v2 {
@@ -9053,6 +9054,13 @@ Assets {
           Overrides {
             Name: "cs:RemoveGroup"
             ObjectReference {
+              SubObjectId: 12444556442253079107
+            }
+          }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 11505784662753922723
             }
           }
         }
@@ -9134,8 +9142,8 @@ Assets {
         }
       }
       Objects {
-        Id: 13668012883112890656
-        Name: "DebrisGroup"
+        Id: 11505784662753922723
+        Name: "LeftBehindGroup"
         Transform {
           Location {
           }
@@ -9148,79 +9156,21 @@ Assets {
           }
         }
         ParentId: 2706258929745872780
-        ChildIds: 15660170279876574879
         ChildIds: 17446737095232347767
-        ChildIds: 5788636216589618046
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 15660170279876574879
-        Name: "Cube"
-        Transform {
-          Location {
-            X: 63.2578125
-            Y: 6.07324219
-            Z: 245.838806
-          }
-          Rotation {
-            Pitch: -6.64399099
-            Yaw: 91.6072
-            Roll: -103.632278
-          }
-          Scale {
-            X: 1.03006709
-            Y: 0.122394651
-            Z: 0.0861400515
-          }
-        }
-        ParentId: 13668012883112890656
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 14458375427107961947
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12095835209017042614
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -9228,13 +9178,13 @@ Assets {
         Name: "Physicsparent"
         Transform {
           Location {
-            X: 94.6420898
+            X: 94.6425781
             Y: 1.33984375
             Z: 343.230286
           }
           Rotation {
             Yaw: 89.9999542
-            Roll: -103.918854
+            Roll: -103.918869
           }
           Scale {
             X: 1
@@ -9242,7 +9192,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13668012883112890656
+        ParentId: 11505784662753922723
         ChildIds: 16805598659821657853
         ChildIds: 973158012242880770
         ChildIds: 16898466470729290632
@@ -9504,6 +9454,95 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 13668012883112890656
+        Name: "DebrisGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2706258929745872780
+        ChildIds: 15660170279876574879
+        ChildIds: 5788636216589618046
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 15660170279876574879
+        Name: "Cube"
+        Transform {
+          Location {
+            X: 63.2578125
+            Y: 6.07324219
+            Z: 245.838806
+          }
+          Rotation {
+            Pitch: -6.64399099
+            Yaw: 91.6072
+            Roll: -103.632278
+          }
+          Scale {
+            X: 1.03006709
+            Y: 0.122394651
+            Z: 0.0861400515
+          }
+        }
+        ParentId: 13668012883112890656
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14458375427107961947
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
