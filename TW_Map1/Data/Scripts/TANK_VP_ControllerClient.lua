@@ -124,6 +124,7 @@ function SetClientData()
 	
 	driver.clientUserData.currentTankData.chassis = tankBodyServer
 	driver.clientUserData.currentTankData.skin = tankBodyClient
+	driver.clientUserData.currentTankData.enemyOutline = tankBodyClient:FindDescendantByName("EnemyOutline")
 	driver.clientUserData.currentTankData.reloadSFX = tankBodyClient:FindDescendantByName("ReloadSFX")
 	driver.clientUserData.currentTankData.type = tankControllerServer:GetCustomProperty("Type")
 	driver.clientUserData.currentTankData.id = tankControllerServer:GetCustomProperty("Identifier")
