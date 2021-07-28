@@ -9576,10 +9576,8 @@ Objects {
     }
   }
   ParentId: 8638214345712533210
-  ChildIds: 15777323161811415499
-  ChildIds: 12835340422269804041
-  ChildIds: 16197808256505645217
-  ChildIds: 5860533728227804383
+  ChildIds: 10979772448364283194
+  ChildIds: 1349534316054286287
   ChildIds: 4133927077577630381
   ChildIds: 8354612589548578118
   ChildIds: 3388882615686760328
@@ -9869,8 +9867,7 @@ Objects {
     UseParentHeight: true
     StatBar {
       Color {
-        R: 0.56
-        B: 0.037178155
+        R: 0.401977867
         A: 1
       }
       BackgroundColor {
@@ -9936,8 +9933,7 @@ Objects {
     UseParentHeight: true
     StatBar {
       Color {
-        R: 0.278894335
-        B: 0.0185002182
+        R: 0.303
         A: 1
       }
       BackgroundColor {
@@ -10056,9 +10052,9 @@ Objects {
     UseParentHeight: true
     StatBar {
       Color {
-        G: 0.623960555
-        B: 0.165132225
-        A: 1
+        R: 0.0251868609
+        G: 0.520995677
+        A: 0.749019623
       }
       BackgroundColor {
         A: 0.261
@@ -10124,9 +10120,9 @@ Objects {
     UseParentHeight: true
     StatBar {
       Color {
-        G: 0.4
-        B: 0.104764082
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       BackgroundColor {
       }
@@ -10402,9 +10398,6 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
         A: 0.755000055
       }
       TeamSettings {
@@ -10462,9 +10455,6 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
         A: 0.755000055
       }
       TeamSettings {
@@ -10522,9 +10512,9 @@ Objects {
         Id: 7648893931280516746
       }
       Color {
-        G: 0.176367015
-        B: 0.728000045
-        A: 0.261
+        R: 0.063010022
+        G: 0.132868335
+        A: 0.258823544
       }
       TeamSettings {
       }
@@ -10601,7 +10591,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5860533728227804383
+  Id: 1349534316054286287
   Name: "BOTTOM_SHINE"
   Transform {
     Location {
@@ -10625,7 +10615,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 60
+    Width: 82
     Height: 263
     UIX: -60
     UIY: -25
@@ -10640,7 +10630,7 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        A: 0.188000008
+        A: 0.444000036
       }
       TeamSettings {
       }
@@ -10660,7 +10650,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16197808256505645217
+  Id: 10979772448364283194
   Name: "BOTTOM_SHINE"
   Transform {
     Location {
@@ -10684,7 +10674,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 60
+    Width: 82
     Height: 263
     UIX: 60
     UIY: -25
@@ -10699,123 +10689,7 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        A: 0.188000008
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12835340422269804041
-  Name: "BOTTOM_SHINE"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5124032344527208230
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 60
-    Height: 263
-    UIX: -60
-    RotationAngle: -90
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10820194954338241369
-      }
-      Color {
-        A: 0.188000008
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15777323161811415499
-  Name: "BOTTOM_SHINE"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5124032344527208230
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 60
-    Height: 263
-    UIX: 60
-    RotationAngle: 90
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10820194954338241369
-      }
-      Color {
-        A: 0.188000008
+        A: 0.444000036
       }
       TeamSettings {
       }
@@ -10849,8 +10723,6 @@ Objects {
     }
   }
   ParentId: 8638214345712533210
-  ChildIds: 10622517939346389492
-  ChildIds: 17721743252075567546
   ChildIds: 8870483018458172872
   ChildIds: 2977431535790280255
   ChildIds: 158329404558283360
@@ -11532,8 +11404,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278000027
-        B: 0.0184562989
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -11600,8 +11473,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278000027
-        B: 0.0184562989
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -11668,8 +11542,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278000027
-        B: 0.0184562989
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -11736,8 +11611,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278000027
-        B: 0.0184562989
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -11804,8 +11680,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278000027
-        B: 0.0184562989
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -11872,8 +11749,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278000027
-        B: 0.0184562989
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -11940,8 +11818,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278894335
-        B: 0.0185002182
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -12008,8 +11887,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.278000027
-        B: 0.0184562989
+        R: 0.337
+        G: 0.0115461946
+        B: 0.0115461946
         A: 1
       }
       TeamSettings {
@@ -12076,8 +11956,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12086,7 +11967,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12145,8 +12026,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12155,7 +12037,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12214,8 +12096,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12224,7 +12107,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12283,8 +12166,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12293,7 +12177,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12352,8 +12236,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12362,7 +12247,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12421,8 +12306,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12431,7 +12317,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12490,8 +12376,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12500,7 +12387,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12559,8 +12446,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        R: 0.445201248
-        B: 0.0295568425
+        R: 0.514917791
+        G: 0.0176419616
+        B: 0.0176419616
         A: 1
       }
       TeamSettings {
@@ -12569,7 +12457,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -12753,9 +12641,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.453
-        B: 0.12000034
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -12821,9 +12709,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.453
-        B: 0.12000034
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -12889,9 +12777,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.453
-        B: 0.12000034
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -12957,9 +12845,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.453
-        B: 0.12000034
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13025,9 +12913,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.453
-        B: 0.12000034
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13093,9 +12981,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.453
-        B: 0.12000034
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13161,9 +13049,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.453
-        B: 0.12000034
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13229,9 +13117,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.456411064
-        B: 0.119538449
-        A: 1
+        R: 0.0129830334
+        G: 0.258182913
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13297,9 +13185,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.62
-        B: 0.164238572
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13307,7 +13195,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -13366,9 +13254,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.62
-        B: 0.164238572
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13376,7 +13264,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -13435,9 +13323,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.62
-        B: 0.164238572
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13445,7 +13333,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -13504,9 +13392,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.62
-        B: 0.164238572
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13514,7 +13402,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -13573,9 +13461,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.62
-        B: 0.164238572
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13583,7 +13471,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -13642,9 +13530,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.62
-        B: 0.164238572
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13652,7 +13540,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -13711,9 +13599,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.62
-        B: 0.164238572
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13721,7 +13609,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -13780,9 +13668,9 @@ Objects {
         Id: 17184659105200274704
       }
       Color {
-        G: 0.623960555
-        B: 0.165132225
-        A: 1
+        R: 0.041865509
+        G: 0.866000056
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -13790,7 +13678,7 @@ Objects {
         A: 1
       }
       ShadowOffset {
-        Y: 2
+        Y: 1
       }
     }
     AnchorLayout {
@@ -14056,9 +13944,6 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
         A: 0.755000055
       }
       TeamSettings {
@@ -14116,9 +14001,6 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
         A: 0.755000055
       }
       TeamSettings {
@@ -14176,9 +14058,9 @@ Objects {
         Id: 7648893931280516746
       }
       Color {
-        G: 0.176367015
-        B: 0.728000045
-        A: 0.261
+        R: 0.063010022
+        G: 0.132868335
+        A: 0.258823544
       }
       TeamSettings {
       }
@@ -14279,7 +14161,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 60
+    Width: 82
     Height: 263
     UIX: -60
     UIY: -25
@@ -14294,7 +14176,7 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        A: 0.188000008
+        A: 0.444000036
       }
       TeamSettings {
       }
@@ -14338,7 +14220,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 60
+    Width: 82
     Height: 263
     UIX: 60
     UIY: -25
@@ -14353,123 +14235,7 @@ Objects {
         Id: 10820194954338241369
       }
       Color {
-        A: 0.188000008
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17721743252075567546
-  Name: "BOTTOM_SHINE"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5373242007442521892
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 60
-    Height: 263
-    UIX: -60
-    RotationAngle: -90
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10820194954338241369
-      }
-      Color {
-        A: 0.188000008
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 10622517939346389492
-  Name: "BOTTOM_SHINE"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5373242007442521892
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 60
-    Height: 263
-    UIX: 60
-    RotationAngle: 90
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 10820194954338241369
-      }
-      Color {
-        A: 0.188000008
+        A: 0.444000036
       }
       TeamSettings {
       }
@@ -17380,7 +17146,7 @@ Objects {
       Color {
         R: 0.00477695325
         G: 0.00972121768
-        A: 0.749
+        A: 0.749019623
       }
       TeamSettings {
       }
@@ -17927,8 +17693,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 947
-    Height: 1165
+    Width: 1903
+    Height: 951
     UIY: -500
     RenderTransformPivot {
       Anchor {
