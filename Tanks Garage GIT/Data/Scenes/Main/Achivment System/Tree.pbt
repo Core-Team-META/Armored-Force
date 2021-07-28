@@ -176,7 +176,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -381,7 +381,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -586,7 +586,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -791,7 +791,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -996,7 +996,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -1201,7 +1201,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -1406,7 +1406,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -1611,7 +1611,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -1816,7 +1816,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -2021,7 +2021,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -2314,7 +2314,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -2431,7 +2431,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -2636,7 +2636,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -2841,7 +2841,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -3046,7 +3046,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -3251,7 +3251,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -3456,7 +3456,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -3661,7 +3661,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -3866,7 +3866,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -4159,7 +4159,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -4276,7 +4276,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -4481,7 +4481,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -4686,7 +4686,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -4891,7 +4891,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -5092,7 +5092,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
-      String: "Free RP"
+      String: "Free XP"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -5366,6 +5366,12 @@ Objects {
       Name: "cs:ACHIEVEMENT_SCROLL"
       ObjectReference {
         SelfId: 8554670856797773246
+      }
+    }
+    Overrides {
+      Name: "cs:REWARD_SFX"
+      AssetReference {
+        Id: 8077372839145882330
       }
     }
   }
