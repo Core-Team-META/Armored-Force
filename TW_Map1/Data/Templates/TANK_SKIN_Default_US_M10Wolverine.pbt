@@ -50,6 +50,8 @@ Assets {
         ChildIds: 1261812501128301943
         ChildIds: 3177399216203972111
         ChildIds: 4185188990847181048
+        ChildIds: 10935397257126288679
+        ChildIds: 9853164307382223171
         ChildIds: 2216908842029623409
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -50418,6 +50420,178 @@ Assets {
         }
       }
       Objects {
+        Id: 10935397257126288679
+        Name: "AllyOutline"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14053453635395893004
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 14053453635395893004
+            }
+          }
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              B: 2
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Max Distance Thickness"
+            Float: 4
+          }
+          Overrides {
+            Name: "bp:Max Distance"
+            Float: 20
+          }
+          Overrides {
+            Name: "bp:Min Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Enabled"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Hierarchy Discovery Depth"
+            Int: 6
+          }
+          Overrides {
+            Name: "bp:Show Behind Objects"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5210035358541266842
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 9853164307382223171
+        Name: "EnemyOutline"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14053453635395893004
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 14053453635395893004
+            }
+          }
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              R: 2
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Max Distance Thickness"
+            Float: 4
+          }
+          Overrides {
+            Name: "bp:Max Distance"
+            Float: 20
+          }
+          Overrides {
+            Name: "bp:Min Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Enabled"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Hierarchy Discovery Depth"
+            Int: 6
+          }
+          Overrides {
+            Name: "bp:Show Behind Objects"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5210035358541266842
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
         Id: 2216908842029623409
         Name: "Damage Effects"
         Transform {
@@ -51540,6 +51714,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_mil_tank_hst_turret_001_ring_ref"
+      }
+    }
+    Assets {
+      Id: 5210035358541266842
+      Name: "Outline Object"
+      PlatformAssetType: 20
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_local_outline"
       }
     }
     Assets {

@@ -142,33 +142,35 @@ function UpdatePointer()
 			local differenceXY = (previousPosition - uiPostion).size
 			
 			if (differenceXY < 5) then
-				movementModifier = 0.25
+				movementModifier = 0.2
 			elseif (differenceXY < 10) then
-				movementModifier = 0.5
+				movementModifier = 0.4
+			elseif (differenceXY < 15) then
+				movementModifier = 0.6
 			else 
-				movementModifier = 0.7
+				movementModifier = 0.8
 			end
 		end
 		
 		--EaseUI.EaseX(truePointer, uiPostion.x, turretTrackingSpeed, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
 		--EaseUI.EaseY(truePointer, uiPostion.y, turretTrackingSpeed, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
 		--[[
-		if customEaseTask then 
+		if customEaseTask then
 			customEaseTask:Cancel()
 		end
 		
 		customEaseTask = Task.Spawn(CustomEaseReticle)
 		]]
-			
+		
 		local differenceX = uiPostion.x - truePointer.x
 		local differenceY = uiPostion.y - truePointer.y
 		
 		if (differenceX > 5) or (differenceY > 5) then
 			truePointer.x = truePointer.x + (differenceX * movementModifier)
-			truePointer.y = truePointer.y + (differenceY * movementModifier)	
+			truePointer.y = truePointer.y + (differenceY * movementModifier)
 		else
 			truePointer.x = uiPostion.x
-			truePointer.y = uiPostion.y			
+			truePointer.y = uiPostion.y
 		end
 		
 		previousPosition = uiPostion
@@ -200,13 +202,18 @@ function CheckEnemyTank(raycastResult)
 		local possibleTank = raycastResult.other
 		
 		if Object.IsValid(possibleTank) and ((possibleTank.type == "TreadedVehicle") or (possibleTank.type == "Vehicle")) then
-			local otherDriver = possibleTank .driver
+			local otherDriver = possibleTank.driver
+			
+			if not otherDriver.clientUserData.currentTankData then
+				return
+			end
+			
 			local enemyOutline = otherDriver.clientUserData.currentTankData.enemyOutline
 			local allyOutline = otherDriver.clientUserData.currentTankData.allyOutline
 						
 			if  (otherDriver.team ~= localPlayer.team) then
 				if Object.IsValid(enemyOutline) then
-					if not previousHighlight or (previousHighlight ~= enemyOutline) then
+					if not Object.IsValid(previousHighlight) or (previousHighlight ~= enemyOutline) then
 						if Object.IsValid(previousHighlight) then
 							previousHighlight:SetSmartProperty("Enabled", false)
 							previousHighlight.visibility = Visibility.FORCE_OFF
@@ -216,13 +223,13 @@ function CheckEnemyTank(raycastResult)
 						enemyOutline.visibility = Visibility.FORCE_ON
 						previousHighlight = enemyOutline
 						return
-					elseif previousHighlight and (previousHighlight == enemyOutline) then
+					elseif Object.IsValid(previousHighlight) and (previousHighlight == enemyOutline) then
 						return
 					end
 				end
 			elseif (otherDriver.team == localPlayer.team) then
 				if Object.IsValid(allyOutline) then
-					if not previousHighlight or (previousHighlight ~= allyOutline) then
+					if not Object.IsValid(previousHighlight) or (previousHighlight ~= allyOutline) then
 						if Object.IsValid(previousHighlight) then
 							previousHighlight:SetSmartProperty("Enabled", false)
 							previousHighlight.visibility = Visibility.FORCE_OFF
@@ -232,7 +239,7 @@ function CheckEnemyTank(raycastResult)
 						allyOutline.visibility = Visibility.FORCE_ON
 						previousHighlight = allyOutline	
 						return
-					elseif previousHighlight and (previousHighlight == allyOutline) then
+					elseif Object.IsValid(previousHighlight) and (previousHighlight == allyOutline) then
 						return
 					end
 				end
