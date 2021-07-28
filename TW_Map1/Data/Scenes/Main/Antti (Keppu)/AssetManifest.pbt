@@ -143,15 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11643471919634197847
-  Name: "Depth of Field Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_DOF"
-  }
-}
-Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6
