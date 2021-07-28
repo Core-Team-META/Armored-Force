@@ -20,6 +20,20 @@ Objects {
   ChildIds: 8309124829254094025
   ChildIds: 1860287350160907122
   ChildIds: 14987705759022947288
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BODY_TEXT"
+      ObjectReference {
+        SelfId: 9755549938950395595
+      }
+    }
+    Overrides {
+      Name: "cs:TITLE_SECONDARY"
+      ObjectReference {
+        SelfId: 16857632454991607954
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

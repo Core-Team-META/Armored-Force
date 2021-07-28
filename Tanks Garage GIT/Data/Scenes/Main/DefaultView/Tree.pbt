@@ -991,6 +991,12 @@ Objects {
         SelfId: 14766574473239698047
       }
     }
+    Overrides {
+      Name: "cs:POP_UP_MESSAGE"
+      ObjectReference {
+        SelfId: 3107273142777202591
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
