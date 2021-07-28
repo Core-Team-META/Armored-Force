@@ -24,6 +24,9 @@ local treadsSlot = script:GetCustomProperty("TreadsSlot"):WaitForObject()
 local extinguisherSlot = script:GetCustomProperty("ExtinguisherSlot"):WaitForObject()
 local repairKitSlot = script:GetCustomProperty("RepairKitSlot"):WaitForObject()
 
+local AlertDialogBox = script:GetCustomProperty("POP_UP_MESSAGE"):WaitForObject()
+
+
 
 -- Equip tank panel
 local loadEquippableTanks = script:GetCustomProperty("LoadEquippableTanks"):WaitForObject()
@@ -125,8 +128,22 @@ function OnBattleButtonPressed(button)
 end
 
 function OnPurchaseButtonPressed(button)
-	--print("purchasing")
-	ReliableEvents.BroadcastToServer("PURCHASE_CONSUME", button.clientUserData.type)
+	if localPlayer:GetResource(CONSTANTS_API.SILVER) < 100 then
+		local body = AlertDialogBox:GetCustomProperty("BODY_TEXT"):WaitForObject()
+		local title = AlertDialogBox:GetCustomProperty("TITLE_SECONDARY"):WaitForObject()
+		title.text = "Insufficient Silver"
+		title:GetChildren()[1].text = "Insufficient Silver"
+		body.text = "Not enough Silver to purchase this item."
+		AlertDialogBox.visibility = Visibility.FORCE_ON
+	else
+		local body = AlertDialogBox:GetCustomProperty("BODY_TEXT"):WaitForObject()
+		local title = AlertDialogBox:GetCustomProperty("TITLE_SECONDARY"):WaitForObject()
+		title.text = "Item Purchased"
+		title:GetChildren()[1].text = "Item Purchased"
+		body.text = "You have successfully purchased a new item."
+		AlertDialogBox.visibility = Visibility.FORCE_ON
+		ReliableEvents.BroadcastToServer("PURCHASE_CONSUME", button.clientUserData.type)
+	end
 end
 
 function OnResupplyButtonPressed(button)
