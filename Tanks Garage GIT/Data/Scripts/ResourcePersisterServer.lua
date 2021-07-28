@@ -273,7 +273,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 		if i ~= 1 and i ~= 18 and i ~= CONSTANTS_API.GetNumberOfTanks() then
 			tankEntry = tankEntry .. "|0|0|0|0|0~"
 		elseif i == 1 or i == 18 then
-			tankEntry = tankEntry .. "|1|1|2|2|2~"
+			tankEntry = tankEntry .. "|1|1|0|0|0~"
 			
 		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
 		-- (requires forced use of SetNewPlayerProgression(playerSharedStorage) function)
