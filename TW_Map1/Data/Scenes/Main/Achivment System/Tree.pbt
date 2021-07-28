@@ -47,31 +47,31 @@ Objects {
     }
   }
   ParentId: 7518169439920963007
-  ChildIds: 7551796521153726216
-  ChildIds: 13840542890017569834
-  ChildIds: 12799125551649190508
-  ChildIds: 8989463086293119602
-  ChildIds: 9797521335665783646
-  ChildIds: 10502999360891378161
-  ChildIds: 997500310280447694
-  ChildIds: 16496520831706338716
-  ChildIds: 14344424695583428489
-  ChildIds: 1187439709750590893
-  ChildIds: 14624446105062512483
-  ChildIds: 3373329794496996006
-  ChildIds: 9568318308459586444
-  ChildIds: 745841049693949718
-  ChildIds: 12749949650427782781
-  ChildIds: 4134102382918949615
-  ChildIds: 13428730509063825962
-  ChildIds: 7805246861360310581
-  ChildIds: 12385486269158570810
-  ChildIds: 1228654722456412372
-  ChildIds: 1233149231772656708
-  ChildIds: 7353629885602724370
-  ChildIds: 5626727252680430879
-  ChildIds: 11960647676478627543
-  ChildIds: 17151599110248689711
+  ChildIds: 7345418812446977277
+  ChildIds: 5418543141830812168
+  ChildIds: 3699171369716029700
+  ChildIds: 1209031529814761118
+  ChildIds: 6166516636256971262
+  ChildIds: 16082588366113524458
+  ChildIds: 14999703689150624734
+  ChildIds: 17166057236562581233
+  ChildIds: 16772931794587152055
+  ChildIds: 16844673929843529336
+  ChildIds: 15523503001767428522
+  ChildIds: 17105546132699769630
+  ChildIds: 16500923848954958262
+  ChildIds: 16645036796067039269
+  ChildIds: 17893623832394087180
+  ChildIds: 9051379700272419762
+  ChildIds: 7014289905160049082
+  ChildIds: 14447510820478215240
+  ChildIds: 5241079117841170753
+  ChildIds: 17251101591368162719
+  ChildIds: 18307334181180225954
+  ChildIds: 10808236419072854273
+  ChildIds: 11263192965149113946
+  ChildIds: 7105083556551671215
+  ChildIds: 12808934645649667280
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -86,8 +86,8 @@ Objects {
   }
 }
 Objects {
-  Id: 17151599110248689711
-  Name: "Destroyer Commander"
+  Id: 12808934645649667280
+  Name: "New Upgrade"
   Transform {
     Location {
     }
@@ -100,21 +100,21 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 12397806442275060822
-  ChildIds: 11587635026118979136
-  ChildIds: 18155874458044983280
+  ChildIds: 2167981114424403004
+  ChildIds: 10021560169347114502
+  ChildIds: 18010364520949013005
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
-      String: "Play 100 matches as a tank destroyer"
+      String: "Acquire a tank upgrade"
     }
     Overrides {
       Name: "cs:Required"
-      Float: 100
+      Float: 1
     }
     Overrides {
       Name: "cs:ID"
-      String: "ADC"
+      String: "ANU"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -123,7 +123,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 12712374178942678628
       }
     }
     Overrides {
@@ -132,420 +132,6 @@ Objects {
     }
     Overrides {
       Name: "cs:Family"
-      String: ""
-    }
-    Overrides {
-      Name: "cs:PreRequisite"
-      String: "ADP,ADS"
-    }
-    Overrides {
-      Name: "cs:GivesReward"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4954130354820301591
-    }
-  }
-}
-Objects {
-  Id: 18155874458044983280
-  Name: "Xp"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17151599110248689711
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ResourceName"
-      String: "Free RP"
-    }
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Amount"
-      Int: 8000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8563684984866158969
-    }
-  }
-}
-Objects {
-  Id: 11587635026118979136
-  Name: "Gold"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17151599110248689711
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ResourceName"
-      String: "Gold"
-    }
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Amount"
-      Int: 100
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8563684984866158969
-    }
-  }
-}
-Objects {
-  Id: 12397806442275060822
-  Name: "Silver"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17151599110248689711
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:ResourceName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:Amount"
-      Int: 400
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8563684984866158969
-    }
-  }
-}
-Objects {
-  Id: 11960647676478627543
-  Name: "Destroyer Sergeant"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9552982199017133135
-  ChildIds: 12432307732599906103
-  ChildIds: 14213730770852057685
-  ChildIds: 10659062629485070076
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Description"
-      String: "Play 50 matches as a tank destroyer"
-    }
-    Overrides {
-      Name: "cs:Required"
-      Float: 50
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "ADS"
-    }
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Icon"
-      AssetReference {
-        Id: 8945471471486851310
-      }
-    }
-    Overrides {
-      Name: "cs:IsRepeatable"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Family"
-      String: ""
-    }
-    Overrides {
-      Name: "cs:PreRequisite"
-      String: "ADP"
-    }
-    Overrides {
-      Name: "cs:GivesReward"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4954130354820301591
-    }
-  }
-}
-Objects {
-  Id: 10659062629485070076
-  Name: "Xp"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11960647676478627543
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ResourceName"
-      String: "Free RP"
-    }
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Amount"
-      Int: 2000
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8563684984866158969
-    }
-  }
-}
-Objects {
-  Id: 14213730770852057685
-  Name: "Gold"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11960647676478627543
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ResourceName"
-      String: "Gold"
-    }
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Amount"
-      Int: 25
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8563684984866158969
-    }
-  }
-}
-Objects {
-  Id: 12432307732599906103
-  Name: "Silver"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11960647676478627543
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:ResourceName"
-      String: "Silver"
-    }
-    Overrides {
-      Name: "cs:Amount"
-      Int: 100
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8563684984866158969
-    }
-  }
-}
-Objects {
-  Id: 5626727252680430879
-  Name: "Destroyer Private"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9552982199017133135
-  ChildIds: 2935463198918250278
-  ChildIds: 6365652401279269697
-  ChildIds: 12775793575830754010
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Description"
-      String: "Play 10 matches as a tank destroyer"
-    }
-    Overrides {
-      Name: "cs:Required"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "ADP"
-    }
-    Overrides {
-      Name: "cs:Enabled"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Icon"
-      AssetReference {
-        Id: 8945471471486851310
-      }
-    }
-    Overrides {
-      Name: "cs:IsRepeatable"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Family"
-      String: ""
-    }
-    Overrides {
-      Name: "cs:PreRequisite"
       String: ""
     }
     Overrides {
@@ -569,7 +155,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12775793575830754010
+  Id: 18010364520949013005
   Name: "Xp"
   Transform {
     Location {
@@ -582,7 +168,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5626727252680430879
+  ParentId: 12808934645649667280
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -613,7 +199,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6365652401279269697
+  Id: 10021560169347114502
   Name: "Gold"
   Transform {
     Location {
@@ -626,7 +212,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5626727252680430879
+  ParentId: 12808934645649667280
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -657,7 +243,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2935463198918250278
+  Id: 2167981114424403004
   Name: "Silver"
   Transform {
     Location {
@@ -670,7 +256,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5626727252680430879
+  ParentId: 12808934645649667280
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -701,7 +287,417 @@ Objects {
   }
 }
 Objects {
-  Id: 7353629885602724370
+  Id: 7105083556551671215
+  Name: "Destroyer Sergeant"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9552982199017133135
+  ChildIds: 8103259603564786558
+  ChildIds: 3334622480483509576
+  ChildIds: 6646195726613420392
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Description"
+      String: "Play 50 matches as a tank destroyer"
+    }
+    Overrides {
+      Name: "cs:Required"
+      Float: 50
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "ADS"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 17950514252831705614
+      }
+    }
+    Overrides {
+      Name: "cs:IsRepeatable"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Family"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:PreRequisite"
+      String: "ADP"
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4954130354820301591
+    }
+  }
+}
+Objects {
+  Id: 6646195726613420392
+  Name: "Xp"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7105083556551671215
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "Free RP"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 2000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
+  }
+}
+Objects {
+  Id: 3334622480483509576
+  Name: "Gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7105083556551671215
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "Gold"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
+  }
+}
+Objects {
+  Id: 8103259603564786558
+  Name: "Silver"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7105083556551671215
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 100
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
+  }
+}
+Objects {
+  Id: 11263192965149113946
+  Name: "Destroyer Private"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9552982199017133135
+  ChildIds: 16991571844116489773
+  ChildIds: 12110624077196033836
+  ChildIds: 11495515778588317018
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Description"
+      String: "Play 10 matches as a tank destroyer"
+    }
+    Overrides {
+      Name: "cs:Required"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "ADP"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 17950514252831705614
+      }
+    }
+    Overrides {
+      Name: "cs:IsRepeatable"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Family"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:PreRequisite"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:GivesReward"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4954130354820301591
+    }
+  }
+}
+Objects {
+  Id: 11495515778588317018
+  Name: "Xp"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11263192965149113946
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "Free RP"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 1000
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
+  }
+}
+Objects {
+  Id: 12110624077196033836
+  Name: "Gold"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11263192965149113946
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "Gold"
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
+  }
+}
+Objects {
+  Id: 16991571844116489773
+  Name: "Silver"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11263192965149113946
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "Silver"
+    }
+    Overrides {
+      Name: "cs:Amount"
+      Int: 50
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8563684984866158969
+    }
+  }
+}
+Objects {
+  Id: 10808236419072854273
   Name: "Heavy Commander"
   Transform {
     Location {
@@ -715,9 +711,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 7467923829816459843
-  ChildIds: 4225772531692786143
-  ChildIds: 10804522386726747923
+  ChildIds: 7773544876469808044
+  ChildIds: 6965467564166383856
+  ChildIds: 7953495250398123359
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -738,7 +734,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 10929276956314313312
       }
     }
     Overrides {
@@ -774,7 +770,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10804522386726747923
+  Id: 7953495250398123359
   Name: "Xp"
   Transform {
     Location {
@@ -787,7 +783,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7353629885602724370
+  ParentId: 10808236419072854273
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -818,7 +814,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4225772531692786143
+  Id: 6965467564166383856
   Name: "Gold"
   Transform {
     Location {
@@ -831,7 +827,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7353629885602724370
+  ParentId: 10808236419072854273
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -862,7 +858,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7467923829816459843
+  Id: 7773544876469808044
   Name: "Silver"
   Transform {
     Location {
@@ -875,7 +871,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7353629885602724370
+  ParentId: 10808236419072854273
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -906,7 +902,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1233149231772656708
+  Id: 18307334181180225954
   Name: "Heavy Sergeant"
   Transform {
     Location {
@@ -920,9 +916,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 11749283744765187265
-  ChildIds: 11851824920575103425
-  ChildIds: 16070561941030469692
+  ChildIds: 2770338719493495386
+  ChildIds: 5459892194342540236
+  ChildIds: 14866057422309422303
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -943,7 +939,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 10929276956314313312
       }
     }
     Overrides {
@@ -979,7 +975,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16070561941030469692
+  Id: 14866057422309422303
   Name: "Xp"
   Transform {
     Location {
@@ -992,7 +988,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1233149231772656708
+  ParentId: 18307334181180225954
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1023,7 +1019,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11851824920575103425
+  Id: 5459892194342540236
   Name: "Gold"
   Transform {
     Location {
@@ -1036,7 +1032,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1233149231772656708
+  ParentId: 18307334181180225954
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1067,7 +1063,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11749283744765187265
+  Id: 2770338719493495386
   Name: "Silver"
   Transform {
     Location {
@@ -1080,7 +1076,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1233149231772656708
+  ParentId: 18307334181180225954
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -1111,7 +1107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1228654722456412372
+  Id: 17251101591368162719
   Name: "Heavy Private"
   Transform {
     Location {
@@ -1125,9 +1121,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 14677108473293738808
-  ChildIds: 15341932750799150180
-  ChildIds: 11766164247967237033
+  ChildIds: 7235899083962794545
+  ChildIds: 6026983459615471898
+  ChildIds: 440683049309059274
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -1148,7 +1144,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 10929276956314313312
       }
     }
     Overrides {
@@ -1184,7 +1180,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11766164247967237033
+  Id: 440683049309059274
   Name: "Xp"
   Transform {
     Location {
@@ -1197,7 +1193,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1228654722456412372
+  ParentId: 17251101591368162719
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1228,7 +1224,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15341932750799150180
+  Id: 6026983459615471898
   Name: "Gold"
   Transform {
     Location {
@@ -1241,7 +1237,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1228654722456412372
+  ParentId: 17251101591368162719
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1272,7 +1268,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14677108473293738808
+  Id: 7235899083962794545
   Name: "Silver"
   Transform {
     Location {
@@ -1285,7 +1281,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1228654722456412372
+  ParentId: 17251101591368162719
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -1316,7 +1312,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12385486269158570810
+  Id: 5241079117841170753
   Name: "Medium Commander"
   Transform {
     Location {
@@ -1330,9 +1326,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 3500260142018902096
-  ChildIds: 8499236605378990675
-  ChildIds: 16042699420631214220
+  ChildIds: 9808454525649272216
+  ChildIds: 14639612072396405483
+  ChildIds: 9557459470853025104
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -1353,7 +1349,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 13914788500709765900
       }
     }
     Overrides {
@@ -1389,7 +1385,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16042699420631214220
+  Id: 9557459470853025104
   Name: "Xp"
   Transform {
     Location {
@@ -1402,7 +1398,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12385486269158570810
+  ParentId: 5241079117841170753
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1433,7 +1429,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8499236605378990675
+  Id: 14639612072396405483
   Name: "Gold"
   Transform {
     Location {
@@ -1446,7 +1442,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12385486269158570810
+  ParentId: 5241079117841170753
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1477,7 +1473,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3500260142018902096
+  Id: 9808454525649272216
   Name: "Silver"
   Transform {
     Location {
@@ -1490,7 +1486,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12385486269158570810
+  ParentId: 5241079117841170753
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -1521,7 +1517,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7805246861360310581
+  Id: 14447510820478215240
   Name: "Medium Sergeant"
   Transform {
     Location {
@@ -1535,9 +1531,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 11847299311434262400
-  ChildIds: 11421895969676326012
-  ChildIds: 12104034642390891425
+  ChildIds: 6341822731035947443
+  ChildIds: 18352888124796576952
+  ChildIds: 17472400962667076842
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -1558,7 +1554,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 13914788500709765900
       }
     }
     Overrides {
@@ -1594,7 +1590,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12104034642390891425
+  Id: 17472400962667076842
   Name: "Xp"
   Transform {
     Location {
@@ -1607,7 +1603,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7805246861360310581
+  ParentId: 14447510820478215240
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1638,7 +1634,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11421895969676326012
+  Id: 18352888124796576952
   Name: "Gold"
   Transform {
     Location {
@@ -1651,7 +1647,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7805246861360310581
+  ParentId: 14447510820478215240
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1682,7 +1678,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11847299311434262400
+  Id: 6341822731035947443
   Name: "Silver"
   Transform {
     Location {
@@ -1695,7 +1691,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7805246861360310581
+  ParentId: 14447510820478215240
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -1726,7 +1722,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13428730509063825962
+  Id: 7014289905160049082
   Name: "Medium Private"
   Transform {
     Location {
@@ -1740,9 +1736,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 5700871679433235207
-  ChildIds: 7671736238922542640
-  ChildIds: 3005866535907327732
+  ChildIds: 7948431010747792279
+  ChildIds: 792824994739148348
+  ChildIds: 1491543756386651785
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -1763,7 +1759,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 13914788500709765900
       }
     }
     Overrides {
@@ -1799,7 +1795,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3005866535907327732
+  Id: 1491543756386651785
   Name: "Xp"
   Transform {
     Location {
@@ -1812,7 +1808,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13428730509063825962
+  ParentId: 7014289905160049082
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1843,7 +1839,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7671736238922542640
+  Id: 792824994739148348
   Name: "Gold"
   Transform {
     Location {
@@ -1856,7 +1852,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13428730509063825962
+  ParentId: 7014289905160049082
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -1887,7 +1883,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5700871679433235207
+  Id: 7948431010747792279
   Name: "Silver"
   Transform {
     Location {
@@ -1900,7 +1896,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13428730509063825962
+  ParentId: 7014289905160049082
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -1931,7 +1927,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4134102382918949615
+  Id: 9051379700272419762
   Name: "Light Commander"
   Transform {
     Location {
@@ -1945,9 +1941,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 9096695243483208102
-  ChildIds: 1318368512290652287
-  ChildIds: 7893595488927337494
+  ChildIds: 9088967262609422362
+  ChildIds: 6985605980380352586
+  ChildIds: 9980011205496158053
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -1968,7 +1964,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 1556873281307447388
       }
     }
     Overrides {
@@ -2004,7 +2000,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7893595488927337494
+  Id: 9980011205496158053
   Name: "Xp"
   Transform {
     Location {
@@ -2017,7 +2013,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4134102382918949615
+  ParentId: 9051379700272419762
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2048,7 +2044,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1318368512290652287
+  Id: 6985605980380352586
   Name: "Gold"
   Transform {
     Location {
@@ -2061,7 +2057,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4134102382918949615
+  ParentId: 9051379700272419762
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2092,7 +2088,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9096695243483208102
+  Id: 9088967262609422362
   Name: "Silver"
   Transform {
     Location {
@@ -2105,7 +2101,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4134102382918949615
+  ParentId: 9051379700272419762
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -2136,7 +2132,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12749949650427782781
+  Id: 17893623832394087180
   Name: "Light Sergeant"
   Transform {
     Location {
@@ -2150,9 +2146,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 9497483348573067246
-  ChildIds: 4570775094559335877
-  ChildIds: 9678581697295849944
+  ChildIds: 13185089152266417135
+  ChildIds: 17455721800576643432
+  ChildIds: 8933626986497557579
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -2173,7 +2169,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 1556873281307447388
       }
     }
     Overrides {
@@ -2209,7 +2205,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9678581697295849944
+  Id: 8933626986497557579
   Name: "Silver"
   Transform {
     Location {
@@ -2222,7 +2218,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12749949650427782781
+  ParentId: 17893623832394087180
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -2253,7 +2249,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4570775094559335877
+  Id: 17455721800576643432
   Name: "Gold"
   Transform {
     Location {
@@ -2266,7 +2262,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12749949650427782781
+  ParentId: 17893623832394087180
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2297,7 +2293,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9497483348573067246
+  Id: 13185089152266417135
   Name: "Xp"
   Transform {
     Location {
@@ -2310,7 +2306,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12749949650427782781
+  ParentId: 17893623832394087180
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2341,7 +2337,7 @@ Objects {
   }
 }
 Objects {
-  Id: 745841049693949718
+  Id: 16645036796067039269
   Name: "Light Private"
   Transform {
     Location {
@@ -2355,9 +2351,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 2452529869108207078
-  ChildIds: 7369899812240823590
-  ChildIds: 10513836131405074969
+  ChildIds: 4907466059939335777
+  ChildIds: 495449306039548611
+  ChildIds: 11202684412042077019
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -2378,7 +2374,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 1556873281307447388
       }
     }
     Overrides {
@@ -2414,7 +2410,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10513836131405074969
+  Id: 11202684412042077019
   Name: "Xp"
   Transform {
     Location {
@@ -2427,7 +2423,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 745841049693949718
+  ParentId: 16645036796067039269
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2458,7 +2454,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7369899812240823590
+  Id: 495449306039548611
   Name: "Gold"
   Transform {
     Location {
@@ -2471,7 +2467,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 745841049693949718
+  ParentId: 16645036796067039269
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2502,7 +2498,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2452529869108207078
+  Id: 4907466059939335777
   Name: "Silver"
   Transform {
     Location {
@@ -2515,7 +2511,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 745841049693949718
+  ParentId: 16645036796067039269
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -2546,7 +2542,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9568318308459586444
+  Id: 16500923848954958262
   Name: "All Out War"
   Transform {
     Location {
@@ -2560,9 +2556,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 15247205991103705156
-  ChildIds: 13375863100312961618
-  ChildIds: 2278060230957113861
+  ChildIds: 14575201445755450145
+  ChildIds: 2902373546991778110
+  ChildIds: 13710390619633557793
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -2583,7 +2579,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 14823224628347597773
       }
     }
     Overrides {
@@ -2619,7 +2615,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2278060230957113861
+  Id: 13710390619633557793
   Name: "Xp"
   Transform {
     Location {
@@ -2632,7 +2628,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9568318308459586444
+  ParentId: 16500923848954958262
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2663,7 +2659,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13375863100312961618
+  Id: 2902373546991778110
   Name: "Gold"
   Transform {
     Location {
@@ -2676,7 +2672,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9568318308459586444
+  ParentId: 16500923848954958262
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2707,7 +2703,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15247205991103705156
+  Id: 14575201445755450145
   Name: "Silver"
   Transform {
     Location {
@@ -2720,7 +2716,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9568318308459586444
+  ParentId: 16500923848954958262
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -2751,7 +2747,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3373329794496996006
+  Id: 17105546132699769630
   Name: "Assault"
   Transform {
     Location {
@@ -2765,9 +2761,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 8147643301342125742
-  ChildIds: 5633980258567260616
-  ChildIds: 12737682900281352707
+  ChildIds: 3720340903551245925
+  ChildIds: 3157933598810988444
+  ChildIds: 5407922058881283615
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -2788,7 +2784,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 14977743687329296008
       }
     }
     Overrides {
@@ -2824,7 +2820,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12737682900281352707
+  Id: 5407922058881283615
   Name: "Xp"
   Transform {
     Location {
@@ -2837,7 +2833,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3373329794496996006
+  ParentId: 17105546132699769630
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2868,7 +2864,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5633980258567260616
+  Id: 3157933598810988444
   Name: "Gold"
   Transform {
     Location {
@@ -2881,7 +2877,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3373329794496996006
+  ParentId: 17105546132699769630
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -2912,7 +2908,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8147643301342125742
+  Id: 3720340903551245925
   Name: "Silver"
   Transform {
     Location {
@@ -2925,7 +2921,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3373329794496996006
+  ParentId: 17105546132699769630
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -2956,7 +2952,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14624446105062512483
+  Id: 15523503001767428522
   Name: "Clash"
   Transform {
     Location {
@@ -2970,9 +2966,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 3101841458336827700
-  ChildIds: 9665030899947122637
-  ChildIds: 720069385381793687
+  ChildIds: 9197306747205204202
+  ChildIds: 14622795215762312927
+  ChildIds: 7094068726212629645
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -2993,7 +2989,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 13491723829736336971
       }
     }
     Overrides {
@@ -3029,7 +3025,7 @@ Objects {
   }
 }
 Objects {
-  Id: 720069385381793687
+  Id: 7094068726212629645
   Name: "Xp"
   Transform {
     Location {
@@ -3042,7 +3038,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14624446105062512483
+  ParentId: 15523503001767428522
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3073,7 +3069,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9665030899947122637
+  Id: 14622795215762312927
   Name: "Gold"
   Transform {
     Location {
@@ -3086,7 +3082,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14624446105062512483
+  ParentId: 15523503001767428522
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3117,7 +3113,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3101841458336827700
+  Id: 9197306747205204202
   Name: "Silver"
   Transform {
     Location {
@@ -3130,7 +3126,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14624446105062512483
+  ParentId: 15523503001767428522
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -3161,7 +3157,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1187439709750590893
+  Id: 16844673929843529336
   Name: "Skirmish"
   Transform {
     Location {
@@ -3175,9 +3171,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 10504280549292773106
-  ChildIds: 16307026326110867239
-  ChildIds: 12222908909463331354
+  ChildIds: 1151018519326115554
+  ChildIds: 7872357732185654751
+  ChildIds: 10238060546619271945
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -3198,7 +3194,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 6818558336275318495
       }
     }
     Overrides {
@@ -3234,7 +3230,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12222908909463331354
+  Id: 10238060546619271945
   Name: "Xp"
   Transform {
     Location {
@@ -3247,7 +3243,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1187439709750590893
+  ParentId: 16844673929843529336
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3278,7 +3274,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16307026326110867239
+  Id: 7872357732185654751
   Name: "Gold"
   Transform {
     Location {
@@ -3291,7 +3287,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1187439709750590893
+  ParentId: 16844673929843529336
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3322,7 +3318,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10504280549292773106
+  Id: 1151018519326115554
   Name: "Silver"
   Transform {
     Location {
@@ -3335,7 +3331,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1187439709750590893
+  ParentId: 16844673929843529336
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -3366,7 +3362,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14344424695583428489
+  Id: 16772931794587152055
   Name: "Complete Collection"
   Transform {
     Location {
@@ -3380,9 +3376,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 16130072953804177615
-  ChildIds: 4772113918918914585
-  ChildIds: 6241283574077372663
+  ChildIds: 8698551590749772318
+  ChildIds: 3183217552820810489
+  ChildIds: 15059381726774861800
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -3398,12 +3394,12 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 4194909855045064954
       }
     }
     Overrides {
@@ -3439,7 +3435,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6241283574077372663
+  Id: 15059381726774861800
   Name: "Xp"
   Transform {
     Location {
@@ -3452,7 +3448,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14344424695583428489
+  ParentId: 16772931794587152055
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3483,7 +3479,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4772113918918914585
+  Id: 3183217552820810489
   Name: "Gold"
   Transform {
     Location {
@@ -3496,7 +3492,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14344424695583428489
+  ParentId: 16772931794587152055
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3527,7 +3523,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16130072953804177615
+  Id: 8698551590749772318
   Name: "Silver"
   Transform {
     Location {
@@ -3540,7 +3536,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14344424695583428489
+  ParentId: 16772931794587152055
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -3571,7 +3567,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16496520831706338716
+  Id: 17166057236562581233
   Name: "All Axis"
   Transform {
     Location {
@@ -3585,9 +3581,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 4718890655862969104
-  ChildIds: 15093733342837173140
-  ChildIds: 15132859792262606267
+  ChildIds: 803866922170537888
+  ChildIds: 3051613836272670850
+  ChildIds: 8521281606306094237
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -3603,12 +3599,12 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 17745711767915271036
       }
     }
     Overrides {
@@ -3644,7 +3640,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15132859792262606267
+  Id: 8521281606306094237
   Name: "Xp"
   Transform {
     Location {
@@ -3657,7 +3653,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16496520831706338716
+  ParentId: 17166057236562581233
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3688,7 +3684,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15093733342837173140
+  Id: 3051613836272670850
   Name: "Gold"
   Transform {
     Location {
@@ -3701,7 +3697,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16496520831706338716
+  ParentId: 17166057236562581233
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3732,7 +3728,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4718890655862969104
+  Id: 803866922170537888
   Name: "Silver"
   Transform {
     Location {
@@ -3745,7 +3741,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16496520831706338716
+  ParentId: 17166057236562581233
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -3776,7 +3772,7 @@ Objects {
   }
 }
 Objects {
-  Id: 997500310280447694
+  Id: 14999703689150624734
   Name: "All Allies"
   Transform {
     Location {
@@ -3790,9 +3786,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 13816506849523788620
-  ChildIds: 14923759256704918572
-  ChildIds: 286859003504002412
+  ChildIds: 5851128724768569858
+  ChildIds: 1504271131656261115
+  ChildIds: 16328281972645660212
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -3808,12 +3804,12 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 4223151308285071390
       }
     }
     Overrides {
@@ -3849,7 +3845,7 @@ Objects {
   }
 }
 Objects {
-  Id: 286859003504002412
+  Id: 16328281972645660212
   Name: "Xp"
   Transform {
     Location {
@@ -3862,7 +3858,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 997500310280447694
+  ParentId: 14999703689150624734
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3893,7 +3889,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14923759256704918572
+  Id: 1504271131656261115
   Name: "Gold"
   Transform {
     Location {
@@ -3906,7 +3902,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 997500310280447694
+  ParentId: 14999703689150624734
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -3937,7 +3933,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13816506849523788620
+  Id: 5851128724768569858
   Name: "Silver"
   Transform {
     Location {
@@ -3950,7 +3946,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 997500310280447694
+  ParentId: 14999703689150624734
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -3981,7 +3977,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10502999360891378161
+  Id: 16082588366113524458
   Name: "Legendary"
   Transform {
     Location {
@@ -3995,9 +3991,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 1920153446568971085
-  ChildIds: 8846025852677805075
-  ChildIds: 13756496361796008504
+  ChildIds: 15852217380777695880
+  ChildIds: 108789679518871900
+  ChildIds: 8918648290049431077
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -4018,7 +4014,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 15330765709761472497
       }
     }
     Overrides {
@@ -4054,7 +4050,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13756496361796008504
+  Id: 8918648290049431077
   Name: "Silver"
   Transform {
     Location {
@@ -4067,7 +4063,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10502999360891378161
+  ParentId: 16082588366113524458
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -4098,7 +4094,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8846025852677805075
+  Id: 108789679518871900
   Name: "Gold"
   Transform {
     Location {
@@ -4111,7 +4107,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10502999360891378161
+  ParentId: 16082588366113524458
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4142,7 +4138,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1920153446568971085
+  Id: 15852217380777695880
   Name: "Xp"
   Transform {
     Location {
@@ -4155,7 +4151,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10502999360891378161
+  ParentId: 16082588366113524458
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4186,7 +4182,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9797521335665783646
+  Id: 6166516636256971262
   Name: "Medium"
   Transform {
     Location {
@@ -4200,9 +4196,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 11944560053217540593
-  ChildIds: 786777775679730325
-  ChildIds: 5622684163246321355
+  ChildIds: 2385096972929886321
+  ChildIds: 12074745782176167415
+  ChildIds: 5389863854387180284
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -4223,7 +4219,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 8608164744573999390
       }
     }
     Overrides {
@@ -4259,7 +4255,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5622684163246321355
+  Id: 5389863854387180284
   Name: "Xp"
   Transform {
     Location {
@@ -4272,7 +4268,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9797521335665783646
+  ParentId: 6166516636256971262
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4303,7 +4299,7 @@ Objects {
   }
 }
 Objects {
-  Id: 786777775679730325
+  Id: 12074745782176167415
   Name: "Gold"
   Transform {
     Location {
@@ -4316,7 +4312,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9797521335665783646
+  ParentId: 6166516636256971262
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4347,7 +4343,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11944560053217540593
+  Id: 2385096972929886321
   Name: "Silver"
   Transform {
     Location {
@@ -4360,7 +4356,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9797521335665783646
+  ParentId: 6166516636256971262
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -4391,7 +4387,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8989463086293119602
+  Id: 1209031529814761118
   Name: "Junior"
   Transform {
     Location {
@@ -4405,9 +4401,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 14624275379375831183
-  ChildIds: 7685001162269456179
-  ChildIds: 16901664678419098226
+  ChildIds: 4280530361480834872
+  ChildIds: 5561047381755947290
+  ChildIds: 1948087903621824154
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -4428,7 +4424,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8945471471486851310
+        Id: 6199564391275717789
       }
     }
     Overrides {
@@ -4464,7 +4460,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16901664678419098226
+  Id: 1948087903621824154
   Name: "Xp"
   Transform {
     Location {
@@ -4477,7 +4473,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8989463086293119602
+  ParentId: 1209031529814761118
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4508,7 +4504,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7685001162269456179
+  Id: 5561047381755947290
   Name: "Gold"
   Transform {
     Location {
@@ -4521,7 +4517,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8989463086293119602
+  ParentId: 1209031529814761118
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4552,7 +4548,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14624275379375831183
+  Id: 4280530361480834872
   Name: "Silver"
   Transform {
     Location {
@@ -4565,7 +4561,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8989463086293119602
+  ParentId: 1209031529814761118
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -4596,7 +4592,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12799125551649190508
+  Id: 3699171369716029700
   Name: "Tank Elite"
   Transform {
     Location {
@@ -4610,9 +4606,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 17364563190990827720
-  ChildIds: 8603630820515275547
-  ChildIds: 777771603121433088
+  ChildIds: 8361789429590364289
+  ChildIds: 17107566658769431221
+  ChildIds: 2079959811740469951
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -4628,12 +4624,12 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 5143737906702620566
+        Id: 16209830782687928730
       }
     }
     Overrides {
@@ -4669,7 +4665,7 @@ Objects {
   }
 }
 Objects {
-  Id: 777771603121433088
+  Id: 2079959811740469951
   Name: "Xp"
   Transform {
     Location {
@@ -4682,7 +4678,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12799125551649190508
+  ParentId: 3699171369716029700
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4713,7 +4709,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8603630820515275547
+  Id: 17107566658769431221
   Name: "Gold"
   Transform {
     Location {
@@ -4726,7 +4722,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12799125551649190508
+  ParentId: 3699171369716029700
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4757,7 +4753,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17364563190990827720
+  Id: 8361789429590364289
   Name: "Silver"
   Transform {
     Location {
@@ -4770,7 +4766,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12799125551649190508
+  ParentId: 3699171369716029700
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -4801,7 +4797,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13840542890017569834
+  Id: 5418543141830812168
   Name: "Glory"
   Transform {
     Location {
@@ -4815,9 +4811,9 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 14906839633742179370
-  ChildIds: 10413194075134009080
-  ChildIds: 2963511162220209088
+  ChildIds: 10779886695317365181
+  ChildIds: 6274994464449894127
+  ChildIds: 7814895104822883482
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
@@ -4838,7 +4834,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 18263634593835897870
+        Id: 11184176270898479612
       }
     }
     Overrides {
@@ -4874,7 +4870,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2963511162220209088
+  Id: 7814895104822883482
   Name: "Xp"
   Transform {
     Location {
@@ -4887,7 +4883,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13840542890017569834
+  ParentId: 5418543141830812168
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4918,7 +4914,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10413194075134009080
+  Id: 6274994464449894127
   Name: "Gold"
   Transform {
     Location {
@@ -4931,7 +4927,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13840542890017569834
+  ParentId: 5418543141830812168
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -4962,7 +4958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14906839633742179370
+  Id: 10779886695317365181
   Name: "Silver"
   Transform {
     Location {
@@ -4975,7 +4971,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13840542890017569834
+  ParentId: 5418543141830812168
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -5006,8 +5002,8 @@ Objects {
   }
 }
 Objects {
-  Id: 7551796521153726216
-  Name: "New Upgrade"
+  Id: 7345418812446977277
+  Name: "Destroyer Commander"
   Transform {
     Location {
     }
@@ -5020,21 +5016,21 @@ Objects {
     }
   }
   ParentId: 9552982199017133135
-  ChildIds: 14899752347905664502
-  ChildIds: 15875240512720941302
-  ChildIds: 3928025683306841277
+  ChildIds: 9146046644163359601
+  ChildIds: 4992779428193568860
+  ChildIds: 5980517064367909281
   UnregisteredParameters {
     Overrides {
       Name: "cs:Description"
-      String: "Acquire a tank upgrade"
+      String: "Play 100 matches as a tank destroyer"
     }
     Overrides {
       Name: "cs:Required"
-      Float: 1
+      Float: 100
     }
     Overrides {
       Name: "cs:ID"
-      String: "ANU"
+      String: "ADC"
     }
     Overrides {
       Name: "cs:Enabled"
@@ -5043,7 +5039,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 9349277896133220339
+        Id: 17950514252831705614
       }
     }
     Overrides {
@@ -5053,6 +5049,10 @@ Objects {
     Overrides {
       Name: "cs:Family"
       String: ""
+    }
+    Overrides {
+      Name: "cs:PreRequisite"
+      String: "ADP,ADS"
     }
     Overrides {
       Name: "cs:GivesReward"
@@ -5075,7 +5075,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3928025683306841277
+  Id: 5980517064367909281
   Name: "Xp"
   Transform {
     Location {
@@ -5088,7 +5088,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7551796521153726216
+  ParentId: 7345418812446977277
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -5100,7 +5100,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 1000
+      Int: 8000
     }
   }
   Collidable_v2 {
@@ -5119,7 +5119,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15875240512720941302
+  Id: 4992779428193568860
   Name: "Gold"
   Transform {
     Location {
@@ -5132,7 +5132,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7551796521153726216
+  ParentId: 7345418812446977277
   UnregisteredParameters {
     Overrides {
       Name: "cs:ResourceName"
@@ -5140,11 +5140,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 25
+      Int: 100
     }
   }
   Collidable_v2 {
@@ -5163,7 +5163,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14899752347905664502
+  Id: 9146046644163359601
   Name: "Silver"
   Transform {
     Location {
@@ -5176,7 +5176,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7551796521153726216
+  ParentId: 7345418812446977277
   UnregisteredParameters {
     Overrides {
       Name: "cs:Enabled"
@@ -5188,7 +5188,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Amount"
-      Int: 50
+      Int: 400
     }
   }
   Collidable_v2 {

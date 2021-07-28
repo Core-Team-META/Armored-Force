@@ -285,6 +285,7 @@ Assets {
         }
         ParentId: 9441944356507771009
         ChildIds: 5540960193283575971
+        ChildIds: 11687080163539145943
         ChildIds: 14452531482724014868
         ChildIds: 15378713470675685141
         ChildIds: 3457133412785525432
@@ -292,7 +293,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -368,7 +369,75 @@ Assets {
               Id: 10820194954338241369
             }
             Color {
+              R: 0.00966666453
+              G: 0.02
               A: 0.8
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11687080163539145943
+        Name: "Icon"
+        Transform {
+          Location {
+            X: -4.35779476
+            Y: 49.8097382
+            Z: 115
+          }
+          Rotation {
+            Yaw: -1.2806604e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10221530821180569240
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 62
+          Height: 62
+          UIX: 9
+          UIY: 9
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 8577223158266405289
+            }
+            Color {
+              R: 0.159999967
+              A: 1
             }
             TeamSettings {
             }
@@ -433,9 +502,9 @@ Assets {
             }
             Color {
               R: 1
-              G: 1
-              B: 1
-              A: 0.9
+              G: 0.00999999
+              B: 0.00999999
+              A: 1
             }
             TeamSettings {
             }
@@ -497,8 +566,8 @@ Assets {
             Label: "TANK HIT!"
             Color {
               R: 1
-              G: 1
-              B: 1
+              G: 0.00999999
+              B: 0.00999999
               A: 1
             }
             Size: 20
@@ -507,11 +576,15 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 2044747135125227812
+              Id: 15392186923000422511
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -581,11 +654,15 @@ Assets {
               Value: "mc:etextjustify:left"
             }
             Font {
-              Id: 2044747135125227812
+              Id: 17191612518869424272
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -639,12 +716,21 @@ Assets {
       }
     }
     Assets {
-      Id: 2044747135125227812
-      Name: "Play"
+      Id: 15392186923000422511
+      Name: "Teko Bold"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "PlayRegular_ref"
+        AssetId: "TekoBold_ref"
+      }
+    }
+    Assets {
+      Id: 17191612518869424272
+      Name: "Teko Light"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "TekoLight_ref"
       }
     }
     PrimaryAssetId {

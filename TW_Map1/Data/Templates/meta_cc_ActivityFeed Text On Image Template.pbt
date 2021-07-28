@@ -98,10 +98,9 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.0989583358
-              G: 0.0989583358
-              B: 0.0989583358
-              A: 1
+              R: 0.00331125734
+              G: 0.01
+              A: 0.582
             }
             TeamSettings {
             }
@@ -157,9 +156,8 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.59375
-              G: 0.59375
-              B: 0.59375
+              R: 0.0311059505
+              G: 0.0610000044
               A: 0.896
             }
             TeamSettings {
@@ -216,9 +214,8 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.59375
-              G: 0.59375
-              B: 0.59375
+              R: 0.0311059505
+              G: 0.0610000044
               A: 0.896
             }
             TeamSettings {
@@ -275,9 +272,8 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.59375
-              G: 0.59375
-              B: 0.59375
+              R: 0.0311059505
+              G: 0.0610000044
               A: 0.896
             }
             TeamSettings {
@@ -334,9 +330,8 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.59375
-              G: 0.59375
-              B: 0.59375
+              R: 0.0311059505
+              G: 0.0610000044
               A: 0.896
             }
             TeamSettings {
@@ -522,8 +517,12 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 16636415353835813981
+              Id: 17191612518869424272
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -559,12 +558,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16636415353835813981
-      Name: "Teko"
+      Id: 17191612518869424272
+      Name: "Teko Light"
       PlatformAssetType: 28
       PrimaryAsset {
         AssetType: "FontAssetRef"
-        AssetId: "TekoRegular_ref"
+        AssetId: "TekoLight_ref"
       }
     }
     PrimaryAssetId {

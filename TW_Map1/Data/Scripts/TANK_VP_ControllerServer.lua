@@ -872,26 +872,26 @@ function Tick()
 					chassis.maxSpeed = originalSpeed * 1.2
 					chassis.tireFriction = originalFriction * 2
 					chassis.accelerationRate = originalAcceleration * 1.40
-					print("boosting tank")
+					--print("boosting tank")
 				end
 			elseif math.abs(currentRotation.x) < 10 or math.abs(currentRotation.y) < 10 then
 				if chassis.maxSpeed > originalSpeed then
 					chassis.maxSpeed = originalSpeed
 					chassis.tireFriction = originalFriction
 					chassis.accelerationRate = originalAcceleration
-					print("Restoring tank stats")
+					--print("Restoring tank stats")
 				end
 			end
 			
 			if not driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31") then 
 				if chassis.turnSpeed == originalTurnSpeed then
 					chassis.turnSpeed = math.floor(originalTurnSpeed * 1.1)
-					print("boosting turn speed")
+					--print("boosting turn speed")
 				end
 			elseif driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31") then 
 				if chassis.turnSpeed > originalTurnSpeed then
 					chassis.turnSpeed = originalTurnSpeed
-					print("Restoring turn speed")
+					--print("Restoring turn speed")
 				end
 			end
 		end

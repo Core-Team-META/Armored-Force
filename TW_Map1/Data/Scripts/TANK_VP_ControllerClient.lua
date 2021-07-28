@@ -39,6 +39,8 @@ local driver = nil
 
 -- Additional Local Variables
 local tankSet = false
+local tankReady = false
+local speedMultiplier = 0
 local saluteOverride = false
 local animateListener = nil
 local destroyedListener = nil
@@ -52,7 +54,9 @@ end
 
 function CheckTankReady()
 
-	if not tankControllerServer:GetCustomProperty("TankReady") then
+	tankReady = tankControllerServer:GetCustomProperty("TankReady")
+
+	if not tankReady then
 		return
 	end
 	
@@ -72,6 +76,8 @@ function CheckTankReady()
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
 	
+	Task.Wait(1)
+	
 	treadsLeft = tankBodyClient:FindDescendantByName("TreadsLeft")
 	treadsRight = tankBodyClient:FindDescendantByName("TreadsRight")
 	
@@ -81,7 +87,7 @@ function CheckTankReady()
 	turretServer = hitbox:FindDescendantByName("Turret")
 	cannonServer = hitbox:FindDescendantByName("Cannon")
 
-	adjustmentPoint = tankBodyClient:FindDescendantByName("AdjustmentPoint")	
+	adjustmentPoint = tankBodyClient:FindDescendantByName("AdjustmentPoint")
 	turretClient = tankBodyClient:FindDescendantByName("Turret")
 	cannonClient = tankBodyClient:FindDescendantByName("Cannon")
 	barrelClient = tankBodyClient:FindDescendantByName("Barrel")
@@ -182,6 +188,10 @@ function OnTankStateChanged(controllerServer, property)
 			barrelDamageState.visibility = Visibility.FORCE_OFF
 			barrelClient.visibility = Visibility.INHERIT
 		end
+	elseif property == "TankReady" then
+		tankReady = tankControllerServer:GetCustomProperty(property)
+	elseif property == "WheelSpeedMultiplier" then
+	 	wheelSpeedModifier = tankControllerServer:GetCustomProperty(property)
 	end
 
 end
@@ -231,8 +241,6 @@ function FiringAnimation(player, reloadTime)
 	
 	if Object.IsValid(barrelClient) then
 		barrelClient:MoveTo(Vector3.New(-recoilAmount, 0, 0), 0.12, true)
-	else
-		barrelClient = tankBodyClient:FindDescendantByName("Barrel")
 	end
 	
 	Task.Wait(0.13)
@@ -347,7 +355,6 @@ function SetWheelSpeed()
 	
 	local leftSpeedMultiplier = 1
 	local rightSpeedMultiplier = 1
-	local speedMultiplier = tankControllerServer:GetCustomProperty("WheelSpeedMultiplier")
 		
 	local movementSpeed = tankBodyServer:GetVelocity().size * speedMultiplier
 	local rotationSpeed = tankBodyServer:GetAngularVelocity().z
@@ -409,7 +416,7 @@ function Tick()
 		return
 	end
 	
-	if not tankControllerServer:GetCustomProperty("TankReady") then
+	if not tankReady then
 		if Object.IsValid(tankBodyClient) then
 			tankBodyClient:Destroy()
 		end
@@ -419,18 +426,10 @@ function Tick()
 
 	if Object.IsValid(turretClient) and Object.IsValid(turretServer) then
 		turretClient:RotateTo(turretServer:GetRotation(), 0.1, true)
-	else 
-		local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
-		turretServer = hitbox:FindDescendantByName("Turret")
-		turretClient = tankBodyClient:FindDescendantByName("Turret")
 	end
 
 	if Object.IsValid(cannonClient) and Object.IsValid(cannonServer) then
 		cannonClient:RotateTo(cannonServer:GetRotation(), 0.1, true)
-	else 
-		local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
-		cannonServer = hitbox:FindDescendantByName("Cannon")
-		cannonClient = tankBodyClient:FindDescendantByName("Cannon")
 	end
 	
 	SetWheelSpeed()
