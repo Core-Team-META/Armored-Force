@@ -801,7 +801,7 @@ function AdjustTurretAim()
 	local viewPosition = driver:GetViewWorldPosition()
 	local viewRotation = driver:GetViewWorldRotation()
 
-	target:MoveTo(RaycastResultFromPointRotationDistance(viewPosition, viewRotation, 100000), 0.1, false)
+	target:MoveTo(RaycastResultFromPointRotationDistance(viewPosition, viewRotation, 100000), 0.01, false)
 	
 	if not Object.IsValid(cannon) or not Object.IsValid(cannonGuide) then
 		return

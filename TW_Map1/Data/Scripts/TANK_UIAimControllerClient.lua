@@ -29,10 +29,16 @@ local defaultCamera = nil
 local sniperCamera = nil
 local bindingPressedListener = nil
 local previousDistance = 0
+local previousHighlight = nil
+local previousPosition = nil
+local previousPositionHold = nil
+local movementModifier = 0.7
 local distanceMaxed = false
+local uiPostion = nil
+local customEaseTask = nil
 
 local cannon = nil
-local previousHighlights = nil
+local turretTrackingSpeed = 0
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -57,13 +63,14 @@ local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 		
 	if raycastPoint then
 		destination = raycastPoint:GetImpactPosition()
-		CheckEnemyTank(raycastPoint)
 		previousDistance = tonumber(math.ceil((destination - cannon:GetWorldPosition()).size))
 		distanceMaxed = false
 	else
 		destination = (direction * previousDistance) + point
 		distanceMaxed = true
 	end
+	
+	CheckEnemyTank(raycastPoint)
 	
 	return destination
 
@@ -98,6 +105,11 @@ function FindTank()
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
 	sniperCamera.currentDistance = sniperCamera.maxDistance
+	
+	local turretRotation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedTraverse")
+	local turretElevation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedElevation")
+	
+	turretTrackingSpeed = (turretRotation + turretElevation) * 0.0003
 			
 	Task.Wait(0.1)
 				
@@ -120,38 +132,118 @@ function UpdatePointer()
 		distanceReadout.text = tostring(distance) .. " m"
 	end
 	
-	local uiPostion = UI.GetScreenPosition(position)
+	uiPostion = UI.GetScreenPosition(position)
+	--uiPostion.y = uiPostion.y + 10
 		
 	if uiPostion then
 		truePointer.visibility = Visibility.FORCE_ON
 		
-		EaseUI.EaseX(truePointer, uiPostion.x, 0.005, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.INOUT)
-		EaseUI.EaseY(truePointer, uiPostion.y, 0.005, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.INOUT)
-	else 
+		if previousPosition then
+			local differenceXY = (previousPosition - uiPostion).size
+			
+			if (differenceXY < 5) then
+				movementModifier = 0.25
+			elseif (differenceXY < 10) then
+				movementModifier = 0.5
+			else 
+				movementModifier = 0.7
+			end
+		end
+		
+		--EaseUI.EaseX(truePointer, uiPostion.x, turretTrackingSpeed, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+		--EaseUI.EaseY(truePointer, uiPostion.y, turretTrackingSpeed, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+		--[[
+		if customEaseTask then 
+			customEaseTask:Cancel()
+		end
+		
+		customEaseTask = Task.Spawn(CustomEaseReticle)
+		]]
+			
+		local differenceX = uiPostion.x - truePointer.x
+		local differenceY = uiPostion.y - truePointer.y
+		
+		if (differenceX > 5) or (differenceY > 5) then
+			truePointer.x = truePointer.x + (differenceX * movementModifier)
+			truePointer.y = truePointer.y + (differenceY * movementModifier)	
+		else
+			truePointer.x = uiPostion.x
+			truePointer.y = uiPostion.y			
+		end
+		
+		previousPosition = uiPostion
+	else
 		truePointer.visibility = Visibility.FORCE_OFF
+	end
+
+end
+
+function CustomEaseReticle()
+
+	local originalX = truePointer.x
+	local originalY = truePointer.y
+	
+	local differenceX = uiPostion.x - truePointer.x
+	local differenceY = uiPostion.y - truePointer.y
+	
+	for i = 1, 3 do
+		truePointer.x = originalX + (differenceX * i * i / 9)
+		truePointer.y = originalY + (differenceY * i * i / 9)
+		Task.Wait()
 	end
 
 end
 
 function CheckEnemyTank(raycastResult)
 	
-	local possibleEnemy = raycastResult.other
+	if raycastResult then
+		local possibleTank = raycastResult.other
+		
+		if Object.IsValid(possibleTank) and ((possibleTank.type == "TreadedVehicle") or (possibleTank.type == "Vehicle")) then
+			local otherDriver = possibleTank .driver
+			local enemyOutline = otherDriver.clientUserData.currentTankData.enemyOutline
+			local allyOutline = otherDriver.clientUserData.currentTankData.allyOutline
+						
+			if  (otherDriver.team ~= localPlayer.team) then
+				if Object.IsValid(enemyOutline) then
+					if not previousHighlight or (previousHighlight ~= enemyOutline) then
+						if Object.IsValid(previousHighlight) then
+							previousHighlight:SetSmartProperty("Enabled", false)
+							previousHighlight.visibility = Visibility.FORCE_OFF
+						end
+						
+						enemyOutline:SetSmartProperty("Enabled", true)
+						enemyOutline.visibility = Visibility.FORCE_ON
+						previousHighlight = enemyOutline
+						return
+					elseif previousHighlight and (previousHighlight == enemyOutline) then
+						return
+					end
+				end
+			elseif (otherDriver.team == localPlayer.team) then
+				if Object.IsValid(allyOutline) then
+					if not previousHighlight or (previousHighlight ~= allyOutline) then
+						if Object.IsValid(previousHighlight) then
+							previousHighlight:SetSmartProperty("Enabled", false)
+							previousHighlight.visibility = Visibility.FORCE_OFF
+						end
+						
+						allyOutline:SetSmartProperty("Enabled", true)
+						allyOutline.visibility = Visibility.FORCE_ON
+						previousHighlight = allyOutline	
+						return
+					elseif previousHighlight and (previousHighlight == allyOutline) then
+						return
+					end
+				end
+			end
+		end
+	end
 	
-	if Object.IsValid(possibleEnemy) and ((possibleEnemy.type == "TreadedVehicle") or (possibleEnemy.type == "Vehicle")) then
-		local enemyDriver = possibleEnemy.driver
-		local enemyOutline = enemyDriver.clientUserData.currentTankData.enemyOutline
-		
-		if Object.IsValid(previousHighlights) then
-			previousHighlights:SetSmartProperty("Enabled", false)
-		end
-		
-		enemyOutline:SetSmartProperty("Enabled", true)
-		
-		previousHighlights = enemyOutline
-	else 
-		if Object.IsValid(previousHighlights) then
-			previousHighlights:SetSmartProperty("Enabled", false)
-		end
+	if Object.IsValid(previousHighlight) then
+		previousHighlight:SetSmartProperty("Enabled", false)
+		previousHighlight.visibility = Visibility.FORCE_OFF
+		previousHighlight = nil
 	end
 	
 end
@@ -249,13 +341,9 @@ function Tick(dt)
 		local maxZoom = currentCamera.minDistance
 		local minZoom = currentCamera.maxDistance
 		
-		local fov = (1 - math.abs((minZoom - currentZoom)/maxZoom)) * 90
-		
-		if fov < 10 then
-			fov = 10
-		end
-		
-		print(fov)
+		local fov = ((1 - math.abs((minZoom - currentZoom)/maxZoom)) * 70) + 20
+				
+		--print(fov)
 		currentCamera.fieldOfView = fov
 		
 		zoom.text = string.format("%.1f", (minZoom - currentZoom)/200) .. "xZoom"

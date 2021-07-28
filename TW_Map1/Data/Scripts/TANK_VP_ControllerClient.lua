@@ -125,6 +125,7 @@ function SetClientData()
 	driver.clientUserData.currentTankData.chassis = tankBodyServer
 	driver.clientUserData.currentTankData.skin = tankBodyClient
 	driver.clientUserData.currentTankData.enemyOutline = tankBodyClient:FindDescendantByName("EnemyOutline")
+	driver.clientUserData.currentTankData.allyOutline = tankBodyClient:FindDescendantByName("AllyOutline")
 	driver.clientUserData.currentTankData.reloadSFX = tankBodyClient:FindDescendantByName("ReloadSFX")
 	driver.clientUserData.currentTankData.type = tankControllerServer:GetCustomProperty("Type")
 	driver.clientUserData.currentTankData.id = tankControllerServer:GetCustomProperty("Identifier")
@@ -134,8 +135,6 @@ function SetClientData()
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
 
-	
-	
 	Events.Broadcast("EquippedTankDataSet", nil)
 	Events.Broadcast("INITIALIZE_SKIN", driver)
 end
