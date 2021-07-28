@@ -32,6 +32,8 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local SFX = script:GetCustomProperty("SFX")
 local AchievementPanelTemplate = script:GetCustomProperty("Achievement_EndScreen_Template")
 local ScrollPanelTemplate = script:GetCustomProperty("UIAchievementScrollPanel")
+local REWARD_SFX = script:GetCustomProperty("REWARD_SFX")
+
 
 local achievementScrollPanel = script:GetCustomProperty("ACHIEVEMENT_SCROLL"):WaitForObject()
 ------------------------------------------------------------------------------------------------------------------------
@@ -182,12 +184,11 @@ local function BuildAchievementInfoPanel()
                 for _, reward in ipairs(achievement.rewards) do
                     local rewardAmount = reward:GetCustomProperty("Amount")
                     local resoureName = reward:GetCustomProperty("ResourceName")
-                    if resoureName == "Free RP" then
+                    if resoureName == "Free XP" then
                         resoureName = "Xp"
                     end
                     rewardPanels[resoureName].visibility = Visibility.FORCE_ON
                     rewardPanels[resoureName]:GetCustomProperty("Value"):WaitForObject().text = tostring(rewardAmount)
-                    
                 end
             end
 
@@ -233,8 +234,28 @@ function OnResourceChanged(player, resName, resAmt)
 end
 
 function OnClaimButtonPressed(button)
-    Events.BroadcastToServer("AS.RewardClaim", button.clientUserData.key)
-    button.isInteractable = false
+    local id = button.clientUserData.key
+    if ACH_API.HasRewards(id) then
+        Events.BroadcastToServer("AS.RewardClaim", button.clientUserData.key)
+        button.isInteractable = false
+
+        local str = "You earned "
+        local achievement = ACH_API.GetAchievementInfo(id)
+        
+        for i, reward in ipairs(achievement.rewards) do
+            local rewardAmount = reward:GetCustomProperty("Amount")
+            if str ~= "You earned " then
+                str = str .. " " .. tostring(rewardAmount) .. " " .. reward.name
+            else
+                str = str .. tostring(rewardAmount) .. " " .. reward.name
+            end
+            if i < #achievement.rewards then
+                str = str .. " and "
+            end
+        end
+        Events.Broadcast("SEND_POPUP", LOCAL_PLAYER, "Achievement Reward Claimed", str)
+        World.SpawnAsset(REWARD_SFX)
+    end
 end
 
 function Int()
