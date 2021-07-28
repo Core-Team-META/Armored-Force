@@ -91,7 +91,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -109,8 +109,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541186869
+              R: 0.0251333285
+              G: 0.052
               A: 0.347
             }
             TeamSettings {
@@ -166,8 +166,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.107299984
+              G: 0.222000018
               A: 0.896
             }
             TeamSettings {
@@ -223,8 +223,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.107299984
+              G: 0.222000018
               A: 0.896
             }
             TeamSettings {
@@ -280,8 +280,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.107299984
+              G: 0.222000018
               A: 0.896
             }
             TeamSettings {
@@ -337,8 +337,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.107299984
+              G: 0.222000018
               A: 0.896
             }
             TeamSettings {

@@ -100,8 +100,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541186869
+              R: 0.12469998
+              G: 0.258000016
               A: 0.347
             }
             TeamSettings {
@@ -157,8 +157,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.115033314
+              G: 0.238
               A: 0.896
             }
             TeamSettings {
@@ -214,8 +214,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.115033314
+              G: 0.238
               A: 0.896
             }
             TeamSettings {
@@ -271,8 +271,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.115033314
+              G: 0.238
               A: 0.896
             }
             TeamSettings {
@@ -328,8 +328,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 1
-              G: 0.541187048
+              R: 0.115033314
+              G: 0.238
               A: 0.896
             }
             TeamSettings {
