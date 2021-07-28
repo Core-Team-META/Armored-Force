@@ -64818,7 +64818,7 @@ Objects {
   Control {
     Width: 100
     Height: 588
-    UIY: 86.0389099
+    UIY: 84
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -65205,7 +65205,7 @@ Objects {
   Control {
     Width: 100
     Height: 45
-    UIY: 45
+    UIY: 43
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -68153,6 +68153,7 @@ Objects {
   Control {
     Width: 100
     Height: 45
+    UIY: -2
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -68464,9 +68465,6 @@ Objects {
         Id: 14060330023043759337
       }
       Color {
-        R: 0.00151763496
-        G: 0.00182116206
-        B: 0.000910581031
         A: 1
       }
       TeamSettings {
