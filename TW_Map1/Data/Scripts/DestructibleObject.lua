@@ -19,6 +19,9 @@ local removeGroup = script:GetCustomProperty("RemoveGroup"):WaitForObject()
 -- Group holds all the objects to be animated
 local debrisGroup = script:GetCustomProperty("DebrisGroup"):WaitForObject()
 
+--Group holds objects that with no lifespan
+local LeftBehindGroup = script:GetCustomProperty("LeftBehindGroup"):WaitForObject()
+
 local destructionTrigger = script.parent
 
 local reset = {}
@@ -55,8 +58,15 @@ function handleOverlap(trigger, object)
 	        end
         end
            
-        -- Activate debris physics for everything else
+        -- Activate debris physics with lifespan
         for _, child in ipairs(debrisGroup:GetChildren()) do          
+            child.isSimulatingDebrisPhysics = true
+            child.cameraCollision = 2
+            child.lifeSpan = 7
+        end
+
+        -- Activate debris physics without lifespan
+        for _, child in ipairs(LeftBehindGroup:GetChildren()) do          
             child.isSimulatingDebrisPhysics = true
             child.cameraCollision = 2
         end

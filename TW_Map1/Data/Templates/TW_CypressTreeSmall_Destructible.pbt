@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4201784248664273807
         ChildIds: 6798404182982961803
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -46,6 +46,7 @@ Assets {
         }
         ParentId: 9207146627308462243
         ChildIds: 1475242666077670921
+        ChildIds: 3475152810076863
         ChildIds: 6152720106281832704
         ChildIds: 13218924075978672668
         Collidable_v2 {
@@ -150,6 +151,12 @@ Assets {
               SubObjectId: 13218924075978672668
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 3475152810076863
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -228,12 +235,14 @@ Assets {
         }
       }
       Objects {
-        Id: 6152720106281832704
-        Name: "DebrisGroup"
+        Id: 3475152810076863
+        Name: "LeftBehindGroup"
         Transform {
           Location {
           }
           Rotation {
+            Yaw: -1.33402125e-08
+            Roll: 1.91699074e-17
           }
           Scale {
             X: 1
@@ -242,9 +251,9 @@ Assets {
           }
         }
         ParentId: 6798404182982961803
-        ChildIds: 15646432391396198029
+        ChildIds: 830568982513063756
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -252,20 +261,26 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
           IsGroup: true
         }
       }
       Objects {
-        Id: 15646432391396198029
+        Id: 830568982513063756
         Name: "CollisionMesh"
         Transform {
           Location {
-            X: 19.8393555
-            Y: -12.1210938
+            X: 19.838623
+            Y: -12.1214514
+            Z: 8.62169545e-05
           }
           Rotation {
             Pitch: 90
+            Yaw: 13.5123177
+            Roll: 13.5123177
           }
           Scale {
             X: 1.03233874
@@ -273,11 +288,10 @@ Assets {
             Z: 1.03233874
           }
         }
-        ParentId: 6152720106281832704
-        ChildIds: 14176047893082355728
-        ChildIds: 3652990064864544601
-        ChildIds: 5125104286890624834
-        ChildIds: 9502993011161997323
+        ParentId: 3475152810076863
+        ChildIds: 2594353239451501018
+        ChildIds: 18405579336806290376
+        ChildIds: 15692428298642666467
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -303,18 +317,18 @@ Assets {
         }
       }
       Objects {
-        Id: 14176047893082355728
+        Id: 2594353239451501018
         Name: "Bush 02"
         Transform {
           Location {
-            X: 487.290161
-            Y: 9.02456379
-            Z: 16.212553
+            X: 487.29007
+            Y: 9.0242548
+            Z: 16.2116966
           }
           Rotation {
-            Pitch: -32.5274963
-            Yaw: 89.9999924
-            Roll: -89.9999924
+            Pitch: -32.527523
+            Yaw: 90.0000076
+            Roll: -90.0000076
           }
           Scale {
             X: 0.583608508
@@ -322,7 +336,7 @@ Assets {
             Z: 1.91472292
           }
         }
-        ParentId: 15646432391396198029
+        ParentId: 830568982513063756
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -362,16 +376,18 @@ Assets {
         }
       }
       Objects {
-        Id: 3652990064864544601
+        Id: 18405579336806290376
         Name: "Tree Redwood Bare Big"
         Transform {
           Location {
-            X: 4.38540316
-            Y: 11.7413921
-            Z: 19.2178726
+            X: 4.38535357
+            Y: 11.7416687
+            Z: 19.2175026
           }
           Rotation {
             Pitch: -90
+            Yaw: 2.76737404
+            Roll: -2.7673645
           }
           Scale {
             X: 0.145902127
@@ -379,7 +395,7 @@ Assets {
             Z: 0.409990281
           }
         }
-        ParentId: 15646432391396198029
+        ParentId: 830568982513063756
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -405,77 +421,18 @@ Assets {
         }
       }
       Objects {
-        Id: 5125104286890624834
+        Id: 15692428298642666467
         Name: "Bush 02"
         Transform {
           Location {
-            X: 304.918335
-            Y: 14.2009163
-            Z: 16.2125244
+            X: 485.36792
+            Y: 14.2008314
+            Z: 16.2117558
           }
           Rotation {
-            Pitch: -37.1728363
-            Yaw: -89.9999542
-            Roll: -89.9999313
-          }
-          Scale {
-            X: 0.583608508
-            Y: 0.583608508
-            Z: 1.02131486
-          }
-        }
-        ParentId: 15646432391396198029
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Nature_Leaves:id"
-            AssetReference {
-              Id: 5200444972158461565
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 8528548367235743505
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5445362466723085375
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 9502993011161997323
-        Name: "Bush 02"
-        Transform {
-          Location {
-            X: 485.367981
-            Y: 14.2009163
-            Z: 16.2125244
-          }
-          Rotation {
-            Pitch: -83.4660339
+            Pitch: -83.4659119
             Yaw: 89.9987946
-            Roll: 89.998558
+            Roll: 89.998291
           }
           Scale {
             X: 0.444035441
@@ -483,7 +440,7 @@ Assets {
             Z: 0.89788276
           }
         }
-        ParentId: 15646432391396198029
+        ParentId: 830568982513063756
         UnregisteredParameters {
           Overrides {
             Name: "ma:Nature_Leaves:id"
@@ -523,6 +480,34 @@ Assets {
         }
       }
       Objects {
+        Id: 6152720106281832704
+        Name: "DebrisGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6798404182982961803
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 13218924075978672668
         Name: "RemoveGroup"
         Transform {
@@ -537,6 +522,7 @@ Assets {
           }
         }
         ParentId: 6798404182982961803
+        ChildIds: 5125104286890624834
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -548,6 +534,65 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 5125104286890624834
+        Name: "Bush 02"
+        Transform {
+          Location {
+            X: 3.10123539
+            Y: 2.53853965
+            Z: 314.779144
+          }
+          Rotation {
+            Pitch: 6.14717e-05
+            Yaw: -52.8271942
+            Roll: -179.999893
+          }
+          Scale {
+            X: 0.602481663
+            Y: 0.602481663
+            Z: 1.05434287
+          }
+        }
+        ParentId: 13218924075978672668
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Leaves:id"
+            AssetReference {
+              Id: 5200444972158461565
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8528548367235743505
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5445362466723085375
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
         }
       }
     }
