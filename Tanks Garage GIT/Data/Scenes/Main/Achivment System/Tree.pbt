@@ -5371,7 +5371,7 @@ Objects {
     Overrides {
       Name: "cs:REWARD_SFX"
       AssetReference {
-        Id: 4641029729553894282
+        Id: 8077372839145882330
       }
     }
   }
