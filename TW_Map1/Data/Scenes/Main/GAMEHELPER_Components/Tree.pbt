@@ -270,6 +270,40 @@ Objects {
   }
 }
 Objects {
+  Id: 16842327816437332582
+  Name: "AimUI"
+  Transform {
+    Location {
+      X: 120
+      Y: -135
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16867063847943140816
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "AimUI"
+  }
+}
+Objects {
   Id: 11175525954432956736
   Name: "DailyChallenges"
   Transform {

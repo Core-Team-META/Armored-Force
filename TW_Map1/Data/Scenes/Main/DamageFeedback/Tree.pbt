@@ -48,7 +48,6 @@ Objects {
   }
   ParentId: 16423817195477429338
   ChildIds: 14238420280652590820
-  ChildIds: 16842327816437332582
   ChildIds: 17081616456123407072
   ChildIds: 9438686850797871809
   ChildIds: 10428535769661285001
@@ -1372,41 +1371,6 @@ Objects {
       Falloff: 3600
       Radius: 400
     }
-  }
-}
-Objects {
-  Id: 16842327816437332582
-  Name: "AimUI"
-  Transform {
-    Location {
-      X: 955
-      Y: -1090
-      Z: -700
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5100236706336899924
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "AimUI"
   }
 }
 Objects {

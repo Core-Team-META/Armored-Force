@@ -93,8 +93,9 @@ function FindTank()
 	cannon = clientSkin:FindDescendantByName("Cannon")
 				
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
+	defaultCamera.currentDistance = defaultCamera.minDistance + 400
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
-	sniperCamera.minDistance = sniperCamera.minDistance - 4000
+	sniperCamera.currentDistance = sniperCamera.maxDistance
 			
 	Task.Wait(0.1)
 				
@@ -223,7 +224,16 @@ function Tick(dt)
 		local maxZoom = currentCamera.minDistance
 		local minZoom = currentCamera.maxDistance
 		
-		zoom.text = string.format("%.1f", (minZoom - currentZoom)/1000) .. "xZoom"
+		local fov = (1 - math.abs((minZoom - currentZoom)/maxZoom)) * 90
+		
+		if fov < 10 then
+			fov = 10
+		end
+		
+		print(fov)
+		currentCamera.fieldOfView = fov
+		
+		zoom.text = string.format("%.1f", (minZoom - currentZoom)/200) .. "xZoom"
 		zoom.visibility = Visibility.INHERIT
 	else 
 		zoom.visibility = Visibility.FORCE_OFF
