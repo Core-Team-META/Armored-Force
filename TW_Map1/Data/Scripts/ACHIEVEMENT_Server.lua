@@ -204,6 +204,23 @@ function OnTankAcquired(player, tankId, teir)
     end
 end
 
+
+function OnBurntTank(player)
+
+end
+
+function OnRammedTank(player)
+
+end
+
+function OnDamageTurret(player)
+
+end
+
+function OnDamageBarrel(player)
+
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 -- LISTENERS
 ------------------------------------------------------------------------------------------------------------------------
@@ -222,10 +239,10 @@ Events.Connect("TankAcquired", OnTankAcquired)
 
 
 -- From tank controller
---Events.Connect("PlayerBurntTank")
---Events.Connect("PlayerRammedTank")
---Events.Connect("PlayerDamageTurret")
---Events.Connect("PlayerDamageBarrel")
+Events.Connect("PlayerBurntTank", OnBurntTank)
+Events.Connect("PlayerRammedTank" , OnRammedTank)
+Events.Connect("PlayerDamageTurret", OnDamageTurret)
+Events.Connect("PlayerDamageBarrel", OnDamageBarrel)
 
 
 -- Client Broadcast Listeners
