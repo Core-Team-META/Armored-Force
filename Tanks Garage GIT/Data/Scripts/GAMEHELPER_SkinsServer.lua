@@ -76,8 +76,13 @@ function OnPurchaseSkin(player, tankID, skinID)
 	end
 		
 	player:RemoveResource(allIndividualSkins[tankID][skinID].resource, allIndividualSkins[tankID][skinID].cost)
-	 
+
+	for _, s in pairs(camoTable[tankID]) do
+		s.equipped = false
+	end
+	
 	camoTable[tankID][skinID].purchased = true
+	camoTable[tankID][skinID].equipped = true
 	
 	--print("Purchasing " .. tostring(skinID) .. " on " .. tostring(tankID) .. " for " .. player.name)
 	 
