@@ -2,7 +2,7 @@ local AdminData = {}
 
 AdminRanks = {
     None = 0,
-    Admin = 1,
+    Admin = 2,
     HigherAdmin = 2,
 }
 
