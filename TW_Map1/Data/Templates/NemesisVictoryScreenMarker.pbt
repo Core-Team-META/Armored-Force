@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17237569339051846686
+        ParentId: 11736082122057135142
         ChildIds: 15881454517365026817
         ChildIds: 9822752793401934933
         ChildIds: 17473472118798695169
@@ -60,7 +60,7 @@ Assets {
         Control {
           Width: 274
           Height: 115
-          UIY: -94
+          UIY: -62.1601868
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -391,7 +391,6 @@ Assets {
         ChildIds: 17058736651215198701
         ChildIds: 11939203648904140043
         ChildIds: 17517869775080453389
-        ChildIds: 6343532072490567693
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -452,7 +451,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 4
+          Width: 8
           Height: 3
           RenderTransformPivot {
             Anchor {
@@ -467,10 +466,9 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.00500000035
-              G: 0.00500000035
-              B: 0.00500000035
-              A: 0.866000056
+              R: 0.00334437075
+              G: 0.005
+              A: 1
             }
             TeamSettings {
             }
@@ -724,69 +722,6 @@ Assets {
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middleright"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 6343532072490567693
-        Name: "GRADIENT_BOTTOM"
-        Transform {
-          Location {
-            X: 3.05175781e-05
-            Y: -7.27595718e-12
-          }
-          Rotation {
-            Yaw: -4.09811219e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18397620128974826238
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: 49
-          Height: 115
-          UIX: 112.000381
-          RotationAngle: 90
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 10820194954338241369
-            }
-            Color {
-              R: 0.256166607
-              G: 0.53
-              A: 0.384
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
               }
             }
           }
@@ -1146,9 +1081,9 @@ Assets {
           Text {
             Label: "YOUR NEMESIS"
             Color {
-              R: 0.871367335
-              G: 0.278894424
-              B: 0.0122865
+              R: 0.421191931
+              G: 1
+              B: 0.0799999833
               A: 1
             }
             Size: 16
@@ -1158,6 +1093,10 @@ Assets {
             Font {
               Id: 16636415353835813981
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -1222,6 +1161,10 @@ Assets {
             Font {
               Id: 17191612518869424272
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -1260,7 +1203,6 @@ Assets {
         ChildIds: 17162138161064639662
         ChildIds: 1224956515174735137
         ChildIds: 17013826430120836428
-        ChildIds: 6369704981874304703
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1322,7 +1264,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 4
+          Width: 8
           Height: 3
           RenderTransformPivot {
             Anchor {
@@ -1337,9 +1279,9 @@ Assets {
               Id: 4504686085818425438
             }
             Color {
-              R: 0.00483333273
+              R: 0.00483333133
               G: 0.0100000007
-              A: 0.836
+              A: 1
             }
             TeamSettings {
             }
@@ -1599,69 +1541,6 @@ Assets {
         }
       }
       Objects {
-        Id: 6369704981874304703
-        Name: "GRADIENT_BOTTOM"
-        Transform {
-          Location {
-            X: 3.05175781e-05
-            Y: -7.27595718e-12
-          }
-          Rotation {
-            Yaw: -3.05175636e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10940065831248363933
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Control {
-          Width: 49
-          Height: 115
-          UIX: 112.000381
-          RotationAngle: 90
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 10820194954338241369
-            }
-            Color {
-              R: 0.48333323
-              G: 1
-              A: 0.4
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
-      Objects {
         Id: 8538674644365357627
         Name: "Destroyed Panel"
         Transform {
@@ -1758,8 +1637,8 @@ Assets {
           Text {
             Label: "YOU CRUSHED"
             Color {
-              G: 0.0670291409
-              B: 0.0833333358
+              R: 0.0211920291
+              G: 0.0399999619
               A: 1
             }
             Size: 16
@@ -1821,8 +1700,8 @@ Assets {
           Text {
             Label: "YOU CRUSHED"
             Color {
-              G: 0.0670291409
-              B: 0.0833333358
+              R: 0.0211920291
+              G: 0.0399999619
               A: 1
             }
             Size: 16
@@ -1884,8 +1763,8 @@ Assets {
           Text {
             Label: "YOU CRUSHED"
             Color {
-              G: 0.0670291409
-              B: 0.0833333358
+              R: 0.0211920291
+              G: 0.0399999619
               A: 1
             }
             Size: 16
@@ -1948,8 +1827,8 @@ Assets {
           Text {
             Label: "YOU CRUSHED"
             Color {
-              G: 0.0670291409
-              B: 0.0833333358
+              R: 0.0211920291
+              G: 0.0399999619
               A: 1
             }
             Size: 16
@@ -2012,8 +1891,7 @@ Assets {
           Text {
             Label: "YOU CRUSHED"
             Color {
-              G: 0.960000038
-              B: 0.654834628
+              R: 0.960000038
               A: 1
             }
             Size: 16
@@ -2023,6 +1901,10 @@ Assets {
             Font {
               Id: 16636415353835813981
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -2087,6 +1969,10 @@ Assets {
             Font {
               Id: 17191612518869424272
             }
+            OutlineColor {
+              A: 1
+            }
+            OutlineSize: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -2119,15 +2005,6 @@ Assets {
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "BackgroundNoOutline_020"
-      }
-    }
-    Assets {
-      Id: 10820194954338241369
-      Name: "BG Highlighted 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundHighlighted_020"
       }
     }
     Assets {
