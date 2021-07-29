@@ -153,6 +153,8 @@ Objects {
   }
   ParentId: 7370467027480966964
   ChildIds: 9841690839693065895
+  ChildIds: 2610502910480872192
+  ChildIds: 5842622570273123138
   ChildIds: 5124609931129294577
   ChildIds: 17356312327196818689
   ChildIds: 9907340296530993454
@@ -1526,6 +1528,177 @@ Objects {
   }
 }
 Objects {
+  Id: 5842622570273123138
+  Name: "LoggingText"
+  Transform {
+    Location {
+      X: 62766.7617
+      Y: 56660.8633
+      Z: -12259.4531
+    }
+    Rotation {
+      Yaw: 13.9371605
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2648684809247424534
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 121
+    Height: 60
+    UIX: 131.677444
+    UIY: -33.184967
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Logging..."
+      Color {
+        R: 0.99
+        G: 0.786754966
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      ClipTextToSize: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2610502910480872192
+  Name: "TimerText"
+  Transform {
+    Location {
+      X: 62766.7773
+      Y: 56660.8633
+      Z: -12259.4531
+    }
+    Rotation {
+      Yaw: 13.9371414
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2648684809247424534
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 83
+    Height: 60
+    UIX: 235.377731
+    UIY: -33.184967
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "00:00"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 15
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+      ClipTextToSize: true
+      Font {
+        Id: 841534158063459245
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+        X: 1
+        Y: 1
+      }
+      OutlineColor {
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 9841690839693065895
   Name: "Background"
   Transform {
@@ -1558,9 +1731,9 @@ Objects {
   }
   Control {
     Width: 521
-    Height: 218
+    Height: 237
     UIX: 319.023315
-    UIY: -20.58284
+    UIY: -40.7425232
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1676,6 +1849,24 @@ Objects {
       Name: "cs:FPSMeter_v2"
       ObjectReference {
         SelfId: 1649683199937492505
+      }
+    }
+    Overrides {
+      Name: "cs:FPSMeterCommandsAPI"
+      AssetReference {
+        Id: 17775000266512524489
+      }
+    }
+    Overrides {
+      Name: "cs:TimerText"
+      ObjectReference {
+        SelfId: 2610502910480872192
+      }
+    }
+    Overrides {
+      Name: "cs:LoggingText"
+      ObjectReference {
+        SelfId: 5842622570273123138
       }
     }
   }
