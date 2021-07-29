@@ -210,6 +210,18 @@ commands = {
         adminOnly = true,
         adminRank = AdminData.AdminRanks.Admin
     },
+    ["/fps"] = {
+        OnCommandCalledClient = function (player, message)
+        end,
+        OnCommandCalledServer = function (player, message)
+        end,
+        OnCommandReceivedClient = function (player, message)
+        end,
+        description = "shows a list of available commands",
+        requireMessage = false,
+        adminOnly = false,
+        adminRank = AdminData.AdminRanks.None
+    },
 
     ["/help"] = {
         OnCommandCalledClient = function (player, message)
