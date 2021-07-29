@@ -20,6 +20,8 @@ local tankGarage = World.FindObjectByName("TANK_VP_TankGarage")
 
 local localPlayer = Game.GetLocalPlayer()
 
+local fifoQueue = {first = 0, last = -1, list = {}}
+
 local reloadSpeed = 1
 local reloading = false
 local accumulatedReloadingTime = 0
@@ -35,10 +37,36 @@ local previousPositionHold = nil
 local movementModifier = 0.7
 local distanceMaxed = false
 local uiPostion = nil
-local customEaseTask = nil
 
 local cannon = nil
 local turretTrackingSpeed = 0
+
+local function PushQueue(value)
+
+	local last = fifoQueue.last + 1
+  
+	fifoQueue.last = last
+	fifoQueue.list[last] = value
+  
+end
+
+local function PopQueue()
+
+	 local first = fifoQueue.first
+  
+	 if fifoQueue.first > fifoQueue.last then 
+		 warn("Queue is empty")
+		 return nil
+	 end
+	  
+	local value = fifoQueue.list[first]
+	  
+	fifoQueue.list[first] = nil
+	fifoQueue.first = first + 1
+	  
+	return value
+  
+end
 
 local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	
@@ -123,7 +151,30 @@ end
 
 function UpdatePointer()
 
-	local position = RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(),cannon:GetWorldRotation(), 100000)
+	local cannonInfo = {cannon:GetWorldPosition(), cannon:GetWorldRotation()}
+	
+	-- Aiming Enhancement: Stablization --START--
+	PushQueue(cannonInfo)
+
+	if fifoQueue.last - fifoQueue.first < 9 then
+		return
+	end
+	
+	local averagePosition = Vector3.ZERO
+	local averageRotation = Rotation.ZERO
+	
+	for _, x in pairs(fifoQueue.list) do
+		averagePosition = averagePosition + x[1]
+		averageRotation = averageRotation + x[2]
+	end
+	
+	averagePosition = Vector3.New(averagePosition.x / 10, averagePosition.y / 10, averagePosition.z / 10)
+	averageRotation = Rotation.New(averageRotation.x / 10, averageRotation.y / 10, averageRotation.z / 10)
+		
+	PopQueue()
+	-- Aiming Enhancement: Stablization --END-- ]]
+		
+	local position = RaycastResultFromPointRotationDistance(averagePosition, averageRotation, 100000)
 	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
 	
 	if distanceMaxed then
@@ -133,35 +184,29 @@ function UpdatePointer()
 	end
 	
 	uiPostion = UI.GetScreenPosition(position)
-	--uiPostion.y = uiPostion.y + 10
 		
 	if uiPostion then
 		truePointer.visibility = Visibility.FORCE_ON
 		
+		-- Aiming Enhancement: Custom "Easing" --START--
 		if previousPosition then
 			local differenceXY = (previousPosition - uiPostion).size
 			
 			if (differenceXY < 5) then
-				movementModifier = 0.2
-			elseif (differenceXY < 10) then
-				movementModifier = 0.4
-			elseif (differenceXY < 15) then
 				movementModifier = 0.6
-			else 
+			elseif (differenceXY < 10) then
+				movementModifier = 0.7
+			elseif (differenceXY < 15) then
 				movementModifier = 0.8
+			elseif (differenceXY < 20) then
+				movementModifier = 0.9
+			else 
+				movementModifier = 0.99
 			end
 		end
+		-- Aiming Enhancement: Custom "Easing" --END-- ]]
 		
-		--EaseUI.EaseX(truePointer, uiPostion.x, turretTrackingSpeed, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
-		--EaseUI.EaseY(truePointer, uiPostion.y, turretTrackingSpeed, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
-		--[[
-		if customEaseTask then
-			customEaseTask:Cancel()
-		end
-		
-		customEaseTask = Task.Spawn(CustomEaseReticle)
-		]]
-		
+				
 		local differenceX = uiPostion.x - truePointer.x
 		local differenceY = uiPostion.y - truePointer.y
 		
@@ -176,22 +221,6 @@ function UpdatePointer()
 		previousPosition = uiPostion
 	else
 		truePointer.visibility = Visibility.FORCE_OFF
-	end
-
-end
-
-function CustomEaseReticle()
-
-	local originalX = truePointer.x
-	local originalY = truePointer.y
-	
-	local differenceX = uiPostion.x - truePointer.x
-	local differenceY = uiPostion.y - truePointer.y
-	
-	for i = 1, 3 do
-		truePointer.x = originalX + (differenceX * i * i / 9)
-		truePointer.y = originalY + (differenceY * i * i / 9)
-		Task.Wait()
 	end
 
 end
