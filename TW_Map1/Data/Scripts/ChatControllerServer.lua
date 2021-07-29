@@ -18,6 +18,9 @@
              COMMANDS_LIST[splitMessage[1]].OnCommandCalledServer(player, params.message)
              return 
          end
+
+         --#TODO move below admin rank check
+         COMMANDS_LIST[splitMessage[1]].OnCommandCalledServer(player, params.message)
  
          --- Admin ranking check
          if COMMANDS_LIST[splitMessage[1]].adminOnly then
@@ -26,7 +29,6 @@
              end
          end
  
-         COMMANDS_LIST[splitMessage[1]].OnCommandCalledServer(player, params.message)
      end
  end
  
