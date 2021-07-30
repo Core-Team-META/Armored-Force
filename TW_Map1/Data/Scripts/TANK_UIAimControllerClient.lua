@@ -128,7 +128,7 @@ function FindTank()
 		return
 	end
 	
-	local clientSkin = localPlayer.clientUserData.currentTankData.skin	
+	local clientSkin = localPlayer.clientUserData.currentTankData.skin
 
 	turret = clientSkin:FindDescendantByName("Turret")
 	cannon = clientSkin:FindDescendantByName("Cannon")
@@ -186,14 +186,14 @@ function UpdatePointer()
 	
 	averagePosition = averagePosition * (1/averageSampleSize)
 	averageRotation = averageRotation * (1/averageSampleSize)
-
-	if previousAverage.prevPosition and (previousAverage.prevPosition - averagePosition).size and (previousAverage.prevPosition - averagePosition).size < 5 then
+	
+	if previousAverage.prevPosition and (previousAverage.prevPosition - averagePosition).size and (previousAverage.prevPosition - averagePosition).size < 1 then
 		averagePosition = previousAverage.prevPosition
-	else 
+	else
 		previousAverage.prevPosition = averagePosition
 	end
 	
-	if previousAverage.prevRotation and (previousAverage.prevRotation - averageRotation).size and (previousAverage.prevRotation - averageRotation).size < 5 then
+	if previousAverage.prevRotation and (previousAverage.prevRotation - averageRotation).size and (previousAverage.prevRotation - averageRotation).size < 1 then
 		averageRotation = previousAverage.prevRotation
 	else
 		previousAverage.prevRotation = averageRotation
@@ -204,6 +204,8 @@ function UpdatePointer()
 	local position = RaycastResultFromPointRotationDistance(averagePosition, averageRotation, 100000)
 	local distance = math.ceil((position - aimAssistant:GetWorldPosition()).size * 5 / 1000)
 	
+	CoreDebug.DrawLine(averagePosition, position)
+	
 	if distanceMaxed then
 		distanceReadout.text = "--m"
 	else
@@ -213,44 +215,41 @@ function UpdatePointer()
 	uiPostion = UI.GetScreenPosition(position)
 		
 	if uiPostion then
-		--[[
+				
 		if previousPosition then
-			local difference = (uiPostion - previousPosition)
+			local difference = (uiPostion - previousPosition).size
 		
-			if difference.size > 20 then
+			if difference > 20 then
 				movementModifier = 1
-			elseif difference.size > 15 then
+			elseif difference > 15 then
 				movementModifier = 0.95
-			elseif difference.size > 10 then
+			elseif difference > 10 then
 				movementModifier = 0.9
-			elseif difference.size > 5 then
+			elseif difference > 5 then
 				movementModifier = 0.85
-			else 
+			else
 				movementModifier = 0.8
 			end
 			
-			local differenceX = uiPostion.x - truePointer.x
-			local differenceY = uiPostion.y - truePointer.y
-					
-			truePointer.x = truePointer.x + (differenceX * movementModifier)
-			truePointer.y = truePointer.y + (differenceY * movementModifier)
-		else 
-			truePointer.x = uiPostion.x
-			truePointer.y = uiPostion.y
-			
+			if difference > 1000 then
+				movementModifier = 0
+			else
+				previousPosition = uiPostion
+			end
+		else
+			movementModifier = 1
 			previousPosition = uiPostion
 		end
+				
+		local newPointerPosition = Vector2.New(truePointer.x, truePointer.y)
+		newPointerPosition = Vector2.Lerp(uiPostion, newPointerPosition, movementModifier)
 		
-		if previousPosition and ((previousPosition - uiPostion).size > 20) then
-			previousPosition = uiPostion
-		end
-		]]
-		
-		truePointer.x = uiPostion.x
-		truePointer.y = uiPostion.y
+		truePointer.x = newPointerPosition.x
+		truePointer.y = newPointerPosition.y
 		
 		truePointer.visibility = Visibility.FORCE_ON
 	else
+	--[[
 		truePointer.visibility = Visibility.FORCE_OFF
 		
 		for _, x in pairs(fifoQueue.list) do
@@ -258,6 +257,7 @@ function UpdatePointer()
 		end
 		
 		fifoQueue = {first = 0, last = -1, list = {}}
+		]]
 	end
 
 end
