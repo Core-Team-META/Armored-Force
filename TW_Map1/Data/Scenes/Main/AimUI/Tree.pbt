@@ -46,6 +46,7 @@ Objects {
   ParentId: 14333869037356955201
   ChildIds: 6442640525002005018
   ChildIds: 14385233128880218042
+  ChildIds: 7543557251099692153
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -56,6 +57,65 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 7543557251099692153
+  Name: "AimAssistant"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 0.3
+    }
+  }
+  ParentId: 15035987992301513599
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.979000032
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    DisableAngularMotionBlur: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -2204,6 +2264,12 @@ Objects {
       Name: "cs:Zoom"
       ObjectReference {
         SelfId: 10832260739602932818
+      }
+    }
+    Overrides {
+      Name: "cs:AimAssistant"
+      ObjectReference {
+        SelfId: 7543557251099692153
       }
     }
     Overrides {

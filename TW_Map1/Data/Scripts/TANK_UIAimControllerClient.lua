@@ -12,6 +12,7 @@ local reloadProgress = script:GetCustomProperty("ReloadProgress"):WaitForObject(
 local fireState = script:GetCustomProperty("FireState"):WaitForObject()
 local redDot = script:GetCustomProperty("RedDot"):WaitForObject()
 local zoom = script:GetCustomProperty("Zoom"):WaitForObject()
+local aimAssistant = script:GetCustomProperty("AimAssistant"):WaitForObject()
 
 local reloadColor = script:GetCustomProperty("ReloadColor")
 local activeColor = script:GetCustomProperty("ActiveColor")
@@ -25,23 +26,24 @@ local fifoQueue = {first = 0, last = -1, list = {}}
 local reloadSpeed = 1
 local reloading = false
 local accumulatedReloadingTime = 0
+local previousAverage = {}
+local averageSampleSize = 10
 
 local bindingPressedListener = nil
 local previousDistance = 0
 local previousHighlight = nil
 local previousPosition = nil
-local previousPositionHold = nil
-local movementModifier = 0.7
+local previousRotationHold = nil
+local previousMuzzle = nil
+local movementModifier = 1
 local distanceMaxed = false
 local uiPostion = nil
-
 
 local turret = nil
 local cannon = nil
 local muzzle = nil
 local defaultCamera = nil
 local sniperCamera = nil
-local turretTrackingSpeed = 0
 
 local function PushQueue(value)
 
@@ -131,7 +133,11 @@ function FindTank()
 	turret = clientSkin:FindDescendantByName("Turret")
 	cannon = clientSkin:FindDescendantByName("Cannon")
 	muzzle = clientSkin:FindDescendantByName("FiringFX")
-				
+	
+	--aimAssistant:SetWorldPosition(cannon:GetWorldPosition())
+	--Task.Wait()
+	--aimAssistant:Follow(muzzle, 10000, 0)
+	
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
@@ -139,8 +145,6 @@ function FindTank()
 	
 	local turretRotation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedTraverse")
 	local turretElevation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedElevation")
-	
-	turretTrackingSpeed = (turretRotation + turretElevation) * 0.0003
 			
 	Task.Wait(0.1)
 				
@@ -153,32 +157,52 @@ function FindTank()
 end
 
 function UpdatePointer()
-
 	local muzzleInfo = {muzzle:GetWorldPosition(), muzzle:GetWorldRotation()}
 	
 	-- Aiming Enhancement: Stablization --START--
-	PushQueue(muzzleInfo)
+	if previousMuzzle then
+		local lerpedVector = Vector3.Lerp(muzzleInfo[1], previousMuzzle[1], 0.5)
+		local slerpedQuat = Quaternion.Slerp(Quaternion.New(muzzleInfo[2]), Quaternion.New(previousMuzzle[2]), 0.5):GetRotation()
+		PushQueue({lerpedVector, slerpedQuat})
+	else
+		PushQueue(muzzleInfo)
+	end
+	
+	previousMuzzle = muzzleInfo
 
-	if fifoQueue.last - fifoQueue.first < 9 then
+	if fifoQueue.last - fifoQueue.first < averageSampleSize - 1 then
 		return
 	end
 	
 	local averagePosition = Vector3.ZERO
 	local averageRotation = Rotation.ZERO
 	
-	for _, x in pairs(fifoQueue.list) do
+	for i, x in pairs(fifoQueue.list) do
 		averagePosition = averagePosition + x[1]
 		averageRotation = averageRotation + x[2]
 	end
 	
-	averagePosition = Vector3.New(averagePosition.x / 10, averagePosition.y / 10, averagePosition.z / 10)
-	averageRotation = Rotation.New(averageRotation.x / 10, averageRotation.y / 10, averageRotation.z / 10)
-		
 	PopQueue()
+	
+	averagePosition = averagePosition * (1/averageSampleSize)
+	averageRotation = averageRotation * (1/averageSampleSize)
+
+	if previousAverage.prevPosition and (previousAverage.prevPosition - averagePosition).size and (previousAverage.prevPosition - averagePosition).size < 5 then
+		averagePosition = previousAverage.prevPosition
+	else 
+		previousAverage.prevPosition = averagePosition
+	end
+	
+	if previousAverage.prevRotation and (previousAverage.prevRotation - averageRotation).size and (previousAverage.prevRotation - averageRotation).size < 5 then
+		averageRotation = previousAverage.prevRotation
+	else
+		previousAverage.prevRotation = averageRotation
+	end
+
 	-- Aiming Enhancement: Stablization --END-- ]]
 		
 	local position = RaycastResultFromPointRotationDistance(averagePosition, averageRotation, 100000)
-	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
+	local distance = math.ceil((position - aimAssistant:GetWorldPosition()).size * 5 / 1000)
 	
 	if distanceMaxed then
 		distanceReadout.text = "--m"
@@ -189,10 +213,10 @@ function UpdatePointer()
 	uiPostion = UI.GetScreenPosition(position)
 		
 	if uiPostion then
-		
+		--[[
 		if previousPosition then
 			local difference = (uiPostion - previousPosition)
-					
+		
 			if difference.size > 20 then
 				movementModifier = 1
 			elseif difference.size > 15 then
@@ -220,6 +244,10 @@ function UpdatePointer()
 		if previousPosition and ((previousPosition - uiPostion).size > 20) then
 			previousPosition = uiPostion
 		end
+		]]
+		
+		truePointer.x = uiPostion.x
+		truePointer.y = uiPostion.y
 		
 		truePointer.visibility = Visibility.FORCE_ON
 	else
@@ -347,6 +375,10 @@ function Tick(dt)
 		
 		return
 	end
+	
+	--if Object.IsValid(muzzle) then
+	--	aimAssistant:RotateTo(muzzle:GetWorldRotation(), 0.25, false)
+	--end
 	
 	reticleUI.visibility = Visibility.INHERIT
 	
