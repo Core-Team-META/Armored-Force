@@ -26,9 +26,6 @@ local reloadSpeed = 1
 local reloading = false
 local accumulatedReloadingTime = 0
 
-local turret = nil
-local defaultCamera = nil
-local sniperCamera = nil
 local bindingPressedListener = nil
 local previousDistance = 0
 local previousHighlight = nil
@@ -38,7 +35,12 @@ local movementModifier = 0.7
 local distanceMaxed = false
 local uiPostion = nil
 
+
+local turret = nil
 local cannon = nil
+local muzzle = nil
+local defaultCamera = nil
+local sniperCamera = nil
 local turretTrackingSpeed = 0
 
 local function PushQueue(value)
@@ -128,6 +130,7 @@ function FindTank()
 
 	turret = clientSkin:FindDescendantByName("Turret")
 	cannon = clientSkin:FindDescendantByName("Cannon")
+	muzzle = clientSkin:FindDescendantByName("FiringFX")
 				
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
@@ -151,10 +154,10 @@ end
 
 function UpdatePointer()
 
-	local cannonInfo = {cannon:GetWorldPosition(), cannon:GetWorldRotation()}
+	local muzzleInfo = {muzzle:GetWorldPosition(), muzzle:GetWorldRotation()}
 	
 	-- Aiming Enhancement: Stablization --START--
-	PushQueue(cannonInfo)
+	PushQueue(muzzleInfo)
 
 	if fifoQueue.last - fifoQueue.first < 9 then
 		return
@@ -186,41 +189,47 @@ function UpdatePointer()
 	uiPostion = UI.GetScreenPosition(position)
 		
 	if uiPostion then
-		truePointer.visibility = Visibility.FORCE_ON
 		
-		-- Aiming Enhancement: Custom "Easing" --START--
 		if previousPosition then
-			local differenceXY = (previousPosition - uiPostion).size
-			
-			if (differenceXY < 5) then
-				movementModifier = 0.6
-			elseif (differenceXY < 10) then
-				movementModifier = 0.7
-			elseif (differenceXY < 15) then
-				movementModifier = 0.8
-			elseif (differenceXY < 20) then
+			local difference = (uiPostion - previousPosition)
+					
+			if difference.size > 20 then
+				movementModifier = 1
+			elseif difference.size > 15 then
+				movementModifier = 0.95
+			elseif difference.size > 10 then
 				movementModifier = 0.9
+			elseif difference.size > 5 then
+				movementModifier = 0.85
 			else 
-				movementModifier = 0.99
+				movementModifier = 0.8
 			end
-		end
-		-- Aiming Enhancement: Custom "Easing" --END-- ]]
-		
-				
-		local differenceX = uiPostion.x - truePointer.x
-		local differenceY = uiPostion.y - truePointer.y
-		
-		if (differenceX > 5) or (differenceY > 5) then
+			
+			local differenceX = uiPostion.x - truePointer.x
+			local differenceY = uiPostion.y - truePointer.y
+					
 			truePointer.x = truePointer.x + (differenceX * movementModifier)
 			truePointer.y = truePointer.y + (differenceY * movementModifier)
-		else
+		else 
 			truePointer.x = uiPostion.x
 			truePointer.y = uiPostion.y
+			
+			previousPosition = uiPostion
 		end
 		
-		previousPosition = uiPostion
+		if previousPosition and ((previousPosition - uiPostion).size > 20) then
+			previousPosition = uiPostion
+		end
+		
+		truePointer.visibility = Visibility.FORCE_ON
 	else
 		truePointer.visibility = Visibility.FORCE_OFF
+		
+		for _, x in pairs(fifoQueue.list) do
+			x = nil
+		end
+		
+		fifoQueue = {first = 0, last = -1, list = {}}
 	end
 
 end
