@@ -46,7 +46,7 @@ Objects {
   ParentId: 14333869037356955201
   ChildIds: 6442640525002005018
   ChildIds: 14385233128880218042
-  ChildIds: 7543557251099692153
+  ChildIds: 13419417229784553925
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -60,10 +60,109 @@ Objects {
   }
 }
 Objects {
+  Id: 13419417229784553925
+  Name: "AimAssistantBase"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15035987992301513599
+  ChildIds: 4984012371871443609
+  ChildIds: 7086514194132394284
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7086514194132394284
+  Name: "AimAssistantOffset"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13419417229784553925
+  ChildIds: 12421583094399823290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12421583094399823290
+  Name: "AimAssistantElevation"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7086514194132394284
+  ChildIds: 17697632352391063435
+  ChildIds: 7543557251099692153
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 7543557251099692153
   Name: "AimAssistant"
   Transform {
     Location {
+      X: 10000
     }
     Rotation {
     }
@@ -73,7 +172,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 15035987992301513599
+  ParentId: 12421583094399823290
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -91,7 +190,126 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    DisableAngularMotionBlur: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17697632352391063435
+  Name: "guide"
+  Transform {
+    Location {
+      X: 230
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.30000019
+      Y: 0.3
+      Z: 0.2
+    }
+  }
+  ParentId: 12421583094399823290
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.979000032
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    DisableAngularMotionBlur: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 4984012371871443609
+  Name: "guide"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.7
+      Y: 2.10000014
+      Z: 0.2
+    }
+  }
+  ParentId: 13419417229784553925
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.979000032
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceoff"
@@ -307,7 +525,7 @@ Objects {
   Control {
     Width: 70
     Height: 70
-    UIX: 1175
+    UIX: 1045
     UIY: 535
     RenderTransformPivot {
       Anchor {
@@ -2270,6 +2488,24 @@ Objects {
       Name: "cs:AimAssistant"
       ObjectReference {
         SelfId: 7543557251099692153
+      }
+    }
+    Overrides {
+      Name: "cs:AimAssistantBase"
+      ObjectReference {
+        SelfId: 13419417229784553925
+      }
+    }
+    Overrides {
+      Name: "cs:AimAssistantElevation"
+      ObjectReference {
+        SelfId: 12421583094399823290
+      }
+    }
+    Overrides {
+      Name: "cs:AimAssistantOffset"
+      ObjectReference {
+        SelfId: 7086514194132394284
       }
     }
     Overrides {

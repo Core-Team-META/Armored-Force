@@ -12,7 +12,11 @@ local reloadProgress = script:GetCustomProperty("ReloadProgress"):WaitForObject(
 local fireState = script:GetCustomProperty("FireState"):WaitForObject()
 local redDot = script:GetCustomProperty("RedDot"):WaitForObject()
 local zoom = script:GetCustomProperty("Zoom"):WaitForObject()
+
 local aimAssistant = script:GetCustomProperty("AimAssistant"):WaitForObject()
+local aimAssistantBase = script:GetCustomProperty("AimAssistantBase"):WaitForObject()
+local aimAssistantElevation = script:GetCustomProperty("AimAssistantElevation"):WaitForObject()
+local aimAssistantOffset = script:GetCustomProperty("AimAssistantOffset"):WaitForObject()
 
 local reloadColor = script:GetCustomProperty("ReloadColor")
 local activeColor = script:GetCustomProperty("ActiveColor")
@@ -29,13 +33,11 @@ local accumulatedReloadingTime = 0
 local previousAverage = {}
 local averageSampleSize = 10
 
+local aimMode = "Jordan"
+
 local bindingPressedListener = nil
 local previousDistance = 0
 local previousHighlight = nil
-local previousPosition = nil
-local previousRotationHold = nil
-local previousMuzzle = nil
-local movementModifier = 1
 local distanceMaxed = false
 local uiPostion = nil
 
@@ -44,6 +46,22 @@ local cannon = nil
 local muzzle = nil
 local defaultCamera = nil
 local sniperCamera = nil
+
+-- Original Aim Mode Variables
+local previousPosition = nil
+local previousRotationHold = nil
+local previousMuzzle = nil
+local movementModifier = 1
+
+-- Jordan Aim Mode Variables
+local cannonGuide = nil
+local tankTarget = nil
+local verticalLimits = {}
+local horizontalLimits = nil
+local rotationSpeed = 0
+local verticalSpeed = 0
+local aimBaseSpeed = 50000
+local jordanUpdateReticleTask = nil
 
 local function PushQueue(value)
 
@@ -111,13 +129,10 @@ end
 function ReloadAnimation(player, reloadTime)
 
 	if player ~= localPlayer then
-	
 		return
-		
 	end
 
 	reloadSpeed = reloadTime
-	
 	reloading = true
 	
 end
@@ -128,15 +143,42 @@ function FindTank()
 		return
 	end
 	
+	
 	local clientSkin = localPlayer.clientUserData.currentTankData.skin
+	local serverScript = localPlayer.clientUserData.currentTankData.serverControlScript
+	local chassis = localPlayer.clientUserData.currentTankData.chassis
+	local tankID = localPlayer.clientUserData.currentTankData.id
 
 	turret = clientSkin:FindDescendantByName("Turret")
 	cannon = clientSkin:FindDescendantByName("Cannon")
 	muzzle = clientSkin:FindDescendantByName("FiringFX")
 	
-	--aimAssistant:SetWorldPosition(cannon:GetWorldPosition())
-	--Task.Wait()
-	--aimAssistant:Follow(muzzle, 10000, 0)
+	-- Jordan Approach Initialization
+	
+	tankTarget = serverScript:FindDescendantByName("Target")
+	verticalLimits.max = serverScript:GetCustomProperty("MaxElevationAngle")
+	verticalLimits.min = serverScript:GetCustomProperty("MinDepressionAngle")
+	horizontalLimits = serverScript:GetCustomProperty("HorizontalCannonAngles")
+	cannonGuide = chassis:FindDescendantByName("CannonGuide")
+	
+	aimAssistantBase:SetWorldRotation(turret:GetWorldRotation())
+	
+	for _, e in ipairs(localPlayer.clientUserData.techTreeProgress) do
+		if e.id == tankID then
+			if e.engineProgress == 2 then
+				rotationSpeed = serverScript:GetCustomProperty("UpgradedTraverse")
+				verticalSpeed = serverScript:GetCustomProperty("UpgradedElevation")
+			else 
+				rotationSpeed = serverScript:GetCustomProperty("TurretTraverseSpeed")
+				verticalSpeed = serverScript:GetCustomProperty("TurretElevationSpeed")
+			end		
+			break
+		end
+	end
+	
+	if horizontalLimits <= 0 then
+		aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
+	end
 	
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
@@ -145,11 +187,13 @@ function FindTank()
 	
 	local turretRotation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedTraverse")
 	local turretElevation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedElevation")
+
 			
 	Task.Wait(0.1)
 				
 	if Object.IsValid(defaultCamera) then
 		localPlayer:SetOverrideCamera(defaultCamera)
+		aimAssistantBase:Follow(defaultCamera, aimBaseSpeed)
 		defaultCamera.currentPitch = 0
 		defaultCamera.currentYaw = localPlayer.clientUserData.currentTankData.chassis:GetWorldRotation().z
 	end
@@ -157,6 +201,64 @@ function FindTank()
 end
 
 function UpdatePointer()
+
+	if aimMode == "Jordan" then
+		JordanApproach()
+	elseif aimMode == "Original" then
+		OriginalApproach()
+	end
+
+end
+
+function JordanApproach()
+
+	local activeCamera = localPlayer:GetActiveCamera()	
+	local targetRotation = localPlayer:GetViewWorldRotation()
+	local currentRotation = aimAssistantElevation:GetRotation()
+	local distance = (tankTarget:GetWorldPosition() - activeCamera:GetWorldPosition()).size 
+	
+	aimAssistant:MoveTo(Vector3.FORWARD * distance, 0.001, true)
+	
+	aimAssistantBase:RotateTo(Rotation.New(0, 0, activeCamera:GetWorldRotation().z), 0.001, false)
+	
+	
+	if horizontalLimits <= 0 then
+		local difference = math.abs(targetRotation.y - currentRotation.y)
+		aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), difference / verticalSpeed, true)
+	else
+		if targetRotation.z > horizontalLimits then
+			targetRotation.z = horizontalLimits
+		elseif targetRotation.z < -horizontalLimits then
+			targetRotation.z = -horizontalLimits
+		end
+		local distance = math.abs(math.sqrt((targetRotation.y - currentRotation.y) ^ 2 + (targetRotation.z - currentRotation.z) ^ 2)) + 0.1
+		if not turretDown then
+			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, targetRotation.z), distance / verticalSpeed, true)
+		else
+			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, targetRotation.z), distance / verticalSpeed * 0.2, true)
+		end
+	end
+	
+	MoveToUIPosition(aimAssistant:GetWorldPosition())
+	--[[
+	local originalPosition = Vector2.New(truePointer.x, truePointer.y)
+	local lerpedPosition = originalPosition
+	uiPostion = UI.GetScreenPosition(aimAssistant:GetWorldPosition())
+
+	if uiPostion then		
+		for i = 1, 10 do
+			lerpedPosition = Vector2.Lerp(originalPosition, uiPostion, i/10)
+			truePointer.x = lerpedPosition.x
+			truePointer.y = lerpedPosition.y		
+		end
+		
+	end
+	]]
+	
+end
+
+function OriginalApproach()
+
 	local muzzleInfo = {muzzle:GetWorldPosition(), muzzle:GetWorldRotation()}
 	
 	-- Aiming Enhancement: Stablization --START--
@@ -202,9 +304,9 @@ function UpdatePointer()
 	-- Aiming Enhancement: Stablization --END-- ]]
 		
 	local position = RaycastResultFromPointRotationDistance(averagePosition, averageRotation, 100000)
-	local distance = math.ceil((position - aimAssistant:GetWorldPosition()).size * 5 / 1000)
+	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
 	
-	CoreDebug.DrawLine(averagePosition, position)
+	--CoreDebug.DrawLine(averagePosition, position)
 	
 	if distanceMaxed then
 		distanceReadout.text = "--m"
@@ -212,46 +314,48 @@ function UpdatePointer()
 		distanceReadout.text = tostring(distance) .. " m"
 	end
 	
-	uiPostion = UI.GetScreenPosition(position)
+	MoveToUIPosition(position)
 		
+end
+
+function MoveToUIPosition(positionDestination)
+
+	uiPostion = UI.GetScreenPosition(positionDestination)
+
 	if uiPostion then
-				
+
 		if previousPosition then
 			local difference = (uiPostion - previousPosition).size
 		
-			if difference > 20 then
-				movementModifier = 1
-			elseif difference > 15 then
-				movementModifier = 0.95
-			elseif difference > 10 then
-				movementModifier = 0.9
-			elseif difference > 5 then
-				movementModifier = 0.85
-			else
+			if difference > 100 then
 				movementModifier = 0.8
-			end
-			
-			if difference > 1000 then
-				movementModifier = 0
+			elseif difference > 75 then
+				movementModifier = 0.85
+			elseif difference > 50 then
+				movementModifier = 0.9
+			elseif difference > 25 then
+				movementModifier = 0.95
 			else
-				previousPosition = uiPostion
+				movementModifier = 1
 			end
-		else
-			movementModifier = 1
-			previousPosition = uiPostion
 		end
-				
-		local newPointerPosition = Vector2.New(truePointer.x, truePointer.y)
-		newPointerPosition = Vector2.Lerp(uiPostion, newPointerPosition, movementModifier)
 		
-		truePointer.x = newPointerPosition.x
-		truePointer.y = newPointerPosition.y
+		previousPosition = uiPostion
+	
+		local originalPosition = Vector2.New(truePointer.x, truePointer.y)
+		local newPointerPosition = Vector2.Lerp(originalPosition, uiPostion, movementModifier)
+		local lerpedPosition = originalPosition
+				
+		for i = 1, 10 do
+			lerpedPosition = Vector2.Lerp(originalPosition, newPointerPosition, i / 10)
+			truePointer.x = lerpedPosition.x
+			truePointer.y = lerpedPosition.y		
+		end
 		
 		truePointer.visibility = Visibility.FORCE_ON
 	else
-	--[[
 		truePointer.visibility = Visibility.FORCE_OFF
-		
+		--[[
 		for _, x in pairs(fifoQueue.list) do
 			x = nil
 		end
@@ -259,7 +363,7 @@ function UpdatePointer()
 		fifoQueue = {first = 0, last = -1, list = {}}
 		]]
 	end
-
+	
 end
 
 function CheckEnemyTank(raycastResult)
@@ -340,7 +444,9 @@ function TransitionCameras(oldCamera, newCamera)
 	
 	newCamera.currentPitch = newPitch
 	newCamera.currentYaw = newYaw
-		
+	
+	aimAssistantBase:Follow(newCamera, aimBaseSpeed)
+	
 	localPlayer:SetOverrideCamera(newCamera)
 end
 
@@ -363,10 +469,8 @@ end
 function Tick(dt)
 
 	if not Object.IsValid(cannon)  then
-		reticleUI.visibility = Visibility.FORCE_OFF
-					
+		reticleUI.visibility = Visibility.FORCE_OFF	
 		accumulatedReloadingTime = 0
-			
 		reloading = false
 	
 		FindTank()
@@ -375,11 +479,7 @@ function Tick(dt)
 		
 		return
 	end
-	
-	--if Object.IsValid(muzzle) then
-	--	aimAssistant:RotateTo(muzzle:GetWorldRotation(), 0.25, false)
-	--end
-	
+		
 	reticleUI.visibility = Visibility.INHERIT
 	
 	if reloading and reloadSpeed then
@@ -417,12 +517,9 @@ function Tick(dt)
 		local currentZoom = currentCamera.currentDistance
 		local maxZoom = currentCamera.minDistance
 		local minZoom = currentCamera.maxDistance
-		
 		local fov = ((1 - math.abs((minZoom - currentZoom)/maxZoom)) * 70) + 20
-				
-		--print(fov)
+
 		currentCamera.fieldOfView = fov
-		
 		zoom.text = string.format("%.1f", (minZoom - currentZoom)/200) .. "xZoom"
 		zoom.visibility = Visibility.INHERIT
 	else 
