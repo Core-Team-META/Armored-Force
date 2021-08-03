@@ -19,6 +19,8 @@ Assets {
         ChildIds: 15934406967518568396
         ChildIds: 14964147689984582435
         ChildIds: 4641880114394015107
+        ChildIds: 16454793949873204274
+        ChildIds: 3117315556923450765
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -29771,6 +29773,178 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 16454793949873204274
+        Name: "EnemyOutline"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3590684711126306396
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 4641880114394015107
+            }
+          }
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              R: 2
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Max Distance Thickness"
+            Float: 4
+          }
+          Overrides {
+            Name: "bp:Max Distance"
+            Float: 20
+          }
+          Overrides {
+            Name: "bp:Min Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Enabled"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Hierarchy Discovery Depth"
+            Int: 6
+          }
+          Overrides {
+            Name: "bp:Show Behind Objects"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5210035358541266842
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 3117315556923450765
+        Name: "AllyOutline"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3590684711126306396
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 4641880114394015107
+            }
+          }
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              B: 2
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Max Distance Thickness"
+            Float: 4
+          }
+          Overrides {
+            Name: "bp:Max Distance"
+            Float: 20
+          }
+          Overrides {
+            Name: "bp:Min Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Enabled"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Hierarchy Discovery Depth"
+            Int: 6
+          }
+          Overrides {
+            Name: "bp:Show Behind Objects"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 5210035358541266842
+          }
+          TeamSettings {
+          }
+        }
+      }
     }
     Assets {
       Id: 14783869045496354241
@@ -30616,6 +30790,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "wireframe_glow_001"
+      }
+    }
+    Assets {
+      Id: 5210035358541266842
+      Name: "Outline Object"
+      PlatformAssetType: 20
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_local_outline"
       }
     }
     PrimaryAssetId {
