@@ -61453,7 +61453,7 @@ Objects {
           Vector {
             X: 25225
             Y: -38100
-            Z: 275
+            Z: 225.466522
           }
         }
         Overrides {
@@ -61518,7 +61518,7 @@ Objects {
           Vector {
             X: 25190.1055
             Y: -37635.0742
-            Z: 274.999817
+            Z: 225.466339
           }
         }
         Overrides {
@@ -61583,7 +61583,7 @@ Objects {
           Vector {
             X: 25119.623
             Y: -37151.707
-            Z: 275
+            Z: 225.466522
           }
         }
         Overrides {
@@ -61648,7 +61648,7 @@ Objects {
           Vector {
             X: 25193.7344
             Y: -38554.082
-            Z: 275
+            Z: 225.466522
           }
         }
         Overrides {
@@ -63530,7 +63530,7 @@ Objects {
           Vector {
             X: -33130
             Y: 32409.6152
-            Z: 214.010437
+            Z: 184.807251
           }
         }
         Overrides {
@@ -64006,9 +64006,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 13156.2
-            Y: 22915.4434
-            Z: 388.260315
+            X: 13151.2324
+            Y: 22905.3516
+            Z: 316.622528
           }
         }
         Overrides {
@@ -64381,13 +64381,13 @@ Objects {
           Vector {
             X: 15818.2168
             Y: -27326.168
-            Z: 149.048706
+            Z: 119.931915
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -30.494091
+            Yaw: -30.4940796
           }
         }
         Overrides {
@@ -64442,15 +64442,15 @@ Objects {
           Vector {
             X: 15818.2168
             Y: -26487.6523
-            Z: 149.048706
+            Z: 119.931915
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -3.04876399
+            Pitch: -3.04876709
             Yaw: 40.7581863
-            Roll: -8.38990307
+            Roll: -8.38989258
           }
         }
         Overrides {
@@ -64503,9 +64503,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 15818.2168
-            Y: -28111.0508
-            Z: 149.048706
+            X: 15812.4404
+            Y: -28107.793
+            Z: 106.815781
           }
         }
         Overrides {
@@ -64565,17 +64565,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 15818.2168
-            Y: -28617.0469
-            Z: 149.048706
+            X: 15812.4404
+            Y: -28613.7891
+            Z: 106.815781
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -3.55929327
+            Pitch: -3.55929565
             Yaw: 37.2494354
-            Roll: -8.18754
+            Roll: -8.18753052
           }
         }
       }
@@ -66752,9 +66752,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -24543.3984
-            Y: 19756.7734
-            Z: 424.184509
+            X: -24544.6426
+            Y: 19754.4023
+            Z: 384.773438
           }
         }
         Overrides {
@@ -68886,9 +68886,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 32548.7578
-            Y: 5071.14941
-            Z: 255.012634
+            X: 32549.7656
+            Y: 5074.63916
+            Z: 231.877472
           }
         }
         Overrides {
@@ -68896,7 +68896,6 @@ Objects {
           Rotator {
             Pitch: 8.92286301
             Yaw: 73.8845139
-            Roll: -4.32116252e-07
           }
         }
         Overrides {
@@ -72972,9 +72971,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 21210.6094
-            Y: -12122.5391
-            Z: 382.828064
+            X: 21209.0078
+            Y: -12119.0605
+            Z: 358.433838
           }
         }
         Overrides {
@@ -73171,9 +73170,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 16210.3105
-            Y: -29460.8984
-            Z: 149.048706
+            X: 16205.1406
+            Y: -29457.9805
+            Z: 111.244324
           }
         }
         Overrides {
@@ -73462,8 +73461,8 @@ Objects {
           Name: "Position"
           Vector {
             X: -11274.9932
-            Y: -41985
-            Z: 250
+            Y: -41973.8516
+            Z: 179.004852
           }
         }
         Overrides {
@@ -76006,7 +76005,7 @@ Objects {
           Vector {
             X: 25307.7305
             Y: -40062.5195
-            Z: 423.558044
+            Z: 287.191071
           }
         }
         Overrides {
@@ -77720,7 +77719,7 @@ Objects {
           Vector {
             X: 18039.2617
             Y: -8563.9043
-            Z: 554.230957
+            Z: 520.841675
           }
         }
         Overrides {
@@ -78030,7 +78029,7 @@ Objects {
           Vector {
             X: 1653.55151
             Y: 19056.1094
-            Z: 321.574982
+            Z: 292.996857
           }
         }
         Overrides {
@@ -93557,12 +93556,12 @@ Objects {
     Location {
       X: -57107.043
       Y: 48950.6367
-      Z: 357.245667
+      Z: 329.477356
     }
     Rotation {
-      Pitch: 14.7298012
-      Yaw: -147.380417
-      Roll: 12.4859066
+      Pitch: 9.19458866
+      Yaw: -148.120667
+      Roll: 8.91868687
     }
     Scale {
       X: 2.53289413
@@ -101127,7 +101126,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101180,7 +101179,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101233,7 +101232,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101286,7 +101285,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101339,7 +101338,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101392,7 +101391,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101445,7 +101444,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101498,7 +101497,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101551,7 +101550,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101604,7 +101603,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101657,7 +101656,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101710,7 +101709,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101763,7 +101762,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101816,7 +101815,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -101869,7 +101868,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }
@@ -102497,7 +102496,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 11182969111770509228
+        Id: 14823769434463567155
       }
     }
   }

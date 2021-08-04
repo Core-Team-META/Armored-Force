@@ -626,7 +626,6 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -640,6 +639,7 @@ Objects {
       LocalRotationOffset {
       }
       GlobalPositionOffset {
+        Z: -10
       }
       Height {
         Max: 200
@@ -673,7 +673,6 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -734,7 +733,6 @@ Objects {
       LocalRotationOffset {
       }
       GlobalPositionOffset {
-        Z: 50
       }
       Height {
         Min: -102400
@@ -770,7 +768,6 @@ Objects {
           Max: 2
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {

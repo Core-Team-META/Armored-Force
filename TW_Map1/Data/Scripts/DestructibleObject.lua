@@ -53,23 +53,28 @@ function handleOverlap(trigger, object)
     	-- Remove problematic objects
         if Object.IsValid(removeGroup) then
 	        for _, child in ipairs(removeGroup:GetChildren()) do	            
-	            --child:Destroy()
-	            child.visibility = Visibility.FORCE_OFF
+	            child:Destroy()
+	            --child.visibility = Visibility.FORCE_OFF
 	        end
         end
            
         -- Activate debris physics with lifespan
-        for _, child in ipairs(debrisGroup:GetChildren()) do          
-            child.isSimulatingDebrisPhysics = true
-            child.cameraCollision = 2
-            child.lifeSpan = 7
+        if Object.IsValid(debrisGroup) then
+            for _, child in ipairs(debrisGroup:GetChildren()) do          
+                child.isSimulatingDebrisPhysics = true
+                child.cameraCollision = 2
+                child.lifeSpan = 7
+            end
         end
 
         -- Activate debris physics without lifespan
-        for _, child in ipairs(LeftBehindGroup:GetChildren()) do          
-            child.isSimulatingDebrisPhysics = true
-            child.cameraCollision = 2
+        if Object.IsValid(LeftBehindGroup) then
+            for _, child in ipairs(LeftBehindGroup:GetChildren()) do          
+                child.isSimulatingDebrisPhysics = true
+                child.cameraCollision = 2
+            end
         end
+
  		--[[
         -- Destroy unneeded trigger        
         if Object.IsValid(destructionTrigger) then
