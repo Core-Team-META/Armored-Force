@@ -22,7 +22,7 @@ Objects {
     }
     Overrides {
       Name: "cs:LobbyCountdown"
-      Int: 40
+      Int: 50
     }
     Overrides {
       Name: "cs:MatchMaxDuration"
@@ -77,11 +77,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Garage"
-      String: "ad55b3/armored-force"
+      String: "2bd654/armored-force-empty-map-test"
     }
     Overrides {
       Name: "cs:Map1"
-      String: "bc0283/fields-frontline"
+      String: "2bd654/armored-force-empty-map-test"
     }
   }
   Collidable_v2 {
