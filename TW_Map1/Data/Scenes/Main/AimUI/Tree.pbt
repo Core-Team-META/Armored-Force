@@ -45,6 +45,7 @@ Objects {
   }
   ParentId: 14333869037356955201
   ChildIds: 6442640525002005018
+  ChildIds: 13228438123174814425
   ChildIds: 14385233128880218042
   ChildIds: 13419417229784553925
   Collidable_v2 {
@@ -348,6 +349,7 @@ Objects {
   }
   ParentId: 15035987992301513599
   ChildIds: 11088578115018833030
+  ChildIds: 769084573011131502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -365,6 +367,140 @@ Objects {
     }
     Canvas {
       Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 769084573011131502
+  Name: "AimMode"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385233128880218042
+  ChildIds: 5854278337189404389
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 425
+    Height: 60
+    UIY: -35
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+      Opacity: 1
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5854278337189404389
+  Name: "AimModeText"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 769084573011131502
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "Aim Mode: Jordan"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 16636415353835813981
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -2409,6 +2545,42 @@ Objects {
   }
 }
 Objects {
+  Id: 13228438123174814425
+  Name: "SwapModeSFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15035987992301513599
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 8893979289421564399
+    }
+    Volume: 2
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
   Id: 6442640525002005018
   Name: "TANK_UIAimControllerClient"
   Transform {
@@ -2506,6 +2678,18 @@ Objects {
       Name: "cs:AimAssistantOffset"
       ObjectReference {
         SelfId: 7086514194132394284
+      }
+    }
+    Overrides {
+      Name: "cs:AimModeText"
+      ObjectReference {
+        SelfId: 5854278337189404389
+      }
+    }
+    Overrides {
+      Name: "cs:SwapModeSFX"
+      ObjectReference {
+        SelfId: 13228438123174814425
       }
     }
     Overrides {

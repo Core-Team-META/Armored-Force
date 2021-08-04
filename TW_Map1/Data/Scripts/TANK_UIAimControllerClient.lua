@@ -18,6 +18,10 @@ local aimAssistantBase = script:GetCustomProperty("AimAssistantBase"):WaitForObj
 local aimAssistantElevation = script:GetCustomProperty("AimAssistantElevation"):WaitForObject()
 local aimAssistantOffset = script:GetCustomProperty("AimAssistantOffset"):WaitForObject()
 
+local aimModeText = script:GetCustomProperty("AimModeText"):WaitForObject()
+local swapModeSFX = script:GetCustomProperty("SwapModeSFX"):WaitForObject()
+
+
 local reloadColor = script:GetCustomProperty("ReloadColor")
 local activeColor = script:GetCustomProperty("ActiveColor")
 
@@ -53,6 +57,7 @@ local previousPosition = nil
 local previousRotationHold = nil
 local previousMuzzle = nil
 local movementModifier = 1
+local reticleActive = false
 
 -- Jordan Aim Mode Variables
 local cannonGuide = nil
@@ -61,8 +66,10 @@ local verticalLimits = {}
 local horizontalLimits = nil
 local rotationSpeed = 0
 local verticalSpeed = 0
+local activeVerticalSpeed = 0
 local aimBaseSpeed = 50000
 local jordanUpdateReticleTask = nil
+local smoothAimMode = false
 
 local function PushQueue(value)
 
@@ -144,7 +151,6 @@ function FindTank()
 		return
 	end
 	
-	
 	local clientSkin = localPlayer.clientUserData.currentTankData.skin
 	local serverScript = localPlayer.clientUserData.currentTankData.serverControlScript
 	local chassis = localPlayer.clientUserData.currentTankData.chassis
@@ -178,14 +184,14 @@ function FindTank()
 			break
 		end
 	end
-	
-	if horizontalLimits <= 0 then
-		aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
-	end
-	
+		
 	if not moveUITask then
 		moveUITask = Task.Spawn(MoveToUIPosition)
 		moveUITask.repeatCount = -1
+	end
+	
+	if (aimMode == "Jordan") and (horizontalLimits <= 0) then
+		aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
 	end
 	
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
@@ -195,7 +201,6 @@ function FindTank()
 	
 	local turretRotation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedTraverse")
 	local turretElevation = localPlayer.clientUserData.currentTankData.serverControlScript:GetCustomProperty("UpgradedElevation")
-
 			
 	Task.Wait(0.1)
 				
@@ -210,21 +215,24 @@ end
 
 function UpdatePointer()
 
-	if aimMode == "Jordan" then
-		JordanApproach()
-	elseif aimMode == "Original" then
-		OriginalApproach()
-	end
-	
-	local position = RaycastResultFromPointRotationDistance(aimAssistant:GetWorldPosition(), aimAssistant:GetWorldRotation(), 100000)
+	local position = RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation(), 100000)
 	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
 	
 	if distanceMaxed then
-		distanceReadout.text = "--m"
+		distanceReadout.text = "-- m"
 	else
 		distanceReadout.text = tostring(distance) .. " m"
 	end
 
+	if aimMode == "Jordan" then
+		if reticleActive then
+			reticleActive = false
+		end
+		JordanApproach()
+	elseif aimMode == "Original" then
+		OriginalApproach(position)
+	end
+	
 end
 
 function JordanApproach()
@@ -232,14 +240,19 @@ function JordanApproach()
 	local activeCamera = localPlayer:GetActiveCamera()	
 	local targetRotation = localPlayer:GetViewWorldRotation()
 	local currentRotation = aimAssistantElevation:GetRotation()
-	local distance = (tankTarget:GetWorldPosition() - activeCamera:GetWorldPosition()).size 
 	
-	aimAssistant:MoveTo(Vector3.FORWARD * distance, 0.001, true)
+	if smoothAimMode then
+		activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
+		print(activeVerticalSpeed)
+	else
+		activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
+	end
+	
+	aimAssistant:MoveTo(Vector3.FORWARD * (tankTarget:GetWorldPosition() - activeCamera:GetWorldPosition()).size , 0.001, true)
 	aimAssistantBase:RotateTo(Rotation.New(0, 0, activeCamera:GetWorldRotation().z), 0.001, false)
 	
 	if horizontalLimits <= 0 then
-		local difference = math.abs(targetRotation.y - currentRotation.y)
-		aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), difference / verticalSpeed, true)
+		aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, 0), activeVerticalSpeed, true) -- difference / verticalSpeed
 	else
 		local offsetRotation = targetRotation - turret:GetWorldRotation()
 		
@@ -249,7 +262,7 @@ function JordanApproach()
 			offsetRotation.z = -horizontalLimits
 		end
 		
-		local distance = math.abs(math.sqrt((offsetRotation.y - currentRotation.y) ^ 2 + (offsetRotation.z - currentRotation.z) ^ 2)) + 0.1
+		distance = math.abs(math.sqrt((offsetRotation.y - currentRotation.y) ^ 2 + (offsetRotation.z - currentRotation.z) ^ 2)) + 0.1
 		
 		if not turretDown then
 			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, offsetRotation.z), distance / verticalSpeed, true)
@@ -260,49 +273,12 @@ function JordanApproach()
 	
 end
 
-function OriginalApproach()
+function OriginalApproach(newPosition)
 
-	local muzzleInfo = {muzzle:GetWorldPosition(), muzzle:GetWorldRotation()}
-
-	if previousMuzzle then
-		local lerpedVector = Vector3.Lerp(muzzleInfo[1], previousMuzzle[1], 0.5)
-		local slerpedQuat = Quaternion.Slerp(Quaternion.New(muzzleInfo[2]), Quaternion.New(previousMuzzle[2]), 0.5):GetRotation()
-		PushQueue({lerpedVector, slerpedQuat})
-	else
-		PushQueue(muzzleInfo)
+	if newPosition then
+		aimAssistant:MoveTo(newPosition, 0.001, false)
 	end
 	
-	previousMuzzle = muzzleInfo
-
-	if fifoQueue.last - fifoQueue.first < averageSampleSize - 1 then
-		return
-	end
-	
-	local averagePosition = Vector3.ZERO
-	local averageRotation = Rotation.ZERO
-	
-	for i, x in pairs(fifoQueue.list) do
-		averagePosition = averagePosition + x[1]
-		averageRotation = averageRotation + x[2]
-	end
-	
-	PopQueue()
-	
-	averagePosition = averagePosition * (1/averageSampleSize)
-	averageRotation = averageRotation * (1/averageSampleSize)
-	
-	if previousAverage.prevPosition and (previousAverage.prevPosition - averagePosition).size and (previousAverage.prevPosition - averagePosition).size < 1 then
-		averagePosition = previousAverage.prevPosition
-	else
-		previousAverage.prevPosition = averagePosition
-	end
-	
-	if previousAverage.prevRotation and (previousAverage.prevRotation - averageRotation).size and (previousAverage.prevRotation - averageRotation).size < 1 then
-		averageRotation = previousAverage.prevRotation
-	else
-		previousAverage.prevRotation = averageRotation
-	end
-		
 end
 
 function MoveToUIPosition()
@@ -347,27 +323,13 @@ function MoveToUIPosition()
 	
 		local originalPosition = Vector2.New(truePointer.x, truePointer.y)
 		local newPointerPosition = Vector2.Lerp(originalPosition, uiPostion, movementModifier)
-		--local lerpedPosition = originalPosition
-		--[[		
-		for i = 1, 100 do
-			lerpedPosition = Vector2.Lerp(originalPosition, newPointerPosition, i / 100)
-			truePointer.x = lerpedPosition.x
-			truePointer.y = lerpedPosition.y		
-		end
-		]]
+
 		truePointer.x = newPointerPosition.x
 		truePointer.y = newPointerPosition.y
 		
 		truePointer.visibility = Visibility.FORCE_ON
 	else
 		truePointer.visibility = Visibility.FORCE_OFF
-		--[[
-		for _, x in pairs(fifoQueue.list) do
-			x = nil
-		end
-		
-		fifoQueue = {first = 0, last = -1, list = {}}
-		]]
 	end
 	
 end
@@ -380,7 +342,7 @@ function CheckEnemyTank(raycastResult)
 		if Object.IsValid(possibleTank) and ((possibleTank.type == "TreadedVehicle") or (possibleTank.type == "Vehicle")) then
 			local otherDriver = possibleTank.driver
 			
-			if not otherDriver.clientUserData.currentTankData then
+			if not Object.IsValid(otherDriver) or not otherDriver.clientUserData.currentTankData then
 				return
 			end
 			
@@ -468,6 +430,27 @@ function OnBindingPressed(player, binding)
 			turret.visibility = Visibility.INHERIT
 			sniperView.visibility = Visibility.FORCE_OFF
 		end
+	elseif binding == "ability_extra_4" then
+		if horizontalLimits <= 0 then
+			aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
+		end
+		aimMode = "Jordan"
+		smoothAimMode = false
+		aimModeText.text = "Aim Mode: Jordan"
+		swapModeSFX:Play()
+	elseif binding == "ability_extra_5" then
+		if horizontalLimits <= 0 then
+			aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
+		end
+		aimMode = "Jordan"
+		smoothAimMode = true
+		aimModeText.text = "Aim Mode: Jordan + Slerp"
+		swapModeSFX:Play()
+	elseif binding == "ability_extra_6" then
+		aimAssistantOffset:StopRotate()
+		aimMode = "Original"
+		aimModeText.text = "Aim Mode: Original"
+		swapModeSFX:Play()
 	end
 	
 end
