@@ -612,9 +612,9 @@ function OnArmorHit(trigger, other)
 			rotation = nil,
 			tags = {id = "Ram"}
 		}
-    COMBAT.ApplyDamage(attackData)
+   		COMBAT.ApplyDamage(attackData)
     
-    Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver)
+    	Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver)
 		Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
 		
 		if otherVehicleSpeed > thisVehicleSpeed then
@@ -800,6 +800,11 @@ function AdjustTurretAim()
 	
 	local viewPosition = driver:GetViewWorldPosition()
 	local viewRotation = driver:GetViewWorldRotation()
+	local differenceZ = math.abs(viewRotation.z - turret:GetWorldRotation().z) % 360
+	
+	if differenceZ > 180 then
+		differenceZ = 360 - differenceZ
+	end
 
 	target:MoveTo(RaycastResultFromPointRotationDistance(viewPosition, viewRotation, 100000), 0.01, false)
 	
@@ -816,11 +821,12 @@ function AdjustTurretAim()
 		targetRotation.y = minDepressionAngle
 	end
 	
+	local distance = math.abs(targetRotation.y - currentRotation.y) + 0.1
+	
 	if Object.IsValid(turret) and Object.IsValid(cannon) then
 	
 		if horizontalCannonAngles <= 0 then
-			local distance = math.abs(targetRotation.y - currentRotation.y) + 0.1
-			cannon:RotateTo(Rotation.New(0, targetRotation.y, 0), distance / elevationSpeed, true)
+			cannon:RotateTo(Rotation.New(0, targetRotation.y, 0), differenceZ / traverseSpeed, true) -- distance / elevationSpeed
 		else
 		
 			if targetRotation.z > horizontalCannonAngles then

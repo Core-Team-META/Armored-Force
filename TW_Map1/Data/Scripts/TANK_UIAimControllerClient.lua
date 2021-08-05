@@ -18,10 +18,6 @@ local aimAssistantBase = script:GetCustomProperty("AimAssistantBase"):WaitForObj
 local aimAssistantElevation = script:GetCustomProperty("AimAssistantElevation"):WaitForObject()
 local aimAssistantOffset = script:GetCustomProperty("AimAssistantOffset"):WaitForObject()
 
-local aimModeText = script:GetCustomProperty("AimModeText"):WaitForObject()
-local swapModeSFX = script:GetCustomProperty("SwapModeSFX"):WaitForObject()
-
-
 local reloadColor = script:GetCustomProperty("ReloadColor")
 local activeColor = script:GetCustomProperty("ActiveColor")
 
@@ -37,8 +33,6 @@ local accumulatedReloadingTime = 0
 local previousAverage = {}
 local averageSampleSize = 10
 
-local aimMode = "Jordan"
-
 local bindingPressedListener = nil
 local moveUITask = nil
 local previousDistance = 0
@@ -48,19 +42,11 @@ local uiPostion = nil
 
 local turret = nil
 local cannon = nil
-local muzzle = nil
 local defaultCamera = nil
 local sniperCamera = nil
 
--- Original Aim Mode Variables
 local previousPosition = nil
-local previousRotationHold = nil
-local previousMuzzle = nil
 local movementModifier = 1
-local reticleActive = false
-
--- Jordan Aim Mode Variables
-local cannonGuide = nil
 local tankTarget = nil
 local verticalLimits = {}
 local horizontalLimits = nil
@@ -68,8 +54,6 @@ local rotationSpeed = 0
 local verticalSpeed = 0
 local activeVerticalSpeed = 0
 local aimBaseSpeed = 50000
-local jordanUpdateReticleTask = nil
-local smoothAimMode = false
 
 local function PushQueue(value)
 
@@ -158,19 +142,15 @@ function FindTank()
 
 	turret = clientSkin:FindDescendantByName("Turret")
 	cannon = clientSkin:FindDescendantByName("Cannon")
-	muzzle = clientSkin:FindDescendantByName("FiringFX")
-	
-	-- Jordan Approach Initialization
 	
 	tankTarget = serverScript:FindDescendantByName("Target")
 	verticalLimits.max = serverScript:GetCustomProperty("MaxElevationAngle")
 	verticalLimits.min = serverScript:GetCustomProperty("MinDepressionAngle")
 	horizontalLimits = serverScript:GetCustomProperty("HorizontalCannonAngles")
-	cannonGuide = chassis:FindDescendantByName("CannonGuide")
 	
-	aimAssistantBase:SetWorldRotation(turret:GetWorldRotation())
-	aimAssistantOffset:SetRotation(Rotation.ZERO)
-	aimAssistantElevation:SetRotation(Rotation.ZERO)
+	--aimAssistantBase:SetWorldRotation(turret:GetWorldRotation())
+	--aimAssistantOffset:SetRotation(Rotation.ZERO)
+	--aimAssistantElevation:SetRotation(Rotation.ZERO)
 	
 	for _, e in ipairs(localPlayer.clientUserData.techTreeProgress) do
 		if e.id == tankID then
@@ -189,11 +169,11 @@ function FindTank()
 		moveUITask = Task.Spawn(MoveToUIPosition)
 		moveUITask.repeatCount = -1
 	end
-	
-	if (aimMode == "Jordan") and (horizontalLimits <= 0) then
+	--[[
+	if (horizontalLimits <= 0) then
 		aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
 	end
-	
+	]]
 	defaultCamera = clientSkin:FindDescendantByName("Tank Camera")
 	defaultCamera.currentDistance = defaultCamera.minDistance + 400
 	sniperCamera = clientSkin:FindDescendantByName("Sniper Camera")
@@ -206,7 +186,7 @@ function FindTank()
 				
 	if Object.IsValid(defaultCamera) then
 		localPlayer:SetOverrideCamera(defaultCamera)
-		aimAssistantBase:Follow(defaultCamera, aimBaseSpeed)
+		--aimAssistantBase:Follow(defaultCamera, aimBaseSpeed)
 		defaultCamera.currentPitch = 0
 		defaultCamera.currentYaw = localPlayer.clientUserData.currentTankData.chassis:GetWorldRotation().z
 	end
@@ -218,19 +198,14 @@ function UpdatePointer()
 	local position = RaycastResultFromPointRotationDistance(cannon:GetWorldPosition(), cannon:GetWorldRotation(), 100000)
 	local distance = math.ceil((position - cannon:GetWorldPosition()).size * 5 / 1000)
 	
+	if position then
+		aimAssistant:MoveTo(position, 0.001, false)
+	end
+	
 	if distanceMaxed then
 		distanceReadout.text = "-- m"
 	else
 		distanceReadout.text = tostring(distance) .. " m"
-	end
-
-	if aimMode == "Jordan" then
-		if reticleActive then
-			reticleActive = false
-		end
-		JordanApproach()
-	elseif aimMode == "Original" then
-		OriginalApproach(position)
 	end
 	
 end
@@ -243,7 +218,6 @@ function JordanApproach()
 	
 	if smoothAimMode then
 		activeVerticalSpeed = (math.abs(targetRotation.z - aimAssistantOffset:GetWorldRotation().z) / rotationSpeed)
-		print(activeVerticalSpeed)
 	else
 		activeVerticalSpeed = math.abs(targetRotation.y - currentRotation.y) / verticalSpeed
 	end
@@ -269,14 +243,6 @@ function JordanApproach()
 		else
 			aimAssistantElevation:RotateTo(Rotation.New(0, targetRotation.y, offsetRotation.z), distance / verticalSpeed * 0.2, true)
 		end
-	end
-	
-end
-
-function OriginalApproach(newPosition)
-
-	if newPosition then
-		aimAssistant:MoveTo(newPosition, 0.001, false)
 	end
 	
 end
@@ -307,11 +273,11 @@ function MoveToUIPosition()
 			local difference = (uiPostion - previousPosition).size
 			
 			if difference > 100 then
-				movementModifier = 0.7
+				movementModifier = 0.85
 			elseif difference > 75 then
-				movementModifier = 0.8
-			elseif difference > 50 then
 				movementModifier = 0.9
+			elseif difference > 50 then
+				movementModifier = 0.95
 			elseif difference > 25 then
 				movementModifier = 1
 			elseif difference < 2 then
@@ -413,7 +379,7 @@ function TransitionCameras(oldCamera, newCamera)
 	newCamera.currentPitch = newPitch
 	newCamera.currentYaw = newYaw
 	
-	aimAssistantBase:Follow(newCamera, aimBaseSpeed)
+	--aimAssistantBase:Follow(newCamera, aimBaseSpeed)
 	
 	localPlayer:SetOverrideCamera(newCamera)
 end
@@ -430,27 +396,6 @@ function OnBindingPressed(player, binding)
 			turret.visibility = Visibility.INHERIT
 			sniperView.visibility = Visibility.FORCE_OFF
 		end
-	elseif binding == "ability_extra_4" then
-		if horizontalLimits <= 0 then
-			aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
-		end
-		aimMode = "Jordan"
-		smoothAimMode = false
-		aimModeText.text = "Aim Mode: Jordan"
-		swapModeSFX:Play()
-	elseif binding == "ability_extra_5" then
-		if horizontalLimits <= 0 then
-			aimAssistantOffset:LookAtContinuous(tankTarget, true, rotationSpeed/57)
-		end
-		aimMode = "Jordan"
-		smoothAimMode = true
-		aimModeText.text = "Aim Mode: Jordan + Slerp"
-		swapModeSFX:Play()
-	elseif binding == "ability_extra_6" then
-		aimAssistantOffset:StopRotate()
-		aimMode = "Original"
-		aimModeText.text = "Aim Mode: Original"
-		swapModeSFX:Play()
 	end
 	
 end
@@ -514,8 +459,10 @@ function Tick(dt)
 	else 
 		zoom.visibility = Visibility.FORCE_OFF
 	end
-	
-	UpdatePointer()
+
+	if not localPlayer:IsBindingPressed("ability_secondary") then	
+		UpdatePointer()
+	end
 		
 end
 
