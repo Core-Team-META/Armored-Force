@@ -53,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8893979289421564399
-  Name: "Tank Cannon Metal Clink Load 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_tank_cannon_metal_click_01a_Cue1_ref"
-  }
-}
-Assets {
   Id: 6552376844877606649
   Name: "Frame Ring 007 Wedge"
   PlatformAssetType: 9
