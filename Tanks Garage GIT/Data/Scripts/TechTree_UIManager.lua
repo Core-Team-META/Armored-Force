@@ -440,8 +440,8 @@ function PopulateSelectedTankPanel(id)
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if (tonumber(tank.id) == tonumber(selectedTankId)) then
 			playerTankData.weaponProgress = tank.weaponProgress
-			playerTankData.armorProgress = tank.weaponProgress
-			playerTankData.engineProgress = tank.weaponProgress
+			playerTankData.armorProgress = tank.armorProgress
+			playerTankData.engineProgress = tank.engineProgress
 		end
 	end
 
@@ -539,6 +539,7 @@ function PopulateSelectedTankPanel(id)
 			World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
 		end
 	end
+
 	PopulateOwnedTanks()
 	print(doNotShowModal)
 	if (isSelection and not doNotShowModal) then
