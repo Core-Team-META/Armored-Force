@@ -21,7 +21,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4473,8 +4473,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4485,7 +4485,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -6556,8 +6556,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6568,7 +6568,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -8776,8 +8776,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8788,7 +8788,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -8968,8 +8968,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8980,7 +8980,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -9161,8 +9161,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9173,7 +9173,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -12982,8 +12982,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -12994,7 +12994,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -15132,8 +15132,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15144,7 +15144,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -17334,8 +17334,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -17346,7 +17346,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -17526,8 +17526,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -17538,7 +17538,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -17719,8 +17719,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -17731,7 +17731,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -21539,8 +21539,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -21551,7 +21551,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -23679,8 +23679,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -23691,7 +23691,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -23872,8 +23872,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -23884,7 +23884,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -26801,8 +26801,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -26813,7 +26813,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -28878,8 +28878,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -28890,7 +28890,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -30960,8 +30960,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -30972,7 +30972,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -34230,8 +34230,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -34242,7 +34242,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -36310,8 +36310,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -36322,7 +36322,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -38500,8 +38500,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -38512,7 +38512,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -38692,8 +38692,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -38704,7 +38704,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -38885,8 +38885,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -38897,7 +38897,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -42695,8 +42695,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -42707,7 +42707,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -44842,8 +44842,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -44854,7 +44854,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -47032,8 +47032,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -47044,7 +47044,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -47224,8 +47224,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -47236,7 +47236,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -47417,8 +47417,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -47429,7 +47429,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -51226,8 +51226,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -51238,7 +51238,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -53372,8 +53372,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -53384,7 +53384,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -53565,8 +53565,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -53577,7 +53577,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -56489,8 +56489,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -56501,7 +56501,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -58569,8 +58569,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -58581,7 +58581,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
@@ -60649,8 +60649,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 10
-    Height: 11
+    Width: 12
+    Height: 13
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -60661,7 +60661,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11619439792683854596
+        Id: 5164711776771633793
       }
       Color {
         R: 0.89
