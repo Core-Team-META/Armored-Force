@@ -8,6 +8,12 @@ local DIRECTION_ROOT = script:GetCustomProperty("DirectionRoot"):WaitForObject()
 local ARROW = script:GetCustomProperty("Arrow"):WaitForObject()
 local viewRange = script:GetCustomProperty("ViewRange"):WaitForObject()
 
+local viewDirectionRoot = script:GetCustomProperty("ViewDirectionRoot"):WaitForObject()
+local viewConeClamp1 = script:GetCustomProperty("ViewConeClamp1"):WaitForObject()
+local viewConeClamp2 = script:GetCustomProperty("ViewConeClamp2"):WaitForObject()
+local viewCone = script:GetCustomProperty("ViewCone"):WaitForObject()
+
+
 ROOT.visibility = Visibility.FORCE_OFF
 
 local myPlayer = nil
@@ -24,10 +30,12 @@ function SetPlayer(player)
 	if player == localPlayer then
 		CIRCLE.visibility = Visibility.FORCE_OFF
 		viewRange.visibility = Visibility.INHERIT
+		viewCone.visibility = Visibility.INHERIT
 	else 
 		CIRCLE.visibility = Visibility.INHERIT
 		viewRange.visibility = Visibility.FORCE_OFF
 		DIRECTION_ROOT.visibility = Visibility.FORCE_OFF
+		viewCone.visibility = Visibility.FORCE_OFF
 	end
 	
 	-- Set player's initial name letter
@@ -62,11 +70,24 @@ function SetViewRange(player)
 	end
 	
 	local viewRangeInfo = player.clientUserData.currentTankData.viewRange
-	
 	local viewRangeScale = viewRangeInfo / 100 * 0.5
 	
 	viewRange.width = viewRangeScale
 	viewRange.height = viewRangeScale
+
+end
+
+function AdjustViewCone(player)
+
+	local currentCamera = player:GetActiveCamera()
+	local currentFOV = currentCamera.fieldOfView
+	local currentDistance = currentCamera.currentDistance
+	
+	viewConeClamp1.rotationAngle = math.floor(currentFOV/2)
+	viewConeClamp2.rotationAngle = math.floor(180 - currentFOV)
+	
+	viewCone.width = math.abs(math.floor(currentDistance/50)) + 150
+	viewCone.height = viewCone.width
 
 end
 
@@ -75,13 +96,16 @@ function UpdateContent()
 	
 	if myPlayer == localPlayer and CIRCLE:GetColor() ~= Color.ORANGE then
 		local rot = myPlayer:GetWorldRotation()
+		local viewRot = myPlayer:GetViewWorldRotation()
 		
 		if myPlayer.occupiedVehicle then
 			rot = myPlayer.occupiedVehicle:GetWorldRotation()
 		end
 		
 		DIRECTION_ROOT.rotationAngle = rot.z
+		viewDirectionRoot.rotationAngle = viewRot.z
 		SetViewRange(myPlayer)
+		AdjustViewCone(myPlayer)
 	else 
 		CIRCLE.team = myPlayer.team
 		SetTankIcon(myPlayer)
