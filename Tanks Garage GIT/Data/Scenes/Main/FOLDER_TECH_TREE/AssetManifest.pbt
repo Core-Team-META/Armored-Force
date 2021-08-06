@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5164711776771633793
+  Name: "Frame Outlined 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_020"
+  }
+}
+Assets {
   Id: 4913010023776999523
   Name: "Baloo 2"
   PlatformAssetType: 28
