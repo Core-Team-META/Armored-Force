@@ -95,6 +95,7 @@ local CONFIRM_WINDOW_CONFIRM_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_C
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 local SFX_EQUIP_TANK = script:GetCustomProperty("SFX_EQUIP_TANK"):WaitForObject()
 local PURCHASE_NOTIFICATION = script:GetCustomProperty("PURCHASE_NOTIFICATION"):WaitForObject()
+local EXPERIENCE_EQUIPPED_TANK = script:GetCustomProperty("EXPERIENCE_EQUIPPED_TANK"):WaitForObject()
 
 local LOCKED_TANK_CARD = script:GetCustomProperty("LOCKED_TANK_CARD"):WaitForObject()
 local CONFIRM_TANK_UPGRADE = script:GetCustomProperty("CONFIRM_TANK_UPGRADE"):WaitForObject()
@@ -433,6 +434,8 @@ function PopulateSelectedTankPanel(id)
 	tankDetails = tankData
 
 	local playerTankData = {}
+
+	EXPERIENCE_EQUIPPED_TANK.text = string.format("Tank Specific Experience: %i", LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(selectedTankId))))
 
 	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if (tonumber(tank.id) == tonumber(selectedTankId)) then
