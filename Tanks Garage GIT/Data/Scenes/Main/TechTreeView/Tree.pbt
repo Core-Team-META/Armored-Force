@@ -836,6 +836,12 @@ Objects {
         Id: 8525269059319462214
       }
     }
+    Overrides {
+      Name: "cs:EXPERIENCE_EQUIPPED_TANK"
+      ObjectReference {
+        SelfId: 8820957397431302908
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
