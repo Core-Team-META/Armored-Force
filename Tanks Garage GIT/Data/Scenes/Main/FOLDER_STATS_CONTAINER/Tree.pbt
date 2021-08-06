@@ -45860,7 +45860,7 @@ Objects {
 }
 Objects {
   Id: 8267044779363127761
-  Name: "BUTTON_UPGRADE_TURRET_PRESSED"
+  Name: "BUTTON_UPGRADE_SHELL_PRESSED"
   Transform {
     Location {
     }
@@ -52833,7 +52833,7 @@ Objects {
 }
 Objects {
   Id: 6785643538042485333
-  Name: "BUTTON_UPGRADE_TURRET_PRESSED"
+  Name: "BUTTON_UPGRADE_ENGINE_PRESSED"
   Transform {
     Location {
     }
