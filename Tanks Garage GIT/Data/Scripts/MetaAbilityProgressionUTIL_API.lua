@@ -698,5 +698,24 @@ function API.GetTierFromId(tankId)
 	return 1
 end
 
+function API.PlayerOwnsTank(techTreeProgress, tankId)
+    for i, entry in ipairs(techTreeProgress) do
+        if tonumber(entry.id) == tonumber(tankId) then
+            return entry.purchased == Constants_API.UPGRADE_PROGRESS.PURCHASED
+        end
+    end
+end
+
+function API.GetPurchaseCost(tankId)
+    for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
+        local id = tank:GetCustomProperty("ID")
+		if tonumber(id) == tonumber(tankId) then
+            tankResourceName = tank:GetCustomProperty("PurchaseCurrencyName")
+            tankPurchaseAmount = tank:GetCustomProperty("PurchaseCost")
+			return {resource = tankResourceName, amount = tankPurchaseAmount}		
+		end
+	end
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 return API
