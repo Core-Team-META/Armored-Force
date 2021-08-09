@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 6552376844877606649
   Name: "Frame Ring 007 Wedge"
   PlatformAssetType: 9

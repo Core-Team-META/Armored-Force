@@ -192,6 +192,8 @@ function OnTankAcquired(player, tankId, teir)
             end
         end
     end
+    --#FIXME Late night coding this should be somewhere else
+    player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
 end
 
 ------------------------------------------------------------------------------------------------------------------------

@@ -68,6 +68,11 @@ end
 
 function OnPlayerLeft(player)
 	SavePlayerDataIntoSharedStorage(player)
+	for i, entry in ipairs(DATA_TRANSFER:GetChildren()) do
+		if entry:GetCustomProperty("OwnerId") == player.id then
+			entry:Destroy()
+		end
+	end
 end
 
 -- Update shared storage, or give it default values if the data doesn't exist
@@ -75,7 +80,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	-- playerSharedStorage = {}
+	--playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -273,7 +278,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 		if i ~= 1 and i ~= 18 and i ~= CONSTANTS_API.GetNumberOfTanks() then
 			tankEntry = tankEntry .. "|0|0|0|0|0~"
 		elseif i == 1 or i == 18 then
-			tankEntry = tankEntry .. "|1|1|2|2|2~"
+			tankEntry = tankEntry .. "|1|1|0|0|0~"
 			
 		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
 		-- (requires forced use of SetNewPlayerProgression(playerSharedStorage) function)
@@ -296,7 +301,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 	
 end
 
-function SetTankProgressionDataForServer(dataString, player)
+function SetTankProgressionDataForServer(dataString, player)	
 	--print("Saving tank data on server. Data string: " .. dataString)
    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
    -- print("Finished converting string into table.")
@@ -401,4 +406,4 @@ end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
-Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)
+--Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)

@@ -98,6 +98,12 @@ Objects {
         SelfId: 2020375387632318549
       }
     }
+    Overrides {
+      Name: "cs:Timer"
+      ObjectReference {
+        SelfId: 9215678398276724084
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

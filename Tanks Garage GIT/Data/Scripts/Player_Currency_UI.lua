@@ -27,7 +27,7 @@ function Init()
 end
 
 function OnResourceChanged(player, key, value)
-    print(key, value, currencyInfo[key])
+    --print(key, value, currencyInfo[key])
     if currencyInfo[key] then
         currencyInfo[key].text = tostring(value)
         for _, child in ipairs(currencyInfo[key]:GetChildren()) do

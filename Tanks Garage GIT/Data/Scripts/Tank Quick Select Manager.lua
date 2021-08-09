@@ -1,5 +1,6 @@
 -- API
 local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+local UTIL = require(script:GetCustomProperty("MetaAbilityProgressionUTIL_API"))
 
 -- Object references
 local TANK_TABLE_TEMPLATE = script:GetCustomProperty("TANK_TABLE_TEMPLATE")
@@ -14,47 +15,152 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local TANK_LIST = TechTree_Contents:GetChildren()
 local X_OFFSET = 180
 
-function PopulateQuickSelectPanel()
+local expectedEquip = nil
+local tankDataTbl = {}
+local tanksOwned = {}
+local isLoaded = false
+
+local function SortByTier(tankA, tankB)
+    local tankAData = GetTankDataById(tankA.data.id)
+    local tankBData = GetTankDataById(tankB.data.id)
+
+    local tankTeirA = tankAData:GetCustomProperty("Tier")
+    local tankTeirB = tankBData:GetCustomProperty("Tier")
+
+    tankTeirA = tankTeirA * (tankA.data.id + 50)
+    tankTeirB = tankTeirB * (tankB.data.id + 50)
+
+    if tankA.data.purchased then
+        tankTeirA = tankTeirA + 1000
+    end
+    if tankB.data.purchased then
+        tankTeirB = tankTeirB + 1000
+    end
+    return tankTeirA > tankTeirB
+end
+
+function Init()
+    if Environment.IsSinglePlayerPreview() then
+        Task.Wait(3)
+    end
+    if isLoaded then
+        return
+    end
     ClearPanel()
+    while not next(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+        Task.Wait()
+    end
+    local tankCount = 0
+
+    for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+        if tank.id ~= "08" then
+            local entry = World.SpawnAsset(TANK_TABLE_TEMPLATE, {parent = UIScrollPanel})
+
+            local tankData = GetTankDataById(tank.id)
+            local button = entry:FindDescendantByName("SELECT_TANK_BUTTON")
+
+            button.name = tankData:GetCustomProperty("ID") .. "T"
+            button.clickedEvent:Connect(SelectTank)
+            button.hoveredEvent:Connect(ButtonHover)
+            button.unhoveredEvent:Connect(ButtonUnhover)
+
+            local gameIdString = tankData:GetCustomProperty("PortalImageURL")
+            local gameIndex = tankData:GetCustomProperty("ScreenShotIndex")
+            local tanksScreenshot = entry:GetCustomProperty("TANK_IMAGE_SELECT"):WaitForObject()
+
+            local TANK_FRAME = entry:GetCustomProperty("TANK_FRAME"):WaitForObject()
+            local TANK_FRAME_2 = entry:GetCustomProperty("TANK_FRAME_2"):WaitForObject()
+
+            if (tankData:GetCustomProperty("Team") == "Allies") then
+                local newColor = entry:GetCustomProperty("ALLIES_COLOR")
+                TANK_FRAME:SetColor(newColor)
+                TANK_FRAME_2:SetButtonColor(newColor)
+                entry:FindDescendantByName("TANKNAME").text = "Allies"
+            else
+                local newColor = entry:GetCustomProperty("AXIS_COLOR")
+                TANK_FRAME:SetColor(newColor)
+                TANK_FRAME_2:SetButtonColor(newColor)
+                entry:FindDescendantByName("TANKNAME").text = "Axis"
+            end
+
+            entry:GetCustomProperty("TANK_NAME"):WaitForObject().text = tankData:GetCustomProperty("Name")
+
+            if Object.IsValid(tanksScreenshot) then
+                tanksScreenshot:SetGameScreenshot(gameIdString, tonumber(gameIndex))
+                Task.Spawn(
+                    function()
+                        if Object.IsValid(tanksScreenshot) then
+                            tanksScreenshot:SetGameScreenshot(gameIdString, tonumber(gameIndex))
+                            Task.Wait(0.2)
+                            if Object.IsValid(tanksScreenshot) then
+                                tanksScreenshot.visibility = Visibility.FORCE_ON
+                            end
+                        end
+                    end,
+                    0.3
+                )
+            end
+
+            entry.x = tankCount * X_OFFSET
+            tankCount = tankCount + 1
+            tankDataTbl[tankCount] = {data = tank, panel = entry}
+        end
+        isLoaded = true
+    end
+    --UTIL.TablePrint(tankDataTbl)
+end
+
+function PopulateQuickSelectPanel()
+    if not isLoaded then
+        Init()
+    end
+    table.sort(tankDataTbl, SortByTier)
     local dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
     while not next(dailyTbl) do
         Task.Wait()
         dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
     end
     local tankCount = 0
-    for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-        if (tank.purchased) then
-            local tankData = GetTankDataById(tank.id)
-            local entry = World.SpawnAsset(TANK_TABLE_TEMPLATE, {parent = UIScrollPanel})
-            entry.x = tankCount * X_OFFSET
-            entry:FindDescendantByName("TANKNAME").text = tankData:GetCustomProperty("Name")
-            entry:FindDescendantByName("TANKTIER").text =
-                tostring(tankData:GetCustomProperty("Tier")) .. " " .. tankData:GetCustomProperty("Type")
-            if (tankData:GetCustomProperty("Team") == "Allies") then
-                entry:FindDescendantByName("ALLIES").visibility = Visibility.FORCE_ON
-                entry:FindDescendantByName("AXIS").visibility = Visibility.FORCE_OFF
-            else
-                entry:FindDescendantByName("ALLIES").visibility = Visibility.FORCE_OFF
-                entry:FindDescendantByName("AXIS").visibility = Visibility.FORCE_ON
-            end
+    for i, tank in ipairs(tankDataTbl) do
+        --if (tank.purchased) then
+        local tankData = GetTankDataById(tank.data.id)
+        local entry = tank.panel
 
-            tankId = tankData:GetCustomProperty("ID")
+        --local entry = World.SpawnAsset(TANK_TABLE_TEMPLATE, {parent = UIScrollPanel})
+        --entry.x = tankCount * X_OFFSET
 
-            if dailyTbl[tonumber(tankId)] == 1 then
-                entry:FindDescendantByName("2X_XP").visibility = Visibility.FORCE_OFF
-            end
+        entry:FindDescendantByName("TANKTIER").text =
+            tostring(tankData:GetCustomProperty("Tier")) .. " " .. tankData:GetCustomProperty("Type")
 
-            if tonumber(tankId) == LOCAL_PLAYER:GetResource("EquippedTank") then
-                entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_ON
-            end
-            local button = entry:FindDescendantByName("SELECT_TANK_BUTTON")
-            button.name = tankData:GetCustomProperty("ID") .. "T"
-            button.clickedEvent:Connect(SelectTank)
-            button.hoveredEvent:Connect(ButtonHover)
-            button.unhoveredEvent:Connect(ButtonUnhover)
-            tankCount = tankCount + 1
+        tankId = tankData:GetCustomProperty("ID")
+
+        if dailyTbl[tonumber(tankId)] == 1 or not tank.data.purchased then
+            entry:FindDescendantByName("2X_XP").visibility = Visibility.FORCE_OFF
         end
+
+        if (tonumber(tankId) == LOCAL_PLAYER:GetPrivateNetworkedData("SelectedTank")) then
+            entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_ON
+        else
+            entry:FindDescendantByName("CHOSEN_TANK_INDICATOR").visibility = Visibility.FORCE_OFF
+        end
+
+        local button = entry:GetCustomProperty("SELECT_TANK_BUTTON"):WaitForObject()
+        local OwnedPanel = entry:GetCustomProperty("NOT_OWNED"):WaitForObject()
+
+        if tank.data.purchased then
+            button.isInteractable = true
+            OwnedPanel.visibility = Visibility.FORCE_OFF
+            tankCount = tankCount + 1
+        else
+            button.isInteractable = false
+            OwnedPanel.visibility = Visibility.FORCE_ON
+        end
+
+        entry.x = (i - 1) * X_OFFSET
     end
+    -- end
+    expectedEquip = nil
+
     TANKS_OWNED.text = "Tanks owned : " .. tostring(tankCount) .. " / " .. tostring(Constants_API.GetNumberOfTanks())
 end
 
@@ -81,10 +187,40 @@ function SelectTank(button)
         return
     end
 
+    expectedEquip = id
+
     Events.Broadcast("QuickSelectTankChange")
     Events.BroadcastToServer("CHANGE_EQUIPPED_TANK", id)
     Events.Broadcast("CHANGE_EQUIPPED_TANK", id)
-    PopulateQuickSelectPanel()
+    --PopulateQuickSelectPanel()
+end
+
+-- handler params: Player_player, string_key
+function OnTankSelectedChanged(player, resource, newValue)
+    local dailyTbl = LOCAL_PLAYER:GetPrivateNetworkedData("WinOfTheDay")
+
+    if not dailyTbl then
+        return
+    end
+    if resource == "SelectedTank" then
+        PopulateQuickSelectPanel()
+    end
+    if resource == "PlayerTankData" then
+        local tankSeverData = LOCAL_PLAYER:GetPrivateNetworkedData(resource)
+        for _, tank in ipairs(tankSeverData) do
+            for _, tankData in pairs(tankDataTbl) do
+                if tankData.data.id == tank.id then
+                    tankData.data = tank
+                end
+            end
+        end
+        PopulateQuickSelectPanel()
+    end
+
+    --[[if resource == Constants_API.GetEquippedTankResource() then
+        PopulateQuickSelectPanel()
+    end]]
+    --
 end
 
 function ButtonHover(button)
@@ -100,5 +236,13 @@ function TanksChanged()
     PopulateQuickSelectPanel()
 end
 
+function TankPurchased()
+    Task.Wait(1)
+    PopulateQuickSelectPanel()
+end
+
 Events.Connect("LoadQuickSelect", PopulateQuickSelectPanel)
 Events.Connect("CHANGE_EQUIPPED_TANK", PopulateQuickSelectPanel)
+Events.Connect("TankPurchaseSuccessful", TankPurchased)
+--LOCAL_PLAYER.resourceChangedEvent:Connect(OnTankSelectedChanged)
+LOCAL_PLAYER.privateNetworkedDataChangedEvent:Connect(OnTankSelectedChanged)

@@ -455,7 +455,7 @@ function ProjectileImpacted(expiredProjectile, other)
 
 	ProjectileExpired(expiredProjectile)
 	
-	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce then
+	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
 		return
 	end
 	
@@ -484,14 +484,13 @@ function ProjectileImpacted(expiredProjectile, other)
 end
 
 function ProjectileExpired(expiredProjectile)
-
 	local activeExplosion = World.SpawnAsset(explosion, {position = expiredProjectile:GetWorldPosition()})
 	activeExplosion.lifeSpan = 6
 	
 end
 
-function OnArmorHit(trigger, other)
-	if other.type == "Projectile" then
+function OnArmorHit(trigger, other)	
+	if other.type == "Projectile" and other.owner ~= driver then
 		local enemyPlayer = other.owner
 
 		if other.serverUserData.hitOnce then
@@ -636,10 +635,10 @@ function OnArmorHit(trigger, other)
 		ramCooldown = true
 		local cooldownTask = Task.Spawn(ResetRamCooldown)
 		
-		local ramDamage = ((netSpeed + other.mass * 0.02) * thisVehicleSpeed) / (50 * (thisVehicleSpeed + 1))
+		local ramDamage = ((netSpeed + other.mass * 0.03) * thisVehicleSpeed) / (50 * (thisVehicleSpeed + 1)) + 20
 		
 		if armorName == "HULLFRONT" then
-			ramDamage = ramDamage/2
+			ramDamage = ramDamage/4
 		end
 		
 		ramDamage = math.floor(ramDamage)
@@ -666,7 +665,10 @@ function OnArmorHit(trigger, other)
 			rotation = nil,
 			tags = {id = "Ram"}
 		}
-		COMBAT.ApplyDamage(attackData)
+   		COMBAT.ApplyDamage(attackData)
+    
+    	Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver)
+		Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
 		
 		if otherVehicleSpeed > thisVehicleSpeed then
 			return
@@ -853,8 +855,13 @@ function AdjustTurretAim()
 	
 	local viewPosition = driver:GetViewWorldPosition()
 	local viewRotation = driver:GetViewWorldRotation()
+	local differenceZ = math.abs(viewRotation.z - turret:GetWorldRotation().z) % 360
+	
+	if differenceZ > 180 then
+		differenceZ = 360 - differenceZ
+	end
 
-	target:MoveTo(RaycastResultFromPointRotationDistance(viewPosition, viewRotation, 100000), 0.1, false)
+	target:MoveTo(RaycastResultFromPointRotationDistance(viewPosition, viewRotation, 100000), 0.01, false)
 	
 	if not Object.IsValid(cannon) or not Object.IsValid(cannonGuide) then
 		return
@@ -869,11 +876,12 @@ function AdjustTurretAim()
 		targetRotation.y = minDepressionAngle
 	end
 	
+	local distance = math.abs(targetRotation.y - currentRotation.y) + 0.1
+	
 	if Object.IsValid(turret) and Object.IsValid(cannon) then
 	
 		if horizontalCannonAngles <= 0 then
-			local distance = math.abs(targetRotation.y - currentRotation.y) + 0.1
-			cannon:RotateTo(Rotation.New(0, targetRotation.y, 0), distance / elevationSpeed, true)
+			cannon:RotateTo(Rotation.New(0, targetRotation.y, 0), differenceZ / traverseSpeed, true) -- distance / elevationSpeed
 		else
 		
 			if targetRotation.z > horizontalCannonAngles then
@@ -922,29 +930,29 @@ function Tick()
 			local currentRotation = chassis:GetWorldRotation()
 			if math.abs(currentRotation.x) >= 10 or math.abs(currentRotation.y) >= 10 then
 				if chassis.maxSpeed == originalSpeed then
-					chassis.maxSpeed = originalSpeed * 1.15
+					chassis.maxSpeed = originalSpeed * 1.2
 					chassis.tireFriction = originalFriction * 2
-					chassis.accelerationRate = originalAcceleration * 1.3
-					print("boosting tank")
+					chassis.accelerationRate = originalAcceleration * 1.40
+					--print("boosting tank")
 				end
 			elseif math.abs(currentRotation.x) < 10 or math.abs(currentRotation.y) < 10 then
 				if chassis.maxSpeed > originalSpeed then
 					chassis.maxSpeed = originalSpeed
 					chassis.tireFriction = originalFriction
 					chassis.accelerationRate = originalAcceleration
-					print("Restoring tank stats")
+					--print("Restoring tank stats")
 				end
 			end
 			
 			if not driver:IsBindingPressed("ability_extra_21") and not driver:IsBindingPressed("ability_extra_31") then 
 				if chassis.turnSpeed == originalTurnSpeed then
 					chassis.turnSpeed = math.floor(originalTurnSpeed * 1.1)
-					print("boosting turn speed")
+					--print("boosting turn speed")
 				end
 			elseif driver:IsBindingPressed("ability_extra_21") or driver:IsBindingPressed("ability_extra_31") then 
 				if chassis.turnSpeed > originalTurnSpeed then
 					chassis.turnSpeed = originalTurnSpeed
-					print("Restoring turn speed")
+					--print("Restoring turn speed")
 				end
 			end
 		end
