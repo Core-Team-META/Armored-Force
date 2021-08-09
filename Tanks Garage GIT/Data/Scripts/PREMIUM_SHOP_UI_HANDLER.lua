@@ -25,6 +25,12 @@ local RP_TANKLIST_TANK = script:GetCustomProperty("RP_TANKLIST_TANK")
 local TANK_LIST_SCROLL_PANEL = script:GetCustomProperty("TANK_LIST_SCROLL_PANEL"):WaitForObject()
 local OUTCOME_RPs = script:GetCustomProperty("OUTCOME_RPs"):WaitForObject()
 local BUTTON_CONVERT_RPs = script:GetCustomProperty("BUTTON_CONVERT_RPs"):WaitForObject()
+local ALLIES_PURCHASE_PREMIUM_BUTTON = script:GetCustomProperty("ALLIES_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
+local AXIS_PURCHASE_PREMIUM_BUTTON = script:GetCustomProperty("AXIS_PURCHASE_PREMIUM_BUTTON"):WaitForObject()
+local ALLIES_PREMIUM_TANK_ID = script:GetCustomProperty("AlliesPremiumTankId")
+local AXIS_PREMIUM_TANK_ID = script:GetCustomProperty("AxisPremiumTankId")
+local ALLIES_PURCHASED_BUTTON = script:GetCustomProperty("ALLIES_PURCHASED_BUTTON"):WaitForObject()
+local AXIS_PURCHASED_BUTTON = script:GetCustomProperty("AXIS_PURCHASED_BUTTON"):WaitForObject()
 
 local TANK_LIST = World.FindObjectByName("TechTree_Contents"):GetChildren()
 local ALLIES_TANKS = {}
@@ -34,6 +40,7 @@ local AXIS_TANKS = {}
 local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 local SFX_UNHOVERED = script:GetCustomProperty("SFX_UNHOVERED"):WaitForObject()
+local SFX_DENIED = script:GetCustomProperty("SFX_DENIED"):WaitForObject()
 
 -- Local properties
 local TANK_ENTRY_Y_OFFSET = 40
@@ -339,8 +346,62 @@ function ToggleThisComponent(requestedPlayerState, substate)
 		elseif(substate == 4) then
 			PREMIUM_TANKS.visibility = Visibility.FORCE_ON
 			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_4_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
+			TogglePremiumTankOwnedState()
 		end
 	end
+end
+
+function TogglePremiumTankOwnedState()
+	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AlliesPremiumTankId) then
+		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_OFF
+		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
+	else
+		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_ON
+		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
+	end
+
+	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AxisPremiumTankId) then
+		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_OFF
+		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
+	else
+		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_ON
+		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
+	end
+end
+
+function PurchaseAlliesPremiumTank()
+	local tankId = ALLIES_PREMIUM_TANK_ID
+	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AlliesPremiumTankId) then
+		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
+			SFX_DENIED:Play()
+			return
+		end
+		Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+	end
+end
+
+function PurchaseAxisPremiumTank()
+	local tankId = AXIS_PREMIUM_TANK_ID
+	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AxisPremiumTankId) then
+		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < LOCAL_PLAYER:GetResource(purchaseCosts.amount) then
+			SFX_DENIED:Play()
+			return
+		end
+
+		Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		
+
+	end
+end
+
+function HoverButton()
+	SFX_HOVER:Play()
+end
+
+function UnhoverButton()
+	SFX_UNHOVERED:Play()
 end
 
 -- Click handlers
@@ -349,6 +410,8 @@ SUBMENU_ITEM_2_BUTTON.clickedEvent:Connect(SubmenuClick)
 SUBMENU_ITEM_3_BUTTON.clickedEvent:Connect(SubmenuClick)
 SUBMENU_ITEM_4_BUTTON.clickedEvent:Connect(SubmenuClick)
 BUTTON_PREMIUM_SHOP.clickedEvent:Connect(ToggleShop)
+ALLIES_PURCHASE_PREMIUM_BUTTON.clickedEvent:Connect(PurchaseAlliesPremiumTank)
+AXIS_PURCHASE_PREMIUM_BUTTON.clickedEvent:Connect(PurchaseAxisPremiumTank)
 
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").clickedEvent:Connect(ResearchSubmenuClick)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").clickedEvent:Connect(ResearchSubmenuClick)
@@ -362,6 +425,8 @@ SUBMENU_ITEM_4_BUTTON.hoveredEvent:Connect(SubmenuHover)
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").hoveredEvent:Connect(ResearchSubmenuHover)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").hoveredEvent:Connect(ResearchSubmenuHover)
 BUTTON_CONVERT_RPs:FindChildByName("BUTTON").hoveredEvent:Connect(ConvertSelectedTankRPHover)
+ALLIES_PURCHASE_PREMIUM_BUTTON.hoveredEvent:Connect(HoverButton)
+AXIS_PURCHASE_PREMIUM_BUTTON.hoveredEvent:Connect(HoverButton)
 
 -- Unhover handlers
 SUBMENU_ITEM_1_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
@@ -371,5 +436,7 @@ SUBMENU_ITEM_4_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 BUTTON_CONVERT_RPs:FindChildByName("BUTTON").unhoveredEvent:Connect(ConvertSelectedTankRPUnhover)
+ALLIES_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverButton)
+AXIS_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverButton)
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
