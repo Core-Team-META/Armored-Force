@@ -15,13 +15,14 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12650245047976557178
+        ParentId: 4781671109827199097
         ChildIds: 666315683374029523
         ChildIds: 18018371900924901114
         ChildIds: 6811297547396028375
         ChildIds: 12659138779276424675
         ChildIds: 2946694147826181439
         ChildIds: 4157377331132105699
+        ChildIds: 3607968766232677285
         UnregisteredParameters {
           Overrides {
             Name: "cs:BorderPiece"
@@ -57,6 +58,12 @@ Assets {
             Name: "cs:NameText"
             ObjectReference {
               SubObjectId: 4157377331132105699
+            }
+          }
+          Overrides {
+            Name: "cs:TankText"
+            ObjectReference {
+              SubObjectId: 3607968766232677285
             }
           }
         }
@@ -352,6 +359,51 @@ Assets {
       Objects {
         Id: 4157377331132105699
         Name: "NameText"
+        Transform {
+          Location {
+            Z: 40
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 822988238011075349
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Text {
+          Text: "HELLO WORLD"
+          FontAsset {
+          }
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:center"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 3607968766232677285
+        Name: "TankText"
         Transform {
           Location {
             Z: 20

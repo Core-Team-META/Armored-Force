@@ -125,6 +125,7 @@ function OnPlayerJoined(player)
 	nameplates[player].changePiece = nameplateRoot:GetCustomProperty("ChangePiece"):WaitForObject()
 	nameplates[player].healthText = nameplateRoot:GetCustomProperty("HealthText"):WaitForObject()
 	nameplates[player].nameText = nameplateRoot:GetCustomProperty("NameText"):WaitForObject()
+	nameplates[player].tankText = nameplateRoot:GetCustomProperty("TankText"):WaitForObject()
 
 	-- For animating changes. Each change clobbers the previous state.
 	nameplates[player].lastHealthFraction = 1.0
@@ -148,6 +149,10 @@ function OnPlayerJoined(player)
 	nameplates[player].healthText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0)) -- Text must be 50 units ahead as it doesn't have thickness
 	nameplates[player].healthText:SetColor(HEALTH_NUMBER_COLOR)
 	nameplates[player].nameText.text = player.name
+	
+	if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
+		nameplates[player].tankText.text = player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+	end
 
 	nameplates[player].borderPiece.visibility = Visibility.FORCE_OFF
 	nameplates[player].backgroundPiece.visibility = Visibility.FORCE_OFF
@@ -279,6 +284,10 @@ function Tick(deltaTime)
 				end
 
 				RotateNameplate(nameplate)
+							
+				if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
+					nameplate.tankText.text = player.clientUserData.currentTankData.name .. " [T" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+				end
 
 				if SHOW_HEALTHBARS then
 					local healthFraction = player.hitPoints / player.maxHitPoints
@@ -400,17 +409,22 @@ function Tick(deltaTime)
 					if SHOW_NAMES then
 						local nameColor = nil
 						local healthColor = nil
+						local scaling = nil
 
 						if player == LOCAL_PLAYER or Teams.AreTeamsFriendly(player.team, LOCAL_PLAYER.team) then
 							nameColor = FRIENDLY_NAME_COLOR
 							healthColor = FRIENDLY_HEALTH_COLOR
+							scaling = SCALE
 						else
 							nameColor = ENEMY_NAME_COLOR
 							healthColor = ENEMY_HEALTH_COLOR
+							scaling = SCALE * 2
 						end
 
 						nameplate.nameText:SetColor(nameColor)
+						nameplate.tankText:SetColor(nameColor)
 						nameplate.healthPiece:SetColor(healthColor)
+						nameplate.templateRoot:SetScale(Vector3.New(scaling, scaling, scaling))
 					end
 				end
 			end
