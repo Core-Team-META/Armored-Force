@@ -56,14 +56,6 @@ local localPlayer = Game.GetLocalPlayer()
 	LEADERBOARDS_MENU
 ]]
 
-local function SetAllTexts(textTable, textToSet)
-	
-	for _, t in pairs(textTable) do
-		t.text = textToSet
-	end
-	
-end
-
 function ToggleThisComponent(requestedPlayerState)
 
 	if savedState == "DEFAULT_MENU" then
@@ -149,7 +141,7 @@ function AssignPreviewText()
 	if selectedTankResource < 10 then
 		selectedTank = "0" .. selectedTank
 	end
-
+	
 	tankEntries[selectedTank].previewText:SetColor(selectedColor)
 	tankEntries[selectedTank].previewText.text = "Previewing Tank"
 	
@@ -291,38 +283,35 @@ function OnCamoButtonClicked(button)
 	local camoID = button.clientUserData.referencedCamo
 	local buttonEntry = camoEntries[camoID]
 		
-	if selectedCamo and camoEntries[selectedCamo] then
+	if button == buttonEntry.previewComponents.button then
+	
+		Events.Broadcast("PREVIEW_SKIN", camoID)
+		
+	else
 		local previousEntry = camoEntries[selectedCamo]
-		
-		previousEntry.previewComponents.active.visibility = Visibility.FORCE_OFF
-		previousEntry.equipBuyComponents.active.visibility = Visibility.FORCE_OFF
-		
-		--local sampleText = previousEntry.equipBuyComponents.text[1]
-		
 		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
 		
+		previousEntry.equipBuyComponents.active.visibility = Visibility.FORCE_OFF
+		
 		if playerCamoData[camoID].purchased and not playerCamoData[camoID].equipped then
-			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equip")
+			previousEntry.equipBuyComponents.equipText.text = "Equip"
 		end
-	end
-		
-	if button == buttonEntry.previewComponents.button then
-			
-		buttonEntry.previewComponents.active.visibility = Visibility.FORCE_ON
-		buttonEntry.equipBuyComponents.active.visibility = Visibility.FORCE_OFF
-		
-		Events.Broadcast("PREVIEW_SKIN", camoID)
-	else 
-		buttonEntry.previewComponents.active.visibility = Visibility.FORCE_OFF
 	
 		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
 		local playerCamoEntry = playerCamoData[camoID]
 		
-		
-		if not playerCamoData[camoID].purchased then
-			ReliableEvents.BroadcastToServer("PURCHASE_SKIN", selectedTank, camoID)
+		if not playerCamoEntry.purchased then
+			local playerAmount = localPlayer:GetResource(buttonEntry.resource)
+			local cost = buttonEntry.cost
+			
+			if playerAmount >= cost then
+				ReliableEvents.BroadcastToServer("PURCHASE_SKIN", selectedTank, camoID)
+				Events.Broadcast("SEND_POPUP", localPlayer, "CAMO PURCHASED", "Camo successfully purchased!")
+			else 
+				Events.Broadcast("SEND_POPUP", localPlayer, "PURCHASE UNSUCCESSFUL", "Camo could not be purchased.")
+			end 
 		else
-			SetAllTexts(buttonEntry.equipBuyComponents.text, "Equipped")
+			buttonEntry.equipBuyComponents.equipText.text = "Equipped"
 			buttonEntry.equipBuyComponents.active.visibility = Visibility.FORCE_ON
 			Events.Broadcast("INITIALIZE_SKIN", localPlayer)
 			Task.Wait()
@@ -342,14 +331,10 @@ function OnCamoButtonHovered(button)
 	local buttonEntry = camoEntries[camoID]
 	
 	if selectedCamo ~= camoID then
-		if button == buttonEntry.previewComponents.button then
-			buttonEntry.previewComponents.hover.visibility = Visibility.FORCE_ON
-		else 
-			buttonEntry.equipBuyComponents.hover.visibility = Visibility.FORCE_ON
-		end
+		buttonEntry.equipBuyComponents.hover.visibility = Visibility.FORCE_ON
 	end
 	
-	SFX_HOVER:Play()
+	--SFX_HOVER:Play()
 	
 end
 
@@ -359,14 +344,10 @@ function OnCamoButtonUnhovered(button)
 	local buttonEntry = camoEntries[camoID]
 
 	if selectedCamo ~= camoID then
-		if button == buttonEntry.previewComponents.button then
-			buttonEntry.previewComponents.hover.visibility = Visibility.FORCE_OFF
-		else 
-			buttonEntry.equipBuyComponents.hover.visibility = Visibility.FORCE_OFF
-		end
+		buttonEntry.equipBuyComponents.hover.visibility = Visibility.FORCE_OFF
 	end	
 	
-	SFX_UNHOVERED:Play()	
+	--SFX_UNHOVERED:Play()	
 
 end
 
@@ -380,24 +361,27 @@ function OnRenewEntries()
 	local camoList = skinsClient.context.GetTankSkinData(selectedTank)
 	
 	for camoID, camo in pairs(camoList) do
+		camoEntries[camoID].equipBuyComponents.equipText.visibility = Visibility.FORCE_ON
+		camoEntries[camoID].equipBuyComponents.buyText.visibility = Visibility.FORCE_OFF
 		if playerCamoData[camoID].equipped then
-			SetAllTexts(camoEntries[camoID].equipBuyComponents.text, "Equipped")
+			camoEntries[camoID].equipBuyComponents.equipText.text =  "Equipped"
 			camoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
 			camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
 			camoEntries[camoID].equipBuyComponents.active.visibility = Visibility.FORCE_ON
 			
 			selectedCamo = camoID
 		elseif not playerCamoData[camoID].purchased then
-			SetAllTexts(camoEntries[camoID].equipBuyComponents.text, tostring(camo.cost))
+			camoEntries[camoID].equipBuyComponents.equipText.visibility = Visibility.FORCE_OFF
+			camoEntries[camoID].equipBuyComponents.buyText.visibility = Visibility.FORCE_ON
 			if camoEntries[camoID].resource == "Gold" then
-				ccamoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
+				camoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
 				camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_ON
 			else 
 				camoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_ON
 				camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
 			end
 		else 
-			SetAllTexts(camoEntries[camoID].equipBuyComponents.text, "Equip")
+			camoEntries[camoID].equipBuyComponents.equipText.text =  "Equip"
 			camoEntries[camoID].equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
 			camoEntries[camoID].equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
 			camoEntries[camoID].equipBuyComponents.active.visibility = Visibility.FORCE_OFF
@@ -413,10 +397,15 @@ function RepopulateCamoEntries()
 		for _, entry in pairs(camoEntries) do	
 			entry.previewClickedListener:Disconnect()
 			entry.previewClickedListener = nil
-			entry.previewHoverListener:Disconnect()
-			entry.previewHoverListener = nil
-			entry.previewUnhoveredListener:Disconnect()
-			entry.previewUnhoveredListener = nil
+			
+			if entry.equipBuyClickedListener then
+				entry.equipBuyClickedListener:Disconnect()
+				entry.equipBuyClickedListener = nil
+				entry.equipBuyHoverListener:Disconnect()
+				entry.equipBuyHoverListener = nil
+				entry.equipBuyUnhoveredListener:Disconnect()
+				entry.equipBuyUnhoveredListener = nil
+			end
 			
 			entry.camoUI:Destroy()
 			entry.camoUI = nil
@@ -447,7 +436,6 @@ function RepopulateCamoEntries()
 	for camoID, camo in pairs(camoList) do
 	
 		local playerCamoData = localPlayer.clientUserData.camoData[selectedTank]
-			
 		local camoEntry = {}
 		camoEntry.camoUI = World.SpawnAsset(camoEntryTemplate, {parent = camoContainer})
 		camoEntry.camoUI.x = 0
@@ -465,33 +453,35 @@ function RepopulateCamoEntries()
 		
 		camoEntry.previewComponents = {}
 		camoEntry.previewComponents.button = previewAssets:FindDescendantByName("PREVIEW_BUTTON")
-		camoEntry.previewComponents.idle = previewAssets:FindDescendantByName("PREVIEW_BUTTON_IDLE")
-		camoEntry.previewComponents.hover = previewAssets:FindDescendantByName("PREVIEW_BUTTON_HOVER")
-		camoEntry.previewComponents.active = previewAssets:FindDescendantByName("PREVIEW_BUTTON_ACTIVE")
 		
 		camoEntry.previewComponents.button.clientUserData.referencedCamo = camoID
 		camoEntry.previewClickedListener = camoEntry.previewComponents.button.clickedEvent:Connect(OnCamoButtonClicked)
-		camoEntry.previewHoverListener = camoEntry.previewComponents.button.hoveredEvent:Connect(OnCamoButtonHovered)
-		camoEntry.previewUnhoveredListener = camoEntry.previewComponents.button.unhoveredEvent:Connect(OnCamoButtonUnhovered)
-		
+
 		camoEntry.equipBuyComponents = {}
 		camoEntry.equipBuyComponents.button = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON")
 		camoEntry.equipBuyComponents.idle = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON_IDLE")
 		camoEntry.equipBuyComponents.hover = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON_HOVER")
 		camoEntry.equipBuyComponents.active = equipBuyAssets:FindDescendantByName("EQUIP/BUY_BUTTON_ACTIVE")
-		camoEntry.equipBuyComponents.text = equipBuyAssets:FindDescendantsByName("SUBMENU_TITLE")
+		camoEntry.equipBuyComponents.equipText = equipBuyAssets:FindDescendantByName("SUBMENU_TITLE")
+		camoEntry.equipBuyComponents.buyText = equipBuyAssets:FindDescendantByName("IF_BUY")
+		camoEntry.equipBuyComponents.priceText = equipBuyAssets:FindDescendantByName("PRICE_VALUE")
 		camoEntry.equipBuyComponents.silverIcon = equipBuyAssets:FindDescendantByName("SILVER")
 		camoEntry.equipBuyComponents.goldIcon = equipBuyAssets:FindDescendantByName("GOLD")
+			
+		camoEntry.equipBuyComponents.priceText.text = tostring(camo.cost)
+		camoEntry.resource = camo.resource
+		camoEntry.cost = camo.cost
 		
 		if lockedTank then
-			SetAllTexts(camoEntry.equipBuyComponents.text, "Tank Locked")
+			camoEntry.equipBuyComponents.equipText.text = "Tank Locked"
 		else
 			if playerCamoData[camoID].equipped then
 				selectedCamo = camoID
-				SetAllTexts(camoEntry.equipBuyComponents.text, "Equipped")
+				camoEntry.equipBuyComponents.equipText.text = "Equipped"
 				camoEntry.equipBuyComponents.active.visibility = Visibility.FORCE_ON
 			elseif not playerCamoData[camoID].purchased then
-				SetAllTexts(camoEntry.equipBuyComponents.text, tostring(camo.cost))
+				camoEntry.equipBuyComponents.equipText.visibility = Visibility.FORCE_OFF
+				camoEntry.equipBuyComponents.buyText.visibility = Visibility.FORCE_ON
 				if camo.resource == "Gold" then
 					camoEntry.equipBuyComponents.silverIcon.visibility = Visibility.FORCE_OFF
 					camoEntry.equipBuyComponents.goldIcon.visibility = Visibility.FORCE_ON
@@ -500,7 +490,12 @@ function RepopulateCamoEntries()
 					camoEntry.equipBuyComponents.goldIcon.visibility = Visibility.FORCE_OFF
 				end
 			else 
-				SetAllTexts(camoEntry.equipBuyComponents.text, "Equip")
+				camoEntry.equipBuyComponents.equipText.text = "Equip"
+				camoEntry.equipBuyComponents.active.visibility = Visibility.FORCE_OFF
+			end
+			
+			if localPlayer:GetResource(camo.resource) < camo.cost then
+				camoEntry.equipBuyComponents.priceText:SetColor(Color.RED)
 			end
 			
 			camoEntry.equipBuyComponents.button.clientUserData.referencedCamo = camoID

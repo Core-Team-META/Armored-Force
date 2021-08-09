@@ -18,6 +18,7 @@ local TutorialCompletePopup = script:GetCustomProperty("TutorialCompletePopup")
 local JoinBattle = script:GetCustomProperty("JoinBattle"):WaitForObject()
 local Tutorial_JoinBattlePanel = script:GetCustomProperty("Tutorial_JoinBattlePanel"):WaitForObject()
 local Tutorial_OptOutPanel = script:GetCustomProperty("Tutorial_OptOutPanel"):WaitForObject()
+local Close = script:GetCustomProperty("Close"):WaitForObject()
 
 local EnemyTargetPracticeAI = script:GetCustomProperty("EnemyTargetPracticeAI"):WaitForObject()
 
@@ -61,18 +62,26 @@ function GotoShootingRange(button)
 end
 
 function ButtonRelease(button)
-	SFX_HOVER:Play()
+	HoverSound()
 	button.parent:FindDescendantByName("BUTTON_NORMAL_PRESSED").visibility = Visibility.FORCE_OFF
 end
 
 function ButtonHover(button)
-	SFX_HOVER:Play()
+	HoverSound()
 	button.parent:FindDescendantByName("BUTTON_NORMAL_HOVER").visibility = Visibility.FORCE_ON
 end
 
 function ButtonUnhover(button)
-	SFX_UNHOVERED:Play()
+	UnhoverSound()
 	button.parent:FindDescendantByName("BUTTON_NORMAL_HOVER").visibility = Visibility.FORCE_OFF
+end
+
+function HoverSound()
+	SFX_HOVER:Play()
+end
+
+function UnhoverSound()
+	SFX_UNHOVERED:Play()
 end
 
 Init()
@@ -171,9 +180,17 @@ function BindingPressed(player, binding)
 	end
 end
 
+function CloseTutorialPopup()
+	SFX_CLICK:Play()
+	Tutorial_ShootingRangePanel.visibility = Visibility.FORCE_OFF
+end
+
 Events.Connect("ENABLE_GARAGE_COMPONENT", EnableComponent)
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
+Close.clickedEvent:Connect(CloseTutorialPopup)
+Close.hoveredEvent:Connect(HoverSound)
+Close.hoveredEvent:Connect(UnhoverSound)
 
 Tutorial_ShootingRangeButton.clickedEvent:Connect(GotoShootingRange)
 Tutorial_ShootingRangeButton.releasedEvent:Connect(ButtonRelease)

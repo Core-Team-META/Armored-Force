@@ -53,7 +53,6 @@ local NEMESIS_OF_DAMAGE = script:GetCustomProperty("NEMESIS_DAMAGE_1"):WaitForOb
 
 local DOUBLE_REWARD = script:GetCustomProperty("DOUBLE_REWARD"):WaitForObject()
 
-
 local showXPPanel = script:GetCustomProperty("ShowXPPanel"):WaitForObject()
 local XPEntry = script:GetCustomProperty("XPEntry")
 local RankEntry = script:GetCustomProperty("RankEntry")
@@ -238,7 +237,6 @@ function ShowStatisticsAnimation()
 	local damageBonus = localPlayer.clientUserData.roundStats["DamageTracker"]
 	local spottingBonus = localPlayer.clientUserData.roundStats["SpottingTracker"]
 
-	
 	--
 	--[[if (UTIL_API.UsingPremiumTank(tonumber(localPlayer.clientUserData.currentTankData.id))) then
 		modifier = 2
@@ -296,6 +294,13 @@ end
 
 Events.Connect("LAST_ROUND_STATS", StateSTART)
 CLOSE_BUTTON.clickedEvent:Connect(
+	function()
+		victoryAndEarningsUI.visibility = Visibility.FORCE_OFF
+	end
+)
+
+Events.Connect(
+	"DISABLE_ALL_GARAGE_COMPONENTS",
 	function()
 		victoryAndEarningsUI.visibility = Visibility.FORCE_OFF
 	end

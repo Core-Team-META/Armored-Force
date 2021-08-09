@@ -135,6 +135,9 @@ function ToggleThisComponent(requestedPlayerState)
 
 	if requestedPlayerState == thisComponent then
 	
+		local secondarySFX = localPlayer.clientUserData.garageModel.reference:FindDescendantByName("TankEngineLoopSFX")
+		secondarySFX:Play()
+	
 		mainUI.visibility = Visibility.FORCE_OFF
 		SFXMusic:Stop()
 		SFXStinger1:Play()
@@ -211,6 +214,8 @@ function ToggleThisComponent(requestedPlayerState)
 			JoinBattle.visibility = Visibility.FORCE_ON
 		end
 		
+		secondarySFX:Stop()
+		
 	else 
 	
 		ResetComponent()
@@ -238,8 +243,8 @@ function ChangeGarageModel(id)
 		wheels.visibility = Visibility.INHERIT
 	end
 		
-	for _, c in ipairs(modelSFX) do
-		c:Stop()
+	for _, s in ipairs(modelSFX) do
+		s:Stop()
 	end
 	
 	local vehicleIDString = tostring(id)
@@ -254,7 +259,7 @@ function ChangeGarageModel(id)
 	
 	localPlayer.clientUserData.garageModel.reference = newModel
 	localPlayer.clientUserData.garageModel.id = vehicleIDString
-	
+		
 	Events.Broadcast("INITIALIZE_SKIN", localPlayer)
 	
 end
@@ -313,18 +318,24 @@ function InitializeComponent()
 	sendToShootingRangeViewUI.isEnabled = false
 	
 	local newModel = World.SpawnAsset(garageModel, {parent = equippedTankInGarage})	
-	local modelSFX = newModel:FindDescendantsByType("Audio")
+	local modelSFX = newModel:FindDescendantByName("TankEngineAndMovementLoopSFX")
+	local secondarySFX = newModel:FindDescendantByName("TankEngineLoopSFX")
+	
+	Task.Wait()
+	
+	if modelSFX then
+		modelSFX:Destroy()
+	end
+	if secondarySFX then
+		secondarySFX:Stop()
+	end
 	
 	local wheels = newModel:FindDescendantByName("WHEEL_SET")
 	
 	if Object.IsValid(wheels) then
 		wheels.visibility = Visibility.INHERIT
 	end
-	
-	for _, c in ipairs(modelSFX) do
-		c:Stop()
-	end
-	
+		
 	local vehicleID = localPlayer:GetResource(CONSTANTS_API.GetEquippedTankResource())
 	local vehicleIDString = tostring(vehicleID)
 	

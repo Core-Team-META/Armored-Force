@@ -1,4 +1,5 @@
 local mainGameStateManager = script:GetCustomProperty("MainGameStateManager"):WaitForObject()
+local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
 
 local alliesTable = script:GetCustomProperty("AlliesTable"):WaitForObject()
 local alliesCountText = script:GetCustomProperty("AlliesCountText"):WaitForObject()
@@ -12,6 +13,22 @@ local updateTask = nil
 local localPlayer = Game.GetLocalPlayer()
 local allyEntries = {}
 local enemyEntries = {}
+
+local function CheckSpotting(player)
+	
+	for i=1, 16 do
+	
+		if spottingServer:GetCustomProperty("P" .. tostring(i)) == player.id then
+			
+			return true
+			
+		end
+		
+	end
+	
+	return false
+	
+end
 
 function StateSTART(manager, propertyName)
 
@@ -47,7 +64,8 @@ function EnterEntryData(p, playerName, tankName, healthBar, damagedBar, deathIco
 	playerName.text = p.name
 	
 	if p.clientUserData.currentTankData then
-		tankName.text = p.clientUserData.currentTankData.name
+		local teirValue = p.clientUserData.currentTankData.teir
+		tankName.text = p.clientUserData.currentTankData.name .. " [T" .. tostring(teirValue) .. "]"
 	else 
 		tankName.text = ""
 	end
@@ -121,6 +139,9 @@ function UpdateUITask()
 			local healthBar = allyEntries[x]:GetCustomProperty("Health"):WaitForObject()
 			local damagedBar  = allyEntries[x]:GetCustomProperty("HealthDamaged"):WaitForObject()
 			
+			healthBar.visibility = Visibility.INHERIT
+			damagedBar.visibility = Visibility.INHERIT
+			
 			local deathIcon = allyEntries[x]:GetCustomProperty("DeathIcon"):WaitForObject()
 			local deathBackground = allyEntries[x]:GetCustomProperty("DeathBackground"):WaitForObject()
 			
@@ -145,8 +166,17 @@ function UpdateUITask()
 			local healthBar = enemyEntries[x]:GetCustomProperty("Health"):WaitForObject()
 			local damagedBar  = enemyEntries[x]:GetCustomProperty("HealthDamaged"):WaitForObject()
 			
+			healthBar.visibility = Visibility.FORCE_OFF
+			damagedBar.visibility = Visibility.FORCE_OFF
+			
 			local deathIcon = enemyEntries[x]:GetCustomProperty("DeathIcon"):WaitForObject()
 			local deathBackground = enemyEntries[x]:GetCustomProperty("DeathBackground"):WaitForObject()
+			
+			if not CheckSpotting(p) then
+				tankName.visibility = Visibility.FORCE_OFF
+			else 
+				tankName.visibility = Visibility.INHERIT
+			end
 						
 			EnterEntryData(p, playerName, tankName, healthBar, damagedBar, deathIcon, deathBackground)
 		end

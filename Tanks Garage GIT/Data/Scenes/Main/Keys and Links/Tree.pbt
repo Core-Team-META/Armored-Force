@@ -18,7 +18,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Map1"
-      String: "4497ee/fields-frontline"
+      String: "bc0283/fields-frontline"
     }
     Overrides {
       Name: "cs:Map2"
@@ -62,7 +62,7 @@ Objects {
     Overrides {
       Name: "cs:Tanks"
       NetReference {
-        Key: "6f32dfeddf494871915067a72c7edbd0"
+        Key: "3c3178dcc0494bd4904969d5250b3dff"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -71,7 +71,7 @@ Objects {
     Overrides {
       Name: "cs:Skins"
       NetReference {
-        Key: "8905467fb24d4808b3c2ae59a33229f2"
+        Key: "e86521488aa340328f34b59e4a44f0d3"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -80,7 +80,7 @@ Objects {
     Overrides {
       Name: "cs:Achievements"
       NetReference {
-        Key: "5ded2bb7c8c349e1bedb86ea3cf486d1"
+        Key: "9e04fa959b5e4d3c8a7f25638bb17a9f"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -89,7 +89,7 @@ Objects {
     Overrides {
       Name: "cs:Leaderboards"
       NetReference {
-        Key: "052041e8d63b4517a952bb140099bb39"
+        Key: "c0c2d6c67a6644dcaa2a0db60e6e61f6"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }

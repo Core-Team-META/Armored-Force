@@ -472,11 +472,11 @@ Objects {
       Asset {
         Id: 18095757882595708726
       }
-      DistanceBetweenInstances: 110
+      DistanceBetweenInstances: 300
       SpawnDistance: 22937.1523
       CullDistance {
-        Min: 10000
-        Max: 20000
+        Min: 5000
+        Max: 10000
       }
       ReceivesDecals: true
       GroundSlopeAngle {
@@ -554,7 +554,7 @@ Objects {
       Asset {
         Id: 18095757882595708726
       }
-      DistanceBetweenInstances: 200
+      DistanceBetweenInstances: 280
       SpawnDistance: 30720
       CullDistance {
         Min: 10000
@@ -626,7 +626,6 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -640,6 +639,7 @@ Objects {
       LocalRotationOffset {
       }
       GlobalPositionOffset {
+        Z: -10
       }
       Height {
         Max: 200
@@ -673,7 +673,6 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -742,54 +741,6 @@ Objects {
     }
     Foliage {
       Asset {
-        Id: 12478635504539825254
-      }
-      DistanceBetweenInstances: 4000
-      SpawnDistance: 30720
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        Scaling: LockXY
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 2
-          Max: 2
-        }
-      }
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Leaves"
-        value {
-          Id: 7756414572646584735
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 400
-      }
-    }
-    Foliage {
-      Asset {
         Id: 10435621986531285937
       }
       DistanceBetweenInstances: 2000
@@ -817,7 +768,6 @@ Objects {
           Max: 2
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -890,7 +840,7 @@ Objects {
       Asset {
         Id: 18095757882595708726
       }
-      DistanceBetweenInstances: 200
+      DistanceBetweenInstances: 280
       SpawnDistance: 30720
       CullDistance {
         Min: 10000

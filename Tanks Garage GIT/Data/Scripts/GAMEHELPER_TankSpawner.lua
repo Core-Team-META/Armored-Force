@@ -57,6 +57,29 @@ function GetPlayer(playerId)
 end
 
 function ChangeEquippedTank(player, id)
+
+	--print("Changing equipped tank")
+
+	if not player.serverUserData.TankUpgradeOverride then
+		--print("Player does not have override")
+		local selectedEntry = nil
+		for _, x in pairs(player.serverUserData.techTreeProgress) do
+			if x.id == id then
+				selectedEntry = x
+				--print("entry found")
+				break
+			end
+		end
+		
+		--print(selectedEntry.purchased)
+		if (not selectedEntry) or (not selectedEntry.purchased) then
+			print("equip failed")
+			return
+		end
+	end
+	
+
+	print("equip passed")
 	
 	player:SetResource(CONSTANTS_API.GetEquippedTankResource(), tonumber(id))
 	RemovePlayerEquipment(player)
@@ -65,6 +88,7 @@ function ChangeEquippedTank(player, id)
 		GivePlayerEquipment(player)
 	end
 	
+	player:SetPrivateNetworkedData("SelectedTank", tonumber(id))
 end
 
 function OnPlayerRespawned(player)

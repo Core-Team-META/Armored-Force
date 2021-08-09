@@ -2576,6 +2576,18 @@ Objects {
         SelfId: 13256554077844899425
       }
     }
+    Overrides {
+      Name: "cs:ALLIES_PURCHASE_PREMIUM_BUTTON"
+      ObjectReference {
+        SelfId: 2348487310609178916
+      }
+    }
+    Overrides {
+      Name: "cs:AXIS_PURCHASE_PREMIUM_BUTTON"
+      ObjectReference {
+        SelfId: 10165580991423881663
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
