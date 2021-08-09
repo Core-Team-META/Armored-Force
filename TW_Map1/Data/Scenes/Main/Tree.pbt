@@ -354,7 +354,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "TW1_Minimap"
+    FilePartitionName: "TW_Minimap"
   }
 }
 Objects {
