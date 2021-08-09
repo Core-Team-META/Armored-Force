@@ -1,4 +1,4 @@
-Name: "TW1_Minimap"
+Name: "TW_Minimap"
 RootId: 10433577698686771103
 Objects {
   Id: 10370141871558452859
