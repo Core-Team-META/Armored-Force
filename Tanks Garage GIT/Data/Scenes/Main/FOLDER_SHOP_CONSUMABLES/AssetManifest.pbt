@@ -1,4 +1,13 @@
 Assets {
+  Id: 17251969847265876676
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 13575128885289472533
   Name: "Frame Outlined Thick 001"
   PlatformAssetType: 9
