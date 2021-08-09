@@ -1572,8 +1572,6 @@ Objects {
   ChildIds: 7213328971624318002
   ChildIds: 8457691431823548731
   ChildIds: 191788593713922798
-  ChildIds: 5897670967094343592
-  ChildIds: 6712529244421161540
   ChildIds: 4137500390921891449
   ChildIds: 18407125132768262667
   Collidable_v2 {
@@ -2180,9 +2178,9 @@ Objects {
     Text {
       Label: "LOCKED TANK"
       Color {
-        R: 0.535149038
-        G: 0.562988341
-        B: 0.613000035
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 27
@@ -2190,13 +2188,16 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
-      ClipTextToSize: true
       Font {
         Id: 9686253618519087109
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -2214,153 +2215,6 @@ Objects {
   InstanceHistory {
     SelfId: 4137500390921891449
     SubobjectId: 4054742572900533342
-    InstanceId: 4292961954314456140
-    TemplateId: 1556911412059544256
-  }
-}
-Objects {
-  Id: 6712529244421161540
-  Name: "TITLE_SECONDAIRY"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13200084972137290966
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    UIY: 3.22564697
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "LOCKED TANK"
-      Color {
-        R: 0.391329825
-        G: 0.433365941
-        B: 0.50888145
-        A: 1
-      }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 9686253618519087109
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6712529244421161540
-    SubobjectId: 6632040304095963235
-    InstanceId: 4292961954314456140
-    TemplateId: 1556911412059544256
-  }
-}
-Objects {
-  Id: 5897670967094343592
-  Name: "TITLE_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13200084972137290966
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    UIY: 5.74634218
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "LOCKED TANK"
-      Color {
-        A: 0.219000012
-      }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 9686253618519087109
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 5897670967094343592
-    SubobjectId: 5834044102145564047
     InstanceId: 4292961954314456140
     TemplateId: 1556911412059544256
   }
