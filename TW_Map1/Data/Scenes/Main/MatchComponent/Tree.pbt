@@ -6371,6 +6371,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:GAMEHELPER_SpottingServer"
+      ObjectReference {
+        SelfId: 1684701547217154315
+      }
+    }
+    Overrides {
       Name: "cs:AlliesTable"
       ObjectReference {
         SelfId: 5438681028534849275
