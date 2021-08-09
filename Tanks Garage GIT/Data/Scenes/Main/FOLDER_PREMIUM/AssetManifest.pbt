@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17195515431147114418
+  Name: "UI Buzzer Error Denied 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ui_buzzer_error_denied_01_Cue_ref"
+  }
+}
+Assets {
   Id: 14242369349519953845
   Name: "Center Arrow 003 Wedge"
   PlatformAssetType: 9
@@ -131,5 +140,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 1283463588493558965
+  Name: "Fantasy Gold 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Gold_002"
   }
 }
