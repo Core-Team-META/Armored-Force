@@ -154,7 +154,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -15
+    UIX: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -49503,7 +49503,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -15
+    UIX: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -51621,7 +51621,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -15
+    UIX: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
