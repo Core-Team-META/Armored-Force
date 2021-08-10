@@ -2,7 +2,7 @@ Assets {
   Id: 5688061251102705055
   Name: "TW_GrassGreen"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 96
   CustomMaterialAsset {
     BaseMaterialId: 12223811200745286487
     ParameterOverrides {

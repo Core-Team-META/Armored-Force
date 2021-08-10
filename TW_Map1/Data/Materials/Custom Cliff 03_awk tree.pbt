@@ -2,7 +2,7 @@ Assets {
   Id: 4643585931492114101
   Name: "Custom Cliff 03_awk tree"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 96
   CustomMaterialAsset {
     BaseMaterialId: 17184591166555015249
     ParameterOverrides {

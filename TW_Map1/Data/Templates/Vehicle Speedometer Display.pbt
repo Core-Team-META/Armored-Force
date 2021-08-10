@@ -146,6 +146,14 @@ Assets {
               Value: "mc:ecanvascontenttype:dynamic"
             }
             Opacity: 1
+            IsHUD: true
+            CanvasWorldSize {
+              X: 1024
+              Y: 1024
+            }
+            TwoSided: true
+            TickWhenOffScreen: true
+            RedrawTime: 30
           }
           AnchorLayout {
             SelfAnchor {
@@ -940,5 +948,5 @@ Assets {
       AssetId: "Vehicle_Speedometer_Display"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 96
 }

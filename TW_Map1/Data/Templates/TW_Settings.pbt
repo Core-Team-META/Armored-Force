@@ -280,6 +280,7 @@ Assets {
             MountChannelingTime: 2
             FlipOnMultiJump: true
             MaxHitpoints: 100
+            PlayerMasterVolumeMultiplier: 1
           }
         }
       }
@@ -368,5 +369,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 96
 }
