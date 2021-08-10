@@ -40,6 +40,9 @@ local localPlayer = Game.GetLocalPlayer()
 
 local capLimit = teamBasesServer:GetCustomProperty("CapLimit")
 
+local destructableTriggersA = aPointVisual:FindDescendantsByType("Trigger")
+local destructableTriggersB = bPointVisual:FindDescendantsByType("Trigger")
+
 function SetChildrenText(uiObj,_text) -- <-- generic children text function by AJ
     if Object.IsValid(uiObj) and uiObj:IsA("UIText") then
         uiObj.text = _text
@@ -93,6 +96,14 @@ function StateSTART(manager, propertyName)
 	end
 	
 	Task.Wait(0.1)
+	
+	for _, t in ipairs(destructableTriggersA) do
+		t.isEnabled = true
+	end
+	
+	for _, t in ipairs(destructableTriggersB) do
+		t.isEnabled = true
+	end
 	
 	teamBasesUI.visibility = Visibility.INHERIT
 	
@@ -215,6 +226,14 @@ function Initialize()
 		enemyBaseNotification.visibility = Visibility.INHERIT
 		StateSTART(_, "GameState")
 		mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
+	end
+		
+	for _, t in ipairs(destructableTriggersA) do
+		t.isEnabled = false
+	end
+	
+	for _, t in ipairs(destructableTriggersB) do
+		t.isEnabled = false
 	end
 end
 
