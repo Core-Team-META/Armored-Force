@@ -17,6 +17,7 @@ Objects {
   ParentId: 12355039630116237706
   ChildIds: 9626985273274155130
   ChildIds: 10899315648066199919
+  ChildIds: 3290148542467967574
   ChildIds: 2223467496738882315
   ChildIds: 15579098060650961143
   ChildIds: 7626369963108087915
@@ -38,7 +39,7 @@ Objects {
   Control {
     Width: -377
     Height: 165
-    UIX: 388
+    UIX: 383
     UIY: 5
     RenderTransformPivot {
       Anchor {
@@ -588,6 +589,71 @@ Objects {
   }
 }
 Objects {
+  Id: 3290148542467967574
+  Name: "TITLE_BG_LEFT_SIDE"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17307660758729169401
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 30
+    Height: 30
+    UIY: 2
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 1814707273787853473
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 10899315648066199919
   Name: "TITLE_BG"
   Transform {
@@ -617,6 +683,7 @@ Objects {
   Control {
     Width: 200
     Height: 30
+    UIX: 10.3830738
     UIY: 2
     RenderTransformPivot {
       Anchor {
@@ -629,7 +696,7 @@ Objects {
         Id: 1814707273787853473
       }
       Color {
-        A: 0.801000059
+        A: 1
       }
       TeamSettings {
       }
