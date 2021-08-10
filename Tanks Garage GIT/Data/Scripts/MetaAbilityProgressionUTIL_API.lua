@@ -701,7 +701,7 @@ end
 function API.PlayerOwnsTank(techTreeProgress, tankId)
     for i, entry in ipairs(techTreeProgress) do
         if tonumber(entry.id) == tonumber(tankId) then
-            return entry.purchased == Constants_API.UPGRADE_PROGRESS.PURCHASED
+            return entry.purchased
         end
     end
 end
@@ -712,9 +712,17 @@ function API.GetPurchaseCost(tankId)
 		if tonumber(id) == tonumber(tankId) then
             tankResourceName = tank:GetCustomProperty("PurchaseCurrencyName")
             tankPurchaseAmount = tank:GetCustomProperty("PurchaseCost")
-			return {resource = tankResourceName, amount = tankPurchaseAmount}		
+			return {resource = tostring(tankResourceName), amount = tonumber(tankPurchaseAmount)}		
 		end
 	end
+end
+
+function API.ShowPopup(title, message, buttonText)
+    local popUpPanel = World.FindObjectByName("POP_UP_MESSAGE")
+    popUpPanel.visibility = Visibility.FORCE_ON
+    popUpPanel:FindDescendantByName("TITLE_SECONDARY").text = title
+    popUpPanel:FindDescendantByName("BODY_TEXT").text = message
+    popUpPanel:FindDescendantByName("BUTTONTEXT_LIGHT").text = buttonText
 end
 
 ------------------------------------------------------------------------------------------------------------------------

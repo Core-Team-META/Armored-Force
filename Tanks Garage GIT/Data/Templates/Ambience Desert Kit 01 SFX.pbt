@@ -193,5 +193,5 @@ Assets {
       AssetId: "Ambience_Desert_Kit_01_SFX"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 96
 }

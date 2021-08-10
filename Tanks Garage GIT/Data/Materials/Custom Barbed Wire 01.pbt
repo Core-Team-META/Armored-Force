@@ -2,7 +2,7 @@ Assets {
   Id: 6110151164091798177
   Name: "Custom Barbed Wire 01"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 96
   CustomMaterialAsset {
     BaseMaterialId: 15311694679467806527
     ParameterOverrides {

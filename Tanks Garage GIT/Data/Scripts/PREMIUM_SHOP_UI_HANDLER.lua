@@ -31,6 +31,8 @@ local ALLIES_PREMIUM_TANK_ID = script:GetCustomProperty("AlliesPremiumTankId")
 local AXIS_PREMIUM_TANK_ID = script:GetCustomProperty("AxisPremiumTankId")
 local ALLIES_PURCHASED_BUTTON = script:GetCustomProperty("ALLIES_PURCHASED_BUTTON"):WaitForObject()
 local AXIS_PURCHASED_BUTTON = script:GetCustomProperty("AXIS_PURCHASED_BUTTON"):WaitForObject()
+local ALLIES_BUY_BUTTON = script:GetCustomProperty("ALLIES_BUY_BUTTON"):WaitForObject()
+local AXIS_BUY_BUTTON = script:GetCustomProperty("AXIS_BUY_BUTTON"):WaitForObject()
 
 local TANK_LIST = World.FindObjectByName("TechTree_Contents"):GetChildren()
 local ALLIES_TANKS = {}
@@ -41,6 +43,7 @@ local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 local SFX_UNHOVERED = script:GetCustomProperty("SFX_UNHOVERED"):WaitForObject()
 local SFX_DENIED = script:GetCustomProperty("SFX_DENIED"):WaitForObject()
+local SFX_EQUIP_TANK = script:GetCustomProperty("SFX_EQUIP_TANK"):WaitForObject()
 
 -- Local properties
 local TANK_ENTRY_Y_OFFSET = 40
@@ -52,6 +55,7 @@ function SubmenuClick(button)
 	SFX_CLICK:Play()
 	HideSubmenuActives()
 	HideSubmenuContent()
+	TogglePremiumTankOwnedState()
 	button.parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
 	
 	if(string.match(button.name, "ITEM_1")) then
@@ -66,7 +70,7 @@ function SubmenuClick(button)
 end
 
 function ResearchSubmenuClick(button)
-	SFX_CLICK:Play()
+	SFX_CLICK:Play()	
 	if(string.match(button.name, "SUBMENU_1")) then
 		LoadAlliesTanks()
 	elseif(string.match(button.name, "SUBMENU_2")) then		
@@ -332,8 +336,7 @@ function ToggleThisComponent(requestedPlayerState, substate)
 	if(substate) then
 		HideSubmenuActives()
 		HideSubmenuContent()
-		--button.parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
-		
+		--button.parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON		
 		if(substate == 1) then
 			BIG_DEALS.visibility = Visibility.FORCE_ON
 			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_1_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
@@ -342,58 +345,96 @@ function ToggleThisComponent(requestedPlayerState, substate)
 			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_2_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
 		elseif(substate == 3) then
 			RESEARCH_POINTS.visibility = Visibility.FORCE_ON
-			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_3_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
+			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_3_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON			
 		elseif(substate == 4) then
 			PREMIUM_TANKS.visibility = Visibility.FORCE_ON
-			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_4_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON
-			TogglePremiumTankOwnedState()
+			PREMIUM_SHOP:FindDescendantByName("SUBMENU_ITEM_4_BUTTON").parent:FindDescendantByName("ACTIVE").visibility = Visibility.FORCE_ON			
 		end
 	end
 end
 
 function TogglePremiumTankOwnedState()
-	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AlliesPremiumTankId) then
+	local alliesTankId = ALLIES_PREMIUM_TANK_ID	
+	local alliesPurchaseCosts = UTIL_API.GetPurchaseCost(alliesTankId)
+	print ("Owns Allies Tank: " .. tostring(UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, alliesTankId)))
+	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, alliesTankId) then
 		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_OFF
 		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
 	else
 		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_ON
 		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
+		if LOCAL_PLAYER:GetResource(alliesPurchaseCosts.resource) < alliesPurchaseCosts.amount then
+			ALLIES_BUY_BUTTON.isInteractable = false
+		else
+			ALLIES_BUY_BUTTON.isInteractable = true
+		end
 	end
 
-	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AxisPremiumTankId) then
-		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_OFF
-		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
+	local axisTankId = AXIS_PREMIUM_TANK_ID
+	local axisPurchaseCosts = UTIL_API.GetPurchaseCost(axisTankId)
+	if UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, axisTankId) then
+		AXIS_BUY_BUTTON.visibility = Visibility.FORCE_OFF
+		AXIS_PURCHASED_BUTTON.visibility = Visibility.FORCE_ON
 	else
-		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_ON
-		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
+		AXIS_BUY_BUTTON.visibility = Visibility.FORCE_ON
+		AXIS_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
+		if LOCAL_PLAYER:GetResource(axisPurchaseCosts.resource) < axisPurchaseCosts.amount then
+			AXIS_BUY_BUTTON.isInteractable = false
+		else
+			AXIS_BUY_BUTTON.isInteractable = true
+		end
 	end
 end
 
 function PurchaseAlliesPremiumTank()
 	local tankId = ALLIES_PREMIUM_TANK_ID
-	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AlliesPremiumTankId) then
+	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
 		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
 		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
 			return
 		end
-		Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		ALLIES_BUY_BUTTON.isInteractable = false
+		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		if (event == BroadcastEventResultCode.SUCCESS) then
+			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+				if (tonumber(tank.id) == tonumber(tankId)) then
+					tank.researched = true
+					tank.purchased = true
+				end
+			end			
+		end
 	end
 end
 
 function PurchaseAxisPremiumTank()
 	local tankId = AXIS_PREMIUM_TANK_ID
-	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, AxisPremiumTankId) then
+	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
 		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
-		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < LOCAL_PLAYER:GetResource(purchaseCosts.amount) then
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
 			SFX_DENIED:Play()
 			return
 		end
-
-		Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		AXIS_BUY_BUTTON.isInteractable = false
+		local event = Events.BroadcastToServer("PurchaseTank", tankId, purchaseCosts.resource)
+		if (event == BroadcastEventResultCode.SUCCESS) then
+			for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
+				if (tonumber(tank.id) == tonumber(tankId)) then
+					tank.researched = true
+					tank.purchased = true
+				end
+			end			
+		end
 		
 
 	end
+end
+
+function PurchaseSuccessful()
+	SFX_EQUIP_TANK:Play()
+	UTIL_API.ShowPopup("PURCHASE SUCCESSFUL", "Successfully purchased tank.", "OK")
+	Task.Wait(1)
+	TogglePremiumTankOwnedState()
 end
 
 function HoverButton()
@@ -440,3 +481,4 @@ ALLIES_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverButton)
 AXIS_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverButton)
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
+Events.Connect("TankPurchaseSuccessful", PurchaseSuccessful)
