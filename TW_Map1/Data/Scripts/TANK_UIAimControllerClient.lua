@@ -104,6 +104,7 @@ local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	local raycastPoint = World.Raycast(point, destination)
 		
 	if raycastPoint then
+		print(raycastPoint.other)
 		destination = raycastPoint:GetImpactPosition()
 		previousDistance = tonumber(math.ceil((destination - cannon:GetWorldPosition()).size))
 		distanceMaxed = false
@@ -141,7 +142,7 @@ function FindTank()
 	local tankID = localPlayer.clientUserData.currentTankData.id
 
 	turret = clientSkin:FindDescendantByName("Turret")
-	cannon = clientSkin:FindDescendantByName("Cannon")
+	cannon = clientSkin:FindDescendantByName("FiringFX")
 	
 	tankTarget = serverScript:FindDescendantByName("Target")
 	verticalLimits.max = serverScript:GetCustomProperty("MaxElevationAngle")

@@ -2,7 +2,7 @@ Assets {
   Id: 5393471088706896564
   Name: "TW_GrassTall"
   PlatformAssetType: 13
-  SerializationVersion: 94
+  SerializationVersion: 96
   CustomMaterialAsset {
     BaseMaterialId: 14686963192081980706
     ParameterOverrides {

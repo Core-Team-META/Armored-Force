@@ -292,6 +292,7 @@ Objects {
       MountChannelingTime: 2
       FlipOnMultiJump: true
       MaxHitpoints: 100
+      PlayerMasterVolumeMultiplier: 1
     }
   }
 }

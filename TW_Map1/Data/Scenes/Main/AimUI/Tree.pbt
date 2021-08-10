@@ -167,9 +167,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 0.3
-      Y: 0.3
-      Z: 0.3
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 12421583094399823290
@@ -190,7 +190,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceoff"
@@ -365,6 +365,14 @@ Objects {
     }
     Canvas {
       Opacity: 1
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      TwoSided: true
+      TickWhenOffScreen: true
+      RedrawTime: 30
     }
     AnchorLayout {
       SelfAnchor {
