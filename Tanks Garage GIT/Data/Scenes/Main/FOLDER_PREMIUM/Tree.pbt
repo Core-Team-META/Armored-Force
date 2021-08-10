@@ -6313,9 +6313,6 @@ Objects {
     Volume: 1
     Falloff: -1
     Radius: -1
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
   }
 }
 Objects {
@@ -6967,8 +6964,8 @@ Objects {
         A: 1
       }
       DisabledColor {
-        R: 0.0386666432
-        G: 0.0800000057
+        R: 0.0135333212
+        G: 0.028
         A: 1
       }
       Brush {
@@ -28126,8 +28123,8 @@ Objects {
         A: 1
       }
       DisabledColor {
-        R: 0.0386666432
-        G: 0.0800000057
+        R: 0.0135333212
+        G: 0.028
         A: 1
       }
       Brush {
@@ -87497,6 +87494,24 @@ Objects {
       Name: "cs:SFX_DENIED"
       ObjectReference {
         SelfId: 2757176964126906239
+      }
+    }
+    Overrides {
+      Name: "cs:ALLIES_BUY_BUTTON"
+      ObjectReference {
+        SelfId: 2348487310609178916
+      }
+    }
+    Overrides {
+      Name: "cs:AXIS_BUY_BUTTON"
+      ObjectReference {
+        SelfId: 10165580991423881663
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_EQUIP_TANK"
+      ObjectReference {
+        SelfId: 8027717470199943460
       }
     }
   }
