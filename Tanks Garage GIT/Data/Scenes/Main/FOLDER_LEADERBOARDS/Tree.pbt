@@ -75,10 +75,9 @@ Objects {
     }
   }
   ParentId: 15497391469802989676
-  ChildIds: 14666657915266247531
-  ChildIds: 17802866817515240762
-  ChildIds: 18132585915783501415
-  ChildIds: 8992643641463986163
+  ChildIds: 2257633520996125878
+  ChildIds: 12510856367464312315
+  ChildIds: 3407395649074223567
   ChildIds: 9240960277760839048
   ChildIds: 13463627065260447842
   Collidable_v2 {
@@ -92,7 +91,7 @@ Objects {
   }
   Control {
     Width: -8
-    Height: 61
+    Height: 43
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -151,7 +150,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -15
+    UIX: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -711,81 +710,13 @@ Objects {
   Control {
     Width: 200
     Height: 24
+    UIY: 3
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     UseParentWidth: true
-    Text {
-      Label: "LEADERBOARDS"
-      Color {
-        R: 0.535149038
-        G: 0.562988341
-        B: 0.613000035
-        A: 1
-      }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      ClipTextToSize: true
-      Font {
-        Id: 9686253618519087109
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8992643641463986163
-  Name: "TITLE_SECONDAIRY"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6567633945108760773
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
     Text {
       Label: "LEADERBOARDS"
       Color {
@@ -794,7 +725,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 27
+      Size: 20
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -805,12 +736,10 @@ Objects {
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
-      ShadowColor {
+      OutlineColor {
         A: 1
       }
-      ShadowOffset {
-        Y: 3
-      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -827,10 +756,11 @@ Objects {
   }
 }
 Objects {
-  Id: 18132585915783501415
+  Id: 3407395649074223567
   Name: "DIVIDER"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
@@ -852,7 +782,6 @@ Objects {
   }
   Control {
     Height: 1
-    UIY: -1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -885,10 +814,11 @@ Objects {
   }
 }
 Objects {
-  Id: 17802866817515240762
+  Id: 12510856367464312315
   Name: "BACKGROUND"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
@@ -899,10 +829,10 @@ Objects {
     }
   }
   ParentId: 6567633945108760773
-  ChildIds: 18365941083396811235
-  ChildIds: 9395081195072326707
-  ChildIds: 1967752783563440960
-  ChildIds: 4456371087622768347
+  ChildIds: 4219629572267240973
+  ChildIds: 18117965987593879374
+  ChildIds: 10630919821903242871
+  ChildIds: 4395147362857855315
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -921,6 +851,7 @@ Objects {
       }
     }
     UseParentWidth: true
+    UseParentHeight: true
     Panel {
       IsClipping: true
       Opacity: 1
@@ -940,7 +871,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4456371087622768347
+  Id: 4395147362857855315
   Name: "TOP_SHINE"
   Transform {
     Location {
@@ -953,8 +884,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17802866817515240762
-  ChildIds: 14573680085295923504
+  ParentId: 12510856367464312315
+  ChildIds: 14429775298088320593
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -992,7 +923,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14573680085295923504
+  Id: 14429775298088320593
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -1005,7 +936,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4456371087622768347
+  ParentId: 4395147362857855315
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1053,7 +984,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1967752783563440960
+  Id: 10630919821903242871
   Name: "BOTTOM_SHINE"
   Transform {
     Location {
@@ -1066,7 +997,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17802866817515240762
+  ParentId: 12510856367464312315
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1112,7 +1043,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9395081195072326707
+  Id: 18117965987593879374
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -1125,7 +1056,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17802866817515240762
+  ParentId: 12510856367464312315
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1170,7 +1101,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18365941083396811235
+  Id: 4219629572267240973
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -1183,7 +1114,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17802866817515240762
+  ParentId: 12510856367464312315
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1231,10 +1162,11 @@ Objects {
   }
 }
 Objects {
-  Id: 14666657915266247531
+  Id: 2257633520996125878
   Name: "DROP_SHADOW"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
@@ -1321,7 +1253,7 @@ Objects {
   Control {
     Width: -2
     Height: 45
-    UIY: 58.2873077
+    UIY: 42
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

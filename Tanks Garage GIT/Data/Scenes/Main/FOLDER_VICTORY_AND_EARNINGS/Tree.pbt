@@ -1081,10 +1081,9 @@ Objects {
     }
   }
   ParentId: 2881969242598562915
-  ChildIds: 12894914263375238690
-  ChildIds: 1177968901867537075
-  ChildIds: 9333298910840469813
-  ChildIds: 18344093620914665545
+  ChildIds: 11247405291010744769
+  ChildIds: 1882875417354268301
+  ChildIds: 8271490450703750652
   ChildIds: 7918673607020870836
   ChildIds: 14503567539006798508
   Collidable_v2 {
@@ -1098,7 +1097,7 @@ Objects {
   }
   Control {
     Width: -8
-    Height: 61
+    Height: 43
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1157,7 +1156,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -15
+    UIX: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1717,81 +1716,13 @@ Objects {
   Control {
     Width: 200
     Height: 24
+    UIY: 3
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     UseParentWidth: true
-    Text {
-      Label: "GAME STATS SUMMARY"
-      Color {
-        R: 0.535149038
-        G: 0.562988341
-        B: 0.613000035
-        A: 1
-      }
-      Size: 27
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      ClipTextToSize: true
-      Font {
-        Id: 9686253618519087109
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 18344093620914665545
-  Name: "TITLE_SECONDAIRY"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8575796783401067216
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
     Text {
       Label: "GAME STATS SUMMARY"
       Color {
@@ -1800,7 +1731,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 27
+      Size: 20
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -1811,12 +1742,10 @@ Objects {
       VerticalJustification {
         Value: "mc:everticaljustification:center"
       }
-      ShadowColor {
+      OutlineColor {
         A: 1
       }
-      ShadowOffset {
-        Y: 3
-      }
+      OutlineSize: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -1833,10 +1762,11 @@ Objects {
   }
 }
 Objects {
-  Id: 9333298910840469813
+  Id: 8271490450703750652
   Name: "DIVIDER"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
@@ -1858,7 +1788,6 @@ Objects {
   }
   Control {
     Height: 1
-    UIY: -1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1891,10 +1820,11 @@ Objects {
   }
 }
 Objects {
-  Id: 1177968901867537075
+  Id: 1882875417354268301
   Name: "BACKGROUND"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
@@ -1905,10 +1835,10 @@ Objects {
     }
   }
   ParentId: 8575796783401067216
-  ChildIds: 1428079596767222813
-  ChildIds: 6123804018737371855
-  ChildIds: 1234441263189034890
-  ChildIds: 18270454410964874476
+  ChildIds: 11380809278764347546
+  ChildIds: 4887516023762473236
+  ChildIds: 17717104785407784994
+  ChildIds: 16335320627570909855
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1927,6 +1857,7 @@ Objects {
       }
     }
     UseParentWidth: true
+    UseParentHeight: true
     Panel {
       IsClipping: true
       Opacity: 1
@@ -1946,7 +1877,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18270454410964874476
+  Id: 16335320627570909855
   Name: "TOP_SHINE"
   Transform {
     Location {
@@ -1959,8 +1890,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1177968901867537075
-  ChildIds: 14729293688200624456
+  ParentId: 1882875417354268301
+  ChildIds: 4240490790069393120
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1998,7 +1929,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14729293688200624456
+  Id: 4240490790069393120
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -2011,7 +1942,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18270454410964874476
+  ParentId: 16335320627570909855
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2059,7 +1990,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1234441263189034890
+  Id: 17717104785407784994
   Name: "BOTTOM_SHINE"
   Transform {
     Location {
@@ -2072,7 +2003,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1177968901867537075
+  ParentId: 1882875417354268301
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2118,7 +2049,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6123804018737371855
+  Id: 4887516023762473236
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -2131,7 +2062,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1177968901867537075
+  ParentId: 1882875417354268301
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2176,7 +2107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1428079596767222813
+  Id: 11380809278764347546
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -2189,7 +2120,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1177968901867537075
+  ParentId: 1882875417354268301
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2237,10 +2168,11 @@ Objects {
   }
 }
 Objects {
-  Id: 12894914263375238690
+  Id: 11247405291010744769
   Name: "DROP_SHADOW"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
