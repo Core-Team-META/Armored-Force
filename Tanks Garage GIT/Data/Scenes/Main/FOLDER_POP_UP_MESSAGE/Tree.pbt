@@ -2346,9 +2346,9 @@ Objects {
     }
   }
   ParentId: 3107273142777202591
-  ChildIds: 9942456041938658128
-  ChildIds: 11332521429369516257
-  ChildIds: 17037676493739743214
+  ChildIds: 16626729497841246031
+  ChildIds: 4018627785694281854
+  ChildIds: 9593428683388031361
   ChildIds: 16857632454991607954
   ChildIds: 4709711775557074132
   Collidable_v2 {
@@ -2362,7 +2362,7 @@ Objects {
   }
   Control {
     Width: -8
-    Height: 61
+    Height: 43
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2421,7 +2421,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -15
+    UIX: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2956,7 +2956,7 @@ Objects {
 }
 Objects {
   Id: 16857632454991607954
-  Name: "TITLE_SECONDARY"
+  Name: "TITLE"
   Transform {
     Location {
     }
@@ -2981,6 +2981,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
+    UIY: 3
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2996,7 +2997,7 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 27
+      Size: 20
       Justification {
         Value: "mc:etextjustify:center"
       }
@@ -3032,10 +3033,11 @@ Objects {
   }
 }
 Objects {
-  Id: 17037676493739743214
+  Id: 9593428683388031361
   Name: "DIVIDER"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
@@ -3057,7 +3059,6 @@ Objects {
   }
   Control {
     Height: 1
-    UIY: -1
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3090,10 +3091,11 @@ Objects {
   }
 }
 Objects {
-  Id: 11332521429369516257
+  Id: 4018627785694281854
   Name: "BACKGROUND"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
@@ -3104,10 +3106,10 @@ Objects {
     }
   }
   ParentId: 1860287350160907122
-  ChildIds: 10868293507954979711
-  ChildIds: 15514900437962830801
-  ChildIds: 11922157935113579946
-  ChildIds: 12218416405270941661
+  ChildIds: 12444593933959753715
+  ChildIds: 1377606803698248778
+  ChildIds: 2509432659619619460
+  ChildIds: 16798055493075860129
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3126,6 +3128,7 @@ Objects {
       }
     }
     UseParentWidth: true
+    UseParentHeight: true
     Panel {
       IsClipping: true
       Opacity: 1
@@ -3145,7 +3148,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12218416405270941661
+  Id: 16798055493075860129
   Name: "TOP_SHINE"
   Transform {
     Location {
@@ -3158,8 +3161,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11332521429369516257
-  ChildIds: 5051863749453433722
+  ParentId: 4018627785694281854
+  ChildIds: 6787361270135753913
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3197,7 +3200,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5051863749453433722
+  Id: 6787361270135753913
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -3210,7 +3213,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12218416405270941661
+  ParentId: 16798055493075860129
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3258,7 +3261,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11922157935113579946
+  Id: 2509432659619619460
   Name: "BOTTOM_SHINE"
   Transform {
     Location {
@@ -3271,7 +3274,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11332521429369516257
+  ParentId: 4018627785694281854
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3317,7 +3320,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15514900437962830801
+  Id: 1377606803698248778
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -3330,7 +3333,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11332521429369516257
+  ParentId: 4018627785694281854
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3375,7 +3378,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10868293507954979711
+  Id: 12444593933959753715
   Name: "BACKGROUND"
   Transform {
     Location {
@@ -3388,7 +3391,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11332521429369516257
+  ParentId: 4018627785694281854
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3436,10 +3439,11 @@ Objects {
   }
 }
 Objects {
-  Id: 9942456041938658128
+  Id: 16626729497841246031
   Name: "DROP_SHADOW"
   Transform {
     Location {
+      X: -0.000122070312
     }
     Rotation {
     }
