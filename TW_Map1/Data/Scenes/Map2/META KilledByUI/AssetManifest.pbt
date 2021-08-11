@@ -8,6 +8,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16636415353835813981
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
+  Id: 12478180938234886174
+  Name: "BG Highlighted 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_019"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
@@ -17,12 +35,21 @@ Assets {
   }
 }
 Assets {
-  Id: 6652465128597143799
-  Name: "Teko"
-  PlatformAssetType: 28
+  Id: 7946634531565250888
+  Name: "BG Flat 002"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "TekoRegular_ref"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 7648893931280516746
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
   }
 }
 Assets {
@@ -32,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Icon_Coin"
+  }
+}
+Assets {
+  Id: 4913010023776999523
+  Name: "Baloo 2"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "Baloo2Regular_ref"
   }
 }
 Assets {
@@ -59,14 +95,5 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_036"
-  }
-}
-Assets {
-  Id: 96162478431907100
-  Name: "UI Gradient Circular 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Basic_Shape_001"
   }
 }

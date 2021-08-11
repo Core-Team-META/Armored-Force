@@ -1,13 +1,4 @@
 Assets {
-  Id: 17828656623802134300
-  Name: "Icon Skull"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Skull"
-  }
-}
-Assets {
   Id: 17289448223043935888
   Name: "UI Gradient Rectangular 001"
   PlatformAssetType: 9
@@ -44,12 +35,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16636415353835813981
+  Name: "Teko"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
+  }
+}
+Assets {
   Id: 15392186923000422511
   Name: "Teko Bold"
   PlatformAssetType: 28
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "TekoBold_ref"
+  }
+}
+Assets {
+  Id: 13575128885289472533
+  Name: "Frame Outlined Thick 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_020"
   }
 }
 Assets {
@@ -71,12 +80,39 @@ Assets {
   }
 }
 Assets {
+  Id: 11748658234763714575
+  Name: "Survival Extinguisher 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Extinguisher_001"
+  }
+}
+Assets {
+  Id: 11580556476579907525
+  Name: "Frame Line 008a Corner"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameLine_008aHalf"
+  }
+}
+Assets {
   Id: 10820194954338241369
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 9297610767996246578
+  Name: "Survival Tool Toolbox 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_022"
   }
 }
 Assets {
@@ -98,12 +134,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6652465128597143799
-  Name: "Teko"
-  PlatformAssetType: 28
+  Id: 7648893931280516746
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "TekoRegular_ref"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
   }
 }
 Assets {
@@ -125,11 +161,56 @@ Assets {
   }
 }
 Assets {
-  Id: 96162478431907100
-  Name: "UI Gradient Circular 001"
+  Id: 4194909855045064954
+  Name: "Military Ability Tank Attack"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Basic_Shape_001"
+    AssetId: "Icon_Military_Ability_Yellow_008"
+  }
+}
+Assets {
+  Id: 4056803710864138273
+  Name: "Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_001"
+  }
+}
+Assets {
+  Id: 3807975642088276623
+  Name: "Weapon Ammo 013"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Weapon_Ammo_013"
+  }
+}
+Assets {
+  Id: 3184086928171217139
+  Name: "Frame Hex 007 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameHex_007Wedge"
+  }
+}
+Assets {
+  Id: 3125449001268701343
+  Name: "Line Half 006a"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "LineHalf_006a"
+  }
+}
+Assets {
+  Id: 1101945558934518389
+  Name: "Frame Hex 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameHex_005"
   }
 }

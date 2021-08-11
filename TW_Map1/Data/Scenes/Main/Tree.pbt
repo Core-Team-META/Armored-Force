@@ -28,7 +28,6 @@ Objects {
   ChildIds: 18175534153066006281
   ChildIds: 17846127275428705935
   ChildIds: 11984403265931894140
-  ChildIds: 9603367572146371049
   ChildIds: 1707391849004821668
   UnregisteredParameters {
   }
@@ -74,52 +73,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Bigglebuns"
-  }
-}
-Objects {
-  Id: 9603367572146371049
-  Name: "Container - Hex- Rounded"
-  Transform {
-    Location {
-      X: -13.6132812
-      Z: -38420
-    }
-    Rotation {
-    }
-    Scale {
-      X: 248.400009
-      Y: 347.300018
-      Z: 315.599915
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4249713416572262948
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
   }
 }
 Objects {

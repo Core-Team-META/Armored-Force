@@ -786,7 +786,7 @@ Objects {
   Transform {
     Location {
       X: 1372.55676
-      Y: 25442.6563
+      Y: 25442.6562
       Z: -1121.01807
     }
     Rotation {
@@ -4946,7 +4946,7 @@ Objects {
   Transform {
     Location {
       X: -22784.1367
-      Y: -11732.9063
+      Y: -11732.9062
       Z: -1121.02246
     }
     Rotation {
@@ -6635,7 +6635,7 @@ Objects {
   Name: "Cube - Bottom-Aligned"
   Transform {
     Location {
-      X: 2703.07813
+      X: 2703.07812
       Y: 31375.7734
       Z: -1121.02344
     }

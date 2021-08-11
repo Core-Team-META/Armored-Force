@@ -535,7 +535,7 @@ Objects {
   Transform {
     Location {
       X: -13617.543
-      Y: 32413.1563
+      Y: 32413.1562
       Z: -161.630737
     }
     Rotation {
@@ -1531,7 +1531,7 @@ Objects {
   Transform {
     Location {
       X: -29082.0234
-      Y: -13824.7813
+      Y: -13824.7812
       Z: -229.880554
     }
     Rotation {
@@ -3038,7 +3038,7 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: 22999.4063
+      X: 22999.4062
       Y: 2895.5376
       Z: 326.669678
     }
@@ -3414,7 +3414,7 @@ Objects {
     }
     Rotation {
       Yaw: 87.0151138
-      Roll: -0.711914063
+      Roll: -0.711914062
     }
     Scale {
       X: 6.24998522
@@ -4410,7 +4410,7 @@ Objects {
   Name: "Decal Stains Round 01"
   Transform {
     Location {
-      X: -30386.7813
+      X: -30386.7812
       Y: 37024.4219
       Z: -180.909424
     }
@@ -5403,7 +5403,7 @@ Objects {
     Location {
       X: 29266.8828
       Y: 20485.1875
-      Z: 41.0195313
+      Z: 41.0195312
     }
     Rotation {
     }
@@ -5815,7 +5815,7 @@ Objects {
     Location {
       X: -16383.9512
       Y: -12673.7842
-      Z: 333.382813
+      Z: 333.382812
     }
     Rotation {
     }
@@ -9321,7 +9321,7 @@ Objects {
     Location {
       X: -13163.6592
       Y: -13542.7744
-      Z: 333.382813
+      Z: 333.382812
     }
     Rotation {
     }

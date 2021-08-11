@@ -2133,7 +2133,7 @@ Assets {
         Transform {
           Location {
             X: 814.716492
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
           }
@@ -2345,7 +2345,7 @@ Assets {
         Name: "I-Beam 4m"
         Transform {
           Location {
-            X: -0.0356445313
+            X: -0.0356445312
             Y: 4.11120605
             Z: 107.405579
           }
@@ -4364,7 +4364,7 @@ Assets {
         Transform {
           Location {
             X: 5.75830078
-            Y: 0.000610351563
+            Y: 0.000610351562
             Z: 252.978943
           }
           Rotation {
@@ -4513,7 +4513,7 @@ Assets {
         Transform {
           Location {
             X: 5.71923828
-            Y: 0.000610351563
+            Y: 0.000610351562
             Z: 193.238831
           }
           Rotation {
@@ -4831,7 +4831,7 @@ Assets {
         Transform {
           Location {
             X: 5.75830078
-            Y: 0.000610351563
+            Y: 0.000610351562
             Z: 252.978943
           }
           Rotation {
@@ -4980,7 +4980,7 @@ Assets {
         Transform {
           Location {
             X: 5.71923828
-            Y: 0.000610351563
+            Y: 0.000610351562
             Z: 193.238831
           }
           Rotation {
@@ -5262,7 +5262,7 @@ Assets {
         Transform {
           Location {
             X: 76.9782715
-            Y: -0.500976563
+            Y: -0.500976562
             Z: 362.765808
           }
           Rotation {
@@ -5335,7 +5335,7 @@ Assets {
         Transform {
           Location {
             X: 8.16943359
-            Y: -0.500976563
+            Y: -0.500976562
             Z: 107.213379
           }
           Rotation {
@@ -10902,5 +10902,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

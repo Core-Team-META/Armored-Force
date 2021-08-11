@@ -3632,7 +3632,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -24970.1563
+            X: -24970.1562
             Y: -17235.5898
             Z: 85.370575
           }
@@ -7879,7 +7879,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -23552.9453
-            Y: -24625.1563
+            Y: -24625.1562
             Z: 309.791626
           }
         }
@@ -8055,7 +8055,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -24023.1563
+            X: -24023.1562
             Y: -24186.8379
             Z: 330.617218
           }
@@ -8883,7 +8883,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -12701.0313
+            X: -12701.0312
             Y: 13006.585
             Z: 422.427
           }
@@ -9720,7 +9720,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -3873.64185
-            Y: 12292.4063
+            Y: 12292.4062
             Z: -137.091461
           }
         }
@@ -10694,7 +10694,7 @@ Objects {
   Name: "TW3_Tree3_Destructible"
   Transform {
     Location {
-      X: 17903.4063
+      X: 17903.4062
       Y: -26296.4043
       Z: 192.479279
     }
@@ -13337,7 +13337,7 @@ Objects {
   Transform {
     Location {
       X: -8525.09
-      Y: -22303.0313
+      Y: -22303.0312
       Z: 274.318512
     }
     Rotation {
@@ -13364,7 +13364,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -9782.39063
+            X: -9782.39062
             Y: -25310.8457
             Z: 469.145844
           }
@@ -13927,7 +13927,7 @@ Objects {
   Transform {
     Location {
       X: -8525.09
-      Y: -22303.0313
+      Y: -22303.0312
       Z: 274.318512
     }
     Rotation {
@@ -14611,7 +14611,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -8572.26563
+            X: -8572.26562
             Y: -20341.127
             Z: 460.070618
           }
@@ -14642,7 +14642,7 @@ Objects {
   Name: "TW3_Tree3_Destructible"
   Transform {
     Location {
-      X: 17903.4063
+      X: 17903.4062
       Y: -26869.3594
       Z: 191.118347
     }
@@ -16109,7 +16109,7 @@ Objects {
   Name: "TW3_Tree3_Destructible"
   Transform {
     Location {
-      X: 20523.0313
+      X: 20523.0312
       Y: -23056.9355
       Z: 74.949585
     }
@@ -16227,7 +16227,7 @@ Objects {
   Name: "TW3_Tree_Destructible"
   Transform {
     Location {
-      X: 20321.0313
+      X: 20321.0312
       Y: -23684.5488
       Z: 37.3074951
     }
@@ -18054,7 +18054,7 @@ Objects {
   Name: "TW3_Tree3_Destructible"
   Transform {
     Location {
-      X: 17903.4063
+      X: 17903.4062
       Y: -26869.3594
       Z: 191.118347
     }
@@ -18820,7 +18820,7 @@ Objects {
   Name: "TW3_Tree3_Destructible"
   Transform {
     Location {
-      X: 20523.0313
+      X: 20523.0312
       Y: -23056.9355
       Z: 74.949585
     }
@@ -18879,7 +18879,7 @@ Objects {
   Name: "TW3_Tree_Destructible"
   Transform {
     Location {
-      X: 20321.0313
+      X: 20321.0312
       Y: -23684.5488
       Z: 37.3074951
     }
@@ -19084,7 +19084,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 17903.4063
+            X: 17903.4062
             Y: -26296.4043
             Z: 192.479279
           }
@@ -19847,7 +19847,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 19243.7813
+            X: 19243.7812
             Y: -22980.9375
             Z: 68.4314423
           }
@@ -20308,7 +20308,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 25640.4063
+            X: 25640.4062
             Y: -23554.2891
             Z: 150.081726
           }

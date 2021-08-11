@@ -1,7 +1,7 @@
 Name: "Chat"
-RootId: 2882299994980456532
+RootId: 5923443552270198422
 Objects {
-  Id: 17118001674088593973
+  Id: 10243197233699089091
   Name: "Chat Controller"
   Transform {
     Location {
@@ -14,9 +14,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2882299994980456532
-  ChildIds: 2889113802428616159
-  ChildIds: 7119129551855055765
+  ParentId: 5923443552270198422
+  ChildIds: 542741857690869833
+  ChildIds: 862925413967486067
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -31,7 +31,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7119129551855055765
+  Id: 862925413967486067
   Name: "ClientContext"
   Transform {
     Location {
@@ -44,9 +44,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17118001674088593973
-  ChildIds: 12221702627424815789
-  ChildIds: 18007401164974560889
+  ParentId: 10243197233699089091
+  ChildIds: 6149377539215697874
+  ChildIds: 510522220524228323
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18007401164974560889
+  Id: 510522220524228323
   Name: "UI Container"
   Transform {
     Location {
@@ -73,7 +73,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7119129551855055765
+  ParentId: 862925413967486067
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -94,6 +94,14 @@ Objects {
         Value: "mc:ecanvascontenttype:static"
       }
       Opacity: 1
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      TwoSided: true
+      TickWhenOffScreen: true
+      RedrawTime: 30
     }
     AnchorLayout {
       SelfAnchor {
@@ -110,7 +118,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12221702627424815789
+  Id: 6149377539215697874
   Name: "ChatControllerClient"
   Transform {
     Location {
@@ -123,7 +131,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7119129551855055765
+  ParentId: 862925413967486067
   UnregisteredParameters {
     Overrides {
       Name: "cs:CommandsList"
@@ -140,7 +148,7 @@ Objects {
     Overrides {
       Name: "cs:Container"
       ObjectReference {
-        SelfId: 18007401164974560889
+        SelfId: 510522220524228323
       }
     }
   }
@@ -160,7 +168,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2889113802428616159
+  Id: 542741857690869833
   Name: "ChatControllerServer"
   Transform {
     Location {
@@ -173,12 +181,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17118001674088593973
+  ParentId: 10243197233699089091
   UnregisteredParameters {
     Overrides {
       Name: "cs:CommandsList"
       AssetReference {
         Id: 16333179939683747270
+      }
+    }
+    Overrides {
+      Name: "cs:AdminData"
+      AssetReference {
+        Id: 11744387492311440543
       }
     }
   }

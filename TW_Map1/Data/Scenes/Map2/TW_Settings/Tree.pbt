@@ -1,7 +1,7 @@
 Name: "TW_Settings"
-RootId: 17064665832760243002
+RootId: 9979275421894607866
 Objects {
-  Id: 2383058422535705687
+  Id: 1274851760756636109
   Name: "Game Settings"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17064665832760243002
+  ParentId: 9979275421894607866
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -35,9 +35,10 @@ Objects {
       EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
+          Value: "mc:echatmode:teamandall"
         }
         ChatPosition {
-          Y: -40
+          Y: -50
         }
         ChatSize {
           X: 450
@@ -111,7 +112,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9253347843554307712
+  Id: 7650546705007980703
   Name: "Third Person Camera Settings"
   Transform {
     Location {
@@ -124,9 +125,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17064665832760243002
-  ChildIds: 10162701858472817617
-  ChildIds: 3067552393290828591
+  ParentId: 9979275421894607866
+  ChildIds: 2838646526309134258
+  ChildIds: 14962788172871827683
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -143,7 +144,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3067552393290828591
+  Id: 14962788172871827683
   Name: "Client Context"
   Transform {
     Location {
@@ -156,8 +157,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9253347843554307712
-  ChildIds: 15574929142977672416
+  ParentId: 7650546705007980703
+  ChildIds: 6477659911735879041
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -173,7 +174,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15574929142977672416
+  Id: 6477659911735879041
   Name: "Third Person Camera"
   Transform {
     Location {
@@ -187,7 +188,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3067552393290828591
+  ParentId: 14962788172871827683
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -218,10 +219,11 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
+    UseAsAudioListener: true
   }
 }
 Objects {
-  Id: 10162701858472817617
+  Id: 2838646526309134258
   Name: "Third Person Player Settings"
   Transform {
     Location {
@@ -234,7 +236,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9253347843554307712
+  ParentId: 7650546705007980703
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -279,7 +281,6 @@ Objects {
       MountedJumpVelocity: 900
       HeadVisibleToSelf: true
       IsSlideEnabled: true
-      IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
       CanMoveLeft: true
@@ -291,11 +292,12 @@ Objects {
       MountChannelingTime: 2
       FlipOnMultiJump: true
       MaxHitpoints: 100
+      PlayerMasterVolumeMultiplier: 1
     }
   }
 }
 Objects {
-  Id: 2875341042350036809
+  Id: 10161361001955674276
   Name: "Respawn Settings"
   Transform {
     Location {
@@ -308,7 +310,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17064665832760243002
+  ParentId: 9979275421894607866
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -326,6 +328,9 @@ Objects {
         Value: "mc:erespawnmode:roundrobin"
       }
       StartSpawned: true
+      SpawnMode {
+        Value: "mc:espawnmode:roundrobin"
+      }
     }
   }
 }

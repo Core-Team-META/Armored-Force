@@ -207,7 +207,7 @@ Assets {
           Location {
             X: -45.9087448
             Y: -8.36905098
-            Z: -37.6289063
+            Z: -37.6289062
           }
           Rotation {
           }
@@ -482,7 +482,7 @@ Assets {
         Transform {
           Location {
             X: -123.561523
-            Y: 0.719726563
+            Y: 0.719726562
             Z: 104.652939
           }
           Rotation {
@@ -854,7 +854,7 @@ Assets {
         Name: "Decal Stains Round 01"
         Transform {
           Location {
-            X: -79.9414063
+            X: -79.9414062
             Y: -15.6923828
             Z: 121.220169
           }
@@ -997,5 +997,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

@@ -329,7 +329,7 @@ Assets {
           Location {
             X: 22.9568043
             Y: 61.3491058
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: -5.90316963
@@ -436,7 +436,7 @@ Assets {
           Location {
             X: 125.878128
             Y: -58.4322968
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: -173.548233
@@ -490,7 +490,7 @@ Assets {
           Location {
             X: -74.8865051
             Y: -137.400208
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: 104.777443
@@ -667,5 +667,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

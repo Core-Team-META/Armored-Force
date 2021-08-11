@@ -104,7 +104,6 @@ local function RaycastResultFromPointRotationDistance(point, rotation, distance)
 	local raycastPoint = World.Raycast(point, destination)
 		
 	if raycastPoint then
-		print(raycastPoint.other)
 		destination = raycastPoint:GetImpactPosition()
 		previousDistance = tonumber(math.ceil((destination - cannon:GetWorldPosition()).size))
 		distanceMaxed = false

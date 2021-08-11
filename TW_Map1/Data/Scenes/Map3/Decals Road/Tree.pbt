@@ -2465,7 +2465,7 @@ Objects {
   Transform {
     Location {
       X: 31822.6973
-      Y: -26998.5313
+      Y: -26998.5312
       Z: -52.3639526
     }
     Rotation {
@@ -2572,7 +2572,7 @@ Objects {
   Name: "Decal Stains Round 01 - Road"
   Transform {
     Location {
-      X: 24744.4063
+      X: 24744.4062
       Y: -26141.2363
       Z: -250.556137
     }

@@ -258,7 +258,7 @@ Assets {
         Name: "Tree Redwood Bare Big"
         Transform {
           Location {
-            X: -17439.4063
+            X: -17439.4062
             Y: -6379.0542
             Z: 268.646
           }
@@ -2591,7 +2591,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -78184.4063
+            X: -78184.4062
             Y: 1475.53516
             Z: 3241.92383
           }
@@ -2815,7 +2815,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -72541.1563
+            X: -72541.1562
             Y: 11628.7979
             Z: 2381.51392
           }
@@ -2983,7 +2983,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -69213.0313
+            X: -69213.0312
             Y: 8490.85
             Z: 1925.21899
           }
@@ -3148,7 +3148,7 @@ Assets {
         Transform {
           Location {
             X: -50625
-            Y: 7130.45313
+            Y: 7130.45312
             Z: 820
           }
           Rotation {
@@ -6011,7 +6011,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -78184.4063
+            X: -78184.4062
             Y: -19184.918
             Z: 3680.41016
           }
@@ -6067,7 +6067,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -69213.0313
+            X: -69213.0312
             Y: -16667.9492
             Z: 2363.70508
           }
@@ -6235,7 +6235,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -72541.1563
+            X: -72541.1562
             Y: -13530
             Z: 2820
           }
@@ -8363,7 +8363,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -91950.6563
+            X: -91950.6562
             Y: -4700.40869
             Z: 4877.33496
           }
@@ -9875,7 +9875,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -78184.4063
+            X: -78184.4062
             Y: -29950.3438
             Z: 3680.41016
           }
@@ -10548,7 +10548,7 @@ Assets {
         Transform {
           Location {
             X: -91401.1953
-            Y: 18675.1563
+            Y: 18675.1562
             Z: 6339.90918
           }
           Rotation {
@@ -11723,7 +11723,7 @@ Assets {
         Transform {
           Location {
             X: -98702.9
-            Y: 18675.1563
+            Y: 18675.1562
             Z: 7966.0625
           }
           Rotation {
@@ -19224,7 +19224,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -67699.5313
+            X: -67699.5312
             Y: -33983.2344
             Z: 2432.73389
           }
@@ -19840,7 +19840,7 @@ Assets {
         Name: "BGTrees"
         Transform {
           Location {
-            X: -84747.2813
+            X: -84747.2812
             Y: -44400.3398
             Z: 5681.39453
           }
@@ -21945,7 +21945,7 @@ Assets {
         Transform {
           Location {
             X: -62294.2695
-            Y: -54786.5313
+            Y: -54786.5312
             Z: 5345.02783
           }
           Rotation {
@@ -22169,7 +22169,7 @@ Assets {
         Transform {
           Location {
             X: -61118.7148
-            Y: -56388.7813
+            Y: -56388.7812
             Z: 5128.66602
           }
           Rotation {
@@ -22841,7 +22841,7 @@ Assets {
         Transform {
           Location {
             X: -63666.6602
-            Y: -41604.4063
+            Y: -41604.4062
             Z: 2453.30957
           }
           Rotation {
@@ -23037,7 +23037,7 @@ Assets {
         Transform {
           Location {
             X: 25548.8125
-            Y: 5.19726563
+            Y: 5.19726562
             Z: -80
           }
           Rotation {
@@ -23091,7 +23091,7 @@ Assets {
         Transform {
           Location {
             X: -25548.8125
-            Y: 5.19726563
+            Y: 5.19726562
             Z: -80
           }
           Rotation {
@@ -24260,7 +24260,7 @@ Assets {
         Name: "Tree Redwood Small"
         Transform {
           Location {
-            X: -958.320313
+            X: -958.320312
             Y: 2877.23242
             Z: 1561.28101
           }
@@ -24314,7 +24314,7 @@ Assets {
         Name: "TW3_Water"
         Transform {
           Location {
-            X: -29579.6563
+            X: -29579.6562
             Y: -8696.89844
             Z: -1.25561523
           }
@@ -24474,7 +24474,7 @@ Assets {
         Name: "Tree Redwood Small"
         Transform {
           Location {
-            X: -958.320313
+            X: -958.320312
             Y: 3337.09863
             Z: 1608.84241
           }
@@ -25002,7 +25002,7 @@ Assets {
         Transform {
           Location {
             X: -1302.9082
-            Y: 1378.26563
+            Y: 1378.26562
             Z: 421.896118
           }
           Rotation {
@@ -25206,7 +25206,7 @@ Assets {
         Name: "Tree Redwood Small"
         Transform {
           Location {
-            X: 19.4414063
+            X: 19.4414062
             Y: 1959.6875
             Z: 837.564697
           }
@@ -25530,7 +25530,7 @@ Assets {
         Transform {
           Location {
             X: -935.994141
-            Y: 4203.20313
+            Y: 4203.20312
             Z: 1714.39514
           }
           Rotation {
@@ -25906,7 +25906,7 @@ Assets {
         Name: "Tree Redwood Bare Medium"
         Transform {
           Location {
-            X: 4530.07813
+            X: 4530.07812
             Y: -722.530273
             Z: 576.107178
           }
@@ -26122,7 +26122,7 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 2011.95313
+            X: 2011.95312
             Y: -479.729492
             Z: 744.075806
           }
@@ -26289,7 +26289,7 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-            X: 690.914063
+            X: 690.914062
             Y: 2825.54492
             Z: 1138.84229
           }
@@ -26514,7 +26514,7 @@ Assets {
         Transform {
           Location {
             X: 3145.05664
-            Y: -3199.07813
+            Y: -3199.07812
             Z: 1623.50098
           }
           Rotation {
@@ -26948,5 +26948,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

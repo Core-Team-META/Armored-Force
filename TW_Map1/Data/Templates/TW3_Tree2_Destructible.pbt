@@ -258,7 +258,7 @@ Assets {
         Name: "Tree Redwood Big"
         Transform {
           Location {
-            X: -3.38476563
+            X: -3.38476562
             Y: -4.68847656
           }
           Rotation {
@@ -354,5 +354,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

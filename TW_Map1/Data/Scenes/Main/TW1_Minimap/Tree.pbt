@@ -3749,7 +3749,7 @@ Objects {
       }
       ShadowOffset {
       }
-      GameId: "0607ec/armoredforcemapholder"
+      GameId: "253f1e/afmapholder"
       ScreenshotIndex: 1
     }
     AnchorLayout {

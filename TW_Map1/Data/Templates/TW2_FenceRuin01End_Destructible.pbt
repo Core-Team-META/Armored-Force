@@ -355,7 +355,7 @@ Assets {
         Transform {
           Location {
             X: -328.978455
-            Y: -150.257813
+            Y: -150.257812
             Z: -25.4129639
           }
           Rotation {
@@ -555,7 +555,7 @@ Assets {
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: 95.9414063
+            X: 95.9414062
             Y: -7.796875
           }
           Rotation {
@@ -636,5 +636,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

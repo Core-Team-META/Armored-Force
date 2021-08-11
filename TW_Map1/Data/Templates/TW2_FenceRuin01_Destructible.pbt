@@ -303,7 +303,7 @@ Assets {
         Transform {
           Location {
             X: 164.298828
-            Y: -150.257813
+            Y: -150.257812
             Z: 20
           }
           Rotation {
@@ -357,7 +357,7 @@ Assets {
         Transform {
           Location {
             X: -289.542969
-            Y: -150.257813
+            Y: -150.257812
             Z: 20
           }
           Rotation {
@@ -523,7 +523,7 @@ Assets {
         Transform {
           Location {
             X: -281.84375
-            Y: -150.257813
+            Y: -150.257812
             Z: 20
           }
           Rotation {
@@ -607,7 +607,7 @@ Assets {
         Transform {
           Location {
             X: -50
-            Y: -23.4882813
+            Y: -23.4882812
             Z: 100
           }
           Rotation {
@@ -778,7 +778,7 @@ Assets {
         Name: "Urban Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: 95.9414063
+            X: 95.9414062
             Y: -7.796875
           }
           Rotation {
@@ -921,5 +921,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

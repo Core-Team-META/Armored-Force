@@ -2947,7 +2947,7 @@ Objects {
   Name: "TW3_Fence01_Destructible"
   Transform {
     Location {
-      X: -34438.9063
+      X: -34438.9062
       Y: 1467.93115
       Z: -2.27807617
     }
@@ -3040,7 +3040,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -34438.9063
+            X: -34438.9062
             Y: 1467.93115
             Z: -2.27807617
           }
@@ -4140,7 +4140,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -8690.42676
-            Y: -22492.1563
+            Y: -22492.1562
             Z: 467.10675
           }
         }

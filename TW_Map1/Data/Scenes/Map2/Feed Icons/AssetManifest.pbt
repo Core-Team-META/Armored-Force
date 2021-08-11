@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7648893931280516746
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
   Id: 6818558336275318495
   Name: "Military Ability Explosion 001"
   PlatformAssetType: 9
@@ -50,14 +59,5 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_001"
-  }
-}
-Assets {
-  Id: 96162478431907100
-  Name: "UI Gradient Circular 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Basic_Shape_001"
   }
 }

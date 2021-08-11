@@ -1803,7 +1803,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -4511.01563
+            X: -4511.01562
             Y: 3687.76758
             Z: 1306.10461
           }
@@ -1981,7 +1981,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -4608.26367
-            Y: 3716.70313
+            Y: 3716.70312
             Z: 1280.79102
           }
         }
@@ -5252,7 +5252,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -535.507813
+            X: -535.507812
             Y: -1937.5752
             Z: 1103.93
           }
@@ -7120,7 +7120,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -3022.57422
-            Y: 11909.2813
+            Y: 11909.2812
             Z: 1990.31763
           }
         }
@@ -7693,7 +7693,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -3568.65332
-            Y: 3954.51563
+            Y: 3954.51562
             Z: 1524.24927
           }
         }
@@ -8705,7 +8705,7 @@ Objects {
   Name: "TW2_BushBig"
   Transform {
     Location {
-      X: -5772.76563
+      X: -5772.76562
       Y: -6993.521
       Z: 865.501
     }
@@ -8768,7 +8768,7 @@ Objects {
   Name: "TW2_BushBig"
   Transform {
     Location {
-      X: -5772.76563
+      X: -5772.76562
       Y: -6993.521
       Z: 865.501
     }
@@ -8862,7 +8862,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 3038.04883
-            Y: 8690.64063
+            Y: 8690.64062
             Z: 1986.60559
           }
         }
@@ -10764,7 +10764,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7740.51563
+            X: 7740.51562
             Y: 8255.64258
             Z: 1193.55798
           }
@@ -16832,7 +16832,7 @@ Objects {
     Location {
       X: 4992.96533
       Y: -10500.8389
-      Z: 1589.51563
+      Z: 1589.51562
     }
     Rotation {
       Pitch: 0.615509272
@@ -18440,7 +18440,7 @@ Objects {
   Transform {
     Location {
       X: -27871.5957
-      Y: -27390.0313
+      Y: -27390.0312
       Z: 1568.15039
     }
     Rotation {
@@ -19316,7 +19316,7 @@ Objects {
   Name: "Sandstone"
   Transform {
     Location {
-      X: 2125.51563
+      X: 2125.51562
       Y: -3140.44238
       Z: 1059.82898
     }
@@ -22819,7 +22819,7 @@ Objects {
   Transform {
     Location {
       X: -184.691162
-      Y: -440.414063
+      Y: -440.414062
       Z: 152.909363
     }
     Rotation {
@@ -23446,7 +23446,7 @@ Objects {
   Transform {
     Location {
       X: -1864.4021
-      Y: 2.58007813
+      Y: 2.58007812
       Z: 49.0317383
     }
     Rotation {
@@ -23885,7 +23885,7 @@ Objects {
     Location {
       X: -313.615479
       Y: 1112.51172
-      Z: -129.320313
+      Z: -129.320312
     }
     Rotation {
       Pitch: 78.5067
@@ -24564,7 +24564,7 @@ Objects {
   Transform {
     Location {
       X: 239.756348
-      Y: 50.6757813
+      Y: 50.6757812
       Z: -108.308594
     }
     Rotation {
@@ -24768,7 +24768,7 @@ Objects {
   Transform {
     Location {
       X: 1085.55591
-      Y: -227.820313
+      Y: -227.820312
       Z: 568.250732
     }
     Rotation {
@@ -26573,7 +26573,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -2639.09912
-            Y: 630.101563
+            Y: 630.101562
             Z: 1577.48779
           }
         }
@@ -35487,7 +35487,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1507.95313
+            X: 1507.95312
             Y: 11328.9209
             Z: 2382.48242
           }
@@ -38538,7 +38538,7 @@ Objects {
   Transform {
     Location {
       X: 1311.04492
-      Y: 10014.4063
+      Y: 10014.4062
       Z: 1462.47937
     }
     Rotation {
@@ -38804,7 +38804,7 @@ Objects {
   Name: "Cliff"
   Transform {
     Location {
-      X: 1411.45313
+      X: 1411.45312
       Y: 10694.7988
       Z: 1933.00488
     }
@@ -39069,8 +39069,8 @@ Objects {
   Transform {
     Location {
       X: -535.432617
-      Y: 9234.14063
-      Z: 2484.89063
+      Y: 9234.14062
+      Z: 2484.89062
     }
     Rotation {
       Pitch: -5.73888874
@@ -40247,7 +40247,7 @@ Objects {
     Location {
       X: 6899.86523
       Y: -2816.54248
-      Z: 1260.01563
+      Z: 1260.01562
     }
     Rotation {
     }
@@ -41638,7 +41638,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 649.535156
-            Y: -2395.70313
+            Y: -2395.70312
             Z: 2447.60718
           }
         }
