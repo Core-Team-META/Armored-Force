@@ -1,7 +1,7 @@
 Name: "Keys, Links, and Settings"
-RootId: 10026743647464328733
+RootId: 14984970434961653195
 Objects {
-  Id: 10122015243392424843
+  Id: 12713686028973581289
   Name: "Settings"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10026743647464328733
+  ParentId: 14984970434961653195
   UnregisteredParameters {
     Overrides {
       Name: "cs:MatchMode"
@@ -22,19 +22,19 @@ Objects {
     }
     Overrides {
       Name: "cs:LobbyCountdown"
-      Int: 30
+      Int: 40
     }
     Overrides {
       Name: "cs:MatchMaxDuration"
-      Int: 300
+      Int: 1200
     }
     Overrides {
       Name: "cs:CardMaxDuration"
-      Int: 3
+      Int: 5
     }
     Overrides {
       Name: "cs:VictoryMaxDuration"
-      Int: 10
+      Int: 20
     }
     Overrides {
       Name: "cs:StatsMaxDuration"
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2642597018676340581
+  Id: 2659567604286010261
   Name: "Links"
   Transform {
     Location {
@@ -73,11 +73,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10026743647464328733
+  ParentId: 14984970434961653195
   UnregisteredParameters {
     Overrides {
       Name: "cs:Garage"
-      String: "fdcad3/armored-force"
+      String: "ad55b3/armored-force"
+    }
+    Overrides {
+      Name: "cs:Map1"
+      String: "bc0283/fields-frontline"
     }
   }
   Collidable_v2 {
@@ -99,7 +103,87 @@ Objects {
   }
 }
 Objects {
-  Id: 2748592493738115342
+  Id: 8916141426948844754
+  Name: "Leaderboards"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14984970434961653195
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MatchDestroyed"
+      NetReference {
+        Key: "2ABB942B0C4BE711"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:MatchDamage"
+      NetReference {
+        Key: "867D7D641B425176"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TotalDestroyed"
+      NetReference {
+        Key: "7D56BFDFF2C83864"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TotalDamage"
+      NetReference {
+        Key: "4F6B4C4864FDA853"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TotalWinRate"
+      NetReference {
+        Key: "D908C5EBFB173742"
+        Type {
+          Value: "mc:enetreferencetype:leaderboard"
+        }
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7627234086622722874
+    }
+  }
+}
+Objects {
+  Id: 1947523069746062464
   Name: "Keys"
   Transform {
     Location {
@@ -112,12 +196,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10026743647464328733
+  ParentId: 14984970434961653195
   UnregisteredParameters {
     Overrides {
       Name: "cs:Tanks"
       NetReference {
-        Key: "3b3cfe44e7fb41d0b0783e9eba8729ea"
+        Key: "27405ddc7ce7461ea01c64acbbe37e9d"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
@@ -126,7 +210,25 @@ Objects {
     Overrides {
       Name: "cs:Achievements"
       NetReference {
-        Key: "3fd6a2e7fba14bf1a6ed8823c3de8cb7"
+        Key: "03cfd5130aba46b5818a37f60dbe7fd1"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:Leaderboards"
+      NetReference {
+        Key: "5054e091c2a04962af336edce485ef05"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:Skins"
+      NetReference {
+        Key: "8bfb4cd27f58473faa1c7b748b0c5757"
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }

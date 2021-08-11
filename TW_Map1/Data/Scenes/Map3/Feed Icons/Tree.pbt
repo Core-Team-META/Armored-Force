@@ -1,7 +1,7 @@
 Name: "Feed Icons"
-RootId: 7400747070986564331
+RootId: 4710904239232712981
 Objects {
-  Id: 10617126613611219258
+  Id: 13182290548894490980
   Name: "TankDeath"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7400747070986564331
+  ParentId: 4710904239232712981
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -124,7 +124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4033945831998600262
+  Id: 11453707004009896009
   Name: "TankHit"
   Transform {
     Location {
@@ -137,7 +137,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7400747070986564331
+  ParentId: 4710904239232712981
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -185,7 +185,7 @@ Objects {
     Overrides {
       Name: "cs:Layer_02"
       AssetReference {
-        Id: 96162478431907100
+        Id: 7648893931280516746
       }
     }
     Overrides {
@@ -206,7 +206,7 @@ Objects {
     Overrides {
       Name: "cs:Layer_01"
       AssetReference {
-        Id: 96162478431907100
+        Id: 7648893931280516746
       }
     }
     Overrides {
@@ -247,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4490832719323439589
+  Id: 1863470888228318086
   Name: "PlayerJoined"
   Transform {
     Location {
@@ -260,7 +260,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7400747070986564331
+  ParentId: 4710904239232712981
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -312,7 +312,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11506234754890989524
+  Id: 3605790670136348861
   Name: "PlayerLeft"
   Transform {
     Location {
@@ -325,7 +325,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7400747070986564331
+  ParentId: 4710904239232712981
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -385,7 +385,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12413267397575847786
+  Id: 3464086575394713495
   Name: "Default icon"
   Transform {
     Location {
@@ -398,7 +398,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7400747070986564331
+  ParentId: 4710904239232712981
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"

@@ -65,7 +65,7 @@ Objects {
     }
     Rotation {
       Pitch: -10.1105957
-      Yaw: -40.2226563
+      Yaw: -40.2226562
     }
     Scale {
       X: 1.86292672
@@ -544,7 +544,7 @@ Objects {
   Transform {
     Location {
       X: -2262.04688
-      Y: -8950.51563
+      Y: -8950.51562
       Z: -181.174805
     }
     Rotation {

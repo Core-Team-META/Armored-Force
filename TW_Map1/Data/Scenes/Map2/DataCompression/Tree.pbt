@@ -1,7 +1,7 @@
 Name: "DataCompression"
-RootId: 2693207748831010178
+RootId: 7263956772149274272
 Objects {
-  Id: 5932008121443535110
+  Id: 6768087238475939167
   Name: "DataTransfer"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2693207748831010178
+  ParentId: 7263956772149274272
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -30,7 +30,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5673017709837939779
+  Id: 9374829783666499765
   Name: "Player Storage Manager"
   Transform {
     Location {
@@ -43,8 +43,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2693207748831010178
-  ChildIds: 9429579109629934928
+  ParentId: 7263956772149274272
+  ChildIds: 13482379256992162218
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -58,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9429579109629934928
+  Id: 13482379256992162218
   Name: "PlayerStorageManagerClient"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5673017709837939779
+  ParentId: 9374829783666499765
   UnregisteredParameters {
     Overrides {
       Name: "cs:MetaAbilityProgressionUTIL_API"
@@ -88,13 +88,13 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 5932008121443535110
+        SelfId: 6768087238475939167
       }
     }
     Overrides {
       Name: "cs:TankContents"
       ObjectReference {
-        SelfId: 8593926565967743237
+        SelfId: 13212918571611480021
       }
     }
   }
@@ -114,7 +114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13024498699491020128
+  Id: 15119983273452505091
   Name: "ResourcePersisterServer"
   Transform {
     Location {
@@ -127,12 +127,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2693207748831010178
+  ParentId: 7263956772149274272
   UnregisteredParameters {
     Overrides {
       Name: "cs:Keys"
       ObjectReference {
-        SelfId: 8126386124705309526
+        SelfId: 9958685168337266294
       }
     }
     Overrides {
@@ -150,7 +150,7 @@ Objects {
     Overrides {
       Name: "cs:DataTransfer"
       ObjectReference {
-        SelfId: 5932008121443535110
+        SelfId: 6768087238475939167
       }
     }
     Overrides {

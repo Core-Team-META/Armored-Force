@@ -333,7 +333,7 @@ Assets {
         Name: "Damaged Concrete Chunk 03"
         Transform {
           Location {
-            X: 106.476563
+            X: 106.476562
             Y: -130
             Z: 154.468262
           }
@@ -1977,7 +1977,7 @@ Assets {
         Name: "Rock Block 01"
         Transform {
           Location {
-            X: 49.7851563
+            X: 49.7851562
             Y: -67.7168
             Z: 653.420654
           }
@@ -2106,8 +2106,8 @@ Assets {
         Name: "Rock Block 01"
         Transform {
           Location {
-            X: 49.7851563
-            Y: 5.83789063
+            X: 49.7851562
+            Y: 5.83789062
             Z: 653.420654
           }
           Rotation {
@@ -2296,7 +2296,7 @@ Assets {
         Name: "Rock Block 01"
         Transform {
           Location {
-            X: 48.5195313
+            X: 48.5195312
             Y: -25.2167969
             Z: 656.180542
           }
@@ -2553,7 +2553,7 @@ Assets {
         Transform {
           Location {
             X: -266.048828
-            Y: 50.7851563
+            Y: 50.7851562
             Z: 601.268311
           }
           Rotation {
@@ -3189,7 +3189,7 @@ Assets {
         Name: "Wall"
         Transform {
           Location {
-            X: -198.195313
+            X: -198.195312
             Y: 218.6875
             Z: 435.000061
           }
@@ -3345,7 +3345,7 @@ Assets {
         Name: "Wall"
         Transform {
           Location {
-            X: 52.2382813
+            X: 52.2382812
             Y: 195
             Z: 225.000061
           }
@@ -3429,7 +3429,7 @@ Assets {
         Name: "Wall"
         Transform {
           Location {
-            X: -198.195313
+            X: -198.195312
             Y: 235.359375
             Z: 435.000061
           }
@@ -3893,5 +3893,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

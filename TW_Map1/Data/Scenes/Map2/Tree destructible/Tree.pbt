@@ -1330,7 +1330,7 @@ Objects {
   Name: "TW2_Tree_Destructible"
   Transform {
     Location {
-      X: -4661.51563
+      X: -4661.51562
       Y: -8276.73145
       Z: 241.520874
     }

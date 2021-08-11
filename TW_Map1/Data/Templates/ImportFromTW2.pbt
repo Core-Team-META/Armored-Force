@@ -1849,7 +1849,7 @@ Assets {
         Transform {
           Location {
             X: 18818.6074
-            Y: -22731.2813
+            Y: -22731.2812
           }
           Rotation {
             Yaw: 40.0867729
@@ -5161,7 +5161,7 @@ Assets {
         Name: "MiniMap_Road"
         Transform {
           Location {
-            X: 7770.14063
+            X: 7770.14062
             Y: 6977.59229
             Z: 426.637817
           }
@@ -6647,7 +6647,7 @@ Assets {
         Name: "MiniMap_Road"
         Transform {
           Location {
-            X: -15803.5313
+            X: -15803.5312
             Y: -18426.3359
           }
           Rotation {
@@ -6718,7 +6718,7 @@ Assets {
             Y: -18469.4941
           }
           Rotation {
-            Yaw: -78.6289063
+            Yaw: -78.6289062
           }
           Scale {
             X: 8.96193409
@@ -15056,7 +15056,7 @@ Assets {
         Name: "MiniMap_RockHigh"
         Transform {
           Location {
-            X: 8280.39063
+            X: 8280.39062
             Y: -16229.4092
             Z: -0.0048828125
           }
@@ -17971,7 +17971,7 @@ Assets {
         Transform {
           Location {
             X: 8615.01074
-            Y: 10148.2813
+            Y: 10148.2812
             Z: -47.484375
           }
           Rotation {
@@ -19734,7 +19734,7 @@ Assets {
         Name: "MiniMap_RockHigh"
         Transform {
           Location {
-            X: -24586.2813
+            X: -24586.2812
             Y: -13368.2432
             Z: 0.0068359375
           }
@@ -20838,7 +20838,7 @@ Assets {
         Transform {
           Location {
             X: -4996.36426
-            Y: 23084.5313
+            Y: 23084.5312
           }
           Rotation {
             Yaw: -92.2974854
@@ -21573,7 +21573,7 @@ Assets {
         Name: "MiniMap_RockLow"
         Transform {
           Location {
-            X: -5176.70313
+            X: -5176.70312
             Y: 4063.43701
           }
           Rotation {
@@ -22243,7 +22243,7 @@ Assets {
         Name: "MiniMap_RockLow"
         Transform {
           Location {
-            X: -6022.89063
+            X: -6022.89062
             Y: 3663.26685
           }
           Rotation {
@@ -22779,7 +22779,7 @@ Assets {
         Name: "MiniMap_RockLow"
         Transform {
           Location {
-            X: -4284.82813
+            X: -4284.82812
             Y: -6773.81689
           }
           Rotation {
@@ -23181,7 +23181,7 @@ Assets {
         Name: "MiniMap_RockLow"
         Transform {
           Location {
-            X: -4695.07813
+            X: -4695.07812
             Y: 13114.6211
           }
           Rotation {
@@ -29147,7 +29147,7 @@ Assets {
         Name: "MiniMap_RockLow"
         Transform {
           Location {
-            X: 24175.0313
+            X: 24175.0312
             Y: -19153.4316
             Z: -0.0009765625
           }
@@ -31427,7 +31427,7 @@ Assets {
         Transform {
           Location {
             X: 11622.0625
-            Y: 5889.01563
+            Y: 5889.01562
           }
           Rotation {
             Yaw: 23.9566727
@@ -31828,7 +31828,7 @@ Assets {
         Name: "MiniMap_RockLow"
         Transform {
           Location {
-            X: -13722.4063
+            X: -13722.4062
             Y: 24369.9648
           }
           Rotation {
@@ -32366,7 +32366,7 @@ Assets {
         Transform {
           Location {
             X: -21683.5938
-            Y: 20450.2813
+            Y: 20450.2812
           }
           Rotation {
             Yaw: -16.6403809
@@ -33368,7 +33368,7 @@ Assets {
         Name: "MiniMap_RockLow"
         Transform {
           Location {
-            X: -22856.6563
+            X: -22856.6562
             Y: -19139.6113
           }
           Rotation {
@@ -33545,7 +33545,7 @@ Assets {
         Name: "MiniMap_Sea"
         Transform {
           Location {
-            X: 6986.45313
+            X: 6986.45312
             Y: 21994.5176
           }
           Rotation {
@@ -37119,7 +37119,7 @@ Assets {
         Name: "MiniMap_Elevation"
         Transform {
           Location {
-            X: -9110.32813
+            X: -9110.32812
             Y: -5867.8457
           }
           Rotation {
@@ -37387,7 +37387,7 @@ Assets {
         Name: "MiniMap_Elevation"
         Transform {
           Location {
-            X: -3731.64063
+            X: -3731.64062
             Y: 22760.5762
           }
           Rotation {
@@ -43680,5 +43680,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

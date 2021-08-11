@@ -26,25 +26,25 @@ Assets {
   }
 }
 Assets {
+  Id: 14166298962097405472
+  Name: "Skins1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 14002253654344460699
   Name: "Grass Tall"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 12787971655086326810
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "9e04fa959b5e4d3c8a7f25638bb17a9f"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -75,38 +75,16 @@ Assets {
   }
 }
 Assets {
-  Id: 8466853097235286672
-  Name: "Skins"
+  Id: 7140296221745581233
+  Name: "Leaderboards1"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "e86521488aa340328f34b59e4a44f0d3"
+      Key: "5054e091c2a04962af336edce485ef05"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
-  }
-}
-Assets {
-  Id: 6699540765201334098
-  Name: "Leaderboards"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "c0c2d6c67a6644dcaa2a0db60e6e61f6"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 4249713416572262948
-  Name: "Container - Hex- Rounded"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_container_hex_rnd_001_ref"
   }
 }
 Assets {
@@ -119,6 +97,19 @@ Assets {
   }
 }
 Assets {
+  Id: 2890145615967901697
+  Name: "Tanks1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 1908253659651347838
   Name: "Rock 03"
   PlatformAssetType: 1
@@ -128,12 +119,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1699290015573167761
-  Name: "Tanks"
+  Id: 175635442433998880
+  Name: "Achievements1"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "3c3178dcc0494bd4904969d5250b3dff"
+      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }

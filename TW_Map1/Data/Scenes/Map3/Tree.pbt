@@ -14,19 +14,21 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 10026743647464328733
+  ChildIds: 16287835230446749249
+  ChildIds: 14984970434961653195
   ChildIds: 3100773473738435227
   ChildIds: 15182677334456928949
   ChildIds: 12209608198557882361
-  ChildIds: 4745593643946137819
+  ChildIds: 8050746695721076935
+  ChildIds: 8129487323723183523
   ChildIds: 5837658692554861011
-  ChildIds: 9108897930868411190
   ChildIds: 7310433976514289622
-  ChildIds: 10251424941885298564
-  ChildIds: 7392489907173893034
-  ChildIds: 10256219654326470056
-  ChildIds: 1640020855973138038
-  ChildIds: 7739087111597345771
+  ChildIds: 5411157816299845109
+  ChildIds: 10155298922154762573
+  ChildIds: 9217238362449521800
+  ChildIds: 18009296711523283237
+  ChildIds: 15151449591378186114
+  ChildIds: 4456337933089387391
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,8 +44,8 @@ Objects {
   }
 }
 Objects {
-  Id: 7739087111597345771
-  Name: "Chat"
+  Id: 4456337933089387391
+  Name: "Patrick"
   Transform {
     Location {
     }
@@ -67,11 +69,69 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Chat"
+    FilePartitionName: "Patrick"
   }
 }
 Objects {
-  Id: 1640020855973138038
+  Id: 15151449591378186114
+  Name: "Marcela"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Marcela"
+  }
+}
+Objects {
+  Id: 18009296711523283237
+  Name: "Ryan"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ryan"
+  }
+}
+Objects {
+  Id: 9217238362449521800
   Name: "Morticai (Brent)"
   Transform {
     Location {
@@ -103,8 +163,8 @@ Objects {
   }
 }
 Objects {
-  Id: 10256219654326470056
-  Name: "Ryan"
+  Id: 10155298922154762573
+  Name: "Chat"
   Transform {
     Location {
     }
@@ -128,12 +188,12 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Ryan"
+    FilePartitionName: "Chat"
   }
 }
 Objects {
-  Id: 7392489907173893034
-  Name: "Marcela"
+  Id: 5411157816299845109
+  Name: "Bigglebuns"
   Transform {
     Location {
     }
@@ -155,38 +215,12 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Marcela"
-  }
-}
-Objects {
-  Id: 10251424941885298564
-  Name: "Patrick"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Patrick"
+    FilePartitionName: "Bigglebuns"
   }
 }
 Objects {
@@ -219,38 +253,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9108897930868411190
-  Name: "Konz"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Konz"
-  }
-}
-Objects {
   Id: 5837658692554861011
   Name: "TW3_SpawnLocations"
   Transform {
@@ -280,7 +282,36 @@ Objects {
   }
 }
 Objects {
-  Id: 4745593643946137819
+  Id: 8129487323723183523
+  Name: "TW_Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW_Settings"
+  }
+}
+Objects {
+  Id: 8050746695721076935
   Name: "TW_Minimap"
   Transform {
     Location {
@@ -621,7 +652,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10026743647464328733
+  Id: 14984970434961653195
   Name: "Keys, Links, and Settings"
   Transform {
     Location {
@@ -650,5 +681,37 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Keys, Links, and Settings"
+  }
+}
+Objects {
+  Id: 16287835230446749249
+  Name: "Konz"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Konz"
   }
 }

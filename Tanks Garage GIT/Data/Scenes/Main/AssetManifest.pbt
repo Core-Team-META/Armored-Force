@@ -12,6 +12,19 @@ Assets {
   }
 }
 Assets {
+  Id: 17306415880111730176
+  Name: "Skins1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 17287164381252296468
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -27,19 +40,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_002"
-  }
-}
-Assets {
-  Id: 15304805888386549265
-  Name: "Tanks"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "3c3178dcc0494bd4904969d5250b3dff"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {
@@ -139,19 +139,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8620200786685473623
-  Name: "Skins"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "e86521488aa340328f34b59e4a44f0d3"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 6551093352602210295
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -161,12 +148,25 @@ Assets {
   }
 }
 Assets {
-  Id: 4738838424805941191
-  Name: "Leaderboards"
+  Id: 5537260831227292255
+  Name: "Tanks1"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "c0c2d6c67a6644dcaa2a0db60e6e61f6"
+      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 5042189428014108586
+  Name: "Leaderboards1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "5054e091c2a04962af336edce485ef05"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -195,19 +195,6 @@ Assets {
       Key: "8cadd4667c1044fcaa914b011d86e503"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 3257753265588382030
-  Name: "Achievements"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "9e04fa959b5e4d3c8a7f25638bb17a9f"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }
@@ -245,6 +232,19 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "weapon_guide_pistol_BP_ref"
+  }
+}
+Assets {
+  Id: 2934587775384050047
+  Name: "Achievements1"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {

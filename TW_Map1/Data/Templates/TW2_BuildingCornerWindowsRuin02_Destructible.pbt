@@ -1464,7 +1464,7 @@ Assets {
         Transform {
           Location {
             X: -36.2011719
-            Y: -23.4882813
+            Y: -23.4882812
             Z: 339.945435
           }
           Rotation {
@@ -1868,7 +1868,7 @@ Assets {
         Name: "Cube - Rounded Bottom-Aligned"
         Transform {
           Location {
-            X: -75.0039063
+            X: -75.0039062
             Y: -25
             Z: -3.05175781e-05
           }
@@ -2051,8 +2051,8 @@ Assets {
         Transform {
           Location {
             X: -167.638672
-            Y: 71.8320313
-            Z: 7.12695313
+            Y: 71.8320312
+            Z: 7.12695312
           }
           Rotation {
             Pitch: -15.6527576
@@ -2133,7 +2133,7 @@ Assets {
         Transform {
           Location {
             X: 25.4199219
-            Y: -18.3007813
+            Y: -18.3007812
             Z: -3.05175781e-05
           }
           Rotation {
@@ -2319,5 +2319,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

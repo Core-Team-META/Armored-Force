@@ -1,7 +1,39 @@
 Name: "Ryan"
-RootId: 10256219654326470056
+RootId: 18009296711523283237
 Objects {
-  Id: 702490019030199254
+  Id: 18178382829961048049
+  Name: "Feedback When Hit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18009296711523283237
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Feedback When Hit"
+  }
+}
+Objects {
+  Id: 2503628331308726996
   Name: "META Activity Feed Enhanced"
   Transform {
     Scale {
@@ -10,9 +42,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10256219654326470056
-  ChildIds: 16652203683114293627
-  ChildIds: 15856194053380378564
+  ParentId: 18009296711523283237
+  ChildIds: 47995372910756429
+  ChildIds: 4083025139776140860
   UnregisteredParameters {
     Overrides {
       Name: "cs:ReliableEvents"
@@ -35,7 +67,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15856194053380378564
+  Id: 4083025139776140860
   Name: "ClientContext"
   Transform {
     Location {
@@ -48,8 +80,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 702490019030199254
-  ChildIds: 16244117140460854514
+  ParentId: 2503628331308726996
+  ChildIds: 5532194494921509558
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -65,7 +97,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16244117140460854514
+  Id: 5532194494921509558
   Name: "meta_cc_ActivityFeedControllerClient"
   Transform {
     Location {
@@ -78,14 +110,14 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15856194053380378564
-  ChildIds: 7400747070986564331
-  ChildIds: 17429215809459733603
+  ParentId: 4083025139776140860
+  ChildIds: 4710904239232712981
+  ChildIds: 11835629586511662482
   UnregisteredParameters {
     Overrides {
       Name: "cs:ActivityFeedPanel"
       ObjectReference {
-        SelfId: 12163654309974482891
+        SelfId: 15965366744531370946
       }
     }
     Overrides {
@@ -121,13 +153,13 @@ Objects {
     Overrides {
       Name: "cs:KillFeedSettings"
       ObjectReference {
-        SelfId: 17429215809459733603
+        SelfId: 11835629586511662482
       }
     }
     Overrides {
       Name: "cs:FeedIcons"
       ObjectReference {
-        SelfId: 7400747070986564331
+        SelfId: 4710904239232712981
       }
     }
   }
@@ -147,7 +179,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17429215809459733603
+  Id: 11835629586511662482
   Name: "Kill Feed Settings"
   Transform {
     Location {
@@ -160,8 +192,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16244117140460854514
-  ChildIds: 15327056682107908658
+  ParentId: 5532194494921509558
+  ChildIds: 7735125195993986491
   UnregisteredParameters {
     Overrides {
       Name: "cs:NumLines"
@@ -314,7 +346,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15327056682107908658
+  Id: 7735125195993986491
   Name: "Activity Feed Container"
   Transform {
     Location {
@@ -327,8 +359,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17429215809459733603
-  ChildIds: 12163654309974482891
+  ParentId: 11835629586511662482
+  ChildIds: 15965366744531370946
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -348,6 +380,14 @@ Objects {
     }
     Canvas {
       Opacity: 1
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      TwoSided: true
+      TickWhenOffScreen: true
+      RedrawTime: 30
     }
     AnchorLayout {
       SelfAnchor {
@@ -364,7 +404,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12163654309974482891
+  Id: 15965366744531370946
   Name: "META Activity Feed Panel"
   Transform {
     Location {
@@ -377,7 +417,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15327056682107908658
+  ParentId: 7735125195993986491
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -417,7 +457,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7400747070986564331
+  Id: 4710904239232712981
   Name: "Feed Icons"
   Transform {
     Location {
@@ -430,7 +470,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16244117140460854514
+  ParentId: 5532194494921509558
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -446,7 +486,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16652203683114293627
+  Id: 47995372910756429
   Name: "meta_cc_KillFeedControllerServer"
   Transform {
     Location {
@@ -459,12 +499,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 702490019030199254
+  ParentId: 2503628331308726996
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 702490019030199254
+        SelfId: 2503628331308726996
       }
     }
     Overrides {
@@ -488,7 +528,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17899728310956136973
+  Id: 17637299454405174977
   Name: "Storage Manager"
   Transform {
     Location {
@@ -501,7 +541,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10256219654326470056
+  ParentId: 18009296711523283237
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -517,7 +557,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8156651238998143010
+  Id: 17485295703949328255
   Name: "TechTree_Contents"
   Transform {
     Location {
@@ -530,12 +570,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10256219654326470056
+  ParentId: 18009296711523283237
   UnregisteredParameters {
     Overrides {
       Name: "cs:TechTree_Contents"
       ObjectReference {
-        SelfId: 8156651238998143010
+        SelfId: 17485295703949328255
       }
     }
   }

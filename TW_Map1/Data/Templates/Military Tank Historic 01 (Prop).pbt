@@ -772,7 +772,7 @@ Assets {
         Name: "Military Tank Historic Armorplate 01 Mid"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 95
             Z: -40
           }
@@ -1173,7 +1173,7 @@ Assets {
         Name: "Military Tank Historic Armorplate 01 Mid"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: -100
             Z: -40
           }
@@ -1303,7 +1303,7 @@ Assets {
         Transform {
           Location {
             X: 70
-            Y: 6.10351563e-05
+            Y: 6.10351562e-05
             Z: -20
           }
           Rotation {
@@ -1664,7 +1664,7 @@ Assets {
         Transform {
           Location {
             X: -95
-            Y: -6.10351563e-05
+            Y: -6.10351562e-05
             Z: 5
           }
           Rotation {
@@ -1707,7 +1707,7 @@ Assets {
         Transform {
           Location {
             X: -187.069244
-            Y: -0.000122070313
+            Y: -0.000122070312
             Z: 40
           }
           Rotation {
@@ -1749,7 +1749,7 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            Y: -0.000122070313
+            Y: -0.000122070312
             Z: 40
           }
           Rotation {
@@ -1834,7 +1834,7 @@ Assets {
         Transform {
           Location {
             X: 192.930756
-            Y: -0.000122070313
+            Y: -0.000122070312
             Z: 40
           }
           Rotation {
@@ -1877,7 +1877,7 @@ Assets {
         Transform {
           Location {
             X: 95
-            Y: -6.10351563e-05
+            Y: -6.10351562e-05
             Z: 5
           }
           Rotation {
@@ -2249,7 +2249,7 @@ Assets {
         Transform {
           Location {
             X: -95
-            Y: -6.10351563e-05
+            Y: -6.10351562e-05
             Z: 5
           }
           Rotation {
@@ -2292,7 +2292,7 @@ Assets {
         Transform {
           Location {
             X: -187.069244
-            Y: -0.000122070313
+            Y: -0.000122070312
             Z: 40
           }
           Rotation {
@@ -2334,7 +2334,7 @@ Assets {
         Name: "Military Tank Historic Gear 01"
         Transform {
           Location {
-            Y: -0.000122070313
+            Y: -0.000122070312
             Z: 40
           }
           Rotation {
@@ -2419,7 +2419,7 @@ Assets {
         Transform {
           Location {
             X: 192.930756
-            Y: -0.000122070313
+            Y: -0.000122070312
             Z: 40
           }
           Rotation {
@@ -2462,7 +2462,7 @@ Assets {
         Transform {
           Location {
             X: 95
-            Y: -6.10351563e-05
+            Y: -6.10351562e-05
             Z: 5
           }
           Rotation {
@@ -3335,5 +3335,5 @@ Assets {
       AssetId: "Military_Tank_Historic_01__Prop_"
     }
   }
-  SerializationVersion: 93
+  SerializationVersion: 96
 }

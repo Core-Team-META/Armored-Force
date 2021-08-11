@@ -964,7 +964,7 @@ Objects {
   Name: "FenceFoundation"
   Transform {
     Location {
-      X: -3511.82813
+      X: -3511.82812
       Y: -1039.06934
       Z: 202.083191
     }
@@ -1728,7 +1728,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 307.164063
+            X: 307.164062
             Y: -155.540283
             Z: 112.083191
           }
@@ -3540,7 +3540,7 @@ Objects {
     }
     Rotation {
       Yaw: 112.499481
-      Roll: -2.23632813
+      Roll: -2.23632812
     }
     Scale {
       X: 0.999971628
@@ -5378,7 +5378,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -6522.82813
+            X: -6522.82812
             Y: -400.540192
             Z: 232.083191
           }
@@ -5432,7 +5432,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -6532.82813
+            X: -6532.82812
             Y: -380.540314
             Z: 227.083191
           }
@@ -9005,7 +9005,7 @@ Objects {
   Transform {
     Location {
       X: 11589.0967
-      Y: -19833.4063
+      Y: -19833.4062
       Z: 1228.49023
     }
     Rotation {
@@ -9906,7 +9906,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 10804.0186
-            Y: -17094.1563
+            Y: -17094.1562
             Z: 1225.03625
           }
         }
@@ -10028,7 +10028,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 10489.5713
-            Y: -18736.2813
+            Y: -18736.2812
             Z: 1165.56384
           }
         }
@@ -11367,7 +11367,7 @@ Objects {
   Name: "TW2_BuildingCornerWindowsRuin01_Destructible"
   Transform {
     Location {
-      X: -17720.5313
+      X: -17720.5312
       Y: -16980.8145
       Z: 158.671417
     }
@@ -13226,7 +13226,7 @@ Objects {
   Name: "TW2_BuildingCornerWindowsRuin01_Destructible"
   Transform {
     Location {
-      X: -17720.5313
+      X: -17720.5312
       Y: -16980.8145
       Z: 158.671417
     }
@@ -13439,7 +13439,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -17720.5313
+            X: -17720.5312
             Y: -16980.8145
             Z: 158.671417
           }

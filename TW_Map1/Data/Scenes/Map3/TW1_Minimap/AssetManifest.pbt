@@ -8,12 +8,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16060214784296519809
-  Name: "Plane 1m - One Sided"
-  PlatformAssetType: 1
+  Id: 16636415353835813981
+  Name: "Teko"
+  PlatformAssetType: 28
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
+    AssetType: "FontAssetRef"
+    AssetId: "TekoRegular_ref"
   }
 }
 Assets {
@@ -41,14 +41,5 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
-  }
-}
-Assets {
-  Id: 2543686750193076668
-  Name: "Teko"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "TekoRegular_ref"
   }
 }
