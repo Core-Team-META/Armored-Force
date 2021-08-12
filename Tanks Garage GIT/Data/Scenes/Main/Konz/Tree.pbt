@@ -431,7 +431,7 @@ Objects {
       }
       TeamSettings {
       }
-      GameId: "ad55b3/armored-force"
+      GameId: "bf3d88/armored-force"
       ScreenshotIndex: 1
     }
     AnchorLayout {
