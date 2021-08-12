@@ -18,7 +18,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Map1"
-      String: "bc0283/fields-frontline"
+      String: "f19478/armored-force-frontline"
     }
     Overrides {
       Name: "cs:Map2"

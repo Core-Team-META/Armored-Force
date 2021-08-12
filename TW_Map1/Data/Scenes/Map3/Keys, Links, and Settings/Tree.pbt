@@ -77,11 +77,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Garage"
-      String: "ad55b3/armored-force"
+      String: "bf3d88/armored-force"
     }
     Overrides {
       Name: "cs:Map1"
-      String: "bc0283/fields-frontline"
+      String: "f19478/armored-force-frontline"
     }
   }
   Collidable_v2 {
