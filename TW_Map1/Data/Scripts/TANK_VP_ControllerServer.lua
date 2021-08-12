@@ -667,8 +667,12 @@ function OnArmorHit(trigger, other)
 		}
    		COMBAT.ApplyDamage(attackData)
     
-    	Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver)
-		Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
+    if enemyPlayer:IsA("Player") then
+  		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", ramDamage, armorName, trigger:GetWorldPosition(), driver.id)
+  	end
+  	if driver:IsA("Player") then
+			Events.BroadcastToPlayer(driver, "ShowHitFeedback", ramDamage, armorName, trigger:GetWorldPosition())
+		end
 		
 		if otherVehicleSpeed > thisVehicleSpeed then
 			return
