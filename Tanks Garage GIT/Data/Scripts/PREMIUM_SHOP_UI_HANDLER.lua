@@ -363,11 +363,14 @@ function TogglePremiumTankOwnedState()
 	else
 		ALLIES_BUY_BUTTON.visibility = Visibility.FORCE_ON
 		ALLIES_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
+		ALLIES_BUY_BUTTON.isInteractable = true
+		--[[
 		if LOCAL_PLAYER:GetResource(alliesPurchaseCosts.resource) < alliesPurchaseCosts.amount then
 			ALLIES_BUY_BUTTON.isInteractable = false
 		else
 			ALLIES_BUY_BUTTON.isInteractable = true
 		end
+		--]]
 	end
 
 	local axisTankId = AXIS_PREMIUM_TANK_ID
@@ -378,11 +381,14 @@ function TogglePremiumTankOwnedState()
 	else
 		AXIS_BUY_BUTTON.visibility = Visibility.FORCE_ON
 		AXIS_PURCHASED_BUTTON.visibility = Visibility.FORCE_OFF
+		AXIS_BUY_BUTTON.isInteractable = true
+		--[[
 		if LOCAL_PLAYER:GetResource(axisPurchaseCosts.resource) < axisPurchaseCosts.amount then
 			AXIS_BUY_BUTTON.isInteractable = false
 		else
 			AXIS_BUY_BUTTON.isInteractable = true
 		end
+		--]]
 	end
 end
 
@@ -433,7 +439,7 @@ end
 function PurchaseSuccessful()
 	SFX_EQUIP_TANK:Play()
 	UTIL_API.ShowPopup("PURCHASE SUCCESSFUL", "Successfully purchased tank.", "OK")
-	Task.Wait(1)
+	Task.Wait(3)
 	TogglePremiumTankOwnedState()
 end
 
@@ -443,6 +449,40 @@ end
 
 function UnhoverButton()
 	SFX_UNHOVERED:Play()
+end
+
+function HoverAlliesPurchase(button)
+	HoverButton()
+	TogglePremiumTankOwnedState()
+	local tankId = ALLIES_PREMIUM_TANK_ID
+	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
+		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
+			button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_ON			
+		end
+	end
+end
+
+function HoverAxisPurchase(button)
+	HoverButton()
+	TogglePremiumTankOwnedState()
+	local tankId = AXIS_PREMIUM_TANK_ID
+	if not UTIL_API.PlayerOwnsTank(LOCAL_PLAYER.clientUserData.techTreeProgress, tankId) then
+		local purchaseCosts = UTIL_API.GetPurchaseCost(tankId)
+		if LOCAL_PLAYER:GetResource(purchaseCosts.resource) < purchaseCosts.amount then
+			button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_ON			
+		end
+	end
+end
+
+function UnhoverAlliesPurchase(button)
+	UnhoverButton()
+	button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_OFF
+end
+
+function UnhoverAxisPurchase(button)
+	UnhoverButton()
+	button.parent:FindDescendantByName("Insufficient Funds Panel").visibility = Visibility.FORCE_OFF
 end
 
 -- Click handlers
@@ -466,8 +506,8 @@ SUBMENU_ITEM_4_BUTTON.hoveredEvent:Connect(SubmenuHover)
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").hoveredEvent:Connect(ResearchSubmenuHover)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").hoveredEvent:Connect(ResearchSubmenuHover)
 BUTTON_CONVERT_RPs:FindChildByName("BUTTON").hoveredEvent:Connect(ConvertSelectedTankRPHover)
-ALLIES_PURCHASE_PREMIUM_BUTTON.hoveredEvent:Connect(HoverButton)
-AXIS_PURCHASE_PREMIUM_BUTTON.hoveredEvent:Connect(HoverButton)
+ALLIES_PURCHASE_PREMIUM_BUTTON.hoveredEvent:Connect(HoverAlliesPurchase)
+AXIS_PURCHASE_PREMIUM_BUTTON.hoveredEvent:Connect(HoverAxisPurchase)
 
 -- Unhover handlers
 SUBMENU_ITEM_1_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
@@ -477,8 +517,8 @@ SUBMENU_ITEM_4_BUTTON.unhoveredEvent:Connect(SubmenuUnhover)
 SUBMENU_ITEM_1:FindChildByName("BUTTON_TANKLIST_SUBMENU_1").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 SUBMENU_ITEM_2:FindChildByName("BUTTON_TANKLIST_SUBMENU_2").unhoveredEvent:Connect(ResearchSubmenuUnhover)
 BUTTON_CONVERT_RPs:FindChildByName("BUTTON").unhoveredEvent:Connect(ConvertSelectedTankRPUnhover)
-ALLIES_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverButton)
-AXIS_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverButton)
+ALLIES_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverAlliesPurchase)
+AXIS_PURCHASE_PREMIUM_BUTTON.unhoveredEvent:Connect(UnhoverAxisPurchase)
 
 Events.Connect("ENABLE_GARAGE_COMPONENT", ToggleThisComponent)
 Events.Connect("TankPurchaseSuccessful", PurchaseSuccessful)

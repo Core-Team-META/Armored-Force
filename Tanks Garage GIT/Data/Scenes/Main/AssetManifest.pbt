@@ -69,6 +69,19 @@ Assets {
   }
 }
 Assets {
+  Id: 13941087976310581814
+  Name: "StorageGarage"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "cfea81b09e25439fb0ab189c92bf9010"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 13849856485583202930
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -136,6 +149,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
+  Id: 7970651784764051329
+  Name: "PlayerSharedStorage"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "8cd7b4910d07447a8fac4ca5a361a105"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {

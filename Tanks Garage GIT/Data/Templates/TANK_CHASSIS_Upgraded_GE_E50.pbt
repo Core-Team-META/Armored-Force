@@ -63,6 +63,9 @@ Assets {
           }
           GravityScale: 1
           CoastBrakeStrength: 10
+          DamageSettings {
+            StartImmortal: true
+          }
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 80
@@ -89,5 +92,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 96
+  SerializationVersion: 97
 }

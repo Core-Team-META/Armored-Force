@@ -720,7 +720,7 @@ end
 function API.ShowPopup(title, message, buttonText)
     local popUpPanel = World.FindObjectByName("POP_UP_MESSAGE")
     popUpPanel.visibility = Visibility.FORCE_ON
-    popUpPanel:FindDescendantByName("TITLE_SECONDARY").text = title
+    popUpPanel:FindDescendantByName("TITLE").text = title
     popUpPanel:FindDescendantByName("BODY_TEXT").text = message
     popUpPanel:FindDescendantByName("BUTTONTEXT_LIGHT").text = buttonText
 end
