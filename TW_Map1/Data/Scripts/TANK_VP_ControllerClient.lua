@@ -205,10 +205,12 @@ function OnTankStateChanged(controllerServer, property)
 
 end
 
-function FiringAnimation(player, reloadTime)
+function FiringAnimation(tankRef, reloadTime)
+	if tankBodyServer == nil then return end
 
+	print("firing", tankBodyServer:GetReference(), tankRef)
 	if not saluteOverride then
-		if player ~= driver or not Object.IsValid(tankBodyClient) then
+		if tankBodyServer:GetReference() ~= tankRef or not Object.IsValid(tankBodyClient) then
 			return
 		end
 	end
