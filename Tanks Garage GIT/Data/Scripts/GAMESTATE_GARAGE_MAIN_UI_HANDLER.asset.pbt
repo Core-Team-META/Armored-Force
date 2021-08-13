@@ -1,6 +1,6 @@
 Assets {
-  Id: 1351975177845462919
-  Name: "GAMEHELPER_CameraManagerClient"
+  Id: 8005305632578165639
+  Name: "GAMESTATE_GARAGE_MAIN_UI_HANDLER"
   PlatformAssetType: 3
   TextAsset {
   }

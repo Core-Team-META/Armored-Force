@@ -694,5 +694,32 @@ function API.GetTierFromId(tankId)
 	return 1
 end
 
+function API.PlayerOwnsTank(techTreeProgress, tankId)
+    for i, entry in ipairs(techTreeProgress) do
+        if tonumber(entry.id) == tonumber(tankId) then
+            return entry.purchased
+        end
+    end
+end
+
+function API.GetPurchaseCost(tankId)
+    for i, tank in ipairs(World.FindObjectByName("TechTree_Contents"):GetChildren()) do
+        local id = tank:GetCustomProperty("ID")
+		if tonumber(id) == tonumber(tankId) then
+            tankResourceName = tank:GetCustomProperty("PurchaseCurrencyName")
+            tankPurchaseAmount = tank:GetCustomProperty("PurchaseCost")
+			return {resource = tostring(tankResourceName), amount = tonumber(tankPurchaseAmount)}		
+		end
+	end
+end
+
+function API.ShowPopup(title, message, buttonText)
+    local popUpPanel = World.FindObjectByName("POP_UP_MESSAGE")
+    popUpPanel.visibility = Visibility.FORCE_ON
+    popUpPanel:FindDescendantByName("TITLE").text = title
+    popUpPanel:FindDescendantByName("BODY_TEXT").text = message
+    popUpPanel:FindDescendantByName("BUTTONTEXT_LIGHT").text = buttonText
+end
+
 ------------------------------------------------------------------------------------------------------------------------
 return API

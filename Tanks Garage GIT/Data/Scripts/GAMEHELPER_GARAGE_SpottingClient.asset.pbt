@@ -1,6 +1,6 @@
 Assets {
-  Id: 12771787664667095308
-  Name: "GAMEHELPER_PopupMessageClient"
+  Id: 4827239879969363094
+  Name: "GAMEHELPER_GARAGE_SpottingClient"
   PlatformAssetType: 3
   TextAsset {
   }
