@@ -1,6 +1,6 @@
 Assets {
-  Id: 16735746884101318736
-  Name: "GAMESTATE_StatisticsServer"
+  Id: 9104653897864604584
+  Name: "GAMESTATE_GARAGE_StatisticsClient"
   PlatformAssetType: 3
   TextAsset {
   }

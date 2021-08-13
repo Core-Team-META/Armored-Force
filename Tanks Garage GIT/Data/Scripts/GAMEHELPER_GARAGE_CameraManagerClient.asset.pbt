@@ -1,6 +1,6 @@
 Assets {
-  Id: 9104653897864604584
-  Name: "GAMESTATE_StatisticsGarageClient"
+  Id: 1351975177845462919
+  Name: "GAMEHELPER_GARAGE_CameraManagerClient"
   PlatformAssetType: 3
   TextAsset {
   }

@@ -1,6 +1,6 @@
 Assets {
-  Id: 2896591224378290973
-  Name: "GAMEHELPER_SkinsClient"
+  Id: 1558966419367451433
+  Name: "GAMEHELPER_GARAGE_SpottingServer"
   PlatformAssetType: 3
   TextAsset {
   }

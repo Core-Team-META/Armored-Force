@@ -1,6 +1,6 @@
 Assets {
-  Id: 8005305632578165639
-  Name: "MAIN_UI_HANDLER"
+  Id: 14796956038353267529
+  Name: "GAMESTATE_GARAGE_MainManagerClient"
   PlatformAssetType: 3
   TextAsset {
   }
