@@ -419,7 +419,15 @@ function OnBindingPressed(player, binding)
 
 end
 
-function FireProjectile(player)
+
+function HandleAITankShot(aiDriver)
+	if aiDriver ~= driver then return end
+	print("Firing tank", aiDriver)
+	FireProjectile(aiDriver)
+end
+
+
+function FireProjectile(driver)
 
 	if reloading or barrelDown then
 		return
@@ -429,7 +437,10 @@ function FireProjectile(player)
 
 	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), muzzle:GetWorldRotation() * Vector3.FORWARD)
 	
-	firedProjectile.owner = driver
+	if driver:IsA("Player") then
+		-- TODO - figure out a way to have projectiles owned by non-players.  Will probably need to replciate.
+		firedProjectile.owner = driver
+	end
 	firedProjectile.gravityScale = 0
 	firedProjectile.lifeSpan = 5
 	firedProjectile.capsuleRadius = projectileRadius 
@@ -441,7 +452,7 @@ function FireProjectile(player)
 	
 	firedProjectile.shouldDieOnImpact = true
 	
-	Events.BroadcastToAllPlayers("ANIMATE_FIRING", driver, reloadTime)
+	Events.BroadcastToAllPlayers("ANIMATE_FIRING", chassis:GetReference(), reloadTime)
 
 	--#TODO This should be tied into the constants file
 	driver:AddResource("TOTALSHOTSFIRED", 1)
@@ -999,3 +1010,4 @@ function Tick()
 end
 
 destroyedListener = script.destroyEvent:Connect(OnDestroy)
+Events.Connect("AI_Tankshot", HandleAITankShot)

@@ -24,7 +24,9 @@ function AIPlayer.New(team)
     id = string.format("AI_%d", GetNewId()),
     team = team,
     diedEvent = LuaEvents.New(),
-    listeners = {}
+    listeners = {},
+    tickTask = nil,
+    tankId = nil,
   }
 
   setmetatable(newAIPlayer, {
@@ -33,7 +35,6 @@ function AIPlayer.New(team)
 
   --AIList[newAIPlayer.id] = newAIPlayer
   -- TODO: Set up a way to delete new players
-
   return newAIPlayer
 end
 
@@ -69,22 +70,47 @@ function AIPlayer:ApplyDamage(damageTable)
 end
 
 
+
+function TankTick(self)
+  Task.Wait(1)
+  print(">>>FIRE!<<<", self, self.tankId)
+  Events.Broadcast("AI_Tankshot", self)
+  SetAim(self)
+end
+
+
+
 function RoboDriver(vehicle, params)
-  
   params.isHandbrakeEngaged = false
   params.throttleInput = 1.0
   params.steeringInput = 0.5
-
 end
 
+
+function SetAim(driver)
+  -- This is a hack.  Need to change to nearest tank.
+  local tank = World.FindObjectById(driver.tankId)
+  if tank ~= nil then
+    local player = Game.FindNearestPlayer(tank:GetWorldPosition())
+    Events.Broadcast("AI_TankAim", driver.tankId, player:GetWorldPosition())
+  end
+end
 
 
 
 function AIPlayer:AssignToTank(tank)
   --print("assign to tank", tank.id, self)
   AIList[tank.id] = self
+  self.tankId = tank.id
   table.insert(self.listeners, tank.serverMovementHook:Connect(RoboDriver))
-
+  if self.tickTask == nil then
+        self.tickTask = Task.Spawn(function()
+          while true do
+            Task.Wait()
+            TankTick(self)
+          end
+        end)
+  end
 end
 
 function AIPlayer:Destroy(tank)
@@ -93,7 +119,9 @@ function AIPlayer:Destroy(tank)
   for k,v in pairs(self.listeners) do
     v:Disconnect()
   end
+  self.tickTask:Cancel()
   self.listeners = {}
+  self.tankId = nil
 end
 
 function AIPlayer.FindAIDriver(tank)
@@ -126,5 +154,7 @@ function AIPlayer:GetWorldRotation()
   return self.rotation
 end
 
+function AIPlayer:AddResource(resourceName, amount)
+end
 
 return AIPlayer
