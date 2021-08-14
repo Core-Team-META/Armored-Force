@@ -1,12 +1,12 @@
 Assets {
-  Id: 5942818711862363909
+  Id: 665104530983257129
   Name: "TANK_CHASSIS_Upgraded_UK_Comet"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 16534525475215313465
+      RootId: 9303364304416259622
       Objects {
-        Id: 16534525475215313465
+        Id: 9303364304416259622
         Name: "TANK_CHASSIS_Upgraded_UK_Comet"
         Transform {
           Scale {
@@ -27,7 +27,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
+          Value: "mc:eindicatorvisibility:alwaysvisible"
         }
         Vehicle {
           DriverPosition {
@@ -40,47 +40,46 @@ Assets {
           }
           Camera {
           }
-          Mass: 30000
+          Mass: 42000
           PhysicsBodyScale {
-            X: 4
-            Y: 3.5
-            Z: 1
+            X: 10
+            Y: 6.5
+            Z: 2
           }
-          IsDriverHidden: true
-          IsDriverAttached: true
           ExitBinding {
-            Value: "mc:egameaction:extraaction_43"
+            Value: "mc:egameaction:invalid"
           }
           PhysicsBodyOffset {
-            Z: 105
+            X: 40
+            Z: 50
           }
-          MaxSpeed: 1350
-          AccelerationRate: 400
+          MaxSpeed: 1215
+          AccelerationRate: 700
           DecelerationRate: 15
-          BrakeStrength: 1
-          TireFriction: 20
+          BrakeStrength: 15
+          TireFriction: 2
           CenterOfMassOFfset {
             Z: 20
           }
-          GravityScale: 1
-          CoastBrakeStrength: 0.1
-          DamageSettings {
-            StartImmortal: true
-          }
+          GravityScale: 2.6
+          CoastBrakeStrength: 10
           Tank {
-            LeftTreadRadius: 60
-            LeftTreadWidth: 110
-            RightTreadRadius: 60
-            RightTreadWidth: 110
+            LeftTreadRadius: 40
+            LeftTreadWidth: 70
+            RightTreadRadius: 40
+            RightTreadWidth: 70
             LeftTreadOffset {
-              X: -20
-              Y: -215
-              Z: 57
+              X: 40
+              Y: -270
+              Z: 40
             }
             RightTreadOffset {
-              X: -20
-              Y: 215
-              Z: 57
+              X: 40
+              Y: 270
+              Z: 40
+            }
+            HandbrakeBinding {
+              Value: "mc:egameaction:extraaction_27"
             }
             TurnSpeed: 65
           }

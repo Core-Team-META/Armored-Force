@@ -52,7 +52,7 @@ Assets {
           PhysicsBodyOffset {
             Z: 50
           }
-          MaxSpeed: 1120
+          MaxSpeed: 1150
           AccelerationRate: 400
           DecelerationRate: 15
           BrakeStrength: 15
@@ -60,11 +60,8 @@ Assets {
           CenterOfMassOFfset {
             Z: 20
           }
-          GravityScale: 1
+          GravityScale: 2.6
           CoastBrakeStrength: 10
-          DamageSettings {
-            StartImmortal: true
-          }
           Tank {
             LeftTreadRadius: 40
             LeftTreadWidth: 60

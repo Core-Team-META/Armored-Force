@@ -107,7 +107,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 5999139683645635819
+            Id: 4314956922204553376
           }
           TeamSettings {
           }
@@ -130,7 +130,7 @@ Assets {
       }
     }
     Assets {
-      Id: 5999139683645635819
+      Id: 4314956922204553376
       Name: "Impact Sparks VFX"
       PlatformAssetType: 8
       PrimaryAsset {

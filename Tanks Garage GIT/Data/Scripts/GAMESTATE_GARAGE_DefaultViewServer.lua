@@ -1,28 +1,16 @@
 local links = script:GetCustomProperty("Links"):WaitForObject()
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
-local map = {}
+local map = {"Map1", "Map2", "Map3"}
 local consumableCost = {}
-
-map["LastTeam"] = links:GetCustomProperty("Map1")
-map["Frontline"] = links:GetCustomProperty("Map1")
-map["Random"] = {links:GetCustomProperty("Map1"), links:GetCustomProperty("Map2")}
+local mapInRotation = "Map1"
 
 consumableCost["TreadsRepair"] = 100
 consumableCost["Extinguisher"] = 100
 consumableCost["TurretRepair"] = 100
 
 function SendToMap(player, selectedMap)
-
-	if not map[selectedMap] then
-		return
-	end
-	
-	if selectedMap == "Random" then
-		local selected = math.random(2)
-		player:TransferToGame(map[selectedMap][selected])
-	else
-		player:TransferToGame(map[selectedMap])
-	end
+	print("Transferring " .. player.name .. " to " .. mapInRotation)
+	player:TransferToScene(tostring(mapInRotation))
 	Events.Broadcast("PLAYER_DEPLOYED", player)
 end
 
@@ -116,6 +104,18 @@ function AutoPurchaseConsumables(player)
 	end
 
 end
+
+function Tick()
+	
+	mapInRotation = tostring(map[math.random(3)])
+	
+	print("Map in rotation: " .. mapInRotation)
+	
+	Task.Wait(60)
+	
+end
+	
+	
 
 Events.ConnectForPlayer("SEND_TO_MAP", SendToMap)
 Events.ConnectForPlayer("SET_AUTO_CONSUME", SetAutoPurchase)

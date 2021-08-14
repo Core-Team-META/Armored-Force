@@ -15,8 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5486007910752937774
+        ParentId: 15464489607496022458
         ChildIds: 11039645141791083942
+        ChildIds: 3412483207863844237
         ChildIds: 12761582819232415171
         ChildIds: 2658350944436644685
         Collidable_v2 {
@@ -123,6 +124,12 @@ Assets {
               SubObjectId: 2658350944436644685
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 3412483207863844237
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -203,16 +210,12 @@ Assets {
         }
       }
       Objects {
-        Id: 12761582819232415171
-        Name: "DebrisGroup"
+        Id: 3412483207863844237
+        Name: "LeftBehindGroup"
         Transform {
           Location {
-            X: -21.4499512
-            Y: -429.433594
-            Z: 1.32104492
           }
           Rotation {
-            Yaw: -179.999954
           }
           Scale {
             X: 1
@@ -221,11 +224,9 @@ Assets {
           }
         }
         ParentId: 4065610061684089389
-        ChildIds: 6747889640696748734
         ChildIds: 10608737639400723689
-        ChildIds: 15681682787849492219
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -233,23 +234,26 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
           IsGroup: true
         }
       }
       Objects {
-        Id: 6747889640696748734
+        Id: 10608737639400723689
         Name: "Military Sandbag 02"
         Transform {
           Location {
-            X: -46.4647217
-            Y: -310.874695
-            Z: 52.5880127
+            X: 15.5534592
+            Y: 51.9173203
+            Z: 139.396561
           }
           Rotation {
-            Pitch: -2.92074585
-            Yaw: 84.4180908
-            Roll: -12.3116741
+            Pitch: -13.9262972
+            Yaw: -78.2391434
+            Roll: -165.824417
           }
           Scale {
             X: 1.79075
@@ -257,7 +261,7 @@ Assets {
             Z: 1.79075
           }
         }
-        ParentId: 12761582819232415171
+        ParentId: 3412483207863844237
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -289,18 +293,52 @@ Assets {
         }
       }
       Objects {
-        Id: 10608737639400723689
+        Id: 12761582819232415171
+        Name: "DebrisGroup"
+        Transform {
+          Location {
+            X: -21.4499512
+            Y: -429.433594
+            Z: 1.32104492
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4065610061684089389
+        ChildIds: 6747889640696748734
+        ChildIds: 15681682787849492219
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 6747889640696748734
         Name: "Military Sandbag 02"
         Transform {
           Location {
-            X: -37.0028687
-            Y: -481.354736
-            Z: 138.075195
+            X: -46.4647217
+            Y: -310.874695
+            Z: 52.5880127
           }
           Rotation {
-            Pitch: -13.9263105
-            Yaw: 101.760773
-            Roll: -165.824448
+            Pitch: -2.92074585
+            Yaw: 84.4180908
+            Roll: -12.3116741
           }
           Scale {
             X: 1.79075

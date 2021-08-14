@@ -19,10 +19,27 @@ local removeGroup = script:GetCustomProperty("RemoveGroup"):WaitForObject()
 -- Group holds all the objects to be animated
 local debrisGroup = script:GetCustomProperty("DebrisGroup"):WaitForObject()
 
+--Group holds objects that with no lifespan
+if script:GetCustomProperty("LeftBehindGroup") then
+	local LeftBehindGroup = script:GetCustomProperty("LeftBehindGroup"):WaitForObject()
+end
+
 local destructionTrigger = script.parent
 
+local reset = {}
+local overlapListener = nil
+local isDestroyed= false
+
+function Initialize()
+    for _, child in ipairs(debrisGroup:GetChildren()) do          
+        table.insert(reset, {child, child:GetWorldPosition(), child:GetWorldRotation()})
+    end	
+end
+
 function handleOverlap(trigger, object)
-    if object ~= nil and object:IsA("Trigger") and object.name == "ClientCollisionTrigger" then
+    if object ~= nil and object:IsA("Trigger") and object.name == "ClientCollisionTrigger" and not isDestroyed then
+    	isDestroyed = true
+		overlapListener:Disconnect()
     
          -- Apply SFX & VFX
         if Object.IsValid(FXLocation01) then
@@ -39,20 +56,57 @@ function handleOverlap(trigger, object)
         if Object.IsValid(removeGroup) then
 	        for _, child in ipairs(removeGroup:GetChildren()) do	            
 	            child:Destroy()
+	            --child.visibility = Visibility.FORCE_OFF
 	        end
         end
            
-        -- Activate debris physics for everything else
-        for _, child in ipairs(debrisGroup:GetChildren()) do          
-            child.isSimulatingDebrisPhysics = true
-            child.cameraCollision = 2
+        -- Activate debris physics with lifespan
+        if Object.IsValid(debrisGroup) then
+            for _, child in ipairs(debrisGroup:GetChildren()) do          
+                child.isSimulatingDebrisPhysics = true
+                child.cameraCollision = 2
+                child.lifeSpan = 7
+            end
         end
-                
+
+        -- Activate debris physics without lifespan
+        if Object.IsValid(LeftBehindGroup) then
+            for _, child in ipairs(LeftBehindGroup:GetChildren()) do          
+                child.isSimulatingDebrisPhysics = true
+                child.cameraCollision = 2
+            end
+        end
+
+ 		--[[
         -- Destroy unneeded trigger        
         if Object.IsValid(destructionTrigger) then
             destructionTrigger:Destroy()
         end
+		]]
     end
 end
 
-destructionTrigger.beginOverlapEvent:Connect(handleOverlap)
+function ResetObject()
+
+    if Object.IsValid(removeGroup) then
+        for _, child in ipairs(removeGroup:GetChildren()) do
+            child.visibility = Visibility.INHERIT
+        end
+    end
+    
+    for _, entry in ipairs(reset) do          
+        entry[1].isSimulatingDebrisPhysics = false
+        Task.Wait()
+        entry[1]:SetWorldPosition(entry[2])
+        entry[1]:SetWorldRotation(entry[3])
+    end
+    
+    overlapListener = destructionTrigger.beginOverlapEvent:Connect(handleOverlap)
+    isDestroyed = false
+    
+end
+
+Initialize()
+
+overlapListener = destructionTrigger.beginOverlapEvent:Connect(handleOverlap)
+Events.Connect("OBJECT_RESET", ResetObject)

@@ -33,7 +33,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12637457240521357931
+  Id: 2360455805849341738
   Name: "DamageFeedback"
   Transform {
     Location {
@@ -132,38 +132,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6347915987478109169
-  Name: "AimUI"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17009671831015826261
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "AimUI"
-  }
-}
-Objects {
   Id: 3189217880366767538
   Name: "CameraManager"
   Transform {
@@ -193,5 +161,37 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "CameraManager"
+  }
+}
+Objects {
+  Id: 6976047011845045524
+  Name: "AimUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17009671831015826261
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "AimUI"
   }
 }

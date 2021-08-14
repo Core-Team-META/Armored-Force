@@ -70,12 +70,11 @@ end
 local function OnRoundEnd()
     local teamOne = Game.GetTeamScore(1)
     local teamTwo = Game.GetTeamScore(2)
+
     for _, player in ipairs(Game.GetPlayers()) do --
         if Object.IsValid(player) then
-            if (teamOne > teamTwo and player.team == 1) or (teamOne < teamTwo and player.team == 2) then
-                if not player.serverUserData.ACH_diedInRound then
-                    ACH_API.UnlockAchievement(player, "AGLO")
-                end
+            if not player.serverUserData.ACH_diedInRound then
+                ACH_API.UnlockAchievement(player, "AGLO")
             end
 
             local tankType = player.serverUserData.currentTankData and player.serverUserData.currentTankData.type
@@ -139,7 +138,7 @@ function OnPlayerJoined(player)
         ACH_API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     end
     listeners[player.id] = {}
-    listeners[player.id]["Respawn"] = player.spawnedEvent:Connect(OnPlayerRespawn)
+    --listeners[player.id]["Respawn"] = player.spawnedEvent:Connect(OnPlayerRespawn)
     listeners[player.id]["Resource"] = player.resourceChangedEvent:Connect(OnResourceChanged)
 
     SetPlayerFlags(player)
@@ -173,6 +172,17 @@ function OnUpgrade(player, tankId, upgradeSlot)
     end
 end
 
+function OnDamageTaken(attackData)
+    local target = attackData.object
+    local source = attackData.source
+    local hasTag = attackData.tags and attackData.tags.id
+    if hasTag and IsValidPlayer(source) and IsValidPlayer(target) then
+        if attackData.tags.id == "Projectile" then
+            source:AddResource(CONST.COMBAT_STATS.TOTAL_SHOTS_HIT, 1)
+        end
+    end
+end
+
 function OnTankAcquired(player, tankId, teir)
     if teir == 2 then
         ACH_API.AddProgress(player, "AJUN", 1)
@@ -192,8 +202,23 @@ function OnTankAcquired(player, tankId, teir)
             end
         end
     end
-    --#FIXME Late night coding this should be somewhere else
-    player:SetPrivateNetworkedData("PlayerTankData", player.serverUserData.techTreeProgress)
+end
+
+
+function OnBurntTank(player)
+
+end
+
+function OnRammedTank(player)
+
+end
+
+function OnDamageTurret(player)
+
+end
+
+function OnDamageBarrel(player)
+
 end
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -207,10 +232,18 @@ Game.roundStartEvent:Connect(OnRoundStart)
 
 -- Server (Same Context) Broadcast Listeners
 --Events.Connect("CombatWrapAPI.GoingToTakeDamage", OnGoingToTakeDamage)
---Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTaken)
+Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTaken)
 Events.Connect("CombatWrapAPI.ObjectHasDied", OnPlayerDied)
 Events.Connect("UpgradeAcquired", OnUpgrade)
 Events.Connect("TankAcquired", OnTankAcquired)
+
+
+-- From tank controller
+Events.Connect("PlayerBurntTank", OnBurntTank)
+Events.Connect("PlayerRammedTank" , OnRammedTank)
+Events.Connect("PlayerDamageTurret", OnDamageTurret)
+Events.Connect("PlayerDamageBarrel", OnDamageBarrel)
+
 
 -- Client Broadcast Listeners
 Events.ConnectForPlayer("AS.RewardClaim", OnRewardCollected)

@@ -1,6 +1,6 @@
 Assets {
   Id: 6110151164091798177
-  Name: "Custom Barbed Wire 01"
+  Name: "TW_BarbedWire"
   PlatformAssetType: 13
   SerializationVersion: 97
   CustomMaterialAsset {

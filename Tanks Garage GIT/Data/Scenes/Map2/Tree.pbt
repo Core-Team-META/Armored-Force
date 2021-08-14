@@ -14,11 +14,22 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 7367735074338159388
-  ChildIds: 16813558807825262224
-  ChildIds: 14713340454944924967
-  ChildIds: 10005074784157121906
-  ChildIds: 14982843161775482339
+  ChildIds: 5326532604461902996
+  ChildIds: 17436450333449143103
+  ChildIds: 6669098540365443194
+  ChildIds: 11714178208723096178
+  ChildIds: 5923443552270198422
+  ChildIds: 11401789158405873045
+  ChildIds: 12444968394944330371
+  ChildIds: 17069114771228442909
+  ChildIds: 9979275421894607866
+  ChildIds: 8533495559679364907
+  ChildIds: 4316049936135708946
+  ChildIds: 16933976679426407654
+  ChildIds: 18217549399293975483
+  ChildIds: 4965067273124672211
+  ChildIds: 9479035303955472683
+  ChildIds: 14027290532857229850
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,25 +45,163 @@ Objects {
   }
 }
 Objects {
-  Id: 14982843161775482339
-  Name: "Default Floor"
+  Id: 14027290532857229850
+  Name: "Copy Adjustments"
   Transform {
     Location {
-      Z: -50
     }
     Rotation {
     }
     Scale {
-      X: 50
-      Y: 50
+      X: 1
+      Y: 1
       Z: 1
     }
   }
   ParentId: 4781671109827199097
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:MINIMAP"
+      String: "================================="
+    }
+    Overrides {
+      Name: "cs:BoundsWidth"
+      Int: 51000
+    }
+    Overrides {
+      Name: "cs:BoundsHeight"
+      Int: 51000
+    }
+    Overrides {
+      Name: "cs:BoundsCenter"
+      Vector2 {
+        X: -7600
+        Y: -3300
+      }
+    }
+    Overrides {
+      Name: "cs:CAPTUREPOINTS"
+      String: "================================="
+    }
+    Overrides {
+      Name: "cs:APointLocation"
+      Vector {
+        X: -20540
+        Y: 15705
+      }
+    }
+    Overrides {
+      Name: "cs:BPointLocation"
+      Vector {
+        X: 20510
+        Y: -21340
+      }
+    }
+    Overrides {
+      Name: "cs:VICTORYSCREEN"
+      String: "================================="
+    }
+    Overrides {
+      Name: "cs:VictoryLocation"
+      Vector {
+        X: -9875
+        Y: -16280
+        Z: 130
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Copy Adjustments"
+  }
+}
+Objects {
+  Id: 9479035303955472683
+  Name: "Antti (Keppu)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Antti (Keppu)"
+  }
+}
+Objects {
+  Id: 4965067273124672211
+  Name: "TW2_SpawnPoints"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TW2_SpawnPoints"
+  }
+}
+Objects {
+  Id: 18217549399293975483
+  Name: "Terrain_Main"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -60,28 +209,72 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceon"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
+  Terrain {
+    Material {
+      Id: 743945919748057292
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
+    VoxelSize: 50
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+    Foliage {
+      Asset {
+        Id: 17657915315029757659
       }
-      BoundsScale: 1
+      DistanceBetweenInstances: 150
+      MaterialChannel: 2
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        Scaling: LockXY
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 8399971333368982502
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+        Z: -20
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
     }
+    MaxLOD: 32
   }
 }
 Objects {
-  Id: 10005074784157121906
-  Name: "Default Sky"
+  Id: 16933976679426407654
+  Name: "Terrain_BG"
   Transform {
     Location {
-      Z: 700
+      Z: -445
     }
     Rotation {
     }
@@ -92,11 +285,119 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 13551641546322277000
-  ChildIds: 7155168770677928712
-  ChildIds: 10505154200474359396
-  UnregisteredParameters {
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
   }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Terrain {
+    Material {
+      Id: 6771354921148884007
+    }
+    VoxelSize: 300
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+    Foliage {
+      Asset {
+        Id: 17657915315029757659
+      }
+      DistanceBetweenInstances: 200
+      MaterialChannel: 3
+      SpawnDistance: 28800
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 8399971333368982502
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+        Z: -20
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
+    MaxLOD: 32
+  }
+}
+Objects {
+  Id: 4316049936135708946
+  Name: "Lock Cursor to Screen"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6253506126193878080
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Lock Cursor to Screen"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 626964292754089367
+    }
+  }
+}
+Objects {
+  Id: 8533495559679364907
+  Name: "TW_Minimap"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -107,330 +408,18 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    IsFilePartition: true
+    FilePartitionName: "TW1_Minimap"
   }
 }
 Objects {
-  Id: 10505154200474359396
-  Name: "Sun Light"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Pitch: -45.8452454
-      Yaw: 33.9371338
-      Roll: 8.92731857
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10005074784157121906
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Use Temperature"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Light Color"
-      Color {
-        R: 1
-        G: 0.955973327
-        B: 0.73791039
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Shape"
-      Int: 1
-    }
-    Overrides {
-      Name: "bp:Size"
-      Float: 5
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Cast Volumetric Shadows"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Light Shaft Mask Darkness"
-      Float: 0.5
-    }
-    Overrides {
-      Name: "bp:Intensity"
-      Float: 3.5
-    }
-    Overrides {
-      Name: "bp:Sun Disc Color"
-      Color {
-        R: 3
-        G: 3
-        B: 3
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom Scale"
-      Float: 0.2
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom Threshold"
-      Float: 0.05
-    }
-    Overrides {
-      Name: "bp:Light Shaft Occlusion"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Light Shaft Bloom Tint"
-      Color {
-        R: 1
-        G: 0.998476863
-        B: 0.77
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 16910278292812118833
-    }
-  }
-}
-Objects {
-  Id: 7155168770677928712
-  Name: "Skylight"
+  Id: 9979275421894607866
+  Name: "TW_Settings"
   Transform {
     Location {
     }
     Rotation {
     }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10005074784157121906
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Index"
-      Int: 3
-    }
-    Overrides {
-      Name: "bp:Occlusion Contrast"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Intensity"
-      Float: 3
-    }
-    Overrides {
-      Name: "bp:Lower Hemisphere Color"
-      Color {
-        R: 0.0666259378
-        G: 0.0307134502
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Occlusion Tint"
-      Color {
-        R: 0.0274509825
-        G: 0.0274509825
-        B: 0.0392156877
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Occlusion Exponent"
-      Float: 0.4
-    }
-    Overrides {
-      Name: "bp:Cast Shadows"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Cast Volumetric Shadows"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Tint Color"
-      Color {
-        R: 0.502886474
-        G: 0.48514995
-        B: 0.752942204
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11515840070784317904
-    }
-  }
-}
-Objects {
-  Id: 13551641546322277000
-  Name: "Sky Dome"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10005074784157121906
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Zenith Color"
-      Color {
-        R: 0.0243181027
-        G: 0.0633459464
-        B: 0.212230757
-        A: 0.886000037
-      }
-    }
-    Overrides {
-      Name: "bp:Horizon Color"
-      Color {
-        R: 0.489468127
-        G: 0.480969489
-        B: 0.623960376
-        A: 0.895000041
-      }
-    }
-    Overrides {
-      Name: "bp:Haze Color"
-      Color {
-        R: 0.590618849
-        G: 0.590618849
-        B: 0.701101899
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Use Sun Color for Cloud Color"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Cloud Ambient Brightness"
-      Float: 3
-    }
-    Overrides {
-      Name: "bp:Cloud Rim Brightness"
-      Float: 50
-    }
-    Overrides {
-      Name: "bp:Cloud Opacity"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Cloud Ambient Color"
-      Color {
-        R: 2
-        G: 2
-        B: 2
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Cloud Color"
-      Color {
-        R: 2
-        G: 2
-        B: 2
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Cloud Shape"
-      Int: 4
-    }
-    Overrides {
-      Name: "bp:Cloud Lighting Brightness"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Cloud Wisp Opacity"
-      Float: 0.4
-    }
-    Overrides {
-      Name: "bp:Cloud Speed"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Brightness"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Background Clouds"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:High Cloud Index"
-      Int: 2
-    }
-    Overrides {
-      Name: "bp:High Cloud Opacity"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:High Cloud Noise Amount"
-      Float: 0.1
-    }
-    Overrides {
-      Name: "bp:High Cloud Noise Scale"
-      Float: 0.2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 7887238662729938253
-    }
-  }
-}
-Objects {
-  Id: 14713340454944924967
-  Name: "Third Person Camera Settings"
-  Transform {
     Scale {
       X: 1
       Y: 1
@@ -438,10 +427,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 4226120016796708080
-  ChildIds: 724324913679364851
-  UnregisteredParameters {
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -452,209 +437,13 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    IsFilePartition: true
+    FilePartitionName: "TW_Settings"
   }
 }
 Objects {
-  Id: 724324913679364851
-  Name: "Client Context"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14713340454944924967
-  ChildIds: 3567959178173361743
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 3567959178173361743
-  Name: "Third Person Camera"
-  Transform {
-    Location {
-      Z: 500
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 724324913679364851
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Camera {
-    UseAsDefault: true
-    AttachToLocalPlayer: true
-    InitialDistance: 400
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
-      Y: 60
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 1200
-    RotationMode {
-      Value: "mc:erotationmode:lookangle"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-    DoesPositionOffsetSpring: true
-  }
-}
-Objects {
-  Id: 4226120016796708080
-  Name: "Third Person Player Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14713340454944924967
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    PlayerMovementSettings {
-      WalkSpeed: 640
-      MaxAcceleration: 1800
-      WalkableFloorAngle: 44
-      JumpMaxCount: 1
-      JumpVelocity: 900
-      GroundFriction: 8
-      GravityScale: 1.9
-      MaxSwimSpeed: 420
-      Buoyancy: 1
-      TouchForceFactor: 1
-      BrakingDecelerationFlying: 600
-      MaxFlightSpeed: 600
-      MovementControlMode {
-        Value: "mc:emovementcontrolmode:lookrelative"
-      }
-      LookControlMode {
-        Value: "mc:elookcontrolmode:relative"
-      }
-      FacingMode {
-        Value: "mc:efacingmode:faceaimwhenactive"
-      }
-      DefaultRotationRate: 540
-      SlideRotationRate: 20
-      LookAtCursorProjectionPlane {
-        Value: "mc:eprojectionplane:xy"
-      }
-      MountedMaxAcceleration: 1800
-      MountedWalkSpeed: 1280
-      MountedJumpMaxCount: 1
-      MountedJumpVelocity: 900
-      HeadVisibleToSelf: true
-      IsSlideEnabled: true
-      IsCrouchEnabled: true
-      IsJumpEnabled: true
-      CanMoveForward: true
-      CanMoveBackward: true
-      CanMoveLeft: true
-      CanMoveRight: true
-      AbilityAimMode {
-        Value: "mc:eabilityaimmode:viewrelative"
-      }
-      AppearanceChannelingTime: 2
-      MountChannelingTime: 2
-      FlipOnMultiJump: true
-      CanMoveUp: true
-      CanMoveDown: true
-      IsMountEnabled: true
-      MaxHitpoints: 100
-      PlayerMasterVolumeMultiplier: 1
-    }
-  }
-}
-Objects {
-  Id: 16813558807825262224
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      Z: 115
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 7367735074338159388
-  Name: "Game Settings"
+  Id: 17069114771228442909
+  Name: "Marcela"
   Transform {
     Location {
     }
@@ -676,82 +465,223 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  Settings {
-    IsDefault: true
-    GameSettings {
-      RagdollOnDeath: true
-      ChatMode {
-        Value: "mc:echatmode:teamandall"
-      }
-      ChatSettings {
-        ChatMode {
-        }
-        ChatPosition {
-          X: 40
-        }
-        ChatSize {
-          X: 450
-          Y: 400
-        }
-        ChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:left"
-        }
-        ChatVerticalAlignment {
-          Value: "mc:ecorehorizontalalign:center"
-        }
-      }
-      PhysicsSettings {
-        MinContactOffset: 2
-        MaxContactOffset: 8
-      }
-      RelevanceSettings {
-        key: "decal"
-        value {
-          LowDistance: 4500
-          MediumDistance: 7000
-          HighDistance: 9000
-        }
-      }
-      RelevanceSettings {
-        key: "vfx"
-        value {
-          LowDistance: 4500
-          MediumDistance: 7000
-          HighDistance: 9000
-        }
-      }
-      VoiceChatSettings {
-        VoiceChatMode {
-          Value: "mc:evoicechatmode:all"
-        }
-        VoiceChannelType {
-          Value: "mc:evoicechanneltype:normal"
-        }
-        AudibleDistance: 6000
-        ConversationalDistance: 1500
-        AudioFadeModel {
-          Value: "mc:evoiceaudiofademodel:inverse"
-        }
-        AudioFadeIntensityByDistance: 1
-        VoiceChatPosition {
-          X: -40
-          Y: 40
-        }
-        VoiceChatHorizontalAlignment {
-          Value: "mc:ecorehorizontalalign:right"
-        }
-        VoiceChatVerticalAlignment {
-          Value: "mc:ecoreverticalalign:top"
-        }
-        VoiceChatEntryHorizontalFlow {
-          Value: "mc:ecorehorizontalflow:righttoleft"
-        }
-        VoiceChatEntryVerticalFlow {
-          Value: "mc:ecoreverticalflow:toptobottom"
-        }
-      }
-      PlayerInteractDistance: 500
-      PlayerInteractAngleDeg: 50
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Marcela"
+  }
+}
+Objects {
+  Id: 12444968394944330371
+  Name: "Ryan"
+  Transform {
+    Location {
     }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ryan"
+  }
+}
+Objects {
+  Id: 11401789158405873045
+  Name: "Morticai (Brent)"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Morticai (Brent)"
+  }
+}
+Objects {
+  Id: 5923443552270198422
+  Name: "Chat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Chat"
+  }
+}
+Objects {
+  Id: 11714178208723096178
+  Name: "Bigglebuns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Bigglebuns"
+  }
+}
+Objects {
+  Id: 6669098540365443194
+  Name: "Patrick"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Patrick"
+  }
+}
+Objects {
+  Id: 17436450333449143103
+  Name: "Konz"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Konz"
+  }
+}
+Objects {
+  Id: 5326532604461902996
+  Name: "Keys, Links, and Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Keys, Links, and Settings"
   }
 }

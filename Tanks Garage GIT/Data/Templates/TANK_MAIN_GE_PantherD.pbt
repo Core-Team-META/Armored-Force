@@ -79,7 +79,7 @@ Assets {
           }
           Overrides {
             Name: "cs:UpgradedDamage"
-            Int: 200
+            Int: 300
           }
           Overrides {
             Name: "cs:HorizontalCannonAngles"
@@ -99,23 +99,23 @@ Assets {
           }
           Overrides {
             Name: "cs:DamagePerShot"
-            Int: 190
+            Int: 280
           }
           Overrides {
             Name: "cs:HitPoints"
-            Int: 750
+            Int: 950
           }
           Overrides {
             Name: "cs:UpgradedHitPoints"
-            Int: 850
+            Int: 1000
           }
           Overrides {
             Name: "cs:TurretElevationSpeed"
-            Int: 10
+            Int: 15
           }
           Overrides {
             Name: "cs:UpgradedElevation"
-            Int: 15
+            Int: 25
           }
           Overrides {
             Name: "cs:MaxElevationAngle"
@@ -123,7 +123,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MinDepressionAngle"
-            Int: -8
+            Int: -11
           }
           Overrides {
             Name: "cs:Name"
@@ -193,7 +193,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3708065447762635341
+            Id: 7672894170880533820
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -333,7 +333,7 @@ Assets {
       }
     }
     Assets {
-      Id: 3708065447762635341
+      Id: 7672894170880533820
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {

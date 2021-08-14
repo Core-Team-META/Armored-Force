@@ -1,4 +1,13 @@
 Assets {
+  Id: 18095757882595708726
+  Name: "Grass Short"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_002"
+  }
+}
+Assets {
   Id: 18000572852129032995
   Name: "PremiumSubscription"
   PlatformAssetType: 24
@@ -12,25 +21,21 @@ Assets {
   }
 }
 Assets {
-  Id: 17306415880111730176
-  Name: "Skins1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
+  Id: 16990779988580040001
+  Name: "Clover Patch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_clover_patch_002"
   }
 }
 Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
+  Id: 15876256765931074932
+  Name: "Flower Bellflower Patch 01"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_patch_001_ref"
   }
 }
 Assets {
@@ -60,12 +65,21 @@ Assets {
   }
 }
 Assets {
-  Id: 13941087976310581814
-  Name: "StorageGarage"
+  Id: 14002253654344460699
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 12815338606393549629
+  Name: "Achievements"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "cfea81b09e25439fb0ab189c92bf9010"
+      Key: "2fd46d04db664f6b85721c3769840dd6"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -73,21 +87,30 @@ Assets {
   }
 }
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
+  Id: 11182969111770509228
+  Name: "Cliff 02"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetType: "MaterialAssetRef"
+    AssetId: "cliff_002"
   }
 }
 Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
+  Id: 10835155324150586940
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 10435621986531285937
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
   }
 }
 Assets {
@@ -143,12 +166,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7970651784764051329
-  Name: "PlayerSharedStorage"
+  Id: 6445891433040706212
+  Name: "Tanks"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "8cd7b4910d07447a8fac4ca5a361a105"
+      Key: "b70b722563b946ccaa2bd95c1385ab74"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -156,21 +179,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7887238662729938253
-  Name: "Sky Dome"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Sky"
-  }
-}
-Assets {
-  Id: 5537260831227292255
-  Name: "Tanks1"
+  Id: 6059846629728132881
+  Name: "Skins"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
+      Key: "fe905fe344da45fbbc78301c55f98aea"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -178,12 +192,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5042189428014108586
-  Name: "Leaderboards1"
+  Id: 5542400898688887448
+  Name: "Leaderboards"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "5054e091c2a04962af336edce485ef05"
+      Key: "f8e410dcfa8d425f9ab5f5a170ed7766"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -217,6 +231,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3377721323622766709
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
   Id: 3220301514966558870
   Name: "GoldPack1"
   PlatformAssetType: 24
@@ -243,19 +266,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2934587775384050047
-  Name: "Achievements1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 2013199925716606686
   Name: "GeneralPack"
   PlatformAssetType: 24
@@ -266,6 +276,15 @@ Assets {
         Value: "mc:enetreferencetype:creatorperk"
       }
     }
+  }
+}
+Assets {
+  Id: 1908253659651347838
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
   }
 }
 Assets {

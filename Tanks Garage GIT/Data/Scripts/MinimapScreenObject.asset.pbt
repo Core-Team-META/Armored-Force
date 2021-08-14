@@ -1,5 +1,5 @@
 Assets {
-  Id: 15898178794463633379
+  Id: 4822191344238976801
   Name: "MinimapScreenObject"
   PlatformAssetType: 3
   TextAsset {

@@ -25,6 +25,7 @@ local LIGHT_TANK_TEMPLATE = script:GetCustomProperty("MinimapLightTank")
 local MEDIUM_TANK_TEMPLATE = script:GetCustomProperty("MinimapMediumTank")
 local HEAVY_TANK_TEMPLATE = script:GetCustomProperty("MinimapHeavyTank")
 local DESTROYER_TANK_TEMPLATE = script:GetCustomProperty("MinimapDestroyerTank")
+local TANK_TEMPLATE = script:GetCustomProperty("MinimapTank")
 
 local GRADIENT_HEIGHT = script:GetCustomProperty("GradientHeight")
 local COLOR_LOW = script:GetCustomProperty("ColorLow")
@@ -36,6 +37,8 @@ local worldShapes = ROOT:FindDescendantsByType("StaticMesh")
 local worldTexts = ROOT:FindDescendantsByType("WorldText")
 
 local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
+local mainGameStateManager = script:GetCustomProperty("GAMESTATE_MainGameStateManagerServer"):WaitForObject()
+local minimapComponents = script:GetCustomProperty("MinimapComponents"):WaitForObject()
 
 function CheckSpotting(player)
 	
@@ -247,7 +250,10 @@ function GetIndicatorType(player)
 	end
 	
 	player.clientUserData.minimapType = tankType
-			
+	
+	return TANK_TEMPLATE
+	
+	--[[
 	if tankType == "Light" then
 		return LIGHT_TANK_TEMPLATE
 	elseif tankType == "Medium" then
@@ -261,7 +267,7 @@ function GetIndicatorType(player)
 	--warn("COULD NOT FIND TANK TYPE FOR " .. player.name .. " : " .. tostring(player.clientUserData.minimapType))
 	
 	return PLAYER_TEMPLATE
-
+	]]
 end
 
 function CheckIndicatorType(player)
@@ -307,6 +313,22 @@ function GetIndicatorForPlayer(player)
 	
 end
 
+
+function StateSTART(manager, propertyName)
+
+	if propertyName ~= "GameState" then
+		return
+	end
+	
+	if mainGameStateManager:GetCustomProperty("GameState") == "CARD_STATE" then
+		minimapComponents.visibility = Visibility.FORCE_OFF
+	end
+		
+end
+
+
+
+mainGameStateManager.networkedPropertyChangedEvent:Connect(StateSTART)
 
 
 

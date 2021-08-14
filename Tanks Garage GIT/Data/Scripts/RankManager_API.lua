@@ -64,12 +64,12 @@ function API.GetRanks()
 end
 
 function API.GetPlayerRankData(player)
-    return GetRankDataByLevel(player:GetResource("Rank"))
+    return GetRankDataByLevel(player:GetResource("Level"))
 end
 
 -- Checks if there has been a change to player rank
 function API.ShouldUpdatePlayerRank(player)
-    local currentLevel = API.GetPlayerRankData(player)
+    local currentLevel = player:GetResource("Level")
     if not player.clientUserData.currentLevel then
         player.clientUserData.currentLevel = player.clientUserData.currentLevel or currentLevel
         return true

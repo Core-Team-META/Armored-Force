@@ -191,7 +191,23 @@ Assets {
           }
           Overrides {
             Name: "bp:Radius"
-            Float: 0.5
+            Float: 4.33502197
+          }
+          Overrides {
+            Name: "bp:Radial Velocity Min"
+            Float: 0.267262191
+          }
+          Overrides {
+            Name: "bp:Radial Velocity Max"
+            Float: 0.472359329
+          }
+          Overrides {
+            Name: "bp:Initial Start Delay"
+            Float: -4.47332096
+          }
+          Overrides {
+            Name: "bp:Upward Velocity Min"
+            Float: 2.42078209
           }
         }
         Collidable_v2 {

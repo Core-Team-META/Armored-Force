@@ -14,7 +14,6 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]]
-
 -- Internal custom properties
 local AS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
@@ -45,53 +44,59 @@ local BACKGROUND_COLOR = COMPONENT_ROOT:GetCustomProperty("BackgroundColor")
 local FRIENDLY_HEALTH_COLOR = COMPONENT_ROOT:GetCustomProperty("FriendlyHealthColor")
 local ENEMY_HEALTH_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthColor")
 local DAMAGE_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("DamageChangeColor")
-local HEAL_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("HealChangeColor") 
-local HEALTH_NUMBER_COLOR = COMPONENT_ROOT:GetCustomProperty("HealthNumberColor") 
+local HEAL_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("HealChangeColor")
+local HEALTH_NUMBER_COLOR = COMPONENT_ROOT:GetCustomProperty("HealthNumberColor")
 
 local spottingServer = script:GetCustomProperty("GAMEHELPER_SpottingServer"):WaitForObject()
 
+local GameState = nil
+local currentGameState = nil
+
+if script:GetCustomProperty("GameState") then
+	GameState = script:GetCustomProperty("GameState"):WaitForObject()
+	currentGameState = GameState:GetCustomProperty("GameState")
+end
+
 function CheckSpotting(player)
-	
-	for i=1, 16 do
+	for i = 1, 16 do
 		if spottingServer:GetCustomProperty("P" .. tostring(i)) == player.id then
 			return true
 		end
 	end
-	
+
 	return false
-	
 end
 
 -- Check user properties
 if MAX_DISTANCE_ON_TEAMMATES < 0.0 then
-    warn("MaxDistanceOnTeammates cannot be negative")
-    MAX_DISTANCE_ON_TEAMMATES = 0.0
+	warn("MaxDistanceOnTeammates cannot be negative")
+	MAX_DISTANCE_ON_TEAMMATES = 0.0
 end
 
 if MAX_DISTANCE_ON_ENEMIES < 0.0 then
-    warn("MaxDistanceOnEnemies cannot be negative")
-    MAX_DISTANCE_ON_ENEMIES = 0.0
+	warn("MaxDistanceOnEnemies cannot be negative")
+	MAX_DISTANCE_ON_ENEMIES = 0.0
 end
 
 if SCALE <= 0.0 then
-    warn("Scale must be positive")
-    SCALE = 1.0
+	warn("Scale must be positive")
+	SCALE = 1.0
 end
 
 if CHANGE_ANIMATION_TIME <= 0.0 then
-    warn("ChangeAnimationTime must be positive")
-    CHANGE_ANIMATION_TIME = 1.0
+	warn("ChangeAnimationTime must be positive")
+	CHANGE_ANIMATION_TIME = 1.0
 end
 
 if SEGMENT_SIZE <= 0.0 then
-    warn("SegmentSize must be positive")
-    SEGMENT_SIZE = 20.0
+	warn("SegmentSize must be positive")
+	SEGMENT_SIZE = 20.0
 end
 
 --Constants
 -- In units of scale
 local BORDER_WIDTH = 0.02
-local NAMEPLATE_LAYER_THICKNESS = 0.01			-- To force draw order
+local NAMEPLATE_LAYER_THICKNESS = 0.01 -- To force draw order
 local HEALTHBAR_WIDTH = 1.5
 local HEALTHBAR_HEIGHT = 0.08
 
@@ -125,6 +130,7 @@ function OnPlayerJoined(player)
 	nameplates[player].changePiece = nameplateRoot:GetCustomProperty("ChangePiece"):WaitForObject()
 	nameplates[player].healthText = nameplateRoot:GetCustomProperty("HealthText"):WaitForObject()
 	nameplates[player].nameText = nameplateRoot:GetCustomProperty("NameText"):WaitForObject()
+	nameplates[player].tankText = nameplateRoot:GetCustomProperty("TankText"):WaitForObject()
 
 	-- For animating changes. Each change clobbers the previous state.
 	nameplates[player].lastHealthFraction = 1.0
@@ -137,15 +143,21 @@ function OnPlayerJoined(player)
 	nameplateRoot:SetPosition(Vector3.New(0, 0, 400))
 
 	-- Static properties on pieces
-	nameplates[player].borderPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH + 2.0 * BORDER_WIDTH, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH))
+	nameplates[player].borderPiece:SetScale(
+		Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH + 2.0 * BORDER_WIDTH, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH)
+	)
 	nameplates[player].borderPiece:SetPosition(Vector3.New(-4.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
 	nameplates[player].borderPiece:SetColor(BORDER_COLOR)
 	nameplates[player].backgroundPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH, HEALTHBAR_HEIGHT))
 	nameplates[player].backgroundPiece:SetPosition(Vector3.New(-3.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
 	nameplates[player].backgroundPiece:SetColor(BACKGROUND_COLOR)
-	nameplates[player].healthText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))		-- Text must be 50 units ahead as it doesn't have thickness
+	nameplates[player].healthText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0)) -- Text must be 50 units ahead as it doesn't have thickness
 	nameplates[player].healthText:SetColor(HEALTH_NUMBER_COLOR)
 	nameplates[player].nameText.text = player.name
+	
+	if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
+		nameplates[player].tankText.text = player.clientUserData.currentTankData.name .. " [" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+	end
 
 	nameplates[player].borderPiece.visibility = Visibility.FORCE_OFF
 	nameplates[player].backgroundPiece.visibility = Visibility.FORCE_OFF
@@ -153,6 +165,11 @@ function OnPlayerJoined(player)
 	nameplates[player].changePiece.visibility = Visibility.FORCE_OFF
 	nameplates[player].healthText.visibility = Visibility.FORCE_OFF
 	nameplates[player].nameText.visibility = Visibility.FORCE_OFF
+
+	nameplates[player].isVisible = false
+	nameplates[player].changeFraction = 0
+	nameplates[player].dirty = true
+	nameplates[player].lastTeam = player.team
 
 	if SHOW_HEALTHBARS then
 		nameplates[player].borderPiece.visibility = Visibility.INHERIT
@@ -193,6 +210,9 @@ end
 -- bool IsNameplateVisible(Player)
 -- Can we see this player's nameplate given team and distance properties?
 function IsNameplateVisible(player)
+	if (currentGameState == "VICTORY_STATE") or (currentGameState == "STATS_STATE") or (not currentGameState) then
+		return true
+	end
 	if player.isDead and not SHOW_ON_DEAD_PLAYERS then
 		return false
 	end
@@ -229,48 +249,63 @@ function RotateNameplate(nameplate)
 	nameplate.templateRoot:SetWorldRotation(Rotation.New(quat))
 end
 
+-- handler params: CoreObject_owner, string_propertyName
+function OnGameStateChanged(object, string)
+	if string == "GameState" then
+		currentGameState = GameState:GetCustomProperty("GameState")
+	end
+end
+
 -- nil Tick(float)
 -- Update dynamic properties (ex. team, health, and health animation) of every nameplate
 function Tick(deltaTime)
-	for _, player in pairs(Game.GetPlayers()) do
+	for _, player in ipairs(Game.GetPlayers()) do
 		local nameplate = nameplates[player]
 
-		if nameplate then
+		if nameplate and Object.IsValid(player) then
 			-- We calculate visibility every frame to handle when teams change
 			local visible = IsNameplateVisible(player)
 
 			if not visible then
-				nameplate.templateRoot.visibility = Visibility.FORCE_OFF
+				if nameplate.isVisible == true then
+					nameplate.dirty = true
+				end
+				-- due to player:setVisibility, enforce this each tick
+				if nameplate.templateRoot.visibility ~= Visibility.FORCE_OFF then
+					nameplate.templateRoot.visibility = Visibility.FORCE_OFF
+				end
 			else
-				nameplate.templateRoot.visibility = Visibility.FORCE_ON
+				if nameplate.isVisible == false then
+					nameplate.dirty = true
+				end
+				-- due to player:setVisibility, enforce this each tick
+				if nameplate.templateRoot.visibility ~= Visibility.FORCE_ON then
+					nameplate.templateRoot.visibility = Visibility.FORCE_ON
+				end
+
+				if player.team ~= nameplate.lastTeam then
+					nameplate.lastTeam = player.team
+					nameplate.dirty = true
+				end
+
 				RotateNameplate(nameplate)
+							
+				if player.clientUserData.currentTankData and player.clientUserData.currentTankData.name and player.clientUserData.currentTankData.teir then
+					nameplate.tankText.text = player.clientUserData.currentTankData.name .. " [T" .. tostring(player.clientUserData.currentTankData.teir) .. "]"
+				end
 
 				if SHOW_HEALTHBARS then
 					local healthFraction = player.hitPoints / player.maxHitPoints
-					local visibleHealthFraction = healthFraction			-- For animating changes
+					local visibleHealthFraction = healthFraction -- For animating changes
 
 					-- Set size and position of change piece
 					if ANIMATE_CHANGES then
 						local timeSinceChange = CoreMath.Clamp(time() - nameplate.lastHealthTime, 0.0, CHANGE_ANIMATION_TIME)
 						local timeScale = 1.0 - timeSinceChange / CHANGE_ANIMATION_TIME
 						local changeFraction = timeScale * (nameplate.lastHealthFraction - healthFraction)
-						nameplate.changePiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * math.abs(changeFraction), HEALTHBAR_HEIGHT))
-
-						if changeFraction == 0.0 then
-							nameplate.changePiece.visibility = Visibility.FORCE_OFF
-						else
-							nameplate.changePiece.visibility = Visibility.INHERIT
-
-							if changeFraction > 0.0 then		-- Player took damage
-								local changePieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 - changeFraction) - 100.0 * HEALTHBAR_WIDTH * healthFraction
-								nameplate.changePiece:SetPosition(Vector3.New(-2.0 * NAMEPLATE_LAYER_THICKNESS, changePieceOffset, 0.0))
-								nameplate.changePiece:SetColor(DAMAGE_CHANGE_COLOR)
-							else								-- Player was healed	
-								visibleHealthFraction = visibleHealthFraction + changeFraction
-								local changePieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 + changeFraction) - 100.0 * HEALTHBAR_WIDTH * visibleHealthFraction
-								nameplate.changePiece:SetPosition(Vector3.New(-2.0 * NAMEPLATE_LAYER_THICKNESS, changePieceOffset, 0.0))
-								nameplate.changePiece:SetColor(HEAL_CHANGE_COLOR)
-							end
+						if changeFraction ~= nameplate.changeFraction then
+							nameplate.changeFraction = changeFraction
+							nameplate.dirty = true
 						end
 
 						-- Detect health changes to set the animation state
@@ -283,9 +318,14 @@ function Tick(deltaTime)
 								nameplate.lastHealthTime = time()
 								nameplate.lastHealthFraction = nameplate.lastFrameHealthFraction
 							end
-							
-							nameplate.lastFrameHealthFraction = healthFraction
+							nameplate.dirty = true
 						end
+					end
+
+					-- If health changed, mark as dirty
+					if nameplate.lastFrameHealthFraction ~= healthFraction then
+						nameplate.lastFrameHealthFraction = healthFraction
+						nameplate.dirty = true
 					end
 
 					-- Update segments
@@ -309,36 +349,88 @@ function Tick(deltaTime)
 							local segmentSeparator = nameplate.segmentSeparators[i]
 							segmentSeparator.visibility = Visibility.INHERIT
 							segmentSeparator:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, BORDER_WIDTH, HEALTHBAR_HEIGHT + BORDER_WIDTH))
-							segmentSeparator:SetPosition(Vector3.New(-1.0 * NAMEPLATE_LAYER_THICKNESS, segmentBaseOffset - 100.0 * i * SEGMENT_SIZE * healthScale, 0.0))
+							segmentSeparator:SetPosition(
+								Vector3.New(-1.0 * NAMEPLATE_LAYER_THICKNESS, segmentBaseOffset - 100.0 * i * SEGMENT_SIZE * healthScale, 0.0)
+							)
+						end
+					end
+				end
+			end
+
+			if nameplate.dirty then
+				nameplate.dirty = false
+				nameplate.isVisible = visible
+
+				if not visible then
+					--nameplate.templateRoot.visibility = Visibility.FORCE_OFF
+				else
+					--nameplate.templateRoot.visibility = Visibility.INHERIT
+
+					if SHOW_HEALTHBARS then
+						local healthFraction = player.hitPoints / player.maxHitPoints
+						local visibleHealthFraction = healthFraction -- For animating changes
+
+						-- Set size and position of change piece
+						if ANIMATE_CHANGES then
+							local changeFraction = nameplate.changeFraction
+							nameplate.changePiece:SetScale(
+								Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * math.abs(nameplate.changeFraction), HEALTHBAR_HEIGHT)
+							)
+
+							if changeFraction == 0.0 then
+								nameplate.changePiece.visibility = Visibility.FORCE_OFF
+							else
+								nameplate.changePiece.visibility = Visibility.INHERIT
+
+								if changeFraction > 0.0 then -- Player took damage
+									local changePieceOffset =
+										50.0 * HEALTHBAR_WIDTH * (1.0 - changeFraction) - 100.0 * HEALTHBAR_WIDTH * healthFraction
+									nameplate.changePiece:SetPosition(Vector3.New(-2.0 * NAMEPLATE_LAYER_THICKNESS, changePieceOffset, 0.0))
+									nameplate.changePiece:SetColor(DAMAGE_CHANGE_COLOR)
+								else -- Player was healed
+									visibleHealthFraction = visibleHealthFraction + changeFraction
+									local changePieceOffset =
+										50.0 * HEALTHBAR_WIDTH * (1.0 + changeFraction) - 100.0 * HEALTHBAR_WIDTH * visibleHealthFraction
+									nameplate.changePiece:SetPosition(Vector3.New(-2.0 * NAMEPLATE_LAYER_THICKNESS, changePieceOffset, 0.0))
+									nameplate.changePiece:SetColor(HEAL_CHANGE_COLOR)
+								end
+							end
+						end
+
+						-- Set size and position of health bar
+						local healthPieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 - visibleHealthFraction)
+						nameplate.healthPiece:SetScale(
+							Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * visibleHealthFraction, HEALTHBAR_HEIGHT)
+						)
+						nameplate.healthPiece:SetPosition(Vector3.New(-2.0 * NAMEPLATE_LAYER_THICKNESS, healthPieceOffset, 0.0))
+
+						-- Update hit point number
+						if SHOW_NUMBERS then
+							nameplate.healthText.text = string.format("%.0f / %.0f", player.hitPoints, player.maxHitPoints)
 						end
 					end
 
-					-- Set size and position of health bar
-					local healthPieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 - visibleHealthFraction)
-					nameplate.healthPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * visibleHealthFraction, HEALTHBAR_HEIGHT))
-					nameplate.healthPiece:SetPosition(Vector3.New(-2.0 * NAMEPLATE_LAYER_THICKNESS, healthPieceOffset, 0.0))
+					-- Update name and health color based on teams
+					if SHOW_NAMES then
+						local nameColor = nil
+						local healthColor = nil
+						local scaling = nil
 
-					-- Update hit point number
-					if SHOW_NUMBERS then
-						nameplate.healthText.text = string.format("%.0f / %.0f", player.hitPoints, player.maxHitPoints)
+						if player == LOCAL_PLAYER or Teams.AreTeamsFriendly(player.team, LOCAL_PLAYER.team) then
+							nameColor = FRIENDLY_NAME_COLOR
+							healthColor = FRIENDLY_HEALTH_COLOR
+							scaling = SCALE
+						else
+							nameColor = ENEMY_NAME_COLOR
+							healthColor = ENEMY_HEALTH_COLOR
+							scaling = SCALE * 2
+						end
+
+						nameplate.nameText:SetColor(nameColor)
+						nameplate.tankText:SetColor(nameColor)
+						nameplate.healthPiece:SetColor(healthColor)
+						nameplate.templateRoot:SetScale(Vector3.New(scaling, scaling, scaling))
 					end
-				end
-
-				-- Update name and health color based on teams
-				if SHOW_NAMES then
-					local nameColor = nil
-					local healthColor = nil
-
-					if player == LOCAL_PLAYER or Teams.AreTeamsFriendly(player.team, LOCAL_PLAYER.team) then
-						nameColor = FRIENDLY_NAME_COLOR
-						healthColor = FRIENDLY_HEALTH_COLOR
-					else
-						nameColor = ENEMY_NAME_COLOR
-						healthColor = ENEMY_HEALTH_COLOR
-					end
-
-					nameplate.nameText:SetColor(nameColor)
-					nameplate.healthPiece:SetColor(healthColor)
 				end
 			end
 		end
@@ -348,3 +440,6 @@ end
 -- Initialize
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+if GameState then
+	GameState.networkedPropertyChangedEvent:Connect(OnGameStateChanged)
+end

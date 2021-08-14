@@ -102,7 +102,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               A: 1
@@ -168,7 +168,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 1
@@ -249,7 +249,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 9686253618519087109
+              Id: 17191612518869424272
             }
             VerticalJustification {
               Value: "mc:everticaljustification:top"
@@ -326,7 +326,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 9686253618519087109
+              Id: 17191612518869424272
             }
             VerticalJustification {
               Value: "mc:everticaljustification:top"
@@ -403,7 +403,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 9686253618519087109
+              Id: 17191612518869424272
             }
             VerticalJustification {
               Value: "mc:everticaljustification:top"
@@ -525,7 +525,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               G: 0.00642383564
@@ -592,7 +592,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -660,7 +660,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -728,7 +728,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -796,7 +796,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -923,7 +923,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               G: 0.00642383564
@@ -990,7 +990,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00747975335
@@ -1058,7 +1058,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00747975335
@@ -1126,7 +1126,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00747975335
@@ -1194,7 +1194,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00747975335
@@ -1322,7 +1322,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               G: 0.00642383564
@@ -1389,7 +1389,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -1457,7 +1457,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -1525,7 +1525,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -1593,7 +1593,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14060330023043759337
+              Id: 4504686085818425438
             }
             Color {
               R: 0.00151763496
@@ -1664,7 +1664,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 4519748528802078203
+              Id: 17582717649957538926
             }
             Color {
               R: 0.275796
@@ -1797,7 +1797,7 @@ Assets {
       }
     }
     Assets {
-      Id: 14060330023043759337
+      Id: 4504686085818425438
       Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -1806,7 +1806,7 @@ Assets {
       }
     }
     Assets {
-      Id: 9686253618519087109
+      Id: 17191612518869424272
       Name: "Teko Light"
       PlatformAssetType: 28
       PrimaryAsset {
@@ -1815,7 +1815,7 @@ Assets {
       }
     }
     Assets {
-      Id: 4519748528802078203
+      Id: 17582717649957538926
       Name: "Icon Checkmark"
       PlatformAssetType: 9
       PrimaryAsset {

@@ -106,7 +106,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 16670222695632479546
+              Id: 10698833128597864431
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
@@ -181,7 +181,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 16670222695632479546
+              Id: 10698833128597864431
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
@@ -208,7 +208,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16670222695632479546
+      Id: 10698833128597864431
       Name: "Play Bold"
       PlatformAssetType: 28
       PrimaryAsset {

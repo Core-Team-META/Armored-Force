@@ -1,5 +1,5 @@
 Assets {
-  Id: 2941926965307837466
+  Id: 16379298656650477650
   Name: "Sky Cape Canaveral"
   PlatformAssetType: 5
   TemplateAsset {

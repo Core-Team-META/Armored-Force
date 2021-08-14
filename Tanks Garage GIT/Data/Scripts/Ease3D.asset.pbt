@@ -1,5 +1,5 @@
 Assets {
-  Id: 8527289147325788776
+  Id: 1869291580377666123
   Name: "Ease3D"
   PlatformAssetType: 3
   TextAsset {
@@ -7,14 +7,10 @@ Assets {
       Overrides {
         Name: "cs:EasingEquations"
         AssetReference {
-          Id: 12930008480560670469
+          Id: 17884247334924889425
         }
       }
     }
   }
-  Marketplace {
-    Description: "Ease3D is a utility that allows for both simple and advanced 3D easing/tweening/interpolation! Full customizability to you, the creator!"
-  }
   SerializationVersion: 97
-  DirectlyPublished: true
 }
