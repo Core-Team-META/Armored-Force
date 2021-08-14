@@ -15,8 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5486007910752937774
+        ParentId: 15464489607496022458
         ChildIds: 18363942803922762300
+        ChildIds: 1028733564967927842
         ChildIds: 1459690625576424399
         ChildIds: 11600532836582972050
         Collidable_v2 {
@@ -125,6 +126,12 @@ Assets {
               SubObjectId: 11600532836582972050
             }
           }
+          Overrides {
+            Name: "cs:LeftBehindGroup"
+            ObjectReference {
+              SubObjectId: 1028733564967927842
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -204,6 +211,241 @@ Assets {
         }
       }
       Objects {
+        Id: 1028733564967927842
+        Name: "LeftBehindGroup"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4455667514777151041
+        ChildIds: 9398436376909806868
+        ChildIds: 10881331205719161676
+        ChildIds: 992912565469932425
+        ChildIds: 9568422932315030436
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9398436376909806868
+        Name: "Military Sandbag 01"
+        Transform {
+          Location {
+            X: -515.772156
+            Y: 291.886719
+            Z: 172.446793
+          }
+          Rotation {
+            Pitch: -0.789972782
+            Yaw: 29.4758682
+            Roll: -83.8170853
+          }
+          Scale {
+            X: 1.58579028
+            Y: 1.58579028
+            Z: 1.58579028
+          }
+        }
+        ParentId: 1028733564967927842
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17850784779650210910
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              OverrideMass: true
+              Mass: 500
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10881331205719161676
+        Name: "Military Sandbag 02"
+        Transform {
+          Location {
+            X: -76.2329407
+            Y: -7.97994947
+            Z: 139.255203
+          }
+          Rotation {
+            Pitch: -11.7437382
+            Yaw: 177.000015
+            Roll: -6.34274673
+          }
+          Scale {
+            X: 1.79075
+            Y: 1.79075
+            Z: 1.79075
+          }
+        }
+        ParentId: 1028733564967927842
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5906076877227777947
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              OverrideMass: true
+              Mass: 500
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 992912565469932425
+        Name: "Military Sandbag 02"
+        Transform {
+          Location {
+            X: 142.569122
+            Y: 10.1999102
+            Z: 115.968102
+          }
+          Rotation {
+            Pitch: 4.12740803
+            Yaw: -166.707077
+            Roll: -7.08124113
+          }
+          Scale {
+            X: 1.79075
+            Y: 1.79075
+            Z: 1.79075
+          }
+        }
+        ParentId: 1028733564967927842
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5906076877227777947
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              OverrideMass: true
+              Mass: 500
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9568422932315030436
+        Name: "Military Sandbag 01"
+        Transform {
+          Location {
+            X: 329.279022
+            Y: 85.0545349
+            Z: 220.509842
+          }
+          Rotation {
+            Pitch: 4.58035898
+            Yaw: 111.775169
+            Roll: -139.045517
+          }
+          Scale {
+            X: 1.46286881
+            Y: 1.46286881
+            Z: 1.46286881
+          }
+        }
+        ParentId: 1028733564967927842
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17850784779650210910
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              OverrideMass: true
+              Mass: 500
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 1459690625576424399
         Name: "DebrisGroup"
         Transform {
@@ -221,7 +463,6 @@ Assets {
           }
         }
         ParentId: 4455667514777151041
-        ChildIds: 9398436376909806868
         ChildIds: 1358190391205238664
         ChildIds: 14730433533240659920
         ChildIds: 8948495012808200381
@@ -229,11 +470,8 @@ Assets {
         ChildIds: 8631622214737414581
         ChildIds: 7351989364873707696
         ChildIds: 7995815423287303840
-        ChildIds: 10881331205719161676
         ChildIds: 12312035119040200440
         ChildIds: 7167252974457857926
-        ChildIds: 992912565469932425
-        ChildIds: 9568422932315030436
         ChildIds: 10396260244363450997
         ChildIds: 4793030528138304397
         Collidable_v2 {
@@ -247,52 +485,6 @@ Assets {
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 9398436376909806868
-        Name: "Military Sandbag 01"
-        Transform {
-          Location {
-            X: 920.928
-            Y: -291.887329
-            Z: 172.446899
-          }
-          Rotation {
-            Pitch: -0.789978
-            Yaw: -150.524139
-            Roll: -83.8171082
-          }
-          Scale {
-            X: 1.58579028
-            Y: 1.58579028
-            Z: 1.58579028
-          }
-        }
-        ParentId: 1459690625576424399
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17850784779650210910
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -322,7 +514,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -332,9 +524,10 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
+              OverrideMass: true
+              Mass: 500
             }
             BoundsScale: 1
           }
@@ -374,7 +567,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -384,9 +577,10 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
+              OverrideMass: true
+              Mass: 500
             }
             BoundsScale: 1
           }
@@ -418,7 +612,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -433,7 +627,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -468,7 +663,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -483,7 +678,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -518,7 +714,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -533,7 +729,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -568,7 +765,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -583,7 +780,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -618,7 +816,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -633,57 +831,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 10881331205719161676
-        Name: "Military Sandbag 02"
-        Transform {
-          Location {
-            X: 481.388
-            Y: 7.9798584
-            Z: 139.255249
-          }
-          Rotation {
-            Pitch: -11.7437439
-            Yaw: -3
-            Roll: -6.34274292
-          }
-          Scale {
-            X: 1.79075
-            Y: 1.79075
-            Z: 1.79075
-          }
-        }
-        ParentId: 1459690625576424399
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5906076877227777947
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -718,7 +867,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -733,7 +882,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -768,7 +918,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -783,107 +933,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 992912565469932425
-        Name: "Military Sandbag 02"
-        Transform {
-          Location {
-            X: 262.585449
-            Y: -10.2005005
-            Z: 115.96814
-          }
-          Rotation {
-            Pitch: 4.12740803
-            Yaw: 13.2928667
-            Roll: -7.08123779
-          }
-          Scale {
-            X: 1.79075
-            Y: 1.79075
-            Z: 1.79075
-          }
-        }
-        ParentId: 1459690625576424399
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5906076877227777947
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
+              OverrideMass: true
               Mass: 500
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 9568422932315030436
-        Name: "Military Sandbag 01"
-        Transform {
-          Location {
-            X: 75.8754883
-            Y: -85.0554657
-            Z: 220.509888
-          }
-          Rotation {
-            Pitch: 4.58035898
-            Yaw: -68.2247925
-            Roll: -139.045547
-          }
-          Scale {
-            X: 1.46286881
-            Y: 1.46286881
-            Z: 1.46286881
-          }
-        }
-        ParentId: 1459690625576424399
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17850784779650210910
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -918,7 +969,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -933,7 +984,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -968,7 +1020,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -983,7 +1035,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -1054,7 +1107,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1069,7 +1122,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -1112,7 +1166,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -1122,9 +1176,10 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
+              OverrideMass: true
+              Mass: 500
             }
             BoundsScale: 1
           }
@@ -1158,7 +1213,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1173,7 +1228,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -1208,7 +1264,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1223,7 +1279,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -1258,7 +1315,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1273,7 +1330,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -1308,7 +1366,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1323,7 +1381,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -1358,7 +1417,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1373,7 +1432,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1
@@ -1408,7 +1468,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -1423,7 +1483,8 @@ Assets {
           }
           StaticMesh {
             Physics {
-              Mass: 100
+              OverrideMass: true
+              Mass: 500
               LinearDamping: 0.01
             }
             BoundsScale: 1

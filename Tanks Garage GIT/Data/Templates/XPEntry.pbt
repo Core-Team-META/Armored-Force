@@ -108,7 +108,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 16670222695632479546
+              Id: 10698833128597864431
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
@@ -185,7 +185,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 16670222695632479546
+              Id: 10698833128597864431
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
@@ -235,7 +235,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -313,7 +313,7 @@ Assets {
           }
           Image {
             Brush {
-              Id: 15613631792190449472
+              Id: 11677541148788115718
             }
             Color {
               R: 0.78
@@ -399,7 +399,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 16670222695632479546
+              Id: 10698833128597864431
             }
             VerticalJustification {
               Value: "mc:everticaljustification:center"
@@ -431,7 +431,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16670222695632479546
+      Id: 10698833128597864431
       Name: "Play Bold"
       PlatformAssetType: 28
       PrimaryAsset {
@@ -440,7 +440,7 @@ Assets {
       }
     }
     Assets {
-      Id: 15613631792190449472
+      Id: 11677541148788115718
       Name: "Icon Tank"
       PlatformAssetType: 9
       PrimaryAsset {

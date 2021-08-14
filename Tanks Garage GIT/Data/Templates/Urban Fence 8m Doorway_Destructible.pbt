@@ -26,7 +26,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -624,15 +624,6 @@ Assets {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
               Id: 12224679477727788171
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 0.636424
-              B: 0.100000024
-              A: 1
             }
           }
         }

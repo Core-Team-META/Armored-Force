@@ -278,7 +278,7 @@ Assets {
             }
             AutoWrapText: true
             Font {
-              Id: 8088145951334388726
+              Id: 2044747135125227812
             }
           }
           AnchorLayout {
@@ -315,7 +315,7 @@ Assets {
       }
     }
     Assets {
-      Id: 8088145951334388726
+      Id: 2044747135125227812
       Name: "Play"
       PlatformAssetType: 28
       PrimaryAsset {

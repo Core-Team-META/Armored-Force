@@ -30,19 +30,19 @@ function OnPlayerJoined(player)
 
 	--print("Player Joined " .. player.name)
 	
-	--local playerData = Storage.GetPlayerData(player)
+	local playerData = Storage.GetPlayerData(player)
 	--UTIL_API.TablePrint(playerData)
 	--print("Storage Retrieved")
-	--[[
+
 	if type(playerData.resources) ~= "table" then
 		playerData.resources = {}
 	end
-	]]
+	
 	if(player:GetResource(CONSTANTS_API.RANK_NAME) <= 0) then
 		player:SetResource(CONSTANTS_API.RANK_NAME, 1)
 	end
 
-	
+
 	-- Uncomment to reset tutorial progress
 	--player:SetResource("TutorialProgress", 0)
 		
@@ -53,8 +53,6 @@ function OnPlayerJoined(player)
 	--print("Loading shared storage")
 	LoadAndSetDataFromSharedStorage(player)
 
-	--player.resourceChangedEvent:Connect(OnResourceChanged)
-	
 	-- DEBUG: Print out storage
 
 	--print("-----PRINTING SHARED STORAGE-----")
@@ -68,11 +66,6 @@ end
 
 function OnPlayerLeft(player)
 	SavePlayerDataIntoSharedStorage(player)
-	for i, entry in ipairs(DATA_TRANSFER:GetChildren()) do
-		if entry:GetCustomProperty("OwnerId") == player.id then
-			entry:Destroy()
-		end
-	end
 end
 
 -- Update shared storage, or give it default values if the data doesn't exist
@@ -80,7 +73,7 @@ function CheckAndSetSharedStorageDefault(player)
 	local playerSharedStorage = Storage.GetSharedPlayerData(PLAYER_SHARED_STORAGE, player)
 
 	-- DEBUG: Clear shared storage
-	--playerSharedStorage = {}
+	-- playerSharedStorage = {}
 			
 	-- DEBUG: Reset progression to force the use of SetNewPlayerProgression(playerSharedStorage) function
 	--playerSharedStorage[CONSTANTS_API.PROGRESS.DATA] = nil
@@ -267,18 +260,25 @@ function SetNewPlayerProgression(playerSharedStorage)
 		tankEntry = ""
 	
 		if i < 10 then
+		
 			tankEntry = "0" .. tostring(i)
+			
 		else 
+		
 			tankEntry = tostring(i)
+			
 		end
 		
 		
 		-- players get tanks 1 and 18 (M3 and Panzer 3) as starter tanks.
 		-- Currently set 
 		if i ~= 1 and i ~= 18 and i ~= CONSTANTS_API.GetNumberOfTanks() then
+		
 			tankEntry = tankEntry .. "|0|0|0|0|0~"
+			
 		elseif i == 1 or i == 18 then
-			tankEntry = tankEntry .. "|1|1|0|0|0~"
+		
+			tankEntry = tankEntry .. "|1|1|2|2|2~"
 			
 		-- DEBUG: Add elseif statements to seed more tanks: i = tank id.
 		-- (requires forced use of SetNewPlayerProgression(playerSharedStorage) function)
@@ -289,7 +289,9 @@ function SetNewPlayerProgression(playerSharedStorage)
 		]]--
 			
 		else 
+		
 			tankEntry = tankEntry .. "|0|0|0|0|0"
+			
 		end
 		
 		
@@ -301,7 +303,7 @@ function SetNewPlayerProgression(playerSharedStorage)
 	
 end
 
-function SetTankProgressionDataForServer(dataString, player)	
+function SetTankProgressionDataForServer(dataString, player)
 	--print("Saving tank data on server. Data string: " .. dataString)
    local tankProgressionTable = UTIL_API.TechTreeConvertToTable(dataString)
    -- print("Finished converting string into table.")
@@ -406,4 +408,4 @@ end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
---Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)
+Events.ConnectForPlayer("CHANGE_EQUIPPED_TANK", ChangeEquippedTank, tankId)

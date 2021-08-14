@@ -55,19 +55,16 @@ Assets {
             X: 50
             Z: 60
           }
-          MaxSpeed: 2350
-          AccelerationRate: 400
+          MaxSpeed: 3750
+          AccelerationRate: 3900
           DecelerationRate: 15
           BrakeStrength: 15
-          TireFriction: 10
+          TireFriction: 2
           CenterOfMassOFfset {
             Z: 20
           }
-          GravityScale: 1
+          GravityScale: 2.6
           CoastBrakeStrength: 10
-          DamageSettings {
-            StartImmortal: true
-          }
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533
@@ -206,7 +203,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8748212014664122890
+              Id: 818783603953564962
             }
           }
           Overrides {
@@ -284,7 +281,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9549271738234425470
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -361,7 +358,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9549271738234425470
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -397,7 +394,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8748212014664122890
+              Id: 818783603953564962
             }
           }
           Overrides {
@@ -528,7 +525,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8748212014664122890
+              Id: 818783603953564962
             }
           }
           Overrides {
@@ -605,7 +602,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9549271738234425470
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -705,7 +702,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8748212014664122890
+              Id: 818783603953564962
             }
           }
           Overrides {
@@ -782,7 +779,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 14565993562237882178
+            Id: 9549271738234425470
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -809,7 +806,7 @@ Assets {
       }
     }
     Assets {
-      Id: 8748212014664122890
+      Id: 818783603953564962
       Name: "Metal Painted Old 01"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -818,7 +815,7 @@ Assets {
       }
     }
     Assets {
-      Id: 14565993562237882178
+      Id: 9549271738234425470
       Name: "Tire Worn"
       PlatformAssetType: 1
       PrimaryAsset {

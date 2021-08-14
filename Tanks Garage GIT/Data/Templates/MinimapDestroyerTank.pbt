@@ -230,7 +230,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 11915810387846109435
+              Id: 7217348999018308666
             }
             Color {
               G: 0.0927152
@@ -571,7 +571,7 @@ Assets {
       }
     }
     Assets {
-      Id: 11915810387846109435
+      Id: 7217348999018308666
       Name: "Center Arrow 008 Wedge"
       PlatformAssetType: 9
       PrimaryAsset {

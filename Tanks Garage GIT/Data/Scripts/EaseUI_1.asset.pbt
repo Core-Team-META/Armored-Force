@@ -1,13 +1,13 @@
 Assets {
-  Id: 1458786537451628614
-  Name: "EaseUI"
+  Id: 12045507068401926921
+  Name: "EaseUI_1"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:EasingEquations"
         AssetReference {
-          Id: 14759413974431026962
+          Id: 4754688724466777297
         }
       }
     }

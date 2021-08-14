@@ -5,9 +5,6 @@ local Constants_API = require(script:GetCustomProperty("MetaAbilityProgressionCo
 -- Objects
 local DATA_TRANSFER = script:GetCustomProperty("DataTransfer"):WaitForObject()
 local TANK_CONTENTS = script:GetCustomProperty("TankContents"):WaitForObject()
-local RANK_PRIMARY = script:GetCustomProperty("RANK_PRIMARY"):WaitForObject()
-local RANK_SECONDARY = script:GetCustomProperty("RANK_SECONDARY"):WaitForObject()
-local CHOSEN_TANKNAME = script:GetCustomProperty("CHOSEN_TANKNAME"):WaitForObject()
 
 -- Local properties
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -19,8 +16,6 @@ local DATA_CUSTOM_PROPERTY = "Data"
 -- Function to retrieve the tech tree progress from the data transfer object
 function RetrieveData()
 
-	print("Checking for player data")
-
 	while true do
 	
 		Task.Wait(0.1)
@@ -29,7 +24,7 @@ function RetrieveData()
 	        if(child:GetCustomProperty(OWNER_ID_CUSTOM_PROPERTY) == LOCAL_PLAYER.id) then
 	        	
 	        	-- DEBUG
-	        	print("Got data string: " .. child:GetCustomProperty(DATA_CUSTOM_PROPERTY))
+	        	--print("Got data string: " .. child:GetCustomProperty(DATA_CUSTOM_PROPERTY))
 	        
 	        	--print("RETRIEVING DATA FROM OBJECT TRANSFER")
 	            -- Build tank list based off string data
@@ -65,18 +60,12 @@ function RetrieveData()
 	            end 
 	            
 	            LOCAL_PLAYER.clientUserData.techTreeProgress = tankEntryCollection
-				Events.Broadcast("LoadQuickSelect")
 	
 	            -- DEBUG print tank entries           
 	            --UTIL_API.TablePrint(LOCAL_PLAYER.clientUserData.techTreeProgress)
 	            
 	            Events.Broadcast("TankClientDataSet")
 	            
-	            -- Set the level/rank
-	            RANK_PRIMARY.text = UTIL_API.GetRankData(LOCAL_PLAYER)
-	            RANK_SECONDARY.text = RANK_PRIMARY.text
-	            -- Using this text box as an XP display for now
-	            CHOSEN_TANKNAME.text = "TOTAL XP: " .. tostring(UTIL_API.GetXPValue(LOCAL_PLAYER)) .. " / " .. tostring(UTIL_API.GetXPToNextRank(LOCAL_PLAYER))
 	            return
 	        end
 	    end

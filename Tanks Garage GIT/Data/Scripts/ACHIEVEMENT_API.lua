@@ -390,6 +390,7 @@ end
 --@param object player
 function API.LoadAchievementStorage(player, useSharedKey, sharedKeyNetRef)
     local data = {}
+    useSharedKey = true
     if not useSharedKey then
         data = Storage.GetPlayerData(player)
     else
@@ -407,6 +408,7 @@ end
 
 --@param object player
 function API.SaveAchievementStorage(player, useSharedKey, sharedKeyNetRef)
+    useSharedKey = true
     local data = {}
     if not useSharedKey then
         data = Storage.GetPlayerData(player)

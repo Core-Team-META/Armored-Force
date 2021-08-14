@@ -66,7 +66,11 @@ function OnPlayerJoined(player)
     end
 
     playerDailyTbl[player.id] = dailyTbl
-    player:SetPrivateNetworkedData("WinOfTheDay", dailyTbl)
+    
+    if Game.GetCurrentSceneName() == "Main" then
+    	player:SetPrivateNetworkedData("WinOfTheDay", dailyTbl)
+    end
+
     SetDailyBonusStatus(player)
 end
 

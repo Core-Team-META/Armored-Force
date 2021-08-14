@@ -7,6 +7,9 @@ local recoilRockingMultiplier = tankControllerServer:GetCustomProperty("RecoilRo
 local recoilAmount = tankControllerServer:GetCustomProperty("RecoilAmount")
 local wheelSpeedModifier = tankControllerServer:GetCustomProperty("WheelSpeedModifier")
 
+-- Other asset refs
+local extinguishVFX = script:GetCustomProperty("ExtinguishVFX")
+
 -- Object References
 local adjustmentPoint = nil
 
@@ -36,6 +39,8 @@ local driver = nil
 
 -- Additional Local Variables
 local tankSet = false
+local tankReady = false
+local speedMultiplier = 0
 local saluteOverride = false
 local animateListener = nil
 local destroyedListener = nil
@@ -49,7 +54,9 @@ end
 
 function CheckTankReady()
 
-	if not tankControllerServer:GetCustomProperty("TankReady") then
+	tankReady = tankControllerServer:GetCustomProperty("TankReady")
+
+	if not tankReady then
 		return
 	end
 	
@@ -69,6 +76,8 @@ function CheckTankReady()
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
 	
+	Task.Wait(1)
+	
 	treadsLeft = tankBodyClient:FindDescendantByName("TreadsLeft")
 	treadsRight = tankBodyClient:FindDescendantByName("TreadsRight")
 	
@@ -78,7 +87,7 @@ function CheckTankReady()
 	turretServer = hitbox:FindDescendantByName("Turret")
 	cannonServer = hitbox:FindDescendantByName("Cannon")
 
-	adjustmentPoint = tankBodyClient:FindDescendantByName("AdjustmentPoint")	
+	adjustmentPoint = tankBodyClient:FindDescendantByName("AdjustmentPoint")
 	turretClient = tankBodyClient:FindDescendantByName("Turret")
 	cannonClient = tankBodyClient:FindDescendantByName("Cannon")
 	barrelClient = tankBodyClient:FindDescendantByName("Barrel")
@@ -121,10 +130,13 @@ function SetClientData()
 	
 	driver.clientUserData.currentTankData.chassis = tankBodyServer
 	driver.clientUserData.currentTankData.skin = tankBodyClient
+	driver.clientUserData.currentTankData.enemyOutline = tankBodyClient:FindDescendantByName("EnemyOutline")
+	driver.clientUserData.currentTankData.allyOutline = tankBodyClient:FindDescendantByName("AllyOutline")
 	driver.clientUserData.currentTankData.reloadSFX = tankBodyClient:FindDescendantByName("ReloadSFX")
 	driver.clientUserData.currentTankData.type = tankControllerServer:GetCustomProperty("Type")
 	driver.clientUserData.currentTankData.id = tankControllerServer:GetCustomProperty("Identifier")
 	driver.clientUserData.currentTankData.name = tankControllerServer:GetCustomProperty("Name")
+	driver.clientUserData.currentTankData.teir = tankControllerServer:GetCustomProperty("TierValue")
 	driver.clientUserData.currentTankData.viewRange = tankControllerServer:GetCustomProperty("ViewRange")
 	driver.clientUserData.currentTankData.controlScript = script
 	driver.clientUserData.currentTankData.serverControlScript = tankControllerServer
@@ -158,7 +170,11 @@ function OnTankStateChanged(controllerServer, property)
 				i:Play()
 			end
 		else 
+			if not Object.IsValid(fireState) then return end
+			
 			fireState.visibility = Visibility.FORCE_OFF
+
+			World.SpawnAsset(extinguishVFX, {parent = fireState})
 			
 			for _, i in ipairs(fireState:FindDescendantsByType("SFX")) do
 				i:Stop()
@@ -172,6 +188,10 @@ function OnTankStateChanged(controllerServer, property)
 			barrelDamageState.visibility = Visibility.FORCE_OFF
 			barrelClient.visibility = Visibility.INHERIT
 		end
+	elseif property == "TankReady" then
+		tankReady = tankControllerServer:GetCustomProperty(property)
+	elseif property == "WheelSpeedMultiplier" then
+	 	wheelSpeedModifier = tankControllerServer:GetCustomProperty(property)
 	end
 
 end
@@ -221,8 +241,6 @@ function FiringAnimation(player, reloadTime)
 	
 	if Object.IsValid(barrelClient) then
 		barrelClient:MoveTo(Vector3.New(-recoilAmount, 0, 0), 0.12, true)
-	else
-		barrelClient = tankBodyClient:FindDescendantByName("Barrel")
 	end
 	
 	Task.Wait(0.13)
@@ -242,6 +260,9 @@ function PerformSalute()
 	local gameStateManager = World.FindObjectByName("GAMESTATE_MainGameStateManagerServer")
 	
 	if not Object.IsValid(gameStateManager) then
+		return
+	elseif not Object.IsValid(tankControllerServer) then
+		print("Invalid controller server")
 		return
 	end
 	
@@ -266,10 +287,20 @@ function PerformSalute()
 		
 		Task.Wait()
 	end
-	
+		
 	tankBodyClient = World.SpawnAsset(GetSkin(owner), {parent = script})
 	tankBodyClient:SetPosition(Vector3.ZERO)
 	tankBodyClient:SetRotation(Rotation.ZERO)
+	
+	for _, s in ipairs(tankBodyClient:FindDescendantsByType("Audio")) do
+		s:Stop()
+	end
+	
+	owner.clientUserData.currentTankData = nil
+	owner.clientUserData.garageModel = {}
+	owner.clientUserData.garageModel.id = tankControllerServer:GetCustomProperty("Identifier")
+	owner.clientUserData.garageModel.reference = tankBodyClient
+	Events.Broadcast("INITIALIZE_SKIN", owner)
 	
 	local tankId = tankControllerServer:GetCustomProperty("Identifier")
 	
@@ -324,7 +355,6 @@ function SetWheelSpeed()
 	
 	local leftSpeedMultiplier = 1
 	local rightSpeedMultiplier = 1
-	local speedMultiplier = tankControllerServer:GetCustomProperty("WheelSpeedMultiplier")
 		
 	local movementSpeed = tankBodyServer:GetVelocity().size * speedMultiplier
 	local rotationSpeed = tankBodyServer:GetAngularVelocity().z
@@ -386,7 +416,7 @@ function Tick()
 		return
 	end
 	
-	if not tankControllerServer:GetCustomProperty("TankReady") then
+	if not tankReady then
 		if Object.IsValid(tankBodyClient) then
 			tankBodyClient:Destroy()
 		end
@@ -396,18 +426,10 @@ function Tick()
 
 	if Object.IsValid(turretClient) and Object.IsValid(turretServer) then
 		turretClient:RotateTo(turretServer:GetRotation(), 0.1, true)
-	else 
-		local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
-		turretServer = hitbox:FindDescendantByName("Turret")
-		turretClient = tankBodyClient:FindDescendantByName("Turret")
 	end
 
 	if Object.IsValid(cannonClient) and Object.IsValid(cannonServer) then
 		cannonClient:RotateTo(cannonServer:GetRotation(), 0.1, true)
-	else 
-		local hitbox = tankControllerServer:GetCustomProperty("HitboxReference"):WaitForObject()
-		cannonServer = hitbox:FindDescendantByName("Cannon")
-		cannonClient = tankBodyClient:FindDescendantByName("Cannon")
 	end
 	
 	SetWheelSpeed()

@@ -3,7 +3,7 @@ local ScreenObject = require(script:GetCustomProperty("ScreenObject"))
 local SCREEN_OBJECT_GROUP = script:GetCustomProperty("ScreenObjectGroup"):WaitForObject()
 local MINIMAP_PANEL = script:GetCustomProperty("MiniMapPanel"):WaitForObject()
 local MINIMAP_VISIBILITY_SOURCE = script:GetCustomProperty("MinimapVisibilitySource"):WaitForObject()
-local PositionOffset = script:GetCustomProperty("PositionOffset")
+
 
 Task.Wait()
 
@@ -28,7 +28,8 @@ function Tick()
 	local camera = Game.GetLocalPlayer():GetActiveCamera()
 	local fov = camera and camera.fieldOfView or 90
         local screenSize = UI.GetScreenSize()
-			        local hasChanged = false
+
+        local hasChanged = false
         if (lastScreenSize - screenSize).sizeSquared > 0 then
                 lastScreenSize = screenSize
                 hasChanged = true
@@ -42,8 +43,7 @@ function Tick()
         if hasChanged then
                 screenObject:UpdatePosition(
                         {
-                                pixelPosX = MINIMAP_PANEL.x + PositionOffset.x,
-                                pixelPosY = MINIMAP_PANEL.y + PositionOffset.y
+                                pixelPosX = lastScreenSize.x + MINIMAP_PANEL.x
                         }
                 )
         end

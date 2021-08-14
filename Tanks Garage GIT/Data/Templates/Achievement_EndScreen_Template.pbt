@@ -228,7 +228,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               A: 0.836
@@ -286,7 +286,7 @@ Assets {
           UseParentWidth: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               A: 0.836
@@ -343,7 +343,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               A: 0.836
@@ -400,7 +400,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 1814707273787853473
+              Id: 4504686085818425438
             }
             Color {
               A: 0.836
@@ -513,7 +513,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 622433789355555801
+              Id: 4504686085818425438
             }
             Color {
               G: 0.00121854211
@@ -2527,7 +2527,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 622433789355555801
+              Id: 4504686085818425438
             }
             Color {
               G: 0.00121854211
@@ -2589,7 +2589,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 622433789355555801
+              Id: 4504686085818425438
             }
             Color {
               R: 0.115010642
@@ -3760,16 +3760,7 @@ Assets {
       }
     }
     Assets {
-      Id: 1814707273787853473
-      Name: "BG Flat 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
-      }
-    }
-    Assets {
-      Id: 622433789355555801
+      Id: 4504686085818425438
       Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {

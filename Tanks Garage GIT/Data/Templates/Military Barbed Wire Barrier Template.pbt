@@ -1,5 +1,5 @@
 Assets {
-  Id: 2539175676505313270
+  Id: 5512120257331929090
   Name: "Military Barbed Wire Barrier Template"
   PlatformAssetType: 5
   TemplateAsset {

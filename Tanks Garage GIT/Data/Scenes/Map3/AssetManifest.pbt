@@ -12,28 +12,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17306415880111730176
-  Name: "Skins1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8bfb4cd27f58473faa1c7b748b0c5757"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
-  }
-}
-Assets {
   Id: 14345407072251931141
   Name: "SilverPack2"
   PlatformAssetType: 24
@@ -60,34 +38,16 @@ Assets {
   }
 }
 Assets {
-  Id: 13941087976310581814
-  Name: "StorageGarage"
+  Id: 12815338606393549629
+  Name: "Achievements"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "cfea81b09e25439fb0ab189c92bf9010"
+      Key: "2fd46d04db664f6b85721c3769840dd6"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
-  }
-}
-Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
   }
 }
 Assets {
@@ -143,34 +103,21 @@ Assets {
   }
 }
 Assets {
-  Id: 7970651784764051329
-  Name: "PlayerSharedStorage"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "8cd7b4910d07447a8fac4ca5a361a105"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
-  Id: 7887238662729938253
-  Name: "Sky Dome"
-  PlatformAssetType: 6
+  Id: 7490518804697783111
+  Name: "Grass Short"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Sky"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_002"
   }
 }
 Assets {
-  Id: 5537260831227292255
-  Name: "Tanks1"
+  Id: 6445891433040706212
+  Name: "Tanks"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "27405ddc7ce7461ea01c64acbbe37e9d"
+      Key: "b70b722563b946ccaa2bd95c1385ab74"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -178,12 +125,25 @@ Assets {
   }
 }
 Assets {
-  Id: 5042189428014108586
-  Name: "Leaderboards1"
+  Id: 6059846629728132881
+  Name: "Skins"
   PlatformAssetType: 23
   NetReferenceAsset {
     NetReference {
-      Key: "5054e091c2a04962af336edce485ef05"
+      Key: "fe905fe344da45fbbc78301c55f98aea"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
+  Id: 5542400898688887448
+  Name: "Leaderboards"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f8e410dcfa8d425f9ab5f5a170ed7766"
       Type {
         Value: "mc:enetreferencetype:sharedpersistence"
       }
@@ -238,19 +198,6 @@ Assets {
       Key: "1876b0cd2220432ba9aaadddd077f041"
       Type {
         Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 2934587775384050047
-  Name: "Achievements1"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "03cfd5130aba46b5818a37f60dbe7fd1"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
       }
     }
   }

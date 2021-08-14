@@ -153,7 +153,7 @@ Assets {
           UseParentHeight: true
           Image {
             Brush {
-              Id: 10258515349694145501
+              Id: 7946634531565250888
             }
             Color {
               R: 0.0437350273
@@ -891,7 +891,7 @@ Assets {
       }
     }
     Assets {
-      Id: 10258515349694145501
+      Id: 7946634531565250888
       Name: "BG Flat 002"
       PlatformAssetType: 9
       PrimaryAsset {

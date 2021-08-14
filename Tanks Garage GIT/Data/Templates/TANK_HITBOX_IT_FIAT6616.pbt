@@ -684,7 +684,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3708065447762635341
+            Id: 7672894170880533820
           }
           Teams {
           }
@@ -738,7 +738,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3708065447762635341
+            Id: 7672894170880533820
           }
           Teams {
           }
@@ -1178,8 +1178,8 @@ Assets {
         Name: "Muzzle"
         Transform {
           Location {
-            X: 464.475494
-            Z: -4.41217041
+            X: 142.611862
+            Z: -4.41217566
           }
           Rotation {
           }
@@ -1243,7 +1243,7 @@ Assets {
       }
     }
     Assets {
-      Id: 3708065447762635341
+      Id: 7672894170880533820
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {

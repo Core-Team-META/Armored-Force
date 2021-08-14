@@ -53,20 +53,17 @@ Assets {
             X: -70
             Z: 70
           }
-          MaxSpeed: 1475
-          AccelerationRate: 400
+          MaxSpeed: 1175
+          AccelerationRate: 1900
           DecelerationRate: 15
           BrakeStrength: 15
-          TireFriction: 10
+          TireFriction: 2
           CenterOfMassOFfset {
             X: -70
             Z: -20
           }
-          GravityScale: 1
+          GravityScale: 2.2
           CoastBrakeStrength: 10
-          DamageSettings {
-            StartImmortal: true
-          }
           Tank {
             LeftTreadRadius: 70
             LeftTreadWidth: 80
