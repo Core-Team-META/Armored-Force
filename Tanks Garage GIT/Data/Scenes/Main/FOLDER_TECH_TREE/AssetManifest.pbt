@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6774954512318888411
+  Name: "BG Flat 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_33"
+  }
+}
+Assets {
   Id: 5164711776771633793
   Name: "Frame Outlined 001"
   PlatformAssetType: 9
@@ -122,6 +131,33 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
+  Id: 2232822513297089776
+  Name: "Award"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_036"
+  }
+}
+Assets {
+  Id: 1814707273787853473
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 1079957380810258490
+  Name: "BG Flat 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_32"
   }
 }
 Assets {
