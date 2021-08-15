@@ -31,10 +31,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 320
+    Width: 330
     Height: 190
     UIX: 5
-    UIY: -160
+    UIY: -170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -146,10 +146,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 134
+    Width: 140
     Height: 30
-    UIX: 60
-    UIY: -2
+    UIX: 65
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3520,6 +3519,7 @@ Objects {
   Control {
     Width: 120
     Height: 33
+    UIY: 4
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4183,7 +4183,7 @@ Objects {
   Control {
     Width: 180
     Height: 28
-    UIX: 62
+    UIX: 65
     UIY: -5
     RenderTransformPivot {
       Anchor {
@@ -5046,10 +5046,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 134
+    Width: 140
     Height: 30
-    UIX: 60
-    UIY: -2
+    UIX: 65
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8422,6 +8421,7 @@ Objects {
   Control {
     Width: 120
     Height: 33
+    UIY: 4
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9085,7 +9085,7 @@ Objects {
   Control {
     Width: 180
     Height: 28
-    UIX: 62
+    UIX: 65
     UIY: -5
     RenderTransformPivot {
       Anchor {
@@ -9950,10 +9950,9 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 134
+    Width: 140
     Height: 30
-    UIX: 60
-    UIY: -2
+    UIX: 65
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -13326,6 +13325,7 @@ Objects {
   Control {
     Width: 120
     Height: 33
+    UIY: 4
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -13989,7 +13989,7 @@ Objects {
   Control {
     Width: 180
     Height: 28
-    UIX: 62
+    UIX: 65
     UIY: -5
     RenderTransformPivot {
       Anchor {
