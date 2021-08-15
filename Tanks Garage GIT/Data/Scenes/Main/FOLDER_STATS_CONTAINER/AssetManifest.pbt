@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6363796439671062835
+  Name: "Icon Joystick"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Joystick"
+  }
+}
+Assets {
   Id: 6262982467505051120
   Name: "Fantasy Craft Bar 002"
   PlatformAssetType: 9
@@ -203,5 +212,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Gold_002"
+  }
+}
+Assets {
+  Id: 655454214508521122
+  Name: "Emblem 5"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Japan_Icon_018"
   }
 }
