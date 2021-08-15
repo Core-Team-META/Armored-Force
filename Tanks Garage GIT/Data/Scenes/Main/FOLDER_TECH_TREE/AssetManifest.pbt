@@ -8,6 +8,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16622528590838133631
+  Name: "Fantasy Medal 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Medal_002"
+  }
+}
+Assets {
+  Id: 16191173343733875993
+  Name: "Tank"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_001"
+  }
+}
+Assets {
   Id: 14060330023043759337
   Name: "BG Flat 001"
   PlatformAssetType: 9
@@ -80,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7515015531196152948
+  Name: "BG Gradient 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
   Id: 7477507662470043777
   Name: "Fantasy Crown 001"
   PlatformAssetType: 9
@@ -95,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_33"
+  }
+}
+Assets {
+  Id: 6262982467505051120
+  Name: "Fantasy Craft Bar 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Bar_002"
   }
 }
 Assets {
@@ -122,6 +158,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Scifi_Frame_002"
+  }
+}
+Assets {
+  Id: 4325712091908620921
+  Name: "Icon Science"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Science"
+  }
+}
+Assets {
+  Id: 3576362623870181230
+  Name: "Icon Arrow Turn Left"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_ArrowTurnLeft"
   }
 }
 Assets {
