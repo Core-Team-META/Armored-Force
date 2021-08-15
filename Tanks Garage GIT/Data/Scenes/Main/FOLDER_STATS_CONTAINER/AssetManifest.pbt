@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13257658630242510450
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
   Id: 12478180938234886174
   Name: "BG Highlighted 002"
   PlatformAssetType: 9
@@ -143,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4913010023776999523
+  Name: "Baloo 2"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "Baloo2Regular_ref"
+  }
+}
+Assets {
   Id: 4519748528802078203
   Name: "Icon Checkmark"
   PlatformAssetType: 9
@@ -158,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_ArrowTurnLeft"
+  }
+}
+Assets {
+  Id: 2604353830693238371
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
   }
 }
 Assets {

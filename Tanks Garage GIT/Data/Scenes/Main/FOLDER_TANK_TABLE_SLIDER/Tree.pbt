@@ -39,14 +39,12 @@ Objects {
   Control {
     Width: -377
     Height: 165
-    UIX: 383
     UIY: 5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Panel {
       Opacity: 1
