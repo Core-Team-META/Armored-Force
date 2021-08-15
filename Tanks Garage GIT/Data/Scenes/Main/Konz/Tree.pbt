@@ -331,6 +331,7 @@ Objects {
   ChildIds: 11405015858558606637
   ChildIds: 3262312140423125445
   ChildIds: 12147085613248336064
+  ChildIds: 16582034850017915871
   ChildIds: 5675566206839287589
   ChildIds: 6392893587094602772
   ChildIds: 5875887772483104256
@@ -2513,6 +2514,38 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "FOLDER_CONFIRM_TANK_UPGRADE"
+  }
+}
+Objects {
+  Id: 16582034850017915871
+  Name: "FOLDER_UPGRADE_TANK"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15186286892296639228
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "FOLDER_UPGRADE_TANK"
   }
 }
 Objects {

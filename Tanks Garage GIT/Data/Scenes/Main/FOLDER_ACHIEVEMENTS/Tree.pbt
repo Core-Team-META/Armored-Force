@@ -34,25 +34,25 @@ Objects {
   Control {
     Width: 1371
     Height: 918
-    UIX: 500
-    UIY: 136.000015
+    UIY: 150
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     Panel {
       Opacity: 1
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:topcenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -6974,7 +6974,7 @@ Objects {
   Control {
     Width: 100
     Height: 580
-    UIY: 347
+    UIY: 335
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

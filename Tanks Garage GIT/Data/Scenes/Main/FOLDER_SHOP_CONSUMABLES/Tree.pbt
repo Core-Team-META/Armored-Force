@@ -31,8 +31,8 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 330
-    Height: 190
+    Width: 990
+    Height: 60
     UIX: 5
     UIY: -170
     RenderTransformPivot {
@@ -89,14 +89,14 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 330
+    Width: 200
     Height: 60
+    UIX: 400
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
     Panel {
       Opacity: 1
     }
@@ -146,7 +146,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 140
+    Width: 120
     Height: 30
     UIX: 65
     RenderTransformPivot {
@@ -160,12 +160,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomleft"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomleft"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -279,7 +279,7 @@ Objects {
   Control {
     Width: 25
     Height: 25
-    UIX: 31.5378838
+    UIX: 15
     UIY: -2
     RenderTransformPivot {
       Anchor {
@@ -3518,7 +3518,8 @@ Objects {
   }
   Control {
     Width: 120
-    Height: 33
+    Height: 30
+    UIX: 65
     UIY: 4
     RenderTransformPivot {
       Anchor {
@@ -3531,12 +3532,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:bottomleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:bottomleft"
         }
       }
     }
@@ -4183,8 +4184,7 @@ Objects {
   Control {
     Width: 180
     Height: 28
-    UIX: 65
-    UIY: -5
+    UIY: -32
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4988,15 +4988,14 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 330
+    Width: 200
     Height: 60
-    UIY: -65
+    UIX: 200
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
     Panel {
       Opacity: 1
     }
@@ -5046,7 +5045,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 140
+    Width: 120
     Height: 30
     UIX: 65
     RenderTransformPivot {
@@ -5060,12 +5059,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomleft"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomleft"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -5179,7 +5178,7 @@ Objects {
   Control {
     Width: 25
     Height: 25
-    UIX: 31.5378838
+    UIX: 15
     UIY: -2
     RenderTransformPivot {
       Anchor {
@@ -8420,7 +8419,8 @@ Objects {
   }
   Control {
     Width: 120
-    Height: 33
+    Height: 30
+    UIX: 65
     UIY: 4
     RenderTransformPivot {
       Anchor {
@@ -8433,12 +8433,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:bottomleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:bottomleft"
         }
       }
     }
@@ -9085,8 +9085,7 @@ Objects {
   Control {
     Width: 180
     Height: 28
-    UIX: 65
-    UIY: -5
+    UIY: -32
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -9892,15 +9891,13 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 330
+    Width: 200
     Height: 60
-    UIY: -130
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
     Panel {
       Opacity: 1
     }
@@ -9950,7 +9947,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 140
+    Width: 120
     Height: 30
     UIX: 65
     RenderTransformPivot {
@@ -9964,12 +9961,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomleft"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomleft"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -10083,7 +10080,7 @@ Objects {
   Control {
     Width: 25
     Height: 25
-    UIX: 31.5378838
+    UIX: 15
     UIY: -2
     RenderTransformPivot {
       Anchor {
@@ -13324,7 +13321,8 @@ Objects {
   }
   Control {
     Width: 120
-    Height: 33
+    Height: 30
+    UIX: 65
     UIY: 4
     RenderTransformPivot {
       Anchor {
@@ -13337,12 +13335,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:bottomleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:bottomleft"
         }
       }
     }
@@ -13989,8 +13987,7 @@ Objects {
   Control {
     Width: 180
     Height: 28
-    UIX: 65
-    UIY: -5
+    UIY: -32
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
