@@ -16,6 +16,8 @@ Assets {
           }
         }
         ParentId: 6663332593545662611
+        ChildIds: 651023007490118949
+        ChildIds: 1737409106147976409
         ChildIds: 6714174264349853875
         ChildIds: 7162035646453809586
         ChildIds: 383576239608892644
@@ -38,8 +40,7 @@ Assets {
         Control {
           Width: 50
           Height: 25
-          UIX: -45.1357727
-          UIY: -38.3256073
+          UIY: 40
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -47,6 +48,145 @@ Assets {
           }
           Panel {
             Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 651023007490118949
+        Name: "FlagUI_Background"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4172775757534723376
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 4
+          Height: 4
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              R: 0.112483576
+              G: 0.231
+              B: 0.0030028238
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 0.3
+            }
+            ShadowOffset {
+              Y: 2
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1737409106147976409
+        Name: "FlagUI_Background_Dark"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4172775757534723376
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 2
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 0.3
+            }
+            ShadowOffset {
+              Y: 2
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -113,11 +253,11 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 0.3
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
-              X: 2
-              Y: 2.8
             }
           }
           AnchorLayout {
@@ -184,7 +324,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -253,7 +395,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -321,7 +465,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -391,7 +537,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -460,7 +608,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -533,7 +683,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -605,7 +757,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -673,7 +827,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -741,7 +897,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -809,7 +967,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -881,7 +1041,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -949,7 +1111,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1017,7 +1181,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1085,7 +1251,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1157,7 +1325,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1225,7 +1395,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1293,7 +1465,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1361,7 +1535,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1433,7 +1609,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1501,7 +1679,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1569,7 +1749,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1637,7 +1819,9 @@ Assets {
             TeamSettings {
             }
             ShadowColor {
-              A: 1
+              R: 1
+              G: 1
+              B: 1
             }
             ShadowOffset {
             }
@@ -1680,5 +1864,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 96
+  SerializationVersion: 97
 }
