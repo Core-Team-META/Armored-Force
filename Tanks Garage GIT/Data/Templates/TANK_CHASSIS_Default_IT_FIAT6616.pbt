@@ -65,6 +65,9 @@ Assets {
           }
           GravityScale: 2.6
           CoastBrakeStrength: 10
+          DamageSettings {
+            StartImmortal: true
+          }
           FourWheeledVehicle {
             FrontLeftWheel {
               SubObjectId: 18055651440486371533

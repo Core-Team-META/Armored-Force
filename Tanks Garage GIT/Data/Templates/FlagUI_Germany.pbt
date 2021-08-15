@@ -15,7 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6663332593545662611
+        ParentId: 17708280062514395202
+        ChildIds: 11561937713318478748
+        ChildIds: 5369403313938610980
         ChildIds: 3202901143257570968
         ChildIds: 13948736221555355189
         ChildIds: 12174601364993419852
@@ -34,8 +36,7 @@ Assets {
         Control {
           Width: 50
           Height: 25
-          UIX: -45.1357727
-          UIY: -38.3256073
+          UIY: 40
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -43,6 +44,145 @@ Assets {
           }
           Panel {
             Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11561937713318478748
+        Name: "FlagUI_Background"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5636664143155333217
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 4
+          Height: 4
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              R: 0.112483576
+              G: 0.231
+              B: 0.0030028238
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 0.3
+            }
+            ShadowOffset {
+              Y: 2
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5369403313938610980
+        Name: "FlagUI_Background_Dark"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5636664143155333217
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 2
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+            ShadowColor {
+              A: 0.3
+            }
+            ShadowOffset {
+              Y: 2
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -111,8 +251,6 @@ Assets {
               A: 0.3
             }
             ShadowOffset {
-              X: 2
-              Y: 2.8
             }
           }
           AnchorLayout {
@@ -180,7 +318,6 @@ Assets {
               A: 0.3
             }
             ShadowOffset {
-              X: 2
             }
           }
           AnchorLayout {
@@ -250,7 +387,6 @@ Assets {
               A: 0.3
             }
             ShadowOffset {
-              X: 2
             }
           }
           AnchorLayout {
