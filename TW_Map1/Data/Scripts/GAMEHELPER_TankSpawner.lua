@@ -131,6 +131,7 @@ function SpawnAITank(position)
 	equippedTank[newAI] = World.SpawnAsset(GetEquippedTankTemplate(nil, -1), {parent = tankGarage, position = playerPosition, rotation = playerRotation})
 	print("spawned", equippedTank[newAI])
 	Task.Wait(0.1)
+	newAI.team = 2
 	equippedTank[newAI].context.AssignDriver(newAI, position, true)
 	
 
@@ -153,8 +154,12 @@ end
 function OnPlayerJoined(player)
 
 	player.spawnedEvent:Connect(OnPlayerRespawned)
+	--SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000))
+	for i = 1, 4 do
+		local offset = Rotation.New(0, 0, math.random(360)) * Vector3.FORWARD * 30000 + Vector3.UP * 1000
+		SpawnAITank(offset)
+	end
 
-	SpawnAITank(player:GetWorldPosition() + Vector3.New(1000, 1000, 1000))
 	
 end
 

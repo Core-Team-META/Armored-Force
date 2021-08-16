@@ -353,7 +353,5 @@ function Tick(dt)
 
 end
 
-Events.Connect("AI_TankAim", tankRef, pos)
-
 tankEquipment.equippedEvent:Connect(StartTank)
 tankEquipment.unequippedEvent:Connect(RemoveTank)

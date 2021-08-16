@@ -158,9 +158,7 @@ function AssignDriver(newDriver, playerStart, _isAI)
 
 	driver = newDriver
 	
-	print("Checkpoint 1", isAI)
 	SetTankModifications()
-	print("Checkpoint 2", isAI)
 	
 	driver.maxHitPoints = tankHitPoints
 	driver.hitPoints = tankHitPoints
@@ -177,14 +175,12 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	chassis:SetWorldRotation(script:GetWorldRotation())
 	
 	Task.Wait()
-	print("Checkpoint 3", isAI)
 
 	if not isAI then
 		chassis:SetDriver(driver)
 	else
 		driver:AssignToTank(chassis)
 	end
-	print("Checkpoint 4", isAI)
 
 	originalSpeed = chassis.maxSpeed
 	originalFriction = chassis.tireFriction
@@ -195,7 +191,6 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	if chassis.type == "TreadedVehicle" then
 		originalTurnSpeed = chassis.turnSpeed
 	end
-	print("Checkpoint 5", isAI)
 
 	hitbox = World.SpawnAsset(newHitbox, {parent = chassis, scale = Vector3.ONE * 1.1})
 	turret = hitbox:FindDescendantByName("Turret")
@@ -221,7 +216,6 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	end
 	
 	cannonGuide:LookAtContinuous(target, false)
-	print("Checkpoint 7", isAI)
 
 	script:SetNetworkedCustomProperty("ChassisReference", chassis)
 	script:SetNetworkedCustomProperty("HitboxReference", hitbox)
@@ -230,7 +224,6 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	for _, t in pairs(hitbox:FindDescendantsByType("Trigger")) do
 	 	armorImpactListeners[t] = t.beginOverlapEvent:Connect(OnArmorHit)
 	end
-	print("Checkpoint 8", isAI)
 	
 	if not isAI then
 		bindingPressedListener = newDriver.bindingPressedEvent:Connect(OnBindingPressed)
@@ -240,7 +233,6 @@ function AssignDriver(newDriver, playerStart, _isAI)
 	consumableListener = Events.Connect(driver.id .. "RepairTank", OnConsumableUsed)
 
 	Task.Wait()
-	print("Setting tank ready!")
 	script:SetNetworkedCustomProperty("TankReady", true)
 	
 	SetServerData()
@@ -427,6 +419,15 @@ function HandleAITankShot(aiDriver)
 end
 
 
+function HandleAITankAim(aiDriver, pos)
+	print("aiming precheck", aiDriver)
+	if aiDriver ~= driver then return end
+	print("aiming", aiDriver)
+	target:SetWorldPosition(pos)
+end
+
+
+
 function FireProjectile(driver)
 
 	if reloading or barrelDown then
@@ -435,11 +436,18 @@ function FireProjectile(driver)
 	
 	reloading = true
 
-	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), muzzle:GetWorldRotation() * Vector3.FORWARD)
+	local aimVector = muzzle:GetWorldRotation() * Vector3.FORWARD
+	if driver:IsA("AIPlayer") then
+		local targetAimVector = (target:GetWorldPosition() - muzzle:GetWorldPosition()):GetNormalized()
+		aimVector.z = targetAimVector.z
+	end
+
+	local firedProjectile = Projectile.Spawn(projectile, muzzle:GetWorldPosition(), aimVector)
 	
 	if driver:IsA("Player") then
-		-- TODO - figure out a way to have projectiles owned by non-players.  Will probably need to replciate.
 		firedProjectile.owner = driver
+	else
+		firedProjectile.serverUserData.owner = driver
 	end
 	firedProjectile.gravityScale = 0
 	firedProjectile.lifeSpan = 5
@@ -467,8 +475,11 @@ function ProjectileImpacted(expiredProjectile, other)
 	ProjectileExpired(expiredProjectile)
 	
 	if not other:IsA("Vehicle") or expiredProjectile.serverUserData.hitOnce or other.driver == driver then
+		print(not other:IsA("Vehicle"), expiredProjectile.serverUserData.hitOnce, other.driver == driver)
+		print("Returning")
 		return
 	end
+	print("damage stuff")
 	
 	expiredProjectile.serverUserData.hitOnce = true
 	
@@ -503,11 +514,16 @@ end
 function OnArmorHit(trigger, other)	
 	if other.type == "Projectile" and other.owner ~= driver then
 		local enemyPlayer = other.owner
+		if enemyPlayer == nil then
+			--enemyPlayer = AIPlayer.FindAIDriver(other)
+			enemyPlayer = other.serverUserData.owner
+		end
 
 		if other.serverUserData.hitOnce then
 			return
 		end
 		
+		print("Armor hit")
 		other.serverUserData.hitOnce = true
 		other.speed = 0
 		other.capsuleRadius = 0
@@ -515,6 +531,11 @@ function OnArmorHit(trigger, other)
 		other.lifeSpan = 0.1
 				
 		if not enemyPlayer or not enemyPlayer.serverUserData.currentTankData or enemyPlayer.team == driver.team then
+			print("Returning from armor hit")
+			print(enemyPlayer)
+			print(enemyPlayer.serverUserData)
+			print(enemyPlayer.serverUserData.currentTankData)
+			print(enemyPlayer.team)
 			return
 		end
 		
@@ -522,8 +543,10 @@ function OnArmorHit(trigger, other)
 		local potentialDamage = enemyPlayer.serverUserData.currentTankData.fullDamage
 		local totalDamage = math.floor(potentialDamage - potentialDamage * armorValue)
 		local damageDealt = Damage.New(totalDamage)
-		
-		damageDealt.sourcePlayer = enemyPlayer
+
+		if enemyPlayer:IsA("Player") then
+			damageDealt.sourcePlayer = enemyPlayer
+		end
 		damageDealt.reason = DamageReason.COMBAT
 		--driver:ApplyDamage(damageDealt)
 
@@ -548,7 +571,11 @@ function OnArmorHit(trigger, other)
 			armorName = "TRACK"
 		end
 
-		Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver.id)
+		if enemyPlayer:IsA("Player") then
+			Events.BroadcastToPlayer(enemyPlayer, "ShowDamageFeedback", totalDamage, armorName, trigger:GetWorldPosition(), driver.id)
+		else
+
+		end
 		if not isAI then
 			Events.BroadcastToPlayer(driver, "ShowHitFeedback", totalDamage, armorName, trigger:GetWorldPosition())
 		end
@@ -1009,5 +1036,10 @@ function Tick()
 	
 end
 
+
+
+
 destroyedListener = script.destroyEvent:Connect(OnDestroy)
 Events.Connect("AI_Tankshot", HandleAITankShot)
+Events.Connect("AI_TankAim", HandleAITankAim)
+
