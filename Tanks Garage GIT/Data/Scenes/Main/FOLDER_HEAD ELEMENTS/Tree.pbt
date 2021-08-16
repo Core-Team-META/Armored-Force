@@ -14265,7 +14265,7 @@ Objects {
   Control {
     Width: 462
     Height: 129
-    UIY: -10
+    UIY: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -14536,9 +14536,8 @@ Objects {
     Text {
       Label: "99999999"
       Color {
-        R: 0.0998987257
-        G: 0.323143244
-        B: 0.533276618
+        R: 0.54572469
+        G: 0.775822461
         A: 1
       }
       Size: 20
@@ -14583,7 +14582,6 @@ Objects {
   }
   ParentId: 2738778456754938289
   ChildIds: 4195809832899220967
-  ChildIds: 12838710114690494318
   ChildIds: 6590765804957591212
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14609,7 +14607,7 @@ Objects {
     }
     Image {
       Brush {
-        Id: 8581935008439073870
+        Id: 15087097116682079611
       }
       Color {
         A: 0.777
@@ -14669,75 +14667,12 @@ Objects {
     }
     Image {
       Brush {
-        Id: 8581935008439073870
+        Id: 15087097116682079611
       }
       Color {
         R: 1
         G: 1
         B: 1
-        A: 0.295000017
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12838710114690494318
-  Name: "ICON_RP"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15302231867338201451
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 30
-    Height: 30
-    UIY: -3.22558594
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 8581935008439073870
-      }
-      Color {
-        R: 0.0998987257
-        G: 0.323143244
-        B: 0.533276618
         A: 1
       }
       TeamSettings {
