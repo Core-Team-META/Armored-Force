@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15087097116682079611
+  Name: "Sci-fi Container 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFi_Equip_Container_002"
+  }
+}
+Assets {
   Id: 14060330023043759337
   Name: "BG Flat 001"
   PlatformAssetType: 9
@@ -68,15 +77,6 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "TekoLight_ref"
-  }
-}
-Assets {
-  Id: 8581935008439073870
-  Name: "Icon DNA"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_DNA"
   }
 }
 Assets {

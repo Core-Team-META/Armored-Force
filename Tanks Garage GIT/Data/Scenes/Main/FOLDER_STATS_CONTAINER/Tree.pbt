@@ -5466,7 +5466,7 @@ Objects {
 }
 Objects {
   Id: 15579869649287164318
-  Name: "UI Panel"
+  Name: "TANK_PARTS"
   Transform {
     Location {
     }
@@ -5480,7 +5480,6 @@ Objects {
   }
   ParentId: 5662713566976914498
   ChildIds: 573281763754550491
-  ChildIds: 9816859613433284172
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5496,7 +5495,7 @@ Objects {
   Control {
     Width: 40
     Height: 40
-    UIX: 35
+    UIX: 40
     UIY: 40
     RenderTransformPivot {
       Anchor {
@@ -5521,8 +5520,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9816859613433284172
-  Name: "UI Image"
+  Id: 573281763754550491
+  Name: "ICON_TANK_PARTS"
   Transform {
     Location {
     }
@@ -5548,9 +5547,9 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 25
-    Height: 25
-    UIX: 8
+    Width: 50
+    Height: 50
+    RotationAngle: 45
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5558,82 +5557,12 @@ Objects {
     }
     Image {
       Brush {
-        Id: 16622528590838133631
+        Id: 5338244946539998590
       }
       Color {
         R: 1
         G: 1
         B: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-      ScreenshotIndex: 1
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 573281763754550491
-  Name: "UI Image"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15579869649287164318
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 40
-    Height: 40
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 16191173343733875993
-      }
-      Color {
-        R: 0.227000013
-        G: 0.227000013
-        B: 0.227000013
         A: 1
       }
       TeamSettings {
