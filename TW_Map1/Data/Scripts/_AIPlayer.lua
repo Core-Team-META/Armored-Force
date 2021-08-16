@@ -27,6 +27,9 @@ function AIPlayer.New(team)
     listeners = {},
     tickTask = nil,
     tankId = nil,
+    team = 1,
+    currentMovementTarget = nil,
+    lastShotTime = -1,
   }
 
   setmetatable(newAIPlayer, {
@@ -72,18 +75,68 @@ end
 
 
 function TankTick(self)
-  Task.Wait(1)
-  print(">>>FIRE!<<<", self, self.tankId)
-  Events.Broadcast("AI_Tankshot", self)
+  --print(">>>FIRE!<<<", self, self.tankId)
+  --Task.Wait(math.random(0, 2))
   SetAim(self)
+  self:PickMovementTarget()
+  if time() > self.lastShotTime + 3 and math.random(1, 100) < 5 then
+    Events.Broadcast("AI_Tankshot", self)
+  end
 end
 
 
 
 function RoboDriver(vehicle, params)
+  local driver = AIPlayer.FindAIDriver(vehicle)
+  if driver then
+    driver:HandleDriving(vehicle, params)
+  end
+end
+
+
+function AIPlayer:HandleDriving(vehicle, params)
+  --[[
   params.isHandbrakeEngaged = false
   params.throttleInput = 1.0
   params.steeringInput = 0.5
+]]
+
+  if self.currentMovementTarget == nil then return end
+
+  local tankVector = vehicle:GetWorldRotation() * Vector3.FORWARD
+  local targetVector = (self.currentMovementTarget - vehicle:GetWorldPosition())
+  
+  tankVector.z = 0
+  targetVector.z = 0
+  
+  --[[
+  CoreDebug.DrawLine(
+    propVehicle:GetWorldPosition() + Vector3.UP * 200,
+    propVehicle:GetWorldPosition() + tankVector * 1000 + Vector3.UP * 200,
+    {duration = 0, thickness = 5, color = Color.GREEN})
+  
+  
+  CoreDebug.DrawLine(
+    propVehicle:GetWorldPosition() + Vector3.UP * 200,
+    propVehicle:GetWorldPosition() + targetVector * 1000 + Vector3.UP * 200,
+    {duration = 0, thickness = 5, color = Color.CYAN})
+  
+  ]]
+
+
+  local steering = (targetVector:GetNormalized() ^ tankVector:GetNormalized() ).z
+  local isFacing = (targetVector:GetNormalized() .. tankVector:GetNormalized() ) > 0
+
+  params.isHandbrakeEngaged = false
+  params.throttleInput = 1.0
+  
+  if isFacing then
+    params.steeringInput = -steering
+    params.throttleInput = 1.0
+  else
+    params.steeringInput = -steering * 10000
+    params.throttleInput = -1.0
+  end
 end
 
 
@@ -91,10 +144,45 @@ function SetAim(driver)
   -- This is a hack.  Need to change to nearest tank.
   local tank = World.FindObjectById(driver.tankId)
   if tank ~= nil then
+    print("setting aim!")
     local player = Game.FindNearestPlayer(tank:GetWorldPosition())
-    Events.Broadcast("AI_TankAim", driver.tankId, player:GetWorldPosition())
+    Events.Broadcast("AI_TankAim", driver, player:GetWorldPosition())
   end
 end
+
+
+function AIPlayer:PickMovementTarget()
+  local tank = World.FindObjectById(self.tankId)
+  local player = Game.FindNearestPlayer(tank:GetWorldPosition())
+  if player then
+    self.currentMovementTarget = player:GetWorldPosition()
+      
+      if (self.currentMovementTarget - tank:GetWorldPosition()).size < 2000 then
+        print("Reversing!------------")
+        local tankDirection = tank:GetWorldRotation() * Vector3.FORWARD
+
+        self.currentMovementTarget = Rotation.New(0, 0, math.random(240, 320)) * tankDirection * 2000
+        CoreDebug.DrawLine(self.currentMovementTarget, self.currentMovementTarget + Vector3.UP * 1000, {duration = 3, thickness = 15, color=Color.RED})
+        --[[
+        local tankToTarget = (self.currentMovementTarget - tank:GetWorldPosition()):GetNormalized()
+
+        local turnDirection = -1
+        if (tankDirection ^ tankToTarget).z > 0 then
+          turnDirection = 1
+        end
+        self.currentMovementTarget = tank:GetWorldPosition() + tankToTarget * Rotation.New(0, 0, 90 * turnDirection) * 2000
+        --self.currentMovementTarget = self.currentMovementTarget + tank:GetWorldRotation() * Vector3.RIGHT * 2000
+        ]]
+      else
+        self.currentMovementTarget = self.currentMovementTarget + Vector3.New(math.random(-1000, 1000), math.random(-1000, 1000), 0)
+      end
+
+
+  end
+  
+end
+
+
 
 
 

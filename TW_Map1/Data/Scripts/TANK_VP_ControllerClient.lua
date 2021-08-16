@@ -217,7 +217,9 @@ function FiringAnimation(tankRef, reloadTime)
 	
 	reloadSpeed = reloadTime
 	
-	shotSFX:Play()
+	if shotSFX then
+		shotSFX:Play()
+	end
 		
 	local xRotation = 0
 	local yRotation = 0
