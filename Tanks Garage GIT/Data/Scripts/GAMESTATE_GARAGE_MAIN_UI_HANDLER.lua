@@ -560,7 +560,7 @@ function Tick(deltaTime)
 	for i, child in ipairs(specificRPText:GetChildren()) do
 		child.text = specificRPText.text
 	end
-
+	--[[
 	local silverText = STATS_TANK:FindDescendantByName("AMOUNT_MONEY_SHADOW")
 	silverText.text = tostring(LOCAL_PLAYER:GetResource("Silver"))
 	for i, child in ipairs(silverText:GetChildren()) do
@@ -578,6 +578,7 @@ function Tick(deltaTime)
 	for i, child in ipairs(goldText:GetChildren()) do
 		child.text = goldText.text
 	end
+	]]
 
 	local specificRPText = STATS_TANK:FindDescendantByName("AMOUNT_SPECIFIC_RP_SHADOW")
 	specificRPText.text =
