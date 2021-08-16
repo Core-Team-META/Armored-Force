@@ -170,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5338244946539998590
+  Name: "Survival Crate 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Crate_005"
+  }
+}
+Assets {
   Id: 4913010023776999523
   Name: "Baloo 2"
   PlatformAssetType: 28
