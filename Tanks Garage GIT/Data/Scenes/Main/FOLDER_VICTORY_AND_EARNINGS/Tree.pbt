@@ -5605,7 +5605,7 @@ Objects {
       }
     }
     Text {
-      Label: "XP"
+      Label: "TANK PARTS"
       Color {
         R: 1
         G: 1

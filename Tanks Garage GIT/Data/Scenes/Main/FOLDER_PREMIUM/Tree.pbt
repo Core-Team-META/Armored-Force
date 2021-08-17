@@ -58000,7 +58000,6 @@ Objects {
   ChildIds: 14747847270182926945
   ChildIds: 15310401637193696517
   ChildIds: 14153851715582423474
-  ChildIds: 2808571144038674945
   ChildIds: 9311003819730900496
   ChildIds: 15168671364906987128
   ChildIds: 11154885777087675390
@@ -58250,7 +58249,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "CONVERT ALL SELCTED TANK RP"
+      Label: "CONVERT ALL SELCTED TANK PARTS"
       Color {
         R: 0.522
         G: 0.522
@@ -58276,82 +58275,6 @@ Objects {
         A: 0.535
       }
       OutlineSize: 1
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2808571144038674945
-  Name: "BUTTONTEXT_LIGHT"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 119590141470190330
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 16
-    UIY: 10
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "CONVERT ALL SELCTED TANK RP"
-      Color {
-        R: 0.623
-        G: 0.623
-        B: 0.623
-        A: 1
-      }
-      Size: 16
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      ClipTextToSize: true
-      Font {
-        Id: 841534158063459245
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-      ShadowColor {
-        R: 1
-        G: 1
-        B: 1
-      }
-      ShadowOffset {
-      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -60229,7 +60152,6 @@ Objects {
   ChildIds: 310084278257282217
   ChildIds: 4593146249613439395
   ChildIds: 15802749869108636686
-  ChildIds: 8239777248649358641
   ChildIds: 11251687581992801025
   ChildIds: 6781186076929609718
   ChildIds: 15726923351824851084
@@ -60452,7 +60374,7 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 20
+    Height: 30
     UIX: 5
     UIY: 14.4379883
     RenderTransformPivot {
@@ -60474,7 +60396,6 @@ Objects {
         Value: "mc:etextjustify:center"
       }
       AutoWrapText: true
-      ClipTextToSize: true
       Font {
         Id: 9686253618519087109
       }
@@ -60485,84 +60406,6 @@ Objects {
         A: 1
       }
       ShadowOffset {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8239777248649358641
-  Name: "OUTCOME_RP"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13368322139004214764
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 200
-    Height: 40
-    UIX: 5
-    UIY: 14.4379883
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "Convert chosen Tank\'s RP for"
-      Color {
-        R: 0.624
-        G: 0.624
-        B: 0.624
-        A: 1
-      }
-      Size: 21
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 9686253618519087109
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:top"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-        Y: 2
       }
     }
     AnchorLayout {
