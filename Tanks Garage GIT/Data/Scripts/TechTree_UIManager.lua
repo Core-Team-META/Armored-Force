@@ -94,8 +94,13 @@ local CONFIRM_WINDOW_CLOSE_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CLO
 local CONFIRM_WINDOW_CONFIRM_BUTTON = script:GetCustomProperty("CONFIRM_WINDOW_CONFIRM_BUTTON"):WaitForObject()
 local SFX_HOVER = script:GetCustomProperty("SFX_HOVER"):WaitForObject()
 local SFX_EQUIP_TANK = script:GetCustomProperty("SFX_EQUIP_TANK"):WaitForObject()
+local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
 local PURCHASE_NOTIFICATION = script:GetCustomProperty("PURCHASE_NOTIFICATION"):WaitForObject()
 local EXPERIENCE_EQUIPPED_TANK = script:GetCustomProperty("EXPERIENCE_EQUIPPED_TANK"):WaitForObject()
+local BUTTON_ALLIES_TECH_TREE = script:GetCustomProperty("BUTTON_ALLIES_TECH_TREE"):WaitForObject()
+local BUTTON_AXIS_TECH_TREE = script:GetCustomProperty("BUTTON_AXIS_TECH_TREE"):WaitForObject()
+local TECH_TREE_CONTENT = script:GetCustomProperty("TECH_TREE_CONTENT"):WaitForObject()
+
 
 local LOCKED_TANK_CARD = script:GetCustomProperty("LOCKED_TANK_CARD"):WaitForObject()
 local CONFIRM_TANK_UPGRADE = script:GetCustomProperty("CONFIRM_TANK_UPGRADE"):WaitForObject()
@@ -1610,6 +1615,18 @@ function AcceptFreeRP()
 	end
 	useFreeRPPanel.visibility = Visibility.FORCE_OFF
 end
+
+function ToggleTeamTankView(button, team)
+	SFX_CLICK:Play()
+	if team == "ALLIES" then
+		TECH_TREE_CONTENT:FindDescendantByName("ALLIES_TANKS").visibility = Visibility.FORCE_ON
+		TECH_TREE_CONTENT:FindDescendantByName("AXIS_TANKS").visibility = Visibility.FORCE_OFF
+	elseif team == "AXIS" then
+		TECH_TREE_CONTENT:FindDescendantByName("ALLIES_TANKS").visibility = Visibility.FORCE_OFF
+		TECH_TREE_CONTENT:FindDescendantByName("AXIS_TANKS").visibility = Visibility.FORCE_ON
+	end
+end
+
 Task.Wait(2)
 Init()
 PopulateSelectedTankPanel()
@@ -1646,14 +1663,20 @@ usePrerequisite2.hoveredEvent:Connect(ButtonHover)
 BUTTON_UPGRADE_TURRET.clickedEvent:Connect(UpgradeWeapon)
 BUTTON_UPGRADE_ARMOR.clickedEvent:Connect(UpgradeArmor)
 BUTTON_UPGRADE_ENGINE.clickedEvent:Connect(UpgradeEngine)
+BUTTON_ALLIES_TECH_TREE.clickedEvent:Connect(ToggleTeamTankView, "ALLIES")
+BUTTON_AXIS_TECH_TREE.clickedEvent:Connect(ToggleTeamTankView, "AXIS")
 
 BUTTON_UPGRADE_TURRET.hoveredEvent:Connect(HoverWeapon)
 BUTTON_UPGRADE_ARMOR.hoveredEvent:Connect(HoverArmor)
 BUTTON_UPGRADE_ENGINE.hoveredEvent:Connect(HoverEngine)
+BUTTON_ALLIES_TECH_TREE.hoveredEvent:Connect(ButtonHover)
+BUTTON_AXIS_TECH_TREE.hoveredEvent:Connect(ButtonHover)
 
 BUTTON_UPGRADE_TURRET.unhoveredEvent:Connect(UnhoverWeapon)
 BUTTON_UPGRADE_ARMOR.unhoveredEvent:Connect(UnhoverArmor)
 BUTTON_UPGRADE_ENGINE.unhoveredEvent:Connect(UnhoverEngine)
+
+
 
 World.FindObjectByName("01").clickedEvent:Connect(SelectTank)
 World.FindObjectByName("02").clickedEvent:Connect(SelectTank)

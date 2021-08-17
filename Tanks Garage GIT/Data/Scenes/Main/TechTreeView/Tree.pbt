@@ -842,6 +842,30 @@ Objects {
         SelfId: 8820957397431302908
       }
     }
+    Overrides {
+      Name: "cs:BUTTON_ALLIES_TECH_TREE"
+      ObjectReference {
+        SelfId: 16260385252833043991
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_AXIS_TECH_TREE"
+      ObjectReference {
+        SelfId: 3757074776458284112
+      }
+    }
+    Overrides {
+      Name: "cs:TECH_TREE_CONTENT"
+      ObjectReference {
+        SelfId: 759720272192869985
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_CLICK"
+      ObjectReference {
+        SelfId: 1748794041367902372
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
