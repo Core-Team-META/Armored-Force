@@ -34,7 +34,7 @@ Objects {
 }
 Objects {
   Id: 1639182757380821705
-  Name: "TopSelectionBar"
+  Name: "HeaderBar"
   Transform {
     Location {
     }
