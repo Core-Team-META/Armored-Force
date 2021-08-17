@@ -42,6 +42,8 @@ Assets {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
+          UseParentHeight: true
           Panel {
             Opacity: 1
           }
@@ -82,7 +84,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -100,9 +102,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 0.12469998
+              R: 0.12469995
               G: 0.258000016
-              A: 0.347
             }
             TeamSettings {
             }
@@ -157,9 +158,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 0.115033314
+              R: 0.115033284
               G: 0.238
-              A: 0.896
             }
             TeamSettings {
             }
@@ -214,9 +214,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 0.115033314
+              R: 0.115033284
               G: 0.238
-              A: 0.896
             }
             TeamSettings {
             }
@@ -271,9 +270,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 0.115033314
+              R: 0.115033284
               G: 0.238
-              A: 0.896
             }
             TeamSettings {
             }
@@ -328,9 +326,8 @@ Assets {
             Brush {
             }
             Color {
-              R: 0.115033314
+              R: 0.115033284
               G: 0.238
-              A: 0.896
             }
             TeamSettings {
             }
