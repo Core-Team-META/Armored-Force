@@ -697,13 +697,13 @@ Objects {
     StatBar {
       Color {
         R: 0.921582162
-        G: 0.533276618
-        A: 1
+        G: 0.533276737
+        A: 0.655000031
       }
       BackgroundColor {
         R: 0.428690553
-        G: 0.119538449
-        A: 1
+        G: 0.119538531
+        A: 0.321
       }
       Percent: 0.623711228
       FillBrush {
@@ -753,7 +753,6 @@ Objects {
     }
   }
   ParentId: 11738676601477744402
-  ChildIds: 16644672553841987344
   ChildIds: 8963835164133731429
   ChildIds: 15875605811565262443
   ChildIds: 7771290623872380428
@@ -968,7 +967,7 @@ Objects {
     UseParentHeight: true
     Panel {
       IsClipping: true
-      Opacity: 1
+      Opacity: 0.618574739
     }
     AnchorLayout {
       SelfAnchor {
@@ -1276,65 +1275,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16644672553841987344
-  Name: "DROP_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17865671122366414114
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Height: 5
-    UIY: -1.84957886
-    RotationAngle: 180
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    Image {
-      Brush {
-        Id: 10820194954338241369
-      }
-      Color {
-        A: 0.634
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 7630575637396676311
   Name: "BACKGROUND"
   Transform {
@@ -1378,7 +1318,7 @@ Objects {
         R: 0.00570396893
         G: 0.00749903172
         B: 0.00402471703
-        A: 1
+        A: 0.676000059
       }
       TeamSettings {
       }
@@ -1633,13 +1573,13 @@ Objects {
     StatBar {
       Color {
         R: 0.921582162
-        G: 0.533276618
-        A: 1
+        G: 0.533276737
+        A: 0.655000031
       }
       BackgroundColor {
         R: 0.428690553
-        G: 0.119538449
-        A: 1
+        G: 0.119538531
+        A: 0.321
       }
       Percent: 0.623711228
       FillBrush {
@@ -1689,7 +1629,6 @@ Objects {
     }
   }
   ParentId: 8417310456295293561
-  ChildIds: 2022060338171906305
   ChildIds: 15062798520225284919
   ChildIds: 14623014768786036885
   ChildIds: 2571325579554186356
@@ -1904,7 +1843,7 @@ Objects {
     UseParentHeight: true
     Panel {
       IsClipping: true
-      Opacity: 1
+      Opacity: 0.618574739
     }
     AnchorLayout {
       SelfAnchor {
@@ -2212,65 +2151,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2022060338171906305
-  Name: "DROP_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11730301562317027952
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Height: 5
-    UIY: -1.84957886
-    RotationAngle: 180
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    Image {
-      Brush {
-        Id: 10820194954338241369
-      }
-      Color {
-        A: 0.634
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 119276910051377766
   Name: "BACKGROUND"
   Transform {
@@ -2314,7 +2194,7 @@ Objects {
         R: 0.00570396893
         G: 0.00749903172
         B: 0.00402471703
-        A: 1
+        A: 0.676000059
       }
       TeamSettings {
       }
@@ -2568,13 +2448,13 @@ Objects {
     StatBar {
       Color {
         R: 0.921582162
-        G: 0.533276618
-        A: 1
+        G: 0.533276737
+        A: 0.655000031
       }
       BackgroundColor {
         R: 0.428690553
-        G: 0.119538449
-        A: 1
+        G: 0.119538531
+        A: 0.321
       }
       Percent: 0.623711228
       FillBrush {
@@ -2624,7 +2504,6 @@ Objects {
     }
   }
   ParentId: 14276794566367624954
-  ChildIds: 8131069691286526845
   ChildIds: 12042251384812078427
   ChildIds: 14558399955118274643
   ChildIds: 9299958015185344816
@@ -2839,7 +2718,7 @@ Objects {
     UseParentHeight: true
     Panel {
       IsClipping: true
-      Opacity: 1
+      Opacity: 0.618574739
     }
     AnchorLayout {
       SelfAnchor {
@@ -3147,65 +3026,6 @@ Objects {
   }
 }
 Objects {
-  Id: 8131069691286526845
-  Name: "DROP_SHADOW"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9294220015563279574
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Height: 5
-    UIY: -1.84957886
-    RotationAngle: 180
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    Image {
-      Brush {
-        Id: 10820194954338241369
-      }
-      Color {
-        A: 0.634
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:bottomcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 4766771717944596228
   Name: "BACKGROUND"
   Transform {
@@ -3249,7 +3069,7 @@ Objects {
         R: 0.00570396893
         G: 0.00749903172
         B: 0.00402471703
-        A: 1
+        A: 0.676000059
       }
       TeamSettings {
       }
