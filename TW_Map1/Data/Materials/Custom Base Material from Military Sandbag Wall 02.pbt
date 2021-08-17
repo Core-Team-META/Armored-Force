@@ -2,7 +2,7 @@ Assets {
   Id: 4280203922952353856
   Name: "TW2_Sandbags"
   PlatformAssetType: 13
-  SerializationVersion: 96
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 2876835877161718940
     ParameterOverrides {

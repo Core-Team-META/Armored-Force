@@ -2,7 +2,7 @@ Assets {
   Id: 636002164513207861
   Name: "TW2_OilPumpPaintYellow"
   PlatformAssetType: 13
-  SerializationVersion: 96
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 818783603953564962
     ParameterOverrides {
