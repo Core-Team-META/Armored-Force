@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15087097116682079611
+  Name: "Sci-fi Container 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFi_Equip_Container_002"
+  }
+}
+Assets {
   Id: 14060330023043759337
   Name: "BG Flat 001"
   PlatformAssetType: 9
@@ -134,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5338244946539998590
+  Name: "Survival Crate 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Crate_005"
+  }
+}
+Assets {
   Id: 5164711776771633793
   Name: "Frame Outlined 001"
   PlatformAssetType: 9
@@ -161,6 +179,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4519748528802078203
+  Name: "Icon Checkmark"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Checkmark"
+  }
+}
+Assets {
   Id: 4325712091908620921
   Name: "Icon Science"
   PlatformAssetType: 9
@@ -176,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_ArrowTurnLeft"
+  }
+}
+Assets {
+  Id: 2903415737883036314
+  Name: "Icon Close"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Close"
   }
 }
 Assets {
