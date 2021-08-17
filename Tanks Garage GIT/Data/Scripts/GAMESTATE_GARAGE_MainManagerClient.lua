@@ -56,12 +56,12 @@ function Tick()
 		UI.SetCursorVisible(false)
 		UI.SetCanCursorInteractWithUI(false)
 	end
-	
+	--[[
 	if isInGarage and currentActive ~= displayHandler.context.GET_ACTIVE_HEAD_MENU() then
 		currentActive = displayHandler.context.GET_ACTIVE_HEAD_MENU()
 		Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[currentActive])
 	end
-	
+	]]
 	Task.Wait(0.1)
 
 end

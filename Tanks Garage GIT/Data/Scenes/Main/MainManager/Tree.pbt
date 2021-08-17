@@ -89,7 +89,7 @@ Objects {
     Overrides {
       Name: "cs:DisplayHandler"
       ObjectReference {
-        SelfId: 13955950796283986913
+        SelfId: 841534158063459245
       }
     }
     Overrides {
