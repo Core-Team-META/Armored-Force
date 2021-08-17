@@ -10913,7 +10913,7 @@ Objects {
 }
 Objects {
   Id: 759720272192869985
-  Name: "CONTENT"
+  Name: "TECH_TREE_CONTENT"
   Transform {
     Location {
     }
@@ -48482,7 +48482,7 @@ Objects {
 }
 Objects {
   Id: 3757074776458284112
-  Name: "BUTTON_AXIS"
+  Name: "BUTTON_AXIS_TECH_TREE"
   Transform {
     Location {
     }
