@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6009760356381010264
+        ParentId: 12400170690491233968
         ChildIds: 15852363509057674033
         ChildIds: 7678912080725463435
         ChildIds: 14931612425121881880
@@ -745,8 +745,7 @@ Assets {
             }
             ShadowOffset {
             }
-            GameId: "e9bcfc/tanksportal-images9"
-            ScreenshotIndex: 5
+            ScreenshotIndex: 1
           }
           AnchorLayout {
             SelfAnchor {
