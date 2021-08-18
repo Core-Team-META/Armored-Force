@@ -24,6 +24,12 @@ local SFX_UNHOVERED = World.FindObjectByName("SFX_UNHOVERED")
 
 -------------------
 
+while not _G.PORTAL_IMAGES do
+	Task.Wait()
+end
+
+local IMAGE_API = _G.PORTAL_IMAGES
+
 local thisComponent = "CAMOSPRAYS_MENU"
 local savedState = ""
 
@@ -420,6 +426,7 @@ function RepopulateCamoEntries()
 	end
 	
 	local camoList = skinsClient.context.GetTankSkinData(selectedTank)
+	local uniqueCamoImageInfo = IMAGE_API.GetSkinsImageInfo("unique")
 	local flippedPositioning = {}
 	local positioning = {}
 	
@@ -445,6 +452,7 @@ function RepopulateCamoEntries()
 		camoTitle.text = camo.name
 		
 		local previewImage = camoEntry.camoUI:GetCustomProperty("PreviewImage"):WaitForObject()
+		previewImage:SetGameScreenshot(uniqueCamoImageInfo.link, uniqueCamoImageInfo.index)
 		previewImage.x = -(math.abs(camo.coordinates.x) - 1) * 240
 		previewImage.y = -(math.abs(camo.coordinates.y) - 1) * 140
 		
