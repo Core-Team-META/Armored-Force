@@ -723,8 +723,8 @@ Assets {
         Control {
           Width: 400
           Height: 200
-          UIX: -9
-          UIY: 48
+          UIX: 77
+          UIY: 91
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -787,8 +787,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 1800
-          Height: 1000
+          Width: 1230
+          Height: 550
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -808,6 +808,7 @@ Assets {
             }
             ShadowOffset {
             }
+            ScreenshotIndex: 1
           }
           AnchorLayout {
             SelfAnchor {
