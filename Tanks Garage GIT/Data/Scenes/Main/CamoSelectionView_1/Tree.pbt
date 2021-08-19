@@ -98,6 +98,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:CAMO_TANK"
+      AssetReference {
+        Id: 13051743879286401602
+      }
+    }
+    Overrides {
       Name: "cs:StatsContainer"
       ObjectReference {
         SelfId: 16475119061964287367
@@ -116,19 +122,13 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:AxisContainer"
-      ObjectReference {
-        SelfId: 3126929912148872454
-      }
-    }
-    Overrides {
       Name: "cs:AlliesButtonAssets"
       ObjectReference {
         SelfId: 8727088487056778652
       }
     }
     Overrides {
-      Name: "cs:AlliesContainer"
+      Name: "cs:TankContainer"
       ObjectReference {
         SelfId: 12598536286258412214
       }
@@ -149,6 +149,12 @@ Objects {
       Name: "cs:CamoContainer"
       ObjectReference {
         SelfId: 6009760356381010264
+      }
+    }
+    Overrides {
+      Name: "cs:TechTreeContents"
+      ObjectReference {
+        SelfId: 7647187385909291407
       }
     }
     Overrides {
