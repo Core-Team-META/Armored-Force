@@ -73,7 +73,7 @@ Objects {
 }
 Objects {
   Id: 14987705759022947288
-  Name: "CONFIRM"
+  Name: "CONTENT"
   Transform {
     Location {
     }
@@ -218,7 +218,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Successfully bought CAMONAME camo for tank TANKNAME."
+      Label: "TEXT"
       Color {
         R: 1
         G: 1
@@ -240,6 +240,9 @@ Objects {
         A: 1
       }
       ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
       }
       OutlineSize: 1
     }
@@ -346,7 +349,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "SHOOTING RANGE"
+      Label: "BUTTON"
       Color {
         R: 1
         G: 1
@@ -2990,7 +2993,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "CONFIRM *TANKPART* UPGRADE"
+      Label: "TITLE"
       Color {
         R: 1
         G: 1

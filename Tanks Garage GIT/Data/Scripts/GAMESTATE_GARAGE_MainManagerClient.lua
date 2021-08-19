@@ -5,10 +5,6 @@ local AddXPButton = script:GetCustomProperty("AddXPButton"):WaitForObject()
 local AddSilverButton = script:GetCustomProperty("AddSilverButton"):WaitForObject()
 local TradeXPButton = script:GetCustomProperty("TradeXPButton"):WaitForObject()
 local AddGoldButton = script:GetCustomProperty("AddGoldButton"):WaitForObject()
-local AddXP_Tank = script:GetCustomProperty("AddXP_Tank"):WaitForObject()
-local AddSilver_Tank = script:GetCustomProperty("AddSilver_Tank"):WaitForObject()
-local AddGold_Tank = script:GetCustomProperty("AddGold_Tank"):WaitForObject()
-local TradeXP_Tank = script:GetCustomProperty("TradeXP_Tank"):WaitForObject()
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -24,7 +20,6 @@ local menuIndex = {
 	[5] = "CAMOSPRAYS_MENU"
 }
 	
-
 function OnServerStateChange(serverManager, property)
 
 	local property = mainManagerServer:GetCustomProperty(property)
@@ -50,6 +45,7 @@ end
 function Tick()
 
 	if isInGarage and not UI.IsCursorVisible() then
+		print("Show cursor")
 		UI.SetCursorVisible(true)
 		UI.SetCanCursorInteractWithUI(true)
 	elseif not isInGarage and UI.IsCursorVisible() then
@@ -66,27 +62,7 @@ function Tick()
 
 end
 
-function GoToPremiumShop_1()
-	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1], 1)
-end
-
-function GoToPremiumShop_2()
-	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1], 2)
-end
-
-function GoToPremiumShop_3()
-	Events.Broadcast("ENABLE_GARAGE_COMPONENT", menuIndex[1], 3)
-end
-
 UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
 
 mainManagerServer.networkedPropertyChangedEvent:Connect(OnServerStateChange)
-AddXPButton.clickedEvent:Connect(GoToPremiumShop_1)
-TradeXPButton.clickedEvent:Connect(GoToPremiumShop_3)
-AddSilverButton.clickedEvent:Connect(GoToPremiumShop_2)
-AddGoldButton.clickedEvent:Connect(GoToPremiumShop_2)
-AddXP_Tank.clickedEvent:Connect(GoToPremiumShop_1)
-TradeXP_Tank.clickedEvent:Connect(GoToPremiumShop_3)
-AddSilver_Tank.clickedEvent:Connect(GoToPremiumShop_2)
-AddGold_Tank.clickedEvent:Connect(GoToPremiumShop_2)
