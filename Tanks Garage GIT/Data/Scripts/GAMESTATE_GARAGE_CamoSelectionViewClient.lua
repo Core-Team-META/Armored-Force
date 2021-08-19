@@ -90,7 +90,6 @@ function ToggleThisComponent(requestedPlayerState)
 		
 		camoViewUI.isEnabled = true
 		statsContainer.visibility = Visibility.FORCE_OFF
-		AssignPreviewText()
 		RepopulateCamoEntries()
 		enteredMenuBefore = true
 	else
@@ -284,7 +283,7 @@ function InitializeTankButtonInfo()
 		tankTeam = t:GetCustomProperty("Team")
 		tankName = t:GetCustomProperty("Name")
 		
-		if (tankID ~= "08") or (tankID ~= "34") then
+		if (tankID ~= "08") and (tankID ~= "34") then
 			if tankTeam == "Allies" then
 				alliesTankNames[tankID] = tankTier .. " " .. tankType .. " " .. tankName
 			elseif tankTeam == "Axis" then
@@ -307,13 +306,15 @@ function PopulateTankEntries(team)
 	local tankList = nil
 	local tankName = nil
 	local entryTemplate = nil
-	local previewImage = nil
 	local entryPlacement = 0
+	local entryPlacementModifier = 0
 	
 	if team == "Allies" then
 		tankList = alliesTankNames
+		entryPlacementModifier = -1
 	elseif team == "Axis" then
 		tankList = axisTankNames
+		entryPlacementModifier = -18
 	end
 	
 	if not tankList then
@@ -326,28 +327,42 @@ function PopulateTankEntries(team)
 			l:Disconnect()
 		end
 		
-		if Object.IsValid(t) then
+		if Object.IsValid(t.entry) then
 			t.entry:Destroy()
 		end
 		
+		t.entry = nil
+		t.button = nil
+		t.previewText = nil
+		t.previewImage = nil
+		t.defaultText = nil
+		t.defaultColor = nil
+		
 		t = nil
 	end
+	
+	tankEntries = {}
 	
 	for i, t in pairs(tankList) do
 		local tankEntry = {}
 		local tankImageInfo = IMAGE_API.GetTankImageInfo(i)
 		
+		entryPlacement = tonumber(i)
+		
+		if (team == "Allies") and (entryPlacement > 8) then
+			entryPlacement = entryPlacement - 1
+		end
+		
 		entryTemplate = World.SpawnAsset(tankEntryTemplate, {parent = tankContainer})
 		entryTemplate.x = 0
-		entryTemplate.y = entryPlacement * (entryTemplate.height + 5)
+		entryTemplate.y = (entryPlacement + entryPlacementModifier) * (entryTemplate.height + 5)
 		
 		tankName = entryTemplate:GetCustomProperty("TankName"):WaitForObject()
-		previewImage = entryTemplate:GetCustomProperty("PreviewImage"):WaitForObject()
-		previewImage:SetGameScreenshot(tankImageInfo.link, tankImageInfo.index)
-		previewImage:SetColor(Color.WHITE)
+		tankEntry.previewImage = entryTemplate:GetCustomProperty("PreviewImage"):WaitForObject()
+		tankEntry.previewImage:SetGameScreenshot(tankImageInfo.link, tankImageInfo.index)
+		tankEntry.previewImage:SetColor(Color.WHITE)
 		
-		previewImage.x = (tankImageInfo.coordinates.x - 1) * (-360)
-		previewImage.y = (tankImageInfo.coordinates.y - 1) * (-200)
+		IMAGE_API.PositionImage(tankEntry.previewImage, tankImageInfo.coordinates, tankImageInfo.size)
 		
 		tankName.text = t
 		
@@ -365,11 +380,11 @@ function PopulateTankEntries(team)
 		}
 		
 		tankEntries[i] = tankEntry
-		
-		entryPlacement = entryPlacement + 1
 	end	
-	
+		
 	Task.Wait()
+	
+	AssignPreviewText()
 	
 	repopulatingTanks = false
 
@@ -544,8 +559,9 @@ function RepopulateCamoEntries()
 		
 		local previewImage = camoEntry.camoUI:GetCustomProperty("PreviewImage"):WaitForObject()
 		previewImage:SetGameScreenshot(uniqueCamoImageInfo.link, uniqueCamoImageInfo.index)
-		previewImage.x = -(math.abs(camo.coordinates.x) - 1) * 240
-		previewImage.y = -(math.abs(camo.coordinates.y) - 1) * 140
+		
+		previewImage.x = -(camo.coordinates.x - 1) * (previewImage.width / 5)
+		previewImage.y = -(camo.coordinates.y - 1) * (previewImage.height / 5)
 		
 		local previewAssets = camoEntry.camoUI:GetCustomProperty("PreviewButtonAssets"):WaitForObject()
 		local equipBuyAssets = camoEntry.camoUI:GetCustomProperty("EquipBuyButtonAssets"):WaitForObject()

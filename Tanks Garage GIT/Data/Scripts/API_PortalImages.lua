@@ -28,6 +28,8 @@ local holder3Index = {
 	[""] = 5
 }
 
+local tankGridSize = Vector2.New(5, 5)
+
 local alliesIndex = {
 	[1] = Vector2.New(1, 1),
 	[2] = Vector2.New(2, 1),
@@ -62,10 +64,12 @@ local axisIndex = {
 	[28] = Vector2.New(1, 3),
 	[29] = Vector2.New(2, 3),
 	[30] = Vector2.New(3, 3),
-	[31] = Vector2.New(3, 4),
-	[32] = Vector2.New(3, 5),
-	[33] = Vector2.New(4, 1)
+	[31] = Vector2.New(4, 3),
+	[32] = Vector2.New(5, 3),
+	[33] = Vector2.New(1, 4)
 }
+
+local skinsGridSize = Vector2.New(5, 5)
 
 local API = {}
 
@@ -92,13 +96,20 @@ function API.GetTankImageInfo(tankID)
 		return nil
 	end
 
-	return {link = imageHolder1, index = screenshotIndex, coordinates = imageCoordinates}
+	return {link = imageHolder1, index = screenshotIndex, coordinates = imageCoordinates, size = tankGridSize}
+
+end
+
+function API.PositionImage(image, coordinates, size)
+
+	image.x = -(coordinates.x - 1) * (image.width / size.x)
+	image.y = -(coordinates.y - 1) * (image.height / size.y)
 
 end
 
 function API.GetSkinsImageInfo(skinType)
 	
-	return {link = imageHolder1, index = holder1Index[skinType]}
+	return {link = imageHolder1, index = holder1Index[skinType], skinsGridSize}
 	
 end
 
