@@ -723,8 +723,8 @@ Assets {
         Control {
           Width: 400
           Height: 200
-          UIX: 77
-          UIY: 91
+          UIX: 71
+          UIY: 54
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -767,7 +767,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:SetGameID"
-            String: "8817ac/tanksportal-images1"
+            String: "80e9b4/tanksportal-images1"
           }
           Overrides {
             Name: "cs:SetImageIndex"
@@ -787,8 +787,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 1230
-          Height: 550
+          Width: 1280
+          Height: 720
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
