@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12478180938234886174
-  Name: "BG Highlighted 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_019"
-  }
-}
-Assets {
   Id: 11619439792683854596
   Name: "Frame Outline Thin 001"
   PlatformAssetType: 9
@@ -77,15 +68,6 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "TekoLight_ref"
-  }
-}
-Assets {
-  Id: 7957816731913452808
-  Name: "BG Flat 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_019"
   }
 }
 Assets {
