@@ -42,10 +42,10 @@ local alliesIndex = {
 	[11] = Vector2.New(5, 2),
 	[12] = Vector2.New(1, 3),
 	[13] = Vector2.New(2, 3),
-	[14] = Vector2.New(3, 5),
+	[14] = Vector2.New(5, 3),
 	[15] = Vector2.New(3, 3),
-	[16] = Vector2.New(3, 4),
-	[17] = Vector2.New(4, 1)
+	[16] = Vector2.New(4, 3),
+	[17] = Vector2.New(1, 4)
 }
 
 local axisIndex = {

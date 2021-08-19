@@ -1,18 +1,21 @@
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local CONSTANTS_API = require(script:GetCustomProperty("MetaAbilityProgressionConstants_API"))
+
 local camoEntryTemplate = script:GetCustomProperty("CAMO_TEMPLATE")
+local tankEntryTemplate = script:GetCustomProperty("CAMO_TANK")
+
 local statsContainer = script:GetCustomProperty("StatsContainer"):WaitForObject()
 local camoViewUI = script:GetCustomProperty("CamoViewUI"):WaitForObject()
 
 local axisButtonAssets = script:GetCustomProperty("AxisButtonAssets"):WaitForObject()
-local axisContainer = script:GetCustomProperty("AxisContainer"):WaitForObject()
 local alliesButtonAssets = script:GetCustomProperty("AlliesButtonAssets"):WaitForObject()
-local alliesContainer = script:GetCustomProperty("AlliesContainer"):WaitForObject()
+local tankContainer = script:GetCustomProperty("TankContainer"):WaitForObject()
 
 local universalButtonAssets = script:GetCustomProperty("UniversalButtonAssets"):WaitForObject()
 local individualButtonAssets = script:GetCustomProperty("IndividualButtonAssets"):WaitForObject()
 local camoContainer = script:GetCustomProperty("CamoContainer"):WaitForObject()
 local skinsClient = script:GetCustomProperty("GAMEHELPER_SkinsClient"):WaitForObject()
+local techTreeContents = script:GetCustomProperty("TechTreeContents"):WaitForObject()
 
 local unlockedColor = script:GetCustomProperty("UnlockedColor")
 local lockedColor = script:GetCustomProperty("LockedColor")
@@ -36,11 +39,15 @@ local savedState = ""
 local consumableSlots = {}
 local enteringFromDefaultMenu = false
 local enteredMenuBefore = false
+local repopulatingTanks = false
 
 local alliesButtonComponents = {}
 local axisButtonComponents = {}
 local universalButtonComponents = {}
 local individualButtonComponents = {}
+
+local alliesTankNames = {}
+local axisTankNames = {}
 
 local tankEntries = {}
 local camoEntries = {}
@@ -117,7 +124,7 @@ function InitializeComponent()
 	
 	OnMainButtonClicked(alliesButtonComponents.button)
 	OnMainButtonClicked(individualButtonComponents.button)
-	InitializeTankButtons()
+	InitializeTankButtonInfo()
 	
 end
 
@@ -148,6 +155,10 @@ function AssignPreviewText()
 		selectedTank = "0" .. selectedTank
 	end
 	
+	if not tankEntries[selectedTank] then
+		return
+	end
+	
 	tankEntries[selectedTank].previewText:SetColor(selectedColor)
 	tankEntries[selectedTank].previewText.text = "Previewing Tank"
 	
@@ -160,13 +171,11 @@ function OnMainButtonClicked(button)
 	if button == alliesButtonComponents.button then
 		alliesButtonComponents.active.visibility = Visibility.INHERIT
 		axisButtonComponents.active.visibility = Visibility.FORCE_OFF
-		alliesContainer.visibility = Visibility.INHERIT
-		axisContainer.visibility = Visibility.FORCE_OFF
+		PopulateTankEntries("Allies")
 	elseif button == axisButtonComponents.button then
 		alliesButtonComponents.active.visibility = Visibility.FORCE_OFF
 		axisButtonComponents.active.visibility = Visibility.INHERIT	
-		alliesContainer.visibility = Visibility.FORCE_OFF
-		axisContainer.visibility = Visibility.INHERIT
+		PopulateTankEntries("Axis")
 	elseif button == individualButtonComponents.button then
 		individualButtonComponents.active.visibility = Visibility.INHERIT
 		universalButtonComponents.active.visibility = Visibility.FORCE_OFF	
@@ -184,7 +193,7 @@ function OnMainButtonhovered(button)
 	if button == alliesButtonComponents.button then
 		alliesButtonComponents.hover.visibility = Visibility.INHERIT
 	elseif button == axisButtonComponents.button then
-		axisButtonComponents.hover.visibility = Visibility.INHERIT	
+		axisButtonComponents.hover.visibility = Visibility.INHERIT
 	elseif button == individualButtonComponents.button then
 		individualButtonComponents.hover.visibility = Visibility.INHERIT	
 	elseif button == universalButtonComponents.button then
@@ -223,9 +232,11 @@ function InitializeMainButton(buttonTable, rootReference, buttonName)
 end
 
 function OnTankButtonClicked(button)
-
-	tankEntries[selectedTank].previewText:SetColor(tankEntries[selectedTank].defaultColor)
-	tankEntries[selectedTank].previewText.text = tankEntries[selectedTank].defaultText
+	
+	if tankEntries[selectedTank] then
+		tankEntries[selectedTank].previewText:SetColor(tankEntries[selectedTank].defaultColor)
+		tankEntries[selectedTank].previewText.text = tankEntries[selectedTank].defaultText
+	end
 	
 	selectedTank = button.clientUserData.referencedTank
 	
@@ -257,30 +268,110 @@ function OnTankButtonUnHovered(button)
 
 end
 
-function InitializeTankButtons()
+function InitializeTankButtonInfo()
 
-	local allAxis = axisContainer:GetChildren()
-	local allTanks = alliesContainer:GetChildren()
+	local tankInfo = techTreeContents:GetChildren()
+	local tankID = nil
+	local tankTier = nil
+	local tankType = nil
+	local tankTeam = nil
+	local tankName = nil
 	
-	for _, t in ipairs(allAxis) do
-	  table.insert(allTanks, t)
+	for _, t in ipairs(tankInfo) do
+		tankID = t:GetCustomProperty("ID")
+		tankTier = t:GetCustomProperty("Tier")
+		tankType = t:GetCustomProperty("Type")
+		tankTeam = t:GetCustomProperty("Team")
+		tankName = t:GetCustomProperty("Name")
+		
+		if (tankID ~= "08") or (tankID ~= "34") then
+			if tankTeam == "Allies" then
+				alliesTankNames[tankID] = tankTier .. " " .. tankType .. " " .. tankName
+			elseif tankTeam == "Axis" then
+				axisTankNames[tankID] = tankTier .. " " .. tankType .. " " .. tankName
+			end
+		end
 	end
 	
-	for _, t in ipairs(allTanks) do
+	PopulateTankEntries("Allies")
+end
+
+function PopulateTankEntries(team)
+
+	if repopulatingTanks then
+		return
+	end
+	
+	repopulatingTanks = true
+	
+	local tankList = nil
+	local tankName = nil
+	local entryTemplate = nil
+	local previewImage = nil
+	local entryPlacement = 0
+	
+	if team == "Allies" then
+		tankList = alliesTankNames
+	elseif team == "Axis" then
+		tankList = axisTankNames
+	end
+	
+	if not tankList then
+		return
+	end
+	
+	for i, t in pairs(tankEntries) do
+	
+		for _, l in ipairs(t.listeners) do
+			l:Disconnect()
+		end
+		
+		if Object.IsValid(t) then
+			t.entry:Destroy()
+		end
+		
+		t = nil
+	end
+	
+	for i, t in pairs(tankList) do
 		local tankEntry = {}
-		local tankID = t:GetCustomProperty("VehicleID")
-		tankEntry.button = t:FindDescendantByName("BUTTON_CAMO_TANK")
-		tankEntry.previewText = t:FindDescendantByName("PREVIEW_TEXT")
+		local tankImageInfo = IMAGE_API.GetTankImageInfo(i)
+		
+		entryTemplate = World.SpawnAsset(tankEntryTemplate, {parent = tankContainer})
+		entryTemplate.x = 0
+		entryTemplate.y = entryPlacement * (entryTemplate.height + 5)
+		
+		tankName = entryTemplate:GetCustomProperty("TankName"):WaitForObject()
+		previewImage = entryTemplate:GetCustomProperty("PreviewImage"):WaitForObject()
+		previewImage:SetGameScreenshot(tankImageInfo.link, tankImageInfo.index)
+		previewImage:SetColor(Color.WHITE)
+		
+		previewImage.x = (tankImageInfo.coordinates.x - 1) * (-360)
+		previewImage.y = (tankImageInfo.coordinates.y - 1) * (-200)
+		
+		tankName.text = t
+		
+		tankEntry.entry = entryTemplate
+		tankEntry.button = entryTemplate:GetCustomProperty("Button"):WaitForObject()
+		tankEntry.previewText = entryTemplate:GetCustomProperty("PreviewText"):WaitForObject()
 		tankEntry.defaultText = ""
 		tankEntry.defaultColor = nil
 		
-		tankEntry.button.clientUserData.referencedTank = tankID
-		tankEntry.button.clickedEvent:Connect(OnTankButtonClicked)
-		tankEntry.button.hoveredEvent:Connect(OnTankButtonHovered)
-		tankEntry.button.unhoveredEvent:Connect(OnTankButtonUnHovered)
+		tankEntry.button.clientUserData.referencedTank = i
+		tankEntry.listeners = {
+			tankEntry.button.clickedEvent:Connect(OnTankButtonClicked),
+			tankEntry.button.hoveredEvent:Connect(OnTankButtonHovered),
+			tankEntry.button.unhoveredEvent:Connect(OnTankButtonUnHovered)
+		}
 		
-		tankEntries[tankID] = tankEntry
-	end
+		tankEntries[i] = tankEntry
+		
+		entryPlacement = entryPlacement + 1
+	end	
+	
+	Task.Wait()
+	
+	repopulatingTanks = false
 
 end
 
