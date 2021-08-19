@@ -25,7 +25,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -455,7 +455,7 @@ Objects {
 }
 Objects {
   Id: 7632801536670610486
-  Name: "Close"
+  Name: "ClosePurchaseTank"
   Transform {
     Location {
     }
@@ -5198,7 +5198,7 @@ Objects {
 }
 Objects {
   Id: 338248329147239363
-  Name: "Close"
+  Name: "CloseUpgradeTankPanel"
   Transform {
     Location {
     }
@@ -13821,7 +13821,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14039,7 +14039,7 @@ Objects {
 }
 Objects {
   Id: 7342686739533569399
-  Name: "Close"
+  Name: "CloseCannotPurchaseTank"
   Transform {
     Location {
     }
@@ -20549,7 +20549,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
