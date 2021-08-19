@@ -89,7 +89,6 @@ Objects {
     Overrides {
       Name: "cs:DisplayHandler"
       ObjectReference {
-        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -114,30 +113,6 @@ Objects {
       Name: "cs:AddGoldButton"
       ObjectReference {
         SelfId: 2639302693057997766
-      }
-    }
-    Overrides {
-      Name: "cs:AddXP_Tank"
-      ObjectReference {
-        SelfId: 17787107405562289328
-      }
-    }
-    Overrides {
-      Name: "cs:AddSilver_Tank"
-      ObjectReference {
-        SelfId: 4315920901279593206
-      }
-    }
-    Overrides {
-      Name: "cs:AddGold_Tank"
-      ObjectReference {
-        SelfId: 2104998287924045365
-      }
-    }
-    Overrides {
-      Name: "cs:TradeXP_Tank"
-      ObjectReference {
-        SelfId: 17957788805880858096
       }
     }
   }
