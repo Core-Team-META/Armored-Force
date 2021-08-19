@@ -18,7 +18,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ImageHolder1"
-      String: "6a4d02/temporaryimageholder"
+      String: "80e9b4/tanksportal-images1"
     }
     Overrides {
       Name: "cs:ImageHolder2"
