@@ -8987,7 +8987,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -163.356171
+    UIX: -663
     UIY: -37.1308365
     RenderTransformPivot {
       Anchor {
@@ -9605,7 +9605,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14268,7 +14268,7 @@ Objects {
   Control {
     Width: 500
     Height: 170
-    UIY: 170
+    UIY: 340
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -18849,7 +18849,7 @@ Objects {
   Control {
     Width: 500
     Height: 170
-    UIX: 500
+    UIY: 170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
