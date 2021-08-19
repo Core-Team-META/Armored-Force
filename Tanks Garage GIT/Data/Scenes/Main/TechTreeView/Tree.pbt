@@ -726,24 +726,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Elevation_LVLUP"
-      ObjectReference {
-        SelfId: 8484299875578965383
-      }
-    }
-    Overrides {
-      Name: "cs:ElevationBar"
-      ObjectReference {
-        SelfId: 15143526552137198037
-      }
-    }
-    Overrides {
-      Name: "cs:LOCKED_TANK_CARD"
-      ObjectReference {
-        SelfId: 841534158063459245
-      }
-    }
-    Overrides {
       Name: "cs:BUTTON_ALLIES_T1L"
       ObjectReference {
         SelfId: 11148227166343432085
@@ -837,6 +819,12 @@ Objects {
       Name: "cs:BUY_TANK_CONTAINER"
       ObjectReference {
         SelfId: 7571371729657680410
+      }
+    }
+    Overrides {
+      Name: "cs:VIEWED_TANK_STATS"
+      ObjectReference {
+        SelfId: 16823211638657041217
       }
     }
   }
