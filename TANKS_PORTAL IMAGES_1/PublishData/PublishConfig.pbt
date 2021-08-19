@@ -5,7 +5,7 @@ Description: "Armored Force: Portal Images\r\n\r\nloading, grid_allies, grid_axi
 MaxPlayers: 8
 Tags: "Experimental"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_1\\Screenshots\\1loading.jpg"
-ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_1\\Screenshots\\2grid_allies2.jpg"
+ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_1\\Screenshots\\2grid_allies3.jpg"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_1\\Screenshots\\3grid_axis2.jpg"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_1\\Screenshots\\4grid_unique1.png"
 ScreenshotPaths: "C:\\ProgramData\\Manticore Games\\Core_Dev\\Platform\\Saved\\Maps\\Tank-Wars\\TANKS_PORTAL IMAGES_1\\Screenshots\\5grid_global1.png"
