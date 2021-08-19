@@ -740,34 +740,7 @@ Objects {
     Overrides {
       Name: "cs:LOCKED_TANK_CARD"
       ObjectReference {
-        SelfId: 3594295705549066905
-        SubObjectId: 3517184498479757502
-        InstanceId: 4292961954314456140
-        TemplateId: 1556911412059544256
-      }
-    }
-    Overrides {
-      Name: "cs:CONFIRM_TANK_UPGRADE"
-      ObjectReference {
-        SelfId: 9480003103803726430
-      }
-    }
-    Overrides {
-      Name: "cs:BUTTON_UPGRADE_TURRET"
-      ObjectReference {
-        SelfId: 7249982761216876022
-      }
-    }
-    Overrides {
-      Name: "cs:BUTTON_UPGRADE_ARMOR"
-      ObjectReference {
-        SelfId: 10984492083084461092
-      }
-    }
-    Overrides {
-      Name: "cs:BUTTON_UPGRADE_ENGINE"
-      ObjectReference {
-        SelfId: 2252733264540653303
+        SelfId: 841534158063459245
       }
     }
     Overrides {
@@ -789,18 +762,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:CONFIRM_WINDOW_CLOSE_BUTTON"
-      ObjectReference {
-        SelfId: 5380650074922356320
-      }
-    }
-    Overrides {
-      Name: "cs:CONFIRM_WINDOW_CONFIRM_BUTTON"
-      ObjectReference {
-        SelfId: 14460394602831913523
-      }
-    }
-    Overrides {
       Name: "cs:AxisDisplayTanks"
       ObjectReference {
         SelfId: 16591706574147490427
@@ -816,12 +777,6 @@ Objects {
       Name: "cs:SFX_EQUIP_TANK"
       ObjectReference {
         SelfId: 8027717470199943460
-      }
-    }
-    Overrides {
-      Name: "cs:PURCHASE_NOTIFICATION"
-      ObjectReference {
-        SelfId: 3184754748961175882
       }
     }
     Overrides {
@@ -876,12 +831,6 @@ Objects {
       Name: "cs:BUTTON_UPGRADE_TANK"
       ObjectReference {
         SelfId: 5032489891251473219
-      }
-    }
-    Overrides {
-      Name: "cs:CLOSE_UPGRADE_TANK_PANEL"
-      ObjectReference {
-        SelfId: 338248329147239363
       }
     }
     Overrides {
