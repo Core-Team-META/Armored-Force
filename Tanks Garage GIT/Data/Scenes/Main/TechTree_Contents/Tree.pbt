@@ -176,6 +176,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "2"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -367,6 +371,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "1"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -560,6 +568,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "5"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -751,6 +763,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "4"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -944,6 +960,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "3"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1135,6 +1155,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "2"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -1328,6 +1352,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "1"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1520,6 +1548,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "5"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1707,6 +1739,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "4"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -1904,6 +1940,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "3"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2100,6 +2140,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "2"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2291,6 +2335,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "1"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -2484,6 +2532,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "5"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2675,6 +2727,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "4"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -2868,6 +2924,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "3"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3055,6 +3115,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "2"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -3248,6 +3312,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "1"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3439,6 +3507,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "4"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -3632,6 +3704,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "3"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3823,6 +3899,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "5"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -4016,6 +4096,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "2"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4207,6 +4291,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "1"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -4400,6 +4488,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "5"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4592,6 +4684,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "4"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4780,6 +4876,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "3"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4967,6 +5067,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: ""
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -5159,6 +5263,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "5"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -5356,6 +5464,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "2"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5552,6 +5664,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "1"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5743,6 +5859,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "4"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
@@ -5936,6 +6056,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "3"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6128,6 +6252,10 @@ Objects {
       Name: "cs:ScreenShotIndex"
       String: "2"
     }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6315,6 +6443,10 @@ Objects {
     Overrides {
       Name: "cs:ScreenShotIndex"
       String: "1"
+    }
+    Overrides {
+      Name: "cs:TurningSpeed"
+      Int: 20
     }
   }
   Collidable_v2 {
