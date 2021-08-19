@@ -100,7 +100,10 @@ local EXPERIENCE_EQUIPPED_TANK = script:GetCustomProperty("EXPERIENCE_EQUIPPED_T
 local BUTTON_ALLIES_TECH_TREE = script:GetCustomProperty("BUTTON_ALLIES_TECH_TREE"):WaitForObject()
 local BUTTON_AXIS_TECH_TREE = script:GetCustomProperty("BUTTON_AXIS_TECH_TREE"):WaitForObject()
 local TECH_TREE_CONTENT = script:GetCustomProperty("TECH_TREE_CONTENT"):WaitForObject()
-
+local CLOSE_CANNOT_PURCHASE_TANK = script:GetCustomProperty("CLOSE_CANNOT_PURCHASE_TANK"):WaitForObject()
+local BUTTON_UPGRADE_TANK = script:GetCustomProperty("BUTTON_UPGRADE_TANK"):WaitForObject()
+local CLOSE_UPGRADE_TANK_PANEL = script:GetCustomProperty("CLOSE_UPGRADE_TANK_PANEL"):WaitForObject()
+local BUY_TANK_CONTAINER = script:GetCustomProperty("BUY_TANK_CONTAINER"):WaitForObject()
 
 local LOCKED_TANK_CARD = script:GetCustomProperty("LOCKED_TANK_CARD"):WaitForObject()
 local CONFIRM_TANK_UPGRADE = script:GetCustomProperty("CONFIRM_TANK_UPGRADE"):WaitForObject()
@@ -442,55 +445,6 @@ function PopulateSelectedTankPanel(id)
 
 	EXPERIENCE_EQUIPPED_TANK.text = string.format("Tank Specific Experience: %i", LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(selectedTankId))))
 
-	for i, tank in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
-		if (tonumber(tank.id) == tonumber(selectedTankId)) then
-			playerTankData.weaponProgress = tank.weaponProgress
-			playerTankData.armorProgress = tank.armorProgress
-			playerTankData.engineProgress = tank.engineProgress
-		end
-	end
-
-	if (tonumber(playerTankData.armorProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-		HitPointsBar.progress = tonumber(tankData.hitPointsUpgraded) / UTIL_API.GetHighestHitPoints()
-	else
-		HitPointsBar.progress = tonumber(tankData.hitPoints) / UTIL_API.GetHighestHitPoints()
-	end
-
-	if (tonumber(playerTankData.weaponProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-		DamageBar.progress = tonumber(tankData.damageUpgraded) / UTIL_API.GetHighestDamage()
-		ReloadBar.progress = tonumber(tankData.reloadUpgraded) / UTIL_API.GetHighestReload()
-		TurretBar.progress = tonumber(tankData.turretUpgraded) / UTIL_API.GetHighestTurretSpeed()
-	else
-		DamageBar.progress = tonumber(tankData.damage) / UTIL_API.GetHighestDamage()
-		ReloadBar.progress = tonumber(tankData.reload) / UTIL_API.GetHighestReload()
-		TurretBar.progress = tonumber(tankData.turret) / UTIL_API.GetHighestTurretSpeed()
-	end
-
-	if (tonumber(playerTankData.engineProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-		TopSpeedBar.progress = tonumber(tankData.topSpeedUpgraded) / UTIL_API.GetHighestTopSpeed()
-		AccelerationBar.progress = tonumber(tankData.accelerationUpgraded) / UTIL_API.GetHighestAcceleration()
-		TraverseBar.progress = tonumber(tankData.traverseUpgraded) / UTIL_API.GetHighestTraverse()
-		ElevationBar.progress = tonumber(tankData.elevationUpgraded) / UTIL_API.GetHighestElevation()
-	else
-		TopSpeedBar.progress = tonumber(tankData.topSpeed) / UTIL_API.GetHighestTopSpeed()
-		AccelerationBar.progress = tonumber(tankData.acceleration) / UTIL_API.GetHighestAcceleration()
-		TraverseBar.progress = tonumber(tankData.traverse) / UTIL_API.GetHighestTraverse()
-		ElevationBar.progress = tonumber(tankData.elevation) / UTIL_API.GetHighestElevation()
-	end
-
-	for i, obj in ipairs(World.FindObjectsByName("AMOUNT_RP_OWNED")) do
-		obj.text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(selectedTankId))))
-	end
-	for i, obj in ipairs(World.FindObjectsByName("AMOUNT_MONEY_OWNED")) do
-		obj.text = tostring(LOCAL_PLAYER:GetResource(Constants_API.SILVER))
-	end
-	World.FindObjectByName("AMOUNT_RP_MOBILITY").text = tostring(tankData.mobilityResearchCost)
-	World.FindObjectByName("AMOUNT_MONEY_MOBILITY").text = tostring(tankData.mobilityPurchaseCost)
-	World.FindObjectByName("AMOUNT_RP_FIREPOWER").text = tostring(tankData.weaponResearchCost)
-	World.FindObjectByName("AMOUNT_MONEY_FIREPOWER").text = tostring(tankData.weaponPurchaseCost)
-	World.FindObjectByName("AMOUNT_RP_ARMOR").text = tostring(tankData.armorResearchCost)
-	World.FindObjectByName("AMOUNT_MONEY_ARMOR").text = tostring(tankData.armorPurchaseCost)
-
 	for i, t in ipairs(LOCAL_PLAYER.clientUserData.techTreeProgress) do
 		if (t.id == tostring(selectedTankId)) then
 			tankData.researchedTank = t.researched
@@ -510,56 +464,30 @@ function PopulateSelectedTankPanel(id)
 		doNotShowModal = false
 	end
 
-	LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF
-
 	if (not tankDetails.purchasedTank) then
-		World.FindObjectByName("BUTTON_UPGRADE_TURRET_CONTAINER").visibility = Visibility.FORCE_OFF
-		World.FindObjectByName("UPGRADE_TURRET"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
-		World.FindObjectByName("BUTTON_UPGRADE_ENGINE_CONTAINER").visibility = Visibility.FORCE_OFF
-		World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
-		World.FindObjectByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_OFF
-		World.FindObjectByName("UPGRADE_SHELL"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
+
 	else
-		if (tonumber(tankDetails.weaponProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-			World.FindObjectByName("BUTTON_UPGRADE_TURRET_CONTAINER").visibility = Visibility.FORCE_OFF
-			World.FindObjectByName("UPGRADE_TURRET"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
-		else
-			World.FindObjectByName("BUTTON_UPGRADE_TURRET_CONTAINER").visibility = Visibility.FORCE_ON
-			World.FindObjectByName("UPGRADE_TURRET"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
-		end
-
-		if (tonumber(tankDetails.armorProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-			World.FindObjectByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_OFF
-			World.FindObjectByName("UPGRADE_SHELL"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
-		else
-			World.FindObjectByName("BUTTON_UPGRADE_SHELL_CONTAINER").visibility = Visibility.FORCE_ON
-			World.FindObjectByName("UPGRADE_SHELL"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
-		end
-
-		if (tonumber(tankDetails.engineProgress) >= Constants_API.UPGRADE_PROGRESS.PURCHASED) then
-			World.FindObjectByName("BUTTON_UPGRADE_ENGINE_CONTAINER").visibility = Visibility.FORCE_OFF
-			World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_ON
-		else
-			World.FindObjectByName("BUTTON_UPGRADE_ENGINE_CONTAINER").visibility = Visibility.FORCE_ON
-			World.FindObjectByName("UPGRADE_ENGINE"):FindDescendantByName("MAXED_OUT").visibility = Visibility.FORCE_OFF
-		end
+		
 	end
 
 	PopulateOwnedTanks()
-	print(doNotShowModal)
 	if (isSelection and not doNotShowModal) then
-		print("SHOWING THE MODAL")
-		CONFIRM_TANK_UPGRADE.visibility = Visibility.FORCE_ON
 		local prereqs = GetPrerequisiteRPValues(selectedTankId)
-		PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
+		if prereqs[1].usable then
+			BUY_TANK_CONTAINER.visibility = Visibility.FORCE_ON
+			TECH_TREE_CONTENT.parent:FindDescendantByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_OFF
+		else
+			TECH_TREE_CONTENT.parent:FindDescendantByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_ON
+			BUY_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
+		end
 	end
 end
 
 function PopulateConfirmUpgradePanelForTankPurchase(tankData, prereqs)
 	-- Change title
 	-- CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SHADOW").text = "CONFIRM " .. tankData.name .. " PURCHASE"
-	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SECONDARY").text = "CONFIRM " .. tankData.name .. " PURCHASE"
-	CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_LIGHT").text = "CONFIRM " .. tankData.name .. " PURCHASE"
+	--CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_SECONDARY").text = "CONFIRM " .. tankData.name .. " PURCHASE"
+	--CONFIRM_TANK_UPGRADE:FindDescendantByName("TITLE_LIGHT").text = "CONFIRM " .. tankData.name .. " PURCHASE"
 
 	local cost = tankData.researchCost
 	CONFIRM_TANK_UPGRADE:FindDescendantByName("PRICE_1").text = tostring(cost)
@@ -1540,7 +1468,7 @@ function HoverTank(button)
 
 	if not tankData.researchedTank then
 		LOCKED_TANK_CARD.visibility = Visibility.FORCE_ON
-		PopulateLockedTankCard(tankData)
+		--PopulateLockedTankCard(tankData)
 	else
 		LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF
 	end
@@ -1627,6 +1555,30 @@ function ToggleTeamTankView(button, team)
 	end
 end
 
+function CloseCannotPurchaseTank(button)
+	SFX_CLICK:Play()
+	button:FindAncestorByName("PREREQUISITE_INVALID_CONTAINER").visibility = Visibility.FORCE_OFF
+end
+
+
+function OpenTankUpgradeWindow(button)
+	button:FindAncestorByName("MAIN_UI"):FindDescendantByName("UPGRADE_TANK_CONTAINER").visibility = Visibility.FORCE_ON
+end
+
+function CloseTankUpgradeWindow(button)
+	button:FindAncestorByName("UPGRADE_TANK_CONTAINER").visibility = Visibility.FORCE_OFF
+end
+
+
+function PurchaseTank(button)
+
+end
+
+function ClosePurchaseTank(button)
+	SFX_CLICK:Play()
+	BUY_TANK_CONTAINER.visibility = Visibility.FORCE_OFF
+end
+
 Task.Wait(2)
 Init()
 PopulateSelectedTankPanel()
@@ -1676,7 +1628,11 @@ BUTTON_UPGRADE_TURRET.unhoveredEvent:Connect(UnhoverWeapon)
 BUTTON_UPGRADE_ARMOR.unhoveredEvent:Connect(UnhoverArmor)
 BUTTON_UPGRADE_ENGINE.unhoveredEvent:Connect(UnhoverEngine)
 
-
+CLOSE_CANNOT_PURCHASE_TANK.clickedEvent:Connect(CloseCannotPurchaseTank)
+--BUTTON_UPGRADE_TANK.clickedEvent:Connect(OpenTankUpgradeWindow)
+--CLOSE_UPGRADE_TANK_PANEL.clickedEvent:Connect(CloseTankUpgradeWindow)
+BUY_TANK_CONTAINER:FindDescendantByName("BUTTON_SILVER_INFO").clickedEvent:Connect(PurchaseTank)
+BUY_TANK_CONTAINER:FindDescendantByName("ClosePurchaseTank").clickedEvent:Connect(ClosePurchaseTank)
 
 World.FindObjectByName("01").clickedEvent:Connect(SelectTank)
 World.FindObjectByName("02").clickedEvent:Connect(SelectTank)

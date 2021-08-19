@@ -866,6 +866,30 @@ Objects {
         SelfId: 1748794041367902372
       }
     }
+    Overrides {
+      Name: "cs:CLOSE_CANNOT_PURCHASE_TANK"
+      ObjectReference {
+        SelfId: 7342686739533569399
+      }
+    }
+    Overrides {
+      Name: "cs:BUTTON_UPGRADE_TANK"
+      ObjectReference {
+        SelfId: 5032489891251473219
+      }
+    }
+    Overrides {
+      Name: "cs:CLOSE_UPGRADE_TANK_PANEL"
+      ObjectReference {
+        SelfId: 338248329147239363
+      }
+    }
+    Overrides {
+      Name: "cs:BUY_TANK_CONTAINER"
+      ObjectReference {
+        SelfId: 7571371729657680410
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
