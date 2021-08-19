@@ -39,8 +39,6 @@ local Acceleration_LVLUP = script:GetCustomProperty("Acceleration_LVLUP"):WaitFo
 local AccelerationBar = script:GetCustomProperty("AccelerationBar"):WaitForObject()
 local Traverse_LVLUP = script:GetCustomProperty("Traverse_LVLUP"):WaitForObject()
 local TraverseBar = script:GetCustomProperty("TraverseBar"):WaitForObject()
-local Elevation_LVLUP = script:GetCustomProperty("Elevation_LVLUP"):WaitForObject()
-local ElevationBar = script:GetCustomProperty("ElevationBar"):WaitForObject()
 
 -- UI properties
 local background = script:GetCustomProperty("Background"):WaitForObject()
@@ -100,6 +98,8 @@ local TECH_TREE_CONTENT = script:GetCustomProperty("TECH_TREE_CONTENT"):WaitForO
 local CLOSE_CANNOT_PURCHASE_TANK = script:GetCustomProperty("CLOSE_CANNOT_PURCHASE_TANK"):WaitForObject()
 local BUTTON_UPGRADE_TANK = script:GetCustomProperty("BUTTON_UPGRADE_TANK"):WaitForObject()
 local BUY_TANK_CONTAINER = script:GetCustomProperty("BUY_TANK_CONTAINER"):WaitForObject()
+
+local VIEWED_TANK_STATS = script:GetCustomProperty("VIEWED_TANK_STATS"):WaitForObject()
 
 local BUTTON_ALLIES_T1L = script:GetCustomProperty("BUTTON_ALLIES_T1L"):WaitForObject()
 local BUTTON_ALLIES_T2L = script:GetCustomProperty("BUTTON_ALLIES_T2L"):WaitForObject()
@@ -1440,6 +1440,7 @@ function SelectTank(button)
 end
 
 function HoverTank(button)
+	ButtonHover()
 	local tankData = {}
 	tankData = GetTankData(button.name)
 
@@ -1456,51 +1457,40 @@ function HoverTank(button)
 		end
 	end
 
+	VIEWED_TANK_STATS.visibility = Visibility.FORCE_ON
+	PopulateHoverTankStats(tankData)
+
+	--[[
 	if not tankData.researchedTank then
-		LOCKED_TANK_CARD.visibility = Visibility.FORCE_ON
-		--PopulateLockedTankCard(tankData)
+		
 	else
-		LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF
+		VIEWED_TANK_STATS.visibility = Visibility.FORCE_OFF
 	end
+	--]]
 end
 
-function PopulateLockedTankCard(tankData)
-	LOCKED_TANK_CARD:FindDescendantByName("HOVERED_TANK_NAME").text = tankData.name
-	local canBeResearched = CanTankBeResearched(tankData.id)
-	if (canBeResearched) then
-		-- TODO check for premium tank
-		local prereqs = GetPrerequisiteRPValues(tankData.id)
-		if (prereqs[1] and prereqs[1].id) then
-			local currentRp = LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(prereqs[1].id)))
-			local preReqTank = GetTankData(prereqs[1].id)
-			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SHADOW").text = "UNLOCKED TANK"
-			LOCKED_TANK_CARD:FindDescendantByName("TITLE_SECONDAIRY").text = "UNLOCKED TANK"
-			LOCKED_TANK_CARD:FindDescendantByName("TITLE_LIGHT").text = "UNLOCKED TANK"
-			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").text =
-				tostring(currentRp) .. " / " .. tostring(tankData.researchCost)
-			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").progress = currentRp / tankData.researchCost
-			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").text = preReqTank.name .. " XP"
-			LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_ON
-			LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_ON
-			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_ON
-			LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").visibility = Visibility.FORCE_ON
-			LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text = "Play previous Tanks to gain XP for this tank."
-		end
+function PopulateHoverTankStats(tankData)
+	VIEWED_TANK_STATS:FindDescendantByName("VIEWING_TANK").text = tankData.name
+	VIEWED_TANK_STATS:FindDescendantByName("EXPERIENCE_EQUIPPED_TANK").text = tostring(LOCAL_PLAYER:GetResource(UTIL_API.GetTankRPString(tonumber(tankData.id))))
+	VIEWED_TANK_STATS:FindDescendantByName("BAR_4").progress = tankData.damage / UTIL_API.GetHighestDamage()
+	VIEWED_TANK_STATS:FindDescendantByName("BAR_5").progress = tankData.reload / UTIL_API.GetHighestReload()
+	VIEWED_TANK_STATS:FindDescendantByName("BAR_6").progress = tankData.turret / UTIL_API.GetHighestTurretSpeed()
+	VIEWED_TANK_STATS:FindDescendantByName("BAR_1").progress = tankData.hitPoints / UTIL_API.GetHighestHitPoints()
+	VIEWED_TANK_STATS:FindDescendantByName("BAR_8").progress = tankData.topSpeed / UTIL_API.GetHighestTopSpeed()
+	VIEWED_TANK_STATS:FindDescendantByName("BAR_9").progress = tankData.acceleration / UTIL_API.GetHighestAcceleration()
+	VIEWED_TANK_STATS:FindDescendantByName("BAR_10").progress = tankData.traverse / UTIL_API.GetHighestTraverse()
+
+	if tankDetails.purchasedTank then
+		VIEWED_TANK_STATS:FindDescendantByName("TITLE_SILVER").visibility = Visibility.FORCE_OFF
 	else
-		LOCKED_TANK_CARD:FindDescendantByName("TITLE_SHADOW").text = "LOCKED TANK"
-		LOCKED_TANK_CARD:FindDescendantByName("TITLE_SECONDAIRY").text = "LOCKED TANK"
-		LOCKED_TANK_CARD:FindDescendantByName("TITLE_LIGHT").text = "LOCKED TANK"
-		LOCKED_TANK_CARD:FindDescendantByName("TITLES ITEM").visibility = Visibility.FORCE_OFF
-		LOCKED_TANK_CARD:FindDescendantByName("RPs_COLLECTED").visibility = Visibility.FORCE_OFF
-		LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR").visibility = Visibility.FORCE_OFF
-		LOCKED_TANK_CARD:FindDescendantByName("SPECIFIC_RP_BAR_HAVE").visibility = Visibility.FORCE_OFF
-		LOCKED_TANK_CARD:FindDescendantByName("UNLOCK_INFORMATION").text =
-			"Unlock and upgrade pre-requisite tanks in order to research this tank."
+		VIEWED_TANK_STATS:FindDescendantByName("TITLE_SILVER").text = tostring(tankData.purchaseCost)
+		VIEWED_TANK_STATS:FindDescendantByName("TITLE_SILVER").visibility = Visibility.FORCE_ON
 	end
+	
 end
 
 function UnhoverTank()
-	LOCKED_TANK_CARD.visibility = Visibility.FORCE_OFF
+	VIEWED_TANK_STATS.visibility = Visibility.FORCE_OFF
 end
 
 -- Function when user denies use of Free RP to research
