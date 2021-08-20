@@ -1010,7 +1010,7 @@ Objects {
     Overrides {
       Name: "cs:MiniMapPanel"
       ObjectReference {
-        SelfId: 1277857715801962856
+        SelfId: 841534158063459245
       }
     }
     Overrides {

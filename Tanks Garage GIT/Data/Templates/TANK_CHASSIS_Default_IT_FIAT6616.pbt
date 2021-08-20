@@ -67,6 +67,10 @@ Assets {
           CoastBrakeStrength: 10
           DamageSettings {
             StartImmortal: true
+            DestroyOnDeathClientTemplateId {
+            }
+            DestroyOnDeathNetworkedTemplateId {
+            }
           }
           FourWheeledVehicle {
             FrontLeftWheel {

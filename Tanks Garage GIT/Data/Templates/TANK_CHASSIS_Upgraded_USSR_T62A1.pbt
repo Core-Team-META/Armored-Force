@@ -66,6 +66,10 @@ Assets {
           CoastBrakeStrength: 10
           DamageSettings {
             StartImmortal: true
+            DestroyOnDeathClientTemplateId {
+            }
+            DestroyOnDeathNetworkedTemplateId {
+            }
           }
           Tank {
             LeftTreadRadius: 70
