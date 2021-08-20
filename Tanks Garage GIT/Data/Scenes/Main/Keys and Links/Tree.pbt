@@ -22,7 +22,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ImageHolder2"
-      String: ""
+      String: "39cdb8/tanksportal-images2"
     }
     Overrides {
       Name: "cs:ImageHolder3"
