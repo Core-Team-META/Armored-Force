@@ -345,7 +345,6 @@ function PopulateTankEntries(team)
 	
 	for i, t in pairs(tankList) do
 		local tankEntry = {}
-		local tankImageInfo = IMAGE_API.GetTankImageInfo(i)
 		
 		entryPlacement = tonumber(i)
 		
@@ -358,11 +357,8 @@ function PopulateTankEntries(team)
 		entryTemplate.y = (entryPlacement + entryPlacementModifier) * (entryTemplate.height + 5)
 		
 		tankName = entryTemplate:GetCustomProperty("TankName"):WaitForObject()
-		tankEntry.previewImage = entryTemplate:GetCustomProperty("PreviewImage"):WaitForObject()
-		tankEntry.previewImage:SetGameScreenshot(tankImageInfo.link, tankImageInfo.index)
-		tankEntry.previewImage:SetColor(Color.WHITE)
-		
-		IMAGE_API.PositionImage(tankEntry.previewImage, tankImageInfo.coordinates, tankImageInfo.size)
+		tankEntry.previewImage = entryTemplate:GetCustomProperty("PreviewImage"):WaitForObject()	
+		IMAGE_API.SetTankImage(tankEntry.previewImage, i)
 		
 		tankName.text = t
 		
