@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12598536286258412214
+        ParentId: 15186286892296639228
         ChildIds: 5295178213366008011
         ChildIds: 3163930945694227622
         ChildIds: 6177852562426814722
@@ -724,7 +724,7 @@ Assets {
           Width: 400
           Height: 200
           UIX: 71
-          UIY: 54
+          UIY: 60
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -765,14 +765,6 @@ Assets {
         }
         ParentId: 788345363909957540
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:SetGameID"
-            String: "80e9b4/tanksportal-images1"
-          }
-          Overrides {
-            Name: "cs:SetImageIndex"
-            Int: 1
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -787,8 +779,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 1280
-          Height: 720
+          Width: 896
+          Height: 504
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

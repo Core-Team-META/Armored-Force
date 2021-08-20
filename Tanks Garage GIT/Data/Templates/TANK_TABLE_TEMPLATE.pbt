@@ -33,7 +33,7 @@ Assets {
           Overrides {
             Name: "cs:TANK_IMAGE_SELECT"
             ObjectReference {
-              SubObjectId: 15969208367089202882
+              SubObjectId: 2039354665571257294
             }
           }
           Overrides {
@@ -1004,7 +1004,7 @@ Assets {
           }
         }
         ParentId: 12678180207792735907
-        ChildIds: 15969208367089202882
+        ChildIds: 14096978192953276603
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1046,8 +1046,8 @@ Assets {
         }
       }
       Objects {
-        Id: 15969208367089202882
-        Name: "TANK_IMAGE_SELECT"
+        Id: 14096978192953276603
+        Name: "TankImageSelectOffset"
         Transform {
           Location {
           }
@@ -1060,6 +1060,62 @@ Assets {
           }
         }
         ParentId: 11799117685465185157
+        ChildIds: 2039354665571257294
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          UIX: -24
+          UIY: 3
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Panel {
+            IsClipping: true
+            Opacity: 1
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 2039354665571257294
+        Name: "TANK_IMAGE_SELECT"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14096978192953276603
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1073,9 +1129,8 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Control {
-          Width: 320
-          Height: 180
-          UIX: -25.6323204
+          Width: 384
+          Height: 216
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1097,17 +1152,18 @@ Assets {
             }
             ShadowOffset {
             }
-            ScreenshotIndex: 1
+            GameId: "80e9b4/tanksportal-images1"
+            ScreenshotIndex: 2
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:topleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:topleft"
               }
             }
           }
