@@ -11,6 +11,13 @@ local SFX_CLICK = script:GetCustomProperty("SFX_CLICK"):WaitForObject()
 local TANKS_OWNED = script:GetCustomProperty("TANKS_OWNED"):WaitForObject()
 
 -- Local properties
+
+while not _G.PORTAL_IMAGES do
+	Task.Wait()
+end
+
+local IMAGE_API = _G.PORTAL_IMAGES
+
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local TANK_LIST = TechTree_Contents:GetChildren()
 local X_OFFSET = 180
@@ -64,8 +71,6 @@ function Init()
             button.hoveredEvent:Connect(ButtonHover)
             button.unhoveredEvent:Connect(ButtonUnhover)
 
-            local gameIdString = tankData:GetCustomProperty("PortalImageURL")
-            local gameIndex = tankData:GetCustomProperty("ScreenShotIndex")
             local tanksScreenshot = entry:GetCustomProperty("TANK_IMAGE_SELECT"):WaitForObject()
 
             local TANK_FRAME = entry:GetCustomProperty("TANK_FRAME"):WaitForObject()
@@ -86,11 +91,11 @@ function Init()
             entry:GetCustomProperty("TANK_NAME"):WaitForObject().text = tankData:GetCustomProperty("Name")
 
             if Object.IsValid(tanksScreenshot) then
-                tanksScreenshot:SetGameScreenshot(gameIdString, tonumber(gameIndex))
+                IMAGE_API.SetTankImage(tanksScreenshot, tank.id)
                 Task.Spawn(
                     function()
                         if Object.IsValid(tanksScreenshot) then
-                            tanksScreenshot:SetGameScreenshot(gameIdString, tonumber(gameIndex))
+                            IMAGE_API.SetTankImage(tanksScreenshot, tank.id)
                             Task.Wait(0.2)
                             if Object.IsValid(tanksScreenshot) then
                                 tanksScreenshot.visibility = Visibility.FORCE_ON

@@ -163,7 +163,6 @@ Objects {
     }
   }
   ParentId: 17307660758729169401
-  ChildIds: 1165658689195295684
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -202,48 +201,6 @@ Objects {
           Value: "mc:euianchor:topleft"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 1165658689195295684
-  Name: "TANK_TABLE_TEMPLATE"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1070162571013658394
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12678180207792735907
-      value {
-        Overrides {
-          Name: "Name"
-          String: "TANK_TABLE_TEMPLATE"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16479738600627257569
     }
   }
 }
