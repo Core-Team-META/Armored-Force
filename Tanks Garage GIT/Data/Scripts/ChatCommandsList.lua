@@ -197,6 +197,31 @@ commands = {
         adminRank = AdminData.AdminRanks.Admin
     },
     
+     ["/forcemap"] = {
+        OnCommandCalledClient = function (player, message)       
+        end,
+        OnCommandCalledServer = function (player, message)
+        	for section in (message.." "):gmatch("(.-) ") do
+        		local number = tonumber(section)
+        		if number then
+        			Events.Broadcast("FORCE_SELECTED_MAP", number)
+        		end
+        	end         	
+        end,
+        OnCommandReceivedClient = function (player, message)
+        	for section in (message.." "):gmatch("(.-) ") do
+        		local number = tonumber(section)
+        		if number then
+        			Chat.LocalMessage("Forced Map" .. tostring(number))
+        		end
+        	end 
+        end,
+        description = "Force map to be selected. Format: /forcemap <mapNumber>",
+        requireMessage = false,
+        adminOnly = true,
+        adminRank = AdminData.AdminRanks.Admin
+    },
+    
     ["/respawn"] = {
         OnCommandCalledClient = function (player, message)       
         end,
