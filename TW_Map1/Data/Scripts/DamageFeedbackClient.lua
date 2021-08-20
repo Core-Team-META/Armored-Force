@@ -29,7 +29,9 @@ local function GetTankInfo(target)
 	end
 end
 
-function ShowDamageFeedback(amount, armorName, pos, target)
+function ShowDamageFeedback(amount, armorName, pos, targetId)
+	local target = Game.FindPlayer(targetId)
+
 	UI.ShowFlyUpText(tostring(amount), pos, {isBig = true, duration = 1, color = Color.RED})
 	if (Object.IsValid(ExplosionSFX)) then
 		ExplosionSFX:Play()
@@ -87,7 +89,7 @@ function ShowDamageFeedback(amount, armorName, pos, target)
 		DamageAmount.text = tostring(amount)
 	end
 
-	if Object.IsValid(target) and target.hitPoints - amount <= 0 then
+	if target ~= nil and Object.IsValid(target) and target.hitPoints - amount <= 0 then
 		local tankId, tankName, tankType = GetTankInfo(target)
 		DestroyPanel.visibility = Visibility.FORCE_ON
 		KillInfo.text = "Killed " .. tankName .. " (" ..tostring(tankType) .. ")"
