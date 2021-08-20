@@ -353,6 +353,5 @@ function Tick(dt)
 
 end
 
-
 tankEquipment.equippedEvent:Connect(StartTank)
 tankEquipment.unequippedEvent:Connect(RemoveTank)
